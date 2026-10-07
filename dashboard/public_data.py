@@ -1,4 +1,4 @@
-"""Project the local corpus onto the fields approved for public sharing."""
+"""Project bibliographic data and concise, path-free evidence for public sharing."""
 from __future__ import annotations
 
 import json
@@ -16,7 +16,12 @@ PUBLIC_COLUMNS = (
     'disease_primary_code', 'am_process_primary_code', 'material_primary_code',
     'bioprinting_flag', 'evidence_scope', 'analysis_corpus_tier',
     'normalized_work_type', 'lexical_theme_id', 'bibliometric_recommended',
-    'medical_am_relevance',
+    'medical_am_relevance', 'relevance_basis',
+    *(
+        f'{dimension}_{part}'
+        for dimension in ('p_layer', 'tier', 'disease', 'process', 'material', 'bioprinting')
+        for part in ('evidence_text', 'evidence_section', 'evidence_pages', 'review_status')
+    ),
 )
 PUBLIC_PACKAGE_FILES = frozenset({
     '.streamlit/config.toml', 'LICENSE', 'README.md', 'requirements.txt',
@@ -28,6 +33,7 @@ PUBLIC_PACKAGE_FILES = frozenset({
 })
 
 _PRIVATE_PATH = re.compile(r'(?i)(?<![A-Z])[A-Z]:[\\/]|file://|\\\\[^\\]')
+EVIDENCE_EXCERPT_LIMIT = 700
 
 
 def _read_source(root: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -46,11 +52,28 @@ def _read_source(root: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
 
 
 def _select_public(frame: pd.DataFrame) -> pd.DataFrame:
-    public = frame.reindex(columns=PUBLIC_COLUMNS, fill_value='').fillna('')
+    public = frame.copy()
+    if 'p_layer_evidence_text' not in public and 'cross_layer_evidence_text' in public:
+        for part in ('evidence_text', 'evidence_section', 'evidence_pages'):
+            public[f'p_layer_{part}'] = public.get(f'cross_layer_{part}', '')
+    public = public.reindex(columns=PUBLIC_COLUMNS, fill_value='').fillna('')
+    for column in public.columns:
+        if 'evidence_' in column or column.endswith('_review_status'):
+            public[column] = public[column].astype(str).map(_public_evidence)
     if public.select_dtypes(include=['object', 'string']).astype(str).apply(
             lambda col: col.str.contains(_PRIVATE_PATH)).any().any():
         raise ValueError('公开字段含本机路径。')
     return public
+
+
+def _public_evidence(value: str) -> str:
+    """Publish a brief evidence excerpt; never expose a local file reference."""
+    value = value.strip()
+    if _PRIVATE_PATH.search(value):
+        return '已隐去本机文件路径；请通过 DOI 核查原文。'
+    if len(value) > EVIDENCE_EXCERPT_LIMIT:
+        return value[:EVIDENCE_EXCERPT_LIMIT].rstrip() + '…（证据节选）'
+    return value
 
 
 def project_public_data(root: Path) -> tuple[pd.DataFrame, pd.DataFrame, dict]:

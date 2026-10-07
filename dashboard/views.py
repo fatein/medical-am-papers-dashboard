@@ -26,7 +26,7 @@ def chart(fig,key):
 def header(page,years,count,future,public_mode=False):
     subtitles={'论文总览':'从研究产出到研究结构，观察医疗增材制造的学术演变。',
                '研究结构与趋势':'把研究规模与类别占比分开，比较技术路线的结构变化。',
-               '论文检索':'让每一个趋势，都能回到具体论文与公开书目信息。' if public_mode else '让每一个趋势，都能回到具体论文与标注证据。',
+               '论文检索':'让每一个趋势，都能回到具体论文与标注证据。',
                '数据更新':'保留历史基线，逐批补充新论文，并追踪数据来源。'}
     st.markdown(f'<div class="hero"><div class="eyebrow">MEDICAL ADDITIVE MANUFACTURING · RESEARCH OBSERVATORY</div>'
                 f'<h1>{page}</h1><p>{subtitles[page]}</p>'
@@ -190,11 +190,32 @@ def explorer(df,public_mode=False):
         if not public_mode:
             st.write('摘要')
             st.text(record.abstract or '当前记录没有摘要。')
-            with st.expander('标注证据与来源'):
-                for title,prefix in [('医疗对象','p_layer'),('疾病／应用','disease'),('制造工艺','process'),('材料','material'),('生物打印','bioprinting')]:
-                    st.write(f'**{title}**')
-                    st.text(str(record.get(prefix+'_evidence_text','')) or '未记录证据。')
-                    st.caption(f'章节：{record.get(prefix+"_evidence_section","")} · 页码：{record.get(prefix+"_evidence_pages","")}')
+        with st.expander('标注证据与来源'):
+            if public_mode:
+                st.caption('公开版提供逐项核验状态、证据节选和来源位置；完整摘要及长段原文不在公开数据中。历史论文未记录逐项核验状态时如实标明。')
+            relevance_basis = str(record.get('relevance_basis','') or '')
+            if relevance_basis:
+                st.write('**医疗增材制造相关性判断依据**')
+                st.text(relevance_basis)
+            for title,prefix in [('医疗对象','p_layer'),('语料层级','tier'),('疾病／应用','disease'),
+                                 ('制造工艺','process'),('材料','material'),('生物打印','bioprinting')]:
+                st.write(f'**{title}**')
+                evidence = str(record.get(prefix+'_evidence_text','') or '')
+                if prefix == 'p_layer' and not evidence:
+                    evidence = str(record.get('cross_layer_evidence_text','') or '')
+                status = str(record.get(prefix+'_review_status','') or '')
+                if status:
+                    st.write('自动核验记录：', status)
+                elif record.publication_year < 2026:
+                    st.caption('历史归档未记录逐项核验状态。')
+                st.text(evidence or '未记录证据。')
+                section = str(record.get(prefix+'_evidence_section','') or '')
+                pages = str(record.get(prefix+'_evidence_pages','') or '')
+                if prefix == 'p_layer' and not section:
+                    section = str(record.get('cross_layer_evidence_section','') or '')
+                    pages = str(record.get('cross_layer_evidence_pages','') or '')
+                if section or pages:
+                    st.caption(f'章节／范围：{section or "未记录"} · 页码：{pages or "未记录"}')
 
 
 def template_bytes():
