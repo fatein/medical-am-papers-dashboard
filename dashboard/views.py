@@ -56,25 +56,8 @@ def overview(df,years):
         chart(distribution_chart(df,'analysis_primary_p_layer',P),'p_distribution')
     with st.container(border=True):
         st.subheader('研究对象的年度结构')
-        st.caption('各年份分别计算占比。年度篇数增长，不一定意味着某一类别占比增长。')
+        st.caption('各年份分别计算占比。')
         chart(composition_chart(df,'analysis_primary_p_layer',P,years,True),'p_yearly')
-    with st.container(border=True):
-        st.subheader('标注与内容依据')
-        cols=st.columns(3)
-        process=int(df.am_process_primary_code.isin([f'T{i}' for i in range(1,8)]+['MULTI']).sum())
-        material=int(df.material_primary_code.isin([f'M{i}' for i in range(1,9)]+['MULTI']).sum())
-        cols[0].metric('明确工艺或多类标签',f'{process/len(df):.1%}',f'{process:,} / {len(df):,} 篇',delta_color='off')
-        cols[1].metric('明确材料或多类标签',f'{material/len(df):.1%}',f'{material:,} / {len(df):,} 篇',delta_color='off')
-        future=df.loc[df.publication_year.ge(2026)]
-        if len(future):
-            content=int(future.evidence_scope.isin(['abstract','pdf_excerpt']).sum())
-            cols[2].metric('2026 摘要／原文依据',f'{content/len(future):.1%}',
-                           f'{content:,} / {len(future):,} 篇',delta_color='off')
-        else:
-            known=int(df.analysis_primary_p_layer.isin([f'P{i}' for i in range(1,8)]+['MULTI']).sum())
-            cols[2].metric('明确医疗对象',f'{known/len(df):.1%}',
-                           f'{known:,} / {len(df):,} 篇',delta_color='off')
-        st.caption('2026 年按可得内容自动核验；内容依据范围不代表全文均已获得。没有明确证据的工艺和材料保留“未确认”，不作推断。')
     st.download_button('下载当前年度统计 CSV',safe_csv(annual),file_name='年度论文统计.csv',mime='text/csv')
 
 
@@ -92,7 +75,7 @@ def trends(df,years):
         st.info('所选维度没有明确标签，请保留未明确标签或调整筛选。')
         return
     if column=='lexical_theme_id':
-        st.info('词汇主题沿用既有分析的八组主题及其解释性名称，没有重新训练模型。后续新增论文缺少主题时显示“未分配”；该变化不应解读为热点消失。')
+        st.info('词汇主题沿用既有分析的八组主题及其解释性名称。')
     with st.container(border=True):
         st.subheader(f'{dimension} · 时间演变')
         chart(composition_chart(working,column,mapping,years,measure=='年度占比'),'dimension_time')
@@ -111,7 +94,6 @@ def trends(df,years):
                 b=int(working.publication_year.between(*late).sum())
                 st.caption(f'较早区间 {early[0]}–{early[1]}：{a:,} 篇 · 较晚区间 {late[0]}–{late[1]}：{b:,} 篇。横轴为占比差的百分点，不是增长率。')
                 if a and b:
-                    if min(a,b)<50: st.caption('其中一个区间少于 50 篇，结构变化可能对少量样本较敏感。')
                     chart(comparison_chart(comparison,mapping),'period_compare')
                     table=comparison.copy()
                     table['code']=table.code.map(lambda c:label(c,mapping))
@@ -181,9 +163,7 @@ def explorer(df,public_mode=False):
             unknown=[name for name,code in [('疾病／应用',record.disease_primary_code),
                                             ('制造工艺',record.am_process_primary_code),
                                             ('材料',record.material_primary_code)] if code=='U']
-            if unknown: st.caption('证据未确认：'+'、'.join(unknown)+'；保留“未确认”，不依据题名猜测。')
-            if record.get('evidence_scope')=='title_only':
-                st.info('当前记录仅有题名／元数据层面的内容依据；细分标签仅保留有证据支持的类别。')
+            if unknown: st.caption('证据未确认：'+'、'.join(unknown))
             if not public_mode and record.get('source_review_limitation',''):
                 st.caption('原审核限制：'+record.source_review_limitation)
         if record.doi: st.link_button('打开 DOI 原文入口','https://doi.org/'+quote(record.doi,safe='/()'))
@@ -191,8 +171,6 @@ def explorer(df,public_mode=False):
             st.write('摘要')
             st.text(record.abstract or '当前记录没有摘要。')
         with st.expander('标注证据与来源'):
-            if public_mode:
-                st.caption('公开版提供逐项核验状态、证据节选和来源位置；完整摘要及长段原文不在公开数据中。历史论文未记录逐项核验状态时如实标明。')
             relevance_basis = str(record.get('relevance_basis','') or '')
             if relevance_basis:
                 st.write('**医疗增材制造相关性判断依据**')

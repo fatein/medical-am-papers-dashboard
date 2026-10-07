@@ -90,18 +90,10 @@ with st.sidebar:
             st.session_state.pop(key,None)
         st.rerun()
     st.divider()
-    st.caption(f'历史快照：{manifest["historical_rows"]:,} 篇\n\n统计单位：去重论文，单主标签。')
-    st.caption('当前语料反映项目收录范围，不等同于领域完整发文量。')
 
 filtered=filter_papers(df,include_future=future,years=years,p_layers=ps,query=query,
                        bibliometric_only=bibliometric_only,**values)
 header(page,years,len(filtered),future,public_mode=PUBLIC_MODE)
-if future:
-    st.info('2026 年及以后为持续补充中的收录数据；不要将不完整年度的篇数与完整年度直接比较。')
-    future_records=df.loc[df.publication_year.ge(2026)]
-    if len(future_records):
-        recommended=int(future_records.bibliometric_recommended.sum())
-        st.caption(f'后续已收录 {len(future_records):,} 条，其中 {recommended:,} 条建议纳入文献计量；其余保留供检索。2026 年按可得题名、摘要和原文片段自动核验，不设置逐篇人工复核步骤。U 表示证据未确认，NA 表示不适用，MULTI 表示多类确认。')
 if page=='数据更新':
     updates(ROOT,manifest)
 elif filtered.empty:
