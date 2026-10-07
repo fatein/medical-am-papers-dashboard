@@ -27,7 +27,7 @@ DIMENSIONS = {'医疗对象（P）':('analysis_primary_p_layer',P),
               '材料体系':('material_primary_code',M),
               '词汇主题':('lexical_theme_id',THEMES)}
 TIERS = {'core':'核心语料','boundary':'边界语料','cross_layer':'跨类别语料',
-         'manual_review':'待复核语料','supplementary':'补充语料','unknown':'未分类'}
+         'manual_review':'证据有限语料','supplementary':'补充语料','unknown':'未分类'}
 WORK_TYPES = {'original_research':'原始研究','review':'综述','other':'其他',
               'unknown':'未分类','editorial':'社论','case_report':'病例报告'}
 COLORS = ['#137F75','#5074BD','#DBAA44','#8D78B5','#CF785F','#64A6A1',

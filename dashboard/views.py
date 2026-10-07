@@ -16,6 +16,7 @@ from .labels import P,D,T,M,THEMES,DIMENSIONS,TIERS,WORK_TYPES,label
 
 CONFIG={'displaylogo':False,'scrollZoom':False,
         'toImageButtonOptions':{'format':'png','scale':2,'filename':'am_research_chart'}}
+EVIDENCE_SCOPES={'pdf_excerpt':'原文片段','abstract':'摘要／元数据','title_only':'仅题名／元数据'}
 
 
 def chart(fig,key):
@@ -58,15 +59,22 @@ def overview(df,years):
         st.caption('各年份分别计算占比。年度篇数增长，不一定意味着某一类别占比增长。')
         chart(composition_chart(df,'analysis_primary_p_layer',P,years,True),'p_yearly')
     with st.container(border=True):
-        st.subheader('标注覆盖与复核状态')
+        st.subheader('标注与内容依据')
         cols=st.columns(3)
         process=int(df.am_process_primary_code.isin([f'T{i}' for i in range(1,8)]+['MULTI']).sum())
         material=int(df.material_primary_code.isin([f'M{i}' for i in range(1,9)]+['MULTI']).sum())
-        review=int(df.manual_review_required.sum())
         cols[0].metric('明确工艺或多类标签',f'{process/len(df):.1%}',f'{process:,} / {len(df):,} 篇',delta_color='off')
         cols[1].metric('明确材料或多类标签',f'{material/len(df):.1%}',f'{material:,} / {len(df):,} 篇',delta_color='off')
-        cols[2].metric('带待复核标记',f'{review/len(df):.1%}',f'{review:,} / {len(df):,} 篇',delta_color='off')
-        st.caption('无需复核标记不代表人工验证通过。分类来源是已有自动标注；细粒度结论应结合原文复核。')
+        future=df.loc[df.publication_year.ge(2026)]
+        if len(future):
+            content=int(future.evidence_scope.isin(['abstract','pdf_excerpt']).sum())
+            cols[2].metric('2026 摘要／原文依据',f'{content/len(future):.1%}',
+                           f'{content:,} / {len(future):,} 篇',delta_color='off')
+        else:
+            known=int(df.analysis_primary_p_layer.isin([f'P{i}' for i in range(1,8)]+['MULTI']).sum())
+            cols[2].metric('明确医疗对象',f'{known/len(df):.1%}',
+                           f'{known:,} / {len(df):,} 篇',delta_color='off')
+        st.caption('2026 年按可得内容自动核验；内容依据范围不代表全文均已获得。没有明确证据的工艺和材料保留“未确认”，不作推断。')
     st.download_button('下载当前年度统计 CSV',safe_csv(annual),file_name='年度论文统计.csv',mime='text/csv')
 
 
@@ -132,8 +140,10 @@ def display_table(df):
                          '疾病／应用':df.disease_primary_code.map(lambda c:label(c,D)),
                          '工艺':df.am_process_primary_code.map(lambda c:label(c,T)),
                          '材料':df.material_primary_code.map(lambda c:label(c,M)),
-                         '待复核':df.manual_review_required.map({True:'是',False:'否'}),'DOI':df.doi})
+                         'DOI':df.doi})
     if df.publication_year.ge(2026).any():
+        result['内容依据']=[EVIDENCE_SCOPES.get(scope,'未记录') if year>=2026 else '—'
+                            for year,scope in zip(df.publication_year,df.evidence_scope)]
         result['文献计量建议']=[('是' if recommended else '否') if year>=2026 else '—'
                               for year,recommended in zip(df.publication_year,df.bibliometric_recommended)]
     return result
@@ -148,7 +158,10 @@ def explorer(df,public_mode=False):
     visible=ordered.iloc[(page-1)*size:page*size]
     st.caption(f'共 {len(df):,} 篇 · 第 {page}/{pages} 页；下载包含全部筛选结果。')
     st.dataframe(display_table(visible),hide_index=True,width='stretch',height=410)
-    export=public_download_frame(df) if public_mode else df.drop(columns=['canonical_pdf'],errors='ignore')
+    export=public_download_frame(df) if public_mode else df.drop(
+        columns=['canonical_pdf','manual_review_required','disease_manual_review_required',
+                 'process_manual_review_required','material_manual_review_required',
+                 'p_layer_manual_review_required'],errors='ignore')
     st.download_button('下载全部筛选论文 CSV',safe_csv(export),file_name='筛选论文.csv',mime='text/csv',type='primary')
     by_id=visible.set_index('document_id')
     selected=st.selectbox('查看论文详情',visible.document_id.tolist(),
@@ -164,15 +177,21 @@ def explorer(df,public_mode=False):
         if record.publication_year>=2026:
             st.write('医疗增材制造相关性：',record.get('medical_am_relevance','未记录'))
             st.write('文献计量建议：','纳入' if record.bibliometric_recommended else '暂不纳入')
+            st.write('内容核验依据：',EVIDENCE_SCOPES.get(record.get('evidence_scope',''),'未记录'))
+            unknown=[name for name,code in [('疾病／应用',record.disease_primary_code),
+                                            ('制造工艺',record.am_process_primary_code),
+                                            ('材料',record.material_primary_code)] if code=='U']
+            if unknown: st.caption('证据未确认：'+'、'.join(unknown)+'；保留“未确认”，不依据题名猜测。')
+            if record.get('evidence_scope')=='title_only':
+                st.info('当前记录仅有题名／元数据层面的内容依据；细分标签仅保留有证据支持的类别。')
             if not public_mode and record.get('source_review_limitation',''):
                 st.caption('原审核限制：'+record.source_review_limitation)
-        if record.manual_review_required: st.warning('此论文带待复核标记，分类解读前请核对证据。')
         if record.doi: st.link_button('打开 DOI 原文入口','https://doi.org/'+quote(record.doi,safe='/()'))
         if not public_mode:
             st.write('摘要')
             st.text(record.abstract or '当前记录没有摘要。')
             with st.expander('标注证据与来源'):
-                for title,prefix in [('疾病／应用','disease'),('制造工艺','process'),('材料','material'),('生物打印','bioprinting')]:
+                for title,prefix in [('医疗对象','p_layer'),('疾病／应用','disease'),('制造工艺','process'),('材料','material'),('生物打印','bioprinting')]:
                     st.write(f'**{title}**')
                     st.text(str(record.get(prefix+'_evidence_text','')) or '未记录证据。')
                     st.caption(f'章节：{record.get(prefix+"_evidence_section","")} · 页码：{record.get(prefix+"_evidence_pages","")}')
@@ -181,7 +200,7 @@ def explorer(df,public_mode=False):
 def template_bytes():
     cols=['document_id','doi','title','publication_year','authors','source_journal','abstract',
           'analysis_primary_p_layer','disease_primary_code','am_process_primary_code',
-          'material_primary_code','bioprinting_flag','manual_review_required','analysis_corpus_tier']
+          'material_primary_code','bioprinting_flag','analysis_corpus_tier']
     cols.append('bibliometric_recommended')
     frame=pd.DataFrame(columns=cols)
     excel=io.BytesIO()

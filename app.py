@@ -73,7 +73,6 @@ with st.sidebar:
     options=sorted(df.analysis_primary_p_layer.unique())
     sync_options(st.session_state,'p_layers',options)
     ps=st.multiselect('医疗对象（主 P 类别）',options,default=options,format_func=lambda c:label(c,P),key='p_layers')
-    review=st.selectbox('标注复核状态',['全部','无需复核标记','待复核'],key='review')
     query=st.text_input('检索关键词',placeholder='题名、作者、期刊、DOI…' if PUBLIC_MODE else
                         '题名、作者、DOI、摘要…',key='query')
     with st.expander('更多筛选'):
@@ -87,14 +86,14 @@ with st.sidebar:
             sync_options(st.session_state,key,opts)
             values[key]=st.multiselect(title,opts,default=opts,format_func=lambda c,m=mapping:label(c,m),key=key)
     if st.button('重置筛选',width='stretch'):
-        for key in ['years','p_layers','review','query','tiers','diseases','processes','materials','work_types']:
+        for key in ['years','p_layers','query','tiers','diseases','processes','materials','work_types']:
             st.session_state.pop(key,None)
         st.rerun()
     st.divider()
     st.caption(f'历史快照：{manifest["historical_rows"]:,} 篇\n\n统计单位：去重论文，单主标签。')
     st.caption('当前语料反映项目收录范围，不等同于领域完整发文量。')
 
-filtered=filter_papers(df,include_future=future,years=years,p_layers=ps,review=review,query=query,
+filtered=filter_papers(df,include_future=future,years=years,p_layers=ps,query=query,
                        bibliometric_only=bibliometric_only,**values)
 header(page,years,len(filtered),future,public_mode=PUBLIC_MODE)
 if future:
@@ -102,7 +101,7 @@ if future:
     future_records=df.loc[df.publication_year.ge(2026)]
     if len(future_records):
         recommended=int(future_records.bibliometric_recommended.sum())
-        st.caption(f'后续已收录 {len(future_records):,} 条，其中 {recommended:,} 条建议纳入文献计量；其余保留供检索。分类中的 U、NA、MULTI 分别表示未确认、不适用、多类确认。')
+        st.caption(f'后续已收录 {len(future_records):,} 条，其中 {recommended:,} 条建议纳入文献计量；其余保留供检索。2026 年按可得题名、摘要和原文片段自动核验，不设置逐篇人工复核步骤。U 表示证据未确认，NA 表示不适用，MULTI 表示多类确认。')
 if page=='数据更新':
     updates(ROOT,manifest)
 elif filtered.empty:

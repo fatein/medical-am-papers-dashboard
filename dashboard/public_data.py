@@ -14,7 +14,7 @@ PUBLIC_COLUMNS = (
     'document_id', 'title', 'publication_year', 'authors', 'source_journal',
     'doi', 'pmid', 'pmcid', 'analysis_primary_p_layer',
     'disease_primary_code', 'am_process_primary_code', 'material_primary_code',
-    'bioprinting_flag', 'manual_review_required', 'analysis_corpus_tier',
+    'bioprinting_flag', 'evidence_scope', 'analysis_corpus_tier',
     'normalized_work_type', 'lexical_theme_id', 'bibliometric_recommended',
     'medical_am_relevance',
 )

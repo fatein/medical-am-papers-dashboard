@@ -31,6 +31,7 @@ DEFAULTS = {'document_id':'','title':'','publication_year':None,'abstract':'',
             'disease_primary_code':'unassigned','am_process_primary_code':'T0',
             'material_primary_code':'M0','analysis_corpus_tier':'unknown',
             'normalized_work_type':'unknown','lexical_theme_id':'unassigned',
+            'evidence_scope':'',
             'dataset_batch':'historical','imported_at':''}
 
 
@@ -61,8 +62,8 @@ def normalize_records(frame):
     out['publication_year'] = year.where(year.mod(1).eq(0)).astype('Int64')
     out['doi'] = out.doi.map(normalize_doi)
     for field in BOOL_FIELDS:
-        if field not in out: out[field] = field == 'manual_review_required'
-        out[field] = out[field].map(lambda v: bool_value(v,field=='manual_review_required'))
+        if field not in out: out[field] = False
+        out[field] = out[field].map(lambda v: bool_value(v,False))
     for i in out.index[out.document_id.eq('')]:
         identity = f'{out.at[i,"doi"]}|{out.at[i,"title"]}|{out.at[i,"publication_year"]}'
         out.at[i,'document_id'] = 'import_' + hashlib.sha256(identity.encode()).hexdigest()[:20]
