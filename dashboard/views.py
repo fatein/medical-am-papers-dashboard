@@ -187,8 +187,8 @@ def explorer(df,public_mode=False):
                 if prefix == 'p_layer' and not evidence:
                     evidence = evidence_field(record, 'cross_layer_evidence_text')
                 status = evidence_field(record, prefix+'_review_status')
-                if status:
-                    st.write('自动核验记录：', status)
+                if status and ('证据不足' in status or '未定位' in status or '缺少对应' in status):
+                    st.caption(status)
                 st.text(evidence or '未记录证据。')
                 section = evidence_field(record, prefix+'_evidence_section')
                 pages = evidence_field(record, prefix+'_evidence_pages')

@@ -34,6 +34,7 @@ PUBLIC_PACKAGE_FILES = frozenset({
 
 _PRIVATE_PATH = re.compile(r'(?i)(?<![A-Z])[A-Z]:[\\/]|file://|\\\\[^\\]')
 EVIDENCE_EXCERPT_LIMIT = 700
+FUTURE_EVIDENCE_EXCERPT_LIMIT = 900
 
 
 def _read_source(root: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -59,20 +60,24 @@ def _select_public(frame: pd.DataFrame) -> pd.DataFrame:
     public = public.reindex(columns=PUBLIC_COLUMNS, fill_value='').fillna('')
     for column in public.columns:
         if 'evidence_' in column or column.endswith('_review_status'):
-            public[column] = public[column].astype(str).map(_public_evidence)
+            public[column] = [
+                _public_evidence(str(value), FUTURE_EVIDENCE_EXCERPT_LIMIT
+                                 if year >= 2026 else EVIDENCE_EXCERPT_LIMIT)
+                for value, year in zip(public[column], public['publication_year'])
+            ]
     if public.select_dtypes(include=['object', 'string']).astype(str).apply(
             lambda col: col.str.contains(_PRIVATE_PATH)).any().any():
         raise ValueError('公开字段含本机路径。')
     return public
 
 
-def _public_evidence(value: str) -> str:
+def _public_evidence(value: str, limit: int = EVIDENCE_EXCERPT_LIMIT) -> str:
     """Publish a brief evidence excerpt; never expose a local file reference."""
     value = value.strip()
     if _PRIVATE_PATH.search(value):
         return '已隐去本机文件路径；请通过 DOI 核查原文。'
-    if len(value) > EVIDENCE_EXCERPT_LIMIT:
-        return value[:EVIDENCE_EXCERPT_LIMIT].rstrip() + '…（证据节选）'
+    if len(value) > limit:
+        return value[:limit].rstrip() + '…（证据节选）'
     return value
 
 
