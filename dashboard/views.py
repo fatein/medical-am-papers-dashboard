@@ -19,6 +19,11 @@ CONFIG={'displaylogo':False,'scrollZoom':False,
 EVIDENCE_SCOPES={'pdf_excerpt':'原文片段','abstract':'摘要／元数据','title_only':'仅题名／元数据'}
 
 
+def evidence_field(record, key):
+    value = record.get(key, '')
+    return '' if value is None or pd.isna(value) else str(value).strip()
+
+
 def chart(fig,key):
     st.plotly_chart(fig,width='stretch',theme=None,key=key,config=CONFIG)
 
@@ -171,27 +176,25 @@ def explorer(df,public_mode=False):
             st.write('摘要')
             st.text(record.abstract or '当前记录没有摘要。')
         with st.expander('标注证据与来源'):
-            relevance_basis = str(record.get('relevance_basis','') or '')
+            relevance_basis = evidence_field(record, 'relevance_basis')
             if relevance_basis:
                 st.write('**医疗增材制造相关性判断依据**')
                 st.text(relevance_basis)
             for title,prefix in [('医疗对象','p_layer'),('语料层级','tier'),('疾病／应用','disease'),
                                  ('制造工艺','process'),('材料','material'),('生物打印','bioprinting')]:
                 st.write(f'**{title}**')
-                evidence = str(record.get(prefix+'_evidence_text','') or '')
+                evidence = evidence_field(record, prefix+'_evidence_text')
                 if prefix == 'p_layer' and not evidence:
-                    evidence = str(record.get('cross_layer_evidence_text','') or '')
-                status = str(record.get(prefix+'_review_status','') or '')
+                    evidence = evidence_field(record, 'cross_layer_evidence_text')
+                status = evidence_field(record, prefix+'_review_status')
                 if status:
                     st.write('自动核验记录：', status)
-                elif record.publication_year < 2026:
-                    st.caption('历史归档未记录逐项核验状态。')
                 st.text(evidence or '未记录证据。')
-                section = str(record.get(prefix+'_evidence_section','') or '')
-                pages = str(record.get(prefix+'_evidence_pages','') or '')
+                section = evidence_field(record, prefix+'_evidence_section')
+                pages = evidence_field(record, prefix+'_evidence_pages')
                 if prefix == 'p_layer' and not section:
-                    section = str(record.get('cross_layer_evidence_section','') or '')
-                    pages = str(record.get('cross_layer_evidence_pages','') or '')
+                    section = evidence_field(record, 'cross_layer_evidence_section')
+                    pages = evidence_field(record, 'cross_layer_evidence_pages')
                 if section or pages:
                     st.caption(f'章节／范围：{section or "未记录"} · 页码：{pages or "未记录"}')
 
