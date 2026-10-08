@@ -39,6 +39,30 @@ def header(page,years,count,future,public_mode=False):
                 f'{"历史 + 补充数据" if future else "2026 年之前的历史基线"}</p></div>',unsafe_allow_html=True)
 
 
+def classification_guide():
+    with st.container(border=True):
+        st.subheader('分类代码怎么读')
+        st.write('论文按四个维度描述：P 是研究的医疗对象，D 是疾病或应用场景，T 是增材制造工艺，M 是使用的材料。')
+        tabs = st.tabs(['P · 医疗对象', 'D · 疾病与应用', 'T · 制造工艺', 'M · 材料体系'])
+        for tab, mapping, description in zip(
+            tabs,
+            (P, D, T, M),
+            ('论文研究的产品或器件是什么。', '论文面向哪种疾病、治疗或医学用途。',
+             '论文采用哪一类增材制造技术。', '论文使用哪一类打印材料。'),
+        ):
+            with tab:
+                st.caption(description)
+                categories = [(code, name) for code, name in mapping.items()
+                              if code not in {'U', 'NA', 'MULTI', 'unassigned'}]
+                midpoint = math.ceil(len(categories) / 2)
+                first, second = st.columns(2)
+                for column, items in ((first, categories[:midpoint]), (second, categories[midpoint:])):
+                    with column:
+                        for code, name in items:
+                            st.markdown(f'**{code}** · {name}')
+        st.caption('特殊标记：U：未确认 · NA：不适用 · MULTI：多类确认；疾病／应用中的 unassigned 表示应用场景未标注。')
+
+
 def overview(df,years):
     annual=yearly_counts(df,years)
     end=annual.iloc[-1]
@@ -50,6 +74,7 @@ def overview(df,years):
                       help='同比只比较相邻日历年。筛选首年、前一年为零及持续补充的 2026+ 年份不显示同比。')
     columns[3].metric('生物打印相关',f'{int(df.bioprinting_flag.sum()):,}',
                       help='沿用既有标注的 bioprinting_flag，不等同于独立工艺分类。')
+    classification_guide()
     left,right=st.columns([1.7,1])
     with left,st.container(border=True):
         st.subheader('研究产出的时间轨迹')
