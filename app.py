@@ -61,7 +61,6 @@ with st.sidebar:
     st.divider()
     future=st.checkbox('包含后续补充数据（2026+）',key='include_future',
                        value=(ROOT/'data/additions.jsonl').exists())
-    bibliometric_only=st.checkbox('2026 仅显示建议纳入文献计量',key='bibliometric_only',value=False) if future else False
     try:
         df=cached_data(str(ROOT),signature(),future)
     except (ValueError,OSError) as error:
@@ -92,7 +91,7 @@ with st.sidebar:
     st.divider()
 
 filtered=filter_papers(df,include_future=future,years=years,p_layers=ps,query=query,
-                       bibliometric_only=bibliometric_only,**values)
+                       **values)
 header(page,years,len(filtered),future,public_mode=PUBLIC_MODE)
 if page=='数据更新':
     updates(ROOT,manifest)
