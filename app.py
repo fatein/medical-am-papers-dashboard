@@ -6,6 +6,8 @@ from dashboard.data import load_data,filter_papers
 from dashboard.labels import P,D,T,M,TIERS,WORK_TYPES,label
 from dashboard.views import overview,trends,explorer,updates,header
 from dashboard.filter_state import sync_options,sync_year_range
+from dashboard.enterprise_data import load_enterprises,load_enterprise_events,filter_enterprises
+from dashboard.enterprise_views import enterprise_overview,enterprise_timeline,enterprise_explorer
 
 ROOT=Path(__file__).resolve().parent
 PUBLIC_MODE=globals().get('DASHBOARD_PUBLIC_MODE',False) is True
@@ -55,48 +57,80 @@ with st.sidebar:
                 '<div class="brand">◈ AM Research<br>学术趋势观察台</div><span class="tag">本地 · 开源 · 无订阅</span>',unsafe_allow_html=True)
     st.caption('医疗增材制造 / 论文研究项目')
     st.divider()
-    pages=['论文总览','研究结构与趋势','论文检索']
+    pages=['论文总览','研究结构与趋势','论文检索','企业格局','技术路线图','企业检索']
     if not PUBLIC_MODE: pages.append('数据更新')
     page=st.radio('浏览页面',pages,key='page',label_visibility='collapsed')
     st.divider()
-    future=st.checkbox('包含后续补充数据（2026+）',key='include_future',
-                       value=(ROOT/'data/additions.jsonl').exists())
-    try:
-        df=cached_data(str(ROOT),signature(),future)
-    except (ValueError,OSError) as error:
-        st.error(f'数据读取失败：{error}')
-        st.stop()
-    first,last=int(df.publication_year.min()),int(df.publication_year.max())
-    sync_year_range(st.session_state,(first,last))
-    years=st.slider('发表年份',first,last,(first,last),key='years') if first<last else (first,last)
-    options=sorted(df.analysis_primary_p_layer.unique())
-    sync_options(st.session_state,'p_layers',options)
-    ps=st.multiselect('医疗对象（主 P 类别）',options,default=options,format_func=lambda c:label(c,P),key='p_layers')
-    query=st.text_input('检索关键词',placeholder='题名、作者、期刊、DOI…' if PUBLIC_MODE else
-                        '题名、作者、DOI、摘要…',key='query')
-    with st.expander('更多筛选'):
-        values={}
-        for key,col,mapping,title in [('tiers','analysis_corpus_tier',TIERS,'语料层级'),
-                                     ('diseases','disease_primary_code',D,'疾病／应用'),
-                                     ('processes','am_process_primary_code',T,'制造工艺'),
-                                     ('materials','material_primary_code',M,'材料'),
-                                     ('work_types','normalized_work_type',WORK_TYPES,'论文类型')]:
-            opts=sorted(df[col].unique())
-            sync_options(st.session_state,key,opts)
-            values[key]=st.multiselect(title,opts,default=opts,format_func=lambda c,m=mapping:label(c,m),key=key)
-    if st.button('重置筛选',width='stretch'):
-        for key in ['years','p_layers','query','tiers','diseases','processes','materials','work_types']:
-            st.session_state.pop(key,None)
-        st.rerun()
-    st.divider()
+    if page in ('企业格局','技术路线图','企业检索'):
+        try:
+            companies=load_enterprises(ROOT)
+            events=load_enterprise_events(ROOT)
+        except (OSError,ValueError) as error:
+            st.error(f'企业数据读取失败：{error}')
+            st.stop()
+        countries=sorted(companies.country.unique())
+        chosen_countries=st.multiselect('国家／地区',countries,default=countries,key='enterprise_countries')
+        p_options=[f'P{i}' for i in range(1,8)]
+        chosen_ps=st.multiselect('医疗对象 P 类别',p_options,default=p_options,
+                                 format_func=lambda code:label(code,P),key='enterprise_p_codes')
+        enterprise_query=st.text_input('企业／产品／技术检索',key='enterprise_query')
+        statuses=sorted(companies.status.unique())
+        with st.expander('更多企业筛选'):
+            chosen_statuses=st.multiselect('企业状态',statuses,default=statuses,key='enterprise_statuses')
+        if st.button('重置企业筛选',width='stretch'):
+            for key in ['enterprise_countries','enterprise_p_codes','enterprise_query','enterprise_statuses',
+                        'enterprise_years','enterprise_types','enterprise_timeline_company','enterprise_timeline_page']:
+                st.session_state.pop(key,None)
+            st.rerun()
+        st.divider()
+        filtered_companies=filter_enterprises(companies,countries=chosen_countries,p_codes=chosen_ps,
+                                               query=enterprise_query,statuses=chosen_statuses)
+    else:
+        future=st.checkbox('包含后续补充数据（2026+）',key='include_future',
+                           value=(ROOT/'data/additions.jsonl').exists())
+        try:
+            df=cached_data(str(ROOT),signature(),future)
+        except (ValueError,OSError) as error:
+            st.error(f'数据读取失败：{error}')
+            st.stop()
+        first,last=int(df.publication_year.min()),int(df.publication_year.max())
+        sync_year_range(st.session_state,(first,last))
+        years=st.slider('发表年份',first,last,(first,last),key='years') if first<last else (first,last)
+        options=sorted(df.analysis_primary_p_layer.unique())
+        sync_options(st.session_state,'p_layers',options)
+        ps=st.multiselect('医疗对象（主 P 类别）',options,default=options,format_func=lambda c:label(c,P),key='p_layers')
+        query=st.text_input('检索关键词',placeholder='题名、作者、期刊、DOI…' if PUBLIC_MODE else
+                            '题名、作者、DOI、摘要…',key='query')
+        with st.expander('更多筛选'):
+            values={}
+            for key,col,mapping,title in [('tiers','analysis_corpus_tier',TIERS,'语料层级'),
+                                         ('diseases','disease_primary_code',D,'疾病／应用'),
+                                         ('processes','am_process_primary_code',T,'制造工艺'),
+                                         ('materials','material_primary_code',M,'材料'),
+                                         ('work_types','normalized_work_type',WORK_TYPES,'论文类型')]:
+                opts=sorted(df[col].unique())
+                sync_options(st.session_state,key,opts)
+                values[key]=st.multiselect(title,opts,default=opts,format_func=lambda c,m=mapping:label(c,m),key=key)
+        if st.button('重置筛选',width='stretch'):
+            for key in ['years','p_layers','query','tiers','diseases','processes','materials','work_types']:
+                st.session_state.pop(key,None)
+            st.rerun()
+        st.divider()
 
-filtered=filter_papers(df,include_future=future,years=years,p_layers=ps,query=query,
-                       **values)
-header(page,years,len(filtered),future,public_mode=PUBLIC_MODE)
-if page=='数据更新':
-    updates(ROOT,manifest)
-elif filtered.empty:
-    st.info('没有匹配的论文。请调整年份、类别或检索关键词，或点击“重置筛选”。')
-elif page=='论文总览': overview(filtered,years)
-elif page=='研究结构与趋势': trends(filtered,years)
-elif page=='论文检索': explorer(filtered,public_mode=PUBLIC_MODE)
+if page=='企业格局':
+    enterprise_overview(filtered_companies,events)
+elif page=='技术路线图':
+    enterprise_timeline(filtered_companies,events,chosen_ps)
+elif page=='企业检索':
+    enterprise_explorer(filtered_companies,events)
+else:
+    filtered=filter_papers(df,include_future=future,years=years,p_layers=ps,query=query,
+                           **values)
+    header(page,years,len(filtered),future,public_mode=PUBLIC_MODE)
+    if page=='数据更新':
+        updates(ROOT,manifest)
+    elif filtered.empty:
+        st.info('没有匹配的论文。请调整年份、类别或检索关键词，或点击“重置筛选”。')
+    elif page=='论文总览': overview(filtered,years)
+    elif page=='研究结构与趋势': trends(filtered,years)
+    elif page=='论文检索': explorer(filtered,public_mode=PUBLIC_MODE)
