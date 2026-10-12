@@ -8,7 +8,8 @@ from pathlib import Path
 import pandas as pd
 
 from .data import deduplicate, normalize_records
-from .enterprise_data import EVENT_COLUMNS, normalize_public_url
+from .enterprise_data import (EVENT_COLUMNS, OBSERVATION_COLUMNS,
+                              normalize_public_url, observation_coverage)
 
 
 PUBLIC_COLUMNS = (
@@ -33,6 +34,7 @@ PUBLIC_PACKAGE_FILES = frozenset({
     'dashboard/enterprise_data.py', 'dashboard/enterprise_views.py',
     'data/papers_pre2026.csv', 'data/additions.jsonl', 'data/manifest.json',
     'data/enterprises.csv', 'data/enterprise_events.jsonl',
+    'data/enterprise_observations.jsonl',
 })
 
 PUBLIC_ENTERPRISE_COLUMNS = (
@@ -127,6 +129,26 @@ def project_public_enterprises(root: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
     return public_companies, public_events
 
 
+def project_public_enterprise_observations(root: Path) -> pd.DataFrame:
+    """Copy only the reviewed, public-safe observation fields."""
+    root = Path(root)
+    observations = pd.read_json(root/'data/enterprise_observations.jsonl', lines=True)
+    if tuple(observations.columns) != OBSERVATION_COLUMNS:
+        raise ValueError('企业观测记录字段不等于白名单。')
+    companies = pd.read_csv(root/'data/enterprises.csv', keep_default_na=False)
+    coverage = observation_coverage(companies, observations)
+    if coverage['current_state_companies'] != len(companies) or coverage['missing_current_state']:
+        raise ValueError('企业现状覆盖不完整。')
+    if observations.observation_id.duplicated().any() or not observations.company_id.isin(companies.company_id).all():
+        raise ValueError('企业观测记录 ID 或企业关联无效。')
+    if not observations.source_url.map(lambda url: not url or bool(normalize_public_url(url))).all():
+        raise ValueError('企业观测记录包含无效来源。')
+    text_fields = observations.select_dtypes(include=['object', 'string']).astype(str)
+    if text_fields.apply(lambda col: col.str.contains(_PRIVATE_PATH)).any().any():
+        raise ValueError('企业观测记录包含本机路径。')
+    return observations.reindex(columns=OBSERVATION_COLUMNS, fill_value='').fillna('')
+
+
 def validate_public_package(root: Path) -> dict:
     root = Path(root)
     actual = {path.relative_to(root).as_posix() for path in root.rglob('*') if path.is_file()
@@ -168,6 +190,7 @@ def validate_public_package(root: Path) -> dict:
         raise ValueError('公开包清单与实际论文数量不一致。')
     companies = pd.read_csv(root/'data/enterprises.csv', keep_default_na=False)
     events = pd.read_json(root/'data/enterprise_events.jsonl', lines=True)
+    observations = pd.read_json(root/'data/enterprise_observations.jsonl', lines=True)
     if tuple(companies.columns) != PUBLIC_ENTERPRISE_COLUMNS or tuple(events.columns) != EVENT_COLUMNS:
         raise ValueError('企业公开数据列不等于字段白名单。')
     if len(companies) != 344 or companies.company_id.nunique() != 344:
@@ -176,12 +199,30 @@ def validate_public_package(root: Path) -> dict:
         raise ValueError('企业公开包事件关联无效。')
     if not events.source_url.map(lambda url: bool(normalize_public_url(url))).all():
         raise ValueError('企业事件包含无效来源。')
-    for name, frame in (('data/enterprises.csv', companies), ('data/enterprise_events.jsonl', events)):
+    if tuple(observations.columns) != OBSERVATION_COLUMNS:
+        raise ValueError('企业观测记录字段不等于白名单。')
+    current = observations.loc[observations.observation_kind.eq('当前现状')]
+    if (len(current) != 344 or current.company_id.nunique() != 344 or
+            set(current.company_id) != set(companies.company_id)):
+        raise ValueError('企业现状覆盖不完整。')
+    if (observations.observation_id.duplicated().any() or
+            not observations.company_id.isin(companies.company_id).all() or
+            not observations.observation_kind.isin(['当前现状', '资料年份线索']).all() or
+            not observations.source_url.map(lambda url: not url or bool(normalize_public_url(url))).all()):
+        raise ValueError('企业观测记录关联、类型或来源无效。')
+    clues = observations.loc[observations.observation_kind.eq('资料年份线索')]
+    if not current.observation_year.eq(0).all() or not clues.observation_year.between(2010, 2026).all():
+        raise ValueError('企业观测记录年份口径无效。')
+    for name, frame in (('data/enterprises.csv', companies), ('data/enterprise_events.jsonl', events),
+                        ('data/enterprise_observations.jsonl', observations)):
         text_fields = frame.select_dtypes(include=['object', 'string']).astype(str)
         if text_fields.apply(lambda col: col.str.contains(_PRIVATE_PATH)).any().any():
             raise ValueError(f'公开包包含本机路径：{name}')
     expected['enterprise_rows'] = len(companies)
     expected['enterprise_event_rows'] = len(events)
+    expected['enterprise_observation_rows'] = len(observations)
+    expected['current_state_companies'] = current.company_id.nunique()
+    expected['enterprise_year_clues'] = len(clues)
     return expected
 
 

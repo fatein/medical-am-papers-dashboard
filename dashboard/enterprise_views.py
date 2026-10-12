@@ -39,14 +39,22 @@ def _source_button(url: str, key: str, evidence_level: str = '') -> None:
         st.link_button(caption, url, key=key)
 
 
-def enterprise_overview(companies: pd.DataFrame, events: pd.DataFrame) -> None:
-    _hero('企业格局', '从企业地域、医疗对象和有来源的逐年事件，观察这份企业库中的技术与产品变化。')
+def enterprise_overview(companies: pd.DataFrame, events: pd.DataFrame,
+                        observations: pd.DataFrame | None = None) -> None:
+    _hero('企业格局', '观察企业分布、产品与技术方向，以及有来源的逐年变化。')
+    if companies.empty:
+        st.info('没有匹配的企业，请调整筛选条件。')
+        return
     selected_events = _events_for(companies, events)
+    current = (observations.loc[observations.company_id.isin(companies.company_id) &
+                                observations.observation_kind.eq('当前现状')]
+               if observations is not None else pd.DataFrame())
     a, b, c, d = st.columns(4)
     a.metric('企业', f'{len(companies):,}')
     b.metric('涉及国家／地区', f'{companies.country.nunique():,}')
     c.metric('年度节点（含年份级）', f'{len(selected_events):,}')
-    d.metric('有年度节点的企业', f'{selected_events.company_id.nunique():,}')
+    d.metric('有产品／技术描述', f'{current.content_status.ne("资料不足").sum():,}'
+             if not current.empty else f'{selected_events.company_id.nunique():,}')
 
     left, right = st.columns([1.05, 1])
     with left:
@@ -87,88 +95,147 @@ def enterprise_overview(companies: pd.DataFrame, events: pd.DataFrame) -> None:
         st.caption('年度柱表示企业库中记录的产品、技术及市场动作数量，不能据此推算销售额或市场份额。')
     with st.expander('数据与证据口径'):
         st.write('来源工作簿有 347 条记录；合并 3 组同一主体的重复记录后，当前展示 344 家。')
-        st.write('时间轴含两种节点：逐条复查来源的节点，以及根据工作簿产品变化摘要整理的年份级节点。年份级节点只表示资料记载的年份；所附链接是参考来源，未必包含同一句发布日期。没有可定位年份的产品仍可在企业档案中检索。')
+        st.write('技术地图为每家公司展示现状记录；另外区分年度事件与工作簿中的资料年份线索。只有年度事件进入年度变化统计。资料年份线索不等于产品发布日期，当前现状也不是一次新的发布。')
 
 
 def enterprise_timeline(companies: pd.DataFrame, events: pd.DataFrame,
+                        observations: pd.DataFrame,
                         selected_p_codes: list[str] | None = None) -> None:
-    _hero('技术路线图', '按国家、医疗对象和年份查看企业产品、技术与市场动作；每条节点都标明时间和来源口径。')
-    selected = _events_for(companies, events)
-    if selected_p_codes is not None and len(selected_p_codes) < 7:
-        selected = selected.loc[selected.p_codes.map(
-            lambda value: bool(set(parse_p_codes(value)).intersection(selected_p_codes)))].copy()
-    if selected.empty:
-        st.info('当前筛选范围没有可入图的年度事件。可前往企业检索查看公司档案。')
+    _hero('技术路线图', '逐家查看医疗增材制造产品与技术现状，以及有年份的公开变化。')
+    if companies.empty:
+        st.info('没有匹配的企业，请调整筛选条件。')
         return
-    years = sorted(selected.event_year.unique().tolist())
-    types = sorted(selected.event_type.unique().tolist())
+    selected_events = _events_for(companies, events)
+    selected_observations = observations.loc[observations.company_id.isin(companies.company_id)].copy()
+    years = sorted(set(selected_events.event_year.tolist()) |
+                   set(selected_observations.loc[selected_observations.observation_year.gt(0),
+                                                 'observation_year'].astype(int).tolist()))
+    types = sorted(selected_events.event_type.unique().tolist())
     c1, c2 = st.columns(2)
     with c1:
-        year_range = st.slider('事件年份', min(years), max(years), (min(years), max(years)), key='enterprise_years') if len(years) > 1 else (years[0], years[0])
+        year_range = (st.slider('年份范围', min(years), max(years), (min(years), max(years)),
+                                key='enterprise_years') if len(years) > 1 else
+                      (years[0], years[0]) if years else (2010, 2026))
     with c2:
         chosen_types = st.multiselect('事件类型', types, default=types, key='enterprise_types')
-    selected = selected.loc[selected.event_year.between(*year_range) & selected.event_type.isin(chosen_types)].copy()
-    if selected.empty:
-        st.info('没有符合这些条件的年度事件。')
-        return
+    selected_events = selected_events.loc[
+        selected_events.event_year.between(*year_range) &
+        selected_events.event_type.isin(chosen_types)].copy()
+    clues = selected_observations.loc[
+        selected_observations.observation_kind.eq('资料年份线索') &
+        selected_observations.observation_year.between(*year_range)].copy()
+    current = selected_observations.loc[
+        selected_observations.observation_kind.eq('当前现状')].copy()
     names = companies.set_index('company_id').name.to_dict()
-    selected['company_name'] = selected.company_id.map(names)
-    metric1, metric2, metric3 = st.columns(3)
-    metric1.metric('年度节点', f'{len(selected):,}')
-    metric2.metric('有节点的企业', f'{selected.company_id.nunique():,}')
-    metric3.metric('覆盖年份', f'{selected.event_year.min()}–{selected.event_year.max()}')
+    selected_events['company_name'] = selected_events.company_id.map(names)
+    clues['company_name'] = clues.company_id.map(names)
+    current['company_name'] = current.company_id.map(names)
+    a, b, c, d = st.columns(4)
+    a.metric('匹配企业', f'{len(companies):,}')
+    b.metric('有产品／技术描述', f'{current.content_status.ne("资料不足").sum():,}')
+    c.metric('年度事件', f'{len(selected_events):,}')
+    d.metric('资料年份线索', f'{len(clues):,}')
+    st.caption('每家企业均有“现状”位置；黄色菱形表示工作簿中的年份线索，年份不等于产品发布日期。年度统计只计有来源的年度事件。')
 
-    tab_matrix, tab_annual = st.tabs(['企业 × 年份', '年度汇总'])
+    tab_matrix, tab_annual = st.tabs(['全部企业技术地图', '年度变化'])
     with tab_matrix:
-        company_names = sorted(selected.company_name.unique().tolist())
-        chosen_name = st.selectbox('定位企业', ['全部'] + company_names, key='enterprise_timeline_company')
+        company_names = sorted(companies.name.tolist())
+        chosen_name = st.selectbox('定位企业', ['全部'] + company_names,
+                                   key='enterprise_timeline_company')
         if chosen_name != '全部':
-            shown = selected.loc[selected.company_name.eq(chosen_name)]
+            shown_names = [chosen_name]
         else:
             page_count = (len(company_names) + 24) // 25
-            page = st.number_input('企业页码（每页最多 25 家）', min_value=1, max_value=page_count,
-                                   value=1, step=1, key='enterprise_timeline_page')
-            shown = selected.loc[selected.company_name.isin(company_names[(page-1)*25:page*25])]
-        fig = px.scatter(shown, x='event_year', y='company_name', color='event_type',
-                         hover_name='title', hover_data={'event_year': True, 'event_type': True,
-                                                          'company_name': False},
-                         color_discrete_map=EVENT_COLORS,
-                         labels={'event_year': '年份', 'company_name': '企业', 'event_type': '事件类型'})
+            page = st.number_input('企业页码（每页 25 家）', min_value=1,
+                                   max_value=page_count, value=1, step=1,
+                                   key='enterprise_timeline_page')
+            shown_names = company_names[(page-1)*25:page*25]
+        shown_ids = set(companies.loc[companies.name.isin(shown_names), 'company_id'])
+        points = []
+        for event in selected_events.loc[selected_events.company_id.isin(shown_ids)].itertuples():
+            points.append({'位置': str(event.event_year), '企业': event.company_name,
+                           '节点类型': event.event_type, '内容': event.title,
+                           '时间口径': event.event_date, '来源': event.evidence_level})
+        for clue in clues.loc[clues.company_id.isin(shown_ids)].itertuples():
+            points.append({'位置': str(clue.observation_year), '企业': clue.company_name,
+                           '节点类型': '资料年份线索', '内容': clue.title,
+                           '时间口径': clue.date_basis, '来源': clue.source_basis})
+        for state in current.loc[current.company_id.isin(shown_ids)].itertuples():
+            points.append({'位置': '现状', '企业': state.company_name,
+                           '节点类型': '资料待补' if state.content_status == '资料不足' else '当前产品／技术',
+                           '内容': state.title, '时间口径': state.date_basis,
+                           '来源': state.source_basis})
+        positions = [str(year) for year in range(year_range[0], year_range[1]+1)] + ['现状']
+        colors = {**EVENT_COLORS, '资料年份线索': '#D5A454',
+                  '当前产品／技术': '#137F75', '资料待补': '#A5B1BE'}
+        symbols = {'资料年份线索': 'diamond', '当前产品／技术': 'circle',
+                   '资料待补': 'circle-open'}
+        fig = px.scatter(pd.DataFrame(points), x='位置', y='企业', color='节点类型',
+                         symbol='节点类型', hover_name='内容',
+                         hover_data={'企业': False, '位置': True, '时间口径': True, '来源': True},
+                         category_orders={'位置': positions, '企业': list(reversed(shown_names))},
+                         color_discrete_map=colors, symbol_map=symbols,
+                         labels={'位置': '年份／当前状态'})
         fig.update_traces(marker=dict(size=12, line=dict(width=1, color='white')))
-        fig.update_layout(height=max(430, 48 * shown.company_name.nunique() + 100),
+        fig.update_layout(height=max(430, 39 * len(shown_names) + 120),
                           margin=dict(l=15, r=20, t=20, b=20),
-                          legend=dict(orientation='h', y=-0.16), plot_bgcolor='rgba(0,0,0,0)')
+                          legend=dict(orientation='h', y=-0.15), plot_bgcolor='rgba(0,0,0,0)')
         st.plotly_chart(fig, width='stretch')
+        st.markdown('**本页企业产品与技术**')
+        brief = current.loc[current.company_id.isin(shown_ids),
+                            ['company_name', 'title', 'content_status']].copy()
+        brief.columns = ['企业', '产品／技术概况', '内容状态']
+        st.dataframe(brief.sort_values('企业'), hide_index=True, width='stretch', height=320)
+        detail_name = st.selectbox('查看企业现状与来源', shown_names,
+                                   key='enterprise_timeline_detail')
+        state = current.loc[current.company_name.eq(detail_name)].iloc[0]
+        st.markdown('**当前产品／技术**')
+        st.write(state['product_summary'] or '未查到可确认的具体产品。')
+        st.write(state['technology_summary'] or '未查到可确认的具体技术路线。')
+        st.caption(f"依据：{state['source_basis']} · {state['date_basis']}")
+        _source_button(state['source_url'], f"state_source_{state['observation_id']}")
+        company_clues = clues.loc[clues.company_name.eq(detail_name)]
+        for clue in company_clues.itertuples():
+            st.write(f'{clue.observation_year} · 资料年份线索：{clue.title}')
+            st.caption(f'{clue.date_basis} · {clue.source_basis}')
+            _source_button(clue.source_url, f'clue_source_{clue.observation_id}')
     with tab_annual:
-        yearly = selected.groupby(['event_year', 'event_type']).size().reset_index(name='事件数')
-        yearly['event_year'] = yearly.event_year.astype(str)
-        fig = px.bar(yearly, x='event_year', y='事件数', color='event_type',
-                     color_discrete_map=EVENT_COLORS, barmode='stack',
-                     labels={'event_year': '年份', 'event_type': '事件类型'})
-        fig.update_layout(height=420, margin=dict(l=10, r=10, t=15, b=30),
-                          legend=dict(orientation='h', y=-0.22), plot_bgcolor='rgba(0,0,0,0)')
-        st.plotly_chart(fig, width='stretch')
-        counts = selected.groupby('event_year').company_id.nunique().rename('有事件的企业数')
-        st.dataframe(counts, width='stretch')
+        if selected_events.empty:
+            st.info('当前筛选范围没有有来源的年度事件。')
+        else:
+            yearly = selected_events.groupby(['event_year', 'event_type']).size().reset_index(name='事件数')
+            yearly['event_year'] = yearly.event_year.astype(str)
+            annual_fig = px.bar(yearly, x='event_year', y='事件数', color='event_type',
+                                color_discrete_map=EVENT_COLORS, barmode='stack',
+                                labels={'event_year': '年份', 'event_type': '事件类型'})
+            annual_fig.update_layout(height=420, margin=dict(l=10, r=10, t=15, b=30),
+                                     legend=dict(orientation='h', y=-0.22),
+                                     plot_bgcolor='rgba(0,0,0,0)')
+            st.plotly_chart(annual_fig, width='stretch')
+            counts = selected_events.groupby('event_year').company_id.nunique().rename('有事件的企业数')
+            st.dataframe(counts, width='stretch')
 
-    st.subheader('事件与来源')
-    choices = selected.sort_values(['event_year', 'company_name'], ascending=[False, True]).reset_index(drop=True)
-    index = st.selectbox('选择一条事件', choices.index.tolist(),
-                         format_func=lambda i: f"{choices.loc[i, 'event_year']} · {choices.loc[i, 'company_name']} · {choices.loc[i, 'title']}",
-                         key='enterprise_event_choice')
-    event = choices.loc[index]
-    st.markdown(f"**{event['title']}**")
-    st.write(event['detail'])
-    precision = '年份级' if event['date_precision'] == 'year' else '具体日期'
-    st.caption(f"时间：{event['event_date']}（{precision}） · 医疗对象：{event['p_codes'] or '未明确'} · 类型：{event['event_type']} · 依据：{event['evidence_level']}")
-    if event['technology']:
-        st.write(f"技术／工艺：{event['technology']}")
-    if event['material']:
-        st.write(f"材料：{event['material']}")
-    _source_button(event['source_url'], f"timeline_source_{event['event_id']}", event['evidence_level'])
+    if not selected_events.empty:
+        st.subheader('年度事件与来源')
+        choices = selected_events.sort_values(['event_year', 'company_name'],
+                                              ascending=[False, True]).reset_index(drop=True)
+        index = st.selectbox('选择一条事件', choices.index.tolist(),
+                             format_func=lambda i: f"{choices.loc[i, 'event_year']} · {choices.loc[i, 'company_name']} · {choices.loc[i, 'title']}",
+                             key='enterprise_event_choice')
+        event = choices.loc[index]
+        st.markdown(f"**{event['title']}**")
+        st.write(event['detail'])
+        precision = '年份级' if event['date_precision'] == 'year' else '具体日期'
+        st.caption(f"时间：{event['event_date']}（{precision}） · 医疗对象：{event['p_codes'] or '未明确'} · 类型：{event['event_type']} · 依据：{event['evidence_level']}")
+        if event['technology']:
+            st.write(f"技术／工艺：{event['technology']}")
+        if event['material']:
+            st.write(f"材料：{event['material']}")
+        _source_button(event['source_url'], f"timeline_source_{event['event_id']}", event['evidence_level'])
 
 
-def enterprise_explorer(companies: pd.DataFrame, events: pd.DataFrame) -> None:
+def enterprise_explorer(companies: pd.DataFrame, events: pd.DataFrame,
+                        observations: pd.DataFrame) -> None:
     _hero('企业检索与档案', '检索企业、产品与技术平台，查看官网、业务方向和资料记载的逐年变化。')
     if companies.empty:
         st.info('没有匹配的企业，请调整筛选条件。')
@@ -180,19 +247,36 @@ def enterprise_explorer(companies: pd.DataFrame, events: pd.DataFrame) -> None:
     names = companies.sort_values('name').name.tolist()
     selected_name = st.selectbox('选择企业查看档案', names, key='enterprise_selected_company')
     company = companies.loc[companies.name.eq(selected_name)].iloc[0]
+    current = observations.loc[observations.company_id.eq(company['company_id']) &
+                               observations.observation_kind.eq('当前现状')]
     st.subheader(company['name'])
     st.caption(f"{company['country']} · {company['status']} · {company['p_codes'] or 'P 类待确认'}")
     if company['website']:
         st.markdown(f"官方网站：[访问 {company['website']}]({company['website']})")
     else:
         st.caption('官方网站：暂无可确认公开链接')
+    if not current.empty:
+        state = current.iloc[0]
+        st.caption(f"内容状态：{state['content_status']} · 来源核查：{company['source_status']} · {state['date_basis']} · {state['source_basis']}")
+        _source_button(state['source_url'], f"profile_state_{state['observation_id']}")
     c1, c2 = st.columns(2)
     with c1:
-        st.markdown('**产品与服务（来源工作簿摘要）**')
-        st.write(company['product_summary'] or '暂无可核实的产品描述。')
+        st.markdown('**产品与服务**')
+        st.write(state['product_summary'] if not current.empty and state['product_summary']
+                 else '未查到可确认的医疗增材制造产品。')
     with c2:
-        st.markdown('**技术路线（来源工作簿摘要）**')
-        st.write(company['technology_summary'] or '暂无可核实的技术描述。')
+        st.markdown('**技术路线**')
+        st.write(state['technology_summary'] if not current.empty and state['technology_summary']
+                 else '未查到可确认的医疗增材制造技术路线。')
+    company_clues = observations.loc[
+        observations.company_id.eq(company['company_id']) &
+        observations.observation_kind.eq('资料年份线索')].sort_values('observation_year', ascending=False)
+    if not company_clues.empty:
+        st.markdown('**资料年份线索（非发布年份）**')
+        for clue in company_clues.itertuples():
+            st.write(f'{clue.observation_year} · {clue.title}')
+            st.caption(f'{clue.date_basis} · {clue.source_basis}')
+            _source_button(clue.source_url, f'profile_clue_{clue.observation_id}')
     st.markdown('**逐年事件**')
     company_events = events.loc[events.company_id.eq(company['company_id'])].sort_values(
         ['event_year', 'event_date'], ascending=False)

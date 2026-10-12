@@ -6,7 +6,7 @@ from dashboard.data import load_data,filter_papers
 from dashboard.labels import P,D,T,M,TIERS,WORK_TYPES,label
 from dashboard.views import overview,trends,explorer,updates,header
 from dashboard.filter_state import sync_options,sync_year_range
-from dashboard.enterprise_data import load_enterprises,load_enterprise_events,filter_enterprises
+from dashboard.enterprise_data import load_enterprises,load_enterprise_events,load_enterprise_observations,filter_enterprises
 from dashboard.enterprise_views import enterprise_overview,enterprise_timeline,enterprise_explorer
 
 ROOT=Path(__file__).resolve().parent
@@ -65,6 +65,7 @@ with st.sidebar:
         try:
             companies=load_enterprises(ROOT)
             events=load_enterprise_events(ROOT)
+            observations=load_enterprise_observations(ROOT)
         except (OSError,ValueError) as error:
             st.error(f'企业数据读取失败：{error}')
             st.stop()
@@ -118,11 +119,11 @@ with st.sidebar:
         st.divider()
 
 if page=='企业格局':
-    enterprise_overview(filtered_companies,events)
+    enterprise_overview(filtered_companies,events,observations)
 elif page=='技术路线图':
-    enterprise_timeline(filtered_companies,events,chosen_ps)
+    enterprise_timeline(filtered_companies,events,observations,chosen_ps)
 elif page=='企业检索':
-    enterprise_explorer(filtered_companies,events)
+    enterprise_explorer(filtered_companies,events,observations)
 else:
     filtered=filter_papers(df,include_future=future,years=years,p_layers=ps,query=query,
                            **values)
