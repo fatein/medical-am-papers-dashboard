@@ -33,9 +33,10 @@ def _events_for(companies: pd.DataFrame, events: pd.DataFrame) -> pd.DataFrame:
     return events.loc[events.company_id.isin(companies.company_id)].copy()
 
 
-def _source_button(url: str, key: str) -> None:
+def _source_button(url: str, key: str, evidence_level: str = '') -> None:
     if url:
-        st.link_button('查看来源 ↗', url, key=key)
+        caption = '查看参考来源 ↗' if evidence_level == '工作簿整理·年份级' else '查看来源 ↗'
+        st.link_button(caption, url, key=key)
 
 
 def enterprise_overview(companies: pd.DataFrame, events: pd.DataFrame) -> None:
@@ -44,8 +45,8 @@ def enterprise_overview(companies: pd.DataFrame, events: pd.DataFrame) -> None:
     a, b, c, d = st.columns(4)
     a.metric('企业', f'{len(companies):,}')
     b.metric('涉及国家／地区', f'{companies.country.nunique():,}')
-    c.metric('已核验年度事件', f'{len(selected_events):,}')
-    d.metric('有年度事件的企业', f'{selected_events.company_id.nunique():,}')
+    c.metric('年度节点（含年份级）', f'{len(selected_events):,}')
+    d.metric('有年度节点的企业', f'{selected_events.company_id.nunique():,}')
 
     left, right = st.columns([1.05, 1])
     with left:
@@ -71,7 +72,7 @@ def enterprise_overview(companies: pd.DataFrame, events: pd.DataFrame) -> None:
         st.plotly_chart(fig, width='stretch')
     st.caption('一家公司可对应多个 P 类，因此各类数量之和可能大于当前企业数。')
 
-    st.subheader('有来源的年度变化')
+    st.subheader('企业年度变化')
     if selected_events.empty:
         st.info('当前筛选范围没有可确认年份及来源的事件。')
     else:
@@ -83,15 +84,15 @@ def enterprise_overview(companies: pd.DataFrame, events: pd.DataFrame) -> None:
                           margin=dict(l=10, r=10, t=15, b=30),
                           legend=dict(orientation='h', y=-0.22), plot_bgcolor='rgba(0,0,0,0)')
         st.plotly_chart(fig, width='stretch')
-        st.caption('年度柱表示已核验的事件数，不能据此推算企业销售额或市场份额。')
+        st.caption('年度柱表示企业库中记录的产品、技术及市场动作数量，不能据此推算销售额或市场份额。')
     with st.expander('数据与证据口径'):
-        st.write('来源工作簿有 347 条记录；合并 3 组同一主体的重复记录后，当前展示 344 家。每条原始记录均做了名称检索；只有能定位到具体年份、事项和公开来源的变化才进入路线图。')
-        st.write('未能确认年度变化的企业仍保留可搜索档案。企业简介沿用工作簿的产品与技术摘要；路线图中的逐条事件采用更严格的来源门槛。')
+        st.write('来源工作簿有 347 条记录；合并 3 组同一主体的重复记录后，当前展示 344 家。')
+        st.write('时间轴含两种节点：逐条复查来源的节点，以及根据工作簿产品变化摘要整理的年份级节点。年份级节点只表示资料记载的年份；所附链接是参考来源，未必包含同一句发布日期。没有可定位年份的产品仍可在企业档案中检索。')
 
 
 def enterprise_timeline(companies: pd.DataFrame, events: pd.DataFrame,
                         selected_p_codes: list[str] | None = None) -> None:
-    _hero('技术路线图', '按国家、医疗对象和事件类型追踪企业的产品、技术与市场动作。每个点都能追溯到公开来源。')
+    _hero('技术路线图', '按国家、医疗对象和年份查看企业产品、技术与市场动作；每条节点都标明时间和来源口径。')
     selected = _events_for(companies, events)
     if selected_p_codes is not None and len(selected_p_codes) < 7:
         selected = selected.loc[selected.p_codes.map(
@@ -113,8 +114,8 @@ def enterprise_timeline(companies: pd.DataFrame, events: pd.DataFrame,
     names = companies.set_index('company_id').name.to_dict()
     selected['company_name'] = selected.company_id.map(names)
     metric1, metric2, metric3 = st.columns(3)
-    metric1.metric('事件', f'{len(selected):,}')
-    metric2.metric('有事件的企业', f'{selected.company_id.nunique():,}')
+    metric1.metric('年度节点', f'{len(selected):,}')
+    metric2.metric('有节点的企业', f'{selected.company_id.nunique():,}')
     metric3.metric('覆盖年份', f'{selected.event_year.min()}–{selected.event_year.max()}')
 
     tab_matrix, tab_annual = st.tabs(['企业 × 年份', '年度汇总'])
@@ -158,16 +159,17 @@ def enterprise_timeline(companies: pd.DataFrame, events: pd.DataFrame,
     event = choices.loc[index]
     st.markdown(f"**{event['title']}**")
     st.write(event['detail'])
-    st.caption(f"医疗对象：{event['p_codes'] or '未明确'} · 类型：{event['event_type']} · 来源层级：{event['evidence_level']}")
+    precision = '年份级' if event['date_precision'] == 'year' else '具体日期'
+    st.caption(f"时间：{event['event_date']}（{precision}） · 医疗对象：{event['p_codes'] or '未明确'} · 类型：{event['event_type']} · 依据：{event['evidence_level']}")
     if event['technology']:
         st.write(f"技术／工艺：{event['technology']}")
     if event['material']:
         st.write(f"材料：{event['material']}")
-    _source_button(event['source_url'], f"timeline_source_{event['event_id']}")
+    _source_button(event['source_url'], f"timeline_source_{event['event_id']}", event['evidence_level'])
 
 
 def enterprise_explorer(companies: pd.DataFrame, events: pd.DataFrame) -> None:
-    _hero('企业检索与档案', '检索企业、产品与技术平台，查看官网、业务方向和经来源确认的逐年变化。')
+    _hero('企业检索与档案', '检索企业、产品与技术平台，查看官网、业务方向和资料记载的逐年变化。')
     if companies.empty:
         st.info('没有匹配的企业，请调整筛选条件。')
         return
@@ -204,5 +206,6 @@ def enterprise_explorer(companies: pd.DataFrame, events: pd.DataFrame) -> None:
                     st.write(f'技术／工艺：{event.technology}')
                 if event.material:
                     st.write(f'材料：{event.material}')
-                st.caption(f'医疗对象：{event.p_codes or "未明确"} · 证据：{event.evidence_level}')
-                _source_button(event.source_url, f'profile_source_{event.event_id}')
+                precision = '年份级' if event.date_precision == 'year' else '具体日期'
+                st.caption(f'时间：{event.event_date}（{precision}） · 医疗对象：{event.p_codes or "未明确"} · 依据：{event.evidence_level}')
+                _source_button(event.source_url, f'profile_source_{event.event_id}', event.evidence_level)
