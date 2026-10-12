@@ -8,6 +8,7 @@ from pathlib import Path
 import pandas as pd
 
 from .data import deduplicate, normalize_records
+from .enterprise_data import EVENT_COLUMNS, normalize_public_url
 
 
 PUBLIC_COLUMNS = (
@@ -29,8 +30,15 @@ PUBLIC_PACKAGE_FILES = frozenset({
     'dashboard/__init__.py', 'dashboard/analytics.py', 'dashboard/charts.py',
     'dashboard/data.py', 'dashboard/filter_state.py', 'dashboard/labels.py',
     'dashboard/public_data.py', 'dashboard/views.py',
+    'dashboard/enterprise_data.py', 'dashboard/enterprise_views.py',
     'data/papers_pre2026.csv', 'data/additions.jsonl', 'data/manifest.json',
+    'data/enterprises.csv', 'data/enterprise_events.jsonl',
 })
+
+PUBLIC_ENTERPRISE_COLUMNS = (
+    'company_id', 'name', 'country', 'status', 'website', 'p_codes',
+    'product_summary', 'technology_summary', 'event_count',
+)
 
 _PRIVATE_PATH = re.compile(r'(?i)(?<![A-Z])[A-Z]:[\\/]|file://|\\\\[^\\]')
 EVIDENCE_EXCERPT_LIMIT = 700
@@ -99,6 +107,26 @@ def project_public_data(root: Path) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
     return public_history, public_future, manifest
 
 
+def project_public_enterprises(root: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Publish company profiles and sourced events without workbook/audit fields."""
+    root = Path(root)
+    companies = pd.read_csv(root/'data/enterprises.csv', keep_default_na=False)
+    events = pd.read_json(root/'data/enterprise_events.jsonl', lines=True)
+    if len(companies) != 344 or companies.company_id.nunique() != len(companies):
+        raise ValueError('企业主表必须包含 344 个去重主体。')
+    if events.event_id.duplicated().any() or not events.company_id.isin(companies.company_id).all():
+        raise ValueError('企业事件 ID 重复或企业外键无效。')
+    if not events.source_url.map(lambda url: bool(normalize_public_url(url))).all():
+        raise ValueError('企业事件缺少公开来源。')
+    public_companies = companies.reindex(columns=PUBLIC_ENTERPRISE_COLUMNS, fill_value='').fillna('')
+    public_events = events.reindex(columns=EVENT_COLUMNS, fill_value='').fillna('')
+    for name, frame in (('企业', public_companies), ('事件', public_events)):
+        text_fields = frame.select_dtypes(include=['object', 'string']).astype(str)
+        if text_fields.apply(lambda col: col.str.contains(_PRIVATE_PATH)).any().any():
+            raise ValueError(f'{name}公开字段包含本机路径。')
+    return public_companies, public_events
+
+
 def validate_public_package(root: Path) -> dict:
     root = Path(root)
     actual = {path.relative_to(root).as_posix() for path in root.rglob('*') if path.is_file()
@@ -138,6 +166,22 @@ def validate_public_package(root: Path) -> dict:
     }
     if any(manifest.get(key) != value for key, value in expected.items()):
         raise ValueError('公开包清单与实际论文数量不一致。')
+    companies = pd.read_csv(root/'data/enterprises.csv', keep_default_na=False)
+    events = pd.read_json(root/'data/enterprise_events.jsonl', lines=True)
+    if tuple(companies.columns) != PUBLIC_ENTERPRISE_COLUMNS or tuple(events.columns) != EVENT_COLUMNS:
+        raise ValueError('企业公开数据列不等于字段白名单。')
+    if len(companies) != 344 or companies.company_id.nunique() != 344:
+        raise ValueError('企业公开包数量或 ID 不一致。')
+    if events.event_id.duplicated().any() or not events.company_id.isin(companies.company_id).all():
+        raise ValueError('企业公开包事件关联无效。')
+    if not events.source_url.map(lambda url: bool(normalize_public_url(url))).all():
+        raise ValueError('企业事件包含无效来源。')
+    for name, frame in (('data/enterprises.csv', companies), ('data/enterprise_events.jsonl', events)):
+        text_fields = frame.select_dtypes(include=['object', 'string']).astype(str)
+        if text_fields.apply(lambda col: col.str.contains(_PRIVATE_PATH)).any().any():
+            raise ValueError(f'公开包包含本机路径：{name}')
+    expected['enterprise_rows'] = len(companies)
+    expected['enterprise_event_rows'] = len(events)
     return expected
 
 
