@@ -39,7 +39,7 @@ PUBLIC_PACKAGE_FILES = frozenset({
 
 PUBLIC_ENTERPRISE_COLUMNS = (
     'company_id', 'name', 'country', 'status', 'website', 'p_codes',
-    'product_summary', 'technology_summary', 'event_count',
+    'product_summary', 'technology_summary', 'source_status', 'event_count',
 )
 
 _PRIVATE_PATH = re.compile(r'(?i)(?<![A-Z])[A-Z]:[\\/]|file://|\\\\[^\\]')
