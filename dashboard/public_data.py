@@ -9,7 +9,8 @@ import pandas as pd
 
 from .data import deduplicate, normalize_records
 from .enterprise_data import (EVENT_COLUMNS, OBSERVATION_COLUMNS,
-                              normalize_public_url, observation_coverage)
+                              normalize_public_url, observation_coverage,
+                              load_enterprises, load_enterprise_observations)
 
 
 PUBLIC_COLUMNS = (
@@ -32,9 +33,11 @@ PUBLIC_PACKAGE_FILES = frozenset({
     'dashboard/data.py', 'dashboard/filter_state.py', 'dashboard/labels.py',
     'dashboard/public_data.py', 'dashboard/views.py',
     'dashboard/enterprise_data.py', 'dashboard/enterprise_views.py',
+    'dashboard/cross_data.py', 'dashboard/cross_views.py',
     'data/papers_pre2026.csv', 'data/additions.jsonl', 'data/manifest.json',
     'data/enterprises.csv', 'data/enterprise_events.jsonl',
     'data/enterprise_observations.jsonl',
+    'data/cross_analysis.json',
 })
 
 PUBLIC_ENTERPRISE_COLUMNS = (
@@ -91,6 +94,15 @@ def _public_evidence(value: str, limit: int = EVIDENCE_EXCERPT_LIMIT) -> str:
     return value
 
 
+def _contains_private_path(value: object) -> bool:
+    """Inspect values before JSON escaping, so quoted titles are not false positives."""
+    if isinstance(value, dict):
+        return any(_contains_private_path(item) for item in value.values())
+    if isinstance(value, list):
+        return any(_contains_private_path(item) for item in value)
+    return isinstance(value, str) and bool(_PRIVATE_PATH.search(value))
+
+
 def project_public_data(root: Path) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
     root = Path(root)
     history, future = _read_source(root)
@@ -112,10 +124,10 @@ def project_public_data(root: Path) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
 def project_public_enterprises(root: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Publish company profiles and sourced events without workbook/audit fields."""
     root = Path(root)
-    companies = pd.read_csv(root/'data/enterprises.csv', keep_default_na=False)
+    companies = load_enterprises(root)
     events = pd.read_json(root/'data/enterprise_events.jsonl', lines=True)
-    if len(companies) != 344 or companies.company_id.nunique() != len(companies):
-        raise ValueError('企业主表必须包含 344 个去重主体。')
+    if len(companies) != 352 or companies.company_id.nunique() != len(companies):
+        raise ValueError('企业主表必须包含原 344 家及新增 8 个去重主体。')
     if events.event_id.duplicated().any() or not events.company_id.isin(companies.company_id).all():
         raise ValueError('企业事件 ID 重复或企业外键无效。')
     if not events.source_url.map(lambda url: bool(normalize_public_url(url))).all():
@@ -132,10 +144,10 @@ def project_public_enterprises(root: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
 def project_public_enterprise_observations(root: Path) -> pd.DataFrame:
     """Copy only the reviewed, public-safe observation fields."""
     root = Path(root)
-    observations = pd.read_json(root/'data/enterprise_observations.jsonl', lines=True)
+    observations = load_enterprise_observations(root)
     if tuple(observations.columns) != OBSERVATION_COLUMNS:
         raise ValueError('企业观测记录字段不等于白名单。')
-    companies = pd.read_csv(root/'data/enterprises.csv', keep_default_na=False)
+    companies = load_enterprises(root)
     coverage = observation_coverage(companies, observations)
     if coverage['current_state_companies'] != len(companies) or coverage['missing_current_state']:
         raise ValueError('企业现状覆盖不完整。')
@@ -193,7 +205,7 @@ def validate_public_package(root: Path) -> dict:
     observations = pd.read_json(root/'data/enterprise_observations.jsonl', lines=True)
     if tuple(companies.columns) != PUBLIC_ENTERPRISE_COLUMNS or tuple(events.columns) != EVENT_COLUMNS:
         raise ValueError('企业公开数据列不等于字段白名单。')
-    if len(companies) != 344 or companies.company_id.nunique() != 344:
+    if len(companies) != 352 or companies.company_id.nunique() != 352:
         raise ValueError('企业公开包数量或 ID 不一致。')
     if events.event_id.duplicated().any() or not events.company_id.isin(companies.company_id).all():
         raise ValueError('企业公开包事件关联无效。')
@@ -202,7 +214,7 @@ def validate_public_package(root: Path) -> dict:
     if tuple(observations.columns) != OBSERVATION_COLUMNS:
         raise ValueError('企业观测记录字段不等于白名单。')
     current = observations.loc[observations.observation_kind.eq('当前现状')]
-    if (len(current) != 344 or current.company_id.nunique() != 344 or
+    if (len(current) != 352 or current.company_id.nunique() != 352 or
             set(current.company_id) != set(companies.company_id)):
         raise ValueError('企业现状覆盖不完整。')
     if (observations.observation_id.duplicated().any() or
@@ -218,6 +230,20 @@ def validate_public_package(root: Path) -> dict:
         text_fields = frame.select_dtypes(include=['object', 'string']).astype(str)
         if text_fields.apply(lambda col: col.str.contains(_PRIVATE_PATH)).any().any():
             raise ValueError(f'公开包包含本机路径：{name}')
+    cross = json.loads((root/'data/cross_analysis.json').read_text(encoding='utf-8'))
+    if (len(cross.get('questions', [])) != 113 or len(cross.get('papers', [])) != 6722 or
+            len(cross.get('enterprise_evidence', [])) != 168 or
+            len(cross.get('contexts', [])) != 10):
+        raise ValueError('交叉分析公开数据数量与已审核版本不一致。')
+    if _contains_private_path(cross):
+        raise ValueError('交叉分析公开数据包含本机路径。')
+    ids = {q['question_id'] for q in cross['questions']}
+    if (len(ids) != 113 or
+            not all(p['question_id'] in ids for p in cross['papers']) or
+            not all(e['question_id'] in ids and normalize_public_url(e['source_url'])
+                    for e in cross['enterprise_evidence']) or
+            not all(normalize_public_url(c['url']) for c in cross['contexts'])):
+        raise ValueError('交叉分析关联或来源无效。')
     expected['enterprise_rows'] = len(companies)
     expected['enterprise_event_rows'] = len(events)
     expected['enterprise_observation_rows'] = len(observations)

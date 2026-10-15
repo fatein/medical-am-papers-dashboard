@@ -94,7 +94,7 @@ def enterprise_overview(companies: pd.DataFrame, events: pd.DataFrame,
         st.plotly_chart(fig, width='stretch')
         st.caption('年度柱表示企业库中记录的产品、技术及市场动作数量，不能据此推算销售额或市场份额。')
     with st.expander('数据与证据口径'):
-        st.write('来源工作簿有 347 条记录；合并 3 组同一主体的重复记录后，当前展示 344 家。')
+        st.write('来源工作簿有 347 条记录，合并 3 组重复主体后为 344 家；本轮另加入 8 家交叉分析中核查的企业。')
         st.write('技术地图为每家公司展示现状记录；另外区分年度事件与工作簿中的资料年份线索。只有年度事件进入年度变化统计。资料年份线索不等于产品发布日期，当前现状也不是一次新的发布。')
 
 

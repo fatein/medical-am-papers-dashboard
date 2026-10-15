@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import re
 import hashlib
+import json
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -75,7 +76,18 @@ def latest_dated_claim(summary: object, year: int) -> str:
 
 def load_enterprises(root: Path) -> pd.DataFrame:
     path = Path(root) / 'data/enterprises.csv'
-    return pd.read_csv(path, keep_default_na=False)
+    base = pd.read_csv(path, keep_default_na=False)
+    additions_path = Path(root) / 'data/enterprise_cross_additions.json'
+    if not additions_path.exists():
+        return base
+    additions = pd.DataFrame(json.loads(additions_path.read_text(encoding='utf-8')))
+    if additions.empty:
+        return base
+    if (set(additions.company_id) & set(base.company_id) or
+            set(additions.name.str.casefold()) & set(base.name.str.casefold())):
+        raise ValueError('新增企业与原企业库存在重复主体。')
+    return pd.concat([base, additions.reindex(columns=base.columns, fill_value='')],
+                     ignore_index=True)
 
 
 def load_enterprise_events(root: Path) -> pd.DataFrame:
@@ -203,7 +215,17 @@ def load_enterprise_observations(root: Path) -> pd.DataFrame:
     if not path.exists() or not path.stat().st_size:
         return pd.DataFrame(columns=OBSERVATION_COLUMNS)
     frame = pd.read_json(path, lines=True, dtype={'company_id': str, 'observation_id': str})
-    return frame.reindex(columns=OBSERVATION_COLUMNS, fill_value='').fillna('')
+    frame = frame.reindex(columns=OBSERVATION_COLUMNS, fill_value='').fillna('')
+    additions_path = Path(root) / 'data/enterprise_cross_additions.json'
+    if not additions_path.exists():
+        return frame
+    additions = pd.DataFrame(json.loads(additions_path.read_text(encoding='utf-8')))
+    if additions.empty:
+        return frame
+    if set(additions.company_id) & set(frame.company_id):
+        raise ValueError('新增企业现状与原观测记录重复。')
+    current = build_observations(additions, pd.DataFrame(columns=EVENT_COLUMNS))
+    return pd.concat([frame, current], ignore_index=True)
 
 
 def observation_coverage(companies: pd.DataFrame, observations: pd.DataFrame) -> dict:

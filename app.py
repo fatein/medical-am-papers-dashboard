@@ -8,6 +8,8 @@ from dashboard.views import overview,trends,explorer,updates,header
 from dashboard.filter_state import sync_options,sync_year_range
 from dashboard.enterprise_data import load_enterprises,load_enterprise_events,load_enterprise_observations,filter_enterprises
 from dashboard.enterprise_views import enterprise_overview,enterprise_timeline,enterprise_explorer
+from dashboard.cross_data import load_cross_analysis
+from dashboard.cross_views import cross_analysis_page
 
 ROOT=Path(__file__).resolve().parent
 PUBLIC_MODE=globals().get('DASHBOARD_PUBLIC_MODE',False) is True
@@ -57,7 +59,7 @@ with st.sidebar:
                 '<div class="brand">◈ AM Research<br>学术趋势观察台</div><span class="tag">本地 · 开源 · 无订阅</span>',unsafe_allow_html=True)
     st.caption('医疗增材制造 / 论文研究项目')
     st.divider()
-    pages=['论文总览','研究结构与趋势','论文检索','企业格局','技术路线图','企业检索']
+    pages=['论文总览','研究结构与趋势','论文检索','学术与企业联系','企业格局','技术路线图','企业检索']
     if not PUBLIC_MODE: pages.append('数据更新')
     page=st.radio('浏览页面',pages,key='page',label_visibility='collapsed')
     st.divider()
@@ -86,6 +88,8 @@ with st.sidebar:
         st.divider()
         filtered_companies=filter_enterprises(companies,countries=chosen_countries,p_codes=chosen_ps,
                                                query=enterprise_query,statuses=chosen_statuses)
+    elif page=='学术与企业联系':
+        st.caption('本页可按 P 层、研究方向和研究问题逐级查看。')
     else:
         future=st.checkbox('包含后续补充数据（2026+）',key='include_future',
                            value=(ROOT/'data/additions.jsonl').exists())
@@ -118,7 +122,12 @@ with st.sidebar:
             st.rerun()
         st.divider()
 
-if page=='企业格局':
+if page=='学术与企业联系':
+    try:
+        cross_analysis_page(load_cross_analysis(ROOT))
+    except (OSError,ValueError,KeyError) as error:
+        st.error(f'交叉分析数据读取失败：{error}')
+elif page=='企业格局':
     enterprise_overview(filtered_companies,events,observations)
 elif page=='技术路线图':
     enterprise_timeline(filtered_companies,events,observations,chosen_ps)
