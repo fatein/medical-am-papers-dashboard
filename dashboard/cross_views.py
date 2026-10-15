@@ -19,6 +19,14 @@ def _open_company_profile(company: str) -> None:
     st.session_state['page'] = '企业检索'
 
 
+def _open_paper_profile(paper_id: str) -> None:
+    for key in ('years', 'p_layers', 'tiers', 'diseases', 'processes', 'materials',
+                'work_types', 'paper_page', 'selected_paper', 'include_future'):
+        st.session_state.pop(key, None)
+    st.session_state['query'] = paper_id
+    st.session_state['page'] = '论文检索'
+
+
 def cross_analysis_page(data: dict) -> None:
     st.markdown(
         '<div class="hero"><div class="eyebrow">ACADEMIC × INDUSTRY · RESEARCH MAP</div>'
@@ -130,9 +138,18 @@ def cross_analysis_page(data: dict) -> None:
         page = st.number_input('论文页码（每页 20 篇）', min_value=1, max_value=page_count,
                                value=1, step=1, key=f'cross_paper_page_{selected}')
         shown = relevant[(page-1)*20:page*20]
-        st.dataframe(pd.DataFrame([{'年份': p['year'], '论文名称': p['title'],
-                                   '中文归纳': p['summary']} for p in shown]),
-                     hide_index=True, width='stretch', height=420)
+        st.caption('将鼠标悬停在论文名称上可查看中文归纳；点击“查看”进入论文检索中的对应记录。')
+        st.markdown('<style>.cross-paper-title{cursor:help;line-height:1.5;overflow-wrap:anywhere}</style>',
+                    unsafe_allow_html=True)
+        with st.container(border=True):
+            for paper in shown:
+                year_col, title_col, action_col = st.columns([1, 8, 1.4], vertical_alignment='center')
+                year_col.write(str(paper['year']))
+                title_col.markdown(
+                    f'<span class="cross-paper-title" title="{html.escape(paper["summary"], quote=True)}">'
+                    f'{html.escape(paper["title"])}</span>', unsafe_allow_html=True)
+                action_col.button('查看 ↗', key=f'cross_open_paper_{selected}_{paper["id"]}',
+                                  on_click=_open_paper_profile, args=(paper['id'],))
         titles = [f"{p['year']} · {p['title']}" for p in shown]
         paper_choice = st.selectbox('查看论文详情与 DOI', range(len(shown)),
                                     format_func=lambda i: titles[i], key=f'cross_paper_{selected}')
