@@ -92,10 +92,9 @@ def enterprise_overview(companies: pd.DataFrame, events: pd.DataFrame,
                           margin=dict(l=10, r=10, t=15, b=30),
                           legend=dict(orientation='h', y=-0.22), plot_bgcolor='rgba(0,0,0,0)')
         st.plotly_chart(fig, width='stretch')
-        st.caption('年度柱表示企业库中记录的产品、技术及市场动作数量，不能据此推算销售额或市场份额。')
     with st.expander('数据与证据口径'):
         st.write('来源工作簿有 347 条记录，合并 3 组重复主体后为 344 家；本轮另加入 8 家交叉分析中核查的企业。')
-        st.write('技术地图为每家公司展示现状记录；另外区分年度事件与工作簿中的资料年份线索。只有年度事件进入年度变化统计。资料年份线索不等于产品发布日期，当前现状也不是一次新的发布。')
+        st.write('技术地图展示当前产品与技术、年度事件及工作簿资料年份线索。年度变化统计采用年度事件。')
 
 
 def enterprise_timeline(companies: pd.DataFrame, events: pd.DataFrame,
@@ -135,7 +134,7 @@ def enterprise_timeline(companies: pd.DataFrame, events: pd.DataFrame,
     b.metric('有产品／技术描述', f'{current.content_status.ne("资料不足").sum():,}')
     c.metric('年度事件', f'{len(selected_events):,}')
     d.metric('资料年份线索', f'{len(clues):,}')
-    st.caption('每家企业均有“现状”位置；黄色菱形表示工作簿中的年份线索，年份不等于产品发布日期。年度统计只计有来源的年度事件。')
+    st.caption('图例：现状为当前产品与技术；黄色菱形为工作簿资料年份线索。年度变化统计采用有来源的年度事件。')
 
     tab_matrix, tab_annual = st.tabs(['全部企业技术地图', '年度变化'])
     with tab_matrix:

@@ -8,7 +8,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-from dashboard.cross_data import direction_summary, relative_evidence_position
+from dashboard.cross_data import direction_summary
 from dashboard.labels import P, label
 
 
@@ -33,7 +33,7 @@ def cross_analysis_page(data: dict) -> None:
         '<h1>学术与企业联系</h1><p>从医疗对象进入研究方向，再沿研究问题查看论文、企业技术与外部依据。</p></div>',
         unsafe_allow_html=True,
     )
-    directions = relative_evidence_position(direction_summary(data))
+    directions = direction_summary(data)
     questions = data['questions']
     evidence = data['enterprise_evidence']
     paper_rows = data['papers']
@@ -43,8 +43,6 @@ def cross_analysis_page(data: dict) -> None:
     c.metric('关联论文', f"{len({row['id'] for row in paper_rows}):,}")
     d.metric('对应企业', len({row['company'] for row in evidence
                           if row['source_kind'] != '非企业开源项目'}))
-    st.caption('论文数按独立论文计；同一论文可以回答多个问题。企业数指本轮找到具体来源的主体，不代表该方向全部企业或市场规模。')
-
     st.subheader('七个 P 层中的研究方向')
     selected_p = st.selectbox('医疗对象', ['全部'] + [f'P{i}' for i in range(1, 8)],
                               format_func=lambda code: '全部 P 层' if code == '全部' else label(code, P),
@@ -59,21 +57,14 @@ def cross_analysis_page(data: dict) -> None:
         st.markdown('**学术与企业证据分布**')
         points = pd.DataFrame([{'P 层': row['p'], '研究方向': row['direction'],
                                 '关联论文': row['papers'], '有来源的企业': row['companies'],
-                                '研究问题': row['questions'], '相对位置': row['position']}
+                                '研究问题': row['questions']}
                                for row in directions])
         chart = px.scatter(points, x='关联论文', y='有来源的企业', color='P 层',
                            size='研究问题', hover_name='研究方向',
-                           hover_data=['相对位置'], size_max=22)
+                           size_max=22)
         chart.update_layout(height=460, margin=dict(l=10, r=20, t=15, b=20),
                             plot_bgcolor='rgba(0,0,0,0)', legend=dict(orientation='h', y=-0.16))
         st.plotly_chart(chart, width='stretch')
-        st.caption('坐标只比较本轮已归纳论文和已查到来源的企业数，属于后续核查线索；不代表全领域发文量、市场需求或企业热度。')
-        candidates = points.loc[points['相对位置'].eq('论文较多、企业证据较少')]
-        if not candidates.empty:
-            st.markdown('**值得继续核查企业应用的方向**')
-            st.dataframe(candidates.sort_values('关联论文', ascending=False)
-                         [['P 层', '研究方向', '关联论文', '有来源的企业']],
-                         hide_index=True, width='stretch', height=210)
 
     direction_options = [f"{row['p']} · {row['direction']}" for row in visible]
     choice = st.selectbox('选择研究方向', direction_options, key='cross_direction')
@@ -94,7 +85,6 @@ def cross_analysis_page(data: dict) -> None:
         fig.update_layout(height=320, margin=dict(l=10, r=15, t=10, b=20),
                           plot_bgcolor='rgba(0,0,0,0)')
         st.plotly_chart(fig, width='stretch')
-        st.caption('图中仅为本方向已归纳的论文年度分布。企业资料中许多现状未标注发布日期，不作为年度事件与论文曲线叠加。')
 
     options = [q['question_id'] for q in scope]
     by_id = {q['question_id']: q for q in scope}
@@ -103,7 +93,7 @@ def cross_analysis_page(data: dict) -> None:
                             key='cross_question')
     question = by_id[selected]
     st.markdown(f"### {html.escape(question['question'])}")
-    st.caption(f"企业对应：{question['status']}。{question['gap_note']}")
+    st.caption(f"企业对应：{question['status']}")
     matched = [row for row in evidence if row['question_id'] == selected]
     if matched:
         st.markdown('**企业技术与产品证据**')
@@ -111,7 +101,7 @@ def cross_analysis_page(data: dict) -> None:
             with st.container(border=True):
                 st.markdown(f"**{html.escape(item['company'])}** · {item['match_level']}")
                 st.write(item['evidence_summary'])
-                st.caption(f"{item['stage']} · {item['limitation']}")
+                st.caption(item['stage'])
                 st.link_button('查看企业资料来源 ↗', item['source_url'],
                                key=f"cross_source_{selected}_{item['evidence_id']}")
                 if item['source_kind'] != '非企业开源项目':
