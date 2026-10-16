@@ -10,6 +10,7 @@ import streamlit as st
 
 from dashboard.cross_data import direction_summary
 from dashboard.labels import P, label
+from dashboard.report_navigation import open_question_report
 
 
 def _open_company_profile(company: str) -> None:
@@ -27,7 +28,7 @@ def _open_paper_profile(paper_id: str) -> None:
     st.session_state['page'] = '论文检索'
 
 
-def cross_analysis_page(data: dict) -> None:
+def cross_analysis_page(data: dict, available_reports: set[str] | None = None) -> None:
     st.markdown(
         '<div class="hero"><div class="eyebrow">ACADEMIC × INDUSTRY · RESEARCH MAP</div>'
         '<h1>学术与企业联系</h1><p>从医疗对象进入研究方向，再沿研究问题查看论文、企业技术与外部依据。</p></div>',
@@ -92,7 +93,11 @@ def cross_analysis_page(data: dict) -> None:
                             format_func=lambda qid: f"{qid} · {by_id[qid]['question']}",
                             key='cross_question')
     question = by_id[selected]
-    st.markdown(f"### {html.escape(question['question'])}")
+    title_col, report_col = st.columns([5, 1.5], vertical_alignment='center')
+    title_col.markdown(f"### {html.escape(question['question'])}")
+    if available_reports is None or selected in available_reports:
+        report_col.button('查看分析报告 →', key=f'open_question_report_{selected}',
+                          type='primary', on_click=open_question_report, args=(selected,))
     st.caption(f"企业对应：{question['status']}")
     matched = [row for row in evidence if row['question_id'] == selected]
     if matched:

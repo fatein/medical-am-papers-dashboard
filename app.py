@@ -10,6 +10,9 @@ from dashboard.enterprise_data import load_enterprises,load_enterprise_events,lo
 from dashboard.enterprise_views import enterprise_overview,enterprise_timeline,enterprise_explorer
 from dashboard.cross_data import load_cross_analysis
 from dashboard.cross_views import cross_analysis_page
+from dashboard.report_data import load_question_reports
+from dashboard.report_navigation import resolve_report_id, clear_report_route
+from dashboard.report_views import question_report_page
 
 ROOT=Path(__file__).resolve().parent
 PUBLIC_MODE=globals().get('DASHBOARD_PUBLIC_MODE',False) is True
@@ -54,6 +57,9 @@ if not (ROOT/'data/papers_pre2026.csv').exists():
     st.error('历史快照尚未构建。请先运行 scripts/build_dataset.py。')
     st.stop()
 manifest=json.loads((ROOT/'data/manifest.json').read_text(encoding='utf-8'))
+report_id=resolve_report_id(st.query_params, [])
+if report_id is not None:
+    st.session_state['page']='学术与企业联系'
 with st.sidebar:
     st.markdown('<div class="brand">◈ AM Research<br>学术趋势观察台</div><span class="tag">公开 · 开源 · 免费</span>' if PUBLIC_MODE else
                 '<div class="brand">◈ AM Research<br>学术趋势观察台</div><span class="tag">本地 · 开源 · 无订阅</span>',unsafe_allow_html=True)
@@ -61,7 +67,7 @@ with st.sidebar:
     st.divider()
     pages=['论文总览','研究结构与趋势','论文检索','学术与企业联系','企业格局','技术路线图','企业检索']
     if not PUBLIC_MODE: pages.append('数据更新')
-    page=st.radio('浏览页面',pages,key='page',label_visibility='collapsed')
+    page=st.radio('浏览页面',pages,key='page',label_visibility='collapsed',on_change=clear_report_route)
     st.divider()
     if page in ('企业格局','技术路线图','企业检索'):
         try:
@@ -124,7 +130,13 @@ with st.sidebar:
 
 if page=='学术与企业联系':
     try:
-        cross_analysis_page(load_cross_analysis(ROOT))
+        cross_data=load_cross_analysis(ROOT)
+        reports=load_question_reports(ROOT)['reports']
+        if report_id is not None:
+            question=next((q for q in cross_data['questions'] if q['question_id']==report_id),None)
+            question_report_page(reports.get(report_id),question,ROOT)
+        else:
+            cross_analysis_page(cross_data,set(reports))
     except (OSError,ValueError,KeyError) as error:
         st.error(f'交叉分析数据读取失败：{error}')
 elif page=='企业格局':

@@ -34,10 +34,11 @@ PUBLIC_PACKAGE_FILES = frozenset({
     'dashboard/public_data.py', 'dashboard/views.py',
     'dashboard/enterprise_data.py', 'dashboard/enterprise_views.py',
     'dashboard/cross_data.py', 'dashboard/cross_views.py',
+    'dashboard/report_data.py', 'dashboard/report_views.py', 'dashboard/report_navigation.py',
     'data/papers_pre2026.csv', 'data/additions.jsonl', 'data/manifest.json',
     'data/enterprises.csv', 'data/enterprise_events.jsonl',
     'data/enterprise_observations.jsonl',
-    'data/cross_analysis.json',
+    'data/cross_analysis.json', 'data/question_reports.json',
 })
 
 PUBLIC_ENTERPRISE_COLUMNS = (
@@ -244,6 +245,18 @@ def validate_public_package(root: Path) -> dict:
                     for e in cross['enterprise_evidence']) or
             not all(normalize_public_url(c['url']) for c in cross['contexts'])):
         raise ValueError('交叉分析关联或来源无效。')
+    from dashboard.report_data import validate_question_reports
+    reports = json.loads((root/'data/question_reports.json').read_text(encoding='utf-8'))
+    errors = validate_question_reports(reports, cross['questions'], require_complete=True)
+    paper_ids = {p['id'] for p in cross['papers']}
+    company_ids = set(companies.company_id)
+    for qid, report in reports.get('reports', {}).items():
+        if (not set(report['related_paper_ids']) <= paper_ids
+                or not set(report['related_company_ids']) <= company_ids):
+            errors.append(f'{qid}: invalid internal archive link')
+    if errors:
+        raise ValueError('\n'.join(errors))
+    expected['report_rows'] = len(reports['reports'])
     expected['enterprise_rows'] = len(companies)
     expected['enterprise_event_rows'] = len(events)
     expected['enterprise_observation_rows'] = len(observations)
