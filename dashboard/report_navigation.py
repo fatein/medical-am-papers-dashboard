@@ -20,6 +20,7 @@ def open_question_report(question_id: str) -> None:
     st.session_state['report_return_state'] = {
         key: st.session_state[key] for key in keys if key in st.session_state}
     st.session_state['report_return_question'] = question_id
+    st.session_state['report_scroll_to_top'] = True
     st.query_params['view'] = 'question-report'
     st.query_params['question'] = question_id
     st.session_state['page'] = '学术与企业联系'

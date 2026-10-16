@@ -91,3 +91,13 @@ def question_report_page(report: dict | None, question: dict | None, root: Path)
                         if cid in companies.index:
                             name = companies.loc[cid, 'name']
                             st.button(name, key=f'report_company_{cid}', on_click=open_report_company, args=(name,))
+
+    if st.session_state.pop('report_scroll_to_top', False):
+        # Static application code only; report text never enters executable HTML.
+        st.html("""<script>
+        requestAnimationFrame(() => {
+            const main = document.querySelector('[data-testid="stMain"]');
+            if (main) main.scrollTo({top: 0, behavior: 'instant'});
+            window.scrollTo({top: 0, behavior: 'instant'});
+        });
+        </script>""", unsafe_allow_javascript=True)
