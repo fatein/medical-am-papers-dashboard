@@ -9,7 +9,7 @@ import pandas as pd
 import streamlit as st
 import plotly.graph_objects as go
 from .analytics import yearly_counts,period_comparison,cross_counts
-from .charts import annual_chart,distribution_chart,composition_chart,comparison_chart,heatmap_chart,style
+from .charts import annual_chart,distribution_chart,composition_chart,comparison_chart,style
 from .data import read_upload,validate_additions,save_additions,safe_csv,load_data,deduplicate
 from .public_data import public_download_frame
 from .labels import P,D,T,M,THEMES,DIMENSIONS,TIERS,WORK_TYPES,label
@@ -26,6 +26,65 @@ def evidence_field(record, key):
 
 def chart(fig,key):
     st.plotly_chart(fig,width='stretch',theme=None,key=key,config=CONFIG)
+
+
+def _open_cross_cell(row_column, row_code, column_column, column_code):
+    """Open the papers counted by one heat-map cell under the current filters."""
+    filter_keys = {
+        'am_process_primary_code': 'processes',
+        'material_primary_code': 'materials',
+        'analysis_primary_p_layer': 'p_layers',
+        'disease_primary_code': 'diseases',
+    }
+    st.session_state[filter_keys[row_column]] = [row_code]
+    st.session_state[filter_keys[column_column]] = [column_code]
+    st.session_state.pop('paper_page', None)
+    st.session_state.pop('selected_paper', None)
+    st.session_state['page'] = '论文检索'
+
+
+def interactive_heatmap(table, row_column, column_column, row_mapping, column_mapping):
+    """Render an accessible heat map whose cells open matching papers."""
+    maximum = max(int(table.to_numpy().max()), 1)
+    width = 165 + len(table.columns) * 64
+    css = [f'''<style>
+    .st-key-cross_heatmap_grid {{overflow-x:auto;padding-bottom:4px}}
+    .st-key-cross_heatmap_grid [data-testid="stHorizontalBlock"] {{min-width:{width}px;flex-wrap:nowrap!important;gap:3px}}
+    .st-key-cross_heatmap_grid [data-testid="stColumn"] {{flex:1 0 61px!important;width:61px!important;min-width:61px!important}}
+    .st-key-cross_heatmap_grid [data-testid="stColumn"]:first-child {{flex:0 0 165px!important;width:165px!important;min-width:165px!important}}
+    .st-key-cross_heatmap_grid div[class*="st-key-cross_cell_"] button {{width:100%;height:34px;min-height:34px;padding:0;border:1px solid #e4ecee;border-radius:3px;font-size:12px}}
+    .st-key-cross_heatmap_grid div[class*="st-key-cross_cell_"] button:not(:disabled) {{cursor:pointer}}
+    .st-key-cross_heatmap_grid div[class*="st-key-cross_cell_"] button:not(:disabled):hover {{border:2px solid #123e59;filter:brightness(.96)}}
+    .cross-row-label {{font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-top:8px;color:#29496b}}
+    .cross-col-label {{display:block;height:66px;font-size:12px;color:#29496b;transform:rotate(-35deg);transform-origin:bottom left;white-space:nowrap;margin-left:18px}}
+    ''']
+    for row_code in table.index:
+        for column_code in table.columns:
+            count = int(table.loc[row_code, column_code])
+            strength = (count / maximum) ** .5
+            pale = (240, 245, 247)
+            deep = (19, 127, 117)
+            rgb = tuple(round(a + (b - a) * strength) for a, b in zip(pale, deep))
+            color = f'#{rgb[0]:02x}{rgb[1]:02x}{rgb[2]:02x}'
+            foreground = '#ffffff' if strength > .6 else '#183049'
+            css.append(f'.st-key-cross_cell_{row_code}_{column_code} button {{background:{color}!important;color:{foreground}!important}}')
+    st.html(''.join(css) + '</style>')
+    with st.container(key='cross_heatmap_grid'):
+        headings = st.columns([2.7] + [1] * len(table.columns), gap='small')
+        for column, code in zip(headings[1:], table.columns):
+            title = html.escape(label(code, column_mapping), quote=True)
+            column.markdown(f'<span class="cross-col-label" title="{title}">{title}</span>', unsafe_allow_html=True)
+        for row_code in table.index:
+            cells = st.columns([2.7] + [1] * len(table.columns), gap='small')
+            row_title = html.escape(label(row_code, row_mapping), quote=True)
+            cells[0].markdown(f'<div class="cross-row-label" title="{row_title}">{row_title}</div>', unsafe_allow_html=True)
+            for column, column_code in zip(cells[1:], table.columns):
+                count = int(table.loc[row_code, column_code])
+                column.button(str(count), key=f'cross_cell_{row_code}_{column_code}',
+                              help=f'{label(row_code, row_mapping)} × {label(column_code, column_mapping)}：{count:,} 篇；点击查看论文',
+                              width='stretch',
+                              on_click=_open_cross_cell,
+                              args=(row_column, row_code, column_column, column_code))
 
 
 def header(page,years,count,future,public_mode=False):
@@ -139,10 +198,10 @@ def trends(df,years):
             if specified: cross_df=df.loc[df[r].ne('T0')&df[c].ne('M0')]
         else: r,c,rmap,cmap='analysis_primary_p_layer','disease_primary_code',P,D
         table=cross_counts(cross_df,r,c)
-        st.caption(f'交叉图样本量：{len(cross_df):,} 篇；数值为论文数。仅表示语料分布，不表示临床效果或因果关系。')
+        st.caption(f'交叉图样本量：{len(cross_df):,} 篇；点击格子进入对应的论文检索结果。颜色越深，篇数越多。')
         if table.empty: st.info('当前筛选下没有可用于交叉分析的论文。')
         else:
-            chart(heatmap_chart(table,rmap,cmap),'cross')
+            interactive_heatmap(table,r,c,rmap,cmap)
             st.download_button('下载交叉统计 CSV',safe_csv(table.reset_index()),file_name='交叉统计.csv',mime='text/csv')
 
 
