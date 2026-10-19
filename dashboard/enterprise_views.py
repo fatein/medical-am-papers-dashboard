@@ -33,6 +33,49 @@ def _events_for(companies: pd.DataFrame, events: pd.DataFrame) -> pd.DataFrame:
     return events.loc[events.company_id.isin(companies.company_id)].copy()
 
 
+def _selection_items(selection: object, kind: str) -> list:
+    if not isinstance(selection, dict):
+        return []
+    return selection.get('selection', {}).get(kind, [])
+
+
+def _timeline_target(selection: object, company_names: set[str]) -> tuple[str, str, str] | None:
+    """Resolve the clicked marker to a company and its catalogue record."""
+    for point in _selection_items(selection, 'points'):
+        company = point.get('y')
+        data = point.get('customdata') or []
+        if company in company_names:
+            kind = str(data[0]) if len(data) > 0 else ''
+            record_id = str(data[1]) if len(data) > 1 else ''
+            return company, kind, record_id
+    return None
+
+
+def _table_target(selection: object, names: list[str]) -> str | None:
+    for index in _selection_items(selection, 'rows'):
+        if isinstance(index, int) and 0 <= index < len(names):
+            return names[index]
+    return None
+
+
+def _open_company(company: str, kind: str = '', record_id: str = '') -> None:
+    st.session_state['enterprise_selected_company'] = company
+    st.session_state['enterprise_focus_record'] = (kind, record_id)
+    st.session_state['page'] = '企业检索'
+
+
+def _on_timeline_select(company_names: set[str]) -> None:
+    target = _timeline_target(st.session_state.get('enterprise_timeline_points'), company_names)
+    if target:
+        _open_company(*target)
+
+
+def _on_brief_select(names: list[str]) -> None:
+    company = _table_target(st.session_state.get('enterprise_timeline_brief'), names)
+    if company:
+        _open_company(company)
+
+
 def _source_button(url: str, key: str, evidence_level: str = '') -> None:
     if url:
         caption = '查看参考来源 ↗' if evidence_level == '工作簿整理·年份级' else '查看来源 ↗'
@@ -154,16 +197,19 @@ def enterprise_timeline(companies: pd.DataFrame, events: pd.DataFrame,
         for event in selected_events.loc[selected_events.company_id.isin(shown_ids)].itertuples():
             points.append({'位置': str(event.event_year), '企业': event.company_name,
                            '节点类型': event.event_type, '内容': event.title,
-                           '时间口径': event.event_date, '来源': event.evidence_level})
+                           '时间口径': event.event_date, '来源': event.evidence_level,
+                           'record_kind': 'event', 'record_id': event.event_id})
         for clue in clues.loc[clues.company_id.isin(shown_ids)].itertuples():
             points.append({'位置': str(clue.observation_year), '企业': clue.company_name,
                            '节点类型': '资料年份线索', '内容': clue.title,
-                           '时间口径': clue.date_basis, '来源': clue.source_basis})
+                           '时间口径': clue.date_basis, '来源': clue.source_basis,
+                           'record_kind': 'observation', 'record_id': clue.observation_id})
         for state in current.loc[current.company_id.isin(shown_ids)].itertuples():
             points.append({'位置': '现状', '企业': state.company_name,
                            '节点类型': '资料待补' if state.content_status == '资料不足' else '当前产品／技术',
                            '内容': state.title, '时间口径': state.date_basis,
-                           '来源': state.source_basis})
+                           '来源': state.source_basis,
+                           'record_kind': 'observation', 'record_id': state.observation_id})
         positions = [str(year) for year in range(year_range[0], year_range[1]+1)] + ['现状']
         colors = {**EVENT_COLORS, '资料年份线索': '#D5A454',
                   '当前产品／技术': '#137F75', '资料待补': '#A5B1BE'}
@@ -172,6 +218,7 @@ def enterprise_timeline(companies: pd.DataFrame, events: pd.DataFrame,
         fig = px.scatter(pd.DataFrame(points), x='位置', y='企业', color='节点类型',
                          symbol='节点类型', hover_name='内容',
                          hover_data={'企业': False, '位置': True, '时间口径': True, '来源': True},
+                         custom_data=['record_kind', 'record_id'],
                          category_orders={'位置': positions, '企业': list(reversed(shown_names))},
                          color_discrete_map=colors, symbol_map=symbols,
                          labels={'位置': '年份／当前状态'})
@@ -179,12 +226,20 @@ def enterprise_timeline(companies: pd.DataFrame, events: pd.DataFrame,
         fig.update_layout(height=max(430, 39 * len(shown_names) + 120),
                           margin=dict(l=15, r=20, t=20, b=20),
                           legend=dict(orientation='h', y=-0.15), plot_bgcolor='rgba(0,0,0,0)')
-        st.plotly_chart(fig, width='stretch')
+        st.caption('点击图中的节点，可查看对应企业的档案与节点内容。')
+        st.plotly_chart(fig, width='stretch', key='enterprise_timeline_points',
+                        on_select=lambda: _on_timeline_select(set(shown_names)),
+                        selection_mode='points')
         st.markdown('**本页企业产品与技术**')
         brief = current.loc[current.company_id.isin(shown_ids),
                             ['company_name', 'title', 'content_status']].copy()
         brief.columns = ['企业', '产品／技术概况', '内容状态']
-        st.dataframe(brief.sort_values('企业'), hide_index=True, width='stretch', height=320)
+        brief = brief.sort_values('企业').reset_index(drop=True)
+        st.caption('点击企业行左侧的选择框，可打开该企业档案。')
+        st.dataframe(brief, hide_index=True, width='stretch', height=320,
+                     key='enterprise_timeline_brief',
+                     on_select=lambda: _on_brief_select(brief['企业'].tolist()),
+                     selection_mode='single-row')
         detail_name = st.selectbox('查看企业现状与来源', shown_names,
                                    key='enterprise_timeline_detail')
         state = current.loc[current.company_name.eq(detail_name)].iloc[0]
@@ -244,7 +299,8 @@ def enterprise_explorer(companies: pd.DataFrame, events: pd.DataFrame,
     table.columns = ['企业', '国家／地区', 'P 分类', '企业状态', '年度事件']
     st.dataframe(table, hide_index=True, width='stretch', height=350)
     names = companies.sort_values('name').name.tolist()
-    selected_name = st.selectbox('选择企业查看档案', names, key='enterprise_selected_company')
+    selected_name = st.selectbox('选择企业查看档案', names, key='enterprise_selected_company',
+                                 on_change=lambda: st.session_state.pop('enterprise_focus_record', None))
     company = companies.loc[companies.name.eq(selected_name)].iloc[0]
     current = observations.loc[observations.company_id.eq(company['company_id']) &
                                observations.observation_kind.eq('当前现状')]
@@ -254,6 +310,23 @@ def enterprise_explorer(companies: pd.DataFrame, events: pd.DataFrame,
         st.markdown(f"官方网站：[访问 {company['website']}]({company['website']})")
     else:
         st.caption('官方网站：暂无可确认公开链接')
+    focus_kind, focus_id = st.session_state.get('enterprise_focus_record', ('', ''))
+    if focus_kind == 'event':
+        focus = events.loc[events.company_id.eq(company['company_id']) & events.event_id.eq(focus_id)]
+        if not focus.empty:
+            item = focus.iloc[0]
+            st.markdown(f"**来自技术路线图的节点 · {item['event_year']} · {item['event_type']}**")
+            st.write(item['title'])
+            st.write(item['detail'])
+            _source_button(item['source_url'], f"focus_source_{item['event_id']}", item['evidence_level'])
+    elif focus_kind == 'observation':
+        focus = observations.loc[observations.company_id.eq(company['company_id']) &
+                                 observations.observation_id.eq(focus_id)]
+        if not focus.empty and focus.iloc[0]['observation_kind'] == '资料年份线索':
+            item = focus.iloc[0]
+            st.markdown(f"**来自技术路线图的资料年份线索 · {item['observation_year']}**")
+            st.write(item['title'])
+            _source_button(item['source_url'], f"focus_source_{item['observation_id']}")
     if not current.empty:
         state = current.iloc[0]
         st.caption(f"内容状态：{state['content_status']} · 来源核查：{company['source_status']} · {state['date_basis']} · {state['source_basis']}")
