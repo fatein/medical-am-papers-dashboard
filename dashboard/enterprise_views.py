@@ -10,6 +10,7 @@ import streamlit as st
 
 from dashboard.enterprise_data import parse_p_codes
 from dashboard.labels import P, label
+from dashboard.i18n import tr
 
 
 TEAL = '#137F75'
@@ -246,12 +247,12 @@ def enterprise_timeline(companies: pd.DataFrame, events: pd.DataFrame,
         st.markdown('**当前产品／技术**')
         st.write(state['product_summary'] or '未查到可确认的具体产品。')
         st.write(state['technology_summary'] or '未查到可确认的具体技术路线。')
-        st.caption(f"依据：{state['source_basis']} · {state['date_basis']}")
+        st.caption(f"依据：{tr(state['source_basis'])} · {tr(state['date_basis'])}")
         _source_button(state['source_url'], f"state_source_{state['observation_id']}")
         company_clues = clues.loc[clues.company_name.eq(detail_name)]
         for clue in company_clues.itertuples():
-            st.write(f'{clue.observation_year} · 资料年份线索：{clue.title}')
-            st.caption(f'{clue.date_basis} · {clue.source_basis}')
+            st.write(f'{clue.observation_year} · 资料年份线索：{tr(clue.title)}')
+            st.caption(f'{tr(clue.date_basis)} · {tr(clue.source_basis)}')
             _source_button(clue.source_url, f'clue_source_{clue.observation_id}')
     with tab_annual:
         if selected_events.empty:
@@ -277,14 +278,14 @@ def enterprise_timeline(companies: pd.DataFrame, events: pd.DataFrame,
                              format_func=lambda i: f"{choices.loc[i, 'event_year']} · {choices.loc[i, 'company_name']} · {choices.loc[i, 'title']}",
                              key='enterprise_event_choice')
         event = choices.loc[index]
-        st.markdown(f"**{event['title']}**")
+        st.markdown(f"**{tr(event['title'])}**")
         st.write(event['detail'])
         precision = '年份级' if event['date_precision'] == 'year' else '具体日期'
-        st.caption(f"时间：{event['event_date']}（{precision}） · 医疗对象：{event['p_codes'] or '未明确'} · 类型：{event['event_type']} · 依据：{event['evidence_level']}")
+        st.caption(f"时间：{event['event_date']}（{tr(precision)}） · 医疗对象：{event['p_codes'] or '未明确'} · 类型：{tr(event['event_type'])} · 依据：{tr(event['evidence_level'])}")
         if event['technology']:
-            st.write(f"技术／工艺：{event['technology']}")
+            st.write(f"技术／工艺：{tr(event['technology'])}")
         if event['material']:
-            st.write(f"材料：{event['material']}")
+            st.write(f"材料：{tr(event['material'])}")
         _source_button(event['source_url'], f"timeline_source_{event['event_id']}", event['evidence_level'])
 
 
@@ -305,7 +306,7 @@ def enterprise_explorer(companies: pd.DataFrame, events: pd.DataFrame,
     current = observations.loc[observations.company_id.eq(company['company_id']) &
                                observations.observation_kind.eq('当前现状')]
     st.subheader(company['name'])
-    st.caption(f"{company['country']} · {company['status']} · {company['p_codes'] or 'P 类待确认'}")
+    st.caption(f"{tr(company['country'])} · {tr(company['status'])} · {company['p_codes'] or 'P 类待确认'}")
     if company['website']:
         st.markdown(f"官方网站：[访问 {company['website']}]({company['website']})")
     else:
@@ -315,7 +316,7 @@ def enterprise_explorer(companies: pd.DataFrame, events: pd.DataFrame,
         focus = events.loc[events.company_id.eq(company['company_id']) & events.event_id.eq(focus_id)]
         if not focus.empty:
             item = focus.iloc[0]
-            st.markdown(f"**来自技术路线图的节点 · {item['event_year']} · {item['event_type']}**")
+            st.markdown(f"**来自技术路线图的节点 · {item['event_year']} · {tr(item['event_type'])}**")
             st.write(item['title'])
             st.write(item['detail'])
             _source_button(item['source_url'], f"focus_source_{item['event_id']}", item['evidence_level'])
@@ -329,7 +330,7 @@ def enterprise_explorer(companies: pd.DataFrame, events: pd.DataFrame,
             _source_button(item['source_url'], f"focus_source_{item['observation_id']}")
     if not current.empty:
         state = current.iloc[0]
-        st.caption(f"内容状态：{state['content_status']} · 来源核查：{company['source_status']} · {state['date_basis']} · {state['source_basis']}")
+        st.caption(f"内容状态：{tr(state['content_status'])} · 来源核查：{tr(company['source_status'])} · {tr(state['date_basis'])} · {tr(state['source_basis'])}")
         _source_button(state['source_url'], f"profile_state_{state['observation_id']}")
     c1, c2 = st.columns(2)
     with c1:
@@ -346,8 +347,8 @@ def enterprise_explorer(companies: pd.DataFrame, events: pd.DataFrame,
     if not company_clues.empty:
         st.markdown('**资料年份线索（非发布年份）**')
         for clue in company_clues.itertuples():
-            st.write(f'{clue.observation_year} · {clue.title}')
-            st.caption(f'{clue.date_basis} · {clue.source_basis}')
+            st.write(f'{clue.observation_year} · {tr(clue.title)}')
+            st.caption(f'{tr(clue.date_basis)} · {tr(clue.source_basis)}')
             _source_button(clue.source_url, f'profile_clue_{clue.observation_id}')
     st.markdown('**逐年事件**')
     company_events = events.loc[events.company_id.eq(company['company_id'])].sort_values(
@@ -359,9 +360,9 @@ def enterprise_explorer(companies: pd.DataFrame, events: pd.DataFrame,
             with st.expander(f'{event.event_year} · {event.event_type} · {event.title}'):
                 st.write(event.detail)
                 if event.technology:
-                    st.write(f'技术／工艺：{event.technology}')
+                    st.write(f'技术／工艺：{tr(event.technology)}')
                 if event.material:
-                    st.write(f'材料：{event.material}')
+                    st.write(f'材料：{tr(event.material)}')
                 precision = '年份级' if event.date_precision == 'year' else '具体日期'
-                st.caption(f'时间：{event.event_date}（{precision}） · 医疗对象：{event.p_codes or "未明确"} · 依据：{event.evidence_level}')
+                st.caption(f'时间：{event.event_date}（{tr(precision)}） · 医疗对象：{event.p_codes or "未明确"} · 依据：{tr(event.evidence_level)}')
                 _source_button(event.source_url, f'profile_source_{event.event_id}', event.evidence_level)

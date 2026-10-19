@@ -7,6 +7,7 @@ import math
 from urllib.parse import quote
 import pandas as pd
 import streamlit as st
+from dashboard.i18n import preserve_original_text, year_papers_label, hero_metadata
 import plotly.graph_objects as go
 from .analytics import yearly_counts,period_comparison,cross_counts
 from .charts import annual_chart,distribution_chart,composition_chart,comparison_chart,style
@@ -94,8 +95,8 @@ def header(page,years,count,future,public_mode=False):
                '数据更新':'保留历史基线，逐批补充新论文，并追踪数据来源。'}
     st.markdown(f'<div class="hero"><div class="eyebrow">MEDICAL ADDITIVE MANUFACTURING · RESEARCH OBSERVATORY</div>'
                 f'<h1>{page}</h1><p>{subtitles[page]}</p>'
-                f'<p style="margin-top:10px;font-size:12px">{years[0]}–{years[1]} · 当前筛选 {count:,} 篇 · '
-                f'{"历史 + 补充数据" if future else "2026 年之前的历史基线"}</p></div>',unsafe_allow_html=True)
+                f'<p style="margin-top:10px;font-size:12px">'
+                f'{hero_metadata(years[0], years[1], count, future)}</p></div>',unsafe_allow_html=True)
 
 
 def classification_guide():
@@ -129,7 +130,7 @@ def overview(df,years):
     columns=st.columns(4)
     columns[0].metric('筛选后的论文',f'{len(df):,}',help='单篇论文计数；同题名同年或相同 DOI/ID 的版本不重复计入。')
     columns[1].metric('选择的时间范围',f'{years[0]}–{years[1]}')
-    columns[2].metric(f'{years[1]} 年论文',f'{int(end.n):,}',delta=growth,
+    columns[2].metric(year_papers_label(years[1]),f'{int(end.n):,}',delta=growth,
                       help='同比只比较相邻日历年。筛选首年、前一年为零及持续补充的 2026+ 年份不显示同比。')
     columns[3].metric('生物打印相关',f'{int(df.bioprinting_flag.sum()):,}',
                       help='沿用既有标注的 bioprinting_flag，不等同于独立工艺分类。')
@@ -258,7 +259,11 @@ def explorer(df,public_mode=False):
         if record.doi: st.link_button('打开 DOI 原文入口','https://doi.org/'+quote(record.doi,safe='/()'))
         if not public_mode:
             st.write('摘要')
-            st.text(record.abstract or '当前记录没有摘要。')
+            if record.abstract:
+                with preserve_original_text():
+                    st.text(record.abstract)
+            else:
+                st.text('当前记录没有摘要。')
         with st.expander('标注证据与来源'):
             relevance_basis = evidence_field(record, 'relevance_basis')
             if relevance_basis:
@@ -273,7 +278,11 @@ def explorer(df,public_mode=False):
                 status = evidence_field(record, prefix+'_review_status')
                 if status and ('证据不足' in status or '未定位' in status or '缺少对应' in status):
                     st.caption(status)
-                st.text(evidence or '未记录证据。')
+                if evidence:
+                    with preserve_original_text():
+                        st.text(evidence)
+                else:
+                    st.text('未记录证据。')
                 section = evidence_field(record, prefix+'_evidence_section')
                 pages = evidence_field(record, prefix+'_evidence_pages')
                 if prefix == 'p_layer' and not section:

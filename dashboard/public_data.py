@@ -30,7 +30,7 @@ PUBLIC_PACKAGE_FILES = frozenset({
     '.streamlit/config.toml', 'LICENSE', 'README.md', 'requirements.txt',
     'app.py', 'public_app.py',
     'dashboard/__init__.py', 'dashboard/analytics.py', 'dashboard/charts.py',
-    'dashboard/data.py', 'dashboard/filter_state.py', 'dashboard/labels.py',
+    'dashboard/data.py', 'dashboard/filter_state.py', 'dashboard/labels.py', 'dashboard/i18n.py',
     'dashboard/public_data.py', 'dashboard/views.py',
     'dashboard/enterprise_data.py', 'dashboard/enterprise_views.py',
     'dashboard/cross_data.py', 'dashboard/cross_views.py',
@@ -39,6 +39,7 @@ PUBLIC_PACKAGE_FILES = frozenset({
     'data/enterprises.csv', 'data/enterprise_events.jsonl',
     'data/enterprise_observations.jsonl',
     'data/cross_analysis.json', 'data/question_reports.json',
+    'data/i18n/en.json', 'data/i18n/de.json',
 })
 
 PUBLIC_ENTERPRISE_COLUMNS = (
@@ -256,6 +257,10 @@ def validate_public_package(root: Path) -> dict:
             errors.append(f'{qid}: invalid internal archive link')
     if errors:
         raise ValueError('\n'.join(errors))
+    for language in ('en', 'de'):
+        catalogue = json.loads((root/'data/i18n'/f'{language}.json').read_text(encoding='utf-8'))
+        if not isinstance(catalogue, dict) or not catalogue or _contains_private_path(catalogue):
+            raise ValueError(f'{language} 语言包无效或包含本机路径。')
     expected['report_rows'] = len(reports['reports'])
     expected['enterprise_rows'] = len(companies)
     expected['enterprise_event_rows'] = len(events)

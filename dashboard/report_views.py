@@ -9,10 +9,11 @@ import streamlit as st
 
 from dashboard.report_data import REF_PATTERN, RAW_HTML, PRIVATE_PATH, safe_source_url
 from dashboard.report_navigation import restore_question_context, open_report_paper, open_report_company
+from dashboard.i18n import tr
 
 
 def render_cited_markdown(section: dict, references: list[dict]) -> str:
-    body = section['markdown']
+    body = tr(section['markdown'])
     if RAW_HTML.search(body) or PRIVATE_PATH.search(body):
         raise ValueError('Invalid report body')
     refs = {ref['id']: ref for ref in references}
@@ -55,18 +56,18 @@ def question_report_page(report: dict | None, question: dict | None, root: Path)
     with st.container(key='report_reader'):
         st.markdown(
             '<div class="report-hero">'
-            f'<div class="report-breadcrumb">{html.escape(report["p"])} / {html.escape(report["direction"])} / {html.escape(report["question_id"])}</div>'
-            f'<h1>{html.escape(report["title"])}</h1>'
+            f'<div class="report-breadcrumb">{html.escape(report["p"])} / {html.escape(tr(report["direction"]))} / {html.escape(report["question_id"])}</div>'
+            f'<h1>{html.escape(tr(report["title"]))}</h1>'
             f'<div class="report-date">更新于 {html.escape(report["updated_at"])} · 资料截至 {html.escape(report["evidence_cutoff"])}</div>'
-            f'<div class="report-lead">{html.escape(report["core_finding"])}</div></div>', unsafe_allow_html=True)
-        toc = ''.join(f'<a href="#report-{s["id"]}" target="_self">{html.escape(s["title"])}</a>' for s in report['sections'])
+            f'<div class="report-lead">{html.escape(tr(report["core_finding"]))}</div></div>', unsafe_allow_html=True)
+        toc = ''.join(f'<a href="#report-{s["id"]}" target="_self">{html.escape(tr(s["title"]))}</a>' for s in report['sections'])
         toc += '<a href="#report-sources" target="_self">来源与相关档案</a>'
         st.markdown(f'<details class="report-mobile-toc"><summary>报告目录</summary><nav class="report-toc">{toc}</nav></details>',unsafe_allow_html=True)
         nav, content = st.columns([1, 4], gap='large')
         nav.markdown(f'<div class="report-desktop-toc"><b>报告目录</b><nav class="report-toc">{toc}</nav></div>',unsafe_allow_html=True)
         with content:
             for section in report['sections']:
-                st.markdown(f'<div class="report-section" id="report-{section["id"]}"><h2>{html.escape(section["title"])}</h2></div>',unsafe_allow_html=True)
+                st.markdown(f'<div class="report-section" id="report-{section["id"]}"><h2>{html.escape(tr(section["title"]))}</h2></div>',unsafe_allow_html=True)
                 st.markdown(render_cited_markdown(section, report['references']), unsafe_allow_html=True)
             st.markdown('<div class="report-section" id="report-sources"><h2>来源与相关档案</h2></div>',unsafe_allow_html=True)
             for ref in report['references']:

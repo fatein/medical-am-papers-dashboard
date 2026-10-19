@@ -1,5 +1,6 @@
 from pathlib import Path
 import json
+import csv
 import pandas as pd
 import streamlit as st
 from dashboard.data import load_data,filter_papers
@@ -13,10 +14,54 @@ from dashboard.cross_views import cross_analysis_page
 from dashboard.report_data import load_question_reports
 from dashboard.report_navigation import resolve_report_id, clear_report_route
 from dashboard.report_views import question_report_page
+from dashboard.i18n import LANGUAGE_OPTIONS, install_streamlit_translation, set_language, protect_names
 
 ROOT=Path(__file__).resolve().parent
 PUBLIC_MODE=globals().get('DASHBOARD_PUBLIC_MODE',False) is True
-st.set_page_config(page_title='医疗增材制造 · 学术趋势',page_icon='◈',layout='wide',initial_sidebar_state='expanded')
+language_code = st.session_state.get('language', 'zh')
+browser_titles = {
+    'zh': '医疗增材制造 · 学术趋势',
+    'en': 'Medical additive manufacturing · Research trends',
+    'de': 'Additive Fertigung in der Medizin · Forschungstrends',
+}
+st.set_page_config(page_title=browser_titles.get(language_code, browser_titles['zh']),
+                   page_icon='◈',layout='wide',initial_sidebar_state='expanded')
+set_language(language_code, ROOT)
+@st.cache_data(show_spinner=False)
+def original_names(project_root: str) -> tuple[str, ...]:
+    root = Path(project_root)
+    names = set()
+    for filename, field in (('enterprises.csv', 'name'), ('papers_pre2026.csv', 'title')):
+        path = root/'data'/filename
+        if path.exists():
+            with path.open(encoding='utf-8-sig', newline='') as handle:
+                names.update(row[field] for row in csv.DictReader(handle)
+                             if any('\u3400' <= char <= '\u9fff' for char in row.get(field, '')))
+    for filename, field in (('additions.jsonl', 'title'), ('enterprise_events.jsonl', 'company')):
+        path = root/'data'/filename
+        if path.exists():
+            for line in path.read_text(encoding='utf-8').splitlines():
+                if line.strip():
+                    value = json.loads(line).get(field, '')
+                    if isinstance(value, str) and any('\u3400' <= char <= '\u9fff' for char in value):
+                        names.add(value)
+    cross_path = root/'data'/'cross_analysis.json'
+    if cross_path.exists():
+        cross_records = json.loads(cross_path.read_text(encoding='utf-8'))
+        for collection, field in (('papers', 'title'), ('enterprise_evidence', 'company')):
+            names.update(row[field] for row in cross_records.get(collection, [])
+                         if any('\u3400' <= char <= '\u9fff' for char in row.get(field, '')))
+    return tuple(names)
+protect_names(original_names(str(ROOT)))
+install_streamlit_translation(st)
+language_space, language_column = st.columns([8, 2])
+with language_column:
+    picker_labels = {'zh': '🌐 语言', 'en': '🌐 Language', 'de': '🌐 Sprache'}
+    st.selectbox(picker_labels[language_code], list(LANGUAGE_OPTIONS),
+                 format_func=lambda code: LANGUAGE_OPTIONS[code], key='language',
+                 label_visibility='visible')
+if st.session_state['language'] != language_code:
+    st.rerun()
 st.markdown('''<style>
 .stApp{background:#F7F9FC}
 [data-testid="stSidebar"]{background:#fff;border-right:1px solid #e2e9ef}
