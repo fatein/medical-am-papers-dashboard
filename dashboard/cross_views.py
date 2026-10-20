@@ -90,7 +90,7 @@ def cross_analysis_page(data: dict, available_reports: set[str] | None = None) -
     scope = [q for q in questions if q['p'] == chosen['p'] and q['direction'] == chosen['direction']]
     ids = {q['question_id'] for q in scope}
     scoped_papers = [p for p in paper_rows if p['question_id'] in ids]
-    st.html('<div id="cross-direction-detail" style="scroll-margin-top:20px"></div>')
+    st.html('<div id="cross-direction-detail" style="scroll-margin-top:100px"></div>')
     st.subheader(f"{chosen['p']} · {chosen['direction']}")
     if st.session_state.pop('cross_scroll_to_direction', False):
         st.html('''<script>
