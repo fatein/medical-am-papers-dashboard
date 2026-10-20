@@ -11,13 +11,14 @@ import streamlit as st
 
 from dashboard.cross_data import direction_summary
 from dashboard.labels import P, label
-from dashboard.i18n import tr, language, preserve_original_text, protect_names
+from dashboard.i18n import (LOCALIZED_SELECTION_KEYS, clear_localized_selection,
+                            tr, language, preserve_original_text, protect_names)
 from dashboard.report_navigation import open_question_report
 
 
 def _open_company_profile(company: str) -> None:
     for key in ('enterprise_countries', 'enterprise_p_codes', 'enterprise_statuses'):
-        st.session_state.pop(key, None)
+        clear_localized_selection(st.session_state, key)
     st.session_state['enterprise_query'] = company
     st.session_state['page'] = '企业检索'
 
@@ -25,7 +26,8 @@ def _open_company_profile(company: str) -> None:
 def _open_paper_profile(paper_id: str) -> None:
     for key in ('years', 'p_layers', 'tiers', 'diseases', 'processes', 'materials',
                 'work_types', 'paper_page', 'selected_paper', 'include_future'):
-        st.session_state.pop(key, None)
+        (clear_localized_selection(st.session_state, key) if key in LOCALIZED_SELECTION_KEYS
+         else st.session_state.pop(key, None))
     st.session_state['query'] = paper_id
     st.session_state['page'] = '论文检索'
 
