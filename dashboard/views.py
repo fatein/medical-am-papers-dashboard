@@ -57,7 +57,10 @@ def interactive_heatmap(table, row_column, column_column, row_mapping, column_ma
     .st-key-cross_heatmap_grid div[class*="st-key-cross_cell_"] button:not(:disabled) {{cursor:pointer}}
     .st-key-cross_heatmap_grid div[class*="st-key-cross_cell_"] button:not(:disabled):hover {{border:2px solid #123e59;filter:brightness(.96)}}
     .cross-row-label {{font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-top:8px;color:#29496b}}
-    .cross-col-label {{display:block;height:66px;font-size:12px;color:#29496b;transform:rotate(-35deg);transform-origin:bottom left;white-space:nowrap;margin-left:18px}}
+    .cross-col-label {{display:block;height:32px;padding-top:7px;text-align:center;font-size:12px;font-weight:600;color:#29496b;white-space:nowrap}}
+    .cross-column-legend {{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:7px 18px;margin:12px 0 6px;font-size:13px;color:#29496b}}
+    .cross-column-legend span {{line-height:1.45}}
+    .cross-column-legend strong {{display:inline-block;min-width:42px;color:#123e59}}
     ''']
     for row_code in table.index:
         for column_code in table.columns:
@@ -74,7 +77,7 @@ def interactive_heatmap(table, row_column, column_column, row_mapping, column_ma
         headings = st.columns([2.7] + [1] * len(table.columns), gap='small')
         for column, code in zip(headings[1:], table.columns):
             title = html.escape(label(code, column_mapping), quote=True)
-            column.markdown(f'<span class="cross-col-label" title="{title}">{title}</span>', unsafe_allow_html=True)
+            column.markdown(f'<span class="cross-col-label" title="{title}">{html.escape(str(code))}</span>', unsafe_allow_html=True)
         for row_code in table.index:
             cells = st.columns([2.7] + [1] * len(table.columns), gap='small')
             row_title = html.escape(label(row_code, row_mapping), quote=True)
@@ -86,6 +89,11 @@ def interactive_heatmap(table, row_column, column_column, row_mapping, column_ma
                               width='stretch',
                               on_click=_open_cross_cell,
                               args=(row_column, row_code, column_column, column_code))
+    legend = ''.join(
+        f'<span><strong>{html.escape(str(code))}</strong> · {html.escape(column_mapping.get(code, str(code)))}</span>'
+        for code in table.columns
+    )
+    st.markdown(f'<div class="cross-column-legend">{legend}</div>', unsafe_allow_html=True)
 
 
 def header(page,years,count,future,public_mode=False):
