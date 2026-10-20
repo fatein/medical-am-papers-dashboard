@@ -548,6 +548,14 @@ def _translate_figure(figure):
                 item.ticktext = translate_values(item.ticktext)
         if figure.layout.title and isinstance(figure.layout.title.text, str):
             figure.layout.title.text = tr(figure.layout.title.text)
+        if figure.layout.legend and figure.layout.legend.title:
+            title = figure.layout.legend.title
+            if isinstance(title.text, str):
+                title.text = tr(title.text)
+        if figure.layout.coloraxis and figure.layout.coloraxis.colorbar:
+            title = figure.layout.coloraxis.colorbar.title
+            if title and isinstance(title.text, str):
+                title.text = tr(title.text)
         if figure.layout.annotations:
             for annotation in figure.layout.annotations:
                 if isinstance(annotation.text, str):
