@@ -10,7 +10,7 @@ import streamlit as st
 
 from dashboard.enterprise_data import parse_p_codes
 from dashboard.labels import P, label
-from dashboard.i18n import tr
+from dashboard.i18n import localized_multiselect, tr
 
 
 TEAL = '#137F75'
@@ -160,7 +160,8 @@ def enterprise_timeline(companies: pd.DataFrame, events: pd.DataFrame,
                                 key='enterprise_years') if len(years) > 1 else
                       (years[0], years[0]) if years else (2010, 2026))
     with c2:
-        chosen_types = st.multiselect('事件类型', types, default=types, key='enterprise_types')
+        chosen_types = localized_multiselect(st, '事件类型', types, default=types,
+                                             key='enterprise_types')
     selected_events = selected_events.loc[
         selected_events.event_year.between(*year_range) &
         selected_events.event_type.isin(chosen_types)].copy()
