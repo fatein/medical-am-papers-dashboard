@@ -141,7 +141,8 @@ with st.sidebar:
                                                    key='enterprise_statuses')
         if st.button('重置企业筛选',width='stretch'):
             for key in ['enterprise_countries','enterprise_p_codes','enterprise_query','enterprise_statuses',
-                        'enterprise_years','enterprise_types','enterprise_timeline_company','enterprise_timeline_page']:
+                        'enterprise_years','enterprise_types','enterprise_timeline_company',
+                        'enterprise_event_choice','enterprise_timeline_page']:
                 (clear_localized_selection(st.session_state,key) if key in LOCALIZED_SELECTION_KEYS
                  else st.session_state.pop(key,None))
             st.rerun()
