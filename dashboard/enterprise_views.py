@@ -10,7 +10,7 @@ import streamlit as st
 
 from dashboard.enterprise_data import parse_p_codes
 from dashboard.labels import P, label
-from dashboard.i18n import localized_multiselect, tr
+from dashboard.i18n import language, localized_multiselect, localized_selectbox, tr
 
 
 TEAL = '#137F75'
@@ -184,8 +184,8 @@ def enterprise_timeline(companies: pd.DataFrame, events: pd.DataFrame,
     tab_matrix, tab_annual = st.tabs(['全部企业技术地图', '年度变化'])
     with tab_matrix:
         company_names = sorted(companies.name.tolist())
-        chosen_name = st.selectbox('定位企业', ['全部'] + company_names,
-                                   key='enterprise_timeline_company')
+        chosen_name = localized_selectbox(st, '定位企业', ['全部'] + company_names,
+                                          key='enterprise_timeline_company')
         if chosen_name != '全部':
             shown_names = [chosen_name]
         else:
@@ -275,9 +275,10 @@ def enterprise_timeline(companies: pd.DataFrame, events: pd.DataFrame,
         st.subheader('年度事件与来源')
         choices = selected_events.sort_values(['event_year', 'company_name'],
                                               ascending=[False, True]).reset_index(drop=True)
-        index = st.selectbox('选择一条事件', choices.index.tolist(),
-                             format_func=lambda i: f"{choices.loc[i, 'event_year']} · {choices.loc[i, 'company_name']} · {tr(choices.loc[i, 'title'])}",
-                             key='enterprise_event_choice')
+        selected_language = language()
+        index = localized_selectbox(st, '选择一条事件', choices.index.tolist(),
+                                    format_func=lambda i, c=selected_language: f"{choices.loc[i, 'event_year']} · {choices.loc[i, 'company_name']} · {tr(choices.loc[i, 'title'], code=c)}",
+                                    key='enterprise_event_choice')
         event = choices.loc[index]
         st.markdown(f"**{tr(event['title'])}**")
         st.write(event['detail'])
