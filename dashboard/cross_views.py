@@ -32,6 +32,15 @@ def _open_paper_profile(paper_id: str) -> None:
     st.session_state['page'] = '论文检索'
 
 
+def _select_direction_from_table() -> None:
+    """Use the clicked summary row to choose the detailed direction below."""
+    rows = st.session_state['cross_direction_table']['selection']['rows']
+    options = st.session_state['cross_direction_options']
+    if rows and 0 <= rows[0] < len(options):
+        st.session_state['cross_direction'] = options[rows[0]]
+        st.session_state['cross_scroll_to_direction'] = True
+
+
 def cross_analysis_page(data: dict, available_reports: set[str] | None = None) -> None:
     st.markdown(
         '<div class="hero"><div class="eyebrow">ACADEMIC × INDUSTRY · RESEARCH MAP</div>'
@@ -57,7 +66,11 @@ def cross_analysis_page(data: dict, available_reports: set[str] | None = None) -
                            '研究问题': row['questions'], '关联论文': row['papers'],
                            '有来源的企业': row['companies'], '具体技术对应问题': row['direct']}
                           for row in visible])
-    st.dataframe(table, hide_index=True, width='stretch', height=350)
+    direction_options = [f"{row['p']} · {row['direction']}" for row in visible]
+    st.session_state['cross_direction_options'] = direction_options
+    st.dataframe(table, hide_index=True, width='stretch', height=350,
+                 key='cross_direction_table', on_select=_select_direction_from_table,
+                 selection_mode='single-row')
     if selected_p == '全部':
         st.markdown('**学术与企业证据分布**')
         points = pd.DataFrame([{'P 层': row['p'], '研究方向': row['direction'],
@@ -71,14 +84,21 @@ def cross_analysis_page(data: dict, available_reports: set[str] | None = None) -
                             plot_bgcolor='rgba(0,0,0,0)', legend=dict(orientation='h', y=-0.16))
         st.plotly_chart(chart, width='stretch')
 
-    direction_options = [f"{row['p']} · {row['direction']}" for row in visible]
     choice = st.selectbox('选择研究方向', direction_options, key='cross_direction',
                           format_func=lambda option: tr(option))
     chosen = visible[direction_options.index(choice)]
     scope = [q for q in questions if q['p'] == chosen['p'] and q['direction'] == chosen['direction']]
     ids = {q['question_id'] for q in scope}
     scoped_papers = [p for p in paper_rows if p['question_id'] in ids]
+    st.html('<div id="cross-direction-detail" style="scroll-margin-top:20px"></div>')
     st.subheader(f"{chosen['p']} · {chosen['direction']}")
+    if st.session_state.pop('cross_scroll_to_direction', False):
+        st.html('''<script>
+        requestAnimationFrame(() => {
+            const target = document.getElementById('cross-direction-detail');
+            if (target) target.scrollIntoView({behavior:'smooth', block:'start'});
+        });
+        </script>''', unsafe_allow_javascript=True)
     c1, c2, c3 = st.columns(3)
     c1.metric('研究问题', len(scope))
     c2.metric('关联论文', len({p['id'] for p in scoped_papers}))
