@@ -7,7 +7,7 @@ import math
 from urllib.parse import quote
 import pandas as pd
 import streamlit as st
-from dashboard.i18n import preserve_original_text, year_papers_label, hero_metadata
+from dashboard.i18n import preserve_original_text, year_papers_label, hero_metadata, set_localized_selection
 import plotly.graph_objects as go
 from .analytics import yearly_counts,period_comparison,cross_counts
 from .charts import annual_chart,distribution_chart,composition_chart,comparison_chart,style
@@ -37,8 +37,8 @@ def _open_cross_cell(row_column, row_code, column_column, column_code):
         'analysis_primary_p_layer': 'p_layers',
         'disease_primary_code': 'diseases',
     }
-    st.session_state[filter_keys[row_column]] = [row_code]
-    st.session_state[filter_keys[column_column]] = [column_code]
+    set_localized_selection(st.session_state, filter_keys[row_column], [row_code])
+    set_localized_selection(st.session_state, filter_keys[column_column], [column_code])
     st.session_state.pop('paper_page', None)
     st.session_state.pop('selected_paper', None)
     st.session_state['page'] = '论文检索'
