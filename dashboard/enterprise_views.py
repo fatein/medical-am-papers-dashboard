@@ -275,7 +275,7 @@ def enterprise_timeline(companies: pd.DataFrame, events: pd.DataFrame,
         choices = selected_events.sort_values(['event_year', 'company_name'],
                                               ascending=[False, True]).reset_index(drop=True)
         index = st.selectbox('选择一条事件', choices.index.tolist(),
-                             format_func=lambda i: f"{choices.loc[i, 'event_year']} · {choices.loc[i, 'company_name']} · {choices.loc[i, 'title']}",
+                             format_func=lambda i: f"{choices.loc[i, 'event_year']} · {choices.loc[i, 'company_name']} · {tr(choices.loc[i, 'title'])}",
                              key='enterprise_event_choice')
         event = choices.loc[index]
         st.markdown(f"**{tr(event['title'])}**")
@@ -357,7 +357,7 @@ def enterprise_explorer(companies: pd.DataFrame, events: pd.DataFrame,
         st.info('目前未找到足以确认具体年份和产品／技术变化的公开资料。')
     else:
         for event in company_events.itertuples():
-            with st.expander(f'{event.event_year} · {event.event_type} · {event.title}'):
+            with st.expander(f'{event.event_year} · {tr(event.event_type)} · {tr(event.title)}'):
                 st.write(event.detail)
                 if event.technology:
                     st.write(f'技术／工艺：{tr(event.technology)}')

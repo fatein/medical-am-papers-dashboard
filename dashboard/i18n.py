@@ -456,6 +456,16 @@ def tr(value: str, *, code: str | None = None, root: Path | None = None) -> str:
         return _western_punctuation(overrides[value])
     if value in catalogue:
         return _western_punctuation(catalogue[value])
+    # Catalogue extraction strips the surrounding whitespace of source
+    # fields. Preserve that whitespace when rendering the original record.
+    stripped = value.strip()
+    if stripped != value:
+        if stripped in _PROTECTED:
+            return value
+        translated = overrides.get(stripped, catalogue.get(stripped))
+        if translated is not None:
+            start = value.find(stripped)
+            return value[:start] + _western_punctuation(translated) + value[start+len(stripped):]
     # Dynamic numbers, names and HTML markup appear between stable UI phrases.
     # Translate only exact, pre-reviewed Chinese fragments; never call a live API.
     def translate_segment(match):
