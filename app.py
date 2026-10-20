@@ -6,7 +6,7 @@ import streamlit as st
 from dashboard.data import load_data,filter_papers
 from dashboard.labels import P,D,T,M,TIERS,WORK_TYPES,label
 from dashboard.views import overview,trends,explorer,updates,header
-from dashboard.filter_state import sync_options,sync_year_range
+from dashboard.filter_state import sync_year_range
 from dashboard.enterprise_data import load_enterprises,load_enterprise_events,load_enterprise_observations,filter_enterprises
 from dashboard.enterprise_views import enterprise_overview,enterprise_timeline,enterprise_explorer
 from dashboard.cross_data import load_cross_analysis
@@ -14,7 +14,9 @@ from dashboard.cross_views import cross_analysis_page
 from dashboard.report_data import load_question_reports
 from dashboard.report_navigation import resolve_report_id, clear_report_route
 from dashboard.report_views import question_report_page
-from dashboard.i18n import LANGUAGE_OPTIONS, install_streamlit_translation, set_language, protect_names
+from dashboard.i18n import (LANGUAGE_OPTIONS, LOCALIZED_SELECTION_KEYS,
+                            clear_localized_selection, install_streamlit_translation,
+                            localized_multiselect, protect_names, set_language)
 
 ROOT=Path(__file__).resolve().parent
 PUBLIC_MODE=globals().get('DASHBOARD_PUBLIC_MODE',False) is True
@@ -57,9 +59,13 @@ install_streamlit_translation(st)
 language_space, language_column = st.columns([8, 2])
 with language_column:
     picker_labels = {'zh': '🌐 语言', 'en': '🌐 Language', 'de': '🌐 Sprache'}
+    def refresh_selected_filter_labels():
+        selected_language = st.session_state['language']
+        for base in LOCALIZED_SELECTION_KEYS:
+            st.session_state.pop(f'{base}__{selected_language}', None)
     st.selectbox(picker_labels[language_code], list(LANGUAGE_OPTIONS),
                  format_func=lambda code: LANGUAGE_OPTIONS[code], key='language',
-                 label_visibility='visible')
+                 label_visibility='visible', on_change=refresh_selected_filter_labels)
 if st.session_state['language'] != language_code:
     st.rerun()
 st.markdown('''<style>
@@ -123,18 +129,21 @@ with st.sidebar:
             st.error(f'企业数据读取失败：{error}')
             st.stop()
         countries=sorted(companies.country.unique())
-        chosen_countries=st.multiselect('国家／地区',countries,default=countries,key='enterprise_countries')
+        chosen_countries=localized_multiselect(st,'国家／地区',countries,default=countries,
+                                                key='enterprise_countries')
         p_options=[f'P{i}' for i in range(1,8)]
-        chosen_ps=st.multiselect('医疗对象 P 类别',p_options,default=p_options,
-                                 format_func=lambda code:label(code,P),key='enterprise_p_codes')
+        chosen_ps=localized_multiselect(st,'医疗对象 P 类别',p_options,default=p_options,
+                                        format_func=lambda code:label(code,P),key='enterprise_p_codes')
         enterprise_query=st.text_input('企业／产品／技术检索',key='enterprise_query')
         statuses=sorted(companies.status.unique())
         with st.expander('更多企业筛选'):
-            chosen_statuses=st.multiselect('企业状态',statuses,default=statuses,key='enterprise_statuses')
+            chosen_statuses=localized_multiselect(st,'企业状态',statuses,default=statuses,
+                                                   key='enterprise_statuses')
         if st.button('重置企业筛选',width='stretch'):
             for key in ['enterprise_countries','enterprise_p_codes','enterprise_query','enterprise_statuses',
                         'enterprise_years','enterprise_types','enterprise_timeline_company','enterprise_timeline_page']:
-                st.session_state.pop(key,None)
+                (clear_localized_selection(st.session_state,key) if key in LOCALIZED_SELECTION_KEYS
+                 else st.session_state.pop(key,None))
             st.rerun()
         st.divider()
         filtered_companies=filter_enterprises(companies,countries=chosen_countries,p_codes=chosen_ps,
@@ -153,8 +162,8 @@ with st.sidebar:
         sync_year_range(st.session_state,(first,last))
         years=st.slider('发表年份',first,last,(first,last),key='years') if first<last else (first,last)
         options=sorted(df.analysis_primary_p_layer.unique())
-        sync_options(st.session_state,'p_layers',options)
-        ps=st.multiselect('医疗对象（主 P 类别）',options,default=options,format_func=lambda c:label(c,P),key='p_layers')
+        ps=localized_multiselect(st,'医疗对象（主 P 类别）',options,default=options,
+                                format_func=lambda c:label(c,P),key='p_layers')
         query=st.text_input('检索关键词',placeholder='题名、作者、期刊、DOI…' if PUBLIC_MODE else
                             '题名、作者、DOI、摘要…',key='query')
         with st.expander('更多筛选'):
@@ -165,11 +174,12 @@ with st.sidebar:
                                          ('materials','material_primary_code',M,'材料'),
                                          ('work_types','normalized_work_type',WORK_TYPES,'论文类型')]:
                 opts=sorted(df[col].unique())
-                sync_options(st.session_state,key,opts)
-                values[key]=st.multiselect(title,opts,default=opts,format_func=lambda c,m=mapping:label(c,m),key=key)
+                values[key]=localized_multiselect(st,title,opts,default=opts,
+                                                   format_func=lambda c,m=mapping:label(c,m),key=key)
         if st.button('重置筛选',width='stretch'):
             for key in ['years','p_layers','query','tiers','diseases','processes','materials','work_types']:
-                st.session_state.pop(key,None)
+                (clear_localized_selection(st.session_state,key) if key in LOCALIZED_SELECTION_KEYS
+                 else st.session_state.pop(key,None))
             st.rerun()
         st.divider()
 
