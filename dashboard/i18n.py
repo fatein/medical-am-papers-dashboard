@@ -633,7 +633,7 @@ def install_streamlit_translation(st) -> None:
                 if method_name == 'metric' and len(args) > first+2 and isinstance(args[first+2], str):
                     args[first+2] = tr(args[first+2])
                 if method_name in ('selectbox', 'multiselect', 'radio'):
-                    original_format = kwargs.get('format_func', str)
+                    original_format = kwargs.get('format_func') or str
                     active_code, active_root = language(), _ROOT.get()
                     kwargs['format_func'] = lambda option, f=original_format, c=active_code, r=active_root: tr(f(option), code=c, root=r)
             return original(*args, **kwargs)
@@ -649,3 +649,55 @@ def install_streamlit_translation(st) -> None:
 
 
 LANGUAGE_OPTIONS = _LANGUAGES
+
+LOCALIZED_SELECTION_KEYS = (
+    'p_layers', 'tiers', 'diseases', 'processes', 'materials', 'work_types',
+    'enterprise_countries', 'enterprise_p_codes', 'enterprise_statuses',
+    'enterprise_types',
+)
+
+
+def localized_selection_key(base: str) -> str:
+    """Give translated option widgets a fresh frontend instance per language."""
+    return f'{base}__{language()}'
+
+
+def clear_localized_selection(state, base: str) -> None:
+    state.pop(base, None)  # Selection saved by versions before localization.
+    state.pop(f'_am_selected_{base}', None)
+    state.pop(f'_am_options_{base}', None)
+    state.pop(f'_am_pending_{base}', None)
+    for code in _LANGUAGES:
+        key = f'{base}__{code}'
+        state.pop(key, None)
+        state.pop('_options_' + key, None)
+
+
+def localized_multiselect(st, label: str, options, *, key: str, default=None,
+                          format_func=None, **kwargs):
+    """Keep chosen values while refreshing translated selected-value chips."""
+    from dashboard.filter_state import sync_options
+
+    values = list(options)
+    widget_key = localized_selection_key(key)
+    state = st.session_state
+    pending = state.pop(f'_am_pending_{key}', None)
+    if pending is not None:
+        state[widget_key] = [value for value in pending if value in values]
+    if widget_key not in state:
+        saved = state.get(f'_am_selected_{key}', state.get(key))
+        if saved is not None:
+            previous = state.get(f'_am_options_{key}')
+            state[widget_key] = (values if previous is not None and set(saved) == set(previous)
+                                 else [value for value in saved if value in values])
+    sync_options(state, widget_key, values)
+    selected = st.multiselect(label, values, default=default, format_func=format_func or str,
+                              key=widget_key, **kwargs)
+    state[f'_am_selected_{key}'] = list(selected)
+    state[f'_am_options_{key}'] = values
+    return selected
+
+
+def set_localized_selection(state, base: str, values) -> None:
+    """Apply a chart-driven filter on the next run, before widgets mount."""
+    state[f'_am_pending_{base}'] = list(values)
