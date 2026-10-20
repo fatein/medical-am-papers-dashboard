@@ -655,7 +655,7 @@ LANGUAGE_OPTIONS = _LANGUAGES
 LOCALIZED_SELECTION_KEYS = (
     'p_layers', 'tiers', 'diseases', 'processes', 'materials', 'work_types',
     'enterprise_countries', 'enterprise_p_codes', 'enterprise_statuses',
-    'enterprise_types',
+    'enterprise_types', 'enterprise_timeline_company', 'enterprise_event_choice',
 )
 
 
@@ -703,3 +703,17 @@ def localized_multiselect(st, label: str, options, *, key: str, default=None,
 def set_localized_selection(state, base: str, values) -> None:
     """Apply a chart-driven filter on the next run, before widgets mount."""
     state[f'_am_pending_{base}'] = list(values)
+
+
+def localized_selectbox(st, label: str, options, *, key: str, **kwargs):
+    """Remount a translated selectbox while retaining its chosen value."""
+    values = list(options)
+    widget_key = localized_selection_key(key)
+    state = st.session_state
+    if widget_key not in state:
+        saved = state.get(f'_am_selected_{key}', state.get(key))
+        if saved in values:
+            state[widget_key] = saved
+    selected = st.selectbox(label, values, key=widget_key, **kwargs)
+    state[f'_am_selected_{key}'] = selected
+    return selected
