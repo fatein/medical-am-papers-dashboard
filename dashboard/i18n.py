@@ -569,7 +569,7 @@ def install_streamlit_translation(st) -> None:
     """Translate presentation arguments without changing widget keys or data IDs."""
     from streamlit.delta_generator import DeltaGenerator
 
-    if getattr(st, '_am_i18n_installed', False):
+    if getattr(st, '_am_i18n_generation', None) is _ACTIVE:
         return
     labels = {
         'markdown', 'caption', 'title', 'header', 'subheader', 'info', 'warning',
@@ -578,8 +578,21 @@ def install_streamlit_translation(st) -> None:
         'expander', 'download_button', 'metric', 'tabs', 'write', 'dataframe',
         'table', 'plotly_chart', 'html', 'text', 'file_uploader', 'json',
     }
-    original_module = {name: getattr(st, name, None) for name in labels}
-    original_class = {name: getattr(DeltaGenerator, name, None) for name in labels}
+    originals = getattr(st, '_am_i18n_originals', None)
+    if originals is None:
+        previous_install = getattr(st, '_am_i18n_installed', False)
+
+        def base(method):
+            # Recover the original from wrappers installed before generation
+            # tracking was added. Streamlit Cloud keeps its Python process
+            # alive when it pulls a new commit.
+            return getattr(method, '__wrapped__', method) if previous_install and method else method
+
+        original_module = {name: base(getattr(st, name, None)) for name in labels}
+        original_class = {name: base(getattr(DeltaGenerator, name, None)) for name in labels}
+        st._am_i18n_originals = (original_module, original_class)
+    else:
+        original_module, original_class = originals
 
     def make_wrapper(method_name, original):
         @wraps(original)
@@ -632,6 +645,7 @@ def install_streamlit_translation(st) -> None:
         if original_module[name] is not None:
             setattr(st, name, make_wrapper(name, original_module[name]))
     st._am_i18n_installed = True
+    st._am_i18n_generation = _ACTIVE
 
 
 LANGUAGE_OPTIONS = _LANGUAGES
