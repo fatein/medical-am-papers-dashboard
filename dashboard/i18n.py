@@ -634,7 +634,9 @@ def install_streamlit_translation(st) -> None:
                                            if separator else tr(filename))
                 if method_name == 'metric' and len(args) > first+2 and isinstance(args[first+2], str):
                     args[first+2] = tr(args[first+2])
-                if method_name in ('selectbox', 'multiselect', 'radio'):
+                # Selectbox wire values use displayed strings. Keep language
+                # names native and stable so the next event can deserialize them.
+                if method_name in ('selectbox', 'multiselect', 'radio') and kwargs.get('key') != 'language':
                     original_format = kwargs.get('format_func') or str
                     active_code, active_root = language(), _ROOT.get()
                     kwargs['format_func'] = lambda option, f=original_format, c=active_code, r=active_root: tr(f(option), code=c, root=r)
