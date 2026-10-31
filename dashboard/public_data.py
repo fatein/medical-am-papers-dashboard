@@ -35,6 +35,7 @@ PUBLIC_PACKAGE_FILES = frozenset({
     'dashboard/enterprise_data.py', 'dashboard/enterprise_views.py',
     'dashboard/cross_data.py', 'dashboard/cross_views.py',
     'dashboard/report_data.py', 'dashboard/report_views.py', 'dashboard/report_navigation.py',
+    'dashboard/feedback_data.py', 'dashboard/feedback_store.py', 'dashboard/feedback_views.py',
     'data/papers_pre2026.csv', 'data/additions.jsonl', 'data/manifest.json',
     'data/enterprises.csv', 'data/enterprise_events.jsonl',
     'data/enterprise_observations.jsonl',

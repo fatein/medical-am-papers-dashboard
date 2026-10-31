@@ -576,7 +576,7 @@ def install_streamlit_translation(st) -> None:
     labels = {
         'markdown', 'caption', 'title', 'header', 'subheader', 'info', 'warning',
         'error', 'success', 'button', 'link_button', 'checkbox', 'selectbox',
-        'multiselect', 'radio', 'slider', 'number_input', 'text_input',
+        'multiselect', 'radio', 'slider', 'number_input', 'text_input', 'text_area', 'form_submit_button',
         'expander', 'download_button', 'metric', 'tabs', 'write', 'dataframe',
         'table', 'plotly_chart', 'html', 'text', 'file_uploader', 'json',
     }
@@ -651,6 +651,70 @@ def install_streamlit_translation(st) -> None:
 
 
 LANGUAGE_OPTIONS = _LANGUAGES
+
+# Reviewed interface text for visitor feedback. User-authored prose stays original.
+_OVERRIDES['en'].update({
+    '反馈汇总': 'Feedback summary', '分类反馈': 'Classification feedback',
+    '论文分类反馈': 'Paper classification feedback', '分析报告评估': 'Analysis report evaluation',
+    '医疗对象（P）': 'Medical application (P)', '疾病／应用（D）': 'Disease / application (D)',
+    '制造工艺（T）': 'Manufacturing process (T)', '材料体系（M）': 'Material system (M)',
+    '反馈说明': 'Feedback description', '提交反馈': 'Submit feedback',
+    '选择建议分类，并补充相关说明。反馈将在反馈汇总中公开展示。':
+        'Suggest classifications and add a description. Your feedback will be visible in the public summary.',
+    '说明不准确之处，或提供支持建议分类的论文内容与来源。':
+        'Describe the issue or provide paper content and sources supporting your suggestions.',
+    '反馈提交暂未启用。': 'Feedback submission is not enabled yet.',
+    '反馈服务暂不可用，请稍后重试。': 'The feedback service is temporarily unavailable. Please try again later.',
+    '反馈保存失败，请稍后重试。输入内容已保留。':
+        'Feedback could not be saved. Your input has been kept; please try again later.',
+    '请至少修改一个分类，或填写反馈说明。': 'Change at least one classification or add a description.',
+    '反馈已提交。': 'Feedback submitted.', '反馈编号：': 'Feedback ID: ',
+    '查看反馈汇总': 'View feedback summary', '处理状态：': 'Status: ',
+    '分类维度': 'Classification dimension', '原分类': 'Current classification',
+    '建议分类': 'Suggested classification', '是否修改': 'Changed',
+    '是': 'Yes', '否': 'No', '查看对应论文': 'View corresponding paper',
+    '查看反馈记录 ↗': 'View feedback record ↗',
+    '查看论文分类建议与分析报告评估。': 'Explore paper classification suggestions and report evaluations.',
+    '处理状态': 'Status', '全部状态': 'All statuses', '待处理': 'Pending', '已处理': 'Resolved',
+    '检索反馈': 'Search feedback', '论文名称、编号或反馈内容…': 'Paper title, ID or feedback text…',
+    '刷新': 'Refresh', '暂时无法读取反馈，请稍后刷新。': 'Feedback could not be loaded. Please refresh later.',
+    '反馈总数': 'Total feedback', '暂无符合条件的论文分类反馈。': 'No matching paper classification feedback.',
+    '分析报告评估将归集在此分类。': 'Analysis report evaluations will appear in this category.',
+    '反馈编号': 'Feedback ID', '提交时间（UTC）': 'Submitted (UTC)', '变更维度': 'Changed dimensions',
+    '说明': 'Description', '下载反馈 CSV': 'Download feedback CSV', '查看反馈详情': 'View feedback details',
+    '按反馈类型查看分类建议与报告评估。': 'Browse classification suggestions and report evaluations by type.',
+})
+_OVERRIDES['de'].update({
+    '反馈汇总': 'Feedbackübersicht', '分类反馈': 'Klassifikation melden',
+    '论文分类反馈': 'Feedback zur Publikationsklassifikation', '分析报告评估': 'Bewertung der Analyseberichte',
+    '医疗对象（P）': 'Medizinischer Anwendungsbereich (P)', '疾病／应用（D）': 'Erkrankung / Anwendung (D)',
+    '制造工艺（T）': 'Fertigungsverfahren (T)', '材料体系（M）': 'Materialsystem (M)',
+    '反馈说明': 'Beschreibung des Feedbacks', '提交反馈': 'Feedback absenden',
+    '选择建议分类，并补充相关说明。反馈将在反馈汇总中公开展示。':
+        'Schlagen Sie Klassifikationen vor und ergänzen Sie eine Beschreibung. Ihr Feedback wird öffentlich angezeigt.',
+    '说明不准确之处，或提供支持建议分类的论文内容与来源。':
+        'Beschreiben Sie die Ungenauigkeit oder nennen Sie Textstellen und Quellen für Ihre Vorschläge.',
+    '反馈提交暂未启用。': 'Das Absenden von Feedback ist noch nicht aktiviert.',
+    '反馈服务暂不可用，请稍后重试。': 'Der Feedbackdienst ist vorübergehend nicht verfügbar. Bitte versuchen Sie es später erneut.',
+    '反馈保存失败，请稍后重试。输入内容已保留。':
+        'Das Feedback konnte nicht gespeichert werden. Ihre Eingabe bleibt erhalten; bitte versuchen Sie es später erneut.',
+    '请至少修改一个分类，或填写反馈说明。': 'Ändern Sie mindestens eine Klassifikation oder geben Sie eine Beschreibung ein.',
+    '反馈已提交。': 'Feedback gesendet.', '反馈编号：': 'Feedback-ID: ',
+    '查看反馈汇总': 'Feedbackübersicht öffnen', '处理状态：': 'Status: ',
+    '分类维度': 'Klassifikationsdimension', '原分类': 'Bisherige Klassifikation',
+    '建议分类': 'Vorgeschlagene Klassifikation', '是否修改': 'Geändert',
+    '是': 'Ja', '否': 'Nein', '查看对应论文': 'Zugehörige Publikation ansehen',
+    '查看反馈记录 ↗': 'Feedbackeintrag ansehen ↗',
+    '查看论文分类建议与分析报告评估。': 'Klassifikationsvorschläge und Bewertungen der Analyseberichte ansehen.',
+    '处理状态': 'Status', '全部状态': 'Alle Status', '待处理': 'Offen', '已处理': 'Bearbeitet',
+    '检索反馈': 'Feedback suchen', '论文名称、编号或反馈内容…': 'Publikationstitel, ID oder Feedbacktext…',
+    '刷新': 'Aktualisieren', '暂时无法读取反馈，请稍后刷新。': 'Feedback konnte nicht geladen werden. Bitte aktualisieren Sie später.',
+    '反馈总数': 'Feedback insgesamt', '暂无符合条件的论文分类反馈。': 'Kein passendes Feedback zur Publikationsklassifikation.',
+    '分析报告评估将归集在此分类。': 'Bewertungen der Analyseberichte werden in dieser Kategorie gesammelt.',
+    '反馈编号': 'Feedback-ID', '提交时间（UTC）': 'Eingegangen (UTC)', '变更维度': 'Geänderte Dimensionen',
+    '说明': 'Beschreibung', '下载反馈 CSV': 'Feedback als CSV herunterladen', '查看反馈详情': 'Feedbackdetails ansehen',
+    '按反馈类型查看分类建议与报告评估。': 'Klassifikationsvorschläge und Berichtsbewertungen nach Feedbacktyp ansehen.',
+})
 
 LOCALIZED_SELECTION_KEYS = (
     'p_layers', 'tiers', 'diseases', 'processes', 'materials', 'work_types',

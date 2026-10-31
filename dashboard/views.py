@@ -229,7 +229,7 @@ def display_table(df):
     return result
 
 
-def explorer(df,public_mode=False):
+def explorer(df,public_mode=False,root=None):
     ordered=df.sort_values(['publication_year','title'],ascending=[False,True])
     left,right=st.columns([1,1])
     with left: size=st.selectbox('每页显示',[25,50,100],index=1,key='page_size')
@@ -265,6 +265,9 @@ def explorer(df,public_mode=False):
             if not public_mode and record.get('source_review_limitation',''):
                 st.caption('原审核限制：'+record.source_review_limitation)
         if record.doi: st.link_button('打开 DOI 原文入口','https://doi.org/'+quote(record.doi,safe='/()'))
+        if root is not None:
+            from .feedback_views import paper_feedback
+            paper_feedback({'document_id':selected,**record.to_dict()},root,public_mode=public_mode)
         if not public_mode:
             st.write('摘要')
             if record.abstract:

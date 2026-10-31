@@ -14,6 +14,7 @@ from dashboard.cross_views import cross_analysis_page
 from dashboard.report_data import load_question_reports
 from dashboard.report_navigation import resolve_report_id, clear_report_route
 from dashboard.report_views import question_report_page
+from dashboard.feedback_views import feedback_summary
 from dashboard.i18n import (LANGUAGE_OPTIONS, LOCALIZED_SELECTION_KEYS,
                             clear_localized_selection, install_streamlit_translation,
                             localized_multiselect, protect_names, set_language)
@@ -116,7 +117,7 @@ with st.sidebar:
                 '<div class="brand">◈ AM Research<br>学术趋势观察台</div><span class="tag">本地 · 开源 · 无订阅</span>',unsafe_allow_html=True)
     st.caption('医疗增材制造 / 论文研究项目')
     st.divider()
-    pages=['论文总览','研究结构与趋势','论文检索','学术与企业联系','企业格局','技术路线图','企业检索']
+    pages=['论文总览','研究结构与趋势','论文检索','学术与企业联系','企业格局','技术路线图','企业检索','反馈汇总']
     if not PUBLIC_MODE: pages.append('数据更新')
     page=st.radio('浏览页面',pages,key='page',label_visibility='collapsed',on_change=clear_report_route)
     st.divider()
@@ -151,6 +152,8 @@ with st.sidebar:
                                                query=enterprise_query,statuses=chosen_statuses)
     elif page=='学术与企业联系':
         st.caption('本页可按 P 层、研究方向和研究问题逐级查看。')
+    elif page=='反馈汇总':
+        st.caption('按反馈类型查看分类建议与报告评估。')
     else:
         future=st.checkbox('包含后续补充数据（2026+）',key='include_future',
                            value=(ROOT/'data/additions.jsonl').exists())
@@ -184,7 +187,9 @@ with st.sidebar:
             st.rerun()
         st.divider()
 
-if page=='学术与企业联系':
+if page=='反馈汇总':
+    feedback_summary(ROOT,public_mode=PUBLIC_MODE)
+elif page=='学术与企业联系':
     try:
         cross_data=load_cross_analysis(ROOT)
         reports=load_question_reports(ROOT)['reports']
@@ -211,4 +216,4 @@ else:
         st.info('没有匹配的论文。请调整年份、类别或检索关键词，或点击“重置筛选”。')
     elif page=='论文总览': overview(filtered,years)
     elif page=='研究结构与趋势': trends(filtered,years)
-    elif page=='论文检索': explorer(filtered,public_mode=PUBLIC_MODE)
+    elif page=='论文检索': explorer(filtered,public_mode=PUBLIC_MODE,root=ROOT)
