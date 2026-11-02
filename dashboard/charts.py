@@ -50,7 +50,7 @@ def composition_chart(frame,column,mapping,years,percent=True):
     for i,code in enumerate(sorted(table.columns,key=lambda x:list(mapping).index(x) if x in mapping else 99)):
         fig.add_trace(go.Bar(x=table.index,y=table[code],name=label(code,mapping),
                             marker_color=COLORS[i%len(COLORS)],
-                            hovertemplate='%{x} 年<br>%{y:.1f}'+('%' if percent else ' 篇')+'<extra>%{fullData.name}</extra>'))
+                            hovertemplate='%{x} 年<br>'+('%{y:.1f}%' if percent else '%{y:,.0f} 篇')+'<extra>%{fullData.name}</extra>'))
     fig.update_layout(barmode='stack',bargap=.22,hovermode='x unified')
     fig.update_xaxes(dtick=1,tickangle=-35)
     fig.update_yaxes(title_text='年度论文占比（%）' if percent else '年度论文数量',

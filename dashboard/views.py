@@ -153,9 +153,9 @@ def overview(df,years):
         st.caption('每篇归入一个主医疗对象类别，合计等于当前论文数。')
         chart(distribution_chart(df,'analysis_primary_p_layer',P),'p_distribution')
     with st.container(border=True):
-        st.subheader('研究对象的年度结构')
-        st.caption('各年份分别计算占比。')
-        chart(composition_chart(df,'analysis_primary_p_layer',P,years,True),'p_yearly')
+        st.subheader('各 P 层论文的年度数量')
+        st.caption('按年份统计各 P 层的论文数量，颜色区分 P 层。')
+        chart(composition_chart(df,'analysis_primary_p_layer',P,years,percent=False),'p_yearly')
     st.download_button('下载当前年度统计 CSV',safe_csv(annual),file_name='年度论文统计.csv',mime='text/csv')
 
 
