@@ -237,3 +237,41 @@ def test_timeline_company_selector_refreshes_after_language_change(code):
     app.selectbox(key='language').set_value(code).run()
     assert not app.exception
     assert app.selectbox(key=f'enterprise_timeline_company__{code}').value == '3D-Side S.A.'
+
+
+@pytest.mark.parametrize('page,keys',[
+    ('反馈汇总',['feedback_status']),
+    ('研究结构与趋势',['dimension','relation']),
+    ('学术与企业联系',['cross_p','cross_direction','cross_question']),
+])
+def test_translated_selectors_get_fresh_frontend_instances(page,keys):
+    app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60)
+    app.query_params['lang']='en'
+    app.session_state['page']=page
+    app.run()
+    saved={key:app.selectbox(key=f'{key}__en').value for key in keys}
+    app.selectbox(key='language').set_value('de').run()
+    assert not app.exception
+    for key in keys:
+        assert app.selectbox(key=f'{key}__de').value==saved[key]
+        assert app.session_state[key]==saved[key]
+
+
+def test_localized_direction_navigation_and_report_return_keep_the_selection():
+    app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60)
+    app.query_params['lang']='de'
+    app.session_state['page']='学术与企业联系'
+    app.run()
+    target='P1 · 个体化植入物'
+    app.session_state['cross_direction']=target  # Same update as a summary-row click.
+    app.run()
+    assert not app.exception
+    assert app.selectbox(key='cross_direction__de').value==target
+    question=app.selectbox(key='cross_question__de').value
+    app.button(key='open_direction_report').click().run()
+    assert not app.exception
+    assert app.query_params['direction']==['P1-02']
+    app.button(key='direction_report_back').click().run()
+    assert not app.exception
+    assert app.selectbox(key='cross_direction__de').value==target
+    assert app.selectbox(key='cross_question__de').value==question

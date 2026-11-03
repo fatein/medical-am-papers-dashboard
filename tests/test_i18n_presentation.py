@@ -111,3 +111,23 @@ def test_runtime_catalogue_is_not_overridden_by_old_development_files(tmp_path):
     (tmp_path/'scripts/question_titles_en.json').write_text(json.dumps({'P1-001':'Obsolete translation'}),'utf8')
     (tmp_path/'data/cross_analysis.json').write_text(json.dumps({'questions':[{'question_id':'P1-001','question':'问题'}]}),'utf8')
     assert _catalogue(str(tmp_path),'en')['问题'] == 'Reviewed question'
+
+
+def test_localized_selectbox_respects_navigation_and_changed_options():
+    from dashboard.i18n import localized_selectbox
+    state={}
+    def selectbox(label,options,key,**kwargs):
+        return state.setdefault(key,options[0])
+    fake=SimpleNamespace(session_state=state,selectbox=selectbox)
+    try:
+        set_language('en',ROOT)
+        assert localized_selectbox(fake,'方向',['A','B'],key='direction')=='A'
+        state['direction']='B'  # A table or report-return callback chooses B.
+        assert localized_selectbox(fake,'方向',['A','B'],key='direction')=='B'
+        assert localized_selectbox(fake,'方向',['C'],key='direction')=='C'
+        assert state['direction']=='C'
+        set_language('de',ROOT)
+        assert localized_selectbox(fake,'方向',['C'],key='direction')=='C'
+        assert 'direction__de' in state
+    finally:
+        set_language('zh',ROOT)

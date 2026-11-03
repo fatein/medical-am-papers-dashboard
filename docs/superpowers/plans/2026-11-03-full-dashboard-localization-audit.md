@@ -27,9 +27,9 @@
 
 ## Tasks
 
-- [ ] Establish baseline tests and inventory source strings, catalogues and page routes.
-- [ ] Audit enterprise prose and academic summaries/question reports in parallel; record explicit patches and review scope.
-- [ ] Capture all pages in both languages and scan rendered UI, tables and charts for omissions; reproduce language-switch failures before correcting them.
-- [ ] Add meaningful regression checks for confirmed failures, fix presentation/catalogue causes, and merge reviewed content patches.
-- [ ] Run catalogue integrity, name/link/number checks and page/navigation tests; inspect representative browser layouts in both languages.
+- [x] Establish baseline tests and inventory source strings, catalogues and page routes.
+- [x] Audit enterprise prose and academic summaries/question reports in parallel; record explicit patches and review scope.
+- [x] Capture all pages in both languages and scan rendered UI, tables and charts for omissions; reproduce language-switch failures before correcting them.
+- [x] Add meaningful regression checks for confirmed failures, fix presentation/catalogue causes, and merge reviewed content patches.
+- [x] Run catalogue integrity, name/link/number checks and page/navigation tests; inspect representative browser layouts in both languages.
 - [ ] Publish only scoped files, restart if required, verify the public pages and synchronize code plus review records locally.

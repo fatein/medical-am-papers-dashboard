@@ -12,4 +12,3 @@ Validation: the five summary mappings have existing source keys; one additional 
 These findings supersede the earlier review's unresolved comparator and pediatric-drug caveats. A clarification to its standalone-key caveat: the observed report occurrence of 组织 is in 工艺—组织—腐蚀研究 and means alloy **microstructure (Gefüge)**, rather than biological tissue. A global replacement would still be unsafe because 组织 has several contextual meanings.
 
 Additional fifth German entry: complete P1-011 academic-chain section, reconstructed from its Chinese source. This resolves the context-dependent alloy Gefüge label without changing the global ambiguous 组织 key; it also repairs the split PEEK pin (销) phrase previously rendered as a sale. Original years, reference IDs and Markdown heading count are preserved. This full-section source key is intentionally new to the catalogue; the four summary keys and one English key already exist.
-

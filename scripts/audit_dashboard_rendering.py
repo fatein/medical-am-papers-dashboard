@@ -78,10 +78,10 @@ for code in ('en','de'):
  at.radio(key='page').set_value('研究结构与趋势').run()
  from dashboard.labels import DIMENSIONS
  for dimension in DIMENSIONS:
-  at.selectbox(key='dimension').set_value(dimension).run()
+  at.selectbox(key=f'dimension__{code}').set_value(dimension).run()
   item=snapshot(at,'趋势/'+dimension,code);results.append(item)
   print(code,'dimension',dimension,'leaks',len(item['leaks']),flush=True)
- at.selectbox(key='relation').set_value('医疗对象 × 疾病／应用').run()
+ at.selectbox(key=f'relation__{code}').set_value('医疗对象 × 疾病／应用').run()
  results.append(snapshot(at,'交叉/医疗对象×疾病',code))
  report_data=json.loads((ROOT/'data/question_reports.json').read_text('utf8'))['reports']
  report_leaks=[]

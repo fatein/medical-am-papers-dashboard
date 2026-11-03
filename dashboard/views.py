@@ -7,7 +7,7 @@ import math
 from urllib.parse import quote
 import pandas as pd
 import streamlit as st
-from dashboard.i18n import preserve_original_text, year_papers_label, hero_metadata, set_localized_selection, tr, ui_format
+from dashboard.i18n import preserve_original_text, year_papers_label, hero_metadata, set_localized_selection, tr, ui_format, localized_selectbox
 import plotly.graph_objects as go
 from .analytics import yearly_counts,period_comparison,cross_counts
 from .charts import annual_chart,distribution_chart,composition_chart,comparison_chart,style
@@ -160,7 +160,7 @@ def overview(df,years):
 
 
 def trends(df,years):
-    dimension=st.selectbox('分析维度',list(DIMENSIONS),key='dimension')
+    dimension=localized_selectbox(st,'分析维度',list(DIMENSIONS),key='dimension')
     column,mapping=DIMENSIONS[dimension]
     left,right=st.columns([1,1])
     with left: measure=st.radio('展示方式',['年度占比','年度数量'],horizontal=True,key='measure')
@@ -199,7 +199,7 @@ def trends(df,years):
                 else: st.info('至少一个比较区间没有论文，请调整区间。')
     with st.container(border=True):
         st.subheader('研究维度的交叉分布')
-        relation=st.selectbox('交叉组合',['工艺 × 材料','医疗对象 × 疾病／应用'],key='relation')
+        relation=localized_selectbox(st,'交叉组合',['工艺 × 材料','医疗对象 × 疾病／应用'],key='relation')
         specified=st.checkbox('交叉图仅包含工艺和材料均明确的论文',value=False,key='cross_specified',disabled=relation!='工艺 × 材料')
         cross_df=df
         if relation=='工艺 × 材料':

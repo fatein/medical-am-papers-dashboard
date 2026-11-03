@@ -12,7 +12,7 @@ import streamlit as st
 from dashboard.cross_data import direction_summary
 from dashboard.labels import P, label
 from dashboard.i18n import (LOCALIZED_SELECTION_KEYS, clear_localized_selection,
-                            tr, language, preserve_original_text, protect_names)
+                            tr, language, preserve_original_text, protect_names, localized_selectbox)
 from dashboard.report_navigation import open_question_report
 from dashboard.direction_reports import direction_id, open_direction_report, UI
 
@@ -59,7 +59,7 @@ def cross_analysis_page(data: dict, available_reports: set[str] | None = None) -
     d.metric('对应企业', len({row['company'] for row in evidence
                           if row['source_kind'] != '非企业开源项目'}))
     st.subheader('七个 P 层中的研究方向')
-    selected_p = st.selectbox('医疗对象', ['全部'] + [f'P{i}' for i in range(1, 8)],
+    selected_p = localized_selectbox(st,'医疗对象', ['全部'] + [f'P{i}' for i in range(1, 8)],
                               format_func=lambda code: '全部 P 层' if code == '全部' else label(code, P),
                               key='cross_p')
     visible = [row for row in directions if selected_p == '全部' or row['p'] == selected_p]
@@ -88,7 +88,7 @@ def cross_analysis_page(data: dict, available_reports: set[str] | None = None) -
                             plot_bgcolor='rgba(0,0,0,0)', legend=dict(orientation='h', y=-0.16))
         st.plotly_chart(chart, width='stretch')
 
-    choice = st.selectbox('选择研究方向', direction_options, key='cross_direction',
+    choice = localized_selectbox(st,'选择研究方向', direction_options, key='cross_direction',
                           format_func=lambda option: tr(option))
     chosen = visible[direction_options.index(choice)]
     scope = [q for q in questions if q['p'] == chosen['p'] and q['direction'] == chosen['direction']]
@@ -124,7 +124,7 @@ def cross_analysis_page(data: dict, available_reports: set[str] | None = None) -
     by_id = {q['question_id']: q for q in scope}
     selected_language = language()
     project_root = Path(__file__).resolve().parents[1]
-    selected = st.selectbox('选择研究问题', options,
+    selected = localized_selectbox(st,'选择研究问题', options,
                             format_func=lambda qid, c=selected_language, r=project_root:
                             f"{qid} · {tr(by_id[qid]['question'], code=c, root=r)}",
                             key='cross_question')

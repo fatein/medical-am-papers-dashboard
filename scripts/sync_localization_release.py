@@ -10,11 +10,12 @@ FILES=['dashboard/i18n.py','dashboard/views.py','dashboard/enterprise_views.py',
        'scripts/apply_localization_review.py','scripts/sync_localization_release.py',
        'docs/localization-review-2026-11-03.md',
        'docs/superpowers/plans/2026-11-03-full-dashboard-localization-audit.md']
+FILES.extend(['dashboard/cross_views.py','dashboard/feedback_views.py'])
 TARGETS=[ROOT.parent/'dashboard_project_20261002',Path('E:/毕业论文——知识库/文件归档/模型训练/5、dashboard制作')]
 norm=lambda value:value.replace(b'\r\n',b'\n')
 for target in TARGETS:
     assert target.is_dir(),target
-    for rel in [path for path in FILES[:6] if not path.startswith('data/i18n/')]:
+    for rel in [path for path in FILES if path.startswith(('dashboard/','data/direction_reports/'))]:
         dst=target/rel
         base=subprocess.check_output(['git','-c','safe.directory=*','show',BASE+':'+rel],cwd=ROOT)
         if dst.exists() and norm(dst.read_bytes()) not in (norm(base),norm((ROOT/rel).read_bytes())):
@@ -36,7 +37,8 @@ for target in TARGETS:
             old=json.loads(dst.read_text('utf8'))
             reviewed=json.loads(src.read_text('utf8'))
             dst.write_text(json.dumps({**old,**reviewed},ensure_ascii=False,indent=2)+'\n','utf8')
-            assert all(json.loads(dst.read_text('utf8'))[key]==value for key,value in reviewed.items())
+            synchronized=json.loads(dst.read_text('utf8'))
+            assert all(synchronized[key]==value for key,value in reviewed.items())
         else:
             shutil.copy2(src,dst)
             assert dst.read_bytes()==src.read_bytes()

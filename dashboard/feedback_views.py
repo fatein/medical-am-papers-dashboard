@@ -135,7 +135,7 @@ def feedback_summary(root: Path, public_mode=False):
                 unsafe_allow_html=True)
     left, middle, right = st.columns([2, 4, 1])
     with left:
-        status = st.selectbox('处理状态', ['all', 'pending', 'resolved'],
+        status = localized_selectbox(st,'处理状态', ['all', 'pending', 'resolved'],
                               format_func=lambda code: '全部状态' if code == 'all' else STATUS_LABELS[code],
                               key='feedback_status')
     with middle:

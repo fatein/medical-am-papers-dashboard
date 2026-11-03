@@ -884,6 +884,7 @@ LOCALIZED_SELECTION_KEYS = (
     'p_layers', 'tiers', 'diseases', 'processes', 'materials', 'work_types',
     'enterprise_countries', 'enterprise_p_codes', 'enterprise_statuses',
     'enterprise_types', 'enterprise_timeline_company', 'enterprise_event_choice',
+    'dimension', 'relation', 'cross_p', 'cross_direction', 'cross_question', 'feedback_status',
 )
 
 
@@ -938,10 +939,15 @@ def localized_selectbox(st, label: str, options, *, key: str, **kwargs):
     values = list(options)
     widget_key = localized_selection_key(key)
     state = st.session_state
-    if widget_key not in state:
-        saved = state.get(f'_am_selected_{key}', state.get(key))
-        if saved in values:
-            state[widget_key] = saved
+    saved = state.get(key, state.get(f'_am_selected_{key}'))
+    previous = state.get(f'_am_selected_{key}')
+    if widget_key in state and state[widget_key] not in values:
+        state.pop(widget_key)
+    # Table selections and report-return callbacks update the stable base key.
+    # The locale-specific widget must honor that navigation on its next run.
+    if saved in values and (widget_key not in state or saved != previous):
+        state[widget_key] = saved
     selected = st.selectbox(label, values, key=widget_key, **kwargs)
+    state[key] = selected
     state[f'_am_selected_{key}'] = selected
     return selected
