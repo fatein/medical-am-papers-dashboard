@@ -32,7 +32,7 @@ def open_direction_report(rid:str)->None:
  st.session_state['direction_report_scroll_to_top']=True
  st.query_params.pop('question',None)
  st.query_params['view']='direction-report';st.query_params['direction']=rid
- st.query_params['lang']=language()
+ st.query_params['lang']=st.session_state.get('language','zh')
  st.session_state['page']='学术与企业联系'
 
 def return_to_direction(root:Path,rid:str)->None:

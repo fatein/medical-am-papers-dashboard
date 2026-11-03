@@ -53,11 +53,12 @@ def test_reference_date_labels():
 
 def test_return_restores_question_and_ignores_stale_context(monkeypatch):
  class State:
-  session_state={'cross_p':'全部','cross_direction':'P1 · 个体化植入物','cross_question':'P1-004','cross_paper_page_P1-004':3}
+  session_state={'language':'de','cross_p':'全部','cross_direction':'P1 · 个体化植入物','cross_question':'P1-004','cross_paper_page_P1-004':3}
   query_params={}
  fake=State()
  monkeypatch.setattr(direction_reports,'st',fake)
  direction_reports.open_direction_report('P1-02')
+ assert fake.query_params['lang']=='de'
  fake.session_state.pop('cross_question')
  direction_reports.return_to_direction(ROOT,'P1-02')
  assert fake.session_state['cross_question']=='P1-004'
