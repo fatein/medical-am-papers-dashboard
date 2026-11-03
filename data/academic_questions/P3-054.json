@@ -1,0 +1,337 @@
+{
+  "schema_version": 2,
+  "question_id": "P3-054",
+  "p": "P3",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_4159c5f18d6079ba7678",
+    "doc_sd_c907442094753b2ba985",
+    "KB20265E0E8C7C57CE"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "3D-printed porous titanium rods equipped with vancomycin-loaded hydrogels and polycaprolactone membranes for intelligent antibacterial drug release",
+      "publisher": "Scientific Reports",
+      "year": 2024,
+      "url": "https://doi.org/10.1038/s41598-024-72457-1",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Local dose-dense chemotherapy for triple-negative breast cancer via minimally invasive implantation of 3D printed devices",
+      "publisher": "Asian Journal of Pharmaceutical Sciences",
+      "year": 2024,
+      "url": "https://doi.org/10.1016/j.ajps.2024.100884",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Correction: 3D-printed porous titanium rods equipped with vancomycin-loaded hydrogels and polycaprolactone membranes for intelligent antibacterial drug release",
+      "publisher": "Scientific Reports",
+      "year": 2025,
+      "url": "https://doi.org/10.1038/s41598-025-14939-4",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 2",
+      "asset_path": "assets/academic_figures/P3-054/F01.jpg",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11411058/#Fig2",
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Fig. 3",
+      "asset_path": "assets/academic_figures/P3-054/F02.jpg",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11411058/#Fig3",
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R01",
+      "original_label": "Fig. 6",
+      "asset_path": "assets/academic_figures/P3-054/F03.jpg",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11411058/#Fig6",
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Fig. 2",
+      "asset_path": "assets/academic_figures/P3-054/F04.jpg",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10861843/#fig0002",
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R02",
+      "original_label": "Fig. 5",
+      "asset_path": "assets/academic_figures/P3-054/F05.jpg",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10861843/#fig0005",
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R02",
+      "original_label": "Fig. 7",
+      "asset_path": "assets/academic_figures/P3-054/F06.jpg",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10861843/#fig0007",
+      "license": "CC BY-NC-ND 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "打印植入物如何提供持续局部释药？",
+      "direction": "植入与局部递送",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "承力孔架、药物载体与外膜承担不同功能",
+          "markdown": "Ma 等的植入物把打印钛棒、载万古霉素凝胶及 PCL 外膜分开设计。钛棒直径 2.5 mm、长 20 mm，目标孔径约 500 µm；贯通孔容纳药物载体，金属骨架不需要随药物释放一起溶解。药物在打印后装载，因此这项实验验证的是打印支架与后续包覆的组合，不是万古霉素经历金属打印过程后的稳定性。[钛棒及装载方法](ref:R01)\n\n载体为温敏 mPEG750-b-PCL2500。作者筛选认为 25% 在体温附近适合成胶，但下一段配制方法又写聚合物质量分数 20%；这两个浓度不能合并成已经确定的最终配方。文中万古霉素与聚合物质量比为 1:10，每棒含药 2 mg。加压灌入孔隙支持内部装载，却没有提供逐棒实测含量分布，故相同标称量不能替代剂量均一性结果。\n\n外膜另用 PCL/二氯甲烷溶液形成。0.1 g/mL 包覆不完整，0.2 g/mL 可形成约 20 µm 薄膜，0.3 g/mL 更厚。膜厚筛选和降解观察使用平面钛网；曲面多孔棒的每处膜厚、缺陷率及装载深度并未逐点绘图。把最小完整覆膜浓度选为后续条件，实质上是在保持屏障和允许酶响应破裂之间取平衡，不能把名义孔径直接当作分子扩散孔径。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "凝胶与外膜联用延缓释放，但酶条件决定是否开启",
+          "markdown": "释放对照分为 A：Ti+万古霉素，B：再加 PCL，C：药物置于凝胶而不加外膜，D：凝胶与外膜并用。A–D 放在脂肪酶中；另一个对照与 D 组成相同，但浸入 PBS。方法部分为 5 mL、0.2 mg/mL 脂肪酶、37 °C、80 rpm，结果段一处却写 0.2 g/mL，存在数量级差异；这里采用方法及释放段一致的单位。[膜降解与释放对照](ref:R01)\n\n电镜显示含酶条件下 1 h 已出现膜破损，36 h 基本消失，PBS 中观察至 10 周仍保留。释放从 1 h 测到 96 h，各时间点更换全部介质并用紫外法定量。A 在 1 h 内释放，C 约 36 h 完成，B 早期突释后继续释放，D 则把释放延长到约 96 h。D 在 PBS 中 96 h 少于 1%，延长至 10 周约 10%。因此“长期保留”和“持续供药”在这里是两个状态；封闭膜在无酶介质中也可能阻止所需药量进入周围组织。\n\n正文给出 D 在 12 h 约 18%、24 h 约 35%，但原图时间点及曲线位置并不完全对应这些数值，不能用两者混合拟合精确速率。也没有在感染组织中同步测得脂肪酶浓度和局部药物浓度，故体外酶触发曲线尚不能直接换算成某种感染程度下的体内释放时间。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "感染随访支持局部作用，却未证明持续供药整个随访期",
+          "markdown": "兔试验共 48 只，每组 12 只；注入 0.1 mL、1 × 10^7 CFU/mL 的 Staphylococcus aureus 后在同次手术放入植入物。此处 A 是不载药的 Ti，与释放实验中载药 A 不同；B、C、D 仍分别是外膜、凝胶、凝胶加外膜。单独建立模型时的 4 周观察不能解释为所有治疗兔均先感染 4 周才接受植入。[动物方法及炎症终点](ref:R01)\n\n白细胞、CRP 和 IL-6 在术后 1、3、5 d 及 1、2、4、8 周随访。C/D 的炎症指标总体低于 A/B，8 周白细胞接近术前水平；组织切片中 A/B 有坏死物和纤维组织包裹，C/D 骨髓更接近正常。但原文 C 与 D 的 8 周 Norden 影像评分无显著差异，说明在该终点上，加入外膜未显示超越凝胶的明确优势。A/B 比较的正文把“无显著差异”与 P < 0.05 并列，不能据此补写可靠的成对统计结论。\n\n论文后续更正了原图 5 中 B 组术后 4 周照片与 2 周照片重复的问题；这里采用未受该更正影响的炎症及组织原图。[正式更正](ref:R03) 这些终点显示早期局部递送可影响较晚的感染过程，但没有连续测量组织药量，也没有把体外约 96 h 的供药扩展成已证实的 8 周释放。膜与凝胶两者的增益需按具体终点分别判断。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "多孔隔层把持续局部治疗改写为有间隔的药物脉冲",
+          "markdown": "Myung 与 Kang 将 PCL 壳体和含药 PF127 凝胶交替打印。PCL 用 200 µm 喷嘴、90 °C、250 kPa、80–140 mm/min；含药凝胶为 30% w/v，经 250 µm 喷嘴、100 kPa、60–120 mm/min，在 21 °C 环境挤出。分开喷头使药物凝胶不需要采用 PCL 的熔融温度。出口孔直径 250 µm，多孔层总孔面积 0.392 mm²，药物层数量决定计划脉冲次数。[结构与释放曲线](ref:R02)\n\n在 3 mL、pH 7.4 PBS、37 °C 中，每 6 h 取 200 µL 并补液；DOX 与 CYP 分别在 479 nm、210 nm 检测。含药层数固定为 4，增加隔层厚度主要延长脉冲间隔，同时也延长完成释放的总时间。\n\n| 隔层厚度 | DOX 脉冲间隔 | 达到 80% DOX 释放时间 |\n|---|---|---|\n| 0.5 mm | 无可分辨间隔 | 6.7 ± 0.5 d |\n| 1.0 mm | 21.3 ± 3.2 h | 13.4 ± 1.8 d |\n| 2.0 mm | 69.8 ± 4.2 h | 21.7 ± 1.3 d |\n| 3.0 mm | 122.6 ± 4.6 h | 30.1 ± 0.8 d |\n\n0.5 mm 组到 80% 前近似线性，R² = 0.987；这不等于完整释放全过程均为零级。CYP 也表现出厚度依赖的间隔，但并非可以仅凭 DOX 曲线替代另一药物的检测。原文 CYP 最厚组离散数值与图中误差棒不一致，不能据正文那一项计算精确变异系数。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "同样脉冲数与标称剂量，最短间隔未产生最好抗肿瘤效果",
+          "markdown": "体外先比较 DOX 凝胶浓度 0.01%、0.05%、0.10% w/v 及 120、72、24、0 h 间隔。每日换培养液，9 d 后移除器件并恢复 24 h，测存活细胞及 alamarBlue。0.01% 下，72、24、120、0 h 组活细胞数分别为未处理组的 42.28%、43.29%、50.54%、66.08%。无间隔组较早耗尽药物，剩余细胞可在后续时间生长，因此终点效果同时包含给药节奏与末次供药后的恢复窗口。[细胞及动物比较](ref:R02)\n\n4T1-Luc2 原位肿瘤达到 75 mm³ 后植入双药器件，出口朝向肿瘤。每脉冲标称 DOX 5 mg/kg 加 CYP 20 mg/kg，共 4 次，间隔仍为 120、72、24、0 h。42 d 肿瘤体积依次为 524.41、292.77、420.99、627.95 mm³，未处理为 2014.69 mm³；72 h 组最好，说明减少间隔并非单调改善结果。\n\n原图肿瘤体积 n = 6，生存曲线 n = 10，不能统一称为同一动物数。72 h 组图示至 80 d 仍约 80% 存活，但方法仅概述 42 d 随访，生存数据应按图注明确其更长观察窗。另一个相同标称方案的瘤内注射实验在 42 d 为 374.15 mm³；这不是同时测得局部药物 AUC 完全一致的比较。体内释放用取出器件后的残留量估计，也不同于直接测定瘤内浓度。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "耐药蛋白与残余转移解释为何持续暴露仍需时间结构",
+          "markdown": "Myung 与 Kang 在 42 d 取肿瘤，检测 P-gp、BCRP 和 β-actin。由未处理、120、72、24 到 0 h，P-gp/β-actin 依次为 0.28、0.77、1.54、2.48、5.48；BCRP/β-actin 为 0.29、0.73、1.46、2.26、4.15。免疫染色得到相同方向：0 h 的 P-gp 阳性面积为 35.95 ± 4.12%，72 h 为 7.58 ± 1.85%。这把较弱的无间隔组效果与药物外排相关蛋白表达联系起来，但没有用抑制或敲除实验单独证明这些蛋白导致差异。[耐药蛋白与组织终点](ref:R02)\n\n更好的局部控制也不等于没有残留病灶。72 h 组离体主要器官未显示清楚的转移发光信号，组织学仍检出肺表面病灶 2.2 ± 1.0 个、肺切片肿瘤面积 1.2 ± 0.3%；0 h 组相应为 17.3 ± 1.9 个及 32.0 ± 1.5%。两种检测方法的灵敏度及采样范围不同，不应把“未见发光”改成“消除全部转移”。\n\n这一组实验实际把供药总时长、间隔和末次暴露后的恢复时间一起改变，且只在特定双药剂量和肿瘤模型中比较。较高外排蛋白表达与更差控制并存支持保留脉冲间歇的解释；它并未确定每个组织都适合相同间隔，也没有证明持续稳定释放本身必然诱发耐药。",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Ma et al. — 原图 2：孔架装载与温敏载体。",
+          "interpretation": "A 将打印钛架、药物凝胶和 PCL 外膜画成独立部件；B 展示实物及三维影像；C 是浓度—温度状态图和凝胶照片。C 中上下转变界限之间才是成胶区，不能只看某一温度就判定所有浓度均能固定药物。图示支持复合结构，未直接量化体内药物流量。[结构依据](ref:R01)"
+        },
+        "F02": {
+          "caption": "Ma et al. — 原图 3：膜覆盖、酶降解与释放同图比较。",
+          "interpretation": "A/B 为钛网及棒，C 比较 0.1、0.2、0.3 g/mL 膜，D 从原始膜到 1、3、24、36 h 酶处理及 10 周 PBS 对照。E 横轴 h、纵轴累计释放百分比，A 最快，D 最慢的含酶曲线，PBS 对照几乎贴近零。C/D 的平面网表面与 E 的载药棒需区分；绿色 D 的节点也不能机械替代正文有出入的时间—百分比数值。[膜与释放](ref:R01)"
+        },
+        "F03": {
+          "caption": "Ma et al. — 原图 6：炎症轨迹与骨髓组织。",
+          "interpretation": "A/B/C 分别为 WBC、CRP、IL-6，左侧连线与右侧柱图展示同组时间变化，右上 D 为 8 周切片。A/B 组坏死及纤维组织较明显，C/D 较接近正常骨髓。图中采用 100× 与 40×，不是药物浓度图；星号也不表示每个时间点 C 均显著差于 D。[感染随访](ref:R01)"
+        },
+        "F04": {
+          "caption": "Myung et al. — 原图 2：隔层厚度改变双药脉冲间隔。",
+          "interpretation": "A 展示多孔层、含药层、出口层及 500 µm 标尺电镜，B 为 0.5–3.0 mm 隔层器件。C/E 是 DOX/CYP 累计释放，横轴 d；D/F 为间隔 h 对厚度 mm，不能把两种横轴时间单位混用。薄隔层曲线没有清晰平台，厚隔层出现阶梯；改变间隔也同时改变整段治疗覆盖时间。[双药时序](ref:R02)"
+        },
+        "F05": {
+          "caption": "Myung et al. — 原图 5：释放间隔与肿瘤、生存、器官发光。",
+          "interpretation": "A 为同剂量及脉冲数的时间图；B 肿瘤体积随 d 变化，C 为体内发光，D 是更长随访的生存曲线，E/F 为取出器官及其总光通量。F 纵轴为对数尺度，不能用柱高比例直接当作细胞数比例。72 h 组表现最好，但 E 中较弱信号并不排除组织学微小病灶。[动物终点](ref:R02)"
+        },
+        "F06": {
+          "caption": "Myung et al. — 原图 7：间隔缩短伴随外排相关蛋白增加。",
+          "interpretation": "A 为免疫印迹，B/C 用 β-actin 归一化；D 为 H&E 及红色 P-gp/BCRP、蓝色细胞核，标尺 100 µm；E/F 为阳性面积百分比。无间隔组最强，120 与 72 h 某些比较标注 ns。条带比值和染色面积不是相同量纲，也不等于直接测得膜转运通量。[蛋白证据](ref:R02)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do printed implants provide sustained local drug release?",
+      "direction": "Implantation and local delivery",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "The load-bearing scaffold, drug carrier and outer membrane perform different tasks",
+          "markdown": "Ma et al. separated a printed titanium rod, vancomycin-loaded gel and PCL membrane. Rods were 2.5 mm in diameter and 20 mm long, with a target pore size near 500 µm. Interconnected pores accommodated the carrier without requiring the metal scaffold to dissolve during release. Drug was loaded after printing, so this tests a printed scaffold plus subsequent coating, rather than vancomycin stability during metal printing. [Rod and loading methods](ref:R01)\n\nThe carrier was thermoresponsive mPEG750-b-PCL2500. Screening identified 25% as suitable for gelation near body temperature, but the subsequent preparation paragraph gives a polymer mass fraction of 20%. These cannot be merged into a confirmed final formulation. The reported vancomycin:polymer mass ratio was 1:10, with 2 mg per rod. Pressure-assisted pore filling supports internal loading, but individual measured rod contents were not distributed or tabulated; equal nominal loading is not a content-uniformity result.\n\nThe outer membrane was formed from PCL/dichloromethane. Coverage was incomplete at 0.1 g/mL, approximately 20 µm thin and complete at 0.2 g/mL, and thicker at 0.3 g/mL. Thickness screening and degradation imaging used flat titanium meshes. Local thickness, defect frequency and loading depth across curved porous rods were not mapped point by point. Selecting the minimum fully covering concentration balances barrier retention against enzyme-responsive disruption. Nominal scaffold pore diameter is not a molecular diffusion-pore diameter.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Gel plus membrane delays release, but the enzyme condition determines opening",
+          "markdown": "Release groups were A: Ti+vancomycin; B: additional PCL; C: drug in gel without membrane; and D: gel plus membrane. A–D were immersed in lipase, while another control had the same composition as D but was immersed in PBS. Methods specify 5 mL, 0.2 mg/mL lipase, 37 °C and 80 rpm. One results passage instead gives 0.2 g/mL, an order-of-magnitude inconsistency; the unit consistent between methods and release results is used here. [Membrane degradation and release controls](ref:R01)\n\nElectron microscopy showed membrane disruption after 1 h with enzyme and near disappearance by 36 h; membranes remained visible after 10 weeks in PBS. Release was sampled from 1 h to 96 h with complete medium replacement and UV quantification. A released within 1 h, C finished around 36 h, B continued after an early burst, and D extended release to approximately 96 h. For D in PBS, release was below 1% at 96 h and approximately 10% over 10 weeks. Long retention and continuing drug supply therefore represent different states: an intact membrane in enzyme-free medium may also prevent a required dose reaching surrounding tissue.\n\nThe text reports approximately 18% at 12 h and 35% at 24 h for D, but plotted time points and curve positions do not fully match these numbers. Combining them to fit a precise rate would be inappropriate. Lipase and local drug concentrations were not measured simultaneously in infected tissue, so this enzyme-triggered curve cannot directly specify in vivo release time for a particular infection severity.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Infection follow-up supports local action, not release throughout follow-up",
+          "markdown": "The rabbit study included 48 animals, 12 per group. After inoculation with 0.1 mL Staphylococcus aureus at 1 × 10^7 CFU/mL, implants were placed during the same operation. Here A was drug-free Ti, unlike drug-loaded A in the release experiment. B, C and D retained the membrane, gel and gel-plus-membrane arrangements. The separate 4-week model-establishment observation does not mean every treated rabbit was infected for 4 weeks before implantation. [Animal methods and inflammatory endpoints](ref:R01)\n\nWhite cells, CRP and IL-6 were followed on postoperative days 1, 3 and 5 and weeks 1, 2, 4 and 8. C/D generally had lower inflammatory indicators than A/B, with white cells approaching preoperative levels at 8 weeks. A/B sections contained necrotic material surrounded by fibrous tissue, whereas C/D marrow appeared more normal. However, C and D did not differ significantly in the 8-week Norden radiographic score: adding membrane showed no clear superiority over gel on this endpoint. For A/B, the text combines “no significant difference” with P < 0.05, preventing a reliable inferred pairwise conclusion.\n\nA correction replaced an original Figure 5 photograph in which group B at 4 weeks duplicated the 2-week photograph. The inflammatory and tissue figure used here was unaffected. [Formal correction](ref:R03) These endpoints show that early local delivery can influence later infection, but tissue drug levels were not continuously measured. Approximately 96 h of in vitro supply cannot be extended into demonstrated 8-week release. The benefits of membrane and gel must be assessed separately for each endpoint.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Porous spacers turn sustained local treatment into separated drug pulses",
+          "markdown": "Myung and Kang alternately printed PCL shells and drug-loaded PF127 gel. PCL used a 200 µm nozzle, 90 °C, 250 kPa and 80–140 mm/min. Gel at 30% w/v used a 250 µm nozzle, 100 kPa and 60–120 mm/min in a 21 °C environment. Separate heads avoid imposing PCL melting temperature on the drug gel. Outlet diameter was 250 µm, total porous-layer opening area 0.392 mm², and drug-layer number determined planned pulse count. [Structure and release curves](ref:R02)\n\nRelease used 3 mL PBS at pH 7.4 and 37 °C, sampling and replacing 200 µL every 6 h. DOX and CYP were detected at 479 nm and 210 nm. With drug-layer number fixed at 4, increasing spacer thickness mainly extended interpulse intervals and also extended total release duration.\n\n| Spacer thickness | DOX interpulse interval | Time to 80% DOX release |\n|---|---|---|\n| 0.5 mm | No distinguishable interval | 6.7 ± 0.5 d |\n| 1.0 mm | 21.3 ± 3.2 h | 13.4 ± 1.8 d |\n| 2.0 mm | 69.8 ± 4.2 h | 21.7 ± 1.3 d |\n| 3.0 mm | 122.6 ± 4.6 h | 30.1 ± 0.8 d |\n\nThe 0.5 mm group was approximately linear before 80%, with R² = 0.987; this does not establish zero-order release throughout the complete profile. CYP also exhibited thickness-dependent intervals, but its assay cannot be replaced by the DOX curve alone. Reported CYP dispersion for the thickest spacer is inconsistent with the plotted error bars, so that text value should not be used to calculate a precise coefficient of variation.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "With equal pulse count and nominal dose, the shortest interval was not most effective",
+          "markdown": "Initial cell experiments compared DOX gel concentrations of 0.01%, 0.05% and 0.10% w/v at 120, 72, 24 and 0 h intervals. Medium was changed daily; devices were removed after 9 d, followed by 24 h recovery before live-cell and alamarBlue assays. At 0.01%, live-cell counts for 72, 24, 120 and 0 h were 42.28%, 43.29%, 50.54% and 66.08% of untreated counts. The no-gap device depleted earlier, allowing surviving cells to grow subsequently. The endpoint therefore incorporates both release timing and recovery after the last exposure. [Cell and animal comparisons](ref:R02)\n\nDual-drug devices were implanted when orthotopic 4T1-Luc2 tumors reached 75 mm³, with the outlet facing the tumor. Each nominal pulse contained DOX 5 mg/kg plus CYP 20 mg/kg, repeated 4 times at 120, 72, 24 or 0 h intervals. Tumor volumes at 42 d were respectively 524.41, 292.77, 420.99 and 627.95 mm³, versus 2014.69 mm³ untreated. The 72 h group performed best; shortening intervals did not monotonically improve outcomes.\n\nThe figure specifies n = 6 for tumor volume and n = 10 for survival, rather than one common animal count. The 72 h survival curve remains around 80% at 80 d, whereas methods summarize only 42 d follow-up; its longer observation window must be identified from the figure. A separate intratumoral-injection experiment with the same nominal schedule reached 374.15 mm³ at 42 d, but equal local drug AUC was not demonstrated. In vivo release was estimated from residual drug after device retrieval, not directly from intratumoral concentrations.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Resistance proteins and residual metastases explain the relevance of timing",
+          "markdown": "Myung and Kang assayed P-gp, BCRP and β-actin in tumors harvested at 42 d. Across untreated, 120, 72, 24 and 0 h groups, P-gp/β-actin was 0.28, 0.77, 1.54, 2.48 and 5.48; BCRP/β-actin was 0.29, 0.73, 1.46, 2.26 and 4.15. Immunostaining agreed directionally: P-gp-positive area was 35.95 ± 4.12% for 0 h and 7.58 ± 1.85% for 72 h. This associates poorer no-gap performance with drug-efflux-related protein expression, but inhibition or knockout experiments did not isolate these proteins as the cause. [Resistance proteins and tissue endpoints](ref:R02)\n\nBetter local control did not mean absence of residual lesions. Major excised organs in the 72 h group lacked clear metastatic luminescence, yet histology found 2.2 ± 1.0 surface lung foci and 1.2 ± 0.3% tumor area in lung sections. Corresponding 0 h values were 17.3 ± 1.9 foci and 32.0 ± 1.5%. The methods differ in sensitivity and sampled area; absence of visible luminescence cannot be rewritten as elimination of all metastases.\n\nThese experiments changed total delivery duration, intervals and recovery time after final exposure together, within a particular dual-drug dose and tumor model. Higher efflux-protein expression alongside poorer control supports retaining gaps between pulses. It neither establishes the same interval for every tissue nor demonstrates that continuous steady release necessarily induces resistance.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Ma et al. — Original Figure 2: pore loading and the thermoresponsive carrier.",
+          "interpretation": "A separates the printed titanium scaffold, drug gel and PCL membrane; B shows the object and three-dimensional imaging; C shows a concentration–temperature state diagram and gel photograph. Gelation lies between the upper and lower transition boundaries in C. One temperature alone does not establish retention at every concentration. The figure supports composite architecture, not a direct measurement of in vivo drug flux. [Structural basis](ref:R01)"
+        },
+        "F02": {
+          "caption": "Ma et al. — Original Figure 3: membrane coverage, enzymatic degradation and release.",
+          "interpretation": "A/B show meshes and rods; C compares 0.1, 0.2 and 0.3 g/mL membranes. D progresses from initial membrane through 1, 3, 24 and 36 h enzyme exposure and a 10-week PBS control. E plots cumulative release percentage against h: A is fastest, D the slowest enzyme-exposed curve, and PBS remains near zero. Flat mesh surfaces in C/D differ from drug-loaded rods in E. Green D points cannot automatically replace inconsistent textual time–percentage values. [Membrane and release](ref:R01)"
+        },
+        "F03": {
+          "caption": "Ma et al. — Original Figure 6: inflammatory trajectories and marrow tissue.",
+          "interpretation": "A/B/C show WBC, CRP and IL-6. Lines at left and bars at right display the same group trajectories; D at upper right contains 8-week sections. A/B show more necrotic and fibrous tissue, C/D more normal-looking marrow. Magnifications are 100× and 40×. This is not a drug-concentration figure; asterisks do not establish C as significantly worse than D at every time point. [Infection follow-up](ref:R01)"
+        },
+        "F04": {
+          "caption": "Myung et al. — Original Figure 2: spacer thickness changes dual-drug pulse spacing.",
+          "interpretation": "A shows porous, drug and outlet layers with 500 µm electron-micrograph scales; B shows devices with 0.5–3.0 mm spacers. C/E plot cumulative DOX/CYP release against d, whereas D/F plot intervals in h against thickness in mm. These time units must not be mixed. Thin spacers lack distinct plateaus; thicker spacers produce steps. Changing interval also changes the total period covered by treatment. [Dual-drug timing](ref:R02)"
+        },
+        "F05": {
+          "caption": "Myung et al. — Original Figure 5: intervals, tumors, survival and organ luminescence.",
+          "interpretation": "A diagrams equal doses and pulse counts; B follows tumor volume against d, C shows in vivo luminescence, D longer-term survival, and E/F excised organs and total flux. F uses a logarithmic axis: bar-height ratios are not cell-count ratios. The 72 h group performs best, but weak signals in E do not exclude microscopic histological lesions. [Animal endpoints](ref:R02)"
+        },
+        "F06": {
+          "caption": "Myung et al. — Original Figure 7: shorter gaps accompany higher efflux-related proteins.",
+          "interpretation": "A shows western blots; B/C normalize to β-actin. D contains H&E, red P-gp/BCRP and blue nuclei, with a 100 µm scale; E/F quantify positive area percentage. The no-gap group is strongest, while some comparisons between 120 and 72 h are marked ns. Band ratios and stained area have different dimensions, and neither directly measures membrane transport flux. [Protein evidence](ref:R02)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie ermöglichen gedruckte Implantate eine anhaltende lokale Arzneistofffreisetzung?",
+      "direction": "Implantation und lokale Verabreichung",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Tragendes Porengerüst, Arzneiträger und Außenmembran erfüllen verschiedene Aufgaben",
+          "markdown": "Ma et al. trennten gedruckten Titanstab, Vancomycin-Gel und PCL-Membran. Die Stäbe waren 2.5 mm dick und 20 mm lang, mit etwa 500 µm Sollporengröße. Verbundene Poren nahmen den Träger auf, ohne dass sich das Metallgerüst während der Freisetzung auflösen musste. Die Beladung erfolgte nach dem Druck. Geprüft wurde daher ein Druckgerüst mit nachträglicher Beschichtung, nicht die Stabilität von Vancomycin während des Metalldrucks. [Stab- und Beladungsmethoden](ref:R01)\n\nTräger war thermoresponsives mPEG750-b-PCL2500. Das Screening identifizierte 25% als geeignet für Gelbildung nahe Körpertemperatur; der folgende Herstellungsabsatz nennt jedoch 20% Polymermassenanteil. Daraus lässt sich keine eindeutig bestätigte Endrezeptur bilden. Das berichtete Vancomycin:Polymer-Massenverhältnis betrug 1:10 bei 2 mg pro Stab. Druckgestütztes Befüllen spricht für innere Beladung; eine Verteilung gemessener Einzelstabgehalte fehlt jedoch. Gleiche Sollbeladung ist kein Ergebnis zur Gehaltsgleichförmigkeit.\n\nDie Außenmembran entstand aus PCL/Dichlormethan. Bei 0.1 g/mL war die Abdeckung unvollständig, bei 0.2 g/mL vollständig und etwa 20 µm dünn, bei 0.3 g/mL dicker. Dickenwahl und Abbaubilder verwendeten flache Titannetze. Lokale Dicke, Defekthäufigkeit und Beladungstiefe gekrümmter poröser Stäbe wurden nicht punktweise kartiert. Die kleinste vollständig deckende Konzentration balanciert Barriereerhalt und enzymabhängige Öffnung. Der nominale Gerüstporendurchmesser ist kein molekularer Diffusionsporendurchmesser.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Gel und Membran verzögern die Freisetzung; das Enzymmilieu bestimmt die Öffnung",
+          "markdown": "Freisetzungsgruppen waren A: Ti+Vancomycin; B: zusätzlich PCL; C: Arzneistoff im Gel ohne Membran; D: Gel und Membran. A–D lagen in Lipase; eine weitere Kontrolle entsprach D, lag aber in PBS. Die Methoden nennen 5 mL, 0.2 mg/mL Lipase, 37 °C und 80 rpm. Ein Ergebnisabsatz nennt dagegen 0.2 g/mL, also eine widersprüchliche Größenordnung. Hier gilt die zwischen Methoden und Freisetzungsergebnissen konsistente Einheit. [Membranabbau und Freisetzungskontrollen](ref:R01)\n\nElektronenbilder zeigen Membranschäden nach 1 h mit Enzym und weitgehendes Verschwinden bis 36 h; in PBS blieb die Membran nach 10 Wochen sichtbar. Von 1 h bis 96 h wurde mit vollständigem Medienwechsel und UV-Quantifizierung gemessen. A setzte innerhalb 1 h frei, C endete etwa nach 36 h, B setzte nach frühem Burst weiter frei und D verlängerte die Abgabe auf etwa 96 h. D in PBS gab nach 96 h weniger als 1% und über 10 Wochen ungefähr 10% ab. Lange Retention und fortlaufende Versorgung sind damit verschiedene Zustände: Eine intakte Membran im enzymfreien Medium kann auch die erforderliche Dosis vom umliegenden Gewebe fernhalten.\n\nDer Text nennt für D etwa 18% nach 12 h und 35% nach 24 h; gezeichnete Zeitpunkte und Kurvenlagen stimmen damit nicht vollständig überein. Beide Angaben zu einer präzisen Ratenanpassung zu verbinden wäre unangemessen. Lipase- und lokale Wirkstoffkonzentrationen wurden im infizierten Gewebe nicht gleichzeitig gemessen. Die enzymabhängige Kurve bestimmt daher nicht direkt die In-vivo-Freisetzungsdauer bei einem bestimmten Infektionsgrad.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Infektionsbeobachtung belegt lokale Wirkung, nicht Abgabe während der gesamten Nachbeobachtung",
+          "markdown": "Die Kaninchenstudie umfasste 48 Tiere, 12 je Gruppe. Nach Inokulation von 0.1 mL Staphylococcus aureus mit 1 × 10^7 CFU/mL wurden die Implantate während derselben Operation eingesetzt. A war hier unbeladenes Ti, anders als das beladene A im Freisetzungsversuch. B, C und D behielten Membran, Gel beziehungsweise Gel plus Membran. Die separate Modellprüfung über 4 Wochen bedeutet nicht, dass sämtliche behandelten Tiere bereits 4 Wochen vor Implantation infiziert waren. [Tiermethoden und Entzündungsendpunkte](ref:R01)\n\nLeukozyten, CRP und IL-6 wurden postoperativ an Tagen 1, 3 und 5 sowie Wochen 1, 2, 4 und 8 verfolgt. C/D hatten insgesamt niedrigere Entzündungswerte als A/B; nach 8 Wochen näherten sich die Leukozyten dem präoperativen Niveau. A/B-Schnitte enthielten nekrotisches Material in fibrösem Gewebe, C/D eher normales Knochenmark. Zwischen C und D bestand jedoch kein signifikanter Unterschied im Norden-Röntgenscore nach 8 Wochen. Die Membran zeigte bei diesem Endpunkt keinen klaren Zusatznutzen gegenüber Gel. Für A/B kombiniert der Text „kein signifikanter Unterschied“ mit P < 0.05; daraus ist keine verlässliche paarweise Aussage abzuleiten.\n\nEine Korrektur ersetzte in Originalabbildung 5 ein Foto, das Gruppe B nach 4 Wochen als Wiederholung des Fotos nach 2 Wochen zeigte. Die hier verwendete Entzündungs- und Gewebeabbildung war davon nicht betroffen. [Formelle Korrektur](ref:R03) Frühe lokale Abgabe kann den späteren Infektionsverlauf beeinflussen, doch Gewebespiegel wurden nicht kontinuierlich bestimmt. Etwa 96 h In-vitro-Abgabe werden dadurch nicht zu nachgewiesener Freisetzung über 8 Wochen. Membran- und Gelnutzen sind endpunktspezifisch zu beurteilen.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Poröse Abstandsschichten erzeugen getrennte Pulse für anhaltende lokale Behandlung",
+          "markdown": "Myung und Kang druckten abwechselnd PCL-Hüllen und arzneihaltiges PF127-Gel. Für PCL galten 200 µm Düse, 90 °C, 250 kPa und 80–140 mm/min. Gel mit 30% w/v wurde durch 250 µm bei 100 kPa und 60–120 mm/min in einer Umgebung von 21 °C extrudiert. Getrennte Köpfe ersparen dem Arzneigel die PCL-Schmelztemperatur. Der Auslassdurchmesser betrug 250 µm, die gesamte offene Fläche der porösen Schicht 0.392 mm²; die Arzneischichtzahl bestimmte die geplante Pulszahl. [Struktur und Freisetzungskurven](ref:R02)\n\nGemessen wurde in 3 mL PBS, pH 7.4, bei 37 °C, mit Entnahme und Ersatz von 200 µL alle 6 h. DOX und CYP wurden bei 479 nm beziehungsweise 210 nm erfasst. Bei festgelegten 4 Arzneischichten verlängerte eine dickere Abstandsschicht hauptsächlich die Pulsabstände und zugleich die Gesamtabgabedauer.\n\n| Abstandsschicht | DOX-Pulsabstand | Zeit bis 80% DOX-Abgabe |\n|---|---|---|\n| 0.5 mm | Kein unterscheidbarer Abstand | 6.7 ± 0.5 d |\n| 1.0 mm | 21.3 ± 3.2 h | 13.4 ± 1.8 d |\n| 2.0 mm | 69.8 ± 4.2 h | 21.7 ± 1.3 d |\n| 3.0 mm | 122.6 ± 4.6 h | 30.1 ± 0.8 d |\n\nDie 0.5-mm-Gruppe war vor 80% annähernd linear, R² = 0.987; das belegt keine Freisetzung nullter Ordnung über das gesamte Profil. CYP zeigte ebenfalls dickenabhängige Abstände, doch seine Messung wird nicht durch die DOX-Kurve ersetzt. Die im Text angegebene CYP-Streuung der dicksten Schicht stimmt nicht mit den Fehlerbalken überein und sollte nicht zur Berechnung eines präzisen Variationskoeffizienten dienen.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Gleiche Pulszahl und Solldosis machten den kürzesten Abstand nicht am wirksamsten",
+          "markdown": "Zellversuche verglichen zunächst DOX-Gelkonzentrationen von 0.01%, 0.05% und 0.10% w/v bei 120, 72, 24 und 0 h Abstand. Das Medium wurde täglich gewechselt; nach 9 d wurden die Geräte entfernt, danach folgten 24 h Erholung vor Lebendzellzählung und alamarBlue. Bei 0.01% lagen die Zellzahlen für 72, 24, 120 und 0 h bei 42.28%, 43.29%, 50.54% und 66.08% der unbehandelten Gruppe. Ohne Abstand war der Vorrat früher erschöpft; überlebende Zellen konnten anschließend wachsen. Der Endpunkt enthält daher Abgabezeitplan und Erholungsfenster nach letzter Exposition. [Zell- und Tiervergleiche](ref:R02)\n\nDie Zweistoffgeräte wurden bei orthotopen 4T1-Luc2-Tumoren von 75 mm³ mit Auslass zum Tumor implantiert. Jeder Sollpuls enthielt DOX 5 mg/kg plus CYP 20 mg/kg, insgesamt 4 Abgaben mit 120, 72, 24 oder 0 h Abstand. Die Tumorvolumina nach 42 d waren entsprechend 524.41, 292.77, 420.99 und 627.95 mm³, unbehandelt 2014.69 mm³. Am besten war 72 h; kürzere Abstände verbesserten die Ergebnisse nicht monoton.\n\nDie Abbildung nennt n = 6 für Tumorvolumen und n = 10 für Überleben, keine einheitliche Tierzahl. Die 72-h-Kurve zeigt nach 80 d noch etwa 80% Überleben, während die Methoden nur 42 d Nachbeobachtung zusammenfassen; das längere Fenster ist deshalb anhand der Abbildung auszuweisen. Ein separates intratumorales Injektionsexperiment mit gleichem Sollplan erreichte nach 42 d 374.15 mm³. Gleiche lokale Arzneistoff-AUC wurde dabei nicht belegt. In-vivo-Abgabe wurde aus Restgehalten entnommener Geräte geschätzt, nicht unmittelbar aus Tumorkonzentrationen.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Resistenzproteine und verbleibende Metastasen erklären die Bedeutung der Zeitstruktur",
+          "markdown": "Myung und Kang untersuchten P-gp, BCRP und β-actin in nach 42 d entnommenen Tumoren. Für unbehandelt, 120, 72, 24 und 0 h betrug P-gp/β-actin 0.28, 0.77, 1.54, 2.48 und 5.48; BCRP/β-actin lag bei 0.29, 0.73, 1.46, 2.26 und 4.15. Immunfärbung zeigte dieselbe Richtung: P-gp-positive Fläche betrug bei 0 h 35.95 ± 4.12%, bei 72 h 7.58 ± 1.85%. Dies verbindet die schwächere Wirkung ohne Abstand mit Effluxproteinexpression; Hemm- oder Knockoutversuche isolierten diese Proteine jedoch nicht als Ursache. [Resistenzproteine und Gewebeendpunkte](ref:R02)\n\nBessere lokale Kontrolle bedeutete keine vollständige Läsionsfreiheit. Entnommene Hauptorgane der 72-h-Gruppe zeigten kein klares Metastasenleuchten, histologisch fanden sich aber 2.2 ± 1.0 oberflächliche Lungenherde und 1.2 ± 0.3% Tumorfläche in Lungenschnitten. Bei 0 h waren es 17.3 ± 1.9 Herde und 32.0 ± 1.5%. Empfindlichkeit und untersuchter Bereich unterscheiden sich; fehlendes sichtbares Leuchten bedeutet nicht Beseitigung sämtlicher Metastasen.\n\nDie Versuche veränderten Gesamtabgabedauer, Abstände und Erholungszeit nach letzter Exposition gemeinsam, bei einer bestimmten Zweistoffdosis in einem bestimmten Tumormodell. Höhere Effluxproteinexpression bei schlechterer Kontrolle unterstützt die Erklärung zugunsten von Pulspausen. Das legt weder denselben Abstand für jedes Gewebe fest noch beweist es, dass kontinuierlich gleichmäßige Abgabe zwangsläufig Resistenz auslöst.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Ma et al. — Originalabbildung 2: Porenbeladung und thermoresponsiver Träger.",
+          "interpretation": "A trennt gedrucktes Titangerüst, Arzneigel und PCL-Membran; B zeigt Objekt und dreidimensionale Bildgebung, C ein Konzentrations-Temperatur-Zustandsdiagramm und Gelfoto. Der Gelbereich liegt in C zwischen oberer und unterer Übergangsgrenze. Eine Temperatur allein belegt keine Retention bei jeder Konzentration. Die Grafik unterstützt die Verbundarchitektur, misst aber keinen In-vivo-Arzneifluss. [Strukturelle Grundlage](ref:R01)"
+        },
+        "F02": {
+          "caption": "Ma et al. — Originalabbildung 3: Membrandeckung, Enzymabbau und Freisetzung.",
+          "interpretation": "A/B zeigen Netze und Stäbe, C Membranen aus 0.1, 0.2 und 0.3 g/mL. D folgt der Ausgangsmembran über 1, 3, 24 und 36 h Enzymkontakt sowie einer PBS-Kontrolle nach 10 Wochen. E trägt kumulative Freisetzungsprozente gegen h auf: A ist am schnellsten, D die langsamste Enzymkurve, PBS bleibt nahe null. Flache Netze in C/D sind von beladenen Stäben in E zu unterscheiden. Grüne D-Punkte ersetzen nicht automatisch widersprüchliche Zeit-Prozent-Angaben im Text. [Membran und Abgabe](ref:R01)"
+        },
+        "F03": {
+          "caption": "Ma et al. — Originalabbildung 6: Entzündungsverlauf und Knochenmark.",
+          "interpretation": "A/B/C zeigen WBC, CRP und IL-6. Linien links und Balken rechts bilden dieselben Gruppenverläufe ab; D oben rechts enthält Schnitte nach 8 Wochen. A/B zeigen mehr Nekrose und Fasergewebe, C/D eher normales Mark. Die Vergrößerungen sind 100× und 40×. Es ist keine Wirkstoffkonzentrationsgrafik; Sterne belegen nicht für jeden Zeitpunkt ein signifikant schlechteres C gegenüber D. [Infektionsbeobachtung](ref:R01)"
+        },
+        "F04": {
+          "caption": "Myung et al. — Originalabbildung 2: Schichtdicke verändert Zweistoff-Pulsabstände.",
+          "interpretation": "A zeigt poröse, Arznei- und Auslassschichten mit 500-µm-Elektronenbildmaßstäben, B Geräte mit 0.5–3.0 mm Abstandsschichten. C/E zeigen kumulative DOX/CYP-Abgabe gegen d; D/F dagegen Abstände in h gegen Dicke in mm. Diese Zeiteinheiten dürfen nicht vermischt werden. Dünne Schichten zeigen keine klaren Plateaus, dickere Stufen. Abstandänderung verändert zugleich die gesamte durch Therapie abgedeckte Zeit. [Zweistoff-Zeitverlauf](ref:R02)"
+        },
+        "F05": {
+          "caption": "Myung et al. — Originalabbildung 5: Abstände, Tumoren, Überleben und Organlumineszenz.",
+          "interpretation": "A zeigt gleiche Dosen und Pulszahlen; B Tumorvolumen gegen d, C In-vivo-Lumineszenz, D längeres Überleben und E/F entnommene Organe mit Gesamtlichtfluss. F hat eine logarithmische Achse: Balkenhöhenverhältnisse sind keine Zellzahlverhältnisse. Die 72-h-Gruppe ist am besten, doch schwache Signale in E schließen mikroskopische histologische Läsionen nicht aus. [Tierendpunkte](ref:R02)"
+        },
+        "F06": {
+          "caption": "Myung et al. — Originalabbildung 7: Kürzere Pausen begleiten höhere Effluxproteine.",
+          "interpretation": "A zeigt Western Blots; B/C normalisieren gegen β-actin. D enthält H&E, rotes P-gp/BCRP und blaue Kerne mit 100 µm Maßstab; E/F quantifizieren positive Flächenprozente. Die Gruppe ohne Pause ist am stärksten; manche Vergleiche zwischen 120 und 72 h sind ns. Bandenverhältnisse und gefärbte Fläche besitzen verschiedene Dimensionen, beide messen keinen direkten Membrantransportfluss. [Proteinbefunde](ref:R02)"
+        }
+      }
+    }
+  }
+}

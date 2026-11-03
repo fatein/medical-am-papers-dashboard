@@ -1,0 +1,340 @@
+{
+  "schema_version": 2,
+  "question_id": "P1-011",
+  "p": "P1",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_sd_c3689c0eea998c825b2e",
+    "doc_9d9f940eeb38b0787c52",
+    "doc_e01315a507370d791746",
+    "doc_510e43967f13277b33bf"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Surface morphology, roughness, and corrosion resistance of dental implants produced by additive manufacturing",
+      "publisher": "Journal of Materials Research and Technology",
+      "year": 2022,
+      "url": "https://doi.org/10.1016/j.jmrt.2022.10.114",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Effect of processing on microstructure, mechanical properties, corrosion and biocompatibility of additive manufacturing Ti-6Al-4V orthopaedic implants",
+      "publisher": "Scientific Reports",
+      "year": 2025,
+      "url": "https://doi.org/10.1038/s41598-025-98349-6",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Structural influence on titanium ion dissolution in 3D-printed Ti6Al4V orthopedic implants",
+      "publisher": "Scientific Reports",
+      "year": 2025,
+      "url": "https://doi.org/10.1038/s41598-025-21129-9",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Influence of 3D-Printed PEEK on the Tribo-Corrosion Performance of Ti6Al4V Biomedical Alloy",
+      "publisher": "Lubricants",
+      "year": 2025,
+      "url": "https://doi.org/10.3390/lubricants13070283",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R02",
+      "original_label": "Fig. 8",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12019387.1/41598_2025_98349_Fig8_HTML.jpg?md5=614cf3375a9cb821fee361ea2295eeee",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12019387/#Fig8",
+      "license": "CC BY-NC-ND 4.0",
+      "asset_path": "assets/academic_figures/P1-011/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R02",
+      "original_label": "Fig. 9",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12019387.1/41598_2025_98349_Fig9_HTML.jpg?md5=f5e9aeb5fb7a9e5136405298840f7564",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12019387/#Fig9",
+      "license": "CC BY-NC-ND 4.0",
+      "asset_path": "assets/academic_figures/P1-011/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R03",
+      "original_label": "Fig. 6",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12550016.1/41598_2025_21129_Fig6_HTML.jpg?md5=044df6debd562f9601bd5a8f56c252ab",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12550016/#Fig6",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-011/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R04",
+      "original_label": "Figure 4",
+      "image_url": "",
+      "source_url": "https://mdpi-res.com/d_attachment/lubricants/lubricants-13-00283/article_deploy/lubricants-13-00283.pdf",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-011/F04.png"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R04",
+      "original_label": "Figure 5",
+      "image_url": "",
+      "source_url": "https://mdpi-res.com/d_attachment/lubricants/lubricants-13-00283/article_deploy/lubricants-13-00283.pdf",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-011/F05.png"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R04",
+      "original_label": "Figure 6",
+      "image_url": "",
+      "source_url": "https://mdpi-res.com/d_attachment/lubricants/lubricants-13-00283/article_deploy/lubricants-13-00283.pdf",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-011/F06.png"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "表面状态如何影响腐蚀、磨损和材料稳定性？",
+      "direction": "长期可靠性",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "同一表面同时参与钝化、释放与接触磨损",
+          "markdown": "打印钛合金的“表面状态”包括未熔合颗粒、峰谷形貌、表面下的相组织、氧化膜以及接触过程中形成的转移层。这些因素对应不同的测量对象：牙科酸蚀研究比较加工表面的电化学响应，髋植入物研究比较热历史，晶格研究测量浸泡液中的钛，PEEK 配副研究则让机械滑动持续改变金属表面。[酸蚀研究](ref:R01) [热处理研究](ref:R02) [结构与释放研究](ref:R03) [摩擦腐蚀研究](ref:R04)\n\n| 测量 | 直接观察的对象 | 解释时保留的条件 |\n|---|---|---|\n| 开路电位 OCP | 无外加电流时的混合电位及其变化 | 参比电极、电解液与稳定时间 |\n| 极化与阻抗 | 外加扰动下的电流响应及拟合参数 | 扫描区间、频率、等效电路与面积归一化 |\n| 浸泡液元素分析 | 给定液体体积内累积的金属元素 | 浸泡时间、清洗、颗粒与溶解物的区分 |\n| 摩擦系数与磨损量 | 接触阻力及材料损失 | 配副、载荷、行程与润滑介质 |\n\nOCP 更正可以伴随腐蚀电流更高；浸泡液浓度也可以因暴露面积扩大而升高，而不意味着单位面积反应速度同比增加。下面分别沿着这些实际实验条件讨论表面改变的作用。",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "酸蚀去颗粒后，平均粗糙度与深谷并不总是同步改善",
+          "markdown": "牙科研究把机加工 Ti–6Al–4V 与 SLM 表面进行比较，并考察 HF 酸蚀持续时间。原文表格中的 Ra 从未处理 SLM 的 14.47±1.14 µm，降至 HF 处理 10、20、30 min 后的 11.18±1.39、9.83±1.35、10.47±0.92 µm；机加工对照为 0.145±0.008 µm。20 与 30 min 的粗糙度差异没有统计学显著性，不能把数值最低的处理时间视为已确定的唯一最优值。较长处理还会形成更深的谷：30 min 的峰谷高度 PV 为 145.11±66.32 µm，未处理为 110.65±12.44 µm。平均值降低与局部几何缺口增大可以同时发生。[形貌与粗糙度表](ref:R01)\n\n该研究在 0.9% NaCl、含或不含 200 ppm 氟的条件下测量电化学行为，并设置酸性环境。未熔合颗粒较多的表面表现较差；HF 去除颗粒后腐蚀抵抗改善。尤其有解释力的是另一组比较：把 SLM 和机加工材料都砂磨至同一处理级别后，两者在含氟和不含氟盐溶液中的耐蚀表现接近。由此可见，原始打印表面的差异不能全部归因于“打印合金本身”。不过，砂磨可达表面的结果没有覆盖内部晶格的清洗盲区；酸蚀后的深谷也没有在这项研究中接受循环接触磨损试验。[电化学比较](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "s3",
+          "title": "热处理改变相组织，却不能只按电位高低排列耐蚀性",
+          "markdown": "García-Hernández 等采用相同 Ti–6Al–4V 粉末比较不同成形与后处理。S-Ref 虽称为原始态，实际已在 650 °C 去应力 2 h；同一设备成形的 S-HT-a 再经 850 °C、4 h 热处理。E-HIP 则同时改变成形技术和后处理，采用 EBM 与 920 °C、120 MPa、2.5 h 的热等静压。因此，S-Ref 对 S-HT-a 更适合讨论热处理效应，而 E-HIP 不能被当作只改变压力的单因素实验。[分组与工艺](ref:R02)\n\n在 PBS 中，OCP 随浸泡趋于正向移动，作者将其关联于保护膜形成。然而 S-Ref 的电位最正，并没有最低的腐蚀电流。原文表 4 中，S-Ref、S-HT-a、锻造对照的腐蚀电流密度分别为 2.7×10^-7、4.9×10^-8、4.0×10^-8 A/cm²。这组结果把“较正的混合电位”和“较低的反应电流”清楚分开。热处理使细针状组织转为 α+β 层片组织，伴随较低电流；但本研究同时涉及相组成、组织尺度及缺陷变化，不能把改善完全分配给某一种相。[极化结果](ref:R02)\n\n阻抗拟合也不应被压缩成一个跨试验排名。原文的双时间常数电路分别拟合膜电阻与电荷转移电阻；EIS 拟合与极化外推得到的电阻并非同一个直接测量量，且不同拟合分量的排序不完全一致。这里以同设备热处理前后的电流变化为主要证据，不把摘要中的最高电阻写成整枚植入物的耐久保证。研究另做的 HA 涂层细胞实验没有测量涂层磨损后的再钝化，不能补上这一接触服役环节。[阻抗与涂层试验](ref:R02)",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "晶格释放量同时受到实际面积、初始清洗和介质影响",
+          "markdown": "Seo 等制造实心、混合与晶格试样，比较超纯水与 Hartmann 溶液中的浸泡释放。设计比表面积不能直接代表制造后状态：混合结构由设计的 1.71 增至估计的 5.29 cm²/g，晶格由 19 增至 32 cm²/g；作者将这一差异关联于部分熔合粉末。每组进入的是固定体积液体，测得浓度并未自动消除接触面积差异。[制造结构与释放实验](ref:R03)\n\n原图 6 的超纯水结果尤其能揭示初始残留的作用：晶格首次 7 d 为 0.81 µg/L，清洗后的下一段 7 d 为 0.41 µg/L；混合结构由 1.53 降至 0.41 µg/L。清洗前并不存在“越多孔释放必然越高”的整齐排序。Hartmann 溶液图中则显示晶格高于混合与实心。不过，方法部分清楚描述的是超纯水的重复清洗浸泡，而 Hartmann 图也标有清洗前后两组，具体重复流程交代不足，因此不把这部分差值归因于已充分控制的清洗效应。[原图中的实测浓度](ref:R03)\n\n该文另外给出的 Hartmann 条件下 82.8、90.5、128 µg/L，属于实心、混合、晶格的模拟结果，不能替换实验柱状图。模拟采用理想几何与规定介质，没有实测的残留粉末状态。EBSD 报告的 β 相实际分数为 1.1%、1.6%、2.2%；摘要中的 145%–200% 是相对实心值的比例表达，绝非 β 相占整个材料的分数。由于面积与相组织共同变化、研究没有直接电化学测试，α/β 微电偶作用仍是解释机制，而不是被单独操控验证的原因。[模拟与 EBSD](ref:R03)\n\n元素测量对浸泡液加酸后进行，未给出足以把颗粒与溶解物彻底分开的流程。故其数据更适合称为介质中的钛释放读数，不宜直接写成患者血钛浓度。文中的临床照片来自因肿瘤复发而在 18 个月接受翻修的病例，局部金属沉积的观察不等于腐蚀导致翻修。[检测方法与病例来源](ref:R03)",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "PEEK 转移层形成时，较低电化学读数与磨痕并存",
+          "markdown": "Federl 与 Al-Rjoub 的配副是从 FFF 打印块中加工出的 PEEK 销与磨抛后的 Ti6Al4V 圆盘，并非两个未经处理的打印表面。试验在室温 PBS 中进行，载荷 48 N、约 3 MPa，往复频率 1 Hz、行程 6 mm、滑动 2 h；滑动前后各静置 30 min。这个设计能够观察接触破膜与后续表面恢复的时间过程。[试样与摩擦条件](ref:R04)\n\nOCP 曲线在开始滑动时突然负移，随后逐渐恢复；作者把恢复与 PEEK 转移、黏附形成的屏障关联起来。对应摩擦系数升至约 0.19 后较稳定。原图横坐标的 9000 s 是从静置开始计算的总时间，包含前段 1800 s 与滑动 7200 s，不能读成滑动持续了 9000 s。载荷移除后的电位回升与再钝化相符，但这条曲线没有单独测出氧化层厚度。[时间曲线](ref:R04)\n\n原文表 3 给出的腐蚀电流密度由静态的 15.59±0.03 降至滑动时的 13.27±0.04 µA/cm²；同时极化电阻却由 69477±3100 降至 67866±310 Ω。不能把所有电化学量都描述为同步改善。由电流换算的腐蚀速率从 0.059±0.004 降至 0.051±0.005 mm/year，是指定模型下的换算值，不是一年实际磨损测量。SEM 中仍可见沟槽与附着物，因此这组结果支持“接触改变了表面保护与损伤的组合”，而不是滑动消除了材料损失。[极化与显微结果](ref:R04)",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "磨损量必须落实到发生材料损失的那一侧",
+          "markdown": "同一 PEEK—钛合金实验用质量损失换算 PEEK 销的比磨损率，结果为 (8.1±1.2)×10^-4 mm³/(N·m)。钛圆盘的磨损量未能从磨痕轮廓中定量得到，因此不能把 PEEK 的数值写成金属的磨损率，也不能把未能量出金属体积损失写成“零磨损”。原图中的定向沟槽支持磨粒磨损，局部附着物支持材料转移与黏着过程；两种机制可以与部分区域的保护性覆盖同时存在。[磨痕及损失测量](ref:R04)\n\n原图附带的 EDS 表主要反映所选位置的钛合金元素、氧和少量其他元素，并不是整个转移层的厚度或覆盖率分布。论文用形貌和电位变化解释 PEEK 屏障作用，但没有把屏障形成与基体再钝化的贡献分别定量。该实验也没有设置注塑 PEEK 或 UHMWPE 的同期配副，因此可比较的是本实验的滑动与非滑动状态，不能从中推出打印 PEEK 相对于这些材料的耐磨优越性。试验结束后仍保留的附着碎屑，其释放数量、粒径与细胞反应不在这项磨损测量之内。[磨损机制与实验分组](ref:R04)",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "García-Hernández et al.：不同热历史试样的开路电位。",
+          "interpretation": "a 面板横轴为浸泡时间，纵轴为电位，S-Ref 最终最接近零；b 面板把负电位用从零向上的反向数轴表示，较高的柱并不代表更正的电位。曲线记录至约 5400 s，显示膜形成过程中的电位变化。结合腐蚀电流表，S-Ref 电位较正而电流较高，说明该图本身不能排列腐蚀速率。[原始实验](ref:R02)"
+        },
+        "F02": {
+          "caption": "García-Hernández et al.：极化曲线及同一试样不同截面的比较。",
+          "interpretation": "主图比较各制造与热处理状态，插图比较 S-Ref 的 x-y 与 x-z 截面；阳极支趋于竖直，表示所扫范围内的钝化行为。原图主图与插图均标 A/cm²，但电流量级与表 4 不一致，因此本报告不从主图横轴读取绝对电流，而使用表格值。截面差异也仅是 S-Ref 的局部比较，不能推广为所有工艺统一的方向效应。[曲线及参数表](ref:R02)"
+        },
+        "F03": {
+          "caption": "Seo et al.：设计与估计比表面积，以及两种介质中的实测释放。",
+          "interpretation": "a、b 分别比较比表面积与比体积，蓝方块为设计值、红圆点为估计值；晶格的制造偏差最大。c 的纵轴有断轴，不能直接比较柱高比例；其清洗前后两组均对应 7 d。d 使用另一套浓度范围，Hartmann 条件下晶格高于实心。图中实测浓度不同于正文模拟值；Hartmann 清洗流程的描述不充分，也限制了前后差值的机制解释。[原图与方法](ref:R03)"
+        },
+        "F04": {
+          "caption": "Federl and Al-Rjoub：静态和滑动条件下的极化与表面形貌。",
+          "interpretation": "a 的电位为横轴、电流密度为对数纵轴，红线为滑动、黑线为静态；曲线谷底是净电流接近零的位置，不可直接把谷底读数当作 Tafel 外推腐蚀电流。b、c 保留 200 µm 标尺，滑动后出现明显沟槽和作者标注的附着 PEEK。b 图箭头还标有 Corrosion，而正文称未见局部腐蚀损伤，因此这里只比较实际可见形貌，不声称静态表面完全无腐蚀。[原图与拟合参数](ref:R04)"
+        },
+        "F05": {
+          "caption": "Federl and Al-Rjoub：一次往复滑动试验中的电位与摩擦系数。",
+          "interpretation": "a、b 共用从静置开始的时间轴。约 1800 s 开始滑动，OCP 负移、摩擦系数上升；约 9000 s 停止滑动，摩擦系数回到零。后段电位恢复发生在滑动尚未结束时，说明表面响应并非只有持续破膜一个过程。曲线提供时间关联，但没有独立量出转移层覆盖率，不能据其恢复幅度计算保护膜厚度。[时序实验](ref:R04)"
+        },
+        "F06": {
+          "caption": "Federl and Al-Rjoub：配副磨痕与局部元素组成。",
+          "interpretation": "上部展示 PEEK 销和钛圆盘，6 mm 箭头标示往复轨迹；下部放大钛磨痕并给出所选区 EDS 质量百分比。顺滑动方向的沟槽和局部碎屑支持磨粒与黏着共同作用。元素表主要来自金属区域，不能代替整个聚合物转移层的定量成分图。文中可定量的比磨损率属于 PEEK 销，而非画面更大的钛圆盘。[磨损测量](ref:R04)"
+        }
+      }
+    },
+    "en": {
+      "title": "How does surface condition affect corrosion, wear and material stability?",
+      "direction": "Long-term reliability",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "One surface participates in passivation, release and contact wear",
+          "markdown": "The surface condition of printed titanium alloys includes incompletely fused particles, peaks and valleys, subsurface phase structure, oxide films and transfer layers formed during contact. These features correspond to different experimental observables: a dental etching study compares electrochemical responses of processed surfaces, a hip-implant study compares thermal histories, a lattice study measures titanium in immersion media, and a PEEK counterface study allows sliding to change the metal surface continuously. [Etching study](ref:R01) [Heat-treatment study](ref:R02) [Structure and release study](ref:R03) [Tribocorrosion study](ref:R04)\n\n| Measurement | Direct observable | Conditions retained in interpretation |\n|---|---|---|\n| Open-circuit potential, OCP | Mixed potential and its evolution without externally imposed current | Reference electrode, electrolyte and stabilization time |\n| Polarization and impedance | Current response to imposed perturbations and fitted parameters | Scan range, frequency, equivalent circuit and area normalization |\n| Elemental analysis of immersion medium | Accumulated metal element in a defined liquid volume | Exposure duration, washing and distinction between particles and dissolved species |\n| Friction coefficient and wear | Contact resistance and material loss | Counterface, load, stroke and lubricant |\n\nA more positive OCP can coexist with a higher corrosion current. Immersion concentration can also increase because the exposed area increases, without a proportional increase in reaction rate per unit area. The following sections examine surface changes under the actual conditions of these experiments.",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "After particle removal, mean roughness and deep valleys can change differently",
+          "markdown": "The dental study compared machined Ti–6Al–4V with SLM surfaces and varied the duration of HF etching. Tabulated Ra decreased from 14.47±1.14 µm for untreated SLM to 11.18±1.39, 9.83±1.35 and 10.47±0.92 µm after 10, 20 and 30 min, respectively; the machined control measured 0.145±0.008 µm. Roughness did not differ statistically significantly between 20 and 30 min, so the numerically lowest treatment time is not an established unique optimum. Longer etching also produced deeper valleys: peak-to-valley height PV was 145.11±66.32 µm at 30 min versus 110.65±12.44 µm without treatment. A lower mean and a larger local geometric notch can therefore coexist. [Morphology and roughness table](ref:R01)\n\nElectrochemical behavior was measured in 0.9% NaCl with or without 200 ppm fluoride, including acidic conditions. Surfaces retaining more incompletely fused particles performed worse, whereas HF-mediated particle removal improved corrosion resistance. A particularly informative comparison ground both SLM and machined materials to the same preparation grade: their corrosion resistance then became similar in saline with and without fluoride. Differences between the initial surfaces therefore cannot all be attributed to the printed alloy itself. Grinding accessible surfaces, however, does not examine cleaning blind spots inside lattices; the deeper valleys after etching were not subjected to cyclic contact-wear testing in this study. [Electrochemical comparison](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "s3",
+          "title": "Heat treatment changes phase structure, but potential alone does not rank corrosion resistance",
+          "markdown": "García-Hernández et al. compared manufacturing and post-processing routes using the same Ti–6Al–4V powder. Although described as as-built, S-Ref had already received stress relief at 650 °C for 2 h; S-HT-a, produced on the same machine, additionally underwent 850 °C treatment for 4 h. E-HIP changed both the manufacturing route and post-treatment, combining EBM with hot isostatic pressing at 920 °C, 120 MPa for 2.5 h. S-Ref versus S-HT-a therefore provides the more focused heat-treatment comparison; E-HIP is not an experiment that changes pressure alone. [Groups and processing](ref:R02)\n\nOCP shifted positively during immersion in PBS, which the authors associated with protective-film formation. Yet S-Ref had the most positive potential without having the lowest corrosion current. In the original Table 4, corrosion current densities for S-Ref, S-HT-a and wrought material were 2.7×10^-7, 4.9×10^-8 and 4.0×10^-8 A/cm², respectively. These results distinguish a more positive mixed potential from a lower reaction current. Heat treatment transformed fine acicular structure into α+β lamellae and was accompanied by lower current. Since phase constitution, structural scale and defects also vary, the improvement cannot be assigned entirely to one phase. [Polarization results](ref:R02)\n\nImpedance fitting should likewise not be reduced to a single ranking across tests. The two-time-constant circuit separately fits film resistance and charge-transfer resistance; EIS-derived resistance and polarization extrapolation are not the same direct measurement, and the fitted components do not all give the same ordering. The current change before and after heat treatment on the same manufacturing platform is used here as the main evidence, rather than treating the highest resistance quoted in the abstract as a durability guarantee for the entire implant. Separate cell experiments with HA coatings did not measure repassivation after coating wear and therefore do not address this contact-service stage. [Impedance and coating experiments](ref:R02)",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Lattice release depends on actual area, initial washing and medium",
+          "markdown": "Seo et al. fabricated solid, hybrid and lattice specimens and compared release in ultrapure water and Hartmann’s solution. Designed specific surface area did not represent the manufactured state directly: the hybrid structure increased from a designed 1.71 to an estimated 5.29 cm²/g, and the lattice from 19 to 32 cm²/g. The authors associated this difference with partially fused powder. Specimens were exposed to fixed liquid volumes, so concentration measurements did not automatically remove differences in contact area. [Manufactured structures and release experiments](ref:R03)\n\nThe ultrapure-water results in original Fig. 6 are particularly informative about initial residues. Lattice concentration was 0.81 µg/L during the first 7 d and 0.41 µg/L during the subsequent 7 d after washing; the hybrid decreased from 1.53 to 0.41 µg/L. Before washing there was no orderly rule that greater porosity always meant greater release. The Hartmann panel instead shows higher values for lattice than hybrid and solid specimens. However, the methods clearly describe repeated washing and immersion for ultrapure water, whereas the Hartmann panel also labels before- and after-wash groups without comparably clear procedural detail. Its difference is therefore not attributed here to a fully controlled washing effect. [Measured concentrations in the original figure](ref:R03)\n\nThe separately reported Hartmann values of 82.8, 90.5 and 128 µg/L are simulations for solid, hybrid and lattice structures, not substitutes for the experimental bars. The simulations use ideal geometry and a prescribed medium, without the measured residual-powder condition. Actual β-phase fractions from EBSD were 1.1%, 1.6% and 2.2%. The abstract’s 145%–200% expresses proportions relative to the solid value, not fractions of the entire material occupied by β phase. Because area and microstructure vary together and no direct electrochemical testing was performed, α/β microgalvanic activity remains a mechanistic interpretation rather than an independently manipulated cause. [Simulations and EBSD](ref:R03)\n\nElemental measurements used acidified immersion liquid, without a procedure sufficient to separate particles completely from dissolved species. The data are therefore better described as titanium-release readings in the medium than as patient blood titanium concentrations. The clinical photograph came from revision at 18 months for tumor recurrence; observing local metal deposition does not mean corrosion caused that revision. [Analytical method and clinical case](ref:R03)",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "A PEEK transfer layer can coexist with lower electrochemical readings and visible wear tracks",
+          "markdown": "Federl and Al-Rjoub paired PEEK pins machined from FFF-printed blocks with prepared Ti6Al4V disks, rather than testing two untreated printed surfaces. Tests used room-temperature PBS, a 48 N load corresponding to approximately 3 MPa, 1 Hz reciprocation, a 6 mm stroke and 2 h of sliding, with 30 min at rest before and after sliding. This arrangement resolves the sequence of film disruption and subsequent surface recovery. [Specimens and sliding conditions](ref:R04)\n\nOCP shifted abruptly negative when sliding began and then gradually recovered; the authors associated this recovery with a barrier formed by transferred and adhered PEEK. The corresponding friction coefficient rose to approximately 0.19 and then remained relatively stable. The original plot’s 9000 s denotes total time from the beginning of the rest period, comprising 1800 s before sliding and 7200 s of sliding; it is not 9000 s of sliding. Potential recovery after unloading is consistent with repassivation, but the trace does not independently measure oxide-film thickness. [Time traces](ref:R04)\n\nOriginal Table 3 reports corrosion current density decreasing from 15.59±0.03 without sliding to 13.27±0.04 µA/cm² during sliding, while polarization resistance decreased from 69477±3100 to 67866±310 Ω. These quantities should not all be described as improving together. Corrosion rates converted from current, 0.059±0.004 and 0.051±0.005 mm/year, are model-dependent conversions rather than measurements of actual wear over a year. Grooves and adhered material remained visible in SEM. The results therefore support contact-induced changes in the combination of protection and damage, rather than elimination of material loss by sliding. [Polarization and microscopy](ref:R04)",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Wear must be assigned to the component that actually loses material",
+          "markdown": "The same PEEK–titanium experiment converted mass loss into a PEEK-pin specific wear rate of (8.1±1.2)×10^-4 mm³/(N·m). Titanium-disk wear could not be quantified from track profiles. The PEEK value therefore cannot be presented as the metal’s wear rate, nor can inability to quantify metal volume loss be called zero wear. Directional grooves in the original image support abrasive wear, while localized adherent material supports transfer and adhesion. Both processes can coexist with protective coverage in some regions. [Wear tracks and loss measurement](ref:R04)\n\nThe accompanying EDS table mainly characterizes alloy elements, oxygen and small amounts of other elements at a selected location; it is not a map of transfer-layer thickness or coverage. The paper uses morphology and potential evolution to interpret a PEEK barrier, but does not separately quantify contributions from barrier formation and substrate repassivation. It also lacks concurrent injection-molded PEEK or UHMWPE counterfaces. The supported comparison is therefore between sliding and non-sliding conditions within this experiment, not superior wear resistance of printed PEEK over those materials. The quantity, size distribution and cellular effects of debris remaining attached after testing were outside this wear measurement. [Wear mechanisms and experimental groups](ref:R04)",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "García-Hernández et al.: open-circuit potentials after different thermal histories.",
+          "interpretation": "Panel a plots potential against immersion time, with S-Ref finishing closest to zero. Panel b displays negative potentials on an upward axis running away from zero; a taller bar does not mean a more positive potential. The traces extend to approximately 5400 s and show potential evolution during film formation. Read alongside the corrosion-current table, S-Ref has a more positive potential but higher current, so this plot alone does not rank corrosion rates. [Original experiment](ref:R02)"
+        },
+        "F02": {
+          "caption": "García-Hernández et al.: polarization curves and sections of the same specimen.",
+          "interpretation": "The main plot compares manufacturing and thermal states; the inset compares x-y and x-z sections of S-Ref. Nearly vertical anodic branches indicate passivation over the scanned range. Both axes are labeled A/cm², but the current scale in the main plot is inconsistent with the inset and Table 4. Absolute currents are therefore taken from the table, not digitized from the main axis. The section comparison concerns S-Ref alone and does not establish a universal orientation effect across processing routes. [Curves and parameter table](ref:R02)"
+        },
+        "F03": {
+          "caption": "Seo et al.: designed and estimated specific surface area and measured release in two media.",
+          "interpretation": "Panels a and b compare specific surface area and specific volume, with blue squares for designed values and red circles for estimates; the lattice shows the largest manufacturing deviation. Panel c has a broken vertical axis, so bar-height ratios cannot be compared directly; both before- and after-wash groups represent 7 d. Panel d uses a different concentration range and shows higher release from lattice than solid specimens in Hartmann’s solution. These measured concentrations differ from the simulated values in the text. Incomplete description of the Hartmann washing procedure also limits mechanistic interpretation of its before–after difference. [Original figure and methods](ref:R03)"
+        },
+        "F04": {
+          "caption": "Federl and Al-Rjoub: polarization and morphology with and without sliding.",
+          "interpretation": "Panel a places potential on the horizontal axis and current density on a logarithmic vertical axis; red denotes sliding and black no sliding. The curve minimum occurs near zero net current and should not be read directly as Tafel-extrapolated corrosion current. Panels b and c retain 200 µm scale bars; sliding produces prominent grooves and material labeled by the authors as adhered PEEK. Panel b also contains a Corrosion arrow although the text reports no local corrosive damage. Interpretation here follows visible morphology without claiming a completely corrosion-free static surface. [Original figure and fitted parameters](ref:R04)"
+        },
+        "F05": {
+          "caption": "Federl and Al-Rjoub: potential and friction coefficient during one reciprocating-sliding experiment.",
+          "interpretation": "Panels a and b share a time origin at the start of the rest period. Sliding begins around 1800 s, with a negative OCP shift and rising friction, and ends around 9000 s, when friction returns to zero. Later potential recovery starts while sliding is still occurring, indicating that surface response involves more than continuing film removal. The traces establish temporal association but do not independently quantify transfer-layer coverage; recovery magnitude cannot yield protective-film thickness. [Time-resolved experiment](ref:R04)"
+        },
+        "F06": {
+          "caption": "Federl and Al-Rjoub: wear tracks of the pair and local elemental composition.",
+          "interpretation": "The upper panels show the PEEK pin and titanium disk, with a 6 mm arrow marking the reciprocating path; the lower panels enlarge the titanium track and report selected-area EDS mass percentages. Grooves along sliding and local debris support combined abrasion and adhesion. The elemental table mainly samples the metal region and does not quantify the entire polymer transfer layer. The specific wear rate quantified in the paper belongs to the PEEK pin, not the titanium disk occupying more of the image. [Wear measurement](ref:R04)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie beeinflusst der Oberflächenzustand Korrosion, Verschleiß und Werkstoffstabilität?",
+      "direction": "Langzeitzuverlässigkeit",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Eine Oberfläche ist an Passivierung, Freisetzung und Kontaktverschleiß beteiligt",
+          "markdown": "Zum Oberflächenzustand gedruckter Titanlegierungen gehören unvollständig verschmolzene Partikel, Spitzen und Täler, das oberflächennahe Phasengefüge, Oxidschichten und beim Kontakt entstehende Übertragungsschichten. Diese Merkmale entsprechen unterschiedlichen Messgrößen: Eine dentale Ätzstudie vergleicht die elektrochemische Reaktion bearbeiteter Oberflächen, eine Hüftimplantatstudie unterschiedliche thermische Vorgeschichten, eine Gitterstudie den Titangehalt im Auslagerungsmedium und eine PEEK-Gegenkörperstudie die fortlaufende Oberflächenveränderung beim Gleiten. [Ätzstudie](ref:R01) [Wärmebehandlungsstudie](ref:R02) [Struktur und Freisetzung](ref:R03) [Tribokorrosionsstudie](ref:R04)\n\n| Messung | Unmittelbar erfasste Größe | Bei der Interpretation beibehaltene Bedingungen |\n|---|---|---|\n| Ruhepotential OCP | Mischpotential und zeitliche Änderung ohne extern aufgeprägten Strom | Referenzelektrode, Elektrolyt und Stabilisierungsdauer |\n| Polarisation und Impedanz | Stromantwort auf äußere Störungen und angepasste Parameter | Scanbereich, Frequenz, Ersatzschaltbild und Flächennormierung |\n| Elementanalyse des Auslagerungsmediums | Angereichertes Metallelement in einem definierten Flüssigkeitsvolumen | Expositionsdauer, Reinigung und Unterscheidung von Partikeln und gelösten Spezies |\n| Reibungskoeffizient und Verschleiß | Kontaktwiderstand und Materialverlust | Gegenkörper, Last, Hub und Schmiermedium |\n\nEin positiveres OCP kann mit einem höheren Korrosionsstrom einhergehen. Auch die Konzentration im Auslagerungsmedium kann durch eine größere exponierte Fläche steigen, ohne dass sich die Reaktionsgeschwindigkeit je Flächeneinheit proportional erhöht. Die folgenden Abschnitte betrachten Oberflächenänderungen unter den tatsächlich untersuchten Bedingungen.",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Nach der Partikelentfernung können mittlere Rauheit und tiefe Täler unterschiedlich reagieren",
+          "markdown": "Die dentale Studie verglich spanend bearbeitetes Ti–6Al–4V mit SLM-Oberflächen und variierte die Dauer der HF-Ätzung. Der tabellierte Ra sank von 14.47±1.14 µm für unbehandeltes SLM auf 11.18±1.39, 9.83±1.35 beziehungsweise 10.47±0.92 µm nach 10, 20 und 30 min; die spanend bearbeitete Kontrolle erreichte 0.145±0.008 µm. Zwischen 20 und 30 min bestand kein statistisch signifikanter Rauheitsunterschied. Die numerisch günstigste Dauer ist daher kein gesichertes eindeutiges Optimum. Längeres Ätzen erzeugte zudem tiefere Täler: Die Spitze-Tal-Höhe PV betrug nach 30 min 145.11±66.32 µm gegenüber 110.65±12.44 µm ohne Behandlung. Ein niedrigerer Mittelwert kann somit mit einer größeren lokalen geometrischen Kerbe zusammenfallen. [Morphologie und Rauheitstabelle](ref:R01)\n\nDie elektrochemischen Prüfungen erfolgten in 0.9% NaCl mit oder ohne 200 ppm Fluorid und umfassten saure Bedingungen. Oberflächen mit mehr unvollständig verschmolzenen Partikeln schnitten schlechter ab; deren Entfernung durch HF verbesserte den Korrosionswiderstand. Besonders aufschlussreich ist der Vergleich nach Schleifen auf dieselbe Präparationsstufe: SLM und spanend bearbeitetes Material zeigten dann ähnliche Korrosionsbeständigkeit in fluoridhaltiger und fluoridfreier Salzlösung. Unterschiede der ursprünglichen Oberflächen lassen sich folglich nicht vollständig dem gedruckten Legierungswerkstoff selbst zuschreiben. Das Schleifen zugänglicher Flächen erfasst allerdings keine Reinigungsblindstellen im Gitterinneren; die tieferen Täler nach dem Ätzen wurden in dieser Studie keinem zyklischen Kontaktverschleißtest unterzogen. [Elektrochemischer Vergleich](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "s3",
+          "title": "Wärmebehandlung verändert das Phasengefüge; das Potential allein ordnet die Korrosionsbeständigkeit nicht",
+          "markdown": "García-Hernández et al. verglichen Herstellungs- und Nachbehandlungswege mit demselben Ti–6Al–4V-Pulver. Die als ursprünglicher Bauzustand bezeichnete Probe S-Ref war bereits bei 650 °C für 2 h spannungsarmgeglüht; S-HT-a aus derselben Maschine erhielt zusätzlich eine Wärmebehandlung bei 850 °C für 4 h. Bei E-HIP änderten sich sowohl das Herstellungsverfahren als auch die Nachbehandlung: EBM wurde mit heißisostatischem Pressen bei 920 °C und 120 MPa für 2.5 h kombiniert. S-Ref gegenüber S-HT-a erlaubt daher die gezieltere Betrachtung der Wärmebehandlung; E-HIP variiert nicht ausschließlich den Druck. [Gruppen und Prozessführung](ref:R02)\n\nDas OCP verschob sich während der Auslagerung in PBS zu positiveren Werten, was die Autoren mit der Bildung einer Schutzschicht verbanden. S-Ref zeigte jedoch trotz des positivsten Potentials nicht den niedrigsten Korrosionsstrom. In der ursprünglichen Tabelle 4 betragen die Korrosionsstromdichten von S-Ref, S-HT-a und der geschmiedeten Referenz 2.7×10^-7, 4.9×10^-8 beziehungsweise 4.0×10^-8 A/cm². Ein positiveres Mischpotential und ein niedrigerer Reaktionsstrom werden damit klar getrennt. Die Wärmebehandlung wandelte das feinnadelige Gefüge in α+β-Lamellen um und ging mit geringerem Strom einher. Gleichzeitig verändern sich Phasenbestand, Gefügeskala und Defekte, weshalb die Verbesserung nicht vollständig einer einzelnen Phase zugeordnet werden kann. [Polarisationsergebnisse](ref:R02)\n\nAuch die Impedanzanpassung lässt sich nicht auf eine versuchsübergreifende Rangfolge reduzieren. Das Ersatzschaltbild mit zwei Zeitkonstanten passt Schicht- und Ladungsübertragungswiderstand getrennt an. Widerstände aus EIS und Polarisationsextrapolation sind nicht dieselbe direkte Messgröße; zudem ergibt sich für die Anpassungskomponenten keine durchgehend gleiche Reihenfolge. Als Hauptbeleg dient hier die Stromänderung vor und nach Wärmebehandlung auf derselben Fertigungsplattform. Der im Abstract genannte höchste Widerstand wird nicht zur Haltbarkeitsgarantie für das gesamte Implantat. Die zusätzlichen Zellversuche mit HA-Beschichtungen erfassten keine Repassivierung nach Beschichtungsverschleiß und beantworten diesen Aspekt des Kontaktbetriebs daher nicht. [Impedanz- und Beschichtungsversuche](ref:R02)",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Gitterfreisetzung hängt von tatsächlicher Fläche, anfänglicher Reinigung und Medium ab",
+          "markdown": "Seo et al. fertigten massive, hybride und gitterförmige Proben und verglichen die Freisetzung in Reinstwasser und Hartmann-Lösung. Die geplante spezifische Oberfläche bildete den Fertigungszustand nicht unmittelbar ab: Beim Hybrid stieg sie von geplanten 1.71 auf geschätzte 5.29 cm²/g, beim Gitter von 19 auf 32 cm²/g. Die Autoren brachten dies mit teilweise verschmolzenem Pulver in Verbindung. Die Proben befanden sich in festen Flüssigkeitsvolumina; Konzentrationsmessungen beseitigen Unterschiede der Kontaktfläche daher nicht automatisch. [Gefertigte Strukturen und Freisetzungsversuche](ref:R03)\n\nDie Reinstwasserdaten in Originalabbildung 6 verdeutlichen den Einfluss anfänglicher Rückstände. Beim Gitter betrug die Konzentration während der ersten 7 d 0.81 µg/L und während weiterer 7 d nach Reinigung 0.41 µg/L; beim Hybrid sank sie von 1.53 auf 0.41 µg/L. Vor der Reinigung bestand keine geordnete Beziehung, nach der größere Porosität stets höhere Freisetzung bedeutet. Das Hartmann-Diagramm zeigt dagegen höhere Werte für Gitter als für hybride und massive Proben. Die Methoden beschreiben die wiederholte Reinigung und Auslagerung jedoch eindeutig nur für Reinstwasser. Auch im Hartmann-Diagramm sind Gruppen vor und nach Reinigung angegeben, ohne gleichwertig klare Verfahrensbeschreibung. Die Differenz wird hier deshalb keinem vollständig kontrollierten Reinigungseffekt zugeschrieben. [Gemessene Konzentrationen der Originalabbildung](ref:R03)\n\nDie separat genannten Hartmann-Werte von 82.8, 90.5 und 128 µg/L sind Simulationsergebnisse für massive, hybride und Gitterstrukturen und ersetzen die experimentellen Balken nicht. Die Simulationen verwenden ideale Geometrien und ein vorgegebenes Medium ohne den gemessenen Restpulverzustand. Die tatsächlichen β-Phasenanteile aus EBSD betrugen 1.1%, 1.6% und 2.2%. Die Angabe 145%–200% im Abstract bezeichnet Verhältnisse zum massiven Material, keine Anteile der β-Phase am gesamten Werkstoff. Da Fläche und Gefüge gemeinsam variieren und keine direkten elektrochemischen Prüfungen erfolgten, bleibt die α/β-Mikroelementwirkung eine mechanistische Interpretation und keine unabhängig variierte Ursache. [Simulationen und EBSD](ref:R03)\n\nFür die Elementmessung wurde das Auslagerungsmedium angesäuert; ein Verfahren zur vollständigen Trennung von Partikeln und gelösten Spezies ist nicht angegeben. Die Daten lassen sich daher besser als Titanfreisetzung im Medium denn als Titankonzentration im Patientenblut beschreiben. Das klinische Foto stammt von einer Revision nach 18 Monaten wegen eines Tumorrezidivs. Der Nachweis lokaler Metallablagerungen bedeutet nicht, dass Korrosion diese Revision verursachte. [Analytik und klinischer Fall](ref:R03)",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Eine PEEK-Übertragungsschicht kann mit niedrigeren elektrochemischen Messwerten und sichtbaren Verschleißspuren einhergehen",
+          "markdown": "Federl und Al-Rjoub paarten aus FFF-gedruckten Blöcken spanend gefertigte PEEK-Stifte mit präparierten Ti6Al4V-Scheiben. Untersucht wurden somit keine zwei unbehandelten Druckoberflächen. Die Prüfung erfolgte in PBS bei Raumtemperatur mit 48 N Last entsprechend etwa 3 MPa, 1 Hz oszillierender Bewegung, 6 mm Hub und 2 h Gleitdauer; davor und danach lagen jeweils 30 min Ruhezeit. Damit lässt sich die zeitliche Folge von Schichtverletzung und anschließender Oberflächenerholung verfolgen. [Proben und Gleitbedingungen](ref:R04)\n\nZu Gleitbeginn verschob sich das OCP abrupt ins Negative und erholte sich anschließend allmählich. Die Autoren brachten diese Erholung mit einer Barriere aus übertragenem und anhaftendem PEEK in Verbindung. Der zugehörige Reibungskoeffizient stieg auf etwa 0.19 und blieb danach relativ stabil. Die 9000 s auf der Zeitachse bezeichnen die Gesamtdauer seit Beginn der Ruhephase: 1800 s vor dem Gleiten plus 7200 s Gleitbewegung. Es handelt sich nicht um 9000 s reine Gleitdauer. Die Potentialerholung nach Entlastung ist mit Repassivierung vereinbar, misst aber nicht unabhängig die Oxidschichtdicke. [Zeitverläufe](ref:R04)\n\nDie ursprüngliche Tabelle 3 nennt eine Abnahme der Korrosionsstromdichte von 15.59±0.03 ohne Gleiten auf 13.27±0.04 µA/cm² beim Gleiten. Gleichzeitig sank der Polarisationswiderstand von 69477±3100 auf 67866±310 Ω. Diese Größen dürfen daher nicht als gleichzeitige Verbesserungen beschrieben werden. Die aus dem Strom umgerechneten Korrosionsraten von 0.059±0.004 und 0.051±0.005 mm/year sind modellabhängige Umrechnungen und keine Messungen des tatsächlichen Verschleißes über ein Jahr. Im REM blieben Riefen und anhaftendes Material sichtbar. Die Ergebnisse belegen somit eine kontaktbedingte Veränderung des Zusammenwirkens von Schutz und Schädigung, nicht die Beseitigung des Materialverlustes durch Gleiten. [Polarisation und Mikroskopie](ref:R04)",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Verschleiß ist der tatsächlich materialverlierenden Komponente zuzuordnen",
+          "markdown": "Im selben PEEK-Titan-Versuch wurde aus dem Masseverlust eine spezifische Verschleißrate der PEEK-Stifte von (8.1±1.2)×10^-4 mm³/(N·m) berechnet. Der Verschleiß der Titanscheibe ließ sich aus den Spurprofilen nicht quantifizieren. Der PEEK-Wert darf daher weder als Metallverschleißrate noch die fehlende Quantifizierbarkeit des metallischen Volumenverlustes als Nullverschleiß dargestellt werden. Gerichtete Riefen im Originalbild stützen abrasiven Verschleiß, lokale Anhaftungen Materialübertragung und Adhäsion. Beide Vorgänge können gleichzeitig mit einer schützenden Bedeckung einzelner Bereiche auftreten. [Verschleißspuren und Verlustmessung](ref:R04)\n\nDie beigefügte EDS-Tabelle charakterisiert vorwiegend Legierungselemente, Sauerstoff und geringe Mengen weiterer Elemente an einer ausgewählten Stelle. Sie bildet weder Dicke noch Bedeckungsgrad der Übertragungsschicht ab. Die Arbeit erklärt eine PEEK-Barriere anhand von Morphologie und Potentialverlauf, quantifiziert jedoch die Beiträge von Barrierebildung und Repassivierung des Substrats nicht getrennt. Zeitgleich geprüfte Gegenkörper aus spritzgegossenem PEEK oder UHMWPE fehlen ebenfalls. Gestützt wird somit der Vergleich zwischen gleitenden und nicht gleitenden Bedingungen innerhalb dieses Versuchs, keine überlegene Verschleißbeständigkeit gedruckten PEEK gegenüber diesen Materialien. Menge, Größenverteilung und Zellwirkungen der nach dem Versuch noch anhaftenden Partikel lagen außerhalb dieser Verschleißmessung. [Verschleißmechanismen und Versuchsgruppen](ref:R04)",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "García-Hernández et al.: Ruhepotentiale nach unterschiedlichen thermischen Vorgeschichten.",
+          "interpretation": "Teil a zeigt das Potential über der Auslagerungszeit; S-Ref endet am nächsten bei null. Teil b stellt negative Potentiale auf einer von null nach oben verlaufenden umgekehrten Achse dar: Ein höherer Balken bedeutet kein positiveres Potential. Die Kurven reichen bis etwa 5400 s und zeigen die Potentialentwicklung bei der Schichtbildung. Zusammen mit der Korrosionsstromtabelle wird deutlich, dass S-Ref ein positiveres Potential, aber höheren Strom besitzt. Allein aus diesem Diagramm folgt keine Rangfolge der Korrosionsraten. [Originalversuch](ref:R02)"
+        },
+        "F02": {
+          "caption": "García-Hernández et al.: Polarisationskurven und verschiedene Schnitte derselben Probe.",
+          "interpretation": "Das Hauptdiagramm vergleicht Herstellungs- und Wärmebehandlungszustände, der Einschub die x-y- und x-z-Schnitte von S-Ref. Die nahezu senkrechten anodischen Äste zeigen Passivierung im durchfahrenen Bereich. Beide Achsen sind mit A/cm² beschriftet, doch die Stromskala des Hauptdiagramms stimmt nicht mit Einschub und Tabelle 4 überein. Absolute Ströme werden deshalb der Tabelle entnommen und nicht aus der Hauptachse digitalisiert. Der Schnittvergleich betrifft ausschließlich S-Ref und belegt keinen allgemeinen Orientierungseffekt über alle Prozesswege hinweg. [Kurven und Parametertabelle](ref:R02)"
+        },
+        "F03": {
+          "caption": "Seo et al.: geplante und geschätzte spezifische Oberfläche sowie gemessene Freisetzung in zwei Medien.",
+          "interpretation": "Teile a und b vergleichen spezifische Oberfläche und spezifisches Volumen; blaue Quadrate zeigen Planwerte, rote Kreise Schätzwerte. Beim Gitter ist die Fertigungsabweichung am größten. Teil c besitzt eine unterbrochene vertikale Achse, sodass Balkenhöhenverhältnisse nicht direkt vergleichbar sind; beide Gruppen vor und nach Reinigung umfassen jeweils 7 d. Teil d verwendet einen anderen Konzentrationsbereich und zeigt in Hartmann-Lösung höhere Freisetzung aus Gittern als aus massiven Proben. Diese Messwerte unterscheiden sich von den Simulationsergebnissen im Text. Die unvollständig beschriebene Reinigung in Hartmann-Lösung begrenzt zudem die mechanistische Deutung des Vorher-Nachher-Unterschieds. [Originalabbildung und Methoden](ref:R03)"
+        },
+        "F04": {
+          "caption": "Federl and Al-Rjoub: Polarisation und Morphologie mit und ohne Gleiten.",
+          "interpretation": "Teil a stellt das Potential horizontal und die Stromdichte logarithmisch vertikal dar; Rot bezeichnet Gleiten, Schwarz den ruhenden Zustand. Das Kurvenminimum liegt nahe dem verschwindenden Nettostrom und darf nicht unmittelbar als durch Tafel-Extrapolation ermittelter Korrosionsstrom gelesen werden. Teile b und c erhalten die 200-µm-Maßstäbe. Nach Gleiten sind ausgeprägte Riefen und von den Autoren als anhaftendes PEEK bezeichnetes Material sichtbar. Teil b enthält außerdem einen Pfeil Corrosion, obwohl der Text keine lokalen Korrosionsschäden beschreibt. Hier wird die sichtbare Morphologie verglichen, ohne die ruhende Oberfläche als vollständig korrosionsfrei zu bezeichnen. [Originalabbildung und Anpassungsparameter](ref:R04)"
+        },
+        "F05": {
+          "caption": "Federl and Al-Rjoub: Potential und Reibungskoeffizient während eines oszillierenden Gleitversuchs.",
+          "interpretation": "Teile a und b beginnen ihre Zeitachsen mit der Ruhephase. Um 1800 s setzt das Gleiten ein, begleitet von negativer OCP-Verschiebung und steigender Reibung. Um 9000 s endet es, und die Reibung fällt auf null. Die spätere Potentialerholung beginnt noch während der Gleitbewegung; die Oberflächenreaktion besteht somit nicht ausschließlich aus fortgesetztem Schichtabtrag. Die Kurven belegen einen zeitlichen Zusammenhang, bestimmen aber den Bedeckungsgrad der Übertragungsschicht nicht unabhängig. Aus dem Ausmaß der Erholung lässt sich keine Schutzschichtdicke berechnen. [Zeitaufgelöster Versuch](ref:R04)"
+        },
+        "F06": {
+          "caption": "Federl and Al-Rjoub: Verschleißspuren der Paarung und lokale Elementzusammensetzung.",
+          "interpretation": "Oben sind PEEK-Stift und Titanscheibe dargestellt; ein 6-mm-Pfeil kennzeichnet den oszillierenden Weg. Unten folgen die vergrößerte Titanspur und EDS-Massenanteile eines ausgewählten Bereichs. Riefen entlang der Gleitrichtung und lokale Partikel stützen das Zusammenwirken von Abrasion und Adhäsion. Die Elementtabelle erfasst vorwiegend den Metallbereich und quantifiziert nicht die gesamte polymere Übertragungsschicht. Die in der Arbeit bestimmte spezifische Verschleißrate gehört zum PEEK-Stift, nicht zur im Bild dominierenden Titanscheibe. [Verschleißmessung](ref:R04)"
+        }
+      }
+    }
+  }
+}

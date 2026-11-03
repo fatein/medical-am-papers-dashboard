@@ -1,0 +1,338 @@
+{
+  "schema_version": 2,
+  "question_id": "P6-093",
+  "p": "P6",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_4d7f9061234c629159e6",
+    "doc_5c715d8ab1ae5ae748b9"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "A Personalized 3D-Printed Model for Obtaining Informed Consent Process for Thyroid Surgery: A Randomized Clinical Study Using a Deep Learning Approach with Mesh-Type 3D Modeling",
+      "publisher": "Journal of Personalized Medicine",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/jpm11060574",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Impact of 3D-Printed Anatomical Models on Doctor-Patient Communication in Orthopedic Consultations: A Randomized Clinical Trial",
+      "publisher": "Cureus",
+      "year": 2024,
+      "url": "https://doi.org/10.7759/cureus.70822",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Evaluating 3D-printed models for congenital heart disease: impact on parental anxiety and procedural understanding",
+      "publisher": "Pediatric Research",
+      "year": 2025,
+      "url": "https://doi.org/10.1038/s41390-025-03999-x",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Three-Dimensional–Printed Models and Shared Decision-Making: A Cluster Randomized Clinical Trial",
+      "publisher": "JAMA Network Open",
+      "year": 2025,
+      "url": "https://doi.org/10.1001/jamanetworkopen.2025.13187",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-093/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8234549/#jpm-11-00574-f002",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 6",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-093/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8234549/#jpm-11-00574-f006",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R03",
+      "original_label": "Fig. 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-093/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12602363/#Fig2",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Fig. 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-093/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12602363/#Fig3",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R04",
+      "original_label": "Figure 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-093/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12134953/#zoi250436f2",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R04",
+      "original_label": "Figure 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-093/F06.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12134953/#zoi250436f3",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "模型能否帮助患者理解手术与疾病？",
+      "direction": "教学与沟通",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "个体化网格让患者看见病灶位置，也保留影像判断的不确定性",
+          "markdown": "Seok 等的甲状腺模型用开放网格表示腺体，用另一颜色表示与手术范围有关的病灶。腺体由自动分割后人工修正，病灶则由医师手工标记；并不是把所有结节都自动、同等精细地复原。开放外壳允许患者从外面看见内部目标，解释病灶所在侧、大小和切除范围。[个体模型的表达设计](ref:R01)\n\n这里的个体化意味着采用患者自己的影像关系，而不是每项显示都得到病理证实。论文展示的两例术前怀疑甲状腺外侵犯，打印模型也表达了这一判断，术中却证实为腺内肿瘤。模型可以准确传递影像解释，也可以同时传递其误判；逼真的空间形式不会自动提高诊断确定性。\n\n模型与切除标本的比较主要是近似大小和病灶位置，没有给出全表面误差分布。研究的分割相似度还以人工修正后的推断作为参照，不能当成完全独立的外部验证。对于患者解释，网格与颜色帮助定位，但不能从中读出未显示的组织侵犯、复发概率或具体并发症发生率。\n\n这种设计选择也说明为何沟通模型可以有意简化：患者要讨论的是病灶与器官、切除边界的关系，而非逐层辨认全部组织。研究实际检验的是这一简化表达加入咨询后的体验，没有比较精细模型与简化模型谁更有效。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "甲状腺随机试验测到的是理解自评，而非答题正确率",
+          "markdown": "研究纳入 60 人，因手术延迟或取消排除 7 人，最终模型组 28 人、常规组 25 人。区组随机序列由不直接接触患者的工程师保管，咨询当天才告知医师。对照解释本来就包含插图和标准解剖模型，因此差别是增加个体化表示，而非从纯口头解释变为首次使用任何模型。[随机流程与问卷](ref:R01)\n\n咨询后立即填写的问卷共 12 题，分一般知识、手术收益、风险与满意度，每类 3 题，每题 1–5 分。题干为“我理解……”或“我满意……”，没有要求患者正确复述风险数字。模型组与对照组结果如下，误差为标准差。\n\n| 自评领域 | 模型组 | 常规组 | P |\n|---|---:|---:|---:|\n| 一般知识 | 14.1 ± 1.2 | 12.8 ± 1.8 | 0.005 |\n| 手术收益 | 14.1 ± 1.2 | 13.1 ± 1.6 | 0.016 |\n| 手术风险 | 13.5 ± 1.7 | 12.5 ± 1.6 | 0.026 |\n| 满意度 | 14.2 ± 1.2 | 13.4 ± 1.4 | 0.036 |\n\n这些差异支持患者感觉自己更理解、对解释更满意，不等价于客观风险估计更准确。医师与患者没有盲法，解释方式可能随模型而改变。术后两组都获得自己的模型，再完成较短问卷；该阶段已无未接触模型的对照，不能用它证明长期记忆的随机组间优势。\n\n每类上限为 15 分，两组多个领域已接近上限，因此进一步提高的空间有限。风险类题目包括潜在并发症、延迟出院和病灶与神经血管的关系；模型可辅助最后一项的空间解释，却不会单独表达发生概率。术后问卷要求患者在并列最高评价时选择最有帮助的项目，所得偏好分布也不是各领域实际知识增益的大小排序。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "骨科沟通评分改善，知识自评的组间差异却未达显著",
+          "markdown": "Sanchez 等在骨科门诊将 46 人分为模型辅助 21 人、影像解释 25 人。双方获得诊断、治疗选择与预后的说明；研究排除了不适合用模型解释的病变，但没有按骨科亚专科或疾病复杂度报告分层结果。模型对某一种病变的效果不能由混合门诊样本直接推定。[知识自评与交流量表](ref:R02)\n\n所谓咨询前后知识，是咨询完成后让患者回顾评价原先与当前的知识，而非两次独立客观测验。自评提高的比例为 16/21（76.19%）和 13/25（52.00%），组间 P=0.082，未达到显著差异。这个较大的数值差仍有样本不确定性，不能照摘要语气写成已证实知识提高更多。\n\nCommunication Assessment Tool 则衡量交流体验。比如“用我能理解的方式说话”被评为优秀的有模型组 18 人、对照组 9 人，P=0.001；“按我的意愿让我参与决策”分别 18 和 10 人，P=0.002。理解主要健康担忧一项 P=0.052，没有显著差异。这些维度比笼统满意度更具体，但仍是患者对交流的评价。\n\n两组评价整体接近量表高端，研究也未校正多个条目比较。更受尊重、获得提问机会或感到医师倾听，可能与模型成为共同指示对象有关，也可能与额外注意及解释行为有关；本试验没有将这些过程拆开，更没有随访治疗依从性或术后恢复。",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "家长焦虑的前后改善不能证明模型优于纸面解释",
+          "markdown": "Grefen 等随机分配 60 名先心病患儿家长，剔除不完整问卷后为纸面组 28 人、模型组 29 人。由同一医师进行解释，两组咨询平均均为 25 min。模型是按病种准备的示例库，并非每名儿童的个体复制；开窗、涂色和封堵器示范突出病变位置及干预概念。[病种模型与情绪结局](ref:R03)\n\n| 量表，咨询前→后 | 纸面解释 | 附加模型 |\n|---|---:|---:|\n| VAS 焦虑 | 5.9→5.0，P=0.0342 | 6.0→4.9，P=0.0116 |\n| STAI 状态焦虑 | 25.8→23.5，P=0.009 | 26.4→25.2，P=0.0658 |\n\n这里的 P 值来自各组内部前后比较，不能因模型组 VAS 的 P 更小就认定额外效果更大。STAI 在模型组甚至没有达到显著下降；两种量表反映的侧面不同，研究没有给出足以将模型概括为全面优于纸面的组间增益证据。\n\n论文将知识结果写为百分数，但附录问卷实际包括“我理解心脏结构”“我知道病变位置”等同意程度及自评知识问题。因此，纸面 77.5%→92.3%、模型 77.0%→89.4% 的结果应读作报告的理解评分变化，不能写成客观知识正确率。两组前后均 P<0.0001，也不构成模型的额外收益检验。\n\n量表评的是家长，而非患儿；出院时测的是特质焦虑，也不是延迟知识测验。常规教育本身可以缓解情绪并改善理解，模型被喜欢不意味着所有家长都需要同样详细的空间信息。",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "模块化结直肠模型提高参与决策的感受，知识总分并未同步获益",
+          "markdown": "Khan 等按外科医师进行整群随机，6 名医师分别使用模型或常规解释，患者按可接诊医师进入组别；共 51 人，模型组 28、常规组 23。模型可拆卸不同肠段，并展示造口及泌尿系统邻接，让双方在同一个物体上讨论将保留或切除什么。这是通用模块化躯干模型，不是患者影像复制。[整群试验与模型任务](ref:R04)\n\n咨询后 SDM-Q-9 平均分为 89.5 ± 17.6 对 80.5 ± 14.4，P=0.01，误差为标准差。平均差 9.0 分超过论文采用的 4 分最小临床重要差异，但终点是患者感到自己参与决策的程度；并未观察最终选择是否更符合其长期价值偏好，也未测量后悔或依从性。\n\n另一份知识问卷确实要求选择正确答案，涉及病变位置、切除部位、切口、造口与风险结构。总体咨询后分数为模型 83.9 ± 15.2、常规 86.9 ± 13.7，经基线调整并考虑群内差异后 P=0.98。模型没有展示整体知识的额外优势。分项中模型组对风险结构的回答改善，而常规组对切口的回答改善；这些是各组前后检验，不能凭一组显著、另一组未显著就宣布显著交互作用。\n\n论文报告的模型效果仍包含医师的沟通方式；只有少量医师群，且未记录咨询时长差异。统计考虑群内相关性，比把所有患者当作独立随机更合适，但不能让少量医师自动代表广泛的解释风格。",
+          "figure_ids": [
+            "F05",
+            "F06"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "焦虑、健康素养与延迟理解不是共同决策评分的同义词",
+          "markdown": "结直肠研究中，模型组 STAI-6 从 53.5 降至 44.1，常规组从 50.4 降至 48.0；基线调整后的组间 P=0.04。论文同时指出变化没有达到采用的 10 分临床重要阈值。因此，统计差异与足够大的患者可感知收益需要分别陈述，不能只保留显著性。[焦虑幅度与健康素养分层](ref:R04)\n\n健康素养较高者的 SDM-Q-9 差异较明显，低或边缘素养亚组未显著。由于亚组较小，且未给出明确的组间交互检验，不能认定模型只帮助某一类患者；也不能假定实体呈现会自动消除阅读、语言或交流障碍。研究纳入能使用英语量表的患者，没有检验跨语言解释。\n\n这项研究仅在术前咨询访问中收集结果。它区分了自感参与、焦虑和具体知识，却没有追踪数周后的正确复述、患者在家使用模型的情况或手术后决策后悔。甲状腺研究的术后统一赠送模型改变了对照条件，骨科与家长研究的咨询后问卷也不能填补这些延迟结果。[甲状腺后续接触](ref:R01) [骨科即时测量](ref:R02) [家长问卷时点](ref:R03)\n\n不同论文的焦虑分数也不能直接比较大小。结直肠研究把短版 STAI 报告为 0–100，家长研究的德语短版为 10–40；相同的分数差并不具有相同量纲含义。两项研究面对的还是患者本人和患儿家长两种人群，前者评价自身手术，后者评价孩子的处置。当前数据没有把量表版本、人群与解释对象匹配后进行直接对照，也没有估计模型对所有焦虑来源的统一作用。",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Seok et al.：网格甲状腺的数字设计视角。",
+          "interpretation": "A–D 是斜视、俯视、正面及侧面，红色目标可透过灰色网格被观察；白色底座不是解剖组织。画面是数字设计而非打印后照片，说明内部病灶可见性的设计逻辑，不提供几何精度或患者知识变化的测量。[网格表达](ref:R01)"
+        },
+        "F02": {
+          "caption": "Seok et al.：咨询后自评的四个领域。",
+          "interpretation": "灰柱为个体模型组，白柱为常规解释组；纵轴为每类题目合计分，误差为标准差。四组柱均偏高，星号标记组间评分差异。General Knowledge 的名称不应遮蔽其自评题型：图没有展示客观正确率，也不是同一患者咨询前后的变化。[问卷结果](ref:R01)"
+        },
+        "F03": {
+          "caption": "Grefen et al.：病种示例的开窗与器械演示。",
+          "interpretation": "a 为白色中空模型，b 为涂色开窗后显示缺损的模型，c 加入封堵器示例。圆圈和箭头将注意引向解释对象，便于讨论位置与作用；并非本研究每个患儿的个体手术计划，也没有测量器械放置准确率。原图展示的是沟通材料的可见性。[家长教学模型](ref:R03)"
+        },
+        "F04": {
+          "caption": "Grefen et al.：不同情绪量表与理解自评的前后变化。",
+          "interpretation": "黑柱为纸面，灰柱为模型；三个面板分别是 VAS、STAI 和报告的知识百分分数，误差为标准差。横线比较同色柱的咨询前后，并非证明模型对纸面的额外优势。右图对应自评问卷，不是正确作答比例；坐标上限超过百分满值也不能理解为有人掌握超过全部知识。[量表与附录题型](ref:R03)"
+        },
+        "F05": {
+          "caption": "Khan et al.：可拆肠段、造口与泌尿系统关系。",
+          "interpretation": "A 显示磁性连接与可移除肠段，B 显示腹壁造口，C–D 显示开启及闭合观察下的肠道与泌尿系统邻接。功能在于让患者和医师共同指认保留、切除和改变后的结构；通用模型并不编码个体肿瘤侵犯或全部手术方案，照片也没有记录决策质量。[模块化交流对象](ref:R04)"
+        },
+        "F06": {
+          "caption": "Khan et al.：共同决策感与焦虑是不同终点。",
+          "interpretation": "A 是咨询后 SDM-Q-9 组均值，B 是 STAI-6 咨询前后均值，误差均为标准差。A 越高代表自感参与越多，B 越低代表焦虑越少，不能用同一方向解释。B 的折线连接组均值而非患者轨迹；图中的下降还要结合基线调整及临床重要阈值，不能只由橙线更陡判断实际获益幅度。[主要与次要结果](ref:R04)"
+        }
+      }
+    },
+    "en": {
+      "title": "Can models help patients understand surgery and disease?",
+      "direction": "Education and communication",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Personalized meshes expose lesion location while retaining imaging uncertainty",
+          "markdown": "Seok et al. used an open mesh for the thyroid and another color for lesions relevant to surgical extent. Automatic gland segmentation was manually corrected, while physicians marked lesions themselves; not every nodule was automatically reconstructed at equal detail. The open shell exposes internal targets for discussing side, size and resection extent. [Design of personalized representation](ref:R01)\n\nPersonalization means using the patient's imaging relationships, not pathological confirmation of every feature. In two illustrated cases, suspected extrathyroidal extension was reproduced in the models but surgery showed intraglandular tumors. Models can faithfully communicate an imaging interpretation and its error simultaneously; spatial realism does not automatically increase diagnostic certainty.\n\nComparison with resected specimens concerned approximate size and lesion position, without a full surface-error distribution. Segmentation similarity also used manually corrected predictions as reference, not fully independent external validation. Mesh and color aid localization but do not reveal undisplayed invasion, recurrence probabilities or complication incidence.\n\nThis explains deliberate simplification for communication: patients discuss lesion–organ relationships and resection boundaries rather than every tissue layer. The study tested the experience of adding this simplified representation to consultation, not detailed versus simplified models.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "The thyroid trial measured perceived understanding, not correct-answer rates",
+          "markdown": "The study enrolled 60 people and excluded 7 after postponed or canceled operations, leaving 28 model and 25 conventional participants. An engineer without direct patient contact held the block-randomization sequence, revealed to the physician on the consultation day. Conventional explanations already included illustrations and standard anatomical models, so the difference was added personalization, not first use of any model after purely verbal counseling. [Randomization and questionnaire](ref:R01)\n\nThe immediate questionnaire had 12 items in general knowledge, surgical benefits, risks and satisfaction, with 3 items per domain scored 1–5 each. Statements asked whether patients understood or were satisfied, not whether they could correctly reproduce numerical risks. Results below use standard deviations.\n\n| Perceived domain | Model | Conventional | P |\n|---|---:|---:|---:|\n| General knowledge | 14.1 ± 1.2 | 12.8 ± 1.8 | 0.005 |\n| Surgical benefits | 14.1 ± 1.2 | 13.1 ± 1.6 | 0.016 |\n| Surgical risks | 13.5 ± 1.7 | 12.5 ± 1.6 | 0.026 |\n| Satisfaction | 14.2 ± 1.2 | 13.4 ± 1.4 | 0.036 |\n\nThese differences support feeling better informed and more satisfied, not necessarily more accurate risk estimates. Patients and physicians were unblinded, and explanations could change with model use. After surgery both groups received their model and a shorter questionnaire, removing the unexposed control; that phase cannot establish a randomized long-term memory advantage.\n\nEach domain has a maximum of 15, and several domains in both groups already approached the ceiling. Risk items concerned potential complications, delayed discharge and lesion relationships to nerves and vessels. Models may support the spatial component without independently expressing event probability. The postoperative questionnaire required choosing the most helpful domain when highest ratings tied; its preference distribution is not a ranking of actual knowledge gains.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Orthopedic communication ratings improved while perceived-knowledge differences were nonsignificant",
+          "markdown": "Sanchez et al. allocated 46 orthopedic outpatients to model-assisted explanation, 21, or imaging-based explanation, 25. Both received diagnosis, treatment-option and prognosis information. Disorders unsuitable for model explanation were excluded, but outcomes were not stratified by subspecialty or complexity. Effects for a particular disorder cannot be inferred directly from the mixed sample. [Perceived knowledge and communication](ref:R02)\n\nBefore/after knowledge was retrospectively rated after consultation, not measured by two independent objective tests. Improved self-ratings occurred in 16/21 (76.19%) and 13/25 (52.00%), P=0.082 between groups. Despite the numerical gap, sampling uncertainty prevents calling greater knowledge improvement established.\n\nThe Communication Assessment Tool measured the interaction experience. For understandable language, excellent ratings numbered 18 with models and 9 with imaging, P=0.001; involvement in decisions as desired received 18 and 10, P=0.002. Understanding the patient's main concerns was nonsignificant, P=0.052. These are more specific than general satisfaction but remain patient evaluations of communication.\n\nRatings approached the upper scale range, and multiple-item comparisons were not corrected. Respect, opportunities to ask questions and perceived listening may relate to having a shared object or to additional attention and explanation behaviors. The trial did not separate those processes or follow adherence and postoperative recovery.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "Within-parent anxiety improvement does not establish superiority over paper explanations",
+          "markdown": "Grefen et al. randomized 60 parents of children with congenital heart disease. After incomplete questionnaires were excluded, 28 received paper-based education and 29 additional models. The same physician counseled both groups for an average of 25 min. Models were pathology examples, not individual replicas of every child; openings, paint and occluder demonstration highlighted disease location and intervention concepts. [Pathology models and emotional outcomes](ref:R03)\n\n| Scale, before→after consultation | Paper | Added model |\n|---|---:|---:|\n| Anxiety VAS | 5.9→5.0, P=0.0342 | 6.0→4.9, P=0.0116 |\n| State-anxiety STAI | 25.8→23.5, P=0.009 | 26.4→25.2, P=0.0658 |\n\nThese P values compare time points within each group. A smaller model-group VAS P does not demonstrate greater added benefit. Model-group STAI did not significantly decrease. The scales capture different aspects, and the reported contrasts do not establish broad superiority over paper.\n\nKnowledge results appear as percentages, but supplementary questionnaires contain agreement with statements such as understanding cardiac structure or knowing lesion location, plus self-rated knowledge. Paper 77.5%→92.3% and model 77.0%→89.4% should therefore be read as reported understanding-score changes, not objective correct-answer rates. Both within-group changes had P<0.0001, which also does not test added model benefit.\n\nParents, not children, completed the scales. Discharge assessment concerned trait anxiety, not delayed knowledge. Routine education itself can relieve distress and improve understanding; favorable model reception does not establish identical information needs across parents.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Modular colorectal models improved perceived participation without an overall knowledge advantage",
+          "markdown": "Khan et al. cluster-randomized 6 surgeons to model or usual counseling; patients entered by surgeon availability. There were 51 participants, 28 model and 23 usual care. Detachable bowel segments, ostomy sites and urinary-system adjacency enabled discussion of retained and removed anatomy on a shared object. This was a generic modular torso, not an imaging replica of each patient. [Cluster trial and model task](ref:R04)\n\nPostconsultation SDM-Q-9 means were 89.5 ± 17.6 versus 80.5 ± 14.4, P=0.01, with standard deviations. The 9.0-point difference exceeded the paper's adopted 4-point minimal clinically important difference, but measured perceived decision involvement. Alignment of final choices with longer-term values, regret and adherence were not assessed.\n\nA separate knowledge questionnaire required correct answers about disease and resection location, incisions, ostomies and structures at risk. Overall postconsultation scores were 83.9 ± 15.2 with models and 86.9 ± 13.7 with usual care, P=0.98 after baseline adjustment and accounting for intraclass differences. No overall added knowledge benefit was shown. Risk-structure answers improved within the model group and incision answers within usual care; significance in one group but not another does not establish a significant interaction.\n\nThe effect still includes surgeon communication behavior. There were few surgeon clusters and no measurement of counseling-time differences. Accounting for clustering is preferable to assuming independently randomized patients, but does not make a small surgeon sample representative of many explanation styles.",
+          "figure_ids": [
+            "F05",
+            "F06"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Anxiety, health literacy and delayed understanding are not synonyms for decision involvement",
+          "markdown": "In the colorectal trial, model-group STAI-6 decreased from 53.5 to 44.1 and usual care from 50.4 to 48.0; the baseline-adjusted between-arm P was 0.04. The authors also noted failure to reach their adopted 10-point clinical-importance threshold. Statistical difference and sufficiently large patient-relevant benefit therefore require separate statements. [Anxiety magnitude and health-literacy strata](ref:R04)\n\nSDM-Q-9 differences were clearer with adequate health literacy, while the low or marginal subgroup was nonsignificant. Small subgroups and absence of a clear interaction test do not establish benefit only for one population. Tangible presentation also cannot be assumed to remove reading, language or communication barriers. English-scale eligibility did not test cross-language counseling.\n\nOutcomes were collected only at the preoperative visit. Perceived participation, anxiety and specific knowledge were distinguished, but correct recall weeks later, home model use and postoperative decisional regret were not followed. Giving both thyroid groups models after surgery changed the control condition; immediate orthopedic and parent questionnaires do not supply these delayed outcomes either. [Subsequent thyroid exposure](ref:R01) [Immediate orthopedic measurement](ref:R02) [Parent questionnaire timing](ref:R03)\n\nAnxiety values also cannot be compared directly across papers. The colorectal short STAI was reported on 0–100, whereas the German short inventory for parents ranged 10–40; identical numerical differences have different scale meanings. Populations also differed: patients considered their own surgery, parents their child's procedure. These datasets did not directly compare matched scales, populations and counseling targets or estimate one common effect across all sources of anxiety.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Seok et al.: Digital views of a mesh thyroid.",
+          "interpretation": "A–D show oblique, top, frontal and side views. The red target remains visible through gray mesh; the white base is not anatomy. These are digital designs rather than printed photographs, illustrating interior visibility rather than measuring geometry accuracy or knowledge change. [Mesh representation](ref:R01)"
+        },
+        "F02": {
+          "caption": "Seok et al.: Four postconsultation self-rated domains.",
+          "interpretation": "Gray bars represent personalized models and white conventional explanation. Vertical scores sum domain items, with standard deviations. All domains score highly; stars mark between-group differences. The label General Knowledge must not obscure self-rating: these are neither objective correctness rates nor within-person pre/post changes. [Questionnaire outcomes](ref:R01)"
+        },
+        "F03": {
+          "caption": "Grefen et al.: Openings and device demonstration in pathology examples.",
+          "interpretation": "a shows a white hollow model, b the painted opened defect model, and c an illustrative occluder. Circle and arrow direct attention to the discussion target and its position and function. This is not an individual plan for every child or a device-placement accuracy test, but visibility of communication material. [Parent education models](ref:R03)"
+        },
+        "F04": {
+          "caption": "Grefen et al.: Pre/post emotional scales and self-rated understanding.",
+          "interpretation": "Black bars are paper and gray models. Panels show VAS, STAI and reported percentage knowledge scores with standard deviations. Brackets compare same-color pre/post bars, not added model benefit over paper. The right panel derives from self-ratings, not correct-answer proportions; an axis extending beyond the percentage maximum does not mean knowledge beyond complete mastery. [Scales and supplementary questions](ref:R03)"
+        },
+        "F05": {
+          "caption": "Khan et al.: Detachable bowel, ostomies and urinary-system relationships.",
+          "interpretation": "A shows magnetic joints and removable bowel, B abdominal ostomy sites, and C–D bowel–urinary adjacency in open and closed views. The shared object supports pointing to retained, removed and altered structures. A generic model does not encode individual tumor invasion or every option, and photographs do not measure decision quality. [Modular communication object](ref:R04)"
+        },
+        "F06": {
+          "caption": "Khan et al.: Decision involvement and anxiety are different endpoints.",
+          "interpretation": "A shows postvisit SDM-Q-9 group means and B pre/post STAI-6 means, both with standard deviations. Higher A means more perceived participation; lower B means less anxiety. B connects group means, not individual trajectories. Its decline requires baseline adjustment and clinical-importance thresholds, not judgment from the steeper orange line alone. [Primary and secondary outcomes](ref:R04)"
+        }
+      }
+    },
+    "de": {
+      "title": "Können Modelle Patienten helfen, Eingriffe und Erkrankungen zu verstehen?",
+      "direction": "Lehre und Kommunikation",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Personalisierte Netze zeigen Läsionslage und erhalten zugleich Bildgebungsunsicherheit",
+          "markdown": "Seok et al. stellten die Schilddrüse als offenes Netz und für das Resektionsausmaß relevante Läsionen andersfarbig dar. Automatische Drüsensegmentierung wurde manuell korrigiert, Läsionen wurden ärztlich markiert; nicht jeder Knoten wurde automatisch gleich detailliert rekonstruiert. Die offene Hülle macht innere Ziele für Gespräche über Seite, Größe und Resektionsumfang sichtbar. [Personalisierte Darstellung](ref:R01)\n\nPersonalisierung bedeutet Nutzung individueller Bildbeziehungen, keine pathologische Bestätigung jedes Merkmals. In zwei illustrierten Fällen übernahmen Modelle vermutete extrathyreoidale Ausbreitung, während die Operation intraglanduläre Tumoren zeigte. Modelle können Bildinterpretation und deren Fehler zugleich getreu vermitteln; räumlicher Realismus erhöht nicht automatisch diagnostische Sicherheit.\n\nDer Präparatevergleich betraf ungefähre Größe und Läsionslage, ohne vollständige Oberflächenfehlerverteilung. Segmentierungsähnlichkeit nutzte zudem manuell korrigierte Vorhersagen als Referenz statt völlig unabhängiger externer Validierung. Netz und Farbe erleichtern Lokalisation, zeigen aber keine nicht dargestellte Invasion, Rezidivwahrscheinlichkeit oder Komplikationsinzidenz.\n\nDies erklärt bewusste Vereinfachung zur Kommunikation: Besprochen werden Läsion-Organ-Beziehungen und Resektionsgrenzen statt sämtlicher Gewebeschichten. Geprüft wurde das Erleben dieser vereinfachten Darstellung als Beratungsergänzung, kein Vergleich detaillierter und vereinfachter Modelle.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Die Schilddrüsenstudie erfasste Verständnis-Selbsteinschätzung, keine Antwortkorrektheit",
+          "markdown": "Von 60 eingeschlossenen Personen wurden 7 nach verschobenen oder abgesagten Operationen ausgeschlossen; es blieben 28 Modell- und 25 konventionelle Teilnehmer. Ein Ingenieur ohne direkten Patientenkontakt verwahrte die Blockrandomisierung und informierte den Arzt am Beratungstag. Übliche Erklärungen enthielten bereits Illustrationen und Standardanatomiemodelle. Geprüft wurde zusätzliche Personalisierung, nicht erstmaliger Modelleinsatz nach rein mündlicher Beratung. [Randomisierung und Fragebogen](ref:R01)\n\nDer unmittelbare Fragebogen umfasste 12 Fragen zu Allgemeinwissen, Operationsnutzen, Risiken und Zufriedenheit, jeweils 3 Fragen mit 1–5 Punkten. Gefragt wurde nach Verständnis oder Zufriedenheit, nicht nach korrekter Wiedergabe numerischer Risiken. Die folgenden Ergebnisse enthalten Standardabweichungen.\n\n| Selbsteingeschätzter Bereich | Modell | Konventionell | P |\n|---|---:|---:|---:|\n| Allgemeinwissen | 14.1 ± 1.2 | 12.8 ± 1.8 | 0.005 |\n| Operationsnutzen | 14.1 ± 1.2 | 13.1 ± 1.6 | 0.016 |\n| Operationsrisiken | 13.5 ± 1.7 | 12.5 ± 1.6 | 0.026 |\n| Zufriedenheit | 14.2 ± 1.2 | 13.4 ± 1.4 | 0.036 |\n\nDie Unterschiede stützen besser empfundenes Verständnis und Zufriedenheit, nicht zwingend genauere Risikoschätzung. Patienten und Ärzte waren unverblindet; Erklärungen konnten sich mit dem Modell ändern. Nach der Operation erhielten beide Gruppen ihr Modell und einen kürzeren Fragebogen. Ohne unexponierte Kontrolle belegt diese Phase keinen randomisierten langfristigen Gedächtnisvorteil.\n\nJeder Bereich hat maximal 15 Punkte; mehrere Bereiche beider Gruppen lagen schon nahe der Obergrenze. Risikofragen betrafen Komplikationen, verzögerte Entlassung und Beziehungen zu Nerven und Gefäßen. Modelle können den räumlichen Anteil unterstützen, ohne Ereigniswahrscheinlichkeit selbst auszudrücken. Bei gleich hohen Urteilen verlangte der postoperative Fragebogen die Auswahl des hilfreichsten Bereichs; diese Präferenzverteilung ist keine Rangfolge tatsächlicher Wissenszuwächse.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Orthopädische Kommunikationsurteile verbesserten sich, Wissensselbsturteile nicht signifikant zwischen Gruppen",
+          "markdown": "Sanchez et al. verteilten 46 orthopädische Ambulanzpatienten auf modellgestützte Erklärung, 21, oder bildbasierte Erklärung, 25. Beide erhielten Informationen zu Diagnose, Therapieoptionen und Prognose. Für Modelle ungeeignete Erkrankungen wurden ausgeschlossen, Ergebnisse aber nicht nach Teilgebiet oder Komplexität aufgeteilt. Ein Effekt für eine bestimmte Erkrankung lässt sich aus der gemischten Stichprobe nicht direkt ableiten. [Selbstwissen und Kommunikation](ref:R02)\n\nWissen vor und nach der Beratung wurde rückblickend nach dem Gespräch bewertet, nicht durch zwei unabhängige objektive Tests. Verbesserte Selbsturteile hatten 16/21 (76.19%) beziehungsweise 13/25 (52.00%), Gruppenvergleich P=0.082. Trotz numerischer Differenz bleibt Stichprobenunsicherheit; stärkerer Wissensgewinn ist nicht gesichert.\n\nDas Communication Assessment Tool erfasste das Gesprächserleben. Verständliche Sprache bewerteten 18 Modell- und 9 Bildpatienten als ausgezeichnet, P=0.001; gewünschte Entscheidungsbeteiligung 18 und 10, P=0.002. Das Verstehen wesentlicher Gesundheitsbedenken war nicht signifikant verschieden, P=0.052. Diese Bereiche sind spezifischer als allgemeine Zufriedenheit, bleiben aber Patientenurteile zur Kommunikation.\n\nUrteile lagen nahe dem Skalenmaximum; multiple Einzelvergleiche wurden nicht korrigiert. Respekt, Fragenmöglichkeiten und empfundenes Zuhören können mit einem gemeinsamen Objekt, zusätzlicher Aufmerksamkeit oder Erklärverhalten zusammenhängen. Die Studie trennte diese Prozesse nicht und untersuchte weder Adhärenz noch postoperative Erholung im Verlauf.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "Angstrückgang innerhalb der Eltern belegt keine Überlegenheit gegenüber Papiererklärung",
+          "markdown": "Grefen et al. randomisierten 60 Eltern herzkranker Kinder. Nach Ausschluss unvollständiger Fragebögen erhielten 28 papierbasierte Aufklärung, 29 zusätzliche Modelle. Derselbe Arzt beriet beide Gruppen durchschnittlich 25 min. Modelle waren krankheitstypische Beispiele, keine individuellen Repliken jedes Kindes. Öffnungen, Bemalung und Okkluderdemonstration verdeutlichten Lage und Interventionskonzept. [Krankheitsmodelle und emotionale Ergebnisse](ref:R03)\n\n| Skala, vor→nach Beratung | Papier | Zusätzliches Modell |\n|---|---:|---:|\n| Angst-VAS | 5.9→5.0, P=0.0342 | 6.0→4.9, P=0.0116 |\n| Zustandsangst-STAI | 25.8→23.5, P=0.009 | 26.4→25.2, P=0.0658 |\n\nDiese P-Werte vergleichen Zeitpunkte innerhalb jeder Gruppe. Ein kleinerer VAS-P-Wert der Modellgruppe belegt keinen größeren Zusatznutzen. Ihr STAI sank nicht signifikant. Skalen erfassen verschiedene Aspekte; die berichteten Vergleiche zeigen keine umfassende Überlegenheit gegenüber Papier.\n\nWissen wird als Prozentwert dargestellt, doch die Zusatzfragebögen enthalten Zustimmung zu Aussagen über verstandene Herzstruktur oder bekannte Läsionslage sowie Wissensselbsteinschätzung. Papier 77.5%→92.3% und Modell 77.0%→89.4% sind deshalb berichtete Verständniswertänderungen, keine objektiven korrekten Antwortquoten. Beide internen Änderungen hatten P<0.0001, ebenfalls kein Test zusätzlichen Modellnutzens.\n\nBewertet wurden Eltern, nicht Kinder. Bei Entlassung wurde Eigenschaftsangst erfasst, kein verzögertes Wissen. Schon übliche Aufklärung kann Belastung mindern und Verständnis verbessern; positive Modellannahme belegt keinen identischen Informationsbedarf aller Eltern.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Modulare Kolorektalmodelle verbesserten Beteiligungserleben ohne allgemeinen Wissensvorteil",
+          "markdown": "Khan et al. randomisierten 6 Chirurgen als Cluster zu Modell- oder üblicher Beratung; Patienten wurden nach Verfügbarkeit zugeteilt. Von 51 Personen gehörten 28 zur Modell-, 23 zur Regelversorgung. Abnehmbare Darmsegmente, Stomastellen und Nachbarschaft zum Harnsystem ermöglichten gemeinsame Diskussion erhaltener oder entfernter Anatomie. Dies war ein generischer modularer Rumpf, keine individuelle Bildreplik. [Clusterstudie und Modellaufgabe](ref:R04)\n\nNach Beratung betrugen SDM-Q-9-Mittelwerte 89.5 ± 17.6 gegenüber 80.5 ± 14.4, P=0.01, mit Standardabweichungen. Die Differenz von 9.0 Punkten überschritt die verwendete minimale klinisch wichtige Differenz von 4 Punkten, erfasste jedoch empfundene Entscheidungsbeteiligung. Übereinstimmung endgültiger Entscheidungen mit langfristigen Werten, Bedauern und Adhärenz wurden nicht untersucht.\n\nEin gesonderter Wissenstest verlangte richtige Antworten zu Krankheits- und Resektionslage, Schnitt, Stoma und gefährdeten Strukturen. Gesamtwerte nach Beratung waren 83.9 ± 15.2 mit Modell und 86.9 ± 13.7 bei Regelversorgung, P=0.98 nach Baselineanpassung und Berücksichtigung von Clusterunterschieden. Ein zusätzlicher Gesamtwissensvorteil fehlte. Antworten zu Risikostrukturen verbesserten sich innerhalb der Modellgruppe, zum Schnitt innerhalb der Regelversorgung. Signifikanz in nur einer Gruppe belegt keine signifikante Interaktion.\n\nDer Effekt enthält weiterhin ärztliches Kommunikationsverhalten. Es gab wenige Arztcluster und keine Erfassung unterschiedlicher Beratungsdauer. Clusterkorrelation zu berücksichtigen ist angemessener als unabhängig randomisierte Patienten anzunehmen, macht wenige Ärzte aber nicht repräsentativ für zahlreiche Erklärstile.",
+          "figure_ids": [
+            "F05",
+            "F06"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Angst, Gesundheitskompetenz und späteres Verständnis sind keine Synonyme für Beteiligung",
+          "markdown": "Im Kolorektalversuch sank STAI-6 mit Modell von 53.5 auf 44.1, unter Regelversorgung von 50.4 auf 48.0; baselineadjustiert war P=0.04 zwischen Armen. Zugleich wurde die angenommene klinische Wichtigkeitsschwelle von 10 Punkten nicht erreicht. Statistische Differenz und hinreichend großer patientenrelevanter Nutzen müssen daher getrennt benannt werden. [Angstausmaß und Gesundheitskompetenz](ref:R04)\n\nSDM-Q-9-Unterschiede waren bei ausreichender Gesundheitskompetenz deutlicher, in der niedrigen oder grenzwertigen Untergruppe nicht signifikant. Kleine Untergruppen und fehlender klarer Interaktionstest belegen keinen exklusiven Nutzen einer Population. Greifbare Darstellung beseitigt auch nicht automatisch Lese-, Sprach- oder Kommunikationsbarrieren. Einschluss nach englischsprachiger Skalennutzung prüfte keine sprachübergreifende Beratung.\n\nErgebnisse wurden nur beim präoperativen Besuch erhoben. Empfundene Beteiligung, Angst und konkretes Wissen wurden getrennt, korrekte Wiedergabe Wochen später, häusliche Modellnutzung oder postoperatives Entscheidungsbedauern jedoch nicht verfolgt. Modellübergabe an beide Schilddrüsengruppen nach Operation veränderte die Kontrolle; unmittelbare orthopädische und Elternfragebögen liefern diese verzögerten Ergebnisse ebenfalls nicht. [Späterer Schilddrüsenmodellkontakt](ref:R01) [Unmittelbare orthopädische Messung](ref:R02) [Zeitpunkte der Elternfragebögen](ref:R03)\n\nAuch Angstwerte verschiedener Arbeiten sind nicht direkt vergleichbar. Die kolorektale STAI-Kurzform wurde auf 0–100 berichtet, das deutsche Elternkurzinventar auf 10–40; gleiche Zahlendifferenzen haben verschiedene Skalenbedeutung. Zudem betrachteten Patienten den eigenen Eingriff, Eltern den ihres Kindes. Die Datensätze vergleichen weder abgestimmte Skalen, Populationen und Beratungsgegenstände direkt noch schätzen sie einen einheitlichen Effekt auf alle Angstquellen.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Seok et al.: Digitale Ansichten einer Netzschilddrüse.",
+          "interpretation": "A–D zeigen schräge, obere, frontale und seitliche Ansichten. Das rote Ziel bleibt durch graues Netz sichtbar; der weiße Sockel ist keine Anatomie. Digitale Entwürfe statt Druckfotos erklären innere Sichtbarkeit, messen aber weder Geometriegenauigkeit noch Wissensänderung. [Netzdarstellung](ref:R01)"
+        },
+        "F02": {
+          "caption": "Seok et al.: Vier selbstbewertete Bereiche nach Beratung.",
+          "interpretation": "Graue Balken stehen für personalisierte Modelle, weiße für übliche Erklärung; vertikal sind Bereichssummen mit Standardabweichungen. Alle Bereiche liegen hoch, Sterne markieren Gruppenunterschiede. General Knowledge bezeichnet hier Selbsteinschätzung, keine objektive Antwortkorrektheit oder individuelle Vorher-Nachher-Änderung. [Fragebogenergebnisse](ref:R01)"
+        },
+        "F03": {
+          "caption": "Grefen et al.: Öffnungen und Gerätedemonstration an Krankheitsbeispielen.",
+          "interpretation": "a zeigt ein weißes Hohlmodell, b das bemalte geöffnete Defektmodell, c einen beispielhaften Okkluder. Kreis und Pfeil lenken auf Position und Funktion des Gesprächsgegenstands. Dies ist weder der individuelle Plan jedes Kindes noch ein Platzierungsgenauigkeitstest, sondern Sichtbarkeit von Kommunikationsmaterial. [Elternaufklärungsmodelle](ref:R03)"
+        },
+        "F04": {
+          "caption": "Grefen et al.: Emotionale Skalen und subjektives Verständnis vor und nach Aufklärung.",
+          "interpretation": "Schwarz steht für Papier, Grau für Modelle. Die Felder zeigen VAS, STAI und berichtete prozentuale Wissenswerte mit Standardabweichungen. Klammern vergleichen gleichfarbige Vorher-Nachher-Balken, keinen Zusatznutzen gegenüber Papier. Rechts stehen Selbsturteile statt korrekter Antwortquoten; eine über das Prozentmaximum hinausgehende Achse bedeutet kein Wissen über vollständige Beherrschung hinaus. [Skalen und Zusatzfragen](ref:R03)"
+        },
+        "F05": {
+          "caption": "Khan et al.: Abnehmbarer Darm, Stomata und Beziehungen zum Harnsystem.",
+          "interpretation": "A zeigt Magnetverbindungen und entfernbare Darmteile, B Bauchwandstomata, C–D Darm-Harnsystem-Nachbarschaft bei offener und geschlossener Ansicht. Das gemeinsame Objekt ermöglicht Zeigen erhaltener, entfernter und veränderter Strukturen. Ein generisches Modell kodiert keine individuelle Tumorinvasion oder sämtliche Optionen; Fotos messen keine Entscheidungsqualität. [Modulares Kommunikationsobjekt](ref:R04)"
+        },
+        "F06": {
+          "caption": "Khan et al.: Entscheidungsbeteiligung und Angst sind verschiedene Endpunkte.",
+          "interpretation": "A zeigt SDM-Q-9-Gruppenmittel nach Beratung, B STAI-6-Mittel vorher und nachher, jeweils mit Standardabweichungen. Höheres A bedeutet mehr empfundene Beteiligung, niedrigeres B weniger Angst. B verbindet Gruppenmittel statt Einzelverläufe. Der Rückgang erfordert Baselineanpassung und klinische Wichtigkeitsschwellen, keine Beurteilung allein nach steilerer orangefarbener Linie. [Primäre und sekundäre Ergebnisse](ref:R04)"
+        }
+      }
+    }
+  }
+}

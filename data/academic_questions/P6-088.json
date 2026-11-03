@@ -1,0 +1,340 @@
+{
+  "schema_version": 2,
+  "question_id": "P6-088",
+  "p": "P6",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_71a61ec5702aaa89853f"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Virtual reality and 3D printing improve preoperative visualization of 3D liver reconstructions—results from a preclinical comparison of presentation modalities and user’s preference",
+      "publisher": "Annals of Translational Medicine",
+      "year": 2021,
+      "url": "https://doi.org/10.21037/atm-21-512",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Comparing a virtual reality head-mounted display to on-screen three-dimensional visualization and two-dimensional computed tomography data for training in decision making in hepatic surgery: a randomized controlled study",
+      "publisher": "Surgical Endoscopy",
+      "year": 2024,
+      "url": "https://doi.org/10.1007/s00464-023-10615-8",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Effect of virtual reality on spatial–anatomical understanding in preoperative liver surgery: a randomized crossover study",
+      "publisher": "Scientific Reports",
+      "year": 2026,
+      "url": "https://doi.org/10.1038/s41598-026-61007-6",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Clinical 3D modeling to guide pediatric cardiothoracic surgery and intervention using 3D printed anatomic models, computer aided design and virtual reality",
+      "publisher": "3D Printing in Medicine",
+      "year": 2022,
+      "url": "https://doi.org/10.1186/s41205-022-00137-9",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 1",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-088/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8339861/#f1",
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 5",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-088/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8339861/#f5",
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Fig. 6",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-088/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11078809/#Fig6",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Fig. 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-088/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13347006/#Fig2",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Fig. 5",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-088/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13347006/#Fig5",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R03",
+      "original_label": "Fig. 7",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-088/F06.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13347006/#Fig7",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "实体模型与屏幕、VR 模型各适合什么任务？",
+      "direction": "术前规划模型",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "同一重建可以改变呈现方式，实体触觉与虚拟交互不能互换",
+          "markdown": "Huettl 等把 20 个肝脏病例的同一分割重建分别导出为可旋转的三维 PDF、实体模型和 VR，减少了不同分割质量对比较的干扰。30 名参与者包括学生、住院医师、专科进修医师和肝胆胰专家；每人评估全部病例的各种表示，分两次完成，病例与显示方式顺序随机安排。任务是指出肿瘤所在肝段，答案以专家判定为参照，不是实际执行肝切除。[相同数据的三种表示](ref:R01)\n\n| 表示 | 研究中可做的交互 | 未包含的能力 |\n|---|---|---|\n| 屏幕三维 PDF | 旋转、缩放、隐藏或透明显示结构 | 没有头戴式双目立体视图 |\n| 实体模型 | 手持、转动、直接感知物体尺度 | 刚性整体不能随时改变透明度或尺寸 |\n| VR | 立体观看、控制器旋转缩放、连续调节透明度 | 没有实体内部结构的接触力反馈 |\n\n实体采用透明外层包围彩色血管和肿瘤，能同时显示外形与内部邻接；但手持反馈不等于肝组织触感，研究明确描述其坚固且不可弯曲。屏幕和 VR 则可去掉遮挡、放大局部。它们显示同一重建，不会因为换成头显而自动增加原始影像中未分割的分支或微小浸润。\n\n该设计直接检验“怎样展示已有几何”，与比较 CT 切片和分割模型的研究不同：后一种比较同时改变了空间表达与信息整理。把所有屏幕条件都称作二维对照，会混淆原始切片与已经完成重建的屏幕三维模型。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "实体定位更快，并不妨碍多数参与者更喜欢 VR",
+          "markdown": "在上述肝段定位任务中，实体与 VR 相对三维 PDF 的正确性较高，P 值分别为 0.036 与 0.040；实体与 VR 之间没有显著差异，P=0.964。学生的平均正确比例分别为实体 0.84、VR 0.84、PDF 0.82，专家为 0.87、0.88、0.87。差值不大，结果更接近特定任务的增量帮助，而非把原来无法识别的解剖变为全部正确。[定位正确性与速度](ref:R01)\n\n| 模式 | 全部病例定位总用时，s，均值 ± 标准差 |\n|---|---:|\n| 实体 | 509 ± 156 |\n| VR | 702 ± 248 |\n| 三维 PDF | 734 ± 281 |\n\n实体显著快于另外两种表示；VR 与 PDF 的时间差不显著，P=0.793。这些是研究中完成一组病例定位的时间，不是每例手术时间，也不包括分割、制作和学习设备的全部投入。原图按经验层级展示用时分布，说明界面成本与使用经验都参与了表现。\n\n但偏好调查中，22 人选择 VR，8 人选择实体，没有人选择 PDF。对放大、透明度与立体体验的喜好，可以与手持模型的快速定位并存。研究第二次评估更快，却没有同样的正确性提升，进一步说明熟悉操作主要可能减少时间，而不一定增加解剖判断质量。\n\n所有人多次看到同一病例，随机顺序只能降低而不能完全消除识别记忆；专家确定的肝段归属也带有判读成分。统计模型考虑了病例和参与者差异，但研究为探索性分析，未校正多重比较。小幅正确性差异需要结合这些条件理解。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "屏幕三维重建已经能支持病例判断，头显并非必然再提高成绩",
+          "markdown": "Preukschas 等将 90 名医学生随机分成 CT 切片、屏幕三维重建和 VR 三组，每组 30 人。所有人先接受肝脏解剖与切除概念介绍，使用额外病例熟悉设备，再评估另外 3 个病例并回答 11 个关于解剖、肿瘤累及和拟议切除的问题。研究发表于 2024 年，实际招募在 2016 年，评价的是当时的软件与交互配置。[随机试验的任务和时间背景](ref:R02)\n\n| 结果 | CT 切片 | 屏幕三维 | VR |\n|---|---:|---:|---:|\n| 正确答案数，均值 ± 标准差 | 5.4 ± 1.4 | 7.1 ± 1.4 | 7.1 ± 1.4 |\n| 回答时间，分:秒，均值 ± 标准差 | 09:13 ± 03:10 | 06:44 ± 02:22 | 06:24 ± 02:43 |\n\n屏幕三维和 VR 均优于切片组，但两者之间的正确性与时间差异均不显著，P 值分别为 0.987 与 0.419。由此可以支持“完成分割的可交互三维表示帮助初学者处理这类问题”，不能支持“沉浸式头显在这套任务中优于屏幕”。不显著也不是事先设定界值的等效性证明。\n\n研究设置可快速切换的肿瘤与不同血管组合视图，使用者还能旋转、缩放和改变透明度；这些功能使屏幕条件本身已经相当丰富。VR 同时整合了患者信息和 CT，而其他组从纸面读取病例资料，设备之外还有信息布局差别。病例始终按固定顺序出现，因此后续病例更快、更准不能完全解释为可迁移的学习曲线；该研究也没有检验实际执业医师的手术结局。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "多个病灶的空间追踪可出现 VR 优势，但复杂度被人为限定",
+          "markdown": "Zolkin 等的交叉研究分析了 58 名医学生；每人都使用 VR 与桌面三维界面观察肝脏。研究先给单病灶任务，再给双病灶任务，显示方式顺序平衡。病灶被人工加入患者来源的血管模型，并把血管简化到节段分支；这里的“复杂”主要是同时处理两个病灶，不代表已测量血管变异程度、浸润边界或病灶与血管距离。[复杂度定义与交叉设计](ref:R03)\n\n每个模型最多观察 5 分钟，间隔 1 分钟后作答，考查病灶相对血管的位置、接触关系、肝段归属和血管路径。这样的间隔测验衡量短时空间理解与回忆，不能称为长期知识保持。VR 在复杂任务中的成绩为 28.00 ± 3.32，桌面为 26.40 ± 3.61，P=0.002，效应量 d=0.46。\n\n原图配对线显示 60.3% 的参与者在 VR 下提高，12.1% 不变，27.6% 下降，平均优势并非人人受益。VR 还同时增加双目深度、头身移动和绕模型观察；桌面使用鼠标键盘自由旋转。即使模型、照明与过滤功能一致，也不能把差异只归于双目立体感。\n\n简单病例始终先于复杂病例，因此复杂度与累积设备经验相伴。研究作者明确指出，后段的 VR 优势可能部分来自逐渐熟悉界面。模型里的简化血管和人工病灶有助于控制任务，却限制了向真实浸润性病变或术后改变的外推；这些条件也解释了它与前述屏幕三维试验不必得出相同结果。",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "空间能力、信心与耐受性决定谁能完成任务，不能由平均分代替",
+          "markdown": "在交叉研究中，心理旋转测验成绩越高，复杂任务的 VR 相对桌面优势越大，相关系数 r=0.31，P=0.018。这与“空间能力较弱者必然更需要、也更受益于 VR”的直觉相反。作者提出较强空间能力者可能更快掌握新界面，但并未单独测量这种适应机制。散点图中同一能力水平仍存在正负两种差值，不能按测验分数保证个人收益。[空间能力与个体差异](ref:R03)\n\n信心并没有随平均成绩出现显著提升：VR 为 3.30 ± 1.20，桌面为 3.21 ± 1.19，P=0.305。两种条件下信心与准确性的关联系数均为 0.41，也没有显示 VR 的自我判断校准更好。该分析只选取可作二元评分的肝段识别和血管路径题，不能泛指全部临床决策信心；它属于探索性分析，未纳入主要假设的多重检验校正。\n\n最初招募 62 人，最终分析 58 人；退出包括 2 人晕动不适、1 人问卷不完整及1 人难以理解术语。排除未完成者后的平均表现不包含这些使用障碍。比较设备时，身体耐受和语言任务要求影响谁能进入最终样本；“完成者得分较高”并不能说明每位学员都能在相同条件下使用。\n\n该研究的桌面参与者大多已有相关操作经验，VR 对多数人较新。短期技术熟悉既可能低估尚未掌握设备者的表现，也可能使后半程练习效应与病例难度混在一起。研究没有按长期熟练程度匹配后再重复比较。",
+          "figure_ids": [
+            "F06"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "接触、暴露与方案修改需要不同工具，病例服务提供了具体分工",
+          "markdown": "Ghosh 等的儿童心脏建模服务说明，任务不止于认出结构。柔性实体可在实际尺度下改变观察入口，检查经瓣口能看到多少缺损；屏幕和 VR 用于观察腔室、分支与邻接；CAD 则把预想隧道、补片或管道加到解剖中，检查是否挤占另一流出道或与胸骨位置冲突。这里“看模型”和“修改方案”不是同一操作。[多种工具在病例中的分工](ref:R04)\n\n对于需要直接接触或试验暴露的任务，实体的可变形性具有实际用途，但肝脏定位研究中的刚性透明模型并不具备同样功能。对于不断比较多条数字方案的任务，屏幕工具可以修改几何、隐藏结构并保留多个版本；是否必须使用头显，仍要看空间判断任务与界面配置。不能只根据材料可触摸，就推断缝合、组织分离或器械阻力已经逼真。\n\n该心脏服务共报告 112 个建模病例，其中 96 个用于临床规划；临床案例生成 127 个模型，包含多种显示形式。它记录了哪些问题促使团队采用工具，但没有分别随机比较实体、屏幕与 VR，也没有把临床结局归因到单一表示。文中描述的左心室到主动脉隧道、邻近流出道与胸骨下管道关系，是实际讨论对象；模型照片与使用数量都没有给出这些方案各自改变多少患者结局的估计。",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Huettl et al.：同一肝脏重建的实体、屏幕与 VR 表示。",
+          "interpretation": "A 为透明实体包围彩色内部结构，B 为三维 PDF，C 为 VR 截图；黄色病灶与分支关系可跨画面对照。外层透明程度、颜色与光照存在差别，因此共享网格不等于视觉输入完全相同。静态截图还不能传达 VR 的双目深度或实体的手持反馈，须结合研究中的交互方法理解。[表示方式](ref:R01)"
+        },
+        "F02": {
+          "caption": "Huettl et al.：按显示方式与经验层级分组的定位用时。",
+          "interpretation": "横轴分为 VR、PDF、PR，灰阶区分学生、住院医师、进修医师与专家。纵轴采用对数尺度，不能把刻度直接当作秒数，也不能把箱体高度理解为线性时间比例。实体组整体较低，经验层级仍有分布重叠；星号比较经验组，不应误读为每一相邻箱体均有显著差异。[时间分析](ref:R01)"
+        },
+        "F03": {
+          "caption": "Preukschas et al.：正确答案数与回答用时的随机组比较。",
+          "interpretation": "上图纵轴为正确答案数，下图为分钟；蓝色为切片，橙色为屏幕三维，绿色为 VR。屏幕三维与 VR 的箱体接近，两者之间标注不显著；相对切片组，两种重建都提高正确性并减少用时。菱形是离群值，箱图并未显示个别错误属于血管、肝段还是切除问题。[随机比较结果](ref:R02)"
+        },
+        "F04": {
+          "caption": "Zolkin et al.：单病灶与双病灶的实验模型。",
+          "interpretation": "A–B 各含单个病灶，C–D 各含两个病灶；肝脏外形半透明，蓝紫红色分支提供位置参照。病灶为人工加入，分支经过简化，实验比较的是同时追踪目标数增加后的空间任务。图片不能证明复杂组具有更严重的临床疾病，也没有定量标尺用以读取病灶到血管的实际距离。[模型构建](ref:R03)"
+        },
+        "F05": {
+          "caption": "Zolkin et al.：复杂任务的逐人配对成绩。",
+          "interpretation": "横轴为桌面与 VR，纵轴为问卷成绩；每条线连接同一参与者的两次条件。青绿色上升线、灰色不变线与红色下降线并存，箱体显示总体分布。读图时应同时看总体提高和下降者，而不能把平均值差当作人人增加相同分数；它也不是随培训次数变化的学习曲线。[配对成绩](ref:R03)"
+        },
+        "F06": {
+          "caption": "Zolkin et al.：心理旋转能力与 VR 相对成绩差的关系。",
+          "interpretation": "横轴为心理旋转测验成绩，纵轴为复杂任务 VR 减桌面的成绩差。拟合线缓慢上升，阴影为置信区间，散点却广泛分布于零线上下。它支持群体层面的正相关，不支持按空间能力给个人确定获益；正相关也不能证明其机制是更强立体视觉或更快学习控制器。[能力关联分析](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "Which tasks suit physical, screen-based and VR models?",
+      "direction": "Models for preoperative planning",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Shared reconstructions can change presentation, but tangible feedback and virtual interaction differ",
+          "markdown": "Huettl et al. exported the same segmented reconstructions of 20 liver cases as rotatable three-dimensional PDFs, physical models and VR, reducing differences in segmentation quality between conditions. The 30 participants included students, residents, fellows and hepatopancreatobiliary experts. Each assessed every case in each representation across two sessions, with randomized case and modality order. The task was to identify tumor-bearing liver segments against an expert reference, not to perform liver resection. [Three representations of identical data](ref:R01)\n\n| Representation | Available interaction in the study | Capability not included |\n|---|---|---|\n| Screen-based three-dimensional PDF | Rotation, scaling, hiding or making structures transparent | No head-mounted binocular stereoscopic view |\n| Physical model | Holding, turning and directly perceiving object scale | Rigid object cannot instantly change transparency or size |\n| VR | Stereoscopic viewing, controller rotation and scaling, continuous transparency adjustment | No contact-force feedback from physical internal structures |\n\nThe print surrounded colored vessels and tumors with a transparent exterior, displaying external form and internal adjacency together. Handheld feedback was not liver-tissue feel: the study explicitly describes a solid, inflexible model. Screen and VR views could remove occlusion and enlarge regions. All displayed the same reconstruction; a headset did not add unsegmented branches or microscopic invasion absent from the source information.\n\nThis design tests how existing geometry is presented. A comparison between CT slices and segmented models changes both spatial representation and information organization. Calling every screen condition a two-dimensional control confuses original sections with an already reconstructed three-dimensional screen model.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Faster localization with a physical model can coexist with a preference for VR",
+          "markdown": "In the liver-segment task, physical models and VR produced better correctness than three-dimensional PDF, with P values of 0.036 and 0.040, respectively. Physical models and VR did not differ significantly, P=0.964. Students' mean correct proportions were 0.84 for prints, 0.84 for VR and 0.82 for PDF; experts achieved 0.87, 0.88 and 0.87. These small differences indicate incremental task-specific help, not universally correct recognition of previously inaccessible anatomy. [Localization correctness and speed](ref:R01)\n\n| Modality | Total localization time across cases, s, mean ± SD |\n|---|---:|\n| Physical | 509 ± 156 |\n| VR | 702 ± 248 |\n| Three-dimensional PDF | 734 ± 281 |\n\nPhysical models were significantly faster than both alternatives; VR and PDF times did not differ significantly, P=0.793. These are times for localizing lesions across a set of cases, not operation times per patient, and exclude the full investment in segmentation, production and interface learning. The original figure separates experience levels, showing that interface demands and user experience contribute to performance.\n\nNevertheless, 22 participants preferred VR and 8 preferred physical models; none preferred PDF. Enjoying scaling, transparency and stereoscopy can coexist with faster handheld localization. Assessment became faster in the second session without a corresponding improvement in correctness, further suggesting that interface familiarity may reduce time without improving anatomical judgments.\n\nEveryone saw each case repeatedly. Randomized order reduces but does not eliminate recognition memory, and expert segment allocation involves interpretation. Statistical models accounted for case and participant differences, but the exploratory study did not adjust for multiple testing. Small correctness differences require these conditions to be considered.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Interactive screen reconstructions can already support case judgments without added headset benefit",
+          "markdown": "Preukschas et al. randomized 90 medical students to CT sections, screen-based three-dimensional reconstruction or VR, with 30 in each group. All received an introduction to liver anatomy and resection concepts, familiarized themselves with an additional case, then assessed 3 other cases using 11 questions on anatomy, tumor involvement and proposed resection. Published in 2024, the study recruited in 2016 and evaluates the software and interaction configuration of that period. [Randomized trial tasks and timing](ref:R02)\n\n| Outcome | CT sections | Screen three-dimensional model | VR |\n|---|---:|---:|---:|\n| Correct answers, mean ± SD | 5.4 ± 1.4 | 7.1 ± 1.4 | 7.1 ± 1.4 |\n| Response time, min:sec, mean ± SD | 09:13 ± 03:10 | 06:44 ± 02:22 | 06:24 ± 02:43 |\n\nScreen models and VR both outperformed sections, but did not differ significantly in correctness or time, with P values of 0.987 and 0.419. This supports interactive segmented representations for novices handling these questions, not superiority of immersive headsets over screens in this task set. Non-significance is also not equivalence tested against a prespecified margin.\n\nQuick-switch views combined tumors with different vascular systems; users could rotate, scale and adjust transparency, making the screen condition itself relatively capable. VR also integrated patient information and CT, whereas other groups read case information on paper, introducing layout differences beyond the display device. Cases always followed a fixed sequence, so later faster and more accurate responses cannot wholly establish a transferable learning curve. Operative outcomes among practicing surgeons were not tested.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Tracking multiple lesions can favor VR, but complexity was operationally restricted",
+          "markdown": "The crossover study by Zolkin et al. analyzed 58 medical students, each using VR and a desktop three-dimensional interface for liver inspection. Single-lesion tasks preceded dual-lesion tasks, with balanced modality sequences. Lesions were inserted artificially into patient-derived vascular models, and vessels were simplified to segmental branches. Complexity chiefly meant handling two lesions simultaneously, not quantified vascular variation, infiltrative boundaries or lesion–vessel distance. [Definition of complexity and crossover design](ref:R03)\n\nEach model could be explored for up to 5 minutes, followed by a 1-minute interval before answering questions on lesion–vessel position, contact, segment allocation and vascular pathways. This interval test measures short-term spatial understanding and recall, not long-term retention. Complex-task scores were 28.00 ± 3.32 in VR versus 26.40 ± 3.61 on desktop, P=0.002, with effect size d=0.46.\n\nPaired lines in the original figure show improvement in VR for 60.3% of participants, no change for 12.1% and decline for 27.6%; a mean advantage is not universal benefit. VR simultaneously added binocular depth, head/body movement and walking around the model, while desktop interaction used mouse and keyboard rotation. Matching models, lighting and filtering does not isolate binocular stereoscopy as the cause.\n\nEasy cases always preceded complex cases, coupling complexity with accumulated interface experience. The authors explicitly acknowledge that later VR advantages could partly reflect acclimatization. Simplified vessels and artificial lesions facilitate task control but restrict extrapolation to infiltrative disease or postoperative changes. These conditions also explain why the results need not match the preceding screen-model trial.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Spatial ability, confidence and tolerance determine who can complete the task",
+          "markdown": "In the crossover study, higher mental-rotation scores correlated with a larger complex-task advantage for VR over desktop, r=0.31, P=0.018. This contradicts the intuition that poorer spatial ability necessarily produces greater VR benefit. The authors suggest that stronger spatial skills might facilitate faster interface adaptation, but did not measure that mechanism separately. The scatterplot contains positive and negative differences at similar ability levels, precluding guarantees of individual benefit from test scores. [Spatial ability and individual variation](ref:R03)\n\nConfidence did not increase significantly with the mean performance advantage: VR was 3.30 ± 1.20 versus 3.21 ± 1.19 on desktop, P=0.305. Confidence–accuracy association was 0.41 in both conditions, without better calibration in VR. This analysis included only binary-scored segment-identification and vessel-pathway items, not all clinical decision confidence. It was exploratory and outside the multiple-testing correction for primary hypotheses.\n\nOf 62 recruited participants, 58 were analyzed. Exclusions included 2 with motion sickness, 1 with incomplete questionnaires and 1 with difficulty understanding terminology. Average performance after excluding non-completers does not include these barriers. Physical tolerance and language requirements affect entry into the final sample; better scores among completers do not imply that every learner can use the system under identical conditions.\n\nMost participants had prior desktop interaction experience, whereas VR was new to most. Brief familiarization can disadvantage those still learning controls and also confound later practice effects with case difficulty. The study did not repeat comparisons after matching long-term interface proficiency.",
+          "figure_ids": [
+            "F06"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Contact, exposure and plan modification require distinct tools in clinical modeling workflows",
+          "markdown": "The pediatric cardiac service reported by Ghosh et al. shows tasks beyond structure recognition. Flexible physical models allow viewing access to be changed at actual scale and assessment of how much of a defect is visible through a valve opening. Screens and VR display chambers, branches and adjacency. CAD adds proposed baffles, patches or conduits to anatomy to assess crowding of another outflow tract or conflict with the sternum. Viewing anatomy and modifying a proposal are distinct operations. [Division of tasks within clinical modeling](ref:R04)\n\nFor direct contact or exposure testing, physical deformability has a practical role, but the rigid transparent liver model in the localization study does not provide that function. Repeated comparison of digital proposals can use screen tools to modify geometry, hide structures and retain versions. Whether a headset is needed depends on the spatial judgment and interface configuration. Tangibility alone does not establish realistic suturing, tissue separation or instrument resistance.\n\nThe cardiac service reported 112 modeling cases, including 96 for clinical planning, which generated 127 models across multiple display formats. It documented questions prompting tool use, but did not randomize physical, screen and VR conditions separately or attribute clinical outcomes to one representation. Left-ventricle-to-aorta baffles, adjacent outflow tracts and substernal conduits were actual discussion targets. Photographs and usage counts do not estimate how each proposal changed patient outcomes.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Huettl et al.: Physical, screen and VR representations of the same liver reconstruction.",
+          "interpretation": "A shows a transparent physical exterior enclosing colored structures, B the three-dimensional PDF and C a VR screenshot. Yellow lesions and branch relationships can be compared across panels. Transparency, colors and illumination differ, so shared meshes do not mean identical visual input. Static screenshots cannot convey binocular VR depth or handheld physical feedback; the interaction methods remain essential. [Presentation modalities](ref:R01)"
+        },
+        "F02": {
+          "caption": "Huettl et al.: Localization time by modality and experience level.",
+          "interpretation": "The horizontal groups are VR, PDF and PR; grayscale separates students, residents, fellows and experts. The vertical axis is logarithmic, so ticks are not seconds and box heights are not linear time ratios. Physical-model distributions are generally lower, with overlapping experience groups. Stars compare experience levels, not every adjacent pair of boxes. [Time analysis](ref:R01)"
+        },
+        "F03": {
+          "caption": "Preukschas et al.: Randomized-group comparison of correct answers and response time.",
+          "interpretation": "The upper axis shows correct answers and the lower axis minutes. Blue denotes sections, orange screen-based three-dimensional models and green VR. Screen and VR boxes are close, with a non-significant comparison; both reconstructions improve correctness and reduce time relative to sections. Diamonds mark outliers. The plot does not identify whether individual errors concern vessels, segments or resection questions. [Randomized comparison](ref:R02)"
+        },
+        "F04": {
+          "caption": "Zolkin et al.: Experimental single-lesion and dual-lesion models.",
+          "interpretation": "A–B each contain one lesion; C–D each contain two. A translucent liver surface and blue, purple and red branches provide orientation. Lesions were inserted artificially and branches simplified; the experiment tests spatial tracking with more simultaneous targets. Images do not establish more severe clinical disease in complex cases, and no quantitative scale permits reading actual lesion–vessel distance. [Model construction](ref:R03)"
+        },
+        "F05": {
+          "caption": "Zolkin et al.: Individual paired scores on complex tasks.",
+          "interpretation": "Desktop and VR form the horizontal conditions; the vertical axis is questionnaire score. Each line connects one participant across conditions. Turquoise improvements, gray unchanged scores and red declines coexist; boxes show overall distributions. Both the average increase and declining participants matter, rather than assuming the same gain for everyone. This is not a learning curve across repeated training sessions. [Paired performance](ref:R03)"
+        },
+        "F06": {
+          "caption": "Zolkin et al.: Mental rotation ability and relative VR performance.",
+          "interpretation": "The horizontal axis is mental-rotation score; the vertical axis is complex-task VR minus desktop performance. The fitted line rises modestly and shading marks its confidence interval, while points remain widely dispersed above and below zero. This supports a group-level positive association, not guaranteed individual benefit from spatial ability, and does not identify stronger stereopsis or faster controller learning as its mechanism. [Ability association](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Für welche Aufgaben eignen sich physische, Bildschirm- und VR-Modelle?",
+      "direction": "Modelle für die präoperative Planung",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Dieselbe Rekonstruktion erlaubt verschiedene Darstellungen; Greifbarkeit und virtuelle Interaktion unterscheiden sich",
+          "markdown": "Huettl et al. exportierten dieselben segmentierten Rekonstruktionen von 20 Leberfällen als drehbare dreidimensionale PDFs, physische Modelle und VR. Dadurch wurden Unterschiede der Segmentierungsqualität zwischen Bedingungen verringert. Die 30 Teilnehmenden umfassten Studierende, Weiterbildungsärzte, Fellows und hepatopankreatobiliäre Experten. Jeder beurteilte sämtliche Fälle in jeder Darstellung in zwei Sitzungen mit randomisierter Fall- und Modalitätsreihenfolge. Aufgabe war die Benennung tumortragender Lebersegmente anhand einer Expertenreferenz, keine ausgeführte Leberresektion. [Drei Darstellungen identischer Daten](ref:R01)\n\n| Darstellung | In der Studie mögliche Interaktion | Nicht enthaltene Fähigkeit |\n|---|---|---|\n| Dreidimensionales Bildschirm-PDF | Drehen, Skalieren, Ausblenden oder transparentes Anzeigen | Keine binokulare stereoskopische Headset-Ansicht |\n| Physisches Modell | Halten, Drehen und unmittelbare Wahrnehmung der Objektgröße | Starres Objekt ohne sofort veränderbare Transparenz oder Größe |\n| VR | Stereoskopie, Controller-Drehung und Skalierung, kontinuierliche Transparenzänderung | Keine Kontaktkraft-Rückmeldung physischer Innenstrukturen |\n\nDer Druck umgab farbige Gefäße und Tumoren mit einer transparenten Außenform und zeigte äußere Gestalt und innere Nachbarschaft zugleich. Greifbarkeit bedeutete keine leberähnliche Gewebehaptik: Die Studie beschreibt ausdrücklich ein festes, unflexibles Modell. Bildschirm und VR konnten Verdeckungen entfernen und Regionen vergrößern. Alle zeigten dieselbe Rekonstruktion; ein Headset ergänzte weder unsegmentierte Äste noch mikroskopische Invasion außerhalb der Ausgangsinformation.\n\nDieses Design prüft die Darstellung vorhandener Geometrie. Ein Vergleich von CT-Schnitten mit segmentierten Modellen verändert dagegen räumliche Darstellung und Informationsaufbereitung gleichzeitig. Sämtliche Bildschirmbedingungen als zweidimensionale Kontrolle zu bezeichnen verwechselt ursprüngliche Schnitte mit einem bereits rekonstruierten dreidimensionalen Bildschirmmodell.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Schnellere Lokalisation am physischen Modell kann mit einer VR-Präferenz einhergehen",
+          "markdown": "Bei der Lebersegmentaufgabe waren physische Modelle und VR korrekter als dreidimensionale PDFs, mit P-Werten von 0.036 beziehungsweise 0.040. Physische Modelle und VR unterschieden sich nicht signifikant, P=0.964. Der mittlere korrekte Anteil der Studierenden betrug 0.84 für Drucke, 0.84 für VR und 0.82 für PDF; Experten erreichten 0.87, 0.88 und 0.87. Die kleinen Differenzen sprechen für zusätzliche aufgabenbezogene Hilfe, nicht für durchgehend richtige Erkennung zuvor unzugänglicher Anatomie. [Lokalisationsrichtigkeit und Geschwindigkeit](ref:R01)\n\n| Modalität | Gesamte Lokalisationszeit über alle Fälle, s, Mittelwert ± SD |\n|---|---:|\n| Physisch | 509 ± 156 |\n| VR | 702 ± 248 |\n| Dreidimensionales PDF | 734 ± 281 |\n\nPhysische Modelle waren signifikant schneller als beide Alternativen; VR und PDF unterschieden sich zeitlich nicht signifikant, P=0.793. Gemessen wurde die Lokalisation über eine Fallserie, keine Operationszeit pro Patient; Segmentierung, Fertigung und vollständige Einarbeitung sind nicht enthalten. Die Originalgrafik trennt Erfahrungsstufen und zeigt den Beitrag von Bedienanforderungen und Erfahrung.\n\nTrotzdem bevorzugten 22 Teilnehmende VR und 8 physische Modelle; niemand bevorzugte PDF. Gefallen an Skalierung, Transparenz und Stereoskopie kann mit schnellerer greifbarer Lokalisation einhergehen. In der zweiten Sitzung wurde die Beurteilung schneller, ohne entsprechenden Richtigkeitsgewinn. Bedienvertrautheit kann somit Zeit sparen, ohne anatomische Urteile zu verbessern.\n\nAlle sahen jeden Fall wiederholt. Randomisierte Reihenfolge vermindert Wiedererkennung, beseitigt sie aber nicht; auch die Segmentzuordnung durch Experten enthält Interpretation. Statistische Modelle berücksichtigten Fall- und Teilnehmerunterschiede, die explorative Studie korrigierte jedoch nicht für multiple Vergleiche. Kleine Richtigkeitsunterschiede sind unter diesen Bedingungen zu lesen.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Interaktive Bildschirmrekonstruktionen unterstützen Fallurteile bereits ohne zusätzlichen Headset-Vorteil",
+          "markdown": "Preukschas et al. randomisierten 90 Medizinstudierende zu CT-Schnitten, dreidimensionaler Bildschirmrekonstruktion oder VR mit jeweils 30 Personen. Alle erhielten eine Einführung in Leberanatomie und Resektionskonzepte, übten mit einem zusätzlichen Fall und beurteilten danach 3 weitere Fälle anhand von 11 Fragen zu Anatomie, Tumorbeteiligung und geplanter Resektion. Die Veröffentlichung erfolgte 2024, die Rekrutierung 2016; geprüft wurde die damalige Software- und Interaktionskonfiguration. [Aufgaben und zeitlicher Hintergrund der randomisierten Studie](ref:R02)\n\n| Ergebnis | CT-Schnitte | Dreidimensionales Bildschirmmodell | VR |\n|---|---:|---:|---:|\n| Richtige Antworten, Mittelwert ± SD | 5.4 ± 1.4 | 7.1 ± 1.4 | 7.1 ± 1.4 |\n| Antwortzeit, min:s, Mittelwert ± SD | 09:13 ± 03:10 | 06:44 ± 02:22 | 06:24 ± 02:43 |\n\nBildschirmmodelle und VR übertrafen Schnittbilder, unterschieden sich jedoch weder in Richtigkeit noch Zeit signifikant: P=0.987 beziehungsweise 0.419. Unterstützt wird der Nutzen interaktiver segmentierter Darstellungen für Anfänger bei diesen Fragen, keine Überlegenheit immersiver Headsets gegenüber Bildschirmen. Nichtsignifikanz ist zudem kein Äquivalenznachweis anhand einer vorab definierten Grenze.\n\nSchnell wechselbare Ansichten kombinierten Tumor und verschiedene Gefäßsysteme; Drehen, Skalieren und Transparenzänderung machten bereits die Bildschirmbedingung funktionsreich. VR integrierte außerdem Patienteninformationen und CT, während andere Gruppen Falldaten auf Papier lasen. Neben dem Gerät unterschied sich somit die Informationsanordnung. Fälle erschienen immer in fester Reihenfolge; spätere schnellere und richtigere Antworten belegen deshalb nicht vollständig eine übertragbare Lernkurve. Operationsergebnisse praktizierender Chirurgen wurden nicht geprüft.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Das Verfolgen mehrerer Läsionen kann VR begünstigen, doch Komplexität war eng definiert",
+          "markdown": "Die Crossover-Studie von Zolkin et al. analysierte 58 Medizinstudierende, die jeweils VR und eine dreidimensionale Desktop-Oberfläche zur Leberbetrachtung nutzten. Aufgaben mit einer Läsion gingen solchen mit zwei Läsionen voraus; Modalitätsfolgen waren ausbalanciert. Läsionen wurden künstlich in patientenbasierte Gefäßmodelle eingefügt, Gefäße auf Segmentäste vereinfacht. Komplexität bedeutete vor allem gleichzeitiges Verarbeiten zweier Läsionen, keine quantifizierte Gefäßvariation, Infiltrationsgrenze oder Läsion-Gefäß-Distanz. [Komplexitätsdefinition und Crossover-Design](ref:R03)\n\nJedes Modell konnte bis zu 5 Minuten betrachtet werden; nach 1 Minute Pause folgten Fragen zu Lage, Kontakt, Segmentzuordnung und Gefäßwegen. Dieses Intervall prüft kurzfristiges Raumverständnis und Erinnern, keine langfristige Wissensspeicherung. Bei komplexen Aufgaben betrug der Wert 28.00 ± 3.32 in VR gegenüber 26.40 ± 3.61 am Desktop, P=0.002, mit Effektstärke d=0.46.\n\nGepaarte Linien der Originalgrafik zeigen Verbesserung in VR bei 60.3%, unveränderte Leistung bei 12.1% und Verschlechterung bei 27.6%. Ein mittlerer Vorteil bedeutet keinen Nutzen für alle. VR ergänzte gleichzeitig binokulare Tiefe, Kopf- und Körperbewegung sowie Umgehen des Modells; am Desktop erfolgte Drehung über Maus und Tastatur. Gleiche Modelle, Beleuchtung und Filter isolieren daher Stereoskopie nicht als Ursache.\n\nEinfache Fälle standen stets vor komplexen; Komplexität war mit zunehmender Bedienerfahrung gekoppelt. Die Autoren weisen ausdrücklich darauf hin, dass spätere VR-Vorteile teilweise Eingewöhnung widerspiegeln könnten. Vereinfachte Gefäße und künstliche Läsionen kontrollieren Aufgaben, begrenzen aber die Übertragung auf infiltrative Erkrankungen oder postoperative Veränderungen. Diese Bedingungen erklären auch, warum die Ergebnisse nicht mit der vorangegangenen Bildschirmmodellstudie übereinstimmen müssen.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Raumfähigkeit, Sicherheit und Verträglichkeit beeinflussen die Aufgabenbearbeitung",
+          "markdown": "In der Crossover-Studie korrelierten höhere Werte im mentalen Rotationstest mit größerem VR-Vorteil bei komplexen Aufgaben, r=0.31, P=0.018. Dies widerspricht der Annahme, geringere Raumfähigkeit führe zwangsläufig zu stärkerem VR-Nutzen. Die Autoren vermuten schnellere Bedienanpassung bei stärkerem Raumvermögen, maßen diesen Mechanismus aber nicht getrennt. Bei ähnlichen Fähigkeiten enthält das Streudiagramm positive und negative Differenzen; individuelle Vorteile lassen sich aus Testwerten nicht garantieren. [Raumfähigkeit und individuelle Unterschiede](ref:R03)\n\nDie Antwortsicherheit stieg trotz mittlerem Leistungsvorteil nicht signifikant: VR 3.30 ± 1.20 gegenüber Desktop 3.21 ± 1.19, P=0.305. Der Zusammenhang zwischen Sicherheit und Richtigkeit betrug in beiden Bedingungen 0.41, ohne bessere Kalibrierung in VR. Analysiert wurden nur binär bewertete Segment- und Gefäßwegfragen, nicht sämtliche klinische Entscheidungssicherheit. Die Analyse war explorativ und außerhalb der Mehrfachtestkorrektur der Haupthypothesen.\n\nVon 62 Rekrutierten wurden 58 analysiert. Ausgeschlossen wurden 2 wegen Bewegungsübelkeit, 1 wegen unvollständiger Fragebögen und 1 wegen Verständnisschwierigkeiten mit Fachbegriffen. Mittelwerte nach Ausschluss von Abbrüchen enthalten diese Hindernisse nicht. Körperliche Verträglichkeit und Sprachanforderungen beeinflussen die endgültige Stichprobe; höhere Werte der Abschließenden bedeuten keine gleiche Nutzbarkeit für alle Lernenden.\n\nDie meisten hatten bereits Erfahrung mit Desktop-Interaktion, VR war für die Mehrheit neu. Kurze Einarbeitung kann noch ungeübte Personen benachteiligen und spätere Übungseffekte mit Fallschwierigkeit vermischen. Nach Angleichung langfristiger Bedienkompetenz wurde kein erneuter Vergleich durchgeführt.",
+          "figure_ids": [
+            "F06"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Kontakt, Exposition und Planänderung verlangen unterschiedliche Werkzeuge im klinischen Arbeitsablauf",
+          "markdown": "Der von Ghosh et al. beschriebene kinderherzchirurgische Modellierungsdienst zeigt Aufgaben jenseits der Strukturerkennung. Flexible physische Modelle erlauben veränderte Einblicke im tatsächlichen Maßstab und die Beurteilung, wie viel eines Defekts durch eine Klappenöffnung sichtbar ist. Bildschirm und VR zeigen Kammern, Äste und Nachbarschaften. CAD ergänzt geplante Tunnel, Patches oder Leitungen, um Einengung benachbarter Ausflusstrakte oder Konflikte mit dem Sternum zu prüfen. Anatomie betrachten und einen Entwurf verändern sind unterschiedliche Tätigkeiten. [Aufgabenteilung in der klinischen Modellierung](ref:R04)\n\nBei direktem Kontakt oder Expositionsprüfung hat physische Verformbarkeit einen praktischen Nutzen; das starre transparente Lebermodell der Lokalisationsstudie erfüllt diese Funktion nicht. Wiederholter Vergleich digitaler Entwürfe kann Bildschirmwerkzeuge zur Geometrieänderung, Strukturausblendung und Versionsaufbewahrung nutzen. Ob ein Headset erforderlich ist, hängt von räumlicher Urteilsaufgabe und Bedienkonfiguration ab. Greifbarkeit allein belegt keine realistische Naht, Gewebetrennung oder Instrumentenreibung.\n\nDer Herzdienst berichtete 112 Modellierungsfälle, darunter 96 zur klinischen Planung mit 127 Modellen verschiedener Anzeigeformate. Dokumentiert wurden Fragen, die Werkzeugnutzung auslösten; physische, Bildschirm- und VR-Bedingungen wurden weder getrennt randomisiert noch klinische Ergebnisse einer Darstellung zugeordnet. Tunnel vom linken Ventrikel zur Aorta, benachbarte Ausflusstrakte und substernale Leitungen waren tatsächliche Diskussionsobjekte. Fotos und Nutzungszahlen schätzen nicht, wie einzelne Entwürfe Patientenergebnisse veränderten.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Huettl et al.: Physische, Bildschirm- und VR-Darstellung derselben Leberrekonstruktion.",
+          "interpretation": "A zeigt eine transparente Außenform um farbige Strukturen, B das dreidimensionale PDF, C einen VR-Screenshot. Gelbe Läsionen und Astbeziehungen lassen sich vergleichen. Transparenz, Farben und Beleuchtung unterscheiden sich; gleiche Netze bedeuten daher keinen identischen visuellen Eingang. Statische Bilder vermitteln weder binokulare VR-Tiefe noch Greifbarkeit. Die Interaktionsmethoden bleiben wesentlich. [Darstellungsmodalitäten](ref:R01)"
+        },
+        "F02": {
+          "caption": "Huettl et al.: Lokalisationszeit nach Modalität und Erfahrungsstufe.",
+          "interpretation": "Horizontal stehen VR, PDF und PR; Graustufen unterscheiden Studierende, Weiterbildungsärzte, Fellows und Experten. Die vertikale Achse ist logarithmisch: Teilstriche sind keine Sekunden und Boxhöhen keine linearen Zeitverhältnisse. Physische Modelle liegen insgesamt niedriger, Erfahrungsgruppen überlappen dennoch. Sterne vergleichen Erfahrungsstufen, nicht jedes benachbarte Boxpaar. [Zeitanalyse](ref:R01)"
+        },
+        "F03": {
+          "caption": "Preukschas et al.: Randomisierter Gruppenvergleich richtiger Antworten und Antwortzeit.",
+          "interpretation": "Oben stehen richtige Antworten, unten Minuten. Blau bezeichnet Schnittbilder, Orange dreidimensionale Bildschirmmodelle, Grün VR. Bildschirm- und VR-Boxen liegen nahe beieinander und sind als nicht signifikant verschieden markiert; beide Rekonstruktionen erhöhen Richtigkeit und senken Zeit gegenüber Schnitten. Rauten kennzeichnen Ausreißer. Die Grafik ordnet einzelne Fehler nicht Gefäß-, Segment- oder Resektionsfragen zu. [Randomisierter Vergleich](ref:R02)"
+        },
+        "F04": {
+          "caption": "Zolkin et al.: Experimentelle Modelle mit einer beziehungsweise zwei Läsionen.",
+          "interpretation": "A–B enthalten jeweils eine Läsion, C–D jeweils zwei. Eine transparente Leberoberfläche und blaue, violette und rote Äste dienen der Orientierung. Läsionen wurden künstlich eingefügt und Äste vereinfacht; geprüft wird räumliches Verfolgen zusätzlicher gleichzeitiger Ziele. Die Bilder belegen keine schwerere klinische Erkrankung komplexer Fälle; ohne Maßstab lassen sich tatsächliche Läsion-Gefäß-Distanzen nicht ablesen. [Modellaufbau](ref:R03)"
+        },
+        "F05": {
+          "caption": "Zolkin et al.: Individuell gepaarte Werte komplexer Aufgaben.",
+          "interpretation": "Desktop und VR stehen horizontal, der Fragebogenwert vertikal. Jede Linie verbindet dieselbe Person zwischen Bedingungen. Türkise Verbesserungen, graue unveränderte Werte und rote Verschlechterungen treten gemeinsam auf; Boxen zeigen Gesamtverteilungen. Mittlerer Anstieg und Personen mit Abfall sind zugleich zu beachten, statt gleichen Gewinn für alle anzunehmen. Dies ist keine Lernkurve wiederholter Trainingssitzungen. [Gepaarte Leistung](ref:R03)"
+        },
+        "F06": {
+          "caption": "Zolkin et al.: Mentale Rotationsfähigkeit und relative VR-Leistung.",
+          "interpretation": "Horizontal steht der Rotationstestwert, vertikal die komplexe Aufgabenleistung in VR minus Desktop. Die Anpassungslinie steigt mäßig, ihre Schattierung zeigt das Konfidenzintervall; Punkte streuen weit über und unter null. Unterstützt wird ein positiver Zusammenhang auf Gruppenebene, kein garantierter individueller Nutzen. Stärkere Stereoskopie oder schnelleres Controllerlernen sind dadurch nicht als Mechanismus nachgewiesen. [Fähigkeitsassoziation](ref:R03)"
+        }
+      }
+    }
+  }
+}

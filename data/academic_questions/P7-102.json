@@ -1,0 +1,289 @@
+{
+  "schema_version": 2,
+  "question_id": "P7-102",
+  "p": "P7",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-04",
+  "related_paper_ids": [
+    "doc_d895dfe864ff9ff2df85",
+    "doc_73fc734481ce13483e93",
+    "doc_1113278c4e540678c063",
+    "doc_07c3a5f52db5e7cc00bb"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Customizable 3D printed perfusion bioreactor for the engineering of stem cell microenvironments",
+      "publisher": "Frontiers in Bioengineering and Biotechnology",
+      "year": 2023,
+      "url": "https://doi.org/10.3389/fbioe.2022.1081145",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "3D-Printed Microfluidic Perfusion System for Parallel Monitoring of Hydrogel-Embedded Cell Cultures",
+      "publisher": "Cells",
+      "year": 2023,
+      "url": "https://doi.org/10.3390/cells12141816",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "An optimized 3D-printed perfusion bioreactor for homogeneous cell seeding in bone substitute scaffolds for future chairside applications",
+      "publisher": "Scientific Reports",
+      "year": 2021,
+      "url": "https://doi.org/10.1038/s41598-021-01516-8",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Emulating clinical pressure waveforms in cell culture using an Arduino-controlled millifluidic 3D-printed platform for 96-well plates",
+      "publisher": "Lab on a Chip",
+      "year": 2023,
+      "url": "https://doi.org/10.1039/d2lc00970f",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R03",
+      "original_label": "Figure 6",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8593024.1/41598_2021_1516_Fig6_HTML.jpg?md5=0a4cd191f8409b9fee5aaa7365ece1e0",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8593024/#Fig6",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P7-102/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R03",
+      "original_label": "Figure 8",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8593024.1/41598_2021_1516_Fig8_HTML.jpg?md5=d2638df06791e3a9c2f5132923b9b1b1",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8593024/#Fig8",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P7-102/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Figure 3",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10378615.1/cells-12-01816-g003.jpg?md5=193c32227d499328aa4f9878d505819c",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10378615/#cells-12-01816-f003",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P7-102/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Figure 4",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10378615.1/cells-12-01816-g004.jpg?md5=3179489b9bd12a3eca09eacd11d9c636",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10378615/#cells-12-01816-f004",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P7-102/F04.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "打印培养装置如何控制细胞微环境？",
+      "direction": "体外细胞与组织模型",
+      "sections": [
+        {
+          "id": "environment_endpoints",
+          "title": "微环境控制的不同含义：空间分布、材料界面与细胞状态",
+          "markdown": "打印培养装置参与研究的方式包括改变组织周围的输运边界、容纳不同尺寸的支架、提供观察窗口，以及把机械刺激与细胞反应对应起来。这里的“控制”不是一个单独指标：装置中的细胞数、细胞在深度方向上的分布、细胞是否存活、是否保持特定表型，可能给出不同的排序。\n\n骨替代支架研究利用荧光与核医学成像比较细胞在支架中的分布；骨髓微环境研究关注基质细胞与造血细胞的相互作用；水凝胶微腔研究比较装置与常规孔板中的细胞形态和活性。三种研究分别把空间占据、细胞关系与观察兼容性放在分析中心。[骨支架成像研究](ref:R03) [骨髓微环境研究](ref:R01) [水凝胶微腔研究](ref:R02)\n\n解释装置贡献时，需要区分打印的外部结构和真正接触细胞的基质。打印腔体本身不是组织；胶原支架、水凝胶和支持细胞共同决定细胞实际经历的环境。因此，细胞功能变化既可能来自输运，也可能来自基质稳定性或邻近细胞，实验对照决定能够辨认哪一种因素。",
+          "figure_ids": []
+        },
+        {
+          "id": "spatial_readouts",
+          "title": "细胞多不等于分布均匀：整体信号与空间读数",
+          "markdown": "Engel 等同时记录了支架内的细胞富集与分布均匀性。研究中，富集程度较高的构型与均匀性较好的构型并不完全重合。Hoover 系数用于描述空间分布的不均等程度，越接近零越均匀；报告中的较均匀状态达到 0.24。这个系数描述的是空间分配，不是细胞活率，也不等于组织功能评分。[原文分布比较](ref:R03)\n\nFigure 6 将荧光成像与放射性示踪成像并列，两者显示相近的空间占据模式，增强了对分布结论的支持。两种信号的物理来源、动态范围和空间分辨率不同，图中的亮度不能跨模态直接换算成相同细胞数。与只测整个支架的总信号相比，空间成像可以识别某一局部聚集而另一部分稀疏的情况。\n\n这一结果解释了为什么“进入支架的细胞更多”与“微环境更均一”是不同研究问题。前者关注总量，后者关注不同位置的可及性。局部细胞拥挤还会改变邻近关系与代谢需求，整体平均值会把这些差别合并。研究装置的价值在于让这种空间差异变得可观察，而不是仅增加一项总量指标。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "matrix_and_niche",
+          "title": "基质与支持细胞：同一个腔体可以产生不同的生物学结果",
+          "markdown": "Dupard 等在打印装置中比较未交联与交联胶原支架。经过 2 周，细胞数量相对起点约增加 8 倍与 12 倍；原文 Figure 2B 给出的组间 P 值为 0.01。作者把差别与未交联支架的降解联系起来。因为两组的基质状态不同，这不是单纯比较“打印装置是否促进增殖”的实验。[原文 Figure 2](ref:R01)\n\n同一研究进一步比较有无基质支持细胞的造血微环境。包含支持细胞的 Niche 组中，表型定义的造血干细胞数量相对输入增加 13.30 ± 2.25 倍；另一个多能祖细胞亚群的变化不同，而较分化群体并没有统一增加。Figure 3D 中部分比较的 P 值为 0.06 与 0.073，不能把整张图的所有组间差异都称为显著。[原文 Figure 3](ref:R01)\n\n这里的功能证据来自细胞接触图像和表型分群。表型细胞数量增加与长期重建造血功能是不同终点；这项实验直接回答的是所建立微环境对这些表型群体的支持。它把研究从“是否有细胞”推进到“保留了哪一种细胞状态”，也显示支持细胞、基质与空间组织不能被简化为一个装置标签。",
+          "figure_ids": []
+        },
+        {
+          "id": "observation_compatibility",
+          "title": "细胞看起来相似时，装置可能改善的是观察与样本保持",
+          "markdown": "Meyer 等把水凝胶中的 L929 细胞放在打印培养装置与常规孔板中比较，观察从 Day 0 延续到 Day 3。Figure 3 显示两种容器中的细胞均主要呈圆形，随时间可见分裂和轻微形态变化；该水凝胶中没有明显铺展。因此，“保持圆形”在这个实验中不是独立的损伤判断，应结合分裂、活性染色和材料背景阅读。[原文 Figure 3](ref:R02)\n\nFigure 4 同时提供整个培养腔与局部视野。活死染色没有显示两种培养容器间明显的活性差别，也未提示装置内部位置导致明显差异。作者提供的是代表性显微图像，图中没有给出逐腔的活率百分比、等效性界值或整体氧分布图。因此，报告中的“相似”对应观察到的形态与染色表现，不应改写成精确的百分比优势。[原文 Figure 4](ref:R02)\n\n装置的研究价值仍然清楚：水凝胶保持在原位，显微镜可以观察腔内不同位置，样本能够在观察后继续被分析。两组生物学响应相近时，结果支持的是测量兼容性和样本管理能力，而不是必须宣称细胞增殖更快。单侧供给的几何结构也意味着深度梯度仍是另一个需要直接测量的变量。",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "tissue_phenotype",
+          "title": "从早期占据到组织表型：成像时间点不能合并",
+          "markdown": "骨支架研究在较晚的组织学分析中观察到支架表面与孔隙内的多层细胞，并检测到胶原、骨桥蛋白与骨唾液酸蛋白相关信号。Figure 8A 描述组织分布，Figure 8B 显示支架自发荧光背景，后续面板将标志物信号与细胞核位置对应。把背景图一起阅读，能够避免把骨替代材料本身的绿色信号全算作细胞新表达。[原文 Figure 8](ref:R03)\n\nFigure 8G 比较 OPN、BMP-2 与 DLX-5 的表达。支架组柱高在数值上较低，作者报告其与阳性对照的差异未达到统计显著。未发现显著差异不是已经完成等效性验证；这组结果直接支持的是受试条件下出现成骨相关表型，不能从柱高推导出新骨承载能力。\n\n该较晚时间点为 14 天，而早期空间成像关注初始细胞占据。早期分布、后续存活、标志物表达和最终组织力学属于不同观察层级。它们可以形成研究链路，但每一环都需要自身的测量；把不同时间点的图合成一个“装置使组织功能提高”的单句会丢失实验的具体含义。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "mechanical_inputs",
+          "title": "机械输入与细胞反应：刺激实现了，不代表所有终点都会改变",
+          "markdown": "另一项 96 孔板研究把不同压力波形与人脐静脉内皮细胞的反应对应。系统可以同时容纳 12 种压力条件；研究观察到细胞在 3 天内保持存活和增殖，静态与动态压力组之间未见显著增殖差异。这里同时存在两个结果：装置能够呈现不同机械输入，而选定的增殖终点没有明显区分这些输入。[压力波形研究](ref:R04)\n\n| 所研究的微环境环节 | 对应读数 | 比较时保留的条件 |\n|---|---|---|\n| 支架内空间占据 | 空间成像、Hoover 系数 | 总量与均匀性分别解释 |\n| 基质稳定性与支持细胞 | 细胞数、表型群体 | 基质种类与细胞组成对应 |\n| 水凝胶微腔中的相容性 | 形态与活死染色 | 成像位置、材料背景及对照容器 |\n| 较晚的组织表型 | 组织学、蛋白与转录指标 | 时间点、阳性对照及背景信号 |\n| 机械压力刺激 | 输入波形与增殖 | 细胞类型及观测终点 |\n\n这些结果给出了不同研究结论的适用范围。分布更均匀的装置可能没有最高的细胞总量；基质保持更稳定时细胞数量可能较多；可成像的微腔可以维持与孔板相近的细胞状态；压力差异也可能没有反映到增殖上。它们描述的是不同的环境变量与细胞响应，不能只用一个“培养效果更好”把差别抹平。",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Engel 等，原文 Figure 6：两种成像方法的细胞分布比较。",
+          "interpretation": "左侧为荧光重建，右侧为放射性示踪成像，中间箭头标示观察所对应的方向。两者相近的宏观占据模式支持分布判断；右图的白色高信号区不应和左图亮度作绝对细胞数量比较。这里没有从颜色反推出新的浓度或输运条件。"
+        },
+        "F02": {
+          "caption": "Engel 等，原文 Figure 8：组织学、背景荧光与成骨相关表达。",
+          "interpretation": "A 显示细胞层沿支架表面及孔隙分布；B 是材料背景，C–F 将标志物与细胞核对应，G 比较三个转录指标与阳性对照。绿色背景并不全部来自新生成组织。G 中柱高的数值差别与作者报告的统计结果应同时保留，不能把未显著改写成已证实等效。"
+        },
+        "F03": {
+          "caption": "Meyer 等，原文 Figure 3：培养装置与孔板中的形态时间序列。",
+          "interpretation": "上排是打印装置，下排是孔板；横向从 Day 0 到 Day 3，比例尺为 100 µm。两排均呈以圆形为主的细胞形态，随时间出现分裂。图像没有逐个追踪同一细胞，因此可比较代表性形态，不能把不同视野直接当作同一细胞的运动路径或精确增殖曲线。"
+        },
+        "F04": {
+          "caption": "Meyer 等，原文 Figure 4：整体与局部的活死染色。",
+          "interpretation": "a 提供整个培养腔的空间参照，b 与 c 分别为装置与孔板局部视野。局部绿色细胞信号应与整体图的边缘背景区分。不同面板显示比例不同，不能直接用肉眼比较绿色面积作为活率差值；本图支持作者对观察相似性的描述。"
+        }
+      }
+    },
+    "en": {
+      "title": "How do printed culture devices control the cellular microenvironment?",
+      "direction": "In vitro cell and tissue models",
+      "sections": [
+        {
+          "id": "environment_endpoints",
+          "title": "Different meanings of microenvironment control: spatial distribution, material interfaces and cell state",
+          "markdown": "Printed culture devices contribute by changing transport boundaries around tissue, accommodating scaffolds of different sizes, providing observation windows and relating mechanical stimuli to cellular responses. “Control” is not a single metric: cell number, distribution through depth, viability and retention of a particular phenotype can rank systems differently.\n\nA bone-substitute study combined fluorescence and nuclear imaging to compare cell distribution. A bone-marrow microenvironment study examined stromal–hematopoietic interactions, while a hydrogel-microchamber study compared morphology and viability in a device and conventional well plates. Their analytical centres are spatial occupancy, cellular relationships and compatibility with observation, respectively.[Bone-scaffold imaging study](ref:R03) [Bone-marrow microenvironment study](ref:R01) [Hydrogel-microchamber study](ref:R02)\n\nThe printed outer structure must be distinguished from the matrix that actually contacts cells. A printed chamber is not itself tissue: collagen scaffolds, hydrogels and supporting cells jointly define the experienced environment. Functional changes may arise from transport, matrix stability or neighbouring cells; the experimental comparator determines which contribution can be identified.",
+          "figure_ids": []
+        },
+        {
+          "id": "spatial_readouts",
+          "title": "More cells need not mean a more uniform distribution: aggregate signals and spatial readouts",
+          "markdown": "Engel and colleagues measured both cell enrichment and distribution uniformity within a scaffold. The configuration with greater enrichment was not identical to the one with better uniformity. The Hoover coefficient describes spatial inequality, with values closer to zero indicating a more uniform distribution; the study reported a comparatively uniform state of 0.24. This coefficient measures spatial allocation, not viability or tissue function.[Original distribution comparison](ref:R03)\n\nFigure 6 juxtaposes fluorescence and radiotracer imaging. Similar occupancy patterns strengthen the spatial interpretation, but signal origin, dynamic range and spatial resolution differ. Brightness cannot be converted directly into the same cell count across modalities. Spatial imaging can identify local accumulation alongside sparsely occupied regions that would be combined in a whole-scaffold signal.\n\nThis separates “more cells entering the scaffold” from “a more homogeneous microenvironment.” The former concerns total quantity and the latter accessibility at different locations. Local crowding also changes neighbouring-cell relationships and metabolic demand, which aggregate averages combine. The device’s research contribution is to make these spatial differences observable rather than merely adding another bulk metric.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "matrix_and_niche",
+          "title": "Matrix and supporting cells: one chamber can yield different biological outcomes",
+          "markdown": "Dupard and colleagues compared non-crosslinked and crosslinked collagen scaffolds within printed devices. After 2 weeks, cell numbers increased approximately 8-fold and 12-fold relative to the starting level; the between-group P value in Figure 2B is 0.01. The authors associate this difference with degradation of the non-crosslinked scaffold. Because matrix condition differs, this is not an isolated test of whether a printed chamber promotes proliferation.[Original Figure 2](ref:R01)\n\nThe study then compared hematopoietic environments with and without stromal support cells. In the supported Niche group, phenotypically defined hematopoietic stem cells increased 13.30 ± 2.25-fold relative to input. Another multipotent-progenitor subset responded differently, and more differentiated populations did not increase uniformly. Some comparisons in Figure 3D have P values of 0.06 and 0.073, so not every group difference in the figure is statistically significant.[Original Figure 3](ref:R01)\n\nThe evidence consists of cellular-contact images and phenotypic populations. An increase in phenotypically defined cells and long-term hematopoietic reconstitution are different endpoints; this experiment directly addresses support of those populations by the engineered environment. It advances the question from whether cells are present to which cellular states are retained, while showing why supporting cells, matrix and spatial organization cannot be reduced to a device label.",
+          "figure_ids": []
+        },
+        {
+          "id": "observation_compatibility",
+          "title": "When cells look similar, the improvement may concern observation and sample retention",
+          "markdown": "Meyer and colleagues compared hydrogel-embedded L929 cells in a printed device and conventional well plates from Day 0 to Day 3. Figure 3 shows predominantly round cells in both vessels, with division and modest morphological changes over time; marked spreading was absent in this hydrogel. Roundness alone is therefore not an injury endpoint here and should be interpreted alongside division, viability staining and the material context.[Original Figure 3](ref:R02)\n\nFigure 4 provides both a whole-chamber image and local fields. Live/dead staining showed no obvious viability difference between vessels and did not suggest a marked positional effect within the device. These are representative micrographs, without per-chamber viability percentages, an equivalence margin or a complete oxygen-distribution map. “Similar” therefore describes observed morphology and staining, not a precise percentage advantage.[Original Figure 4](ref:R02)\n\nThe research benefit remains specific: the hydrogel stays in place, microscopy accesses different chamber locations and the sample remains available for further analysis. Similar biological responses support observation compatibility and sample management rather than requiring a claim of faster proliferation. The one-sided supply geometry also makes depth gradients a separate variable requiring direct measurement.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "tissue_phenotype",
+          "title": "From early occupancy to tissue phenotype: imaging time points should remain distinct",
+          "markdown": "Later histological analysis in the bone-scaffold study showed multiple cell layers on surfaces and within pores, together with collagen-, osteopontin- and bone-sialoprotein-related signals. Figure 8A shows tissue distribution, Figure 8B shows scaffold autofluorescence, and subsequent panels relate marker signals to nuclear positions. Reading the background image alongside them avoids counting all green signal from the bone substitute as newly expressed cellular protein.[Original Figure 8](ref:R03)\n\nFigure 8G compares OPN, BMP-2 and DLX-5 expression. Scaffold-group bars are numerically lower, while the authors report no statistically significant difference from the positive control. A nonsignificant difference is not a completed equivalence test. The results directly support the emergence of an osteogenesis-related phenotype under the tested conditions; bar heights do not measure the load-bearing ability of new bone.\n\nThis later observation occurs at 14 days, whereas early spatial imaging concerns initial cellular occupancy. Early distribution, subsequent survival, marker expression and eventual tissue mechanics are different observation levels. They can form a research sequence, but each requires its own measurement; collapsing figures from different times into a single claim of improved tissue function discards the experiment’s specific meaning.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "mechanical_inputs",
+          "title": "Mechanical input and cellular response: a delivered stimulus need not change every endpoint",
+          "markdown": "A separate 96-well-plate study related pressure waveforms to human umbilical vein endothelial-cell responses. Its system accommodated 12 simultaneous pressure conditions. Cells remained viable and proliferative over 3 days, with no significant proliferation difference between static and dynamic pressure groups. Two findings coexist: the device presents different mechanical inputs, while the selected proliferation endpoint does not clearly distinguish them.[Pressure-waveform study](ref:R04)\n\n| Microenvironment component | Readout | Conditions retained in interpretation |\n|---|---|---|\n| Spatial scaffold occupancy | Spatial imaging and Hoover coefficient | Quantity and uniformity interpreted separately |\n| Matrix stability and supporting cells | Cell counts and phenotypic populations | Matrix type and cell composition |\n| Hydrogel-microchamber compatibility | Morphology and live/dead staining | Imaging location, material background and comparator vessel |\n| Later tissue phenotype | Histology, protein and transcript measurements | Time point, positive control and background signal |\n| Mechanical pressure | Input waveform and proliferation | Cell type and observation endpoint |\n\nThese results define the applicability of different conclusions. A more uniform distribution need not have the largest cell total; a more stable matrix may retain more cells; an imageable microchamber may maintain a state similar to a well plate; and pressure differences may not appear in proliferation. They describe different environmental variables and responses that a single phrase such as “better culture performance” would obscure.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Engel et al., original Figure 6: cell distribution by two imaging modalities.",
+          "interpretation": "Fluorescence reconstruction is on the left and radiotracer imaging on the right; the central arrow identifies the corresponding direction. Similar macroscopic occupancy patterns support the spatial finding. High white signal in the right image should not be compared with left-image brightness as an absolute cell count. No additional concentration or transport setting is inferred from colour."
+        },
+        "F02": {
+          "caption": "Engel et al., original Figure 8: histology, background fluorescence and osteogenesis-related expression.",
+          "interpretation": "A shows cell layers on surfaces and in pores; B shows material background; C–F relate markers to nuclei; G compares three transcript measurements with a positive control. Green background is not entirely newly formed tissue. Numerical bar-height differences and the authors’ statistical findings should both be retained; nonsignificance is not demonstrated equivalence."
+        },
+        "F03": {
+          "caption": "Meyer et al., original Figure 3: morphological time series in the device and well plate.",
+          "interpretation": "The upper row is the printed device and the lower row the well plate; time runs from Day 0 to Day 3 and the scale bar is 100 µm. Both show predominantly round cells with division over time. Individual cells are not tracked across every panel, so representative morphology can be compared but different fields do not form one cell’s trajectory or a precise proliferation curve."
+        },
+        "F04": {
+          "caption": "Meyer et al., original Figure 4: whole-chamber and local live/dead staining.",
+          "interpretation": "Panel a gives the spatial context of the whole chamber; b and c show local fields in the device and well plate. Local green cellular signals should be distinguished from edge background in the overview. The panels use different displayed scales, so visual green-area comparison is not a viability-percentage difference. The figure supports the authors’ description of similar observations."
+        }
+      }
+    },
+    "de": {
+      "title": "Wie kontrollieren gedruckte Kulturvorrichtungen die zelluläre Mikroumgebung?",
+      "direction": "In-vitro-Zell- und Gewebemodelle",
+      "sections": [
+        {
+          "id": "environment_endpoints",
+          "title": "Unterschiedliche Bedeutungen der Mikroumgebungskontrolle: räumliche Verteilung, Materialgrenzen und Zellzustand",
+          "markdown": "Gedruckte Kulturvorrichtungen verändern Transportbedingungen um Gewebe, nehmen Gerüste unterschiedlicher Größe auf, schaffen Beobachtungsfenster und verknüpfen mechanische Reize mit Zellreaktionen. „Kontrolle“ ist keine einzelne Kenngröße: Zellzahl, Tiefenverteilung, Vitalität und Erhalt eines bestimmten Phänotyps können zu unterschiedlichen Rangfolgen führen.\n\nEine Knochenersatzstudie kombinierte Fluoreszenz- und nuklearmedizinische Bildgebung zur Untersuchung der Zellverteilung. Eine Knochenmarkstudie untersuchte Wechselwirkungen zwischen Stroma- und hämatopoetischen Zellen. Eine Hydrogel-Mikrokammerstudie verglich Morphologie und Vitalität in einer Vorrichtung und üblichen Mikrotiterplatten. Im Mittelpunkt stehen somit räumliche Besiedlung, Zellbeziehungen beziehungsweise Beobachtungskompatibilität.[Bildgebung an Knochengerüsten](ref:R03) [Knochenmarkmikroumgebung](ref:R01) [Hydrogel-Mikrokammern](ref:R02)\n\nDie gedruckte Außenstruktur ist von der Matrix mit unmittelbarem Zellkontakt zu unterscheiden. Eine gedruckte Kammer ist selbst kein Gewebe: Kollagengerüst, Hydrogel und unterstützende Zellen bestimmen gemeinsam die tatsächlich erfahrene Umgebung. Funktionsänderungen können aus Transport, Matrixstabilität oder Nachbarzellen entstehen; die Vergleichsbedingung legt fest, welcher Beitrag erkennbar ist.",
+          "figure_ids": []
+        },
+        {
+          "id": "spatial_readouts",
+          "title": "Mehr Zellen bedeuten nicht zwingend eine gleichmäßigere Verteilung: Gesamtsignal und räumliche Messung",
+          "markdown": "Engel und Kollegen erfassten sowohl Zellanreicherung als auch Verteilungsgleichmäßigkeit im Gerüst. Die Konfiguration mit höherer Anreicherung war nicht identisch mit derjenigen mit besserer Gleichmäßigkeit. Der Hoover-Koeffizient beschreibt räumliche Ungleichverteilung; Werte näher an null stehen für eine gleichmäßigere Verteilung. Die Studie berichtete einen vergleichsweise gleichmäßigen Zustand mit 0.24. Der Koeffizient misst räumliche Verteilung, nicht Vitalität oder Gewebefunktion.[Ursprünglicher Verteilungsvergleich](ref:R03)\n\nFigure 6 stellt Fluoreszenz- und Radiotracerbildgebung gegenüber. Ähnliche Besiedlungsmuster stützen die räumliche Interpretation; Signalentstehung, Dynamikbereich und räumliche Auflösung unterscheiden sich jedoch. Helligkeiten lassen sich modalitätsübergreifend nicht unmittelbar in dieselbe Zellzahl umrechnen. Räumliche Bilder zeigen lokale Anreicherungen neben spärlich besiedelten Bereichen, die in einem Gesamtsignal zusammenfallen würden.\n\nDamit werden „mehr Zellen im Gerüst“ und „eine homogenere Mikroumgebung“ getrennt. Ersteres betrifft die Gesamtmenge, Letzteres die Zugänglichkeit unterschiedlicher Positionen. Lokale Zelldichte verändert außerdem Nachbarschaftsbeziehungen und Stoffwechselbedarf, die ein Gesamtmittelwert zusammenfasst. Der Forschungsbeitrag der Vorrichtung besteht darin, diese räumlichen Unterschiede sichtbar zu machen, statt lediglich eine weitere Summenkenngröße hinzuzufügen.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "matrix_and_niche",
+          "title": "Matrix und unterstützende Zellen: dieselbe Kammer kann unterschiedliche biologische Ergebnisse liefern",
+          "markdown": "Dupard und Kollegen verglichen unvernetzte und vernetzte Kollagengerüste in gedruckten Vorrichtungen. Nach 2 Wochen stieg die Zellzahl relativ zum Ausgangswert ungefähr auf das 8-Fache beziehungsweise 12-Fache; Figure 2B nennt für den Gruppenvergleich einen P-Wert von 0.01. Die Autoren bringen den Unterschied mit dem Abbau des unvernetzten Gerüsts in Verbindung. Aufgrund der unterschiedlichen Matrixzustände prüft der Versuch nicht isoliert, ob eine gedruckte Kammer die Proliferation steigert.[Ursprüngliche Figure 2](ref:R01)\n\nAnschließend wurden hämatopoetische Umgebungen mit und ohne unterstützende Stromazellen verglichen. In der unterstützten Niche-Gruppe nahm die Zahl phänotypisch definierter hämatopoetischer Stammzellen relativ zum Ausgangsbestand auf das 13.30 ± 2.25-Fache zu. Eine andere multipotente Vorläuferpopulation reagierte anders, und stärker differenzierte Populationen nahmen nicht einheitlich zu. Einige Vergleiche in Figure 3D haben P-Werte von 0.06 und 0.073; somit sind nicht sämtliche Gruppenunterschiede der Abbildung statistisch signifikant.[Ursprüngliche Figure 3](ref:R01)\n\nDie Nachweise bestehen aus Zellkontaktbildern und phänotypischer Gruppierung. Eine Zunahme phänotypisch definierter Zellen und die langfristige Wiederherstellung der Blutbildung sind unterschiedliche Endpunkte; direkt untersucht wurde die Unterstützung dieser Populationen durch die erzeugte Umgebung. Die Frage entwickelt sich von der bloßen Anwesenheit von Zellen zum Erhalt bestimmter Zellzustände. Unterstützende Zellen, Matrix und räumliche Organisation lassen sich dabei nicht auf eine Gerätebezeichnung reduzieren.",
+          "figure_ids": []
+        },
+        {
+          "id": "observation_compatibility",
+          "title": "Bei ähnlichem Zellbild kann der Vorteil in Beobachtung und Probenerhalt liegen",
+          "markdown": "Meyer und Kollegen verglichen hydrogeleingebettete L929-Zellen in einer gedruckten Vorrichtung und üblichen Mikrotiterplatten von Day 0 bis Day 3. Figure 3 zeigt in beiden Gefäßen überwiegend runde Zellen, mit Teilung und leichten morphologischen Veränderungen im Verlauf; eine ausgeprägte Ausbreitung blieb in diesem Hydrogel aus. Die runde Form allein ist hier deshalb kein Schädigungsendpunkt und muss zusammen mit Teilung, Vitalfärbung und Materialkontext gelesen werden.[Ursprüngliche Figure 3](ref:R02)\n\nFigure 4 enthält eine Gesamtansicht der Kammer sowie lokale Bildfelder. Die Lebend/Tot-Färbung zeigte keinen offensichtlichen Vitalitätsunterschied zwischen den Gefäßen und keinen ausgeprägten Positionseffekt innerhalb der Vorrichtung. Es handelt sich um repräsentative Mikroskopiebilder ohne kammerweise Vitalitätsprozente, Äquivalenzgrenze oder vollständige Sauerstoffverteilungskarte. „Ähnlich“ beschreibt daher beobachtete Morphologie und Färbung und keinen exakt bezifferten prozentualen Vorteil.[Ursprüngliche Figure 4](ref:R02)\n\nDer Forschungsnutzen bleibt konkret: Das Hydrogel bleibt an seinem Ort, verschiedene Kammerpositionen sind mikroskopisch zugänglich, und die Probe steht für weitere Analysen zur Verfügung. Ähnliche biologische Reaktionen stützen Beobachtungskompatibilität und Probenhandhabung, ohne eine schnellere Proliferation vorauszusetzen. Die einseitige Versorgungsgeometrie macht Tiefengradienten zugleich zu einer eigenständigen, direkt zu messenden Variablen.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "tissue_phenotype",
+          "title": "Von früher Besiedlung zum Gewebephänotyp: Bildgebungszeitpunkte getrennt interpretieren",
+          "markdown": "Die spätere histologische Untersuchung der Knochengerüste zeigte mehrschichtige Zelllagen auf Oberflächen und in Poren sowie Signale für Kollagen, Osteopontin und Knochensialoprotein. Figure 8A beschreibt die Gewebeverteilung, Figure 8B die Autofluoreszenz des Gerüsts; weitere Teilbilder ordnen Markersignale den Zellkernpositionen zu. Der Vergleich mit dem Hintergrundbild verhindert, dass sämtliche grünen Signale des Knochenersatzmaterials als neu exprimiertes Zellprotein gezählt werden.[Ursprüngliche Figure 8](ref:R03)\n\nFigure 8G vergleicht die Expression von OPN, BMP-2 und DLX-5. Die Balken der Gerüstgruppe liegen numerisch niedriger; die Autoren berichten jedoch keinen statistisch signifikanten Unterschied zur Positivkontrolle. Ein nicht signifikanter Unterschied ist kein abgeschlossener Äquivalenznachweis. Die Ergebnisse stützen direkt das Auftreten eines osteogeneseassoziierten Phänotyps unter den untersuchten Bedingungen; Balkenhöhen messen keine Tragfähigkeit neu gebildeten Knochens.\n\nDieser spätere Zeitpunkt liegt bei 14 Tagen, während die frühe räumliche Bildgebung die anfängliche Besiedlung betrifft. Frühe Verteilung, späteres Überleben, Markerexpression und schließlich Gewebemechanik sind unterschiedliche Beobachtungsebenen. Sie können eine Forschungskette bilden, benötigen aber jeweils eigene Messungen. Eine einzige Aussage über verbesserte Gewebefunktion würde die konkrete Bedeutung der zeitlich verschiedenen Abbildungen verlieren.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "mechanical_inputs",
+          "title": "Mechanischer Eingang und Zellreaktion: ein realisierter Reiz verändert nicht jeden Endpunkt",
+          "markdown": "Eine weitere Studie mit einer 96-Well-Platte verknüpfte Druckwellenformen mit Reaktionen menschlicher Nabelvenenendothelzellen. Das System erlaubte 12 gleichzeitige Druckbedingungen. Die Zellen blieben über 3 Tage vital und proliferationsfähig; zwischen statischen und dynamischen Druckgruppen wurde kein signifikanter Proliferationsunterschied gefunden. Zwei Befunde bestehen nebeneinander: Die Vorrichtung stellt unterschiedliche mechanische Eingänge bereit, während der gewählte Proliferationsendpunkt sie nicht deutlich unterscheidet.[Druckwellenformstudie](ref:R04)\n\n| Untersuchte Mikroumgebung | Messgröße | Beizubehaltende Interpretationsbedingungen |\n|---|---|---|\n| Räumliche Gerüstbesiedlung | Bildgebung und Hoover-Koeffizient | Menge und Gleichmäßigkeit getrennt betrachten |\n| Matrixstabilität und unterstützende Zellen | Zellzahl und Phänotyppopulationen | Matrixtyp und Zellzusammensetzung |\n| Verträglichkeit der Hydrogel-Mikrokammer | Morphologie und Lebend/Tot-Färbung | Bildposition, Materialhintergrund und Vergleichsgefäß |\n| Späterer Gewebephänotyp | Histologie, Protein- und Transkriptmessungen | Zeitpunkt, Positivkontrolle und Hintergrundsignal |\n| Mechanischer Druckreiz | Eingangswellenform und Proliferation | Zelltyp und Beobachtungsendpunkt |\n\nDiese Ergebnisse bestimmen den Geltungsbereich unterschiedlicher Aussagen. Eine gleichmäßigere Verteilung muss nicht die höchste Gesamtzellzahl besitzen; eine stabilere Matrix kann mehr Zellen erhalten; eine abbildbare Mikrokammer kann einen ähnlichen Zellzustand wie eine Mikrotiterplatte ermöglichen; Druckunterschiede müssen sich nicht in der Proliferation zeigen. Beschrieben werden verschiedene Umgebungsvariablen und Reaktionen, die durch die pauschale Bezeichnung „bessere Kulturleistung“ verdeckt würden.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Engel et al., ursprüngliche Figure 6: Zellverteilung mit zwei Bildgebungsverfahren.",
+          "interpretation": "Links ist die Fluoreszenzrekonstruktion, rechts die Radiotracerbildgebung dargestellt; der mittlere Pfeil kennzeichnet die zugehörige Richtung. Ähnliche makroskopische Besiedlungsmuster stützen den räumlichen Befund. Helle weiße Bereiche rechts sind nicht anhand der Helligkeit links als absolute Zellzahl vergleichbar. Aus den Farben werden keine zusätzlichen Konzentrationen oder Transportbedingungen abgeleitet."
+        },
+        "F02": {
+          "caption": "Engel et al., ursprüngliche Figure 8: Histologie, Hintergrundfluoreszenz und osteogeneseassoziierte Expression.",
+          "interpretation": "A zeigt Zelllagen auf Oberflächen und in Poren, B den Materialhintergrund, C–F die Zuordnung von Markern und Zellkernen und G drei Transkriptmessungen im Vergleich zur Positivkontrolle. Grüner Hintergrund ist nicht vollständig neu gebildetes Gewebe. Numerische Balkenunterschiede und die berichtete Statistik sind gemeinsam zu erhalten; fehlende Signifikanz bedeutet keinen nachgewiesenen Äquivalenzbefund."
+        },
+        "F03": {
+          "caption": "Meyer et al., ursprüngliche Figure 3: morphologische Zeitreihe in Vorrichtung und Mikrotiterplatte.",
+          "interpretation": "Die obere Reihe zeigt die gedruckte Vorrichtung, die untere die Mikrotiterplatte; der Verlauf reicht von Day 0 bis Day 3, der Maßstabsbalken entspricht 100 µm. Beide zeigen überwiegend runde Zellen mit Teilungen im Verlauf. Einzelzellen werden nicht durch alle Teilbilder verfolgt. Vergleichbar ist repräsentative Morphologie, nicht eine aus verschiedenen Bildfeldern zusammengesetzte Zellbahn oder exakte Proliferationskurve."
+        },
+        "F04": {
+          "caption": "Meyer et al., ursprüngliche Figure 4: Lebend/Tot-Färbung in Gesamtansicht und Ausschnitten.",
+          "interpretation": "Teilbild a liefert den räumlichen Bezug der gesamten Kammer; b und c zeigen lokale Felder in Vorrichtung und Mikrotiterplatte. Grüne Zellsignale im Ausschnitt sind vom Randhintergrund der Übersicht zu unterscheiden. Unterschiedliche Darstellungsmaßstäbe verhindern, dass ein bloßer Vergleich grüner Flächen als prozentualer Vitalitätsunterschied gelesen wird. Die Abbildung stützt die Beschreibung ähnlicher Beobachtungen."
+        }
+      }
+    }
+  }
+}

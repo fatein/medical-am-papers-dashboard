@@ -1,0 +1,348 @@
+{
+  "schema_version": 2,
+  "question_id": "P2-037",
+  "p": "P2",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-04",
+  "related_paper_ids": [
+    "doc_03a44804c9d746290adf",
+    "doc_0a9035bb07928dc358fa",
+    "doc_2d48854a27d3b1edbc83",
+    "doc_35c1a62fe6f09ba59e10",
+    "doc_37cd0c78398fb481971c",
+    "doc_43fa97269eb35d8a5dbe",
+    "doc_4443f4a7723cebeba566",
+    "doc_6aee151a3f5c9a963171",
+    "doc_7df27b6e0d0f5225d0fd",
+    "doc_90edd1c6f081f93b8dc4",
+    "doc_ac10b2b9097fc93afb29",
+    "doc_bb910f1c60209089d77d",
+    "doc_c67790e9b566afe89ee8",
+    "doc_ce746c89624ac1ab9934",
+    "doc_f6fe1085cb4e5f83f994",
+    "doc_sd_d3902cbcfe1b01c43179",
+    "KB2026D2E159BA7708",
+    "KB202676114B21971D",
+    "KB2026BBDC6435694A",
+    "KB2026C30953C644D2"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Design of a 3D-printed, open-source wrist-driven orthosis for individuals with spinal cord injury",
+      "publisher": "PLOS ONE",
+      "year": 2018,
+      "url": "https://doi.org/10.1371/journal.pone.0193106",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Production Time and User Satisfaction of 3-Dimensional Printed Orthoses For Chronic Hand Conditions Compared With Conventional Orthoses: A Prospective Case Series",
+      "publisher": "Journal of Rehabilitation Medicine – Clinical Communications",
+      "year": 2021,
+      "url": "https://doi.org/10.2340/20030711-1000048",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "PRELIMINARY EFFECTIVENESS AND PRODUCTION TIME AND COSTS OF THREE-DIMENSIONAL PRINTED ORTHOSES IN CHRONIC HAND CONDITIONS: AN INTERVENTIONAL FEASIBILITY STUDY",
+      "publisher": "Journal of Rehabilitation Medicine",
+      "year": 2024,
+      "url": "https://doi.org/10.2340/jrm.v56.39946",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Production time and practicability of 3D-Printed wrist orthoses versus low temperature thermoplastic wrist orthoses",
+      "publisher": "Hand Therapy",
+      "year": 2024,
+      "url": "https://doi.org/10.1177/17589983241287069",
+      "kind": "paper"
+    },
+    {
+      "id": "R05",
+      "title": "Development of 3D-printed myoelectric hand orthosis for patients with spinal cord injury",
+      "publisher": "Journal of NeuroEngineering and Rehabilitation",
+      "year": 2019,
+      "url": "https://doi.org/10.1186/s12984-019-0633-6",
+      "kind": "paper"
+    },
+    {
+      "id": "R06",
+      "title": "Point-of-care digital manufacturing workflow for patient-specific 3D-printed burn orthoses in a low-resource setting: A retrospective study.",
+      "publisher": "Burns",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/j.burns.2026.108173",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P2-037/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5823450/#pone.0193106.g004",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Fig 7",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P2-037/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5823450/#pone.0193106.g007",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Fig. 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P2-037/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8054741/#f0002",
+      "license": "CC BY-NC 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Fig. 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P2-037/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11107831/#F0002",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R05",
+      "original_label": "Fig. 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P2-037/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6937865/#Fig2",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "个体化矫形器如何兼顾贴合和可及性？",
+      "direction": "假肢与矫形器",
+      "sections": [
+        {
+          "id": "modular_wrist_drive",
+          "title": "模块尺寸可以开放共享，关节对准仍需个体修正",
+          "markdown": "Portnova 等的腕驱动矫形器使用保留的腕背伸带动三指捏握。11 个零件可按手部测量修改，也提供 XS 至 XL 五档；预设尺码降低建模门槛，却不保证关节位置自动匹配。研究让 6 名有传统金属支具经验的学生装配预打印零件，再由 3 名能抗重力伸腕的颈髓损伤者试用。使用者反馈促成拇指连杆、掌部支撑及绑带修改，贴合既包括皮肤接触，也包括机械关节与人体关节的对准。[模块化设计与测试](ref:R01)\n\nXS、XL 材料费分别为 15、20 美元，未含打印机使用费和装配工具；1.5 h 只是动手装配，另需 6.5、7.7 h 打印，总制造时间为 8、9.2 h。研究并没有把这套流程与当次新制金属支具随机比较。三人 JTHF 总用时从无支具的 252.5、122.6、103.8 s 变为 314.4、132.6、102.5 s：捏握力改善可与任务变慢并存。对腕伸肌不足者，低材料费也不能补偿缺少驱动来源。\n\n该方案以卷尺测量和可调参数建模，不要求完整三维扫描，降低了取形设备门槛。可是学生已有矫形训练，研究还提供预打印零件、说明书和必要协助；装配试验不能证明未经训练者可以独立完成适配。开放文件主要支持零件替换与尺寸修改，临床判断仍决定绑带、软垫和指位。",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "scan_vs_cast",
+          "title": "无接触取形更舒适，不代表成品贴合更好",
+          "markdown": "Oud 等在慢性手腕问题的 10 人病例系列中，为同一人制作传统与打印支具，各佩戴 1 周。打印件为 PA12；扫描时需保持手位，必要时由治疗师支撑，再修复扫描缺陷、释放易受压区域并按刚度要求设定厚度。它并非直接复制皮肤表面，扫描准确只是后续临床修形的输入。[扫描、修形及佩戴比较](ref:R02)\n\n能够取得传统制作工时的 7 人中，打印与传统平均人工时间为 112、239 min（p=0.001）；扫描取形平均 5.0 min，石膏取模 10.3 min（p=0.027）。但平均就诊次数为 3.8 与 3.7，并未减少。扫描过程满意度更高，成品贴合评分却为打印中位 3、传统 4，差异不显著（p=0.509）。偏好恰好各占 5 人；自评功能为 3 人更好、5 人相同、2 人更差。非随机佩戴顺序和短周期使结果主要反映初期接受度。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "followup_and_rework",
+          "title": "长期使用中的压点与重制，改变了初次制造的优势",
+          "markdown": "Oud 等后续可行性研究纳入 21 名已有传统支具的慢性患者，19 人完成随访；新 TPU 打印件保持原有拇指、腕或腕拇指支具类型，比较基线与佩戴后 1、4 个月。四个月时日常活动、手功能、生活质量相对旧支具没有显著改善。15/19 人偏好打印件，但 D-CSD 满意度只有一个月时的增量达到显著（5.11 分，95% CI 0.62–9.59）；D-QUEST 未显著不同，不能把偏好比例当作功能成功率。[随访与不良事件](ref:R03)\n\n5 人报告瘀伤、肿胀、水疱或压点，需要重新扫描及重制；其中 1 人因皮肤过薄仍不能耐受，改回皮革支具。研究报告的人工时间中位数为打印 129、传统 269 min，费用为 187、398 欧元，统计时只计初次打印件，不含这些重制工作；传统工时则来自另外复制的同类型样件，并非患者旧支具的历史实测。平均就诊次数打印 3.2、传统 2.5 次，后者仅有 17 人记录。节省人工与减少患者往返因此不是同一个结果。\n\n比较对象还是已使用至少 2 年的旧支具，患者没有随机进入两种制造路线；新制品的新颖性、旧材料磨损和主动报名者的偏好都可能影响满意度。原研究未按疗效等效设计或确定非劣效界值，所以活动量表没有显著差异，只支持在这一小样本中未发现优势，而不能确立两种流程临床等效。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "comparator_and_time",
+          "title": "为什么另一家临床团队测得打印更慢",
+          "markdown": "von Haller 等记录常规临床中的 8 件 DLP 打印腕支具与 9 件低温热塑腕支具，按患者需要选择而非随机分配。传统件是当次在肢体上成形的掌侧支具，不是前述需要石膏阳模和多步加工的环形支具。[分步骤计时研究](ref:R04)\n\n| 时间口径 | DLP 打印 | 低温热塑 |\n|---|---:|---:|\n| 人工操作（h:min:s） | 00:44:35 | 00:14:14 |\n| 加上打印、后固化（h:min:s） | 12:14:50 | 00:14:14 |\n\n即使排除机器时间，打印人工仍更长（p<0.001）。黑色树脂打印平均 11:00:15，明显影响交付等待；治疗师有 2–14 年传统制作经验，却仅约 6 个月打印经验。所有患者都能保持扫描姿势，本研究没有覆盖难以固定手位者。传统支具一次就诊可完成，打印需要扫描和交付两次；因此这项结果与石膏流程下的工时减半并不矛盾。两项比较的人工技能、支具范围、材料及计时边界不同，不能把“数字化”本身当作固定倍数的提速。",
+          "figure_ids": []
+        },
+        {
+          "id": "motor_access",
+          "title": "增加驱动可以扩大适用人群，也增加穿戴负担",
+          "markdown": "Yoo 等针对不能充分主动伸腕的颈髓损伤者，把肌电控制的直线电机与打印手托、指环相连，借腕伸展牵紧腱索。10 名慢性患者接受同日有无支具比较；手宽、指节周径用于定制，之后还要局部修形、加垫及调整腱索。省去人工铰链可适应部分腕桡偏，但控制肌选择和阈值同样需要个体匹配。[肌电矫形器研究](ref:R05)\n\nTRI-HFT 物体操作总分从 29.4 增至 45.0（p=0.007），木块部分从 26.8 增至 47.6（p=0.009）；信用卡、手机、铅笔等小薄物体没有显著改善。FIM 自理从 11.3 增至 13.4，显著的单项主要是进食；洗浴和穿衣并未随抓握同步改善。满意度中有效性为 4.5/5，尺寸却仅 3.2/5，调整便利性 3.4/5。约 230 美元是部件估算，未含打印机，也不是含临床服务的交付价；当日无压疮不能推断长期皮肤耐受。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "local_burn_workflow",
+          "title": "低资源烧伤护理：交付完成与治疗效果是不同证据",
+          "markdown": "Kim 等的回顾性研究把院内数字制造用于 4 名 3–16 岁烧伤患儿，覆盖急性、术前、术后及混合围手术期情境。原始摘要报告扫描需 20–25 min、CAD 定制 5–8 h、累积打印机运行 29–78 h；四例均在请求后 2–3 天完成临床适配与交付。累积机时与患者等待天数不是可直接相加的同一口径，摘要没有给出各设备排程明细。[原始病例流程报告](ref:R06)\n\n其中 3 例一次设计完成，病例 4 因术后解剖和功能需求变化进行了 3 次迭代；这些是临床需求驱动的再设计，并非打印失败。研究报告没有技术性放弃、重扫失败或转用传统制作，支持在该医院和团队条件下完成流程。摘要未提供瘢痕挛缩变化的对照结果、完整费用或长期破损数据；可及性的实证是完成适配及容纳解剖变化，不能改写为已证明更廉价或更有效的烧伤治疗。",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Portnova et al.：由试用反馈驱动的连杆、拇指与掌部修改。",
+          "interpretation": "A 的红圈是新增拇指—手指连杆，原文报告最大腕屈曲时手部开口角从 52° 增至 70°；B 为弯曲拇指件，C 为加长掌部件。照片显示的是不同功能部位的修改，不能据外表紧贴判断压力是否均匀。开口扩大服务于包住物体，掌部加长服务于稳定；两者都增加了适配选择，但没有在图中提供长期皮肤压力数据。[设计迭代原图](ref:R01)"
+        },
+        "F02": {
+          "caption": "Portnova et al.：同两名使用者修改前后的任务表现。",
+          "interpretation": "A 为 JTHF 分任务时间，越低越快；B 为一分钟搬运积木数，越高越好。斜线柱为 Visit 2，实色为 Visit 3，橙色 P2、绿色 P3。修改后两人积木数分别增加 4、3 块，写字等任务变快，但小物体任务中 P2 反而更慢。复访同时包含结构修改和额外熟悉，不能把全部增益仅归给更精确的外形。[复访表现](ref:R01)"
+        },
+        "F03": {
+          "caption": "Oud et al.：从保持手位的扫描到经修形的 PA12 支具。© Foundation of Rehabilitation Information。",
+          "interpretation": "A 中扫描手位需要主动维持，B 中支具轮廓、开口及覆盖范围是在数字手模型上设计，C 才是成品佩戴。流程图说明测量和矫形设计是两个步骤，镂空也不是已经验证的通风或减压结果。不能从照片推断打印组比传统组贴合更好；同篇评分未显示这种优势，且仍需要多次适配就诊。[扫描与成品原图](ref:R02)"
+        },
+        "F04": {
+          "caption": "Oud et al.：传统与打印支具使用期的个体活动能力轨迹。",
+          "interpretation": "纵轴为 DF-PROMIS-UE T 分数，越高代表上肢活动能力越好；每条彩线代表同一人的连续测量。T1、T2 为传统支具，分别在干预前 2 周及基线；T3、T4 为打印支具交付后 1、4 个月。部分人在换支具之前分数已下降，原文据此未合并两个基线。打印期曲线也有升有降，不能由多数人偏好打印件反推出功能一致提高。[个体纵向结果](ref:R03)"
+        },
+        "F05": {
+          "caption": "Yoo et al.：电机伸腕、腱索牵拉与不同物体的抓握。",
+          "interpretation": "A、B 展示闭合和释放位置；C–E 是罐体、骰子和木块示例；F、G 展示背侧和掌侧，黄箭头指出连接指环与前臂托的腱索。照片中的粗大电机有助于理解为何有效性评分较高而尺寸评分较低。它借用人体关节产生协同抓握，不提供每指独立主动运动；能持物的演示与复杂精细操作仍是不同终点。[结构与动作原图](ref:R05)"
+        }
+      }
+    },
+    "en": {
+      "title": "How can individualized orthoses combine fit and accessibility?",
+      "direction": "Prostheses and orthoses",
+      "sections": [
+        {
+          "id": "modular_wrist_drive",
+          "title": "Modular dimensions can be shared, but joint alignment still needs individual adjustment",
+          "markdown": "Portnova et al.'s wrist-driven orthosis used preserved wrist extension to generate a three-jaw chuck grasp. Its 11 components could be modified from hand measurements or selected in five sizes from XS to XL. Preset sizes reduced modeling demands without automatically matching joint locations. The study involved 6 students experienced in traditional metal orthoses assembling preprinted parts, followed by 3 cervical spinal cord injury users able to extend the wrist against gravity. Feedback changed the thumb linkage, palmar support and straps: fit involved both skin contact and alignment of mechanical and anatomical joints.[Modular design and testing](ref:R01)\n\nMaterials cost US$15 and US$20 for XS and XL, excluding printer-use charges and assembly tools. The 1.5 h figure covered hands-on assembly only; printing took another 6.5 and 7.7 h, yielding total fabrication times of 8 and 9.2 h. There was no randomized comparison against newly fabricated metal orthoses. Total JTHF times changed from 252.5, 122.6 and 103.8 s unassisted to 314.4, 132.6 and 102.5 s assisted: improved pinch can coexist with slower tasks. Low material cost also cannot compensate for an absent driving motion in users without sufficient wrist extension.\n\nTape measurements and adjustable model parameters avoided requiring a complete three-dimensional scan, reducing acquisition-equipment demands. However, students already had orthotic training, and the study supplied preprinted parts, instructions and help when needed. The assembly experiment does not establish independent fitting by untrained users. Open files mainly support replacement and resizing; clinical judgment still determines straps, padding and finger position.",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "scan_vs_cast",
+          "title": "More comfortable acquisition does not guarantee a better-fitting device",
+          "markdown": "In a case series of 10 people with chronic hand or wrist problems, Oud et al. made both conventional and printed orthoses for each person, each worn for 1 week. Printed devices used PA12. Scanning required maintaining hand position, sometimes supported by a therapist, followed by correction of scan defects, relief over pressure-sensitive regions and thickness selection for required stiffness. This was not direct replication of skin geometry: accurate scanning supplied the input to clinical shape correction.[Scanning, modification and wear comparison](ref:R02)\n\nAmong the 7 people with available conventional fabrication records, mean labor times were 112 min for printing and 239 min conventionally (p=0.001). Acquisition averaged 5.0 min for scanning versus 10.3 min for casting (p=0.027). Mean clinic visits were nevertheless 3.8 versus 3.7, without a reduction. Scanning was rated more favorably, yet median finished-device fit ratings were 3 for printed and 4 for conventional orthoses, with no significant difference (p=0.509). Preferences split evenly at 5 each; perceived function was better in 3, equal in 5 and worse in 2. Nonrandom wear order and short exposure make these mainly early-acceptability findings.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "followup_and_rework",
+          "title": "Pressure problems and remakes change the interpretation of first-production savings",
+          "markdown": "Oud et al.'s subsequent feasibility study enrolled 21 chronic users of conventional orthoses, with 19 completing follow-up. New TPU printed devices retained the previous thumb, wrist or wrist–thumb type; baseline was compared with 1 and 4 months of use. At four months, daily activity, hand function and quality of life did not improve significantly relative to the old orthosis. Printed devices were preferred by 15/19, but the D-CSD satisfaction increase was significant only at one month: 5.11 points, 95% CI 0.62–9.59. D-QUEST did not differ significantly; preference is not a functional success rate.[Follow-up and adverse events](ref:R03)\n\nBruising, swelling, blisters or pressure points were reported by 5 people, requiring rescanning and remanufacture. In 1 person, very thin skin remained intolerant and a leather orthosis was restored. Reported median labor time was 129 min for printing versus 269 min conventionally, with costs of €187 versus €398. Calculations included only the first printed device, excluding this rework; conventional labor was measured on separately fabricated copies of the relevant types, not historical recordings for the worn comparator. Mean visits were 3.2 for printed and 2.5 for conventional devices, with only 17 conventional records available. Labor savings and reduced patient travel were therefore distinct outcomes.\n\nComparators had already been used for at least 2 years, and patients were not randomized between manufacturing routes. Novelty, aging comparator materials and volunteer preferences could influence satisfaction. The study neither used an equivalence design nor specified a noninferiority margin. Nonsignificant activity differences therefore indicate no detected advantage in this small sample, rather than established clinical equivalence of the workflows.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "comparator_and_time",
+          "title": "Why another clinical team found printing slower",
+          "markdown": "Von Haller et al. timed 8 DLP printed wrist orthoses and 9 low-temperature thermoplastic orthoses in routine care, selected according to patient needs rather than randomized. The conventional comparator was a palmar orthosis molded directly on the limb in one session, unlike the circumferential devices requiring plaster models and multiple manufacturing steps above.[Stepwise timing study](ref:R04)\n\n| Time definition | DLP printed | Low-temperature thermoplastic |\n|---|---:|---:|\n| Active labor (h:min:s) | 00:44:35 | 00:14:14 |\n| Including printing and post-curing (h:min:s) | 12:14:50 | 00:14:14 |\n\nEven without machine time, printed-device labor remained longer (p<0.001). Black-resin printing averaged 11:00:15, substantially affecting delivery delay. Therapists had 2–14 years of conventional fabrication experience but approximately 6 months with printing. Every participant could hold the scan posture, so the study did not cover difficult hand-positioning cases. Conventional devices could be completed in one appointment, whereas printing required separate scanning and delivery visits. This does not contradict halved labor in a plaster-based workflow. Manual expertise, orthosis coverage, material and timing boundaries differed; digital manufacture itself does not prescribe a fixed speedup.",
+          "figure_ids": []
+        },
+        {
+          "id": "motor_access",
+          "title": "Motor assistance broadens eligibility while adding wearing burden",
+          "markdown": "For people with cervical spinal cord injury lacking sufficient active wrist extension, Yoo et al. connected an EMG-controlled linear motor to printed hand supports and finger rings, tensioning tendons through wrist extension. 10 chronic users underwent same-day assisted and unassisted comparisons. Hand breadth and phalangeal circumferences informed customization, followed by local reshaping, padding and tendon adjustment. Omitting artificial hinges accommodated some radial wrist deviation, but control-muscle selection and thresholds also required individual matching.[Myoelectric orthosis study](ref:R05)\n\nTRI-HFT object-manipulation scores increased from 29.4 to 45.0 (p=0.007), and the wooden-block section from 26.8 to 47.6 (p=0.009). Small or thin objects such as credit cards, phones and pencils did not improve significantly. FIM self-care increased from 11.3 to 13.4, with eating the principal significant individual task; bathing and dressing did not improve alongside grasp. Satisfaction rated effectiveness at 4.5/5, but dimensions at only 3.2/5 and adjustability at 3.4/5. Approximately US$230 was a component estimate excluding the printer, not a delivered clinical-service price. Absence of pressure ulcers that day did not establish long-term skin tolerance.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "local_burn_workflow",
+          "title": "Burn care with limited resources: completed delivery and treatment effect are distinct evidence",
+          "markdown": "Kim et al.'s retrospective hospital-manufacturing study covered 4 burn patients aged 3–16 years across acute, preoperative, postoperative and mixed perioperative settings. The primary abstract reports scanning of 20–25 min, CAD customization of 5–8 h and cumulative printer operation of 29–78 h, with clinical fitting and delivery within 2–3 days of each request. Cumulative machine hours and patient waiting days are different accounting measures; detailed equipment schedules were not provided.[Primary case-workflow report](ref:R06)\n\n3 cases required one design iteration; case 4 required 3 as postoperative anatomy and functional needs changed. These were clinically driven redesigns rather than print failures. No technical abandonment, failure-related rescanning or conversion to conventional fabrication was reported, supporting workflow completion with this hospital team. The abstract provides no controlled contracture outcome, complete costs or long-term breakage data. The observed accessibility evidence concerns successful fitting and accommodation of anatomical change, not demonstrated cheaper or more effective burn treatment.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Portnova et al.: linkage, thumb and palmar modifications driven by user feedback.",
+          "interpretation": "The red circle in A identifies the added thumb–finger linkage; the paper reports an increase in hand aperture at full wrist flexion from 52° to 70°. B shows the curved thumb component and C the elongated palmar component. These photographs document modifications at different functional locations; close visual contact does not establish uniform pressure. Wider opening helps encompass objects, while palmar extension supports stability. Both increase fitting options without providing long-term skin-pressure data.[Original design iterations](ref:R01)"
+        },
+        "F02": {
+          "caption": "Portnova et al.: performance before and after modifications in the same two users.",
+          "interpretation": "A shows task-specific JTHF times, where lower is faster; B shows blocks transferred in one minute, where higher is better. Hatched bars are Visit 2 and solid bars Visit 3, with orange P2 and green P3. After modifications, block counts rose by 4 and 3, and tasks such as writing became faster, whereas P2 became slower on small objects. Follow-up combined design changes with additional familiarity, so gains cannot all be attributed to more accurate shape.[Follow-up performance](ref:R01)"
+        },
+        "F03": {
+          "caption": "Oud et al.: from scanning a maintained hand posture to a shape-adjusted PA12 orthosis. © Foundation of Rehabilitation Information.",
+          "interpretation": "A requires active maintenance of the scanned posture. In B, contours, openings and coverage are designed on the digital hand; C shows the worn device. Measurement and orthotic design are separate steps, and the openings do not themselves demonstrate validated ventilation or pressure relief. The photograph cannot establish superior fit over conventional devices: ratings in the same study did not show that advantage, and several fitting visits remained necessary.[Original scanning and device images](ref:R02)"
+        },
+        "F04": {
+          "caption": "Oud et al.: individual activity trajectories during conventional and printed orthosis use.",
+          "interpretation": "The ordinate is the DF-PROMIS-UE T-score, with higher scores indicating better upper-limb activity; each colored line follows one individual. T1 and T2 used conventional orthoses, at 2 weeks before intervention and baseline. T3 and T4 were 1 and 4 months after printed-device delivery. Some scores fell before the device changed, prompting the authors not to pool the baseline assessments. Printed-period trajectories also rise and fall, so majority preference cannot imply uniform functional improvement.[Individual longitudinal outcomes](ref:R03)"
+        },
+        "F05": {
+          "caption": "Yoo et al.: motor-driven wrist extension, tendon tension and grasping different objects.",
+          "interpretation": "A and B show closure and release; C–E demonstrate a can, die and wooden block. F and G show dorsal and palmar views, with yellow arrows locating tendons between finger rings and forearm support. The prominent motor helps explain why effectiveness was rated more favorably than dimensions. The system uses anatomical joints for coordinated grasp rather than independent active control of each digit. Demonstrated object holding and complex dexterous manipulation remain different endpoints.[Original structure and motion images](ref:R05)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie lassen sich Passform und Zugänglichkeit individualisierter Orthesen verbinden?",
+      "direction": "Prothesen und Orthesen",
+      "sections": [
+        {
+          "id": "modular_wrist_drive",
+          "title": "Modulare Maße sind teilbar, die Gelenkausrichtung bleibt individuell",
+          "markdown": "Die handgelenkgetriebene Orthese von Portnova et al. nutzte erhaltene Handgelenkextension für einen Dreipunktgriff. Ihre 11 Bauteile ließen sich nach Handmaßen anpassen oder in fünf Größen von XS bis XL auswählen. Standardgrößen erleichterten die Modellierung, gewährleisteten aber keine automatische Übereinstimmung der Gelenkpositionen. 6 Studierende mit Erfahrung in Metallorthesen montierten vorgedruckte Teile; anschließend erprobten 3 Personen mit zervikaler Rückenmarkverletzung und Handgelenkextension gegen die Schwerkraft das Gerät. Rückmeldungen führten zu Änderungen an Daumenlenker, Handflächenstütze und Bändern. Passform umfasste somit Hautkontakt und Ausrichtung mechanischer zu anatomischen Gelenken.[Modularer Entwurf und Prüfung](ref:R01)\n\nDie Materialkosten betrugen 15 und 20 US-Dollar für XS und XL, ohne Druckernutzungsgebühren und Montagewerkzeuge. Die Angabe von 1.5 h bezeichnete ausschließlich aktive Montage; hinzu kamen 6.5 beziehungsweise 7.7 h Druckzeit, insgesamt 8 beziehungsweise 9.2 h Fertigung. Ein randomisierter Vergleich mit neu gefertigten Metallorthesen fehlte. Die JTHF-Gesamtzeiten änderten sich von 252.5, 122.6 und 103.8 s ohne auf 314.4, 132.6 und 102.5 s mit Orthese: Eine bessere Kneifkraft kann mit langsameren Aufgaben einhergehen. Geringe Materialkosten ersetzen zudem keinen fehlenden Antrieb bei unzureichender Handgelenkextension.\n\nMaßbandmessungen und verstellbare Modellparameter machten einen vollständigen dreidimensionalen Scan entbehrlich und senkten den Gerätebedarf. Die Studierenden waren jedoch orthopädietechnisch vorgebildet; vorgedruckte Teile, Anleitung und erforderliche Hilfe wurden bereitgestellt. Der Montageversuch belegt keine selbstständige Anpassung durch Ungeschulte. Offene Dateien erleichtern vor allem Ersatz und Größenänderung; klinisches Urteil bestimmt weiterhin Bänder, Polster und Fingerstellung.",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "scan_vs_cast",
+          "title": "Angenehmere Formerfassung garantiert keine bessere fertige Passform",
+          "markdown": "In einer Fallserie mit 10 Personen mit chronischen Hand- oder Handgelenkproblemen fertigten Oud et al. für jede Person eine konventionelle und eine gedruckte Orthese, die jeweils 1 Woche getragen wurden. Die Druckteile bestanden aus PA12. Beim Scannen musste die Handstellung gehalten werden, erforderlichenfalls mit Unterstützung durch die Therapieperson. Danach wurden Scanfehler korrigiert, druckempfindliche Stellen entlastet und Dicken nach Steifigkeitsbedarf festgelegt. Es handelte sich nicht um eine direkte Kopie der Hautoberfläche; die genaue Erfassung lieferte die Grundlage klinischer Formkorrektur.[Erfassung, Anpassung und Tragevergleich](ref:R02)\n\nBei den 7 Personen mit dokumentierter konventioneller Fertigungszeit betrug die mittlere Arbeitszeit 112 min für Druckorthesen und 239 min konventionell (p=0.001). Die Formerfassung dauerte im Mittel 5.0 min beim Scan und 10.3 min beim Gipsabdruck (p=0.027). Die mittlere Zahl der Kliniktermine sank jedoch nicht: 3.8 gegenüber 3.7. Das Scannen wurde günstiger bewertet, die fertige Passform dagegen im Median mit 3 für Druck- und 4 für konventionelle Orthesen, ohne signifikanten Unterschied (p=0.509). Jeweils 5 Personen bevorzugten eine Variante; die Funktion empfanden 3 als besser, 5 als gleich und 2 als schlechter. Nicht randomisierte Tragereihenfolge und kurze Dauer begrenzen dies vor allem auf anfängliche Akzeptanz.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "followup_and_rework",
+          "title": "Druckstellen und Neuanfertigungen relativieren Vorteile der Erstfertigung",
+          "markdown": "Die spätere Machbarkeitsstudie von Oud et al. schloss 21 chronische Nutzer konventioneller Orthesen ein; 19 beendeten die Nachbeobachtung. Neue TPU-Druckorthesen behielten den bisherigen Daumen-, Handgelenk- oder kombinierten Typ bei. Verglichen wurden Ausgangswert und Nutzung nach 1 beziehungsweise 4 Monaten. Nach vier Monaten verbesserten sich Alltagsaktivität, Handfunktion und Lebensqualität gegenüber der alten Orthese nicht signifikant. 15/19 bevorzugten die Druckorthese, doch der D-CSD-Zufriedenheitsanstieg war nur nach einem Monat signifikant: 5.11 Punkte, 95% CI 0.62–9.59. D-QUEST unterschied sich nicht signifikant; Präferenz ist keine funktionelle Erfolgsquote.[Nachbeobachtung und unerwünschte Ereignisse](ref:R03)\n\n5 Personen meldeten Blutergüsse, Schwellung, Blasen oder Druckstellen mit erneutem Scan und Neuanfertigung. Bei 1 Person blieb die sehr dünne Haut unverträglich, weshalb wieder eine Lederorthese eingesetzt wurde. Die berichtete mediane Arbeitszeit betrug 129 min gedruckt gegenüber 269 min konventionell, die Kosten 187 gegenüber 398 Euro. Berechnet wurde nur das erste Druckteil ohne diese Nacharbeiten. Die konventionelle Arbeitszeit stammte aus gesondert angefertigten Kopien passender Orthesentypen, nicht aus historischen Messungen der getragenen Vergleichsorthesen. Im Mittel waren 3.2 Termine für Druck- und 2.5 für konventionelle Orthesen nötig; für Letztere lagen nur 17 Datensätze vor. Weniger Arbeitszeit und weniger Patientenwege waren somit unterschiedliche Ergebnisse.\n\nDie Vergleichsorthesen waren bereits mindestens 2 Jahre getragen worden; eine Randomisierung zwischen Fertigungswegen fehlte. Neuheit, Alterung des Vergleichsmaterials und Präferenzen freiwillig Teilnehmender konnten die Zufriedenheit beeinflussen. Die Studie hatte weder ein Äquivalenzdesign noch eine festgelegte Nichtunterlegenheitsgrenze. Nicht signifikante Aktivitätsunterschiede zeigen daher keinen nachgewiesenen Vorteil in dieser kleinen Stichprobe, keine gesicherte klinische Gleichwertigkeit der Abläufe.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "comparator_and_time",
+          "title": "Warum ein anderes klinisches Team längere Druckfertigung maß",
+          "markdown": "Von Haller et al. erfassten 8 DLP-Druckorthesen und 9 niedrigtemperaturthermoplastische Handgelenkorthesen in der Regelversorgung; die Auswahl erfolgte nach Patientenbedarf, nicht randomisiert. Der konventionelle Vergleich war eine palmare, direkt am Arm in einer Sitzung geformte Orthese, nicht die zuvor beschriebenen zirkulären Geräte mit Gipspositiv und mehrstufiger Verarbeitung.[Schrittweise Zeitmessung](ref:R04)\n\n| Zeitdefinition | DLP-Druck | Niedrigtemperaturthermoplast |\n|---|---:|---:|\n| Aktive Arbeitszeit (h:min:s) | 00:44:35 | 00:14:14 |\n| Einschließlich Druck und Nachhärtung (h:min:s) | 12:14:50 | 00:14:14 |\n\nAuch ohne Maschinenzeit blieb die Druckarbeitszeit länger (p<0.001). Das Drucken mit schwarzem Harz dauerte im Mittel 11:00:15 und beeinflusste die Lieferwartezeit erheblich. Die Therapiepersonen hatten 2–14 Jahre konventionelle Fertigungserfahrung, aber nur ungefähr 6 Monate Druckerfahrung. Alle Patienten konnten die Scanstellung halten; schwierige Positionierungsfälle wurden daher nicht abgebildet. Konventionelle Orthesen waren in einem Termin fertig, gedruckte benötigten getrennte Scan- und Liefertermine. Dies widerspricht keiner halbierten Arbeitszeit in einem gipsbasierten Ablauf. Handwerkserfahrung, Orthesenabdeckung, Material und Zeitgrenzen unterschieden sich; digitale Fertigung bedeutet keinen festen Beschleunigungsfaktor.",
+          "figure_ids": []
+        },
+        {
+          "id": "motor_access",
+          "title": "Motorunterstützung erweitert die Eignung und erhöht den Trageaufwand",
+          "markdown": "Für Personen mit zervikaler Rückenmarkverletzung und unzureichender aktiver Handgelenkextension verbanden Yoo et al. einen EMG-gesteuerten Linearmotor mit gedruckter Handstütze und Fingerringen; Handgelenkextension spannte die Seilzüge. 10 chronisch Betroffene wurden am selben Tag mit und ohne Orthese verglichen. Handbreite und Fingergliedumfänge dienten der Anpassung, gefolgt von lokaler Nachformung, Polsterung und Seilzugeinstellung. Der Verzicht auf künstliche Scharniere erlaubte teilweise radiale Handgelenkabweichung; auch Steuermuskel und Schwellen mussten individuell passen.[Studie zur myoelektrischen Orthese](ref:R05)\n\nDie TRI-HFT-Objektmanipulation stieg von 29.4 auf 45.0 (p=0.007), der Holzklotzteil von 26.8 auf 47.6 (p=0.009). Kleine oder flache Gegenstände wie Kreditkarten, Telefone und Stifte verbesserten sich nicht signifikant. Die FIM-Selbstversorgung stieg von 11.3 auf 13.4; die wesentliche signifikante Einzelaufgabe war Essen. Baden und Ankleiden verbesserten sich nicht parallel zum Greifen. Die Wirksamkeit wurde mit 4.5/5 bewertet, Abmessungen jedoch nur mit 3.2/5 und Einstellbarkeit mit 3.4/5. Etwa 230 US-Dollar waren eine Bauteilschätzung ohne Drucker, kein Abgabepreis einschließlich klinischer Leistungen. Fehlende Druckgeschwüre an diesem Tag belegten keine langfristige Hautverträglichkeit.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "local_burn_workflow",
+          "title": "Verbrennungsversorgung bei knappen Ressourcen: erfolgreiche Lieferung und Therapieeffekt sind getrennte Evidenz",
+          "markdown": "Die retrospektive Studie von Kim et al. zur klinikinternen Fertigung umfasste 4 Brandverletzte im Alter von 3–16 Jahren in akuten, präoperativen, postoperativen und gemischten perioperativen Situationen. Der Originalabstract nennt 20–25 min Scanzeit, 5–8 h CAD-Anpassung und 29–78 h kumulierten Druckerbetrieb; klinische Anpassung und Lieferung erfolgten jeweils innerhalb von 2–3 Tagen nach Anforderung. Kumulierte Maschinenstunden und Wartezeit der Patienten sind verschiedene Größen; detaillierte Gerätezeitpläne fehlen.[Originaler Fallbericht zum Ablauf](ref:R06)\n\n3 Fälle benötigten eine Entwurfsiteration, Fall 4 benötigte 3 wegen veränderter postoperativer Anatomie und Funktionsanforderungen. Dies waren klinisch begründete Neuentwürfe, keine Druckfehler. Berichtet wurden weder technischer Abbruch noch fehlerbedingter erneuter Scan oder Wechsel zur konventionellen Fertigung. Dies stützt die Durchführbarkeit mit diesem Klinikteam. Der Abstract enthält keine kontrollierten Kontrakturergebnisse, vollständigen Kosten oder langfristigen Bruchdaten. Belegt sind erfolgreiche Anpassung und Reaktion auf anatomische Veränderungen, nicht eine nachweislich billigere oder wirksamere Verbrennungsbehandlung.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Portnova et al.: rückmeldungsbasierte Änderungen an Lenker, Daumen und Handfläche.",
+          "interpretation": "Der rote Kreis in A markiert den zusätzlichen Daumen–Finger-Lenker; laut Artikel nahm der Öffnungswinkel bei voller Handgelenkflexion von 52° auf 70° zu. B zeigt das gekrümmte Daumenstück, C das verlängerte Handflächenstück. Die Fotos dokumentieren funktionell unterschiedliche Änderungen; sichtbar enger Kontakt belegt keine gleichmäßige Druckverteilung. Größere Öffnung erleichtert das Umfassen, längere Handflächenstützung stabilisiert. Beides erweitert die Anpassungsmöglichkeiten, ohne langfristige Hautdruckdaten zu liefern.[Originale Entwurfsiterationen](ref:R01)"
+        },
+        "F02": {
+          "caption": "Portnova et al.: Aufgabenleistung derselben zwei Personen vor und nach Änderungen.",
+          "interpretation": "A zeigt aufgabenspezifische JTHF-Zeiten, bei denen niedrigere Werte schneller bedeuten; B zählt in einer Minute übertragene Würfel, wobei höhere Werte besser sind. Schraffierte Balken stehen für Visit 2, Vollfarben für Visit 3; Orange bezeichnet P2, Grün P3. Nach Änderungen stiegen die Würfelzahlen um 4 beziehungsweise 3, und etwa das Schreiben wurde schneller; bei kleinen Gegenständen wurde P2 dagegen langsamer. Der Folgetermin verband Bauänderungen mit zusätzlicher Vertrautheit. Nicht alle Zugewinne lassen sich deshalb einer genaueren Form zuschreiben.[Leistung beim Folgetermin](ref:R01)"
+        },
+        "F03": {
+          "caption": "Oud et al.: von der Erfassung einer gehaltenen Handstellung zur formangepassten PA12-Orthese. © Foundation of Rehabilitation Information.",
+          "interpretation": "A erfordert das aktive Halten der erfassten Stellung. In B werden Konturen, Öffnungen und Abdeckung auf dem digitalen Handmodell entworfen; C zeigt die getragene Orthese. Messung und orthopädietechnischer Entwurf bleiben getrennte Schritte, und Öffnungen belegen für sich keine validierte Belüftung oder Druckentlastung. Das Foto beweist keine bessere Passform gegenüber konventionellen Geräten: Die Bewertungen derselben Studie zeigten diesen Vorteil nicht, und mehrere Anpassungstermine blieben erforderlich.[Originale Erfassung und fertige Orthese](ref:R02)"
+        },
+        "F04": {
+          "caption": "Oud et al.: individuelle Aktivitätsverläufe mit konventionellen und gedruckten Orthesen.",
+          "interpretation": "Die Ordinate zeigt den DF-PROMIS-UE-T-Wert; höher bedeutet bessere Arm- und Handaktivität. Jede farbige Linie verfolgt eine Person. T1 und T2 betreffen konventionelle Orthesen, 2 Wochen vor der Intervention und am Ausgangszeitpunkt. T3 und T4 liegen 1 beziehungsweise 4 Monate nach Lieferung des Druckteils. Manche Werte sanken bereits vor dem Wechsel; deshalb wurden die Ausgangsmessungen nicht zusammengefasst. Auch während der Druckphase steigen und fallen Verläufe. Eine mehrheitliche Präferenz bedeutet somit keine einheitliche Funktionsverbesserung.[Individuelle Längsschnittergebnisse](ref:R03)"
+        },
+        "F05": {
+          "caption": "Yoo et al.: motorische Handgelenkextension, Seilzugspannung und Greifen verschiedener Objekte.",
+          "interpretation": "A und B zeigen Schließen und Freigeben, C–E Dose, Würfel und Holzklotz. F und G zeigen Rücken- und Handflächenseite; gelbe Pfeile markieren die Seilzüge zwischen Fingerringen und Unterarmstütze. Der auffällige Motor verdeutlicht, warum Wirksamkeit günstiger als Abmessungen bewertet wurde. Das System nutzt anatomische Gelenke zum koordinierten Greifen, ohne jeden Finger unabhängig aktiv zu steuern. Demonstriertes Halten und komplexe Feinmanipulation bleiben verschiedene Endpunkte.[Originale Struktur und Bewegung](ref:R05)"
+        }
+      }
+    }
+  }
+}

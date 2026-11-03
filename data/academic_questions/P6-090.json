@@ -1,0 +1,309 @@
+{
+  "schema_version": 2,
+  "question_id": "P6-090",
+  "p": "P6",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_d5f12a7d6e989c2ec63d",
+    "doc_c80d2533d6a5cdbd512f"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Validation of a 3D-printed robot-assisted partial nephrectomy training model",
+      "publisher": "BJUI Compass",
+      "year": 2024,
+      "url": "https://doi.org/10.1002/bco2.269",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Evaluating educational effectiveness of three-dimensional (3D)-printed training models and custom-made fibula model for osteotomy and flap inset training in head and neck reconstruction",
+      "publisher": "Maxillofacial Plastic and Reconstructive Surgery",
+      "year": 2025,
+      "url": "https://doi.org/10.1186/s40902-025-00476-7",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Simulation training of laparoscopic biliary-enteric anastomosis with a three-dimensional-printed model leads to better skill transfer: a randomized controlled trial",
+      "publisher": "International Journal of Surgery",
+      "year": 2024,
+      "url": "https://doi.org/10.1097/JS9.0000000000001079",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-090/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10764170/#bco2269-fig-0003",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-090/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10764170/#bco2269-fig-0004",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Fig. 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-090/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12367569/#Fig2",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Figure 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-090/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11019998/#F3",
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Figure 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-090/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11019998/#F2",
+      "license": "CC BY-NC-SA 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "训练模型能否改善操作技能和学习曲线？",
+      "direction": "模拟与训练",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "能区分专家和初学者，说明任务有辨别力，尚不说明训练造成进步",
+          "markdown": "Hermans 等用硅胶肾肿瘤模型评价 36 名参与者，按机器人部分肾切除经验分为无经验 14 人、初级 12 人、专家 10 人。参与者完成不同肿瘤模型的局部切除，记录视频、时间和模型损伤。研究将视频匿名化、去除音频，并由两位不知道参与者及肿瘤编号的评估者独立评分。这比单问模型是否逼真更接近操作技能的观察。[经验分组与盲法评分](ref:R01)\n\nGEARS 平均分依次为 13.8 ± 0.8、17.8 ± 0.6、22.6 ± 0.4，误差为标准误。专家的模型切除时间较短、模拟包膜损伤与肿瘤散落较少；但模拟肾盂穿孔没有显著组间差异，P=0.38。模型通过若干终点呈现了经验相关差别，并非全部指标都同样敏感。\n\n这些组在既往经验上本来就不同。横断面差异能支持任务区分技能层级，却不能回答模型把某个初学者提高了多少。无经验组甚至可能包含有其他机器人操作经验者；“没有这项手术经验”不是完全没有外科经验。把组间差距直接命名为学习效果，会把进入实验前已有的能力算到训练模型上。\n\n研究还检查切除组织重量、残留和切入深度，不同指标的好坏方向并不相同。减少时间需要同时看质量终点；过快但保留模拟病灶，或过深进入目标边界，都不能由高速度抵消。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "首次与末次练习的比较受到肿瘤难度变化影响",
+          "markdown": "肾肿瘤研究另外比较首次与末次练习的 GEARS，试图观察同一人是否改善。每人顺序完成 4 个不同肿瘤；末次模型更内生，参与者认为它更难。末次平均难度为 7.9 ± 0.3 分，前三个约为 3.5–4.1 分，满分 10 分。因此，练习次数与任务难度同时改变，没有提供同等难度下完整的逐次学习轨迹。[同人前后比较与难度](ref:R01)\n\n作者在混合模型中考虑参与者和评分者后，没有发现显著练习改善，P=0.16。原图中的两种颜色对应首次与末次，专家略升、初级组略降，顶部显著性横线比较的是经验组，不是证明各组都随训练进步。把这些星号读作“训练前后显著提高”会改变研究结论。\n\n不显著的结果也不说明模型不能训练技能：短期练习、评分的检测范围、样本量及末次任务加难都可能遮蔽变化。更准确的结论是，这项研究展示了经验相关表现与良好用途评分，但尚未量化出独立于难度变化的学习增益。原文不同段落对内容效度、构念效度和预测效度的用词不完全一致，本报告按实际比较设计解释。\n\n研究未把完成模型训练者与未训练者放到同一个真实手术任务中比较，也没有延迟复测。因此，该实验中的模型损伤率不能转换为患者并发症风险，末次成绩也不是长期保持率。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "颌面重建工作坊提高了自评理解，客观操作进展没有完整数据",
+          "markdown": "Gondalia 等招募 30 名整形外科住院医师，接受讲课、腓骨截骨模拟及软组织瓣嵌入练习。颌骨为打印件，软组织来自硅胶和泡沫；腓骨主体则按患者影像模板手工切割亚克力板，铜线和泡沫表示血管、肌肉及皮岛。它是组合教学平台，不能把所有部件都称为直接打印，也不能把改善只归于打印步骤。[模拟对象与教学安排](ref:R02)\n\n原表中，“理解器械选择”的自评分由 1.87 ± 0.63 升至 3.07 ± 0.58，“理解规划重要性”由 1.93 ± 0.60 升至 3.40 ± 0.50，满分为 4 分，误差为标准差。各项配对问卷比较报告 P<0.01。这些结果支持参与者在工作坊后感觉理解更好，但不是器械选择正确率、切骨角度误差或完成时间。\n\n方法和摘要提到两位盲法评估者使用 Zwisch 自主性量表，正文结果却未提供可核查的逐人或分组量表分布；局限部分也承认缺少客观任务表现数据。摘要、正文总分及逐项均值之间还有数值不一致，因此这里仅引用可定位的单项表格，不把汇总分差当作精确效应量。\n\n所有人都接受同一工作坊，没有同期对照，也没有拆分讲课、导师指导与模型练习。模型让骨、皮岛与穿支关系成为可操作的对象，照片能够说明训练内容；它们不能给出训练后实际移植成功率，也无法独立证明学习曲线缩短。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "重复练习可明显缩短模型操作时间，但末次反弹不支持简单直线学习",
+          "markdown": "Shen 等将 15 名普外科医师随机分为三组，每组 5 人：只看教学视频、视频加一般缝合练习、视频加解剖相关硅胶模型练习。入组者均有较多腹腔镜胆囊切除经验，但没有胆肠吻合临床经验，因此研究的是已有基础技能者学习新任务，而不是从零训练医学生。[随机分组与任务背景](ref:R03)\n\n模型组连续完成 5 次练习；一般缝合组练习 157 分钟，以匹配模型组的平均总练习时间。由原表逐人时间计算，各轮平均用时依次为 45.4、37.2、29.6、22.0、23.0 分钟。整体加快很明显，但第 5 轮比第 4 轮略慢，且有 3 名参与者出现末次反弹。[逐次时间原始数据](ref:R03)\n\n原作者把末段描述为趋于平台，现有记录却只有短期少量重复，没有拟合达到熟练标准所需的次数，也没有在更多练习后确认稳定性。图中曲线的下降首先说明对该模型任务更熟悉；仅有时间数据，还无法确认每次都保持相同吻合质量。\n\n等时长一般缝合组是较有价值的对照，因为它减少了“只是多练了一段时间”的解释。模型组与一般缝合组仍练习不同任务：前者包含特定空间和操作组织，后者主要练习一般缝合。若迁移结果更好，可以支持这种任务匹配的训练组合，却不能单独分离打印制造、模型几何和课程安排各自贡献。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "更换为离体猪器官后仍有差异，是比原模型速度更强的迁移证据",
+          "markdown": "随机试验在当天训练结束后，让各组在离体猪多器官平台完成同类任务。两位评估者不知道参与者身份，评价通用腹腔镜技能 GOALS 与吻合质量；后者分别检查前后壁的漏液及线结状态后合计。因此，测试同时观察操作过程与产物质量，并且改变了组织材料与局部几何。[独立材料上的迁移测验](ref:R03)\n\n| 离体器官测验，均值 ± 标准差 | 模型练习 | 一般缝合 | 仅视频 |\n|---|---:|---:|---:|\n| 时间，min | 29.4 ± 2.3 | 42.4 ± 9.7 | 45.4 ± 12.3 |\n| 吻合质量 | 8.2 ± 0.8 | 6.8 ± 0.5 | 5.2 ± 1.3 |\n| GOALS | 21.2 ± 1.8 | 17.8 ± 1.6 | 15.6 ± 2.7 |\n\n按结果表，模型与等时长缝合组相比，时间、吻合质量和 GOALS 的事后比较 P 值分别为 0.044、0.035、0.025。一般缝合相对仅视频也改善吻合质量，但其 GOALS 差异不显著。组合模型训练的优势因而不能简单解释为是否接触过器械；特定任务结构可能帮助把基础动作组织成完整操作。\n\n这是跨材料的即时技能迁移证据。它比同一打印件上越来越快更接近泛化，却仍由每组少量参与者、单中心和单次测试支撑。论文表格与文字对视频组平均时间有轻微不一致，本报告统一按表格列数值，并未把总体检验的 P 值误当作所有成对比较都显著。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "离体迁移测验没有测到灌注条件、长期保持或患者并发症",
+          "markdown": "猪器官平台由离体组织按解剖位置放入训练器组成，不是存活动物手术，更不是患者试验。评分中的“漏液”是离体吻合产物检查，不能直接等同术后胆漏；后者还受组织灌注、愈合、感染和患者状态影响。模型组更高的质量分因而支持当次制作质量，而不提供患者风险降低的幅度。[迁移平台的实际条件](ref:R03)\n\n培训与测试在同一天完成，优点是减少间隔中额外练习，代价是无法判断技能在离开课程后是否保持。研究没有延迟数周的统一复测，也没有更换到不同病理或变异解剖后重复评估。短期改善可能包括记住教学视频的顺序、熟悉器械协同和特定空间姿态；这些成分在当前设计中没有拆开。\n\n每组只有少量医师，入组要求又排除了已有该吻合经验者及部分有其他模型训练经历者。结果不能自动代表完全初学者、经验丰富的专科术者或不同设备配置。原文使用事后成对比较来定位组差异，但没有展示达到预设熟练标准后停止练习的训练方案，也未估计达到同一标准可节省多少临床病例。\n\n因此，这组试验具体记录的是：固定课程后的离体操作时间、当次评分，以及模型内短期重复的速度变化。临床病例数量、后续练习间隔与延迟保持成绩没有进入所报告的数据集。",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Hermans et al.：经验层级与不同任务终点的关系。",
+          "interpretation": "A 为 GEARS，B 为切入深度，C 为切除重量，D 为时间，E–H 为不同损伤或残留终点。误差为标准误。经验组差异在各终点上不一致，H 没有显著差异标记；B 的符号按原方法区分包膜外与进入肿瘤，不能把每个数值上升都理解为进步。这幅图比较不同人群，不是同一个人的学习轨迹。[操作结果](ref:R01)"
+        },
+        "F02": {
+          "caption": "Hermans et al.：首次和末次任务的评分，而非连续学习曲线。",
+          "interpretation": "红点为 Trial 1，青点为 Trial 4；各经验组之间的差距大于组内两个时间点的变化。顶部星号跨经验组，不是组内训练前后检验。图只含两次评分，而且任务难度不同，无法直接读出达到熟练所需次数；青点较高也不自动意味着统计显著。[练习比较](ref:R01)"
+        },
+        "F03": {
+          "caption": "Gondalia et al.：手工腓骨构件与软组织、血管参照。",
+          "interpretation": "A–B 从两个角度展示白色亚克力骨、红色泡沫肌肉、铜线血管和黄色皮岛。构件强调骨与穿支、皮岛的相对关系，颜色和材料用于区分对象，不是人体材料性能测量。该图能说明截骨与嵌入练习需要同时考虑哪些结构，不能直接证明参与者的截骨误差降低。[模拟构件](ref:R02)"
+        },
+        "F04": {
+          "caption": "Shen et al.：模型组逐人的重复练习时间。",
+          "interpretation": "A 为分轮柱图，B 为同一批参与者的折线，纵轴为分钟，颜色区分个人。总体先明显下降，末段部分曲线反弹；这与原始时间表相符。不能把五条线当成五个随机组，也不能仅由少量末段点认定稳定平台。该图未同步绘出每轮质量或误差。[时间记录](ref:R03)"
+        },
+        "F05": {
+          "caption": "Shen et al.：离体器官吻合质量的评分实例。",
+          "interpretation": "A–E 展示从无漏液且缝线紧密到漏液与松线的不同产物，照片为离体组织评估。F 说明前壁、后壁分别评分再合计。质量评分因此增加了速度之外的终点，但它仍是当次机械完整性检查，不是灌注组织愈合后并发症随访；各示例照片也不是随机组的发生率。[评分定义](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "Can training models improve procedural skills and learning curves?",
+      "direction": "Simulation and training",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Discriminating experts from novices shows task sensitivity, not training-induced improvement",
+          "markdown": "Hermans et al. assessed 36 participants on silicone renal tumor models: 14 without robot-assisted partial-nephrectomy experience, 12 beginners and 10 experts. Participants performed local resections on different tumor models, with video, time and model damage recorded. Videos were anonymized and stripped of audio, and two assessors unaware of participant and tumor identity scored independently. This observes operative skill more directly than asking whether a model feels realistic. [Experience groups and blinded assessment](ref:R01)\n\nMean GEARS scores were 13.8 ± 0.8, 17.8 ± 0.6 and 22.6 ± 0.4, with standard errors. Experts had shorter model-resection times and less simulated capsule injury and tumor spillage, but simulated pelvis perforation did not differ significantly, P=0.38. Several endpoints expressed experience-related differences; not all were equally sensitive.\n\nGroups already differed in prior experience. Cross-sectional separation supports discrimination of skill levels, not how much the model improves an individual novice. The no-experience group could still have other robotic experience: absence of experience in this procedure is not absence of surgical experience. Calling between-group gaps a learning effect assigns pre-existing ability to the model.\n\nExcised mass, residual material and incision depth were also measured, with different desirable directions. Faster performance requires accompanying quality outcomes. Leaving simulated disease or crossing a target boundary cannot be compensated by speed alone.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "First-to-last comparisons are confounded by changing tumor difficulty",
+          "markdown": "The renal study also compared first and last GEARS scores to examine within-person improvement. Each participant completed 4 different tumors in sequence, with a more endophytic and harder final model. Its mean difficulty was 7.9 ± 0.3, compared with approximately 3.5–4.1 for the preceding tumors, on a scale with maximum 10. Practice exposure and difficulty therefore changed together, without a complete learning trajectory at matched difficulty. [Within-person comparison and difficulty](ref:R01)\n\nThe mixed model accounting for participant and assessor found no significant practice improvement, P=0.16. In the original figure, colors indicate first and last trials: experts rise slightly and beginners decline slightly. Significant brackets at the top compare experience groups, not improvement over practice within each group. Reading them as significant pre/post gains changes the finding.\n\nNon-significance does not show that models cannot train skill. Short exposure, score sensitivity, sample size and a harder final task could mask change. The study demonstrates experience-related performance and favorable usefulness ratings, but does not quantify learning independently of task difficulty. Terminology for content, construct and predictive validity varies across the article; this report interprets the actual comparison design.\n\nModel-trained and untrained participants were not compared on a common real surgical task, and no delayed retest was conducted. Model damage rates cannot become patient complication risks, nor can final scores become long-term retention rates.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "A reconstruction workshop improved perceived understanding without complete objective performance data",
+          "markdown": "Gondalia et al. enrolled 30 plastic-surgery residents in lectures, simulated fibula osteotomy and soft-tissue flap inset. Jaws were printed, soft tissues used silicone and foam, and the fibula itself was manually cut from acrylic using an image-derived template. Wires and foam represented vessels, muscle and skin paddle. This was a combined educational platform, not entirely direct printing, and improvements cannot be attributed to printing alone. [Simulation objects and teaching arrangement](ref:R02)\n\nThe table reports perceived understanding of instrument selection increasing from 1.87 ± 0.63 to 3.07 ± 0.58, and understanding the importance of planning from 1.93 ± 0.60 to 3.40 ± 0.50, on a scale with maximum 4 and standard deviations. Paired questionnaire comparisons were reported as P<0.01. Participants felt more knowledgeable after the workshop; these are not instrument-choice accuracy, osteotomy angular errors or completion times.\n\nMethods and abstract describe two blinded assessors using the Zwisch autonomy scale, but results do not provide verifiable individual or grouped scale distributions. The limitations also acknowledge absent objective task-performance data. Abstract totals, body totals and item means are numerically inconsistent. This report therefore cites traceable individual table items without using aggregate changes as precise effect sizes.\n\nEveryone received the same workshop, without concurrent controls or separation of lectures, instructor guidance and practice. Models made bone, skin-paddle and perforator relationships manipulable, and photographs document the curriculum. They do not establish subsequent clinical flap success or independently demonstrate a shorter learning curve.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Repetition shortens model-task time, but late rebounds do not support a simple linear learning curve",
+          "markdown": "Shen et al. randomized 15 general surgeons into groups of 5: instructional video alone, video plus general suturing, or video plus anatomically contextualized silicone-model practice. Participants had substantial laparoscopic cholecystectomy experience but no clinical biliary-enteric anastomosis experience. The study concerns acquisition of a new task by surgeons with foundational skills, not medical students starting from zero. [Randomization and task background](ref:R03)\n\nThe model group completed 5 consecutive trials. General-suture practice lasted 157 minutes to match the model group's mean total training time. Calculated from individual times in the original table, successive means were 45.4, 37.2, 29.6, 22.0 and 23.0 minutes. Overall acceleration is clear, but trial 5 was slightly slower than trial 4, with 3 participants showing a final rebound. [Raw repeated-trial times](ref:R03)\n\nThe authors describe an approaching plateau, but records cover few short-term repetitions without estimating trials to a proficiency criterion or confirming stability over further practice. Falling curves first establish familiarity with this model task. Time alone does not confirm equivalent anastomotic quality on every repetition.\n\nThe time-matched general-suture control helps reduce an explanation based solely on more practice time. Tasks still differed: model practice included specific spatial and procedural organization, whereas the other condition emphasized general suturing. Better transfer can support this task-matched training package, without separating contributions from printing, geometry and curriculum.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Differences persist on isolated porcine organs, providing stronger transfer evidence than same-model speed",
+          "markdown": "After same-day training, each group performed a comparable task on an isolated porcine multi-organ platform. Two assessors unaware of participant identity evaluated general laparoscopic skill using GOALS and anastomotic quality, summing separate anterior/posterior assessments of leakage and knot condition. This captures both process and product while changing tissue material and local geometry. [Transfer testing on a different material](ref:R03)\n\n| Isolated-organ outcome, mean ± SD | Model practice | General suturing | Video only |\n|---|---:|---:|---:|\n| Time, min | 29.4 ± 2.3 | 42.4 ± 9.7 | 45.4 ± 12.3 |\n| Anastomotic quality | 8.2 ± 0.8 | 6.8 ± 0.5 | 5.2 ± 1.3 |\n| GOALS | 21.2 ± 1.8 | 17.8 ± 1.6 | 15.6 ± 2.7 |\n\nThe results table gives model-versus-time-matched-suture post-hoc P values of 0.044, 0.035 and 0.025 for time, quality and GOALS, respectively. General suturing also improved quality relative to video alone, but not GOALS significantly. The model package's advantage is therefore not simply instrument exposure; specific task structure may help organize basic actions into a complete performance.\n\nThis supports immediate cross-material skill transfer. It is closer to generalization than becoming faster on one printed object, but rests on small groups, one center and one test. Text and table slightly disagree on the video group's mean time; this report consistently uses the table and does not treat an omnibus P value as significance for every pair.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Ex vivo transfer does not measure perfusion, long-term retention or patient complications",
+          "markdown": "The porcine platform placed isolated tissues in anatomical arrangement inside a trainer. It was neither live-animal surgery nor a patient trial. Leakage scores inspected an ex vivo product and are not postoperative bile-leak outcomes, which also depend on perfusion, healing, infection and patient condition. Higher model-group quality scores support that session's product quality, not a quantified reduction in patient risk. [Actual transfer-platform conditions](ref:R03)\n\nTraining and testing occurred on the same day, reducing intervening practice but preventing assessment of retention after leaving the course. There was no standardized retest weeks later or repeated evaluation with different pathology or variant anatomy. Immediate improvement may include recalling the video's sequence, coordinating instruments and familiarizing oneself with particular spatial positions; these components were not separated.\n\nGroups were small, and eligibility excluded surgeons experienced in this anastomosis and some with other model-training exposure. Findings do not automatically represent complete novices, experienced specialists or different equipment configurations. Post-hoc comparisons localized group differences, but the study did not train until a prespecified proficiency threshold or estimate how many clinical cases might be saved in reaching one.\n\nThe recorded outcomes were ex vivo time and scores after a fixed curriculum and short-term speed changes within the model. Clinical case volume, subsequent practice intervals and delayed retention scores were absent from the dataset.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Hermans et al.: Experience level and distinct task outcomes.",
+          "interpretation": "A is GEARS, B incision depth, C excised mass, D time, and E–H damage or residual-material outcomes. Errors are standard errors. Group patterns differ by endpoint; H has no significance marker. B uses signs to distinguish outside-capsule from intratumoral depth, so not every increase is improvement. This compares populations, not one learner over time. [Task outcomes](ref:R01)"
+        },
+        "F02": {
+          "caption": "Hermans et al.: First and final task scores, not a continuous learning curve.",
+          "interpretation": "Red points are Trial 1, turquoise points Trial 4. Experience-group gaps exceed changes between the two observations. Upper stars compare experience groups, not within-group pre/post training. Only two rated trials with different difficulty are shown, so trials to proficiency cannot be read from the figure. A higher turquoise point does not automatically mean significance. [Practice comparison](ref:R01)"
+        },
+        "F03": {
+          "caption": "Gondalia et al.: Handmade fibula component with tissue and vascular references.",
+          "interpretation": "A–B show white acrylic bone, red foam muscle, wire vessels and yellow skin paddle from two angles. The assembly emphasizes bone–perforator–skin-paddle relationships; colors and materials distinguish objects rather than measure human tissue mechanics. It identifies structures involved in osteotomy and inset practice, not a demonstrated reduction in participants’ osteotomy errors. [Simulation assembly](ref:R02)"
+        },
+        "F04": {
+          "caption": "Shen et al.: Repeated-trial times for individual model trainees.",
+          "interpretation": "A displays bars by trial and B lines for the same participants; vertical values are minutes and colors identify individuals. A pronounced early decrease is followed by some late rebounds, matching the source table. Lines are not separate randomized groups, and a few late points do not establish a stable plateau. Per-trial quality and errors are not plotted. [Time records](ref:R03)"
+        },
+        "F05": {
+          "caption": "Shen et al.: Examples of anastomotic quality scoring on isolated organs.",
+          "interpretation": "A–E show products ranging from no leakage and tight stitches to leakage and loose stitches, assessed on isolated tissues. F specifies separate anterior and posterior wall scores that are added. Quality therefore supplements speed, but remains a test of immediate mechanical integrity rather than complications after perfused-tissue healing. Example photographs are not randomized-group incidence rates. [Scoring definition](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Können Trainingsmodelle operative Fertigkeiten und Lernkurven verbessern?",
+      "direction": "Simulation und Training",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Experten von Anfängern zu unterscheiden zeigt Aufgabensensitivität, keinen Trainingseffekt",
+          "markdown": "Hermans et al. prüften 36 Personen an Silikon-Nierentumormodellen: 14 ohne Erfahrung in robotischer Teilnephrektomie, 12 Anfänger und 10 Experten. Erfasst wurden Video, Zeit und Modellschäden bei lokalen Resektionen verschiedener Tumoren. Videos wurden anonymisiert und ohne Ton von zwei Beurteilern unabhängig bewertet, denen Person und Tumornummer unbekannt waren. Dies beobachtet operative Fertigkeit direkter als die Frage nach Realismus. [Erfahrungsgruppen und verblindete Bewertung](ref:R01)\n\nDie mittleren GEARS-Werte betrugen 13.8 ± 0.8, 17.8 ± 0.6 und 22.6 ± 0.4 mit Standardfehlern. Experten benötigten weniger Resektionszeit und verursachten weniger simulierte Kapselverletzungen und Tumorverschleppung; simulierte Nierenbeckenperforation unterschied sich jedoch nicht signifikant, P=0.38. Mehrere Endpunkte bildeten Erfahrungsunterschiede ab, nicht alle gleich empfindlich.\n\nDie Gruppen unterschieden sich bereits vorher. Querschnittsunterschiede stützen die Unterscheidung von Kompetenzstufen, nicht den individuellen Trainingsgewinn. Auch Personen ohne Erfahrung mit diesem Eingriff konnten andere Robotikerfahrung haben. Fehlende Eingriffserfahrung bedeutet keine fehlende chirurgische Erfahrung. Gruppendifferenzen als Lerneffekt zu bezeichnen schreibt vorhandene Fähigkeiten dem Modell zu.\n\nGemessen wurden auch Resektatmasse, Restmaterial und Schnitttiefe mit unterschiedlichen erwünschten Richtungen. Kürzere Dauer benötigt begleitende Qualitätsendpunkte. Zurückgelassene simulierte Erkrankung oder Überschreiten einer Zielgrenze werden durch Geschwindigkeit nicht aufgewogen.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Der Vergleich erster und letzter Übung ist durch veränderte Tumorschwierigkeit beeinflusst",
+          "markdown": "Die Nierenstudie verglich zusätzlich erste und letzte GEARS-Werte zur Prüfung individueller Verbesserung. Jede Person bearbeitete nacheinander 4 unterschiedliche Tumoren; der letzte war stärker endophytisch und schwieriger. Seine mittlere Schwierigkeit betrug 7.9 ± 0.3 gegenüber etwa 3.5–4.1 für die vorherigen Tumoren bei maximal 10 Punkten. Übung und Schwierigkeit änderten sich gemeinsam; eine vollständige Lerntrajektorie bei gleicher Schwierigkeit fehlt. [Individueller Vorher-Nachher-Vergleich und Schwierigkeit](ref:R01)\n\nDas gemischte Modell unter Berücksichtigung von Person und Beurteiler fand keine signifikante Übungsverbesserung, P=0.16. Farben der Originalgrafik markieren ersten und letzten Versuch: Experten steigen leicht, Anfänger fallen leicht. Signifikanzklammern oben vergleichen Erfahrungsgruppen, nicht Übungsfortschritte innerhalb jeder Gruppe. Eine Deutung als signifikanter Vorher-Nachher-Gewinn würde den Befund verändern.\n\nNichtsignifikanz beweist keinen fehlenden Trainingsnutzen. Kurze Exposition, Bewertungssensitivität, Stichprobengröße und schwerere Abschlussaufgabe könnten Veränderungen verdecken. Belegt sind erfahrungsabhängige Leistungen und günstige Nutzungsurteile, kein von Aufgabenschwierigkeit unabhängiger Lerngewinn. Die Begriffe Inhalts-, Konstrukt- und prädiktive Validität werden im Artikel uneinheitlich verwendet; dieser Bericht interpretiert das konkrete Vergleichsdesign.\n\nModelltrainierte und untrainierte Personen wurden nicht an derselben echten Operationsaufgabe verglichen; verzögerte Wiederholungstests fehlten. Modellschäden lassen sich daher nicht in Patientenkomplikationsrisiken und Abschlusswerte nicht in langfristige Behaltensraten übersetzen.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Ein Rekonstruktionskurs verbesserte wahrgenommenes Verständnis ohne vollständige objektive Leistungsdaten",
+          "markdown": "Gondalia et al. nahmen 30 plastisch-chirurgische Weiterbildungsärzte in Vorträge, simulierte Fibulaosteotomie und Weichgewebelappeneinpassung auf. Kiefer waren gedruckt, Weichgewebe bestanden aus Silikon und Schaum; die Fibula selbst wurde anhand einer bildbasierten Vorlage manuell aus Acryl geschnitten. Drähte und Schaum stellten Gefäße, Muskel und Hautinsel dar. Dies war eine kombinierte Lehrplattform, kein vollständig direkter Druck; Verbesserungen sind nicht allein dem Drucken zuzuordnen. [Simulationsobjekte und Unterricht](ref:R02)\n\nLaut Tabelle stieg das selbst eingeschätzte Verständnis der Instrumentenauswahl von 1.87 ± 0.63 auf 3.07 ± 0.58, das Verständnis der Planungsbedeutung von 1.93 ± 0.60 auf 3.40 ± 0.50 bei maximal 4 Punkten und Standardabweichungen. Gepaarte Fragebogenvergleiche wurden mit P<0.01 angegeben. Teilnehmende fühlten sich danach besser informiert; dies sind keine korrekten Auswahlraten, Osteotomiewinkelfehler oder Bearbeitungszeiten.\n\nMethoden und Abstract nennen zwei verblindete Beurteiler der Zwisch-Autonomieskala. Ergebnisse enthalten jedoch keine überprüfbaren individuellen oder gruppierten Skalenverteilungen; auch die Limitationen nennen fehlende objektive Aufgabendaten. Abstractsummen, Textsummen und Einzelmittelwerte sind numerisch inkonsistent. Deshalb werden hier nachvollziehbare Einzelwerte statt aggregierter Differenzen als präzise Effektstärken verwendet.\n\nAlle erhielten denselben Kurs, ohne zeitgleiche Kontrollen oder Trennung von Vortrag, Anleitung und Übung. Modelle machten Beziehungen zwischen Knochen, Hautinsel und Perforatoren handhabbar; Fotos dokumentieren Lehrinhalte. Sie belegen weder späteren klinischen Lappenerfolg noch unabhängig eine verkürzte Lernkurve.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Wiederholung verkürzt Modellzeiten; spätes Wiederansteigen spricht gegen eine einfache lineare Lernkurve",
+          "markdown": "Shen et al. randomisierten 15 Allgemeinchirurgen in Gruppen mit 5 Personen: Lehrvideo allein, Video plus allgemeine Nahtübung oder Video plus anatomisch eingebettete Silikonmodellübung. Alle hatten erhebliche Erfahrung mit laparoskopischer Cholezystektomie, aber keine klinische biliodigestive Anastomosenerfahrung. Geprüft wurde eine neue Aufgabe bei vorhandenen Grundfertigkeiten, keine Ausbildung von Studierenden ohne Vorerfahrung. [Randomisierung und Aufgabenhintergrund](ref:R03)\n\nDie Modellgruppe absolvierte 5 aufeinanderfolgende Versuche. Allgemeine Nahtübungen dauerten 157 Minuten, entsprechend der mittleren Gesamtübungszeit der Modellgruppe. Aus den Einzelzeiten der Originaltabelle berechnet ergeben sich nacheinander 45.4, 37.2, 29.6, 22.0 und 23.0 Minuten. Insgesamt wurde die Bearbeitung deutlich schneller, Versuch 5 war jedoch etwas langsamer als Versuch 4; bei 3 Personen stieg die Zeit zuletzt wieder an. [Rohdaten wiederholter Versuche](ref:R03)\n\nDie Autoren beschreiben ein nahendes Plateau. Die wenigen kurzfristigen Wiederholungen schätzen jedoch weder Versuche bis zu einem Kompetenzkriterium noch Stabilität nach weiterer Übung. Fallende Kurven zeigen zunächst Vertrautheit mit dieser Modellaufgabe. Zeit allein bestätigt keine gleichbleibende Anastomosenqualität jeder Wiederholung.\n\nDie zeitgleiche allgemeine Nahtkontrolle vermindert die Erklärung allein durch längere Übung. Aufgaben unterschieden sich dennoch: Modelltraining enthielt spezifische räumliche und prozedurale Organisation, die andere Bedingung allgemeines Nähen. Besserer Transfer kann dieses aufgabenbezogene Lehrpaket stützen, ohne Beiträge von Druck, Geometrie und Curriculum zu trennen.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Unterschiede bleiben an isolierten Schweineorganen bestehen und liefern stärkere Transferevidenz",
+          "markdown": "Nach dem Training am selben Tag bearbeiteten alle Gruppen eine vergleichbare Aufgabe auf einer isolierten Schweine-Multiorganplattform. Zwei Beurteiler ohne Kenntnis der Teilnehmeridentität bewerteten allgemeine laparoskopische Fertigkeiten mit GOALS und Anastomosenqualität. Letztere summierte getrennte Vorder- und Rückwandbewertungen von Leckage und Knotenzustand. Erfasst wurden Prozess und Produkt bei verändertem Material und lokaler Geometrie. [Transferprüfung an anderem Material](ref:R03)\n\n| Isoliertes Organergebnis, Mittelwert ± SD | Modellübung | Allgemeines Nähen | Nur Video |\n|---|---:|---:|---:|\n| Zeit, min | 29.4 ± 2.3 | 42.4 ± 9.7 | 45.4 ± 12.3 |\n| Anastomosenqualität | 8.2 ± 0.8 | 6.8 ± 0.5 | 5.2 ± 1.3 |\n| GOALS | 21.2 ± 1.8 | 17.8 ± 1.6 | 15.6 ± 2.7 |\n\nDie Ergebnistabelle nennt für Modell gegen zeitgleiche Nahtübung post-hoc P-Werte von 0.044, 0.035 und 0.025 für Zeit, Qualität und GOALS. Allgemeines Nähen verbesserte gegenüber Video ebenfalls Qualität, GOALS jedoch nicht signifikant. Der Vorteil des Modellpakets beruht somit nicht nur auf Instrumentenkontakt; spezifische Aufgabenstruktur könnte Grundbewegungen zu einer Gesamtleistung verbinden.\n\nDies stützt unmittelbaren materialübergreifenden Transfer, näher an Generalisierung als schnelleres Arbeiten am selben Druckobjekt. Die Aussage beruht dennoch auf kleinen Gruppen, einem Zentrum und einem Test. Text und Tabelle unterscheiden sich geringfügig bei der mittleren Videozeit. Hier wird einheitlich die Tabelle verwendet; ein Gesamt-P-Wert wird nicht als Signifikanz sämtlicher Paarvergleiche gelesen.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Ex-vivo-Transfer misst weder Perfusion noch langfristiges Behalten oder Patientenkomplikationen",
+          "markdown": "Die Schweineplattform ordnete isolierte Gewebe anatomisch in einem Trainer an. Es war weder eine Operation am lebenden Tier noch eine Patientenstudie. Leckagewerte prüften ein Ex-vivo-Produkt und entsprechen keinen postoperativen Galleleckagen, die auch von Perfusion, Heilung, Infektion und Patientenzustand abhängen. Höhere Qualitätswerte stützen die Produktqualität dieser Sitzung, keine quantifizierte Patientenrisikoreduktion. [Tatsächliche Bedingungen der Transferplattform](ref:R03)\n\nTraining und Prüfung fanden am selben Tag statt. Dadurch wurde zwischenzeitliche Übung begrenzt, späteres Behalten aber nicht untersucht. Standardisierte Tests Wochen später oder Wiederholung an anderer Pathologie beziehungsweise Variantenanatomie fehlten. Unmittelbare Verbesserungen können Erinnern der Videosequenz, Instrumentenkoordination und Vertrautheit mit bestimmten Raumpositionen enthalten; diese Anteile wurden nicht getrennt.\n\nGruppen waren klein. Ausgeschlossen wurden Personen mit Anastomosenerfahrung sowie teilweise mit anderem Modelltraining. Ergebnisse repräsentieren nicht automatisch völlige Anfänger, erfahrene Spezialisten oder andere Geräte. Post-hoc-Vergleiche lokalisierten Gruppenunterschiede, doch trainiert wurde nicht bis zu einer vorgegebenen Kompetenzschwelle. Auch eingesparte klinische Fälle zum Erreichen derselben Schwelle wurden nicht geschätzt.\n\nErfasst wurden Ex-vivo-Zeit und Bewertung nach festem Curriculum sowie kurzfristige Geschwindigkeitsänderungen am Modell. Klinische Fallzahlen, spätere Übungsabstände und verzögerte Behaltenswerte waren nicht Teil des Datensatzes.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Hermans et al.: Erfahrungsstufe und unterschiedliche Aufgabenendpunkte.",
+          "interpretation": "A zeigt GEARS, B Schnitttiefe, C Resektatmasse, D Zeit, E–H Schäden oder Restmaterial. Fehler sind Standardfehler. Gruppenmuster unterscheiden sich; H trägt keine Signifikanzmarkierung. In B trennen Vorzeichen kapseläußere und intratumorale Tiefe, weshalb nicht jeder Anstieg Verbesserung bedeutet. Verglichen werden Populationen, keine individuelle Lerntrajektorie. [Aufgabenergebnisse](ref:R01)"
+        },
+        "F02": {
+          "caption": "Hermans et al.: Erste und letzte Aufgabenwerte statt kontinuierlicher Lernkurve.",
+          "interpretation": "Rote Punkte sind Trial 1, türkise Trial 4. Erfahrungsgruppen unterscheiden sich stärker als die beiden Zeitpunkte innerhalb einer Gruppe. Obere Sterne vergleichen Erfahrungsgruppen, keine internen Vorher-Nachher-Veränderungen. Zwei bewertete Aufgaben verschiedener Schwierigkeit ergeben keine Zahl bis zur Kompetenz; ein höherer türkiser Punkt bedeutet nicht automatisch Signifikanz. [Übungsvergleich](ref:R01)"
+        },
+        "F03": {
+          "caption": "Gondalia et al.: Handgefertigte Fibulakomponente mit Gewebe- und Gefäßreferenzen.",
+          "interpretation": "A–B zeigen weißen Acrylknochen, roten Schaummuskel, Drahtgefäße und gelbe Hautinsel aus zwei Richtungen. Betont werden Knochen-Perforator-Hautinsel-Beziehungen; Farben und Materialien unterscheiden Objekte statt menschliche Gewebemechanik zu messen. Erkennbar sind relevante Übungsstrukturen, keine nachgewiesene Verringerung von Osteotomiefehlern. [Simulationsaufbau](ref:R02)"
+        },
+        "F04": {
+          "caption": "Shen et al.: Wiederholungszeiten einzelner Modelltrainierender.",
+          "interpretation": "A zeigt Balken nach Versuch, B Linien derselben Personen; vertikal stehen Minuten, Farben kennzeichnen Personen. Auf deutlichen frühen Rückgang folgen teilweise erneute Anstiege, passend zur Tabelle. Linien sind keine getrennten randomisierten Gruppen; wenige späte Punkte belegen kein stabiles Plateau. Qualität und Fehler jeder Wiederholung sind nicht dargestellt. [Zeitaufzeichnungen](ref:R03)"
+        },
+        "F05": {
+          "caption": "Shen et al.: Beispiele der Anastomosenqualitätsbewertung isolierter Organe.",
+          "interpretation": "A–E zeigen Produkte von fehlender Leckage mit fester Naht bis zu Leckage und lockerer Naht an isoliertem Gewebe. F beschreibt getrennte Vorder- und Rückwandwerte mit anschließender Addition. Qualität ergänzt Geschwindigkeit, prüft jedoch unmittelbare mechanische Integrität statt Komplikationen nach Heilung durchbluteten Gewebes. Beispielfotos sind keine Gruppeninzidenzen. [Bewertungsdefinition](ref:R03)"
+        }
+      }
+    }
+  }
+}

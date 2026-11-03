@@ -1,0 +1,337 @@
+{
+  "schema_version": 2,
+  "question_id": "P5-076",
+  "p": "P5",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_f244524aec6c144b1385",
+    "doc_b86861e6c52d04c82032",
+    "doc_0f2465ea6d0857aae96d",
+    "doc_ae82d7f9ccb5ba511cd1"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Air seal performance of personalized and statistically shaped 3D-printed face masks compared with market-available surgical and FFP2 masks",
+      "publisher": "Scientific Reports",
+      "year": 2021,
+      "url": "https://doi.org/10.1038/s41598-021-98963-0",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Additively manufactured respirators: quantifying particle transmission and identifying system-level challenges for improving filtration efficiency",
+      "publisher": "Journal of Manufacturing Systems",
+      "year": 2021,
+      "url": "https://doi.org/10.1016/j.jmsy.2021.01.002",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Benchtop assessment of sealing efficacy and breathability of additively manufactured (AM) face masks",
+      "publisher": "Additive Manufacturing",
+      "year": 2023,
+      "url": "https://doi.org/10.1016/j.addma.2023.103468",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "3D Printed frames to enable reuse and improve the fit of N95 and KN95 respirators",
+      "publisher": "BMC Biomedical Engineering",
+      "year": 2021,
+      "url": "https://doi.org/10.1186/s42490-021-00055-7",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 9",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8481495.1/41598_2021_98963_Fig9_HTML.jpg?md5=5fc6981c84d7fe0b97d8310ce597f709",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8481495/#Fig9",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-076/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Fig. 10",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8481495.1/41598_2021_98963_Fig10_HTML.jpg?md5=5f7080e9e84be357d278b6399dd81b66",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8481495/#Fig10",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-076/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R01",
+      "original_label": "Table 1",
+      "image_url": "",
+      "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8481495.1/PMC8481495.1.pdf?md5=2e52ad91e31e2729d42a6bfa17d47835",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-076/F03.png"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R04",
+      "original_label": "Fig. 5",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8182357.1/42490_2021_55_Fig5_HTML.jpg?md5=2f52cb3e16735c60b0fb5b632124db7a",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8182357/#Fig5",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-076/F04.jpg"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R04",
+      "original_label": "Table 2",
+      "image_url": "",
+      "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8182357.1/PMC8182357.1.pdf?md5=e11b16b1c9397b26a984107163c0d5ec",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-076/F05.png"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R04",
+      "original_label": "Table 3",
+      "image_url": "",
+      "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8182357.1/PMC8182357.1.pdf?md5=e11b16b1c9397b26a984107163c0d5ec",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-076/F06.png"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "打印口罩如何兼顾密合、防护和呼吸阻力？",
+      "direction": "个人防护用品",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "密合、颗粒穿透与压差分别测到了什么",
+          "markdown": "打印面罩的防护取决于空气经过哪条路径：穿过滤材、绕过滤片边缘、穿过壳体缺陷，或者从面部接触边缘进入。个性化几何主要改变最后一条路径；更换滤材主要改变颗粒截留和压降；压紧滤盖则改变装配旁路。因此，面部扫描精度、滤材标称效率与完整装配后的防护表现不是可互换的指标。[壳体与装配泄漏实验](ref:R02)\n\nNold 等根据压力—流量关系估算绕过面部密封的空气比例；Bezek 等把面部界面封住，再测完整壳体与滤片装配的粒径相关过滤效率；Fogarasi 等同时测头模上的颗粒内漏与压差；McAvoy 等让志愿者佩戴现成呼吸器加打印框架，进行定性和少量定量密合试验。这些设计分别隔离或保留不同泄漏路径，不能把其中最低的一个百分数选出来作为统一防护性能。[流量泄漏模型](ref:R01) [头模颗粒与压差](ref:R03) [佩戴者密合试验](ref:R04)\n\n尤其需要辨认“更容易呼吸”的来源。固定总流量下，漏缝让部分空气绕过滤材，既能降低测得压差，也会降低有效防护。只有同时记录完整装配的颗粒内漏和流量条件，压差下降才有可解释的意义；单独的低压差不能区分低阻滤材与较大旁路。",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "个性化轮廓降低了头模漏气，但未测出颗粒过滤等级",
+          "markdown": "Nold 等扫描 12 名工作人员，打印刚性聚酰胺头模；其中 8 个头模接受个性化面罩测试。另一套统计形状由 190 名欧洲成年人的面部数据建立，再形成大小两档。统计形状面罩的小号与大号分别在 7 和 5 个头模上测试。面罩框架采用聚丙烯打印，滤布由框架与张紧件夹持。测试用泵产生 0.33 Hz、行程容积 1500 mL 的周期气流，先将边缘完全封闭建立滤材压力—流量校准，再把开放的边缘漏气视为与滤材并联的流路。[头模和气流校准](ref:R01)\n\n个性化组吸气漏气为 7.853±16.737%，呼气为 12.934±16.773%；FFP2 对照分别为 34.534±15.948% 和 34.979±16.872%。外科口罩吸气漏气达 86.074±4.636%。统计形状两档与 FFP2 的差异未达到显著水平；个性化组则较低。这里的分子是模型推算的漏气流量，分母是总流量，不是进入口罩的颗粒数。个性化组标准差较大，也说明平均值没有代表每一个头模的表现。[原表的吸气与呼气结果](ref:R01)\n\n刚性头模保留了不同人的轮廓，却没有真实面部组织压缩、说话、出汗和佩戴变化。统计模型训练人群的规模也不能当作密合测试样本数。照片中更接近脸型的边缘，与该头模上的低漏气相一致；研究没有同时验证所夹滤布的颗粒截留、整罩防护等级或长时间佩戴压迫。其直接贡献是定位几何适配对空气旁路的影响。",
+          "figure_ids": [
+            "F01",
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "封住面部之后，打印壳体和滤盖仍可损失过滤能力",
+          "markdown": "Bezek 等比较 Montana、Factoria 与 Stopgap 三种设计，以及 PLA、ABS、ULTEM 和粉末床尼龙制品。每种设计—材料组合只打印一次，重复三次的是同一制品的测试。试验用黏土或密封袋近似封闭面部接口，在总流量 14.3–14.8 L/min 下测 40–1000 nm 氯化钠颗粒；它隔离了大部分面部适配问题，但并未模拟真实佩戴。材料、设备、打印参数和操作者随组合变化，也不能把所有差异解释为材料本征性能。[制造条件与装置](ref:R02)\n\n在 40–300 nm 区间，清洁后的 PLA Stopgap 平均过滤效率为 55±4%；只封滤盖为 53±6%，外表面加环氧并封滤盖后为 74±5%。ULTEM 对应为 40±10%、56±4% 和 56±4%。因此，这两个制品的主要薄弱环节不同：PLA 对封闭壳体孔隙更敏感，ULTEM 对滤盖接口密封更敏感。小号尼龙经气吹清洁并封滤盖后为 86±3%，仍不能恢复所装滤材本身的效率。这些数值是指定粒径范围的平均值，不是所有粒径和工况的固定等级。[分路径后处理结果](ref:R02)\n\n清洁不是单向改善：部分 Factoria 制品清洁后读数反而下降。粒子计数器无法区分挑战气溶胶和壳体释放的残余颗粒，而部分前后测试的密封方式也变化了。因而不能把清洁前后所有差值都归因为去除了打印粉尘。环氧和油漆还可能改变装配公差；研究提供的是失效路径的排查实验，并未证明这些涂层在实际呼吸接触、反复消毒和佩戴条件下仍维持同样性能。",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "低呼吸阻力要与有效过滤面积和头模漏粒共同阅读",
+          "markdown": "Fogarasi 等分别测滤材试片、封住面部接口的装配基线，以及刚性和弹性皮层头模上的整罩。滤材组合 1 为高织密棉布与多层头巾布，组合 2 为熔喷和纺粘聚丙烯。对相当于 A Medium 框架在 9 SLPM 下的面速度，组合 1 的压差为组合 2 的 15.5 倍，颗粒穿透为其 4.2 倍；增加织物阻力没有同时带来更好的截留。[滤材独立测试](ref:R03)\n\n将 N95 滤材裁成小滤片并装入 A 框架，即使辅以硅胶垫片降低装配漏粒，压差也高于完整的商业 N95 呼吸器。由此可见，保留同一种滤材不等于保留原整罩的呼吸性能：有效过滤面积与流量决定面速度，小窗口把气流集中到更小面积。该研究因某些织物阻力过高，无法在所有组合中使用高流量；低流量结果并不是高需求吸气的最不利情况。[装配基线与滤片面积](ref:R03)\n\n头模材质也改变排名解释。N95 在刚性头模上的颗粒内漏约为 0.55，在弹性皮层头模上低于 0.05。对于弹性头模、9 SLPM 和较低盐负荷，A Medium 配组合 2 的内漏为实测 N95 的 14.3 倍；加泡沫后降为 3.6 倍，相应压差分别低 59.7% 和 37.8%。泡沫改善了该配置，却没有达到对照内漏水平。原文还报告同一配置加泡沫的漏粒相对下降 69.6%；这不是降低 69.6 个百分点，更不是过滤效率达到该值。开孔泡沫受压后的流路与颗粒通过可以不同步，不能仅按压差判断密封改善。[头模、泡沫与压差耦合](ref:R03)\n\n滤材独立实验的暴露面积固定为 12 cm²；为了匹配 A、B 框架在 9 SLPM 下不同的面速度，试片流量分别设为 2.7 和 6.5 SLPM，每种组合测试三片。不能在比较时只看到整罩都是同一流量，而忽略两个滤窗面积不同。其“封闭面部接口基线”也不是直接给原罩涂胶：作者另行切平模型底部、重新打印，并用胶带和硅胶封到平板上，因此保留了滤盖与壳体路径，去掉了原来的面部接触边缘。[滤材面速度与基线构造](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "打印外框的作用取决于原本通过还是未通过密合试验",
+          "markdown": "McAvoy 等采用打印侧框、可弯金属丝与替换绑带压住既有呼吸器。45 名志愿者并非每人测试所有型号；四种型号的基线样本量为 34、10、16 和 25，部分人员重叠。定性试验根据是否尝到苦味气溶胶判定。实验分成两条路径：原先通过者去掉原绑带或让其悬空，再由外框与新绑带固定；原先未通过者则检验框架能否纠正不密合。这不是完整原绑带之上简单加一层框架的统一实验。[受试者与分支设计](ref:R04)\n\n基线通过者中，1860、8210、鸭嘴型和 KN95 加框后继续通过的比例分别为 24/30、9/9、12/15 和 11/12。基线未通过者中，前三种型号的挽回数为 0/4、0/1 和 0/1，而 KN95 为 6/13。后者提示某些平折式面罩的边缘受力可以被改善；前三组失败者人数很少，也没有证据支持对所有不适配脸型均有效。保持原有合格密合与把原有不合格者纠正，是分母不同的两个效果。[原表分层结果](ref:R04)\n\n侧框可弯与绑带张力共同改变面罩接触，研究没有把两者的贡献单独分离。结果也未提供佩戴压力分布、持续工作时长、呼吸压差或皮肤损伤率。因此，这一外框研究与前面的整罩打印研究应在改变的部件层面比较：它使用原呼吸器滤体，主要检验固定与边缘密合，而非重新验证滤材本身的颗粒过滤。",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "逐例定量结果保留了外框未能纠正的情况",
+          "markdown": "同一研究的定量原表只有少量逐例记录，不能套用定性试验的全部样本量。密合因子为外部与内部气溶胶浓度之比，原表以 100 为通过值；它不是过滤百分率。替换损坏绑带的部分列出 1860 的 185→200+ 和 13→9，以及 8210 的 17→19。只有第一例保持了较高密合，另两例仍明显低于通过值，表明更换固定方式并不自动消除泄漏。[逐例定量密合表](ref:R04)\n\n纠正基线失败的部分另列 1860 的 56→200+、8210 的 0→200+，以及 KN95 的 0→101 和 0→6。KN95 一例通过、一例仍失败，不能只展示改善最多者。原表的 0 与 200+ 分别按原样报告，未提供足够信息将其换算成真实零浓度、精确上限以上数值或百分率。原文正文关于少量定量测试的概述，也不能覆盖表中替换绑带部分的失败行。\n\n表下注明使用了既往佩戴并经灭菌的呼吸器，但没有给出各例完整的使用历史和灭菌循环。这个条件会影响对“重复使用”的解释：表格支持某些既有呼吸器在某次加框测试中通过，不支持确定可重复多少次，也没有同时提供相应的滤效和呼吸压差。图中的逐例对照使原本的低密合、加框后的恢复与持续失败都可以被分开辨认。",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Nold et al.：周期气流下的头模与压力测量装置。",
+          "interpretation": "原图中的黑色管路连接流量测量部分，蓝色管路读取面罩内部压力；FFP2 放在刚性复制头模上。装置测到的是压力和气流关系，没有粒子计数器。先封闭边缘获得滤材校准后，才可推算开放边缘的旁路流量，因此照片支持测试路径的辨认，不能直接展示颗粒防护等级。[原装置](ref:R01)"
+        },
+        "F02": {
+          "caption": "Nold et al.：同一头模上的外科口罩、FFP2、统计形状与个性化面罩。",
+          "interpretation": "a 为未戴罩头模，b、c、d、e 分别展示外科口罩、FFP2、统计形状和个性化面罩。比较重点是鼻梁、颊部和下颌边缘，而不是布面褶皱多少。e 使用个体轮廓，d 使用群体统计轮廓；这张图只呈现一个头模，不能把其视觉贴合当作全部个体的低漏气证明，组间离散度需结合原表读取。[同一头模比较](ref:R01)"
+        },
+        "F03": {
+          "caption": "Nold et al.：原表中的吸气与呼气漏气百分比。",
+          "interpretation": "左右两组列分别为吸气和呼气，每组均列均值与标准差；N 是实际接受该面罩测试的头模数。PM 为个性化组，SSMS 与 SSML 为统计形状的大小两档。A、B、C 字母将差异检验结果分组，相同字母并不证明工程等效。PM 的均值较低但标准差宽，不能由平均低漏气推断全部佩戴者均通过颗粒密合测试。原表完整保留了不同组的分母。[原表结果](ref:R01)"
+        },
+        "F04": {
+          "caption": "McAvoy et al.：按基线密合结果分支的试验流程。",
+          "interpretation": "上方为总受试者 n=45，下方按原面罩基线通过与失败分为两条路径。左支检验失去原绑带后外框能否维持密合，右支检验原来不密合者能否改善。两支都重复定性测试，但问题和分母不同；此图没有把全部受试者列为接受定量试验，也没有建立重复消毒循环。[研究分支](ref:R04)"
+        },
+        "F05": {
+          "caption": "McAvoy et al.：维持原有密合与纠正原有失败的分层结果。",
+          "interpretation": "左数据列的分母仅含原先通过者，右数据列仅含原先失败者，不能相加后把百分率当作随机分组效果。8210 左列为 9/9，而右列为 0/1；KN95 左列为 11/12，右列为 6/13。完整保留失败列，可以看出框架不是对每种型号和每个不适配个体都产生同样作用。表中是苦味定性试验的通过人数，不是滤材效率。[定性结果原表](ref:R04)"
+        },
+        "F06": {
+          "caption": "McAvoy et al.：含失败个案的定量密合原表。",
+          "interpretation": "上半部替换绑带组有 185→200+、13→9 和 17→19；下半部纠正基线失败组有 56→200+、0→200+、0→101 和 0→6。列标题区分原面罩与加框条件，表下注明曾使用并灭菌的呼吸器。高于报告上限的结果不能与精确值混算；低于 100 的保留行也不能被正文的通过案例概述覆盖。此表呈现个体浓度比，既不是所有 45 名受试者的定量分布，也不是重复使用次数的试验。[逐例密合原表](ref:R04)"
+        }
+      }
+    },
+    "en": {
+      "title": "How can printed masks balance fit, protection and breathing resistance?",
+      "direction": "Personal protective equipment",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "What sealing, particle penetration and pressure drop actually measure",
+          "markdown": "Protection in a printed mask depends on the route taken by air: through the filter, around its edge, through shell defects or across the face-contact perimeter. Personalized geometry mainly changes the last route; filter replacement changes particle capture and pressure loss; tightening a filter cap changes assembly bypass. Facial-scan accuracy, nominal filter efficiency and protection after complete assembly are therefore different measures. [Shell and assembly leakage experiments](ref:R02)\n\nNold et al. inferred air bypassing the facial seal from pressure–flow relationships. Bezek et al. sealed the face interface and measured size-dependent filtration through the assembled shell and filter. Fogarasi et al. measured particle inward leakage and pressure drop on headforms together. McAvoy et al. tested volunteers wearing existing respirators with printed frames using qualitative and limited quantitative fit tests. These designs isolate or retain different leakage routes; their lowest percentages cannot be selected as a common protection metric. [Flow-leakage model](ref:R01) [Headform particles and pressure drop](ref:R03) [Wearer fit testing](ref:R04)\n\nThe origin of easier breathing particularly matters. At fixed total flow, a gap diverts air around the filter, potentially lowering measured pressure drop and effective protection together. A pressure reduction becomes interpretable alongside particle inward leakage of the complete assembly and the flow conditions. Low pressure drop alone cannot distinguish a low-resistance filter from a larger bypass.",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Personalized contours reduced headform air leakage without establishing a particle-protection class",
+          "markdown": "Nold et al. scanned 12 employees and printed rigid polyamide headforms; 8 underwent personalized-mask testing. A separate statistical shape was built from facial data for 190 European adults and converted into small and large sizes, tested on 7 and 5 headforms respectively. Polypropylene frames clamped filter cloth with a tensioner. A pump generated cyclic flow at 0.33 Hz with a stroke volume of 1500 mL. Completely sealing the perimeter first established the filter pressure–flow calibration; the open perimeter was then modeled as a flow path parallel to the filter. [Headforms and flow calibration](ref:R01)\n\nPersonalized-mask air leakage was 7.853±16.737% during inspiration and 12.934±16.773% during expiration, versus 34.534±15.948% and 34.979±16.872% for the FFP2 control. Surgical-mask inspiratory leakage reached 86.074±4.636%. Neither statistical size differed significantly from FFP2, whereas the personalized group had lower leakage. The numerator is modeled leakage flow and the denominator total flow, not the number of particles entering the mask. The large personalized-group standard deviations also show that the mean does not represent every headform. [Original inspiratory and expiratory results](ref:R01)\n\nRigid headforms preserved individual contours but not real facial compression, speech, sweating or variation in donning. The statistical-model training population is not the fit-testing sample size. Better contour alignment in the photographs is consistent with lower leakage on that headform. The study did not jointly establish particle capture by the inserted cloth, whole-mask protection class or prolonged contact pressure. Its direct contribution is to isolate geometric adaptation as a determinant of air bypass.",
+          "figure_ids": [
+            "F01",
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Shells and filter caps can lose filtration performance even after the face interface is sealed",
+          "markdown": "Bezek et al. compared Montana, Factoria and Stopgap designs manufactured in PLA, ABS, ULTEM and powder-bed nylon. Each design–material combination was printed once; the three repeats were tests of that same article. Clay or a sealed bag approximated a closed face interface while sodium-chloride particles of 40–1000 nm were measured at total flow of 14.3–14.8 L/min. This removed much of the face-fit problem without reproducing actual wear. Material, machine, printing settings and operator also varied across combinations, so differences cannot all be assigned to intrinsic material properties. [Manufacturing conditions and apparatus](ref:R02)\n\nAcross 40–300 nm, cleaned PLA Stopgap filtration averaged 55±4%; sealing only the cap gave 53±6%, and adding external epoxy plus a sealed cap gave 74±5%. Corresponding ULTEM values were 40±10%, 56±4% and 56±4%. The principal weaknesses therefore differed: the PLA article responded more to sealing shell pores, whereas ULTEM responded more to sealing the cap interface. Air-cleaning and sealing the small nylon cap yielded 86±3%, still below the inserted filter's own performance. These are averages over a specified size interval, not fixed protection classes across all sizes and conditions. [Post-processing by leakage pathway](ref:R02)\n\nCleaning did not consistently improve results: some Factoria articles performed worse afterward. The particle counter could not distinguish challenge aerosol from residual particles shed by the shell, and some before–after tests also changed the sealing method. All differences therefore cannot be attributed to removing printing debris. Epoxy and paint may additionally change assembly tolerances. These experiments diagnose failure pathways; they do not establish persistence of coating performance during respiratory contact, repeated disinfection and wear.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "Low breathing resistance must be read with effective filter area and headform particle leakage",
+          "markdown": "Fogarasi et al. separately tested filter coupons, an assembled baseline with the face interface sealed, and complete masks on rigid and elastomeric-skin headforms. Filter combination 1 used high-thread-count cotton and multiple bandana layers; combination 2 used meltblown and spunbond polypropylene. At a face velocity equivalent to Frame A Medium at 9 SLPM, combination 1 produced 15.5 times the pressure drop and 4.2 times the particle penetration of combination 2. More fabric resistance did not deliver better capture. [Independent filter tests](ref:R03)\n\nCutting N95 material into small coupons for Frame A increased pressure drop relative to the intact commercial N95 respirator, even with a silicone gasket reducing assembly leakage. Preserving filter material therefore does not preserve whole-respirator breathing performance: effective area and flow determine face velocity, and a small window concentrates flow into less area. Excessive resistance prevented high-flow testing of every fabric configuration. Low-flow results consequently were not the worst case for demanding inspiration. [Assembly baseline and filter area](ref:R03)\n\nHeadform material also changed interpretation. N95 particle inward leakage was approximately 0.55 on the rigid headform but below 0.05 on the elastomeric version. On the latter, at 9 SLPM and the lower salt loading, Frame A Medium with combination 2 leaked 14.3 times as much as the measured N95 reference; foam reduced this to 3.6 times, with pressure drops respectively 59.7% and 37.8% lower. Foam improved that configuration without reaching reference leakage. The paper also reports a 69.6% relative leakage reduction from foam in this configuration: neither a reduction of 69.6 percentage points nor a filtration efficiency of that value. Compression of open-cell foam can affect flow pathways and particle passage differently, so pressure drop alone cannot identify improved sealing. [Coupled headform, foam and pressure effects](ref:R03)\n\nIndependent filter tests fixed exposed area at 12 cm². To match the different face velocities of Frames A and B at 9 SLPM, coupon flows were 2.7 and 6.5 SLPM respectively, with three samples per combination. Equal whole-mask flow therefore does not remove the difference in filter-window area. The sealed-face baseline was also not simply glue applied to the original mask: the authors cut model bases flat, printed new articles and sealed them onto plates with tape and silicone. This retained cap and shell pathways while removing the original facial-contact perimeter. [Filter face velocity and baseline construction](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "Printed-frame effects depend on whether baseline fit testing passed or failed",
+          "markdown": "McAvoy et al. used printed lateral components, malleable wire and replacement bands to secure existing respirators. The 45 volunteers did not all test every model: baseline sample sizes were 34, 10, 16 and 25 across four models, with some participant overlap. Qualitative testing used detection of bitter aerosol. The study followed two branches: baseline passers had original straps removed or hanging free and relied on the frame and new straps; baseline failures were tested for correction of poor fit. This was not a uniform experiment simply adding a frame over intact original straps. [Participants and branched design](ref:R04)\n\nAmong baseline passers, continued passing with frames occurred in 24/30 for the 1860, 9/9 for the 8210, 12/15 for duckbill and 11/12 for KN95. Among baseline failures, rescue counts were 0/4, 0/1 and 0/1 for the first three models, versus 6/13 for KN95. This suggests that edge loading can improve some flat-fold masks; the other failure groups were very small, and effectiveness across every poorly matched facial shape was not established. Preserving an existing passing fit and correcting an existing failure are different effects with different denominators. [Original stratified results](ref:R04)\n\nFrame adjustability and band tension jointly changed contact; their individual contributions were not isolated. The study also did not report contact-pressure maps, sustained working duration, breathing pressure drop or skin-injury rates. Comparison with complete printed masks therefore belongs at the level of the changed component: these frames retained the original filter body and mainly tested retention and perimeter fit rather than re-establishing particle filtration of the filter itself.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Individual quantitative results retain cases that frames did not correct",
+          "markdown": "The same study's quantitative table contains only a few individual records, not the full qualitative-test sample. Fit factor is the ratio of external to internal aerosol concentration; the table identifies 100 as a passing value, not a filtration percentage. Its damaged-strap replacement block lists 185→200+ and 13→9 for the 1860, and 17→19 for the 8210. Only the first retained high fit; the other two remained well below the passing value, showing that replacing retention does not automatically remove leakage. [Individual quantitative fit table](ref:R04)\n\nThe baseline-failure correction block separately lists 56→200+ for the 1860, 0→200+ for the 8210, and 0→101 and 0→6 for KN95. One KN95 case passed and one still failed; the largest improvement cannot represent both. The original 0 and 200+ are retained as reported: information is insufficient to convert them into actual zero concentration, exact values above the reporting ceiling or percentages. The prose summary of limited quantitative testing also cannot substitute for the failed rows in the strap-replacement block.\n\nThe table footnote specifies previously worn and sterilized respirators without complete individual use histories or sterilization cycles. This condition limits the meaning of reuse: certain existing respirators passed a particular frame-assisted test, but no repeat-use count was established and corresponding filtration and breathing pressure drop were not jointly reported. Individual controls distinguish pre-existing poor fit, recovery after adding a frame and persistent failure.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Nold et al.: headform and pressure apparatus under cyclic airflow.",
+          "interpretation": "Black tubing connects the flow-measurement component and blue tubing reads pressure inside the mask; an FFP2 sits on a rigid replica headform. The apparatus measures pressure and flow, without a particle counter. Filter calibration with the perimeter sealed precedes inference of open-edge bypass flow. The photograph identifies the tested pathways rather than directly showing a particle-protection class. [Original apparatus](ref:R01)"
+        },
+        "F02": {
+          "caption": "Nold et al.: surgical, FFP2, statistical-shape and personalized masks on the same headform.",
+          "interpretation": "Panel a is the uncovered headform; b, c, d and e show surgical, FFP2, statistical-shape and personalized masks respectively. Relevant comparisons concern the nasal bridge, cheeks and mandibular edge, not the number of fabric folds. Panel e uses an individual contour and d a population-derived contour. This is one headform, so visual alignment cannot establish low leakage for every individual; dispersion requires the original table. [Same-headform comparison](ref:R01)"
+        },
+        "F03": {
+          "caption": "Nold et al.: original inspiratory and expiratory air-leakage percentages.",
+          "interpretation": "Left and right column blocks report inspiration and expiration, each with mean and standard deviation; N counts headforms actually tested with that mask. PM denotes personalization, while SSMS and SSML are the two statistical sizes. Letters A, B and C group significance-test results; shared letters do not establish engineering equivalence. PM has lower means but broad standard deviations, so low average air leakage cannot establish that all wearers pass particle-based fit tests. Different group denominators remain visible in the complete table. [Original results table](ref:R01)"
+        },
+        "F04": {
+          "caption": "McAvoy et al.: trial branches defined by baseline fit.",
+          "interpretation": "The top gives total enrollment n=45; lower branches separate baseline passers from failures. The left asks whether a frame preserves fit after loss of original straps, the right whether it improves pre-existing poor fit. Both repeat qualitative testing, but questions and denominators differ. The diagram neither assigns quantitative testing to every participant nor establishes repeated disinfection cycles. [Study branches](ref:R04)"
+        },
+        "F05": {
+          "caption": "McAvoy et al.: preserving existing fit versus correcting baseline failure.",
+          "interpretation": "The left data column includes only baseline passers in its denominator, the right only baseline failures; combining their percentages does not yield a randomized-group effect. For 8210 the left entry is 9/9 and the right 0/1; for KN95 they are 11/12 and 6/13. Retaining the failure column shows that frames do not act identically across models and poorly matched individuals. Entries count passing bitter-aerosol qualitative tests, not filter efficiency. [Original qualitative table](ref:R04)"
+        },
+        "F06": {
+          "caption": "McAvoy et al.: original quantitative fit table including failures.",
+          "interpretation": "The upper strap-replacement block contains 185→200+, 13→9 and 17→19; the lower baseline-failure block contains 56→200+, 0→200+, 0→101 and 0→6. Column headings distinguish original and frame-assisted conditions; the footnote identifies previously used and sterilized respirators. Results above the reporting ceiling cannot be combined as exact values, and rows below 100 cannot be replaced by the prose summary of passing cases. These are individual concentration ratios, neither a quantitative distribution for all 45 participants nor a test of reuse-cycle count. [Individual fit table](ref:R04)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie können gedruckte Masken Dichtsitz, Schutz und Atemwiderstand verbinden?",
+      "direction": "Persönliche Schutzausrüstung",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Was Dichtsitz, Partikeldurchtritt und Druckabfall tatsächlich messen",
+          "markdown": "Der Schutz einer gedruckten Maske hängt vom Luftweg ab: durch das Filtermedium, an dessen Rand vorbei, durch Schalendefekte oder über den Gesichtskontakt. Personalisierte Geometrie verändert vor allem den letzten Weg; ein Filterwechsel verändert Partikelabscheidung und Druckverlust, das Anpressen der Filterkappe den Montagebypass. Gesichtsscan-Genauigkeit, nominelle Filtereffizienz und Schutz der vollständigen Baugruppe sind daher verschiedene Größen. [Versuche zu Schalen- und Montageleckagen](ref:R02)\n\nNold et al. schätzten aus Druck–Volumenstrom-Beziehungen den am Gesichtsdichtsitz vorbeiströmenden Luftanteil. Bezek et al. dichteten diese Grenzfläche ab und bestimmten die größenabhängige Filtration durch Schale und Filter. Fogarasi et al. erfassten an Prüfköpfen gleichzeitig Partikel-Gesamtleckage nach innen und Druckabfall. McAvoy et al. untersuchten Freiwillige mit vorhandenen Atemschutzmasken und gedruckten Rahmen durch qualitative sowie wenige quantitative Dichtsitzprüfungen. Diese Ansätze isolieren oder erhalten unterschiedliche Leckagewege; die jeweils niedrigsten Prozentwerte bilden keine gemeinsame Schutzkennzahl. [Modell der Strömungsleckage](ref:R01) [Prüfkopf: Partikel und Druckabfall](ref:R03) [Dichtsitzprüfung an Personen](ref:R04)\n\nBesonders wichtig ist der Ursprung erleichterter Atmung. Bei festem Gesamtvolumenstrom leitet ein Spalt Luft am Filter vorbei; gemessener Druckabfall und wirksamer Schutz können dadurch gemeinsam sinken. Eine Druckabnahme wird erst zusammen mit der Partikel-Gesamtleckage der vollständigen Baugruppe und den Strömungsbedingungen interpretierbar. Niedriger Druckabfall allein unterscheidet kein widerstandsarmes Filtermedium von einem größeren Bypass.",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Personalisierte Konturen verringerten Prüfkopf-Leckagen, bestimmten aber keine Partikelschutzklasse",
+          "markdown": "Nold et al. scannten 12 Beschäftigte und druckten starre Polyamid-Prüfköpfe; 8 wurden mit personalisierten Masken getestet. Ein separates statistisches Formmodell beruhte auf Gesichtsdaten von 190 europäischen Erwachsenen und wurde in kleine und große Größen überführt, geprüft an 7 beziehungsweise 5 Köpfen. Polypropylenrahmen spannten Filtertuch mit einem Spannteil ein. Eine Pumpe erzeugte zyklische Strömung bei 0.33 Hz und 1500 mL Hubvolumen. Ein vollständig abgedichteter Rand lieferte zunächst die Druck–Volumenstrom-Kalibrierung des Filters; der offene Rand wurde anschließend als paralleler Strömungsweg modelliert. [Prüfköpfe und Strömungskalibrierung](ref:R01)\n\nDie Luftleckage personalisierter Masken betrug bei Einatmung 7.853±16.737% und bei Ausatmung 12.934±16.773%, gegenüber 34.534±15.948% und 34.979±16.872% der FFP2-Kontrolle. Bei chirurgischen Masken erreichte die inspiratorische Leckage 86.074±4.636%. Beide statistischen Größen unterschieden sich nicht signifikant von FFP2, während die personalisierte Gruppe niedrigere Leckagen zeigte. Im Zähler steht der modellierte Leckagevolumenstrom, im Nenner der Gesamtvolumenstrom, nicht die Zahl eingedrungener Partikel. Die großen Standardabweichungen der personalisierten Gruppe zeigen zudem, dass der Mittelwert nicht jeden Prüfkopf repräsentiert. [Originalwerte für Ein- und Ausatmung](ref:R01)\n\nStarre Prüfköpfe erhielten individuelle Konturen, jedoch keine reale Gewebekompression, Sprache, Schweißbildung oder Schwankungen beim Anlegen. Die Trainingspopulation des Formmodells ist nicht die Stichprobengröße der Dichtsitzprüfung. Die bessere Konturanpassung auf den Fotos stimmt mit geringerer Leckage an diesem Prüfkopf überein. Partikelabscheidung des eingelegten Tuchs, Schutzklasse der Gesamtmaske und langfristiger Kontaktdruck wurden nicht gleichzeitig bestimmt. Der direkte Beitrag ist die Eingrenzung geometrischer Anpassung als Einflussgröße des Luftbypasses.",
+          "figure_ids": [
+            "F01",
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Auch bei abgedichtetem Gesichtskontakt verlieren Schalen und Filterkappen Filtrationsleistung",
+          "markdown": "Bezek et al. verglichen Montana-, Factoria- und Stopgap-Entwürfe aus PLA, ABS, ULTEM und Pulverbett-Nylon. Jede Entwurfs–Material-Kombination wurde einmal gedruckt; die drei Wiederholungen betrafen Messungen desselben Exemplars. Modelliermasse oder ein abgedichteter Beutel näherten einen geschlossenen Gesichtskontakt an; Natriumchloridpartikel von 40–1000 nm wurden bei 14.3–14.8 L/min Gesamtvolumenstrom gemessen. Damit entfiel ein Großteil des Gesichtsanpassungsproblems, ohne reales Tragen abzubilden. Material, Maschine, Druckparameter und Bedienperson variierten ebenfalls zwischen Kombinationen; Unterschiede lassen sich nicht vollständig intrinsischen Materialeigenschaften zuschreiben. [Herstellungsbedingungen und Prüfaufbau](ref:R02)\n\nIm Bereich 40–300 nm betrug die mittlere Filtration des gereinigten PLA-Stopgap 55±4%; alleinige Kappenabdichtung ergab 53±6%, äußeres Epoxidharz mit abgedichteter Kappe 74±5%. Die entsprechenden ULTEM-Werte waren 40±10%, 56±4% und 56±4%. Die hauptsächlichen Schwachstellen unterschieden sich somit: Das PLA-Exemplar reagierte stärker auf das Verschließen von Schalenporen, ULTEM auf die Abdichtung der Kappengrenzfläche. Luftreinigung und Kappenabdichtung beim kleinen Nylonmodell ergaben 86±3%, weiterhin unter der Leistung des eingelegten Filters. Dies sind Mittelwerte eines bestimmten Größenintervalls, keine festen Schutzklassen für alle Größen und Bedingungen. [Nachbearbeitung nach Leckageweg](ref:R02)\n\nReinigung verbesserte die Ergebnisse nicht durchgehend: Einige Factoria-Exemplare schnitten danach schlechter ab. Der Partikelzähler unterschied Prüfaerosol nicht von Restpartikeln, die die Schale freisetzte; außerdem änderte sich bei manchen Vorher-nachher-Versuchen die Abdichtungsmethode. Deshalb lassen sich nicht sämtliche Differenzen auf entfernte Druckrückstände zurückführen. Epoxidharz und Farbe können zusätzlich Montagepassungen verändern. Die Versuche diagnostizieren Versagenswege; sie belegen keine Beständigkeit der Beschichtungsleistung unter Atemkontakt, wiederholter Desinfektion und Tragen.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "Niedriger Atemwiderstand erfordert Angaben zu wirksamer Filterfläche und Partikelleckage am Prüfkopf",
+          "markdown": "Fogarasi et al. prüften getrennt Filterproben, eine montierte Basisanordnung mit abgedichtetem Gesichtskontakt und vollständige Masken auf starren sowie mit elastomerer Haut versehenen Prüfköpfen. Filterkombination 1 bestand aus dicht gewebter Baumwolle und mehreren Halstuchlagen, Kombination 2 aus schmelzgeblasenem und spinngebundenem Polypropylen. Bei einer Anströmgeschwindigkeit entsprechend Rahmen A Medium bei 9 SLPM erzeugte Kombination 1 den 15.5-fachen Druckabfall und den 4.2-fachen Partikeldurchtritt von Kombination 2. Mehr Textilwiderstand lieferte keine bessere Abscheidung. [Separate Filterprüfungen](ref:R03)\n\nKleine Zuschnitte aus N95-Filtermaterial im Rahmen A erhöhten den Druckabfall gegenüber der vollständigen kommerziellen N95-Maske, selbst wenn eine Silikondichtung Montageleckagen verringerte. Gleiches Filtermaterial erhält daher nicht automatisch die Atemeigenschaften der Gesamtmaske: Wirksame Fläche und Volumenstrom bestimmen die Anströmgeschwindigkeit; ein kleines Fenster konzentriert die Strömung auf weniger Fläche. Zu hoher Widerstand verhinderte Hochvolumenstromtests sämtlicher Textilkonfigurationen. Ergebnisse bei niedrigem Volumenstrom waren deshalb kein ungünstigster Fall für anspruchsvolle Einatmung. [Montagebasis und Filterfläche](ref:R03)\n\nAuch das Prüfkopfmaterial veränderte die Interpretation. Die N95-Partikel-Gesamtleckage nach innen lag am starren Kopf bei etwa 0.55, am elastomeren unter 0.05. Am letzteren, bei 9 SLPM und niedrigerer Salzbeladung, zeigte A Medium mit Kombination 2 die 14.3-fache Leckage der gemessenen N95-Referenz; Schaum senkte dies auf das 3.6-Fache, bei jeweils 59.7% beziehungsweise 37.8% niedrigerem Druckabfall. Schaum verbesserte diese Konfiguration, erreichte aber nicht die Referenzleckage. Die Arbeit nennt außerdem eine relative Leckageabnahme von 69.6% durch Schaum in dieser Konfiguration: weder eine Abnahme um 69.6 Prozentpunkte noch eine Filtrationseffizienz dieses Werts. Kompression offenporigen Schaums kann Strömungswege und Partikeldurchtritt unterschiedlich beeinflussen; Druckabfall allein identifiziert daher keine bessere Abdichtung. [Gekoppelte Prüfkopf-, Schaum- und Druckeffekte](ref:R03)\n\nSeparate Filterprüfungen verwendeten eine feste exponierte Fläche von 12 cm². Zur Anpassung an die unterschiedlichen Anströmgeschwindigkeiten der Rahmen A und B bei 9 SLPM betrugen die Probenströme 2.7 beziehungsweise 6.5 SLPM, mit drei Proben je Kombination. Gleicher Gesamtvolumenstrom hebt somit unterschiedliche Filterfensterflächen nicht auf. Auch die Basisprüfung mit abgedichtetem Gesichtskontakt bestand nicht lediglich aus Klebstoff auf der Originalmaske: Die Modellbasen wurden eben geschnitten, neue Exemplare gedruckt und mit Klebeband sowie Silikon auf Platten abgedichtet. Kappen- und Schalenwege blieben erhalten, der ursprüngliche Gesichtskontaktrand entfiel. [Filter-Anströmgeschwindigkeit und Basiskonstruktion](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "Die Wirkung gedruckter Außenrahmen hängt vom Bestehen oder Nichtbestehen der Ausgangsprüfung ab",
+          "markdown": "McAvoy et al. befestigten vorhandene Atemschutzmasken mit gedruckten Seitenteilen, biegsamem Draht und Ersatzbändern. Nicht alle 45 Freiwilligen prüften jedes Modell: Die Ausgangsstichproben der vier Modelle umfassten 34, 10, 16 und 25 Personen mit teilweiser Überschneidung. Die qualitative Prüfung beruhte auf dem Wahrnehmen bitteren Aerosols. Zwei Versuchswege wurden unterschieden: Bei anfänglich bestandener Prüfung wurden Originalbänder entfernt oder freihängend belassen und durch Rahmen samt neuen Bändern ersetzt; bei anfänglichem Nichtbestehen wurde die Korrektur schlechten Sitzes geprüft. Es war kein einheitlicher Versuch mit bloßem Zusatzrahmen über intakten Originalbändern. [Teilnehmende und verzweigter Versuchsplan](ref:R04)\n\nUnter anfänglich erfolgreichen Personen bestanden mit Rahmen weiterhin 24/30 beim Modell 1860, 9/9 beim 8210, 12/15 beim Entenschnabelmodell und 11/12 beim KN95. Unter anfänglich gescheiterten Personen wurden bei den ersten drei Modellen 0/4, 0/1 und 0/1 erfolgreich, beim KN95 hingegen 6/13. Dies spricht für eine verbesserbare Randbelastung mancher Faltmasken; die übrigen Nichtbestehergruppen waren sehr klein, und Wirksamkeit bei sämtlichen unpassenden Gesichtsformen wurde nicht belegt. Erhalt eines bereits bestandenen Dichtsitzes und Korrektur eines vorherigen Fehlers sind verschiedene Effekte mit unterschiedlichen Nennern. [Originale geschichtete Ergebnisse](ref:R04)\n\nRahmenanpassung und Bandspannung veränderten gemeinsam den Kontakt; ihre Einzelbeiträge wurden nicht getrennt. Kontaktdruckkarten, anhaltende Arbeitsdauer, Atemdruckabfall und Hautverletzungsraten wurden ebenfalls nicht berichtet. Der Vergleich mit vollständig gedruckten Masken betrifft deshalb das veränderte Bauteil: Die Rahmen behielten den ursprünglichen Filterkörper und prüften hauptsächlich Befestigung und Randsitz, nicht erneut die Partikelfiltration des Filtermediums.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Quantitative Einzelergebnisse erhalten auch Fälle, die der Rahmen nicht korrigierte",
+          "markdown": "Die quantitative Tabelle derselben Studie enthält nur wenige Einzelaufzeichnungen, nicht die vollständige qualitative Stichprobe. Der Anpassungsfaktor ist das Verhältnis äußerer zu innerer Aerosolkonzentration; die Tabelle nennt 100 als Bestehenswert, keinen Filtrationsprozentsatz. Im Block zum Ersatz beschädigter Bänder stehen 185→200+ und 13→9 für 1860 sowie 17→19 für 8210. Nur der erste Fall behielt einen hohen Dichtsitz; die beiden anderen blieben weit unter dem Bestehenswert. Eine veränderte Befestigung beseitigt Leckagen somit nicht automatisch. [Quantitative Einzelfalltabelle](ref:R04)\n\nDer getrennte Block zur Korrektur anfänglichen Nichtbestehens nennt 56→200+ für 1860, 0→200+ für 8210 sowie 0→101 und 0→6 für KN95. Ein KN95-Fall bestand, einer blieb erfolglos; die größte Verbesserung repräsentiert nicht beide. Die Originalangaben 0 und 200+ bleiben unverändert: Für eine Umrechnung in tatsächliche Nullkonzentration, genaue Werte oberhalb der Berichtsgrenze oder Prozentwerte fehlen Angaben. Auch die textliche Kurzbeschreibung weniger quantitativer Prüfungen ersetzt nicht die erfolglosen Zeilen des Bandersatzblocks.\n\nDie Tabellenfußnote nennt zuvor getragene und sterilisierte Masken, jedoch keine vollständigen individuellen Nutzungsgeschichten oder Sterilisationszyklen. Diese Bedingung begrenzt die Bedeutung von Wiederverwendung: Bestimmte vorhandene Masken bestanden eine konkrete Prüfung mit Rahmen; eine Zahl möglicher Wiederverwendungen wurde nicht bestimmt, und zugehörige Filtration sowie Atemdruckabfall wurden nicht gemeinsam berichtet. Einzelkontrollen unterscheiden bereits zuvor schlechten Sitz, Wiederherstellung durch den Rahmen und fortbestehendes Versagen.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Nold et al.: Prüfkopf und Druckmessung unter zyklischer Strömung.",
+          "interpretation": "Schwarze Schläuche verbinden die Strömungsmessung, der blaue Schlauch erfasst den Druck innerhalb der Maske; eine FFP2 sitzt auf einem starren Replikatkopf. Gemessen werden Druck und Volumenstrom ohne Partikelzähler. Erst die Filterkalibrierung bei geschlossenem Rand erlaubt das Abschätzen des Bypasses bei offenem Rand. Das Foto identifiziert Prüfwege, keine unmittelbar gemessene Partikelschutzklasse. [Originalaufbau](ref:R01)"
+        },
+        "F02": {
+          "caption": "Nold et al.: chirurgische, FFP2-, statistische und personalisierte Maske am selben Prüfkopf.",
+          "interpretation": "a zeigt den unbedeckten Kopf; b, c, d und e zeigen chirurgische, FFP2-, statistische und personalisierte Masken. Entscheidend sind Nasenrücken, Wangen und Unterkieferrand, nicht die Anzahl von Stofffalten. e nutzt eine individuelle, d eine populationsbasierte Kontur. Dargestellt ist ein einzelner Kopf; sichtbare Anpassung belegt keine geringe Leckage bei allen Personen. Die Streuung ist der Originaltabelle zu entnehmen. [Vergleich am selben Prüfkopf](ref:R01)"
+        },
+        "F03": {
+          "caption": "Nold et al.: originale Luftleckageprozente für Ein- und Ausatmung.",
+          "interpretation": "Linker und rechter Spaltenblock zeigen Ein- und Ausatmung mit Mittelwert und Standardabweichung; N zählt die tatsächlich mit dieser Maske geprüften Köpfe. PM bezeichnet Personalisierung, SSMS und SSML die beiden statistischen Größen. A, B und C gruppieren Signifikanztestergebnisse; gleiche Buchstaben belegen keine technische Gleichwertigkeit. PM zeigt niedrigere Mittelwerte, aber breite Standardabweichungen. Geringe mittlere Luftleckage belegt daher kein Bestehen partikelbasierter Dichtsitzprüfungen bei allen Tragenden. Die vollständige Tabelle erhält unterschiedliche Gruppennenner. [Originale Ergebnistabelle](ref:R01)"
+        },
+        "F04": {
+          "caption": "McAvoy et al.: Versuchswege nach Ausgangsdichtsitz.",
+          "interpretation": "Oben steht die Gesamtaufnahme n=45; darunter trennen sich anfängliches Bestehen und Nichtbestehen. Links wird der Erhalt des Dichtsitzes nach Verlust der Originalbänder geprüft, rechts die Verbesserung bereits schlechten Sitzes. Beide Wege wiederholen qualitative Tests, betreffen aber unterschiedliche Fragen und Nenner. Das Diagramm weist weder allen Personen quantitative Prüfungen zu noch belegt es wiederholte Desinfektionszyklen. [Versuchswege](ref:R04)"
+        },
+        "F05": {
+          "caption": "McAvoy et al.: Erhalt vorhandenen Dichtsitzes gegenüber Korrektur anfänglichen Versagens.",
+          "interpretation": "Der Nenner der linken Datenspalte enthält nur anfängliche Besteher, rechts nur Nichtbesteher; zusammengefasste Prozentwerte ergeben keinen randomisierten Gruppeneffekt. Für 8210 stehen links 9/9 und rechts 0/1, für KN95 11/12 und 6/13. Die erhaltene Fehlerspalte zeigt unterschiedliche Rahmenwirkung je nach Modell und unpassender Person. Gezählt werden bestandene qualitative Bitteraerosoltests, keine Filtereffizienzen. [Originale qualitative Tabelle](ref:R04)"
+        },
+        "F06": {
+          "caption": "McAvoy et al.: quantitative Originaltabelle einschließlich erfolgloser Fälle.",
+          "interpretation": "Im oberen Bandersatzblock stehen 185→200+, 13→9 und 17→19; im unteren Block anfänglichen Nichtbestehens 56→200+, 0→200+, 0→101 und 0→6. Spaltentitel trennen Original- und Rahmenbedingungen; die Fußnote nennt zuvor benutzte und sterilisierte Masken. Werte oberhalb der Berichtsgrenze sind keine exakten Zahlen für gemeinsame Berechnungen; Zeilen unter 100 dürfen nicht durch die textliche Beschreibung erfolgreicher Fälle ersetzt werden. Dies sind individuelle Konzentrationsverhältnisse, weder eine quantitative Verteilung aller 45 Personen noch eine Prüfung der Wiederverwendungszyklen. [Individuelle Dichtsitztabelle](ref:R04)"
+        }
+      }
+    }
+  }
+}

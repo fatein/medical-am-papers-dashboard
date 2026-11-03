@@ -1,0 +1,274 @@
+{
+  "schema_version": 2,
+  "question_id": "P3-042",
+  "p": "P3",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_ea655cb49cbce553d1f9",
+    "doc_6f590e17519c5995ce9e",
+    "doc_d6981b9fd4e1b6b348ab",
+    "doc_192a8e2063bd79fd172e"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Additive manufacturing of personalized orodispersible warfarin films",
+      "publisher": "International Journal of Pharmaceutics",
+      "year": 2019,
+      "url": "https://doi.org/10.1016/j.ijpharm.2019.04.018",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Orodispersible Polymer Films with the Poorly Water-Soluble Drug, Olanzapine: Hot-Melt Pneumatic Extrusion for Single-Process 3D Printing",
+      "publisher": "Pharmaceutics",
+      "year": 2020,
+      "url": "https://doi.org/10.3390/pharmaceutics12080692",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "The Impact of the Preparation Method on the Properties of Orodispersible Films with Aripiprazole: Electrospinning vs. Casting and 3D Printing Methods",
+      "publisher": "Pharmaceutics",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/pharmaceutics13081122",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Development of 3D Printed Multi-Layered Orodispersible Films with Porous Structure Applicable as a Substrate for Inkjet Printing",
+      "publisher": "Pharmaceutics",
+      "year": 2023,
+      "url": "https://doi.org/10.3390/pharmaceutics15020714",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R02",
+      "original_label": "Figure 9",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/364f/7466134/fa8d17bb47f4/pharmaceutics-12-00692-g009.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7466134/#pharmaceutics-12-00692-f009",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P3-042/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R03",
+      "original_label": "Figure 6",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/73c9/8401512/345d59d973c7/pharmaceutics-13-01122-g006.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8401512/#pharmaceutics-13-01122-f006",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P3-042/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R03",
+      "original_label": "Figure 9",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/73c9/8401512/720a32502287/pharmaceutics-13-01122-g009.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8401512/#pharmaceutics-13-01122-f009",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P3-042/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R04",
+      "original_label": "Figure 4",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/9071/9961792/b46278effd41/pharmaceutics-15-00714-g004.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9961792/#pharmaceutics-15-00714-f004",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P3-042/F04.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "口腔速溶膜与新剂型如何适应个体化给药？",
+      "direction": "个体化口服制剂",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "面积调剂量：先区分药量、膜厚和服用终点",
+          "markdown": "口腔速溶膜把药物置于可在口腔分散的薄层中，个体化的直接控制量可以是打印面积、沉积厚度或载药浓度。华法林研究通过改变打印薄膜的尺寸，制得 3.9–7.4 mg 的系列剂量；设计尺寸与实测含量的关系达到 R² = 0.9996。这个结果来自特定配方和挤出条件，说明尺寸可作为该体系的剂量控制变量，而不是任何聚合物薄膜都能沿用同一换算系数。保持挤出压力时改变面积，与提高压力使局部沉积变厚，是不同的调剂量路径。[华法林尺寸—含量实验](ref:R01)\n\n增加面积会改变放入口腔的尺寸，增加厚度则可能改变吸水路径与机械完整性。因此，个体化薄膜并非只需要确认数字模型面积。奥氮平实验固定为 20 × 25 mm、目标质量 100 mg 和目标药量 5 mg，仍因聚合物组合不同而得到不同的崩解时间与断裂力；阿立哌唑实验则显示，制造方法相同的薄膜在储存后，崩解与溶出也会发生分离。下面的实验分别回答剂量载入、服用时分散和药物释放，不能把某一个快速终点代替另外两个。[奥氮平处方](ref:R02)[阿立哌唑比较](ref:R03)\n\n这些研究中的“口腔分散”是制剂在液体中失去完整性；溶出是药物进入溶液。它们没有直接测量口腔黏膜吸收量，不能据此把速分散膜改称已证实的颊黏膜吸收制剂。对难溶药物而言，膜先崩解而药物仍以颗粒存在，正是需要独立溶出实验的原因。",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "奥氮平：相同规格下比较增塑剂与释放",
+          "markdown": "热熔气动挤出直接打印奥氮平膜，避免了先制丝再打印的步骤。研究采用打印速度 4 mm/s、空移速度 6 mm/s、填充率 100% 和平台温度 35 °C。所比较的 3 个配方均含 5% 奥氮平和 20% PVP VA64；F3 含 75% PEO，F5/F6 分别用 5% P407/P188 替代部分 PEO，PEO 降至 70%。打印温度均为 160 °C；仅以 PEO 携带 5% 药物的配方需要 170 °C。温度差体现可加工性改变，本实验不能据此代表所有热敏药物。[配方与 Table 4](ref:R02)\n\n| 配方 | 含量（5 mg 目标的 %） | 厚度 | 断裂力 | 崩解时间 |\n|---|---|---|---|---|\n| F3，无增塑剂 | 98.0 ± 2.4 | 243.3 ± 5.7 μm | 14.3 ± 0.2 N | 21.7 ± 1.5 s |\n| F5，P407 | 98.5 ± 1.5 | 242.3 ± 7.1 μm | 10.8 ± 2.7 N | 17.7 ± 1.5 s |\n| F6，P188 | 99.6 ± 2.1 | 243.3 ± 11.5 μm | 15.6 ± 0.6 N | 17.0 ± 1.7 s |\n\n崩解在 900 mL 去离子水、37 °C 下测定。F5、F6 比 F3 更快（p < 0.05），但 F6 的断裂力又高于 F5（p < 0.05）；加快分散并不必然伴随同样程度的机械削弱。这里的 N 是力，不能与按截面积归一化的 N/mm² 拉伸强度直接排序。\n\n溶出使用 pH 7.4 模拟唾液 900 mL、37 ± 0.5 °C、100 rpm，重复 3 次。在这一体外大量液体条件下，所有薄膜 10 min 溶出超过 90%，游离奥氮平粉末 60 min 仅 44.6%。F3/F5 在 7 min 分别为 84.7%/84.6%，F6 在 5 min 已达 88.5%。DSC/PXRD 支持打印后药物转为无定形，亲水载体和固态改变共同参与释放改善；不能只归因于薄膜外形。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "制膜方法的比较，取决于样品和崩解装置",
+          "markdown": "阿立哌唑研究在 PVA 基体系中比较静电纺丝（Esp）、溶剂浇铸（Cast）和 3D 打印。平均厚度分别为 57.7 ± 12.6、147.7 ± 6.4 和 170.1 ± 29.0 μm；这不是厚度、质量和载药量均匹配的比较。Esp 的纤维网络与另外两种连续膜具有不同的比表面积，处方与实际载药也不同，因此性能差异属于“制备方法—所得样品”的整体差异，不能解释为单独更换打印机造成的效应。[样品表征与崩解方法](ref:R03)\n\n| 崩解方法 | Esp | Cast | 3D |\n|---|---|---|---|\n| 药典装置：900 mL 水、37 °C、3 g 夹具 | 约 1 s | 41.8 ± 1.9 s | 43.0 ± 1.0 s |\n| 滑框钢球：900 μL 水、37 °C、3.5 g 钢球 | 约 1 s | > 3 min | 71.0 ± 9.8 s |\n\n每种方法测 6 个样品。药典装置用 2 × 3 cm 膜，滑框法用 3 × 3 cm 膜、开孔 10 mm 的固定框和直径 10 mm 的钢球。前者持续浸入大量液体，后者以局部润湿后的膜破裂为终点。Cast 与 3D 在药典装置中几乎相同，在滑框法中却明显分开。Esp 在两种方法中均约 1 s，支持纤维结构的快速润湿，但不能以这一结果推断给药剂量相同或患者感受相同。\n\n同样需要区分崩解与释放：新制样品在 pH 4.0 ± 0.05 乙酸缓冲液 1000 mL、37 °C、75 rpm 中，5 min 释放分别为 Esp 94.0 ± 2.8%、Cast 92.1 ± 0.8%、3D 88.7 ± 2.1%。三者均快于原料药（p < 0.05），但这种溶出介质和机械作用不等于口腔内少量唾液。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "储存使“仍然快崩解”与“仍然快释放”分开",
+          "markdown": "同一阿立哌唑研究把膜密封在铝袋中，于 25 °C、60% RH 储存 1 个月。药典装置中，3D 膜崩解时间由 43.0 ± 1.0 s 变为 43.7 ± 6.6 s；滑框法由 71.0 ± 9.8 s 变为 59.5 ± 17.8 s，未达到显著差异。Esp 在两种方法中仍约 1 s；Cast 在药典装置中反而缩短至 36.8 ± 1.3 s（p < 0.05）。若只检测崩解，难以发现释放端的变化。[储存前后实验](ref:R03)\n\n溶出曲线给出不同判断：Esp 和 3D 储存后的 5 min 释放量约降为初始的一半，而 Cast 无显著变化（p > 0.05）。Esp 到 60 min 为 90.8 ± 0.2%。Esp 的 DSC/XRD 出现药物重结晶证据；3D 膜没有检出相同的重结晶变化，却变得更硬，拉伸强度由约 6 增至 12.5 N/mm²，Young 模量由 69.7 增至 355.84 N/mm²。两组早期释放都变慢，不能因此赋予相同的单一机制。\n\n论文另用 5 mL 室温水拍摄湿润过程，Esp 由初始 1.5 s 延至储存后 8 s；这与标准化装置中约 1 s 的结果测量条件和判定终点不同，不是可以互相替换的一组数。对于需要小批量配制和短期保存的个体化膜，实际应关注所选包装、储存时间下的药物固态及释放，而不是仅沿用新制膜的快速崩解标签。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "多孔多层膜：可打印基底与已完成的载药剂型有距离",
+          "markdown": "另一项研究把成膜与之后的药物喷墨沉积拆开：先以 3D 打印制造多层多孔空白膜，作为未来载药基底。A 型由 2 层基底和 3 层含聚合物及致孔颗粒的上层构成；B 型改成 3 层基底和 2 层上层，上层降低成膜聚合物并以黄原胶稳定颗粒分散。电镜显示，A 型颗粒多被聚合物包埋，B 型保留更开放的颗粒间结构。这里的“多层”是材料结构，不是已经验证的多药分层。[结构、Table 5 与力学实验](ref:R04)\n\n| 样品 | 孔隙率 | 拉伸强度 | 断裂伸长率 | 崩解时间 |\n|---|---|---|---|---|\n| 基质膜 FM | 8.7% | 7.07 ± 0.24 N/mm² | 45.80 ± 10.56% | 17.90 ± 1.57 s |\n| A1.5 | 1.76% | 3.70 ± 0.11 N/mm² | 59.60 ± 6.69% | — |\n| B 型 XA5 | 17.64% | 1.13 ± 0.05 N/mm² | 16.00 ± 1.86% | 3.69 ± 0.09 s |\n| B 型 XF5 | 22.76% | 0.85 ± 0.28 N/mm² | 7.70 ± 2.57% | 3.46 ± 0.49 s |\n\n表中 — 表示此处未摘录该项，不是没有崩解。XF5 的高孔隙率和短崩解伴随更低强度、伸长率；较多孔并非所有使用性能都更好。各配方厚度为 77.07–149.87 μm，研究报告的最大质量 RSD 为 4.83%，但空白膜质量一致不能证明之后喷墨加入的药物含量一致。研究未实际测出载药容量、喷墨后剂量回收或不同药物间扩散，因而其证据定位是可供后续加药的结构基底；加入药液后的孔结构、干燥与局部再溶解仍属于尚未被该实验覆盖的步骤。",
+          "figure_ids": [
+            "F04"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Cho et al. — 原图 9：奥氮平原料药与 3 种打印膜的溶出。",
+          "interpretation": "横轴为 0–60 min，纵轴为溶出百分比；黑线为游离 OLZ，绿、蓝、红分别为 F3、F5、F6。F6 在初始阶段上升更快，10 min 后 3 种膜均在高释放区，而粉末至 60 min 仍约 44.6%。此图测的是 900 mL、100 rpm 下的溶出，不能把曲线时间当成口内崩解秒数。[溶出方法与结果](ref:R02)"
+        },
+        "F02": {
+          "caption": "Łyszczarz et al. — 原图 6：两种崩解方法及储存前后结果。",
+          "interpretation": "a 为新制膜，b 为 1 个月后；实心柱为药典装置，斜线柱为滑框钢球法，纵轴是 s。红色 Esp 放大框显示约 1 s，Cast 的斜线柱到达 180 s 图示上限，而原文报告 > 3 min；不能将该柱当成精确 180 s。3D 的两种方法初始约 43 与 71 s，说明装置改变了对样品的区分。[原图及方法](ref:R03)"
+        },
+        "F03": {
+          "caption": "Łyszczarz et al. — 原图 9：储存对阿立哌唑释放的影响。",
+          "interpretation": "横轴 0–60 min、纵轴释放百分比；红/绿/蓝对应 Esp/Cast/3D，实线为初始，虚线 1M 为储存 1 个月，灰线为 ARP 原料。Esp 和 3D 的虚线在 5 min 明显低于各自实线，Cast 两线仍接近。结合原图 6，储存未显著延长 3D 崩解，却降低早期释放，因此不能由崩解单独推断释放稳定性。[储存比较](ref:R03)"
+        },
+        "F04": {
+          "caption": "Elbl et al. — 原图 4：多层空白膜的表面电镜。",
+          "interpretation": "每行左侧为 A 型 A1.5、F1.5、NS1.5、SX1.5，右侧为 B 型 XA5、XF5、XNS5、XSX5；各图保留 1.00 mm 标尺。左侧较连续的包埋表面与右侧可辨认颗粒和间隙形成对照。电镜支持结构差异，孔隙率数值来自 Table 5，而非照片直接定量；图中没有药物墨滴或实测载药分布。[结构结果](ref:R04)"
+        }
+      }
+    },
+    "en": {
+      "title": "How can orodispersible films and new dosage forms support individualized dosing?",
+      "direction": "Personalized oral dosage forms",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Area-based dosing: distinguish drug amount, thickness and administration endpoints",
+          "markdown": "Orodispersible films place drug in a thin layer that disperses in the mouth. Printable area, deposited thickness and drug concentration can each control an individualized dose. A warfarin study varied film dimensions to produce doses of 3.9–7.4 mg, with R² = 0.9996 between designed size and measured drug content. This relationship belongs to the tested formulation and extrusion conditions; it establishes size as a control variable for that system, not a universal conversion factor for polymer films. Changing area at constant extrusion pressure differs from increasing pressure to deposit a thicker local layer. [Warfarin size–content experiment](ref:R01)\n\nIncreasing area changes the dimensions placed in the mouth, whereas increasing thickness can change water penetration and mechanical integrity. Checking the digital area alone therefore does not establish a personalized film. An olanzapine experiment fixed dimensions at 20 × 25 mm, target mass at 100 mg and target drug amount at 5 mg, yet different polymer combinations produced different disintegration times and breaking forces. An aripiprazole experiment further showed that storage can separate disintegration from dissolution even within the same manufacturing method. The experiments below address drug loading, dispersion during administration and drug release separately; a rapid endpoint in one cannot substitute for the other two. [Olanzapine formulations](ref:R02)[Aripiprazole comparison](ref:R03)\n\nIn these experiments, dispersion means loss of film integrity in liquid; dissolution means drug entering solution. Neither directly measures uptake across oral mucosa, so rapid dispersion does not establish a validated buccal absorption product. A poorly soluble drug can remain particulate after the film disintegrates, which is precisely why separate dissolution measurements matter.",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Olanzapine: plasticizer and release comparisons at fixed dimensions",
+          "markdown": "Hot-melt pneumatic extrusion printed olanzapine films directly, without first producing a filament. Printing speed was 4 mm/s, travel speed 6 mm/s, infill 100% and bed temperature 35 °C. The 3 compared formulations each contained 5% olanzapine and 20% PVP VA64. F3 contained 75% PEO; F5/F6 replaced part of PEO with 5% P407/P188 respectively, reducing PEO to 70%. All were printed at 160 °C, whereas the formulation carrying 5% drug in PEO alone required 170 °C. This temperature difference concerns processability and cannot represent the behavior of all heat-sensitive drugs. [Formulations and Table 4](ref:R02)\n\n| Formulation | Content (% of 5 mg target) | Thickness | Breaking force | Disintegration time |\n|---|---|---|---|---|\n| F3, no plasticizer | 98.0 ± 2.4 | 243.3 ± 5.7 μm | 14.3 ± 0.2 N | 21.7 ± 1.5 s |\n| F5, P407 | 98.5 ± 1.5 | 242.3 ± 7.1 μm | 10.8 ± 2.7 N | 17.7 ± 1.5 s |\n| F6, P188 | 99.6 ± 2.1 | 243.3 ± 11.5 μm | 15.6 ± 0.6 N | 17.0 ± 1.7 s |\n\nDisintegration was measured in 900 mL deionized water at 37 °C. F5 and F6 were faster than F3 (p < 0.05), while F6 had a higher breaking force than F5 (p < 0.05). Faster dispersion therefore need not involve the same degree of mechanical weakening. N denotes force here and cannot be ranked directly against tensile strength normalized by cross-sectional area in N/mm².\n\nDissolution used 900 mL simulated saliva at pH 7.4, 37 ± 0.5 °C and 100 rpm, in 3 replicates. Under this high-volume in-vitro condition, all films dissolved more than 90% within 10 min, whereas free olanzapine powder reached only 44.6% at 60 min. F3/F5 reached 84.7%/84.6% at 7 min; F6 already reached 88.5% at 5 min. DSC/PXRD supported conversion to amorphous drug after printing. Hydrophilic carriers and altered solid state both contribute to improved release; film shape alone cannot explain it.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Manufacturing comparisons depend on the specimens and disintegration apparatus",
+          "markdown": "The aripiprazole study compared electrospinning (Esp), solvent casting (Cast) and 3D printing in PVA-based systems. Mean thicknesses were 57.7 ± 12.6, 147.7 ± 6.4 and 170.1 ± 29.0 μm respectively. Thickness, mass and drug loading were not all matched. The Esp fibrous network differs in specific surface area from the other continuous films, and formulations and actual loading also differ. Performance differences thus characterize each manufacturing method together with its resulting specimen, rather than an isolated effect of changing the printer. [Specimen characterization and disintegration methods](ref:R03)\n\n| Disintegration method | Esp | Cast | 3D |\n|---|---|---|---|\n| Pharmacopoeial apparatus: 900 mL water, 37 °C, 3 g clips | About 1 s | 41.8 ± 1.9 s | 43.0 ± 1.0 s |\n| Slide frame and ball: 900 μL water, 37 °C, 3.5 g steel ball | About 1 s | > 3 min | 71.0 ± 9.8 s |\n\nEach method tested 6 specimens. The pharmacopoeial apparatus used 2 × 3 cm films; the slide-frame method used 3 × 3 cm films, a frame with a 10 mm opening and a 10 mm diameter ball. The former repeatedly immerses the film in abundant liquid; the latter records rupture after localized wetting. Cast and 3D were nearly identical in the pharmacopoeial apparatus but clearly separated in the slide-frame test. Esp remained near 1 s in both, supporting rapid wetting of its fibrous structure without establishing equal administered doses or equal patient experience.\n\nDisintegration must also be separated from release. Fresh specimens in 1000 mL acetate buffer at pH 4.0 ± 0.05, 37 °C and 75 rpm released 94.0 ± 2.8% for Esp, 92.1 ± 0.8% for Cast and 88.7 ± 2.1% for 3D at 5 min. All were faster than raw drug (p < 0.05), but this medium and mechanical agitation do not reproduce the small saliva volume in the mouth.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Storage separates retained rapid disintegration from retained rapid release",
+          "markdown": "The same aripiprazole study stored films in sealed aluminum sachets for 1 month at 25 °C and 60% RH. For 3D films, pharmacopoeial disintegration changed from 43.0 ± 1.0 s to 43.7 ± 6.6 s; slide-frame results changed from 71.0 ± 9.8 s to 59.5 ± 17.8 s without a significant difference. Esp remained near 1 s in both methods, while Cast actually shortened to 36.8 ± 1.3 s in the pharmacopoeial apparatus (p < 0.05). Disintegration alone would therefore have difficulty detecting the release change. [Before/after storage experiments](ref:R03)\n\nDissolution gives a different result: the amount released by Esp and 3D at 5 min after storage was approximately half its initial value, whereas Cast did not change significantly (p > 0.05). Esp reached 90.8 ± 0.2% at 60 min. DSC/XRD identified drug recrystallization in Esp. No equivalent recrystallization was detected in 3D films, which nevertheless became stiffer: tensile strength rose from approximately 6 to 12.5 N/mm² and Young modulus from 69.7 to 355.84 N/mm². Slower early release in both groups therefore does not establish the same single mechanism.\n\nA separate wetting video used 5 mL water at room temperature: Esp changed from an initial 1.5 s to 8 s after storage. Its conditions and endpoint differ from the approximately 1 s results in standardized apparatus, so these values are not interchangeable. For individualized films prepared in small batches and kept briefly before use, drug solid state and release under the selected packaging and storage duration remain relevant beyond the rapid-disintegration label assigned to fresh films.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Porous multilayer films: a printable substrate is not yet a finished drug product",
+          "markdown": "Another study separated film formation from subsequent drug inkjet deposition by first 3D printing blank porous multilayer films as potential substrates. Type A used 2 base layers and 3 upper layers containing polymer and pore-forming particles. Type B used 3 base layers and 2 upper layers, with reduced film-forming polymer in the upper layers and xanthan gum to stabilize particle dispersions. Electron microscopy showed particles largely embedded in polymer for type A, whereas type B retained a more open interparticle structure. “Multilayer” here describes material architecture, not validated layers of multiple drugs. [Structure, Table 5 and mechanical experiments](ref:R04)\n\n| Specimen | Porosity | Tensile strength | Elongation at break | Disintegration time |\n|---|---|---|---|---|\n| Matrix film FM | 8.7% | 7.07 ± 0.24 N/mm² | 45.80 ± 10.56% | 17.90 ± 1.57 s |\n| A1.5 | 1.76% | 3.70 ± 0.11 N/mm² | 59.60 ± 6.69% | — |\n| Type B XA5 | 17.64% | 1.13 ± 0.05 N/mm² | 16.00 ± 1.86% | 3.69 ± 0.09 s |\n| Type B XF5 | 22.76% | 0.85 ± 0.28 N/mm² | 7.70 ± 2.57% | 3.46 ± 0.49 s |\n\nThe dash means the value is not excerpted here, not an absence of disintegration. XF5 combined high porosity and short disintegration with lower strength and elongation; greater porosity did not improve every handling property. Thicknesses across formulations were 77.07–149.87 μm and the largest mass RSD was 4.83%, but uniform blank-film mass cannot establish uniformity of subsequently inkjetted drug. The study did not measure actual loading capacity, post-inkjet dose recovery or interdrug diffusion. Its evidence concerns a structured substrate for later drug addition; pore structure after liquid deposition, drying and localized redissolution remain outside the experiments performed.",
+          "figure_ids": [
+            "F04"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Cho et al. — Original Figure 9: dissolution of raw olanzapine and 3 printed films.",
+          "interpretation": "The x-axis is 0–60 min and the y-axis percent dissolved. Black is free OLZ; green, blue and red are F3, F5 and F6. F6 rises faster initially; after 10 min all 3 films occupy the high-release region, whereas powder remains near 44.6% at 60 min. This is dissolution in 900 mL at 100 rpm, not an oral disintegration time in seconds. [Dissolution methods and results](ref:R02)"
+        },
+        "F02": {
+          "caption": "Łyszczarz et al. — Original Figure 6: two disintegration methods before and after storage.",
+          "interpretation": "Panel a shows fresh films and b after 1 month. Solid bars denote the pharmacopoeial apparatus and hatched bars the slide-frame-and-ball method; the y-axis is s. Red Esp insets show approximately 1 s. The hatched Cast bar reaches the plotted limit of 180 s, while the text reports > 3 min; it is not an exact 180 s measurement. Initial 3D results are approximately 43 and 71 s, showing how apparatus changes specimen discrimination. [Original figure and methods](ref:R03)"
+        },
+        "F03": {
+          "caption": "Łyszczarz et al. — Original Figure 9: storage effects on aripiprazole release.",
+          "interpretation": "The axes show 0–60 min and percent released. Red/green/blue denote Esp/Cast/3D; solid lines are initial, dashed 1M lines follow 1 month of storage, and gray is raw ARP. Esp and 3D dashed lines are clearly below their solid counterparts at 5 min, while Cast lines remain close. Together with original Figure 6, storage reduced early release without significantly prolonging 3D disintegration; disintegration alone cannot establish release stability. [Storage comparison](ref:R03)"
+        },
+        "F04": {
+          "caption": "Elbl et al. — Original Figure 4: surface electron micrographs of blank multilayer films.",
+          "interpretation": "The left column shows type A specimens A1.5, F1.5, NS1.5 and SX1.5; the right shows type B XA5, XF5, XNS5 and XSX5. All retain 1.00 mm scale bars. More continuous embedded surfaces on the left contrast with discernible particles and gaps on the right. Microscopy supports the structural difference; porosity values come from Table 5 rather than direct quantification of these images. No drug ink droplets or measured drug distribution are shown. [Structural results](ref:R04)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie unterstützen orodispersible Filme und neue Arzneiformen eine individualisierte Dosierung?",
+      "direction": "Individualisierte orale Arzneiformen",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Flächenabhängige Dosierung: Wirkstoffmenge, Dicke und Einnahmeendpunkte unterscheiden",
+          "markdown": "Orodispersible Filme enthalten Wirkstoff in einer dünnen, im Mund dispergierbaren Schicht. Druckfläche, aufgetragene Dicke und Wirkstoffkonzentration können jeweils eine individualisierte Dosis bestimmen. Eine Warfarin-Studie variierte die Filmabmessungen und erzeugte Dosen von 3.9–7.4 mg; zwischen geplanter Größe und gemessenem Wirkstoffgehalt lag R² bei 0.9996. Dieser Zusammenhang gilt für die untersuchte Formulierung und die Extrusionsbedingungen. Er belegt die Größe als Stellgröße dieses Systems, keinen universellen Umrechnungsfaktor für Polymerfilme. Eine Flächenänderung bei konstantem Extrusionsdruck unterscheidet sich von höherem Druck, der lokal eine dickere Schicht erzeugt. [Warfarin: Größe und Gehalt](ref:R01)\n\nMehr Fläche verändert die Abmessungen im Mund, mehr Dicke dagegen möglicherweise Wasserpenetration und mechanische Integrität. Die digitale Fläche allein charakterisiert daher keinen individualisierten Film. In einem Olanzapin-Experiment waren 20 × 25 mm, eine Zielmasse von 100 mg und eine Zieldosis von 5 mg festgelegt; verschiedene Polymerkombinationen ergaben trotzdem unterschiedliche Zerfallszeiten und Bruchkräfte. Ein Aripiprazol-Experiment zeigte zudem, dass Lagerung Zerfall und Wirkstoffauflösung selbst innerhalb derselben Herstellungsmethode entkoppeln kann. Die folgenden Experimente behandeln Wirkstoffbeladung, Dispersion bei der Einnahme und Freisetzung getrennt; ein schneller Endpunkt ersetzt die anderen beiden nicht. [Olanzapin-Formulierungen](ref:R02)[Aripiprazol-Vergleich](ref:R03)\n\nDispersion bedeutet hier den Verlust der Filmintegrität in Flüssigkeit, Auflösung dagegen den Übergang des Wirkstoffs in Lösung. Die Experimente messen keine Aufnahme über die Mundschleimhaut; rasche Dispersion belegt deshalb keine validierte bukkale Resorption. Ein schwer löslicher Wirkstoff kann nach dem Filmzerfall weiterhin partikulär vorliegen. Genau deshalb ist eine getrennte Auflösungsmessung erforderlich.",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Olanzapin: Weichmacher und Freisetzung bei gleichen Abmessungen",
+          "markdown": "Die pneumatische Schmelzextrusion druckte Olanzapin-Filme direkt, ohne vorherige Filamentherstellung. Druckgeschwindigkeit: 4 mm/s; Leerfahrt: 6 mm/s; Füllgrad: 100%; Plattformtemperatur: 35 °C. Die 3 verglichenen Formulierungen enthielten jeweils 5% Olanzapin und 20% PVP VA64. F3 enthielt 75% PEO; F5/F6 ersetzten einen Teil davon durch 5% P407/P188, sodass PEO auf 70% sank. Alle wurden bei 160 °C gedruckt; 5% Wirkstoff in PEO allein erforderten 170 °C. Der Temperaturunterschied betrifft die Verarbeitbarkeit und repräsentiert nicht sämtliche thermolabilen Wirkstoffe. [Formulierungen und Tabelle 4](ref:R02)\n\n| Formulierung | Gehalt (% des 5-mg-Ziels) | Dicke | Bruchkraft | Zerfallszeit |\n|---|---|---|---|---|\n| F3, ohne Weichmacher | 98.0 ± 2.4 | 243.3 ± 5.7 μm | 14.3 ± 0.2 N | 21.7 ± 1.5 s |\n| F5, P407 | 98.5 ± 1.5 | 242.3 ± 7.1 μm | 10.8 ± 2.7 N | 17.7 ± 1.5 s |\n| F6, P188 | 99.6 ± 2.1 | 243.3 ± 11.5 μm | 15.6 ± 0.6 N | 17.0 ± 1.7 s |\n\nDer Zerfall wurde in 900 mL deionisiertem Wasser bei 37 °C gemessen. F5 und F6 waren schneller als F3 (p < 0.05), F6 hatte zugleich eine höhere Bruchkraft als F5 (p < 0.05). Schnellere Dispersion verlangt somit nicht denselben Grad mechanischer Schwächung. N bezeichnet hier Kraft und lässt sich nicht unmittelbar mit auf den Querschnitt normierter Zugfestigkeit in N/mm² vergleichen.\n\nDie Auflösungsprüfung verwendete 900 mL simulierten Speichel bei pH 7.4, 37 ± 0.5 °C und 100 rpm mit 3 Wiederholungen. Unter diesen In-vitro-Bedingungen mit großem Flüssigkeitsvolumen lösten alle Filme in 10 min mehr als 90% auf; freies Olanzapin-Pulver erreichte nach 60 min nur 44.6%. F3/F5 erreichten nach 7 min 84.7%/84.6%, F6 bereits nach 5 min 88.5%. DSC/PXRD stützten eine Umwandlung in amorphen Wirkstoff nach dem Druck. Hydrophile Träger und veränderter Feststoffzustand tragen gemeinsam zur verbesserten Freisetzung bei; die Filmform allein erklärt sie nicht.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Herstellungsvergleiche hängen von Proben und Zerfallsapparatur ab",
+          "markdown": "Die Aripiprazol-Studie verglich Elektrospinnen (Esp), Lösungsmittelgießen (Cast) und 3D-Druck in PVA-basierten Systemen. Die mittleren Dicken betrugen 57.7 ± 12.6, 147.7 ± 6.4 beziehungsweise 170.1 ± 29.0 μm. Dicke, Masse und Wirkstoffbeladung waren nicht sämtlich angeglichen. Das Esp-Fasernetz besitzt eine andere spezifische Oberfläche als die kontinuierlichen Filme; auch Formulierung und tatsächliche Beladung unterscheiden sich. Die Leistungsunterschiede beschreiben daher Herstellungsmethode und resultierende Probe gemeinsam, keinen isolierten Effekt eines Druckerwechsels. [Probencharakterisierung und Zerfallsmethoden](ref:R03)\n\n| Zerfallsmethode | Esp | Cast | 3D |\n|---|---|---|---|\n| Arzneibuchapparatur: 900 mL Wasser, 37 °C, 3-g-Klammern | Etwa 1 s | 41.8 ± 1.9 s | 43.0 ± 1.0 s |\n| Rahmen-Kugel-Methode: 900 μL Wasser, 37 °C, 3.5-g-Stahlkugel | Etwa 1 s | > 3 min | 71.0 ± 9.8 s |\n\nJede Methode untersuchte 6 Proben. Die Arzneibuchapparatur verwendete 2 × 3 cm große Filme, die Rahmenmethode 3 × 3 cm große Filme, eine Rahmenöffnung von 10 mm und eine Kugel mit 10 mm Durchmesser. Die erste Methode taucht den Film wiederholt in reichlich Flüssigkeit; die zweite erfasst den Bruch nach lokaler Benetzung. Cast und 3D waren in der Arzneibuchapparatur nahezu gleich, im Rahmentest dagegen deutlich getrennt. Esp blieb in beiden bei etwa 1 s. Das stützt die schnelle Benetzung der Faserstruktur, belegt aber weder gleiche verabreichte Dosen noch dasselbe Patientenerleben.\n\nAuch Zerfall und Freisetzung sind zu unterscheiden: Frische Proben setzten in 1000 mL Acetatpuffer bei pH 4.0 ± 0.05, 37 °C und 75 rpm nach 5 min für Esp 94.0 ± 2.8%, für Cast 92.1 ± 0.8% und für 3D 88.7 ± 2.1% frei. Alle waren schneller als der Rohwirkstoff (p < 0.05); Medium und mechanische Bewegung bilden jedoch nicht das geringe Speichelvolumen im Mund ab.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Lagerung trennt weiterhin schnellen Zerfall von weiterhin schneller Freisetzung",
+          "markdown": "Dieselbe Aripiprazol-Studie lagerte Filme 1 Monat in verschlossenen Aluminiumbeuteln bei 25 °C und 60% RH. Bei 3D-Filmen änderte sich der Arzneibuchzerfall von 43.0 ± 1.0 s auf 43.7 ± 6.6 s, das Rahmenergebnis von 71.0 ± 9.8 s auf 59.5 ± 17.8 s ohne signifikanten Unterschied. Esp blieb in beiden Verfahren bei etwa 1 s; Cast verkürzte sich in der Arzneibuchapparatur sogar auf 36.8 ± 1.3 s (p < 0.05). Eine reine Zerfallsprüfung würde die Freisetzungsänderung deshalb kaum erkennen. [Versuche vor und nach Lagerung](ref:R03)\n\nDie Auflösungskurven ergeben ein anderes Bild: Esp und 3D setzten nach Lagerung innerhalb von 5 min ungefähr die Hälfte der ursprünglichen Menge frei, Cast änderte sich dagegen nicht signifikant (p > 0.05). Esp erreichte nach 60 min 90.8 ± 0.2%. DSC/XRD belegten bei Esp Wirkstoffrekristallisation. Bei 3D wurde keine entsprechende Rekristallisation nachgewiesen, der Film wurde jedoch steifer: Die Zugfestigkeit stieg von ungefähr 6 auf 12.5 N/mm² und der Young-Modul von 69.7 auf 355.84 N/mm². Dieselbe Verlangsamung der frühen Freisetzung belegt somit keinen einheitlichen Mechanismus.\n\nEin separates Benetzungsvideo mit 5 mL Wasser bei Raumtemperatur zeigte für Esp zunächst 1.5 s und nach Lagerung 8 s. Bedingungen und Endpunkt unterscheiden sich von den ungefähr 1 s in standardisierten Apparaturen; die Werte sind nicht austauschbar. Bei individualisierten Filmen aus kleinen Chargen mit kurzer Aufbewahrung bleiben Wirkstofffestform und Freisetzung unter der gewählten Verpackung und Lagerdauer relevant, über die Kennzeichnung frischer Filme als schnell zerfallend hinaus.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Poröse Mehrschichtfilme: druckbares Substrat und fertige Arzneiform unterscheiden",
+          "markdown": "Eine weitere Studie trennte Filmbildung von späterer Wirkstoffdeposition per Tintenstrahldruck: Zunächst wurden poröse mehrschichtige Placebofilme als mögliche Substrate mittels 3D-Druck hergestellt. Typ A bestand aus 2 Basisschichten und 3 oberen Schichten mit Polymer und porenbildenden Partikeln. Typ B verwendete 3 Basisschichten und 2 obere Schichten, reduzierte dort das filmbildende Polymer und stabilisierte die Partikeldispersion mit Xanthan. Elektronenmikroskopisch waren die Partikel in Typ A überwiegend in Polymer eingebettet; Typ B behielt offenere Zwischenräume. „Mehrschichtig“ bezeichnet hier Materialarchitektur, keine validierten Schichten verschiedener Wirkstoffe. [Struktur, Tabelle 5 und mechanische Versuche](ref:R04)\n\n| Probe | Porosität | Zugfestigkeit | Bruchdehnung | Zerfallszeit |\n|---|---|---|---|---|\n| Matrixfilm FM | 8.7% | 7.07 ± 0.24 N/mm² | 45.80 ± 10.56% | 17.90 ± 1.57 s |\n| A1.5 | 1.76% | 3.70 ± 0.11 N/mm² | 59.60 ± 6.69% | — |\n| Typ B XA5 | 17.64% | 1.13 ± 0.05 N/mm² | 16.00 ± 1.86% | 3.69 ± 0.09 s |\n| Typ B XF5 | 22.76% | 0.85 ± 0.28 N/mm² | 7.70 ± 2.57% | 3.46 ± 0.49 s |\n\nDer Strich bedeutet, dass der Wert hier nicht übernommen wurde, nicht dass kein Zerfall stattfand. XF5 verband hohe Porosität und kurzen Zerfall mit geringerer Festigkeit und Dehnung; mehr Porosität verbesserte nicht jede Handhabungseigenschaft. Die Dicken aller Formulierungen lagen bei 77.07–149.87 μm, die höchste Massen-RSD bei 4.83%. Gleichmäßige Placebofilmmasse belegt jedoch keine Gleichförmigkeit eines später aufgedruckten Wirkstoffs. Tatsächliche Beladungskapazität, Dosiswiederfindung nach Tintenstrahldruck oder Diffusion zwischen Wirkstoffen wurden nicht gemessen. Die Evidenz betrifft ein strukturiertes Substrat zur späteren Beladung; Porenstruktur nach Flüssigkeitsauftrag, Trocknung und lokale Wiederauflösung liegen außerhalb der durchgeführten Versuche.",
+          "figure_ids": [
+            "F04"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Cho et al. — Originalabbildung 9: Auflösung von Olanzapin-Rohstoff und 3 gedruckten Filmen.",
+          "interpretation": "Die x-Achse zeigt 0–60 min, die y-Achse den gelösten Prozentsatz. Schwarz: freies OLZ; Grün, Blau und Rot: F3, F5 und F6. F6 steigt anfangs schneller; nach 10 min liegen alle 3 Filme im hohen Freisetzungsbereich, das Pulver nach 60 min dagegen erst bei ungefähr 44.6%. Gemessen wird die Auflösung in 900 mL bei 100 rpm, keine orale Zerfallszeit in Sekunden. [Auflösungsmethode und Ergebnisse](ref:R02)"
+        },
+        "F02": {
+          "caption": "Łyszczarz et al. — Originalabbildung 6: zwei Zerfallsmethoden vor und nach Lagerung.",
+          "interpretation": "a zeigt frische Filme, b den Zustand nach 1 Monat. Vollbalken bezeichnen die Arzneibuchapparatur, schraffierte Balken die Rahmen-Kugel-Methode; die y-Achse ist in s. Rote Esp-Vergrößerungen zeigen ungefähr 1 s. Der schraffierte Cast-Balken erreicht die Darstellungsgrenze von 180 s, der Text nennt jedoch > 3 min; dies ist kein exakter Messwert von 180 s. Die anfänglichen 3D-Werte von ungefähr 43 und 71 s zeigen die apparaturabhängige Unterscheidung der Proben. [Originalabbildung und Methoden](ref:R03)"
+        },
+        "F03": {
+          "caption": "Łyszczarz et al. — Originalabbildung 9: Lagerungseffekt auf die Aripiprazol-Freisetzung.",
+          "interpretation": "Die Achsen zeigen 0–60 min und freigesetzten Prozentsatz. Rot/Grün/Blau stehen für Esp/Cast/3D, durchgezogene Linien für den Ausgangszustand, gestrichelte 1M-Linien für 1 Monat Lagerung und Grau für ARP-Rohstoff. Esp und 3D liegen nach Lagerung bei 5 min deutlich unter ihren Ausgangskurven; die Cast-Linien bleiben nahe beieinander. Zusammen mit Originalabbildung 6 ergibt sich geringere frühe Freisetzung ohne signifikant verlängerten 3D-Zerfall. Zerfall allein belegt deshalb keine Freisetzungsstabilität. [Lagerungsvergleich](ref:R03)"
+        },
+        "F04": {
+          "caption": "Elbl et al. — Originalabbildung 4: Oberflächen-Elektronenmikroskopie mehrschichtiger Placebofilme.",
+          "interpretation": "Links stehen die Typ-A-Proben A1.5, F1.5, NS1.5 und SX1.5, rechts Typ B mit XA5, XF5, XNS5 und XSX5. Alle Bilder behalten den Maßstab von 1.00 mm. Links erscheinen stärker zusammenhängende, eingebettete Oberflächen, rechts erkennbare Partikel und Zwischenräume. Die Mikroskopie stützt den Strukturunterschied; Porositätswerte stammen aus Tabelle 5, nicht aus einer direkten Quantifizierung dieser Bilder. Wirkstofftropfen oder gemessene Wirkstoffverteilungen sind nicht dargestellt. [Strukturergebnisse](ref:R04)"
+        }
+      }
+    }
+  }
+}

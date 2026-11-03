@@ -1,0 +1,317 @@
+{
+  "schema_version": 2,
+  "question_id": "P1-010",
+  "p": "P1",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_1c65be874122e27ac06b",
+    "doc_3f8fe626584f7a38e387",
+    "doc_sd_f8348c9bd7ceaa13f14b",
+    "KB2026BBBD51B7D3B9",
+    "KB202699B65A32D9A7"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Selective Laser Melting of Ti-6Al-4V: The Impact of Post-processing on the Tensile, Fatigue and Biological Properties for Medical Implant Applications",
+      "publisher": "Materials",
+      "year": 2020,
+      "url": "https://doi.org/10.3390/ma13122813",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Fatigue life of 3D-printed porous titanium dental implants predicted by validated finite element simulations",
+      "publisher": "Frontiers in Bioengineering and Biotechnology",
+      "year": 2023,
+      "url": "https://doi.org/10.3389/fbioe.2023.1240125",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Design Criteria for Patient-specific Mandibular Continuity Defect Reconstructed Implant with Lightweight Structure using Weighted Topology Optimization and Validated with Biomechanical Fatigue Testing",
+      "publisher": "International Journal of Bioprinting",
+      "year": 2022,
+      "url": "https://doi.org/10.18063/ijb.v8i1.437",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Evaluating the effect of simulated osseointegration on the fatigue behavior of 3D-printed orthopedic implants",
+      "publisher": "Journal of the Mechanical Behavior of Biomedical Materials",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/j.jmbbm.2026.107615",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 6",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7345457.1/materials-13-02813-g006.jpg?md5=a27de92005be2e81242a7ffa126b882d",
+      "asset_path": "assets/academic_figures/P1-010/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7345457/#materials-13-02813-f006",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 9",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7345457.1/materials-13-02813-g009.jpg?md5=bb45aca5f2fca3936111541a6dcaace8",
+      "asset_path": "assets/academic_figures/P1-010/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7345457/#materials-13-02813-f009",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R01",
+      "original_label": "Figure 10",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7345457.1/materials-13-02813-g010.jpg?md5=b64b441c749ccec3ec7dd04588767a83",
+      "asset_path": "assets/academic_figures/P1-010/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7345457/#materials-13-02813-f010",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Figure 8",
+      "image_url": "https://www.frontiersin.org/files/Articles/1240125/xml-images/fbioe-11-1240125-g008.webp",
+      "asset_path": "assets/academic_figures/P1-010/F04.webp",
+      "source_url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2023.1240125/full#F8",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Figure 3",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8852200.1/IJB-8-1-437-g043.jpg?md5=c6a5b09a70aed34024090eb97e475bc4",
+      "asset_path": "assets/academic_figures/P1-010/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8852200/#F3",
+      "license": "CC BY-NC 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "打印植入物的疲劳与断裂性能受哪些因素影响？",
+      "direction": "长期可靠性",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "失效来自材料、结构与固定系统的不同层级",
+          "markdown": "打印植入物的疲劳性能不能由一次拉伸强度或一个孔隙率代表。Jamshidi 等的致密试样揭示热等静压与表面处理如何改变断口；Vautrin 等的多孔牙科试样显示，同一合金的结构疲劳承载力随孔型和制造偏差改变；Lin 等的下颌试验则把骨模型、螺钉和植入物共同纳入失效系统。[后处理研究](ref:R01) [多孔疲劳研究](ref:R02) [下颌结构研究](ref:R03)\n\n| 测量 | 直接回答的问题 | 不能直接替代的指标 |\n|---|---|---|\n| 单调拉伸、断后伸长 | 一次加载下的强度与变形能力 | 循环载荷下的起裂寿命 |\n| 应力—寿命曲线 | 指定应力比、频率和终止周次下的失效分布 | 任意载荷谱中的临床使用年限 |\n| 断口显微观察 | 孔洞、缺口与断裂形貌的关联 | 未测量的裂纹扩展速率或断裂韧度 |\n| 修复组件疲劳试验 | 整个固定构型的薄弱部位 | 单独材料的疲劳极限 |\n\n这里“达到试验终点仍未失效”表示 run-out：观察在预设周次停止。它与实际发生断裂的寿命数据不同，不能写成已经观察到无限寿命。[疲劳试验的终点定义](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "打印方向与热等静压：强度和延性并不一起变化",
+          "markdown": "Jamshidi 等用激光粉末床熔融制备 Ti-6Al-4V，比较竖直与水平构建试样，并采用热等静压（HIP）、抛光（PL）、喷砂（SB）及化学蚀刻（CE）。HIP 条件为 930 °C、100 MPa、4 h。显微观察显示内部孔洞减少，针状 α′ 马氏体转为较粗的 α 片层及少量 β 相；这些变化与延性提高共同出现。该研究并未通过单独改变孔洞或相组成来拆分两者各自贡献。[制造与显微组织实验](ref:R01)\n\n原文表格给出以下拉伸结果；这里保留其均值与离散度，不从柱图高度反推数字。\n\n| 状态 | 抗拉强度（MPa） | 断后伸长（%） |\n|---|---|---|\n| 打印态，竖直 | 1006.7 ± 6.3 | 8.7 ± 0.8 |\n| 打印态，水平 | 961.3 ± 50.2 | 4.7 ± 0.5 |\n| HIP＋PL，竖直 | 936 ± 3.6 | 21.7 ± 2.3 |\n| HIP＋PL，水平 | 937.9 ± 43.3 | 14.1 ± 1.5 |\n\n处理后抗拉强度降低而伸长增加，说明“更强”与“更不易在小变形下断裂”不是同一结果。拉伸断口由含较多孔洞和未熔合缺陷的形貌，转为更均匀的韧窝形貌。竖直试样在这些条件下的延性优势，不能直接外推为所有植入物方向上的疲劳优势：论文的疲劳曲线按后处理分组，没有把两个构建方向分别给出完整曲线。断口观察也不是断裂韧度试验。[拉伸表格与断口结果](ref:R01)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "表面起裂为何不能只靠 HIP 消除",
+          "markdown": "HIP 后内部孔洞减少，并不意味着表面已适合循环承载。原始表面和仅 HIP 表面仍有部分熔融颗粒；抛光能去除这些颗粒，却可能留下与次表面缺陷相连的凹坑。化学蚀刻在 HIP 后去除颗粒和表面不规则层，测得面积粗糙度 Sa 从打印态的 12.2 ± 0.5 μm 降至 6.6 ± 0.3 μm。该变化应与断口和疲劳曲线一起阅读，不能把单一粗糙度数值当作全部缺口几何。[表面表征](ref:R01)\n\n四点弯曲试验使用 10 × 10 × 80 mm 试样，室温、约 70 Hz，最小／最大应力比 R = 0.1，终止条件为 10000000 次循环，每组约 5 个试样。纵轴是最大应力，不是应力幅；相同数值若被当作幅值，会改变整个循环的载荷范围。HIP、HIP＋PL 和 HIP＋CE 的表现均优于打印态，表面处理在 HIP 基础上进一步延长寿命。需要注意，正文称最高未失效强度为 450 MPa，而原始曲线最高的未失效红点约在 400 MPa；这两个数值不能当作相互印证。本报告据图确认处理顺序及有限周次下的表现，不把 450 MPa 作为已一致核实的设计许用值。[疲劳方法与原始曲线](ref:R01)\n\n疲劳断口提供了机制上的补充：打印态可见较多打开的孔洞，作者将起裂与表面残留颗粒、未熔合缺陷联系；HIP 后大部分断面不再显示同样的孔洞，但表面连通缺陷仍可能存在。抛光和蚀刻组断面更均匀，与缺口减少的解释一致。所展示的断口并没有逐一给出裂纹扩展速率、裂纹长度随周次的记录或完整起裂定位，因此支持的是“减少缺陷与寿命改善相伴”，而非已经定量拆分起裂和扩展各占多少寿命。该试验也没有腐蚀介质或真实变幅咀嚼载荷。[疲劳断口分析](ref:R01)",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "多孔结构：归一化规律有用，但依赖真实打印几何",
+          "markdown": "Vautrin 等将 Schwarz Primitive（SP）和 Schwarz W（SW）两种孔型与 50%、60%、70% 设计孔隙率组合，制备 168 个简化牙科试样，其中 144 个用于疲劳。加载相对轴线倾斜 30°，频率 15 Hz，载荷在峰值的 10% 与 100% 之间循环；每种结构的每个载荷等级有 4 个试样，5000000 次为未失效终点。相较致密梁的弯曲，这里同时包含多孔段的弯曲和压缩，不能把两篇论文的应力或载荷直接并排排名。[多孔试样与加载设计](ref:R02)\n\n以各结构的单调极限载荷 Fult 归一化后，疲劳数据的分散明显缩小。在 10% Fult 下，每组全部试样到达终点；15% Fult 下至少有一个失败。校准组的幂律拟合在终点估计为 12.86% Fult，95% 置信区间为 10.06%–16.43%。实验的存活区间与模型估计应分别保留：区间不能压缩成一个对所有多孔钛都成立的固定比例，模型置信区间也不是临床个体失效概率。[实际疲劳结果](ref:R02)\n\n孔型还改变可打印性。微 CT 显示实际孔隙率低于 CAD 设计值，且两种孔型偏差不同。以实测孔隙率修正 CAD 后，验证组单调极限载荷的最大预测误差为 8%，原始 CAD 为 23%，微 CT 几何为 15.3%。这里预测的是经校准的单调载荷，再由经验关系映射到疲劳终点；不是逐周次模拟裂纹扩展。模型用 0.07 mm 塑性位移偏移量定义破坏，因此若改变整体尺寸、多孔区位置或固定长度，不能假设原参数仍有效。即使总体孔隙率一致，理想化修正 CAD 仍不能重现局部杆厚变化及颗粒附着所引起的应力集中。[几何与模型验证](ref:R02)",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "下颌组件：固定位置和骨模型改变首先失效的部位",
+          "markdown": "Lin 等将五类下颌连续性缺损以定制打印钛合金重建体或传统骨板修复；剩余下颌由 ABS 打印，故这是力学替代模型，而不是活骨。各缺损、各修复组均为 n = 3，髁突固定于树脂块，载荷施加于缺损对侧第二磨牙，范围 20–200 N、频率 3 Hz，断裂或完成 250000 次循环即停止。该构型使残余骨、螺钉、固定翼与重建体共同传递弯矩。[组件疲劳方法](ref:R03)\n\n定制重建组均到达终点。传统骨板组的失败并不全是骨板本身断裂：B＋C 和 A＋B 组主要表现为 ABS 髁突模型断裂；B＋C＋B 组则有骨板在 29585、26032、38680 次断裂。C 组有一件达到终点，另外两件分别发生髁突断裂和螺钉头损伤，因此不能写成传统骨板全部失败。终点位移也不等于永久塑性变形，论文没有提供统一卸载残余位移测量。[逐件结果表](ref:R03)\n\n这个对照显示，较完整的重建结构能够改变整体变形及载荷传递路径，而不是单纯证明打印钛的材料疲劳强度高于骨板材料。作者把 250000 次近似对应术后 6 个月咀嚼，这是试验设计中的换算假设，不是患者随访结果。模型没有骨重塑、骨整合和患者实际载荷谱；髁突模型先断时，也不能由其终止周次推得植入物自身的断裂寿命。[系统变形与解释范围](ref:R03)",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "表面多孔层得到支撑后，疲劳与断裂应变仍可能反向变化",
+          "markdown": "Alting 与 Gall 的研究进一步改变多孔区域的外部支撑条件：在激光粉末床熔融金属试样的标距表面设置 gyroid 晶格层，并以 PMMA 骨水泥填覆来模拟骨长入。作者机构公开摘要报告，在表面多孔组中，填覆使名义极限断裂强度提高 4%–10%、疲劳强度提高 25%–38%，但断裂应变下降 22%–40%。这说明由周围介质参与分担载荷时，强度提高与变形能力下降可以同时发生。[模拟骨整合实验](ref:R04)\n\n这里被直接比较的是骨水泥填覆与未填覆试样在单调拉伸和拉—拉疲劳中的表现。PMMA 的支撑可缓解实心区与晶格交界处的应力集中，但并未重现活骨逐步生成、不完整结合和持续重塑。公开摘要没有给出足以统一比较的应力比、完整曲线和终止周次，所以这些相对变化不与前述梁试样或牙科试样合并成一个疲劳限值。它具体补充的是支撑状态这一变量：同一表面多孔结构在空孔和填覆条件下，具有不同的载荷分担与断裂变形行为。[填覆模型的实际证据](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Jamshidi 等：后处理和构建方向对拉伸强度与延性的不同影响。",
+          "interpretation": "a 的左轴为强度、右轴为伸长率，黑柱为屈服强度、灰柱为抗拉强度、斜线柱为伸长率；V 与 H 分别表示竖直和水平构建。b 的应力—应变曲线显示，HIP 后处理的试样可在较低峰值应力下达到更大断裂应变。PL 与 SB 的横向比较属于拉伸，不应被读成疲劳寿命排名。柱图不能给出裂纹扩展阻力，正文数字依据作者表格而非读图估计。[原始拉伸实验](ref:R01)"
+        },
+        "F02": {
+          "caption": "Jamshidi 等：四点弯曲下的应力—寿命曲线。",
+          "interpretation": "横轴为对数周次数，纵轴明确写最大应力；向右箭头表示到预设终点仍未失效。黑、绿、蓝、红分别对应打印态、HIP、HIP 后抛光及 HIP 后蚀刻，尽管图例对后两组省略 HIP，方法明确其处理顺序。原图最高未失效红点约为 400 MPa，与正文的 450 MPa 不一致。约 70 Hz、R = 0.1 和 10000000 次终点共同限定这些结果；图中没有给出同一状态的大样本生存概率或临床寿命。[原始疲劳试验](ref:R01)"
+        },
+        "F03": {
+          "caption": "Jamshidi 等：打印态与后处理状态的疲劳断口。",
+          "interpretation": "a 为打印态，b 为仅 HIP，c 为 HIP＋PL，d 为 HIP＋CE，各图保留 100 μm 比例尺。a 中孔洞明显多于后处理断面；c、d 的组织更均匀，支持内部缺陷减少与表面整修共同作用的解释。这些局部视野没有标注每件试样的加载应力和断裂周次，也没有覆盖完整裂纹路径，不能据此计算断裂韧度或精确判定各阶段寿命份额。[原始断口观察](ref:R01)"
+        },
+        "F04": {
+          "caption": "Vautrin 等：绝对载荷与归一化载荷给出不同的分散程度。",
+          "interpretation": "A 将六种结构的峰值疲劳载荷按 N 绘出，圆点表示存活到 5000000 次、叉号表示此前失效。B 与 C 改用相对单调极限载荷的百分比，分别显示校准与独立孔隙率验证组；虚线是幂律拟合的 95% 置信区间。归一化缩小了设计间差异，但没有取消单个试样的离散，也没有证明所有孔型共享普适材料常数。终点圆点仍是截尾观测，不是该试样真正的断裂周次。[原始疲劳数据](ref:R02)"
+        },
+        "F05": {
+          "caption": "Lin 等：B＋C 缺损重建的整体疲劳装置。",
+          "interpretation": "左列为打印重建体，右列为传统骨板；上下分别提供正面和斜视方向。白色下颌部分是打印 ABS 模型，固定方式和对侧牙位加载共同决定弯矩路径。图中比较的是整套修复系统，并非相同几何材料试条；骨板组骨模型先断或螺钉损伤时，记录的是系统终止。该图没有寿命坐标，具体未失效与破坏周次需结合原文逐件结果表读取。[原始装置与结果](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "Which factors influence the fatigue and fracture behaviour of printed implants?",
+      "direction": "Long-term reliability",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Failure arises at material, structural and fixation-system levels",
+          "markdown": "The fatigue performance of a printed implant cannot be represented by a single tensile-strength value or porosity. The dense specimens of Jamshidi et al. show how hot isostatic pressing and surface treatment change fracture surfaces. The porous dental specimens of Vautrin et al. show how topology and manufacturing deviations alter structural fatigue capacity within the same alloy. The mandibular experiments of Lin et al. incorporate the bone model, screws and implant into the failure system. [Post-processing study](ref:R01) [Porous fatigue study](ref:R02) [Mandibular structure study](ref:R03)\n\n| Measurement | Question directly answered | Metric it does not directly replace |\n|---|---|---|\n| Monotonic tension and elongation at fracture | Strength and deformation capacity under a single loading event | Crack-initiation life under cyclic loading |\n| Stress–life curve | Failure distribution at a specified stress ratio, frequency and stopping cycle count | Clinical service years under arbitrary load histories |\n| Fractography | Association of pores and notches with fracture morphology | Unmeasured crack-growth rate or fracture toughness |\n| Reconstructed-assembly fatigue testing | Weak locations in the complete fixation configuration | Fatigue limit of the material alone |\n\nReaching the test endpoint without failure is a run-out: observation stops at a predefined cycle count. It differs from a measured life ending in fracture and does not constitute observation of infinite life. [Definition of the fatigue endpoint](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Build orientation and HIP: strength and ductility do not move together",
+          "markdown": "Jamshidi et al. manufactured Ti-6Al-4V by laser powder bed fusion, comparing vertical and horizontal specimens with hot isostatic pressing (HIP), polishing (PL), sandblasting (SB) and chemical etching (CE). HIP was performed at 930 °C and 100 MPa for 4 h. Microscopy showed fewer internal pores and transformation of needle-like α′ martensite into coarser α lamellae with a small β fraction. These changes accompanied improved ductility. The experiment did not independently vary porosity and phase composition to separate their contributions. [Manufacturing and microstructure experiments](ref:R01)\n\nThe article's table reports the following tensile values. Means and dispersion are retained here rather than reconstructed from bar heights.\n\n| Condition | Ultimate tensile strength (MPa) | Elongation at fracture (%) |\n|---|---|---|\n| As fabricated, vertical | 1006.7 ± 6.3 | 8.7 ± 0.8 |\n| As fabricated, horizontal | 961.3 ± 50.2 | 4.7 ± 0.5 |\n| HIP + PL, vertical | 936 ± 3.6 | 21.7 ± 2.3 |\n| HIP + PL, horizontal | 937.9 ± 43.3 | 14.1 ± 1.5 |\n\nTreatment lowered ultimate tensile strength while increasing elongation, showing that greater strength and avoiding fracture at small deformation are different outcomes. Tensile fracture surfaces changed from morphology containing more pores and lack-of-fusion defects to more uniform dimples. The ductility advantage of vertical specimens under these conditions does not directly establish superior fatigue performance in every implant orientation: fatigue curves were grouped by post-processing, without complete separate curves for both build directions. Fractography is also not a fracture-toughness test. [Tensile table and fracture findings](ref:R01)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Why HIP alone cannot remove surface-controlled crack initiation",
+          "markdown": "Fewer internal pores after HIP do not mean that the surface is ready for cyclic loading. Partially melted particles remained on as-fabricated and HIP-only surfaces. Polishing removed particles but could leave cavities connected to subsurface defects. Chemical etching after HIP removed particles and an irregular surface layer; measured areal roughness Sa decreased from 12.2 ± 0.5 μm as fabricated to 6.6 ± 0.3 μm. This change must be read alongside fractography and fatigue curves, since a single roughness value does not describe every notch geometry. [Surface characterization](ref:R01)\n\nFour-point bending used 10 × 10 × 80 mm specimens at room temperature and approximately 70 Hz, with minimum/maximum stress ratio R = 0.1 and a stopping criterion of 10000000 cycles; approximately 5 specimens were tested per group. The ordinate is maximum stress, not stress amplitude. Treating the same value as amplitude changes the full cyclic load range. HIP, HIP + PL and HIP + CE all outperformed the as-fabricated condition, and surface treatment further extended life beyond HIP alone. An important inconsistency remains: the text states a highest run-out strength of 450 MPa, whereas the highest run-out red point in the original curve lies around 400 MPa. These values do not corroborate each other. The report uses the graph to establish the treatment ordering and performance at finite cycles, without adopting 450 MPa as a consistently verified design allowable. [Fatigue methods and original curve](ref:R01)\n\nFatigue fracture surfaces add mechanistic evidence. More opened pores are visible in the as-fabricated specimen, and the authors associate initiation with residual surface particles and lack-of-fusion defects. Most of the HIP fracture surface no longer shows the same pores, but surface-connected defects can remain. Polished and etched surfaces appear more uniform, consistent with fewer notches. The presented fractographs do not supply crack-growth rates, crack-length histories or complete localization of initiation sites. They support an association between fewer defects and improved life rather than a quantitative partition of life into initiation and propagation. Corrosive media and realistic variable-amplitude mastication were also absent from this experiment. [Fatigue fractography](ref:R01)",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Porous structures: useful normalization depends on the printed geometry",
+          "markdown": "Vautrin et al. combined Schwarz Primitive (SP) and Schwarz W (SW) pore types with designed porosities of 50%, 60% and 70%, producing 168 simplified dental specimens, including 144 fatigue specimens. Loading was inclined 30° to the axis at 15 Hz and cycled between 10% and 100% of its peak. Each load level for each design contained 4 specimens, with run-out at 5000000 cycles. Unlike bending of dense beams, this configuration combines bending and compression of a porous segment. Stress or load values from the two papers cannot therefore be ranked directly against each other. [Porous specimens and loading design](ref:R02)\n\nNormalizing by each design's monotonic ultimate load Fult markedly reduced fatigue-data scatter. All specimens in each group reached run-out at 10% Fult, whereas at least one failed at 15% Fult. The calibration-set power law estimated 12.86% Fult at run-out, with a 95% confidence interval of 10.06%–16.43%. The observed survival bracket and model estimate should remain separate. The bracket cannot be reduced to a universal fixed fraction for porous titanium, and the model confidence interval is not an individual clinical failure probability. [Measured fatigue findings](ref:R02)\n\nTopology also changes printability. Micro-CT showed lower actual porosity than designed in CAD, with different deviations for the two pore types. After CAD adjustment to measured porosity, the maximum prediction error for monotonic ultimate load in validation designs was 8%, versus 23% for original CAD and 15.3% for micro-CT geometry. The workflow predicts a calibrated monotonic load and maps it empirically to a fatigue endpoint; it does not simulate crack propagation cycle by cycle. Failure was defined using a plastic-displacement offset of 0.07 mm, so the same parameters cannot be assumed valid after changing overall size, porous-region position or fixation length. Even at equal overall porosity, idealized adjusted CAD does not reproduce local strut-thickness variations and attached particles that concentrate stresses. [Geometry and model validation](ref:R02)",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Mandibular assemblies: fixation and bone models change the first failure location",
+          "markdown": "Lin et al. reconstructed five mandibular continuity-defect types with custom printed titanium-alloy implants or conventional plates. The remaining mandible was printed in ABS, making this a mechanical surrogate rather than living bone. Each defect and reconstruction group had n = 3. Condyles were fixed in resin blocks, and a 20–200 N load was applied to the second molar opposite the defect at 3 Hz. Testing stopped at fracture or 250000 cycles. This configuration transmits bending moments through the remaining bone, screws, fixation wings and reconstruction. [Assembly fatigue methods](ref:R03)\n\nAll custom reconstructions reached run-out. Conventional-group failures were not all fractures of the plate itself: B + C and A + B primarily failed through fracture of the ABS condylar model. In B + C + B, plates fractured at 29585, 26032 and 38680 cycles. One C specimen reached run-out, while the other two sustained condylar fracture and screw-head damage, respectively. Thus, it is inaccurate to state that every conventional plate failed. Endpoint displacement is also not permanent plastic deformation; the paper did not provide a uniform measurement of residual displacement after unloading. [Specimen-level results table](ref:R03)\n\nThe comparison shows that a more complete reconstruction can alter overall deformation and load-transfer paths. It does not simply demonstrate higher material fatigue strength for printed titanium than for plate material. The authors equated 250000 cycles approximately to 6 postoperative months of mastication as a test-design assumption, not a patient follow-up finding. The model lacked bone remodelling, osseointegration and actual patient load histories. When the condylar model fractures first, the stopping cycle count also cannot be interpreted as the implant's own fracture life. [System deformation and interpretation](ref:R03)",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Support within a porous surface can improve fatigue strength while reducing fracture strain",
+          "markdown": "Alting and Gall changed the support conditions around the porous region. Laser-powder-bed-fused metal specimens carried a gyroid lattice layer on the gauge-section surface, which was covered and infiltrated with PMMA bone cement to simulate bone ingrowth. The authors' institutional abstract reports that coating the surface-porous groups increased nominal ultimate failure strength by 4%–10% and fatigue strength by 25%–38%, while decreasing failure strain by 22%–40%. Thus, load sharing by a surrounding medium can increase strength while reducing deformation capacity. [Simulated osseointegration experiment](ref:R04)\n\nThe direct comparison concerns cement-coated and uncoated specimens under monotonic tension and tension–tension fatigue. PMMA support can mitigate stress concentrations at the solid–lattice transition, but does not reproduce gradual formation of living bone, incomplete bonding or continuing remodelling. The public abstract does not provide the stress ratio, complete curves and stopping cycle count needed for harmonized comparison. These relative changes are therefore not pooled with the beam or dental data into a single fatigue limit. The specific additional variable is support state: the same porous surface has different load-sharing and fracture-deformation behaviour when pores are empty or cement-filled. [Actual evidence from the coating model](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Jamshidi et al.: distinct effects of post-processing and build orientation on tensile strength and ductility.",
+          "interpretation": "In a, strength uses the left axis and elongation the right. Black, grey and hatched bars denote yield strength, ultimate tensile strength and elongation; V and H identify vertical and horizontal builds. Stress–strain curves in b show that HIP-treated specimens can reach greater fracture strain at lower peak stress. Comparisons of PL and SB concern tension and should not be read as fatigue-life rankings. The bars do not measure crack-growth resistance; numerical values in the text come from the authors’ table rather than graph estimates. [Original tensile experiments](ref:R01)"
+        },
+        "F02": {
+          "caption": "Jamshidi et al.: stress–life curves under four-point bending.",
+          "interpretation": "The abscissa is logarithmic cycle count and the ordinate explicitly states maximum stress. Rightward arrows indicate survival to the predefined endpoint. Black, green, blue and red denote as-fabricated, HIP, polishing after HIP and etching after HIP, respectively. Although the legend omits HIP for the latter groups, the methods specify that sequence. The highest run-out red point lies around 400 MPa, inconsistent with 450 MPa in the text. Approximately 70 Hz, R = 0.1 and the 10000000-cycle endpoint jointly define these results. The plot does not provide large-sample survival probabilities for each condition or clinical life. [Original fatigue experiment](ref:R01)"
+        },
+        "F03": {
+          "caption": "Jamshidi et al.: fatigue fracture surfaces before and after post-processing.",
+          "interpretation": "Panels a–d show as-fabricated, HIP-only, HIP + PL and HIP + CE conditions, each retaining a 100 μm scale bar. Pores are more prominent in a than after treatment; c and d appear more uniform, supporting a combined role of reduced internal defects and surface finishing. These local fields do not label each specimen’s loading stress and failure cycle count, or cover its complete crack path. They cannot therefore provide fracture toughness or a precise allocation of life to different stages. [Original fracture-surface observations](ref:R01)"
+        },
+        "F04": {
+          "caption": "Vautrin et al.: scatter differs between absolute and normalized loading.",
+          "interpretation": "Panel A plots peak fatigue load in N for six designs. Circles denote survival to 5000000 cycles and crosses earlier failure. Panels B and C normalize loads to monotonic ultimate load and show calibration and independent-porosity validation sets, respectively. Dashed lines are the power-law fit’s 95% confidence interval. Normalization reduces differences between designs without removing specimen-level scatter or establishing a universal material constant for all pore types. Endpoint circles remain censored observations, not the specimens’ actual fracture cycle counts. [Original fatigue data](ref:R02)"
+        },
+        "F05": {
+          "caption": "Lin et al.: whole-assembly fatigue setup for a B + C reconstruction.",
+          "interpretation": "The left column shows the printed reconstruction and the right the conventional plate, with frontal and oblique views above and below. The white mandibular portions are printed ABS models. Fixation and loading at the opposite tooth position jointly define the bending-moment path. This compares complete reconstructions rather than material coupons of identical geometry. If the bone model fractures first or a screw is damaged, the recorded endpoint belongs to the system. There is no life axis in this image; run-outs and failure cycle counts must be read from the original specimen-level results table. [Original apparatus and results](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Welche Faktoren beeinflussen das Ermüdungs- und Bruchverhalten gedruckter Implantate?",
+      "direction": "Langzeitzuverlässigkeit",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Versagen auf Werkstoff-, Struktur- und Fixationssystemebene",
+          "markdown": "Das Ermüdungsverhalten eines gedruckten Implantats lässt sich weder durch einen einzelnen Zugfestigkeitswert noch durch die Porosität allein beschreiben. Die dichten Proben von Jamshidi et al. zeigen, wie heißisostatisches Pressen und Oberflächenbehandlung Bruchflächen verändern. Die porösen Dentalproben von Vautrin et al. zeigen, wie Topologie und Fertigungsabweichungen die strukturelle Ermüdungsbelastbarkeit derselben Legierung verändern. Die Unterkieferversuche von Lin et al. beziehen Knochenmodell, Schrauben und Implantat in das Versagenssystem ein. [Nachbearbeitungsstudie](ref:R01) [Studie zur Ermüdung poröser Strukturen](ref:R02) [Unterkieferstudie](ref:R03)\n\n| Messung | Unmittelbar beantwortete Frage | Nicht unmittelbar ersetzte Kenngröße |\n|---|---|---|\n| Monotoner Zug und Bruchdehnung | Festigkeit und Verformungsvermögen bei einmaliger Belastung | Anrisslebensdauer unter zyklischer Belastung |\n| Wöhlerkurve | Versagensverteilung bei festgelegtem Spannungsverhältnis, Frequenz und Abbruchschwingspielzahl | Klinische Nutzungsjahre bei beliebigen Lastkollektiven |\n| Fraktografie | Zusammenhang von Poren und Kerben mit der Bruchmorphologie | Nicht gemessene Risswachstumsrate oder Bruchzähigkeit |\n| Ermüdungsversuch am Rekonstruktionssystem | Schwachstellen der gesamten Fixationskonfiguration | Ermüdungsgrenze des Werkstoffs allein |\n\nEin Erreichen des Versuchsendes ohne Versagen wird als Durchläufer beziehungsweise run-out bezeichnet: Die Beobachtung endet bei einer vorgegebenen Schwingspielzahl. Dies unterscheidet sich von einer bis zum Bruch gemessenen Lebensdauer und belegt keine beobachtete unendliche Lebensdauer. [Definition des Ermüdungsendpunkts](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Baurichtung und HIP: Festigkeit und Duktilität verändern sich unterschiedlich",
+          "markdown": "Jamshidi et al. fertigten Ti-6Al-4V mittels Laser-Pulverbettfusion und verglichen vertikal und horizontal aufgebaute Proben mit heißisostatischem Pressen (HIP), Polieren (PL), Strahlen (SB) und chemischem Ätzen (CE). HIP erfolgte bei 930 °C und 100 MPa über 4 h. Mikroskopisch zeigten sich weniger innere Poren sowie eine Umwandlung nadelförmigen α′-Martensits in gröbere α-Lamellen mit einem geringen β-Anteil. Diese Veränderungen gingen mit höherer Duktilität einher. Porosität und Phasenzusammensetzung wurden nicht unabhängig variiert, um ihre Beiträge getrennt zu bestimmen. [Herstellung und Gefügeuntersuchung](ref:R01)\n\nDie Tabelle der Publikation enthält die folgenden Zugversuchswerte. Mittelwerte und Streuungen werden hier übernommen, ohne Zahlen aus Balkenhöhen zu rekonstruieren.\n\n| Zustand | Zugfestigkeit (MPa) | Bruchdehnung (%) |\n|---|---|---|\n| Bauzustand, vertikal | 1006.7 ± 6.3 | 8.7 ± 0.8 |\n| Bauzustand, horizontal | 961.3 ± 50.2 | 4.7 ± 0.5 |\n| HIP + PL, vertikal | 936 ± 3.6 | 21.7 ± 2.3 |\n| HIP + PL, horizontal | 937.9 ± 43.3 | 14.1 ± 1.5 |\n\nNach der Behandlung sank die Zugfestigkeit, während die Dehnung zunahm. Höhere Festigkeit und ein geringeres Bruchrisiko bei kleiner Verformung sind somit unterschiedliche Ergebnisse. Die Zugbruchflächen veränderten sich von einer Morphologie mit mehr Poren und Bindefehlern zu gleichmäßigeren Waben. Der Duktilitätsvorteil vertikaler Proben unter diesen Bedingungen belegt nicht unmittelbar bessere Ermüdungseigenschaften in jeder Implantatorientierung: Die Ermüdungskurven wurden nach Nachbearbeitung gruppiert, ohne vollständige separate Kurven für beide Baurichtungen. Fraktografie ist außerdem keine Prüfung der Bruchzähigkeit. [Zugversuchstabelle und Bruchbefunde](ref:R01)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Warum HIP allein oberflächenbedingte Anrisse nicht beseitigt",
+          "markdown": "Weniger innere Poren nach HIP bedeuten nicht, dass die Oberfläche bereits für zyklische Belastungen geeignet ist. Teilaufgeschmolzene Partikel blieben im Bauzustand und nach alleiniger HIP-Behandlung erhalten. Polieren entfernte Partikel, konnte jedoch mit unter der Oberfläche liegenden Defekten verbundene Vertiefungen zurücklassen. Chemisches Ätzen nach HIP entfernte Partikel und eine unregelmäßige Oberflächenschicht. Die gemessene flächenhafte Rauheit Sa sank von 12.2 ± 0.5 μm im Bauzustand auf 6.6 ± 0.3 μm. Diese Veränderung ist gemeinsam mit Fraktografie und Wöhlerkurven zu lesen, da ein einzelner Rauheitswert nicht sämtliche Kerbgeometrien beschreibt. [Oberflächencharakterisierung](ref:R01)\n\nDer Vierpunktbiegeversuch verwendete 10 × 10 × 80 mm große Proben bei Raumtemperatur und etwa 70 Hz, einem Verhältnis minimaler zu maximaler Spannung von R = 0.1 und einem Abbruchkriterium von 10000000 Schwingspielen. Je Gruppe wurden etwa 5 Proben geprüft. Die Ordinate zeigt die maximale Spannung, nicht die Spannungsamplitude. Wird derselbe Wert als Amplitude verwendet, verändert sich der gesamte zyklische Lastbereich. HIP, HIP + PL und HIP + CE waren dem Bauzustand überlegen; Oberflächenbehandlungen verlängerten die Lebensdauer zusätzlich gegenüber HIP allein. Eine wesentliche Unstimmigkeit bleibt: Der Text nennt 450 MPa als höchste Durchläuferspannung, während der höchste rote Durchläuferpunkt der Originalkurve bei etwa 400 MPa liegt. Diese Werte bestätigen sich nicht gegenseitig. Der Bericht verwendet die Grafik zur Einordnung der Behandlungen und des Verhaltens bei endlichen Schwingspielzahlen, übernimmt 450 MPa jedoch nicht als konsistent verifizierten zulässigen Auslegungswert. [Ermüdungsmethode und Originalkurve](ref:R01)\n\nDie Ermüdungsbruchflächen ergänzen den mechanistischen Befund. Im Bauzustand sind mehr geöffnete Poren sichtbar; die Autoren verbinden die Rissinitiierung mit verbleibenden Oberflächenpartikeln und Bindefehlern. Nach HIP zeigt der Großteil der Bruchfläche diese Poren nicht mehr, oberflächenverbundene Defekte können jedoch verbleiben. Polierte und geätzte Proben erscheinen gleichmäßiger, was mit weniger Kerben vereinbar ist. Die dargestellten Bruchflächen liefern weder Risswachstumsraten noch Risslängenverläufe oder eine vollständige Lokalisierung der Anrisse. Sie stützen den Zusammenhang zwischen weniger Defekten und längerer Lebensdauer, teilen die Lebensdauer aber nicht quantitativ in Initiierung und Ausbreitung auf. Korrosive Medien und realistische Kaubelastungen mit variabler Amplitude waren ebenfalls nicht Bestandteil dieses Versuchs. [Ermüdungsfraktografie](ref:R01)",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Poröse Strukturen: Eine nützliche Normierung hängt von der gedruckten Geometrie ab",
+          "markdown": "Vautrin et al. kombinierten die Porentypen Schwarz Primitive (SP) und Schwarz W (SW) mit entworfenen Porositäten von 50%, 60% und 70%. Sie fertigten 168 vereinfachte Dentalproben, davon 144 für Ermüdungsversuche. Die Belastung erfolgte um 30° zur Achse geneigt bei 15 Hz und wechselte zwischen 10% und 100% des Spitzenwerts. Je Struktur und Lastniveau wurden 4 Proben geprüft; die Durchläufergrenze lag bei 5000000 Schwingspielen. Anders als beim Biegen dichter Balken kombiniert diese Konfiguration Biegung und Druck im porösen Abschnitt. Spannungs- oder Lastwerte beider Publikationen lassen sich deshalb nicht unmittelbar in eine Rangfolge bringen. [Poröse Proben und Belastung](ref:R02)\n\nDie Normierung auf die monotone Höchstlast Fult der jeweiligen Struktur verringerte die Streuung der Ermüdungsdaten deutlich. Bei 10% Fult erreichten alle Proben jeder Gruppe das Versuchsende; bei 15% Fult versagte mindestens eine. Das an den Kalibrierdaten angepasste Potenzgesetz schätzte am Endpunkt 12.86% Fult mit einem 95%-Konfidenzintervall von 10.06%–16.43%. Beobachteter Überlebensbereich und Modellschätzung sind getrennt zu halten. Der Bereich ist kein universeller konstanter Faktor für poröses Titan; das Modellkonfidenzintervall ist zudem keine individuelle klinische Versagenswahrscheinlichkeit. [Gemessene Ermüdungsergebnisse](ref:R02)\n\nAuch die Druckbarkeit hängt vom Porentyp ab. Die Mikro-CT zeigte eine geringere tatsächliche Porosität als im CAD-Entwurf, mit unterschiedlichen Abweichungen beider Porentypen. Nach Anpassung des CAD an die gemessene Porosität betrug der maximale Vorhersagefehler der monotonen Höchstlast in den Validierungsgeometrien 8%, gegenüber 23% für ursprüngliches CAD und 15.3% für Mikro-CT-Geometrien. Der Ansatz sagt eine kalibrierte monotone Last voraus und ordnet ihr empirisch einen Ermüdungsendpunkt zu; er simuliert keine Rissausbreitung für jedes Schwingspiel. Versagen wurde über einen plastischen Verschiebungsversatz von 0.07 mm definiert. Nach Änderungen von Gesamtgröße, Position des porösen Bereichs oder Einspannlänge können dieselben Parameter daher nicht als weiterhin gültig vorausgesetzt werden. Auch bei gleicher Gesamtporosität bildet idealisiertes angepasstes CAD lokale Stegdickenschwankungen und anhaftende Partikel als Spannungskonzentratoren nicht ab. [Geometrie und Modellvalidierung](ref:R02)",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Unterkieferbaugruppen: Fixierung und Knochenmodell verändern den ersten Versagensort",
+          "markdown": "Lin et al. rekonstruierten fünf Typen mandibulärer Kontinuitätsdefekte mit individuell gedruckten Titanlegierungsimplantaten oder herkömmlichen Platten. Der verbleibende Unterkiefer wurde aus ABS gedruckt; es handelt sich somit um ein mechanisches Ersatzmodell und nicht um lebenden Knochen. Für jeden Defekt und jede Rekonstruktionsgruppe galt n = 3. Die Kondylen wurden in Harzblöcken fixiert; am zweiten Molaren gegenüber dem Defekt wirkte eine Last von 20–200 N bei 3 Hz. Der Versuch endete beim Bruch oder nach 250000 Schwingspielen. Diese Anordnung überträgt Biegemomente über Restknochen, Schrauben, Fixationsflügel und Rekonstruktion. [Ermüdungsmethode der Baugruppe](ref:R03)\n\nAlle individuellen Rekonstruktionen erreichten das Versuchsende. In der konventionellen Gruppe waren jedoch nicht alle Ausfälle Plattenbrüche: Bei B + C und A + B brach hauptsächlich das ABS-Kondylenmodell. Bei B + C + B brachen die Platten nach 29585, 26032 und 38680 Schwingspielen. Eine C-Probe erreichte das Versuchsende; die beiden anderen zeigten einen Kondylenbruch beziehungsweise eine Schädigung des Schraubenkopfes. Die Aussage, sämtliche herkömmlichen Platten seien versagt, wäre daher falsch. Auch entspricht die Endpunktverschiebung keiner bleibenden plastischen Verformung; eine einheitliche Messung der Restverschiebung nach Entlastung wurde nicht berichtet. [Ergebnistabelle einzelner Proben](ref:R03)\n\nDer Vergleich zeigt, dass eine vollständigere Rekonstruktion Gesamtverformung und Lastübertragungswege verändern kann. Er belegt nicht einfach eine höhere Werkstoffermüdungsfestigkeit des gedruckten Titans gegenüber dem Plattenwerkstoff. Die angenäherte Gleichsetzung von 250000 Schwingspielen mit 6 postoperativen Monaten Kaubelastung war eine Annahme der Versuchsplanung und kein klinischer Nachbeobachtungsbefund. Knochenumbau, Osseointegration und tatsächliche patientenspezifische Lastkollektive fehlten im Modell. Bricht das Kondylenmodell zuerst, kann die Abbruchschwingspielzahl auch nicht als Bruchlebensdauer des Implantats selbst interpretiert werden. [Systemverformung und Interpretation](ref:R03)",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Eine gestützte poröse Oberfläche kann höhere Ermüdungsfestigkeit bei geringerer Bruchdehnung zeigen",
+          "markdown": "Alting und Gall veränderten die Abstützung der porösen Region. Mittels Laser-Pulverbettfusion gefertigte Metallproben erhielten eine Gyroid-Gitterschicht auf der Oberfläche des Messbereichs. Diese wurde zur Simulation von Knocheneinwuchs mit PMMA-Knochenzement bedeckt und infiltriert. Laut dem institutionell veröffentlichten Abstract erhöhte die Beschichtung in den oberflächenporösen Gruppen die nominelle maximale Bruchspannung um 4%–10% und die Ermüdungsfestigkeit um 25%–38%, während die Bruchdehnung um 22%–40% sank. Lastteilung mit einem umgebenden Medium kann somit die Festigkeit erhöhen und zugleich das Verformungsvermögen verringern. [Versuch zur simulierten Osseointegration](ref:R04)\n\nDirekt verglichen wurden zementbeschichtete und unbeschichtete Proben unter monotonem Zug und Zug-Zug-Ermüdung. Die PMMA-Abstützung kann Spannungskonzentrationen am Übergang zwischen Vollmaterial und Gitter abmildern, bildet jedoch weder die schrittweise Entstehung lebenden Knochens noch unvollständige Bindung oder fortlaufenden Umbau ab. Der öffentliche Abstract enthält nicht das Spannungsverhältnis, vollständige Kurven und die Abbruchschwingspielzahl, die für einen vereinheitlichten Vergleich nötig wären. Die relativen Änderungen werden deshalb nicht mit den Balken- oder Dentaldaten zu einem gemeinsamen Ermüdungsgrenzwert zusammengeführt. Die konkret ergänzte Variable ist der Abstützungszustand: Dieselbe poröse Oberfläche zeigt bei leeren oder zementgefüllten Poren eine unterschiedliche Lastteilung und Bruchverformung. [Tatsächliche Evidenz des Beschichtungsmodells](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Jamshidi et al.: Unterschiedliche Einflüsse von Nachbearbeitung und Baurichtung auf Zugfestigkeit und Duktilität.",
+          "interpretation": "In a gilt die linke Achse für Festigkeit, die rechte für Dehnung. Schwarze, graue und schraffierte Balken stehen für Streckgrenze, Zugfestigkeit und Dehnung; V und H bezeichnen vertikale und horizontale Baurichtung. Die Spannungs-Dehnungs-Kurven in b zeigen, dass HIP-behandelte Proben bei niedrigerer Spitzenspannung eine höhere Bruchdehnung erreichen können. PL und SB werden hier im Zugversuch verglichen, nicht hinsichtlich einer Rangfolge der Ermüdungslebensdauer. Die Balken messen keinen Rissausbreitungswiderstand. Zahlen im Text stammen aus der Autorentabelle und nicht aus grafischen Schätzungen. [Originalzugversuche](ref:R01)"
+        },
+        "F02": {
+          "caption": "Jamshidi et al.: Wöhlerkurven unter Vierpunktbiegung.",
+          "interpretation": "Die Abszisse zeigt logarithmisch die Schwingspielzahl, die Ordinate ausdrücklich die maximale Spannung. Pfeile nach rechts kennzeichnen Durchläufer bis zum festgelegten Endpunkt. Schwarz, Grün, Blau und Rot stehen für Bauzustand, HIP, Polieren nach HIP und Ätzen nach HIP. Obwohl die Legende HIP bei den letzten Gruppen auslässt, beschreiben die Methoden diese Reihenfolge. Der höchste rote Durchläuferpunkt liegt bei etwa 400 MPa und widerspricht den 450 MPa im Text. Etwa 70 Hz, R = 0.1 und der Endpunkt von 10000000 Schwingspielen begrenzen gemeinsam die Aussage. Die Grafik liefert weder Überlebenswahrscheinlichkeiten großer Stichproben für jeden Zustand noch klinische Lebensdauern. [Originalermüdungsversuch](ref:R01)"
+        },
+        "F03": {
+          "caption": "Jamshidi et al.: Ermüdungsbruchflächen vor und nach der Nachbearbeitung.",
+          "interpretation": "a–d zeigen Bauzustand, alleinige HIP-Behandlung, HIP + PL und HIP + CE, jeweils mit erhaltenem Maßstab von 100 μm. Poren sind in a deutlicher als nach Behandlung; c und d wirken gleichmäßiger. Dies stützt ein Zusammenwirken reduzierter innerer Defekte und Oberflächenbearbeitung. Die lokalen Ausschnitte nennen weder Belastungsspannung noch Bruchschwingspielzahl jeder Probe und bilden keinen vollständigen Risspfad ab. Bruchzähigkeit oder genaue Lebensdaueranteile einzelner Stadien lassen sich daraus nicht bestimmen. [Originale Bruchflächenbeobachtungen](ref:R01)"
+        },
+        "F04": {
+          "caption": "Vautrin et al.: Unterschiedliche Streuung bei absoluten und normierten Lasten.",
+          "interpretation": "A zeigt die maximale Ermüdungslast in N für sechs Geometrien. Kreise kennzeichnen Durchläufer bis 5000000 Schwingspiele, Kreuze frühere Ausfälle. B und C normieren auf die monotone Höchstlast und zeigen Kalibrierung beziehungsweise Validierung an einer unabhängigen Porositätsstufe. Gestrichelte Linien markieren das 95%-Konfidenzintervall der Potenzanpassung. Die Normierung verringert Unterschiede zwischen Geometrien, beseitigt jedoch weder die Streuung einzelner Proben noch belegt sie eine universelle Werkstoffkonstante für alle Porentypen. Endpunktkreise bleiben zensierte Beobachtungen und sind keine tatsächlichen Bruchschwingspielzahlen der Proben. [Originalermüdungsdaten](ref:R02)"
+        },
+        "F05": {
+          "caption": "Lin et al.: Ermüdungsaufbau der gesamten B + C-Rekonstruktion.",
+          "interpretation": "Links ist die gedruckte Rekonstruktion, rechts die konventionelle Platte dargestellt; oben und unten stehen Frontal- und Schrägansichten. Die weißen Unterkieferteile sind gedruckte ABS-Modelle. Fixierung und Belastung an der gegenüberliegenden Zahnposition bestimmen gemeinsam den Verlauf des Biegemoments. Verglichen werden vollständige Rekonstruktionen, keine geometrisch identischen Werkstoffproben. Bricht zuerst das Knochenmodell oder wird eine Schraube beschädigt, betrifft der erfasste Endpunkt das System. Das Bild enthält keine Lebensdauerachse; Durchläufer und Bruchschwingspielzahlen sind der ursprünglichen Ergebnistabelle einzelner Proben zu entnehmen. [Originalaufbau und Ergebnisse](ref:R03)"
+        }
+      }
+    }
+  }
+}

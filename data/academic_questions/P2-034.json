@@ -1,0 +1,323 @@
+{
+  "schema_version": 2,
+  "question_id": "P2-034",
+  "p": "P2",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-04",
+  "related_paper_ids": [
+    "doc_0df385f99a4b203f7155",
+    "doc_3b6892f5f9e9cf0d77dd",
+    "doc_3e278d53241b93b87557",
+    "doc_3edd7a9ac296725b207d",
+    "doc_5edb8eab255e0c35b024",
+    "doc_71e8e5ec3f72f66fb0d5",
+    "doc_805c237cc94bb7ceaca1",
+    "doc_8501938f41c26f63422b",
+    "doc_8c3c6320feb670027613",
+    "doc_93933912f9ba2e1e7240",
+    "doc_a4fdf9caaeedfa644420",
+    "doc_b362ce0812f163c25c01",
+    "doc_c1f9c77afa89569057cd",
+    "doc_df9c82fca5c105686ce7",
+    "doc_e69cfd6d685ce707f7d3",
+    "doc_fa763f98ddf04353d065",
+    "doc_c0d042b3cb5a2a47328a",
+    "KB20265293C2824B8C",
+    "KB2026ECED1BECD147",
+    "KB20262234093CC51D",
+    "KB202698916C0BC61C",
+    "KB20265CB3D44E67F7"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Structural integrity of 3D-printed prosthetic sockets: Experimental study for paediatric applications",
+      "publisher": "Journal of Materials Research and Technology",
+      "year": 2023,
+      "url": "https://doi.org/10.1016/j.jmrt.2023.03.192",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Enhancing the Strength of 3D-Printed Polymer Exoprosthetic Socket by Localized Non-Planar Continuous Carbon Fiber Reinforcement",
+      "publisher": "Polymers",
+      "year": 2025,
+      "url": "https://doi.org/10.3390/polym17081097",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Additive manufacturing of patient-specific lattice prosthetic sockets via field-driven design and elastic–plastic homogenization",
+      "publisher": "Materials & Design",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/j.matdes.2026.116509",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Investigation of mechanical properties of PLA-SCF additively manufactured prosthetic sockets",
+      "publisher": "Journal of Engineering and Applied Science",
+      "year": 2026,
+      "url": "https://doi.org/10.1186/s44147-026-01070-y",
+      "kind": "paper"
+    },
+    {
+      "id": "R05",
+      "title": "Strength testing of definitive transtibial prosthetic sockets made using 3D-printing technology",
+      "publisher": "Journal of Prosthetics and Orthotics",
+      "year": 2020,
+      "url": "https://doi.org/10.1097/JPO.0000000000000294",
+      "kind": "paper"
+    },
+    {
+      "id": "R06",
+      "title": "Longevity and effectiveness of 3D-printed transtibial prosthetic sockets in rural Sierra Leone: A pilot study with 2.5-year follow-up",
+      "publisher": "Prosthetics and Orthotics International",
+      "year": 2026,
+      "url": "https://doi.org/10.1097/PXR.0000000000000465",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 5",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P2-034/F01.png",
+      "source_url": "https://ndownloader.figshare.com/files/42353268",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Fig. 9",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P2-034/F02.png",
+      "source_url": "https://ndownloader.figshare.com/files/42353268",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Fig. 11",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P2-034/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12030459/#polymers-17-01097-f011",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Fig. 13",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P2-034/F04.png",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12030459/#polymers-17-01097-f013",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "接受腔材料和晶格结构如何保证承载？",
+      "direction": "假肢接受腔",
+      "sections": [
+        {
+          "id": "pediatric_loading",
+          "title": "材料比较取决于载荷路径和远端连接结构",
+          "markdown": "Marinopoulos 等对儿童经股接受腔的研究，把材料强度放在完整结构及偏心加载中检验。作者按 14 岁男性、体重 73.4 kg 的情形，从 ISO 10328 的载荷等级拟合出研究用阈值 3891.6 N，并延长加载轴到膝平面上方 405 mm。这里的阈值是作者为儿童情形重新计算的试验条件；其几何尺寸则按文中所述的 15 岁残肢缩放，年龄设定并不完全相同。采用早期支撑的 Condition I，石膏残肢内置钢棒，将力传给腔壁；远端用内外夹持件和螺栓连接四棱锥接头，并保留残肢末端下方 15 mm 间隙。[方法与静态结果](ref:R01)\n\n打印层高 0.2 mm、填充率 100%。石膏试验先以 150 N/s 加载到 1020 N 进行就位，卸载后再加载至破坏。PLA 的 4 个试样平均最大载荷为 6382.6 N；碳纤维增强尼龙的 2 个试样分别在 7949.3 N 破坏、达到 10000 N 试验上限仍未破坏。后者不能按“破坏载荷为 10000 N”处理。各组均超过该研究阈值，但没有构成所有步态工况的完整验证。\n\n裂纹集中在远端后侧并主要沿层间扩展。接头周围的方形加强区没有成为主要断裂位置，说明局部结构改变可以转移薄弱位置；石膏末端和下方间隙又造成局部载荷集中。因此，材料名称相同也不能脱离腔体形状、接头固定和残肢替代物直接比较极限承载。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "compliance_measurement",
+          "title": "试验机位移不能直接当作接受腔压缩量",
+          "markdown": "同一研究用侧面视频追踪上下加载点，而不是只读取试验机横梁。视频采样 50 帧/s，分析时每隔 5 s 提取图像，分别测量框架、横梁和上下施力点的位置。横梁记录的位移约为加载点相对位移的 4 倍，图像校正后的接受腔压缩量主要处于 3–5 mm；直接使用原始位移会把结构显得过软。[位移校正和残肢模型比较](ref:R01)\n\n这一修正不会提高记录的最大载荷，却会改变刚度曲线和材料间变形比较。载荷曲线中的短暂下降还伴有开裂声而无外表可见裂纹，作者将其联系到内部填充路径受损；因此最终断裂前的峰值曲线也包含逐步损伤信息。\n\n石膏产生的集中接触与软组织不同。作者又用相同形状的硅胶替代物作探索试验，达到研究载荷要求而未破坏，但文中方法与讨论给出的硅胶加载速度分别是 3 mm/s 和 0.5 mm/s。因速度记录不一致，这组结果只能支持“替代物改变载荷传递”的观察，不能作为与石膏组严格匹配的材料效应估计。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "continuous_reinforcement",
+          "title": "连续纤维降低基体应力，但打印缺陷决定载荷能否进入纤维",
+          "markdown": "Dolgikh 等把连续碳纤维杆沿曲面沉积到 PA12 圆筒原型，再覆盖聚合物恢复壁厚。模型中的杆间距来自板材拉伸和弯曲分析：间距扩大虽然节省增强材料，却使相邻杆间聚合物先达到失效条件。最终圆筒用螺旋路径形成局部增强区，考察的是简化几何的载荷重分配。[有限元和制造方法](ref:R02)\n\n在上下端固定、表面分布载荷 4.5 kN 加局部载荷 1.6 kN 的设定下，未增强基体最大法向应力为 17.67 MPa，增强后为 14.80 MPa，下降 16.2%；杆内峰值约 114.59 MPa。原文把分布载荷等同于患者体重的说法不符合力与质量换算，此处只采用实际输入的力值。基体和杆均作各向同性近似，渐进损伤模型还保留损伤区部分刚度，结果取决于这些本构设定。\n\n制造时 PA12 层高 0.3 mm、线宽 0.6 mm、喷嘴 265°C；连续杆沉积层高 0.2 mm。实验筛选的杆沉积速度为 300 mm/min，杆直径 0.4 mm 时喷嘴间隙为 0.3 mm。温度过低会影响结合，过高会使热塑性黏结相劣化。原型照片证明曲面增强可制造，缺陷图则记录纤维断裂、脱层和过挤出；完整接受腔的承载改善尚是仿真结果，并非该原型的实测破坏或疲劳强度。",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "graded_lattice",
+          "title": "晶格减重需用实测构件约束均匀化模型",
+          "markdown": "Borracci 等研究的是经桡前臂假肢的外层承力壳，用 MJF 制造 PA12 晶格；其设计载荷为肘屈曲 90° 时腕部承受 100 N，不能转用于下肢承重判断。作者先由单元建立弹塑性均匀化材料，再将壳体应力划分为 16 个区间，映射到局部杆径；低应力区的设计最小杆径为 1.5 mm，实体连接区保留，并平滑过渡到晶格。[均匀化、构件试验和 CT 结果](ref:R03)\n\n| 模型 | 质量，g | 最大前侧挠度，mm | 最大 Hill 等效应力，MPa | 最小安全系数 |\n|---|---:|---:|---:|---:|\n| 实心 | 500 | 0.7 | 1.64 | 6.7 |\n| 均匀晶格 | 434 | 1.1 | 1.67 | 4.5 |\n| 应力场驱动晶格 | 373 | 1.6 | 2.1 | 4.2 |\n\n表中是模型对照：减重 25.4% 伴随挠度增加和安全系数降低，不能表述为刚度不变。最小安全系数位于晶格与实体连接的过渡区。完整原型仅 1 件，以 0.6 mm/min 弯曲加载，破坏力 440 N，约为设计载荷的 4.4 倍；试验夹持用螺栓固定外壳实体块，未完全复现残肢与内衬固定。结果支持该载荷方向下模型和试验的数量级一致。\n\nCT 中杆径分布众数约 1.4 mm，CAD 为 1.5 mm，体素为 127 μm；作者认为差异处于测量不确定度范围。对于这些薄杆，测量分辨率的影响不可忽略，不能据此证明每一根杆都精确达标。拉伸试块还检验了沿主轴和旋转方向的响应，但完整构件未做疲劳试验，静态安全系数不能直接代替循环寿命。",
+          "figure_ids": []
+        },
+        {
+          "id": "scaled_compression",
+          "title": "缩尺 PLA 短纤维试验的数值矛盾限制承载外推",
+          "markdown": "Raut 等用 PLA–短碳纤维打印 1:3 缩尺接受腔，层高 0.2 mm、填充率 100%、竖直成形。4 个试样以石膏和铝棒传递轴向力，远端固定，以 2 mm/min 压缩至破坏。另述循环试验在 50–150 N 之间加载，以首次可见裂纹终止，报告 90–100 次循环即出现远端开裂；这一终点是裂纹萌生，不是长寿命耐久极限。[缩尺试验方法与结果](ref:R04)\n\n其静态载荷换算存在可复核的不一致：正文给出 S3 峰值 15.872 kN、承载截面积 1182.369 mm²，按文中“力除以面积”的定义约为 13.42 MPa，却同时报告 S3 强度为 1.419 MPa。循环载荷推导也把面积缩放系数写成 1/3，而 700 N 到约 78 N 的计算实际上使用平方缩尺关系。原始载荷与单位未澄清前，不能使用其全尺寸等效承载值或据此判定达到 P6。\n\n该研究仍提供了具体损伤线索：静载和循环裂纹均集中在远端载荷传递区，显微观察显示孔隙、纤维聚集与层间脱粘。它们能解释可能的局部薄弱机制，但未通过含水率或热历史的受控分组，单独证明这些因素造成试样间差异。",
+          "figure_ids": []
+        },
+        {
+          "id": "fatigue_and_service",
+          "title": "循环载荷结果与实际服役损坏需要分别统计",
+          "markdown": "Nickel 等在 24 个经胫接受腔上迭代静态设计；最终设计的 1 件重印试样在 P6、Condition II 下完成 3000000 次循环，随后通过静态验证载荷。这把证据从静态提高到特定构件的循环耐久，但疲劳试样量仍为 1。[循环试验摘要](ref:R05)\n\nvan der Stelt 等随访 9 名使用者：6 个接受腔分别于 361、398、399、553、641、756 天损坏，1 人使用至 2.5 年，另有 1 人因尺寸问题更换、1 人失访。损坏、更换和失访是不同事件；不能把仍有假肢可穿戴当作原接受腔均存活。[长期随访摘要](ref:R06)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Marinopoulos et al.：不同材料接受腔的最大试验载荷",
+          "interpretation": "横轴是 PLA 与碳纤维尼龙，纵轴为载荷 N。原图规定红线为均值，箱体为四分位范围，须线表示最小和最大值，不应按通常箱线图习惯把红线读成中位数。尼龙组只有 2 件，且上端达到设备设定上限而未断；图形的高位分布支持本组静态承载较高，却没有给出其真实上端破坏分布。这里两种材料比较成立于同一偏心加载、石膏传力与远端连接条件。[原图及试验结果](ref:R01)"
+        },
+        "F02": {
+          "caption": "Marinopoulos et al.：图像校正后的载荷—位移曲线",
+          "interpretation": "横轴为校正位移 mm，纵轴为载荷 N；红线是 PLA，蓝线是碳纤维尼龙。黑色叉号标出终止破坏点，达到载荷上限的蓝线则继续到图顶。校正后曲线主要在较窄的位移区间内上升，并保留不同样件的非线性。尼龙承受更高终值不代表在任意给定位移下都比 PLA 更硬；图中部分蓝线在相同位移处的载荷更低。强度与刚度必须从不同特征读取。[变形分析](ref:R01)"
+        },
+        "F03": {
+          "caption": "Dolgikh et al.：局部增强圆筒的应力重分配仿真",
+          "interpretation": "a 为未增强基体，附图标出触发损伤准则的区域；b 为增强基体，色标上限与 a 不同，不能只凭颜色深浅判断改善。c 横轴是沿路径的真实距离 mm，纵轴为应力 MPa；增强后曲线在局部峰值附近降低，而低应力区变化小。中部纤维杆云图使用另一套应力色标，显示载荷进入增强相。该图解释为何局部增强能降低基体峰值，也显示改进集中在选定载荷路径；它不是反复步行后的损伤地图。[应力场原图](ref:R02)"
+        },
+        "F04": {
+          "caption": "Dolgikh et al.：曲面纤维沉积中出现的缺陷",
+          "interpretation": "a–d 分别记录杆中聚合物与纤维损伤、纤维断裂、纤维脱层、PA12 过挤出，每幅均保留 1.0 mm 比例尺。黑色圈线及红色边线是原作者对异常区域的标注。沿理想路径放入连续纤维，并不自动保证连续的传力：断裂削弱纤维跨区承载，脱层改变基体向纤维的剪切传递，过挤出影响后续包覆形状。图片提供制造缺陷的实物证据，但没有统计缺陷发生率或各类缺陷造成的疲劳寿命下降幅度。[制造缺陷原图](ref:R02)"
+        }
+      }
+    },
+    "en": {
+      "title": "How can socket materials and lattice structures provide load-bearing capacity?",
+      "direction": "Prosthetic sockets",
+      "sections": [
+        {
+          "id": "pediatric_loading",
+          "title": "Material comparisons depend on load paths and distal attachments",
+          "markdown": "Marinopoulos et al. tested materials within complete pediatric transfemoral sockets under eccentric loading. For a 14-year-old male weighing 73.4 kg, they fitted an experimental threshold of 3891.6 N from ISO 10328 loading levels and extended the loading axis to 405 mm above the knee plane. This was an author-derived pediatric test condition; the geometry was separately scaled to a 15-year-old residuum, so the age assumptions were not identical. Early-stance Condition I transferred force through a steel rod embedded in a plaster residuum to the socket walls. Internal/external fittings and bolts secured the distal pyramid, leaving 15 mm clearance below the residuum tip.[Methods and static results](ref:R01)\n\nPrinting used 0.2 mm layers and 100% infill. Plaster tests first applied a settling load of 1020 N at 150 N/s, unloaded, and then loaded to failure. The 4 PLA specimens sustained a mean maximum load of 6382.6 N. Of 2 carbon-fiber-reinforced nylon specimens, one failed at 7949.3 N and the other reached the 10000 N test ceiling without failure. The latter 10000 N value is not its failure load. Both groups exceeded this study's threshold, without establishing performance across all gait-loading conditions.\n\nCracks concentrated posteriorly at the distal end and propagated mainly between layers. The squared reinforcement around the attachment was not the principal fracture site, indicating that local geometry can shift the weak point. The plaster tip and clearance beneath it also concentrated loading. Ultimate capacity therefore depends on socket geometry, attachment and residuum surrogate, even when the material designation is identical.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "compliance_measurement",
+          "title": "Machine travel is not socket compression",
+          "markdown": "The same study tracked upper and lower loading points in side-view video instead of relying solely on machine crosshead travel. Recording used 50 frames/s, with images analyzed every 5 s to measure the frame, crosshead and loading points separately. Crosshead travel was approximately 4 times the relative displacement between loading points. Image-corrected socket compression was predominantly 3–5 mm; uncorrected travel would make the structure appear overly compliant.[Displacement correction and residuum comparison](ref:R01)\n\nCorrection does not increase the recorded maximum force, but changes stiffness curves and comparisons of deformation between materials. Brief force drops were accompanied by cracking sounds without visible surface cracks. The authors related these events to damage within infill paths, so the curve before final fracture also contains evidence of progressive damage.\n\nConcentrated plaster contact differs from soft-tissue loading. An exploratory test with a silicone surrogate of the same shape met the study's load requirement without failure. However, the methods and discussion report silicone loading speeds of 3 mm/s and 0.5 mm/s, respectively. This inconsistency restricts the result to illustrating altered load transfer with a different surrogate; it does not provide a strictly matched estimate of a material effect relative to plaster.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "continuous_reinforcement",
+          "title": "Continuous fibers unload the matrix, but defects affect load transfer",
+          "markdown": "Dolgikh et al. deposited continuous carbon-fiber rods along a PA12 cylindrical prototype and covered them with polymer to restore wall thickness. Rod spacing was informed by tensile and bending analyses of plates: wider spacing reduced reinforcement usage but caused the polymer between rods to reach its failure criterion first. Helical paths then created a locally reinforced zone in the cylinder, examining redistribution of load in a simplified geometry.[Finite-element and fabrication methods](ref:R02)\n\nWith both ends fixed and a distributed surface force of 4.5 kN plus a local force of 1.6 kN, maximum normal matrix stress decreased from 17.67 MPa without reinforcement to 14.80 MPa with reinforcement, a 16.2% reduction. Peak rod stress was approximately 114.59 MPa. The paper's equivalence between distributed force and patient body mass is inconsistent with force–mass conversion; the actual input forces are used here. Matrix and rods were both approximated as isotropic, and the progressive-damage model retained some stiffness in damaged regions, making the findings dependent on those constitutive assumptions.\n\nPA12 fabrication used 0.3 mm layers, 0.6 mm extrusion width and a 265°C nozzle; rod deposition used 0.2 mm layers. The selected rod deposition speed was 300 mm/min, with a 0.3 mm nozzle gap for 0.4 mm rods. Insufficient temperature impaired bonding, whereas excessive temperature degraded the thermoplastic binder. Prototype photographs establish fabrication feasibility, while defect images document broken fibers, delamination and over-extrusion. Improved capacity of the complete socket remained a simulation result, not measured prototype failure or fatigue strength.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "graded_lattice",
+          "title": "Lattice lightweighting requires component tests to constrain homogenization",
+          "markdown": "Borracci et al. studied the structural outer shell of a transradial upper-limb prosthesis, manufacturing a PA12 lattice by MJF. The design scenario applied 100 N at the wrist with the elbow flexed 90°; it is not a lower-limb weight-bearing condition. Unit-cell analyses supplied elastic–plastic homogenized properties. Shell stresses were divided into 16 intervals and mapped to local strut diameters, with a minimum designed diameter of 1.5 mm in low-stress regions. Solid attachment patches were retained and blended into the lattice.[Homogenization, component testing and CT results](ref:R03)\n\n| Model | Mass, g | Maximum anterior deflection, mm | Maximum equivalent Hill stress, MPa | Minimum safety factor |\n|---|---:|---:|---:|---:|\n| Solid | 500 | 0.7 | 1.64 | 6.7 |\n| Uniform lattice | 434 | 1.1 | 1.67 | 4.5 |\n| Stress-field-driven lattice | 373 | 1.6 | 2.1 | 4.2 |\n\nThese model comparisons show that a 25.4% mass reduction accompanied greater deflection and a smaller safety factor, not unchanged stiffness. The minimum safety factor occurred at lattice-to-solid transitions. Only 1 complete prototype underwent bending at 0.6 mm/min, failing at 440 N, approximately 4.4 times the design load. Bolts clamped solid patches of the outer shell rather than fully reproducing residuum–liner fixation. The result supports agreement in magnitude between model and experiment for this loading direction.\n\nModal strut diameter was approximately 1.4 mm in CT versus 1.5 mm in CAD, with 127 μm voxels; the authors considered the difference within measurement uncertainty. Measurement resolution is appreciable relative to these thin struts, so this does not establish exact dimensional conformity of every strut. Tensile coupons also examined principal-axis and rotated responses, but the complete component underwent no fatigue testing. Its static safety factor is not a measured cyclic lifetime.",
+          "figure_ids": []
+        },
+        {
+          "id": "scaled_compression",
+          "title": "Numerical inconsistencies limit extrapolation from scaled short-fiber PLA tests",
+          "markdown": "Raut et al. printed short-carbon-fiber PLA sockets at 1:3 scale, with 0.2 mm layers, 100% infill and vertical build orientation. Axial force was transmitted through plaster and an aluminum rod in 4 specimens with fixed distal ends, compressed to failure at 2 mm/min. A cyclic test was also described between 50–150 N, ending at the first visible crack; distal cracking occurred after 90–100 cycles. This endpoint measures crack initiation, not a long-life endurance limit.[Scaled testing methods and results](ref:R04)\n\nStatic load conversion contains a checkable inconsistency: the text gives an S3 peak of 15.872 kN and a loaded area of 1182.369 mm². Its stated force/area definition yields approximately 13.42 MPa, whereas S3 strength is reported as 1.419 MPa. The cyclic-load derivation also labels the area scale factor as 1/3, although converting 700 N to approximately 78 N actually uses squared geometric scaling. Without clarification of original forces and units, its full-scale equivalent capacity cannot establish compliance with P6.\n\nThe study nevertheless provides specific damage observations: static and cyclic cracks concentrated in the distal load-transfer region, with microscopy showing voids, fiber clusters and interlayer debonding. These suggest local weakening mechanisms. Moisture content and thermal history were not independently controlled between groups to demonstrate that they caused the specimen-to-specimen differences.",
+          "figure_ids": []
+        },
+        {
+          "id": "fatigue_and_service",
+          "title": "Cyclic testing and in-service damage require separate accounting",
+          "markdown": "Nickel et al. iterated static designs across 24 transtibial sockets. 1 reprinted final-design specimen completed 3000000 cycles at P6, Condition II, and subsequent static proof loading. This extends static evidence to component-specific cyclic durability, but the fatigue sample remained 1.[Cyclic-testing abstract](ref:R05)\n\nVan der Stelt et al. followed 9 users: 6 sockets developed damage at 361, 398, 399, 553, 641 and 756 days; 1 user continued to 2.5 years, 1 required size-related replacement and 1 was lost. Damage, replacement and loss to follow-up are distinct events; continued prosthesis availability is not survival of every original socket.[Long-term follow-up abstract](ref:R06)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Marinopoulos et al.: maximum test loads for different socket materials",
+          "interpretation": "The horizontal axis compares PLA and carbon-fiber nylon; the vertical axis is load in N. The original caption defines red lines as means, boxes as quartiles and whiskers as minima/maxima; the red line must not be read as a median by conventional boxplot habit. Nylon had only 2 specimens, and its upper endpoint reached the imposed ceiling without fracture. The higher distribution supports greater static capacity in this group, without resolving its upper failure-load distribution. Comparison applies to the shared eccentric loading, plaster load transfer and distal attachment.[Original figure and results](ref:R01)"
+        },
+        "F02": {
+          "caption": "Marinopoulos et al.: image-corrected load–displacement curves",
+          "interpretation": "The horizontal axis is corrected displacement in mm and the vertical axis load in N; red curves denote PLA and blue curves carbon-fiber nylon. Black crosses mark terminal fracture points, whereas the ceiling-limited blue curve continues to the plot top. Corrected curves rise within a narrower displacement range while retaining specimen-specific nonlinearity. Higher terminal nylon loads do not imply greater stiffness at every displacement: some blue curves carry less force than PLA at the same displacement. Strength and stiffness must be read from different curve features.[Deformation analysis](ref:R01)"
+        },
+        "F03": {
+          "caption": "Dolgikh et al.: simulated stress redistribution in a locally reinforced cylinder",
+          "interpretation": "Panel a shows the unreinforced matrix, with an inset identifying the damage-criterion region; b shows the reinforced matrix. Their color-scale maxima differ, so color alone cannot quantify improvement. In c, true distance along the path in mm is plotted against stress in MPa. Reinforcement lowers the local peak while changing low-stress regions little. The central rod field has a separate stress scale and shows transfer into the reinforcement. The figure explains local matrix unloading along the selected load path; it is not a damage map after repeated walking.[Original stress-field figure](ref:R02)"
+        },
+        "F04": {
+          "caption": "Dolgikh et al.: defects during curved-surface fiber deposition",
+          "interpretation": "Panels a–d document polymer/fiber damage in a rod, fiber breakage, fiber delamination and PA12 over-extrusion, respectively; each retains its 1.0 mm scale bar. Black outlines and red boundaries are the authors' original annotations. Placing continuous fibers along an ideal trajectory does not itself ensure continuous load transfer: breakage interrupts bridging, delamination changes matrix-to-fiber shear transfer, and over-extrusion affects subsequent encapsulation geometry. These are physical observations of fabrication defects, without estimates of defect prevalence or fatigue-life losses attributable to each type.[Original fabrication-defect figure](ref:R02)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie können Schaftmaterialien und Gitterstrukturen die Tragfähigkeit sicherstellen?",
+      "direction": "Prothesenschäfte",
+      "sections": [
+        {
+          "id": "pediatric_loading",
+          "title": "Materialvergleiche hängen von Lastpfaden und distalen Anschlüssen ab",
+          "markdown": "Marinopoulos et al. untersuchten Materialien in vollständigen pädiatrischen Oberschenkelschäften unter exzentrischer Belastung. Für einen 14-jährigen Jungen mit 73.4 kg Körpermasse leiteten sie durch Anpassung an ISO-10328-Laststufen einen experimentellen Schwellenwert von 3891.6 N ab und verlängerten die Lastachse bis 405 mm oberhalb der Knieebene. Dieser Wert war eine für die pädiatrische Untersuchung berechnete Prüfbedingung; die Geometrie wurde dagegen auf einen 15-jährigen Stumpf skaliert. Die Altersannahmen waren somit nicht identisch. In Condition I der frühen Standphase leitete ein in Gips eingebetteter Stahlstab die Kraft auf die Schaftwand. Innere und äußere Befestigungsteile mit Schrauben sicherten den distalen Pyramidenadapter; unter dem Stumpfende verblieben 15 mm Freiraum.[Methodik und statische Ergebnisse](ref:R01)\n\nGedruckt wurde mit 0.2 mm Schichthöhe und 100% Füllung. Zunächst wurde mit 150 N/s eine Setzlast von 1020 N aufgebracht, anschließend entlastet und bis zum Versagen belastet. Die 4 PLA-Proben erreichten im Mittel 6382.6 N Maximallast. Von 2 kohlenstofffaserverstärkten Nylonproben versagte eine bei 7949.3 N; die andere erreichte die Prüfgrenze von 10000 N ohne Versagen. Dieser letzte Wert von 10000 N ist keine gemessene Bruchlast. Beide Gruppen überschritten den studienspezifischen Schwellenwert, ohne sämtliche Gangbelastungen abzudecken.\n\nRisse konzentrierten sich distal-posterior und verliefen überwiegend zwischen den Schichten. Die quadratische Verstärkung um den Anschluss war nicht der hauptsächliche Bruchort; lokale Geometrie kann die Schwachstelle also verlagern. Zugleich konzentrierten Gipsende und Freiraum darunter die Belastung. Auch bei gleicher Materialbezeichnung hängt die maximale Tragfähigkeit deshalb von Schaftform, Befestigung und Stumpfersatz ab.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "compliance_measurement",
+          "title": "Maschinenweg ist nicht gleich Schaftkompression",
+          "markdown": "Dieselbe Studie verfolgte die oberen und unteren Lastangriffspunkte im seitlichen Video, statt ausschließlich den Traversenweg zu verwenden. Aufgezeichnet wurde mit 50 Bildern/s; alle 5 s wurden Bilder ausgewertet, um Rahmen, Traverse und Lastangriffspunkte getrennt zu erfassen. Der Traversenweg betrug ungefähr das 4-Fache der Relativverschiebung zwischen den Lastangriffspunkten. Die bildkorrigierte Schaftkompression lag überwiegend bei 3–5 mm; unkorrigierte Werte ließen die Struktur zu nachgiebig erscheinen.[Wegkorrektur und Vergleich der Stumpfmodelle](ref:R01)\n\nDie Korrektur erhöht nicht die gemessene Maximalkraft, verändert aber die Steifigkeitskurven und den Verformungsvergleich der Materialien. Kurze Lastabfälle gingen mit Knackgeräuschen ohne sichtbare Oberflächenrisse einher. Die Autoren brachten sie mit Schäden an inneren Füllbahnen in Verbindung; bereits die Kurve vor dem endgültigen Bruch enthält somit Hinweise auf fortschreitende Schädigung.\n\nKonzentrierter Gipskontakt unterscheidet sich von Weichteilbelastung. Ein ergänzender Versuch mit einem gleich geformten Silikonersatz erreichte die geforderte Last ohne Versagen. Methodenteil und Diskussion nennen jedoch unterschiedliche Belastungsgeschwindigkeiten von 3 mm/s beziehungsweise 0.5 mm/s. Damit veranschaulicht das Ergebnis eine veränderte Lastübertragung durch den Ersatzkörper, liefert aber keinen streng vergleichbaren Materialeffekt gegenüber der Gipsgruppe.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "continuous_reinforcement",
+          "title": "Endlosfasern entlasten die Matrix, doch Defekte beeinflussen den Lasttransfer",
+          "markdown": "Dolgikh et al. legten kontinuierliche Kohlenstofffaserstäbe auf einem PA12-Zylinder ab und überdeckten sie mit Polymer bis zur vorgesehenen Wanddicke. Der Stababstand wurde anhand von Zug- und Biegeanalysen an Platten festgelegt: Größere Abstände sparten Verstärkungsmaterial, ließen aber das Polymer zwischen den Stäben zuerst sein Versagenskriterium erreichen. Helikale Bahnen erzeugten anschließend eine lokal verstärkte Zone im Zylinder. Untersucht wurde somit die Lastumverteilung in einer vereinfachten Geometrie.[Finite-Elemente- und Fertigungsmethoden](ref:R02)\n\nBei beidseitig fixierten Enden, einer verteilten Oberflächenkraft von 4.5 kN und einer lokalen Kraft von 1.6 kN sank die maximale Normalspannung der Matrix von 17.67 MPa ohne Verstärkung auf 14.80 MPa mit Verstärkung, entsprechend 16.2%. Die maximale Stabspannung betrug ungefähr 114.59 MPa. Die im Artikel genannte Gleichsetzung der verteilten Kraft mit der Körpermasse ist mit der Kraft-Masse-Umrechnung nicht vereinbar; hier werden deshalb die tatsächlich eingegebenen Kräfte verwendet. Matrix und Stäbe wurden isotrop angenähert; das progressive Schädigungsmodell beließ zudem Reststeifigkeit in geschädigten Bereichen. Die Ergebnisse hängen von diesen Materialannahmen ab.\n\nFür PA12 wurden 0.3 mm Schichthöhe, 0.6 mm Bahnbreite und 265°C Düsentemperatur verwendet; die Stabablage erfolgte mit 0.2 mm Schichthöhe. Gewählt wurden 300 mm/min Ablagegeschwindigkeit und 0.3 mm Düsenabstand für 0.4 mm dicke Stäbe. Zu niedrige Temperaturen beeinträchtigten die Verbindung, zu hohe schädigten den thermoplastischen Binder. Prototypaufnahmen belegen die Herstellbarkeit; Defektbilder zeigen Faserbruch, Ablösung und Überextrusion. Die Tragfähigkeitsverbesserung des vollständigen Schaftes blieb ein Simulationsergebnis und wurde nicht durch Bruch- oder Ermüdungsversuche am Prototyp gemessen.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "graded_lattice",
+          "title": "Gitterleichtbau benötigt Bauteilversuche zur Prüfung der Homogenisierung",
+          "markdown": "Borracci et al. untersuchten die tragende Außenschale einer transradialen Unterarmprothese und fertigten ein PA12-Gitter mittels MJF. Als Auslegungsfall dienten 100 N am Handgelenk bei 90° Ellenbogenbeugung; dies ist kein Belastungsfall für eine Beinprothese. Aus Einheitszellen wurden elastisch-plastische homogenisierte Eigenschaften abgeleitet. Die Schalenspannungen wurden in 16 Intervalle aufgeteilt und lokalen Stabdurchmessern zugeordnet. In schwach belasteten Bereichen betrug der minimale Entwurfsdurchmesser 1.5 mm. Massive Befestigungsbereiche blieben erhalten und gingen geglättet in das Gitter über.[Homogenisierung, Bauteilversuche und CT-Ergebnisse](ref:R03)\n\n| Modell | Masse, g | Maximale anteriore Durchbiegung, mm | Maximale Hill-Vergleichsspannung, MPa | Minimaler Sicherheitsfaktor |\n|---|---:|---:|---:|---:|\n| Massiv | 500 | 0.7 | 1.64 | 6.7 |\n| Gleichmäßiges Gitter | 434 | 1.1 | 1.67 | 4.5 |\n| Spannungsgesteuertes Gitter | 373 | 1.6 | 2.1 | 4.2 |\n\nDieser Modellvergleich zeigt, dass 25.4% Massenreduktion mit größerer Durchbiegung und niedrigerem Sicherheitsfaktor einhergingen, nicht mit unveränderter Steifigkeit. Der kleinste Sicherheitsfaktor trat am Übergang vom Gitter zum massiven Bereich auf. Nur 1 vollständiger Prototyp wurde mit 0.6 mm/min auf Biegung geprüft und versagte bei 440 N, ungefähr dem 4.4-Fachen der Auslegungslast. Schrauben fixierten massive Bereiche der Außenschale, ohne die Stumpf-Liner-Befestigung vollständig nachzubilden. Das Ergebnis stützt die größenordnungsmäßige Übereinstimmung zwischen Modell und Versuch für diese Lastrichtung.\n\nDer modale Stabdurchmesser lag im CT bei ungefähr 1.4 mm gegenüber 1.5 mm im CAD; die Voxelgröße betrug 127 μm. Die Autoren ordneten den Unterschied der Messunsicherheit zu. Die Messauflösung ist gegenüber diesen dünnen Stäben relevant; damit ist nicht die exakte Maßhaltigkeit jedes Stabes bewiesen. Zugproben prüften zusätzlich die Antwort in Hauptachsenrichtung und gedrehter Orientierung. Am vollständigen Bauteil erfolgte jedoch keine Ermüdungsprüfung; sein statischer Sicherheitsfaktor ist keine gemessene zyklische Lebensdauer.",
+          "figure_ids": []
+        },
+        {
+          "id": "scaled_compression",
+          "title": "Zahlenwidersprüche begrenzen die Übertragung verkleinerter PLA-Kurzfaserversuche",
+          "markdown": "Raut et al. druckten Schäfte aus kurzfaserverstärktem PLA im Maßstab 1:3 mit 0.2 mm Schichthöhe, 100% Füllung und vertikaler Bauorientierung. Gips und ein Aluminiumstab übertrugen die Axialkraft auf 4 distal fixierte Proben, die mit 2 mm/min bis zum Versagen komprimiert wurden. Zusätzlich wurde eine zyklische Prüfung zwischen 50–150 N beschrieben, die beim ersten sichtbaren Riss endete. Distale Risse traten nach 90–100 Zyklen auf. Dieser Endpunkt erfasst Rissbeginn, keine Dauerfestigkeitsgrenze.[Methoden und Ergebnisse der verkleinerten Versuche](ref:R04)\n\nDie statische Lastumrechnung enthält einen überprüfbaren Widerspruch: Für S3 nennt der Text 15.872 kN Spitzenkraft und 1182.369 mm² belastete Fläche. Nach der angegebenen Definition Kraft/Fläche ergeben sich ungefähr 13.42 MPa, während die S3-Festigkeit mit 1.419 MPa angegeben wird. Auch die zyklische Lastableitung bezeichnet den Flächenskalierungsfaktor als 1/3, obwohl die Umrechnung von 700 N auf ungefähr 78 N tatsächlich dem quadrierten geometrischen Maßstab folgt. Ohne Klärung der Originalkräfte und Einheiten lässt sich aus der hochgerechneten Tragfähigkeit keine Erfüllung von P6 ableiten.\n\nDie Studie liefert dennoch konkrete Schadensbeobachtungen: Statische und zyklische Risse konzentrierten sich im distalen Lastübertragungsbereich; mikroskopisch wurden Poren, Faseransammlungen und Ablösungen zwischen Schichten beobachtet. Dies sind mögliche lokale Schwächungsmechanismen. Feuchte und thermische Vorgeschichte wurden jedoch nicht unabhängig zwischen Gruppen kontrolliert, um sie als Ursache der Probenunterschiede nachzuweisen.",
+          "figure_ids": []
+        },
+        {
+          "id": "fatigue_and_service",
+          "title": "Zyklische Prüfungen und Gebrauchsschäden sind getrennt zu erfassen",
+          "markdown": "Nickel et al. entwickelten anhand von 24 Unterschenkelschäften den statischen Entwurf weiter. 1 nachgedruckte Endversion überstand unter P6, Condition II, 3000000 Zyklen und anschließende statische Prüflasten. Damit liegt bauteilspezifische zyklische Evidenz vor; die Ermüdungsstichprobe blieb jedoch 1.[Zusammenfassung der zyklischen Prüfung](ref:R05)\n\nVan der Stelt et al. beobachteten 9 Nutzer: 6 Schäfte wurden nach 361, 398, 399, 553, 641 und 756 Tagen beschädigt; 1 Nutzer verwendete die Prothese bis 2.5 Jahre, 1 benötigte einen größenbedingten Ersatz, 1 ging der Nachbeobachtung verloren. Schaden, Ersatz und Beobachtungsverlust sind unterschiedliche Ereignisse; weitere Prothesenverfügbarkeit bedeutet nicht Fortbestand jedes ursprünglichen Schaftes.[Zusammenfassung der Langzeitbeobachtung](ref:R06)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Marinopoulos et al.: maximale Prüflasten verschiedener Schaftmaterialien",
+          "interpretation": "Die Horizontalachse vergleicht PLA und kohlenstofffaserverstärktes Nylon; vertikal steht die Last in N. Laut Originallegende sind rote Linien Mittelwerte, Kästen Quartilsbereiche und Enden Minimal-/Maximalwerte. Die rote Linie ist daher nicht als üblicher Boxplot-Median zu lesen. Die Nylongruppe umfasste nur 2 Proben; ihr oberer Endpunkt erreichte die Prüfgrenze ohne Bruch. Die höhere Verteilung stützt die größere statische Tragfähigkeit dieser Gruppe, bestimmt aber nicht die obere Bruchlastverteilung. Der Vergleich gilt für die gemeinsame exzentrische Belastung, Gipskrafteinleitung und distale Befestigung.[Originalabbildung und Ergebnisse](ref:R01)"
+        },
+        "F02": {
+          "caption": "Marinopoulos et al.: bildkorrigierte Kraft-Weg-Kurven",
+          "interpretation": "Horizontal ist der korrigierte Weg in mm, vertikal die Last in N aufgetragen; rote Kurven zeigen PLA, blaue kohlenstofffaserverstärktes Nylon. Schwarze Kreuze markieren die abschließenden Bruchpunkte; die durch die Prüfgrenze begrenzte blaue Kurve reicht dagegen bis zum oberen Diagrammrand. Die korrigierten Kurven steigen in einem engeren Wegbereich an und behalten probenspezifische Nichtlinearität. Höhere Nylon-Endlasten bedeuten nicht bei jedem Weg höhere Steifigkeit: Einzelne blaue Kurven zeigen bei gleichem Weg weniger Kraft als PLA. Festigkeit und Steifigkeit sind aus unterschiedlichen Kurvenmerkmalen abzulesen.[Verformungsanalyse](ref:R01)"
+        },
+        "F03": {
+          "caption": "Dolgikh et al.: simulierte Spannungsumverteilung im lokal verstärkten Zylinder",
+          "interpretation": "a zeigt die unverstärkte Matrix mit einem Ausschnitt des Bereichs, der das Schädigungskriterium erreicht; b zeigt die verstärkte Matrix. Die Farbskalen besitzen unterschiedliche Maxima, weshalb Farbe allein die Verbesserung nicht quantifiziert. In c stehen tatsächlicher Weg entlang des Pfades in mm und Spannung in MPa gegenüber. Die Verstärkung senkt die lokale Spitze, während schwach belastete Bereiche wenig verändert werden. Das mittige Stabfeld besitzt eine eigene Spannungsskala und zeigt den Lasttransfer in die Verstärkung. Die Abbildung erklärt lokale Matrixentlastung entlang des gewählten Lastpfades; sie ist keine Schadenskarte nach wiederholtem Gehen.[Originales Spannungsfeld](ref:R02)"
+        },
+        "F04": {
+          "caption": "Dolgikh et al.: Defekte bei der Faserablage auf gekrümmten Flächen",
+          "interpretation": "a–d dokumentieren Polymer-/Faserschäden im Stab, Faserbruch, Faserablösung und PA12-Überextrusion; jeder Teil behält seinen 1.0-mm-Maßstab. Schwarze Umrandungen und rote Begrenzungen stammen von den Autoren. Endlosfasern entlang einer idealen Bahn gewährleisten allein keinen kontinuierlichen Lasttransfer: Bruch unterbricht die Überbrückung, Ablösung verändert die Schubübertragung von Matrix zu Faser, Überextrusion beeinflusst die spätere Einbettungsgeometrie. Die Bilder belegen reale Fertigungsdefekte, quantifizieren jedoch weder deren Häufigkeit noch den jeweiligen Verlust an Ermüdungslebensdauer.[Originalabbildung der Fertigungsdefekte](ref:R02)"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "schema_version": 2,
+  "question_id": "P1-004",
+  "p": "P1",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_9754979073e0f82911d7",
+    "doc_ef31116095adb950ec7c",
+    "doc_f118e082ee32184d0a2c",
+    "KB202680E262275909"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Synthetic skull bone defects for automatic patient-specific craniofacial implant design",
+      "publisher": "Scientific Data",
+      "year": 2021,
+      "url": "https://doi.org/10.1038/s41597-021-00806-0",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "A novel algorithm for streamlined surgeon-dominated patient-specific implant design in computer-assisted jaw reconstruction",
+      "publisher": "3D Printing in Medicine",
+      "year": 2025,
+      "url": "https://doi.org/10.1186/s41205-025-00260-3",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Efficacy of 3D-printed patient specific implant for orbital wall fracture repair in a series of 40 patients",
+      "publisher": "Scientific Reports",
+      "year": 2025,
+      "url": "https://doi.org/10.1038/s41598-024-84166-w",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Clinical implementation of an EU MDR-compliant point-of-care manufacturing framework for patient-specific 3D-printed PEEK implants in craniomaxillofacial reconstruction",
+      "publisher": "3D Printing in Medicine",
+      "year": 2026,
+      "url": "https://doi.org/10.1186/s41205-026-00325-x",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 2",
+      "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41597-021-00806-0/MediaObjects/41597_2021_806_Fig2_HTML.jpg",
+      "asset_path": "assets/academic_figures/P1-004/F01.jpg",
+      "source_url": "https://link.springer.com/article/10.1038/s41597-021-00806-0/figures/2",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R02",
+      "original_label": "Fig. 12",
+      "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2Fs41205-025-00260-3/MediaObjects/41205_2025_260_Fig12_HTML.png",
+      "asset_path": "assets/academic_figures/P1-004/F02.png",
+      "source_url": "https://link.springer.com/article/10.1186/s41205-025-00260-3/figures/12",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R03",
+      "original_label": "Fig. 2",
+      "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-024-84166-w/MediaObjects/41598_2024_84166_Fig2_HTML.png",
+      "asset_path": "assets/academic_figures/P1-004/F03.png",
+      "source_url": "https://link.springer.com/article/10.1038/s41598-024-84166-w/figures/2",
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Fig. 3",
+      "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-024-84166-w/MediaObjects/41598_2024_84166_Fig3_HTML.png",
+      "asset_path": "assets/academic_figures/P1-004/F04.png",
+      "source_url": "https://link.springer.com/article/10.1038/s41598-024-84166-w/figures/3",
+      "license": "CC BY-NC-ND 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "颅颌面缺损如何通过个体化植入物重建？",
+      "direction": "个体化植入物",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "重建对象决定“贴合”需要回答什么问题",
+          "markdown": "颅颌面重建并不是把缺损统一替换成一块按CT打印的材料。颅盖缺损需要恢复连续的外形、厚度与边缘接合；节段性下颌重建还要把残余下颌、腓骨移植段和固定螺钉连接成承载系统；眶壁重建则改变眶内容物的支撑边界。形状相近可以是共同起点，但其成功指标并不相同。[颅骨几何任务](ref:R01)[下颌重建装配](ref:R02)[眶壁临床评价](ref:R03)\n\n| 部位与研究对象 | 个体化信息如何进入设计 | 论文实际检验的量 |\n|---|---|---|\n| 颅盖合成缺损 | 从完整颅骨移除一部分，保留被移除体积作为参考 | 缺损边缘、曲面和厚度的几何对应 |\n| 下颌腓骨重建固定板 | 外科医生选定板的路径与螺钉位置，并加入患者咬合力 | 指定咬合条件下的板和螺钉等效应力 |\n| 单侧眶壁骨折 | 患者眶形态用于设计，对侧眶用于术后对称性评价 | 眶容积比与局部表面吻合距离 |\n\n这一区分也影响材料解释。固定板研究把钛合金赋给板和螺钉；眶壁队列使用的是PCL与β-TCP复合物，而不是同一材料的不同外形。跨部位比较时，形状恢复、载荷传递和组织支撑应分别对照，不能把一项几何误差较低直接写成另一项功能更好。",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "完整颅骨提供几何参照，合成缺损不增加独立患者",
+          "markdown": "Li等从24名患者的完整颅骨CT建立数据，每个颅骨注入10个随机缺损，形成240组缺损—补片配对。原图2把被移除的部分完整保存，因此可以同时检查补片外形、局部厚度和与缺损边界的接合。这里的参考答案是已知完整颅骨的一部分，不需要由操作者重新猜测缺失曲面。[数据生成与原图2](ref:R01)\n\n这一优势来自受控的生成过程，也限定了它的临床含义。缺损由立方或球形掩膜及模拟钻孔角部产生，位置和大小变化丰富，但边壁通常比真实切除边缘平直、光滑。原始分割本身也经过逐病例阈值选择、最大连通域保留及必要的薄骨修补；部分病例采用半径2 mm的中值平滑。网络恢复的首先是这套处理后的形状，而不是未经处理的组织边界。\n\n240个配对仍只包含24种原始颅骨形态。若同一颅骨的不同缺损同时进入训练集和测试集，算法可能主要熟悉该患者的整体形状；因此按原始患者划分数据是由这一结构推导出的评价要求。该数据在裁剪时还排除了大部分上颌与下颌，不能仅因题名包含craniofacial就当作节段性下颌或整个中面部的验证集。几何补全结果还没有螺钉布局、术中边缘处理或软组织覆盖这些变量。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "下颌固定板：自动生成曲面之后，载荷仍集中在连接处",
+          "markdown": "Nayak等把外科医生在重建下颌表面选取的两条导向曲线和螺钉位置转化为固定板。三次样条插值与平滑控制曲线，矩形截面沿路径扫掠生成板体，再构造孔位。平滑程度改变局部贴合与曲线弯折之间的取舍；它不是单纯让表面看起来更光滑。算法在5个病例上评价，报告曲线定义约1 min、随后数据处理与模型生成40–60 s，这些时间不包括完整影像规划、制造或手术。[算法及有限元条件](ref:R02)\n\n其有限元模型模拟右侧磨牙咬紧：根据患者术前测得的91 N咬合力缩放肌力，双侧髁突约束位移，左侧因手术脱离的浅层和深层咬肌不参与。材料采用均质、各向同性线弹性假设；板与螺钉的Ti-6Al-7Nb弹性模量为105 GPa，重建下颌作为致密皮质骨处理。螺钉—骨摩擦系数为0.3，螺钉—板为绑定，板—骨仅承担无摩擦法向接触。这些界面条件直接决定力怎样通过固定系统。\n\n原图12中，板最大von Mises应力为173.39 MPa，而第9枚螺钉达到216.04 MPa，位于重建段与残余下颌的交界附近。板体表面大部分颜色较低，并不意味着整个装配具有同样的裕量。结果支持在该咬合工况下定位薄弱连接；它没有测量反复咀嚼后的疲劳寿命，也没有证明骨愈合前后的载荷分配相同。设计的患者特异性由骨形、肌力、接触条件共同构成。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "眶壁队列：以同一患者的对侧作为体积参照",
+          "markdown": "Yang等回顾性分析40例单侧眶壁骨折，其中19例下壁、9例内壁、12例联合骨折。双侧骨折、上壁或外侧壁受累及随访不足6个月者被排除。植入物厚0.8–1.2 mm，材料为PCL与β-TCP按8:2组成的复合物；所有手术由同一位有经验的术者完成。这一病例边界比“适用于各种眶缺损”的说法更具体。[制造、入组与容积结果](ref:R03)\n\n研究的眶容积比OVR等于受伤侧眶组织体积除以对侧正常体积。平均OVR从术前109.0%降到术后6个月的100.6%，差异P<0.001；相应受伤侧平均体积由26.57降至24.51 cm³，对侧正常参考为24.36 cm³。体积接近说明向骨折区疝出的内容物边界得到恢复，但它不能单独说明每一处眶壁曲率均已重建。\n\n原图2将术前与术后1周、3个月、6个月并列。早期完成体积恢复，后续测量没有显示明显漂移，这比只展示一次术后CT更能描述支撑效果。作者报告平均植入时间19.8 s，计时起点是缺损全部边缘已暴露，终点是补片覆盖缺损；它不是总手术时长。队列没有同期常规植入物对照，因此不能由这个时间或未观察到相关并发症推算相对于其他方式降低了多少风险。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "相同体积可以有不同轮廓：联合骨折揭示局部误差",
+          "markdown": "同一眶壁研究把正常侧眶组织模型镜像后，与患侧表面配准，并在规定解剖边界内计算均方根吻合距离（RMS conformance distance）。这不是打印补片相对设计文件的制造误差，而是术后眶组织轮廓相对对侧参照的偏差，包含分割、配准、自然不对称及实际组织位置的共同影响。[形态测量与原图3](ref:R03)\n\n全队列RMS距离的中位数由术前3.426 mm降至术后6个月1.073 mm，P<0.001。分组更能说明两类指标的区别：联合壁骨折与单壁骨折的术后OVR为102.3%与99.6%，差异P=0.105；RMS距离却为1.238与0.895 mm，P=0.021。总体容积差异未达到统计学显著时，局部形态误差仍可区分更复杂的重建对象。\n\n原图3中的颜色距离图把偏差定位到表面区域，补充了总体平均值。它是一个联合骨折代表病例，不能把这个病例的颜色变化当作所有40例的分布。镜像评价还依赖相对完整的对侧眶；本研究恰好排除了双侧损伤。由此，单侧队列中有效的参照建立方式，不能直接移植到双侧毁损、明显先天不对称或缺少可靠解剖标志的情形。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "从数字设计到实物：两例PEEK应用怎样界定制造证据",
+          "markdown": "Sharma等的院内PEEK研究把临床设计限定在预先验证的几何与工艺范围内，再对厚度、边缘过渡和固定位置进行病例调整。植入物采用100%直线填充，并在灭菌前与患者解剖模型检查贴合。论文详述的是两例代表性应用；所述机构已实施40余件植入物，并不等于公开了这些病例完整的比较队列。[临床实施方法与病例](ref:R04)\n\n颅骨病例为一名46岁男性，自体骨吸收后留下约14.9×12.1 cm的缺损，PEEK补片设计厚度为3.5 mm。打印耗时5 h 10 min，从最终设计到制造完成在24 h内；手术75 min，术中未需修改补片，6个月时未报告相关不适或并发症。另一例为19岁男性的颏部轮廓增量，最大厚度7.0 mm、边缘渐薄至0.6–0.8 mm，经历4轮设计修改；打印约1 h。这是贴附于已有骨面的增量设计，与跨越颅骨全层缺损的补片承担不同任务。\n\n论文所述从DICOM获取到无菌交付的3–5天包含设计、制造和后处理，不能与纯打印时间互换。其研究价值在于说明形状如何经过实体贴合、工艺控制和临床使用，而不是以少数无事件病例估计远期发生率。结合前述研究，算法的几何参考、下颌的载荷条件和眼眶的术后轮廓各自保留明确的测量对象；PEEK病例则进一步记录这些设计到实体交付之间实际发生的操作与时间。",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Li等：完整颅骨与被移除补片的对应。",
+          "interpretation": "a、b为完整颅骨三维及矢状面，c以灰色标明被移除部分，d、e显示缺损，f为互补体。c保留的厚度和接合关系说明训练标签不仅提供外表面，也定义内外表面之间的体积。缺损边缘规则、角部带模拟钻孔，因此该图是合成几何参照的展示，不是手术植入后的贴合结果。"
+        },
+        "F02": {
+          "caption": "Nayak等：下颌固定系统中的局部应力集中。",
+          "interpretation": "a为装配，b为固定板，c为螺钉；色标单位均为MPa，但b上限173.39，a与c上限216.04，不能只按相同颜色跨面板比较。b放大孔邻近区域，c放大承担最高应力的螺钉，指出连接部位比大部分板体更受约束。图示是指定右侧磨牙咬合下的计算状态，图内Time: 1 s不是疲劳实验持续时间。"
+        },
+        "F03": {
+          "caption": "Yang等：眶组织体积及左右容积比的连续随访。",
+          "interpretation": "a的纵轴为cm³，实心圆为骨折侧、空心方形为正常侧；b纵轴为百分比，100%虚线表示双侧体积相等。横轴为术前及术后1周、3个月、6个月。术后各时间点围绕正常参考，图中P>0.99的括号对应特定比较，不能解释为每位患者完全对称；P<0.001显示术前与早期术后的总体变化。"
+        },
+        "F04": {
+          "caption": "Yang等：联合下壁与内壁骨折的局部轮廓恢复。",
+          "interpretation": "上排为术前冠状及矢状CT，中排为6个月CT；下排从左到右是术前、术后1周、3个月和6个月的吻合距离图。原色标保留−3至9的距离范围，黄色和橙色较大偏差在术后减少。颜色图对比的是眶组织轮廓和镜像参考，并非骨长入或补片降解；该代表病例帮助定位体积指标无法显示的局部误差。"
+        }
+      }
+    },
+    "en": {
+      "title": "How can craniofacial defects be reconstructed with patient-specific implants?",
+      "direction": "Patient-specific implants",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "The reconstructed anatomy determines what a good fit must accomplish",
+          "markdown": "Craniofacial reconstruction involves more than replacing every defect with a CT-derived printed piece. A calvarial defect requires continuity of contour, thickness and marginal fit. Segmental mandibular reconstruction must connect the residual mandible, fibular segments and fixation screws into a load-bearing assembly. Orbital reconstruction changes the supporting boundary of the orbital contents. Similarity of shape can be a shared starting point, but the relevant outcomes differ. [Cranial geometry](ref:R01) [Mandibular assembly](ref:R02) [Clinical orbital assessment](ref:R03)\n\n| Anatomy and study object | How patient information enters the design | What the paper actually examines |\n|---|---|---|\n| Synthetic calvarial defects | Remove part of an intact skull and retain that volume as the reference | Correspondence of defect boundary, surface and thickness |\n| Fixation plate for fibular mandibular reconstruction | Surgeon-defined plate paths and screw sites, with patient bite force | Equivalent stresses in plate and screws under specified clenching |\n| Unilateral orbital fractures | Patient orbital anatomy informs design; the opposite orbit provides postoperative symmetry reference | Orbital volume ratio and local surface conformance distance |\n\nThis distinction also affects material interpretation. The plate study assigns titanium-alloy properties to the plate and screws; the orbital series uses a PCL/β-TCP composite. These are not merely different shapes of one material. Across anatomical sites, shape restoration, load transfer and tissue support require separate comparisons. A lower geometric error in one task does not demonstrate better function in another.",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "An intact skull supplies a reference; synthetic defects do not add independent patients",
+          "markdown": "Li and colleagues constructed a dataset from intact-skull CT scans of 24 patients. Introducing 10 random defects per skull produced 240 defect–implant pairs. Original Figure 2 preserves the entire removed portion, allowing simultaneous assessment of implant contour, local thickness and boundary fit. The reference is a known part of the intact skull, rather than a missing surface newly estimated by an operator. [Dataset generation and original Figure 2](ref:R01)\n\nThis advantage follows from a controlled generation process, which also defines its clinical scope. Cubic or spherical masks, with simulated drilling at corners, generate varied locations and sizes, but usually smoother and straighter margins than actual resections. The underlying segmentations also involve case-specific thresholds, largest-component selection and occasional repair of thin bone. Some cases undergo median smoothing with a 2 mm radius. A network therefore reconstructs this processed geometry before it reconstructs an unprocessed tissue boundary.\n\nThe 240 pairs still contain only 24 original skull shapes. If different defects from the same skull enter both training and testing, a model may already know that patient's overall anatomy. Splitting by original patient is an evaluation requirement inferred from this data structure. Cropping also excludes most of the maxilla and mandible: the word craniofacial in the title does not make this a validation set for segmental mandibular or complete midface reconstruction. Geometric completion does not yet incorporate screw arrangements, intraoperative edge preparation or soft-tissue coverage.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Mandibular plates: automated surfaces still transfer load through specific connections",
+          "markdown": "Nayak and colleagues convert two surgeon-selected guiding curves and screw positions on a reconstructed mandible into a fixation plate. Cubic-spline interpolation and smoothing control the curves; sweeping a rectangular cross-section produces the plate, followed by hole construction. Smoothing changes the balance between local conformity and path curvature, rather than merely improving appearance. The algorithm was evaluated on 5 cases. Defining curves took about 1 min, followed by 40–60 s for processing and model generation. These intervals exclude complete image planning, manufacturing and surgery. [Algorithm and finite-element conditions](ref:R02)\n\nThe finite-element model represents right-molar clenching. Muscle forces are scaled using the patient's preoperative 91 N bite force; condylar translations are constrained, and the left superficial and deep masseters detached during surgery are omitted. Materials are homogeneous, isotropic and linearly elastic. Ti-6Al-7Nb in the plate and screws has an elastic modulus of 105 GPa; the reconstructed mandible is represented as dense cortical bone. Screw–bone friction is 0.3, screw–plate contact is bonded, and plate–bone contact carries only frictionless normal reactions. These interfaces govern load transfer through the assembly.\n\nIn original Figure 12, maximum plate von Mises stress is 173.39 MPa, whereas the 9th screw reaches 216.04 MPa near the reconstructed–residual mandibular junction. Low colours over much of the plate do not imply the same margin throughout the assembly. The calculation locates a vulnerable connection under this clenching condition. It does not measure fatigue life under repeated mastication or establish equal load sharing before and after bone union. Patient specificity here includes bone shape, muscle forces and contact assumptions.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "The orbital series uses each patient’s opposite side as a volume reference",
+          "markdown": "Yang and colleagues retrospectively studied 40 unilateral orbital fractures: 19 inferior-wall, 9 medial-wall and 12 combined fractures. Bilateral injuries, superior or lateral wall involvement, and follow-up shorter than 6 months were excluded. Implants were 0.8–1.2 mm thick and comprised PCL and β-TCP in an 8:2 ratio. One experienced surgeon performed all procedures. This defines a more specific population than a claim covering every orbital defect. [Manufacturing, eligibility and volume results](ref:R03)\n\nThe orbital volume ratio, OVR, divides injured-side orbital tissue volume by contralateral normal volume. Mean OVR decreased from 109.0% before surgery to 100.6% at 6 months, with P<0.001. Injured-side mean volume decreased from 26.57 to 24.51 cm³, against a normal reference of 24.36 cm³. Near-equal volumes indicate restoration of the boundary of contents herniating into the fracture, but cannot establish recovery of every local orbital curvature.\n\nOriginal Figure 2 compares preoperative measurements with 1 week, 3 months and 6 months after surgery. Volume restoration occurs early, with no evident subsequent drift, providing more information about support than a single postoperative CT. Mean implant insertion time was 19.8 s, starting only after all fracture margins had been exposed and ending when the implant covered the defect. This is not total operating time. With no concurrent conventional-implant control, neither this interval nor the absence of observed related complications estimates a relative risk reduction.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Equal volume can conceal different contours: combined fractures reveal local error",
+          "markdown": "The same orbital study mirrors the normal orbital tissue model, registers it against the injured-side surface, and computes root-mean-square conformance distance within defined anatomical boundaries. This is not manufacturing error between the printed implant and its design file. It measures postoperative orbital tissue contour against the opposite-side reference and incorporates segmentation, registration, natural asymmetry and actual tissue position. [Morphometric analysis and original Figure 3](ref:R03)\n\nThe cohort's median RMS distance decreased from 3.426 mm before surgery to 1.073 mm at 6 months, with P<0.001. Subgroups clarify the difference between the two metrics. Combined-wall and single-wall fractures had postoperative OVR values of 102.3% and 99.6%, respectively, with P=0.105. Their RMS distances were 1.238 and 0.895 mm, with P=0.021. Local shape error thus distinguished more complex reconstructions even when the overall volume difference was not statistically significant.\n\nThe colour-distance maps in original Figure 3 locate discrepancies on the surface, complementing aggregate values. They depict one representative combined fracture, not the distribution across all 40 patients. Mirrored assessment also requires a relatively intact opposite orbit; bilateral injury was explicitly excluded. A reference method useful in this unilateral cohort therefore cannot simply be transferred to bilateral destruction, marked congenital asymmetry or absent anatomical landmarks.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "From digital design to a physical device: what two PEEK applications establish",
+          "markdown": "Sharma and colleagues constrain hospital-based PEEK designs to previously validated geometric and process ranges, while adapting thickness, edge transitions and fixation sites to each case. Implants use 100% rectilinear infill and undergo fit checks against patient anatomical models before sterilization. The article details two representative applications. Its mention of more than 40 institutional implants does not constitute a fully reported comparative cohort. [Clinical implementation and cases](ref:R04)\n\nThe cranial case involved a 46-year-old man with an approximately 14.9×12.1 cm defect after autologous bone resorption. The PEEK implant had a designed thickness of 3.5 mm. Printing took 5 h 10 min and manufacturing was completed within 24 h of final design. Surgery lasted 75 min, required no intraoperative implant modification, and no related complaints or complications were reported at 6 months. The other case was chin augmentation in a 19-year-old man: maximum thickness was 7.0 mm, tapering to 0.6–0.8 mm at the edge, with 4 design iterations and about 1 h of printing. An onlay supported by existing bone serves a different purpose from a plate spanning a full-thickness cranial defect.\n\nThe reported 3–5 days from DICOM acquisition to sterile delivery include design, manufacture and post-processing; they are not interchangeable with printing time. The study documents how a designed shape passes through physical fit assessment, process control and clinical use. A few event-free cases cannot estimate late-event incidence. Alongside the preceding studies, the algorithmic reference geometry, mandibular loading condition and postoperative orbital contour retain distinct measurement objects; the PEEK cases additionally document the operations and intervals between design and physical delivery.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Li et al.: correspondence between an intact skull and its removed implant volume.",
+          "interpretation": "Panels a and b show the intact skull in three dimensions and sagittal section; c marks the removed part in grey; d and e show the defect; f is the complementary volume. Thickness and marginal relationships in c demonstrate that the training label defines a volume between inner and outer surfaces, not only the external contour. Regular margins and simulated corner drilling identify a synthetic geometric reference, rather than fit after surgical implantation."
+        },
+        "F02": {
+          "caption": "Nayak et al.: local stress concentrations in mandibular fixation.",
+          "interpretation": "Panel a shows the assembly, b the plate and c the screws. All colour bars use MPa, but b ends at 173.39, whereas a and c end at 216.04; equal colours therefore cannot be compared directly across panels. Enlargements identify the plate region beside a hole and the most stressed screw, locating a connection more constrained than most of the plate. This is a computed right-molar clenching state; the label Time: 1 s is not a fatigue-test duration."
+        },
+        "F03": {
+          "caption": "Yang et al.: serial orbital tissue volume and bilateral volume ratio.",
+          "interpretation": "The vertical axis in a is cm³, with filled circles for the fractured orbit and open squares for the normal orbit. Panel b uses percent; the dotted 100% line indicates equal bilateral volumes. The horizontal axis covers preoperation and 1 week, 3 months and 6 months postoperation. Postoperative values lie near the normal reference. Brackets marked P>0.99 refer to particular comparisons, not perfect symmetry in every patient; P<0.001 marks the overall preoperative-to-early-postoperative change."
+        },
+        "F04": {
+          "caption": "Yang et al.: local contour restoration after combined inferior and medial wall fracture.",
+          "interpretation": "The upper row contains preoperative coronal and sagittal CT, and the middle row contains 6-month CT. Lower maps show preoperation and 1 week, 3 months and 6 months after surgery, from left to right. The original distance scale from −3 to 9 is preserved; larger yellow and orange discrepancies decrease after surgery. Maps compare orbital tissue contour with the mirrored reference, not bone ingrowth or implant degradation. This representative case localizes errors that a volume measure cannot show."
+        }
+      }
+    },
+    "de": {
+      "title": "Wie lassen sich kraniofaziale Defekte mit patientenspezifischen Implantaten rekonstruieren?",
+      "direction": "Patientenspezifische Implantate",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Die rekonstruierte Anatomie bestimmt, was eine gute Passform leisten muss",
+          "markdown": "Bei der kraniofazialen Rekonstruktion wird nicht jeder Defekt lediglich durch ein nach CT-Daten gedrucktes Teil ersetzt. Ein Kalottendefekt verlangt Kontinuität von Kontur, Dicke und Randanschluss. Eine segmentale Unterkieferrekonstruktion muss Restunterkiefer, Fibulasegmente und Fixationsschrauben zu einer tragenden Einheit verbinden. Die Orbitarekonstruktion verändert die stützende Begrenzung des Orbitainhalts. Formähnlichkeit kann ein gemeinsamer Ausgangspunkt sein; die maßgeblichen Ergebnisse unterscheiden sich jedoch. [Schädelgeometrie](ref:R01) [Unterkiefermontage](ref:R02) [Klinische Orbitabewertung](ref:R03)\n\n| Anatomie und Untersuchungsobjekt | Einbeziehung patientenspezifischer Informationen | Tatsächlich untersuchte Größe |\n|---|---|---|\n| Synthetische Kalottendefekte | Ein Teil des intakten Schädels wird entfernt und als Referenzvolumen erhalten | Übereinstimmung von Defektrand, Oberfläche und Dicke |\n| Fixationsplatte bei Unterkieferrekonstruktion mit Fibula | Ärztlich festgelegte Plattenverläufe und Schraubenpositionen sowie patientenspezifische Beißkraft | Vergleichsspannungen in Platte und Schrauben bei vorgegebener Belastung |\n| Einseitige Orbitawandfrakturen | Individuelle Orbitageometrie für den Entwurf, Gegenseite als postoperative Symmetriereferenz | Orbitavolumenverhältnis und lokale Oberflächenabstände |\n\nDiese Unterscheidung betrifft auch die Materialien. Die Plattenstudie weist Platte und Schrauben Titanlegierungseigenschaften zu; die Orbitaserie verwendet einen PCL/β-TCP-Verbund. Es handelt sich nicht lediglich um unterschiedliche Formen desselben Werkstoffs. Formwiederherstellung, Lastübertragung und Gewebestützung müssen anatomiebezogen verglichen werden. Ein kleinerer Geometriefehler bei einer Aufgabe belegt keine bessere Funktion bei einer anderen.",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Der intakte Schädel liefert die Referenz; synthetische Defekte schaffen keine unabhängigen Patienten",
+          "markdown": "Li und Mitarbeitende erstellten einen Datensatz aus CT-Aufnahmen intakter Schädel von 24 Patienten. Je 10 zufällige Defekte ergaben 240 Defekt–Implantat-Paare. Originalabbildung 2 bewahrt den vollständig entfernten Anteil. Dadurch lassen sich Implantatkontur, lokale Dicke und Randpassung gemeinsam prüfen. Die Referenz ist ein bekannter Teil des intakten Schädels; die fehlende Oberfläche muss nicht erst durch einen Bearbeiter geschätzt werden. [Datenerzeugung und Originalabbildung 2](ref:R01)\n\nDieser Vorteil beruht auf einer kontrollierten Erzeugung, die zugleich den klinischen Aussagebereich begrenzt. Kubische oder kugelförmige Masken mit simulierten Eckbohrungen erzeugen unterschiedliche Positionen und Größen, meist jedoch glattere und geradere Ränder als reale Resektionen. Bereits die Ausgangssegmentierung umfasst fallspezifische Schwellenwerte, die Auswahl der größten Zusammenhangskomponente und gegebenenfalls die Reparatur dünner Knochenbereiche. Bei einzelnen Fällen wird mit einem Radius von 2 mm median-geglättet. Ein Netzwerk rekonstruiert zunächst diese bearbeitete Geometrie und nicht unmittelbar eine unbearbeitete Gewebegrenze.\n\nDie 240 Paare enthalten weiterhin nur 24 ursprüngliche Schädelformen. Gelangen verschiedene Defekte desselben Schädels sowohl ins Training als auch in den Test, kann das Modell dessen Gesamtform bereits kennen. Die Trennung nach ursprünglichem Patienten ist eine daraus abgeleitete Bewertungsanforderung. Beim Zuschneiden wurden außerdem große Teile von Ober- und Unterkiefer entfernt. Das Wort craniofacial im Titel macht den Datensatz daher nicht zur Validierung segmentaler Unterkiefer- oder vollständiger Mittelgesichtsrekonstruktionen. Die geometrische Ergänzung enthält noch keine Schraubenanordnung, intraoperative Randbearbeitung oder Weichteildeckung.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Unterkieferplatten: Automatisierte Oberflächen übertragen Last weiterhin über einzelne Verbindungen",
+          "markdown": "Nayak und Mitarbeitende erzeugen eine Fixationsplatte aus zwei ärztlich ausgewählten Führungskurven und Schraubenpositionen am rekonstruierten Unterkiefer. Kubische Spline-Interpolation und Glättung steuern die Kurven; ein entlang des Pfades geführter Rechteckquerschnitt bildet den Plattenkörper, anschließend entstehen die Bohrungen. Die Glättung verändert das Verhältnis zwischen lokaler Passform und Pfadkrümmung und dient nicht allein dem Aussehen. Der Algorithmus wurde an 5 Fällen untersucht. Die Kurvendefinition dauerte etwa 1 min, Datenverarbeitung und Modellerzeugung weitere 40–60 s. Vollständige Bildplanung, Fertigung und Operation sind darin nicht enthalten. [Algorithmus und FE-Bedingungen](ref:R02)\n\nDas Finite-Elemente-Modell bildet rechtsseitiges molares Zubeißen ab. Muskelkräfte werden anhand der präoperativ gemessenen Beißkraft von 91 N skaliert; Kondylenverschiebungen sind eingeschränkt, und die operativ abgelösten oberflächlichen und tiefen Anteile des linken Masseters entfallen. Die Materialien gelten als homogen, isotrop und linear-elastisch. Ti-6Al-7Nb in Platte und Schrauben erhält einen Elastizitätsmodul von 105 GPa; der rekonstruierte Unterkiefer wird als dichter Kortikalknochen modelliert. Die Schrauben–Knochen-Reibung beträgt 0.3, Schraube und Platte sind fest verbunden, Platte und Knochen übertragen nur reibungsfreie Normalkräfte. Diese Kontakte bestimmen den Lastweg durch die Montage.\n\nIn Originalabbildung 12 beträgt die maximale von-Mises-Spannung der Platte 173.39 MPa. Die 9. Schraube erreicht dagegen 216.04 MPa nahe dem Übergang zwischen rekonstruiertem und verbleibendem Unterkiefer. Niedrige Farbwerte über weiten Plattenbereichen bedeuten somit keine gleichmäßige Reserve der gesamten Einheit. Die Berechnung lokalisiert eine gefährdete Verbindung unter dieser Belastung. Sie misst weder die Ermüdungslebensdauer bei wiederholtem Kauen noch eine unveränderte Lastverteilung vor und nach knöcherner Heilung. Patientenspezifität umfasst hier Knochenform, Muskelkräfte und Kontaktannahmen.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Die Orbitaserie nutzt die Gegenseite jedes Patienten als Volumenreferenz",
+          "markdown": "Yang und Mitarbeitende untersuchten retrospektiv 40 einseitige Orbitawandfrakturen: 19 Bodenfrakturen, 9 mediale und 12 kombinierte Frakturen. Beidseitige Verletzungen, Beteiligung der oberen oder lateralen Wand sowie eine Nachbeobachtung unter 6 Monaten waren ausgeschlossen. Die Implantate waren 0.8–1.2 mm dick und bestanden aus PCL und β-TCP im Verhältnis 8:2. Ein erfahrener Operateur führte sämtliche Eingriffe durch. Damit ist die untersuchte Population genauer definiert als mit einer Aussage zu beliebigen Orbitadefekten. [Fertigung, Einschluss und Volumenergebnisse](ref:R03)\n\nDas Orbitavolumenverhältnis OVR teilt das Gewebevolumen der verletzten Orbita durch das der normalen Gegenseite. Der Mittelwert sank von präoperativ 109.0% auf 100.6% nach 6 Monaten, mit P<0.001. Das mittlere Volumen der verletzten Seite sank von 26.57 auf 24.51 cm³; die normale Referenz betrug 24.36 cm³. Nahezu gleiche Volumina zeigen eine Wiederherstellung der Begrenzung zuvor in den Frakturbereich verlagerter Inhalte, belegen aber nicht jede einzelne lokale Wandkrümmung.\n\nOriginalabbildung 2 vergleicht den Ausgangsbefund mit 1 Woche, 3 Monaten und 6 Monaten nach dem Eingriff. Die frühe Volumenwiederherstellung ohne erkennbares späteres Abdriften beschreibt die Stützwirkung genauer als eine einzige postoperative CT. Die mittlere Einsetzzeit betrug 19.8 s. Sie begann erst nach Freilegung aller Defektränder und endete mit deren Abdeckung durch das Implantat; sie ist keine Gesamtoperationszeit. Ohne zeitgleiche Kontrollgruppe mit konventionellen Implantaten lässt sich weder daraus noch aus dem Ausbleiben beobachteter entsprechender Komplikationen eine relative Risikoreduktion berechnen.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Gleiches Volumen kann unterschiedliche Konturen verbergen: Kombinierte Frakturen zeigen lokale Fehler",
+          "markdown": "Dieselbe Orbitastudie spiegelt das Gewebemodell der normalen Orbita, registriert es zur verletzten Seite und berechnet innerhalb definierter anatomischer Grenzen den quadratischen Mittelwert der Oberflächenabstände, die RMS conformance distance. Dies ist kein Fertigungsfehler zwischen Druckteil und Entwurfsdatei. Gemessen wird die postoperative Gewebekontur gegenüber der Gegenseite; Segmentierung, Registrierung, natürliche Asymmetrie und tatsächliche Gewebelage gehen gemeinsam ein. [Morphometrie und Originalabbildung 3](ref:R03)\n\nDer Median des RMS-Abstands sank in der Kohorte von präoperativ 3.426 mm auf 1.073 mm nach 6 Monaten, mit P<0.001. Die Untergruppen verdeutlichen den Unterschied zwischen den Messgrößen: Bei kombinierten und isolierten Wandfrakturen betrug das postoperative OVR 102.3% beziehungsweise 99.6%, mit P=0.105. Die RMS-Abstände lagen dagegen bei 1.238 beziehungsweise 0.895 mm, mit P=0.021. Der lokale Formfehler unterschied somit komplexere Rekonstruktionen, obwohl der Gesamtvolumenunterschied statistisch nicht signifikant war.\n\nDie farbcodierten Abstandskarten in Originalabbildung 3 lokalisieren Abweichungen auf der Oberfläche und ergänzen die aggregierten Werte. Gezeigt wird ein repräsentativer kombinierter Frakturfall, nicht die Verteilung aller 40 Patienten. Die Spiegelung setzt zudem eine relativ intakte Gegenseite voraus; beidseitige Verletzungen waren ausdrücklich ausgeschlossen. Das Referenzverfahren dieser einseitigen Kohorte lässt sich deshalb nicht ohne Weiteres auf beidseitige Zerstörung, ausgeprägte angeborene Asymmetrie oder fehlende anatomische Landmarken übertragen.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Vom digitalen Entwurf zum Implantat: Was zwei PEEK-Anwendungen belegen",
+          "markdown": "Sharma und Mitarbeitende begrenzen die klinikinterne PEEK-Gestaltung auf zuvor validierte Geometrie- und Prozessbereiche und passen Dicke, Randübergänge sowie Fixationspositionen fallbezogen an. Die Implantate besitzen 100% geradlinige Füllung; vor der Sterilisation wird die Passform an patientenspezifischen Anatomiemodellen geprüft. Detailliert dargestellt werden zwei repräsentative Anwendungen. Die erwähnten mehr als 40 institutionell eingesetzten Implantate bilden keine vollständig berichtete Vergleichskohorte. [Klinische Umsetzung und Fälle](ref:R04)\n\nDer kraniale Fall betraf einen 46-jährigen Mann mit einem ungefähr 14.9×12.1 cm großen Defekt nach Resorption des autologen Knochens. Das PEEK-Implantat wurde mit 3.5 mm Dicke entworfen. Der Druck dauerte 5 h 10 min; die Fertigung war innerhalb von 24 h nach endgültigem Entwurf abgeschlossen. Die Operation dauerte 75 min, erforderte keine intraoperative Implantatanpassung, und nach 6 Monaten wurden keine entsprechenden Beschwerden oder Komplikationen berichtet. Der andere Fall war eine Kinnaugmentation bei einem 19-jährigen Mann: maximale Dicke 7.0 mm, zum Rand auf 0.6–0.8 mm auslaufend, 4 Entwurfsiterationen und ungefähr 1 h Druckzeit. Ein auf vorhandenem Knochen aufliegendes Augmentat erfüllt eine andere Aufgabe als ein Implantat über einem durchgehenden Kalottendefekt.\n\nDie berichteten 3–5 Tage vom DICOM-Erhalt bis zur sterilen Bereitstellung umfassen Entwurf, Fertigung und Nachbearbeitung und sind nicht mit der reinen Druckzeit austauschbar. Die Studie dokumentiert, wie eine Form durch physische Passprüfung, Prozesskontrolle und klinische Anwendung geführt wird. Wenige ereignisfreie Fälle erlauben keine Schätzung später Ereignisraten. In den vorangehenden Arbeiten behalten algorithmische Referenzgeometrie, Unterkieferbelastung und postoperative Orbitakontur jeweils eigene Messobjekte; die PEEK-Fälle dokumentieren zusätzlich die tatsächlichen Arbeitsschritte und Zeitintervalle zwischen Entwurf und Bereitstellung.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Li et al.: Zuordnung von intaktem Schädel und entferntem Implantatvolumen.",
+          "interpretation": "a und b zeigen den intakten Schädel dreidimensional und sagittal; c markiert den entfernten Anteil grau, d und e den Defekt und f das komplementäre Volumen. Dicke und Randbeziehung in c zeigen, dass die Trainingsreferenz ein Volumen zwischen Innen- und Außenfläche und nicht nur die Außenkontur definiert. Regelmäßige Ränder und simulierte Eckbohrungen kennzeichnen eine synthetische Geometriereferenz, keine Passform nach Implantation."
+        },
+        "F02": {
+          "caption": "Nayak et al.: Lokale Spannungskonzentrationen in der Unterkieferfixation.",
+          "interpretation": "a zeigt die Montage, b die Platte und c die Schrauben. Sämtliche Farbskalen verwenden MPa, doch b endet bei 173.39, a und c bei 216.04; gleiche Farben sind panelübergreifend nicht unmittelbar vergleichbar. Vergrößerungen markieren den Bereich neben einer Plattenbohrung und die höchstbelastete Schraube. Damit wird eine Verbindung lokalisiert, die stärker beansprucht ist als große Teile der Platte. Gezeigt wird ein berechneter Zustand rechtsseitigen molaren Zubeißens; Time: 1 s ist keine Ermüdungsprüfdauer."
+        },
+        "F03": {
+          "caption": "Yang et al.: Verlauf von Orbitagewebevolumen und beidseitigem Volumenverhältnis.",
+          "interpretation": "Die Ordinate in a zeigt cm³; ausgefüllte Kreise stehen für die frakturierte, offene Quadrate für die normale Orbita. b verwendet Prozent; die punktierte 100%-Linie bedeutet gleiches Volumen beider Seiten. Die Abszisse umfasst präoperativ sowie 1 Woche, 3 Monate und 6 Monate postoperativ. Die späteren Werte liegen nahe der normalen Referenz. Klammern mit P>0.99 beziehen sich auf bestimmte Vergleiche, nicht auf perfekte Symmetrie jedes Patienten; P<0.001 markiert die Gesamtänderung vom Ausgangsbefund zum frühen postoperativen Zeitpunkt."
+        },
+        "F04": {
+          "caption": "Yang et al.: Lokale Konturwiederherstellung bei kombinierter Boden- und medialer Wandfraktur.",
+          "interpretation": "Oben stehen präoperative koronare und sagittale CT-Bilder, in der Mitte CT-Bilder nach 6 Monaten. Die unteren Karten zeigen von links nach rechts präoperativ sowie 1 Woche, 3 Monate und 6 Monate postoperativ. Die originale Abstandsskala von −3 bis 9 bleibt erhalten; größere gelbe und orange Abweichungen nehmen nach dem Eingriff ab. Verglichen werden Orbitagewebekontur und gespiegelte Referenz, nicht Knocheneinwuchs oder Implantatabbau. Der repräsentative Fall lokalisiert Fehler, die ein Volumenwert nicht zeigt."
+        }
+      }
+    }
+  }
+}

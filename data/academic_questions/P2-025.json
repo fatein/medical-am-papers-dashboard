@@ -1,0 +1,363 @@
+{
+  "schema_version": 2,
+  "question_id": "P2-025",
+  "p": "P2",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-04",
+  "related_paper_ids": [
+    "doc_0e17554f46500e3bc9fb",
+    "doc_943a65a9c5e6f7384627",
+    "KB2026A6C03BCC1637",
+    "doc_74f2772ece06f238ad67",
+    "doc_2ffaea6fdc325592f279"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Effects of the Washing Time and Washing Solution on the Biocompatibility and Mechanical Properties of 3D Printed Dental Resin Materials",
+      "publisher": "Polymers",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/polym13244410",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Effects of washing agents on the mechanical and biocompatibility properties of water-washable 3D printing crown and bridge resin",
+      "publisher": "Scientific Reports",
+      "year": 2024,
+      "url": "https://doi.org/10.1038/s41598-024-60450-7",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Effects of Postcuring Temperature on the Mechanical Properties and Biocompatibility of Three-Dimensional Printed Dental Resin Material",
+      "publisher": "Polymers",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/polym13081180",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "The effect of nitrogen atmosphere during post-curing on cytotoxicity, polishability, flexural strength, and surface hardness of 3D-printed denture bases: an in vitro study",
+      "publisher": "Journal of Materials Science: Materials in Medicine",
+      "year": 2026,
+      "url": "https://doi.org/10.1007/s10856-026-07006-5",
+      "kind": "paper"
+    },
+    {
+      "id": "R05",
+      "title": "Assessing the impact of surface treatment, aging, and post-curing conditions on the water sorption and solubility of 3D-printed denture base resins compared to conventional and milled alternatives",
+      "publisher": "BMC Oral Health",
+      "year": 2025,
+      "url": "https://doi.org/10.1186/s12903-025-07115-7",
+      "kind": "paper"
+    },
+    {
+      "id": "R06",
+      "title": "Comparative Evaluation of TiO2 Nanoparticle Addition and Postcuring Time on the Flexural Properties and Hardness of Additively Fabricated Denture Base Resins",
+      "publisher": "Nanomaterials",
+      "year": 2023,
+      "url": "https://doi.org/10.3390/nano13233061",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 11",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8705711/#polymers-13-04410-f011",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P2-025/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R02",
+      "original_label": "Figure 1",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11061276/#Fig1",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P2-025/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R03",
+      "original_label": "Figure 11",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8067535/#polymers-13-01180-f011",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P2-025/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R04",
+      "original_label": "Figure 6",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12847206/#Fig6",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P2-025/F04.jpg"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R05",
+      "original_label": "Figure 2",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12573946/#Fig2",
+      "license": "CC BY-NC-ND 4.0",
+      "asset_path": "assets/academic_figures/P2-025/F05.jpg"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R06",
+      "original_label": "Figure 4",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10707993/#nanomaterials-13-03061-f004",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P2-025/F06.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "不同材料与后处理如何影响修复体可靠性？",
+      "direction": "修复体材料与耐久",
+      "sections": [
+        {
+          "id": "washing_and_stiffness",
+          "title": "清洗改善细胞反应，却可能降低特定树脂的刚度",
+          "markdown": "Hwangbo 等将NextDent C&B（ND）与Formlabs Denture Teeth A2（FL）以50 μm层厚打印，比较90%异丙醇（IPA）与三丙二醇单甲醚（TPM）清洗3、5、10、15、30、60、90 min；所有组随后统一在60°C后固化30 min。未清洗对照也接受后固化，因此可以分辨清洗带来的额外作用。力学条为25×2×2 mm，水中37°C放置24 h，跨距20 mm、加载速度1 mm/min；生物试验则将人牙龈成纤维细胞直接接种到圆片表面。[清洗时长与溶剂实验](ref:R01)\n\n合并24–72 h培养时点，ND使用IPA的相对细胞活力由未清洗的23.69±2.77%升至90 min的74.75±12.31%；FL使用TPM由20.64±7.43%升至80.79±15.43%。这些是代谢活性相对值，不是临床存活率。培养时点合并后，清洗液主效应不显著，但材料与清洗液存在交互，不能据此把TPM定为所有配方的优选。\n\n细胞检测还须区分WST-8代谢活力与LDH膜损伤：合并条件后，未清洗组的LDH细胞毒性为65.69±22.55%，清洗15 min为9.52±7.83%，90 min为5.04±4.38%。LDH下降与代谢活力上升可以相互支持，但两种读数不是互为补数；不能用其中一项推算另一项。细胞反应的主要改善已可在较短清洗时段出现，而不同树脂的刚度损失幅度并不相同。\n\n清洗的力学代价集中在FL。FL–IPA弯曲模量由未清洗的1.20±0.21 GPa降至60 min的0.79±0.10 GPa；FL–TPM各清洗时长均低于未清洗组，而ND组内没有显著时间差异。合并材料与清洗液后，60 min的弯曲强度低于未清洗对照，但分开到每个材料–溶剂组合时，强度的时间比较并不显著。故“清洗不影响强度”只能在指定分组层级讨论；模量降低也不能等同于断裂载荷降低。\n\n文中力学方法写每组15件，图注却写5件，误差估计的样本数存在报告矛盾。扫描电镜没有发现裂纹，也不能排除溶剂吸收或可溶组分流失；该研究没有直接定量残余单体，因此清洗改善细胞反应的化学路径仍未被分离。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "water_washable_formulation",
+          "title": "水洗配方中，酒精损伤不能从常规树脂经验外推",
+          "markdown": "Liu 等针对RayDent水洗型冠桥树脂，采用DLP打印、50 μm层厚，先旋转清洗再超声清洗，总时长为5、10、20、30 min，最后统一后固化30 min。水与清洁剂组的超声阶段都使用水，酒精组两个阶段均用95%乙醇。未处理组既不清洗也不后固化，另设只后固化组，因而不是简单的溶剂替换实验。清洁剂浓度在方法与分组表分别写为2%和0.2%，不能据此完整复现该配方。[水洗冠桥树脂实验](ref:R02)\n\n只后固化组弯曲强度为110.31±5.55 MPa；酒精组跨时长合并仅64.30±14.50 MPa。水洗在20 min以内相对稳定，30 min时下降；酒精清洗则各时点均较低。以810 cm⁻¹反应峰和1720–1730 cm⁻¹参照区计算，水洗20 min的转化率为53.94±1.40%，酒精30 min为42.42±2.21%。这些是不同条件的端点，不能解释成同一试件因清洗而下降的转化率。\n\n生物试验采用37°C、24 h、1.25 cm²/mL制备浸提液，再暴露细胞24 h，与上一研究的直接接种不同。未处理与只后固化组活力分别仅0.76±1.46%和0.65±1.47%；清洗20 min后，水、酒精、清洁剂分别为99.08±4.22%、97.95±3.57%、96.50±10.79%，三者无显著差异。因此，在该水洗配方中，酒精没有显示相应的细胞收益，却伴随较低强度。\n\n气相色谱–质谱采用丙酮提取，并非唾液中的释放动力学；低于检测限也不等于零释放。原图把维氏硬度标为GPa，单位与数值量级不协调，本文只讨论其相对趋势，不把这些数值作为可跨研究比较的绝对硬度。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "temperature_time_and_cells",
+          "title": "后固化温度提高强度，转化率和细胞反应却有不同平台",
+          "markdown": "Bayarsaikhan 等使用同一FL Denture Teeth A2树脂，50 μm层厚，力学条以120°、圆片以0°打印；90% IPA清洗10 min后，在405 nm条件下组合40、60、80°C与15、30、60、90、120 min后固化。每个弯曲试验条件15件，另设未后固化的绿坯组。相同配方下同时改变温度与时间，可以避免把设备和材料差别误当作热处理效应。[温度–时间析因实验](ref:R03)\n\n后固化15 min时，40、60、80°C的弯曲强度依次为100.70±6.65、115.00±10.55、121.35±8.70 MPa；80°C延长至90与120 min达到145.13±8.73及147.48±5.82 MPa，显示延长到后段的增益减小。但以1638/1608 cm⁻¹峰比得到的最高转化率出现在60°C、120 min，为63.37±0.42%；超过60 min后，不同温度的转化率差异不显著。最高强度与最高光谱转化率并不落在完全相同的条件，不能用单个表面光谱数值替代整个网络的承载表现。\n\n直接培养24 h时，80°C、120 min组相对细胞活力为89.51±7.09%，而40°C、15 min为48.53±14.58%。图中48与72 h的柱高和离散度又改变，尤其72 h不能直接沿用24 h的改善幅度。培养液在观察期内的暴露历史与检测时点共同参与结果，较高后固化温度不是跨所有暴露时长不变的生物学保证。\n\n该试验没有测量具体可浸出物的浓度变化，也没有把表面蛋白吸附与细胞反应做独立因果干预。绿坯在弯曲过程中未按常规方式断裂，其计算应力与充分后固化试件的破坏强度也不构成完全相同的终点。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "nitrogen_and_conversion_metric",
+          "title": "氮气后固化的收益受光谱算法与接触模型影响",
+          "markdown": "Gladrow 等以105°方向、50 μm层厚打印V-print dentbase；异丙醇超声清洗先3 min、换液后再2 min，随后用Otoflash对每面闪光2000次，在空气或氮气环境中处理。两面间冷却2 min；氮气程序包括预吹扫，再以1 bar供气。所谓老化仅为37°C人工唾液放置24 h，不能与长期水热疲劳混称。[空气与氮气后处理实验](ref:R04)\n\n氮气组的转化率在两种光谱计算方法下均较高，但同一材料用1637 cm⁻¹或1320 cm⁻¹反应峰、统一1608 cm⁻¹参照峰，会得到明显不同的绝对值。该项检测只有每组2件试样、每件2个区域，重复测点不增加独立试样数。因而既不能直接与上一研究的转化率排序，也不能把图中差值作为所有树脂可获得的固定增量。\n\n硬度的氮气优势主要在唾液放置后显现，未老化的空气与氮气组没有显著差异。铣削PMMA对照在弯曲时发生塑性变形而未断裂，打印组则断裂，文中两者的“弯曲强度”并非完全相同的失效终点。打印树脂的强度排序不能据此扩展为对铣削材料临床寿命的排序。\n\n细胞研究还区分L929细胞直接接触圆片与接触浸提液：直接接触时未老化氮气组表现较好，浸提液组的排列却不同。PrestoBlue读数表示还原活性；多个检测孔有的来自合并浸提液，不是多个独立材料批次。氮气降低氧抑制具有化学合理性，但论文并未定量测出某种有害单体减少多少，不能将细胞结果改写成特定物质的释放量。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "glycerin_and_mass_balance",
+          "title": "甘油环境的作用必须从连续称重与负溶解值中辨认",
+          "markdown": "Izzettinoglu 与Eroglu比较热聚合、铣削及FL打印基托树脂。打印试件为15 mm直径、2 mm厚圆片，45°、50 μm层厚；99.9% IPA清洗10 min后，在80°C空气或甘油中后固化10、15、30、60 min，再分机械抛光与两种涂层表面。各条件14件；总体材料均值因此混合了不同后固化和表面条件，不是单一配方的固有常数。[甘油后固化与吸水–溶解实验](ref:R05)\n\n同一批试样依次接受37°C水浸7 d、30次义齿清洁片处理、2000次5–55°C热循环。每次清洁3 min，实际在6 d内每天进行5次；不能把这种序列直接换算为特定临床年限。水中、清洁后和热循环后的打印材料平均吸水值依次为7.82±1.87、15.29±3.39、12.80±2.61 μg/mm³；对应热聚合材料为10.92±2.09、19.12±2.93、15.27±2.56 μg/mm³。打印组平均较低，但各阶段包含之前的处理历史。\n\n水浸后所有材料报告负“溶解值”，打印组为−8.05±1.08 μg/mm³，因为计算使用干燥前后的质量差，再干燥质量反而高于初始质量。它反映净质量平衡，可能包含未完全脱除的结合水，绝不是负的单体释放量。后续清洁阶段以相邻干燥质量为基线，打印组为5.75±2.19 μg/mm³；热循环阶段为1.71±1.85 μg/mm³，此时反而高于另两种工艺，排名随端点改变。\n\n甘油组在清洁后的吸水值为15.90±4.21 μg/mm³，高于空气组14.69±2.15 μg/mm³，但净溶解值更低；后固化时间对吸水量并无显著影响。该结果不支持“隔绝氧气后所有水相关指标都改善”，也没有测定转化率来证明甘油收益完全来自更充分聚合。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "filler_curing_interaction",
+          "title": "纳米填料与后固化时间的组合存在收益递减",
+          "markdown": "AlGhamdi 等在ASIGA DentaBASE与NextDent Denture 3D+中加入0、1、2 wt%硅烷化TiO₂纳米颗粒，颗粒约26 nm；以90°、50 μm层厚打印，分别用匹配设备后固化15、60、90 min。每个力学条件10件，所有试样先在37°C水中放置2 d，再接受5000次5–55°C热循环。因缺少未老化平行组，这里比较的是老化后的性能，不能计算各组保留了多少初始强度。[填料浓度与后固化实验](ref:R06)\n\n| NextDent配方 | 15 min弯曲强度，MPa | 60 min，MPa | 90 min，MPa |\n|---|---:|---:|---:|\n| 0 wt% | 72.3±2.8 | 79.9±2.6 | 85.2±1.8 |\n| 1 wt% | 78.1±3.2 | 87.1±1.6 | 92.0±2.4 |\n| 2 wt% | 83.2±4.3 | 87.3±3.4 | 93.6±4.1 |\n\nNextDent在60与90 min时，1与2 wt%之间没有显著强度差异，增加填料不再带来同等收益。ASIGA在90 min时，1 wt%为91.4±9.8 MPa、2 wt%为90.4±2.9 MPa，浓度总体效应不显著；原文“最高浓度始终最好”的概括并不符合所有分组。\n\n弯曲条尺寸64×10×3.3 mm，跨距50 mm、加载速度5 mm/min；硬度则在圆片上以25 gf、保持30 s测定，每件取多个压痕的平均。跨距下的整体弯曲与表层压入由不同体积的材料响应，因此二者方向不一致并不构成自相矛盾。该实验同时改变填料浓度与后固化时间，但没有把光穿透深度或颗粒分散度作为可独立控制的变量。\n\n硬度也没有与强度同步：NextDent各时间点的浓度效应均不显著，而ASIGA在90 min时，纯树脂19.7±2.1的维氏硬度高于2 wt%的14.9±2.5。断口图显示填料聚集与形貌改变，但锯齿状断口不是断裂韧性或裂纹扩展阻力的直接量值。研究未测定填料组的细胞反应、实际单体释放或定量转化率，因此不能从热循环后弯曲强度的提高推导这些指标也同步改善。",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Hwangbo et al.：清洗时长对弯曲模量的影响；原图数据来源NLM/PMC。",
+          "interpretation": "四个面板依次是ND–IPA、ND–TPM、FL–IPA、FL–TPM；横轴是未清洗CTR与3–90 min清洗，纵轴为GPa。上排ND柱顶均标a，不能把小幅升降视为显著；下排FL–TPM从CTR的a变为所有清洗组的b，显示主要差异发生在是否清洗，而不是清洗越久就持续越低。FL–IPA在60 min最低、90 min回升，但这不证明材料恢复。误差棒为原文标注的标准差；图注5件与方法15件的矛盾保留在正文中。[原始模量结果](ref:R01)"
+        },
+        "F02": {
+          "caption": "Liu et al.：水洗树脂的强度、硬度和转化率；原图数据来源NLM/PMC。",
+          "interpretation": "A–C为弯曲强度，D–F为维氏硬度，G–I为转化率。左列合并清洗时长，中列合并清洗剂，右列才保留两者的交互；因此A中的酒精均值不能称为某一固定清洗时间的结果。NT同时缺少清洗与后固化，OC只有后固化。C中酒精曲线与水、清洁剂曲线分离，I中水与清洁剂的后段转化率平台却相近；强度损失和转化率增加可以在同一后处理序列中并存。D–F原图的GPa硬度标注存在疑问，保留原图而不据此换算硬度。[原图及分组方法](ref:R02)"
+        },
+        "F03": {
+          "caption": "Bayarsaikhan et al.：不同培养时点的细胞活力；原图数据来源NLM/PMC。",
+          "interpretation": "A、B、C分别对应24、48、72 h，横轴为15–120 min后固化，白、浅灰、深灰分别为40、60、80°C，GS是未后固化。每个时点的温度对照应在同一组柱内读取；72 h图的柱高及误差不能用24 h图代替。星号表示与无材料细胞对照的比较，并不是与相邻温度组的比较。高温组多表现出较高活力，但72 h仍可见较宽误差，故该图支持特定检测时点的细胞反应差异，而非长期黏膜耐受时间的排序。[原始细胞培养结果](ref:R03)"
+        },
+        "F04": {
+          "caption": "Gladrow et al.：同一材料的两种转化率算法；原图数据来源NLM/PMC。",
+          "interpretation": "a按1637 cm⁻¹峰计算，b按1320 cm⁻¹峰计算；蓝色为空气、绿色为氮气。两图均呈氮气较高，但纵轴分别从50附近与70附近开始，且上限不同，不能按矩形高度跨图比较效应。图中as printed指未接受后续唾液老化，不表示没有后固化。两种算法产生不同绝对范围，说明转化率需连同选峰与参照峰报告。每组2个独立试件上的重复区域并不构成更大的独立样本量。[光谱方法与原图](ref:R04)"
+        },
+        "F05": {
+          "caption": "Izzettinoglu and Eroglu：连续处理后的吸水与净质量损失；原图数据来源NLM/PMC，原图未改动。",
+          "interpretation": "A为吸水Wsp，B为按干燥质量差计算的Wsl，蓝、红、绿分别为热聚合、铣削、打印；DW、DC、TC是水浸、清洁、热循环。A中清洁阶段均升高，但B中水浸值在零线下，表示再次干燥后的质量高于基线，不是发生反向溶出。B的热循环阶段绿色柱高于另两组，与A中打印吸水较低的排序不同。误差棒为标准差，材料均值混合多种表面与后固化条件；本图不能单独归因于甘油。[原始质量平衡结果](ref:R05)"
+        },
+        "F06": {
+          "caption": "AlGhamdi et al.：NextDent填料组的完整断口图；原图数据来源NLM/PMC。",
+          "interpretation": "三列依次为15、60、90 min，三行依次为0、1、2 wt% TiO₂，全部标尺为50 μm。同列上下比较填料浓度，同排左右比较后固化时间；这样才能避免把G与C的差别只归因于一个变量。未填充组在90 min出现较明显起伏，填充组可见密集颗粒和团聚区域，2 wt%并未形成可目视认定的均匀网络。图像来自破坏后的局部表面，没有给出裂纹生长速率或断裂能；它解释断口形貌差别，不能把粗糙程度换算成韧性增幅。[断口图与力学表格](ref:R06)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do different materials and post-processing affect restoration reliability?",
+      "direction": "Restorative materials and durability",
+      "sections": [
+        {
+          "id": "washing_and_stiffness",
+          "title": "Washing improves cellular response but can reduce resin-specific stiffness",
+          "markdown": "Hwangbo et al. printed NextDent C&B (ND) and Formlabs Denture Teeth A2 (FL) at 50 μm layer thickness and compared 90% isopropanol (IPA) with tripropylene glycol monomethyl ether (TPM) for 3, 5, 10, 15, 30, 60 and 90 min. All groups then received 30 min of post-curing at 60°C. Unwashed controls also received post-curing, allowing the additional contribution of washing to be distinguished. Mechanical bars measured 25×2×2 mm and were stored in water at 37°C for 24 h before testing over a 20 mm span at 1 mm/min. Human gingival fibroblasts were seeded directly onto disks for biological testing.[Washing-duration and solvent experiment](ref:R01)\n\nAcross pooled culture times of 24–72 h, relative cell viability for ND washed in IPA increased from 23.69±2.77% without washing to 74.75±12.31% after 90 min; FL washed in TPM increased from 20.64±7.43% to 80.79±15.43%. These are relative metabolic activity values, not clinical survival rates. With culture times pooled, the main effect of washing solution was not significant, but material interacted with solution. TPM therefore cannot be designated the preferred solvent for every formulation.\n\nThe assays also distinguish WST-8 metabolic viability from LDH membrane damage. With conditions pooled, LDH cytotoxicity was 65.69±22.55% without washing, 9.52±7.83% after 15 min and 5.04±4.38% after 90 min. Lower LDH and higher metabolic viability can support one another, but the readings are not complementary percentages and cannot be calculated from each other. Much of the cellular improvement can appear at shorter washing durations, while stiffness losses differ between resins.\n\nThe mechanical penalty was concentrated in FL. Its flexural modulus after IPA washing decreased from 1.20±0.21 GPa without washing to 0.79±0.10 GPa after 60 min. All washing durations for FL–TPM produced lower moduli than the unwashed control, whereas ND showed no significant within-group time differences. Pooling materials and solvents, flexural strength after 60 min was lower than in unwashed controls; within each material–solvent combination, however, time comparisons for strength were not significant. Thus, the statement that washing does not affect strength depends on the grouping level. A lower modulus also does not itself establish a lower fracture load.\n\nThe mechanical methods specify 15 specimens per group, whereas the figure caption states 5, leaving an inconsistency in the sample size underlying uncertainty estimates. Absence of cracks on scanning electron microscopy does not exclude solvent uptake or loss of soluble components. Residual monomers were not directly quantified, so the chemical pathways behind the improved cellular response were not separated.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "water_washable_formulation",
+          "title": "Alcohol effects in a water-washable formulation cannot be inferred from conventional resins",
+          "markdown": "Liu et al. investigated RayDent water-washable crown-and-bridge resin, printed by DLP with 50 μm layers. Rotary washing followed by ultrasonic washing lasted 5, 10, 20 or 30 min in total, followed by a uniform 30 min post-cure. The ultrasonic stage used water for both the water and detergent groups; both stages used 95% ethanol in the alcohol group. An untreated group received neither washing nor post-curing, and a separate group received post-curing alone, so this was more than a simple solvent-substitution experiment. Detergent concentration is reported as 2% in the methods and 0.2% in the grouping table, preventing exact reproduction of that formulation.[Water-washable crown-and-bridge resin experiment](ref:R02)\n\nFlexural strength was 110.31±5.55 MPa after post-curing alone, versus 64.30±14.50 MPa for the alcohol groups pooled across durations. Water washing remained relatively stable up to 20 min and declined at 30 min; alcohol washing produced lower strength at every time point. Conversion, calculated using the reactive band at 810 cm⁻¹ and reference region at 1720–1730 cm⁻¹, was 53.94±1.40% after 20 min in water and 42.42±2.21% after 30 min in alcohol. These are endpoints under different conditions, not a longitudinal decrease in conversion of the same specimen.\n\nFor biological testing, extracts were prepared at 37°C for 24 h using 1.25 cm²/mL and applied to cells for 24 h, unlike direct seeding in the preceding study. Viability was only 0.76±1.46% without treatment and 0.65±1.47% after post-curing alone. After 20 min of washing, water, alcohol and detergent yielded 99.08±4.22%, 97.95±3.57% and 96.50±10.79%, without significant differences among them. In this water-washable formulation, alcohol therefore showed no corresponding cellular benefit while accompanying lower strength.\n\nGas chromatography–mass spectrometry used acetone extraction, not release kinetics in saliva; values below detection limits do not mean zero release. The original graph labels Vickers hardness in GPa, an inconsistency between the unit and numerical scale. Only relative trends are discussed here, without treating those numbers as absolute hardness values comparable across studies.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "temperature_time_and_cells",
+          "title": "Higher curing temperature improves strength, while conversion and cellular response plateau differently",
+          "markdown": "Bayarsaikhan et al. used the same FL Denture Teeth A2 resin with 50 μm layers, printing mechanical bars at 120° and disks at 0°. Following 10 min washing in 90% IPA, post-curing at 405 nm combined 40, 60 or 80°C with 15, 30, 60, 90 or 120 min. Each bending condition included 15 specimens, with an additional green-state group receiving no post-cure. Varying temperature and duration within one formulation helps avoid confusing equipment and material differences with thermal effects.[Temperature–time factorial experiment](ref:R03)\n\nAfter 15 min, flexural strength at 40, 60 and 80°C was 100.70±6.65, 115.00±10.55 and 121.35±8.70 MPa, respectively. Extending the 80°C treatment to 90 and 120 min yielded 145.13±8.73 and 147.48±5.82 MPa, showing diminishing later gains. However, the maximum conversion calculated from the 1638/1608 cm⁻¹ band ratio occurred at 60°C for 120 min, reaching 63.37±0.42%. Beyond 60 min, conversion did not differ significantly between temperatures. Maximum strength and maximum spectroscopic conversion thus did not occur under identical conditions; a single surface spectroscopic value cannot replace the load-bearing behavior of the whole network.\n\nAfter 24 h of direct culture, relative cell viability was 89.51±7.09% for 80°C and 120 min, versus 48.53±14.58% for 40°C and 15 min. Bar heights and dispersion changed again at 48 and 72 h; particularly at 72 h, the magnitude of improvement observed at 24 h cannot simply be carried forward. Exposure history in the culture medium and assay time jointly shape the result. Higher post-curing temperature is not a biological guarantee that remains constant across exposure durations.\n\nThe experiment did not measure changes in concentrations of specific leachables or independently manipulate surface protein adsorption to establish its causal contribution to cellular response. Green-state bars did not fracture in the conventional manner during bending, so their calculated stress and the failure strength of adequately post-cured specimens are not fully equivalent endpoints.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "nitrogen_and_conversion_metric",
+          "title": "Benefits of nitrogen post-curing depend on the spectral calculation and contact model",
+          "markdown": "Gladrow et al. printed V-print dentbase at 105° with 50 μm layers. Ultrasonic IPA washing lasted 3 min followed by 2 min in fresh solvent. Otoflash then delivered 2000 flashes per side in air or nitrogen, with 2 min cooling between sides; the nitrogen procedure included pre-purging and gas delivery at 1 bar. The treatment called aging was only 24 h in artificial saliva at 37°C, not long-term hydrothermal fatigue.[Air versus nitrogen post-processing experiment](ref:R04)\n\nConversion was higher under nitrogen with both spectroscopic calculations. However, using reactive bands at 1637 cm⁻¹ or 1320 cm⁻¹ with the same 1608 cm⁻¹ reference yielded substantially different absolute values for the same material. This measurement included only 2 specimens per group with 2 regions per specimen; repeated regions do not increase the number of independent specimens. Neither direct conversion ranking against the preceding study nor treating the plotted difference as a fixed gain available to every resin is justified.\n\nThe hardness advantage of nitrogen appeared primarily after saliva storage; unaged air and nitrogen groups did not differ significantly. Milled PMMA controls deformed plastically without fracturing during bending, whereas printed specimens fractured, so their reported flexural strengths did not represent fully identical failure endpoints. Ranking printed resin strength therefore cannot be extended to ranking clinical service life against milled material.\n\nThe cell experiments also distinguished direct contact of L929 cells with disks from exposure to extracts. Unaged nitrogen specimens performed relatively well in direct contact, but the extract groups had a different ordering. PrestoBlue readings represent reducing activity; some multiple assay wells came from pooled extracts rather than independent material batches. Reduced oxygen inhibition under nitrogen is chemically plausible, but the study did not quantify how much of any particular harmful monomer was removed. Cellular findings cannot be rewritten as release quantities of specific substances.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "glycerin_and_mass_balance",
+          "title": "Glycerin effects must be distinguished from sequential weighing and negative solubility values",
+          "markdown": "Izzettinoglu and Eroglu compared heat-polymerized, milled and FL printed denture-base resins. Printed disks were 15 mm in diameter and 2 mm thick, made at 45° with 50 μm layers. Following 10 min in 99.9% IPA, they were post-cured at 80°C in air or glycerin for 10, 15, 30 or 60 min, then assigned to mechanical polishing or either of two coating surfaces. Each condition included 14 specimens. Overall material means therefore combine different curing and surface conditions rather than representing intrinsic constants of a single formulation.[Glycerin post-curing and sorption–solubility experiment](ref:R05)\n\nThe same specimens sequentially underwent 7 d in water at 37°C, 30 denture-cleanser treatments and 2000 thermal cycles at 5–55°C. Each cleaning exposure lasted 3 min, actually performed 5 times daily over 6 d; this sequence cannot be directly converted into a particular clinical service duration. Mean sorption for printed material after water, cleaning and thermocycling was 7.82±1.87, 15.29±3.39 and 12.80±2.61 μg/mm³, respectively. Corresponding heat-polymerized values were 10.92±2.09, 19.12±2.93 and 15.27±2.56 μg/mm³. Printed material had lower pooled means, but every stage included the preceding treatment history.\n\nAll materials had negative reported solubility after water storage, including −8.05±1.08 μg/mm³ for printed material. The calculation subtracts re-dried mass from initial dry mass, and the former exceeded the latter. This represents a net mass balance, potentially including incompletely removed bound water, never a negative amount of monomer release. Subsequent cleaning used adjacent dry masses as its baseline and gave 5.75±2.19 μg/mm³ for printed material. Thermocycling gave 1.71±1.85 μg/mm³, now above the other manufacturing methods: ranking changed with the endpoint.\n\nAfter cleaning, glycerin groups showed sorption of 15.90±4.21 μg/mm³, above 14.69±2.15 μg/mm³ in air groups, yet lower net solubility. Post-curing duration had no significant effect on sorption. These results do not support improvement of every water-related property by excluding oxygen; conversion was not measured to establish that glycerin effects arose entirely from more complete polymerization.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "filler_curing_interaction",
+          "title": "Nanofiller concentration and post-curing duration show diminishing combined returns",
+          "markdown": "AlGhamdi et al. incorporated 0, 1 or 2 wt% silanized TiO₂ nanoparticles, approximately 26 nm, into ASIGA DentaBASE and NextDent Denture 3D+. Specimens were printed at 90° with 50 μm layers and post-cured in matched devices for 15, 60 or 90 min. Each mechanical condition contained 10 specimens. All specimens spent 2 d in water at 37°C before 5000 thermal cycles at 5–55°C. Without parallel unaged groups, the experiment compares post-aging performance and cannot calculate how much initial strength each condition retained.[Filler-concentration and post-curing experiment](ref:R06)\n\n| NextDent formulation | Flexural strength at 15 min, MPa | 60 min, MPa | 90 min, MPa |\n|---|---:|---:|---:|\n| 0 wt% | 72.3±2.8 | 79.9±2.6 | 85.2±1.8 |\n| 1 wt% | 78.1±3.2 | 87.1±1.6 | 92.0±2.4 |\n| 2 wt% | 83.2±4.3 | 87.3±3.4 | 93.6±4.1 |\n\nFor NextDent at 60 and 90 min, strength did not differ significantly between 1 and 2 wt%; adding more filler no longer produced equivalent gains. For ASIGA at 90 min, 1 wt% yielded 91.4±9.8 MPa and 2 wt% yielded 90.4±2.9 MPa, with no significant overall concentration effect. The paper’s generalization that the highest concentration always performed best does not fit every subgroup.\n\nBending bars measured 64×10×3.3 mm and were tested over a 50 mm span at 5 mm/min. Hardness was measured on disks under 25 gf for 30 s, averaging multiple indentations per specimen. Whole-bar bending and surface indentation sample different material volumes, so opposing trends are not inherently contradictory. The experiment varied filler concentration and curing duration but did not independently control light-penetration depth or particle dispersion.\n\nHardness did not track strength: concentration effects for NextDent were nonsignificant at every duration, whereas ASIGA at 90 min had a Vickers hardness of 19.7±2.1 for pure resin, above 14.9±2.5 at 2 wt%. Fractography shows filler clustering and morphological changes, but a jagged fracture surface is not a direct measurement of fracture toughness or resistance to crack propagation. Cellular response, actual monomer release and quantitative conversion were not measured for the filled groups. Improved flexural strength after thermocycling therefore does not demonstrate simultaneous improvement in those properties.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Hwangbo et al.: Effect of washing duration on flexural modulus; original figure data from NLM/PMC.",
+          "interpretation": "The panels show ND–IPA, ND–TPM, FL–IPA and FL–TPM, respectively. The horizontal axis compares unwashed CTR with 3–90 min washing; the vertical axis is in GPa. All ND bars in the upper row carry a, so small fluctuations are not significant differences. For FL–TPM below, CTR has a and every washed group b: the main separation is washing versus no washing, not a continuing decline with duration. FL–IPA is lowest at 60 min and higher at 90 min, which does not establish material recovery. Error bars are labeled standard deviations in the source; the discrepancy between 5 specimens in the caption and 15 in the methods is retained in the text.[Original modulus results](ref:R01)"
+        },
+        "F02": {
+          "caption": "Liu et al.: Strength, hardness and conversion of water-washable resin; original figure data from NLM/PMC.",
+          "interpretation": "A–C show flexural strength, D–F Vickers hardness and G–I conversion. The left column pools washing durations, the middle column pools agents, and only the right column preserves their interaction. The alcohol mean in A therefore does not represent one fixed washing duration. NT lacks both washing and post-curing; OC receives post-curing alone. In C, the alcohol curve separates from water and detergent, whereas their later conversion plateaus are similar in I. Strength loss and increased conversion can coexist within a post-processing sequence. The GPa hardness label in D–F is questionable; the original is preserved without converting hardness from that label.[Original figure and grouping](ref:R02)"
+        },
+        "F03": {
+          "caption": "Bayarsaikhan et al.: Cell viability at different culture times; original figure data from NLM/PMC.",
+          "interpretation": "A, B and C correspond to 24, 48 and 72 h. The horizontal axis gives 15–120 min post-curing; white, light gray and dark gray indicate 40, 60 and 80°C, while GS is the uncured green state. Temperature comparisons should be read within each bar cluster at the same culture time; the heights and uncertainty at 72 h cannot be replaced by those at 24 h. Asterisks indicate comparisons with the cells-only control, not neighboring temperature groups. Higher temperatures generally show greater viability, but wide error bars remain at 72 h. The figure supports cellular-response differences at specified assay times, not a ranking of long-term mucosal tolerance duration.[Original cell-culture results](ref:R03)"
+        },
+        "F04": {
+          "caption": "Gladrow et al.: Two conversion calculations for the same material; original figure data from NLM/PMC.",
+          "interpretation": "Panel a uses the 1637 cm⁻¹ band and b the 1320 cm⁻¹ band; blue denotes air and green nitrogen. Both show higher conversion under nitrogen, but the vertical axes begin near 50 and 70, respectively, with different upper limits; rectangle heights cannot be compared across panels as effect sizes. Here, as printed means no subsequent saliva aging, not absence of post-curing. The different absolute ranges show why conversion must be reported with the reactive and reference bands. Repeated regions on 2 independent specimens per group do not create a larger independent sample.[Spectroscopic methods and original figure](ref:R04)"
+        },
+        "F05": {
+          "caption": "Izzettinoglu and Eroglu: Sorption and net mass loss after sequential treatments; original figure data from NLM/PMC, reproduced unchanged.",
+          "interpretation": "A shows sorption Wsp and B Wsl calculated from dry-mass differences. Blue, red and green represent heat-polymerized, milled and printed material; DW, DC and TC denote water storage, cleaning and thermocycling. All materials rise during cleaning in A, but water-stage values fall below zero in B because re-dried mass exceeds baseline, not because dissolution runs backward. During thermocycling in B, the green bar exceeds the other groups, unlike the lower printed-material sorption in A. Error bars are standard deviations, and material means pool several surfaces and curing conditions. The figure alone cannot attribute differences to glycerin.[Original mass-balance results](ref:R05)"
+        },
+        "F06": {
+          "caption": "AlGhamdi et al.: Complete fractography of filled NextDent groups; original figure data from NLM/PMC.",
+          "interpretation": "Columns correspond to 15, 60 and 90 min, and rows to 0, 1 and 2 wt% TiO₂; all scale bars are 50 μm. Comparing vertically within a column varies filler content, while comparing horizontally within a row varies post-curing duration. This prevents attributing the difference between G and C to only one variable. Unfilled resin shows more pronounced relief at 90 min, while filled groups display dense particles and clustered regions; 2 wt% does not create a visually demonstrable uniform network. These local post-fracture surfaces provide neither crack-growth rates nor fracture energy. They explain morphological differences but cannot convert surface roughness into a toughness gain.[Fractography and mechanical tables](ref:R06)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie beeinflussen unterschiedliche Werkstoffe und Nachbehandlungen die Zuverlässigkeit von Restaurationen?",
+      "direction": "Restaurationswerkstoffe und Dauerhaftigkeit",
+      "sections": [
+        {
+          "id": "washing_and_stiffness",
+          "title": "Waschen verbessert die Zellantwort, kann aber die werkstoffabhängige Steifigkeit senken",
+          "markdown": "Hwangbo et al. druckten NextDent C&B (ND) und Formlabs Denture Teeth A2 (FL) mit 50 μm Schichtdicke und verglichen 90%iges Isopropanol (IPA) mit Tripropylenglykolmonomethylether (TPM) für 3, 5, 10, 15, 30, 60 und 90 min. Anschließend wurden alle Gruppen 30 min bei 60°C nachgehärtet. Auch ungewaschene Kontrollen wurden nachgehärtet, wodurch der zusätzliche Beitrag des Waschens erkennbar wird. Die mechanischen Prüfkörper waren 25×2×2 mm groß, lagerten 24 h bei 37°C in Wasser und wurden bei 20 mm Stützweite mit 1 mm/min belastet. Für die biologischen Versuche wurden humane gingivale Fibroblasten direkt auf Scheiben ausgesät.[Experiment zu Waschdauer und Lösungsmittel](ref:R01)\n\nÜber die zusammengefassten Kulturzeiten von 24–72 h stieg die relative Zellviabilität bei ND mit IPA von 23.69±2.77% ohne Waschen auf 74.75±12.31% nach 90 min; bei FL mit TPM von 20.64±7.43% auf 80.79±15.43%. Dies sind relative Werte der Stoffwechselaktivität, keine klinischen Überlebensraten. Bei zusammengefassten Kulturzeiten war der Haupteffekt der Waschflüssigkeit nicht signifikant; Werkstoff und Waschflüssigkeit interagierten jedoch. TPM lässt sich deshalb nicht für jede Rezeptur als bevorzugtes Lösungsmittel bezeichnen.\n\nDie Tests unterscheiden zudem WST-8-Stoffwechselviabilität und LDH-Membranschädigung. Über Bedingungen zusammengefasst betrug die LDH-Zytotoxizität ohne Waschen 65.69±22.55%, nach 15 min 9.52±7.83% und nach 90 min 5.04±4.38%. Niedrigeres LDH und höhere Stoffwechselviabilität können sich gegenseitig stützen, sind aber keine komplementären Prozentwerte und lassen sich nicht auseinander berechnen. Ein großer Teil der zellulären Verbesserung kann bei kürzeren Waschzeiten auftreten, während Steifigkeitsverluste zwischen Kunststoffen variieren.\n\nDer mechanische Nachteil betraf vor allem FL. Dessen Biegemodul sank nach IPA-Wäsche von 1.20±0.21 GPa ohne Waschen auf 0.79±0.10 GPa nach 60 min. Bei FL–TPM lagen alle Waschzeiten unter der ungewaschenen Kontrolle; innerhalb der ND-Gruppen bestanden keine signifikanten Zeitunterschiede. Über Werkstoffe und Lösungsmittel zusammengefasst war die Biegefestigkeit nach 60 min niedriger als ohne Waschen, innerhalb jeder Werkstoff–Lösungsmittel-Kombination waren die Zeitvergleiche der Festigkeit jedoch nicht signifikant. Die Aussage, Waschen beeinflusse die Festigkeit nicht, hängt somit von der Auswertungsebene ab. Ein niedrigerer Modul belegt auch keine niedrigere Bruchlast.\n\nDer Methodenteil nennt 15 mechanische Prüfkörper je Gruppe, die Bildlegende dagegen 5; die Stichprobengröße der Unsicherheitsschätzung ist widersprüchlich dokumentiert. Fehlende Risse in der Rasterelektronenmikroskopie schließen Lösungsmittelaufnahme oder den Verlust löslicher Bestandteile nicht aus. Restmonomere wurden nicht direkt quantifiziert, sodass die chemischen Wege der verbesserten Zellantwort nicht getrennt untersucht wurden.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "water_washable_formulation",
+          "title": "Alkoholeffekte einer wasserwaschbaren Rezeptur lassen sich nicht aus konventionellen Kunststoffen ableiten",
+          "markdown": "Liu et al. untersuchten wasserwaschbaren RayDent-Kronen- und Brückenkunststoff, mittels DLP mit 50 μm Schichtdicke gedruckt. Rotationswäsche und anschließende Ultraschallwäsche dauerten insgesamt 5, 10, 20 oder 30 min; danach folgte eine einheitliche Nachhärtung von 30 min. Die Ultraschallstufe verwendete bei Wasser und Reinigungsmittel Wasser, bei Alkohol bestanden beide Stufen aus 95%igem Ethanol. Eine unbehandelte Gruppe erhielt weder Wäsche noch Nachhärtung, eine weitere nur Nachhärtung; das Experiment war daher mehr als ein einfacher Lösungsmittelaustausch. Die Reinigungsmittelkonzentration beträgt laut Methodentext 2%, laut Gruppentabelle 0.2%, was eine genaue Reproduktion dieser Rezeptur verhindert.[Experiment mit wasserwaschbarem Kronen- und Brückenkunststoff](ref:R02)\n\nDie Biegefestigkeit betrug nach alleiniger Nachhärtung 110.31±5.55 MPa, gegenüber 64.30±14.50 MPa für die über Waschzeiten zusammengefassten Alkoholgruppen. Wasserwäsche blieb bis 20 min relativ stabil und fiel bei 30 min ab; Alkoholwäsche ergab zu jedem Zeitpunkt niedrigere Festigkeiten. Der anhand der reaktiven Bande bei 810 cm⁻¹ und des Referenzbereichs bei 1720–1730 cm⁻¹ berechnete Konversionsgrad betrug nach 20 min Wasserwäsche 53.94±1.40% und nach 30 min Alkoholwäsche 42.42±2.21%. Dies sind Endpunkte unterschiedlicher Bedingungen, keine zeitliche Abnahme am selben Prüfkörper.\n\nFür die biologische Prüfung wurden Extrakte 24 h bei 37°C mit 1.25 cm²/mL hergestellt und Zellen 24 h damit exponiert, anders als bei der direkten Aussaat im vorangegangenen Versuch. Die Viabilität betrug unbehandelt nur 0.76±1.46% und nach alleiniger Nachhärtung 0.65±1.47%. Nach 20 min Wäsche ergaben Wasser, Alkohol und Reinigungsmittel 99.08±4.22%, 97.95±3.57% beziehungsweise 96.50±10.79%, ohne signifikante Unterschiede. Bei dieser wasserwaschbaren Rezeptur zeigte Alkohol somit keinen entsprechenden zellulären Vorteil, ging aber mit geringerer Festigkeit einher.\n\nDie Gaschromatographie–Massenspektrometrie verwendete Acetonextraktion und erfasste keine Freisetzungskinetik in Speichel; Werte unter der Nachweisgrenze bedeuten keine Nullfreisetzung. Die Originalgrafik bezeichnet die Vickershärte mit GPa, obwohl Einheit und Zahlenbereich nicht zusammenpassen. Hier werden nur relative Trends diskutiert, ohne diese Zahlen als studienübergreifend vergleichbare absolute Härten zu behandeln.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "temperature_time_and_cells",
+          "title": "Höhere Nachhärtetemperatur steigert die Festigkeit, Konversion und Zellantwort zeigen aber unterschiedliche Plateaus",
+          "markdown": "Bayarsaikhan et al. verwendeten denselben FL-Denture-Teeth-A2-Kunststoff mit 50 μm Schichtdicke; mechanische Stäbe wurden bei 120°, Scheiben bei 0° gedruckt. Nach 10 min Wäsche in 90%igem IPA kombinierte die Nachhärtung bei 405 nm Temperaturen von 40, 60 oder 80°C mit 15, 30, 60, 90 oder 120 min. Jede Biegebedingung umfasste 15 Prüfkörper; zusätzlich gab es eine nicht nachgehärtete Grünzustandsgruppe. Die Variation von Temperatur und Zeit innerhalb derselben Rezeptur hilft, Geräte- und Werkstoffunterschiede nicht mit thermischen Effekten zu verwechseln.[Faktorielles Temperatur–Zeit-Experiment](ref:R03)\n\nNach 15 min betrug die Biegefestigkeit bei 40, 60 und 80°C jeweils 100.70±6.65, 115.00±10.55 und 121.35±8.70 MPa. Die Verlängerung bei 80°C auf 90 und 120 min ergab 145.13±8.73 beziehungsweise 147.48±5.82 MPa, also abnehmende spätere Zugewinne. Der höchste anhand des Bandenverhältnisses 1638/1608 cm⁻¹ berechnete Konversionsgrad wurde jedoch bei 60°C und 120 min erreicht: 63.37±0.42%. Jenseits von 60 min unterschied sich die Konversion zwischen den Temperaturen nicht signifikant. Höchste Festigkeit und höchste spektroskopische Konversion lagen somit nicht unter identischen Bedingungen; ein einzelner spektroskopischer Oberflächenwert ersetzt nicht das Tragverhalten des gesamten Netzwerks.\n\nNach 24 h Direktkultur betrug die relative Zellviabilität bei 80°C und 120 min 89.51±7.09%, gegenüber 48.53±14.58% bei 40°C und 15 min. Balkenhöhen und Streuung veränderten sich bei 48 und 72 h erneut; insbesondere für 72 h lässt sich das Ausmaß der Verbesserung bei 24 h nicht einfach übernehmen. Expositionsverlauf im Kulturmedium und Messzeitpunkt prägen das Ergebnis gemeinsam. Eine höhere Nachhärtetemperatur ist keine über alle Expositionszeiten konstante biologische Garantie.\n\nDas Experiment bestimmte keine Konzentrationsänderungen einzelner eluierbarer Stoffe und manipulierte die Oberflächenproteinadsorption nicht unabhängig, um deren kausalen Beitrag zur Zellantwort zu klären. Grünzustandsstäbe brachen beim Biegen nicht in üblicher Weise; ihre berechnete Spannung und die Bruchfestigkeit ausreichend nachgehärteter Proben sind daher keine vollständig gleichen Endpunkte.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "nitrogen_and_conversion_metric",
+          "title": "Vorteile der Stickstoffnachhärtung hängen von Spektralauswertung und Kontaktmodell ab",
+          "markdown": "Gladrow et al. druckten V-print dentbase bei 105° mit 50 μm Schichtdicke. Die IPA-Ultraschallwäsche dauerte zunächst 3 min und nach Lösungsmittelwechsel weitere 2 min. Anschließend erzeugte Otoflash je Seite 2000 Lichtblitze in Luft oder Stickstoff, mit 2 min Abkühlung zwischen den Seiten; das Stickstoffprogramm umfasste Vorspülen und Gaszufuhr bei 1 bar. Die als Alterung bezeichnete Behandlung bestand lediglich aus 24 h in künstlichem Speichel bei 37°C, nicht aus langfristiger hydrothermaler Ermüdung.[Experiment zur Nachbehandlung in Luft und Stickstoff](ref:R04)\n\nDer Konversionsgrad war unter Stickstoff bei beiden spektroskopischen Berechnungen höher. Reaktive Banden bei 1637 cm⁻¹ oder 1320 cm⁻¹ mit derselben Referenz bei 1608 cm⁻¹ ergaben jedoch deutlich unterschiedliche Absolutwerte für denselben Werkstoff. Diese Messung umfasste nur 2 Proben je Gruppe mit jeweils 2 Bereichen; wiederholte Messbereiche erhöhen die Zahl unabhängiger Proben nicht. Weder eine direkte Konversionsrangfolge gegenüber der vorangegangenen Studie noch die Interpretation der dargestellten Differenz als fester Zugewinn für jeden Kunststoff ist gerechtfertigt.\n\nDer Härtevorteil von Stickstoff zeigte sich hauptsächlich nach Speichellagerung; die ungealterten Luft- und Stickstoffgruppen unterschieden sich nicht signifikant. Gefräste PMMA-Kontrollen verformten sich beim Biegen plastisch ohne Bruch, gedruckte Proben brachen dagegen. Die berichteten Biegefestigkeiten repräsentierten somit keine vollständig gleichen Versagensendpunkte. Eine Festigkeitsrangfolge gedruckter Kunststoffe lässt sich daher nicht auf deren klinische Nutzungsdauer gegenüber gefrästen Werkstoffen übertragen.\n\nDie Zellversuche unterschieden außerdem direkten Kontakt von L929-Zellen mit Scheiben und Exposition gegenüber Extrakten. Beim Direktkontakt schnitten ungealterte Stickstoffproben relativ gut ab; die Extraktgruppen zeigten eine andere Reihenfolge. PrestoBlue-Werte erfassen Reduktionsaktivität; mehrere Messvertiefungen stammten teilweise aus gepoolten Extrakten statt aus unabhängigen Materialchargen. Verminderte Sauerstoffinhibition unter Stickstoff ist chemisch plausibel, doch die Studie quantifizierte keine Abnahme eines bestimmten schädlichen Monomers. Zellbefunde lassen sich nicht in Freisetzungsmengen einzelner Substanzen umdeuten.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "glycerin_and_mass_balance",
+          "title": "Glycerineffekte müssen von sequenzieller Wägung und negativen Löslichkeitswerten getrennt werden",
+          "markdown": "Izzettinoglu und Eroglu verglichen heißpolymerisierte, gefräste und FL-gedruckte Prothesenbasiskunststoffe. Gedruckte Scheiben hatten 15 mm Durchmesser und 2 mm Dicke, hergestellt bei 45° mit 50 μm Schichtdicke. Nach 10 min in 99.9%igem IPA wurden sie bei 80°C in Luft oder Glycerin für 10, 15, 30 oder 60 min nachgehärtet und anschließend mechanisch poliert oder mit einer von zwei Beschichtungen versehen. Jede Bedingung umfasste 14 Proben. Gesamtmittelwerte der Werkstoffe vermischen somit unterschiedliche Nachhärtungs- und Oberflächenbedingungen und sind keine intrinsischen Konstanten einer einzelnen Rezeptur.[Experiment zu Glycerinnachhärtung, Wasseraufnahme und Löslichkeit](ref:R05)\n\nDieselben Proben durchliefen nacheinander 7 d Wasserlagerung bei 37°C, 30 Prothesenreinigerbehandlungen und 2000 Thermowechsel bei 5–55°C. Jede Reinigung dauerte 3 min; tatsächlich erfolgten 5 Anwendungen täglich über 6 d. Diese Abfolge lässt sich nicht direkt in eine bestimmte klinische Nutzungsdauer umrechnen. Die mittlere Wasseraufnahme des Druckmaterials nach Wasser, Reinigung und Thermowechseln betrug 7.82±1.87, 15.29±3.39 beziehungsweise 12.80±2.61 μg/mm³. Beim heißpolymerisierten Material waren es 10.92±2.09, 19.12±2.93 und 15.27±2.56 μg/mm³. Das Druckmaterial zeigte niedrigere gepoolte Mittelwerte, doch jede Stufe enthielt die vorausgegangene Behandlungsgeschichte.\n\nNach Wasserlagerung wurden für alle Werkstoffe negative Löslichkeiten berichtet, beim Druckmaterial −8.05±1.08 μg/mm³. Die Berechnung subtrahiert die erneut getrocknete Masse von der anfänglichen Trockenmasse; erstere war größer. Dies beschreibt eine Nettomassenbilanz, möglicherweise mit unvollständig entferntem gebundenem Wasser, niemals eine negative Monomerfreisetzung. Für die anschließende Reinigung dienten benachbarte Trockenmassen als Ausgangsbasis; das Druckmaterial ergab 5.75±2.19 μg/mm³. Nach Thermowechseln waren es 1.71±1.85 μg/mm³ und damit mehr als bei den anderen Fertigungsverfahren: Die Rangfolge änderte sich mit dem Endpunkt.\n\nNach Reinigung betrug die Wasseraufnahme der Glyceringruppen 15.90±4.21 μg/mm³, gegenüber 14.69±2.15 μg/mm³ in Luftgruppen, bei gleichzeitig niedrigerer Nettolöslichkeit. Die Nachhärtedauer beeinflusste die Wasseraufnahme nicht signifikant. Diese Befunde stützen keine Verbesserung sämtlicher wasserbezogener Eigenschaften durch Sauerstoffausschluss; der Konversionsgrad wurde nicht gemessen, um Glycerineffekte vollständig auf stärkere Polymerisation zurückzuführen.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "filler_curing_interaction",
+          "title": "Nanofüllstoffkonzentration und Nachhärtedauer zeigen abnehmende gemeinsame Zugewinne",
+          "markdown": "AlGhamdi et al. mischten ASIGA DentaBASE und NextDent Denture 3D+ mit 0, 1 oder 2 wt% silanisierten TiO₂-Nanopartikeln von ungefähr 26 nm. Gedruckt wurde bei 90° mit 50 μm Schichtdicke; die Nachhärtung erfolgte in zugeordneten Geräten für 15, 60 oder 90 min. Jede mechanische Bedingung umfasste 10 Proben. Alle Proben lagerten zunächst 2 d bei 37°C in Wasser und erhielten anschließend 5000 Thermowechsel bei 5–55°C. Ohne parallele ungealterte Gruppen vergleicht das Experiment Eigenschaften nach Alterung und kann den erhaltenen Anteil der Ausgangsfestigkeit nicht berechnen.[Experiment zu Füllstoffkonzentration und Nachhärtung](ref:R06)\n\n| NextDent-Rezeptur | Biegefestigkeit bei 15 min, MPa | 60 min, MPa | 90 min, MPa |\n|---|---:|---:|---:|\n| 0 wt% | 72.3±2.8 | 79.9±2.6 | 85.2±1.8 |\n| 1 wt% | 78.1±3.2 | 87.1±1.6 | 92.0±2.4 |\n| 2 wt% | 83.2±4.3 | 87.3±3.4 | 93.6±4.1 |\n\nBei NextDent unterschieden sich 1 und 2 wt% nach 60 und 90 min nicht signifikant in der Festigkeit; mehr Füllstoff brachte keine gleich großen weiteren Zugewinne. Bei ASIGA nach 90 min ergaben 1 wt% 91.4±9.8 MPa und 2 wt% 90.4±2.9 MPa, ohne signifikanten Gesamteffekt der Konzentration. Die Verallgemeinerung der Autoren, die höchste Konzentration sei stets am besten, passt nicht zu jeder Untergruppe.\n\nDie Biegestäbe maßen 64×10×3.3 mm und wurden bei 50 mm Stützweite mit 5 mm/min geprüft. Die Härte wurde an Scheiben unter 25 gf für 30 s bestimmt und aus mehreren Eindrücken je Probe gemittelt. Gesamtbiegung und Oberflächeneindringung erfassen unterschiedliche Werkstoffvolumina; gegenläufige Trends sind daher nicht grundsätzlich widersprüchlich. Das Experiment variierte Füllstoffkonzentration und Nachhärtedauer, kontrollierte aber Lichteindringtiefe und Partikeldispersion nicht unabhängig.\n\nDie Härte folgte der Festigkeit nicht: Bei NextDent war der Konzentrationseffekt zu keiner Nachhärtedauer signifikant. Bei ASIGA nach 90 min war die Vickershärte des reinen Kunststoffs mit 19.7±2.1 höher als 14.9±2.5 bei 2 wt%. Die Fraktographie zeigt Füllstoffansammlungen und morphologische Änderungen; eine zerklüftete Bruchfläche misst jedoch weder direkt Bruchzähigkeit noch Rissausbreitungswiderstand. Zellantwort, tatsächliche Monomerfreisetzung und quantitativer Konversionsgrad wurden für die gefüllten Gruppen nicht bestimmt. Eine höhere Biegefestigkeit nach Thermowechseln belegt daher keine gleichzeitige Verbesserung dieser Eigenschaften.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Hwangbo et al.: Einfluss der Waschdauer auf den Biegemodul; Originalabbildungsdaten von NLM/PMC.",
+          "interpretation": "Die Teilbilder zeigen ND–IPA, ND–TPM, FL–IPA und FL–TPM. Die horizontale Achse vergleicht ungewaschene CTR mit 3–90 min Wäsche, die vertikale Achse zeigt GPa. Oben tragen alle ND-Balken a; kleine Schwankungen sind daher keine signifikanten Unterschiede. Bei FL–TPM unten trägt CTR a, jede gewaschene Gruppe b: Entscheidend ist Waschen gegenüber Nichtwaschen, nicht eine fortlaufende Abnahme mit längerer Dauer. FL–IPA liegt bei 60 min am niedrigsten und bei 90 min höher; das belegt keine Werkstofferholung. Fehlerbalken sind laut Quelle Standardabweichungen; der Widerspruch zwischen 5 Proben in der Legende und 15 im Methodenteil bleibt im Text erhalten.[Originale Modulergebnisse](ref:R01)"
+        },
+        "F02": {
+          "caption": "Liu et al.: Festigkeit, Härte und Konversion des wasserwaschbaren Kunststoffs; Originalabbildungsdaten von NLM/PMC.",
+          "interpretation": "A–C zeigen Biegefestigkeit, D–F Vickershärte und G–I Konversion. Die linke Spalte fasst Waschzeiten zusammen, die mittlere Waschmittel; erst rechts bleibt ihre Wechselwirkung erhalten. Der Alkoholmittelwert in A steht somit nicht für eine bestimmte Waschdauer. NT erhält weder Wäsche noch Nachhärtung, OC nur Nachhärtung. In C trennt sich die Alkoholkurve von Wasser und Reinigungsmittel, deren spätere Konversionsplateaus in I dagegen ähnlich sind. Festigkeitsverlust und erhöhte Konversion können innerhalb einer Nachbehandlungsfolge nebeneinander auftreten. Die GPa-Härtebeschriftung in D–F ist fraglich; das Original bleibt erhalten, ohne daraus Härtewerte umzurechnen.[Originalabbildung und Gruppierung](ref:R02)"
+        },
+        "F03": {
+          "caption": "Bayarsaikhan et al.: Zellviabilität zu unterschiedlichen Kulturzeiten; Originalabbildungsdaten von NLM/PMC.",
+          "interpretation": "A, B und C entsprechen 24, 48 und 72 h. Die horizontale Achse zeigt 15–120 min Nachhärtung; Weiß, Hellgrau und Dunkelgrau stehen für 40, 60 und 80°C, GS für den nicht nachgehärteten Grünzustand. Temperaturen sind innerhalb eines Balkenclusters bei gleicher Kulturzeit zu vergleichen; Höhen und Streuungen bei 72 h lassen sich nicht durch Werte bei 24 h ersetzen. Sternchen kennzeichnen Vergleiche mit der reinen Zellkontrolle, nicht mit benachbarten Temperaturgruppen. Höhere Temperaturen ergeben überwiegend höhere Viabilität, doch bei 72 h bleiben breite Fehlerbalken sichtbar. Die Abbildung stützt Zellantwortunterschiede zu definierten Messzeiten, keine Rangfolge langfristiger Schleimhautverträglichkeitsdauern.[Originale Zellkulturergebnisse](ref:R03)"
+        },
+        "F04": {
+          "caption": "Gladrow et al.: Zwei Konversionsberechnungen für denselben Werkstoff; Originalabbildungsdaten von NLM/PMC.",
+          "interpretation": "Teilbild a verwendet die Bande bei 1637 cm⁻¹, b die bei 1320 cm⁻¹; Blau steht für Luft, Grün für Stickstoff. Beide zeigen höhere Konversion unter Stickstoff, doch die vertikalen Achsen beginnen ungefähr bei 50 beziehungsweise 70 und haben unterschiedliche Obergrenzen; Rechteckhöhen dürfen nicht teilbildübergreifend als Effektgrößen verglichen werden. As printed bedeutet hier ohne nachfolgende Speichelalterung, nicht ohne Nachhärtung. Unterschiedliche absolute Bereiche zeigen, weshalb Konversion mit reaktiver und Referenzbande anzugeben ist. Wiederholte Bereiche auf 2 unabhängigen Proben je Gruppe erzeugen keine größere unabhängige Stichprobe.[Spektroskopische Methoden und Originalabbildung](ref:R04)"
+        },
+        "F05": {
+          "caption": "Izzettinoglu and Eroglu: Wasseraufnahme und Nettomassenverlust nach aufeinanderfolgenden Behandlungen; Originalabbildungsdaten von NLM/PMC, unverändert wiedergegeben.",
+          "interpretation": "A zeigt Wasseraufnahme Wsp, B anhand von Trockenmassendifferenzen berechnetes Wsl. Blau, Rot und Grün stehen für heißpolymerisiert, gefräst und gedruckt; DW, DC und TC für Wasserlagerung, Reinigung und Thermowechsel. In A steigen bei Reinigung alle Werkstoffe an; in B liegen die Wasserwerte unter null, weil die erneut getrocknete Masse die Ausgangsmasse übersteigt, nicht weil sich die Auflösung umkehrt. Nach Thermowechseln überragt der grüne Balken in B die anderen Gruppen, anders als die geringere Wasseraufnahme des Druckmaterials in A. Fehlerbalken sind Standardabweichungen; Werkstoffmittelwerte fassen mehrere Oberflächen und Nachhärtungsbedingungen zusammen. Die Abbildung allein erlaubt keine Zuordnung zum Glycerin.[Originale Massenbilanzergebnisse](ref:R05)"
+        },
+        "F06": {
+          "caption": "AlGhamdi et al.: Vollständige Fraktographie der gefüllten NextDent-Gruppen; Originalabbildungsdaten von NLM/PMC.",
+          "interpretation": "Die Spalten entsprechen 15, 60 und 90 min, die Zeilen 0, 1 und 2 wt% TiO₂; alle Maßstabsbalken zeigen 50 μm. Vertikale Vergleiche innerhalb einer Spalte variieren den Füllstoffgehalt, horizontale innerhalb einer Zeile die Nachhärtedauer. So wird der Unterschied zwischen G und C nicht nur einer Variablen zugeschrieben. Ungefüllter Kunststoff zeigt bei 90 min deutlicheres Relief, gefüllte Gruppen dichte Partikel und Ansammlungen; 2 wt% erzeugt kein visuell belegbares gleichmäßiges Netzwerk. Diese lokalen Oberflächen nach Bruch liefern weder Risswachstumsraten noch Bruchenergie. Sie erläutern morphologische Unterschiede, erlauben aber keine Umrechnung der Oberflächenrauheit in einen Zähigkeitsgewinn.[Fraktographie und mechanische Tabellen](ref:R06)"
+        }
+      }
+    }
+  }
+}

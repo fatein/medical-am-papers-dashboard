@@ -1,0 +1,265 @@
+{
+  "schema_version": 2,
+  "question_id": "P1-003",
+  "p": "P1",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_e63b6d3b99acc6e41606",
+    "doc_4ccebf40172b6634ca8f",
+    "KB202685A601CD10A7",
+    "KB2026BA085856E7ED"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Enhanced Osseointegration by the Hierarchical Micro-Nano Topography on Selective Laser Melting Ti-6Al-4V Dental Implants",
+      "publisher": "Frontiers in Bioengineering and Biotechnology",
+      "year": 2021,
+      "url": "https://doi.org/10.3389/fbioe.2020.621601",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Bioactivation Treatment with Mixed Acid and Heat on Titanium Implants Fabricated by Selective Laser Melting Enhances Preosteoblast Cell Differentiation",
+      "publisher": "Nanomaterials",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/nano11040987",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Full-laser-enabled clean hierarchical structuring and multifunctional synergy for high-performance in vivo 3D-printed implants",
+      "publisher": "Materials Today Bio",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/j.mtbio.2026.103095",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Synergistic effects of etching and electropolishing on additively manufactured Ti-6Al-4V scaffolds for biomedical implants",
+      "publisher": "Additive Manufacturing",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/j.addma.2026.105083",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 1",
+      "image_url": "https://www.frontiersin.org/files/Articles/621601/xml-images/fbioe-08-621601-g001.webp",
+      "asset_path": "assets/academic_figures/P1-003/F01.webp",
+      "source_url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2020.621601/full#F1",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Fig. 5",
+      "image_url": "https://www.frontiersin.org/files/Articles/621601/xml-images/fbioe-08-621601-g005.webp",
+      "asset_path": "assets/academic_figures/P1-003/F02.webp",
+      "source_url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2020.621601/full#F5",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R01",
+      "original_label": "Fig. 7",
+      "image_url": "https://www.frontiersin.org/files/Articles/621601/xml-images/fbioe-08-621601-g007.webp",
+      "asset_path": "assets/academic_figures/P1-003/F03.webp",
+      "source_url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2020.621601/full#F7",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "多尺度表面设计如何影响细胞与骨界面？",
+      "direction": "多孔植入物与晶格设计",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "微米粗糙度降低与纳米结构增加可以同时发生",
+          "markdown": "多尺度表面并不是把一个粗糙度数值不断提高。Shu等以选择性激光熔融Ti-6Al-4V为基底，比较未处理SLM-UT、化学氧化SLM-CO和另一种SLM植入物TixOs。化学氧化在微米起伏上形成直径20–50 nm、高150–250 nm的纳米针。微米尺度Sa由28.28降至12.82 μm，纳米尺度Sa却由7.57升至54.33 nm。两个方向相反的变化发生在同一处理表面，因此不指定测量尺度的“更粗糙”会掩盖真正的结构变化。[分级表面表征](ref:R01)\n\n|表面组|微米尺度Sa|纳米尺度Sa|对应形貌|\n|---|---|---|---|\n|SLM-UT|28.28 μm|7.57 nm|打印微米起伏，无特定纳米针|\n|SLM-CO|12.82 μm|54.33 nm|微米基底上形成纳米针|\n|TixOs|19.49 μm|31.67 nm|具有亚微米沟槽，无同类纳米针|\n\n这两组Sa并不是对同一视野使用不同单位：微米测量区域为400×400 μm，AFM区域为2.5×2.5 μm。原图1保留了从螺纹到局部纳米针的放大链，可判断新结构处在原有微观形貌的哪一层。处理同时改变表面化学与润湿，SLM-CO水接触角小于5°，另两组大于90°。因而本研究检验的是形貌、氧化与润湿共同改变的界面，不能从这一组对照单独计算纳米针的净生物效应。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "细胞增殖、成骨分化与线粒体相关表达的时间并不相同",
+          "markdown": "在同一研究中，MG-63细胞于第1、3、5天的MTT读数均随时间增加，但SLM-UT与SLM-CO之间没有显著差异。第14天，化学氧化组Runx2和OCN相对表达提高，茜素红显示较连续的矿化结节。因此这项处理的主要细胞信号是分化与矿化改变，而不是把所有早期增殖指标一并提高。若只用培养早期的代谢读数筛选表面，便可能漏掉随后出现的分化差别。[细胞实验与原图5](ref:R01)\n\n第5天的PINK1、PARKIN、LC3B和LAMP1表达上调，使线粒体自噬成为一个相关的机制线索；线粒体生成、融合与分裂所测基因则没有同样的显著变化。这种选择性比“所有线粒体功能增强”的概括更有信息。图中的表达量是相对于对照并经内参归一化的量，不是线粒体数量，也不是直接测得的自噬通量。\n\n时间先后可以把第5天的细胞状态与第14天的成骨响应联系起来，但该研究没有通过抑制或敲低实验确定前者是后者必需的原因。这里更合理的解释是：表面改性伴随一组较早的细胞调节信号，随后出现成骨相关表达和矿化差异。原图5的实际面板为A增殖、B线粒体相关表达、C成骨表达、D矿化照片；按原图标签阅读，也能避免正文与图注面板引用不一致造成的错配。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "兔骨界面的优势主要体现为早期接触与矿化成熟",
+          "markdown": "Shu等将植入物置入兔股骨髁，在2、4、8周取材；每个时间点包含10件SLM-UT、10件SLM-CO和5件TixOs植入物。微CT使用紧邻植入物的72 μm厚壳层作为感兴趣区，组织学则以接触骨的长度占骨内植入物周长的比例计算骨–植入物接触率（BIC）。前者描述局部三维骨结构，后者描述切片中的界面接触，二者不能用同一“骨量”概念替代。[动物方法与时间分辨结果](ref:R01)\n\n2周时，SLM-CO的BV/TV、骨小梁厚度和数量高于比较组，BIC也较高。与此同时，其类骨质体积分数OV/BV与表面分数OS/BS低于未处理组。类骨质减少若单独出现，可以有多种解释；与较高BIC共同出现，则支持接触区域较早矿化、成熟程度提高的解释。原图7把这些指标放在同一时间序列中，使“接触得更多”与“接触的组织更成熟”能够分开观察。\n\n4周和8周的BIC、OV/BV、OS/BS组间差异不再显著，微CT结构参数也呈现相同的后期趋近。因此证据支持加快早期整合过程，而不是保证在所有随访时点保有更高终末骨接触。这一差别对早期加载问题有直接意义，但研究的取材终点是影像和组织形态，并未以同一组试样的拔出力或咀嚼载荷失效来量化固定强度。把2周的组织优势解释为成熟加快，比把它扩展为长期承载优势更贴近实际测量。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "相近形貌的酸处理与酸热处理揭示化学层的作用",
+          "markdown": "另一项2021年研究在纯钛SLM圆片上设置未处理U、混酸MA和混酸后加热MAH三组，并加入平整纯钛cp-Ti对照。MAH相对于MA的关键差别是后续600 °C、1 h热处理。两组处理后Ra分别约8.585和8.612 μm，没有显著粗糙度差别，且水接触角都低于1°；然而酸处理形成的氢化钛相经热处理转变为金红石型TiO₂。这里的化学变化发生在相近粗糙度和润湿性背景下，为解释表面活性提供了更有分辨力的比较。[酸处理与酸热处理原始研究](ref:R02)\n\n在模拟体液中浸泡1天后，仅MAH表面形成完整磷灰石层。该结果是无细胞环境中的矿物沉积能力，不能与细胞形成矿化基质混为一谈。MC3T3-E1培养的第21天茜素红结果另显示MAH组矿化信号最高，MA次之；第10、14天的ALP活性则在MA与MAH之间没有显著差异。也就是说，同一对表面的排序依赖读取的是早期酶活、晚期基质，还是无细胞沉积。\n\n将这项研究与纳米针研究并置，可以看到两条不同证据路线：前者在形貌近似条件下突出了热处理后的化学状态，后者证明复合微纳界面与兔骨早期成熟相关。两者使用的材料分别是纯钛与Ti-6Al-4V，细胞分别为MC3T3-E1与MG-63，不能合并为一个通用粗糙度阈值。它们共同说明，表面参数必须与被测细胞过程及化学状态一起解释。",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "激光纹理与银的作用必须按对照组和感染条件拆开",
+          "markdown": "2026年全激光研究先抛光打印钛，再形成激光诱导周期表面结构（LIPSS）、微柱及两种分级LIPSS，随后加入银纳米颗粒。抛光使Ra由7.839降至0.379 μm；后续结构化重新引入有方向的纹理。成骨细胞在微柱上的48 h代谢读数最高，但沿沟槽定向伸展主要见于LIPSS和分级LIPSS。细胞数量、铺展与方向性因此是不同维度，不能把某一项最高称作全面最优。[激光结构与细胞实验](ref:R03)\n\n抗菌实验同样有必要保留银的有无。对牙龈卟啉单胞菌，未加银纹理的作用较弱；加银后的四种结构分别报告67.3%、62%、74.4%和63.1%的OD法抑菌率。这是相对于实验对照的读数变化，不是组织感染发生率。作者还观察细菌形态及混合菌生物膜，但单凭OD不能把死亡、数量减少与附着变化全部分开。\n\n动物研究把1、3周的感染相关组织反应与8周的骨整合分为不同实验情境。纹理加银组的早期炎症指标较低，说明抗菌功能可以改变界面愈合环境；8周组织切片显示较连续骨接触。可是论文表1的动态指标并未把组合组排在最前：LIPSS与LIPSS加银的矿物沉积率MAR分别为0.9187和0.8549。这里仅比较原表数值，不把差值称为显著。局部已形成骨接触、当期沉积速度与炎症程度描述的是不同时间窗口，不能用“骨形成全部提高”覆盖这些不同排序。",
+          "figure_ids": []
+        },
+        {
+          "id": "s6",
+          "title": "清除制造残留与保留功能纹理是两种表面任务",
+          "markdown": "蚀刻联合电抛光的2026年支架研究提供了另一种结果：减少未熔颗粒与粗糙度后，牙根尖乳头干细胞在15天形成单层，28天出现组织样基质。该观察说明更平整、均一的基底也可以改善细胞覆盖。[蚀刻与电抛光研究](ref:R04)\n\n这与微纳结构促进分化并不相反。未稳定结合的颗粒、随机大起伏和有意构建的纳米针或沟槽具有不同物理角色。把前两者去除后再构建细纹理，改变的是细胞实际接触到的表面连续性和方向线索。激光研究的抛光—纹理顺序体现了这一点，而酸热研究显示，形貌保留时化学层仍可改变矿化行为。[激光处理顺序](ref:R03) [化学层与矿化](ref:R02)\n\n|实验载体|已经观察的界面|仍需单独定位的空间问题|\n|---|---|---|\n|平面圆片或方片|细胞铺展、代谢、分化|结果是否代表深孔壁|\n|带螺纹的植入物|外表面骨接触与组织成熟|螺纹不同部位的局部处理程度|\n|开放三维支架|细胞层与组织样基质|内外表面的覆盖及厚度分布|\n\n对于多孔植入物，外部SEM证实的纹理不能自动证明内孔壁具有相同化学状态。浸泡、电抛光与激光在遮挡区域的作用方式也不同。因此这些研究之间最有用的连接，是区分表面形成的位置、细胞实际到达的位置和组织学取样的位置；只有三者重合时，局部机制才有对应的器械界面。",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Shu等，原图1：从打印微米起伏到氧化纳米针。",
+          "interpretation": "三列分别是SLM-UT、SLM-CO与TixOs；四行逐级放大，保留0.50 mm、25.0 μm、2.50 μm和250 nm比例尺。低倍时都可见打印起伏，高倍时只有SLM-CO显示密集针状结构。该图支持新增结构发生在纳米尺度，不能由低倍图中颗粒多少或单一粗糙度判断。"
+        },
+        "F02": {
+          "caption": "Shu等，原图5：早期增殖与后期分化分离。",
+          "interpretation": "A横轴为1、3、5天，纵轴为OD570，两个表面的曲线接近；B比较第5天线粒体相关基因，C显示第14天Runx2和OCN，D为同一后期的矿化照片。图中星号表示P<0.05，未标星的生成、融合和分裂基因不应被概括为显著上调。按实际面板字母而非错位图注解释，可将变化定位到具体细胞过程。"
+        },
+        "F03": {
+          "caption": "Shu等，原图7：2、4、8周界面接触与类骨质。",
+          "interpretation": "上方以组别为行、时间为列，甲苯胺蓝未脱钙切片与局部放大并置；下方分别显示BIC及OS/BS、OV/BV。SLM-CO在2周具有较高接触率和较少类骨质，后期三组曲线趋近。接触与成熟两个终点共同支持加速早期矿化，而不是任何时间都更高的终末接触。"
+        }
+      }
+    },
+    "en": {
+      "title": "How does multiscale surface design affect cells and the bone interface?",
+      "direction": "Porous implants and lattice design",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Microscale smoothing and nanoscale structuring can occur together",
+          "markdown": "Multiscale surface design does not mean continuously increasing one roughness value. Shu and colleagues compared untreated selective-laser-melted Ti-6Al-4V (SLM-UT), chemically oxidized material (SLM-CO) and another SLM implant, TixOs. Oxidation generated nanoneedles 20–50 nm in diameter and 150–250 nm high on the microrough substrate. Microscale Sa decreased from 28.28 to 12.82 μm, whereas nanoscale Sa increased from 7.57 to 54.33 nm. These opposite changes occurred on the same treated surface, so describing it simply as rougher conceals the architectural change. [Hierarchical surface characterization](ref:R01)\n\n|Surface|Microscale Sa|Nanoscale Sa|Morphology|\n|---|---|---|---|\n|SLM-UT|28.28 μm|7.57 nm|Printed microroughness without specific nanoneedles|\n|SLM-CO|12.82 μm|54.33 nm|Nanoneedles on the microscale substrate|\n|TixOs|19.49 μm|31.67 nm|Submicron grooves without equivalent nanoneedles|\n\nThe two Sa measurements do not merely use different units for the same field: microscale measurements covered 400×400 μm, whereas AFM covered 2.5×2.5 μm. Original Figure 1 retains the magnification sequence from implant threads to nanoneedles and locates the added structure within the existing topography. Treatment also changed chemistry and wetting. The water contact angle was below 5° for SLM-CO and above 90° for both comparators. The experiment therefore tests a jointly modified topographic, chemical and wetting interface; these controls do not isolate the net biological contribution of the needles alone.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Proliferation, differentiation and mitochondrial expression follow different timelines",
+          "markdown": "In the same study, MG-63 MTT readings increased on days 1, 3 and 5, without a significant difference between SLM-UT and SLM-CO. On day 14, the oxidized surface increased relative Runx2 and OCN expression and showed more continuous Alizarin-red-positive mineralized nodules. The principal cellular signal was therefore altered differentiation and mineralization, rather than a simultaneous increase in every early proliferation measure. Screening solely by early metabolic readings could miss later differentiation differences. [Cell experiments and original Figure 5](ref:R01)\n\nHigher PINK1, PARKIN, LC3B and LAMP1 expression on day 5 identifies mitophagy as an associated mechanistic lead. The tested genes for mitochondrial biogenesis, fusion and fission did not show the same significant changes. This selectivity is more informative than describing all mitochondrial functions as enhanced. Expression was normalized to a reference gene and to the control group; it is neither mitochondrial number nor a direct measurement of autophagic flux.\n\nThe temporal order links the day-5 cellular state to day-14 osteogenic responses, but inhibition or knockdown experiments did not establish that the earlier change was necessary for the later one. The supported interpretation is an early set of regulatory signals accompanying surface modification, followed by osteogenic expression and mineralization differences. The actual labels in original Figure 5 are A for proliferation, B for mitochondrial expression, C for osteogenic expression and D for mineralization photographs. Reading the image itself avoids the mismatch between panel references in parts of the text and caption.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "The rabbit interface advantage is primarily earlier contact and mineralization",
+          "markdown": "Shu and colleagues placed implants in rabbit femoral condyles and sampled at 2, 4 and 8 weeks. Each time point contained 10 SLM-UT, 10 SLM-CO and 5 TixOs implants. Micro-CT used a 72 μm shell adjacent to the implant as its region of interest. Histological bone-to-implant contact (BIC) was the fraction of the intrabony implant perimeter directly contacting bone. One measurement describes local three-dimensional architecture; the other measures contact in a section. They cannot be collapsed into one undifferentiated bone-volume outcome. [Animal methods and time-resolved results](ref:R01)\n\nAt 2 weeks, SLM-CO had higher BV/TV, trabecular thickness and number, together with higher BIC. Its osteoid volume fraction OV/BV and surface fraction OS/BS were lower than in the untreated group. Reduced osteoid alone could have several explanations, but its coexistence with higher BIC supports earlier mineralization and maturation of contacting tissue. Original Figure 7 combines these outcomes in one time series, separating the amount of contact from the maturity of the contacting tissue.\n\nAt 4 and 8 weeks, between-group differences in BIC, OV/BV and OS/BS were no longer significant; micro-CT parameters likewise converged. The evidence therefore supports accelerated early integration rather than a permanently higher final contact fraction. This timing is relevant to questions of early loading, but the endpoints were imaging and tissue morphology. Pull-out resistance or failure under chewing loads was not quantified in the same specimen set. Earlier tissue maturation is thus a closer interpretation of the 2-week advantage than a claim of lasting load-bearing superiority.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Acid and acid–heat treatments separate chemistry from similar topography",
+          "markdown": "A separate 2021 study used pure-titanium SLM discs with untreated (U), mixed-acid (MA) and mixed-acid-plus-heat (MAH) conditions, alongside polished commercially pure titanium (cp-Ti). MAH added heating at 600 °C for 1 h. Ra was approximately 8.585 μm for MA and 8.612 μm for MAH, without a significant roughness difference, and both water contact angles were below 1°. However, heating transformed the titanium-hydride phase produced by acid treatment into rutile TiO₂. This chemical change on similarly rough and wettable surfaces provides a more discriminating comparison of bioactivation. [Original acid and acid–heat study](ref:R02)\n\nAfter 1 day in simulated body fluid, only MAH developed a complete apatite layer. This is mineral deposition in a cell-free environment, distinct from cell-mediated matrix mineralization. A separate day-21 Alizarin red assay in MC3T3-E1 cultures showed the highest mineralization signal for MAH, followed by MA. In contrast, ALP activity at days 10 and 14 did not differ significantly between MA and MAH. The ranking therefore depends on whether the endpoint is enzyme activity, later matrix formation or acellular precipitation.\n\nCompared with the nanoneedle study, these experiments establish a different evidence route: acid–heat treatment highlights chemical state under similar morphology, whereas the hierarchical-interface experiment links a combined modification to earlier rabbit bone maturation. The materials were pure titanium and Ti-6Al-4V, and the cells were MC3T3-E1 and MG-63, respectively. The results cannot be pooled into a universal roughness threshold. They show why surface parameters require interpretation alongside the cellular process and chemical state being measured.",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "Laser texture and silver require distinct controls and infection conditions",
+          "markdown": "The 2026 full-laser study first polished printed titanium, then produced laser-induced periodic surface structures (LIPSS), micropillars and two hierarchical LIPSS patterns, followed by silver nanoparticles. Polishing reduced Ra from 7.839 to 0.379 μm; subsequent structuring reintroduced directional texture. Micropillars produced the highest osteoblast metabolic reading at 48 h, while directional elongation was prominent on LIPSS and hierarchical LIPSS. Cell number, spreading and orientation are therefore distinct dimensions; the maximum in one does not establish overall superiority. [Laser architectures and cell experiments](ref:R03)\n\nAntibacterial comparisons must also retain the presence or absence of silver. Texture alone had a weaker effect against Porphyromonas gingivalis. After silver deposition, the four structured surfaces showed OD-based inhibition rates of 67.3%, 62%, 74.4% and 63.1%. These are changes relative to an experimental control, not incidences of tissue infection. Bacterial morphology and mixed-species biofilms supplied additional observations, but OD alone does not separate death, reduced abundance and altered attachment.\n\nAnimal experiments examined infection-related tissue responses at 1 and 3 weeks separately from osseointegration at 8 weeks. Lower early inflammatory indices with texture plus silver indicate that antibacterial modification can alter the healing environment, and 8-week sections showed more continuous bone contact. Yet the dynamic measurements in Table 1 did not place the combination first: mineral apposition rate (MAR) was 0.9187 for LIPSS and 0.8549 for LIPSS plus silver. These are comparisons of the reported values, without claiming a significant difference. Existing contact, current deposition rate and inflammation represent different temporal windows and cannot be summarized as uniformly increased bone formation.",
+          "figure_ids": []
+        },
+        {
+          "id": "s6",
+          "title": "Removing manufacturing residues and retaining functional texture are separate tasks",
+          "markdown": "The 2026 etching-plus-electropolishing study provides a complementary observation: after reducing unmelted particles and roughness, apical-papilla stem cells formed a monolayer by 15 days and tissue-like matrix by 28 days. A smoother, more uniform substrate can therefore support improved coverage. [Etching and electropolishing study](ref:R04)\n\nThis does not conflict with differentiation on micro- and nanostructures. Weakly attached particles, random large asperities and deliberately generated needles or grooves have different physical roles. Removing the first two and adding finer texture changes surface continuity and directional cues experienced by cells. The polishing–texturing sequence in the laser study exemplifies this separation, while acid–heat experiments show that chemistry can alter mineralization even when morphology remains similar. [Laser processing sequence](ref:R03) [Chemical layer and mineralization](ref:R02)\n\n|Experimental substrate|Interface actually observed|Spatial question requiring separate localization|\n|---|---|---|\n|Flat discs or plates|Spreading, metabolism and differentiation|Whether this represents deep pore walls|\n|Threaded implants|External bone contact and tissue maturation|Local treatment extent along different thread regions|\n|Open three-dimensional scaffolds|Cell layers and tissue-like matrix|Coverage and thickness distributions internally and externally|\n\nFor a porous implant, external SEM does not establish identical chemistry on internal pore walls. Immersion, electropolishing and laser treatment also interact differently with occluded regions. The useful connection across these studies is therefore spatial: distinguish where a surface was generated, where cells actually arrived and where tissue was sampled. A local mechanism corresponds to a device interface only where those locations coincide.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Shu et al., original Fig. 1: printed microroughness and oxidized nanoneedles.",
+          "interpretation": "Columns show SLM-UT, SLM-CO and TixOs. Four magnification levels retain scale bars of 0.50 mm, 25.0 μm, 2.50 μm and 250 nm. All surfaces show printing topography at low magnification, but dense needles appear only on SLM-CO at high magnification. The added structure is therefore nanoscale and cannot be inferred from particle counts in low-magnification images or one roughness number."
+        },
+        "F02": {
+          "caption": "Shu et al., original Fig. 5: separation of early proliferation and later differentiation.",
+          "interpretation": "Panel A plots OD570 over days 1, 3 and 5, with similar curves for the two surfaces. B compares mitochondrial genes on day 5, C shows Runx2 and OCN on day 14, and D shows mineralization photographs at that later time. Asterisks denote P<0.05; unmarked biogenesis, fusion and fission genes should not be described as significantly increased. Actual panel letters locate each effect correctly despite inconsistent caption references."
+        },
+        "F03": {
+          "caption": "Shu et al., original Fig. 7: contact and osteoid at 2, 4 and 8 weeks.",
+          "interpretation": "Rows represent surfaces and columns represent time; undecalcified toluidine-blue sections are paired with enlarged regions. Lower graphs report BIC, OS/BS and OV/BV. SLM-CO combines greater contact with less osteoid at 2 weeks, while later curves converge. Together, contact and maturation support accelerated early mineralization rather than a higher final contact fraction at every time."
+        }
+      }
+    },
+    "de": {
+      "title": "Wie beeinflusst mehrskalige Oberflächengestaltung Zellen und die Knochengrenzfläche?",
+      "direction": "Poröse Implantate und Gittergestaltung",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Mikroskopische Glättung und Nanostrukturierung können gleichzeitig auftreten",
+          "markdown": "Mehrskalige Oberflächengestaltung bedeutet nicht, einen einzigen Rauheitswert fortlaufend zu erhöhen. Shu und Mitarbeitende verglichen unbehandeltes, selektiv lasergeschmolzenes Ti-6Al-4V (SLM-UT), chemisch oxidiertes Material (SLM-CO) und das weitere SLM-Implantat TixOs. Die Oxidation erzeugte auf dem mikrorauen Untergrund Nanonadeln mit 20–50 nm Durchmesser und 150–250 nm Höhe. Der mikroskalige Sa-Wert sank von 28.28 auf 12.82 μm, während der nanoskalige Sa-Wert von 7.57 auf 54.33 nm anstieg. Beide gegenläufigen Änderungen betrafen dieselbe Oberfläche; die Bezeichnung „rauer“ ohne Skalenangabe verdeckt daher die eigentliche Strukturänderung. [Charakterisierung der hierarchischen Oberfläche](ref:R01)\n\n|Oberfläche|Mikroskaliger Sa|Nanoskaliger Sa|Morphologie|\n|---|---|---|---|\n|SLM-UT|28.28 μm|7.57 nm|Druckbedingte Mikrostruktur ohne spezifische Nanonadeln|\n|SLM-CO|12.82 μm|54.33 nm|Nanonadeln auf dem mikroskaligen Untergrund|\n|TixOs|19.49 μm|31.67 nm|Submikrometerrillen ohne entsprechende Nanonadeln|\n\nDie beiden Sa-Messungen verwenden nicht lediglich verschiedene Einheiten für dasselbe Bildfeld: Die mikroskalige Fläche betrug 400×400 μm, das AFM-Feld 2.5×2.5 μm. Originalabbildung 1 erhält die Vergrößerungsfolge vom Gewinde bis zu den Nanonadeln und zeigt deren Lage innerhalb der vorhandenen Topografie. Gleichzeitig veränderten sich Chemie und Benetzung. Der Wasserkontaktwinkel lag bei SLM-CO unter 5° und bei beiden Vergleichsoberflächen über 90°. Untersucht wurde somit eine gemeinsam topografisch, chemisch und hinsichtlich der Benetzung veränderte Grenzfläche. Der isolierte biologische Beitrag der Nadeln lässt sich mit diesen Kontrollen nicht bestimmen.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Proliferation, Differenzierung und mitochondriale Expression verlaufen zeitlich verschieden",
+          "markdown": "In derselben Studie stiegen die MTT-Messwerte von MG-63-Zellen an den Tagen 1, 3 und 5, ohne signifikanten Unterschied zwischen SLM-UT und SLM-CO. Am Tag 14 waren die relative Runx2- und OCN-Expression auf der oxidierten Oberfläche höher; Alizarinrot zeigte zusammenhängendere mineralisierte Knötchen. Das wesentliche Zellsignal war daher eine veränderte Differenzierung und Mineralisierung, nicht eine gleichzeitige Verbesserung sämtlicher früher Proliferationsgrößen. Ein Screening allein anhand früher Stoffwechselmessungen könnte spätere Differenzierungsunterschiede übersehen. [Zellversuche und Originalabbildung 5](ref:R01)\n\nDie erhöhte Expression von PINK1, PARKIN, LC3B und LAMP1 am Tag 5 liefert einen mit Mitophagie verbundenen mechanistischen Hinweis. Die untersuchten Gene für mitochondriale Biogenese, Fusion und Spaltung zeigten keine entsprechenden signifikanten Änderungen. Diese Selektivität ist aussagekräftiger als eine pauschale Verstärkung aller mitochondrialen Funktionen. Die Expression wurde auf Referenzgen und Kontrollgruppe normiert; sie misst weder die Mitochondrienzahl noch unmittelbar den autophagischen Fluss.\n\nDie zeitliche Reihenfolge verbindet den Zellzustand am Tag 5 mit osteogenen Antworten am Tag 14. Hemmungs- oder Knockdown-Versuche belegten jedoch nicht, dass die frühe Änderung für die spätere erforderlich war. Gestützt ist die Interpretation früher regulatorischer Signale nach Oberflächenmodifikation, gefolgt von Unterschieden in osteogener Expression und Mineralisierung. Die tatsächlichen Bildfelder in Originalabbildung 5 zeigen A Proliferation, B mitochondriale Expression, C osteogene Expression und D Mineralisierungsfotos. Das Lesen der Bildbeschriftung vermeidet die teilweise widersprüchlichen Panelverweise in Text und Legende.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Der Vorteil an der Kaninchenknochengrenze betrifft vor allem frühen Kontakt und Mineralisierung",
+          "markdown": "Shu und Mitarbeitende implantierten in Kaninchenfemurkondylen und entnahmen Proben nach 2, 4 und 8 Wochen. Jeder Zeitpunkt umfasste 10 SLM-UT-, 10 SLM-CO- und 5 TixOs-Implantate. Die Mikro-CT untersuchte eine 72 μm dicke Schale direkt am Implantat. Histologisch wurde der Knochen-Implantat-Kontakt (BIC) als Anteil des knöchern gelegenen Implantatumfangs mit unmittelbarem Knochenkontakt bestimmt. Die erste Messung beschreibt die lokale dreidimensionale Architektur, die zweite den Kontakt im Schnitt. Beide lassen sich nicht zu einer undifferenzierten Knochenmengenangabe zusammenziehen. [Tiermethodik und zeitaufgelöste Ergebnisse](ref:R01)\n\nNach 2 Wochen waren BV/TV, Trabekeldicke und Trabekelzahl sowie BIC bei SLM-CO höher. Gleichzeitig lagen Osteoidvolumenanteil OV/BV und Osteoidoberflächenanteil OS/BS unter den Werten der unbehandelten Gruppe. Weniger Osteoid allein kann verschiedene Ursachen haben; zusammen mit höherem BIC stützt es jedoch eine frühere Mineralisierung und Reifung des kontaktierenden Gewebes. Originalabbildung 7 verbindet diese Größen in einer Zeitreihe und trennt so Kontaktmenge und Gewebereife.\n\nNach 4 und 8 Wochen waren die Gruppenunterschiede bei BIC, OV/BV und OS/BS nicht mehr signifikant; auch die Mikro-CT-Parameter näherten sich an. Die Befunde sprechen daher für eine beschleunigte frühe Integration und nicht für einen dauerhaft höheren endgültigen Kontaktanteil. Dieser Zeitpunkt ist für frühe Belastung relevant, doch gemessen wurden Bildgebung und Gewebemorphologie. Auszugwiderstand oder Versagen unter Kaulasten wurden im selben Probensatz nicht quantifiziert. Frühere Gewebereifung beschreibt den Vorteil nach 2 Wochen somit genauer als eine Behauptung langfristig höherer Tragfähigkeit.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Säure- und Säure-Wärme-Behandlung trennen Chemie von ähnlicher Topografie",
+          "markdown": "Eine weitere Studie von 2021 untersuchte SLM-Scheiben aus Reintitan: unbehandelt (U), mit Säuregemisch behandelt (MA) und anschließend wärmebehandelt (MAH), ergänzt durch poliertes kommerziell reines Titan (cp-Ti). Bei MAH folgte eine Erwärmung auf 600 °C für 1 h. Ra betrug ungefähr 8.585 μm für MA und 8.612 μm für MAH ohne signifikanten Rauheitsunterschied; beide Wasserkontaktwinkel lagen unter 1°. Die Wärmebehandlung wandelte jedoch das durch Säure entstandene Titanhydrid in Rutil-TiO₂ um. Diese chemische Änderung bei ähnlicher Rauheit und Benetzbarkeit ermöglicht einen differenzierteren Vergleich der Bioaktivierung. [Originalstudie zu Säure und Säure-Wärme-Behandlung](ref:R02)\n\nNach 1 Tag in simulierter Körperflüssigkeit bildete nur MAH eine vollständige Apatitschicht. Dies ist zellfreie Mineralabscheidung und von zellvermittelter Matrixmineralisierung zu unterscheiden. Ein separater Alizarinrot-Test an MC3T3-E1-Kulturen am Tag 21 zeigte das höchste Mineralisierungssignal bei MAH, gefolgt von MA. Dagegen unterschied sich die ALP-Aktivität an den Tagen 10 und 14 zwischen MA und MAH nicht signifikant. Die Rangfolge hängt also davon ab, ob Enzymaktivität, spätere Matrixbildung oder azelluläre Ausfällung gemessen wird.\n\nGegenüber der Nanonadelstudie ergibt sich eine andere Evidenzführung: Säure und Wärme heben den chemischen Zustand bei ähnlicher Morphologie hervor, während die hierarchische Grenzfläche als kombinierte Änderung mit früherer Knochenreifung beim Kaninchen verbunden ist. Untersucht wurden Reintitan beziehungsweise Ti-6Al-4V sowie MC3T3-E1- beziehungsweise MG-63-Zellen. Daraus lässt sich kein allgemeiner Rauheitsschwellenwert ableiten. Die Ergebnisse zeigen vielmehr, weshalb Oberflächenparameter zusammen mit dem gemessenen Zellprozess und dem chemischen Zustand interpretiert werden müssen.",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "Lasertextur und Silber verlangen getrennte Kontrollen und Infektionsbedingungen",
+          "markdown": "Die Voll-Laser-Studie von 2026 polierte zunächst gedrucktes Titan und erzeugte anschließend laserinduzierte periodische Oberflächenstrukturen (LIPSS), Mikrosäulen und zwei hierarchische LIPSS-Muster, gefolgt von Silbernanopartikeln. Das Polieren senkte Ra von 7.839 auf 0.379 μm; die anschließende Strukturierung führte gerichtete Texturen ein. Mikrosäulen zeigten nach 48 h den höchsten Stoffwechselmesswert der Osteoblasten, während gerichtete Zellstreckung vor allem auf LIPSS und hierarchischen LIPSS auftrat. Zellzahl, Ausbreitung und Orientierung sind folglich unterschiedliche Dimensionen; ein Höchstwert in einer davon belegt keine allgemeine Überlegenheit. [Laserarchitekturen und Zellversuche](ref:R03)\n\nAuch antibakterielle Vergleiche müssen zwischen Oberflächen mit und ohne Silber unterscheiden. Textur allein wirkte gegen Porphyromonas gingivalis schwächer. Nach Silberabscheidung betrugen die OD-basierten Hemmraten der vier strukturierten Oberflächen 67.3%, 62%, 74.4% und 63.1%. Dies sind Änderungen gegenüber einer Versuchskontrolle und keine Häufigkeiten von Gewebeinfektionen. Bakterienmorphologie und Mehrspeziesbiofilme lieferten ergänzende Beobachtungen; OD allein trennt jedoch Absterben, geringere Bakterienzahl und veränderte Anheftung nicht vollständig.\n\nIm Tiermodell wurden infektionsbezogene Gewebereaktionen nach 1 und 3 Wochen getrennt von der Osseointegration nach 8 Wochen untersucht. Niedrigere frühe Entzündungsindizes bei Textur plus Silber zeigen einen veränderten Heilungsraum; die Schnitte nach 8 Wochen zeigten zusammenhängenderen Knochenkontakt. Die dynamischen Messgrößen in Tabelle 1 setzten die Kombination allerdings nicht an die Spitze: Die Mineralappositionsrate (MAR) betrug 0.9187 für LIPSS und 0.8549 für LIPSS mit Silber. Verglichen werden ausschließlich die berichteten Werte, ohne einen signifikanten Unterschied zu behaupten. Bereits vorhandener Kontakt, momentane Abscheidungsrate und Entzündung erfassen unterschiedliche Zeitfenster und lassen sich nicht als durchweg gesteigerte Knochenbildung zusammenfassen.",
+          "figure_ids": []
+        },
+        {
+          "id": "s6",
+          "title": "Fertigungsrückstände entfernen und funktionelle Texturen erhalten sind verschiedene Aufgaben",
+          "markdown": "Die Studie von 2026 zu Ätzen und Elektropolieren liefert eine ergänzende Beobachtung: Nach Verringerung ungeschmolzener Partikel und Rauheit bildeten Stammzellen der apikalen Papille nach 15 Tagen eine Monoschicht und nach 28 Tagen eine gewebeartige Matrix. Auch ein glatterer, gleichmäßigerer Untergrund kann damit die Bedeckung verbessern. [Studie zu Ätzen und Elektropolieren](ref:R04)\n\nDies widerspricht einer Differenzierung auf Mikro- und Nanostrukturen nicht. Schwach gebundene Partikel, zufällige große Erhebungen und gezielt erzeugte Nadeln oder Rillen erfüllen unterschiedliche physikalische Rollen. Die Entfernung der ersten beiden und das anschließende Einbringen feinerer Texturen verändern die Kontinuität und Richtungshinweise an der Zellkontaktfläche. Die Abfolge Polieren–Texturieren in der Laserarbeit verdeutlicht diese Trennung. Die Säure-Wärme-Versuche zeigen zugleich, dass Chemie die Mineralisierung bei ähnlicher Morphologie verändern kann. [Reihenfolge der Laserbearbeitung](ref:R03) [Chemische Schicht und Mineralisierung](ref:R02)\n\n|Versuchsträger|Tatsächlich untersuchte Grenzfläche|Räumlich gesondert zu klärende Frage|\n|---|---|---|\n|Ebene Scheiben oder Platten|Ausbreitung, Stoffwechsel und Differenzierung|Ob dies tiefe Porenwände repräsentiert|\n|Gewindeimplantate|Äußerer Knochenkontakt und Gewebereife|Lokaler Behandlungsgrad unterschiedlicher Gewinderegionen|\n|Offene dreidimensionale Gerüste|Zellschichten und gewebeartige Matrix|Innere und äußere Bedeckungs- und Dickenverteilung|\n\nBei porösen Implantaten belegt eine äußere REM-Aufnahme keine identische Chemie an inneren Porenwänden. Eintauchen, Elektropolieren und Laserbehandlung wirken zudem unterschiedlich auf abgeschattete Bereiche. Die Verbindung zwischen den Studien ist deshalb räumlich zu bestimmen: Wo entstand die Oberfläche, wohin gelangten die Zellen, und wo wurde Gewebe entnommen? Ein lokaler Mechanismus ist einer Implantatgrenzfläche nur dort zuzuordnen, wo diese Orte zusammenfallen.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Shu et al., Originalabb. 1: gedruckte Mikrostruktur und oxidierte Nanonadeln.",
+          "interpretation": "Die Spalten zeigen SLM-UT, SLM-CO und TixOs. Vier Vergrößerungsstufen enthalten Maßstäbe von 0.50 mm, 25.0 μm, 2.50 μm und 250 nm. Bei geringer Vergrößerung besitzen alle Oberflächen Drucktopografie; dichte Nadeln sind bei hoher Vergrößerung nur auf SLM-CO sichtbar. Die zusätzliche Struktur ist nanoskalig und lässt sich weder aus Partikelzahlen im Übersichtsbild noch aus einem einzelnen Rauheitswert ableiten."
+        },
+        "F02": {
+          "caption": "Shu et al., Originalabb. 5: frühe Proliferation und spätere Differenzierung getrennt.",
+          "interpretation": "A zeigt OD570 an den Tagen 1, 3 und 5 mit ähnlichen Kurven beider Oberflächen. B vergleicht mitochondriale Gene am Tag 5, C Runx2 und OCN am Tag 14; D enthält Mineralisierungsfotos dieses späteren Zeitpunkts. Sterne bedeuten P<0.05. Nicht markierte Gene für Biogenese, Fusion und Spaltung dürfen nicht als signifikant erhöht bezeichnet werden. Die tatsächlichen Panelbuchstaben ordnen die Effekte trotz widersprüchlicher Legendenverweise korrekt zu."
+        },
+        "F03": {
+          "caption": "Shu et al., Originalabb. 7: Kontakt und Osteoid nach 2, 4 und 8 Wochen.",
+          "interpretation": "Zeilen stehen für Oberflächen, Spalten für Zeitpunkte; unentkalkte Toluidinblau-Schnitte werden mit vergrößerten Ausschnitten gezeigt. Unten folgen BIC, OS/BS und OV/BV. SLM-CO verbindet nach 2 Wochen höheren Kontakt mit weniger Osteoid, während die späteren Kurven zusammenlaufen. Kontakt und Reifung stützen zusammen eine frühere Mineralisierung, keine zu jedem Zeitpunkt höhere endgültige Kontaktfraktion."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "schema_version": 2,
+  "question_id": "P1-007",
+  "p": "P1",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_4ccebf40172b6634ca8f",
+    "doc_65a92b4b0bb50f1b7137",
+    "doc_754b0b52a832896b51fc",
+    "doc_a9ad7cd729e5743bcb89"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Micro- and nano-structured 3D printed titanium implants with a hydroxyapatite coating for improved osseointegration",
+      "publisher": "Journal of Materials Chemistry B",
+      "year": 2018,
+      "url": "https://doi.org/10.1039/c7tb03251j",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Bioactivation Treatment with Mixed Acid and Heat on Titanium Implants Fabricated by Selective Laser Melting Enhances Preosteoblast Cell Differentiation",
+      "publisher": "Nanomaterials",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/nano11040987",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Dual-wavelength UV photofunctionalization of 3D-printed Ti6Al4V porous bone implant enhances osseointegration via adhesion-cytoskeleton-nuclear mechanotransduction",
+      "publisher": "Materials Today Bio",
+      "year": 2025,
+      "url": "https://doi.org/10.1016/j.mtbio.2025.102581",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Elucidating osseointegration in vivo in 3D printed scaffolds eliciting different foreign body responses",
+      "publisher": "Materials Today Bio",
+      "year": 2023,
+      "url": "https://doi.org/10.1016/j.mtbio.2023.100771",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R03",
+      "original_label": "Fig. 1",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/16a7/12681753/7eff884a5193/gr1.jpg",
+      "asset_path": "assets/academic_figures/P1-007/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12681753/#fig1",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R03",
+      "original_label": "Fig. 4",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/16a7/12681753/345d24e34798/gr4.jpg",
+      "asset_path": "assets/academic_figures/P1-007/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12681753/#fig4",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R03",
+      "original_label": "Fig. 5",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/16a7/12681753/2b78047bc513/gr5.jpg",
+      "asset_path": "assets/academic_figures/P1-007/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12681753/#fig5",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R04",
+      "original_label": "Fig. 9",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/1e5b/10477687/a4fa55892e53/gr9.jpg",
+      "asset_path": "assets/academic_figures/P1-007/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10477687/#fig9",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R04",
+      "original_label": "Fig. 8",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/1e5b/10477687/35baf80ed3f6/gr8.jpg",
+      "asset_path": "assets/academic_figures/P1-007/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10477687/#fig8",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "表面改性和涂层如何促进骨整合？",
+      "direction": "骨整合与抗感染",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "成骨细胞接触表面，只是界面形成的一部分",
+          "markdown": "表面改性可以改变蛋白首先接触的化学环境、细胞黏附的微纳结构，以及细胞向材料表面沉积基质的条件。Qin等将选择性激光熔融Ti6Al4V的微结构表面进一步阳极氧化，形成二氧化钛纳米管，再引入羟基磷灰石（HA）涂层。人原代成骨细胞及细胞系实验观察到蛋白吸附、黏附与铺展改善，以及成熟相关基因GJA1、PHEX表达增强。这是表面与细胞相互作用的证据，研究所列这些终点本身并未测量体内直接骨接触或推出强度。[微纳结构与HA涂层](ref:R01)\n\n| 研究中的处理 | 主要改变 | 可直接检验的结果 |\n|---|---|---|\n| 纳米管加HA涂层 | 微纳结构与表面矿物成分 | 蛋白吸附、细胞铺展、成熟相关表达 |\n| 混酸后热处理 | 蚀刻表面及表层物相 | 体液中磷灰石、细胞分化与矿化 |\n| 紫外光功能化 | 原有表面的润湿性及化学状态 | 细胞反应、骨接触和界面推出力 |\n\n这三条路径并不等价：增加涂层是在原表面上引入另一种材料，酸热与紫外处理则改变既有表面状态。骨整合还取决于骨与材料之间是否留下纤维组织或异物反应细胞。下面将同一处理内部的对照与跨材料的界面观察分开，使“促进成骨”具体落实到发生变化的过程。[酸热处理](ref:R02)[紫外处理](ref:R03)[体内界面观察](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "酸热对照：相同粗糙度和润湿性没有产生相同矿化结果",
+          "markdown": "Le等比较未处理打印纯钛、混酸处理（MA）、混酸后600 °C热处理1 h（MAH），并以抛光纯钛为参照。MA与MAH的Ra分别为8.585±1.117和8.612±0.990 μm，粗糙度无显著差别；两者水接触角均低于1°。因此，若只依据“更粗糙”或“更亲水”，无法解释热处理额外带来的变化。[表面表征与细胞实验](ref:R02)\n\n物相检测提供了另一层信息：混酸处理形成氢化钛，随后热处理使其转为金红石型二氧化钛；模拟体液中只有MAH表面形成完整的球状磷灰石沉积。这是无细胞条件下的成核能力，不能直接当作骨组织已与钛结合，但它说明相似形貌和接触角之外，表层化学仍然发生了重要变化。\n\n细胞结果也随终点和时间而分开。MC3T3-E1细胞的碱性磷酸酶（ALP）活性在第3、7天组间无差异；第10、14天MA与MAH均高于抛光纯钛和未处理打印钛，但两种酸处理组之间仍无差异。到第21天，茜素红检测的基质矿化以MAH最高，其次为MA和未处理打印钛。由此可见，早期酶活性没有区分出的处理效应，能够在较晚的钙沉积终点出现。\n\n这种实验支持把表面物相、早期分化与晚期矿化联系起来，却未独立分离氧化物类型、残留元素和其他表层改变。这里的试样是圆片上的细胞培养，不能将其矿化排序直接写成多孔植入物在体内的固定排序。",
+          "figure_ids": []
+        },
+        {
+          "id": "s3",
+          "title": "紫外处理：比较波长时同时保留剂量和基体条件",
+          "markdown": "Yin等采用电子束熔融多孔Ti6Al4V，设计孔径400 μm、孔隙率73%，体内用圆柱直径5 mm、长度6 mm。照射在使用前进行15 min，并比较未照射GC、365 nm的G365、270 nm的G270和双波长GU。两种单波长的辐照强度分别不低于30和2 mW/cm²，对应剂量不低于27和1.8 J/cm²；GU同时包含这两种照射。[方法及原图1](ref:R03)\n\n| 组别 | 处理波长 | 水接触角，均值±标准差 |\n|---|---|---:|\n| GC | 未照射 | 87.6°±2.8° |\n| G365 | 365 nm | 74.1°±3.7° |\n| G270 | 270 nm | 74.6°±4.6° |\n| GU | 270+365 nm | 60.2°±3.2° |\n\nGU的润湿性改善最明显，但它并非接触角接近零的超亲水表面。酸热研究中的低于1°与这里的60.2°也来自不同材料、形貌和测量条件，不能合并成一个“润湿性决定成骨”的统一剂量曲线。紫外研究另外以直径10 mm、高5 mm试样测压缩，四组弹性模量约6.8–7.6 GPa、压缩强度约50–60 MPa，没有观察到明显的基体力学改变；这与体内小圆柱的尺寸不同。\n\n内表面碳含量及表面谱学结果为表层改变提供支持。与此同时，双波长组接受了组合光剂量，实验未设置相同总能量的单波长对照。因此，联合处理优于单独处理可以作为这个照射方案的观察结果，不能单独证明排除了能量因素的波长协同效应。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "从黏附蛋白到骨接触：哪些环节被测量，哪些仍是机制解释",
+          "markdown": "在同一紫外研究中，大鼠骨髓间充质干细胞在GU上表现出更好的铺展及较高ALP活性。第14天G270与G365的ALP分别比GU低14.3%和22.7%；这两个百分比以GU为分母，不能反写为GU比对应组提高相同百分比。整合素β1、黏着斑蛋白vinculin、YAP及Lamin A/C相关检测与细胞骨架图像共同支持黏附—骨架—细胞核关联，但总蛋白增加并不等同于已证明YAP核转位或该通路的必要性；研究没有用抑制或敲低实验隔离这条因果链。[细胞、机制及体内结果](ref:R03)\n\n体内在兔股骨髁比较8周的界面。骨长入比例（BI）按孔内新骨面积除以孔区面积计算，骨—植入物接触率（BICR）则按直接接触骨的植入物表面周长比例计算。原图5中GU与G270的BI接近，而BICR排序不同；这已经说明“孔内长入多少骨”和“表面多少区域直接接触骨”不是同一个指标。\n\n微CT孔内骨比例为GU 75.53±1.4%、G270 74.44±1.9%、G365 66.16±1.52%，这里的三维区域指标也不能与组织切片BI互换。第3和第7周荧光标记支持不同时段的骨沉积，不能把终点图像当成连续的细胞迁移轨迹。界面力学提供另一项实测：8周推出力由GC的304.7±29.75 N升至GU的450.5±18.5 N，原文报告P<0.05。这个结果加强了组织观察与固定的联系，但它是该骨缺损与推出条件下的力，不是已经按接触面积归一化的界面强度。",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "骨量相近而界面不同：含HA并不能保证直接骨接触",
+          "markdown": "Qiu等比较打印的HA/聚乙二醇/聚己内酯（HA/PEG/PCL）复合支架及其烧结后支架。复合物含84 wt% HA，烧结为1400 °C、3 h；聚合物去除后还出现磷酸三钙相，孔隙率由36%变为43%，支杆与孔尺寸也有轻微变化。因此，这是两种材料系统的比较，不能归结为只改变表面HA含量的单因素涂层实验。[材料、体内骨量及界面显微结果](ref:R04)\n\n研究在大鼠5 mm颅骨缺损中观察第1、2、4、8、12周。两组骨矿物密度没有显著差别，BV/TV除第8周外也相近；支架体积在骨量计算中被排除。然而，复合支架多数支杆表面被纤维组织包围，新骨与材料被隔开，直接骨接触较少。烧结组的纤维组织较少，直接接触更多，但同一支架仍可同时包含骨接触区和异物反应区。\n\n原图9把这种差别放大到界面：复合组骨与支杆之间可见纤维层，烧结组可见更直接的骨—颗粒接触。切片经过脱钙，图中颗粒形空隙对应原HA颗粒位置；不能把这些空隙当成植入后材料降解的直接图像。支架内部新骨向材料表面接近的形态，也与“细胞先在材料表面形成骨，再向孔内生长”的单一路径不同。这里是形态学证据，不是对成骨细胞谱系和移动方向的实时追踪。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "异物反应的空间分布，比一个整体炎症比值更接近骨接触",
+          "markdown": "Qiu等用iNOS和CD163阳性面积分别表征偏M1和偏M2的巨噬细胞状态。复合组第1周的M1/M2比值较高，此后两组比值都下降，第4周后趋于稳定。后期整体比值接近，并没有使两组纤维包裹和骨接触变得相同；因此，早期反应与界面局部位置需要和总体比值一起解释。[免疫组织化学与局部接触](ref:R04)\n\n原图8比较第4、8、12周相邻切片，iNOS与CD163切片相隔5 μm。直接骨接触的位置未见巨噬细胞或异物巨细胞占据，存在这些细胞的位置则未见直接接触；两种状态可以在相邻区域并存。这是局部分布与接触状态的关联，既不能把相邻切片当作同一细胞的双标共定位，也不能仅据该观察证明某一种巨噬细胞状态必然阻断骨整合。\n\nTGF-β1进一步显示单一指标的多重含义：其阳性面积随时间升至第8周后下降，烧结组在第1、8周反而高于复合组，却伴随较少纤维组织。该因子参与纤维化，也参与成骨祖细胞增殖和早期分化，信号需要结合其所在组织解释。两组支架在植入前后处理也有区别：复合支架植入前浸水24 h以去除PEG，而体外浸提液细胞实验未作这一预浸；因此不能用浸提液里的细胞代谢差异，直接替代体内界面异物反应的原因。",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Yin等：紫外处理后的润湿性、表面形貌及压缩表现，原图1。",
+          "interpretation": "A是作者的处理概念图；B、C分别为水滴与接触角，GU最低。D保留100 μm及放大图5 μm标尺。按图中实际坐标，E为压缩强度、F为弹性模量，G为应力—应变曲线；原文图注的E/F名称互换，本文按实际轴标识解释。数据表明润湿性与表面形貌变化可以同时伴随近似的整体压缩表现，不宜从概念示意图直接推出已证明的协同机制。[表面与压缩实测](ref:R03)"
+        },
+        "F02": {
+          "caption": "Yin等：黏附蛋白、细胞骨架与YAP表达，原图4。",
+          "interpretation": "A、B为整合素条带与相对β-actin表达，C为vinculin，E为YAP；定量为均值±标准差，n=3。D显示actin红色、myosin绿色及合并图，保留200 μm标尺。GU总体表达较高、细胞铺展更充分，但这些读数不直接测量牵引力，也未提供通路抑制后的救援结果；其意义是为黏附与细胞骨架关联提供多种相互支持的观察。[机制证据范围](ref:R03)"
+        },
+        "F03": {
+          "caption": "Yin等：兔股骨髁中骨长入、骨接触和矿化，原图5。",
+          "interpretation": "A为Goldner染色；B分列BI与BICR，二者分母分别是孔区面积和植入物表面周长，不能把两组柱形当成重复测量同一比例。C区分类骨质与矿化骨，D为不同时间标记的荧光图并保留500 μm标尺，E为8周微CT侧视及俯视。GU与G270在BI上相近，但GU的BICR更高，提示表面直接接触需要独立于孔内骨量评价。[组织与影像终点](ref:R03)"
+        },
+        "F04": {
+          "caption": "Qiu等：复合支架与烧结HA支架的骨—材料界面，原图9。",
+          "interpretation": "上行为HA/PEG/PCL，下行为HA；左列保留50 μm标尺，右列放大框选区域并保留5 μm标尺。FT标出纤维组织，黑箭头指向直接骨接触，蓝箭头指向成骨细胞与类骨质，黄箭头为骨细胞。图像来自脱钙切片，HA标识处为颗粒原位置留下的空隙。复合组的纤维隔层解释了为什么孔内形成骨组织仍可能没有连续骨—材料接触。[界面显微证据](ref:R04)"
+        },
+        "F05": {
+          "caption": "Qiu等：巨噬细胞标记与直接骨接触的局部关系，原图8。",
+          "interpretation": "a为HA/PEG/PCL、b为HA，各自展示第4、8、12周的iNOS及CD163相邻切片，保留50 μm标尺。黑箭头标出骨整合位置，棕色为相应标记阳性区域。骨接触与异物反应在同一支架中呈局部异质性；相邻切片相隔5 μm，图像支持区域分布比较，不能用来判定同一细胞同时表达两种标记。[局部分布与接触](ref:R04)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do surface modifications and coatings promote osseointegration?",
+      "direction": "Osseointegration and infection prevention",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Cell contact with a surface is only part of interface formation",
+          "markdown": "Surface modification can change the chemical environment encountered by proteins, the micro- and nanoscale structures supporting adhesion, and the conditions under which cells deposit matrix at a material surface. Qin et al. anodized microstructured selective-laser-melted Ti6Al4V to create titania nanotubes and then introduced a hydroxyapatite (HA) coating. Experiments with primary human osteoblasts and cell lines showed improved protein adsorption, adhesion and spreading, together with increased expression of the maturation-associated genes GJA1 and PHEX. These are cell–surface interaction findings; the listed endpoints themselves did not measure direct bone contact in vivo or push-out strength.[Micro/nanostructures and HA coating](ref:R01)\n\n| Treatment studied | Principal change | Directly testable outcome |\n|---|---|---|\n| Nanotubes with HA coating | Micro/nanostructure and surface mineral composition | Protein adsorption, cell spreading and maturation-associated expression |\n| Mixed acid followed by heating | Etched surface and near-surface phases | Apatite in simulated body fluid, cellular differentiation and mineralization |\n| UV photofunctionalization | Wettability and chemical state of the existing surface | Cellular responses, bone contact and interface push-out force |\n\nThese routes are not equivalent: coating introduces another material, whereas acid/heat and UV treatments modify the existing surface state. Osseointegration also depends on whether fibrous tissue or foreign-body-response cells remain between bone and material. The following analysis separates within-treatment controls from cross-material interface observations, identifying which process actually changes when a treatment “promotes bone formation.”[Acid/heat treatment](ref:R02)[UV treatment](ref:R03)[In vivo interface observations](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Acid/heat controls: similar roughness and wettability do not produce identical mineralization",
+          "markdown": "Le et al. compared untreated printed pure titanium, mixed-acid treatment (MA), and mixed acid followed by heating at 600 °C for 1 h (MAH), with polished pure titanium as a reference. Ra was 8.585±1.117 μm for MA and 8.612±0.990 μm for MAH, without a significant roughness difference; both water contact angles were below 1°. “Rougher” or “more hydrophilic” alone therefore cannot explain the additional effects of heating.[Surface characterization and cell experiments](ref:R02)\n\nPhase analysis adds another dimension: mixed acid generated titanium hydride, subsequently converted by heating to rutile titanium dioxide. Only MAH developed complete spherical apatite deposits in simulated body fluid. This measures nucleation under cell-free conditions rather than demonstrating bone already bonded to titanium, but it identifies an important chemical change beyond similar morphology and contact angle.\n\nCellular findings also separate by endpoint and time. MC3T3-E1 alkaline phosphatase (ALP) activity did not differ between groups at days 3 and 7. At days 10 and 14, MA and MAH exceeded polished and untreated printed titanium, but the two acid-treated groups still did not differ. By day 21, alizarin-red-assessed matrix mineralization was highest on MAH, followed by MA and untreated printed titanium. A treatment effect unresolved by an earlier enzyme assay can therefore emerge in later calcium deposition.\n\nThis experiment connects surface phases, early differentiation and later mineralization without independently separating oxide type, residual elements and other near-surface changes. The specimens were discs used for cell culture; their mineralization ranking cannot directly become an in vivo fixation ranking for porous implants.",
+          "figure_ids": []
+        },
+        {
+          "id": "s3",
+          "title": "UV treatment: wavelength comparisons must retain dose and substrate conditions",
+          "markdown": "Yin et al. used electron-beam-melted porous Ti6Al4V with a designed pore size of 400 μm and porosity of 73%; the in vivo cylinders were 5 mm in diameter and 6 mm long. Irradiation lasted 15 min immediately before use, comparing untreated GC, 365 nm G365, 270 nm G270 and dual-wavelength GU. Single-wavelength irradiances were at least 30 and 2 mW/cm², respectively, corresponding to doses of at least 27 and 1.8 J/cm²; GU combined both exposures.[Methods and original Fig. 1](ref:R03)\n\n| Group | Wavelength treatment | Water contact angle, mean ± standard deviation |\n|---|---|---:|\n| GC | No irradiation | 87.6°±2.8° |\n| G365 | 365 nm | 74.1°±3.7° |\n| G270 | 270 nm | 74.6°±4.6° |\n| GU | 270+365 nm | 60.2°±3.2° |\n\nGU showed the greatest wettability improvement, but not a superhydrophilic surface with an angle near zero. The below-1° acid/heat result and 60.2° here also arise from different materials, morphologies and measurement conditions; they cannot be combined into a universal wettability–osteogenesis dose curve. Compression was separately measured on specimens 10 mm in diameter and 5 mm high. The four groups had elastic moduli of approximately 6.8–7.6 GPa and compressive strengths of approximately 50–60 MPa, without an apparent substrate-mechanical change. Those dimensions differ from the small in vivo cylinders.\n\nInner-surface carbon content and surface spectroscopy support near-surface modification. However, the dual-wavelength group received combined light doses, and the experiment lacked a single-wavelength control matched for total energy. Better performance of the combined treatment is an observation about this irradiation protocol; it does not independently establish wavelength synergy with energy effects excluded.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "From adhesion proteins to bone contact: measurements and mechanistic interpretation",
+          "markdown": "In the same UV study, rat bone-marrow mesenchymal stromal cells showed greater spreading and higher ALP activity on GU. At day 14, ALP in G270 and G365 was 14.3% and 22.7% lower than GU, respectively. These percentages use GU as the denominator and cannot be reversed into identical percentage increases for GU over the corresponding groups. Integrin β1, vinculin, YAP and Lamin A/C assays, together with cytoskeletal images, support an adhesion–cytoskeleton–nucleus association. Increased total protein does not itself establish YAP nuclear translocation or pathway necessity; inhibition or knockdown experiments were not used to isolate this causal chain.[Cellular, mechanistic and in vivo findings](ref:R03)\n\nThe in vivo experiment compared interfaces at 8 weeks in rabbit femoral condyles. Bone ingrowth (BI) was newly formed bone area divided by intraporous area, whereas the bone–implant contact ratio (BICR) was the fraction of implant surface perimeter directly contacting bone. In original Fig. 5, GU and G270 have similar BI but different BICR rankings, showing that bone quantity inside pores and directly bone-contacting surface are distinct metrics.\n\nMicro-CT intraporous bone fractions were 75.53±1.4% for GU, 74.44±1.9% for G270 and 66.16±1.52% for G365. This volumetric regional metric is also not interchangeable with histological BI. Fluorescent labels at weeks 3 and 7 support deposition during different periods, not continuous cell-migration trajectories reconstructed from endpoint images. Interface mechanics added a direct measurement: at 8 weeks, push-out force increased from 304.7±29.75 N in GC to 450.5±18.5 N in GU, with reported P<0.05. This links tissue observations more closely to fixation, but measures force under that defect and push-out configuration, not interface strength already normalized by contact area.",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Similar bone quantity, different interfaces: HA content does not guarantee direct contact",
+          "markdown": "Qiu et al. compared printed HA/polyethylene glycol/polycaprolactone (HA/PEG/PCL) composite scaffolds with scaffolds obtained by sintering them. The composite contained 84 wt% HA; sintering was performed at 1400 °C for 3 h. Polymer removal was accompanied by formation of a tricalcium-phosphate phase, a porosity change from 36% to 43%, and small changes in strut and pore dimensions. This compares two material systems rather than a single-factor coating experiment changing only surface HA content.[Materials, in vivo bone quantity and interface microscopy](ref:R04)\n\nThe study followed 5 mm rat calvarial defects at weeks 1, 2, 4, 8 and 12. Bone mineral density did not differ significantly, and BV/TV was similar except at week 8; scaffold volume was excluded from bone-volume quantification. Nevertheless, fibrous tissue covered most composite strut surfaces, separating newly formed bone from material and leaving limited direct contact. Sintered scaffolds had less fibrous tissue and more direct contact, although individual scaffolds still contained both osseointegrated and foreign-body-response regions.\n\nOriginal Fig. 9 resolves this distinction at the interface: a fibrous layer lies between bone and composite struts, whereas more direct bone–particle contacts appear in the sintered group. Sections were decalcified; particle-shaped voids mark former HA locations and cannot be read as direct images of material degradation after implantation. The morphology of new bone approaching material from within the scaffold also differs from an exclusively surface-first route in which cells deposit bone on the material and subsequently grow outward into pores. This is morphological evidence, not live tracking of osteogenic lineages or movement direction.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Spatial distribution of foreign-body responses is closer to bone contact than one global inflammatory ratio",
+          "markdown": "Qiu et al. used iNOS- and CD163-positive areas to characterize macrophage states biased toward M1 and M2, respectively. The composite group had a higher M1/M2 ratio at week 1; both groups subsequently declined and stabilized after week 4. Similar later global ratios did not make fibrous encapsulation and bone contact equivalent. Early responses and local interface positions therefore need interpretation alongside the overall ratio.[Immunohistochemistry and local contact](ref:R04)\n\nOriginal Fig. 8 compares adjacent sections at weeks 4, 8 and 12, with iNOS and CD163 sections separated by 5 μm. Macrophages or foreign-body giant cells did not occupy direct-contact locations, whereas direct contact was absent where those cells occurred; both states could coexist in nearby regions. This associates spatial distribution with contact status. It neither turns adjacent sections into dual-marker colocalization in the same cells nor alone proves that a particular macrophage state necessarily blocks osseointegration.\n\nTGF-β1 further illustrates the multiple meanings of one marker: its positive area increased toward week 8 and then declined, and was actually higher in the sintered group at weeks 1 and 8 despite less fibrous tissue. The factor participates in fibrosis but also osteoprogenitor proliferation and early differentiation, so its tissue context matters. Scaffold preparation also differed across experiments: composites were water-soaked for 24 h to remove PEG before implantation, whereas the in vitro extract experiment omitted that presoak. Cell-metabolic differences in extracts therefore cannot directly substitute for an explanation of the in vivo interface foreign-body response.",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Yin et al.: wettability, surface morphology and compression after UV treatment, original Fig. 1.",
+          "interpretation": "A is the authors’ treatment concept; B and C show droplets and contact angles, with GU lowest. D retains 100 μm bars and 5 μm inset bars. According to the actual axes, E is compressive strength, F elastic modulus and G stress–strain curves. The original caption interchanges E/F names; interpretation here follows the axes. Wettability and morphology changes can coexist with similar bulk compression, while the conceptual drawing itself does not establish synergy.[Surface and compression measurements](ref:R03)"
+        },
+        "F02": {
+          "caption": "Yin et al.: adhesion proteins, cytoskeleton and YAP expression, original Fig. 4.",
+          "interpretation": "A and B show integrin bands and expression relative to β-actin, C vinculin and E YAP; quantitative data are mean ± standard deviation, n=3. D shows red actin, green myosin and merged images, retaining the 200 μm bar. GU generally shows higher expression and greater spreading, but these readouts do not directly measure traction force or supply rescue results after pathway inhibition. They provide mutually supporting observations of adhesion–cytoskeleton association.[Scope of mechanistic evidence](ref:R03)"
+        },
+        "F03": {
+          "caption": "Yin et al.: bone ingrowth, contact and mineralization in rabbit femoral condyles, original Fig. 5.",
+          "interpretation": "A shows Goldner staining. B separates BI and BICR, whose denominators are pore area and implant surface perimeter; the two bar sets do not repeat the same proportion. C distinguishes osteoid from mineralized bone, D shows temporally labeled fluorescence with 500 μm bars, and E shows side and top micro-CT views at 8 weeks. GU and G270 are similar for BI, while GU has higher BICR, demonstrating why direct surface contact must be assessed separately from intraporous bone quantity.[Histological and imaging endpoints](ref:R03)"
+        },
+        "F04": {
+          "caption": "Qiu et al.: bone–material interfaces of composite and sintered HA scaffolds, original Fig. 9.",
+          "interpretation": "The upper row is HA/PEG/PCL and the lower row HA. Left panels retain 50 μm bars; right panels enlarge the boxed regions and retain 5 μm bars. FT denotes fibrous tissue, black arrows direct bone contact, blue arrows osteoblasts and osteoid, and yellow arrows osteocytes. These are decalcified sections: spaces labeled HA mark former particle positions. The composite fibrous interlayer explains why bone within pores need not provide continuous bone–material contact.[Interface microscopy](ref:R04)"
+        },
+        "F05": {
+          "caption": "Qiu et al.: local relationships between macrophage markers and direct bone contact, original Fig. 8.",
+          "interpretation": "Panel a is HA/PEG/PCL and b HA. Each displays adjacent iNOS and CD163 sections at weeks 4, 8 and 12, with 50 μm bars retained. Black arrows identify osseointegration; brown areas are positive for the respective marker. Bone contact and foreign-body responses are locally heterogeneous within individual scaffolds. Sections are separated by 5 μm, supporting regional comparisons rather than identification of both markers in the same cell.[Local distribution and contact](ref:R04)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie fördern Oberflächenmodifikationen und Beschichtungen die Osseointegration?",
+      "direction": "Osseointegration und Infektionsprävention",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Zellkontakt mit einer Oberfläche ist nur ein Teil der Grenzflächenbildung",
+          "markdown": "Oberflächenmodifikation kann die chemische Umgebung für zuerst ankommende Proteine, Mikro- und Nanostrukturen der Zelladhäsion sowie die Bedingungen der Matrixablagerung verändern. Qin et al. anodisierten mikrostrukturierte, selektiv lasergeschmolzene Ti6Al4V-Oberflächen zu Titandioxid-Nanoröhren und ergänzten eine Hydroxylapatitbeschichtung (HA). Versuche mit primären menschlichen Osteoblasten und Zelllinien zeigten verbesserte Proteinadsorption, Adhäsion und Ausbreitung sowie erhöhte Expression der reifungsbezogenen Gene GJA1 und PHEX. Dies belegt Zell-Oberflächen-Wechselwirkungen; die genannten Endpunkte messen selbst keinen direkten Knochenkontakt in vivo oder keine Ausdrückfestigkeit.[Mikro-/Nanostrukturen und HA-Beschichtung](ref:R01)\n\n| Untersuchte Behandlung | Wesentliche Veränderung | Direkt prüfbares Ergebnis |\n|---|---|---|\n| Nanoröhren mit HA-Beschichtung | Mikro-/Nanostruktur und mineralische Oberflächenzusammensetzung | Proteinadsorption, Zellausbreitung und reifungsbezogene Expression |\n| Mischsäure mit anschließender Erwärmung | Geätzte Oberfläche und oberflächennahe Phasen | Apatit in simulierter Körperflüssigkeit, Zelldifferenzierung und Mineralisierung |\n| UV-Photofunktionalisierung | Benetzbarkeit und chemischer Zustand der vorhandenen Oberfläche | Zellantworten, Knochenkontakt und Ausdrückkraft an der Grenzfläche |\n\nDiese Wege sind nicht gleichwertig: Eine Beschichtung fügt ein weiteres Material hinzu, während Säure/Wärme und UV den vorhandenen Oberflächenzustand verändern. Osseointegration hängt außerdem davon ab, ob zwischen Knochen und Material fibröses Gewebe oder Zellen einer Fremdkörperreaktion verbleiben. Im Folgenden werden Kontrollen innerhalb einer Behandlung von materialübergreifenden Grenzflächenbeobachtungen getrennt, um die tatsächlich veränderten Prozesse hinter einer „Förderung der Knochenbildung“ zu bestimmen.[Säure/Wärme-Behandlung](ref:R02)[UV-Behandlung](ref:R03)[Grenzflächenbeobachtungen in vivo](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Säure/Wärme-Kontrollen: ähnliche Rauheit und Benetzbarkeit ergeben keine identische Mineralisierung",
+          "markdown": "Le et al. verglichen unbehandeltes gedrucktes Reintitan, Mischsäurebehandlung (MA) und Mischsäure mit anschließender Erwärmung bei 600 °C für 1 h (MAH); poliertes Reintitan diente als Referenz. Ra betrug für MA 8.585±1.117 μm und für MAH 8.612±0.990 μm ohne signifikanten Rauheitsunterschied; beide Wasserkontaktwinkel lagen unter 1°. „Rauer“ oder „hydrophiler“ allein erklärt daher die zusätzliche Wirkung der Erwärmung nicht.[Oberflächencharakterisierung und Zellversuche](ref:R02)\n\nDie Phasenanalyse liefert weitere Information: Mischsäure erzeugte Titanhydrid, das durch Erwärmung in Rutil-Titandioxid überging. Nur MAH entwickelte in simulierter Körperflüssigkeit eine vollständige Ablagerung kugelförmigen Apatits. Dies misst die Keimbildung unter zellfreien Bedingungen und belegt keinen bereits mit Titan verbundenen Knochen. Es zeigt jedoch eine wesentliche chemische Veränderung jenseits ähnlicher Morphologie und Kontaktwinkel.\n\nAuch die Zellbefunde unterscheiden sich nach Endpunkt und Zeitpunkt. Die Aktivität der alkalischen Phosphatase (ALP) in MC3T3-E1-Zellen unterschied sich an den Tagen 3 und 7 nicht zwischen den Gruppen. An den Tagen 10 und 14 lagen MA und MAH über poliertem und unbehandeltem gedrucktem Titan, unterschieden sich aber weiterhin nicht voneinander. An Tag 21 war die mit Alizarinrot erfasste Matrixmineralisierung auf MAH am höchsten, gefolgt von MA und unbehandeltem gedrucktem Titan. Ein im früheren Enzymtest nicht aufgelöster Behandlungseffekt kann somit bei späterer Kalziumablagerung auftreten.\n\nDer Versuch verbindet Oberflächenphasen, frühe Differenzierung und spätere Mineralisierung, ohne Oxidtyp, Restelemente und andere oberflächennahe Veränderungen unabhängig zu trennen. Untersucht wurden Scheiben in Zellkultur; ihre Mineralisierungsrangfolge lässt sich nicht unmittelbar in eine Fixierungsrangfolge poröser Implantate in vivo übertragen.",
+          "figure_ids": []
+        },
+        {
+          "id": "s3",
+          "title": "UV-Behandlung: Wellenlängenvergleiche erfordern Dosis- und Substratbedingungen",
+          "markdown": "Yin et al. verwendeten elektronenstrahlgeschmolzenes poröses Ti6Al4V mit einer vorgesehenen Porengröße von 400 μm und 73% Porosität. Die In-vivo-Zylinder hatten 5 mm Durchmesser und 6 mm Länge. Unmittelbar vor Gebrauch erfolgte eine Bestrahlung über 15 min; verglichen wurden unbehandeltes GC, G365 mit 365 nm, G270 mit 270 nm und GU mit beiden Wellenlängen. Die Einzelbestrahlungsstärken betrugen mindestens 30 beziehungsweise 2 mW/cm², entsprechend mindestens 27 beziehungsweise 1.8 J/cm²; GU kombinierte beide Expositionen.[Methoden und Originalabbildung 1](ref:R03)\n\n| Gruppe | Wellenlängenbehandlung | Wasserkontaktwinkel, Mittelwert ± Standardabweichung |\n|---|---|---:|\n| GC | Keine Bestrahlung | 87.6°±2.8° |\n| G365 | 365 nm | 74.1°±3.7° |\n| G270 | 270 nm | 74.6°±4.6° |\n| GU | 270+365 nm | 60.2°±3.2° |\n\nGU zeigte die stärkste Verbesserung der Benetzbarkeit, aber keine superhydrophile Oberfläche mit nahezu null Grad. Unter 1° bei Säure/Wärme und hier 60.2° stammen zudem aus unterschiedlichen Materialien, Morphologien und Messbedingungen und bilden keine allgemeine Dosis-Wirkungs-Kurve zwischen Benetzbarkeit und Osteogenese. Die Druckprüfung erfolgte separat an Proben mit 10 mm Durchmesser und 5 mm Höhe. Die vier Gruppen zeigten Elastizitätsmoduln von ungefähr 6.8–7.6 GPa und Druckfestigkeiten von ungefähr 50–60 MPa ohne erkennbare mechanische Substratveränderung. Diese Abmessungen unterscheiden sich von den kleinen In-vivo-Zylindern.\n\nKohlenstoffgehalt der inneren Oberfläche und Oberflächenspektroskopie stützen eine oberflächennahe Modifikation. Die Gruppe mit beiden Wellenlängen erhielt jedoch kombinierte Lichtdosen; eine Einzelwellenlängenkontrolle gleicher Gesamtenergie fehlte. Ein besseres Ergebnis der Kombination ist damit eine Beobachtung zu diesem Bestrahlungsprotokoll, kein unabhängiger Nachweis einer Wellenlängensynergie unter Ausschluss von Energieeffekten.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Von Adhäsionsproteinen zum Knochenkontakt: Messung und mechanistische Interpretation",
+          "markdown": "In derselben UV-Studie zeigten mesenchymale Stromazellen aus Rattenknochenmark auf GU stärkere Ausbreitung und höhere ALP-Aktivität. An Tag 14 lag die ALP in G270 und G365 um 14.3% beziehungsweise 22.7% unter GU. Diese Prozentwerte verwenden GU als Nenner und dürfen nicht in identische prozentuale Zunahmen von GU gegenüber den jeweiligen Gruppen umgekehrt werden. Untersuchungen von Integrin β1, Vinculin, YAP und Lamin A/C sowie Zytoskelettbilder stützen einen Zusammenhang zwischen Adhäsion, Zytoskelett und Zellkern. Mehr Gesamtprotein belegt jedoch weder unmittelbar eine nukleäre YAP-Translokation noch die Notwendigkeit des Signalwegs; Hemmungs- oder Knockdown-Versuche isolierten diese Kausalkette nicht.[Zelluläre, mechanistische und In-vivo-Befunde](ref:R03)\n\nIn vivo wurden Grenzflächen nach 8 Wochen in Kaninchen-Femurkondylen verglichen. Knocheneinwuchs (BI) bezeichnete neu gebildete Knochenfläche geteilt durch die intraporöse Fläche; die Knochen-Implantat-Kontaktrate (BICR) bezeichnete den Anteil des Implantatoberflächenumfangs mit direktem Knochenkontakt. In Originalabbildung 5 besitzen GU und G270 ähnliche BI-Werte, aber unterschiedliche BICR-Rangfolgen. Knochenmenge in den Poren und unmittelbar kontaktierende Oberfläche sind somit verschiedene Größen.\n\nDie intraporösen Knochenanteile im Mikro-CT betrugen für GU 75.53±1.4%, für G270 74.44±1.9% und für G365 66.16±1.52%. Auch diese volumetrische Regionsgröße ist nicht mit histologischem BI austauschbar. Fluoreszenzmarkierungen in Woche 3 und 7 unterstützen Ablagerung zu verschiedenen Zeiten, keine aus Endpunktbildern abgeleiteten kontinuierlichen Zellwanderungsbahnen. Die Grenzflächenmechanik ergänzte eine direkte Messung: Nach 8 Wochen stieg die Ausdrückkraft von 304.7±29.75 N bei GC auf 450.5±18.5 N bei GU, mit berichtetem P<0.05. Dies verbindet Gewebebefunde enger mit Fixierung, misst aber die Kraft in dieser Defekt- und Prüfkonfiguration, keine bereits auf Kontaktfläche normierte Grenzflächenfestigkeit.",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Ähnliche Knochenmenge, unterschiedliche Grenzflächen: HA garantiert keinen direkten Kontakt",
+          "markdown": "Qiu et al. verglichen gedruckte Verbundgerüste aus HA/Polyethylenglykol/Polycaprolacton (HA/PEG/PCL) mit daraus gesinterten Gerüsten. Der Verbund enthielt 84 wt% HA; gesintert wurde bei 1400 °C über 3 h. Mit der Polymerentfernung traten eine Tricalciumphosphatphase, eine Porositätsänderung von 36% auf 43% und kleine Änderungen der Streben- und Porenabmessungen auf. Verglichen werden daher zwei Materialsysteme, kein Beschichtungsversuch mit ausschließlich verändertem HA-Gehalt der Oberfläche.[Materialien, Knochenmenge in vivo und Grenzflächenmikroskopie](ref:R04)\n\nDie Studie verfolgte 5 mm große Kalottendefekte von Ratten nach 1, 2, 4, 8 und 12 Wochen. Die Knochenmineraldichte unterschied sich nicht signifikant; BV/TV war außer in Woche 8 ähnlich. Das Gerüstvolumen wurde aus der Knochenvolumenbestimmung ausgeschlossen. Dennoch bedeckte fibröses Gewebe die meisten Verbundstreben, trennte neuen Knochen vom Material und ließ wenig direkten Kontakt zu. Gesinterte Gerüste zeigten weniger fibröses Gewebe und mehr direkten Kontakt, enthielten aber ebenfalls sowohl osseointegrierte Bereiche als auch Regionen mit Fremdkörperreaktion.\n\nOriginalabbildung 9 löst diesen Unterschied an der Grenzfläche auf: Eine fibröse Schicht liegt zwischen Knochen und Verbundstreben; in der Sintergruppe erscheinen direktere Knochen-Partikel-Kontakte. Die Schnitte wurden entkalkt. Partikelförmige Hohlräume markieren frühere HA-Positionen und zeigen nicht unmittelbar einen Materialabbau nach Implantation. Die Morphologie neuen Knochens, der sich aus dem Gerüstinneren der Materialoberfläche nähert, unterscheidet sich zudem von einem ausschließlich oberflächengeleiteten Weg mit zuerst auf dem Material abgelagertem und anschließend in die Poren wachsendem Knochen. Dies ist morphologische Evidenz, keine Echtzeitverfolgung osteogener Zelllinien oder Bewegungsrichtungen.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Die räumliche Fremdkörperreaktion liegt näher am Knochenkontakt als ein globaler Entzündungsquotient",
+          "markdown": "Qiu et al. charakterisierten eher M1- beziehungsweise M2-geprägte Makrophagenzustände anhand iNOS- und CD163-positiver Flächen. Der Verbund hatte in Woche 1 einen höheren M1/M2-Quotienten; anschließend sank er in beiden Gruppen und stabilisierte sich nach Woche 4. Ähnliche spätere Gesamtquotienten glichen jedoch fibröse Einkapselung und Knochenkontakt nicht an. Frühreaktion und lokale Grenzflächenposition müssen daher zusammen mit dem Gesamtquotienten interpretiert werden.[Immunhistochemie und lokaler Kontakt](ref:R04)\n\nOriginalabbildung 8 vergleicht benachbarte Schnitte nach 4, 8 und 12 Wochen; iNOS- und CD163-Schnitte liegen 5 μm auseinander. An direkten Kontaktstellen wurden keine Makrophagen oder Fremdkörperriesenzellen beobachtet, während bei deren Anwesenheit direkter Kontakt fehlte. Beide Zustände konnten in benachbarten Regionen koexistieren. Dies verbindet räumliche Verteilung und Kontaktzustand. Benachbarte Schnitte werden dadurch weder zu einer Doppelmarkierung derselben Zellen, noch beweist die Beobachtung allein, dass ein bestimmter Makrophagenzustand zwangsläufig Osseointegration verhindert.\n\nTGF-β1 verdeutlicht zusätzlich die Mehrdeutigkeit einzelner Marker: Seine positive Fläche stieg bis Woche 8 und sank danach. In der Sintergruppe lag sie in Woche 1 und 8 sogar höher, trotz weniger fibrösen Gewebes. Der Faktor beteiligt sich sowohl an Fibrose als auch an Proliferation und früher Differenzierung osteogener Vorläufer; sein Gewebekontext ist deshalb entscheidend. Auch die Vorbereitung unterschied sich zwischen Versuchen: Verbundgerüste wurden vor Implantation 24 h gewässert, um PEG zu entfernen; der In-vitro-Extraktversuch ließ diesen Schritt aus. Unterschiede des Zellstoffwechsels in Extrakten ersetzen daher keine Erklärung der Fremdkörperreaktion an der In-vivo-Grenzfläche.",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Yin et al.: Benetzbarkeit, Oberflächenmorphologie und Druckverhalten nach UV-Behandlung, Originalabbildung 1.",
+          "interpretation": "A ist das Behandlungskonzept der Autoren; B und C zeigen Tropfen und Kontaktwinkel mit dem niedrigsten Wert bei GU. D enthält 100 μm-Maßstäbe und 5 μm-Maßstäbe in den Ausschnitten. Nach den tatsächlichen Achsen zeigt E die Druckfestigkeit, F den Elastizitätsmodul und G Spannungs-Dehnungs-Kurven. Die ursprüngliche Legende vertauscht E/F; hier werden die Achsen zugrunde gelegt. Änderungen der Benetzbarkeit und Morphologie können mit ähnlichem Gesamtdruckverhalten einhergehen; die Konzeptgrafik selbst belegt keine Synergie.[Oberflächen- und Druckmessungen](ref:R03)"
+        },
+        "F02": {
+          "caption": "Yin et al.: Adhäsionsproteine, Zytoskelett und YAP-Expression, Originalabbildung 4.",
+          "interpretation": "A und B zeigen Integrinbanden und Expression relativ zu β-Actin, C Vinculin und E YAP; quantitative Daten sind Mittelwert ± Standardabweichung, n=3. D zeigt rotes Actin, grünes Myosin und Überlagerungen mit erhaltenem 200 μm-Maßstab. GU weist insgesamt höhere Expression und stärkere Ausbreitung auf. Diese Größen messen jedoch weder unmittelbar Traktionskräfte noch liefern sie Rettungsversuche nach Signalweghemmung. Sie bilden mehrere sich stützende Beobachtungen zum Adhäsions-Zytoskelett-Zusammenhang.[Umfang der mechanistischen Evidenz](ref:R03)"
+        },
+        "F03": {
+          "caption": "Yin et al.: Knocheneinwuchs, Kontakt und Mineralisierung in Kaninchen-Femurkondylen, Originalabbildung 5.",
+          "interpretation": "A zeigt die Goldner-Färbung. B trennt BI und BICR mit Porenfläche beziehungsweise Implantatoberflächenumfang als Nennern; die Balkengruppen wiederholen nicht dieselbe Proportion. C unterscheidet Osteoid und mineralisierten Knochen, D zeigt zeitlich markierte Fluoreszenz mit 500 μm-Maßstäben, E Mikro-CT-Seiten- und Aufsichten nach 8 Wochen. GU und G270 sind beim BI ähnlich, GU besitzt jedoch einen höheren BICR. Direkter Oberflächenkontakt muss daher unabhängig von der intraporösen Knochenmenge beurteilt werden.[Histologische und bildgebende Endpunkte](ref:R03)"
+        },
+        "F04": {
+          "caption": "Qiu et al.: Knochen-Material-Grenzflächen von Verbundgerüsten und gesinterten HA-Gerüsten, Originalabbildung 9.",
+          "interpretation": "Oben ist HA/PEG/PCL, unten HA dargestellt. Links bleiben 50 μm-Maßstäbe erhalten; rechts sind die markierten Regionen mit 5 μm-Maßstäben vergrößert. FT bezeichnet fibröses Gewebe, schwarze Pfeile direkten Knochenkontakt, blaue Osteoblasten und Osteoid, gelbe Osteozyten. Die Schnitte sind entkalkt; mit HA markierte Räume bezeichnen frühere Partikelpositionen. Die fibröse Zwischenschicht des Verbunds erklärt, weshalb Knochen in Poren keinen durchgängigen Knochen-Material-Kontakt gewährleisten muss.[Grenzflächenmikroskopie](ref:R04)"
+        },
+        "F05": {
+          "caption": "Qiu et al.: lokaler Zusammenhang von Makrophagenmarkern und direktem Knochenkontakt, Originalabbildung 8.",
+          "interpretation": "a zeigt HA/PEG/PCL, b HA, jeweils mit benachbarten iNOS- und CD163-Schnitten nach 4, 8 und 12 Wochen und erhaltenen 50 μm-Maßstäben. Schwarze Pfeile markieren Osseointegration, braune Flächen den jeweiligen positiven Marker. Knochenkontakt und Fremdkörperreaktion sind innerhalb einzelner Gerüste lokal heterogen. Die Schnitte liegen 5 μm auseinander und erlauben Regionsvergleiche, keine Zuordnung beider Marker zur selben Zelle.[Lokale Verteilung und Kontakt](ref:R04)"
+        }
+      }
+    }
+  }
+}

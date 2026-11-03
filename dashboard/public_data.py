@@ -35,6 +35,7 @@ PUBLIC_PACKAGE_FILES = frozenset({
     'dashboard/enterprise_data.py', 'dashboard/enterprise_views.py',
     'dashboard/cross_data.py', 'dashboard/cross_views.py',
     'dashboard/report_data.py', 'dashboard/report_views.py', 'dashboard/report_navigation.py',
+    'dashboard/academic_questions.py',
     'dashboard/feedback_data.py', 'dashboard/feedback_store.py', 'dashboard/feedback_views.py',
     'data/papers_pre2026.csv', 'data/additions.jsonl', 'data/manifest.json',
     'data/enterprises.csv', 'data/enterprise_events.jsonl',
@@ -164,11 +165,25 @@ def project_public_enterprise_observations(root: Path) -> pd.DataFrame:
     return observations.reindex(columns=OBSERVATION_COLUMNS, fill_value='').fillna('')
 
 
+def public_package_files(root: Path) -> frozenset[str]:
+    """Allow only validated released reports and the assets they actually reference."""
+    from dashboard.academic_questions import load_released_reports
+    files = set(PUBLIC_PACKAGE_FILES)
+    library = load_released_reports(Path(root))
+    if library is not None:
+        files.add('data/academic_questions/release.json')
+        for qid, report in library['reports'].items():
+            files.add(f'data/academic_questions/{qid}.json')
+            files.update(f['asset_path'] for f in report['figures'] if f.get('asset_path'))
+    return frozenset(files)
+
+
 def validate_public_package(root: Path) -> dict:
     root = Path(root)
     actual = {path.relative_to(root).as_posix() for path in root.rglob('*') if path.is_file()
               and '.git' not in path.relative_to(root).parts}
-    extra, missing = actual-PUBLIC_PACKAGE_FILES, PUBLIC_PACKAGE_FILES-actual
+    expected_files = public_package_files(root)
+    extra, missing = actual-expected_files, expected_files-actual
     if extra:
         raise ValueError(f'公开包含非白名单文件：{sorted(extra)}')
     if missing:
@@ -247,14 +262,18 @@ def validate_public_package(root: Path) -> dict:
                     for e in cross['enterprise_evidence']) or
             not all(normalize_public_url(c['url']) for c in cross['contexts'])):
         raise ValueError('交叉分析关联或来源无效。')
-    from dashboard.report_data import validate_question_reports
-    reports = json.loads((root/'data/question_reports.json').read_text(encoding='utf-8'))
-    errors = validate_question_reports(reports, cross['questions'], require_complete=True)
+    from dashboard.report_data import load_question_reports, validate_question_reports
+    reports = load_question_reports(root)
+    if reports.get('schema_version') == 2:
+        from dashboard.academic_questions import validate_library
+        errors = validate_library(reports, cross['questions'], cross['papers'], root)
+    else:
+        errors = validate_question_reports(reports, cross['questions'], require_complete=True)
     paper_ids = {p['id'] for p in cross['papers']}
     company_ids = set(companies.company_id)
     for qid, report in reports.get('reports', {}).items():
         if (not set(report['related_paper_ids']) <= paper_ids
-                or not set(report['related_company_ids']) <= company_ids):
+                or not set(report.get('related_company_ids', [])) <= company_ids):
             errors.append(f'{qid}: invalid internal archive link')
     if errors:
         raise ValueError('\n'.join(errors))

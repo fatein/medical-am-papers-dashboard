@@ -1,0 +1,327 @@
+{
+  "schema_version": 2,
+  "question_id": "P5-084",
+  "p": "P5",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-04",
+  "related_paper_ids": [
+    "doc_cbe9b7e543ef188ead39"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "A quantitative analysis of 3D printed face shields and masks during COVID-19",
+      "publisher": "Emerald Open Research",
+      "year": 2020,
+      "url": "https://doi.org/10.35241/emeraldopenres.13815.1",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Urgent need hybrid production - what COVID-19 can teach us about dislocated production through 3d-printing and the maker scene",
+      "publisher": "3D Printing in Medicine",
+      "year": 2020,
+      "url": "https://doi.org/10.1186/s41205-020-00090-5",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Correction to: Urgent need hybrid production - what COVID-19 can teach us about dislocated production through 3d-printing and the maker scene",
+      "publisher": "3D Printing in Medicine",
+      "year": 2021,
+      "url": "https://doi.org/10.1186/s41205-021-00094-9",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "COVID-19: Rapid prototyping and production of face shields via flat, laser-cut, and 3D-printed models",
+      "publisher": "Results in Engineering",
+      "year": 2022,
+      "url": "https://doi.org/10.1016/j.rineng.2022.100452",
+      "kind": "paper"
+    },
+    {
+      "id": "R05",
+      "title": "Processing Technologies for Crisis Response on the Example of COVID-19 Pandemic—Injection Molding and FFF Case Study",
+      "publisher": "Processes",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/pr9050791",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 2",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7391928.1/emeraldopenres-2-14893-g0001.jpg?md5=489f6bf37053bce491cc9abd2e2e8cce",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7391928/#f2",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-084/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Fig. 5",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7391928.1/emeraldopenres-2-14893-g0004.jpg?md5=baf22e0115c2d7b6772421ad5406b449",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7391928/#f5",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-084/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R01",
+      "original_label": "Fig. 6",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7391928.1/emeraldopenres-2-14893-g0005.jpg?md5=b373188e593ae3e01a1d943aaaaa8ede",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7391928/#f6",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-084/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Fig. 9",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7869765.1/41205_2021_94_Fig9_HTML.jpg?md5=9802a5c8b3df046803c7d00398c22731",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7869765/#Fig9",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-084/F04.jpg"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R05",
+      "original_label": "Fig. 3",
+      "image_url": "",
+      "source_url": "https://psecommunity.org/wp-content/plugins/wpor/includes/file/2303/LAPSE-2023.24543-1v1.pdf#page=8",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-084/F05.jpg"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R05",
+      "original_label": "Fig. 4",
+      "image_url": "",
+      "source_url": "https://psecommunity.org/wp-content/plugins/wpor/includes/file/2303/LAPSE-2023.24543-1v1.pdf#page=9",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-084/F06.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "应急打印的成本、产能与供应链表现如何？",
+      "direction": "应急供应与制造",
+      "sections": [
+        {
+          "id": "design_workload",
+          "title": "先比较同类设计：打印时间、零件数与版本变化",
+          "markdown": "Novak 与 Loy 汇集了 37 个面屏设计或版本、31 个口罩设计或版本，用同一 Cura 4.6.1 配置计算打印时间和材料用量。样本单位是设计文件，不是 68 个实际生产批次。统一切片条件，能够把几何设计造成的制造差异从设备配置差异中部分分离出来。[设计与制造负担研究](ref:R01)\n\n研究采用 0.25 mm 层高、0.4 mm 线宽和 20% 填充等设置。面屏打印时间中位数为 2 小时 15 分钟、耗材中位数为 31 g；口罩分别为 4 小时 29 分钟和 60 g。面屏只有框架等部件计入打印，透明片等外购件不在这些克重中；两类对象承担的防护功能也不同。这组结果回答的是各自的制造负担。\n\n同类设计内部差异明显。面屏从 46 分钟、12 g 到 274 分钟、63 g；两个极端设计都只有一个打印件，因此差异主要来自几何体量与路径，不能仅用零件数量解释。散点图中的口罩高耗材、长时间离群点，也说明均值会受到复杂结构影响。\n\n面屏平均需要 1.5 个打印件，口罩平均需要 5 个；对应中位数分别为 1 和 3。原零件分布图显示，68% 的面屏只打印一个部件，口罩中 45% 需要三个部件，另有少数方案包含大量组件。平均零件数不等于最常见装配任务，也没有计入非打印零件、人工装配或返工。\n\n更新版本未必更快。Prusa Research、MSD Robotics Lab 等方案随版本迭代增加打印时间；Tinkerine 的后期版本则比前一版本略有下降。这些是研究时仍能下载到的文件序列，未必涵盖完整开发历史。比较依据是同一切片配置下的几何变化，不是不同版本在各自最优设备上的竞速测试。",
+          "figure_ids": [
+            "F01",
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "cost_boundaries",
+          "title": "单价为何相差悬殊：耗材、人工与设备成本的统计边界",
+          "markdown": "Novak 与 Loy 以 PETG 丝材 30 USD/kg 估算，面屏打印部件材料费为 0.33–1.95 USD，口罩为 0.96–3.90 USD。这些价格由材料重量换算，不包含透明片、绑带、人工、机器折旧或不合格品损失。它们适合比较设计的材料负担，不能直接与完整成品报价排序。[材料费范围](ref:R01)\n\nHartig 等人的院内制造研究把成本扩展到设备、人工与后处理。模型设定 PLA 20 EUR/kg、人工 50 EUR/h、设备购置 1,000 EUR，并纳入 10% 失败率；正文报告单位成本 9.78 EUR。更正后的原饼图列出以下分项。[院内成本模型](ref:R02) [图文配对更正](ref:R03)\n\n| 成本项 | 原饼图金额 |\n|---|---:|\n| 丝材 | 1.94 EUR |\n| 电费 | 0.09 EUR |\n| 设备折旧 | 1.15 EUR |\n| 准备工作 | 0.83 EUR |\n| 后处理 | 4.58 EUR |\n| 其他耗材 | 0.30 EUR |\n\n分项相加为 8.89 EUR，与正文的 9.78 EUR 不同。8.89 增加 10% 后约为 9.78，与模型列出的失败率相呼应，但论文未明确给出这一步计算式。因此分别保留分项和报告总额，不把扇区重新标成已含损耗的金额。\n\n后处理是最大的单项，准备工作也占据人工成本。降低丝材价格未必显著降低完整流程成本；减少取件、修整和装配时间可能影响更大。人工时间来自早期原型经验，尚未构成稳定量产的工时分布。弹性带等耗材报价也大幅波动，同一 CAD 文件在不同采购阶段可以产生不同单价。\n\n该论文还研究了临床使用和防护性能；这里引用的是制造组织与成本数据。打印对象数与能够临床使用的合格用品数，需要在产能表中采用不同字段，否则低单价可能仅代表尚未完成后续环节的部件。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "capacity_and_startup",
+          "title": "启动更早与日产更多：产能优势随观察时点改变",
+          "markdown": "Hartig 等人以 407 名工作人员、每人每天 2 件用品设定需求，得到 814 件/日。若每件打印 5 小时，连续运行时理论日产量为 4.8 件，需要约 170 台打印机。研究同时估计 42.5 m² 的设备占地、约 17 kW 运行功率以及约 79 kg/日的聚合物需求。[需求驱动的设备规模估算](ref:R02)\n\n这些是连续运行推算的设施需求，不是医院已经建成的产线。实际项目从少量设备起步，累计制造约 200 件不同用品。理论计算中的 24 小时运行没有逐台记录故障、换料、取件等待和人员排班，无法把设备数直接转换为可交付产能。\n\nSztorch 等人比较单台打印机、200 台打印机群、单腔注塑及多腔注塑。模型综合实验与文献参数，有效日产量分别为 5、1,030、2,120 和 8,480 件，缺陷率设为打印 7%、注塑 1%。200 台打印机群属于扩展情景；表注所述实验基础是 10 台打印机或一台注塑机，不能把扩展结果写成已运行的 200 台实测工厂。[制造方式与日产量模型](ref:R05)\n\n该项目实际准备打印过程约需 2 天，注塑在约 10 天内启动。累计产量图却采用另一组绘图启动位置，注塑曲线约从第 7 天开始；公式对注塑延迟参数还存在缺项。原图说明了较早启动与较大稳态产能之间的竞争，但不能据曲线反推通用于所有工厂的精确切换日。\n\n图示情景中，打印机群早期先累计产出，单腔注塑随后追上，交叉大致位于论文讨论的 10–15 天区间。多腔注塑运行后增长更快。若模具制作延迟、需求迅速结束，或设计持续修改，早期开工的价值更大；若需求持续且设计稳定，日产量差距则不断累积。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "volume_economics",
+          "title": "从几百件到上万件：经济切换点取决于固定投入与材料体系",
+          "markdown": "Sztorch 等人的产量—单位成本图，把按天生产转换为完成相同数量。打印固定成本设为 250 USD，单腔注塑为 12,450 USD，多腔注塑为 16,000 USD。表中总单件运行成本分别约为 2.1428、0.3974 和 0.2563 USD，200 台打印机群为 2.1558 USD。模型把固定成本按总数量分摊，再叠加单件成本。[成本函数与产量比较](ref:R05)\n\n打印曲线在低数量时明显较低，随后接近稳定水平；注塑初期受模具等固定投入影响，随产量增加持续下降。放大插图显示交点发生在数千件尺度，单腔与多腔不是同一交点。多腔注塑单位运行成本更低，却承担更大的固定投入，因此某些中等数量范围内，其总单位成本反而高于单腔注塑。\n\n这一排序与累计产量图不矛盾：多腔方案可以更快完成任务，却不一定在每个订单数量下最便宜。设备规模也很重要。打印机群通过并行增加日产量，但单件路径、材料和设备分摊仍然存在，所以单台与机群的单位成本曲线很接近。\n\n模型同时改变了材料。打印采用 PET、单价 16 USD/kg；注塑采用回收聚酰胺、单价 3 USD/kg，产品质量均按 65 g 计算。差距同时包含成形方式、材料价格及性能差异，不能解释为仅由是否逐层制造造成。\n\n同文机械比较也使用不同材料体系，支持的是项目所选工艺—材料组合之间的差异。若换用更昂贵的注塑材料、增加模具复杂度、计入更多换型任务或提高打印设备利用率，交点都会移动。原图回答的是确定参数集下的经济问题，不是规定医疗应急制造应在统一批量停止打印。",
+          "figure_ids": [
+            "F06"
+          ]
+        },
+        {
+          "id": "real_supply_network",
+          "title": "实际交付网络：设备、人员学习与原材料要一起统计",
+          "markdown": "爱尔兰地区项目在 7 周内交付 12,000 套面屏，同时运行打印、平面手工制作和激光切割三种路线。最后两周平均日产量分别为 90、227 和 245 套，近似失败率分别为 5%、7% 和 1%。这是项目级产出，不能当作单台设备在相同人员配置下的产能。[实际项目对照数据](ref:R04)\n\n按材料及设备报价分摊的单位成本分别为 9.10、0.51 和 2.40 EUR；设备原本由机构提供，报价分摊不等于实际新增购置支出，志愿人工也不等于市场工资。它与 Hartig 的人工成本模型采用不同边界。项目还记录熟练度变化，早期失败率与后期平均值属于不同生产状态。\n\nHartig 的现场实验显示，把原型制造移到医院可省去每轮约 3 天运输等待。医疗人员现场试用后把修改意见交给工程师，更新文件再在院内制造。这一节省发生在开发反馈环节，不是打印速度提高了相同天数。[原型运输与协作周期](ref:R02)\n\n两项研究对应供应链不同部分：前者观察多条路线的实际交付，后者观察设计沟通与院内制造衔接。地方制造缩短成品运输距离，同时仍依赖透明片、弹性带、聚合物和设备维护。Hartig 记录了喷嘴堵塞、开关故障和校准维护；这些占用机器与人员时间，单纯统计已安装设备数量无法显示。\n\n后续项目记录需要分别保存需求提出、文件确认、材料到货、制造结束、装配结束和实际交付时间。成本分别保留耗材、人工、设备分摊和外购件；缺陷区分可返工件与报废件，才能判断交付改善来自设计简化、设备并行、人员学习还是供应链恢复。",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "原图 2｜68 个设计的切片时间与丝材质量",
+          "interpretation": "横轴为分钟，纵轴为克；蓝点为面屏，橙点为口罩。右上方少数复杂口罩拉长分布。各点代表设计或版本，不是重复生产样本；趋势显示几何制造负担，未测量防护效果或实际交货速度。"
+        },
+        "F02": {
+          "caption": "原图 5｜打印部件数量分布",
+          "interpretation": "横轴为部件数量，纵轴为设计数量。面屏集中在单件，口罩集中在三件并存在大于六件的尾部。复杂方案拉高平均值；装配任务不能仅按成品数量计数，非打印部件也不在横轴内。"
+        },
+        "F03": {
+          "caption": "原图 6｜同一方案不同版本的打印时间",
+          "interpretation": "横轴列出设计来源，彩色柱表示研究可获得的先后版本，纵轴为分钟。柱高上升意味着制造时间增加，而不一定是设计退步；新增覆盖或固定结构可能改变负担。跨方案的版本字母不表示同一日期或修改内容。"
+        },
+        "F04": {
+          "caption": "更正原图 9｜院内制造成本构成",
+          "interpretation": "浅蓝色后处理 4.58 EUR 为最大扇区，深蓝色丝材为 1.94 EUR，黄色准备工作为 0.83 EUR。图中金额合计 8.89 EUR，正文单位成本为 9.78 EUR，应分别阅读。采用更正论文完整原图，避免最初网页图文错配。"
+        },
+        "F05": {
+          "caption": "原图 3｜考虑启动延迟的累计产量",
+          "interpretation": "横轴为生产天数，纵轴为对数刻度的累计件数。绿色为 200 台打印机群，红色单腔注塑，蓝色多腔注塑，黑色单台打印机。注塑较晚开始却更快累积；交点来自特定延迟与日产量假设，曲线不是逐日交货记录。"
+        },
+        "F06": {
+          "caption": "原图 4｜相同订单数量下的单位成本",
+          "interpretation": "主图按对数尺度显示数量和成本，插图放大数千件范围。颜色与上一图不同：红色单台打印机、黄色打印机群、绿色单腔注塑、蓝色多腔注塑。注塑初期固定投入高，批量增加后逐渐低于打印；较高日产量不等于所有数量下最低成本。"
+        }
+      }
+    },
+    "en": {
+      "title": "How does emergency printing perform in cost, capacity and supply chains?",
+      "direction": "Emergency manufacturing and supply chains",
+      "sections": [
+        {
+          "id": "design_workload",
+          "title": "Compare designs within a product class: printing time, part count and revisions",
+          "markdown": "Novak and Loy collected 37 face-shield designs or versions and 31 mask designs or versions, calculating printing time and material consumption with one Cura 4.6.1 configuration. The sampling unit was a design file, rather than 68 physical production batches. Standardized slicing partly separates geometry-related manufacturing burden from machine-configuration differences. [Design and manufacturing study](ref:R01)\n\nThe common settings included a 0.25 mm layer height, 0.4 mm line width and 20% infill. Median printing time and filament mass were 2 hours 15 minutes and 31 g for shields, compared with 4 hours 29 minutes and 60 g for masks. For shields, only printed components such as frames entered these masses; purchased visors did not. The product classes also serve different protective functions. These results characterize their respective manufacturing workloads.\n\nVariation within a class was substantial. Shield designs ranged from 46 minutes and 12 g to 274 minutes and 63 g. Both extreme designs consisted of one printed part, so geometry and toolpath, rather than part count alone, explain the difference. High-mass, long-duration mask outliers in the scatter plot also show how complex designs influence the mean.\n\nMean printed-part counts were 1.5 for shields and 5 for masks, whereas the medians were 1 and 3. The distribution shows that 68% of shields needed one printed component and 45% of masks needed three; a few mask designs required many components. The mean therefore differs from the most frequent assembly task and excludes purchased parts, manual assembly and rework.\n\nNewer versions were not consistently faster. Prusa Research and MSD Robotics Lab designs increased in printing time as they evolved; a later Tinkerine version was slightly faster than its predecessor. These were files still downloadable when the study was conducted, not necessarily a complete development history. The comparison concerns geometric changes under identical slicing settings, rather than a race between versions on separately optimized machines.",
+          "figure_ids": [
+            "F01",
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "cost_boundaries",
+          "title": "Why unit prices diverge: the boundaries of materials, labor and equipment costs",
+          "markdown": "At a PETG filament price of 30 USD/kg, Novak and Loy estimated printed-component material costs of 0.33–1.95 USD for shields and 0.96–3.90 USD for masks. These values derive from material mass and exclude visors, straps, labor, depreciation and rejected parts. They compare design-related material burden and cannot be ranked directly against complete-product quotations. [Material-cost boundary](ref:R01)\n\nHartig and colleagues extended the cost boundary to equipment, labor and post-processing in a hospital manufacturing study. Their model used PLA at 20 EUR/kg, labor at 50 EUR/h, equipment purchase at 1,000 EUR and a 10% failure rate; the text reported 9.78 EUR per unit. The corrected pie chart gives the following components. [Hospital cost model](ref:R02) [Correction of figure–caption matching](ref:R03)\n\n| Cost item | Amount in the original pie chart |\n|---|---:|\n| Filament | 1.94 EUR |\n| Electricity | 0.09 EUR |\n| Printer depreciation | 1.15 EUR |\n| Preparation | 0.83 EUR |\n| Post-processing | 4.58 EUR |\n| Other consumables | 0.30 EUR |\n\nThe components sum to 8.89 EUR, which differs from the reported 9.78 EUR. Increasing 8.89 by 10% gives approximately 9.78, consistent with the listed failure-rate allowance, but the paper does not explicitly give this calculation step. Component values and the reported total are retained separately; sectors are not relabeled as already including losses.\n\nPost-processing is the largest item, and preparation also consumes labor. A lower filament price may affect whole-process cost less than reducing removal, finishing and assembly time. Labor estimates came from early prototypes rather than a stable series-production time distribution. Elastic-band quotations fluctuated substantially, so the same CAD file could yield different prices at different procurement stages.\n\nThe paper also studied clinical use and protection; the data considered here concern manufacturing organization and cost. Printed objects and clinically usable, qualified supplies need separate output fields. Otherwise a low unit price may describe components that have not completed downstream operations.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "capacity_and_startup",
+          "title": "Earlier startup versus higher daily output: the advantage depends on the observation time",
+          "markdown": "Hartig and colleagues modeled demand for 407 staff members at 2 items per person per day, giving 814 items/day. At 5 printing hours per item, uninterrupted operation would yield 4.8 items per machine daily and require approximately 170 printers. Estimated requirements also included 42.5 m² of machine footprint, about 17 kW operating power and roughly 79 kg of polymer per day. [Demand-based equipment sizing](ref:R02)\n\nThese were facility requirements extrapolated from continuous operation, not an installed hospital production line. The actual project began with few machines and produced approximately 200 assorted items. The theoretical 24-hour operation did not record individual failures, material changes, unloading waits or staffing, so machine count cannot directly establish deliverable capacity.\n\nSztorch and colleagues compared a single printer, a 200-printer farm, single-cavity molding and multi-cavity molding. Combining experimental and literature parameters, the model gives effective daily outputs of 5, 1,030, 2,120 and 8,480 units, with defect rates of 7% for printing and 1% for molding. The 200-printer farm is a scaled scenario: the table footnote identifies 10 printers or one molding machine as the experimental basis. The extrapolation is not a measured operating record from a 200-printer factory. [Manufacturing alternatives and daily-output model](ref:R05)\n\nPreparing the printing process in the project took about 2 days; molding started within about 10 days. The cumulative-output plot uses different startup positions, with molding curves beginning around day 7; the formula also omits the numerical molding-delay parameter. The plot illustrates competition between early startup and higher steady output, rather than establishing a universal exact changeover day.\n\nIn the plotted scenario, the farm accumulates output first and single-cavity molding then catches up, broadly within the 10–15-day interval discussed by the authors. Multi-cavity output grows faster once operating. Delayed tooling, a rapidly ending shortage or continuing design changes increase the value of an early start; sustained demand and stable designs allow daily-output differences to accumulate.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "volume_economics",
+          "title": "From hundreds to tens of thousands: fixed investment and materials move the economic crossover",
+          "markdown": "Sztorch and colleagues' volume–unit-cost plot changes the comparison from days of production to completion of the same quantity. Fixed costs were 250 USD for printing, 12,450 USD for single-cavity molding and 16,000 USD for multi-cavity molding. Tabulated per-unit operating costs were approximately 2.1428, 0.3974 and 0.2563 USD, respectively, and 2.1558 USD for the 200-printer farm. Fixed costs are allocated over total quantity, then per-unit cost is added. [Cost function and production-volume comparison](ref:R05)\n\nPrinting is substantially cheaper at low quantities and approaches a plateau; molding starts with a larger tooling-related burden and declines with volume. The inset puts the crossovers in the thousands-of-units range, at different quantities for single- and multi-cavity tooling. Multi-cavity molding has lower per-unit operating cost but higher fixed investment, so it can be more expensive than single-cavity molding at intermediate order sizes.\n\nThis does not contradict the cumulative-output plot: multi-cavity production can finish an order faster without being cheapest at every quantity. Equipment scale matters too. Parallel printers increase daily output, while path length, material and machine allocation per item remain. Consequently, single-printer and farm unit-cost curves are close together.\n\nThe comparison also changes materials. Printing uses PET at 16 USD/kg; molding uses recycled polyamide at 3 USD/kg, with product mass set at 65 g for both. The gap combines forming process, material price and properties, rather than isolating layerwise manufacturing.\n\nMechanical comparisons in the same paper also use different materials and describe the selected process–material combinations. More expensive molding feedstock, more complex tooling, additional changeovers or higher printer utilization would move the crossover. The plot answers an economic question for its parameter set, rather than prescribing one order size at which emergency medical production must stop printing.",
+          "figure_ids": [
+            "F06"
+          ]
+        },
+        {
+          "id": "real_supply_network",
+          "title": "Real delivery networks: equipment, learning and raw materials must be counted together",
+          "markdown": "A regional Irish project delivered 12,000 shields over 7 weeks using printed, manually assembled flat and laser-cut designs. During the final two weeks, mean daily outputs were 90, 227 and 245 shields, with approximate failure rates of 5%, 7% and 1%. These are project outputs, not individual-machine capacities under identical staffing. [Operating-project comparison](ref:R04)\n\nUnit costs allocated from materials and equipment quotations were 9.10, 0.51 and 2.40 EUR. Equipment was already available in-house: quotation-based allocation was not new purchase expenditure, and volunteer work was not priced as market labor. This differs from Hartig's cost boundary. The project also recorded learning effects; early failures and later averages represent different production states.\n\nHartig's field experiment found that moving prototyping into the hospital removed about 3 days of transport waiting per iteration. Clinicians tested locally, sent changes to engineers and manufactured updated files on site. The saving belongs to the development-feedback cycle, rather than an equivalent acceleration of printing. [Prototype transport and collaboration cycles](ref:R02)\n\nThe studies address different parts of supply: one observes deliveries across manufacturing routes, the other links design communication and hospital production. Local production shortens finished-product transport while still relying on visors, elastic bands, polymers and maintenance. Hartig recorded blocked nozzles, switch failures and calibration work, consuming machine and staff time that installed-equipment counts do not reveal.\n\nSubsequent project records need separate timestamps for demand, file approval, material arrival, manufacturing completion, assembly completion and delivery. Costs should retain consumables, labor, equipment allocation and purchased parts separately; defects should distinguish reworkable and scrapped items. These measurements identify whether better delivery comes from simpler design, parallel equipment, operator learning or restored supply routes.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Original Fig. 2 | Sliced time and filament mass for 68 designs",
+          "interpretation": "The horizontal axis is minutes and the vertical axis grams; blue points denote shields and orange points masks. A few complex masks extend the upper-right distribution. Points are designs or versions, not repeated production samples. The trend describes geometric manufacturing burden, not measured protection or actual delivery speed."
+        },
+        "F02": {
+          "caption": "Original Fig. 5 | Printed-part count distribution",
+          "interpretation": "The horizontal axis is part count and the vertical axis design count. Shields cluster at one part, masks at three with a tail above six. Complex designs raise the mean. Finished-product counts do not capture assembly workload, and purchased components are absent from the horizontal axis."
+        },
+        "F03": {
+          "caption": "Original Fig. 6 | Printing time across design versions",
+          "interpretation": "Design sources run along the horizontal axis; colored bars identify successive available versions, and the vertical axis is minutes. Taller bars mean longer manufacturing time, not necessarily poorer design: added coverage or attachment features can change workload. Version letters across projects do not indicate a common date or modification."
+        },
+        "F04": {
+          "caption": "Corrected original Fig. 9 | Hospital manufacturing cost structure",
+          "interpretation": "Light-blue post-processing at 4.58 EUR is the largest sector; dark-blue filament is 1.94 EUR and yellow preparation 0.83 EUR. Plotted amounts sum to 8.89 EUR, while the text reports 9.78 EUR per unit; these are read separately. The complete corrected image avoids the initial webpage figure–caption mismatch."
+        },
+        "F05": {
+          "caption": "Original Fig. 3 | Cumulative output with startup delays",
+          "interpretation": "The horizontal axis is production days; the logarithmic vertical axis is cumulative units. Green denotes the 200-printer farm, red single-cavity molding, blue multi-cavity molding and black a single printer. Molding starts later but accumulates faster. Crossovers reflect particular delay and daily-output assumptions, not daily delivery records."
+        },
+        "F06": {
+          "caption": "Original Fig. 4 | Unit cost at the same order quantity",
+          "interpretation": "The main plot uses logarithmic quantity and cost scales; the inset enlarges the thousands-of-units range. Colors differ from the preceding figure: red denotes a single printer, yellow the farm, green single-cavity molding and blue multi-cavity molding. Initially high fixed investment is spread over volume until molding costs fall below printing. Higher daily output is not the lowest cost at every quantity."
+        }
+      }
+    },
+    "de": {
+      "title": "Wie schneidet Notfallfertigung mit 3D-Druck bei Kosten, Kapazität und Lieferketten ab?",
+      "direction": "Notfallfertigung und Lieferketten",
+      "sections": [
+        {
+          "id": "design_workload",
+          "title": "Entwürfe einer Produktklasse vergleichen: Druckzeit, Teilezahl und Revisionen",
+          "markdown": "Novak und Loy sammelten 37 Gesichtsschutz-Entwürfe beziehungsweise Versionen und 31 Maskenentwürfe beziehungsweise Versionen. Druckzeit und Materialbedarf wurden mit derselben Konfiguration von Cura 4.6.1 berechnet. Die Untersuchungseinheit war eine Designdatei, keine von 68 physisch gefertigten Chargen. Einheitliche Slicing-Einstellungen trennen den geometriebedingten Fertigungsaufwand teilweise von Unterschieden der Maschinenkonfiguration. [Studie zu Design und Fertigungsaufwand](ref:R01)\n\nDie Einstellungen umfassten 0.25 mm Schichthöhe, 0.4 mm Linienbreite und 20% Fülldichte. Mediane Druckzeit und Filamentmasse betrugen bei Gesichtsschutzschilden 2 Stunden 15 Minuten und 31 g, bei Masken 4 Stunden 29 Minuten und 60 g. Bei Gesichtsschutzschilden gingen nur Druckteile wie Rahmen in diese Massen ein, nicht zugekaufte Sichtscheiben. Die Produktklassen erfüllen zudem unterschiedliche Schutzfunktionen. Die Ergebnisse beschreiben ihren jeweiligen Fertigungsaufwand.\n\nAuch innerhalb einer Klasse waren die Unterschiede groß. Gesichtsschutz-Entwürfe reichten von 46 Minuten und 12 g bis 274 Minuten und 63 g. Beide Extremfälle bestanden aus einem Druckteil; Geometrie und Werkzeugweg erklären die Differenz daher besser als die Teilezahl allein. Die schweren, zeitaufwendigen Masken-Ausreißer im Streudiagramm zeigen ebenfalls, wie komplexe Entwürfe den Mittelwert beeinflussen.\n\nDie mittlere Druckteilezahl betrug 1.5 bei Gesichtsschutzschilden und 5 bei Masken, die Mediane dagegen 1 und 3. Das Verteilungsdiagramm zeigt: 68% der Gesichtsschutzschilde benötigen ein Druckteil, 45% der Masken drei; wenige Maskenentwürfe enthalten sehr viele Komponenten. Der Mittelwert entspricht somit nicht der häufigsten Montageaufgabe und erfasst weder Kaufteile noch manuelle Montage oder Nacharbeit.\n\nNeuere Versionen waren nicht durchgängig schneller. Bei Prusa Research und MSD Robotics Lab nahm die Druckzeit mit Revisionen zu; eine spätere Tinkerine-Version war etwas schneller als ihre Vorgängerversion. Untersucht wurden die damals noch herunterladbaren Dateien, nicht zwingend die vollständige Entwicklungsgeschichte. Verglichen werden geometrische Änderungen unter gleichen Slicing-Bedingungen, keine auf jeweils optimalen Maschinen gefahrenen Geschwindigkeitsversuche.",
+          "figure_ids": [
+            "F01",
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "cost_boundaries",
+          "title": "Warum Stückpreise auseinanderliegen: Kostengrenzen von Material, Personal und Anlagen",
+          "markdown": "Bei einem PETG-Filamentpreis von 30 USD/kg berechneten Novak und Loy Materialkosten der Druckteile von 0.33–1.95 USD für Gesichtsschutzschilde und 0.96–3.90 USD für Masken. Die Werte beruhen auf der Materialmasse und schließen Sichtscheiben, Bänder, Personal, Abschreibung und Ausschuss aus. Sie vergleichen den Materialaufwand von Entwürfen und lassen sich nicht direkt mit Angeboten für vollständige Produkte rangordnen. [Materialkostengrenze](ref:R01)\n\nHartig und Kollegen erweiterten die Kostengrenze in einer Krankenhausstudie um Maschinen, Personal und Nachbearbeitung. Das Modell verwendet PLA zu 20 EUR/kg, Personalkosten von 50 EUR/h, einen Maschinenkaufpreis von 1,000 EUR und eine Fehlerquote von 10%; der Text nennt 9.78 EUR je Einheit. Das korrigierte Kreisdiagramm enthält folgende Positionen. [Krankenhaus-Kostenmodell](ref:R02) [Korrektur der Bild-Beschriftungs-Zuordnung](ref:R03)\n\n| Kostenposition | Betrag im originalen Kreisdiagramm |\n|---|---:|\n| Filament | 1.94 EUR |\n| Strom | 0.09 EUR |\n| Druckerabschreibung | 1.15 EUR |\n| Vorbereitung | 0.83 EUR |\n| Nachbearbeitung | 4.58 EUR |\n| Sonstiges Verbrauchsmaterial | 0.30 EUR |\n\nDie Positionen ergeben 8.89 EUR und unterscheiden sich von den berichteten 9.78 EUR. Ein Zuschlag von 10% auf 8.89 ergibt ungefähr 9.78 und passt zur aufgeführten Fehlerquote; die Publikation nennt diesen Rechenschritt jedoch nicht ausdrücklich. Einzelpositionen und Gesamtbetrag bleiben getrennt; die Sektoren werden nicht als bereits verlustbereinigte Werte neu beschriftet.\n\nNachbearbeitung ist der größte Einzelposten; auch die Vorbereitung beansprucht Personal. Ein niedrigerer Filamentpreis kann weniger bewirken als kürzere Entnahme-, Nachbearbeitungs- und Montagezeiten. Die Arbeitszeitschätzungen stammen aus frühen Prototypen, nicht aus einer stabilen Zeitverteilung der Serienproduktion. Stark schwankende Angebote für elastische Bänder zeigen, wie dieselbe CAD-Datei zu verschiedenen Beschaffungszeitpunkten unterschiedliche Stückpreise erzeugt.\n\nDie Publikation untersucht auch klinische Verwendung und Schutzleistung; hier werden Fertigungsorganisation und Kosten ausgewertet. Gedruckte Objekte und klinisch verwendbare, qualifizierte Produkte benötigen getrennte Mengenfelder. Sonst kann ein niedriger Stückpreis Komponenten beschreiben, die nachgelagerte Arbeitsschritte noch nicht durchlaufen haben.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "capacity_and_startup",
+          "title": "Früherer Start oder höhere Tagesleistung: der Vorteil hängt vom Beobachtungszeitpunkt ab",
+          "markdown": "Hartig und Kollegen modellierten den Bedarf von 407 Beschäftigten mit 2 Artikeln pro Person und Tag, entsprechend 814 Artikeln/Tag. Bei 5 Druckstunden pro Artikel liefert unterbrechungsfreier Betrieb theoretisch 4.8 Artikel je Maschine und Tag und erfordert etwa 170 Drucker. Geschätzt wurden außerdem 42.5 m² Maschinenstellfläche, rund 17 kW Betriebsleistung und ungefähr 79 kg Polymer pro Tag. [Bedarfsabhängige Dimensionierung](ref:R02)\n\nDas sind aus Dauerbetrieb hochgerechnete Anforderungen, keine installierte Krankenhausproduktionslinie. Das tatsächliche Projekt begann mit wenigen Maschinen und fertigte ungefähr 200 unterschiedliche Artikel. Die theoretische Laufzeit von 24 Stunden erfasst keine individuellen Ausfälle, Materialwechsel, Entnahmewartezeiten oder Personalpläne. Aus der Maschinenzahl folgt daher nicht unmittelbar die lieferbare Kapazität.\n\nSztorch und Kollegen verglichen einen einzelnen Drucker, eine Farm mit 200 Druckern, Einkavitäten- und Mehrkavitäten-Spritzgießen. Das Modell kombiniert Versuchs- und Literaturparameter und nennt effektive Tagesleistungen von 5, 1,030, 2,120 und 8,480 Teilen bei Fehlerquoten von 7% für Drucken und 1% für Spritzgießen. Die Farm mit 200 Druckern ist ein skaliertes Szenario: Als experimentelle Grundlage nennt die Tabellenfußnote 10 Drucker beziehungsweise eine Spritzgießmaschine. Die Hochrechnung ist kein gemessenes Betriebsprotokoll einer Fabrik mit 200 Druckern. [Verfahren und Tagesleistungsmodell](ref:R05)\n\nIm Projekt benötigte die Vorbereitung des Druckprozesses ungefähr 2 Tage; das Spritzgießen startete innerhalb von etwa 10 Tagen. Das Diagramm der kumulierten Produktion verwendet andere Startpunkte, mit Spritzgießkurven ungefähr ab Tag 7; in der Formel fehlt zudem der Zahlenwert der Spritzgießverzögerung. Die Grafik verdeutlicht den Wettbewerb zwischen frühem Anlauf und höherer stationärer Leistung, bestimmt aber keinen allgemeingültigen exakten Umstellungstag.\n\nIm dargestellten Szenario sammelt die Druckerfarm zuerst Output an, bevor Einkavitäten-Spritzgießen aufholt, ungefähr im diskutierten Intervall von 10–15 Tagen. Mehrkavitäten-Spritzgießen wächst nach dem Anlauf schneller. Verzögerter Werkzeugbau, rasch endender Mangel oder laufende Designänderungen erhöhen den Wert eines frühen Starts; anhaltender Bedarf und stabile Designs lassen tägliche Mengenunterschiede anwachsen.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "volume_economics",
+          "title": "Von Hunderten zu Zehntausenden: Fixkosten und Materialien verschieben den wirtschaftlichen Schnittpunkt",
+          "markdown": "Sztorch und Kollegen vergleichen im Mengen-Stückkosten-Diagramm die Fertigstellung derselben Menge statt gleicher Produktionstage. Angesetzt werden Fixkosten von 250 USD für Drucken, 12,450 USD für Einkavitäten-Spritzgießen und 16,000 USD für Mehrkavitäten-Spritzgießen. Die tabellierten laufenden Stückkosten betragen ungefähr 2.1428, 0.3974 und 0.2563 USD beziehungsweise 2.1558 USD für die Farm mit 200 Druckern. Fixkosten werden auf die Gesamtmenge verteilt und Stückkosten addiert. [Kostenfunktion und Mengenvergleich](ref:R05)\n\nBei kleinen Mengen ist Drucken deutlich günstiger und nähert sich einem Plateau; beim Spritzgießen sinkt die anfänglich hohe werkzeugbedingte Belastung mit wachsender Menge. Das vergrößerte Teilbild zeigt Schnittpunkte im Bereich mehrerer Tausend Teile, bei unterschiedlichen Mengen für Ein- und Mehrkavitätenwerkzeuge. Mehrkavitäten-Spritzgießen hat niedrigere laufende Stückkosten, aber höhere Fixkosten und kann daher bei mittleren Auftragsgrößen teurer als Einkavitäten-Spritzgießen sein.\n\nDas widerspricht der kumulierten Produktionskurve nicht: Mehrkavitätenfertigung kann einen Auftrag schneller abschließen, ohne bei jeder Menge am günstigsten zu sein. Auch die Anlagengröße zählt. Parallele Drucker erhöhen die Tagesleistung, während Werkzeugweg, Material und Maschinenanteil pro Teil bestehen bleiben. Deshalb liegen die Stückkostenkurven von Einzeldrucker und Farm nahe beieinander.\n\nGleichzeitig wechselt das Material. Gedruckt wird PET zu 16 USD/kg, spritzgegossen wird recyceltes Polyamid zu 3 USD/kg; beide Produkte werden mit 65 g angesetzt. Die Differenz umfasst Formgebungsverfahren, Materialpreis und Eigenschaften und isoliert nicht allein den schichtweisen Aufbau.\n\nAuch die mechanischen Vergleiche derselben Arbeit verwenden verschiedene Materialien und beschreiben die gewählten Prozess-Material-Kombinationen. Teureres Spritzgießmaterial, komplexere Werkzeuge, zusätzliche Umrüstungen oder höhere Druckerauslastung würden den Schnittpunkt verschieben. Die Grafik beantwortet eine wirtschaftliche Frage für ihren Parametersatz und legt keine einheitliche Auftragsgröße fest, ab der medizinische Notfallproduktion auf Drucken verzichten muss.",
+          "figure_ids": [
+            "F06"
+          ]
+        },
+        {
+          "id": "real_supply_network",
+          "title": "Reale Liefernetze: Anlagen, Lernen und Rohmaterial gemeinsam erfassen",
+          "markdown": "Ein regionales irisches Projekt lieferte in 7 Wochen 12,000 Gesichtsschutzschilde über drei Wege: Drucken, manuelle Herstellung flacher Modelle und Laserschneiden. In den letzten zwei Wochen betrug die mittlere Tagesleistung 90, 227 beziehungsweise 245 Schilde bei ungefähren Fehlerquoten von 5%, 7% und 1%. Das sind Projektleistungen, keine Einzelmaschinenkapazitäten bei identischer Personalbesetzung. [Vergleich im laufenden Projekt](ref:R04)\n\nAus Material und Maschinenangeboten zugeordnete Stückkosten betrugen 9.10, 0.51 und 2.40 EUR. Anlagen waren bereits vorhanden: Angebotsbasierte Umlagen waren keine neuen Beschaffungsausgaben; ehrenamtliche Arbeit wurde nicht mit Marktlohn bewertet. Das unterscheidet sich von Hartigs Kostengrenze. Dokumentierte Lerneffekte bedeuten zudem, dass frühe Fehler und spätere Mittelwerte verschiedene Produktionszustände darstellen.\n\nHartigs Feldversuch zeigte, dass Prototypenfertigung im Krankenhaus je Iteration ungefähr 3 Tage Transportwartezeit einsparte. Klinisches Personal erprobte lokal, meldete Änderungen an Ingenieure zurück und fertigte aktualisierte Dateien vor Ort. Die Einsparung betrifft die Entwicklungsrückkopplung, nicht eine entsprechend schnellere Druckbewegung. [Prototypentransport und Zusammenarbeit](ref:R02)\n\nDie Studien behandeln unterschiedliche Versorgungsschritte: die eine Lieferungen über mehrere Fertigungsrouten, die andere Designkommunikation und Krankenhausfertigung. Lokale Produktion verkürzt den Transport fertiger Produkte, bleibt aber auf Sichtscheiben, elastische Bänder, Polymere und Wartung angewiesen. Hartig dokumentierte verstopfte Düsen, Schalterausfälle und Kalibrierarbeiten. Diese beanspruchen Maschinen- und Personalzeit, die eine Anlagenzählung nicht zeigt.\n\nWeitere Projektaufzeichnungen benötigen getrennte Zeitpunkte für Bedarfsmeldung, Dateifreigabe, Materialeingang, Fertigungsende, Montageende und Auslieferung. Verbrauchsmaterial, Personal, Maschinenumlage und Kaufteile sollten getrennt erfasst werden; Fehler sind in nacharbeitbare und verworfene Teile zu unterteilen. Damit lässt sich eine bessere Lieferleistung auf einfacheres Design, parallele Anlagen, Lerneffekte oder wiederhergestellte Beschaffungswege zurückführen.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Originalabbildung 2 | Slicing-Zeit und Filamentmasse für 68 Entwürfe",
+          "interpretation": "Horizontal stehen Minuten, vertikal Gramm; blaue Punkte bezeichnen Gesichtsschutzschilde, orange Masken. Wenige komplexe Masken erweitern die Verteilung nach rechts oben. Punkte sind Entwürfe oder Versionen, keine wiederholten Produktionsproben. Der Trend beschreibt geometrischen Fertigungsaufwand, nicht gemessene Schutzleistung oder Liefergeschwindigkeit."
+        },
+        "F02": {
+          "caption": "Originalabbildung 5 | Verteilung der Druckteilezahl",
+          "interpretation": "Horizontal steht die Teilezahl, vertikal die Zahl der Entwürfe. Gesichtsschutzschilde konzentrieren sich bei einem Teil, Masken bei drei mit einem Ausläufer oberhalb von sechs. Komplexe Entwürfe erhöhen den Mittelwert. Fertigteilzahlen erfassen den Montageaufwand nicht; Kaufteile fehlen auf der horizontalen Achse."
+        },
+        "F03": {
+          "caption": "Originalabbildung 6 | Druckzeit verschiedener Designversionen",
+          "interpretation": "Horizontal sind die Designquellen angeordnet, farbige Balken kennzeichnen aufeinanderfolgende verfügbare Versionen; vertikal stehen Minuten. Höhere Balken bedeuten längere Fertigungszeit, nicht zwingend schlechteres Design: Zusätzliche Abdeckung oder Befestigungen verändern den Aufwand. Versionsbuchstaben verschiedener Projekte stehen nicht für gleiche Termine oder Änderungen."
+        },
+        "F04": {
+          "caption": "Korrigierte Originalabbildung 9 | Kostenstruktur der Krankenhausfertigung",
+          "interpretation": "Hellblaue Nachbearbeitung mit 4.58 EUR bildet den größten Sektor; dunkelblaues Filament kostet 1.94 EUR, gelbe Vorbereitung 0.83 EUR. Die Grafik summiert sich auf 8.89 EUR, während der Text 9.78 EUR je Einheit nennt; beide Angaben werden getrennt gelesen. Das vollständige korrigierte Bild vermeidet die ursprüngliche falsche Bild-Beschriftungs-Zuordnung der Webseite."
+        },
+        "F05": {
+          "caption": "Originalabbildung 3 | Kumulierte Menge mit Anlaufverzögerung",
+          "interpretation": "Horizontal stehen Produktionstage, vertikal kumulierte Stückzahlen auf logarithmischer Skala. Grün bezeichnet die Farm mit 200 Druckern, Rot Einkavitäten-, Blau Mehrkavitäten-Spritzgießen und Schwarz einen Drucker. Spritzgießen startet später und akkumuliert schneller. Schnittpunkte folgen bestimmten Verzögerungs- und Tagesleistungsannahmen, nicht täglichen Lieferprotokollen."
+        },
+        "F06": {
+          "caption": "Originalabbildung 4 | Stückkosten bei gleicher Auftragsmenge",
+          "interpretation": "Die Hauptgrafik hat logarithmische Mengen- und Kostenskalen; das Teilbild vergrößert den Bereich mehrerer Tausend Teile. Anders als zuvor steht Rot für einen Drucker, Gelb für die Farm, Grün für Einkavitäten- und Blau für Mehrkavitäten-Spritzgießen. Hohe anfängliche Fixkosten verteilen sich auf die Menge, bis Spritzgießen günstiger wird. Höhere Tagesleistung bedeutet nicht bei jeder Menge geringste Kosten."
+        }
+      }
+    }
+  }
+}

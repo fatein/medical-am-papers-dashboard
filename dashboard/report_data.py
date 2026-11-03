@@ -30,6 +30,10 @@ def safe_source_url(value: str) -> bool:
 
 
 def load_question_reports(root: Path) -> dict:
+    from dashboard.academic_questions import load_released_reports
+    academic = load_released_reports(root)
+    if academic is not None:
+        return academic
     path = Path(root) / 'data/question_reports.json'
     if not path.exists():
         return {'schema_version': 1, 'reports': {}}

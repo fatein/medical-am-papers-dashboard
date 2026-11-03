@@ -1,0 +1,334 @@
+{
+  "schema_version": 2,
+  "question_id": "P6-096",
+  "p": "P6",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_f52518cd8fe5eaf6c32a",
+    "doc_8f33085dab1f51ac8e67",
+    "doc_9ae8ce3d3bfdbbf2a3fd"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Verification of Acuros XB dose algorithm using 3D printed low-density phantoms for clinical photon beams",
+      "publisher": "Journal of Applied Clinical Medical Physics",
+      "year": 2018,
+      "url": "https://doi.org/10.1002/acm2.12299",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Technical Note: Development of 3D-printed breast phantoms for end-to-end testing of whole breast volumetric arc radiotherapy",
+      "publisher": "Journal of Applied Clinical Medical Physics",
+      "year": 2020,
+      "url": "https://doi.org/10.1002/acm2.12976",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Feasibility of a 3D-printed anthropomorphic patient-specific head phantom for patient-specific quality assurance of intensity-modulated radiotherapy",
+      "publisher": "PLOS ONE",
+      "year": 2017,
+      "url": "https://doi.org/10.1371/journal.pone.0181560",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 1",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-096/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5978687/#acm212299-fig-0001",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-096/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5978687/#acm212299-fig-0002",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R01",
+      "original_label": "Figure 6",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-096/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5978687/#acm212299-fig-0006",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R01",
+      "original_label": "Figure 5",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-096/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5978687/#acm212299-fig-0005",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R02",
+      "original_label": "Fig. 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-096/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7484846/#acm212976-fig-0004",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R03",
+      "original_label": "Fig. 6",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-096/F06.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5519219/#pone.0181560.g006",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "体模如何支持放疗剂量测量与验证？",
+      "direction": "放疗体模与质控",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "打印体模把探测器放到可控的材料界面",
+          "markdown": "Zavan 等以同一种聚苯乙烯制造低密度板，在周围加入固体水及侧向围挡，使密度变化与聚合物成分变化部分分离。单层结构在打印板的上、下界面放置胶片，多层结构则在各相邻层之间放置胶片；这样可分别检查进入、穿过及离开低密度区域的剂量分布，而不只得到体模中心的一点读数。[界面测量设计](ref:R01)\n\n研究组合 6 种单层结构与 1 种多层结构，测试 6 MV、6 FFF 和 15 MV 光子束，以及 2 × 2 cm² 与 5 × 5 cm² 射野。共比较 96 个剂量平面，其中单层 72 个、多层 24 个。这个数量是不同测量条件的平面总数，不是独立制造体模数或每个条件重复测量的样本量；全部几何条件只照射一组，另选择一个结构重复检查再现性。\n\n这种条件矩阵覆盖了密度、能量、射野和深度等因素，但没有把它们转化为充分重复的统计实验。某个条件通过率偏低，可以指出值得进一步检查的位置，尚不能仅凭单次照射估计该条件的失败概率，或判断换一批打印板后的分布。\n\n多层结构中不同密度板的次序决定界面位置，能揭示材料变化引起的建成与建降行为。周围介质、板方向及胶片位置都必须与 CT 和计算几何对应，否则比较同时混入摆位差异。打印的意义在于能安排这些界面和探测平面，而非打印物本身具有读取剂量的功能。\n\n原研究由 CT 标定给板赋予密度，算法再按影像自动指定人体材料类别；并没有强制将所有计算体素指定为实际聚苯乙烯。因此，后续一致性反映整个影像—材料映射—输运计算—测量链条，不能全部归因于某一个算法内核。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "胶片的高空间分辨率必须与校准、扫描和不确定度一起解释",
+          "markdown": "同一研究使用 EBT3 胶片，把光学响应经独立校准转换为剂量。校准和实验胶片来自同一批，固定扫描方向与位置，照射前图像用于扣除背景；照射后在 24 ± 4 h 扫描，以减小显色随时间变化的影响。所用像素尺寸为 0.35 mm，而计算剂量网格为 2.5 mm，测量与计算并非同一空间采样尺度。[胶片计量链](ref:R01)\n\n胶片可显示陡峭剂量梯度及小区域差异，但高像素密度不能消除定位误差。研究给出的总体不确定度约 3%，其中胶片剂量测量本身为 2%；还包括输出变化、体模回位、板厚差与层间气隙。某条曲线差异小于几个百分点，不能脱离这条不确定度链宣称算法达到同等精确度。\n\n胶片插入也会改变被测对象本身：多层累积厚度和不完全贴合可能产生额外间隙。作者明确把气隙列入不确定度，因此预留测量槽不是一个可以忽略的制造细节。体模可容纳探测器与探测器不扰动剂量，是两项不同要求，原研究主要通过几何控制和误差估计处理后者。\n\n计算报告介质剂量，而胶片校准由水中吸收剂量溯源。作者讨论了两种剂量报告量的近似可比性，没有在每个材料和能量条件逐一测得转换系数。因此“计算与胶片相符”仍有报告量选择的条件，不能直接替换为任意材料的绝对吸收剂量验证。\n\n乳房研究采用不同的三通道与横向扫描修正方法，并在扫描当天重新读校准片；这表明后处理算法也是实验的一部分。其结果不能只因同样使用放射变色胶片就与前一研究视为完全相同测量系统。[乳房胶片的校准方式](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "s3",
+          "title": "高剂量平台与半影差异揭示不同的误差来源",
+          "markdown": "低密度单层板的剖面比较，在高剂量区域一般处于 3% 内，但论文明确排除了 90%–10% 的半影区域来描述这一符合程度。小射野边缘的相对差异明显更大。若只看中心平台重合，就会漏掉边缘位置或宽度的差异；若只看边缘的大相对百分数，又可能忽略其所在绝对剂量较低。[单层剖面及半影](ref:R01)\n\n图中三个能量条件的曲线形状不同，计算和胶片的边缘并非处处重合。作者提出束流源模型、建模探测器尺寸、CT 体素平均和摆位差异都可能参与，不是只要出现半影差异就证明低密度材料输运计算错误。对最低密度板的另一组比较中，AXB 与 AAA 在较大射野的高剂量区域均能达到相近符合，原数据不能被概括为所有情形下其中一个算法必然优于另一个。\n\n多层结构的中心轴离散胶片点与计算约在 5% 内。曲线穿过不同背景色的密度层，界面附近的建成或建降尤其明显；胶片只提供几个界面点，连续深度曲线主要来自计算。图中误差棒是中心 ROI 内统计量，不能替代包含摆位、校准等因素的完整不确定度。局部点的吻合与整段深度范围的独立实验验证，必须分别表述。",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Gamma 通过率压缩空间信息，必须保留阈值与失败位置",
+          "markdown": "Zavan 等按 2%/2 mm 条件比较二维分布，并排除低于 10% 的剂量点。单层测量通过率为 96.7%–100%。多层表格中最大失败率为 4.2%，对应通过率 95.8%；这与讨论中写出的最低 97.1% 不一致。这里采用原结果表，不把叙述中的更高通过率替代实际最差条件。[Gamma 表与空间图](ref:R01)\n\nGamma 同时考虑剂量差和距离，因此小范围位移可能由距离项部分容纳。通过率高，表示纳入分析的像素大部分满足这一组合条件，不是所有像素剂量误差都低于所列百分数，也不是肿瘤控制概率。低剂量阈值还改变进入分母的像素；不同研究若改变阈值、局部或全局归一化、分析区域，就不能仅按通过率高低排序。\n\n本论文方法称为局部 Gamma，并使用绝对剂量分布进行比较；本报告保留其条件描述，不把“绝对剂量图”改写成“全局归一化”。图上的失败主要呈局部斑点或边缘差别，和中心剖面所揭示的信息不同。原研究没有注入一组已知错误来计算检出敏感度，所以这些通过率检验的是所测正确设置下的一致性，尚不能量化此体模能发现多少种错误。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "点剂量与不同胶片平面可以给出不同判断",
+          "markdown": "Delombaerde 等将乳房外形打印为带电离室孔或不同方向胶片槽的附件，固定到胸部体模。先以开放射野检查 CT 密度建模，点测量与计算相差 0.4%；随后验证复杂调强弧计划。这个先后顺序使简单材料响应与复杂空间分布可以分开观察，但一次开放场点测量仍不是所有密度或束角的等效验证。[附件设计与结果表](ref:R02)\n\n| 原文端到端计划的读出 | 结果 |\n|---|---:|\n| 电离室点剂量相对差 | −2.3% |\n| 冠状胶片通过率 | 80.1% |\n| 矢状胶片通过率 | 99.7% |\n| 轴位胶片通过率 | 96.4% |\n\n胶片采用 3% 局部剂量/2 mm 条件，低剂量排除阈值 10%，并将胶片全局缩放到计划剂量。这个缩放会影响绝对剂量偏差的解释，因此未缩放的独立点测量仍有价值。不同胶片槽属于不同打印附件与平面，不能把三个平面的通过率平均后当作整个三维体积都得到测量。\n\n论文怀疑轴位较低通过率与约 1 mm 气隙和打印翘曲有关，而端到端冠状平面的低值可能与残余滚转有关。这些是作者提出的解释，并未通过重打或控制旋转实验逐一证实。实际结果显示，接近计算的点剂量并没有排除某个平面的空间不一致；体模制造误差与摆位误差都可进入读出。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "头部体模的通过率不能与不同几何的阵列测量当作等效性试验",
+          "markdown": "Yea 等用单材质 ABS 头部体模保留口鼻等空气腔，并在矢状面插入 EBT2 胶片。以 3%/3 mm 条件分析，体模胶片通过率为 95.97%，常规阵列为 97.28%。但常规阵列在冠状面、机架归零条件下检测，体模则按多角度计划照射并在矢状面测量。两个百分数来自不同几何与探测方式，差值不是同一平面重复测量的精度损失。[头部验证的比较条件](ref:R03)\n\n头部体模计划还在其自身 CT 上重新优化，并非把患者原计划原样复制后验证。单一 ABS 材料与真实头部的骨、软组织材料分布不同，即使外形和空气腔来自患者，测得的仍是打印体模内的剂量。这项可行性研究没有提供足够多独立病例来估计一般适用性，也没有报告已知错误的检出率。\n\n原图的测量与计算分布、Gamma 图和剂量剖面需要一起阅读：蓝色为主的图仍可在局部留下失败点，剖面的局部差别不能由总通过率消除。胶片提供较密集的平面信息，阵列提供另一种采样；本研究支持这套体模可以完成剂量比较，却没有证明某一种探测方法全面优于另一种，也没有从平面通过率直接验证患者全部靶区和正常组织的体积剂量。",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Zavan et al.：胶片位于低密度板的边界。",
+          "interpretation": "a 左侧 P、Q 是单层板的上、下界面，右侧 A–D 为多层结构的测量位置；b–c 显示实物叠层与侧向围挡。多个测量面能区分入射、界面和出射后的剂量变化，但每张胶片仍是一个平面，不能视为连续三维探测。图中板次序是计算与实验共同的几何条件。[平面布局](ref:R01)"
+        },
+        "F02": {
+          "caption": "Zavan et al.：小射野的中心平台与半影。",
+          "interpretation": "行按能量排列，左列为板下 Q，右列为板上 P；实测与计算的剂量曲线使用左轴，虚线相对差使用右轴。中心平台相近而边缘差异增大，说明不能用中心吻合替代全剖面符合。右轴大的相对差有部分出现在低剂量区域，须同时看左轴和空间位置。[剖面图](ref:R01)"
+        },
+        "F03": {
+          "caption": "Zavan et al.：多层体模中的深度剂量。",
+          "interpretation": "列区分较大与较小射野，行区分能量；背景色块指示相邻密度板。连续线为 AXB，红点为有限界面上的胶片读数。较小射野在低密度层和其后呈现更明显变化；这些形状主要来自计算曲线，测量点只检验其被采样位置。误差棒不是整个实验总不确定度。[深度采样](ref:R01)"
+        },
+        "F04": {
+          "caption": "Zavan et al.：Gamma 图的局部失败区域。",
+          "interpretation": "上下两组为不同束流与射野条件，左右区分 Q、P 平面。灰度区域中叠加等剂量线，右侧色标用于 Gamma；少数黄红斑块提示局部不符合，不能把背景明暗当作吸收剂量大小。空间失败点的位置补充总通过率，但没有独立证明错误由体模、束流还是配准产生。[二维评价](ref:R01)"
+        },
+        "F05": {
+          "caption": "Delombaerde et al.：乳房轴位胶片与计算分布。",
+          "interpretation": "左上和中上分别是实测与计算，右上为 Gamma 图，红色标出未通过区域。青线选取下方两个剖面；大部分曲线接近，但边缘和局部区域仍有差别。此图对应轴位，不能替代同一计划较低的冠状平面结果；原分析还包括胶片全局缩放，绝对剂量需结合独立点测量。[轴位结果](ref:R02)"
+        },
+        "F06": {
+          "caption": "Yea et al.：头部矢状面胶片的测量、计算和 Gamma。",
+          "interpretation": "按画面标签，a 是实测、b 是计算、c 是 Gamma、d 是剖面；原正文对前两项的叙述顺序与图内标注相反，本图解以图内标签为准。红色测量线与绿色计算线大体接近但局部偏离，Gamma 图仍有红色区域。其百分数来自指定平面和判据，不代表患者全部体积剂量误差。[头部图内标注](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do phantoms support radiotherapy dose measurement and verification?",
+      "direction": "Radiotherapy phantoms and quality assurance",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Printed phantoms place detectors at controlled material interfaces",
+          "markdown": "Zavan et al. fabricated low-density slabs from one polystyrene material, surrounded by solid water and lateral enclosure, partly separating density from polymer-composition changes. Films above and below a single slab, or between successive layers, sampled entry, traversal and exit of low-density regions rather than one central point. [Interface measurement design](ref:R01)\n\nThe experiment combined 6 single-layer and 1 multilayer configurations, testing 6 MV, 6 FFF and 15 MV photons with 2 × 2 cm² and 5 × 5 cm² fields. Of 96 dose planes, 72 were single-layer and 24 multilayer. These count condition-specific planes, not independently manufactured phantoms or repeats per condition. Each geometry received one irradiation set; one configuration was repeated for reproducibility.\n\nThis condition matrix covers density, energy, field size and depth, without becoming a sufficiently replicated statistical experiment. A lower passing rate identifies a condition for further investigation; a single irradiation does not estimate its failure probability or the distribution after printing a new batch of slabs.\n\nLayer order determines interface positions and exposes build-up and build-down around density changes. Surroundings, slab orientation and film location must correspond to CT and calculation geometry, or setup differences enter the comparison. Printing enables placement of interfaces and measurement planes; printed material itself does not read dose.\n\nDensity came from CT calibration, followed by automatic assignment of human material categories rather than overriding every voxel to actual polystyrene. Agreement therefore evaluates the imaging–material mapping–transport–measurement chain, not only one algorithmic kernel.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Film resolution must be interpreted with calibration, scanning and uncertainty",
+          "markdown": "The same study converted EBT3 optical response to dose using separate calibration. Calibration and experimental films shared a batch, scan orientation and location; pre-exposure images removed background. Scanning at 24 ± 4 h reduced postexposure development effects. Pixels were 0.35 mm while the calculated dose grid was 2.5 mm, so measurement and computation had different spatial sampling. [Film measurement chain](ref:R01)\n\nFilm reveals steep gradients and small local discrepancies, but dense pixels do not remove localization error. Reported overall uncertainty was approximately 3%, including 2% intrinsic film uncertainty plus output, setup, slab-thickness and air-gap contributions. A few-percent curve difference cannot establish equal algorithm accuracy independently of this uncertainty chain.\n\nFilm insertion also changes the measured object: accumulated thickness and imperfect contact can create additional gaps. Air gaps were explicitly included in uncertainty, so detector slots are not negligible fabrication details. Accommodating a detector and avoiding dose perturbation are different requirements; the latter was addressed mainly through geometry control and error estimates.\n\nCalculations reported dose to medium, while film calibration was traceable to absorbed dose to water. The authors discussed approximate comparability rather than measuring conversion factors for every material and energy. Agreement therefore retains a reporting-quantity condition and is not absolute absorbed-dose validation for arbitrary materials.\n\nThe breast study instead used triple-channel processing with lateral scan correction and reread calibration films on the scanning day. Processing is part of the experiment; shared use of radiochromic film does not make these identical measurement systems. [Breast-film calibration](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "s3",
+          "title": "High-dose plateaus and penumbrae expose different error sources",
+          "markdown": "Single-slab profiles generally agreed within 3% in high-dose regions, explicitly excluding the 90%–10% penumbra. Relative differences grew at small-field edges. Center-plateau overlap can hide edge location or width discrepancies, while large relative edge differences may occur at low absolute doses. [Single-layer profiles and penumbrae](ref:R01)\n\nCurve shapes differed across energies, and calculated and film edges did not coincide everywhere. The authors proposed source modeling, commissioning-detector dimensions, CT voxel averaging and setup as contributors; a penumbra difference alone does not prove incorrect transport through low-density material. In another lowest-density comparison, both AXB and AAA agreed similarly in the larger field's high-dose region, preventing claims of universal algorithm superiority.\n\nMultilayer central-axis film points agreed with calculation within approximately 5%. Curves cross colored density layers, showing interface build-up or build-down. Films sample a few interfaces; the continuous depth curve mainly comes from calculation. Error bars summarize central ROI statistics rather than full setup and calibration uncertainty. Agreement at sampled points must remain distinct from independent experimental verification of the entire depth interval.",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Gamma passing rates compress spatial information and require thresholds and failure locations",
+          "markdown": "Zavan et al. compared planar distributions at 2%/2 mm, excluding doses below 10%. Single-layer passing rates were 96.7%–100%. The multilayer table's maximum failure rate is 4.2%, hence 95.8% passing, inconsistent with the discussion's minimum 97.1%. The report follows the results table rather than replacing the worst condition with the higher narrative value. [Gamma table and maps](ref:R01)\n\nGamma combines dose difference and distance, so a small displacement can be partly accommodated spatially. High passing means most included pixels satisfy that combined criterion, not that every pixel's dose error is below its percentage component, and not tumor-control probability. Dose cutoffs change the denominator; different thresholds, local/global normalization and regions prevent simple ranking across studies.\n\nThe methods describe local gamma using absolute dose distributions. This report preserves that wording rather than converting “absolute dose maps” into “global normalization.” Local spots and edge differences add information beyond center profiles. No known-error challenge set established detection sensitivity; passing rates describe agreement under tested nominal settings, not the fraction of possible errors the phantom can detect.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Point dose and different film planes can lead to different assessments",
+          "markdown": "Delombaerde et al. attached printed breasts with chamber holes or differently oriented film slots to a thorax phantom. An open-field check of CT density modeling first agreed within 0.4% at the measurement point, followed by complex modulated-arc plans. This separates simple material response from spatial modulation, but one open-field point does not validate every density or beam direction. [Attachment design and results](ref:R02)\n\n| Readout for the original end-to-end plan | Result |\n|---|---:|\n| Chamber relative point-dose difference | −2.3% |\n| Coronal-film passing rate | 80.1% |\n| Sagittal-film passing rate | 99.7% |\n| Axial-film passing rate | 96.4% |\n\nFilm used 3% local-dose/2 mm criteria with a 10% cutoff and global rescaling to planned dose. Rescaling affects interpretation of absolute-dose discrepancies, retaining the value of independent unscaled point measurements. Film slots belong to separate printed attachments and planes; averaging their rates does not constitute measurement of the whole volume.\n\nThe authors suspected approximately 1 mm air gaps from warping for lower axial scores and residual roll for the low end-to-end coronal score. Reprinting or controlled-rotation experiments did not establish these causes. The observations show that near-matching point dose does not exclude spatial disagreement in a plane; both fabrication and setup errors enter the readout.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Head-phantom passing rates are not an equivalence test against a differently configured array",
+          "markdown": "Yea et al. retained oral and nasal air cavities in a single-material ABS head and inserted sagittal EBT2 film. At 3%/3 mm, film passing was 95.97% versus 97.28% for the conventional array. The array measured coronally with gantry angles reset to zero; the phantom received multiple planned angles and measured sagittally. Different geometry and detection produce these percentages, not repeated measurement precision loss on one plane. [Head-comparison conditions](ref:R03)\n\nThe phantom plan was reoptimized on its own CT rather than verifying an unchanged patient plan. Single ABS differs from actual bone–soft-tissue distribution, so patient-derived outline and cavities still yield dose in a printed object. The feasibility study lacks enough independent cases to estimate general applicability and reports no known-error detection rate.\n\nMeasured and calculated maps, gamma map and profiles must be read together. A mostly blue map can retain localized failures, and overall passing does not erase profile differences. Film offers dense planar information and the array another sampling approach. The study supports feasible dose comparison, not universal detector superiority or direct validation of every patient target and normal-tissue dose volume from planar passing.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Zavan et al.: Films at low-density slab boundaries.",
+          "interpretation": "In a, P and Q are upper and lower single-slab interfaces; A–D sample the multilayer stack. b–c show physical stacking and lateral enclosure. Multiple planes distinguish entry, interface and exit effects, yet each film remains planar rather than a continuous volumetric detector. Slab order is shared experimental and calculation geometry. [Plane arrangement](ref:R01)"
+        },
+        "F02": {
+          "caption": "Zavan et al.: Small-field plateaus and penumbrae.",
+          "interpretation": "Rows distinguish energies; Q below the slab is left and P above it right. Measured and calculated dose use the left axis, dashed relative difference the right. Similar plateaus coexist with edge disagreement, so central overlap does not establish full-profile agreement. Some large relative differences occur at low dose; both axes and location matter. [Profile plot](ref:R01)"
+        },
+        "F03": {
+          "caption": "Zavan et al.: Depth dose in the multilayer phantom.",
+          "interpretation": "Columns distinguish larger and smaller fields, rows energies; colored backgrounds mark density slabs. AXB is continuous, red film points sample limited interfaces. Smaller fields show stronger changes in and beyond low-density layers. These shapes chiefly derive from calculation, with measurements testing sampled positions only. Error bars are not total experimental uncertainty. [Depth sampling](ref:R01)"
+        },
+        "F04": {
+          "caption": "Zavan et al.: Localized failures on gamma maps.",
+          "interpretation": "Upper and lower groups use different beams and fields; columns distinguish Q and P. Isodose lines overlay grayscale regions with gamma color scales at right. Sparse yellow/red spots indicate local disagreement; background brightness is not absorbed dose. Failure locations complement total passing without independently identifying phantom, beam or registration as the cause. [Planar evaluation](ref:R01)"
+        },
+        "F05": {
+          "caption": "Delombaerde et al.: Axial breast-film and calculated distributions.",
+          "interpretation": "Top left is measured, center calculated and right gamma, with red failing areas. Cyan lines select the lower profiles. Most curves are close despite edge and local differences. This axial example does not replace the poorer coronal result from the same plan. Global film rescaling also requires independent point measurements for absolute-dose interpretation. [Axial result](ref:R02)"
+        },
+        "F06": {
+          "caption": "Yea et al.: Sagittal head-film measurement, calculation and gamma.",
+          "interpretation": "Image labels identify a as measured, b calculated, c gamma and d profiles. The narrative reverses the first pair; this interpretation follows the image labels. Red measured and green calculated profiles are broadly close with local deviations and red gamma regions. Percentages concern the specified plane and criterion, not errors throughout the patient dose volume. [Head-image labels](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie unterstützen Phantome Dosismessung und -prüfung in der Strahlentherapie?",
+      "direction": "Strahlentherapiephantome und Qualitätssicherung",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Gedruckte Phantome platzieren Detektoren an kontrollierten Materialgrenzen",
+          "markdown": "Zavan et al. fertigten Niedrigdichteplatten aus einem Polystyrolmaterial mit umgebendem Festwasser und seitlicher Einfassung. Dichte- und Polymeränderungen bleiben damit teilweise getrennt. Filme ober- und unterhalb einer Platte beziehungsweise zwischen Schichten erfassen Eintritt, Durchtritt und Austritt der Niedrigdichteregion statt nur einen Mittelpunkt. [Grenzflächenmessung](ref:R01)\n\nKombiniert wurden 6 Einschicht- und 1 Mehrschichtkonfiguration, 6 MV-, 6 FFF- und 15 MV-Photonen sowie 2 × 2 cm²- und 5 × 5 cm²-Felder. Von 96 Dosisebenen entfielen 72 auf Einzel- und 24 auf Mehrschichten. Gezählt werden bedingungsspezifische Ebenen, keine unabhängig hergestellten Phantome oder Wiederholungen jeder Bedingung. Jede Geometrie erhielt einen Bestrahlungssatz; eine Konfiguration wurde zur Reproduzierbarkeit wiederholt.\n\nDie Bedingungsmatrix deckt Dichte, Energie, Feldgröße und Tiefe ab, bildet aber kein ausreichend repliziertes statistisches Experiment. Niedrigeres Bestehen kennzeichnet eine näher zu prüfende Bedingung; eine Bestrahlung schätzt weder deren Fehlerwahrscheinlichkeit noch die Verteilung einer neu gedruckten Plattencharge.\n\nSchichtreihenfolge bestimmt Grenzlagen und zeigt Dosisaufbau beziehungsweise -abfall bei Dichtewechseln. Umgebung, Plattenorientierung und Filmlage müssen CT und Rechengeometrie entsprechen, sonst gehen Lagerungsdifferenzen ein. Druck ermöglicht Anordnung der Grenzen und Messebenen; das Druckmaterial selbst liest keine Dosis aus.\n\nDichte stammte aus CT-Kalibrierung, gefolgt von automatischer Zuordnung menschlicher Materialklassen statt Überschreiben aller Voxel mit realem Polystyrol. Übereinstimmung prüft somit die Bildgebungs-Materialzuordnungs-Transport-Messkette, nicht allein einen Algorithmuskern.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Filmauflösung muss zusammen mit Kalibrierung, Scan und Unsicherheit gelesen werden",
+          "markdown": "Die Studie wandelte EBT3-Lichtantwort mit getrennter Kalibrierung in Dosis um. Kalibrier- und Versuchsfilme hatten gleiche Charge, Scanrichtung und -position; Vorbestrahlungsbilder korrigierten Hintergrund. Scans nach 24 ± 4 h reduzierten Nachentwicklungseffekte. Pixel betrugen 0.35 mm, das Rechengitter 2.5 mm; Messung und Berechnung hatten verschiedene räumliche Abtastung. [Filmmesskette](ref:R01)\n\nFilm zeigt steile Gradienten und kleine lokale Abweichungen, hohe Pixeldichte beseitigt jedoch keine Lokalisierungsfehler. Die Gesamtunsicherheit lag bei ungefähr 3%, einschließlich 2% intrinsischer Filmmessunsicherheit sowie Ausgangs-, Lagerungs-, Plattendicken- und Luftspaltbeiträgen. Wenige Prozent Kurvendifferenz belegen keine entsprechende Algorithmusgenauigkeit unabhängig von dieser Unsicherheitskette.\n\nFilmeinlage verändert zudem das Messobjekt: Summierte Dicke und unvollständiger Kontakt können zusätzliche Spalte erzeugen. Luftspalte wurden ausdrücklich in die Unsicherheit aufgenommen; Detektorschlitze sind somit keine vernachlässigbaren Fertigungsdetails. Detektoraufnahme und fehlende Dosisstörung sind verschiedene Anforderungen; letztere wurde vor allem durch Geometriekontrolle und Fehlerabschätzung behandelt.\n\nBerechnet wurde Dosis im Medium, während Filmkalibrierung auf Wasserenergiedosis rückführbar war. Diskutiert wurde angenäherte Vergleichbarkeit, keine für jedes Material und jede Energie gemessenen Umrechnungsfaktoren. Übereinstimmung bleibt somit an die Berichtsgröße gebunden und validiert keine absolute Energiedosis beliebiger Materialien.\n\nDie Bruststudie nutzte dagegen Dreikanalverarbeitung mit seitlicher Scankorrektur und las Kalibrierfilme am Scantag erneut aus. Verarbeitung ist Teil des Versuchs; gemeinsame Nutzung radiochromer Filme macht Messsysteme nicht identisch. [Brustfilmkalibrierung](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "s3",
+          "title": "Hochdosisplateaus und Halbschatten zeigen unterschiedliche Fehlerquellen",
+          "markdown": "Einschichtprofile stimmten im Hochdosisbereich meist innerhalb 3% überein, ausdrücklich ohne 90%–10%-Halbschatten. Relative Abweichungen stiegen an kleinen Feldrändern. Überlagerte Plateaus können Randlage und -breite verdecken; große relative Randabweichungen können umgekehrt bei geringer absoluter Dosis liegen. [Einschichtprofile und Halbschatten](ref:R01)\n\nKurvenformen unterschieden sich zwischen Energien; berechnete und gemessene Ränder deckten sich nicht überall. Quellenmodell, Größe des Inbetriebnahmedetektors, CT-Voxelmittelung und Lagerung wurden als Beiträge vermutet. Halbschattenabweichung allein beweist keinen falschen Transport in Niedrigdichtematerial. Im Vergleich der geringsten Dichte stimmten AXB und AAA im Hochdosisbereich des größeren Feldes ähnlich gut überein; universelle Überlegenheit ist nicht belegt.\n\nMehrschicht-Zentralachsenpunkte lagen ungefähr innerhalb 5% der Berechnung. Kurven durchqueren farbige Dichteschichten mit Grenzflächenaufbau oder -abfall. Filme erfassen wenige Grenzen; die kontinuierliche Tiefenkurve stammt überwiegend aus Berechnung. Fehlerbalken beschreiben zentrale ROI-Statistik statt vollständiger Lagerungs- und Kalibrierunsicherheit. Punktübereinstimmung bleibt von unabhängiger experimenteller Prüfung des gesamten Tiefenbereichs getrennt.",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Gamma-Bestehensraten verdichten Raumdaten und benötigen Schwellen und Fehlerlagen",
+          "markdown": "Zavan et al. verglichen Ebenen bei 2%/2 mm und schlossen Dosen unter 10% aus. Einschicht-Bestehensraten lagen bei 96.7%–100%. Die Mehrschichttabelle nennt maximal 4.2% Nichtbestehen, entsprechend 95.8% Bestehen; die Diskussion nennt dagegen mindestens 97.1%. Hier gilt die Ergebnistabelle, nicht der günstigere Fließtextwert. [Gamma-Tabelle und Karten](ref:R01)\n\nGamma verbindet Dosisdifferenz und Distanz, sodass räumliche Toleranz kleine Verschiebungen teilweise aufnimmt. Hohes Bestehen bedeutet Erfüllung der kombinierten Bedingung für die meisten einbezogenen Pixel, nicht Dosisfehler unter der Prozentkomponente überall oder Tumorkontrollwahrscheinlichkeit. Dosisschwellen ändern den Nenner; verschiedene Schwellen, lokale/globale Normierung und Regionen verhindern einfache Studienrangfolgen.\n\nDie Methoden beschreiben lokale Gamma-Auswertung absoluter Dosisverteilungen. Diese Formulierung bleibt erhalten; „absolute Dosiskarte“ wird nicht in „globale Normierung“ umgedeutet. Lokale Flecken und Randabweichungen ergänzen zentrale Profile. Ein Prüfsatz bekannter Fehler zur Bestimmung der Nachweissensitivität fehlte; Bestehensraten beschreiben Übereinstimmung nomineller Einstellungen, nicht den Anteil erkennbarer möglicher Fehler.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Punktdosis und verschiedene Filmebenen können unterschiedliche Bewertungen ergeben",
+          "markdown": "Delombaerde et al. befestigten gedruckte Brüste mit Kammerbohrung oder unterschiedlich orientierten Filmschlitzen am Thoraxphantom. Eine offene Feldprüfung der CT-Dichtemodellierung stimmte am Messpunkt innerhalb 0.4% überein, anschließend folgten komplexe modulierte Bogenpläne. Dies trennt einfache Materialantwort von räumlicher Modulation; ein offener Messpunkt validiert jedoch nicht jede Dichte oder Strahlrichtung. [Aufsatzdesign und Ergebnisse](ref:R02)\n\n| Auswertung des ursprünglichen End-to-End-Plans | Ergebnis |\n|---|---:|\n| Relative Kammer-Punktdosisabweichung | −2.3% |\n| Bestehensrate koronaler Film | 80.1% |\n| Bestehensrate sagittaler Film | 99.7% |\n| Bestehensrate axialer Film | 96.4% |\n\nFilme verwendeten 3% lokale Dosis/2 mm mit 10% Ausschlussgrenze und globaler Skalierung auf Plandosis. Skalierung beeinflusst absolute Dosisabweichungen, weshalb unabhängige unskalierte Punktmessung wertvoll bleibt. Filmschlitze gehören zu getrennten Druckaufsätzen und Ebenen; gemittelte Raten messen nicht das gesamte Volumen.\n\nVermutet wurden ungefähr 1 mm Luftspalt durch Verzug für niedrigere axiale Werte und Rest-Rollrotation für den niedrigen koronalen End-to-End-Wert. Neudruck- oder kontrollierte Rotationsexperimente bestätigten diese Ursachen nicht. Beobachtet wurde: Nahezu passende Punktdosis schließt räumliche Ebenenabweichung nicht aus; Herstellung und Lagerung gehen in die Auswertung ein.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Kopfphantom-Bestehensraten sind kein Äquivalenztest gegenüber anders aufgebauter Arraymessung",
+          "markdown": "Yea et al. erhielten Mund- und Nasenlufträume in einem ABS-Kopf aus einem Material und setzten sagittalen EBT2-Film ein. Bei 3%/3 mm bestanden 95.97% gegenüber 97.28% des konventionellen Arrays. Dieses maß koronal mit auf null gesetzten Gantrywinkeln; das Phantom wurde aus mehreren Planwinkeln bestrahlt und sagittal gemessen. Verschiedene Geometrie und Detektion erzeugen diese Prozente, keinen Präzisionsverlust wiederholter Messung derselben Ebene. [Kopfvergleichsbedingungen](ref:R03)\n\nDer Phantomplan wurde auf eigener CT neu optimiert statt unverändertem Patientenplan. Einheitliches ABS unterscheidet sich von realer Knochen-Weichteil-Verteilung; patientenbasierter Umriss und Hohlräume liefern weiterhin Dosis im Druckobjekt. Die Machbarkeitsstudie enthält zu wenige unabhängige Fälle für allgemeine Anwendbarkeit und keine Erkennungsrate bekannter Fehler.\n\nMess- und Rechenkarten, Gamma-Karte und Profile gehören zusammen. Eine überwiegend blaue Karte kann lokale Fehler behalten; Gesamtbestehen beseitigt keine Profildifferenz. Film bietet dichte Ebeneninformation, das Array andere Abtastung. Belegt ist praktikabler Dosisvergleich, keine allgemeine Detektorüberlegenheit oder direkte Prüfung sämtlicher Patienten-Ziel- und Normalgewebe-Dosisvolumina aus Ebenenbestehen.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Zavan et al.: Filme an Grenzen der Niedrigdichteplatten.",
+          "interpretation": "In a bezeichnen P und Q obere und untere Einzelplattengrenzen, A–D den Mehrschichtstapel. b–c zeigen Stapel und seitliche Einfassung. Mehrere Ebenen trennen Eintritts-, Grenz- und Austrittseffekte, jeder Film bleibt aber planar statt kontinuierlich volumetrisch. Plattenfolge ist gemeinsame Mess- und Rechengeometrie. [Ebenenanordnung](ref:R01)"
+        },
+        "F02": {
+          "caption": "Zavan et al.: Kleinfeld-Plateaus und Halbschatten.",
+          "interpretation": "Zeilen unterscheiden Energien, links liegt Q unter der Platte, rechts P darüber. Mess- und Rechendosis nutzen die linke, gestrichelte relative Differenz die rechte Achse. Ähnliche Plateaus bestehen neben Randabweichungen; zentrale Überlagerung bestätigt nicht das Gesamtprofil. Manche großen relativen Unterschiede liegen bei geringer Dosis; beide Achsen und Position sind relevant. [Profilgrafik](ref:R01)"
+        },
+        "F03": {
+          "caption": "Zavan et al.: Tiefendosis im Mehrschichtphantom.",
+          "interpretation": "Spalten unterscheiden größere und kleinere Felder, Zeilen Energien; farbige Hintergründe markieren Dichteplatten. AXB ist kontinuierlich, rote Filmpunkte erfassen begrenzte Grenzen. Kleinere Felder zeigen stärkere Änderungen in und nach Niedrigdichteschichten. Formen stammen überwiegend aus Berechnung, Messungen prüfen Stichprobenpositionen. Fehlerbalken sind keine Gesamtversuchsunsicherheit. [Tiefenabtastung](ref:R01)"
+        },
+        "F04": {
+          "caption": "Zavan et al.: Lokales Nichtbestehen auf Gamma-Karten.",
+          "interpretation": "Obere und untere Gruppen verwenden verschiedene Strahlen und Felder, Spalten Q und P. Isodosen überlagern Graubereiche, rechts stehen Gamma-Farbskalen. Einzelne gelbe/rote Flecken zeigen lokale Abweichung; Hintergrundhelligkeit ist keine Energiedosis. Fehlerlagen ergänzen Gesamtbestehen, identifizieren aber nicht unabhängig Phantom, Strahl oder Registrierung als Ursache. [Ebenenauswertung](ref:R01)"
+        },
+        "F05": {
+          "caption": "Delombaerde et al.: Axialer Brustfilm und berechnete Verteilung.",
+          "interpretation": "Oben links Messung, mittig Berechnung, rechts Gamma mit roten Fehlerbereichen. Cyanlinien wählen die unteren Profile. Kurven liegen meist nahe, trotz Rand- und lokaler Differenzen. Das axiale Beispiel ersetzt nicht das schlechtere koronale Ergebnis desselben Plans. Globale Filmskalierung verlangt zudem unabhängige Punktmessung zur absoluten Dosisinterpretation. [Axiales Ergebnis](ref:R02)"
+        },
+        "F06": {
+          "caption": "Yea et al.: Sagittaler Kopffilm mit Messung, Berechnung und Gamma.",
+          "interpretation": "Bildbeschriftungen nennen a gemessen, b berechnet, c Gamma und d Profile. Der Fließtext vertauscht das erste Paar; hier gelten Bildlabels. Rote Mess- und grüne Rechenprofile liegen überwiegend nahe, mit lokalen Differenzen und roten Gamma-Bereichen. Prozente betreffen festgelegte Ebene und Kriterium, keine Fehler des gesamten Patientendosisvolumens. [Kopfbild-Beschriftung](ref:R03)"
+        }
+      }
+    }
+  }
+}

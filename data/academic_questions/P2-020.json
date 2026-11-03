@@ -1,0 +1,303 @@
+{
+  "schema_version": 2,
+  "question_id": "P2-020",
+  "p": "P2",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_d9269b69c1da9774d583",
+    "doc_7f0920d7357e207ac181",
+    "doc_sd_cd987862c3ce1dfa41ec",
+    "doc_00cda5623002d7ffe856",
+    "KB2026070F2DF03C77"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Patient satisfaction with conventional dentures vs. digital dentures fabricated using 3D-printing: A randomized crossover trial",
+      "publisher": "Journal of Prosthodontic Research",
+      "year": 2022,
+      "url": "https://doi.org/10.2186/jpr.JPR_D_21_00048",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Digital versus Conventional Dentures: A Prospective, Randomized Cross-Over Study on Clinical Efficiency and Patient Satisfaction",
+      "publisher": "Journal of Clinical Medicine",
+      "year": 2023,
+      "url": "https://doi.org/10.3390/jcm12020434",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "3D-printed versus conventionally fabricated complete dentures: Time-efficiency and cost-effectiveness analysis",
+      "publisher": "Journal of Dentistry",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/j.jdent.2026.106972",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Digital vs. conventional removable complete dentures: A retrospective study on clinical effectiveness and cost-efficiency in edentulous patients: Clinical effectiveness and cost-efficiency analysis of digital dentures",
+      "publisher": "Journal of Dentistry",
+      "year": 2025,
+      "url": "https://doi.org/10.1016/j.jdent.2024.105505",
+      "kind": "paper"
+    },
+    {
+      "id": "R05",
+      "title": "Laboratory Evaluation of Production Efficiency for Removable Partial Denture Frameworks Using In-House Casting vs Outsourced Additive Manufacturing Techniques",
+      "publisher": "International Journal of Prosthodontics",
+      "year": 2023,
+      "url": "https://doi.org/10.11607/ijp.7132",
+      "kind": "paper"
+    },
+    {
+      "id": "R06",
+      "title": "Effect of support structures on the trueness and precision of 3D printing dentures: An in vitro study",
+      "publisher": "Journal of Prosthodontic Research",
+      "year": 2024,
+      "url": "https://doi.org/10.2186/jpr.JPR_D_22_00266",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P2-020/F01.png",
+      "source_url": "https://www.jstage.jst.go.jp/article/jpr/66/4/66_JPR_D_21_00048/_pdf",
+      "license": "CC BY-NC 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Fig. 5",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P2-020/F02.png",
+      "source_url": "https://www.jstage.jst.go.jp/article/jpr/66/4/66_JPR_D_21_00048/_pdf",
+      "license": "CC BY-NC 4.0"
+    },
+    {
+      "id": "F03",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f15e/9865095/a86dcb0c2d56/jcm-12-00434-g001.jpg",
+      "asset_path": "assets/academic_figures/P2-020/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9865095/#jcm-12-00434-f001",
+      "original_label": "Figure 1",
+      "reference_id": "R02",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f15e/9865095/984297d07a9d/jcm-12-00434-g002.jpg",
+      "asset_path": "assets/academic_figures/P2-020/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9865095/#jcm-12-00434-f002",
+      "original_label": "Figure 2",
+      "reference_id": "R02",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "不同制造流程如何影响义齿制作效率？",
+      "direction": "义齿精度与体验",
+      "sections": [
+        {
+          "id": "time_denominators",
+          "title": "就诊次数、椅旁时间和实验室工时不是同一结果",
+          "markdown": "数字流程能把取模、颌位记录和设计集中完成，也能用机器加工替代部分手工步骤，但不同研究计时的起止点并不相同。少一次就诊主要减少一次往返及组织安排，不一定减少患者坐在治疗椅上的总时长；技师操作时间减少，也不等于打印、运输和等待结束得更早。临床效率还应包括试戴返工及交付后的调整，不能只比较首件成形时间。[临床计时试验](ref:R01)、[实验室边界研究](ref:R05)\n\n|观测量|原始研究中的实际定义|容易产生的误读|\n|---|---|---|\n|制作就诊次数|包含重做导致的来诊|把理论3次直接当作每例实际3次|\n|总椅旁时间|患者坐下至治疗结束起身的累计时间|把更多内容合并为一次就诊视为同等幅度的时间缩短|\n|院内技师工时|本实验室完成的步骤，外包制造另计|把外包后的工时转移当作整个链路消失|\n|软件预测打印时间|由支撑、层数和排布计算|当作含清洗、固化、去支撑与装配的实测交付周期|\n\n以下研究分别测量这些层次；它们的差异可以解释为何有的数字方案显著缩短时间，有的只减少就诊次数。[实际计时范围](ref:R01)、[外包范围](ref:R05)、[软件估计范围](ref:R06)",
+          "figure_ids": []
+        },
+        {
+          "id": "visits_without_time_gain",
+          "title": "随机交叉试验：减少来诊不保证总椅旁时间缩短",
+          "markdown": "Ohara等筛查23人、纳入20名66–90岁上下颌无牙患者，随机决定先做传统还是打印义齿；5人中途退出，最终15人完成选择。数字流程并非直接口扫：用DENTCA托盘完成边缘整塑、最终印模及同日颌位记录，随后打印试戴义齿、再分别打印基托与人工牙。采用ZENiTH U及dima系列材料，临床方案原则上安排3次就诊。传统组则依次完成初印模、个别托盘、最终印模、颌位、蜡型试戴和交付步骤。[试验与流程](ref:R01)\n\n研究用秒表从患者坐上治疗椅到起身计时，分别统计制作与调整；调整终点是患者能够无痛进食。包括重做在内的制作就诊次数，打印组显著较少，但制作总椅旁时间、调整次数和调整时间均未检出显著差异。原Fig. 4显示交付前次数下降，原Fig. 5的打印时间柱却未相应下降；两图的误差线均为标准差，不能由柱高自行补造精确均值。[次数与时间原图](ref:R01)\n\n质量代价也有实测信息：GEE估计的总体满意度，传统组为78.83（标准误6.41）、打印组61.10（标准误5.75），p=0.016；发音、清洁、稳定性和舒适度亦偏向传统组。最终12人选传统、3人选打印。研究未设正式充分洗脱期，操作者和患者也无法完全盲法；其结果说明该特定流程的就诊合并没有自动转化为时间或体验优势，而不是对全部打印系统的否定。[患者评价及研究条件](ref:R01)",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "hybrid_milling",
+          "title": "保留传统临床记录的切削流程，主要改变的是实验室阶段",
+          "markdown": "Zupancic Cepic等对10名患者进行随机交叉比较，平均年龄53.6岁，排除严重萎缩牙槽嵴；两种新义齿之间用旧义齿洗脱1周，每副新义齿复查2周。数字组并不是打印：它扫描已上架的石膏主模型，用Ceramill软件设计、Motion 2切削VITA VIONIC基托与适配人工牙，再粘接装配。研究还扫描传统蜡型排牙作为数字设计参考，故这里保留了大量传统采集及排牙信息。[交叉研究方法](ref:R02)\n\n两组都计划5次临床就诊，分别为初印模、最终印模、颌位记录、试戴、交付。由于咬合平面、中线、切缘、唇支撑或牙轴需要修正，部分病例增加试戴；实际数字组为5.3±0.5次、传统组5.9±1.0次。交付后调整分别为0.4±1.3和0.3±0.7次。该文没有给出完整秒表计时的总椅旁与技师分钟数，不能把这组次数换算成时间节省百分比。[实际来诊与修正](ref:R02)\n\n两组Sato质量评分为73.2±12.3和67.4±11.8，p=0.160；数字组上颌稳定性最佳等级比例较高，但完美抛光比例仅20%，传统组80%。这些次要比较属探索性，不能据此抵消主要评分的不显著结果。原图显示，传统基托另外做了后腭封闭和腭隆突缓冲，数字组没有相同处理；最终构件并非只换了一种加工机器。需要保留的实验结论是：数字化进入实验室以后，临床试戴和完成面处理仍占用步骤。[质量评价与构件差异](ref:R02)",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "three_visit_protocol",
+          "title": "三次就诊打印方案：临床与实验室时间的节省幅度不同",
+          "markdown": "Ribeiro等的临床研究纳入23名无牙患者，平均年龄65.96±8.74岁，每人接受传统5次就诊方案及数字3次就诊方案。原始摘要说明记录了印模、颌位、试戴、交付及义齿加工的临床和实验室时间，因此其效率比较覆盖了流程中的多个步骤。论文已于2026年八月在线发表，虽然卷期标注为同年十二月，仍在本报告证据截止日前。[原始临床研究](ref:R03)\n\n|时间，分钟|传统流程|打印数字流程|\n|---|---|---|\n|临床|179.68|90.50|\n|实验室|562.98|150.85|\n\n两项时间比较均p<0.001。按报告值计算，临床减少89.18分钟、约49.6%，实验室减少412.13分钟、约73.2%；这些是本文由组值计算的差与比例，不是原文另行测得的结局。它与Ohara试验的结果并不等同，差别至少包括流程组织、材料系统、样本人群及是否需要额外记录或重做；不能只用“都是打印”来预期相同时间收益。[时间结果](ref:R03)、[另一交叉试验](ref:R01)\n\n其成本分析从服务提供方出发，以材料购入价和记录时间对应的医生、技师费用表计算；满意度与口腔健康相关生活质量未检出组间差异。当前可核对的摘要未展开全部成本币种、设备折旧和分步骤原始数据，本文只采用明确的时间结果及分析视角，不把货币数值解释为通用义齿价格，也不把未显著差异改写为预先设计的等效性证明。[成本与效果定义](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "existing_denture_selection",
+          "title": "旧义齿能否复用，是缩短流程的病例条件",
+          "markdown": "Casucci等的回顾研究纳入60人，共制作120副上下颌义齿：30人走传统路线，30人走数字路线，数字组再分为切削和打印各15人。关键是传统/数字分组并非整体随机：能把旧义齿作为闭口印模个别托盘的患者进入数字组，只有数字组内部再分配制造方式。旧义齿先评估垂直距离、正中关系、美学和发音，必要时调改或重衬；随后用TRIOS 3扫描其组织面、磨光面和咬合面。节省的内容包含已有临床记录的复用，不仅是打印机加工速度。[病例选择与记录复用](ref:R04)\n\n数字设计经打印原型试戴后，最终采用PM7切削，或以Asiga流程打印V-Print Dentbase及V-Print DT，构件按45°布置。表2报告总椅旁时间传统218.00±20.75分钟、数字154.31±13.19分钟，p<0.0001；交付后随访时间26.94±12.13与28.13±15.37分钟，p=0.587，次数1.70±0.47与1.77±0.43，p=0.694。即使交付前较快，这项观察也没有显示调整负担同步下降。[制作与随访指标](ref:R04)\n\n原表存在需要分开处理的矛盾：表4切削、打印的椅旁时间为108.33±18.67和111.80±20.54分钟，两组人数相等，其均值无法汇成表2的154.31分钟。本文保留各表原数并指出其不能合并，不据亚组再计算总体节省。实验室费用表中的切削€435.16±143.90、打印€322.42±131.02（p=0.0496）则只能作为该机构的材料、人工和间接费用核算。OHIP正文与表格也不一致，故不据该文宣称数字义齿满意度更差或等效。[原表2–4及文字差异](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "outsourcing_and_postprocessing",
+          "title": "外包工时和支撑参数需要放回完整制作链解释",
+          "markdown": "Ali等在医院技工室前瞻记录50件钴铬可摘局部义齿支架，传统铸造和外包激光制造各25件，由同一技师计时；按制作时间及技师可用性分配，未随机。铸造院内工时273.3±107.9分钟，数字路线154.4±37.9分钟，差118.9分钟，95% CI 72.9–164.9，p<0.001。数字路线明确排除了外包端的构建文件、激光加工、去支撑、包装和运输时间；临床步骤与传统相同。因此该结果证明院内技师负荷减少，不能据其宣称患者提前118.9分钟拿到支架。数字组25件中3件仍需修改后才完成适配。[实验室实测与排除步骤](ref:R05)\n\n支撑设计能够减少机器侧资源，但证据层次又不同。Namano等固定Form 3/Clear Resin、45°、50 µm层厚，比较无削减、腭部削减、边缘削减及双区削减，每组20件；清洗15分钟、40 °C后固化30分钟。双区削减使软件预测树脂用量由37.03降至31.13 mL，支撑接触点由166降至113；真实度误差中位数61.0变为64.9 µm，四组差异p=0.376。原文打印时长表的小时小数写法与正文分钟差并不完全清楚，因此不将其换算成精确百分比。[支撑试验的参数与计算边界](ref:R06)\n\n这两种节省发生在不同环节：外包把部分制造移出计时边界，支撑削减改变切片预测，但清洗、后固化、人工牙粘接、抛光和试戴仍需分别记录。对固定的病例类型，完整效率比较应保留可复用的印模与颌位信息、人员主动操作时间、机器占用时间以及调整事件，而不能把不同环节的分钟数直接相加当成患者经历的日历时间。[实际外包流程](ref:R05)、[支撑与后处理实验](ref:R06)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Ohara et al.；Japan Prosthodontic Society：制作与交付后调整的就诊次数。",
+          "interpretation": "横轴分delivery与adjustment，纵轴为次数；灰柱CD是传统、白柱DD是打印，误差线为标准差。只有交付前的两柱标有显著差异，调整阶段没有同样的降低。原文计数包括重做，因此白柱并非理论3次就诊的固定执行结果。该图不能单独说明总椅旁分钟数减少，应与下一幅时间图共同阅读。[次数终点](ref:R01)"
+        },
+        "F02": {
+          "caption": "Ohara et al.；Japan Prosthodontic Society：制作和调整所需的总临床时间。",
+          "interpretation": "纵轴单位为秒，不是分钟；灰色传统和白色打印的均值及标准差分别显示制作与调整阶段。打印柱没有随就诊次数下降而缩短，原文也报告两阶段时间均无显著组间差异。较宽误差线说明个体所需时间差异明显，不能把合并一次记录步骤等同于取消其操作时间。此图不包含完整技工室生产与运输时间。[计时方法](ref:R01)"
+        },
+        "F03": {
+          "caption": "Zupancic Cepic et al.：同一患者的切削数字义齿与传统义齿。",
+          "interpretation": "左列为数字、右列为传统，上排为组织面，下排为磨光/咬合侧。传统组织面可见额外后腭封闭及腭隆突缓冲处理的构件差别，研究方法证实数字组没有对应的传统处理。该图不是时间图，而是说明计时比较的最终对象并非完全相同；若把这些步骤省略，必须同时检查质量和调整结果，不能仅以制造标签解释效率。[最终构件与方法](ref:R02)"
+        },
+        "F04": {
+          "caption": "Zupancic Cepic et al.：从已上架模型进入数字设计的四个阶段。",
+          "interpretation": "A为虚拟咬合架上的模型，B为按模型分析排列人工牙，C为基托设计，D为加工前的整体预览。A说明扫描起点已有传统颌位记录，并非直接省掉取模和上架；B中的参考线和牙位仍需临床试戴验证。图中没有展示粘接、间隙填补、聚合和抛光，原方法却包含这些步骤，故设计界面完成不能当作义齿交付完成。[设计与装配方法](ref:R02)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do manufacturing workflows affect denture production efficiency?",
+      "direction": "Denture accuracy and patient experience",
+      "sections": [
+        {
+          "id": "time_denominators",
+          "title": "Visits, chairside time and laboratory work time are different outcomes",
+          "markdown": "Digital workflows can consolidate impressions, jaw records and design and replace some manual steps with machine processing, but studies use different timing boundaries. Eliminating a visit primarily removes a journey and its organization; it need not reduce total time in the treatment chair. Less technician work likewise does not mean earlier completion of printing, transport and waiting. Clinical efficiency also includes try-in rework and postdelivery adjustment, rather than only initial fabrication. [Clinical timing trial](ref:R01), [laboratory boundaries](ref:R05)\n\n|Observed measure|Operational definition in the original study|Potential misinterpretation|\n|---|---|---|\n|Fabrication visits|Includes visits caused by remakes|Treating a theoretical 3-visit protocol as exactly 3 visits for every patient|\n|Total chairside time|Cumulative time from sitting down to standing up after treatment|Assuming that consolidating procedures into a visit saves the same proportion of time|\n|In-house technician work|Steps performed locally, with outsourced manufacture accounted for separately|Treating transferred work as eliminated work across the entire chain|\n|Software-predicted print time|Calculated from supports, layers and arrangement|Treating it as measured delivery time including washing, curing, support removal and assembly|\n\nThe following studies measure these distinct levels. Their differences explain why some digital protocols substantially reduce time while others reduce only visit numbers. [Timing scope](ref:R01), [outsourcing scope](ref:R05), [software-estimation scope](ref:R06)",
+          "figure_ids": []
+        },
+        {
+          "id": "visits_without_time_gain",
+          "title": "Randomized crossover evidence: fewer visits need not shorten total chairside time",
+          "markdown": "Ohara et al. screened 23 people and enrolled 20 edentulous patients aged 66–90 requiring upper and lower dentures. The order of conventional and printed treatment was randomized; 5 withdrew, leaving 15 to complete the final preference assessment. The digital protocol did not use direct intraoral scans. DENTCA trays supported border molding, definitive impressions and same-day jaw records, followed by printed try-ins and separate printing of bases and teeth. ZENiTH U and dima materials were used, with 3 visits planned in principle. The conventional route retained primary impressions, custom trays, definitive impressions, jaw records, wax try-in and delivery. [Trial and workflow](ref:R01)\n\nA stopwatch measured time from sitting down in the chair to standing up. Fabrication and adjustment were recorded separately; stabilization meant being able to eat without pain. Fabrication visits, including remakes, were significantly fewer with printing, but total fabrication chairside time, adjustment visits and adjustment time did not differ significantly. Original Fig. 4 shows fewer predelivery visits, whereas the printed time bars in Fig. 5 do not fall correspondingly. Error bars are standard deviations in both figures; exact numerical means should not be invented from bar heights. [Original visit and time figures](ref:R01)\n\nQuality tradeoffs were also measured. GEE-estimated general satisfaction was 78.83 (standard error 6.41) conventionally and 61.10 (standard error 5.75) with printing, p=0.016. Phonetics, cleaning, stability and comfort also favoured conventional dentures. Ultimately, 12 chose conventional and 3 printed dentures. A formal adequate washout period was not implemented, and clinicians and patients could not be fully blinded. These results show that consolidating visits in this particular protocol did not automatically improve time or experience; they do not reject every printing system. [Patient assessment and study conditions](ref:R01)",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "hybrid_milling",
+          "title": "Milling that retains conventional clinical records mainly changes the laboratory stage",
+          "markdown": "Zupancic Cepic et al. conducted a randomized crossover comparison in 10 patients, mean age 53.6 years, excluding severely atrophic ridges. Patients used their old dentures for a 1-week washout and each new set was followed for 2 weeks. The digital group was milled, not printed: mounted master casts were scanned, Ceramill software was used for design, and Motion 2 processed VITA VIONIC bases and adapted teeth before adhesive assembly. The conventional wax tooth arrangement was also scanned as a digital-design reference. Considerable conventional acquisition and arrangement information was therefore retained. [Crossover methods](ref:R02)\n\nBoth groups planned 5 clinical visits for primary impressions, definitive impressions, jaw records, try-in and delivery. Corrections to the occlusal plane, midline, incisal position, lip support or tooth axes led to additional try-ins. Actual visit counts were 5.3±0.5 digitally and 5.9±1.0 conventionally; postdelivery adjustment counts were 0.4±1.3 and 0.3±0.7. The paper provides no complete stopwatch-based chairside and technician totals in minutes, so these visit counts cannot be converted into a percentage time saving. [Actual visits and corrections](ref:R02)\n\nSato quality scores were 73.2±12.3 and 67.4±11.8, p=0.160. The digital group more often received the best upper-stability grade, but only 20% had a perfect finish versus 80% conventionally. These secondary comparisons were exploratory and do not supersede the nonsignificant primary score. Original images show additional posterior palatal sealing and torus relief in conventional bases without identical processing digitally. The final objects therefore differ by more than the machine. The supported finding is that introducing digital laboratory manufacture still leaves clinical try-in and surface-finishing steps. [Quality and component differences](ref:R02)",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "three_visit_protocol",
+          "title": "A 3-visit printing protocol saves different proportions of clinical and laboratory time",
+          "markdown": "Ribeiro et al. enrolled 23 edentulous patients, mean age 65.96±8.74 years, each receiving a conventional 5-visit and a digital 3-visit protocol. The original abstract specifies recording clinical and laboratory time for impressions, jaw relations, try-in, insertion and processing, covering multiple workflow stages. The paper appeared online in August 2026, before this report’s evidence cutoff, despite a December issue assignment. [Original clinical study](ref:R03)\n\n|Time, minutes|Conventional|Printed digital|\n|---|---|---|\n|Clinical|179.68|90.50|\n|Laboratory|562.98|150.85|\n\nBoth comparisons had p<0.001. Calculated from the reported values, clinical time decreased by 89.18 minutes, approximately 49.6%, and laboratory time by 412.13 minutes, approximately 73.2%. These differences and proportions are calculations for this report, not separately measured outcomes. They differ from the Ohara findings. Relevant distinctions include protocol organization, material system, patient population and the need for additional records or remakes; a shared label of printing does not imply identical savings. [Time results](ref:R03), [other crossover trial](ref:R01)\n\nThe economic analysis took a provider perspective, combining purchase prices with recorded time and clinician/technician fee schedules. Patient satisfaction and oral-health-related quality of life did not differ significantly. The verifiable abstract does not detail all currency, depreciation and step-level data. Only explicit time results and the analytic perspective are used here: monetary amounts are not presented as universal denture prices, and nonsignificant outcomes are not recast as a prespecified equivalence finding. [Costs and effectiveness definitions](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "existing_denture_selection",
+          "title": "Whether an existing denture can be reused is a condition for shortening treatment",
+          "markdown": "Casucci et al.'s retrospective study included 60 patients and 120 upper/lower dentures: 30 patients received conventional treatment and 30 digital treatment, with 15 patients each in the milled and printed subgroups. Crucially, conventional versus digital allocation was not globally randomized. Patients whose existing dentures could act as custom trays for closed-mouth impressions entered the digital group; manufacturing was allocated only within that group. Existing dentures were assessed for vertical dimension, centric relation, aesthetics and phonetics, adjusted or relined if needed, and scanned with TRIOS 3 across intaglio, cameo and occlusal surfaces. Savings therefore included reuse of established clinical information, not only printer speed. [Selection and record reuse](ref:R04)\n\nAfter validation of printed prototypes, definitive dentures were milled with PM7 or printed through an Asiga workflow using V-Print Dentbase and V-Print DT at 45°. Table 2 reports chairside totals of 218.00±20.75 minutes conventionally and 154.31±13.19 digitally, p<0.0001. Postdelivery follow-up time was 26.94±12.13 versus 28.13±15.37 minutes, p=0.587, and visit counts 1.70±0.47 versus 1.77±0.43, p=0.694. Thus, quicker predelivery treatment was not accompanied by a demonstrated reduction in adjustment burden. [Fabrication and follow-up metrics](ref:R04)\n\nThe original tables contain a discrepancy that must be handled separately. Table 4 gives milled and printed chairside times of 108.33±18.67 and 111.80±20.54 minutes. With equal subgroup sizes, their means cannot aggregate to the 154.31 minutes in Table 2. The original values are retained with this incompatibility, without recomputing overall savings from subgroups. Laboratory costs of €435.16±143.90 for milling and €322.42±131.02 for printing (p=0.0496) describe this institution’s material, labour and overhead accounting. OHIP text and tables also disagree, so this paper is not used to establish worse or equivalent satisfaction digitally. [Original Tables 2–4 and textual discrepancies](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "outsourcing_and_postprocessing",
+          "title": "Outsourced work and support parameters must be interpreted within the complete production chain",
+          "markdown": "Ali et al. prospectively timed 50 cobalt–chromium removable partial denture frameworks in a hospital laboratory, with 25 each made by casting or through an outsourced laser workflow. The same technician timed production; allocation depended on production timing and technician availability and was not randomized. In-house work averaged 273.3±107.9 minutes for casting and 154.4±37.9 digitally, a difference of 118.9 minutes, 95% CI 72.9–164.9, p<0.001. The digital clock explicitly excluded outsourced build-file preparation, laser processing, support removal, packaging and transport. Clinical steps were unchanged. The result therefore demonstrates reduced local technician workload, not receipt of the framework by the patient 118.9 minutes earlier. Of 25 digital frameworks, 3 still required modification before successful fitting. [Measured laboratory work and exclusions](ref:R05)\n\nSupport design can reduce machine-side resources, but at another evidence level. Namano et al. fixed Form 3/Clear Resin printing at 45° and 50 µm layers, comparing no support reduction, palatal reduction, border reduction and both, with 20 specimens per group. Washing lasted 15 minutes and postcuring 30 minutes at 40 °C. Combined reduction lowered software-predicted resin from 37.03 to 31.13 mL and support contacts from 166 to 113. Median trueness error changed from 61.0 to 64.9 µm, with p=0.376 across groups. The time table’s decimal-hour notation and the prose minute difference are not fully clear, so they are not converted to an exact percentage. [Support parameters and calculation boundaries](ref:R06)\n\nThese savings occur at different stages. Outsourcing moves manufacture beyond the timing boundary; support reduction changes slicing predictions. Washing, postcuring, tooth bonding, polishing and try-in still require separate recording. For a defined case type, a complete comparison retains reusable impression and jaw records, active personnel time, machine occupancy and adjustment events. Minutes from different stages cannot simply be summed as elapsed calendar time experienced by the patient. [Actual outsourced workflow](ref:R05), [support and postprocessing experiment](ref:R06)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Ohara et al.; Japan Prosthodontic Society: Visits for fabrication and postdelivery adjustment.",
+          "interpretation": "The horizontal categories are delivery and adjustment; the vertical axis counts visits. Grey CD denotes conventional and white DD printed dentures, with standard-deviation bars. Significance is marked only between the predelivery bars; adjustment does not show the same reduction. Counts include remakes, so the white bar is not a fixed realization of a theoretical 3-visit protocol. It cannot establish fewer chairside minutes by itself and requires the following time plot. [Visit endpoint](ref:R01)"
+        },
+        "F02": {
+          "caption": "Ohara et al.; Japan Prosthodontic Society: Total clinical time for fabrication and adjustment.",
+          "interpretation": "The vertical unit is seconds, not minutes. Grey conventional and white printed means and standard deviations are shown separately for fabrication and adjustment. The printed bars do not shorten with the reduction in visits, and the paper reports no significant between-group time differences in either stage. Wide error bars show substantial variation between patients: combining a record-taking visit does not eliminate the work within it. The plot does not include complete laboratory production or transport time. [Timing method](ref:R01)"
+        },
+        "F03": {
+          "caption": "Zupancic Cepic et al.: Milled digital and conventional dentures for the same patient.",
+          "interpretation": "Digital is on the left and conventional on the right; the upper row shows intaglio surfaces and the lower row the polished/occlusal aspects. The conventional intaglio surface reflects additional posterior palatal sealing and torus relief, confirmed in the methods as absent in the corresponding conventional form digitally. This is not a time plot; it shows that the final objects being compared are not identical. Omitting such steps requires simultaneous assessment of quality and adjustment rather than attributing efficiency solely to a manufacturing label. [Final components and methods](ref:R02)"
+        },
+        "F04": {
+          "caption": "Zupancic Cepic et al.: Four digital-design stages beginning with mounted casts.",
+          "interpretation": "A shows casts in the virtual articulator, B tooth arrangement based on model analysis, C base design and D the complete preview before processing. A establishes that conventional jaw records already exist at the scanning entry point; impression and mounting steps have not simply disappeared. Reference lines and tooth positions in B still require clinical try-in. Bonding, interdental filling, polymerization and polishing are absent from the image but present in the methods. Completing the design screen therefore does not complete denture delivery. [Design and assembly methods](ref:R02)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie beeinflussen Herstellungsabläufe die Effizienz der Prothesenanfertigung?",
+      "direction": "Prothesengenauigkeit und Patientenerfahrung",
+      "sections": [
+        {
+          "id": "time_denominators",
+          "title": "Termine, Behandlungszeit und Laborarbeitszeit sind unterschiedliche Ergebnisse",
+          "markdown": "Digitale Abläufe können Abformung, Kieferrelationsbestimmung und Konstruktion bündeln und Handarbeit teilweise durch Maschinen ersetzen. Studien setzen jedoch unterschiedliche Zeitgrenzen. Ein entfallener Termin erspart vor allem Anfahrt und Organisation, nicht zwangsläufig die entsprechende Gesamtzeit im Behandlungsstuhl. Weniger Technikerarbeit bedeutet ebenso wenig, dass Druck, Transport und Wartezeiten früher enden. Zur klinischen Effizienz gehören auch Änderungen bei der Einprobe und Anpassungen nach Eingliederung, nicht nur die erste Fertigung. [Klinische Zeitmessung](ref:R01), [Laborgrenzen](ref:R05)\n\n|Messgröße|Definition in der Originalstudie|Mögliche Fehlinterpretation|\n|---|---|---|\n|Herstellungstermine|Schließt durch Neuanfertigungen verursachte Termine ein|Ein theoretisches 3-Termine-Protokoll als exakt 3 Termine für jeden Patienten behandeln|\n|Gesamte Behandlungszeit|Summierte Zeit vom Hinsetzen bis zum Aufstehen nach Behandlung|Gleiche prozentuale Zeitersparnis durch Bündelung in einem Termin annehmen|\n|Interne Technikerarbeitszeit|Lokal ausgeführte Schritte; externe Fertigung getrennt erfasst|Verlagerte Arbeit als Wegfall in der gesamten Kette behandeln|\n|Softwareprognose der Druckzeit|Aus Stützen, Schichten und Anordnung berechnet|Als gemessene Lieferzeit einschließlich Reinigung, Polymerisation, Stützentfernung und Montage auslegen|\n\nDie folgenden Studien erfassen diese verschiedenen Ebenen. Das erklärt, weshalb einige digitale Protokolle die Zeit deutlich reduzieren, andere hingegen nur die Terminzahl. [Zeitmessungsumfang](ref:R01), [Umfang der Auslagerung](ref:R05), [Softwareberechnung](ref:R06)",
+          "figure_ids": []
+        },
+        {
+          "id": "visits_without_time_gain",
+          "title": "Randomisierter Crossover-Versuch: weniger Termine bedeuten nicht automatisch weniger Behandlungszeit",
+          "markdown": "Ohara et al. screenten 23 Personen und nahmen 20 zahnlose Patienten im Alter von 66–90 Jahren mit Ober- und Unterkieferversorgung auf. Die Reihenfolge konventioneller und gedruckter Behandlung wurde randomisiert; 5 schieden aus, 15 nahmen an der abschließenden Präferenzentscheidung teil. Das digitale Protokoll verwendete keine direkten Intraoralscans. DENTCA-Löffel ermöglichten Randgestaltung, definitive Abformung und Kieferrelationsbestimmung am selben Tag; danach wurden Einproben sowie Basis und Zähne getrennt gedruckt. Verwendet wurden ZENiTH U und dima-Materialien, grundsätzlich mit 3 geplanten Terminen. Konventionell blieben Vorabformung, individueller Löffel, definitive Abformung, Kieferrelation, Wachseinprobe und Eingliederung erhalten. [Versuch und Ablauf](ref:R01)\n\nEine Stoppuhr erfasste die Zeit vom Hinsetzen bis zum Aufstehen. Herstellung und Anpassung wurden getrennt aufgezeichnet; Stabilisierung bedeutete schmerzfreies Essen. Einschließlich Neuanfertigungen benötigte der Druck signifikant weniger Herstellungstermine. Gesamte Herstellungsbehandlungszeit, Anpassungstermine und Anpassungszeit unterschieden sich jedoch nicht signifikant. Original-Fig. 4 zeigt weniger Termine vor Eingliederung, während die Druckzeitbalken in Fig. 5 nicht entsprechend sinken. Beide Abbildungen zeigen Standardabweichungen; exakte Mittelwerte dürfen nicht aus Balkenhöhen erfunden werden. [Originalabbildungen zu Terminen und Zeit](ref:R01)\n\nAuch Qualitätsunterschiede wurden gemessen: Die GEE-Schätzung der Gesamtzufriedenheit betrug konventionell 78.83 (Standardfehler 6.41), gedruckt 61.10 (Standardfehler 5.75), p=0.016. Phonetik, Reinigung, Stabilität und Komfort fielen ebenfalls zugunsten konventioneller Prothesen aus. Abschließend wählten 12 konventionelle und 3 gedruckte Prothesen. Eine formale ausreichende Auswaschphase fehlte; Behandler und Patienten konnten nicht vollständig verblindet werden. Die Terminbündelung dieses konkreten Protokolls verbesserte somit Zeit oder Erfahrung nicht automatisch; daraus folgt keine Ablehnung sämtlicher Drucksysteme. [Patientenbewertung und Studienbedingungen](ref:R01)",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "hybrid_milling",
+          "title": "Fräsen bei konventioneller klinischer Datenerfassung verändert vor allem die Laborphase",
+          "markdown": "Zupancic Cepic et al. verglichen randomisiert im Crossover-Design 10 Patienten mit einem mittleren Alter von 53.6 Jahren; stark atrophierte Kieferkämme waren ausgeschlossen. Zwischen den neuen Prothesen wurden alte Prothesen als 1-wöchige Auswaschphase getragen; jede neue Versorgung wurde 2 Wochen nachuntersucht. Die digitale Gruppe wurde gefräst, nicht gedruckt: Einartikulierte Meistermodelle wurden gescannt, in Ceramill konstruiert und VITA-VIONIC-Basen und angepasste Zähne mit Motion 2 gefertigt und verklebt. Auch die konventionelle Wachsaufstellung wurde als Referenz gescannt. Konventionelle Erfassungs- und Aufstellinformationen blieben daher weitgehend erhalten. [Crossover-Methoden](ref:R02)\n\nBeide Gruppen planten 5 Termine für Vorabformung, definitive Abformung, Kieferrelation, Einprobe und Eingliederung. Korrekturen von Okklusionsebene, Mittellinie, Schneidekanten, Lippenstützung oder Zahnachsen führten zu zusätzlichen Einproben. Tatsächlich waren es digital 5.3±0.5 und konventionell 5.9±1.0 Termine; nach Eingliederung 0.4±1.3 beziehungsweise 0.3±0.7 Anpassungstermine. Die Arbeit liefert keine vollständigen stoppuhrbasierten Gesamtminuten für Behandler und Techniker. Die Terminzahl lässt sich deshalb nicht in eine prozentuale Zeitersparnis umrechnen. [Tatsächliche Termine und Korrekturen](ref:R02)\n\nDie Sato-Qualitätswerte betrugen 73.2±12.3 und 67.4±11.8, p=0.160. Digital wurde häufiger die beste Oberkieferstabilität erreicht, aber nur 20% hatten eine perfekte Politur gegenüber 80% konventionell. Diese sekundären Vergleiche waren explorativ und ersetzen nicht den nichtsignifikanten primären Score. Originalbilder zeigen eine zusätzliche dorsale Abdichtung und Torusentlastung der konventionellen Basis ohne identische digitale Bearbeitung. Die Endprodukte unterscheiden sich daher durch mehr als die Maschine. Belegt bleibt, dass digitale Laborfertigung klinische Einprobe und Oberflächenbearbeitung nicht beseitigt. [Qualität und Bauteilunterschiede](ref:R02)",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "three_visit_protocol",
+          "title": "Ein Druckprotokoll mit 3 Terminen spart klinisch und im Labor unterschiedlich viel Zeit",
+          "markdown": "Ribeiro et al. untersuchten 23 zahnlose Patienten mit einem mittleren Alter von 65.96±8.74 Jahren. Jeder erhielt ein konventionelles Protokoll mit 5 und ein digitales mit 3 Terminen. Das Originalabstract nennt die Erfassung klinischer und labortechnischer Zeiten für Abformung, Kieferrelation, Einprobe, Eingliederung und Verarbeitung und umfasst damit mehrere Schritte. Trotz Zuordnung zu einer Dezemberausgabe erschien die Arbeit bereits im August 2026 online und damit vor dem Evidenzstichtag dieses Berichts. [Originalstudie](ref:R03)\n\n|Zeit, Minuten|Konventionell|Digital gedruckt|\n|---|---|---|\n|Klinisch|179.68|90.50|\n|Labor|562.98|150.85|\n\nBeide Vergleiche ergaben p<0.001. Aus den berichteten Werten errechnet sich eine klinische Reduktion um 89.18 Minuten beziehungsweise etwa 49.6% und im Labor um 412.13 Minuten beziehungsweise etwa 73.2%. Diese Differenzen und Anteile wurden für diesen Bericht berechnet und nicht als zusätzliche Endpunkte gemessen. Sie unterscheiden sich von Ohara. Relevante Unterschiede umfassen Organisation, Materialsystem, Patientengruppe und zusätzliche Aufzeichnungen oder Neuanfertigungen. Die gemeinsame Bezeichnung Druck erlaubt keine Erwartung identischer Einsparungen. [Zeitergebnisse](ref:R03), [anderer Crossover-Versuch](ref:R01)\n\nDie ökonomische Analyse kombinierte aus Leistungserbringerperspektive Einkaufspreise mit erfassten Zeiten und Vergütungstabellen für Behandler und Techniker. Zufriedenheit und mundgesundheitsbezogene Lebensqualität unterschieden sich nicht signifikant. Das überprüfbare Abstract enthält nicht sämtliche Angaben zu Währung, Abschreibung und Einzelschrittdaten. Verwendet werden deshalb die eindeutigen Zeitergebnisse und die Analyseperspektive. Geldwerte werden nicht als allgemeine Prothesenpreise dargestellt; fehlende Signifikanz wird nicht als vorab definierter Äquivalenznachweis ausgelegt. [Kosten- und Effektdefinitionen](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "existing_denture_selection",
+          "title": "Die Wiederverwendbarkeit vorhandener Prothesen ist eine Voraussetzung des verkürzten Ablaufs",
+          "markdown": "Casucci et al. erfassten retrospektiv 60 Patienten mit 120 Ober- und Unterkieferprothesen: 30 wurden konventionell und 30 digital versorgt; digital entfielen je 15 Patienten auf Fräsen und Drucken. Die konventionelle gegenüber der digitalen Behandlung wurde jedoch nicht insgesamt randomisiert. Patienten, deren alte Prothese als individueller Löffel für eine geschlossene Abformung geeignet war, kamen in die digitale Gruppe; erst dort wurde das Herstellungsverfahren zugeteilt. Die alte Prothese wurde hinsichtlich Vertikaldimension, Zentrik, Ästhetik und Phonetik beurteilt, gegebenenfalls korrigiert oder unterfüttert und mit TRIOS 3 an Innen-, Außen- und Okklusionsflächen gescannt. Die Einsparung umfasst somit die Wiederverwendung klinischer Informationen, nicht nur die Druckgeschwindigkeit. [Auswahl und Informationswiederverwendung](ref:R04)\n\nNach Prüfung gedruckter Prototypen wurden die definitiven Prothesen mit PM7 gefräst oder in einem Asiga-Ablauf aus V-Print Dentbase und V-Print DT bei 45° gedruckt. Tabelle 2 nennt gesamte Behandlungszeiten von konventionell 218.00±20.75 und digital 154.31±13.19 Minuten, p<0.0001. Nach Eingliederung betrugen die Kontrollzeiten 26.94±12.13 gegenüber 28.13±15.37 Minuten, p=0.587, und die Terminanzahlen 1.70±0.47 gegenüber 1.77±0.43, p=0.694. Der kürzeren Behandlung bis zur Eingliederung stand damit keine nachgewiesene Verringerung des Anpassungsaufwands gegenüber. [Herstellungs- und Kontrollgrößen](ref:R04)\n\nDie Originaltabellen enthalten einen getrennt zu behandelnden Widerspruch: Tabelle 4 nennt für Fräsen und Drucken 108.33±18.67 und 111.80±20.54 Behandlungsminuten. Bei gleich großen Untergruppen können diese Mittelwerte nicht den Gesamtwert 154.31 aus Tabelle 2 ergeben. Die Originalwerte bleiben mit diesem Hinweis erhalten; aus den Untergruppen wird keine Gesamtersparnis neu berechnet. Laborkosten von €435.16±143.90 beim Fräsen und €322.42±131.02 beim Drucken (p=0.0496) beschreiben die institutionelle Material-, Arbeits- und Gemeinkostenrechnung. Auch OHIP-Text und -Tabelle widersprechen sich; die Arbeit belegt hier daher weder schlechtere noch äquivalente digitale Zufriedenheit. [Originaltabellen 2–4 und Textabweichungen](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "outsourcing_and_postprocessing",
+          "title": "Externe Arbeit und Stützparameter im gesamten Herstellungsablauf betrachten",
+          "markdown": "Ali et al. erfassten prospektiv 50 Kobalt-Chrom-Teilprothesengerüste in einem Krankenhauslabor, je 25 gegossen oder mit externer Laserfertigung hergestellt. Derselbe Techniker maß die Zeiten; die nicht randomisierte Zuordnung hing von Herstellungszeitpunkt und Technikerverfügbarkeit ab. Interne Arbeit dauerte beim Guss 273.3±107.9 und digital 154.4±37.9 Minuten; Differenz 118.9 Minuten, 95% CI 72.9–164.9, p<0.001. Ausgenommen waren ausdrücklich externe Baujob-Erstellung, Laserprozess, Stützentfernung, Verpackung und Transport. Die klinischen Schritte blieben gleich. Belegt wird somit weniger interne Technikerbelastung, nicht eine um 118.9 Minuten frühere Übergabe an den Patienten. Von 25 digitalen Gerüsten benötigten 3 noch Änderungen vor erfolgreicher Eingliederung. [Laborzeit und ausgeschlossene Schritte](ref:R05)\n\nStützgestaltung kann maschinenseitige Ressourcen reduzieren, liegt aber auf einer anderen Evidenzebene. Namano et al. hielten Form 3/Clear Resin, 45° und 50 µm Schichtdicke konstant und verglichen ohne Reduktion, palatinale, randseitige und kombinierte Reduktion mit je 20 Exemplaren. Gereinigt wurde 15 Minuten, nachpolymerisiert 30 Minuten bei 40 °C. Die kombinierte Reduktion senkte die softwareprognostizierte Harzmenge von 37.03 auf 31.13 mL und Stützkontakte von 166 auf 113. Der mediane Richtigkeitsfehler änderte sich von 61.0 auf 64.9 µm; der Gruppenvergleich ergab p=0.376. Dezimalstunden in der Zeittabelle und die Minutendifferenz im Text sind nicht vollständig eindeutig, weshalb keine exakte Prozentangabe daraus berechnet wird. [Stützparameter und Berechnungsgrenzen](ref:R06)\n\nDiese Einsparungen entstehen an unterschiedlichen Stellen: Externe Fertigung verlässt die Zeitmessungsgrenze; Stützreduktion verändert Slicerprognosen. Reinigung, Nachpolymerisation, Zahnverklebung, Politur und Einprobe müssen weiterhin getrennt erfasst werden. Für einen definierten Falltyp gehören wiederverwendbare Abformungs- und Kieferrelationsdaten, aktive Personalzeit, Maschinenbelegung und Anpassungsereignisse in den vollständigen Vergleich. Minuten verschiedener Phasen ergeben nicht durch einfaches Addieren die vom Patienten erlebte Kalenderdauer. [Tatsächlicher externer Ablauf](ref:R05), [Stütz- und Nachbearbeitungsversuch](ref:R06)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Ohara et al.; Japan Prosthodontic Society: Termine für Herstellung und Anpassung nach Eingliederung.",
+          "interpretation": "Horizontal stehen delivery und adjustment, vertikal die Terminanzahl. Grau CD bezeichnet konventionelle, Weiß DD gedruckte Prothesen; Fehlerbalken sind Standardabweichungen. Nur vor Eingliederung ist ein signifikanter Unterschied markiert; bei Anpassungen zeigt sich keine entsprechende Verringerung. Neuanfertigungen sind mitgezählt: Der weiße Balken ist keine feste Umsetzung theoretischer 3 Termine. Weniger Behandlungsminuten werden dadurch allein nicht belegt; dazu gehört die folgende Zeitabbildung. [Terminendpunkt](ref:R01)"
+        },
+        "F02": {
+          "caption": "Ohara et al.; Japan Prosthodontic Society: Gesamte klinische Zeit für Herstellung und Anpassung.",
+          "interpretation": "Die vertikale Einheit ist Sekunden, nicht Minuten. Graue konventionelle und weiße gedruckte Mittelwerte mit Standardabweichungen sind für Herstellung und Anpassung getrennt gezeigt. Die Druckbalken sinken nicht entsprechend der Terminzahl; auch der Text berichtet in beiden Phasen keinen signifikanten Zeitunterschied. Breite Fehlerbalken zeigen deutliche Patientenunterschiede. Die Bündelung einer Registrierung beseitigt nicht deren Arbeitszeit. Vollständige Laborfertigung und Transport sind nicht enthalten. [Zeitmessungsmethode](ref:R01)"
+        },
+        "F03": {
+          "caption": "Zupancic Cepic et al.: Gefräste digitale und konventionelle Prothese desselben Patienten.",
+          "interpretation": "Links digital, rechts konventionell; oben sind Innenflächen, unten polierte beziehungsweise okklusale Ansichten dargestellt. Die konventionelle Innenfläche zeigt zusätzliche dorsale Abdichtung und Torusentlastung; laut Methoden fehlt digital die entsprechende traditionelle Bearbeitung. Dies ist keine Zeitgrafik, sondern belegt Unterschiede der verglichenen Endprodukte. Entfallen solche Schritte, müssen Qualität und Anpassungen zugleich bewertet werden; die Fertigungsbezeichnung allein erklärt die Effizienz nicht. [Endprodukte und Methoden](ref:R02)"
+        },
+        "F04": {
+          "caption": "Zupancic Cepic et al.: Vier digitale Konstruktionsphasen ausgehend von einartikulierten Modellen.",
+          "interpretation": "A zeigt Modelle im virtuellen Artikulator, B die modellanalytische Zahnaufstellung, C die Basiskonstruktion und D die vollständige Vorschau vor Fertigung. A verdeutlicht vorhandene konventionelle Kieferrelationsdaten am Scan-Einstieg; Abformung und Einartikulieren entfallen nicht einfach. Bezugslinien und Zahnpositionen in B benötigen weiterhin klinische Einprobe. Verklebung, Interdentalfüllung, Polymerisation und Politur fehlen im Bild, gehören aber zur Methode. Eine abgeschlossene Bildschirmkonstruktion ist daher keine abgeschlossene Protheseneingliederung. [Konstruktions- und Montagemethoden](ref:R02)"
+        }
+      }
+    }
+  }
+}

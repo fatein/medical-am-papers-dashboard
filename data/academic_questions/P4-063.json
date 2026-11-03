@@ -1,0 +1,307 @@
+{
+  "schema_version": 2,
+  "question_id": "P4-063",
+  "p": "P4",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_0256b1758b8e9286d344",
+    "doc_256e17e84e8f79788353",
+    "doc_2f1ee716a38a9192c788",
+    "doc_311af9ec4d361b372304",
+    "doc_324316273183527bc539",
+    "doc_5a54faf77f98e707347a",
+    "doc_a8364cff4e6581f35b78",
+    "doc_ae9344b5a6ccabd602d0",
+    "doc_c440c957e39972ee882c",
+    "doc_de9031271244ad85fd48",
+    "doc_e71b5d7e320a063b179a",
+    "doc_ea758ae0499fae82185a",
+    "doc_ed564ee84e2655d51e81",
+    "doc_faf72130dd937ea79737",
+    "doc_sd_9cbe0e99215e4e7ed430",
+    "KB2026982661036BEF"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Patient-specific 3D-printed surgical guides for pedicle screw insertion: comparison of different guide design approaches",
+      "publisher": "Journal of 3D Printing in Medicine",
+      "year": 2021,
+      "url": "https://discovery.ucl.ac.uk/id/eprint/10130778/",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Accuracy and cost comparison of 3D-printed guides in complex spinal deformity correction: direct vs indirect design",
+      "publisher": "Frontiers in Bioengineering and Biotechnology",
+      "year": 2025,
+      "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2025.1611998/full",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Accuracy of Patient-Specific 3D-Printed Drill Guides for Pedicle and Lateral Mass Screw Insertion: An Analysis of 76 Cervical and Thoracic Screw Trajectories",
+      "publisher": "Spine",
+      "year": 2021,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7787187/",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Assessing the Accuracy and Safety Thresholds of Patient-Specific Screw Guide Template System in Cervical and Thoracic Spine Surgeries Using DAST Measurements",
+      "publisher": "Spine Surgery and Related Research",
+      "year": 2024,
+      "url": "https://doi.org/10.22603/ssrr.2023-0154",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 2",
+      "source_url": "https://discovery.ucl.ac.uk/10130778/1/3D%20printing%20spinal%20surgery_Aida%202021.pdf#page=5",
+      "image_url": "https://discovery.ucl.ac.uk/10130778/1/3D%20printing%20spinal%20surgery_Aida%202021.pdf",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P4-063/F01.png"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R02",
+      "original_label": "Fig. 4",
+      "source_url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2025.1611998/full#F4",
+      "image_url": "https://www.frontiersin.org/files/Articles/1611998/xml-images/fbioe-13-1611998-g004.webp",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P4-063/F02.webp"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Fig. 5",
+      "source_url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2025.1611998/full#F5",
+      "image_url": "https://www.frontiersin.org/files/Articles/1611998/xml-images/fbioe-13-1611998-g005.webp",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P4-063/F03.webp"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R04",
+      "original_label": "Fig. 5",
+      "source_url": "https://www.jstage.jst.go.jp/article/ssrr/8/3/8_2023-0154/_pdf#page=5",
+      "image_url": "https://www.jstage.jst.go.jp/article/ssrr/8/3/8_2023-0154/_pdf",
+      "license": "CC BY-NC-ND 4.0",
+      "asset_path": "assets/academic_figures/P4-063/F04.jpg"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R04",
+      "original_label": "Fig. 7",
+      "source_url": "https://www.jstage.jst.go.jp/article/ssrr/8/3/8_2023-0154/_pdf#page=7",
+      "image_url": "https://www.jstage.jst.go.jp/article/ssrr/8/3/8_2023-0154/_pdf",
+      "license": "CC BY-NC-ND 4.0",
+      "asset_path": "assets/academic_figures/P4-063/F05.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "钻孔与螺钉导板如何提高定位稳定性？",
+      "direction": "导板精度",
+      "sections": [
+        {
+          "id": "contact_geometry",
+          "title": "接触面积与接触位置：导板更稳，是否就能把螺钉放得更准？",
+          "markdown": "钻孔导板通过骨面接触确定自身位置，再由孔道或金属套筒约束钻头。稳定性包含抵抗平移、抵抗旋转以及在钻削载荷下维持贴合；最终螺钉精度还受到初始孔、扩孔和拧入过程影响。Ribera-Navarro 等直接改变导板与椎骨的接触方式，比较全接触、中接触、低接触与徒手操作，为拆解这个问题提供了实验依据。[设计与实验方法](ref:R01)\n\n全接触设计复制椎骨后方的负形面；中接触设计在关节突、棘突等选定部位使用小面积支撑；低接触设计进一步改为离散的尖点支撑。第一阶段以同一患者的 L2 椎骨制作重复打印模型，由 3 名术者分别使用每种方法放置 10 枚螺钉，因此每组 30 枚、总计 120 枚。该设计便于比较重复性，但这些螺钉并不代表 120 种不同患者解剖。\n\n| 打印骨模型上的操作方式 | Gertzbein–Robbins A/B 级 | C–E 级 |\n|---|---:|---:|\n| 徒手 | 25/30（83.3%） | 5/30 |\n| 全接触 | 28/30（93.3%） | 2/30 |\n| 中接触 | 30/30（100%） | 0/30 |\n| 低接触 | 27/30（90%） | 3/30 |\n\n导板组总体更接近规划方向，但不同导板设计之间的角度比较没有显著差异。中接触的分级结果最好，并不等于已确定其为所有情况下的最优设计。术者对全接触导板的评价是较稳、但贴合和取下困难；低接触更便于观察入口，却需要更多时间确认定位。实验把接触几何、可见性和放置操作之间的取舍具体表现出来。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "soft_tissue_transfer",
+          "title": "加入软组织后，中接触与低接触的排序发生改变",
+          "markdown": "同一研究进一步在猪尸体标本上比较中接触、低接触和徒手方法。中接触导板达到 A/B 级的螺钉为 6/12（50%），低接触为 10/12（83.3%）。打印骨模型上中接触的优势没有直接延续；所有术者合并后的角度分析也没有显示组间显著差异。[尸体实验与原文图 4](ref:R01)\n\n从模型到尸体，不仅增加了软组织，还改变了物种解剖、参与术者和器械衔接方式。第一阶段分别使用探针导板与螺丝刀导板；第二阶段改为在螺丝刀导板内加入可拆卸钻套，保持初始钻孔与拧入轴线同心。探针／钻头接口的设计公差为 0.24 mm，螺丝刀接口为 0.20 mm。因此，排序变化不能只归因于接触面积这一项。\n\n术者指出，棘突附近韧带、关节突软骨以及残余软组织会影响负形面的实际就位；椎板则通常已在后路手术中暴露。扩大接触区域能够增加约束，也会增加需要准确暴露和清理的区域。低接触支撑减小软组织干扰并扩大可见空间，但可能降低抗摇动能力。这组实验呈现的是“在哪些部位建立可靠支撑”的问题，而不是单纯追求最大的覆盖面积。",
+          "figure_ids": []
+        },
+        {
+          "id": "guidance_sequence",
+          "title": "先钻孔还是直接导入螺钉：套筒尺寸与引导范围一起变化",
+          "markdown": "Yang 等基于 10 名复杂脊柱畸形患者的 CT 制作打印模型，比较间接与直接置钉导板。间接方案先用细钻建立通道，再置入螺钉；直接方案使用较大的套筒容纳置钉器械。模型与导板均用光固化树脂制造，实验在打印骨模型上完成。[设计参数与模拟操作](ref:R02)\n\n| 结构参数 | 间接方案 | 直接方案 |\n|---|---:|---:|\n| 导向圆筒高度 | 15 mm | 50 mm |\n| 内径 | 3 mm | 13 mm |\n| 壁厚 | 2.5 mm | 2.5 mm |\n| 主要引导对象 | 2.5 mm 钻头 | 置钉器械 |\n\n直接组与间接组各放置 149 枚螺钉。完全位于椎弓根内的 A 级分别为 125 枚与 121 枚；将穿破小于 2 mm 的 B 级计入后，A/B 级为 143/149（95.97%）和 141/149（94.63%），比较 p = 0.784。这里的接近 96% 指 A/B 合并等级，不能写成全部螺钉均无皮质穿破。\n\n直接方案单导板设计时间为 21.99 ± 3.16 min，间接方案为 16.52 ± 2.12 min；单件打印时间为 54.50 ± 6.39 min 与 37.69 ± 3.99 min。单枚置钉时间 4.24 ± 0.54 min 与 4.79 ± 0.66 min 的比较未达到显著水平（p = 0.056）。更长、更宽的套筒扩大了器械引导范围，也增加结构体积与制作时间；本实验没有发现相应的 A/B 级精度增益。内径 13 mm 用于容纳操作器械，不是螺钉骨内部分的直径；原文所述 5.5 mm 系统属于棒系统规格。",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "clinical_transfer",
+          "title": "临床转移：入口、三维角度与完成率需要同时记录",
+          "markdown": "Pijpker 等分析 15 名颈椎或上胸椎固定患者。导板包含椎板接触面、包绕棘突的钩状结构、加强连接及不锈钢钻套；就位后手持或用微型螺钉固定，先钻直径 2 mm 的初始孔，再扩孔、探查骨壁与置钉。钻深由机械止挡控制。术后逐椎体配准 CT，提取螺钉轴线并与规划比较。[临床方法与误差分析](ref:R03)\n\n| 已完成引导的轨迹 | 数量 | 入口偏差，mm | 三维角度偏差，° |\n|---|---:|---:|---:|\n| 椎弓根螺钉 | 14 | 1.73 ± 0.82 | 6.64 ± 3.44 |\n| 侧块螺钉 | 62 | 1.33 ± 0.79 | 6.72 ± 3.85 |\n| 合计 | 76 | 1.40 ± 0.81 | 6.70 ± 3.77 |\n\n侧块与椎弓根入口偏差的组间比较 p = 0.10，没有达到显著水平。全部轨迹的矢状面角度偏差为 5.00 ± 3.44°，高于轴位的 3.75 ± 3.07°（p = 0.02）。因此只报告一个投影平面的角度，会遗漏另一方向的变化。\n\n这 76 条轨迹来自原计划的 92 条：11 条因术中决定减少螺钉数量而取消，4 条因导板设计不能正常使用转为常规操作，1 条因骨质差导致拔出后修订。已完成轨迹均未观察到所评估的骨壁侵犯或神经血管损伤，但这并不等于全部原计划轨迹都成功通过导板实施。结合完成情况，才能辨认设计失效、临床方案调整与最终置钉误差属于哪个环节。",
+          "figure_ids": []
+        },
+        {
+          "id": "bony_corridor",
+          "title": "同样的轴线偏差，在窄骨通道中可能产生不同结果",
+          "markdown": "Kaneyama 与 Sugawara 将“是否复现规划”与“螺钉是否完全位于骨内”分别评价。研究在 51 名患者中尝试置入 428 枚螺钉，完成 425 枚。其分步系统依次用于入口标记、钻孔与攻丝、螺钉导入。3 次未完成尝试中，1 次涉及肌肉牵开不足导致贴合失败，另外 2 次涉及过陡入口和切向轨迹形成斜槽，造成工具偏离。[系统设计与失败经过](ref:R04)\n\n完成的螺钉中，418/425（98.4%）被归为准确置入，402/425（94.6%）完全位于骨内。几何偏差小并不必然意味着完全骨内；还要考虑 DAST，即沿规划轨迹能够利用的最小骨性通道直径。它取轴位、矢状位测量中的较小值，与螺钉直径共同决定剩余空间。\n\n颈椎发生与未发生骨壁穿破的螺钉，其轴线偏差分别为 0.57 ± 0.34 mm 和 0.43 ± 0.45 mm，差异不显著（p = 0.247）；对应 DAST 为 3.62 ± 0.25 mm 和 5.33 ± 1.31 mm（p < 0.001）。胸椎则同时表现出更大的轴线偏差和更小的 DAST：穿破组为 1.54 ± 1.18 mm／4.41 ± 0.85 mm，未穿破组为 0.75 ± 0.54 mm／6.07 ± 1.25 mm。\n\n| 该队列的骨通道分组 | 骨壁穿破数／置钉数 |\n|---|---:|\n| 颈椎 DAST ≥4.0 mm | 1/242 |\n| 颈椎 DAST ≤3.9 mm | 13/46 |\n| 胸椎 DAST ≥5.0 mm | 2/105 |\n| 胸椎 DAST ≤4.9 mm | 7/32 |\n\n这些分组界值来自本队列的 ROC 分析，并与所用 3.5 mm、4.0 mm 螺钉及具体脊柱节段相联系。原图同时展示了“轴线接近规划但穿破骨壁”和“轴线偏离规划却仍在骨内”的病例。它把导板精度、螺钉尺寸与骨通道宽度放在同一个空间问题中，而不以单个准确率替代所有结果。",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Ribera-Navarro et al.：接触方式与器械衔接的两阶段设计（原图 2）",
+          "interpretation": "上部 A 的三列分别是全、中、低接触，黄色骨面上的橙色区域显示由连续负形面到小面、点接触的变化；下方依次是探针与螺丝刀导板。B 只保留中、低接触，并把钻套嵌入同一螺丝刀导向结构。两个阶段既改变了支撑，也改变了器械衔接，所以模型与尸体的结果差异不能全部归于软组织。完整图从作者存档 PDF 提取，保留全部面板和标注。"
+        },
+        "F02": {
+          "caption": "Yang et al.：间接置钉导板的小孔与连接桥（原图 4）",
+          "interpretation": "两侧整体视图显示每个椎体对应的导向方向；中央放大图展示双侧小导孔及连接桥。该结构首先约束细钻建立初始孔，后续螺钉沿已形成的通道进入。图中的细长灰色器械与下面直接方案的宽大圆筒形成对比。此图展示设计几何，95.97% 等分级结果来自另一部分术后模型 CT 评价。"
+        },
+        "F03": {
+          "caption": "Yang et al.：直接置钉导板的大孔和更长圆筒（原图 5）",
+          "interpretation": "中央放大图可见较宽、较长的导向圆筒与加强连接，整体视图中相邻节段的导板也更占空间。设计为容纳置钉器械而扩大通道，并不意味着进入骨内的螺钉直径扩大到导孔直径。两方案比较同时改变孔径、高度和操作顺序；单凭图中的长套筒不能推断它必然获得更低的皮质穿破率。"
+        },
+        "F04": {
+          "caption": "Kaneyama 与 Sugawara：沿规划轨迹测量最小骨通道（原图 5）",
+          "interpretation": "这张 C3 轴位 CT 的两侧 DAST 分别标为 4.9 mm 和 3.7 mm，而两条规划螺钉长度同为 24.2 mm。同样长度并不提供同样的横向余量。DAST 标记位于轨迹穿过的狭窄骨区，是骨性空间的测量，不是螺钉自身直径；完整研究还比较矢状位并取较小值。原图保留，© 2024 The Japanese Society for Spine Surgery and Related Research。"
+        },
+        "F05": {
+          "caption": "Kaneyama 与 Sugawara：复现规划与骨内包含并不等价（原图 7）",
+          "interpretation": "a–c 与 d–f 分别为 C4 的规划与术后影像：右、左螺钉偏差为 0.5 mm 与 0.8 mm，左侧仍出现白色三角标示的骨壁穿破。g–i 与 j–l 展示 T1，右侧偏差 2.9 mm 却仍在骨内，左侧偏差 2.5 mm 并在黑色三角处穿破。阅读时应把同侧规划与术后配对，而不是将四行当作四组患者。原图保留，© 2024 The Japanese Society for Spine Surgery and Related Research。"
+        }
+      }
+    },
+    "en": {
+      "title": "How can drilling and screw guides improve positioning stability?",
+      "direction": "Surgical guide accuracy",
+      "sections": [
+        {
+          "id": "contact_geometry",
+          "title": "Contact area and location: does a more stable guide necessarily place screws more accurately?",
+          "markdown": "A drilling guide locates itself through bone contact and constrains the drill through a channel or metal sleeve. Stability includes resistance to translation and rotation and maintenance of seating under drilling loads. Final screw accuracy also depends on pilot-hole preparation, enlargement and insertion. Ribera-Navarro et al. directly varied contact with the vertebra, comparing full-, medium- and low-contact guides with freehand insertion. [Design and experimental methods](ref:R01)\n\nThe full-contact design reproduced the negative shape of the posterior vertebral surface. Medium contact used smaller supports at selected structures including articular and spinous processes; low contact reduced these further to discrete pointed supports. The first experiment used repeated printed models of one patient’s L2 vertebra. Each of 3 surgeons inserted 10 screws with each technique, giving 30 screws per group and 120 overall. This facilitates repeatability assessment, but does not represent 120 different patient anatomies.\n\n| Technique on printed bone models | Gertzbein–Robbins grades A/B | Grades C–E |\n|---|---:|---:|\n| Freehand | 25/30 (83.3%) | 5/30 |\n| Full contact | 28/30 (93.3%) | 2/30 |\n| Medium contact | 30/30 (100%) | 0/30 |\n| Low contact | 27/30 (90%) | 3/30 |\n\nGuided groups generally followed the planned direction more closely, but angular comparisons among guide designs were not significant. The best grading result for medium contact does not establish it as optimal in every setting. Surgeons described full-contact guides as more stable but difficult to seat and remove. Low contact improved entry-point visibility while requiring more time to verify location. The experiment makes the trade-off between contact geometry, visibility and placement operations concrete.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "soft_tissue_transfer",
+          "title": "With soft tissue present, the ranking of medium and low contact changes",
+          "markdown": "The same study next compared medium contact, low contact and freehand insertion in porcine cadavers. Grades A/B were obtained in 6/12 screws (50%) with medium contact and 10/12 (83.3%) with low contact. The medium-contact advantage on printed bone did not carry over directly; pooled angular analysis across surgeons also found no significant group differences. [Cadaver experiment and original Fig. 4](ref:R01)\n\nMoving from models to cadavers changed more than soft tissue: species anatomy, participating surgeons and instrument transitions also changed. The first stage used separate probe and screwdriver guides. The second placed a removable drill sleeve within the screwdriver guide to keep pilot drilling and insertion concentric. Designed interface tolerances were 0.24 mm for the probe/drill and 0.20 mm for the screwdriver. The ranking change therefore cannot be assigned to contact area alone.\n\nSurgeons identified ligaments around the spinous process, articular cartilage and residual soft tissue as influences on negative-surface seating. The lamina is commonly exposed during posterior surgery. Expanding contact can increase constraint but also enlarges the area requiring accurate exposure and clearance. Low-contact supports reduce tissue interference and improve visibility while potentially reducing resistance to rocking. The experimental question is where to establish reliable support, rather than simply how to maximize coverage.",
+          "figure_ids": []
+        },
+        {
+          "id": "guidance_sequence",
+          "title": "Pilot drilling or direct screw guidance: sleeve dimensions change together with guidance extent",
+          "markdown": "Yang et al. used CT data from 10 patients with complex spinal deformities to print models for comparing indirect and direct guides. The indirect design first created a tract with a fine drill before screw insertion. The direct design used a larger sleeve to accommodate insertion instruments. Models and guides were photopolymer resin, and the experiment was performed on printed bone models. [Design parameters and simulated procedures](ref:R02)\n\n| Structural parameter | Indirect approach | Direct approach |\n|---|---:|---:|\n| Guide-cylinder height | 15 mm | 50 mm |\n| Internal diameter | 3 mm | 13 mm |\n| Wall thickness | 2.5 mm | 2.5 mm |\n| Main guided object | 2.5 mm drill | Screw-insertion instrument |\n\nEach group received 149 screws. Grade A, fully within the pedicle, was achieved by 125 direct and 121 indirect screws. Including grade B breaches below 2 mm gave 143/149 (95.97%) and 141/149 (94.63%) in grades A/B, respectively, with p = 0.784. The approximately 96% rate thus combines A and B; it does not mean every screw was free of cortical breach.\n\nSingle-guide design time was 21.99 ± 3.16 min for direct versus 16.52 ± 2.12 min for indirect guidance; printing took 54.50 ± 6.39 min versus 37.69 ± 3.99 min per guide. Screw-insertion times of 4.24 ± 0.54 min and 4.79 ± 0.66 min did not differ significantly (p = 0.056). Taller, wider sleeves extended instrument guidance and increased bulk and preparation time, without a detected A/B accuracy gain. The 13 mm bore accommodates the operating instrument, not the intraosseous screw diameter; the stated 5.5 mm system specification refers to the rod system.",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "clinical_transfer",
+          "title": "Clinical transfer: entry, spatial angle and completion must be recorded together",
+          "markdown": "Pijpker et al. analysed 15 patients undergoing cervical or upper-thoracic fixation. Guides incorporated laminar contact surfaces, hooks around the spinous process, reinforcing connections and stainless-steel sleeves. They were held manually or secured with microscrews after seating. A 2 mm pilot hole was followed by enlargement, wall probing and screw insertion, with a mechanical stop controlling drilling depth. Postoperative CT was registered vertebra by vertebra, and extracted screw axes were compared with the plan. [Clinical workflow and deviation analysis](ref:R03)\n\n| Completed guided trajectories | Number | Entry deviation, mm | Three-dimensional angular deviation, ° |\n|---|---:|---:|---:|\n| Pedicle screws | 14 | 1.73 ± 0.82 | 6.64 ± 3.44 |\n| Lateral mass screws | 62 | 1.33 ± 0.79 | 6.72 ± 3.85 |\n| Total | 76 | 1.40 ± 0.81 | 6.70 ± 3.77 |\n\nThe entry-point comparison between lateral mass and pedicle screws was not significant (p = 0.10). Across all trajectories, sagittal angular deviation was 5.00 ± 3.44°, exceeding axial deviation of 3.75 ± 3.07° (p = 0.02). Reporting only one projection plane therefore omits changes in another direction.\n\nThese 76 trajectories came from 92 planned trajectories: 11 were omitted after an intraoperative decision to use fewer screws, 4 converted to conventional insertion because the guide design was dysfunctional, and 1 revised after pull-out associated with poor bone quality. Completed trajectories showed none of the assessed wall violations or neurovascular injuries, but not every planned trajectory was successfully implemented through a guide. Completion data distinguish design failure, changes to the clinical plan and final insertion error.",
+          "figure_ids": []
+        },
+        {
+          "id": "bony_corridor",
+          "title": "The same axis deviation can produce different outcomes in a narrow bony corridor",
+          "markdown": "Kaneyama and Sugawara separately evaluated reproduction of the plan and complete containment of the screw within bone. In 51 patients, 428 insertions were attempted and 425 completed. The sequential system marked the entry, guided drilling and tapping, then guided screw insertion. Of the 3 unsuccessful attempts, 1 involved inadequate muscle retraction and seating; the other 2 involved steep entry and tangential trajectories that created a diagonal slit and deflected the instruments. [System design and failure mechanisms](ref:R04)\n\nAmong completed screws, 418/425 (98.4%) were classified as accurate and 402/425 (94.6%) as completely contained. Small geometric deviation does not necessarily imply containment. DAST, the minimum diameter of bone available along the intended screw trajectory, also matters. It is the smaller of axial and sagittal measurements and determines available space together with screw diameter.\n\nCervical screws with and without breach had axis deviations of 0.57 ± 0.34 mm and 0.43 ± 0.45 mm, respectively, without a significant difference (p = 0.247). Their DAST values were 3.62 ± 0.25 mm and 5.33 ± 1.31 mm (p < 0.001). In the thoracic spine, breach was associated with both greater axis deviation and smaller DAST: 1.54 ± 1.18 mm/4.41 ± 0.85 mm versus 0.75 ± 0.54 mm/6.07 ± 1.25 mm for contained screws.\n\n| Bony-corridor subgroup in this cohort | Breaches/inserted screws |\n|---|---:|\n| Cervical DAST ≥4.0 mm | 1/242 |\n| Cervical DAST ≤3.9 mm | 13/46 |\n| Thoracic DAST ≥5.0 mm | 2/105 |\n| Thoracic DAST ≤4.9 mm | 7/32 |\n\nThese thresholds arose from ROC analysis in this cohort and relate to the 3.5 mm and 4.0 mm screws and spinal levels studied. Original images show both an axis close to plan with cortical breach and an axis farther from plan with continued containment. They place guide accuracy, screw dimensions and corridor width in the same spatial analysis rather than substituting a single accuracy rate for all outcomes.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Ribera-Navarro et al.: contact and instrument transitions across two experimental stages (original Fig. 2)",
+          "interpretation": "The three columns in A show full, medium and low contact. Orange regions on yellow bone change from continuous negative surfaces to smaller areas and points; probe and screwdriver guides appear below. B retains medium and low contact and inserts a drill sleeve into the same screwdriver-guiding structure. Both support and instrument transitions changed between stages, so model–cadaver differences cannot all be attributed to soft tissue. The complete figure was extracted from the author-deposited PDF with all panels and labels retained."
+        },
+        "F02": {
+          "caption": "Yang et al.: small bores and connecting bridge in indirect screw guidance (original Fig. 4)",
+          "interpretation": "Whole-spine views show the direction assigned to each vertebra; central enlargements show paired small guide bores and their bridge. The structure first constrains the fine drill to create a pilot tract, which subsequently guides the screw. Slender grey instruments contrast with the wide cylinders of the direct design below. This image describes geometry; grading rates such as 95.97% come from postoperative model CT evaluation elsewhere in the study."
+        },
+        "F03": {
+          "caption": "Yang et al.: larger bores and longer cylinders in direct screw guidance (original Fig. 5)",
+          "interpretation": "Central enlargements show wider, longer cylinders and reinforcing connections; whole-spine views also show greater occupation of space between adjacent levels. The channel accommodates insertion instruments, not an intraosseous screw enlarged to the bore diameter. Bore, height and operative sequence change together between designs. A long sleeve visible in the image does not by itself demonstrate a lower cortical-breach rate."
+        },
+        "F04": {
+          "caption": "Kaneyama and Sugawara: minimum bony corridor along the planned trajectory (original Fig. 5)",
+          "interpretation": "This axial C3 CT labels DAST as 4.9 mm and 3.7 mm on opposite sides, while both planned screw lengths are 24.2 mm. Equal length does not provide equal lateral clearance. DAST is measured at the narrow bony region along the trajectory, not across the screw itself; the full protocol also measures sagittally and takes the smaller value. Original image retained, © 2024 The Japanese Society for Spine Surgery and Related Research."
+        },
+        "F05": {
+          "caption": "Kaneyama and Sugawara: plan reproduction and bony containment are not equivalent (original Fig. 7)",
+          "interpretation": "Panels a–c and d–f show C4 planning and postoperative imaging. Right and left deviations are 0.5 mm and 0.8 mm, yet the left screw breaches the wall at the white triangle. Panels g–i and j–l show T1: the right screw deviates by 2.9 mm but remains contained; the left deviates by 2.5 mm and breaches at the black triangle. Pair planning and postoperative images on the same side rather than treating the four rows as four patient groups. Original image retained, © 2024 The Japanese Society for Spine Surgery and Related Research."
+        }
+      }
+    },
+    "de": {
+      "title": "Wie verbessern Bohr- und Schraubenführungsschablonen die Positionierungsstabilität?",
+      "direction": "Genauigkeit chirurgischer Schablonen",
+      "sections": [
+        {
+          "id": "contact_geometry",
+          "title": "Kontaktfläche und Kontaktlage: führt eine stabilere Schablone zwangsläufig zu genauerer Schraubenplatzierung?",
+          "markdown": "Eine Bohrschablone positioniert sich durch Knochenkontakt und führt den Bohrer über einen Kanal oder eine Metallhülse. Stabilität umfasst Widerstand gegen Translation und Rotation sowie den Erhalt des Sitzes unter Bohrbelastung. Die endgültige Schraubengenauigkeit hängt zusätzlich von Vorbohrung, Erweiterung und Einbringen ab. Ribera-Navarro et al. variierten den Wirbelkontakt gezielt und verglichen Vollkontakt, mittleren Kontakt und geringen Kontakt mit der Freihandtechnik. [Konstruktion und Versuchsmethoden](ref:R01)\n\nDie Vollkontaktkonstruktion bildete die Negativform der hinteren Wirbeloberfläche ab. Mittlerer Kontakt verwendete kleinere Auflagen an ausgewählten Strukturen einschließlich Gelenk- und Dornfortsätzen; geringer Kontakt reduzierte diese weiter auf einzelne spitze Stützen. Im ersten Versuch wurden wiederholt gedruckte Modelle des L2-Wirbels einer Patientin verwendet. Jeder der 3 Operateure brachte mit jeder Methode 10 Schrauben ein: 30 pro Gruppe, insgesamt 120. Das erleichtert die Wiederholbarkeitsprüfung, bildet jedoch keine 120 unterschiedlichen Patientenanatomien ab.\n\n| Technik am gedruckten Knochenmodell | Gertzbein–Robbins-Grade A/B | Grade C–E |\n|---|---:|---:|\n| Freihand | 25/30 (83.3%) | 5/30 |\n| Vollkontakt | 28/30 (93.3%) | 2/30 |\n| Mittlerer Kontakt | 30/30 (100%) | 0/30 |\n| Geringer Kontakt | 27/30 (90%) | 3/30 |\n\nDie geführten Gruppen folgten der geplanten Richtung insgesamt genauer; Winkelvergleiche zwischen den Schablonendesigns waren jedoch nicht signifikant. Das beste Klassifikationsergebnis bei mittlerem Kontakt belegt keine allgemeingültig optimale Konstruktion. Vollkontaktschablonen wurden als stabiler, aber schwieriger aufzusetzen und abzunehmen beschrieben. Geringer Kontakt verbesserte die Sicht auf den Eintrittspunkt, erforderte jedoch mehr Zeit zur Positionsprüfung. Der Versuch zeigt den Zielkonflikt zwischen Kontaktgeometrie, Sichtbarkeit und Platzierung konkret.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "soft_tissue_transfer",
+          "title": "Mit Weichgewebe verändert sich die Rangfolge von mittlerem und geringem Kontakt",
+          "markdown": "Dieselbe Studie verglich anschließend mittleren Kontakt, geringen Kontakt und Freihandtechnik an Schweinekadavern. Mit mittlerem Kontakt erreichten 6/12 Schrauben (50%) die Grade A/B, mit geringem Kontakt 10/12 (83.3%). Der Vorteil des mittleren Kontakts am Druckmodell setzte sich nicht unmittelbar fort; auch die über Operateure zusammengefasste Winkelanalyse ergab keine signifikanten Gruppenunterschiede. [Kadaverversuch und Originalabb. 4](ref:R01)\n\nBeim Übergang zum Kadaver änderte sich mehr als das Weichgewebe: auch Speziesanatomie, beteiligte Operateure und Instrumentenwechsel. Die erste Stufe verwendete getrennte Sonden- und Schraubendreherschablonen. In der zweiten wurde eine herausnehmbare Bohrhülse in die Schraubendreherführung eingesetzt, um Vorbohrung und Einbringen konzentrisch zu halten. Die konstruktiven Schnittstellentoleranzen betrugen 0.24 mm für Sonde/Bohrer und 0.20 mm für den Schraubendreher. Die veränderte Rangfolge lässt sich daher nicht allein der Kontaktfläche zuschreiben.\n\nDie Operateure nannten Bänder am Dornfortsatz, Gelenkknorpel und verbliebenes Weichgewebe als Einflussgrößen auf den Sitz der Negativfläche. Die Lamina wird bei posterioren Eingriffen üblicherweise bereits freigelegt. Mehr Kontakt kann die Führung verstärken, vergrößert aber auch den Bereich, der präzise freigelegt und gereinigt werden muss. Kleine Kontaktstützen reduzieren Gewebeinterferenz und verbessern die Sicht, können jedoch den Widerstand gegen Kippbewegungen verringern. Untersucht wird damit, wo verlässliche Auflagen entstehen, nicht lediglich, wie die Abdeckung maximal wird.",
+          "figure_ids": []
+        },
+        {
+          "id": "guidance_sequence",
+          "title": "Vorbohrung oder direkte Schraubenführung: Hülsenabmessungen und Führungsumfang ändern sich gemeinsam",
+          "markdown": "Yang et al. nutzten CT-Daten von 10 Patienten mit komplexen Wirbelsäulendeformitäten für Druckmodelle zum Vergleich indirekter und direkter Schablonen. Die indirekte Konstruktion legte zunächst mit einem dünnen Bohrer den Kanal an; anschließend wurde die Schraube eingesetzt. Die direkte Konstruktion verwendete eine größere Hülse für das Einbringinstrument. Modelle und Schablonen bestanden aus Photopolymerharz; der Versuch erfolgte an gedruckten Knochenmodellen. [Konstruktionsparameter und simulierte Eingriffe](ref:R02)\n\n| Strukturparameter | Indirektes Vorgehen | Direktes Vorgehen |\n|---|---:|---:|\n| Höhe des Führungszylinders | 15 mm | 50 mm |\n| Innendurchmesser | 3 mm | 13 mm |\n| Wandstärke | 2.5 mm | 2.5 mm |\n| Primär geführtes Objekt | 2.5 mm Bohrer | Schraubeneinbringinstrument |\n\nJe Gruppe wurden 149 Schrauben eingesetzt. Grad A, vollständig im Pedikel, erreichten 125 Schrauben direkt und 121 indirekt. Einschließlich Grad B mit einer Kortikalisdurchbrechung unter 2 mm ergaben sich 143/149 (95.97%) beziehungsweise 141/149 (94.63%) in A/B bei p = 0.784. Die Rate von ungefähr 96% fasst somit A und B zusammen; sie bedeutet keine durchgehend fehlende Kortikalisdurchbrechung.\n\nDie Konstruktion einer Schablone benötigte direkt 21.99 ± 3.16 min gegenüber indirekt 16.52 ± 2.12 min; der Druck dauerte 54.50 ± 6.39 min beziehungsweise 37.69 ± 3.99 min pro Stück. Die Schraubeneinbringzeiten von 4.24 ± 0.54 min und 4.79 ± 0.66 min unterschieden sich nicht signifikant (p = 0.056). Höhere, breitere Hülsen erweiterten die Instrumentenführung und erhöhten Volumen und Vorbereitungszeit, ohne nachgewiesenen A/B-Genauigkeitsgewinn. Die 13 mm weite Öffnung nimmt das Bedieninstrument auf und bezeichnet nicht den intraossären Schraubendurchmesser; die genannte 5.5 mm Spezifikation gehört zum Stabsystem.",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "clinical_transfer",
+          "title": "Klinische Übertragung: Eintrittspunkt, Raumwinkel und Umsetzbarkeit gemeinsam erfassen",
+          "markdown": "Pijpker et al. untersuchten 15 Patienten mit zervikaler oder oberer thorakaler Fixierung. Die Schablonen enthielten laminäre Kontaktflächen, Haken um den Dornfortsatz, verstärkende Verbindungen und Edelstahlhülsen. Nach dem Aufsetzen wurden sie von Hand gehalten oder mit Mikroschrauben befestigt. Auf eine 2 mm Vorbohrung folgten Erweiterung, Sondierung der Knochenwand und Schraubeneinbringen; ein mechanischer Anschlag begrenzte die Bohrtiefe. Die postoperative CT wurde wirbelweise registriert, die extrahierten Schraubenachsen wurden mit dem Plan verglichen. [Klinischer Ablauf und Abweichungsanalyse](ref:R03)\n\n| Umgesetzte geführte Trajektorien | Anzahl | Eintrittsabweichung, mm | Dreidimensionale Winkelabweichung, ° |\n|---|---:|---:|---:|\n| Pedikelschrauben | 14 | 1.73 ± 0.82 | 6.64 ± 3.44 |\n| Massa-lateralis-Schrauben | 62 | 1.33 ± 0.79 | 6.72 ± 3.85 |\n| Gesamt | 76 | 1.40 ± 0.81 | 6.70 ± 3.77 |\n\nDer Eintrittspunktvergleich zwischen Massa-lateralis- und Pedikelschrauben war nicht signifikant (p = 0.10). Über alle Trajektorien betrug die sagittale Winkelabweichung 5.00 ± 3.44° und überstieg die axiale von 3.75 ± 3.07° (p = 0.02). Ein einzelner Projektionswinkel lässt somit Veränderungen in einer anderen Richtung unberücksichtigt.\n\nDie 76 Trajektorien entstammten 92 geplanten: 11 entfielen nach intraoperativer Entscheidung für weniger Schrauben, 4 wechselten wegen einer nicht funktionierenden Schablonenkonstruktion zur konventionellen Technik und 1 wurde nach Ausriss bei schlechter Knochenqualität revidiert. Bei den umgesetzten Trajektorien wurden keine der untersuchten Knochenwandverletzungen oder neurovaskulären Schäden beobachtet; dennoch wurde nicht jede geplante Trajektorie erfolgreich schablonengeführt umgesetzt. Angaben zur Umsetzung unterscheiden Konstruktionsversagen, klinische Planänderung und endgültigen Einbringfehler.",
+          "figure_ids": []
+        },
+        {
+          "id": "bony_corridor",
+          "title": "Dieselbe Achsabweichung kann im engen Knochenkorridor andere Folgen haben",
+          "markdown": "Kaneyama und Sugawara bewerteten Planreproduktion und vollständige knöcherne Umschließung getrennt. Bei 51 Patienten wurden 428 Schraubenplatzierungen versucht und 425 abgeschlossen. Das sequenzielle System markierte den Eintritt, führte Bohren und Gewindeschneiden und anschließend das Schraubeneinbringen. Von 3 nicht abgeschlossenen Versuchen betraf 1 unzureichende Muskelretraktion und dadurch fehlenden Schablonensitz; die anderen 2 betrafen steile Eintrittsstellen und tangentiale Trajektorien, die eine schräge Nut erzeugten und Instrumente ablenkten. [Systemkonstruktion und Fehlmechanismen](ref:R04)\n\nVon den eingesetzten Schrauben wurden 418/425 (98.4%) als genau und 402/425 (94.6%) als vollständig knöchern umschlossen klassifiziert. Eine kleine geometrische Abweichung bedeutet nicht zwangsläufig vollständige Umschließung. Hinzu kommt DAST: der minimale verfügbare Knochendurchmesser entlang der vorgesehenen Schraubentrajektorie. Verwendet wird der kleinere Wert aus axialer und sagittaler Messung; zusammen mit dem Schraubendurchmesser bestimmt er den verbleibenden Raum.\n\nZervikale Schrauben mit beziehungsweise ohne Durchbrechung hatten Achsabweichungen von 0.57 ± 0.34 mm und 0.43 ± 0.45 mm ohne signifikanten Unterschied (p = 0.247). Ihre DAST-Werte betrugen 3.62 ± 0.25 mm und 5.33 ± 1.31 mm (p < 0.001). Thorakal war Durchbrechung sowohl mit größerer Achsabweichung als auch kleinerem DAST verbunden: 1.54 ± 1.18 mm/4.41 ± 0.85 mm gegenüber 0.75 ± 0.54 mm/6.07 ± 1.25 mm bei vollständig umschlossenen Schrauben.\n\n| Knochenkorridor-Untergruppe dieser Kohorte | Durchbrechungen/eingesetzte Schrauben |\n|---|---:|\n| Zervikaler DAST ≥4.0 mm | 1/242 |\n| Zervikaler DAST ≤3.9 mm | 13/46 |\n| Thorakaler DAST ≥5.0 mm | 2/105 |\n| Thorakaler DAST ≤4.9 mm | 7/32 |\n\nDiese Schwellen entstanden aus der ROC-Analyse dieser Kohorte und beziehen sich auf die untersuchten 3.5 mm und 4.0 mm Schrauben sowie Wirbelsäulenabschnitte. Originalbilder zeigen sowohl eine planungsnahe Achse mit Kortikalisdurchbrechung als auch eine stärker abweichende Achse bei erhaltener Umschließung. Damit werden Schablonengenauigkeit, Schraubenabmessung und Korridorweite gemeinsam räumlich betrachtet, statt alle Endpunkte durch eine einzige Genauigkeitsrate zu ersetzen.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Ribera-Navarro et al.: Kontakt und Instrumentenwechsel in zwei Versuchsstufen (Originalabb. 2)",
+          "interpretation": "Die drei Spalten in A zeigen Vollkontakt, mittleren und geringen Kontakt. Orange Bereiche auf gelbem Knochen wechseln von durchgehenden Negativflächen zu kleineren Flächen und Punkten; darunter stehen Sonden- und Schraubendreherschablonen. B behält mittleren und geringen Kontakt bei und setzt eine Bohrhülse in dieselbe Schraubendreherführung ein. Zwischen den Stufen änderten sich Auflage und Instrumentenwechsel; Modell-Kadaver-Unterschiede sind deshalb nicht vollständig dem Weichgewebe zuzuschreiben. Die vollständige Abbildung wurde mit allen Teilbildern und Beschriftungen aus dem Autoren-PDF entnommen."
+        },
+        "F02": {
+          "caption": "Yang et al.: kleine Öffnungen und Verbindungsbrücke bei indirekter Schraubenführung (Originalabb. 4)",
+          "interpretation": "Die Gesamtansichten zeigen die Richtung für jeden Wirbel, die mittleren Vergrößerungen paarige kleine Führungsbohrungen und ihre Brücke. Zunächst führt die Struktur den dünnen Bohrer für den Pilotkanal; anschließend folgt die Schraube dem angelegten Kanal. Die schlanken grauen Instrumente stehen den breiten Zylindern der unten gezeigten direkten Konstruktion gegenüber. Dargestellt ist Geometrie; Klassifikationsraten wie 95.97% stammen aus der postoperativen Modell-CT-Auswertung an anderer Stelle der Studie."
+        },
+        "F03": {
+          "caption": "Yang et al.: größere Öffnungen und längere Zylinder bei direkter Schraubenführung (Originalabb. 5)",
+          "interpretation": "Die mittleren Vergrößerungen zeigen breitere, längere Zylinder und verstärkende Verbindungen; auch die Gesamtansichten verdeutlichen den größeren Platzbedarf zwischen benachbarten Etagen. Der Kanal nimmt Einbringinstrumente auf, keine intraossäre Schraube mit dem Durchmesser der Führungsöffnung. Öffnung, Höhe und Arbeitsfolge ändern sich zwischen den Konstruktionen gemeinsam. Eine sichtbare lange Hülse belegt für sich genommen keine niedrigere Rate an Kortikalisdurchbrechungen."
+        },
+        "F04": {
+          "caption": "Kaneyama und Sugawara: minimaler Knochenkorridor entlang der geplanten Trajektorie (Originalabb. 5)",
+          "interpretation": "Diese axiale C3-CT kennzeichnet auf beiden Seiten DAST-Werte von 4.9 mm und 3.7 mm, während beide geplanten Schraubenlängen 24.2 mm betragen. Gleiche Länge bedeutet nicht gleiche seitliche Reserve. DAST wird an der engen Knochenregion entlang der Trajektorie gemessen, nicht an der Schraube selbst; das Gesamtprotokoll misst zusätzlich sagittal und verwendet den kleineren Wert. Originalbild unverändert, © 2024 The Japanese Society for Spine Surgery and Related Research."
+        },
+        "F05": {
+          "caption": "Kaneyama und Sugawara: Planreproduktion und knöcherne Umschließung sind nicht gleichbedeutend (Originalabb. 7)",
+          "interpretation": "a–c und d–f zeigen Planung und postoperative Bilder von C4. Rechts und links betragen die Abweichungen 0.5 mm und 0.8 mm; dennoch durchbricht die linke Schraube am weißen Dreieck die Knochenwand. g–i und j–l zeigen T1: Rechts bleibt die Schraube trotz 2.9 mm Abweichung knöchern umschlossen, links durchbricht sie bei 2.5 mm Abweichung die Wand am schwarzen Dreieck. Planung und postoperative Bilder derselben Seite werden gepaart; die vier Zeilen sind keine vier Patientengruppen. Originalbild unverändert, © 2024 The Japanese Society for Spine Surgery and Related Research."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "schema_version": 2,
+  "question_id": "P5-078",
+  "p": "P5",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-04",
+  "related_paper_ids": [
+    "doc_3ff871e3f6411e8fa9e5",
+    "doc_28cce6f441c3cad4827a",
+    "doc_0d9af3a4f9b931a64326"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "3D Printing Optimization for Environmental Sustainability: Experimenting with Materials of Protective Face Shield Frames",
+      "publisher": "Materials",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/ma14216595",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Disinfection of 3D-printed protective face shield during COVID-19 pandemic",
+      "publisher": "American Journal of Infection Control",
+      "year": 2021,
+      "url": "https://doi.org/10.1016/j.ajic.2020.10.008",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Subject validation of reusable N95 stop-gap filtering facepiece respirators in COVID-19 pandemic",
+      "publisher": "PLOS ONE",
+      "year": 2020,
+      "url": "https://doi.org/10.1371/journal.pone.0242304",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 3",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8585375.1/materials-14-06595-g003.jpg?md5=bfd786fe53bb184d368f2365ed12bed1",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8585375/#materials-14-06595-f003",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-078/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 5",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8585375.1/materials-14-06595-g005.jpg?md5=e1f0e46776cd25df7acaf4b365971a14",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8585375/#materials-14-06595-f005",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-078/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R01",
+      "original_label": "Figure 11",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8585375.1/materials-14-06595-g011.jpg?md5=6a075eed76f9fd9a048aeda43536a6b8",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8585375/#materials-14-06595-f011",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-078/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Fig 4",
+      "image_url": "https://journals.plos.org/plosone/article/figure/image?download=&id=10.1371%2Fjournal.pone.0242304.g004&size=large",
+      "source_url": "https://doi.org/10.1371/journal.pone.0242304.g004",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-078/F04.png"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Fig 6",
+      "image_url": "https://journals.plos.org/plosone/article/figure/image?download=&id=10.1371%2Fjournal.pone.0242304.g006&size=large",
+      "source_url": "https://doi.org/10.1371/journal.pone.0242304.g006",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-078/F05.png"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "材料、消毒和重复使用如何影响防护用品性能？",
+      "direction": "个人防护用品",
+      "sections": [
+        {
+          "id": "component_functions",
+          "title": "材料性能要落到具体部件：支架、透明片与面部密封",
+          "markdown": "面屏和呼吸防护面罩把不同任务交给不同部件。打印头箍需要承受张开、回弹和卡扣载荷；透明片影响视野、眩光及划伤后的可见度；贴面密封部件则决定面部动作时是否出现泄漏。材料研究中的拉伸强度、外观观察和人体密合因数，分别描述这些任务中的不同环节。三类结果可以互相补充，但不能在同一排行榜中直接比较。\n\nZgodavová 等比较了 PLA、PETG 与 PHA BioWOOD 打印试样的力学响应和面屏装配精度；医院面屏研究观察了重复处理后的部件外观；Ng 等则将打印模具参与制造的硅胶面罩与一次性呼吸防护面罩进行人体配对比较。这里增材制造的角色分别是直接制造承载部件和制造成型工具，最终与面部接触的材料并不相同。[材料试验](ref:R01) [面屏处理后观察](ref:R02) [人体配对研究](ref:R03)\n\n因此，研究问题中的“重复使用”至少包含三个可分别检验的对象：部件是否保持几何形状，装配界面是否保持连接，以及佩戴后是否维持功能。初始材料表现较好，解释的是进入重复使用前的状态；使用后的变化还需要对应的随访测量。",
+          "figure_ids": []
+        },
+        {
+          "id": "structure_variation",
+          "title": "同一种聚合物为何出现不同强度：打印结构与材料组成",
+          "markdown": "原文 Figure 3 将 PLA 的扫描电镜图与多条应力—应变曲线放在一起。曲线来自不同制造条件，斜率、峰值与终止位置都有差别，说明“PLA”这个材料名称本身没有定义唯一的结构性能。把不同试验条件合并为一个平均强度，会掩盖实际构件可能出现的性能范围。\n\nPHA BioWOOD 的 Figure 5 显示了颗粒、颗粒周围空隙和表面孔洞。它们可以提供理解应力集中与较早断裂的结构线索，但一张表面电镜图并没有直接量化整个部件的内部孔隙率。该材料的曲线也存在明显离散，说明材料组成和打印形成的结构需要一起解释。本文中的 PHA 是特定商业复合丝材，结论不能直接转写成所有聚羟基脂肪酸酯的固有性质。[原文 Figures 3、5 与材料比较](ref:R01)\n\n这些是单调拉伸试验。头箍实际反复张开时涉及弯曲、局部应变集中与回弹；卡扣部位还可能经历摩擦与装拆损伤。拉伸曲线解释材料可承受的变形范围，而使用寿命需要对应的循环或构件试验。",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "deformation_and_fit",
+          "title": "相近的峰值强度，不同的变形能力与装配表现",
+          "markdown": "在作者选定的制造条件下，PLA 与 PETG 的报告应力分别为 31.2 和 31.3 MPa，PHA BioWOOD 为 14.1 MPa。Figure 11 中红色 PLA 和绿色 PETG 曲线的峰值接近，但绿色曲线延伸到更大的应变后才出现明显失效；蓝色 PHA 曲线的峰值和终止应变均较低。对于需要随头部尺寸变形的构件，峰值强度相近并不意味着佩戴适应能力相同。[原文 Figure 11](ref:R01)\n\n作者正文把上述应力称为断裂拉伸应力；图中还可见峰后下降，因此数值宜按原文指标名称引用，不把峰值、屈服点和最终断裂点混用。另一项验证采用 30 个面屏框架，连接销累计距离偏差位于 −0.3 至 +0.3 mm，能够完成与透明片的装配。这个结果回答的是批次尺寸与装配问题，而不是经过反复装拆后的松动率。\n\n材料选择由部件任务决定：可变形头箍关注回弹和持续夹持，连接销关注尺寸稳定与局部损伤，透明片关注视野。将这些任务分开后，就能解释为什么一项研究会强调柔性，另一项强调几何精度，两者并不构成相互否定。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "processing_observations",
+          "title": "重复处理后的观察：外观、热变形与功能终点",
+          "markdown": "医院面屏研究比较了多个设计与材料组合。透明片经过最多 40 次化学处理后未见可见损伤，头箍经过 30 次处理后未见明显外观改变；另一些 PETG XT 与 Tritan HT 支撑件在高压蒸汽处理后出现收缩、翘曲和裂纹。研究直接展示了处理方式与具体部件材料之间的兼容性差异。[原文 Results](ref:R02)\n\n这里的主要测量是视觉检查和使用者评价。它支持对透明片与框架外观完整性的判断，但研究没有由这些照片给出拉伸强度保持率、光学雾度变化或密合因数保持率。特别是热变形，可能先改变曲率与装配间隙，再影响佩戴稳定；即使材料没有完全断裂，部件也可能已经偏离原来的设计形状。\n\n“重复处理后无可见改变”和“高温处理后损坏”并不矛盾：受试部件、暴露方式和评价终点不同。把结果对应到材料牌号、部件类型与观察方法，比给所有打印防护用品指定一个统一的可重复次数更符合这些实验提供的信息。",
+          "figure_ids": []
+        },
+        {
+          "id": "human_fit",
+          "title": "从材料到佩戴：人体密合性为何会随动作改变",
+          "markdown": "Ng 等纳入 40 名医务人员，对各自的一次性防护面罩与 SSM 硅胶面罩进行配对评价。总体密合因数中位数分别为 137.9 和约 6316.7；总体通过率分别为 65% 和 100%。这是同一批受试者与两种完整佩戴系统之间的比较，打印主要参与模具和固定结构制造，结果不能归因于某一种打印丝材。[原文人体结果](ref:R03)\n\nFigure 4 的纵轴为密合因数调和均值的常用对数。SSM 在静态和动态动作中的分布不同：动态动作时中位数下降，反映面部运动对密封界面的影响。一次性面罩的两组箱体差别较小，并不表示它们的绝对密合水平更高。调和均值对低值较敏感，局部动作造成的较差密合会影响总体表现。\n\n这项研究测量的是测试期间的密合表现，没有建立同一面罩在多个重复使用阶段的长期性能曲线。对重复使用问题，它提供了一个功能层面的参照终点：外观与力学性质的变化，最终应能与佩戴系统的实际表现联系起来。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "comparator_scales",
+          "title": "研究之间怎样对照：部件、比较对象与测量尺度",
+          "markdown": "| 研究证据 | 实际比较 | 可以回答的具体问题 |\n|---|---|---|\n| 打印试样应力—应变曲线 | 材料与制造条件 | 强度和变形范围如何变化 |\n| 框架尺寸与装配 | 一批制造完成的部件 | 是否能够稳定匹配透明片 |\n| 处理前后外观 | 特定框架和透明片 | 是否出现可见翘曲、裂纹或视野损伤 |\n| 人体密合性 | 同一受试者佩戴不同系统 | 动作和密封界面如何影响密合 |\n\nFigure 6 进一步把人体结果按个体配对展示：每一列对应同一人，颜色表示通过状态，圆的大小表示总体密合因数。相同系统在不同人身上的结果仍有差别。判断材料是否适合重复使用时，不能把这种个体差别误认为材料老化，也不能把一次较高的密合值当作已经观察到的长期保持率。[配对图](ref:R03)\n\n现有实验的衔接点在于让构件状态与功能终点保持对应。例如，透明片变化首先落到视野，头箍变形首先落到位置与连接，贴面部件变化首先落到动作中的密封。这样可以把不同研究中看似不一致的“性能好坏”还原成各自的测量问题。",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Zgodavová 等，原文 Figure 3：PLA 表面与拉伸曲线。",
+          "interpretation": "左图提供表面形貌，右图横轴为应变、纵轴为应力。不同颜色对应不同制造条件形成的试样曲线，不能当作同一试样的重复加载轨迹。曲线的斜率、最高点与断裂终点分别涉及刚度、承载与延伸能力；比较头箍材料时需要分开阅读这些特征。"
+        },
+        "F02": {
+          "caption": "Zgodavová 等，原文 Figure 5：PHA BioWOOD 的表面结构与拉伸响应。",
+          "interpretation": "左图可见较明显的颗粒周边空隙和表面缺口，右图不同曲线的终止应变不同。图像支持把微观结构与宏观断裂表现放在一起讨论，但没有给出重复佩戴后的裂纹增长速率。原图显示的是特定复合丝材，不是所有 PHA 的共同响应。"
+        },
+        "F03": {
+          "caption": "Zgodavová 等，原文 Figure 11：三种材料的应力—应变比较。",
+          "interpretation": "红色 PLA 与绿色 PETG 达到相近最高应力，但后者在更大应变下继续承载；蓝色 PHA 较早失效。横轴是百分应变，纵轴是 MPa。曲线下面积并未被论文直接报告为韧性数值，因此这里比较的是图示响应形状，不另行从缩略图计算材料指标。"
+        },
+        "F04": {
+          "caption": "Ng 等，原文 Fig 4：静态与动态动作中的密合因数分布。",
+          "interpretation": "纵轴使用 Log10，箱体的垂直距离应按对数尺度理解。粉色与红色 SSM 箱体分别代表静态和动态动作，动态组中位数较低；浅蓝与深蓝是一次性面罩的对应组。组间比较和同一系统内的动作比较回答不同问题，不能只比较箱体高低就归因于材料本体。"
+        },
+        "F05": {
+          "caption": "Ng 等，原文 Fig 6：逐人配对的密合结果。",
+          "interpretation": "上下两行对应两种面罩，同一列为同一受试者。绿色和红色表示通过与未通过，圆面积随总体密合因数变化。图中没有重复使用轮次这一轴，因此能观察个体差异和配对优势，不能从圆的大小读出耐久寿命。"
+        }
+      }
+    },
+    "en": {
+      "title": "How do materials, disinfection and reuse affect protective equipment performance?",
+      "direction": "Personal protective equipment",
+      "sections": [
+        {
+          "id": "component_functions",
+          "title": "Assign material performance to the component: frame, visor and facial seal",
+          "markdown": "Face shields and respiratory protective masks distribute functions across different components. A printed headband carries opening, elastic recovery and fastening loads; the transparent visor affects vision, glare and visibility after scratching; the facial seal determines whether movement produces leakage. Tensile strength, visual inspection and human fit factors describe different parts of this system. Their results complement one another but cannot be placed directly in a single ranking.\n\nZgodavová and colleagues compared the mechanical response of PLA, PETG and PHA BioWOOD specimens and the assembly accuracy of face-shield frames. A hospital study inspected components after repeated processing. Ng and colleagues compared a silicone mask made with the aid of printed moulds against disposable respirators in paired human tests. Additive manufacturing therefore served either to manufacture load-bearing parts directly or to produce moulding tools; the material contacting the face was different.[Material experiments](ref:R01) [Post-processing face-shield observations](ref:R02) [Paired human study](ref:R03)\n\n“Reuse” encompasses three independently measurable outcomes: retention of component geometry, integrity of assembly interfaces and function when worn. Good initial material performance describes the starting state. Changes during use require corresponding follow-up measurements.",
+          "figure_ids": []
+        },
+        {
+          "id": "structure_variation",
+          "title": "Why one polymer yields different strengths: printed structure and composition",
+          "markdown": "The original Figure 3 places a PLA scanning electron micrograph beside multiple stress–strain curves. The curves represent different manufacturing conditions and differ in slope, peak and termination point. The name “PLA” therefore does not define a unique structural performance. Pooling these conditions into one average strength hides the range that an actual component may exhibit.\n\nFigure 5 for PHA BioWOOD shows particles, gaps around particles and surface openings. These observations help interpret stress concentration and earlier fracture, but a surface micrograph does not quantify the internal porosity of the entire component. Its curves also vary substantially, requiring composition and printed structure to be considered together. The PHA in this study is a particular commercial composite filament; its results do not define the intrinsic properties of all polyhydroxyalkanoates.[Original Figures 3 and 5 and material comparison](ref:R01)\n\nThese are monotonic tensile tests. Repeated opening of a headband involves bending, local strain concentrations and elastic recovery; fasteners may additionally undergo friction and assembly damage. Tensile curves describe a deformation range, whereas service life requires corresponding cyclic or component-level evidence.",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "deformation_and_fit",
+          "title": "Similar peak strength, different deformation capacity and assembly behaviour",
+          "markdown": "Under the authors’ selected manufacturing conditions, the reported stresses were 31.2 MPa for PLA, 31.3 MPa for PETG and 14.1 MPa for PHA BioWOOD. In Figure 11, the red PLA and green PETG curves reach similar peaks, but the green curve extends to greater strain before marked failure. The blue PHA curve has both a lower peak and a lower terminal strain. Similar peak strength therefore does not imply similar adaptability in a component that deforms around different head sizes.[Original Figure 11](ref:R01)\n\nThe authors call these values tensile stress at break; the plot also shows post-peak declines. The reported metric should be retained rather than conflating peak stress, yielding and final fracture. A separate validation used 30 face-shield frames: the deviation in the cumulative fastening-pin distance was between −0.3 and +0.3 mm, allowing assembly with the visor. This addresses batch dimensions and assembly, rather than loosening after repeated assembly and disassembly.\n\nMaterial suitability depends on the component task: a compliant headband requires recovery and sustained retention, fastening pins require dimensional stability and local damage resistance, and a visor requires visibility. Separating these tasks explains why one study emphasizes flexibility and another emphasizes geometric accuracy without their conclusions contradicting each other.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "processing_observations",
+          "title": "After repeated processing: appearance, thermal deformation and functional endpoints",
+          "markdown": "The hospital face-shield study compared several designs and material combinations. Visors showed no visible damage after up to 40 chemical-processing cycles, and headbands showed no obvious visual change after 30 cycles. Some PETG XT and Tritan HT support parts developed shrinkage, warping and cracks following steam autoclaving. These observations reveal compatibility differences between the processing method and the particular component material.[Original Results](ref:R02)\n\nThe principal endpoints were visual inspection and user appraisal. They characterize visible integrity, but the photographs do not provide tensile-strength retention, changes in optical haze or fit-factor retention. Thermal distortion can change curvature and assembly gaps before affecting stability when worn; a component can depart from its intended geometry without fracturing completely.\n\n“No visible change after repeated processing” and “damage after high-temperature treatment” are compatible findings because the parts, exposures and endpoints differ. Matching each result to its material grade, component type and observation method is more faithful to the experiments than assigning one universal reuse count to printed protective equipment.",
+          "figure_ids": []
+        },
+        {
+          "id": "human_fit",
+          "title": "From material to wearing performance: why movement changes fit",
+          "markdown": "Ng and colleagues enrolled 40 healthcare workers in a paired comparison of their disposable respirator and the SSM silicone mask. Median overall fit factors were 137.9 and approximately 6316.7, respectively; overall pass rates were 65% and 100%. This compares two complete wearing systems in the same participants. Printing mainly contributed to moulds and retention structures, so the outcome cannot be attributed to one printed filament.[Original human results](ref:R03)\n\nThe vertical axis of Figure 4 is the base-ten logarithm of the harmonic-mean fit factor. SSM distributions differ between stationary and dynamic manoeuvres: the median decreases during movement, revealing its effect on the sealing interface. A smaller difference between the disposable-respirator boxes does not indicate a higher absolute fit level. The harmonic mean is sensitive to low values, so poor fit during a particular movement affects the overall result.\n\nThe study measures fit during the test; it does not establish a long-term curve for the same mask across successive reuse stages. For the reuse question it supplies a functional reference endpoint to which changes in appearance and mechanical properties can ultimately be related.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "comparator_scales",
+          "title": "Comparing studies by component, comparator and measurement scale",
+          "markdown": "| Evidence | Actual comparison | Specific question addressed |\n|---|---|---|\n| Stress–strain curves of printed specimens | Materials and manufacturing conditions | How strength and deformation range change |\n| Frame dimensions and assembly | One manufactured batch | Whether parts reliably match the visor |\n| Appearance before and after processing | Particular frames and visors | Whether visible warping, cracks or visual damage emerge |\n| Human fit testing | Different systems worn by the same person | How movement and sealing interfaces affect fit |\n\nFigure 6 displays paired individual results: each column represents one person, colour indicates passing status and circle size represents the overall fit factor. Performance still differs between people using the same system. Such variation should not be mistaken for material ageing, and a high single-session fit value is not an observed long-term retention rate.[Paired plot](ref:R03)\n\nThe studies connect when component condition is matched to the relevant functional endpoint. Changes in a visor first concern vision, headband deformation concerns positioning and attachment, and changes in a facial component concern sealing during movement. This translates apparently inconsistent judgments of “good performance” into the distinct measurement questions actually investigated.",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Zgodavová et al., original Figure 3: PLA surface and tensile curves.",
+          "interpretation": "The left panel shows surface morphology; the right plots strain horizontally and stress vertically. Colours distinguish specimens produced under different manufacturing conditions, not repeated loading of one specimen. Slope, maximum and fracture endpoint concern stiffness, load-bearing response and extensibility, respectively, and should be read separately when comparing headband materials."
+        },
+        "F02": {
+          "caption": "Zgodavová et al., original Figure 5: PHA BioWOOD surface structure and tensile response.",
+          "interpretation": "The left panel shows conspicuous particle-associated gaps and surface openings; the curves on the right terminate at different strains. The image connects microstructure with macroscopic fracture behaviour but does not quantify crack growth during repeated wearing. It represents one composite filament rather than a universal PHA response."
+        },
+        "F03": {
+          "caption": "Zgodavová et al., original Figure 11: stress–strain comparison of three materials.",
+          "interpretation": "Red PLA and green PETG attain similar maximum stress, but PETG continues carrying load at greater strain; blue PHA fails earlier. The axes are percentage strain and MPa. The paper does not directly report a toughness value from the area under these curves, so the interpretation compares response shapes without calculating an additional property from a thumbnail."
+        },
+        "F04": {
+          "caption": "Ng et al., original Fig 4: fit-factor distributions during stationary and dynamic manoeuvres.",
+          "interpretation": "The vertical axis uses Log10, so distances between boxes must be interpreted logarithmically. Pink and red SSM boxes represent stationary and dynamic manoeuvres, with a lower median in the dynamic group; light and dark blue represent the corresponding disposable-mask groups. Between-system and within-system movement comparisons address different questions and cannot isolate a material effect from box height alone."
+        },
+        "F05": {
+          "caption": "Ng et al., original Fig 6: individually paired fit results.",
+          "interpretation": "The two rows represent the two masks and each column the same participant. Green and red indicate passing and failing; circle size varies with overall fit factor. No axis represents reuse cycles. The plot shows individual variation and paired differences, not service life inferred from bubble size."
+        }
+      }
+    },
+    "de": {
+      "title": "Wie beeinflussen Materialien, Desinfektion und Wiederverwendung die Leistung von Schutzausrüstung?",
+      "direction": "Persönliche Schutzausrüstung",
+      "sections": [
+        {
+          "id": "component_functions",
+          "title": "Materialeigenschaften dem Bauteil zuordnen: Rahmen, Visier und Gesichtsdichtung",
+          "markdown": "Gesichtsschutzschilde und Atemschutzmasken verteilen ihre Funktionen auf unterschiedliche Bauteile. Ein gedrucktes Kopfband trägt Aufweitungs-, Rückstell- und Befestigungslasten; das transparente Visier beeinflusst Sicht, Blendung und Sichtbarkeit nach Kratzern; die Gesichtsdichtung bestimmt, ob Bewegungen Leckagen verursachen. Zugfestigkeit, Sichtprüfung und am Menschen gemessene Fit-Faktoren beschreiben unterschiedliche Teile dieses Systems. Die Ergebnisse ergänzen sich, lassen sich aber nicht unmittelbar in einer gemeinsamen Rangfolge anordnen.\n\nZgodavová und Kollegen verglichen das mechanische Verhalten von PLA-, PETG- und PHA-BioWOOD-Proben sowie die Montagegenauigkeit von Gesichtsschutzrahmen. Eine Krankenhausstudie untersuchte Bauteile nach wiederholter Aufbereitung. Ng und Kollegen verglichen eine mithilfe gedruckter Formen hergestellte Silikonmaske mit Einweg-Atemschutzmasken in gepaarten Probandentests. Die additive Fertigung diente somit entweder der direkten Herstellung tragender Teile oder der Herstellung von Formwerkzeugen; das Material mit Gesichtskontakt unterschied sich.[Materialversuche](ref:R01) [Beobachtungen nach der Aufbereitung](ref:R02) [Gepaarte Probandenstudie](ref:R03)\n\n„Wiederverwendung“ umfasst drei getrennt messbare Ergebnisse: Erhalt der Bauteilgeometrie, Integrität der Montageverbindungen und Funktion beim Tragen. Gute anfängliche Materialeigenschaften beschreiben den Ausgangszustand. Veränderungen während der Nutzung erfordern entsprechende Verlaufsmessungen.",
+          "figure_ids": []
+        },
+        {
+          "id": "structure_variation",
+          "title": "Warum dasselbe Polymer unterschiedliche Festigkeiten zeigt: Druckstruktur und Zusammensetzung",
+          "markdown": "Die ursprüngliche Figure 3 stellt eine rasterelektronenmikroskopische PLA-Aufnahme mehreren Spannungs-Dehnungs-Kurven gegenüber. Die Kurven stammen aus unterschiedlichen Herstellungsbedingungen und unterscheiden sich in Steigung, Maximum und Endpunkt. Die Bezeichnung „PLA“ definiert somit keine eindeutige Bauteilleistung. Eine Zusammenfassung zu einem einzigen Festigkeitsmittelwert verdeckt die mögliche Spannweite realer Bauteile.\n\nFigure 5 für PHA BioWOOD zeigt Partikel, Spalten um Partikel und Oberflächenöffnungen. Diese Beobachtungen helfen bei der Interpretation von Spannungskonzentrationen und früherem Bruch; eine Oberflächenaufnahme quantifiziert jedoch nicht die innere Porosität des gesamten Bauteils. Auch hier streuen die Kurven deutlich, weshalb Zusammensetzung und Druckstruktur gemeinsam betrachtet werden müssen. Das untersuchte PHA ist ein bestimmtes kommerzielles Verbundfilament; die Ergebnisse definieren nicht die intrinsischen Eigenschaften sämtlicher Polyhydroxyalkanoate.[Ursprüngliche Figures 3 und 5 und Materialvergleich](ref:R01)\n\nEs handelt sich um monotone Zugversuche. Wiederholtes Aufweiten eines Kopfbandes umfasst Biegung, lokale Dehnungskonzentrationen und Rückstellung; Befestigungen können zusätzlich Reibung und Montageschäden erfahren. Zugkurven beschreiben einen Verformungsbereich, während die Nutzungsdauer entsprechende zyklische oder bauteilbezogene Nachweise erfordert.",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "deformation_and_fit",
+          "title": "Ähnliche maximale Spannung, unterschiedliche Verformbarkeit und Montageeigenschaften",
+          "markdown": "Unter den ausgewählten Herstellungsbedingungen berichteten die Autoren Spannungen von 31.2 MPa für PLA, 31.3 MPa für PETG und 14.1 MPa für PHA BioWOOD. In Figure 11 erreichen die rote PLA- und die grüne PETG-Kurve ähnliche Maxima; die grüne Kurve reicht jedoch bis zu größeren Dehnungen vor dem deutlichen Versagen. Die blaue PHA-Kurve hat sowohl ein niedrigeres Maximum als auch eine geringere Enddehnung. Ähnliche maximale Spannung bedeutet daher keine ähnliche Anpassungsfähigkeit an unterschiedliche Kopfgrößen.[Ursprüngliche Figure 11](ref:R01)\n\nDie Autoren bezeichnen diese Werte als Zugspannung beim Bruch; die Grafik zeigt zusätzlich einen Abfall nach dem Maximum. Die berichtete Kenngröße sollte beibehalten werden, ohne Maximalspannung, Fließbeginn und endgültigen Bruch gleichzusetzen. Eine weitere Prüfung umfasste 30 Gesichtsschutzrahmen: Die Abweichung des kumulierten Befestigungsstiftabstands lag zwischen −0.3 und +0.3 mm und ermöglichte die Montage mit dem Visier. Dies betrifft Chargenmaße und Montage, nicht die Lockerung nach wiederholtem Zusammenbau und Zerlegen.\n\nDie Eignung hängt von der Bauteilaufgabe ab: Ein nachgiebiges Kopfband benötigt Rückstellung und dauerhaften Halt, Befestigungsstifte benötigen Maßhaltigkeit und lokale Schadensbeständigkeit, ein Visier benötigt gute Sicht. Diese Trennung erklärt, warum eine Studie Flexibilität und eine andere geometrische Genauigkeit betont, ohne dass sich ihre Aussagen widersprechen.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "processing_observations",
+          "title": "Nach wiederholter Aufbereitung: Aussehen, thermische Verformung und Funktionsendpunkte",
+          "markdown": "Die Krankenhausstudie verglich mehrere Gesichtsschutzdesigns und Materialkombinationen. Visiere zeigten nach bis zu 40 chemischen Aufbereitungszyklen keine sichtbaren Schäden; Kopfbänder zeigten nach 30 Zyklen keine deutlichen äußeren Veränderungen. Einige Stützteile aus PETG XT und Tritan HT entwickelten nach der Dampfautoklavierung Schrumpfung, Verzug und Risse. Die Beobachtungen zeigen Unterschiede in der Verträglichkeit zwischen Aufbereitungsverfahren und konkretem Bauteilmaterial.[Ursprünglicher Ergebnisteil](ref:R02)\n\nDie wesentlichen Endpunkte waren Sichtprüfung und Nutzerbewertung. Sie beschreiben die sichtbare Integrität, liefern anhand der Fotografien jedoch weder den Erhalt der Zugfestigkeit noch Änderungen der optischen Trübung oder des Fit-Faktors. Thermischer Verzug kann Krümmung und Montagespalte verändern und dadurch den Sitz beeinträchtigen; ein Bauteil kann bereits ohne vollständigen Bruch von seiner vorgesehenen Geometrie abweichen.\n\n„Keine sichtbare Veränderung nach wiederholter Aufbereitung“ und „Schäden nach Hochtemperaturbehandlung“ sind vereinbare Befunde, weil Bauteile, Belastungen und Endpunkte verschieden sind. Die Zuordnung zu Materialsorte, Bauteil und Beobachtungsmethode entspricht den Versuchen besser als eine allgemeine Wiederverwendungszahl für gedruckte Schutzausrüstung.",
+          "figure_ids": []
+        },
+        {
+          "id": "human_fit",
+          "title": "Vom Material zur Tragefunktion: warum Bewegung die Passform verändert",
+          "markdown": "Ng und Kollegen untersuchten 40 Beschäftigte im Gesundheitswesen in einem gepaarten Vergleich ihrer Einweg-Atemschutzmaske mit der SSM-Silikonmaske. Die medianen Gesamt-Fit-Faktoren betrugen 137.9 beziehungsweise ungefähr 6316.7; die Gesamtbestehensquoten lagen bei 65% beziehungsweise 100%. Verglichen wurden zwei vollständige Tragesysteme an denselben Personen. Der Druck trug hauptsächlich zu Formen und Haltestrukturen bei; das Ergebnis lässt sich somit nicht einem einzelnen Druckfilament zuschreiben.[Ursprüngliche Probandenergebnisse](ref:R03)\n\nDie vertikale Achse in Figure 4 zeigt den Zehnerlogarithmus des harmonischen Mittelwerts des Fit-Faktors. Die SSM-Verteilungen unterscheiden sich zwischen stationären und dynamischen Bewegungsaufgaben: Bei Bewegung sinkt der Median, was deren Einfluss auf die Dichtfläche zeigt. Ein kleinerer Abstand zwischen den Boxen der Einwegmasken bedeutet keinen höheren absoluten Fit-Faktor. Das harmonische Mittel reagiert empfindlich auf niedrige Werte, sodass eine einzelne Bewegung mit schlechter Abdichtung das Gesamtergebnis beeinflusst.\n\nGemessen wurde die Passform während des Tests; eine Langzeitkurve derselben Maske über aufeinanderfolgende Wiederverwendungsphasen wurde nicht ermittelt. Für die Frage der Wiederverwendung liefert die Studie einen funktionellen Bezugspunkt, mit dem Veränderungen des Aussehens und der mechanischen Eigenschaften verknüpft werden können.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "comparator_scales",
+          "title": "Studien nach Bauteil, Vergleichsgruppe und Messebene gegenüberstellen",
+          "markdown": "| Nachweis | Tatsächlicher Vergleich | Beantwortete Einzelfrage |\n|---|---|---|\n| Spannungs-Dehnungs-Kurven gedruckter Proben | Materialien und Herstellungsbedingungen | Veränderung von Festigkeit und Verformungsbereich |\n| Rahmenmaße und Montage | Eine hergestellte Charge | Zuverlässige Passung zum Visier |\n| Aussehen vor und nach Aufbereitung | Bestimmte Rahmen und Visiere | Sichtbarer Verzug, Risse oder Beeinträchtigung der Sicht |\n| Fit-Test am Menschen | Verschiedene Systeme an derselben Person | Einfluss von Bewegung und Dichtfläche auf die Passform |\n\nFigure 6 zeigt die individuell gepaarten Ergebnisse: Jede Spalte steht für dieselbe Person, die Farbe kennzeichnet den Bestehensstatus und die Kreisgröße den Gesamt-Fit-Faktor. Auch beim gleichen System unterscheiden sich die Ergebnisse zwischen Personen. Solche Unterschiede sind nicht mit Materialalterung gleichzusetzen; ein hoher Einzelmesswert ist keine beobachtete langfristige Erhaltungsrate.[Gepaarte Darstellung](ref:R03)\n\nDie Studien lassen sich verknüpfen, indem der Bauteilzustand dem passenden Funktionsendpunkt zugeordnet wird. Veränderungen am Visier betreffen zunächst die Sicht, Kopfbandverformungen Position und Befestigung, Änderungen am Gesichtsteil die Abdichtung bei Bewegung. Scheinbar widersprüchliche Bewertungen einer „guten Leistung“ werden so auf die tatsächlich untersuchten Messfragen zurückgeführt.",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Zgodavová et al., ursprüngliche Figure 3: PLA-Oberfläche und Zugkurven.",
+          "interpretation": "Links ist die Oberflächenmorphologie dargestellt; rechts stehen Dehnung und Spannung auf der horizontalen beziehungsweise vertikalen Achse. Die Farben unterscheiden Proben aus verschiedenen Herstellungsbedingungen, nicht wiederholte Belastungen einer Probe. Steigung, Maximum und Bruchendpunkt betreffen Steifigkeit, Tragverhalten und Dehnbarkeit und sind beim Vergleich von Kopfbandmaterialien getrennt zu lesen."
+        },
+        "F02": {
+          "caption": "Zgodavová et al., ursprüngliche Figure 5: Oberflächenstruktur und Zugverhalten von PHA BioWOOD.",
+          "interpretation": "Links sind ausgeprägte Spalten an Partikeln und Oberflächenöffnungen sichtbar; rechts enden die Kurven bei unterschiedlichen Dehnungen. Die Abbildung verbindet Mikrostruktur und makroskopisches Bruchverhalten, quantifiziert aber kein Risswachstum beim wiederholten Tragen. Sie zeigt ein bestimmtes Verbundfilament und keine allgemeingültige PHA-Reaktion."
+        },
+        "F03": {
+          "caption": "Zgodavová et al., ursprüngliche Figure 11: Spannungs-Dehnungs-Vergleich dreier Materialien.",
+          "interpretation": "Rotes PLA und grünes PETG erreichen ähnliche maximale Spannungen, PETG trägt jedoch bei größerer Dehnung weiter Last; blaues PHA versagt früher. Die Achsen zeigen prozentuale Dehnung und MPa. Die Arbeit berichtet aus der Kurvenfläche keinen direkten Zähigkeitswert. Verglichen werden daher die Kurvenformen, ohne aus einer verkleinerten Abbildung eine zusätzliche Materialkennzahl zu berechnen."
+        },
+        "F04": {
+          "caption": "Ng et al., ursprüngliche Fig 4: Fit-Faktor-Verteilungen bei stationären und dynamischen Bewegungsaufgaben.",
+          "interpretation": "Die vertikale Achse verwendet Log10; Abstände zwischen Boxen sind logarithmisch zu interpretieren. Rosa und rote SSM-Boxen zeigen stationäre beziehungsweise dynamische Aufgaben, mit niedrigerem Median bei Bewegung. Hell- und dunkelblaue Boxen sind die entsprechenden Einwegmaskengruppen. Systemvergleiche und Bewegungsvergleiche innerhalb eines Systems beantworten unterschiedliche Fragen; die Boxhöhe allein isoliert keinen Materialeffekt."
+        },
+        "F05": {
+          "caption": "Ng et al., ursprüngliche Fig 6: individuell gepaarte Fit-Ergebnisse.",
+          "interpretation": "Die beiden Zeilen stehen für die beiden Masken, jede Spalte für dieselbe Person. Grün und Rot kennzeichnen Bestehen und Nichtbestehen; die Kreisgröße variiert mit dem Gesamt-Fit-Faktor. Keine Achse bildet Wiederverwendungszyklen ab. Die Darstellung zeigt individuelle Unterschiede und gepaarte Effekte, keine aus der Kreisgröße ablesbare Lebensdauer."
+        }
+      }
+    }
+  }
+}

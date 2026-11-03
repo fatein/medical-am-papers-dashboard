@@ -1,0 +1,344 @@
+{
+  "schema_version": 2,
+  "question_id": "P7-112",
+  "p": "P7",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_a903cd94e6ac5395da42",
+    "doc_75bb14e87a76804cc4e0"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Multi-modal microscopy imaging with the OpenFlexure Delta Stage",
+      "publisher": "Optics Express; author manuscript arXiv v3",
+      "year": 2022,
+      "url": "https://arxiv.org/abs/2112.05804v3",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "A versatile and customizable low-cost 3D-printed open standard for microscopic imaging",
+      "publisher": "Nature Communications",
+      "year": 2020,
+      "url": "https://doi.org/10.1038/s41467-020-19447-9",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Democratising “Microscopi”: a 3D printed automated XYZT fluorescence imaging system for teaching, outreach and fieldwork",
+      "publisher": "Wellcome Open Research",
+      "year": 2022,
+      "url": "https://doi.org/10.12688/wellcomeopenres.16536.2",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "A one-piece 3D printed flexure translation stage for open-source microscopy",
+      "publisher": "Review of Scientific Instruments",
+      "year": 2016,
+      "url": "https://doi.org/10.1063/1.4941068",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R02",
+      "original_label": "Fig. 1",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-112/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7688980/#Fig1",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Fig. 9",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-112/F02.png",
+      "source_url": "https://arxiv.org/pdf/2112.05804v3",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R01",
+      "original_label": "Fig. 10",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-112/F03.png",
+      "source_url": "https://arxiv.org/pdf/2112.05804v3",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R01",
+      "original_label": "Fig. 12",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-112/F04.png",
+      "source_url": "https://arxiv.org/pdf/2112.05804v3",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Fig. 6",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-112/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8968157/#f6",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R04",
+      "original_label": "Fig. 8",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-112/F06.png",
+      "source_url": "https://www.np.phy.cam.ac.uk/wp-content/uploads/sites/50/2024/06/RevSciInst16_3Dprintedmicroscope.pdf",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "模块化打印部件如何支持实验自动化？",
+      "direction": "低成本实验室设备",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "标准接口把光学、电机和电子件变成可重组的功能单元",
+          "markdown": "Diederich 等的 UC2 将光学系统按焦平面和功能拆成模块，基座网格节距为 50 mm。模块由底座、盖板和可更换内部插件构成；直径 5 mm 的钕球磁体与 DIN 912 铁磁螺钉形成磁性连接。四点固定适配矩形光路布局，底板也能改变朝向，支持空间装配。这里的标准化对象是机械接口和模块位置，不是保证任何透镜放入立方体后都自动共焦。[模块接口的原始设计](ref:R02)\n\n光学解释采用 4f 系统：相邻透镜的相关焦平面重合，整体几何才满足预定的傅里叶光学关系。固定节距减少重新制作连接架的工作，但镜头焦距、光轴高度和实际焦平面仍需匹配。电子模块可以通过 I2C 或 Wi-Fi/MQTT 接收照明、调焦命令，供电可由导电磁体或导线提供。论文展示的是模块组合和接口方案，没有给出多个模块逐级加入后的累积位置误差、通信延迟分布或长期接触电阻。机械上能吸合与自动实验的时序已经同步，不能由同一张结构图同时推出。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "运动模块的几何结构决定哪些部件必须一起移动",
+          "markdown": "McDermott 等的 OpenFlexure Delta Stage 在 2022 年作者稿 v3 中采用与早期笛卡尔机构不同的运动分工：台面沿 XYZ 移动，光学模块固定。这样调焦不必抬升较重的完整光学组件，独立更换镜头和照明组件也不必重新设计运动台。主体一次打印，三个支链绕平台相隔 120°；每条支链用平行四边形柔性结构约束台面姿态。柔性铰链长 1.5 mm，厚度为打印塑料三层，设计摆角约 6°。[Delta 机构作者稿](ref:R01)\n\n平行四边形的目的在于抑制倾斜和旋转，不能理解为横向移动绝无寄生 Z 位移。作者明确指出，延长结构能扩大行程，却会降低刚度、影响打印可靠性，并使小角度线性近似失效。驱动器从中心位置出发，文中给出的运动范围为 9×12×5 mm；这与其他 OpenFlexure 型号的行程不同。模块化保留了共同接口，同时保留特定几何的适用范围，不能把另一款机架的行程或精度标签直接贴到 Delta 上。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "笛卡尔命令必须转换为耦合的电机运动",
+          "markdown": "Delta 的单个驱动方向并不等于一个独立 XYZ 轴。软件通过线性关系把 a、b、c 驱动坐标组合成台面坐标：横向 X 来自两个驱动的反向组合，Y 涉及三个驱动的不同权重，Z 来自共同运动，并另加各轴尺度换算。原图用旋转箭头显示这种耦合；若只替换一个杠杆长度而沿用原换算，命令坐标不再具有原来的物理意义。[运动映射与控制器](ref:R01)\n\n装置采用 28BYJ-48 减速步进电机和 Sangaboard v0.2/v0.3，电机由独立 5 V 供电。作者说明减速齿轮带来较低速度，也会产生回差，控制软件对此补偿；在 100× 物镜下可使用约 0.5 μm 的移动与调焦步长。这是所述成像操作能力，没有独立的全行程定位误差图或重复往返置信区间。柔性台避免了滑动导轨的部分摩擦问题，却没有消除电机齿轮、螺杆和软件换算中的误差来源。对于自动扫描，最小命令步长与多次回到同一点的误差必须分开。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "硬件更换需要控制服务同时知道新模块的功能",
+          "markdown": "Delta 的 Raspberry Pi 4 与 Sangaboard 安装在底座内，以 20 mm 支柱和 M2.5 紧固件分层固定，接口开孔保留电源、USB 和存储卡访问。OpenFlexure 软件 2.10 采用 Python/Flask 服务器和客户端架构，浏览器或脚本通过 API 控制电机、相机和采集。扩展程序可以为附加硬件注册自己的接口与界面；共享机架因此不要求每增加模块就重写整个控制服务。[软件扩展与电子集成](ref:R01)\n\n但这种可扩展性依赖明确的设备驱动和命令含义。作者展示的可编程照明扩展让照明状态与相机采集相协调；论文没有给出硬件触发抖动、网络断线后的恢复率或多台仪器的同步误差。相机为 Sony IMX219、8 MP、3280×2464，移除原短焦镜头后会出现背景和颜色响应不均，需要与该光学配置对应的校正。相同插槽和相同 API 不能保证更换探测器后旧校准仍然成立。制造侧的 OpenSCAD 源码、自动生成 STL 和版本化装配说明解决文件对应问题，并未替代物理标定。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "自动归零、调焦和拼接分别依赖不同的测量信息",
+          "markdown": "Wincott 等的 Microscopi 修订版提供另一种模块分工：XY 柔性台移动承载面，M4 螺钉驱动打印滑块移动物镜进行 Z 调焦。其 XY 行程各 3 mm，Z 行程 4 mm。电机归零用微动开关，之后按物镜偏移量到预期焦面；更精细的合焦再比较 Z 序列的清晰度分数。因此固定原点、预设偏移和图像反馈是不同步骤，具有开关不等于已经测得焦平面。[Microscopi 自动控制](ref:R03)\n\n该系统的调焦图注将约 100 个电机单位对应 0.1 mm，而非把任意单位当作长度单位。拼接示例使用 10×、NA 0.25 物镜，按行蛇形采集 5×5 图块并保留 30% 重叠，最后得到约 1.5×1.2 mm 视场。作者以图像内容配准完成拼接，这同时说明机械扫描与像素坐标对齐不是同一个动作。界面将时间序列、Z-stack 和拼接列为可调用任务，但未比较不同扫描路线的总耗时、漏帧率和往返定位分布。可组合命令已经实现，稳定执行的范围仍应对应所展示的配置。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "自动路径的返回误差需要单独检验，不能用最小步距代替",
+          "markdown": "Sharkey 等早期柔性台的测量揭示了这种区别。几何预测的横向微步为 78 nm，跟踪实验测得 67±6 nm，约为预测值的 86%；这一差别来自具体运动传递，不能直接当作 Delta 的标定系数。作者再让平台完成不同半径的移动并返回原点：小幅移动返回误差低于 1 μm，正文报告约 1 mm 路径时达到 15 μm。其原图实际画到约 500 μm 半径、末点约 5.6 μm；正文更大范围的数值不应假装已经出现在图中。[返回误差实验](ref:R04)\n\n这种幅度依赖说明自动任务不仅需要选择步长，还需要知道是否换向、运动范围多大，以及何时依赖图像重新配准。UC2 也报告 PLA 结构在温度变化下的变形，ABS 在比较中更稳定，热平衡后部分实验没有启用其已开发的自动对焦；这与讨论中将机械结构和自动对焦并列的笼统描述应区分。控制软件能够补偿某类误差，不等于每次实验都启用了补偿，更不等于打印模块本身没有漂移。现有论文尚未提供统一负载和温度下，对磁性立方体、滑块机构和 Delta 柔性台的同条件重复性比较。[材料与调焦条件](ref:R02)",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Diederich et al.：焦平面与可拆接口共同定义模块",
+          "interpretation": "a 展示照明、聚光镜、物镜、管镜与传感器间的焦平面关系；b 分解盖板、螺钉、磁球、插件和电子板，c 是组合实物。统一接口仍要求光学件位置匹配。磁性连接旁没有位移误差坐标，不能作为重复拆装后的光轴保持测量。[UC2 原图](ref:R02)"
+        },
+        "F02": {
+          "caption": "McDermott et al.：红色连杆解释运动约束",
+          "interpretation": "电机经过齿轮和螺杆驱动下方杠杆，红线标出平行四边形等效铰接链，上部为承载台，右侧为固定基座。图区分运动和固定件，解释光学件为何静止；它不是应力云图或循环寿命曲线。[机构原图](ref:R01)"
+        },
+        "F03": {
+          "caption": "McDermott et al.：平移需要多个驱动配合",
+          "interpretation": "左、中、右分别示意正 X、Y、Z 运动；a、b、c 齿轮旁箭头表示转向。横向运动需要反向或加权驱动组合，不能按单电机单轴理解。图没有换向后的实际落点，运动学示意与误差测量是不同证据。[映射原图](ref:R01)"
+        },
+        "F04": {
+          "caption": "McDermott et al.：底座分开电源、数据与电机接口",
+          "interpretation": "Raspberry Pi 4 在下、Sangaboard v0.3 在上，分别标出 Power USB、Data USB、电机接口和 SD card access slot。接口可接近有利于维修；图没有电流、温升或通信延迟实测，不能从紧凑布置推导长期可靠性。[电子原图](ref:R01)"
+        },
+        "F05": {
+          "caption": "Wincott et al.：不同终端调用同一任务控制",
+          "interpretation": "A、B 为桌面和手机视图，C 是时间序列、Z-stack、拼接及相机窗口。终端变化没有新增机械反馈。显示步长是界面参数而非定位准确度；图支持任务可组合，不证明全部组合的完成率。[界面原图](ref:R03)"
+        },
+        "F06": {
+          "caption": "Sharkey et al.：返回误差随路径半径增长",
+          "interpretation": "横轴 Move Radius 为对数刻度，纵轴 Error，均为 μm。小半径红点低于 1 μm，大半径快速上升，插图落点云显示离群返回位置。最后可见点约 500 μm、5.6 μm，正文约 1 mm、15 μm 并非图中另一点。它检验路径后重复性而非最小步长。[误差原图](ref:R04)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do modular printed components support experimental automation?",
+      "direction": "Low-cost laboratory equipment",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Standard interfaces turn optics, motors and electronics into recombinable units",
+          "markdown": "Diederich et al.'s UC2 divides optical systems by focal plane and function, using a baseplate grid with 50 mm pitch. Modules comprise a base, lid and interchangeable insert; 5 mm neodymium ball magnets engage ferromagnetic DIN 912 screws. Four-point fixation accommodates rectangular optical layouts, while differently oriented baseplates support spatial assembly. The standard concerns mechanical interfaces and module positions, not automatic coincidence of focal planes for any lens inserted into a cube. [Original modular interface](ref:R02)\n\nThe optical argument uses a 4f system: relevant focal planes of adjacent lenses coincide to produce the intended Fourier-optical geometry. Fixed pitch reduces fabrication of new connectors, but lens focal lengths, axis height and actual focal planes must still match. Electronic modules accept illumination and focus commands through I2C or Wi-Fi/MQTT; conducting magnets or wires supply power. The paper demonstrates combinations and interfaces, without cumulative positioning-error measurements as modules are added, communication-latency distributions or long-term contact resistance. Mechanical engagement and synchronised experimental timing cannot both be inferred from one construction drawing.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Motion geometry determines which components must move together",
+          "markdown": "In their 2022 author manuscript v3, McDermott et al.'s OpenFlexure Delta Stage assigns motion differently from the earlier Cartesian mechanism: the platform moves in XYZ while optics remain stationary. Focusing therefore need not raise a heavier complete optical assembly, and changing optics or illumination need not redesign the stage. Its body prints as one piece, with three chains separated by 120° around the platform. Each uses a flexure parallelogram to constrain orientation. Hinges are 1.5 mm long, three printed plastic layers thick, with approximately 6° designed deflection. [Delta mechanism author manuscript](ref:R01)\n\nParallelograms suppress tilt and rotation; they do not establish absence of parasitic Z motion during lateral travel. The authors explicitly state that extending the structure increases travel at the expense of stiffness and print reliability and can invalidate the small-angle linear approximation. Starting with centred actuators, the stated travel is 9×12×5 mm, differing from other OpenFlexure models. Modular interfaces coexist with geometry-specific limits; travel and precision labels from another frame cannot simply be transferred to Delta.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Cartesian commands must become coupled motor movements",
+          "markdown": "A single Delta actuator direction is not an independent XYZ axis. Software linearly combines actuator coordinates a, b and c into platform coordinates: X uses opposing contributions, Y combines all three with different weights, and Z uses common motion, with additional axis scaling. Rotation arrows illustrate this coupling. Replacing one lever length while retaining the conversion changes the physical meaning of commanded coordinates. [Motion mapping and controller](ref:R01)\n\nThe instrument uses geared 28BYJ-48 motors and Sangaboard v0.2/v0.3 with independent 5 V motor power. Reduction gears lower speed and introduce backlash, which the control software compensates. The authors describe moving and focusing in approximately 0.5 μm steps with a 100× objective. This is reported imaging-operation capability, without an independent full-travel positioning-error map or confidence intervals for repeated returns. Flexures remove some sliding-guide friction but do not eliminate errors from motor gears, screws and coordinate conversion. Minimum commanded steps and errors on repeated visits must remain separate for automated scanning.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Hardware exchange requires the control service to understand the new module",
+          "markdown": "Delta houses Raspberry Pi 4 and Sangaboard in the base, separated by 20 mm standoffs and M2.5 fasteners, with access for power, USB and the storage card. OpenFlexure software 2.10 uses a Python/Flask server–client architecture. Browsers and scripts control motors, camera and acquisition through an API. Extensions register interfaces and controls for additional hardware, so a shared frame need not require rewriting the entire control service whenever a module is added. [Software extensions and electronics](ref:R01)\n\nExtensibility nevertheless depends on defined drivers and command semantics. The programmable illumination extension coordinates illumination states and camera acquisition, but the paper provides no hardware-trigger jitter, network-disconnection recovery rate or synchronisation errors across instruments. Its Sony IMX219 camera has 8 MP and 3280×2464 pixels. Removing the original short-focus lens produces nonuniform background and colour response requiring configuration-specific correction. Shared slots and APIs do not establish that old calibration survives a detector replacement. OpenSCAD sources, automatically generated STL files and versioned assembly documentation maintain file correspondence rather than replace physical calibration.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Homing, focusing and stitching require different measurements",
+          "markdown": "Wincott et al.'s revised Microscopi offers another division: an XY flexure platform carries the object, while an M4 screw drives a printed slider moving the objective in Z. XY travel is 3 mm per axis, with 4 mm in Z. A microswitch establishes home; objective-specific offsets then approach an expected focal plane, followed by sharper focus through scoring a Z image series. Fixed origin, preset offset and image feedback are separate operations: a switch does not measure the focal plane. [Microscopi automation](ref:R03)\n\nThe focus figure associates approximately 100 motor units with 0.1 mm rather than treating arbitrary units as lengths. The stitching example uses a 10×, NA 0.25 objective, a snake-by-rows 5×5 tile sequence and 30% overlap to produce approximately 1.5×1.2 mm field coverage. Registration uses image content, showing that mechanical scanning and pixel-coordinate alignment are distinct operations. The interface exposes time series, Z-stack and stitching tasks but does not compare route-dependent total time, dropped frames or return-position distributions. Composable commands are implemented; reliable execution remains bounded by the demonstrated configuration.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Return errors require separate tests and cannot be replaced by minimum step size",
+          "markdown": "Measurements on Sharkey et al.'s earlier flexure stage demonstrate the distinction. Geometric lateral microsteps were predicted as 78 nm, while tracking measured 67±6 nm, approximately 86% of prediction. This reflects that particular transmission and is not a Delta calibration factor. The stage then moved over different radii and returned to the origin. Small movements produced return errors below 1 μm; the text reports 15 μm for approximately 1 mm moves. The actual graph extends to approximately 500 μm radius with a final point around 5.6 μm. The larger-range text value must not be represented as a plotted point. [Return-error experiment](ref:R04)\n\nAmplitude dependence means automated tasks require knowledge of reversals, travel range and when image registration is needed, beyond step selection. UC2 also reports temperature-dependent PLA deformation, with ABS more stable in the comparison. After equilibration, some experiments did not use the developed autofocus, a distinction from the discussion's broader association of mechanics and autofocus. Software capable of compensation does not establish that compensation was enabled in every experiment or that printed modules themselves were drift-free. The papers provide no matched-load, matched-temperature repeatability comparison between magnetic cubes, slider mechanisms and the Delta flexure platform. [Material and focusing conditions](ref:R02)",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Diederich et al.: focal planes and detachable interfaces jointly define modules",
+          "interpretation": "a links focal planes of illumination, condenser, objective, tube lens and sensor; b separates lid, screws, magnetic balls, insert and electronics; c shows an assembly. Shared interfaces still require correctly positioned optics. There are no displacement-error axes beside the magnetic connection; it does not measure optical-axis retention after reassembly. [Original UC2 figure](ref:R02)"
+        },
+        "F02": {
+          "caption": "McDermott et al.: red links explain motion constraints",
+          "interpretation": "Motor, gears and screw drive the lower lever; red lines identify the equivalent parallelogram joint chain, with the platform above and fixed base at right. Moving and stationary parts explain stationary optics. This is not a stress map or cyclic-lifetime curve. [Original mechanism](ref:R01)"
+        },
+        "F03": {
+          "caption": "McDermott et al.: translations require coordinated drives",
+          "interpretation": "Left, centre and right show positive X, Y and Z motion; arrows beside gears a, b and c indicate rotation. Lateral motion needs opposing or weighted contributions rather than one independent axis per motor. Actual landing positions after reversal are absent; kinematics and error measurements are different evidence. [Original mapping](ref:R01)"
+        },
+        "F04": {
+          "caption": "McDermott et al.: the base separates power, data and motor access",
+          "interpretation": "Raspberry Pi 4 sits below Sangaboard v0.3, with Power USB, Data USB, motor connectors and SD card access slot labelled. Accessible interfaces assist repair. No currents, thermal rises or communication latencies are measured; compact packaging does not establish long-term reliability. [Original electronics](ref:R01)"
+        },
+        "F05": {
+          "caption": "Wincott et al.: different terminals call common task controls",
+          "interpretation": "A and B show desktop and phone layouts; C contains time-series, Z-stack, stitching and camera windows. Terminal changes add no mechanical feedback. Displayed step sizes are interface parameters rather than positioning accuracy. The figure supports task composition, not completion rates for all combinations. [Original interface](ref:R03)"
+        },
+        "F06": {
+          "caption": "Sharkey et al.: return errors increase with path radius",
+          "interpretation": "Move Radius is logarithmic and Error linear, both in μm. Small-radius red points remain below 1 μm, rising rapidly at larger radii; inset landing clouds show outliers. The last visible point is approximately 500 μm and 5.6 μm. Prose values of approximately 1 mm and 15 μm are not another plotted point. This tests post-path repeatability rather than minimum steps. [Original error plot](ref:R04)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie unterstützen modulare Druckteile die Versuchsautomatisierung?",
+      "direction": "Kostengünstige Laborgeräte",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Standardschnittstellen machen Optik, Motoren und Elektronik neu kombinierbar",
+          "markdown": "UC2 von Diederich et al. zerlegt optische Systeme nach Fokalebene und Funktion; das Grundplattenraster besitzt 50 mm Teilung. Module bestehen aus Unterteil, Deckel und austauschbarem Einsatz. Neodym-Kugelmagnete mit 5 mm Durchmesser verbinden sich mit ferromagnetischen DIN 912-Schrauben. Vierpunktfixierung passt zu rechteckigen Strahlengängen, verschieden orientierte Grundplatten erlauben räumliche Montage. Standardisiert werden mechanische Schnittstellen und Modulpositionen, nicht automatisch zusammenfallende Fokalebenen jeder eingesetzten Linse. [Ursprüngliche Modulschnittstelle](ref:R02)\n\nDie optische Begründung nutzt ein 4f-System: Relevante Fokalebenen benachbarter Linsen fallen für die gewünschte Fourier-optische Geometrie zusammen. Feste Teilung reduziert neue Verbindungskonstruktionen, dennoch müssen Brennweiten, Achshöhe und tatsächliche Fokalebenen passen. Elektronikmodule empfangen Beleuchtungs- und Fokusbefehle über I2C oder Wi-Fi/MQTT; leitende Magnete oder Kabel versorgen sie. Gezeigt werden Kombinationen und Schnittstellen, jedoch keine kumulierten Positionsfehler bei zusätzlichen Modulen, Kommunikationslatenzverteilungen oder langfristigen Kontaktwiderstände. Mechanisches Einrasten und synchronisierte Versuchszeitabläufe folgen nicht gemeinsam aus einer Aufbauzeichnung.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Die Bewegungsgeometrie bestimmt gemeinsam bewegte Komponenten",
+          "markdown": "Im Autorenmanuskript v3 von 2022 verteilt die OpenFlexure Delta Stage von McDermott et al. Bewegung anders als der frühere kartesische Mechanismus: Die Plattform bewegt sich in XYZ, die Optik bleibt fest. Fokussieren muss damit keine schwere komplette Optik anheben; ein Optik- oder Beleuchtungswechsel verlangt keine neue Tischkonstruktion. Der Körper wird einteilig gedruckt; drei Ketten liegen um 120° versetzt um die Plattform. Jede nutzt ein Festkörpergelenk-Parallelogramm zur Orientierungsbindung. Gelenke sind 1.5 mm lang und drei Druckschichten dick, bei ungefähr 6° geplanter Auslenkung. [Autorenmanuskript zum Delta-Mechanismus](ref:R01)\n\nParallelogramme unterdrücken Neigung und Rotation, belegen aber keine Abwesenheit parasitärer Z-Bewegung bei seitlichem Verfahren. Laut Autoren erhöht Verlängerung den Weg auf Kosten von Steifigkeit und Druckzuverlässigkeit und kann die lineare Kleinwinkelnäherung ungültig machen. Ausgehend von mittigen Aktuatoren beträgt der angegebene Weg 9×12×5 mm, anders als bei weiteren OpenFlexure-Modellen. Modulschnittstellen bestehen zusammen mit geometriespezifischen Grenzen; Wege und Präzisionsangaben anderer Rahmen lassen sich nicht auf Delta übertragen.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Kartesische Befehle werden in gekoppelte Motorbewegungen übersetzt",
+          "markdown": "Eine Delta-Aktuatorrichtung entspricht keiner unabhängigen XYZ-Achse. Die Software kombiniert a, b und c linear zu Plattformkoordinaten: X nutzt gegenläufige Beiträge, Y alle drei mit unterschiedlichen Gewichten, Z gemeinsame Bewegung, jeweils mit zusätzlicher Achsskalierung. Drehpfeile veranschaulichen die Kopplung. Wird nur eine Hebellänge verändert und die Umrechnung beibehalten, ändert sich die physikalische Bedeutung der Sollkoordinaten. [Bewegungsabbildung und Steuerung](ref:R01)\n\nVerwendet werden 28BYJ-48-Getriebemotoren und Sangaboard v0.2/v0.3 mit eigenständiger 5 V Motorversorgung. Untersetzung verringert die Geschwindigkeit und erzeugt Umkehrspiel, das die Software kompensiert. Beschrieben werden Bewegungs- und Fokusschritte von ungefähr 0.5 μm mit einem 100×-Objektiv. Dies ist berichtete Bedienfähigkeit, ohne unabhängige Positionsfehlerkarte über den Gesamtweg oder Konfidenzintervalle wiederholter Rückkehr. Festkörpergelenke vermeiden einen Teil der Gleitführungsreibung, beseitigen jedoch keine Fehler aus Getriebe, Schraube und Koordinatenumrechnung. Kleinste Sollschritte und Fehler wiederholter Punktbesuche bleiben beim automatischen Scannen getrennt.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Hardwarewechsel verlangt Funktionskenntnis im Steuerdienst",
+          "markdown": "Delta integriert Raspberry Pi 4 und Sangaboard im Sockel, getrennt durch 20 mm Abstandshalter mit M2.5-Befestigung und zugänglichen Strom-, USB- und Speicherkartenanschlüssen. OpenFlexure-Software 2.10 verwendet eine Python/Flask-Server-Client-Architektur. Browser und Skripte steuern Motoren, Kamera und Erfassung über eine API. Erweiterungen registrieren Schnittstellen und Bedienelemente zusätzlicher Hardware; jedes neue Modul verlangt daher keine vollständige Neuentwicklung des Steuerdiensts. [Softwareerweiterung und Elektronik](ref:R01)\n\nErweiterbarkeit setzt dennoch definierte Treiber und Befehlsbedeutungen voraus. Die programmierbare Beleuchtungserweiterung koordiniert Lichtzustände und Kameraaufnahme; Hardwaretriggerjitter, Wiederherstellungsraten nach Netzausfall und Synchronisationsfehler zwischen Geräten werden nicht gemessen. Sony IMX219 besitzt 8 MP beziehungsweise 3280×2464 Pixel. Nach Entfernung der ursprünglichen kurzbrennweitigen Linse entstehen ungleichmäßiger Hintergrund und Farbreaktion, die konfigurationsbezogene Korrektur benötigen. Gemeinsame Steckplätze und APIs garantieren keine weiterhin gültige Kalibrierung nach Detektorwechsel. OpenSCAD-Quellen, automatisch erzeugte STL-Dateien und versionierte Montageanleitungen sichern Dateizusammenhänge, ersetzen aber keine physikalische Kalibrierung.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Referenzfahrt, Fokussierung und Stitching benötigen unterschiedliche Messinformationen",
+          "markdown": "Die überarbeitete Microscopi-Version von Wincott et al. verteilt Funktionen anders: Ein XY-Festkörpergelenktisch trägt das Objekt, während eine M4-Schraube einen gedruckten Schlitten samt Objektiv in Z bewegt. XY besitzen jeweils 3 mm, Z 4 mm Weg. Ein Mikroschalter definiert den Ursprung; objektivspezifische Versätze führen zur erwarteten Fokalebene, danach bewertet eine Z-Bildserie feineren Fokus. Fester Ursprung, voreingestellter Versatz und Bildrückmeldung sind getrennte Vorgänge: Ein Schalter misst keine Fokalebene. [Microscopi-Automatisierung](ref:R03)\n\nDie Fokuslegende ordnet ungefähr 100 Motoreinheiten 0.1 mm zu, statt willkürliche Einheiten als Längen zu behandeln. Das Stitching-Beispiel nutzt ein 10×-Objektiv mit NA 0.25, eine zeilenweise schlangenförmige 5×5-Kachelfolge und 30% Überlappung für ungefähr 1.5×1.2 mm Bildfeld. Die Registrierung erfolgt bildinhaltsbasiert; mechanisches Scannen und Pixelkoordinatenausrichtung sind verschiedene Vorgänge. Die Oberfläche bietet Zeitserien, Z-stack und Stitching, vergleicht jedoch keine wegabhängigen Gesamtzeiten, ausgelassenen Bilder oder Rückkehrpositionsverteilungen. Kombinierbare Befehle sind realisiert; zuverlässige Ausführung bleibt an die gezeigte Konfiguration gebunden.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Rückkehrfehler erfordern eigene Tests statt Ersatz durch kleinste Schrittweite",
+          "markdown": "Messungen am früheren Festkörpergelenktisch von Sharkey et al. verdeutlichen den Unterschied. Geometrisch erwartete laterale Mikroschritte betrugen 78 nm; Tracking ergab 67±6 nm beziehungsweise ungefähr 86% davon. Dies beschreibt die konkrete Übertragung und ist kein Delta-Kalibrierfaktor. Danach verfuhr der Tisch über verschiedene Radien zum Ursprung zurück. Kleine Bewegungen ergaben unter 1 μm Rückkehrfehler; der Text nennt 15 μm bei ungefähr 1 mm Bewegungen. Die Grafik reicht tatsächlich nur bis ungefähr 500 μm Radius mit etwa 5.6 μm am letzten Punkt. Der Textwert des größeren Bereichs ist kein dargestellter Datenpunkt. [Rückkehrfehlerversuch](ref:R04)\n\nDie Amplitudenabhängigkeit verlangt Kenntnis von Richtungswechseln, Bewegungsbereich und nötiger Bildregistrierung über die Schrittwahl hinaus. UC2 berichtet temperaturabhängige PLA-Verformung; ABS war im Vergleich stabiler. Nach thermischer Angleichung nutzten manche Experimente den entwickelten Autofokus nicht, anders als die allgemeinere Verbindung von Mechanik und Autofokus in der Diskussion vermuten lässt. Mögliche Softwarekompensation bedeutet weder deren Aktivierung in jedem Versuch noch driftfreie Druckmodule. Ein Wiederholbarkeitsvergleich unter gleicher Last und Temperatur zwischen Magnetwürfeln, Schlitten und Delta-Festkörpergelenktisch fehlt in den ausgewählten Arbeiten. [Material- und Fokusbedingungen](ref:R02)",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Diederich et al.: Fokalebenen und lösbare Schnittstellen definieren Module gemeinsam",
+          "interpretation": "a verbindet Fokalebenen von Beleuchtung, Kondensor, Objektiv, Tubuslinse und Sensor; b trennt Deckel, Schrauben, Magnetkugeln, Einsatz und Elektronik; c zeigt einen Aufbau. Gemeinsame Schnittstellen verlangen korrekt positionierte Optik. Wegfehlerachsen fehlen an der Magnetverbindung; Achserhalt nach Wiederzusammenbau wird nicht gemessen. [Original-UC2-Abbildung](ref:R02)"
+        },
+        "F02": {
+          "caption": "McDermott et al.: rote Verbindungen erklären Bewegungszwänge",
+          "interpretation": "Motor, Getriebe und Schraube bewegen den unteren Hebel; rote Linien markieren die äquivalente Parallelogramm-Gelenkkette, oben liegt der Tisch, rechts die feste Basis. Bewegte und feste Teile erklären stationäre Optik. Dies ist keine Spannungskarte oder Lebensdauerkurve. [Originalmechanismus](ref:R01)"
+        },
+        "F03": {
+          "caption": "McDermott et al.: Translation verlangt koordinierte Antriebe",
+          "interpretation": "Links, mittig und rechts sind positive X-, Y- und Z-Bewegungen gezeigt; Pfeile neben a, b und c kennzeichnen Drehungen. Seitliche Bewegung benötigt gegenläufige oder gewichtete Beiträge statt einer unabhängigen Achse je Motor. Endpositionen nach Umkehr fehlen; Kinematik und Fehlermessung liefern unterschiedliche Evidenz. [Originalabbildung](ref:R01)"
+        },
+        "F04": {
+          "caption": "McDermott et al.: der Sockel trennt Strom-, Daten- und Motorzugang",
+          "interpretation": "Raspberry Pi 4 liegt unter Sangaboard v0.3; Power USB, Data USB, Motoranschlüsse und SD card access slot sind markiert. Zugänglichkeit unterstützt Reparaturen. Ströme, Temperaturanstiege und Kommunikationslatenzen sind ungemessen; kompakte Anordnung belegt keine langfristige Zuverlässigkeit. [Originalelektronik](ref:R01)"
+        },
+        "F05": {
+          "caption": "Wincott et al.: verschiedene Endgeräte rufen gemeinsame Aufgabensteuerung auf",
+          "interpretation": "A und B zeigen Computer- und Telefonansicht; C enthält Zeitserien-, Z-stack-, Stitching- und Kamerafenster. Andere Endgeräte liefern keine zusätzliche mechanische Rückmeldung. Schrittangaben sind Oberflächenparameter, keine Positionsgenauigkeit. Belegt wird Kombinierbarkeit, nicht die Erfolgsquote aller Kombinationen. [Originaloberfläche](ref:R03)"
+        },
+        "F06": {
+          "caption": "Sharkey et al.: Rückkehrfehler wachsen mit dem Wegradius",
+          "interpretation": "Move Radius ist logarithmisch, Error linear, beide in μm. Rote Punkte kleiner Radien bleiben unter 1 μm und steigen bei größeren stark an; eingefügte Positionswolken zeigen Ausreißer. Der letzte sichtbare Punkt liegt bei ungefähr 500 μm und 5.6 μm. Textwerte von ungefähr 1 mm und 15 μm bilden keinen weiteren Grafikpunkt. Geprüft wird Wiederholbarkeit nach Bewegung, nicht kleinste Schrittweite. [Originalfehlerkurve](ref:R04)"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "schema_version": 2,
+  "question_id": "P7-103",
+  "p": "P7",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_1f479d4c48ed8fd4de72",
+    "KB20260B44C9EB484F",
+    "doc_1c354285635a43e3eca8"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Breaking the Third Wall: Implementing 3D-Printing Techniques to Expand the Complexity and Abilities of Multi-Organ-on-a-Chip Devices",
+      "publisher": "Micromachines",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/mi12060627",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Rapid Biofabrication of an Advanced Microphysiological System Mimicking Phenotypical Heterogeneity and Drug Resistance in Glioblastoma",
+      "publisher": "Advanced Healthcare Materials",
+      "year": 2024,
+      "url": "https://doi.org/10.1002/adhm.202401876",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "A microfluidic bone marrow model combining CFD and organ-on-a-chip technologies to study leukemia niche dynamics",
+      "publisher": "Frontiers in Bioengineering and Biotechnology",
+      "year": 2026,
+      "url": "https://doi.org/10.3389/fbioe.2026.1766296",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 4",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8227399/figure/micromachines-12-00627-f004/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P7-103/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R02",
+      "original_label": "Figure 3",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11616263/figure/adhm202401876-fig-0003/",
+      "license": "CC BY-NC 4.0",
+      "asset_path": "assets/academic_figures/P7-103/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Figure 5",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11616263/figure/adhm202401876-fig-0005/",
+      "license": "CC BY-NC 4.0",
+      "asset_path": "assets/academic_figures/P7-103/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Figure 6",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11616263/figure/adhm202401876-fig-0006/",
+      "license": "CC BY-NC 4.0",
+      "asset_path": "assets/academic_figures/P7-103/F04.jpg"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R02",
+      "original_label": "Figure 7",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11616263/figure/adhm202401876-fig-0007/",
+      "license": "CC BY-NC 4.0",
+      "asset_path": "assets/academic_figures/P7-103/F05.jpg"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R03",
+      "original_label": "Figure 8",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13253809/figure/F8/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P7-103/F06.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "器官芯片和肿瘤模型如何模拟疾病？",
+      "direction": "体外细胞与组织模型",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "器官连接结构与疾病模拟的证据起点",
+          "markdown": "器官芯片把细胞所在的空间、相邻组织界面及液体输运组织成可观察的小系统；肿瘤模型则进一步检验这些关系是否产生疾病相关变化。打印提供的是边界和组织位置，疾病表型仍须由细胞、基质和对照实验体现。Goldstein 等的多器官芯片以多孔 PET 膜分隔上下腔室，各培养腔具有独立进出口，底部连接通道允许区室交流。其结构能够安排不同局部流动，却没有在同一研究中完成多个成熟器官的药代或疾病验证。[独立区室与连接通道](ref:R01)\n\n原文计算得到两个腔室平均剪切应力分别为 0.002 与 0.01 dyne/cm²，较高应力主要出现在出口和连接通道。这里的数值是计算流体力学结果，不是膜面传感器实测，也不是所有细胞都经历同一应力的证明。图中俯视与侧视色标范围不同，不能凭相同颜色跨面板比较应力大小。对需要受流动刺激的内皮与需要低机械扰动的组织，几何隔离提出了可检验的差异条件。\n\n研究还观察到染色水连续通过器件 1 周未发生可见泄漏；PC9 肿瘤球在打印孔与琼脂孔中的 GFP 信号比较，未见显著损失。这分别支持封装完整性和初步相容性，不能替代屏障通透性、肝代谢或肿瘤侵袭测量。GFP 是存活相关的间接读数，受表达和成像影响，也没有显示多器官之间已形成特定疾病因果链。将这个工程起点与后续功能芯片比较，才能看清疾病模拟新增了哪些实验证据。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "材料吸收和输运本身会改变药物读数",
+          "markdown": "Pun 等的 GlioFlow3D 将打印刚性外壳、纤维蛋白基质和内皮化通道结合，用同一类脑微血管内皮细胞分别与星形胶质细胞或 U87 胶质瘤细胞比较。其意义不仅在于三维形状：管腔附近和外围处于不同输运环境，材料又可能从液体中移走药物。因此疾病反应之前，必须区分器件造成的暴露差异。[GlioFlow3D 材料与输运实验](ref:R02)\n\n无细胞器件实验中，PDMS 对荧光示踪物的残留高于打印材料；质谱测得接触 PDMS 后液体中的替莫唑胺不足初始量的 5%，打印器件则接近输入量。该比较每组为 3 个器件，证明这套材料和接触条件能显著改变回收量。它并未直接测量细胞所在基质中的游离药物浓度，也不能把“输入减去输出”全部确认为单一吸收机制；降解、吸附及检测回收需分别考虑。报告据此将药物回收作为器件性能读数，而非细胞耐药终点。\n\n该研究还把流场计算与无细胞荧光测量对应：管周区域平均间质流速约 15 µm/s，外围约 5 µm/s，测量来自 3 个器件。空间差异能帮助解释细胞位置相关表型，但无细胞流场不能直接代表有细胞、屏障受损或基质重塑后的全部状态。尤其这些速度不能被写成所有脑组织统一的“生理值”；研究比较的是具体模型中两个区域的环境差别，而不是证明整个芯片复原了患者脑内的每一种流动条件。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "从内皮标记到可测的屏障失效",
+          "markdown": "GlioFlow3D 的屏障实验包含内皮单独存在、与星形胶质细胞共存、与 U87 共存三个条件。星形胶质细胞使示踪物外漏减少，U87 则伴随 PECAM1 边界不连续和通透性增加。这种方向相反的对照比单独展示肿瘤细胞存活更有解释力：同一结构能区分支持屏障与破坏屏障的邻近细胞作用。[屏障与可溶性因子](ref:R02)\n\n在第 5 天进行的 3 kDa 葡聚糖试验，以表观通透系数而非单幅荧光亮度报告结果，每条件有 3–4 个生物学重复。原图同时显示腔外浓度分布与统计比较；PECAM1 图像提供连接结构的证据，通透系数则给出输运功能的证据。两者相互支持，但通透性升高仅复现了与血管渗漏相关的病理环节，并未测量真实脑水肿的组织压力、颅内压或患者症状。\n\n可溶性因子图也不能概括成“所有炎症通路均被激活”。原图中的 IL-6、IL-8 与 MMP-2 差异显著，而 MCP-1、IL-10、IL-1beta、MMP-9 与 MMP-12 标记为不显著。原文讨论将若干金属蛋白酶与基质重塑联系起来，报告仍按图中统计区分有支持的升高与未达到显著的结果。分泌物改变、连接破坏和渗漏共同描述了肿瘤相关微环境，但没有通过阻断某一因子证明它单独导致屏障破坏；这一因果层次不能由几个同时变化的终点补上。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "空间异质性要与标记、形状及独立样本对应",
+          "markdown": "同一种 U87 细胞在芯片管周区域更偏圆形，外围及静态纤维蛋白对照中更多呈分枝形。图中形状指数从 0 到 1，接近 1 表示较圆；散点代表单个细胞，实验却只有 3 个生物学重复。大量细胞点不能被计成等量独立器件，否则会夸大可重复性。空间位置与形态相关，也不意味着每一个圆细胞已经被证明具有肿瘤起始能力。[空间表型与标记表达](ref:R02)\n\n作者进一步测量 CD133 阳性比例，采用 2 次独立实验中的 6 个生物学重复，管周区域高于外围及静态对照。形态与标记相互补充，使“局部环境对应不同细胞状态”比只凭外观更可信。不过 CD133 是这里使用的自我更新相关标记，并未通过克隆形成、连续传代或体内起瘤终点验证每个细胞的功能性干性。也没有对流动、内皮接触与空间药物梯度作完整独立拆分。\n\n这项模型以已建立细胞系呈现肿瘤内部的区域差异，与使用多个患者样本描述患者间差异属于不同任务。报告将其称为模型内的表型异质性，不写成已经覆盖胶质母细胞瘤的全部分子亚型。若只有一个区域的平均荧光，可能把细胞数量和单细胞表达混在一起；原文按细胞核计算阳性比例，至少保留了细胞组成这一层的分母信息。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "药物反应的区域差异与临床耐药之间",
+          "markdown": "替莫唑胺实验将芯片管周、芯片外围与静态三维基质分别同各自未处理组比较。经过 3 天药物暴露后，外围与静态组死亡染色增加，管周区域增加较小。原图纵轴是相对于各自假处理组的 DRAQ7 阳性细胞倍数，并非绝对死亡率，也不是存活比例；接近 1 的柱子表示相对变化较小，而不能直接读作没有死亡细胞。[区域药物反应](ref:R02)\n\n每条件至少 6 个生物学重复来自 2 次独立实验，图以均值及 SEM 展示。统计上，管周与静态组存在显著差异，外围与静态组为不显著；不显著并不证明两组等效。研究所用 12 mM 浓度依据该细胞系二维实验中的半数抑制浓度，不能等同于患者脑组织的实际药物暴露。这里引用该数值，是界定药物响应的测试强度，不把它作为治疗剂量或培养操作建议。\n\n空间特征、CD133 表达和死亡染色共同支持模型中存在不同敏感性区域；但实验未同时给出每个区域的自由药物浓度，也未通过独立干预将细胞状态与递送差异完全分开。因而“管周区域相对耐受”比“已证实某个干细胞机制导致患者复发”更贴近证据。该平台研究的是同一模型内部的响应差异，尚无配对患者疗效数据检验能否正确排序临床应答。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "骨髓生态位的分泌改变：细胞数与功能测量的边界",
+          "markdown": "Rosalem 等用打印模具制备芯片，将内骨膜、中央和血管周围区室联通；打印对象是制造工具，最终细胞环境包含成型器件与胶原基质。计算的三区平均间质流速依次为血管周围 0.77、中央 0.44、内骨膜 0.30 µm/s，这些数值经过网格收敛检验，但没有独立流速实测验证。数值收敛只能降低离散误差，不能自行证明材料渗透性等模型假设完全正确。[骨髓芯片的计算与实验](ref:R03)\n\n健康样与白血病样条件的区室细胞分别成像，后者增加 REH 白血病细胞。72 h 的整体存活率平均为 92% 与 86%，每组 4 个生物学重复；这是回收的多细胞总体，并不是每一细胞类型各自的存活率。其可溶性因子图把白血病组浓度除以健康样组浓度，以 1 为基线，显示部分细胞因子、趋化因子和生长因子增加。这里测量的是整个微环境的分泌输出，既没有单细胞归因，也不能由相关免疫因子直接推定免疫细胞已受到抑制，因为完整免疫系统并未被重建。\n\n原文承认白血病条件总细胞数更高，因此分泌增加可能同时反映更多细胞与细胞相互作用。该研究未做治疗反应和结构重塑验证，不能与 GlioFlow3D 的区域药物实验合并称为已证明化疗耐药。若要区分两种分泌来源，关键缺口是总细胞数匹配的对照、按细胞类型的存活及分泌分母，以及能区分细胞直接输出和邻近细胞响应的测量；现有折叠变化图本身无法完成这些分解。",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Goldstein et al.：分层通道的计算速度与剪切应力。",
+          "interpretation": "a、b 为上下视角速度场，c、d 为剪切应力；d 的色标上限远小于 c。培养腔中心较低，出口局部较高，说明区室可以形成不同力学环境。图是模拟结果，不能作为实际细胞表面载荷的直接测量。[分层流场](ref:R01)"
+        },
+        "F02": {
+          "caption": "Pun et al.：荧光残留与药物回收是不同读数。",
+          "interpretation": "A 的绿色图像和柱状图比较器件残留示踪物；B 的质谱柱图比较液体中回收的药物相对量。PDMS 残留较多而回收药物较少，支持材料影响暴露的解释。两部分并未测量细胞死亡，亦不能互相替代为基质内自由药物浓度。[材料作用](ref:R02)"
+        },
+        "F03": {
+          "caption": "Pun et al.：结构、渗漏与分泌因子的联合观察。",
+          "interpretation": "A–D 交代通道与内皮层；E 对比连接标记连续性；F 的热图显示 U87 条件下示踪物越过管壁更明显，G 给出表观通透系数。H、I 同时保留显著与 ns 比较，不能把所有柱高差都称为显著。内皮组织、传输功能和分泌变化分别贡献不同证据。[屏障实验](ref:R02)"
+        },
+        "F04": {
+          "caption": "Pun et al.：同一细胞系的空间形态与 CD133 分布。",
+          "interpretation": "A、B 标出管周与外围，C、D 将外观转换成形状指数；D 每点为细胞，不能当作独立芯片。E 的黄色信号与 F 的阳性细胞比例支持管周标记富集，仍不等于直接测得肿瘤起始能力。图中静态基质是对照，不能与同一器件外围混为一组。[区域异质性](ref:R02)"
+        },
+        "F05": {
+          "caption": "Pun et al.：药物处理后的相对死亡信号。",
+          "interpretation": "A 显示试验时间线，B 对比各位置处理与假处理的活死染色，C 以各自假处理为分母。管周柱接近基线，外围和静态柱升高；静态与管周的显著差异不能改写为全部配对均显著。均值及 SEM 描述重复间的不确定性，纵轴不是绝对死亡百分比。[药物终点](ref:R02)"
+        },
+        "F06": {
+          "caption": "Rosalem et al.：白血病样微环境的相对分泌输出。",
+          "interpretation": "A、B、C 分别为细胞因子、趋化因子及生长因子，红虚线为健康样组归一化基线 1。并非所有柱均带显著标记。整个器件的浓度比混合了细胞数量、组成和相互作用，不能读成每个白血病细胞的分泌倍数，也不是已经测得化疗耐药。[分泌谱](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do organ chips and tumour models simulate disease?",
+      "direction": "In vitro cell and tissue models",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Connected compartments are the starting point of disease modelling",
+          "markdown": "An organ chip arranges cellular locations, tissue interfaces and transport into an observable small system. A tumour model additionally tests whether those relationships produce disease-associated changes. Printing supplies boundaries and positions; cells, matrix and controls establish the phenotype. Goldstein et al. separated upper and lower compartments with porous PET membranes, provided individual inlets/outlets and connected compartments through a lower channel. This architecture permits different local flows, but the study did not validate pharmacokinetics or disease across several mature organs. [Separate compartments and connecting channel](ref:R01)\n\nCalculated mean shear stresses in the two chambers were 0.002 and 0.01 dyne/cm²; higher stresses occurred mainly at outlets and in the connecting channel. These are computational fluid dynamics results, not membrane-sensor measurements or proof that every cell experiences identical stress. Top and side views use different colour scales, so equal colours cannot be compared across panels. Geometric separation supplies testable differences between endothelium requiring flow stimulation and tissue requiring little mechanical disturbance.\n\nColoured water passed through the device for 1 week without visible leakage; GFP signals from PC9 spheroids in printed versus agarose wells showed no significant loss. These observations support enclosure integrity and preliminary compatibility, respectively, rather than barrier permeability, hepatic metabolism or tumour invasion. GFP is an indirect viability-related readout affected by expression and imaging; it does not establish a disease-specific causal chain between organs. Comparing this engineering starting point with functional chips identifies the additional experiments required for disease modelling.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Material retention and transport alter drug readouts",
+          "markdown": "Pun et al.'s GlioFlow3D combines a printed rigid housing, fibrin matrix and endothelialized channel, comparing the same type of brain microvascular endothelial cells with astrocytes or U87 glioblastoma cells. Its relevance extends beyond shape: perivascular and peripheral regions experience different transport, while device materials can remove drug from solution. These exposure differences must be separated from disease responses. [GlioFlow3D material and transport experiments](ref:R02)\n\nIn cell-free devices, PDMS retained more fluorescent tracer than the printed material. Mass spectrometry recovered less than 5% of the input temozolomide in liquid exposed to PDMS, whereas recovery from printed devices approached the input. With 3 devices per group, this shows that these materials and contact conditions substantially affect recovery. It does not measure free drug within the cell-containing matrix, and input minus output cannot establish absorption as the sole mechanism; degradation, adsorption and analytical recovery require separate consideration. Drug recovery is therefore a device-performance endpoint rather than cellular resistance.\n\nFlow modelling was compared with cell-free fluorescence measurements: mean interstitial velocity was approximately 15 µm/s near the vessel and 5 µm/s peripherally, measured in 3 devices. This spatial contrast helps interpret location-dependent phenotypes, but cell-free flow does not establish the complete state after cells, barrier disruption or matrix remodelling are present. These velocities are not universal physiological values for brain tissue. The comparison establishes environmental differences between regions of this particular model, not reproduction of every flow condition in a patient's brain.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "From endothelial markers to measurable barrier failure",
+          "markdown": "The GlioFlow3D barrier experiment compared endothelium alone, with astrocytes and with U87 cells. Astrocytes reduced tracer leakage; U87 cells accompanied discontinuous PECAM1 boundaries and increased permeability. Opposite-direction controls are more informative than tumour-cell survival alone: the same architecture distinguishes neighbouring cells that support or impair the barrier. [Barrier function and soluble factors](ref:R02)\n\nThe day 5 assay used 3 kDa dextran and reported apparent permeability rather than brightness in a single image, with 3–4 biological replicates per condition. The original figure pairs extraluminal concentration distributions with statistical comparisons. PECAM1 images provide junctional-structure evidence; permeability provides transport-function evidence. Together they reproduce an aspect of vascular leakage, without measuring actual cerebral oedema tissue pressure, intracranial pressure or patient symptoms.\n\nSoluble-factor results cannot be reduced to activation of every inflammatory pathway. IL-6, IL-8 and MMP-2 differences are significant in the figure, whereas MCP-1, IL-10, IL-1beta, MMP-9 and MMP-12 are marked nonsignificant. Although the discussion links several metalloproteinases to matrix remodelling, the report follows the plotted statistics in distinguishing supported increases from nonsignificant findings. Secretion changes, junction disruption and leakage jointly describe a tumour-associated microenvironment. No factor-blocking experiment establishes that any individual mediator caused barrier failure; simultaneous endpoints do not fill that causal gap.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Spatial heterogeneity must retain marker, morphology and sample units",
+          "markdown": "The same U87 line became rounder in the perivascular region and more branched peripherally or in static fibrin controls. Shape index runs from 0 to 1, with values near 1 denoting roundness. Each scatter point represents a cell, but the experiment had 3 biological replicates. Numerous cells cannot be counted as equally many independent devices without overstating reproducibility. An association between location and morphology also does not prove tumour-initiating capacity in every round cell. [Spatial phenotype and marker expression](ref:R02)\n\nCD133-positive fractions were measured in 6 biological replicates from 2 independent experiments and were higher perivascularly than peripherally or in static controls. Morphology plus marker expression better supports a local-environment association with cell state than appearance alone. Nevertheless, CD133 is a self-renewal-associated marker here, not a functional demonstration of stemness by clonogenicity, serial propagation or tumour initiation in vivo. Flow, endothelial contact and spatial drug gradients were not fully isolated as independent influences.\n\nRegional differences within an established cell line address a different problem from between-patient variability measured with several patient samples. These results establish phenotypic heterogeneity within the model, not coverage of all glioblastoma molecular subtypes. Regional mean fluorescence alone could combine cell abundance with per-cell expression. The original nuclear denominator for positive-cell fractions at least retains information about cellular composition.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Regional drug response is distinct from clinical resistance",
+          "markdown": "The temozolomide experiment compared perivascular, peripheral and static three-dimensional matrix conditions with their respective untreated controls. After 3 days of exposure, death staining increased more peripherally and in static matrices than near vessels. The original ordinate is the fold increase in DRAQ7-positive cells relative to each sham group, not absolute mortality or survival fraction. A bar near 1 indicates little relative change, not an absence of dead cells. [Regional drug response](ref:R02)\n\nAt least 6 biological replicates per condition came from 2 independent experiments; results are mean and SEM. Perivascular versus static conditions differed significantly, whereas peripheral versus static conditions did not; nonsignificance does not demonstrate equivalence. The tested 12 mM concentration was based on the line's half-maximal inhibitory concentration in a two-dimensional assay, not actual drug exposure in patient brain tissue. This number defines the intensity of the response test, not a treatment dose or culture recommendation.\n\nSpatial features, CD133 expression and death staining jointly support regions with different susceptibility within the model. However, free drug concentration was not measured simultaneously in each region, and independent interventions did not fully separate cell state from delivery differences. Relative perivascular tolerance is therefore better supported than a proven stem-cell mechanism causing patient relapse. The platform describes within-model responses; matched patient outcomes have not established correct ranking of clinical response.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Marrow-niche secretion: cell-number and functional boundaries",
+          "markdown": "Rosalem et al. used printed moulds to fabricate a chip linking endosteal, central and perivascular compartments. Printing produced a manufacturing tool; the final cellular environment combined a moulded device and collagen matrix. Calculated mean interstitial velocities were 0.77 perivascularly, 0.44 centrally and 0.30 µm/s endosteally. Mesh-convergence testing supported these numerical results, but independent velocity measurements were absent. Convergence reduces discretization error without establishing every assumption, such as matrix permeability. [Computational and experimental marrow model](ref:R03)\n\nCompartments were imaged under healthy-like and leukaemic conditions, the latter adding REH leukaemia cells. At 72 h, overall mean viability was 92% versus 86%, with 4 biological replicates per group. This measures the recovered mixed population, not viability separately for each cell type. Soluble-factor plots divide leukaemic by healthy-like concentrations, using 1 as baseline, and show increases in selected cytokines, chemokines and growth factors. This is output from the whole microenvironment, without single-cell attribution. Immune-associated factors also cannot establish suppression of immune cells when a complete immune system was not reconstructed.\n\nThe authors acknowledge higher total cell numbers under leukaemic conditions, so increased secretion may reflect both abundance and interactions. Therapeutic response and structural remodelling were not tested; these results cannot be combined with the GlioFlow3D regional drug experiment as demonstrated chemotherapy resistance. Distinguishing secretion sources requires cell-number-matched controls, cell-type-specific viability and secretion denominators, and measurements separating direct cellular output from neighbouring-cell responses. The existing fold-change plot cannot perform those decompositions.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Goldstein et al.: Calculated velocity and shear in layered channels.",
+          "interpretation": "a and b show velocity from upper/lower views; c and d show shear. The upper colour limit in d is much smaller than in c. Low chamber-centre and higher outlet values illustrate different mechanical environments. These are simulations, not direct cellular surface-load measurements. [Layered flow](ref:R01)"
+        },
+        "F02": {
+          "caption": "Pun et al.: Tracer retention and drug recovery are different readouts.",
+          "interpretation": "A compares retained tracer by green fluorescence and bar plots; B compares relative drug recovered in liquid by mass spectrometry. More retention and less recovered drug for PDMS support material-dependent exposure. Neither panel measures cell death or freely available drug in the matrix. [Material effects](ref:R02)"
+        },
+        "F03": {
+          "caption": "Pun et al.: Joint observation of structure, leakage and soluble factors.",
+          "interpretation": "A–D locate channel and endothelium; E compares junction-marker continuity. F shows more tracer crossing the wall with U87, and G reports apparent permeability. H and I retain both significant and ns comparisons: not every height difference is significant. Endothelial structure, transport and secretion provide distinct evidence. [Barrier experiment](ref:R02)"
+        },
+        "F04": {
+          "caption": "Pun et al.: Spatial morphology and CD133 within one cell line.",
+          "interpretation": "A and B identify perivascular/peripheral regions; C and D convert morphology to shape index. Each D point is a cell, not an independent chip. Yellow signal in E and positive-cell fractions in F support perivascular marker enrichment, not measured tumour-initiation capacity. Static matrices are controls, distinct from the device periphery. [Regional heterogeneity](ref:R02)"
+        },
+        "F05": {
+          "caption": "Pun et al.: Relative death signal after drug exposure.",
+          "interpretation": "A shows the study timeline; B compares treated/sham live–dead images at each location. C uses each corresponding sham as denominator. Perivascular values stay near baseline while peripheral/static values rise; significance between static and perivascular conditions does not establish every pairwise difference. Mean and SEM express replicate uncertainty; the ordinate is not absolute percent death. [Drug endpoint](ref:R02)"
+        },
+        "F06": {
+          "caption": "Rosalem et al.: Relative secretory output of a leukaemia-like microenvironment.",
+          "interpretation": "A, B and C show cytokines, chemokines and growth factors; the red dashed healthy-like reference is 1. Not every bar has a significance mark. Whole-device concentration ratios combine abundance, composition and interactions, rather than secretion per leukaemia cell or measured chemotherapy resistance. [Secretory profile](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie simulieren Organ-Chips und Tumormodelle Krankheiten?",
+      "direction": "In-vitro-Zell- und Gewebemodelle",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Verbundene Kompartimente als Ausgangspunkt der Krankheitsmodellierung",
+          "markdown": "Ein Organ-Chip ordnet Zellpositionen, Gewebegrenzen und Stofftransport in einem beobachtbaren kleinen System. Ein Tumormodell prüft zusätzlich, ob diese Beziehungen krankheitsbezogene Veränderungen erzeugen. Der Druck liefert Grenzen und Positionen; Zellen, Matrix und Kontrollen begründen den Phänotyp. Goldstein et al. trennten obere und untere Kammern durch poröse PET-Membranen, statteten sie mit eigenen Zu- und Abläufen aus und verbanden sie über einen unteren Kanal. Diese Architektur ermöglicht unterschiedliche lokale Strömungen, validierte aber keine Pharmakokinetik oder Erkrankung mehrerer ausgereifter Organe. [Getrennte Kammern und Verbindungskanal](ref:R01)\n\nDie berechneten mittleren Schubspannungen der beiden Kammern betrugen 0.002 und 0.01 dyne/cm²; höhere Werte lagen vor allem an Auslässen und im Verbindungskanal. Das sind strömungsmechanische Simulationen, keine Messungen mit Membransensoren und kein Nachweis identischer Belastung aller Zellen. Aufsicht und Seitenansicht verwenden unterschiedliche Farbskalen; gleiche Farben sind zwischen den Teilbildern nicht unmittelbar vergleichbar. Die geometrische Trennung schafft prüfbare Unterschiede zwischen strömungsabhängigem Endothel und mechanisch empfindlichem Gewebe.\n\nGefärbtes Wasser durchströmte das System 1 Woche ohne sichtbare Leckage; GFP-Signale von PC9-Sphäroiden in gedruckten beziehungsweise Agarosevertiefungen zeigten keinen signifikanten Verlust. Das stützt Gehäusedichtigkeit beziehungsweise vorläufige Verträglichkeit, ersetzt aber keine Messung von Barrierepermeabilität, Leberstoffwechsel oder Tumorinvasion. GFP ist ein indirekter, expressions- und bildgebungsabhängiger Viabilitätsindikator; eine krankheitsspezifische Kausalkette zwischen Organen wurde nicht gezeigt. Der Vergleich mit funktionellen Chips macht die zusätzlich benötigten Krankheitsnachweise sichtbar.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Materialbindung und Transport verändern Arzneimittelmessungen",
+          "markdown": "GlioFlow3D von Pun et al. verbindet ein gedrucktes starres Gehäuse, eine Fibrinmatrix und einen endothelialisierten Kanal. Derselbe Typ zerebraler mikrovaskulärer Endothelzellen wurde mit Astrozyten beziehungsweise U87-Glioblastomzellen verglichen. Entscheidend ist mehr als die Form: Perivaskuläre und periphere Bereiche unterscheiden sich im Transport, während Materialien Wirkstoff aus der Flüssigkeit entfernen können. Solche Expositionsunterschiede müssen von Krankheitsreaktionen getrennt werden. [Material- und Transportexperimente mit GlioFlow3D](ref:R02)\n\nIn zellfreien Geräten hielt PDMS mehr Fluoreszenztracer zurück als das Druckmaterial. Nach Kontakt mit PDMS wies die Massenspektrometrie weniger als 5% der ursprünglichen Temozolomidmenge in der Flüssigkeit nach; bei gedruckten Geräten näherte sich die Wiederfindung dem Eingangswert. Je 3 Geräte belegen einen erheblichen Material- und Kontaktbedingungseffekt auf die Wiederfindung. Gemessen wurde weder freier Wirkstoff in der zellhaltigen Matrix noch ausschließlich Absorption; Abbau, Adsorption und analytische Wiederfindung sind gesonderte Einflüsse. Die Wirkstoffwiederfindung beschreibt daher Geräteeigenschaften, nicht zelluläre Resistenz.\n\nStrömungssimulationen wurden mit zellfreien Fluoreszenzmessungen verglichen: Die mittlere interstitielle Geschwindigkeit betrug gefäßnah etwa 15 µm/s und peripher etwa 5 µm/s, gemessen an 3 Geräten. Dieser räumliche Unterschied hilft bei der Deutung ortsabhängiger Phänotypen, beschreibt aber nicht vollständig den Zustand mit Zellen, gestörter Barriere oder umgebauter Matrix. Die Geschwindigkeiten sind keine universellen physiologischen Gehirnwerte. Verglichen werden Umweltbedingungen zweier Modellregionen, nicht sämtliche Strömungszustände im Gehirn eines Patienten.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Von Endothelmarkern zur messbaren Barrierestörung",
+          "markdown": "Der Barriereversuch mit GlioFlow3D verglich Endothel allein, mit Astrozyten und mit U87-Zellen. Astrozyten verminderten den Traceraustritt; U87-Zellen gingen mit unterbrochenen PECAM1-Grenzen und erhöhter Permeabilität einher. Gegenläufige Kontrollen sind aussagekräftiger als bloßes Tumorzellüberleben: Dieselbe Architektur unterscheidet benachbarte Zellen mit barrierefördernder beziehungsweise schädigender Wirkung. [Barrierefunktion und lösliche Faktoren](ref:R02)\n\nAm Tag 5 wurde die scheinbare Permeabilität für 3 kDa-Dextran gemessen, statt nur die Helligkeit eines Einzelbilds auszuwerten; je Bedingung lagen 3–4 biologische Replikate vor. Die Originalabbildung verbindet extraluminale Konzentrationsverteilungen mit statistischen Vergleichen. PECAM1-Bilder belegen die Kontaktstruktur, Permeabilitätswerte die Transportfunktion. Zusammen bilden sie einen Aspekt vaskulärer Leckage ab, messen aber weder den Gewebedruck eines tatsächlichen Hirnödems noch intrakraniellen Druck oder Patientensymptome.\n\nDie löslichen Faktoren belegen nicht die Aktivierung sämtlicher Entzündungswege. IL-6, IL-8 und MMP-2 unterscheiden sich in der Abbildung signifikant; MCP-1, IL-10, IL-1beta, MMP-9 und MMP-12 sind als nicht signifikant markiert. Obwohl die Diskussion mehrere Metalloproteinasen mit Matrixumbau verbindet, trennt der Bericht anhand der abgebildeten Statistik belegte Anstiege von nicht signifikanten Ergebnissen. Sekretionsänderungen, Kontaktstörung und Leckage beschreiben gemeinsam ein tumorassoziiertes Milieu. Kein Blockadeversuch weist einen einzelnen Faktor als Ursache der Barrierestörung nach; gleichzeitig veränderte Endpunkte schließen diese Kausallücke nicht.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Räumliche Heterogenität verlangt klare Marker- und Stichprobeneinheiten",
+          "markdown": "Dieselbe U87-Linie zeigte gefäßnah rundere und peripher beziehungsweise in statischen Fibrinkontrollen stärker verzweigte Formen. Der Formindex reicht von 0 bis 1; Werte nahe 1 bedeuten rundere Zellen. Jeder Streupunkt steht für eine Zelle, das Experiment umfasste jedoch 3 biologische Replikate. Viele Zellen dürfen nicht als ebenso viele unabhängige Geräte gezählt werden, sonst erscheint die Reproduzierbarkeit zu hoch. Die Lage-Form-Assoziation belegt auch nicht für jede runde Zelle ein tumorinitiierendes Potenzial. [Räumlicher Phänotyp und Markerexpression](ref:R02)\n\nDer Anteil CD133-positiver Zellen wurde an 6 biologischen Replikaten aus 2 unabhängigen Experimenten bestimmt und war perivaskulär höher als peripher oder in statischen Kontrollen. Form und Marker stützen gemeinsam den Zusammenhang zwischen lokaler Umgebung und Zellzustand besser als das Aussehen allein. CD133 ist hier jedoch ein mit Selbsterneuerung verbundener Marker, kein funktioneller Stammzellnachweis durch Klonogenität, serielle Weiterführung oder Tumorinitiierung im Tier. Strömung, Endothelkontakt und räumliche Wirkstoffgradienten wurden nicht vollständig unabhängig voneinander geprüft.\n\nRegionale Unterschiede innerhalb einer etablierten Zelllinie beantworten eine andere Frage als Unterschiede zwischen mehreren Patientenproben. Gezeigt wird phänotypische Heterogenität innerhalb des Modells, nicht die Abdeckung sämtlicher molekularer Glioblastomsubtypen. Ein regionaler Fluoreszenzmittelwert allein könnte Zellzahl und Expression pro Zelle vermischen. Der im Original verwendete Zellkernnenner für positive Zellanteile erhält zumindest Informationen zur Zellzusammensetzung.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Regionale Arzneimittelantwort und klinische Resistenz unterscheiden",
+          "markdown": "Der Temozolomidversuch verglich perivaskuläre, periphere und statische dreidimensionale Matrixbedingungen jeweils mit ihrer unbehandelten Kontrolle. Nach 3 Tagen Exposition nahm die Todesfärbung peripher und in statischen Matrizes stärker zu als gefäßnah. Die Originalordinate zeigt den relativen Anstieg DRAQ7-positiver Zellen gegenüber der jeweiligen Scheinkontrolle, weder absolute Sterblichkeit noch Überlebensanteil. Ein Balken nahe 1 bedeutet geringe relative Änderung, nicht das Fehlen toter Zellen. [Regionale Arzneimittelantwort](ref:R02)\n\nMindestens 6 biologische Replikate je Bedingung stammten aus 2 unabhängigen Experimenten; gezeigt werden Mittelwert und SEM. Perivaskuläre und statische Bedingungen unterschieden sich signifikant, periphere und statische dagegen nicht; fehlende Signifikanz belegt keine Gleichwertigkeit. Die geprüften 12 mM entsprachen der halbmaximalen Hemmkonzentration der Zelllinie im zweidimensionalen Test, nicht der tatsächlichen Exposition im Patientengehirn. Der Wert beschreibt die Stärke der Prüfexposition, keine therapeutische Dosis oder Kultivierungsempfehlung.\n\nRäumliche Merkmale, CD133-Expression und Todesfärbung stützen gemeinsam unterschiedlich empfindliche Modellregionen. Freie Wirkstoffkonzentrationen wurden jedoch nicht gleichzeitig in jeder Region gemessen; unabhängige Eingriffe trennten Zellzustand und Wirkstoffzufuhr nicht vollständig. Relative perivaskuläre Toleranz ist daher besser belegt als ein bestimmter Stammzellmechanismus als Ursache klinischer Rückfälle. Untersucht wurden Antworten innerhalb des Modells; gepaarte Patientenergebnisse zur korrekten Rangordnung klinischen Ansprechens fehlen.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Sekretion in Knochenmarknischen: Zellzahl und Funktionsgrenzen",
+          "markdown": "Rosalem et al. fertigten mithilfe gedruckter Formen einen Chip mit verbundenen endostalen, zentralen und perivaskulären Kompartimenten. Gedruckt wurde ein Fertigungswerkzeug; die endgültige Zellumgebung bestand aus abgeformtem Gerät und Kollagenmatrix. Die berechneten mittleren interstitiellen Geschwindigkeiten betrugen perivaskulär 0.77, zentral 0.44 und endostal 0.30 µm/s. Netzkonvergenzprüfungen stützten die numerischen Ergebnisse, unabhängige Geschwindigkeitsmessungen fehlten jedoch. Konvergenz vermindert Diskretisierungsfehler, bestätigt aber nicht sämtliche Annahmen wie die Matrixpermeabilität. [Numerisches und experimentelles Knochenmarkmodell](ref:R03)\n\nDie Kompartimente wurden unter gesundheitsähnlichen und leukämischen Bedingungen abgebildet; letztere enthielten zusätzlich REH-Leukämiezellen. Nach 72 h betrug die mittlere Gesamtviabilität 92% beziehungsweise 86%, mit 4 biologischen Replikaten pro Gruppe. Gemessen wurde die zurückgewonnene gemischte Population, nicht die Viabilität jedes Zelltyps. Die Faktorendiagramme teilen leukämische durch gesundheitsähnliche Konzentrationen, setzen 1 als Basis und zeigen Anstiege ausgewählter Zytokine, Chemokine und Wachstumsfaktoren. Das ist die Ausgabe des gesamten Milieus ohne Einzelzellzuordnung. Immunassoziierte Faktoren belegen auch keine Unterdrückung von Immunzellen, da kein vollständiges Immunsystem rekonstruiert wurde.\n\nDie Autoren räumen eine höhere Gesamtzellzahl unter leukämischen Bedingungen ein; gesteigerte Sekretion kann daher sowohl Zellmenge als auch Wechselwirkungen widerspiegeln. Therapieantwort und struktureller Umbau wurden nicht untersucht. Diese Ergebnisse dürfen nicht mit dem regionalen GlioFlow3D-Arzneimittelversuch zu einem Nachweis von Chemotherapieresistenz zusammengezogen werden. Zur Trennung der Sekretionsquellen fehlen zellzahlgleiche Kontrollen, zelltypspezifische Viabilitäts- und Sekretionsnenner sowie Messungen, die direkte Zellausgabe von Nachbarzellreaktionen unterscheiden. Das vorhandene Verhältnisdiagramm leistet diese Zerlegung nicht.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Goldstein et al.: Berechnete Geschwindigkeit und Schubspannung in Kanalebenen.",
+          "interpretation": "a und b zeigen Geschwindigkeiten aus oberer und unterer Sicht, c und d Schubspannungen. Die Farbskalenobergrenze in d ist deutlich kleiner als in c. Niedrige Kammermitten- und höhere Auslasswerte zeigen unterschiedliche mechanische Umgebungen. Simulationen messen jedoch keine tatsächlichen Zelloberflächenlasten. [Strömungsebenen](ref:R01)"
+        },
+        "F02": {
+          "caption": "Pun et al.: Tracerrückhalt und Wirkstoffwiederfindung sind verschiedene Messgrößen.",
+          "interpretation": "A vergleicht zurückgehaltenen Tracer anhand grüner Fluoreszenz und Balken; B vergleicht massenspektrometrisch die relative Wirkstoffmenge in der Flüssigkeit. Mehr Rückhalt und weniger Wiederfindung bei PDMS stützen materialabhängige Exposition. Keines der Teilbilder misst Zelltod oder freien Wirkstoff in der Matrix. [Materialeinfluss](ref:R02)"
+        },
+        "F03": {
+          "caption": "Pun et al.: Gemeinsame Beobachtung von Struktur, Leckage und löslichen Faktoren.",
+          "interpretation": "A–D verorten Kanal und Endothel; E vergleicht die Kontinuität des Kontaktmarkers. F zeigt stärkeren Traceraustritt bei U87, G die scheinbare Permeabilität. H und I enthalten signifikante und ns-Vergleiche; nicht jeder Höhenunterschied ist signifikant. Endothelstruktur, Transport und Sekretion liefern unterschiedliche Nachweise. [Barriereversuch](ref:R02)"
+        },
+        "F04": {
+          "caption": "Pun et al.: Räumliche Morphologie und CD133 innerhalb einer Zelllinie.",
+          "interpretation": "A und B markieren gefäßnahe und periphere Bereiche; C und D überführen Formen in einen Index. Jeder Punkt in D ist eine Zelle, kein unabhängiger Chip. Gelbe Signale in E und positive Anteile in F stützen gefäßnahe Markeranreicherung, nicht gemessene Tumorinitiierung. Statische Matrizes sind Kontrollen und nicht die Geräteperipherie. [Regionale Heterogenität](ref:R02)"
+        },
+        "F05": {
+          "caption": "Pun et al.: Relatives Todessignal nach Wirkstoffexposition.",
+          "interpretation": "A zeigt den Studienzeitplan, B behandelte und scheinbehandelte Lebend-Tot-Bilder je Position. C verwendet die jeweilige Scheinkontrolle als Nenner. Gefäßnahe Werte bleiben basisnah, periphere und statische steigen; der signifikante statisch-perivaskuläre Unterschied macht nicht alle Paarvergleiche signifikant. Mittelwert und SEM beschreiben Replikatunsicherheit; die Ordinate ist kein absoluter Todesprozentsatz. [Arzneimittelendpunkt](ref:R02)"
+        },
+        "F06": {
+          "caption": "Rosalem et al.: Relative Sekretion eines leukämieähnlichen Milieus.",
+          "interpretation": "A, B und C zeigen Zytokine, Chemokine und Wachstumsfaktoren; die rote gestrichelte gesundheitsähnliche Referenz ist 1. Nicht jeder Balken trägt eine Signifikanzmarkierung. Gerätekonzentrationsverhältnisse vermischen Zellmenge, Zusammensetzung und Wechselwirkungen; sie messen weder Sekretion pro Leukämiezelle noch Chemotherapieresistenz. [Sekretionsprofil](ref:R03)"
+        }
+      }
+    }
+  }
+}

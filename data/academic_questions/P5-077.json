@@ -1,0 +1,313 @@
+{
+  "schema_version": 2,
+  "question_id": "P5-077",
+  "p": "P5",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_6b85e148a6f7c9ea5be9",
+    "doc_28cce6f441c3cad4827a",
+    "doc_7f3d86f8dc2a38c1fcb6",
+    "doc_8ff5b288e37ae566fc6b"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Optimization of community-led 3D printing for the production of protective face shields",
+      "publisher": "3D Printing in Medicine",
+      "year": 2020,
+      "url": "https://doi.org/10.1186/s41205-020-00089-y",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Disinfection of 3D-printed protective face shield during COVID-19 pandemic",
+      "publisher": "American Journal of Infection Control",
+      "year": 2021,
+      "url": "https://doi.org/10.1016/j.ajic.2020.10.008",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "3D-Printed Personal Protective Face Shields During the COVID-19 Pandemic: A Survey of Canadian Frontline Workers",
+      "publisher": "Cureus",
+      "year": 2021,
+      "url": "https://doi.org/10.7759/cureus.18141",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "A Cross University-Led COVID-19 Rapid-Response Effort: Design, Build, and Distribute Drexel AJFlex Face Shields",
+      "publisher": "Annals of Biomedical Engineering",
+      "year": 2021,
+      "url": "https://doi.org/10.1007/s10439-021-02743-w",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 2",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7682762.1/41205_2020_89_Fig2_HTML.jpg?md5=478a277ae3e5bdbbe90bca878e1134ae",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7682762/#Fig2",
+      "license": "CC BY-SA 4.0",
+      "asset_path": "assets/academic_figures/P5-077/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R04",
+      "original_label": "Fig. 1",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7908945.1/10439_2021_2743_Fig1_HTML.jpg?md5=0843ac5d3ecd82f1252ce49d4b344e6b",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7908945/#Fig1",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-077/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R03",
+      "original_label": "Fig. 3",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8526080.1/cureus-0013-00000018141-i03.jpg?md5=8f6d08878c391bab88c9cafc01e6d5fe",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8526080/#FIG3",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-077/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Fig. 4",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8526080.1/cureus-0013-00000018141-i04.jpg?md5=9c0ab9ba548735418ab04fa7ad1dba2f",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8526080/#FIG4",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-077/F04.jpg"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R04",
+      "original_label": "Fig. 3",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7908945.1/10439_2021_2743_Fig3_HTML.jpg?md5=68bd3fdb342c5286501b5abb71d127d0",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7908945/#Fig3",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-077/F05.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "打印面罩如何影响佩戴体验与重复使用？",
+      "direction": "个人防护用品",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "固定点、面部间距与额部接触改变了不同的佩戴问题",
+          "markdown": "这些研究中的打印面罩由框架、透明屏片和固定部件组成，打印的主要是承力框架。Zhang 等先采用前方三个挂点的框架，随后改用具有六个前侧挂点的 3DVerkstan 结构。作者报告增加挂点后屏片固定更稳定，部分负荷从弹性固定带转移到屏片；这些是设计与制作过程观察，没有给出碰撞脱落力、头部加速度或连续佩戴时长的定量比较。[框架与屏片装配](ref:R01)\n\n同一 3DVerkstan 类结构在 Throckmorton 等的项目中收到不同反馈：屏片较靠近面部，容易起雾；部分使用者报告紧张性头痛，突出固定柱也容易在碰撞时让屏片脱落。团队因此保留另一设计的钩状固定件，调整侧壁和内部厚度、绑带孔位置，并在最终版本增加上方遮盖。这里的改动针对视野、额部受力和连接可靠性，不是同一个“舒适度”参数。[临床反馈驱动的设计迭代](ref:R04)\n\n两篇报告并非互相推翻：它们没有在相同头围、绑带张力、屏片曲率和工作任务下进行对照试验。更多固定点可减少屏片局部晃动，却不保证额部压力更小；把屏片向外移可增加眼镜与面部空间，也会改变整体力矩与覆盖边缘。原图允许定位这些结构差异，但不能从某个版本更简洁或更轻，就推断全部使用者更舒适。",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "易装配评分较高，视野与总体偏好没有同步提高",
+          "markdown": "Daud 等从曾领取社区制作面罩的联系人中选择 116 人发出调查邀请，最终纳入 63 份完整回复，完成率为 54.3%。筛选兼顾预期回复可能性，样本不是随机抽取；调查针对一种 3DVerkstan 面罩，并用泡沫额垫、弹性头带的常规面罩图片作为参照，没有把受试者随机分配到两个产品。[调查招募与参照面罩](ref:R03)\n\n各项采用 1–5 分评价，而“总体偏好”有独立锚点：1 表示偏好常规面罩，3 表示无偏好，5 表示偏好打印面罩。原表均值为装配方便 4.46、与其他防护用品兼容 4.33、便携 4.19、耐用 3.89、舒适 3.40、稳定 3.22、视野 3.06，总体偏好 3.19。因此，高装配评分没有转化成同等幅度的整体偏好；总体均值只是略高于量表的中性点。[各项体验评分](ref:R03)\n\n“防护性”均值 3.81 是佩戴者感受，并非飞溅穿透率或感染风险。“与无菌区兼容”也是使用者是否担心污染的回答，不是微生物培养。大多数项目有 63 份回答，但与其他防护用品兼容为 61 份，无菌区兼容为 46 份，不能假设所有柱子来自完全相同的人群。原图以 2 而非零作为纵轴起点，使组间视觉差异显得更大；原表标注的置信区间与图中短误差线也不能未经解释直接当作一致的精度信息。",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "岗位差异反映任务与预期，不能简化为所有医护都不适用",
+          "markdown": "同一调查按直接面对患者与面对社区服务对象分组，原表分别为 39 和 24 人。患者面对组的舒适、稳定、视野均值为 3.1795、2.923、2.718，社区面对组为 3.75、3.708、3.625；对应 p 值为 0.015、0.0047、0.0055。总体偏好为 2.949 对 3.583，p=0.0249。这个结果说明，对经常使用专业装备的人群，容易装配并不足以补偿其他佩戴要求；它没有确定是哪个具体部件造成了评分差别。[按工作对象分组的结果](ref:R03)\n\n装配、便携、与其他防护用品兼容和交流能力的组间差异未达到显著水平，不能把图中所有红色柱都解释成显著较差。研究还按医疗或非医疗机构及服务量分组，但这些分类可能重叠，不是相互独立的重复验证。原文方法把大服务量描述为每日超过 200 人，人口统计仅有 3 名受访者位于该档，后续比较表却把大组列为 21 人；这个划分冲突使“高负荷机构”效应无法按原阈值复算，本报告不将其写成确定的剂量关系。\n\nLikert 条目经多次组间检验，原文没有报告多重比较校正，也没有以相同工作内容、连续佩戴时长、眼镜类型或既往面罩经验做匹配。群体差异适合提出待测的具体问题，例如转头时是否移位、屏片曲率是否影响近距离操作；不能把这些关联直接解释为打印工艺对临床岗位的因果劣势。",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "透明片与框架的重复处理次数必须分开",
+          "markdown": "Noguera 等把透明片和打印头箍分开进行材料相容性观察。化学处理包括 70% 乙醇、过氧化氢—季铵盐混合物、0.1% 次氯酸钠，并设水处理对照。用浸湿纱布擦拭 1 分钟后自然干燥；透明片重复 40 次，头箍重复 30 次。原文摘要把处理概括成 40 次，正文方法和结果却区分了两个部件，因此不能给整套器具统一赋予同一个重复使用次数。[部件分开的处理试验](ref:R02)\n\n材料中明确列有 0.75 mm 聚碳酸酯片、0.5 mm PETG 片；头箍包括 PLA、ASA、ABS、PETG 和 Tritan 的不同商品级材料及打印层厚。作者在相应化学处理后未发现可见裂纹或外观改变。但没有测雾度、光谱透过率、表面微裂纹密度、连接件疲劳或擦拭后的微生物减少量。它回答的是这些试样经指定处理后仍保留可见完整性，不是证明任意消毒流程都有效，也不是把一次擦拭自动等同于一次临床完整使用。\n\n临床评价表的四种设计分别只有 n=4、n=2、n=1、n=1。最轻设计的头箍质量为 12.8 g，整罩 68 g；另一设计头箍为 42.58 g，整罩 145.30 g。重的设计仍获得较好的主观评价，说明质量不能替代接触分布和稳定性；但这种极小、非随机分组也不足以确定哪个设计最舒适。表中的日常使用反馈与实验室多轮擦拭属于两套证据，不能拼接成这些受访者已完成全部处理循环。[质量与小样本佩戴评价](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "热变形与处理后蒸气暴露是两种不同的重复使用障碍",
+          "markdown": "Noguera 等还采用 121°C、15 分钟高压蒸汽处理。PETG XT 与 Tritan HT 头箍出现尺寸缩小、翘曲或开裂，作者没有提供处理后拉伸或冲击试验来量化强度损失。因此，直接证据是结构外观损坏；文中关于微屈曲的解释不能替代力学数据。其他材料也不能因没有被特别指出损伤，就被推定适合无限轮次高温处理。[热处理条件与损伤](ref:R02)\n\nZhang 等的 PLA/PETG 框架处理记录同样出现高压蒸汽后翘曲和相互粘连，最终采用 70% 乙醇浸泡 10 分钟并干燥的工作流程。这与前述纱布擦拭 1 分钟的方式、湿润持续时间和部件形态不同，不能当作同一处理试验的重复。该案例还描述过热风干燥的尝试，但没有给出足以比较所有方法的微生物杀灭和剩余力学性能矩阵。[不同处理路径的实际观察](ref:R01)\n\n处理后佩戴的时间也影响体验。Noguera 等让一名医师和一名技术人员在处理后 1、3、5 分钟试戴；乙醇处理后 1 分钟仍可能出现刺激性蒸气和眼红，作者据此提出延长干燥等待。这里只涉及两名观察者，没有测局部蒸气浓度或建立可推广的暴露阈值。它解释了为何“透明片未裂”仍不足以描述立即重新佩戴的状态，却不能把这一小观察改写成任何材料与环境通用的等待时间。[处理后佩戴观察](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "s6",
+          "title": "可拆部件改善了维护条件，尚未给出完整使用寿命",
+          "markdown": "AJFlex 的结构把 PET 或聚碳酸酯透明片、弹性带、扎带和额部泡沫条接到头箍上；透明片厚度为 0.015 或 0.02 英寸。泡沫条增加额部缓冲，钩状件约束屏片，弹性带调整固定。这些部件承担不同功能，也具有不同的清洁接触面：泡沫内表面、扎带连接处和屏片挂孔不能只用框架外壁的处理结果代表。论文描述了单一佩戴者消毒后重复使用的设计意图，没有报告各部件的失效周期或残留污染测量。[组件与维护结构](ref:R04)\n\nZhang 等记录了高速打印导致弱层间结合、翘曲，以及堆叠件拆分时破损的情况。这样的初始缺陷会进入后续佩戴和处理过程，不能因为设计文件相同就假定每个成品具有相同耐久性。用户所说的“耐用”还可能包括不容易移位、外观坚固、容易装回等含义，而实验室寿命需要对应具体失效端点。[制作缺陷的来源](ref:R01)\n\n| 已有测量 | 直接对应的使用问题 | 本组研究未记录的量 |\n|---|---|---|\n| 多轮化学处理后外观 | 屏片和头箍是否出现明显损坏 | 光学雾度、挂孔疲劳与残留微生物 |\n| 问卷舒适和视野评分 | 佩戴者对具体任务的主观适配 | 同一任务下的接触压力和连续佩戴时长 |\n| 钩、绑带、泡沫的结构照片 | 屏片连接、固定与额部缓冲的位置 | 更换前后防飞溅性能与累计部件寿命 |\n\n现有记录中，材料处理循环与实际工作班次没有逐件关联，透明片更换后也没有重复完整的防护测试。因而同一头箍保留多次、透明片单独更换和整套面罩连续使用，仍是数据中没有合并验证的三种使用历程。",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Zhang et al.：3DVerkstan 框架模型、打印件与透明屏片装配；原图据 3DVerkstan 设计制作。",
+          "interpretation": "A 为数字框架，B 为打印框架，C 为装上透明片的完整结构。固定点分布于前方和两侧，屏片自身弯成包围面部的曲面；后端可见固定带连接位置。图中屏片不是打印成形，因而框架材料与屏片材料的重复处理结果应分开。挂点数和曲率可从结构定位，但图像没有给出接触压力、视野畸变或脱落力测量。[框架原图](ref:R01)"
+        },
+        "F02": {
+          "caption": "Throckmorton et al.：由固定柱、钩状件和轻量化修改组成的设计迭代。",
+          "interpretation": "a 展示起始框架，b 是带较强钩状支承的另一结构，c 展示堆叠制造，d 为较薄的 3DVerkstan，e 为壁厚和固定孔调整，f 为带上方遮盖的 AJFlex。c 的可堆叠性描述制造方式，不能解释佩戴舒适；e 与 f 的改变也没有形成独立随机对照。图与正文反馈一起说明团队如何对应屏片易脱落、起雾和额部不适，但上方遮盖没有在此图中经过气溶胶阻隔试验。[设计迭代原图](ref:R04)"
+        },
+        "F03": {
+          "caption": "Daud et al.：问卷中用于定义常规参照的面罩。",
+          "interpretation": "A、B、C 从不同方向展示透明屏片、宽额部泡沫条和弹性头带。该图定义了受访者比较的具体参照，不代表市场上所有常规面罩，也不是随机交叉佩戴试验的对照照片。它提示比较同时改变了额部缓冲与固定结构；问卷偏好差异不能仅归因于某个部件是否打印。[常规参照原图](ref:R03)"
+        },
+        "F04": {
+          "caption": "Daud et al.：患者面对组、社区面对组与总体的分项评分。",
+          "interpretation": "横轴为各体验条目，纵轴显示 2–5 分而非量表全范围；红色、蓝色、绿色分别对应患者面对组、社区面对组和总体。装配及其他防护用品兼容均较高，视野与无菌区兼容的组差异更明显。星号标记 p<0.05，但未标星条目不能仅凭柱高判为显著；总体组含前两组，不是独立第三组。图中短误差线与原表标为置信区间的范围不一致，不能据图自行重算精确置信限。[评分原图与原表](ref:R03)"
+        },
+        "F05": {
+          "caption": "Throckmorton et al.：额部泡沫、佩戴状态与可拆装组件。",
+          "interpretation": "左侧可见透明片与头箍连接及内侧泡沫，中间展示与呼吸器同时佩戴的空间关系，右侧为成批组件。泡沫缓冲、头带固定和屏片遮挡是不同部件功能；中间照片说明空间上可以共同佩戴，不是对全部眼镜和呼吸器型号的兼容性试验。右侧包装数量也不是重复使用次数。原图可定位需要清洁和检查的连接面，却未提供消毒后部件失效曲线。[组件原图](ref:R04)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do printed face shields affect wearing experience and reuse?",
+      "direction": "Personal protective equipment",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Attachment points, facial clearance and forehead contact change different wearing problems",
+          "markdown": "The printed face shields in these studies combine a frame, transparent visor and retention components; printing mainly produces the supporting frame. Zhang et al. initially used three anterior attachment points, then changed to the 3DVerkstan structure with six anterior and lateral points. They reported more stable visor attachment and transfer of some load from elastic retention to the visor. These were design and fabrication observations, without quantitative comparisons of impact-release force, head acceleration or continuous wearing time. [Frame and visor assembly](ref:R01)\n\nThe same 3DVerkstan-type structure received different feedback in Throckmorton et al.'s project: a visor closer to the face fogged readily, some users reported tension headaches, and projecting attachment prongs allowed the visor to detach when bumped. The team retained hooked attachments from another design, changed wall and internal thickness and band-hole positions, and added an upper cover to the final version. These changes addressed vision, forehead loading and connection reliability rather than a single comfort parameter. [Clinical-feedback-driven design iterations](ref:R04)\n\nThe reports do not invalidate each other: neither controlled head circumference, band tension, visor curvature and work tasks in a common comparison. More attachment points can reduce local visor movement without reducing forehead pressure. Moving the visor outward can create space for eyewear and the face while changing the overall moment and coverage perimeter. Original images locate these structural differences, but a simpler or lighter version cannot establish greater comfort for every user.",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Easy assembly scored highly without matching gains in visibility or overall preference",
+          "markdown": "Daud et al. selected 116 contacts who had received community-produced shields for survey invitations and included 63 complete responses, a completion rate of 54.3%. Selection considered likely responsiveness and was not random. The survey concerned one 3DVerkstan shield and used photographs of a conventional shield with a foam forehead pad and elastic band as its reference; participants were not randomized between products. [Survey recruitment and comparator shield](ref:R03)\n\nItems were scored from 1–5, while overall preference had separate anchors: 1 favored the conventional shield, 3 indicated no preference, and 5 favored the printed shield. Original table means were 4.46 for assembly, 4.33 for compatibility with other protective equipment, 4.19 for portability, 3.89 for durability, 3.40 for comfort, 3.22 for stability, 3.06 for visibility and 3.19 for overall preference. High assembly ratings therefore did not translate into comparably strong overall preference; the overall mean was only slightly above the neutral anchor. [Experience ratings by item](ref:R03)\n\nThe protectiveness mean of 3.81 represents perception, not splash penetration or infection risk. Sterile-field compatibility similarly records concern about contamination, not microbial culture. Most items had 63 responses, but compatibility with other equipment had 61 and sterile-field compatibility 46; the bars cannot all be assumed to represent identical respondents. The original graph starts its vertical axis at 2 rather than zero, visually amplifying differences. Confidence intervals labeled in the table and short error bars in the graph also cannot be treated as consistent precision information without explanation.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Role differences reflect tasks and expectations, not universal unsuitability for healthcare workers",
+          "markdown": "The same survey separated patient-facing and community-facing respondents, with 39 and 24 in the original table. Mean comfort, stability and visibility were 3.1795, 2.923 and 2.718 in the patient-facing group versus 3.75, 3.708 and 3.625 in the community-facing group; corresponding p values were 0.015, 0.0047 and 0.0055. Overall preference was 2.949 versus 3.583, p=0.0249. For people regularly using professional equipment, easy assembly did not compensate for every wearing requirement. The findings do not identify the specific component responsible for the difference. [Results by work-facing role](ref:R03)\n\nAssembly, portability, compatibility with other equipment and communication did not differ significantly between groups; not every red bar in the graph is significantly worse. Additional analyses separated medical from nonmedical organizations and service volumes, but these categories may overlap and are not independent replications. Methods describe large service volume as more than 200 clients daily, with only 3 respondents in that demographic category, yet the later comparison lists 21 in the large group. This classification conflict prevents reconstruction using the stated threshold; a definite workload–response relationship is therefore not assigned.\n\nMultiple between-group tests were applied to Likert items without reported multiplicity correction. Groups were not matched for identical tasks, continuous wearing duration, eyewear type or previous shield experience. The associations support specific questions, such as movement during head turning or effects of visor curvature during close work, rather than a causal disadvantage of printing for clinical roles.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "Repeat-treatment counts must distinguish visors from frames",
+          "markdown": "Noguera et al. separately observed material compatibility of transparent visors and printed headbands. Chemical treatments included 70% ethanol, a hydrogen-peroxide–quaternary-ammonium mixture and 0.1% sodium hypochlorite, with water controls. Wet gauze was applied for 1 minute followed by air drying; visors underwent 40 repetitions and headbands 30. Although the abstract summarizes treatment as 40 repetitions, methods and results distinguish the components, so the complete device cannot receive one uniform reuse count. [Component-specific treatment experiments](ref:R02)\n\nClearly identified materials included 0.75 mm polycarbonate and 0.5 mm PETG visors; headbands included commercial grades of PLA, ASA, ABS, PETG and Tritan at different printing layer heights. No visible cracks or appearance changes were observed after the respective chemical treatments. Haze, spectral transmittance, surface-microcrack density, attachment fatigue and post-wiping microbial reduction were not measured. The finding concerns visible integrity after specified treatment, not effectiveness of every disinfection procedure or equivalence between one wipe and one complete clinical use.\n\nThe clinical evaluation table contains only n=4, n=2, n=1 and n=1 for its four designs. The lightest design had a 12.8 g headband and 68 g complete shield; another had a 42.58 g headband and 145.30 g complete shield. The heavier design still received favorable subjective ratings, showing that mass cannot substitute for contact distribution and stability. These very small, nonrandom groups cannot establish the most comfortable design. Daily-use feedback and laboratory repeated wiping are separate evidence sets, not proof that these respondents completed all treatment cycles. [Mass and small-sample wearing evaluation](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "Thermal distortion and post-treatment vapor exposure are different barriers to reuse",
+          "markdown": "Noguera et al. also applied autoclaving at 121°C for 15 minutes. PETG XT and Tritan HT headbands shrank, warped or cracked. No subsequent tensile or impact tests quantified strength loss, so direct evidence concerns structural damage visible externally; discussion of microbuckling does not replace mechanical data. Other materials cannot be presumed suitable for unlimited high-temperature cycles simply because damage was not specifically highlighted. [Thermal conditions and damage](ref:R02)\n\nZhang et al. likewise observed warped and fused PLA/PETG frames after autoclaving and eventually used immersion in 70% ethanol for 10 minutes followed by drying. Application mode, wet-contact duration and component geometry differ from the preceding 1-minute gauze treatment, so this is not a replication of the same treatment experiment. The case also describes a hot-air-drying attempt but does not supply a matrix of microbial killing and residual mechanical properties adequate to compare every method. [Observations across treatment pathways](ref:R01)\n\nTime before redonning also affected experience. Noguera et al. asked one physician and one technician to wear shields 1, 3 and 5 minutes after treatment. Irritating vapor and eye redness could still occur 1 minute after ethanol treatment, leading the authors to propose longer drying. This involved only two observers, without local vapor-concentration measurements or a generalizable exposure threshold. It explains why an uncracked visor does not fully describe immediate redonning, but cannot establish a waiting time applicable to every material and environment. [Post-treatment wearing observations](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "s6",
+          "title": "Detachable components support maintenance without establishing a complete service life",
+          "markdown": "AJFlex attaches a PET or polycarbonate visor, elastic band, cable ties and forehead foam to its headband; visor thickness is 0.015 or 0.02 inches. Foam cushions the forehead, hooks restrain the visor and elastic adjusts retention. These components serve different functions and present different cleaning interfaces: inner foam, cable-tie junctions and visor holes cannot be represented solely by treatment of the outer frame wall. The paper describes intended reuse by one wearer after disinfection, without component failure-cycle counts or residual-contamination measurements. [Components and maintenance architecture](ref:R04)\n\nZhang et al. recorded weak layer bonding and warping during fast printing and breakage when separating stacked articles. Such initial defects carry into subsequent wear and treatment; identical design files do not establish identical finished-part durability. A user's durability rating may also encompass stability, a robust appearance or easy reassembly, whereas laboratory lifetime requires a specified failure endpoint. [Sources of fabrication defects](ref:R01)\n\n| Existing measurement | Directly related use question | Quantity absent from these studies |\n|---|---|---|\n| Appearance after repeated chemical treatment | Obvious visor or headband damage | Optical haze, attachment-hole fatigue and residual microbes |\n| Questionnaire comfort and visibility | Perceived suitability for a task | Contact pressure and continuous wearing time under identical tasks |\n| Photographs of hooks, bands and foam | Locations of visor attachment, retention and forehead cushioning | Splash protection after replacement and cumulative component life |\n\nTreatment cycles were not linked article by article to actual work shifts, and complete protection testing was not repeated after visor replacement. Retaining one headband through repeated use, replacing only its visor and continuously using the whole assembly therefore remain three use histories not jointly validated in these records.",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Zhang et al.: 3DVerkstan model, printed frame and visor assembly; original image based on the 3DVerkstan design.",
+          "interpretation": "A shows the digital frame, B the print and C the assembled transparent visor. Attachments span the front and sides, while the visor bends around the face; retention-band connection locations are visible posteriorly. The visor itself is not printed, so repeat-treatment findings for frame and visor materials require separation. Attachment distribution and curvature can be located, but the image contains no contact-pressure, optical-distortion or release-force measurement. [Original frame figure](ref:R01)"
+        },
+        "F02": {
+          "caption": "Throckmorton et al.: design iterations involving prongs, hooks and reduced material.",
+          "interpretation": "Panel a is the initial frame, b an alternative with stronger hooked supports, c stacked manufacture, d the thinner 3DVerkstan, e modified walls and band holes, and f AJFlex with an upper cover. Stackability in c describes manufacturing rather than wearing comfort. Changes in e and f were not independent randomized comparisons. Together with reported feedback, the figure shows responses to visor detachment, fogging and forehead discomfort; the upper cover is not an aerosol-barrier test in this figure. [Original design evolution](ref:R04)"
+        },
+        "F03": {
+          "caption": "Daud et al.: the conventional shield used to define the survey reference.",
+          "interpretation": "A, B and C show the transparent visor, broad forehead foam and elastic band from different views. This defines the specific comparator presented to respondents, not every conventional shield on the market or a randomized crossover-wearing control. Forehead cushioning and retention geometry also differ, so preference cannot be attributed solely to whether a component was printed. [Original conventional comparator](ref:R03)"
+        },
+        "F04": {
+          "caption": "Daud et al.: item scores for patient-facing, community-facing and all respondents.",
+          "interpretation": "The horizontal axis lists experience items; the vertical axis displays 2–5 rather than the full scale. Red, blue and green denote patient-facing, community-facing and overall respondents. Assembly and compatibility with other equipment score highly; visibility and sterile-field compatibility show more pronounced group differences. Stars indicate p<0.05, while unstarred bar-height differences do not establish significance. The overall group contains the other two rather than an independent third sample. Short plotted error bars differ from ranges labeled confidence intervals in the table, preventing reconstruction of exact confidence limits from the graph. [Original rating figure and table](ref:R03)"
+        },
+        "F05": {
+          "caption": "Throckmorton et al.: forehead foam, worn configuration and separable components.",
+          "interpretation": "The left shows visor-to-headband attachment and inner foam, the center the spatial relationship during use with a respirator, and the right batches of components. Foam cushioning, band retention and visor coverage are different functions. The central photograph shows spatial co-wear, not compatibility testing across every eyewear and respirator model. Packaged quantities at right are not reuse counts. Connections requiring cleaning and inspection are visible, but no post-disinfection component-failure curves are supplied. [Original component figure](ref:R04)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie beeinflussen gedruckte Gesichtsschutzschilde Trageerfahrung und Wiederverwendung?",
+      "direction": "Persönliche Schutzausrüstung",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Befestigungspunkte, Gesichtsabstand und Stirnkontakt verändern unterschiedliche Trageprobleme",
+          "markdown": "Die untersuchten gedruckten Gesichtsschutzschilde bestehen aus Rahmen, transparentem Visier und Befestigungsteilen; gedruckt wird hauptsächlich der tragende Rahmen. Zhang et al. verwendeten zunächst drei vordere Befestigungspunkte und wechselten anschließend zur 3DVerkstan-Struktur mit sechs vorderen und seitlichen Punkten. Sie berichteten stabilere Visierbefestigung und eine teilweise Lastverlagerung vom elastischen Band auf das Visier. Dies waren Beobachtungen aus Entwurf und Fertigung ohne quantitative Vergleiche von Ablösekraft bei Stößen, Kopfbeschleunigung oder kontinuierlicher Tragedauer. [Rahmen-Visier-Montage](ref:R01)\n\nEine Struktur desselben 3DVerkstan-Typs erhielt im Projekt von Throckmorton et al. andere Rückmeldungen: Das näher am Gesicht liegende Visier beschlug leicht, einige Nutzende berichteten Spannungskopfschmerzen, und vorstehende Befestigungszapfen ließen das Visier bei Stößen abspringen. Das Team übernahm Haken aus einem anderen Entwurf, änderte Wand- und Innenstärke sowie Bandlochpositionen und ergänzte die Endversion um eine obere Abdeckung. Diese Änderungen betrafen Sicht, Stirnbelastung und Verbindungszuverlässigkeit, nicht einen einzigen Komfortparameter. [Entwurfsiteration nach klinischen Rückmeldungen](ref:R04)\n\nDie Berichte widerlegen einander nicht: Keiner verglich die Modelle unter gleichen Kopfumfängen, Bandspannungen, Visierkrümmungen und Arbeitsaufgaben. Mehr Befestigungspunkte können lokale Visierbewegung verringern, ohne den Stirndruck zu senken. Ein größerer Gesichtsabstand schafft Platz für Brillen und Gesicht, verändert aber Gesamtmoment und Abdeckungsrand. Originalbilder lokalisieren diese Strukturunterschiede; eine einfachere oder leichtere Version belegt jedoch keinen höheren Komfort für alle Nutzenden.",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Einfache Montage erhielt hohe Werte, Sicht und Gesamtpräferenz stiegen nicht entsprechend",
+          "markdown": "Daud et al. wählten 116 Kontakte aus, die gemeinschaftlich hergestellte Schilde erhalten hatten, und berücksichtigten 63 vollständige Antworten; die Abschlussquote betrug 54.3%. Die Auswahl berücksichtigte erwartete Antwortbereitschaft und war nicht zufällig. Die Befragung betraf ein 3DVerkstan-Modell und verwendete Fotos eines herkömmlichen Schildes mit Schaumstoff-Stirnpolster und elastischem Band als Referenz; Personen wurden den Produkten nicht randomisiert zugeteilt. [Rekrutierung und Vergleichsschild](ref:R03)\n\nBewertet wurde auf einer Skala von 1–5; die Gesamtpräferenz hatte eigene Anker: 1 bevorzugte den herkömmlichen Schild, 3 bedeutete keine Präferenz, 5 bevorzugte den gedruckten Schild. Die Originaltabelle nennt Mittelwerte von 4.46 für Montage, 4.33 für Kompatibilität mit anderer Schutzausrüstung, 4.19 für Transportierbarkeit, 3.89 für Haltbarkeit, 3.40 für Komfort, 3.22 für Stabilität, 3.06 für Sicht und 3.19 für Gesamtpräferenz. Hohe Montagewerte bedeuteten daher keine vergleichbar starke Gesamtpräferenz; deren Mittelwert lag nur etwas oberhalb des neutralen Ankers. [Erfahrungsbewertungen nach Einzelkriterium](ref:R03)\n\nDer Schutzwirkungswert 3.81 bezeichnet Wahrnehmung, keine Spritzdurchdringung oder Infektionsgefahr. Auch Kompatibilität mit dem sterilen Feld erfasst Kontaminationsbedenken, keine mikrobiologische Kultur. Die meisten Kriterien hatten 63 Antworten, Kompatibilität mit anderer Ausrüstung jedoch 61 und mit dem sterilen Feld 46; identische Befragtengruppen dürfen nicht für alle Balken angenommen werden. Die Originalgrafik beginnt die Ordinate bei 2 statt bei null und verstärkt damit Unterschiede optisch. Die in der Tabelle bezeichneten Konfidenzintervalle und kurzen Fehlerbalken der Grafik lassen sich ohne Erklärung ebenfalls nicht als übereinstimmende Präzisionsangaben behandeln.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Berufsgruppenunterschiede betreffen Aufgaben und Erwartungen, keine allgemeine Untauglichkeit für medizinisches Personal",
+          "markdown": "Dieselbe Befragung trennte patientennahe und gemeindenahe Tätigkeiten mit 39 beziehungsweise 24 Personen in der Originaltabelle. Mittelwerte für Komfort, Stabilität und Sicht betrugen in der patientennahen Gruppe 3.1795, 2.923 und 2.718 gegenüber 3.75, 3.708 und 3.625 in der gemeindenahen Gruppe; zugehörige p-Werte waren 0.015, 0.0047 und 0.0055. Die Gesamtpräferenz lag bei 2.949 gegenüber 3.583, p=0.0249. Bei regelmäßiger Nutzung professioneller Ausrüstung kompensierte einfache Montage somit nicht jede Trageanforderung. Welches konkrete Bauteil die Unterschiede verursachte, wurde nicht bestimmt. [Ergebnisse nach Tätigkeitsbezug](ref:R03)\n\nMontage, Transportierbarkeit, Kompatibilität mit anderer Ausrüstung und Kommunikation unterschieden sich nicht signifikant; nicht jeder rote Balken ist signifikant schlechter. Weitere Analysen trennten medizinische und nichtmedizinische Einrichtungen sowie Dienstleistungsvolumina, doch diese Kategorien können sich überschneiden und sind keine unabhängigen Wiederholungen. Die Methoden definieren großes Volumen als mehr als 200 betreute Personen täglich; nur 3 Befragte liegen in dieser demografischen Kategorie, während die spätere Vergleichstabelle 21 Personen der großen Gruppe zuordnet. Dieser Einteilungskonflikt verhindert die Rekonstruktion anhand des genannten Schwellenwerts; eine gesicherte Belastungs–Antwort-Beziehung wird deshalb nicht zugeschrieben.\n\nMehrere Gruppenvergleiche wurden auf Likert-Kriterien angewandt, ohne berichtete Korrektur für multiples Testen. Identische Aufgaben, kontinuierliche Tragedauer, Brillentyp und vorherige Schilderfahrung wurden nicht angeglichen. Die Zusammenhänge begründen konkrete Fragen, etwa zur Verschiebung bei Kopfbewegungen oder zur Visierkrümmung bei Naharbeit, statt eines kausalen Nachteils des Druckverfahrens für klinische Tätigkeiten.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "Wiederholte Behandlungen müssen für Visier und Rahmen getrennt gezählt werden",
+          "markdown": "Noguera et al. beobachteten die Materialverträglichkeit transparenter Visiere und gedruckter Stirnbänder getrennt. Chemische Behandlungen umfassten 70% Ethanol, ein Wasserstoffperoxid–quartäres-Ammonium-Gemisch und 0.1% Natriumhypochlorit mit Wasserkontrollen. Nach 1 Minute Behandlung mit getränkter Gaze folgte Lufttrocknung; Visiere durchliefen 40 Wiederholungen, Stirnbänder 30. Obwohl die Zusammenfassung 40 Wiederholungen nennt, unterscheiden Methoden und Ergebnisse die Bauteile. Dem Gesamtgerät lässt sich daher keine einheitliche Wiederverwendungszahl zuweisen. [Bauteilspezifische Behandlungsversuche](ref:R02)\n\nEindeutig bezeichnet wurden Visiere aus 0.75 mm Polycarbonat und 0.5 mm PETG; Stirnbänder bestanden aus Handelsqualitäten von PLA, ASA, ABS, PETG und Tritan mit unterschiedlichen Druckschichthöhen. Nach den jeweiligen chemischen Behandlungen wurden keine sichtbaren Risse oder Erscheinungsveränderungen beobachtet. Trübung, spektrale Transmission, Oberflächenmikrorissdichte, Befestigungsermüdung und mikrobielle Reduktion nach Wischen wurden nicht gemessen. Der Befund betrifft sichtbare Integrität nach festgelegter Behandlung, nicht die Wirksamkeit jedes Desinfektionsverfahrens oder die Gleichsetzung eines Wischvorgangs mit einer vollständigen klinischen Nutzung.\n\nDie klinische Bewertungstabelle enthält für vier Entwürfe lediglich n=4, n=2, n=1 und n=1. Der leichteste Entwurf hatte ein 12.8 g schweres Stirnband und 68 g Gesamtmasse; ein anderer ein 42.58 g schweres Band und 145.30 g Gesamtmasse. Auch der schwerere Entwurf erhielt günstige subjektive Bewertungen; Masse ersetzt somit weder Kontaktverteilung noch Stabilität. Diese sehr kleinen, nicht randomisierten Gruppen bestimmen aber keinen komfortabelsten Entwurf. Alltagserfahrungen und wiederholtes Laborwischen sind getrennte Datensätze, kein Beleg dafür, dass diese Befragten sämtliche Behandlungszyklen absolvierten. [Masse und Tragebewertung bei kleiner Stichprobe](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "Wärmeverformung und Dampfexposition nach Behandlung sind unterschiedliche Wiederverwendungshindernisse",
+          "markdown": "Noguera et al. setzten außerdem Autoklavieren bei 121°C für 15 Minuten ein. Stirnbänder aus PETG XT und Tritan HT schrumpften, verzogen sich oder rissen. Nachfolgende Zug- oder Schlagprüfungen quantifizierten den Festigkeitsverlust nicht. Direkt belegt ist somit äußerlich sichtbare Strukturschädigung; die Erklärung durch Mikroknicken ersetzt keine mechanischen Daten. Andere Materialien gelten nicht allein deshalb als unbegrenzt hochtemperaturbeständig, weil Schäden nicht ausdrücklich hervorgehoben wurden. [Wärmebedingungen und Schäden](ref:R02)\n\nZhang et al. beobachteten ebenfalls verzogene und miteinander verschmolzene PLA/PETG-Rahmen nach Autoklavieren und verwendeten schließlich 10 Minuten Eintauchen in 70% Ethanol mit anschließender Trocknung. Anwendung, Nasskontaktzeit und Bauteilgeometrie unterscheiden sich von der zuvor beschriebenen 1-minütigen Gazebehandlung; dies wiederholt nicht dasselbe Behandlungsexperiment. Der Fallbericht beschreibt auch einen Heißlufttrocknungsversuch, liefert aber keine ausreichende Matrix aus Keimreduktion und verbleibenden mechanischen Eigenschaften zum Vergleich sämtlicher Verfahren. [Beobachtungen verschiedener Behandlungswege](ref:R01)\n\nAuch die Zeit bis zum Wiederaufsetzen beeinflusste die Erfahrung. Noguera et al. ließen eine ärztliche und eine technische Person Schilde 1, 3 und 5 Minuten nach Behandlung tragen. Noch 1 Minute nach Ethanolbehandlung konnten reizende Dämpfe und Augenrötung auftreten; die Autoren schlugen deshalb längeres Trocknen vor. Beteiligt waren nur zwei Beobachtende, ohne Messung lokaler Dampfkonzentrationen oder verallgemeinerbarer Expositionsschwelle. Dies erklärt, warum ein rissfreies Visier den Zustand beim unmittelbaren Wiederaufsetzen nicht vollständig beschreibt, begründet aber keine für alle Materialien und Umgebungen gültige Wartezeit. [Tragebeobachtungen nach Behandlung](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "s6",
+          "title": "Abnehmbare Teile erleichtern Wartung, bestimmen aber keine vollständige Nutzungsdauer",
+          "markdown": "AJFlex verbindet ein PET- oder Polycarbonatvisier, elastisches Band, Kabelbinder und Stirnschaum mit dem Stirnband; die Visierdicke beträgt 0.015 oder 0.02 Zoll. Schaum polstert die Stirn, Haken halten das Visier, Elastik passt die Befestigung an. Die Teile erfüllen verschiedene Aufgaben und besitzen verschiedene Reinigungskontaktflächen: Schauminnenseite, Kabelbinderverbindungen und Visierlöcher werden nicht allein durch die Behandlung der äußeren Rahmenwand repräsentiert. Der Artikel beschreibt beabsichtigte Wiederverwendung durch dieselbe Person nach Desinfektion, jedoch keine bauteilspezifischen Ausfallzyklen oder Restkontaminationsmessungen. [Bauteile und Wartungsstruktur](ref:R04)\n\nZhang et al. dokumentierten schwache Schichthaftung und Verzug bei schnellem Druck sowie Bruch beim Trennen gestapelter Exemplare. Solche Anfangsfehler gehen in spätere Trage- und Behandlungsvorgänge ein; identische Entwurfsdateien begründen keine identische Bauteilhaltbarkeit. Eine subjektive Haltbarkeitsbewertung kann auch stabilen Sitz, robustes Aussehen oder einfache Wiederzusammensetzung meinen, während Laborlebensdauer einen definierten Ausfallendpunkt erfordert. [Entstehung von Fertigungsfehlern](ref:R01)\n\n| Vorhandene Messung | Direkt zugehörige Nutzungsfrage | In diesen Studien fehlende Größe |\n|---|---|---|\n| Aussehen nach wiederholter chemischer Behandlung | Offensichtliche Schäden an Visier oder Stirnband | Optische Trübung, Ermüdung der Befestigungslöcher und Restkeime |\n| Fragebogen zu Komfort und Sicht | Subjektive Eignung für eine Aufgabe | Kontaktdruck und kontinuierliche Tragedauer bei identischen Aufgaben |\n| Fotos von Haken, Bändern und Schaum | Positionen von Visierverbindung, Fixierung und Stirnpolsterung | Spritzschutz nach Austausch und kumulative Bauteillebensdauer |\n\nBehandlungszyklen wurden nicht für einzelne Exemplare mit tatsächlichen Arbeitsschichten verknüpft; vollständige Schutzprüfungen nach Visierwechsel wurden ebenfalls nicht wiederholt. Mehrfache Nutzung desselben Stirnbands, Austausch allein des Visiers und fortgesetzte Nutzung der gesamten Baugruppe bleiben damit drei in diesen Aufzeichnungen nicht gemeinsam validierte Nutzungsgeschichten.",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Zhang et al.: 3DVerkstan-Modell, gedruckter Rahmen und Visiermontage; Originalabbildung nach dem 3DVerkstan-Entwurf.",
+          "interpretation": "A zeigt das digitale Modell, B den Druck und C das montierte transparente Visier. Befestigungen liegen vorn und seitlich; das Visier biegt sich um das Gesicht, hinten sind Bandanschlüsse sichtbar. Das Visier selbst ist nicht gedruckt, weshalb wiederholte Behandlungen von Rahmen- und Visiermaterial getrennt betrachtet werden müssen. Befestigungsverteilung und Krümmung sind lokalisierbar, Kontaktdruck, optische Verzerrung und Ablösekraft aber nicht gemessen. [Originale Rahmenabbildung](ref:R01)"
+        },
+        "F02": {
+          "caption": "Throckmorton et al.: Entwurfsiteration mit Zapfen, Haken und Materialreduktion.",
+          "interpretation": "a zeigt den Ausgangsrahmen, b eine Alternative mit stärkeren Haken, c Stapelfertigung, d den dünneren 3DVerkstan, e geänderte Wände und Bandlöcher, f AJFlex mit oberer Abdeckung. Stapelbarkeit in c betrifft Fertigung, nicht Tragekomfort. Änderungen in e und f waren keine unabhängigen randomisierten Vergleiche. Zusammen mit den Rückmeldungen zeigt das Bild Reaktionen auf Visierablösung, Beschlagen und Stirnbeschwerden; die obere Abdeckung wird hier nicht auf Aerosolbarrierewirkung geprüft. [Originale Entwurfsentwicklung](ref:R04)"
+        },
+        "F03": {
+          "caption": "Daud et al.: konventioneller Schild als definierte Fragebogenreferenz.",
+          "interpretation": "A, B und C zeigen transparentes Visier, breites Stirnschaumpolster und elastisches Band aus verschiedenen Blickwinkeln. Dies definiert den konkreten Vergleich für Befragte, nicht sämtliche konventionellen Marktprodukte oder eine randomisierte Crossover-Tragekontrolle. Auch Stirnpolsterung und Befestigungsgeometrie unterscheiden sich; Präferenzen sind deshalb nicht allein der gedruckten Herstellung eines Teils zuzuschreiben. [Originale konventionelle Referenz](ref:R03)"
+        },
+        "F04": {
+          "caption": "Daud et al.: Einzelbewertungen patientennaher, gemeindenaher und sämtlicher Befragter.",
+          "interpretation": "Die Abszisse nennt Erfahrungskriterien, die Ordinate zeigt 2–5 statt der vollständigen Skala. Rot, Blau und Grün stehen für patientennahe, gemeindenahe und sämtliche Befragte. Montage und Kompatibilität mit anderer Ausrüstung erhalten hohe Werte; Sicht und Kompatibilität mit dem sterilen Feld zeigen deutlichere Gruppenunterschiede. Sterne bezeichnen p<0.05; unmarkierte Höhenunterschiede belegen keine Signifikanz. Die Gesamtgruppe enthält die anderen beiden und ist keine unabhängige dritte Stichprobe. Kurze Fehlerbalken weichen von den in der Tabelle als Konfidenzintervalle bezeichneten Bereichen ab; genaue Konfidenzgrenzen lassen sich aus der Grafik nicht rekonstruieren. [Originalgrafik und Bewertungstabelle](ref:R03)"
+        },
+        "F05": {
+          "caption": "Throckmorton et al.: Stirnschaum, Tragesituation und trennbare Komponenten.",
+          "interpretation": "Links sind Visier-Stirnband-Verbindung und innerer Schaum sichtbar, mittig die räumliche Beziehung beim Tragen mit Atemschutz, rechts gebündelte Komponenten. Schaumpolsterung, Bandfixierung und Visierabdeckung erfüllen verschiedene Aufgaben. Das mittlere Foto zeigt räumlich mögliches gemeinsames Tragen, keinen Kompatibilitätstest sämtlicher Brillen- und Atemschutzmodelle. Verpackungsmengen rechts sind keine Wiederverwendungszahlen. Reinigungs- und prüfbedürftige Verbindungen sind lokalisierbar, Ausfallkurven nach Desinfektion fehlen jedoch. [Originale Komponentenabbildung](ref:R04)"
+        }
+      }
+    }
+  }
+}

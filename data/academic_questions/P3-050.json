@@ -1,0 +1,337 @@
+{
+  "schema_version": 2,
+  "question_id": "P3-050",
+  "p": "P3",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_1a5a10be439a5c102bf1",
+    "doc_63d224738839ed689bd2",
+    "doc_320c31686603fafb595c"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Correlating mechanical and rheological filament properties to processability and quality of 3D printed tablets using multiple linear regression",
+      "publisher": "International Journal of Pharmaceutics",
+      "year": 2024,
+      "url": "https://doi.org/10.1016/j.ijpharm.2023.123719",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Extrusion-Based 3D Printing of Pharmaceuticals—Evaluating Polymer (Sodium Alginate, HPC, HPMC)-Based Ink’s Suitability by Investigating Rheology",
+      "publisher": "Micromachines",
+      "year": 2025,
+      "url": "https://doi.org/10.3390/mi16020163",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Systematic screening of photopolymer resins for stereolithography (SLA) 3D printing of solid oral dosage forms: Investigation of formulation factors on printability outcomes",
+      "publisher": "International Journal of Pharmaceutics",
+      "year": 2024,
+      "url": "https://doi.org/10.1016/j.ijpharm.2024.123862",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 2",
+      "asset_path": "assets/academic_figures/P3-050/F01.png",
+      "image_url": "",
+      "source_url": "https://www.pharmaexcipients.com/wp-content/uploads/2023/12/Correlating-mechanical-and-rheological-filament-properties-to-processability-and-quality-of-3D-printed-tablets-using-multiple-linear-regression.pdf",
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 3",
+      "asset_path": "assets/academic_figures/P3-050/F02.png",
+      "image_url": "",
+      "source_url": "https://www.pharmaexcipients.com/wp-content/uploads/2023/12/Correlating-mechanical-and-rheological-filament-properties-to-processability-and-quality-of-3D-printed-tablets-using-multiple-linear-regression.pdf",
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Figure 5",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-050/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11857113/#micromachines-16-00163-f005",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Figure 8",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-050/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11857113/#micromachines-16-00163-f008",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Figure 8",
+      "asset_path": "assets/academic_figures/P3-050/F05.png",
+      "image_url": "",
+      "source_url": "https://publications.aston.ac.uk/id/eprint/45981/1/1-s2.0-S0378517324000966-main.pdf",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R03",
+      "original_label": "Figure 6",
+      "asset_path": "assets/academic_figures/P3-050/F06.png",
+      "image_url": "",
+      "source_url": "https://publications.aston.ac.uk/id/eprint/45981/1/1-s2.0-S0378517324000966-main.pdf",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "配方与工艺参数如何影响可打印性？",
+      "direction": "打印质量与稳定性",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "丝材能否进料取决于聚合物组合及实际机械窗口",
+          "markdown": "Kreft 等筛选 12 种聚合物，制成 23 种丝材，其中 17 种可在 FDM-3P 打印机连续进料，6 种失败。配方均含酮洛芬 20%、Syloid 244 FP 0.5%，聚合物为 69.5–79.5%，增塑剂为 0–10%。挤出采用激光反馈牵引，将直径控制在 1.75 ± 0.05 mm；因此机械指标是在直径基本固定的条件下比较，而非把不同粗细的丝材直接合并。[丝材配方与机械试验](ref:R01)\n\n单用部分 PVP 配方会脆断，HPC 或 PEO 配方又可能过软而屈曲。可打印的 M13 含 Klucel EF 20%、Kollidon VA64 49.5%、酮洛芬 20%、甘露醇 10%、二氧化硅 0.5%，打印温度 160 °C；这里的 20% 是总配方质量分数，不是聚合物内部比例，也不代表通用于所有体系的最低添加量。Soluplus 在本机上可以进料，与部分既往报道不同，作者提出设备差异及药物增塑的解释，实验未单独拆分这两种贡献。\n\n刚度测量把 3 cm 丝材放在平面金属台上，以 2 mm/s 压入 0.4 mm，每种重复 10 次，记录载荷。它不是三点弯曲模量。以机械与流变共 15 个候选变量回归，最终进料模型仅保留刚度及其平方项，R² = 0.74，五折验证 R² = 0.70。非进料组指数不高于 0.54，多数进料组至少 0.72，但 M16 在 0.59 仍成功。图中指数可大于 1 或小于 0，应读作该设备的经验判别分数，不能解释成成功概率。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "能进料的丝材仍可能产生片重与外形离散",
+          "markdown": "上述 17 种可加工丝材各打印 24 片，固定 50% 直线填充、0.3 mm 层高、20 mm/s 速度，平台温度随配方为 25–60 °C。设计长 16 mm、宽 7 mm、高 5.1 mm，圆角半径 1.5 mm。机械进料成功以后，喷嘴内熔体流动、冷却和层间铺展仍会改变实际沉积量，因此作者另为片重、尺寸、崩解及释放均匀性建立模型。[打印终点与回归比较](ref:R01)\n\n| 终点 | 拟合 R² | 预测 R² | 五折验证 R² |\n|---|---|---|---|\n| 片重 RSD | 0.61 | 0.30 | 0.17 |\n| 宽度 RSD | 0.90 | 0.68 | 0.69 |\n| 释放量 RSD | 0.88 | 0.79 | 0.73 |\n| 崩解发生与否 | 0.83 | 0.64 | 0.57 |\n\n片重模型的拟合看似尚可，验证却明显下降；不能把进料模型的表现转移到剂量质量控制。M12、M14 的片重 RSD 分别为 3.73%、12.29%，可打印并未消除配方间差异。宽度模型中的刚度系数为正，说明有利于进料的力学性质在这个数据集中也可能伴随更大的宽度离散，而非所有质量终点同步改善。\n\n释放试验为 900 mL、pH 7.5 的 0.05 M 磷酸盐介质，37 °C、100 rpm，每组 n = 6，使用沉降装置。平均释放约 60% 时，释放量 RSD 跨配方为 4–56%。这是体外同批释放离散，不能读成释放时间的相对偏差或体内差异。模型来自同一设备与有限配方，较高的内部验证值仍没有提供换打印机后的外部验证。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "固定压力下增加聚合物，可能把可挤出墨水推离窗口",
+          "markdown": "Rony 等用 BioX 打印机比较海藻酸钠（SA）0.8% 与 1.6%、HPC H 3.2% 与 4.8%、HPMC K100 与 K4 各 1.05%。统一使用 3 mL 注射器、410 µm 喷嘴、60 kPa、10 mm/s、50% 填充；目标圆片直径 12 mm、高 5 mm，薄膜为 15 × 10 × 0.35 mm。只有 SA 0.8% 在这组设定下同时保持两类目标形状。SA 1.6% 出现不连续沉积，不能由此推断换压力或喷嘴后也一定失败。[配方、打印条件与原图 5](ref:R02)\n\n流变在 25 °C、1 mm 间隙测量。SA 从 0.8% 增至 1.6% 时，0.1 s⁻¹ 下黏度由 1.40 × 10⁶ 增至 2.30 × 10⁶ mPa·s，流动点应力由 20.21 ± 5.70 增至 126.57 ± 19.57 Pa；更高结构强度也增加了固定气压下的挤出阻力。屈服应力却分别为 5.77 ± 3.27 与 2.48 ± 0.65 Pa，不随浓度同方向变化，因为离开线性黏弹区与储能、损耗模量交叉是不同定义。\n\n跨聚合物比较还含配方混杂：SA/HPC 墨水为非诺贝特 20%，并含甘露醇、PEG6000、PVP；HPMC 墨水仅非诺贝特 5%，另含 SDS、乙醇及水，没有前述 PEG/PVP 组合。故它们的差异不能全归于聚合物名称。HPC 从 3.2% 增至 4.8% 时，极低剪切处黏度反而从 5.44 × 10⁴ 降至 4.20 × 10⁴ mPa·s，而较高剪切速率下排序改变；选取哪个剪切区间，直接影响所谓“更稠”的判断。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "触变恢复率最高的配方，没有得到最佳打印形状",
+          "markdown": "该研究用三阶段试验模拟静置、挤出和沉积：先在线性黏弹区保持 60 s，再以 100 s⁻¹ 剪切 5 s，随后低应变恢复 145 s；分别在恢复后 2.9、60、145 s 计算恢复率。SA 两配方均不足 25%，HPC 为 25–80%，HPMC K100 超过 80%，但形状最好的仍为低恢复率 SA 0.8%。HPMC K4 的信号高度波动，不适合与其他配方一样计算稳定恢复百分比。[触变原图与定量比较](ref:R02)\n\n恢复率是相对于剪切前自身状态的比例。SA 初始复数黏度远高于 HPC，即使只恢复较小比例，沉积后的绝对黏度仍可较高。相反，恢复到较低的原始水平，不代表材料足以支撑上层。HPMC K100 曲线很快接近原水平，但圆片并未获得清晰稳定的目标结构；该结果直接反驳“恢复越快越完全，打印越好”的单指标排序。\n\n振幅扫描同样显示储能模量高于损耗模量并不足以判成功：HPC 两组虽有固态占优区，形状仍差；HPMC K4 相位角为 68.62 ± 3.90°，以黏性响应为主。SA 0.8% 与 1.6% 的恢复过程相近，后者却受到较高流动点应力限制。将两条恢复曲线与实际打印照片并读，才能区分喷嘴内难流动、沉积后难支撑以及不稳定测量这几种失败原因；本实验没有对每种墨水分别优化压力，结果对应统一参数下的比较。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "光引发剂增加可以扩大过固化，而非提高成形质量",
+          "markdown": "Curti 等先比较光引发剂，再筛选 156 个不含药物的树脂配方。改装 Form 2 用 405 nm 光源，目标为直径 12 mm、高 4 mm 圆柱，每条件打印 3 个；完整筛选比较 25、50、100 µm 层厚。PEGDA 平均分子量为 250、575、700，树脂避光在室温混合 12 h。评分从未固化液体到完整成形，但最高编号 PS6 实际代表过度聚合，不能当作最佳质量；清晰边缘记为 PS5*。[光引发剂与成形评分](ref:R03)\n\nTPO 吸收峰约 380.5 nm，与设备光谱较相容；HMPP、HHEMPP、ACP 的峰分别为 243.5、273.5、239.5 nm，在所试浓度下不能有效形成目标。PEGDA700 加 TPO 0.1% 可得边缘清晰形体，而 1% 出现底部扩展。光谱匹配及剂量共同影响反应空间范围，单纯提高引发剂不保证边界更准确。\n\n| TPO 质量分数 | 可打印配方数 PF | 较优配方数 BF |\n|---|---|---|\n| 1.00% | 7 | 4 |\n| 0.50% | 9 | 5 |\n| 0.10% | 20 | 11 |\n| 0.05% | 24 | 20 |\n\n总计 96 个失败、60 个可打印，40 个进入较优集合。其中 35 个至少在一种层厚表现良好，另 5 个在全部所试层厚均良好。较低 TPO 对几何表现有利，但研究没有同步测定双键转化率、残余单体及细胞毒性，不能把低引发剂的好外形解释为口服安全性或固化完全。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "稀释剂与聚合物的比较必须保留分母及筛选层级",
+          "markdown": "同一 SLA 研究中，PEGDA250、PEGDA575、PEGDA700 分别得到 26、24、10 个可打印配方，其中较优配方为 19、13、8 个。作者给出的较优/可打印比为 0.73、0.54、0.80：PEGDA700 的条件比值最高，却没有产生最多可打印配方。把这种已通过初筛的条件比例称为所有候选配方的成功率，会改变比较含义。[聚合物及稀释剂筛选](ref:R03)\n\n| 稀释剂及质量分数 | PF | BF |\n|---|---|---|\n| PEG300，12.5% | 6 | 4 |\n| PEG300，25% | 3 | 1 |\n| PEG300，50% | 0 | 0 |\n| 丙二醇，12.5% | 7 | 5 |\n| 丙二醇，25% | 4 | 2 |\n| 丙二醇，50% | 4 | 3 |\n\nPEG300 增至 50% 时没有配方通过，而相同丙二醇比例仍有可成形者。稀释剂既改变黏度，也稀释可反应组分并改变混溶性，所以“降低黏度”本身无法解释全部趋势。甘油与所考察 PEGDA 体系出现相分离，更说明均相前提须先满足；不能把一种稀释剂在水凝胶中的作用直接移入这一树脂体系。\n\n这些计数汇总了不同聚合物、引发剂与层厚组合，并非同一配方仅替换稀释剂的单因素效应量。全部树脂不含药物，药物吸光、颗粒散射、溶解性或自由基反应均未进入本次筛选。故图中保留形状的条件是后续载药实验的起点，尚未提供载药后的含量、稳定性或释放结果。",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Kreft et al. — 原图 2：进料判别指数及边界样本。",
+          "interpretation": "横轴按指数排序列出丝材，蓝色为实际可加工，红色为失败；纵轴不是成功率。M16 的 0.59 紧邻失败 M21 的 0.54，表明经验边界并不宽。M12 达 1.05，而 M23 为 −0.17，进一步说明该回归输出未限制在概率区间。图支持特定配方和设备内的区分，未检验跨设备阈值。[进料分组](ref:R01)"
+        },
+        "F02": {
+          "caption": "Kreft et al. — 原图 3：同一批材料对不同质量终点的可解释程度。",
+          "interpretation": "绿色为拟合 R²，蓝色为调整 R²，黄色为预测 R²，浅蓝为五折验证。片重组浅蓝柱仅约 17%，宽度及释放量 RSD 组则明显较高；黑色 50% 横线只是图中比较线，不是药典质量标准。横轴也同时包含崩解发生与崩解时间，不能把它们作为同一终点合并。原图的 diameter 标签与正文矩形片长尺寸描述应按各自原文读取。[模型逐终点比较](ref:R01)"
+        },
+        "F03": {
+          "caption": "Rony et al. — 原图 5：相同打印参数下的圆片与薄膜。",
+          "interpretation": "上行为圆片，下行为薄膜；列依次为 SA 0.8%、1.6%，HPC H 3.2%、4.8%，HPMC K100、K4 各 1.05%。SA 0.8% 同时保留外形，SA 1.6% 出现断续线条；后续列显示塌陷、铺展或没有圆片。照片没有共用长度标尺，适合比较形态失效类型，不能从像素计算尺寸误差。HPMC 与其他列的药量及溶剂体系不同。[打印原始结果](ref:R02)"
+        },
+        "F04": {
+          "caption": "Rony et al. — 原图 8：剪切前后黏度的绝对水平与相对恢复。",
+          "interpretation": "a、b、c、d 分别为 SA、HPC H、HPMC K100、K4，横轴时间 s，纵轴 mPa·s 为对数尺度，且各面板范围不同。a 剪切后未回到原平台，却保持比 b 更高的绝对黏度；c 几乎恢复原平台，但不能据此判定形状最佳。d 的剧烈波动保留在完整原图中，不能把单点高峰算作稳定结构恢复。[三阶段流变](ref:R02)"
+        },
+        "F05": {
+          "caption": "Curti et al. — 原图 8：TPO 浓度与候选配方通过数量。",
+          "interpretation": "深色为 PF，浅色为其内 BF。TPO 从 1.00% 降至 0.05%，PF 从 7 到 24、BF 从 4 到 20；纵轴是配方数量，而非聚合转化率。两组柱相互嵌套，不能相加为总样本数，也不能从几何筛选推出残余单体已经降低。[TPO 筛选计数](ref:R03)"
+        },
+        "F06": {
+          "caption": "Curti et al. — 原图 6：丙二醇提高并不完全阻断成形。",
+          "interpretation": "横轴为丙二醇 12.5%、25.0%、50.0% w/w，深蓝 PF 为 7、4、4，浅蓝 BF 为 5、2、3。最高比例仍有成功者，与 PEG300 对照在 50% 的零通过形成区别；中间点与高点的 BF 差异不是独立重复的统计显著性结果。柱状计数汇集其他配方变量，不能直接当作稀释剂单因素剂量响应。[丙二醇筛选](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do formulation and process parameters affect printability?",
+      "direction": "Print quality and stability",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Filament feeding depends on polymer combinations and the actual mechanical window",
+          "markdown": "Kreft and colleagues screened 12 polymers to produce 23 filaments: 17 fed continuously through an FDM-3P printer and 6 failed. All formulations contained 20% ketoprofen and 0.5% Syloid 244 FP, with 69.5–79.5% polymer and 0–10% plasticizer. Laser-controlled pulling maintained an extruded diameter of 1.75 ± 0.05 mm. Mechanical properties were therefore compared at approximately constant diameter, rather than pooling different filament thicknesses. [Filament formulations and mechanical tests](ref:R01)\n\nSome unblended PVP formulations fractured, whereas HPC or PEO formulations could buckle because they were too pliable. Printable M13 contained 20% Klucel EF, 49.5% Kollidon VA64, 20% ketoprofen, 10% mannitol and 0.5% silica, and printed at 160 °C. Here 20% is a fraction of the entire formulation, not of its polymer fraction or a universal minimum addition. Soluplus fed successfully on this machine, unlike some previous reports. The authors proposed equipment differences and drug plasticization, without separately testing their contributions.\n\nStiffness testing placed 3 cm filament pieces on a flat metal support and indented them by 0.4 mm at 2 mm/s, with 10 replicates per formulation, recording force. This was not a three-point bending modulus. Regression started with 15 mechanical and rheological candidates; the feeding model retained only stiffness and its squared term, with R² = 0.74 and five-fold validation R² = 0.70. Non-feeding groups scored no higher than 0.54 and most feeding groups at least 0.72, but M16 still fed at 0.59. Scores in the figure exceed 1 or fall below 0: they are empirical discrimination scores for this equipment, not success probabilities.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Feedable filaments can still produce variable tablet mass and dimensions",
+          "markdown": "Each of the 17 processable filaments produced 24 tablets at 50% rectilinear infill, 0.3 mm layers and 20 mm/s; platform temperature varied by formulation from 25–60 °C. Designed length, width and height were 16, 7 and 5.1 mm, with a 1.5 mm fillet radius. After successful mechanical feeding, nozzle melt flow, cooling and spreading between layers can still change deposition. The authors therefore modelled mass, dimensions, disintegration and release uniformity separately. [Printing endpoints and regression comparison](ref:R01)\n\n| Endpoint | Fit R² | Predicted R² | Five-fold validation R² |\n|---|---|---|---|\n| Mass RSD | 0.61 | 0.30 | 0.17 |\n| Width RSD | 0.90 | 0.68 | 0.69 |\n| Released-amount RSD | 0.88 | 0.79 | 0.73 |\n| Whether disintegration occurred | 0.83 | 0.64 | 0.57 |\n\nThe mass model had an apparently moderate fit but much weaker validation. Feeding-model performance cannot be transferred to dose quality control. M12 and M14 had mass RSDs of 3.73% and 12.29%, respectively; printability did not eliminate formulation differences. A positive stiffness coefficient in the width model indicates that a mechanical property helpful for feeding could coexist with greater width variation in this dataset, rather than improving all quality endpoints together.\n\nRelease testing used 900 mL of pH 7.5, 0.05 M phosphate medium at 37 °C and 100 rpm, with sinkers and n = 6 per group. Released-amount RSD at approximately 60% mean release ranged from 4–56% across formulations. This is within-batch in-vitro release dispersion, not relative variation in release time or an in-vivo difference. Models came from one machine and a limited formulation set; stronger internal validation did not establish external transfer to another printer.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "At fixed pressure, adding polymer can move an extrudable ink outside its operating window",
+          "markdown": "Rony and colleagues compared sodium alginate (SA) at 0.8% and 1.6%, HPC H at 3.2% and 4.8%, and HPMC K100 and K4 each at 1.05% on a BioX printer. Settings were a 3 mL syringe, 410 µm nozzle, 60 kPa, 10 mm/s and 50% infill. Targets were pills of 12 mm diameter and 5 mm height and films of 15 × 10 × 0.35 mm. Only SA 0.8% retained both target shapes at these settings. SA 1.6% deposited discontinuously; this does not establish failure at other pressures or nozzle sizes. [Formulations, printing conditions and original Figure 5](ref:R02)\n\nRheology was measured at 25 °C with a 1 mm gap. Increasing SA from 0.8% to 1.6% raised viscosity at 0.1 s⁻¹ from 1.40 × 10⁶ to 2.30 × 10⁶ mPa·s and flow-point stress from 20.21 ± 5.70 to 126.57 ± 19.57 Pa. Greater structural resistance also impeded extrusion at fixed pneumatic pressure. Yield stresses, however, were 5.77 ± 3.27 and 2.48 ± 0.65 Pa, respectively, not increasing with concentration: departure from the linear viscoelastic region and crossover of storage and loss moduli are different definitions.\n\nCross-polymer comparisons also contain formulation confounding. SA/HPC inks contained 20% fenofibrate plus mannitol, PEG6000 and PVP; HPMC inks contained only 5% fenofibrate with SDS, ethanol and water, without that PEG/PVP combination. Differences cannot all be attributed to polymer identity. Increasing HPC from 3.2% to 4.8% actually lowered very-low-shear viscosity from 5.44 × 10⁴ to 4.20 × 10⁴ mPa·s, while ordering changed at higher shear rates. The selected shear regime directly affects which ink is called more viscous.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "The formulation with the highest thixotropic recovery did not print the best shape",
+          "markdown": "A three-interval test simulated rest, extrusion and deposition: 60 s in the linear viscoelastic region, 5 s at 100 s⁻¹, and 145 s recovery at low strain. Recovery was evaluated after 2.9, 60 and 145 s. Both SA formulations recovered less than 25%, HPC recovered 25–80%, and HPMC K100 exceeded 80%. Yet low-recovery SA 0.8% produced the best shapes. HPMC K4 fluctuated strongly, preventing the same stable recovery-percentage calculation used for other formulations. [Thixotropy figure and quantitative comparison](ref:R02)\n\nRecovery is relative to each formulation's own pre-shear state. SA began at much higher complex viscosity than HPC; even a smaller recovered fraction could leave a high absolute post-deposition viscosity. Conversely, recovery to a low starting level does not establish support for subsequent layers. HPMC K100 quickly approached its original curve but did not produce a clearly defined, stable target pill. This directly contradicts ranking printability solely by faster or more complete recovery.\n\nAmplitude sweeps likewise showed that storage modulus exceeding loss modulus was insufficient: both HPC formulations had solid-dominant regions but poor shapes. HPMC K4 had a phase angle of 68.62 ± 3.90°, with a predominantly viscous response. SA 0.8% and 1.6% had similar recovery histories, yet the latter was constrained by higher flow-point stress. Reading recovery curves together with print photographs distinguishes difficult nozzle flow, weak deposited support and unstable measurement. Pressure was not optimized separately for each ink; the results compare formulations under common settings.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Increasing photoinitiator can enlarge overcuring instead of improving shape quality",
+          "markdown": "Curti and colleagues first compared photoinitiators, then screened 156 drug-free resin formulations. A modified Form 2 used 405 nm light to print cylinders of 12 mm diameter and 4 mm height, with 3 replicates per condition; the full screen compared 25, 50 and 100 µm layers. PEGDA average molecular weights were 250, 575 and 700, and resins were mixed for 12 h at room temperature in darkness. Scores ranged from uncured liquid to completed shapes, but the highest number, PS6, meant overpolymerization rather than best quality; sharp edges were designated PS5*. [Photoinitiators and shape scoring](ref:R03)\n\nTPO's absorption maximum near 380.5 nm was relatively compatible with the instrument. HMPP, HHEMPP and ACP peaked at 243.5, 273.5 and 239.5 nm and did not effectively form targets at the tested concentrations. PEGDA700 with 0.1% TPO produced sharp edges, whereas 1% enlarged the base. Spectral matching and dose jointly affect the spatial extent of reaction; increasing initiator alone does not guarantee more accurate boundaries.\n\n| TPO mass fraction | Printable formulations PF | Best formulations BF |\n|---|---|---|\n| 1.00% | 7 | 4 |\n| 0.50% | 9 | 5 |\n| 0.10% | 20 | 11 |\n| 0.05% | 24 | 20 |\n\nOverall, 96 formulations failed and 60 were printable; 40 entered the best-performing set. Of these, 35 performed well at at least one layer height and another 5 at every tested layer height. Lower TPO favoured geometry, but double-bond conversion, residual monomer and cytotoxicity were not measured alongside it. Good appearance at low initiator cannot establish oral safety or complete curing.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Diluent and polymer comparisons must retain their denominators and screening levels",
+          "markdown": "In the same SLA screen, PEGDA250, PEGDA575 and PEGDA700 yielded 26, 24 and 10 printable formulations, including 19, 13 and 8 best formulations. Reported best/printable ratios were 0.73, 0.54 and 0.80. PEGDA700 had the highest conditional ratio but did not produce the most printable candidates. Calling this proportion among initial-screen survivors the success rate of all candidates changes the comparison. [Polymer and diluent screening](ref:R03)\n\n| Diluent and mass fraction | PF | BF |\n|---|---|---|\n| PEG300, 12.5% | 6 | 4 |\n| PEG300, 25% | 3 | 1 |\n| PEG300, 50% | 0 | 0 |\n| Propylene glycol, 12.5% | 7 | 5 |\n| Propylene glycol, 25% | 4 | 2 |\n| Propylene glycol, 50% | 4 | 3 |\n\nNo formulation passed at 50% PEG300, while some still formed at the same propylene-glycol fraction. Diluents alter viscosity, dilute reactive components and change miscibility; viscosity reduction alone cannot explain every trend. Glycerol phase-separated with the examined PEGDA systems, emphasizing that a homogeneous resin is a prerequisite. A diluent's behaviour in an aqueous hydrogel cannot simply be transferred to this resin system.\n\nThese counts aggregate polymer, initiator and layer-height combinations, rather than measuring a single-factor effect of replacing diluent in one fixed formulation. All resins were drug-free, so drug absorption of light, particle scattering, solubility and radical reactions were absent from the screen. Shape-preserving conditions are starting points for subsequent drug-loading experiments, without establishing loaded-product content, stability or release.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Kreft et al. — Original Figure 2: feeding discrimination scores and boundary cases.",
+          "interpretation": "Filaments are ordered by score; blue denotes actual processability and red failure. The ordinate is not success probability. M16 at 0.59 lies near failed M21 at 0.54, showing a narrow empirical boundary. M12 reaches 1.05 and M23 −0.17, confirming that regression output is not constrained to probabilities. This separates formulations on this equipment without testing cross-machine thresholds. [Feeding groups](ref:R01)"
+        },
+        "F02": {
+          "caption": "Kreft et al. — Original Figure 3: different quality endpoints are explained to different degrees.",
+          "interpretation": "Green indicates fit R², blue adjusted R², yellow predicted R² and cyan five-fold validation. Mass has a cyan bar near only 17%, whereas width and released-amount RSD are much higher. The black 50% line is a graphical comparison line, not a pharmacopoeial quality criterion. Disintegration occurrence and disintegration time are separate categories, not one endpoint. The original diameter label and the text description of rectangular-tablet length should retain their respective source wording. [Endpoint-specific models](ref:R01)"
+        },
+        "F03": {
+          "caption": "Rony et al. — Original Figure 5: pills and films under identical print settings.",
+          "interpretation": "The upper row shows pills and the lower films. Columns are SA 0.8% and 1.6%, HPC H 3.2% and 4.8%, and HPMC K100 and K4 each 1.05%. SA 0.8% retains both shapes; SA 1.6% forms discontinuous traces. Later columns show collapse, spreading or no pill. Photographs lack a common length scale and compare failure morphology rather than pixel-derived dimensional error. HPMC differs from the other columns in drug loading and solvent system. [Original printed outcomes](ref:R02)"
+        },
+        "F04": {
+          "caption": "Rony et al. — Original Figure 8: absolute viscosity and relative recovery after shear.",
+          "interpretation": "Panels a, b, c and d show SA, HPC H, HPMC K100 and K4. Time is in s; viscosity in mPa·s uses logarithmic axes with different panel ranges. In a, post-shear viscosity remains below its original plateau but above the absolute values in b. Panel c nearly regains its plateau without establishing the best print shape. The full original retains strong fluctuations in d; isolated peaks cannot be counted as stable structural recovery. [Three-interval rheology](ref:R02)"
+        },
+        "F05": {
+          "caption": "Curti et al. — Original Figure 8: TPO concentration and numbers passing formulation screening.",
+          "interpretation": "Dark bars represent PF and light bars the BF subset. Reducing TPO from 1.00% to 0.05% increases PF from 7 to 24 and BF from 4 to 20. The ordinate counts formulations, not polymer conversion. Nested categories cannot be added to obtain total sample size, nor can geometry screening establish reduced residual monomer. [TPO screening counts](ref:R03)"
+        },
+        "F06": {
+          "caption": "Curti et al. — Original Figure 6: increasing propylene glycol does not completely prevent formation.",
+          "interpretation": "Propylene glycol is 12.5%, 25.0% and 50.0% w/w on x; dark-blue PF counts are 7, 4 and 4, and light-blue BF counts 5, 2 and 3. Successful candidates remain at the highest fraction, unlike zero passing at 50% PEG300. The BF difference between middle and high fractions is not a statistical-significance result from independent replicates. Counts aggregate other formulation variables, rather than showing an isolated diluent dose response. [Propylene-glycol screen](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie beeinflussen Rezeptur und Prozessparameter die Druckbarkeit?",
+      "direction": "Druckqualität und Stabilität",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Die Filamentzufuhr hängt von Polymermischung und tatsächlichem mechanischem Fenster ab",
+          "markdown": "Kreft und Kollegen untersuchten 12 Polymere und stellten 23 Filamente her: 17 ließen sich einem FDM-3P-Drucker kontinuierlich zuführen, 6 versagten. Alle Rezepturen enthielten 20% Ketoprofen und 0.5% Syloid 244 FP sowie 69.5–79.5% Polymer und 0–10% Weichmacher. Eine lasergeführte Abzugskontrolle hielt den Extrusionsdurchmesser bei 1.75 ± 0.05 mm. Mechanische Eigenschaften wurden somit bei annähernd gleichem Durchmesser verglichen, nicht über unterschiedliche Filamentdicken hinweg. [Filamentrezepturen und mechanische Prüfungen](ref:R01)\n\nEinige ungemischte PVP-Rezepturen brachen spröde, während HPC- oder PEO-Rezepturen zu weich sein und ausknicken konnten. Das druckbare M13 enthielt 20% Klucel EF, 49.5% Kollidon VA64, 20% Ketoprofen, 10% Mannitol und 0.5% Siliciumdioxid und wurde bei 160 °C gedruckt. Die 20% beziehen sich auf die Gesamtformulierung, nicht auf den Polymeranteil oder einen universellen Mindestzusatz. Soluplus war auf diesem Gerät zuführbar, anders als in einigen früheren Berichten. Geräteunterschiede und Weichmachung durch den Wirkstoff wurden als Erklärungen vorgeschlagen, ihre Beiträge jedoch nicht getrennt geprüft.\n\nFür die Steifigkeitsprüfung lagen 3 cm lange Filamente auf einer ebenen Metallunterlage; bei 2 mm/s wurden sie um 0.4 mm eingedrückt, mit 10 Wiederholungen je Rezeptur und Kraftmessung. Dies war kein Dreipunkt-Biegemodul. Die Regression begann mit 15 mechanischen und rheologischen Kandidaten; das Zufuhrmodell behielt nur Steifigkeit und deren Quadrat, mit R² = 0.74 und fünffacher Validierung R² = 0.70. Nicht zuführbare Gruppen lagen höchstens bei 0.54, die meisten zuführbaren bei mindestens 0.72; M16 funktionierte dennoch bei 0.59. Werte über 1 oder unter 0 kennzeichnen einen empirischen Trennindex dieses Geräts, keine Erfolgswahrscheinlichkeit.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Zuführbare Filamente können weiterhin streuende Tablettenmassen und Abmessungen erzeugen",
+          "markdown": "Aus jedem der 17 verarbeitbaren Filamente wurden 24 Tabletten bei 50% geradliniger Füllung, 0.3 mm Schichthöhe und 20 mm/s gedruckt; die Plattformtemperatur betrug rezepturabhängig 25–60 °C. Vorgesehen waren 16 mm Länge, 7 mm Breite und 5.1 mm Höhe bei 1.5 mm Rundungsradius. Nach erfolgreicher mechanischer Zufuhr beeinflussen Schmelzefluss, Abkühlung und Ausbreitung zwischen Schichten weiterhin die Ablagemenge. Deshalb wurden Masse, Abmessungen, Zerfall und Freisetzungseinheitlichkeit getrennt modelliert. [Druckendpunkte und Regressionsvergleich](ref:R01)\n\n| Endpunkt | Anpassungs-R² | Prädiktives R² | R² der fünffachen Validierung |\n|---|---|---|---|\n| Massen-RSD | 0.61 | 0.30 | 0.17 |\n| Breiten-RSD | 0.90 | 0.68 | 0.69 |\n| RSD der freigesetzten Menge | 0.88 | 0.79 | 0.73 |\n| Auftreten von Zerfall | 0.83 | 0.64 | 0.57 |\n\nDas Massenmodell zeigte eine zunächst mäßige Anpassung, aber wesentlich schlechtere Validierung. Die Leistung des Zufuhrmodells lässt sich nicht auf die Dosisqualitätskontrolle übertragen. M12 und M14 hatten Massen-RSDs von 3.73% beziehungsweise 12.29%; Druckbarkeit beseitigte Rezepturunterschiede nicht. Der positive Steifigkeitskoeffizient im Breitenmodell zeigt, dass eine für die Zufuhr günstige Eigenschaft in diesem Datensatz mit größerer Breitenstreuung einhergehen konnte, statt alle Qualitätsendpunkte gleichzeitig zu verbessern.\n\nDie Freisetzung wurde in 900 mL Phosphatmedium mit pH 7.5 und 0.05 M bei 37 °C und 100 rpm untersucht, mit Sinkern und n = 6 je Gruppe. Bei durchschnittlich etwa 60% Freisetzung betrug die RSD der freigesetzten Menge rezepturübergreifend 4–56%. Dies beschreibt die In-vitro-Streuung innerhalb einer Charge, keine relative Abweichung der Freisetzungszeit oder In-vivo-Unterschiede. Die Modelle stammen von einem Gerät und einer begrenzten Rezepturmenge; bessere interne Validierung belegt keine externe Übertragbarkeit auf andere Drucker.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Bei konstantem Druck kann mehr Polymer eine extrudierbare Druckmasse aus ihrem Arbeitsfenster verschieben",
+          "markdown": "Rony und Kollegen verglichen Natriumalginat (SA) mit 0.8% und 1.6%, HPC H mit 3.2% und 4.8% sowie HPMC K100 und K4 mit jeweils 1.05% auf einem BioX-Drucker. Einheitlich verwendet wurden eine 3-mL-Spritze, eine 410-µm-Düse, 60 kPa, 10 mm/s und 50% Füllung. Zielkörper waren runde Einheiten mit 12 mm Durchmesser und 5 mm Höhe sowie Filme von 15 × 10 × 0.35 mm. Nur SA 0.8% bewahrte beide Sollformen unter diesen Einstellungen. SA 1.6% wurde unterbrochen abgelegt; daraus folgt kein zwangsläufiges Versagen bei anderen Drücken oder Düsen. [Rezepturen, Druckbedingungen und Originalabbildung 5](ref:R02)\n\nDie Rheologie wurde bei 25 °C und 1 mm Spalt gemessen. Die Erhöhung von SA von 0.8% auf 1.6% steigerte die Viskosität bei 0.1 s⁻¹ von 1.40 × 10⁶ auf 2.30 × 10⁶ mPa·s und die Fließpunktspannung von 20.21 ± 5.70 auf 126.57 ± 19.57 Pa. Höherer Strukturwiderstand erschwerte damit die Extrusion bei konstantem Luftdruck. Die Fließgrenzen lagen dagegen bei 5.77 ± 3.27 beziehungsweise 2.48 ± 0.65 Pa und stiegen nicht mit der Konzentration: Verlassen des linear-viskoelastischen Bereichs und Schnittpunkt von Speicher- und Verlustmodul sind verschiedene Definitionen.\n\nPolymerübergreifende Vergleiche enthalten zudem Rezepturkonfundierung. SA/HPC-Massen enthielten 20% Fenofibrat sowie Mannitol, PEG6000 und PVP; HPMC-Massen nur 5% Fenofibrat mit SDS, Ethanol und Wasser, ohne diese PEG/PVP-Kombination. Unterschiede lassen sich nicht vollständig dem Polymer zuschreiben. Bei Erhöhung von HPC von 3.2% auf 4.8% sank die Viskosität bei sehr geringer Scherung sogar von 5.44 × 10⁴ auf 4.20 × 10⁴ mPa·s; bei höheren Scherraten änderte sich die Reihenfolge. Welcher Scherbereich betrachtet wird, beeinflusst unmittelbar die Einstufung als viskoser.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Die Rezeptur mit höchster thixotroper Erholung ergab nicht die beste Druckform",
+          "markdown": "Ein Dreiintervalltest simulierte Ruhe, Extrusion und Ablage: zunächst 60 s im linear-viskoelastischen Bereich, dann 5 s bei 100 s⁻¹ und anschließend 145 s Erholung bei geringer Deformation. Die Erholung wurde nach 2.9, 60 und 145 s ausgewertet. Beide SA-Rezepturen erreichten weniger als 25%, HPC 25–80% und HPMC K100 mehr als 80%. Dennoch ergab SA 0.8% mit geringer Erholung die besten Formen. HPMC K4 schwankte stark, sodass keine ebenso stabile prozentuale Erholung wie bei den anderen Rezepturen berechnet werden konnte. [Thixotropieabbildung und quantitativer Vergleich](ref:R02)\n\nDie Erholung bezieht sich auf den eigenen Zustand vor der Scherung. SA begann mit deutlich höherer komplexer Viskosität als HPC; selbst ein kleinerer wiederhergestellter Anteil konnte daher eine hohe absolute Viskosität nach Ablage ergeben. Umgekehrt belegt die Rückkehr zu einem niedrigen Ausgangsniveau keine Tragfähigkeit für weitere Schichten. HPMC K100 näherte sich rasch dem Ausgangsniveau, erzeugte aber keine klar definierte, stabile runde Sollform. Dies widerspricht direkt einer alleinigen Rangfolge nach schnellerer oder vollständigerer Erholung.\n\nAuch Amplitudensweeps zeigten, dass ein höherer Speicher- als Verlustmodul nicht genügte: Beide HPC-Rezepturen besaßen festkörperdominierte Bereiche, aber schlechte Formen. HPMC K4 hatte einen Phasenwinkel von 68.62 ± 3.90° mit überwiegend viskoser Antwort. SA 0.8% und 1.6% erholten sich ähnlich, doch die letztere Rezeptur war durch eine höhere Fließpunktspannung begrenzt. Erst die gemeinsame Betrachtung von Erholungskurven und Druckfotos trennt erschwerten Düsenfluss, schwache Ablagestützung und instabile Messung. Der Druck wurde nicht für jede Masse optimiert; verglichen wurde unter gemeinsamen Einstellungen.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Mehr Photoinitiator kann Überhärtung ausweiten statt die Formqualität zu verbessern",
+          "markdown": "Curti und Kollegen verglichen zunächst Photoinitiatoren und prüften danach 156 wirkstofffreie Harzrezepturen. Ein modifizierter Form 2 verwendete 405-nm-Licht für Zylinder mit 12 mm Durchmesser und 4 mm Höhe, jeweils mit 3 Wiederholungen; das vollständige Screening verglich 25, 50 und 100 µm Schichthöhe. Die mittleren PEGDA-Molekulargewichte betrugen 250, 575 und 700; Harze wurden bei Raumtemperatur im Dunkeln 12 h gemischt. Die Bewertung reichte von ungehärteter Flüssigkeit bis zu vollständigen Formen. Die höchste Nummer PS6 bezeichnete jedoch Überpolymerisation statt beste Qualität; scharfe Ränder erhielten PS5*. [Photoinitiatoren und Formbewertung](ref:R03)\n\nDas TPO-Absorptionsmaximum nahe 380.5 nm passte relativ gut zum Gerät. HMPP, HHEMPP und ACP hatten Maxima bei 243.5, 273.5 und 239.5 nm und bildeten bei den geprüften Konzentrationen die Sollkörper nicht wirksam aus. PEGDA700 mit 0.1% TPO ergab scharfe Ränder, während 1% die Basis verbreiterte. Spektrale Übereinstimmung und Dosis beeinflussen gemeinsam die räumliche Reaktionsausdehnung; mehr Initiator garantiert keine genaueren Grenzen.\n\n| TPO-Massenanteil | Druckbare Rezepturen PF | Beste Rezepturen BF |\n|---|---|---|\n| 1.00% | 7 | 4 |\n| 0.50% | 9 | 5 |\n| 0.10% | 20 | 11 |\n| 0.05% | 24 | 20 |\n\nInsgesamt versagten 96 Rezepturen, 60 waren druckbar und 40 gehörten zur besten Gruppe. Davon waren 35 bei mindestens einer Schichthöhe gut, weitere 5 bei sämtlichen geprüften Schichthöhen. Weniger TPO begünstigte die Geometrie; Doppelbindungsumsatz, Restmonomer und Zytotoxizität wurden jedoch nicht gleichzeitig bestimmt. Ein gutes Aussehen bei wenig Initiator belegt weder orale Sicherheit noch vollständige Aushärtung.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Vergleiche von Verdünnungsmitteln und Polymeren müssen Nenner und Screeningstufe beibehalten",
+          "markdown": "Im selben SLA-Screening ergaben PEGDA250, PEGDA575 und PEGDA700 jeweils 26, 24 und 10 druckbare Rezepturen, darunter 19, 13 und 8 beste Rezepturen. Die angegebenen Verhältnisse beste/druckbare Rezepturen betrugen 0.73, 0.54 und 0.80. PEGDA700 hatte das höchste bedingte Verhältnis, erzeugte aber nicht die meisten druckbaren Kandidaten. Wird dieser Anteil unter bereits vorselektierten Rezepturen als Erfolgsquote aller Kandidaten bezeichnet, verändert sich die Aussage. [Polymer- und Verdünnungsmittelscreening](ref:R03)\n\n| Verdünnungsmittel und Massenanteil | PF | BF |\n|---|---|---|\n| PEG300, 12.5% | 6 | 4 |\n| PEG300, 25% | 3 | 1 |\n| PEG300, 50% | 0 | 0 |\n| Propylenglycol, 12.5% | 7 | 5 |\n| Propylenglycol, 25% | 4 | 2 |\n| Propylenglycol, 50% | 4 | 3 |\n\nBei 50% PEG300 bestand keine Rezeptur, während beim gleichen Propylenglycolanteil noch Formen entstanden. Verdünnungsmittel ändern Viskosität, Konzentration reaktiver Komponenten und Mischbarkeit; Viskositätssenkung allein erklärt nicht alle Trends. Glycerol zeigte mit den untersuchten PEGDA-Systemen Phasentrennung und verdeutlicht die Voraussetzung eines homogenen Harzes. Das Verhalten eines Verdünnungsmittels in wässrigen Hydrogelen lässt sich nicht unmittelbar auf dieses Harzsystem übertragen.\n\nDie Häufigkeiten fassen Polymer-, Initiator- und Schichthöhenkombinationen zusammen, statt einen isolierten Austausch des Verdünnungsmittels in einer festen Rezeptur zu messen. Alle Harze waren wirkstofffrei; Lichtabsorption durch Wirkstoff, Partikelstreuung, Löslichkeit und Radikalreaktionen gingen somit nicht in das Screening ein. Formerhaltende Bedingungen sind Ausgangspunkte weiterer Beladungsversuche und liefern noch keine Ergebnisse zu Gehalt, Stabilität oder Freisetzung beladener Produkte.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Kreft et al. — Originalabbildung 2: Trennindex der Zufuhr und Grenzfälle.",
+          "interpretation": "Filamente sind nach Index sortiert; Blau bezeichnet tatsächliche Verarbeitbarkeit, Rot Versagen. Die Ordinate ist keine Erfolgswahrscheinlichkeit. M16 mit 0.59 liegt nahe beim versagenden M21 mit 0.54, also an einer engen empirischen Grenze. M12 erreicht 1.05 und M23 −0.17; Regressionswerte sind somit nicht auf Wahrscheinlichkeiten begrenzt. Gezeigt wird eine Trennung auf diesem Gerät, keine geräteübergreifende Schwellenprüfung. [Zufuhrgruppen](ref:R01)"
+        },
+        "F02": {
+          "caption": "Kreft et al. — Originalabbildung 3: Qualitätsendpunkte werden unterschiedlich gut erklärt.",
+          "interpretation": "Grün zeigt Anpassungs-R², Blau korrigiertes R², Gelb prädiktives R² und Hellblau fünffache Validierung. Bei Masse liegt Hellblau nur bei etwa 17%, bei Breiten- und Freisetzungsmengen-RSD deutlich höher. Die schwarze 50%-Linie ist eine grafische Vergleichslinie, kein Arzneibuchkriterium. Auftreten und Dauer des Zerfalls sind getrennte Kategorien, kein gemeinsamer Endpunkt. Die originale Bezeichnung diameter und die textliche Beschreibung der Rechtecktablettenlänge sind entsprechend ihrer jeweiligen Quelle zu lesen. [Endpunktspezifische Modelle](ref:R01)"
+        },
+        "F03": {
+          "caption": "Rony et al. — Originalabbildung 5: runde Einheiten und Filme bei identischen Druckeinstellungen.",
+          "interpretation": "Oben stehen runde Einheiten, unten Filme. Spalten zeigen SA 0.8% und 1.6%, HPC H 3.2% und 4.8% sowie HPMC K100 und K4 mit jeweils 1.05%. SA 0.8% bewahrt beide Formen; SA 1.6% zeigt unterbrochene Linien. Weitere Spalten zeigen Kollaps, Ausbreitung oder fehlende runde Einheiten. Ein gemeinsamer Längenmaßstab fehlt; Fotos vergleichen Versagensformen statt pixelbasierter Maßfehler. HPMC unterscheidet sich bei Wirkstoffbeladung und Lösungsmittelsystem von den übrigen Spalten. [Originale Druckergebnisse](ref:R02)"
+        },
+        "F04": {
+          "caption": "Rony et al. — Originalabbildung 8: absolute Viskosität und relative Erholung nach Scherung.",
+          "interpretation": "a, b, c und d zeigen SA, HPC H, HPMC K100 und K4. Die Zeit steht in s, die Viskosität in mPa·s auf logarithmischen Achsen mit unterschiedlichen Bereichen. In a wird das Ausgangsplateau nicht erreicht, die absolute Viskosität bleibt aber höher als in b. c erreicht nahezu das Plateau, ohne damit die beste Druckform zu belegen. Das vollständige Original bewahrt die starken Schwankungen in d; einzelne Spitzen sind keine stabile Strukturerholung. [Dreiintervallrheologie](ref:R02)"
+        },
+        "F05": {
+          "caption": "Curti et al. — Originalabbildung 8: TPO-Konzentration und Anzahl bestandener Rezepturen.",
+          "interpretation": "Dunkle Balken zeigen PF, helle deren BF-Teilmenge. Die TPO-Senkung von 1.00% auf 0.05% erhöht PF von 7 auf 24 und BF von 4 auf 20. Die Ordinate zählt Rezepturen, keinen Polymerumsatz. Verschachtelte Gruppen dürfen weder zur Gesamtprobenzahl addiert werden noch belegt geometrisches Screening weniger Restmonomer. [TPO-Screeningzahlen](ref:R03)"
+        },
+        "F06": {
+          "caption": "Curti et al. — Originalabbildung 6: mehr Propylenglycol verhindert Formbildung nicht vollständig.",
+          "interpretation": "Auf x stehen 12.5%, 25.0% und 50.0% w/w Propylenglycol; dunkelblaue PF betragen 7, 4 und 4, hellblaue BF 5, 2 und 3. Beim höchsten Anteil bleiben erfolgreiche Kandidaten, anders als bei null bestandenen Rezepturen mit 50% PEG300. Der BF-Unterschied zwischen mittlerem und hohem Anteil ist kein Signifikanzbefund unabhängiger Wiederholungen. Die Häufigkeiten bündeln weitere Rezepturvariablen und zeigen keine isolierte Dosisantwort des Verdünnungsmittels. [Propylenglycolscreening](ref:R03)"
+        }
+      }
+    }
+  }
+}

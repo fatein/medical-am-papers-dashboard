@@ -1,0 +1,337 @@
+{
+  "schema_version": 2,
+  "question_id": "P3-056",
+  "p": "P3",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_d3082e915d2d17a4d562",
+    "doc_sd_8891f92b9c718e8102d9",
+    "KB2026B25F3AABCAC9"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "3D-printed dual drug delivery nanoparticle-loaded hydrogels to combat antibiotic-resistant bacteria",
+      "publisher": "International Journal of Bioprinting",
+      "year": 2023,
+      "url": "https://doi.org/10.18063/ijb.683",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "3D-printed implants loaded with acriflavine for glioblastoma treatment",
+      "publisher": "International Journal of Pharmaceutics",
+      "year": 2024,
+      "url": "https://doi.org/10.1016/j.ijpharm.2024.124710",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "In situ generation of dendritic cell vaccines in 3D printing scaffolds for cancer post-surgical therapy",
+      "publisher": "National Science Review",
+      "year": 2026,
+      "url": "https://doi.org/10.1093/nsr/nwag037",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 5",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-056/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10236340/#fig5",
+      "license": "CC BY"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Fig. 8",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-056/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10236340/#fig8",
+      "license": "CC BY"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Fig. 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-056/F03.png",
+      "source_url": "https://pureadmin.qub.ac.uk/ws/portalfiles/portal/612266005/3D-printed_implants_loaded.pdf",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Fig. 8",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-056/F04.png",
+      "source_url": "https://pureadmin.qub.ac.uk/ws/portalfiles/portal/612266005/3D-printed_implants_loaded.pdf",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Fig. 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-056/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12912718/#fig3",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R03",
+      "original_label": "Fig. 5",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-056/F06.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12912718/#fig5",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "肿瘤和感染治疗如何结合局部递送装置？",
+      "direction": "植入与局部递送",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "双抗生素分开包封，再以交替层组合",
+          "markdown": "Martínez-Pérez 等将疏水利福平（Rif）以单乳化、亲水万古霉素（Van）以双乳化法装入酸端基 PLGA 纳米粒。原图示意的图注把两种乳化法对调，实验方法与讨论则一致。低分子量 PLGA 所得 Rif/Van 粒径分别为 164 ± 67 nm、207 ± 64 nm，包封率为 21.10%、53.40%。原表载药量写成 68.86、59.98 mg/mg，量纲和数量级异常，不能据此给打印片计算实际抗生素剂量。[颗粒与墨水方法](ref:R01)\n\n颗粒释放在 1 mL、pH 7.4 PBS、37 °C、60 rpm 下测定，每次离心更换全部上清。低分子量组前期释放较快并有突释，选用于后续打印；高分子量 Rif 在 20 d 约释放 24%，Van 高分子量组约 3%。Van 中分子量组正文称约 25%，但原图终点明显较低，不宜把该值当成精确比较依据。这是游离纳米粒释放，不是整块打印水凝胶的双药通量曲线。\n\n墨水最终为 7.5% w/v GelMA、30% w/w 颗粒；打印 20 × 20 mm、4 层，层间 0/90°、线距 0.5 mm。双药以 Rif–Van–Rif–Van 交替，而单药占全部层。方法料筒为 26 °C、平台 10 °C，结果又描述较佳成丝温度 27 °C。打印后 365 nm、25 mW/cm² 照射 90 s。因此双药与单药不仅种类不同，每种药对应的层数也不同，不能默认各单药剂量相同。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "短期清除、抑菌持续时间与耐药筛选给出不同排序",
+          "markdown": "水凝胶与 1 mL、1 × 10^6 CFU/mL 菌液接触 24 h，分别回收附着菌和悬浮菌，n = 6。双药对 RN4220、其 RifR 和 VanR 衍生株及临床 AMC 201 均未培养出可检出存活菌。Rif 单药对敏感株虽降低超过 2 log，残余菌仍能被选择为高耐药性：RN4220 的 MIC 从 0.0019 µg/mL 升至 ≥128 µg/mL，AMC 201 从 8 µg/mL 升至 ≥128 µg/mL。[清除与耐药结果](ref:R01)\n\nRN4220 残余菌的 rpoB 检出 S463R、D471G、R484H；AMC 201 所测片段没有这些突变，不能把其表型归为已证明的外排泵机制。另行连续传代获得的 VanR 在无药传代后迅速失去耐药，后续实验需维持 Van 选择压力，而 RifR 在无药 6 代后仍保留表型。这使实验室选出的两类“耐药菌”并非稳定性相同的对照。\n\n每天把同一片移到新接种琼脂的 10 d 试验又有不同结果：对 RifR，Van 单药抑菌圈持续 7 d，双药为 5 d；对 AMC 201，Van 单药为 6 d，双药为 3 d。双药可扩大覆盖范围并减少这次短期挑战中的存活菌，却不保证每个菌株的抑菌时间更长。该实验是接种后防附着和生长控制，没有对已形成的成熟生物膜进行同样的清除验证，也没有动物感染终点。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "同一吖啶黄储库的内填配方和出口膜分别控制释放",
+          "markdown": "Korelidou 等用 FDM 打印 PLA 储库，外形 5.0 × 4.0 × 4 mm；一侧接溶剂浇铸膜，另一侧装药后用 80 °C 熔融 PCL 封口。膜厚 0.15 mm，比较 50PCL:50PLA、25PCL:75PLA、100PLA。储库内以吖啶黄 ACF 与低分子量 PCL（550 Da）混合，因此药物不必在打印 PLA 壳体时经过同一热历史。[储库和膜设计](ref:R02)\n\n固定 50PCL:50PLA 膜，50% ACF 加 50% 甘油约 4 d 释放完；加入低分子量 PCL 后减慢，完全以其替换甘油更慢。固定 50ACF:50PCL 内填物，100PLA 与 25PCL:75PLA 释放曲线接近，50PCL:50PLA 更快。压汞孔径峰约为 0.01、0.3、2 µm，电镜表面孔尺寸却更大，说明不同测量描述的孔结构不能互换；小孔组曲线相近也不支持简单按孔径比例推算释放速率。\n\n最终用 100PLA 膜，在 50 mL PBS、pH 7.4、37 °C、避光条件测到 90 d。50%、30%、10% ACF 内填物的累计百分比接近，但总释放质量明显不同，最高组约 25 mg，而最低组仅数 mg。图 C 图注误称固定 50ACF:50PCL，实际图例及方法包含上述不同负载。百分比相近不能替代局部药量比较，体外长尾也不是体内有效浓度已维持同样长时间。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "抗肿瘤与抗菌来自同一载荷，但验证窗口并不相同",
+          "markdown": "ACF 对 U-251 的 alamarBlue IC50 随暴露由 24 h 的 8.2 ± 1.36 µM、48 h 的 2.5 ± 1.19 µM 降至 72 h 的 1.3 ± 1.71 µM。L929 对照为小鼠成纤维细胞，不是正常人脑组织。克隆形成实验另经 24 h 处理、洗去药物再培养约 14 d，U87、U-251、T98G 的 ACF IC50 分别为 1.29、1.72、4.54 µM；短期代谢活性与长期克隆存活不能混作一个终点。[细胞功能和抗菌验证](ref:R02)\n\nT98G 对 TMZ 单药的克隆 IC50 为 780 µM，而 U-251/U87 为 164/150 µM。加入植入物第 1 或 3 d 释放液与 500 或 1000 µM TMZ 联用，克隆存活下降；论文没有给出完整组合指数，结果支持额外抑制，不等于已经量化药理协同。载荷为 30ACF:70PCL、100PLA 膜，空储库、仅低分子量 PCL 与培养基均作为材料对照。\n\n抗菌则把预先释放至第 1 和 10 d 的植入物置于 S. aureus 琼脂或液体培养物，接触 24 h。第 10 d 抑菌圈更大，OD600 更低；OD 是生长读数，没有给出同等条件下的杀菌 CFU 或耐药筛选。由释放曲线外推“抗菌 90 d”并非实测抗菌持续期。该打印装置尚未进行脑内植入动物疗效、局部神经毒性或全身药代比较，不能借文中引用的其他载体动物结果填补。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "局部疫苗支架把细胞分化与抗原刺激安排在同一空间",
+          "markdown": "Chen 等使用 10% w/v GelMA、0.5% w/v LAP 和 nanoArch S240 的 405 nm 投影打印，加入骨髓单核细胞 BM-MNCs 与富含损伤相关分子模式的肿瘤裂解物 DTL。打印墨水细胞密度为 1 × 10^7/mL，DTL 为 200 µg/mL；肿瘤材料经 20 Gy 照射、反复冻融及超声获得。这个载荷不是游离小分子药物，而是细胞、抗原和分化刺激的组合。[正文及补充方法](ref:R03)\n\n体内分化组每鼠 1 × 10^6 BM-MNCs，同时包含 FLT3L 100 ng/mL、GM-CSF 100 ng/mL；体外预培养成熟实验的 GM-CSF 为 20 ng/mL，不能统一成一个浓度。1、4、7、10 d 取出支架，酶解后测细胞。isDCV 中 CD11c 阳性比例约在 7 d 达 37%、10 d 达 57%，仍低于图中体外诱导组；CD80、CD86、MHC-II 及相应绝对细胞数也随时间变化。\n\n比例和绝对数必须并读：当其他细胞减少时，百分比上升不必代表有效细胞总数同步增加。此图同时提供两类数据，并以 Zbtb46、Irf4、Irf8 转录支持分化解释。相邻实验用 DiD 或独立批次 CFSE 标记的预培养 DC 追踪淋巴结迁移，支持支架来源细胞可迁出；但它不是对这批新分化 BM-MNCs 的全程谱系追踪。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "术后残留瘤与检查点阻断要求核对对照内真正装了什么",
+          "markdown": "Chen 等将 5 × 10^5 RM-1 细胞植入 C57BL/6 小鼠侧腹，7 d 后切除并留约 1% 肿瘤，在同日放入支架。正文把 Sca 称为“空白”，补充方法却明确其含 FLT3L 与 GM-CSF，均为 100 ng/mL；Sca-DTL 再加 DTL 200 µg/mL，isDCV 再含每鼠 1 × 10^6 BM-MNCs。因而 Sca 不是完全不含生物活性成分的 GelMA，组间解释应以实际配方为准。[术后对照及联用方法](ref:R03)\n\nPBS 与 Sca 肿瘤增长相近，Sca-DTL 可改变巨噬细胞标志，但加入细胞的 isDCV 抑瘤更强，肿瘤 CD8 阳性及 IFN-γ 相关终点提高。另一个四组比较为 PBS、αPD-1、isDCV、两者联用，n = 5。抗体并未打印进支架，而是术后 3、6、9 d 向残留瘤内各注射 70 µg。单抗单用效果弱，联用比 isDCV 单用进一步抑制增长并改善该实验的生存曲线。\n\n原图的生存观察窗约至 24 d，不能把摘要另报的 55 d 中位生存直接贴到这条组合曲线上。脾脏中枢记忆 CD8 细胞比例与肿瘤浸润支持免疫作用，但比例升高并不单独证明每个细胞的杀伤强度。骨部位试验又采用直接胫骨注入 RM-1 Luc，属于实验性骨肿瘤挑战，不能改写成自发转移发生率下降。局部装置与外加治疗的作用，必须保持这几种模型及给药路径的分别归属。",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Martínez-Pérez et al. — 原图 5：分子量同时改变突释与后期可释放量。",
+          "interpretation": "a/b 是 Rif/Van 累计百分比，c/d 是各次上清浓度 µg/mL，横轴均为 days。低分子量黑线累计较高，但早期浓度迅速下降；累计曲线平缓不表示每日仍给相同剂量。Van 中分子量曲线终点低于正文所称约 25%，不混用拟合。图测游离颗粒，不应标成整块双药凝胶的释放曲线。[颗粒释放](ref:R01)"
+        },
+        "F02": {
+          "caption": "Martínez-Pérez et al. — 原图 8：附着菌与悬浮菌分别计数。",
+          "interpretation": "a–d 是附着菌，e–h 是培养液，列对应 RN4220、RifR、VanR、AMC 201；A/B/C/D 分别为空颗粒、Rif、Van、双药。纵轴为 LogCFU，双药点在检测下限附近；不能把零位置读成证明绝对无一个细菌。i 的电镜标尺 20 µm，佐证表面残留差异，但培养检测仍承担存活性判断。[菌量与表面](ref:R01)"
+        },
+        "F03": {
+          "caption": "Korelidou et al. — 原图 4：相似释放百分比掩盖不同总药量。",
+          "interpretation": "A 固定膜改变内部载体，B 固定载荷改变膜，C/D 固定 100PLA 后改变 ACF 负载；C 为百分比，D 为 mg。C/D 三种图例为 50ACF:50PCL、30ACF:70PCL、10ACF:90PCL，不能沿用图注对 C 的单一配方描述。D 的分离显示装置剂量改变，不能由 C 接近就说临床暴露相同。[储库变量](ref:R02)"
+        },
+        "F04": {
+          "caption": "Korelidou et al. — 原图 8：释放后装置仍有抗菌作用的实际时间点。",
+          "interpretation": "A 比较空储库、低分子量 PCL 和 ACF 装置，P/N 为有菌/无菌对照；B 抑菌圈单位 cm，C 为 OD600。第 10 d 的圈大于第 1 d，液体培养 OD 更低；两者不是菌落清零实验，也未覆盖到释放试验末端。颜色本身来自 ACF，不能把所有黄色区域当作抑菌边界。[抗菌检验](ref:R02)"
+        },
+        "F05": {
+          "caption": "Chen et al. — 原图 3：局部分化以比例和绝对数共同衡量。",
+          "interpretation": "B/C 的 G1 为仅细胞支架、G2 为 isDCV、G3 为体外诱导；D 在 10 d 示流式门及 FMO。E/F 看活 CD11c 阳性群中的成熟标志，G/H 为相应细胞数；纵轴断裂需注意。I–O 的转录组和通路富集支持免疫表型，不是直接测量抗原特异性杀伤率。[分化证据](ref:R03)"
+        },
+        "F06": {
+          "caption": "Chen et al. — 原图 5：细胞支架与外加 αPD-1 的两套对照。",
+          "interpretation": "A–J 为 PBS、Sca、Sca-DTL、isDCV，K–R 改成 PBS、αPD-1、isDCV、联用。因此 G1–G4 在前后半图不能保持同一解释。L/M 是后一个比较的肿瘤及生存，N–Q 为脾脏或引流淋巴结比例，R 标尺 50 µm。抗体给药在 K 单列，不能把联用称为全部由打印支架释放。[组合治疗原图](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "How can tumor and infection treatments incorporate local delivery devices?",
+      "direction": "Implantation and local delivery",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Encapsulate antibiotics separately before combining alternating layers",
+          "markdown": "Martínez-Pérez et al. loaded hydrophobic rifampicin (Rif) by single emulsion and hydrophilic vancomycin (Van) by double emulsion into acid-ended PLGA nanoparticles. The schematic caption reverses these routes, while methods and discussion agree. Low-molecular-weight PLGA produced Rif/Van particles of 164 ± 67 nm and 207 ± 64 nm, with encapsulation efficiencies of 21.10% and 53.40%. Reported loading values of 68.86 and 59.98 mg/mg have implausible units and magnitudes and cannot establish actual antibiotic doses per print. [Particle and ink methods](ref:R01)\n\nParticle release used 1 mL PBS, pH 7.4, at 37 °C and 60 rpm, centrifuging and replacing all supernatant. Low-molecular-weight particles released faster initially with a burst and were selected for printing. High-molecular-weight Rif released approximately 24% by 20 d, versus approximately 3% for high-molecular-weight Van. The text gives approximately 25% for medium-molecular-weight Van, but its plotted endpoint is distinctly lower; that value is unsuitable for precise comparison. These are free-particle release profiles, not dual-drug flux from complete printed hydrogels.\n\nFinal inks contained 7.5% w/v GelMA and 30% w/w particles. Prints measured 20 × 20 mm with 4 layers, alternating 0/90° and spaced 0.5 mm. Dual-drug prints alternated Rif–Van–Rif–Van; single-drug prints used all layers for one drug. Methods specify cartridge 26 °C and bed 10 °C, while results describe best strand formation at 27 °C. Post-print curing used 365 nm at 25 mW/cm² for 90 s. Drug identity and the number of layers carrying each drug therefore change together; equal individual drug doses cannot be assumed.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Short-term clearance, inhibition duration and resistance selection rank differently",
+          "markdown": "Hydrogels contacted 1 mL inoculum at 1 × 10^6 CFU/mL for 24 h; attached and planktonic bacteria were recovered separately, n = 6. Dual-drug hydrogels yielded no detectable viable cultures for RN4220, its RifR and VanR derivatives, or clinical AMC 201. Rif alone reduced susceptible strains by over 2 log but selected highly resistant survivors: RN4220 MIC rose from 0.0019 µg/mL to ≥128 µg/mL and AMC 201 from 8 µg/mL to ≥128 µg/mL. [Clearance and resistance results](ref:R01)\n\nSurviving RN4220 carried rpoB substitutions S463R, D471G and R484H. The tested AMC 201 fragment lacked them, so its phenotype cannot be assigned to a demonstrated efflux-pump mechanism. Separately selected VanR rapidly lost resistance during drug-free passage, requiring continued Van selection for later experiments, whereas RifR retained resistance after 6 drug-free passages. These laboratory-resistant controls therefore differ in phenotypic stability.\n\nA 10 d experiment transferring the same hydrogel to newly inoculated agar daily ranked treatments differently. Against RifR, Van alone maintained inhibition zones for 7 d and dual drug for 5 d. Against AMC 201, these durations were 6 d and 3 d. Dual delivery broadened coverage and removed detectable survivors in this short challenge, but did not maximize inhibition duration for every strain. The experiment assessed attachment prevention and growth after inoculation, not equivalent eradication of established mature biofilms, and included no animal infection endpoint.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Reservoir contents and outlet membrane separately control acriflavine release",
+          "markdown": "Korelidou et al. FDM-printed PLA reservoirs measuring 5.0 × 4.0 × 4 mm. One side carried a solvent-cast membrane; the other was sealed after loading with PCL melted at 80 °C. Membranes were 0.15 mm thick: 50PCL:50PLA, 25PCL:75PLA or 100PLA. Acriflavine (ACF) was mixed inside with low-molecular-weight PCL (550 Da), avoiding the thermal history used to print the PLA shell. [Reservoir and membrane design](ref:R02)\n\nWith a fixed 50PCL:50PLA membrane, 50% ACF plus 50% glycerol released in approximately 4 d. Adding low-molecular-weight PCL slowed release, and fully replacing glycerol slowed it further. With fixed 50ACF:50PCL contents, 100PLA and 25PCL:75PLA profiles were similar, whereas 50PCL:50PLA was faster. Mercury-porosimetry peaks were approximately 0.01, 0.3 and 2 µm; surface pores by electron microscopy were larger. These measures describe different pore features. Similar small-pore release curves also argue against calculating rates simply in proportion to pore diameter.\n\nThe final 100PLA membranes were tested for 90 d in 50 mL PBS at pH 7.4 and 37 °C, protected from light. Contents with 50%, 30% or 10% ACF gave similar cumulative percentages but clearly different masses: approximately 25 mg for the highest loading and only several mg for the lowest. Panel C’s caption incorrectly specifies fixed 50ACF:50PCL, whereas its legend and methods include the different loadings. Similar percentages do not replace local-dose comparisons, and a long in vitro tail is not demonstrated maintenance of effective in vivo concentration.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Antitumor and antibacterial effects share a payload, but not a validation window",
+          "markdown": "ACF alamarBlue IC50 in U-251 decreased from 8.2 ± 1.36 µM at 24 h to 2.5 ± 1.19 µM at 48 h and 1.3 ± 1.71 µM at 72 h. L929 controls were mouse fibroblasts, not normal human brain tissue. Separate clonogenic assays used 24 h treatment, washout and approximately 14 d further culture. ACF IC50 values for U87, U-251 and T98G were 1.29, 1.72 and 4.54 µM. Short-term metabolism and long-term clonogenic survival are different endpoints. [Cell function and antibacterial validation](ref:R02)\n\nTMZ-alone clonogenic IC50 was 780 µM in T98G versus 164/150 µM in U-251/U87. Combining implant eluates from day 1 or 3 with 500 or 1000 µM TMZ reduced colony survival. No complete combination index was provided: this supports added inhibition, not quantified pharmacological synergy. Implants contained 30ACF:70PCL with 100PLA membranes; empty reservoirs, low-molecular-weight PCL alone and medium served as material controls.\n\nAntibacterial tests exposed S. aureus agar or liquid cultures for 24 h to implants previously released through day 1 or 10. Day 10 produced larger inhibition zones and lower OD600. OD measures growth; equivalent bactericidal CFU and resistance-selection tests were not provided. Extrapolating antibacterial action to 90 d from release profiles is not a measured antibacterial duration. These printed devices had not undergone intracranial animal efficacy, local neurotoxicity or systemic pharmacokinetic comparisons; animal findings cited for other carriers cannot fill those gaps.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Local vaccine scaffolds combine differentiation and antigen stimulation spatially",
+          "markdown": "Chen et al. used 10% w/v GelMA, 0.5% w/v LAP and nanoArch S240 projection printing at 405 nm with bone marrow mononuclear cells (BM-MNCs) and damage-associated-molecular-pattern-rich tumor lysates (DTL). Printing density was 1 × 10^7 cells/mL and DTL 200 µg/mL. Tumor material underwent 20 Gy irradiation, repeated freeze–thaw cycles and sonication. The payload combines cells, antigens and differentiation stimuli rather than free small-molecule drug. [Main text and supplementary methods](ref:R03)\n\nIn vivo differentiation used 1 × 10^6 BM-MNCs per mouse with FLT3L 100 ng/mL and GM-CSF 100 ng/mL. In vitro preculture/maturation instead used GM-CSF 20 ng/mL; these concentrations are not interchangeable. Scaffolds were retrieved on days 1, 4, 7 and 10 and cells measured after enzymatic release. CD11c-positive fractions in isDCV reached approximately 37% at 7 d and 57% at 10 d, below the plotted ex vivo induction group. CD80, CD86, MHC-II and corresponding absolute cell counts also changed over time.\n\nFractions and absolute counts need joint interpretation: loss of other cells can increase a percentage without increasing functional cell numbers. This figure provides both and uses Zbtb46, Irf4 and Irf8 transcription to support differentiation. Adjacent migration experiments tracked precultured DCs labelled with DiD or CFSE in independent cohorts, supporting migration from scaffolds to lymph nodes. They do not constitute complete lineage tracing of this newly differentiating BM-MNC population.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Postoperative residual tumors and checkpoint blockade require identifying actual control contents",
+          "markdown": "Chen et al. implanted 5 × 10^5 RM-1 cells into C57BL/6 flanks, resected tumors after 7 d while retaining approximately 1%, and implanted scaffolds the same day. Although the main text calls Sca blank, supplementary methods specify FLT3L and GM-CSF, each 100 ng/mL. Sca-DTL additionally contained DTL 200 µg/mL, and isDCV additionally carried 1 × 10^6 BM-MNCs per mouse. Sca therefore was not GelMA devoid of bioactive components; interpretation follows actual formulations. [Postoperative controls and combination methods](ref:R03)\n\nPBS and Sca had similar tumor growth. Sca-DTL altered macrophage markers, but cell-containing isDCV suppressed tumors more strongly and increased tumor CD8-positive and IFN-γ-related endpoints. A separate four-arm comparison tested PBS, αPD-1, isDCV and their combination, n = 5. Antibody was not printed into scaffolds: 70 µg was injected into residual tumors on postoperative days 3, 6 and 9. Antibody alone was weak; combination further suppressed growth and improved that experiment’s survival curve over isDCV alone.\n\nThe original survival plot extends to approximately 24 d, so the abstract’s separately reported 55 d median cannot be attached to this combination curve. Splenic central-memory CD8 fractions and tumor infiltration support immune action, but higher fractions alone do not establish killing strength per cell. The bone experiment directly injected RM-1 Luc into tibiae, an experimental bone-tumor challenge rather than a measured decrease in spontaneous metastasis incidence. Device and adjunctive-treatment effects retain their distinct model and administration-route assignments.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Martínez-Pérez et al. — Original Figure 5: molecular weight changes burst and later releasable fraction.",
+          "interpretation": "a/b show cumulative Rif/Van percentages; c/d show successive supernatant concentrations in µg/mL, all against days. Low-molecular-weight black curves accumulate more but concentrations drop rapidly early. A flattening cumulative curve does not mean equal daily dosing. Medium-molecular-weight Van ends below the textual approximately 25%; these are not combined for fitting. The assay measures free particles, not complete dual-drug gels. [Particle release](ref:R01)"
+        },
+        "F02": {
+          "caption": "Martínez-Pérez et al. — Original Figure 8: attached and suspended bacteria are counted separately.",
+          "interpretation": "a–d quantify attached bacteria and e–h culture medium; columns represent RN4220, RifR, VanR and AMC 201. A/B/C/D are empty particles, Rif, Van and dual drug. LogCFU is plotted, with dual-drug points near the detection floor, not proof of literally zero individual bacteria. Electron micrographs in i use 20 µm scales and support surface differences; culture establishes viability. [Counts and surfaces](ref:R01)"
+        },
+        "F03": {
+          "caption": "Korelidou et al. — Original Figure 4: similar percentages conceal different total drug masses.",
+          "interpretation": "A changes internal carrier at fixed membrane, B membrane at fixed contents, and C/D ACF loading with fixed 100PLA. C gives percentage, D mg. Their legends contain 50ACF:50PCL, 30ACF:70PCL and 10ACF:90PCL, overriding the caption’s single-formulation description of C. Separation in D demonstrates changed device dose; proximity in C does not establish equal clinical exposure. [Reservoir variables](ref:R02)"
+        },
+        "F04": {
+          "caption": "Korelidou et al. — Original Figure 8: actual times at which released implants retain antibacterial action.",
+          "interpretation": "A compares empty reservoirs, low-molecular-weight PCL and ACF implants; P/N are inoculated/uninoculated controls. B reports inhibition diameter in cm and C OD600. Day 10 zones exceed day 1 and liquid-culture OD is lower. Neither is a colony-eradication assay or extends through the release study endpoint. ACF itself is colored; yellow areas are not automatically inhibition boundaries. [Antibacterial testing](ref:R02)"
+        },
+        "F05": {
+          "caption": "Chen et al. — Original Figure 3: fractions and absolute counts jointly measure local differentiation.",
+          "interpretation": "In B/C, G1 is cell-only scaffold, G2 isDCV and G3 ex vivo induction; D shows gates and FMO at 10 d. E/F assess maturation markers among live CD11c-positive cells, while G/H provide corresponding counts; note broken y-axes. Transcriptomics and enrichment in I–O support immune phenotype, not direct antigen-specific killing rates. [Differentiation evidence](ref:R03)"
+        },
+        "F06": {
+          "caption": "Chen et al. — Original Figure 5: two control sets for cell scaffolds and added αPD-1.",
+          "interpretation": "A–J compare PBS, Sca, Sca-DTL and isDCV; K–R instead compare PBS, αPD-1, isDCV and combination. G1–G4 therefore change meaning between halves. L/M give tumor and survival outcomes for the latter comparison; N–Q show splenic or draining-node fractions, and R uses a 50 µm scale. Antibody dosing is separately shown in K; combination treatment is not entirely released by the printed scaffold. [Original combination experiment](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie lassen sich Tumor- und Infektionsbehandlungen mit lokalen Abgabegeräten verbinden?",
+      "direction": "Implantation und lokale Verabreichung",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Antibiotika getrennt einkapseln und anschließend schichtweise kombinieren",
+          "markdown": "Martínez-Pérez et al. verkapselten hydrophobes Rifampicin (Rif) durch einfache und hydrophiles Vancomycin (Van) durch doppelte Emulsion in säureterminierten PLGA-Nanopartikeln. Die Schema-Legende vertauscht die Verfahren, Methoden und Diskussion stimmen hingegen überein. Niedermolekulares PLGA ergab Rif/Van-Partikel von 164 ± 67 nm beziehungsweise 207 ± 64 nm, mit Einkapselungseffizienzen von 21.10% und 53.40%. Die angegebenen Beladungen 68.86 und 59.98 mg/mg besitzen unplausible Einheiten und Größenordnungen und ergeben keine belastbare Antibiotikadosis pro Druckstück. [Partikel- und Tintenmethoden](ref:R01)\n\nPartikelfreisetzung erfolgte in 1 mL PBS, pH 7.4, bei 37 °C und 60 rpm, mit Zentrifugation und vollständigem Überstandswechsel. Niedermolekulare Partikel setzten anfangs schneller mit Burst frei und wurden für den Druck gewählt. Hochmolekulares Rif gab bis 20 d etwa 24% ab, hochmolekulares Van etwa 3%. Für mittelmolekulares Van nennt der Text etwa 25%, während der gezeichnete Endpunkt deutlich niedriger liegt; dieser Wert eignet sich nicht für präzise Vergleiche. Gemessen wurden freie Partikel, keine Zweistoffflüsse aus vollständigen Druckhydrogelen.\n\nDie Endtinte enthielt 7.5% w/v GelMA und 30% w/w Partikel. Druckstücke maßen 20 × 20 mm mit 4 Schichten, abwechselnd 0/90° und 0.5 mm Strangabstand. Zweistoffdrucke wechselten Rif–Van–Rif–Van; Einzelwirkstoffe belegten sämtliche Schichten. Die Methoden nennen 26 °C Kartusche und 10 °C Bett, die Ergebnisse beste Strangbildung bei 27 °C. Nachhärtung erfolgte mit 365 nm, 25 mW/cm² für 90 s. Wirkstoffidentität und wirkstofftragende Schichtzahl ändern sich somit gemeinsam; gleiche Einzeldosen sind nicht vorauszusetzen.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Kurzfristige Keimfreiheit, Hemmdauer und Resistenzselektion ergeben verschiedene Rangfolgen",
+          "markdown": "Hydrogele kontaktierten 1 mL Inokulum mit 1 × 10^6 CFU/mL für 24 h; anhaftende und planktonische Bakterien wurden getrennt gewonnen, n = 6. Bei Zweistoffhydrogelen blieben nachweisbare Lebendkulturen für RN4220, dessen RifR-/VanR-Derivate und klinisches AMC 201 aus. Rif allein senkte empfindliche Stämme um mehr als 2 log, selektierte aber hochresistente Überlebende: RN4220-MIC stieg von 0.0019 µg/mL auf ≥128 µg/mL, AMC 201 von 8 µg/mL auf ≥128 µg/mL. [Keimkontrolle und Resistenz](ref:R01)\n\nÜberlebendes RN4220 trug rpoB-Substitutionen S463R, D471G und R484H. Im untersuchten AMC-201-Abschnitt fehlten sie; dessen Phänotyp ist daher keinem nachgewiesenen Effluxpumpenmechanismus zuzuordnen. Separat selektiertes VanR verlor ohne Arzneistoff rasch seine Resistenz und benötigte für Folgeversuche weiteren Van-Selektionsdruck. RifR behielt sie nach 6 arzneifreien Passagen. Die laborselektierten resistenten Kontrollen unterscheiden sich somit in ihrer Phänotypstabilität.\n\nEin 10-d-Versuch mit täglicher Übertragung desselben Hydrogels auf frisch inokulierten Agar ergab eine andere Rangfolge. Gegen RifR hielt die Hemmzone mit Van allein 7 d, mit beiden Wirkstoffen 5 d an; gegen AMC 201 waren es 6 d und 3 d. Zweistoffabgabe verbreiterte die Abdeckung und beseitigte nachweisbare Überlebende in dieser kurzen Exposition, maximierte aber nicht bei jedem Stamm die Hemmdauer. Geprüft wurden Anhaftungsverhinderung und Wachstum nach Inokulation, keine gleichartige Eradikation bereits reifer Biofilme; ein tierischer Infektionsendpunkt fehlte.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Reservoirinhalt und Auslassmembran steuern Acriflavin getrennt",
+          "markdown": "Korelidou et al. druckten PLA-Reservoirs per FDM mit 5.0 × 4.0 × 4 mm Außenmaßen. Eine Seite erhielt eine lösungsgegossene Membran, die andere nach Beladung einen PCL-Verschluss bei 80 °C. Die 0.15-mm-Membranen waren 50PCL:50PLA, 25PCL:75PLA oder 100PLA. Acriflavin (ACF) wurde innen mit niedermolekularem PCL (550 Da) gemischt und durchlief nicht die thermische Vorgeschichte des PLA-Schalendrucks. [Reservoir und Membrandesign](ref:R02)\n\nBei fester 50PCL:50PLA-Membran wurden 50% ACF plus 50% Glycerol etwa innerhalb 4 d abgegeben. Zugabe niedermolekularen PCL verlangsamte dies, vollständiger Glycerolersatz nochmals stärker. Bei festem 50ACF:50PCL-Inhalt ähnelten sich 100PLA und 25PCL:75PLA, während 50PCL:50PLA schneller freisetzte. Quecksilberporosimetrische Maxima lagen etwa bei 0.01, 0.3 und 2 µm; elektronenmikroskopische Oberflächenporen waren größer. Die Verfahren beschreiben verschiedene Porenmerkmale. Ähnliche Kurven der kleinporigen Gruppen widersprechen zudem einer einfachen proportionalen Ratenberechnung aus Porendurchmessern.\n\nDie endgültigen 100PLA-Membranen wurden 90 d in 50 mL PBS bei pH 7.4 und 37 °C lichtgeschützt geprüft. Inhalte mit 50%, 30% oder 10% ACF ergaben ähnliche kumulative Prozente, aber klar verschiedene Massen: etwa 25 mg bei höchster und nur einige mg bei niedrigster Beladung. Die C-Legende nennt fälschlich festes 50ACF:50PCL, während Kurvenlegende und Methoden unterschiedliche Beladungen enthalten. Ähnliche Prozente ersetzen keinen lokalen Dosisvergleich; ein langer In-vitro-Auslauf belegt keine ebenso lange wirksame In-vivo-Konzentration.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Antitumorale und antibakterielle Wirkung teilen eine Ladung, aber kein Prüfzeitfenster",
+          "markdown": "Die alamarBlue-IC50 von ACF in U-251 sank von 8.2 ± 1.36 µM nach 24 h auf 2.5 ± 1.19 µM nach 48 h und 1.3 ± 1.71 µM nach 72 h. L929-Kontrollen waren Mausfibroblasten, kein normales menschliches Hirngewebe. Separate Koloniebildungsversuche verwendeten 24 h Behandlung, Auswaschen und etwa 14 d weitere Kultur. ACF-IC50 für U87, U-251 und T98G betrugen 1.29, 1.72 und 4.54 µM. Kurzfristiger Stoffwechsel und langfristiges klonogenes Überleben sind verschiedene Endpunkte. [Zellfunktion und antibakterielle Prüfung](ref:R02)\n\nDie klonogene TMZ-IC50 allein lag in T98G bei 780 µM, in U-251/U87 bei 164/150 µM. Implantateluate von Tag 1 oder 3 mit 500 oder 1000 µM TMZ verminderten das Kolonieüberleben. Ein vollständiger Kombinationsindex fehlt; gezeigt ist zusätzliche Hemmung, keine quantifizierte pharmakologische Synergie. Implantate enthielten 30ACF:70PCL mit 100PLA-Membran; leere Reservoirs, niedermolekulares PCL allein und Medium dienten als Materialkontrollen.\n\nAntibakteriell wurden S.-aureus-Agar- oder Flüssigkulturen für 24 h Implantaten ausgesetzt, die zuvor bis Tag 1 oder 10 freigesetzt hatten. Tag 10 ergab größere Hemmzonen und niedrigere OD600. OD misst Wachstum; entsprechende bakterizide CFU- und Resistenzselektionsversuche fehlen. Aus Freisetzung auf 90 d antibakterielle Aktivität zu schließen ist keine gemessene Wirkdauer. Intrakranielle Tierwirksamkeit, lokale Neurotoxizität und systemische Pharmakokinetik dieser Druckgeräte wurden nicht verglichen; zitierte Tierbefunde anderer Träger schließen diese Lücken nicht.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Lokale Impfgerüste bündeln Differenzierung und Antigenstimulation räumlich",
+          "markdown": "Chen et al. verwendeten 10% w/v GelMA, 0.5% w/v LAP und nanoArch-S240-Projektionsdruck bei 405 nm mit Knochenmark-Mononuklearzellen (BM-MNCs) und an schadensassoziierten molekularen Mustern reichen Tumorlysaten (DTL). Die Druckdichte betrug 1 × 10^7 Zellen/mL, DTL 200 µg/mL. Tumormaterial wurde mit 20 Gy bestrahlt, wiederholt eingefroren/aufgetaut und beschallt. Die Ladung kombiniert Zellen, Antigene und Differenzierungsreize statt freier niedermolekularer Arznei. [Haupttext und ergänzende Methoden](ref:R03)\n\nIn vivo wurden je Maus 1 × 10^6 BM-MNCs mit FLT3L 100 ng/mL und GM-CSF 100 ng/mL eingesetzt. In-vitro-Vorkultur/Reifung verwendete dagegen GM-CSF 20 ng/mL; diese Konzentrationen sind nicht austauschbar. An Tagen 1, 4, 7 und 10 wurden Gerüste entnommen und Zellen nach enzymatischer Freisetzung gemessen. CD11c-positive Anteile in isDCV erreichten etwa 37% nach 7 d und 57% nach 10 d, unter der dargestellten Ex-vivo-Induktionsgruppe. CD80, CD86, MHC-II und zugehörige absolute Zellzahlen veränderten sich ebenfalls zeitlich.\n\nAnteile und absolute Zahlen sind gemeinsam zu lesen: Verlust anderer Zellen kann Prozente ohne mehr funktionelle Zellen erhöhen. Die Abbildung liefert beides und unterstützt Differenzierung durch Zbtb46-, Irf4- und Irf8-Transkription. Benachbarte Migrationsversuche verfolgten vorkultivierte DCs mit DiD oder CFSE in unabhängigen Kohorten und stützen Wanderung aus Gerüsten in Lymphknoten. Sie bilden keine vollständige Abstammungsverfolgung dieser neu differenzierenden BM-MNC-Population.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Postoperative Resttumoren und Checkpointblockade erfordern genaue Kontrollzusammensetzungen",
+          "markdown": "Chen et al. implantierten 5 × 10^5 RM-1-Zellen in C57BL/6-Flanken, resezierten nach 7 d mit etwa 1% Resttumor und setzten am selben Tag Gerüste ein. Obwohl der Haupttext Sca als leer bezeichnet, nennen die Zusatzmethoden FLT3L und GM-CSF mit jeweils 100 ng/mL. Sca-DTL enthielt zusätzlich DTL 200 µg/mL; isDCV zusätzlich 1 × 10^6 BM-MNCs je Maus. Sca war somit kein GelMA ohne bioaktive Komponenten; die Interpretation folgt der tatsächlichen Rezeptur. [Postoperative Kontrollen und Kombination](ref:R03)\n\nPBS und Sca zeigten ähnliches Tumorwachstum. Sca-DTL änderte Makrophagenmarker, zellhaltiges isDCV hemmte Tumoren jedoch stärker und erhöhte tumorale CD8-positive sowie IFN-γ-bezogene Endpunkte. Ein separater Viergruppenvergleich prüfte PBS, αPD-1, isDCV und die Kombination, n = 5. Der Antikörper wurde nicht mitgedruckt: An postoperativen Tagen 3, 6 und 9 wurden je 70 µg intratumoral in Resttumoren injiziert. Allein war er schwach; die Kombination unterdrückte Wachstum und verbesserte die Überlebenskurve dieses Versuchs gegenüber isDCV allein zusätzlich.\n\nDie Originalkurve reicht etwa bis 24 d. Die separat im Abstract genannte mediane Überlebenszeit von 55 d darf ihr nicht zugeordnet werden. Zentrale Gedächtnis-CD8-Anteile in der Milz und Tumorinfiltration stützen Immunwirkung; höhere Anteile allein belegen keine stärkere Abtötung je Zelle. Im Knochenversuch wurden RM-1-Luc-Zellen direkt in Tibiae injiziert: ein experimenteller Knochentumor-Test, keine gemessene Senkung spontaner Metastaseninzidenz. Geräte- und Zusatztherapieeffekte behalten ihre getrennten Modell- und Applikationszuordnungen.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Martínez-Pérez et al. — Originalabbildung 5: Molekülmasse verändert Burst und später freisetzbaren Anteil.",
+          "interpretation": "a/b zeigen kumulative Rif/Van-Prozente, c/d jeweilige Überstandskonzentrationen in µg/mL, alle gegen days. Niedermolekulare schwarze Kurven akkumulieren mehr, während frühe Konzentrationen rasch sinken. Eine abflachende Summenkurve bedeutet keine gleiche Tagesdosis. Mittelmolekulares Van endet unter den im Text genannten etwa 25%; beides wird nicht gemeinsam angepasst. Gemessen sind freie Partikel, keine vollständigen Zweistoffgele. [Partikelfreisetzung](ref:R01)"
+        },
+        "F02": {
+          "caption": "Martínez-Pérez et al. — Originalabbildung 8: Anhaftende und suspendierte Bakterien werden getrennt gezählt.",
+          "interpretation": "a–d quantifizieren anhaftende Bakterien, e–h Kulturmedium; Spalten sind RN4220, RifR, VanR und AMC 201. A/B/C/D bedeuten leere Partikel, Rif, Van und beide Arzneien. LogCFU wird gezeigt; Zweistoffpunkte nahe der Nachweisgrenze beweisen nicht buchstäblich null Einzelbakterien. Elektronenbilder in i tragen 20 µm Maßstäbe und stützen Oberflächenunterschiede; Kulturen bestimmen Lebensfähigkeit. [Keimzahlen und Oberflächen](ref:R01)"
+        },
+        "F03": {
+          "caption": "Korelidou et al. — Originalabbildung 4: Ähnliche Prozente verdecken verschiedene Gesamtmassen.",
+          "interpretation": "A verändert den inneren Träger bei fester Membran, B die Membran bei festem Inhalt und C/D die ACF-Beladung bei festem 100PLA. C zeigt Prozent, D mg. Die Legenden enthalten 50ACF:50PCL, 30ACF:70PCL und 10ACF:90PCL und widersprechen der einheitlichen C-Rezeptur in der Bildunterschrift. Trennung in D belegt geänderte Gerätedosis; Nähe in C keine gleiche klinische Exposition. [Reservoirvariablen](ref:R02)"
+        },
+        "F04": {
+          "caption": "Korelidou et al. — Originalabbildung 8: Tatsächlich geprüfte Zeitpunkte antibakterieller Implantatwirkung.",
+          "interpretation": "A vergleicht leere Reservoirs, niedermolekulares PCL und ACF-Geräte; P/N sind inokulierte/nicht inokulierte Kontrollen. B gibt Hemmdurchmesser in cm, C OD600 an. An Tag 10 sind Zonen größer als an Tag 1 und Flüssigkultur-OD niedriger. Beides ist weder Kolonieeradikation noch Prüfung bis zum Freisetzungsende. ACF ist selbst gefärbt; gelbe Flächen markieren nicht automatisch Hemmgrenzen. [Antibakterielle Prüfung](ref:R02)"
+        },
+        "F05": {
+          "caption": "Chen et al. — Originalabbildung 3: Anteile und absolute Zahlen messen gemeinsam lokale Differenzierung.",
+          "interpretation": "In B/C ist G1 das reine Zellgerüst, G2 isDCV und G3 Ex-vivo-Induktion; D zeigt Gates und FMO nach 10 d. E/F prüfen Reifungsmarker unter lebenden CD11c-positiven Zellen, G/H zugehörige Zahlen; unterbrochene y-Achsen beachten. Transkriptomik und Anreicherung in I–O stützen Immunphänotyp, keine direkte antigenspezifische Abtötungsrate. [Differenzierungsbefunde](ref:R03)"
+        },
+        "F06": {
+          "caption": "Chen et al. — Originalabbildung 5: Zwei Kontrollserien für Zellgerüste und zusätzliches αPD-1.",
+          "interpretation": "A–J vergleichen PBS, Sca, Sca-DTL und isDCV; K–R dagegen PBS, αPD-1, isDCV und Kombination. G1–G4 ändern somit zwischen den Hälften ihre Bedeutung. L/M zeigen Tumor- und Überlebensendpunkte des zweiten Vergleichs, N–Q Milz- oder Lymphknotenanteile, R einen 50 µm Maßstab. Antikörpergaben stehen separat in K; die Kombination wird nicht vollständig aus dem Druckgerüst freigesetzt. [Originaler Kombinationsversuch](ref:R03)"
+        }
+      }
+    }
+  }
+}

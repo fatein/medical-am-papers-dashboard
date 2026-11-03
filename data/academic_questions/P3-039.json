@@ -1,0 +1,262 @@
+{
+  "schema_version": 2,
+  "question_id": "P3-039",
+  "p": "P3",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_0a49fc84acd75a3fa878",
+    "doc_2e3bdd153700e38eb483",
+    "KB2026FCAE2D5AAD1A"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Production of Bi-Compartmental Tablets by FDM 3D Printing for the Withdrawal of Diazepam",
+      "publisher": "Pharmaceutics",
+      "year": 2023,
+      "url": "https://doi.org/10.3390/pharmaceutics15020538",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Customisable Tablet Printing: The Development of Multimaterial Hot Melt Inkjet 3D Printing to Produce Complex and Personalised Dosage Forms",
+      "publisher": "Pharmaceutics",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/pharmaceutics13101679",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Dose Accuracy and Content Uniformity of Low-Dose Metoprolol Tablets: 3D Printing Compared with Tablet Splitting in Hospital Pharmacy Setting",
+      "publisher": "Pharmaceutics",
+      "year": 2026,
+      "url": "https://doi.org/10.3390/pharmaceutics18050532",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 4",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e667/9960133/af9ae623dd2f/pharmaceutics-15-00538-g004.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9960133/#pharmaceutics-15-00538-f004",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P3-039/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 6",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e667/9960133/068e851b3670/pharmaceutics-15-00538-g006.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9960133/#pharmaceutics-15-00538-f006",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P3-039/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Figure 10",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/7f86/8538252/9b59c5d02603/pharmaceutics-13-01679-g010.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8538252/#pharmaceutics-13-01679-f010",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P3-039/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Figure 3",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/a660/13209887/c0031ece435f/pharmaceutics-18-00532-g003.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13209887/figure/pharmaceutics-18-00532-f003/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P3-039/F04.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "打印片剂如何实现个体化剂量？",
+      "direction": "个体化口服制剂",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "剂量由含药材料的实际沉积量决定",
+          "markdown": "个体化打印首先改变的是单片中含药材料的数量及分布，处方上的毫克数仍需通过成品含量测定确认。若含药原料浓度为 c、实际沉积质量为 m，则剂量可按 c×m 估算；保持浓度而改变含药区体积、保持体积而改变浓度、以无药材料补足外形，是三种不同操作。体积到质量的换算又取决于材料密度、孔隙及沉积偏差，不能将 CAD 体积直接视为药量。地西泮双组分研究先用空白 PVA 片校准尺寸与质量，再选择 10% w/w 含药丝材，正是为了建立这一步映射。[双组分实验](ref:R01)\n\n该研究以直径 6.4 mm、总厚度 3 mm 为设计目标，通过改变上部含药层厚度、同时补足下部空白层，制造 1、2、5、7.5、10 mg 五种含药规格。含药层计算厚度分别为 0.3、0.6、1.5、2.25、3.0 mm，实际 CAD 厚度为 0.4、0.6、1.6、2.2、3.0 mm：0.2 mm 的层高使理论连续的剂量变量变成离散沉积层。低于 1 mg 时，单层含药材料与底层黏合不良，因而不能从五个成功规格推断任意微量都可打印。这个下限来自结构与工艺，不是软件输入的小数位数。\n\n实际生产采用 0.4 mm 喷嘴、100% 填充、60 mm·s⁻¹ 打印速度、210 °C 喷嘴与 50 °C 平台。空白与含药丝材均筛选至 1.75 ± 0.05 mm 直径，但其挤出条件不同：空白为 210 °C、13 rpm，含药为 205 °C、15 rpm。地西泮的增塑作用改变流动和丝径，所以“同一几何”成立之前，需要分别校准两种进料。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "保持外形的结果与界面代价",
+          "markdown": "五个规格的含量测定为 n = 6，给出的数值是平均值 ± 标准差。剂量控制接近目标，但不能将该结果改写为每片都具有相同误差。[原文 Tables 1–3](ref:R01)\n\n| 目标剂量 | CAD 含药层厚度 | 实测含量 |\n|---|---|---|\n| 1 mg | 0.4 mm | 1.05 ± 0.04 mg |\n| 2 mg | 0.6 mm | 2.10 ± 0.06 mg |\n| 5 mg | 1.6 mm | 5.12 ± 0.38 mg |\n| 7.5 mg | 2.2 mm | 7.45 ± 0.21 mg |\n| 10 mg | 3.0 mm | 10.14 ± 0.38 mg |\n\n“外形保持”同样应理解为设计目标和实测相近，而非尺寸绝对不变。含药规格的实测质量为 104.4–120.9 mg，厚度为 3.0–3.3 mm；双组分片通常比 3 mm 设计更厚。扫描电镜发现 5 mg 双组分片界面的一侧存在小间隙，而单一丝材片层间连接较完整，作者将增厚与这一界面缺陷联系起来。因此空白材料补偿了宏观体积，却引入了喷嘴对位、首次出料和两材料接合的误差源。\n\n原图中的颜色也随含药比例变化，研究并未证明患者无法分辨不同剂量。作者提出可加入染料统一颜色，但这是后续设计建议，实验没有测量依从性或地西泮减量成功率。此处成立的是在相近外形中配置不同含量的制剂学结果，不能直接换成行为或治疗获益。",
+          "figure_ids": []
+        },
+        {
+          "id": "s3",
+          "title": "剂量改变会同时改变释放与储存响应",
+          "markdown": "同一外径和总厚度不等于同一释放速度。地西泮溶出在 900 mL、0.1 N HCl、37.0 ± 0.5 °C、桨法 100 rpm 条件下进行，每组 n = 6，观察至 180 min。1 mg 组约在 30 min 释放完毕，10 mg 组约需 150 min。低剂量的含药区位于表层，高剂量则有更多药物埋在内部；含药层的暴露面积与扩散、溶解路径同时改变。用百分比作纵轴可比较释放进程，却不能据此说 1 mg 片比 10 mg 片在相同时间提供更多毫克药物。[原文 Figure 6](ref:R01)\n\n浓度调整也不是保持释放的捷径。非诺贝特–Compritol HD5 ATO 热熔喷墨研究比较 5%、10%、20%、30% w/w 载药量：固定实心结构时，高载药组的相对释放更慢；固定 0.60 mm 蜂窝孔径时也出现同一方向。XRD 检出部分晶态药物，而 DSC 未显示明显药物熔融峰，提示不能仅凭 DSC 判断全部无定形。另一方面，在 10% w/w 相同载药浓度下改变内部通道，可将约 87% 释放的时间从实心片的 10 h 缩短至 0.60 mm 孔蜂窝片的 3 h。结构和浓度提供两个控制变量，却需要共同测量，而不能分别优化后假设互不影响。[原文 Figure 10](ref:R02)\n\n储存试验进一步显示规格间的不一致：地西泮片在 40 °C/75% RH 储存 1 month 后，1、2、7.5、10 mg 规格的 f₂ 分别为 60.7、81.9、65.5、54.8，5 mg 为 47.3，低于常用相似性界限 50。作者提出界面在溶出时分离、增大含药区表面积的可能解释，未直接观测并证实这一过程。f₂ 是曲线相似性指标，不是显著性检验的 p 值；同一处方系列中一项规格的偏离，也说明稳定性不能仅由最高剂量代表。",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "与手工分片比较：哪些含量误差得到减少",
+          "markdown": "2026 年酒石酸美托洛尔实验将 25 mg 商业片手工对分为 12.5 mg、四分为 6.25 mg，并与三个药房地点的打印单元比较。打印比较批使用 4.0% w/w 配方，目标单片质量分别为 313 mg 和 156 mg，逐片称重；每批含量测定 n = 10，分片组每组 n = 30。每个地点×剂量×基质仅生产一个独立批次，总计 12 批。因此表中精密度反映各批内部单片差异，并非重复批次的再现性。[原文 Tables 1–2 与 Figure 3](ref:R03)\n\n| 6.25 mg 制备条件 | 平均含量（目标的 %） | SD（百分点） | AV |\n|---|---|---|---|\n| 商业 A 片四分 | 64.2 | 17.6 | 此表不摘录 |\n| 商业 B 片四分 | 89.5 | 22.5 | 此表不摘录 |\n| 凝胶打印，地点 A | 100.2 | 0.77 | 2 |\n| 凝胶打印，地点 B | 103.4 | 3.26 | 10 |\n| 凝胶打印，地点 C | 98.0 | 0.79 | 2 |\n| 无水 troche 基质，地点 A | 96.9 | 5.43 | 14 |\n\n商业 A 四分片的含量范围为 24.9–105.9%，商业 B 为 49.3–142.8%。这种离散程度说明视觉上“约四分之一”不能可靠表征目标药量；打印凝胶的分布明显收窄。不过无水 troche 基质虽通过 AV < 15，地点 A 的 SD 为 5.43%，已经高于摘要所称的“全部低于 5%”。地点 C 的同规格均值为 90.3%、AV 为 13，也说明通过均匀度判据不等于均值正好为 100%。必须保留配方与地点条件，不能把全部打印组压缩为一个无差别的“高精度”结论。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "比较实验尚未连接的两个环节",
+          "markdown": "美托洛尔研究的分片发生在一次连续操作中，由一名技师和一名药师执行与检查，使用单刃刀片；碎粉没有回收，也没有依称重重新调整碎片。该对照代表这一机构的操作，不能推断所有分片器或所有操作者的误差。另一个重要细节是分片组未逐片测定完整片的质量，其理论半片、四分片目标由平均半片质量反推。因而质量损失与原片含量异常对系统性低估各贡献多少，不能仅由现有结果分离。[原文 Methods 与 Discussion](ref:R03)\n\n原文 Figure 3C 的溶出属于另行开发的 0.5%、2%、3% w/w、400 mg 凝胶片，不是前述比较用的 4.0% w/w 配方。在 500 mL 水、37 ± 0.5 °C、篮法 100 rpm 下，其 5 min 释放分别为 46.4%、36.8%、51.5%。正文将其中两组概括为“超过 50%”，与 46.4% 数值不符，因此这里保留具体数据。30 min 接近或超过 100% 是相对标示含量的分析读数，不应理解为生成了额外药物。这套结果支持开发配方快速释放，却没有直接验证两个比较剂量的溶出等效。\n\n三项实验由此界定了不同的个体化能力：双组分地西泮验证含药区尺寸与实测剂量，非诺贝特验证浓度和结构对释放的耦合，美托洛尔验证特定药房批次的含量分布。要解释同一患者换剂量后的暴露是否保持比例，仍缺少这些具体规格之间的药代动力学桥接；任何一个研究的含量合格都不能代替这一比较。",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Macedo et al. — 地西泮原文 Figure 4：相近外形内的含药层替换。",
+          "interpretation": "从左至右为 0、1、2、5、7.5、10 mg；中间四片以底部空白 PVA 配合顶部含药 PVA。图像支持宏观外形相近，但颜色和层间接合仍有差异，不能据此认定剂量对患者不可辨识。药量准确性来自 Table 3 的测定，而非照片。"
+        },
+        "F02": {
+          "caption": "Macedo et al. — 地西泮原文 Figure 6：五种剂量的体外释放。",
+          "interpretation": "横轴为 0–180 min，纵轴为 DZP release (%)；蓝、橙、黄、紫、绿分别为 1、2、5、7.5、10 mg，误差线为 SD，n = 6。1 mg 蓝线先达到接近完全释放，高剂量在较长时间后追上。百分比归一化暴露出含药层增厚带来的动力学差异，不能代替绝对毫克释放量比较。"
+        },
+        "F03": {
+          "caption": "Lion et al. — 非诺贝特原文 Figure 10：载药浓度和填充结构的交叉比较。",
+          "interpretation": "三图横轴均为时间 min，纵轴为药物释放百分比。(a) 固定 100% 填充比较 5–30% w/w；(b) 固定 10% w/w 比较实心片与 0.60、1.22、1.83 mm 蜂窝孔；(c) 固定 0.60 mm 孔、45% 填充比较浓度。最小孔蜂窝释放较快，而提高浓度使相对释放变慢，表明剂量与释放并非两个独立旋钮。"
+        },
+        "F04": {
+          "caption": "Larsen et al. — 美托洛尔原文 Figure 3：分片、打印含量与独立开发配方的溶出。",
+          "interpretation": "A 图按来源和 6.25/12.5 mg 分组，纵轴为目标药量的百分比；B 图比较 6.25 mg，打印地点顺序为 A、C、B，分布比两个分片组窄。红虚线为 85–115%，不等同于完整 AV 判据。C 图横轴 0–60 min、纵轴释放百分比，曲线为 0.5%、2%、3% 开发配方，不是 A/B 比较所用的 4.0% 配方，不能跨面板宣称同一批制剂同时通过全部检验。"
+        }
+      }
+    },
+    "en": {
+      "title": "How do printed tablets enable personalized doses?",
+      "direction": "Personalized oral dosage forms",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Dose follows the amount of drug-bearing material actually deposited",
+          "markdown": "Personalized printing changes the amount and spatial distribution of drug-bearing material in a unit; the prescribed milligram amount still requires confirmation by finished-product assay. At feed concentration c and deposited mass m, dose can be estimated as c×m. Changing the drug-bearing volume at fixed concentration, changing concentration at fixed volume, and replacing drug-bearing material with placebo to preserve the exterior are different operations. Converting volume into mass also depends on density, porosity and deposition error. CAD volume therefore cannot be equated directly with drug content. The diazepam study first calibrated tablet size against mass using placebo PVA and then selected a 10% w/w drug-loaded filament.[Bicompartmental experiment](ref:R01)\n\nWith a design diameter of 6.4 mm and total thickness of 3 mm, the researchers varied the upper drug-bearing layer and compensated with a lower placebo layer to obtain 1, 2, 5, 7.5 and 10 mg strengths. Calculated drug-layer thicknesses were 0.3, 0.6, 1.5, 2.25 and 3.0 mm, whereas CAD thicknesses were 0.4, 0.6, 1.6, 2.2 and 3.0 mm. The 0.2 mm layer height discretized an otherwise continuous dose variable. Below 1 mg, adhesion of the single drug-bearing layer was poor. Five successful strengths therefore do not establish arbitrary microdosing: the lower boundary arose from structure and processing, rather than the number of decimal places accepted by software.\n\nPrinting used a 0.4 mm nozzle, 100% infill, 60 mm·s⁻¹ speed, a 210 °C nozzle and a 50 °C platform. Both filaments were screened to 1.75 ± 0.05 mm diameter, but extrusion conditions differed: 210 °C and 13 rpm for placebo, versus 205 °C and 15 rpm for drug-loaded material. Diazepam plasticized the polymer and altered flow and filament diameter. Thus, both feeds required calibration before identical geometry could be meaningfully compared.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Preserving the exterior introduces an interface cost",
+          "markdown": "Drug content was assayed at n = 6 per strength; results below are means ± standard deviations. Mean doses approached their targets, but this does not imply an identical error for every unit.[Original Tables 1–3](ref:R01)\n\n| Target dose | CAD drug-layer thickness | Measured content |\n|---|---|---|\n| 1 mg | 0.4 mm | 1.05 ± 0.04 mg |\n| 2 mg | 0.6 mm | 2.10 ± 0.06 mg |\n| 5 mg | 1.6 mm | 5.12 ± 0.38 mg |\n| 7.5 mg | 2.2 mm | 7.45 ± 0.21 mg |\n| 10 mg | 3.0 mm | 10.14 ± 0.38 mg |\n\nPreserved appearance means similar measured dimensions around a design target, rather than invariant dimensions. Drug-containing strengths weighed 104.4–120.9 mg and were 3.0–3.3 mm thick. Bicompartmental tablets were generally thicker than the 3 mm design. SEM revealed a small gap on one side of the 5 mg tablet interface, whereas single-filament tablets had more complete interlayer connections; the authors associated the extra thickness with this defect. Placebo compensated for macroscopic volume while introducing nozzle alignment, initial extrusion and material-junction errors.\n\nColor also varied with drug-bearing fraction in the photograph. The study did not demonstrate that patients could not distinguish the strengths. Adding dye to standardize color was a proposal, and neither adherence nor successful diazepam withdrawal was measured. The supported finding is pharmaceutical control of content within a similar exterior, without a demonstrated behavioral or therapeutic benefit.",
+          "figure_ids": []
+        },
+        {
+          "id": "s3",
+          "title": "Changing dose also changes release and storage responses",
+          "markdown": "Identical outer diameter and total thickness did not preserve release rate. Diazepam dissolution used 900 mL of 0.1 N HCl at 37.0 ± 0.5 °C, a paddle at 100 rpm, n = 6 and observation to 180 min. The 1 mg strength released its dose in approximately 30 min, whereas the 10 mg strength required approximately 150 min. Low-dose drug occupied the surface layer; higher strengths contained more buried drug. Exposed drug-bearing area and dissolution or diffusion path changed together. Percentage release compares progress toward completion; it does not mean that 1 mg tablets deliver more milligrams than 10 mg tablets over the same interval.[Original Figure 6](ref:R01)\n\nChanging concentration is also not a shortcut to invariant release. A hot-melt inkjet study of fenofibrate–Compritol HD5 ATO compared 5%, 10%, 20% and 30% w/w loading. At fixed solid geometry, higher loadings released a smaller fraction; the same direction appeared at fixed 0.60 mm honeycomb cell diameter. XRD detected some crystalline drug despite no clear drug-melting peak in DSC, so DSC alone did not establish a completely amorphous system. Conversely, at 10% w/w loading, changing internal channels shortened the time to approximately 87% release from 10 h for the solid disc to 3 h for the 0.60 mm honeycomb. Geometry and concentration are two controls that must be measured jointly rather than assumed independent.[Original Figure 10](ref:R02)\n\nStorage also produced strength-specific responses. After 1 month at 40 °C/75% RH, diazepam strengths of 1, 2, 7.5 and 10 mg had f₂ values of 60.7, 81.9, 65.5 and 54.8, respectively; the 5 mg strength had f₂ = 47.3, below the conventional similarity boundary of 50. The authors proposed compartment separation during dissolution, increasing exposed drug-bearing area, without directly observing that process. f₂ measures profile similarity and is not a significance-test p value. The exceptional intermediate strength shows why the highest strength alone cannot represent storage performance across the series.",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Comparison with splitting: which content errors were reduced?",
+          "markdown": "The 2026 metoprolol tartrate experiment halved commercial 25 mg tablets to 12.5 mg and quartered them to 6.25 mg, then compared these units with printed preparations from three pharmacy locations. Comparator print batches used 4.0% w/w drug, target masses of 313 mg and 156 mg, and individual weight checks. Content testing used n = 10 per printed batch and n = 30 per split group. Only one independent batch was produced per location×strength×base, totaling 12 batches. Precision therefore describes within-batch unit variation, rather than reproducibility across repeated batches.[Original Tables 1–2 and Figure 3](ref:R03)\n\n| Preparation of 6.25 mg units | Mean content (% of target) | SD (percentage points) | AV |\n|---|---|---|---|\n| Commercial A, quartered | 64.2 | 17.6 | Not transcribed here |\n| Commercial B, quartered | 89.5 | 22.5 | Not transcribed here |\n| Printed gel, Location A | 100.2 | 0.77 | 2 |\n| Printed gel, Location B | 103.4 | 3.26 | 10 |\n| Printed gel, Location C | 98.0 | 0.79 | 2 |\n| Anhydrous troche base, Location A | 96.9 | 5.43 | 14 |\n\nQuartered A tablets ranged from 24.9–105.9% content and quartered B tablets from 49.3–142.8%. A visually approximate quarter therefore poorly represented the intended dose; printed gel distributions were much narrower. Nevertheless, the troche base at Location A had SD = 5.43%, contradicting the abstract's statement that all SDs were below 5%, although AV remained below 15. The same strength at Location C had mean content 90.3% and AV 13. Passing uniformity criteria therefore does not place the mean exactly at 100%. Formulation and location must remain visible rather than collapsing all printed conditions into one undifferentiated precision claim.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Two links the comparative experiments have not established",
+          "markdown": "Metoprolol splitting was performed in one continuous session by one technician and checked by one pharmacist, using a single-edge blade. Fragments were not recovered and units were not adjusted by weight. This represents the tested institution's procedure rather than every splitter or operator. Intact tablets were also not weighed individually; theoretical half- and quarter-unit masses were reconstructed from the mean half-tablet mass. The existing results therefore cannot separately quantify how mass loss and abnormal original-tablet content contributed to systematic underestimation.[Original Methods and Discussion](ref:R03)\n\nOriginal Figure 3C concerns separate development formulations: 400 mg gel tablets with 0.5%, 2% and 3% w/w drug, not the 4.0% w/w comparator formulation. In 500 mL water at 37 ± 0.5 °C with a basket at 100 rpm, their 5 min release values were 46.4%, 36.8% and 51.5%, respectively. The text describes two groups as exceeding 50%, inconsistent with 46.4%; the specific values are retained here. Values approaching or exceeding 100% at 30 min are analytical readings relative to label claim, not generation of additional drug. These data support fast release of the development formulations but do not directly establish dissolution equivalence of the two comparator strengths.\n\nThe three experiments thus establish distinct forms of individualization: diazepam links drug-bearing dimensions to measured dose, fenofibrate links concentration and structure to release, and metoprolol measures content distributions in specified pharmacy batches. Pharmacokinetic bridging between these particular strengths remains missing when asking whether changing dose preserves proportional exposure in the same patient. Content conformity in any one experiment cannot substitute for that comparison.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Macedo et al. — Diazepam, original Figure 4: replacing drug-bearing layers within a similar exterior.",
+          "interpretation": "Left to right: 0, 1, 2, 5, 7.5 and 10 mg. The four intermediate tablets combine lower placebo PVA with upper drug-loaded PVA. The photograph supports similar gross shape, while color and junctions remain different; it does not establish that patients cannot distinguish strengths. Dose accuracy comes from the assay in Table 3, not the photograph."
+        },
+        "F02": {
+          "caption": "Macedo et al. — Diazepam, original Figure 6: in vitro release at five strengths.",
+          "interpretation": "The axes are 0–180 min and DZP release (%); blue, orange, yellow, purple and green represent 1, 2, 5, 7.5 and 10 mg. Error bars are SD, n = 6. The blue 1 mg curve approaches complete release first, and higher strengths catch up later. Percentage normalization exposes the kinetic effect of thicker drug-bearing layers but does not compare absolute milligrams released."
+        },
+        "F03": {
+          "caption": "Lion et al. — Fenofibrate, original Figure 10: crossing concentration with infill structure.",
+          "interpretation": "All panels plot time in min against percentage drug release. Panel (a) compares 5–30% w/w at 100% infill; (b) compares a solid disc and honeycombs with 0.60, 1.22 and 1.83 mm cells at 10% w/w; (c) varies concentration at 0.60 mm cells and 45% infill. The smallest-cell honeycomb releases faster, whereas higher concentration slows fractional release. Dose and release are therefore coupled controls."
+        },
+        "F04": {
+          "caption": "Larsen et al. — Metoprolol, original Figure 3: split and printed content, plus dissolution of separate development formulations.",
+          "interpretation": "Panel A groups source and 6.25/12.5 mg strengths, with content as percentage of target. Panel B compares 6.25 mg units; printed locations appear in the order A, C, B and have narrower distributions than the split groups. Red 85–115% lines are not the full AV criterion. Panel C plots 0–60 min against percentage release for 0.5%, 2% and 3% development formulations, not the 4.0% comparator formulation. The panels therefore cannot jointly establish every quality attribute for the same batches."
+        }
+      }
+    },
+    "de": {
+      "title": "Wie ermöglichen gedruckte Tabletten individualisierte Dosen?",
+      "direction": "Individualisierte orale Arzneiformen",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Die Dosis folgt der tatsächlich abgelegten wirkstoffhaltigen Materialmenge",
+          "markdown": "Individualisierter Druck verändert Menge und räumliche Verteilung des wirkstoffhaltigen Materials pro Einheit; die verordnete Milligrammmenge muss weiterhin durch eine Gehaltsbestimmung am Endprodukt bestätigt werden. Bei Ausgangskonzentration c und abgelegter Masse m lässt sich die Dosis als c×m abschätzen. Wirkstoffvolumen bei konstanter Konzentration, Konzentration bei konstantem Volumen und Ersatz durch Placebomaterial zur Erhaltung der Außenform sind unterschiedliche Stellgrößen. Die Umrechnung von Volumen in Masse hängt außerdem von Dichte, Porosität und Ablagefehlern ab. CAD-Volumen ist daher nicht unmittelbar Wirkstoffmenge. Die Diazepam-Studie kalibrierte zunächst Tablettengröße gegen Masse mit wirkstofffreiem PVA und wählte anschließend ein Filament mit 10% w/w Wirkstoff.[Zweikompartiment-Experiment](ref:R01)\n\nBei einem vorgesehenen Durchmesser von 6.4 mm und einer Gesamtdicke von 3 mm variierten die Forschenden die obere Wirkstoffschicht und ergänzten die untere Placeboschicht, um 1, 2, 5, 7.5 und 10 mg herzustellen. Die berechneten Wirkstoffschichtdicken betrugen 0.3, 0.6, 1.5, 2.25 und 3.0 mm, die CAD-Dicken dagegen 0.4, 0.6, 1.6, 2.2 und 3.0 mm. Die Schichthöhe von 0.2 mm unterteilte die theoretisch kontinuierliche Dosisvariable in diskrete Ablageschichten. Unterhalb von 1 mg haftete die einzelne Wirkstoffschicht schlecht. Fünf erfolgreiche Stärken belegen somit keine beliebige Mikrodosierung: Die Untergrenze entstand durch Struktur und Verarbeitung, nicht durch die Zahl möglicher Nachkommastellen in der Software.\n\nGedruckt wurde mit einer 0.4 mm Düse, 100% Füllgrad, 60 mm·s⁻¹ Geschwindigkeit, 210 °C Düsen- und 50 °C Plattformtemperatur. Beide Filamente wurden auf 1.75 ± 0.05 mm Durchmesser begrenzt, ihre Extrusionsbedingungen unterschieden sich jedoch: 210 °C und 13 rpm für Placebo gegenüber 205 °C und 15 rpm für das wirkstoffhaltige Material. Diazepam wirkte als Weichmacher und veränderte Fluss sowie Filamentdurchmesser. Beide Ausgangsmaterialien mussten deshalb vor dem Vergleich gleicher Geometrien kalibriert werden.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Erhaltene Außenform mit zusätzlichen Grenzflächenfehlern",
+          "markdown": "Der Wirkstoffgehalt wurde für jede Stärke mit n = 6 bestimmt; die Werte sind Mittelwerte ± Standardabweichungen. Die mittleren Dosen lagen nahe am Ziel, was nicht für jede einzelne Einheit denselben Fehler bedeutet.[Originaltabellen 1–3](ref:R01)\n\n| Zieldosis | CAD-Dicke der Wirkstoffschicht | Gemessener Gehalt |\n|---|---|---|\n| 1 mg | 0.4 mm | 1.05 ± 0.04 mg |\n| 2 mg | 0.6 mm | 2.10 ± 0.06 mg |\n| 5 mg | 1.6 mm | 5.12 ± 0.38 mg |\n| 7.5 mg | 2.2 mm | 7.45 ± 0.21 mg |\n| 10 mg | 3.0 mm | 10.14 ± 0.38 mg |\n\nErhaltenes Aussehen bezeichnet ähnliche gemessene Abmessungen um einen Entwurfswert, keine unveränderlichen Maße. Die wirkstoffhaltigen Stärken wogen 104.4–120.9 mg und waren 3.0–3.3 mm dick. Zweikompartimenttabletten waren meist dicker als die vorgesehenen 3 mm. Die Rasterelektronenmikroskopie zeigte auf einer Seite der 5 mg Grenzfläche einen kleinen Spalt, während Tabletten aus einem einzigen Filament vollständigere Schichtverbindungen aufwiesen. Die Autoren brachten die zusätzliche Dicke mit diesem Defekt in Verbindung. Placebo ergänzte das makroskopische Volumen, führte jedoch Fehlerquellen durch Düsenausrichtung, anfänglichen Materialfluss und Materialkontakt ein.\n\nAuch die Farbe änderte sich auf der Aufnahme mit dem Wirkstoffanteil. Die Studie belegte nicht, dass Patienten die Stärken nicht unterscheiden können. Farbstoff zur Vereinheitlichung war ein Vorschlag; weder Adhärenz noch erfolgreicher Diazepam-Entzug wurden gemessen. Belegt ist die pharmazeutische Gehaltssteuerung bei ähnlicher Außenform, ohne nachgewiesenen Verhaltens- oder Therapieeffekt.",
+          "figure_ids": []
+        },
+        {
+          "id": "s3",
+          "title": "Die Dosisänderung verändert auch Freisetzung und Lagerungsverhalten",
+          "markdown": "Gleicher Außendurchmesser und gleiche Gesamtdicke erhielten die Freisetzungsgeschwindigkeit nicht. Diazepam wurde in 900 mL 0.1 N HCl bei 37.0 ± 0.5 °C, mit einem Rührblatt bei 100 rpm, n = 6 und Beobachtung bis 180 min geprüft. Die 1 mg Stärke setzte ihre Dosis nach ungefähr 30 min frei, die 10 mg Stärke benötigte ungefähr 150 min. Bei niedriger Dosis lag der Wirkstoff oberflächennah; höhere Stärken enthielten mehr innenliegenden Wirkstoff. Exponierte Wirkstofffläche und Lösungs- beziehungsweise Diffusionsweg änderten sich gemeinsam. Prozentuale Freisetzung vergleicht den Fortschritt bis zur vollständigen Abgabe; sie bedeutet nicht, dass eine 1 mg Tablette im gleichen Zeitraum mehr Milligramm liefert als eine 10 mg Tablette.[Originalabbildung 6](ref:R01)\n\nEine Konzentrationsänderung garantiert ebenfalls keine gleichbleibende Freisetzung. Eine Schmelz-Tintenstrahldruckstudie mit Fenofibrat–Compritol HD5 ATO verglich Beladungen von 5%, 10%, 20% und 30% w/w. Bei konstanter Vollkörpergeometrie setzten höhere Beladungen einen kleineren Anteil frei; dieselbe Richtung zeigte sich bei konstantem Wabenzelldurchmesser von 0.60 mm. XRD erfasste teilweise kristallinen Wirkstoff, obwohl DSC keinen deutlichen Wirkstoffschmelzpeak zeigte. DSC allein belegte somit keinen vollständig amorphen Zustand. Bei gleicher Beladung von 10% w/w verkürzte eine Änderung der inneren Kanäle dagegen die Zeit bis ungefähr 87% Freisetzung von 10 h bei der Vollscheibe auf 3 h bei der 0.60 mm Wabenstruktur. Geometrie und Konzentration müssen gemeinsam geprüft werden, statt ihre Unabhängigkeit vorauszusetzen.[Originalabbildung 10](ref:R02)\n\nAuch die Lagerung wirkte sich je nach Stärke unterschiedlich aus. Nach 1 month bei 40 °C/75% RH betrugen die f₂-Werte für Diazepam mit 1, 2, 7.5 und 10 mg jeweils 60.7, 81.9, 65.5 und 54.8; für 5 mg lag f₂ bei 47.3 und damit unter der üblichen Ähnlichkeitsgrenze 50. Die Autoren vermuteten eine Trennung der Kompartimente während der Auflösung mit vergrößerter Wirkstoffoberfläche, beobachteten diesen Vorgang aber nicht unmittelbar. f₂ beschreibt Profilähnlichkeit und ist kein p-Wert eines Signifikanztests. Die abweichende mittlere Stärke zeigt, warum die höchste Dosis allein das Lagerungsverhalten der Reihe nicht repräsentiert.",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Vergleich mit Tablettenteilung: Welche Gehaltsfehler wurden verringert?",
+          "markdown": "Das Experiment mit Metoprololtartrat von 2026 halbierte handelsübliche 25 mg Tabletten auf 12.5 mg und viertelte sie auf 6.25 mg. Verglichen wurde mit gedruckten Einheiten aus drei Apothekenstandorten. Die Druckvergleichschargen enthielten 4.0% w/w Wirkstoff, hatten Zielmassen von 313 mg beziehungsweise 156 mg und wurden einzeln gewogen. Die Gehaltsprüfung umfasste n = 10 pro Druckcharge und n = 30 pro Gruppe geteilter Tabletten. Pro Standort×Stärke×Grundlage wurde nur eine unabhängige Charge hergestellt, insgesamt 12 Chargen. Die Präzision beschreibt daher Unterschiede zwischen Einheiten derselben Charge, keine Reproduzierbarkeit wiederholter Chargen.[Originaltabellen 1–2 und Abbildung 3](ref:R03)\n\n| Herstellung von 6.25 mg Einheiten | Mittlerer Gehalt (% des Ziels) | SD (Prozentpunkte) | AV |\n|---|---|---|---|\n| Handelsprodukt A, geviertelt | 64.2 | 17.6 | Hier nicht übernommen |\n| Handelsprodukt B, geviertelt | 89.5 | 22.5 | Hier nicht übernommen |\n| Gedrucktes Gel, Standort A | 100.2 | 0.77 | 2 |\n| Gedrucktes Gel, Standort B | 103.4 | 3.26 | 10 |\n| Gedrucktes Gel, Standort C | 98.0 | 0.79 | 2 |\n| Wasserfreie Troche-Grundlage, Standort A | 96.9 | 5.43 | 14 |\n\nDie Viertel von A enthielten 24.9–105.9%, diejenigen von B 49.3–142.8% der Zieldosis. Ein optisch ungefähres Viertel repräsentierte die gewünschte Dosis somit unzureichend; die Verteilungen gedruckter Geleinheiten waren wesentlich schmaler. Dennoch hatte die Troche-Grundlage an Standort A eine SD von 5.43%. Dies widerspricht der Abstract-Angabe, sämtliche SD-Werte lägen unter 5%, obwohl AV unter 15 blieb. Dieselbe Stärke an Standort C hatte einen mittleren Gehalt von 90.3% und AV 13. Das Bestehen einer Gleichförmigkeitsprüfung bedeutet daher keinen Mittelwert von genau 100%. Formulierung und Standort müssen sichtbar bleiben, statt alle Druckbedingungen zu einer einheitlichen Präzisionsaussage zusammenzufassen.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Zwei bislang nicht hergestellte Verbindungen der Vergleichsexperimente",
+          "markdown": "Die Metoprololteilung erfolgte in einer zusammenhängenden Sitzung durch eine technische Fachkraft und wurde von einer pharmazeutischen Fachkraft geprüft; verwendet wurde eine einseitig geschärfte Klinge. Bruchmaterial wurde nicht zurückgewonnen, und die Einheiten wurden nicht nach Gewicht korrigiert. Das bildet die untersuchte institutionelle Vorgehensweise ab, nicht jedes Teilgerät oder jede ausführende Person. Intakte Tabletten wurden zudem nicht einzeln gewogen; die theoretischen Halb- und Viertelmassen wurden aus der mittleren Halbtablettenmasse zurückgerechnet. Die Ergebnisse trennen daher die Beiträge von Masseverlust und abweichendem ursprünglichem Tablettengehalt zur systematischen Unterschätzung nicht.[Originalmethoden und Diskussion](ref:R03)\n\nOriginalabbildung 3C betrifft gesonderte Entwicklungsformulierungen: 400 mg Geltabletten mit 0.5%, 2% und 3% w/w Wirkstoff, nicht die 4.0% w/w Vergleichsformulierung. In 500 mL Wasser bei 37 ± 0.5 °C mit einem Korb bei 100 rpm betrugen ihre Freisetzungen nach 5 min jeweils 46.4%, 36.8% und 51.5%. Der Text beschreibt zwei Gruppen als über 50%, was dem Wert 46.4% widerspricht; hier bleiben die konkreten Werte erhalten. Messwerte nahe oder über 100% nach 30 min beziehen sich auf den deklarierten Gehalt und bedeuten keine Entstehung zusätzlichen Wirkstoffs. Diese Daten belegen schnelle Freisetzung der Entwicklungsformulierungen, jedoch keine direkte Auflösungsäquivalenz der beiden Vergleichsstärken.\n\nDie drei Experimente belegen somit unterschiedliche Individualisierungsleistungen: Diazepam verknüpft Wirkstoffabmessungen mit gemessener Dosis, Fenofibrat Konzentration und Struktur mit Freisetzung, und Metoprolol Gehaltsverteilungen mit bestimmten Apothekenchargen. Für die Frage, ob ein Dosiswechsel beim selben Patienten proportionale Exposition erhält, fehlt weiterhin eine pharmakokinetische Überbrückung zwischen diesen konkreten Stärken. Gehaltskonformität in einem einzelnen Experiment ersetzt diesen Vergleich nicht.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Macedo et al. — Diazepam, Originalabbildung 4: Austausch wirkstoffhaltiger Schichten bei ähnlicher Außenform.",
+          "interpretation": "Von links nach rechts: 0, 1, 2, 5, 7.5 und 10 mg. Die vier mittleren Tabletten kombinieren unteres Placebo-PVA mit oberem wirkstoffhaltigem PVA. Die Aufnahme zeigt ähnliche Gesamtformen, aber unterschiedliche Farben und Verbindungsstellen. Sie belegt keine Ununterscheidbarkeit für Patienten; die Dosisgenauigkeit stammt aus der Gehaltsmessung in Tabelle 3, nicht aus dem Foto."
+        },
+        "F02": {
+          "caption": "Macedo et al. — Diazepam, Originalabbildung 6: In-vitro-Freisetzung von fünf Stärken.",
+          "interpretation": "Die Achsen zeigen 0–180 min und DZP release (%); Blau, Orange, Gelb, Violett und Grün entsprechen 1, 2, 5, 7.5 und 10 mg. Fehlerbalken zeigen SD bei n = 6. Die blaue 1 mg Kurve erreicht zuerst nahezu vollständige Freisetzung, höhere Stärken folgen später. Die Prozentnormierung verdeutlicht den kinetischen Effekt dickerer Wirkstoffschichten, vergleicht jedoch keine absolut freigesetzten Milligramm."
+        },
+        "F03": {
+          "caption": "Lion et al. — Fenofibrat, Originalabbildung 10: Kreuzvergleich von Konzentration und Füllstruktur.",
+          "interpretation": "Alle Felder zeigen Zeit in min gegen prozentuale Wirkstofffreisetzung. (a) vergleicht 5–30% w/w bei 100% Füllgrad; (b) Vollscheibe und Waben mit 0.60, 1.22 sowie 1.83 mm Zellen bei 10% w/w; (c) variiert die Konzentration bei 0.60 mm Zellen und 45% Füllgrad. Die kleinsten Wabenzellen setzen schneller frei, höhere Konzentrationen verlangsamen die relative Freisetzung. Dosis und Freisetzung sind somit gekoppelte Stellgrößen."
+        },
+        "F04": {
+          "caption": "Larsen et al. — Metoprolol, Originalabbildung 3: Gehalte geteilter und gedruckter Einheiten sowie Auflösung separater Entwicklungsformulierungen.",
+          "interpretation": "A gruppiert Herkunft und Stärken von 6.25/12.5 mg; der Gehalt wird relativ zum Ziel angegeben. B vergleicht 6.25 mg Einheiten, mit Druckstandorten in der Reihenfolge A, C, B und schmaleren Verteilungen als bei Teilung. Die roten Grenzen 85–115% bilden nicht die vollständige AV-Prüfung ab. C zeigt 0–60 min gegen prozentuale Freisetzung für Entwicklungsformulierungen mit 0.5%, 2% und 3%, nicht für die 4.0% Vergleichsformulierung. Die Felder belegen daher nicht gemeinsam alle Qualitätsmerkmale derselben Chargen."
+        }
+      }
+    }
+  }
+}

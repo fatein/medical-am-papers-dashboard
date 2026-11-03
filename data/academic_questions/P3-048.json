@@ -1,0 +1,341 @@
+{
+  "schema_version": 2,
+  "question_id": "P3-048",
+  "p": "P3",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_c3c67da4ba9933a962f2",
+    "doc_3bd10146f352a8585923"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Thermal Stability of Dexamethasone—Evaluation with Regard to Modern Medicinal and Pharmaceutical 3D-Printing Applications",
+      "publisher": "Molecules",
+      "year": 2025,
+      "url": "https://doi.org/10.3390/molecules30214234",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Stability of Dexamethasone during Hot-Melt Extrusion of Filaments based on Eudragit® RS, Ethyl Cellulose and Polyethylene Oxide",
+      "publisher": "International Journal of Pharmaceutics: X",
+      "year": 2024,
+      "url": "https://doi.org/10.1016/j.ijpx.2024.100263",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Stereolithography (SLA) 3D printing of an antihypertensive polyprintlet: Case study of an unexpected photopolymer-drug reaction",
+      "publisher": "Additive Manufacturing",
+      "year": 2020,
+      "url": "https://doi.org/10.1016/j.addma.2020.101071",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "A drug eluting poly(trimethylene carbonate)/poly(lactic acid)-reinforced nanocomposite for the functional delivery of osteogenic molecules",
+      "publisher": "International Journal of Nanomedicine",
+      "year": 2018,
+      "url": "https://doi.org/10.2147/IJN.S163219",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 1",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-048/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12610717/#molecules-30-04234-f001",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R02",
+      "original_label": "Figure 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-048/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11260382/#f0015",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Figure 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-048/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11260382/#f0020",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Figure 6",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-048/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11260382/#f0030",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R04",
+      "original_label": "Figure 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-048/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6161751/#f4-ijn-13-5701",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R04",
+      "original_label": "Figure 7",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-048/F06.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6161751/#f7-ijn-13-5701",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "打印热与光照如何影响药物稳定性？",
+      "direction": "打印质量与稳定性",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "热重起点随升温速率移动，不能直接定义药物的加工上限",
+          "markdown": "Svoboda 等用纯度 99.7% 的地塞米松（DEX）研究热分解，取 4–6 mg 样品，以 0.1–20 °C/min 从 30 升至 550 °C，并比较氮气与空气，两者流量均为 50 mL/min。随着升温加快，氮气中的失重起点从 183 移到 264 °C，空气中从 188 移到 260 °C。同一种粉末因此可以得到相差很大的“分解温度”；快速扫描使样品在每个温度附近停留更短，不能据较高起点认定长时间加工也安全。[升温速率与气氛对照](ref:R01)\n\n差热曲线同样受先前分解影响：10 °C/min 时熔融事件约在 262–264 °C，而最慢扫描下出现在 206–209 °C。原图的热重纵轴是残余质量，不是完整 DEX 的色谱含量；在分子发生反应、但产物尚未挥发时，质量可基本保留。拉曼与显微图确认起始粉末的谱学和形貌特征，也不能替代加工后杂质测定。\n\n这一实验没有聚合物、螺杆剪切或喷嘴停留过程。它揭示的是温度、时间与气氛如何改变纯药热分析读数，不能把最快扫描的起点转成打印机设定值。与实际挤出研究比较时，应保留“失重起点”和“色谱降解产物出现”这两种不同终点，而不是把文献数字平均成一个耐热阈值。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "色谱在较低温度已检出氧化产物，聚合物进一步改变结果",
+          "markdown": "Domsta 等对纯 DEX 进行 1 h 热应力试验，HPLC 在 170 °C 已测到主要氧化产物 OXO，峰面积比例为 0.2 ± 0.1 %A；到 200 °C 为 5.8 ± 0.5 %A。200 °C 维持 6 h 后 DEX 回收不足 1%，褐色残留也不能完全溶解，因此色谱只代表可提取部分。这里的 %A 是排除辅料峰后 DEX、OXO 与未知杂质之间的峰面积比例，并非相对投料的质量回收率；原图同时列出两者。[纯药应力与含药丝材色谱](ref:R02)\n\n含药量均为 10% 的配方在直径 12 mm、长径比 20:1 的双螺杆中加工，基础转速 10 rpm、喂料设定 2%。Eudragit RS100（EuRS）用 110–140 °C，乙基纤维素（EC）用 150–180 °C，PEO 混合物用 140–180 °C。后者为 PEO303/PEON10 = 70:30；190 和 200 °C 改用纯 PEO303，所以最高温组同时改变了聚合物组成。\n\n| 条件 | DEX 的峰面积比例 | 对照含义 |\n|---|---|---|\n| EuRS，140 °C | 98.8 ± 0.1 %A | 较低温区仍保留较高母药比例 |\n| PEO，170 °C，10 rpm | 79.0 ± 0.4 %A | 已明显低于纯药短时筛查所暗示的稳定性 |\n| PEO303，200 °C | 17.3 ± 1.3 %A | 不能只归因于升温，聚合物级别也改变 |\n\n相同 140 °C 下 PEO 比 EuRS 更易降解，150–180 °C 下也比 EC 严重。作者提出 PEO 自身热氧化及其产物、熔体黏度和剪切差异可能参与，但未知杂质没有完成结构鉴定。该实验止于热熔挤出丝材；再次经过打印喷嘴后的累积降解并未由这些数值直接测得。",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "提高输送速度和加入抗氧剂并不产生相同保护",
+          "markdown": "同一研究把螺杆从 10 提到 20 rpm 时，喂料也从 2% 提到 4%。PEO 在 170 °C 的 DEX 比例由 79.0 ± 0.4 增至 83.5 ± 0.6 %A，EuRS 与 EC 的差别很小。较短热停留可解释 PEO 的改善趋势，但实验同时改变输送量；没有独立停留时间分布，不能把结果归为螺杆速度的单因素作用，更不能忽略更强剪切可能带来的相反影响。[转速、喂料与添加剂对照](ref:R02)\n\n增塑剂试验在 EuRS 120 °C、EC 160 °C 各加入 5% 柠檬酸三乙酯（TEC）或 PEG6000；PEO 170 °C 则加入 2.5% 或 5% 维生素 E 或 BHT。固定加工温度下，DEX 比例范围分别为 99.97–100.00、96.9–98.5 和 76.3–81.0 %A，未显示抗氧剂能充分抑制 PEO 体系中的降解。EuRS 本来已接近完整保留，也几乎没有可供改善的空间。\n\n该设计检验的是添加剂在既定温度下的效果，未检验增塑后降低加工温度的收益。因此“加增塑剂没有改善”和“降温有利于稳定性”并不矛盾。颜色变黄、变褐可提示异常，但 EC 自身也会变色；仅凭外观既不能分清药物和载体的损伤，也不能量出母药剩余比例。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "光固化失败也可能源于混料时已发生的共价反应",
+          "markdown": "Xu 等用 405 nm SLA 打印包含厄贝沙坦、阿替洛尔、氢氯噻嗪及氨氯地平的分层制剂。基质采用 PEGDA/PEG300 = 35:65，光引发剂 TPO 为 1%，混料在室温持续 3 h；打印层厚 100 μm，首层扫描 10 次，其余 2 次。制品可以成形，但两种层序都未检出氨氯地平释放。[原料相容性与结构鉴定](ref:R03)\n\nFTIR 和 NMR 支持氨氯地平伯胺与 PEGDA 丙烯酸酯发生 Michael 加成。作者指出，此类反应可在物理混合时发生；因此不能把母药消失全部解释成 405 nm 直接光解，也不能假设减少曝光便能消除问题。这里改变的是药物化学结构，而不只是交联网络限制扩散；几何成功与低释放曲线不足以证明完整药物仍被包埋。",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "将药物与反应性相隔开，可改变同一次紫外固化的后果",
+          "markdown": "Zhang 等研究的是光交联复合薄膜，而非已打印口服片。其模型把 PEG-甲基丙烯酸酯、DEX 与 Irgacure 2959 溶于 THF，浓度分别为 2.0、0.20、0.17 mg/mL，氮气脱气 30 min，再以 15 mW/cm² 照射 100 s。GPC 中 DEX 约 18.9 min 的峰降低，聚合物峰由 17.9 移到 17.7 min 并增强；这组共同变化支持固化时发生偶联，但不能仅凭峰降低计算药物降解百分比或指定全部产物结构。[模型反应与保护相设计](ref:R04)\n\n研究先把淫羊藿素（icaritin）置于 PLA 纤维，再用 PTMC/碳酸丙烯酯溶液浸润：后续释放和 THF 提取均未检出母药。作者推测溶剂把药物带入反应性 PTMC 相。改为无溶剂热压后可重新检出释放，说明“药在纤维里”本身还不够，复合步骤是否使其迁移同样关键。\n\nDEX 保护方案采用相对 PLA 为 0.68% 或 2.42% 的载药纤维，分别记为 PLA 1 和 PLA 2。40 mg 纤维与 160 mg PTMC/I2959 在 60 °C 预热 5 min、25 bar 下压制，再以相同 15 mW/cm²、100 s 紫外固化。热压薄膜厚约 0.06 mm；载药比例以纤维为分母，不是整个复合体。这一相隔离实验同时保留了温和热步骤和紫外步骤，不能简化为完全避免热或完全避免光。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "检出母药释放之后，还需要独立观察其生物活性",
+          "markdown": "上述复合膜在 37 °C PBS 中按 1.0 mg 样品/1.0 mL 测定 5 周。原图纵轴是每日释放浓度而非累计百分比：PLA 2 从约 1.1 × 10⁻⁶ 降至 2.0 × 10⁻⁹ M/day，PTMC/PLA 2 从约 1.4 × 10⁻⁷ 降至 6.0 × 10⁻¹⁰ M/day。前 4 天，加入 PTMC 使高载药组外移减慢；低载药 PTMC/PLA 1 在最初 3 天反而比单独 PLA 1 更快，作者联系到部分纤维未被完全覆盖，说明保护相和释放屏障不是同一件事。[释放与细胞功能实验](ref:R04)\n\n人骨髓间充质干细胞来自 2 位供者，分别培养在载药膜、无药膜及 TCPS 上。OM− 含成骨辅助成分但不含 DEX，OM+ 另补 10 nM DEX，基础培养基 BM 为另一对照。每孔 200 μL，培养 28 天，每周换液 3 次；载药膜释放是 OM− 组唯一的 DEX 来源，因此比单测洗脱液吸收峰更直接地检验残存功能。\n\n第 14 和 21 天的 ALP 活性、第 21 和 28 天的钙沉积支持载药膜促进成骨分化；与 OM+ 阳性对照之间未见显著差异，并不等同于已做等效性检验。较高载量也没有在所有时点产生更强细胞增殖，ALP 随分化阶段可先升后降。化学鉴定、逐日释放和细胞反应在此构成互相补充的证据，但这些结果仍对应复合薄膜及体外细胞，未测定实际打印后的杂质谱或体内成骨疗效。",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Svoboda et al. — 原图 1：扫描条件改变 DEX 热分解读数。",
+          "interpretation": "A、B 分别为氮气和空气中的剩余质量–温度曲线，快扫描整体向右移；C 选取速率作气氛对照，D 叠加差热信号并使用右轴，不能与质量百分比混读。E 为起始药物拉曼谱，F 为带 20 μm 标尺的粉末显微图。失重曲线不是色谱纯度，右移也不是在挤出机中实际测得的稳定性提升。[原始热分析](ref:R01)"
+        },
+        "F02": {
+          "caption": "Domsta et al. — 原图 3：纯 DEX 的含量回收与杂质峰面积分开显示。",
+          "interpretation": "横轴依次为未受热、100–200 °C 的 1 h 应力和 200 °C 的 6 h 应力。浅灰柱是相对投料的 DEX 回收，深色为 DEX 的 %A，橙色 OXO、黄色未知杂质也用 %A；不同分母使两类 DEX 柱不必相同。最高强度应力下回收接近消失而杂质比例升高，且不溶残渣不进入色谱定量。[应力实验](ref:R02)"
+        },
+        "F03": {
+          "caption": "Domsta et al. — 原图 4：相同药物的降解依赖载体及温度。",
+          "interpretation": "A、B、C 分别是 EuRS、EC、PEO；浅柱表示回收，深柱表示 DEX 的 %A。EC 与 PEO 随温度上升母药减少、橙色 OXO 增加，PEO 的黄色未知杂质也明显增加。A 与 C 的 140 °C 可直接观察载体差异；C 的 190、200 °C 同时改为纯 PEO303，不能把整条序列作为单一配方的温度梯度。[丝材色谱](ref:R02)"
+        },
+        "F04": {
+          "caption": "Domsta et al. — 原图 6：固定温度下添加剂未消除 PEO 中的降解。",
+          "interpretation": "蓝、青、绿对应 EuRS 120 °C、EC 160 °C、PEO 170 °C，各自与同温无添加剂组比较。TEC、PEG 是增塑剂；Vit E、BHT 为 2.5% 或 5% 抗氧剂。绿色组仍保留橙色和黄色杂质柱；不能把不同载体不同温度的柱直接排成添加剂优劣，更不能由此判断增塑后降温是否有效。[添加剂对照](ref:R02)"
+        },
+        "F05": {
+          "caption": "Zhang et al. — 原图 4：紫外前后 GPC 峰的协同变化支持偶联。",
+          "interpretation": "A 给出 DEX 在约 18.9 min 的 RI 峰；B 黑线为固化前、红线为固化后。红线药物峰降低，较早洗脱的聚合物宽峰增强并左移。纵轴为 RI 响应而不是药物浓度百分比；这是 PEG-甲基丙烯酸酯溶液模型，不能直接当作受 PLA 保护薄膜的残药定量。[反应模型](ref:R04)"
+        },
+        "F06": {
+          "caption": "Zhang et al. — 原图 7：保护复合体仍能持续释放可检测 DEX。",
+          "interpretation": "横轴为天，纵轴是每 1 mg 样品每日释放浓度的对数刻度，并非累计量。方点为 PLA 纤维，圆点为 PTMC/PLA 复合体；实心对应高载量 2，空心为低载量 1。高载量复合体早期低于单独纤维，但低载量组最初呈相反关系，符合局部包覆不完整的解释；持续检出母药与细胞活性验证仍是独立证据。[逐日释放](ref:R04)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do printing heat and light affect drug stability?",
+      "direction": "Print quality and stability",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "The thermogravimetric onset shifts with heating rate and does not define a processing ceiling",
+          "markdown": "Svoboda and colleagues studied 99.7%-pure dexamethasone (DEX), using 4–6 mg samples heated from 30 to 550 °C at 0.1–20 °C/min in nitrogen or air, both flowing at 50 mL/min. Faster heating shifted mass-loss onset from 183 to 264 °C in nitrogen and from 188 to 260 °C in air. The same powder therefore yields widely different decomposition temperatures. A rapid scan leaves less time near each temperature; its higher onset does not establish safety during prolonged processing. [Heating-rate and atmosphere comparisons](ref:R01)\n\nPrior decomposition also altered differential thermal analysis: melting occurred around 262–264 °C at 10 °C/min but at 206–209 °C in the slowest scan. The thermogravimetric ordinate measures remaining mass, not chromatographically intact DEX. Molecular reactions can leave mass largely unchanged while products remain nonvolatile. Raman and microscopy characterize the starting powder, rather than replacing post-process impurity measurements.\n\nThe experiment contained no polymer, screw shear or nozzle residence. It establishes how temperature, time and atmosphere change pure-drug thermal measurements; the fastest-scan onset cannot become a printer setpoint. Comparison with extrusion must retain the distinction between mass-loss onset and chromatographic detection of degradation products, rather than averaging reported temperatures into a heat-tolerance threshold.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Chromatography detects oxidation at lower temperatures, with additional polymer effects",
+          "markdown": "Domsta and colleagues heated pure DEX for 1 h. HPLC already detected the main oxidation product OXO at 170 °C, accounting for 0.2 ± 0.1 %A, rising to 5.8 ± 0.5 %A at 200 °C. After 6 h at 200 °C, DEX recovery was below 1%; brown residue was not fully soluble, so chromatography represented only the extractable fraction. %A denotes peak-area fractions among DEX, OXO and unknown impurities after excluding excipient peaks, not mass recovery relative to input. The original graphs show both measures. [Pure-drug stress and drug-loaded filament chromatography](ref:R02)\n\nAll formulations contained 10% drug and were processed in a 12 mm twin-screw extruder with a 20:1 length/diameter ratio, initially at 10 rpm and a 2% feed setting. Eudragit RS100 (EuRS) used 110–140 °C, ethyl cellulose (EC) 150–180 °C, and a PEO blend 140–180 °C. The blend was PEO303/PEON10 = 70:30; pure PEO303 replaced it at 190 and 200 °C. The highest-temperature groups thus also changed polymer composition.\n\n| Condition | DEX peak-area fraction | Interpretation |\n|---|---|---|\n| EuRS, 140 °C | 98.8 ± 0.1 %A | High parent-drug fraction retained in the lower temperature range |\n| PEO, 170 °C, 10 rpm | 79.0 ± 0.4 %A | Substantially less stability than short pure-drug screening might suggest |\n| PEO303, 200 °C | 17.3 ± 1.3 %A | Temperature alone cannot explain a comparison also changing polymer grade |\n\nAt the same 140 °C, PEO caused more degradation than EuRS, and at 150–180 °C more than EC. The authors discuss PEO thermal oxidation and its products, melt viscosity and shear as possible contributors; unknown impurities were not structurally identified. These measurements end at hot-melt-extruded filament. They do not directly measure cumulative damage after another passage through a printing nozzle.",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Faster conveyance and antioxidant addition do not provide equivalent protection",
+          "markdown": "When screw speed increased from 10 to 20 rpm, feed also rose from 2% to 4%. At 170 °C, DEX in PEO increased from 79.0 ± 0.4 to 83.5 ± 0.6 %A, whereas EuRS and EC changed little. Shorter thermal residence could explain the PEO trend, but throughput changed simultaneously. Without a separately measured residence-time distribution, this is not an isolated screw-speed effect; stronger shear could act in the opposite direction. [Speed, feed and additive comparisons](ref:R02)\n\nPlasticizer experiments added 5% triethyl citrate (TEC) or PEG6000 to EuRS at 120 °C and EC at 160 °C. PEO at 170 °C received 2.5% or 5% vitamin E or BHT. At fixed processing temperatures, DEX fractions ranged from 99.97–100.00, 96.9–98.5 and 76.3–81.0 %A, respectively. Antioxidants did not adequately suppress degradation in PEO. EuRS already retained almost all parent drug, leaving little room for improvement.\n\nThe design tests additives at an existing temperature, not the benefit of lowering temperature after plasticization. Failure of a plasticizer to improve these measurements therefore does not contradict protection by lower processing temperatures. Yellowing or browning can signal instability, but EC itself also discolors. Appearance alone neither separates drug damage from carrier damage nor quantifies remaining parent drug.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Photocuring failure can originate in covalent reactions already possible during mixing",
+          "markdown": "Xu and colleagues used 405 nm SLA to print layered irbesartan, atenolol, hydrochlorothiazide and amlodipine formulations. The matrix used PEGDA/PEG300 = 35:65 and 1% TPO, mixed for 3 h at room temperature. Layer thickness was 100 μm, with 10 laser passes for the first layer and 2 thereafter. Objects formed successfully, yet neither layer arrangement released detectable amlodipine. [Compatibility and structural identification](ref:R03)\n\nFTIR and NMR support Michael addition between amlodipine's primary amine and PEGDA acrylate. Such chemistry can occur during physical mixing. Loss of parent drug therefore cannot all be assigned to direct 405 nm photolysis, nor assumed removable by shorter exposure. Chemical structure changed; restricted diffusion alone cannot explain the result. Successful geometry and low release do not demonstrate retention of intact encapsulated drug.",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "Separating drug from the reactive phase changes the consequences of the same UV cure",
+          "markdown": "Zhang and colleagues studied photocrosslinked composite films, not printed oral tablets. A model dissolved PEG-methacrylate, DEX and Irgacure 2959 in THF at 2.0, 0.20 and 0.17 mg/mL, respectively, degassed with nitrogen for 30 min, then irradiated at 15 mW/cm² for 100 s. In GPC, the DEX peak near 18.9 min decreased while the polymer peak shifted from 17.9 to 17.7 min and intensified. Together these changes support coupling during curing, but peak loss alone does not yield a drug-degradation percentage or identify every product. [Model reaction and protective-phase design](ref:R04)\n\nInitially, icaritin-loaded PLA fibers were infiltrated with PTMC/propylene carbonate solution. Neither subsequent release nor THF extraction recovered parent drug. The authors propose solvent-mediated transfer into reactive PTMC. Switching to solvent-free hot pressing restored detectable release. Merely placing drug in fibers was insufficient: migration during composite preparation also mattered.\n\nThe DEX protection approach loaded fibers at 0.68% or 2.42% relative to PLA, designated PLA 1 and PLA 2. A 40 mg fiber mat and 160 mg PTMC/I2959 were preheated at 60 °C for 5 min, pressed at 25 bar, and UV-cured at the same 15 mW/cm² for 100 s. Film thickness was approximately 0.06 mm. Loading percentages refer to fibers, not the entire composite. Phase separation retained both a mild thermal step and UV curing; it did not eliminate all heat or all light exposure.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Release of detectable parent drug is followed by an independent test of biological activity",
+          "markdown": "The composite films were tested for 5 weeks in PBS at 37 °C, using 1.0 mg sample per 1.0 mL. The graph shows daily released concentration, not cumulative percentage: PLA 2 decreased from approximately 1.1 × 10⁻⁶ to 2.0 × 10⁻⁹ M/day, and PTMC/PLA 2 from approximately 1.4 × 10⁻⁷ to 6.0 × 10⁻¹⁰ M/day. Adding PTMC slowed release from the high-loading group during the first 4 days. Conversely, low-loading PTMC/PLA 1 released faster than PLA 1 alone during the first 3 days, attributed to incomplete coverage of some fibers. A protective phase and a release barrier are not identical functions. [Release and cellular-function experiments](ref:R04)\n\nHuman bone marrow mesenchymal stem cells from 2 donors were cultured separately on loaded films, drug-free films and TCPS. OM− contained osteogenic supplements without DEX; OM+ additionally contained 10 nM DEX, with basal medium BM as another control. Each well contained 200 μL, with medium changed 3 times weekly over 28 days. Release from loaded films was the only DEX source in OM−, providing a functional test beyond an absorbance peak in an eluate.\n\nALP activity on days 14 and 21 and calcium deposition on days 21 and 28 supported osteogenic differentiation on loaded films. No significant difference from the OM+ positive control was found; this is not an equivalence test. Higher loading did not produce greater proliferation at every time point, and ALP can rise then fall as differentiation proceeds. Chemical identification, daily release and cell response provide complementary evidence, but concern composite films and cultured cells, without a post-printing impurity profile or in-vivo bone-regeneration outcome.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Svoboda et al. — Original Figure 1: scan conditions change DEX thermal readings.",
+          "interpretation": "A and B plot remaining mass against temperature in nitrogen and air; faster scans shift right. C compares selected rates across atmospheres. D overlays differential thermal signals on a right axis, distinct from mass percentage. E is the starting-drug Raman spectrum; F shows powder with a 20 μm scale bar. Mass loss is not chromatographic purity, and a rightward shift is not improved stability measured in an extruder. [Original thermal analysis](ref:R01)"
+        },
+        "F02": {
+          "caption": "Domsta et al. — Original Figure 3: DEX recovery and impurity peak areas are separate measures.",
+          "interpretation": "The x-axis runs from unstressed drug through 1 h at 100–200 °C to 6 h at 200 °C. Light gray is DEX recovery relative to input; dark bars show DEX %A, while orange OXO and yellow unknown impurities also use %A. Different denominators explain differing DEX bars. Under the strongest stress, recovery nearly disappears while impurity fractions rise; insoluble residue is excluded from chromatographic quantification. [Stress experiment](ref:R02)"
+        },
+        "F03": {
+          "caption": "Domsta et al. — Original Figure 4: degradation depends on carrier and temperature.",
+          "interpretation": "A, B and C show EuRS, EC and PEO. Pale bars are recovery; dark bars are DEX %A. With rising temperature, EC and PEO lose parent drug and gain orange OXO, while yellow unknown impurities also increase markedly in PEO. A and C permit a carrier comparison at 140 °C. At 190 and 200 °C, C also switches to pure PEO303; its whole sequence is not a temperature gradient for one unchanged formulation. [Filament chromatography](ref:R02)"
+        },
+        "F04": {
+          "caption": "Domsta et al. — Original Figure 6: additives at fixed temperature do not eliminate PEO degradation.",
+          "interpretation": "Blue, turquoise and green represent EuRS at 120 °C, EC at 160 °C and PEO at 170 °C, each compared with its additive-free counterpart at the same temperature. TEC and PEG are plasticizers; Vit E and BHT are antioxidants at 2.5% or 5%. Green groups retain orange and yellow impurity bars. Different carriers and temperatures cannot rank additive performance directly or establish whether plasticization-enabled cooling would help. [Additive comparison](ref:R02)"
+        },
+        "F05": {
+          "caption": "Zhang et al. — Original Figure 4: coordinated GPC changes after UV support coupling.",
+          "interpretation": "A locates the DEX RI peak near 18.9 min. In B, black precedes curing and red follows it. The red drug peak falls as the earlier broad polymer peak intensifies and shifts left. The ordinate is RI response, not drug concentration percentage. This PEG-methacrylate solution model does not directly quantify residual drug in PLA-protected films. [Reaction model](ref:R04)"
+        },
+        "F06": {
+          "caption": "Zhang et al. — Original Figure 7: protective composites still release detectable DEX over time.",
+          "interpretation": "The x-axis is days; the logarithmic y-axis is daily released concentration per 1 mg sample, not cumulative amount. Squares represent PLA fibers and circles PTMC/PLA composites; filled symbols indicate high loading 2 and open symbols low loading 1. High-loading composites initially release less than free fibers, whereas low-loading groups initially reverse that relationship, consistent with incomplete local coverage. Parent-drug detection and cellular activity remain separate evidence. [Daily release](ref:R04)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie beeinflussen Druckwärme und Licht die Wirkstoffstabilität?",
+      "direction": "Druckqualität und Stabilität",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Der thermogravimetrische Beginn verschiebt sich mit der Heizrate und definiert keine Verarbeitungshöchsttemperatur",
+          "markdown": "Svoboda und Kollegen untersuchten Dexamethason (DEX) mit 99.7% Reinheit. Proben von 4–6 mg wurden mit 0.1–20 °C/min von 30 auf 550 °C erhitzt, unter Stickstoff oder Luft mit jeweils 50 mL/min Gasfluss. Schnellere Erwärmung verschob den Beginn des Masseverlusts unter Stickstoff von 183 auf 264 °C und unter Luft von 188 auf 260 °C. Dasselbe Pulver ergibt somit stark unterschiedliche Zersetzungstemperaturen. Bei schnellem Aufheizen verweilt es kürzer nahe jeder Temperatur; der höhere Beginn belegt keine Sicherheit bei längerer Verarbeitung. [Heizrate und Atmosphäre](ref:R01)\n\nVorausgehende Zersetzung veränderte auch die Differenzthermoanalyse: Bei 10 °C/min lag das Schmelzereignis um 262–264 °C, bei der langsamsten Messung hingegen bei 206–209 °C. Die thermogravimetrische Ordinate zeigt Restmasse, nicht chromatographisch intaktes DEX. Molekulare Reaktionen können die Masse weitgehend erhalten, solange Produkte nicht verdampfen. Raman-Spektrum und Mikroskopie charakterisieren das Ausgangspulver und ersetzen keine Verunreinigungsanalyse nach Verarbeitung.\n\nDer Versuch enthielt weder Polymer noch Schneckenscherung oder Düsenverweilzeit. Er zeigt den Einfluss von Temperatur, Zeit und Atmosphäre auf thermische Messwerte des reinen Wirkstoffs; der Beginn beim schnellsten Heizlauf ist kein Druckersollwert. Beim Vergleich mit Extrusion müssen Masseverlustbeginn und chromatographischer Nachweis von Abbauprodukten getrennte Endpunkte bleiben, statt Literaturtemperaturen zu einer Hitzebeständigkeitsgrenze zu mitteln.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Die Chromatographie erkennt Oxidation bei niedrigeren Temperaturen; Polymere verändern sie zusätzlich",
+          "markdown": "Domsta und Kollegen erhitzten reines DEX für 1 h. Bereits bei 170 °C zeigte HPLC das hauptsächliche Oxidationsprodukt OXO mit 0.2 ± 0.1 %A; bei 200 °C waren es 5.8 ± 0.5 %A. Nach 6 h bei 200 °C lag die DEX-Wiederfindung unter 1%. Der braune Rückstand war nicht vollständig löslich, sodass die Chromatographie nur den extrahierbaren Anteil erfasste. %A bezeichnet Flächenanteile der Peaks von DEX, OXO und unbekannten Verunreinigungen nach Ausschluss der Hilfsstoffpeaks, nicht die Massenwiederfindung bezogen auf die Einwaage. Die Originalgrafiken zeigen beide Größen. [Reinstoffbelastung und Filamentchromatographie](ref:R02)\n\nAlle Formulierungen enthielten 10% Wirkstoff und wurden in einem 12-mm-Doppelschneckenextruder mit einem Länge/Durchmesser-Verhältnis von 20:1 verarbeitet, zunächst bei 10 rpm und 2% Zufuhreinstellung. Eudragit RS100 (EuRS) wurde bei 110–140 °C, Ethylcellulose (EC) bei 150–180 °C und eine PEO-Mischung bei 140–180 °C verarbeitet. Diese bestand aus PEO303/PEON10 = 70:30; bei 190 und 200 °C wurde reines PEO303 eingesetzt. Die höchsten Temperaturgruppen änderten damit auch die Polymerzusammensetzung.\n\n| Bedingung | DEX-Peakflächenanteil | Bedeutung |\n|---|---|---|\n| EuRS, 140 °C | 98.8 ± 0.1 %A | Hoher Anteil des unveränderten Wirkstoffs im niedrigeren Temperaturbereich |\n| PEO, 170 °C, 10 rpm | 79.0 ± 0.4 %A | Deutlich geringere Stabilität, als kurze Reinstoffprüfung nahelegen könnte |\n| PEO303, 200 °C | 17.3 ± 1.3 %A | Neben der Temperatur wurde auch die Polymersorte geändert |\n\nBei gleichen 140 °C war der Abbau in PEO stärker als in EuRS, bei 150–180 °C stärker als in EC. Die Autoren diskutieren thermische Oxidation von PEO und dessen Produkte, Schmelzviskosität sowie Scherung als mögliche Ursachen; unbekannte Verunreinigungen wurden nicht strukturell identifiziert. Gemessen wurden nur schmelzextrudierte Filamente. Zusätzlicher kumulativer Abbau beim erneuten Durchlaufen einer Druckdüse wurde damit nicht direkt erfasst.",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Schnellerer Transport und Antioxidantien bieten nicht denselben Schutz",
+          "markdown": "Bei Erhöhung der Schneckendrehzahl von 10 auf 20 rpm stieg zugleich die Zufuhreinstellung von 2% auf 4%. Bei 170 °C erhöhte sich DEX in PEO von 79.0 ± 0.4 auf 83.5 ± 0.6 %A; EuRS und EC änderten sich wenig. Kürzere thermische Verweilzeit könnte den PEO-Trend erklären, doch der Durchsatz änderte sich gleichzeitig. Ohne separat gemessene Verweilzeitverteilung ist dies kein isolierter Drehzahleffekt; stärkere Scherung könnte entgegengesetzt wirken. [Drehzahl, Zufuhr und Zusätze](ref:R02)\n\nWeichmacherversuche ergänzten 5% Triethylcitrat (TEC) oder PEG6000 zu EuRS bei 120 °C und EC bei 160 °C. PEO erhielt bei 170 °C jeweils 2.5% oder 5% Vitamin E oder BHT. Bei festen Verarbeitungstemperaturen lagen die DEX-Anteile bei 99.97–100.00, 96.9–98.5 beziehungsweise 76.3–81.0 %A. Antioxidantien unterdrückten den Abbau in PEO nicht ausreichend. EuRS enthielt bereits nahezu vollständig unveränderten Wirkstoff und bot wenig Verbesserungsspielraum.\n\nDieses Design prüft Zusätze bei einer bestehenden Temperatur, nicht den Nutzen einer durch Weichmacher ermöglichten Temperatursenkung. Fehlende Verbesserung durch Weichmacher widerspricht daher nicht dem Schutz durch kühlere Verarbeitung. Gelb- oder Braunfärbung kann Instabilität anzeigen, doch EC selbst verfärbt sich ebenfalls. Das Aussehen trennt weder Wirkstoff- von Trägerschäden noch quantifiziert es den verbleibenden unveränderten Wirkstoff.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Probleme bei der Lichthärtung können aus bereits beim Mischen möglichen kovalenten Reaktionen entstehen",
+          "markdown": "Xu und Kollegen druckten mit 405-nm-SLA geschichtete Formulierungen aus Irbesartan, Atenolol, Hydrochlorothiazid und Amlodipin. Die Matrix enthielt PEGDA/PEG300 = 35:65 und 1% TPO; sie wurde 3 h bei Raumtemperatur gemischt. Die Schichtdicke betrug 100 μm, mit 10 Laserdurchläufen für die erste und 2 für folgende Schichten. Die Objekte entstanden, aber keine der beiden Schichtanordnungen setzte nachweisbares Amlodipin frei. [Kompatibilität und Strukturidentifizierung](ref:R03)\n\nFTIR und NMR stützen eine Michael-Addition zwischen der primären Aminogruppe von Amlodipin und PEGDA-Acrylat. Diese Reaktion ist schon beim physikalischen Mischen möglich. Der Wirkstoffverlust lässt sich deshalb nicht vollständig direkter 405-nm-Photolyse zuschreiben oder allein durch kürzere Belichtung vermeiden. Verändert wurde die chemische Struktur; Diffusionshemmung allein erklärt den Befund nicht. Erfolgreiche Geometrie und geringe Freisetzung belegen keinen intakt eingeschlossenen Wirkstoff.",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "Die Trennung von Wirkstoff und reaktiver Phase verändert die Folgen derselben UV-Härtung",
+          "markdown": "Zhang und Kollegen untersuchten photovernetzte Verbundfilme, keine gedruckten oralen Tabletten. Im Modell wurden PEG-Methacrylat, DEX und Irgacure 2959 mit 2.0, 0.20 und 0.17 mg/mL in THF gelöst, 30 min mit Stickstoff entgast und bei 15 mW/cm² für 100 s bestrahlt. In der GPC nahm der DEX-Peak um 18.9 min ab; der Polymerpeak verschob sich von 17.9 auf 17.7 min und wurde stärker. Gemeinsam stützen diese Veränderungen eine Kopplung während der Härtung. Der Peakverlust allein liefert aber weder einen prozentualen Wirkstoffabbau noch die Struktur sämtlicher Produkte. [Modellreaktion und schützende Phase](ref:R04)\n\nZunächst wurden Icaritin-beladene PLA-Fasern mit PTMC/Propylencarbonat-Lösung infiltriert. Weder spätere Freisetzung noch THF-Extraktion ergaben nachweisbaren Ausgangswirkstoff. Die Autoren vermuten einen lösungsmittelvermittelten Übergang in reaktives PTMC. Nach Umstellung auf lösungsmittelfreies Heißpressen war Freisetzung wieder nachweisbar. Einbettung in Fasern allein genügte nicht; auch Migration bei der Verbundherstellung war entscheidend.\n\nZum Schutz von DEX wurden Fasern mit 0.68% oder 2.42% bezogen auf PLA beladen, bezeichnet als PLA 1 und PLA 2. Eine Fasermatte von 40 mg und 160 mg PTMC/I2959 wurden bei 60 °C für 5 min vorgewärmt, unter 25 bar gepresst und mit denselben 15 mW/cm² für 100 s UV-gehärtet. Die Filmdicke betrug ungefähr 0.06 mm. Die Beladungsanteile beziehen sich auf Fasern, nicht den gesamten Verbund. Phasentrennung behielt einen milden thermischen Schritt und UV-Härtung bei; weder Wärme noch Licht wurden vollständig vermieden.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Auf den Nachweis freigesetzten Wirkstoffs folgt eine unabhängige Prüfung biologischer Aktivität",
+          "markdown": "Die Verbundfilme wurden bei 37 °C in PBS für 5 Wochen mit 1.0 mg Probe je 1.0 mL untersucht. Die Grafik zeigt täglich freigesetzte Konzentration statt kumulativer Prozentwerte: PLA 2 fiel von ungefähr 1.1 × 10⁻⁶ auf 2.0 × 10⁻⁹ M/day, PTMC/PLA 2 von ungefähr 1.4 × 10⁻⁷ auf 6.0 × 10⁻¹⁰ M/day. PTMC verlangsamte die Abgabe der hoch beladenen Gruppe in den ersten 4 Tagen. Niedrig beladenes PTMC/PLA 1 setzte dagegen in den ersten 3 Tagen schneller frei als PLA 1 allein, was die Autoren mit unvollständiger Abdeckung einzelner Fasern erklären. Schutzphase und Freisetzungsbarriere sind unterschiedliche Funktionen. [Freisetzung und Zellfunktion](ref:R04)\n\nHumane mesenchymale Knochenmarkstammzellen von 2 Spendern wurden getrennt auf beladenen und unbeladenen Filmen sowie TCPS kultiviert. OM− enthielt osteogene Zusätze ohne DEX, OM+ zusätzlich 10 nM DEX; Basalmedium BM bildete eine weitere Kontrolle. Jede Vertiefung enthielt 200 μL; über 28 Tage wurde das Medium 3-mal wöchentlich gewechselt. In OM− war der beladene Film die einzige DEX-Quelle und ermöglichte somit einen Funktionstest über einen Absorptionspeak im Eluat hinaus.\n\nALP-Aktivität an den Tagen 14 und 21 sowie Calciumablagerung an den Tagen 21 und 28 stützten osteogene Differenzierung auf beladenen Filmen. Gegenüber der positiven OM+-Kontrolle bestand kein signifikanter Unterschied; dies ist kein Äquivalenztest. Höhere Beladung erzeugte nicht zu jedem Zeitpunkt stärkere Proliferation; ALP kann im Verlauf der Differenzierung zunächst steigen und dann sinken. Chemische Identifizierung, tägliche Freisetzung und Zellantwort ergänzen einander, betreffen jedoch Verbundfilme und kultivierte Zellen, ohne Verunreinigungsprofil nach tatsächlichem Druck oder In-vivo-Nachweis einer Knochenregeneration.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Svoboda et al. — Originalabbildung 1: Messbedingungen verändern thermische DEX-Befunde.",
+          "interpretation": "A und B zeigen Restmasse gegen Temperatur unter Stickstoff und Luft; schnellere Messläufe verschieben sich nach rechts. C vergleicht ausgewählte Heizraten zwischen Atmosphären. D überlagert differenzthermische Signale mit rechter Achse, getrennt vom Massenanteil. E zeigt das Raman-Spektrum des Ausgangswirkstoffs, F Pulver mit 20-μm-Maßstab. Masseverlust ist keine chromatographische Reinheit; Rechtsverschiebung ist keine im Extruder gemessene Stabilitätsverbesserung. [Thermische Originalmessungen](ref:R01)"
+        },
+        "F02": {
+          "caption": "Domsta et al. — Originalabbildung 3: DEX-Wiederfindung und Verunreinigungsflächen sind getrennte Größen.",
+          "interpretation": "Die x-Achse reicht von unbelastetem Wirkstoff über 1 h bei 100–200 °C bis 6 h bei 200 °C. Hellgrau zeigt DEX-Wiederfindung bezogen auf die Einwaage; dunkle Balken zeigen DEX-%A, orange OXO und gelbe unbekannte Verunreinigungen ebenfalls %A. Unterschiedliche Bezugsgrößen erklären unterschiedliche DEX-Balken. Unter stärkster Belastung verschwindet die Wiederfindung nahezu, während Verunreinigungsanteile steigen; unlöslicher Rückstand bleibt außerhalb der chromatographischen Quantifizierung. [Belastungsversuch](ref:R02)"
+        },
+        "F03": {
+          "caption": "Domsta et al. — Originalabbildung 4: Abbau hängt von Träger und Temperatur ab.",
+          "interpretation": "A, B und C zeigen EuRS, EC und PEO. Helle Balken sind Wiederfindung, dunkle DEX-%A. Mit steigender Temperatur verlieren EC und PEO Ausgangswirkstoff und bilden mehr orangefarbenes OXO; in PEO nehmen auch gelbe unbekannte Verunreinigungen deutlich zu. A und C erlauben einen Trägervergleich bei 140 °C. Bei 190 und 200 °C wechselt C zugleich zu reinem PEO303; die gesamte Reihe ist kein Temperaturgradient einer unveränderten Formulierung. [Filamentchromatographie](ref:R02)"
+        },
+        "F04": {
+          "caption": "Domsta et al. — Originalabbildung 6: Zusätze bei fester Temperatur beseitigen PEO-Abbau nicht.",
+          "interpretation": "Blau, Türkis und Grün stehen für EuRS bei 120 °C, EC bei 160 °C und PEO bei 170 °C, jeweils verglichen mit der zusatzfreien Probe gleicher Temperatur. TEC und PEG sind Weichmacher; Vit E und BHT Antioxidantien mit 2.5% oder 5%. Grüne Gruppen behalten orange und gelbe Verunreinigungsbalken. Unterschiedliche Träger und Temperaturen erlauben weder eine direkte Rangfolge der Zusätze noch eine Aussage zum Nutzen weichmacherbedingt niedrigerer Temperatur. [Zusatzvergleich](ref:R02)"
+        },
+        "F05": {
+          "caption": "Zhang et al. — Originalabbildung 4: Gemeinsame GPC-Veränderungen nach UV stützen eine Kopplung.",
+          "interpretation": "A lokalisiert den DEX-RI-Peak um 18.9 min. In B bedeutet Schwarz vor und Rot nach der Härtung. Der rote Wirkstoffpeak sinkt, während der frühere breite Polymerpeak stärker wird und nach links wandert. Die Ordinate zeigt RI-Antwort statt prozentualer Wirkstoffkonzentration. Das PEG-Methacrylat-Lösungsmodell quantifiziert nicht direkt Restwirkstoff in PLA-geschützten Filmen. [Reaktionsmodell](ref:R04)"
+        },
+        "F06": {
+          "caption": "Zhang et al. — Originalabbildung 7: Schützende Verbunde setzen weiterhin nachweisbares DEX frei.",
+          "interpretation": "Die x-Achse zeigt Tage, die logarithmische y-Achse täglich freigesetzte Konzentration je 1 mg Probe statt kumulativer Menge. Quadrate markieren PLA-Fasern, Kreise PTMC/PLA-Verbunde; gefüllte Symbole stehen für hohe Beladung 2, offene für niedrige Beladung 1. Hoch beladene Verbunde setzen anfangs weniger frei als freie Fasern; bei niedriger Beladung ist die frühe Beziehung umgekehrt, vereinbar mit örtlich unvollständiger Abdeckung. Wirkstoffnachweis und Zellaktivität bleiben getrennte Belege. [Tägliche Freisetzung](ref:R04)"
+        }
+      }
+    }
+  }
+}

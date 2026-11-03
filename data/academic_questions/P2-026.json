@@ -1,0 +1,354 @@
+{
+  "schema_version": 2,
+  "question_id": "P2-026",
+  "p": "P2",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-04",
+  "related_paper_ids": [
+    "KB20269B844165F191",
+    "doc_b1ee3d0237eb38457fb9",
+    "doc_17592e881892e7142292",
+    "doc_c3099b07482c464a57ae"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Effect of sandblasting on Shear Bond Strength of 3D Printed Denture Base to conventional and Milled Denture Teeth",
+      "publisher": "BMC Oral Health",
+      "year": 2026,
+      "url": "https://doi.org/10.1186/s12903-026-08672-1",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Effect of denture tooth manufacturing and adhesive materials on bond strength of 3D-printed denture base",
+      "publisher": "Journal of Clinical and Experimental Dentistry",
+      "year": 2026,
+      "url": "https://doi.org/10.4317/jced.63377",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Evaluating the effect of surface treatments and adhesive systems on shear bond strength and microleakage in 3D permanent resin denture bases",
+      "publisher": "BMC Oral Health",
+      "year": 2025,
+      "url": "https://doi.org/10.1186/s12903-025-06174-0",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "The effect of gastric acid on the bonding of 3D printed and CAD/CAM denture acrylics to denture teeth",
+      "publisher": "Scientific Reports",
+      "year": 2025,
+      "url": "https://doi.org/10.1038/s41598-025-00542-0",
+      "kind": "paper"
+    },
+    {
+      "id": "R05",
+      "title": "In vitro bonding strength of denture teeth to denture base in CAD/CAM-milled, 3D-printed and conventional manufacturing processes",
+      "publisher": "Clinical Oral Investigations",
+      "year": 2025,
+      "url": "https://doi.org/10.1007/s00784-024-06099-y",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 5",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13263952/#Fig5",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P2-026/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R02",
+      "original_label": "Figure 4",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12916041/#F4",
+      "license": "CC BY 2.5",
+      "asset_path": "assets/academic_figures/P2-026/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R03",
+      "original_label": "Figure 4",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12102799/#Fig4",
+      "license": "CC BY-NC-ND 4.0",
+      "asset_path": "assets/academic_figures/P2-026/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R04",
+      "original_label": "Figure 2",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12075461/#Fig2",
+      "license": "CC BY-NC-ND 4.0",
+      "asset_path": "assets/academic_figures/P2-026/F04.jpg"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R05",
+      "original_label": "Figure 3",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11624253/#Fig3",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P2-026/F05.jpg"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R05",
+      "original_label": "Figure 4",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11624253/#Fig4",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P2-026/F06.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "人工牙与基托的粘接强度如何提升？",
+      "direction": "义齿连接与一体化",
+      "sections": [
+        {
+          "id": "abrasion_particle_size",
+          "title": "粗颗粒喷砂提高初始强度，但并未测试老化后的保持",
+          "markdown": "Hleeba 等比较预制丙烯酸牙与铣削PMMA牙，各自分为未喷砂、50 μm和250 μm氧化铝喷砂，每格8件。喷射10 s、距离10 mm、垂直牙的组织面；基托为Ultra Resin x-denture，以0°方向打印，99% IPA浸洗10 min、光固化15 min。所有牙–基托界面均使用Visio.link处理并固化90 s，再以combo.lign填充牙槽、最终固化180 s，因此对照并不是“完全不使用粘接剂”。[喷砂粒径实验](ref:R01)\n\n| 人工牙 | 未喷砂，MPa | 50 μm，MPa | 250 μm，MPa |\n|---|---:|---:|---:|\n| 预制PMMA | 0.890±0.035 | 1.163±0.022 | 1.381±0.034 |\n| 铣削PMMA | 1.072±0.017 | 1.296±0.029 | 1.514±0.029 |\n\n两种牙材内部的各粒径比较均显著，铣削牙在每个表面条件下也较高。不过试验没有热循环或长期储水；可支持的是该粘接系统的初始强度，而不是250 μm能保证最长使用寿命。喷砂压力没有明确报告，单凭粒径还不足以复现表面受到的能量。\n\n研究把切端加载破坏力除以数字测得的40.866 mm²界面面积，得到名义剪切强度。力作用在牙冠而非均匀分布于整个界面，因此数值还受力臂、牙形和夹持影响。未喷砂预制牙全部为粘附破坏，250 μm组两种牙均为混合破坏，说明裂纹路径改变；没有出现纯内聚破坏，不能宣称界面已经强于全部周围材料。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "adhesive_material_interaction",
+          "title": "牙材与粘接剂存在交互，不能独立排列优劣",
+          "markdown": "Saengthongpinij 等保持NextDent Denture 3D+打印基托不变，比较NextDent C&B MFH打印牙与Upcera铣削PMMA牙，分别用基托打印树脂（ND）、Super-bond（SUP）或Unifast Trad（UNI）粘接，每格8件。基托为20 mm直径和高度、牙槽深1 mm，90°打印；99% IPA超声5 min后，于60°C后固化30 min。粘接后在37°C水中放置24 h，以0.5 mm/min加载，接触点在切缘向龈侧3 mm处。[牙材与粘接剂析因实验](ref:R02)\n\n| 粘接材料 | 打印牙破坏力，N | 铣削牙破坏力，N |\n|---|---:|---:|\n| ND | 34.12±3.38 | 11.72±1.94 |\n| SUP | 45.59±3.47 | 87.34±2.41 |\n| UNI | 23.68±4.14 | 92.33±4.90 |\n\n原文虽把该指标称为剪切粘接强度，方法和表格实际报告N，没有用粘接面积归一化；不能与前节MPa直接作倍率比较。SUP在打印牙中高于ND与UNI，而铣削牙使用SUP与UNI无显著差异。尤其ND粘接时，打印牙高于铣削牙，与原文“打印牙始终较低”的概括相反。\n\n粘接程序还存在一个可复现性问题：ND组在材料表中列为NextDent Denture 3D+，操作段却称滴加LC-Retention树脂。本文保留原组名与实测结果，不据此推断两者是同一化学配方。SUP按单体与催化剂4:1滴数混合，再加入0.2 mL量匙聚合物粉；UNI粉液质量比为2:1。不同混合方式与界面流动性可能参与结果，但并未被单独检验。\n\n这组反转说明高聚合度铣削牙是否有利，取决于界面配方和固化方式，而不是牙的制造方式单独决定。ND采用多面光照，SUP与UNI采用化学固化；因此结果同时含粘接剂组成和固化路径差异。研究未直接测量单体渗透、界面转化率或网状结构，不能把所提互穿聚合物网络机制当作已观测事实。铣削牙–ND与打印牙–UNI全部为粘附破坏，支持它们在该短期加载模型中界面薄弱，但没有测定反复疲劳后的保持。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "strength_and_leakage",
+          "title": "减少染料渗入并不必然提高结合强度",
+          "markdown": "Arslan 等采用Saremco Crowntec与Denture Base配对，比较未处理、9%氢氟酸加硅烷、30 μm二氧化硅包覆氧化铝摩擦化学喷砂，再分别配合Tetric N-Bond Universal、Crowntec液体树脂或Panavia SA。喷砂为3 bar、15 s、10 mm；粘接时施加0.94 kg静载。每个组合分别有30件用于强度、30件用于染料渗漏，全部接受10000次5–55°C热循环，停留30 s、转移10 s。[强度与渗漏双终点实验](ref:R03)\n\n使用通用粘接剂时，未处理界面的强度为19.44±1.54 MPa，酸处理降至2.01±0.66 MPa，摩擦化学喷砂为5.06±3.24 MPa。使用Crowntec液体树脂时，未处理为18.43±8.26 MPa，喷砂为2.14±1.06 MPa；Panavia组没有显示相同幅度的下降。这与前节氧化铝喷砂收益不构成同条件下的冲突：此处颗粒包覆、树脂配方、粘接剂以及热循环均不同。\n\n喷砂也不能仅用“粗糙化”统称。前一粒径试验在牙的组织面处理，并在所有组保持同一底涂及复合树脂；这里用包覆二氧化硅颗粒，并跨不同粘接材料计算表面效应。后者的表中未处理组汇总标准差与相差较大的分组均值不协调，本文因此采用具体组合的数据，而不把汇总均值及其误差作为统一表面处理效应。\n\n通用粘接剂下，酸处理的报告染色面积为0.09±0.03 mm²，未处理为0.12±0.03 mm²，强度与染料进入量的方向因此不一致。两种终点来自不同试件，不能计算某一试件“密封更好但强度更低”的个体相关。染料试验使用1%亚甲蓝、37°C浸泡24 h；图像程序却描述粉红色阈值，并假定每像素0.1 mm，未给出充分的比例尺校准依据，故绝对面积及临床渗漏意义需谨慎解释。\n\n酸处理时间在方法中为60 s，材料表为90 s；该差异会改变表面损伤程度，不能合并成可直接执行的唯一方案。断裂表中各组都出现混合破坏，且没有纯内聚破坏；这也不支持只根据较低染色面积认定界面已经稳定。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "acid_exposure_and_failure_location",
+          "title": "酸浸后强度没有显著下降，不等于已证明界面耐酸等效",
+          "markdown": "Kizilirmak 与Tunçdemir把热聚合牙–基托、Ivotion分体铣削牙–基托及Asiga打印牙–基托分别置于人工唾液或人工胃酸，每格14件。基托圆片直径10 mm、厚2 mm，牙块为5×5×2 mm；打印采用90°方向、50 μm设定，以基托液体树脂连接牙块。各工艺使用不同连接方法，因此比较的是完整材料–连接系统，而非打印方式本身。[胃酸暴露实验](ref:R04)\n\n| 系统 | 人工唾液，MPa | 人工胃酸，MPa |\n|---|---:|---:|\n| 热聚合 | 12.90±3.00 | 11.42±2.95 |\n| 分体铣削 | 6.57±2.01 | 6.21±1.66 |\n| 打印 | 15.08±4.25 | 14.82±5.36 |\n\n试件在37°C、pH 6.8唾液或pH 1.2酸液中连续放置96 h，之后还在37°C水中放置48 h再测试。介质主效应p=0.488，材料与介质交互p=0.631；这是未检出差异，并非预设等效界值的等效性试验。连续浸泡没有模拟酸接触间歇、唾液中和和咀嚼载荷，原文将其换算成8年反流暴露的结论不宜沿用。酸配方同时给出0.06 M与0.113% HCl，两者不相符，实验的浓度复现也有缺口。\n\n打印组多数试件在牙或基托内部发生内聚或混合破坏，而铣削组主要为粘附破坏。因此打印组较高数值至少部分反映裂纹已转入主体材料，不能被理解为直接测得了界面的极限承载能力。断口电镜可定位孔洞与裂纹，却没有测定聚合转化率；画面看起来致密并不足以证明“聚合充分”。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "fatigue_compatible_combinations",
+          "title": "相同打印基托，换牙材或粘接方式即可改变疲劳存活",
+          "markdown": "Löscher 等比较11种牙–基托–粘接组合，每组8件，以前牙21的统一外形建立75.3 mm²连接区。打印件采用50 μm层厚，基托0°、牙45°；打印树脂连接在主清洗之后、最终后固化之前完成。液体基托树脂固定后先光照15 s，再于80°C、85% glycol浴（原文用语）中后固化60 min。其他组使用Vionic Bond或Ivotion Bond，并按各自条件加压固化，不能把所有组看成仅更换一种牙材。[热机械疲劳实验](ref:R05)\n\n每件以135°安装，由直径6 mm滑石瓷球施加50 N、1.6 Hz、1200000次载荷，同时完成2×3000次5–55°C热循环。使用Formlabs打印基托时，预制Vionic Vigo牙配Vionic Bond存活4/8，改用液体基托树脂为6/8；打印Denture Teeth Resin牙配Vionic Bond仅1/8，改用液体基托树脂为0/8。铣削Vionic Dent牙配Vionic Bond也只有1/8。这些差别发生在相近外形与同一基托体系内，显示界面兼容性及组装过程能主导疲劳结果。\n\n铣削基托配匹配粘接系统、冷聚合基托配预制牙，以及Ivotion一体铣削组均全部通过。另一个全部通过的打印对照把牙与基托都用同一种基托树脂连续制成，没有真实牙色材料连接界面；它不能被当作双材料完整义齿已经通过验证。\n\n疲劳中总计28件失效，15件为粘附破坏、11件混合破坏、2件牙断裂，没有单纯基托断裂。这里的存活是设定实验载荷下未失效，并非患者层面的留存率；对照几何、固化顺序和破坏位置共同限制了结果可适用的组合。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "survivor_fracture_force",
+          "title": "疲劳后的破坏力只描述幸存试件，不能替代整组耐久性",
+          "markdown": "同一研究随后只对通过热机械循环的试件进行静态破坏试验，以直径6 mm钢球、1 mm/min加载。预制牙–Vionic Bond–打印基托组的残余破坏力为129.8±97.1 N，Ivotion一体铣削组为780.8±62.5 N；前者只有4件幸存，后者有8件。均值所代表的试件群已不同，不能把两根柱的差距全部解释为未经过选择的材料性能差距。[幸存试件破坏力与断裂分型](ref:R05)\n\n采用打印基托的铣削牙–Vionic Bond组与打印牙–Vionic Bond组都只剩1件，因此原图没有可解释为组内标准差的误差棒。打印牙用液体基托树脂粘接的一组已全部在疲劳中失效，图中没有其残余强度柱；空白不是“测得破坏力为零”。对于该组，应报告较早失效及其破坏路径，而不是把缺失的后续测试补成数值。\n\n原图中一体化同树脂打印对照的破坏力仍低于Ivotion一体铣削组，说明消除单独粘接步骤后，主体材料和几何仍影响载荷能力。静态破坏时，Ivotion一体铣削组全部表现为牙部断裂；另一些粘接组则以界面或混合破坏为主。把牙部断裂换算成“粘接强度”会把主体材料破坏错误归入界面本身。\n\n这一实验没有为每个组合另外设置未疲劳静态对照，因而无法计算循环前后强度损失百分比。原文还把相同字母用于标示显著差异，与很多论文“相同字母表示无差异”的习惯相反；解读柱顶标记时必须按本图定义，而不是套用常见读图规则。",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Hleeba et al.：牙–基托加载装置；原图数据来源NLM/PMC。",
+          "interpretation": "照片显示圆柱基托被下方夹具固定，金属加载头接触人工牙；它没有结果坐标轴。结合方法可知载荷方向约垂直牙长轴，以1 mm/min加载。加载头和界面之间存在空间距离，故除剪切外还会引入弯曲作用；名义强度除以40.866 mm²并不意味着整个界面承受均匀应力。此图说明为何本研究可比较同几何下的喷砂条件，却不能直接把其MPa与不同牙块或加载位置的研究拼接排名。[装置与面积计算](ref:R01)"
+        },
+        "F02": {
+          "caption": "Saengthongpinij et al.：不同组合的断裂模式；© Medicina Oral S.L.，原图数据来源NLM/PMC。",
+          "interpretation": "横轴是打印牙PT或铣削牙MT与ND、SUP、UNI粘接材料的组合，纵轴为破坏类型百分比；橙为粘附、红为混合、黑为内聚。MT–ND与PT–UNI全橙，对应较低破坏力；MT–SUP与MT–UNI全红。PT–SUP可见少量黑色，而不是全部界面破坏。每组仅8件，比例每变化12.5个百分点就对应1件试样；该分布有助于判断薄弱位置，但混合破坏本身既不等于达到某个强度阈值，也不是临床成功率。[断裂模式与力值表](ref:R02)"
+        },
+        "F03": {
+          "caption": "Arslan et al.：表面处理与粘接剂的强度交互；原图数据来源NLM/PMC，原图未改动。",
+          "interpretation": "横轴B、R、P分别为通用粘接剂、Crowntec液体树脂、Panavia；每组三柱的C、A、T分别为未处理、酸处理、摩擦化学喷砂。B与R中蓝色未处理柱明显较高，P组却没有同样分离，说明表面效应依赖粘接材料。纵轴图面只写Mean，MPa单位由表格和试验定义确定。R–C柱的误差棒与表中18.43±8.26的离散度不一致，本文数值采用原表，图仅用于观察均值格局。此图没有渗漏数据，不能凭柱高推断密封性。[强度图与表格](ref:R03)"
+        },
+        "F04": {
+          "caption": "Kizilirmak and Tunçdemir：酸液与唾液组的代表性断口；原图数据来源NLM/PMC，原图未改动。",
+          "interpretation": "a为热聚合–酸液混合破坏，b为铣削–酸液粘附破坏，c为打印–唾液牙部内聚破坏，d为打印–酸液基托内聚破坏。各图为50倍、1 mm标尺；b可见孔洞和较明显界面，而c、d呈锐利断裂边界。每个面板只代表选中的试件，且材料、介质和破坏类别同时改变，不能当作酸处理前后配对观察。孔洞可提示局部缺陷，但画面不能分辨其形成于粘接、酸浸还是破坏过程，也不能定量界面化学转化。[断口选择方法与结果](ref:R04)"
+        },
+        "F05": {
+          "caption": "Löscher et al.：热机械循环下的试件存活；原图数据来源NLM/PMC。",
+          "interpretation": "横轴为载荷循环，纵轴为累计存活比例。顶部重叠的是全部通过1200000次的组合，并不只代表一种材料。代码11的打印牙–液体基托树脂组在约400000次之前降至零；代码4的预制牙–液体基托树脂组最后仍为0.75，两者基托相同。每组8件使阶梯呈离散变化，曲线末尾标记对应未在观察范围内失效的试件。正文使用表格核对代码，不按相近颜色猜测组合；代码7是同一基托树脂连续打印的实验对照，不能与真正牙色树脂连接组混为一谈。[存活曲线及组别表](ref:R05)"
+        },
+        "F06": {
+          "caption": "Löscher et al.：通过疲劳试验后的静态破坏力；原图数据来源NLM/PMC。",
+          "interpretation": "横轴保留原组别1–11，纵轴为N。代码9一体铣削组柱最高、7同树脂打印组次之；6与8各仅1件通过疲劳，因此柱上缺少组内误差估计，11无幸存者所以没有柱。原图给出均值与标准差，但只有多件幸存的组才具有可解释的组内离散度。柱顶相同字母在本图表示显著差异，须与常见的相反标法区分。把这张图与存活曲线联读，才能看出低存活组的单件破坏力并不等于该组合的可靠耐久表现。[幸存试件试验与原图](ref:R05)"
+        }
+      }
+    },
+    "en": {
+      "title": "How can bond strength between artificial teeth and denture bases be improved?",
+      "direction": "Denture joining and integration",
+      "sections": [
+        {
+          "id": "abrasion_particle_size",
+          "title": "Coarser abrasion increases initial strength without testing aged retention",
+          "markdown": "Hleeba et al. compared prefabricated acrylic teeth and milled PMMA teeth, each receiving no abrasion, 50 μm alumina or 250 μm alumina, with 8 specimens per cell. Abrasion lasted 10 s at 10 mm distance, perpendicular to the ridge-lap surface. Ultra Resin x-denture bases were printed at 0°, immersed in 99% IPA for 10 min and light-cured for 15 min. Every tooth–base interface received Visio.link cured for 90 s, followed by combo.lign in the socket and a final 180 s cure. The control therefore did not omit adhesive.[Abrasive-particle-size experiment](ref:R01)\n\n| Artificial tooth | No abrasion, MPa | 50 μm, MPa | 250 μm, MPa |\n|---|---:|---:|---:|\n| Prefabricated PMMA | 0.890±0.035 | 1.163±0.022 | 1.381±0.034 |\n| Milled PMMA | 1.072±0.017 | 1.296±0.029 | 1.514±0.029 |\n\nAll particle-size comparisons within each tooth material were significant, and milled teeth were stronger under every surface condition. However, there was no thermocycling or long-term water storage. The findings support initial strength for this bonding system, not a guarantee that 250 μm produces the longest service life. Abrasion pressure was not clearly reported, so particle size alone cannot reproduce the energy delivered to the surface.\n\nThe study divided incisal loading force at failure by a digitally measured interface area of 40.866 mm² to obtain nominal shear strength. Force acts on the crown rather than uniformly across the interface, making the value sensitive to lever arm, tooth geometry and clamping. All unabraded prefabricated teeth failed adhesively, whereas both tooth types showed mixed failure after 250 μm abrasion, indicating a changed crack path. No purely cohesive failure occurred, so the interface cannot be declared stronger than all surrounding material.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "adhesive_material_interaction",
+          "title": "Tooth material and adhesive interact rather than forming independent rankings",
+          "markdown": "Saengthongpinij et al. held the NextDent Denture 3D+ printed base constant and compared NextDent C&B MFH printed teeth with Upcera milled PMMA teeth, bonded using base-printing resin (ND), Super-bond (SUP) or Unifast Trad (UNI), with 8 specimens per cell. Bases were 20 mm in diameter and height with a 1 mm socket, printed at 90°. After 5 min ultrasonic cleaning in 99% IPA, they were post-cured for 30 min at 60°C. Bonded specimens spent 24 h in water at 37°C before loading at 0.5 mm/min, contacting the tooth 3 mm gingival to its incisal edge.[Tooth-material and adhesive factorial experiment](ref:R02)\n\n| Bonding material | Printed-tooth failure force, N | Milled-tooth failure force, N |\n|---|---:|---:|\n| ND | 34.12±3.38 | 11.72±1.94 |\n| SUP | 45.59±3.47 | 87.34±2.41 |\n| UNI | 23.68±4.14 | 92.33±4.90 |\n\nAlthough called shear bond strength, the methods and table report N without normalization by bonded area. These values cannot be directly expressed as multiples of the MPa values in the preceding section. SUP exceeded ND and UNI for printed teeth; SUP and UNI did not differ significantly for milled teeth. Particularly with ND, printed teeth exceeded milled teeth, contrary to the paper’s generalization that printed teeth were consistently lower.\n\nThe bonding protocol contains another reproducibility issue: the material table names NextDent Denture 3D+ for ND, but the procedure calls the dispensed resin LC-Retention. Original group labels and measured results are retained here without assuming identical formulations. SUP mixed monomer and catalyst at a 4:1 drop ratio before adding a 0.2 mL scoop of polymer powder; UNI used a 2:1 powder-to-liquid mass ratio. Mixing and interfacial flow may contribute to the result but were not independently tested.\n\nThis reversal shows that the benefit of highly polymerized milled teeth depends on interface formulation and curing mode rather than tooth manufacturing alone. ND used illumination from multiple sides, whereas SUP and UNI used chemical curing; results therefore combine adhesive composition with curing-pathway differences. Monomer penetration, interfacial conversion and network structure were not directly measured, so the proposed interpenetrating-polymer-network mechanism is not an observed finding. Milled teeth with ND and printed teeth with UNI failed entirely adhesively, supporting a weak interface in this short-term loading model, but retention after repeated fatigue was not measured.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "strength_and_leakage",
+          "title": "Less dye ingress does not necessarily mean higher bond strength",
+          "markdown": "Arslan et al. paired Saremco Crowntec with Denture Base and compared untreated surfaces, 9% hydrofluoric acid plus silane, and tribochemical abrasion with 30 μm silica-coated alumina. These were combined with Tetric N-Bond Universal, liquid Crowntec resin or Panavia SA. Abrasion used 3 bar for 15 s at 10 mm; bonding employed a 0.94 kg static load. Each combination had separate sets of 30 specimens for strength and 30 for dye leakage. All underwent 10000 thermal cycles at 5–55°C, with 30 s dwell and 10 s transfer.[Dual-endpoint strength and leakage experiment](ref:R03)\n\nWith universal adhesive, untreated strength was 19.44±1.54 MPa, falling to 2.01±0.66 MPa after acid treatment and 5.06±3.24 MPa after tribochemical abrasion. With liquid Crowntec, untreated strength was 18.43±8.26 MPa versus 2.14±1.06 MPa after abrasion; Panavia did not show a decline of the same magnitude. This does not contradict alumina benefits under identical conditions: particle coating, resin formulation, adhesive and thermocycling all differed here.\n\nAbrasion also cannot be reduced to the general term roughening. The particle-size experiment treated the ridge-lap surface while retaining the same primer and composite in every group. This experiment used silica-coated particles and evaluated surface effects across different bonding materials. Its pooled untreated-group standard deviation is inconsistent with widely separated subgroup means. Specific combinations are therefore reported here instead of treating the pooled mean and uncertainty as one universal surface-treatment effect.\n\nWith universal adhesive, reported stained area was 0.09±0.03 mm² after acid treatment versus 0.12±0.03 mm² untreated, so strength and dye entry did not change in the same direction. The endpoints came from different specimens, preventing an individual-level correlation between better sealing and lower strength. Dye testing used 1% methylene blue for 24 h at 37°C, yet the image-processing description specifies a pink-color threshold and assumes 0.1 mm per pixel without adequate scale-calibration documentation. Absolute areas and their clinical leakage meaning therefore require careful interpretation.\n\nAcid treatment lasted 60 s according to the methods but 90 s according to the material table. This difference can affect surface damage and cannot be merged into one directly reproducible protocol. The failure table reports mixed failures in every group and no purely cohesive failures. Lower staining alone therefore does not demonstrate an already stable interface.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "acid_exposure_and_failure_location",
+          "title": "No significant loss after acid immersion does not establish equivalent acid resistance",
+          "markdown": "Kizilirmak and Tunçdemir immersed heat-polymerized tooth–base assemblies, separately milled Ivotion tooth–base assemblies and Asiga printed assemblies in artificial saliva or gastric acid, with 14 specimens per cell. Base disks were 10 mm in diameter and 2 mm thick; tooth blocks measured 5×5×2 mm. Printing used 90° orientation and a 50 μm setting, with liquid base resin joining the tooth block. Each manufacturing system used a different joining method, so the experiment compares complete material–joining systems rather than printing alone.[Gastric-acid exposure experiment](ref:R04)\n\n| System | Artificial saliva, MPa | Artificial gastric acid, MPa |\n|---|---:|---:|\n| Heat-polymerized | 12.90±3.00 | 11.42±2.95 |\n| Separately milled | 6.57±2.01 | 6.21±1.66 |\n| Printed | 15.08±4.25 | 14.82±5.36 |\n\nSpecimens spent 96 h continuously at 37°C in saliva at pH 6.8 or acid at pH 1.2, followed by another 48 h in water at 37°C before testing. The medium main effect was p=0.488 and the material–medium interaction p=0.631. This is failure to detect a difference, not an equivalence test with a prespecified margin. Continuous immersion did not simulate intermittent acid contact, salivary neutralization or chewing loads, so the paper’s conversion to 8 years of reflux exposure should not be adopted. Its acid recipe states both 0.06 M and 0.113% HCl, which are inconsistent and leave a concentration-reproduction gap.\n\nMost printed specimens showed cohesive or mixed failure involving tooth or base, whereas milled specimens mainly failed adhesively. Higher printed-group values therefore partly reflect cracks entering bulk material; they do not directly measure the interface’s ultimate capacity. Fracture microscopy identifies pores and cracks but does not measure polymerization conversion. A compact-looking image does not prove complete polymerization.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "fatigue_compatible_combinations",
+          "title": "Changing tooth material or bonding can alter fatigue survival on the same printed base",
+          "markdown": "Löscher et al. compared 11 tooth–base–bonding combinations with 8 specimens each, using a common anterior-tooth 21 geometry and a 75.3 mm² joining area. Printed parts used 50 μm layers, with bases at 0° and teeth at 45°. Joining with printing resin occurred after the main wash but before final post-curing. Liquid base resin was initially fixed by 15 s light exposure, then post-cured for 60 min at 80°C in an 85% glycol bath, as termed in the paper. Other groups used Vionic Bond or Ivotion Bond with their respective pressure-curing conditions. The groups therefore did not simply substitute one tooth material.[Thermomechanical fatigue experiment](ref:R05)\n\nEach specimen was mounted at 135° and loaded by a 6 mm steatite ball at 50 N and 1.6 Hz for 1200000 cycles, simultaneously undergoing 2×3000 thermal cycles at 5–55°C. On Formlabs printed bases, prefabricated Vionic Vigo teeth with Vionic Bond survived in 4/8 cases, versus 6/8 with liquid base resin. Printed Denture Teeth Resin teeth with Vionic Bond survived in only 1/8 cases, versus 0/8 with liquid base resin. Milled Vionic Dent teeth with Vionic Bond also survived in only 1/8 cases. These differences within similar geometry and the same base system show that interfacial compatibility and assembly can dominate fatigue behavior.\n\nMilled bases with matched bonding systems, cold-polymerized bases with prefabricated teeth, and the monolithically milled Ivotion group all survived. Another fully surviving printed control used the same base resin continuously for tooth and base, without an actual tooth-colored material interface. It cannot be treated as validation of a complete dual-material denture.\n\nFatigue caused 28 failures: 15 adhesive, 11 mixed and 2 tooth fractures, with no isolated base fracture. Survival here means absence of failure under the specified laboratory loads, not patient-level retention. Control geometry, curing sequence and failure location jointly restrict the combinations to which the result applies.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "survivor_fracture_force",
+          "title": "Post-fatigue fracture force describes survivors rather than whole-group durability",
+          "markdown": "The same study then tested only specimens surviving thermomechanical cycling to static failure, using a 6 mm steel ball at 1 mm/min. Residual fracture force was 129.8±97.1 N for prefabricated teeth bonded with Vionic Bond to printed bases and 780.8±62.5 N for monolithically milled Ivotion. The former had only 4 survivors and the latter 8. The populations represented by these means were already different, so the entire bar-height difference cannot be attributed to unselected material performance.[Survivor fracture force and failure classification](ref:R05)\n\nThe milled-tooth–Vionic-Bond and printed-tooth–Vionic-Bond groups on printed bases each retained only 1 specimen. Their plotted bars therefore cannot carry interpretable within-group standard deviations. All printed teeth bonded with liquid base resin had already failed during fatigue, leaving no residual-strength bar. An empty position does not mean a measured failure force of zero. That group should be described through earlier failure and its crack paths rather than by inventing a value for the missing subsequent test.\n\nThe monolithic same-resin printed control still had lower fracture force than monolithically milled Ivotion, showing that bulk material and geometry affect load capacity even after eliminating a separate bonding step. During static failure, every monolithically milled Ivotion specimen fractured through the tooth region, whereas other bonded groups mainly failed at the interface or through mixed paths. Calling tooth fracture bond strength would incorrectly attribute bulk-material failure to the interface itself.\n\nThere was no separate un-fatigued static control for every combination, preventing calculation of percentage strength loss from before to after cycling. The original figure also uses shared letters to indicate significant differences, contrary to the frequent convention that shared letters mean no difference. Bar-top markers must therefore follow this figure’s definition rather than a habitual reading rule.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Hleeba et al.: Tooth–base loading apparatus; original figure data from NLM/PMC.",
+          "interpretation": "The photograph shows a cylindrical base held by the lower fixture and a metal loading head contacting the artificial tooth; it has no outcome axes. The methods specify loading approximately perpendicular to the tooth axis at 1 mm/min. The distance between loading contact and interface also introduces bending. Dividing force by 40.866 mm² for nominal strength does not establish uniform interfacial stress. This explains why the apparatus compares abrasion conditions within the same geometry but cannot directly rank its MPa against studies using different tooth blocks or contact locations.[Apparatus and area calculation](ref:R01)"
+        },
+        "F02": {
+          "caption": "Saengthongpinij et al.: Failure modes of different combinations; © Medicina Oral S.L., original figure data from NLM/PMC.",
+          "interpretation": "The horizontal axis combines printed teeth PT or milled teeth MT with ND, SUP and UNI bonding materials; the vertical axis gives percentages of failure types. Orange is adhesive, red mixed and black cohesive failure. MT–ND and PT–UNI are entirely orange, corresponding to lower failure forces; MT–SUP and MT–UNI are entirely red. PT–SUP includes a small black segment rather than exclusively interfacial failure. With only 8 specimens per group, each 12.5 percentage points corresponds to 1 specimen. This distribution helps locate weak regions, but mixed failure neither establishes a strength threshold nor represents clinical success.[Failure modes and force table](ref:R02)"
+        },
+        "F03": {
+          "caption": "Arslan et al.: Interaction of surface treatment and adhesive in strength; original figure data from NLM/PMC, reproduced unchanged.",
+          "interpretation": "B, R and P on the horizontal axis denote universal adhesive, liquid Crowntec and Panavia. Within each group, C, A and T mean untreated, acid-treated and tribochemically abraded. Blue untreated bars are much higher for B and R, but not similarly separated for P, showing that surface effects depend on bonding material. The vertical axis says only Mean; MPa is established by the table and test definition. The R–C error bar does not match the tabulated dispersion of 18.43±8.26. Numerical reporting here follows the table, while the graph shows the pattern of means. No leakage data appear in this figure, so bar height cannot establish sealing.[Strength figure and table](ref:R03)"
+        },
+        "F04": {
+          "caption": "Kizilirmak and Tunçdemir: Representative fractures after acid or saliva storage; original figure data from NLM/PMC, reproduced unchanged.",
+          "interpretation": "Panel a shows mixed failure in heat-polymerized material after acid, b adhesive failure in milled material after acid, c cohesive tooth failure in printed material after saliva, and d cohesive base failure in printed material after acid. Images are at 50-fold magnification with 1 mm bars. Panel b shows pores and a distinct interface, while c and d show sharp fracture boundaries. Each panel represents a selected specimen, and material, medium and failure category change together; these are not paired before-and-after acid observations. Pores suggest local defects, but images cannot establish whether they arose during bonding, immersion or fracture, nor quantify interfacial chemical conversion.[Fracture selection and results](ref:R04)"
+        },
+        "F05": {
+          "caption": "Löscher et al.: Specimen survival under thermomechanical cycling; original figure data from NLM/PMC.",
+          "interpretation": "The horizontal axis is loading cycles and the vertical axis cumulative survival. Overlapping top curves represent several combinations completing 1200000 cycles, not one material. Code 11, printed teeth joined with liquid base resin, falls to zero before approximately 400000 cycles; code 4, prefabricated teeth joined with liquid base resin, ends at 0.75 despite the same base. Groups of 8 produce discrete steps; terminal markers identify specimens not failing within observation. Group codes are checked against the table rather than inferred from similar colors. Code 7 is a continuous same-base-resin printed control and must not be equated with a true tooth-colored resin joining group.[Survival curves and group table](ref:R05)"
+        },
+        "F06": {
+          "caption": "Löscher et al.: Static fracture force after surviving fatigue; original figure data from NLM/PMC.",
+          "interpretation": "The horizontal axis retains original groups 1–11 and the vertical axis gives N. Code 9, monolithically milled, has the highest bar, followed by code 7, same-resin printed. Codes 6 and 8 each had only 1 fatigue survivor and therefore lack within-group uncertainty estimates; code 11 has no survivors and no bar. The source presents means and standard deviations, but interpretable within-group dispersion requires multiple survivors. Shared letters above bars indicate significant differences here, opposite to a common convention. Reading this graph alongside survival curves reveals why one survivor’s fracture force does not establish reliable durability for its entire combination.[Survivor testing and original figure](ref:R05)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie lässt sich die Verbundfestigkeit zwischen künstlichen Zähnen und Prothesenbasen verbessern?",
+      "direction": "Prothesenverbindungen und Integration",
+      "sections": [
+        {
+          "id": "abrasion_particle_size",
+          "title": "Gröbere Abstrahlung erhöht die Anfangsfestigkeit, prüft aber nicht deren Erhalt nach Alterung",
+          "markdown": "Hleeba et al. verglichen vorgefertigte Acrylatzähne und gefräste PMMA-Zähne, jeweils ohne Abstrahlung sowie mit 50 μm oder 250 μm Aluminiumoxid, mit 8 Proben je Kombination. Gestrahlt wurde 10 s aus 10 mm Entfernung senkrecht zur basalen Zahnfläche. Basen aus Ultra Resin x-denture wurden bei 0° gedruckt, 10 min in 99%igem IPA gewaschen und 15 min lichtgehärtet. Jede Zahn–Basis-Grenzfläche erhielt Visio.link mit 90 s Härtung, anschließend combo.lign im Zahnsockel und eine abschließende Härtung von 180 s. Die Kontrolle verzichtete somit nicht auf Adhäsiv.[Experiment zur Strahlpartikelgröße](ref:R01)\n\n| Künstlicher Zahn | Ohne Abstrahlung, MPa | 50 μm, MPa | 250 μm, MPa |\n|---|---:|---:|---:|\n| Vorgefertigtes PMMA | 0.890±0.035 | 1.163±0.022 | 1.381±0.034 |\n| Gefrästes PMMA | 1.072±0.017 | 1.296±0.029 | 1.514±0.029 |\n\nAlle Partikelgrößenvergleiche innerhalb eines Zahnmaterials waren signifikant; gefräste Zähne waren zudem unter jeder Oberflächenbedingung fester. Es erfolgten jedoch weder Thermowechsel noch langfristige Wasserlagerung. Belegt ist die Anfangsfestigkeit dieses Verbundsystems, keine längste Nutzungsdauer durch 250 μm. Der Strahldruck wurde nicht eindeutig angegeben; allein die Partikelgröße reproduziert die auf die Oberfläche übertragene Energie nicht.\n\nDie Studie dividierte die inzisal aufgebrachte Bruchkraft durch die digital bestimmte Grenzfläche von 40.866 mm² und erhielt eine nominale Scherfestigkeit. Die Kraft wirkt auf die Krone und nicht gleichmäßig über die Grenzfläche; der Wert hängt deshalb auch von Hebelarm, Zahngeometrie und Einspannung ab. Unbestrahlte vorgefertigte Zähne versagten sämtlich adhäsiv, nach 250 μm Abstrahlung zeigten beide Zahntypen Mischbrüche, also einen veränderten Risspfad. Rein kohäsives Versagen trat nicht auf; die Grenzfläche lässt sich daher nicht als fester als das gesamte umgebende Material bezeichnen.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "adhesive_material_interaction",
+          "title": "Zahnmaterial und Adhäsiv interagieren statt unabhängige Rangfolgen zu bilden",
+          "markdown": "Saengthongpinij et al. hielten die gedruckte Basis aus NextDent Denture 3D+ konstant und verglichen gedruckte NextDent-C&B-MFH-Zähne mit gefrästen Upcera-PMMA-Zähnen. Verbunden wurde mit Basisdruckharz (ND), Super-bond (SUP) oder Unifast Trad (UNI), jeweils mit 8 Proben. Die Basen hatten 20 mm Durchmesser und Höhe sowie einen 1 mm tiefen Zahnsockel und wurden bei 90° gedruckt. Nach 5 min Ultraschallreinigung in 99%igem IPA folgten 30 min Nachhärtung bei 60°C. Die verbundenen Proben lagerten 24 h bei 37°C in Wasser und wurden mit 0.5 mm/min belastet; der Kontakt lag 3 mm gingival der Schneidekante.[Faktorielles Experiment zu Zahnmaterial und Adhäsiv](ref:R02)\n\n| Verbindungsmaterial | Bruchkraft gedruckter Zähne, N | Bruchkraft gefräster Zähne, N |\n|---|---:|---:|\n| ND | 34.12±3.38 | 11.72±1.94 |\n| SUP | 45.59±3.47 | 87.34±2.41 |\n| UNI | 23.68±4.14 | 92.33±4.90 |\n\nObwohl als Scherverbundfestigkeit bezeichnet, geben Methoden und Tabelle N ohne Normierung auf die Klebefläche an. Diese Werte dürfen nicht direkt als Vielfache der MPa-Werte des vorangegangenen Abschnitts ausgedrückt werden. Bei gedruckten Zähnen übertraf SUP sowohl ND als auch UNI; bei gefrästen unterschieden sich SUP und UNI nicht signifikant. Insbesondere mit ND waren gedruckte Zähne gefrästen überlegen, entgegen der Verallgemeinerung der Autoren, gedruckte Zähne lägen durchgehend niedriger.\n\nDas Verbindungsprotokoll enthält ein weiteres Reproduzierbarkeitsproblem: Die Materialtabelle nennt für ND NextDent Denture 3D+, der Arbeitsschritt dagegen aufgetropftes LC-Retention-Harz. Originalgruppen und Messwerte bleiben hier erhalten, ohne identische Rezepturen anzunehmen. SUP mischte Monomer und Katalysator im Tropfenverhältnis 4:1 und ergänzte einen 0.2 mL Messlöffel Polymerpulver; UNI verwendete ein Pulver-Flüssigkeits-Massenverhältnis von 2:1. Mischung und Grenzflächenfließen können das Ergebnis mitbestimmen, wurden aber nicht unabhängig geprüft.\n\nDiese Umkehr zeigt, dass der Nutzen hochpolymerisierter gefräster Zähne von Grenzflächenrezeptur und Härtungsart abhängt, nicht allein vom Herstellungsverfahren. ND wurde von mehreren Seiten belichtet, SUP und UNI chemisch gehärtet; die Ergebnisse enthalten daher sowohl Zusammensetzungs- als auch Härtungsunterschiede. Monomerpenetration, Grenzflächenkonversion und Netzwerkstruktur wurden nicht direkt gemessen; der vorgeschlagene Mechanismus eines interpenetrierenden Polymernetzwerks ist kein beobachteter Befund. Gefräste Zähne mit ND und gedruckte mit UNI versagten ausschließlich adhäsiv, was im kurzfristigen Belastungsmodell für eine schwache Grenzfläche spricht. Der Erhalt unter wiederholter Ermüdung wurde jedoch nicht geprüft.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "strength_and_leakage",
+          "title": "Weniger Farbstoffeintritt bedeutet nicht zwangsläufig höhere Verbundfestigkeit",
+          "markdown": "Arslan et al. kombinierten Saremco Crowntec mit Denture Base und verglichen unbehandelte Oberflächen, 9%ige Flusssäure plus Silan und tribochemisches Strahlen mit 30 μm silikabeschichtetem Aluminiumoxid. Dazu kamen Tetric N-Bond Universal, flüssiges Crowntec-Harz oder Panavia SA. Gestrahlt wurde bei 3 bar für 15 s aus 10 mm; beim Verbinden wirkte eine statische Last von 0.94 kg. Je Kombination wurden getrennt 30 Proben für Festigkeit und 30 für Farbstoffpenetration verwendet. Alle erhielten 10000 Thermowechsel bei 5–55°C mit 30 s Verweil- und 10 s Transferzeit.[Experiment mit Festigkeit und Farbstoffpenetration als getrennten Endpunkten](ref:R03)\n\nMit Universaladhäsiv betrug die unbehandelte Festigkeit 19.44±1.54 MPa, nach Säurebehandlung 2.01±0.66 MPa und nach tribochemischem Strahlen 5.06±3.24 MPa. Mit flüssigem Crowntec ergaben sich unbehandelt 18.43±8.26 MPa gegenüber 2.14±1.06 MPa nach Strahlen; Panavia zeigte keinen Rückgang gleicher Größenordnung. Dies widerspricht den Vorteilen von Aluminiumoxid nicht unter identischen Bedingungen: Partikelbeschichtung, Harzrezeptur, Adhäsiv und Thermowechsel unterschieden sich hier.\n\nAbstrahlung lässt sich zudem nicht auf den allgemeinen Begriff Aufrauung reduzieren. Das Partikelgrößenexperiment behandelte die basale Zahnfläche bei gleichem Primer und Komposit in allen Gruppen. Hier wurden silikabeschichtete Partikel verwendet und Oberflächeneffekte über unterschiedliche Verbindungsmaterialien ausgewertet. Die gepoolte Standardabweichung der unbehandelten Gruppe passt nicht zu weit auseinanderliegenden Untergruppenmittelwerten. Deshalb werden konkrete Kombinationen berichtet statt Gesamtmittelwert und Streuung als universellen Oberflächenbehandlungseffekt zu behandeln.\n\nMit Universaladhäsiv betrug die berichtete gefärbte Fläche nach Säurebehandlung 0.09±0.03 mm² gegenüber 0.12±0.03 mm² ohne Behandlung; Festigkeit und Farbstoffeintritt änderten sich somit nicht gleichgerichtet. Beide Endpunkte stammen von unterschiedlichen Proben, weshalb keine individuelle Korrelation zwischen besserer Abdichtung und geringerer Festigkeit berechnet werden kann. Verwendet wurde 1%iges Methylenblau für 24 h bei 37°C; die Bildauswertung beschreibt jedoch einen rosa Farbgrenzwert und nimmt 0.1 mm je Pixel ohne hinreichend dokumentierte Maßstabskalibrierung an. Absolute Flächen und ihre klinische Bedeutung für Undichtigkeiten bedürfen daher vorsichtiger Interpretation.\n\nDie Säurebehandlung dauerte laut Methodentext 60 s, laut Materialtabelle jedoch 90 s. Dieser Unterschied kann die Oberflächenschädigung beeinflussen und lässt sich nicht zu einem eindeutig reproduzierbaren Protokoll zusammenführen. Die Bruchtabelle zeigt Mischbrüche in jeder Gruppe und keine rein kohäsiven Brüche. Geringere Anfärbung allein belegt daher keine bereits stabile Grenzfläche.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "acid_exposure_and_failure_location",
+          "title": "Kein signifikanter Verlust nach Säurelagerung belegt keine gleichwertige Säurebeständigkeit",
+          "markdown": "Kizilirmak und Tunçdemir lagerten heißpolymerisierte Zahn–Basis-Verbindungen, separat gefräste Ivotion-Verbindungen und gedruckte Asiga-Verbindungen in künstlichem Speichel oder künstlicher Magensäure, mit 14 Proben je Kombination. Basisscheiben hatten 10 mm Durchmesser und 2 mm Dicke, Zahnblöcke maßen 5×5×2 mm. Gedruckt wurde bei 90° mit einer Einstellung von 50 μm; flüssiges Basisharz verband den Zahnblock. Jedes Fertigungssystem verwendete eine andere Verbindungsmethode. Verglichen wurden somit vollständige Werkstoff–Verbindungssysteme, nicht allein das Drucken.[Experiment zur Magensäureexposition](ref:R04)\n\n| System | Künstlicher Speichel, MPa | Künstliche Magensäure, MPa |\n|---|---:|---:|\n| Heißpolymerisiert | 12.90±3.00 | 11.42±2.95 |\n| Separat gefräst | 6.57±2.01 | 6.21±1.66 |\n| Gedruckt | 15.08±4.25 | 14.82±5.36 |\n\nDie Proben lagen kontinuierlich 96 h bei 37°C in Speichel mit pH 6.8 oder Säure mit pH 1.2 und anschließend vor der Prüfung weitere 48 h bei 37°C in Wasser. Der Haupteffekt des Mediums betrug p=0.488, die Werkstoff–Medium-Interaktion p=0.631. Damit wurde kein Unterschied nachgewiesen; es handelt sich nicht um eine Äquivalenzprüfung mit vorab festgelegter Grenze. Kontinuierliche Lagerung simuliert weder intermittierenden Säurekontakt noch Speichelneutralisation oder Kaulasten. Die Umrechnung der Autoren in 8 Jahre Refluxexposition sollte daher nicht übernommen werden. Die Säurerezeptur nennt zugleich 0.06 M und 0.113% HCl; diese Angaben passen nicht zusammen und verhindern eine eindeutige Reproduktion der Konzentration.\n\nDie meisten gedruckten Proben zeigten kohäsives oder gemischtes Versagen unter Beteiligung von Zahn oder Basis, gefräste Proben überwiegend adhäsives Versagen. Höhere Werte der Druckgruppe spiegeln daher teilweise Risse im Volumenmaterial wider und messen nicht unmittelbar die maximale Grenzflächentragfähigkeit. Bruchmikroskopie lokalisiert Poren und Risse, bestimmt aber keinen Konversionsgrad. Ein kompakt wirkendes Bild beweist keine vollständige Polymerisation.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "fatigue_compatible_combinations",
+          "title": "Zahnmaterial oder Verbindung ändern das Ermüdungsüberleben auf derselben gedruckten Basis",
+          "markdown": "Löscher et al. verglichen 11 Zahn–Basis–Verbindungskombinationen mit jeweils 8 Proben, einheitlicher Frontzahngeometrie 21 und 75.3 mm² Verbindungsfläche. Gedruckt wurde mit 50 μm Schichtdicke, Basen bei 0° und Zähne bei 45°. Die Verbindung mit Druckharz erfolgte nach der Hauptwäsche und vor der abschließenden Nachhärtung. Flüssiges Basisharz wurde zunächst 15 s belichtet und anschließend 60 min bei 80°C im 85%igen Glykolbad, entsprechend der Originalbezeichnung nachgehärtet. Andere Gruppen verwendeten Vionic Bond oder Ivotion Bond unter ihren jeweiligen Druckhärtungsbedingungen. Die Gruppen unterschieden sich daher nicht allein durch Austausch des Zahnmaterials.[Thermomechanisches Ermüdungsexperiment](ref:R05)\n\nJede Probe wurde bei 135° montiert und mit einer 6 mm großen Steatitkugel bei 50 N und 1.6 Hz über 1200000 Zyklen belastet; gleichzeitig erfolgten 2×3000 Thermowechsel bei 5–55°C. Auf gedruckten Formlabs-Basen überlebten vorgefertigte Vionic-Vigo-Zähne mit Vionic Bond in 4/8 Fällen, mit flüssigem Basisharz in 6/8 Fällen. Gedruckte Denture-Teeth-Resin-Zähne mit Vionic Bond überlebten nur in 1/8 Fällen, mit flüssigem Basisharz in 0/8 Fällen. Auch gefräste Vionic-Dent-Zähne mit Vionic Bond überlebten nur in 1/8 Fällen. Diese Unterschiede bei ähnlicher Geometrie und gleichem Basissystem zeigen, dass Grenzflächenkompatibilität und Zusammenbau das Ermüdungsverhalten wesentlich bestimmen können.\n\nGefräste Basen mit abgestimmten Verbindungssystemen, kaltpolymerisierte Basen mit vorgefertigten Zähnen sowie monolithisch gefrästes Ivotion überlebten vollständig. Eine ebenfalls vollständig überlebende Druckkontrolle bestand in Zahn und Basis durchgehend aus demselben Basisharz und besaß keine echte Grenzfläche zu zahnfarbenem Material. Sie validiert keine vollständige Prothese aus unterschiedlichen Werkstoffen.\n\nWährend der Ermüdung versagten 28 Proben: 15 adhäsiv, 11 gemischt und 2 durch Zahnbruch; isolierte Basisbrüche fehlten. Überleben bedeutet hier Ausbleiben von Versagen unter den definierten Laborlasten, keine patientenbezogene Verbleibrate. Kontrollgeometrie, Härtungsfolge und Bruchort begrenzen gemeinsam, auf welche Kombinationen das Ergebnis anwendbar ist.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "survivor_fracture_force",
+          "title": "Die Bruchkraft nach Ermüdung beschreibt Überlebende statt der Dauerhaftigkeit der gesamten Gruppe",
+          "markdown": "Dieselbe Studie prüfte anschließend ausschließlich nach thermomechanischer Belastung überlebende Proben statisch bis zum Bruch, mit einer 6 mm Stahlkugel bei 1 mm/min. Die verbleibende Bruchkraft betrug bei vorgefertigten Zähnen mit Vionic Bond auf Druckbasen 129.8±97.1 N, bei monolithisch gefrästem Ivotion 780.8±62.5 N. Erstere Gruppe hatte nur 4 Überlebende, letztere 8. Die durch die Mittelwerte repräsentierten Populationen unterschieden sich bereits; der gesamte Balkenabstand lässt sich daher nicht auf unselektierte Werkstoffeigenschaften zurückführen.[Bruchkraft überlebender Proben und Bruchklassifikation](ref:R05)\n\nBei gefrästen beziehungsweise gedruckten Zähnen mit Vionic Bond auf Druckbasen blieb jeweils nur 1 Probe übrig. Ihre Balken können daher keine interpretierbare gruppeninterne Standardabweichung tragen. Sämtliche mit flüssigem Basisharz verbundenen Druckzähne waren bereits während der Ermüdung ausgefallen; ein Balken für Restfestigkeit fehlt. Eine leere Position bedeutet keine gemessene Bruchkraft von null. Diese Gruppe ist anhand des früheren Versagens und der Risspfade zu beschreiben, nicht durch einen erfundenen Wert für die ausgefallene Folgeprüfung.\n\nDie monolithische Druckkontrolle aus demselben Harz hatte weiterhin eine niedrigere Bruchkraft als monolithisch gefrästes Ivotion. Auch ohne separaten Klebeschritt beeinflussen Volumenwerkstoff und Geometrie die Tragfähigkeit. Beim statischen Versuch brachen alle monolithisch gefrästen Ivotion-Proben im Zahnbereich, während andere verbundene Gruppen überwiegend Grenzflächen- oder Mischbrüche zeigten. Zahnbruch als Verbundfestigkeit zu bezeichnen würde Volumenversagen fälschlich der Grenzfläche zuschreiben.\n\nNicht jede Kombination hatte eine separate statische Kontrolle ohne Ermüdung; ein prozentualer Festigkeitsverlust vor gegenüber nach der zyklischen Belastung kann daher nicht berechnet werden. Gleiche Buchstaben kennzeichnen in der Originalgrafik zudem signifikante Unterschiede, entgegen der verbreiteten Konvention, nach der gleiche Buchstaben keine Unterschiede bedeuten. Die Markierungen über den Balken sind folglich nach dieser Bilddefinition zu lesen, nicht nach einer gewohnten Regel.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Hleeba et al.: Belastungsvorrichtung für Zahn–Basis-Verbindungen; Originalabbildungsdaten von NLM/PMC.",
+          "interpretation": "Das Foto zeigt die zylindrische Basis in der unteren Einspannung und den metallischen Belastungskopf am künstlichen Zahn; Ergebnisachsen fehlen. Laut Methoden erfolgt die Belastung ungefähr senkrecht zur Zahnlängsachse mit 1 mm/min. Der Abstand zwischen Kontaktpunkt und Grenzfläche erzeugt zusätzlich Biegung. Die Division durch 40.866 mm² zur nominalen Festigkeit belegt keine gleichmäßige Grenzflächenspannung. Die Vorrichtung erlaubt deshalb den Vergleich von Strahlbedingungen bei gleicher Geometrie, aber keine direkte Rangfolge ihrer MPa gegenüber Studien mit anderen Zahnblöcken oder Kontaktpunkten.[Vorrichtung und Flächenberechnung](ref:R01)"
+        },
+        "F02": {
+          "caption": "Saengthongpinij et al.: Brucharten unterschiedlicher Kombinationen; © Medicina Oral S.L., Originalabbildungsdaten von NLM/PMC.",
+          "interpretation": "Die horizontale Achse kombiniert gedruckte Zähne PT oder gefräste Zähne MT mit ND, SUP und UNI; die vertikale Achse zeigt prozentuale Brucharten. Orange steht für adhäsives, Rot für gemischtes und Schwarz für kohäsives Versagen. MT–ND und PT–UNI sind vollständig orange und zeigen niedrigere Bruchkräfte; MT–SUP und MT–UNI sind vollständig rot. PT–SUP enthält einen kleinen schwarzen Anteil, also nicht ausschließlich Grenzflächenversagen. Bei nur 8 Proben je Gruppe entsprechen jeweils 12.5 Prozentpunkte genau 1 Probe. Die Verteilung lokalisiert Schwachstellen; Mischbruch belegt jedoch weder eine Festigkeitsschwelle noch klinischen Erfolg.[Brucharten und Krafttabelle](ref:R02)"
+        },
+        "F03": {
+          "caption": "Arslan et al.: Wechselwirkung von Oberflächenbehandlung und Adhäsiv bei der Festigkeit; Originalabbildungsdaten von NLM/PMC, unverändert wiedergegeben.",
+          "interpretation": "B, R und P auf der horizontalen Achse stehen für Universaladhäsiv, flüssiges Crowntec und Panavia. Je Gruppe bedeuten C, A und T unbehandelt, säurebehandelt und tribochemisch abgestrahlt. Die blauen unbehandelten Balken liegen bei B und R deutlich höher, bei P jedoch nicht entsprechend getrennt; der Oberflächeneffekt hängt vom Verbindungsmaterial ab. Die vertikale Achse nennt nur Mean, MPa ergeben sich aus Tabelle und Prüfdefinition. Der R–C-Fehlerbalken passt nicht zur tabellierten Streuung von 18.43±8.26. Zahlenangaben folgen hier der Tabelle, die Grafik zeigt das Muster der Mittelwerte. Sie enthält keine Penetrationsdaten; Balkenhöhe belegt daher keine Abdichtung.[Festigkeitsgrafik und Tabelle](ref:R03)"
+        },
+        "F04": {
+          "caption": "Kizilirmak and Tunçdemir: Repräsentative Bruchflächen nach Säure- oder Speichellagerung; Originalabbildungsdaten von NLM/PMC, unverändert wiedergegeben.",
+          "interpretation": "a zeigt Mischbruch im heißpolymerisierten Material nach Säure, b adhäsives Versagen im gefrästen Material nach Säure, c kohäsiven Zahnbruch im Druckmaterial nach Speichel und d kohäsiven Basisbruch im Druckmaterial nach Säure. Die Bilder haben 50-fache Vergrößerung und 1 mm Maßstabsbalken. In b sind Poren und eine deutliche Grenzfläche sichtbar, c und d zeigen scharfe Bruchgrenzen. Jedes Teilbild repräsentiert eine ausgewählte Probe; Werkstoff, Medium und Bruchklasse ändern sich gleichzeitig. Es sind keine gepaarten Vorher-nachher-Säurebeobachtungen. Poren deuten lokale Defekte an, klären aber nicht deren Entstehung bei Verbindung, Lagerung oder Bruch und quantifizieren keine chemische Grenzflächenkonversion.[Auswahl der Bruchbilder und Ergebnisse](ref:R04)"
+        },
+        "F05": {
+          "caption": "Löscher et al.: Probenüberleben unter thermomechanischer Belastung; Originalabbildungsdaten von NLM/PMC.",
+          "interpretation": "Die horizontale Achse zeigt Lastzyklen, die vertikale kumulatives Überleben. Überlappende obere Kurven repräsentieren mehrere Kombinationen mit vollständig überstandenen 1200000 Zyklen, nicht einen einzelnen Werkstoff. Code 11, Druckzähne mit flüssigem Basisharz verbunden, fällt vor ungefähr 400000 Zyklen auf null; Code 4, vorgefertigte Zähne mit flüssigem Basisharz, endet trotz gleicher Basis bei 0.75. Gruppen mit 8 Proben erzeugen diskrete Stufen; Endmarkierungen kennzeichnen Proben ohne Versagen im Beobachtungsbereich. Gruppencodes werden anhand der Tabelle geprüft, nicht anhand ähnlicher Farben geraten. Code 7 ist eine durchgehende Druckkontrolle aus Basisharz und darf nicht mit einer echten Verbindung zu zahnfarbenem Harz gleichgesetzt werden.[Überlebenskurven und Gruppentabelle](ref:R05)"
+        },
+        "F06": {
+          "caption": "Löscher et al.: Statische Bruchkraft nach überstandener Ermüdung; Originalabbildungsdaten von NLM/PMC.",
+          "interpretation": "Die horizontale Achse behält die Originalgruppen 1–11 bei, die vertikale zeigt N. Code 9, monolithisch gefräst, besitzt den höchsten Balken, gefolgt von Code 7, aus demselben Harz gedruckt. Codes 6 und 8 hatten jeweils nur 1 Ermüdungsüberlebenden und deshalb keine gruppeninterne Streuungsschätzung; Code 11 hat weder Überlebende noch Balken. Die Quelle zeigt Mittelwerte und Standardabweichungen, doch interpretierbare gruppeninterne Streuung setzt mehrere Überlebende voraus. Gleiche Buchstaben über Balken kennzeichnen hier signifikante Unterschiede, entgegen einer verbreiteten Konvention. Zusammen mit den Überlebenskurven wird deutlich, weshalb die Bruchkraft eines einzelnen Überlebenden keine zuverlässige Dauerhaftigkeit der gesamten Kombination belegt.[Prüfung der Überlebenden und Originalabbildung](ref:R05)"
+        }
+      }
+    }
+  }
+}

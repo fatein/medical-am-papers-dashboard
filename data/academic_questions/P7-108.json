@@ -1,0 +1,341 @@
+{
+  "schema_version": 2,
+  "question_id": "P7-108",
+  "p": "P7",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-04",
+  "related_paper_ids": [
+    "doc_f5258416a1c3cea41ad1",
+    "doc_f75f669af75a6d446c36"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Evaluation of 3D-Printed Microfluidic Structures for Use in AML-Specific Biomarker Detection of PML::RARA",
+      "publisher": "International Journal of Molecular Sciences",
+      "year": 2025,
+      "url": "https://doi.org/10.3390/ijms26020497",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Design and Fabrication of a 3D-Printed Microfluidic Immunoarray for Ultrasensitive Multiplexed Protein Detection",
+      "publisher": "Micromachines",
+      "year": 2023,
+      "url": "https://doi.org/10.3390/mi14122187",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Multiplexed CRISPR Assay for Amplification-Free Detection of miRNAs",
+      "publisher": "Biosensors",
+      "year": 2025,
+      "url": "https://doi.org/10.3390/bios15060346",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "3D printing and milling a real-time PCR device for infectious disease diagnostics",
+      "publisher": "PLOS ONE",
+      "year": 2017,
+      "url": "https://doi.org/10.1371/journal.pone.0179133",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 7",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11765455.1/ijms-26-00497-g007.jpg?md5=4a0f98eba24da20f5a00ea22e21ddb6e",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11765455/#ijms-26-00497-f007",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P7-108/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 8",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11765455.1/ijms-26-00497-g008.jpg?md5=74675b326dc33916ebcd0d0f5a9a8744",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11765455/#ijms-26-00497-f008",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P7-108/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Figure 6",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10745552.1/micromachines-14-02187-g006.jpg?md5=32720426284c26c84ab6397a779f7f28",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10745552/#micromachines-14-02187-f006",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P7-108/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Figure 7",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10745552.1/micromachines-14-02187-g007.jpg?md5=2ec6e0814d676c548918c12d74204295",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10745552/#micromachines-14-02187-f007",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P7-108/F04.jpg"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Figure 4",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12190982.1/biosensors-15-00346-g004.jpg?md5=bd4e19d3c7e0267e1531cf71635fedc0",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12190982/#biosensors-15-00346-f004",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P7-108/F05.jpg"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R03",
+      "original_label": "Figure 5",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12190982.1/biosensors-15-00346-g005.jpg?md5=1a8652166c192f2fb99ab3f6eadd7f43",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12190982/#biosensors-15-00346-f005",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P7-108/F06.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "芯片如何实现病原体和分子快速检测？",
+      "direction": "快速检测与传感",
+      "sections": [
+        {
+          "id": "measurement_target",
+          "title": "打印参与了什么：仪器集成、分子识别与疾病分类",
+          "markdown": "本问题的论文包含不同层次的“检测”。便携式 qPCR 仪器研究主要验证打印部件与其他制造部件组成的读出系统能否产生可重复的分子检测结果，并与常规设备作实验对照。其结果属于仪器与分析方法验证，论文没有提供感染者和非感染者队列的诊断敏感度、特异度。将该研究写成“已实现患者感染诊断”会跨过临床验证环节。 [便携式仪器原始研究](ref:R04)\n\n另一条研究链直接比较打印芯片与玻璃芯片中的白血病相关融合蛋白 PML::RARA 检测。这里测量的是蛋白信号，并非染色体易位、DNA 或 RNA。PML::RARA 对应急性早幼粒细胞白血病这一具体亚型；论文标题中的 AML 不能理解为已经覆盖所有急性髓系白血病。打印的作用是提供流体与光学载体，识别对象则由检测反应决定。 [融合蛋白研究](ref:R01)\n\n原文 Figure 7 使用阳性 NB-4 和阴性 HL-60、MV4-11、Jurkat 细胞来源样本，以及无蛋白的 PBS 对照。前者回答“相关生物样本是否能被区分”，后者只回答“无样本蛋白时背景有多高”。NB-4 平均约 227 RFU，而各阴性细胞对照约为 6.5、19 和 12.4 RFU，PBS 约 5.8 RFU。不同阴性样本的背景并不相同，因而不能只用最干净的空白夸大分离效果。图中的重复测量也不是同样数量的独立患者。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "glass_comparator",
+          "title": "玻璃换成打印树脂：绝对信号下降与对照分离程度",
+          "markdown": "同一融合蛋白研究的 Figure 8 把玻璃与打印树脂的结果分开比较。阳性样本在玻璃中约 1400 RFU，在打印芯片中约 220 RFU。按这两个近似值计算，相差约 6.4 倍；正文写成“约 10 倍”与所列数字不一致。玻璃数据来自作者此前发表的研究，因此它是跨研究的材料平台比较，不是同一轮随机分配的临床试验。 [玻璃—打印芯片对照](ref:R01)\n\n绝对信号下降后，阳性与阴性之比并未按同样比例下降。NB-4/PBS 比值在玻璃中约 49，在打印芯片中约 38；NB-4/MV4-11 在打印芯片中约 14。背景随材料和样本共同变化，使部分信号比仍能维持，而另一种阴性细胞背景使区分程度降低。Figure 8 的下半部分比单看阳性柱高更能揭示这种差异。\n\n原文依据树脂的光学吸收解释信号衰减，但并未给出 PML::RARA 浓度梯度下可直接比较的检测限。其讨论中“打印芯片检测限更低”的措辞，也与摘要所说敏感性降低存在方向冲突。可以确认的是打印芯片信号较弱、所测阳性与阴性仍有分离；不能由此补出一个更优或更差的浓度检测限。RFU 是设备相关读数，跨平台解释还取决于光学背景、读出设置和对照归一化。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "spatial_variation",
+          "title": "多重蛋白阵列：位置效应会伪装成分子差异",
+          "markdown": "多蛋白免疫阵列研究同时考察 PEDF、CA-125、IL-8、CD-14 与 Cyr61。早期串联检测位置出现明显的空间亮度差：相同装置内，前端和后端信号并不均匀。原文 Figure 6 将旧布局与改版后的亮度分布并列，说明几何与流体分配可以引入位置效应；若不同蛋白被固定放在不同位置，就可能把位置偏差误读成蛋白含量差异。 [多蛋白阵列及原文 Figure 6](ref:R02)\n\n这幅图适合判断亮度是否沿布局呈系统变化，却不足以计算位置变异系数。作者没有在该图提供逐位置数值、统一曝光标定或独立器件分布；新图更均匀，也不等于不同蛋白的响应斜率相同。正式定量还要分别依据各蛋白校准曲线，并区分同一器件内的重复孔与不同器件之间的重复。\n\n研究中各蛋白的加标回收结果总体落在 100 ± 20% 内，但这是一项分析性能指标。它反映已知加入量能否被测回，不提供癌症人群与健康人群之间的分类能力。正文介绍的潜在多癌种应用，以及附录从既往文献引用的敏感度、特异度，不能作为本装置已经取得的患者诊断结果。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "multiplex_calibration",
+          "title": "同一阵列中的不同检测限：对数校准与临床浓度不是同一尺度",
+          "markdown": "Figure 7 的横轴为对数刻度，拟合式包含 ln(x)。图中直线表示信号与浓度对数的关系，不是信号与原始浓度成正比。比如 IL-8 的 R² 为 0.9926，PEDF 为 0.9266；前者拟合较贴合，不能据此说其疾病诊断准确率更高。 [校准曲线及 Table A3](ref:R02)\n\n| 蛋白 | Table A3 报告的检测限 / fg·mL⁻¹ | 解释时需要保留的条件 |\n|---|---:|---|\n| PEDF | 3 | 文献中的患者水平使用 μg/mL，需区分原样本与检测体系浓度 |\n| CA-125 | 1.5 | 临床阈值以 U/mL 表示，不能直接换算为质量浓度 |\n| IL-8 | 1.5 | 高 R² 描述校准拟合，不是患者分类表现 |\n| CD-14 | 0.01 | 附表所列宽范围与图中实际展示范围不同 |\n| Cyr61 | 4 | 独立校准，不能套用其他蛋白的斜率 |\n\nCD-14 在 Table A3 被列为 0.01 fg/mL–100 pg/mL，而图中展示的浓度点和横轴并未覆盖这整个区间。因此表中声明与图示证据应分开读，不能通过插值补齐未展示的低端。CA-125 的活性单位与质量单位也需要具体标准物质的换算关系；缺少这一关系时，把最低质量检测限除以临床阈值会得到没有可比意义的倍数。\n\n加标回收同样存在浓度依赖。Table 1 中 CD-14 在不同加标水平的回收率为 115%、84%、82% 和 94%；PEDF 为 111%、88%、89% 和 116%。整体落入接受区间并不等于各水平没有偏差，靠近判定界值时，偏差方向和变异比单一最低检测限更重要。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "time_and_readout",
+          "title": "无扩增 miRNA 检测：信号处理与用时如何影响“快速”的含义",
+          "markdown": "miRNA 研究在打印孔板中检测阿尔茨海默病相关的 34c-5p、30e-5p 和 200c-3p，采用荧光读出。原文 Figure 4 的曲线先下降再上升，说明信号具有明显的时间依赖。作者并非取起始读数作为结果，而是比较后续时间窗与前段平台的信号差。正文使用 140–150 min 与 90–100 min 的差值；图注对相减方向的文字表述相反，应结合结果段的定义理解。 [miRNA 时间曲线与校准](ref:R03)\n\n这意味着“无 RNA 扩增”不等于瞬时读出，也不等于已经完成患者样本到答案的全流程。论文的患者部分使用预先提取的 RNA，而校准在 0.1% 混合人血浆体系中进行；两者的基质和前处理状态不同。读板时间不能替代总周转时间，标准物的低浓度响应也不能直接当作原血浆中的工作范围。\n\nFigure 5 给出的检测限依次为 0.74、0.70 和 7.4 fg/mL；对应校准 R² 为 0.9688、0.9769 和 0.9686。图中方程同样使用 ln(x)，不是全量程的普通线性响应。作者报告孔板之间平均相对标准差约 5%（n = 6），同一孔板不同孔位之间约 3%；这分别描述器件层面和孔位层面的重复性，不能合并成一个“准确率”。Table 2 中交叉反应为 2.5%–4.7%，针对的是所测 miRNA 之间的交叉信号，并不覆盖所有患者样本中的潜在干扰。",
+          "figure_ids": [
+            "F05",
+            "F06"
+          ]
+        },
+        {
+          "id": "patient_comparison",
+          "title": "患者结果如何解读：分子浓度差、方法一致与诊断效能",
+          "markdown": "miRNA 研究的 Table 3 包含 8 份患者样本，其中 6 份诊断阳性、2 份阴性。正文笼统写“8 位阿尔茨海默病患者”，而表中明确包含阴性样本；解读以逐行诊断列为准。阳性样本总体呈较高分子浓度，但各 miRNA 的变化幅度并不一致。患者 3 的 34c-5p 为 0.655 ng/mL，200c-3p 为 0.965 ng/mL，30e-5p 仅为 0.0001834 ng/mL，说明同一患者不能用统一倍数描述全部标志物。 [患者结果与方法比较](ref:R03)\n\n这组数据没有提供预先设定且独立验证的分类阈值、ROC 曲线或连续入组队列。因此，它支持所测样本存在分子水平差异，尚不能计算稳定的早期诊断敏感度、特异度，也没有证明能预测认知下降。阴性样本很少，还无法描述健康人群年龄、合并疾病和药物造成的背景分布。\n\n作者另用电化学发光检测法比较同批样本，并报告回归斜率接近 1、截距接近 0。两种读出方法接近，回答的是相同分子测量的一致程度；疾病诊断仍需要对照临床分类。同理，加标回收与患者浓度测量之间也存在区别：Table 1 的回收率覆盖约 83%–120%，证明指定条件下的测回表现，却不能消除患者来源差异。对于同一研究，校准、回收、方法比较和患者分组分别提供不同证据，不能把它们重复计作相互独立的临床验证。",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "原文 Figure 7｜融合蛋白阳性、阴性细胞样本与空白对照",
+          "interpretation": "A 图说明被测对象和打印载体；B 图横轴是细胞来源与独立样本编号，柱形填充区分重复测量和均值。NB-4 信号明显高于各阴性背景，但 MV4-11 的背景高于 PBS。应比较真实阴性生物样本，不能只比较无蛋白空白。误差线来自重复测量，图中没有临床患者诊断人数。"
+        },
+        "F02": {
+          "caption": "原文 Figure 8｜绝对荧光信号与阳性／阴性比值",
+          "interpretation": "A 图共用 RFU 纵轴，玻璃中的阳性柱显著高于打印芯片；B 图改用无量纲比值。打印芯片的 NB-4/HL-60 比值仍较高，但 NB-4/MV4-11 明显较低，表明材料改变后，不同阴性背景对区分度的影响不同。两种纵轴不能互相替代，柱高差也不是浓度检测限。"
+        },
+        "F03": {
+          "caption": "原文 Figure 6｜旧、新多蛋白阵列的信号空间分布",
+          "interpretation": "绿色与红色箭头标记入口和出口。A 图串联路径上亮度随位置变化，B 图改版布局的检测区域较均匀。比较重点是同一幅图内部的空间分布，而非跨图绝对亮度；图中没有共同曝光标定，也没有提供可计算位置变异系数的数值。"
+        },
+        "F04": {
+          "caption": "原文 Figure 7｜不同蛋白的独立对数校准",
+          "interpretation": "A–E 依次对应 PEDF、CA-125、IL-8、CD-14、Cyr61。横轴是浓度的对数刻度，纵轴均为相对化学发光强度，但倍率不同。拟合式中的 ln(x) 解释了为何视觉上的直线不代表原始浓度线性。IL-8 的拟合较贴合，PEDF 的散点偏离较明显；这些差别属于校准，不是疾病分类。"
+        },
+        "F05": {
+          "caption": "原文 Figure 4｜miRNA 信号随时间先下降后回升",
+          "interpretation": "不同颜色表示 miRNA 34c-5p 的不同浓度，横轴为分钟。各曲线具有共同的早期下降和后期回升，且起点不重合，直接比较初始读数会混入背景差。该图支持分析信号的时间依赖；它不是患者连续监测曲线，也没有包含样本提取所需时间。"
+        },
+        "F06": {
+          "caption": "原文 Figure 5｜miRNA 校准斜率与拟合差异",
+          "interpretation": "A–C 分别为 miRNA 34c-5p、30e-5p 和 200c-3p。浓度横轴为对数刻度，图上给出不同的 ln(x) 拟合系数；单一孔板的多重测量仍需要不同标志物各自的校准。误差线来自重复测量，不能据此估计患者群体分布；横轴范围也不能直接当作未经处理血浆的浓度范围。"
+        }
+      }
+    },
+    "en": {
+      "title": "How can chips enable rapid pathogen and molecular detection?",
+      "direction": "Rapid detection and sensing",
+      "sections": [
+        {
+          "id": "measurement_target",
+          "title": "What printing contributes: instrument integration, molecular recognition and disease classification",
+          "markdown": "The papers addressing this question examine different levels of “detection”. The portable qPCR instrument study primarily tests whether a readout system assembled from printed and otherwise manufactured components can produce reproducible molecular detection results, with experimental comparisons against conventional equipment. Its findings concern instrument and analytical-method validation. The paper does not report diagnostic sensitivity or specificity in cohorts of infected and uninfected people. Describing it as having established patient infection diagnosis would bypass clinical validation. [Original portable-instrument study](ref:R04)\n\nAnother line of research directly compares detection of the leukaemia-associated fusion protein PML::RARA in printed and glass chips. The measured quantity is a protein signal, rather than a chromosomal translocation, DNA or RNA. PML::RARA corresponds to the specific subtype acute promyelocytic leukaemia; AML in the paper's title does not mean that all acute myeloid leukaemia has been covered. Printing provides the fluidic and optical carrier, while the assay determines the recognition target. [Fusion-protein study](ref:R01)\n\nOriginal Figure 7 uses samples derived from positive NB-4 cells and negative HL-60, MV4-11 and Jurkat cells, alongside a protein-free PBS control. The cell-derived samples address whether relevant biological samples can be distinguished; PBS addresses only the background in the absence of sample protein. Mean NB-4 signal is approximately 227 RFU, compared with approximately 6.5, 19 and 12.4 RFU for the respective negative cell controls and approximately 5.8 RFU for PBS. Background differs among negative samples, so using only the cleanest blank would exaggerate separation. Repeated measurements in the figure also do not represent an equal number of independent patients.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "glass_comparator",
+          "title": "Replacing glass with printed resin: lower absolute signal and separation from controls",
+          "markdown": "Figure 8 of the same fusion-protein study compares glass and printed-resin results separately. The positive sample produces approximately 1400 RFU in glass and approximately 220 RFU in the printed chip. These approximate values imply a difference of approximately 6.4-fold, inconsistent with the body's description of “approximately 10-fold”. The glass data come from the authors' previously published study, making this a material-platform comparison across studies, rather than a clinical trial with random allocation within the same experiment. [Glass–printed-chip comparison](ref:R01)\n\nThe positive-to-negative ratios do not decrease in proportion to the reduction in absolute signal. The NB-4/PBS ratio is approximately 49 in glass and approximately 38 in the printed chip; NB-4/MV4-11 is approximately 14 in the printed chip. Background varies with both material and sample, preserving some signal ratios while another negative cell background reduces separation. The lower portion of Figure 8 reveals this distinction more clearly than the height of the positive-sample bars alone.\n\nThe authors attribute signal attenuation to optical absorption by the resin, but do not report directly comparable limits of detection across a PML::RARA concentration series. The discussion's wording that the printed chip has a “lower limit of detection” also conflicts in direction with the abstract's statement of reduced sensitivity. The supported observations are weaker printed-chip signals and retained separation between the tested positive and negative samples; neither a better nor a worse concentration detection limit can be supplied from these observations. RFU is an instrument-dependent readout, and cross-platform interpretation also depends on optical background, readout settings and control normalisation.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "spatial_variation",
+          "title": "Multiplex protein arrays: positional effects can resemble molecular differences",
+          "markdown": "The multiplex protein immunoarray study examines PEDF, CA-125, IL-8, CD-14 and Cyr61 together. Early serial detection positions show substantial spatial brightness differences: signals near the beginning and end of the same device are not uniform. Original Figure 6 juxtaposes brightness distributions from the earlier and revised layouts, showing that geometry and fluid distribution can introduce positional effects. If different proteins occupy fixed, different positions, positional bias could be mistaken for differences in protein abundance. [Multiplex protein array and original Figure 6](ref:R02)\n\nThis figure can show whether brightness changes systematically along the layout, but cannot support calculation of a positional coefficient of variation. It provides no numerical values for individual positions, common exposure calibration or distribution across independent devices. Greater uniformity in the revised image also does not establish equal response slopes for different proteins. Quantification still requires separate calibration curves for each protein and a distinction between replicate wells within a device and replication across devices.\n\nReported spike recoveries for the proteins generally fall within 100 ± 20%, but recovery is an analytical performance measure. It indicates whether a known added amount can be recovered by measurement, not the ability to distinguish people with cancer from healthy people. Potential applications to multiple cancers discussed in the text, and sensitivity and specificity values cited from earlier literature in the appendix, cannot be treated as patient diagnostic results already achieved by this device.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "multiplex_calibration",
+          "title": "Different detection limits within one array: logarithmic calibration and clinical concentrations use different scales",
+          "markdown": "Figure 7 uses a logarithmic horizontal axis, and its fitted equations contain ln(x). A straight line here describes signal versus the logarithm of concentration, rather than signal proportional to untransformed concentration. For example, IL-8 has R² = 0.9926 and PEDF R² = 0.9266. The closer fit for the former does not establish higher disease diagnostic accuracy. [Calibration curves and Table A3](ref:R02)\n\n| Protein | Detection limit reported in Table A3 / fg·mL⁻¹ | Conditions that must remain explicit in interpretation |\n|---|---:|---|\n| PEDF | 3 | Patient levels in the literature use μg/mL; original-sample and assay-system concentrations must be distinguished |\n| CA-125 | 1.5 | Clinical thresholds use U/mL and cannot be directly converted to mass concentration |\n| IL-8 | 1.5 | High R² describes the calibration fit, not patient classification performance |\n| CD-14 | 0.01 | The broad range listed in the appendix differs from the range actually displayed in the figure |\n| Cyr61 | 4 | Calibration is independent; another protein's slope cannot be substituted |\n\nTable A3 lists a CD-14 range of 0.01 fg/mL–100 pg/mL, but the concentration points and horizontal axis shown in the figure do not cover that entire interval. The table's claim and the plotted evidence therefore need separate interpretation; interpolation cannot supply an unshown low end. Converting CA-125 activity units to mass units likewise requires a relationship for the specific reference material. Without it, dividing the lowest mass detection limit by a clinical threshold yields a ratio with no meaningful comparability.\n\nSpike recovery also depends on concentration. In Table 1, CD-14 recoveries at different spike levels are 115%, 84%, 82% and 94%; PEDF recoveries are 111%, 88%, 89% and 116%. Falling within an overall acceptance interval does not mean that individual levels are unbiased. Near a decision threshold, bias direction and variability matter more than a single minimum detection limit.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "time_and_readout",
+          "title": "Amplification-free miRNA detection: how signal processing and timing define “rapid”",
+          "markdown": "The miRNA study uses fluorescence readout in a printed well plate to detect Alzheimer's disease-associated 34c-5p, 30e-5p and 200c-3p. The curves in original Figure 4 first decrease and then increase, indicating substantial time dependence. The authors do not use the initial reading as the result; instead, they compare a later time window with an earlier signal plateau. The body uses the difference between 140–150 min and 90–100 min, while the caption describes the subtraction in the opposite direction. Interpretation should follow the definition in the results section. [miRNA time courses and calibration](ref:R03)\n\nThus, “without RNA amplification” does not mean instantaneous readout or establish a complete patient-sample-to-answer workflow. The patient component uses previously extracted RNA, whereas calibration uses a 0.1% pooled human plasma matrix. Their matrices and preparation states differ. Plate-reading time cannot replace total turnaround time, and a low-concentration response to standards cannot be treated directly as the working range in original plasma.\n\nFigure 5 reports detection limits of 0.74, 0.70 and 7.4 fg/mL, respectively, with corresponding calibration R² values of 0.9688, 0.9769 and 0.9686. The equations again use ln(x), rather than an ordinary linear response across the entire concentration range. The authors report an average relative standard deviation of approximately 5% between plates (n = 6) and approximately 3% between well positions. These describe repeatability at device and well-position levels, respectively, and cannot be combined into a single “accuracy”. Cross-reactivity in Table 2 is 2.5%–4.7%, referring to cross-signals among the tested miRNAs rather than all potential interferences in patient samples.",
+          "figure_ids": [
+            "F05",
+            "F06"
+          ]
+        },
+        {
+          "id": "patient_comparison",
+          "title": "Interpreting patient results: molecular concentration differences, method agreement and diagnostic performance",
+          "markdown": "Table 3 of the miRNA study contains 8 patient samples, of which 6 are diagnosis-positive and 2 diagnosis-negative. The body broadly describes “8 patients with Alzheimer's disease”, but the table explicitly includes negative samples; interpretation should follow the diagnosis column for each row. Positive samples generally have higher molecular concentrations, but the magnitude of change differs among miRNAs. For patient 3, 34c-5p is 0.655 ng/mL and 200c-3p is 0.965 ng/mL, whereas 30e-5p is only 0.0001834 ng/mL. A common fold change therefore cannot describe all biomarkers in the same patient. [Patient results and method comparison](ref:R03)\n\nThe dataset provides no prespecified, independently validated classification threshold, ROC curve or consecutively enrolled cohort. It supports molecular-level differences among the measured samples, but cannot yet provide stable estimates of sensitivity and specificity for early diagnosis, and does not establish prediction of cognitive decline. The small number of negative samples also cannot describe background distributions associated with age, comorbidities and medication in healthy populations.\n\nThe authors additionally compare the same samples using an electrochemiluminescence assay, reporting regression slopes close to 1 and intercepts close to 0. Agreement between readout methods concerns the extent to which they measure the same molecules consistently; disease diagnosis still requires comparison against clinical classification. Spike recovery likewise differs from measurement of patient concentrations: recoveries of approximately 83%–120% in Table 1 establish recovery performance under specified conditions, but do not eliminate differences associated with patient origin. Within this study, calibration, recovery, method comparison and patient grouping provide different kinds of evidence and cannot be counted repeatedly as mutually independent clinical validations.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Original Figure 7 | Fusion-protein-positive samples, negative cellular samples and blank control",
+          "interpretation": "Panel A identifies the measured target and printed carrier. In B, the horizontal axis identifies cellular sources and independent sample numbers; bar fills distinguish repeated readings and means. NB-4 is clearly above the negative backgrounds, but MV4-11 background exceeds PBS. Relevant negative biological samples matter, rather than protein-free blank alone. Error bars describe repeated measurements, and the figure contains no count of clinically diagnosed patients."
+        },
+        "F02": {
+          "caption": "Original Figure 8 | Absolute fluorescence and positive-to-negative ratios",
+          "interpretation": "Panel A uses a shared RFU axis, with a much larger positive bar in glass than in printed chips. B instead uses dimensionless ratios. The printed-chip NB-4/HL-60 ratio remains relatively high, whereas NB-4/MV4-11 is much lower: changing material affects separation differently for different negative backgrounds. These vertical axes are not interchangeable, and bar-height differences are not concentration detection limits."
+        },
+        "F03": {
+          "caption": "Original Figure 6 | Spatial signal distribution in old and revised protein arrays",
+          "interpretation": "Green and red arrows identify inlet and outlet. Brightness varies with position along the serial path in A, whereas the revised detection region in B is more uniform. The comparison concerns spatial variation within each image, rather than absolute brightness between images. No common exposure calibration or numerical values for calculating a positional coefficient of variation are supplied."
+        },
+        "F04": {
+          "caption": "Original Figure 7 | Separate logarithmic calibration for different proteins",
+          "interpretation": "Panels A–E correspond to PEDF, CA-125, IL-8, CD-14 and Cyr61. Concentration is logarithmic; the vertical axes all show relative chemiluminescence intensity but use different multipliers. The ln(x) equations explain why a visually straight line does not mean linear response to untransformed concentration. IL-8 follows its fit more closely, while PEDF shows larger scatter. These are calibration differences, not disease classification."
+        },
+        "F05": {
+          "caption": "Original Figure 4 | miRNA signals decline before rising",
+          "interpretation": "Colors represent different miRNA 34c-5p concentrations and the horizontal axis is time in minutes. The traces share an early decline and later rise, but begin at different levels, so comparing initial readings would include background differences. This demonstrates time-dependent analytical signal; it is not continuous patient monitoring and does not include sample-extraction time."
+        },
+        "F06": {
+          "caption": "Original Figure 5 | miRNA calibration slopes and fit differences",
+          "interpretation": "Panels A–C represent miRNA 34c-5p, 30e-5p and 200c-3p. The concentration axes are logarithmic and the ln(x) coefficients differ: multiplex measurements on one plate still require marker-specific calibration. Error bars come from repeated readings rather than a patient-population distribution. The plotted concentration span is not directly a range for untreated plasma."
+        }
+      }
+    },
+    "de": {
+      "title": "Wie ermöglichen Chips einen schnellen Erreger- und Molekülnachweis?",
+      "direction": "Schnellnachweis und Sensorik",
+      "sections": [
+        {
+          "id": "measurement_target",
+          "title": "Welche Rolle spielt der Druck: Geräteintegration, molekulare Erkennung und Krankheitsklassifikation",
+          "markdown": "Die Arbeiten zu dieser Frage behandeln unterschiedliche Ebenen der „Detektion“. Die Studie zu einem tragbaren qPCR-Gerät prüft vor allem, ob ein Auslesesystem aus gedruckten und anderweitig gefertigten Komponenten reproduzierbare molekulare Messergebnisse liefert, und vergleicht es experimentell mit einem konventionellen Gerät. Die Ergebnisse betreffen die Validierung des Geräts und des analytischen Verfahrens. Diagnostische Sensitivität und Spezifität anhand von Kohorten infizierter und nicht infizierter Personen werden nicht berichtet. Die Aussage, damit sei bereits die Infektionsdiagnostik bei Patienten realisiert, würde den Schritt der klinischen Validierung überspringen. [Originalstudie zum tragbaren Gerät](ref:R04)\n\nEin anderer Forschungsstrang vergleicht unmittelbar den Nachweis des leukämieassoziierten Fusionsproteins PML::RARA in gedruckten Chips und Glaschips. Gemessen wird hier ein Proteinsignal, keine Chromosomentranslokation und weder DNA noch RNA. PML::RARA ist dem spezifischen Subtyp der akuten Promyelozytenleukämie zugeordnet; die Bezeichnung AML im Titel bedeutet nicht, dass bereits sämtliche Formen der akuten myeloischen Leukämie erfasst werden. Der Druck stellt den fluidischen und optischen Träger bereit; das erkannte Ziel wird hingegen durch die Nachweisreaktion bestimmt. [Studie zum Fusionsprotein](ref:R01)\n\nDie ursprüngliche Figure 7 verwendet Proben aus positiven NB-4-Zellen sowie negativen HL-60-, MV4-11- und Jurkat-Zellen und zusätzlich eine proteinfreie PBS-Kontrolle. Die zellbasierten Proben beantworten, ob relevante biologische Proben unterschieden werden können; PBS zeigt lediglich, wie hoch der Hintergrund ohne Probenprotein ist. NB-4 erreicht im Mittel ungefähr 227 RFU, die negativen Zellkontrollen ungefähr 6.5, 19 und 12.4 RFU und PBS ungefähr 5.8 RFU. Verschiedene negative Proben besitzen somit unterschiedliche Hintergrundsignale. Die Trennung darf deshalb nicht allein anhand des saubersten Leerwerts überzeichnet werden. Wiederholte Messungen in der Abbildung entsprechen außerdem nicht derselben Anzahl unabhängiger Patienten.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "glass_comparator",
+          "title": "Vom Glas zum gedruckten Harz: schwächeres absolutes Signal und Trennung von den Kontrollen",
+          "markdown": "Figure 8 derselben Fusionsproteinstudie vergleicht die Ergebnisse in Glas und gedrucktem Harz getrennt. Positive Proben liefern in Glas ungefähr 1400 RFU und im gedruckten Chip ungefähr 220 RFU. Aus diesen Näherungswerten ergibt sich ein Verhältnis von ungefähr 6.4; die Angabe „ungefähr 10-fach“ im Fließtext stimmt mit den genannten Zahlen nicht überein. Die Glasdaten stammen aus einer früher veröffentlichten Studie der Autoren. Es handelt sich daher um einen studienübergreifenden Vergleich von Materialplattformen, nicht um eine klinische Untersuchung mit randomisierter Zuteilung innerhalb desselben Versuchs. [Vergleich von Glas und gedrucktem Chip](ref:R01)\n\nMit dem absoluten Signal sinkt das Verhältnis positiver zu negativer Signale nicht im gleichen Maß. Das Verhältnis NB-4/PBS beträgt in Glas ungefähr 49 und im gedruckten Chip ungefähr 38; NB-4/MV4-11 erreicht im gedruckten Chip ungefähr 14. Der Hintergrund verändert sich mit Material und Probe, sodass einige Signalverhältnisse erhalten bleiben, während der Hintergrund einer anderen negativen Zellprobe die Trennung verringert. Der untere Teil von Figure 8 verdeutlicht diese Unterschiede besser als die isolierte Betrachtung der positiven Balkenhöhen.\n\nDie Autoren erklären die Signalabschwächung mit der optischen Absorption des Harzes, berichten jedoch keine anhand einer PML::RARA-Konzentrationsreihe unmittelbar vergleichbaren Nachweisgrenzen. Die Formulierung in der Diskussion, der gedruckte Chip habe eine niedrigere Nachweisgrenze, widerspricht zudem in ihrer Richtung der im Abstract genannten geringeren Empfindlichkeit. Belegt sind ein schwächeres Signal im gedruckten Chip und eine weiterhin vorhandene Trennung der untersuchten positiven und negativen Proben. Daraus lässt sich keine bessere oder schlechtere Konzentrationsnachweisgrenze ergänzen. RFU sind geräteabhängige Messwerte; ihre plattformübergreifende Interpretation hängt auch vom optischen Hintergrund, den Ausleseeinstellungen und der Normalisierung anhand von Kontrollen ab.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "spatial_variation",
+          "title": "Multiplex-Proteinarrays: Positionseffekte können molekulare Unterschiede vortäuschen",
+          "markdown": "Die Studie zum Multiplex-Immunoarray untersucht gleichzeitig PEDF, CA-125, IL-8, CD-14 und Cyr61. Bei der frühen seriellen Anordnung der Nachweispositionen zeigten sich deutliche räumliche Helligkeitsunterschiede: Innerhalb desselben Geräts waren die Signale im vorderen und hinteren Bereich nicht gleichmäßig. Die ursprüngliche Figure 6 stellt die Helligkeitsverteilungen der früheren und der überarbeiteten Anordnung gegenüber. Sie zeigt, dass Geometrie und Flüssigkeitsverteilung Positionseffekte verursachen können. Werden unterschiedliche Proteine stets an unterschiedlichen Stellen untersucht, können solche Positionsabweichungen fälschlich als Unterschiede des Proteingehalts erscheinen. [Multiplex-Proteinarray und ursprüngliche Figure 6](ref:R02)\n\nDie Abbildung eignet sich zur Beurteilung systematischer Helligkeitsänderungen entlang der Anordnung, reicht jedoch nicht zur Berechnung eines positionsbezogenen Variationskoeffizienten aus. Sie enthält weder Einzelwerte für jede Position noch eine einheitliche Belichtungskalibrierung oder Verteilungen aus unabhängigen Geräten. Eine gleichmäßigere neue Darstellung bedeutet auch nicht, dass alle Proteine dieselbe Ansprechsteigung besitzen. Quantitative Bestimmungen müssen weiterhin die jeweilige proteinspezifische Kalibrierkurve verwenden und wiederholte Messvertiefungen innerhalb eines Geräts von Wiederholungen zwischen verschiedenen Geräten unterscheiden.\n\nDie Wiederfindungsraten nach Aufstockung liegen für die untersuchten Proteine insgesamt innerhalb von 100 ± 20%. Dies ist jedoch ein analytisches Leistungsmerkmal: Es beschreibt, inwieweit eine bekannte zugesetzte Menge wiedergefunden wird, nicht die Fähigkeit zur Unterscheidung von Krebspatienten und gesunden Personen. Die im Text vorgestellten potenziellen Anwendungen bei mehreren Krebsarten sowie die im Anhang aus früherer Literatur übernommenen Sensitivitäts- und Spezifitätswerte sind keine mit diesem Gerät bereits erzielten diagnostischen Patientenergebnisse.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "multiplex_calibration",
+          "title": "Unterschiedliche Nachweisgrenzen im selben Array: logarithmische Kalibrierung und klinische Konzentrationen",
+          "markdown": "Die horizontale Achse von Figure 7 ist logarithmisch skaliert; die Anpassungsgleichungen enthalten ln(x). Die Geraden beschreiben somit eine Beziehung zwischen Signal und Logarithmus der Konzentration, keine Proportionalität zur ursprünglichen Konzentration. Beispielsweise beträgt R² für IL-8 0.9926 und für PEDF 0.9266. Die bessere Anpassung beim erstgenannten Marker belegt keine höhere diagnostische Genauigkeit für eine Erkrankung. [Kalibrierkurven und Table A3](ref:R02)\n\n| Protein | In Table A3 berichtete Nachweisgrenze / fg·mL⁻¹ | Bei der Interpretation zu berücksichtigende Bedingungen |\n|---|---:|---|\n| PEDF | 3 | Patientenwerte aus der Literatur werden in μg/mL angegeben; Konzentrationen in der Ausgangsprobe und im Nachweissystem sind zu unterscheiden |\n| CA-125 | 1.5 | Klinische Schwellenwerte werden in U/mL angegeben und lassen sich nicht unmittelbar in eine Massenkonzentration umrechnen |\n| IL-8 | 1.5 | Ein hohes R² beschreibt die Kalibrieranpassung, nicht die Patientenklassifikation |\n| CD-14 | 0.01 | Der breite Bereich der Anhangstabelle unterscheidet sich vom tatsächlich dargestellten Bereich der Abbildung |\n| Cyr61 | 4 | Eigenständige Kalibrierung; die Steigung anderer Proteine ist nicht übertragbar |\n\nFür CD-14 nennt Table A3 einen Bereich von 0.01 fg/mL–100 pg/mL; die gezeigten Konzentrationspunkte und die horizontale Achse decken jedoch nicht dieses gesamte Intervall ab. Die Tabellenangabe und der grafisch belegte Bereich sind daher getrennt zu lesen. Der nicht dargestellte untere Bereich darf nicht durch Interpolation ergänzt werden. Für CA-125 erfordert die Umrechnung zwischen Aktivitäts- und Masseneinheiten zudem eine Beziehung für das konkrete Referenzmaterial. Ohne diese Beziehung ergibt die Division der niedrigsten Massenkonzentrationsnachweisgrenze durch den klinischen Schwellenwert keinen sinnvoll vergleichbaren Faktor.\n\nAuch die Wiederfindung hängt von der Konzentration ab. In Table 1 betragen die Wiederfindungsraten von CD-14 bei unterschiedlichen Aufstockungsniveaus 115%, 84%, 82% und 94%, jene von PEDF 111%, 88%, 89% und 116%. Dass alle Werte insgesamt im Akzeptanzbereich liegen, bedeutet nicht, dass auf den einzelnen Niveaus keine Abweichung vorliegt. In der Nähe einer Entscheidungsgrenze sind Richtung und Streuung dieser Abweichung wichtiger als eine einzelne niedrigste Nachweisgrenze.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "time_and_readout",
+          "title": "miRNA-Nachweis ohne Amplifikation: Signalverarbeitung und Zeitbedarf bestimmen, was „schnell“ bedeutet",
+          "markdown": "Die miRNA-Studie untersucht die mit der Alzheimer-Krankheit assoziierten 34c-5p, 30e-5p und 200c-3p in einer gedruckten Mikrotiterplatte mit Fluoreszenzauslesung. Die Kurven in der ursprünglichen Figure 4 fallen zunächst ab und steigen anschließend wieder an; das Signal ist somit deutlich zeitabhängig. Die Autoren verwenden nicht den Anfangswert als Ergebnis, sondern vergleichen die Signaldifferenz zwischen einem späteren Zeitfenster und dem früheren Plateau. Im Fließtext wird die Differenz zwischen 140–150 min und 90–100 min verwendet; die Bildlegende beschreibt die Subtraktionsrichtung umgekehrt. Für die Interpretation ist die Definition im Ergebnisteil heranzuziehen. [miRNA-Zeitverläufe und Kalibrierung](ref:R03)\n\n„Ohne RNA-Amplifikation“ bedeutet daher weder sofortige Auslesung noch einen bereits vollständig abgebildeten Ablauf von der Patientenprobe bis zum Ergebnis. Für den Patiententeil verwendet die Studie zuvor extrahierte RNA, während die Kalibrierung in einem System mit 0.1% gepooltem Humanplasma erfolgt. Matrix und Vorbehandlungszustand unterscheiden sich somit. Die Dauer der Plattenauslesung ersetzt nicht die gesamte Bearbeitungszeit; die Reaktion auf niedrig konzentrierte Standards beschreibt auch nicht unmittelbar den Arbeitsbereich im ursprünglichen Plasma.\n\nFigure 5 nennt Nachweisgrenzen von 0.74, 0.70 und 7.4 fg/mL; die zugehörigen Kalibrierwerte für R² betragen 0.9688, 0.9769 und 0.9686. Auch hier enthalten die Gleichungen ln(x); es liegt keine gewöhnliche lineare Antwort über den gesamten Konzentrationsbereich vor. Die Autoren berichten eine mittlere relative Standardabweichung zwischen Platten von ungefähr 5% (n = 6) und zwischen verschiedenen Messvertiefungen derselben Platte von ungefähr 3%. Diese Werte beschreiben die Wiederholbarkeit auf Geräte- beziehungsweise Positionsebene und dürfen nicht zu einer „Genauigkeit“ zusammengefasst werden. Die Kreuzreaktivität in Table 2 beträgt 2.5%–4.7% und betrifft Kreuzsignale zwischen den untersuchten miRNAs; sie erfasst nicht alle möglichen Störeinflüsse in Patientenproben.",
+          "figure_ids": [
+            "F05",
+            "F06"
+          ]
+        },
+        {
+          "id": "patient_comparison",
+          "title": "Patientenergebnisse: Konzentrationsunterschiede, Methodenübereinstimmung und diagnostische Leistung",
+          "markdown": "Table 3 der miRNA-Studie enthält 8 Patientenproben, davon 6 mit positiver und 2 mit negativer Diagnose. Der Fließtext spricht pauschal von „8 Alzheimer-Patienten“, während die Tabelle ausdrücklich negative Proben einschließt. Maßgeblich ist daher die Diagnoseangabe jeder Tabellenzeile. Positive Proben zeigen insgesamt höhere molekulare Konzentrationen, doch die Veränderungen unterscheiden sich zwischen den miRNAs. Bei Patient 3 beträgt die Konzentration von 34c-5p 0.655 ng/mL und von 200c-3p 0.965 ng/mL, jene von 30e-5p dagegen nur 0.0001834 ng/mL. Selbst innerhalb eines Patienten lassen sich somit nicht alle Marker durch denselben Veränderungsfaktor beschreiben. [Patientenergebnisse und Methodenvergleich](ref:R03)\n\nDer Datensatz enthält weder einen vorab festgelegten und unabhängig validierten Klassifikationsschwellenwert noch eine ROC-Kurve oder eine Kohorte konsekutiv eingeschlossener Personen. Er stützt daher molekulare Unterschiede zwischen den untersuchten Proben, erlaubt aber keine belastbare Bestimmung der Sensitivität und Spezifität einer Frühdiagnose und belegt auch keine Vorhersage kognitiver Verschlechterung. Die geringe Anzahl negativer Proben beschreibt zudem nicht die Hintergrundverteilung gesunder Personen unter dem Einfluss von Alter, Begleiterkrankungen und Medikamenten.\n\nDie Autoren vergleichen dieselben Proben zusätzlich mit einem Elektrochemilumineszenzverfahren und berichten eine Regressionssteigung nahe 1 sowie einen Achsenabschnitt nahe 0. Die Nähe beider Ausleseverfahren beschreibt die Übereinstimmung bei der Messung derselben Moleküle; für die Krankheitsdiagnose bleibt der Vergleich mit der klinischen Klassifikation erforderlich. Ebenso sind Wiederfindung nach Aufstockung und Konzentrationsmessung in Patientenproben unterschiedliche Nachweise: Die Wiederfindungsraten in Table 1 reichen von ungefähr 83%–120% und belegen die Wiederfindung unter den angegebenen Bedingungen, beseitigen jedoch keine Unterschiede durch die Herkunft der Patientenproben. Kalibrierung, Wiederfindung, Methodenvergleich und Patientengruppierung liefern innerhalb dieser Studie jeweils unterschiedliche Evidenz und dürfen nicht mehrfach als voneinander unabhängige klinische Validierungen gezählt werden.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Originale Figure 7 | Fusionsproteinpositive Proben, negative Zellproben und Leerwert",
+          "interpretation": "Teil A zeigt das Messziel und den gedruckten Träger. In B kennzeichnet die horizontale Achse Zellquellen und unabhängige Probennummern; Balkenfüllungen unterscheiden Wiederholungsmessungen und Mittelwerte. NB-4 liegt deutlich über den negativen Hintergründen, während MV4-11 einen höheren Hintergrund als PBS aufweist. Relevant sind negative biologische Proben, nicht nur der proteinfreie Leerwert. Fehlerbalken beschreiben Wiederholungsmessungen; klinische Patientenzahlen enthält die Abbildung nicht."
+        },
+        "F02": {
+          "caption": "Originale Figure 8 | Absolute Fluoreszenz und Positiv-negativ-Verhältnisse",
+          "interpretation": "Teil A verwendet eine gemeinsame RFU-Achse; der positive Balken in Glas ist deutlich höher als im gedruckten Chip. B zeigt dagegen dimensionslose Verhältnisse. NB-4/HL-60 bleibt im gedruckten Chip relativ hoch, NB-4/MV4-11 fällt deutlich geringer aus. Der Materialwechsel beeinflusst die Trennung somit je nach negativem Hintergrund unterschiedlich. Die vertikalen Achsen sind nicht austauschbar; Balkenhöhenunterschiede sind keine Konzentrationsnachweisgrenzen."
+        },
+        "F03": {
+          "caption": "Originale Figure 6 | Räumliche Signalverteilung im alten und überarbeiteten Proteinarray",
+          "interpretation": "Grüne und rote Pfeile markieren Einlass und Auslass. In A verändert sich die Helligkeit entlang des seriellen Pfads; in B ist der überarbeitete Nachweisbereich gleichmäßiger. Verglichen wird die räumliche Verteilung innerhalb jedes Bildes, nicht die absolute Helligkeit zwischen Bildern. Eine gemeinsame Belichtungskalibrierung und Zahlenwerte zur Berechnung eines positionsbezogenen Variationskoeffizienten fehlen."
+        },
+        "F04": {
+          "caption": "Originale Figure 7 | Separate logarithmische Kalibrierung verschiedener Proteine",
+          "interpretation": "A–E entsprechen PEDF, CA-125, IL-8, CD-14 und Cyr61. Die Konzentrationsachsen sind logarithmisch. Die vertikalen Achsen zeigen relative Chemilumineszenzintensität, jedoch mit unterschiedlichen Multiplikatoren. Die ln(x)-Gleichungen erklären, weshalb eine optisch gerade Linie keine Linearität zur untransformierten Konzentration bedeutet. IL-8 folgt der Anpassung enger, PEDF zeigt stärkere Streuung. Das betrifft die Kalibrierung, nicht die Krankheitsklassifikation."
+        },
+        "F05": {
+          "caption": "Originale Figure 4 | miRNA-Signale fallen zunächst ab und steigen anschließend",
+          "interpretation": "Die Farben kennzeichnen verschiedene Konzentrationen von miRNA 34c-5p; die horizontale Achse zeigt Minuten. Die Kurven teilen einen frühen Abfall und späteren Anstieg, beginnen aber auf unterschiedlichen Niveaus. Ein Vergleich der Anfangswerte würde daher Hintergrundunterschiede einschließen. Gezeigt wird die Zeitabhängigkeit des analytischen Signals, keine kontinuierliche Patientenüberwachung. Die Dauer der Probenextraktion ist nicht enthalten."
+        },
+        "F06": {
+          "caption": "Originale Figure 5 | Unterschiedliche miRNA-Kalibriersteigungen und Anpassungen",
+          "interpretation": "A–C zeigen miRNA 34c-5p, 30e-5p und 200c-3p. Die Konzentrationsachsen sind logarithmisch, die Koeffizienten von ln(x) unterschiedlich. Auch Multiplexmessungen auf derselben Platte benötigen markerspezifische Kalibrierungen. Fehlerbalken stammen aus Wiederholungsmessungen, nicht aus einer Patientenverteilung. Der dargestellte Konzentrationsbereich ist nicht unmittelbar auf unbehandeltes Plasma übertragbar."
+        }
+      }
+    }
+  }
+}

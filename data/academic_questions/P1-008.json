@@ -1,0 +1,289 @@
+{
+  "schema_version": 2,
+  "question_id": "P1-008",
+  "p": "P1",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_0eaa4461ea6466b4b2b4",
+    "doc_37b54a2c3c2bd15f25e7",
+    "doc_e7385f7cdedf8c71b29f",
+    "doc_f9b23a9b6d7132685df9"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Atomic Layer Deposition of a Silver Nanolayer on Advanced Titanium Orthopedic Implants Inhibits Bacterial Colonization and Supports Vascularized de Novo Bone Ingrowth",
+      "publisher": "Advanced Healthcare Materials",
+      "year": 2017,
+      "url": "https://doi.org/10.1002/adhm.201700033",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Protecting Orthopaedic Implants from Infection: Antimicrobial Peptide Mel4 Is Non-Toxic to Bone Cells and Reduces Bacterial Colonisation When Bound to Plasma Ion-Implanted 3D-Printed PAEK Polymers",
+      "publisher": "Cells",
+      "year": 2024,
+      "url": "https://doi.org/10.3390/cells13080656",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Vancomycin-encapsulated hydrogel loaded microarc-oxidized 3D-printed porous Ti6Al4V implant for infected bone defects: Reconstruction, anti-infection, and osseointegration",
+      "publisher": "Bioactive Materials",
+      "year": 2024,
+      "url": "https://doi.org/10.1016/j.bioactmat.2024.07.035",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "On-Demand Magnetically-Activated Drug Delivery from Additively Manufactured Porous Bone Implants to Tackle Antibiotic-Resistant Infections",
+      "publisher": "Advanced Materials Technologies",
+      "year": 2024,
+      "url": "https://doi.org/10.1002/admt.202301616",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R02",
+      "original_label": "Fig. 2",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/28d6/11049013/58f22dbca309/cells-13-00656-g002.jpg",
+      "asset_path": "assets/academic_figures/P1-008/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11049013/#cells-13-00656-f002",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R02",
+      "original_label": "Fig. 6",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/28d6/11049013/aae635149532/cells-13-00656-g006.jpg",
+      "asset_path": "assets/academic_figures/P1-008/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11049013/#cells-13-00656-f006",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Fig. 4",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/28d6/11049013/8556554cdde4/cells-13-00656-g004.jpg",
+      "asset_path": "assets/academic_figures/P1-008/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11049013/#cells-13-00656-f004",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Fig. 6",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/5f11/11388676/7473fd889ad4/gr6.jpg",
+      "asset_path": "assets/academic_figures/P1-008/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11388676/#fig6",
+      "license": "CC BY-NC-ND 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "植入物如何抑制细菌黏附和感染？",
+      "direction": "骨整合与抗感染",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "减少表面菌落、控制组织感染和触发释放是不同实验任务",
+          "markdown": "抗感染植入物可以把活性成分固定在表面，也可以从孔道或涂层向周围释放。前一种设计直接改变细菌与材料接触后的存活和定植，后一种设计还要回答药物何时到达周围组织、可持续多久。判断效果时，实验是否真的接种了细菌、回收的是表面菌还是组织菌，以及处理发生在感染形成前还是之后，都决定结论的范围。[银纳米层实验](ref:R01)[固定肽实验](ref:R02)\n\n| 本题研究 | 直接测量 | 不能由该项测量替代的结论 |\n|---|---|---|\n| 银纳米层 | 两种葡萄球菌的回收菌落及生物膜染色 | 所有菌种同等敏感 |\n| 固定Mel4 | 培养后从材料表面回收的活菌 | 患者感染发生率或成熟感染治愈率 |\n| 万古霉素水凝胶 | 接种动物的组织与植入物菌落、骨修复 | 已建立慢性生物膜的延迟救治 |\n| 磁触发储库 | 模型分子的释放及候选肽细胞效应 | 完整载肽装置已经清除感染 |\n\n这些实验分别检验表面定植、感染环境中的修复和递送控制。将它们并列，可以分析同一种“抗菌”表述背后实际解决了哪一部分问题，而不把培养皿中的对数下降直接换算为临床感染风险。[感染动物模型](ref:R03)[磁触发实验](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "银纳米层：表皮葡萄球菌有效，不等于MRSA也被进一步抑制",
+          "markdown": "Devlin-Mullin等在打印钛上进行500个循环的原子层沉积。沉积质量按平面、体相银密度换算约相当于13 nm厚层，而显微观察的纳米结构约40–90 nm；前者是等效厚度，后者是横向颗粒尺度，不能合并成一个实测均匀膜厚。[表征、菌培养与骨长入结果](ref:R01)\n\n研究将约10³个表皮葡萄球菌或耐甲氧西林金黄色葡萄球菌（MRSA）接种在材料上，培养96 h。银层使表皮葡萄球菌回收量降低约2 log，结晶紫测得的生物膜信号也降低，结果部分报告P<0.001。然而MRSA在裸钛上本来生长较慢，银层没有进一步显著降低其回收菌落或结晶紫信号，P>0.05。这个阴性对照直接限制了“银层广谱有效”的外推：同一材料、同一培养时间，对不同菌株可出现不同结果。\n\n活菌回收与结晶紫还回答不同问题。前者反映能形成菌落的回收细菌，后者反映染色保留的生物膜物质；二者在表皮葡萄球菌中方向一致，比单独一张扫描电镜图更能支持表面定植减少。\n\n体内部分是在大鼠胫骨2.5 mm缺损中观察多孔支架，12周时裸钛与银层组骨长入相近，无显著差异。菌实验使用实体试样，体内使用多孔试样，且体内并非接种感染模型。因此，该结果支持这一银用量未明显妨碍骨长入，不同时证明感染动物中的清菌效果。",
+          "figure_ids": []
+        },
+        {
+          "id": "s3",
+          "title": "Mel4固定：活性肽和固定方式都需要对照",
+          "markdown": "Kruse等在聚芳醚酮（PAEK）材料上比较未处理与等离子体浸没离子注入（PIII），再分别加入活性肽Mel4、无活性肽Mel1或不加肽。基底包括PEEK片材、熔融沉积打印PEEK和选择性激光烧结PEK。用同一处理组合跨越不同形貌，比只拿最光滑材料与最粗糙材料比较更有助于识别肽本身的作用。[固定方法与抗菌实验](ref:R02)\n\n金黄色葡萄球菌SA38以10⁵ cells/mL培养24 h后，试样经冲洗，强黏附细菌被涡旋重悬并涂板计数。三种基底等权合并、归一化后的结果显示：未处理表面加Mel4降低1.8 log，PIII加Mel4降低3.7 log，Mel1没有显著降低菌量。论文摘要概括为约4 log，正文更准确的合并值是3.7 log；它是回收CFU的变化，不是“感染率下降4 log”。\n\n原图2还能区分两个观察：没有Mel4时，较粗糙的SLS PEK回收菌更多；加入并固定Mel4后，粗糙度没有阻止明显的抑菌作用。合并结果并不意味着每种材料都恰好下降3.7 log，图中按材料分开的柱形仍需保留。扫描电镜支持细菌覆盖减少，但原作者明确不把这些照片用于定量，CFU才是这一结论的计数依据。\n\n这些对照支持PIII与活性肽组合增强表面保护。肽取向和共价固定改善接触作用是作者的机制解释，试验没有测得临床使用后每个孔内的肽覆盖量，也未对已成熟生物膜进行延迟处理。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "宿主细胞：黏附增加与矿化信号下降可以同时发生",
+          "markdown": "Mel4研究用Saos-2细胞分别考察黏附、增殖和矿化。黏附实验先无血清接触3 h，洗去未结合细胞，再培养48 h并测代谢荧光；因此读数包含后续存活和生长，不能等同于最初接触瞬间的直接细胞计数。跨基底归一化后，PIII加Mel4相对未处理、无肽参照的信号提高88%。[宿主细胞方法及原图4、6](ref:R02)\n\n细胞培养总时长35天，初期增殖监测未显示各时间点的显著降低。但经细胞数校正的茜素红矿物信号中，合并分析显示Mel4使信号降低34%，PIII使其提高20%；这两个百分比来自不同归一化比较，不能直接相加来预测组合效果。原图6分开显示材料、组合处理以及单独因素的汇总，避免把“黏附更好”误写成“所有成骨终点都更好”。\n\n作者在无细胞覆盖区域及仅有培养液的试样上观察到沉积特征，提出降低的茜素红信号可能包含无细胞矿物成核或蛋白沉积的减少。这个解释有形态学支持，但没有将全部沉积定量拆分成细胞来源与无细胞来源，不能据此把下降的矿物信号完全忽略。\n\n游离肽暴露与表面固定肽也不是同一种剂量。前者的细胞试验观察24和72 h，后者的作用还与结合量、取向和表面覆盖有关。研究证明了指定培养条件下的相容性与抗菌作用组合，没有以短期细胞代谢证明任何浓度、任何暴露时长均无毒。",
+          "figure_ids": [
+            "F03",
+            "F02"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "载万古霉素孔道：感染控制与骨修复在同一动物中被测量",
+          "markdown": "Zhang等比较微弧氧化多孔Ti6Al4V（TS-M）、加入空白水凝胶（TS-M/H）和加入载万古霉素水凝胶（TS-M/H/V）。三个组都经过微弧氧化，因此该实验隔离的是水凝胶及载药的增量作用，没有独立检验微弧氧化相对裸钛的抗感染贡献。药物释放先在前3天较快，随后减慢，观察延续约25天；这条体外曲线不能直接当作组织中的有效药物浓度。[制备、释放和感染实验](ref:R03)\n\n体外原图6将浮游菌与黏附菌分开：载药组的浮游菌代谢读数低于两个对照，而黏附菌读数在空白水凝胶与载药水凝胶之间相近，均低于TS-M。因而，空白凝胶本身的表面抗黏附贡献和药物作用应分开解释。a、b的纵轴是450 nm光密度，并非CFU，也不能和同图动物部分的菌落数混算。\n\n18只兔被分成三组，每组6只，在股骨髁5 mm缺损中注入MRSA后立即放入植入物，6周后检查。载药组骨组织与植入物的回收菌量均较低，原文报告P<0.01，但仍有少量菌生长，不能写成所有样本均完全无菌。孔内骨体积分数为49.2±3.3%，对应TS-M和TS-M/H分别为14.6±2.2%和16.4±3.2%。这把感染负荷较低与同一环境中的骨修复联系起来，而不是只用未感染细胞实验替代感染结局。\n\n接种与置入在同一次手术完成，因此这一设计主要检验污染发生时的局部控制；它没有先等待慢性感染或成熟生物膜形成，再用植入物作延迟救治。较好的骨量也不能单独归因于万古霉素直接刺激成骨，控制感染、减少骨溶解同样参与这个结果。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "磁触发储库：释放开关被证明，载肽清菌装置尚未被整体验证",
+          "markdown": "Šalandová等把储库和通道直接打印进Ti6Al4V试样，以聚乳酸-羟基乙酸共聚物（PLGA）薄膜封住开口。释放实验装入的是含蓝色食用染料的海藻酸盐水凝胶，染料是模型分子；LL-37和SAAP-148的细胞实验另行进行。不能把这两个部分合并写成“已经从植入物磁控释放抗菌肽并清除感染”。[储库、释放与候选肽实验](ref:R04)\n\n37 °C下观察20 h，无盖组释放约97%，有盖未触发组约5%。在初始5 h后，采用262 kHz、5 mT交变磁场作用30 min，触发组最终释放约99%。关键代价同时被测量：周围溶液温度升至75.0±0.4 °C，薄膜出现不可逆破坏。这个实验验证的是热驱动开盖与释放，不是已经验证在活体骨组织中可接受的温升，也不是一个能反复关闭再开启的可逆阀门。\n\n候选肽相容性以文献来源的1.6 μM最低杀菌浓度作为一项参照，而非在这套装置中重新测得的杀菌阈值。小鼠前成骨细胞对SAAP-148更敏感，约4 μM已接近细胞毒性边界；较高浓度和较长暴露的结果与短时低浓度不同。1.6 μM条件下的巨噬细胞标记和Runx2实验没有显示显著的强促炎或促成骨效应。因而，释放量、局部温度和实际肽浓度是彼此关联但分别测量的变量，该研究尚未把三者接到一个接种感染的动物终点上。",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Kruse等：Mel4与PIII对表面回收细菌的影响，原图2。",
+          "interpretation": "A按PEEK片材、FDM PEEK和SLS PEK分别展示Log(CFU/mL)，B为等权合并并相对UT归一化的对数变化。Mel1是无活性肽对照，Mel4加PIII的合并下降为3.7 log。C保留10 μm标尺，展示覆盖形态而非定量菌数。图把活性肽作用、固定处理和材料形貌分开，不能把合并降幅当作每种基底的固定值。[抗菌对照与计数](ref:R02)"
+        },
+        "F02": {
+          "caption": "Kruse等：35天后按细胞数校正的矿物信号，原图6。",
+          "interpretation": "A的纵轴是每百万细胞的茜素红信号，B为四种处理组合，C、D分别汇总Mel4与PIII的效应。E保留0.5 mm标尺，显示染色分布。Mel4与PIII在汇总矿物信号上方向相反，且各图使用不同归一化参照；这解释了为什么单项黏附改善不能代替矿化评价。染色也未独立区分细胞产生的矿物和培养条件下的无细胞沉积。[矿物信号与归一化](ref:R02)"
+        },
+        "F03": {
+          "caption": "Kruse等：宿主Saos-2细胞黏附相关信号，原图4。",
+          "interpretation": "A按材料展示相对荧光，B对组合处理归一化，C、D为因素汇总，E为48 h细胞形态并保留30 μm标尺。B中PIII加Mel4提高88%的参照是未处理且无肽组。初始3 h接触后还培养48 h才读数，因此图支持黏附后细胞保留与活性改善，并不是初始附着细胞的即时显微计数。[宿主细胞检测条件](ref:R02)"
+        },
+        "F04": {
+          "caption": "Zhang等：浮游菌、黏附菌及感染动物的回收菌量，原图6。",
+          "interpretation": "a、b是4 h后450 nm光密度，分别对应浮游和黏附细菌；c–e为表面显微图，保留10 μm与放大图2 μm标尺。f、g才是6周骨组织与植入物回收CFU，h为600 nm生长曲线。空白凝胶在b中已明显降低黏附读数，而载药对a及动物回收菌量提供额外改善。三个读数类型不能互换，低菌量也不等于检测为零。[表面与动物抗菌证据](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "How can implants suppress bacterial adhesion and infection?",
+      "direction": "Osseointegration and infection prevention",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Surface colony reduction, tissue infection control and triggered release are different experiments",
+          "markdown": "An antimicrobial implant can immobilize an active component on its surface or release it through pores or coatings into its surroundings. The first design changes bacterial survival and colonization after material contact; the second also requires evidence about when drug reaches nearby tissue and how long delivery persists. Interpretation depends on whether bacteria were actually introduced, whether recovered organisms came from surfaces or tissue, and whether treatment preceded or followed infection establishment.[Silver-nanolayer experiment](ref:R01)[Immobilized-peptide experiment](ref:R02)\n\n| Study considered | Direct measurement | Conclusion not replaced by that measurement |\n|---|---|---|\n| Silver nanolayer | Recovered colonies and biofilm staining for two staphylococcal organisms | Equal susceptibility of all organisms |\n| Immobilized Mel4 | Viable bacteria recovered from cultured material surfaces | Patient infection incidence or cure of established infection |\n| Vancomycin hydrogel | Tissue/implant colonies and bone repair in inoculated animals | Delayed treatment of established chronic biofilms |\n| Magnetically triggered reservoir | Model-molecule release and candidate-peptide cellular effects | Infection clearance by an integrated peptide-loaded device |\n\nThese experiments test surface colonization, repair in an infected environment and delivery control, respectively. Comparing them identifies which part of an “antibacterial” claim was actually resolved, without converting a culture-dish log reduction directly into clinical infection risk.[Infected-animal model](ref:R03)[Magnetic-triggering experiment](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Silver nanolayers: activity against S. epidermidis does not imply additional MRSA suppression",
+          "markdown": "Devlin-Mullin et al. applied 500 atomic-layer-deposition cycles to printed titanium. Converting deposited mass under assumptions of a planar film and bulk silver density gave an equivalent thickness of approximately 13 nm, whereas imaged nanostructures were approximately 40–90 nm. Equivalent film thickness and lateral particle dimensions cannot be collapsed into one measured uniform coating thickness.[Characterization, bacterial culture and bone-ingrowth results](ref:R01)\n\nApproximately 10³ S. epidermidis or methicillin-resistant S. aureus (MRSA) organisms were inoculated onto the materials and cultured for 96 h. Silver reduced recovered S. epidermidis by approximately 2 log and also reduced the crystal-violet biofilm signal; the results section reports P<0.001. MRSA already grew more slowly on bare titanium, however, and silver did not further significantly reduce its recovered colonies or crystal-violet signal, with P>0.05. This negative comparison directly limits extrapolation to broad-spectrum efficacy: the same material and incubation time can produce different strain-specific outcomes.\n\nViable recovery and crystal violet also answer different questions. The former measures recovered organisms capable of forming colonies, while the latter measures retained stained biofilm material. Their agreement for S. epidermidis supports reduced surface colonization more strongly than a single SEM image alone.\n\nThe in vivo experiment placed porous scaffolds in 2.5 mm rat tibial defects. At 12 weeks, bone ingrowth was similar for bare and silver-coated titanium, without a significant difference. Bacterial assays used solid specimens, whereas the animal study used porous specimens and was not an inoculated infection model. It therefore supports an absence of a marked adverse bone-ingrowth effect at this silver loading, without simultaneously demonstrating bacterial clearance in infected animals.",
+          "figure_ids": []
+        },
+        {
+          "id": "s3",
+          "title": "Immobilized Mel4: both active peptide and attachment treatment require controls",
+          "markdown": "Kruse et al. compared untreated polyaryl ether ketone (PAEK) surfaces with plasma immersion ion implantation (PIII), followed by active Mel4, inactive Mel1 or no peptide. Substrates were PEEK sheet, fused-deposition-modeled PEEK and selectively laser-sintered PEK. Applying the same treatment combinations across morphologies helps identify peptide effects more directly than simply comparing the smoothest and roughest materials.[Immobilization and antibacterial methods](ref:R02)\n\nAfter 24 h culture with S. aureus SA38 at 10⁵ cells/mL, specimens were washed, strongly attached bacteria were resuspended by vortexing and plated for colony counts. Equally weighted, normalized pooling across substrates showed reductions of 1.8 log with Mel4 on untreated surfaces and 3.7 log with PIII plus Mel4; Mel1 did not significantly lower counts. The abstract rounds this to approximately 4 log, whereas the more precise pooled result is 3.7 log. It is a change in recovered CFU, not a “4 log reduction in infection incidence.”\n\nOriginal Fig. 2 distinguishes two observations: without Mel4, rougher SLS PEK yielded more recovered bacteria, but roughness did not prevent a substantial antimicrobial effect after Mel4 addition and immobilization. Pooling does not mean every material decreased by exactly 3.7 log, so the material-specific bars remain important. SEM supports reduced coverage, but the authors explicitly exclude quantitative interpretation of those photographs; CFU supplies the count-based evidence.\n\nThese controls support stronger surface protection from the PIII–active-peptide combination. Improved contact action through peptide orientation and covalent attachment is the authors’ mechanistic interpretation. The experiment did not measure peptide coverage in every pore after clinical use or apply delayed treatment to an already mature biofilm.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Host cells: greater adhesion can coexist with a lower mineral signal",
+          "markdown": "The Mel4 study separately assessed Saos-2 adhesion, proliferation and mineralization. The adhesion protocol allowed 3 h of initial contact without serum, washed away unbound cells, then cultured for another 48 h before metabolic fluorescence measurement. The readout therefore includes subsequent survival and growth rather than directly counting cells at the instant of attachment. After cross-substrate normalization, PIII plus Mel4 increased the signal by 88% relative to untreated, peptide-free controls.[Host-cell methods and original Figs. 4 and 6](ref:R02)\n\nTotal culture lasted 35 days, and early proliferation monitoring showed no significant reduction at the assessed time points. However, pooled cell-number-normalized alizarin-red mineral measurements showed a 34% decrease associated with Mel4 and a 20% increase with PIII. These percentages arise from different normalized comparisons and cannot be added to predict combination effects. Original Fig. 6 separates substrates, treatment combinations and pooled individual factors, preventing improved adhesion from becoming a claim that every osteogenic endpoint improved.\n\nThe authors observed deposition features both in regions without cell coverage and on specimens incubated with medium alone. They proposed that the lower alizarin-red signal partly reflects reduced acellular mineral nucleation or protein deposition. Morphology supports this interpretation, but cellular and acellular contributions were not fully separated quantitatively; the lower mineral signal cannot simply be dismissed.\n\nFree-peptide exposure and surface-bound peptide are also different dose conditions. The former was examined over 24 and 72 h, while the latter depends on bound amount, orientation and surface coverage. The study demonstrates a combination of compatibility and antimicrobial action under specified culture conditions; short-term metabolic assays do not establish absence of toxicity at every concentration and exposure duration.",
+          "figure_ids": [
+            "F03",
+            "F02"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Vancomycin-loaded pores: infection control and repair are measured in the same animals",
+          "markdown": "Zhang et al. compared microarc-oxidized porous Ti6Al4V (TS-M), added blank hydrogel (TS-M/H) and added vancomycin-loaded hydrogel (TS-M/H/V). All groups underwent microarc oxidation, so the experiment isolates incremental hydrogel and drug effects rather than independently testing oxidation against bare titanium. Release was initially faster over the first 3 days and then slowed, with observation extending approximately 25 days. That in vitro curve is not a direct measurement of effective drug concentration in tissue.[Preparation, release and infection experiments](ref:R03)\n\nOriginal Fig. 6 separates planktonic from adherent organisms in vitro. The drug-loaded group had lower planktonic bacterial metabolic readings than both controls, whereas adherent readings were similar between blank and drug-loaded hydrogel and lower than TS-M. The blank gel’s antiadhesive contribution should therefore be separated from drug effects. Panels a and b plot optical density at 450 nm, not CFU, and cannot be combined numerically with the animal colony counts in the same figure.\n\nThe 18 rabbits were allocated to three groups of 6. MRSA was introduced into 5 mm femoral-condyle defects immediately before implant insertion, with examination at 6 weeks. Both tissue and implant bacterial recovery were lower in the drug-loaded group, with reported P<0.01, but sparse bacterial growth remained: not every specimen was sterile. Intraporous bone volume fraction was 49.2±3.3%, compared with 14.6±2.2% for TS-M and 16.4±3.2% for TS-M/H. This links lower infectious burden to repair in the same environment instead of substituting uninfected cell assays for infection outcomes.\n\nInoculation and implantation occurred during the same operation. The design primarily tests local control when contamination occurs, without first establishing chronic infection or a mature biofilm before delayed treatment. Higher bone volume also cannot be attributed solely to direct osteogenic stimulation by vancomycin: infection control and reduced osteolysis contribute to that outcome.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Magnetically triggered reservoirs: release control is demonstrated, integrated peptide-mediated clearance is not",
+          "markdown": "Šalandová et al. printed reservoirs and conduits directly into Ti6Al4V specimens and sealed their openings with poly(lactic-co-glycolic acid) (PLGA) films. The release experiment used alginate hydrogel containing blue food dye as a model molecule; cellular experiments with LL-37 and SAAP-148 were performed separately. Combining these parts into a claim of magnetically released implant peptides already clearing infection would misrepresent the experiment.[Reservoir, release and candidate-peptide experiments](ref:R04)\n\nOver 20 h at 37 °C, uncapped specimens released approximately 97%, while capped, untriggered specimens released approximately 5%. After the first 5 h, exposure to a 262 kHz, 5 mT alternating magnetic field for 30 min produced approximately 99% final release. An important accompanying condition was measured: surrounding solution reached 75.0±0.4 °C and the film underwent irreversible disruption. This demonstrates heat-driven opening and release, not an already acceptable temperature rise in living bone, nor a reversible valve capable of repeated closure and reopening.\n\nCandidate-peptide compatibility used a literature-derived minimum bactericidal concentration of 1.6 μM as one reference, rather than a killing threshold newly measured in this device. Murine preosteoblasts were more sensitive to SAAP-148, with approximately 4 μM near the cytotoxicity boundary; higher concentrations and longer exposure differed from brief low-concentration treatment. Macrophage-marker and Runx2 experiments at 1.6 μM did not show significant strong proinflammatory or pro-osteogenic effects. Release amount, local temperature and actual peptide concentration are related but separately measured variables; this study did not connect them to an inoculated-animal endpoint.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Kruse et al.: effects of Mel4 and PIII on recovered surface bacteria, original Fig. 2.",
+          "interpretation": "A plots Log(CFU/mL) separately for PEEK sheet, FDM PEEK and SLS PEK; B pools equally weighted data normalized to UT. Mel1 is the inactive-peptide control, and the pooled reduction for Mel4 plus PIII is 3.7 log. C retains 10 μm bars and illustrates coverage rather than quantitative counts. The figure separates active peptide, attachment treatment and material morphology; the pooled reduction is not a fixed value for every substrate.[Antibacterial controls and counts](ref:R02)"
+        },
+        "F02": {
+          "caption": "Kruse et al.: cell-number-normalized mineral signal after 35 days, original Fig. 6.",
+          "interpretation": "A plots alizarin-red signal per million cells; B shows the four treatment combinations, while C and D summarize Mel4 and PIII effects. E retains 0.5 mm bars and shows stain distribution. Mel4 and PIII have opposite effects on pooled mineral signal, and the panels use different normalization references. This explains why improved adhesion cannot replace mineralization assessment. Staining also does not independently separate cell-derived mineral from acellular deposition under culture conditions.[Mineral signal and normalization](ref:R02)"
+        },
+        "F03": {
+          "caption": "Kruse et al.: host Saos-2 adhesion-associated signals, original Fig. 4.",
+          "interpretation": "A plots material-specific relative fluorescence, B normalizes treatment combinations, C and D pool factor effects, and E shows cells after 48 h with 30 μm bars retained. The 88% increase for PIII plus Mel4 in B is relative to untreated, peptide-free controls. Initial 3 h contact was followed by 48 h culture before measurement. The figure therefore supports improved post-attachment retention and activity, rather than immediate microscopic counting of initially attached cells.[Host-cell measurement conditions](ref:R02)"
+        },
+        "F04": {
+          "caption": "Zhang et al.: planktonic/adherent organisms and bacterial recovery from infected animals, original Fig. 6.",
+          "interpretation": "Panels a and b measure 450 nm optical density after 4 h for planktonic and adherent bacteria, respectively. Panels c–e show surface microscopy, retaining 10 μm bars and 2 μm inset bars. Only f and g show recovered tissue and implant CFU at 6 weeks; h is a 600 nm growth curve. Blank gel already reduces adherence readings in b, while drug loading additionally improves a and animal recovery counts. These measurement types are not interchangeable, and low counts do not mean zero detection.[Surface and animal antibacterial evidence](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie können Implantate bakterielle Adhäsion und Infektionen unterdrücken?",
+      "direction": "Osseointegration und Infektionsprävention",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Weniger Oberflächenkolonien, Gewebeinfektionskontrolle und ausgelöste Freisetzung sind verschiedene Versuche",
+          "markdown": "Antimikrobielle Implantate können Wirkstoffe auf ihrer Oberfläche immobilisieren oder über Poren und Beschichtungen in die Umgebung freisetzen. Der erste Ansatz verändert Überleben und Besiedlung nach Materialkontakt; der zweite muss zusätzlich klären, wann der Wirkstoff benachbartes Gewebe erreicht und wie lange die Abgabe anhält. Für die Interpretation ist entscheidend, ob tatsächlich Bakterien eingebracht wurden, ob zurückgewonnene Keime von Oberflächen oder aus Gewebe stammen und ob die Behandlung vor oder nach Etablierung einer Infektion erfolgte.[Silber-Nanoschichtversuch](ref:R01)[Versuch mit immobilisiertem Peptid](ref:R02)\n\n| Betrachtete Studie | Direkte Messung | Dadurch nicht ersetzte Aussage |\n|---|---|---|\n| Silber-Nanoschicht | Zurückgewonnene Kolonien und Biofilmfärbung zweier Staphylokokken | Gleiche Empfindlichkeit sämtlicher Erreger |\n| Immobilisiertes Mel4 | Lebensfähige Bakterien von kultivierten Materialoberflächen | Infektionshäufigkeit bei Patienten oder Heilung etablierter Infektionen |\n| Vancomycin-Hydrogel | Gewebe-/Implantatkolonien und Knochenheilung inokulierter Tiere | Verzögerte Behandlung etablierter chronischer Biofilme |\n| Magnetisch ausgelöstes Reservoir | Modellmolekülfreisetzung und Zellwirkungen möglicher Wirkpeptide | Infektionsbeseitigung durch ein integriertes peptidbeladenes System |\n\nDiese Versuche prüfen Oberflächenbesiedlung, Heilung im infizierten Umfeld beziehungsweise Abgabekontrolle. Ihr Vergleich präzisiert den tatsächlich untersuchten Anteil einer „antibakteriellen“ Wirkung, ohne eine logarithmische Abnahme in der Kulturschale direkt in klinisches Infektionsrisiko umzurechnen.[Infiziertes Tiermodell](ref:R03)[Magnetischer Auslöseversuch](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Silber-Nanoschichten: Wirkung gegen S. epidermidis bedeutet keine zusätzliche MRSA-Hemmung",
+          "markdown": "Devlin-Mullin et al. beschichteten gedrucktes Titan mittels 500 Atomlagenabscheidungszyklen. Aus abgeschiedener Masse, angenommener ebener Schicht und Dichte massiven Silbers ergab sich eine äquivalente Dicke von ungefähr 13 nm; abgebildete Nanostrukturen maßen dagegen ungefähr 40–90 nm. Äquivalente Schichtdicke und laterale Partikelabmessung dürfen nicht zu einer gemessenen gleichmäßigen Beschichtungsdicke zusammengefasst werden.[Charakterisierung, Bakterienkultur und Knocheneinwuchs](ref:R01)\n\nUngefähr 10³ S. epidermidis beziehungsweise methicillinresistente S. aureus (MRSA) wurden aufgebracht und 96 h kultiviert. Silber senkte die Rückgewinnung von S. epidermidis um ungefähr 2 log und verringerte das Kristallviolett-Biofilmsignal; der Ergebnisteil berichtet P<0.001. MRSA wuchs auf unbeschichtetem Titan bereits langsamer. Silber verringerte weder die zurückgewonnenen Kolonien noch das Kristallviolettsignal zusätzlich signifikant, bei P>0.05. Dieser negative Vergleich begrenzt die Übertragung auf eine breite Wirksamkeit: Gleiches Material und gleiche Inkubationszeit können stammabhängig verschiedene Ergebnisse liefern.\n\nLebendkeimrückgewinnung und Kristallviolett beantworten zudem unterschiedliche Fragen. Erstere erfasst zurückgewonnene, koloniebildende Organismen, letzteres zurückgehaltene gefärbte Biofilmmasse. Übereinstimmende Ergebnisse für S. epidermidis stützen eine verminderte Besiedlung stärker als ein einzelnes REM-Bild.\n\nIn vivo wurden poröse Gerüste in 2.5 mm große Rattentibiadefekte eingebracht. Nach 12 Wochen war der Knocheneinwuchs bei unbeschichtetem und silberbeschichtetem Titan ähnlich, ohne signifikanten Unterschied. Bakterienversuche verwendeten massive Proben, Tierversuche poröse Proben; letztere waren kein inokuliertes Infektionsmodell. Die Ergebnisse stützen daher das Ausbleiben einer ausgeprägten Beeinträchtigung des Knocheneinwuchses bei dieser Silberbeladung, ohne zugleich eine Keimbeseitigung in infizierten Tieren nachzuweisen.",
+          "figure_ids": []
+        },
+        {
+          "id": "s3",
+          "title": "Immobilisiertes Mel4: aktives Peptid und Bindungsverfahren brauchen eigene Kontrollen",
+          "markdown": "Kruse et al. verglichen unbehandelte Polyaryletherketon-Oberflächen (PAEK) mit Plasma-Immersions-Ionenimplantation (PIII), jeweils mit aktivem Mel4, inaktivem Mel1 oder ohne Peptid. Substrate waren PEEK-Folie, schmelzextrusionsgedrucktes PEEK und selektiv lasergesintertes PEK. Gleiche Behandlungskombinationen über verschiedene Morphologien hinweg helfen, Peptideffekte unmittelbarer zu erkennen als ein bloßer Vergleich der glattesten mit der rauesten Oberfläche.[Immobilisierung und antibakterielle Methoden](ref:R02)\n\nNach 24 h Kultur mit S. aureus SA38 bei 10⁵ cells/mL wurden Proben gespült, fest anhaftende Bakterien durch Vortexen resuspendiert und zur Koloniezählung ausplattiert. Gleichgewichtete, normalisierte Zusammenfassung der Substrate ergab Abnahmen von 1.8 log für Mel4 auf unbehandelten Oberflächen und 3.7 log für PIII mit Mel4; Mel1 senkte die Keimzahl nicht signifikant. Der Abstract rundet dies auf ungefähr 4 log, der genauere zusammengefasste Ergebniswert beträgt 3.7 log. Gemeint ist die Änderung zurückgewonnener CFU, keine „Abnahme der Infektionshäufigkeit um 4 log“.\n\nOriginalabbildung 2 trennt zwei Beobachtungen: Ohne Mel4 wurden vom raueren SLS-PEK mehr Bakterien zurückgewonnen; nach Zugabe und Immobilisierung von Mel4 verhinderte die Rauheit jedoch keine deutliche antimikrobielle Wirkung. Die Zusammenfassung bedeutet nicht, dass jedes Material exakt 3.7 log erreichte; die materialspezifischen Balken bleiben relevant. REM stützt eine geringere Bedeckung, wird von den Autoren aber ausdrücklich nicht quantitativ interpretiert. CFU liefert die Zählgrundlage.\n\nDiese Kontrollen stützen stärkeren Oberflächenschutz durch PIII und aktives Peptid. Eine verbesserte Kontaktwirkung durch Peptidorientierung und kovalente Bindung ist die mechanistische Interpretation der Autoren. Der Versuch bestimmte weder die Peptidbedeckung jeder Pore nach klinischer Verwendung noch untersuchte er die verzögerte Behandlung eines bereits reifen Biofilms.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Wirtszellen: höhere Adhäsion und niedrigeres Mineralsignal können gleichzeitig auftreten",
+          "markdown": "Die Mel4-Studie untersuchte Adhäsion, Proliferation und Mineralisierung von Saos-2 getrennt. Im Adhäsionsversuch erfolgte zunächst 3 h serumfreier Kontakt, danach wurden ungebundene Zellen abgespült und die verbleibenden Zellen weitere 48 h kultiviert, bevor Stoffwechselfluoreszenz gemessen wurde. Der Messwert enthält daher späteres Überleben und Wachstum und zählt nicht unmittelbar Zellen im Moment der Anheftung. Nach substratübergreifender Normalisierung lag das Signal mit PIII plus Mel4 um 88% über der unbehandelten peptidfreien Referenz.[Wirtszellmethoden und Originalabbildungen 4 und 6](ref:R02)\n\nDie Gesamtkultur dauerte 35 Tage. In der frühen Proliferationsbeobachtung trat zu den geprüften Zeitpunkten keine signifikante Abnahme auf. Die zusammengefassten, auf Zellzahl normierten Alizarinrot-Mineralmessungen zeigten jedoch eine mit Mel4 verbundene Abnahme um 34% und eine Zunahme um 20% durch PIII. Unterschiedliche Normalisierungsvergleiche liegen diesen Prozentwerten zugrunde; sie dürfen nicht zur Vorhersage der Kombination addiert werden. Originalabbildung 6 trennt Substrate, Behandlungskombinationen und zusammengefasste Einzelfaktoren. Verbesserte Adhäsion wird damit nicht zur Behauptung, sämtliche osteogenen Endpunkte seien besser.\n\nDie Autoren beobachteten Ablagerungsmerkmale in zellfreien Oberflächenbereichen sowie auf Proben, die nur mit Medium inkubiert wurden. Sie vermuten, dass das niedrigere Alizarinrotsignal teilweise geringere azelluläre Mineralkeimbildung oder Proteinablagerung widerspiegelt. Morphologie stützt diese Deutung, doch zelluläre und azelluläre Anteile wurden nicht vollständig quantitativ getrennt. Das niedrigere Mineralsignal lässt sich deshalb nicht einfach verwerfen.\n\nFreies und oberflächengebundenes Peptid stellen außerdem unterschiedliche Dosisbedingungen dar. Ersteres wurde über 24 und 72 h geprüft, letzteres hängt zusätzlich von Bindungsmenge, Orientierung und Bedeckung ab. Die Studie zeigt Verträglichkeit und antimikrobielle Wirkung unter bestimmten Kulturbedingungen; kurzfristige Stoffwechseltests belegen keine Toxizitätsfreiheit bei beliebiger Konzentration und Expositionsdauer.",
+          "figure_ids": [
+            "F03",
+            "F02"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Vancomycinbeladene Poren: Infektionskontrolle und Heilung werden in denselben Tieren gemessen",
+          "markdown": "Zhang et al. verglichen mikrolichtbogenoxidiertes poröses Ti6Al4V (TS-M), zusätzliches unbeladenes Hydrogel (TS-M/H) und zusätzliches vancomycinbeladenes Hydrogel (TS-M/H/V). Alle Gruppen waren mikrolichtbogenoxidiert. Geprüft wurden daher zusätzliche Gel- und Wirkstoffeffekte, nicht unabhängig die Oxidation gegenüber blankem Titan. Die Freisetzung war in den ersten 3 Tagen schneller und verlangsamte sich anschließend; beobachtet wurde über ungefähr 25 Tage. Diese In-vitro-Kurve misst nicht unmittelbar eine wirksame Gewebekonzentration.[Herstellung, Freisetzung und Infektionsversuche](ref:R03)\n\nOriginalabbildung 6 trennt in vitro planktonische und anhaftende Bakterien. Die beladene Gruppe zeigte niedrigere Stoffwechselwerte planktonischer Keime als beide Kontrollen. Die Werte anhaftender Keime waren zwischen unbeladenem und beladenem Gel ähnlich und niedriger als bei TS-M. Der antiadhäsive Beitrag des leeren Gels muss daher vom Arzneistoffeffekt getrennt werden. a und b zeigen optische Dichte bei 450 nm, keine CFU; sie dürfen nicht mit den Koloniezahlen aus Tieren in derselben Abbildung verrechnet werden.\n\nDie 18 Kaninchen wurden auf drei Gruppen mit jeweils 6 Tieren verteilt. MRSA wurde in 5 mm große Femurkondylendefekte eingebracht, unmittelbar danach das Implantat eingesetzt und nach 6 Wochen untersucht. In der beladenen Gruppe waren zurückgewonnene Gewebe- und Implantatkeimzahlen geringer, mit berichtetem P<0.01; geringes Bakterienwachstum blieb jedoch nachweisbar, sodass nicht alle Proben steril waren. Der intraporöse Knochenvolumenanteil betrug 49.2±3.3%, gegenüber 14.6±2.2% bei TS-M und 16.4±3.2% bei TS-M/H. Dies verbindet geringere Infektionslast mit Heilung im selben Umfeld, statt uninfizierte Zelltests an die Stelle von Infektionsendpunkten zu setzen.\n\nInokulation und Implantation erfolgten in derselben Operation. Das Design prüft somit vor allem lokale Kontrolle beim Eintritt der Kontamination. Es etabliert nicht zuerst eine chronische Infektion oder einen reifen Biofilm für eine spätere Behandlung. Mehr Knochenvolumen kann auch nicht ausschließlich direkter osteogener Stimulation durch Vancomycin zugeschrieben werden; Infektionskontrolle und verminderte Osteolyse tragen ebenfalls dazu bei.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Magnetische Reservoirs: die Freisetzung ist gezeigt, die integrierte peptidvermittelte Keimbeseitigung nicht",
+          "markdown": "Šalandová et al. druckten Reservoirs und Kanäle direkt in Ti6Al4V-Proben und verschlossen deren Öffnungen mit Poly(lactid-co-glycolid)-Filmen (PLGA). Im Freisetzungsversuch enthielt das Alginathydrogel blauen Lebensmittelfarbstoff als Modellmolekül; Zellversuche mit LL-37 und SAAP-148 erfolgten getrennt. Daraus bereits eine Infektionsbeseitigung durch magnetisch aus dem Implantat freigesetzte Peptide abzuleiten, würde beide Versuchsteile unzulässig verbinden.[Reservoir-, Freisetzungs- und Peptidversuche](ref:R04)\n\nÜber 20 h bei 37 °C setzten unverschlossene Proben ungefähr 97% frei, verschlossene nicht ausgelöste Proben ungefähr 5%. Nach den ersten 5 h führte ein magnetisches Wechselfeld mit 262 kHz und 5 mT über 30 min zu ungefähr 99% endgültiger Freisetzung. Eine wesentliche Begleitbedingung wurde mitgemessen: Die umgebende Lösung erreichte 75.0±0.4 °C, und der Film wurde irreversibel beschädigt. Dies belegt wärmegesteuertes Öffnen und Freisetzen, keinen bereits akzeptablen Temperaturanstieg in lebendem Knochen und kein wiederholt schließ- und öffnungsfähiges Ventil.\n\nDie Verträglichkeitsprüfung der Peptidkandidaten verwendete eine literaturbasierte minimale bakterizide Konzentration von 1.6 μM als Referenz, keinen in diesem System neu gemessenen Abtötungsschwellenwert. Murine Präosteoblasten reagierten empfindlicher auf SAAP-148; ungefähr 4 μM lag bereits nahe der Zytotoxizitätsgrenze. Höhere Konzentrationen und längere Exposition unterschieden sich von kurzer Behandlung mit niedriger Konzentration. Makrophagenmarker und Runx2 bei 1.6 μM zeigten keine signifikanten stark proinflammatorischen oder proosteogenen Effekte. Freisetzungsmenge, lokale Temperatur und tatsächliche Peptidkonzentration sind verknüpfte, aber getrennt gemessene Variablen; die Studie verband sie noch nicht mit einem inokulierten tierexperimentellen Endpunkt.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Kruse et al.: Mel4 und PIII beeinflussen zurückgewonnene Oberflächenbakterien, Originalabbildung 2.",
+          "interpretation": "A zeigt Log(CFU/mL) getrennt für PEEK-Folie, FDM-PEEK und SLS-PEK; B kombiniert gleichgewichtete und auf UT normierte Daten. Mel1 ist die inaktive Peptidkontrolle; Mel4 plus PIII ergibt zusammengefasst eine Abnahme um 3.7 log. C enthält 10 μm-Maßstäbe und zeigt Bedeckungsmorphologie statt quantitativer Keimzahlen. Aktives Peptid, Bindungsbehandlung und Materialmorphologie werden getrennt; die gemeinsame Abnahme ist kein fester Wert jedes Substrats.[Antibakterielle Kontrollen und Zählung](ref:R02)"
+        },
+        "F02": {
+          "caption": "Kruse et al.: zellzahlnormiertes Mineralsignal nach 35 Tagen, Originalabbildung 6.",
+          "interpretation": "A zeigt Alizarinrotsignal pro Million Zellen, B die vier Behandlungskombinationen, C und D die zusammengefassten Mel4- und PIII-Effekte. E enthält 0.5 mm-Maßstäbe und zeigt die Färbungsverteilung. Mel4 und PIII wirken auf das zusammengefasste Mineralsignal gegenläufig; außerdem verwenden die Teilbilder unterschiedliche Normierungsreferenzen. Verbesserte Adhäsion ersetzt daher keine Mineralisierungsprüfung. Die Färbung trennt auch nicht unabhängig zelluläres Mineral von azellulärer Ablagerung unter Kulturbedingungen.[Mineralsignal und Normalisierung](ref:R02)"
+        },
+        "F03": {
+          "caption": "Kruse et al.: adhäsionsbezogene Signale der Saos-2-Wirtszellen, Originalabbildung 4.",
+          "interpretation": "A zeigt materialspezifische relative Fluoreszenz, B normierte Kombinationen, C und D zusammengefasste Faktoren und E Zellmorphologie nach 48 h mit erhaltenen 30 μm-Maßstäben. Die Zunahme um 88% für PIII plus Mel4 in B bezieht sich auf unbehandelte peptidfreie Kontrollen. Auf anfänglichen Kontakt über 3 h folgten weitere 48 h Kultur. Die Abbildung stützt daher verbesserte Retention und Aktivität nach Anheftung, keine sofortige mikroskopische Zählung anfangs haftender Zellen.[Messbedingungen der Wirtszellen](ref:R02)"
+        },
+        "F04": {
+          "caption": "Zhang et al.: planktonische und anhaftende Keime sowie Bakterienrückgewinnung aus infizierten Tieren, Originalabbildung 6.",
+          "interpretation": "a und b messen nach 4 h die optische Dichte bei 450 nm für planktonische beziehungsweise anhaftende Bakterien. c–e zeigen Oberflächenmikroskopie mit 10 μm-Maßstäben und 2 μm-Maßstäben der Ausschnitte. Erst f und g zeigen zurückgewonnene Gewebe- und Implantat-CFU nach 6 Wochen; h ist eine Wachstumskurve bei 600 nm. Unbeladenes Gel senkt bereits die Adhäsionswerte in b, Wirkstoffbeladung verbessert zusätzlich a und tierische Keimrückgewinnung. Diese Messarten sind nicht austauschbar; niedrige Keimzahlen bedeuten keinen Nullnachweis.[Antibakterielle Oberflächen- und Tierevidenz](ref:R03)"
+        }
+      }
+    }
+  }
+}

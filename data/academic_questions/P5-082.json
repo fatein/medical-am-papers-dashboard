@@ -1,0 +1,284 @@
+{
+  "schema_version": 2,
+  "question_id": "P5-082",
+  "p": "P5",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-04",
+  "related_paper_ids": [
+    "doc_1526b75794049155a09f"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Application of 3D printing and distributed manufacturing during the first-wave of COVID-19 pandemic. Our experience at a third-level university hospital",
+      "publisher": "3D Printing in Medicine",
+      "year": 2021,
+      "url": "https://doi.org/10.1186/s41205-021-00097-6",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Optimization of community-led 3D printing for the production of protective face shields",
+      "publisher": "3D Printing in Medicine",
+      "year": 2020,
+      "url": "https://doi.org/10.1186/s41205-020-00089-y",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Additive manufacturing and injection molding process for mass-production of face shields during Covid-19 Pandemic: a comparative study",
+      "publisher": "International Journal of Development Research",
+      "year": 2021,
+      "url": "https://www.journalijdr.com/sites/default/files/issue-pdf/22933.pdf",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 1",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7938282.1/41205_2021_97_Fig1_HTML.jpg?md5=3be6df1dbf5cc065544b29ffa2ef81b1",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7938282/#Fig1",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-082/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Fig. 2",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7938282.1/41205_2021_97_Fig2_HTML.jpg?md5=2a362db43cc90e50efb81345860dae5e",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7938282/#Fig2",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-082/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R01",
+      "original_label": "Fig. 5",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7938282.1/41205_2021_97_Fig5_HTML.jpg?md5=5e91891f3467ab5432559e8a6339ec0a",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7938282/#Fig5",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-082/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Fig. 2",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7682762.1/41205_2020_89_Fig2_HTML.jpg?md5=478a277ae3e5bdbbe90bca878e1134ae",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7682762/#Fig2",
+      "license": "CC BY-SA 4.0; source figure credits 3DVerkstan",
+      "asset_path": "assets/academic_figures/P5-082/F04.jpg"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R02",
+      "original_label": "Fig. 3",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7682762.1/41205_2020_89_Fig3_HTML.jpg?md5=1bbc4dfa192873eb7374ba8f0085804e",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7682762/#Fig3",
+      "license": "CC BY-SA 4.0; source figure credits 3DVerkstan",
+      "asset_path": "assets/academic_figures/P5-082/F05.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "供应短缺时分布式打印能生产哪些医疗用品？",
+      "direction": "应急供应与制造",
+      "sections": [
+        {
+          "id": "delivered_product_scope",
+          "title": "实际交付的是什么：防护组件、设备接口与耗材分属不同任务",
+          "markdown": "马德里大学医院研究记录了 2020 年 3 月 14 日至 5 月 10 日的分布式制造活动，报告累计交付 17,276 个单位。记录字段包括产品类型、数量、供应方、捐赠或采购、交付时间及目的地，因此这是一项交付流程研究，而不是仅列举可下载模型。[医院分布式制造的原始记录](ref:R01)\n\n| 产品组 | 研究实际记录的对象 | 打印承担的任务 |\n|---|---|---|\n| 防护与日常辅助 | 面屏、护耳带、免手触开门配件、头灯附件及口罩原型 | 制造支架、固定件或操作接口 |\n| 呼吸支持配件 | 与当地现有设备配套的连接和支承件 | 适配接口与补足短缺组件 |\n| 诊断耗材 | 采样拭子 | 制造独立耗材，并配合包装流程 |\n\n这里的“面屏”并非整件透明面罩都由打印机输出；打印件与透明片、固定带共同构成用品。呼吸支持部分也主要是连接组件，不能把组件交付数写成完整呼吸机产量。部件在系统中承担什么功能，比简单统计打印模型种类更能界定应急制造范围。\n\n原饼图显示面屏与护耳带占较大部分，但图例同时出现以 kg 标记的打印丝材及采购获得的潜水面罩，并重复出现一个适配器名称。它不是全部项目都采用同一“独立打印成品件数”的纯同质图表。本报告引用论文报告总量，同时将饼图用于观察构成，不据扇区反推出精确产量或临床受益人数。\n\n不同产品也采用了不同制造路径。研究把较简单外部配件主要交给 FDM，把需要更细致表面或特定材料条件的部件交给 SLA。这里记录的是研究团队的工艺分配；论文未提供每种部件逐批的气密性或机械测试数值，工艺名称本身不能替代具体部件的性能结果。",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "hospital_network_roles",
+          "title": "医院作为制造枢纽：产量较小的节点仍承担关键工序",
+          "markdown": "在这项医院案例中，个人贡献的制造量占 57.3%，制造企业占 28%，大学占 7.6%，协会占 2.8%，院内制造占 4.3%。院内部分主要用于原型及产品验证。由此可见，生产设备分散在外部，需求解释、设计调整、收货与最终交付仍可集中在医院。[供应方与院内外分工](ref:R01)\n\n需求每天传到院内实验室，再根据设备可用性与所需数量决定院内制造或外部分配。医院派送运输人员收集部件，集中完成必要装配、到货检查及装配前再次检查。原图展示的装配台与装箱车辆，使数字文件之外的实体流程可见：透明片和打印框架在此汇合，分散产出经过集中处理后进入使用部门。\n\n这些步骤回答了为什么“拥有许多打印机”不等于“已经拥有可使用的医疗物资”。需求字段不一致、部件版本不同、透明片缺货、装配能力不足或运输不连续，都可能使打印产出停留在半成品状态。该研究没有逐项量化这些环节的失败率，因此不能把交付流程存在等同于每个环节没有损耗。\n\n论文报告大部分交付供本院使用，并列出对其他机构的交付表。跨院表合计为 1,357，而正文按 90.9% 本院使用描述；这与以总量直接计算的外部份额并不完全吻合。各段统计范围没有进一步协调，本报告保留分别列示的原始口径，不强行把机构表调整到百分比上。\n\n研究没有比较随机分配的集中与分布式生产组。它直接支持的是一种实际运行的职责组合：医院提出与审核需求，外部节点提供制造能力，集中节点负责收货、装配与分配。是否比另一组织结构更快，需要同口径的任务时间和返工记录才能计算。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "demand_sequence",
+          "title": "供给内容随需求改变：首批面屏与后续配件不是同一条产量曲线",
+          "markdown": "医院案例中的首次正式交付记录为 3 月 25 日。论文报告首个交付周已经完成面屏总量的 83.7%；呼吸支持连接件从 3 月 31 日开始交付，护耳带则从 4 月 14 日开始。不同用品的起始时间，反映了需求与库存状态的变化，而不是同一产品简单地逐周扩产。[交付时间与需求阶段](ref:R01)\n\n早期面屏需求可以由相对简单的外部结构响应；后续接口需求与院内具体设备组合有关，需要调整既有设计。护耳带出现更晚，则与持续佩戴和工作流程中的使用需求相联系。研究直接记录了交付日期，但没有逐个科室的需求提出时刻，因此从首批交付日不能计算每种产品的完整响应时长。\n\n论文同时出现“警报期开始后 11 天首次交付”与讨论中“7 天后首批面屏”的表述，可能对应不同准备或制造起点，文中未统一。这些数字没有被拼接成一个确定的平均交货周期。观察时间、原型完成、首次出货和实际到达使用部门，是需要分别识别的事件。\n\n78.2% 的产品通过捐赠取得；部分需求量较大的用品又进入采购流程。这说明分布式制造既包括志愿供给，也包括按需求购买，不能把所有交付都计为无成本生产。论文明确未完成可比较的成本分析，因而“交付很多”与“每件综合成本更低”分别属于产出和经济性问题。\n\n同一医院前后更换产品组合的证据，比将全部交付量视为单一增长趋势更有解释力：它显示哪些需求适合共享设计与多点生产，哪些需要院内快速修改接口，以及哪些环节必须等待其他非打印物料。",
+          "figure_ids": []
+        },
+        {
+          "id": "community_process_transfer",
+          "title": "社区打印如何变为可重复批次：设计必须适应设备与操作者",
+          "markdown": "安大略社区制造案例向超过 165 个非营利及医疗机构交付 25,000 套面屏。项目面对工程研究人员与个人爱好者混合的打印队伍，因此选型目标不仅是防护外形，还包括文件能否在不同设备上稳定生产、透明片如何固定以及成品是否容易装配。[社区面屏制造的过程研究](ref:R02)\n\n项目从具有 3 个前部挂钩的设计改为 6 个分布式挂钩的 3DVerkstan 框架。新增固定点让透明片与框架共同承担形态保持，减少对后部弹性固定的单独依赖。原图同时显示数字设计、打印框架和装配后的透明片，说明交付单元是一套组合，而非只有塑料支架。\n\n为了减少停机取件次数，研究尝试 24 层堆叠。正文描述一个 0.3 mm 间距版本，而原图展示 0.6 mm 间距版本；不同间距与层厚及设备配置相关，不能把这些数字视为同一件试样的唯一参数。堆叠可提高无人值守时段的连续产出，但拆分破损、拉丝与层间粘连也会增加返工。\n\n研究记录高速打印时出现冷却不足、翘曲、振纹及层间结合问题，但没有给出随机分配速度条件下的合格率曲线。它提供的是现场排错与流程经验，不能据列出的速度范围推算所有设备的产能。实际可交付量还要扣除失效打印、无法分离的堆叠件，以及不满足装配要求的部件。\n\n原文将透明片厚度写为 10 mm，与图片中的薄片和办公用品描述明显不协调；本报告不将其转录为制造规格，也不未经原始更正就改成另一个单位。现场可复制性取决于经过确认的物料与版本，而不是完整复制文章中所有数字。",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "printing_to_molding",
+          "title": "从打印到注塑：同一种用品在不同阶段采用不同工艺",
+          "markdown": "巴西 Higia 项目比较了分布式 FDM 与后续注塑两条制造路径，报告分别交付 35,000 和 80,000 套面屏，总计 115,000 套。打印阶段先向附近医院持续提供小批量，模具完成后注塑承担更大的批次与远距离分配。[制造路径比较的原始研究](ref:R03)\n\n设计在测试中并非一次完成。打印原型的可调细带出现断裂，加厚和改形后仍未满足使用，最终改用弹性固定带；前部固定点由方柱改成钩状以减少透明片脱落。转入注塑后，材料和成形方式改变，可调带又以不同结构整合回来。产品功能可以延续，具体几何却需要随工艺重做。\n\n| 论文报告项目 | FDM 路径 | 注塑路径 |\n|---|---|---|\n| 部件成形时间 | 约 90 min | 每件注射约 25 s |\n| 框架质量 | 16 g | 29 g |\n| 装配后质量 | 43 g | 56 g |\n| 报告的单件金额 | US$0.75 | US$0.47 |\n\n这些数字不构成完全控制变量的材料试验：设计、材料、设备和生产规模同时改变。注射时间也不包含前期制模；论文列出单件金额，但又说明不同打印机与耗材使完整实际生产成本未能统一计算。因此不能只用成形时间比值计算整个供应系统的交付速度优势。\n\n研究主要观察设计迭代、产出和配送，没有对两种版本开展机械对照或直接测定防护效能。较大的注塑产量集中在一个地点，仍需跨区域运输；多点打印较慢，却能更早开始向附近交付。这一案例的具体联系是原型、初期供应和大批量制造之间的接续，而非用其中一种工艺代替所有阶段。",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "原图 1｜交付构成中的不同计量对象",
+          "interpretation": "面屏与护耳带占主要扇区，右侧图例还列出采购面罩、适配器和以 kg 计的丝材。图中未标出各扇区数值，也存在重复名称，因此适合读取主要构成，不适合精确反推每项的独立成品件数。"
+        },
+        "F02": {
+          "caption": "原图 2｜打印部分与完整用品的区别",
+          "interpretation": "上方模型包含面屏框架、护耳带、开门配件、头灯附件及口罩原型；下方照片显示装配后的面屏及后脑固定件。透明屏体、固定带等并非由这些模型共同打印，不能把框架模型数等同完整防护用品的全部制造环节。"
+        },
+        "F03": {
+          "caption": "原图 5｜制造网络中的装配与配送",
+          "interpretation": "上半图为多个来源框架与透明片的集中处理，下半图为装箱运输。图片记录的是实物流转节点，没有任务耗时或合格率刻度。它解释医院为何可在较低院内打印份额下承担关键组织角色。"
+        },
+        "F04": {
+          "caption": "原图 2｜从数字框架到组合式面屏",
+          "interpretation": "A 是数字模型，B 是框架，C 加上透明片。前部及两侧固定点将片材扣在框架上。原图及模型署名为 3DVerkstan，适用 CC BY-SA 4.0；保留原始完整面板。图中展示可装配形态，没有测量飞沫阻挡百分比。"
+        },
+        "F05": {
+          "caption": "原图 3｜堆叠减少取件频率，也增加分离要求",
+          "interpretation": "A 为多层数字堆叠，B 为实际打印状态。层间间距必须让各框架能够分离，而不是把整列打印成一个实心部件。原图采用 0.6 mm 间距，正文另述 0.3 mm 版本，属于不同配置。图中没有提供分离失败率或合格件产能。"
+        }
+      }
+    },
+    "en": {
+      "title": "Which medical supplies can distributed printing provide during shortages?",
+      "direction": "Emergency supply and manufacturing",
+      "sections": [
+        {
+          "id": "delivered_product_scope",
+          "title": "What was actually delivered: protective components, equipment interfaces and consumables",
+          "markdown": "A Madrid university hospital recorded distributed manufacturing from 14 March to 10 May 2020, reporting 17,276 delivered units. Fields included product, quantity, supplier, donation or purchase, delivery date and destination. This is a study of delivered supply, rather than a catalog of downloadable models.[Original hospital manufacturing record](ref:R01)\n\n| Product group | Items recorded | Role of printing |\n|---|---|---|\n| Protection and daily assistance | Face shields, ear savers, hands-free door accessories, headlight accessories and mask prototypes | Frames, retention parts or operating interfaces |\n| Respiratory-support accessories | Connectors and supports matched to available equipment | Interface adaptation and replacement of missing components |\n| Diagnostic consumables | Sampling swabs | Individual consumables integrated with packaging |\n\nA “face shield” was not an entirely printed transparent device: printed parts, sheets and straps formed the product. Respiratory-support deliveries were mainly components, not complete ventilators. Identifying a component’s system role defines emergency manufacturing scope more accurately than counting model types.\n\nThe original pie chart is dominated by shields and ear savers, but its legend also includes filament measured in kg and purchased snorkeling masks, and repeats an adapter name. It is not a homogeneous chart of independently printed finished units. The reported total is retained, while the chart illustrates composition rather than yielding reconstructed precise counts or numbers of patients benefiting.\n\nDifferent items followed different manufacturing paths. Simpler external accessories were mainly allocated to FDM, while parts with surface or material requirements went to SLA. This describes the team’s process allocation. Batch-specific leak or mechanical results are not provided for every item; the process name is not itself a component-performance result.",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "hospital_network_roles",
+          "title": "Hospital coordination: a low-output node can perform critical work",
+          "markdown": "In the hospital case, individual makers supplied 57.3% of manufacturing, manufacturing companies 28%, universities 7.6%, associations 2.8% and in-house production 4.3%. In-house work mainly covered prototypes and product validation. Equipment was dispersed, while interpreting demand, revising designs, receiving parts and final allocation could remain centralized.[Supplier roles and internal/external work](ref:R01)\n\nDaily requirements reached the hospital laboratory, which allocated work internally or externally according to available equipment and volume. Hospital couriers collected parts; assembly where needed, incoming inspection and a further pre-assembly check were centralized. The original assembly-bench and transport photographs reveal physical work beyond the digital file: sheets and printed frames converge before reaching users.\n\nThis explains why many printers do not immediately equal usable medical supplies. Inconsistent requests, design versions, missing sheets, limited assembly capacity or irregular transport can leave output as unfinished components. The study does not quantify each stage’s failure rate, so an existing delivery workflow does not mean every stage was lossless.\n\nMost deliveries served the hospital, with a table listing transfers to other institutions. That table totals 1,357, while the text describes 90.9% internal use. The external share implied by the overall total does not fully reconcile. Reporting scopes are not harmonized in the paper; the original scopes remain separate rather than adjusting institutional figures to match the percentage.\n\nThere was no randomized comparison of centralized and distributed production. The direct observation is an operating division of work: hospital needs assessment and review, external fabrication, and centralized receipt, assembly and allocation. Relative speed against another organizational structure would require comparable task-time and rework records.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "demand_sequence",
+          "title": "Demand changes the product mix: early shields and later accessories follow different timelines",
+          "markdown": "The hospital’s first formal delivery date was 25 March. During the first delivery week, 83.7% of all shields had already been supplied; respiratory-support connectors began arriving on 31 March and ear savers on 14 April. Different starting dates reflect changing demand and inventory rather than weekly scaling of one product.[Delivery timing and demand stages](ref:R01)\n\nEarly shield demand could be addressed with relatively simple external structures. Later interfaces depended on specific local equipment combinations and revisions to existing designs. Ear savers appeared later in relation to sustained wear and workflow needs. Delivery dates were recorded, but the initial request time for every department was not, so first delivery does not determine a complete product-specific response time.\n\nThe paper refers both to first delivery 11 days after the alarm period began and, in discussion, to first shields after 7 days. These may use different preparation or production starting points, which were not reconciled. They are not combined into a definite average lead time. Observation onset, prototype completion, first dispatch and arrival at the using department are distinct events.\n\nDonations accounted for 78.2% of products, while some higher-volume needs also entered purchasing. Distributed production included voluntary supply and procurement; all deliveries cannot be treated as cost-free production. The study explicitly did not conduct a comparable cost analysis. High delivered volume and lower comprehensive unit cost are separate output and economic questions.\n\nChanges in the same hospital’s product mix explain more than treating all deliveries as a single growth curve. They identify demands suited to shared designs and multiple production sites, interfaces requiring local redesign, and stages waiting for non-printed materials.",
+          "figure_ids": []
+        },
+        {
+          "id": "community_process_transfer",
+          "title": "Repeatable community batches: designs must work across equipment and operators",
+          "markdown": "An Ontario community initiative delivered 25,000 shields to more than 165 nonprofit and health care facilities. Contributors ranged from engineering researchers to hobbyists. Selection therefore considered not just shield shape, but stable production across printers, sheet retention and assembly.[Community manufacturing process study](ref:R02)\n\nThe project moved from a design with 3 front hooks to a 3DVerkstan frame with 6 distributed hooks. Additional attachments let the sheet and frame share shape retention, reducing dependence on rear elastic tension. Original images show the digital model, printed frame and assembled sheet: delivery concerns a combination, not only a plastic frame.\n\nTo reduce stops for part removal, the study explored stacks of 24. The text describes a 0.3 mm gap version, whereas the figure shows 0.6 mm gaps. Gap and layer dimensions depended on equipment configuration; these are not a single specimen’s unique parameters. Stacking can extend continuous unattended output, but detachment breakage, stringing and bonding between pieces increase rework.\n\nHigh-speed production produced insufficient cooling, warping, ringing and layer-bonding problems. No randomized speed-versus-acceptance curve was reported. These are operational troubleshooting observations, not parameters from which every printer’s output can be calculated. Deliverable quantity also subtracts failed prints, inseparable stacks and parts unsuitable for assembly.\n\nThe paper states a sheet thickness of 10 mm, inconsistent with the thin sheet in its illustration and office-supply description. That value is not transcribed as a manufacturing specification or silently changed to another unit. Reproducibility depends on verified material and version information, rather than copying every printed number.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "printing_to_molding",
+          "title": "From printing to molding: one product uses different processes at different stages",
+          "markdown": "Brazil’s Higia project compared distributed FDM with subsequent injection molding, reporting 35,000 and 80,000 shields respectively, totaling 115,000. Printing initially supplied nearby hospitals in continuous small batches; after tooling was ready, molding served larger batches and distant distribution.[Original comparison of manufacturing routes](ref:R03)\n\nThe design did not succeed in one iteration. Thin adjustable printed bands broke during testing and remained unsatisfactory after modification, leading to elastic retention. Front pins became hooks to reduce sheet detachment. When production moved to molding, different material and processing allowed adjustable bands to be reintegrated in another form. Function could persist while geometry changed with process.\n\n| Reported item | FDM route | Injection-molding route |\n|---|---|---|\n| Part-forming time | Approximately 90 min | Approximately 25 s injection per part |\n| Frame mass | 16 g | 29 g |\n| Assembled mass | 43 g | 56 g |\n| Reported unit amount | US$0.75 | US$0.47 |\n\nThis is not a fully controlled material experiment: design, material, equipment and scale changed together. Injection time excludes tooling preparation. Unit amounts are listed, but the paper also says heterogeneous printers and feedstocks prevented unified calculation of full actual production cost. Forming-time ratios alone therefore do not determine the supply system’s delivery-speed advantage.\n\nThe study observed iteration, output and distribution, without mechanical head-to-head testing or direct protective-efficacy measurement of the versions. Higher molded volume accumulated at a central location and still required regional transport. Distributed printing was slower per part but could start nearby deliveries earlier. The documented connection is succession between prototyping, early supply and volume manufacturing, rather than replacement of every stage by one process.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Original figure 1 | Different units within the delivery mix",
+          "interpretation": "Shields and ear savers dominate, but the legend also lists purchased masks, adapters and filament in kg. Sectors lack numerical labels and a name is repeated. The figure indicates broad composition rather than exact independent finished-unit counts."
+        },
+        "F02": {
+          "caption": "Original figure 2 | Printed components versus complete equipment",
+          "interpretation": "Models show a shield frame, ear saver, door accessories, headlight accessory and mask prototype. Lower photographs show an assembled shield and rear retention piece. Transparent sheets and straps are not all printed from these models; a frame model does not represent every manufacturing step of complete protective equipment."
+        },
+        "F03": {
+          "caption": "Original figure 5 | Assembly and distribution within the network",
+          "interpretation": "The upper photograph shows centralized processing of frames and transparent sheets, while lower photographs show boxed transport. These are physical workflow nodes without time or acceptance-rate scales. They explain a hospital’s coordinating role despite a small share of in-house printing."
+        },
+        "F04": {
+          "caption": "Original figure 2 | From digital frame to an assembled shield",
+          "interpretation": "A is the digital model, B the frame and C the attached transparent sheet. Front and side attachment points retain the sheet. The original figure/model credits 3DVerkstan under CC BY-SA 4.0; all panels are retained. The image shows assembly, not a measured percentage of droplet interception."
+        },
+        "F05": {
+          "caption": "Original figure 3 | Stacking reduces removal frequency but requires separation",
+          "interpretation": "A shows the digital stack and B the printed result. Gaps must permit individual frames to separate rather than create one solid column. The original figure uses 0.6 mm gaps; the text also describes a 0.3 mm version. These are different configurations. No detachment-failure rate or accepted-output capacity is plotted."
+        }
+      }
+    },
+    "de": {
+      "title": "Welche medizinischen Güter kann verteilter Druck bei Versorgungsengpässen bereitstellen?",
+      "direction": "Notfallversorgung und Fertigung",
+      "sections": [
+        {
+          "id": "delivered_product_scope",
+          "title": "Was tatsächlich geliefert wurde: Schutzkomponenten, Geräteschnittstellen und Verbrauchsmaterial",
+          "markdown": "Eine Madrider Universitätsklinik erfasste verteilte Fertigung vom 14. März bis 10. Mai 2020 und berichtete 17,276 gelieferte Einheiten. Erfasst wurden Produkttyp, Menge, Lieferant, Spende oder Kauf, Lieferdatum und Ziel. Untersucht wurde reale Versorgung statt nur ein Katalog herunterladbarer Modelle.[Originalaufzeichnungen der Klinik](ref:R01)\n\n| Produktgruppe | Erfasste Gegenstände | Beitrag des Drucks |\n|---|---|---|\n| Schutz und Alltagshilfen | Gesichtsschutzschirme, Ohrentlastungsbänder, berührungsarme Türhilfen, Stirnlampenzubehör und Maskenprototypen | Rahmen, Halterungen oder Bedienungsschnittstellen |\n| Zubehör zur Atemunterstützung | Verbinder und Halterungen passend zur vorhandenen Ausstattung | Schnittstellenanpassung und Ergänzung fehlender Komponenten |\n| Diagnostisches Verbrauchsmaterial | Probenabstrichtupfer | Einzelverbrauchsmaterial mit Verpackungsprozess |\n\nEin Gesichtsschutzschirm war kein vollständig gedrucktes transparentes Produkt. Druckteile, Folie und Bänder bildeten gemeinsam die Einheit. Atemunterstützung betraf überwiegend Komponenten, keine vollständigen Beatmungsgeräte. Die Systemfunktion eines Teils definiert die Notfallfertigung genauer als die Zahl verschiedener Modelle.\n\nDas Originalkreisdiagramm wird von Schirmen und Ohrentlastungsbändern dominiert. Seine Legende enthält aber auch Filament in kg, zugekaufte Schnorchelmasken und einen doppelt genannten Adapter. Es ist kein homogenes Diagramm unabhängig gedruckter Fertigteile. Die berichtete Gesamtzahl bleibt erhalten; das Diagramm erläutert Zusammensetzung statt rekonstruierter exakter Stückzahlen oder begünstigter Patienten.\n\nVerschiedene Gegenstände nutzten verschiedene Fertigungswege. Einfaches externes Zubehör wurde überwiegend FDM zugeordnet, Teile mit besonderen Oberflächen- oder Materialanforderungen SLA. Dies beschreibt die Prozesszuweisung des Teams. Chargenbezogene Dichtheits- oder Mechanikdaten fehlen für einzelne Produkte; ein Prozessname ist kein Bauteilleistungsergebnis.",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "hospital_network_roles",
+          "title": "Klinische Koordination: ein Knoten mit geringer Stückzahl übernimmt zentrale Arbeit",
+          "markdown": "Im Klinikfall entfielen 57.3% der Fertigung auf Einzelpersonen, 28% auf Fertigungsunternehmen, 7.6% auf Hochschulen, 2.8% auf Vereinigungen und 4.3% auf interne Produktion. Intern dominierten Prototypen und Produktvalidierung. Verteilte Maschinen konnten damit mit zentraler Bedarfsauslegung, Designänderung, Warenannahme und Zuteilung verbunden werden.[Rollen interner und externer Beteiligter](ref:R01)\n\nTägliche Anforderungen gingen an das Kliniklabor, das anhand verfügbarer Ausstattung und Menge intern oder extern zuwies. Klinikkuriere sammelten Teile ein. Erforderliche Montage, Eingangskontrolle und erneute Prüfung vor Montage wurden zentralisiert. Die Originalfotos von Montagetisch und Transport zeigen materielle Arbeit jenseits der Datei: Folien und Druckrahmen treffen zusammen, bevor sie die Nutzer erreichen.\n\nViele Drucker bedeuten deshalb nicht sofort nutzbare Medizinprodukte. Uneinheitliche Anforderungen, Designstände, fehlende Folien, begrenzte Montage oder unsteter Transport können Halbzeugbestände erzeugen. Ausfallquoten jedes Schritts wurden nicht quantifiziert. Ein bestehender Lieferablauf belegt keine verlustfreie Bearbeitung aller Schritte.\n\nDer überwiegende Teil diente der Klinik selbst; eine Tabelle nennt Lieferungen an andere Einrichtungen. Diese summieren sich auf 1,357, während der Text 90.9% interne Nutzung angibt. Der aus der Gesamtzahl abgeleitete externe Anteil stimmt damit nicht vollständig überein. Die statistischen Bezugsbereiche wurden nicht harmonisiert; Tabellenwerte werden nicht nachträglich an den Prozentsatz angepasst.\n\nEin randomisierter Vergleich zentraler und verteilter Fertigung fehlt. Direkt beobachtet wurde eine funktionierende Arbeitsteilung aus klinischer Bedarfsprüfung, externer Herstellung sowie zentraler Annahme, Montage und Verteilung. Ein Geschwindigkeitsvergleich mit anderer Organisation benötigt vergleichbare Aufgabenzeiten und Nacharbeitsdaten.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "demand_sequence",
+          "title": "Bedarf verändert das Sortiment: frühe Schirme und spätes Zubehör haben eigene Zeitverläufe",
+          "markdown": "Die erste formell erfasste Lieferung erfolgte am 25. März. In der ersten Lieferwoche waren bereits 83.7% der gesamten Schirme geliefert. Verbinder zur Atemunterstützung kamen ab 31. März, Ohrentlastungsbänder ab 14. April. Unterschiedliche Anfänge spiegeln Bedarf und Bestände wider, nicht bloß die wöchentliche Skalierung desselben Produkts.[Lieferzeitpunkte und Bedarfsphasen](ref:R01)\n\nFrüher Schirmbedarf ließ sich mit relativ einfachen Außenstrukturen beantworten. Spätere Schnittstellen hingen von örtlichen Gerätekombinationen und Änderungen vorhandener Entwürfe ab. Ohrentlastungsbänder erschienen später im Zusammenhang mit längerem Tragen und Arbeitsabläufen. Lieferdaten wurden erfasst, nicht jedoch jede erste Anfrage der Abteilungen. Der erste Liefertermin ergibt deshalb keine vollständige produktspezifische Reaktionszeit.\n\nDer Artikel nennt sowohl erste Lieferung 11 Tage nach Alarmbeginn als auch erste Schirme nach 7 Tagen in der Diskussion. Möglicherweise liegen unterschiedliche Vorbereitungs- oder Fertigungsanfänge zugrunde; sie wurden nicht abgeglichen. Daraus wird keine eindeutige mittlere Lieferzeit zusammengesetzt. Beobachtungsbeginn, fertiger Prototyp, Versand und Ankunft in der Abteilung sind getrennte Ereignisse.\n\nSpenden machten 78.2% der Produkte aus; größerer Bedarf wurde teilweise zusätzlich über Einkauf gedeckt. Verteilte Fertigung umfasste somit freiwillige Bereitstellung und Beschaffung, nicht ausschließlich kostenlose Produktion. Eine vergleichbare Kostenanalyse wurde ausdrücklich nicht durchgeführt. Hohe Liefermenge und geringere umfassende Stückkosten sind verschiedene Produktions- und Wirtschaftsfragen.\n\nDer Sortimentswechsel derselben Klinik erklärt mehr als eine einzige Wachstumskurve sämtlicher Lieferungen. Er zeigt Bedarfe für geteilte Entwürfe und mehrere Produktionsorte, Schnittstellen mit lokaler Anpassung sowie Schritte, die auf nicht gedruckte Materialien warten.",
+          "figure_ids": []
+        },
+        {
+          "id": "community_process_transfer",
+          "title": "Wiederholbare Gemeinschaftschargen: Entwürfe müssen zu Maschinen und Bedienern passen",
+          "markdown": "Eine Initiative in Ontario lieferte 25,000 Gesichtsschutzschirme an mehr als 165 gemeinnützige und medizinische Einrichtungen. Mitwirkende reichten von Ingenieurforschern bis zu Hobbyanwendern. Auswahlkriterien betrafen deshalb neben der Schutzform auch stabile Fertigung auf unterschiedlichen Maschinen, Folienbefestigung und Montage.[Prozessstudie gemeinschaftlicher Fertigung](ref:R02)\n\nDie Initiative wechselte von 3 vorderen Haken zu einem 3DVerkstan-Rahmen mit 6 verteilten Haken. Zusätzliche Befestigungen ließen Folie und Rahmen die Formerhaltung gemeinsam übernehmen und verringerten die alleinige Abhängigkeit von hinterer Bandspannung. Originalbilder zeigen Digitalmodell, Druckrahmen und montierte Folie: Geliefert wird eine Kombination, nicht bloß ein Kunststoffrahmen.\n\nUm Unterbrechungen zur Teileentnahme zu reduzieren, wurden Stapel mit 24 Teilen untersucht. Der Text beschreibt eine Version mit 0.3 mm Abstand, die Abbildung eine mit 0.6 mm. Abstand und Schichthöhe hingen von der Ausstattung ab; die Werte sind keine eindeutige Konfiguration desselben Prüfkörpers. Stapeln ermöglicht längeren unbeaufsichtigten Betrieb, erhöht aber mögliche Nacharbeit durch Trennbruch, Fäden und aneinanderhaftende Teile.\n\nBei höherer Geschwindigkeit wurden unzureichende Kühlung, Verzug, Schwingungsspuren und Schichthaftungsprobleme beobachtet. Eine randomisierte Geschwindigkeits-Akzeptanz-Kurve fehlt. Dies sind praktische Fehlersucherfahrungen, keine universellen Leistungsdaten für sämtliche Drucker. Lieferfähige Menge berücksichtigt zusätzlich Fehldrucke, untrennbare Stapel und nicht montierbare Teile.\n\nDer Artikel nennt 10 mm Folienstärke, was weder zur dünnen Folie im Bild noch zur Büroartikelbeschreibung passt. Dieser Wert wird nicht als Fertigungsspezifikation übernommen oder stillschweigend in eine andere Einheit geändert. Reproduzierbarkeit beruht auf bestätigten Material- und Versionsangaben statt unkritischer Übernahme sämtlicher Zahlen.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "printing_to_molding",
+          "title": "Vom Druck zum Spritzguss: dasselbe Produkt nutzt je nach Phase andere Verfahren",
+          "markdown": "Das brasilianische Higia-Projekt verglich verteiltes FDM mit späterem Spritzguss und berichtete 35,000 beziehungsweise 80,000 Schirme, insgesamt 115,000. Zunächst versorgte der Druck nahe Kliniken kontinuierlich in kleinen Losen. Nach Werkzeugfertigstellung übernahm Spritzguss größere Lose und weite Verteilung.[Originalvergleich der Fertigungswege](ref:R03)\n\nDas Design gelang nicht in einem Durchlauf. Dünne verstellbare Druckbänder brachen im Test und blieben nach Änderung unzureichend, weshalb elastische Bänder verwendet wurden. Vordere Stifte wurden zu Haken, um Folienablösung zu reduzieren. Mit dem Spritzguss ermöglichten anderes Material und Verfahren die erneute Integration verstellbarer Bänder in veränderter Form. Die Funktion konnte bleiben, während sich Geometrie und Prozess änderten.\n\n| Berichteter Punkt | FDM | Spritzguss |\n|---|---|---|\n| Formgebungszeit | Etwa 90 min | Etwa 25 s Einspritzung je Teil |\n| Rahmenmasse | 16 g | 29 g |\n| Montierte Masse | 43 g | 56 g |\n| Berichteter Stückbetrag | US$0.75 | US$0.47 |\n\nDies ist kein vollständig kontrollierter Materialversuch: Entwurf, Werkstoff, Maschine und Maßstab änderten sich gemeinsam. Einspritzzeit enthält keine Werkzeugvorbereitung. Stückbeträge werden genannt, zugleich ließ sich laut Artikel wegen heterogener Drucker und Filamente keine einheitliche vollständige Istkostenrechnung erstellen. Ein reines Formgebungszeitverhältnis ergibt daher keinen Geschwindigkeitsvorteil des gesamten Versorgungssystems.\n\nUntersucht wurden Iteration, Menge und Verteilung, ohne mechanischen Direktvergleich oder direkte Schutzwirkungsmessung beider Versionen. Größere Spritzgussmengen konzentrierten sich an einem Standort und mussten weitertransportiert werden. Verteilter Druck war je Teil langsamer, konnte aber frühere Nahbereichslieferungen ermöglichen. Dokumentiert wird die Abfolge von Prototypen, früher Versorgung und Mengenfertigung, nicht der Ersatz sämtlicher Phasen durch ein Verfahren.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Originalabbildung 1 | Verschiedene Zähleinheiten im Liefermix",
+          "interpretation": "Schirme und Ohrentlastungsbänder dominieren. Die Legende nennt zusätzlich gekaufte Masken, Adapter und Filament in kg. Sektoren haben keine Zahlenbeschriftung, ein Name wiederholt sich. Erkennbar ist die grobe Zusammensetzung, keine genaue Zahl unabhängiger Fertigteile."
+        },
+        "F02": {
+          "caption": "Originalabbildung 2 | Druckkomponente und vollständige Ausrüstung",
+          "interpretation": "Modelle zeigen Schirmrahmen, Ohrentlastung, Türhilfen, Stirnlampenzubehör und Maskenprototyp. Unten stehen montierter Schirm und hintere Halterung. Folien und Bänder werden nicht sämtlich aus diesen Modellen gedruckt. Ein Rahmenmodell repräsentiert nicht alle Herstellungsschritte vollständiger Schutzausrüstung."
+        },
+        "F03": {
+          "caption": "Originalabbildung 5 | Montage und Verteilung im Netzwerk",
+          "interpretation": "Oben erfolgt zentrale Verarbeitung von Rahmen und Folien, unten Transport in Kartons. Sichtbar sind physische Prozessknoten ohne Zeit- oder Annahmequotenskala. Sie erklären die Koordinationsrolle der Klinik trotz geringer interner Druckquote."
+        },
+        "F04": {
+          "caption": "Originalabbildung 2 | Vom Digitalrahmen zum montierten Schirm",
+          "interpretation": "A zeigt das Digitalmodell, B den Rahmen, C die befestigte Folie. Vordere und seitliche Punkte halten die Folie. Originalabbildung und Modell nennen 3DVerkstan unter CC BY-SA 4.0; alle Teilbilder bleiben erhalten. Die Darstellung zeigt Montage, keinen gemessenen Prozentsatz abgefangener Tröpfchen."
+        },
+        "F05": {
+          "caption": "Originalabbildung 3 | Stapeln spart Entnahmen, erfordert aber Trennbarkeit",
+          "interpretation": "A zeigt den digitalen Stapel, B das Druckergebnis. Abstände müssen einzelne Rahmen trennbar halten, statt eine massive Säule zu erzeugen. Die Originalabbildung verwendet 0.6 mm Abstand; der Text beschreibt zusätzlich 0.3 mm. Dies sind unterschiedliche Konfigurationen. Trennfehlerquote und akzeptierte Ausbringung werden nicht dargestellt."
+        }
+      }
+    }
+  }
+}

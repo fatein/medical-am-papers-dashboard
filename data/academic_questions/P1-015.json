@@ -1,0 +1,334 @@
+{
+  "schema_version": 2,
+  "question_id": "P1-015",
+  "p": "P1",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_1a713c2e2350c1ed0d70",
+    "doc_35a796a000643aff0840",
+    "KB2026666C940FC47B"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Additively manufactured biphasic construct loaded with BMP-2 for vertical bone regeneration: A pilot study in rabbit",
+      "publisher": "Materials Science and Engineering: C",
+      "year": 2018,
+      "url": "https://doi.org/10.1016/j.msec.2018.06.071",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Examining trabecular morphology and chemical composition of peri-scaffold osseointegrated bone",
+      "publisher": "Journal of Orthopaedic Surgery and Research",
+      "year": 2020,
+      "url": "https://doi.org/10.1186/s13018-020-01931-z",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "In vivo evaluation of 3D-printed PDLLA/SrHAp scaffolds for mandibular reconstruction in a minipig model",
+      "publisher": "Materials Today Bio",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/j.mtbio.2026.103523",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R02",
+      "original_label": "Fig. 3",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7488860.1/13018_2020_1931_Fig3_HTML.jpg?md5=f2e643b8877fd3202a5018ec848238f0",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7488860/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-015/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R02",
+      "original_label": "Fig. 4",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7488860.1/13018_2020_1931_Fig4_HTML.jpg?md5=753d4c1fe4898b556355e42a557c8323",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7488860/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-015/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R03",
+      "original_label": "Fig. 8",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13473966.1/gr8.jpg?md5=b615b190c92a38c543c4c1289c2005aa",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13473966/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-015/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Fig. 9",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13473966.1/gr9.jpg?md5=d65dcc08eac015816cb2b17702c7f2e8",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13473966/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-015/F04.jpg"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Fig. 5",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13473966.1/gr5.jpg?md5=2bac85be87a4cc25eb3c1acaf6bad1ae",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13473966/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-015/F05.jpg"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R03",
+      "original_label": "Fig. 14",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13473966.1/gr14.jpg?md5=21d6fb2388a406b56e88122dcb5b98fa",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13473966/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-015/F06.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "骨缺损模型如何评价支架的修复效果？",
+      "direction": "骨再生支架",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "颅骨上方的新增空间，与原有骨内的钻孔不是同一修复任务",
+          "markdown": "Kumar 等的兔实验把 PCL 双相构件置于原有颅骨上方，并用 PLLA 顶罩维持新增空间。四种组合为顶罩空腔、支架、支架加水凝胶、支架加水凝胶和 30 µg BMP-2；每组 n=2 构件，四只兔各放两个构件，第 8 周取材。组织计量以颅骨表面和顶罩围成的截面面积为分母。虽然体外细胞指标较好，动物中新骨主要局限于邻近原有颅骨的位置，整体填充有限，组间未检出显著差异。[颅骨上方增量实验](ref:R01)\n\n这个模型检验的是从骨表面向新增空间建立组织，不能与松质骨内一个小钻孔的骨长入百分比直接比较。前者的细胞与血供进入路径受空间和屏障限制，后者周围存在骨床。用于比较修复效果的“骨量”，必须同时说明原始骨边界、期望修复的空间以及组织能够从何处进入。\n\n后面的两个实验分别测量兔股骨髁小孔周围骨质，以及小型猪下颌骨节段切除后的桥接。它们有不同的对照和分母：前者以健康骨为参照，后者在重建板固定下比较三种材料。二者都不能仅凭图中出现矿化组织，就声称已恢复原部位的完整结构与功能。[股骨髁模型](ref:R02) [下颌骨节段模型](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "过盈植入后的骨量，需要与正确的对照比较",
+          "markdown": "Lyu 等将直径 2 mm、长 5 mm 的电子束制造多孔钛支架压入直径 1.9 mm、深 5 mm 的股骨髁孔，以过盈配合产生预紧。支架设计孔隙率 70%、孔径 0.65 mm、丝径 0.32 mm。14 只约 2.5 月龄兔分为手术和健康对照两组，各 7 只，观察 12 周。这不是成熟动物的大段承载骨缺损，也没有采用“同样手术但无预紧”的支架对照。[植入几何与分组](ref:R02)\n\n因此，术后骨与健康骨的差别不能单独归因于预紧。原表中手术组 BV/TV 为 0.1338±0.0087，健康组为 0.1596±0.01796；BMD 分别为 800±20 与 980±90 mg/cm³。两项都低于健康骨参照。骨小梁数量降低、间距增大，提示局部矿化并未同时恢复健康的小梁网络。小梁厚度、连接密度等指标则没有显著差异，不能把每个结构指标都写成退化。[骨体积分数与小梁指标](ref:R02)\n\nµCT 使用 32 µm 像素和密度校准模体；骨小梁厚度和间距在原表以像素报告，不能直接按毫米抄录。SEM 在支架部分杆件周围观察到结缔组织，而非所有表面均连续骨接触。过盈产生的应变来自预实验测量，并不是每只兔愈合过程中连续记录的界面载荷；研究也没有提供愈合后的推出强度或疲劳性能。因此，影像、界面组织和固定强度在此仍是不同证据层次。[成像与界面观察方法](ref:R02)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "矿化骨的化学组成可以揭示影像体积没有说明的成熟度",
+          "markdown": "同一股骨髁实验将组织切片分别用于 SEM 与 FTIR。健康对照的胶原相关主峰约为 1657 cm⁻¹，支架周围组织约为 1639 cm⁻¹；手术组磷酸盐相关信号也较弱。与较低 BMD 相结合，这提示支架附近组织的矿物—有机基质状态尚未接近健康参照。FTIR 的意义在于补充“有多少可分割矿化体素”之外的组成信息，而不是再提供一个可互换的骨量数字。[矿物与胶原谱](ref:R02)\n\n单个峰位移动不能独立确立胶原交联成熟度的全部变化；原图也不是各样本定量交联比的统计分布。切片 SEM 显示的表面接触、µCT 的区域体积，以及 FTIR 的取样组织，具有不同空间尺度。把三者联合解释，可以描述正在整合但仍有结缔组织、较低矿化和不同基质结构的界面；不能仅因某张截面贴近金属就判为完全恢复。\n\n小型猪研究进一步用时间标签区分“什么时候形成”与“最终有多少”。Bräuer 等在第 5 周、第 2 月、第 4 月分别给予不同荧光标记，至第 6 月取切片。相同终点的不同色带记录矿化前沿；已有材料残留、纤维间隙和成熟骨组织仍需结合普通染色辨认。这个设计可定位生长方向，但它并未提供各时间段的动态力学强度。[序贯矿化标记](ref:R03)",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "小型猪模型的骨体积包括支架外成骨，不能直接当作孔内填充",
+          "markdown": "Bräuer 等将 12 只成年小型猪随机分为三组，各 4 只：纯 PDLLA、含 10% SrHAp 颗粒的 PDLLA 复合物，以及 PDLLA 外壳加独立打印 SrHAp 内芯的双相结构。下颌骨节段缺损约为 3 cm，由个性化钛重建板提供主要固定。骨膜得到保留，研究也没有空缺损或自体骨对照；这种条件下的桥接不能作为材料独立克服严格临界尺寸缺损的证明。[大型动物模型与材料结构](ref:R03)\n\nDVT 在术后即刻以及第 2、4、6 月重复，体素为 400 µm。圆柱 VOI 横跨缺损，并明确纳入原植入物轮廓之外的骨膜骨和外生骨。结果扣除了即刻术后的基线，减少初始材料和金属伪影影响；但不能据此假定后续材料移动、降解或组织密度变化均已消除。密度下限还从 200 调整到 100 mg/cm³，以纳入先前漏分的组织，因此所选阈值直接决定统计对象。[成像阈值与 VOI](ref:R03)\n\n第 6 月的基线校正体积分别为纯 PDLLA 13.90±3.90 cm³、颗粒复合物 7.61±5.06 cm³、壳芯结构 14.94±3.48 cm³。壳芯组与纯聚合物组数值接近，不能只把最高均值解释为明确优越。更关键的是，影像显示骨桥多从骨膜与切端周缘发出，常沿重建板外侧形成；所有动物的缺损中心都没有得到充分填充。因此，大体积矿化组织与目标空间被解剖性重建，并不具有同一分母。[体积与桥接位置](ref:R03)",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "桥接与并发症必须保留在同一动物的结果中",
+          "markdown": "该小型猪试验中，12 只动物有 11 只出现至少一种不良事件。纯 PDLLA 为 4/4，颗粒复合组为 4/4，壳芯组为 3/4；事件包括裂开、脓肿、瘘管及固定或材料失稳。颗粒复合组一只因明显膨胀，在第 14 周提前取出植入物；壳芯组两只发生陶瓷内芯断裂或移位。若只展示最终骨桥，会遗漏材料降解和软组织覆盖共同影响的失败路径。[逐只动物并发症](ref:R03)\n\n原文总体描述所有动物出现桥接，但提前取出材料的动物仍记载舌侧假关节与机械不稳定。这里应保留局部位置与稳定性的描述，不能把一个方向的影像连接等同于整个截面稳定愈合。第 6 月组织学还显示部分重建板周围的纤维间隙，残留陶瓷与组织之间也可存在分离；新骨的皮质—松质分化程度没有达到对侧健康下颌骨。[桥接与组织间隙](ref:R03)\n\n研究没有测定三种植入物在降解各阶段的压缩、弯曲、界面强度或循环承载性能。内芯断裂说明结构完整性发生丧失，却不能反推一个具体的破坏载荷；重建板仍在承载时动物能够进食，也不能证明再生骨已独立恢复正常咀嚼强度。影像、组织学、临床事件和承载结构需要对齐到同一动物、同一时间点，而不是把不同个体最好的指标拼接为一个成功病例。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "延长随访揭示修复路径，也改变可比较的样本范围",
+          "markdown": "第 14 月随访只保留每组一只结局较好的动物，不能作为每组原先四只的长期平均疗效。纯 PDLLA 个体仍有中央未骨化区，颗粒复合个体保留多条周边骨桥与慢性感染，壳芯个体则显示较接近原下颌骨轮廓的连续再建，并有骨进入陶瓷内芯。三者的差别由连续多时点图像显现，但选取最好个体会放大“代表图”的乐观程度。[长期个体轨迹](ref:R03)\n\n三个长期个体在影像确认桥接后均移除重建板，随后至少观察 2 周咀嚼稳定性。这比单纯在板固定状态下报告骨量更接近功能验证，却仍不是定量的咬合力、弯曲刚度或疲劳试验。其中纯 PDLLA 个体第 8 月新出现的瘘管一直持续到第 14 月取板，说明短期愈合记录无法覆盖全部晚发事件。壳芯个体的陶瓷残留也没有出现明确开始吸收的影像证据。[取板后的观察与晚发事件](ref:R03)\n\n| 模型中的实际观察 | 对应的修复含义 | 尚不能由该观察替代的结果 |\n|---|---|---|\n| 兔股骨髁支架表面附近出现组织 | 局部组织进入与界面接触 | 达到健康骨的矿化和小梁结构 |\n| 小型猪缺损周围出现骨桥 | 形成跨越切除区的矿化连接 | 原植入物中央被充分填满 |\n| 选定长期个体取板后短期咀嚼稳定 | 一定条件下骨桥可维持下颌连续性 | 全组长期耐久性或正常咀嚼载荷能力 |",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Lyu 等：股骨髁支架周围组织的分级放大 SEM。",
+          "interpretation": "A–D 从整体截面到局部界面，放大倍数依次为 30、200、400、2000；B–D 可见光滑金属截面与邻近组织之间的结构不连续。原文在部分杆件表面识别结缔组织，不能把全部接触区算作成熟骨结合。该图展示局部形貌，不是全支架骨接触率，也没有给出界面抗剪强度。[界面 SEM](ref:R02)"
+        },
+        "F02": {
+          "caption": "Lyu 等：健康骨与支架周围组织的 FTIR 对比。",
+          "interpretation": "横轴为波数，纵轴为吸光度；健康对照与手术组织在约 1657 与 1639 cm⁻¹ 的胶原相关区域出现不同主峰，手术组织的磷酸盐区较弱。谱线为代表性样本而非分组统计箱图，也没有以相同基线校正后的峰面积比给出完整矿物成熟度。它补充基质组成差异，不能把峰高直接换成新骨体积。[FTIR 原图](ref:R02)"
+        },
+        "F03": {
+          "caption": "Bräuer 等：VOI、校正后骨体积与不同时段的增长。",
+          "interpretation": "A 的红色圆柱跨越切端，并纳入支架外周区域。B 是第 2、4、6 月的基线校正体积，单位 cm³，每组 n=4 动物；壳芯与纯 PDLLA 的均值相近，显著性括号连接颗粒复合与壳芯的末期比较。C 为相邻时段百分比增长，其分母是各自前一时点，较大的增长率不能直接当作更大绝对骨量。VOI 外周骨膜骨的贡献需要结合空间图判断。[体积分母](ref:R03)"
+        },
+        "F04": {
+          "caption": "Bräuer 等：序贯荧光标记揭示骨生长位置与方向。",
+          "interpretation": "各行是不同材料的代表动物，左为矢状面，右为冠状面，标尺 1 cm。白虚线标切端，蓝三角为固定材料，黄三角为陶瓷内芯残留；不能把内芯的强荧光全部认作长入的新骨。蓝、红、绿分别对应第 5 周、第 2 月、第 4 月的给药标记，橙色虚线圈示骨与板间的间隙。色带常从周缘向外或向中央推进，而非均匀填满原支架。[矿化的时空定位](ref:R03)"
+        },
+        "F05": {
+          "caption": "Bräuer 等：不良事件按动物与事件类型展开。",
+          "interpretation": "上方概括 11/12 有并发症、1/12 无并发症；下方逐列对应动物，各行区分裂开、脓肿、瘘管、板松动、膨胀导致提前取出以及断裂／移位。一个动物可出现多种事件，不能把所有叉号相加当作发生率。橙色动物符号标出长期随访个体；最后一列没有事件，是壳芯组的最佳个体，而非全组情况。[事件分布](ref:R03)"
+        },
+        "F06": {
+          "caption": "Bräuer 等：三个长期个体的骨形态与厚度轨迹。",
+          "interpretation": "三列分别是纯 PDLLA、颗粒复合和壳芯个体，行对应 0、2、4、6、14 月。颜色条标的是骨厚度 0.16–2.0 cm，不是骨密度或成骨活性。末行壳芯个体轮廓较连续，其他两列仍有中央缺口或多条周边骨桥。各列仅代表一只经选择的动物，因此纵向变化可以追踪，横向图像差异不能作为全组长期统计比较。[长期三维重建](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do bone-defect models evaluate scaffold-mediated repair?",
+      "direction": "Bone-regeneration scaffolds",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Added space above the calvarium differs from a hole inside existing bone",
+          "markdown": "Kumar et al. placed a biphasic PCL construct above rabbit calvarial bone and maintained the added space with a PLLA dome. Four combinations were tested: empty dome, scaffold, scaffold plus hydrogel, and scaffold plus hydrogel with 30 µg BMP-2. Each group contained n=2 constructs; four rabbits carried two constructs each, harvested at week 8. Histomorphometry used the cross-sectional area bounded by the calvarium and dome. Despite favorable cell findings, new bone was largely restricted to the vicinity of existing calvarial bone, with limited overall filling and no detected significant group differences. [Supra-calvarial augmentation experiment](ref:R01)\n\nThis model tests tissue formation from a bone surface into added space, not the same task as ingrowth into a small cancellous-bone hole. Entry of cells and blood supply is constrained by space and barriers in the former, whereas the latter is surrounded by a bone bed. Bone quantity therefore needs the original boundary, intended repair space and routes of tissue entry specified.\n\nThe following experiments examined bone around a small rabbit femoral-condyle hole and bridging after segmental minipig mandibular resection. Their controls and denominators differ: healthy bone in the former and three material configurations under reconstruction-plate fixation in the latter. Mineralized tissue alone does not demonstrate complete structural and functional restoration at either site. [Femoral-condyle model](ref:R02) [Segmental mandibular model](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Bone quantity after interference implantation requires the correct control",
+          "markdown": "Lyu et al. pressed an electron-beam-manufactured porous titanium scaffold, 2 mm in diameter and 5 mm long, into a femoral-condyle hole 1.9 mm in diameter and 5 mm deep, generating preload by interference fit. Designed porosity was 70%, pore size 0.65 mm and strut diameter 0.32 mm. 14 rabbits aged approximately 2.5 months were divided into surgery and healthy-control groups of 7 and observed for 12 weeks. This was neither a large load-bearing segmental defect in mature animals nor a comparison with otherwise identical surgery without preload. [Implant geometry and groups](ref:R02)\n\nDifferences between postoperative and healthy bone therefore cannot be attributed to preload alone. The original table gives surgery-group BV/TV of 0.1338±0.0087 versus 0.1596±0.01796 in healthy controls, and BMD of 800±20 versus 980±90 mg/cm³. Both were below the healthy-bone reference. Trabecular number decreased and spacing increased, indicating that local mineralization had not restored the healthy trabecular network. Thickness, connectivity density and some other indices did not differ significantly; deterioration cannot be assigned to every structural measure. [Bone fraction and trabecular indices](ref:R02)\n\nMicro-CT used 32 µm pixels and a density-calibration phantom. Original thickness and spacing values are expressed in pixels and cannot be copied as millimeters. SEM found connective tissue around some struts rather than continuous bone contact everywhere. Interference-related strain was measured in preliminary experiments, not continuously recorded as interface loading during each animal's healing. Post-healing push-out strength and fatigue were also not tested. Imaging, interfacial tissue and fixation strength therefore remain distinct evidence levels. [Imaging and interface methods](ref:R02)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Composition reveals maturity that image volume does not describe",
+          "markdown": "The same condyle experiment assigned tissue sections to SEM and FTIR. A collagen-associated principal band occurred around 1657 cm⁻¹ in healthy controls and around 1639 cm⁻¹ in peri-scaffold tissue; phosphate-associated signals were also weaker after surgery. Together with lower BMD, these findings suggest that the local mineral–organic matrix state had not approached the healthy reference. FTIR adds compositional information beyond the number of segmentable mineralized voxels rather than providing another interchangeable bone-quantity value. [Mineral and collagen spectra](ref:R02)\n\nA single peak shift cannot independently establish all changes in collagen cross-link maturity. The figure is also not a statistical distribution of quantified cross-link ratios across specimens. SEM surface contact, regional micro-CT volume and FTIR-sampled tissue operate at different spatial scales. Combined, they describe an integrating interface still containing connective tissue, lower mineralization and altered matrix structure; contact visible in one metal-adjacent section alone does not establish full restoration.\n\nThe minipig study additionally distinguished when tissue formed from how much was present at the endpoint. Bräuer et al. administered different fluorochromes at week 5, month 2 and month 4 and examined sections at month 6. Different bands within the same endpoint record mineralization fronts. Remaining material, fibrous gaps and mature bone still require conventional staining for identification. This design locates growth direction without supplying dynamic mechanical strength for each interval. [Sequential mineralization labeling](ref:R03)",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Minipig bone volume includes extra-scaffold bone, not simply pore filling",
+          "markdown": "Bräuer et al. randomized 12 adult minipigs into three groups of 4: pure PDLLA, PDLLA containing 10% SrHAp particles, and a biphasic PDLLA shell with a separately printed SrHAp core. Segmental mandibular defects were approximately 3 cm long, with patient-specific titanium reconstruction plates providing primary fixation. The periosteum was preserved, and there was no empty-defect or autograft control. Bridging under these conditions cannot establish that the material independently overcame a strict critical-size defect. [Large-animal model and material configurations](ref:R03)\n\nDVT was repeated immediately after surgery and at months 2, 4 and 6 using 400 µm voxels. The cylindrical VOI spanned the defect and explicitly included periosteal and exostotic bone outside the original implant contour. Subtracting the immediate postoperative baseline reduced effects of initial material and metal artifacts, but does not establish elimination of subsequent material movement, degradation or density changes. The density threshold was also lowered from 200 to 100 mg/cm³ to include previously missed tissue. Threshold choice therefore directly changes what is counted. [Imaging thresholds and VOI](ref:R03)\n\nAt month 6, baseline-corrected volumes were 13.90±3.90 cm³ for pure PDLLA, 7.61±5.06 cm³ for the particle composite and 14.94±3.48 cm³ for shell/core implants. Shell/core and pure-polymer means were close; the highest mean alone does not establish clear superiority. More fundamentally, imaging showed bridges arising mainly from periosteum and peripheral resection edges, often outside the plate. The central defect was insufficiently filled in every animal. A large mineralized volume and anatomical reconstruction of the intended space therefore have different denominators. [Volume and bridge location](ref:R03)",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Bridging and complications must remain linked within each animal",
+          "markdown": "In the minipig experiment, 11 of 12 animals experienced at least one adverse event: 4/4 with pure PDLLA, 4/4 with particle composite and 3/4 with shell/core implants. Events included dehiscence, abscess, fistula and fixation or material instability. One particle-composite implant was removed at week 14 because of marked swelling; two shell/core animals experienced ceramic-core fracture or displacement. Showing only final bridges would omit failure pathways involving degradation and soft-tissue coverage. [Animal-level complications](ref:R03)\n\nThe overall text describes bridging in all animals, yet records persistent lingual pseudarthrosis and mechanical instability in the animal with early removal. Location and stability must therefore be retained: continuity in one direction is not stable healing across an entire cross-section. Month-6 histology also showed fibrous gaps around some reconstruction plates and separation between residual ceramic and tissue. Cortical–cancellous differentiation of new bone had not reached the contralateral healthy mandible. [Bridging and tissue gaps](ref:R03)\n\nThe study did not measure compression, bending, interfacial strength or cyclic loading of the three implant types at successive degradation stages. Core fracture demonstrates lost structural integrity without identifying a specific failure load. Eating while a plate still carries load does not establish independent restoration of normal chewing strength by regenerated bone. Imaging, histology, clinical events and load-bearing structures need alignment within the same animal and time point rather than combining the best measurements from different individuals into one successful case.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Longer follow-up reveals repair paths while changing the comparable sample",
+          "markdown": "Only one better-outcome animal per group continued to month 14; these are not long-term average outcomes for the original four animals per group. The pure-PDLLA animal retained a central unossified region, the particle-composite animal retained multiple peripheral bridges and chronic infection, and the shell/core animal showed a more anatomically continuous mandibular contour with bone entering the ceramic core. Serial images reveal these divergent paths, but selecting the best individuals makes representative images more optimistic. [Long-term individual trajectories](ref:R03)\n\nAll three long-term animals underwent plate removal after radiographic confirmation of bridging, followed by at least 2 weeks of chewing-stability observation. This approaches functional verification more closely than bone-volume measurement with fixation in place, but is not quantitative bite-force, bending-stiffness or fatigue testing. A fistula first appearing at month 8 in the pure-PDLLA animal persisted until plate removal at month 14, demonstrating that early healing observations miss late events. The remaining ceramic in the shell/core animal also showed no clear radiographic onset of resorption. [Post-removal observation and late events](ref:R03)\n\n| Actual observation in the model | Repair meaning | Outcome it cannot replace |\n|---|---|---|\n| Tissue adjacent to rabbit condyle scaffold surfaces | Local tissue entry and interface contact | Healthy-bone mineralization and trabecular architecture |\n| Bone bridges around the minipig defect | Mineralized continuity across the resection | Adequate filling of the original implant center |\n| Short-term chewing stability after plate removal in selected long-term animals | Maintenance of mandibular continuity under certain conditions | Whole-group durability or normal chewing-load capacity |",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Lyu et al.: progressively magnified SEM of peri-scaffold condyle tissue.",
+          "interpretation": "A–D move from the overall section to the local interface at magnifications of 30, 200, 400 and 2000. B–D show structural discontinuity between smooth metal sections and adjacent tissue. The authors identify connective tissue on some struts, so not every contact region represents mature bone integration. These are local morphologies, not whole-scaffold bone-contact fractions or interface shear strengths. [Interface SEM](ref:R02)"
+        },
+        "F02": {
+          "caption": "Lyu et al.: FTIR comparison of healthy and peri-scaffold tissue.",
+          "interpretation": "The horizontal axis is wavenumber and the vertical axis absorbance. Healthy and operated tissue differ in principal collagen-associated bands around 1657 and 1639 cm⁻¹, with weaker phosphate-region signals in operated tissue. Representative spectra are not group-distribution plots, and no complete mineral-maturity measure based on equivalently corrected peak-area ratios is supplied. They add matrix-composition differences; peak height cannot be converted directly into new-bone volume. [Original FTIR figure](ref:R02)"
+        },
+        "F03": {
+          "caption": "Bräuer et al.: VOI, corrected bone volume and interval growth.",
+          "interpretation": "The red cylinder in A spans resection margins and includes peripheral regions outside the scaffold. B plots baseline-corrected volume at months 2, 4 and 6 in cm³, n=4 animals per group. Shell/core and pure-PDLLA means are close; the significance bracket links particle-composite and shell/core late measurements. C plots percentage growth between intervals, using each preceding time point as denominator; a larger rate is not automatically more absolute bone. Spatial images are needed to assess contributions from peripheral periosteal bone. [Volume denominators](ref:R03)"
+        },
+        "F04": {
+          "caption": "Bräuer et al.: sequential fluorochromes locate bone growth and direction.",
+          "interpretation": "Rows show representative animals with different materials; sagittal sections are left and coronal sections right, with 1 cm scale bars. White dashed lines mark resection margins, blue triangles fixation material and yellow triangles residual ceramic core. Strong core fluorescence cannot all be assigned to ingrown bone. Blue, red and green correspond to labeling at week 5, month 2 and month 4; orange dashed outlines locate gaps between bone and plate. Bands often advance from the periphery outward or centrally rather than uniformly filling the original scaffold. [Spatiotemporal mineralization](ref:R03)"
+        },
+        "F05": {
+          "caption": "Bräuer et al.: adverse events by animal and event type.",
+          "interpretation": "The upper summary shows complications in 11/12 and none in 1/12. Columns below identify animals; rows distinguish dehiscence, abscess, fistula, plate loosening, swelling-related early removal, and fracture/dislocation. One animal can have several events, so summing crosses does not yield incidence. Orange animal symbols identify long-term cases. The event-free last column is the best shell/core individual rather than the whole group. [Event distribution](ref:R03)"
+        },
+        "F06": {
+          "caption": "Bräuer et al.: bone-shape and thickness trajectories in three long-term animals.",
+          "interpretation": "Columns represent pure PDLLA, particle composite and shell/core individuals; rows show months 0, 2, 4, 6 and 14. The color bar denotes bone thickness of 0.16–2.0 cm, not density or osteogenic activity. The final shell/core contour is more continuous, whereas the other columns retain central gaps or multiple peripheral bridges. Each column represents one selected animal, allowing longitudinal tracking but not whole-group long-term statistical comparison from image differences. [Long-term reconstruction](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie bewerten Knochendefektmodelle die Reparaturwirkung von Gerüsten?",
+      "direction": "Gerüste zur Knochenregeneration",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Zusätzlicher Raum über der Kalotte unterscheidet sich von einem Loch im vorhandenen Knochen",
+          "markdown": "Kumar et al. platzierten ein zweiphasiges PCL-Konstrukt über dem Kaninchenkalottenknochen und hielten den zusätzlichen Raum mit einer PLLA-Kuppel offen. Geprüft wurden vier Kombinationen: leere Kuppel, Gerüst, Gerüst mit Hydrogel und Gerüst mit Hydrogel sowie 30 µg BMP-2. Jede Gruppe umfasste n=2 Konstrukte; vier Kaninchen trugen jeweils zwei Konstrukte, die in Woche 8 entnommen wurden. Die Histomorphometrie bezog sich auf die von Kalotte und Kuppel begrenzte Schnittfläche. Trotz günstiger Zellbefunde blieb neuer Knochen überwiegend auf die Nähe des bestehenden Kalottenknochens begrenzt; die Gesamtfüllung war gering, signifikante Gruppenunterschiede wurden nicht nachgewiesen. [Augmentation oberhalb der Kalotte](ref:R01)\n\nDieses Modell prüft Gewebebildung von einer Knochenoberfläche in zusätzlichen Raum, nicht dieselbe Aufgabe wie Einwachsen in ein kleines Spongiosaloch. Im ersten Fall begrenzen Raum und Barrieren den Eintritt von Zellen und Blutversorgung, während im zweiten ein Knochenbett die Umgebung bildet. Knochenmenge erfordert deshalb Angaben zu ursprünglicher Grenze, angestrebtem Reparaturraum und Eintrittswegen des Gewebes.\n\nDie folgenden Versuche untersuchten Knochen um ein kleines Loch im Kaninchenfemurkondylus und die Überbrückung nach segmentaler Unterkieferresektion beim Minischwein. Kontrollen und Bezugsgrößen unterscheiden sich: gesunder Knochen im ersten und drei Materialkonfigurationen unter Rekonstruktionsplattenfixierung im zweiten Fall. Mineralisiertes Gewebe allein belegt an keinem Ort eine vollständige strukturelle und funktionelle Wiederherstellung. [Femurkondylenmodell](ref:R02) [Segmentales Unterkiefermodell](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Knochenmenge nach Übermaßimplantation erfordert die richtige Kontrolle",
+          "markdown": "Lyu et al. pressten ein mittels Elektronenstrahlverfahren hergestelltes poröses Titangerüst von 2 mm Durchmesser und 5 mm Länge in eine Femurkondylenbohrung von 1.9 mm Durchmesser und 5 mm Tiefe; die Übermaßpassung erzeugte Vorspannung. Vorgesehen waren 70% Porosität, 0.65 mm Porengröße und 0.32 mm Stegdurchmesser. 14 ungefähr 2.5 Monate alte Kaninchen wurden in Operations- und gesunde Kontrollgruppen mit jeweils 7 Tieren aufgeteilt und 12 Wochen beobachtet. Dies war weder ein großer tragender Segmentdefekt bei ausgewachsenen Tieren noch ein Vergleich mit identischer Operation ohne Vorspannung. [Implantatgeometrie und Gruppen](ref:R02)\n\nUnterschiede zwischen postoperativem und gesundem Knochen lassen sich daher nicht allein der Vorspannung zuschreiben. Die Originaltabelle nennt für die Operationsgruppe einen BV/TV von 0.1338±0.0087 gegenüber 0.1596±0.01796 bei gesunden Kontrollen sowie eine BMD von 800±20 gegenüber 980±90 mg/cm³. Beide Werte lagen unter der gesunden Knochenreferenz. Die Trabekelzahl sank, der Abstand stieg; lokale Mineralisierung hatte das gesunde Trabekelnetz somit nicht wiederhergestellt. Dicke, Konnektivitätsdichte und einige weitere Indizes unterschieden sich nicht signifikant; eine Verschlechterung darf nicht jedem Strukturmaß zugeschrieben werden. [Knochenanteil und Trabekelindizes](ref:R02)\n\nDas µCT verwendete 32-µm-Pixel und ein Dichtekalibrierphantom. Die Originalwerte für Dicke und Abstand sind in Pixeln angegeben und dürfen nicht als Millimeter übernommen werden. REM zeigte Bindegewebe um einige Stege, keinen überall durchgehenden Knochenkontakt. Übermaßbedingte Dehnung wurde in Vorversuchen gemessen, nicht als Grenzflächenbelastung während der Heilung jedes Tieres kontinuierlich aufgezeichnet. Auch Ausdrückfestigkeit und Ermüdung nach Heilung wurden nicht geprüft. Bildgebung, Grenzflächengewebe und Fixationsfestigkeit bleiben somit unterschiedliche Evidenzebenen. [Bildgebungs- und Grenzflächenmethoden](ref:R02)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Die Zusammensetzung zeigt Reifeaspekte, die das Bildvolumen nicht beschreibt",
+          "markdown": "Im selben Kondylenversuch wurden Gewebeschnitte für REM und FTIR verwendet. Eine kollagenassoziierte Hauptbande lag bei gesunden Kontrollen um 1657 cm⁻¹, im periimplantären Gewebe um 1639 cm⁻¹; auch phosphatassoziierte Signale waren nach Operation schwächer. Zusammen mit niedrigerer BMD spricht dies dafür, dass der lokale Zustand von Mineral und organischer Matrix die gesunde Referenz noch nicht erreicht hatte. FTIR ergänzt Zusammensetzungsinformationen über die Zahl segmentierbarer mineralisierter Voxel hinaus, statt einen weiteren austauschbaren Knochenmengenwert zu liefern. [Mineral- und Kollagenspektren](ref:R02)\n\nEine einzelne Peakverschiebung belegt nicht unabhängig sämtliche Änderungen der Kollagenvernetzungsreife. Die Abbildung ist auch keine statistische Verteilung quantifizierter Vernetzungsverhältnisse verschiedener Proben. REM-Oberflächenkontakt, regionales µCT-Volumen und FTIR-Gewebeproben betreffen unterschiedliche Raumskalen. Zusammen beschreiben sie eine integrierende Grenzfläche mit weiterhin vorhandenem Bindegewebe, geringerer Mineralisierung und veränderter Matrixstruktur; Kontakt in einem einzelnen metallnahen Schnitt belegt keine vollständige Wiederherstellung.\n\nDie Minischweinstudie unterschied zusätzlich den Bildungszeitpunkt von der vorhandenen Endpunktmenge. Bräuer et al. verabreichten unterschiedliche Fluorochrome in Woche 5, Monat 2 und Monat 4 und untersuchten Schnitte in Monat 6. Verschiedene Bänder am selben Endpunkt dokumentieren Mineralisierungsfronten. Materialreste, fibröse Spalten und reifer Knochen müssen weiterhin mit konventioneller Färbung identifiziert werden. Dieses Design lokalisiert Wachstumsrichtungen, liefert jedoch keine dynamische mechanische Festigkeit für jedes Intervall. [Sequenzielle Mineralisierungsmarkierung](ref:R03)",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Das Knochenvolumen beim Minischwein umfasst auch Knochen außerhalb des Gerüsts",
+          "markdown": "Bräuer et al. randomisierten 12 ausgewachsene Minischweine in drei Gruppen mit jeweils 4 Tieren: reines PDLLA, PDLLA mit 10% SrHAp-Partikeln und eine zweiphasige PDLLA-Hülle mit separat gedrucktem SrHAp-Kern. Die segmentalen Unterkieferdefekte waren ungefähr 3 cm lang; individuelle Titanrekonstruktionsplatten stellten die primäre Fixierung bereit. Das Periost blieb erhalten, Leerdefekt- und Autotransplantatkontrollen fehlten. Eine Überbrückung unter diesen Bedingungen belegt nicht, dass das Material allein einen strikt kritisch großen Defekt überwunden hat. [Großtiermodell und Materialkonfigurationen](ref:R03)\n\nDVT erfolgte unmittelbar postoperativ sowie in den Monaten 2, 4 und 6 mit 400-µm-Voxeln. Die zylindrische VOI überspannte den Defekt und schloss ausdrücklich periostalen und exostotischen Knochen außerhalb der ursprünglichen Implantatkontur ein. Das Abziehen des unmittelbaren postoperativen Ausgangswerts verringerte Einflüsse von anfänglichem Material und Metallartefakten, belegt aber keine Beseitigung späterer Materialverschiebung, Degradation oder Dichteänderung. Der untere Dichteschwellenwert wurde zudem von 200 auf 100 mg/cm³ gesenkt, um zuvor übersehenes Gewebe einzuschließen. Die Schwellenwahl verändert somit unmittelbar das gezählte Objekt. [Bildgebungsschwellen und VOI](ref:R03)\n\nIn Monat 6 betrugen die ausgangswertkorrigierten Volumina 13.90±3.90 cm³ für reines PDLLA, 7.61±5.06 cm³ für das Partikelkomposit und 14.94±3.48 cm³ für Hülle/Kern. Die Mittelwerte von Hülle/Kern und reinem Polymer lagen nahe beieinander; der höchste Mittelwert allein beweist keine klare Überlegenheit. Grundlegender zeigte die Bildgebung überwiegend vom Periost und den peripheren Resektionsrändern ausgehende Brücken, häufig außerhalb der Platte. Das Defektzentrum war bei keinem Tier ausreichend gefüllt. Großes mineralisiertes Volumen und anatomische Rekonstruktion des vorgesehenen Raums haben daher unterschiedliche Bezugsgrößen. [Volumen und Brückenlage](ref:R03)",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Überbrückung und Komplikationen müssen beim selben Tier zusammenbleiben",
+          "markdown": "Im Minischweinversuch erlitten 11 von 12 Tieren mindestens ein unerwünschtes Ereignis: 4/4 mit reinem PDLLA, 4/4 mit Partikelkomposit und 3/4 mit Hülle/Kern. Dazu gehörten Dehiszenz, Abszess, Fistel sowie Fixations- oder Materialinstabilität. Ein Partikelkomposit wurde wegen ausgeprägter Schwellung in Woche 14 vorzeitig entfernt; bei zwei Hülle/Kern-Tieren brach oder verlagerte sich der Keramikkern. Eine alleinige Darstellung endgültiger Brücken würde Versagenswege unter Beteiligung von Degradation und Weichgewebedeckung auslassen. [Komplikationen je Tier](ref:R03)\n\nDer übergreifende Text beschreibt Überbrückung bei allen Tieren, dokumentiert beim Tier mit vorzeitiger Entfernung jedoch eine fortbestehende linguale Pseudarthrose und mechanische Instabilität. Lage und Stabilität müssen deshalb erhalten bleiben: Kontinuität in einer Richtung ist keine stabile Heilung des gesamten Querschnitts. Die Histologie in Monat 6 zeigte außerdem fibröse Spalten um manche Rekonstruktionsplatten und Trennung zwischen Restkeramik und Gewebe. Die kortikal-spongiöse Differenzierung des neuen Knochens hatte den gesunden kontralateralen Unterkiefer nicht erreicht. [Überbrückung und Gewebespalten](ref:R03)\n\nDruck-, Biege-, Grenzflächenfestigkeit und zyklische Belastbarkeit der drei Implantattypen wurden in aufeinanderfolgenden Abbaustadien nicht gemessen. Ein Kernbruch belegt verlorene Strukturintegrität, identifiziert aber keine bestimmte Versagenslast. Nahrungsaufnahme bei weiterhin tragender Platte beweist keine eigenständige Wiederherstellung normaler Kaukräfte durch regenerierten Knochen. Bildgebung, Histologie, klinische Ereignisse und tragende Strukturen müssen demselben Tier und Zeitpunkt zugeordnet werden, statt die besten Einzelmessungen unterschiedlicher Tiere zu einem Erfolgsfall zusammenzusetzen.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Längere Nachbeobachtung zeigt Heilungswege, verändert aber die vergleichbare Stichprobe",
+          "markdown": "Nur ein Tier mit günstigerem Ergebnis je Gruppe wurde bis Monat 14 weiterbeobachtet. Dies sind keine langfristigen Durchschnittsergebnisse der ursprünglich vier Tiere pro Gruppe. Das Tier mit reinem PDLLA behielt einen zentralen nicht ossifizierten Bereich, das Partikelkomposittier mehrere periphere Brücken und chronische Infektion; das Hülle/Kern-Tier zeigte eine anatomisch kontinuierlichere Unterkieferkontur mit Knocheneintritt in den Keramikkern. Serielle Bilder zeigen diese unterschiedlichen Wege; die Auswahl der besten Individuen lässt repräsentative Bilder jedoch optimistischer erscheinen. [Langfristige individuelle Verläufe](ref:R03)\n\nBei allen drei Langzeittieren wurde die Platte nach radiologischer Bestätigung der Überbrückung entfernt; anschließend wurde die Kaustabilität mindestens 2 Wochen beobachtet. Dies nähert sich funktioneller Prüfung stärker als eine Knochenvolumenmessung bei bestehender Fixierung, ist aber keine quantitative Bisskraft-, Biegesteifigkeits- oder Ermüdungsprüfung. Eine beim reinen PDLLA-Tier erstmals in Monat 8 aufgetretene Fistel bestand bis zur Plattenentfernung in Monat 14 fort. Frühe Heilungsbeobachtungen erfassen somit keine sämtlichen Spätereignisse. Auch die verbliebene Keramik beim Hülle/Kern-Tier zeigte keinen eindeutigen radiologischen Beginn der Resorption. [Beobachtung nach Entfernung und Spätereignisse](ref:R03)\n\n| Tatsächliche Modellbeobachtung | Bedeutung für die Reparatur | Nicht ersetzbarer Endpunkt |\n|---|---|---|\n| Gewebe an Gerüstoberflächen im Kaninchenkondylus | Lokaler Gewebeeintritt und Grenzflächenkontakt | Mineralisierung und Trabekelarchitektur gesunden Knochens |\n| Knochenbrücken um den Minischweindefekt | Mineralisierte Kontinuität über die Resektion | Ausreichende Füllung des ursprünglichen Implantatzentrums |\n| Kurzfristige Kaustabilität nach Plattenentfernung bei ausgewählten Langzeittieren | Erhalt der Unterkieferkontinuität unter bestimmten Bedingungen | Dauerhaftigkeit der Gesamtgruppe oder normale Kaulastfähigkeit |",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Lyu et al.: zunehmend vergrößertes REM des periimplantären Kondylengewebes.",
+          "interpretation": "A–D führen vom Gesamtschnitt zur lokalen Grenzfläche bei Vergrößerungen von 30, 200, 400 und 2000. B–D zeigen strukturelle Unterbrechungen zwischen glatten Metallquerschnitten und benachbartem Gewebe. Die Autoren identifizieren an einigen Stegen Bindegewebe; nicht jeder Kontaktbereich entspricht deshalb reifer knöcherner Integration. Dies sind lokale Morphologien, keine Gesamtgerüst-Knochenkontaktanteile oder Grenzflächenscherfestigkeiten. [Grenzflächen-REM](ref:R02)"
+        },
+        "F02": {
+          "caption": "Lyu et al.: FTIR-Vergleich von gesundem und periimplantärem Gewebe.",
+          "interpretation": "Die horizontale Achse zeigt Wellenzahl, die vertikale Absorption. Gesundes und operiertes Gewebe unterscheiden sich in kollagenassoziierten Hauptbanden um 1657 und 1639 cm⁻¹; im operierten Gewebe sind Phosphatsignale schwächer. Repräsentative Spektren sind keine Gruppenverteilungsdiagramme; ein vollständiges Mineralreifemaß aus vergleichbar korrigierten Peakflächenverhältnissen fehlt. Die Spektren ergänzen Matrixzusammensetzungsunterschiede, erlauben aber keine direkte Umrechnung der Peakhöhe in neues Knochenvolumen. [Original-FTIR-Abbildung](ref:R02)"
+        },
+        "F03": {
+          "caption": "Bräuer et al.: VOI, korrigiertes Knochenvolumen und Intervallwachstum.",
+          "interpretation": "Der rote Zylinder in A überspannt die Resektionsränder und umfasst periphere Bereiche außerhalb des Gerüsts. B zeigt ausgangswertkorrigiertes Volumen in den Monaten 2, 4 und 6 in cm³ bei n=4 Tieren je Gruppe. Hülle/Kern und reines PDLLA liegen nahe beieinander; die Signifikanzklammer verbindet späte Messungen von Partikelkomposit und Hülle/Kern. C zeigt prozentuales Intervallwachstum mit dem jeweils vorausgehenden Zeitpunkt als Nenner. Eine größere Rate bedeutet nicht automatisch mehr absoluten Knochen. Räumliche Bilder sind zur Beurteilung peripherer periostaler Knochenanteile erforderlich. [Volumenbezugsgrößen](ref:R03)"
+        },
+        "F04": {
+          "caption": "Bräuer et al.: sequenzielle Fluorochrome lokalisieren Knochenwachstum und Richtung.",
+          "interpretation": "Die Zeilen zeigen repräsentative Tiere verschiedener Materialien; links stehen sagittale, rechts koronale Schnitte mit 1-cm-Maßstabsbalken. Weiße gestrichelte Linien markieren Resektionsränder, blaue Dreiecke Fixationsmaterial und gelbe Dreiecke verbliebenen Keramikkern. Starke Kernfluoreszenz darf nicht vollständig eingewachsenem Knochen zugeordnet werden. Blau, Rot und Grün entsprechen Markierungen in Woche 5, Monat 2 und Monat 4; orange Umrandungen lokalisieren Spalten zwischen Knochen und Platte. Bänder schreiten häufig vom Rand nach außen oder zentral voran, statt das ursprüngliche Gerüst gleichmäßig zu füllen. [Räumlich-zeitliche Mineralisierung](ref:R03)"
+        },
+        "F05": {
+          "caption": "Bräuer et al.: unerwünschte Ereignisse nach Tier und Ereignistyp.",
+          "interpretation": "Oben stehen Komplikationen bei 11/12 und keine bei 1/12. Die unteren Spalten kennzeichnen Tiere, die Zeilen Dehiszenz, Abszess, Fistel, Plattenlockerung, schwellungsbedingte frühe Entfernung sowie Bruch/Verlagerung. Ein Tier kann mehrere Ereignisse haben; die Summe der Kreuze ist deshalb keine Inzidenz. Orange Tiersymbole markieren Langzeitfälle. Die ereignisfreie letzte Spalte zeigt das beste Hülle/Kern-Individuum, nicht die gesamte Gruppe. [Ereignisverteilung](ref:R03)"
+        },
+        "F06": {
+          "caption": "Bräuer et al.: Knochenform- und Dickenverläufe dreier Langzeittiere.",
+          "interpretation": "Die Spalten zeigen Individuen mit reinem PDLLA, Partikelkomposit und Hülle/Kern, die Zeilen die Monate 0, 2, 4, 6 und 14. Die Farbskala bezeichnet Knochendicke von 0.16–2.0 cm, keine Dichte oder osteogene Aktivität. Die letzte Hülle/Kern-Kontur ist kontinuierlicher, während die anderen Spalten zentrale Lücken oder mehrere periphere Brücken behalten. Jede Spalte steht für ein ausgewähltes Tier. Längsschnittverfolgung ist möglich, ein langfristiger statistischer Gesamtgruppenvergleich aus Bildunterschieden dagegen nicht. [Langfristige Rekonstruktion](ref:R03)"
+        }
+      }
+    }
+  }
+}

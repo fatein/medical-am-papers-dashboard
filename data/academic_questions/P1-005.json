@@ -1,0 +1,264 @@
+{
+  "schema_version": 2,
+  "question_id": "P1-005",
+  "p": "P1",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_1a2484b8a2176f9119ef",
+    "doc_5570e6fadab644a66475",
+    "doc_7abba74a618bebf914c1"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "The effect of metal artefact on the design of custom 3D printed acetabular implants",
+      "publisher": "3D Printing in Medicine",
+      "year": 2020,
+      "url": "https://doi.org/10.1186/s41205-020-00074-5",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Custom-made 3D-printed cup-cage implants for complex acetabular revisions: evaluation of pre-planned versus achieved positioning and 1-year migration data in 10 patients",
+      "publisher": "Acta Orthopaedica",
+      "year": 2021,
+      "url": "https://doi.org/10.1080/17453674.2020.1819729",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Numerical evaluation of spinal reconstruction using a 3D printed vertebral body replacement implant: effects of material anisotropy",
+      "publisher": "Frontiers in Bioengineering and Biotechnology",
+      "year": 2024,
+      "url": "https://doi.org/10.3389/fbioe.2024.1305837",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Mesh Ti6Al4V Material Manufactured by Selective Laser Melting (SLM) as a Promising Intervertebral Fusion Cage",
+      "publisher": "International Journal of Molecular Sciences",
+      "year": 2022,
+      "url": "https://doi.org/10.3390/ijms23073985",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 8",
+      "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2Fs41205-020-00074-5/MediaObjects/41205_2020_74_Fig8_HTML.png",
+      "asset_path": "assets/academic_figures/P1-005/F01.png",
+      "source_url": "https://link.springer.com/article/10.1186/s41205-020-00074-5/figures/8",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R03",
+      "original_label": "Fig. 6",
+      "image_url": "https://www.frontiersin.org/files/Articles/1305837/xml-images/fbioe-12-1305837-g006.webp",
+      "asset_path": "assets/academic_figures/P1-005/F02.webp",
+      "source_url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1305837/full#F6",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R04",
+      "original_label": "Fig. 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P1-005/F03.png",
+      "source_url": "https://mdpi-res.com/d_attachment/ijms/ijms-23-03985/article_deploy/ijms-23-03985.pdf",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "骨科和脊柱复杂缺损如何设计个体化植入物？",
+      "direction": "个体化植入物",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "剩余骨决定设计边界，缺损体积不能替代固定条件",
+          "markdown": "复杂髋臼缺损和椎体缺损都需要填补缺失空间，但承载方式不同。髋臼重建设计必须把旋转中心、杯的方向及髂骨、坐骨等剩余骨上的固定位置同时考虑；椎体替代则把上、下终板接触与后路固定组成共同承载系统。一个外形恰好填满缺损的实体，仍可能缺少有效螺钉通道，或把载荷集中到薄弱终板。[髋臼设计方法](ref:R01)[椎体重建模型](ref:R03)\n\n| 设计对象 | 研究中可调整的部分 | 直接关联的测量 |\n|---|---|---|\n| 髋臼重建 | 填充体、翼板、螺钉位置、旋转中心 | 分割后的骨形、计划与实际位置偏差 |\n| 椎体替代装配 | 实体梁与多孔区域、接触及后路固定 | 多方向载荷下的应力、位移和终板应变 |\n| 椎间融合器 | 结构、材料及与支撑面的接触方式 | 压缩变形、泡沫中下沉及细胞反应 |\n\n最后一类实验可以解释材料和结构的选择，但现成融合器试样不是一个大段椎体缺损的临床替代品。它与患者特异性重建之间的联系，是为接触区、骨长入区和承载区提供不同层面的证据，而不是把某一种试样较高的压缩力直接移植成整套重建方案的优越性。[融合器实验对象](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "取出旧假体后，三维模型为何会改变固定方案",
+          "markdown": "Di Laura等在26例严重髋臼缺损患者中，对接受分期翻修的8例比较旧植入物取出前后的CT重建。两次扫描都采用金属伪影减弱序列，但每例骨形都发生变化，其中3例需要明显修改植入物设计；37.5%的分母是这8例，不能写成全部26例患者的比例。[配对影像与设计改变](ref:R01)\n\n整体骨体积对这种改变并不敏感：患侧髋骨重建体积的均值由269降至264 cm³，配对检验P=0.66。与此同时，作者估算术前被金属伪影遮蔽的骨体积中位数为10 cm³，手术中移除的骨体积中位数为14 cm³。前者让原来未识别的骨重新出现，后者减少真正可用的骨；两种方向相反的变化不能通过净体积相减单独辨认。\n\n原图8显示内壁和髋臼缘的差异，随后改变翼板数量与形状、螺钉数量与位置。这说明需要重新确定的是固定所依靠的局部几何，而不只是把填充体放大或缩小。研究把取出操作与伪影减弱放在同一次前后对照里，因此观察到的差异不能全部归因于影像伪影。它支持在设计中处理旧假体及其移除带来的几何不确定性，没有以随机比较证明分期手术适用于所有病例。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "计划误差与一年迁移：两次比较使用不同的基线",
+          "markdown": "Zampelis与Flivik观察10例Paprosky III-A缺损的定制杯笼翻修，设计依据包括剩余骨分布、预定螺钉方向和髋关节旋转中心。该系列使用无一体化增强块的杯笼，骨与植入物之间填入颗粒同种异体骨；它与前述带填充体方案不是完全相同的构型。研究将术前计划、术后首周CT和1年CT配对，分别计算植入位置偏差与随时间迁移。[研究设计及表2](ref:R02)\n\n| 表2的有符号中位数 | 计划至术后 | 术后至1年 |\n|---|---:|---:|\n| 外展角 | 3.6° | 0.04° |\n| 前倾角 | −2.8° | −0.13° |\n| 旋转中心前后方向 | −0.5 mm | −0.08 mm |\n| 旋转中心内外方向 | −0.6 mm | 0.14 mm |\n| 旋转中心上下方向 | 1.1 mm | 0.06 mm |\n\n这里的正负表示方向，不能当成绝对误差；不同病例的正负偏离也可能相互抵消。小幅迁移只说明术后位置保持，不能反过来证明最初完全执行了计划。每次术后扫描由同一评估者间隔至少1个月重复分析，得到重复性界限；表内迁移中位数小于对应界限，说明需要结合测量分辨能力理解这些很小的数值。全部10例完成1年随访且未发生再次翻修，支持该系列的早期稳定性，尚不能把III-A结果推广为更严重骨盆不连续的长期存活率。",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "多孔椎体的一个模量，不能代表所有受力方向",
+          "markdown": "Kang等从一名25岁男性的腰椎影像建立L1–L3模型，模拟L2肿瘤切除后，以实体梁和多孔区结合的椎体替代物配合后路螺钉—连接棒固定。菱形十二面体晶格采用2 mm单元、80%设计孔隙率和0.3 mm杆径。其作用通过等效材料描述进入有限元，而不是把每根微细杆件都逐一建模。[几何、材料与边界条件](ref:R03)\n\n研究对比“线弹性各向同性”与“非线性各向异性”两套材料设定。原图6中，多孔区三个轴向模量均为0.762 GPa，但体对角方向最高达到4.75 GPa；用一次轴向压缩得到接近0.8 GPa的模量，不能代表所有方向。模型下端L3固定，上端L1施加400 N与10 Nm，考察屈伸、左右侧弯和左右旋转。对比包含整套材料描述改变，因此不宜把差异归结为仅改变了一个孤立参数。\n\n各向同性模型中重建系统的最大应力随工况分布在100–139 MPa，各向异性模型为71–95 MPa；最高应力对应的运动方向也改变。这些结果展示材料假设会改变风险定位，却不等于某一设计经实验获得了同等幅度的强度提高。尤其模型把植入物—终板及螺钉—骨设为绑定，不能由整体位移直接读出实际界面微动或下沉。终板应变落入选定力学生物学区间，是潜在骨响应的计算代理量，尚未测到新骨形成。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "融合器本体抗压与支撑骨下沉是两个失效问题",
+          "markdown": "Przekora等对PEEK和网状Ti6Al4V融合器分别开展钢块间压缩及聚氨酯泡沫中的下沉实验。压缩到1 mm变形时，平均载荷为8779±236 N与41915±1664 N，分别出现塑性变形与网状试样破坏。这一实验描述器械本体在硬支撑下的载荷响应，不能直接给出邻近骨是否会先压坏。[力学实验及原图2](ref:R04)\n\n下沉实验使用Grade 15泡沫、6 mm/min位移速率，比较达到相同3 mm下沉所需载荷。PEEK为1142±8 N，网状钛为1319±10 N，后者高15.5%。准确的测量表述是“同一下沉深度需要较高的力”；它不是临床下沉率下降15.5%，也不是在同一载荷下直接测得下沉深度减少15.5%。实验中融合器未见可见损坏，但泡沫留下压痕，正好区分了支撑材料失效与器械破坏。\n\n研究列出的两种器械规格为7×26/0°和16×26/0°，制造方法及结构也不同。因此这是完整器械的比较，不能单独识别材料化学组成或孔隙率的贡献。作者没有进行疲劳试验；较高静态压缩载荷不能替代长期反复载荷结果。对复杂缺损而言，接触面几何与骨质量可能先限制承载，增加实体区强度不一定同步提高支撑面的容许载荷。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "骨长入的材料依据：细胞类型和终点改变比较排序",
+          "markdown": "同一融合器研究的生物学实验使用圆片，而非负重中的完整植入物，比较PEEK、实心Ti6Al4V和网状Ti6Al4V。人胎儿成骨细胞hFOB 1.19培养4天后，两种钛表面的细胞数约为PEEK的4倍与3倍，实心钛在早期增殖中更突出。骨髓来源间充质干细胞在21天成骨培养后的矿化量，却分别约为PEEK的4倍和7倍，网状结构在这一终点最高。[细胞实验与原图7–9](ref:R04)\n\n这组结果不能压缩成“网状结构所有指标都最好”。成骨细胞的矿化组间差异未达到统计学显著；Ⅰ型胶原合成也没有显著差异。部分蛋白测定甚至呈相反排序，例如干细胞在PEEK上第14天检测到较多骨钙素。作者提出较强矿化可能遮蔽抗原而降低ELISA检测，但这是一种解释，不能把较低蛋白读数自动改写成已证明更强成骨。\n\n材料表面的可润湿性同样没有与细胞结果简单同步：PEEK水接触角为94.5°，网状钛达到117.7°，而后者仍出现较高的干细胞矿化。接触角、表面形貌、增殖和矿化分别提供不同信息。对于患者特异性椎体或髋臼重建，这些实验可以支持选择骨接触区域的材料与结构；实验未包含血供、负重界面和跨缺损融合，因而并未测得整套重建中的骨长入深度或临床融合率。",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Di Laura等：旧假体取出前后的骨模型与固定设计。",
+          "interpretation": "a是第一阶段手术前，b是其后。上方红色标出杯及翼板区域，下方两种视角显示螺钉方向与局部骨面变化。内壁和髋臼缘改变引出翼板及螺钉方案的调整；这不是同一设计在两个角度的展示。图中没有误差色标，不能据颜色计算精度或把前后差别全部解释为伪影。"
+        },
+        "F02": {
+          "caption": "Kang等：皮质骨、松质骨和多孔区的方向性模量。",
+          "interpretation": "A、B、C分别给出三类结构的模量空间曲面及分布直方图。上排的非球形表面显示方向依赖，下排横轴为模量、左轴为计数、右轴红线为累计百分比。C中三个轴向值均为0.762 GPa，但最大值4.75 GPa，说明相同轴向读数并不构成各向同性。三个面板的数值范围不同；它们不是应力云图，也不是对临床患者模量分布的抽样。"
+        },
+        "F03": {
+          "caption": "Przekora等：器械压缩与泡沫下沉的不同试验终点。",
+          "interpretation": "a比较达到1 mm压缩的载荷，红色虚线为作者采用的体内预期载荷参考；b保留压缩前后照片及10 mm比例尺。c比较达到3 mm下沉的载荷，d展示两类器械在泡沫中的压痕；a、c纵轴都是N，但量级与支撑材料不同。图示P<0.0001比较的是这些实验载荷，不能换算为患者并发症概率。"
+        }
+      }
+    },
+    "en": {
+      "title": "How should patient-specific implants be designed for complex orthopaedic and spinal defects?",
+      "direction": "Patient-specific implants",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Remaining bone defines the design boundary; defect volume does not define fixation",
+          "markdown": "Both complex acetabular and vertebral defects require replacement of missing space, but their load paths differ. Acetabular reconstruction must coordinate the centre of rotation, cup orientation and fixation in remaining iliac, ischial and other bone. Vertebral replacement combines upper and lower endplate contact with posterior instrumentation. A solid that fills a defect exactly can still lack usable screw corridors or concentrate load on a weak endplate. [Acetabular design](ref:R01) [Vertebral reconstruction model](ref:R03)\n\n| Design object | Features adjusted in the studies | Directly associated measurements |\n|---|---|---|\n| Acetabular reconstruction | Augment volume, flanges, screws and centre of rotation | Segmented bone geometry and planned-versus-achieved position |\n| Vertebral replacement assembly | Solid beams, porous regions, contacts and posterior fixation | Stress, displacement and endplate strain under multidirectional loading |\n| Interbody fusion cage | Structure, material and support contact | Compression, subsidence into foam and cellular responses |\n\nThe last category helps explain material and structural choices, but a standard cage specimen is not a clinical substitute for a large vertebral defect. Its relevance to patient-specific reconstruction is to inform contact, ingrowth and load-bearing regions at different evidence levels. A higher compressive force in one specimen cannot establish superiority of a complete reconstruction. [Fusion-cage experimental objects](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Why removal of an old component can change the fixation design",
+          "markdown": "Di Laura and colleagues compared CT reconstructions before and after component removal in 8 staged revisions within a series of 26 severe acetabular defects. Both scans used metal-artefact reduction sequences. Bone shape changed in every paired case, and 3 required substantial implant redesign. The denominator for 37.5% is these 8 cases, not all 26 patients. [Paired imaging and design changes](ref:R01)\n\nTotal bone volume was insensitive to this change: mean reconstructed ipsilateral innominate volume decreased from 269 to 264 cm³, with paired-test P=0.66. The estimated median volume obscured by preoperative metal artefact was 10 cm³, whereas estimated bone removed during surgery was 14 cm³. One effect reveals previously unrecognized bone; the other reduces the bone actually available. A net-volume subtraction cannot separate these opposing spatial changes.\n\nOriginal Figure 8 shows differences at the medial wall and acetabular rim followed by changes in flange number and shape and screw number and position. The issue is therefore local fixation geometry, rather than simply enlarging or shrinking a filling volume. Component removal and reduced artefact occur within the same before–after comparison, so the observed difference cannot all be attributed to imaging artefact. The study supports addressing uncertainty from existing components and their removal; it does not provide a randomized demonstration that staging is appropriate for every case.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Planning deviation and one-year migration use different baselines",
+          "markdown": "Zampelis and Flivik observed custom cup-cage revision in 10 Paprosky III-A defects. Design incorporated remaining bone distribution, planned screw trajectories and the hip centre of rotation. Their cages had no integrated augment, and morselized allograft filled the implant–bone gap, distinguishing them from the preceding augment-based design. The study paired preoperative planning, CT in the first postoperative week and CT at 1 year to calculate placement deviation and subsequent migration separately. [Study design and Table 2](ref:R02)\n\n| Signed median in Table 2 | Planned to postoperative | Postoperative to 1 year |\n|---|---:|---:|\n| Inclination | 3.6° | 0.04° |\n| Anteversion | −2.8° | −0.13° |\n| Centre of rotation, anteroposterior | −0.5 mm | −0.08 mm |\n| Centre of rotation, mediolateral | −0.6 mm | 0.14 mm |\n| Centre of rotation, superoinferior | 1.1 mm | 0.06 mm |\n\nSigns indicate direction, not absolute error; opposite deviations across patients can also offset one another. Small migration indicates maintenance of the postoperative position and does not retrospectively prove exact execution of the original plan. Each postoperative scan was analysed twice by the same assessor, at least 1 month apart, establishing repeatability limits. The tabulated migration medians are below the corresponding limits, making measurement resolution important when interpreting these small values. All 10 patients completed 1-year follow-up without re-revision, supporting early stability in this series. III-A findings do not establish long-term survival in more severe pelvic discontinuity.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "One modulus cannot describe every loading direction in a porous vertebral implant",
+          "markdown": "Kang and colleagues built an L1–L3 model from lumbar images of a 25-year-old man. After simulated L2 tumour resection, a vertebral replacement combining solid beams and porous regions was supported by posterior screws and rods. Its rhombic-dodecahedral lattice used 2 mm cells, 80% designed porosity and 0.3 mm struts. Equivalent material properties represented the porous region in the finite-element analysis, rather than explicit modelling of every fine strut. [Geometry, materials and boundary conditions](ref:R03)\n\nThe study compares linear-elastic isotropic and nonlinear anisotropic material descriptions. In original Figure 6, all three axial moduli of the porous region are 0.762 GPa, but the body-diagonal direction reaches 4.75 GPa. A modulus near 0.8 GPa obtained from axial compression therefore cannot represent every direction. L3 is constrained inferiorly, while 400 N and 10 Nm are applied at L1 for flexion, extension, bilateral bending and bilateral rotation. The comparison changes a complete material description, rather than isolating one parameter.\n\nMaximum reconstruction-system stress across loading conditions ranges from 100–139 MPa in the isotropic model and 71–95 MPa in the anisotropic model. The motion producing the highest stress also changes. These findings show that material assumptions can alter the location and condition of concern; they do not demonstrate an experimentally measured strength improvement of the same magnitude. In particular, implant–endplate and screw–bone interfaces are tied. Overall displacement therefore cannot be read directly as interfacial micromotion or subsidence. Endplate strain within a selected mechanobiological interval is a proxy for potential bone response, not measured new bone.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Cage compression and subsidence into supporting bone are different failure problems",
+          "markdown": "Przekora and colleagues tested PEEK and mesh Ti6Al4V cages between steel blocks and separately in polyurethane foam. At 1 mm compression, mean loads were 8779±236 N and 41915±1664 N, with plastic deformation and mesh-specimen breakage, respectively. This characterizes the device under hard support; it does not establish whether adjacent bone would fail first. [Mechanical experiments and original Figure 2](ref:R04)\n\nThe subsidence experiment used Grade 15 foam at 6 mm/min and compared force at the same 3 mm subsidence. PEEK required 1142±8 N and mesh titanium 1319±10 N, a 15.5% higher force for the latter. The measured result is greater force at equal depth. It is neither a 15.5% reduction in clinical subsidence incidence nor a directly measured 15.5% reduction in depth at equal load. No visible cage damage occurred in this test, while impressions remained in the foam, separating support-material failure from device failure.\n\nReported device sizes were 7×26/0° and 16×26/0°; manufacturing and architecture also differed. This compares complete devices and does not isolate material chemistry or porosity. No fatigue test was performed; high static compressive loads cannot substitute for repeated-loading results. In a complex defect, contact geometry and bone quality may limit capacity first. Strengthening solid implant regions need not proportionally increase the allowable load of the supporting surface.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Material evidence for ingrowth: cell type and endpoint change the ranking",
+          "markdown": "Biological experiments in the same cage study used discs, rather than loaded complete implants, to compare PEEK, solid Ti6Al4V and mesh Ti6Al4V. After 4 days, human fetal osteoblast hFOB 1.19 counts on the two titanium surfaces were approximately 4-fold and 3-fold those on PEEK; solid titanium performed better in early proliferation. After 21 days of osteogenic culture, bone-marrow-derived mesenchymal stem-cell mineralization was approximately 4-fold and 7-fold that on PEEK, with the mesh highest for this endpoint. [Cell experiments and original Figures 7–9](ref:R04)\n\nThese results do not mean that mesh architecture performs best on every measure. Osteoblast mineralization differences were not statistically significant, nor were differences in type I collagen synthesis. Some protein assays ranked surfaces differently: stem cells on PEEK had more detectable osteocalcin on day 14. The authors suggest that stronger mineralization might mask antigens and reduce ELISA detection. This remains an interpretation, not a basis for automatically rewriting lower protein readings as proven stronger osteogenesis.\n\nWettability also did not track cellular responses simply. Water contact angle was 94.5° on PEEK and 117.7° on mesh titanium, despite higher stem-cell mineralization on the latter. Contact angle, topography, proliferation and mineralization convey different information. For patient-specific vertebral or acetabular reconstruction, these experiments inform the material and structure of bone-contacting regions. They contain neither blood supply, a loaded interface nor fusion across a defect, and therefore do not measure ingrowth depth or clinical fusion rate in the complete reconstruction.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Di Laura et al.: bone models and fixation designs before and after component removal.",
+          "interpretation": "Panel a precedes first-stage surgery and b follows it. Red regions above identify cup and flange areas; two views below show screw trajectories and local bone geometry. Medial-wall and rim changes lead to different flange and screw arrangements. These are not two viewing angles of the same design. There is no error colour scale, so colours do not quantify accuracy or attribute every difference to artefact."
+        },
+        "F02": {
+          "caption": "Kang et al.: directional moduli of cortical bone, cancellous bone and the porous region.",
+          "interpretation": "A, B and C show directional modulus surfaces and distributions for the three structures. Non-spherical surfaces indicate directional dependence. Histograms below plot modulus horizontally, counts on the left and cumulative percentage as a red line on the right. In C, the three axial values are 0.762 GPa but the maximum is 4.75 GPa, demonstrating that equal axial values do not establish isotropy. Numerical scales differ between panels; these are neither stress maps nor sampled clinical distributions of patient moduli."
+        },
+        "F03": {
+          "caption": "Przekora et al.: different endpoints for device compression and foam subsidence.",
+          "interpretation": "Panel a compares force at 1 mm compression; the red dashed line is the authors’ expected in-vivo load reference. Panel b retains before/after photographs and 10 mm scale bars. Panel c compares force at 3 mm subsidence; d shows impressions in foam. Both a and c use N vertically, but differ in scale and supporting material. The displayed P<0.0001 compares experimental loads and cannot be converted into a probability of patient complications."
+        }
+      }
+    },
+    "de": {
+      "title": "Wie sollten patientenspezifische Implantate für komplexe orthopädische und Wirbelsäulendefekte gestaltet werden?",
+      "direction": "Patientenspezifische Implantate",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Verbleibender Knochen begrenzt den Entwurf; das Defektvolumen bestimmt nicht die Fixation",
+          "markdown": "Komplexe Acetabulum- und Wirbelkörperdefekte erfordern beide den Ersatz fehlenden Volumens, unterscheiden sich aber im Lastweg. Bei der Acetabulumrekonstruktion müssen Rotationszentrum, Pfannenorientierung und Fixation am verbleibenden Darmbein, Sitzbein und weiteren Knochen abgestimmt werden. Der Wirbelkörperersatz verbindet den Kontakt zu oberer und unterer Endplatte mit einer dorsalen Instrumentierung. Ein Körper, der den Defekt genau ausfüllt, kann dennoch ungeeignete Schraubenkorridore besitzen oder Last auf eine schwache Endplatte konzentrieren. [Acetabulumentwurf](ref:R01) [Wirbelrekonstruktionsmodell](ref:R03)\n\n| Entwurfsobjekt | In den Studien veränderte Merkmale | Unmittelbar zugehörige Messgrößen |\n|---|---|---|\n| Acetabulumrekonstruktion | Augmentatvolumen, Flansche, Schrauben und Rotationszentrum | Segmentierte Knochenform sowie geplante und erreichte Position |\n| Wirbelkörperersatz mit Fixation | Massive Träger, poröse Bereiche, Kontakte und dorsale Fixation | Spannung, Verschiebung und Endplattendehnung unter verschiedenen Lastrichtungen |\n| Zwischenwirbel-Fusionskäfig | Struktur, Material und Kontakt zur Auflage | Kompression, Einsinken in Schaumstoff und Zellantworten |\n\nDie letzte Kategorie erklärt Material- und Strukturentscheidungen, doch ein Standardkäfig ist kein klinischer Ersatz für einen großen Wirbelkörperdefekt. Für die patientenspezifische Rekonstruktion liefert er unterschiedliche Evidenz zu Kontakt-, Einwachs- und Tragbereichen. Eine höhere Druckkraft an einer Probe belegt nicht die Überlegenheit der gesamten Rekonstruktion. [Untersuchungsobjekte der Käfigstudie](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Warum die Entfernung einer alten Komponente den Fixationsentwurf verändert",
+          "markdown": "Di Laura und Mitarbeitende verglichen CT-Rekonstruktionen vor und nach Komponentenentfernung bei 8 zweizeitigen Revisionen innerhalb einer Serie von 26 schweren Acetabulumdefekten. Beide Aufnahmen verwendeten Sequenzen zur Metallartefaktreduktion. In allen gepaarten Fällen änderte sich die Knochenform; 3 erforderten einen wesentlich geänderten Implantatentwurf. Die Bezugsgröße für 37.5% sind diese 8 Fälle, nicht sämtliche 26 Patienten. [Gepaarte Bildgebung und Entwurfsänderungen](ref:R01)\n\nDas Gesamtknochenvolumen bildete diese Änderung nur unzureichend ab: Das mittlere rekonstruierte Volumen des betroffenen Hüftbeins sank von 269 auf 264 cm³, mit P=0.66 im gepaarten Test. Der geschätzte Median des präoperativ durch Metallartefakte verdeckten Knochenvolumens betrug 10 cm³; der des operativ entfernten Knochens 14 cm³. Ein Effekt macht zuvor nicht erkannte Knochenbereiche sichtbar, der andere verringert den tatsächlich verfügbaren Knochen. Eine reine Nettovolumendifferenz trennt diese gegensätzlichen räumlichen Veränderungen nicht.\n\nOriginalabbildung 8 zeigt Unterschiede an medialer Wand und Acetabulumrand mit anschließender Änderung von Flanschanzahl und -form sowie Schraubenanzahl und -position. Entscheidend ist somit die lokale Fixationsgeometrie, nicht allein ein größeres oder kleineres Füllvolumen. Komponentenentfernung und Artefaktverminderung erfolgen innerhalb desselben Vorher-nachher-Vergleichs; die gesamte Änderung lässt sich daher nicht dem Bildartefakt zuschreiben. Die Studie unterstützt die Berücksichtigung der Unsicherheit durch vorhandene Komponenten und deren Entfernung, belegt aber nicht randomisiert die Eignung eines zweizeitigen Vorgehens für jeden Fall.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Planungsabweichung und Einjahresmigration haben unterschiedliche Ausgangspunkte",
+          "markdown": "Zampelis und Flivik beobachteten individuelle Cup-Cage-Revisionen bei 10 Paprosky-III-A-Defekten. Der Entwurf berücksichtigte verbleibenden Knochen, geplante Schraubenrichtungen und das Hüftrotationszentrum. Die Käfige besaßen kein integriertes Augmentat; partikulärer allogener Knochen füllte den Implantat–Knochen-Spalt. Dies unterscheidet sie vom vorangehenden Entwurf mit Füllkörper. Präoperative Planung, CT der ersten postoperativen Woche und CT nach 1 Jahr wurden paarweise verglichen, um Platzierungsabweichung und spätere Migration getrennt zu bestimmen. [Studiendesign und Tabelle 2](ref:R02)\n\n| Vorzeichenbehafteter Median aus Tabelle 2 | Planung bis postoperativ | Postoperativ bis 1 Jahr |\n|---|---:|---:|\n| Inklination | 3.6° | 0.04° |\n| Anteversion | −2.8° | −0.13° |\n| Rotationszentrum, anteroposterior | −0.5 mm | −0.08 mm |\n| Rotationszentrum, mediolateral | −0.6 mm | 0.14 mm |\n| Rotationszentrum, superoinferior | 1.1 mm | 0.06 mm |\n\nDie Vorzeichen geben Richtungen und keine absoluten Fehler an; entgegengesetzte Abweichungen können sich patientenübergreifend ausgleichen. Eine geringe Migration bedeutet Erhalt der postoperativen Lage und belegt rückwirkend keine exakte Planumsetzung. Derselbe Auswerter analysierte jede postoperative Aufnahme zweimal mit mindestens 1 Monat Abstand und bestimmte Wiederholbarkeitsgrenzen. Die tabellierten Migrationsmediane liegen unter den jeweiligen Grenzen; bei diesen kleinen Werten ist somit die Messauflösung wesentlich. Alle 10 Patienten absolvierten die Kontrolle nach 1 Jahr ohne erneute Revision. Das stützt die frühe Stabilität dieser Serie, liefert aber keine Langzeitüberlebensrate für schwerere Beckendiskontinuitäten.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "Ein einzelner Modul beschreibt nicht jede Belastungsrichtung eines porösen Wirbelimplantats",
+          "markdown": "Kang und Mitarbeitende erstellten aus Lumbalaufnahmen eines 25-jährigen Mannes ein L1–L3-Modell. Nach simulierter L2-Tumorresektion wurde ein Wirbelkörperersatz aus massiven Trägern und porösen Bereichen durch dorsale Schrauben und Stäbe unterstützt. Das Rhombendodekaeder-Gitter besaß 2 mm große Zellen, 80% Entwurfsporosität und 0.3 mm Streben. In der FE-Analyse repräsentierten äquivalente Materialeigenschaften den porösen Bereich; nicht jede feine Strebe wurde einzeln modelliert. [Geometrie, Materialien und Randbedingungen](ref:R03)\n\nVerglichen werden linear-elastische isotrope und nichtlineare anisotrope Materialbeschreibungen. In Originalabbildung 6 betragen die drei axialen Moduln des porösen Bereichs jeweils 0.762 GPa, während entlang der Raumdiagonalen 4.75 GPa erreicht werden. Ein bei axialer Kompression bestimmter Wert nahe 0.8 GPa beschreibt daher nicht jede Richtung. L3 ist unten fixiert; an L1 wirken 400 N und 10 Nm für Flexion, Extension, beidseitige Seitneigung und beidseitige Rotation. Der Vergleich verändert eine vollständige Materialbeschreibung und isoliert nicht nur einen Parameter.\n\nDie maximale Spannung des Rekonstruktionssystems liegt über die Lastfälle im isotropen Modell bei 100–139 MPa und im anisotropen bei 71–95 MPa. Auch die Bewegung mit höchster Spannung ändert sich. Materialannahmen verändern somit die Lokalisierung und Belastungssituation kritischer Bereiche; eine experimentell gemessene Festigkeitssteigerung gleicher Größe ist damit nicht belegt. Insbesondere sind Implantat–Endplatten- und Schrauben–Knochen-Kontakte fest gekoppelt. Die Gesamtverschiebung ist deshalb kein unmittelbares Maß für Grenzflächenmikrobewegung oder Einsinken. Endplattendehnung in einem ausgewählten mechanobiologischen Bereich ist eine Ersatzgröße für potenzielle Knochenantwort, keine gemessene Knochenneubildung.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Käfigkompression und Einsinken in den tragenden Knochen sind verschiedene Versagensprobleme",
+          "markdown": "Przekora und Mitarbeitende prüften PEEK- und netzartige Ti6Al4V-Käfige zwischen Stahlblöcken sowie getrennt davon in Polyurethanschaum. Bei 1 mm Kompression betrugen die mittleren Kräfte 8779±236 N und 41915±1664 N; beobachtet wurden plastische Verformung beziehungsweise Bruch der Netzprobe. Dies beschreibt das Implantat bei harter Auflage und klärt nicht, ob benachbarter Knochen vorher versagen würde. [Mechanische Versuche und Originalabbildung 2](ref:R04)\n\nDer Einsinkversuch verwendete Schaum der Grade 15 bei 6 mm/min und verglich die Kraft bei derselben Einsinktiefe von 3 mm. PEEK benötigte 1142±8 N, netzartiges Titan 1319±10 N, also 15.5% mehr Kraft. Gemessen wurde eine höhere Kraft bei gleicher Tiefe. Dies entspricht weder einer um 15.5% geringeren klinischen Einsinkhäufigkeit noch einer unmittelbar gemessenen Verringerung der Tiefe um 15.5% bei gleicher Last. Die Käfige zeigten dabei keinen sichtbaren Schaden, während Abdrücke im Schaum verblieben: Auflageversagen und Implantatversagen werden damit getrennt.\n\nDie angegebenen Implantatgrößen waren 7×26/0° und 16×26/0°; auch Herstellung und Architektur unterschieden sich. Verglichen wurden vollständige Produkte, nicht isoliert Materialchemie oder Porosität. Eine Ermüdungsprüfung erfolgte nicht; hohe statische Druckkräfte ersetzen keine Ergebnisse wiederholter Belastung. Bei komplexen Defekten können Kontaktgeometrie und Knochenqualität zuerst limitieren. Eine Verstärkung massiver Implantatbereiche erhöht daher nicht zwangsläufig entsprechend die zulässige Belastung der Auflagefläche.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Materialevidenz für Knocheneinwuchs: Zelltyp und Endpunkt verändern die Rangfolge",
+          "markdown": "Die biologischen Versuche derselben Käfigstudie verglichen PEEK, massives Ti6Al4V und netzartiges Ti6Al4V an Scheiben, nicht an belasteten vollständigen Implantaten. Nach 4 Tagen war die Zahl humaner fetaler Osteoblasten hFOB 1.19 auf den Titanoberflächen etwa 4-fach beziehungsweise 3-fach höher als auf PEEK; massives Titan war bei der frühen Proliferation günstiger. Nach 21 Tagen osteogener Kultur war die Mineralisierung knochenmarkstämmiger mesenchymaler Stammzellen etwa 4-fach beziehungsweise 7-fach höher als auf PEEK. Für diesen Endpunkt lag die Netzstruktur vorn. [Zellversuche und Originalabbildungen 7–9](ref:R04)\n\nDamit ist nicht jede Messgröße bei der Netzstruktur am besten. Die Mineralisierungsunterschiede der Osteoblasten waren statistisch nicht signifikant; ebenso wenig die Unterschiede der Typ-I-Kollagensynthese. Einige Proteinmessungen ergaben eine umgekehrte Rangfolge: Stammzellen auf PEEK zeigten am Tag 14 mehr nachweisbares Osteocalcin. Die Autoren vermuten eine Antigenmaskierung durch stärkere Mineralisierung mit geringerer ELISA-Erfassung. Dies bleibt eine Erklärung und rechtfertigt nicht, niedrigere Proteinwerte automatisch als nachgewiesen stärkere Osteogenese umzudeuten.\n\nAuch die Benetzbarkeit verlief nicht einfach parallel zu den Zellantworten. Der Wasserkontaktwinkel betrug auf PEEK 94.5° und auf netzartigem Titan 117.7°, obwohl dort die Stammzellmineralisierung höher war. Kontaktwinkel, Topografie, Proliferation und Mineralisierung liefern unterschiedliche Informationen. Für patientenspezifische Wirbelkörper- oder Acetabulumrekonstruktionen stützen diese Versuche die Material- und Strukturwahl knochennaher Bereiche. Blutversorgung, belastete Grenzfläche und Fusion über einen Defekt waren nicht enthalten; Einwachstiefe oder klinische Fusionsrate der vollständigen Rekonstruktion wurden daher nicht gemessen.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Di Laura et al.: Knochenmodelle und Fixationsentwürfe vor und nach Komponentenentfernung.",
+          "interpretation": "a zeigt den Zustand vor, b nach dem ersten Eingriff. Oben markieren rote Bereiche Pfanne und Flansche; unten zeigen zwei Ansichten Schraubenrichtungen und lokale Knochengeometrie. Änderungen an medialer Wand und Pfannenrand führen zu anderen Flansch- und Schraubenanordnungen. Es sind keine zwei Blickwinkel desselben Entwurfs. Ohne Fehlerfarbskala quantifizieren die Farben weder Genauigkeit noch den alleinigen Artefaktanteil."
+        },
+        "F02": {
+          "caption": "Kang et al.: Richtungsabhängige Moduln von Kortikalis, Spongiosa und porösem Bereich.",
+          "interpretation": "A, B und C zeigen räumliche Modulflächen und Verteilungen der drei Strukturen. Nichtkugelförmige Flächen verdeutlichen die Richtungsabhängigkeit. Die Histogramme stellen horizontal den Modul, links die Häufigkeit und rechts als rote Linie den kumulierten Prozentanteil dar. In C betragen alle drei axialen Werte 0.762 GPa, das Maximum aber 4.75 GPa; gleiche Axialwerte belegen somit keine Isotropie. Die Zahlenbereiche unterscheiden sich zwischen den Panels. Es handelt sich weder um Spannungskarten noch um klinisch erhobene Verteilungen von Patientenmoduln."
+        },
+        "F03": {
+          "caption": "Przekora et al.: Unterschiedliche Endpunkte von Implantatkompression und Schaumeinsinken.",
+          "interpretation": "a vergleicht die Kraft bei 1 mm Kompression; die rote gestrichelte Linie bezeichnet die von den Autoren angesetzte In-vivo-Referenzlast. b erhält Vorher-nachher-Fotos und Maßstäbe von 10 mm. c vergleicht die Kraft bei 3 mm Einsinken, d zeigt Schaumabdrücke. Die Ordinaten von a und c verwenden N, aber unterschiedliche Größenordnungen und Auflagematerialien. Das angegebene P<0.0001 vergleicht Versuchskräfte und ist nicht in eine Wahrscheinlichkeit klinischer Komplikationen umrechenbar."
+        }
+      }
+    }
+  }
+}

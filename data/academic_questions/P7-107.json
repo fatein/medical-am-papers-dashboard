@@ -1,0 +1,334 @@
+{
+  "schema_version": 2,
+  "question_id": "P7-107",
+  "p": "P7",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_75bb14e87a76804cc4e0",
+    "doc_e571af6e8b353be5dd9c",
+    "doc_905e2df3375886cecc3e"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Democratising “Microscopi”: a 3D printed automated XYZT fluorescence imaging system for teaching, outreach and fieldwork",
+      "publisher": "Wellcome Open Research",
+      "year": 2022,
+      "url": "https://doi.org/10.12688/wellcomeopenres.16536.2",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Low-cost, sub-micron resolution, wide-field computational microscopy using opensource hardware",
+      "publisher": "Scientific Reports",
+      "year": 2019,
+      "url": "https://doi.org/10.1038/s41598-019-43845-9",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Single-molecule detection and super-resolution imaging with a portable and adaptable 3D-printed microscopy platform (Brick-MIC)",
+      "publisher": "Science Advances",
+      "year": 2024,
+      "url": "https://doi.org/10.1126/sciadv.ado3427",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 1",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-107/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8968157/#f1",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Fig. 6",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-107/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8968157/#f6",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Fig. 1",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-107/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6520337/#Fig1",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Fig. 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-107/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6520337/#Fig3",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R02",
+      "original_label": "Fig. 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-107/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6520337/#Fig2",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R02",
+      "original_label": "Fig. 6",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-107/F06.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6520337/#Fig6",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "便携式显微系统如何支持现场观察？",
+      "direction": "光学与显微成像",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "可携带的机架必须与供电和访问方式一起评价",
+          "markdown": "Wincott 等的 Microscopi 修订版把成像、照明、电动样品导航和 Raspberry Pi 4 Model B 集成在 PLA 外壳内。底面 235×235 mm、高 250 mm、重 1.5 kg，供电规格为 5 V、低于 4.0 A，便携电池运行时间约 10 h。这个续航值是论文给出的整机规格；文中没有列出不同 LED 亮度、电机占空比和电池老化条件下的放电曲线，不能把它当成任意模式的保底持续时间。[便携教学系统](ref:R01)\n\n光路采用 160 mm 有限共轭 DIN 物镜和 45 mm 齐焦距离，折叠后容纳在较短机架内。铰接上盖、铰接台面和内部钢底板使部件可接近且有支承；外壳也给照明和相机一个固定位置，而不是每次现场搭建散装光路。样品台 XY 各行程 3 mm，物镜 Z 行程 4 mm；便携没有消除导航范围的限制。照片和结构图说明部件如何集成，并未提供跌落、振动运输或户外防护等级测试。与完全依赖手持手机对准的附件相比，其摄像头固定在仪器内，手机主要充当显示和控制终端。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "本地网页控制支持无外网操作，自动导航仍需场景化校准",
+          "markdown": "Microscopi 在本机建立 Wi-Fi 热点，由 Raspberry Pi 运行网页服务。手机、平板或电脑连接后可看实时图像、调整焦点和照明、采集与下载；这一控制链不要求通过远端云服务器，也不等于论文测量过任意距离的无线连接稳定性。直接连接键盘、显示器也能访问控制程序，适合在现场修改或检查设置。它使用独立 IMX219、8 MP 相机，换手机不会直接换掉图像传感器的采样特性。[控制与样品导航](ref:R01)\n\nZ 驱动是 M4 螺钉加打印滑块，XY 是推杆驱动柔性台。正文将焦点初值与微动开关定义的归零位置、不同物镜的偏移量关联；更精细的焦点需图像清晰度判断，不能把电机归零直接当成样品自动合焦。论文以 10×、NA 0.25 物镜，5×5 格点、30% 重叠拼成 1.5×1.2 mm 图像，验证的是特定扫描与配准示例，而不是整个机械行程内统一的拼接误差。另以矿物颗粒、DVD 轨道等对象展示透射、反射和暗场对比；换照明可改变可见结构，图像是否明亮与是否定量保真仍须分开。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "更小的计算显微镜把部分光学负担转移到多幅采集",
+          "markdown": "Aidukas 等的装置约 200 g、6×9×11 cm，零件成本约 150 USD，样品台与调焦结构用 Ultimaker 2+ 打印。Raspberry Pi V2 NOIR 相机为 8 MP、1.12 μm 像素，原 3 mm 焦距镜头移离传感器后，在物方约 7 mm 工作距离产生约 1.5× 放大和 NA 0.15。它没有打印高精度透镜，而是固定廉价镜头、照明阵列和样品的几何关系。[便携 FPM 结构](ref:R02)\n\n16×16 LED 阵列间距 3.3 mm，位于样品下方 60 mm，照明 NA 0.4 与物镜 NA 0.15 合成 NA 0.55。各 LED 依次照明，把不同空间频率带移入镜头可接收范围；重建将这些频带拼合，而非仅把一幅低分辨率图放大。原始视场为 2.42×1.64 mm²，约 4 mm²。使用全部 256 个 LED 取得 256 幅 8 MP 原始数据，再形成约 25 MP 的复振幅重建；输出像素数不是相机突然增加了独立探测像元。顺序采集还要求这些图像对应可相互配准的对象，静态靶上的性能不能直接视为任意运动对象的实时性能。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "蓝光靶实验改善分辨率，但彩色采样限制不能忽略",
+          "markdown": "在 USAF 靶实验中，470 nm 蓝光使重建从非相干求和图的约 2.8 μm 提升到 group 10、element 3 对应的 780 nm。论文正文另一处写 870 nm，未清楚说明与该靶结果的换算关系；这里将 780 nm 限定为明确标出的蓝光最佳结果。红、绿、蓝通道具有不同波长，不能把蓝光数值赋给完整彩色图像。将 RGB 同时打开得到近白光，再按单色 FPM 假设重建，会产生明显伪影，原图给出了这个失败条件。[分辨率靶与采样实验](ref:R02)\n\nBayer 阵列使红、蓝通道各有 75% 像素位置未被该色直接测量，绿色为 50%。论文比较去马赛克重建 DR 与稀疏采样重建 SSR：前者先插值，后者在迭代中补未知像素。在含像差和读出噪声的模拟下，两者都需要相对单色 Nyquist 条件额外约 2× 放大；去马赛克通常收敛更快，最后质量接近。作者解释这与先前低噪声、较少像差条件下的稀疏恢复结果不同，说明算法成功依赖噪声和模型条件。70% 频谱重叠支持恢复；不能为了现场加快采集就假定任意删减照明角度仍保留同样分辨率。",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "校准可以吸收部分移动误差，却没有把重建变成零成本现场处理",
+          "markdown": "该 FPM 将图像分成 128×128 pixel 区块、相邻重叠 28 pixel，逐区校准 LED 位置并恢复像差。倾斜照明的频谱圆边界用于估计照明角；Bayer 周期伪影会影响圆拟合，因此红光约 3× 采样用于校准、蓝光约 2× 采样用于成像。方法中的 LED 峰值为 623、530、470 nm，而采样论证将红光近似写成 630 nm；不能把两处当成同一次光谱精密测量。[位置与像差自校准](ref:R02)\n\n论文补偿了完整序列中通常约 1 pixel 的图像漂移，并报告位移大到 10 pixel 时仍可得到高质量重建。这些是算法应对图像移位的结果，不是跌落后机械坐标保持不变。场中心的像差估计被传给邻区；较严重边缘像差若没有合适初值会使 EPRY 恢复失败，低价光学的全视场能力依赖这个步骤。采集由 Raspberry Pi 3 自主完成，但作者实际将全部数据传往 Windows 桌面电脑以加快重建；在本机重建只是需要算法优化的可能方案。文中更短采集时间的讨论也不是本次测得的完整现场时延，不能宣称无需外部计算机即可实时交付最终高分辨率图。",
+          "figure_ids": [
+            "F06"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "高灵敏度模块的短时稳定并不等同于运输后的校准保持",
+          "markdown": "Moya Muñoz 等的 Brick-MIC 将样品架、激发层、探测层及底座设计成互补形状，可在数分钟内交换成像模块。PLA 主体配 TPU 减振底层，光路缩短到约 30 cm；探测层保留压电调节镜架以便重新对准。打印参数包括 0.4 mm 喷嘴、0.1 mm 层厚、17% 填充、50 mm/s 和 210 °C。此处的紧凑性来自光机整合，并非取消商品滤片、物镜、探测器和对准机构。[模块化稳定性证据](ref:R03)\n\n论文记录约 30 min 内横向漂移低于 250 nm，支持受测配置的短时机械稳定；这一量与数字重建中的像素大小、定位精度不同。不同模块仍使用外接激光盒、探测盒或采集硬件，整套配置成本范围为 €10000–30000，不能与仅有基础明场功能的便携机按机架大小直接比较。文章提出温控和自动对焦扩展，但未给出这些功能已随设备集成完成的验证，也没有同一仪器运输前后、不同户外温度或冲击条件下的对准保持曲线。已有实验能回答模块可切换、光路可缩短、短时漂移可控制，尚不能给出旅行后免校准运行的时间或温度范围。",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Wincott et al.：便携机架中的光路、台面与底板",
+          "interpretation": "上部照明、中部样品台、下部反射镜与相机沿固定位置分层。上盖和平台的铰接允许打开，钢底板提供非打印支承；这解释体积较大但可接近内部部件的设计。图中并没有给出电池容量、散热或运输保护测试，所以不能仅据封闭外观认定整机适合所有户外环境。[结构原图](ref:R01)"
+        },
+        "F02": {
+          "caption": "Wincott et al.：同一控制服务适配桌面与手机",
+          "interpretation": "A 是电脑浏览器视图，B 是手机视图，C 展示时间序列、Z-stack、拼接及相机设置窗口。手机改变布局，仪器内的摄像头和控制逻辑保留。截图上的参数是界面示例而非性能测量；它支持本地访问方式的可用性描述，不提供无线距离、延迟或新手操作成功率。[控制界面原图](ref:R01)"
+        },
+        "F03": {
+          "caption": "Aidukas et al.：单板机采集与多角度重建是两个环节",
+          "interpretation": "a 的硬币给出机身尺度，标出底部 Raspberry Pi 3、LED 阵列、样品台和相机；b 展示 Bayer 分色后的稀疏数据；c 将不同照明角度对应的频谱区域拼成较大频谱。它解释为何轻小镜头仍可获得更高重建分辨率，也明确需要顺序多幅数据。图中单板机不证明论文已在它上面完成全部重建。[系统原图](ref:R02)"
+        },
+        "F04": {
+          "caption": "Aidukas et al.：单色重建成功与白光重建失败并列展示",
+          "interpretation": "a 是原始低分辨率靶图，b/c 是 DR/SSR 的 RGB 分通道重建及最细线条剖面，d 是同时使用 RGB 的重建。蓝色边框对应最佳 780 nm 条件，但 d 的细密伪影显示光谱混合违反单色假设。横向曲线用 pixel 作距离；不同色彩面板并未给同一波长、同一 NA 的独立重复试验。[靶图原图](ref:R02)"
+        },
+        "F05": {
+          "caption": "Aidukas et al.：采样冗余和频谱重叠决定收敛条件",
+          "interpretation": "a 定义相邻频带重叠，b/c 分别改变采样因子与重叠百分比，d 比较随迭代次数的强度和光瞳误差；e/f 是频谱和模拟恢复图。这是包含噪声与像差的仿真比较，不是现场实测错误率。b 中低采样时 SSR、DR 误差明显上升，充分采样后接近；e 表明圆边界校准还需要比仅恢复图像更高的采样条件。[采样模拟原图](ref:R02)"
+        },
+        "F06": {
+          "caption": "Aidukas et al.：每个视场区块具有不同照明几何和像差",
+          "interpretation": "a 中实际图例用红点标 measured、黑点标 estimated LED 位置；原图注写蓝/绿，与画面不一致，这里依据画面。b 从中心向边缘传递光瞳初值，并显示空间变化的相位色图；c 比较理论与校准后的阵列中心。它是计算标定的空间分布，不是打印件物理尺寸的误差图，也不能证明全部移动由同一种机械原因产生。[自校准原图](ref:R02)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do portable microscopy systems support observation in the field?",
+      "direction": "Optics and microscopy",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Portable frames must be assessed together with power and access",
+          "markdown": "Wincott et al.'s revised Microscopi integrates imaging, illumination, motorised navigation and a Raspberry Pi 4 Model B in a PLA enclosure. Its footprint is 235×235 mm, height 250 mm and mass 1.5 kg. Power specifications are 5 V and less than 4.0 A, with approximately 10 h portable-battery operation. This runtime is a published system specification; the article gives no discharge curves across LED brightness, motor duty cycle or battery ageing. It is not a guaranteed duration for every mode. [Portable teaching system](ref:R01)\n\nThe folded optical path accommodates finite-conjugate 160 mm DIN objectives with 45 mm parfocal distance in a shorter frame. Hinged lid, hinged stage and internal steel baseplate provide access and support. The enclosure fixes illumination and camera positions instead of requiring loose optical components to be aligned at every site. XY travel is 3 mm per axis and objective Z travel 4 mm; portability does not remove navigation limits. Photographs and drawings establish integration, not drop, transport-vibration or outdoor-ingress testing. Unlike an attachment requiring handheld phone alignment, the camera is fixed within the instrument; the phone principally supplies display and control.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Local browser control works without an external network, while automated navigation still needs calibration",
+          "markdown": "Microscopi establishes its own Wi-Fi hotspot and runs a web service on the Raspberry Pi. Connected phones, tablets or computers can display live images, change focus and illumination, acquire and download data. This control path does not require a remote cloud server, but the paper does not measure connection reliability at arbitrary distances. A directly connected keyboard and monitor also provide program access for checking or modifying settings in the field. Its independent IMX219, 8 MP camera means changing the phone does not directly change sensor sampling. [Control and navigation](ref:R01)\n\nAn M4 screw drives the printed Z slider, while pushrods drive the XY flexure stage. Initial focus is associated with a microswitch-defined home and objective-specific offsets; finer focus requires image-sharpness assessment. Motor homing is not automatic specimen focus. Using a 10×, NA 0.25 objective, the article combines a 5×5 grid with 30% overlap into a 1.5×1.2 mm image. This validates a particular scan and registration example, not uniform stitching error across full mechanical travel. Mineral particles and DVD tracks also demonstrate transmission, reflection and dark-field contrast. Illumination changes reveal different structures; image brightness and quantitative fidelity remain separate properties.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "A smaller computational microscope transfers some optical demands to multiple acquisitions",
+          "markdown": "Aidukas et al.'s instrument weighs approximately 200 g, measures 6×9×11 cm and costs approximately 150 USD in components. Its specimen and focusing stages were printed on an Ultimaker 2+. The Raspberry Pi V2 NOIR camera has 8 MP and 1.12 μm pixels. Displacing its original 3 mm focal-length lens from the sensor yields approximately 1.5× magnification, NA 0.15 and approximately 7 mm working distance. Printing fixes the geometry of an inexpensive lens, illuminator and specimen; it does not manufacture a precision lens. [Portable FPM construction](ref:R02)\n\nA 16×16 LED array with 3.3 mm pitch sits 60 mm below the specimen. Illumination NA 0.4 and objective NA 0.15 combine into synthetic NA 0.55. Sequential LEDs translate different spatial-frequency bands into the lens passband, and reconstruction joins them rather than merely enlarging a low-resolution frame. The raw field is 2.42×1.64 mm², approximately 4 mm². All 256 LEDs provide 256 raw 8 MP frames, reconstructed into approximately 25 MP complex-amplitude images. Output pixels do not represent newly created independent detector elements. Sequential acquisition requires mutually registrable views of the object; static-target performance cannot simply become real-time performance for arbitrary moving objects.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Blue-light target resolution improves, but colour sampling remains a constraint",
+          "markdown": "For the USAF target, 470 nm blue illumination improves approximately 2.8 μm incoherent-sum resolution to group 10, element 3, reported as 780 nm. Another passage gives 870 nm without clearly explaining its relationship to that target result. Here 780 nm is restricted to the explicitly identified best blue-light result. Red, green and blue wavelengths differ; the blue value cannot describe a complete colour image. Turning RGB on simultaneously for near-white illumination and applying a monochromatic FPM model produces conspicuous artefacts, a failure condition demonstrated in the original figure. [Resolution target and sampling experiments](ref:R02)\n\nThe Bayer array leaves 75% of red and blue channel positions unmeasured directly in those colours, and 50% for green. The paper compares demosaiced reconstruction, DR, which interpolates first, with sparsely sampled reconstruction, SSR, which estimates missing pixels iteratively. With aberrations and read noise in simulation, both require approximately 2× additional magnification relative to monochrome Nyquist sampling. DR usually converges faster, with similar final quality. The authors explain differences from earlier successful sparse recovery under lower noise and fewer aberrations, demonstrating dependence on noise and model conditions. A 70% spectral overlap supports recovery; arbitrary deletion of illumination angles to accelerate field acquisition cannot be assumed to preserve resolution.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Calibration absorbs some motion errors without making field reconstruction computationally free",
+          "markdown": "The FPM divides images into 128×128 pixel segments with 28 pixel overlap, calibrating LED positions and recovering aberrations locally. Frequency-circle boundaries under oblique illumination estimate illumination angles. Periodic Bayer artefacts affect circle fitting, motivating approximately 3× red sampling for calibration and 2× blue sampling for imaging. Methods give LED peaks of 623, 530 and 470 nm, whereas the sampling argument approximates red as 630 nm. These are not identical precision spectral measurements. [Position and aberration self-calibration](ref:R02)\n\nThe article compensates typical image drift of approximately 1 pixel over the sequence and reports high-quality recovery with shifts up to 10 pixel. These are algorithmic corrections of image shifts, not mechanically unchanged coordinates after a drop. Central aberration estimates initialise neighbouring segments; severe peripheral aberrations can make EPRY fail without suitable starting values. Whole-field performance with inexpensive optics depends on this step. Raspberry Pi 3 acquires autonomously, but the authors actually transfer all data to a Windows desktop for faster reconstruction. Onboard reconstruction is presented as a possibility requiring algorithm optimisation. Discussion of shorter acquisition times likewise does not measure complete field latency, so the experiment does not establish real-time final high-resolution output without an external computer.",
+          "figure_ids": [
+            "F06"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Short-term stability of sensitive modules does not establish alignment retention after transport",
+          "markdown": "Moya Muñoz et al.'s Brick-MIC uses shape-complementary specimen holder, excitation, detection and base layers, allowing imaging modules to be exchanged within minutes. The PLA body uses a TPU vibration-damping base and an optical path shortened to approximately 30 cm; detection layers retain piezo-adjustable mirror mounts for alignment. Printing uses a 0.4 mm nozzle, 0.1 mm layers, 17% infill, 50 mm/s and 210 °C. Compactness comes from optomechanical integration, not elimination of commercial filters, objectives, detectors or adjustment mechanisms. [Modular stability evidence](ref:R03)\n\nThe article records lateral drift below 250 nm over approximately 30 min, supporting short-term stability in the tested configuration. This is distinct from reconstruction pixel size or localisation precision. Modules still employ external laser boxes, detector boxes or acquisition hardware, and complete configurations cost €10000–30000. Comparing them with basic portable bright-field instruments solely by frame size is therefore misleading. Temperature control and autofocus extensions are proposed, but not validated as integrated completed features. The paper also lacks alignment-retention curves before and after transport, across outdoor temperatures or under shocks. The experiments establish module exchange, shorter optical paths and controlled short-term drift, but provide no time or temperature range for calibration-free operation after travel.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Wincott et al.: optical path, stage and baseplate within a portable frame",
+          "interpretation": "Upper illumination, central specimen stage and lower mirror and camera occupy fixed layers. Hinges open the lid and platform, while a steel baseplate provides nonprinted support. This explains a larger design with accessible internals. The image supplies no battery capacity, thermal assessment or transport-protection test; enclosure appearance alone does not establish operation in every outdoor environment. [Original construction](ref:R01)"
+        },
+        "F02": {
+          "caption": "Wincott et al.: one control service adapts to desktop and phone",
+          "interpretation": "A shows a computer-browser layout, B a phone layout, and C time-series, Z-stack, stitching and camera-setting windows. The phone changes presentation while the instrument retains its camera and control logic. Displayed settings are interface examples rather than performance measurements. The figure supports local-access functionality, not wireless range, latency or novice success rates. [Original control interface](ref:R01)"
+        },
+        "F03": {
+          "caption": "Aidukas et al.: single-board acquisition and multi-angle reconstruction are separate stages",
+          "interpretation": "The coin in a indicates body scale, with Raspberry Pi 3, LED array, stage and camera labelled. b shows sparse Bayer-separated data, and c combines frequency regions from different illumination angles into a larger spectrum. This explains higher reconstructed resolution from a small lens while requiring multiple sequential frames. The presence of the board does not establish that all reconstruction was performed on it. [Original system figure](ref:R02)"
+        },
+        "F04": {
+          "caption": "Aidukas et al.: successful monochromatic and failed white-light reconstruction are shown together",
+          "interpretation": "a contains raw low-resolution target images; b/c show DR/SSR reconstructions for separate RGB channels and finest-bar profiles; d shows reconstruction with simultaneous RGB illumination. Blue borders identify the best 780 nm condition, while fine artefacts in d reveal violation of the monochromatic assumption by spectral mixing. Profile distance is in pixel; different colour panels are not independent repeats at identical wavelength and NA. [Original target comparison](ref:R02)"
+        },
+        "F05": {
+          "caption": "Aidukas et al.: sampling redundancy and frequency overlap determine convergence",
+          "interpretation": "a defines overlap of adjacent frequency bands; b/c vary sampling factor and overlap percentage, while d tracks intensity and pupil errors against iteration. e/f show spectra and simulated reconstructions. This is a noise-and-aberration simulation, not a measured field error rate. In b, SSR and DR errors rise at insufficient sampling and converge with sufficient sampling. e shows that circle-boundary calibration needs stronger sampling than image recovery alone. [Original sampling simulation](ref:R02)"
+        },
+        "F06": {
+          "caption": "Aidukas et al.: illumination geometry and aberrations vary across field segments",
+          "interpretation": "The actual legend in a marks measured LED position in red and estimated position in black. The original caption says blue/green, inconsistent with the image; interpretation here follows the image. b propagates pupil initialisation from centre to periphery and shows spatially varying phase maps. c compares theoretical and calibrated array centres. This maps computational calibration, not printed-part dimensional errors, and does not establish one mechanical cause for every displacement. [Original self-calibration](ref:R02)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie unterstützen tragbare Mikroskopsysteme Beobachtungen vor Ort?",
+      "direction": "Optik und Mikroskopie",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Tragbare Rahmen sind zusammen mit Versorgung und Zugang zu bewerten",
+          "markdown": "Die überarbeitete Microscopi-Version von Wincott et al. integriert Bildgebung, Beleuchtung, motorisierte Navigation und Raspberry Pi 4 Model B in einem PLA-Gehäuse. Grundfläche, Höhe und Masse betragen 235×235 mm, 250 mm und 1.5 kg. Die Versorgung ist mit 5 V und weniger als 4.0 A spezifiziert, die mobile Akkulaufzeit mit etwa 10 h. Dies ist eine veröffentlichte Gerätespezifikation; Entladekurven für verschiedene LED-Helligkeiten, Motor-Einschaltdauern oder Akku-Alterung fehlen. Der Wert garantiert keine Laufzeit für jeden Modus. [Tragbares Lehrsystem](ref:R01)\n\nDer gefaltete Strahlengang nimmt endlich korrigierte 160 mm DIN-Objektive mit 45 mm Abgleichlänge in einem kürzeren Rahmen auf. Aufklappbarer Deckel, aufklappbarer Tisch und innere Stahlgrundplatte ermöglichen Zugang und Abstützung. Das Gehäuse fixiert Beleuchtung und Kamera, statt an jedem Standort lose optische Teile auszurichten. XY verfahren jeweils 3 mm, das Objektiv in Z 4 mm; Tragbarkeit beseitigt diese Navigationsgrenzen nicht. Fotos und Zeichnungen zeigen Integration, keine Fall-, Transportvibrations- oder Wetterschutzprüfung. Anders als bei einem freihändig auszurichtenden Telefonaufsatz sitzt die Kamera fest im Instrument; das Telefon dient hauptsächlich zur Anzeige und Steuerung.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Lokale Browsersteuerung benötigt kein externes Netz, automatische Navigation aber weiterhin Kalibrierung",
+          "markdown": "Microscopi erzeugt einen eigenen Wi-Fi-Hotspot und betreibt einen Webdienst auf dem Raspberry Pi. Verbundene Telefone, Tablets oder Computer zeigen Livebilder, verändern Fokus und Beleuchtung und erfassen beziehungsweise laden Bilder herunter. Dieser Steuerweg benötigt keinen entfernten Cloudserver; der Artikel misst jedoch keine Verbindungszuverlässigkeit über beliebige Entfernungen. Direkt angeschlossene Tastatur und Monitor erlauben ebenfalls Programmzugriff für Prüfung oder Änderung vor Ort. Eine eigenständige IMX219-Kamera mit 8 MP bedeutet, dass ein Telefonwechsel nicht unmittelbar die Sensorabtastung verändert. [Steuerung und Navigation](ref:R01)\n\nEine M4-Schraube bewegt den gedruckten Z-Schlitten, Stößel den XY-Festkörpergelenktisch. Die Fokusstartposition hängt von einem durch Mikroschalter bestimmten Ursprung und objektivspezifischen Versätzen ab; genauer Fokus verlangt Bildschärfebewertung. Motorreferenzierung ist keine automatische Probenfokussierung. Mit einem 10×-Objektiv, NA 0.25, kombiniert die Arbeit ein 5×5-Raster mit 30% Überlappung zu einem 1.5×1.2 mm Bild. Dies validiert einen konkreten Scan samt Registrierung, keinen einheitlichen Stitching-Fehler über den gesamten mechanischen Weg. Mineralpartikel und DVD-Spuren demonstrieren außerdem Durchlicht-, Auflicht- und Dunkelfeldkontrast. Andere Beleuchtung macht andere Strukturen sichtbar; Helligkeit und quantitative Bildtreue bleiben getrennte Eigenschaften.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Ein kleineres Rechenmikroskop verlagert optische Anforderungen auf Mehrfachaufnahmen",
+          "markdown": "Das Instrument von Aidukas et al. wiegt etwa 200 g, misst 6×9×11 cm und benötigt Komponenten für ungefähr 150 USD. Proben- und Fokustisch wurden mit Ultimaker 2+ gedruckt. Die Raspberry Pi V2 NOIR-Kamera besitzt 8 MP und 1.12 μm Pixel. Ihre ursprüngliche Linse mit 3 mm Brennweite wird vom Sensor versetzt und ergibt ungefähr 1.5× Vergrößerung, NA 0.15 und etwa 7 mm Arbeitsabstand. Gedruckt wird die geometrische Verbindung einer preiswerten Linse, Beleuchtung und Probe, keine Präzisionslinse. [Tragbarer FPM-Aufbau](ref:R02)\n\nEine 16×16-LED-Matrix mit 3.3 mm Teilung liegt 60 mm unterhalb der Probe. Beleuchtungs-NA 0.4 und Objektiv-NA 0.15 ergeben synthetische NA 0.55. Nacheinander aktive LEDs verschieben unterschiedliche Raumfrequenzbänder in den Linsendurchlass; die Rekonstruktion verbindet sie, statt ein niedrig aufgelöstes Einzelbild bloß zu vergrößern. Das Rohbildfeld beträgt 2.42×1.64 mm², ungefähr 4 mm². Alle 256 LEDs liefern 256 rohe 8 MP Bilder, aus denen ungefähr 25 MP komplexe Amplitudenbilder entstehen. Ausgabepixel sind keine neu entstandenen unabhängigen Detektorelemente. Sequenzielle Aufnahme setzt registrierbare Objektansichten voraus; Leistung am statischen Target ist nicht automatisch Echtzeitleistung bei beliebigen bewegten Objekten.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Blaulicht verbessert die Targetauflösung, Farbfilterabtastung bleibt jedoch begrenzend",
+          "markdown": "Am USAF-Target verbessert 470 nm Blau die Auflösung des inkohärenten Summenbilds von ungefähr 2.8 μm auf Gruppe 10, Element 3, angegeben mit 780 nm. Eine andere Textstelle nennt 870 nm ohne klare Erklärung des Verhältnisses zu diesem Targetergebnis. Hier gelten 780 nm deshalb ausschließlich als ausdrücklich ausgewiesenes bestes Blaulichtergebnis. Rote, grüne und blaue Wellenlängen unterscheiden sich; der Blauwert beschreibt kein vollständiges Farbbild. Gleichzeitige RGB-Beleuchtung für annähernd weißes Licht erzeugt unter dem monochromatischen FPM-Modell deutliche Artefakte. Die Originalabbildung demonstriert diese Fehlbedingung. [Auflösungstarget und Abtastversuche](ref:R02)\n\nDas Bayer-Muster lässt je 75% der Positionen im roten und blauen Kanal ohne direkte Messung dieser Farbe, im grünen Kanal 50%. Verglichen werden demosaiced reconstruction, DR, mit vorgelagerter Interpolation und sparsely sampled reconstruction, SSR, mit iterativer Schätzung fehlender Pixel. Bei simulierten Aberrationen und Ausleserauschen benötigen beide ungefähr 2× zusätzliche Vergrößerung gegenüber monochromatischer Nyquist-Abtastung. DR konvergiert meist schneller bei ähnlicher Endqualität. Die Autoren erklären Unterschiede zu früherer erfolgreicher Rekonstruktion dünn abgetasteter Daten durch geringeres Rauschen und weniger Aberrationen dort. Erfolg hängt somit von Rauschen und Modellbedingungen ab. 70% Frequenzüberlappung unterstützen die Rekonstruktion; beliebiges Weglassen von Beleuchtungswinkeln zur schnelleren Feldaufnahme erhält nicht nachgewiesenermaßen dieselbe Auflösung.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Kalibrierung kompensiert manche Bewegungsfehler, macht Vor-Ort-Rekonstruktion aber nicht aufwandsfrei",
+          "markdown": "Das FPM unterteilt Bilder in 128×128 pixel große Bereiche mit 28 pixel Überlappung und kalibriert LED-Positionen sowie Aberrationen lokal. Kreisgrenzen im Frequenzraum schräg beleuchteter Bilder schätzen Beleuchtungswinkel. Periodische Bayer-Artefakte beeinträchtigen Kreisfits, weshalb ungefähr 3× rote Abtastung zur Kalibrierung und 2× blaue Abtastung zur Bildgebung dienen. Die Methoden nennen LED-Maxima von 623, 530 und 470 nm; die Abtastargumentation nähert Rot mit 630 nm an. Dies sind keine identischen präzisen Spektralmessungen. [Positions- und Aberrationskalibrierung](ref:R02)\n\nDie Arbeit kompensiert typische Bilddrift von etwa 1 pixel während der Sequenz und berichtet hochwertige Rekonstruktion bei Verschiebungen bis 10 pixel. Das sind algorithmische Bildverschiebungskorrekturen, keine unveränderten mechanischen Koordinaten nach einem Fall. Zentrale Aberrationsschätzungen initialisieren Nachbarbereiche; starke Randfehler können EPRY ohne geeigneten Startwert scheitern lassen. Die Gesamtfeldleistung preiswerter Optik hängt von diesem Schritt ab. Raspberry Pi 3 erfasst selbstständig, tatsächlich übertragen die Autoren aber alle Daten zur schnelleren Rekonstruktion an einen Windows-Desktop. Lokale Rekonstruktion wird als Möglichkeit mit nötiger Algorithmusoptimierung beschrieben. Auch kürzere Aufnahmezeiten in der Diskussion sind keine gemessene vollständige Feldlatenz. Echtzeit-Endbilder hoher Auflösung ohne externen Rechner wurden damit nicht belegt.",
+          "figure_ids": [
+            "F06"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Kurzzeitstabilität empfindlicher Module belegt keinen Justageerhalt nach Transport",
+          "markdown": "Brick-MIC von Moya Muñoz et al. verwendet formkomplementäre Probenhalter-, Anregungs-, Detektions- und Basisschichten. Bildgebungsmodule lassen sich innerhalb von Minuten austauschen. Der PLA-Körper besitzt eine schwingungsdämpfende TPU-Basis und einen auf ungefähr 30 cm verkürzten Strahlengang; Detektionsschichten enthalten weiterhin piezoverstellbare Spiegelhalter zur Justage. Gedruckt wird mit 0.4 mm Düse, 0.1 mm Schichten, 17% Füllung, 50 mm/s und 210 °C. Kompaktheit entsteht aus optomechanischer Integration, nicht durch Weglassen kommerzieller Filter, Objektive, Detektoren oder Einstellmechanismen. [Modulare Stabilitätsnachweise](ref:R03)\n\nDie Arbeit dokumentiert laterale Drift unter 250 nm über ungefähr 30 min und stützt damit Kurzzeitstabilität der geprüften Konfiguration. Diese Größe unterscheidet sich von Rekonstruktionspixeln oder Lokalisierungspräzision. Module verwenden weiterhin externe Laserboxen, Detektorboxen oder Erfassungshardware; vollständige Konfigurationen kosten €10000–30000. Ein Vergleich mit einfachen tragbaren Hellfeldgeräten allein anhand der Rahmengröße wäre irreführend. Temperaturregelung und Autofokus werden als Erweiterungen vorgeschlagen, aber nicht als vollständig integrierte Funktionen validiert. Auch Justageerhalt vor und nach Transport, bei verschiedenen Außentemperaturen oder unter Stößen wurde nicht durch entsprechende Kurven belegt. Die Versuche zeigen Modultausch, kürzere Strahlengänge und kontrollierte Kurzzeitdrift, aber keinen Zeit- oder Temperaturbereich für kalibrierungsfreien Betrieb nach einer Reise.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Wincott et al.: Strahlengang, Tisch und Grundplatte im tragbaren Rahmen",
+          "interpretation": "Beleuchtung oben, Probentisch mittig sowie Spiegel und Kamera unten liegen in festen Ebenen. Scharniere öffnen Deckel und Plattform; eine Stahlgrundplatte liefert ungedruckte Abstützung. Das erklärt eine größere, innen gut zugängliche Bauweise. Akkukapazität, Wärmeprüfung und Transportschutztest fehlen in der Zeichnung. Das Gehäusebild allein belegt keinen Betrieb in jeder Außenumgebung. [Originalkonstruktion](ref:R01)"
+        },
+        "F02": {
+          "caption": "Wincott et al.: derselbe Steuerdienst passt sich Computer und Telefon an",
+          "interpretation": "A zeigt die Computer-Browseransicht, B die Telefonansicht und C Fenster für Zeitserien, Z-stack, Stitching und Kameraeinstellungen. Das Telefon verändert die Darstellung, Kamera und Steuerlogik bleiben im Instrument. Angezeigte Werte sind Bedienbeispiele, keine Leistungsmessungen. Die Grafik belegt lokalen Zugang, keine Funkreichweite, Latenz oder Erfolgsquote unerfahrener Nutzer. [Originalbedienoberfläche](ref:R01)"
+        },
+        "F03": {
+          "caption": "Aidukas et al.: Einplatinen-Erfassung und Mehrwinkelrekonstruktion sind getrennte Schritte",
+          "interpretation": "Die Münze in a verdeutlicht die Gehäusegröße; Raspberry Pi 3, LED-Matrix, Tisch und Kamera sind markiert. b zeigt dünn besetzte Bayer-Farbkanäle, c verbindet Frequenzbereiche unterschiedlicher Beleuchtungswinkel zu einem größeren Spektrum. Dies erklärt höhere rekonstruierte Auflösung mit kleiner Linse, benötigt aber mehrere sequenzielle Aufnahmen. Die Platine im Bild belegt keine vollständig darauf ausgeführte Rekonstruktion. [Originalsystemabbildung](ref:R02)"
+        },
+        "F04": {
+          "caption": "Aidukas et al.: gelungene monochromatische und fehlerhafte Weißlichtrekonstruktion stehen nebeneinander",
+          "interpretation": "a enthält niedrig aufgelöste Rohbilder; b/c zeigen DR/SSR für getrennte RGB-Kanäle und Profile feinster Linien, d die Rekonstruktion bei gleichzeitigem RGB-Licht. Blaue Rahmen kennzeichnen die beste 780 nm Bedingung; feine Artefakte in d zeigen die Verletzung der Monochromasieannahme durch Spektralmischung. Profilabstand ist in pixel angegeben. Verschiedene Farbtafeln sind keine unabhängigen Wiederholungen bei identischer Wellenlänge und NA. [Originaltargetvergleich](ref:R02)"
+        },
+        "F05": {
+          "caption": "Aidukas et al.: Abtastredundanz und Frequenzüberlappung bestimmen Konvergenz",
+          "interpretation": "a definiert benachbarte Frequenzüberlappung; b/c verändern Abtastfaktor und Überlappungsanteil, d verfolgt Intensitäts- und Pupillenfehler über Iterationen. e/f zeigen Spektren und simulierte Rekonstruktionen. Dies ist eine Simulation mit Rauschen und Aberrationen, keine gemessene Feldfehlerquote. In b steigen SSR- und DR-Fehler bei Unterabtastung und nähern sich bei ausreichender Abtastung an. e zeigt stärkere Anforderungen für Kreisgrenzenkalibrierung als für reine Bildrekonstruktion. [Originalabtastsimulation](ref:R02)"
+        },
+        "F06": {
+          "caption": "Aidukas et al.: Beleuchtungsgeometrie und Aberrationen variieren zwischen Bildfeldbereichen",
+          "interpretation": "Die tatsächliche Legende in a zeigt measured LED position rot und estimated schwarz. Die Originallegende nennt dagegen blau/grün; hier wird das sichtbare Bild zugrunde gelegt. b überträgt Pupillenstartwerte vom Zentrum zum Rand und zeigt räumlich veränderliche Phasenkarten. c vergleicht theoretische und kalibrierte Matrixzentren. Dargestellt wird Rechenkalibrierung, kein Maßfehler gedruckter Bauteile und kein Beleg für eine einzige mechanische Ursache sämtlicher Verschiebungen. [Originalselbstkalibrierung](ref:R02)"
+        }
+      }
+    }
+  }
+}

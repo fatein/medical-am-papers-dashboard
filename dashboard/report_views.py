@@ -48,6 +48,10 @@ REPORT_CSS = '''<style>
 
 
 def question_report_page(report: dict | None, question: dict | None, root: Path) -> None:
+    if report and report.get('schema_version') == 2:
+        from dashboard.academic_questions import academic_question_page
+        academic_question_page(report, question, root)
+        return
     st.button('← 返回研究问题', key='report_back', on_click=restore_question_context, args=(question,))
     if not report:
         st.info('未找到对应报告。请返回研究问题列表。')

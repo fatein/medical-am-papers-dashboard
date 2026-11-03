@@ -1,0 +1,333 @@
+{
+  "schema_version": 2,
+  "question_id": "P7-106",
+  "p": "P7",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_13195387c40ccdaab6a7",
+    "KB2026B29549A0A730"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Low-cost 3D printed lenses for brightfield and fluorescence microscopy",
+      "publisher": "Biomedical Optics Express",
+      "year": 2024,
+      "url": "https://doi.org/10.1364/BOE.514653",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "A 3D-printed optical microscope for low-cost histological imaging",
+      "publisher": "Journal of Microscopy",
+      "year": 2025,
+      "url": "https://doi.org/10.1111/jmi.13398",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Low-cost 3D-printed optics for super-resolution multifocal structured illumination microscopy",
+      "publisher": "Biomedical Optics Express",
+      "year": 2026,
+      "url": "https://doi.org/10.1364/BOE.583760",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-106/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11019669/#g004",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Fig. 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-106/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11019669/#g003",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Fig. 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-106/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12068021/#jmi13398-fig-0002",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Fig. 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-106/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12068021/#jmi13398-fig-0003",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Fig. 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-106/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12904558/#g004",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R03",
+      "original_label": "Fig. 5",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-106/F06.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12904558/#g005",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "打印光学元件如何影响分辨率和成像质量？",
+      "direction": "光学与显微成像",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "表面变透明之后，体内周期结构仍能形成重影",
+          "markdown": "Christopher 等在 2024 年以 Elegoo Mars 2、Formlabs Clear RS-F2-GPCL-04 制作与商品镜片几何相同的透镜，层厚 10 μm、横向像素 50 μm。打印后对曲面旋涂透明树脂，平面借助涂树脂玻片成形；这些后处理消除可见阶梯，使毫米级元件可以成像，却不意味着打印体内完全均匀。轮廓测量使用 5 μm 探针，受仪器竖向范围限制，只能检查毫米级局部截面。[透镜制造与测量](ref:R01)\n\n单片 #1 的打印与商品透镜实测曲率半径为 9.67 mm 与 9.94 mm，中心测量直径 1.6 mm，两者粗糙度均低于 70 nm RMS。正文将最大球面形状误差列为打印 270 nm、商品 152 nm，但原图 A 商品/B 打印的残差幅值看起来相反；因此不据这两个值给出精确优劣排名。曲率相近、局部粗糙度小与整口径波前相同也是不同命题。四片组中的打印 #3 最大形状误差达 4.05 μm，#4 为 600 nm，提示旋涂并非对所有曲率等效。USAF 靶出现横向移位的淡重影，作者将其归因于体内体素图样形成有效衍射光栅；表面再光滑也不会自动去除这种体内周期性。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "折射率与安装偏心改变实际物镜，而非只改变材料成本",
+          "markdown": "研究设置两种成像物镜：焦距 +20 mm 的单片 #1，理论 NA 0.1；另以 +6 mm 非球面 #2、+10 mm 平凸 #3、−6 mm 平凹 #4、+15 mm 平凸 #5 组成四片组。四片组只把 #3 和/或 #4 换成打印件，#2、#5 保持商品镜片，筒镜也仍是商品消色差镜。不能将其称为全打印高 NA 物镜。[光路与安装公差](ref:R01)\n\n商品 #4 的 N-SF11 折射率约 1.78，打印树脂约 1.51；照搬表面几何并未保持相同光焦度，四片组理论 NA 从商品 0.35 变为打印组合 0.29。全商品与只换 #4 时约 47×，同时换 #3、#4 后约 50×；作者认为折射率差及轴向间距偏差共同参与。用于视觉比较的部分图像经过缩放，不能从呈现大小判断原始放大率。光线追迹还预测横向偏移大于 50 μm 会明显降低像质，故打印隔圈、倒角和压环承担居中作用。单片使用 8 mm 光阑，四片组使用 2 mm 光阑；改变有效孔径能控制像差，但同时改变通光与 NA。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "明场条纹和荧光点扩散函数显示不同程度的退化",
+          "markdown": "单片约 8×、视场 1.4×0.9 mm 时，打印镜片可辨 USAF group 6-6，对应作者报告约 6 μm；商品镜片到 group 7-1、约 4.5 μm。四片组可以辨认靶上最细线对，原文据此给出低于 2 μm，但更换第二片打印件后，条纹和边界仍有更强模糊。达到靶的最细组只给该靶范围内的分辨能力，不能证明各组合具有相同调制传递或像差。[明场与荧光比较](ref:R01)\n\n用 500 nm 荧光微球、488 nm 激发、100 ms 曝光且不合并像素，单片商品/打印物镜报告的荧光分辨率分别为 3.0/5.5 μm；四片组全商品、只换 #4、同时换 #3/#4 分别为 0.93、1.1、1.4 μm。后者支持随打印成像元件增加而累积退化，不能被“都低于 2 μm”掩盖。单片样品面激发为 500 μW，四片组最高为 5 mW，因此跨组亮度不能当成等功率收光效率。材料本身还有波长依赖背景：文中 525 nm 激发下树脂自发荧光比 455 nm 约弱 30 倍；可见光透明并不意味着适合任意荧光波段。微球本身有限大小，报告的响应宽度也不等于从无限小点源独立测得的纯光学 PSF。",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "全打印物镜与聚光镜的原型仍依赖数字色差校正",
+          "markdown": "Christopher 等在 2025 年将打印物镜、聚光镜接入 OpenFlexure 机架：物镜设计直径 12.7 mm、焦距 20 mm，聚光镜同直径、焦距 35 mm，打印层厚 10 μm。实验使用商品 Thorlabs CS165CU(/M) 相机，距物镜 50 mm，且与物镜筒不直接耦合；白光 LED 距聚光镜约 30 mm。这种装配使照明轴与检测轴的相对调整仍是像质因素，“机架和镜片可打印”没有消除相机和对准要求。[整机光学验证](ref:R02)\n\n原始 RGB 的彩边以 FIJI Correct 3D Drift 处理：拆分颜色通道、改作序列，仅校正 XY 相对位移。校正后 USAF group 6、element 5 对应的分辨率值为 4.922 μm，曲线对比度略提高；这不是校正轴向色差、场曲或所有高阶像差。作者以 550 nm 波长和 Rayleigh 关系从这一分辨率反算 NA≈0.07，不能当成独立实测 NA 再用于证明同一分辨率。标尺给有效放大率 2.90×、视场约 1.7 mm，而沿测量区域照明向边缘下降约 24%。主刻度间隔 100 μm 与可辨小间隔 50 μm 指不同标尺层级，不是矛盾的放大率。",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "照明阵列用复制件避开直接打印体内光栅，但保留曲率误差",
+          "markdown": "2026 年 Christopher 等改将定制透镜阵列置于激发光路。ML-1 为商品 250 μm 镜元、焦距 7.5 mm；ML-2 为商品 1×1.4 mm 镜元、焦距 4.7 mm；ML-3 为 1.2 mm 间距蜂窝阵列、设计焦距 5 mm。ML-3 先以 22 μm 像素、10 μm 层厚打印母版，再旋涂、制硅胶模、浇注透明树脂。因此最终工作元件是打印母版的复制件，不是具有原始逐层体结构的直接打印镜片。[阵列制造与表面比较](ref:R03)\n\n这一位置变化也很关键：收集端仍使用商品 60×、NA 1.42 油镜，打印相关元件负责形成多点照明。ML-3 设计曲率半径 3 mm，随机测量 3 个镜元得到 2.46±0.13 mm，说明后处理可保留平滑而改变曲率。为抑制镜元边界散射增加 1 mm 通光孔遮罩，牺牲部分光量。表中 59%、48%、83% 是按作者相同几何口径计算的 ML-1/ML-2/ML-3 因子；ML-1 厂商标称填充率却为 100%，且商品阵列无需实际遮罩。这些数字不能被当成实测透过率直接排序。蜂窝间距虽小于该矩形阵列，仍大于 ML-1，小间距商品阵列需要更少扫描位置。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "重分配改善微球宽度，但不消除照明不均匀和时间成本",
+          "markdown": "该 mSIM 系统以 488 nm 激光、MEMS 扫描和商品高 NA 物镜工作。宽场、激光扫描最大强度投影、mSIM 重分配三种结果在 175 nm 标准微球上比较；曝光 5 ms，模拟/数字增益 10/1。每阵列随机选 5 个微球，不加反卷积时，激光扫描到 mSIM 的平均 FWHM 分别为 ML-1：235±7→166±7 nm，ML-2：247±13→186±6 nm，ML-3：246±7→178±9 nm。打印母模复制阵列可支持明显变窄的点响应，但数值上未优于高端商品阵列；没有进行正式等效检验。[标准微球实验](ref:R03)\n\n处理包括基准均匀荧光片定位亮点、局部 Gaussian 卷积及像素重分配，因而不能把变窄全部归因于镜片表面。微球结果未做反卷积，与论文另用 Richardson–Lucy 5 次迭代得到的结果必须分开。各阵列激发功率为获得可比信背比而分别调整，不能据图像相近推断相同通光效率。论文还发现 ML-2 和 ML-3 的较稀疏照明造成亮度条纹，平场校正后仍有残余；较长扫描和缺少自动对焦带来轴向漂移。这里提升分辨率伴随采集位置、计算与稳定性要求，单个最窄 FWHM 没有覆盖整个视场的均匀性。",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Christopher et al.：球面拟合残差不同于表面粗糙度",
+          "interpretation": "A/B 是商品/打印 #1，C/D 是打印 #3/#4；上方为轮廓与球面拟合，下方为残差，横轴以 mm、纵轴以 μm 表示。C 的微米级残差明显较大。A/B 图示残差幅值与正文 152/270 nm 的归属并不吻合，保留原图而不自行对调。各面板不同量程也不能用柱高印象比较粗糙度。[轮廓原图](ref:R01)"
+        },
+        "F02": {
+          "caption": "Christopher et al.：物镜性能取决于镜片组合与光阑",
+          "interpretation": "A 为 #1 单片、8 mm 光阑；B 为 #2–#5 四片组、2 mm 光阑，图中还包括光线追迹和理论 MTF。下方剖面显示打印支架控制镜片间距与居中。理论曲线不能代替实测 PSF；而四片组只有部分镜片被打印替代，并非整套商品元件都消失。[物镜设计原图](ref:R01)"
+        },
+        "F03": {
+          "caption": "Christopher et al.：色彩配准改善条纹对比，但保留原始分辨率边界",
+          "interpretation": "A/B 是原始/色差校正的同一靶图，黄色框定位放大区域，C 将两条灰度曲线叠加。蓝色校正线在一些峰谷处增加对比，但未显示所有细纹变为可分辨。图像保留 250 μm 与 50 μm 比例尺，支持追溯测量区域；仅做横向通道平移不能推断轴向色差已消除。[色差校正原图](ref:R02)"
+        },
+        "F04": {
+          "caption": "Christopher et al.：标尺峰谷可见不代表照明均匀",
+          "interpretation": "A 的黄色线规定 B 的取样路径，B 横轴是距离 μm、纵轴是 8-bit 灰度。峰谷重复而整体包络向右降低，说明标尺仍可识别，但亮度有系统性梯度。作者量化约 24% 下降；图中还存在局部异常峰谷，因此单条路径不等于完整二维均匀性或畸变地图。[标尺原图](ref:R02)"
+        },
+        "F05": {
+          "caption": "Christopher et al.：蜂窝阵列同时改变填充方式和制作途径",
+          "interpretation": "a/b 对比 ML-1 方阵、ML-2 矩形阵、ML-3 蜂窝阵；c 明确显示打印母版、模具、最终阵列的不同对象。d/e/f 给轮廓、球面拟合和残差，ML-1 的测量距离用 μm，小尺寸与其他阵列并非相同采样区域。ML-3 边缘残差升高，说明掩膜抑制边界照明有实际原因。表面相近不能推出相同焦距或相同通光。[阵列原图](ref:R03)"
+        },
+        "F06": {
+          "caption": "Christopher et al.：标准微球的重分配收益可与商品阵列比较",
+          "interpretation": "a/b/c 分别为 ML-1/ML-2/ML-3，每行都并列 WF、LS、mSIM；右侧归一化曲线显示从 LS 到 mSIM 的宽度由 235→166、247→186、246→178 nm 缩小。全场与局部比例尺分别为 10 μm 和 500 nm。曲线归一化隐藏绝对光量差异，不能直接比较传输效率；这些微球结果未使用反卷积。[微球原图](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do printed optical components affect resolution and image quality?",
+      "direction": "Optics and microscopy",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Optical clarity at the surface does not remove periodic structures in the bulk",
+          "markdown": "In 2024 Christopher et al. used an Elegoo Mars 2 and Formlabs Clear RS-F2-GPCL-04 to reproduce commercial lens geometries with 10 μm layers and 50 μm lateral pixels. Curved surfaces were spin-coated with clear resin, while planar surfaces were formed against resin-coated glass. These treatments suppress visible stair steps and enable millimetre-scale imaging optics, but do not establish bulk homogeneity. Profiling used a 5 μm stylus and, because of limited vertical travel, examined local millimetre-scale sections. [Lens fabrication and metrology](ref:R01)\n\nMeasured curvature radii for printed and commercial singlet #1 were 9.67 mm and 9.94 mm, over a central measurement diameter of 1.6 mm; roughness was below 70 nm RMS for both. The text assigns maximum spherical-form errors of 270 nm to printed and 152 nm to commercial lenses, but residual amplitudes in original panels A, commercial, and B, printed, appear reversed. These values therefore do not support a precise ranking here. Similar curvature, low local roughness and equal full-aperture wavefronts are distinct claims. Printed #3 in the compound objective had up to 4.05 μm form error, versus 600 nm for #4, showing that coating is not equally effective for every curvature. Faint laterally displaced USAF-target ghosts were attributed to an effective diffraction grating from bulk voxel patterning. A smoother surface does not automatically remove that internal periodicity.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Index and decentration change the objective itself, not merely its material cost",
+          "markdown": "Two objectives were compared: singlet #1 with +20 mm focal length and theoretical NA 0.1, and a four-element assembly containing +6 mm aspheric #2, +10 mm plano-convex #3, −6 mm plano-concave #4 and +15 mm plano-convex #5. Only #3 and/or #4 were replaced with printed elements; #2 and #5 remained commercial, as did the achromatic tube lens. This is not an entirely printed high-NA objective. [Optical design and mounting tolerances](ref:R01)\n\nCommercial #4 uses N-SF11 with index near 1.78, versus approximately 1.51 for the printed resin. Copying surface geometry does not preserve optical power: theoretical compound-objective NA changes from 0.35 commercially to 0.29 in the printed combination. Magnification is approximately 47× with all-commercial elements or only printed #4, versus approximately 50× with printed #3 and #4. The authors implicate both index differences and axial spacing errors. Some visual-comparison images were rescaled, so displayed size cannot establish native magnification. Ray tracing also predicted substantial degradation for lateral displacement above 50 μm; printed spacers, chamfers and retaining rings therefore centre the elements. The singlet uses an 8 mm aperture and the compound objective a 2 mm aperture. Restricting aperture controls aberrations while also changing throughput and NA.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Bright-field line targets and fluorescence point responses show different degrees of degradation",
+          "markdown": "At approximately 8× and a 1.4×0.9 mm field, the printed singlet resolves USAF group 6-6, reported as approximately 6 μm, while the commercial lens reaches group 7-1, approximately 4.5 μm. Compound objectives resolve the target's finest line pairs, giving the authors' stated resolution below 2 μm, but replacing a second element still increases blurring of bars and boundaries. Reaching the smallest group establishes performance only within that target's range, not identical modulation transfer or aberrations across configurations. [Bright-field and fluorescence comparison](ref:R01)\n\nWith 500 nm fluorescent beads, 488 nm excitation, 100 ms exposure and no pixel binning, reported fluorescence resolution is 3.0/5.5 μm for commercial/printed singlets. All-commercial compound optics, printed #4 alone and printed #3/#4 together yield 0.93, 1.1 and 1.4 μm respectively. This progressive degradation with added printed collection optics is hidden by saying only that all values are below 2 μm. Specimen-plane excitation is 500 μW for the singlet and up to 5 mW for compound optics, so cross-configuration brightness does not measure equal-power collection efficiency. Resin background is wavelength-dependent: autofluorescence at 525 nm excitation is approximately 30-fold weaker than at 455 nm. Visible transparency does not establish suitability for every fluorescence band. Finite bead size also means the reported response widths are not independently measured pure optical PSFs from infinitesimal sources.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "Printed objective and condenser prototypes still depend on digital chromatic correction",
+          "markdown": "In 2025 Christopher et al. integrated printed objective and condenser lenses into an OpenFlexure frame. The objective design is 12.7 mm in diameter with 20 mm focal length; the condenser has the same diameter and 35 mm focal length, with 10 μm print layers. A commercial Thorlabs CS165CU(/M) camera sits 50 mm from the objective, uncoupled from its tube, and the white LED approximately 30 mm from the condenser. Relative alignment of illumination and detection therefore remains an image-quality variable; printable frame and lenses do not remove camera or alignment requirements. [Integrated optical validation](ref:R02)\n\nRaw RGB colour fringes were corrected using FIJI Correct 3D Drift: channels were separated, treated as a sequence and registered only in XY. After correction, USAF group 6, element 5 gives a reported resolution of 4.922 μm and slightly improved contrast. This does not correct axial chromatic aberration, field curvature or every higher-order aberration. The authors infer NA≈0.07 from this resolution through the Rayleigh relationship at an assumed 550 nm; it is not an independent NA measurement that can validate the same resolution again. A graticule gives effective magnification 2.90× and approximately 1.7 mm field, while illumination falls approximately 24% toward the measurement-region edge. Major marks 100 μm apart and resolved smaller intervals of 50 μm refer to different graticule levels, not contradictory magnifications.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Replicated illumination arrays avoid directly printed bulk gratings while retaining curvature errors",
+          "markdown": "In 2026 Christopher et al. instead placed a custom lenslet array in excitation. Commercial ML-1 has 250 μm lenslets and 7.5 mm focal length; commercial ML-2 has 1×1.4 mm lenslets and 4.7 mm focal length; honeycomb ML-3 has 1.2 mm pitch and designed 5 mm focal length. ML-3 begins with a master printed at 22 μm pixels and 10 μm layers, followed by coating, a silicone mold and clear-resin casting. The operating optic is thus a replica of a printed master, rather than a directly printed lens retaining the original layered bulk. [Array manufacturing and surface comparison](ref:R03)\n\nIts optical location matters: collection still uses a commercial 60×, NA 1.42 oil objective, while the print-derived component generates multifocal illumination. ML-3's designed curvature radius is 3 mm; measurements of 3 randomly selected lenslets give 2.46±0.13 mm, showing that processing can preserve smoothness while changing curvature. A mask with 1 mm clear apertures suppresses boundary scattering at some throughput cost. The tabulated 59%, 48% and 83% for ML-1/ML-2/ML-3 use the authors' common geometric calculation. Manufacturer-nominal ML-1 fill factor is nevertheless 100%, and commercial arrays require no physical mask. These numbers cannot rank measured transmission. Honeycomb pitch is smaller than this rectangular array's but larger than ML-1's, so the small-pitch commercial array requires fewer scan positions.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Reassignment narrows bead responses without eliminating uneven illumination or acquisition cost",
+          "markdown": "The mSIM system uses a 488 nm laser, MEMS scanning and a commercial high-NA objective. Widefield, laser-scanned maximum-intensity projection and mSIM reassignment were compared using 175 nm standard beads, with 5 ms exposure and analogue/digital gains 10/1. For 5 randomly selected beads per array, without deconvolution, mean FWHM changes from laser scanning to mSIM were ML-1: 235±7→166±7 nm; ML-2: 247±13→186±6 nm; and ML-3: 246±7→178±9 nm. The printed-master replica supports substantial response narrowing but is not numerically superior to the high-end commercial array, and no formal equivalence test was conducted. [Standard-bead experiment](ref:R03)\n\nProcessing locates spots using a uniform fluorescent reference slide, applies local Gaussian convolution and reassigns pixels. Narrowing therefore cannot be attributed entirely to lens surfaces. Bead results omit deconvolution and must remain separate from other results using 5 Richardson–Lucy iterations. Excitation power was adjusted independently for each array to obtain comparable signal-to-background, so similar images do not imply equal throughput. The paper also finds brightness striping with the sparser ML-2 and ML-3 illumination, partly remaining after flat-field correction; longer scans without autofocus produce axial drift. Resolution improvement thus brings acquisition-position, computation and stability requirements. The narrowest individual FWHM does not describe uniformity over the whole field.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Christopher et al.: spherical-fit residuals are not surface roughness",
+          "interpretation": "A/B show commercial/printed #1 and C/D printed #3/#4. Profiles and spherical fits appear above residuals, with horizontal mm and vertical μm axes. C has visibly larger micrometre-scale residuals. A/B residual amplitudes do not match the text assignment of 152/270 nm, so the original is preserved without swapping labels. Different panel scales also prevent visual height comparisons from establishing roughness. [Original profiles](ref:R01)"
+        },
+        "F02": {
+          "caption": "Christopher et al.: lens combinations and apertures determine objective performance",
+          "interpretation": "A shows singlet #1 and an 8 mm aperture; B shows the #2–#5 compound objective and a 2 mm aperture, together with ray tracing and theoretical MTF. Lower cross-sections show how printed holders control spacing and centring. Theoretical curves do not replace measured PSFs, and only some compound-objective elements are printed replacements. [Original objective design](ref:R01)"
+        },
+        "F03": {
+          "caption": "Christopher et al.: colour registration improves bar contrast within the original resolution boundary",
+          "interpretation": "A/B compare raw and chromatically corrected images of the same target; yellow boxes locate magnified regions and C overlays greyscale profiles. The blue corrected trace increases contrast at some peaks and troughs without resolving every fine bar. Retained 250 μm and 50 μm scales make the region traceable. Lateral channel translation does not establish removal of axial chromatic aberration. [Original chromatic correction](ref:R02)"
+        },
+        "F04": {
+          "caption": "Christopher et al.: visible graticule peaks do not establish uniform illumination",
+          "interpretation": "The yellow line in A defines the sampling path in B. B plots distance in μm against 8-bit intensity. Repeated peaks and troughs remain visible while their envelope declines to the right, revealing a systematic brightness gradient. The authors quantify approximately 24% decrease. Local irregularities are also present; a single profile is not a full spatial uniformity or distortion map. [Original graticule image](ref:R02)"
+        },
+        "F05": {
+          "caption": "Christopher et al.: honeycomb arrays change both packing and manufacturing route",
+          "interpretation": "a/b compare square ML-1, rectangular ML-2 and honeycomb ML-3; c distinguishes the printed master, mold and final array. d/e/f give profiles, spherical fits and residuals. The ML-1 measurement distance is in μm, and its small size means the arrays do not cover identical sampled regions. ML-3 edge residuals increase, supporting the rationale for blocking boundary illumination. Similar surfaces do not establish equal focal lengths or throughput. [Original array comparison](ref:R03)"
+        },
+        "F06": {
+          "caption": "Christopher et al.: standard beads compare reassignment gains across arrays",
+          "interpretation": "a/b/c represent ML-1/ML-2/ML-3, each juxtaposing WF, LS and mSIM. Right-hand normalised profiles narrow from LS to mSIM by 235→166, 247→186 and 246→178 nm. Full-field and enlarged scale bars are 10 μm and 500 nm. Normalisation hides absolute light differences and cannot compare transmission efficiency directly. These bead results use no deconvolution. [Original bead comparison](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie beeinflussen gedruckte optische Komponenten Auflösung und Bildqualität?",
+      "direction": "Optik und Mikroskopie",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Eine optisch klare Oberfläche beseitigt periodische Strukturen im Volumen nicht",
+          "markdown": "Christopher et al. reproduzierten 2024 kommerzielle Linsengeometrien mit Elegoo Mars 2 und Formlabs Clear RS-F2-GPCL-04 bei 10 μm Schichthöhe und 50 μm lateralen Pixeln. Gekrümmte Flächen erhielten eine schleuderbeschichtete transparente Harzschicht, ebene Flächen wurden an harzbeschichtetem Glas geformt. Diese Behandlung unterdrückt sichtbare Stufen und ermöglicht millimetergroße Abbildungsoptik, belegt aber keine Volumenhomogenität. Die Profilometrie nutzte einen 5 μm Taster und untersuchte wegen begrenzten Vertikalwegs nur lokale millimetergroße Querschnitte. [Linsenherstellung und Messung](ref:R01)\n\nGemessene Krümmungsradien der gedruckten und kommerziellen Einzellinse #1 betrugen 9.67 mm und 9.94 mm bei 1.6 mm zentralem Messdurchmesser; beide Rauheiten lagen unter 70 nm RMS. Der Text ordnet maximale sphärische Formfehler von 270 nm der gedruckten und 152 nm der kommerziellen Linse zu, während die Residuen in A, kommerziell, und B, gedruckt, umgekehrt erscheinen. Daraus wird hier keine präzise Rangfolge abgeleitet. Ähnliche Krümmung, geringe lokale Rauheit und gleiche Wellenfront über die gesamte Apertur sind verschiedene Aussagen. Gedruckte #3 im Mehrlinsenobjektiv erreichte 4.05 μm Formfehler, #4 dagegen 600 nm; Beschichtung wirkt somit nicht bei jeder Krümmung gleich. Schwache lateral versetzte Geisterbilder des USAF-Targets wurden einem effektiven Beugungsgitter durch innere Voxelmuster zugeschrieben. Glättung der Oberfläche entfernt diese innere Periodizität nicht automatisch.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Brechungsindex und Dezentrierung verändern das Objektiv selbst, nicht nur seine Materialkosten",
+          "markdown": "Verglichen wurden Einzellinse #1 mit +20 mm Brennweite und theoretischer NA 0.1 sowie ein Vierlinsenobjektiv aus +6 mm Asphäre #2, +10 mm Plankonvexlinse #3, −6 mm Plankonkavlinse #4 und +15 mm Plankonvexlinse #5. Nur #3 und/oder #4 wurden durch Druckteile ersetzt; #2 und #5 sowie die achromatische Tubuslinse blieben kommerziell. Dies ist kein vollständig gedrucktes Objektiv hoher NA. [Optikentwurf und Montagetoleranzen](ref:R01)\n\nKommerzielle #4 besteht aus N-SF11 mit Brechungsindex etwa 1.78, gegenüber ungefähr 1.51 beim Druckharz. Gleiche Oberflächengeometrie erhält daher nicht die Brechkraft: Die theoretische NA des Vierlinsensystems sinkt von kommerziell 0.35 auf 0.29 in der Druckkombination. Mit vollständig kommerziellen Elementen oder nur gedruckter #4 beträgt die Vergrößerung etwa 47×, mit gedruckter #3 und #4 etwa 50×. Die Autoren nennen Indexunterschiede und axiale Abstandsfehler als gemeinsame Ursachen. Einige Vergleichsbilder wurden skaliert; Darstellungsgröße belegt deshalb keine native Vergrößerung. Raytracing sagte deutliche Verschlechterung bei lateraler Verschiebung über 50 μm voraus. Gedruckte Abstandsringe, Fasen und Halteringe dienen somit der Zentrierung. Die Einzellinse verwendet eine 8 mm Blende, das Vierlinsensystem eine 2 mm Blende. Aperturbegrenzung reduziert Aberrationen, verändert aber zugleich Lichtdurchsatz und NA.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Hellfeldlinien und Fluoreszenz-Punktantworten zeigen unterschiedlich starke Verschlechterungen",
+          "markdown": "Bei ungefähr 8× und 1.4×0.9 mm Bildfeld löst die gedruckte Einzellinse USAF-Gruppe 6-6 auf, laut Autoren etwa 6 μm; die kommerzielle Linse erreicht Gruppe 7-1, etwa 4.5 μm. Vierlinsenobjektive erkennen die feinsten Linienpaare des Targets, woraus die Autoren eine Auflösung unter 2 μm angeben. Trotzdem werden Linien und Grenzen nach Austausch einer zweiten Linse unschärfer. Die kleinste Testgruppe belegt nur Leistung innerhalb dieses Targetbereichs, keine identische Modulationsübertragung oder Aberration aller Konfigurationen. [Hellfeld- und Fluoreszenzvergleich](ref:R01)\n\nMit 500 nm Fluoreszenzkugeln, 488 nm Anregung, 100 ms Belichtung und ohne Pixel-Binning beträgt die angegebene Fluoreszenzauflösung kommerzieller/gedruckter Einzellinsen 3.0/5.5 μm. Vollständig kommerzielle Vierlinsenoptik, nur gedruckte #4 und gemeinsam gedruckte #3/#4 ergeben 0.93, 1.1 und 1.4 μm. Die zunehmende Verschlechterung durch zusätzliche gedruckte Sammeloptik wird durch die Aussage „alles unter 2 μm“ verdeckt. Anregung an der Probe beträgt 500 μW bei der Einzellinse und bis 5 mW beim Vierlinsensystem; Helligkeit zwischen Konfigurationen misst daher keine Sammeleffizienz bei gleicher Leistung. Harzhintergrund ist wellenlängenabhängig: Autofluoreszenz bei 525 nm Anregung ist ungefähr 30-fach schwächer als bei 455 nm. Sichtbare Transparenz belegt keine Eignung für jedes Fluoreszenzband. Endliche Kugelgröße bedeutet außerdem, dass die Antwortbreiten keine unabhängig gemessenen reinen optischen PSFs unendlich kleiner Quellen sind.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "Gedrucktes Objektiv und Kondensor benötigen weiterhin digitale Farbfehlerkorrektur",
+          "markdown": "Christopher et al. integrierten 2025 gedrucktes Objektiv und Kondensor in einen OpenFlexure-Rahmen. Das Objektiv besitzt konstruktiv 12.7 mm Durchmesser und 20 mm Brennweite, der Kondensor denselben Durchmesser und 35 mm Brennweite; die Druckschichten sind 10 μm hoch. Eine kommerzielle Thorlabs CS165CU(/M)-Kamera sitzt 50 mm vom Objektiv entfernt und ist nicht direkt mit dessen Tubus gekoppelt. Die Weißlicht-LED befindet sich etwa 30 mm vom Kondensor entfernt. Relative Ausrichtung von Beleuchtung und Detektion bleibt deshalb eine Bildqualitätsgröße; druckbarer Rahmen und Linsen beseitigen Kamera- und Justagebedarf nicht. [Optische Gesamtvalidierung](ref:R02)\n\nRGB-Farbsäume wurden mit FIJI Correct 3D Drift korrigiert: Farbkanäle wurden getrennt, als Sequenz behandelt und ausschließlich in XY registriert. Danach ergibt USAF-Gruppe 6, Element 5 einen angegebenen Auflösungswert von 4.922 μm und leicht höheren Kontrast. Dies korrigiert weder axiale chromatische Aberration noch Feldkrümmung oder sämtliche höheren Abbildungsfehler. Aus dieser Auflösung berechnen die Autoren mit der Rayleigh-Beziehung und angenommenen 550 nm eine NA≈0.07. Sie ist keine unabhängige NA-Messung, die dieselbe Auflösung nochmals validieren könnte. Ein Objektmikrometer ergibt 2.90× effektive Vergrößerung und etwa 1.7 mm Bildfeld; die Beleuchtung fällt zum Rand des Messbereichs um ungefähr 24%. Hauptmarken mit 100 μm Abstand und erkennbare kleinere 50 μm Intervalle betreffen verschiedene Teilungen, keine widersprüchlichen Vergrößerungen.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Replizierte Beleuchtungsarrays vermeiden direkt gedruckte Volumengitter, behalten aber Krümmungsfehler",
+          "markdown": "Christopher et al. setzten 2026 ein angepasstes Mikrolinsenarray in den Anregungsweg. Kommerzielles ML-1 besitzt 250 μm Linsenelemente und 7.5 mm Brennweite, kommerzielles ML-2 Elemente von 1×1.4 mm und 4.7 mm Brennweite. Wabenarray ML-3 hat 1.2 mm Teilung und konstruktiv 5 mm Brennweite. Für ML-3 wird ein Master mit 22 μm Pixeln und 10 μm Schichten gedruckt, beschichtet, in Silikon abgeformt und mit transparentem Harz repliziert. Das verwendete optische Element ist somit eine Replik eines gedruckten Masters und keine direkt gedruckte Linse mit ursprünglichem Schichtvolumen. [Arrayfertigung und Oberflächenvergleich](ref:R03)\n\nDie Position im Strahlengang ist wesentlich: Zur Sammlung dient weiterhin ein kommerzielles 60×-Ölobjektiv mit NA 1.42; das druckbasierte Bauteil erzeugt Mehrpunktbeleuchtung. ML-3 ist auf 3 mm Krümmungsradius ausgelegt; 3 zufällig ausgewählte Linsenelemente ergeben 2.46±0.13 mm. Nachbearbeitung kann also Glätte bewahren und dennoch Krümmung verändern. Eine Maske mit 1 mm freien Öffnungen unterdrückt Randstreuung auf Kosten eines Teils des Lichts. Tabellenwerte von 59%, 48% und 83% für ML-1/ML-2/ML-3 beruhen auf derselben geometrischen Berechnung der Autoren. Der nominelle Herstellerfüllfaktor von ML-1 beträgt dagegen 100%, und kommerzielle Arrays benötigen keine reale Maske. Diese Werte dürfen nicht als gemessene Transmission rangiert werden. Die Wabenteilung ist kleiner als beim rechteckigen Array, aber größer als bei ML-1; das engmaschige kommerzielle Array benötigt weniger Scanpositionen.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Reassignment verengt Kugelantworten, beseitigt aber weder Inhomogenität noch Aufnahmeaufwand",
+          "markdown": "Das mSIM-System verwendet 488 nm Laser, MEMS-Scanning und ein kommerzielles Objektiv hoher NA. Weitfeld, Maximumintensitätsprojektion des Laserscans und mSIM-Reassignment wurden an 175 nm Standardkugeln verglichen, bei 5 ms Belichtung und Analog-/Digitalverstärkung 10/1. Für 5 zufällig ausgewählte Kugeln je Array ändern sich mittlere FWHM ohne Dekonvolution vom Laserscan zu mSIM wie folgt: ML-1: 235±7→166±7 nm; ML-2: 247±13→186±6 nm; ML-3: 246±7→178±9 nm. Die Replik des gedruckten Masters ermöglicht eine deutliche Verengung, ist aber numerisch nicht besser als das hochwertige kommerzielle Array; ein formaler Äquivalenztest fehlt. [Standardkugelversuch](ref:R03)\n\nDie Verarbeitung lokalisiert Lichtpunkte anhand eines homogen fluoreszierenden Referenzobjektträgers, führt lokale Gaussian-Faltung und Pixel-Reassignment durch. Die Verengung kann daher nicht allein Linsenoberflächen zugeschrieben werden. Kugelergebnisse verzichten auf Dekonvolution und sind von anderen Ergebnissen mit 5 Richardson–Lucy-Iterationen zu trennen. Anregungsleistung wurde je Array für vergleichbares Signal-Hintergrund-Verhältnis angepasst; ähnliche Bilder belegen keinen gleichen Lichtdurchsatz. Der Artikel beschreibt zudem Helligkeitsstreifen bei dünner besetzter ML-2- und ML-3-Beleuchtung, mit Resten nach Flat-Field-Korrektur. Längere Scans ohne Autofokus verursachen axiale Drift. Auflösungsgewinn verlangt damit zusätzliche Aufnahmepositionen, Berechnung und Stabilität; die kleinste einzelne FWHM beschreibt keine Homogenität über das gesamte Bildfeld.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Christopher et al.: sphärische Fitresiduen sind keine Oberflächenrauheit",
+          "interpretation": "A/B zeigen kommerzielle/gedruckte #1, C/D gedruckte #3/#4. Oberhalb der Residuen stehen Profile und Kugelfits; horizontal gilt mm, vertikal μm. C besitzt deutlich größere mikrometergroße Abweichungen. A/B-Amplituden passen nicht zur Textzuordnung von 152/270 nm; das Original bleibt ohne eigenständigen Etikettentausch erhalten. Unterschiedliche Achsenskalierung verhindert außerdem einen visuellen Höhenvergleich als Rauheitsbewertung. [Originalprofile](ref:R01)"
+        },
+        "F02": {
+          "caption": "Christopher et al.: Linsenkombination und Blenden bestimmen die Objektivleistung",
+          "interpretation": "A zeigt Einzellinse #1 mit 8 mm Blende, B die Kombination #2–#5 mit 2 mm Blende sowie Raytracing und theoretische MTF. Untere Schnitte zeigen, wie gedruckte Halter Abstände und Zentrierung bestimmen. Theoriekurven ersetzen keine gemessene PSF; außerdem werden nur einige Elemente des Vierlinsenobjektivs gedruckt ersetzt. [Originalobjektiventwurf](ref:R01)"
+        },
+        "F03": {
+          "caption": "Christopher et al.: Farbregistrierung erhöht Linienkontrast innerhalb der ursprünglichen Auflösungsgrenze",
+          "interpretation": "A/B vergleichen Rohbild und Farbkorrektur desselben Targets; gelbe Rahmen markieren Vergrößerungen, C überlagert Grauwertprofile. Die blaue korrigierte Kurve verbessert einzelne Maxima und Minima, ohne sämtliche feinen Linien aufzulösen. Erhaltene Maßstäbe von 250 μm und 50 μm machen den Bereich nachvollziehbar. Laterale Kanalverschiebung belegt keine Beseitigung axialer chromatischer Aberration. [Originalfarbkorrektur](ref:R02)"
+        },
+        "F04": {
+          "caption": "Christopher et al.: erkennbare Teilungsmaxima belegen keine homogene Beleuchtung",
+          "interpretation": "Die gelbe Linie in A definiert den Messweg in B. Dort steht Abstand in μm gegen 8-bit-Intensität. Maxima und Minima bleiben erkennbar, während ihre Hüllkurve nach rechts abfällt und einen systematischen Helligkeitsgradienten zeigt. Die Autoren beziffern ihn auf ungefähr 24%. Lokale Unregelmäßigkeiten bleiben sichtbar; eine einzelne Linie ist keine vollständige räumliche Homogenitäts- oder Verzeichnungskarte. [Originalobjektmikrometerbild](ref:R02)"
+        },
+        "F05": {
+          "caption": "Christopher et al.: Wabenarrays verändern Packung und Herstellungsweg gemeinsam",
+          "interpretation": "a/b vergleichen quadratisches ML-1, rechteckiges ML-2 und wabenförmiges ML-3; c trennt gedruckten Master, Form und fertiges Array. d/e/f zeigen Profile, Kugelfits und Residuen. Die ML-1-Messstrecke ist in μm angegeben; wegen seiner kleineren Elemente werden keine identischen Bereiche erfasst. ML-3-Randresiduen steigen an und begründen das Blockieren der Randbeleuchtung. Ähnliche Oberflächen belegen weder gleiche Brennweite noch gleichen Lichtdurchsatz. [Originalarrayvergleich](ref:R03)"
+        },
+        "F06": {
+          "caption": "Christopher et al.: Standardkugeln vergleichen Reassignment-Gewinne der Arrays",
+          "interpretation": "a/b/c stehen für ML-1/ML-2/ML-3, jeweils mit WF, LS und mSIM. Rechts verengen sich normierte Profile von LS zu mSIM um 235→166, 247→186 beziehungsweise 246→178 nm. Maßstäbe für Gesamtfeld und Ausschnitt sind 10 μm und 500 nm. Normierung verdeckt absolute Lichtunterschiede und erlaubt keinen direkten Transmissionseffizienzvergleich. Diese Kugelergebnisse verwenden keine Dekonvolution. [Originalkugelvergleich](ref:R03)"
+        }
+      }
+    }
+  }
+}

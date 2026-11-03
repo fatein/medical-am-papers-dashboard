@@ -1,0 +1,340 @@
+{
+  "schema_version": 2,
+  "question_id": "P7-101",
+  "p": "P7",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_dba3581682379feae89c"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "PLA 3D Printing as a Straightforward and Versatile Fabrication Method for PDMS Molds",
+      "publisher": "Polymers",
+      "year": 2023,
+      "url": "https://doi.org/10.3390/polym15061498",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "PDMS Curing Inhibition on 3D-Printed Molds: Why? Also, How to Avoid It?",
+      "publisher": "Analytical Chemistry",
+      "year": 2021,
+      "url": "https://doi.org/10.1021/acs.analchem.0c04944",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Picoliter Droplet Generation and Dense Bead-in-Droplet Encapsulation via Microfluidic Devices Fabricated via 3D Printed Molds",
+      "publisher": "Micromachines",
+      "year": 2022,
+      "url": "https://doi.org/10.3390/mi13111946",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "On the Effects of 3D Printed Mold Material, Curing Temperature, and Duration on Polydimethylsiloxane (PDMS) Curing Characteristics for Lab-on-a-Chip Applications",
+      "publisher": "Micromachines",
+      "year": 2025,
+      "url": "https://doi.org/10.3390/mi16060684",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-101/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10059908/#polymers-15-01498-f002",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-101/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10059908/#polymers-15-01498-f003",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R04",
+      "original_label": "Figure 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-101/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12195046/#micromachines-16-00684-f004",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R04",
+      "original_label": "Figure 5",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-101/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12195046/#micromachines-16-00684-f005",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Figure 1",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-101/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9695966/#micromachines-13-01946-f001",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R03",
+      "original_label": "Figure 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-101/F06.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9695966/#micromachines-13-01946-f002",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "打印模具如何支持微流控芯片复制制造？",
+      "direction": "微流控芯片",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "PLA 模具验证的是毫米级腔体，而非任意微通道",
+          "markdown": "van der Borg 等使用 Wanhao Duplicator 4、1.75 mm PLA 丝材，在喷嘴 190 °C、热床 60 °C、0.1 mm 层厚和 10 mm/s 下打印双件模具。内件直径 17.5 mm、外环直径 20 mm，复制后修整成高 3 mm 的 PDMS 环；分件结构和定位柱用于装配、浇注及脱模。这个设计避免将复杂脱模问题交给一体封闭模具，但样品是开放培养井，不是已经验证的高密度微流道网络。[PLA 母模与复制件](ref:R01)\n\n未平滑模具复制的 PDMS 表面有明显层纹，脱模困难，且不能与玻璃形成水密封。作者采用氯仿蒸气每次 30 s、通常 4 次、间隔 1 min 的平滑处理，之后通风放置至少 1 h、真空干燥过夜。Sylgard 184 在 60 °C 固化至少 4 h，再对 PDMS 与玻璃进行 1 min 氧等离子体处理。平滑改善了密封接触面，却也降低尖角和细小特征的保真度；论文讨论给出的典型 XY 最小结构约 0.5 mm，平滑后还可能更差。因此该实验证实的是适合培养环尺度的复制与连接，不支持用“0.1 mm 层厚”宣称各方向均可复制同样大小的通道。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "复制后的密封与细胞实验检验不同失败途径",
+          "markdown": "该 PDMS 环与直径 27 mm 玻璃盖片结合后，装入 800 μL PBS，在室温静置 72 h，通常未见泄漏。这是静置液体保持试验，未施加可量化压差，也没有循环弯折或多次高温灭菌；不能由此推出高压微流控封接性能。PLA 不抑制本次 PDMS 固化，也不等于平滑用溶剂、商业丝材添加物或反复脱模不会影响其他实验。[培养井验证](ref:R01)\n\n研究将人单核细胞来源树突细胞 moDCs 放在普通盖片或 PDMS 井中培养过夜，以 actin 和 DAPI 图像比较面积及周长。数据来自 3 名健康供者，盖片与井各计 36 和 38 个细胞；原文按细胞点使用非配对双侧 t 检验，α=0.05，未见显著差异。细胞数不能当成相同数量的独立供者，也没有正式等效检验。另以 150000 个细胞、500 μL 培养液、1 μg/mL LPS 过夜刺激作为阳性条件，TNF 与 IL-6 明显高于未刺激组。它说明该培养体系可保留炎症响应、未刺激组没有明显基线激活；并非对所有浸出物做了化学定量，也不是所有细胞类型的通用无毒性证明。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "树脂表面能脱模与 PDMS 能固化是两个问题",
+          "markdown": "Venzac 等以高 400 μm 的阶梯和梳齿评价复制；齿宽 190–500 μm，对应高宽比 2.1–0.8。未处理 industrial red 模具上 PDMS 可完全不固化；只加热 120 °C、1 h 后仍可能出现台阶破坏或强粘附，而 1 h UV 再加 1 h 热处理能得到完整复制。其“表观台阶宽度”由显微灰度过渡测量，成功标准为低于 50 μm 并复制最细齿；这不是母模尺寸误差小于 50 μm 的通用精度认证。[固化抑制的机制实验](ref:R02)\n\n16 种树脂并非全部直接在同一打印机上打印：作者先从打印件复制 PDMS 反模，再浇注其他树脂以统一测试结构。Table 1 显示 industrial red 可用 405 nm、14 mW/cm² 的 UV 15 min 加 120 °C 2 h，或相同 UV 加 60 °C 48 h；Formlabs clear 在测试中可仅用 120 °C 1 h。配方、阴影和细长结构改变处理要求，不能把一个配方作为全部树脂的标准。添加实验进一步区分机制：BAPO、TPO-L 类含磷引发剂及其挥发冷凝物抑制 Pt 催化固化，甲基丙烯酸甲酯则更突出地增加粘附。光热处理同时减少可浸出小分子、形成较大且不易迁移的物种；“已经硬化的打印件”仍可能向 PDMS 释放抑制物。",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "相同固化比例不保证相同力学性质",
+          "markdown": "Mercimek 等使用 Sylgard 186、基料与固化剂 10:1，对 PLA、PET、Grey Resin v4 和 Aluminum 7075 模具比较 55、65、75 °C 及 2、6、12 h。试样为高 1.92 mm、宽 10.4 mm、长 16 mm 的简化腔体，壁底厚均 1 mm；并未在这一实验中比较微通道网络的流动性能。树脂先 IPA 清洗 30 min、405 nm 后固化 50 min，所以其结果也不是未经处理树脂的固化表现。[模具材料与固化条件](ref:R04)\n\nSoxhlet 萃取显示，55 °C、2 h 的固化比例较低，延长时间或升温后各模具接近；但 AFM 局部模量依赖条件，在较长固化时间下，铝、PLA、PET 的 65 °C 组高于对应 75 °C 组，不能简单写成温度越高越硬。模量数值还有明显来源矛盾：摘要称铝约 1.84 MPa、PLA 1.23 MPa、PET 1.17 MPa，而 Figure 4 的纵轴标 MPa，多个柱位于约 10–18 MPa。缺少可确认的单位校正，本文不选其中一组作为精确材料设计值。AFM 拟合又采用泊松比 1/3 和 Hertz 近似，反映的是局部压入响应，不是整块通道壁的拉伸或承压验证；36 个材料—温度—时间组合也不等于每条件 36 个重复。",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "SLA 复制流程要把成品通道筛查算进去",
+          "markdown": "Anyaduba 等将设计为 100×100 μm 的流动聚焦结构打印为 Form3 Clear FLGPCL04 母模，入口出口设计直径 750 μm。模型以 45° 倾角布置、25 μm 层厚打印，IPA 清洗后 UV 处理 30 min。约 3 g、10:1 的 Sylgard 184 在浇注前后两次脱气，65 °C 固化 45 min；剥离后对玻璃与 PDMS 火焰活化连接，再于 85 °C 放置过夜。打印机只制造母模，工作芯片的流道表面仍是 PDMS。[母模到芯片的工艺](ref:R03)\n\n连接强度以轻撬作检查，通道宽度以显微照片筛选，只接受设计值 ±10% 的样品，然后插管并以环氧固定。因此后续液滴性能建立在筛查后的芯片上，不代表所有打印件都自动达到该公差；论文没有给出全批成品率或定量剥离强度。补充材料还列出层纹、圆化顶点、未完全固化、重复使用后 PDMS 堆积及清洗不足导致的毛玻璃外观。模具能够重复浇注和重复使用多少次仍保持尺寸，是不同的验证问题。与前述 PLA 平滑相比，这里的目标是保留 100 μm 流道边缘，不能未经验证就加入会钝化细节的相同溶剂处理。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "液滴功能展示了复制结构的有效性，也暴露分散度取舍",
+          "markdown": "复制芯片在水相固定 1 μL/min、油相 25、50、75、100 μL/min 下形成约 45–112 μm 液滴，对应约 48–736 pL。油相为矿物油、0.1 wt% Triton X-100、3 wt% ABIL EM 90。直径 CV 随油流依次为 2%、3%、6%、12%；最小液滴伴随更高分散度，不能将最低体积与最低 CV 合并成一个性能。100 μm 通道能够产生小于自身宽度的液滴，依赖流动聚焦和两相条件，并不意味着母模实际打印出了 45 μm 通道。[液滴尺寸与分散度](ref:R03)\n\n研究另在 75 μL/min 油流、1 μL/min 水流下分隔含 L. acidophilus DNA 的 LAMP 体系，收集后 68 °C 孵育 60 min，再用共聚焦显微镜判读。靶标是 16S rRNA 基因的 DNA，不是直接 RNA 检测；阳性阈值采用阴性滴均值加 3 SD。与 Poisson 预测吻合时，模型假设 10% 扩增效率和 300 pL 液滴体积，不能改写为未校正的绝对定量准确度。该 300 pL 假设与纯水尺寸扫描也不能直接互换，因为反应配方不同。原图说明复制芯片能支持分隔与离片反应，没有证明培养、温控、成像和分选均已集成在打印模具所复制的同一器件内。",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "van der Borg et al.：分件 PLA 模具与 PDMS 培养环",
+          "interpretation": "A、B 为平滑后的外、内模，C 为组装，D 为 PDMS 环与玻璃。27、33、5 mm 等标注显示毫米级装配关系，不能当作微通道尺寸精度；照片也未提供多次复制后的尺寸漂移。D 的密封性能来自后续 PBS 静置试验，而不是仅凭外观透明判定。[模具原图](ref:R01)"
+        },
+        "F02": {
+          "caption": "van der Borg et al.：细胞形态的点分布与供者数量",
+          "interpretation": "左侧比较盖片与培养井中 actin、DAPI 及合并图，右侧为面积 μm² 和周长 μm。橙点与绿点各表示测量的细胞，横线和误差显示均值与 SEM；不是每个点都来自独立供者。分布重叠支持未见明显形态偏移，但不能替代细胞活率、化学残留和长期重复培养检测。[形态实验](ref:R01)"
+        },
+        "F03": {
+          "caption": "Mercimek et al.：温度、时间与模具共同影响局部模量",
+          "interpretation": "a、b、c 为 55、65、75 °C，柱色为 2、6、12 h，组别为 Resin、Al、PLA、PET。多个长时间组在 65 °C 高于 75 °C，趋势不单调。纵轴标 MPa、刻度至约 20，与摘要约 1–2 MPa 不一致；保留完整原轴，不能自行把图缩小一个数量级后宣称已核准。[AFM 模量](ref:R04)"
+        },
+        "F04": {
+          "caption": "Mercimek et al.：固化质量比例与局部模量并不等同",
+          "interpretation": "a、b、c 为 2、6、12 h，每个温度内以颜色区分 PET、PLA、Resin、Al。纵轴为 Soxhlet 后保留质量计算的固化百分比；55 °C 短时组较低，延长后趋近其他组。其差异幅度远小于模量图的组间变化，支持将固化程度和力学响应分开评价，不能把接近的百分比当成相同复制件性能。[萃取实验](ref:R04)"
+        },
+        "F05": {
+          "caption": "Anyaduba et al.：打印的是母模，流体接触的是复制 PDMS",
+          "interpretation": "A 给出 60×25 mm 母模及 100×100 μm 通道设计，B 展示浇注、65 °C 45 min 固化、剥离和连接。示意图未显示全部质量筛选和过夜硬化步骤，不能将其中一次固化时间当成完整制造周期。成品功能还依赖脱模后通道宽度和封接检查。[复制流程](ref:R03)"
+        },
+        "F06": {
+          "caption": "Anyaduba et al.：最小液滴的 CV 反而较高",
+          "interpretation": "A 展示不同油流下回收液滴，B 叠列直径分布并标注 25、50、75、100 μL/min 对应 CV 2%、3%、6%、12%；C 同时绘制直径与体积。较快油流使液滴缩小，但分布更宽，且体积来自图像直径的球体换算。此图验证功能窗口，不是重复使用母模后的批间尺寸一致性实验。[液滴表征](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do printed molds support replication of microfluidic chips?",
+      "direction": "Microfluidic chips",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "PLA molds validate millimetre-scale chambers rather than arbitrary microchannels",
+          "markdown": "van der Borg et al. used a Wanhao Duplicator 4 and 1.75 mm PLA filament at a 190 °C nozzle, 60 °C bed, 0.1 mm layers and 10 mm/s to print a two-part mold. The inner element was 17.5 mm in diameter and the outer ring 20 mm; the replicated PDMS ring was trimmed to 3 mm height. Separate parts and alignment posts supported assembly, pouring and demolding. This avoided imposing complex release on a closed monolithic mold, but the product was an open culture well rather than a validated dense microchannel network. [PLA master and replica](ref:R01)\n\nPDMS from unsmoothed molds retained layer ridges, was difficult to release and could not seal watertight to glass. The authors applied chloroform vapour for 30 s per treatment, usually 4 treatments separated by 1 min, followed by at least 1 h ventilation and overnight vacuum drying. Sylgard 184 cured at 60 °C for at least 4 h, followed by 1 min oxygen plasma on PDMS and glass. Smoothing improved sealing surfaces but reduced fidelity of corners and small features. The discussion gives a typical minimum XY feature near 0.5 mm, potentially worse after smoothing. This validates replication and bonding at culture-ring scale; a 0.1 mm layer thickness does not establish channels of that size in every direction.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Sealing and cell assays test different failure mechanisms after replication",
+          "markdown": "After bonding the PDMS ring to a 27 mm glass coverslip, the well held 800 μL PBS at room temperature for 72 h, typically without leakage. This is a static liquid-retention test, without quantified pressure differential, cyclic bending or repeated high-temperature sterilisation. It does not establish high-pressure microfluidic bonding. Lack of PLA-induced inhibition in this PDMS experiment also does not exclude effects from smoothing solvent, commercial-filament additives or repeated demolding in other assays. [Culture-well validation](ref:R01)\n\nHuman monocyte-derived dendritic cells, moDCs, were cultured overnight on ordinary coverslips or in PDMS wells. Actin and DAPI images were used to compare area and perimeter. Data came from 3 healthy donors, with 36 and 38 cells measured on coverslips and in wells respectively. The authors applied an unpaired two-tailed t-test to cell-level data at α=0.05 and found no significant difference. Cell counts are not equivalent numbers of independent donors, and no formal equivalence test was performed. A positive condition used 150000 cells in 500 μL medium, stimulated overnight with 1 μg/mL LPS; TNF and IL-6 exceeded unstimulated levels. This supports retained inflammatory responsiveness and little baseline activation in this culture system, not chemical quantification of every leachable or universal absence of toxicity across cell types.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Mold release and PDMS curing are distinct requirements",
+          "markdown": "Venzac et al. assessed replication with 400 μm-high steps and comb teeth, 190–500 μm wide, giving height-to-width ratios of 2.1–0.8. PDMS could remain completely uncured on untreated industrial red molds. Heating alone at 120 °C for 1 h still produced damaged steps or strong adhesion, whereas 1 h UV followed by 1 h heating produced intact replicas. Their apparent step width came from microscopy greyscale transitions; success required less than 50 μm and replication of the finest tooth. This is not a general certification of mold dimensional error below 50 μm. [Mechanistic curing-inhibition experiments](ref:R02)\n\nThe 16 resins were not all directly printed on the same machine. Printed parts first generated PDMS countermolds, into which other resins were cast to standardise test geometry. Table 1 gives industrial red treatments of 405 nm, 14 mW/cm² UV for 15 min plus 120 °C for 2 h, or the same UV plus 60 °C for 48 h. Tested Formlabs clear required only 120 °C for 1 h. Formulation, shadowing and slender structures change treatment requirements; one recipe cannot represent all resins. Spiking experiments further distinguished mechanisms: phosphorus-containing initiators BAPO and TPO-L and their volatile condensates inhibited Pt-catalysed curing, whereas methyl methacrylate primarily increased adhesion. Photothermal treatment both reduced leachable small molecules and formed larger, less mobile species. An already solid printed mold can therefore still release inhibitors into PDMS.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "Similar cured fractions do not ensure similar mechanics",
+          "markdown": "Mercimek et al. compared PLA, PET, Grey Resin v4 and Aluminum 7075 molds using Sylgard 186 at a 10:1 base-to-curing-agent ratio, with 55, 65 and 75 °C and 2, 6 and 12 h. Specimens were simplified chambers 1.92 mm high, 10.4 mm wide and 16 mm long, with 1 mm walls and floor. This experiment did not compare flow through microchannel networks. Resin molds underwent 30 min IPA cleaning and 50 min post-curing at 405 nm, so results do not describe untreated resin. [Mold materials and curing conditions](ref:R04)\n\nSoxhlet extraction showed lower cured fractions at 55 °C for 2 h and convergence across molds after longer or hotter curing. Local AFM modulus nevertheless depended on conditions: at longer times, aluminum, PLA and PET groups at 65 °C exceeded corresponding 75 °C groups. Higher temperature therefore cannot simply be equated with greater stiffness. Absolute modulus also has a substantial source discrepancy. The abstract gives approximately 1.84 MPa for aluminum, 1.23 MPa for PLA and 1.17 MPa for PET, whereas Figure 4 labels its axis MPa and places several bars near 10–18 MPa. Without a verified unit correction, neither set is selected as a precise design value. AFM fitting further used Poisson ratio 1/3 and a Hertz approximation, describing local indentation rather than whole-channel tensile or pressure validation. The 36 material–temperature–time combinations also do not mean 36 replicates per condition.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "SLA replication includes screening of the finished channels",
+          "markdown": "Anyaduba et al. printed a designed 100×100 μm flow-focusing structure as a Form3 Clear FLGPCL04 master, with 750 μm inlet/outlet ports. The model was oriented at 45° and printed in 25 μm layers, cleaned with IPA and UV-treated for 30 min. Approximately 3 g of 10:1 Sylgard 184 was degassed before and after pouring and cured at 65 °C for 45 min. After peeling, flame-activated glass and PDMS were bonded and held at 85 °C overnight. The printer manufactured the master; the operating chip's channel surfaces remained PDMS. [Master-to-chip workflow](ref:R03)\n\nBond strength was checked by gentle prying, and microscopy screened channel widths, accepting only specimens within ±10% of design before tubing insertion and epoxy fixation. Subsequent droplet performance therefore concerns screened devices, not automatic compliance of every print. The paper supplies neither whole-batch yield nor quantitative peel strength. Supplementary material also identifies layer imprints, rounded vertices, incomplete curing, PDMS buildup during reuse and frosted surfaces from inadequate cleaning. Reusability of a mold and a verified number of dimensionally stable reuse cycles are different claims. Compared with the PLA smoothing study, this process must preserve 100 μm channel edges; the same detail-blunting solvent treatment cannot be added without validation.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Droplet function validates replication while revealing a dispersion tradeoff",
+          "markdown": "Replicated chips produced approximately 45–112 μm droplets, equivalent to about 48–736 pL, at fixed aqueous flow of 1 μL/min and oil flows of 25, 50, 75 and 100 μL/min. Oil contained mineral oil, 0.1 wt% Triton X-100 and 3 wt% ABIL EM 90. Diameter CV increased with oil flow through 2%, 3%, 6% and 12%. The smallest droplets therefore accompanied greater dispersion; minimum volume and minimum CV cannot be combined into a single performance claim. A 100 μm channel can generate droplets narrower than itself through flow focusing and two-phase conditions, without implying that the master actually printed a 45 μm channel. [Droplet size and dispersion](ref:R03)\n\nThe study separately partitioned a LAMP mixture containing L. acidophilus DNA at 75 μL/min oil and 1 μL/min aqueous flow. Collected droplets were incubated at 68 °C for 60 min and read by confocal microscopy. The target was DNA of the 16S rRNA gene, not direct RNA detection. Positivity used the negative-droplet mean plus 3 SD. Agreement with Poisson predictions assumed 10% amplification efficiency and 300 pL droplet volume; this cannot be rewritten as uncorrected absolute quantification accuracy. That 300 pL assumption is also not interchangeable with the pure-water size scan because reaction formulation differs. The figures support compartmentalisation and off-chip reaction with replicated chips, not integration of culture, temperature control, imaging and sorting into the same mold-replicated device.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "van der Borg et al.: separate PLA mold parts and a PDMS culture ring",
+          "interpretation": "A and B show smoothed outer and inner molds, C their assembly, and D the PDMS ring on glass. Labels such as 27, 33 and 5 mm describe millimetre-scale assembly, not microchannel dimensional accuracy. Photographs also provide no dimensional drift across repeated casting. Sealing in D is supported by the later static PBS test, not transparency alone. [Original mold figure](ref:R01)"
+        },
+        "F02": {
+          "caption": "van der Borg et al.: cell-level morphology distributions and donor numbers",
+          "interpretation": "The left compares actin, DAPI and merged images on coverslips and in wells. The right plots area in μm² and perimeter in μm. Orange and green points represent measured cells, with mean and SEM indicators; each point is not an independent donor. Overlapping distributions support no evident morphological shift, but do not replace viability, chemical-residue or long-term repeated-culture testing. [Morphology experiment](ref:R01)"
+        },
+        "F03": {
+          "caption": "Mercimek et al.: temperature, duration and mold jointly affect local modulus",
+          "interpretation": "Panels a, b and c represent 55, 65 and 75 °C; colours denote 2, 6 and 12 h, grouped by Resin, Al, PLA and PET. Several longer-duration groups at 65 °C exceed those at 75 °C, giving nonmonotonic trends. The axis is labelled MPa and extends to approximately 20, inconsistent with roughly 1–2 MPa in the abstract. The original axis is retained; rescaling it by an order of magnitude would not constitute verified correction. [AFM modulus](ref:R04)"
+        },
+        "F04": {
+          "caption": "Mercimek et al.: cured mass fraction differs from local modulus",
+          "interpretation": "Panels a, b and c represent 2, 6 and 12 h. Within each temperature, colours identify PET, PLA, Resin and Al. The vertical axis is curing percentage calculated from mass retained after Soxhlet extraction. Short treatment at 55 °C gives lower values; longer treatment approaches other groups. Differences are much smaller than between-group changes in the modulus plot, supporting separate assessment of curing extent and mechanics rather than equating similar percentages with identical replica performance. [Extraction experiment](ref:R04)"
+        },
+        "F05": {
+          "caption": "Anyaduba et al.: the printed object is the master, while fluid contacts replicated PDMS",
+          "interpretation": "A gives the 60×25 mm master and 100×100 μm channel design. B shows pouring, curing at 65 °C for 45 min, peeling and bonding. The schematic omits complete quality screening and overnight hardening, so its single curing interval is not the full manufacturing cycle. Functional performance also depends on post-demolding channel-width and bond checks. [Replication workflow](ref:R03)"
+        },
+        "F06": {
+          "caption": "Anyaduba et al.: the smallest droplets have higher CV",
+          "interpretation": "A shows collected droplets at different oil flows. B overlays diameter distributions and labels CV values of 2%, 3%, 6% and 12% for 25, 50, 75 and 100 μL/min respectively. C plots diameter and volume together. Faster oil flow makes smaller but more dispersed droplets; volume is calculated from imaged diameter assuming spheres. The figure validates a functional window, not between-batch consistency after repeated mold reuse. [Droplet characterisation](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie unterstützen gedruckte Formen die Replikation mikrofluidischer Chips?",
+      "direction": "Mikrofluidische Chips",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "PLA-Formen validieren millimetergroße Kammern statt beliebiger Mikrokanäle",
+          "markdown": "van der Borg et al. verwendeten einen Wanhao Duplicator 4 mit 1.75 mm PLA-Filament bei 190 °C Düsen- und 60 °C Betttemperatur, 0.1 mm Schichten sowie 10 mm/s für eine zweiteilige Form. Das Innenteil hatte 17.5 mm Durchmesser, der Außenring 20 mm; der replizierte PDMS-Ring wurde auf 3 mm Höhe zugeschnitten. Getrennte Teile und Ausrichtungsstifte unterstützten Montage, Guss und Entformung. Dies vermied schwierige Entformung aus einer geschlossenen monolithischen Form; das Produkt war jedoch ein offenes Kulturgefäß, kein validiertes dichtes Mikrokanalnetz. [PLA-Master und Replikat](ref:R01)\n\nPDMS aus ungeglätteten Formen behielt Schichtrillen, ließ sich schwer lösen und dichtete nicht wasserdicht gegen Glas. Die Autoren behandelten mit Chloroformdampf jeweils 30 s, gewöhnlich 4-mal mit 1 min Abstand, gefolgt von mindestens 1 h Belüftung und Vakuumtrocknung über Nacht. Sylgard 184 härtete bei 60 °C für mindestens 4 h; PDMS und Glas wurden anschließend 1 min mit Sauerstoffplasma behandelt. Glätten verbesserte Dichtflächen, verringerte jedoch die Wiedergabetreue von Ecken und kleinen Strukturen. Die Diskussion nennt typische kleinste XY-Strukturen um 0.5 mm, nach Glätten möglicherweise größer. Validiert sind somit Replikation und Verbindung im Kulturgefäßmaßstab; 0.1 mm Schichtdicke belegt keine gleich großen Kanäle in sämtlichen Richtungen.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Dichtheit und Zelltests prüfen unterschiedliche Fehler nach der Replikation",
+          "markdown": "Nach Verbindung mit einem 27 mm Glasdeckglas hielt der PDMS-Ring 800 μL PBS bei Raumtemperatur für 72 h, gewöhnlich ohne Leckage. Dies ist eine statische Flüssigkeitsprüfung ohne quantifizierte Druckdifferenz, zyklische Biegung oder wiederholte Hochtemperatursterilisation. Hochdruckfestigkeit mikrofluidischer Verbindungen ist damit nicht belegt. Fehlende PLA-bedingte Aushärtungshemmung in diesem Versuch schließt zudem Effekte des Glättungslösemittels, kommerzieller Filamentzusätze oder wiederholter Entformung in anderen Tests nicht aus. [Validierung des Kulturgefäßes](ref:R01)\n\nHumane monozytenabgeleitete dendritische Zellen, moDCs, wurden über Nacht auf gewöhnlichen Deckgläsern oder in PDMS-Gefäßen kultiviert. Actin- und DAPI-Bilder dienten zum Vergleich von Fläche und Umfang. Daten stammten von 3 gesunden Spendern mit jeweils 36 beziehungsweise 38 gemessenen Zellen auf Deckglas und im Gefäß. Die Autoren verwendeten auf Zellebene einen ungepaarten zweiseitigen t-Test bei α=0.05 und fanden keinen signifikanten Unterschied. Zellzahlen sind keine gleich hohen Zahlen unabhängiger Spender; ein formaler Äquivalenztest fehlte. Als Positivbedingung wurden 150000 Zellen in 500 μL Medium über Nacht mit 1 μg/mL LPS stimuliert; TNF und IL-6 lagen über unstimulierten Werten. Dies stützt erhaltene Entzündungsantwort und geringe Basisaktivierung, keine chemische Quantifizierung sämtlicher auslaugbarer Stoffe oder allgemeine Toxizitätsfreiheit für alle Zelltypen.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Entformbarkeit und PDMS-Aushärtung sind getrennte Anforderungen",
+          "markdown": "Venzac et al. prüften Replikation anhand 400 μm hoher Stufen und Kammzähne mit 190–500 μm Breite, entsprechend Höhen-Breiten-Verhältnissen von 2.1–0.8. Auf unbehandelten industrial red Formen konnte PDMS vollständig ungehärtet bleiben. Alleiniges Erwärmen bei 120 °C für 1 h verursachte weiterhin beschädigte Stufen oder starke Haftung; 1 h UV gefolgt von 1 h Erwärmung lieferte intakte Replikate. Die scheinbare Stufenbreite wurde aus mikroskopischen Grauwertübergängen bestimmt. Erfolg verlangte weniger als 50 μm und Replikation des feinsten Zahns. Dies ist kein allgemeiner Nachweis von Formmaßfehlern unter 50 μm. [Mechanistische Versuche zur Aushärtungshemmung](ref:R02)\n\nDie 16 Harze wurden nicht sämtlich auf demselben Drucker direkt verarbeitet. Gedruckte Teile erzeugten zunächst PDMS-Gegenformen; andere Harze wurden darin gegossen, um Prüfgeometrien zu vereinheitlichen. Table 1 nennt für industrial red UV bei 405 nm und 14 mW/cm² für 15 min plus 120 °C für 2 h oder dieselbe UV-Behandlung plus 60 °C für 48 h. Geprüftes Formlabs clear benötigte nur 120 °C für 1 h. Rezeptur, Abschattung und schlanke Strukturen verändern Behandlungsanforderungen; ein Rezept gilt nicht für sämtliche Harze. Zusatzversuche trennten Mechanismen: Phosphorhaltige Initiatoren BAPO und TPO-L sowie ihre flüchtigen Kondensate hemmten Pt-katalysierte Aushärtung, während Methylmethacrylat vor allem Haftung erhöhte. Photothermische Behandlung reduzierte auslaugbare kleine Moleküle und bildete größere, weniger mobile Spezies. Auch eine bereits feste Druckform kann daher Hemmstoffe an PDMS abgeben.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "Ähnliche ausgehärtete Anteile gewährleisten keine gleiche Mechanik",
+          "markdown": "Mercimek et al. verglichen Formen aus PLA, PET, Grey Resin v4 und Aluminum 7075 mit Sylgard 186 bei einem Basis-Härter-Verhältnis von 10:1 sowie 55, 65 und 75 °C und 2, 6 beziehungsweise 12 h. Proben waren vereinfachte Kammern von 1.92 mm Höhe, 10.4 mm Breite und 16 mm Länge mit jeweils 1 mm Wand und Boden. Strömung in Mikrokanalnetzen wurde dabei nicht verglichen. Harzformen wurden 30 min mit IPA gereinigt und 50 min bei 405 nm nachgehärtet; die Ergebnisse betreffen somit kein unbehandeltes Harz. [Formmaterialien und Aushärtungsbedingungen](ref:R04)\n\nSoxhlet-Extraktion zeigte bei 55 °C für 2 h geringere ausgehärtete Anteile und Annäherung zwischen Formen nach längerer oder heißerer Härtung. Der lokale AFM-Modul blieb dennoch bedingungsabhängig: Bei längeren Zeiten lagen Aluminium-, PLA- und PET-Gruppen bei 65 °C über entsprechenden 75 °C Gruppen. Höhere Temperatur bedeutet daher nicht einfach höhere Steifigkeit. Für absolute Modulwerte besteht außerdem ein erheblicher Quellenwiderspruch. Der Abstract nennt etwa 1.84 MPa für Aluminium, 1.23 MPa für PLA und 1.17 MPa für PET, während Figure 4 ihre Achse als MPa beschriftet und mehrere Balken bei etwa 10–18 MPa zeigt. Ohne bestätigte Einheitenkorrektur wird keine Reihe als präziser Auslegungswert ausgewählt. Die AFM-Anpassung verwendete zudem Poissonzahl 1/3 und Hertz-Näherung und beschreibt lokale Eindrückung statt Zug- oder Druckvalidierung ganzer Kanalwände. Die 36 Material-Temperatur-Zeit-Kombinationen bedeuten auch keine 36 Wiederholungen je Bedingung.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "SLA-Replikation umfasst die Prüfung fertiger Kanäle",
+          "markdown": "Anyaduba et al. druckten eine geplante 100×100 μm Strömungsfokussierungsstruktur als Form3 Clear FLGPCL04 Master mit 750 μm Ein- und Auslässen. Das Modell wurde um 45° geneigt und in 25 μm Schichten gedruckt, mit IPA gereinigt und 30 min UV-behandelt. Etwa 3 g Sylgard 184 im Verhältnis 10:1 wurden vor und nach dem Eingießen entgast und bei 65 °C für 45 min gehärtet. Nach Ablösen wurden Glas und PDMS flammenaktiviert, verbunden und über Nacht bei 85 °C gehalten. Der Drucker fertigte den Master; die Kanaloberflächen des betriebenen Chips bestanden weiterhin aus PDMS. [Vom Master zum Chip](ref:R03)\n\nDie Verbindungsfestigkeit wurde durch vorsichtiges Hebeln geprüft. Mikroskopische Breitenkontrolle akzeptierte nur Proben innerhalb ±10% des Solls vor Einsetzen und Epoxidfixierung der Schläuche. Nachfolgende Tropfenleistung betrifft deshalb ausgewählte Chips, keine automatische Toleranzeinhaltung aller Drucke. Weder Gesamtausbeute einer Charge noch quantitative Schälfestigkeit werden angegeben. Ergänzungsmaterial nennt außerdem Schichtabdrücke, gerundete Ecken, unvollständige Härtung, PDMS-Ablagerungen bei Wiederverwendung und matte Oberflächen durch ungenügende Reinigung. Wiederverwendbarkeit und eine bestätigte Zahl maßhaltiger Wiederholungszyklen sind unterschiedliche Aussagen. Gegenüber der PLA-Glättungsstudie müssen hier 100 μm Kanalkanten erhalten bleiben; dieselbe detailschwächende Lösemittelbehandlung darf nicht ungeprüft ergänzt werden.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Tropfenfunktion validiert Replikation und zeigt zugleich einen Streuungszielkonflikt",
+          "markdown": "Replizierte Chips erzeugten etwa 45–112 μm Tropfen beziehungsweise 48–736 pL bei festem Wasserstrom von 1 μL/min und Ölströmen von 25, 50, 75 und 100 μL/min. Die Ölphase enthielt Mineralöl, 0.1 wt% Triton X-100 und 3 wt% ABIL EM 90. Der Durchmesser-CV stieg mit dem Ölstrom über 2%, 3%, 6% und 12%. Kleinste Tropfen gingen somit mit höherer Streuung einher; Mindestvolumen und niedrigster CV sind keine gemeinsame Leistung. Ein 100 μm Kanal kann durch Strömungsfokussierung und Zweiphasenbedingungen schmalere Tropfen erzeugen, ohne dass der Master tatsächlich einen 45 μm Kanal druckte. [Tropfengröße und Streuung](ref:R03)\n\nSeparat teilte die Studie eine LAMP-Mischung mit L.-acidophilus-DNA bei 75 μL/min Öl und 1 μL/min Wasserphase auf. Gesammelte Tropfen wurden bei 68 °C für 60 min inkubiert und konfokalmikroskopisch ausgewertet. Ziel war DNA des 16S-rRNA-Gens, keine direkte RNA-Detektion. Positivität wurde als Mittelwert negativer Tropfen plus 3 SD definiert. Übereinstimmung mit Poisson-Vorhersagen setzte 10% Amplifikationseffizienz und 300 pL Tropfenvolumen voraus; daraus folgt keine unkorrigierte absolute Quantifizierungsgenauigkeit. Die 300 pL Annahme ist wegen anderer Reaktionsrezeptur auch nicht mit der Größenreihe in reinem Wasser austauschbar. Gezeigt werden Kompartimentierung und Reaktion außerhalb des Chips mit replizierten Geräten, keine gemeinsame Integration von Kultur, Temperatursteuerung, Bildgebung und Sortierung in dasselbe formreplizierte Bauteil.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "van der Borg et al.: getrennte PLA-Formteile und PDMS-Kulturring",
+          "interpretation": "A und B zeigen geglättete Außen- und Innenformen, C ihre Montage, D den PDMS-Ring auf Glas. Angaben wie 27, 33 und 5 mm beschreiben millimetergroße Montagebeziehungen, keine Mikrokanal-Maßgenauigkeit. Die Fotos liefern auch keine Maßdrift bei wiederholtem Gießen. Dichtheit in D wird durch den späteren statischen PBS-Test gestützt, nicht allein durch Transparenz. [Originalabbildung der Form](ref:R01)"
+        },
+        "F02": {
+          "caption": "van der Borg et al.: Zellmorphologieverteilungen und Spenderzahl",
+          "interpretation": "Links werden Actin-, DAPI- und kombinierte Bilder auf Deckglas und im Gefäß verglichen, rechts Fläche in μm² und Umfang in μm. Orange und grüne Punkte sind gemessene Zellen mit Mittelwert- und SEM-Markierungen; nicht jeder Punkt entspricht einem unabhängigen Spender. Überlappende Verteilungen stützen fehlende deutliche Morphologieverschiebung, ersetzen aber keine Viabilitäts-, Reststoff- oder langfristigen Wiederholungskulturtests. [Morphologieversuch](ref:R01)"
+        },
+        "F03": {
+          "caption": "Mercimek et al.: Temperatur, Dauer und Form beeinflussen gemeinsam den lokalen Modul",
+          "interpretation": "a, b und c entsprechen 55, 65 und 75 °C; Farben stehen für 2, 6 und 12 h, gruppiert nach Resin, Al, PLA und PET. Mehrere Langzeitgruppen bei 65 °C liegen über 75 °C, der Verlauf ist nicht monoton. Die Achse ist als MPa beschriftet und reicht bis etwa 20, widersprüchlich zu rund 1–2 MPa im Abstract. Die Originalachse bleibt erhalten; eigenständige Skalierung um eine Größenordnung wäre keine bestätigte Korrektur. [AFM-Modul](ref:R04)"
+        },
+        "F04": {
+          "caption": "Mercimek et al.: ausgehärteter Massenanteil unterscheidet sich vom lokalen Modul",
+          "interpretation": "a, b und c stehen für 2, 6 und 12 h. Innerhalb jeder Temperatur kennzeichnen Farben PET, PLA, Resin und Al. Vertikal steht der aus verbleibender Masse nach Soxhlet-Extraktion berechnete Aushärtungsprozentsatz. Kurze Behandlung bei 55 °C liefert niedrigere Werte, längere Behandlung nähert sich anderen Gruppen. Unterschiede sind wesentlich kleiner als Gruppenänderungen im Moduldiagramm. Aushärtungsgrad und Mechanik sind deshalb getrennt zu bewerten; ähnliche Prozentsätze bedeuten keine identischen Replikateigenschaften. [Extraktionsversuch](ref:R04)"
+        },
+        "F05": {
+          "caption": "Anyaduba et al.: gedruckt wird der Master, Flüssigkeit berührt repliziertes PDMS",
+          "interpretation": "A zeigt den 60×25 mm Master und das 100×100 μm Kanaldesign. B zeigt Gießen, Aushärten bei 65 °C für 45 min, Ablösen und Verbinden. Die Skizze enthält nicht die gesamte Qualitätsauswahl und Härtung über Nacht. Ein einzelnes Härtungsintervall ist daher nicht der vollständige Herstellungszyklus. Funktion hängt auch von Kanalbreiten- und Verbindungsprüfung nach Entformung ab. [Replikationsablauf](ref:R03)"
+        },
+        "F06": {
+          "caption": "Anyaduba et al.: kleinste Tropfen besitzen höheren CV",
+          "interpretation": "A zeigt gesammelte Tropfen bei unterschiedlichen Ölströmen. B überlagert Durchmesserverteilungen und nennt CV von 2%, 3%, 6% und 12% für 25, 50, 75 beziehungsweise 100 μL/min. C stellt Durchmesser und Volumen gemeinsam dar. Schnellerer Ölstrom erzeugt kleinere, aber breiter verteilte Tropfen; Volumen wird aus dem Bilddurchmesser unter Kugelannahme berechnet. Validiert wird ein Funktionsfenster, keine Chargenkonsistenz nach wiederholter Formnutzung. [Tropfencharakterisierung](ref:R03)"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "schema_version": 2,
+  "question_id": "P7-105",
+  "p": "P7",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_75bb14e87a76804cc4e0"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Robotic microscopy for everyone: the OpenFlexure microscope",
+      "publisher": "Biomedical Optics Express",
+      "year": 2020,
+      "url": "https://doi.org/10.1364/BOE.385729",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "A one-piece 3D printed flexure translation stage for open-source microscopy",
+      "publisher": "Review of Scientific Instruments",
+      "year": 2016,
+      "url": "https://doi.org/10.1063/1.4941068",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Democratising “Microscopi”: a 3D printed automated XYZT fluorescence imaging system for teaching, outreach and fieldwork",
+      "publisher": "Wellcome Open Research",
+      "year": 2022,
+      "url": "https://doi.org/10.12688/wellcomeopenres.16536.2",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 1",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-105/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7249832/#g001",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R02",
+      "original_label": "Fig. 6",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-105/F02.png",
+      "source_url": "https://www.np.phy.cam.ac.uk/wp-content/uploads/sites/50/2024/06/RevSciInst16_3Dprintedmicroscope.pdf",
+      "license": "CC BY 3.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Fig. 8",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-105/F03.png",
+      "source_url": "https://www.np.phy.cam.ac.uk/wp-content/uploads/sites/50/2024/06/RevSciInst16_3Dprintedmicroscope.pdf",
+      "license": "CC BY 3.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R01",
+      "original_label": "Fig. 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-105/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7249832/#g002",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Fig. 1",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-105/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8968157/#f1",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "打印显微镜结构如何降低设备成本？",
+      "direction": "光学与显微成像",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "降本发生在机构与装配，而非把整台仪器变成塑料",
+          "markdown": "Collins 等的 OpenFlexure v6.0 将 XY 样品台、柔性铰链和驱动杠杆整合到打印主体，Z 驱动带动物镜、筒镜及相机组成的光学模块。结构无需逐个安装和对齐滑动轴承，镜片压入式安装又减少了独立镜架。高分辨率电动配置约 500 g、外形 15×15×20 cm，行程 12×12×4 mm；低载荷和有限行程是这个紧凑结构的边界，不能据此替代承载大型样品的所有金属台。[OpenFlexure 结构与成本](ref:R01)\n\n原文附录按发表时英国零售报价、1.30 USD/GBP 换算，给出 PLA 约 5 USD、Raspberry Pi 35 USD、相机 25 USD、筒镜 55 USD、RMS 物镜 50 USD、3 个电机合计约 5 USD、自制驱动板约 50 USD。按列项相加，高分辨率电动版约 230 USD（按散件分摊）或 251 USD（单台购买整包紧固件）；这是本文对原清单的求和，不是作者给出的销售价格。紧固件等共同硬件从批量分摊约 5 USD 变成单台约 26 USD，足以改变低端配置的成本比例。清单未计打印机、装配工时；初次装配约 3–4 h，熟练者约 1–2 h。廉价 webcam、无电机无微型计算机的最低配置与上述高分辨率配置不能共用一个性能标签。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "柔性铰链用材料形变换掉滑动面的加工要求",
+          "markdown": "Sharkey 等的早期机构把塑料的柔顺性用于可逆弯曲，避免要求打印件具有精磨滑轨表面。铰链厚 0.72 mm、长 1.5 mm、宽 4 mm，设计最大转角约 6°，弧形近似下最大应变约 0.024。这里的尺寸针对这一版本，早期行程 8×8×4 mm，不能与后续 12×12×4 mm 版本混写。四杆和平行四边形约束保持平台姿态，但运动轨迹仍有弧度，行程边缘的离焦需要 Z 调整。[柔性机构原始实验](ref:R02)\n\n主体约用 90 g 塑料，RepRapPro Ormerod 打印约 8 h，测试过的 Ultimaker 2 和 MakerBot 2 约 5 h。避免悬臂、通过桥接形成台面，使打印后不需清除复杂支撑；这减少加工步骤，却把可靠性转移到薄铰链、跨接和层间质量上。作者报告使用 6 个月未见正常约束机构铰链断裂，同时明确观察到过度弯折设计会断裂，并非无限循环寿命证明。后续 OpenFlexure 更换易老化橡皮筋、易磨损螺钉，使用润滑不锈钢螺钉和 Viton O-rings 后约运行 30000 次台面运动；差的打印或丝材仍有较早失效。局部可重印的维修优势有实验依据，但不能省略耗材和装配质量。[改进后的耐久性观察](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "s3",
+          "title": "纳米级步长与返回误差必须分开核算",
+          "markdown": "早期平台通过追踪固定在玻片上的 6 μm 乳胶球测量物镜—样品相对位置，快速记录达到 90 Hz；轴向测试将光路转过 90°，把 Z 漂移映射到相机横向坐标。非空调房间中的长时记录显示，Z 在约 5 d 内通常漂移不到 10 μm，但大位移后的横向蠕变更明显。原图右侧 Y 曲线可下降到约 −20 μm，不能只摘录摘要中的低漂移描述。另一张 Allan deviation 图在约 1 s 平均时间附近达到最低值，反映短时间稳定性，不代表数日内保持同样误差。[漂移及重复定位](ref:R02)\n\n电机微步也不是定位精度。按螺距与减速比预计为 78 nm，实际测得 67±6 nm，约为计算值的 86%，作者归因于驱动杠杆弹性。随机方向离开后回到起点的 RMS 误差，短程小于 1 μm，正文报告到 1 mm 位移时约 15 μm；原图的可见数据只延伸到约 500 μm、误差约 5.6 μm，不能把正文的更远点画成图上已有数据。始终从同一方向接近目标的回差补偿可以改善重复性。成本比较若只列“几十纳米步长”，便漏掉了大范围扫描后重新找到同一微小特征的实际误差。",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "保留商用光学件时，打印框架可以接近中心衍射极限",
+          "markdown": "OpenFlexure 的高质量模块使用消色差物镜和焦距 50 mm 的消色差筒镜，配 Sony IMX219、8 MP Raspberry Pi Camera V2。用白光、照明 NA 约 0.48 和 USAF 靶黑白边缘，作者对多行边缘对齐平均，再将强度开平方为振幅、求导得到 PSF；40×、NA 0.65 平场物镜所得半高全宽约 480 nm，接近中心区域的衍射极限。这是系统边缘响应测量，既不是打印层厚，也不是电机步距。[光学评估](ref:R01)\n\n该结果限于视场中央约 50%；边缘场曲与像差降低分辨率。视场 350×262 μm、物方采样约 100 nm/pixel，Bayer 的 2×2 像素块约对应 200 nm，不能将像素间距直接当成可分辨特征。作者建议拼接时利用中心区域，将边缘主要留作配准；这以采集与计算换取有效大视场。直边扫描给出的畸变低于 0.5% 还可能混入相机响应不均匀，原文将其作为上界。校正镜头阴影表能改善亮度均匀性，同时放大边缘噪声。故低价机架与高质量成像能够共存，但依赖购入光学件、采样和标定共同成立。",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "模块化扩展减少重复机架，但每种对比模式仍需对应器件",
+          "markdown": "透射模式将 LED 与聚光镜置于样品上方；落射模式增加侧向 LED、准直镜和可拆滤光块。更换分光镜、二向色镜、发射滤光片或偏振片，可共享主机架和定位台。这里打印的是定位与遮光结构，不是让所有波长都通过同一个廉价塑料元件获得相同性能。[照明模块](ref:R01)\n\n在材料观察中，40×、NA 0.65 干物镜、9 ms 采集和样品面约 20 μW 白光可观察 300 nm SiO2/Si 基底上的石墨烯薄片，所标薄片另经 Raman 确认为三层；光学照片本身并未证明任意单层的自动识别。偏振模式比较同一区域的 5CB 液晶明场与交叉偏振图像，在相同物镜下用 1.3 ms、约 250 μW 照明显示取向相关明暗。对比改变来自照明和偏振，而非机械分辨率提高。荧光模式还需相配的滤光片、LED 与遮光，文中长波段背景更高，不能把模块能够安装等同于各模式同样灵敏。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Microscopi 的较大机架换取可接近的光路和教学控制",
+          "markdown": "Wincott 等的修订版 Microscopi 使用 PLA 框架、有限共轭 160 mm DIN 物镜和折叠光路，基础配置低于 £300、荧光配置约 £400。外形底面 235×235 mm、高 250 mm、质量 1.5 kg，XY 各行程 3 mm、Z 行程 4 mm。相较紧凑 OpenFlexure，它的铰接上盖和样品台让使用者能够接近光学、电路与驱动结构；这是一种可操作性取舍，不是同配置同批次价格实验。[Microscopi 修订版](ref:R03)\n\n其 Z 方向以 M4 螺钉驱动打印滑块，XY 用电机推杆直接推柔性台；论文描述少量离焦和低回差，但未提供与前述 RMS 返回误差相同的定量曲线。8×8 LED 阵列可切换照明区域，伪相位图像取两幅斜照图像的归一化差，不能称为已定量恢复相位。成像演示涵盖 NA 0.12 的 4× 至 NA 0.65 的 40× 干物镜，但没有统一分辨率或弱信号检出限。系统以 Raspberry Pi 4 Model B 和 IMX219 相机完成本地处理、网页控制；基础板、物镜、电机、相机和装配仍需采购。原文预算所支持的是可自制的自动化教学仪器，未把失印、调试或长期更换件折算为全生命周期成本。",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Collins et al.：一体台面与可拆光学模块分担功能",
+          "interpretation": "图中 XY 台面位于物镜上方，右侧 Z actuator 连接下方光学模块；电机安装位是可选部件，底部电子盒也独立。它显示哪些安装和运动结构被打印整合，却没有把物镜、相机或电机的采购成本消除。照片不是打印尺寸或重复定位误差的测量。[结构原图](ref:R01)"
+        },
+        "F02": {
+          "caption": "Sharkey et al.：轴向稳定与横向蠕变并存",
+          "interpretation": "左图横轴约 0–20 d，红色 X 缓慢上升、蓝色 Y 下降；右图横轴约 0–5 d，绿色 Z 围绕起点波动，蓝色 Y 则明显下移。两幅记录的时间窗口不同，右侧较大的 Y 松弛与实验前大幅移动有关。原图注概称两周与一周，实际坐标范围并不一致；这里按坐标解释，不将不同记录拼成同一稳定性指标。[漂移原图](ref:R02)"
+        },
+        "F03": {
+          "caption": "Sharkey et al.：移动范围增大后返回误差上升",
+          "interpretation": "横轴为对数尺度移动半径 μm，纵轴为返回起点的 RMS 误差 μm。小半径红点低于 1 μm，较大半径点明显升高；插图是返回位置散点，短、长比例尺分别为 1 μm 和 4 μm。图中没有覆盖全部正文声称的最远测试范围，且微步大小不在这个纵轴上。它直接限定低价机构在重复访问同一点时的性能。[重复定位原图](ref:R02)"
+        },
+        "F04": {
+          "caption": "Collins et al.：共享成像链并不等于共享全部照明件",
+          "interpretation": "a 中 LED1、L1 从上方照亮样品，O1、L2 与 CAM 形成下方成像链；b 中 LED2、L3、F1、F2 组成侧向照明及滤光路径。图中镜片和滤片是安装到打印壳体中的独立光学件。换模式主要改变照明和滤光配置，机械主体保留；示意图本身没有给出各模式分辨率或透过率相同的证据。[光路原图](ref:R01)"
+        },
+        "F05": {
+          "caption": "Wincott et al.：打开结构以换取光路可接近性",
+          "interpretation": "爆炸图自上至下为照明模块、样品与柔性台、折叠光路及电子空间，底部明确标出钢底板。铰接盖和平台可打开，适合观察、调节和更换部件，但增加体积与装配接口。该图说明约 £300 的基础仪器仍包含非打印部件，不能将整机成本归结为 PLA 用量。[装配原图](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do printed microscope structures reduce instrument cost?",
+      "direction": "Optics and microscopy",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Savings concern mechanisms and assembly, rather than making every component plastic",
+          "markdown": "Collins et al.'s OpenFlexure v6.0 integrates the XY specimen stage, flexure hinges and actuator levers into a printed body. The Z actuator moves an optics module containing objective, tube lens and camera. Individual sliding bearings need no assembly or alignment, while push-fit lenses reduce separate mounts. The high-resolution motorised configuration weighs approximately 500 g, occupies 15×15×20 cm and travels 12×12×4 mm. Limited load capacity and travel bound this compact mechanism; it does not replace every metal stage carrying large specimens. [OpenFlexure construction and costs](ref:R01)\n\nThe appendix uses publication-time UK retail prices converted at 1.30 USD/GBP: approximately 5 USD for PLA, 35 USD for Raspberry Pi, 25 USD for the camera, 55 USD for the tube lens, 50 USD for an RMS objective, approximately 5 USD for 3 motors together and approximately 50 USD for the custom driver. Summing listed items gives approximately 230 USD for the high-resolution motorised version with apportioned hardware, or 251 USD when buying hardware packs for one unit. These are sums calculated here, not an author-quoted selling price. Common hardware rises from approximately 5 USD allocated in bulk to 26 USD for a one-off build, materially changing the lowest-cost configuration. Printer ownership and assembly labour are excluded; initial assembly takes approximately 3–4 h, versus 1–2 h for an experienced builder. The cheapest webcam configuration, without motors or microcomputer, cannot inherit the high-resolution configuration's performance label.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Flexures exchange sliding-surface machining requirements for controlled material deformation",
+          "markdown": "Sharkey et al.'s earlier mechanism uses reversible bending of compliant plastic, avoiding precision-ground printed slideways. Hinges are 0.72 mm thick, 1.5 mm long and 4 mm wide, with approximately 6° maximum rotation and an arc-model maximum strain near 0.024. These dimensions describe this version: its 8×8×4 mm travel must not be combined with the later 12×12×4 mm version. Four-bar and parallelogram constraints maintain orientation, but trajectories remain slightly curved and edge-of-travel defocus requires Z adjustment. [Original flexure experiments](ref:R02)\n\nThe body consumes approximately 90 g of plastic and takes about 8 h on a RepRapPro Ormerod, or 5 h on the tested Ultimaker 2 and MakerBot 2. Avoiding cantilevers and bridging the stage eliminates complex support removal. Manufacturing steps decrease, but reliability depends on thin hinges, bridges and interlayer quality. The authors observed no hinge fractures in normally constrained stages over 6 months, while explicitly reporting fractures in designs permitting excessive bending; this is not infinite-cycle fatigue validation. Later OpenFlexure development replaced perishable rubber bands and wearing screws. Lubricated stainless screws and Viton O-rings enabled approximately 30000 stage-motion cycles, while poor printing or filament caused earlier failures. Local reprinting has an experimentally supported maintenance benefit, but consumables and assembly quality remain relevant. [Improved durability observations](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "s3",
+          "title": "Nanometre steps and return-position error require separate accounting",
+          "markdown": "The early stage's objective–specimen relative position was measured by tracking 6 μm latex spheres fixed to a slide, with fast recording at 90 Hz. Rotating the optical path by 90° mapped Z drift into a lateral camera coordinate. Long records in a non-air-conditioned room showed typical Z drift below 10 μm over approximately 5 d, but lateral creep after large movements was more pronounced. The right-hand Y trace reaches approximately −20 μm; quoting only the abstract's low-drift description would hide this. A separate Allan-deviation plot reaches its minimum around 1 s averaging time, indicating short-term stability rather than the same error over days. [Drift and repositioning](ref:R02)\n\nMotor microsteps are also distinct from positioning accuracy. Thread pitch and gearing predict 78 nm; measured travel was 67±6 nm, approximately 86% of the calculation, attributed to actuator-lever elasticity. RMS error after a random-direction outward move and return was below 1 μm for short moves; the text reports approximately 15 μm after 1 mm displacement. Visible figure data extend only to approximately 500 μm, with approximately 5.6 μm error; the more distant textual point must not be presented as plotted data. Approaching targets from the same direction improves repeatability through backlash compensation. A cost comparison listing only steps of tens of nanometres misses the error in finding a small feature again after a large scan.",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Commercial optics let a printed frame approach the central diffraction limit",
+          "markdown": "The high-quality OpenFlexure module combines an achromatic objective, a 50 mm focal-length achromatic tube lens and the Sony IMX219 in an 8 MP Raspberry Pi Camera V2. With white light, illumination NA near 0.48 and a black–white USAF-target edge, the authors aligned and averaged image rows, converted intensity to amplitude by a square root, and differentiated to obtain a PSF. A 40×, NA 0.65 plan-corrected objective gave approximately 480 nm full width at half maximum, near the central diffraction limit. This is a system edge-response measurement, not print-layer thickness or motor step size. [Optical assessment](ref:R01)\n\nThe result applies to approximately the central 50% of the field; field curvature and aberrations reduce edge resolution. The 350×262 μm field corresponds to approximately 100 nm/pixel in object space. A Bayer 2×2 pixel block spans approximately 200 nm; pixel spacing is not the smallest resolvable feature. The authors favour stitching central regions and using edges mainly for registration, trading acquisition and computation for a larger useful field. Distortion below 0.5% from a scanned straight edge may include camera-response nonuniformity and is treated as an upper bound. Lens-shading-table correction improves brightness uniformity while amplifying edge noise. A low-cost frame can therefore support high-quality imaging through the joint contribution of purchased optics, sampling and calibration.",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "Modular contrast modes share the frame but still require suitable optical components",
+          "markdown": "Transmission places the LED and condenser above the specimen; epi-illumination adds a side LED, collimator and removable filter cube. Exchanging beamsplitters, dichroics, emission filters or polarisers allows the main frame and positioning stage to be shared. Printing supplies alignment and light shielding; it does not make one inexpensive plastic element equally effective at every wavelength. [Illumination modules](ref:R01)\n\nFor materials observation, a 40×, NA 0.65 dry objective, 9 ms acquisition and approximately 20 μW white illumination at the specimen imaged graphene flakes on 300 nm SiO2/Si. Raman measurements independently identified the highlighted flake as trilayer graphene; the photograph alone does not establish automatic identification of arbitrary monolayers. Polarisation imaging compared bright-field and crossed-polariser views of the same 5CB liquid-crystal region. With the same objective, 1.3 ms acquisition and approximately 250 μW illumination revealed orientation-dependent brightness. Contrast changed through illumination and polarisation, not improved mechanical resolution. Fluorescence additionally needs matched filters, LEDs and shielding; higher long-wavelength background in the paper means modular compatibility does not imply equal sensitivity in every mode.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Microscopi trades a larger frame for access to optics and teaching controls",
+          "markdown": "Wincott et al.'s revised Microscopi uses a PLA frame, finite-conjugate 160 mm DIN objectives and a folded optical path, with a basic configuration below £300 and fluorescence near £400. Its footprint is 235×235 mm, height 250 mm and mass 1.5 kg; XY travel is 3 mm per axis and Z travel 4 mm. Compared with compact OpenFlexure, hinged lid and stage provide access to optics, electronics and actuators. This is a usability trade-off rather than a same-configuration, same-batch price experiment. [Revised Microscopi article](ref:R03)\n\nAn M4 screw drives a printed Z slider, while motor pushrods directly displace the XY flexure stage. The paper describes little defocus and low backlash but provides no quantitative curve equivalent to the preceding RMS return-error measurement. An 8×8 LED array selects illumination regions; pseudo-phase images use the normalised difference of two oblique-illumination images, not quantitative phase recovery. Demonstrations span dry objectives from 4×, NA 0.12 to 40×, NA 0.65, without a common resolution or weak-signal detection limit. Raspberry Pi 4 Model B and an IMX219 camera support local processing and browser control. Baseplate, objectives, motors, camera and assembly still require resources. The budget supports a self-built automated teaching instrument; failed prints, commissioning and long-term replacement parts were not converted into lifecycle cost.",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Collins et al.: integrated stage and removable optics divide the functions",
+          "interpretation": "The XY stage lies above the objective, while the right-hand Z actuator connects to the lower optics module. Motor mounts are optional and the electronics enclosure is separate. The image identifies integrated printed mounting and motion structures, without eliminating purchased objectives, cameras or motors. It is not a measurement of print dimensions or repositioning error. [Original construction image](ref:R01)"
+        },
+        "F02": {
+          "caption": "Sharkey et al.: axial stability coexists with lateral creep",
+          "interpretation": "The left time axis spans approximately 0–20 d: red X rises slowly and blue Y falls. The right spans approximately 0–5 d: green Z fluctuates around the origin while blue Y moves substantially downward. Recording windows differ, and larger right-hand Y relaxation is associated with substantial movement before measurement. The original caption broadly states two weeks and one week, inconsistent with the displayed coordinate ranges. Interpretation here follows the axes rather than combining different records into one stability metric. [Original drift figure](ref:R02)"
+        },
+        "F03": {
+          "caption": "Sharkey et al.: return error increases with movement range",
+          "interpretation": "The horizontal logarithmic axis gives movement radius in μm; the vertical axis gives RMS return-to-origin error in μm. Small-radius red points lie below 1 μm, with larger errors at greater radii. Insets show returned-position scatter, with short and long scale bars of 1 μm and 4 μm respectively. The plot does not cover the full furthest range claimed in the text, and its vertical axis is not microstep size. It directly bounds repeat-visit performance of the inexpensive mechanism. [Original repositioning figure](ref:R02)"
+        },
+        "F04": {
+          "caption": "Collins et al.: a shared imaging chain does not share every illumination component",
+          "interpretation": "In a, LED1 and L1 illuminate from above, while O1, L2 and CAM form the lower imaging chain. In b, LED2, L3, F1 and F2 form lateral illumination and filtering. Lenses and filters are separate optical components mounted in printed housings. Mode changes mainly replace illumination and filtering while retaining the mechanical body. The schematic does not establish equal resolution or transmission across modes. [Original optical paths](ref:R01)"
+        },
+        "F05": {
+          "caption": "Wincott et al.: an opening structure makes the optical path accessible",
+          "interpretation": "From top to bottom the exploded view shows illumination, specimen and flexure stage, folded optics and electronics space; the steel baseplate is explicitly labelled. Hinged lid and platform open for observation, adjustment and component replacement, at the cost of volume and assembly interfaces. The figure shows that the approximately £300 basic instrument still includes nonprinted parts; overall cost cannot be reduced to PLA consumption. [Original assembly image](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie senken gedruckte Mikroskopstrukturen die Gerätekosten?",
+      "direction": "Optik und Mikroskopie",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Einsparungen betreffen Mechanik und Montage, nicht eine vollständig aus Kunststoff bestehende Optik",
+          "markdown": "Bei OpenFlexure v6.0 von Collins et al. sind XY-Probentisch, Festkörpergelenke und Antriebshebel in den gedruckten Grundkörper integriert. Der Z-Antrieb bewegt ein Modul aus Objektiv, Tubuslinse und Kamera. Einzelne Gleitlager müssen weder montiert noch ausgerichtet werden; eingepresste Linsen verringern die Zahl separater Halter. Die motorisierte hochauflösende Ausführung wiegt etwa 500 g, beansprucht 15×15×20 cm und bietet 12×12×4 mm Verfahrweg. Begrenzte Traglast und Reichweite begrenzen diese kompakte Konstruktion; sie ersetzt nicht jeden Metalltisch für große Proben. [OpenFlexure-Aufbau und Kosten](ref:R01)\n\nDer Anhang verwendet damalige britische Einzelhandelspreise mit 1.30 USD/GBP: etwa 5 USD für PLA, 35 USD für Raspberry Pi, 25 USD für die Kamera, 55 USD für die Tubuslinse, 50 USD für ein RMS-Objektiv, zusammen etwa 5 USD für 3 Motoren und etwa 50 USD für die eigene Treiberplatine. Die Summe ergibt etwa 230 USD für die motorisierte hochauflösende Ausführung bei anteiligem Materialeinkauf beziehungsweise 251 USD beim Kauf ganzer Kleinteilpackungen für ein Einzelgerät. Diese Summen wurden hier berechnet und sind keine Verkaufspreise der Autoren. Gemeinsame Kleinteile steigen von anteilig etwa 5 USD auf etwa 26 USD beim Einzelbau und verändern besonders die günstigste Konfiguration. Drucker und Montagearbeit fehlen in der Rechnung; Erstmontage dauert etwa 3–4 h, geübte Montage etwa 1–2 h. Die billigste Webcam-Ausführung ohne Motoren und Mikrocomputer darf nicht die Leistungsangaben der hochauflösenden Version übernehmen.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Festkörpergelenke ersetzen bearbeitete Gleitflächen durch kontrollierte Verformung",
+          "markdown": "Der frühere Mechanismus von Sharkey et al. nutzt die reversible Biegung nachgiebigen Kunststoffs und benötigt keine präzise geschliffenen gedruckten Führungsflächen. Gelenke sind 0.72 mm dick, 1.5 mm lang und 4 mm breit; maximal etwa 6° Drehung ergibt im Kreisbogenmodell eine maximale Dehnung von ungefähr 0.024. Diese Maße gehören zu dieser Version: Ihr Verfahrweg von 8×8×4 mm darf nicht mit der späteren Version von 12×12×4 mm vermischt werden. Viergelenk- und Parallelogrammführungen erhalten die Orientierung, die Bahn bleibt jedoch leicht gekrümmt. Defokussierung am Rand des Verfahrwegs erfordert Z-Korrektur. [Ursprüngliche Mechanikversuche](ref:R02)\n\nDer Grundkörper benötigt etwa 90 g Kunststoff und ungefähr 8 h auf einem RepRapPro Ormerod beziehungsweise 5 h auf den getesteten Ultimaker 2 und MakerBot 2. Verzicht auf Kragarme und Brückenbildung für die Tischfläche vermeiden aufwendige Stützentfernung. Weniger Arbeitsschritte verlagern Zuverlässigkeit auf dünne Gelenke, Brücken und Schichtverbindungen. Bei normal begrenzten Mechanismen beobachteten die Autoren über 6 Monate keine Gelenkbrüche, wohl aber bei übermäßig biegbaren Entwürfen; unbegrenzte Ermüdungslebensdauer wurde nicht belegt. Spätere OpenFlexure-Versionen ersetzten alternde Gummibänder und verschleißende Schrauben. Geschmierte Edelstahlschrauben und Viton O-rings ermöglichten etwa 30000 Tischbewegungszyklen; schlechte Drucke oder Filamente versagten früher. Lokaler Nachdruck besitzt einen experimentell gestützten Wartungsvorteil, Verbrauchsteile und Montagequalität bleiben jedoch relevant. [Verbesserte Haltbarkeit](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "s3",
+          "title": "Nanometerschritte und Rückkehrfehler sind getrennte Größen",
+          "markdown": "Die relative Position zwischen Objektiv und Probe wurde beim frühen Tisch durch Verfolgung von auf Glas befestigten 6 μm Latexkugeln gemessen, bei schnellen Aufnahmen mit 90 Hz. Eine Drehung des Strahlengangs um 90° übertrug Z-Drift auf eine laterale Kamerakoordinate. Langzeitmessungen in einem nicht klimatisierten Raum ergaben typischerweise weniger als 10 μm Z-Drift über etwa 5 d, aber stärkeres laterales Kriechen nach großen Bewegungen. Die rechte Y-Kurve erreicht ungefähr −20 μm; allein die geringe Drift aus dem Abstract zu zitieren würde dies verdecken. Eine separate Allan-Abweichungskurve besitzt ihr Minimum bei ungefähr 1 s Mittelungszeit. Das beschreibt Kurzzeitstabilität und nicht denselben Fehler über Tage. [Drift und Wiederpositionierung](ref:R02)\n\nMotormikroschritte sind ebenfalls keine Positioniergenauigkeit. Gewindesteigung und Übersetzung ergeben rechnerisch 78 nm, gemessen wurden 67±6 nm, etwa 86% des Rechenwerts; die Autoren führen dies auf elastische Antriebshebel zurück. Der RMS-Fehler nach Bewegung in zufälliger Richtung und Rückkehr lag bei kurzen Wegen unter 1 μm; der Text nennt ungefähr 15 μm nach 1 mm Weg. Sichtbare Abbildungsdaten reichen nur bis etwa 500 μm mit ungefähr 5.6 μm Fehler. Der weiter entfernte Textwert darf nicht als eingezeichneter Datenpunkt dargestellt werden. Annäherung aus stets gleicher Richtung verbessert die Wiederholbarkeit durch Umkehrspielkompensation. Kostenvergleiche mit ausschließlich wenigen Dutzend Nanometern Schrittweite übersehen den Fehler beim Wiederfinden kleiner Strukturen nach großen Scans.",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Kommerzielle Optik ermöglicht auch im gedruckten Rahmen eine zentrale beugungsnahe Abbildung",
+          "markdown": "Das hochwertige OpenFlexure-Modul verbindet ein achromatisches Objektiv, eine achromatische Tubuslinse mit 50 mm Brennweite und den Sony IMX219 einer 8 MP Raspberry Pi Camera V2. Mit Weißlicht, Beleuchtungs-NA um 0.48 und einer Schwarz-Weiß-Kante des USAF-Testtargets wurden Bildzeilen ausgerichtet und gemittelt, Intensität durch Quadratwurzel in Amplitude umgewandelt und durch Ableitung eine PSF gewonnen. Ein 40×-Planobjektiv mit NA 0.65 ergab etwa 480 nm Halbwertsbreite, nahe der zentralen Beugungsgrenze. Dies ist eine Kantenantwortmessung des Systems, weder Druckschichtdicke noch Motorschrittweite. [Optische Bewertung](ref:R01)\n\nDas Ergebnis gilt für ungefähr die zentralen 50% des Bildfelds; Feldkrümmung und Aberrationen verschlechtern die Randauflösung. Das Bildfeld von 350×262 μm entspricht etwa 100 nm/pixel im Objektraum. Ein Bayer-Block von 2×2 Pixeln erfasst ungefähr 200 nm; Pixelabstand ist keine kleinste auflösbare Struktur. Die Autoren bevorzugen zentrale Bildbereiche beim Zusammensetzen und verwenden Ränder vor allem zur Registrierung. Aufnahmezeit und Berechnung ersetzen damit ein größeres unmittelbar nutzbares Feld. Die aus einer verschobenen geraden Kante bestimmte Verzeichnung unter 0.5% kann Kamera-Inhomogenität enthalten und wird als Obergrenze behandelt. Korrektur der Lens-Shading-Tabelle verbessert die Helligkeitsverteilung und verstärkt gleichzeitig Randrauschen. Hochwertige Bilder im preiswerten Rahmen beruhen gemeinsam auf zugekaufter Optik, Abtastung und Kalibrierung.",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "Modulare Kontrastverfahren teilen den Rahmen, benötigen aber passende optische Bauteile",
+          "markdown": "Bei Durchlicht sitzen LED und Kondensor oberhalb der Probe; Auflicht ergänzt seitliche LED, Kollimator und abnehmbaren Filterwürfel. Austausch von Strahlteilern, dichroitischen Spiegeln, Emissionsfiltern oder Polarisatoren ermöglicht die gemeinsame Nutzung von Grundkörper und Positioniertisch. Der Druck liefert Ausrichtung und Lichtabschirmung, nicht die gleiche Wirksamkeit eines billigen Kunststoffelements bei jeder Wellenlänge. [Beleuchtungsmodule](ref:R01)\n\nZur Materialbeobachtung wurden Graphenflocken auf 300 nm SiO2/Si mit einem 40×-Trockenobjektiv, NA 0.65, 9 ms Aufnahme und ungefähr 20 μW Weißlicht an der Probe abgebildet. Raman-Messungen identifizierten die markierte Flocke unabhängig als dreilagig; das Bild allein belegt keine automatische Erkennung beliebiger Monolagen. Polarisation vergleicht Hellfeld und gekreuzte Polarisatoren an derselben 5CB-Flüssigkristallregion. Mit demselben Objektiv, 1.3 ms Aufnahme und ungefähr 250 μW Beleuchtung entstehen orientierungsabhängige Helligkeiten. Der Kontrast ändert sich durch Beleuchtung und Polarisation, nicht durch bessere mechanische Auflösung. Fluoreszenz benötigt zusätzlich passende Filter, LEDs und Abschirmung. Höherer Hintergrund im langwelligen Bereich bedeutet, dass modulare Kompatibilität keine gleiche Empfindlichkeit aller Verfahren garantiert.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Microscopi tauscht einen größeren Rahmen gegen zugängliche Optik und Lehrfunktionen",
+          "markdown": "Die überarbeitete Microscopi-Version von Wincott et al. verwendet PLA-Rahmen, endlich korrigierte 160 mm DIN-Objektive und einen gefalteten Strahlengang. Die Grundausführung liegt unter £300, Fluoreszenz bei etwa £400. Grundfläche, Höhe und Masse betragen 235×235 mm, 250 mm und 1.5 kg; XY verfahren jeweils 3 mm, Z 4 mm. Gegenüber dem kompakten OpenFlexure erlauben aufklappbarer Deckel und Probentisch Zugang zu Optik, Elektronik und Antrieben. Das ist eine Bedienbarkeitsabwägung, kein Preisvergleich gleicher Konfigurationen aus derselben Charge. [Überarbeiteter Microscopi-Artikel](ref:R03)\n\nEine M4-Schraube bewegt den gedruckten Z-Schlitten, während Motorstößel direkt den XY-Festkörpergelenktisch verschieben. Der Artikel beschreibt geringe Defokussierung und wenig Umkehrspiel, liefert aber keine dem vorherigen RMS-Rückkehrfehler entsprechende Messkurve. Eine 8×8-LED-Matrix wählt Beleuchtungsbereiche; Pseudophasenbilder entstehen aus der normierten Differenz zweier Schräglichtbilder, nicht durch quantitative Phasenrekonstruktion. Demonstriert werden Trockenobjektive von 4× mit NA 0.12 bis 40× mit NA 0.65, ohne einheitliche Auflösungs- oder Schwachsignal-Nachweisgrenze. Raspberry Pi 4 Model B und IMX219-Kamera ermöglichen lokale Verarbeitung und Browsersteuerung. Grundplatte, Objektive, Motoren, Kamera und Montage benötigen weiterhin Ressourcen. Das Budget beschreibt ein selbst baubares automatisiertes Lehrinstrument; Fehldrucke, Inbetriebnahme und langfristige Ersatzteile wurden nicht als Lebenszykluskosten berechnet.",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Collins et al.: integrierter Tisch und herausnehmbares Optikmodul teilen die Funktionen",
+          "interpretation": "Der XY-Tisch liegt oberhalb des Objektivs, rechts verbindet der Z actuator das darunterliegende Optikmodul. Motorhalter sind optional, das Elektronikgehäuse ist getrennt. Erkennbar sind gedruckte integrierte Halte- und Bewegungsstrukturen, ohne dass zugekaufte Objektive, Kameras oder Motoren entfallen. Das Foto misst weder Druckmaße noch Wiederpositionierungsfehler. [Originalaufbau](ref:R01)"
+        },
+        "F02": {
+          "caption": "Sharkey et al.: axiale Stabilität besteht neben lateralem Kriechen",
+          "interpretation": "Links reicht die Zeitachse ungefähr über 0–20 d: X steigt rot langsam an, Y fällt blau. Rechts umfasst sie ungefähr 0–5 d: Z schwankt grün um den Ausgangspunkt, Y wandert blau deutlich nach unten. Die Aufnahmefenster unterscheiden sich; stärkere rechte Y-Relaxation hängt mit großer Bewegung vor der Messung zusammen. Die Originallegende nennt pauschal zwei Wochen und eine Woche, abweichend von den sichtbaren Achsenbereichen. Hier folgt die Interpretation den Achsen und vereinigt unterschiedliche Messungen nicht zu einem Stabilitätswert. [Originaldriftkurven](ref:R02)"
+        },
+        "F03": {
+          "caption": "Sharkey et al.: größere Bewegungen vergrößern den Rückkehrfehler",
+          "interpretation": "Horizontal steht der Bewegungsradius in μm auf logarithmischer Skala, vertikal der RMS-Fehler nach Rückkehr zum Ursprung in μm. Rote Punkte kleiner Radien liegen unter 1 μm, größere Radien weisen höhere Fehler auf. Einsätze zeigen Rückkehrpositionen; kurze und lange Maßstäbe entsprechen 1 μm beziehungsweise 4 μm. Die Grafik umfasst nicht den gesamten im Text genannten maximalen Prüfbereich; ihre Y-Achse zeigt auch keine Mikroschrittweite. Sie begrenzt unmittelbar die Leistung des günstigen Mechanismus beim wiederholten Anfahren eines Ortes. [Originalgrafik zur Wiederpositionierung](ref:R02)"
+        },
+        "F04": {
+          "caption": "Collins et al.: gemeinsame Abbildungsoptik bedeutet nicht identische Beleuchtungsbauteile",
+          "interpretation": "In a beleuchten LED1 und L1 von oben; O1, L2 und CAM bilden darunter die Abbildungskette. In b bilden LED2, L3, F1 und F2 seitliche Beleuchtung und Filterung. Linsen und Filter sind eigenständige optische Elemente in gedruckten Gehäusen. Beim Moduswechsel ändern sich hauptsächlich Beleuchtung und Filter, während der Grundkörper bleibt. Die Skizze belegt keine gleiche Auflösung oder Transmission aller Verfahren. [Originalstrahlengänge](ref:R01)"
+        },
+        "F05": {
+          "caption": "Wincott et al.: aufklappbare Konstruktion macht den Strahlengang zugänglich",
+          "interpretation": "Die Explosionszeichnung zeigt von oben Beleuchtung, Probe und Festkörpergelenktisch, gefaltete Optik und Elektronikraum; unten ist die Stahlgrundplatte ausdrücklich bezeichnet. Deckel und Plattform lassen sich zur Beobachtung, Einstellung und zum Bauteiltausch öffnen, benötigen aber Volumen und Montageverbindungen. Das etwa £300 teure Grundinstrument enthält somit weiterhin ungedruckte Teile; Gesamtkosten lassen sich nicht auf PLA-Verbrauch reduzieren. [Originalmontagebild](ref:R03)"
+        }
+      }
+    }
+  }
+}

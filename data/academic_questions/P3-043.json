@@ -1,0 +1,298 @@
+{
+  "schema_version": 2,
+  "question_id": "P3-043",
+  "p": "P3",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_a53c3f99f4b9c5fe5d44",
+    "doc_0fc1f86f1eb5bf21c154",
+    "doc_91dac4f11eefa922271f",
+    "doc_ee718f5901d6d20f8238"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "On demand manufacturing of patient-specific liquid capsules via co-ordinated 3D printing and liquid dispensing",
+      "publisher": "European Journal of Pharmaceutical Sciences",
+      "year": 2018,
+      "url": "https://doi.org/10.1016/j.ejps.2018.03.010",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "3D Printing of a Multi-Layered Polypill Containing Six Drugs Using a Novel Stereolithographic Method",
+      "publisher": "Pharmaceutics",
+      "year": 2019,
+      "url": "https://doi.org/10.3390/pharmaceutics11060274",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "3D Printed Mini-Floating-Polypill for Parkinson’s Disease: Combination of Levodopa, Benserazide, and Pramipexole in Various Dosing for Personalized Therapy",
+      "publisher": "Pharmaceutics",
+      "year": 2022,
+      "url": "https://doi.org/10.3390/pharmaceutics14050931",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "3D-Printed Multifunctional Multicompartment Polymer-Based Capsules for Tunable and Spatially Controlled Drug Release",
+      "publisher": "Journal of Functional Biomaterials",
+      "year": 2025,
+      "url": "https://doi.org/10.3390/jfb16120456",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R02",
+      "original_label": "Figure 4",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/205c/6630370/d3fef1756614/pharmaceutics-11-00274-g004.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6630370/#pharmaceutics-11-00274-f004",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P3-043/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R02",
+      "original_label": "Figure 7",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/205c/6630370/379b2c85aa89/pharmaceutics-11-00274-g007.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6630370/#pharmaceutics-11-00274-f007",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P3-043/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R03",
+      "original_label": "Figure 12",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/2c65/9145509/37c19ee69620/pharmaceutics-14-00931-g012.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9145509/#pharmaceutics-14-00931-f012",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P3-043/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R04",
+      "original_label": "Figure 8",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/79ac/12733444/79e03c7d5f83/jfb-16-00456-g008.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12733444/#jfb-16-00456-f008",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P3-043/F04.jpg"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R04",
+      "original_label": "Figure 9",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/79ac/12733444/d9a8262b5bc8/jfb-16-00456-g009.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12733444/#jfb-16-00456-f009",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P3-043/F05.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "打印胶囊与复方制剂如何承载个体化治疗？",
+      "direction": "个体化口服制剂",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "胶囊把外壳、装量和释放材料拆成不同变量",
+          "markdown": "打印胶囊可以先制造承载结构，再把药物溶液、混悬液或独立模块装入；多层复方片则把载药材料本身打印成结构。这两条路径的剂量调节位置不同。2018 年液体胶囊实验把 FDM 与计算机控制的液体分配联合，分别用茶碱溶液和双嘧达莫混悬液验证；Eudragit EPO 与 RL 外壳承担即释和延长释放功能。同步打印—灌装与先底部、后灌装、再封盖的分步模式都被考察。[液体胶囊实验](ref:R01)\n\n该研究报告，1.6 mm 壁厚与同心结构可保持液芯，理论与实际分配体积的线性关系为 R² = 0.9985；改变 RL 壁厚可以改变延长释放而不必改变液体处方。这里 R² 描述体积对应关系，不是每粒药物含量偏差或混悬液长期均匀性的替代量。药物不必先进入热熔丝材，也不代表封盖过程完全没有热暴露。\n\n复方个体化还要求知道哪些剂量可以独立改变。例如下述帕金森病研究把左旋多巴（LD）与苄丝肼（BZ）固定在同一丝材中，普拉克索（PDM）放在另一丝材；改变 LD/BZ 部件的量会同时改变两种药，而 PDM 部件可单独设计。分隔数目因此不等于可独立设定的药物数目。[双丝材复方设计](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "六药分层可以成型，但可见边界不等于成分隔离",
+          "markdown": "Robles-Martinez 等以 SLA 在室温打印对乙酰氨基酚、咖啡因、阿司匹林、氯霉素、萘普生和泼尼松龙。采用 405 nm 激光，打印中暂停并升起平台，人工更换树脂槽，换料之间用去离子水冲洗。圆柱型设计直径 10 mm、高 3 mm，由 6 个 0.5 mm 药物区块组成；环型高 6 mm，区块各为 1 mm。这里的 6 药是空间制造示范，并非经过患者比较验证的一套联合治疗处方。[制造方法与分布](ref:R02)\n\nType I/II 初始树脂均为 PEGda 89%、TPO 1%、药物 10% w/w；Type III 用 PEGda 44.5% 与 PEG 300 44.5% 替代原基质，TPO 和药物比例不变。成品直径为 10.73–11.07 mm，偏离 10 mm 设计值，说明实际固化边界会改变沉积量。论文报告药物含量为目标的 85–104%，但这一范围本身不能替代完整的逐单位含量均匀度统计。\n\n普通显微照片的边界很清楚，拉曼高分辨率扫描却显示对乙酰氨基酚、阿司匹林、萘普生跨入相邻层。扫描区域为 1 × 3 mm，共 30,000 条光谱；DCLS 匹配信号在原层最高，进入邻层后递减。咖啡因、泼尼松龙保持较局限的分布，XRPD 又显示这两种药保留晶态，而其余几种药呈无定形。作者据此提出固态与迁移能力有关；这是支持性的对应关系，不是已经把所有扩散路径逐一分离的机制实验。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "同一复方结构不能让所有药物获得相同释放改善",
+          "markdown": "六药研究使用动态介质：先在 750 mL、0.1 M HCl 中 2 h，再转入 950 mL 改良 Hanks 缓冲液，随后形成 1000 mL 改良 Krebs 缓冲液；肠段模拟 pH 在 5.6–7.4 间变化，之后为 pH 6.5。实验为 37 ± 0.5 °C、50 rpm、n = 3。曲线同时受到材料、药物固态和随时间改变的介质影响，不是单一固定 pH 下的几何实验。[动态溶出及 Figure 7](ref:R02)\n\n| 结构/处方变化 | 20 h 的主要结果 | 所识别的限制 |\n|---|---|---|\n| Type I：圆柱 | 各药约 22–80%，均未完全释放 | 交联基质吸水后仍保持完整 |\n| Type II：环型 | 对乙酰氨基酚由约 60% 增至 95%；咖啡因约 60% 至 65% | 开孔对不同药物的改善幅度不同 |\n| Type III：环型 + PEG 300 | 对乙酰氨基酚、咖啡因、阿司匹林约 100%；氯霉素、萘普生 > 80%；泼尼松龙约 45% | 可溶辅料仍未使泼尼松龙完全释放 |\n\n环型增加中间层与介质接触，但也改变了高度和总质量，不能把差异全部归于孔本身。泼尼松龙层约在 240 min 达到最大溶胀，之后药物仍未明显追上；其晶态、低水溶性及对 PEGda 网络的亲和性共同构成可能解释。因而“增加表面积”和“加入可溶材料”对同片中的不同药物不是等幅调节，更不能由某一药的完整释放推断复方全部成分都已交付。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "帕金森病复方：局部暴露面积比总外形更重要",
+          "markdown": "Windolf 等采用 EVA/PVP-VA 丝材载入 40% LD 和 10% BZ，PDM 则置于 PVA 丝材。PP1 的 LD/BZ 为 50/12.5 mg、PDM 为 3.5 mg；PP2 仍为 3.5 mg PDM，却将它夹在两个 LD/BZ 中空部件之间。PDM 达到 75% 释放的时间从 PP1 的 140 min 延至 PP2 的 310 min；LD/BZ 在 600 min 分别仅释放 22% 和 21%，两者曲线 f₂ = 87.5。相近的 LD/BZ 曲线并不表示另一种药保持相同释放。[复方几何与 Tables 7–11](ref:R03)\n\n作者观察到，PP2 中 PDM 层只有约 24% 表面积直接接触介质；即使打印了清洗塔，换料后 EVA 残留仍进入 PVA 层。之后的微型中空圆柱把 PDM 做成内部十字结构，允许介质从多个方向进入；LD/BZ 固定为 10/2.5 mg，可比较两个 PDM 剂量：\n\n| 指标 | MiniHCwC1 | MiniHCwC2 |\n|---|---|---|\n| PDM 药量 | 0.4 mg | 1.5 mg |\n| PDM 表面积/体积 | 4.6 mm⁻¹ | 2.9 mm⁻¹ |\n| PDM 达到 75% 释放 | 20 min | 60 min |\n| PDM 平均溶出时间 MDT | 14 min | 28 min |\n| LD/BZ 达到 75% 释放 | 750 min | 750 min |\n\n提高 PDM 剂量时其释放也变慢，但 LD/BZ 保持相近，这是在具体结构中部分解耦的证据。实验使用改装的 3 mm 网孔篮、1000 mL 0.1 N HCl、50 rpm、37 ± 0.5 °C、n = 3；改装用于避免溶胀聚合物堵住标准网孔。漂浮则在 300 mL 酸液中观察，既不是体内胃滞留时长，也没有测得患者 OFF 期改善。十字件可分开打印后装入，从制造上减少共用喷头的材料带入。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "多腔胶囊的延迟释放与储存迁移要同时阅读",
+          "markdown": "2025 年双腔胶囊研究先在 230 °C 打印 BioFlex 壳，再用另一台挤出设备依次装入 300 μL 海藻酸盐/黄原胶/迷迭香精油体系和 300 μL 含罗丹明 B 的明胶，最后沉积 Eudragit L100 封口膜。这是壳体与低温填充相结合的流程。设计长 18.0 mm、直径 7.5 mm、开口 5.5 mm，实测分别为 17.93 ± 0.12、7.42 ± 0.06、5.44 ± 0.09 mm，壁厚 0.35 ± 0.04 mm。[制造、释放与储存实验](ref:R04)\n\n原图 8 与结果部分采用 pH 2.5 保持 1 h 后转入 pH 7.4；方法部分却写酸段 2 h，故不能把总起释时间当作无歧义的已验证参数。按图示，酸段未检出荧光，转为中性后仍有封口膜溶解的滞后，随后明胶中的罗丹明迅速释放，内层精油逐渐释放，文中平均速率为 8.3 μL/h。罗丹明是示踪物，精油是所测内容物，并非已验证两种处方药或益生菌的药效；图轴虽写 Release (%)，刻度却以约 1 为平台，不能直接读取成“只释放 1%”。\n\n室温储存并没有消除腔间迁移：25 °C、50% RH 下，方形可拆面模型的 0 h 界面清楚，2 h 后罗丹明信号进入邻腔。同一研究的 7 天称重实验中，4 °C 组质量变化较小，25 °C 组下降约 4%；这说明水分与界面状态会变，但称重不是两种内容物的化学稳定性检测。原图把短时界面扩散与多日质量变化并列，不能由低温质量稳定反推所有可替换药物均保持长期分隔。",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Robles-Martinez et al. — 原图 4：高分辨率拉曼揭示跨层迁移。",
+          "interpretation": "a、b、c 分别为对乙酰氨基酚、阿司匹林、萘普生；左侧光学图叠加各药的 DCLS 匹配色图，右侧沿 Y（μm）显示信号分布。信号由富集层延伸入邻层，而非在肉眼边界立即归零；匹配强度不是经校准的绝对浓度。图支持实际成分分隔弱于外观分层这一判断。[分布结果](ref:R02)"
+        },
+        "F02": {
+          "caption": "Robles-Martinez et al. — 原图 7：三种复方结构的六药动态溶出。",
+          "interpretation": "a 为圆柱 Type I，b 为环型 Type II，c 为加 PEG 300 的环型 Type III；横轴 min，左轴释药百分比，右轴及棕线为介质 pH。紫色泼尼松龙在 c 仍约 45%，而对乙酰氨基酚、咖啡因及阿司匹林接近完整释放。不同药物曲线的间距显示，几何与配方修改并未等比例改善所有成分。[动态溶出](ref:R02)"
+        },
+        "F03": {
+          "caption": "Windolf et al. — 原图 12：十字内芯剂量改变与外圈释放。",
+          "interpretation": "上图 MiniHCwC1 含 0.4 mg PDM，下图 MiniHCwC2 含 1.5 mg PDM；横轴 min，纵轴释放百分比。红线 PDM 较快，蓝线 LD/BZ 较慢；改变十字尺寸后，PDM 达 75% 从 20 延至 60 min，而 LD/BZ 均约 750 min。右侧完整尺寸图呈现十字高度和宽度的变化，不应将其简化为只改药物浓度。[Table 11 与原图](ref:R03)"
+        },
+        "F04": {
+          "caption": "Minopoli et al. — 原图 8：酸性保护与双腔释放时间差。",
+          "interpretation": "a 为 pH 2.5 到 7.4 的转移；b 红线为罗丹明、绿线为精油，黄色和蓝色区间区分介质。c、d 为不同时间的荧光光谱，纵轴任意单位。b 的百分号标签与约 1 的平台不一致，且图示酸段 1 h 与方法 2 h 冲突，因此此图用于比较先后和曲线形状，不据此给出精确绝对总释放百分比或临床起效时间。[释放实验](ref:R04)"
+        },
+        "F05": {
+          "caption": "Minopoli et al. — 原图 9：温度影响质量，短时储存允许示踪物跨界。",
+          "interpretation": "a 为胶囊外观；b 比较 4 °C 与 25 °C 的 7 天相对质量，室温组约损失 4%。c/d 为 0 h/2 h 共聚焦图，绿为精油、红为罗丹明；e/f 沿虚线区域给出荧光随距离（μm）的变化。2 h 后红信号进入绿色区域，说明成型时清楚的分界不是永久隔离；质量曲线不能代替这种成分空间测量。[储存与界面](ref:R04)"
+        }
+      }
+    },
+    "en": {
+      "title": "How can printed capsules and combination dosage forms support individualized therapy?",
+      "direction": "Personalized oral dosage forms",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Capsules separate shell, fill amount and release material into different variables",
+          "markdown": "A printed capsule can first provide a supporting structure and then receive drug solution, suspension or separate modules; a multilayer polypill instead prints drug-bearing material as the structure itself. The dose-control point differs. A 2018 liquid-capsule experiment combined FDM with computer-controlled liquid dispensing, testing theophylline solution and dipyridamole suspension. Eudragit EPO and RL shells provided immediate and extended release. Both simultaneous shell printing/filling and sequential bottom printing, filling and capping were examined. [Liquid-capsule experiment](ref:R01)\n\nA 1.6 mm shell thickness with concentric architecture contained the liquid core, and theoretical versus actual dispensed volumes gave R² = 0.9985. Changing RL wall thickness altered extended release without changing the liquid formulation. R² describes volume correspondence, not individual drug-content error or long-term suspension homogeneity. Avoiding drug incorporation into hot-melt filament also does not establish zero thermal exposure during capping.\n\nPersonalization of a combination additionally requires identifying independently adjustable doses. The Parkinson’s study below put levodopa (LD) and benserazide (BZ) together in a fixed-combination filament, with pramipexole (PDM) in another. Changing the amount of the LD/BZ part changes both drugs, whereas the PDM component can be designed separately. The number of compartments therefore differs from the number of independently selectable drug doses. [Dual-filament combination design](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Six-drug layers can be formed, but visible boundaries do not establish chemical isolation",
+          "markdown": "Robles-Martinez and colleagues used SLA at room temperature to print paracetamol, caffeine, aspirin, chloramphenicol, naproxen and prednisolone. A 405 nm laser was used; printing was paused and the platform raised for manual resin-tray exchange, with deionized-water rinsing between materials. The cylindrical design was 10 mm in diameter and 3 mm high, comprising 6 drug blocks of 0.5 mm each. Rings were 6 mm high with 1 mm blocks. This 6-drug object demonstrates spatial manufacturing rather than a combination regimen validated in patient comparisons. [Manufacturing and distribution](ref:R02)\n\nType I/II starting resins contained PEGda 89%, TPO 1% and drug 10% w/w. Type III replaced the matrix with PEGda 44.5% and PEG 300 44.5%, retaining TPO and drug proportions. Finished diameters were 10.73–11.07 mm rather than the designed 10 mm, showing that actual curing boundaries affect deposited amount. Reported drug contents were 85–104% of target, but that range alone does not replace a complete unit-level content-uniformity analysis.\n\nOrdinary microscopy showed clear boundaries, whereas high-resolution Raman mapping detected paracetamol, aspirin and naproxen in adjacent layers. The 1 × 3 mm mapped area contained 30,000 spectra; DCLS matching was strongest in the intended layer and decreased into its neighbor. Caffeine and prednisolone remained more localized. XRPD also showed retained crystallinity for these two drugs, while the others were amorphous. The authors therefore associated solid state with migration propensity. This is supporting correspondence rather than an experiment isolating every diffusion pathway.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "One combination structure does not improve release equally for every drug",
+          "markdown": "The six-drug study used dynamic media: 750 mL of 0.1 M HCl for 2 h, followed by 950 mL modified Hanks buffer and subsequently 1000 mL modified Krebs buffer. Simulated intestinal pH varied within 5.6–7.4 and then became pH 6.5. Testing used 37 ± 0.5 °C, 50 rpm and n = 3. The curves reflect material, drug solid state and changing medium together, rather than geometry alone at a fixed pH. [Dynamic dissolution and Figure 7](ref:R02)\n\n| Structural/formulation change | Principal result at 20 h | Identified limitation |\n|---|---|---|\n| Type I: cylinder | Approximately 22–80% across drugs; none completely released | Crosslinked matrix remained intact after hydration |\n| Type II: ring | Paracetamol increased from approximately 60% to 95%; caffeine from approximately 60% to 65% | The opening improved different drugs by different amounts |\n| Type III: ring + PEG 300 | Paracetamol, caffeine and aspirin approximately 100%; chloramphenicol and naproxen > 80%; prednisolone approximately 45% | Soluble excipient still did not yield complete prednisolone release |\n\nThe ring exposed inner layers to medium but also changed height and total mass; the difference cannot be assigned entirely to the hole. Prednisolone layers reached maximum swelling around 240 min without subsequent release catching up. Crystallinity, poor aqueous solubility and affinity for the PEGda network provide possible combined explanations. Increasing surface area and adding soluble material therefore do not tune all drugs equally, and complete release of one component cannot establish delivery of the entire combination.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Parkinson’s polypills: local exposed area matters beyond total geometry",
+          "markdown": "Windolf and colleagues loaded 40% LD and 10% BZ into EVA/PVP-VA filament, with PDM in PVA filament. PP1 contained 50/12.5 mg LD/BZ and 3.5 mg PDM. PP2 retained 3.5 mg PDM but sandwiched it between two hollow LD/BZ components. Time to 75% PDM release increased from 140 min for PP1 to 310 min for PP2. LD/BZ release at 600 min was only 22% and 21%, respectively, with f₂ = 87.5 between those curves. Similar LD/BZ release thus did not mean unchanged release of the other drug. [Combination geometry and Tables 7–11](ref:R03)\n\nOnly approximately 24% of the PP2 PDM surface contacted the medium directly. Despite a purge tower, the authors also observed residual EVA entering the PVA layer during material exchange. A later mini hollow-cylinder design placed PDM in an internal cross, allowing medium access from several directions. LD/BZ was fixed at 10/2.5 mg, permitting comparison of two PDM doses:\n\n| Measure | MiniHCwC1 | MiniHCwC2 |\n|---|---|---|\n| PDM amount | 0.4 mg | 1.5 mg |\n| PDM surface-area/volume ratio | 4.6 mm⁻¹ | 2.9 mm⁻¹ |\n| Time to 75% PDM release | 20 min | 60 min |\n| PDM mean dissolution time MDT | 14 min | 28 min |\n| Time to 75% LD/BZ release | 750 min | 750 min |\n\nIncreasing PDM dose slowed its release while LD/BZ remained similar, demonstrating partial decoupling within this specific architecture. Testing used modified baskets with 3 mm mesh, 1000 mL of 0.1 N HCl, 50 rpm, 37 ± 0.5 °C and n = 3. Modification prevented swollen polymer from blocking standard mesh. Floating was observed separately in 300 mL acid; it is neither an in-vivo gastric residence time nor a measured improvement in patients’ OFF periods. Printing and inserting the cross separately offers a way to reduce material carryover through the shared nozzle.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Delayed release and storage migration must be read together in multicompartment capsules",
+          "markdown": "A 2025 dual-compartment study first printed BioFlex shells at 230 °C, then used another extrusion instrument to sequentially fill 300 μL alginate/xanthan-gum/rosemary-essential-oil blend and 300 μL gelatin containing rhodamine B, followed by an Eudragit L100 sealing film. This combines shell fabrication with low-temperature filling. Designed length, diameter and opening were 18.0, 7.5 and 5.5 mm; measured values were 17.93 ± 0.12, 7.42 ± 0.06 and 5.44 ± 0.09 mm, with wall thickness 0.35 ± 0.04 mm. [Fabrication, release and storage experiments](ref:R04)\n\nOriginal Figure 8 and Results use 1 h at pH 2.5 followed by pH 7.4, whereas Methods state a 2 h acid phase. The absolute release-onset time therefore cannot be treated as an unambiguous validated parameter. In the plotted sequence, no fluorescence was detected during the acid phase; a further lag after neutral transfer accompanied seal dissolution, followed by rapid rhodamine release from gelatin and gradual inner-compartment oil release. The reported average oil-release rate was 8.3 μL/h. Rhodamine is a tracer and oil the tested payload, not evidence for therapeutic effects of two prescription drugs or probiotics. The axis reads Release (%) but plateaus around 1, so it cannot simply be interpreted as “only 1% released.”\n\nRoom-temperature storage did not eliminate migration. In the square removable-face model at 25 °C and 50% RH, the interface was sharp at 0 h, but rhodamine entered the adjacent compartment after 2 h. Over 7 days, capsule mass changed little at 4 °C but fell approximately 4% at 25 °C. This indicates changing water content and interface state; weighing is not chemical stability testing of both payloads. The figure juxtaposes short-term diffusion and multiday mass changes, so stable refrigerated mass cannot establish long-term segregation for every substituted drug.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Robles-Martinez et al. — Original Figure 4: high-resolution Raman evidence of migration between layers.",
+          "interpretation": "Panels a, b and c map paracetamol, aspirin and naproxen. Optical images on the left carry DCLS match maps; right-hand profiles show signal along Y (μm). Signal extends from enriched layers into neighbors rather than immediately reaching zero at visible boundaries. Matching intensity is not a calibrated absolute concentration. The figure establishes weaker chemical separation than visual layering suggests. [Distribution results](ref:R02)"
+        },
+        "F02": {
+          "caption": "Robles-Martinez et al. — Original Figure 7: dynamic six-drug dissolution from three combination designs.",
+          "interpretation": "a is cylindrical Type I, b ring Type II and c ring Type III with PEG 300. Time is in min; the left axis is percent release, while the right axis and brown line show medium pH. Purple prednisolone remains near 45% in c, while paracetamol, caffeine and aspirin approach complete release. Separation among drug curves shows that geometry and formulation changes did not improve all components proportionally. [Dynamic dissolution](ref:R02)"
+        },
+        "F03": {
+          "caption": "Windolf et al. — Original Figure 12: cross-core dose changes and outer-ring release.",
+          "interpretation": "Top: MiniHCwC1 with 0.4 mg PDM; bottom: MiniHCwC2 with 1.5 mg PDM. Axes show min and percent released. Red PDM is faster and blue LD/BZ slower. Altering cross dimensions increases time to 75% PDM release from 20 to 60 min, while LD/BZ remains around 750 min. The complete dimension drawings show changed cross height and width; this is not simply a change in drug concentration. [Table 11 and original figure](ref:R03)"
+        },
+        "F04": {
+          "caption": "Minopoli et al. — Original Figure 8: acid protection and separated compartment-release times.",
+          "interpretation": "a shows transfer from pH 2.5 to 7.4. In b, red is rhodamine and green oil; yellow and blue regions mark media. Panels c/d show time-dependent fluorescence spectra in arbitrary units. The percent label in b conflicts with its plateau near 1, and the plotted 1 h acid phase conflicts with 2 h in Methods. The figure supports release order and curve shape, not an exact absolute total percentage or clinical onset time. [Release experiment](ref:R04)"
+        },
+        "F05": {
+          "caption": "Minopoli et al. — Original Figure 9: temperature affects mass while brief storage permits tracer migration.",
+          "interpretation": "a shows the capsule. b compares relative mass over 7 days at 4 °C and 25 °C, with approximately 4% loss at room temperature. c/d are confocal images at 0 h/2 h: oil is green and rhodamine red. e/f plot fluorescence against distance (μm) within the dashed regions. Red signal extends into the green region after 2 h; a sharp initial boundary is not permanent isolation. Mass curves cannot replace spatial composition measurements. [Storage and interface](ref:R04)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie unterstützen gedruckte Kapseln und Kombinationsarzneiformen eine individualisierte Therapie?",
+      "direction": "Individualisierte orale Arzneiformen",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Kapseln trennen Hülle, Füllmenge und Freisetzungsmaterial als Stellgrößen",
+          "markdown": "Eine gedruckte Kapsel kann zunächst eine Tragstruktur bilden und anschließend Wirkstofflösung, Suspension oder separate Module aufnehmen. Eine mehrschichtige Kombinationstablette druckt dagegen das wirkstoffhaltige Material selbst als Struktur. Die Stelle der Dosissteuerung unterscheidet sich. Ein Flüssigkapsel-Experiment von 2018 kombinierte FDM mit computergesteuerter Flüssigkeitsdosierung und untersuchte Theophyllin-Lösung sowie Dipyridamol-Suspension. Eudragit-EPO- und RL-Hüllen dienten sofortiger beziehungsweise verlängerter Freisetzung. Untersucht wurden sowohl gleichzeitiger Hüllendruck und Befüllung als auch die Abfolge Boden, Befüllung und Verschluss. [Flüssigkapsel-Experiment](ref:R01)\n\nEine Wanddicke von 1.6 mm mit konzentrischem Aufbau hielt den Flüssigkern zurück; theoretisches und tatsächlich dosiertes Volumen ergaben R² = 0.9985. Eine andere RL-Wanddicke veränderte die verlängerte Freisetzung ohne Änderung der Flüssigformulierung. R² beschreibt den Volumenzusammenhang, keine individuelle Wirkstoffgehaltsabweichung oder langfristige Suspensionshomogenität. Der Verzicht auf Wirkstoffeinbettung in ein Schmelzfilament belegt zudem keine vollständig fehlende Wärmebelastung beim Verschließen.\n\nFür die Individualisierung einer Kombination muss ferner bekannt sein, welche Dosen unabhängig veränderbar sind. Die folgende Parkinson-Studie kombinierte Levodopa (LD) und Benserazid (BZ) fest in einem Filament; Pramipexol (PDM) befand sich in einem anderen. Eine Mengenänderung des LD/BZ-Teils verändert beide Wirkstoffe, während die PDM-Komponente separat gestaltet werden kann. Kompartimentzahl und Zahl unabhängig einstellbarer Wirkstoffdosen sind somit verschieden. [Kombination aus zwei Filamenten](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Sechs Wirkstoffschichten sind herstellbar, sichtbare Grenzen belegen aber keine chemische Trennung",
+          "markdown": "Robles-Martinez und Mitarbeitende druckten Paracetamol, Coffein, Acetylsalicylsäure, Chloramphenicol, Naproxen und Prednisolon mittels SLA bei Raumtemperatur. Verwendet wurde ein 405-nm-Laser. Für den manuellen Harzwannenwechsel wurde der Druck angehalten und die Plattform angehoben; zwischen Materialien erfolgte eine Spülung mit deionisiertem Wasser. Der Zylinder war mit 10 mm Durchmesser und 3 mm Höhe geplant und bestand aus 6 Wirkstoffblöcken zu je 0.5 mm. Ringe waren 6 mm hoch mit je 1 mm hohen Blöcken. Dieses 6-Wirkstoff-Objekt demonstriert räumliche Herstellung, keine durch Patientenvergleiche validierte Kombinationstherapie. [Herstellung und Verteilung](ref:R02)\n\nDie Ausgangsharze für Typ I/II enthielten PEGda 89%, TPO 1% und Wirkstoff 10% w/w. Typ III ersetzte die Matrix durch PEGda 44.5% und PEG 300 44.5%; TPO- und Wirkstoffanteil blieben gleich. Die fertigen Durchmesser von 10.73–11.07 mm wichen von geplanten 10 mm ab: Tatsächliche Aushärtungsgrenzen beeinflussen die Materialmenge. Berichtet wurden Wirkstoffgehalte von 85–104% des Ziels. Diese Spanne allein ersetzt jedoch keine vollständige statistische Prüfung der Gleichförmigkeit einzelner Einheiten.\n\nKonventionelle Mikroskopie zeigte klare Grenzen; hochauflösende Raman-Kartierung wies dagegen Paracetamol, Acetylsalicylsäure und Naproxen in Nachbarschichten nach. Das Messfeld von 1 × 3 mm umfasste 30,000 Spektren. Die DCLS-Übereinstimmung war in der vorgesehenen Schicht am höchsten und nahm zur Nachbarschicht hin ab. Coffein und Prednisolon blieben stärker lokalisiert; XRPD zeigte bei ihnen erhaltene Kristallinität, während die anderen Wirkstoffe amorph waren. Die Autoren brachten deshalb Feststoffzustand und Migrationsneigung miteinander in Verbindung. Das ist eine stützende Zuordnung, kein Experiment, das sämtliche Diffusionswege einzeln isoliert.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Eine Kombinationsstruktur verbessert nicht die Freisetzung aller Wirkstoffe gleichermaßen",
+          "markdown": "Die Sechs-Wirkstoff-Studie verwendete dynamische Medien: zunächst 750 mL 0.1 M HCl für 2 h, dann 950 mL modifizierten Hanks-Puffer und anschließend 1000 mL modifizierten Krebs-Puffer. Der simulierte intestinale pH variierte zwischen 5.6–7.4 und betrug danach pH 6.5. Geprüft wurde bei 37 ± 0.5 °C, 50 rpm und n = 3. Die Kurven erfassen gemeinsam Material, Wirkstofffestform und wechselndes Medium, keinen reinen Geometrieeffekt bei konstantem pH. [Dynamische Auflösung und Abbildung 7](ref:R02)\n\n| Struktur-/Formulierungsänderung | Hauptergebnis nach 20 h | Erkennbare Begrenzung |\n|---|---|---|\n| Typ I: Zylinder | Je nach Wirkstoff ungefähr 22–80%; keiner vollständig freigesetzt | Vernetzte Matrix blieb nach Wasseraufnahme intakt |\n| Typ II: Ring | Paracetamol von ungefähr 60% auf 95%; Coffein von ungefähr 60% auf 65% | Die Öffnung verbesserte Wirkstoffe unterschiedlich stark |\n| Typ III: Ring + PEG 300 | Paracetamol, Coffein und Acetylsalicylsäure ungefähr 100%; Chloramphenicol und Naproxen > 80%; Prednisolon ungefähr 45% | Löslicher Hilfsstoff ergab weiterhin keine vollständige Prednisolon-Freisetzung |\n\nDer Ring exponierte innere Schichten, änderte aber auch Höhe und Gesamtmasse. Der Unterschied lässt sich nicht vollständig der Öffnung zuschreiben. Die Prednisolon-Schicht erreichte um 240 min maximale Quellung, ohne dass die Freisetzung danach aufholte. Kristallinität, geringe Wasserlöslichkeit und Affinität zum PEGda-Netzwerk bieten gemeinsame mögliche Erklärungen. Mehr Oberfläche und lösliches Material verändern die Wirkstoffe somit nicht gleich stark; vollständige Freisetzung einer Komponente belegt nicht die Abgabe der gesamten Kombination.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Parkinson-Kombinationen: lokale Exposition zählt neben der Gesamtform",
+          "markdown": "Windolf und Mitarbeitende beluden EVA/PVP-VA-Filament mit 40% LD und 10% BZ; PDM lag in PVA-Filament vor. PP1 enthielt 50/12.5 mg LD/BZ und 3.5 mg PDM. PP2 behielt 3.5 mg PDM bei, schloss es aber zwischen zwei hohlen LD/BZ-Komponenten ein. Die Zeit bis 75% PDM-Freisetzung stieg von 140 min bei PP1 auf 310 min bei PP2. LD/BZ setzte nach 600 min nur 22% beziehungsweise 21% frei; zwischen diesen Kurven lag f₂ = 87.5. Ähnliche LD/BZ-Freisetzung bedeutete also keine unveränderte Freisetzung des anderen Wirkstoffs. [Kombinationsgeometrie und Tabellen 7–11](ref:R03)\n\nBei PP2 berührten nur ungefähr 24% der PDM-Oberfläche das Medium direkt. Trotz Reinigungsturm beobachteten die Autoren außerdem EVA-Reste, die beim Materialwechsel in die PVA-Schicht gelangten. Ein späterer Mini-Hohlzylinder enthielt PDM als inneres Kreuz, sodass Medium aus mehreren Richtungen eindringen konnte. LD/BZ blieb bei 10/2.5 mg, wodurch zwei PDM-Dosen vergleichbar waren:\n\n| Größe | MiniHCwC1 | MiniHCwC2 |\n|---|---|---|\n| PDM-Menge | 0.4 mg | 1.5 mg |\n| PDM-Oberflächen/Volumen-Verhältnis | 4.6 mm⁻¹ | 2.9 mm⁻¹ |\n| Zeit bis 75% PDM-Freisetzung | 20 min | 60 min |\n| Mittlere PDM-Auflösungszeit MDT | 14 min | 28 min |\n| Zeit bis 75% LD/BZ-Freisetzung | 750 min | 750 min |\n\nEine höhere PDM-Dosis verlangsamte deren Freisetzung, während LD/BZ ähnlich blieb. Das belegt teilweise Entkopplung innerhalb dieser konkreten Architektur. Die Prüfung verwendete modifizierte Körbe mit 3-mm-Maschen, 1000 mL 0.1 N HCl, 50 rpm, 37 ± 0.5 °C und n = 3. Die Modifikation verhinderte das Verstopfen normaler Maschen durch gequollenes Polymer. Schwimmen wurde separat in 300 mL Säure beobachtet; dies ist weder eine in vivo gemessene Magenverweilzeit noch eine gemessene Verbesserung von OFF-Phasen. Ein separat gedrucktes und eingesetztes Kreuz kann den Materialübertrag durch die gemeinsame Düse verringern.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Bei Mehrkammerkapseln gehören verzögerte Freisetzung und Lagermigration zusammen",
+          "markdown": "Eine Zweikammerstudie von 2025 druckte zuerst BioFlex-Hüllen bei 230 °C. Ein anderes Extrusionsgerät füllte nacheinander 300 μL Alginat/Xanthan/Rosmarinöl-Mischung und 300 μL Rhodamin-B-haltige Gelatine ein, gefolgt von einer Eudragit-L100-Verschlussfolie. Der Prozess kombiniert Hüllenherstellung mit Befüllung bei niedriger Temperatur. Geplante Länge, Durchmesser und Öffnung waren 18.0, 7.5 und 5.5 mm. Gemessen wurden 17.93 ± 0.12, 7.42 ± 0.06 und 5.44 ± 0.09 mm bei 0.35 ± 0.04 mm Wanddicke. [Herstellungs-, Freisetzungs- und Lagerversuche](ref:R04)\n\nOriginalabbildung 8 und Ergebnisteil verwenden 1 h bei pH 2.5 mit anschließendem pH 7.4, der Methodenteil nennt dagegen 2 h Säurephase. Der absolute Freisetzungsbeginn ist deshalb kein eindeutig validierter Parameter. Im dargestellten Ablauf war während der Säurephase keine Fluoreszenz nachweisbar. Nach dem Wechsel ins neutrale Medium folgte eine weitere Verzögerung durch Auflösung des Verschlusses, danach rasche Rhodamin-Freisetzung aus Gelatine und allmähliche Ölfreisetzung aus der inneren Kammer. Die berichtete mittlere Ölrate betrug 8.3 μL/h. Rhodamin ist ein Tracer und Öl der untersuchte Inhalt; dies belegt keine therapeutischen Wirkungen zweier verschreibungspflichtiger Arzneistoffe oder von Probiotika. Die Achse heißt Release (%), erreicht aber ein Plateau um 1 und darf nicht schlicht als „nur 1% freigesetzt“ gelesen werden.\n\nRaumtemperaturlagerung verhinderte Migration nicht. Im quadratischen Modell mit abnehmbarer Seite war bei 25 °C und 50% RH die Grenze nach 0 h scharf; nach 2 h gelangte Rhodamin in die Nachbarkammer. Über 7 Tage änderte sich die Kapselmasse bei 4 °C wenig, bei 25 °C sank sie um ungefähr 4%. Das weist auf Änderungen von Wassergehalt und Grenzfläche hin; Wägen prüft nicht die chemische Stabilität beider Inhalte. Die Abbildung verbindet kurzfristige Diffusion mit mehrtägiger Massenänderung. Stabile Masse bei Kühlung belegt deshalb keine langfristige Trennung für jeden austauschbaren Wirkstoff.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Robles-Martinez et al. — Originalabbildung 4: hochauflösende Raman-Daten zur Migration zwischen Schichten.",
+          "interpretation": "a, b und c kartieren Paracetamol, Acetylsalicylsäure und Naproxen. Links überlagern DCLS-Übereinstimmungskarten die optischen Bilder; rechts verläuft das Signal entlang Y (μm). Es reicht aus angereicherten Schichten in Nachbarschichten hinein, statt an sichtbaren Grenzen sofort auf null zu fallen. Die Übereinstimmungsintensität ist keine kalibrierte absolute Konzentration. Chemische Trennung ist hier schwächer als die optische Schichtung erwarten lässt. [Verteilungsergebnisse](ref:R02)"
+        },
+        "F02": {
+          "caption": "Robles-Martinez et al. — Originalabbildung 7: dynamische Auflösung von sechs Wirkstoffen aus drei Kombinationen.",
+          "interpretation": "a zeigt Zylinder Typ I, b Ring Typ II und c Ring Typ III mit PEG 300. Die Zeitachse ist in min, links steht die prozentuale Freisetzung, rechts mit brauner Linie der Medien-pH. Violettes Prednisolon bleibt in c bei ungefähr 45%, während Paracetamol, Coffein und Acetylsalicylsäure nahezu vollständig freigesetzt werden. Die Kurvenabstände zeigen, dass Geometrie- und Formulierungsänderungen nicht alle Komponenten proportional verbessern. [Dynamische Auflösung](ref:R02)"
+        },
+        "F03": {
+          "caption": "Windolf et al. — Originalabbildung 12: Dosisänderung im Kreuzkern und Freisetzung aus dem Außenring.",
+          "interpretation": "Oben: MiniHCwC1 mit 0.4 mg PDM; unten: MiniHCwC2 mit 1.5 mg PDM. Die Achsen zeigen min und freigesetzten Prozentsatz. Rotes PDM ist schneller, blaues LD/BZ langsamer. Geänderte Kreuzabmessungen verlängern die Zeit bis 75% PDM-Freisetzung von 20 auf 60 min, während LD/BZ bei ungefähr 750 min bleibt. Die vollständigen Maßzeichnungen zeigen Änderungen von Höhe und Breite; dies ist keine bloße Konzentrationsänderung. [Tabelle 11 und Originalabbildung](ref:R03)"
+        },
+        "F04": {
+          "caption": "Minopoli et al. — Originalabbildung 8: Säureschutz und zeitlich getrennte Kammerfreisetzung.",
+          "interpretation": "a zeigt den Wechsel von pH 2.5 zu 7.4. In b ist Rhodamin rot, Öl grün; gelbe und blaue Bereiche kennzeichnen die Medien. c/d zeigen zeitabhängige Fluoreszenzspektren in willkürlichen Einheiten. Das Prozentzeichen in b widerspricht dem Plateau um 1; die gezeichnete Säurephase von 1 h widerspricht 2 h im Methodenteil. Die Abbildung stützt Reihenfolge und Kurvenform, keinen exakten absoluten Gesamtprozentsatz oder klinischen Wirkungseintritt. [Freisetzungsversuch](ref:R04)"
+        },
+        "F05": {
+          "caption": "Minopoli et al. — Originalabbildung 9: Temperatur beeinflusst Masse, kurze Lagerung erlaubt Tracermigration.",
+          "interpretation": "a zeigt die Kapsel. b vergleicht relative Masse über 7 Tage bei 4 °C und 25 °C; bei Raumtemperatur beträgt der Verlust ungefähr 4%. c/d sind konfokale Bilder nach 0 h/2 h: Öl grün, Rhodamin rot. e/f zeigen Fluoreszenz gegen Abstand (μm) innerhalb der gestrichelten Bereiche. Nach 2 h reicht rotes Signal in die grüne Region; eine anfänglich scharfe Grenze ist keine dauerhafte Isolation. Massenkurven ersetzen keine räumliche Zusammensetzungsmessung. [Lagerung und Grenzfläche](ref:R04)"
+        }
+      }
+    }
+  }
+}

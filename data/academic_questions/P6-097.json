@@ -1,0 +1,343 @@
+{
+  "schema_version": 2,
+  "question_id": "P6-097",
+  "p": "P6",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_9ae8ce3d3bfdbbf2a3fd",
+    "doc_8f33085dab1f51ac8e67",
+    "doc_6b2ed650498782c55332",
+    "doc_d2d3aea723026a3279c0"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Feasibility of a 3D-printed anthropomorphic patient-specific head phantom for patient-specific quality assurance of intensity-modulated radiotherapy",
+      "publisher": "PLOS ONE",
+      "year": 2017,
+      "url": "https://doi.org/10.1371/journal.pone.0181560",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Technical Note: Development of 3D-printed breast phantoms for end-to-end testing of whole breast volumetric arc radiotherapy",
+      "publisher": "Journal of Applied Clinical Medical Physics",
+      "year": 2020,
+      "url": "https://doi.org/10.1002/acm2.12976",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "3D-Printed Organ-Realistic Phantoms to Verify Quantitative SPECT/CT Accuracy for 177Lu-PSMA-617 Treatment Planning",
+      "publisher": "Pharmaceuticals",
+      "year": 2025,
+      "url": "https://doi.org/10.3390/ph18040550",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Development of a novel 3D-printed dynamic anthropomorphic thorax phantom for evaluation of four-dimensional computed tomography",
+      "publisher": "Physics and Imaging in Radiation Oncology",
+      "year": 2024,
+      "url": "https://doi.org/10.1016/j.phro.2024.100656",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 1",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-097/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5519219/#pone.0181560.g001",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R02",
+      "original_label": "Fig. 1",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-097/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7484846/#acm212976-fig-0001",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R03",
+      "original_label": "Figure 1",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-097/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12029996/#pharmaceuticals-18-00550-f001",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Figure 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-097/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12029996/#pharmaceuticals-18-00550-f002",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Figure 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-097/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12029996/#pharmaceuticals-18-00550-f003",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R04",
+      "original_label": "Fig. 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-097/F06.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11546439/#f0010",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "个体化体模如何用于治疗计划质量控制？",
+      "direction": "放疗体模与质控",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "患者来源的外形并不等于患者原计划的完整复制",
+          "markdown": "Yea 等从头颈部患者 CT 提取外轮廓和空气腔，分成左右两半，既保留鼻腔、口腔等几何，又为矢状面胶片提供插入位置。实际模型以单一 ABS 材料打印，内部并未逐组织复原骨、脂肪和软组织。它的个体化主要是外形与空腔，不是患者全部放射学组织分布。[患者几何到体模](ref:R01)\n\n原始 CT 间隔为 3 mm，模型重建改为 0.5 mm；更密重采样有助于平滑表面，但不会凭空增加原始成像中的细节信息。打印体模另以 1 mm 层厚扫描后，才与患者影像配准、复制结构并在体模 CT 上重新优化计划。因此研究实际比较的是打印对象中重新计算和交付的剂量，而非患者原计划不经修改时在患者真实材料中的剂量。\n\n在 3%/3 mm 判据下，体模胶片通过率 95.97%，常规阵列 97.28%。两者平面和束角处理不同，不能用这个小差值证明等效性，也不能由高通过率证明分割阶段没有遗漏。其流程价值是将体模扫描、面罩固定、计划和测量连在一起，使患者形状相关的定位问题进入实验；未被模型包含的组织异质性仍不在这项验证范围内。\n\n研究未提供多病例重复、预设误差注入或患者体内参考测量。由此可明确检验链条经过了哪些步骤，却不能给出该体模对所有计划错误的检出概率。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "混合计划验证与真正重新开始的端到端测试覆盖不同环节",
+          "markdown": "Delombaerde 等把一个患者的乳房轮廓映射到已有胸部体模，裁去重叠部分，使打印附件与体模侧面凹槽契合。这保留了不规则乳房表面，并允许光学表面配准参与摆位；它不是把每位受试者的整个胸部都打印出来。[可附接的乳房几何](ref:R02)\n\n研究的 6 个患者计划来自乳房体积 385–1380 cm³ 的病例，却均重新计算在同一个 698 cm³ 附件几何上，形成混合计划验证。这种实验能检验不同调制计划在共同测量对象中的交付，不能当成逐患者原解剖的体内剂量复现。随后另做 1 个从体模模拟 CT、勾画、计划、表面摆位、锥形束 CT 核查到交付测量的完整端到端测试。\n\n完整测试中，强化区域围绕电离室敏感体积人为设定，便于点剂量评价。它检验有梯度的复杂计划，却不是某个真实病灶床的自然位置。测量便利性与解剖逼真性在这里共同影响设计；评价时须保留这项人工安排，而不能把任何附接式乳房体模都称为某位患者的完全复制品。\n\n整个系列只使用一种乳房大小，没有覆盖特别大或下垂的乳房；更多病例计划并不会自动扩大体模几何的覆盖范围。表面追踪可以在这一外形和颜色条件下工作，也不能据此证明所有皮肤光学性质、体位变化或呼吸形变都已得到验证。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "低通过率需要定位到链条中的具体来源，不能被平均值掩盖",
+          "markdown": "乳房研究先对计划做常规交付检查，再在附件中测量，使“计划能否交付”与“带解剖表面和测量槽的对象能否一致复现”可以比较。独立点测量的相对差范围为 −2.6% 至 0.3%，但胶片通过率范围为 80.1%–99.7%；总中位数 96.4% 隐藏了明显较差的单个平面。[分层验证结果](ref:R02)\n\n完整端到端测试的冠状胶片为 80.1%，而矢状胶片为 99.7%。作者怀疑前者与残余滚转有关，另外一些轴位差异可能来自翘曲导致的气隙。论文没有报告控制旋转、修复气隙后的重复对照，因此“怀疑来源”仍不是“已经定位并消除的故障”。体模的价值在于暴露问题，不能因为制造了个体外形就预先认定所有不符都来自治疗机器。\n\n胶片采用局部 Gamma，并排除低剂量区域和做全局剂量缩放。它对空间差异的反映与未缩放的电离室读数不同；同一对象需要这两种读出互补。研究没有把测得平面进一步重建为患者每个器官的剂量体积统计，也没有开展已知误差幅度与检出率的系统关系试验。\n\n这里的端到端证据是一次具体工作流程的可执行性与符合程度。它包含扫描、固定、几何映射、计划和交付，若其中某项被重新优化或用人工目标替代，其覆盖边界也应随之改变，不能把“端到端”当作不受条件限制的质量标签。",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "用于核素定量的个体器官模型先要分开审计设计、打印与密封",
+          "markdown": "Wilson 等选择接近人群平均体积的患者肾脏和腮腺影像，保留双侧相对位置与周围结构。肾脏分为皮质和髓质腔；腮腺一侧则经镜像生成另一侧。它们是患者来源、可配置的研究对象，并非完整保留某位患者的双侧不对称或逐体素生理摄取。[器官模型设计与几何审核](ref:R03)\n\n研究在原始轮廓、最终 CAD 与打印后 CT 三个阶段分别测量体积。左整肾依次为 195.9、206.1、211.3 cm³，右整肾为 192.4、197.7、200.9 cm³；设计处理和打印都可能引入扩大，不能把最后所有差异都称为打印误差。皮质腔在 CAD 中创建，没有原始患者皮质体积参照，不能用整肾的相符替代皮质解剖准确性。\n\n左腮腺 CAD 为 28.6 cm³，打印后为 32.0 cm³，表列扩大 11.8%。这超过摘要概括的不足 10%，因此必须保留实际局部结果。全体平均体积误差还会掩盖小器官的相对偏差。体积相近也不等于表面距离、局部壁厚与曲率都相近；该研究主要完成了体积审核。\n\n不同颜色液体的 24 h 检漏未见混色，给后续独立腔室定量提供了前提。检漏结果与影像边界外出现信号需要区分：后者还可能是空间分辨率导致的信号溢出，不能直接认定液体已漏到外部。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "恢复系数检验活度重建，尚未验证完整吸收剂量计算",
+          "markdown": "Wilson 等在 96 h 的 SPECT/CT 中，将轮廓内重建活度与衰变校正到成像时刻的已知活度比较。恢复系数定义为重建值除以参考值；下表的整肾与皮质属于同一物理肾模型的嵌套分析区域，不是新增独立注入或独立制造样本。[活度验证及恢复系数](ref:R03)\n\n| 分析区域 | 恢复系数 |\n|---|---:|\n| 左整肾／右整肾 | 0.93／0.93 |\n| 左皮质／右皮质 | 0.85／0.82 |\n| 左腮腺／右腮腺 | 0.85／0.83 |\n\n原文报告平均相对低估 13.2%，而表面积体积比与恢复系数的拟合 R² 为 0.85。小样本且含嵌套 ROI，这条相关性不能作为六个独立器官证明的普适校正规律。整肾轮廓回收更多皮质外溢信号，可能得到较高系数，却不意味着皮质的真实活度定位已经准确。\n\n周围软组织腔在本实验中没有放射性，目标背景比相当于无背景活度条件；各目标腔内又采用均匀分布。真实肾脏内部不均匀摄取、邻近器官活度以及不同重建方法，都可能改变恢复系数。把这里的系数直接套用到所有患者，会把本研究未测试的条件也当成已验证。\n\n该试验验证的是影像活度量化这一环。单一成像时点未检验患者生物清除和时间—活度曲线积分，也未用独立剂量计测得器官吸收剂量。它能指出后续剂量计算输入存在系统低估，不能直接给出患者剂量处方修正或证明完整治疗计划已经准确。",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "动态体模检验计划前的成像条件，运动输入还需与实际靶运动区分",
+          "markdown": "Lustermans 等把可压缩肺和独立胸部运动平台放入仿人胸廓，用于检查呼吸相关 CT 的重复性。其输入控制肺压缩，肺内肿块因高度不同而产生不同运动；不能把驱动平台位移直接作为全部靶区的真实位移。[动态质量检查](ref:R04)\n\n规则呼吸重复扫描时，不同肺段的曲线可再现，但较高位置肿块移动很小，较低位置移动明显。静态循环图还显示少量较大的回位偏差，说明“可重复”不是所有条件都完全重合。作者讨论肺与上方接触、弹性滞后以及分割定位的影响，没有用独立传感器逐点确认整个肺的变形场。\n\n不规则输入可产生双重边缘和插值伪影，因此该体模能把呼吸排序对图像、靶区边界和后续计划输入的影响变为可观察对象。然而原研究未实际比较这些伪影下的计划剂量变化，也未完成多个扫描方案的优劣试验；它检验的是计划前影像环节，而非已经闭合的动态剂量交付验证。\n\n外部平台用于连接呼吸监测装置，但主体胸廓保持刚性，内部前后和侧向运动也很小。因而外部信号被正确记录，不等于肺内每个靶区的运动都被正确重建。该模型没有复制心搏所致的全部内部运动，且原装置不兼容磁共振；在不同成像环境中的性能不能由当前 CT 结果直接推出。研究还未量化改变肺材料弹性后，外部输入与内部肿块位移之间的关系如何变化。",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Yea et al.：影像轮廓到可插胶片的头部实物。",
+          "interpretation": "a–c 为原始影像上的轮廓，d–f 为分半与表面对象，g–h 为打印实物和内部空气腔。骨在原始 CT 上可见，但成品没有用另一种材料逐骨复原。图证明几何和空腔的保留，不直接证明组织组成或剂量完全等同于患者。[几何转换](ref:R01)"
+        },
+        "F02": {
+          "caption": "Delombaerde et al.：乳房轮廓映射与重叠裁切。",
+          "interpretation": "a 的患者轮廓被移到 b 的既有胸部体模，再于 c 裁掉重叠区，d 显示最终配合。颜色变化代表几何操作，不是剂量响应。这个过程说明研究对象是适配既有体模的附件；真实患者胸壁、肺与乳房的相对关系已经经过映射，不能把最终形状称为未修改的完整患者复制。[附件生成](ref:R02)"
+        },
+        "F03": {
+          "caption": "Wilson et al.：分腔检漏提供独立定量的前提。",
+          "interpretation": "A 是肾髓质与皮质的不同染色，B–C 是面部模型中骨、腮腺和软组织分步染色。颜色保持分离支持所观察时段内未见明显混合；照片不量化微小泄漏检测下限，也不证明放射信号能无溢出地重建在每个腔室边界内。[密封检验](ref:R03)"
+        },
+        "F04": {
+          "caption": "Wilson et al.：CT 几何轮廓与 SPECT 活度分布并不完全重合。",
+          "interpretation": "A 为整体冠状视图，B 为腮腺横断面，C 为肾脏横断面；彩色活度覆盖灰度 CT，轮廓表示分析区域。信号越过轮廓边界说明有限分辨率与溢出，不能直接当作泄漏。色标代表活度浓度而非吸收剂量；整肾与皮质轮廓收集的信号范围不同。[定量影像对象](ref:R03)"
+        },
+        "F05": {
+          "caption": "Wilson et al.：恢复系数与几何量的相关性。",
+          "interpretation": "A 横轴为参考活度，B 为 ROI 体积，C 为表面积体积比；纵轴均为恢复系数。C 的负趋势最明显，但点包含同一肾模型的整肾和皮质读出，并非全部独立样本。拟合线描述本实验数据，不能直接作为所有患者或重建算法的校正曲线；恢复系数接近满值也没有检验时间—活度积分。[几何相关性](ref:R03)"
+        },
+        "F06": {
+          "caption": "Lustermans et al.：静态回位误差与动态运动幅度是不同纵轴。",
+          "interpretation": "A 的方形点比较重复静态压缩后的定位差，B 的菱形点和连线比较重复动态扫描的运动轨迹。A 的较大离群点不能被整体重复性描述抹去；B 中下部肿块运动明显、上部很小，说明驱动行程不等于每个肿块的位移。连线只是连接相位采样点，不是独立验证的连续运动模型。[重复性原图](ref:R04)"
+        }
+      }
+    },
+    "en": {
+      "title": "How are personalized phantoms used for treatment-planning quality assurance?",
+      "direction": "Radiotherapy phantoms and quality assurance",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Patient-derived shape is not complete replication of the original patient plan",
+          "markdown": "Yea et al. extracted a head-and-neck patient's external contour and air cavities, splitting the head into halves to preserve nasal/oral geometry and permit sagittal film placement. Single-material ABS did not reconstruct bone, fat and soft tissue separately. Personalization mainly concerned outline and cavities, not the complete radiological tissue distribution. [Patient geometry to phantom](ref:R01)\n\nOriginal CT spacing was 3 mm, resampled to 0.5 mm for model reconstruction. Denser sampling smooths surfaces without creating missing acquisition detail. The print was rescanned at 1 mm, registered to patient imaging, assigned copied structures and replanned on its own CT. The experiment therefore compares recalculated and delivered dose in a printed object, not an unchanged patient plan in true patient materials.\n\nAt 3%/3 mm, film passing was 95.97% and conventional-array passing 97.28%. Different planes and beam-angle handling prevent equivalence claims from this small difference; high passing also does not establish error-free segmentation. Linking scanning, mask fixation, planning and measurement brings shape-related positioning into the experiment, while omitted tissue heterogeneity remains outside validation.\n\nNo multicase repeats, prescribed error injection or in-patient reference measurements were reported. The traversed workflow stages can be identified, but detection probability for every planning error cannot be calculated.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Hybrid plan checks and newly started end-to-end tests cover different stages",
+          "markdown": "Delombaerde et al. mapped one patient's breast contour onto an existing thorax phantom and cropped overlap to fit its lateral indentation. The attachment retained an irregular breast surface for optical setup registration; it did not reproduce every participant's whole thorax. [Attachable breast geometry](ref:R02)\n\nThe 6 patient plans came from breast volumes of 385–1380 cm³ but were all recalculated on one 698 cm³ attachment geometry as hybrid verification. This tests delivery of different modulations in a shared measurement object, not each original anatomy's in-vivo dose. Another 1 complete end-to-end test started from phantom simulation CT, contouring and planning through surface setup, cone-beam CT verification and delivery measurement.\n\nIts boost region was artificially placed around the chamber's active volume for point-dose evaluation. This tests a complex gradient-bearing plan, not the natural location of a real tumor bed. Measurement convenience and anatomical realism jointly shape the design; the artificial arrangement must remain explicit rather than describing any attachment as an exact individual copy.\n\nOnly one breast size was manufactured, excluding very large or pendulous geometries. More patient plans do not automatically broaden phantom geometry coverage. Successful surface tracking for this shape and color does not validate every skin optical property, posture change or respiratory deformation.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Low passing rates must be traced within the workflow rather than hidden by averages",
+          "markdown": "Conventional delivery checks preceded breast-attachment measurements, distinguishing plan deliverability from reproducibility in an anatomical surface with detector slots. Independent point differences ranged from −2.6% to 0.3%, whereas film passing spanned 80.1%–99.7%. The overall median of 96.4% conceals substantially poorer individual planes. [Layered verification results](ref:R02)\n\nThe complete end-to-end coronal film passed at 80.1%, versus 99.7% sagittally. The authors suspected residual roll for the former and warping-related air gaps for other axial discrepancies. No controlled-rotation or repaired-gap repeat established those causes. A suspected source is not a localized and eliminated failure; anatomical shape does not make every disagreement a treatment-machine fault.\n\nFilm used local gamma, a low-dose exclusion and global dose scaling, probing spatial differences differently from unscaled chamber readouts. Both measurements are complementary. Measured planes were not reconstructed into every patient's organ dose-volume statistics, and known error magnitudes were not systematically related to detection rates.\n\nEnd-to-end evidence here concerns execution and agreement of one concrete workflow. It includes scanning, fixation, geometry mapping, planning and delivery. Reoptimization or artificial targets change coverage; “end-to-end” is not a condition-free quality label.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "Radionuclide-quantification phantoms require separate design, print and sealing audits",
+          "markdown": "Wilson et al. selected patient kidney and parotid images near population-average volumes, retaining bilateral spacing and surrounding structures. Kidneys had cortical and medullary chambers; the contralateral parotid was mirrored from one side. These are patient-derived configurable objects, not complete copies of individual asymmetry or voxelwise physiological uptake. [Organ design and geometry audit](ref:R03)\n\nVolumes were measured at original contour, final CAD and postprint CT stages. Left whole kidney progressed through 195.9, 206.1 and 211.3 cm³, and right through 192.4, 197.7 and 200.9 cm³. Both design processing and printing can expand geometry, so all final discrepancies are not printing error. Cortices were created in CAD without original patient cortex-volume references; whole-kidney agreement does not establish cortical accuracy.\n\nLeft-parotid CAD was 28.6 cm³ and printed CT 32.0 cm³, a tabulated 11.8% expansion, exceeding the abstract's “below 10%” summary. Actual local results must remain visible; overall averages conceal small-organ relative errors. Similar volumes also do not establish matching surface distances, local walls or curvature; this audit primarily measured volume.\n\nDifferently colored fluids showed no mixing after 24 h, supporting independent-compartment quantification. Leakage testing must remain separate from signal beyond image boundaries, which can reflect resolution-related spill-out rather than escaped fluid.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Recovery coefficients test reconstructed activity, not the entire absorbed-dose calculation",
+          "markdown": "At 96 h SPECT/CT, Wilson et al. compared reconstructed contour activity with known activity decay-corrected to imaging time. Recovery is reconstructed divided by reference activity. Whole kidneys and cortices are nested regions of the same physical kidneys, not additional independent injections or manufactured samples. [Activity verification and recovery](ref:R03)\n\n| Region | Recovery coefficient |\n|---|---:|\n| Left/right whole kidney | 0.93/0.93 |\n| Left/right cortex | 0.85/0.82 |\n| Left/right parotid | 0.85/0.83 |\n\nMean relative underestimation was 13.2%, and recovery versus surface-area-to-volume ratio had R²=0.85. Few observations with nested ROIs do not establish a universal correction from six independent organs. Whole-kidney contours can capture more cortical spill-out, producing higher coefficients without accurate cortical localization.\n\nSurrounding soft-tissue chambers contained no radioactivity, giving a no-background-activity condition; target chambers had homogeneous distributions. Actual heterogeneous kidney uptake, neighboring activity and reconstruction methods can alter recovery. Applying these coefficients to all patients would treat untested conditions as validated.\n\nThis tests image activity quantification. One imaging time does not verify biological clearance or time–activity integration, and no independent dosimeter measured organ absorbed dose. The experiment exposes systematic underestimation in a downstream dose-calculation input, not a patient prescription correction or proof of complete planning accuracy.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Dynamic phantoms test preplanning imaging, while actuator input differs from target motion",
+          "markdown": "Lustermans et al. placed compressible lungs and an independently driven chest platform in an anthropomorphic thorax to test respiratory CT repeatability. Inputs control lung compression, while tumors at different heights move differently; platform displacement is not the true motion of every target. [Dynamic quality checks](ref:R04)\n\nRepeated regular-breathing scans reproduce regional curves, with small upper-lung and larger lower-lung excursions. Static-cycle plots also contain occasional larger return-position deviations, so reproducibility does not mean complete coincidence under all conditions. Superior contact, elastic hysteresis and segmentation localization were discussed without independent pointwise sensing of the entire lung deformation field.\n\nIrregular inputs create double edges and interpolation artifacts, exposing respiratory sorting effects on images, target boundaries and subsequent planning inputs. The study did not calculate resulting plan-dose changes or compare multiple scanning protocols. It tests preplanning imaging rather than a completed dynamic dose-delivery chain.\n\nThe external platform accepts respiratory monitoring devices, but the main chest remains rigid and internal anterior–posterior and lateral motion is small. Correctly recorded external signals do not establish correctly reconstructed motion of every internal target. The model does not reproduce all heartbeat-related internal motion and is not MR compatible; performance in other imaging environments cannot be inferred directly from CT. Changes in the relationship between external input and tumor displacement after altering lung elasticity were not quantified.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Yea et al.: Image contours become a head object accommodating film.",
+          "interpretation": "a–c show image contours, d–f split surfaces, and g–h the physical print with air cavities. Bone is visible in original CT but not separately reconstructed in another material. The figure shows retained geometry and cavities, not identical tissue composition or patient dose. [Geometry conversion](ref:R01)"
+        },
+        "F02": {
+          "caption": "Delombaerde et al.: Breast-contour mapping and overlap removal.",
+          "interpretation": "The patient contour in a moves to the existing thorax in b, is cropped in c, and fits in d. Colors denote geometry operations, not dose response. The object is an adapted attachment; original chest-wall, lung and breast relationships underwent mapping, not unchanged whole-patient reproduction. [Attachment generation](ref:R02)"
+        },
+        "F03": {
+          "caption": "Wilson et al.: Compartment leak tests support independent quantification.",
+          "interpretation": "A distinguishes medulla and cortex dyes; B–C stage bone, parotid and soft-tissue coloring. Separation supports no visible mixing during observation. Photos do not quantify the detection limit for tiny leaks or establish reconstruction without signal spill-out across chamber boundaries. [Sealing evaluation](ref:R03)"
+        },
+        "F04": {
+          "caption": "Wilson et al.: CT boundaries and SPECT activity do not coincide exactly.",
+          "interpretation": "A is the overall coronal view, B axial parotids and C axial kidneys. Colored activity overlays grayscale CT; contours define analysis regions. Signal beyond boundaries reflects limited resolution and spill-out rather than directly establishing leakage. The scale is activity concentration, not absorbed dose; whole-kidney and cortical regions collect different signals. [Quantitative imaging object](ref:R03)"
+        },
+        "F05": {
+          "caption": "Wilson et al.: Recovery versus geometric quantities.",
+          "interpretation": "A plots reference activity, B ROI volume and C surface-area-to-volume ratio; all vertical axes show recovery. C has the clearest negative trend, but points include whole-kidney and cortical readings from the same objects, not fully independent samples. Fits describe this experiment rather than universal patient or reconstruction corrections, and near-full recovery does not test time–activity integration. [Geometry association](ref:R03)"
+        },
+        "F06": {
+          "caption": "Lustermans et al.: Static return error and dynamic amplitude use different vertical quantities.",
+          "interpretation": "Squares in A compare positional differences after repeated static compression; diamonds and connecting lines in B compare dynamic-scan trajectories. Larger A outliers must not disappear behind overall reproducibility claims. Lower tumors move more than upper ones in B, separating actuator travel from each lesion’s displacement. Lines join sampled phases rather than independently validating continuous motion. [Original repeatability figure](ref:R04)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie werden individualisierte Phantome zur Qualitätssicherung der Therapieplanung eingesetzt?",
+      "direction": "Strahlentherapiephantome und Qualitätssicherung",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Patientenbasierte Form ist keine vollständige Replikation des ursprünglichen Patientenplans",
+          "markdown": "Yea et al. extrahierten Außenkontur und Lufträume einer Kopf-Hals-CT und teilten den Kopf zur sagittalen Filmeinlage. Nasen- und Mundgeometrie blieben erhalten; einheitliches ABS rekonstruierte Knochen, Fett und Weichteile nicht getrennt. Individualisierung betraf vor allem Umriss und Hohlräume, nicht die vollständige radiologische Gewebeverteilung. [Patientengeometrie zum Phantom](ref:R01)\n\nDie ursprünglichen CT-Abstände betrugen 3 mm, für die Modellrekonstruktion auf 0.5 mm resampelt. Dichtere Abtastung glättet Oberflächen, erzeugt aber keine fehlenden Aufnahmedetails. Der Druck wurde mit 1 mm erneut gescannt, mit Patientenbildern registriert, mit kopierten Strukturen versehen und auf eigener CT neu geplant. Verglichen wird somit neu berechnete und applizierte Dosis im Druckobjekt, kein unveränderter Patientenplan in realen Patientengeweben.\n\nBei 3%/3 mm bestanden 95.97% der Filmpunkte und 97.28% des konventionellen Arrays. Unterschiedliche Ebenen und Winkelbehandlung verhindern Äquivalenzaussagen aus dieser kleinen Differenz; hohes Bestehen bestätigt auch keine fehlerfreie Segmentierung. Die Verbindung von Scan, Maskenfixierung, Planung und Messung bezieht formbezogene Lagerung ein, ausgelassene Gewebeheterogenität bleibt ungeprüft.\n\nMehrfallwiederholungen, vorgegebene Fehlereinbringung und In-patient-Referenzmessungen fehlen. Durchlaufene Prozessschritte lassen sich benennen, eine Erkennungswahrscheinlichkeit sämtlicher Planungsfehler nicht berechnen.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Hybridplanprüfung und neu begonnener End-to-End-Test decken verschiedene Schritte ab",
+          "markdown": "Delombaerde et al. übertrugen die Brustkontur einer Patientin auf ein vorhandenes Thoraxphantom und entfernten Überlappung zur seitlichen Einpassung. Der Aufsatz erhielt eine unregelmäßige Oberfläche für optische Lagerungsregistrierung; er kopierte nicht den gesamten Thorax jeder Teilnehmerin. [Ansetzbare Brustgeometrie](ref:R02)\n\nDie 6 Patientenpläne stammten von Brustvolumina 385–1380 cm³, wurden aber sämtlich auf derselben 698 cm³-Aufsatzgeometrie als Hybridprüfung neu berechnet. Geprüft werden verschiedene Modulationen im gemeinsamen Messobjekt, keine In-vivo-Dosis jeder Originalanatomie. Zusätzlich begann 1 vollständiger End-to-End-Test mit Phantom-Simulations-CT, Konturierung und Planung, gefolgt von Oberflächenlagerung, Cone-Beam-CT-Kontrolle und Applikationsmessung.\n\nDie Boostregion lag künstlich um das aktive Kammervolumen zur Punktdosisprüfung. Dies prüft einen komplexen Gradientenplan, keine natürliche Lage eines realen Tumorbetts. Messbarkeit und Anatomietreue bestimmen gemeinsam das Design; die künstliche Anordnung muss erkennbar bleiben, statt jeden Aufsatz als exakte Individualkopie zu beschreiben.\n\nGefertigt wurde nur eine Brustgröße, keine sehr großen oder hängenden Formen. Mehr Patientenpläne erweitern nicht automatisch geometrische Abdeckung. Funktionierendes Oberflächentracking dieser Form und Farbe validiert weder sämtliche optischen Hauteigenschaften noch Haltungsänderungen oder Atemverformungen.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Niedrige Bestehensraten müssen im Prozess verortet statt weggemittelt werden",
+          "markdown": "Konventionelle Applikationsprüfungen gingen Messungen im Brustaufsatz voraus. So bleiben Planlieferbarkeit und Reproduktion in anatomischer Oberfläche mit Detektorschlitzen unterscheidbar. Unabhängige Punktabweichungen reichten von −2.6% bis 0.3%, Filmraten von 80.1%–99.7%. Der Gesamtmedian 96.4% verdeckt deutlich schlechtere Einzelebenen. [Gestufte Prüfergebnisse](ref:R02)\n\nIm vollständigen End-to-End-Test bestand der koronale Film mit 80.1%, der sagittale mit 99.7%. Vermutet wurden Rest-Rollrotation für ersteren und verzugsbedingte Luftspalte für andere axiale Differenzen. Kontrollierte Rotation oder Wiederholung nach Spaltreparatur bestätigten dies nicht. Eine vermutete Ursache ist kein lokalisierter und beseitigter Fehler; anatomische Form macht nicht jede Abweichung zum Bestrahlungsgerätefehler.\n\nFilme nutzten lokale Gamma-Auswertung, Niedrigdosisausschluss und globale Dosisskalierung, während unskalierte Kammerwerte andere Informationen liefern. Beide ergänzen sich. Messebenen wurden nicht in individuelle Organ-Dosisvolumenstatistiken rekonstruiert; bekannte Fehlergrößen wurden nicht systematisch mit Nachweisraten verknüpft.\n\nEnd-to-End-Evidenz betrifft hier Ausführbarkeit und Übereinstimmung eines konkreten Prozesses mit Scan, Fixierung, Geometriezuordnung, Planung und Applikation. Neuoptimierung oder künstliche Ziele verändern dessen Abdeckung; „End-to-End“ ist kein bedingungsloses Qualitätssiegel.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "Für Nuklidquantifizierung sind Entwurf, Druck und Dichtigkeit getrennt zu prüfen",
+          "markdown": "Wilson et al. wählten patientenbasierte Nieren- und Parotisbilder nahe mittleren Populationsvolumina mit beidseitigem Abstand und Umgebungsstrukturen. Nieren erhielten Rinden- und Markkammern; die Gegenparotis wurde gespiegelt. Dies sind patientenbasierte konfigurierbare Objekte, keine vollständigen Kopien individueller Asymmetrie oder voxelweiser physiologischer Aufnahme. [Organentwurf und Geometrieprüfung](ref:R03)\n\nVolumina wurden an Originalkontur, finalem CAD und Druck-CT gemessen. Die linke Gesamtnierenfolge betrug 195.9, 206.1 und 211.3 cm³, rechts 192.4, 197.7 und 200.9 cm³. Entwurfsverarbeitung und Druck können beide vergrößern; nicht jede Endabweichung ist Druckfehler. Rinden entstanden im CAD ohne originale Patienten-Rindenvolumina; Gesamtnierenübereinstimmung bestätigt keine Rindenanatomie.\n\nLinks betrug Parotis-CAD 28.6 cm³, Druck-CT 32.0 cm³, tabelliert 11.8% Vergrößerung statt der Zusammenfassung „unter 10%“. Lokale Ergebnisse müssen sichtbar bleiben; Gesamtmittel verdecken relative Fehler kleiner Organe. Ähnliche Volumina bestätigen zudem keine gleichen Oberflächenabstände, lokalen Wände oder Krümmungen; geprüft wurde vorwiegend Volumen.\n\nVerschieden gefärbte Flüssigkeiten zeigten nach 24 h keine Vermischung, eine Voraussetzung unabhängiger Kammerquantifizierung. Leckprüfung bleibt von Signal außerhalb der Bildgrenzen getrennt: Auflösungsbedingtes Spill-out bedeutet nicht zwingend ausgetretene Flüssigkeit.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Recovery-Koeffizienten prüfen rekonstruierte Aktivität, nicht die gesamte Energiedosisberechnung",
+          "markdown": "Wilson et al. verglichen bei 96 h SPECT/CT rekonstruierte Konturaktivität mit bekannter, auf den Bildzeitpunkt zerfallskorrigierter Aktivität. Recovery ist rekonstruierte geteilt durch Referenzaktivität. Gesamtnieren und Rinden sind verschachtelte Regionen derselben physischen Nieren, keine zusätzlichen unabhängigen Befüllungen oder Druckproben. [Aktivitätsprüfung und Recovery](ref:R03)\n\n| Region | Recovery-Koeffizient |\n|---|---:|\n| Linke/rechte Gesamtniere | 0.93/0.93 |\n| Linke/rechte Rinde | 0.85/0.82 |\n| Linke/rechte Parotis | 0.85/0.83 |\n\nMittlere relative Unterschätzung betrug 13.2%; Recovery gegen Oberflächen-Volumen-Verhältnis ergab R²=0.85. Wenige Beobachtungen mit verschachtelten ROIs belegen kein universelles Korrekturgesetz aus sechs unabhängigen Organen. Gesamtnierenkonturen können mehr Rinden-Spill-out erfassen und höhere Koeffizienten liefern, ohne korrekte Lokalisation in der Rinde.\n\nUmgebende Weichteilkammern enthielten keine Radioaktivität, also eine Bedingung ohne Hintergrundaktivität; Zielkammern waren homogen. Reale heterogene Nierenaufnahme, benachbarte Aktivität und Rekonstruktion können Recovery ändern. Anwendung auf sämtliche Patienten würde ungeprüfte Bedingungen als validiert behandeln.\n\nGeprüft wird Bildaktivitätsquantifizierung. Ein Bildzeitpunkt validiert weder biologische Clearance noch Zeit-Aktivitäts-Integration; unabhängige Dosimeter maßen keine Organenergiedosis. Das Experiment zeigt systematische Unterschätzung eines späteren Dosiseingangs, keine Patienten-Verordnungskorrektur oder vollständige Planungsgenauigkeit.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Dynamische Phantome prüfen Vorplanungsbilder; Antriebseingabe ist nicht Zielbewegung",
+          "markdown": "Lustermans et al. integrierten komprimierbare Lungen und unabhängig bewegte Brustplattform in einen anthropomorphen Thorax zur Prüfung atembezogener CT-Wiederholbarkeit. Eingaben steuern Lungenkompression, Tumoren verschiedener Höhe bewegen sich unterschiedlich. Plattformverschiebung ist daher nicht die reale Bewegung jedes Ziels. [Dynamische Qualitätsprüfungen](ref:R04)\n\nWiederholte regelmäßige Atemscans reproduzieren regionale Kurven mit kleinen oberen und größeren unteren Auslenkungen. Statische Zyklusgrafiken zeigen einzelne größere Rückkehrabweichungen; Reproduzierbarkeit bedeutet keine vollständige Deckung aller Bedingungen. Oberer Kontakt, elastische Hysterese und Segmentierungslokalisation wurden diskutiert, ohne unabhängige punktweise Erfassung des gesamten Lungenverformungsfelds.\n\nUnregelmäßige Eingaben erzeugen Doppelränder und Interpolationsartefakte und machen Atemsortiereffekte auf Bilder, Zielgrenzen und spätere Planungseingaben sichtbar. Daraus resultierende Plandosisänderungen oder mehrere Scanprotokolle wurden nicht verglichen. Geprüft wird Vorplanungsbildgebung statt einer geschlossenen dynamischen Dosisapplikationskette.\n\nDie äußere Plattform nimmt Atemmonitoringgeräte auf, der Hauptthorax bleibt jedoch starr und innere anteroposteriore sowie laterale Bewegung gering. Korrekt erfasste äußere Signale bestätigen keine korrekte Rekonstruktion jedes inneren Ziels. Nicht alle herzschlagbedingten Bewegungen werden nachgebildet; das Gerät ist nicht MR-kompatibel. Leistung in anderen Bildumgebungen folgt nicht unmittelbar aus CT. Änderungen der Beziehung zwischen äußerer Eingabe und Tumorverschiebung bei veränderter Lungenelastizität wurden nicht quantifiziert.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Yea et al.: Bildkonturen werden zum Kopfobjekt mit Filmeinlage.",
+          "interpretation": "a–c zeigen Bildkonturen, d–f geteilte Oberflächen, g–h den Druck mit Lufträumen. Im Original-CT sichtbarer Knochen wurde nicht gesondert aus anderem Material hergestellt. Geometrie und Hohlräume bleiben erhalten, gleiche Gewebezusammensetzung oder Patientendosis ist damit nicht belegt. [Geometrieumwandlung](ref:R01)"
+        },
+        "F02": {
+          "caption": "Delombaerde et al.: Brustkonturübertragung und Überlappungsentfernung.",
+          "interpretation": "Die Patientenkontur aus a wird in b übertragen, in c beschnitten und passt in d. Farben bezeichnen Geometrieoperationen, keine Dosisantwort. Das Objekt ist ein angepasster Aufsatz; ursprüngliche Brustwand-Lungen-Brust-Beziehungen wurden übertragen, nicht unverändert als ganze Patientin reproduziert. [Aufsatzherstellung](ref:R02)"
+        },
+        "F03": {
+          "caption": "Wilson et al.: Kammerlecktests stützen unabhängige Quantifizierung.",
+          "interpretation": "A unterscheidet Mark- und Rindenfärbung, B–C stufenweise Knochen-, Parotis- und Weichteilfärbung. Trennung stützt fehlende sichtbare Mischung im Beobachtungszeitraum. Fotos quantifizieren weder Nachweisgrenzen kleinster Lecks noch Rekonstruktion ohne Signal-Spill-out über Kammergrenzen. [Dichtigkeitsprüfung](ref:R03)"
+        },
+        "F04": {
+          "caption": "Wilson et al.: CT-Grenzen und SPECT-Aktivität decken sich nicht vollständig.",
+          "interpretation": "A zeigt die koronale Übersicht, B axiale Parotiden, C axiale Nieren. Farbige Aktivität überlagert Graustufen-CT, Konturen definieren Auswertungsregionen. Grenzüberschreitendes Signal betrifft Auflösung und Spill-out, nicht unmittelbar Leckage. Die Skala bedeutet Aktivitätskonzentration statt Energiedosis; Gesamtniere und Rinde erfassen unterschiedliche Signale. [Quantitatives Bildobjekt](ref:R03)"
+        },
+        "F05": {
+          "caption": "Wilson et al.: Recovery im Verhältnis zu Geometriegrößen.",
+          "interpretation": "A zeigt Referenzaktivität, B ROI-Volumen, C Oberflächen-Volumen-Verhältnis; vertikal steht jeweils Recovery. C hat den deutlichsten negativen Trend, doch Punkte enthalten Gesamtnieren- und Rindenwerte derselben Objekte statt unabhängiger Proben. Anpassungen beschreiben diesen Versuch, keine universelle Patienten- oder Rekonstruktionskorrektur; nahezu vollständige Recovery prüft keine Zeit-Aktivitäts-Integration. [Geometrieassoziation](ref:R03)"
+        },
+        "F06": {
+          "caption": "Lustermans et al.: Statische Rückkehrfehler und dynamische Amplituden sind verschiedene Größen.",
+          "interpretation": "Quadrate in A vergleichen Positionsdifferenzen wiederholter statischer Kompression; Rauten und Linien in B dynamische Scanverläufe. Größere Ausreißer in A dürfen nicht hinter allgemeinen Wiederholbarkeitsaussagen verschwinden. Untere Tumoren bewegen sich in B stärker als obere; Antriebsweg ist nicht jede Läsionsverschiebung. Linien verbinden Phasenstichproben, keine unabhängig validierte kontinuierliche Bewegung. [Originale Wiederholbarkeitsgrafik](ref:R04)"
+        }
+      }
+    }
+  }
+}

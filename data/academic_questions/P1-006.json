@@ -1,0 +1,291 @@
+{
+  "schema_version": 2,
+  "question_id": "P1-006",
+  "p": "P1",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_0299095963fda4790c47",
+    "doc_043090ea998f33134011",
+    "doc_7cf21296072135a6c82e"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Preliminary Investigation on the Geometric Accuracy of 3D Printed Dental Implant Using a Monkey Maxilla Incisor Model",
+      "publisher": "International Journal of Bioprinting",
+      "year": 2022,
+      "url": "https://doi.org/10.18063/ijb.v8i1.476",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Thickness accuracy of virtually designed patient-specific implants for large neurocranial defects",
+      "publisher": "Journal of Anatomy",
+      "year": 2021,
+      "url": "https://doi.org/10.1111/joa.13465",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Accuracy Assessment of Molded, Patient-Specific Polymethylmethacrylate Craniofacial Implants Compared to Their 3D Printed Originals",
+      "publisher": "Journal of Clinical Medicine",
+      "year": 2020,
+      "url": "https://doi.org/10.3390/jcm9030832",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Quantitative Assessment of Point-of-Care 3D-Printed Patient-Specific Polyetheretherketone (PEEK) Cranial Implants",
+      "publisher": "International Journal of Molecular Sciences",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/ijms22168521",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P1-006/F01.jpg",
+      "source_url": "https://article.accscience.com/journal/IJB/8/1/full/IJB_8_1_3a53ec.pdf",
+      "license": "CC BY-NC 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R03",
+      "original_label": "Fig. 6",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P1-006/F02.png",
+      "source_url": "https://mdpi-res.com/d_attachment/jcm/jcm-09-00832/article_deploy/jcm-09-00832.pdf",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R04",
+      "original_label": "Fig. 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P1-006/F03.png",
+      "source_url": "https://mdpi-res.com/d_attachment/ijms/ijms-22-08521/article_deploy/ijms-22-08521.pdf",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R04",
+      "original_label": "Fig. 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P1-006/F04.png",
+      "source_url": "https://mdpi-res.com/d_attachment/ijms/ijms-22-08521/article_deploy/ijms-22-08521.pdf",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "影像建模与定制设计如何改善植入物适配？",
+      "direction": "个体化植入物",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "“适配”在不同实验里使用不同参照物",
+          "markdown": "影像建模改善适配，首先体现在它把需要恢复的边界变成可测量的几何对象：牙根需要对应拔牙窝，颅骨修补体需要连续连接缺损边缘，同时恢复外形与内表面。两者都不能只用“打印件与设计很接近”来证明原始解剖已被准确重建。Liu等将真实牙齿、影像分割模型和打印植入物分开比较，正好显示这几个参照物之间的差别。[牙根复制实验](ref:R01)\n\n| 实验比较 | 实际回答的问题 | 未包含的环节 |\n|---|---|---|\n| 分割模型与取出的真实牙齿 | 影像是否保留目标表面 | 后续打印与装配 |\n| 虚拟修补体与预先已知的完整颅骨 | 缺失外形和厚度能否被重建 | 材料成形误差 |\n| 模塑成品与扫描后的打印模板 | 模具复制是否保留模板形状 | 模板是否正确代表患者 |\n| 打印成品彼此比较 | 同一过程能否重复产生相似物体 | 所有成品共有的设计或制造偏差 |\n\n这几种实验可以连起来解释误差从何而来，但其百分比和均方根误差不能直接排成材料或工艺优劣榜。Wittner等提供的是虚拟重建证据，Chamo等测量模塑复制，Sharma等则把打印真确度、重复性、装配形态和加载行为分别测试。[厚度重建](ref:R02)[模塑复制](ref:R03)[PEEK综合测量](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "牙根复制：高制造一致性不能追回分割丢失的几何",
+          "markdown": "Liu等从猴上颌中切牙影像分割14个牙根模型，以300–5000 HU的阈值辅助选择目标，再在不同切面手动修整。最终比较中，分割模型对真实牙齿使用14个样本，打印相关比较使用8个样本；因此三组均值不构成完全相同样本的误差逐项相减。[方法、结果及表3](ref:R01)\n\n| 比较对象 | 原文0.1 mm容差判据下的表面符合率，均值±标准差 |\n|---|---:|\n| 分割模型与真实牙齿 | 66.91%±10.51 |\n| 打印件与分割模型 | 90.59%±4.75 |\n| 打印件与真实牙齿 | 68.70%±5.63 |\n\n这些数值是配准后满足指定判据的表面比例，不是植入成功率，也不是平均距离误差。原文将容差写为+0.1 mm，本文保留其判据含义，不另行改写为已经验证的双侧容差。打印过程较好地复制了分割模型，但最终形状对真实牙齿的符合率仍接近分割阶段，说明提升成形精度本身无法补回影像处理丢失的解剖信息。\n\n作者在结果中将主要偏差定位于根尖，并讨论小尺寸、骨与牙密度边界、阈值选择及支撑去除的影响。图示实物约1 cm长，局部边界处理占据的相对尺度不可忽视。初步植入观察还发现打印件略突出于牙槽窝，说明外形接近和完全就位是不同终点；研究没有据此测得长期骨结合或临床成功率。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "颅骨修补：外轮廓相似仍可能掩盖厚度错误",
+          "markdown": "Wittner等选择对应双侧和单侧大缺损的完整颅骨，人工移除目标区域后再重建，使被移除的原始几何可作为已知真值。研究包含3个临床缺损形态、对应的3个虚拟缺损试验，以及不同参考形状下共132次重建；这个次数不是患者样本量。薄板样条（TPS）方法把内外表面的831个标志点及半标志点同时纳入，其中47个是解剖标志点；对照CAD流程则用镜像或参考外形、手工样条和厚度偏置构造修补体。[虚拟缺损设计与方法](ref:R02)\n\n| 已知真值的虚拟缺损 | CAD厚度RMSE | 采用Procrustes平均形状的TPS厚度RMSE |\n|---|---:|---:|\n| KO1，双侧 | 0.64 mm | 0.69 mm |\n| KO2，单侧 | 1.38 mm | 0.63 mm |\n| KO3，单侧 | 1.67 mm | 0.70 mm |\n\n结果第3.6节显示，TPS的优势集中在两个侧方缺损，不能写成所有案例均优于CAD。颞骨、蝶骨附近的复杂曲率和局部厚度变化，使“恢复外表面后统一加厚”较难重现原骨；同时约束内外表面可以保留较厚区域向较薄区域的过渡。双侧案例中两法厚度误差接近，CAD数值还略低。\n\n这一比较针对论文实际使用的重建流程，不意味着所有CAD工具只能生成等厚植入物。临床缺失区域本来没有可直接测量的原始厚度，作者通过完整颅骨的虚拟缺损检验算法，而不是对真实患者缺失部位宣称获得了真值。该实验未打印这些修补体，厚度恢复也尚未在其中转化为实测承载收益。",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "PMMA模塑：模板准确度与复制准确度必须分开",
+          "markdown": "Chamo等对颅骨缺损（CRD）和颞眶缺损（TOD）各制作10个聚甲基丙烯酸甲酯（PMMA）复制体。先打印聚乳酸模板并作光学扫描，再用硅胶模具成形PMMA，成品经锥形束CT分割后，与扫描模板进行点配准和最佳拟合。因此，比较的基准已经包含模板打印与修整的结果，不是未经制造的患者解剖真值。[成形、扫描及配准方法](ref:R03)\n\n颅骨组RMS中位数为0.574 mm，四分位范围0.528–0.701 mm；颞眶组为0.843 mm，四分位范围0.635–0.943 mm，两组差异P=0.028。两组最大RMS分别达到1.128和1.079 mm，不能把中位数小于1 mm扩写成所有成品均小于1 mm。每组复制同一缺损形状，两名术者分别负责对应案例，形状、操作及成形条件并没有被完全拆开。\n\n原图6的内外表面偏差图进一步指出，颞眶形状的局部突出与边缘内缩比颅骨组更明显。这个观察比单一总体RMS更接近装配问题：不同位置的正负偏差，可能分别对应局部过盈和边界间隙。两组CBCT使用不同扫描体积与分辨率，也使两组差异不能被单独解释为解剖曲率造成。研究证明的是这套复制流程的几何保真度，并未同时验证模板对患者的准确度或术后效果。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "PEEK打印：重复得很一致，仍可在局部稳定地偏离设计",
+          "markdown": "Sharma等依据同一例大面积额颞顶缺损设计，重复打印10个聚醚醚酮（PEEK）植入物。光学扫描后，打印件与计划模型比较的平均RMSE为0.731±0.013 mm；打印件彼此比较的平均RMSE为0.155±0.081 mm。后者来自90次配对比较，仍只涉及10个成品，不能作为90个独立样本处理。[打印真确度与重复性](ref:R04)\n\n较低的件间差异说明过程具有重复性，但各件可能共同偏离设计。装入颅骨模型后的整体轮廓RMSE为0.499±0.032 mm，重建对称指数为97.48±0.023%。这些指标覆盖包含未缺损区域的整体重建，与单独植入物的误差使用不同测量范围；数值变小不等于植入物局部误差已被纠正。\n\n形态评价中6件为“良好”，4件为“满意”。原图2展示后一类：前方额颞缘保留连续性，但后方颞下缘约1.5 mm的偏差改变了切向贴合，使局部由覆盖式变为嵌入式。这里最有解释力的是误差发生的位置及方向，而不是对称指数本身。影像建模为比对提供同一解剖坐标，局部截面则把整体相似度不能分辨的边缘装配问题显现出来。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "几何适配与加载行为：同一批样品给出不同排序",
+          "markdown": "同一PEEK研究把成品置于聚乳酸颅骨支撑模型上，用直径10 mm的半球压头在中央以1 mm/min加载至失效。平均峰值力为798.38±211.45 N，但较好的外形贴合并没有对应统一的破坏模式：“满意”组属于第2类破坏，“良好”组却同时出现第1类和第3类破坏。这使几何与材料连接质量成为需要分别解释的变量。[力学方法、结果及原图4](ref:R04)\n\n峰值最高的试样达到1183 N，已先在约293 N和660 N出现裂纹；峰值最低的试样为541 N，首次裂纹约410 N。最高峰值与最早起裂并非同一排序，选用峰值、起裂载荷或峰后完整性会回答不同问题。断面显示前者具有较强的层间连接，后者有可见间隙和较弱连接，支持把成形内部结构加入对几何检测结果的解释。\n\n这一加载使用特定颅骨支撑、中央受力和准静态速度，测量对象是该构型的力—位移及断裂行为。实验没有将厚度重建方法随机分配给这些PEEK样品，也没有用动态冲击检验临床防护，因此不能把前述TPS厚度误差优势直接换算为这里的强度提升。就本组数据而言，外形配准可以识别装配偏差，却无法单独识别导致弱层间连接的内部缺陷。",
+          "figure_ids": [
+            "F04"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Liu等：真实猴切牙与根形打印植入物，原图4。",
+          "interpretation": "照片保留厘米刻尺，可看到取出的牙齿仍包含牙冠，而打印物对应经过选择的牙根区域。它不是整颗牙齿的等体积复制。实物约1 cm的尺度说明根尖和边界分割为何会影响就位，但单张照片本身不能给出表面符合率；三组数值来自配准比较和表3。[对象与测量范围](ref:R01)"
+        },
+        "F02": {
+          "caption": "Chamo等：PMMA复制体相对打印模板的内外表面偏差，原图6。",
+          "interpretation": "a、c分别为颅骨组的外表面与内表面，b、d为颞眶组的对应表面；各色标范围为−2至2 mm，绿接近零，红为正偏差，蓝为负偏差。颞眶组外侧下方的正偏差与内侧后外缘的负偏差并存，显示整体RMS相近也可能对应不同局部配合。图中比较对象是扫描后的打印模板，不是原始患者骨面。[局部偏差解释](ref:R03)"
+        },
+        "F03": {
+          "caption": "Sharma等：“满意”贴合PEEK修补体的整体距离图和局部截面，原图2。",
+          "interpretation": "A以毫米显示重建轮廓差异，标记点为1.4895 mm；B、C为轴位和冠状位，D放大边缘区域。蓝色为计划形状，粉色为打印形状，B–D保留5 cm标尺。大部分表面接近绿色，但放大截面显示边缘关系已改变；这解释了整体对称性高时，局部仍会从覆盖式转为嵌入式贴合。[装配形态](ref:R04)"
+        },
+        "F04": {
+          "caption": "Sharma等：PEEK样品的加载曲线及断裂连接状态，原图4。",
+          "interpretation": "A、B横轴为位移、纵轴为力，分别展示试样10与7；两图坐标范围不同，不能凭曲线视觉斜率直接比较刚度。C、D显示破坏外观，E、F为框选断面的放大图，保留1 cm标尺。峰值较高的样品已经较早起裂，而低峰值样品的层间空隙更明显；外形贴合、起裂和峰值力因此不能相互替代。[力学与断面证据](ref:R04)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do imaging-based modeling and custom design improve implant fit?",
+      "direction": "Patient-specific implants",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Different fit experiments use different reference objects",
+          "markdown": "Imaging-based modeling improves fit by turning the boundary to be restored into measurable geometry: a root-shaped implant must correspond to an extraction socket, whereas a cranial implant must join the defect margins continuously while restoring both external form and the inner surface. Neither task can establish accurate anatomical reconstruction merely by showing close agreement between a print and its design. Liu et al. compared actual teeth, segmented image models and printed implants separately, exposing these different reference objects.[Root-replication experiment](ref:R01)\n\n| Experimental comparison | Question actually answered | Stage not included |\n|---|---|---|\n| Segmented model versus extracted tooth | Whether imaging preserves the target surface | Subsequent printing and seating |\n| Virtual implant versus a previously complete, known cranium | Whether missing shape and thickness can be reconstructed | Material-forming errors |\n| Molded product versus the scanned printed template | Whether molding preserves template geometry | Whether the template correctly represents the patient |\n| Printed products versus one another | Whether the process repeatedly produces similar objects | Design or manufacturing bias shared by all products |\n\nThese experiments jointly help locate error sources, but their percentages and root-mean-square errors cannot directly rank materials or processes. Wittner et al. provide virtual reconstruction evidence, Chamo et al. measure molding fidelity, and Sharma et al. separately test printing trueness, repeatability, assembly morphology and loading behavior.[Thickness reconstruction](ref:R02)[Molded replication](ref:R03)[Combined PEEK measurements](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Root replication: manufacturing consistency cannot recover geometry lost during segmentation",
+          "markdown": "Liu et al. segmented 14 root models from images of monkey maxillary central incisors, using a 300–5000 HU threshold to assist selection and manually refining the boundary in different planes. The final segmentation-to-tooth comparison used 14 samples, whereas printing-related comparisons used 8. The three means therefore cannot be subtracted as successive errors in an identical sample set.[Methods, results and Table 3](ref:R01)\n\n| Objects compared | Surface conformity under the original 0.1 mm tolerance criterion, mean ± standard deviation |\n|---|---:|\n| Segmented model versus actual tooth | 66.91%±10.51 |\n| Print versus segmented model | 90.59%±4.75 |\n| Print versus actual tooth | 68.70%±5.63 |\n\nThese values are proportions of registered surfaces satisfying the specified criterion, not implantation success rates or mean distance errors. The paper writes the tolerance as +0.1 mm; that reported criterion is retained here rather than converted into a verified two-sided tolerance. Printing reproduced the segmented model relatively well, yet final conformity to the actual tooth remained close to the segmentation result. Improving forming accuracy alone therefore cannot recover anatomical information lost during image processing.\n\nThe results locate major discrepancies at the root apex, while the discussion considers small dimensions, bone–tooth density boundaries, threshold selection and support removal. The illustrated object is approximately 1 cm long, making local boundary processing substantial relative to its size. Preliminary insertion also left the print slightly protruding from the socket: shape similarity and complete seating are distinct endpoints. This observation did not measure long-term osseointegration or clinical success.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Cranial repair: similar external contours can conceal incorrect thickness",
+          "markdown": "Wittner et al. selected complete crania corresponding to large bilateral and unilateral defects, virtually removed target regions and reconstructed them, retaining the removed geometry as known ground truth. The study included 3 clinical defect morphologies, 3 corresponding virtual-defect experiments and 132 reconstructions across reference shapes; this reconstruction count is not a patient sample size. Thin-plate spline (TPS) reconstruction jointly incorporated 831 landmarks and semilandmarks on internal and external surfaces, including 47 anatomical landmarks. The comparator CAD workflow used mirroring or reference geometry, manual splines and thickness offsets.[Virtual-defect design and methods](ref:R02)\n\n| Virtual defect with known ground truth | CAD thickness RMSE | TPS thickness RMSE using the Procrustes mean shape |\n|---|---:|---:|\n| KO1, bilateral | 0.64 mm | 0.69 mm |\n| KO2, unilateral | 1.38 mm | 0.63 mm |\n| KO3, unilateral | 1.67 mm | 0.70 mm |\n\nResults section 3.6 shows that the TPS advantage is concentrated in the lateral defects; it did not outperform CAD in every case. Complex curvature and local thickness variation near the temporal and sphenoid bones make uniform thickening of a reconstructed external surface less able to reproduce native bone. Constraining both surfaces preserves transitions from thicker to thinner regions. In the bilateral case, thickness errors were similar, with a slightly lower numerical value for CAD.\n\nThis comparison concerns the workflows actually implemented, not a claim that every CAD tool can only create uniform-thickness implants. The missing region in a clinical case has no directly measurable original thickness. The authors tested the algorithm using virtual defects in complete crania, rather than claiming ground truth for tissue already absent in patients. These reconstructions were not printed in the experiment, and restored thickness was not translated into a measured load-bearing benefit.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "PMMA molding: template accuracy and replication accuracy are separate",
+          "markdown": "Chamo et al. produced 10 polymethylmethacrylate (PMMA) replicas each for a cranial defect (CRD) and a temporo-orbital defect (TOD). A polylactic-acid template was printed and optically scanned, a silicone mold was used to form PMMA, and the products were segmented from cone-beam CT and aligned to the scanned template using point registration and best fit. The reference thus already incorporates template printing and finishing; it is not unmanufactured anatomical ground truth.[Forming, scanning and registration methods](ref:R03)\n\nMedian RMS was 0.574 mm for the cranial group, with an interquartile range of 0.528–0.701 mm, and 0.843 mm for the temporo-orbital group, with an interquartile range of 0.635–0.943 mm; the between-group difference had P=0.028. Maximum RMS values reached 1.128 and 1.079 mm, respectively. A median below 1 mm therefore does not mean every product was below 1 mm. Each group replicated a single defect shape, and two surgeons were responsible for the respective cases, so geometry, operator and forming conditions were not fully separated.\n\nThe internal and external deviation maps in original Fig. 6 additionally show more pronounced local protrusion and edge recession in the temporo-orbital shape. This is closer to the assembly problem than one global RMS: positive and negative deviations at different positions can correspond to local interference and marginal gaps. The groups also used different CBCT scan volumes and resolutions, preventing attribution of their difference to anatomical curvature alone. The experiment establishes geometric fidelity of this replication workflow without simultaneously validating template-to-patient accuracy or postoperative outcomes.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "PEEK printing: repeatable products can consistently deviate from the design locally",
+          "markdown": "Sharma et al. repeatedly printed 10 polyetheretherketone (PEEK) implants from a design for the same large frontotemporoparietal defect. After optical scanning, mean RMSE between prints and the planned model was 0.731±0.013 mm, whereas print-to-print mean RMSE was 0.155±0.081 mm. The latter involved 90 pairwise comparisons but still only 10 products, not 90 independent specimens.[Printing trueness and repeatability](ref:R04)\n\nLow between-product variation indicates repeatability, but the products can share a deviation from the design. After incorporation into the cranial model, overall contour RMSE was 0.499±0.032 mm and the reconstruction symmetry index was 97.48±0.023%. These metrics cover the entire reconstruction, including unaffected regions, unlike the implant-only error calculation. A smaller number therefore does not mean local implant errors have been corrected.\n\nMorphological assessment rated 6 products as “good” and 4 as “satisfactory.” Original Fig. 2 illustrates the latter: continuity remained at the anterior frontotemporal margin, but an approximately 1.5 mm discrepancy at the posterior infratemporal margin changed tangential fit locally from an onlay to an inlay configuration. Error location and direction explain this result more directly than the symmetry index. Imaging-based modeling supplies shared anatomical coordinates for comparison, while local sections reveal marginal assembly problems that global similarity cannot resolve.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Geometric fit and loading behavior produce different rankings in the same specimens",
+          "markdown": "In the same PEEK study, products were placed on a polylactic-acid skull support and loaded centrally to failure with a 10 mm-diameter hemispherical indenter at 1 mm/min. Mean peak force was 798.38±211.45 N, but better geometric fit did not imply a uniform fracture mode: the “satisfactory” group showed class 2 fractures, whereas the “good” group included both class 1 and class 3. Geometry and material connectivity therefore require separate explanations.[Mechanical methods, results and original Fig. 4](ref:R04)\n\nThe specimen with the highest peak force reached 1183 N after cracks had already appeared at approximately 293 N and 660 N. The lowest-peak specimen reached 541 N, with first cracking around 410 N. Highest peak force and earliest cracking therefore give different rankings; peak force, crack-initiation load and post-peak integrity address different questions. Fracture sections showed stronger interlayer connectivity in the former and visible gaps with weaker connectivity in the latter, supporting consideration of internal manufacturing structure when interpreting geometric inspection.\n\nThe test used a specific cranial support, central loading and a quasi-static speed to measure force–displacement and fracture behavior of that configuration. Thickness-reconstruction methods were not randomly assigned to these PEEK specimens, nor was clinical protection tested by dynamic impact. The earlier TPS thickness-error advantage cannot therefore be converted directly into a strength gain here. Within this dataset, shape registration can identify assembly deviations but cannot independently identify internal defects responsible for weak interlayer connections.",
+          "figure_ids": [
+            "F04"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Liu et al.: an actual monkey incisor and a printed root-shaped implant, original Fig. 4.",
+          "interpretation": "The photograph retains its centimeter ruler. The extracted tooth still includes its crown, whereas the print represents a selected root region; it is not an equal-volume replica of the entire tooth. The approximately 1 cm object scale helps explain why apical and boundary segmentation can affect seating. A single photograph cannot quantify surface conformity; the three group values come from registration comparisons and Table 3.[Object and measurement scope](ref:R01)"
+        },
+        "F02": {
+          "caption": "Chamo et al.: internal and external PMMA surface deviations from the printed template, original Fig. 6.",
+          "interpretation": "Panels a and c show the cranial external and internal surfaces, respectively; b and d show the corresponding temporo-orbital surfaces. Each scale spans −2 to 2 mm: green is near zero, red positive and blue negative. Positive deviations on the lower external temporo-orbital surface coexist with negative deviations at the internal posterolateral margin. Similar global RMS values can therefore conceal different local mating conditions. The reference is the scanned printed template, not the original patient bone surface.[Local deviation interpretation](ref:R03)"
+        },
+        "F03": {
+          "caption": "Sharma et al.: overall distance map and local sections of a PEEK implant with “satisfactory” fit, original Fig. 2.",
+          "interpretation": "A maps reconstruction contour differences in millimeters, with a marked value of 1.4895 mm. B and C are axial and coronal views; D enlarges the marginal region. Blue denotes the planned shape and pink the printed shape; B–D retain 5 cm scale bars. Much of the surface is green, yet the enlarged section shows a changed edge relationship. This explains how high overall symmetry can coexist with a local transition from onlay to inlay fit.[Assembly morphology](ref:R04)"
+        },
+        "F04": {
+          "caption": "Sharma et al.: loading curves and fracture connectivity of PEEK specimens, original Fig. 4.",
+          "interpretation": "A and B plot displacement horizontally and force vertically for specimens 10 and 7. Their axis ranges differ, so visual curve slopes cannot directly rank stiffness. C and D show fracture appearances; E and F enlarge the boxed sections, with 1 cm scale bars retained. The higher-peak specimen had already cracked earlier, whereas interlayer gaps are clearer in the lower-peak specimen. Geometric fit, crack initiation and peak force are consequently not interchangeable.[Mechanical and sectional evidence](ref:R04)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie verbessern bildgestützte Modellierung und individuelles Design die Implantatpassung?",
+      "direction": "Patientenspezifische Implantate",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Verschiedene Passungsversuche verwenden verschiedene Referenzobjekte",
+          "markdown": "Bildgestützte Modellierung verbessert die Passung, indem sie die wiederherzustellende Grenze in messbare Geometrie überführt: Ein wurzelförmiges Implantat muss zur Extraktionsalveole passen, ein Schädelimplantat muss kontinuierlich an die Defektränder anschließen und sowohl Außenform als auch Innenfläche wiederherstellen. Eine enge Übereinstimmung zwischen Druckteil und Entwurf belegt bei keiner dieser Aufgaben bereits die korrekte anatomische Rekonstruktion. Liu et al. verglichen reale Zähne, segmentierte Bildmodelle und gedruckte Implantate getrennt und machten diese unterschiedlichen Referenzobjekte sichtbar.[Versuch zur Wurzelreplikation](ref:R01)\n\n| Experimenteller Vergleich | Tatsächlich beantwortete Frage | Nicht enthaltener Schritt |\n|---|---|---|\n| Segmentiertes Modell gegenüber extrahiertem Zahn | Erhält die Bildverarbeitung die Zieloberfläche? | Anschließender Druck und Einsetzen |\n| Virtuelles Implantat gegenüber einem zuvor vollständigen, bekannten Schädel | Lassen sich fehlende Form und Dicke rekonstruieren? | Fehler der Materialformgebung |\n| Gegossenes Produkt gegenüber gescannter Druckvorlage | Erhält das Abformen die Vorlagengeometrie? | Repräsentiert die Vorlage den Patienten korrekt? |\n| Druckteile untereinander | Erzeugt der Prozess wiederholt ähnliche Objekte? | Allen Produkten gemeinsame Entwurfs- oder Fertigungsabweichung |\n\nZusammen helfen diese Versuche, Fehlerquellen zu lokalisieren; ihre Prozentwerte und quadratischen Mittelwertfehler ergeben jedoch keine unmittelbare Rangliste von Materialien oder Verfahren. Wittner et al. liefern Evidenz zur virtuellen Rekonstruktion, Chamo et al. messen die Abformtreue, und Sharma et al. prüfen Druckrichtigkeit, Wiederholpräzision, Einpassmorphologie und Belastungsverhalten getrennt.[Dickenrekonstruktion](ref:R02)[Abformung](ref:R03)[Kombinierte PEEK-Messungen](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "Wurzelreplikation: Fertigungskonstanz ersetzt keine bei der Segmentierung verlorene Geometrie",
+          "markdown": "Liu et al. segmentierten 14 Wurzelmodelle aus Aufnahmen zentraler Oberkieferschneidezähne von Affen. Ein Schwellenbereich von 300–5000 HU unterstützte die Auswahl, anschließend wurden die Grenzen in verschiedenen Schnittebenen manuell korrigiert. Der abschließende Vergleich zwischen Segmentierung und realem Zahn umfasste 14 Proben, die druckbezogenen Vergleiche dagegen 8. Die drei Mittelwerte lassen sich daher nicht als aufeinanderfolgende Fehler identischer Stichproben voneinander abziehen.[Methoden, Ergebnisse und Tabelle 3](ref:R01)\n\n| Vergleichsobjekte | Oberflächenübereinstimmung nach dem ursprünglichen Toleranzkriterium von 0.1 mm, Mittelwert ± Standardabweichung |\n|---|---:|\n| Segmentiertes Modell gegenüber realem Zahn | 66.91%±10.51 |\n| Druckteil gegenüber segmentiertem Modell | 90.59%±4.75 |\n| Druckteil gegenüber realem Zahn | 68.70%±5.63 |\n\nDie Werte bezeichnen Anteile registrierter Oberflächen, die das angegebene Kriterium erfüllen, keine Implantationserfolgsraten oder mittleren Abstandsfehler. Die Publikation schreibt die Toleranz als +0.1 mm; dieses berichtete Kriterium wird hier beibehalten und nicht in eine verifizierte beidseitige Toleranz umgedeutet. Der Druck reproduzierte das segmentierte Modell relativ gut, doch die endgültige Übereinstimmung mit dem realen Zahn blieb nahe am Segmentierungsergebnis. Eine höhere Formgebungsgenauigkeit allein kann somit keine bei der Bildverarbeitung verlorene Anatomie zurückgewinnen.\n\nDie Ergebnisse lokalisieren wesentliche Abweichungen an der Wurzelspitze; diskutiert werden geringe Abmessungen, Dichteübergänge zwischen Knochen und Zahn, Schwellenwahl und Stützentfernung. Das dargestellte Objekt ist ungefähr 1 cm lang, sodass lokale Grenzbearbeitung relativ zu seiner Größe erheblich ist. Beim vorläufigen Einsetzversuch ragte das Druckteil leicht aus der Alveole heraus: Formähnlichkeit und vollständiger Sitz sind unterschiedliche Endpunkte. Langfristige Osseointegration oder klinischer Erfolg wurden mit dieser Beobachtung nicht gemessen.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Schädelrekonstruktion: ähnliche Außenkonturen können falsche Dicken verdecken",
+          "markdown": "Wittner et al. wählten vollständige Schädel entsprechend großen beidseitigen und einseitigen Defekten aus, entfernten Zielregionen virtuell und rekonstruierten sie. Die entfernte Geometrie blieb als bekannte Referenz erhalten. Die Studie umfasste 3 klinische Defektmorphologien, 3 entsprechende virtuelle Defektversuche und insgesamt 132 Rekonstruktionen mit verschiedenen Referenzformen; die Rekonstruktionszahl ist keine Patientenzahl. Die Thin-Plate-Spline-Methode (TPS) berücksichtigte gemeinsam 831 Landmarken und Semilandmarken auf Innen- und Außenflächen, darunter 47 anatomische Landmarken. Der CAD-Vergleichsablauf verwendete Spiegelung oder Referenzgeometrie, manuelle Splines und Dickenversätze.[Virtuelle Defekte und Methoden](ref:R02)\n\n| Virtueller Defekt mit bekannter Referenz | Dicken-RMSE mit CAD | Dicken-RMSE mit TPS und Procrustes-Mittelform |\n|---|---:|---:|\n| KO1, beidseitig | 0.64 mm | 0.69 mm |\n| KO2, einseitig | 1.38 mm | 0.63 mm |\n| KO3, einseitig | 1.67 mm | 0.70 mm |\n\nErgebnisabschnitt 3.6 zeigt, dass der TPS-Vorteil auf die seitlichen Defekte konzentriert ist; CAD wurde nicht in jedem Fall übertroffen. Komplexe Krümmungen und lokale Dickenänderungen nahe Schläfen- und Keilbein erschweren die Nachbildung des ursprünglichen Knochens durch gleichmäßige Verdickung einer rekonstruierten Außenfläche. Die gemeinsame Berücksichtigung beider Flächen erhält Übergänge zwischen dickeren und dünneren Regionen. Im beidseitigen Fall waren die Dickenfehler ähnlich, bei numerisch etwas niedrigerem CAD-Wert.\n\nDer Vergleich betrifft die tatsächlich eingesetzten Abläufe und besagt nicht, dass jedes CAD-Werkzeug ausschließlich Implantate gleichmäßiger Dicke erzeugen kann. Eine klinisch fehlende Region hat keine unmittelbar messbare ursprüngliche Dicke. Die Autoren prüften den Algorithmus anhand virtueller Defekte vollständiger Schädel, statt eine bekannte Referenz für bereits fehlendes Patientengewebe zu behaupten. Diese Rekonstruktionen wurden im Versuch nicht gedruckt; aus der wiederhergestellten Dicke wurde hier auch kein gemessener Tragfähigkeitsgewinn abgeleitet.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "PMMA-Abformung: Vorlagengenauigkeit und Replikationsgenauigkeit sind getrennte Größen",
+          "markdown": "Chamo et al. stellten jeweils 10 Replikate aus Polymethylmethacrylat (PMMA) für einen Schädeldefekt (CRD) und einen temporoorbitalen Defekt (TOD) her. Zunächst wurde eine Polylactidvorlage gedruckt und optisch gescannt, anschließend PMMA in einer Silikonform geformt. Die Produkte wurden mittels Kegelstrahl-CT segmentiert und durch Punktregistrierung sowie Best-Fit-Ausrichtung mit der gescannten Vorlage verglichen. Die Referenz enthält somit bereits Vorlagendruck und Nachbearbeitung; sie ist keine unverarbeitete anatomische Referenz.[Formgebung, Scan und Registrierung](ref:R03)\n\nDer RMS-Median betrug in der Schädelgruppe 0.574 mm bei einem Interquartilsbereich von 0.528–0.701 mm, in der temporoorbitalen Gruppe 0.843 mm bei 0.635–0.943 mm; für den Gruppenunterschied galt P=0.028. Die maximalen RMS-Werte erreichten 1.128 beziehungsweise 1.079 mm. Ein Median unter 1 mm bedeutet daher nicht, dass jedes Produkt unter 1 mm lag. Jede Gruppe replizierte dieselbe Defektform; zwei Chirurgen waren jeweils für einen der Fälle verantwortlich. Geometrie, ausführende Person und Formgebungsbedingungen wurden folglich nicht vollständig getrennt.\n\nDie inneren und äußeren Abweichungskarten in Originalabbildung 6 zeigen zudem ausgeprägtere lokale Vorsprünge und zurückweichende Ränder bei der temporoorbitalen Form. Dies liegt näher am Einpassproblem als ein einzelner Gesamt-RMS: Positive und negative Abweichungen an unterschiedlichen Stellen können lokalen Übermaßen beziehungsweise Randspalten entsprechen. Unterschiedliche CBCT-Aufnahmevolumina und Auflösungen verhindern zusätzlich, den Gruppenunterschied allein auf die anatomische Krümmung zurückzuführen. Der Versuch belegt die geometrische Wiedergabetreue dieses Abformverfahrens, ohne zugleich die Übereinstimmung der Vorlage mit dem Patienten oder postoperative Ergebnisse zu prüfen.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "PEEK-Druck: reproduzierbare Produkte können lokal gemeinsam vom Entwurf abweichen",
+          "markdown": "Sharma et al. druckten wiederholt 10 Implantate aus Polyetheretherketon (PEEK) nach einem Entwurf für denselben großen frontotemporoparietalen Defekt. Nach optischem Scan lag der mittlere RMSE zwischen Druckteilen und Planmodell bei 0.731±0.013 mm, zwischen den Druckteilen dagegen bei 0.155±0.081 mm. Letzterer beruhte auf 90 paarweisen Vergleichen, betraf aber weiterhin nur 10 Produkte und keine 90 unabhängigen Proben.[Druckrichtigkeit und Wiederholpräzision](ref:R04)\n\nDie geringe Streuung zwischen Produkten zeigt Wiederholpräzision, während alle Produkte eine gemeinsame Abweichung vom Entwurf aufweisen können. Nach Einpassung in das Schädelmodell betrug der Gesamt-RMSE der Kontur 0.499±0.032 mm und der Rekonstruktionssymmetrieindex 97.48±0.023%. Diese Kennzahlen erfassen die gesamte Rekonstruktion einschließlich intakter Regionen, im Gegensatz zur Berechnung allein am Implantat. Eine kleinere Zahl bedeutet deshalb keine Korrektur lokaler Implantatfehler.\n\nMorphologisch wurden 6 Produkte als „gut“ und 4 als „zufriedenstellend“ bewertet. Originalabbildung 2 zeigt letztere Kategorie: Am vorderen frontotemporalen Rand blieb die Kontinuität erhalten, eine Abweichung von ungefähr 1.5 mm am hinteren infratemporalen Rand veränderte jedoch die tangentiale Passung lokal von einer aufliegenden zu einer einliegenden Konfiguration. Ort und Richtung des Fehlers erklären dieses Ergebnis unmittelbarer als der Symmetrieindex. Die bildgestützte Modellierung liefert gemeinsame anatomische Vergleichskoordinaten; lokale Schnitte machen Randprobleme sichtbar, die eine globale Ähnlichkeit nicht auflösen kann.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Geometrische Passung und Belastungsverhalten ergeben an denselben Proben unterschiedliche Rangfolgen",
+          "markdown": "In derselben PEEK-Studie wurden die Produkte auf einem Polylactid-Schädelmodell mit einem halbkugelförmigen Stempel von 10 mm Durchmesser zentral bei 1 mm/min bis zum Versagen belastet. Die mittlere Maximalkraft betrug 798.38±211.45 N. Eine bessere geometrische Passung ging jedoch nicht mit einem einheitlichen Bruchmuster einher: Die „zufriedenstellende“ Gruppe zeigte Klasse 2, die „gute“ Gruppe sowohl Klasse 1 als auch Klasse 3. Geometrie und Materialverbindung müssen daher getrennt erklärt werden.[Mechanische Methoden, Ergebnisse und Originalabbildung 4](ref:R04)\n\nDie Probe mit der höchsten Maximalkraft erreichte 1183 N, nachdem bereits bei ungefähr 293 N und 660 N Risse aufgetreten waren. Die Probe mit der niedrigsten Maximalkraft erreichte 541 N; die erste Rissbildung erfolgte bei ungefähr 410 N. Höchste Maximalkraft und früheste Rissbildung ergeben somit unterschiedliche Rangfolgen. Maximalkraft, Rissinitiierungslast und Integrität nach dem Kraftmaximum beantworten verschiedene Fragen. Bruchquerschnitte zeigten bei der ersten Probe stärkere Schichtverbindungen, bei der zweiten sichtbare Spalten und schwächere Verbindungen. Die innere Fertigungsstruktur ergänzt damit die Interpretation der geometrischen Prüfung.\n\nDer Versuch verwendete eine bestimmte Schädelauflage, zentrale Belastung und quasistatische Geschwindigkeit, um Kraft-Weg- und Bruchverhalten dieser Konfiguration zu messen. Verfahren zur Dickenrekonstruktion wurden diesen PEEK-Proben nicht randomisiert zugeordnet; klinische Schutzwirkung wurde auch nicht durch dynamischen Aufprall geprüft. Der zuvor beschriebene TPS-Vorteil beim Dickenfehler lässt sich deshalb nicht unmittelbar in einen Festigkeitsgewinn dieses Versuchs umrechnen. In diesem Datensatz erkennt die Formregistrierung Einpassabweichungen, kann aber innere Defekte als Ursache schwacher Schichtverbindungen nicht allein identifizieren.",
+          "figure_ids": [
+            "F04"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Liu et al.: realer Affenschneidezahn und gedrucktes wurzelförmiges Implantat, Originalabbildung 4.",
+          "interpretation": "Das Foto enthält den ursprünglichen Zentimetermaßstab. Der extrahierte Zahn besitzt noch seine Krone, das Druckteil repräsentiert dagegen eine ausgewählte Wurzelregion; es ist keine volumengleiche Kopie des gesamten Zahns. Die Objektgröße von ungefähr 1 cm verdeutlicht, weshalb Segmentierung an Spitze und Grenze den Sitz beeinflussen kann. Das Foto allein quantifiziert keine Oberflächenübereinstimmung; die drei Gruppenwerte stammen aus Registrierungsvergleichen und Tabelle 3.[Objekt und Messbereich](ref:R01)"
+        },
+        "F02": {
+          "caption": "Chamo et al.: innere und äußere Oberflächenabweichungen der PMMA-Replikate von der Druckvorlage, Originalabbildung 6.",
+          "interpretation": "a und c zeigen die äußere beziehungsweise innere Fläche der Schädelgruppe, b und d die entsprechenden temporoorbitalen Flächen. Alle Farbskalen reichen von −2 bis 2 mm: Grün liegt nahe null, Rot zeigt positive und Blau negative Abweichungen. Positive Abweichungen unten an der äußeren temporoorbitalen Fläche treten zusammen mit negativen Abweichungen am inneren posterolateralen Rand auf. Ähnliche Gesamt-RMS-Werte können daher verschiedene lokale Passungsverhältnisse verdecken. Referenz ist die gescannte Druckvorlage und nicht die ursprüngliche Knochenoberfläche des Patienten.[Lokale Abweichungen](ref:R03)"
+        },
+        "F03": {
+          "caption": "Sharma et al.: Gesamtabstandskarte und lokale Schnitte eines PEEK-Implantats mit „zufriedenstellender“ Passung, Originalabbildung 2.",
+          "interpretation": "A zeigt Konturabweichungen der Rekonstruktion in Millimetern mit einem markierten Wert von 1.4895 mm. B und C sind axiale und koronale Ansichten, D vergrößert den Randbereich. Blau bezeichnet die geplante, Rosa die gedruckte Form; B–D enthalten die ursprünglichen 5 cm-Maßstäbe. Große Oberflächenanteile sind grün, der vergrößerte Schnitt zeigt dennoch veränderte Randverhältnisse. Eine hohe Gesamtsymmetrie kann somit mit einem lokalen Wechsel von aufliegender zu einliegender Passung verbunden sein.[Einpassmorphologie](ref:R04)"
+        },
+        "F04": {
+          "caption": "Sharma et al.: Belastungskurven und Verbindungszustand gebrochener PEEK-Proben, Originalabbildung 4.",
+          "interpretation": "A und B zeigen für die Proben 10 und 7 den Weg horizontal und die Kraft vertikal. Wegen unterschiedlicher Achsenbereiche lässt sich die Steifigkeit nicht direkt aus dem optischen Kurvenanstieg vergleichen. C und D zeigen Bruchbilder; E und F vergrößern die markierten Querschnitte, bei erhaltenen 1 cm-Maßstäben. Die Probe mit höherer Maximalkraft war bereits früher angerissen, während Schichtspalten bei der schwächeren Probe deutlicher sind. Geometrische Passung, Rissbeginn und Maximalkraft sind somit keine austauschbaren Endpunkte.[Mechanische und Querschnittsevidenz](ref:R04)"
+        }
+      }
+    }
+  }
+}

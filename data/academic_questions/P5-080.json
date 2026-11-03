@@ -1,0 +1,309 @@
+{
+  "schema_version": 2,
+  "question_id": "P5-080",
+  "p": "P5",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-04",
+  "related_paper_ids": [
+    "doc_db8f459a3b6e9b9de98e",
+    "doc_f533bcdb405820617c3c"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Open Development and Clinical Validation of Multiple 3D-Printed Nasopharyngeal Collection Swabs: Rapid Resolution of a Critical COVID-19 Testing Bottleneck",
+      "publisher": "Journal of Clinical Microbiology",
+      "year": 2020,
+      "url": "https://doi.org/10.1128/JCM.00876-20",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Clinical Evaluation of In-House-Produced 3D-Printed Nasopharyngeal Swabs for COVID-19 Testing",
+      "publisher": "Viruses",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/v13091752",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Clinical validation of 3D-printed swabs in adults and children for SARS-CoV-2 detection",
+      "publisher": "Biology Methods & Protocols",
+      "year": 2023,
+      "url": "https://doi.org/10.1093/biomethods/bpad009",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 2",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7383530.1/JCM.00876-20-f0002.jpg?md5=a7e977ccae543a99790838137eaca6d5",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7383530/#F2",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-080/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R02",
+      "original_label": "Figure 3",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8473445.1/viruses-13-01752-g003.jpg?md5=4147f03789b337b25f3bcafb98933229",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8473445/#viruses-13-01752-f003",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-080/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R03",
+      "original_label": "Figure 2",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10281960.1/bpad009f2.jpg?md5=a72d1aff1d203416027f3997c313cea9",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10281960/#bpad009-F2",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-080/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Figure 3",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10281960.1/bpad009f3.jpg?md5=1ff0b1f45dda92569fcf2d286741a7c1",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10281960/#bpad009-F3",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-080/F04.jpg"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R01",
+      "original_label": "Figure 3",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7383530.1/JCM.00876-20-f0003.jpg?md5=b660d14b37048dd2024ef2f0749e973b",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7383530/#F3",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-080/F05.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "打印鼻咽拭子如何保证采样和检测性能？",
+      "direction": "采样用品",
+      "sections": [
+        {
+          "id": "agreement_design",
+          "title": "临床一致性研究比较了什么？",
+          "markdown": "Callahan 等的研究比较多种打印原型与常规拭子的临床分类结果。研究共纳入 276 名参与者；不同原型并非全部在同一组受试者中交叉比较，而是分别与对照组成配对。Figure 2 中原型组的配对数分别为 74、79、77 和 46，各组阳性比例也有差异。因此，Kappa 系数可以描述各组内部与对照的一致性，却不宜直接作为原型之间的优劣排行榜。 [临床分类比较研究](ref:R01)\n\n图中的 Kappa 分别为 0.88、0.85、0.89 和 0.88。计算同时利用相符与不相符结果，并考虑偶然一致；它依赖样本构成。在阴性占多数的样本中，较高总体一致率可能主要来自阴性配对，必须同时查看阳性病例数和不一致方向。该研究的各原型阳性例数相对有限，增加几个不一致病例便可能明显改变阳性一致率。\n\n作者还加入常规拭子重复检测作为参照，说明同类产品也会出现不一致。然而，正文把该组写为 88 例，原图重复对照列联表总数为 100，两处不能合并为单一分母。这一参照来自独立临床过程，也不是与所有原型同时开展的完全同条件实验。原图应保留以便查看分类方向，但不宜用未解释的样本数差异推导原型和重复对照具有完全相同的误差。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "paired_outcomes",
+          "title": "同一受试者的结果：总体相近如何与个别不一致共存？",
+          "markdown": "另一项院内研究纳入 63 名参与者，其列联表显示双阳性 30 例、双阴性 31 例，两个不一致方向各 1 例。由此可明确计算总体一致率为 61/63，即 96.8%；阳性一致率为 30/31，即 96.8%；阴性一致率为 31/32，即 96.9%。正文百分比排列与表格次序不完全对应，这里按列联表的实际分母呈现。 [临床结果与 Table 2](ref:R02)\n\n| 比较指标 | 结果 | 对应含义 |\n|---|---:|---|\n| 总体一致率 | 96.8% | 全部配对的分类一致性 |\n| 阳性一致率 | 96.8% | 对照阳性者中的一致性 |\n| 阴性一致率 | 96.9% | 对照阴性者中的一致性 |\n| Kappa | 0.936 | 校正偶然一致后的结果 |\n\nFigure 3 将同一受试者的信号结果用线连接。两类目标的比较 P 值分别为 0.92 和 0.27，内部对照为 0.59。群体分布未检出显著差异，与存在少数分类不一致并不矛盾：均值或中位数接近，仍可能有个体落在判定边界两侧。研究包含不同打印批次，但没有给出足以单独估计每批诊断性能的完整分层列联表，不能由总体结果直接得出批次间等效。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "categorical_reference",
+          "title": "“100% 性能”取决于怎样确定参考结果",
+          "markdown": "成人与儿童研究共纳入 52 人，其中成人 42 人、儿童 10 人。成人配对数据中，打印组阳性 27 例、常规组阳性 25 例；额外的阳性来自打印组，其他成人分类一致。以常规组当作固定参照，列联表应表达为双方阳性 25 例、双方阴性 15 例、打印阳性而常规阴性 2 例。 [成人原始结果表与正文](ref:R03)\n\n依照这一参照口径，阳性一致率为 25/25，阴性一致率为 15/17，总体一致率为 40/42，分别为 100%、88.2% 和 95.2%。这些是根据论文计数计算的一致性指标，不是额外临床试验结果。论文把打印组的敏感度、特异度等均列为 100%，并认为额外阳性反映常规组漏检；这实际上改变了“哪种结果代表真实状态”的解释。\n\n额外阳性可能有临床意义，但不能在没有独立裁定的情况下，既把常规组作为参照计算性能，又把所有不一致都判为打印组正确。该研究提到额外阳性者此前已有阳性病史，这为临床解释提供背景，并不能使当前配对比较自动成为独立金标准验证。阅读时保留不一致方向，比将两种参考定义混在同一“准确率”中更有用。",
+          "figure_ids": []
+        },
+        {
+          "id": "pediatric_evidence",
+          "title": "儿童数据回答的是可用性与阴性一致，尚未测得阳性检出能力",
+          "markdown": "上述研究的 10 名儿童均为阴性，平均年龄为 13 ± 1 岁。其儿童部分比较的是内部对照信号与使用体验，并没有儿童阳性病例用于估计敏感度。全部阴性结果一致，只能支持这一阴性样本集的分类结果；不能写成儿童阳性检出率也为 100%，也不能据此覆盖婴幼儿。 [儿童样本特征与 Figure 2](ref:R03)\n\nFigure 2C 比较常规样本与不同打印样本的内部对照分布。正文整体 ANOVA 为 P = 0.64，图中还给出不同配对比较的 P = 0.11、0.20 和 0.33；它们回答不同统计问题，不能互相替换。内部对照用于观察检测过程中的样本质量相关信号，它与病原体是否被正确检出是不同终点。\n\n成人结果中的目标信号分布差异不显著，也不能补足缺失的儿童阳性数据，因为受试者年龄、材料和样本组织方式并不完全相同。该论文在儿童部分包含不同来源样本的比较，图中的组名必须保留，不能简化成仅有“传统”与“打印”两个完全可交换的组。对于这一研究问题，儿童证据的价值在于展示人群适配和评价终点如何改变，而不是为所有年龄段提供一个统一性能数字。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "quantitative_classification",
+          "title": "分类一致与半定量分层一致，是不同要求",
+          "markdown": "同一成人研究还将阳性病例的信号转化为研究内部的相对水平分层。27 个打印组阳性病例中，有 19 例在两类拭子之间落入相同等级，6 例等级不同，另外 2 例只有打印组检出。论文用 19/27 得到 70.4%；若只分析双方均阳性的 25 对，则为 19/25，即 76.0%。两种分母对应不同问题，不能只保留较高或较低的一个比例。 [相对分层图与 Table 4](ref:R03)\n\nFigure 3 每条横线对应同一参与者，橙色三角与蓝色圆点表示不同拭子的结果。部分点虽然同处阳性类别，却跨过相对水平分层边界。这解释了为何“能否检出”的一致性可以较高，而“相对水平属于哪一档”的一致性较低。图中横轴是该研究内部归一化后的相对指标，并不是绝对浓度，更不是感染性测量。\n\nCallahan 研究的 Figure 2B 也需要类似区分：没有检出的结果被赋予统一绘图位置，并非真实测得的连续数值。将这些点直接加入连续误差解释，会混合真实读数与编码占位。原文以差异未显著支持非劣效，但未预设非劣效界值的普通差异检验，不能确定最大可接受差距；图中可以支持的是所测样本范围内的配对分布及不一致方向。 [配对散点与统计解释](ref:R01)",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "user_endpoints",
+          "title": "使用体验怎样与检测结果并列评价？",
+          "markdown": "Callahan 研究除了结果一致性，还比较工作人员对不同原型的偏好。原文 Figure 3A 用箭头方向与粗细表达相对偏好，B 图把正面和负面评论按类别计数。分类结果相近的原型，仍会获得不同的柔顺性、舒适性与操作便利评价；因此，分析性能与临床工作中的可接受性可以给出不同排序。 [工作人员反馈原图](ref:R01)\n\n图中的 n 是评论总数，原型组分别为 18、14、8 和 7，不是每组独立受试者的临床样本量。评论可以来自同一工作人员、涉及不同评价维度，不能把条形长度转换为某种不良事件发生率。工作人员偏好也不等同于患者疼痛评分，箭头所表示的是相对选择，并没有给出疼痛变化的连续量表。\n\n成人与儿童研究称 52 名参与者中未发生采样事故，并报告打印样品得到较好的主观反馈。该文没有呈现足以重建各评分分布的完整问卷数据，所以可以记录其体验方向，但不能计算未提供的平均疼痛差或推导罕见事件发生率。 [参与者与使用体验结果](ref:R03)\n\n此处的受试者人数、评论数和检测配对数属于不同数据单位，应分别阅读。",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "原文 Figure 2：分类列联表与配对散点",
+          "interpretation": "a 的灰格是不一致结果；每个原型的总配对数不同。重复对照的图中总数与正文人数不一致，应分别保留。b 虚线为等值线，边缘的部分点是未检出结果的绘图编码，并非连续实测值。"
+        },
+        "F02": {
+          "caption": "原文 Figure 3：同一参与者的配对信号",
+          "interpretation": "A、B 为不同目标，C 为内部对照。线段连接同一参与者的常规与打印结果，既可观察总体分布，也可看到个体差异。图上差异检验没有给出预设等效界限。"
+        },
+        "F03": {
+          "caption": "原文 Figure 2：成人和儿童的不同评价终点",
+          "interpretation": "A、B 显示成人内部对照与目标信号，C 是儿童内部对照。C 的分组同时包含不同样本来源，不能把它当作儿童阳性病例的检出比较。中线是中位数，箱体不能代替个体配对差值。"
+        },
+        "F04": {
+          "caption": "原文 Figure 3：相对水平的分类变化",
+          "interpretation": "每行属于一名参与者，橙色与蓝色标记不同拭子。跨分层边界的配对与只有一类拭子检出的病例用不同星号表示。横轴是研究内部的相对指标；相近的阳性判定并不保证相同的半定量等级。"
+        },
+        "F05": {
+          "caption": "原文 Figure 3：工作人员偏好与评论计数",
+          "interpretation": "A 用箭头表达相对偏好，B 的零线两侧为负面与正面评论。n 是评论数量，不能当成受试者样本数。箭头与条形图回答偏好和评价方向，没有直接测量患者疼痛强度。"
+        }
+      }
+    },
+    "en": {
+      "title": "How is the sampling and diagnostic performance of printed nasopharyngeal swabs evaluated?",
+      "direction": "Sampling devices",
+      "sections": [
+        {
+          "id": "agreement_design",
+          "title": "What did the clinical agreement studies compare?",
+          "markdown": "Callahan and colleagues compared the clinical classifications obtained with several printed prototypes and conventional swabs in 276 participants. Every prototype was paired with a control, rather than all prototypes being tested in a crossover involving the same participants. Figure 2 reports 74, 79, 77 and 46 pairs, with differing positive proportions. Kappa describes agreement within each comparison; it does not provide a direct ranking between prototypes. [Clinical classification comparison](ref:R01)\n\nThe plotted Kappa values are 0.88, 0.85, 0.89 and 0.88. They combine concordant and discordant classifications and account for chance agreement, but depend on sample composition. Where negatives predominate, high overall agreement can be driven by negative pairs; positive case counts and the direction of discordance matter separately. With relatively few positives per prototype, a small number of additional disagreements can substantially alter positive agreement.\n\nThe authors also included repeated conventional-swab tests, showing that the comparator itself can disagree. However, the text describes 88 cases while the figure’s replicate-control contingency table totals 100. These denominators cannot be merged. This comparison arose from a separate clinical process rather than a fully matched simultaneous experiment with all prototypes. The original figure remains useful for seeing discordance directions, but the unexplained count discrepancy cannot establish identical prototype and repeat-control errors.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "paired_outcomes",
+          "title": "Paired outcomes: similar distributions can coexist with individual discordance",
+          "markdown": "An in-house study enrolled 63 participants. Its contingency table contains 30 double-positive and 31 double-negative pairs, plus 1 disagreement in each direction. Overall agreement is therefore 61/63, or 96.8%; positive agreement 30/31, or 96.8%; negative agreement 31/32, or 96.9%. The ordering of percentages in the prose differs from the table; the denominators here follow the actual cross-tabulation. [Clinical results and Table 2](ref:R02)\n\n| Metric | Result | Meaning |\n|---|---:|---|\n| Overall agreement | 96.8% | Classification agreement across all pairs |\n| Positive agreement | 96.8% | Agreement among comparator-positive participants |\n| Negative agreement | 96.9% | Agreement among comparator-negative participants |\n| Kappa | 0.936 | Agreement adjusted for chance |\n\nFigure 3 connects paired signals from the same participant. P values for the target comparisons are 0.92 and 0.27, and 0.59 for the internal control. No significant population-level difference can coexist with occasional classification disagreement: similar means or medians do not prevent individuals falling on opposite sides of a decision boundary. Different printed batches were represented, but complete stratified contingency tables sufficient to estimate each batch’s diagnostic performance were not supplied. Overall agreement therefore does not establish batch equivalence.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "categorical_reference",
+          "title": "“Perfect performance” depends on how the reference result is defined",
+          "markdown": "An adult/pediatric study enrolled 52 participants: 42 adults and 10 children. Adult paired data contained 27 printed-swab positives and 25 conventional-swab positives. The additional positives came from the printed swab, with other adult classifications agreeing. If the conventional result is the fixed comparator, the table has 25 double positives, 15 double negatives and 2 printed-positive/conventional-negative pairs. [Adult results table and text](ref:R03)\n\nUnder that reference definition, positive agreement is 25/25, negative agreement 15/17 and overall agreement 40/42: 100%, 88.2% and 95.2%. These agreement statistics are calculated from the paper’s counts, not new clinical observations. The article reports printed-swab sensitivity, specificity and other metrics as 100%, treating the extra positives as conventional-swab misses. That changes the interpretation of which outcome represents the true state.\n\nAdditional positives may be clinically meaningful. Without independent adjudication, however, a comparison cannot both use the conventional swab as reference and automatically classify every discordance in favor of the printed swab. The paper notes a prior positive history for those participants, providing clinical context without turning the current comparison into independent gold-standard validation. Retaining the discordance direction is more informative than mixing reference definitions in a single “accuracy” figure.",
+          "figure_ids": []
+        },
+        {
+          "id": "pediatric_evidence",
+          "title": "Pediatric evidence: usability and negative agreement without positive-case sensitivity",
+          "markdown": "All 10 pediatric participants were negative, with mean age 13 ± 1 years. The pediatric component compared internal-control signals and user experience; it contained no positive pediatric cases for estimating sensitivity. Agreement across negatives supports classification in this negative sample set, not a pediatric positive-detection rate of 100%, and does not establish performance in infants. [Pediatric characteristics and Figure 2](ref:R03)\n\nFigure 2C compares internal-control distributions for conventional and different printed-swab samples. The text gives an overall ANOVA P = 0.64, while pairwise comparisons in the figure give P = 0.11, 0.20 and 0.33. These address different statistical questions and are not interchangeable. The internal control characterizes a sample-quality-related signal; correct pathogen detection is a separate endpoint.\n\nNonsignificant adult target-signal differences cannot supply the missing positive pediatric evidence, because ages, materials and sample organization differ. The pediatric analysis also compares samples of different origins; figure group names must remain visible rather than collapsing everything into interchangeable “conventional” and “printed” categories. Its contribution is to show how population fit and evaluation endpoints change, not to assign a universal performance number to every age.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "quantitative_classification",
+          "title": "Categorical agreement and semiquantitative agreement impose different requirements",
+          "markdown": "The adult study also grouped positive-case signals into study-specific relative levels. Among 27 printed-positive cases, 19 had matching levels, 6 had different levels and 2 were detected only with printed swabs. The paper uses 19/27 to obtain 70.4%; restricting analysis to the 25 double-positive pairs gives 19/25, or 76.0%. These denominators answer different questions, so neither percentage should be selected simply because it is higher or lower. [Relative-level plot and Table 4](ref:R03)\n\nEach row in Figure 3 represents a participant, with orange triangles and blue circles denoting swab results. Some paired points remain positive but cross relative-level boundaries. Thus, high agreement on detection can coexist with lower agreement on semiquantitative classification. The horizontal variable is normalized within the study; it is neither an absolute concentration nor an infectivity measurement.\n\nFigure 2B in the Callahan study requires a related distinction: nondetections were assigned a common plotting position rather than a measured continuous value. Treating those points as ordinary continuous errors mixes measurements with coding placeholders. The article invokes nonsignificant differences in support of noninferiority, but a conventional difference test without a predefined noninferiority margin cannot establish the maximum acceptable gap. The figure supports paired distributions and discordance directions within the tested sample range. [Paired scatterplot and statistical interpretation](ref:R01)",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "user_endpoints",
+          "title": "User experience as a separate outcome",
+          "markdown": "Alongside diagnostic agreement, Callahan and colleagues compared staff preferences. Figure 3A uses arrow direction and thickness for relative preference; B counts positive and negative comments by category. Prototypes with similar categorical results can still differ in perceived flexibility, comfort and handling. Analytical performance and clinical acceptability may therefore have different rankings. [Original staff-feedback figure](ref:R01)\n\nThe plotted n values are comment totals—18, 14, 8 and 7—not independent clinical participant counts. Comments can come from the same staff member and concern different dimensions, so bar lengths cannot be converted into adverse-event rates. Staff preference is also not a patient pain score. The arrows represent choices, without a continuous measure of pain change.\n\nThe adult/pediatric paper reports no sampling accidents among 52 participants and favorable subjective feedback for printed swabs. It does not provide complete questionnaire distributions allowing reconstruction of mean scores. The direction of reported experience can be retained, but an unreported mean pain difference or rare-event rate cannot be calculated. [Participant experience results](ref:R03)\n\nParticipant totals, comment totals and paired-test counts are different units of data and should be read separately.",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Original Figure 2: classification tables and paired scatterplot",
+          "interpretation": "Grey cells in a are discordant results, and total pairs differ by prototype. The plotted replicate-control total disagrees with the text count; both should remain distinguished. The dashed line in b is equality. Some peripheral points encode nondetection rather than continuous measured values."
+        },
+        "F02": {
+          "caption": "Original Figure 3: paired signals within participants",
+          "interpretation": "A and B are different targets and C the internal control. Lines link conventional and printed results within each participant, exposing individual differences alongside population distributions. The displayed difference tests do not supply a predefined equivalence margin."
+        },
+        "F03": {
+          "caption": "Original Figure 2: different adult and pediatric endpoints",
+          "interpretation": "A and B show adult internal-control and target signals; C shows pediatric internal controls. C also includes different sample origins and is not a comparison of detection among positive pediatric cases. Box midlines are medians, not individual paired differences."
+        },
+        "F04": {
+          "caption": "Original Figure 3: changes in relative classification",
+          "interpretation": "Each row is a participant, with orange and blue markers for swab types. Different asterisks identify pairs crossing classification boundaries and cases detected by only one type. The horizontal variable is study-specific and relative; matching positive classifications need not imply matching semiquantitative levels."
+        },
+        "F05": {
+          "caption": "Original Figure 3: staff preference and comment counts",
+          "interpretation": "A uses arrows for relative preference; bars on either side of zero in B count negative and positive comments. The n values count comments, not clinical participants. Neither arrows nor bars directly measure patient pain intensity."
+        }
+      }
+    },
+    "de": {
+      "title": "Wie wird die Probenahme- und diagnostische Leistung gedruckter Nasopharyngealtupfer bewertet?",
+      "direction": "Probenahmeprodukte",
+      "sections": [
+        {
+          "id": "agreement_design",
+          "title": "Was wurde in den klinischen Übereinstimmungsstudien verglichen?",
+          "markdown": "Callahan und Kollegen verglichen die klinischen Klassifikationen mehrerer gedruckter Prototypen mit konventionellen Tupfern bei 276 Teilnehmenden. Jeder Prototyp wurde mit einem Vergleichstupfer gepaart; es handelte sich nicht um einen Crossover-Vergleich aller Prototypen bei denselben Personen. Figure 2 nennt 74, 79, 77 und 46 Paare bei unterschiedlichen Positivanteilen. Kappa beschreibt die Übereinstimmung innerhalb des jeweiligen Vergleichs, keine direkte Rangfolge zwischen Prototypen. [Klinischer Klassifikationsvergleich](ref:R01)\n\nDie dargestellten Kappa-Werte betragen 0.88, 0.85, 0.89 und 0.88. Sie berücksichtigen übereinstimmende und abweichende Klassifikationen sowie zufällige Übereinstimmung, hängen aber von der Stichprobenzusammensetzung ab. Bei überwiegend negativen Ergebnissen kann hohe Gesamtübereinstimmung hauptsächlich durch negative Paare entstehen. Positive Fallzahlen und Abweichungsrichtung sind gesondert zu betrachten. Bei relativ wenigen Positiven je Prototyp können wenige zusätzliche Diskordanzen die positive Übereinstimmung stark verändern.\n\nDie Autoren ergänzten Wiederholungsuntersuchungen konventioneller Tupfer, um Abweichungen des Vergleichsprodukts selbst zu zeigen. Der Text beschreibt jedoch 88 Fälle, die Kontingenztafel der wiederholten Kontrolle in der Abbildung insgesamt 100. Diese Nenner dürfen nicht zusammengeführt werden. Der Vergleich entstand in einem unabhängigen klinischen Ablauf und nicht in einem vollständig angeglichenen gleichzeitigen Experiment mit allen Prototypen. Die Abbildung zeigt Diskordanzrichtungen, belegt bei ungeklärter Fallzahldifferenz aber keine identischen Fehler von Prototyp und Wiederholungskontrolle.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "paired_outcomes",
+          "title": "Gepaarte Ergebnisse: ähnliche Verteilungen bei einzelnen Diskordanzen",
+          "markdown": "Eine klinikinterne Untersuchung umfasste 63 Teilnehmende. Ihre Kontingenztafel enthält 30 doppelt positive und 31 doppelt negative Paare sowie 1 Abweichung in jeder Richtung. Die Gesamtübereinstimmung beträgt somit 61/63 oder 96.8%, die positive Übereinstimmung 30/31 oder 96.8%, die negative 31/32 oder 96.9%. Die Reihenfolge der Prozentangaben im Text weicht von der Tabelle ab; hier folgen die Nenner der tatsächlichen Kreuztabelle. [Klinische Ergebnisse und Table 2](ref:R02)\n\n| Kennzahl | Ergebnis | Bedeutung |\n|---|---:|---|\n| Gesamtübereinstimmung | 96.8% | Klassifikationsübereinstimmung aller Paare |\n| Positive Übereinstimmung | 96.8% | Übereinstimmung bei positivem Vergleichsergebnis |\n| Negative Übereinstimmung | 96.9% | Übereinstimmung bei negativem Vergleichsergebnis |\n| Kappa | 0.936 | Um Zufall bereinigte Übereinstimmung |\n\nFigure 3 verbindet die Signale derselben Person. Die Zielsignalvergleiche ergeben P-Werte von 0.92 und 0.27, die interne Kontrolle 0.59. Fehlende signifikante Gruppenunterschiede können mit einzelnen Klassifikationsabweichungen koexistieren: Ähnliche Mittelwerte oder Mediane verhindern nicht, dass Einzelwerte auf verschiedenen Seiten einer Entscheidungsgrenze liegen. Unterschiedliche Druckchargen waren vertreten, vollständige stratifizierte Kontingenztafeln zur eigenständigen Leistungsschätzung jeder Charge fehlen jedoch. Die Gesamtübereinstimmung belegt daher keine Chargenäquivalenz.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "categorical_reference",
+          "title": "„Perfekte Leistung“ hängt von der Definition des Referenzergebnisses ab",
+          "markdown": "Eine Erwachsenen- und Kinderstudie umfasste 52 Personen, davon 42 Erwachsene und 10 Kinder. In den Erwachsenenpaaren waren mit gedruckten Tupfern 27 und mit konventionellen Tupfern 25 Ergebnisse positiv. Zusätzliche Positive stammten von den gedruckten Tupfern; die übrigen Erwachsenenklassifikationen stimmten überein. Bei festem konventionellem Vergleich ergeben sich 25 doppelt positive, 15 doppelt negative und 2 gedruckt-positive/konventionell-negative Paare. [Erwachsenentabelle und Ergebnisteil](ref:R03)\n\nNach dieser Referenzdefinition betragen positive Übereinstimmung 25/25, negative Übereinstimmung 15/17 und Gesamtübereinstimmung 40/42, also 100%, 88.2% und 95.2%. Dies sind aus den publizierten Fallzahlen berechnete Übereinstimmungskennzahlen, keine neuen klinischen Beobachtungen. Der Artikel nennt Sensitivität, Spezifität und weitere Kennzahlen der Drucktupfer mit 100% und wertet zusätzliche Positive als übersehene Fälle des konventionellen Tupfers. Damit ändert sich die Interpretation dessen, welches Ergebnis den wahren Zustand repräsentiert.\n\nZusätzliche Positive können klinisch relevant sein. Ohne unabhängige Befundentscheidung kann eine Untersuchung jedoch nicht gleichzeitig den konventionellen Tupfer als Referenz verwenden und jede Diskordanz automatisch zugunsten des Drucktupfers werten. Die erwähnte frühere positive Krankengeschichte dieser Personen liefert klinischen Kontext, macht den aktuellen Vergleich aber nicht zur unabhängigen Goldstandardvalidierung. Die Diskordanzrichtung ist aussagekräftiger als vermischte Referenzdefinitionen in einer einzigen „Genauigkeit“.",
+          "figure_ids": []
+        },
+        {
+          "id": "pediatric_evidence",
+          "title": "Pädiatrische Evidenz: Nutzbarkeit und negative Übereinstimmung ohne positive Fälle",
+          "markdown": "Alle 10 Kinder waren negativ; ihr mittleres Alter betrug 13 ± 1 Jahre. Der pädiatrische Teil verglich interne Kontrollsignale und Nutzungserfahrungen. Positive pädiatrische Fälle zur Sensitivitätsschätzung fehlten. Übereinstimmung aller negativen Ergebnisse stützt die Klassifikation dieser negativen Stichprobe, keine pädiatrische Positivnachweisrate von 100% und keine Aussage für Säuglinge. [Pädiatrische Merkmale und Figure 2](ref:R03)\n\nFigure 2C vergleicht interne Kontrollverteilungen konventioneller und unterschiedlicher Drucktupferproben. Der Text nennt für die Gesamt-ANOVA P = 0.64, die Grafik für paarweise Vergleiche P = 0.11, 0.20 und 0.33. Diese beantworten verschiedene statistische Fragen und sind nicht austauschbar. Die interne Kontrolle beschreibt ein probenqualitätsbezogenes Signal; korrekter Erregernachweis ist ein anderer Endpunkt.\n\nNichtsignifikante Zielsignalunterschiede bei Erwachsenen ersetzen fehlende positive Kinderdaten nicht, da Alter, Materialien und Probenzusammenstellung abweichen. Der pädiatrische Teil vergleicht außerdem Proben unterschiedlicher Herkunft. Gruppennamen müssen erhalten bleiben, statt alle Daten zu vollständig austauschbaren Kategorien „konventionell“ und „gedruckt“ zusammenzufassen. Der Beitrag liegt darin, Veränderungen der populationsbezogenen Passung und Bewertungsendpunkte aufzuzeigen, nicht einer Leistungszahl für jedes Alter.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "quantitative_classification",
+          "title": "Kategoriale und semiquantitative Übereinstimmung stellen unterschiedliche Anforderungen",
+          "markdown": "Die Erwachsenenstudie ordnete positive Signale zusätzlich studienspezifischen relativen Stufen zu. Unter 27 positiven Drucktupferfällen stimmte die Stufe bei 19 überein, bei 6 nicht; 2 wurden nur mit Drucktupfern nachgewiesen. Der Artikel verwendet 19/27 und erhält 70.4%. Bei Beschränkung auf die 25 doppelt positiven Paare ergeben 19/25 dagegen 76.0%. Die Nenner beantworten unterschiedliche Fragen; keine Quote sollte allein wegen ihrer höheren oder niedrigeren Höhe gewählt werden. [Relative Einstufung und Table 4](ref:R03)\n\nJede Zeile in Figure 3 repräsentiert eine Person; orange Dreiecke und blaue Kreise stehen für die Tupferergebnisse. Manche Paare bleiben positiv, überschreiten aber Grenzen relativer Stufen. Hohe Nachweisübereinstimmung kann daher mit geringerer semiquantitativer Übereinstimmung koexistieren. Die horizontale Größe ist innerhalb der Studie normiert, weder eine absolute Konzentration noch eine Infektiositätsmessung.\n\nFigure 2B der Callahan-Studie verlangt eine ähnliche Unterscheidung: Nichtnachweisen wurde eine gemeinsame Zeichenposition zugewiesen, kein gemessener kontinuierlicher Wert. Werden diese Punkte als gewöhnliche quantitative Fehler interpretiert, vermischt dies Messwerte und Kodierungsplatzhalter. Der Artikel verwendet nichtsignifikante Unterschiede als Argument für Nichtunterlegenheit. Ein gewöhnlicher Unterschiedstest ohne vorab definierte Nichtunterlegenheitsgrenze bestimmt aber nicht den maximal akzeptablen Abstand. Die Grafik stützt gepaarte Verteilungen und Diskordanzrichtungen im untersuchten Probenbereich. [Gepaartes Streudiagramm und statistische Interpretation](ref:R01)",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "user_endpoints",
+          "title": "Nutzungserfahrung als eigenständiger Endpunkt",
+          "markdown": "Neben diagnostischer Übereinstimmung untersuchten Callahan und Kollegen Personalpräferenzen. Figure 3A zeigt relative Präferenzen über Richtung und Stärke von Pfeilen; B zählt positive und negative Kommentare nach Kategorien. Prototypen mit ähnlichen Klassifikationen können sich in wahrgenommener Flexibilität, Komfort und Handhabung unterscheiden. Analytische Leistung und klinische Akzeptanz können daher unterschiedliche Rangfolgen haben. [Originalgrafik zur Personalrückmeldung](ref:R01)\n\nDie n-Werte sind Kommentarzahlen von 18, 14, 8 und 7, keine unabhängigen klinischen Teilnehmerzahlen. Kommentare können von derselben Person stammen und unterschiedliche Dimensionen betreffen. Balkenlängen sind deshalb keine Ereignisraten. Personalpräferenz ist außerdem kein Patientenschmerzscore. Die Pfeile repräsentieren Entscheidungen, ohne kontinuierliches Maß einer Schmerzänderung.\n\nDie Erwachsenen- und Kinderstudie berichtet unter 52 Teilnehmenden keine Probenahmeunfälle und günstigere subjektive Rückmeldungen für Drucktupfer. Vollständige Fragebogenverteilungen zur Rekonstruktion mittlerer Bewertungen werden nicht vorgelegt. Die Richtung der Erfahrung lässt sich wiedergeben, aber keine unberichtete mittlere Schmerzdifferenz oder Rate seltener Ereignisse berechnen. [Teilnehmererfahrung](ref:R03)\n\nTeilnehmerzahlen, Kommentarzahlen und gepaarte Testergebnisse sind unterschiedliche Dateneinheiten und getrennt zu lesen.",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Original Figure 2: Klassifikationstafeln und gepaartes Streudiagramm",
+          "interpretation": "Graue Felder in a sind Diskordanzen; die Paarzahlen unterscheiden sich zwischen Prototypen. Die dargestellte Wiederholungskontrolle hat eine andere Gesamtzahl als der Text, was getrennt zu halten ist. Die gestrichelte Linie in b ist die Gleichheitslinie. Einige Randpunkte kodieren Nichtnachweise statt kontinuierlicher Messwerte."
+        },
+        "F02": {
+          "caption": "Original Figure 3: gepaarte Signale innerhalb derselben Personen",
+          "interpretation": "A und B zeigen unterschiedliche Ziele, C die interne Kontrolle. Linien verbinden konventionelles und gedrucktes Ergebnis derselben Person und zeigen individuelle Unterschiede neben Gruppenverteilungen. Die dargestellten Unterschiedstests enthalten keine vorab definierte Äquivalenzgrenze."
+        },
+        "F03": {
+          "caption": "Original Figure 2: unterschiedliche Endpunkte bei Erwachsenen und Kindern",
+          "interpretation": "A und B zeigen interne Kontrolle und Zielsignale der Erwachsenen, C interne Kontrollen der Kinder. C enthält zugleich unterschiedliche Probenherkünfte und vergleicht keine Nachweise positiver Kinderfälle. Boxmittellinien sind Mediane, keine individuellen Paardifferenzen."
+        },
+        "F04": {
+          "caption": "Original Figure 3: Änderungen relativer Klassifikation",
+          "interpretation": "Jede Zeile gehört zu einer Person; Orange und Blau unterscheiden die Tupfer. Verschiedene Sternzeichen markieren Paare über Klassengrenzen und nur mit einem Typ nachgewiesene Fälle. Die horizontale Größe ist studienspezifisch und relativ. Übereinstimmende Positivklassifikation bedeutet nicht zwingend dieselbe semiquantitative Stufe."
+        },
+        "F05": {
+          "caption": "Original Figure 3: Personalpräferenzen und Kommentarzahlen",
+          "interpretation": "A verwendet Pfeile für relative Präferenzen; Balken links und rechts der Nulllinie in B zählen negative und positive Kommentare. n zählt Kommentare, keine klinischen Teilnehmenden. Weder Pfeile noch Balken messen unmittelbar die Schmerzintensität der Patienten."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "schema_version": 2,
+  "question_id": "P3-046",
+  "p": "P3",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_8873adf732578df9367c",
+    "doc_sd_d7b1dcec3d4e1c947d19",
+    "KB2026146C9BA9A508"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Combinatorial 3D printed dosage forms for a two-step and controlled drug release",
+      "publisher": "European Journal of Pharmaceutical Sciences",
+      "year": 2023,
+      "url": "https://doi.org/10.1016/j.ejps.2023.106486",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Tailoring drug release in bilayer tablets through droplet deposition modeling and injection molding",
+      "publisher": "International Journal of Pharmaceutics",
+      "year": 2024,
+      "url": "https://doi.org/10.1016/j.ijpharm.2024.123859",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "A multi-compartment pulsatile drug delivery system for sequential release: in vitro and in vivo evaluation",
+      "publisher": "Drug Delivery and Translational Research",
+      "year": 2026,
+      "url": "https://doi.org/10.1007/s13346-026-02071-3",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 7",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-046/F01.png",
+      "source_url": "https://uu.diva-portal.org/smash/get/diva2%3A1766788/FULLTEXT01.pdf",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 8",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-046/F02.png",
+      "source_url": "https://uu.diva-portal.org/smash/get/diva2%3A1766788/FULLTEXT01.pdf",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R03",
+      "original_label": "Figure 3",
+      "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs13346-026-02071-3/MediaObjects/13346_2026_2071_Fig3_HTML.png",
+      "asset_path": "assets/academic_figures/P3-046/F03.png",
+      "source_url": "https://link.springer.com/article/10.1007/s13346-026-02071-3/figures/3",
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Figure 5",
+      "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs13346-026-02071-3/MediaObjects/13346_2026_2071_Fig5_HTML.png",
+      "asset_path": "assets/academic_figures/P3-046/F04.png",
+      "source_url": "https://link.springer.com/article/10.1007/s13346-026-02071-3/figures/5",
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Figure 6",
+      "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs13346-026-02071-3/MediaObjects/13346_2026_2071_Fig6_HTML.png",
+      "asset_path": "assets/academic_figures/P3-046/F05.png",
+      "source_url": "https://link.springer.com/article/10.1007/s13346-026-02071-3/figures/6",
+      "license": "CC BY-NC-ND 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "多药物与分层结构如何设计阶段性释放？",
+      "direction": "释放控制",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "先释放内芯的快慢，决定双腔能否形成两个阶段",
+          "markdown": "Katsiotis 等将 SLS 含药内芯放入 FDM 双腔外壳，直接比较“同一空间结构、不同内芯顺序”。模型药均为茶碱，尚不是双药联用试验。壳直径 17 mm，两个弧形腔半径均为 6.5 mm；第一腔有 3 个开孔，第二腔封闭。壳材 PVA/甘露醇为 85:15，170 °C 挤出，215 °C 打印，喷嘴 0.4 mm、层厚 0.15 mm、100% 填充；打印至 5 mm 高暂停，插入预制内芯再封顶。[材料、装配与释放](ref:R01)\n\n内芯统一含茶碱 10 wt.%、Kollidon VA 64 89 wt.%、Candurin NXT Ruby Red 1 wt.%。SLS 表面温度 112.5 °C、腔温 70 °C、层厚 150 μm、扫描间距 50 μm。激光速度 200 mm/s 制成较致密的 hard 内芯，300 mm/s 制成较疏松的 soft 内芯。二者设计尺寸相同，实测质量却为 161 ± 7 mg 和 113 ± 4 mg（n = 5），药物含量分别为 9.7 ± 0.2% 与 8.6 ± 0.3%。所以调整烧结速度同时改变释放速率和实际药量，不能称为严格等剂量比较。\n\n在 900 mL 模拟胃液、37 °C、100 rpm、n = 3 下，裸 soft 内芯 15 min 达到约 90%，两类裸芯均在 30 min 内达到平台。进入双腔壳后，同样的 soft 内芯受到开孔面积限制，释放变慢。soft/hard 与 hard/soft 各有一个相同类型内芯，但交换其所在腔位后，前者先快后出现第二段上升，后者前段较慢、后段与之重叠。原图 7 的百分比曲线最终相近，早期路径却不同；决定是否出现分段的不是“有几层”本身，而是第一段持续时间相对于第二腔开放时间的长短。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "空腔对照把屏障滞后与内芯溶出分开",
+          "markdown": "该研究还设置第一腔为空、第二腔装 soft 或 hard 内芯的 e/s、e/h 对照。二者约 60 min 前几乎不释放，之后都明显上升，支持滞后主要来自外壳屏障；屏障开放后，soft 的归一化早期释放较快，hard 的最终毫克数更高。空腔实验比单看完整双腔的总曲线，更能定位第二段何时开始。[原图 6–8 的组合对照](ref:R01)\n\n| 第一腔 / 第二腔 | 总释放曲线 | 能回答的问题 |\n|---|---|---|\n| soft / soft | 两段较清楚，第二段约 80 min 后明显 | 两个快芯仍需壳体产生时间隔离 |\n| hard / hard | 上升更连续，缺乏同样清楚的平台 | 慢芯释放重叠可掩盖腔体开放 |\n| soft / hard | 第一腔约 60 min 内较快释放，随后再上升 | 快芯置前有利于分段 |\n| hard / soft | 第一段拖长，后段与之叠加 | 相同内芯组合换位置会改变时序 |\n| empty / soft 或 empty / hard | 约 60 min 滞后后启动 | 隔离壳体开放与先释放药物的影响 |\n\n原文把 hard/hard 在约 30 min 的加速解释为可能同时溶解两腔周围聚合物，但没有同步成像直接确认；空腔组约 60 min 的滞后也不支持把 30 min 当成所有结构统一的开门时刻。该体系各组只测同一种药物的总量，不能从双峰或肩部反推出每个腔的独立贡献。soft/hard 与 hard/soft 均约 150 min 完成释放，说明阶段性差异主要在过程而非最终回收量。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "双层片的界面会同时改变两种药物，而不一定造成无药间隔",
+          "markdown": "Ebrahimi 等先用液滴沉积成型（DDM）打印咖啡因层，再用注塑（IM）覆上对乙酰氨基酚层。两种配方均含 PCL 38%、PVP/VA 57%、药物 5%。打印设计直径 10 mm、厚 1.8 mm，层高和喷嘴均为 0.2 mm，喷嘴温度 190 °C；咖啡因采用 50%、75%、100% 填充。对乙酰氨基酚配方因黏度和附着问题未能良好 DDM 成型，改由注塑完成，不能把两层描述为完全相同工艺的产物。[双层片制备与原图 6–9](ref:R02)\n\n裸咖啡因打印层在上述填充率下分别于 4、6、8 h 完全释放；覆上另一层后，咖啡因明显变慢。在 100% 填充双药片中，24 h 咖啡因约 40%、对乙酰氨基酚约 25%；48 h 两者约 40%；72 h 咖啡因约 42%，对乙酰氨基酚约 55–58%。后一个范围来自原文相邻段落的 55% 与 58% 两种报告，不应擅自取其一为精确值。75% 组咖啡因 72 h 约 71%，对乙酰氨基酚约 77–78%；50% 组咖啡因约 82%，对乙酰氨基酚在 48 h 已接近完全释放。\n\n溶出为 900 mL、pH 1.2、50 rpm、n = 6，观察至 72 h；方法写温度 37 ± 5 °C，保留这一原始记录，不改写成常见的更窄公差。扫描电镜显示注塑熔体可进入打印层孔隙，低填充组渗入更多，因此改变下层填充率也会改变上层接触介质的通路。两种药物都从早期持续外移，且后期快慢关系反转，这属于耦合的双药缓释，而不是第二药被完全截留后的脉冲。长达 72 h 的固定酸性介质实验也未直接测出人体胃肠转运中的阶段位置。",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "可溶屏障厚度提供滞后时间，但必须保留个体波动",
+          "markdown": "Yoo 等采用另一种机制：PLA 作为保持形状的骨架，PVA 作为可溶屏障，内装常规即释片。打印首层 0.15 mm、喷嘴 215 °C、平台 85 °C、挤出宽度 0.25 mm、80% 填充、速度 15 mm/s。初始三腔模型使用酮洛芬模型系统，第一腔开窗；第二、第三腔 PVA 厚度为 1.5、3.0 mm 时，后两次释放滞后分别为 3.50 ± 0.63、8.00 ± 0.93 h（n = 4）。[屏障厚度与双药装置](ref:R03)\n\n在 1.2–3.6 mm 范围内，滞后从 2.51 ± 0.59 h 延长至 10.35 ± 0.58 h；全部 34 个数据点拟合为 Tlag = 3.259 × 壁厚 − 1.686，R² = 0.943，p < 0.001。各厚度 n = 4–6，批间滞后 CV 为 5.6–23.7%。该回归描述特定 PVA、结构和介质范围，不能在接近零厚度时按负截距外推出负滞后，也不能忽略薄壁组较大的相对变异。\n\n随后双腔装置把埃索美拉唑置于开窗腔、萘普生置于 3.6 mm PVA 屏障内，装置直径 15.0 mm、高 18.5 mm。在 900 mL pH 6.8 磷酸盐缓冲液、37 ± 0.5 °C、50 rpm、n = 6 下，前者 T80 为 0.15 ± 0.06 h；后者 Tlag 为 11.33 ± 1.37 h、T80 为 13.00 ± 1.86 h。移去壳体后，两种内片 T80 仅为 1.77 ± 0.08 min 与 11.01 ± 1.19 min，直接支持延迟来自屏障。萘普生在 10–14 h 的大误差条反映各装置分离时刻不同；埃索美拉唑曲线后期下降则与介质内降解有关，不能读成药物重新进入装置。",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "犬体内保持先后吸收，时间间隔却明显缩短",
+          "markdown": "同一研究向 6 只非空腹雄性比格犬口服完整装置，含埃索美拉唑 20 mg 与萘普生 100 mg，随后给予 25 mL 水。血样采至 144 h，通过 LC–MS/MS 同时定量。埃索美拉唑未出现吸收滞后，Tmax 为 0.67 ± 0.67 h；萘普生 Tlag 为 4.75 ± 1.17 h、Tmax 为 9.83 ± 2.40 h。顺序保留，但萘普生体内滞后远短于体外 11.33 ± 1.37 h，不能把体外壁厚标定直接当成体内定时钟。[完整装置药代与影像](ref:R03)\n\n三腔原型的硫酸钡标记 X 线提供了补充证据：第二腔在 4 h 已分离，第三腔在 8 h 腹背位可见分离，12 h 两个投照方向均显示完全分开。影像测的是结构分离，并非血药浓度；这组 1.5/3.0 mm 屏障原型与双药药代所用 3.6 mm 屏障也不是相同装置，二者不能逐点拼成一条体内释放曲线。\n\n萘普生体内滞后 CV 为 24.6%，其长浓度尾部还受到犬中 41.16 ± 11.38 h 消除半衰期影响，并非装置持续释放到 144 h 的直接证据。该试验无同期普通即释片或市售复方对照，也未测胃内 pH、溃疡发生率或镇痛效应；因此“先吸收埃索美拉唑”是实测药代结果，“已形成更好的胃保护”并非本次实验的测量终点。PLA 骨架报告在 2–4 天后完整随粪便排出，反映残余结构的去向，而不是 PVA 屏障释放过程的延长。",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Katsiotis et al. — 原图 7：交换内芯顺序改变早期释放路径。",
+          "interpretation": "A 纵轴为释放 mg，B 为释放百分比，横轴均为 min。蓝线 soft/hard 前 60 min 高于绿线 hard/soft；80 min 附近相交后，两者趋于相近平台。两组包含相同类型的内芯组合，曲线差异支持位置与介质接触顺序的作用；B 的相近终点不能掩盖 A 所示的实际药量尺度。[组合顺序](ref:R01)"
+        },
+        "F02": {
+          "caption": "Katsiotis et al. — 原图 8：第一腔留空后显露屏障控制的滞后。",
+          "interpretation": "蓝线 empty/soft、绿线 empty/hard 在约 60 min 前均接近基线。A 显示最终约 10 mg 与 15 mg 的差别，B 归一化后则显示 soft 在开放后早期释放比例较高。两图并列说明硬芯释放更多毫克与软芯释放比例更快可以同时成立；误差条来自三次释放实验。[空腔对照](ref:R01)"
+        },
+        "F03": {
+          "caption": "Yoo et al. — 原图 3：脉冲与 PVA 壁厚的标定。",
+          "interpretation": "A 为 1.5/3.0 mm 屏障三腔装置的独立释放曲线，约在三分之一和三分之二总量处形成平台；各条曲线的跳变时间不同。B 横轴壁厚 mm、纵轴 Tlag h，浅蓝叉号为个体数据，深蓝点和误差条为汇总，虚线为 y = 3.259x − 1.686、R² = 0.943 的拟合。回归相关性并未消除同一厚度的波动。[壁厚试验](ref:R03)"
+        },
+        "F04": {
+          "caption": "Yoo et al. — 原图 5：装置浮起、腔体分离与双药释放。",
+          "interpretation": "A 显示初始漂浮的开窗装置；B 黄色圈标明剩余上部结构及脱离的内片。C 为 0–24 h 的溶出百分比，深蓝实心点为埃索美拉唑、浅蓝空心点为萘普生，n = 6。萘普生晚期上升但过渡段误差很大；埃索美拉唑已快速溶出后浓度下降，与 pH 6.8 下不稳定有关，不能将下降读成负释放。[双药体外实验](ref:R03)"
+        },
+        "F05": {
+          "caption": "Yoo et al. — 原图 6：完整装置在犬中的先后吸收。",
+          "interpretation": "主图横轴至 144 h，插图放大 0–24 h；埃索美拉唑读左轴，萘普生读右轴，均为 ng/mL，两轴量程不同。深蓝峰先出现，浅蓝曲线延后上升且长时间维持。均值与 SD 为 n = 6，不能按图面峰高直接比较两药浓度或把后段浓度维持等同于持续放药。[双药药代](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "How can multiple drugs and layered structures deliver phased release?",
+      "direction": "Release control",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "The first insert’s release rate determines whether two compartments produce two phases",
+          "markdown": "Katsiotis and colleagues placed SLS drug-containing inserts inside an FDM shell to compare the same compartment architecture with different insert orders. Both inserts contained theophylline; this was not yet a two-drug combination experiment. The shell was 17 mm in diameter with two arc-shaped compartments of 6.5 mm radius. The first had 3 openings and the second was sealed. PVA/mannitol shell material at 85:15 was extruded at 170 °C and printed at 215 °C using a 0.4 mm nozzle, 0.15 mm layers and 100% infill. Printing paused at 5 mm height for insertion before closing the top. [Materials, assembly and release](ref:R01)\n\nAll inserts contained 10 wt.% theophylline, 89 wt.% Kollidon VA 64 and 1 wt.% Candurin NXT Ruby Red. SLS used a 112.5 °C printing surface, 70 °C chamber, 150 μm layers and 50 μm hatching. A 200 mm/s laser speed produced denser hard inserts; 300 mm/s produced more porous soft inserts. Despite identical design dimensions, measured masses were 161 ± 7 mg and 113 ± 4 mg (n = 5), with drug contents of 9.7 ± 0.2% and 8.6 ± 0.3%, respectively. Changing scan speed therefore changed both release rate and actual dose; this was not a strictly dose-matched comparison.\n\nIn 900 mL simulated gastric fluid at 37 °C and 100 rpm, n = 3, bare soft inserts reached approximately 90% release in 15 min; both bare types plateaued within 30 min. The same soft insert released more slowly inside the shell because the openings restricted medium access. Soft/hard and hard/soft each contained the same pair of insert types, but reversing compartment positions gave faster initial release followed by a second rise for the former, and a slower initial contribution overlapping the later contribution for the latter. Original Figure 7 ends at similar normalized plateaus but follows different early paths. Phase separation depends on the duration of the first contribution relative to opening of the second compartment, rather than simply the number of layers.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Empty-compartment controls separate barrier lag from insert dissolution",
+          "markdown": "The study also left the first compartment empty and loaded soft or hard inserts only into the second, producing e/s and e/h controls. Both released almost nothing before approximately 60 min and then rose markedly, supporting a shell-controlled lag. After opening, soft inserts released a greater early normalized fraction, whereas hard inserts delivered more milligrams overall. These controls locate the later contribution more clearly than the total curve of a fully loaded device. [Combination controls in Figures 6–8](ref:R01)\n\n| First / second compartment | Overall release pattern | What the comparison resolves |\n|---|---|---|\n| soft / soft | Relatively clear phases; second rise evident after approximately 80 min | Even two fast inserts need shell-mediated temporal separation |\n| hard / hard | More continuous rise without the same clear plateau | Overlapping slow release can obscure compartment opening |\n| soft / hard | Faster first contribution within approximately 60 min, then renewed rise | A fast insert in front favors separation |\n| hard / soft | Prolonged first contribution overlaps the later one | Swapping identical insert combinations changes timing |\n| empty / soft or empty / hard | Starts after approximately 60 min lag | Isolates shell opening from the initially released dose |\n\nThe authors tentatively attribute acceleration of hard/hard near 30 min to dissolution around both compartments, but no simultaneous imaging directly confirms this. The approximately 60 min lag in empty-compartment controls also does not justify treating 30 min as a universal opening time. Every group measures the total of the same drug, so shoulders or two rises cannot identify each compartment’s independent contribution. Both soft/hard and hard/soft finish releasing at approximately 150 min; their main difference lies in the trajectory rather than final recovery.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "A bilayer interface can change both drugs without creating a drug-free interval",
+          "markdown": "Ebrahimi and colleagues first printed a caffeine layer by droplet deposition modeling (DDM), then over-molded a paracetamol layer by injection molding (IM). Both formulations contained 38% PCL, 57% PVP/VA and 5% drug. The printed design was 10 mm in diameter and 1.8 mm thick, with 0.2 mm layers and nozzle, a 190 °C nozzle temperature, and 50%, 75% or 100% caffeine infill. Viscosity and adhesion prevented satisfactory DDM processing of paracetamol, which was instead injection-molded; the layers were not made by equivalent processes. [Bilayer preparation and Figures 6–9](ref:R02)\n\nBare caffeine layers at those infills released completely in 4, 6 and 8 h, respectively. Adding the other layer substantially slowed caffeine. In the 100% dual-drug group, caffeine/paracetamol release was approximately 40%/25% at 24 h and approximately 40% for both at 48 h. At 72 h, caffeine reached approximately 42% and paracetamol approximately 55–58%. The latter range preserves the paper’s adjacent reports of 55% and 58%, rather than arbitrarily selecting one as exact. At 75% infill, 72 h release was approximately 71% caffeine and 77–78% paracetamol. At 50%, caffeine reached approximately 82%, while paracetamol was already near complete release at 48 h.\n\nDissolution used 900 mL at pH 1.2 and 50 rpm, n = 6, through 72 h. Methods state 37 ± 5 °C; that original tolerance is retained rather than silently replaced with a more usual narrower value. SEM showed injection melt entering printed pores, with greater penetration at lower infill. Changing the lower layer therefore also changes access routes to the upper one. Both drugs leave continuously from early times and their relative release ranking reverses later: this is coupled dual-drug sustained release, not a second drug completely withheld until a pulse. A fixed acidic medium over 72 h also did not directly measure phase location during human gastrointestinal transit.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "A soluble barrier calibrates lag time while retaining unit-to-unit variation",
+          "markdown": "Yoo and colleagues used a different mechanism: a shape-retaining PLA framework, soluble PVA barriers and conventional immediate-release tablets inside. Printing used a 0.15 mm first layer, 215 °C nozzle, 85 °C bed, 0.25 mm extrusion width, 80% infill and 15 mm/s speed. The initial three-compartment ketoprofen model had an open first compartment. With 1.5 and 3.0 mm PVA walls around the later compartments, release lag times were 3.50 ± 0.63 and 8.00 ± 0.93 h, respectively (n = 4). [Barrier thickness and the dual-drug device](ref:R03)\n\nAcross 1.2–3.6 mm thickness, lag increased from 2.51 ± 0.59 h to 10.35 ± 0.58 h. All 34 individual points gave Tlag = 3.259 × wall thickness − 1.686, R² = 0.943, p < 0.001. Each thickness used n = 4–6; between-batch lag CV was 5.6–23.7%. This regression describes the tested PVA, architecture and medium range. Its negative intercept cannot be extrapolated near zero thickness into a negative lag, and larger relative variation in thinner walls remains relevant.\n\nThe subsequent two-compartment device placed esomeprazole in the open compartment and naproxen behind 3.6 mm PVA. Device diameter was 15.0 mm and height 18.5 mm. In 900 mL phosphate buffer at pH 6.8, 37 ± 0.5 °C and 50 rpm, n = 6, esomeprazole T80 was 0.15 ± 0.06 h; naproxen Tlag was 11.33 ± 1.37 h and T80 13.00 ± 1.86 h. Without the device, tablet T80 values were only 1.77 ± 0.08 min and 11.01 ± 1.19 min, directly supporting a barrier-generated delay. Large naproxen error bars over 10–14 h reflect different compartment separation times. Declining late esomeprazole reflects degradation in the medium, not drug returning into the device.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Dogs retain sequential absorption, but the interval becomes substantially shorter",
+          "markdown": "The same study administered intact devices containing 20 mg esomeprazole and 100 mg naproxen to 6 non-fasted male beagle dogs, followed by 25 mL water. Blood was collected through 144 h and both drugs quantified by LC–MS/MS. Esomeprazole showed no absorption lag and Tmax was 0.67 ± 0.67 h. Naproxen Tlag was 4.75 ± 1.17 h and Tmax 9.83 ± 2.40 h. Sequence persisted, but naproxen’s in-vivo lag was much shorter than the in-vitro 11.33 ± 1.37 h. The in-vitro wall-thickness calibration therefore does not function as a direct in-vivo clock. [Intact-device pharmacokinetics and imaging](ref:R03)\n\nBarium-labeled radiographs of the three-compartment prototype supplied additional evidence: the second compartment had separated at 4 h; the third showed separation in the ventrodorsal view at 8 h and complete separation in both projections at 12 h. Imaging measured structural detachment, not plasma concentrations. Its 1.5/3.0 mm barriers also differed from the 3.6 mm barrier used for dual-drug pharmacokinetics; the experiments cannot be stitched point by point into one in-vivo release curve.\n\nNaproxen in-vivo lag CV was 24.6%. Its long concentration tail also reflects a 41.16 ± 11.38 h elimination half-life in dogs, rather than directly showing continued device release through 144 h. There was no concurrent ordinary immediate-release or marketed combination comparator, and no measurement of intragastric pH, ulcer incidence or analgesia. Earlier esomeprazole absorption is a measured pharmacokinetic result; improved gastroprotection was not an endpoint measured here. The PLA framework reportedly passed intact in feces after 2–4 days, documenting residual structure disposal rather than prolonged PVA-controlled release.",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Katsiotis et al. — Original Figure 7: reversing insert order changes early release.",
+          "interpretation": "A plots released mg, B released percent; both use min. Blue soft/hard lies above green hard/soft over the first 60 min. They cross near 80 min and approach similar plateaus. The same insert-type combination in both groups supports an effect of position and order of medium access. Similar endpoints in B must not obscure the actual dose scale in A. [Insert order](ref:R01)"
+        },
+        "F02": {
+          "caption": "Katsiotis et al. — Original Figure 8: an empty first compartment reveals the barrier lag.",
+          "interpretation": "Blue empty/soft and green empty/hard remain near baseline before approximately 60 min. A ends near 10 mg versus 15 mg; normalized B instead shows a greater early post-opening fraction for soft. Higher milligrams from hard and faster fractional release from soft can therefore coexist. Error bars derive from triplicate release experiments. [Empty-compartment controls](ref:R01)"
+        },
+        "F03": {
+          "caption": "Yoo et al. — Original Figure 3: pulses and calibration against PVA wall thickness.",
+          "interpretation": "A shows individual curves for three-compartment devices with 1.5/3.0 mm barriers and plateaus near one-third and two-thirds of total dose; jump times differ between curves. B plots thickness in mm against Tlag in h. Light-blue crosses are individual data; dark-blue points/error bars summarize them. The dotted fit is y = 3.259x − 1.686, R² = 0.943. Correlation does not eliminate variability at the same thickness. [Wall-thickness experiment](ref:R03)"
+        },
+        "F04": {
+          "caption": "Yoo et al. — Original Figure 5: flotation, compartment separation and dual-drug release.",
+          "interpretation": "A shows the initially floating open-window device. Yellow circles in B identify the remaining upper structure and detached inner tablet. C plots dissolution percent over 0–24 h: dark-blue filled points are esomeprazole, light-blue open points naproxen, n = 6. Naproxen rises later with large transition error bars. Esomeprazole declines after rapid dissolution because of instability at pH 6.8; the decline is not negative release. [Dual-drug in-vitro experiment](ref:R03)"
+        },
+        "F05": {
+          "caption": "Yoo et al. — Original Figure 6: sequential absorption from intact devices in dogs.",
+          "interpretation": "The main time axis extends to 144 h and the inset enlarges 0–24 h. Esomeprazole uses the left axis and naproxen the right, both ng/mL but with different ranges. The dark-blue peak appears first; light blue rises later and persists. Means and SD use n = 6. Graphical peak heights cannot directly compare concentrations between drugs, and persistent late concentrations do not equate to continued delivery. [Dual-drug pharmacokinetics](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie ermöglichen mehrere Wirkstoffe und Schichtstrukturen eine phasenweise Freisetzung?",
+      "direction": "Freisetzungskontrolle",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Die Freisetzung des ersten Einsatzes bestimmt, ob zwei Kammern zwei Phasen erzeugen",
+          "markdown": "Katsiotis und Kollegen setzten wirkstoffhaltige SLS-Einsätze in eine FDM-Hülle ein und verglichen dieselbe Kammerarchitektur mit unterschiedlicher Reihenfolge der Einsätze. Beide enthielten Theophyllin; es war noch kein Versuch mit zwei verschiedenen Wirkstoffen. Die Hülle hatte 17 mm Durchmesser und zwei bogenförmige Kammern mit jeweils 6.5 mm Radius. Die erste besaß 3 Öffnungen, die zweite war geschlossen. PVA/Mannitol im Verhältnis 85:15 wurde bei 170 °C extrudiert und bei 215 °C mit 0.4-mm-Düse, 0.15-mm-Schichten und 100% Füllgrad gedruckt. Bei 5 mm Höhe wurde pausiert, die Einsätze eingelegt und anschließend der Deckel geschlossen. [Materialien, Montage und Freisetzung](ref:R01)\n\nAlle Einsätze enthielten 10 wt.% Theophyllin, 89 wt.% Kollidon VA 64 und 1 wt.% Candurin NXT Ruby Red. SLS verwendete 112.5 °C Druckoberfläche, 70 °C Kammertemperatur, 150 μm Schichthöhe und 50 μm Bahnabstand. Bei 200 mm/s entstanden dichtere hard-Einsätze, bei 300 mm/s porösere soft-Einsätze. Trotz identischer Konstruktionsmaße betrugen die gemessenen Massen 161 ± 7 mg beziehungsweise 113 ± 4 mg (n = 5), bei Wirkstoffgehalten von 9.7 ± 0.2% beziehungsweise 8.6 ± 0.3%. Die Scangeschwindigkeit änderte somit Freisetzungsrate und tatsächliche Dosis; der Vergleich war nicht streng dosisgleich.\n\nIn 900 mL simuliertem Magensaft bei 37 °C und 100 rpm, n = 3, erreichten freie soft-Einsätze nach 15 min ungefähr 90% Freisetzung; beide freien Typen erreichten innerhalb von 30 min ein Plateau. In der Hülle setzte derselbe soft-Einsatz langsamer frei, weil die Öffnungen den Medienzutritt begrenzten. Soft/hard und hard/soft enthielten jeweils dieselbe Kombination, doch der Positionswechsel erzeugte bei ersterer einen schnellen Anfang und späteren zweiten Anstieg, bei letzterer einen langsameren Anfang mit überlappender späterer Freisetzung. Originalabbildung 7 endet bei ähnlichen normierten Plateaus, zeigt aber unterschiedliche frühe Verläufe. Entscheidend ist die Dauer des ersten Beitrags relativ zur Öffnung der zweiten Kammer, nicht allein die Anzahl der Schichten.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Leerkammer-Kontrollen trennen Barriereverzögerung und Einsatzauflösung",
+          "markdown": "Zusätzlich blieb die erste Kammer leer, während die zweite einen soft- oder hard-Einsatz enthielt: e/s beziehungsweise e/h. Beide setzten vor ungefähr 60 min fast nichts frei und stiegen danach deutlich an, was eine durch die Hülle bestimmte Verzögerung stützt. Nach Öffnung zeigte soft einen größeren frühen normierten Anteil, hard hingegen eine höhere endgültige Milligrammmenge. Diese Kontrollen lokalisieren den späteren Beitrag deutlicher als die Gesamtkurve eines vollständig beladenen Systems. [Kombinationskontrollen in Abbildungen 6–8](ref:R01)\n\n| Erste / zweite Kammer | Gesamter Freisetzungsverlauf | Aussage des Vergleichs |\n|---|---|---|\n| soft / soft | Relativ klare Phasen; zweiter Anstieg nach ungefähr 80 min deutlich | Auch zwei schnelle Einsätze benötigen zeitliche Trennung durch die Hülle |\n| hard / hard | Kontinuierlicherer Anstieg ohne ähnlich klares Plateau | Überlappende langsame Freisetzung kann die Kammeröffnung verdecken |\n| soft / hard | Schnellerer erster Beitrag innerhalb ungefähr 60 min, danach erneuter Anstieg | Ein schneller vorderer Einsatz begünstigt die Trennung |\n| hard / soft | Verlängerter erster Beitrag überlappt mit dem späteren | Vertauschen derselben Einsätze verändert den zeitlichen Verlauf |\n| empty / soft oder empty / hard | Beginn nach ungefähr 60 min Verzögerung | Trennt Hüllenöffnung vom Einfluss der zuerst freigesetzten Dosis |\n\nDie Autoren erklären die Beschleunigung von hard/hard um 30 min versuchsweise durch Auflösung um beide Kammern; gleichzeitige Bildgebung bestätigt dies jedoch nicht direkt. Auch die ungefähr 60 min Verzögerung der Leerkammer-Kontrollen rechtfertigt keine allgemeine Öffnungszeit von 30 min. Alle Gruppen messen die Gesamtmenge desselben Wirkstoffs, sodass Schultern oder zwei Anstiege keine unabhängigen Kammerbeiträge identifizieren. Soft/hard und hard/soft beenden die Freisetzung jeweils nach ungefähr 150 min; der Hauptunterschied liegt im Verlauf statt in der abschließenden Wiederfindung.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Die Grenzfläche einer Zweischichttablette verändert beide Wirkstoffe ohne zwingendes freisetzungsfreies Intervall",
+          "markdown": "Ebrahimi und Kollegen druckten zunächst eine Coffeinschicht mittels Droplet Deposition Modeling (DDM) und überspritzten sie mit einer Paracetamolschicht mittels Injection Molding (IM). Beide Rezepturen enthielten 38% PCL, 57% PVP/VA und 5% Wirkstoff. Der Druckentwurf hatte 10 mm Durchmesser und 1.8 mm Dicke, 0.2 mm Schichthöhe und Düsendurchmesser, 190 °C Düsentemperatur sowie 50%, 75% oder 100% Coffeinfüllgrad. Viskositäts- und Haftungsprobleme verhinderten zufriedenstellendes DDM von Paracetamol, weshalb diese Schicht spritzgegossen wurde. Die Schichten entstanden somit nicht durch gleichwertige Prozesse. [Zweischichtherstellung und Abbildungen 6–9](ref:R02)\n\nFreie Coffeinschichten erreichten bei diesen Füllgraden nach 4, 6 beziehungsweise 8 h vollständige Freisetzung. Die zusätzliche Schicht verlangsamte Coffein deutlich. Bei 100% Füllgrad betrug die Coffein-/Paracetamolfreisetzung nach 24 h ungefähr 40%/25%, nach 48 h für beide ungefähr 40%. Nach 72 h erreichte Coffein ungefähr 42%, Paracetamol ungefähr 55–58%. Letzterer Bereich erhält die widersprüchlichen Angaben von 55% und 58% in benachbarten Originalabsätzen, statt willkürlich einen exakten Wert auszuwählen. Bei 75% lagen die Werte nach 72 h bei ungefähr 71% Coffein und 77–78% Paracetamol. Bei 50% erreichte Coffein ungefähr 82%, während Paracetamol bereits nach 48 h nahezu vollständig freigesetzt war.\n\nDer Freisetzungsversuch verwendete 900 mL bei pH 1.2 und 50 rpm, n = 6, bis 72 h. Die Methode nennt 37 ± 5 °C; diese Originaltoleranz bleibt erhalten und wird nicht stillschweigend durch einen üblichen engeren Wert ersetzt. REM zeigte das Eindringen der Spritzgussschmelze in Druckporen, stärker bei niedrigerem Füllgrad. Veränderungen der unteren Schicht beeinflussen damit auch Zugangswege zur oberen. Beide Wirkstoffe treten bereits früh kontinuierlich aus; ihre relative Freisetzungsrangfolge kehrt sich später um. Dies ist gekoppelte Zweistoff-Retardierung, keine vollständige Zurückhaltung des zweiten Wirkstoffs bis zu einem Puls. Ein unverändert saures Medium über 72 h misst zudem nicht direkt die Lage der Phasen während der menschlichen Magen-Darm-Passage.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "Eine lösliche Barriere kalibriert die Verzögerung bei verbleibender Streuung zwischen Einheiten",
+          "markdown": "Yoo und Kollegen nutzten einen anderen Mechanismus: ein formhaltendes PLA-Gerüst, lösliche PVA-Barrieren und eingelegte konventionelle sofort freisetzende Tabletten. Druckparameter waren 0.15 mm erste Schicht, 215 °C Düse, 85 °C Druckbett, 0.25 mm Extrusionsbreite, 80% Füllgrad und 15 mm/s Geschwindigkeit. Das anfängliche Dreikammer-Ketoprofenmodell hatte eine offene erste Kammer. Bei 1.5 beziehungsweise 3.0 mm PVA-Wand um die späteren Kammern betrugen die Verzögerungen 3.50 ± 0.63 beziehungsweise 8.00 ± 0.93 h (n = 4). [Barrierewandstärke und Zweistoffsystem](ref:R03)\n\nZwischen 1.2–3.6 mm Wandstärke stieg die Verzögerung von 2.51 ± 0.59 h auf 10.35 ± 0.58 h. Alle 34 Einzelpunkte ergaben Tlag = 3.259 × Wandstärke − 1.686, R² = 0.943, p < 0.001. Je Wandstärke galt n = 4–6; der chargenübergreifende Verzögerungs-CV betrug 5.6–23.7%. Die Regression beschreibt den untersuchten PVA-, Architektur- und Medienbereich. Ihr negativer Achsenabschnitt darf nahe null Wandstärke nicht als negative Verzögerung extrapoliert werden; die größere relative Streuung dünnerer Wände bleibt relevant.\n\nDas anschließende Zweikammersystem platzierte Esomeprazol offen und Naproxen hinter 3.6 mm PVA. Der Durchmesser betrug 15.0 mm, die Höhe 18.5 mm. In 900 mL Phosphatpuffer bei pH 6.8, 37 ± 0.5 °C und 50 rpm, n = 6, betrug Esomeprazol-T80 0.15 ± 0.06 h; Naproxen-Tlag lag bei 11.33 ± 1.37 h und T80 bei 13.00 ± 1.86 h. Ohne System betrugen die Tabletten-T80 lediglich 1.77 ± 0.08 min und 11.01 ± 1.19 min und stützten damit unmittelbar die Barriere als Verzögerungsursache. Große Naproxen-Fehlerbalken über 10–14 h spiegeln unterschiedliche Trennungszeitpunkte wider. Später abnehmendes Esomeprazol entspricht Abbau im Medium, keiner Rückkehr des Wirkstoffs in das System.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Bei Hunden bleibt die Absorptionsreihenfolge erhalten, das Intervall wird aber deutlich kürzer",
+          "markdown": "Dieselbe Studie verabreichte 6 nicht nüchternen männlichen Beagles intakte Systeme mit 20 mg Esomeprazol und 100 mg Naproxen, gefolgt von 25 mL Wasser. Blut wurde bis 144 h entnommen und beide Wirkstoffe mittels LC–MS/MS quantifiziert. Esomeprazol zeigte keine Absorptionsverzögerung; Tmax betrug 0.67 ± 0.67 h. Naproxen-Tlag betrug 4.75 ± 1.17 h, Tmax 9.83 ± 2.40 h. Die Reihenfolge blieb erhalten, doch die Naproxen-Verzögerung war in vivo wesentlich kürzer als die 11.33 ± 1.37 h in vitro. Die In-vitro-Wandkalibrierung ist daher keine unmittelbar übertragbare In-vivo-Uhr. [Pharmakokinetik intakter Systeme und Bildgebung](ref:R03)\n\nBariummarkierte Röntgenaufnahmen des Dreikammerprototyps ergänzten die Evidenz: Die zweite Kammer war nach 4 h getrennt; die dritte zeigte nach 8 h in ventrodorsaler Projektion eine Trennung, nach 12 h in beiden Projektionen vollständige Ablösung. Gemessen wurde Strukturtrennung, keine Plasmakonzentration. Die dortigen 1.5/3.0-mm-Barrieren unterschieden sich zudem von der 3.6-mm-Barriere des Zweistoff-Pharmakokinetikversuchs; die Experimente lassen sich nicht Punkt für Punkt zu einer einzigen In-vivo-Freisetzungskurve verbinden.\n\nDer In-vivo-Verzögerungs-CV von Naproxen betrug 24.6%. Der lange Konzentrationsauslauf wird außerdem durch eine Eliminationshalbwertszeit von 41.16 ± 11.38 h bei Hunden geprägt; er beweist keine anhaltende Systemfreisetzung bis 144 h. Es gab keine gleichzeitige gewöhnliche sofort freisetzende oder vermarktete Kombinationskontrolle und keine Messung von intragastrischem pH, Ulkushäufigkeit oder Analgesie. Frühere Esomeprazolaufnahme ist ein gemessenes pharmakokinetisches Ergebnis; verbesserter Magenschutz war hier kein gemessener Endpunkt. Das PLA-Gerüst wurde laut Bericht nach 2–4 Tagen intakt mit dem Kot ausgeschieden: ein Befund zum Verbleib der Reststruktur, nicht zu verlängerter PVA-gesteuerter Freisetzung.",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Katsiotis et al. — Originalabbildung 7: Vertauschen der Einsätze verändert die frühe Freisetzung.",
+          "interpretation": "A zeigt freigesetzte mg, B den Prozentsatz; beide Zeitachsen verwenden min. Blaues soft/hard liegt während der ersten 60 min über grünem hard/soft. Um 80 min kreuzen sich die Kurven und nähern sich ähnlichen Plateaus. Dieselbe Kombination von Einsatztypen stützt den Einfluss von Position und Reihenfolge des Medienzutritts. Ähnliche Endpunkte in B dürfen die tatsächliche Dosisskala in A nicht verdecken. [Einsatzreihenfolge](ref:R01)"
+        },
+        "F02": {
+          "caption": "Katsiotis et al. — Originalabbildung 8: Eine leere erste Kammer legt die Barriereverzögerung offen.",
+          "interpretation": "Blaues empty/soft und grünes empty/hard bleiben vor ungefähr 60 min nahe der Basislinie. A endet bei ungefähr 10 mg gegenüber 15 mg; normiertes B zeigt dagegen einen größeren frühen Anteil nach Öffnung für soft. Eine höhere Milligrammmenge bei hard und schnellere anteilige Freisetzung bei soft sind somit gleichzeitig möglich. Fehlerbalken stammen aus dreifachen Freisetzungsversuchen. [Leerkammer-Kontrollen](ref:R01)"
+        },
+        "F03": {
+          "caption": "Yoo et al. — Originalabbildung 3: Pulse und Kalibrierung anhand der PVA-Wandstärke.",
+          "interpretation": "A zeigt einzelne Kurven von Dreikammersystemen mit 1.5/3.0-mm-Barrieren und Plateaus bei ungefähr einem Drittel und zwei Dritteln der Gesamtdosis; die Sprungzeitpunkte unterscheiden sich. B trägt Wandstärke in mm gegen Tlag in h auf. Hellblaue Kreuze sind Einzeldaten, dunkelblaue Punkte/Fehlerbalken deren Zusammenfassung. Die gepunktete Anpassung lautet y = 3.259x − 1.686, R² = 0.943. Korrelation beseitigt die Streuung bei gleicher Wandstärke nicht. [Wandstärkenversuch](ref:R03)"
+        },
+        "F04": {
+          "caption": "Yoo et al. — Originalabbildung 5: Aufschwimmen, Kammertrennung und Zweistofffreisetzung.",
+          "interpretation": "A zeigt das anfangs schwimmende System mit offener Fensterkammer. Gelbe Kreise in B markieren die verbleibende obere Struktur und die abgetrennte Innentablette. C zeigt den gelösten Prozentsatz über 0–24 h: dunkelblaue gefüllte Punkte Esomeprazol, hellblaue offene Punkte Naproxen, n = 6. Naproxen steigt später mit großen Übergangsfehlerbalken an. Esomeprazol nimmt nach schneller Auflösung wegen Instabilität bei pH 6.8 ab; dies ist keine negative Freisetzung. [Zweistoffversuch in vitro](ref:R03)"
+        },
+        "F05": {
+          "caption": "Yoo et al. — Originalabbildung 6: sequenzielle Absorption aus intakten Systemen bei Hunden.",
+          "interpretation": "Die Hauptzeitachse reicht bis 144 h, der Ausschnitt vergrößert 0–24 h. Esomeprazol verwendet die linke, Naproxen die rechte Achse, jeweils ng/mL bei unterschiedlichen Bereichen. Der dunkelblaue Gipfel erscheint zuerst, Hellblau steigt später und bleibt länger erhalten. Mittelwerte und SD beruhen auf n = 6. Gezeichnete Gipfelhöhen erlauben keinen direkten Konzentrationsvergleich zwischen Wirkstoffen; anhaltende späte Konzentrationen bedeuten keine anhaltende Abgabe. [Zweistoff-Pharmakokinetik](ref:R03)"
+        }
+      }
+    }
+  }
+}

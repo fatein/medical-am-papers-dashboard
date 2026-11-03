@@ -1,0 +1,338 @@
+{
+  "schema_version": 2,
+  "question_id": "P6-087",
+  "p": "P6",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_5d67d89a64613b6f898e",
+    "doc_4e44b7cac830ebe6da15"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Quantitative Assessment of 3D Printed Model Accuracy in Delineating Congenital Heart Disease",
+      "publisher": "Biomolecules",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/biom11020270",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "The Use of 3D Printed Models for Surgical Simulation of Cranioplasty in Craniosynostosis as Training and Education",
+      "publisher": "Brain Sciences",
+      "year": 2023,
+      "url": "https://doi.org/10.3390/brainsci13060894",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Enhanced Resident Education in Craniofacial Surgery using Patient-specific 3D Printed Computed Tomography Image Surgical Models",
+      "publisher": "Plastic and Reconstructive Surgery Global Open",
+      "year": 2018,
+      "url": "https://doi.org/10.1097/GOX.0000000000001818",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Educational value of mixed reality combined with a three-dimensional printed model of aortic disease for vascular surgery in the standardized residency training of surgical residents in China: a case control study",
+      "publisher": "BMC Medical Education",
+      "year": 2023,
+      "url": "https://doi.org/10.1186/s12909-023-04610-9",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-087/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7917618/#biomolecules-11-00270-f002",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-087/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7917618/#biomolecules-11-00270-f004",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R01",
+      "original_label": "Figure 6",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-087/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7917618/#biomolecules-11-00270-f006",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Figure 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-087/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10296687/#brainsci-13-00894-f002",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R02",
+      "original_label": "Figure 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-087/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10296687/#brainsci-13-00894-f003",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R04",
+      "original_label": "Fig. 1",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-087/F06.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10612237/#Fig1",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "心血管与颅颌面模型如何展示复杂解剖？",
+      "direction": "术前规划模型",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "心内结构通过分体显露，制造壁厚不等于心肌厚度",
+          "markdown": "Lee 等从 6 例先天性心脏病 CT 中选择影像质量较好的 3 例打印，分别为室间隔缺损、右心室双出口和法洛四联症。原始层厚为 0.5 mm；先提取血池，再向外增加 2 mm 壁层，并把模型分成可打开的部件。因此，切开的实体显示的是经过编辑的腔室边界与开口关系，外壁不是对患者心肌厚度的逐点复制。[病例选择与模型构造](ref:R01)\n\n原图把数字模型与黄色打印件并排，标出主动脉、右心房、右心室、室间隔缺损及肺动脉狭窄。打开模型后，观察者可沿缺损边缘追踪相邻腔室与流出通路；完整外壳则会遮住这些关系。分体位置也是一种展示选择：它增加内部可见范围，同时去掉了完整胸腔、周围组织和实际暴露入口的限制，不能直接等同于术中视野。\n\n研究采用柔性聚氨酯或树脂，打印分辨率分别为 100 μm 和 50 μm。这些参数描述制造过程，既不是每处解剖边界的误差，也不能证明与心肌力学一致。原文还说明瓣膜位置难以打印；可见的缺损和大血管关系较清楚，并不表示薄瓣叶、搏动或全部小结构都已被重现。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "以同一距离跨越影像、网格和打印件，检查尺寸偏差",
+          "markdown": "同一研究在原始 CT、原始分割网格、打印件、打印件复扫 CT 和再次分割网格之间比较尺寸。两位评估者独立测量，每项重复 3 次取平均；预先列出的部位包括心房、心室、主动脉、肺动脉、上腔静脉及缺损。结果报告 33 个直径测量值，不能把这些重复和部位当作独立患者。[测量路径与表格结果](ref:R01)\n\n| 比较 | 平均差 ± 标准差，mm | 所覆盖的过程 |\n|---|---:|---|\n| 原始 CT 与原始网格 | 0.12 ± 0.23 | 分割及网格编辑 |\n| 原始网格与打印件 | 0.10 ± 0.28 | 制造及实体测量 |\n| 原始 CT 与打印件 | 0.21 ± 0.37 | 前述过程的组合 |\n| 原始网格与复扫后网格 | 0.10 ± 0.45 | 制造、复扫及再次分割 |\n\n所有比较报告相关系数 0.99，平均组内相关系数为 0.97。强相关表明较大的结构在另一表示中也较大，不能替代差值分布。原始 CT 与打印件的 Bland–Altman 图把平均尺寸放在横轴、二者差值放在纵轴；依据报告的均值和标准差计算，一致性界限约为 −0.52 至 0.94 mm。图中仍有约毫米量级的正偏差，所以“平均差小于半毫米”不能改写为“每个位置误差都小于半毫米”。\n\n这种比较以原始影像为参照，验证的是复制链的一致性；原始 CT 本身的运动伪影和分辨率限制仍在。模型的局部开口是否可测，还受卡尺接触点与切面对应关系影响。原图同时保留影像、实体卡尺和数字测距，正好让读者检查测量对象，而不是只看一个总体相关系数。",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "颅骨模型呈现整体畸形，也把拟议骨块变成可比较对象",
+          "markdown": "Uhl 等以一名 1 岁矢状缝早闭患儿的 CT 构建颅骨模型。正面、侧面和顶部数字视图提供互补的外形参照：单一视角不足以同时判断前额形态、前后延长和横向轮廓。分割按骨的高衰减特征提取表面，再修整伪影；原图中的切片支撑是制造辅助结构，不属于患者骨性解剖。[颅骨重建与展示视角](ref:R02)\n\n模型照片展示完整表面标记及不同骨块重排形式。与仅在文字中列出步骤相比，实体上可以指出标记跨越哪个区域、相邻骨块怎样保持连续，以及同一外形被不同方案分解后出现何种间隙。这里的价值是把局部操作与整个颅形联系起来。照片没有尺寸误差图，也没有骨厚度或切削阻力的校准，不能据此证明皮质骨力学被准确重现。\n\n该研究便利抽取 10 名经验较少的神经外科医师，传统教学组 5 人、模型训练组 5 人；模型组还接受介绍、练习和反馈。作者文字声称整形准确性与操作表现较好，但表格主要给出模型组逐人的满意度回答，没有可复核的两组几何误差或操作评分分布。因而可据原图分析展示方式和可重复练习的对象，不能从这组资料计算模型使整形精度提高多少，或声称已量化降低患者并发症。",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "将文字计划映射到颅颌面表面，可检查遗漏与位置表达",
+          "markdown": "Black 等的会议摘要提供了另一种更贴近空间表达的评价：同一位主治医师和同一位住院医师分别写出病例计划，再独立标记患者特异性颅面模型，比较遗漏或错位步骤及完成时间。观察期为 6 个月，共 7 例，包含矢状缝及额缝早闭、下颌骨牵张和上颌骨牵张。[独立书面计划与模型标记](ref:R03)\n\n| 任务 | 矢状缝早闭 | 下颌骨牵张 |\n|---|---:|---:|\n| 遗漏步骤 | 5 降至 0 | 4 降至 0 |\n| 书面计划用时降幅 | 22% | 45% |\n| 模型标记用时降幅 | 76% | 50% |\n\n书面与模型标记用时的变化并不相同，提示“知道步骤”与“在特定形态上表达步骤”是可分别观察的任务。不过，这些降幅来自同一受训者轮转中的进展，没有同期无模型对照，也未给出每例原始计时、误差分布或盲法评分。一般轮转经验、重复接触病例和导师反馈均可影响结果，不能用它估计独立的打印模型效应。\n\n这种设计的可取之处是让导师的计划成为可对照的病例参照，而非仅询问模型是否逼真。它仍不能证明计划本身是唯一正确方案，也不能由标记完整度推断颅面功能或术后对称性；摘要没有报告这些患者结局。",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "主动脉分层显示把血管、支架与病理通道联系起来",
+          "markdown": "Li 等把实体主动脉模型与混合现实教学结合。其原图为数字重建：红色动脉、蓝色静脉和白色骨架先提供定位背景，再通过透明或隐藏邻近结构显示支架外的瘤囊与分支联系。案例为腹主动脉瘤腔内修复后复查发现内漏；图中沿肠系膜下动脉及 Riolan 弓追踪联系，用于解释支架之外为何仍可能存在灌注。[分层重建的教学病例](ref:R04)\n\n这里不能把数字渲染图标作实体打印照片，也不能把静态彩色分支当作流速测量。动脉颜色区分解剖类别，透明度让遮挡区域可见，病理性血流解释来自病例影像与教师讲解。实体件采用 PLA 熔融沉积打印，供学员测量瘤体、瘤颈和髂动脉相关几何；混合现实则允许查看分层器官与演示内容。研究没有报告配准误差、流量标定或所有细小分支的打印保真度。\n\n与心脏分体模型相比，这种设计通过数字选择显示解决遮挡；与颅骨表面标记相比，其学习重点是沿分支连续追踪内外空间。不同表示共享同一患者影像，却改变了哪些结构能同时看见。教学效果必须按实际组合解释，不能把全部知识增益单独归于可触摸的打印件。",
+          "figure_ids": [
+            "F06"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "知识测验的增益集中在解剖与病理生理，研究分组存在原文冲突",
+          "markdown": "主动脉教学研究的方法部分将 2020 年的 24 名住院医师列为组合教学组，将 2019 年的 27 名列为传统教学组；训练均为 4 周、每周 8 小时。尽管摘要写了随机数字表，正文具体描述的是不同年份队列，本报告按历史对照解读。传统组使用图谱、CT 与示意图，组合组增加实体模型和混合现实，未设置只有打印或只有混合现实的组。[分组方法与测验结果](ref:R04)\n\n| 测验部分 | 组合教学 | 传统教学 | P 值 |\n|---|---:|---:|---:|\n| 总分 | 79.0 ± 9.1 | 72.6 ± 7.5 | 0.013 |\n| 解剖／病理生理 | 30.8 ± 5.4 | 24.8 ± 5.8 | <0.001 |\n| 鉴别诊断 | 25.8 ± 3.0 | 23.3 ± 4.9 | 0.078 |\n| 治疗 | 22.5 ± 11.8 | 24.5 ± 8.2 | 0.603 |\n\n总分差异主要对应解剖与病理生理部分；鉴别诊断没有达到统计学显著，治疗部分甚至在数值上较低。这与模型擅长显示分支、遮挡和邻接关系的任务相呼应，却不证明展示形式本身造成差异。实验组的问卷支持感知真实感与教学接受度，不能替代独立辨识准确率或长期知识保留。\n\n论文没有同一学员的基线测验，也没有长期复测。不同年份的教学环境和受训者经历、额外演示与教师互动均可能影响结果。现有数据可直接比较的是轮转后的病例理论测验，各种表示方式分别贡献多少，以及知识是否迁移到临床判断，在该分组中无法分离。",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Lee et al.：分体心脏的数字视图与原始打印件。",
+          "interpretation": "左侧数字网格与右侧黄色实体采用相似观察方向；红箭头分别指向肺动脉狭窄和室间隔缺损，字母标识主动脉、右心房和右心室。打开的前部让缺损与流出通路同时可见，颜色和光泽不是组织属性测量。图像可检查结构是否被保留，尺寸一致性还需对应测距。[原图说明](ref:R01)"
+        },
+        "F02": {
+          "caption": "Lee et al.：将缺损的影像、实体与网格测距并列。",
+          "interpretation": "A 为不同 CT 切面的距离，B 为卡尺接触实体缺损边缘，C 为数字模型的距离线。影像长径显示 15.88 mm，实体读数为 15.10 mm，网格对应标注为 15.48；另一个方向分别标出 6.89 和 7.41。它们提示端点与方向应匹配，不能任意拿不同方向相减；单张示例也不是研究的重复测量均值。[测量方法](ref:R01)"
+        },
+        "F03": {
+          "caption": "Lee et al.：原始 CT 与打印件的 Bland–Altman 一致性图。",
+          "interpretation": "每个点以一对测量的均值为横坐标、CT 减打印件的差值为纵坐标，单位均为 mm。实线为平均偏倚，虚线为一致性界限；部分正偏差点接近或超过上界。尺寸较大的对象没有自动消除偏差，这幅图比相关系数更直接说明平均接近与个别误差之间的差别。[一致性分析](ref:R01)"
+        },
+        "F04": {
+          "caption": "Uhl et al.：颅骨多视角重建与打印支撑。",
+          "interpretation": "A–C 为正面、侧面及顶视图，显示同一颅形在不同方向的轮廓。D–E 是切片准备中的模型和支撑，F 是打印设备工作场景。支撑柱与底座属于制造过程；它们的存在不能被解释为患者内部骨性结构。该图记录表示与制造转换，没有提供实测表面误差。[图与制作方法](ref:R02)"
+        },
+        "F05": {
+          "caption": "Uhl et al.：模型表面标记与不同骨块组合。",
+          "interpretation": "A–C 展示不同骨块重排形态，D 显示多个带标记的模型，E–F 显示手持模型的局部开口。最后两幅视觉上高度相似，不据此推断操作发生了可测量进展。图的贡献是显示同一骨性对象可被标记和重新组织；没有坐标、量尺或评分轴，不能从照片估算校正幅度。[模拟照片与结果表](ref:R02)"
+        },
+        "F06": {
+          "caption": "Li et al.：主动脉、支架外瘤囊与分支联系的数字分层显示。",
+          "interpretation": "a 保留白色骨性背景以及红色动脉、蓝色静脉；b 通过减少遮挡显示支架及其外部空间；c 进一步突出与瘤囊相联系的分支。观察层级的改变帮助把整体定位与局部病理机制联系起来。画面为数字模型，既非打印件照片，也不是流速随时间变化的实验曲线。[教学病例原图](ref:R04)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do cardiovascular and craniofacial models display complex anatomy?",
+      "direction": "Models for preoperative planning",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Opening the heart exposes internal relationships; manufactured walls are not myocardium",
+          "markdown": "Lee et al. selected 3 good-quality datasets for printing from 6 congenital-heart CT cases: ventricular septal defect, double-outlet right ventricle and tetralogy of Fallot. Source slice thickness was 0.5 mm. The blood pool was segmented, a 2 mm wall was added outward, and models were divided into opening components. The exposed physical model therefore represents edited chamber boundaries and communications, rather than a pointwise reproduction of patient myocardial thickness. [Case selection and model construction](ref:R01)\n\nThe original illustration places the digital model beside a yellow print and labels the aorta, right atrium, right ventricle, ventricular septal defect and pulmonary artery stenosis. Opening the model allows the observer to follow defect margins relative to adjacent chambers and outflow pathways; an intact shell would obscure these relationships. The separation plane is itself a presentation choice. It increases internal visibility while removing restrictions imposed by the intact thorax, surrounding tissues and actual access, so it does not directly reproduce an operative view.\n\nFlexible polyurethane or resin was used, with reported printing resolutions of 100 μm and 50 μm, respectively. These describe fabrication, not the error at every anatomical boundary or mechanical equivalence to myocardium. The authors also report difficulty printing valve locations. Clear defects and major vessels do not imply reproduction of thin leaflets, pulsation or all small structures.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Track the same distance across images, meshes and prints to examine dimensional differences",
+          "markdown": "The study compared original CT, the original segmented mesh, the print, CT rescanning of the print and its newly segmented mesh. Two assessors measured independently, averaging 3 repetitions per measurement. Prespecified sites included atria, ventricles, aorta, pulmonary artery, superior vena cava and the defect. Results report 33 diameter measurements; sites and repetitions are not independent patients. [Measurement pathway and tabulated results](ref:R01)\n\n| Comparison | Mean difference ± SD, mm | Processes represented |\n|---|---:|---|\n| Original CT versus original mesh | 0.12 ± 0.23 | Segmentation and mesh editing |\n| Original mesh versus print | 0.10 ± 0.28 | Fabrication and physical measurement |\n| Original CT versus print | 0.21 ± 0.37 | Combination of preceding processes |\n| Original versus rescanned mesh | 0.10 ± 0.45 | Fabrication, rescanning and resegmentation |\n\nAll comparisons had a reported correlation coefficient of 0.99; the average intraclass correlation coefficient was 0.97. Strong correlation means larger structures remain larger in another representation, not that differences are negligible. The original-CT-versus-print Bland–Altman plot places mean size horizontally and the difference vertically. Calculated from the reported mean and SD, agreement limits are approximately −0.52 to 0.94 mm. Positive differences of around a millimeter remain visible: a mean difference below half a millimeter does not mean every location has an error below half a millimeter.\n\nOriginal imaging is the reference, so this comparison validates consistency along the replication chain; motion artifacts and resolution limits in the original CT remain. Whether a local opening is measurable also depends on caliper contact points and correspondence with image planes. Showing imaging, physical calipers and digital distance measurements permits examination of the measured object rather than reliance on a pooled correlation alone.",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Skull models show global deformity and make proposed bone segments comparable",
+          "markdown": "Uhl et al. constructed a skull model from CT of a 1-year-old child with sagittal craniosynostosis. Frontal, lateral and superior digital views provide complementary shape references: one view cannot simultaneously characterize the forehead, anteroposterior elongation and transverse contour. Segmentation extracted the high-attenuation bone surface and artifacts were corrected. Slicing supports shown in the original figure are fabrication aids, not patient bony anatomy. [Skull reconstruction and viewing directions](ref:R02)\n\nPhotographs show surface markings and different arrangements of skull segments. Compared with a written sequence, a physical object allows identification of the region crossed by a marking, continuity between neighboring segments, and gaps arising when the same shape is divided according to different proposals. This connects local manipulation to overall cranial form. The photographs contain neither dimensional error maps nor calibration of bone thickness or cutting resistance; they cannot establish accurate reproduction of cortical-bone mechanics.\n\nThe convenience sample comprised 10 relatively inexperienced neurosurgeons, with 5 receiving traditional education and 5 model training. The model group additionally received introduction, practice and feedback. Although the prose claims better reshaping accuracy and performance, tables primarily provide individual satisfaction responses from the model group, without reproducible between-group geometric errors or performance-score distributions. These materials support analysis of presentation and repeatable practice objects, but not calculation of the improvement in reshaping accuracy or a claim of quantified reduction in patient complications.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Mapping written plans onto craniofacial surfaces exposes omissions and spatial placement",
+          "markdown": "The conference abstract by Black et al. offers an assessment closely tied to spatial expression. The same attending and resident independently wrote case plans and separately marked patient-specific craniofacial models, comparing missing or misplaced steps and completion time. Observation lasted 6 months and covered 7 cases, including sagittal and metopic synostosis, mandibular distraction and maxillary distraction. [Independent written plans and model markings](ref:R03)\n\n| Task | Sagittal synostosis | Mandibular distraction |\n|---|---:|---:|\n| Missing steps | 5 to 0 | 4 to 0 |\n| Reduction in written-plan time | 22% | 45% |\n| Reduction in model-marking time | 76% | 50% |\n\nWritten-plan and model-marking times changed differently, indicating that knowing a sequence and expressing it on a particular shape are separately observable tasks. However, reductions describe one trainee's progress during a rotation, without a concurrent no-model control, individual case timings, error distributions or blinded scoring. General rotation experience, repeated case exposure and instructor feedback could all contribute; the isolated effect of printing cannot be estimated.\n\nThe useful feature is a case-specific instructor plan as an explicit comparator rather than a realism question alone. It does not establish that this plan is uniquely correct, nor does marking completeness establish craniofacial function or postoperative symmetry. Those patient outcomes were not reported in the abstract.",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "Layered aortic views connect vessels, grafts and pathological pathways",
+          "markdown": "Li et al. combined physical aortic models with mixed-reality teaching. Their original figure is a digital reconstruction: red arteries, blue veins and white bones provide orientation, after which transparency or removal of neighboring structures exposes the sac outside the graft and its branch connections. The case concerns an endoleak detected after endovascular abdominal aneurysm repair. Following the inferior mesenteric artery and Riolan arch helps explain why perfusion may persist outside the graft. [Teaching case with layered reconstruction](ref:R04)\n\nThis rendering must not be labeled a photograph of a physical print, and static colored branches are not flow-velocity measurements. Arterial color identifies an anatomical class; transparency exposes occluded regions; interpretation of pathological flow derives from case imaging and teaching. PLA models were manufactured by fused deposition for measurement of aneurysm, neck and iliac geometry, while mixed reality offered layered anatomy and demonstrations. The study reports no registration error, flow calibration or printing fidelity for every small branch.\n\nCompared with opening a heart model, this design resolves occlusion through selective digital display. Compared with marking a skull surface, it emphasizes continuous tracing of branches and internal–external relationships. Representations share patient imaging but change which structures are simultaneously visible. Educational effects therefore concern the actual combination, not a knowledge gain attributable entirely to the tangible print.",
+          "figure_ids": [
+            "F06"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Test gains concentrate in anatomy and pathophysiology, with an internal conflict in group assignment",
+          "markdown": "The aortic study's methods identify 24 residents from 2020 as the combined-teaching group and 27 from 2019 as the traditional group; instruction lasted 4 weeks at 8 hours per week. Although the abstract mentions a random-number table, the detailed methods describe different-year cohorts, so this report interprets the comparison as historically controlled. Traditional teaching used atlases, CT and schematics; combined teaching added physical models and mixed reality, without print-only or mixed-reality-only groups. [Group assignment and test results](ref:R04)\n\n| Test component | Combined teaching | Traditional teaching | P value |\n|---|---:|---:|---:|\n| Total | 79.0 ± 9.1 | 72.6 ± 7.5 | 0.013 |\n| Anatomy/pathophysiology | 30.8 ± 5.4 | 24.8 ± 5.8 | <0.001 |\n| Differential diagnosis | 25.8 ± 3.0 | 23.3 ± 4.9 | 0.078 |\n| Treatment | 22.5 ± 11.8 | 24.5 ± 8.2 | 0.603 |\n\nThe total-score difference chiefly corresponds to anatomy and pathophysiology. Differential diagnosis did not reach statistical significance, and treatment was numerically lower. This aligns with tasks involving branches, occlusion and adjacency, but does not prove that presentation format caused the difference. The experimental questionnaire supports perceived realism and acceptability, not independent identification accuracy or long-term retention.\n\nThere was no within-learner baseline test or long-term retest. Teaching environments and trainee experience across years, additional demonstrations and instructor interaction could affect results. The directly compared outcome was a case-based theoretical test after rotation. Contributions of each representation and transfer to clinical judgment cannot be separated under this allocation.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Lee et al.: Digital view and original print of an opened heart.",
+          "interpretation": "The digital mesh on the left and yellow print on the right use similar viewing directions. Red arrows identify pulmonary artery stenosis and the ventricular septal defect; labels locate the aorta, right atrium and right ventricle. Opening the anterior region exposes the defect and outflow relationships together. Color and gloss do not measure tissue properties. Structural retention is visible, while dimensional agreement requires matched measurements. [Original figure description](ref:R01)"
+        },
+        "F02": {
+          "caption": "Lee et al.: Defect measurements on images, the print and the mesh.",
+          "interpretation": "A shows distances in different CT planes, B caliper contact with the physical defect margin, and C distance lines on the digital model. The imaging long dimension reads 15.88 mm, the physical reading 15.10 mm and the corresponding mesh annotation 15.48; another direction is labeled 6.89 and 7.41. Endpoints and directions must correspond rather than subtracting unrelated axes. This example is not the study mean of repeated measurements. [Measurement method](ref:R01)"
+        },
+        "F03": {
+          "caption": "Lee et al.: Bland–Altman agreement between original CT and the print.",
+          "interpretation": "Each point plots the mean of paired measurements horizontally and CT minus print vertically, both in mm. The solid line is mean bias and dashed lines are agreement limits; several positive differences approach or exceed the upper limit. Larger structures do not automatically eliminate bias. This plot distinguishes close average agreement from individual errors more directly than a correlation coefficient. [Agreement analysis](ref:R01)"
+        },
+        "F04": {
+          "caption": "Uhl et al.: Multiview skull reconstruction and printing supports.",
+          "interpretation": "A–C show frontal, lateral and superior contours of the same skull. D–E depict the model and supports during slicing preparation; F shows the printer at work. Columns and base belong to fabrication, not internal patient bones. The figure documents conversion from representation to manufacture without a measured surface-error map. [Figure and fabrication method](ref:R02)"
+        },
+        "F05": {
+          "caption": "Uhl et al.: Surface markings and different skull-segment arrangements.",
+          "interpretation": "A–C show alternative segment arrangements, D several marked models, and E–F local openings in a handheld model. The last two panels are visually very similar and do not establish measurable procedural progress. The figure shows that a bony object can be marked and reorganized. Without coordinates, rulers or score axes, correction magnitude cannot be estimated from these photographs. [Simulation photographs and results tables](ref:R02)"
+        },
+        "F06": {
+          "caption": "Li et al.: Layered digital display of aorta, perigraft sac and branch connections.",
+          "interpretation": "a retains white skeletal context, red arteries and blue veins; b reduces occlusion to expose the graft and surrounding space; c further emphasizes branches connected to the sac. Changing the display level links global orientation to local pathological mechanisms. This is a digital model, neither a photograph of a print nor an experimental flow-velocity time series. [Original teaching-case figure](ref:R04)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie stellen kardiovaskuläre und kraniofaziale Modelle komplexe Anatomie dar?",
+      "direction": "Modelle für die präoperative Planung",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Das geöffnete Herz zeigt innere Beziehungen; gefertigte Wände sind kein Myokard",
+          "markdown": "Lee et al. wählten aus 6 CT-Fällen angeborener Herzfehler 3 Datensätze guter Qualität zum Druck aus: Ventrikelseptumdefekt, Double-outlet right ventricle und Fallot-Tetralogie. Die ursprüngliche Schichtdicke betrug 0.5 mm. Nach Segmentierung des Blutvolumens wurde außen eine 2 mm dicke Wand ergänzt; die Modelle wurden in zu öffnende Teile zerlegt. Sichtbar werden somit bearbeitete Kammergrenzen und Verbindungen, keine punktweise Reproduktion der patienteneigenen Myokarddicke. [Fallauswahl und Modellaufbau](ref:R01)\n\nDie Originalabbildung stellt das digitale Modell einem gelben Druck gegenüber und markiert Aorta, rechten Vorhof, rechten Ventrikel, Ventrikelseptumdefekt und Pulmonalarterienstenose. Durch Öffnen lassen sich Defektränder relativ zu benachbarten Kammern und Ausflusswegen verfolgen; eine geschlossene Hülle würde diese Beziehungen verdecken. Auch die Teilungsebene ist eine Darstellungsentscheidung. Sie erweitert die innere Sicht, beseitigt aber Einschränkungen durch den geschlossenen Thorax, Nachbargewebe und den tatsächlichen Zugang. Sie entspricht daher nicht unmittelbar dem Operationsblick.\n\nVerwendet wurden flexibles Polyurethan oder Harz mit angegebenen Druckauflösungen von 100 μm beziehungsweise 50 μm. Diese Werte beschreiben die Fertigung, weder den Fehler jeder Anatomiegrenze noch mechanische Gleichwertigkeit mit Myokard. Die Autoren berichten zudem Schwierigkeiten beim Druck der Klappenpositionen. Gut sichtbare Defekte und große Gefäße bedeuten nicht, dass dünne Segel, Pulsation oder sämtliche kleinen Strukturen reproduziert sind.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Dieselbe Strecke über Bilder, Netze und Drucke verfolgen und Maßabweichungen prüfen",
+          "markdown": "Die Studie verglich ursprüngliches CT, ursprüngliches segmentiertes Netz, Druck, CT-Nachscan des Drucks und dessen erneut segmentiertes Netz. Zwei Beurteilende maßen unabhängig und mittelten jeweils 3 Wiederholungen. Vorgesehene Messorte waren Vorhöfe, Ventrikel, Aorta, Pulmonalarterie, obere Hohlvene und Defekt. Berichtet werden 33 Durchmessermessungen; Messorte und Wiederholungen sind keine unabhängigen Patienten. [Messpfad und tabellarische Ergebnisse](ref:R01)\n\n| Vergleich | Mittlere Differenz ± SD, mm | Erfasste Prozesse |\n|---|---:|---|\n| Ursprüngliches CT gegen ursprüngliches Netz | 0.12 ± 0.23 | Segmentierung und Netzbearbeitung |\n| Ursprüngliches Netz gegen Druck | 0.10 ± 0.28 | Fertigung und physische Messung |\n| Ursprüngliches CT gegen Druck | 0.21 ± 0.37 | Kombination der vorherigen Prozesse |\n| Ursprüngliches gegen nachgescanntes Netz | 0.10 ± 0.45 | Fertigung, Nachscan und erneute Segmentierung |\n\nFür alle Vergleiche wurde ein Korrelationskoeffizient von 0.99 angegeben, der mittlere Intraklassenkorrelationskoeffizient betrug 0.97. Starke Korrelation bedeutet, dass größere Strukturen auch in einer anderen Darstellung größer bleiben, nicht dass Differenzen vernachlässigbar sind. Im Bland–Altman-Diagramm für ursprüngliches CT gegen Druck steht die mittlere Größe horizontal und die Differenz vertikal. Aus Mittelwert und SD berechnet liegen die Übereinstimmungsgrenzen ungefähr bei −0.52 bis 0.94 mm. Positive Differenzen um einen Millimeter bleiben sichtbar: Eine mittlere Differenz unter einem halben Millimeter bedeutet keinen entsprechenden Fehlergrenzwert an jedem Ort.\n\nReferenz ist die ursprüngliche Bildgebung; geprüft wird somit die Konsistenz der Replikationskette. Bewegungsartefakte und Auflösungsgrenzen des ursprünglichen CT bleiben bestehen. Die Messbarkeit einer lokalen Öffnung hängt außerdem von Messschieberkontaktpunkten und deren Zuordnung zu Bildebenen ab. Die gemeinsame Darstellung von Bildgebung, physischem Messschieber und digitaler Distanzmessung ermöglicht eine Prüfung des Messobjekts statt allein einer zusammengefassten Korrelation.",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Schädelmodelle zeigen die Gesamtdeformität und machen geplante Knochensegmente vergleichbar",
+          "markdown": "Uhl et al. erstellten aus dem CT eines 1-jährigen Kindes mit sagittaler Kraniosynostose ein Schädelmodell. Frontale, seitliche und obere digitale Ansichten liefern ergänzende Formreferenzen: Eine Ansicht charakterisiert nicht gleichzeitig Stirnform, anteroposteriore Verlängerung und seitliche Kontur. Die Segmentierung nutzte die hohe Knochenabschwächung zur Oberflächengewinnung; Artefakte wurden korrigiert. Die gezeigten Druckstützen sind Fertigungshilfen, keine knöchernen Patientenstrukturen. [Schädelrekonstruktion und Blickrichtungen](ref:R02)\n\nFotos zeigen Oberflächenmarkierungen und unterschiedliche Anordnungen von Schädelsegmenten. Gegenüber einer schriftlichen Schrittfolge lässt sich am Objekt zeigen, welchen Bereich eine Markierung durchquert, wie Nachbarsegmente zusammenhängen und welche Lücken bei unterschiedlichen Unterteilungen derselben Form entstehen. Dadurch werden lokale Veränderungen mit der gesamten Schädelform verbunden. Die Fotos enthalten weder Maßabweichungskarten noch eine Kalibrierung von Knochendicke oder Schnittwiderstand; eine genaue Reproduktion kortikaler Knochenmechanik ist damit nicht belegt.\n\nDie Gelegenheitsstichprobe umfasste 10 relativ unerfahrene Neurochirurgen: 5 erhielten traditionelle Lehre, 5 Modelltraining. Die Modellgruppe erhielt zusätzlich Einführung, Übung und Feedback. Obwohl der Text bessere Umformungsgenauigkeit und Leistung behauptet, enthalten die Tabellen vor allem individuelle Zufriedenheitsantworten der Modellgruppe, keine nachvollziehbaren geometrischen Gruppenfehler oder Verteilungen von Leistungswerten. Das Material erlaubt eine Analyse der Darstellung und wiederholbarer Übungsobjekte, aber keine Berechnung des Genauigkeitsgewinns oder die Behauptung einer quantifizierten Verringerung von Patientenkomplikationen.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Die Übertragung schriftlicher Pläne auf kraniofaziale Oberflächen macht Auslassungen und Positionen prüfbar",
+          "markdown": "Der Kongressabstract von Black et al. beschreibt eine räumlich orientierte Bewertung: Derselbe Facharzt und derselbe Weiterbildungsarzt verfassten unabhängig Fallpläne und markierten getrennt patientenspezifische kraniofaziale Modelle. Verglichen wurden fehlende oder falsch platzierte Schritte und Bearbeitungszeiten. Die Beobachtung dauerte 6 Monate und umfasste 7 Fälle mit sagittaler beziehungsweise metopischer Synostose, Unterkieferdistraktion und Oberkieferdistraktion. [Unabhängige schriftliche Pläne und Modellmarkierungen](ref:R03)\n\n| Aufgabe | Sagittale Synostose | Unterkieferdistraktion |\n|---|---:|---:|\n| Fehlende Schritte | 5 auf 0 | 4 auf 0 |\n| Zeitreduktion beim schriftlichen Plan | 22% | 45% |\n| Zeitreduktion bei Modellmarkierung | 76% | 50% |\n\nDie Zeiten für schriftliche Planung und Modellmarkierung veränderten sich unterschiedlich. Eine Schrittfolge zu kennen und sie auf einer bestimmten Form auszudrücken sind somit getrennt beobachtbare Aufgaben. Die Reduktionen betreffen jedoch den Fortschritt eines einzigen Lernenden während einer Rotation, ohne zeitgleiche Kontrolle ohne Modell, Einzelfallzeiten, Fehlerverteilungen oder verblindete Bewertung. Allgemeine Rotationserfahrung, wiederholte Fallkontakte und Rückmeldungen können beitragen; der isolierte Druckmodelleffekt ist nicht schätzbar.\n\nHilfreich ist der fallbezogene Plan des Lehrenden als ausdrückliche Vergleichsgrundlage statt allein einer Frage nach Realismus. Dies belegt weder die alleinige Richtigkeit dieses Plans noch kraniofaziale Funktion oder postoperative Symmetrie anhand vollständiger Markierungen. Solche Patientenergebnisse wurden im Abstract nicht berichtet.",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "Geschichtete Aortenansichten verbinden Gefäße, Prothese und pathologische Wege",
+          "markdown": "Li et al. kombinierten physische Aortenmodelle mit Mixed-Reality-Lehre. Ihre Originalabbildung zeigt eine digitale Rekonstruktion: Rote Arterien, blaue Venen und weiße Knochen dienen der Orientierung; Transparenz oder Ausblenden von Nachbarstrukturen legt anschließend den Sack außerhalb der Prothese und seine Astverbindungen frei. Der Fall betrifft ein nach endovaskulärer Bauchaortenaneurysmaversorgung festgestelltes Endoleak. Das Verfolgen der unteren Mesenterialarterie und des Riolan-Bogens erläutert mögliche fortbestehende Perfusion außerhalb der Prothese. [Lehrfall mit geschichteter Rekonstruktion](ref:R04)\n\nDiese Darstellung ist kein Foto eines physischen Drucks; statische farbige Äste messen keine Flussgeschwindigkeit. Die Arterienfarbe kennzeichnet eine Anatomieklasse, Transparenz macht verdeckte Regionen sichtbar, und die pathologische Flussinterpretation stammt aus Fallbildgebung und Lehre. PLA-Modelle wurden durch Schmelzschichtung für Messungen von Aneurysma-, Hals- und Iliakalgeometrie gefertigt; Mixed Reality bot geschichtete Anatomie und Demonstrationen. Registrierungsfehler, Flusskalibrierung und Drucktreue sämtlicher kleiner Äste wurden nicht angegeben.\n\nAnders als beim Öffnen eines Herzmodells wird Verdeckung hier durch selektive digitale Anzeige aufgelöst. Gegenüber Schädeloberflächenmarkierungen steht das kontinuierliche Verfolgen von Ästen und Innen-Außen-Beziehungen im Vordergrund. Die Darstellungen teilen Patientenbilder, verändern jedoch die gleichzeitig sichtbaren Strukturen. Lehrwirkungen betreffen deshalb die tatsächliche Kombination, keinen vollständig dem greifbaren Druck zurechenbaren Wissensgewinn.",
+          "figure_ids": [
+            "F06"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Testgewinne betreffen vor allem Anatomie und Pathophysiologie; die Gruppenzuteilung ist widersprüchlich beschrieben",
+          "markdown": "Der Methodenteil der Aortenstudie nennt 24 Weiterbildungsärzte aus 2020 als kombinierte Lehrgruppe und 27 aus 2019 als traditionelle Gruppe; der Unterricht dauerte 4 Wochen mit 8 Stunden wöchentlich. Der Abstract erwähnt zwar eine Zufallszahlentabelle, die konkrete Methodik beschreibt jedoch Jahrgangskohorten. Dieser Bericht interpretiert den Vergleich daher als historisch kontrolliert. Traditionelle Lehre nutzte Atlanten, CT und Schemata; die kombinierte Lehre ergänzte physische Modelle und Mixed Reality, ohne Gruppen mit ausschließlich Druck oder Mixed Reality. [Gruppenzuteilung und Testergebnisse](ref:R04)\n\n| Testbereich | Kombinierte Lehre | Traditionelle Lehre | P-Wert |\n|---|---:|---:|---:|\n| Gesamt | 79.0 ± 9.1 | 72.6 ± 7.5 | 0.013 |\n| Anatomie/Pathophysiologie | 30.8 ± 5.4 | 24.8 ± 5.8 | <0.001 |\n| Differenzialdiagnose | 25.8 ± 3.0 | 23.3 ± 4.9 | 0.078 |\n| Behandlung | 22.5 ± 11.8 | 24.5 ± 8.2 | 0.603 |\n\nDie Gesamtdifferenz entspricht vor allem dem Bereich Anatomie und Pathophysiologie. Differenzialdiagnose erreichte keine statistische Signifikanz, Behandlung lag numerisch sogar niedriger. Dies passt zu Aufgaben über Verzweigung, Verdeckung und Nachbarschaft, beweist aber keinen ursächlichen Effekt der Darstellungsform. Der Fragebogen der Experimentalgruppe belegt wahrgenommenen Realismus und Akzeptanz, keine unabhängig gemessene Identifikationsgenauigkeit oder langfristige Wissensspeicherung.\n\nEin individueller Ausgangstest und langfristige Wiederholungstests fehlten. Lehrbedingungen und Erfahrung verschiedener Jahrgänge, zusätzliche Demonstrationen und Interaktion mit Lehrenden könnten die Ergebnisse beeinflussen. Direkt verglichen wurde ein fallbezogener theoretischer Test nach der Rotation. Beiträge einzelner Darstellungen und der Transfer auf klinische Urteile lassen sich bei dieser Zuteilung nicht trennen.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Lee et al.: Digitale Ansicht und Originaldruck eines geöffneten Herzens.",
+          "interpretation": "Digitales Netz links und gelber Druck rechts zeigen ähnliche Blickrichtungen. Rote Pfeile markieren Pulmonalarterienstenose und Ventrikelseptumdefekt; Beschriftungen verorten Aorta, rechten Vorhof und rechten Ventrikel. Die vordere Öffnung zeigt Defekt und Ausflussbeziehungen gemeinsam. Farbe und Glanz messen keine Gewebeeigenschaften. Strukturerhalt ist erkennbar, Maßübereinstimmung erfordert zugeordnete Messungen. [Originalbeschreibung](ref:R01)"
+        },
+        "F02": {
+          "caption": "Lee et al.: Defektmessungen in Bildern, Druck und Netz.",
+          "interpretation": "A zeigt Strecken verschiedener CT-Ebenen, B den Messschieberkontakt am physischen Defektrand, C digitale Distanzlinien. Die bildliche Längsdimension beträgt 15.88 mm, die physische Anzeige 15.10 mm und die entsprechende Netzmarkierung 15.48; eine weitere Richtung ist mit 6.89 und 7.41 bezeichnet. Endpunkte und Richtungen müssen übereinstimmen, statt beliebige Achsen zu subtrahieren. Das Beispiel ist kein Studienmittelwert wiederholter Messungen. [Messmethode](ref:R01)"
+        },
+        "F03": {
+          "caption": "Lee et al.: Bland–Altman-Übereinstimmung zwischen ursprünglichem CT und Druck.",
+          "interpretation": "Jeder Punkt zeigt horizontal den Mittelwert eines Messpaars und vertikal CT minus Druck, jeweils in mm. Die durchgezogene Linie bezeichnet die mittlere Abweichung, gestrichelte Linien die Übereinstimmungsgrenzen; mehrere positive Differenzen erreichen oder überschreiten die obere Grenze. Größere Strukturen beseitigen Abweichungen nicht automatisch. Die Grafik trennt mittlere Nähe und Einzelfehler direkter als ein Korrelationskoeffizient. [Übereinstimmungsanalyse](ref:R01)"
+        },
+        "F04": {
+          "caption": "Uhl et al.: Schädelrekonstruktion aus mehreren Blickrichtungen und Druckstützen.",
+          "interpretation": "A–C zeigen frontale, seitliche und obere Konturen desselben Schädels. D–E stellen Modell und Stützen bei der Druckvorbereitung dar, F den arbeitenden Drucker. Säulen und Basis gehören zur Fertigung, nicht zu inneren Patientenknochen. Dokumentiert wird die Übertragung von Darstellung zu Fertigung ohne gemessene Oberflächenfehlerkarte. [Abbildung und Fertigungsmethode](ref:R02)"
+        },
+        "F05": {
+          "caption": "Uhl et al.: Oberflächenmarkierungen und verschiedene Schädelsegmentanordnungen.",
+          "interpretation": "A–C zeigen unterschiedliche Segmentanordnungen, D mehrere markierte Modelle und E–F lokale Öffnungen eines gehaltenen Modells. Die letzten beiden Felder sind visuell sehr ähnlich und belegen keinen messbaren Arbeitsfortschritt. Die Abbildung zeigt, dass ein knöchernes Objekt markiert und neu angeordnet werden kann. Ohne Koordinaten, Maßstäbe oder Bewertungsachsen ist das Korrekturausmaß aus den Fotos nicht schätzbar. [Simulationsfotos und Ergebnistabellen](ref:R02)"
+        },
+        "F06": {
+          "caption": "Li et al.: Geschichtete digitale Darstellung von Aorta, Sack außerhalb der Prothese und Astverbindungen.",
+          "interpretation": "a erhält weißen Knochenkontext, rote Arterien und blaue Venen; b reduziert Verdeckung und legt Prothese und Außenraum frei; c betont weiter die mit dem Sack verbundenen Äste. Wechselnde Darstellungsebenen verbinden Gesamtposition und lokalen pathologischen Mechanismus. Gezeigt wird ein digitales Modell, weder ein Druckfoto noch eine experimentelle Flussgeschwindigkeits-Zeitreihe. [Originalabbildung des Lehrfalls](ref:R04)"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "schema_version": 2,
+  "question_id": "P6-094",
+  "p": "P6",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_2b0caeab4cb1e2ad3c3d",
+    "doc_189dab26d26cc903f505",
+    "KB2026FC436373A851"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Comparing cost and print time estimates for six commercially-available 3D printers obtained through slicing software for clinically relevant anatomical models",
+      "publisher": "3D Printing in Medicine",
+      "year": 2021,
+      "url": "https://doi.org/10.1186/s41205-020-00091-4",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Low-cost three-dimensional printed phantom for neuraxial anesthesia training: Development and comparison to a commercial model",
+      "publisher": "PLOS ONE",
+      "year": 2018,
+      "url": "https://doi.org/10.1371/journal.pone.0191664",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "A Personalized 3D-Printed Model for Obtaining Informed Consent Process for Thyroid Surgery: A Randomized Clinical Study Using a Deep Learning Approach with Mesh-Type 3D Modeling",
+      "publisher": "Journal of Personalized Medicine",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/jpm11060574",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Imaging-based 3D‐printed anatomical models for preoperative planning in hepatopancreatobiliary surgery: a single-center pilot study, cost analysis, and systematic review",
+      "publisher": "La radiologia medica",
+      "year": 2026,
+      "url": "https://doi.org/10.1007/s11547-026-02210-3",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-094/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7786189/#Fig2",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Fig. 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-094/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7786189/#Fig3",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R01",
+      "original_label": "Fig. 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-094/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7786189/#Fig4",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Fig. 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-094/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6005480/#pone.0191664.g003",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Figure 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-094/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8234549/#jpm-11-00574-f002",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R04",
+      "original_label": "Fig. 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-094/F06.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13368967/#Fig3",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "模型制作成本和时间如何影响教学推广？",
+      "direction": "教学与沟通",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "切片估算回答机器负担，尚未回答每堂课的总成本",
+          "markdown": "Chen 等把 7 个 CT 来源的骨科模型放入 6 台设备各自的切片软件，改变填充、层厚和摆放方向。成本由预计耗材量乘当时单价得出，树脂方案另计可消耗料槽。研究没有实际打印来验证估时误差，也没有测量教学成绩；这里的低成本是特定文件与设置下的材料估算。[研究设计与成本边界](ref:R01)\n\n比较时还必须保留模型集合。椎柱肿瘤在部分较厚分层下出现空层错误，股骨转子间骨折在部分树脂设备的某些方向放不进成型空间。跨全部设备比较时，作者共同剔除这两个模型；另一次比较保留全部解剖模型，却排除不能完成切片的设置。前者改变病例组成，后者改变可比较的技术集合，平均值不能混在同一排行榜中。\n\n其课程意义在于，机器占用与教师或技术人员工时并不同步。无人值守打印可以持续到夜间，分割、支撑处理及质量检查仍需专业人员；切片成功也不等于成品能清楚展示课程所需的关节面或病变。原研究未计失败重印、电耗、设备折旧及后处理成本，因此不能把估计耗材价格直接除以学生人数，宣称已经得到完整的人均教学成本。\n\n价格跨研究比较还有时间与地点条件。线材购入价、已有设备和由研究人员承担的工作，不能与另一个团队按技术人员工时计费的报价视为相同分母。本文保留原币种与原研究口径，没有用当前汇率转换成貌似可直接比较的统一预算。\n\n模型难度也会改变教学资源分配：尺寸过大可以导致整个案例被排除，而不是仅仅增加少量耗材。为适配设备而缩小或拆分模型，可能改变触摸体验或结构连续性；该研究没有比较这些改动对学习结果的影响。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "层厚主要改变占机时间，耗材变化方向依赖具体方法",
+          "markdown": "在相同文件内改变层厚，比直接比较不同设备的标价更能说明时间负担。Chen 等在固定填充条件下报告如下相对变化；这里保留原文设置名称以定位实验，不构成设备推荐。[层厚干预与汇总方法](ref:R01)\n\n| 设置变化 | 预计打印时间 | 预计材料成本 |\n|---|---:|---:|\n| Prusa，填充 20%，层厚 0.30 → 0.15 mm | +48.04% | −8.25% |\n| F370，填充 20%，层厚 0.3302 → 0.254 mm | +28.73% | +10.29% |\n| Form 2，层厚 0.10 → 0.05 mm | +59.52% | −0.75% |\n| Form 3，层厚 0.10 → 0.05 mm | +65.79% | −0.62% |\n\n更薄的层增加层数，预计时间普遍上升；材料成本并非都下降，树脂例子的变化也很小。图中把不同设备的独立设置点用线连接，并不是同一模型重复打印所得的学习曲线，更不是表面精度随成本变化的实测关系。\n\n填充从 15% 提到 20% 时，研究中的挤出方案估计时间与成本变化均不超过 1.71%。这个窄范围结果不适用于空心与实心之间的比较，也没有验证强度或耐用性。教学模型若需要反复装配或按压，不能凭“耗材变化不大”认定相同的使用寿命。论文没有同时测量细节辨识、破损与课堂成绩，因而尚不能从这些曲线算出每单位学习收益需要多少打印时间。",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "摆放方向把节省时间与节省材料分开，也改变支撑负担",
+          "markdown": "研究按水平、垂直和倾斜方向对同一解剖模型切片，再按技术类别汇总。对挤出方案，从水平改为垂直，预计时间增加 1.06%，成本减少 4.62%；树脂方案对应增加 16.63%、减少 2.84%。材料喷射方案则不同：水平改为垂直后时间增加 28.94%，成本也增加 15.79%。因此“竖着打印更省”需要说明省的是哪种资源，以及在哪个技术集合中成立。[方向比较](ref:R01)\n\n汇总百分数来自各方向的估算总量之比，不是每种解剖结构都达到同样改进，也不是失败概率的变化。倾斜方向是否需要更多支撑、支撑是否遮挡教学关键结构，取决于模型几何；研究未将后处理后的细节质量纳入比较。\n\n支撑去除又把机器时间转化为人员负担。论文指出部分支撑依赖机械去除，部分可以溶解，但没有记录每件人工处理分钟数。对需要同一时间开设多个训练站的课程，预计单件打印更快不能直接推出能够及时供应更多合格模型：后处理、检查和模型交接也可能排队。反之，夜间打印较慢但人工处理较少的模型，也可能适合已有课程日程。这里是由研究流程推得的排程含义，尚没有被课堂吞吐量实验直接测量。",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "混合材料训练器的低耗材价格伴随制作与更新工时",
+          "markdown": "Mashari 等的椎管麻醉训练器把打印骨性框架与硅胶、凝胶组合。实际打印使用 423 g PLA，耗材约 US$13，机器无人值守运行 25 h；影像分割、建模、装配和凝胶准备另需 6–8 h，而且不包括凝胶凝固等待。这些数字描述了不同的时间组成，不能把机器运行时间当成全部人工，也不能从耗材单价中认为专业建模已经免费。[实物制作记录](ref:R02)\n\n该材料组合的复用问题直接影响课堂。凝胶容易变质，需要反复准备；针道会残留，触诊时又被部分专家认为过软。重新制作软组织部分不一定要求重打骨架，却要占用人员、准备场地和等待时间。研究提出替代凝胶的方向，但没有测出一件模型能支持多少次质量稳定的练习，亦没有给出按课程累计的更换费用。\n\n专家对不同触觉与超声特征的评价并不一致：部分深部触觉更接近临床，表面触诊反而较差。便宜材料并非均匀降低或提高保真度，而是改变哪些练习线索可以保留。研究由专家评价逼真性，未以学生掌握技能的时间、延迟保持或每名合格学员成本为终点。因此，它提供了可实现的制作账目和材料限制，尚没有完成培训方案间的成本效果比较。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "自动分割缩短修整步骤，尚未消除病例间耗时差异",
+          "markdown": "Seok 等在 53 例甲状腺模型中，把自动腺体分割与人工修正、病灶标记及网格表达结合。修整时间均值为 4.0 ± 3.7 min，范围 1–18 min；记录的打印流程均值为 258.9 ± 78.8 min，范围 139–439 min。后者包括下载文件、传到打印机、打印及去除支撑，并非纯粹的机器运行时间。[实际制作范围](ref:R03)\n\n耗材费用为 US$4.23 ± 1.71，范围 US$2.15–8.88，明确排除人工。网格使内部目标可见，研究却没有把网格与实心方案的耗材、耐用性或学习收益作随机比较，所以不能把低价格全部归因于某一几何简化。模型都成功打印说明这一病例集可实施，也不等于已测出长期、多人员、多课程环境中的失败率。\n\n自动化的准确性还需要分开看：前瞻应用中以人工看过预测并修正后的结果作为分割参照，得到的高相似度不相当于独立标注验证。短修整时间说明该流程中需要多少人工编辑，不证明遗漏结构已经全部排除。对于课程推广，病例准备时间的范围比单一均值更能暴露排程波动，但这项研究没有测量技术人员同时处理多个病例时的等待队列，也没有比较新操作者与原工程师的工时差异。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "复杂多色模型需要核对工时、耗电单位与教育效果的对应关系",
+          "markdown": "Avella 等的肝胆胰模型按血管、胆道及病灶分部制作再装配。论文个案表报告总制作时间 40、32、26 h；另一个分部表的合计却是 1599、1431、1458 min。后者题名包含分割与打印，不能未经说明当成前者的机器时间；正文所列人工和机器阶段也没有与两个表逐项对齐。因此，这组记录不能支持精确的每周产能计算。[制作与费用原表](ref:R04)\n\n费用表为 3 件模型列出总计 €170.78，包含线材、胶水、螺钉、底座、标牌及电费。电费行写成 92 h × €0.40/kWh = €36.80，却未给机器功率或实测电量；运行小时不能直接替代千瓦时。这是原文核算口径的缺口，不能将该数额称为已独立验证的全流程成本。人工没有按工资计入，设备折旧和维护亦未进行完整分摊。\n\n材料清单还以整卷、整瓶或整盒采购列项，未逐件记录模型实际消耗量。剩余材料能否用于后续课程、初次采购是否已经全部消耗，均会改变首批与重复制作的分摊。表中采购单位不能自动转换成每件模型的精确材料用量。\n\n同一研究另将 56 名学生分为各 28 人，进行含空间理解内容的测验。这个教学比较可讨论模型加入后的成绩，但没有逐位记录获得相同掌握程度所需的时间，也没有把模型维护、重复授课次数或人员准备费用与学习结果配对。病例模型可供多人观察与患者专用模型用完即交付，具有不同的复用条件；论文没有给出统一的摊销分母。因而教学效果数据与费用记录可以并列分析，不能从两者直接推出已经完成的每单位学习增益成本估计。",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Chen et al.：同一解剖形状在成型平台上的方向变化。",
+          "interpretation": "三行分别为桡骨远端、椎柱和跟骨示例，列为水平、垂直及倾斜方向。图保留形状而改变平台接触关系，说明比较并非缩小模型来省料；支撑与逐层路径会随方向改变。画面是切片前数字对象，没有实际失败率或教学可辨识度的测量。[方向定义](ref:R01)"
+        },
+        "F02": {
+          "caption": "Chen et al.：挤出打印的层厚、预计时间与材料费用。",
+          "interpretation": "横轴是层厚，左纵轴是分钟，右纵轴是美元；形状符号区分设备。左图随层厚增加而下降，右图的方形系列却随层厚增加而下降，另外两个系列变化较小且方向不同。时间与材料不能用同一斜率推断，连接线也不证明中间任意设置均能切片成功。[挤出估算](ref:R01)"
+        },
+        "F03": {
+          "caption": "Chen et al.：树脂方案中时间变化远大于耗材变化。",
+          "interpretation": "圆点与方形代表两个树脂设备。左图的预计分钟数明显随层厚增加下降，右图费用变化很小。右纵轴没有从零开始，视觉斜率会放大价格差；该图排除了放不进平台的股骨模型，因此不能直接与保留全部模型的挤出图均值比较。清洗和固化时间不在左图估时中。[树脂比较](ref:R01)"
+        },
+        "F04": {
+          "caption": "Mashari et al.：打印框架之后仍有软组织构建阶段。",
+          "interpretation": "A 是打印骨架和容器，B 显示追加的硅胶结构及局部放大，C 是加入凝胶后的完整体模。图中的阶段转换说明模型并非离开打印机即可用于全部练习；人工构建、凝固等待及软材料更换属于不同于骨架耗材的资源。照片没有给出各阶段重复制作的寿命或失败分布。[混合构建](ref:R02)"
+        },
+        "F05": {
+          "caption": "Seok et al.：网格结构兼顾内部可见性与个体形状。",
+          "interpretation": "A–D 为同一数字设计的不同视角，红色病灶透过灰色网格可见。图解释了为什么不必用透明实体包裹整个腺体，却没有提供网格相对实心节省多少材料的实测对照。白色底座和显示网格也提醒，临床分割之后仍有展示设计与可打印性处理。[设计与修整](ref:R03)"
+        },
+        "F06": {
+          "caption": "Avella et al.：分部着色保留胆道与血管的空间关系。",
+          "interpretation": "左侧为整体关系，右侧放大胆道与病灶邻近区域；绿色胆道与胆囊、红色动脉和蓝色静脉帮助追踪不同分支，箭头与星号定位论文讨论的结构。这样的分部表达增加装配与检查对象，不能仅以线材总量代表制作工作。原图无工时坐标，也不直接验证正文所列费用或产能。[分部模型](ref:R04)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do model production cost and time affect educational adoption?",
+      "direction": "Education and communication",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Slicer estimates quantify machine demand, not total cost per class",
+          "markdown": "Chen et al. entered 7 CT-derived orthopedic models into the slicing software for 6 machines and varied infill, layer height and orientation. Costs multiplied estimated consumption by historical unit prices, adding consumable tanks for resin systems. No physical prints validated time estimates, and no educational scores were measured. Low cost here means a material estimate for particular files and settings. [Design and cost boundaries](ref:R01)\n\nThe model set must remain explicit. A spinal tumor produced empty-layer errors at some coarse settings, while an intertrochanteric fracture did not fit some resin build spaces in certain orientations. Comparisons across all machines omitted both models consistently; another comparison retained all anatomies but excluded settings unable to slice them. The former changes case composition and the latter the eligible technologies; their means cannot share one ranking.\n\nFor teaching, machine occupancy and staff time are different quantities. Unattended printing can run overnight, whereas segmentation, support removal and inspection require expertise. Successful slicing also does not establish visibility of the relevant joint surface or lesion. Failure reprints, electricity, depreciation and postprocessing were excluded, so dividing estimated material prices by student numbers does not yield complete educational cost per learner.\n\nCross-study prices also depend on time and location. Filament purchase prices, existing equipment and research-staff effort do not share the denominator of another team charging technical labor. Original currencies and accounting scopes are retained here, without conversion at current exchange rates into an apparently comparable budget.\n\nModel difficulty also changes resource allocation: excessive size can exclude a whole case rather than add a little material. Scaling or dividing anatomy to fit a machine may change tactile experience or structural continuity; this study did not compare those changes in learning outcomes.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Layer height mainly changes occupancy; material trends depend on the method",
+          "markdown": "Changing layer height within the same files clarifies time demand more directly than equipment price comparisons. Chen et al. reported these relative changes at fixed infill. Original setting names identify the experiments, not equipment recommendations. [Layer interventions and aggregation](ref:R01)\n\n| Setting change | Estimated print time | Estimated material cost |\n|---|---:|---:|\n| Prusa, 20% infill, layer 0.30 → 0.15 mm | +48.04% | −8.25% |\n| F370, 20% infill, layer 0.3302 → 0.254 mm | +28.73% | +10.29% |\n| Form 2, layer 0.10 → 0.05 mm | +59.52% | −0.75% |\n| Form 3, layer 0.10 → 0.05 mm | +65.79% | −0.62% |\n\nThinner layers increase layer counts and generally estimated time. Material cost does not always fall, and resin changes are small. Lines join separate equipment settings; they are neither learning curves from repeated physical prints nor measured relationships between surface accuracy and cost.\n\nIncreasing infill from 15% to 20% changed estimated time or cost by no more than 1.71% in the extrusion systems. This narrow-range result does not extend to hollow versus solid designs, and strength or durability were not tested. Repeated assembly or pressing in class cannot be assigned equal service life because material changes are small. Without concurrent measurements of detail recognition, breakage and classroom outcomes, these curves do not yield printing time per unit of learning gain.",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Orientation separates time savings from material savings and changes support work",
+          "markdown": "The study sliced identical anatomies horizontally, vertically and obliquely, then aggregated by technology. Moving from horizontal to vertical increased estimated extrusion time by 1.06% and decreased cost by 4.62%; resin time increased by 16.63% and cost decreased by 2.84%. Material jetting differed: vertical placement increased time by 28.94% and cost by 15.79%. “Vertical is cheaper” therefore needs a specified resource and technology set. [Orientation comparison](ref:R01)\n\nAggregate percentages are ratios of estimated totals across orientations, not equal improvements for every anatomy or changes in failure probability. Additional supports and obstruction of educationally important surfaces depend on geometry; postprocessed detail quality was not compared.\n\nSupport removal also converts production into staff work. Some supports required mechanical removal and others could dissolve, but hands-on minutes per object were not recorded. For simultaneous training stations, faster estimated printing alone does not establish timely supply of more usable models: postprocessing, inspection and handover may also queue. Conversely, slower overnight printing with less manual work may fit an existing timetable. These are scheduling implications inferred from the workflow, not classroom-throughput measurements.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "Hybrid trainers combine low material prices with fabrication and renewal work",
+          "markdown": "Mashari et al. combined a printed bony frame with silicone and gelatin for a neuraxial trainer. Physical printing consumed 423 g PLA costing approximately US$13, with 25 h unattended machine operation. Segmentation, modeling, assembly and gelatin preparation required another 6–8 h, excluding gel-setting time. These are distinct time components: machine operation is not all labor, and material pricing does not make expert modeling free. [Physical fabrication records](ref:R02)\n\nReuse directly affects classes. Perishable gelatin requires repeated preparation; needle tracks persist, and some experts judged palpation too soft. Renewing soft tissue need not require reprinting bone, but consumes staff, preparation space and waiting time. Replacement media were proposed, yet the number of exercises retaining stable quality and cumulative replacement cost per course were not measured.\n\nExpert judgments differed across tactile and ultrasound features: some deep tactile cues were more realistic, whereas surface palpation was poorer. Inexpensive materials do not uniformly reduce or improve fidelity; they change which practice cues remain available. Experts rated realism, not students' time to competence, delayed retention or cost per competent trainee. The study supplies achievable fabrication accounts and material limitations, without a completed cost-effectiveness comparison between training programs.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Automatic segmentation shortens editing without eliminating case-to-case variation",
+          "markdown": "For 53 thyroid models, Seok et al. combined automated gland segmentation with correction, lesion marking and mesh representation. Editing averaged 4.0 ± 3.7 min, range 1–18 min; the recorded printing workflow averaged 258.9 ± 78.8 min, range 139–439 min. The latter included file download, transfer, printing and support removal, not machine time alone. [Observed fabrication ranges](ref:R03)\n\nMaterial cost was US$4.23 ± 1.71, range US$2.15–8.88, explicitly excluding labor. Mesh exposed internal targets, but mesh and solid designs were not randomized for consumption, durability or learning benefit, so low prices cannot be attributed entirely to one geometric simplification. Successful production of all models establishes feasibility in this case set, not a measured long-term failure rate across staff and courses.\n\nAutomation accuracy also needs separation: the prospective segmentation reference was edited after inspection of predictions, so high similarity was not independent annotation validation. Short editing time measures work in that workflow, not complete exclusion of missing structures. Preparation ranges reveal scheduling variation better than a single mean, but queues during concurrent cases and time differences between new operators and the original engineer were not measured.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Complex multicolor models require reconciliation of hours, energy units and educational effects",
+          "markdown": "Avella et al. fabricated and assembled hepatopancreatobiliary compartments for vessels, ducts and lesions. The case table reports total production of 40, 32 and 26 h, while another compartment table totals 1599, 1431 and 1458 min. Its title includes segmentation and printing, so those totals cannot silently become machine time for the former table. Narrative manual and machine stages were not reconciled with either table. These records therefore do not support precise weekly-capacity calculation. [Original production and expense tables](ref:R04)\n\nThe expense table totals €170.78 for 3 models, including filament, glue, screws, bases, a label and electricity. Its electricity row uses 92 h × €0.40/kWh = €36.80 without power or measured energy; operating hours cannot substitute for kilowatt-hours. This accounting gap prevents presenting the amount as independently validated full-workflow cost. Wages were excluded, and depreciation and maintenance were not fully allocated.\n\nThe material list also uses purchased spools, bottles and boxes without recording consumption per model. Whether residual stock serves later classes and whether initial purchases were fully consumed changes allocation between initial and repeat production. Purchase units do not automatically become exact per-model material consumption.\n\nA separate educational comparison assigned 56 students to groups of 28 for a test including spatial understanding. It addresses scores after model exposure, but did not record each learner's time to equivalent mastery or pair maintenance, repeated classes and staff preparation with learning outcomes. A case model viewed by many and a personalized model handed over after use have different reuse conditions; no common amortization denominator was supplied. Educational outcomes and expense records can be analyzed together, but do not directly establish cost per unit of learning gain.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Chen et al.: Orientation changes of identical anatomy on the build plate.",
+          "interpretation": "Rows show distal radius, spine and calcaneus; columns show horizontal, vertical and oblique placement. Shape is retained while plate relationships change, rather than scaling to save material. Supports and layer paths depend on orientation. These digital objects do not measure physical failure or educational recognizability. [Orientation definitions](ref:R01)"
+        },
+        "F02": {
+          "caption": "Chen et al.: Layer height, estimated time and material cost for extrusion.",
+          "interpretation": "Horizontal axes show layer height, left vertical minutes and right vertical dollars; symbols distinguish machines. Time falls as layers thicken. On the right the square series also falls, whereas the other series change less and in the opposite direction. Time and material cannot share an assumed slope, and connecting lines do not establish slicing feasibility at every intermediate setting. [Extrusion estimates](ref:R01)"
+        },
+        "F03": {
+          "caption": "Chen et al.: Resin time changes are much larger than consumption changes.",
+          "interpretation": "Circles and squares denote two resin machines. Estimated minutes fall markedly with thicker layers, while cost changes little. The right vertical axis does not start at zero and visually magnifies price differences. The oversized femoral model was excluded, preventing direct comparison with extrusion means retaining all anatomies. Washing and curing are absent from the left-panel estimate. [Resin comparison](ref:R01)"
+        },
+        "F04": {
+          "caption": "Mashari et al.: Soft-tissue construction follows printing of the frame.",
+          "interpretation": "A shows printed bone and enclosure, B added silicone with a close-up, and C the gel-filled phantom. Stage changes show that leaving the printer does not make the object ready for every exercise. Manual construction, setting delays and soft-material renewal are resources beyond frame material. Photos do not quantify repeated-fabrication lifespan or failures. [Hybrid construction](ref:R02)"
+        },
+        "F05": {
+          "caption": "Seok et al.: Mesh combines interior visibility with individual shape.",
+          "interpretation": "A–D show different views of one digital design; the red lesion is visible through gray mesh. The design explains why a transparent solid gland shell is unnecessary, but supplies no measured mesh-versus-solid material saving. The white base and display mesh also show that segmentation is followed by presentation design and printability work. [Design and editing](ref:R03)"
+        },
+        "F06": {
+          "caption": "Avella et al.: Compartment colors preserve duct–vessel relationships.",
+          "interpretation": "The left shows overall relationships and the right enlarges the duct and lesion region. Green ducts and gallbladder, red arteries and blue veins distinguish branches; arrows and asterisk locate discussed structures. Compartment representation adds assembly and inspection tasks, not captured by filament mass alone. No time axis verifies the reported costs or capacity. [Compartment model](ref:R04)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie beeinflussen Herstellungskosten und -zeit die Verbreitung von Modellen in der Lehre?",
+      "direction": "Lehre und Kommunikation",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Slicer-Schätzungen erfassen Maschinenbedarf, nicht Gesamtkosten einer Lehrveranstaltung",
+          "markdown": "Chen et al. importierten 7 CT-basierte orthopädische Modelle in die jeweilige Slicing-Software von 6 Geräten und variierten Füllgrad, Schichthöhe und Orientierung. Kosten ergaben sich aus geschätztem Verbrauch und damaligen Stückpreisen, bei Harzsystemen zusätzlich aus verbrauchbaren Tanks. Reale Drucke zur Prüfung der Zeitschätzung und Lernergebnisse wurden nicht erhoben. Niedrige Kosten bezeichnen hier Materialschätzungen für bestimmte Dateien und Einstellungen. [Design und Kostengrenzen](ref:R01)\n\nAuch der Modellsatz muss erkennbar bleiben. Ein Wirbelsäulentumor verursachte bei einigen groben Einstellungen leere Schichten; eine intertrochantäre Fraktur passte in bestimmten Orientierungen nicht in manche Harzbauräume. Geräteübergreifende Vergleiche entfernten beide Modelle einheitlich; ein weiterer Vergleich behielt alle Anatomien, schloss aber nicht ausführbare Einstellungen aus. Damit ändern sich entweder Fallzusammensetzung oder verfügbare Techniken; die Mittelwerte gehören nicht in eine gemeinsame Rangliste.\n\nFür Lehre unterscheiden sich Maschinenbelegung und Personalzeit. Unbeaufsichtigter Druck kann nachts laufen, Segmentierung, Stützentfernung und Kontrolle benötigen Fachpersonal. Erfolgreiches Slicing belegt außerdem keine ausreichende Sichtbarkeit der relevanten Gelenkfläche oder Läsion. Fehldrucke, Strom, Abschreibung und Nachbearbeitung fehlen; geschätzte Materialpreise geteilt durch Studierendenzahlen ergeben daher keine vollständigen Lehrkosten pro Person.\n\nStudienübergreifende Preise hängen außerdem von Zeit und Ort ab. Filamenteinkauf, vorhandene Geräte und Forschungsarbeit haben nicht denselben Nenner wie Angebote mit berechneter technischer Arbeitszeit. Originalwährungen und Rechnungskreise bleiben hier erhalten, ohne Umrechnung zu aktuellen Wechselkursen in ein scheinbar vergleichbares Budget.\n\nModellschwierigkeit verändert zudem die Ressourcenverteilung: Übergröße kann einen ganzen Fall ausschließen statt nur etwas Material zusätzlich erfordern. Verkleinerung oder Teilung zur Geräteanpassung kann Tasterlebnis und Strukturkontinuität verändern; deren Lerneffekte wurden nicht verglichen.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Schichthöhe verändert vor allem Belegungszeit, Materialtrends sind verfahrensabhängig",
+          "markdown": "Schichthöhenänderungen innerhalb derselben Dateien verdeutlichen Zeitbedarf direkter als Gerätepreisvergleiche. Chen et al. berichteten folgende relative Änderungen bei festem Füllgrad. Originalbezeichnungen identifizieren Versuche und sind keine Geräteempfehlungen. [Schichtinterventionen und Aggregation](ref:R01)\n\n| Einstellungsänderung | Geschätzte Druckzeit | Geschätzte Materialkosten |\n|---|---:|---:|\n| Prusa, Füllgrad 20%, Schicht 0.30 → 0.15 mm | +48.04% | −8.25% |\n| F370, Füllgrad 20%, Schicht 0.3302 → 0.254 mm | +28.73% | +10.29% |\n| Form 2, Schicht 0.10 → 0.05 mm | +59.52% | −0.75% |\n| Form 3, Schicht 0.10 → 0.05 mm | +65.79% | −0.62% |\n\nDünnere Schichten erhöhen Schichtzahl und meist geschätzte Zeit. Materialkosten sinken nicht immer; bei Harz sind Änderungen klein. Linien verbinden getrennte Geräteeinstellungen, keine Lernkurven wiederholter realer Drucke oder gemessenen Beziehungen zwischen Oberflächengenauigkeit und Kosten.\n\nBei Füllgraderhöhung von 15% auf 20% änderten sich geschätzte Zeit oder Kosten der Extrusionssysteme um höchstens 1.71%. Dieser enge Bereich erlaubt keinen Schluss auf Hohl- gegenüber Vollmodellen; Festigkeit und Haltbarkeit wurden nicht geprüft. Wiederholtem Zusammenbau oder Drücken im Unterricht kann deshalb keine gleiche Lebensdauer zugeschrieben werden. Ohne gleichzeitige Messung von Detailerkennung, Bruch und Lernergebnissen liefern die Kurven keine Druckzeit je Lerneffekt.",
+          "figure_ids": [
+            "F02",
+            "F03"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Orientierung trennt Zeit- und Materialersparnis und verändert Stützarbeit",
+          "markdown": "Identische Anatomien wurden horizontal, vertikal und schräg gesliced, anschließend nach Technik zusammengefasst. Horizontal zu vertikal erhöhte geschätzte Extrusionszeit um 1.06% und senkte Kosten um 4.62%; bei Harz stieg Zeit um 16.63% und sanken Kosten um 2.84%. Materialstrahlen verhielt sich anders: Vertikal stiegen Zeit um 28.94% und Kosten um 15.79%. „Vertikal ist günstiger“ benötigt daher eine benannte Ressource und Technikgruppe. [Orientierungsvergleich](ref:R01)\n\nAggregierte Prozente sind Verhältnisse geschätzter Summen verschiedener Orientierungen, keine identische Verbesserung jeder Anatomie oder Änderung der Fehlerwahrscheinlichkeit. Zusätzliche Stützen und verdeckte Lehrstrukturen hängen von Geometrie ab; Detailqualität nach Nachbearbeitung wurde nicht verglichen.\n\nStützentfernung erzeugt außerdem Personalaufwand. Einige Stützen erforderten mechanisches Entfernen, andere waren löslich; aktive Minuten je Objekt wurden jedoch nicht erfasst. Bei gleichzeitig benötigten Trainingsstationen belegt schnellerer geschätzter Druck allein keine rechtzeitige Versorgung mit mehr nutzbaren Modellen: Nachbearbeitung, Kontrolle und Übergabe können ebenfalls warten. Langsamer Nachtdruck mit wenig Handarbeit kann umgekehrt zum vorhandenen Stundenplan passen. Dies sind aus dem Ablauf abgeleitete Planungsfolgen, keine Messungen des Unterrichtsdurchsatzes.",
+          "figure_ids": []
+        },
+        {
+          "id": "s4",
+          "title": "Hybridtrainer verbinden geringe Materialpreise mit Herstellung und Erneuerung",
+          "markdown": "Mashari et al. kombinierten einen gedruckten Knochenrahmen mit Silikon und Gelatine für einen neuraxialen Trainer. Reales Drucken verbrauchte 423 g PLA für etwa US$13 bei 25 h unbeaufsichtigter Maschinenlaufzeit. Segmentierung, Modellierung, Montage und Gelatinevorbereitung benötigten weitere 6–8 h, ohne Erstarrungszeit. Dies sind getrennte Zeitanteile: Maschinenbetrieb ist nicht gesamte Arbeitszeit, Materialpreise machen Fachmodellierung nicht kostenlos. [Reale Fertigungsaufzeichnungen](ref:R02)\n\nWiederverwendung betrifft Lehrveranstaltungen unmittelbar. Verderbliche Gelatine muss erneut vorbereitet werden; Nadelspuren bleiben, einige Experten beurteilten die Palpation als zu weich. Weichteilerneuerung verlangt nicht unbedingt erneuten Knochendruck, benötigt aber Personal, Vorbereitungsraum und Wartezeit. Ersatzmedien wurden vorgeschlagen, die Zahl qualitativ stabiler Übungen und kumulative Austauschkosten je Kurs jedoch nicht gemessen.\n\nExpertenurteile unterschieden sich zwischen Tast- und Ultraschalleigenschaften: Manche tiefen Tastsignale waren realistischer, oberflächliche Palpation schlechter. Preiswerte Materialien senken oder erhöhen Realitätsnähe nicht gleichmäßig, sondern verändern verfügbare Übungshinweise. Bewertet wurde Realismus, nicht studentische Zeit bis Kompetenz, späterer Erhalt oder Kosten je kompetentem Lernenden. Die Arbeit liefert erreichbare Fertigungsaufwände und Materialgrenzen, keinen abgeschlossenen Kostenwirksamkeitsvergleich von Ausbildungsprogrammen.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Automatische Segmentierung verkürzt Korrektur, beseitigt aber keine Fallvariation",
+          "markdown": "Bei 53 Schilddrüsenmodellen verbanden Seok et al. automatische Drüsensegmentierung mit Korrektur, Läsionsmarkierung und Netzdarstellung. Korrektur dauerte 4.0 ± 3.7 min, Bereich 1–18 min; der dokumentierte Druckablauf 258.9 ± 78.8 min, Bereich 139–439 min. Letzterer umfasste Dateidownload, Übertragung, Druck und Stützentfernung, nicht allein Maschinenlaufzeit. [Beobachtete Fertigungsbereiche](ref:R03)\n\nMaterialkosten betrugen US$4.23 ± 1.71, Bereich US$2.15–8.88, ausdrücklich ohne Arbeit. Das Netz machte innere Ziele sichtbar, Netz- und Vollmodelle wurden aber hinsichtlich Verbrauch, Haltbarkeit und Lernen nicht randomisiert verglichen. Der geringe Preis lässt sich somit nicht vollständig einer geometrischen Vereinfachung zuschreiben. Erfolgreicher Druck aller Modelle zeigt Machbarkeit in diesem Fallsatz, keine gemessene langfristige Fehlerrate über Personal und Kurse hinweg.\n\nAuch Automatisierungsgenauigkeit ist getrennt zu betrachten: Die prospektive Segmentierungsreferenz entstand durch Korrektur nach Sichtung der Vorhersage; hohe Ähnlichkeit war daher keine unabhängige Annotationsvalidierung. Kurze Korrekturzeit misst Arbeit innerhalb dieses Ablaufs, keinen vollständigen Ausschluss fehlender Strukturen. Vorbereitungsbereiche zeigen Planungsvariation besser als ein Mittelwert, Warteschlangen bei parallelen Fällen und Zeitunterschiede zwischen neuen Bedienenden und dem ursprünglichen Ingenieur wurden jedoch nicht untersucht.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Komplexe Mehrfarbenmodelle erfordern Abgleich von Zeit, Energieeinheiten und Lerneffekt",
+          "markdown": "Avella et al. fertigten und montierten hepatopankreatobiliäre Kompartimente für Gefäße, Gänge und Läsionen. Die Falltabelle nennt Gesamtfertigungszeiten von 40, 32 und 26 h; eine Kompartimenttabelle summiert dagegen 1599, 1431 und 1458 min. Ihr Titel umfasst Segmentierung und Druck, weshalb diese Summen nicht stillschweigend als Maschinenzeit der ersten Tabelle gelten dürfen. Auch manuelle und maschinelle Phasen des Textes wurden mit keiner Tabelle abgeglichen. Präzise wöchentliche Kapazität lässt sich daraus nicht berechnen. [Originale Zeit- und Kostentabellen](ref:R04)\n\nDie Kostentabelle summiert €170.78 für 3 Modelle einschließlich Filament, Kleber, Schrauben, Sockeln, Schild und Strom. Die Stromzeile verwendet 92 h × €0.40/kWh = €36.80 ohne Leistung oder gemessene Energie; Betriebsstunden ersetzen keine Kilowattstunden. Diese Rechnungslücke verhindert die Darstellung als unabhängig validierte Gesamtablaufkosten. Löhne fehlen, Abschreibung und Wartung wurden nicht vollständig umgelegt.\n\nDie Materialliste verwendet zudem gekaufte Spulen, Flaschen und Schachteln ohne Verbrauch je Modell. Ob Restbestände spätere Kurse versorgen und Erstkäufe vollständig aufgebraucht wurden, verändert die Umlage zwischen Erst- und Wiederholungsfertigung. Einkaufseinheiten sind nicht automatisch exakte Materialverbräuche je Modell.\n\nEin getrennter Lehrvergleich teilte 56 Studierende in Gruppen zu je 28 für einen Test mit räumlichem Verständnis. Er behandelt Leistungen nach Modellkontakt, erfasste aber weder individuelle Zeit bis gleicher Beherrschung noch verknüpfte er Wartung, wiederholte Kurse und Personalvorbereitung mit Lernen. Ein vielfach betrachtetes Fallmodell und ein nach Nutzung ausgehändigtes Patientenmodell haben unterschiedliche Wiederverwendungsbedingungen; ein gemeinsamer Umlageschlüssel fehlt. Lernergebnisse und Ausgaben lassen sich gemeinsam analysieren, ergeben aber nicht direkt Kosten je Einheit Lernzuwachs.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Chen et al.: Orientierungen identischer Anatomie auf der Bauplattform.",
+          "interpretation": "Zeilen zeigen distalen Radius, Wirbelsäule und Kalkaneus, Spalten horizontale, vertikale und schräge Lage. Die Form bleibt erhalten, während Plattformbeziehungen wechseln; Materialersparnis erfolgt nicht durch Verkleinerung. Stützen und Schichtwege hängen von Orientierung ab. Digitale Objekte messen weder reale Fehler noch didaktische Erkennbarkeit. [Orientierungsdefinitionen](ref:R01)"
+        },
+        "F02": {
+          "caption": "Chen et al.: Schichthöhe, geschätzte Zeit und Materialkosten bei Extrusion.",
+          "interpretation": "Horizontal steht Schichthöhe, links vertikal Minuten, rechts Dollar; Symbole unterscheiden Geräte. Mit dickeren Schichten fällt Zeit. Rechts fällt auch die quadratische Serie, während andere Serien schwächer und entgegengesetzt verlaufen. Zeit und Material haben keine gemeinsam voraussetzbare Steigung; Verbindungslinien belegen keine Slicing-Machbarkeit beliebiger Zwischenwerte. [Extrusionsschätzungen](ref:R01)"
+        },
+        "F03": {
+          "caption": "Chen et al.: Harz-Zeitänderungen übertreffen Verbrauchsänderungen deutlich.",
+          "interpretation": "Kreise und Quadrate bezeichnen zwei Harzgeräte. Geschätzte Minuten sinken deutlich bei dickeren Schichten, Kosten ändern sich wenig. Die rechte Achse beginnt nicht bei null und vergrößert Preisunterschiede optisch. Das zu große Femurmodell wurde ausgeschlossen; direkter Vergleich mit Extrusionsmitteln aller Anatomien ist unzulässig. Waschen und Nachhärten fehlen in der linken Schätzung. [Harzvergleich](ref:R01)"
+        },
+        "F04": {
+          "caption": "Mashari et al.: Weichteilaufbau folgt auf den Druck des Rahmens.",
+          "interpretation": "A zeigt Knochen und Behälter, B ergänztes Silikon mit Vergrößerung, C das gelgefüllte Phantom. Phasenwechsel zeigen, dass Druckende nicht Einsatzbereitschaft für jede Übung bedeutet. Handarbeit, Erstarrungswartezeit und Weichmaterialerneuerung benötigen Ressourcen zusätzlich zum Rahmenmaterial. Fotos quantifizieren weder Lebensdauer wiederholter Herstellung noch Fehlerverteilungen. [Hybridaufbau](ref:R02)"
+        },
+        "F05": {
+          "caption": "Seok et al.: Netz verbindet innere Sichtbarkeit mit individueller Form.",
+          "interpretation": "A–D zeigen verschiedene Ansichten eines digitalen Entwurfs; die rote Läsion bleibt durch graues Netz sichtbar. Dies erklärt den Verzicht auf eine transparente massive Drüsenhülle, liefert aber keine gemessene Materialersparnis gegenüber Vollmodellen. Weißer Sockel und Darstellungsnetz verdeutlichen zusätzliche Präsentationsgestaltung und Druckbarkeitsarbeit nach Segmentierung. [Entwurf und Korrektur](ref:R03)"
+        },
+        "F06": {
+          "caption": "Avella et al.: Kompartimentfarben erhalten Gang-Gefäß-Beziehungen.",
+          "interpretation": "Links stehen Gesamtbeziehungen, rechts der vergrößerte Gang-Läsions-Bereich. Grüne Gänge und Gallenblase, rote Arterien und blaue Venen unterscheiden Äste; Pfeile und Stern markieren besprochene Strukturen. Kompartimentdarstellung erzeugt Montage- und Kontrollaufgaben, die Filamentmasse allein nicht erfasst. Keine Zeitachse bestätigt berichtete Kosten oder Kapazität. [Kompartimentmodell](ref:R04)"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "schema_version": 2,
+  "question_id": "P6-095",
+  "p": "P6",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_f52518cd8fe5eaf6c32a",
+    "doc_003458505b5977271951",
+    "doc_d2d3aea723026a3279c0"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Verification of Acuros XB dose algorithm using 3D printed low-density phantoms for clinical photon beams",
+      "publisher": "Journal of Applied Clinical Medical Physics",
+      "year": 2018,
+      "url": "https://doi.org/10.1002/acm2.12299",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Development of a novel 3D-printed dynamic anthropomorphic thorax phantom for evaluation of four-dimensional computed tomography",
+      "publisher": "Physics and Imaging in Radiation Oncology",
+      "year": 2024,
+      "url": "https://doi.org/10.1016/j.phro.2024.100656",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Customization of Computed Tomography Radio-Opacity in 3D-Printed Contrast-Injectable Tumor Phantoms",
+      "publisher": "Micromachines",
+      "year": 2024,
+      "url": "https://doi.org/10.3390/mi15080992",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 1",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-095/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5978687/#acm212299-fig-0001",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R02",
+      "original_label": "Fig. 1",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-095/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11546439/#f0005",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R03",
+      "original_label": "Figure 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-095/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11356228/#micromachines-15-00992-f002",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Figure 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-095/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11356228/#micromachines-15-00992-f004",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Figure 7",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-095/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11356228/#micromachines-15-00992-f007",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R02",
+      "original_label": "Fig. 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-095/F06.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11546439/#f0020",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "打印体模如何再现组织密度与影像特征？",
+      "direction": "放疗体模与质控",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "改变孔隙比例可调低密度，但密度标定与材料成分是两个问题",
+          "markdown": "Zavan 等使用同一种聚苯乙烯打印不同填充的低密度板，固定聚合物成分而改变空气所占比例。这样可避免把不同塑料的化学差异误当成单纯的密度效应。板内部经 CT 检查均匀性，报告的质量密度由 HU—密度标定关系确定，而非逐块称重除以体积的独立测量。[低密度板与标定方法](ref:R01)\n\n| 代表板 | 报告密度（g/cm³） | 平均 CT 值 ± 标准差（HU） |\n|---|---:|---:|\n| Slab 4 | 0.23 | −785 ± 23 |\n| Slab 3 | 0.51 | −502 ± 6 |\n| Slab 6 | 0.68 | −330 ± 10 |\n\n这个范围证明同材质打印能够产生不同低衰减状态，却没有证明板已经复制肺泡的微观结构。CT 的体素平均可能把细小空气孔与塑料混为一项灰度，图像均匀也不是材料在更细尺度上完全均匀。原研究使用 3 mm 层厚进行检查，不能据此排除更小尺度的填充纹理。\n\nHU 与密度来自同一标定链条时，两者随填充共同变化不能充当彼此独立的准确性证据。算法后来还按 HU 自动赋予肺、脂肪或肌肉等材料类别，而实物始终是聚苯乙烯与空气。这种类别映射是计算模型的处理方式，并不说明打印板在化学上变成了对应人体组织。\n\n密度匹配还受材料上限约束：减少孔隙只能接近原线材密度，不能凭提高填充就获得任意高密度组织。研究讨论了含金属填料材料的放射学性质与骨不同，因此不能把较高 HU 自动当成骨等效。低密度板随后用于剂量算法检验，但其 HU 和密度关系本身并未独立证明所有能量下的组织等效性。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "组织等效需要有效原子序数，柔性肺还存在力学取舍",
+          "markdown": "Lustermans 等的动态胸部体模分别选择软组织、骨和可压缩肺材料，使用双能 CT 估计有效原子序数 Z_eff。黑色 PLA 为 6.9 ± 0.4，对照脂肪等效材料为 6.6 ± 0.7、固体水为 7.4 ± 0.5；含钙 PLA 骨材料为 11.1 ± 0.1。这个比较不止看单次扫描的亮暗，还考虑材料对不同 X 射线能量的响应。[材料选择与双能评价](ref:R02)\n\n肺采用 TPU，Z_eff 为 10.1 ± 0.3。作者明确说明这里优先保留可变形性，而非已经达到充分的肺组织等效。设计填充为 24%，但打印过程还根据沉积状态调整材料流量，因而名义填充百分数不能直接当作实测肺密度或所有位置相同的孔隙率。\n\n胸部几何来自 XCAT 数学模型，而不是把某位受试者的肺部影像逐体素重现。因此，仿人解剖、可配置运动以及患者特异组织密度，是不同层次的个体化。该研究实现前两类特征，并没有逐患者验证材料布局与真实密度纹理的一致程度。\n\n骨部分以较致密外壳和内部结构表达皮质与松质差别，这是一种空间材料分配，而不是把整块骨都设成统一灰度。肺内保留支气管及实心肿块，可同时观察背景、边界与运动；然而论文没有给出涵盖所有扫描能量的密度—衰减—剂量等效矩阵。刚性胸廓也没有复制人体胸壁的真实变形。该体模已展示的主要能力是可重复的动态 CT 成像，不能由“看起来像胸部”进一步推定磁共振兼容或完整的肺生物力学等效。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "可注入空腔将解剖形状与衰减调节分离",
+          "markdown": "Kalidindi 等根据盆腔肿瘤邻近髂血管分叉的 CT 建立动脉、静脉和肿瘤三个独立空腔。树脂外壳保存几何关系，空腔中的含碘液体改变 X 射线衰减。其优势是不用重新打印整个形状，就能在同一对象内改变影像对比；这不是把液体的放射学性质转化成树脂本身的材料性质。[空腔结构与测量设计](ref:R03)\n\n实验在 120 kVp、100 mAs 下扫描。两位观察者各在三个正交平面放置 ROI，面积为 40–50 mm²，再汇总六个 ROI 的均值。ROI 测的是所选局部空腔，并非全器官每个体素的密度分布。每次只向一个目标空腔填充后扫描，文中的“动脉期、静脉期”主要是条件名称，没有再现连续血流灌注、造影剂随时间洗入洗出或真实血管动力学。\n\nCT 已显示腔室之间存在渗漏。制造时保持腔室分离的设计意图，不能取代成品检漏结果。残留支撑、壁厚以及空气或液体的空间分布都可能改变边界附近的测量；研究也因对比液体边界不清，未完成可靠的腔体尺寸比较。因此，该实验支持打印后可调的影像信号，不是每个腔室都已获得精确形状和独立浓度的验证。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "可调灰度范围成立，准确命中目标灰度仍有明显偏差",
+          "markdown": "原文同一体模的六种条件呈现宽广灰度范围，但目标与实测并不一致。下表直接列 HU，避免把论文采用的百分差与“相对于目标值的误差”混淆；± 为 ROI 汇总中的标准差，不是多件独立体模制造变异。[目标与观测结果](ref:R03)\n\n| 条件 | 目标 HU | 实测 HU |\n|---|---:|---:|\n| 肿瘤 I | 40 | 37.49 ± 3.95 |\n| 肿瘤 II | 400 | 326.20 ± 2.70 |\n| 静脉 I | 150 | 200.50 ± 4.03 |\n| 静脉 II | 90 | 91.32 ± 1.90 |\n| 动脉 I | 200 | 227.92 ± 5.21 |\n| 动脉 II | 150 | 132.08 ± 5.43 |\n\n例如静脉 I 的实测值高于目标，而肿瘤 II 低于目标；保留正确的相对亮暗排序，不等于绝对标定已经准确。图中的空腔与外壳边界也说明，局部信号可以被单独调节，整件体模却不是所有位置均有相同影像性质。\n\n研究只使用一种树脂与一台扫描设备的固定能量条件。把某一空腔调到类似骨的 HU，不能据此宣称其元素组成、能量依赖或放疗剂量响应也与骨相同。对影像教学，这种条件能形成可识别的对比任务；对跨设备校准或组织定量，则仍缺少能量、重建方法和制造重复性之间的交叉验证。该研究没有以病灶检出率或诊断正确率检验这些视觉差别能否转化为学习收益。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "浓度相关性与观察者一致性不能替代外部准确性",
+          "markdown": "体模液体的 CT 值随浓度升高而增加，原图拟合给出 R²=0.9812；相同液体置于注射器时为 R²=0.9907。两种容器的斜率不同，体模值除最低浓度条件外普遍较高。均值的配对比较 P=0.03137，说明容器环境下的测量并非可以直接互换。[浓度与容器比较](ref:R03)\n\n作者把差异归因于混匀不足或注射器内伪影，但没有独立实验分解这两项原因。腔室渗漏、壁与液体界面、ROI 选择也未被单独控制。用一组强线性数据说明可以调节信号是合理的，直接把该斜率当成其他材料、其他扫描条件通用的校准函数则超出了实验。\n\n两位观察者的 ICC 很高，证明在这一组跨度较大的条件中读数排序和一致程度较好，却不证明与目标值一致，也不量化重新打印或反复填充的误差。原文浓度表还把动脉 II 的体积分数列得与另一个浓度表不一致，讨论中的拟合决定系数也与原图不同；本报告采用实际图上的拟合量与结果表的 HU，不将这些矛盾拼成精确配方。腔室重新装液后的长期稳定性、跨批次树脂差异和多设备校准重复性均未在该实验中测量。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "动态影像特征还包括压缩、位置重复性和排序伪影",
+          "markdown": "可压缩肺使体模能展示静态材料块没有的成像问题。Lustermans 等分别驱动内部肺压缩和外部胸部运动平台；输入的压缩位移不等于肿块实际移动距离，较高位置肿块的位移小于靠近膈肌者。运动与空间位置的耦合，因此比把整个对象刚性平移更接近研究需要的肺内差异。[动态成像与重复性](ref:R02)\n\n静态重复压缩测量中，多数位置差小于 0.2 mm，但有一次上部肿块偏差为 0.52 mm；作者将其与肺回到过低初始位置、失去上方接触有关。重复动态 CT 中最大相位位置差为 0.4 mm。不能把概括性的“亚毫米重复性”写成所有位置都达到相同误差上限，机械重复性也没有自动消除分割和呼吸排序误差。\n\n重复性试验先在静态图像中进行，目的是减少呼吸分箱对位置比较的干扰；随后才重复动态扫描。这个顺序使机械回位与动态成像的误差来源可以部分分开，而不是把所有位置偏差都归于打印精度。研究没有用外部独立的位置传感测量来逐相位确认每个肿块，因此图像测得的重复性仍包含分割定位的影响。\n\n不规则呼吸条件产生双重结构，包含停顿的条件产生插值伪影。它们是采样与重建和运动相互作用的结果，不代表打印出了额外肿块或材料突然改变密度。原研究定性展示了这些伪影，没有完成扫描方案优劣的定量比较。肺外壳刚性、前后与侧向内部运动很小，也使这种模型无法涵盖所有临床呼吸模式；对应的可检验内容是指定运动输入下的影像变形与重建表现。",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Zavan et al.：低密度板嵌入单层与多层体模。",
+          "interpretation": "a 左侧只更换中间低密度板，右侧组合不同板并在界面放置胶片；b–c 为固体水叠层与侧向围挡实物。图把打印材料、周围散射介质和探测位置分开，说明影像密度研究可以固定聚合物而改变低密度空间分布。灰色板不代表已复制肺的支气管或肺泡结构。[实验几何](ref:R01)"
+        },
+        "F02": {
+          "caption": "Lustermans et al.：材料分区与两种运动系统。",
+          "interpretation": "A 将肺内肿块、支气管、骨与软组织形状放在同一解剖框架中；B 把肺压缩和胸部监测平台分别驱动。上部图是构成示意，下部包含实物与机械示意。平台行程不是肿块位移，结构照片也不能单独证明各材料在所有能量下组织等效。[动态结构](ref:R02)"
+        },
+        "F03": {
+          "caption": "Kalidindi et al.：从独立分割到带接口的中空对象。",
+          "interpretation": "A 为分开标记的解剖对象，B 加入填充接口，C 为支撑与打印摆放，D 为带外部支撑的实物，E 为尺寸视图。原图保留外部支撑是为了扫描时直立，并非组织结构。设计中腔室分离的外观不等于实际密封；正文 CT 已观察到跨腔室渗漏。[制造对象](ref:R03)"
+        },
+        "F04": {
+          "caption": "Kalidindi et al.：六种填充条件的正交 CT 视图。",
+          "interpretation": "列按肿瘤、动脉与静脉条件分组，行是轴位、冠状与矢状位；彩色圈标记 ROI。相同解剖外壳下出现不同内部亮度，支持打印后调节信号。部分非目标空腔也可见液体，须结合渗漏解释。不同视图中的局部圆圈不能代表整个腔体体积已均匀达到目标 HU。[成像结果](ref:R03)"
+        },
+        "F05": {
+          "caption": "Kalidindi et al.：体模与注射器的浓度—衰减关系。",
+          "interpretation": "横轴为体积分数百分数，纵轴为 HU；黑线是体模，灰线是注射器，虚线为各自线性拟合。两条拟合均有非零截距，不能以“与浓度正相关”替代过原点的精确比例关系。两种容器的分离和原表目标偏差说明，相关性高与绝对准确是不同结论。[原始拟合图](ref:R03)"
+        },
+        "F06": {
+          "caption": "Lustermans et al.：不规则呼吸产生的两类重建伪影。",
+          "interpretation": "Pat1 的红箭头指向膈肌附近重复边缘，Pat2 的橙箭头指向停顿条件下的插值异常。它们位于相同材料结构中，展示运动采样对图像真实性的影响。图不是不同材料的衰减对照，也没有纵轴可量化伪影减少幅度；该研究以定性可再现为证据。[不规则运动影像](ref:R02)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do printed phantoms reproduce tissue density and imaging features?",
+      "direction": "Radiotherapy phantoms and quality assurance",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Porosity tunes low density, while calibration and composition remain separate",
+          "markdown": "Zavan et al. printed low-density slabs from the same polystyrene, varying air fraction while keeping polymer composition fixed. This separates density changes from differences between plastics. CT checked interior uniformity; reported mass densities came from HU-to-density calibration rather than independent weighing divided by volume for each slab. [Low-density slabs and calibration](ref:R01)\n\n| Representative slab | Reported density (g/cm³) | Mean CT value ± standard deviation (HU) |\n|---|---:|---:|\n| Slab 4 | 0.23 | −785 ± 23 |\n| Slab 3 | 0.51 | −502 ± 6 |\n| Slab 6 | 0.68 | −330 ± 10 |\n\nThe range establishes different low-attenuation states using one material, not reproduction of alveolar microstructure. CT voxel averaging can combine small air voids and plastic into one value; image uniformity does not imply microscopic material uniformity. Inspection used 3 mm slices and cannot exclude smaller infill texture.\n\nWhen HU and density share one calibration chain, their joint variation with infill is not independent evidence of each other’s accuracy. The algorithm subsequently assigns lung, adipose or muscle categories from HU, while the physical object remains polystyrene and air. This is computational material mapping, not conversion into the corresponding human tissues.\n\nMatching density also has a material ceiling: reducing porosity approaches filament density, not arbitrary high-density tissue. Metal-filled plastics can differ radiologically from bone, so high HU alone does not establish bone equivalence. Subsequent dose-algorithm testing used these slabs, but their HU–density relationship alone does not independently establish tissue equivalence at every energy.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Tissue equivalence requires effective atomic number; flexible lungs introduce a mechanical trade-off",
+          "markdown": "Lustermans et al. selected separate soft-tissue, bone and compressible-lung materials and estimated effective atomic number Z_eff by dual-energy CT. Black PLA measured 6.9 ± 0.4, compared with adipose-equivalent material at 6.6 ± 0.7 and solid water at 7.4 ± 0.5; calcium-containing PLA bone material measured 11.1 ± 0.1. This considers energy response beyond brightness in one scan. [Material selection and dual-energy evaluation](ref:R02)\n\nLung TPU measured Z_eff 10.1 ± 0.3. The authors explicitly prioritized deformability over full lung-tissue equivalence. Nominal infill was 24%, but material flow was adjusted during deposition, so the setting is neither measured lung density nor identical porosity everywhere.\n\nThoracic geometry came from the XCAT mathematical model, not voxelwise reproduction of one participant’s lungs. Anthropomorphic anatomy, configurable motion and patient-specific tissue density are distinct forms of customization. The study achieved the former features without patient-by-patient validation of material layout against actual density texture.\n\nDenser bone shells and internal structure represented cortical–trabecular differences, distributing material spatially rather than assigning one uniform bone value. Bronchi and solid tumors permit observation of background, boundaries and motion. However, no complete density–attenuation–dose equivalence matrix across energies was reported. The rigid thorax does not reproduce actual chest-wall deformation. Demonstrated capability centers on reproducible dynamic CT; a chest-like appearance does not establish MR compatibility or complete pulmonary biomechanical equivalence.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Fillable chambers separate anatomical shape from attenuation adjustment",
+          "markdown": "Kalidindi et al. used CT of a pelvic tumor near the iliac bifurcation to construct separate arterial, venous and tumor chambers. A resin shell retains geometry while iodinated fluid changes attenuation. Contrast can therefore change within the same object without reprinting its shape; the fluid's radiological properties do not become intrinsic resin properties. [Chambers and measurement design](ref:R03)\n\nScans used 120 kVp and 100 mAs. Two observers each placed ROIs of 40–50 mm² in three orthogonal planes, then combined six ROI means. This samples selected cavity regions, not every organ voxel's density. Only one target chamber was filled per scan; “arterial” and “venous phases” label conditions rather than continuous perfusion, contrast wash-in/wash-out or vascular dynamics.\n\nCT revealed interchamber leakage. Intended compartment separation cannot replace verification of the finished object. Retained supports, wall thickness and air–fluid distributions may affect boundary measurements. Unclear fluid boundaries also prevented reliable cavity dimensional comparison. The experiment supports adjustable postfabrication image signals, not verified exact geometry and independent concentrations in every chamber.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "A tunable grayscale range is demonstrated, but target matching remains imperfect",
+          "markdown": "Six conditions in one phantom span a broad range, yet targets and observations differ. HU values are shown directly to avoid confusing the paper's percent-difference measure with target-normalized error. The ± terms describe standard deviations in ROI aggregation, not manufacturing variation across independent phantoms. [Targets and observations](ref:R03)\n\n| Condition | Target HU | Observed HU |\n|---|---:|---:|\n| Tumor I | 40 | 37.49 ± 3.95 |\n| Tumor II | 400 | 326.20 ± 2.70 |\n| Venous I | 150 | 200.50 ± 4.03 |\n| Venous II | 90 | 91.32 ± 1.90 |\n| Arterial I | 200 | 227.92 ± 5.21 |\n| Arterial II | 150 | 132.08 ± 5.43 |\n\nVenous I exceeds its target whereas tumor II falls below it. Preserving relative brightness order does not establish accurate absolute calibration. Cavity–shell boundaries also show locally adjustable signals, not identical imaging properties throughout the object.\n\nOnly one resin and fixed energy conditions on one scanner were tested. Bone-like HU in a chamber does not establish bone-like composition, energy dependence or radiotherapy dose response. Such conditions can form recognizable contrast tasks for imaging education; cross-device calibration and tissue quantification still lack validation across energies, reconstruction methods and manufacturing repeats. Lesion detection or diagnostic correctness did not test whether these visual differences improve learning.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Concentration correlation and observer agreement do not establish external accuracy",
+          "markdown": "Phantom CT values rise with concentration; the original plot reports R²=0.9812, versus R²=0.9907 for the same solutions in syringes. Slopes differ, and phantom values exceed syringe values except at the lowest concentration. Paired means differ at P=0.03137, so measurements in these container environments are not directly interchangeable. [Concentration and container comparison](ref:R03)\n\nThe authors suggested insufficient mixing or syringe artifacts, without an experiment separating these causes. Leakage, wall–fluid interfaces and ROI choice were also not independently controlled. Strong linearity supports signal adjustment within the dataset, not a universal calibration slope for other materials or scanning conditions.\n\nHigh observer ICC supports agreement across this broad condition range, not agreement with targets or quantification of reprinting and refilling errors. The arterial II volume fraction differs between source concentration tables, and the discussion's determination coefficient differs from the figure. This report uses plotted coefficients and tabulated HU, without combining inconsistent entries into an exact formulation. Long-term stability after refilling, resin-batch differences and calibration reproducibility across devices were not measured.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Dynamic appearance also includes compression, positional repeatability and sorting artifacts",
+          "markdown": "Compressible lungs expose imaging problems absent from static blocks. Lustermans et al. independently drove internal lung compression and an external chest-motion platform. Compression input is not tumor displacement; higher lesions move less than those near the diaphragm. Coupling motion to location therefore represents intrapulmonary differences better than rigid translation of the entire object. [Dynamic imaging and repeatability](ref:R02)\n\nMost static repeated-compression position differences were below 0.2 mm, but one upper-lesion deviation reached 0.52 mm. The authors linked it to an excessively low return position and loss of superior contact. Maximum phase-position difference in repeated dynamic CT was 0.4 mm. “Submillimeter repeatability” must not become one identical bound for every position, and mechanical repeatability does not eliminate segmentation or respiratory sorting errors.\n\nRepeatability was first tested in static images to reduce respiratory-binning effects on positional comparison, then with repeated dynamic scans. This partly separates mechanical return from dynamic imaging errors rather than attributing every displacement discrepancy to printing accuracy. No independent external position measurement confirmed every tumor at every phase, so image-derived repeatability still includes segmentation localization.\n\nIrregular breathing produced double structures, while a pause-containing pattern produced interpolation artifacts. These reflect interactions of sampling, reconstruction and motion, not extra printed tumors or abrupt material-density changes. Artifacts were demonstrated qualitatively, without quantitative ranking of scanning protocols. A rigid outer thorax and little internal anterior–posterior or lateral motion also prevent coverage of every clinical breathing pattern; the tested content is image deformation and reconstruction under specified motion inputs.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Zavan et al.: Low-density slabs within single- and multilayer phantoms.",
+          "interpretation": "In a, the left configuration swaps the central slab; the right combines slabs with interface films. b–c show solid-water stacks and lateral enclosure. Printed material, surrounding scatter medium and detector locations are distinct, allowing fixed polymer with variable low-density distribution. Gray slabs do not reproduce bronchi or alveoli. [Experimental geometry](ref:R01)"
+        },
+        "F02": {
+          "caption": "Lustermans et al.: Material compartments and two motion systems.",
+          "interpretation": "A places lung tumors, bronchi, bone and soft-tissue shapes in one anatomical framework; B separately drives lung compression and the chest-monitoring platform. Composition diagrams are paired with a physical model and mechanical illustrations. Platform travel is not tumor displacement, and structural images alone do not establish tissue equivalence at all energies. [Dynamic structure](ref:R02)"
+        },
+        "F03": {
+          "caption": "Kalidindi et al.: Separate segmentations become a hollow object with ports.",
+          "interpretation": "A shows labeled anatomies, B filling ports, C supports and orientation, D the supported physical object, and E dimensions. External supports were retained for upright scanning and are not tissue. Designed chamber separation does not prove sealing; CT detected interchamber leakage. [Fabricated object](ref:R03)"
+        },
+        "F04": {
+          "caption": "Kalidindi et al.: Orthogonal CT views of six filling conditions.",
+          "interpretation": "Columns group tumor, arterial and venous conditions; rows are axial, coronal and sagittal, with colored ROIs. Different internal brightness in the same shell supports postprinting signal adjustment. Fluid in some nontarget cavities requires consideration of leakage. Local circles do not establish that entire cavity volumes uniformly reach target HU. [Imaging results](ref:R03)"
+        },
+        "F05": {
+          "caption": "Kalidindi et al.: Concentration–attenuation relationships in phantom and syringes.",
+          "interpretation": "Horizontal values are volume percentages and vertical values HU. Black is phantom, gray syringe, and dotted lines their linear fits. Both fits have nonzero intercepts; positive correlation is not an exact proportional relationship through the origin. Container separation and target deviations distinguish strong correlation from absolute accuracy. [Original regression plot](ref:R03)"
+        },
+        "F06": {
+          "caption": "Lustermans et al.: Two reconstruction-artifact types from irregular breathing.",
+          "interpretation": "The red arrow in Pat1 marks duplicated edges near the diaphragm; the orange arrow in Pat2 marks interpolation abnormalities with a breathing pause. They occur within the same material structure, demonstrating motion-sampling effects on image realism. This is no material-attenuation comparison and contains no axis quantifying artifact reduction; evidence is qualitative reproduction. [Irregular-motion images](ref:R02)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie bilden gedruckte Phantome Gewebedichte und Bildmerkmale nach?",
+      "direction": "Strahlentherapiephantome und Qualitätssicherung",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Porosität steuert geringe Dichte, Kalibrierung und Zusammensetzung bleiben getrennt",
+          "markdown": "Zavan et al. druckten Platten unterschiedlicher niedriger Dichte aus demselben Polystyrol. Der Luftanteil variierte bei gleicher Polymerzusammensetzung, sodass Dichteänderung von Unterschieden zwischen Kunststoffen getrennt blieb. CT prüfte innere Gleichmäßigkeit; berichtete Massendichten stammten aus HU-Dichte-Kalibrierung statt unabhängigem Wiegen und Volumenbestimmung jeder Platte. [Platten und Kalibrierung](ref:R01)\n\n| Beispielplatte | Berichtete Dichte (g/cm³) | Mittlerer CT-Wert ± Standardabweichung (HU) |\n|---|---:|---:|\n| Slab 4 | 0.23 | −785 ± 23 |\n| Slab 3 | 0.51 | −502 ± 6 |\n| Slab 6 | 0.68 | −330 ± 10 |\n\nDer Bereich belegt unterschiedliche geringe Schwächung mit einem Material, keine alveoläre Mikrostruktur. CT-Voxelmittelung kann kleine Lufträume und Kunststoff zu einem Wert verbinden; Bildhomogenität bedeutet keine mikroskopische Materialhomogenität. Die Kontrolle nutzte 3 mm Schichten und schließt kleinere Füllmuster nicht aus.\n\nStammen HU und Dichte aus derselben Kalibrierung, ist ihre gemeinsame Änderung mit Füllgrad kein unabhängiger Genauigkeitsnachweis. Der Algorithmus ordnet später anhand der HU Lunge, Fett oder Muskel zu, während das Objekt Polystyrol und Luft bleibt. Dies ist rechnerische Materialzuordnung, keine chemische Umwandlung in menschliches Gewebe.\n\nDichteanpassung hat zudem eine Materialobergrenze: Weniger Porosität nähert sich der Filamentdichte, keiner beliebig hohen Gewebedichte. Metallgefüllte Kunststoffe können sich radiologisch von Knochen unterscheiden; hohe HU allein belegen keine Knochenäquivalenz. Die Platten dienten anschließend zur Dosisalgorithmusprüfung, doch ihre HU-Dichte-Beziehung allein bestätigt keine Gewebeäquivalenz bei sämtlichen Energien.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Gewebeäquivalenz erfordert effektive Ordnungszahl; flexible Lunge bringt mechanische Abwägungen",
+          "markdown": "Lustermans et al. wählten getrennte Materialien für Weichteil, Knochen und komprimierbare Lunge und schätzten die effektive Ordnungszahl Z_eff mittels Dual-Energy-CT. Schwarzes PLA zeigte 6.9 ± 0.4, Fettäquivalentmaterial 6.6 ± 0.7 und Festwasser 7.4 ± 0.5; kalziumhaltiges PLA für Knochen ergab 11.1 ± 0.1. Dies berücksichtigt Energieantwort über Helligkeit einer einzelnen Aufnahme hinaus. [Materialwahl und Dual-Energy-Prüfung](ref:R02)\n\nLungen-TPU zeigte Z_eff 10.1 ± 0.3. Verformbarkeit hatte ausdrücklich Vorrang vor vollständiger Lungengewebeäquivalenz. Der nominale Füllgrad betrug 24%, während der Materialfluss während der Ablage angepasst wurde. Dieser Wert ist somit weder gemessene Lungendichte noch überall gleiche Porosität.\n\nDie Thoraxgeometrie stammt aus dem mathematischen XCAT-Modell, nicht aus voxelweiser Wiedergabe einer einzelnen Lunge. Anthropomorphe Anatomie, konfigurierbare Bewegung und patientenspezifische Gewebedichte sind unterschiedliche Individualisierungen. Erstere wurden realisiert, ohne patientenweisen Abgleich der Materialverteilung mit realer Dichtetextur.\n\nDichtere Knochenschalen und Innenstruktur stellten Kortikalis-Spongiosa-Unterschiede dar, also räumliche Materialverteilung statt einheitlichem Knochenwert. Bronchien und solide Tumoren ermöglichen Beobachtung von Hintergrund, Grenzen und Bewegung. Eine vollständige Dichte-Schwächungs-Dosis-Äquivalenzmatrix über Energien fehlt jedoch. Der starre Thorax bildet keine reale Brustwandverformung ab. Nachgewiesen wurde vor allem reproduzierbares dynamisches CT; thoraxähnliches Aussehen belegt weder MR-Kompatibilität noch vollständige Lungenbiomechanik.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Befüllbare Kammern trennen Anatomieform von Schwächungsanpassung",
+          "markdown": "Kalidindi et al. konstruierten aus CT eines Beckentumors nahe der Iliakalbifurkation getrennte arterielle, venöse und Tumorkammern. Die Harzhülle erhält Geometrie, jodhaltige Flüssigkeit verändert Schwächung. Kontrast lässt sich somit im selben Objekt ohne Neudruck ändern; Flüssigkeitseigenschaften werden dadurch nicht zu intrinsischen Harzeigenschaften. [Kammern und Messdesign](ref:R03)\n\nAufnahmen erfolgten bei 120 kVp und 100 mAs. Zwei Beobachtende platzierten jeweils ROIs von 40–50 mm² in drei orthogonalen Ebenen; sechs ROI-Mittel wurden zusammengefasst. Dies erfasst ausgewählte Hohlraumbereiche, nicht die Dichte jedes Organvoxels. Pro Aufnahme war nur eine Zielkammer befüllt; „arterielle“ und „venöse Phasen“ benennen Bedingungen statt kontinuierlicher Perfusion, Kontrastanreicherung und -auswaschung oder Gefäßdynamik.\n\nCT zeigte Leckage zwischen Kammern. Beabsichtigte Trennung ersetzt keine Prüfung des fertigen Objekts. Verbleibende Stützen, Wanddicke und Luft-Flüssigkeits-Verteilung können Grenzmessungen beeinflussen. Unklare Flüssigkeitsgrenzen verhinderten zudem verlässliche Maßvergleiche. Belegt werden anpassbare Bildsignale nach Fertigung, keine exakte Geometrie und unabhängige Konzentration jeder Kammer.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Anpassbarer Grauwertbereich ist belegt, Zielwerte werden dennoch verfehlt",
+          "markdown": "Sechs Bedingungen desselben Phantoms decken einen breiten Bereich ab, Ziele und Beobachtungen unterscheiden sich jedoch. Direkte HU-Angaben vermeiden Verwechslung der prozentualen Differenz der Arbeit mit zielwertnormiertem Fehler. ± bezeichnet Standardabweichungen der ROI-Zusammenfassung, keine Fertigungsvariation unabhängiger Phantome. [Ziele und Beobachtungen](ref:R03)\n\n| Bedingung | Ziel-HU | Gemessene HU |\n|---|---:|---:|\n| Tumor I | 40 | 37.49 ± 3.95 |\n| Tumor II | 400 | 326.20 ± 2.70 |\n| Venös I | 150 | 200.50 ± 4.03 |\n| Venös II | 90 | 91.32 ± 1.90 |\n| Arteriell I | 200 | 227.92 ± 5.21 |\n| Arteriell II | 150 | 132.08 ± 5.43 |\n\nVenös I liegt über dem Ziel, Tumor II darunter. Erhaltene relative Helligkeitsordnung belegt keine genaue absolute Kalibrierung. Hohlraum-Hüllen-Grenzen zeigen zudem lokal anpassbare Signale statt identischer Bildeigenschaften im gesamten Objekt.\n\nGeprüft wurden nur ein Harz und feste Energiebedingungen eines Scanners. Knochenähnliche HU einer Kammer belegen keine entsprechende Zusammensetzung, Energieabhängigkeit oder Strahlentherapie-Dosisantwort. Solche Bedingungen ermöglichen erkennbare Kontrastaufgaben in der Bildgebungslehre; geräteübergreifender Kalibrierung und Gewebequantifizierung fehlen Vergleiche über Energien, Rekonstruktion und Fertigungswiederholungen. Läsionsdetektion oder Diagnosekorrektheit prüften keinen Lerneffekt dieser sichtbaren Unterschiede.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Konzentrationskorrelation und Beobachterübereinstimmung belegen keine externe Genauigkeit",
+          "markdown": "Phantom-CT-Werte steigen mit Konzentration; die Originalgrafik berichtet R²=0.9812, gegenüber R²=0.9907 für dieselben Flüssigkeiten in Spritzen. Steigungen unterscheiden sich; außer bei geringster Konzentration liegen Phantomwerte höher. Der gepaarte Mittelwertvergleich ergibt P=0.03137, sodass Messungen beider Behälterumgebungen nicht direkt austauschbar sind. [Konzentrations- und Behältervergleich](ref:R03)\n\nDie Autoren vermuteten ungenügende Durchmischung oder Spritzenartefakte, ohne deren Beiträge experimentell zu trennen. Leckage, Wand-Flüssigkeits-Grenzen und ROI-Wahl wurden ebenfalls nicht unabhängig kontrolliert. Starke Linearität unterstützt Signalanpassung innerhalb dieser Daten, keine universelle Kalibriersteigung für andere Materialien oder Scanbedingungen.\n\nHohe Beobachter-ICC bestätigt Übereinstimmung über diesen breiten Bedingungsbereich, keine Zielwerttreue oder Quantifizierung von Neudruck- und Wiederbefüllungsfehlern. Der Volumenanteil von Arteriell II unterscheidet sich zwischen Konzentrationstabellen; auch das Bestimmtheitsmaß der Diskussion weicht von der Grafik ab. Hier werden grafische Koeffizienten und tabellierte HU verwendet, widersprüchliche Angaben aber nicht zu einer exakten Formulierung verbunden. Langzeitstabilität nach Wiederbefüllung, Harzchargenunterschiede und geräteübergreifende Kalibrierreproduzierbarkeit wurden nicht gemessen.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Dynamische Bildmerkmale umfassen Kompression, Positionswiederholbarkeit und Sortierartefakte",
+          "markdown": "Komprimierbare Lungen zeigen Bildprobleme, die statischen Blöcken fehlen. Lustermans et al. steuerten innere Lungenkompression und äußere Brustbewegungsplattform unabhängig. Kompressionseingabe ist nicht Tumorverschiebung; höhere Läsionen bewegen sich weniger als zwerchfellnahe. Die Kopplung von Bewegung und Lage stellt intrapulmonale Unterschiede daher besser dar als starre Verschiebung des gesamten Objekts. [Dynamische Bildgebung und Wiederholbarkeit](ref:R02)\n\nMeist lagen Positionsdifferenzen wiederholter statischer Kompression unter 0.2 mm, einmal erreichte die obere Läsion jedoch 0.52 mm. Die Autoren verbanden dies mit zu tiefer Rückkehrposition und verlorenem oberen Kontakt. Maximale Phasenpositionsdifferenz wiederholter dynamischer CT betrug 0.4 mm. „Submillimeter-Wiederholbarkeit“ bedeutet keine identische Grenze an jeder Position; mechanische Wiederholbarkeit beseitigt keine Segmentierungs- oder Atemsortierfehler.\n\nWiederholbarkeit wurde zunächst statisch geprüft, um Atemphasensortierung bei Positionsvergleichen zu reduzieren, anschließend mit wiederholten dynamischen Scans. Dies trennt mechanische Rückkehr teilweise von Bildfehlern, statt jede Abweichung der Druckgenauigkeit zuzuschreiben. Eine unabhängige externe Positionsmessung bestätigte nicht jeden Tumor in jeder Phase; bildbasierte Wiederholbarkeit enthält somit Segmentierungslokalisation.\n\nUnregelmäßige Atmung erzeugte Doppelstrukturen, ein Muster mit Pause Interpolationsartefakte. Diese entstehen aus Zusammenspiel von Abtastung, Rekonstruktion und Bewegung, nicht aus zusätzlichen gedruckten Tumoren oder abrupten Materialdichteänderungen. Artefakte wurden qualitativ gezeigt, ohne quantitative Rangfolge von Scanprotokollen. Starre Thoraxhülle und geringe innere anteroposteriore oder laterale Bewegung begrenzen zudem die Abbildung klinischer Atemmuster; geprüft werden Bildverformung und Rekonstruktion bei festgelegten Bewegungseingaben.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Zavan et al.: Platten geringer Dichte in Einzel- und Mehrschichtphantomen.",
+          "interpretation": "In a wird links die zentrale Platte gewechselt, rechts werden Platten mit Grenzflächenfilmen kombiniert. b–c zeigen Festwasserstapel und seitliche Einfassung. Druckmaterial, Streuumgebung und Detektorlagen bleiben getrennt; gleiches Polymer erlaubt variable Niedrigdichteverteilung. Graue Platten bilden keine Bronchien oder Alveolen ab. [Versuchsgeometrie](ref:R01)"
+        },
+        "F02": {
+          "caption": "Lustermans et al.: Materialkompartimente und zwei Bewegungssysteme.",
+          "interpretation": "A vereint Lungentumoren, Bronchien, Knochen und Weichteilformen; B steuert Lungenkompression und Brustmonitoringplattform getrennt. Zusammensetzungsschemata stehen neben realem Modell und Mechanikdarstellungen. Plattformweg ist keine Tumorverschiebung; Strukturansichten allein belegen keine Gewebeäquivalenz bei allen Energien. [Dynamischer Aufbau](ref:R02)"
+        },
+        "F03": {
+          "caption": "Kalidindi et al.: Getrennte Segmentierungen werden zum Hohlobjekt mit Anschlüssen.",
+          "interpretation": "A zeigt markierte Anatomien, B Füllanschlüsse, C Stützen und Orientierung, D das gestützte reale Objekt, E Abmessungen. Äußere Stützen blieben zum aufrechten Scannen erhalten und sind kein Gewebe. Entworfene Kammertrennung beweist keine Dichtigkeit; CT zeigte Zwischenkammerleckage. [Fertigungsobjekt](ref:R03)"
+        },
+        "F04": {
+          "caption": "Kalidindi et al.: Orthogonale CT-Ansichten sechs verschiedener Füllbedingungen.",
+          "interpretation": "Spalten gruppieren Tumor-, arterielle und venöse Bedingungen, Zeilen axiale, koronare und sagittale Ansichten mit farbigen ROIs. Unterschiedliche innere Helligkeit derselben Hülle belegt Anpassung nach Druck. Flüssigkeit in Nichtzielkammern verlangt Berücksichtigung von Leckage. Lokale Kreise bestätigen keinen einheitlichen Ziel-HU-Wert des gesamten Kammervolumens. [Bildergebnisse](ref:R03)"
+        },
+        "F05": {
+          "caption": "Kalidindi et al.: Konzentrations-Schwächungs-Beziehungen in Phantom und Spritzen.",
+          "interpretation": "Horizontal stehen Volumenprozente, vertikal HU. Schwarz bezeichnet Phantom, Grau Spritzen, punktiert deren lineare Anpassungen. Beide haben von null verschiedene Achsenabschnitte; positive Korrelation ist keine exakte Proportionalität durch den Ursprung. Behälterunterschiede und Zielabweichungen trennen hohe Korrelation von absoluter Genauigkeit. [Originale Regressionsgrafik](ref:R03)"
+        },
+        "F06": {
+          "caption": "Lustermans et al.: Zwei Rekonstruktionsartefakte unregelmäßiger Atmung.",
+          "interpretation": "Der rote Pfeil in Pat1 markiert doppelte Ränder zwerchfellnah, der orangefarbene in Pat2 Interpolationsabweichungen bei Atempause. Gleiche Materialstruktur zeigt hier den Einfluss der Bewegungsabtastung auf Bildrealismus. Dies ist kein Materialschwächungsvergleich, keine Achse quantifiziert Artefaktreduktion; belegt wird qualitative Reproduktion. [Bilder unregelmäßiger Bewegung](ref:R02)"
+        }
+      }
+    }
+  }
+}

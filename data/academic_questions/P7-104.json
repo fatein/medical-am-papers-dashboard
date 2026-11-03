@@ -1,0 +1,337 @@
+{
+  "schema_version": 2,
+  "question_id": "P7-104",
+  "p": "P7",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_613ab3edc890dc1f4297",
+    "doc_0df9fcce5a6549faefad",
+    "doc_e55dcd8d3278b6dd20df"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Biomechanically, structurally and functionally meticulously tailored polycaprolactone/silk fibroin scaffold for meniscus regeneration",
+      "publisher": "Theranostics",
+      "year": 2020,
+      "url": "https://doi.org/10.7150/thno.44270",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Coupling 3D Printing and Novel Replica Molding for In House Fabrication of Skeletal Muscle Tissue Engineering Devices",
+      "publisher": "Advanced Materials Technologies",
+      "year": 2020,
+      "url": "https://doi.org/10.1002/admt.202000344",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Optimization of 3D printing and in vitro characterization of alginate/gelatin lattice and angular scaffolds for potential cardiac tissue engineering",
+      "publisher": "Frontiers in Bioengineering and Biotechnology",
+      "year": 2023,
+      "url": "https://doi.org/10.3389/fbioe.2023.1161804",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 2",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7163455/figure/F2/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P7-104/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 4",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7163455/figure/F4/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P7-104/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Figure 4",
+      "image_url": "",
+      "source_url": "https://repub.eur.nl/pub/129206/Repub_129206_O-A.pdf",
+      "license": "CC BY-NC-ND",
+      "asset_path": "assets/academic_figures/P7-104/F03.png"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Figure 6",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10248470/figure/F6/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P7-104/F04.jpg"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Figure 7",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10248470/figure/F7/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P7-104/F05.jpg"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R03",
+      "original_label": "Figure 9",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10248470/figure/F9/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P7-104/F06.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "打印支架如何支持体外组织形成？",
+      "direction": "体外细胞与组织模型",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "宏观承载与微观附着由不同结构承担",
+          "markdown": "打印支架支持组织形成，不只是提供一块能够黏附的表面。它还决定细胞之间可跨越的间距、基质沉积的空间，以及新生组织形成过程中由谁承担外部载荷。Li 等的半月板支架以环向与径向 PCL 束模拟天然纤维布局，再由丝素蛋白填充形成多孔复合结构。这里打印的是承载骨架，细胞接触的微环境还包括后加入的丝素；不能将所有微孔都归为打印分辨率带来的结果。[半月板复合支架](ref:R01)\n\n扫描电镜中，单纯 PCL 的大孔与丝素的微孔尺度和表面状态不同，复合支架将两者并置。湿态材料试件的压缩模量分别为丝素 0.081 ± 0.028、PCL 5.689 ± 0.760、复合材料 6.582 ± 0.645 MPa，每组 4 个试件。数值说明 PCL 骨架承担了主要结构增强作用，但复合材料略高于 PCL 并不等于这一配对已显示显著差异；原图的显著标记主要对应与丝素的比较。\n\n另一组接触试验中，丝素表面的界面剪切应力较低，反映润滑介质下的接触响应。这与压缩模量是不同终点，不能把较低摩擦读成较低整体承载能力。原文虽称“摩擦力”，纵轴单位为 Pa，因此这里按应力量表述。材料试件也不是完整半月板的所有方向、疲劳和固定界面的测试；它支持承载骨架与柔软接触层分工的解释，而不是已经证明天然半月板的完整力学功能。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "细胞滞留、代谢与新生基质需要分别计量",
+          "markdown": "半月板研究进一步比较 PCL–丝素支架与带亲和肽的同类支架，细胞为滑膜来源间充质干细胞。表面修饰组在早期流出细胞计数中较低，支持更多细胞被支架保留；这个终点描述的是滞留，不等于已经观察到完整半月板组织。两组活死染色均显示良好相容性，alamarBlue 曲线随时间增加，但同一时间点组间无显著差异，不能把表面修饰直接写成已证明提高增殖速度。[细胞与基质读数](ref:R01)\n\n更接近组织形成的证据来自 7、14、21 天的基质分析。原文将糖胺聚糖、I 型和 II 型胶原含量除以 DNA 量；第 21 天修饰组的这些指标高于未修饰组。按 DNA 归一化有助于区别“留下更多细胞”与“单位细胞相关基质产出增加”，但 DNA 仍是总体分母，不能细化为每个细胞的分泌量。该结果发生在纤维软骨诱导环境中，因此不能归因于打印几何单独驱动自发分化。\n\n基因表达图与基质蛋白分析的时间点并不完全相同，转录上调也不等于已形成正确取向和承载能力的胶原网络。原图同时放有体内招募与体外观察；本题引用的培养物形成证据是体外滞留、活性、基质及标记结果，不能将动物植入后的细胞数量直接并入体外样本。要判定新生基质是否承担力学功能，还需要把材料本身贡献与细胞产生组织的贡献分离；现有基质含量比较没有完成这一步。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "肌肉组织的两端约束与肌节排列",
+          "markdown": "Iuliano 等采用另一条路径：先打印模具，再复制出带弹性柱的 PDMS 腔室，细胞所在的柔软基质跨在两柱之间。打印材料不直接成为肌纤维中的永久骨架；它通过制造工具规定最终的固定位置和边界形状。随着细胞牵引使基质收缩，两端保留连接，组织形成沿长轴排列的束状结构。较小器件的柱帽帮助保留组织，避免仅把孔数增加当作组织微型化成功。[骨骼肌器件与形成结果](ref:R02)\n\n研究比较 50、30、15 µL 三种腔室；这表示器件容积，不是不同的组织成熟程度。经过 7 天分化，三种尺寸均出现长的、多核、取向较一致的肌纤维，并显示肌联蛋白条纹。纤维直径平均约 17 µm，每组 3 个生物学重复；散点中的每个点是一次纤维测量，颜色才区分重复，不能把所有点当成独立组织样本。较小腔室保留类似纤维直径，说明缩小容积未明显破坏这一形态终点。\n\n这篇文章的直接证据是组织保持、排列及肌节标记，不是三种器件的收缩力等效性。弹性柱为以后以位移估算力提供了结构条件，但研究未报告柱刚度校准后的主动应力曲线，也未比较刺激频率下的力响应。图中末端环形束显示组织与固定边界相互作用；不能仅从肌联蛋白条纹推算成人肌肉的力量、疲劳抗性或代谢成熟。它比只展示存活细胞前进到有序肌纤维形成，但功能层次仍有具体未测终点。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "细胞实际看到的是湿态孔隙，而非干燥设计图",
+          "markdown": "Ketabat 等用海藻酸盐–明胶比较规则晶格与逐层变角的支架。其目的在于使基底结构接近心肌纤维方向变化，但“打印丝有方向”与“心肌细胞已经形成同步收缩网络”是两项不同观察。研究先通过干燥电镜和浸水同步辐射断层成像核查实际结构，这一步对水凝胶尤其重要：吸水后丝径与孔隙都会改变，不能直接用干燥孔洞代表细胞接触空间。[干湿结构比较](ref:R03)\n\n以同一低海藻酸盐配方的两种设计为例，晶格丝径由干态的 0.269 ± 0.038 mm 变为湿态的 0.328 ± 0.076 mm；变角结构由 0.173 ± 0.036 mm 变为 0.370 ± 0.054 mm。两种成像还具有不同样品处理和分割条件，所以这些并非同一根丝的连续溶胀跟踪。表格中的孔面积单位仅写为 mm，与面积量纲不一致；本报告因此不把该列未经澄清的数值当作精确可比面积。\n\n原图的湿态重建保留了晶格和变角结构差异，同时可见层间连接和局部不均一。二维照片只能显示外观，断层图则揭示内部材料分布。某些候选设计因结构不稳定被排除，后续细胞比较并未覆盖所有尝试过的几何。这里能够支持的解释是：保持可用孔隙和连续支撑是组织形成的前置条件；具体孔隙是否改善营养输运，还需要通透性或局部浓度测量，不能仅由更漂亮的重建图认定。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "有效压缩模量、溶胀与失重不能合并成一个优劣指标",
+          "markdown": "在同一心肌候选材料研究中，较低海藻酸盐配方的晶格与变角结构压缩模量分别为 62.46 ± 25.67 与 83.07 ± 44.71 kPa，差异不显著。较高海藻酸盐配方中的一组对应值为 38.07 ± 18.37 与 176.6 ± 60.05 kPa，差异显著。可见同为“变角”并不保证相同效应大小，材料组成和结构必须一起说明。多孔支架整体压缩所得更适合称为有效模量，不能自动当成单根水凝胶丝的固有材料常数。[力学与时间变化](ref:R03)\n\n溶胀百分比以刚打印后的初始湿质量为分母；失重百分比则以另组样品的初始冻干质量为参照。二者分母不同，不能相减得到所谓剩余组织量。到第 21 天，高海藻酸盐组干质量损失低于 90%，低海藻酸盐组高于 95%。这些材料质量变化不是新生细胞外基质含量，也没有证明消失的材料已由组织填充。\n\n原文摘要称高海藻酸盐组溶胀更低，但结果部分和相应讨论主要显示其高于低海藻酸盐组；同配方内部，变角结构在若干时间点低于晶格。报告分别保留配方间与几何间的比较，不沿用摘要中的总括。初始压缩模量、后续湿重和干质量来自不同指标，研究没有同时给出整个观察期内的组织化、材料消失和力学保持曲线。对于承受周期变形的心肌候选物，较高初始模量也不能代替循环力学、黏弹性或细胞收缩测量。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "代谢信号的位置分母决定能否谈论组织留在支架上",
+          "markdown": "心肌候选支架的细胞实验分别使用 H9c2 大鼠心肌来源细胞系和人脐静脉内皮细胞，观察时间为 48 h；它不是两种成熟细胞共同构成的功能性心肌组织。MTT 测量的是代谢相关信号，研究将留在支架上的细胞与落到培养板上的细胞分别读出后相加。因此图中总柱高超过 100%，表示相对于二维对照的代谢信号超过基准，不能解释成超过全部细胞的“真实存活百分比”。[支架与培养板分开的细胞读数](ref:R03)\n\n例如一组高海藻酸盐晶格中，H9c2 总信号为 119.14%，其中培养板贡献 56.78%；相应变角结构总信号 108.38%，培养板贡献 47.46%。总信号较高的组并不必然有更高比例的细胞留在支架。图的灰色部分才对应支架相关读数，但仍不能无条件换算为精确细胞数量。正文的“超过 99%”应放回这种对照归一化定义，而不能与活死染色中直接计数的活细胞比例混用。\n\n原文方法在样本说明中同时出现每组五个样本与 MTT 两次实验各三重复的表述，因而不能从柱图外观断定全部重复来自独立打印批次。活死图支持局部细胞相容性，却没有测定心肌电传导、钙瞬变同步、主动收缩力或可灌注内皮腔。要判断这些支架是否已经支持心肌组织形成，尚缺的是把留在支架内的细胞身份、组织连接与上述功能读数对应到同一构建体，而不是继续提高包含培养板细胞的总 MTT 柱高。",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Li et al.：复合支架的孔隙、摩擦与承载分工。",
+          "interpretation": "A、B 对比丝素、PCL 与复合结构，C 纵轴为剩余质量而非损失质量。D 比较 PCL 与丝素接触应力，E、F 为压缩与拉伸模量，注意断轴及显著比较线。G 展示丝素受压后的形状恢复，并非整个复合半月板的循环疲劳试验。[材料结构及力学](ref:R01)"
+        },
+        "F02": {
+          "caption": "Li et al.：细胞存活与单位 DNA 基质产出的区别。",
+          "interpretation": "A 中招募图和 B 属体内观察；A 的活死及形态图、C 的流出计数和 D 的代谢曲线属于体外部分。E–G 的基质值按 DNA 归一化，H–K 则是基因表达，二者不是同一种量。修饰组的基质优势不能被 D 的无显著组间差异改写成已证明增殖加快。[形成证据的层次](ref:R01)"
+        },
+        "F03": {
+          "caption": "Iuliano et al.：缩小器件中保留的有序肌纤维。",
+          "interpretation": "a、d、g 对应三种器件大小，b、e、h 显示肌纤维沿长轴排列，c、f、i 可见肌联蛋白条纹。j 的纵轴是纤维直径，颜色标出 3 个生物学重复，点不是独立组织。该图支持形态保持，不包含主动收缩力测量；完整原图与原图注一并保留。[肌肉组织图](ref:R02)"
+        },
+        "F04": {
+          "caption": "Ketabat et al.：浸水状态下的内部结构重建。",
+          "interpretation": "每个面板把三维重建与实物照片配对；A、C、E 是晶格，B、D、F 是变角结构。红棕色代表被分割的支架，不是细胞或新生心肌。图能检查内部孔隙和层间连续性，不能由体积外观直接推定孔隙通透性或细胞取向。[湿态结构](ref:R03)"
+        },
+        "F05": {
+          "caption": "Ketabat et al.：不同配方与几何的有效压缩模量。",
+          "interpretation": "纵轴为 kPa，横轴同时包含配方、设计标记以及 L 晶格或 A 变角。误差线与比较括号说明只有特定配对具有统计支持，不能把所有变角柱统一称为显著更硬。该图是初始整体压缩读数，没有显示心肌收缩或长时间材料降解后的力学保持。[整体压缩](ref:R03)"
+        },
+        "F06": {
+          "caption": "Ketabat et al.：总 MTT 信号中有相当部分来自培养板。",
+          "interpretation": "A 是 H9c2，B 是内皮细胞；黑色是培养板，灰色是支架，合计柱高才是总相对代谢信号。接近一半柱高来自培养板的情形说明细胞没有全部留在三维支架。超过对照的总信号不能作为成熟心肌或直接计数的存活比例；分析组织留置应关注位置分量和独立功能读数。[位置分解](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do printed scaffolds support tissue formation in vitro?",
+      "direction": "In vitro cell and tissue models",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Macroscopic support and microscopic attachment have different structural roles",
+          "markdown": "A printed scaffold supports tissue formation through more than an adhesive surface. It defines distances cells must bridge, space for matrix deposition and the structure bearing load while new tissue forms. Li et al. used circumferential and radial PCL bundles to mimic meniscal fibre organization, adding silk fibroin to create a porous composite. The printed component is the supporting skeleton; the cellular microenvironment also includes subsequently added silk. Its micropores cannot all be attributed to printing resolution. [Composite meniscus scaffold](ref:R01)\n\nElectron microscopy distinguishes the large pores of PCL from silk micropores and surface texture; the composite juxtaposes both. Moist material specimens had compressive moduli of 0.081 ± 0.028 for silk, 5.689 ± 0.760 for PCL and 6.582 ± 0.645 MPa for the composite, with 4 specimens per group. These values identify PCL as the main structural reinforcement. A numerically higher composite modulus does not establish a significant composite–PCL difference: figure annotations mainly compare each against silk.\n\nSeparate contact tests found lower interfacial shear stress for silk under lubricating media. This differs from compression modulus; lower friction does not imply lower overall load-bearing capacity. Although the paper calls this frictional force, its axis uses Pa, so it is described here as stress. Material coupons also do not test every direction, fatigue or fixation interface of a complete meniscus. They support distinct roles for a load-bearing skeleton and softer contact layer, rather than complete native meniscal mechanics.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Cell retention, metabolism and new matrix require separate measurements",
+          "markdown": "The meniscus study compared PCL–silk scaffolds with an affinity-peptide-modified counterpart using synovium-derived mesenchymal stem cells. Fewer cells in early effluent supported increased retention on modified scaffolds, not formation of complete meniscal tissue. Both groups showed compatible live/dead staining and rising alamarBlue signals over time, without significant between-group differences at the same time point. Surface modification therefore did not demonstrate a higher proliferation rate. [Cellular and matrix readouts](ref:R01)\n\nMatrix measurements at 7, 14 and 21 days provide evidence closer to tissue formation. Glycosaminoglycan and type I/II collagen contents were normalized to DNA; all were higher in the modified group on day 21. DNA normalization helps distinguish retention of more cells from greater cell-associated matrix output, but remains a population denominator rather than secretion by every individual cell. These observations arose under fibrochondrogenic induction, so spontaneous differentiation cannot be attributed to printed geometry alone.\n\nGene-expression and matrix-protein measurements used partly different time points, and transcriptional increases do not establish an oriented, load-bearing collagen network. The original figure mixes in vivo recruitment and in vitro observations. Evidence for formation in culture here comes from in vitro retention, activity, matrix and marker results; postimplantation cell counts are not additional in vitro samples. Establishing mechanical function of newly deposited matrix requires separating the material's contribution from that of cell-generated tissue, which matrix-content comparisons did not accomplish.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Two-ended anchoring and sarcomeric organization in muscle constructs",
+          "markdown": "Iuliano et al. followed another route: printed moulds produced PDMS chambers with elastic posts, with soft cell-containing matrix spanning the posts. The printed material does not become a permanent skeleton inside myofibres; the manufacturing tool specifies final attachment positions and boundary geometry. Cell-driven matrix compaction preserves end connections and produces longitudinal bundles. Caps on smaller posts retain tissue, so miniaturization is assessed beyond simply increasing the number of wells. [Skeletal-muscle devices and formation](ref:R02)\n\nThe study compared 50, 30 and 15 µL chambers; these are device volumes, not levels of tissue maturity. After 7 days of differentiation, all sizes showed long, multinucleated, similarly aligned myofibres with titin striations. Mean fibre diameter was approximately 17 µm, with 3 biological replicates per group. Each scatter point is a fibre measurement and colours identify replicates; points are not independent tissue samples. Comparable diameters in smaller chambers indicate that downscaling did not clearly disrupt this morphological endpoint.\n\nDirect evidence concerns retention, alignment and sarcomeric markers, not equivalent contractile force across devices. Elastic posts offer a structural basis for later force estimation from displacement, but the study did not report active-stress curves with calibrated post stiffness or force responses across stimulation frequencies. Terminal loops show interaction with anchoring boundaries. Titin striations alone cannot specify adult muscle strength, fatigue resistance or metabolic maturity. The work advances from viable cells to organized myofibres while leaving these particular functional endpoints unmeasured.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Cells encounter wet pores, not a dry design drawing",
+          "markdown": "Ketabat et al. compared regular lattices with layerwise angular scaffolds in alginate–gelatin. The substrate was intended to approximate changes in myocardial fibre direction, but directional printed strands and a synchronously contracting cellular network are different observations. Dry electron microscopy and immersed synchrotron tomography first checked actual architecture. For hydrogels, hydration changes strand size and voids, so dry openings cannot directly represent the cellular environment. [Dry and wet architecture](ref:R03)\n\nFor two designs of the same lower-alginate formulation, lattice strand diameter changed from 0.269 ± 0.038 mm dry to 0.328 ± 0.076 mm wet; angular strands changed from 0.173 ± 0.036 mm to 0.370 ± 0.054 mm. Imaging also differs in preparation and segmentation, so this is not continuous swelling measurement of the same strand. The table labels pore area in mm, inconsistent with an area dimension; unclarified values from that column are therefore not presented as precise comparable areas.\n\nWet reconstructions retain lattice/angular differences while revealing interlayer connections and local irregularity. Photographs show appearance; tomography reveals internal material distribution. Some candidate geometries were excluded for instability, so later cellular comparisons did not cover every attempted design. Retention of accessible voids and continuous support is a prerequisite for tissue formation. Whether these pores improve nutrient transport requires permeability or local-concentration measurements, rather than a more attractive reconstruction alone.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Effective modulus, swelling and mass loss are not a single quality score",
+          "markdown": "In the cardiac-candidate study, lattice and angular compressive moduli for the lower-alginate formulation were 62.46 ± 25.67 and 83.07 ± 44.71 kPa, without a significant difference. One corresponding higher-alginate pair gave 38.07 ± 18.37 and 176.6 ± 60.05 kPa, significantly different. An angular label therefore does not guarantee the same effect size; composition and architecture must be specified together. Whole porous-scaffold compression yields an effective modulus, not automatically the intrinsic material constant of an individual hydrogel strand. [Mechanics and temporal changes](ref:R03)\n\nSwelling percentage uses initial postprinting wet mass as denominator, whereas mass loss references initial freeze-dried mass from a separate specimen group. The two cannot be subtracted to calculate remaining tissue. At day 21, dry-mass loss was below 90% for higher-alginate groups and above 95% for lower-alginate groups. Such material changes are not newly deposited extracellular matrix, nor evidence that tissue replaced the disappearing material.\n\nThe abstract describes lower swelling for higher-alginate groups, whereas Results and associated discussion mainly show greater swelling than lower-alginate groups. Within a formulation, angular structures sometimes swell less than lattices. The report preserves between-formulation and between-geometry comparisons separately instead of repeating the abstract's generalization. Initial compression, later wet mass and dry mass are different endpoints; tissue organization, material disappearance and maintained mechanics were not tracked jointly throughout. For a cardiac candidate undergoing cyclic deformation, greater initial modulus cannot replace cyclic mechanics, viscoelasticity or cellular contraction measurements.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "The location denominator determines whether cells remain on the scaffold",
+          "markdown": "The cardiac-candidate experiments separately used H9c2 rat cardiac-derived cells and human umbilical-vein endothelial cells over 48 h; they were not a functional myocardium combining mature cells. MTT measures metabolic activity. Signals from cells remaining on scaffolds and cells reaching the culture plate were measured separately and added. Total bars above 100% therefore mean metabolic signal above a two-dimensional control baseline, not a true survival fraction exceeding all available cells. [Separate scaffold and plate readouts](ref:R03)\n\nFor example, a higher-alginate lattice produced total H9c2 signal of 119.14%, with 56.78% contributed by the plate; the corresponding angular structure gave 108.38% total and 47.46% from the plate. A larger total need not mean a larger proportion retained on the scaffold. Grey bars identify scaffold-associated signal, but still cannot unconditionally yield exact cell counts. The paper's above-99% language belongs to this control-normalized definition and must not be mixed with directly counted live-cell fractions.\n\nThe methods describe both five samples per group and two MTT experiments with three replicates each, so bar appearance cannot establish independent printing batches for all repeats. Live/dead images support local compatibility without measuring cardiac electrical conduction, synchronized calcium transients, active force or perfusable endothelial lumina. Demonstrating cardiac tissue formation still requires linking the identity and connectivity of scaffold-resident cells to those functions in the same construct, rather than increasing a summed MTT bar that includes plate-associated cells.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Li et al.: Pores, contact and load-bearing roles in a composite.",
+          "interpretation": "A and B compare silk, PCL and composite; C plots remaining, not lost, mass. D compares PCL/silk contact stress; E and F show compression/tension moduli with broken axes and specific significance brackets. G demonstrates silk shape recovery after compression, not cyclic fatigue of the whole composite meniscus. [Structure and mechanics](ref:R01)"
+        },
+        "F02": {
+          "caption": "Li et al.: Viability differs from matrix output per DNA.",
+          "interpretation": "Recruitment images in A and counts in B are in vivo; live/dead and morphology in A, effluent counts in C and metabolism in D are in vitro. E–G normalize matrix to DNA; H–K measure gene expression, a different quantity. Matrix advantages of modification do not convert nonsignificant between-group metabolism in D into proven faster proliferation. [Levels of formation evidence](ref:R01)"
+        },
+        "F03": {
+          "caption": "Iuliano et al.: Organized myofibres retained in smaller devices.",
+          "interpretation": "a, d and g show three device sizes; b, e and h show longitudinal alignment; c, f and i show titin striations. The j ordinate is fibre diameter, with colours marking 3 biological replicates; dots are not independent tissues. Morphology is preserved, but active force is not measured. The complete original figure and caption are retained. [Muscle construct figure](ref:R02)"
+        },
+        "F04": {
+          "caption": "Ketabat et al.: Internal architecture reconstructed while immersed.",
+          "interpretation": "Each panel pairs a reconstruction and photograph: A, C and E are lattices; B, D and F angular structures. Brown-red denotes segmented scaffold, not cells or new myocardium. Internal voids and interlayer continuity can be inspected, but permeability and cellular orientation cannot be inferred directly from appearance. [Wet architecture](ref:R03)"
+        },
+        "F05": {
+          "caption": "Ketabat et al.: Effective compression modulus across formulation and geometry.",
+          "interpretation": "The ordinate is kPa; labels combine formulation/design codes with L lattice or A angular geometry. Error bars and brackets support specific comparisons, not a universal significant increase for every angular structure. These are initial whole-scaffold compression measurements, without cardiac contraction or mechanics after prolonged degradation. [Whole-scaffold compression](ref:R03)"
+        },
+        "F06": {
+          "caption": "Ketabat et al.: Culture-plate cells contribute substantially to total MTT signal.",
+          "interpretation": "A shows H9c2 and B endothelial cells. Black is plate-associated and grey scaffold-associated signal; their sum is relative total metabolism. Bars with approximately half from the plate show that cells did not all remain on the scaffold. Above-control totals establish neither mature myocardium nor a directly counted survival fraction; tissue retention requires location-specific components and independent function. [Location decomposition](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie unterstützen gedruckte Gerüste die Gewebebildung in vitro?",
+      "direction": "In-vitro-Zell- und Gewebemodelle",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Makroskopische Tragstruktur und mikroskopische Anheftung erfüllen verschiedene Aufgaben",
+          "markdown": "Ein gedrucktes Gerüst unterstützt Gewebebildung durch mehr als eine haftfähige Oberfläche. Es bestimmt überbrückbare Zellabstände, Raum für Matrixablagerung und die Lastaufnahme während der Gewebebildung. Li et al. ahmten die meniskale Faseranordnung mit zirkumferenziellen und radialen PCL-Bündeln nach und ergänzten Seidenfibroin zu einem porösen Verbund. Gedruckt wurde das tragende Skelett; zur Zellumgebung gehört auch nachträglich eingebrachtes Seidenmaterial. Dessen Mikroporen sind nicht sämtlich der Druckauflösung zuzuschreiben. [Meniskales Verbundgerüst](ref:R01)\n\nElektronenmikroskopie unterscheidet große PCL-Poren von Seidenmikroporen und Oberflächentextur; der Verbund vereint beide. Feuchte Materialproben hatten Kompressionsmoduln von 0.081 ± 0.028 für Seide, 5.689 ± 0.760 für PCL und 6.582 ± 0.645 MPa für den Verbund, bei 4 Proben je Gruppe. PCL liefert damit den wesentlichen Verstärkungsanteil. Ein numerisch höherer Verbundmodul belegt jedoch keinen signifikanten Unterschied zu PCL; die Abbildungsmarkierungen betreffen vor allem Vergleiche mit Seide.\n\nSeparate Kontaktversuche zeigten geringere Grenzflächenschubspannung auf Seide in Schmiermedien. Dieser Endpunkt unterscheidet sich vom Kompressionsmodul; geringere Reibung bedeutet nicht geringere Gesamttragfähigkeit. Obwohl der Artikel von Reibungskraft spricht, lautet die Achseneinheit Pa; deshalb wird hier Spannung verwendet. Materialproben prüfen zudem nicht sämtliche Richtungen, Ermüdung und Befestigungsgrenzen eines vollständigen Meniskus. Sie stützen die Aufgabenteilung zwischen Tragskelett und weicherer Kontaktfläche, nicht die gesamte Mechanik des natürlichen Meniskus.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Zellrückhalt, Stoffwechsel und neue Matrix getrennt messen",
+          "markdown": "Die Meniskusstudie verglich PCL-Seiden-Gerüste mit einer durch Affinitätspeptid modifizierten Variante anhand synovialer mesenchymaler Stammzellen. Weniger Zellen im frühen Ablauf stützten stärkeren Rückhalt am modifizierten Gerüst, nicht bereits die Bildung vollständigen Meniskusgewebes. Beide Gruppen zeigten verträgliche Lebend-Tot-Färbungen und zeitlich steigende alamarBlue-Signale, ohne signifikante Gruppenunterschiede zum selben Zeitpunkt. Eine erhöhte Proliferationsrate durch Oberflächenmodifikation wurde damit nicht belegt. [Zelluläre und Matrixmessgrößen](ref:R01)\n\nMatrixanalysen nach 7, 14 und 21 Tagen liegen näher an Gewebebildung. Glykosaminoglykan- sowie Kollagen-I/II-Gehalte wurden auf DNA bezogen; am Tag 21 lagen alle Werte in der modifizierten Gruppe höher. Die DNA-Normierung hilft, stärkeren Zellrückhalt von höherem zellbezogenem Matrixertrag zu unterscheiden, bleibt aber ein Populationsnenner statt einer Sekretionsmessung jeder Einzelzelle. Die Ergebnisse entstanden unter fibrochondrogener Induktion; spontane Differenzierung kann deshalb nicht allein der Druckgeometrie zugeschrieben werden.\n\nGenexpressions- und Matrixproteinanalysen verwendeten teilweise unterschiedliche Zeitpunkte; Transkriptionsanstiege belegen kein ausgerichtetes, tragfähiges Kollagennetz. Die Originalabbildung kombiniert In-vivo-Rekrutierung mit In-vitro-Beobachtungen. Die hier verwendeten Kulturbelege betreffen Rückhalt, Aktivität, Matrix und Marker in vitro; Zellzahlen nach Implantation sind keine zusätzlichen In-vitro-Proben. Für die mechanische Funktion neu abgelagerter Matrix müssten Material- und Zellgewebebeitrag getrennt werden. Der Vergleich von Matrixmengen leistet diese Trennung nicht.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Beidseitige Verankerung und Sarkomerordnung in Muskelkonstrukten",
+          "markdown": "Iuliano et al. gingen anders vor: Gedruckte Formen lieferten PDMS-Kammern mit elastischen Pfosten, zwischen denen weiche zellhaltige Matrix lag. Das Druckmaterial bildet kein dauerhaftes Skelett innerhalb der Muskelfasern; das Fertigungswerkzeug bestimmt endgültige Befestigungspositionen und Randgeometrie. Zellbedingte Matrixverdichtung erhält die Endverbindungen und erzeugt längs ausgerichtete Bündel. Kappen kleinerer Pfosten halten Gewebe zurück; Miniaturisierung wird dadurch nicht nur an steigender Kammerzahl beurteilt. [Skelettmuskelgeräte und Gewebebildung](ref:R02)\n\nVerglichen wurden Kammern mit 50, 30 und 15 µL; dies sind Gerätevolumina, keine Reifestufen. Nach 7 Tagen Differenzierung zeigten alle Größen lange, mehrkernige, ähnlich ausgerichtete Muskelfasern mit Titin-Streifen. Der mittlere Faserdurchmesser lag bei etwa 17 µm, mit 3 biologischen Replikaten je Gruppe. Jeder Streupunkt ist eine Fasermessung; Farben kennzeichnen Replikate. Punkte sind keine unabhängigen Gewebeproben. Ähnliche Durchmesser in kleineren Kammern sprechen dafür, dass die Verkleinerung diesen morphologischen Endpunkt nicht erkennbar beeinträchtigte.\n\nDirekt belegt sind Geweberückhalt, Ausrichtung und Sarkomermarker, nicht gleiche Kontraktionskräfte verschiedener Geräte. Elastische Pfosten schaffen eine Grundlage für spätere Kraftschätzung aus Auslenkung; die Studie zeigte jedoch weder aktive Spannungskurven bei kalibrierter Pfostensteifigkeit noch Kraftantworten über Stimulationsfrequenzen. Endständige Schleifen verdeutlichen die Wechselwirkung mit Verankerungsgrenzen. Titin-Streifen allein bestimmen weder adulte Muskelkraft noch Ermüdungsresistenz oder Stoffwechselreife. Die Arbeit geht über vitale Zellen zu geordneten Muskelfasern hinaus, lässt diese konkreten Funktionsendpunkte jedoch offen.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Zellen treffen auf feuchte Poren, nicht auf die trockene Entwurfszeichnung",
+          "markdown": "Ketabat et al. verglichen regelmäßige Gitter mit schichtweise gewinkelten Alginat-Gelatine-Gerüsten. Die Substratgeometrie sollte wechselnde Herzmuskelfaserrichtungen annähern. Gerichtete Druckstränge und ein synchron kontrahierendes Zellnetz sind jedoch unterschiedliche Beobachtungen. Trockene Elektronenmikroskopie und Synchrotrontomographie unter Wasser prüften zunächst die tatsächliche Architektur. Hydratation verändert bei Hydrogelen Stranggrößen und Hohlräume; trockene Öffnungen repräsentieren deshalb nicht unmittelbar die Zellumgebung. [Trockene und feuchte Architektur](ref:R03)\n\nBei zwei Entwürfen derselben alginatärmeren Formulierung änderte sich der Gitterstrangdurchmesser von trocken 0.269 ± 0.038 mm auf feucht 0.328 ± 0.076 mm; gewinkelte Stränge änderten sich von 0.173 ± 0.036 mm auf 0.370 ± 0.054 mm. Auch Präparation und Segmentierung unterscheiden sich, sodass keine kontinuierliche Quellung desselben Strangs gemessen wurde. Die Tabelle bezeichnet Porenflächen mit mm, entgegen der Flächendimension. Ungeklärte Zahlen dieser Spalte werden daher nicht als exakt vergleichbare Flächen übernommen.\n\nFeuchte Rekonstruktionen erhalten Unterschiede zwischen Gitter und Winkelstruktur und zeigen zugleich Schichtkontakte sowie lokale Unregelmäßigkeit. Fotografien zeigen das Aussehen, Tomographie die innere Materialverteilung. Instabile Kandidaten wurden ausgeschlossen; spätere Zellvergleiche umfassen somit nicht alle erprobten Geometrien. Zugängliche Hohlräume und zusammenhängende Stützen sind Voraussetzungen der Gewebebildung. Verbesserter Nährstofftransport durch diese Poren würde jedoch Permeabilitäts- oder lokale Konzentrationsmessungen erfordern, nicht allein eine ansprechendere Rekonstruktion.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Effektiver Modul, Quellung und Massenverlust sind kein gemeinsamer Qualitätswert",
+          "markdown": "In der Studie zu Herzgewebekandidaten betrugen die Kompressionsmoduln der alginatärmeren Gitter- und Winkelstruktur 62.46 ± 25.67 beziehungsweise 83.07 ± 44.71 kPa, ohne signifikanten Unterschied. Ein entsprechendes alginatreicheres Paar ergab 38.07 ± 18.37 und 176.6 ± 60.05 kPa mit signifikantem Unterschied. Die Bezeichnung Winkelstruktur garantiert somit keine gleiche Effektgröße; Zusammensetzung und Architektur gehören zusammen. Die Kompression des gesamten porösen Gerüsts liefert einen effektiven Modul, nicht automatisch die intrinsische Materialkonstante eines einzelnen Hydrogelstrangs. [Mechanik und zeitliche Änderungen](ref:R03)\n\nDer Quellungsprozentsatz verwendet die anfängliche Nassmasse nach dem Druck als Nenner; Massenverlust bezieht sich auf anfängliche gefriergetrocknete Masse einer separaten Probengruppe. Durch Subtraktion entsteht deshalb keine verbleibende Gewebemenge. Am Tag 21 lag der Trockenmassenverlust alginatreicher Gruppen unter 90%, der alginatärmeren über 95%. Materialverlust misst weder neu abgelagerte extrazelluläre Matrix noch deren Ersatz des verschwundenen Materials.\n\nDer Abstract beschreibt geringere Quellung alginatreicher Gruppen, während Ergebnisse und zugehörige Diskussion überwiegend höhere Quellung als bei alginatärmeren Gruppen zeigen. Innerhalb einer Formulierung quellen Winkelstrukturen zu manchen Zeitpunkten weniger als Gitter. Der Bericht trennt Formulierungs- und Geometrievergleiche, statt die Verallgemeinerung des Abstracts zu übernehmen. Anfangskompression, spätere Nassmasse und Trockenmasse sind unterschiedliche Endpunkte; Organisation, Materialschwund und mechanischer Erhalt wurden nicht über den gesamten Zeitraum gemeinsam verfolgt. Ein höherer Anfangsmodul ersetzt bei zyklisch verformtem Herzgewebematerial keine Messung zyklischer Mechanik, Viskoelastizität oder Zellkontraktion.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Der Ortsnenner entscheidet, ob Zellen auf dem Gerüst verbleiben",
+          "markdown": "Die Herzgewebekandidaten wurden getrennt mit der rattenherzabgeleiteten H9c2-Zelllinie und menschlichen Nabelvenenendothelzellen über 48 h untersucht. Das war kein aus reifen Zellen zusammengesetztes funktionelles Myokard. MTT erfasst Stoffwechselaktivität. Signale von Gerüstzellen und auf die Kulturplatte gelangten Zellen wurden getrennt gemessen und addiert. Gesamtbalken über 100% bedeuten deshalb mehr Stoffwechselsignal als die zweidimensionale Referenz, keinen tatsächlichen Überlebensanteil oberhalb aller vorhandenen Zellen. [Getrennte Gerüst- und Plattenmessgrößen](ref:R03)\n\nEin alginatreicheres Gitter ergab beispielsweise ein H9c2-Gesamtsignal von 119.14%, davon 56.78% auf der Platte; die entsprechende Winkelstruktur ergab insgesamt 108.38% und auf der Platte 47.46%. Ein höheres Gesamtsignal bedeutet nicht zwangsläufig einen größeren zurückgehaltenen Zellanteil. Graue Balken kennzeichnen gerüstbezogenes Signal, erlauben aber weiterhin keine bedingungslose Umrechnung in exakte Zellzahlen. Die Aussage über 99% gehört zu dieser kontrollnormierten Definition und darf nicht mit direkt gezählten Lebendzellanteilen vermischt werden.\n\nDie Methoden nennen sowohl fünf Proben je Gruppe als auch zwei MTT-Experimente mit jeweils drei Replikaten. Aus den Balken lässt sich deshalb keine unabhängige Druckcharge für jede Wiederholung ableiten. Lebend-Tot-Bilder stützen lokale Verträglichkeit, messen aber weder elektrische Herzleitung noch synchrone Kalziumtransienten, aktive Kraft oder perfundierbare Endothellumina. Für Herzgewebebildung müssten Identität und Verbindung der gerüstgebundenen Zellen diesen Funktionen im selben Konstrukt zugeordnet werden, statt lediglich den MTT-Gesamtbalken einschließlich Plattenzellen zu erhöhen.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Li et al.: Poren, Kontakt und Tragaufgaben im Verbund.",
+          "interpretation": "A und B vergleichen Seide, PCL und Verbund; C zeigt verbleibende, nicht verlorene Masse. D vergleicht PCL-Seiden-Kontaktspannungen; E und F Kompressions- und Zugmoduln mit Achsenbrüchen und konkreten Signifikanzklammern. G zeigt Seidenformrückkehr nach Kompression, keinen zyklischen Ermüdungstest des gesamten Verbundmeniskus. [Struktur und Mechanik](ref:R01)"
+        },
+        "F02": {
+          "caption": "Li et al.: Viabilität unterscheidet sich von Matrixertrag pro DNA.",
+          "interpretation": "Rekrutierungsbilder in A und Zählungen in B sind in vivo; Lebend-Tot- und Morphologiebilder in A, Ablaufzählungen in C und Stoffwechsel in D sind in vitro. E–G normieren Matrix auf DNA; H–K messen Genexpression als andere Größe. Matrixvorteile der Modifikation machen den nicht signifikanten Stoffwechselvergleich in D nicht zum Nachweis beschleunigter Proliferation. [Ebenen des Bildungsnachweises](ref:R01)"
+        },
+        "F03": {
+          "caption": "Iuliano et al.: Geordnete Muskelfasern in verkleinerten Geräten.",
+          "interpretation": "a, d und g zeigen drei Gerätegrößen; b, e und h die Längsausrichtung; c, f und i Titin-Streifen. Die Ordinate in j ist der Faserdurchmesser; Farben markieren 3 biologische Replikate, Punkte keine unabhängigen Gewebe. Erhaltene Morphologie wird gezeigt, aktive Kraft nicht gemessen. Originalabbildung und Originallegende bleiben vollständig erhalten. [Muskelkonstrukt-Abbildung](ref:R02)"
+        },
+        "F04": {
+          "caption": "Ketabat et al.: Innere Architektur im eingetauchten Zustand.",
+          "interpretation": "Jedes Teilbild verbindet Rekonstruktion und Fotografie: A, C und E sind Gitter, B, D und F Winkelstrukturen. Braunrot kennzeichnet segmentiertes Gerüst, keine Zellen oder neues Myokard. Hohlräume und Schichtkontinuität sind prüfbar, Permeabilität und Zellausrichtung aber nicht unmittelbar aus dem Aussehen ableitbar. [Feuchte Architektur](ref:R03)"
+        },
+        "F05": {
+          "caption": "Ketabat et al.: Effektiver Kompressionsmodul nach Formulierung und Geometrie.",
+          "interpretation": "Die Ordinate trägt kPa; Beschriftungen verbinden Formulierungs- und Entwurfscodes mit L für Gitter oder A für Winkelstruktur. Fehlerbalken und Klammern stützen bestimmte Vergleiche, keinen universell signifikanten Anstieg aller Winkelstrukturen. Gemessen wurde anfängliche Gesamtkompression, keine Herzkontraktion oder Mechanik nach längerem Abbau. [Gesamtgerüstkompression](ref:R03)"
+        },
+        "F06": {
+          "caption": "Ketabat et al.: Plattenzellen tragen erheblich zum gesamten MTT-Signal bei.",
+          "interpretation": "A zeigt H9c2, B Endothelzellen. Schwarz kennzeichnet Platten-, Grau Gerüstsignal; ihre Summe ist der relative Gesamtstoffwechsel. Etwa zur Hälfte plattenbezogene Balken zeigen, dass nicht alle Zellen auf dem Gerüst verblieben. Überkontrollwerte belegen weder reifes Myokard noch direkt gezählte Überlebensanteile; Geweberückhalt erfordert Ortsanteile und unabhängige Funktion. [Ortsbezogene Zerlegung](ref:R03)"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,336 @@
+{
+  "schema_version": 2,
+  "question_id": "P7-100",
+  "p": "P7",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_8d03faf09428185b6279",
+    "doc_d9d11dee4cf099d32ec2"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "3D Printing of Inertial Microfluidic Devices",
+      "publisher": "Scientific Reports",
+      "year": 2020,
+      "url": "https://doi.org/10.1038/s41598-020-62569-9",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "3D-Printed Microfluidic Device for the Detection of Pathogenic Bacteria Using Size-based Separation in Helical Channel with Trapezoid Cross-Section",
+      "publisher": "Scientific Reports",
+      "year": 2015,
+      "url": "https://doi.org/10.1038/srep07717",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "3D-Printed Modular Microfluidic Device Enabling Preconcentrating Bacteria and Purifying Bacterial DNA in Blood for Improving the Sensitivity of Molecular Diagnostics",
+      "publisher": "Sensors",
+      "year": 2020,
+      "url": "https://doi.org/10.3390/s20041202",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 6",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-100/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7125121/#Fig6",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 7",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-100/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7125121/#Fig7",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R03",
+      "original_label": "Figure 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-100/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7070462/#sensors-20-01202-f003",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Figure 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-100/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7070462/#sensors-20-01202-f004",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Figure 5",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-100/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7070462/#sensors-20-01202-f005",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R03",
+      "original_label": "Figure 6",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-100/F06.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7070462/#sensors-20-01202-f006",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "芯片如何完成样本前处理和分离？",
+      "direction": "微流控芯片",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "惯性聚焦改变出口位置，但窄带不等于分离纯度",
+          "markdown": "Razavi Bazaz 等将 BV-007 丙烯酸酯通道打印为开放面，再用双面压敏胶封到 2 mm PMMA 上。设备 XY 分辨率为 30 μm，层厚可在 5–200 μm 调整；打印后经异丙醇清洗和 UV 后固化。直角三角形螺旋截面宽 600 μm、内壁高 210 μm，使横向惯性升力与 Dean 二次流产生不同于矩形截面的平衡位置。荧光颗粒以 0.01% 体积分数分散在 MACS 缓冲液中，减少非特异性粘附，并非直接使用未处理血液。[打印几何与颗粒聚焦](ref:R01)\n\n原图逐一比较 5、7、10、13、20 μm 颗粒在 0.5–4.0 mL/min 下的条带。较小颗粒形成更分散的分布，较大颗粒更容易聚焦；但 20 μm 颗粒在约 4 mL/min 又出现双条带，说明增大流量并不总能得到更单一的出口位置。这里主要测量横向荧光分布，没有把各类混合颗粒分流后的回收率、纯度和通量一并量化。窄荧光带能支持定位控制，不能自动写成“目标细胞高纯度分离”。封接测试在另一条 50×200 μm、长 4 cm 通道完成，超过 82.6 psi 开始出现界面指状扩展；报告承受至 150 psi 不代表所有几何或全部细胞处理均在该压力下验证。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "前处理后还需保持可分析的细胞状态",
+          "markdown": "同一研究将 DU145 细胞以 10^6 cells/mL 悬于 PBS，经过宽 200 μm、高 50 μm、长 4 cm 的直通道，流量 0.3 mL/min；未经通道处理的细胞作对照。这个生物学试验与三角螺旋在 4 mL/min 下的颗粒聚焦不是同一条件。回收细胞重新培养后观察至 5 d，比较形态、F-actin 和核染色，另以活死染色及流式分析检验处理损伤。[细胞回收后的评价](ref:R01)\n\n原图代表性门控中，对照与处理组活细胞分别为 83.60% 和 85.21%；它们是示例散点图上的比例，不是跨重复实验的平均活率。基因检测在处理后重新培养 1 d 进行，比较 GAPDH、CDKN2A、TXNIP、MAPK14，图示 n=3、均值±SEM。作者未发现明显变化，但相近 Ct 和未见显著差异不能证明全部代谢、周期及应激通路完全等效。骨架染色时间也有图文差别：图注标 day 5，方法写 3 d，故不把这幅图指定为唯一无歧义的时间点。该证据支持所测细胞系、短时直通道处理及后续培养；它未证明稀有肿瘤细胞在全血中的回收率，也没有排除更高流量或不同细胞的损伤。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "磁性捕获先改变样本，再谈通道分选",
+          "markdown": "Lee 等的螺旋分选先在 10 mL 加标牛奶中用抗体功能化磁团簇孵育 1 h，再磁分离、洗涤并重悬于 5 mL 缓冲液。进入芯片的是游离约 150 nm 团簇与约 1020 nm 的细菌复合体，而非未经处理的牛奶。总流量同为 10 mL/min 时，无鞘流的内出口仍有两类粒子；改为样本与鞘流各 5 mL/min 后，内外出口分别出现复合体和游离团簇的 DLS 峰。鞘流改变入口位置分布，同时稀释样本；DLS 峰分离也不等于已测得绝对纯度。原文结果称 E. coli 抗体，方法却列 Salmonella 抗体，靶向试剂身份存在未解决矛盾。[磁捕获与鞘流对照](ref:R02)\n\nAbafogi 等处理全血时则将捕获和 DNA 纯化分成两个模块：W 形通道先截留抗体磁粒复合体，旋转阀关闭后方纯化腔，减少血液对硅珠的污染；随后移走磁体，以 100 μL PBS 将复合体转移到锥形腔。其 W 形与螺旋 CFD 在 2 mL/min、100 个模拟复合体下比较，但平均磁场分别为 528 mT 和 115 mT，通道长度也不同。因此模拟和捕获差异支持整套几何—磁场配置，不能单独归因于 W 形弯道。[分区模块与磁场模型](ref:R03)",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "提高处理速度会损失捕获，选择性也不是零非特异吸附",
+          "markdown": "全血实验使用 2.5 mL、0.1% K2 EDTA 抗凝血，加入 200 μL 抗体磁粒，报告最终浓度 10^11 particles/mL；与 10^5 CFU/mL 加标细菌在 37 °C、200 rpm 孵育 20 min。W 形通道与 1、2、3 圈螺旋在 2、5、10、20 mL/min 下比较。总体上流量升高，捕获率下降；W 形在低流量有优势，高流量下对多圈螺旋的优势缩小。作者因 2 与 5 mL/min 的 W 形结果未见显著差异，选择后者作为操作条件；这不是已经建立的统计等效区间。[流量与交叉反应](ref:R03)\n\n在单独的交叉反应实验中，E. coli O157:H7 捕获率约 86%，S. aureus 和 S. enteritidis 分别约 5% 和 9%，n=3。这些非靶菌在相同 10^5 CFU/mL 下分别测试，不是大量非靶菌与低丰度靶菌混合的复杂背景挑战。捕获率按输入菌量减去流出未捕获菌量计算，无法独自区分可回收的磁性捕获与不可逆壁面吸附，更不等于最后洗脱 DNA 的回收率。2.5 mL 在 5 mL/min 下名义通流约 0.5 min，但前面已有 20 min 孵育，之后还有约 30 min DNA 提取；不能将流通时间当成约 50 min 的完整前处理时间。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "将捕获与纯化分开后，较低吸光浓度反而伴随更纯样本",
+          "markdown": "细菌转移至锥形腔后，加 100 μL 裂解液，在 60 °C 孵育 10 min；再加入 100 μL 含 500 nm 磁性硅珠的结合液及 200 μL 乙醇。固定磁珠后排出碎片，使用 300 μL 洗液，最终以 50 μL 洗脱。相对于输入 2.5 mL 血液，体积比为 50 倍，但其中包含捕获、转移、裂解、结合和洗脱损失，不能将其直接报告为目标 DNA 实测富集 50 倍。装置仍需手工移磁体、操作阀、加液和开闭出口。[纯化流程与吸光检测](ref:R03)\n\n对 10^1、10^2、10^3 CFU/mL 加标血液，增加独立纯化腔后 A260/280 由约 1.3 改善至约 1.8，A260/230 由约 1.5 或更低升至约 1.8。然而吸光法计算的 gDNA 浓度下降：原图在较低两档显示显著差别，最高档标 ns。这个反向变化说明单看浓度可能奖励污染物和非目标核酸，而不是更多可扩增目标。A260 的测量并不具备 E. coli 序列特异性，原文也没有将宿主核酸与细菌核酸分开计量。纯度比值提示清洁程度，但最终能否用于下游检测还需结合靶基因扩增，而非仅凭比值接近目标范围就认定全部抑制物被移除。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "下游检测改善须与起始体积和真实对照一起解释",
+          "markdown": "研究使用 eae 靶标、150 bp 扩增产物。无独立纯化腔时，常规 PCR 可检至 10^3 CFU/mL，qPCR 至 10^2 CFU/mL；加入锥形腔后两者在 10^1 CFU/mL 均获得作者判定的阳性结果。qPCR 在 10^3 CFU/mL 的 Ct 从 30.8 变为 25.3，在 10^2 CFU/mL 从 32.9 变为 28.2，新增最低档 Ct 为 31.8。没有标准曲线效率与独立抑制校正，不能将 Ct 提前直接换算为同倍数 DNA 回收提高。[凝胶与 qPCR 对照](ref:R03)\n\n原文商业提取对照使用 200 μL 血液，而芯片处理 2.5 mL，起始体积相差 12.5 倍。文中称试剂盒检测限为 10^4 CFU/mL，又称改善两个数量级；与芯片 10^1 CFU/mL 按数值比较实际上相差三个数量级。本报告保留各检测限和起始体积，不把矛盾的文字概括作为同样本量的设备优势。最低检测档也只是在加标抗凝血中测试，不是患者诊断灵敏度或所有阴性样本均已排除污染。另一个牛奶研究在缓冲液报告 10 CFU/mL、牛奶 100 CFU/mL，进一步显示基质处理决定终点；它使用磁团簇吸收读出，与这里的 DNA 扩增不能按数值直接排名。[基质对照](ref:R02)",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Razavi Bazaz et al.：三角螺旋中的粒径与流量窗口",
+          "interpretation": "A、B 显示从外向内流动和截面设计，C 按 5、7、10、13、20 μm 分组，列出 0.5–4.0 mL/min 的出口荧光条带；D、E 为设计尺寸和实物截面。较大颗粒条带较窄，但最大流量下仍可分成两带。图像表达横向位置分布，未直接显示混合样本各出口的目标纯度与回收率。[惯性聚焦原图](ref:R01)"
+        },
+        "F02": {
+          "caption": "Razavi Bazaz et al.：代表性活死门控与后续基因读出",
+          "interpretation": "A 对比 day 1、3、5 的控制和处理组，B 为骨架及细胞核染色，C 为代表性活死门控，D 比较四个基因 Ct。C 中 83.60% 与 85.21% 不是独立重复的组均值；D 的误差为 SEM。处理组与对照外观相近、Ct 接近，支持所测终点未见大幅改变，不能从这些图推出全部细胞功能无影响。[细胞评价](ref:R01)"
+        },
+        "F03": {
+          "caption": "Abafogi et al.：轨迹预测同时受到弯道与磁场配置影响",
+          "interpretation": "a、b 在 0、2、4、6 s 显示 W 形和螺旋中的模拟粒子，颜色为速度，不是捕获概率；c 将实验与模拟捕获率并列。两组平均磁场不同，且螺旋按圈数改变长度，不能用柱高孤立证明形状优越。c 中 W 形接近完全捕获，但后续血液流量图给出更低结果，报告未将两个实验合并为一个捕获率。[模型与实测](ref:R03)"
+        },
+        "F04": {
+          "caption": "Abafogi et al.：捕获率随流量下降，非靶菌仍有残余捕获",
+          "interpretation": "a 的黑柱为 W 形、灰阶为不同圈数螺旋，横轴 2–20 mL/min，纵轴为捕获百分比；显著性括号只适用于所连组别。b 比较三种菌，E. coli 明显较高，但另外两柱不是零。该图说明指定抗体和条件下的相对选择性，不能直接给出混合菌群中靶菌纯度。[流量与交叉反应实验](ref:R03)"
+        },
+        "F05": {
+          "caption": "Abafogi et al.：纯度比值改善，而总吸光浓度降低",
+          "interpretation": "a、b 分别为 A260/280 与 A260/230；c 为吸光推算 gDNA 的 ng/μL。灰柱无独立腔、白柱有独立腔，各组为 10^1–10^3 CFU/mL。白柱在纯度图较高、浓度图较低，且 c 最高档标 ns；这种组合不应被改写成所有浓度和纯度均显著增加。[纯化对照](ref:R03)"
+        },
+        "F06": {
+          "caption": "Abafogi et al.：独立纯化腔改变最低扩增档与 Ct",
+          "interpretation": "a、c 为无腔，b、d 为有腔；凝胶含 M 标记及 N 阴性对照，目标为 eae 150 bp。qPCR 横轴为循环、纵轴 RFU；无腔 10^1 CFU/mL 红线虽在后期抬升，图例仍判 False，不能仅看终点荧光认定阳性。有腔最低档给出 Ct 31.8，但图未提供低浓度重复命中率或临床样本判别曲线。[下游扩增](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do chips perform sample pretreatment and separation?",
+      "direction": "Microfluidic chips",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Inertial focusing changes outlet position, but a narrow band is not separation purity",
+          "markdown": "Razavi Bazaz et al. printed BV-007 acrylate channels with an open face and sealed them to 2 mm PMMA using double-sided pressure-sensitive adhesive. Printer XY resolution was 30 μm, with adjustable layers of 5–200 μm; parts underwent isopropanol cleaning and UV post-curing. A right-triangular spiral cross-section, 600 μm wide and 210 μm high at the inner wall, changed the balance between inertial lift and Dean secondary flow relative to rectangular sections. Fluorescent particles were suspended at 0.01% volume fraction in MACS buffer to reduce nonspecific adhesion, rather than introduced in untreated blood. [Printed geometry and particle focusing](ref:R01)\n\nThe original figure compares 5, 7, 10, 13 and 20 μm particles at 0.5–4.0 mL/min. Smaller particles remain more dispersed and larger particles focus more readily, but 20 μm particles develop two bands near 4 mL/min. Increasing flow therefore does not always yield a single outlet position. The main endpoint is transverse fluorescence distribution, without jointly quantifying recovery, purity and throughput after sorting mixed particle classes. A narrow fluorescent band supports positioning control, not automatically high-purity target-cell separation. Bond testing used a separate 50×200 μm channel, 4 cm long, with interfacial fingering beginning above 82.6 psi. Reported tolerance up to 150 psi does not mean that every geometry or cell-processing condition was validated at that pressure.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Pretreatment must preserve cells suitable for subsequent analysis",
+          "markdown": "The same study suspended DU145 cells in PBS at 10^6 cells/mL and passed them through a straight channel 200 μm wide, 50 μm high and 4 cm long at 0.3 mL/min; unprocessed cells were controls. This biological test differs from triangular-spiral particle focusing at 4 mL/min. Recovered cells were recultured and followed for 5 d, comparing morphology, F-actin and nuclear staining; live/dead staining and flow analysis separately assessed processing injury. [Evaluation after cell recovery](ref:R01)\n\nRepresentative gates show 83.60% live cells in controls and 85.21% after processing. These are percentages on example scatterplots, not mean viabilities across replicate experiments. Gene measurements followed 1 d of reculture and compared GAPDH, CDKN2A, TXNIP and MAPK14, with n=3 and mean±SEM. The authors found no evident changes, but similar Ct values and nonsignificance do not establish complete equivalence of all metabolic, cell-cycle and stress pathways. Cytoskeletal-staining timing also differs: the caption specifies day 5, whereas the methods state 3 d, so the image cannot be assigned an unambiguous time point. Evidence supports the tested cell line, brief straight-channel processing and subsequent culture. It does not establish rare tumour-cell recovery from whole blood or exclude injury at higher flow or in other cells.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Magnetic capture changes the sample before channel sorting begins",
+          "markdown": "Lee et al. first incubated antibody-functionalised magnetic clusters with 10 mL spiked milk for 1 h, then magnetically separated, washed and resuspended them in 5 mL buffer. The chip received approximately 150 nm free clusters and 1020 nm bacteria–cluster complexes, not untreated milk. At the same total flow of 10 mL/min, the inner outlet retained both populations without sheath flow. With sample and sheath each at 5 mL/min, inner and outer outlets instead showed DLS peaks for complexes and free clusters respectively. Sheath flow changes the inlet distribution while diluting the sample; separated DLS peaks do not establish absolute purity. Results identify E. coli antibody, but the methods list Salmonella antibody, leaving targeting-reagent identity unresolved. [Magnetic capture and sheath-flow comparison](ref:R02)\n\nFor whole blood, Abafogi et al. separated capture and DNA purification into modules. A W-shaped channel first retained antibody–magnetic-particle complexes while a rotary valve isolated the downstream purification chamber, limiting blood fouling of silica beads. The magnet was then removed and 100 μL PBS transferred complexes into the conical chamber. W-shaped and helical CFD comparisons used 2 mL/min and 100 simulated complexes, but average fields were 528 mT and 115 mT respectively, and channel lengths differed. Simulation and capture differences therefore support the complete geometry–field configuration, not an isolated causal effect of the W-shaped bend. [Separated modules and magnetic-field model](ref:R03)",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Higher processing speed loses capture, and selectivity does not mean zero nonspecific binding",
+          "markdown": "Whole-blood experiments used 2.5 mL blood anticoagulated with 0.1% K2 EDTA and 200 μL antibody-coated magnetic particles, with a reported final concentration of 10^11 particles/mL. These were incubated with 10^5 CFU/mL spiked bacteria at 37 °C and 200 rpm for 20 min. W-shaped channels and helices of 1, 2 or 3 turns were compared at 2, 5, 10 and 20 mL/min. Capture generally declined as flow increased. W-shaped channels performed better at lower flow, but their advantage over multi-turn helices narrowed at high flow. Because W-shaped results at 2 and 5 mL/min were not significantly different, the authors selected the latter; this does not establish a statistically equivalent operating interval. [Flow and cross-reactivity](ref:R03)\n\nIn a separate cross-reactivity experiment, capture was approximately 86% for E. coli O157:H7, 5% for S. aureus and 9% for S. enteritidis, n=3. Organisms were tested separately at the same 10^5 CFU/mL, rather than challenging low-abundance targets within abundant nontarget bacteria. Capture was calculated as input bacteria minus uncaptured effluent bacteria. This alone cannot distinguish recoverable magnetic capture from irreversible wall adsorption and is not final DNA-elution recovery. Nominal passage of 2.5 mL at 5 mL/min takes about 0.5 min, but follows 20 min incubation and precedes approximately 30 min DNA extraction. Passage time cannot replace the approximately 50 min complete pretreatment time.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Separating capture from purification lowers absorbance concentration while improving purity",
+          "markdown": "After transfer to the conical chamber, bacteria received 100 μL lysis buffer and incubation at 60 °C for 10 min, followed by 100 μL binding solution containing 500 nm magnetic silica beads and 200 μL ethanol. Beads were magnetically retained while debris was removed, with 300 μL wash buffer and final elution in 50 μL. Relative to 2.5 mL input blood, the volume ratio is 50-fold, but capture, transfer, lysis, binding and elution losses prevent interpreting this as measured 50-fold target-DNA enrichment. Magnet movement, valve operation, reagent addition and opening/closing outlets remained manual. [Purification workflow and absorbance measurements](ref:R03)\n\nFor blood spiked at 10^1, 10^2 and 10^3 CFU/mL, adding the separate chamber improved A260/280 from approximately 1.3 to 1.8 and A260/230 from approximately 1.5 or lower to 1.8. However, absorbance-derived gDNA concentration decreased: differences at the lower two concentrations were significant, while the highest was labelled ns. This opposite trend shows that concentration alone can reward contaminants and nontarget nucleic acids rather than more amplifiable target. A260 is not E. coli sequence-specific, and host and bacterial nucleic acids were not separately quantified. Purity ratios indicate sample cleanliness, but downstream usability still requires target amplification; approaching a desired ratio does not establish removal of every inhibitor.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Downstream detection gains require the starting volume and actual comparator",
+          "markdown": "The study targeted eae with a 150 bp amplicon. Without a separate purification chamber, conventional PCR reached 10^3 CFU/mL and qPCR 10^2 CFU/mL. With the chamber, both produced results classified positive by the authors at 10^1 CFU/mL. At 10^3 CFU/mL, qPCR Ct changed from 30.8 to 25.3; at 10^2 CFU/mL, from 32.9 to 28.2; the added lowest concentration gave Ct 31.8. Without standard-curve efficiency and independent inhibition correction, earlier Ct cannot be converted directly into a corresponding fold increase in recovered DNA. [Gel and qPCR comparison](ref:R03)\n\nCommercial extraction comparators used 200 μL blood versus 2.5 mL for the chip, a 12.5-fold input-volume difference. The text reports a kit detection limit of 10^4 CFU/mL but describes improvement by two orders of magnitude. Compared numerically with the chip's 10^1 CFU/mL, the difference is actually three orders. This report retains the individual limits and starting volumes instead of treating the inconsistent summary as an equal-input equipment advantage. The lowest tested concentration also concerns spiked anticoagulated blood, not patient diagnostic sensitivity or exhaustive exclusion of contamination in negative samples. The milk study reported 10 CFU/mL in buffer and 100 CFU/mL in milk, further showing the influence of matrix processing. Its magnetic-cluster absorbance readout differs from DNA amplification here and cannot be ranked directly by these numbers. [Matrix comparison](ref:R02)",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Razavi Bazaz et al.: particle-size and flow windows in a triangular spiral",
+          "interpretation": "A and B show inward flow and cross-sectional design. C groups 5, 7, 10, 13 and 20 μm particles, displaying outlet fluorescence bands at 0.5–4.0 mL/min; D and E show designed dimensions and a physical section. Larger particles form narrower bands but can still divide into two bands at maximum flow. Images show lateral distributions, not directly target purity and recovery at each outlet of a mixed sample. [Original inertial-focusing figure](ref:R01)"
+        },
+        "F02": {
+          "caption": "Razavi Bazaz et al.: representative live/dead gates and subsequent gene readouts",
+          "interpretation": "A compares controls and processed cells on days 1, 3 and 5; B shows cytoskeleton and nuclei; C gives representative live/dead gates; D compares four gene Ct values. The 83.60% and 85.21% in C are not replicate-group means; D uses SEM error bars. Similar appearances and Ct values support no large change in the tested endpoints, not absence of effects on every cellular function. [Cell evaluation](ref:R01)"
+        },
+        "F03": {
+          "caption": "Abafogi et al.: trajectory predictions depend on both bends and magnetic-field configuration",
+          "interpretation": "Panels a and b show simulated particles in W-shaped and helical channels at 0, 2, 4 and 6 s. Colour denotes velocity, not capture probability; c compares experimental and simulated capture. Average magnetic fields differ, and helical length changes with turn count, so bar height cannot isolate a shape advantage. W-shaped capture approaches completion in c, whereas the later blood-flow figure gives lower values; this report does not combine them into a single capture rate. [Model and experiment](ref:R03)"
+        },
+        "F04": {
+          "caption": "Abafogi et al.: capture decreases with flow and nontarget bacteria remain detectable",
+          "interpretation": "In a, black denotes W-shaped channels and grey shades different helical turn counts. Horizontal values span 2–20 mL/min and the vertical axis is capture percentage; significance brackets apply only to linked comparisons. Panel b compares three organisms. E. coli is substantially higher, but the other bars are nonzero. This supports relative selectivity for the specified antibody and conditions, not target purity in a mixed microbial population. [Flow and cross-reactivity experiment](ref:R03)"
+        },
+        "F05": {
+          "caption": "Abafogi et al.: improved purity ratios accompany lower total absorbance concentration",
+          "interpretation": "Panels a and b show A260/280 and A260/230; c gives absorbance-derived gDNA in ng/μL. Grey bars omit and white bars include a separate chamber, at 10^1–10^3 CFU/mL. White bars are higher for purity but lower for concentration, with ns at the highest category in c. This combination cannot be rewritten as significant increases in all concentrations and purity values. [Purification comparison](ref:R03)"
+        },
+        "F06": {
+          "caption": "Abafogi et al.: a separate chamber changes the lowest amplification category and Ct",
+          "interpretation": "Panels a and c omit the chamber; b and d include it. Gels show marker M, negative control N and the eae 150 bp target. qPCR plots cycles horizontally and RFU vertically. The red 10^1 CFU/mL curve without a chamber rises late but remains labelled False, so endpoint fluorescence alone cannot establish positivity. The lowest category with a chamber has Ct 31.8, but the figure supplies neither replicate detection frequency at low concentration nor a clinical classification curve. [Downstream amplification](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie übernehmen Chips Probenvorbehandlung und Trennung?",
+      "direction": "Mikrofluidische Chips",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Trägheitsfokussierung verändert die Auslassposition, doch ein schmales Band ist keine Trennreinheit",
+          "markdown": "Razavi Bazaz et al. druckten BV-007-Acrylatkanäle mit offener Fläche und verschlossen sie mittels doppelseitigem Haftklebeband auf 2 mm PMMA. Die XY-Auflösung betrug 30 μm, die einstellbare Schichtdicke 5–200 μm; es folgten Isopropanolreinigung und UV-Nachhärtung. Ein rechtwinklig-dreieckiger Spiralquerschnitt mit 600 μm Breite und 210 μm Innenwandhöhe veränderte das Gleichgewicht zwischen inertialer Auftriebskraft und Dean-Sekundärströmung gegenüber rechteckigen Querschnitten. Fluoreszierende Partikel wurden mit 0.01% Volumenanteil in MACS-Puffer suspendiert, um unspezifische Haftung zu reduzieren; untersucht wurde nicht unbehandeltes Blut. [Druckgeometrie und Partikelfokussierung](ref:R01)\n\nDie Originalabbildung vergleicht 5, 7, 10, 13 und 20 μm Partikel bei 0.5–4.0 mL/min. Kleinere Partikel bleiben breiter verteilt, größere fokussieren leichter; 20 μm Partikel bilden bei etwa 4 mL/min jedoch wieder zwei Bänder. Mehr Durchfluss führt somit nicht immer zu einer einzigen Auslassposition. Hauptendpunkt ist die laterale Fluoreszenzverteilung, ohne gemeinsame Quantifizierung von Wiederfindung, Reinheit und Durchsatz nach Trennung gemischter Partikelklassen. Ein schmales Fluoreszenzband stützt Positionskontrolle, nicht automatisch hochreine Zielzelltrennung. Die Haftungsprüfung verwendete einen separaten 50×200 μm Kanal von 4 cm Länge; oberhalb 82.6 psi begann fingerförmige Ausbreitung an der Grenzfläche. Berichtete Beständigkeit bis 150 psi bedeutet nicht, dass jede Geometrie und Zellbehandlung bei diesem Druck validiert wurde.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Vorbehandlung muss Zellen für spätere Analysen erhalten",
+          "markdown": "Dieselbe Studie suspendierte DU145-Zellen mit 10^6 cells/mL in PBS und leitete sie bei 0.3 mL/min durch einen geraden Kanal von 200 μm Breite, 50 μm Höhe und 4 cm Länge. Unbehandelte Zellen dienten als Kontrolle. Dieser biologische Versuch unterscheidet sich von der Partikelfokussierung in der Dreiecksspirale bei 4 mL/min. Wiedergewonnene Zellen wurden erneut kultiviert und bis 5 d beobachtet, mit Vergleichen von Morphologie, F-actin und Kernfärbung; Lebend-Tot-Färbung und Durchflussanalyse prüften zusätzlich Behandlungsschäden. [Bewertung nach Zellrückgewinnung](ref:R01)\n\nRepräsentative Gates zeigen 83.60% lebende Kontrollzellen und 85.21% nach Behandlung. Dies sind Anteile in beispielhaften Punktdiagrammen, keine mittleren Viabilitäten über Wiederholungsversuche. Genmessungen erfolgten nach 1 d erneuter Kultur für GAPDH, CDKN2A, TXNIP und MAPK14, mit n=3 und Mittelwert±SEM. Die Autoren fanden keine deutlichen Veränderungen; ähnliche Ct-Werte und fehlende Signifikanz belegen jedoch keine vollständige Gleichwertigkeit sämtlicher Stoffwechsel-, Zellzyklus- und Stresswege. Auch der Zeitpunkt der Zytoskelettfärbung ist widersprüchlich: Die Legende nennt day 5, die Methoden 3 d. Das Bild erhält deshalb keinen eindeutig festgelegten Zeitpunkt. Belegt sind die geprüfte Zelllinie, kurze Passage im geraden Kanal und anschließende Kultur. Seltene Tumorzellrückgewinnung aus Vollblut oder Schadensfreiheit bei höheren Strömen und anderen Zellen wurden nicht nachgewiesen.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Magnetisches Abfangen verändert die Probe vor der Kanaltrennung",
+          "markdown": "Lee et al. inkubierten antikörperfunktionalisierte Magnetcluster zunächst für 1 h mit 10 mL aufgestockter Milch, trennten sie magnetisch, wuschen sie und resuspendierten sie in 5 mL Puffer. In den Chip gelangten etwa 150 nm freie Cluster und 1020 nm Bakterien-Cluster-Komplexe, keine unbehandelte Milch. Bei gleichem Gesamtstrom von 10 mL/min enthielt der innere Auslass ohne Hüllstrom weiterhin beide Populationen. Mit je 5 mL/min Probe und Hüllstrom zeigten innerer und äußerer Auslass dagegen getrennte DLS-Peaks für Komplexe und freie Cluster. Hüllstrom verändert die Einlassverteilung und verdünnt zugleich die Probe; getrennte DLS-Peaks belegen keine absolute Reinheit. Die Ergebnisse nennen E.-coli-Antikörper, die Methoden dagegen Salmonella-Antikörper; die Identität des Zielreagenzes bleibt widersprüchlich. [Magnetisches Abfangen und Hüllstromvergleich](ref:R02)\n\nFür Vollblut trennten Abafogi et al. Abfangen und DNA-Reinigung in Module. Ein W-Kanal hielt zunächst Antikörper-Magnetpartikel-Komplexe zurück, während ein Drehventil die nachfolgende Reinigungskammer isolierte, um Blutablagerungen auf Silicabeads zu begrenzen. Danach wurde der Magnet entfernt und die Komplexe mit 100 μL PBS in die konische Kammer übertragen. CFD-Vergleiche von W-Kanal und Helix verwendeten 2 mL/min und 100 simulierte Komplexe, jedoch mittlere Magnetfelder von 528 mT beziehungsweise 115 mT sowie unterschiedliche Kanallängen. Simulations- und Abfangunterschiede stützen daher die gesamte Geometrie-Feld-Anordnung, keinen isolierten kausalen Effekt der W-Krümmung. [Getrennte Module und Magnetfeldmodell](ref:R03)",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Schnellere Verarbeitung verliert Abfangrate; Selektivität bedeutet nicht null unspezifische Bindung",
+          "markdown": "Vollblutversuche verwendeten 2.5 mL mit 0.1% K2 EDTA antikoaguliertes Blut und 200 μL antikörperbeschichtete Magnetpartikel, mit berichteter Endkonzentration von 10^11 particles/mL. Diese wurden mit aufgestockten Bakterien bei 10^5 CFU/mL für 20 min bei 37 °C und 200 rpm inkubiert. W-Kanäle und Helices mit 1, 2 oder 3 Windungen wurden bei 2, 5, 10 und 20 mL/min verglichen. Höhere Ströme verringerten im Allgemeinen die Abfangrate. W-Kanäle schnitten bei niedrigem Strom besser ab; bei hohem Strom schrumpfte der Vorteil gegenüber mehrwindigen Helices. Weil sich W-Ergebnisse bei 2 und 5 mL/min nicht signifikant unterschieden, wählten die Autoren Letzteres. Ein statistisch gleichwertiges Betriebsintervall ist damit nicht belegt. [Durchfluss und Kreuzreaktivität](ref:R03)\n\nIn einem separaten Kreuzreaktivitätstest betrug die Abfangrate etwa 86% für E. coli O157:H7, 5% für S. aureus und 9% für S. enteritidis, n=3. Organismen wurden jeweils einzeln bei denselben 10^5 CFU/mL untersucht, nicht als seltenes Ziel in einem Überschuss anderer Bakterien. Die Abfangrate wurde aus Eingangsmenge minus nicht abgefangenen Bakterien im Ausfluss berechnet. Dies unterscheidet allein keine rückgewinnbare magnetische Bindung von irreversibler Wandadsorption und entspricht nicht der abschließenden DNA-Elutionsausbeute. Nominell passieren 2.5 mL bei 5 mL/min in etwa 0.5 min; zuvor liegen jedoch 20 min Inkubation und danach ungefähr 30 min DNA-Extraktion. Die Passagezeit ersetzt nicht die etwa 50 min vollständiger Vorbehandlung.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Getrenntes Abfangen und Reinigen senkt die absorbanzbasierte Konzentration bei höherer Reinheit",
+          "markdown": "Nach Übertragung in die konische Kammer erhielten Bakterien 100 μL Lysepuffer und wurden bei 60 °C für 10 min inkubiert. Es folgten 100 μL Bindelösung mit 500 nm magnetischen Silicabeads und 200 μL Ethanol. Während die Beads magnetisch zurückgehalten wurden, entfernte man Zellreste, wusch mit 300 μL Puffer und eluierte abschließend in 50 μL. Gegenüber 2.5 mL Eingangsblut beträgt das Volumenverhältnis das 50-Fache. Verluste beim Abfangen, Übertragen, Lysieren, Binden und Eluieren verhindern jedoch die Interpretation als gemessene 50-fache Ziel-DNA-Anreicherung. Magnetbewegung, Ventilbedienung, Reagenzzugabe und Öffnen beziehungsweise Schließen der Auslässe blieben manuell. [Reinigungsablauf und Absorbanzmessungen](ref:R03)\n\nBei Blut mit 10^1, 10^2 und 10^3 CFU/mL verbesserte die separate Kammer A260/280 von etwa 1.3 auf 1.8 sowie A260/230 von etwa 1.5 oder niedriger auf 1.8. Gleichzeitig sank die absorbanzbasierte gDNA-Konzentration: Bei den niedrigeren beiden Stufen waren Unterschiede signifikant, bei der höchsten als ns markiert. Diese Gegenläufigkeit zeigt, dass Konzentration allein Verunreinigungen und nicht zielbezogene Nukleinsäuren belohnen kann statt mehr amplifizierbares Ziel. A260 ist nicht E.-coli-sequenzspezifisch; Wirts- und Bakteriennukleinsäuren wurden nicht getrennt quantifiziert. Reinheitsverhältnisse charakterisieren die Probenreinigung, doch Nutzbarkeit für Folgeanalysen erfordert Zielamplifikation. Ein Verhältnis nahe dem gewünschten Bereich belegt nicht die Entfernung sämtlicher Inhibitoren.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Bessere Folgedetektion benötigt Einordnung von Ausgangsvolumen und tatsächlichem Vergleich",
+          "markdown": "Die Studie untersuchte eae mit einem 150 bp Amplicon. Ohne separate Reinigungskammer erreichte konventionelle PCR 10^3 CFU/mL und qPCR 10^2 CFU/mL. Mit Kammer wurden bei beiden Verfahren Ergebnisse bei 10^1 CFU/mL von den Autoren als positiv gewertet. Bei 10^3 CFU/mL änderte sich qPCR-Ct von 30.8 auf 25.3, bei 10^2 CFU/mL von 32.9 auf 28.2; die zusätzliche niedrigste Stufe ergab Ct 31.8. Ohne Standardkurveneffizienz und unabhängige Inhibitionskorrektur darf früherer Ct nicht unmittelbar in einen entsprechenden Faktor höherer DNA-Ausbeute umgerechnet werden. [Gel- und qPCR-Vergleich](ref:R03)\n\nKommerzielle Extraktionsvergleiche verwendeten 200 μL Blut gegenüber 2.5 mL beim Chip, einen Ausgangsvolumenunterschied um das 12.5-Fache. Der Text nennt für Kits eine Nachweisgrenze von 10^4 CFU/mL, beschreibt aber eine Verbesserung um zwei Größenordnungen. Numerisch gegenüber 10^1 CFU/mL beim Chip beträgt der Abstand tatsächlich drei Größenordnungen. Der Bericht erhält die einzelnen Nachweisgrenzen und Ausgangsvolumina, statt die widersprüchliche Zusammenfassung als Geräteüberlegenheit bei gleichem Input auszulegen. Auch die niedrigste geprüfte Stufe betrifft aufgestocktes antikoaguliertes Blut, keine diagnostische Sensitivität bei Patienten oder umfassend ausgeschlossene Kontamination sämtlicher Negativproben. Die Milchstudie berichtete 10 CFU/mL in Puffer und 100 CFU/mL in Milch und zeigt damit ebenfalls den Einfluss der Matrixaufbereitung. Ihre Absorbanzmessung an Magnetclustern unterscheidet sich von DNA-Amplifikation; die Zahlen erlauben keine direkte Rangfolge. [Matrixvergleich](ref:R02)",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Razavi Bazaz et al.: Partikelgrößen- und Durchflussfenster in der Dreiecksspirale",
+          "interpretation": "A und B zeigen Strömung nach innen und Querschnittsentwurf. C gruppiert 5, 7, 10, 13 und 20 μm Partikel mit Auslass-Fluoreszenzbändern bei 0.5–4.0 mL/min; D und E zeigen Sollabmessungen und einen realen Schnitt. Größere Partikel bilden schmalere Bänder, können beim höchsten Durchfluss aber erneut zwei Bänder bilden. Die Bilder zeigen laterale Verteilungen, nicht unmittelbar Zielreinheit und Wiederfindung an jedem Auslass einer Mischprobe. [Originalabbildung der Trägheitsfokussierung](ref:R01)"
+        },
+        "F02": {
+          "caption": "Razavi Bazaz et al.: beispielhafte Lebend-Tot-Gates und nachfolgende Genmessungen",
+          "interpretation": "A vergleicht Kontroll- und behandelte Zellen an Tagen 1, 3 und 5; B zeigt Zytoskelett und Kerne, C repräsentative Lebend-Tot-Gates, D vier Gen-Ct-Werte. Die 83.60% und 85.21% in C sind keine Gruppenmittelwerte aus Wiederholungen; D verwendet SEM-Fehlerbalken. Ähnliches Aussehen und ähnliche Ct-Werte stützen fehlende große Änderungen der untersuchten Endpunkte, keine Wirkungslosigkeit auf sämtliche Zellfunktionen. [Zellbewertung](ref:R01)"
+        },
+        "F03": {
+          "caption": "Abafogi et al.: Trajektorien hängen von Krümmung und Magnetfeldanordnung ab",
+          "interpretation": "a und b zeigen simulierte Partikel in W-Kanal und Helix bei 0, 2, 4 und 6 s. Farbe bezeichnet Geschwindigkeit, keine Abfangwahrscheinlichkeit; c vergleicht experimentelle und simulierte Abfangraten. Mittlere Magnetfelder unterscheiden sich, und Helixlänge ändert sich mit der Windungszahl. Balkenhöhen isolieren deshalb keinen Formvorteil. In c nähert sich die W-Abfangrate vollständigem Abfangen, während die spätere Blut-Durchfluss-Abbildung niedrigere Werte liefert; der Bericht fasst dies nicht zu einer einzigen Rate zusammen. [Modell und Experiment](ref:R03)"
+        },
+        "F04": {
+          "caption": "Abafogi et al.: Abfangrate sinkt mit Durchfluss, Nichtzielbakterien bleiben erfassbar",
+          "interpretation": "In a bezeichnet Schwarz W-Kanäle, Graustufen verschiedene Helixwindungszahlen. Horizontal stehen 2–20 mL/min, vertikal Abfangprozente; Signifikanzklammern gelten nur für die verbundenen Vergleiche. b vergleicht drei Organismen. E. coli liegt deutlich höher, die anderen Balken sind jedoch nicht null. Belegt ist relative Selektivität unter den angegebenen Antikörper- und Versuchsbedingungen, keine Zielreinheit in einer mikrobiellen Mischung. [Durchfluss- und Kreuzreaktivitätsversuch](ref:R03)"
+        },
+        "F05": {
+          "caption": "Abafogi et al.: bessere Reinheitsverhältnisse bei geringerer absorbanzbasierter Gesamtkonzentration",
+          "interpretation": "a und b zeigen A260/280 sowie A260/230, c absorbanzbasierte gDNA in ng/μL. Graue Balken stehen für fehlende, weiße für vorhandene separate Kammer bei 10^1–10^3 CFU/mL. Weiße Balken liegen bei Reinheit höher, bei Konzentration niedriger; die höchste Stufe in c trägt ns. Diese Kombination darf nicht als signifikante Steigerung sämtlicher Konzentrationen und Reinheiten umformuliert werden. [Reinigungsvergleich](ref:R03)"
+        },
+        "F06": {
+          "caption": "Abafogi et al.: separate Kammer verändert die niedrigste Amplifikationsstufe und Ct",
+          "interpretation": "a und c zeigen die Ausführung ohne Kammer, b und d mit Kammer. Gele enthalten Marker M, Negativkontrolle N und das Ziel eae 150 bp. qPCR stellt Zyklen horizontal und RFU vertikal dar. Die rote 10^1 CFU/mL Kurve ohne Kammer steigt spät an, bleibt jedoch als False bezeichnet; Endpunktfluoreszenz allein belegt keine Positivität. Die niedrigste Stufe mit Kammer besitzt Ct 31.8, doch die Grafik enthält weder wiederholte Trefferhäufigkeiten bei niedriger Konzentration noch eine klinische Klassifikationskurve. [Nachfolgende Amplifikation](ref:R03)"
+        }
+      }
+    }
+  }
+}

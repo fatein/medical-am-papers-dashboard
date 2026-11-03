@@ -1,0 +1,332 @@
+{
+  "schema_version": 2,
+  "question_id": "P7-111",
+  "p": "P7",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_92c8e40dc75e29fb43bd"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Open Labware: 3-D Printing Your Own Lab Equipment",
+      "publisher": "PLOS Biology",
+      "year": 2015,
+      "url": "https://doi.org/10.1371/journal.pbio.1002086",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Open-Source 3D-Printable Optics Equipment",
+      "publisher": "PLOS ONE",
+      "year": 2013,
+      "url": "https://doi.org/10.1371/journal.pone.0059840",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Open-Source Syringe Pump Library",
+      "publisher": "PLOS ONE",
+      "year": 2014,
+      "url": "https://doi.org/10.1371/journal.pone.0107216",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R02",
+      "original_label": "Fig. 1",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-111/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3609802/#pone-0059840-g001",
+      "license": "CC BY (article copyright statement)"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R02",
+      "original_label": "Fig. 5",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-111/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3609802/#pone-0059840-g005",
+      "license": "CC BY (article copyright statement)"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Fig. 10",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-111/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3609802/#pone-0059840-g010",
+      "license": "CC BY (article copyright statement)"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Fig. 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-111/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4167991/#pone-0107216-g003",
+      "license": "CC BY (article copyright statement)"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Fig. 1",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-111/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4167991/#pone-0107216-g001",
+      "license": "CC BY (article copyright statement)"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R01",
+      "original_label": "Fig. 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-111/F06.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4368627/#pbio.1002086.g003",
+      "license": "CC BY (article copyright statement)"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "开源打印设备如何降低实验室使用门槛？",
+      "direction": "低成本实验室设备",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "参数化文件降低的是改型和接口适配的门槛",
+          "markdown": "Zhang 等的光学设备库用 OpenSCAD 保存可编辑几何，而非只给固定尺寸的打印网格。斩波盘可改变槽数，透镜和滤片支架可改变孔径；使用者因此能够复用已有结构，再适配手中的元件。斩波盘示例有 10、15、60 个槽，对应论文给出的 20 Hz–1 kHz、30 Hz–1.5 kHz、120 Hz–6 kHz 范围。这些是结构和转速范围组合的设计说明，文中没有给出各频率的时间抖动、占空比误差或长期转速漂移曲线，不能将整个范围理解为经过精密计时认证的输出。[参数化光学库](ref:R02)\n\n打印负责接口，非打印件仍承担部分精度和刚度。光轨采用 OpenBeam 铝型材和 M3 紧固件，支柱用 8 mm 光杆；透镜、磁体和调节螺钉也保留。镜架利用局部柔性连接、磁体和相邻调节螺钉提供倾角调整，照片证明装配可行，但没有给出角度重复性。论文所用 RepRap 的 0.5 mm 喷嘴、0.2 mm 层厚及约 0.1 mm 定位能力是该实现条件，不能移作所有打印机的规格。磁性底座可以调整位置，作者也承认其稳定性低于完整光学平台；降低制造难度并未让不同支承系统的抗振能力自动相等。",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "材料账单与完整可用设备的成本不是同一个测量量",
+          "markdown": "该光学库的成本表把塑料、耗电和部分外购件逐项列出。透镜架用 ABS 5.35 g，材料 0.20 USD、电费 0.04 USD，表列合计 0.24 USD；滤轮用 295.1 g，材料 11.21 USD、电费 2.02 USD、其他件 7.20 USD，合计 20.43 USD。后者显然不再只是打印塑料价格，前者也不能代表包括透镜和完整光路的成套仪器。这些是发表时的历史核算，不能作为当前采购报价。[成本表与自动滤轮](ref:R02)\n\n表下注明电价 11.53 cents/kWh、能耗 0.006925 kWh/g，但按这两个量计算，5.35 g 对应约 0.00427 USD，而表中为 0.04 USD。表列电费更接近把 0.006925 直接当作 USD/g。这里保留原表金额，同时指出单位与金额不一致，不自行把未经核实的电费修订为作者的结果。打印机购置、设计学习、装配人工和失败打印也没有变成已测出的完整使用成本。滤轮具有 8 个位置、45° 间隔，Arduino Uno 驱动电机并由光学开关识别原点；减少手动换片是已实现的功能，而每次切换的角度误差和运行寿命尚无相应数据。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "可换尺寸的执行机构仍受推力、速度和结构损伤约束",
+          "markdown": "Wijnen 等把注射器泵作为可参数化的直线执行机构，公开 CAD、物料清单、装配说明及控制程序。这里考察其机械驱动和纯水称量结果。NEMA11、NEMA17 及双 NEMA17 配置的历史成本分别为 90、97、154 USD，包含控制器和网页界面；没有包含制造打印件的整台打印机。更换电机尺寸会改变安装件，换用更大注射器也会改变每单位推杆位移排出的体积，因此不能只凭步数相同就认为体积分辨率相同。[执行机构与性能测量](ref:R03)\n\n作者用刚性杆对固定物施力，测得 NEMA11 为 93 N、NEMA17 为 200 N；部分打印件在这一受力试验中发生损伤。这是接近停转或结构极限的推力测量，不是连续运行额定载荷，更不是同一速度下的液体压力验证。最高速度分别为 1.4 mL/s 和 2.1 mL/s，但前者使用 10 mL、后者使用 25 mL 注射器，容积和摩擦条件不同。数值较大不能独立证明电机效率更高。打印件可重新制造确实改变维修路径，然而零件能够更换与设备在损伤前具有确定寿命是两个不同结论。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "低价控制器的有效性由实测离散度而非微步名称决定",
+          "markdown": "泵采用 Raspberry Pi、Python 网页控制和 A4988 步进驱动器。控制脉冲和微步设置能细分命令，但没有直接测量推杆实际位置的编码器。作者以蒸馏水、读数分辨率 0.1 mg 的 Mettler AE100 天平和抑制蒸发的高湿封闭环境评价分液，滴落约 20 μL 的尺度也限制了很小体积的称量。报告的准确度针对 1 mL 增量：NEMA11 为 ±1%，NEMA17 为 ±5%，不能扩展为任意微量、任意液体的准确度。[称量实验与电控](ref:R03)\n\n重复性表比较整步、四分之一步、十六分之一步；NEMA11 的变异系数依次为 1.17%、0.56%、1.55%，NEMA17 为 3.66%、2.13%、2.26%。两种电机都不是微步越细结果越好；四分之一步在此组实验中最小。正文“约 3% 或更低”的概括也没有覆盖 NEMA17 整步的 3.66%。另表所列 ±0.6% 和 ±2.1% 接近选定条件下的四分之一步结果，不能当作全部模式的统一区间，更不能与准确度互换。论文没有清楚列出每个条件的重复次数，无法据这些摘要量自行构造显著性检验或新的置信区间。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "已有技术能力与设备接触机会决定文件是否真正可用",
+          "markdown": "Baden 等的 Open Labware 论文把硬件开放与使用者能力联系起来。其调查发生于 2014-08，覆盖撒哈拉以南非洲 12 个国家的 89 名研究者；83/89 从未使用过打印或微控制器相关技术。软件能力采用 1–10 自评：办公和网络操作的分布偏高，编程偏低，开放分析软件介于其间。硬件图中“听说过但无法接触”和“从未听说”又是不同障碍，不能把可下载文件等同于人人已有制造工具。[原始技能调查](ref:R01)\n\n另一次活动有 33 名学生，在实践后对所有展示模型的有用性平均评价均至少为 9/10。这支持参与者认可活动内容，但它测量的是主观有用性，不是装配准确率、独立维修能力或持续使用比例；也没有随机对照来估计培训因果效应。调查不是当前全球实验室的代表性普查，参与群体、年份和地区必须保留。原图将软件能力和硬件接触分开，恰好说明成本下降不能直接推导技能差距消失：有人能够操作电脑，仍可能没有打印机、材料和电控实践的接触机会。",
+          "figure_ids": [
+            "F06"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "共享的机械设计可复用，改型后的精度仍有具体边界",
+          "markdown": "Open Labware 的微操纵器从手动机构扩展为连续转动微型舵机驱动，并使用 Arduino 与操纵杆控制；同一运动结构又被改作显微镜载物台。开放几何使装配者能够替换接口、修复局部件或调整行程，不必重新开发整个机构。其图注给出依打印质量变化的约 ±5–20 μm 定位精度和静止漂移低于 1 μm/min，但没有跨打印机、材料批次和操作者的完整误差分布。这些范围描述该原型家族，不支持把任一修改后的模型都标成相同性能。[机械复用示例](ref:R01)\n\n光学库也区分复用与从零设计：现有参数可改，不代表首次开发一定快于购入成品。泵的电子扩展允许多电机共享命令，双机接法可以同步或反向运动，却不自动成为各通道独立的闭环控制。接口文件、源程序和版本说明与可打印外形同样影响可维护性；只获得网格文件，无法从中直接恢复全部控制假设。现有研究最具体的接入改善是能够看见并修改这些关系，而不同地点复制造成的精度、损坏率和学习时间差异，在所选实验中尚没有统一的跨实验室测量。[共享控制的范围](ref:R03)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Zhang et al.：槽数通过参数修改形成不同斩波盘",
+          "interpretation": "a、b、c 从稀疏槽到密集槽展示同一类几何的变化。槽数改变每转光束被截断的次数，因而改变相同转速下的调制频率；图是模型渲染，没有转速或光强时间轴。它证明设计可派生，不提供频率稳定度或打印后平衡性的测量。[斩波盘原图](ref:R02)"
+        },
+        "F02": {
+          "caption": "Zhang et al.：打印接口连接现成光学件与调节件",
+          "interpretation": "a 的方形架夹持光学件，b 的圆形支架使用顶部螺钉，c 展示较厚的可调镜架及金属紧固件。可见层纹属于打印支承，而玻璃、光杆和螺钉未被打印替代。不同形状支持接口适配；照片中没有角度刻度或回程误差数据，不能据外观认定精密调节性能相等。[支架原图](ref:R02)"
+        },
+        "F03": {
+          "caption": "Zhang et al.：滤轮的外壳与内部转盘具有不同功能",
+          "interpretation": "主图展示带光学开口的外壳，插图暴露周向排列的滤片窗口及轮毂。外壳固定光束通道，转盘负责切换元件；其大面积打印件解释为何材料用量远高于单个镜架。图像没有切换时间或角度重复性曲线，所支持的是集成结构与可装配性。[滤轮原图](ref:R02)"
+        },
+        "F04": {
+          "caption": "Wijnen et al.：拆解图显示打印件与金属传动件的分工",
+          "interpretation": "左侧电机通过联轴器连接中间螺杆，上下光杆提供导向；白色打印件分别固定电机、端部和被驱动组件。改变安装形状可以容纳不同尺寸，但承载路径仍经过打印支承和金属连接。图中没有载荷标尺，极限推力必须依据正文受力试验，而不能从零件厚薄估算。[执行机构原图](ref:R03)"
+        },
+        "F05": {
+          "caption": "Wijnen et al.：单板机发出命令，驱动板承担电机驱动",
+          "interpretation": "图把 Raspberry Pi、步进驱动板和电机分开，并标出独立的 12 V 电源。信号路径说明网页控制与功率驱动不是同一功能；没有直接测量推杆位移的反馈传感器。它解释低价模块如何组成控制链，不能用连线图替代水称量的准确度和重复性结果。[电控原图](ref:R03)"
+        },
+        "F06": {
+          "caption": "Baden et al.：软件熟练度与硬件接触分布不同",
+          "interpretation": "A 的横轴为 1–10 自评熟练度，办公使用偏右，编程偏左，开放分析工具分散；B 列出从未听说、听说但无接触、尝试过和经常使用。两组硬件多数落在前两类，说明意识和实际接触也有差别。纵向条高未标为可直接读出的精确百分比，不能从像素高度补造各组占比或显著性。[调查原图](ref:R01)"
+        }
+      }
+    },
+    "en": {
+      "title": "How does open-source printed equipment lower barriers to laboratory use?",
+      "direction": "Low-cost laboratory equipment",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Parametric files lower barriers to modification and interface matching",
+          "markdown": "Zhang et al.'s optics library stores editable geometry in OpenSCAD rather than only fixed-size printing meshes. Chopper slot counts and lens or filter aperture sizes can be changed, allowing existing mechanisms to accommodate available components. Chopper examples have 10, 15 and 60 slots, associated with published ranges of 20 Hz–1 kHz, 30 Hz–1.5 kHz and 120 Hz–6 kHz. These describe combinations of geometry and rotational range. The paper provides no timing-jitter, duty-cycle-error or long-term speed-drift curves across those frequencies; the range is not precision-certified timing performance. [Parametric optics library](ref:R02)\n\nPrinting supplies interfaces while nonprinted components retain some precision and stiffness requirements. Rails use OpenBeam aluminium and M3 fasteners, with 8 mm smooth rods for posts; lenses, magnets and adjustment screws remain separate. Mirror mounts combine local compliant connections, magnets and neighbouring screws for tilt adjustment. Photographs demonstrate assembly, not angular repeatability. The implemented RepRap's 0.5 mm nozzle, 0.2 mm layers and approximately 0.1 mm positioning capability describe that implementation, not every printer. Magnetic bases permit repositioning, but the authors acknowledge lower stability than a complete optical table. Easier fabrication does not equalise vibration resistance across support systems.",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "A material bill and a complete usable instrument measure different costs",
+          "markdown": "The optics-library table itemises plastic, electricity and some purchased parts. A lens holder uses 5.35 g ABS, costing 0.20 USD in material and 0.04 USD in electricity, for a listed total of 0.24 USD. The filter wheel uses 295.1 g, with 11.21 USD material, 2.02 USD electricity and 7.20 USD other parts, totalling 20.43 USD. The latter is clearly more than plastic cost, while the former does not cover a lens or complete optical system. These are historical calculations at publication, not current purchasing quotations. [Cost table and automated filter wheel](ref:R02)\n\nThe footnote specifies 11.53 cents/kWh and consumption of 0.006925 kWh/g. Applying both to 5.35 g gives approximately 0.00427 USD, against the table's 0.04 USD. Tabulated electricity costs more closely resemble treating 0.006925 directly as USD/g. We retain the published amounts while identifying this unit–amount inconsistency, without presenting an unverified correction as the authors' result. Printer acquisition, design learning, assembly labour and failed prints also remain outside a measured complete-use cost. The wheel has 8 positions separated by 45°; Arduino Uno drives its motor and an optical switch identifies home. Reduced manual filter exchange is demonstrated functionality, but switching-angle errors and service life are not measured.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Scalable actuators remain limited by force, speed and structural damage",
+          "markdown": "Wijnen et al. present a syringe pump as a parametric linear actuator, releasing CAD, bills of materials, assembly instructions and control software. Here the evidence concerns mechanical actuation and water gravimetry. Historical costs for NEMA11, NEMA17 and dual NEMA17 versions are 90, 97 and 154 USD, including the controller and browser interface but excluding the printer manufacturing their parts. Changing motor size changes mounts; a larger syringe also changes displaced volume per unit plunger travel. Identical step counts therefore do not establish identical volumetric resolution. [Actuation and performance measurements](ref:R03)\n\nA rigid rod pressing against an immovable object produced 93 N with NEMA11 and 200 N with NEMA17; some printed parts were damaged during this force test. These measurements approach stalling or structural limits, rather than continuous rated loads or fluid pressure verified at the same speed. Maximum speeds were 1.4 mL/s and 2.1 mL/s, but used 10 mL and 25 mL syringes respectively, with different capacity and friction conditions. A larger value alone cannot establish higher motor efficiency. Reprinting damaged parts changes the repair route, but replaceability and a known lifetime before damage are different conclusions.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Measured dispersion, not microstep terminology, establishes controller performance",
+          "markdown": "The pump uses Raspberry Pi, a Python browser interface and an A4988 stepper driver. Pulses and microstepping subdivide commands, without an encoder directly measuring actual plunger position. Dispensing was assessed using distilled water, a Mettler AE100 balance with 0.1 mg readability and a humid enclosed environment suppressing evaporation. Droplets of approximately 20 μL also constrain gravimetry at very small volumes. Reported accuracy concerns 1 mL increments: ±1% for NEMA11 and ±5% for NEMA17. It does not extend to arbitrary small volumes or liquids. [Gravimetry and electronic control](ref:R03)\n\nThe repeatability table compares full, quarter and sixteenth steps. NEMA11 coefficients of variation are 1.17%, 0.56% and 1.55%; NEMA17 values are 3.66%, 2.13% and 2.26%. Finer microsteps do not monotonically improve either motor's result; quarter steps give the smallest dispersion here. The prose summary of approximately 3% or less also misses NEMA17's full-step 3.66%. Another table lists ±0.6% and ±2.1%, close to selected quarter-step results. These are neither uniform intervals for every mode nor interchangeable with accuracy. Replicate counts for each condition are not clearly reported, so these summaries cannot support newly constructed significance tests or confidence intervals.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Existing skills and access determine whether files become usable tools",
+          "markdown": "Baden et al.'s Open Labware article connects hardware openness with user capability. Its 2014-08 survey covered 89 researchers in 12 sub-Saharan African countries; 83/89 had never used printing or microcontroller-related technologies. Software competence was self-rated from 1–10: office and internet use skewed high, programming low, and open analysis software between them. Hardware categories distinguish awareness without access from never having heard of a technology. Downloadable files therefore cannot be equated with universal access to fabrication tools. [Original skills survey](ref:R01)\n\nIn another activity, 33 students rated all demonstrated models at a mean usefulness of at least 9/10 after practical participation. This supports perceived value, but measures neither assembly accuracy, independent repair competence nor sustained adoption. No randomised control estimates a causal training effect. The survey is not a representative census of present-day laboratories worldwide; population, year and geography must remain attached. Separating software competence from hardware exposure shows why lower cost does not establish disappearance of a skills gap: computer users may still lack access to printers, materials and electronic-control practice.",
+          "figure_ids": [
+            "F06"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Shared mechanical designs can be reused, while modified precision remains conditional",
+          "markdown": "Open Labware extends a manual micromanipulator with continuous-rotation microservos and Arduino–joystick control, then adapts the motion mechanism into a microscope stage. Open geometry allows interfaces to be replaced, local parts repaired and travel altered without redeveloping the entire mechanism. Its caption reports approximately ±5–20 μm positioning precision depending on printing quality and stationary drift below 1 μm/min, but no complete error distribution across printers, material batches and operators. These ranges describe that prototype family; they do not assign identical performance to every modified model. [Mechanical reuse example](ref:R01)\n\nThe optics library likewise distinguishes reuse from development from scratch: editable parameters do not guarantee that initial development is faster than buying a finished component. The pump's electronic extension lets motors share commands, with dual connections supporting synchronous or opposite motion, but does not automatically provide independent closed-loop control for each channel. Interface files, source code and version documentation affect maintainability alongside printable shapes. A mesh alone does not recover all control assumptions. The studies' most concrete access improvement is visibility and editability of these relationships; differences in precision, damage rates and learning time across replication sites have not been measured through a common interlaboratory experiment. [Scope of shared control](ref:R03)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Zhang et al.: parameters generate choppers with different slot counts",
+          "interpretation": "a, b and c progress from sparse to dense slots within one geometric family. Slot count changes beam interruptions per revolution and hence modulation frequency at fixed rotation speed. These are model renderings without rotation-speed or intensity-time axes. They demonstrate derived designs, not frequency stability or post-print balancing measurements. [Original chopper figure](ref:R02)"
+        },
+        "F02": {
+          "caption": "Zhang et al.: printed interfaces connect existing optics and adjusters",
+          "interpretation": "a holds an optical element in a rectangular frame, b uses a circular holder with a top screw, and c shows a thicker adjustable mirror mount and metal fasteners. Visible layer lines belong to printed supports; glass, rods and screws remain unprinted. Shapes demonstrate interface adaptation, but no angular scale or reversal-error measurement establishes equal precision-adjustment performance. [Original mounts](ref:R02)"
+        },
+        "F03": {
+          "caption": "Zhang et al.: filter-wheel housing and internal rotor serve different functions",
+          "interpretation": "The main image shows a housing with an optical opening; the inset exposes peripheral filter windows and the hub. The housing fixes the beam passage while the rotor exchanges elements. Its large printed parts explain greater material use than a single mount. There are no switching-time or angular-repeatability curves; the evidence concerns integration and assembly. [Original filter wheel](ref:R02)"
+        },
+        "F04": {
+          "caption": "Wijnen et al.: the exploded view separates printed and metal transmission roles",
+          "interpretation": "The motor at left couples to the central screw, while upper and lower smooth rods guide motion. White printed pieces locate the motor, end supports and driven assembly. Mount geometry accommodates different sizes, but loads still pass through printed supports and metal connections. No load scale is present; limiting force must come from the reported test rather than apparent part thickness. [Original actuator](ref:R03)"
+        },
+        "F05": {
+          "caption": "Wijnen et al.: the computer commands while the driver powers the motor",
+          "interpretation": "The drawing separates Raspberry Pi, stepper driver and motor, identifying a separate 12 V supply. Signal paths distinguish browser control from power actuation; no feedback sensor directly measures plunger displacement. The figure explains assembly of a low-cost control chain but cannot replace water-gravimetry accuracy and repeatability results. [Original electronic control](ref:R03)"
+        },
+        "F06": {
+          "caption": "Baden et al.: software competence and hardware exposure have different distributions",
+          "interpretation": "A uses a 1–10 self-rated competence axis: office use clusters right, programming left, and open analysis tools are dispersed. B distinguishes never heard, heard without access, tried, and routine use. Both hardware groups largely occupy the first categories, separating awareness from practical exposure. Bar heights lack directly readable exact percentages; pixel heights cannot supply invented group proportions or significance. [Original survey](ref:R01)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie senken quelloffene gedruckte Geräte Zugangshürden im Labor?",
+      "direction": "Kostengünstige Laborgeräte",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Parametrische Dateien erleichtern Änderungen und Schnittstellenanpassung",
+          "markdown": "Die Optikbibliothek von Zhang et al. speichert bearbeitbare Geometrie in OpenSCAD statt ausschließlich Drucknetze fester Größe. Schlitzanzahl von Chopperrädern sowie Öffnungen von Linsen- und Filterhaltern sind veränderbar; vorhandene Mechanismen lassen sich an verfügbare Komponenten anpassen. Beispiele besitzen 10, 15 und 60 Schlitze, verbunden mit den angegebenen Bereichen 20 Hz–1 kHz, 30 Hz–1.5 kHz und 120 Hz–6 kHz. Dies beschreibt Kombinationen aus Geometrie und Drehzahlbereich. Kurven zu Zeitjitter, Tastverhältnisfehlern oder langfristiger Drehzahldrift fehlen; der Bereich ist keine präzisionszertifizierte Zeitbasis. [Parametrische Optikbibliothek](ref:R02)\n\nGedruckt werden Schnittstellen; ungedruckte Teile tragen weiterhin Präzisions- und Steifigkeitsanforderungen. Schienen bestehen aus OpenBeam-Aluminium und M3-Befestigungen, Stützen aus 8 mm Rundstäben; Linsen, Magnete und Stellschrauben bleiben separate Bauteile. Spiegelhalter verbinden lokale nachgiebige Gelenke, Magnete und benachbarte Schrauben zur Neigungsverstellung. Fotos zeigen Montierbarkeit, keine Winkelwiederholbarkeit. Die verwendete RepRap-Ausführung mit 0.5 mm Düse, 0.2 mm Schichten und ungefähr 0.1 mm Positionierfähigkeit beschreibt diese Umsetzung, nicht jeden Drucker. Magnetfüße erlauben Umpositionierung, erreichen laut Autoren aber geringere Stabilität als ein vollständiger optischer Tisch. Einfachere Fertigung gleicht die Schwingungsfestigkeit verschiedener Träger nicht an.",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Materialrechnung und vollständig nutzbares Gerät erfassen verschiedene Kosten",
+          "markdown": "Die Kostentabelle der Optikbibliothek trennt Kunststoff, Strom und einige zugekaufte Teile. Ein Linsenhalter benötigt 5.35 g ABS, mit 0.20 USD Material und 0.04 USD Strom, insgesamt tabelliert 0.24 USD. Das Filterrad benötigt 295.1 g, 11.21 USD Material, 2.02 USD Strom und 7.20 USD sonstige Teile, insgesamt 20.43 USD. Letzteres ist mehr als der Kunststoffpreis; Ersteres umfasst weder Linse noch kompletten optischen Aufbau. Dies sind historische Berechnungen zum Veröffentlichungszeitpunkt, keine aktuellen Einkaufsangebote. [Kostentabelle und automatisches Filterrad](ref:R02)\n\nDie Fußnote nennt 11.53 cents/kWh sowie 0.006925 kWh/g Verbrauch. Gemeinsam ergeben diese für 5.35 g ungefähr 0.00427 USD, gegenüber 0.04 USD in der Tabelle. Die tabellierten Stromkosten entsprechen eher einer direkten Verwendung von 0.006925 als USD/g. Die veröffentlichten Beträge bleiben hier erhalten, ihre Einheiteninkonsistenz wird jedoch benannt; eine ungeprüfte Korrektur wird nicht als Autorenresultat ausgegeben. Druckerkauf, Erlernen der Konstruktion, Montagearbeit und Fehldrucke ergeben ebenfalls keine gemessenen vollständigen Nutzungskosten. Das Rad besitzt 8 Positionen im Abstand von 45°; Arduino Uno steuert den Motor, ein optischer Schalter erkennt den Ursprung. Weniger manuelle Filterwechsel sind realisierte Funktionalität, während Umschaltwinkelfehler und Lebensdauer ungemessen bleiben.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Skalierbare Antriebe bleiben durch Kraft, Geschwindigkeit und Schäden begrenzt",
+          "markdown": "Wijnen et al. stellen eine Spritzenpumpe als parametrischen Linearantrieb vor und veröffentlichen CAD, Stückliste, Montageanleitung und Steuerprogramm. Hier werden mechanischer Antrieb und Wassergravimetrie betrachtet. Historische Kosten für NEMA11, NEMA17 und doppelte NEMA17 betragen 90, 97 und 154 USD einschließlich Steuerung und Browseroberfläche, ohne den Drucker zur Teilefertigung. Andere Motorgrößen verändern die Halter; größere Spritzen verändern außerdem das Volumen pro Vorschubweg. Gleiche Schrittzahlen belegen deshalb keine gleiche Volumenauflösung. [Antrieb und Leistungsmessungen](ref:R03)\n\nEin starrer Stab gegen einen unbeweglichen Gegenstand erzeugte mit NEMA11 93 N und mit NEMA17 200 N; einige Druckteile wurden bei diesem Kraftversuch beschädigt. Gemessen wurden Grenzen nahe Stillstand oder strukturellem Versagen, keine Dauernennlast und kein bei gleicher Geschwindigkeit bestätigter Flüssigkeitsdruck. Höchstgeschwindigkeiten waren 1.4 mL/s und 2.1 mL/s, jedoch mit 10 mL beziehungsweise 25 mL Spritzen und damit verschiedenen Volumen- und Reibungsbedingungen. Ein größerer Wert allein belegt keinen höheren Motorwirkungsgrad. Nachdruck verändert den Reparaturweg; Austauschbarkeit und bekannte Lebensdauer vor Beschädigung sind jedoch unterschiedliche Aussagen.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Gemessene Streuung statt Mikroschrittbezeichnung bestimmt die Steuerleistung",
+          "markdown": "Die Pumpe nutzt Raspberry Pi, eine Python-Browseroberfläche und einen A4988-Schrittmotortreiber. Impulse und Mikroschritte unterteilen Befehle; ein Encoder zur direkten Messung der tatsächlichen Kolbenposition fehlt. Geprüft wurde mit destilliertem Wasser, einer Mettler AE100 mit 0.1 mg Ablesbarkeit und feuchter geschlossener Umgebung zur Verdunstungsunterdrückung. Tropfen von ungefähr 20 μL begrenzen ebenfalls die Gravimetrie sehr kleiner Volumina. Die angegebene Genauigkeit betrifft 1 mL Inkremente: ±1% für NEMA11 und ±5% für NEMA17. Sie gilt nicht automatisch für beliebige Kleinvolumina oder Flüssigkeiten. [Gravimetrie und Elektronik](ref:R03)\n\nDie Wiederholbarkeitstabelle vergleicht Voll-, Viertel- und Sechzehntelschritte. Variationskoeffizienten betragen für NEMA11 1.17%, 0.56% und 1.55%, für NEMA17 3.66%, 2.13% und 2.26%. Feinere Mikroschritte verbessern keines der Ergebnisse monoton; Viertelschritte liefern hier die geringste Streuung. Die Textzusammenfassung von ungefähr 3% oder weniger erfasst den NEMA17-Vollschrittwert von 3.66% nicht. Eine weitere Tabelle nennt ±0.6% und ±2.1%, nahe den ausgewählten Viertelschrittergebnissen. Dies sind weder einheitliche Intervalle aller Betriebsarten noch mit Genauigkeit austauschbare Werte. Wiederholungszahlen je Bedingung fehlen eindeutig, sodass daraus keine neuen Signifikanztests oder Konfidenzintervalle konstruiert werden können.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Vorwissen und Zugang bestimmen die praktische Nutzbarkeit offener Dateien",
+          "markdown": "Open Labware von Baden et al. verknüpft Hardwareoffenheit mit Nutzerkompetenz. Die Befragung im 2014-08 umfasste 89 Forschende aus 12 Ländern Subsahara-Afrikas; 83/89 hatten Druck- oder Mikrocontrollertechnologien noch nie genutzt. Softwarekompetenz wurde von 1–10 selbst eingeschätzt: Büro- und Internetnutzung lagen eher hoch, Programmierung niedrig, offene Analysesoftware dazwischen. Hardwarekategorien unterscheiden Kenntnis ohne Zugang von völliger Unkenntnis. Herunterladbare Dateien sind somit nicht mit allgemeinem Zugang zu Fertigungswerkzeugen gleichzusetzen. [Ursprüngliche Kompetenzbefragung](ref:R01)\n\nBei einer anderen Aktivität bewerteten 33 Studierende nach praktischer Teilnahme sämtliche gezeigten Modelle im Mittel mit mindestens 9/10 für Nützlichkeit. Dies belegt wahrgenommenen Nutzen, misst aber weder Montagegenauigkeit, selbstständige Reparaturkompetenz noch dauerhafte Nutzung. Eine randomisierte Kontrolle zur kausalen Trainingswirkung fehlt. Die Befragung ist keine repräsentative Erhebung heutiger Labore weltweit; Gruppe, Jahr und Region bleiben wesentlich. Die Trennung von Softwarekompetenz und Hardwareerfahrung zeigt, weshalb geringere Kosten keine verschwundene Kompetenzlücke belegen: Computernutzung kann mit fehlendem Zugang zu Druckern, Material und elektronischer Steuerpraxis einhergehen.",
+          "figure_ids": [
+            "F06"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Geteilte Mechanik lässt sich wiederverwenden, geänderte Präzision bleibt bedingt",
+          "markdown": "Open Labware erweitert einen manuellen Mikromanipulator durch kontinuierlich rotierende Mikroservos mit Arduino–Joystick-Steuerung und nutzt denselben Bewegungsmechanismus als Mikroskoptisch. Offene Geometrie erlaubt Austausch von Schnittstellen, lokale Reparaturen und veränderte Wege ohne vollständige Neuentwicklung. Die Bildlegende nennt ungefähr ±5–20 μm Positionierpräzision abhängig von Druckqualität und stationäre Drift unter 1 μm/min, jedoch keine vollständige Fehlerverteilung über Drucker, Materialchargen und Bedienpersonen. Diese Bereiche beschreiben die Prototypfamilie und weisen nicht jeder veränderten Ausführung dieselbe Leistung zu. [Mechanische Wiederverwendung](ref:R01)\n\nAuch die Optikbibliothek unterscheidet Wiederverwendung von Neuentwicklung: Verstellbare Parameter garantieren nicht, dass die erste Konstruktion schneller als ein Fertigteilkauf ist. Bei der Pumpe können mehrere Motoren gemeinsame Befehle erhalten; doppelte Anschlüsse erlauben synchrone oder gegenläufige Bewegung, jedoch nicht automatisch unabhängige geschlossene Regelkreise je Kanal. Schnittstellendateien, Quellcode und Versionsangaben beeinflussen Wartbarkeit ebenso wie druckbare Formen. Aus einem Netz allein lassen sich nicht sämtliche Steuerannahmen rekonstruieren. Die konkreteste Zugangserleichterung der Studien ist die Sichtbarkeit und Änderbarkeit dieser Beziehungen; Unterschiede in Präzision, Schadensrate und Lernzeit zwischen Nachbaustandorten wurden nicht in einem gemeinsamen Ringversuch gemessen. [Umfang gemeinsamer Steuerung](ref:R03)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Zhang et al.: Parameter erzeugen Chopperräder verschiedener Schlitzanzahl",
+          "interpretation": "a, b und c zeigen zunehmend dichtere Schlitze innerhalb einer Geometriefamilie. Die Schlitzanzahl verändert Strahlunterbrechungen pro Umdrehung und damit die Modulationsfrequenz bei gleicher Drehzahl. Modellansichten besitzen keine Drehzahl- oder Intensitätszeitachse. Sie zeigen abgeleitete Entwürfe, keine Messung von Frequenzstabilität oder Unwucht nach dem Druck. [Originalchopper](ref:R02)"
+        },
+        "F02": {
+          "caption": "Zhang et al.: Druckschnittstellen verbinden vorhandene Optik und Stellteile",
+          "interpretation": "a hält ein optisches Element in einem Rechteckrahmen, b nutzt einen Rundhalter mit oberer Schraube, c zeigt einen dickeren verstellbaren Spiegelhalter und Metallbefestigungen. Sichtbare Schichten gehören zu Druckstützen; Glas, Stäbe und Schrauben bleiben ungedruckt. Die Formen belegen Anpassbarkeit, aber weder Winkelskala noch Umkehrfehlermessung bestätigen gleichwertige Präzisionsverstellung. [Originalhalter](ref:R02)"
+        },
+        "F03": {
+          "caption": "Zhang et al.: Filterradgehäuse und innerer Rotor erfüllen verschiedene Aufgaben",
+          "interpretation": "Das Hauptbild zeigt ein Gehäuse mit optischer Öffnung; das Innenbild legt umlaufende Filterfenster und Nabe frei. Das Gehäuse fixiert den Strahldurchgang, der Rotor tauscht Elemente. Große Druckteile erklären den höheren Materialbedarf gegenüber einem Einzelhalter. Umschaltzeit- und Winkelwiederholbarkeitskurven fehlen; belegt sind Integration und Montierbarkeit. [Originalfilterrad](ref:R02)"
+        },
+        "F04": {
+          "caption": "Wijnen et al.: die Explosionsansicht trennt Druckteile und Metallübertragung",
+          "interpretation": "Der linke Motor koppelt an die mittlere Spindel; obere und untere Rundstäbe führen die Bewegung. Weiße Druckteile positionieren Motor, Endstützen und bewegte Baugruppe. Andere Halterformen nehmen andere Größen auf, der Lastpfad führt dennoch über Druckstützen und Metallverbindungen. Eine Lastskala fehlt; Grenzkraft ergibt sich aus dem beschriebenen Versuch, nicht aus sichtbarer Bauteildicke. [Originalantrieb](ref:R03)"
+        },
+        "F05": {
+          "caption": "Wijnen et al.: Rechnerbefehle und Motorleistungsansteuerung sind getrennt",
+          "interpretation": "Die Zeichnung trennt Raspberry Pi, Schrittmotortreiber und Motor und kennzeichnet eine eigene 12 V Versorgung. Signalwege unterscheiden Browsersteuerung und Leistungsantrieb; ein Rückmeldesensor für direkte Kolbenwegmessung fehlt. Die Grafik erklärt den Aufbau einer preiswerten Steuerkette, ersetzt aber keine Genauigkeits- und Wiederholbarkeitsergebnisse der Wassergravimetrie. [Originalelektronik](ref:R03)"
+        },
+        "F06": {
+          "caption": "Baden et al.: Softwarekompetenz und Hardwareerfahrung sind verschieden verteilt",
+          "interpretation": "A besitzt eine 1–10 Achse selbst eingeschätzter Kompetenz: Büronutzung liegt eher rechts, Programmierung links, offene Analysewerkzeuge verteilt. B unterscheidet nie gehört, gehört ohne Zugang, ausprobiert und regelmäßige Nutzung. Beide Hardwaregruppen liegen überwiegend in den ersten Kategorien; Bekanntheit und praktische Erfahrung sind damit getrennt. Balkenhöhen liefern keine direkt ablesbaren exakten Prozentwerte; Pixelhöhen dürfen keine erfundenen Gruppenanteile oder Signifikanz erzeugen. [Originalbefragung](ref:R01)"
+        }
+      }
+    }
+  }
+}

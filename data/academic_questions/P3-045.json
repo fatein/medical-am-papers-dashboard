@@ -1,0 +1,292 @@
+{
+  "schema_version": 2,
+  "question_id": "P3-045",
+  "p": "P3",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_sd_02c06ee863ebfaedb311",
+    "doc_6f590e17519c5995ce9e",
+    "doc_b5bb5b3e8e55eb1334a9"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Development of immediate release 3D-printed dosage forms for a poorly water-soluble drug by fused deposition modeling: Study of morphology, solid state and dissolution",
+      "publisher": "International Journal of Pharmaceutics",
+      "year": 2021,
+      "url": "https://doi.org/10.1016/j.ijpharm.2021.120417",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Orodispersible Polymer Films with the Poorly Water-Soluble Drug, Olanzapine: Hot-Melt Pneumatic Extrusion for Single-Process 3D Printing",
+      "publisher": "Pharmaceutics",
+      "year": 2020,
+      "url": "https://doi.org/10.3390/pharmaceutics12080692",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Development of Multi-Compartment 3D-Printed Tablets Loaded with Self-Nanoemulsified Formulations of Various Drugs: A New Strategy for Personalized Medicine",
+      "publisher": "Pharmaceutics",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/pharmaceutics13101733",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-045/F01.png",
+      "source_url": "https://irf.fhnw.ch/server/api/core/bitstreams/74c4c498-1f56-4d91-a2f2-0106622c0651/content",
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 6",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-045/F02.png",
+      "source_url": "https://irf.fhnw.ch/server/api/core/bitstreams/74c4c498-1f56-4d91-a2f2-0106622c0651/content",
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Figure 9",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/364f/7466134/fa8d17bb47f4/pharmaceutics-12-00692-g009.jpg",
+      "asset_path": "assets/academic_figures/P3-045/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7466134/#pharmaceutics-12-00692-f009",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Figure 3",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/c353/8539993/53e832550fea/pharmaceutics-13-01733-g003.jpg",
+      "asset_path": "assets/academic_figures/P3-045/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8539993/#pharmaceutics-13-01733-f003",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Figure 6",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/c353/8539993/ef1be2971525/pharmaceutics-13-01733-g006.jpg",
+      "asset_path": "assets/academic_figures/P3-045/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8539993/#pharmaceutics-13-01733-f006",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "如何提高难溶药物的溶出和即时释放？",
+      "direction": "释放控制",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "本芴醇：无定形化与可打印性必须同时成立",
+          "markdown": "难溶药物的即释不能只靠把片剂做松。Fanous 等以 BCS IV 类本芴醇为模型，用 Eudragit EPO 形成固体分散体，木糖醇作亲水增塑剂、麦芽糊精作致孔组分。最终可打印配方为药物 5%、Eudragit EPO 72%、木糖醇 13.5%、麦芽糊精 9.5%。提高药物比例到 7.5–30% 时丝材变脆，不能顺利打印；因此增大载药量与增加单片可交付剂量之间存在工艺约束。[配方、工艺与固态](ref:R01)\n\n片剂设计为 9 × 5 × 4 mm 的椭圆网格，仅有连续外周层，没有连续顶层或底层。含药丝材在 160 °C 打印，喷嘴 0.5 mm、层厚 0.15 mm、速度 1000 mm/min、平台 35 °C。这些开放的上下表面使介质能进入内部，而不仅接触外轮廓。\n\nDSC 和 XRPD 在低载药丝材中未清楚显示晶体，较敏感的拉曼映射却检出了残余晶态；打印后 5% 药物片剂在各填充率下均呈无定形。因此“DSC 不见熔融峰”不能单独证明完全无定形。该体系还出现热熔挤出相关降解：Table 3 中 5% 丝材 7 个月时含量为理论值的 92.2 ± 0.11%，用已存 5 个月的丝材打印、再放置 2 个月的片剂为 93.1 ± 0.34%。这不是新鲜丝材和新鲜片剂的完整同龄比较，也没有证明提高打印温度必然有利。研究未加稳定剂或抗氧化剂，溶出收益必须与药物回收和降解物一起理解。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "真正连通的孔隙比名义填充率更接近释放控制量",
+          "markdown": "上述本芴醇研究将 65%、80%、100% 名义填充的实际结构用 μCT 定量。三组外形相近，但 80% 与 100% 的实测结构并没有按设定差值拉开；沉积丝条融合和共同外周壳层压缩了这种差别。[μCT、Table 2 与溶出](ref:R01)\n\n| 名义填充 | 质量 | 实测开放孔体积 | 实测表面积 | 实测相对密度 |\n|---|---|---|---|---|\n| 65% | 108 ± 2 mg | 13.96 ± 0.40 mm³ | 422.9 ± 5.4 mm² | 0.800 ± 0.007 |\n| 80% | 142 ± 1 mg | 4.80 ± 2.06 mm³ | 316.9 ± 39.5 mm² | 0.925 ± 0.031 |\n| 100% | 139 ± 1 mg | 3.33 ± 1.72 mm³ | 291.8 ± 43.8 mm² | 0.943 ± 0.028 |\n\n质量为 n = 6，结构为 n = 3。65% 的开放孔和表面积显著较大；80% 与 100% 在这些结构指标上未见显著差异。封闭孔体积不显示相同的溶出相关关系，因为介质不能像开放孔那样直接利用它。\n\n溶出使用 900 mL 0.1 N HCl 加 0.5% CTAB、37 °C、100 rpm，n = 3。只有 65% 组达到研究预设的 30 min 至少 85% 释放；80% 和 100% 较慢。对照是含 120 mg 本芴醇的压制片，并非与约 108–142 mg 总质量的打印片等药量。90 min 后转速提高到 250 rpm，再运行 30 min 以求完全溶出，不能把后段变化归于打印结构。作者也明确该含表面活性剂介质不声称模拟体内环境，且不能区分晶态与无定形原料的溶出优势；因此这项实验确立的是结构—体外释放关联，没有直接测出打印片的生物利用度。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "奥氮平薄膜：同样无定形，载体组成仍改变早期释放",
+          "markdown": "奥氮平直接热熔气动挤出研究提供了另一个层次的对照：在相同 20 × 25 mm 规格、100 mg 目标质量、5 mg 目标药量下，改变 PEO/PVP VA64 载体中的增塑剂。F3 含 75% PEO、20% PVP VA64、5% 药物；F5/F6 分别加入 5% P407/P188，使 PEO 降至 70%。三者在 160 °C 打印，DSC/PXRD 均支持无定形药物分散。[同规格处方比较](ref:R02)\n\n| 配方 | 早期溶出 | 水中崩解 | 断裂力 |\n|---|---|---|---|\n| F3，无增塑剂 | 7 min 为 84.7% | 21.7 ± 1.5 s | 14.3 ± 0.2 N |\n| F5，P407 | 7 min 为 84.6% | 17.7 ± 1.5 s | 10.8 ± 2.7 N |\n| F6，P188 | 5 min 为 88.5% | 17.0 ± 1.7 s | 15.6 ± 0.6 N |\n\n崩解为 900 mL 去离子水、37 °C；溶出则为 900 mL pH 7.4 模拟唾液、37 ± 0.5 °C、100 rpm，重复 3 次。所有膜 10 min 超过 90%，游离奥氮平粉末 60 min 仅 44.6%。F5 比 F3 崩解快，却在 7 min 溶出上几乎相同；F6 则兼有更快早期溶出和比 F5 更高的断裂力。药物无定形化、载体润湿和膜分散共同作用，不能把崩解秒数直接当作药物进入溶液的时间。这些数据也没有测出膜在口内的吸收率。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "自纳米乳化能提高溶出，但不自动产生即释片",
+          "markdown": "Ahmed 等将格列美脲（GLMP）与瑞舒伐他汀（RSV）先置于自纳米乳化系统（SNEDDS），再嵌入室温挤出的 HPMC 基片剂。优化液体比例为姜黄油 15%、Tween 80 10%、PEG 400 75%；复验液滴尺寸 94.43 ± 3.55 nm、PDI = 0.544。小平均粒径并不表示分布很窄，不能只报告“约 94 nm”而忽略分散性。[SNEDDS 与直接载药对照](ref:R03)\n\n打印喷嘴为 0.58 mm，出料速度 2.6 mm/s、填充移动速度 10 mm/s；F1–F5 采用直径 15 mm、8 层，随后在 40 °C 真空干燥 24 h。F2/F3 直接载 GLMP/RSV，F4/F5 分别载入相同药物的 SNEDDS；F6 组合等量的 F4/F5 糊料。F6 干燥后质量为 1067.54 ± 77.32 mg，实测 GLMP 4.052 ± 0.087 mg、RSV 9.711 ± 0.097 mg。因此“多成分纳米制剂”并非小体积或高载药量的同义词。\n\n在 900 mL 水加 0.1% sodium lauryl sulfate、37 °C、75 rpm、n = 3 下，原图 3 显示 SNEDDS 单药与复方曲线在 6–12 h 接近完全释放；非 SNEDDS 的 GLMP 和 RSV 分别停留在约 65–70% 和 50% 附近。这是比对应直接载药片更高的释放，但论文明确所有配方表现为延长释放，并没有达到本芴醇研究的 30 min 快速释放终点。增溶液体改善药物可用状态，HPMC 与干燥后融合基质仍能限制液体接触和药物外移。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "大鼠药代支持暴露增加，但试验已破坏完整打印结构",
+          "markdown": "上述 F6 与两种市售单药片采用雄性 Wistar 大鼠、每组 n = 6 的单次平行试验。GLMP 为 10 mg/kg，RSV 为 20 mg/kg；打印片和对照片均先碾碎，再用 1% 羧甲基纤维素制成混悬液，经胃管给药。GLMP 采血至 24 h，RSV 至 72 h。因此药代试验主要检验分散后的配方，而非整片多腔几何是否在胃肠道保持并加快释放。[动物方法、Table 3 与 Figure 6](ref:R03)\n\n| 指标 | GLMP：打印配方 / 对照 | RSV：打印配方 / 对照 |\n|---|---|---|\n| Cmax | 2246.667 / 2058.667 ng/mL | 2191 / 888 ng/mL |\n| AUC₀–t | 22365.33 / 14021.67 ng·h/mL | 68940.67 / 28120 ng·h/mL |\n| Tmax | 2 / 2 h | 4.67 / 4.67 h |\n| 以 AUC₀–t 计算的相对生物利用度 | 159.50% | 245.16% |\n\n表中列平均值以清楚显示比较尺度，原图提供 SD。159.50% 与 245.16% 表示相对于对照的倍数为 1.5950 与 2.4516，不能写成“增加了 159.50% 与 245.16%”；对应相对增加是 59.50% 与 145.16%。两药 Tmax 均未提前，所以较高 AUC 不等于更早达到峰值。GLMP 峰值差距较小但后期浓度维持较高，RSV 则同时表现更高峰值与整体暴露。\n\n两种药在同一打印配方中的增幅不同，也说明增溶对吸收的作用依赖药物本身及对照处方。该实验没有测患者血糖、血脂或不良反应；从细胞或动物暴露直接推导临床剂量减少，会越过本次试验实际测量的终点。",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Fanous et al. — 原图 2：名义填充与实际孔隙的 μCT 对照。",
+          "interpretation": "A/B/C 分别为 65%/80%/100% 填充；每组包含垂直于 z 轴的截面、沿 x/y 的纵截面及三维重建。A 的贯通通道明显较大，B/C 的细小通道与较高实心比例相近。原图说明重建方向上下倒置；保留全部截面、2 mm 标尺和灰度条，不把视觉空白面积直接当作 Table 2 的体积孔隙率。[结构表征](ref:R01)"
+        },
+        "F02": {
+          "caption": "Fanous et al. — 原图 6：低填充打印片跨过快速释放终点。",
+          "interpretation": "横轴 0–60 min，纵轴相对溶出量%；酒红色 65% 组在 30 min 超过绿色 85% 参考线，紫色 100% 与蓝色 80% 较慢，黑线为 120 mg 压制对照。点和误差条为 n = 3 的均值与 SD。此图采用 CTAB 酸性介质，比较的是归一化体外溶出，不是等剂量体内暴露。[溶出实验](ref:R01)"
+        },
+        "F03": {
+          "caption": "Cho et al. — 原图 9：奥氮平薄膜与原料药的时间尺度差异。",
+          "interpretation": "横轴 min、纵轴溶出百分比；黑色游离 OLZ 在 60 min 仍约 44.6%，F3/F5/F6 均在 10 min 后接近高平台。红色 F6 早期较快，绿色 F3 与蓝色 F5 接近；与其不同的崩解时间说明，膜碎裂和药物溶解不是同一个读数。[原图及处方](ref:R02)"
+        },
+        "F04": {
+          "caption": "Ahmed et al. — 原图 3：SNEDDS 提高最终释放，但仍持续数小时。",
+          "interpretation": "左图为 GLMP，右图为 RSV；蓝线 F2/F3 是非 SNEDDS，橙线 F4/F5 是单药 SNEDDS，灰线 F6 是复方。横轴 h，纵轴各药释放百分比；非 SNEDDS 较早形成较低平台，SNEDDS 持续升高至 6–12 h。此图支持增溶配方作用，但不能作为分钟级即释证据。[体外配方对照](ref:R03)"
+        },
+        "F05": {
+          "caption": "Ahmed et al. — 原图 6：碾碎后灌胃的打印配方与市售对照药代。",
+          "interpretation": "A 为 GLMP（至 24 h），B 为 RSV（至 72 h）；红线为 SNEDDS 打印配方，蓝线为对照，纵轴 ng/mL。两药红线后期更高，RSV 峰值差距也更明显；星号为原文 p < 0.05 的时间点，n = 6。给药前所有片剂已碾碎混悬，曲线不能验证完整多腔结构在体内的释放路径。[动物药代](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "How can dissolution and immediate release of poorly soluble drugs be improved?",
+      "direction": "Release control",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Lumefantrine: amorphization and printability must be achieved together",
+          "markdown": "Immediate release of a poorly soluble drug requires more than a loosely filled tablet. Fanous and colleagues used BCS IV lumefantrine with Eudragit EPO as a solid-dispersion carrier, xylitol as hydrophilic plasticizer and maltodextrin as pore former. The printable formulation contained 5% drug, 72% Eudragit EPO, 13.5% xylitol and 9.5% maltodextrin. Raising drug loading to 7.5–30% made filaments too brittle to print successfully. Processability therefore constrained the relationship between higher loading and a higher deliverable unit dose. [Formulation, process and solid state](ref:R01)\n\nTablets were designed as 9 × 5 × 4 mm oval grids with a continuous perimeter but no continuous top or bottom layer. Drug-bearing filament was printed at 160 °C through a 0.5 mm nozzle, with 0.15 mm layers, 1000 mm/min speed and a 35 °C platform. Open upper and lower faces admitted medium internally rather than exposing only the external contour.\n\nDSC and XRPD did not clearly reveal crystals in low-loading filaments, but more sensitive Raman mapping detected residual crystallinity. Printed 5% tablets were amorphous at every infill. An absent DSC melting peak therefore cannot alone prove complete amorphization. Hot-melt extrusion also involved degradation: Table 3 reports 92.2 ± 0.11% of theoretical content for 5% filament after 7 months, and 93.1 ± 0.34% for tablets printed from 5-month-old filament and then stored 2 months. This is not a complete age-matched comparison of fresh filament and fresh tablets, nor evidence that raising printing temperature necessarily helps. No stabilizer or antioxidant was added; dissolution gains must be interpreted alongside drug recovery and degradation products.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Accessible pores are closer to a release-control variable than nominal infill",
+          "markdown": "The lumefantrine study quantified actual structures at 65%, 80% and 100% nominal infill by μCT. External dimensions were similar, but the measured 80% and 100% structures did not separate in proportion to their settings. Strand coalescence and the common perimeter shell compressed that difference. [μCT, Table 2 and dissolution](ref:R01)\n\n| Nominal infill | Mass | Measured open-pore volume | Measured surface area | Measured relative density |\n|---|---|---|---|---|\n| 65% | 108 ± 2 mg | 13.96 ± 0.40 mm³ | 422.9 ± 5.4 mm² | 0.800 ± 0.007 |\n| 80% | 142 ± 1 mg | 4.80 ± 2.06 mm³ | 316.9 ± 39.5 mm² | 0.925 ± 0.031 |\n| 100% | 139 ± 1 mg | 3.33 ± 1.72 mm³ | 291.8 ± 43.8 mm² | 0.943 ± 0.028 |\n\nMass used n = 6 and structure n = 3. Open pores and surface area were significantly greater at 65%; these structural measures did not differ significantly between 80% and 100%. Closed-pore volume did not show the same dissolution relationship because medium cannot directly use it like an open pore.\n\nDissolution used 900 mL of 0.1 N HCl plus 0.5% CTAB at 37 °C and 100 rpm, n = 3. Only 65% infill met the study’s preset rapid-release endpoint of at least 85% within 30 min; 80% and 100% were slower. The comparator was a compressed tablet containing 120 mg lumefantrine, not a dose-matched counterpart to printed tablets with approximately 108–142 mg total mass. After 90 min, speed increased to 250 rpm for another 30 min to achieve full dissolution; late changes cannot be assigned to print architecture alone. The authors explicitly state that the surfactant medium does not claim biorelevance and does not discriminate crystalline from amorphous raw-drug dissolution. The experiment therefore establishes a structure–in-vitro-release relationship without directly measuring printed-tablet bioavailability.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Olanzapine films: carrier composition still changes early release when drug is amorphous",
+          "markdown": "Direct hot-melt pneumatic extrusion of olanzapine provides a different comparison. At fixed 20 × 25 mm dimensions, 100 mg target mass and 5 mg target dose, plasticizer composition was varied within a PEO/PVP VA64 carrier. F3 contained 75% PEO, 20% PVP VA64 and 5% drug; F5/F6 added 5% P407/P188 respectively, reducing PEO to 70%. All were printed at 160 °C, with DSC/PXRD supporting amorphous drug dispersion. [Fixed-dimension formulation comparison](ref:R02)\n\n| Formulation | Early dissolution | Disintegration in water | Breaking force |\n|---|---|---|---|\n| F3, no plasticizer | 84.7% at 7 min | 21.7 ± 1.5 s | 14.3 ± 0.2 N |\n| F5, P407 | 84.6% at 7 min | 17.7 ± 1.5 s | 10.8 ± 2.7 N |\n| F6, P188 | 88.5% at 5 min | 17.0 ± 1.7 s | 15.6 ± 0.6 N |\n\nDisintegration used 900 mL deionized water at 37 °C. Dissolution used 900 mL simulated saliva at pH 7.4, 37 ± 0.5 °C and 100 rpm, with 3 replicates. Every film exceeded 90% at 10 min, whereas free olanzapine powder reached only 44.6% at 60 min. F5 disintegrated faster than F3 but had almost identical 7 min dissolution. F6 combined faster early dissolution with a higher breaking force than F5. Amorphization, carrier wetting and film dispersion act together; disintegration seconds cannot be read as time for drug to enter solution. Nor did these measurements establish absorption from the mouth.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Self-nanoemulsification can improve dissolution without creating an immediate-release tablet",
+          "markdown": "Ahmed and colleagues first incorporated glimepiride (GLMP) and rosuvastatin (RSV) into self-nanoemulsifying drug-delivery systems (SNEDDS), then embedded them in room-temperature-extruded HPMC-based tablets. The optimized liquid contained 15% curcuma oil, 10% Tween 80 and 75% PEG 400. Confirmation gave a droplet size of 94.43 ± 3.55 nm and PDI = 0.544. A small mean does not establish a narrow distribution; reporting only “about 94 nm” omits dispersity. [SNEDDS versus direct drug loading](ref:R03)\n\nPrinting used a 0.58 mm nozzle, 2.6 mm/s flow speed and 10 mm/s infill movement. F1–F5 were 15 mm diameter cylinders with 8 layers, vacuum-dried at 40 °C for 24 h. F2/F3 contained directly loaded GLMP/RSV, F4/F5 the corresponding drug-bearing SNEDDS, and F6 equal amounts of F4/F5 pastes. Dried F6 mass was 1067.54 ± 77.32 mg, with measured GLMP 4.052 ± 0.087 mg and RSV 9.711 ± 0.097 mg. A multicomponent nanoformulation is therefore not synonymous with small size or high drug loading.\n\nIn 900 mL water plus 0.1% sodium lauryl sulfate at 37 °C and 75 rpm, n = 3, original Figure 3 shows single-drug and combination SNEDDS curves approaching complete release over 6–12 h. Non-SNEDDS GLMP and RSV remained near approximately 65–70% and 50%. This exceeds the corresponding directly loaded tablets, but the paper explicitly describes extended release for every formulation, not the 30 min rapid-release endpoint used for lumefantrine. The solubilizing liquid improves drug availability while HPMC and the fused dried matrix can still restrict liquid access and outward transport.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Rat pharmacokinetics support increased exposure after the printed architecture was destroyed",
+          "markdown": "F6 and two marketed single-drug products were compared in male Wistar rats using a single-dose parallel design with n = 6 per group. Doses were 10 mg/kg GLMP and 20 mg/kg RSV. Both printed and comparator tablets were crushed, suspended in 1% carboxymethyl cellulose and administered by gastric tube. GLMP sampling continued to 24 h and RSV to 72 h. The pharmacokinetic experiment therefore mainly tests the dispersed formulation rather than whether intact multicompartment geometry survives and accelerates gastrointestinal release. [Animal methods, Table 3 and Figure 6](ref:R03)\n\n| Endpoint | GLMP: printed formulation / comparator | RSV: printed formulation / comparator |\n|---|---|---|\n| Cmax | 2246.667 / 2058.667 ng/mL | 2191 / 888 ng/mL |\n| AUC₀–t | 22365.33 / 14021.67 ng·h/mL | 68940.67 / 28120 ng·h/mL |\n| Tmax | 2 / 2 h | 4.67 / 4.67 h |\n| Relative bioavailability from AUC₀–t | 159.50% | 245.16% |\n\nMeans are listed to make comparison scales clear; the original figure provides SD. Values of 159.50% and 245.16% correspond to 1.5950 and 2.4516 times comparator exposure, not increases of 159.50% and 245.16%. The relative increases are 59.50% and 145.16%. Neither drug reached Tmax earlier, so higher AUC does not mean an earlier peak. GLMP showed a modest peak difference with greater later concentrations; RSV showed both a higher peak and overall exposure.\n\nDifferent gains for the two drugs in the same printed formulation also show dependence on drug properties and comparator formulation. The experiment measured no patient glucose, lipid or adverse-event outcomes. Inferring a clinical dose reduction directly from cellular or animal exposure would go beyond its measured endpoints.",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Fanous et al. — Original Figure 2: μCT comparison of nominal infill and actual pores.",
+          "interpretation": "A/B/C correspond to 65%/80%/100% infill. Each includes a section perpendicular to z, longitudinal x/y sections and a three-dimensional reconstruction. A has visibly larger connected channels; B/C have similar finer channels and larger solid fractions. The original caption notes upside-down reconstruction. All sections, 2 mm scales and grayscale bars are retained; visible blank area is not directly the volumetric porosity in Table 2. [Structural characterization](ref:R01)"
+        },
+        "F02": {
+          "caption": "Fanous et al. — Original Figure 6: low-infill tablets cross the rapid-release endpoint.",
+          "interpretation": "Axes show 0–60 min and relative dissolved percent. Burgundy 65% exceeds the green 85% reference by 30 min; purple 100% and blue 80% are slower, with black marking the 120 mg compressed comparator. Points/bars are mean/SD for n = 3. Acidic CTAB medium compares normalized in-vitro dissolution, not dose-matched systemic exposure. [Dissolution experiment](ref:R01)"
+        },
+        "F03": {
+          "caption": "Cho et al. — Original Figure 9: distinct dissolution time scales for olanzapine films and raw drug.",
+          "interpretation": "Axes show min and percent dissolved. Black free OLZ remains near 44.6% at 60 min; F3/F5/F6 approach high plateaus after 10 min. Red F6 is faster initially, while green F3 and blue F5 remain close. Their differing disintegration times show that film breakup and drug dissolution are different readouts. [Original figure and formulations](ref:R02)"
+        },
+        "F04": {
+          "caption": "Ahmed et al. — Original Figure 3: SNEDDS improve eventual release, which still takes hours.",
+          "interpretation": "Left is GLMP and right RSV. Blue F2/F3 are non-SNEDDS; orange F4/F5 are single-drug SNEDDS; gray F6 is the combination. Axes show h and percent drug released. Non-SNEDDS plateau earlier at lower levels, while SNEDDS rise through 6–12 h. This supports a solubilizing-formulation effect, not immediate release on a minutes scale. [In-vitro formulation comparison](ref:R03)"
+        },
+        "F05": {
+          "caption": "Ahmed et al. — Original Figure 6: pharmacokinetics after crushed printed and comparator formulations were gavaged.",
+          "interpretation": "A shows GLMP through 24 h, B RSV through 72 h. Red is printed SNEDDS formulation and blue the comparator; the y-axis is ng/mL. Red concentrations remain higher later for both drugs, with a larger peak difference for RSV. Asterisks indicate reported p < 0.05 time points, n = 6. All tablets were crushed and suspended before dosing, so these curves do not validate intact multicompartment release paths in vivo. [Animal pharmacokinetics](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie lassen sich Auflösung und sofortige Freisetzung schwer löslicher Wirkstoffe verbessern?",
+      "direction": "Freisetzungskontrolle",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Lumefantrin: Amorphisierung und Druckbarkeit müssen gemeinsam erreicht werden",
+          "markdown": "Sofortige Freisetzung eines schwer löslichen Wirkstoffs erfordert mehr als eine locker gefüllte Tablette. Fanous und Mitarbeitende verwendeten BCS-IV-Lumefantrin mit Eudragit EPO als Träger einer festen Dispersion, Xylitol als hydrophilem Weichmacher und Maltodextrin als Porenbildner. Druckbar war die Formulierung mit 5% Wirkstoff, 72% Eudragit EPO, 13.5% Xylitol und 9.5% Maltodextrin. Bei 7.5–30% Wirkstoff wurden die Filamente zu spröde für erfolgreiches Drucken. Die Verarbeitung begrenzte somit den Zusammenhang zwischen höherer Beladung und höherer verabreichbarer Einzeldosis. [Formulierung, Prozess und Feststoffzustand](ref:R01)\n\nDie Tabletten waren als ovale Gitter von 9 × 5 × 4 mm mit durchgehendem Rand, aber ohne geschlossene Ober- oder Unterseite geplant. Wirkstofffilament wurde bei 160 °C durch eine 0.5-mm-Düse gedruckt: Schichtdicke 0.15 mm, Geschwindigkeit 1000 mm/min, Plattform 35 °C. Die offenen Flächen erlaubten dem Medium Zugang ins Innere statt ausschließlich zur Außenkontur.\n\nDSC und XRPD zeigten in niedrig beladenen Filamenten keine eindeutigen Kristalle; empfindlichere Raman-Kartierung wies jedoch Restkristallinität nach. Gedruckte 5%-Tabletten waren bei jedem Füllgrad amorph. Ein fehlender DSC-Schmelzpeak beweist deshalb allein keine vollständige Amorphisierung. Auch schmelzextrusionsbedingter Abbau trat auf: Tabelle 3 nennt 92.2 ± 0.11% des Sollgehalts für 5%-Filament nach 7 Monaten und 93.1 ± 0.34% für Tabletten aus 5 Monate altem Filament nach weiteren 2 Monaten Lagerung. Das ist kein vollständiger altersgleicher Vergleich frischer Filamente und Tabletten und kein Beleg, dass höhere Drucktemperatur grundsätzlich hilft. Stabilisator oder Antioxidans fehlten; Auflösungsgewinn ist gemeinsam mit Wiederfindung und Abbauprodukten zu beurteilen.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Zugängliche Poren liegen näher an der Freisetzungssteuerung als nomineller Füllgrad",
+          "markdown": "Die Lumefantrin-Studie quantifizierte mittels μCT tatsächliche Strukturen bei 65%, 80% und 100% Sollfüllung. Äußere Abmessungen waren ähnlich, doch die gemessenen Strukturen bei 80% und 100% trennten sich nicht entsprechend ihren Einstellungen. Verschmelzende Stränge und die gemeinsame Randhülle verringerten den Unterschied. [μCT, Tabelle 2 und Auflösung](ref:R01)\n\n| Sollfüllung | Masse | Gemessenes offenes Porenvolumen | Gemessene Oberfläche | Gemessene relative Dichte |\n|---|---|---|---|---|\n| 65% | 108 ± 2 mg | 13.96 ± 0.40 mm³ | 422.9 ± 5.4 mm² | 0.800 ± 0.007 |\n| 80% | 142 ± 1 mg | 4.80 ± 2.06 mm³ | 316.9 ± 39.5 mm² | 0.925 ± 0.031 |\n| 100% | 139 ± 1 mg | 3.33 ± 1.72 mm³ | 291.8 ± 43.8 mm² | 0.943 ± 0.028 |\n\nMasse: n = 6; Struktur: n = 3. Offene Poren und Oberfläche waren bei 65% signifikant größer; zwischen 80% und 100% bestanden für diese Strukturgrößen keine signifikanten Unterschiede. Geschlossenes Porenvolumen zeigte nicht denselben Auflösungszusammenhang, da Medium es nicht unmittelbar wie offene Poren nutzen kann.\n\nDie Auflösung erfolgte in 900 mL 0.1 N HCl mit 0.5% CTAB bei 37 °C und 100 rpm, n = 3. Nur 65% erreichte den vorgegebenen schnellen Endpunkt von mindestens 85% nach 30 min; 80% und 100% waren langsamer. Vergleich war eine gepresste Tablette mit 120 mg Lumefantrin, keine dosisgleiche Probe zu gedruckten Tabletten mit ungefähr 108–142 mg Gesamtmasse. Nach 90 min wurde auf 250 rpm für weitere 30 min erhöht, um vollständige Auflösung zu erreichen; spätere Änderungen sind nicht allein der Druckstruktur zuzuordnen. Die Autoren erklären ausdrücklich, dass das tensidhaltige Medium keine Biorelevanz beansprucht und die Auflösung kristallinen und amorphen Rohwirkstoffs nicht differenziert. Belegt wird somit ein Struktur-In-vitro-Freisetzungs-Zusammenhang, keine direkt gemessene Bioverfügbarkeit der Drucktabletten.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Olanzapin-Filme: Trotz amorphem Wirkstoff beeinflusst der Träger die frühe Freisetzung",
+          "markdown": "Die direkte pneumatische Schmelzextrusion von Olanzapin liefert einen anderen Vergleich. Bei festen 20 × 25 mm, 100 mg Zielmasse und 5 mg Zieldosis wurde der Weichmacher im PEO/PVP-VA64-Träger verändert. F3 enthielt 75% PEO, 20% PVP VA64 und 5% Wirkstoff; F5/F6 ergänzten jeweils 5% P407/P188 und senkten PEO auf 70%. Alle wurden bei 160 °C gedruckt; DSC/PXRD stützten amorphe Wirkstoffdispersion. [Formulierungsvergleich bei gleichen Abmessungen](ref:R02)\n\n| Formulierung | Frühe Auflösung | Zerfall in Wasser | Bruchkraft |\n|---|---|---|---|\n| F3, ohne Weichmacher | 84.7% nach 7 min | 21.7 ± 1.5 s | 14.3 ± 0.2 N |\n| F5, P407 | 84.6% nach 7 min | 17.7 ± 1.5 s | 10.8 ± 2.7 N |\n| F6, P188 | 88.5% nach 5 min | 17.0 ± 1.7 s | 15.6 ± 0.6 N |\n\nDer Zerfall wurde in 900 mL deionisiertem Wasser bei 37 °C gemessen. Die Auflösung verwendete 900 mL simulierten Speichel bei pH 7.4, 37 ± 0.5 °C und 100 rpm mit 3 Wiederholungen. Jeder Film überschritt nach 10 min 90%, freies Olanzapin-Pulver erreichte nach 60 min nur 44.6%. F5 zerfiel schneller als F3, zeigte aber nahezu gleiche Auflösung nach 7 min. F6 verband schnellere frühe Auflösung mit höherer Bruchkraft als F5. Amorphisierung, Trägerbenetzung und Filmdispersion wirken zusammen; Zerfallssekunden sind nicht die Zeit bis zum Lösungseintritt des Wirkstoffs. Auch eine Resorption im Mund wurde nicht gemessen.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Selbstnanoemulgierung verbessert Auflösung, erzeugt aber nicht automatisch eine sofort freisetzende Tablette",
+          "markdown": "Ahmed und Mitarbeitende brachten Glimepirid (GLMP) und Rosuvastatin (RSV) zunächst in selbstnanoemulgierende Wirkstoffträgersysteme (SNEDDS) ein und anschließend in bei Raumtemperatur extrudierte HPMC-Tabletten. Die optimierte Flüssigkeit enthielt 15% Curcumaöl, 10% Tween 80 und 75% PEG 400. Die Bestätigungsmessung ergab 94.43 ± 3.55 nm Tropfengröße und PDI = 0.544. Ein kleiner Mittelwert belegt keine enge Verteilung; die alleinige Angabe „ungefähr 94 nm“ unterschlägt Dispersität. [SNEDDS gegenüber direkter Beladung](ref:R03)\n\nGedruckt wurde mit 0.58-mm-Düse, 2.6 mm/s Ausgabegeschwindigkeit und 10 mm/s Füllbewegung. F1–F5 waren Zylinder mit 15 mm Durchmesser und 8 Schichten, vakuumgetrocknet bei 40 °C für 24 h. F2/F3 enthielten direkt eingebrachtes GLMP/RSV, F4/F5 die entsprechenden wirkstoffhaltigen SNEDDS; F6 kombinierte gleiche Mengen der F4/F5-Pasten. Getrocknetes F6 wog 1067.54 ± 77.32 mg mit gemessenen 4.052 ± 0.087 mg GLMP und 9.711 ± 0.097 mg RSV. Mehrkomponenten-Nanoformulierung bedeutet somit weder kleine Abmessungen noch hohe Wirkstoffbeladung.\n\nIn 900 mL Wasser mit 0.1% Sodium Lauryl Sulfate bei 37 °C und 75 rpm, n = 3, nähern sich die SNEDDS-Einzel- und Kombinationskurven in Originalabbildung 3 über 6–12 h vollständiger Freisetzung. Ohne SNEDDS verblieben GLMP und RSV bei ungefähr 65–70% beziehungsweise 50%. Das übertrifft die entsprechenden direkt beladenen Tabletten, doch die Arbeit bezeichnet alle Formulierungen ausdrücklich als verlängert freisetzend; der schnelle 30-min-Endpunkt der Lumefantrin-Studie wurde nicht erreicht. Die solubilisierende Flüssigkeit verbessert den verfügbaren Wirkstoffzustand, während HPMC und die nach Trocknung verschmolzene Matrix weiterhin Flüssigkeitszutritt und Austransport begrenzen können.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Ratten-Pharmakokinetik zeigt höhere Exposition nach Zerstörung der Druckarchitektur",
+          "markdown": "F6 und zwei vermarktete Einzelwirkstoffprodukte wurden an männlichen Wistar-Ratten in einem einmaligen Parallelversuch mit n = 6 je Gruppe verglichen. Dosen: 10 mg/kg GLMP und 20 mg/kg RSV. Sowohl Druck- als auch Vergleichstabletten wurden zermahlen, in 1% Carboxymethylcellulose suspendiert und per Magensonde verabreicht. GLMP wurde bis 24 h, RSV bis 72 h beprobt. Der Pharmakokinetikversuch prüft daher hauptsächlich die dispergierte Formulierung, nicht das Fortbestehen und die Freisetzungswirkung intakter Mehrkammergeometrie im Magen-Darm-Trakt. [Tiermethode, Tabelle 3 und Abbildung 6](ref:R03)\n\n| Endpunkt | GLMP: Druckformulierung / Vergleich | RSV: Druckformulierung / Vergleich |\n|---|---|---|\n| Cmax | 2246.667 / 2058.667 ng/mL | 2191 / 888 ng/mL |\n| AUC₀–t | 22365.33 / 14021.67 ng·h/mL | 68940.67 / 28120 ng·h/mL |\n| Tmax | 2 / 2 h | 4.67 / 4.67 h |\n| Relative Bioverfügbarkeit aus AUC₀–t | 159.50% | 245.16% |\n\nZur klaren Größenordnung sind Mittelwerte angegeben; die Originalabbildung enthält SD. 159.50% und 245.16% entsprechen dem 1.5950- und 2.4516-Fachen des Vergleichs, keinen Zunahmen um 159.50% und 245.16%. Relative Zunahmen sind 59.50% und 145.16%. Tmax wurde bei keinem Wirkstoff früher erreicht; höhere AUC bedeutet somit keinen früheren Gipfel. GLMP zeigte einen kleinen Gipfelunterschied und höhere spätere Konzentrationen, RSV sowohl einen höheren Gipfel als auch höhere Gesamtexposition.\n\nUnterschiedliche Gewinne beider Wirkstoffe in derselben Druckformulierung zeigen außerdem die Abhängigkeit von Wirkstoffeigenschaften und Vergleichsrezeptur. Patientenblutzucker, Blutlipide oder Nebenwirkungen wurden nicht gemessen. Aus zellulärer oder tierischer Exposition unmittelbar eine klinische Dosisreduktion abzuleiten, überschreitet die tatsächlich untersuchten Endpunkte.",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Fanous et al. — Originalabbildung 2: μCT-Vergleich nomineller Füllung und tatsächlicher Poren.",
+          "interpretation": "A/B/C entsprechen 65%/80%/100% Füllgrad. Jede Gruppe enthält einen Schnitt senkrecht zu z, Längsschnitte entlang x/y und eine dreidimensionale Rekonstruktion. A besitzt deutlich größere verbundene Kanäle; B/C zeigen ähnlich feine Kanäle und größere Feststoffanteile. Die Originallegende weist auf umgedrehte Rekonstruktion hin. Alle Schnitte, 2-mm-Maßstäbe und Graustufenbalken bleiben erhalten; sichtbare Leerfläche ist nicht unmittelbar die Volumenporosität aus Tabelle 2. [Strukturcharakterisierung](ref:R01)"
+        },
+        "F02": {
+          "caption": "Fanous et al. — Originalabbildung 6: Niedrige Füllung überschreitet den schnellen Freisetzungsendpunkt.",
+          "interpretation": "Achsen: 0–60 min und relativ gelöster Prozentsatz. Bordeauxrot 65% überschreitet nach 30 min die grüne 85%-Referenz; Violett 100% und Blau 80% sind langsamer, Schwarz zeigt den gepressten 120-mg-Vergleich. Punkte/Balken sind Mittelwert/SD bei n = 3. Saures CTAB-Medium vergleicht normierte In-vitro-Auflösung, keine dosisgleiche systemische Exposition. [Auflösungsversuch](ref:R01)"
+        },
+        "F03": {
+          "caption": "Cho et al. — Originalabbildung 9: unterschiedliche Auflösungszeitskalen für Olanzapin-Filme und Rohwirkstoff.",
+          "interpretation": "Achsen: min und gelöster Prozentsatz. Schwarzes freies OLZ bleibt nach 60 min bei ungefähr 44.6%; F3/F5/F6 erreichen nach 10 min hohe Plateaus. Rotes F6 ist anfangs schneller, grünes F3 und blaues F5 bleiben nahe beieinander. Unterschiedliche Zerfallszeiten zeigen, dass Filmzerfall und Wirkstoffauflösung verschiedene Messgrößen sind. [Originalabbildung und Formulierungen](ref:R02)"
+        },
+        "F04": {
+          "caption": "Ahmed et al. — Originalabbildung 3: SNEDDS erhöhen die Gesamtfreisetzung, benötigen aber weiterhin Stunden.",
+          "interpretation": "Links GLMP, rechts RSV. Blau F2/F3: ohne SNEDDS; Orange F4/F5: Einzelwirkstoff-SNEDDS; Grau F6: Kombination. Die Achsen zeigen h und prozentuale Wirkstofffreisetzung. Ohne SNEDDS entsteht früher ein niedrigeres Plateau; SNEDDS steigen über 6–12 h weiter. Das stützt einen solubilisierenden Formulierungseffekt, keine sofortige Freisetzung innerhalb weniger Minuten. [In-vitro-Formulierungsvergleich](ref:R03)"
+        },
+        "F05": {
+          "caption": "Ahmed et al. — Originalabbildung 6: Pharmakokinetik nach Sondengabe zermahlener Druck- und Vergleichsformulierungen.",
+          "interpretation": "A zeigt GLMP bis 24 h, B RSV bis 72 h. Rot: gedruckte SNEDDS-Formulierung; Blau: Vergleich; y-Achse: ng/mL. Rote Konzentrationen bleiben bei beiden später höher, mit größerem Gipfelunterschied für RSV. Sterne markieren berichtete Zeitpunkte mit p < 0.05, n = 6. Alle Tabletten wurden vor Gabe zermahlen und suspendiert; die Kurven validieren keine intakten Mehrkammer-Freisetzungswege in vivo. [Tier-Pharmakokinetik](ref:R03)"
+        }
+      }
+    }
+  }
+}

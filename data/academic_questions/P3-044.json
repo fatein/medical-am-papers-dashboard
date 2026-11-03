@@ -1,0 +1,292 @@
+{
+  "schema_version": 2,
+  "question_id": "P3-044",
+  "p": "P3",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_3bbeea6805f38b4e4153",
+    "doc_7943fe7969ae24dbc8af",
+    "doc_9fefa66b5c1fcc6c0863"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Controlled Release of Felodipine from 3D-Printed Tablets with Constant Surface Area: Influence of Surface Geometry",
+      "publisher": "Pharmaceutics",
+      "year": 2023,
+      "url": "https://doi.org/10.3390/pharmaceutics15020467",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Fabrication of Intragastric Floating, Controlled Release 3D Printed Theophylline Tablets Using Hot-Melt Extrusion and Fused Deposition Modeling",
+      "publisher": "Pharmaceutics",
+      "year": 2020,
+      "url": "https://doi.org/10.3390/pharmaceutics12010077",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Fused deposition modeling three-dimensional printing of flexible polyurethane intravaginal rings with controlled tunable release profiles for multiple active drugs",
+      "publisher": "Drug Delivery and Translational Research",
+      "year": 2022,
+      "url": "https://doi.org/10.1007/s13346-022-01133-6",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 8",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/6415/9967401/df1edf2508fd/pharmaceutics-15-00467-g008.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9967401/#pharmaceutics-15-00467-f008",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P3-044/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 9",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/6415/9967401/0b676e3c58fb/pharmaceutics-15-00467-g009.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9967401/#pharmaceutics-15-00467-f009",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P3-044/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Figure 6",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/6076/7022551/423a4845fa2f/pharmaceutics-12-00077-g006.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7022551/#pharmaceutics-12-00077-f006",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P3-044/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Figure 7",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/dae8/8888478/b2c3c81d480b/13346_2022_1133_Fig7_HTML.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8870081/#Fig7",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P3-044/F04.jpg"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Figure 10",
+      "image_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/dae8/8888478/142fc9c070b8/13346_2022_1133_Fig10_HTML.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8870081/#Fig10",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P3-044/F05.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "材料与结构如何实现缓释和可控释放？",
+      "direction": "释放控制",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "外壳改变有效暴露面，形状差异才转化为释放差异",
+          "markdown": "非洛地平研究把 5% w/w 药物与 95% PVA 制成丝材，以 185 °C 挤出、195 °C 打印内芯；PLA 外壳在 200 °C 打印。外壳包围侧面与底面，使溶出介质主要从顶部进入。圆、方、六边形、三角形内芯设计体积均为 79.97 mm³，但顶面面积不同。题名中的“恒定面积”是指限制释放面随过程变化的设计意图，并非四种形状具有相同面积。[内外分区实验](ref:R01)\n\n| 内芯形状 | 顶面面积 | 实测孔隙率 | 顶面与孔面合计/体积 |\n|---|---|---|---|\n| 圆形 | 38.48 mm² | 5.37 ± 2.89% | 0.55 ± 0.02 mm⁻¹ |\n| 方形 | 28.72 mm² | 30.78 ± 4.30% | 0.51 ± 0.01 mm⁻¹ |\n| 六边形 | 24.88 mm² | 22.12 ± 1.00% | 0.43 ± 0.01 mm⁻¹ |\n| 三角形 TX | 21.73 mm² | 14.68 ± 2.89% | 0.41 ± 0.01 mm⁻¹ |\n\n在 750 mL、1% w/v polysorbate 80、37 ± 0.5 °C、100 rpm 中，不加外壳时四种形状均约 6 h 完成释放，曲线没有明显分开；加壳后圆形和方形在 12 h 内接近完整释放，六边形和三角形在 24 h 仍约 80%。圆/方的 f₂ = 51.82，六边/三角为 76.51，而圆/三角只有 30.89。有效接触路径与实际孔隙同时改变，因此不能只按 CAD 顶面或“角越多越快”排序。虽然设为 100% 填充，同步辐射断层仍检出孔隙，名义实心并不等于无液体通道。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "溶胀和侵蚀证据要与拟合系数分开解释",
+          "markdown": "非洛地平内芯接触介质后形成明显的膨胀层，随后逐渐侵蚀；圆形与方形在 12 h 的照片中基本失去内芯，六边形、三角形仍有残留。PLA 外壳保持几何边界，但边界内的 PVA 并不静止。其 Peppas–Sahlin 拟合在 5–60% 释放区间得到 R² = 0.9977–0.9997；例如圆形 k₁ = −11.427、k₂ = 22.922，三角形 TX 为 −34.537、37.006。[原图 9 与模型表](ref:R01)\n\n这些负的 k₁ 不能被直接解释为负扩散通量，也不能仅因拟合好便把扩散贡献判定为零。该经验模型用两个时间项描述曲线，系数可能相互补偿；可观察到的溶胀、侵蚀照片支持材料松弛参与，却没有测出每个时刻扩散与侵蚀各占多少。无显著溶胀这一 Higuchi 假设也不满足，使用平方根时间直线来解释全部释放会遗漏材料变化。\n\n三角形体积从 79.97 增至 159.94 mm³ 时，顶面从 21.73 增至 34.49 mm²，曲线变快，TX/T2X 的 f₂ = 39.47；同一 T2X 体积中，标称 5% 与 10% FDP 的归一化释放曲线则接近。Table 5 的初始实测药量分别为 TX 4.23 ± 0.03 mg、T2X 5% 4.53 ± 0.36 mg、T2X 10% 8.59 ± 0.17 mg。体积标签与药量不是简单倍数关系，不能由“体积加倍”推算递送剂量加倍，更不能把百分比曲线重合当作相同 mg/h。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "茶碱基质的壳厚效应并非严格单调",
+          "markdown": "茶碱（THEO）、HPC、硬脂酸按 30:70:7 质量比混合，150 °C 热熔挤出后在 210 °C 打印。原文改变的是同一载药基质的填充与外周壳层，外壳本身也含药，与非洛地平的无药 PLA 屏障不同。溶出为 900 mL、0.1 M HCl、37 ± 0.5 °C、50 rpm、n = 3。[填充和壳厚对照](ref:R02)\n\n| 对照 | 固定条件 | 改变量 | 观测结果 |\n|---|---|---|---|\n| T1/T2/T3/T4 | 壳厚 0.8 mm | 填充 30/20/10/0% | 低填充组总体较快，但曲线并非所有时间点严格依次排列 |\n| T5/T2/T6/T7 | 填充 20% | 壳厚 1.2/0.8/0.4/0 mm | 无壳 T7 最快；1.2 与 0.4 mm 接近，0.8 mm 反而较慢 |\n\n因此，“有无致密壳层”的区别强于本实验中壳厚的单调梯度。作者将非单调结果联系到打印分辨率和层间间隙；Table 1 又显示 T5 与 T7 质量分别为 401.96 ± 8.75 和 266.24 ± 3.50 mg，不能把它们理解为相同总药量只改变阻力。\n\n线性拟合 R² 从 T7 的 0.9043 到 T1 的 0.9876 不等，约线性释放只描述所测时间窗，不是恒定血药浓度证据。T2 密度约 0.79 g/cm³，在室温、100 mL 酸液、50 rpm 的漂浮试验中超过 10 h；另一个 60% 填充样品不到 1 h 下沉。密度与空腔影响漂浮，但体外漂浮时间不能自动成为胃内滞留时长。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "致密储库膜用厚度调通量，与可侵蚀口服基质不同",
+          "markdown": "Chen 等使用亲水聚氨酯 HP-60D-35 打印储库型阴道环的 10 mm 段件，再装入含 20 mg 羟氯喹（HCQ）的 HPMC 半固体，两端以不透过聚氨酯封闭，使药物主要穿过控速膜（RCM）。打印外周 1–7 圈得到实测膜厚 0.30、0.54、0.73、1.02、1.25、1.42、1.69 mm；这些是 SEM 测量，不能以喷嘴直径直接替代。[膜厚与 HCQ 释放](ref:R03)\n\n段件置于 5 mL 模拟阴道液 pH 4.2，37 °C、100 rpm，每 24 h 全量换液，持续 14 天，n = 4。随膜变厚，14 天释放占装量的比例依次为 91.38 ± 5.63%、45.40 ± 1.87%、31.80 ± 1.89%、22.52 ± 0.86%、15.83 ± 0.65%、11.01 ± 0.40%、8.24 ± 0.15%。最薄与最厚膜报告的日释放浓度为 261.09 ± 32.49 和 23.54 ± 3.54 μg/mL/day；在每日 5 mL 换液条件下，它们对应不同日释放质量，不能直接当成体内局部组织浓度。\n\n厚度增加使扩散路径更长，且储库在观察期保持供药，形成接近线性的累计曲线。超过 3 圈、0.73 mm 后组间差异变小。最厚膜 14 天仅释放约 8%，说明研究验证了低通量的这一时间段，并未实际证明其余储量可按同速释放数月。原文最厚膜累计质量写为 0.58 mg，与 20 mg 装量、8.24% 及日释放量不一致；此处采用图示和比例，不沿用该质量值。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "蛋白和纳米颗粒需要连通孔，而不只是加厚同一种膜",
+          "markdown": "同一研究对 IgG、gp120 片段和香豆素 6 标记 PLGA-PEG 纳米颗粒改用 ATPU-75A。两种聚氨酯报告吸水率不同：HP-60D-35 为 35%，ATPU-75A 约 1.29%。后者的一侧打印开放孔道，以填充率与图案调节释放；50% grid 形成约 500 μm 孔，80% grid/triangle 形成约 150–200 μm 孔。25% 填充的成形不理想，提示减小填充并非可无限延伸的调速方法。[孔道、蛋白与颗粒实验](ref:R03)\n\n每段装 2 mg IgG 后，50%/80% grid 的平均释放为 17.13 ± 3.39/8.42 ± 3.27 μg/mL/day，约 3–4 天后趋于稳定；gp120 片段则为 26.89 ± 4.36/15.71 ± 3.16 μg/mL/day，首日略有突释。几何相同而载荷不同，建立稳定通量所需时间也不同。\n\n颗粒平均尺寸 283 nm、PDI = 0.27，每段装 160 μg，仍使用每日更换的 5 mL 介质、14 天、n = 4。累计释放显示填充率的效应强于 grid/triangle 的差别：\n\n| 孔道图案 | 50% 填充的累计释放 | 80% 填充的累计释放 |\n|---|---|---|\n| grid | 59.28 ± 0.79% | 22.12 ± 2.57% |\n| triangle | 69.13 ± 1.19% | 23.69 ± 1.05% |\n\ngrid 日释放较稳定，triangle 在 50% 填充时累计较高。这里测得的是带荧光颗粒的流出，不能直接替代颗粒内药物释放或蛋白生物活性检测；30 天细胞培养未见显著细胞活力和炎性因子变化，也不同于完整环在人体内长期佩戴的力学与局部暴露结果。",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Thanawuth et al. — 原图 8：有无外壳、几何与载药浓度的分组对照。",
+          "interpretation": "A 为无 PLA 外壳，各形状约 6 h 进入平台；B 加壳后圆/方与六边/三角分开；C 比较 TX 5%、T2X 5% 和 T2X 10% FDP，横轴 h、纵轴累计百分比。C 中两个 T2X 曲线接近，不能推出相同绝对药量通量；实测装量必须与归一化曲线一起读。[分组溶出](ref:R01)"
+        },
+        "F02": {
+          "caption": "Thanawuth et al. — 原图 9：受外壳限制的内芯仍会膨胀和侵蚀。",
+          "interpretation": "列依次为圆、方、六边、三角，行是 0、0.5、1、2、12、24 h。白色湿润内芯早期膨胀，12 h 圆/方腔体基本空出，六边/三角仍有残留；24 h 圆/方灰格不是新增观测。图提供材料动态变化证据，不能把固定蓝色外轮廓当作整个药物基质始终不变。[形貌随时间变化](ref:R01)"
+        },
+        "F03": {
+          "caption": "Giri et al. — 原图 6：填充与壳厚对茶碱释放的不同影响。",
+          "interpretation": "A 固定 0.8 mm 壳，比较 30/20/10/0% 填充；B 固定 20% 填充，比较 1.2/0.8/0.4/0 mm。横轴 0–600 min，纵轴药物释放百分比，误差条为 n = 3 的 SD。B 中无壳最快，但 1.2 mm 并非最慢；部分终点超过 100%，不能解读为生成了更多药物，应保留分析与归一化变异。[原始释放曲线](ref:R02)"
+        },
+        "F04": {
+          "caption": "Chen et al. — 原图 7：HCQ 控速膜的每日与累计释放。",
+          "interpretation": "A/B 比较 1P–7P，C/D 放大 4P–7P。A/C 左轴 μg/mL、右轴每日百分比，B/D 左轴累计 mg、右轴累计百分比，横轴均为天。薄膜的高通量与厚膜的低通量在 14 天内持续分离；D 的 7P 终点约 1.6 mg，也显示正文 0.58 mg 不宜直接采用。[控速膜实验](ref:R03)"
+        },
+        "F05": {
+          "caption": "Chen et al. — 原图 10：孔道填充率与图案对纳米颗粒流出的影响。",
+          "interpretation": "A/B 是 grid 50%/80%，C/D 是 triangle 50%/80%，蓝虚线为各组平均日浓度，E 为累计 μg。由 50% 改为 80% 后两种图案均明显变慢；triangle 50% 日间起伏较大。E 的线性累计拟合不能抹去 A–D 的波动，也不是纳米颗粒内部药物的释放曲线。[颗粒释放](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do materials and structures produce sustained and controlled release?",
+      "direction": "Release control",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "A shell changes effective exposure before shape differences become release differences",
+          "markdown": "The felodipine study made filament from 5% w/w drug and 95% PVA, extruded at 185 °C and printed as the core at 195 °C; the PLA shell was printed at 200 °C. The shell covered sides and base, admitting medium mainly from the top. Round, square, hexagonal and triangular cores each had a designed volume of 79.97 mm³ but different top areas. “Constant surface area” in the title refers to the intention of constraining the releasing face during the process, not identical areas across the four shapes. [Inner/outer compartment experiment](ref:R01)\n\n| Core shape | Top area | Measured porosity | Combined top and pore area/volume |\n|---|---|---|---|\n| Round | 38.48 mm² | 5.37 ± 2.89% | 0.55 ± 0.02 mm⁻¹ |\n| Square | 28.72 mm² | 30.78 ± 4.30% | 0.51 ± 0.01 mm⁻¹ |\n| Hexagon | 24.88 mm² | 22.12 ± 1.00% | 0.43 ± 0.01 mm⁻¹ |\n| Triangle TX | 21.73 mm² | 14.68 ± 2.89% | 0.41 ± 0.01 mm⁻¹ |\n\nIn 750 mL of 1% w/v polysorbate 80 at 37 ± 0.5 °C and 100 rpm, all unshelled shapes completed release around 6 h without clear curve separation. With shells, round and square approached complete release within 12 h, while hexagon and triangle remained around 80% at 24 h. Round/square gave f₂ = 51.82, hexagon/triangle 76.51 and round/triangle only 30.89. Effective contact paths and actual porosity both varied; CAD top area alone or a rule that more corners mean faster release cannot rank these specimens. Although infill was set to 100%, synchrotron tomography detected pores: nominally solid does not mean no liquid channels.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Swelling and erosion observations must be distinguished from fitted coefficients",
+          "markdown": "The felodipine core developed a visible swollen layer on contact with medium and then eroded. Round and square cores were largely absent in the 12 h photographs, while hexagonal and triangular residues remained. PLA maintained the boundary, but PVA inside it did not remain static. Peppas–Sahlin fits over the 5–60% release interval gave R² = 0.9977–0.9997. For example, round k₁ = −11.427 and k₂ = 22.922; triangle TX gave −34.537 and 37.006. [Original Figure 9 and model table](ref:R01)\n\nNegative k₁ cannot directly represent negative diffusive flux, nor does a good fit alone establish zero diffusion. This empirical model describes curves with two time terms whose coefficients can compensate. Visible swelling and erosion support material relaxation, but do not measure the fraction attributable to diffusion or erosion at every time. The Higuchi assumption of negligible swelling is also unmet; a square-root-of-time line would omit material evolution.\n\nIncreasing triangular volume from 79.97 to 159.94 mm³ increased top area from 21.73 to 34.49 mm² and accelerated release, with TX/T2X f₂ = 39.47. At the same T2X volume, nominal 5% and 10% FDP gave similar normalized curves. Table 5 lists initial measured drug amounts of 4.23 ± 0.03 mg for TX, 4.53 ± 0.36 mg for T2X 5%, and 8.59 ± 0.17 mg for T2X 10%. Volume labels and drug amounts are not simple multiples here. Doubling the volume therefore cannot be used to calculate a doubled delivered dose, and overlapping percentage curves do not mean identical mg/h.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Shell-thickness effects in the theophylline matrix are not strictly monotonic",
+          "markdown": "Theophylline (THEO), HPC and stearic acid were mixed at 30:70:7 by mass, hot-melt extruded at 150 °C and printed at 210 °C. Infill and peripheral shells were varied within the same drug-bearing matrix; the shell itself contained drug, unlike the drug-free PLA barrier in the felodipine experiment. Dissolution used 900 mL of 0.1 M HCl at 37 ± 0.5 °C, 50 rpm and n = 3. [Infill and shell comparisons](ref:R02)\n\n| Comparison | Fixed condition | Variable | Observation |\n|---|---|---|---|\n| T1/T2/T3/T4 | Shell 0.8 mm | Infill 30/20/10/0% | Lower infill was generally faster, but curves were not strictly ordered at every time |\n| T5/T2/T6/T7 | Infill 20% | Shell 1.2/0.8/0.4/0 mm | Unshelled T7 was fastest; 1.2 and 0.4 mm were similar, while 0.8 mm was slower |\n\nThe presence versus absence of a dense shell therefore mattered more than a monotonic thickness gradient in this experiment. The authors related the nonmonotonic result to printing resolution and interlayer gaps. Table 1 also gives masses of 401.96 ± 8.75 and 266.24 ± 3.50 mg for T5 and T7; these are not equal-dose specimens differing only in resistance.\n\nLinear-fit R² ranged from 0.9043 for T7 to 0.9876 for T1. Approximate linearity describes the measured interval, not constant plasma concentration. T2 had a density near 0.79 g/cm³ and floated for over 10 h in 100 mL acid at room temperature and 50 rpm; another specimen with 60% infill sank within 1 h. Density and cavities affect floating, but in-vitro flotation time does not automatically become gastric residence time.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "A dense reservoir membrane tunes flux through thickness, unlike an eroding oral matrix",
+          "markdown": "Chen and colleagues printed 10 mm reservoir intravaginal-ring segments from hydrophilic polyurethane HP-60D-35, filled them with HPMC semisolid containing 20 mg hydroxychloroquine (HCQ), and sealed both ends with impermeable polyurethane. Drug therefore mainly traversed the rate-controlling membrane (RCM). Printing 1–7 perimeters produced measured thicknesses of 0.30, 0.54, 0.73, 1.02, 1.25, 1.42 and 1.69 mm. These are SEM measurements, not values interchangeable with nozzle diameter. [Membrane thickness and HCQ release](ref:R03)\n\nSegments were incubated in 5 mL vaginal-fluid simulant at pH 4.2, 37 °C and 100 rpm, with complete replacement every 24 h for 14 days, n = 4. With increasing thickness, fractions released over 14 days were 91.38 ± 5.63%, 45.40 ± 1.87%, 31.80 ± 1.89%, 22.52 ± 0.86%, 15.83 ± 0.65%, 11.01 ± 0.40% and 8.24 ± 0.15%. Reported daily release concentrations for the thinnest and thickest membranes were 261.09 ± 32.49 and 23.54 ± 3.54 μg/mL/day. Under daily 5 mL replacement these correspond to different daily released masses, not directly to local tissue concentrations in vivo.\n\nThicker membranes lengthened diffusion paths while reservoirs maintained supply over the observation period, yielding near-linear cumulative curves. Differences narrowed above 3 perimeters and 0.73 mm. The thickest membrane released only around 8% in 14 days, validating low flux during that interval rather than months of unchanged release from the remaining reservoir. The text gives 0.58 mg cumulative release for the thickest membrane, inconsistent with the 20 mg load, 8.24% and daily release. The graph and fractions are retained here instead of that mass value.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Proteins and nanoparticles need connected pores, not simply a thicker version of the same membrane",
+          "markdown": "The same study used ATPU-75A for IgG, gp120 fragment and coumarin-6-labeled PLGA-PEG nanoparticles. Reported water uptake differed between the polyurethanes: 35% for HP-60D-35 versus approximately 1.29% for ATPU-75A. One side of the latter reservoir had open printed channels, with infill and pattern controlling release. A 50% grid gave approximately 500 μm pores; 80% grid/triangle gave approximately 150–200 μm pores. Printing at 25% infill was unsatisfactory, showing that reducing infill is not an indefinitely extensible control method. [Pore, protein and particle experiments](ref:R03)\n\nWith 2 mg IgG per segment, mean release for 50%/80% grid was 17.13 ± 3.39/8.42 ± 3.27 μg/mL/day and approached stability after approximately 3–4 days. The gp120 fragment gave 26.89 ± 4.36/15.71 ± 3.16 μg/mL/day with a small first-day burst. The same geometry with different payloads therefore required different times to establish stable flux.\n\nParticles averaged 283 nm with PDI = 0.27, at a 160 μg load per segment. The experiment again used daily replacement of 5 mL medium over 14 days, n = 4. Cumulative release showed a stronger infill effect than the grid/triangle difference:\n\n| Pore pattern | Cumulative release at 50% infill | Cumulative release at 80% infill |\n|---|---|---|\n| grid | 59.28 ± 0.79% | 22.12 ± 2.57% |\n| triangle | 69.13 ± 1.19% | 23.69 ± 1.05% |\n\nGrid gave more consistent daily release, while triangle gave higher cumulative release at 50% infill. This measured outflow of fluorescent particles, not drug release from within those particles or protein bioactivity. The absence of significant viability or inflammatory-mediator changes in 30-day cell culture likewise differs from mechanical performance and local exposure during long-term human use of a complete ring.",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Thanawuth et al. — Original Figure 8: comparisons of shell presence, geometry and loading concentration.",
+          "interpretation": "A lacks a PLA shell and all shapes plateau near 6 h. B adds shells and separates round/square from hexagon/triangle. C compares TX 5%, T2X 5% and T2X 10% FDP; axes show h and cumulative percent. Similar T2X curves in C do not establish identical absolute drug flux. Measured loading must accompany the normalized curves. [Grouped dissolution](ref:R01)"
+        },
+        "F02": {
+          "caption": "Thanawuth et al. — Original Figure 9: a shell-constrained core still swells and erodes.",
+          "interpretation": "Columns are round, square, hexagon and triangle; rows are 0, 0.5, 1, 2, 12 and 24 h. White hydrated cores swell early. Round/square cavities are largely empty at 12 h, while hexagon/triangle retain material. Gray round/square cells at 24 h are not additional observations. This shows material evolution; the fixed blue boundary does not make the entire drug matrix static. [Time-dependent morphology](ref:R01)"
+        },
+        "F03": {
+          "caption": "Giri et al. — Original Figure 6: different effects of infill and shell thickness on theophylline release.",
+          "interpretation": "A holds shell thickness at 0.8 mm and compares 30/20/10/0% infill. B holds infill at 20% and compares 1.2/0.8/0.4/0 mm shells. Time spans 0–600 min and the y-axis is percent released; error bars are SD for n = 3. Unshelled tablets are fastest in B, but 1.2 mm is not slowest. Some endpoints exceed 100%; this reflects assay/normalization variation, not creation of additional drug. [Original release curves](ref:R02)"
+        },
+        "F04": {
+          "caption": "Chen et al. — Original Figure 7: daily and cumulative HCQ release through rate-controlling membranes.",
+          "interpretation": "A/B compare 1P–7P; C/D enlarge 4P–7P. Left/right axes in A/C are μg/mL and daily percent; in B/D they are cumulative mg and cumulative percent. All x-axes are days. Thin-membrane high flux and thick-membrane low flux remain separated over 14 days. The 7P endpoint in D is near 1.6 mg, also showing why the text value of 0.58 mg should not be adopted. [Membrane experiment](ref:R03)"
+        },
+        "F05": {
+          "caption": "Chen et al. — Original Figure 10: pore infill and pattern affect nanoparticle outflow.",
+          "interpretation": "A/B are grid 50%/80%; C/D are triangle 50%/80%. Blue dashed lines indicate group mean daily concentrations and E cumulative μg. Both patterns slow markedly from 50% to 80%; triangle 50% fluctuates more between days. Linear cumulative fits in E do not erase the variation in A–D and do not measure drug release from inside nanoparticles. [Particle release](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie ermöglichen Materialien und Strukturen anhaltende und kontrollierte Freisetzung?",
+      "direction": "Freisetzungskontrolle",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Die Hülle verändert die exponierte Fläche, bevor Formunterschiede die Freisetzung trennen",
+          "markdown": "Die Felodipin-Studie fertigte Filament aus 5% w/w Wirkstoff und 95% PVA, extrudierte bei 185 °C und druckte den Kern bei 195 °C; die PLA-Hülle wurde bei 200 °C gedruckt. Sie umschloss Seiten und Boden, sodass Medium hauptsächlich von oben eindrang. Runde, quadratische, hexagonale und dreieckige Kerne hatten jeweils ein geplantes Volumen von 79.97 mm³, aber unterschiedliche Deckflächen. „Konstante Oberfläche“ im Titel bezeichnet die beabsichtigte Begrenzung der Freisetzungsfläche im Verlauf, keine gleichen Flächen der vier Formen. [Experiment mit Innen- und Außenkompartiment](ref:R01)\n\n| Kernform | Deckfläche | Gemessene Porosität | Deck- plus Porenfläche/Volumen |\n|---|---|---|---|\n| Rund | 38.48 mm² | 5.37 ± 2.89% | 0.55 ± 0.02 mm⁻¹ |\n| Quadratisch | 28.72 mm² | 30.78 ± 4.30% | 0.51 ± 0.01 mm⁻¹ |\n| Hexagonal | 24.88 mm² | 22.12 ± 1.00% | 0.43 ± 0.01 mm⁻¹ |\n| Dreieck TX | 21.73 mm² | 14.68 ± 2.89% | 0.41 ± 0.01 mm⁻¹ |\n\nIn 750 mL 1% w/v Polysorbat 80 bei 37 ± 0.5 °C und 100 rpm beendeten alle Formen ohne Hülle die Freisetzung ungefähr nach 6 h, ohne klare Kurventrennung. Mit Hülle näherten sich Kreis und Quadrat innerhalb von 12 h vollständiger Freisetzung; Hexagon und Dreieck lagen nach 24 h noch bei ungefähr 80%. Kreis/Quadrat ergab f₂ = 51.82, Hexagon/Dreieck 76.51, Kreis/Dreieck nur 30.89. Kontaktwege und tatsächliche Porosität veränderten sich gemeinsam. Die CAD-Deckfläche allein oder die Regel „mehr Ecken, schneller“ ordnen die Proben daher nicht zuverlässig. Trotz 100% Füllgrad detektierte Synchrotrontomographie Poren: Nominell massiv bedeutet nicht frei von Flüssigkeitskanälen.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Quellung und Erosion müssen getrennt von Anpassungskoeffizienten interpretiert werden",
+          "markdown": "Der Felodipin-Kern bildete bei Medienkontakt eine sichtbare Quellschicht und erodierte anschließend. Runde und quadratische Kerne waren auf den 12-h-Fotos weitgehend verschwunden; hexagonale und dreieckige Reste blieben. PLA erhielt die Grenze, aber PVA innerhalb dieser Grenze blieb nicht statisch. Peppas–Sahlin-Anpassungen im Bereich von 5–60% Freisetzung ergaben R² = 0.9977–0.9997. Beispielsweise betrugen beim Kreis k₁ = −11.427 und k₂ = 22.922, beim Dreieck TX −34.537 und 37.006. [Originalabbildung 9 und Modelltabelle](ref:R01)\n\nNegatives k₁ bedeutet nicht unmittelbar negativen Diffusionsfluss; ebenso belegt eine gute Anpassung allein keinen fehlenden Diffusionsanteil. Das empirische Modell beschreibt Kurven mit zwei Zeittermen, deren Koeffizienten sich kompensieren können. Sichtbare Quellung und Erosion stützen Materialrelaxation, quantifizieren aber nicht zu jedem Zeitpunkt die Anteile von Diffusion und Erosion. Auch die Higuchi-Annahme vernachlässigbarer Quellung ist nicht erfüllt; eine Gerade über der Quadratwurzel der Zeit würde Materialänderungen ausblenden.\n\nDas größere Dreieckvolumen von 79.97 auf 159.94 mm³ erhöhte die Deckfläche von 21.73 auf 34.49 mm² und beschleunigte die Freisetzung, mit TX/T2X f₂ = 39.47. Beim gleichen T2X-Volumen ergaben nominell 5% und 10% FDP ähnliche normierte Kurven. Tabelle 5 nennt anfängliche gemessene Wirkstoffmengen von 4.23 ± 0.03 mg für TX, 4.53 ± 0.36 mg für T2X 5% und 8.59 ± 0.17 mg für T2X 10%. Volumenbezeichnung und Wirkstoffmenge stehen hier nicht in einfachem Vielfachenverhältnis. Aus verdoppeltem Volumen lässt sich daher keine verdoppelte verabreichte Dosis berechnen; überlappende Prozentkurven bedeuten nicht gleiche mg/h.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Der Einfluss der Hülldicke in der Theophyllin-Matrix ist nicht streng monoton",
+          "markdown": "Theophyllin (THEO), HPC und Stearinsäure wurden im Massenverhältnis 30:70:7 gemischt, bei 150 °C schmelzextrudiert und bei 210 °C gedruckt. Füllgrad und periphere Hülle wurden innerhalb derselben wirkstoffhaltigen Matrix verändert; die Hülle enthielt selbst Wirkstoff, anders als die wirkstofffreie PLA-Barriere des Felodipin-Experiments. Die Auflösung erfolgte in 900 mL 0.1 M HCl bei 37 ± 0.5 °C, 50 rpm und n = 3. [Füllgrad- und Hüllvergleich](ref:R02)\n\n| Vergleich | Festgehalten | Verändert | Beobachtung |\n|---|---|---|---|\n| T1/T2/T3/T4 | Hülle 0.8 mm | Füllgrad 30/20/10/0% | Geringere Füllung war insgesamt schneller; keine strenge Reihenfolge zu jedem Zeitpunkt |\n| T5/T2/T6/T7 | Füllgrad 20% | Hülle 1.2/0.8/0.4/0 mm | Hüllenloses T7 am schnellsten; 1.2 und 0.4 mm ähnlich, 0.8 mm langsamer |\n\nDer Unterschied zwischen vorhandener und fehlender dichter Hülle war somit stärker als ein monotoner Dickengradient. Die Autoren verbanden den nichtmonotonen Befund mit Druckauflösung und Schichtzwischenräumen. Tabelle 1 nennt zudem Massen von 401.96 ± 8.75 und 266.24 ± 3.50 mg für T5 und T7; dies sind keine gleich dosierten Proben, die nur im Widerstand abweichen.\n\nDas R² der linearen Anpassung reichte von 0.9043 für T7 bis 0.9876 für T1. Näherungsweise Linearität beschreibt das Messintervall, keine konstante Plasmakonzentration. T2 hatte ungefähr 0.79 g/cm³ Dichte und schwamm über 10 h in 100 mL Säure bei Raumtemperatur und 50 rpm; eine andere Probe mit 60% Füllgrad sank innerhalb von 1 h. Dichte und Hohlräume beeinflussen das Schwimmen, dessen In-vitro-Dauer aber nicht automatisch die Magenverweilzeit darstellt.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Eine dichte Reservoirmembran steuert den Fluss über ihre Dicke, anders als eine erodierende orale Matrix",
+          "markdown": "Chen und Mitarbeitende druckten 10-mm-Segmente eines Reservoir-Vaginalrings aus hydrophilem Polyurethan HP-60D-35. Sie füllten HPMC-Halbfestzubereitung mit 20 mg Hydroxychloroquin (HCQ) ein und verschlossen beide Enden mit undurchlässigem Polyurethan. Wirkstoff durchquerte somit hauptsächlich die geschwindigkeitsbestimmende Membran (RCM). 1–7 gedruckte Umfangsbahnen ergaben gemessene Dicken von 0.30, 0.54, 0.73, 1.02, 1.25, 1.42 und 1.69 mm. Diese SEM-Messwerte sind nicht durch den Düsendurchmesser ersetzbar. [Membrandicke und HCQ-Freisetzung](ref:R03)\n\nDie Segmente lagen in 5 mL Vaginalflüssigkeitssimulanz bei pH 4.2, 37 °C und 100 rpm; vollständiger Medienwechsel erfolgte alle 24 h über 14 Tage, n = 4. Mit steigender Dicke betrugen die nach 14 Tagen freigesetzten Anteile 91.38 ± 5.63%, 45.40 ± 1.87%, 31.80 ± 1.89%, 22.52 ± 0.86%, 15.83 ± 0.65%, 11.01 ± 0.40% und 8.24 ± 0.15%. Für dünnste und dickste Membran wurden tägliche Freisetzungskonzentrationen von 261.09 ± 32.49 und 23.54 ± 3.54 μg/mL/day berichtet. Bei täglichem Wechsel von 5 mL entsprechen sie unterschiedlichen Tagesmengen, keinen unmittelbar übertragbaren lokalen Gewebekonzentrationen in vivo.\n\nDickere Membranen verlängerten Diffusionswege, während das Reservoir im Beobachtungszeitraum Nachschub lieferte; kumulative Kurven waren nahezu linear. Oberhalb von 3 Bahnen und 0.73 mm wurden Gruppenunterschiede kleiner. Die dickste Membran setzte in 14 Tagen nur ungefähr 8% frei. Validiert ist damit der geringe Fluss dieses Zeitraums, keine monatelang unveränderte Abgabe des Restvorrats. Der Text nennt für die dickste Membran 0.58 mg kumulativ, unvereinbar mit 20 mg Beladung, 8.24% und Tagesfreisetzung. Hier werden deshalb Abbildung und Anteile statt dieses Massenwerts verwendet.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Proteine und Nanopartikel benötigen verbundene Poren statt nur einer dickeren gleichen Membran",
+          "markdown": "Dieselbe Studie verwendete ATPU-75A für IgG, gp120-Fragment und Coumarin-6-markierte PLGA-PEG-Nanopartikel. Die berichtete Wasseraufnahme der Polyurethane unterschied sich: HP-60D-35 35%, ATPU-75A ungefähr 1.29%. Eine Seite des letzteren Reservoirs enthielt offene gedruckte Kanäle; Füllgrad und Muster steuerten die Freisetzung. Ein 50%-Grid ergab ungefähr 500 μm große Poren, 80%-Grid/Triangle ungefähr 150–200 μm. Bei 25% Füllgrad war die Herstellung unbefriedigend; geringerer Füllgrad ist deshalb keine unbegrenzt fortsetzbare Stellgröße. [Poren-, Protein- und Partikelversuche](ref:R03)\n\nBei 2 mg IgG je Segment betrug die mittlere Freisetzung für 50%/80%-Grid 17.13 ± 3.39/8.42 ± 3.27 μg/mL/day und stabilisierte sich nach ungefähr 3–4 Tagen. Das gp120-Fragment ergab 26.89 ± 4.36/15.71 ± 3.16 μg/mL/day mit leichtem Burst am ersten Tag. Gleiche Geometrie mit anderen Inhalten benötigte somit unterschiedliche Zeiten bis zum stabilen Fluss.\n\nDie Partikel waren im Mittel 283 nm groß, PDI = 0.27; jedes Segment enthielt 160 μg. Erneut wurden 5 mL Medium täglich über 14 Tage gewechselt, n = 4. Die kumulative Freisetzung zeigte einen stärkeren Füllgradeffekt als den Unterschied Grid/Triangle:\n\n| Porenmuster | Kumulativ bei 50% Füllgrad | Kumulativ bei 80% Füllgrad |\n|---|---|---|\n| grid | 59.28 ± 0.79% | 22.12 ± 2.57% |\n| triangle | 69.13 ± 1.19% | 23.69 ± 1.05% |\n\nGrid lieferte gleichmäßigere Tageswerte, Triangle bei 50% Füllgrad höhere Gesamtfreisetzung. Gemessen wurde der Austritt fluoreszierender Partikel, keine Freisetzung aus deren Innerem oder Proteinbioaktivität. Auch fehlende signifikante Änderungen von Zellvitalität und Entzündungsmediatoren in 30-tägiger Zellkultur unterscheiden sich von Mechanik und lokaler Exposition beim langfristigen Tragen eines vollständigen Rings im Menschen.",
+          "figure_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Thanawuth et al. — Originalabbildung 8: Vergleiche von Hülle, Geometrie und Beladungskonzentration.",
+          "interpretation": "A zeigt Proben ohne PLA-Hülle; alle Formen erreichen ungefähr nach 6 h ein Plateau. B mit Hülle trennt Kreis/Quadrat von Hexagon/Dreieck. C vergleicht TX 5%, T2X 5% und T2X 10% FDP; Achsen: h und kumulativer Prozentsatz. Ähnliche T2X-Kurven belegen keinen identischen absoluten Wirkstofffluss. Gemessene Beladung und normierte Kurven müssen gemeinsam gelesen werden. [Gruppierte Auflösung](ref:R01)"
+        },
+        "F02": {
+          "caption": "Thanawuth et al. — Originalabbildung 9: Auch ein begrenzter Kern quillt und erodiert.",
+          "interpretation": "Spalten: Kreis, Quadrat, Hexagon, Dreieck; Zeilen: 0, 0.5, 1, 2, 12 und 24 h. Weiße hydratisierte Kerne quellen früh. Nach 12 h sind Kreis-/Quadratkammern weitgehend leer, während Hexagon/Dreieck Material behalten. Graue Kreis-/Quadratfelder bei 24 h sind keine zusätzlichen Beobachtungen. Die Bilder zeigen Materialänderung; eine feste blaue Grenze macht nicht die gesamte Wirkstoffmatrix statisch. [Zeitabhängige Morphologie](ref:R01)"
+        },
+        "F03": {
+          "caption": "Giri et al. — Originalabbildung 6: unterschiedliche Füllgrad- und Hülldickeneffekte auf Theophyllin.",
+          "interpretation": "A hält die Hülle bei 0.8 mm und vergleicht 30/20/10/0% Füllgrad; B hält 20% Füllgrad und vergleicht 1.2/0.8/0.4/0 mm Hülle. Die Zeit reicht von 0–600 min, die y-Achse zeigt Prozentfreisetzung; Fehlerbalken sind SD bei n = 3. Ohne Hülle ist B am schnellsten, 1.2 mm jedoch nicht am langsamsten. Einige Endpunkte überschreiten 100%; das betrifft Analyse-/Normierungsvariation, keine Entstehung zusätzlichen Wirkstoffs. [Originalkurven](ref:R02)"
+        },
+        "F04": {
+          "caption": "Chen et al. — Originalabbildung 7: tägliche und kumulative HCQ-Abgabe durch Kontrollmembranen.",
+          "interpretation": "A/B vergleichen 1P–7P; C/D vergrößern 4P–7P. Links/rechts in A/C: μg/mL und Tagesprozent; in B/D: kumulative mg und kumulativer Prozentsatz. Alle Zeitachsen sind Tage. Hoher Fluss dünner und niedriger Fluss dicker Membranen bleiben über 14 Tage getrennt. Der 7P-Endpunkt in D liegt bei ungefähr 1.6 mg; auch dies spricht gegen die Übernahme der textlichen 0.58 mg. [Membranexperiment](ref:R03)"
+        },
+        "F05": {
+          "caption": "Chen et al. — Originalabbildung 10: Porenfüllgrad und Muster steuern Nanopartikelaustritt.",
+          "interpretation": "A/B zeigen Grid 50%/80%, C/D Triangle 50%/80%. Blaue gestrichelte Linien markieren mittlere Tageskonzentrationen, E kumulative μg. Beide Muster werden von 50% auf 80% deutlich langsamer; Triangle 50% schwankt stärker zwischen Tagen. Lineare kumulative Anpassungen in E beseitigen die Schwankungen in A–D nicht und messen keine Freisetzung aus dem Inneren der Nanopartikel. [Partikelfreisetzung](ref:R03)"
+        }
+      }
+    }
+  }
+}

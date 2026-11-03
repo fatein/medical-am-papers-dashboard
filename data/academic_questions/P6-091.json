@@ -1,0 +1,319 @@
+{
+  "schema_version": 2,
+  "question_id": "P6-091",
+  "p": "P6",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_2b0caeab4cb1e2ad3c3d",
+    "doc_d5f12a7d6e989c2ec63d",
+    "doc_sd_454afa21839e7059f32f",
+    "KB20264B0B4CF8B793"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "3D printed training model with sensorized arachnoid for endoscopic transsphenoidal surgery: development and initial validation",
+      "publisher": "Heliyon",
+      "year": 2025,
+      "url": "https://doi.org/10.1016/j.heliyon.2025.e43380",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Three-dimensional printed neonatal cannulation phantom for ultrasound-guided vascular access training",
+      "publisher": "Scientific Reports",
+      "year": 2026,
+      "url": "https://doi.org/10.1038/s41598-025-34863-x",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Low-cost three-dimensional printed phantom for neuraxial anesthesia training: Development and comparison to a commercial model",
+      "publisher": "PLOS ONE",
+      "year": 2018,
+      "url": "https://doi.org/10.1371/journal.pone.0191664",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Validation of a 3D-printed robot-assisted partial nephrectomy training model",
+      "publisher": "BJUI Compass",
+      "year": 2024,
+      "url": "https://doi.org/10.1002/bco2.269",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-091/F01.png",
+      "source_url": "https://mauro-serpelloni.unibs.it/wp-content/uploads/3D-printed-training-model-with-sensorized-arachnoid-for-endoscopic-transsphenoidal-surgery-development-and-initial-validation.pdf#page=4",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Fig. 9",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-091/F02.png",
+      "source_url": "https://mauro-serpelloni.unibs.it/wp-content/uploads/3D-printed-training-model-with-sensorized-arachnoid-for-endoscopic-transsphenoidal-surgery-development-and-initial-validation.pdf#page=8",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R01",
+      "original_label": "Fig. 11",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-091/F03.png",
+      "source_url": "https://mauro-serpelloni.unibs.it/wp-content/uploads/3D-printed-training-model-with-sensorized-arachnoid-for-endoscopic-transsphenoidal-surgery-development-and-initial-validation.pdf#page=9",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R01",
+      "original_label": "Fig. 13",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-091/F04.png",
+      "source_url": "https://mauro-serpelloni.unibs.it/wp-content/uploads/3D-printed-training-model-with-sensorized-arachnoid-for-endoscopic-transsphenoidal-surgery-development-and-initial-validation.pdf#page=10",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R02",
+      "original_label": "Fig. 5",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-091/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12868720/#Fig5",
+      "license": "CC BY-NC-ND 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "专科操作模拟器如何支持重复练习？",
+      "direction": "模拟与训练",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "把保留的解剖框架和每轮消耗的部件分开",
+          "markdown": "Santona 等的经蝶手术模拟器将鼻腔与鞍区解剖模块和传感水箱分开。骨性框架采用打印聚乳酸，鼻中隔采用热塑性聚氨酯，皮肤与黏膜由硅胶浇注；聚合物薄膜和水模拟蛛网膜与脑脊液，熟蛋白充当可移除的肿瘤替代物。这种结构允许保留进入路径而替换局部目标，比把整件模型视作单一耗材更适合重复任务。[模块与材料](ref:R01)\n\n但“可拆装”和“已证明每轮等价”是不同结果。重新装入薄膜、调整液体和放入目标物都会改变初始载荷。论文没有给出每次重置所需时间、薄膜可用轮数或不同操作者重装后的误差分布，因此模块结构本身没有量化课程吞吐量。\n\n实际专家试用还简化了通道：上部蝶骨预先钻开，鼻甲和鼻中隔被移除。图中的完整解剖装配不能当作全部测试条件；测得的力主要来自目标区域的处理，不包含在完整狭窄鼻腔中进入、钻骨与辨认解剖的全流程。一次练习究竟重复了哪些步骤，需要从试验方法而非模型照片判断。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "更换薄膜后，传感读数依赖是否恢复了相同初始状态",
+          "markdown": "传感器测量水箱内外压差，再通过标定换算薄膜受力。作者用带测力单元的位移台进行压入试验，在 1–15 mm 范围内测试 8 个深度，每个条件连续重复 7 次；另在不同日期重复 3 轮，每轮更换薄膜。这样同时检查了同一状态下的重复与更换耗材后的再现，但并未分离每一种误差来源。[标定设计与结果](ref:R01)\n\n力与压力的线性拟合为 R²=0.972，换算灵敏度 1.289 N/kPa。较高压力处误差条变宽，不能把整体拟合优度解释为全量程相同精度。尤其当评分依赖局部峰值，压力转成力的误差仍会传递到最后的动作指标。\n\n研究明确发现液体量和残留空气影响触感与压差，并据此固定加液条件；这使“重置”成为测量链的一部分。若第二轮薄膜更松、气泡更多或目标物预压不同，读数下降可能来自模型状态，而非操作更轻柔。作者的标准化措施提高了模型内比较的可解释性，但没有与人体蛛网膜进行同条件力学匹配。\n\n标定装置采用 1 Hz 采样。它支持所记录的慢变载荷与采样点峰值分析，不能在没有更高时间分辨率核验的情况下声称捕捉了所有短暂冲击。低频序列中没有出现尖峰，不等于实际动作没有快速载荷。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "单次操作的下降曲线表示目标物减压，不是学习曲线",
+          "markdown": "试用包括 11 名有经验的医师，其中神经外科 3 名、耳鼻喉科 8 名，相关经验为 3–20 年。它是专家操作与使用反馈研究，没有初学者反复训练的随机分组。将专家的信号作为参照，尚不能证明新手观看反馈后会改善。[专家试用与信号处理](ref:R01)\n\n原图记录一位医师一次去除目标物的过程。初始蛋白压迫薄膜；随着蛋白被移除，背景压力逐渐下降。蓝线的局部峰反映短时压迫，橙线描述整体下降趋势。研究分析的是峰突出度，即峰相对邻近基底的高度，不能把纵轴的绝对力读数直接当作同一种峰值统计。\n\n作者按 0.1 N 的最低阈值过滤数据，再汇总所有术者的峰突出度。这个阈值来自此前临床测力文献，而非当前模型中独立确定的噪声检测极限。它决定哪些事件进入分布，因此各练习轮次如果使用不同滤波条件，峰数和平均峰值也会改变。\n\n这幅时间曲线具有约数分钟的任务进程含义；它没有横跨多次训练，也没有表示技术水平随练习次数的变化。记录可用于复盘何时接触薄膜，单凭背景下降却不能给出“操作越来越熟练”的判断。\n\n问卷同样需要按题型解释。部分题比较替代材料与真实组织的变形、阻力，目标是中性值，分数更高意味着更硬或阻力更大，并非更好；整体相似性题才用同意程度表达评价。专家建议薄膜更薄、更松，目标物提供不同稠度，并增加出血和解剖结构。因而较好的局部触感评价没有验证整个术式的完整性，问卷也没有测量一轮练习后掌握了多少技能。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "受力分区来自专家分布，尚未验证膜破裂概率",
+          "markdown": "论文把单独刮匙与配合棉纱的峰突出度分布并列。两种条件的均值与标准差分别为 0.230 ± 0.099 N 和 0.280 ± 0.170 N。作者以均值加标准差、均值加三倍标准差划分绿色、黄色和红色区，并使用“安全”“警示”“脑脊液漏”命名。[分布与分区规则](ref:R01)\n\n这些标签的生成依据是专家操作分布，而不是逐次记录破裂事件后建立的风险曲线。正文承认边界缺乏实验验证。模型也未复制人体蛛网膜的完整组织结构；因此，图中的红区是本研究提出的反馈分区，不能转用成临床操作的通用安全上限。\n\n原表还有数值不连续：棉纱条件的警示范围写至 0.618 N，而下一风险区从大于 0.786 N 起；这与文字描述的连续分区并不一致。报告保留原图，明确指出该问题，不补造一个“正确”临界值，也不据此计算安全幅度提高多少。\n\n汇总峰值还把同一术者的多个事件放在同一分布中。峰的数量不等于独立参与者数量，不能把大量采样事件当作大样本学习试验。研究没有报告更换薄膜后各风险区事件比例的稳定性，也没有证明下降的越界次数可预测临床损伤减少。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "穿刺复用的证据是局部损耗与维修记录，而不是固定寿命",
+          "markdown": "Pereira 等的新生儿血管模型将 6 条血管固定在表面下 12 mm，外层薄膜保护内部组织模拟材料。第一轮约 25 次穿刺尝试后更换覆盖层；第二轮在其中两条血管上分别记录约 50 和 20 次表面穿孔。这里的“表面穿孔”不是全部成功置管，也不是经过统一失败标准定义的可用寿命。[重复使用与维护观察](ref:R02)\n\n原图显示覆盖层有成簇的小孔与褶皱。薄膜破坏会使内部材料接触环境，带来干燥和物性变化；更换表面层能修复这部分保护，却没有自动重置内部血管壁。研究记录少量渗漏及仍可用的超声图像，属于定性观察，没有测量每轮漏液体积、图像信噪比或穿刺阻力漂移。\n\n使用中外壳随时间出现弯曲，说明损耗不只发生在进针位置。固定深度和支架位置有助于任务比较，但没有证明经历老化后几何位置完全不变。研究的连续水流也不同于脉动工况；其他论文对同类材料的脉动验证不能代替当前整件模型的寿命测试。\n\n当次训练结束前有 60% 操作者完成穿刺及导丝插入，这是单次课程任务结果，不能与孔数相除形成单位耗材成功率。原文参与者总数与分角色列举也不一致，报告不据此重建个体级学习轨迹。\n\n血管内径为 1.3 和 1.4 mm，壁厚为 0.4 mm，这些是设计尺寸，不是反复穿刺后逐条复测的尺寸。壳体和支架维持位置，柔软倾斜底面减少超声反射，组织替代材料提供周围成像背景；不同部件分别承担定位、声学与接触作用。只更换最外层不能同时恢复所有部件的原始状态，论文也没有提供更换前后相同操作力下的配对比较。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "穿刺轨迹与切除难度会改变下一轮所面对的任务",
+          "markdown": "Mashari 等的椎管内麻醉模型用凝胶包埋打印脊柱和模拟韧带、硬膜。评价者认为关键穿刺阻力可用，但凝胶过软、易破坏，针道可能保留。再次沿同一区域操作时，原有通道会改变阻力与图像；如果只记录完成时间，就无法区分熟练度提升和材料被先前练习改变。[可触诊性与针道问题](ref:R03)\n\n另一种变化来自设计本身。Hermans 等让参与者连续切除 4 个不同肾肿瘤模型，最后目标更难；首次与末次 GEARS 比较未达显著，P=0.16。可重复提供多个目标支持课程练习，但不同目标的内生程度与边界难度并不等价。把每次换新肿瘤称作“完全重置”会遗漏任务难度的变化。[连续目标与评分](ref:R04)\n\n这两种模型揭示不同的重复条件：穿刺会留下局部材料历史，切除则消耗目标并引入新几何。前者需要记录使用区域及维护状态，后者需要保留目标编号和难度信息，才能解释成绩变化。当前论文分别给出材料损耗描述、经验分组和短期评分，未提供统一模型状态下跨周重复练习的个体完整数据。",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Santona et al.：解剖通道与传感模块的分离。",
+          "interpretation": "爆炸图将上方水箱与薄膜、左侧鞍区、中央框架和右侧鼻腔部件分开，说明哪些结构可以拆装。它没有显示每轮替换后的力学一致性。专家试验移除了鼻甲与鼻中隔，因此完整装配图与实际试用条件必须区分。[模块图与测试条件](ref:R01)"
+        },
+        "F02": {
+          "caption": "Santona et al.：压力到力的标定关系。",
+          "interpretation": "横轴为压力 kPa，纵轴为力 N；圆点与横纵误差条表示实验数据，虚线为线性模型。右上方误差条更长，表明不能把拟合线当作无误差换算。图验证测量链的相关性，不是操作安全阈值或技能改善效果。[标定原图](ref:R01)"
+        },
+        "F03": {
+          "caption": "Santona et al.：单次操作的背景减压与局部接触峰。",
+          "interpretation": "横轴为秒，左轴压力、右轴换算力；蓝线为记录，橙线为背景趋势，空心圈标出峰。箭头解释峰突出度相对局部基底而非零点计算。目标物移除导致背景下降，不能将该下降理解为多次练习后更熟练；图中绝对读数也不能直接与峰突出度分布相混用。[单次信号](ref:R01)"
+        },
+        "F04": {
+          "caption": "Santona et al.：两种操作条件的峰突出度分布与作者分区。",
+          "interpretation": "a 为单独刮匙，b 为配合棉纱；横轴为峰突出度 N，纵轴为频率百分比，橙线为分布拟合。背景色对应作者提出的风险名称，并未来自直接破裂概率测量。b 的分布更宽且右尾更长，不宜仅用绿色区域变宽判断技术更安全；表内边界不连续也限制定量阈值解释。[分布与边界问题](ref:R01)"
+        },
+        "F05": {
+          "caption": "Pereira et al.：重复穿刺后的保护覆盖层。",
+          "interpretation": "完整照片保留两侧管路、固定框和尺子；表层局部可见孔洞与皱折。尺子提供物体尺度，但照片没有标准化孔径或漏液测量。孔洞数量不能直接读作成功置管次数；该图支持覆盖层需要维护的观察，没有证明内部血管或图像性能完全不变。[表层损耗](ref:R02)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do specialty procedural simulators support repeated practice?",
+      "direction": "Simulation and training",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Separate retained anatomy from components consumed in each trial",
+          "markdown": "Santona et al. separated the nasal and sellar anatomical module from a sensorized tank. The bony frame was printed in polylactic acid, the septum in thermoplastic polyurethane, and skin and mucosa were cast in silicone. Polymeric film and water represented arachnoid and cerebrospinal fluid, with boiled egg white as a removable tumor substitute. This preserves an access framework while replacing a local target, supporting repeated tasks without treating the entire assembly as a consumable. [Modules and materials](ref:R01)\n\nDisassembly and demonstrated equivalence between trials are different outcomes. Replacing the membrane, adjusting fluid and inserting target material alter initial loading. The paper did not report reset duration, membrane life in trials or variability after reassembly by different operators. Modularity alone therefore does not quantify course throughput.\n\nExpert testing also simplified access: the upper sphenoid was predrilled and turbinates and septum were removed. The complete anatomical assembly in the figure does not describe all test conditions. Measured forces mainly concerned work at the target, not the full sequence of entering a narrow intact nasal corridor, drilling and identifying anatomy. Methods, rather than appearance, determine which steps were actually repeated.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "After membrane replacement, sensor readings depend on restoring the starting state",
+          "markdown": "The sensor measured pressure difference across the tank, converted to membrane force through calibration. A displacement stage with a load cell tested 8 depths over 1–15 mm, with 7 consecutive repetitions per condition and 3 rounds on different days, replacing the membrane each round. This examines repetition within a state and reproducibility after consumable replacement, without separating every source of error. [Calibration design and results](ref:R01)\n\nThe force–pressure linear fit had R²=0.972 and conversion sensitivity 1.289 N/kPa. Error bars widened at higher pressure; global fit quality does not imply uniform accuracy across the range. Calibration error also propagates into action metrics derived from local peaks.\n\nFluid volume and trapped air explicitly affected tactile response and pressure, prompting standardized filling conditions. Resetting is thus part of the measurement chain. A looser membrane, more air or different target preload could lower readings without gentler handling. Standardization makes within-model comparison more interpretable, but did not establish mechanically matched behavior against human arachnoid under identical conditions.\n\nThe calibration apparatus sampled at 1 Hz. This supports analysis of recorded slow loading and sampled peaks, not a claim that all brief impacts were captured without validation at higher temporal resolution. Absence of a spike in a low-frequency series does not establish absence of rapid loading during the action.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "A falling trace within one procedure represents unloading, not a learning curve",
+          "markdown": "Testing involved 11 experienced physicians: 3 neurosurgeons and 8 otolaryngologists with 3–20 years of relevant experience. This examined expert handling and feedback, without randomized novice groups undergoing repeated training. Expert signals as a reference do not establish improvement after novices view feedback. [Expert testing and signal processing](ref:R01)\n\nThe original trace follows one physician removing target material once. Egg white initially compressed the membrane; its removal progressively reduced background pressure. Local peaks in the blue trace represent transient compression, while the orange trace describes the overall decrease. The analysis used peak prominence, the height above a neighboring base, which is distinct from absolute force on the vertical axis.\n\nData were filtered with a minimum threshold of 0.1 N before peak prominences were pooled across surgeons. This threshold came from earlier clinical force measurements, not an independently measured noise detection limit in this model. It determines which events enter the distribution. Different filtering across practice rounds could therefore alter peak counts and mean peak size.\n\nThe trace represents task progression over several minutes, not repeated training sessions or skill versus practice number. It can support review of when the membrane was contacted; its declining background alone cannot indicate increasing proficiency.\n\nQuestionnaire scales also require separate interpretation. Items comparing deformation and resistance against real tissue target neutrality: higher values mean greater stiffness or resistance, not better quality. Overall-similarity items instead express agreement. Experts requested thinner, looser membrane, targets with varied consistency, bleeding and additional anatomy. Favorable local tactile ratings therefore do not validate completeness of the whole procedure, and the questionnaire did not measure skill acquired during a practice round.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Force zones derive from expert distributions, not validated rupture probabilities",
+          "markdown": "The paper juxtaposed peak-prominence distributions for a curette alone and with cotton gauze. Means and standard deviations were 0.230 ± 0.099 N and 0.280 ± 0.170 N. Mean plus one standard deviation and mean plus three standard deviations defined green, yellow and red zones, labeled safe, warning and cerebrospinal-fluid leak. [Distributions and zoning rule](ref:R01)\n\nThese labels derive from expert action distributions, not a risk curve fitted to observed ruptures. The text acknowledges that boundaries lacked experimental validation. The model also did not reproduce the full structure of human arachnoid. Its red zone is a proposed feedback category, not a general clinical safety limit.\n\nThe source table is discontinuous: the gauze warning range ends at 0.618 N, but the next risk zone begins above 0.786 N, inconsistent with the continuous zones described in the text. This report preserves the original figure and identifies the discrepancy without inventing a corrected cutoff or calculating an increase in safety margin.\n\nPooling peaks also combines multiple events from the same surgeon. Event count is not independent participant count and cannot turn this into a large learning trial. Stability of zone-event proportions after membrane replacement was not reported, nor was a reduction in threshold crossings shown to predict less clinical injury.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Puncture reuse is supported by local wear and maintenance records, not a fixed lifespan",
+          "markdown": "Pereira et al. fixed 6 vessels 12 mm beneath the neonatal phantom surface, with a film protecting internal tissue-mimicking material. The cover was replaced after approximately 25 initial cannulation attempts. The next round recorded approximately 50 and 20 surface perforations over two vessels. Surface perforation is not necessarily successful cannulation or usable lifetime defined by standardized failure criteria. [Repeated use and maintenance observations](ref:R02)\n\nThe original photograph shows clustered holes and wrinkles. Cover damage exposes internal material to the environment, potentially causing drying and property changes. Replacing the cover restores that protection without automatically resetting internal vessel walls. Minor leakage and usable ultrasound images were recorded qualitatively, without per-round leakage volume, image signal-to-noise ratio or drift in puncture resistance.\n\nThe housing bowed with age, indicating wear beyond puncture sites. Fixed depth and supports facilitate task comparison but do not establish unchanged geometry after aging. Continuous water flow also differs from pulsatile operation; other studies of related materials cannot substitute for lifetime testing of this complete assembly.\n\nBy the end of the session, 60% of operators completed cannulation and guidewire insertion. This is a session outcome and cannot be divided by hole counts to derive success per consumable. Participant totals and the enumerated professional roles also disagree in the source, so individual learning trajectories are not reconstructed.\n\nLumens were designed at 1.3 and 1.4 mm with 0.4 mm walls; these are design dimensions, not individual remeasurements after repeated puncture. Housing and supports maintain position, the soft angled base reduces ultrasound reflection, and surrounding tissue substitute supplies imaging background. Components thus perform separate positioning, acoustic and contact functions. Replacing only the outer cover cannot restore every component, and paired before/after replacement comparisons under identical applied force were not supplied.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Needle tracks and resection difficulty alter the next trial",
+          "markdown": "Mashari et al. embedded a printed spine and simulated ligament and dura in gel for neuraxial training. Assessors found key puncture resistance useful, but the gel was soft and fragile and tracks could persist. Reusing an area can alter resistance and imaging through earlier channels. Time alone cannot distinguish improved skill from changes caused by previous practice. [Palpation and needle-track limitations](ref:R03)\n\nA different change is built into task design. Hermans et al. had participants sequentially resect 4 different renal-tumor models, with a harder final target. First-to-final GEARS change was not significant, P=0.16. Repeated provision of targets supports practice, but their endophytic extent and boundary difficulty are not equivalent. Calling each fresh tumor a complete reset overlooks changing task difficulty. [Sequential targets and scores](ref:R04)\n\nThese models impose different repeat conditions: puncture leaves local material history, whereas resection consumes a target and introduces new geometry. The former requires used-area and maintenance records, the latter target identity and difficulty, to interpret performance changes. The papers provide wear descriptions, experience-group contrasts and short-term scores, but not complete individual practice records across weeks under a uniform model state.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Santona et al.: Separation of anatomical access and sensing modules.",
+          "interpretation": "The exploded view separates upper tank and membrane, left sellar region, central frame and right nasal components, identifying removable structures. It does not show mechanical consistency after replacement. Expert testing removed turbinates and septum, so the complete assembly differs from the tested configuration. [Modules and test conditions](ref:R01)"
+        },
+        "F02": {
+          "caption": "Santona et al.: Calibration from pressure to force.",
+          "interpretation": "Pressure in kPa is horizontal and force in N vertical. Circles and horizontal/vertical error bars represent data; the dashed line is the linear model. Larger upper-right error bars preclude treating conversion as error-free. This assesses the measurement relationship, not a safety cutoff or skill improvement. [Original calibration](ref:R01)"
+        },
+        "F03": {
+          "caption": "Santona et al.: Background unloading and local contact peaks during one task.",
+          "interpretation": "Time in seconds is horizontal, with pressure left and converted force right. Blue is the trace, orange the background trend, and open circles mark peaks. The arrow defines prominence relative to a local base rather than zero. Target removal lowers background; this is not improvement over repeated practice, and absolute readings are distinct from the prominence distribution. [Single-task signal](ref:R01)"
+        },
+        "F04": {
+          "caption": "Santona et al.: Peak-prominence distributions and author-defined zones for two conditions.",
+          "interpretation": "a uses the curette alone, b adds cotton gauze. Horizontal values are peak prominence in N, vertical values frequency percentages; orange curves fit the distributions. Background names are proposed risk categories, not measured rupture probabilities. The broader b distribution and longer right tail prevent interpreting a wider green zone alone as safer technique; inconsistent table boundaries also limit quantitative cutoff interpretation. [Distributions and boundary issues](ref:R01)"
+        },
+        "F05": {
+          "caption": "Pereira et al.: Protective cover after repeated puncture.",
+          "interpretation": "The full photograph retains tubing, frame and ruler. Local holes and wrinkles are visible. The ruler supplies scale, but no standardized hole-size or leakage measurement is shown. Holes are not successful-cannulation counts. The image supports cover maintenance, not unchanged internal vessels or imaging performance. [Surface wear](ref:R02)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie unterstützen Simulatoren für spezialisierte Eingriffe wiederholtes Üben?",
+      "direction": "Simulation und Training",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Erhaltene Anatomie von den pro Versuch verbrauchten Teilen trennen",
+          "markdown": "Santona et al. trennten das anatomische Nasen- und Sellamodul von einem sensorisierten Behälter. Der knöcherne Rahmen wurde aus Polylactid, das Septum aus thermoplastischem Polyurethan gedruckt; Haut und Schleimhaut wurden aus Silikon gegossen. Polymerfolie und Wasser stellten Arachnoidea und Liquor dar, gekochtes Eiweiß einen entfernbaren Tumorersatz. So bleibt ein Zugangsrahmen erhalten, während ein lokales Ziel ersetzt wird, ohne die gesamte Einheit als Verbrauchsteil zu behandeln. [Module und Materialien](ref:R01)\n\nZerlegbarkeit und nachgewiesene Gleichwertigkeit aufeinanderfolgender Versuche sind unterschiedliche Ergebnisse. Folienwechsel, Flüssigkeitsmenge und Einsetzen des Zielmaterials verändern die Ausgangsbelastung. Zeit zum Zurücksetzen, Lebensdauer der Folie und Streuung nach Zusammenbau durch verschiedene Personen wurden nicht berichtet. Modularität allein quantifiziert deshalb keinen Kursdurchsatz.\n\nFür den Expertentest wurde außerdem der Zugang vereinfacht: Der obere Keilbeinanteil war vorgebohrt, Nasenmuscheln und Septum wurden entfernt. Die vollständige Anatomie in der Abbildung beschreibt somit nicht alle Testbedingungen. Gemessene Kräfte betrafen überwiegend die Zielregion, nicht die gesamte Folge von Zugang durch einen engen intakten Nasengang, Bohren und anatomischer Orientierung. Welche Schritte wiederholt wurden, ergibt sich aus der Methode statt aus dem Aussehen.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Nach dem Folienwechsel hängen Messwerte vom wiederhergestellten Ausgangszustand ab",
+          "markdown": "Der Sensor maß die Druckdifferenz am Behälter, die mittels Kalibrierung in Membrankraft umgerechnet wurde. Eine Verschiebeeinheit mit Kraftaufnehmer prüfte 8 Tiefen über 1–15 mm, mit 7 aufeinanderfolgenden Wiederholungen je Bedingung und 3 Durchgängen an verschiedenen Tagen, jeweils mit neuer Folie. Dies erfasst Wiederholung innerhalb eines Zustands und Reproduzierbarkeit nach Austausch, trennt aber nicht jede Fehlerquelle. [Kalibrierungsdesign und Ergebnisse](ref:R01)\n\nDie lineare Kraft-Druck-Anpassung ergab R²=0.972 und eine Umrechnungsempfindlichkeit von 1.289 N/kPa. Bei höherem Druck wurden Fehlerbalken breiter; die globale Anpassungsgüte bedeutet keine gleichmäßige Genauigkeit über den Messbereich. Kalibrierfehler gehen auch in aus lokalen Spitzen abgeleitete Handlungskennwerte ein.\n\nFlüssigkeitsmenge und eingeschlossene Luft beeinflussten ausdrücklich Haptik und Druck; daher wurde die Befüllung standardisiert. Zurücksetzen gehört somit zur Messkette. Lockerere Folie, mehr Luft oder andere Vorspannung durch Zielmaterial könnten Werte senken, ohne schonendere Handhabung anzuzeigen. Standardisierung erleichtert modellinterne Vergleiche, belegt jedoch keine mechanische Übereinstimmung mit menschlicher Arachnoidea unter gleichen Bedingungen.\n\nDie Kalibrierapparatur erfasste mit 1 Hz. Dies stützt die Analyse aufgezeichneter langsamer Belastung und abgetasteter Spitzen, nicht das Erfassen sämtlicher kurzer Stöße ohne Prüfung mit höherer zeitlicher Auflösung. Fehlende Spitzen in einer niedrigfrequenten Reihe beweisen nicht, dass keine schnelle Belastung auftrat.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Eine fallende Kurve innerhalb eines Eingriffs zeigt Entlastung, keine Lernkurve",
+          "markdown": "Die Erprobung umfasste 11 erfahrene Ärzte: 3 Neurochirurgen und 8 HNO-Ärzte mit 3–20 Jahren einschlägiger Erfahrung. Untersucht wurden Expertenhandhabung und Rückmeldungen, ohne randomisierte Anfängergruppen mit wiederholtem Training. Expertensignale als Referenz belegen keine Verbesserung bei Anfängern nach Betrachtung des Feedbacks. [Expertenerprobung und Signalverarbeitung](ref:R01)\n\nDie Originalkurve verfolgt die einmalige Entfernung von Zielmaterial durch einen Arzt. Eiweiß komprimierte zunächst die Membran; seine Entfernung verringerte den Hintergrunddruck. Lokale Spitzen der blauen Kurve zeigen kurzzeitige Kompression, die orange Kurve den allgemeinen Rückgang. Ausgewertet wurde die Spitzenprominenz, also die Höhe über einer benachbarten Basis, nicht die absolute Kraft der vertikalen Achse.\n\nVor Zusammenfassung der Spitzenprominenzen aller Operateure wurden Daten mit einer Mindestschwelle von 0.1 N gefiltert. Diese stammte aus früheren klinischen Kraftmessungen, nicht aus einer unabhängig bestimmten Rauschnachweisgrenze dieses Modells. Sie bestimmt die in die Verteilung eingehenden Ereignisse. Unterschiedliche Filterung zwischen Übungsrunden könnte somit Spitzenzahl und mittlere Spitzenhöhe verändern.\n\nDie Kurve zeigt einen Aufgabenverlauf über einige Minuten, keine Trainingsserie oder Fertigkeit in Abhängigkeit von Wiederholungen. Sie ermöglicht die Rückschau auf Membrankontakte; der sinkende Hintergrund allein zeigt jedoch keinen Kompetenzgewinn.\n\nAuch Fragebogenskalen müssen getrennt interpretiert werden. Beim Vergleich von Verformung und Widerstand mit echtem Gewebe ist Neutralität das Ziel: Höhere Werte bedeuten größere Steifigkeit oder Widerstand, keine bessere Qualität. Fragen zur Gesamtähnlichkeit erfassen dagegen Zustimmung. Experten wünschten dünnere, lockerere Folie, Zielmaterial unterschiedlicher Konsistenz, Blutung und zusätzliche Anatomie. Gute lokale Haptikbewertungen validieren daher keine Vollständigkeit des gesamten Eingriffs; erworbene Fertigkeit nach einer Übungsrunde wurde nicht gemessen.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Kraftzonen stammen aus Expertenverteilungen, nicht aus validierten Rupturwahrscheinlichkeiten",
+          "markdown": "Die Studie stellte Spitzenprominenzverteilungen für die Kürette allein und mit Baumwollgaze gegenüber. Mittelwerte und Standardabweichungen betrugen 0.230 ± 0.099 N und 0.280 ± 0.170 N. Mittelwert plus eine beziehungsweise drei Standardabweichungen definierten grüne, gelbe und rote Bereiche, bezeichnet als sicher, Warnung und Liquorleck. [Verteilungen und Einteilungsregel](ref:R01)\n\nDiese Bezeichnungen beruhen auf Expertenbewegungen, nicht auf einer an beobachtete Rupturen angepassten Risikokurve. Der Text räumt fehlende experimentelle Validierung der Grenzen ein. Auch wurde die vollständige Struktur menschlicher Arachnoidea nicht nachgebildet. Der rote Bereich ist eine vorgeschlagene Feedbackkategorie, keine allgemeine klinische Sicherheitsgrenze.\n\nDie Originaltabelle ist zudem unstetig: Bei Gaze endet der Warnbereich bei 0.618 N, der nächste Risikobereich beginnt jedoch erst oberhalb von 0.786 N. Dies widerspricht der beschriebenen lückenlosen Einteilung. Der Bericht erhält die Originalabbildung und benennt die Differenz, ohne eine korrigierte Grenze zu erfinden oder einen Sicherheitsgewinn auszurechnen.\n\nZusammengefasste Spitzen enthalten mehrere Ereignisse derselben Person. Ereigniszahl ist keine Zahl unabhängiger Teilnehmer und macht daraus keine große Lernstudie. Weder Stabilität der Zonenanteile nach Folienwechsel noch eine Vorhersage geringerer klinischer Verletzung durch weniger Grenzüberschreitungen wurde gezeigt.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Wiederholte Punktion ist durch Verschleiß und Wartung belegt, nicht durch feste Lebensdauer",
+          "markdown": "Pereira et al. fixierten 6 Gefäße 12 mm unter der Oberfläche des neonatalen Phantoms; eine Folie schützte das innere Gewebeersatzmaterial. Nach ungefähr 25 anfänglichen Kanülierungsversuchen wurde die Abdeckung ersetzt. In der nächsten Runde wurden ungefähr 50 und 20 Oberflächenperforationen über zwei Gefäßen registriert. Oberflächenperforation bedeutet weder stets erfolgreiche Kanülierung noch Lebensdauer nach standardisierten Ausfallkriterien. [Wiederverwendung und Wartungsbeobachtungen](ref:R02)\n\nDas Originalfoto zeigt gruppierte Löcher und Falten. Beschädigte Folie setzt inneres Material der Umgebung aus, wodurch Austrocknung und Eigenschaftsänderungen möglich werden. Ein Austausch erneuert diesen Schutz, setzt aber innere Gefäßwände nicht automatisch zurück. Geringe Leckage und weiter nutzbare Ultraschallbilder wurden qualitativ erfasst, ohne Leckvolumen je Runde, Bildsignal-Rausch-Verhältnis oder Drift des Punktionswiderstands.\n\nDas Gehäuse verbog sich mit dem Alter; Verschleiß betrifft somit mehr als Einstichstellen. Feste Tiefe und Halterungen erleichtern Vergleiche, belegen jedoch keine unveränderte Geometrie nach Alterung. Kontinuierlicher Wasserfluss unterscheidet sich außerdem von pulsatilem Betrieb. Andere Studien verwandter Materialien ersetzen keine Lebensdauerprüfung der vollständigen Einheit.\n\nBis Sitzungsende schlossen 60% der Anwender Kanülierung und Drahtvorschub ab. Dies ist ein Sitzungsergebnis und darf nicht durch Lochzahlen geteilt werden, um Erfolge pro Verbrauchsteil abzuleiten. Teilnehmergesamtzahl und aufgezählte Berufsrollen widersprechen sich ebenfalls; individuelle Lernverläufe werden daher nicht rekonstruiert.\n\nDie Lumina wurden mit 1.3 und 1.4 mm bei 0.4 mm Wanddicke entworfen. Dies sind Konstruktionsmaße, keine Einzelmessungen nach wiederholter Punktion. Gehäuse und Halterungen sichern die Position, der weiche schräge Boden reduziert Ultraschallreflexion, umgebendes Ersatzgewebe liefert den Bildhintergrund. Komponenten erfüllen damit getrennte Positions-, Akustik- und Kontaktfunktionen. Nur die äußere Abdeckung zu ersetzen stellt nicht alle Teile wieder her; gepaarte Vergleiche vor und nach Austausch unter gleicher Kraft wurden nicht vorgelegt.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Nadelkanäle und Resektionsschwierigkeit verändern die nächste Übungsaufgabe",
+          "markdown": "Mashari et al. betteten eine gedruckte Wirbelsäule sowie simuliertes Band und Dura für neuraxiales Training in Gel ein. Beurteiler fanden wesentliche Punktionswiderstände brauchbar, das Gel jedoch weich und verletzlich; Stichkanäle konnten bleiben. Wiederverwendung derselben Region kann Widerstand und Bildgebung durch vorhandene Kanäle verändern. Zeit allein trennt Kompetenzgewinn nicht von Materialänderung durch vorherige Übung. [Palpation und Nadelkanäle](ref:R03)\n\nAndere Veränderungen entstehen durch das Aufgabendesign. Bei Hermans et al. resezierten Teilnehmer nacheinander 4 unterschiedliche Nierentumormodelle mit schwierigstem Ziel am Ende. Die GEARS-Veränderung vom ersten zum letzten Versuch war nicht signifikant, P=0.16. Wiederholt bereitgestellte Ziele ermöglichen Übung, besitzen aber unterschiedliche endophytische Ausdehnung und Grenzschwierigkeit. Jeden neuen Tumor als vollständiges Zurücksetzen zu bezeichnen übersieht diese Änderung.\n[Aufeinanderfolgende Ziele und Bewertung](ref:R04)\n\nDie Modelle haben unterschiedliche Wiederholungsbedingungen: Punktion hinterlässt lokale Materialgeschichte, Resektion verbraucht ein Ziel und bringt neue Geometrie. Zur Interpretation von Leistungsänderungen benötigt Erstere Angaben zu genutzter Region und Wartung, Letztere Zielidentität und Schwierigkeit. Die Arbeiten liefern Verschleißbeschreibungen, Erfahrungsgruppenvergleiche und kurzfristige Bewertungen, jedoch keine vollständigen individuellen Übungsdaten über Wochen bei einheitlichem Modellzustand.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Santona et al.: Trennung von anatomischem Zugang und Sensormodulen.",
+          "interpretation": "Die Explosionszeichnung trennt Behälter und Folie oben, Sellaregion links, Rahmen mittig und Nasenteile rechts und zeigt zerlegbare Strukturen. Mechanische Gleichheit nach Austausch ist nicht dargestellt. Im Expertentest fehlten Nasenmuscheln und Septum; vollständiger Aufbau und geprüfte Konfiguration unterscheiden sich. [Module und Testbedingungen](ref:R01)"
+        },
+        "F02": {
+          "caption": "Santona et al.: Kalibrierung von Druck zu Kraft.",
+          "interpretation": "Horizontal steht Druck in kPa, vertikal Kraft in N. Kreise mit horizontalen und vertikalen Fehlerbalken zeigen Daten, die gestrichelte Linie das lineare Modell. Größere Fehlerbalken rechts oben schließen fehlerfreie Umrechnung aus. Geprüft wird die Messbeziehung, keine Sicherheitsgrenze oder Fertigkeitsverbesserung. [Originalkalibrierung](ref:R01)"
+        },
+        "F03": {
+          "caption": "Santona et al.: Hintergrundentlastung und lokale Kontaktspitzen innerhalb einer Aufgabe.",
+          "interpretation": "Horizontal steht Zeit in Sekunden, links Druck und rechts umgerechnete Kraft. Blau ist die Messreihe, Orange der Hintergrundtrend, offene Kreise markieren Spitzen. Der Pfeil definiert Prominenz relativ zur lokalen Basis statt zu null. Zielentfernung senkt den Hintergrund; dies ist kein Lernfortschritt über Wiederholungen. Absolute Werte unterscheiden sich von der Prominenzverteilung. [Einzelaufgabensignal](ref:R01)"
+        },
+        "F04": {
+          "caption": "Santona et al.: Spitzenprominenzen und autorendefinierte Zonen für zwei Bedingungen.",
+          "interpretation": "a zeigt die Kürette allein, b zusätzlich Baumwollgaze. Horizontal steht Spitzenprominenz in N, vertikal Häufigkeit in Prozent; orange Kurven passen Verteilungen an. Hintergrundbezeichnungen sind vorgeschlagene Risikokategorien, keine gemessenen Rupturwahrscheinlichkeiten. Breitere Verteilung und längerer rechter Ausläufer in b erlauben keine Sicherheitsbewertung allein aus der grünen Breite; widersprüchliche Tabellengrenzen begrenzen numerische Schwelleninterpretation. [Verteilungen und Grenzprobleme](ref:R01)"
+        },
+        "F05": {
+          "caption": "Pereira et al.: Schutzabdeckung nach wiederholter Punktion.",
+          "interpretation": "Das vollständige Foto erhält Schläuche, Rahmen und Maßstab; lokal sind Löcher und Falten sichtbar. Der Maßstab zeigt Größe, jedoch keine standardisierte Lochgrößen- oder Leckagemessung. Löcher entsprechen nicht erfolgreichen Kanülierungen. Das Bild stützt Wartungsbedarf der Abdeckung, keine unveränderten inneren Gefäße oder Bildleistung. [Oberflächenverschleiß](ref:R02)"
+        }
+      }
+    }
+  }
+}

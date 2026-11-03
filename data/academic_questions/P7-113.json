@@ -1,0 +1,348 @@
+{
+  "schema_version": 2,
+  "question_id": "P7-113",
+  "p": "P7",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [],
+  "references": [
+    {
+      "id": "R01",
+      "title": "A 3D Printed Toolbox for Opto-Mechanical Components",
+      "publisher": "PLOS ONE",
+      "year": 2017,
+      "url": "https://doi.org/10.1371/journal.pone.0169832",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Design and manufacture of a low-cost 3D-printed laboratory device to measure the hyperelastic properties of polymeric films with small form factor suitable for medical devices",
+      "publisher": "HardwareX",
+      "year": 2024,
+      "url": "https://doi.org/10.1016/j.ohx.2024.e00608",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Developing the OpenFlexure Microscope towards medical use: technical and social challenges of developing globally accessible hardware for healthcare",
+      "publisher": "Philosophical Transactions of the Royal Society A",
+      "year": 2024,
+      "url": "https://doi.org/10.1098/rsta.2023.0257",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 7",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-113/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5242500/#pone.0169832.g007",
+      "license": "CC BY (article copyright statement)"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Fig. 8",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-113/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5242500/#pone.0169832.g008",
+      "license": "CC BY (article copyright statement)"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R01",
+      "original_label": "Fig. 9",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-113/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5242500/#pone.0169832.g009",
+      "license": "CC BY (article copyright statement)"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Fig. 6",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-113/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11697124/#fig6",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R02",
+      "original_label": "Fig. 13",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-113/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11697124/#fig13",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R02",
+      "original_label": "Fig. 14",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-113/F06.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11697124/#fig14",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "设备制造的可重复性和性能如何验证？",
+      "direction": "低成本实验室设备",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "同一光路内的重复扫描检验可调镜架，而不是打印外观",
+          "markdown": "Salazar-Serrano 等用 He–Ne 激光检验 PLA 运动学镜架，光束腰约 1 mm，相机位于镜架后约 80 cm，以光斑质心测量偏转。水平与垂直方向各在 −1° 至 +1° 范围取 7 个位置，每方向扫描 10 次，并在同一测量布置中换入 Thorlabs KM100 对照。这样的比较固定了光源、观测距离和质心算法，比仅展示镜架能转动提供更多性能信息。[镜架的重复扫描](ref:R01)\n\n结果中被调方向近似线性变化，另一个方向保持在小范围内，打印件与对照趋势接近；作者指出旋钮灵敏度仍受螺纹影响。图的横轴是任意单位的镜面位移，不能误读成旋钮角度已经逐点标定。扫描次数也不是独立制造的镜架数量，图没有逐台打印件分布或每点置信区间。这项结果支持该装配在受测角度下的可调性和轴间串扰表现，不能单独证明任意打印机制造的镜架都达到同样误差。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "平移台的有效行程由寄生角度决定",
+          "markdown": "同一论文将打印平移台和 Standa 7T173-20-50 放入另一光路，沿 0–10 mm 以 2 mm 间隔移动，观测光束偏转。对照台的偏转约在 ±0.01° 内；打印台的 Y 偏转在超过 6 mm 后显著增大，原图约 8 mm 时为 −0.075°、10 mm 时约 −0.13°。这些是根据图读取的近似值，不是正文提供的新精度规格。[平移过程的角度误差](ref:R01)\n\n作者将大行程偏转与圆头调节螺钉对移动平台的压力关联。其结构能到达标称行程终点，并不意味着全行程满足相同的光轴保持要求；肉眼看不出的偏移仍被质心检测发现。与镜架的相近趋势相比，平移台在受力条件变化时明显变差，不能用论文总体“性能可比”的措辞覆盖每个部件。该图也主要测量寄生角度，不是轴向位移读数的绝对准确度；把它换算成样品位置误差，还需要实际光路几何。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "校准后的功率一致性有波长和动态范围边界",
+          "markdown": "打印积分球使用 webcam 读出，参考为 Thorlabs S130C 配 PM100。作者用半径 R=100 pixels 的图像区域提取强度，先拟合非线性响应，再以 633 nm 光源、改变偏振片夹角检验功率读数。图中相机响应随输入功率弯曲，不能直接使用未经校准的像素亮度作为线性功率计。校准后原图注给出最大误差 0.6 μW，正文给出最大相对误差低于 2%。[积分球响应与校准](ref:R01)\n\n相机约在 0.3 mW 附近饱和，低价外壳并未消除探测器动态范围限制。单波长的校准比较也没有验证不同颜色、不同入射角、长期光源漂移或相机自动增益变化后的稳定性。绝对误差与相对误差不是同一数，尤其靠近低功率端时不能用一个固定百分比替代全部读数的不确定度。论文提供的是特定设置下对参考仪的比较，没有交代独立留出的校准验证集，也没有多台重复制造积分球的离散度。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "独立长度参照可以暴露视觉应变读出的误差",
+          "markdown": "Dulal 与 Alaie 的打印材料试验设备同时测力和观测 PDMS 薄膜的表面标记。单轴与平面拉伸分别用 1 kg 和 5 kg 量程传感器，力通道通过悬挂已知质量校准；图像通道则把 Python 红点中心距离、人工图像读数和卡尺进行比较。校准位移到 7 mm，Python 与卡尺应变最大观察差为 0.008，这是无量纲应变差，不能直接说成 0.008 mm 的长度误差。[力与视觉通道的分开校准](ref:R02)\n\n误差预算采用电压不确定度 1.2 mV；红点直径最坏取 2 mm，中心定位不确定度假设为其四分之一，即 0.5 mm，远大于卡尺的 ±5 μm。这里的小数位数不代表实际中心定位精度。数据采集还把每次 50 个、10 kHz 的电压样本平均，与视觉结果组合，而完整测量之间通常延迟 2–5 s。因此电压采样率不能当作应力—应变同步记录的帧率，快速变化负载下的时序误差需要另行测量。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "同一样品重复与不同样品一致性回答不同问题",
+          "markdown": "该设备对 5 个单轴 PDMS 样品测得模量 1.29–1.41 MPa；同一 S-3 样品重复 3 次得到 1.33–1.35 MPa。前者同时包含材料制备和测试差异，后者更接近同一样品的试验重复性，不能交换样本单位。单轴薄膜厚约 0.38 mm，另有 2 个约 0.36 mm 的平面拉伸样品测至 20% 应变。不同夹持约束产生不同应力状态，不能仅因曲线接近就混成一个性能数字。[重复测试与材料条件](ref:R02)\n\n文中将名义固化设定 100 °C 与实测热板约 70–80 °C 区分；所测约 0.5 MPa 的应力更接近部分较低温度文献结果，而非另一研究约 0.8 MPa 的结果。材料热历史可能解释差异，不能全部归为仪器误差。较高应变时相机有时失去红点，使可检测上限因样品而异。这是观测失败条件，不能把较短曲线自动理解为材料已经断裂，或把共同可见区间外推为设备在全部变形范围内均可靠。",
+          "figure_ids": []
+        },
+        {
+          "id": "s6",
+          "title": "拟合参数的可重复性不由曲线外观接近来保证",
+          "markdown": "作者组合 5 个单轴和 2 个平面拉伸数据集，取共同 20% 应变截止，在 ANSYS 中生成 10 组 Mooney–Rivlin 系数。C1 为 185–385 kPa，C2 为 −103–97 kPa，其中 4 组 C2 为负。随后对两种平面几何做 20 次有限元计算，最大应力偏差约 28%；原图约从 8% 应变起出现模拟高于实验。这是同一数据家族的自洽性检查，不是完全独立载荷的外部验证。[有限元与实测比较](ref:R02)\n\n作者另用均匀伸长采样、按数据点数平衡两类测试权重，并改变应力误差的表达进行手动拟合，得到 C1=251 kPa、C2=18 kPa。原图显示两类试验可同时拟合，但接近文献常数不证明参数唯一；有限加载类型下，多组参数可能描述相近曲线。硬件的重复读数、材料本构参数的可辨识性、模拟预测误差必须分别保留。若只列最终一组系数，前述符号变化及系统性高估会被隐藏。[联合拟合结果](ref:R02)",
+          "figure_ids": [
+            "F05",
+            "F06"
+          ]
+        },
+        {
+          "id": "s7",
+          "title": "跨地点制造需要保留设计版本和物理标尺",
+          "markdown": "Knapper 等讨论 OpenFlexure 的制造实施时，报告在超过 45 个国家已有制造或使用记录；这是社区分布，不是各国相同条件下的合格率。其 MICAT 校准将 USAF 1951 靶上已知尺度映射到像素，再把电机坐标、图像坐标和物理位置联系起来；斜边图像用于估计线扩散函数。明显图像特征可以帮助估计台面与图像之间的运动关系，但没有已知尺寸的目标时，不能独立获得物理长度或绝对分辨率。[分布式制造中的校准](ref:R03)\n\n项目用 Git 管理硬件 CAD 与软件，GitBuilding 维护零件数量和共享装配步骤，解决不同版本文件与说明的对应。磁性可换镜座还依赖相机反馈校正视场位移，不能只报告磁体连接就宣称换装后位置完全复现。论文没有提供统一靶、统一环境下所有制造地点的分辨率和定位误差分布；其贡献是公开了需要校验的具体链路和版本管理方式，跨地点性能差异仍不能从使用地图推算。",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Salazar-Serrano et al.：镜架被调方向与串扰分开显示",
+          "interpretation": "左、右分别改变 X、Y 旋钮，蓝色为 X 光束偏转，红色为 Y；圆圈是对照，点或叉是 PLA。被调方向变化明显，另一方向接近零。纵轴是 deg，横轴是任意单位，不能据此直接读出旋钮角度准确度。重合趋势也没有给独立制造件的置信区间。[镜架结果](ref:R01)"
+        },
+        "F02": {
+          "caption": "Salazar-Serrano et al.：大行程引入明显 Y 偏转",
+          "interpretation": "横轴为镜面移动 mm，纵轴为光束偏转 deg；对照空心圆接近零，打印件红叉在行程后段向下弯曲，蓝点变化较小。末端约 −0.13° 与初段并不属于同一稳定区间。图支持方向相关的寄生偏转，不是轴向位移误差图。[平移台结果](ref:R01)"
+        },
+        "F03": {
+          "caption": "Salazar-Serrano et al.：非线性校准后再比较读数",
+          "interpretation": "左图横轴输入功率 mW、纵轴强度任意单位，橙色曲线随功率弯曲；右图以偏振片角度改变入射功率，红点参考与蓝圈 webcam 接近。左右图回答响应建模和校准后比较两个问题；接近并不说明未校准亮度线性，也没有建立多波长适用性。[功率结果](ref:R01)"
+        },
+        "F04": {
+          "caption": "Dulal and Alaie：标尺与红点构成独立位移比较",
+          "interpretation": "a、b 显示不同夹具位置，标尺、红点中心及 Δl 箭头同时可见。程序追踪中心距离，卡尺与图像标尺提供交叉检查；照片不是均匀应变场地图，也没有自动排除标点形变或夹持滑移。[视觉校准原图](ref:R02)"
+        },
+        "F05": {
+          "caption": "Dulal and Alaie：模拟在较大应变时系统性偏高",
+          "interpretation": "横轴 Strain 为 mm/mm，纵轴 Stress 为 MPa；红三角实验与蓝圆 FEA 在低应变接近，随后蓝点持续高于红点。约 0.20 应变时分别约 0.35 和 0.40 MPa。实验点有误差棒，模拟点并无同等实验不确定度；这不是两组独立仪器测量。[模拟比较](ref:R02)"
+        },
+        "F06": {
+          "caption": "Dulal and Alaie：同时拟合两类试验仍有散点结构",
+          "interpretation": "蓝点与红实线表示单轴测量及拟合，绿三角与紫虚线表示平面拉伸。横轴无量纲应变、纵轴 MPa；平面组整体更高，两组残差并非完全一致。共同参数可解释主要趋势，但曲线贴近不能证明参数唯一，也不能替代其他加载方式的验证。[联合拟合原图](ref:R02)"
+        }
+      }
+    },
+    "en": {
+      "title": "How can manufacturing reproducibility and equipment performance be validated?",
+      "direction": "Low-cost laboratory equipment",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Repeated scans in one optical path test a mount beyond its appearance",
+          "markdown": "Salazar-Serrano et al. test a PLA kinematic mount with a He–Ne beam of approximately 1 mm waist and a camera approximately 80 cm beyond the mount, measuring deflection through the beam centroid. Horizontal and vertical directions each use 7 positions across −1° to +1° and 10 scans per direction, substituting a Thorlabs KM100 into the same arrangement. Fixing source, observation distance and centroid algorithm provides more performance information than showing that the mount rotates. [Repeated mount scans](ref:R01)\n\nThe adjusted direction changes approximately linearly while the other remains within a small interval, with similar printed and reference trends. Knob sensitivity still depends on the screw thread. The horizontal axis is mirror displacement in arbitrary units, not a pointwise calibrated knob angle. Scan counts are not counts of independently manufactured mounts; the figure lacks device-to-device distributions and pointwise confidence intervals. It supports adjustability and cross-axis behaviour of this assembly over the tested angles, not identical errors from arbitrary printers.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Parasitic angles determine the usable translation range",
+          "markdown": "The same article places a printed translation stage and Standa 7T173-20-50 in another optical path, moving over 0–10 mm in 2 mm increments and observing beam deflection. The reference stays around ±0.01°. Printed-stage Y deflection increases markedly beyond 6 mm, reaching approximately −0.075° at 8 mm and −0.13° at 10 mm in the graph. These are approximate visual readings, not new specifications stated by the authors. [Angular errors during translation](ref:R01)\n\nThe authors associate large-travel deflection with pressure from the rounded adjustment screw on the moving platform. Reaching nominal travel does not establish uniform optical-axis retention over that travel; centroid detection reveals shifts invisible to the eye. Unlike the similar mount trends, translation deteriorates as loading changes. Broad claims of comparable performance cannot cover every component. The graph primarily measures parasitic angle, not absolute axial displacement accuracy; translating it into object-position error also requires actual optical geometry.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Calibrated power agreement has wavelength and dynamic-range limits",
+          "markdown": "A printed integrating sphere uses webcam readout against a Thorlabs S130C with PM100. Intensity is extracted from an image region of radius R=100 pixels, a nonlinear response fitted, and readings compared under 633 nm illumination by changing polariser angle. Camera response curves with input power, so uncalibrated pixel brightness is not a linear power meter. After calibration the caption reports a maximum error of 0.6 μW, while the text states maximum relative error below 2%. [Integrating-sphere response and calibration](ref:R01)\n\nThe camera saturates around 0.3 mW; a low-cost enclosure does not eliminate detector dynamic-range limits. This single-wavelength comparison does not establish stability across colours, incidence angles, long-term source drift or changes in automatic gain. Absolute and relative errors differ, especially near low power, where one fixed percentage cannot replace uncertainty at every reading. The evidence is a configuration-specific reference comparison, without a stated independent held-out calibration-validation set or dispersion across separately manufactured spheres.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Independent length references reveal visual strain-readout errors",
+          "markdown": "Dulal and Alaie's printed material tester measures force while observing surface markers on PDMS films. Uniaxial and planar tests use 1 kg and 5 kg load-cell capacities, calibrated with known suspended masses. The image channel compares Python red-dot centre distances, manual image readings and a caliper. Calibration extends to 7 mm displacement; maximum observed Python–caliper strain difference is 0.008. This is dimensionless strain, not 0.008 mm length error. [Separate force and vision calibration](ref:R02)\n\nThe uncertainty budget uses 1.2 mV voltage uncertainty. Worst-case red-dot diameter is 2 mm, with assumed centre uncertainty of one quarter, or 0.5 mm, far exceeding the caliper's ±5 μm. Decimal places therefore do not establish actual centre precision. Acquisition averages 50 voltage samples at 10 kHz for each combined vision measurement, with typically 2–5 s between complete measurements. Electrical sampling frequency is not the frame rate of synchronised stress–strain records; timing errors under rapidly changing loads require separate evaluation.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Repeated measurements of one specimen differ from agreement across specimens",
+          "markdown": "The tester yields moduli of 1.29–1.41 MPa for 5 uniaxial PDMS specimens; repeating specimen S-3 for 3 rounds gives 1.33–1.35 MPa. The first range includes material preparation and testing differences, while the second more closely addresses same-specimen test repeatability. Experimental units cannot be exchanged. Uniaxial films are approximately 0.38 mm thick; 2 planar specimens of approximately 0.36 mm are tested to 20% strain. Different constraints produce different stress states, which cannot be merged into one performance number merely because curves are close. [Repeated tests and material conditions](ref:R02)\n\nThe article distinguishes a nominal 100 °C curing setting from a measured hotplate temperature of approximately 70–80 °C. Measured stress near 0.5 MPa is closer to some lower-temperature literature results than another study's approximately 0.8 MPa. Thermal history can explain differences rather than attributing all discrepancies to instrument error. At larger strains the camera sometimes loses red markers, making detectable limits specimen-dependent. This is an observation failure: shorter curves do not automatically mean rupture, nor does the common visible range establish reliability across all deformation.",
+          "figure_ids": []
+        },
+        {
+          "id": "s6",
+          "title": "Similar curves do not guarantee reproducible fitted parameters",
+          "markdown": "Combining 5 uniaxial and 2 planar datasets at a common 20% strain cutoff, the authors generate 10 sets of Mooney–Rivlin coefficients in ANSYS. C1 spans 185–385 kPa and C2 −103–97 kPa, with 4 negative C2 sets. Subsequent finite-element calculations for both planar geometries total 20 simulations, with maximum stress deviation around 28%. The graph begins to show overprediction from approximately 8% strain. This checks self-consistency within the same data family, not external validation under wholly independent loading. [Finite elements versus measurements](ref:R02)\n\nManual fitting instead uses uniform stretch sampling, balances test-type weights by data count and changes the stress-error representation, yielding C1=251 kPa and C2=18 kPa. The figure shows simultaneous fits to both tests, but proximity to literature constants does not establish uniqueness. Limited loading modes allow multiple parameter sets to describe similar curves. Repeatable hardware readings, constitutive-parameter identifiability and simulation prediction errors must remain separate. Reporting only the final coefficients would hide earlier sign changes and systematic overprediction. [Combined fitting results](ref:R02)",
+          "figure_ids": [
+            "F05",
+            "F06"
+          ]
+        },
+        {
+          "id": "s7",
+          "title": "Manufacturing across sites requires design versions and physical references",
+          "markdown": "Discussing OpenFlexure implementation, Knapper et al. report manufacture or use in over 45 countries. This maps community presence, not acceptance rates under matched conditions. MICAT maps known USAF 1951 target dimensions into pixels and connects motor coordinates, image coordinates and physical location; slanted-edge images estimate the line spread function. Distinctive image features can estimate stage-to-image motion, but a target without known dimensions cannot independently provide physical lengths or absolute resolution. [Calibration in distributed manufacture](ref:R03)\n\nGit versions hardware CAD and software, while GitBuilding maintains part counts and shared assembly steps, keeping versioned files and instructions aligned. Interchangeable magnetic objective mounts additionally use camera feedback to correct field displacement; magnetic coupling alone does not establish perfect repositioning. The paper supplies no resolution or positioning-error distribution for all manufacturing sites using common targets and environments. It identifies concrete calibration chains and version-management practices; performance differences across sites cannot be inferred from the usage map.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Salazar-Serrano et al.: adjusted motion and cross-talk are shown separately",
+          "interpretation": "Left and right vary X and Y knobs. Blue denotes X beam deflection and red Y; circles are reference data, dots or crosses PLA. The adjusted direction changes strongly while the other stays near zero. Vertical units are deg and horizontal units arbitrary, so knob-angle accuracy cannot be read directly. Overlapping trends supply no confidence interval across independently manufactured mounts. [Mount results](ref:R01)"
+        },
+        "F02": {
+          "caption": "Salazar-Serrano et al.: large travel introduces substantial Y deflection",
+          "interpretation": "Horizontal position is mirror travel in mm and vertical position beam deflection in deg. Reference open circles remain near zero; printed red crosses bend downward late in travel, with smaller blue-dot changes. Approximately −0.13° at the end differs from the initial stable region. This demonstrates direction-dependent parasitic deflection, not axial displacement error. [Stage results](ref:R01)"
+        },
+        "F03": {
+          "caption": "Salazar-Serrano et al.: readings are compared after nonlinear calibration",
+          "interpretation": "The left graph plots input power in mW against intensity in arbitrary units; its orange curve bends with power. The right changes input power through polariser angle, with red reference points close to blue webcam circles. The panels address response modelling and calibrated comparison separately; agreement establishes neither linear uncalibrated brightness nor multiwavelength validity. [Power results](ref:R01)"
+        },
+        "F04": {
+          "caption": "Dulal and Alaie: a ruler and markers enable independent displacement comparison",
+          "interpretation": "a and b show different clamp positions with ruler, red-dot centres and the Δl arrow visible together. Software tracks centre distance while the caliper and image ruler cross-check it. These photographs are not uniform-strain-field maps and do not automatically exclude marker deformation or grip slippage. [Original visual calibration](ref:R02)"
+        },
+        "F05": {
+          "caption": "Dulal and Alaie: simulation overpredicts at larger strain",
+          "interpretation": "Strain is in mm/mm and Stress in MPa. Red experimental triangles and blue FEA circles agree at low strain, before blue points remain above red. At approximately 0.20 strain, values are approximately 0.35 and 0.40 MPa respectively. Experimental points have error bars; simulation does not carry equivalent experimental uncertainty. These are not measurements from two independent instruments. [Simulation comparison](ref:R02)"
+        },
+        "F06": {
+          "caption": "Dulal and Alaie: simultaneous fits retain structured scatter",
+          "interpretation": "Blue dots and the solid red line represent uniaxial measurements and fit; green triangles and dashed purple line represent planar tension. Strain is dimensionless and stress in MPa. The planar group is higher overall, with differing residual patterns. Shared parameters explain main trends, but close curves establish neither parameter uniqueness nor validation under other loading modes. [Original combined fit](ref:R02)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie lassen sich Fertigungsreproduzierbarkeit und Geräteleistung validieren?",
+      "direction": "Kostengünstige Laborgeräte",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Wiederholte Scans im gleichen Strahlengang prüfen mehr als das Aussehen",
+          "markdown": "Salazar-Serrano et al. prüfen einen PLA-Kinematikhalter mit einem He–Ne-Strahl von ungefähr 1 mm Strahltaille und einer Kamera etwa 80 cm hinter dem Halter; der Strahlschwerpunkt misst die Ablenkung. Horizontal und vertikal werden jeweils 7 Positionen zwischen −1° und +1° sowie 10 Scans je Richtung genutzt; ein Thorlabs KM100 wird im selben Aufbau eingesetzt. Gleiche Quelle, Beobachtungsdistanz und Schwerpunktalgorithmus liefern mehr Information als bloße Drehbarkeit. [Wiederholte Halterscans](ref:R01)\n\nDie verstellte Richtung verändert sich annähernd linear, die andere bleibt in einem kleinen Intervall; Druckteil und Referenz zeigen ähnliche Trends. Die Knopfempfindlichkeit hängt weiterhin vom Gewinde ab. Horizontal ist Spiegelverschiebung in willkürlichen Einheiten aufgetragen, kein punktweise kalibrierter Drehwinkel. Scanzahlen sind keine Anzahl unabhängig gefertigter Halter; Verteilungen zwischen Geräten und Konfidenzintervalle je Punkt fehlen. Belegt werden Verstellbarkeit und Achsübersprechen dieser Montage im geprüften Winkelbereich, nicht identische Fehler bei beliebigen Druckern.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Parasitäre Winkel bestimmen den nutzbaren Verfahrbereich",
+          "markdown": "Die Arbeit setzt einen gedruckten Translationstisch und Standa 7T173-20-50 in einen weiteren Strahlengang und verfährt über 0–10 mm in 2 mm Schritten. Die Strahlablenkung der Referenz bleibt ungefähr innerhalb ±0.01°. Beim Drucktisch wächst die Y-Ablenkung oberhalb 6 mm deutlich; die Grafik zeigt ungefähr −0.075° bei 8 mm und −0.13° bei 10 mm. Dies sind näherungsweise abgelesene Werte, keine neuen Autorenspezifikationen. [Winkelfehler beim Verfahren](ref:R01)\n\nDie Autoren verbinden die Ablenkung großer Wege mit Druck der abgerundeten Stellschraube auf die bewegte Plattform. Erreichter Nennweg belegt keinen gleichmäßigen Achserhalt; Schwerpunktmessung erkennt mit bloßem Auge unsichtbare Verschiebungen. Anders als beim ähnlichen Halterverhalten verschlechtert sich die Translation bei geänderter Belastung. Allgemeine Aussagen vergleichbarer Leistung gelten damit nicht für jedes Bauteil. Gemessen wird hauptsächlich parasitärer Winkel, nicht absolute axiale Weggenauigkeit; Objektpositionsfehler verlangen zusätzlich die tatsächliche Strahlgeometrie.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Kalibrierte Leistungsübereinstimmung gilt innerhalb spektraler und dynamischer Grenzen",
+          "markdown": "Eine gedruckte Ulbrichtkugel nutzt eine Webcam gegen Thorlabs S130C mit PM100 als Referenz. Intensität wird aus einem Bildbereich mit Radius R=100 pixels gewonnen, die nichtlineare Antwort angepasst und bei 633 nm durch veränderte Polarisatorwinkel verglichen. Die gekrümmte Kameraantwort erlaubt keine direkte lineare Leistungsmessung aus unkalibrierter Helligkeit. Nach Kalibrierung nennt die Legende maximal 0.6 μW Fehler, der Text unter 2% relativen Maximalfehler. [Kugelantwort und Kalibrierung](ref:R01)\n\nDie Kamera sättigt bei ungefähr 0.3 mW; ein preiswertes Gehäuse beseitigt keine Detektordynamikgrenzen. Der Vergleich einer Wellenlänge belegt keine Stabilität bei anderen Farben, Einfallswinkeln, langfristiger Quelldrift oder automatischer Verstärkungsänderung. Absolute und relative Fehler unterscheiden sich insbesondere bei kleinen Leistungen; ein fester Prozentsatz ersetzt keine Unsicherheit jeder Einzelablesung. Gezeigt wird ein konfigurationsbezogener Referenzvergleich ohne angegebenen unabhängigen Kalibrierprüfsatz oder Streuung separat gefertigter Kugeln.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Unabhängige Längenreferenzen zeigen Fehler visueller Dehnungsmessung",
+          "markdown": "Das gedruckte Materialprüfgerät von Dulal und Alaie misst Kraft und beobachtet Oberflächenmarken auf PDMS-Filmen. Einachsige und ebene Zugtests verwenden Kraftsensoren mit 1 kg beziehungsweise 5 kg Kapazität, kalibriert durch bekannte angehängte Massen. Der Bildkanal vergleicht Python-Abstände roter Punktzentren, manuelle Bildmessung und Messschieber. Bis 7 mm Kalibrierweg beträgt die größte beobachtete Python–Messschieber-Dehnungsdifferenz 0.008. Dies ist dimensionslose Dehnung, kein Längenfehler von 0.008 mm. [Getrennte Kraft- und Bildkalibrierung](ref:R02)\n\nDas Unsicherheitsbudget nutzt 1.2 mV Spannungsunsicherheit. Für rote Punkte wird schlimmstenfalls 2 mm Durchmesser angenommen; ein Viertel davon, 0.5 mm, gilt als Zentrumsunsicherheit und übersteigt die ±5 μm des Messschiebers deutlich. Nachkommastellen belegen daher keine tatsächliche Zentrumspräzision. Je kombinierter Bildmessung werden 50 Spannungspunkte bei 10 kHz gemittelt; zwischen vollständigen Messungen liegen gewöhnlich 2–5 s. Elektrische Abtastrate ist keine Bildrate synchroner Spannungs-Dehnungsdaten; schnelle Laständerungen benötigen eigene Zeitfehlerbewertung.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Wiederholung an einer Probe unterscheidet sich von Übereinstimmung verschiedener Proben",
+          "markdown": "Für 5 einachsige PDMS-Proben liefert das Gerät 1.29–1.41 MPa Modul; Probe S-3 ergibt in 3 Wiederholungen 1.33–1.35 MPa. Der erste Bereich enthält Herstellung und Testunterschiede, der zweite prüft eher Wiederholbarkeit an derselben Probe. Versuchseinheiten dürfen nicht vertauscht werden. Einachsige Filme sind ungefähr 0.38 mm dick; 2 ebene Proben von etwa 0.36 mm werden bis 20% Dehnung geprüft. Verschiedene Einspannbedingungen erzeugen verschiedene Spannungszustände, die trotz ähnlicher Kurven nicht zu einem Leistungswert verschmelzen. [Wiederholungen und Materialbedingungen](ref:R02)\n\nDie Arbeit trennt nominelle 100 °C Aushärteeinstellung von gemessenen ungefähr 70–80 °C der Heizplatte. Die gemessenen ungefähr 0.5 MPa Spannung liegen näher an manchen Literaturwerten niedrigerer Temperatur als an ungefähr 0.8 MPa einer anderen Untersuchung. Thermische Vorgeschichte kann Unterschiede erklären; nicht jede Abweichung ist Gerätefehler. Bei größerer Dehnung verliert die Kamera manchmal rote Marken, wodurch Erfassungsgrenzen probenabhängig werden. Kürzere Kurven bedeuten daher nicht automatisch Bruch, und der gemeinsame sichtbare Bereich belegt keine Zuverlässigkeit bei sämtlichen Verformungen.",
+          "figure_ids": []
+        },
+        {
+          "id": "s6",
+          "title": "Ähnliche Kurven garantieren keine reproduzierbaren Modellparameter",
+          "markdown": "Aus 5 einachsigen und 2 ebenen Datensätzen mit gemeinsamer Grenze von 20% Dehnung erzeugen die Autoren in ANSYS 10 Mooney–Rivlin-Koeffizientenpaare. C1 reicht von 185–385 kPa, C2 von −103–97 kPa; 4 C2-Werte sind negativ. Für beide ebenen Geometrien folgen insgesamt 20 FEM-Rechnungen mit ungefähr 28% maximaler Spannungsabweichung. Ab ungefähr 8% Dehnung zeigt die Grafik Überschätzung. Dies prüft Selbstkonsistenz derselben Datenfamilie, keine externe Validierung bei vollständig unabhängiger Belastung. [FEM und Messvergleich](ref:R02)\n\nEine manuelle Anpassung nutzt gleichmäßige Streckungsabtastung, gewichtet Testarten nach Punktzahl und verändert die Spannungsfehlerdarstellung; daraus folgen C1=251 kPa und C2=18 kPa. Die Grafik zeigt gemeinsame Fits beider Testarten, doch Nähe zu Literaturkonstanten beweist keine Eindeutigkeit. Wenige Belastungsarten erlauben mehrere Parametersätze für ähnliche Kurven. Wiederholbare Hardwareablesung, Identifizierbarkeit von Materialparametern und Simulationsfehler bleiben getrennt. Nur die endgültigen Koeffizienten anzugeben würde vorherige Vorzeichenwechsel und systematische Überschätzung verbergen. [Gemeinsame Anpassung](ref:R02)",
+          "figure_ids": [
+            "F05",
+            "F06"
+          ]
+        },
+        {
+          "id": "s7",
+          "title": "Fertigung an verschiedenen Orten benötigt Versionen und physikalische Referenzen",
+          "markdown": "Knapper et al. berichten bei der OpenFlexure-Umsetzung Herstellung oder Nutzung in über 45 Ländern. Dies kartiert Verbreitung, keine Abnahmequoten unter gleichen Bedingungen. MICAT überträgt bekannte Abmessungen eines USAF 1951-Targets in Pixel und verbindet Motor-, Bild- und physikalische Koordinaten; schräge Kanten schätzen die Linienverbreiterungsfunktion. Auffällige Bildmerkmale können Tisch-Bild-Bewegung bestimmen, liefern ohne bekannte Abmessungen jedoch keine unabhängige physikalische Länge oder absolute Auflösung. [Kalibrierung verteilter Fertigung](ref:R03)\n\nGit versioniert Hardware-CAD und Software; GitBuilding führt Teilezahlen und gemeinsame Montageschritte und hält Dateien sowie Anleitungen zusammen. Magnetische Wechselobjektivhalter korrigieren Bildfeldversatz zusätzlich per Kamerarückmeldung; Magnetkopplung allein belegt keine perfekte Rückpositionierung. Eine Verteilung von Auflösung oder Positionsfehlern aller Fertigungsorte unter gleichen Targets und Umgebungen fehlt. Die Arbeit beschreibt konkrete Kalibrierketten und Versionsverwaltung; Ortsunterschiede der Leistung lassen sich nicht aus der Nutzungskarte ableiten.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Salazar-Serrano et al.: Verstellung und Übersprechen werden getrennt dargestellt",
+          "interpretation": "Links und rechts werden X- und Y-Knöpfe verändert. Blau bezeichnet X-Strahlablenkung, Rot Y; Kreise stehen für Referenz, Punkte oder Kreuze für PLA. Die verstellte Richtung ändert sich stark, die andere bleibt nahe null. Vertikal steht deg, horizontal willkürliche Einheiten; Knopfwinkelgenauigkeit ist nicht direkt ablesbar. Überlagerte Trends liefern keine Konfidenzintervalle unabhängig gefertigter Halter. [Halterergebnisse](ref:R01)"
+        },
+        "F02": {
+          "caption": "Salazar-Serrano et al.: großer Weg erzeugt deutliche Y-Ablenkung",
+          "interpretation": "Horizontal ist Spiegelweg in mm, vertikal Strahlablenkung in deg dargestellt. Offene Referenzkreise bleiben nahe null; rote Druckteilkreuze biegen am Wegende abwärts, blaue Punkte ändern sich weniger. Ungefähr −0.13° am Ende unterscheiden sich vom anfänglichen stabilen Bereich. Gezeigt wird richtungsabhängige parasitäre Ablenkung, kein axialer Wegfehler. [Tischergebnisse](ref:R01)"
+        },
+        "F03": {
+          "caption": "Salazar-Serrano et al.: Vergleich nach nichtlinearer Kalibrierung",
+          "interpretation": "Links wird Eingangsleistung in mW gegen Intensität in willkürlichen Einheiten aufgetragen; die orange Kurve ist gekrümmt. Rechts verändert der Polarisatorwinkel die Leistung; rote Referenzpunkte liegen nahe blauen Webcam-Kreisen. Die Tafeln trennen Antwortmodellierung und kalibrierten Vergleich. Übereinstimmung belegt weder lineare Rohhelligkeit noch Gültigkeit mehrerer Wellenlängen. [Leistungsergebnisse](ref:R01)"
+        },
+        "F04": {
+          "caption": "Dulal and Alaie: Lineal und Marken erlauben unabhängigen Wegvergleich",
+          "interpretation": "a und b zeigen verschiedene Klemmpositionen mit Lineal, roten Punktzentren und Δl-Pfeil. Die Software verfolgt Zentrumsabstände, Messschieber und Bildlineal prüfen gegen. Fotos sind keine Karten homogener Dehnungsfelder und schließen Markenverformung oder Klemmrutschen nicht automatisch aus. [Originalbildkalibrierung](ref:R02)"
+        },
+        "F05": {
+          "caption": "Dulal and Alaie: Simulation überschätzt größere Dehnung",
+          "interpretation": "Strain besitzt mm/mm, Stress MPa als Einheit. Rote experimentelle Dreiecke und blaue FEM-Kreise stimmen zunächst überein; später liegen blaue Punkte durchgehend höher. Bei ungefähr 0.20 Dehnung betragen die Werte ungefähr 0.35 beziehungsweise 0.40 MPa. Experimentpunkte besitzen Fehlerbalken; Simulation trägt keine gleichartige experimentelle Unsicherheit. Es sind keine Messungen zweier unabhängiger Geräte. [Simulationsvergleich](ref:R02)"
+        },
+        "F06": {
+          "caption": "Dulal and Alaie: gemeinsame Anpassung behält strukturierte Streuung",
+          "interpretation": "Blaue Punkte und rote durchgezogene Linie zeigen einachsige Messung und Fit, grüne Dreiecke und violette Strichlinie den ebenen Zugtest. Dehnung ist dimensionslos, Spannung in MPa. Die ebene Gruppe liegt insgesamt höher; Residuenstrukturen unterscheiden sich. Gemeinsame Parameter erklären Haupttrends, nahe Kurven belegen aber weder Eindeutigkeit noch Validierung anderer Lastarten. [Originalgesamtfit](ref:R02)"
+        }
+      }
+    }
+  }
+}

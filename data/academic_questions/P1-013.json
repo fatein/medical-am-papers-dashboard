@@ -1,0 +1,340 @@
+{
+  "schema_version": 2,
+  "question_id": "P1-013",
+  "p": "P1",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_c9641b5b15f70c7f517c",
+    "KB20269978656D77FA",
+    "doc_df6b87b64dcd423eca81",
+    "doc_79d927f1b71513821251"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Fabrication of Three-Dimensional Composite Scaffold for Simultaneous Alveolar Bone Regeneration in Dental Implant Installation",
+      "publisher": "International Journal of Molecular Sciences",
+      "year": 2020,
+      "url": "https://doi.org/10.3390/ijms21051863",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Scaffold Material–Architecture Design Rules Linking Mechanics and Early Osteogenesis in PCL/β-TCP Grid, Honeycomb, and Gyroid Lattices",
+      "publisher": "ACS Omega",
+      "year": 2026,
+      "url": "https://doi.org/10.1021/acsomega.5c10393",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Ginger and Garlic Extracts Enhance Osteogenesis in 3D Printed Calcium Phosphate Bone Scaffolds with Bimodal Pore Distribution",
+      "publisher": "ACS Applied Materials & Interfaces",
+      "year": 2022,
+      "url": "https://doi.org/10.1021/acsami.1c19617",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "The induction of bone formation by 3D-printed PLGA microsphere scaffolds in a calvarial orthotopic mouse model: a pilot study",
+      "publisher": "Frontiers in Bioengineering and Biotechnology",
+      "year": 2024,
+      "url": "https://doi.org/10.3389/fbioe.2024.1425469",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 6",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7084329.1/ijms-21-01863-g006.jpg?md5=89a34e0b030c10bf1ee1db15b34221e9",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7084329/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-013/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Fig. 7",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7084329.1/ijms-21-01863-g007.jpg?md5=048fa98c28feeb4c4a91a8bc6a71f41c",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7084329/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-013/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Fig. 2",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13150591.1/ao5c10393_0002.jpg?md5=0b916ac4bf012ce000e192744635ed26",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13150591/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-013/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Fig. 4",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13150591.1/ao5c10393_0004.jpg?md5=cfa4ddd35ee3300177ac4d322f11de93",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13150591/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-013/F04.jpg"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R04",
+      "original_label": "Fig. 7",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11544432.1/fbioe-12-1425469-g007.jpg?md5=669d780e19aecafc214d805b99ede130",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11544432/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-013/F05.jpg"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R04",
+      "original_label": "Fig. 8",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11544432.1/fbioe-12-1425469-g008.jpg?md5=e16fd8d4e0e55bba2fd04117877f159f",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11544432/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-013/F06.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "复合材料与支架结构如何支撑骨再生？",
+      "direction": "骨再生支架",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "框架、颗粒与陶瓷分别改变了什么？",
+          "markdown": "Jeong 等为牙槽骨缺损设计了环形支架：先打印 PCL 框架，再填入 PCL、PEO、NaCl、HA 和 β-TCP 颗粒，质量比为 1:1:5:0.5:0.5；经 80 °C、10 min 热处理后，水洗去除 PEO 和盐，留下颗粒间孔隙。这里 PCL 提供连续聚合物相，HA/β-TCP 提供暴露的钙磷表面，牺牲相则生成细孔。仅打印框架为对照 I；同样填充、热处理和浸出的无陶瓷材料为对照 II，因而后者才更接近检验陶瓷组分作用的对照。[环形复合支架的制造与分组](ref:R01)\n\n设计内径、外径和高度为 3、8、3 mm，复合支架实测为 2.67±0.11、7.47±0.08、2.99±0.06 mm。热处理后的收缩改变了植入物周围间隙，不能只用原始设计尺寸解释配合。整体孔隙率为 72.68±4.79%，而排除框架后的颗粒区域为 83.14±5.5%；两个数值的空间分母不同。压汞结果中 100–200 µm 孔占 52±5.2%，说明颗粒填充在大孔框架内增加了另一尺度的空间，而不是简单提高所有位置的孔隙率。[尺寸与分区孔隙](ref:R01)\n\n压缩试验每组 n=5、加载速度 1 mm/min。对照 I、II 与复合组的极限强度分别为 4.3±0.3、1.6±0.2、1.675±0.457 MPa，模量分别为 48.81±2.59、17.05±2.4、12.52±2.04 MPa。复合组并未比无陶瓷的对照 II 显著增强；对照 I 到 II 还同时改变了热历史和结构。因此，这组数据体现的是细孔与表面功能形成时承载性能的变化，不能用“加陶瓷提高强度”概括。[压缩强度与模量](ref:R01)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "润湿、细胞增殖与分化在同一复合支架上并不同步",
+          "markdown": "润湿试验使用另制的平面圆柱试样，而非实际环形支架。复合材料表面水滴初始接触角约 112.7°，但在 70 s 内被吸收；无陶瓷对照 II 从约 118° 到 540 s 时的 116.9°，仍未吸收。液滴消失同时涉及孔内毛细吸液，不能把结果解释为致密材料的平衡接触角降至零。陶瓷暴露和孔结构共同改变液体进入材料的过程。[表面润湿试验](ref:R01)\n\nSaos-2 骨肉瘤细胞以每支架 100000 个接种。第 1 天，对照 II 和复合组的死细胞较多；第 14 天各组活率无显著差异。第 3 天和第 7 天 CCK-8 的吸光度在两类颗粒填充组均高于单独框架，但第 7 天对照 II 与复合组没有显著差别。CCK-8 测得的是代谢信号，不是直接清点细胞数量。与此不同，第 14 天按 DNA 归一化的 ALP 活性在复合组高于两类对照，说明每单位 DNA 的分化相关酶活性可以增加，即使同一时段以前的增殖指标未显示陶瓷组优于无陶瓷组。[细胞存活、代谢与 ALP](ref:R01)\n\n该研究没有实施动物牙槽骨缺损修复，也没有测量同期植入后的骨—种植体接触率。它直接支持的是环形复合结构的可制备性、液体进入特征以及培养细胞的 ALP 响应；题名中的“同期骨再生”在实验中仍对应拟议的使用场景。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "比较晶格时，材料组成与实际孔径必须分别读取",
+          "markdown": "Thapa 等比较 PCL 电纺直写膜、熔融打印的 PCL 网格／蜂窝／gyroid，以及相应的 β-TCP 陶瓷支架。题名的 PCL/β-TCP 表示并列材料体系，并非 PCL 中掺入 β-TCP 的复合配方。两种 PCL 工艺还使用不同分子量原料；膜、打印聚合物与陶瓷的力学试样尺寸也不同。因此，材料、制造路线、表面颗粒性和构型均参与组间差异。[材料与架构分组](ref:R02)\n\n图中的 PCL 网格、蜂窝与 gyroid 平均孔径约为 0.5、0.65、1 mm；相同的名义填充率并未使孔径相等。电纺直写纤维平均直径约 1.8 µm，属于微米尺度，不能仅凭论文使用的“纳米纤维”名称把它视作亚微米纤维。拉伸试验报告的是这些结构的表观响应，且在空气中完成；用该结果解释水合状态下细胞感受到的局部刚度，还缺少相应测量。[实际孔形与试验条件](ref:R02)\n\n直接培养采用 MG63 骨肉瘤细胞，第 1、3、7 天 MTT 配合 SEM 和共聚焦观察。图中可见细胞沿细纤维或曲面铺展、跨接局部空隙，但没有 ALP、矿化量或成骨基因测量，也没有 YAP/TAZ 或 FAK 通路干预。形态变化支持接触引导的解释，却不能独立证明这些通路被激活或已经发生骨形成。[细胞形态与代谢测量](ref:R02)\n\n原图 MTT 的 PCL 网格、gyroid 和蜂窝在第 7 天柱高接近且误差范围重叠，没有标出架构间显著性括号；这与正文“gyroid 显著优于另外两组”的描述不充分一致。电纺直写组在第 7 天信号更高，但其纤维尺度、比表面和试样形态同时变化，不能从中单独提取曲率或刚度的作用。该比较的有效价值在于展示不同界面上的细胞分布方式，而不是给出已隔离混杂变量的成骨构型排名。",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "复合载体控制释放，释放量不等于单一活性成分剂量",
+          "markdown": "Bose 等在粉床打印的 TCP 支架上加载姜和蒜提取物，并用 PCL/PEG 聚合物层调节释放。支架设置较密外环与较疏内区，设计孔为 400 µm 方孔；烧结后整体孔隙率为 50±0.5%，压缩强度为 10±1 MPa。强度试样约为直径 11 mm、高 7 mm，而动物植入物约为直径 3 mm、长 5 mm，不能把大试样的失效载荷直接赋给小植入物。[分区陶瓷支架与载药](ref:R03)\n\n姜提取物在 PCL/PEG 摩尔比 50:50 时累计释放约 50%，65:35 时约 25%；后续实验统一采用 65:35。蒜提取物可检测释放主要持续至 2 天，无聚合物与有聚合物时分别接近 35% 与 45%。这是 pH 7.4、37 °C、摇动缓冲液中的吸光度定量，提取物包含多种化合物，不能等同于纯姜酚或纯大蒜素的体内浓度。方法还描述了用于释放试验的 HA 圆片，因此释放曲线不能不加区分地当作所有三维 TCP 植入物内部的局部药代曲线。[载体比例与释放测量](ref:R03)\n\n在人胎成骨细胞培养中，姜组第 7 天 MTT 比 TCP 对照高 59%，姜蒜联合组高 27%；联合并未在该端点超过单独姜。另一方面，在 HA 圆片上培养的破骨样细胞留下较少或较浅的吸收陷窝。这两类实验使用不同细胞与基底，支持形成侧和吸收侧可能分别改变的解释，不能用某个增殖百分数推算净新骨量。实验分组还缺少仅加载 PCL/PEG 的载体对照，提取物与聚合物包覆效应没有完全分离。[成骨细胞与吸收陷窝](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "动物组织中的骨量、矿化与血管标记应逐项对应",
+          "markdown": "同一 TCP 研究在 20 只大鼠双侧股骨远端制造贯穿两侧皮质的缺损，分别在第 4、10 周取材。第 4 周切片图像分析中，姜蒜联合组的小梁骨面积占比约 83%，TCP 对照约 57%。这对应取样组织区内的面积比例，而不是整个缺损的三维愈合率；两数之差也不能直接写成“提高 30%”。每种染色使用至少 2–3 个股骨、每股骨至少 5 张切片，切片数量不等同于独立动物数量，双侧样本还共享宿主。[股骨模型与组织定量](ref:R03)\n\n第 10 周，姜组和联合组的矿化骨染色比例高于对照；联合组还保留较高骨样组织形成。较早出现骨样组织、较晚增加矿化基质，为成熟过程提供不同时间切面的证据。vWF 染色在各组均显示血管相关结构，但 vWF 是内皮相关标记，并不是论文部分文字所述的 VEGF 检测；这些图片也没有给出灌注量或证明联合组具有更高的有效血流。修复改善可以与血管存在并存，二者的因果联系在此未被单独操控。[矿化、胶原与内皮染色](ref:R03)\n\n该实验没有改变孔结构来匹配比较均匀孔与分区孔，因而“分区孔负责增强再生”和“复合载药负责增强再生”不能被同一组组织学差异同时证明。其直接组间证据来自共同陶瓷架构上的不同加载组合，配方贡献仍需连同缺失的空载聚合物对照一起理解。",
+          "figure_ids": []
+        },
+        {
+          "id": "s6",
+          "title": "无外加生长因子的微球支架：骨岛位置与定量趋势并不等价",
+          "markdown": "Klar 等把 50、100、200 µm PLGA 微球打印为支架，经二氯甲烷蒸气烧结，植入 24 只 TOPGAL 小鼠的 5 mm 颅骨缺损，第 60 天检测。硬脑膜保留，组内没有添加生长因子。非微球 PLGA 对照采用高温挤出，微球组采用低温打印与后续溶剂处理，因此两者的差别不仅是球形表面；原文也承认对照与微球支架尺寸差异可能影响修复。[微球制造与颅骨模型](ref:R04)\n\n原图把 µCT 表面的骨岛与同一动物的 von Kóssa 切片对齐，显示部分矿化结构位于缺损内部，而非只在切缘。这个空间对应比单看一张黑色染色图更有力。然而这是保留硬脑膜的原位骨缺损，局部存在宿主成骨细胞和信号；内部骨岛不能单独证明材料在异位组织中也能诱导骨形成。“没有外加生长因子”与“没有内源成骨信号”有不同含义。[矿化骨岛的跨模态定位](ref:R04)\n\n定量原图还改变了对结果方向的判断。组织形态计量图中，200 µm 组的中位数较高，显著性括号连接其与纯 PLGA、100 µm 组；µCT 图的括号却连接纯 PLGA 与 50、100 µm 组，200 µm 组分布更宽，并非中位数最高。正文所写“只有 200 µm 显著增加、且优于全部组”不能同时解释两个面板。组织学百分比图还出现负值，其与方法所述阳性面积比例的对应没有交代，不能把负值解释为真实负骨量。[定量结果原图](ref:R04)\n\n此外，µCT 方法计算的是剩余缺损投影面积相对理想圆孔的变化，图题却使用“体积定量”。它并不是通常意义的骨体积分数 BV/TV。单个时间点也没有分离微球尺寸、降解速度、实际连通孔隙与残余结构的贡献；该试验能够定位新增矿化结构，但其定量结果不足以建立随微球尺寸单调增加的骨再生规律。",
+          "figure_ids": [
+            "F05",
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Jeong 等：框架、无陶瓷填充与复合支架的压缩性能。",
+          "interpretation": "左图为极限强度，右图为杨氏模量，纵轴均为 MPa。黑色对照 I 高于两类经颗粒填充和热处理的组；对照 II 与复合组之间均标为 ns。图中更低的复合组模量不能被改写为陶瓷提高整体刚度。它揭示了增加细孔界面时，承载框架也受到制造过程改变。[压缩分组](ref:R01)"
+        },
+        "F02": {
+          "caption": "Jeong 等：Saos-2 细胞的存活、代谢信号与归一化 ALP。",
+          "interpretation": "a 中第 1 天标尺为 500 µm、第 14 天为 100 µm，不能直接以画面细胞密度比较增殖；白三角为死细胞。b 的黑／灰柱分别是第 3／7 天 CCK-8，纵轴为 450 nm 吸光度，星号主要连接同组时间点。c 的 ALP 按 DNA 归一化，复合组最高，对照 II 则低于对照 I。代谢活性较高并不保证分化相关酶活性同步增加。[细胞实验](ref:R01)"
+        },
+        "F03": {
+          "caption": "Thapa 等：不同材料和晶格的真实表面与孔尺度。",
+          "interpretation": "A 同时显示电纺直写膜、纤维直径及宏观晶格 SEM，B 对比颗粒状 β-TCP 与较平滑 PCL，C 为孔径柱图。PCL-GR、PCL-HC、PCL-GY 的孔径并不相等；相应陶瓷组也未构成等孔径配对。材料化学和几何尺度同时变化，不能把所有细胞差异单独归因于 gyroid 曲率。原图纤维直径以 µm 为单位，约 1.8 µm。[孔径与形貌](ref:R02)"
+        },
+        "F04": {
+          "caption": "Thapa 等：MG63 在不同支架上的形态和 MTT 信号。",
+          "interpretation": "A–G 比较第 1、7 天 SEM，组间放大倍数不同；H1/H2 是第 3 天荧光图及空间重建，反映细胞在局部界面的分布。I 的纵轴虽写 Biocompatibility，却不是百分比存活率，正文将其作为 MTT 吸光度讨论。第 7 天 PCL-DEW 最高，三类打印 PCL 则接近；图中没有支持它们之间显著排名的括号。荧光颜色也与正文 DAPI 蓝色描述不完全一致，因此不按颜色单独判定细胞核。该图没有矿化或分化专属性标记。[细胞原图](ref:R02)"
+        },
+        "F05": {
+          "caption": "Klar 等：200 µm 微球支架组的骨岛与组织切片定位。",
+          "interpretation": "A 是颅骨 µCT 俯视图，B 放大缺损，蓝线标出 C 的切片位置；不同颜色小圈把同一结构在两种成像中配对。红圈显示缺损内部离散矿化结构，并未形成连续封闭骨板。A 的标尺为 2 mm，B/C 为 500 µm。这是第 60 天的空间对应，不能从该静态图确定细胞来源或证明异位骨诱导。[对应成像](ref:R04)"
+        },
+        "F06": {
+          "caption": "Klar 等：组织形态计量与 µCT 的分布和显著性并不相同。",
+          "interpretation": "A 中 200 µm 组中位数较高，括号比较纯 PLGA 与 200 µm、100 与 200 µm；B 的括号比较纯 PLGA 与 50 µm、纯 PLGA 与 100 µm。200 µm 组在 B 中离散较大，不能仅以最高观测点替代组间证据。箱线图含个体点，A 的负百分比与所述面积比例计算关系不明；B 虽标为体积，方法描述的是投影缺损面积。两面板不能被合写为“200 µm 在全部指标均优于其他组”。[定量图与方法](ref:R04)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do composite materials and scaffold architectures support bone regeneration?",
+      "direction": "Bone-regeneration scaffolds",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "What do the frame, particles and ceramic each change?",
+          "markdown": "Jeong et al. designed an annular scaffold for alveolar defects by printing a PCL frame, filling it with PCL, PEO, NaCl, HA and β-TCP particles at a mass ratio of 1:1:5:0.5:0.5, and heating at 80 °C for 10 min. Water extraction removed PEO and salt, leaving interparticle pores. PCL supplied the continuous polymer phase, HA/β-TCP supplied exposed calcium-phosphate surfaces, and sacrificial phases generated smaller pores. Control I was the printed frame alone; control II underwent filling, heating and leaching without ceramic and therefore provided the closer comparison for the ceramic component. [Manufacture and experimental groups](ref:R01)\n\nDesigned inner diameter, outer diameter and height were 3, 8 and 3 mm; the composite measured 2.67±0.11, 7.47±0.08 and 2.99±0.06 mm. Heat-induced shrinkage changed the space around an implant, so fit cannot be interpreted from design dimensions alone. Whole-scaffold porosity was 72.68±4.79%, whereas the particle region excluding the frame had 83.14±5.5% porosity: the spatial denominators differ. Mercury intrusion assigned 52±5.2% of pores to the 100–200 µm range. Particle filling thus introduced another spatial scale inside the macroporous frame rather than simply increasing porosity everywhere. [Dimensions and regional porosity](ref:R01)\n\nCompression used n=5 per group and a loading speed of 1 mm/min. Ultimate strengths for controls I, II and the composite were 4.3±0.3, 1.6±0.2 and 1.675±0.457 MPa; corresponding moduli were 48.81±2.59, 17.05±2.4 and 12.52±2.04 MPa. The composite was not significantly stronger than ceramic-free control II. Moving from control I to II also changed thermal history and structure. These data describe the mechanical consequences of generating fine pores and functional surfaces, rather than demonstrating reinforcement by ceramic addition. [Compressive strength and modulus](ref:R01)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Wetting, proliferation and differentiation do not move together",
+          "markdown": "Wetting was tested on separately prepared flat cylindrical specimens rather than the actual annular scaffolds. The composite initially showed a water contact angle of about 112.7°, yet absorbed the droplet within 70 s. Ceramic-free control II changed from about 118° to 116.9° at 540 s without absorption. Droplet disappearance also involves capillary uptake into pores; it does not establish a zero equilibrium contact angle for a dense material. Exposed ceramic and pore architecture jointly changed liquid entry. [Surface-wetting experiment](ref:R01)\n\nSaos-2 osteosarcoma cells were seeded at 100000 cells per scaffold. Controls II and the composite showed more dead cells on day 1, whereas viability did not differ significantly between groups on day 14. On days 3 and 7, CCK-8 absorbance was higher for both particle-filled groups than for the frame alone, but control II and the composite did not differ significantly on day 7. CCK-8 measures metabolic signal rather than directly counting cells. In contrast, DNA-normalized ALP activity on day 14 was higher in the composite than in either control. Differentiation-associated enzyme activity per unit DNA could therefore increase even though the earlier proliferation-related endpoint did not distinguish ceramic-containing from ceramic-free material. [Cell survival, metabolism and ALP](ref:R01)\n\nThis study did not repair an animal alveolar defect or measure bone–implant contact after simultaneous implantation. Its direct evidence concerns manufacture of an annular composite, liquid-entry behavior and the ALP response of cultured cells. Simultaneous bone regeneration in the title remained the proposed application scenario.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Read composition and actual pore size separately when comparing lattices",
+          "markdown": "Thapa et al. compared a directly electrospun-written PCL membrane, melt-printed PCL grid/honeycomb/gyroid structures and corresponding β-TCP ceramic scaffolds. PCL/β-TCP in the title denotes parallel material systems, not a composite formulation containing β-TCP within PCL. The PCL processes also used feedstocks of different molecular weight, and mechanical specimen dimensions differed between membranes, printed polymers and ceramics. Material, manufacturing route, surface granularity and architecture all contributed to group differences. [Material and architecture groups](ref:R02)\n\nThe plotted mean pore sizes of PCL grid, honeycomb and gyroid are approximately 0.5, 0.65 and 1 mm: identical nominal infill did not produce identical pores. Directly written electrospun fibers averaged about 1.8 µm in diameter and were micrometric; the paper's nanofiber terminology does not make them submicrometric. Tensile testing describes the apparent response of these structures and was performed in air. Explaining the local stiffness experienced by cells under hydrated conditions would require corresponding measurements. [Actual pores and testing conditions](ref:R02)\n\nDirect culture used MG63 osteosarcoma cells, with MTT on days 1, 3 and 7 alongside SEM and confocal observations. Images show spreading along fine fibers or curved surfaces and bridging of local spaces. However, ALP, mineralization and osteogenic genes were not measured, and YAP/TAZ or FAK pathways were not experimentally perturbed. Morphology supports a contact-guidance interpretation without independently proving pathway activation or bone formation. [Cell morphology and metabolism](ref:R02)\n\nIn the original MTT panel, day-7 PCL grid, gyroid and honeycomb bars have similar heights and overlapping error ranges, with no brackets indicating significant architectural differences. This does not adequately match the text's claim that gyroid significantly outperformed the other groups. The electrospun-written group had a higher day-7 signal, but fiber scale, specific surface and specimen form changed together, preventing isolation of curvature or stiffness effects. The comparison usefully illustrates patterns of cell distribution across interfaces rather than an osteogenic architecture ranking with confounders isolated.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "A composite carrier controls release without defining a single active-compound dose",
+          "markdown": "Bose et al. loaded ginger and garlic extracts onto powder-bed-printed TCP scaffolds and used a PCL/PEG layer to regulate release. The scaffold combined a denser outer ring with a more porous core and designed 400 µm square pores. After sintering, overall porosity was 50±0.5% and compressive strength was 10±1 MPa. Mechanical specimens were approximately 11 mm in diameter and 7 mm high; animal implants were approximately 3 mm in diameter and 5 mm long. Failure loads measured on the larger specimen cannot be assigned directly to the smaller implant. [Regional ceramic architecture and loading](ref:R03)\n\nGinger extract reached approximately 50% cumulative release with a PCL/PEG molar ratio of 50:50 and approximately 25% with 65:35; subsequent experiments used 65:35 throughout. Detectable garlic-extract release mainly lasted to 2 days, reaching nearly 35% without polymer and 45% with polymer. These were absorbance-based measurements in agitated buffer at pH 7.4 and 37 °C. Multicomponent extracts are not equivalent to in-vivo concentrations of pure gingerol or allicin. Methods also describe HA discs for release testing, so the curves cannot indiscriminately represent local pharmacokinetics within every three-dimensional TCP implant. [Carrier ratio and release measurement](ref:R03)\n\nIn human fetal osteoblast culture, day-7 MTT was 59% higher with ginger and 27% higher with the ginger–garlic combination than with TCP alone; the combination did not outperform ginger at this endpoint. Separately, osteoclast-like cells on HA discs left fewer or shallower resorption pits. Different cells and substrates were used for these experiments. They support potentially separate changes on formation and resorption sides, but a proliferation-related percentage cannot predict net new bone. The experimental groups also lacked a PCL/PEG-only carrier control, leaving extract and polymer-coating effects incompletely separated. [Osteoblasts and resorption pits](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "Match bone area, mineralization and vascular markers to their tissue endpoints",
+          "markdown": "The same TCP study created bilateral bicortical distal-femoral defects in 20 rats and harvested tissue at weeks 4 and 10. At week 4, section-based image analysis gave approximately 83% trabecular bone area for the ginger–garlic group versus approximately 57% for TCP controls. These are area fractions in sampled tissue, not three-dimensional healing fractions of the entire defect; their difference also cannot simply be called a 30% improvement. Each stain used at least 2–3 femurs and at least 5 sections per femur. Sections are not independent animals, and bilateral specimens share their host. [Femoral model and tissue quantification](ref:R03)\n\nAt week 10, mineralized-bone staining fractions were higher for ginger and the combination than for controls; the combination also retained greater osteoid formation. Earlier osteoid and later mineralized matrix provide different temporal views of maturation. vWF staining showed vascular-associated structures in all groups. However, vWF is an endothelial-associated marker, not the VEGF assay described in some of the paper's prose; these images neither quantify perfusion nor establish greater effective blood flow with the combination. Improved repair can coexist with vascular structures without their causal relationship having been independently manipulated. [Mineralization, collagen and endothelial staining](ref:R03)\n\nThe experiment did not vary pore architecture in a matched comparison of uniform and regional pores. Consequently, the same histological difference cannot establish both that regional pores improved regeneration and that composite loading improved regeneration. Direct between-group evidence concerns different loading combinations on a shared ceramic architecture; formulation effects must still be interpreted together with the missing unloaded-polymer control.",
+          "figure_ids": []
+        },
+        {
+          "id": "s6",
+          "title": "Growth-factor-free microsphere scaffolds: bone-island location and quantitative trends differ",
+          "markdown": "Klar et al. printed scaffolds from 50, 100 or 200 µm PLGA microspheres, bonded them with dichloromethane vapor, and implanted them into 5 mm calvarial defects in 24 TOPGAL mice, assessing outcomes on day 60. The dura remained intact, and no growth factor was added to the groups. Non-microsphere PLGA controls were extruded at high temperature, whereas microsphere groups used low-temperature printing and subsequent solvent treatment. Their difference therefore extended beyond spherical surfaces; the paper also acknowledges possible effects of dimensional differences between control and microsphere scaffolds. [Microsphere fabrication and calvarial model](ref:R04)\n\nThe original images align bone islands on µCT surfaces with von Kóssa sections from the same animal, locating some mineralized structures inside the defect rather than only at its edge. This spatial correspondence is stronger evidence than an isolated black-stained section. Nevertheless, the model is an orthotopic bone defect with preserved dura and endogenous osteogenic cells and signals. Internal islands alone do not establish induction in an ectopic tissue environment. No added growth factor and no endogenous osteogenic signal are different conditions. [Cross-modal localization of mineralized islands](ref:R04)\n\nThe quantitative figure also changes interpretation of the trend. In the histomorphometry panel, the 200 µm group has a higher median, with significance brackets linking it to pure PLGA and the 100 µm group. In the µCT panel, brackets instead link pure PLGA to the 50 and 100 µm groups; the 200 µm distribution is wider and its median is not highest. The text's assertion that only 200 µm significantly increased formation and exceeded all other groups does not explain both panels. Negative percentages also appear in the histological plot without an explanation of their correspondence to the positive-area fraction described in methods. They cannot be interpreted as physically negative bone quantity. [Original quantitative figure](ref:R04)\n\nMoreover, the µCT method calculates change in projected residual-defect area relative to an ideal circular opening, although the figure title calls it volumetric quantification. It is not conventional bone volume fraction, BV/TV. A single endpoint also does not separate microsphere size, degradation rate, actual pore connectivity and residual structure. The experiment localizes newly mineralized structures, but its quantitative findings do not establish a monotonically increasing regeneration relationship with microsphere size.",
+          "figure_ids": [
+            "F05",
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Jeong et al.: compression of the frame, ceramic-free filling and composite scaffold.",
+          "interpretation": "The left panel plots ultimate strength and the right Young’s modulus, both in MPa. Black control I exceeds both particle-filled, heat-treated groups; control II versus composite is marked ns in both panels. The lower composite modulus cannot be recast as ceramic-induced stiffening. Generating fine-pore interfaces also changed the load-bearing structure through processing. [Compression groups](ref:R01)"
+        },
+        "F02": {
+          "caption": "Jeong et al.: Saos-2 survival, metabolic signal and normalized ALP.",
+          "interpretation": "In a, scale bars are 500 µm on day 1 and 100 µm on day 14, so apparent cell density cannot directly compare proliferation; white triangles indicate dead cells. Black/gray bars in b represent day-3/day-7 CCK-8, with absorbance at 450 nm on the vertical axis; stars mainly connect time points within groups. Panel c normalizes ALP to DNA: the composite is highest, whereas control II is below control I. Higher metabolic activity does not ensure a parallel rise in differentiation-associated enzyme activity. [Cell experiment](ref:R01)"
+        },
+        "F03": {
+          "caption": "Thapa et al.: actual surfaces and pore scales across materials and lattices.",
+          "interpretation": "A combines the electrospun-written membrane, fiber diameter and lattice SEM; B contrasts granular β-TCP with smoother PCL; C plots pore sizes. PCL-GR, PCL-HC and PCL-GY do not have equal pores, and their ceramic counterparts are not pore-matched pairs either. Chemistry and geometric scale change together, preventing attribution of every cellular difference to gyroid curvature alone. Fiber diameter is plotted in µm at approximately 1.8 µm. [Pores and morphology](ref:R02)"
+        },
+        "F04": {
+          "caption": "Thapa et al.: MG63 morphology and MTT signals on different scaffolds.",
+          "interpretation": "A–G compare day-1/day-7 SEM at different magnifications between groups. H1/H2 show day-3 fluorescence and spatial reconstruction, locating cells at local interfaces. Although I labels its vertical axis Biocompatibility, it is not percentage viability; the text discusses it as MTT absorbance. PCL-DEW is highest on day 7, while the three printed PCL groups are close and have no brackets supporting a significant ranking. Fluorescence colors also do not fully match the textual description of blue DAPI, so nuclei are not assigned from color alone. No mineralization or differentiation-specific marker appears here. [Original cell figure](ref:R02)"
+        },
+        "F05": {
+          "caption": "Klar et al.: localization of bone islands and histology in the 200 µm microsphere group.",
+          "interpretation": "A is a cranial µCT top view; B enlarges the defect and the blue line locates section C. Small colored circles match corresponding structures across modalities. Red circles show discrete mineralized structures inside the defect rather than a continuous closing bone plate. Scale bars are 2 mm in A and 500 µm in B/C. This day-60 spatial correspondence does not identify cellular origins or establish ectopic osteoinduction. [Matched imaging](ref:R04)"
+        },
+        "F06": {
+          "caption": "Klar et al.: histomorphometry and µCT differ in distribution and significance.",
+          "interpretation": "In A the 200 µm median is higher, with brackets comparing pure PLGA versus 200 µm and 100 versus 200 µm. In B brackets compare pure PLGA versus 50 µm and pure PLGA versus 100 µm. The 200 µm distribution in B is broad; its highest observation cannot replace between-group evidence. Boxplots include individual points. Negative percentages in A have an unexplained relationship to the stated area-fraction calculation; B is labeled volumetric although methods describe projected defect area. The panels cannot jointly be restated as superiority of 200 µm on every endpoint. [Quantitative figure and methods](ref:R04)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie unterstützen Kompositmaterialien und Gerüstarchitekturen die Knochenregeneration?",
+      "direction": "Gerüste zur Knochenregeneration",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Was verändern Rahmen, Partikel und Keramik jeweils?",
+          "markdown": "Jeong et al. entwickelten ein ringförmiges Gerüst für Alveolarknochendefekte: Ein gedruckter PCL-Rahmen wurde mit PCL-, PEO-, NaCl-, HA- und β-TCP-Partikeln im Massenverhältnis 1:1:5:0.5:0.5 gefüllt und bei 80 °C für 10 min erwärmt. Durch Auswaschen von PEO und Salz entstanden Zwischenpartikelporen. PCL bildete die kontinuierliche Polymerphase, HA/β-TCP lieferten freiliegende Calciumphosphatoberflächen und die entfernbaren Phasen erzeugten feinere Poren. Kontrolle I bestand nur aus dem gedruckten Rahmen; Kontrolle II wurde ohne Keramik gefüllt, erwärmt und ausgelaugt und eignete sich deshalb besser zur Prüfung des Keramikanteils. [Herstellung und Versuchsgruppen](ref:R01)\n\nDie vorgesehenen Innen- und Außendurchmesser sowie die Höhe betrugen 3, 8 und 3 mm; am Komposit wurden 2.67±0.11, 7.47±0.08 und 2.99±0.06 mm gemessen. Die wärmebedingte Schrumpfung veränderte den Raum um ein Implantat; die Passung lässt sich daher nicht allein aus den Konstruktionsmaßen erklären. Die Gesamtporosität betrug 72.68±4.79%, diejenige der Partikelregion ohne Rahmen dagegen 83.14±5.5%: Die räumlichen Bezugsgrößen unterscheiden sich. Nach Quecksilberintrusion entfielen 52±5.2% der Poren auf den Bereich 100–200 µm. Die Partikelfüllung ergänzte somit eine weitere Raumskala innerhalb des makroporösen Rahmens, statt die Porosität überall gleichermaßen zu erhöhen. [Abmessungen und regionale Porosität](ref:R01)\n\nDie Druckprüfung erfolgte mit n=5 je Gruppe und 1 mm/min Belastungsgeschwindigkeit. Die maximalen Druckfestigkeiten der Kontrollen I, II und des Komposits betrugen 4.3±0.3, 1.6±0.2 und 1.675±0.457 MPa; die zugehörigen Moduln lagen bei 48.81±2.59, 17.05±2.4 und 12.52±2.04 MPa. Das Komposit war nicht signifikant fester als die keramikfreie Kontrolle II. Zwischen Kontrolle I und II änderten sich außerdem Wärmehistorie und Struktur. Die Daten beschreiben daher die mechanischen Folgen der Ausbildung feiner Poren und funktioneller Oberflächen, keinen Nachweis einer Verstärkung durch Keramikzugabe. [Druckfestigkeit und Modul](ref:R01)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Benetzung, Proliferation und Differenzierung verlaufen nicht gleichgerichtet",
+          "markdown": "Die Benetzung wurde an gesondert hergestellten flachen Zylinderproben untersucht, nicht an den eigentlichen Ringgerüsten. Auf dem Komposit betrug der anfängliche Wasserkontaktwinkel etwa 112.7°, dennoch wurde der Tropfen innerhalb von 70 s aufgenommen. Bei der keramikfreien Kontrolle II änderte sich der Winkel von etwa 118° auf 116.9° nach 540 s, ohne dass der Tropfen aufgenommen wurde. Sein Verschwinden umfasst auch kapillare Flüssigkeitsaufnahme in Poren und belegt keinen Gleichgewichtskontaktwinkel von null für ein dichtes Material. Freiliegende Keramik und Porenarchitektur veränderten gemeinsam den Flüssigkeitseintritt. [Versuch zur Oberflächenbenetzung](ref:R01)\n\nSaos-2-Osteosarkomzellen wurden mit 100000 Zellen je Gerüst ausgesät. Kontrolle II und Komposit zeigten am Tag 1 mehr tote Zellen; am Tag 14 unterschied sich die Lebensfähigkeit zwischen den Gruppen nicht signifikant. An den Tagen 3 und 7 war die CCK-8-Absorption in beiden partikelgefüllten Gruppen höher als beim Rahmen allein, doch Kontrolle II und Komposit unterschieden sich am Tag 7 nicht signifikant. CCK-8 erfasst ein Stoffwechselsignal statt einer direkten Zellzählung. Dagegen war die DNA-normalisierte ALP-Aktivität am Tag 14 im Komposit höher als in beiden Kontrollen. Die differenzierungsassoziierte Enzymaktivität je DNA-Einheit konnte somit steigen, obwohl der frühere proliferationsbezogene Endpunkt keramikhaltiges und keramikfreies Material nicht unterschied. [Zellüberleben, Stoffwechsel und ALP](ref:R01)\n\nDie Studie untersuchte weder die Reparatur eines tierischen Alveolarknochendefekts noch den Knochen-Implantat-Kontakt nach gleichzeitiger Implantation. Direkt belegt wurden die Herstellung eines ringförmigen Komposits, das Flüssigkeitseintrittsverhalten und die ALP-Antwort kultivierter Zellen. Die im Titel genannte gleichzeitige Knochenregeneration blieb das vorgeschlagene Anwendungsszenario.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Beim Gittervergleich Zusammensetzung und tatsächliche Porengröße getrennt lesen",
+          "markdown": "Thapa et al. verglichen eine direkt elektrogesponnen geschriebene PCL-Membran, schmelzgedruckte PCL-Gitter-, Waben- und Gyroidstrukturen sowie entsprechende β-TCP-Keramikgerüste. PCL/β-TCP im Titel bezeichnet parallele Materialsysteme, kein Komposit mit β-TCP in PCL. Die PCL-Verfahren verwendeten zudem Ausgangsmaterialien unterschiedlicher Molekülmasse; auch die mechanischen Probenabmessungen unterschieden sich zwischen Membranen, gedruckten Polymeren und Keramiken. Material, Herstellungsroute, Oberflächenkörnigkeit und Architektur trugen gemeinsam zu Gruppenunterschieden bei. [Material- und Architekturgruppen](ref:R02)\n\nDie dargestellten mittleren Porengrößen von PCL-Gitter, Wabe und Gyroid betragen ungefähr 0.5, 0.65 und 1 mm: Gleicher nomineller Füllgrad erzeugte keine gleichen Poren. Die direkt geschriebenen elektrogesponnenen Fasern hatten im Mittel etwa 1.8 µm Durchmesser und lagen im Mikrometerbereich; die Bezeichnung Nanofaser im Artikel macht sie nicht submikrometrisch. Der Zugversuch beschreibt die scheinbare Antwort dieser Strukturen und erfolgte an Luft. Für Aussagen zur lokalen, von Zellen unter hydratisierten Bedingungen wahrgenommenen Steifigkeit fehlen entsprechende Messungen. [Tatsächliche Poren und Prüfbedingungen](ref:R02)\n\nIn der direkten Kultur wurden MG63-Osteosarkomzellen mit MTT an den Tagen 1, 3 und 7 sowie REM und konfokaler Mikroskopie untersucht. Die Bilder zeigen Ausbreitung entlang feiner Fasern oder gekrümmter Oberflächen und das Überbrücken lokaler Zwischenräume. ALP, Mineralisierung und osteogene Gene wurden jedoch nicht gemessen; auch YAP/TAZ- oder FAK-Signalwege wurden nicht experimentell beeinflusst. Die Morphologie stützt eine Interpretation als Kontaktführung, beweist aber weder eine Signalwegaktivierung noch Knochenbildung. [Zellmorphologie und Stoffwechsel](ref:R02)\n\nIm ursprünglichen MTT-Panel sind die Balken für PCL-Gitter, Gyroid und Wabe am Tag 7 ähnlich hoch und ihre Fehlerbereiche überlappen; Signifikanzklammern zwischen den Architekturen fehlen. Dies stimmt nicht ausreichend mit der Textaussage einer signifikanten Überlegenheit des Gyroids überein. Die elektrogesponnen geschriebene Gruppe zeigte am Tag 7 ein höheres Signal, zugleich änderten sich jedoch Faserskala, spezifische Oberfläche und Probenform. Krümmungs- oder Steifigkeitseffekte lassen sich daraus nicht isolieren. Der Vergleich veranschaulicht Zellverteilungen an unterschiedlichen Grenzflächen, liefert aber keine von Störvariablen bereinigte Rangfolge osteogener Architekturen.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Ein Kompositträger steuert die Freisetzung, definiert aber keine Einzelsubstanzdosis",
+          "markdown": "Bose et al. beluden pulverbettgedruckte TCP-Gerüste mit Ingwer- und Knoblauchextrakten und regulierten die Freisetzung durch eine PCL/PEG-Schicht. Ein dichterer Außenring umgab einen poröseren Kern; vorgesehen waren quadratische Poren von 400 µm. Nach dem Sintern betrugen die Gesamtporosität 50±0.5% und die Druckfestigkeit 10±1 MPa. Die mechanischen Proben hatten ungefähr 11 mm Durchmesser und 7 mm Höhe, die Tierimplantate dagegen etwa 3 mm Durchmesser und 5 mm Länge. An der größeren Probe gemessene Versagenslasten lassen sich nicht unmittelbar dem kleineren Implantat zuordnen. [Regionale Keramikarchitektur und Beladung](ref:R03)\n\nIngwerextrakt erreichte bei einem PCL/PEG-Molverhältnis von 50:50 ungefähr 50% kumulative Freisetzung und bei 65:35 etwa 25%; die Folgeversuche verwendeten durchgehend 65:35. Nachweisbare Knoblauchextraktfreisetzung dauerte hauptsächlich bis zu 2 Tagen und erreichte ohne Polymer nahezu 35%, mit Polymer 45%. Gemessen wurde absorptionsbasiert in bewegtem Puffer bei pH 7.4 und 37 °C. Die Mehrkomponentenextrakte entsprechen keinen In-vivo-Konzentrationen reinen Gingerols oder Allicins. Die Methoden beschreiben außerdem HA-Scheiben für Freisetzungsversuche; die Kurven können daher nicht unterschiedslos als lokale Pharmakokinetik in sämtlichen dreidimensionalen TCP-Implantaten gelten. [Trägerverhältnis und Freisetzungsmessung](ref:R03)\n\nIn der Kultur humaner fetaler Osteoblasten lag das MTT-Signal am Tag 7 mit Ingwer um 59% und mit der Ingwer-Knoblauch-Kombination um 27% über TCP allein; an diesem Endpunkt übertraf die Kombination Ingwer nicht. Separat hinterließen osteoklastenähnliche Zellen auf HA-Scheiben weniger oder flachere Resorptionsgruben. Beide Versuche nutzten unterschiedliche Zellen und Substrate. Sie stützen mögliche getrennte Veränderungen auf Bildungs- und Resorptionsseite; ein proliferationsbezogener Prozentsatz erlaubt aber keine Berechnung der Nettoknochenneubildung. Außerdem fehlte eine ausschließlich mit PCL/PEG beschichtete Trägerkontrolle, sodass Extrakt- und Polymerbeschichtungseffekte nicht vollständig getrennt wurden. [Osteoblasten und Resorptionsgruben](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "s5",
+          "title": "Knochenfläche, Mineralisierung und Gefäßmarker den jeweiligen Endpunkten zuordnen",
+          "markdown": "Dieselbe TCP-Studie erzeugte bei 20 Ratten beidseitige bikortikale Defekte im distalen Femur und entnahm Gewebe in den Wochen 4 und 10. Die schnittbasierte Bildanalyse ergab in Woche 4 ungefähr 83% trabekulären Knochenflächenanteil für die Ingwer-Knoblauch-Gruppe und etwa 57% für TCP-Kontrollen. Dies sind Flächenanteile im untersuchten Gewebe, keine dreidimensionalen Heilungsanteile des gesamten Defekts; ihre Differenz kann auch nicht einfach als Verbesserung um 30% bezeichnet werden. Pro Färbung wurden mindestens 2–3 Femora und mindestens 5 Schnitte je Femur verwendet. Schnitte sind keine unabhängigen Tiere; beidseitige Proben teilen zudem denselben Wirt. [Femurmodell und Gewebequantifizierung](ref:R03)\n\nIn Woche 10 lagen die Anteile mineralisierter Knochenfärbung bei Ingwer und Kombination über der Kontrolle; die Kombination zeigte außerdem weiterhin mehr Osteoidbildung. Früheres Osteoid und spätere mineralisierte Matrix bieten unterschiedliche zeitliche Einblicke in die Reifung. Die vWF-Färbung zeigte gefäßassoziierte Strukturen in allen Gruppen. vWF ist jedoch ein endothelassoziierter Marker und keine VEGF-Messung, wie Teile des Artikeltexts nahelegen. Die Bilder quantifizieren weder Perfusion noch belegen sie eine höhere wirksame Durchblutung unter der Kombination. Verbesserte Reparatur kann gemeinsam mit Gefäßstrukturen auftreten, ohne dass ihre kausale Beziehung unabhängig manipuliert wurde. [Mineralisierung, Kollagen und Endothelfärbung](ref:R03)\n\nDer Versuch variierte die Porenarchitektur nicht in einem abgestimmten Vergleich gleichförmiger und regionaler Poren. Dieselbe histologische Differenz kann daher nicht zugleich beweisen, dass regionale Poren und dass die Kompositbeladung die Regeneration verbesserten. Die direkte Gruppenevidenz betrifft unterschiedliche Beladungskombinationen auf einer gemeinsamen Keramikarchitektur. Rezeptureffekte sind weiterhin zusammen mit der fehlenden unbeladenen Polymerkontrolle zu interpretieren.",
+          "figure_ids": []
+        },
+        {
+          "id": "s6",
+          "title": "Mikrokugelgerüste ohne zugesetzte Wachstumsfaktoren: Knocheninseln und quantitative Trends unterscheiden sich",
+          "markdown": "Klar et al. druckten Gerüste aus 50, 100 oder 200 µm großen PLGA-Mikrokugeln, verbanden sie mit Dichlormethandampf und implantierten sie in 5 mm große Kalottendefekte bei 24 TOPGAL-Mäusen; untersucht wurde am Tag 60. Die Dura blieb erhalten, und den Gruppen wurde kein Wachstumsfaktor zugesetzt. PLGA-Kontrollen ohne Mikrokugeln wurden bei hoher Temperatur extrudiert, die Mikrokugelgruppen dagegen bei niedriger Temperatur gedruckt und anschließend mit Lösungsmittel behandelt. Der Unterschied umfasste deshalb mehr als kugelförmige Oberflächen; der Artikel nennt zudem mögliche Reparatureffekte unterschiedlicher Abmessungen von Kontroll- und Mikrokugelgerüsten. [Mikrokugelherstellung und Kalottenmodell](ref:R04)\n\nDie Originalbilder ordnen Knocheninseln auf µCT-Oberflächen von-Kóssa-Schnitten desselben Tieres zu. Einige mineralisierte Strukturen lagen damit im Defektinneren statt ausschließlich am Rand. Diese räumliche Übereinstimmung ist aussagekräftiger als ein isolierter schwarz gefärbter Schnitt. Dennoch handelt es sich um einen orthotopen Knochendefekt mit erhaltener Dura sowie endogenen osteogenen Zellen und Signalen. Innere Inseln allein belegen keine Induktion in einer ektopen Gewebeumgebung. Kein zugesetzter Wachstumsfaktor und kein endogenes osteogenes Signal sind unterschiedliche Bedingungen. [Modalitätsübergreifende Lokalisation mineralisierter Inseln](ref:R04)\n\nAuch die quantitative Abbildung verändert die Interpretation des Trends. Im histomorphometrischen Panel hat die 200-µm-Gruppe einen höheren Median; Signifikanzklammern verbinden sie mit reinem PLGA und der 100-µm-Gruppe. Im µCT-Panel verbinden die Klammern dagegen reines PLGA mit den 50- und 100-µm-Gruppen; die 200-µm-Verteilung ist breiter und ihr Median nicht am höchsten. Die Textaussage, nur 200 µm hätten die Bildung signifikant gesteigert und sämtliche anderen Gruppen übertroffen, erklärt nicht beide Panels. Zudem enthält die histologische Prozentdarstellung negative Werte, deren Beziehung zum methodisch beschriebenen positiven Flächenanteil unerläutert bleibt. Sie dürfen nicht als physisch negative Knochenmenge interpretiert werden. [Ursprüngliche quantitative Abbildung](ref:R04)\n\nAußerdem berechnet die µCT-Methode die Änderung der projizierten Restdefektfläche gegenüber einer idealen Kreisöffnung, obwohl der Abbildungstitel von volumetrischer Quantifizierung spricht. Dies entspricht nicht dem üblichen Knochenvolumenanteil BV/TV. Ein einzelner Endpunkt trennt auch Mikrokugelgröße, Abbaurate, tatsächliche Porenvernetzung und Reststruktur nicht. Der Versuch lokalisiert neu mineralisierte Strukturen; seine quantitativen Befunde begründen jedoch keine monoton mit der Mikrokugelgröße zunehmende Regenerationsbeziehung.",
+          "figure_ids": [
+            "F05",
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Jeong et al.: Druckverhalten von Rahmen, keramikfreier Füllung und Kompositgerüst.",
+          "interpretation": "Links steht die maximale Festigkeit, rechts der Young-Modul, jeweils in MPa. Die schwarze Kontrolle I übertrifft beide partikelgefüllten, wärmebehandelten Gruppen; Kontrolle II gegen Komposit ist in beiden Panels mit ns bezeichnet. Der niedrigere Kompositmodul belegt keine Versteifung durch Keramik. Die Herstellung feinporiger Grenzflächen veränderte zugleich die tragende Struktur. [Druckprüfgruppen](ref:R01)"
+        },
+        "F02": {
+          "caption": "Jeong et al.: Saos-2-Überleben, Stoffwechselsignal und normalisierte ALP.",
+          "interpretation": "In a betragen die Maßstabsbalken am Tag 1 500 µm und am Tag 14 100 µm; die scheinbare Zelldichte erlaubt deshalb keinen direkten Proliferationsvergleich. Weiße Dreiecke markieren tote Zellen. Schwarze/graue Balken in b zeigen CCK-8 am Tag 3/7 mit Absorption bei 450 nm; Sterne verbinden hauptsächlich Zeitpunkte innerhalb derselben Gruppe. In c ist ALP auf DNA normalisiert: Das Komposit liegt am höchsten, Kontrolle II unter Kontrolle I. Höhere Stoffwechselaktivität gewährleistet keinen parallelen Anstieg differenzierungsassoziierter Enzymaktivität. [Zellversuch](ref:R01)"
+        },
+        "F03": {
+          "caption": "Thapa et al.: tatsächliche Oberflächen und Porenskalen verschiedener Materialien und Gitter.",
+          "interpretation": "A kombiniert elektrogesponnen geschriebene Membran, Faserdurchmesser und Gitter-REM; B vergleicht körniges β-TCP mit glatterem PCL; C stellt Porengrößen dar. PCL-GR, PCL-HC und PCL-GY haben keine gleichen Poren, auch die keramischen Gegenstücke sind nicht porengleich gepaart. Chemie und geometrische Skala ändern sich gemeinsam; Zellunterschiede lassen sich daher nicht allein der Gyroidkrümmung zuordnen. Der Faserdurchmesser ist in µm aufgetragen und beträgt ungefähr 1.8 µm. [Poren und Morphologie](ref:R02)"
+        },
+        "F04": {
+          "caption": "Thapa et al.: MG63-Morphologie und MTT-Signale auf verschiedenen Gerüsten.",
+          "interpretation": "A–G vergleichen REM an Tag 1/7 mit zwischen den Gruppen unterschiedlichen Vergrößerungen. H1/H2 zeigen Fluoreszenz und räumliche Rekonstruktion an Tag 3 und lokalisieren Zellen an Grenzflächen. Obwohl die Vertikalachse in I Biocompatibility heißt, ist sie keine prozentuale Lebensfähigkeit; der Text behandelt sie als MTT-Absorption. PCL-DEW liegt am Tag 7 am höchsten; die drei gedruckten PCL-Gruppen liegen nahe beieinander, ohne Klammern für eine signifikante Rangfolge. Auch die Fluoreszenzfarben entsprechen nicht vollständig der textlichen Beschreibung blauer DAPI-Signale; Zellkerne werden deshalb nicht allein anhand der Farbe zugeordnet. Mineralisierungs- oder differenzierungsspezifische Marker fehlen. [Originalabbildung der Zellen](ref:R02)"
+        },
+        "F05": {
+          "caption": "Klar et al.: Zuordnung von Knocheninseln und Histologie in der 200-µm-Mikrokugelgruppe.",
+          "interpretation": "A zeigt die Kalotte von oben im µCT; B vergrößert den Defekt, die blaue Linie lokalisiert Schnitt C. Kleine farbige Kreise ordnen identische Strukturen zwischen den Modalitäten zu. Rote Kreise zeigen einzelne mineralisierte Strukturen im Defektinneren, keine durchgehend schließende Knochenplatte. Die Maßstabsbalken betragen in A 2 mm und in B/C 500 µm. Diese räumliche Zuordnung am Tag 60 bestimmt weder den Zellursprung noch belegt sie ektope Osteoinduktion. [Zugeordnete Bildgebung](ref:R04)"
+        },
+        "F06": {
+          "caption": "Klar et al.: Histomorphometrie und µCT unterscheiden sich in Verteilung und Signifikanz.",
+          "interpretation": "In A ist der Median bei 200 µm höher; Klammern vergleichen reines PLGA mit 200 µm sowie 100 mit 200 µm. In B vergleichen die Klammern reines PLGA mit 50 µm und reines PLGA mit 100 µm. Die 200-µm-Verteilung in B ist breit; ihr höchster Einzelwert ersetzt keine Gruppenevidenz. Die Boxplots enthalten Einzelpunkte. Die Beziehung negativer Prozentwerte in A zur beschriebenen Flächenanteilsberechnung bleibt ungeklärt; B heißt volumetrisch, obwohl die Methoden eine projizierte Defektfläche beschreiben. Beide Panels lassen sich nicht gemeinsam als Überlegenheit von 200 µm an jedem Endpunkt wiedergeben. [Quantitative Abbildung und Methoden](ref:R04)"
+        }
+      }
+    }
+  }
+}

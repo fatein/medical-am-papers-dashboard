@@ -1,0 +1,308 @@
+{
+  "schema_version": 2,
+  "question_id": "P5-079",
+  "p": "P5",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-04",
+  "related_paper_ids": [
+    "doc_3e8ec4b38704abd5facd"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Automated Generation of Custom Fit PPE Inserts: For Respiratory Masks Using 2D and 3D Anthropometric Data",
+      "publisher": "ACADIA 2021",
+      "year": 2021,
+      "url": "https://2021.acadia.org/publication/ACADIA_2021_Proceedings_LowRes.pdf",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "3D Printed frames to enable reuse and improve the fit of N95 and KN95 respirators",
+      "publisher": "BMC Biomedical Engineering",
+      "year": 2021,
+      "url": "https://doi.org/10.1186/s42490-021-00055-7",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Quantitative Fit Test of a 3D Printed Frame Fitted Over a Surgical Mask: An Alternative Option to N95 Respirator",
+      "publisher": "International Journal of Dentistry",
+      "year": 2022,
+      "url": "https://doi.org/10.1155/2022/1270106",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Improving the fit of filtering facepiece respirators",
+      "publisher": "British Dental Journal",
+      "year": 2022,
+      "url": "https://doi.org/10.1038/s41415-022-4512-3",
+      "kind": "paper"
+    },
+    {
+      "id": "R05",
+      "title": "Effectiveness of a 3D-printed mask fitter in an Ophthalmology setting during COVID-19",
+      "publisher": "Canadian Journal of Ophthalmology",
+      "year": 2022,
+      "url": "https://doi.org/10.1016/j.jcjo.2021.03.004",
+      "kind": "paper"
+    },
+    {
+      "id": "R06",
+      "title": "Personalized 3D-printed frames to reduce leak from N95 filtering facepiece respirators: A prospective crossover trial in health care workers",
+      "publisher": "Journal of Occupational and Environmental Hygiene",
+      "year": 2023,
+      "url": "https://doi.org/10.1080/15459624.2023.2205471",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R02",
+      "original_label": "Fig. 1",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8182357.1/42490_2021_55_Fig1_HTML.jpg?md5=befb8a7501a8a78b974369c615da18aa",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8182357/#Fig1",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-079/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R02",
+      "original_label": "Fig. 4",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8182357.1/42490_2021_55_Fig4_HTML.jpg?md5=73425ed0bfbb16f83bd96d6259f029fe",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8182357/#Fig4",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-079/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Fig. 5",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8182357.1/42490_2021_55_Fig5_HTML.jpg?md5=2f52cb3e16735c60b0fb5b632124db7a",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8182357/#Fig5",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-079/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R03",
+      "original_label": "Fig. 1",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8942705.1/IJD2022-1270106.001.jpg?md5=d5e290afbdc491fcdf6fc00f568c032f",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8942705/#fig1",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-079/F04.jpg"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Fig. 2",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8942705.1/IJD2022-1270106.002.jpg?md5=ce26d60f2fbbb8c4025ab66bceca1287",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8942705/#fig2",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P5-079/F05.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "定制防护配件如何改善医护用品贴合？",
+      "direction": "个人防护用品",
+      "sections": [
+        {
+          "id": "personalization_location",
+          "title": "个体化发生在哪里：面部轮廓、可调框架与原有面罩的接口",
+          "markdown": "定制防护配件并不一定重新制造整个面罩。其研究对象可以是放在面罩内的贴合插入件、覆盖外缘的框架，或改变固定方式的模块。共同问题是面部形状如何转化为实际接触，以及这种接触在原有面罩上是否产生预期效果。\n\n现有论文库中的自动化插入件研究，将面部图像或扫描与参数化设计连接，为指定面罩生成个体化接口。研究摘要区分了用于采集面部信息的 200 名医护人员与进行实物试用的 20 名前线人员；前者不是完成性能验证的样本量。二维图像与三维网格是不同输入，最终试验也不能仅凭生成模型数量推断密合性改善。[自动化贴合插入件的原始研究](ref:R01)\n\nPanFab 采用另一条路线：不逐人打印完整面部轮廓，而是设置不同尺寸的打印侧框，并用可调整部分适应面部。初期较刚性的整体框架对窄脸适配较差，研究经过使用者反馈改变尺寸、固定点和边缘形状。最终小号侧框长 6.35 cm，常规号 7.62 cm；圆角用于减少对原面罩的过度挤压变形。[模块化框架的设计与实验](ref:R02)\n\n这些设计形成不同的误差来源。扫描定制依赖采集时的面部形态与后续实际佩戴的一致性；可调框架则依赖现场调整、固定带位置和面罩本身的形状。原图中杯状、鸭嘴形与折叠形面罩分别处于不同受压状态，框架接触位置相似，并不意味着各类面罩具有相同的受力和密封响应。\n\n这项研究也记录了方形或尖角原型使面罩明显变形的现象，随后改为圆角。改变的不是滤材本身，而是作用在外壳和周缘上的约束。因而比较定制效果时，需要把“能装上”“原本合适时能保持贴合”和“原本不合适时能纠正贴合”区分为不同实验。",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "fit_failure_denominators",
+          "title": "原本通过与原本失败：相同框架的结果依赖起点",
+          "markdown": "PanFab 共招募 45 名志愿者，但不是每个人都测试所有面罩。各型号的受试人数不同，合计的型号测试数不能当作独立参与人数。研究先测原始状态，再按是否通过分成不同问题：原本通过者，在失去原有固定作用时测试框架能否保持；原本失败者，测试框架能否改善。[原始分组流程与结果表](ref:R02)\n\n| 面罩型号 | 原始状态通过 | 原本通过者使用框架后仍通过 | 原本失败者使用框架后转为通过 |\n|---|---:|---:|---:|\n| 3M 1860 | 30/34 | 24/30 | 0/4 |\n| 3M 8210 | 9/10 | 9/9 | 0/1 |\n| Kimberly Clark 鸭嘴形 | 15/16 | 12/15 | 0/1 |\n| Cooper KN95 | 12/25 | 11/12 | 6/13 |\n\n维持既有贴合与纠正原本失配的表现明显不同。前者的大部分观察通过，但部分人即使原始状态通过，更换固定方式后仍会失败；后者对所测试的折叠型 KN95 有改善，却没有纠正表中原本失败的其他型号。由此不能只选最高通过率，将框架概括为对所有面罩和脸形都有效。\n\n失去原固定作用是在实验中模拟，原带被移除或不承担固定，并不是追踪同一批面罩经过长期临床使用后的自然损坏。这个设计把固定功能单独拿出来检验，但没有同时测量长时间使用中材料污染、滤材变化与贴合改变。\n\n论文还有少量定量测试，表中既有提高也有仍处于低值的记录，且使用了已经使用和处理过的面罩。它与主要定性分组不是一套规模相同的配对数据，不能把两类结果拼接成一个统一通过率。原图的分支流程清楚说明了分母的来源：保持性能的分母只包含先前通过的人，修正性能的分母只包含先前失败的人。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "mask_frame_interaction",
+          "title": "框架不是独立变量的全部：鼻梁结构和面罩材料一起参与",
+          "markdown": "一项牙科定量研究在 5 名牙医中比较蓝色外科口罩、蓝色口罩加定制框架、白色口罩加同类框架。两种口罩均属于 ASTM Level 1，但外层构造、鼻梁金属件和泡沫支承并不相同。研究并没有测试白色口罩不加框架的完整对照，也没有同步测试一个 N95 对照组。[同一框架与不同口罩组合](ref:R03)\n\n| 组合 | 原文表中各受试者的密合因数 |\n|---|---|\n| 蓝色口罩，无框架 | 1、3、8、8、2 |\n| 蓝色口罩，加框架 | 164、191、189、109、250 |\n| 白色口罩，加框架 | 141、33、41、24、47 |\n\n蓝色口罩在加入框架后全部超过研究采用的 100 阈值，白色口罩组合只有部分达到。论文正文把白色组概括为均低于阈值，但其原表明确列出 141。原图还把蓝色组后两人的数值画为 104、141，与表中的 109、250 不一致。报告保留原图，并分别说明数据来自图还是表，不将冲突数字平均成一个新的结果。\n\n这些差异不改变该组数据中蓝色组合全部越过阈值、白色组合多数未越过的方向，却阻止了把精确均值当成已无歧义的结果。面罩标签中的同一等级也未消除设计差异；作者提出鼻梁泡沫支承可能影响贴合，但没有把泡沫、外层材料和框架位置分别随机控制，不能只将改善归因于某一个部件。\n\n定制配件的分析单位因此是具体面罩—框架—佩戴者组合。仅以打印材料或是否个体化分组，会掩盖鼻梁刚度、折叠方式与周缘压紧等因素。在这项试验中，同一个人的两种组合表现不同，比简单宣称“定制优于非定制”更能解释装置怎样工作。",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "movement_and_measurement",
+          "title": "动态密合与配对比较：短时测试到底回答了什么",
+          "markdown": "牙科研究的密合因数由面罩外与内部颗粒浓度之比获得，试验包括弯腰、说话、左右转头和上下移动头部。静态扫描只给出初始面部形状，动态测试才涉及下颌运动和头部位置改变。[动态测量条件](ref:R03)\n\n作者观察到说话阶段表现较差，并提到某位受试者说话较快，但研究没有独立随机比较说话速度，也没有同步测量各面部接触点的压力。因此，不能将这一观察变成“降低语速即可保证密合”的设计结论。需要区分所观察到的动作关联与经过控制验证的原因。\n\n后续前瞻性交叉研究在 66 名医护人员中比较 N95 单独使用与加入个体化框架，原文摘要报告通过人数由 27/66 增至 62/66，平均密合因数由 85.2 增至 179.0，并报告各动作阶段改善。这提供了同一人改变配置后的配对证据；论文摘要没有提供全部个体轨迹，不能从均值重建每个人的改善幅度。[个体化内置框架的交叉研究](ref:R06)\n\n另一项研究专门招募既往密合测试失败的 20 名女性牙科工作人员，两种 FFP3 面罩原本均为 1/20 通过，加入框架后分别为 14/20 和 19/20。测试顺序随机，结果属于定性测试；同一队列对不同型号的响应不同，研究者观察到某型号鼻梁金属件妨碍框架定位。[既往失败人群中的型号差异](ref:R04)\n\n这些研究的基线人群和检测方式不同：普通职业队列、专门招募既往失败者，以及不同面罩的短时配对测试，对应不同问题。跨研究比较时，较高的改善幅度可能同时反映较低的起始通过率、不同的面罩构型和不同的测量方式，而不只是打印精度提高。",
+          "figure_ids": []
+        },
+        {
+          "id": "comfort_and_contact",
+          "title": "舒适度出现相反结果：接触位置、材料与比较对象共同决定",
+          "markdown": "眼科研究在 20 名参与者中将定制外框加在外科口罩上，18 人最终通过定性测试，其中 13 人首次通过。框架组合的舒适度中位数为 3.5，而普通口罩为 8.5；使用者反映眼周、鼻梁及下唇受压，固定带调整也影响体验。比较对象是普通口罩，而不是同一款 N95。[外置框架的佩戴体验](ref:R05)\n\n前述个体化内置框架交叉研究则报告，与 N95 单独使用相比，R-COMFI 舒适与耐受评分改善，p = 0.006。该框架带有硅胶覆盖，与刚性的外置压框不同；摘要报告的是总体评分，没有提供长时间皮肤受压的定量图谱。[内置框架的舒适评分](ref:R06)\n\n两个结果不能直接相减来计算软材料的效果，因为位置、材料、面罩与比较对象同时改变。它们分别说明：外缘压紧可以提高密合，却增加某些位置的负担；个体化接触也可能改善相对原有呼吸防护装置的佩戴体验。具体机制需要接触压力、相对位移与舒适评分共同检验。\n\nPanFab 的原图给出不同构型面罩的正面与侧面状态，可用于识别框架如何跨越面罩外缘，但照片没有压力标尺，也没有展示所有人的动态位移。圆角改型和尺寸选择来自实际迭代，不能据静态照片量化压伤降低或长时间耐受。\n\n佩戴结果还取决于使用持续时间和调整次数。短时测试中的良好评分，与工作中频繁讲话、低头、使用目镜和重复调整时的体验不是同一个终点。这里可直接比较的是每项试验规定状态下的密合与感受；尚未测量的压力分布没有被转写成已验证的材料或结构优势。",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "原图 1｜分尺寸侧框与可调连接",
+          "interpretation": "A 比较不同长度的侧框，B 标注圆角，C 显示完整框架及夹持点。它没有逐人复制整张脸，而是把固定尺寸与可调接口组合。圆角改变的是对原有面罩的局部约束，不能据外观推出密合因数。"
+        },
+        "F02": {
+          "caption": "原图 4｜同一框架在不同面罩构型上的位置",
+          "interpretation": "A–D 分别显示杯状、另一杯状、鸭嘴形及折叠形面罩的正面和侧面。面罩形态、框架落点与突出空间不同；这些照片提供几何观察，没有显示每个点的压力或动态漏气。带阀的示例是原文测试照片，不应理解为所有临床场景的配置。"
+        },
+        "F03": {
+          "caption": "原图 5｜先按基线结果分流，再评价框架",
+          "interpretation": "上方为招募与原始测试，左分支研究原本通过者失去原固定后的保持，右分支研究原本失败者的改善。两个分支的分母不同。将左侧较高的保持率当成右侧纠正率，会夸大对不合适面罩的修正能力。"
+        },
+        "F04": {
+          "caption": "原图 1｜测量装置与面部建模属于不同环节",
+          "interpretation": "a 为颗粒计数测试设备，b 为面部扫描上的框架模型。模型描述计划接触边界，设备测量佩戴时的内外颗粒浓度关系；图中的个体化外形本身没有给出实验通过与否。"
+        },
+        "F05": {
+          "caption": "原图 2｜逐人比较暴露了图表和正文的不一致",
+          "interpretation": "蓝柱为蓝色口罩无框架，红柱为蓝色口罩加框架，灰柱为白色口罩加框架；虚线是 100 阈值。首位受试者灰柱为 141，反驳白色组全部不通过的文字概括。末两根红柱为 104、141，而原表为 109、250；两种呈现均保留为各自来源，不混合计算均值。"
+        }
+      }
+    },
+    "en": {
+      "title": "How can customized protective accessories improve the fit of medical protective equipment?",
+      "direction": "Personal protective equipment",
+      "sections": [
+        {
+          "id": "personalization_location",
+          "title": "Where personalization occurs: facial contour, adjustable frames and the original mask interface",
+          "markdown": "A customized protective accessory need not replace the entire mask. It may be an internal insert, an external perimeter frame or a module changing how the mask is retained. The shared research question is how facial geometry becomes actual contact and whether that contact produces the intended response in the existing mask.\n\nThe automated-insert paper in the existing library connects facial images or scans to parametric design for a specified mask interface. Its abstract distinguishes 200 health care workers contributing facial information from 20 frontline workers physically testing inserts; the former is not the performance-validation sample. Two-dimensional images and three-dimensional meshes are different inputs, and numbers of generated models do not establish fit improvement.[Original automated-insert research](ref:R01)\n\nPanFab took another route: rather than printing the entire facial contour for each person, it used printed side pieces in different sizes and adjustable elements. An initially rigid frame fitted narrow faces poorly, prompting user-feedback changes to size, retention and edge geometry. Final small side pieces were 6.35 cm long and regular pieces 7.62 cm; rounded edges reduced excessive deformation of the original mask.[Modular frame design and testing](ref:R02)\n\nThese approaches introduce different errors. Scan-based customization depends on correspondence between the recorded face and the face during wear. Adjustable frames depend on fitting, strap position and mask shape. The original images show cup-shaped, duckbill and flat-fold masks under different constraints. Similar frame contact locations do not imply equal mechanical or sealing responses.\n\nThe study also records mask deformation with square or pointed prototypes, followed by rounded-edge redesign. The changed element is the constraint on the shell and perimeter, rather than filter material. “Can be attached”, “preserves an initially acceptable fit” and “corrects an initially poor fit” are therefore distinct experiments.",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "fit_failure_denominators",
+          "title": "Initially passing and initially failing users: the starting condition changes the result",
+          "markdown": "PanFab enrolled 45 volunteers, but not everyone tested every mask. Model-specific sample counts differ, and their sum is not the number of independent people. Baseline testing determined the subsequent question: initially passing users were assessed for preservation of fit after original retention was removed, while initially failing users were assessed for improvement.[Original branching design and results](ref:R02)\n\n| Mask model | Passed at baseline | Initially passing users still passing with frame | Initially failing users converted to passing |\n|---|---:|---:|---:|\n| 3M 1860 | 30/34 | 24/30 | 0/4 |\n| 3M 8210 | 9/10 | 9/9 | 0/1 |\n| Kimberly Clark duckbill | 15/16 | 12/15 | 0/1 |\n| Cooper KN95 | 12/25 | 11/12 | 6/13 |\n\nPreserving an existing fit and correcting a mismatch produced different results. Most preservation observations passed, but some previously passing users failed after retention changed. Among baseline failures, the tested flat-fold KN95 improved for some users, while the other listed models did not. Selecting only the highest percentage would hide this dependence on mask and face.\n\nLoss of original retention was simulated by removing the original bands or letting them cease to bear load. It was not longitudinal observation of natural damage after clinical use. The experiment isolates retention, without simultaneously measuring contamination, filter changes and fit changes during prolonged use.\n\nThe paper includes a small quantitative series with both improved and persistently low values, using previously worn and treated masks. It is not a matched dataset of the same size as the main qualitative branches, so the results cannot be pooled into one passing rate. The original flow chart explains the denominators: preservation is assessed only among prior passes, correction only among prior failures.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "mask_frame_interaction",
+          "title": "The frame is not the entire intervention: nose bridges and mask construction participate",
+          "markdown": "A quantitative dental study compared a blue surgical mask, the blue mask with a customized frame and a white mask with a similar frame in 5 dentists. Both masks were ASTM Level 1, but outer-layer construction, nose-bridge metal and foam support differed. There was no complete white-mask-without-frame comparison and no concurrent N95 control arm.[Different masks combined with a frame](ref:R03)\n\n| Configuration | Individual fit factors in the original table |\n|---|---|\n| Blue mask, no frame | 1, 3, 8, 8, 2 |\n| Blue mask, frame | 164, 191, 189, 109, 250 |\n| White mask, frame | 141, 33, 41, 24, 47 |\n\nEvery blue-mask/frame combination exceeded the study threshold of 100, whereas only part of the white-mask group did. The prose generalizes that all white-mask values were below threshold, but the table explicitly contains 141. The original graph also plots the final blue-mask participants as 104 and 141, rather than the table’s 109 and 250. The original graph is retained with its discrepancy identified; conflicting numbers are not averaged into a new result.\n\nThese differences do not change the direction that all blue combinations passed and most white combinations failed in this dataset, but prevent treating an exact mean as unambiguous. A shared mask level does not remove design differences. The authors suggest a role for nose foam, but did not randomize foam, outer-layer construction and frame placement independently, so improvement cannot be attributed solely to one component.\n\nThe analytical unit is therefore a particular mask–frame–wearer combination. Grouping only by printed material or personalization hides nose-bridge stiffness, folding and perimeter compression. Different configurations behaving differently on a wearer are more informative about device function than a generic statement that customization outperforms non-customization.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "movement_and_measurement",
+          "title": "Dynamic fit and paired comparisons: what short tests actually measure",
+          "markdown": "The dental study calculated fit factor from particle concentration outside versus inside the mask during bending, talking and horizontal and vertical head motion. Static scanning records the initial face; dynamic testing introduces jaw movement and changing head position.[Dynamic measurement conditions](ref:R03)\n\nThe authors observed poorer performance while talking and noted faster speech by one participant. Speech speed was not independently randomized and local facial contact pressure was not measured simultaneously. This observation does not establish that slower speech guarantees sealing. An association with an exercise differs from a controlled causal test.\n\nA later prospective crossover study compared N95 alone with an individualized frame in 66 health care workers. Its abstract reports passes increasing from 27/66 to 62/66 and mean fit factor from 85.2 to 179.0, with improvements across exercise stages. This supplies paired configuration evidence. The abstract does not provide all individual trajectories, so the means cannot reconstruct each person’s improvement.[Crossover study of an internal personalized frame](ref:R06)\n\nAnother study specifically recruited 20 female dental workers with previous fit-test failure. Both FFP3 models passed in 1/20 at baseline; with frames, they passed in 14/20 and 19/20. Test order was randomized, but outcomes were qualitative. Different responses within the same cohort coincided with an observed metal nose piece interfering with frame placement in one model.[Mask-model differences in prior failures](ref:R04)\n\nThese are different populations and measurements: a general occupational cohort, selected prior failures and short paired tests of specific masks. Larger improvements across studies can reflect poorer baseline fit, different mask construction and different measurement, rather than printing accuracy alone.",
+          "figure_ids": []
+        },
+        {
+          "id": "comfort_and_contact",
+          "title": "Opposite comfort findings: contact location, material and comparator matter",
+          "markdown": "An ophthalmology study added customized external frames to surgical masks in 20 participants. Ultimately 18 passed qualitative testing, including 13 at the first attempt. Median comfort was 3.5 with the frame combination versus 8.5 for the ordinary mask. Participants described pressure near the eyes, nose and lower lip and difficulties adjusting straps. The comparator was an ordinary mask, not the same N95.[Wear experience with external frames](ref:R05)\n\nThe internal-frame crossover study instead reported improved R-COMFI comfort and tolerability relative to N95 alone, p = 0.006. Its silicone-covered frame differs from a rigid external brace. The abstract reports an overall score rather than a quantitative map of prolonged skin pressure.[Comfort scores with an internal frame](ref:R06)\n\nSubtracting these results would not estimate a soft-material effect, because position, material, mask and comparator changed together. They show different possibilities: tightening the perimeter may improve fit while burdening particular contact regions, and personalized contact may improve comfort relative to the original respirator. Mechanism requires contact pressure, relative displacement and comfort scores to be assessed together.\n\nPanFab’s original frontal and lateral photographs reveal how frames span different mask outlines, but have no pressure scale and do not show every wearer’s dynamic displacement. Rounded edges and size selection emerged from iteration; static photographs do not quantify reductions in pressure injury or prolonged tolerability.\n\nDuration and adjustment frequency also change the endpoint. Good short-test ratings are distinct from experience during repeated speech, looking down, using eyepieces and readjusting throughout work. The available comparisons concern fit and perception under each study’s specified conditions; unmeasured pressure distributions are not converted into demonstrated material or structural superiority.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Original figure 1 | Sized side pieces and adjustable connections",
+          "interpretation": "A compares side-piece lengths, B identifies rounded edges and C shows the assembled frame and clips. Fixed dimensions are combined with adjustable interfaces rather than individually reproducing an entire face. Rounded edges change local constraint on the original mask; appearance alone provides no fit factor."
+        },
+        "F02": {
+          "caption": "Original figure 4 | One frame across different mask constructions",
+          "interpretation": "A–D show frontal and lateral views of cup-shaped, another cup-shaped, duckbill and flat-fold masks. Shell shape, contact placement and projecting volume differ. Photographs establish geometry, not local pressure or dynamic leakage. The valved example is an original test photograph, not a configuration specified for every clinical setting."
+        },
+        "F03": {
+          "caption": "Original figure 5 | Baseline status determines the evaluation branch",
+          "interpretation": "Recruitment and baseline testing precede separate branches: the left asks whether initially passing users retain fit after original retention is lost; the right asks whether initial failures improve. Denominators differ. Treating the higher preservation rate as a correction rate exaggerates the ability to fix an unsuitable mask."
+        },
+        "F04": {
+          "caption": "Original figure 1 | Measurement apparatus and facial modeling are separate stages",
+          "interpretation": "Panel a shows particle-counting equipment and b a frame model on a facial scan. The model describes planned contact; the apparatus measures inside/outside particle concentrations during wear. Personalized appearance in the image does not itself establish a passed test."
+        },
+        "F05": {
+          "caption": "Original figure 2 | Individual bars expose discrepancies with the table and prose",
+          "interpretation": "Blue bars are blue masks without frames, red bars blue masks with frames and gray bars white masks with frames. The dashed line is 100. The first gray value is 141, contradicting a statement that every white combination failed. Final red values are 104 and 141, versus 109 and 250 in the table. Both representations remain attributed to their sources rather than merged to calculate a mean."
+        }
+      }
+    },
+    "de": {
+      "title": "Wie verbessern individuelle Schutzaccessoires die Passung medizinischer Schutzausrüstung?",
+      "direction": "Persönliche Schutzausrüstung",
+      "sections": [
+        {
+          "id": "personalization_location",
+          "title": "Wo Individualisierung erfolgt: Gesichtskontur, verstellbarer Rahmen und Maskenschnittstelle",
+          "markdown": "Ein individuelles Schutzaccessoire muss nicht die gesamte Maske ersetzen. Es kann als innerer Einsatz, äußerer Randrahmen oder Modul für eine andere Befestigung dienen. Die gemeinsame Forschungsfrage lautet, wie Gesichtsgeometrie in tatsächlichen Kontakt umgesetzt wird und ob dieser Kontakt an der vorhandenen Maske die gewünschte Wirkung erzeugt.\n\nDie in der Bibliothek enthaltene Arbeit zur automatisierten Einsatzerzeugung verbindet Gesichtsbilder oder Scans mit parametrischer Gestaltung für eine bestimmte Maskenschnittstelle. Ihr Abstract unterscheidet 200 Beschäftigte mit erhobenen Gesichtsdaten von 20 Personen im praktischen Einsatztest. Erstere sind nicht die Stichprobe der Leistungsprüfung. Zweidimensionale Bilder und dreidimensionale Netze sind unterschiedliche Eingaben; viele erzeugte Modelle belegen noch keine verbesserte Dichtheit.[Originalstudie zu automatisierten Einsätzen](ref:R01)\n\nPanFab wählte einen anderen Weg: Statt für jede Person die gesamte Gesichtskontur zu drucken, wurden Seitenteile verschiedener Größen mit verstellbaren Elementen kombiniert. Ein zunächst starrer Rahmen passte schmalen Gesichtern schlecht. Rückmeldungen führten zu Änderungen an Größe, Befestigung und Kanten. Die endgültigen kleinen Seitenteile waren 6.35 cm, reguläre 7.62 cm lang; abgerundete Kanten verminderten übermäßige Maskenverformung.[Modularer Rahmen und Prüfungen](ref:R02)\n\nDie Ansätze bringen verschiedene Fehlerquellen mit sich. Scanindividualisierung hängt davon ab, wie gut Aufnahmezustand und Tragesituation übereinstimmen. Verstellbare Rahmen hängen von Anpassung, Bandlage und Maskenform ab. Die Originalbilder zeigen schalenförmige, schnabelförmige und flach gefaltete Masken unter verschiedenen Randbedingungen. Ähnliche Rahmenkontakte bedeuten keine gleiche mechanische oder dichtende Reaktion.\n\nDie Studie beschreibt Maskenverformung durch eckige oder spitze Prototypen mit anschließender Abrundung. Verändert wird die Führung von Schale und Rand, nicht das Filtermaterial. „Lässt sich befestigen“, „erhält bereits gute Passung“ und „korrigiert anfänglich schlechte Passung“ sind deshalb eigenständige Versuche.",
+          "figure_ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        {
+          "id": "fit_failure_denominators",
+          "title": "Anfangs bestanden oder nicht bestanden: der Ausgangszustand verändert das Ergebnis",
+          "markdown": "PanFab rekrutierte 45 Freiwillige; nicht jede Person prüfte jedes Modell. Modellspezifische Zahlen unterscheiden sich, ihre Summe ist keine Zahl unabhängiger Personen. Die Ausgangsprüfung bestimmte die Folgefrage: Bei anfänglich erfolgreicher Passung wurde deren Erhalt nach Wegfall der Originalbefestigung geprüft, bei anfänglichem Versagen deren Verbesserung.[Originaler Prüfablauf und Ergebnisse](ref:R02)\n\n| Maskenmodell | Ausgangsprüfung bestanden | Anfänglich erfolgreiche Personen bestehen mit Rahmen | Anfänglich erfolglose Personen bestehen anschließend |\n|---|---:|---:|---:|\n| 3M 1860 | 30/34 | 24/30 | 0/4 |\n| 3M 8210 | 9/10 | 9/9 | 0/1 |\n| Kimberly Clark Schnabelform | 15/16 | 12/15 | 0/1 |\n| Cooper KN95 | 12/25 | 11/12 | 6/13 |\n\nErhalt vorhandener Passung und Korrektur einer Fehlpassung ergaben unterschiedliche Ergebnisse. Die meisten Erhaltungsprüfungen waren erfolgreich, einige zuvor erfolgreiche Personen versagten aber nach Befestigungswechsel. Unter anfänglichen Fehlschlägen verbesserte sich die geprüfte faltbare KN95 bei einigen Personen; die übrigen aufgeführten Modelle nicht. Nur den höchsten Prozentsatz auszuwählen würde die Abhängigkeit von Maske und Gesicht verdecken.\n\nDer Verlust der Originalbefestigung wurde durch Entfernen oder Entlasten der Originalbänder simuliert. Es handelte sich nicht um eine Verlaufsbeobachtung natürlicher Schäden nach klinischem Gebrauch. Der Versuch isoliert Befestigung, ohne zugleich Kontamination, Filterveränderungen und langfristige Passungsänderung zu messen.\n\nEine kleine quantitative Serie enthält sowohl verbesserte als auch weiterhin niedrige Werte und verwendete bereits getragene und behandelte Masken. Sie ist kein gleich großer gepaarter Datensatz wie die qualitativen Hauptzweige und lässt sich nicht zu einer gemeinsamen Bestehensquote zusammenführen. Das Originalflussdiagramm erklärt die Nenner: Erhalt wird nur bei vorher Erfolgreichen, Korrektur nur bei vorher Erfolglosen bewertet.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "mask_frame_interaction",
+          "title": "Der Rahmen ist nicht die gesamte Intervention: Nasenbügel und Maskenaufbau wirken mit",
+          "markdown": "Eine quantitative zahnmedizinische Studie verglich bei 5 Zahnärzten eine blaue OP-Maske, dieselbe mit individuellem Rahmen und eine weiße mit vergleichbarem Rahmen. Beide Masken entsprachen ASTM Level 1; Außenlagen, Nasenmetall und Schaumauflage unterschieden sich. Ein vollständiger Vergleich der weißen Maske ohne Rahmen und eine parallele N95-Kontrollgruppe fehlten.[Verschiedene Masken mit Rahmen](ref:R03)\n\n| Konfiguration | Individuelle Fit-Faktoren laut Originaltabelle |\n|---|---|\n| Blaue Maske ohne Rahmen | 1, 3, 8, 8, 2 |\n| Blaue Maske mit Rahmen | 164, 191, 189, 109, 250 |\n| Weiße Maske mit Rahmen | 141, 33, 41, 24, 47 |\n\nAlle blauen Rahmenkombinationen überschritten den verwendeten Grenzwert 100; die weißen nur teilweise. Der Text verallgemeinert, alle weißen Werte lägen darunter, obwohl die Tabelle ausdrücklich 141 nennt. Die Originalgrafik zeigt für die letzten blauen Teilnehmer außerdem 104 und 141 statt der Tabellenwerte 109 und 250. Die Originalgrafik bleibt mit erläutertem Widerspruch erhalten; abweichende Zahlen werden nicht zu neuen Ergebnissen gemittelt.\n\nDiese Abweichungen verändern nicht die Richtung, dass alle blauen Kombinationen bestanden und die meisten weißen scheiterten. Ein exakter Mittelwert ist dadurch jedoch nicht eindeutig belegt. Gleiche Maskenklasse beseitigt Konstruktionsunterschiede nicht. Die Autoren vermuten einen Einfluss der Nasenpolsterung, randomisierten aber Polster, Außenmaterial und Rahmenlage nicht unabhängig. Die Verbesserung lässt sich daher keinem Einzelteil allein zuschreiben.\n\nAnalyseeinheit ist die konkrete Kombination aus Maske, Rahmen und tragender Person. Eine Gruppierung nur nach Druckmaterial oder Individualisierung verdeckt Nasenbügelsteifigkeit, Faltung und Randkompression. Unterschiedliche Ergebnisse verschiedener Konfigurationen derselben Person erklären die Funktion besser als eine allgemeine Überlegenheit individueller gegenüber nicht individuellen Lösungen.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "movement_and_measurement",
+          "title": "Dynamischer Dichtsitz und gepaarte Vergleiche: was Kurztests messen",
+          "markdown": "Die zahnmedizinische Studie berechnete den Fit-Faktor aus Partikelkonzentrationen außerhalb und innerhalb der Maske bei Vorbeugen, Sprechen sowie horizontalen und vertikalen Kopfbewegungen. Ein statischer Scan erfasst das Ausgangsgesicht; dynamische Prüfungen berücksichtigen Unterkieferbewegung und veränderte Kopfhaltung.[Dynamische Messbedingungen](ref:R03)\n\nDie Autoren beobachteten schlechtere Ergebnisse beim Sprechen und erwähnten eine schneller sprechende Person. Sprechgeschwindigkeit wurde nicht unabhängig randomisiert, lokale Kontaktdrücke wurden nicht gleichzeitig gemessen. Daraus folgt nicht, dass langsameres Sprechen Dichtheit garantiert. Eine Übungsassoziation unterscheidet sich von einem kontrollierten Kausaltest.\n\nEine spätere prospektive Crossover-Studie verglich N95 allein mit individuellem Rahmen bei 66 Beschäftigten. Das Abstract berichtet einen Anstieg bestandener Tests von 27/66 auf 62/66 und des mittleren Fit-Faktors von 85.2 auf 179.0, mit Verbesserungen in den Bewegungsphasen. Dies liefert gepaarte Konfigurationsevidenz. Individuelle vollständige Verläufe enthält das Abstract nicht; Mittelwerte rekonstruieren daher keine personenbezogenen Verbesserungen.[Crossover-Studie eines inneren individuellen Rahmens](ref:R06)\n\nEine weitere Studie rekrutierte gezielt 20 weibliche Dentalbeschäftigte mit vorherigem Testversagen. Beide FFP3-Modelle bestanden zunächst bei 1/20, mit Rahmen bei 14/20 beziehungsweise 19/20. Die Testreihenfolge war zufällig, die Prüfung qualitativ. Unterschiede innerhalb derselben Gruppe gingen mit der Beobachtung einher, dass bei einem Modell der metallische Nasenbügel die Rahmenlage störte.[Modellunterschiede bei vorherigem Testversagen](ref:R04)\n\nAllgemeine Beschäftigtenkohorten, ausgewählte frühere Fehlschläge und kurze gepaarte Modellprüfungen betreffen unterschiedliche Populationen und Messungen. Größere Verbesserungen zwischen Studien können schlechtere Ausgangspassung, andere Konstruktionen und Messverfahren widerspiegeln, nicht allein höhere Druckgenauigkeit.",
+          "figure_ids": []
+        },
+        {
+          "id": "comfort_and_contact",
+          "title": "Gegensätzliche Komfortbefunde: Kontaktlage, Material und Vergleichsobjekt sind entscheidend",
+          "markdown": "Eine augenmedizinische Studie ergänzte OP-Masken bei 20 Personen um individuelle Außenrahmen. Schließlich bestanden 18 die qualitative Prüfung, davon 13 beim ersten Versuch. Der mediane Komfort betrug mit Rahmen 3.5 gegenüber 8.5 bei der gewöhnlichen Maske. Beschrieben wurden Druck an Augen, Nase und Unterlippe sowie Schwierigkeiten beim Bandeinstellen. Verglichen wurde mit einer gewöhnlichen Maske, nicht derselben N95.[Trageerfahrung mit Außenrahmen](ref:R05)\n\nDie Crossover-Studie des Innenrahmens berichtete dagegen bessere R-COMFI-Werte für Komfort und Verträglichkeit gegenüber N95 allein, p = 0.006. Der silikonüberzogene Innenrahmen unterscheidet sich von einem starren Außenbügel. Das Abstract berichtet einen Gesamtscore statt einer quantitativen Karte langfristiger Hautbelastung.[Komfortwerte eines Innenrahmens](ref:R06)\n\nEine Subtraktion beider Befunde würde keinen Weichmaterialeffekt bestimmen: Lage, Material, Maske und Vergleichsobjekt änderten sich gemeinsam. Die Studien zeigen verschiedene Möglichkeiten. Randkompression kann Dichtsitz verbessern und einzelne Regionen stärker belasten; individueller Kontakt kann den Komfort gegenüber dem ursprünglichen Atemschutz erhöhen. Der Mechanismus verlangt gemeinsame Messung von Kontaktdruck, Relativbewegung und Komfort.\n\nPanFabs Frontal- und Seitenfotos zeigen, wie Rahmen verschiedene Maskenkonturen überspannen. Sie enthalten weder Druckskala noch dynamische Verschiebung aller Personen. Abgerundete Kanten und Größenauswahl entstanden iterativ; statische Fotos quantifizieren weder weniger Druckverletzungen noch langfristige Verträglichkeit.\n\nTragedauer und Häufigkeit des Nachstellens verändern ebenfalls den Endpunkt. Gute Kurztestwerte unterscheiden sich von Erfahrungen bei häufigem Sprechen, Herabschauen, Okulargebrauch und wiederholter Anpassung im Arbeitsalltag. Vergleichbar sind die unter den jeweiligen Studienbedingungen gemessene Passung und Wahrnehmung; nicht gemessene Druckverteilungen werden nicht in nachgewiesene Material- oder Strukturvorteile umgedeutet.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Originalabbildung 1 | Seitenteilgrößen und verstellbare Verbindungen",
+          "interpretation": "A vergleicht Seitenteillängen, B markiert Rundungen, C zeigt Rahmen und Haltepunkte. Feste Maße werden mit verstellbaren Schnittstellen kombiniert, statt jedes gesamte Gesicht individuell nachzubilden. Rundungen verändern lokale Maskenführung; aus dem Aussehen ergibt sich kein Fit-Faktor."
+        },
+        "F02": {
+          "caption": "Originalabbildung 4 | Ein Rahmen an unterschiedlichen Maskenkonstruktionen",
+          "interpretation": "A–D zeigen frontal und seitlich Schalenform, eine weitere Schalenform, Schnabelform und Faltform. Gehäuse, Kontaktlage und hervorstehender Raum unterscheiden sich. Fotos zeigen Geometrie, keine lokalen Drücke oder dynamischen Leckagen. Das Ventilbeispiel ist ein Originaltestfoto, keine Konfiguration für sämtliche klinischen Situationen."
+        },
+        "F03": {
+          "caption": "Originalabbildung 5 | Der Ausgangsbefund bestimmt den Prüfzweig",
+          "interpretation": "Nach Rekrutierung und Ausgangstest untersucht der linke Zweig den Passungserhalt zuvor Erfolgreicher nach Wegfall der Originalbefestigung. Rechts wird die Verbesserung vorheriger Fehlschläge untersucht. Die Nenner unterscheiden sich. Eine hohe Erhaltungsquote als Korrekturquote zu lesen überschätzt die Anpassung ungeeigneter Masken."
+        },
+        "F04": {
+          "caption": "Originalabbildung 1 | Messgerät und Gesichtsmodell sind getrennte Schritte",
+          "interpretation": "a zeigt Partikelzähltechnik, b ein Rahmenmodell auf dem Gesichtsscan. Das Modell beschreibt geplanten Kontakt, das Gerät misst Partikelkonzentrationen innen und außen beim Tragen. Individuelle Bildgeometrie belegt noch kein Bestehen der Prüfung."
+        },
+        "F05": {
+          "caption": "Originalabbildung 2 | Personenbezogene Balken zeigen Widersprüche zu Tabelle und Text",
+          "interpretation": "Blau bezeichnet blaue Masken ohne Rahmen, rot blaue mit Rahmen, grau weiße mit Rahmen. Die gestrichelte Linie liegt bei 100. Der erste graue Wert 141 widerspricht der Aussage, alle weißen Kombinationen seien gescheitert. Die letzten roten Werte sind 104 und 141 statt 109 und 250 in der Tabelle. Beide Darstellungen bleiben ihren Quellen zugeordnet und werden nicht zu einem Mittelwert vermischt."
+        }
+      }
+    }
+  }
+}

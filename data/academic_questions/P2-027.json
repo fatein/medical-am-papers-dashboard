@@ -1,0 +1,340 @@
+{
+  "schema_version": 2,
+  "question_id": "P2-027",
+  "p": "P2",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-04",
+  "related_paper_ids": [
+    "doc_6d4b4b56efad7a102df1"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Accuracy of teeth positioning in bonded three-dimensionally printed complete dentures: an in vitro study",
+      "publisher": "BMC Oral Health",
+      "year": 2026,
+      "url": "https://doi.org/10.1186/s12903-026-09125-5",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Evaluation of the occlusal trueness among 3-Dimensionally printed CAD-CAM complete dentures with different socket designs and teeth splinting assemblies",
+      "publisher": "BMC Oral Health",
+      "year": 2025,
+      "url": "https://doi.org/10.1186/s12903-025-05894-7",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Physical Properties of Additively Manufactured Tooth-Colored Material Attached to Denture Base-Colored Material in a Printed Monolithic Unit",
+      "publisher": "Polymers",
+      "year": 2023,
+      "url": "https://doi.org/10.3390/polym15092134",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Multiresin Additive Manufacturing Process for Printing a Complete Denture and an Analysis of Accuracy",
+      "publisher": "3D Printing and Additive Manufacturing",
+      "year": 2022,
+      "url": "https://doi.org/10.1089/3dp.2021.0007",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 5",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13595727/#Fig5",
+      "license": "CC BY-NC-ND 4.0",
+      "asset_path": "assets/academic_figures/P2-027/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 6",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13595727/#Fig6",
+      "license": "CC BY-NC-ND 4.0",
+      "asset_path": "assets/academic_figures/P2-027/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Figure 2",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12023419/#Fig2",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P2-027/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Figure 4",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12023419/#Fig4",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P2-027/F04.jpg"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Figure 9",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10181472/#polymers-15-02134-f009",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P2-027/F05.jpg"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R03",
+      "original_label": "Figure 5",
+      "image_url": "",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10181472/#polymers-15-02134-f005",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P2-027/F06.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "一体化打印能否减少组装误差？",
+      "direction": "义齿连接与一体化",
+      "sections": [
+        {
+          "id": "monoblock_versus_bonded",
+          "title": "整块打印可避免手工就位，但最终偏差仍包括打印和固化",
+          "markdown": "Tan Zhi Hui Janice 等以同一个上颌义齿设计比较四组，每组15副：模型树脂整块打印M、牙色临时冠树脂整块打印T、基托与整弓牙分开打印后粘接F，以及牙弓分成前牙和左右后牙三段后粘接S。全部采用45°方向、50 μm层厚、405 nm、每层曝光2.5 s；同批次、同操作者加工。清洗为96%乙醇超声两次、每次5 min，之后后固化30 min。[整块、整弓粘接与分段粘接的直接比较](ref:R01)\n\n分体组在牙的组织面涂未固化树脂，手指加压就位、目视确认无缝隙，再额外固化20 min。设计没有量化手指压力、粘接层厚度或每颗牙的最终就位深度，因此它检验的是完整分体流程，而非单独测定粘接剂收缩造成的误差。\n\n表中全牙弓RMS平均偏差依次为M 0.142、T 0.138、F 0.290、S 0.246 mm。整块组描述性均值较低，分段组也低于整弓分体组；但M与T同时改变了树脂类型，T与F、S又改变了基托材料和额外固化历史，不能把全部差值都归因于人工装配。该研究使用单色整块对照，没有验证在同一次打印中形成牙色与牙龈色边界的多材料工艺。\n\n色图中分体组咬合面较广泛呈正偏差，与未完全就位或粘接后整体抬高相容，却不是对某一种机制的直接证明。研究没有在粘接前后连续扫描同一套已打印部件，不能分离最初打印偏差、人工定位偏差和二次固化变形各占多少。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "registration_and_uncertainty",
+          "title": "配准方式决定测到什么，原文离散度也需核对",
+          "markdown": "该研究先用基托体积作初始配准，再仅对基托执行最佳拟合，然后计算牙弓偏差。这样可避免把牙本身纳入最佳拟合后，用整体平移或转动吸收一部分装配偏移。可是基托自身若已变形，配准坐标系也会改变；牙弓RMS既可能含位置偏移，也可能含牙表面形貌变化，不是严格分解出的牙齿刚体位移。[配准与重复扫描方法](ref:R01)\n\n同一件试样重复扫描10次，报告差异0.003±0.002 mm，可说明该扫描–配准流程在单个物体上的重复性，不能替代跨打印批次、跨操作者或跨树脂的制造重复性。三个牙段来自同一副义齿，区域分析也不是相互独立的新试件。\n\n原文全弓均值后的“±”数值为M 0.130、T 0.130、F 0.261、S 0.226 mm，与箱线图可见的组内范围并不协调。若将这些数值按方法所述作为每组RMS标准差，并用每组15件重建普通单因素方差分析，得到F约2.27，而不是文中报告的35.39。因此这里保留均值格局与原图，不擅自把小数点移动一位，也不把论文显著性结论写成已独立复核的结果。\n\n整块打印的偏差依然不是零：即使没有牙–基托手工插接，曝光、支撑移除、后固化和扫描仍参与最终形状。该研究没有报告实体咬合接触分布、咬合调整量或临床垂直距离改变，不能把RMS直接换算为需要磨除多少牙尖。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "socket_geometry_and_splinting",
+          "title": "分体工艺可通过牙弓连接与牙槽形状改变误差",
+          "markdown": "Sallam 等比较八种上颌义齿设计，每种10副。Form 2打印采用90°方向、50 μm层厚，牙–基托预留间隙0.2 mm，连接牙的邻面连接体面积9 mm²；除了普通牙槽，还设计防旋转的柱状凸起与牙内孔配合。后牙凸起深3 mm、宽1.5 mm、长4 mm，前牙深4 mm。更强的宏观定位约束不一定改善就位，因为多处配合也可能阻碍整体牙弓完全落座。[牙槽与牙弓分段设计实验](ref:R02)\n\n| 具名设计 | 全部牙RMS中位数，mm |\n|---|---:|\n| 独立牙，普通牙槽 | 0.184 |\n| 独立牙，柱孔式牙槽 | 0.216 |\n| 整弓连接牙，普通牙槽 | 0.125 |\n| 整弓连接牙，柱孔式牙槽 | 0.202 |\n| 分段连接牙，普通牙槽 | 0.152 |\n| 分段连接牙，柱孔式牙槽 | 0.170 |\n| 打印蜡型后传统装盒 | 0.163 |\n| 单色整块打印 | 0.104 |\n\n普通牙槽配整弓连接牙的偏差低于独立牙，而增加柱孔结构后数值格局并未改善。整弓柱孔组前牙中位数0.282 mm、后牙0.166 mm，显示整体RMS会掩盖区域差别。原文方法、结果以及部分图注交换了整块打印与半传统组编号，故表中采用具名设计而不用易混淆的罗马数字。\n\n每副测14颗牙，表中n=140实际是10副义齿上的牙测量，并非140个独立制造样本；未见对副内相关性的层级处理，显著性需据此限缩。整块与整弓普通牙槽中位数差0.021 mm，还小于研究报告的最小可检测变化0.035 mm；后者是测量指标而非临床阈值，但提示不能仅凭两位小数的排序推断可感知的咬合改善。",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "multimaterial_local_accuracy",
+          "title": "真正双材料连续打印的精度证据来自局部试件",
+          "markdown": "Mohamed 等没有把已打印牙粘到基托，而是用PolyJet J55 Prime逐层连续制造牙色RGD835 VeroUltraWhite与粉红RGD851 VeroMagentaV。层厚18.75 μm，每层紫外固化，每工艺20件。几何是单个上颌中切牙连接直径20 mm、高10 mm圆柱基托，牙颈沿长轴延伸3 mm形成连接区；这是一体多材料的局部模型，不是完整牙弓。[双材料连续打印实验](ref:R03)\n\n对照以预制Endura牙和Acron热聚合树脂制造，73°C保持10 h。整件扫描后与原始设计作最佳拟合，打印组RMS为0.0384±0.00575 mm，对照0.1227±0.04458 mm。原图显示较大的差别主要在圆柱基托：传统组明显向内偏移，打印组更接近设计。该指标涵盖牙和大体积基托的形状，不能直接解释为牙定位误差减少到0.0384 mm。\n\n对照模具由一个打印试件翻制，两条工艺的误差链并不对称；传统组还经历蜡型、包埋和热聚合，一体打印则保留材料沉积及逐层固化误差。没有“同材料、同几何、仅增加或取消组装”的配对实验，因此所得优势是所比较完整制造路径的优势。\n\n另外，论文使用的Vero系列树脂并不是后来研究中的所有牙科多色打印材料。局部形状精度和未出现手工粘牙步骤，不能直接移植为其他配方的全口义齿适合性、咬合准确性或临床材料性能。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "multivat_registration",
+          "title": "多槽打印把人工装配问题转移到坐标、换料和收缩控制",
+          "markdown": "Jiang 等开发双树脂槽与清洗槽组成的多树脂增材系统，平台在粉红基托树脂、牙色树脂和清洗位置之间旋转；牙与基托模型必须共享坐标。若同一层包含两种材料，切片程序需生成两套曝光图案，并在换槽前清除残液。基托树脂黏度1180 cP、牙色树脂498 cP，清洗并非可省略步骤，否则材料混合和交界染色会改变局部形貌。[多槽连续打印原型](ref:R04)\n\n系统使用405 nm光源、50 μm投影像素，实际义齿切片厚25 μm、曝光2 s。作者设计直径1.5 mm、高1.8 mm榫柱与对应孔，增强交界几何配合；它约束的是数字定义的材料连接区，而不是另行测量了临床咬合误差。对照是四轴铣削后粘接，STL三角单元尺寸取0.4 mm，材料和加工机制与打印均不同。\n\n逆向扫描标称准确度29 μm，报告铣削表面偏差范围为−141至+164 μm，打印为−98至+100 μm。论文的35.08%来自偏差区间宽度由305缩至198 μm，而非全牙弓RMS、平均牙位移动或装配误差方差减少35.08%。研究没有给出足以建立多副独立义齿分布的重复数量，极值范围也容易受扫描噪声和离群点影响。\n\n榫柱同时改变承载结构：无榫设计弯曲强度13.46 MPa，直径1.5 mm榫柱设计为17.76 MPa，而压缩强度61.1与62.3 MPa没有显著差异。这说明一个定位结构可以影响某种加载方式，却不能把较高弯曲强度当作牙位精度的替代读数；该研究并未测量榫柱是否减少逐牙的装配位移。\n\n作者观察到打印交界不如分别铣削后粘接的边界锐利，并讨论打印收缩的不均匀性。取消手工粘接后仍需清洗、后固化及支撑去除；此原型支持在共同坐标中连续成形的可行性，却没有把换料污染、定位重复误差与固化收缩分别定量。",
+          "figure_ids": []
+        },
+        {
+          "id": "interface_after_thermal_cycles",
+          "title": "消除粘牙步骤后，双材料交界仍需承受热循环",
+          "markdown": "Mohamed 等将上述局部双材料试件各取10件进行10000次5–55°C热循环，停留30 s；另10件不热循环。加载头直径4 mm，以1 mm/min在牙腭侧加载，记录破坏力而不是界面面积归一化强度。传统组破坏力中位数由159.79 N降至36.12 N，打印组由91.75 N变为83.99 N；打印组前后差异不显著，p=0.24。初始传统组较高，热循环后打印组较高，排序依暴露条件改变。[一体多材料的热循环与断裂试验](ref:R03)\n\n不热循环时两工艺均全部为混合破坏；打印组热循环后4件为内聚破坏、6件为混合破坏。材料连续沉积并没有使交界消失，也没有把试件变成均质材料。断口位置可显示裂纹是否穿过主体，但不能仅凭内聚破坏认定界面化学结合达到某个数值。\n\n同研究的基托圆片在37°C水中放置一周，打印材料平均吸水量33.7±5.0 μg/mm³，高于传统材料22.7±3.2 μg/mm³；局部打印精度更高与吸水更大可以同时成立。该吸水试验使用厚0.5 mm圆片，不能把其质量变化直接换成完整义齿的牙位偏移。\n\n打印基托内部还有为制造目的设置的白色材料，作者明确指出它并非人工牙材料，不应在断口判读时误认成牙残留。局部几何、内部材料分区、热循环破坏力和全牙弓装配误差分别回答不同问题；此实验测到了前几项，没有测量热循环后的整弓牙位或实际咬合接触。",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Tan Zhi Hui Janice et al.：整块与装配义齿的牙面偏差；原图数据来源NLM/PMC，原图未改动。",
+          "interpretation": "M、T为不同树脂整块组，F为整弓粘接，S为三段粘接；上排唇侧、下排咬合面。色标绿色为±0.01 mm附近，临界值为±0.1 mm，F、S咬合面有较广的红色区。红色达到色标上限后会饱和，不能把所有红色顶点都读成恰好0.1 mm，也不能以红色面积直接求均值。M和T仍可见蓝红交替，说明取消手工装配未消除表面形状误差。本图按基托配准，反映牙相对该基准的位置及形貌。[偏差图与配准方法](ref:R01)"
+        },
+        "F02": {
+          "caption": "Tan Zhi Hui Janice et al.：各组全牙弓RMS分布；原图数据来源NLM/PMC，原图未改动。",
+          "interpretation": "横轴M、T、F、S，纵轴RMS以mm表示；箱内黑线为中位数，不能与表中均值混称。M、T箱体较低且较窄，F、S较高并可见孤立高值点。纵轴从约0.1开始，视觉高度不等于相对于零的倍率。图中M的全部可见范围约0.10–0.18 mm，与表列标准差0.130 mm不协调；因此本文不从箱宽反推出“修正标准差”，也不重复声称显著性已被复算确认。[原图与数表](ref:R01)"
+        },
+        "F03": {
+          "caption": "Sallam et al.：柱孔式与普通牙槽基托；原图数据来源NLM/PMC。",
+          "interpretation": "a为柱孔式设计，b为普通牙槽，两图放入少量后牙以显示装配关系。柱状凸起与牙内孔增加几何约束，普通牙槽主要依靠外形配合；照片本身不能定量接触间隙或牙是否完全落座。与表中相应结果结合，增加定位结构并没有统一降低牙位RMS，整弓柱孔组尤其在前牙偏差较大。判断其作用必须同时考虑牙弓是否连接、配合间隙和就位路径，而不能只把“多一个定位柱”视为提高准确度。[设计尺寸与偏差比较](ref:R02)"
+        },
+        "F04": {
+          "caption": "Sallam et al.：不同连接及牙槽设计的完整偏差图；原图数据来源NLM/PMC。",
+          "interpretation": "a、b为独立牙普通/柱孔牙槽，c、d为整弓连接牙普通/柱孔牙槽，e、f为分段连接牙普通/柱孔牙槽。c比d的前牙色彩更接近绿色，而d前牙腭侧偏暖色，与区域数值需共同阅读。原文方法和结果对最后两组编号互换，图注g、h的命名也与其他设计图顺序不同，故不凭这两个面板单独建立组间排名。色标采用±0.5 mm临界范围、±0.1 mm名义范围，不能与上一研究更窄色标按颜色深浅直接比较精度。[全图及具名组别数据](ref:R02)"
+        },
+        "F05": {
+          "caption": "Mohamed et al.：单牙–圆柱试件的几何偏差；原图数据来源NLM/PMC。",
+          "interpretation": "左为传统热聚合，右为双材料连续打印；统一色标±0.5 mm，绿色容差约±0.05 mm。传统圆柱表面较多青蓝色，打印圆柱接近绿色；两组牙面仍有局部偏差。由于最佳拟合包含整个试件，大面积圆柱对整体RMS具有重要影响，不能把整件RMS当成独立牙位误差。该图显示的是局部双材料喷射试件，也不属于下一节Jiang的多槽完整义齿实验。[局部形状比较原图](ref:R03)"
+        },
+        "F06": {
+          "caption": "Mohamed et al.：连续打印与传统试件的破坏路径；原图数据来源NLM/PMC。",
+          "interpretation": "上排A–C为断面视图，下排D–F为对应侧面：A/D传统混合破坏，B/E打印内聚破坏，C/F打印混合破坏。印出的材料交界没有自动成为唯一断裂路径，但同样没有消除裂纹穿过界面的可能。圆柱内的白色区域依作者说明包含制造用材料，不能全部认作残留牙组织。图中没有全牙弓、咬合接触或热循环后位置测量，所以其支持的是局部失效位置分析，不是装配精度保持率。[断裂模式与内部材料说明](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "Can integrated printing reduce assembly errors?",
+      "direction": "Denture joining and integration",
+      "sections": [
+        {
+          "id": "monoblock_versus_bonded",
+          "title": "Monoblock printing avoids manual seating, but final deviation still includes printing and curing",
+          "markdown": "Tan Zhi Hui Janice et al. compared four groups from one maxillary denture design, with 15 dentures per group: monoblock model resin M, monoblock tooth-colored temporary crown resin T, separately printed base and full-arch teeth subsequently bonded F, and teeth bonded in anterior and left/right posterior segments S. All used 45° orientation, 50 μm layers, 405 nm light and 2.5 s exposure per layer, produced in one batch by one operator. Cleaning comprised two ultrasonic cycles in 96% ethanol for 5 min each, followed by 30 min post-curing.[Direct comparison of monoblock, full-arch bonding and segmented bonding](ref:R01)\n\nFor assembled groups, uncured resin was applied to the tooth intaglio surface, teeth were seated under finger pressure, absence of visible gaps was confirmed, and an additional 20 min cure followed. Finger pressure, adhesive thickness and final seating depth of each tooth were not quantified. The experiment therefore tests the complete assembled workflow rather than isolating error caused by adhesive shrinkage.\n\nReported whole-arch mean RMS deviations were M 0.142, T 0.138, F 0.290 and S 0.246 mm. Descriptive means were lower for monoblocks, and segmented bonding was lower than full-arch bonding. However, M and T also changed resin type, while T versus F and S changed base material and additional curing history. The entire difference cannot be attributed to manual assembly. These were single-color monoblock controls, not a validation of a multimaterial process creating tooth-colored and gingival-colored boundaries in one print.\n\nThe assembled groups show broadly positive occlusal deviations in the color maps, compatible with incomplete seating or elevation after bonding, but not direct proof of either mechanism. The same printed components were not serially scanned before and after bonding, preventing separation of initial printing error, manual positioning error and secondary-curing distortion.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "registration_and_uncertainty",
+          "title": "Registration determines the measured quantity, and reported dispersion requires checking",
+          "markdown": "The study first registered base volumes, then performed best fitting only on the bases before calculating arch deviations. This avoids including teeth in the fit and absorbing some assembly displacement through overall translation or rotation. However, deformation of the base itself can alter the registration frame. Tooth-arch RMS can contain both positional displacement and surface-shape change; it is not a strict decomposition of rigid tooth movement.[Registration and repeat-scanning methods](ref:R01)\n\n10 repeat scans of one specimen yielded a reported difference of 0.003±0.002 mm. This describes repeatability of scanning and registration for one object, not manufacturing reproducibility across printing batches, operators or resins. The tooth segments also belong to the same denture and are not independent new specimens for regional analysis.\n\nThe values following the whole-arch means were M 0.130, T 0.130, F 0.261 and S 0.226 mm, inconsistent with the within-group ranges visible in the boxplot. Treating these as group RMS standard deviations, as described in the methods, and reconstructing ordinary one-way ANOVA with 15 specimens per group gives F approximately 2.27 rather than the reported 35.39. The pattern of means and original figure are retained here without moving decimal points speculatively or presenting the paper’s significance claims as independently confirmed.\n\nMonoblock deviation is still nonzero. Even without manual tooth–base insertion, exposure, support removal, post-curing and scanning affect the final shape. The study did not report physical occlusal contact distributions, adjustment amounts or clinical changes in vertical dimension. RMS cannot therefore be converted directly into an amount of cusp reduction.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "socket_geometry_and_splinting",
+          "title": "Connected arches and socket geometry can alter error in assembled workflows",
+          "markdown": "Sallam et al. compared eight maxillary designs with 10 dentures each. Form 2 printing used 90° orientation and 50 μm layers, a 0.2 mm tooth–base offset and 9 mm² proximal connectors between joined teeth. Besides ordinary sockets, antirotational cylindrical projections fitted corresponding holes in the teeth. Posterior projections were 3 mm deep, 1.5 mm wide and 4 mm long; anterior projections were 4 mm deep. Stronger geometric restraint does not necessarily improve seating, because multiple fitted locations can prevent an entire arch from seating completely.[Socket and tooth-splinting design experiment](ref:R02)\n\n| Named design | Median RMS across teeth, mm |\n|---|---:|\n| Separate teeth, ordinary sockets | 0.184 |\n| Separate teeth, thimble sockets | 0.216 |\n| Full connected arch, ordinary sockets | 0.125 |\n| Full connected arch, thimble sockets | 0.202 |\n| Segmented connected teeth, ordinary sockets | 0.152 |\n| Segmented connected teeth, thimble sockets | 0.170 |\n| Printed wax pattern followed by conventional flasking | 0.163 |\n| Single-color monoblock print | 0.104 |\n\nThe full connected arch in ordinary sockets deviated less than separate teeth, while adding thimble geometry did not improve the descriptive pattern. The full-arch thimble design had anterior and posterior medians of 0.282 and 0.166 mm, showing how an overall value conceals regional differences. Methods, results and some captions interchange monoblock and semi-conventional group numbers, so named designs are used here instead of ambiguous Roman numerals.\n\nEach denture contributed 14 tooth measurements. The table’s n=140 therefore represents teeth on 10 dentures, not 140 independent manufactured samples. No hierarchical treatment of within-denture correlation is evident, limiting significance interpretation. The 0.021 mm median difference between monoblock and full-arch ordinary sockets is also below the reported minimal detectable change of 0.035 mm. The latter is a measurement property, not a clinical threshold, but cautions against inferring perceptible occlusal improvement solely from a numerical ranking.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "multimaterial_local_accuracy",
+          "title": "Direct evidence for true multimaterial printing concerns a local specimen",
+          "markdown": "Mohamed et al. did not glue a previously printed tooth to a base. PolyJet J55 Prime continuously deposited tooth-colored RGD835 VeroUltraWhite and pink RGD851 VeroMagentaV in successive layers. Layer thickness was 18.75 μm, with ultraviolet curing of each layer and 20 specimens per manufacturing technique. Geometry consisted of one maxillary central incisor attached to a cylindrical base 20 mm in diameter and 10 mm high, with the tooth neck extended 3 mm along its axis. This is a local integrated multimaterial model, not a complete arch.[Continuous multimaterial printing experiment](ref:R03)\n\nControls used prefabricated Endura teeth and Acron heat-polymerized resin, held at 73°C for 10 h. Whole-specimen scans were best fitted to the original design. Printed RMS was 0.0384±0.00575 mm versus 0.1227±0.04458 mm conventionally. The original map shows that much of the difference lies in the cylindrical base: conventional specimens deviate inward, while printed ones remain closer to design. This metric includes the tooth and large base volume and cannot directly mean tooth-positioning error was reduced to 0.0384 mm.\n\nThe control mold was copied from one printed specimen, making the error chains asymmetric. Conventional manufacture added wax patterning, investing and heat polymerization; integrated printing retained deposition and layer-curing errors. There was no paired experiment holding material and geometry constant while only adding or removing assembly. The observed advantage therefore concerns the complete manufacturing routes compared.\n\nThe Vero resins tested are also not interchangeable with every later dental multicolor printing material. Local shape accuracy and absence of manual tooth bonding cannot directly establish complete-denture adaptation, occlusal accuracy or clinical material performance for other formulations.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "multivat_registration",
+          "title": "Multi-vat printing shifts assembly demands toward coordinates, resin switching and shrinkage",
+          "markdown": "Jiang et al. developed a multiresin system with two resin vats and a cleaning station, rotating the platform between pink base resin, tooth-colored resin and cleaning. Tooth and base models must share coordinates. When one layer contains both materials, slicing requires separate exposure patterns and residual resin must be removed before switching vats. Base-resin viscosity was 1180 cP versus 498 cP for tooth resin. Cleaning cannot be omitted because material mixing and interfacial staining can alter local morphology.[Continuous multi-vat printing prototype](ref:R04)\n\nThe system used 405 nm light and 50 μm projected pixels, with actual denture slicing at 25 μm and 2 s exposure. Tenons 1.5 mm in diameter and 1.8 mm high fitted corresponding holes to reinforce interfacial geometry. This constrains a digitally defined joining region; it does not independently measure clinical occlusal error. Controls were four-axis milled and bonded, using an STL triangle size of 0.4 mm, with different materials and processing mechanisms from printing.\n\nThe reverse scanner had a stated accuracy of 29 μm. Reported milled surface deviations ranged from −141 to +164 μm and printed deviations from −98 to +100 μm. The paper’s 35.08% derives from narrowing that interval from 305 to 198 μm. It is not a 35.08% reduction in whole-arch RMS, mean tooth movement or assembly-error variance. Repetition sufficient to characterize independently manufactured denture distributions was not reported, and extreme ranges are sensitive to scanning noise and outliers.\n\nTenons also changed structural loading: bending strength was 13.46 MPa without a tenon and 17.76 MPa with a 1.5 mm tenon, whereas compressive strengths of 61.1 and 62.3 MPa did not differ significantly. A locating feature can therefore affect one loading mode without making bending strength a substitute for tooth-position accuracy. The study did not measure whether tenons reduced assembly displacement tooth by tooth.\n\nPrinted material boundaries appeared less sharp than those milled separately and bonded; the authors also discussed nonuniform printing shrinkage. Removing manual bonding still leaves cleaning, post-curing and support removal. The prototype supports continuous manufacture in common coordinates, but does not separately quantify contamination during resin switching, positioning repeatability and curing shrinkage.",
+          "figure_ids": []
+        },
+        {
+          "id": "interface_after_thermal_cycles",
+          "title": "The multimaterial boundary still faces thermal cycling after tooth bonding is eliminated",
+          "markdown": "Mohamed et al. subjected 10 local multimaterial specimens per technique to 10000 thermal cycles at 5–55°C with 30 s dwell, leaving another 10 uncycled. A 4 mm loading head contacted the palatal tooth surface at 1 mm/min, recording failure force rather than area-normalized interfacial strength. Median conventional force fell from 159.79 to 36.12 N; printed force changed from 91.75 to 83.99 N, without a significant within-printed-group difference, p=0.24. Conventional specimens were initially stronger, while printed specimens were stronger after thermocycling: ranking depended on exposure.[Thermocycling and fracture of integrated multimaterial specimens](ref:R03)\n\nBefore cycling, both manufacturing groups showed exclusively mixed failure. After cycling, printed specimens showed 4 cohesive and 6 mixed failures. Continuous deposition neither removes the material boundary nor makes the specimen homogeneous. Fracture location indicates whether cracks enter bulk material but cannot assign a numerical chemical bond strength solely from cohesive failure.\n\nBase disks from the same study spent one week in water at 37°C. Mean sorption was 33.7±5.0 μg/mm³ for printed material versus 22.7±3.2 μg/mm³ conventionally. Better local printed accuracy can therefore coexist with greater water uptake. These disks were 0.5 mm thick, and their mass changes cannot be directly converted into tooth displacement in complete dentures.\n\nThe printed base also contained white material introduced for manufacturing purposes. The authors explicitly state that this was not tooth material and should not be mistaken for retained tooth fragments in fracture interpretation. Local geometry, internal material partitioning, thermocycled failure force and whole-arch assembly error answer different questions. This experiment measured the former properties, but not post-cycling full-arch tooth positions or actual occlusal contacts.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Tan Zhi Hui Janice et al.: Tooth-surface deviations in monoblock and assembled dentures; original figure data from NLM/PMC, reproduced unchanged.",
+          "interpretation": "M and T are monoblocks in different resins, F a bonded full arch and S bonded segments; upper views are labial and lower views occlusal. Green is near ±0.01 mm and critical limits are ±0.1 mm; F and S show extensive red occlusal regions. Red saturates beyond the scale limit, so not every red vertex equals exactly 0.1 mm, and red area cannot directly yield a mean. Alternating blue and red remain in M and T, showing that removing manual assembly does not eliminate surface-shape error. Registration uses the base, so tooth positions and morphology are expressed relative to that reference.[Deviation maps and registration](ref:R01)"
+        },
+        "F02": {
+          "caption": "Tan Zhi Hui Janice et al.: Whole-arch RMS distributions; original figure data from NLM/PMC, reproduced unchanged.",
+          "interpretation": "The horizontal axis lists M, T, F and S, and the vertical axis is RMS in mm. Black lines inside boxes are medians, not the means in the table. M and T boxes are lower and narrower; F and S are higher with isolated high-value points. The axis begins near 0.1, so visual heights are not ratios relative to zero. The complete visible M range is approximately 0.10–0.18 mm, inconsistent with a tabulated standard deviation of 0.130 mm. No corrected standard deviation is inferred from box widths, and significance is not described as independently reproduced.[Original plot and numerical table](ref:R01)"
+        },
+        "F03": {
+          "caption": "Sallam et al.: Thimble and ordinary socket bases; original figure data from NLM/PMC.",
+          "interpretation": "Panel a shows thimble geometry and b ordinary sockets, with a few posterior teeth inserted to illustrate assembly. Projections and matching tooth holes add geometric restraint, whereas ordinary sockets rely mainly on external form matching. Photographs cannot quantify contact gaps or complete seating. Combined with the corresponding table, added positioning features did not uniformly reduce tooth RMS; full-arch thimbles particularly increased anterior deviation. Their effect depends on arch connection, clearance and seating path rather than an assumption that one more locating projection improves accuracy.[Design dimensions and deviation comparison](ref:R02)"
+        },
+        "F04": {
+          "caption": "Sallam et al.: Complete deviation maps for connection and socket designs; original figure data from NLM/PMC.",
+          "interpretation": "Panels a and b are separate teeth in ordinary/thimble sockets, c and d connected full arches in ordinary/thimble sockets, and e and f segmented teeth in ordinary/thimble sockets. Anterior colors in c are closer to green than in d, where palatal anterior regions are warmer; these should be read with regional numerical results. Methods and results interchange the final group numbers, and the g/h caption order also differs from other design illustrations. Those panels alone are therefore not used to establish a group ranking. Critical limits are ±0.5 mm and nominal limits ±0.1 mm; colors cannot be directly compared with the narrower scale in the preceding study.[Complete figure and named-group data](ref:R02)"
+        },
+        "F05": {
+          "caption": "Mohamed et al.: Geometric deviations of single-tooth cylindrical specimens; original figure data from NLM/PMC.",
+          "interpretation": "Conventional heat polymerization is left and continuous multimaterial printing right, with a common ±0.5 mm scale and green tolerance near ±0.05 mm. The conventional cylinder has more cyan/blue regions while the printed cylinder is largely green; both teeth retain local deviations. Because best fitting includes the whole specimen, the large cylindrical surface strongly influences overall RMS, which cannot be treated as isolated tooth-position error. These are local material-jetted specimens, not Jiang’s complete multi-vat dentures discussed in the next section.[Original local-shape comparison](ref:R03)"
+        },
+        "F06": {
+          "caption": "Mohamed et al.: Failure paths in continuously printed and conventional specimens; original figure data from NLM/PMC.",
+          "interpretation": "Upper panels A–C show fracture faces and lower D–F the corresponding side views: A/D conventional mixed failure, B/E printed cohesive failure and C/F printed mixed failure. The printed material boundary is not automatically the sole fracture path, but cracks can still cross it. The authors note that white regions within the cylinder include manufacturing material and cannot all be identified as retained tooth material. No full arch, occlusal contacts or post-cycling position measurements appear here. The figure supports local failure-location analysis, not a percentage retention of assembly accuracy.[Failure modes and internal material explanation](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Kann integriertes Drucken Montagefehler reduzieren?",
+      "direction": "Prothesenverbindungen und Integration",
+      "sections": [
+        {
+          "id": "monoblock_versus_bonded",
+          "title": "Monoblockdruck vermeidet manuelles Einsetzen, die Endabweichung enthält aber weiterhin Druck- und Härtungseffekte",
+          "markdown": "Tan Zhi Hui Janice et al. verglichen vier Gruppen desselben Oberkieferprothesendesigns mit jeweils 15 Prothesen: Monoblock aus Modellharz M, Monoblock aus zahnfarbenem provisorischem Kronenharz T, separat gedruckte und anschließend verklebte Basis mit vollständigem Zahnbogen F sowie verklebte Front- und rechte/linke Seitenzahnsegmente S. Alle wurden bei 45° mit 50 μm Schichtdicke, 405 nm und 2.5 s Belichtung je Schicht in einer Charge von derselben Person gefertigt. Die Reinigung umfasste zwei Ultraschallzyklen in 96%igem Ethanol von jeweils 5 min, anschließend 30 min Nachhärtung.[Direkter Vergleich von Monoblock, vollständigem und segmentiertem Zahnbogenverbund](ref:R01)\n\nBei den Montagegruppen wurde ungehärtetes Harz auf die basale Zahnfläche aufgetragen, die Zähne unter Fingerdruck eingesetzt, sichtbare Spaltfreiheit geprüft und weitere 20 min gehärtet. Fingerdruck, Klebeschichtdicke und endgültige Einsetztiefe jedes Zahns wurden nicht quantifiziert. Geprüft wurde somit der vollständige Montageablauf statt isolierter Fehler durch Klebstoffschrumpfung.\n\nDie berichteten mittleren RMS-Abweichungen des gesamten Zahnbogens betrugen M 0.142, T 0.138, F 0.290 und S 0.246 mm. Die deskriptiven Mittelwerte waren bei Monoblöcken niedriger; segmentiertes Verbinden lag unter dem vollständigen Zahnbogenverbund. M und T unterschieden sich jedoch auch im Harztyp, T gegenüber F und S in Basismaterial und zusätzlicher Härtungsgeschichte. Der gesamte Unterschied lässt sich nicht der manuellen Montage zuschreiben. Untersucht wurden einfarbige Monoblockkontrollen, keine Validierung eines Mehrmaterialprozesses mit Zahn- und Gingivafarben innerhalb desselben Drucks.\n\nDie Montagegruppen zeigen in den Farbkarten verbreitet positive okklusale Abweichungen. Das ist mit unvollständigem Einsetzen oder Anhebung nach dem Verbinden vereinbar, beweist aber keinen dieser Mechanismen direkt. Dieselben gedruckten Teile wurden nicht fortlaufend vor und nach dem Verbinden gescannt; Ausgangsdruckfehler, manuelle Positionierungsfehler und Verformung durch zusätzliche Härtung lassen sich deshalb nicht getrennt beziffern.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "registration_and_uncertainty",
+          "title": "Die Registrierung bestimmt die Messgröße, und die berichtete Streuung muss geprüft werden",
+          "markdown": "Die Studie registrierte zunächst die Basisvolumina und führte anschließend ausschließlich an den Basen eine Best-Fit-Ausrichtung durch, bevor Zahnbogenabweichungen berechnet wurden. So werden Zähne nicht in die Anpassung einbezogen und Montageverschiebungen nicht teilweise durch Gesamttranslation oder -rotation aufgenommen. Eine Verformung der Basis kann jedoch selbst den Bezugsrahmen verändern. Der Zahnbogen-RMS enthält möglicherweise Positions- und Oberflächenformänderungen; er zerlegt starre Zahnbewegungen nicht streng getrennt.[Registrierung und wiederholtes Scannen](ref:R01)\n\n10 wiederholte Scans derselben Probe ergaben eine berichtete Differenz von 0.003±0.002 mm. Das beschreibt die Wiederholbarkeit von Scan und Registrierung eines Objekts, nicht die Fertigungsreproduzierbarkeit zwischen Druckchargen, Personen oder Harzen. Auch Zahnsegmente gehören zur selben Prothese und sind in der regionalen Analyse keine unabhängigen neuen Prüfkörper.\n\nDie hinter den Gesamtbogenmittelwerten angegebenen Werte betrugen M 0.130, T 0.130, F 0.261 und S 0.226 mm; sie passen nicht zu den im Boxplot sichtbaren gruppeninternen Bereichen. Werden sie entsprechend dem Methodentext als Standardabweichungen der Gruppen-RMS behandelt und mit jeweils 15 Proben für eine gewöhnliche einfaktorielle ANOVA verwendet, ergibt sich F ungefähr 2.27 statt der berichteten 35.39. Hier bleiben Mittelwertmuster und Originalgrafik erhalten, ohne spekulative Dezimalverschiebung oder Darstellung der Signifikanzbehauptungen als unabhängig bestätigt.\n\nAuch Monoblockabweichungen sind nicht null. Selbst ohne manuelles Zahn–Basis-Einsetzen beeinflussen Belichtung, Stützentfernung, Nachhärtung und Scannen die Endform. Die Studie berichtete weder reale okklusale Kontaktverteilungen noch Einschleifmengen oder klinische Änderungen der Vertikaldimension. RMS lässt sich deshalb nicht direkt in erforderlichen Höckerabtrag umrechnen.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "socket_geometry_and_splinting",
+          "title": "Verbundene Zahnbögen und Sockelgeometrie können Fehler bei montierten Prothesen verändern",
+          "markdown": "Sallam et al. verglichen acht Oberkieferdesigns mit jeweils 10 Prothesen. Der Form-2-Druck erfolgte bei 90° mit 50 μm Schichtdicke, 0.2 mm Zahn–Basis-Spiel und 9 mm² approximaler Verbinderfläche zwischen verbundenen Zähnen. Neben gewöhnlichen Sockeln wurden rotationssichernde zylindrische Vorsprünge mit passenden Zahnbohrungen entworfen. Posterior waren sie 3 mm tief, 1.5 mm breit und 4 mm lang, anterior 4 mm tief. Stärkere geometrische Führung verbessert das Einsetzen nicht zwangsläufig, weil mehrere Passstellen das vollständige Absenken eines Zahnbogens behindern können.[Experiment zu Sockeln und Zahnverbindungsdesigns](ref:R02)\n\n| Benanntes Design | Medianer RMS aller Zähne, mm |\n|---|---:|\n| Einzelzähne, gewöhnliche Sockel | 0.184 |\n| Einzelzähne, Zapfen-Loch-Sockel | 0.216 |\n| Durchgehend verbundener Zahnbogen, gewöhnliche Sockel | 0.125 |\n| Durchgehend verbundener Zahnbogen, Zapfen-Loch-Sockel | 0.202 |\n| Segmentweise verbundene Zähne, gewöhnliche Sockel | 0.152 |\n| Segmentweise verbundene Zähne, Zapfen-Loch-Sockel | 0.170 |\n| Gedrucktes Wachsmodell mit konventioneller Küvettierung | 0.163 |\n| Einfarbiger Monoblockdruck | 0.104 |\n\nDer vollständige verbundene Zahnbogen in gewöhnlichen Sockeln wich weniger ab als Einzelzähne; die Zapfengeometrie verbesserte das deskriptive Muster nicht. Beim vollständigen Zahnbogen mit Zapfen betrugen die anterioren und posterioren Mediane 0.282 und 0.166 mm. Ein Gesamtwert verdeckt somit regionale Unterschiede. Methoden, Ergebnisse und einige Legenden vertauschen Monoblock- und semikonventionelle Gruppennummern; hier werden deshalb Designnamen statt mehrdeutiger römischer Ziffern verwendet.\n\nJede Prothese lieferte 14 Zahnmessungen. Das tabellierte n=140 bezeichnet somit Zähne an 10 Prothesen, keine 140 unabhängig gefertigten Proben. Eine hierarchische Berücksichtigung der Korrelation innerhalb einer Prothese ist nicht erkennbar, was die Signifikanzinterpretation begrenzt. Die Mediandifferenz von 0.021 mm zwischen Monoblock und vollständigem Zahnbogen in gewöhnlichen Sockeln liegt zudem unter der berichteten minimal nachweisbaren Änderung von 0.035 mm. Letztere ist eine Messeigenschaft, keine klinische Schwelle, warnt aber vor einer Ableitung wahrnehmbarer Okklusionsverbesserung allein aus der Zahlenrangfolge.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "multimaterial_local_accuracy",
+          "title": "Direkte Evidenz für echten Mehrmaterialdruck betrifft einen lokalen Prüfkörper",
+          "markdown": "Mohamed et al. klebten keinen vorgefertigten Druckzahn auf die Basis. PolyJet J55 Prime erzeugte zahnfarbenes RGD835 VeroUltraWhite und rosafarbenes RGD851 VeroMagentaV kontinuierlich in aufeinanderfolgenden Schichten. Die Schichtdicke betrug 18.75 μm, jede Schicht wurde UV-gehärtet; je Fertigungsverfahren wurden 20 Proben hergestellt. Die Geometrie bestand aus einem Oberkieferzentralinzisivus mit zylindrischer Basis von 20 mm Durchmesser und 10 mm Höhe; der Zahnhals wurde entlang der Achse um 3 mm verlängert. Das ist ein lokales integriertes Mehrmaterialmodell, kein vollständiger Zahnbogen.[Experiment zum kontinuierlichen Mehrmaterialdruck](ref:R03)\n\nKontrollen bestanden aus vorgefertigten Endura-Zähnen und Acron-Heißpolymerisat mit 10 h bei 73°C. Ganzprobenscans wurden per Best Fit am Ausgangsdesign ausgerichtet. Der Druck-RMS betrug 0.0384±0.00575 mm, konventionell 0.1227±0.04458 mm. Die Originalkarte lokalisiert einen großen Teil des Unterschieds in der zylindrischen Basis: Konventionelle Proben weichen nach innen ab, gedruckte bleiben näher am Entwurf. Die Messgröße umfasst Zahn und großes Basisvolumen und bedeutet nicht unmittelbar, dass Zahnpositionierungsfehler auf 0.0384 mm reduziert wurden.\n\nDie Kontrollform wurde von einer gedruckten Probe abgeformt; dadurch sind die Fehlerketten asymmetrisch. Konventionell kamen Wachsmodellierung, Einbettung und Heißpolymerisation hinzu, beim integrierten Druck blieben Materialauftrag und schichtweise Härtung. Es gab keinen gepaarten Versuch bei gleichem Material und gleicher Geometrie, der ausschließlich Montage hinzufügte oder entfernte. Der beobachtete Vorteil betrifft deshalb die insgesamt verglichenen Herstellungswege.\n\nDie untersuchten Vero-Harze sind zudem nicht mit sämtlichen späteren dentalen Mehrfarbdruckmaterialien austauschbar. Lokale Formgenauigkeit und fehlendes manuelles Zahnkleben belegen nicht unmittelbar Totalprothesenpassung, Okklusionsgenauigkeit oder klinische Werkstoffeigenschaften anderer Rezepturen.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "multivat_registration",
+          "title": "Mehrwannendruck verlagert Montageanforderungen auf Koordinaten, Materialwechsel und Schrumpfung",
+          "markdown": "Jiang et al. entwickelten ein Mehrharzsystem mit zwei Harzwannen und einer Reinigungsstation; die Plattform rotiert zwischen rosafarbenem Basisharz, zahnfarbenem Harz und Reinigung. Zahn- und Basismodelle müssen dasselbe Koordinatensystem besitzen. Enthält eine Schicht beide Materialien, benötigt die Schnittsoftware getrennte Belichtungsmuster; vor dem Wannenwechsel muss Restharz entfernt werden. Die Basisharzviskosität betrug 1180 cP, die des Zahnharzes 498 cP. Reinigung ist unverzichtbar, weil Materialmischung und Grenzflächenverfärbung lokale Formen verändern können.[Prototyp für kontinuierlichen Mehrwannendruck](ref:R04)\n\nDas System verwendete 405 nm Licht und 50 μm projizierte Pixel; die Prothesenschichten waren tatsächlich 25 μm dick und wurden 2 s belichtet. Zapfen mit 1.5 mm Durchmesser und 1.8 mm Höhe passten in entsprechende Bohrungen und verstärkten die Grenzflächengeometrie. Damit wird ein digital definierter Verbindungsbereich geführt, nicht unabhängig ein klinischer Okklusionsfehler gemessen. Kontrollen wurden vierachsig gefräst und verklebt, mit 0.4 mm STL-Dreiecksgröße und gegenüber dem Druck unterschiedlichen Materialien und Prozessmechanismen.\n\nDer Rückscanner besaß eine angegebene Genauigkeit von 29 μm. Berichtete Oberflächenabweichungen lagen gefräst zwischen −141 und +164 μm, gedruckt zwischen −98 und +100 μm. Die genannten 35.08% ergeben sich aus der Verengung dieses Intervalls von 305 auf 198 μm. Das ist keine Reduktion von Gesamtbogen-RMS, mittlerer Zahnbewegung oder Montagefehlervarianz um 35.08%. Eine ausreichende Wiederholungszahl zur Beschreibung unabhängig gefertigter Prothesenverteilungen wurde nicht angegeben; Extrembereiche reagieren zudem auf Scanrauschen und Ausreißer.\n\nZapfen veränderten zugleich die Lastübertragung: Die Biegefestigkeit betrug ohne Zapfen 13.46 MPa und mit 1.5 mm Zapfen 17.76 MPa; Druckfestigkeiten von 61.1 und 62.3 MPa unterschieden sich dagegen nicht signifikant. Ein Führungsmerkmal kann somit eine Belastungsart beeinflussen, ohne Biegefestigkeit zum Ersatz für Zahnpositionsgenauigkeit zu machen. Eine zahnweise Verringerung der Montageverschiebung durch Zapfen wurde nicht gemessen.\n\nGedruckte Materialgrenzen wirkten weniger scharf als separat gefräste und verklebte; die Autoren diskutierten außerdem ungleichmäßige Druckschrumpfung. Auch ohne manuelles Kleben bleiben Reinigung, Nachhärtung und Stützentfernung erforderlich. Der Prototyp stützt kontinuierliche Fertigung in gemeinsamen Koordinaten, quantifiziert aber Verunreinigung beim Harzwechsel, Positionierungswiederholbarkeit und Härtungsschrumpfung nicht getrennt.",
+          "figure_ids": []
+        },
+        {
+          "id": "interface_after_thermal_cycles",
+          "title": "Auch ohne Zahnkleben bleibt die Mehrmaterialgrenze thermischer Belastung ausgesetzt",
+          "markdown": "Mohamed et al. unterzogen jeweils 10 lokale Mehrmaterialproben pro Verfahren 10000 Thermowechseln bei 5–55°C mit 30 s Verweilzeit; weitere 10 blieben ungealtert. Ein 4 mm Belastungskopf belastete die palatinale Zahnfläche mit 1 mm/min. Erfasst wurde Bruchkraft, keine flächennormierte Grenzflächenfestigkeit. Die konventionelle mediane Kraft sank von 159.79 auf 36.12 N, die gedruckte veränderte sich von 91.75 auf 83.99 N ohne signifikanten Unterschied innerhalb der Druckgruppe, p=0.24. Anfangs waren konventionelle Proben stärker, nach Thermowechseln gedruckte; die Rangfolge hing von der Exposition ab.[Thermowechsel und Bruch integrierter Mehrmaterialproben](ref:R03)\n\nVor Thermowechseln zeigten beide Fertigungsgruppen ausschließlich Mischbrüche. Danach traten beim Druck 4 kohäsive und 6 gemischte Brüche auf. Kontinuierlicher Auftrag beseitigt weder die Materialgrenze noch erzeugt er einen homogenen Werkstoff. Der Bruchort zeigt, ob Risse in das Volumenmaterial eintreten, erlaubt aber allein aus kohäsivem Versagen keine zahlenmäßige chemische Verbundfestigkeit.\n\nBasisscheiben derselben Studie lagerten eine Woche bei 37°C in Wasser. Die mittlere Wasseraufnahme betrug gedruckt 33.7±5.0 μg/mm³, konventionell 22.7±3.2 μg/mm³. Höhere lokale Druckgenauigkeit kann somit mit größerer Wasseraufnahme einhergehen. Die Scheiben waren 0.5 mm dick; ihre Massenänderung lässt sich nicht direkt in Zahnverschiebung vollständiger Prothesen umrechnen.\n\nDie Druckbasis enthielt außerdem für die Fertigung eingebrachtes weißes Material. Die Autoren weisen ausdrücklich darauf hin, dass es kein Zahnmaterial war und bei der Bruchbewertung nicht als Zahnrest gelten darf. Lokale Geometrie, innere Materialaufteilung, thermisch gealterte Bruchkraft und Montagefehler des ganzen Zahnbogens beantworten unterschiedliche Fragen. Gemessen wurden hier die erstgenannten Eigenschaften, nicht Zahnpositionen des vollständigen Bogens nach Thermowechseln oder reale Okklusionskontakte.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Tan Zhi Hui Janice et al.: Zahnoberflächenabweichungen bei Monoblock- und montierten Prothesen; Originalabbildungsdaten von NLM/PMC, unverändert wiedergegeben.",
+          "interpretation": "M und T sind Monoblöcke verschiedener Harze, F ein verklebter Gesamtbogen und S verklebte Segmente; oben erscheinen labiale, unten okklusale Ansichten. Grün liegt nahe ±0.01 mm, kritische Grenzen bei ±0.1 mm; F und S zeigen große rote Okklusalbereiche. Rot sättigt jenseits der Farbgrenze; nicht jeder rote Punkt entspricht genau 0.1 mm, und rote Fläche ergibt keinen unmittelbaren Mittelwert. Auch M und T zeigen wechselnd Blau und Rot: Ohne manuelle Montage bleiben Oberflächenformfehler bestehen. Die Registrierung verwendet die Basis; Zahnposition und Morphologie sind relativ zu diesem Bezug dargestellt.[Abweichungskarten und Registrierung](ref:R01)"
+        },
+        "F02": {
+          "caption": "Tan Zhi Hui Janice et al.: Verteilung des Gesamtbogen-RMS; Originalabbildungsdaten von NLM/PMC, unverändert wiedergegeben.",
+          "interpretation": "Horizontal stehen M, T, F und S, vertikal RMS in mm. Schwarze Linien in den Boxen sind Mediane, keine Tabellenmittelwerte. M und T liegen niedriger und sind schmaler; F und S liegen höher und besitzen einzelne hohe Punkte. Die Achse beginnt nahe 0.1, visuelle Höhen sind daher keine Verhältnisse gegenüber null. Der gesamte sichtbare M-Bereich liegt ungefähr bei 0.10–0.18 mm und passt nicht zur tabellierten Standardabweichung von 0.130 mm. Aus Boxbreiten wird keine korrigierte Standardabweichung abgeleitet; Signifikanz wird nicht als unabhängig reproduziert bezeichnet.[Originalgrafik und Zahlentabelle](ref:R01)"
+        },
+        "F03": {
+          "caption": "Sallam et al.: Basen mit Zapfen-Loch-Geometrie und gewöhnlichen Sockeln; Originalabbildungsdaten von NLM/PMC.",
+          "interpretation": "a zeigt Zapfengeometrie, b gewöhnliche Sockel; einige eingesetzte Seitenzähne verdeutlichen die Montage. Vorsprünge und passende Zahnbohrungen verstärken geometrische Führung, gewöhnliche Sockel beruhen vor allem auf äußerer Formpassung. Fotos quantifizieren weder Kontaktspalte noch vollständiges Einsetzen. Zusammen mit der Tabelle zeigt sich, dass zusätzliche Führung den Zahn-RMS nicht einheitlich verringerte; vollständige Zahnbögen mit Zapfen wichen besonders anterior stärker ab. Entscheidend sind auch Zahnbogenverbindung, Spiel und Einsetzweg statt der Annahme, ein zusätzlicher Führungszapfen verbessere automatisch die Genauigkeit.[Designmaße und Abweichungsvergleich](ref:R02)"
+        },
+        "F04": {
+          "caption": "Sallam et al.: Vollständige Abweichungskarten für Verbindungs- und Sockeldesigns; Originalabbildungsdaten von NLM/PMC.",
+          "interpretation": "a und b zeigen Einzelzähne in gewöhnlichen/Zapfen-Loch-Sockeln, c und d verbundene Gesamtbögen in gewöhnlichen/Zapfen-Loch-Sockeln, e und f segmentierte Zähne in gewöhnlichen/Zapfen-Loch-Sockeln. Anterior liegen die Farben bei c näher an Grün als bei d mit wärmeren palatinalen Frontzahnbereichen; dies ist zusammen mit Regionalwerten zu lesen. Methoden und Ergebnisse vertauschen die letzten Gruppennummern; auch die g/h-Legendenreihenfolge weicht von anderen Designabbildungen ab. Diese Teilbilder allein begründen deshalb keine Gruppenrangfolge. Kritische Grenzen liegen bei ±0.5 mm, nominale bei ±0.1 mm. Farben dürfen nicht unmittelbar mit der engeren Skala der vorangegangenen Studie verglichen werden.[Gesamtabbildung und Daten benannter Gruppen](ref:R02)"
+        },
+        "F05": {
+          "caption": "Mohamed et al.: Geometrische Abweichungen zylindrischer Einzelzahnproben; Originalabbildungsdaten von NLM/PMC.",
+          "interpretation": "Links steht konventionelle Heißpolymerisation, rechts kontinuierlicher Mehrmaterialdruck, mit gemeinsamer ±0.5 mm Skala und grüner Toleranz nahe ±0.05 mm. Der konventionelle Zylinder zeigt mehr Cyan/Blau, der gedruckte überwiegend Grün; beide Zahnflächen behalten lokale Abweichungen. Da Best Fit die gesamte Probe umfasst, beeinflusst die große Zylinderfläche den Gesamt-RMS stark. Dieser ist kein isolierter Zahnpositionsfehler. Dargestellt sind lokale Material-Jetting-Proben, nicht Jiangs im nächsten Abschnitt behandelte vollständige Mehrwannenprothesen.[Originaler lokaler Formvergleich](ref:R03)"
+        },
+        "F06": {
+          "caption": "Mohamed et al.: Bruchpfade kontinuierlich gedruckter und konventioneller Proben; Originalabbildungsdaten von NLM/PMC.",
+          "interpretation": "Oben zeigen A–C Bruchflächen, unten D–F die zugehörigen Seitenansichten: A/D konventioneller Mischbruch, B/E gedruckter kohäsiver Bruch, C/F gedruckter Mischbruch. Die gedruckte Materialgrenze wird nicht automatisch zum einzigen Bruchpfad, kann aber weiterhin von Rissen durchquert werden. Laut Autoren enthalten weiße Bereiche im Zylinder Fertigungsmaterial und sind nicht sämtlich als zurückgebliebenes Zahnmaterial zu identifizieren. Ganze Zahnbögen, Okklusionskontakte und Positionsmessungen nach Thermowechseln fehlen. Die Abbildung stützt lokale Bruchortanalyse, keine prozentuale Erhaltung der Montagegenauigkeit.[Brucharten und Erklärung innerer Materialien](ref:R03)"
+        }
+      }
+    }
+  }
+}

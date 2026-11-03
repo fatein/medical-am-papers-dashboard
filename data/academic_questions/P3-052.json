@@ -1,0 +1,337 @@
+{
+  "schema_version": 2,
+  "question_id": "P3-052",
+  "p": "P3",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "KB2026EBF28404576C",
+    "doc_6c6a0930958a88f70639",
+    "doc_075da21ecf07e4b6b7de"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "3D-Printing-Assisted Fabrication and Characterization of Pregabalin-Loaded PVA/PVP Dissolving Microneedle Arrays",
+      "publisher": "Micromachines",
+      "year": 2026,
+      "url": "https://doi.org/10.3390/mi17060676",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Design and fabrication of r-hirudin loaded dissolving microneedle patch for minimally invasive and long-term treatment of thromboembolic disease",
+      "publisher": "Asian Journal of Pharmaceutical Sciences",
+      "year": 2022,
+      "url": "https://doi.org/10.1016/j.ajps.2022.02.005",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "A 3D-printed microfluidic-enabled hollow microneedle architecture for transdermal drug delivery",
+      "publisher": "Biomicrofluidics",
+      "year": 2019,
+      "url": "https://doi.org/10.1063/1.5127778",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-052/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13303589/#micromachines-17-00676-f003",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 12",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-052/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13303589/#micromachines-17-00676-f012",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Fig. 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-052/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9091604/#fig0004",
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Fig. 5",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-052/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9091604/#fig0005",
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "FIG. 4.",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-052/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6906119/#f4",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R03",
+      "original_label": "FIG. 5.",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-052/F06.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6906119/#f5",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "载药微针如何控制经皮递送和释放？",
+      "direction": "微针递送",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "把药物集中在针尖，首先改变的是药物所在位置",
+          "markdown": "Manivannan 等先 SLA 打印主模，再以 PDMS 复制阴模，最后浇铸普瑞巴林可溶微针；药物没有随主模经历光固化。设计为 10 × 10 阵列，针高 850 µm、底半径 200 µm、尖半径 15 µm、间距 450 µm。PDMS 与固化剂按 10:1 混合，60 °C 固化 4 h，药物成品则在室温干燥。[双层微针制备](ref:R01)\n\n论文把针尖层描述为 PVA 20% 与 PVP 20%，另以 PVP 50%、甘油 3% 制作无药底板。针尖浇铸液由 5 mg 药物、100 mg 聚合物凝胶和 100 mg 水混合，模内离心 5000 rpm、15 min，移去余胶后避光干燥 12 h；底板再次离心 20 min，干燥 24 h，脱模后真空干燥 12 h。原图把首次离心写为 10 min，与方法的 15 min 不同，复现实验需要澄清，而不能合并成同一参数。\n\n全片溶解提取得到的载药效率为 92.4 ± 0.20%，每组 n = 3。论文以约 5 mg 作为每片理论药量，但移去余胶后的分步质量平衡没有列出。这个回收率并非逐针含量均匀度，也不是进入皮肤的比例。双层结构可以让无药底板承担操作支撑，使药物优先位于可插入部分；它本身没有证明释放更慢，还需要对照相同载药量、不同层间分配的释放曲线。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "缓冲液中释放到 24 h，不等于皮肤内持续给药到 24 h",
+          "markdown": "该普瑞巴林研究用 50 mL PBS、3% w/v Tween 80、37 °C 进行释放测定，并另描述以 3 层 Parafilm 支撑的 Franz 装置、600 rpm 搅拌及每次 0.5 mL 取样。两段方法没有清楚区分原图曲线分别来自哪一装置。图中为单一制剂的累计释放，没有同实验纯药溶液或其他聚合物比例对照。[释放条件与原图 12](ref:R01)\n\n| 时间 | 图示累计释放 |\n|---|---|\n| 0.5 h | 12.1% |\n| 1 h | 24.9% |\n| 2 h | 39.8% |\n| 4 h | 59.3% |\n| 6 h | 72.9% |\n| 12 h | 90.4% |\n| 24 h | 96.8% |\n\n59.3% 的点在图及方法时间表为 4 h，结果段却写 3 h；本文采用图和方法一致的时间，不把作者称为约 3 h 的 t50% 当作精确拟合参数。前段较快、后段变慢是观察到的曲线形状，尚不能由单条曲线确定扩散、聚合物溶解各自占比，或证明存在独立的两阶段反应机制。\n\nParafilm 实验测得前 3 层均有孔，约 390 µm，第 4 层约 85% 的针有孔；这是机械模型穿刺。Parafilm 不具备生物皮肤的分配、结合和扩散屏障，不能把 96.8% 释放率改写为经皮生物利用度。该研究未给出生物皮肤受体量或血药浓度，因而其支持的是配方中的体外释药过程。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "针体溶解、给入皮肤和穿过皮肤具有不同分母",
+          "markdown": "Wu 等以 3D 打印主模经明胶过渡复制，制备重组水蛭素（r-hirudin）微针。优化基质为透明质酸 HA 10% w/v 与 Gantrez S-97（GAS）1% w/v，药液范围 1–20 mg/mL。另在 3 mL PBS、25 °C、10 rpm 下比较 HA 10%、15%、20% 及有无 GAS 1%；较高 HA 配合 GAS 可减慢向 PBS 的释放，作者将其归因于网络稳定性增加。该对照与皮肤试验的温度、介质及屏障不同。[配方与皮肤递送](ref:R02)\n\n大鼠皮肤中 5 min 后针体长度减少 77.07 ± 2.39%，延长至 30、60 min 为 77.67 ± 2.25%、84.39 ± 0.34%。这是根据残余针长计算的形态变化，不是相同百分比的蛋白已经进入血液。以取下后剩余药量估计的给药比例，大鼠为 74.18 ± 5.51%，猪皮为 71.25 ± 8.29%；仍不同于扩散池受体液回收量。\n\n离体皮肤每片给 75 µg 微针或等量溶液，5 min 后移去贴片；受体 PBS 2 mL、37 °C、167 rpm，每组 n = 4。9 h 的累计受体量，大鼠腹皮为 31.37 ± 6.66 µg/cm²，猪耳皮为 14.85 ± 0.24 µg/cm²，溶液对照接近基线。同样给药量及接近的贴片给入比例，仍出现皮肤模型相关的通量差异。方法前文描述去除皮下脂肪和肌肉，后文简写“SC tissue”，具体屏障处理仍有表述歧义，不能据此外推未经处理的人皮肤。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "较低峰浓度与延迟达峰，不等于同剂量的缓释优势",
+          "markdown": "Wu 等进一步测量大鼠药代及凝血反应。皮下注射组为 0.5 mg/kg、n = 8；微针组为每片 30 µg、每只 4 片、n = 7，动物体重 200 ± 20 g，贴片放置 5 min 后移去。微针标示总量为 120 µg，但实际进入量受残留影响，因此不能把两组直接称为严格等剂量给药。[药代与凝血时间](ref:R02)\n\n| 途径 | Tmax | Cmax | 原文报告绝对生物利用度 |\n|---|---|---|---|\n| 静脉 IV | 1 min | 4736 ± 414 ng/mL | 100% |\n| 皮下 SC | 60 min | 262.4 ± 53.47 ng/mL | 78.26% |\n| 微针 MN | 30 min | 218.20 ± 46.37 ng/mL | 39.61% |\n\n微针相对于静脉延迟达峰，但比皮下注射更早，不能笼统说比所有注射方式都更慢。较低峰值同时伴随较低系统暴露；原文 AUC 为 IV 1216 ± 112.8、SC 951.7 ± 248.3、MN 481.7 ± 107.3 ng·h/mL。表中生物利用度保留作者报告值，方法段未完整列出 IV 给药剂量，不能仅凭该表独立复算剂量归一化结果。\n\n凝血 aPTT、PT、TT 延长提供了进入体内后仍有药效的证据，但其程度并不相同，不能把“可测抗凝”当作与皮下注射完全等效。短时间贴片接触后的吸收拖尾，可以来自皮内残留与吸收过程，不必等同于针体在皮肤表面持续缓慢溶解。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "空心微针用入口流量控制混合组成，控制量不再是基质溶解",
+          "markdown": "Yeung 等用 Form 2 与 Dental LT Clear 一次打印微流道、螺旋混合腔及空心微针。打印方向为 45°，IPA 洗 5 min，405 nm、80 °C 固化 20 min；药液在器件成形后由外部注射泵送入。细尖设计底宽 800 µm、内腔 600 µm，附加直径 40 µm、高 80 µm 的尖端特征，把实测尖端曲率半径从约 50 µm 降到 25 µm，孔缘圆角使成孔率从约 50% 提至 100%。[中空结构与混合实验](ref:R03)\n\n混合验证的基线为三路各 100 µL/min，比例 1:1:1；其余设置为两路各 10 µL/min、一路 100 µL/min，得到 0.1:0.1:1 等比例。红、透明、蓝液在入口仍分层，经过螺旋腔后出口颜色更均匀。另用各 0.5% w/v 的 rhodamine B、FITC、methylene blue，取 25 µL 出口液读荧光，n = 3，确认相对组成随入口比变化。\n\n这些设置也把总流量从 300 降为 120 µL/min。按理想无损混合计算，高占比一路的体积分数由 1/3 变为 1/1.2，即约 0.833，但该路自身绝对流量仍是 100 µL/min。浓度提高和同一药物质量输入速率提高不是一回事。出口荧光按各染料最大值分别归一化，不能把不同颜色柱高直接比较为相等或不同的药物质量。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "皮内荧光验证可调保留量，尚未给出绝对药物剂量",
+          "markdown": "在离体猪皮验证中，Yeung 等将器件压于 2 × 2 cm 皮片，用 500 g 砝码保持接触。为减少泄漏，实际入口流量比混合台架实验降低 10 倍：等比基线每路 10 µL/min，高占比条件为 1、1、10 µL/min 的排列，总流量因此为 30 或 12 µL/min。压力接触、出口阻力及皮肤回弹都可能使泵送量与皮内保留量不同。[离体皮肤内分布](ref:R03)\n\n共聚焦读取 0–400 µm 深度的三种染料信号，主要峰出现在 100–200 µm；各高占比条件下，对应染料的归一化信号较高。曲线对深度积分的插图是相对总荧光的代理，不是经质量标定的 µg 剂量，也不是血液暴露。原方法称在该深度范围采集少量图像却写 100 nm 步长，存在单位描述不一致；按原图明确的 µm 深度轴解读，不据此补造采样间隔。\n\n该装置验证的是小分子染料的组成调节及局部分布。供液时间与完整泄漏回收没有形成绝对质量平衡，且没有直接展示胰岛素或其他活性药物的药效对照。对于外部泵驱动针阵列，决定递送的既有混合后浓度，也有真正进入组织的体积；提高某一路相对荧光不能单独证明给药精度已达到同一百分比。",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Manivannan et al. — 原图 3：载药尖部与无药底板分步浇铸。",
+          "interpretation": "图从左至右为聚合物配液、载药尖部、底板与干燥，说明主模打印不等于药物直接光固化。中央步骤包含移去余胶，故初始加药量不能直接当作留在针尖的量；右侧无药底板支撑尖部。图内首次离心为 10 min，方法为 15 min，这项差异保留为复现参数问题，不据示意图证明各针浓度相同。[双层制备图](ref:R01)"
+        },
+        "F02": {
+          "caption": "Manivannan et al. — 原图 12：同一制剂的体外累计释放。",
+          "interpretation": "横轴 h，纵轴累计释放%，59.3 标在 4 h，24 h 达 96.8%。曲线斜率逐渐下降，显示早晚速率不同；没有生物皮肤通量轴，也没有并列纯药对照。结果文字把 59.3% 写在 3 h，与图冲突。该图只能支持所列体外条件下的释放形状，不能单独证明持续经皮暴露。[释放曲线](ref:R01)"
+        },
+        "F03": {
+          "caption": "Wu et al. — 原图 4：残余针长、给入比例及受体量不是同一量。",
+          "interpretation": "A 从初始 100% 降至低值，实际反映残余针长；B 为去除贴片后以剩余药估计的给入比例。C 为不同深度的荧光截面，标尺 200 µm。D、E 分别是大鼠与猪皮的受体量，纵轴 µg/cm²，红线微针、黑线等量溶液。D 的最后一点低于前点，显示测量波动，不能把标为累计的曲线每一段都解释为单调释放动力学。[皮肤与受体分层读数](ref:R02)"
+        },
+        "F04": {
+          "caption": "Wu et al. — 原图 5：局部递送之后的凝血及系统暴露。",
+          "interpretation": "A–C 为 aPTT、PT、TT，下面比较 1 h；C 使用断轴，柱高视觉比例不可直接当作倍数。D、E、F 分别为 IV、SC、MN 浓度曲线，G 合并曲线及参数表。MN 达峰早于 SC、峰值远低于 IV，同时 AUC 也较低。图中的凝血效应和浓度分别回答是否有活性与暴露多少，不能合并为完全等效。[药代与药效原图](ref:R02)"
+        },
+        "F05": {
+          "caption": "Yeung et al. — 原图 4：入口分层经螺旋混合后形成可调组成。",
+          "interpretation": "a、b 为器件与出口检测，c–f 显示入口，g–j 显示相应出口。k–n 的柱分别按各染料最大荧光归一化，基线等流量时柱高仍不同，故不同颜色不能直接相比为质量分数。l 为透明/FITC 路占优，m 为红/RB，n 为蓝/MB；这些是按实际图中比值确定的顺序。[流量与混合组成](ref:R03)"
+        },
+        "F06": {
+          "caption": "Yeung et al. — 原图 5：不同供液比例改变皮内染料分布。",
+          "interpretation": "a 示意从混合腔至皮肤的流路；按图内标注，b 为 RB 路占优，c 为 fluorescein 路，d 为 MB 路，原文字图注的 b/d 顺序不一致。横轴皮肤深度 µm，曲线以等比供液为参照归一化，插图为深度积分。最高信号集中在 100–200 µm，表示局部相对保留，而不是进入血循环的绝对剂量。[皮内荧光分布](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do drug-loaded microneedles control transdermal delivery and release?",
+      "direction": "Microneedle delivery",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Concentrating drug in the tips first changes where the drug is located",
+          "markdown": "Manivannan and colleagues SLA-printed masters, replicated negative PDMS moulds and cast pregabalin-loaded dissolving needles. Drug was not exposed to master photopolymerisation. The design used 10 × 10 arrays, 850 µm height, 200 µm base radius, 15 µm tip radius and 450 µm spacing. PDMS and curing agent were mixed 10:1 and cured at 60 °C for 4 h; drug-containing products dried at room temperature. [Bilayer needle fabrication](ref:R01)\n\nThe paper describes tips as 20% PVA plus 20% PVP, with drug-free backing from 50% PVP and 3% glycerol. Tip casting mixed 5 mg drug, 100 mg polymer gel and 100 mg water, centrifuged in moulds at 5000 rpm for 15 min, removed excess gel and dried in darkness for 12 h. Backing was centrifuged for 20 min and dried for 24 h, followed by demoulding and 12 h vacuum drying. The original scheme gives 10 min for initial centrifugation versus 15 min in methods; reproduction requires clarification rather than merging these into one setting.\n\nWhole-patch extraction yielded loading efficiency of 92.4 ± 0.20%, n = 3. The paper treats approximately 5 mg as theoretical drug per patch, without a stepwise mass balance after excess-gel removal. Recovery is neither individual-needle content uniformity nor the fraction entering skin. Drug-free backing can provide handling support while placing drug preferentially in insertable regions. Bilayer structure itself does not prove slower release; that would require matched-loading comparisons with different spatial distributions.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Release into buffer over 24 h is not sustained delivery through skin over 24 h",
+          "markdown": "The pregabalin study used 50 mL PBS with 3% w/v Tween 80 at 37 °C for release testing. It separately describes a Franz setup supported by 3 Parafilm layers, stirred at 600 rpm with 0.5 mL sampling. The methods do not clearly assign the plotted curve to these separate setups. Only one formulation is plotted, without a concurrently tested pure-drug solution or alternative polymer ratio. [Release conditions and original Figure 12](ref:R01)\n\n| Time | Plotted cumulative release |\n|---|---|\n| 0.5 h | 12.1% |\n| 1 h | 24.9% |\n| 2 h | 39.8% |\n| 4 h | 59.3% |\n| 6 h | 72.9% |\n| 12 h | 90.4% |\n| 24 h | 96.8% |\n\nThe 59.3% point is at 4 h in the figure and methods schedule but at 3 h in the results text. This report uses the mutually consistent figure and methods, without treating the authors' approximate 3 h t50% as a precisely fitted parameter. Faster early and slower late release describe the observed curve; one curve does not separate contributions from diffusion and polymer dissolution or establish two independent reaction stages.\n\nParafilm testing found holes throughout the first 3 layers, approximately 390 µm, and about 85% of needles perforating layer 4. This is mechanical-model insertion. Parafilm lacks biological skin partitioning, binding and diffusion barriers; 96.8% release is not transdermal bioavailability. No biological-skin receptor amount or blood concentration was reported, so this study supports an in-vitro formulation-release process.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Needle dissolution, delivery into skin and transport across skin use different denominators",
+          "markdown": "Wu and colleagues replicated 3D-printed masters through a gelatin intermediate to produce recombinant hirudin (r-hirudin) needles. The optimized matrix contained 10% w/v hyaluronic acid (HA) and 1% w/v Gantrez S-97 (GAS), with drug solutions of 1–20 mg/mL. Separate release tests used 3 mL PBS at 25 °C and 10 rpm, comparing HA at 10%, 15% and 20% with or without 1% GAS. Higher HA combined with GAS slowed release into PBS, attributed by the authors to greater network stability. Temperature, medium and barrier differ from skin experiments. [Formulation and skin delivery](ref:R02)\n\nIn rat skin, needle-length reduction reached 77.07 ± 2.39% after 5 min, 77.67 ± 2.25% at 30 min and 84.39 ± 0.34% at 60 min. These are morphological changes derived from remaining length, not equal fractions of protein reaching blood. Dosing fractions estimated from drug remaining after patch removal were 74.18 ± 5.51% for rats and 71.25 ± 8.29% for pig skin, still distinct from receptor-fluid recovery.\n\nEx-vivo skin received 75 µg per patch or equal solution drug; patches were removed after 5 min. Receptors contained 2 mL PBS at 37 °C and 167 rpm, n = 4. At 9 h, cumulative receptor amounts were 31.37 ± 6.66 µg/cm² for rat abdominal skin and 14.85 ± 0.24 µg/cm² for pig ear skin, with solution controls near baseline. Equal applied drug and similar patch dosing fractions still produced skin-model-dependent transport. Earlier methods describe removing subcutaneous fat and muscle, but later abbreviate the removed tissue as “SC tissue”. Barrier preparation remains ambiguously worded and cannot be extrapolated to untreated human skin.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Lower peak concentration and delayed peaks do not establish a matched-dose sustained-release advantage",
+          "markdown": "Wu and colleagues also measured rat pharmacokinetics and coagulation. Subcutaneous treatment used 0.5 mg/kg, n = 8; microneedles used 30 µg/patch and 4 patches/rat, n = 7, in animals weighing 200 ± 20 g. Patches were removed after 5 min. Nominal microneedle load was 120 µg, with entry affected by residual drug, so these were not strictly matched delivered doses. [Pharmacokinetics and coagulation times](ref:R02)\n\n| Route | Tmax | Cmax | Reported absolute bioavailability |\n|---|---|---|---|\n| Intravenous IV | 1 min | 4736 ± 414 ng/mL | 100% |\n| Subcutaneous SC | 60 min | 262.4 ± 53.47 ng/mL | 78.26% |\n| Microneedles MN | 30 min | 218.20 ± 46.37 ng/mL | 39.61% |\n\nMicroneedles peaked later than IV but earlier than SC, rather than more slowly than every injection route. Lower peaks coincided with lower systemic exposure: reported AUCs were 1216 ± 112.8 for IV, 951.7 ± 248.3 for SC and 481.7 ± 107.3 ng·h/mL for MN. Bioavailability values retain the authors' attribution. The methods do not fully state IV dose, preventing independent reconstruction of dose-normalized values from this table alone.\n\nProlonged aPTT, PT and TT support retained pharmacological activity after entry, but their magnitudes differ. Measurable anticoagulation is not complete equivalence to SC administration. The absorption tail after brief patch contact can reflect intradermal drug retention and uptake rather than continued slow dissolution of needles on the surface.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Hollow needles control mixture composition through inlet flow rather than matrix dissolution",
+          "markdown": "Yeung and colleagues used Form 2 and Dental LT Clear to print microchannels, a spiral mixing chamber and hollow needles in one device. Printing used 45° orientation, a 5 min IPA wash and 20 min curing at 405 nm and 80 °C. External syringe pumps introduced solutions after fabrication. Fine-tip geometry had an 800 µm base and 600 µm bore; an added 40 µm diameter, 80 µm high tip feature reduced measured curvature radius from approximately 50 µm to 25 µm. A bore-edge fillet raised opening formation from approximately 50% to 100%. [Hollow architecture and mixing](ref:R03)\n\nMixing validation used a baseline of 100 µL/min through each inlet, 1:1:1. Other settings reduced two inlets to 10 µL/min while keeping one at 100 µL/min, producing ratios such as 0.1:0.1:1. Red, clear and blue streams remained separated near entry but appeared more homogeneous after the spiral. Separate tests used 0.5% w/v rhodamine B, FITC and methylene blue, with 25 µL outlet samples and fluorescence readings, n = 3, confirming composition changes with inlet ratios.\n\nThese settings also reduced total flow from 300 to 120 µL/min. Ideal loss-free mixing gives a dominant-stream fraction changing from 1/3 to 1/1.2, approximately 0.833, while that stream's absolute flow remains 100 µL/min. Raising concentration is not raising the input mass rate of that drug. Outlet fluorescence is normalized separately to each dye's maximum, so bar heights across colours cannot establish equal or different drug masses.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Skin fluorescence supports adjustable retention without establishing absolute drug dose",
+          "markdown": "For ex-vivo testing, Yeung and colleagues placed devices on 2 × 2 cm pig-skin pieces under a 500 g weight. To reduce leakage, actual flows were reduced 10-fold from benchtop mixing: equal-flow baseline was 10 µL/min per inlet; dominant-stream conditions used permutations of 1, 1 and 10 µL/min. Total flow was therefore 30 or 12 µL/min. Contact pressure, outlet resistance and skin recoil can all separate pumped volume from volume retained in tissue. [Ex-vivo intradermal distributions](ref:R03)\n\nConfocal imaging read three dyes across 0–400 µm, with the main peaks at 100–200 µm. The relatively dominant dye showed a stronger normalized signal in each condition. Insets integrating fluorescence over depth are proxies for relative total fluorescence, not mass-calibrated µg doses or blood exposure. Methods describe a small number of images over that depth range yet state a 100 nm step, an inconsistent unit description. Interpretation follows the explicit µm depth axes without inventing an acquisition interval.\n\nThe device demonstrates composition adjustment and local distribution of small-molecule dyes. Supply duration and complete leakage recovery do not form an absolute mass balance, and insulin or other active-drug efficacy controls were not demonstrated. For externally pumped arrays, delivery depends on mixed concentration and volume actually entering tissue. Increased relative fluorescence for one stream does not establish dose accuracy at the same percentage.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Manivannan et al. — Original Figure 3: drug-loaded tips and drug-free backing are cast separately.",
+          "interpretation": "Left to right are polymer preparation, loaded tips, backing and drying. Master printing is not direct drug photopolymerisation. Removing excess gel in the middle step prevents initial added drug from automatically equalling tip-retained drug; the drug-free backing supports the tips. Initial centrifugation is 10 min in the scheme versus 15 min in methods, an unresolved replication parameter. The scheme does not establish equal concentration in every needle. [Bilayer fabrication scheme](ref:R01)"
+        },
+        "F02": {
+          "caption": "Manivannan et al. — Original Figure 12: in-vitro cumulative release from one formulation.",
+          "interpretation": "Time is in h and cumulative release in %. The 59.3 label is at 4 h and release reaches 96.8% at 24 h. Declining slope shows different early/late rates, without a biological-skin flux axis or parallel pure-drug control. Results text instead places 59.3% at 3 h. The curve supports release shape under the listed in-vitro conditions, not sustained transdermal exposure by itself. [Release curve](ref:R01)"
+        },
+        "F03": {
+          "caption": "Wu et al. — Original Figure 4: residual needle length, dosing fraction and receptor amount differ.",
+          "interpretation": "A falls from an initial 100% and represents residual needle length. B estimates dosing fraction from drug remaining after patch removal. C contains fluorescence sections at different depths, with a 200 µm scale. D and E are rat- and pig-skin receptor amounts in µg/cm²: red needles and black equal-drug solution. The final D point is below its predecessor, indicating measurement variability; every segment of a labelled cumulative curve cannot be treated as monotonic release kinetics. [Skin and receptor readings](ref:R02)"
+        },
+        "F04": {
+          "caption": "Wu et al. — Original Figure 5: coagulation and systemic exposure after local delivery.",
+          "interpretation": "A–C show aPTT, PT and TT, with 1 h comparisons below. C uses a broken axis, so visual bar-height ratios are not fold changes. D, E and F show IV, SC and MN concentrations; G combines curves and a parameter table. MN peaks earlier than SC and far below IV, with lower AUC too. Coagulation and concentration separately address activity and exposure, without establishing complete equivalence. [Pharmacokinetic and pharmacodynamic figure](ref:R02)"
+        },
+        "F05": {
+          "caption": "Yeung et al. — Original Figure 4: separated inlet streams become a tunable mixture after the spiral.",
+          "interpretation": "a and b show device and outlet measurement; c–f show inlets and g–j their outlets. Bars in k–n are normalized to each dye maximum. Even equal-flow baseline bars differ, preventing direct cross-colour reading as mass fractions. l favours the clear/FITC stream, m red/RB and n blue/MB, following the ratios printed in the actual figure. [Flow and mixture composition](ref:R03)"
+        },
+        "F06": {
+          "caption": "Yeung et al. — Original Figure 5: supply ratios change intradermal dye distributions.",
+          "interpretation": "a depicts the mixing-chamber-to-skin pathway. Actual panel labels show RB dominance in b, fluorescein in c and MB in d; the original caption reverses b/d order. The x-axis is skin depth in µm, curves are normalized against equal-ratio supply, and insets integrate over depth. Signals peak around 100–200 µm, describing local relative retention rather than an absolute dose reaching circulation. [Intradermal fluorescence](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie steuern wirkstoffbeladene Mikronadeln transdermale Abgabe und Freisetzung?",
+      "direction": "Mikronadelverabreichung",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Wirkstoffkonzentration in den Spitzen verändert zunächst den Ort des Wirkstoffs",
+          "markdown": "Manivannan und Kollegen druckten SLA-Master, replizierten negative PDMS-Formen und gossen auflösbare Pregabalin-Nadeln. Der Wirkstoff durchlief nicht die Photopolymerisation des Masters. Das Design umfasste 10 × 10 Arrays mit 850 µm Höhe, 200 µm Basisradius, 15 µm Spitzenradius und 450 µm Abstand. PDMS und Härter wurden 10:1 gemischt und 4 h bei 60 °C gehärtet; wirkstoffhaltige Produkte trockneten bei Raumtemperatur. [Herstellung zweischichtiger Nadeln](ref:R01)\n\nDer Artikel beschreibt Spitzen aus 20% PVA und 20% PVP sowie eine wirkstofffreie Basis aus 50% PVP und 3% Glycerol. Die Spitzengussmasse enthielt 5 mg Wirkstoff, 100 mg Polymergel und 100 mg Wasser; sie wurde im Werkzeug 15 min bei 5000 rpm zentrifugiert, überschüssiges Gel entfernt und 12 h dunkel getrocknet. Die Basis wurde 20 min zentrifugiert und 24 h getrocknet, gefolgt von Entformung und 12 h Vakuumtrocknung. Das Originalschema nennt für die erste Zentrifugation 10 min statt 15 min in den Methoden; zur Reproduktion muss dies geklärt statt zu einem Parameter zusammengeführt werden.\n\nDie Ganzpflasterextraktion ergab eine Beladungseffizienz von 92.4 ± 0.20%, n = 3. Der Artikel setzt etwa 5 mg als theoretischen Wirkstoff je Pflaster an, ohne schrittweise Massenbilanz nach Entfernung überschüssigen Gels. Wiederfindung ist weder Einzelgehaltseinheitlichkeit der Nadeln noch Anteil des Hautübertritts. Eine wirkstofffreie Basis kann die Handhabung stützen, während Wirkstoff bevorzugt im einführbaren Teil liegt. Zweischichtigkeit allein belegt keine langsamere Freisetzung; dazu wären Vergleiche gleicher Beladung bei anderer räumlicher Verteilung erforderlich.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Freisetzung in Puffer über 24 h bedeutet keine anhaltende Hautabgabe über 24 h",
+          "markdown": "Die Pregabalin-Studie verwendete 50 mL PBS mit 3% w/v Tween 80 bei 37 °C. Separat beschreibt sie eine Franz-Anordnung mit 3 Parafilm-Schichten als Träger, 600 rpm Rühren und 0.5 mL Probenahme. Die Methoden ordnen die gezeigte Kurve diesen Anordnungen nicht eindeutig zu. Gezeigt wird nur eine Rezeptur, ohne gleichzeitig geprüfte reine Wirkstofflösung oder alternatives Polymerverhältnis. [Freisetzungsbedingungen und Originalabbildung 12](ref:R01)\n\n| Zeit | Dargestellte kumulative Freisetzung |\n|---|---|\n| 0.5 h | 12.1% |\n| 1 h | 24.9% |\n| 2 h | 39.8% |\n| 4 h | 59.3% |\n| 6 h | 72.9% |\n| 12 h | 90.4% |\n| 24 h | 96.8% |\n\nDer 59.3%-Punkt liegt in Grafik und methodischem Zeitplan bei 4 h, im Ergebnisteil dagegen bei 3 h. Hier gelten die übereinstimmende Grafik und Methode; die von den Autoren genannten ungefähr 3 h t50% werden nicht als präziser Anpassungsparameter behandelt. Schnellere frühe und langsamere späte Freisetzung beschreiben den Kurvenverlauf. Eine einzelne Kurve trennt keine Beiträge von Diffusion und Polymerauflösung und belegt keine zwei unabhängigen Reaktionsstufen.\n\nParafilm-Prüfung zeigte Löcher durch die ersten 3 Schichten, etwa 390 µm, und Durchstich von Schicht 4 durch ungefähr 85% der Nadeln. Dies ist mechanische Modellpenetration. Parafilm besitzt nicht die Verteilungs-, Bindungs- und Diffusionsbarrieren biologischer Haut; 96.8% Freisetzung ist keine transdermale Bioverfügbarkeit. Rezeptormengen hinter biologischer Haut oder Blutkonzentrationen wurden nicht berichtet. Belegt ist somit der In-vitro-Freisetzungsprozess der Formulierung.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Nadelauflösung, Abgabe in die Haut und Transport durch die Haut haben verschiedene Nenner",
+          "markdown": "Wu und Kollegen replizierten 3D-gedruckte Master über Gelatine und stellten Nadeln mit rekombinantem Hirudin (r-hirudin) her. Die optimierte Matrix enthielt 10% w/v Hyaluronsäure (HA) und 1% w/v Gantrez S-97 (GAS), bei Wirkstofflösungen von 1–20 mg/mL. Separate Freisetzungsversuche in 3 mL PBS bei 25 °C und 10 rpm verglichen HA mit 10%, 15% und 20%, mit oder ohne 1% GAS. Mehr HA zusammen mit GAS verlangsamte die PBS-Freisetzung, von den Autoren erhöhter Netzwerkstabilität zugeschrieben. Temperatur, Medium und Barriere unterscheiden sich von Hautversuchen. [Rezeptur und Hautabgabe](ref:R02)\n\nIn Rattenhaut betrug die Abnahme der Nadellänge nach 5 min 77.07 ± 2.39%, nach 30 min 77.67 ± 2.25% und nach 60 min 84.39 ± 0.34%. Dies sind morphologische Änderungen aus Restlängen, nicht gleiche Proteinanteile im Blut. Aus verbleibendem Wirkstoff nach Pflasterentfernung geschätzte Abgabeanteile betrugen 74.18 ± 5.51% bei Ratten und 71.25 ± 8.29% bei Schweinehaut. Sie unterscheiden sich weiterhin von Wiederfindung in der Rezeptorflüssigkeit.\n\nEx-vivo-Haut erhielt 75 µg je Pflaster oder dieselbe Wirkstoffmenge als Lösung; Pflaster wurden nach 5 min entfernt. Rezeptoren enthielten 2 mL PBS bei 37 °C und 167 rpm, n = 4. Nach 9 h betrugen kumulative Rezeptormengen 31.37 ± 6.66 µg/cm² für Rattenbauchhaut und 14.85 ± 0.24 µg/cm² für Schweineohrhaut; Lösungskontrollen lagen nahe der Basislinie. Gleiche Auftragsmenge und ähnliche Pflasterabgabeanteile erzeugten dennoch hautmodellabhängigen Transport. Frühere Methoden nennen Entfernung von subkutanem Fett und Muskel, spätere kürzen das entfernte Gewebe als „SC tissue“ ab. Die Barrierepräparation bleibt sprachlich mehrdeutig und erlaubt keine Übertragung auf unbehandelte Menschenhaut.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Niedrigerer Spitzenwert und spätere Spitze belegen keinen Retardvorteil bei gleicher Dosis",
+          "markdown": "Wu und Kollegen bestimmten auch Pharmakokinetik und Gerinnung in Ratten. Subkutane Behandlung verwendete 0.5 mg/kg, n = 8; Mikronadeln enthielten 30 µg/Pflaster bei 4 Pflastern/Ratte, n = 7, mit Tiergewicht von 200 ± 20 g. Die Pflaster wurden nach 5 min entfernt. Die nominelle Mikronadelbeladung betrug 120 µg, der Eintritt hing aber von Restwirkstoff ab; streng gleiche abgegebene Dosen lagen somit nicht vor. [Pharmakokinetik und Gerinnungszeiten](ref:R02)\n\n| Weg | Tmax | Cmax | Berichtete absolute Bioverfügbarkeit |\n|---|---|---|---|\n| Intravenös IV | 1 min | 4736 ± 414 ng/mL | 100% |\n| Subkutan SC | 60 min | 262.4 ± 53.47 ng/mL | 78.26% |\n| Mikronadeln MN | 30 min | 218.20 ± 46.37 ng/mL | 39.61% |\n\nMikronadeln erreichten ihre Spitze später als IV, aber früher als SC, nicht langsamer als sämtliche Injektionswege. Niedrigere Spitzen gingen mit niedrigerer systemischer Exposition einher: Die berichteten AUCs waren 1216 ± 112.8 für IV, 951.7 ± 248.3 für SC und 481.7 ± 107.3 ng·h/mL für MN. Bioverfügbarkeitswerte bleiben den Autoren zugeschrieben. Die Methoden geben die IV-Dosis nicht vollständig an; eine unabhängige Rekonstruktion dosisnormierter Werte allein aus dieser Tabelle ist daher nicht möglich.\n\nVerlängerte aPTT, PT und TT belegen erhaltene pharmakologische Aktivität nach Eintritt, ihre Ausmaße unterscheiden sich jedoch. Messbare Antikoagulation ist keine vollständige Gleichwertigkeit mit SC-Gabe. Der Absorptionsnachlauf nach kurzem Pflasterkontakt kann auf intradermaler Retention und Aufnahme beruhen, statt auf fortgesetzter langsamer Auflösung von Nadeln an der Oberfläche.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Hohlnadeln steuern Mischungsanteile über Zulauffluss statt über Matrixauflösung",
+          "markdown": "Yeung und Kollegen druckten mit Form 2 und Dental LT Clear Mikrokanäle, eine spiralförmige Mischkammer und Hohlnadeln in einem Gerät. Verwendet wurden 45° Orientierung, 5 min IPA-Wäsche und 20 min Härtung bei 405 nm und 80 °C. Externe Spritzenpumpen führten Lösungen erst nach Herstellung zu. Die Feinspitzengeometrie besaß 800 µm Basis und 600 µm Bohrung; ein zusätzliches Spitzenmerkmal mit 40 µm Durchmesser und 80 µm Höhe senkte den gemessenen Krümmungsradius von etwa 50 µm auf 25 µm. Eine Bohrungsrandrundung erhöhte die Öffnungsbildung von ungefähr 50% auf 100%. [Hohlarchitektur und Mischung](ref:R03)\n\nDie Mischvalidierung verwendete als Basis 100 µL/min je Zulauf, 1:1:1. Weitere Einstellungen senkten zwei Zuläufe auf 10 µL/min bei unverändert 100 µL/min im dritten, etwa als 0.1:0.1:1. Rote, klare und blaue Ströme blieben am Eintritt getrennt und wirkten nach der Spirale homogener. Separate Versuche verwendeten jeweils 0.5% w/v Rhodamin B, FITC und Methylenblau mit 25 µL Auslassproben und Fluoreszenzmessung, n = 3; die Zusammensetzung änderte sich mit den Zulaufverhältnissen.\n\nDabei sank auch der Gesamtfluss von 300 auf 120 µL/min. Ideale verlustfreie Mischung ergibt eine Änderung des dominanten Stromanteils von 1/3 auf 1/1.2, ungefähr 0.833, während dessen absoluter Fluss 100 µL/min bleibt. Höhere Konzentration ist keine höhere zugeführte Wirkstoffmassenrate. Auslassfluoreszenz wird für jeden Farbstoff getrennt auf dessen Maximum normiert; Balkenhöhen verschiedener Farben belegen daher keine gleichen oder unterschiedlichen Wirkstoffmassen.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Hautfluoreszenz belegt veränderbare Retention, aber keine absolute Wirkstoffdosis",
+          "markdown": "Für Ex-vivo-Prüfungen setzten Yeung und Kollegen Geräte unter einem 500-g-Gewicht auf 2 × 2 cm Schweinehaut. Zur Leckageminderung wurden reale Flüsse gegenüber dem Mischprüfstand um den Faktor 10 gesenkt: Die Gleichflussbasis verwendete 10 µL/min je Zulauf, dominante Bedingungen Permutationen von 1, 1 und 10 µL/min. Der Gesamtfluss war damit 30 oder 12 µL/min. Kontaktdruck, Auslasswiderstand und Hautrückstellung können gepumptes und im Gewebe verbleibendes Volumen unterscheiden.\n[Ex-vivo-Verteilungen in der Haut](ref:R03)\n\nKonfokale Bilder erfassten drei Farbstoffe über 0–400 µm mit Hauptmaxima bei 100–200 µm. Der relativ dominante Farbstoff zeigte jeweils ein höheres normiertes Signal. Die über Tiefe integrierenden Einblendungen sind Stellvertreter relativer Gesamtfluoreszenz, keine massenkalibrierten µg-Dosen oder Blutexposition. Die Methoden beschreiben wenige Bilder über diesen Tiefenbereich, nennen aber 100 nm Schrittweite; die Einheitenbeschreibung ist widersprüchlich. Gelesen werden die eindeutigen µm-Tiefenachsen, ohne ein Aufnahmeintervall zu erfinden.\n\nDas Gerät demonstriert Mischungsanpassung und lokale Verteilung kleiner Farbstoffmoleküle. Zufuhrdauer und vollständige Leckagewiederfindung bilden keine absolute Massenbilanz; Wirksamkeitskontrollen mit Insulin oder anderen aktiven Arzneistoffen fehlen ebenfalls. Bei extern gepumpten Arrays hängt Abgabe von Mischkonzentration und tatsächlich eintretendem Gewebevolumen ab. Mehr relative Fluoreszenz eines Stroms belegt keine Dosiergenauigkeit mit demselben Prozentwert.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Manivannan et al. — Originalabbildung 3: beladene Spitzen und wirkstofffreie Basis werden getrennt gegossen.",
+          "interpretation": "Von links nach rechts folgen Polymeransatz, beladene Spitzen, Basis und Trocknung. Masterdruck ist keine direkte Wirkstoffphotopolymerisation. Die mittige Entfernung überschüssigen Gels verhindert die Gleichsetzung von anfänglichem Zusatz und Spitzeninhalt; die wirkstofffreie Basis stützt die Spitzen. Erste Zentrifugation dauert im Schema 10 min, in den Methoden 15 min: ein offener Reproduktionsparameter. Das Schema belegt keine gleiche Konzentration in jeder Nadel. [Zweischichtiges Herstellungsverfahren](ref:R01)"
+        },
+        "F02": {
+          "caption": "Manivannan et al. — Originalabbildung 12: kumulative In-vitro-Freisetzung einer Rezeptur.",
+          "interpretation": "Zeit steht in h, kumulative Freisetzung in %. Die Markierung 59.3 liegt bei 4 h, nach 24 h werden 96.8% erreicht. Sinkende Steigung zeigt verschiedene frühe/späte Raten, ohne biologische Hautflussachse oder parallele reine Wirkstoffkontrolle. Der Ergebnisteil setzt 59.3% stattdessen bei 3 h an. Belegt ist die Freisetzungsform unter angegebenen In-vitro-Bedingungen, nicht allein anhaltende transdermale Exposition. [Freisetzungskurve](ref:R01)"
+        },
+        "F03": {
+          "caption": "Wu et al. — Originalabbildung 4: Restnadellänge, Abgabeanteil und Rezeptormenge unterscheiden sich.",
+          "interpretation": "A fällt von anfänglichen 100% und zeigt Restnadellänge. B schätzt den Abgabeanteil anhand des Wirkstoffrests nach Pflasterentfernung. C enthält Fluoreszenzschnitte verschiedener Tiefe mit 200 µm Maßstab. D und E zeigen Rezeptormengen durch Ratten- und Schweinehaut in µg/cm²: rote Nadeln und schwarze wirkstoffgleiche Lösung. Der letzte D-Punkt liegt unter dem vorherigen und zeigt Messstreuung; nicht jeder Abschnitt einer kumulativ beschrifteten Kurve ist monotone Freisetzungskinetik. [Haut- und Rezeptorgrößen](ref:R02)"
+        },
+        "F04": {
+          "caption": "Wu et al. — Originalabbildung 5: Gerinnung und systemische Exposition nach lokaler Abgabe.",
+          "interpretation": "A–C zeigen aPTT, PT und TT mit 1-h-Vergleichen darunter. C verwendet eine unterbrochene Achse; sichtbare Balkenhöhenverhältnisse sind keine Vielfachen. D, E und F zeigen IV-, SC- und MN-Konzentrationen; G kombiniert Kurven und Parametertabelle. MN erreicht früher als SC und weit unter IV das Maximum, ebenfalls bei niedrigerer AUC. Gerinnung und Konzentration beantworten Aktivität und Exposition getrennt, ohne vollständige Gleichwertigkeit zu belegen. [Pharmakokinetik und Pharmakodynamik](ref:R02)"
+        },
+        "F05": {
+          "caption": "Yeung et al. — Originalabbildung 4: getrennte Zuläufe werden nach der Spirale zur einstellbaren Mischung.",
+          "interpretation": "a und b zeigen Gerät und Auslassmessung, c–f Zuläufe und g–j zugehörige Auslässe. Balken k–n sind auf das jeweilige Farbstoffmaximum normiert. Selbst bei gleichen Basisflüssen unterscheiden sich Balken, weshalb Farben nicht direkt als Massenanteile vergleichbar sind. l bevorzugt den klaren/FITC-Strom, m Rot/RB und n Blau/MB, entsprechend den Verhältnissen in der tatsächlichen Grafik. [Fluss und Mischzusammensetzung](ref:R03)"
+        },
+        "F06": {
+          "caption": "Yeung et al. — Originalabbildung 5: Zufuhrverhältnisse verändern intradermale Farbstoffverteilung.",
+          "interpretation": "a zeigt den Weg von Mischkammer zu Haut. Tatsächliche Teilbildangaben zeigen RB-Dominanz in b, Fluorescein in c und MB in d; die Originallegende vertauscht b/d. Auf x steht Hauttiefe in µm, Kurven sind auf gleiche Zufuhrverhältnisse normiert, Einblendungen integrieren über Tiefe. Maxima liegen bei 100–200 µm und beschreiben örtliche relative Retention, keine absolute Dosis im Kreislauf. [Intradermale Fluoreszenz](ref:R03)"
+        }
+      }
+    }
+  }
+}

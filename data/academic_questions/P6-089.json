@@ -1,0 +1,343 @@
+{
+  "schema_version": 2,
+  "question_id": "P6-089",
+  "p": "P6",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_2b0caeab4cb1e2ad3c3d",
+    "doc_d5f12a7d6e989c2ec63d",
+    "doc_476a5899bf05489e14d3",
+    "KB20264B0B4CF8B793"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Low-cost three-dimensional printed phantom for neuraxial anesthesia training: Development and comparison to a commercial model",
+      "publisher": "PLOS ONE",
+      "year": 2018,
+      "url": "https://doi.org/10.1371/journal.pone.0191664",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "3D printed polymers that mimic the mechanical properties of atherosclerotic blood vessels for training models: the advantageous degradation induced by UV radiation and hydrolysis",
+      "publisher": "3D Printing in Medicine",
+      "year": 2025,
+      "url": "https://doi.org/10.1186/s41205-025-00288-5",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Validation of a 3D-printed robot-assisted partial nephrectomy training model",
+      "publisher": "BJUI Compass",
+      "year": 2024,
+      "url": "https://doi.org/10.1002/bco2.269",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Three-dimensional printed neonatal cannulation phantom for ultrasound-guided vascular access training",
+      "publisher": "Scientific Reports",
+      "year": 2026,
+      "url": "https://doi.org/10.1038/s41598-025-34863-x",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-089/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6005480/#pone.0191664.g003",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Fig 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-089/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6005480/#pone.0191664.g004",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Fig. 8",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-089/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12224845/#Fig8",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Fig. 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-089/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12224845/#Fig4",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R02",
+      "original_label": "Fig. 7",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-089/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12224845/#Fig7",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R03",
+      "original_label": "Figure 1",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P6-089/F06.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10764170/#bco2269-fig-0001",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "打印训练模型如何再现组织触感？",
+      "direction": "模拟与训练",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "触感来自材料与层次的组合，打印骨架并不等于打印全部软组织",
+          "markdown": "Mashari 等的椎管内麻醉体模采用 CT 分割的 PLA 脊柱作为硬性几何基准，再手工加入硅胶黄韧带、明胶软组织与硅胶硬膜囊。它是一种打印件与浇注、手工成形材料组成的混合模型。脊柱和容器可以稳定复制，软组织的厚度、连续性与层间接触则来自后续组装；不能把所有触觉效果都归于打印分辨率。[分层体模的构成](ref:R01)\n\n明胶浓度为 9.0% w/v，并加入散射物以获得超声回声。研究设计着重再现两种阻力变化：软组织与较硬韧带之间的差别，以及进入模拟间隙时的阻力下降。对教学而言，重要的是能否分辨这些变化；一个单一弹性模量无法同时描述表面按压、针尖穿透、膜层破裂和卸载回弹。\n\n原图把裸露打印骨架、添加韧带和覆盖明胶后的状态并列，清楚区分几何结构与功能材料。覆盖后的外观比较完整，却不代表皮肤、脂肪、肌肉、筋膜的每一道细微过渡都被重现。作者明确承认模型只保留所选的重要阻力对比，未复制全部软组织层次。\n\n这种组合也把影像表现与手感联系起来：散射物改善超声显示，明胶硬度却影响触诊；增加某一功能可能改变另一功能。因此，对模型的评价需落在具体交互上，而不是只问整体是否柔软或看起来像患者。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "同一脊柱体模可以在韧带阻力上较好，在表面触诊上较差",
+          "markdown": "研究邀请 22 名麻醉医师，21 名完成两种体模的配对评价，16 名有常规超声使用经验者评价影像。评分按临床真实感从 1 到 5 分，比较对象为正常解剖的现成训练体模，顺序在参与者间交替。以下为原表的中位数及四分位距；它们是专家感受，单位不是力或弹性模量。[配对真实感评分](ref:R01)\n\n| 交互 | 现成体模 | 打印混合体模 |\n|---|---:|---:|\n| 表面触诊 | 4 [3–5] | 3 [2–4] |\n| 软组织进针阻力 | 3 [3–4] | 3.5 [3–4] |\n| 黄韧带阻力 | 3 [2–4] | 4 [3.25–4.75] |\n| 阻力消失 | 2 [2–4] | 4 [4–5] |\n\n多数反馈认为明胶表面偏软且易损，解释了触诊较差；但较硬韧带与其后阻力下降的对比更容易感知。软组织进针阻力则没有显著组间差异。这不是某一种材料“全面更真实”，而是层次设计改善了选定信号，同时保留其他不足。\n\n原图用每位专家的两项评分构成配对气泡图，能看出同一总体中存在不同意见。研究未盲法，外观差异可能影响判断；统计方法文字的检验命名也不一致，因此报告以配对分布和表中位数为主要依据，不把小样本评分解释为客观力学等效。参与者都是专家，没有在该实验中测试初学者学会后的临床迁移。\n\n模型使用后还留下针道，明胶会变质，需要更换。初始真实感评分并没有给出多次穿刺后阻力信号如何变化；材料的可重复使用次数与教学评分必须分别记录。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "材料湿润状态会改变模量，硬度降低并不总等于拉伸更软",
+          "markdown": "Henriques 等比较三种光固化弹性树脂。静态拉伸每种状态测试 5 个试样，湿态组先在 PBS 中于 37°C 浸泡 15 天，再在约 20°C、1 mm/min 的条件下测试。温度、含水状态与加载方式均影响数值；这些是试条的材料数据，不是完整血管或患者组织的直接测量。[静态拉伸与湿态条件](ref:R02)\n\n| 材料 | 干态杨氏模量，MPa | 湿态杨氏模量，MPa |\n|---|---:|---:|\n| Flex X | 2.72 ± 0.24 | 2.21 ± 0.56 |\n| Flex 63A | 3.35 ± 0.40 | 3.92 ± 0.56 |\n| Flex 82A | 34.60 ± 5.50 | 11.52 ± 2.21 |\n\n湿润使 Flex 82A 的刚度明显降低，但也把断裂强度从 5.27 ± 0.51 MPa 降至 0.67 ± 0.30 MPa；“更软”同时伴随更容易破坏，不能只挑选接近组织模量的一项。Flex 63A 的湿态模量没有沿同样方向变化，其硬度却从 64.0 降至 61.3 Shore A，说明压入阻力与单轴拉伸斜率不是可互换指标。\n\n作者与文献中的病变血管及斑块性质比较，没有在同一装置上同步测量匹配的人体组织。不同组织层、方向和测试方法的范围很宽，因此重叠范围支持候选材料筛选，不能证明触感已经与某位患者一致。尤其不能把病变斑块的拉伸范围推广到所有正常软组织。\n\n该研究还用硬度经验关系估计部分模量；表中实测、经验估计和回归预测分列。缺少直接拉伸测量的处理组，不应被报告为已测得相同模量。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "重复加载揭示回复与蠕变，硬度调节不自动验证完整操作手感",
+          "markdown": "树脂研究还在 0.33–0.67 N 之间进行 100 次单轴循环加载，干态与湿态每种材料各 3 个试样。所选载荷由假定血管几何和压力换算而来，但试样仍是狗骨形拉伸条，不是承受内压、轴向约束与流体剪切的多层血管；加载速度也不是直接再现心搏频率。[循环测试及其边界条件](ref:R02)\n\n循环图中，干态 Flex 82A 的回线逐渐偏移，动态模量随循环变化；湿态的表现更稳定。Flex X 与 Flex 63A 在这组加载范围内变化较小。没有试样在测试中断裂，支持这些条件下的短程循环耐受，却不能证明整个模型可以无限重复使用，也不能据此得出针刺、缝线拉出或器械摩擦寿命。\n\n原图不同材料采用不同应变横轴，直接比较曲线视觉宽度会误判软硬。动态模量取自循环中的应力与应变差，静态杨氏模量来自另一种拉伸过程；干态硬树脂的两种结果差异尤其大，不能把它们拼成同一“组织刚度”。回线偏移还与蠕变及卸载时间有关，作者承认测试可能没有留下充分松弛时间。\n\n另一个处理实验中，Flex 63A 的硬度由对照 64.0 Shore A 在 UV-C 处理 30 分钟后降至 53.3，60 分钟后为 58.4；较长处理没有继续单调变软。作者对链断裂与重组的解释是材料机制推断，相关组的拉伸模量主要由硬度估计。该结果能说明后处理改变压入响应，不能替代穿刺力曲线或组织分离验证。",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "硅胶肿瘤模型用层间差异构造任务，但真实感评价保留了材料缺点",
+          "markdown": "Hermans 等把源自患者 MRI 的肾肿瘤形态放入矩形硅胶片，较硬的肿瘤及包膜与较软基质形成分离界面。模型采用 1 mm 棕色设计包膜、黄色内部和暗红背景，肿瘤直径为 1.5–3 cm。颜色使破坏边界可检查，设计壁厚有助于统一练习，但并不是每位患者真实包膜厚度的测量；矩形载体也不含完整肾脏方位关系。[硅胶界面与评价对象](ref:R03)\n\n36 名参与者来自不同经验组。总体真实感为 6.9 ± 0.4 分，训练用途为 8.9 ± 0.2 分，均采用满分 10 分的量表，误差为标准误。用途评价高于真实感评分，与其任务价值并不要求完全复制组织相符；两类评分仍是不同问题，不能把高用途评分称作高力学保真度。\n\n参与者特别指出缺乏出血，硅胶黏滞性使钝性分离困难。材料提供了可切割和可抓持的边界，却未重现真实组织层间滑移与液体环境的全部表现。研究记录残留模拟肿瘤、包膜损伤和切除时间等对象相关指标，但没有同时给出硅胶与人体肾组织的力—位移对照。\n\n经验较丰富者表现较好，说明该任务能呈现技能差别；首次与末次练习的 GEARS 改善却不显著，P=0.16，且末次肿瘤更内生、任务更难。不能以专家与初学者不同来替代材料训练导致进步的证明，也不能把无显著练习变化解释为触感一定无用。",
+          "figure_ids": [
+            "F06"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "细小血管的触感还取决于管壁、基质约束与重复穿刺后的状态",
+          "markdown": "Pereira 等的新生儿血管体模把打印管道嵌入琼脂与甘油基质。管腔直径为 1.3 或 1.4 mm，设计壁厚为 0.4 mm，固定在表面以下 12 mm；管材标称硬度为 95 Shore A，外层保护膜为 0.1 mm。即使材料硬度较高，薄壁中空结构与周围基质仍可产生局部压陷，因此不能只按硬度数字判断整体血管是否可压缩。[几何、基质与触觉反馈](ref:R04)\n\n研究观察到超声下管壁压陷和进入管腔的触觉变化，但没有记录针尖力峰、管壁破坏能或与新生儿静脉的定量机械对照。所有操作者能识别血管，首次培训末 60% 完成模型上的穿刺与导丝置入；这些是体模任务表现，不能替代临床成功率。参与者预期并发症减少也只是问卷判断，没有患者随访比较。\n\n早期约 25 次尝试后更换保护膜，后续在两条管道对应区域分别记录约 50 与 20 次表面穿孔。这里记录的是表面／皮膜穿孔，不应改写为每根血管已经承受相同次数的成功置管。影像质量大体保留，但存在局部漏液，随时间外壳也出现弯曲；重复使用评价主要为定性观察。\n\n保护膜受损后基质暴露，失水会改变体模物理性质；换膜是在维持模型状态，而不是证明穿刺前后阻力恒定。模型固定深度还影响可使用的训练器具，原研究没有覆盖更浅或更深的血管位置，也未比较脉动与连续流下的穿刺触感。",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Mashari et al.：从打印骨架到混合软组织体模。",
+          "interpretation": "A 显示骨架与椎间区域，B 显示手工添加的韧带材料，C 显示被明胶覆盖后的状态；插图放大局部差别。软组织层不是与骨架同时打印完成。图中可检查位置与覆盖方式，却没有材料模量、厚度均匀性或进针力的测量轴。[结构形成过程](ref:R01)"
+        },
+        "F02": {
+          "caption": "Mashari et al.：不同触觉任务的配对评分气泡图。",
+          "interpretation": "A 为表面触诊，B 为软组织阻力，C 为黄韧带阻力。横轴是现成体模评分，纵轴是打印混合体模评分；对角线上方表示后者评分较高，气泡大小及数字表示专家人数。A 与 C 的点分布方向不同，说明层次设计改善的信号和受损的信号可以同时存在。B 的分散意见也不能压缩成“所有组织更像”。[配对触感评价](ref:R01)"
+        },
+        "F03": {
+          "caption": "Henriques et al.：干湿状态的 Shore A 硬度。",
+          "interpretation": "三列为不同材料，每列比较深色干态与浅色湿态，误差线为标准差。湿态柱均较低，但不同材料的变化幅度不相同；这测量压入硬度，不是拉伸斜率或切割阻力。与正文模量表对照，Flex 63A 的硬度下降并没有伴随同方向的平均拉伸模量下降。[硬度与拉伸结果](ref:R02)"
+        },
+        "F04": {
+          "caption": "Henriques et al.：材料与含水状态改变循环应力—应变回线。",
+          "interpretation": "左列 a–c 为干态，右列 d–f 为湿态，颜色对应材料。纵轴为 MPa，横轴为百分应变；各行横轴上限依次为 3、2、0.8，不能按视觉宽度直接排序柔软度。硬树脂干态回线位置变化明显，湿态斜率与展开范围改变。回线包含加载历史，不能只截取起始斜率解释全部触感。[循环拉伸图](ref:R02)"
+        },
+        "F05": {
+          "caption": "Henriques et al.：循环次数与最大应变、动态模量的关系。",
+          "interpretation": "a 显示最大应变，b 比较较软材料的动态模量，c 显示硬材料的干湿差别，d 放大湿态硬材料。实线与虚线区分干湿，误差条反映试样差异。c 与 d 的纵轴范围不同，不能把放大后的湿态波动看作与干态同样剧烈；材料没有断裂与响应保持恒定是不同结论。[循环依赖性](ref:R02)"
+        },
+        "F06": {
+          "caption": "Hermans et al.：矩形硅胶中的肿瘤界面和机器人操作场景。",
+          "interpretation": "上排为模型放置、器械与局部边界，下方示意不同嵌入程度的肿瘤在矩形片中的重复排列。它呈现了局部抓持与分离任务，不是完整患者肾脏。颜色分区可用于检查模拟包膜是否受损，却没有显示真实组织黏附、出血或力—位移曲线。[模型和任务](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do printed training models reproduce tissue feel?",
+      "direction": "Simulation and training",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Feel emerges from materials and layers; a printed skeleton is not entirely printed soft tissue",
+          "markdown": "The neuraxial phantom of Mashari et al. used a CT-segmented PLA spine as its rigid geometric reference, then added a manually formed silicone ligamentum flavum, gelatin soft tissue and a silicone thecal sac. It was a hybrid of printed, cast and manually shaped components. Spine and enclosure could be reproduced consistently, while soft-tissue thickness, continuity and layer contact depended on subsequent assembly. Printing resolution alone cannot explain all tactile effects. [Layered phantom construction](ref:R01)\n\nGelatin concentration was 9.0% w/v, with a scattering agent for ultrasound echogenicity. The design emphasized two resistance contrasts: softer tissue versus the stiffer ligament, and decreasing resistance on entry into a simulated space. The educational question is whether these changes can be distinguished. One elastic modulus cannot simultaneously describe surface palpation, needle penetration, membrane rupture and unloading recovery.\n\nThe original figure juxtaposes the bare printed skeleton, added ligament and gelatin-covered state, separating geometry from functional materials. A completed exterior does not mean that every transition through skin, fat, muscle and fascia has been reproduced. The authors explicitly acknowledge preserving selected major resistance contrasts rather than all soft-tissue layers.\n\nThis combination also couples imaging and feel: scattering particles improve ultrasound appearance, whereas gelatin stiffness affects palpation. Adding one function may alter another. Evaluation therefore concerns specific interactions, not simply overall softness or patient-like appearance.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "The same spinal phantom can improve ligament resistance while worsening surface palpation",
+          "markdown": "The study invited 22 anesthesiologists; 21 completed paired evaluations of both phantoms, while 16 routine ultrasound users assessed images. Clinical fidelity was rated from 1 to 5 against an existing normal-anatomy trainer, with alternating presentation order. The table gives reported medians and interquartile ranges. These are expert perceptions, not forces or elastic moduli. [Paired fidelity ratings](ref:R01)\n\n| Interaction | Existing phantom | Printed hybrid phantom |\n|---|---:|---:|\n| Surface palpation | 4 [3–5] | 3 [2–4] |\n| Soft-tissue needle resistance | 3 [3–4] | 3.5 [3–4] |\n| Ligamentum flavum resistance | 3 [2–4] | 4 [3.25–4.75] |\n| Loss of resistance | 2 [2–4] | 4 [4–5] |\n\nFeedback frequently described the gelatin surface as too soft and fragile, explaining poorer palpation. The contrast between a stiffer ligament and subsequent resistance loss was easier to perceive, while soft-tissue needle resistance did not differ significantly. This is not universally greater realism from one material: layered design improved selected signals while retaining other weaknesses.\n\nThe original bubble plots pair each expert's ratings and reveal differing opinions within the same population. Participants were unblinded, so appearance could influence judgments. The statistical-methods wording also names tests inconsistently; this report emphasizes paired distributions and tabulated medians rather than treating small-sample ratings as objective mechanical equivalence. Participants were experts, with no test of subsequent clinical transfer by novices.\n\nNeedle tracks remained after use, and perishable gelatin required replacement. Initial fidelity ratings do not describe how resistance signals change after repeated puncture. Reuse duration and educational ratings therefore require separate records.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Hydration changes modulus, and lower hardness does not always mean softer tensile behavior",
+          "markdown": "Henriques et al. compared three photocured elastomeric resins. Static tension used 5 specimens per material and condition. Wet specimens were immersed in PBS at 37°C for 15 days, then tested at approximately 20°C and 1 mm/min. Temperature, hydration and loading mode affect the values. These are material-coupon measurements, not direct measurements of complete vessels or patient tissues. [Static tension and wet-state conditions](ref:R02)\n\n| Material | Dry Young's modulus, MPa | Wet Young's modulus, MPa |\n|---|---:|---:|\n| Flex X | 2.72 ± 0.24 | 2.21 ± 0.56 |\n| Flex 63A | 3.35 ± 0.40 | 3.92 ± 0.56 |\n| Flex 82A | 34.60 ± 5.50 | 11.52 ± 2.21 |\n\nWetting markedly reduced Flex 82A stiffness, but also reduced failure strength from 5.27 ± 0.51 MPa to 0.67 ± 0.30 MPa. Greater softness coincided with easier failure, preventing selection on modulus alone. Flex 63A wet modulus did not change in the same direction, although hardness fell from 64.0 to 61.3 Shore A. Indentation resistance and the slope of uniaxial tension are not interchangeable metrics.\n\nComparisons used published diseased-vessel and plaque properties, without simultaneously testing matched human tissues on the same apparatus. Tissue layers, directions and methods span broad ranges; overlap supports candidate screening, not patient-specific tactile identity. A diseased-plaque tensile range cannot be generalized to all healthy soft tissues.\n\nThe study also estimated some moduli from empirical hardness relationships, listing measurements, empirical estimates and regression predictions separately. Treatment groups without direct tensile testing should not be described as having measured the same modulus.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Repeated loading reveals recovery and creep; hardness tuning does not validate complete procedural feel",
+          "markdown": "The resin study applied 100 uniaxial loading cycles between 0.33–0.67 N, with 3 specimens of each material in each dry and wet state. Loads were derived from assumed vessel geometry and pressure, but specimens remained dog-bone strips rather than multilayer vessels exposed to internal pressure, axial constraint and fluid shear. Loading speed did not directly reproduce heart rate. [Cyclic testing and boundary conditions](ref:R02)\n\nDry Flex 82A loops shifted progressively and dynamic modulus changed with cycling; wet specimens were more stable. Flex X and Flex 63A changed less within this loading range. No specimen fractured during testing, supporting short-cycle tolerance under those conditions, not unlimited model reuse or needle-puncture, suture-pullout and instrument-friction endurance.\n\nDifferent materials use different horizontal strain ranges in the original figure, so comparing visual loop widths directly would misjudge compliance. Dynamic modulus derives from within-cycle stress and strain differences; static Young's modulus comes from another tensile procedure. Their large discrepancy in the dry harder resin prevents merging them into one tissue-stiffness value. Loop shifts also depend on creep and unloading time; the authors acknowledge potentially insufficient relaxation time.\n\nIn another treatment experiment, Flex 63A hardness changed from a control value of 64.0 Shore A to 53.3 after 30 minutes of UV-C and 58.4 after 60 minutes. Longer treatment did not produce monotonically greater softness. Chain cleavage and reorganization were mechanistic interpretations, while tensile moduli for these conditions were mainly hardness-based estimates. The result demonstrates altered indentation response, not validated puncture-force profiles or tissue separation.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Silicone tumor models create tasks through interfaces while retaining material shortcomings",
+          "markdown": "Hermans et al. embedded renal tumor shapes derived from patient MRI in a rectangular silicone sheet, with harder tumor and capsule against a softer matrix. Models used a designed 1 mm brown capsule, yellow interior and dark-red background; tumors measured 1.5–3 cm in diameter. Colors expose boundary damage and designed thickness standardizes practice, but does not measure every patient's actual capsule. The rectangular carrier also omits whole-kidney spatial relationships. [Silicone interfaces and assessment targets](ref:R03)\n\nThe 36 participants spanned experience groups. Overall realism was 6.9 ± 0.4 and training usefulness 8.9 ± 0.2 on scales with a maximum of 10; errors are standard errors. Higher usefulness than realism is consistent with task value not requiring perfect tissue replication. These remain different questions, so high usefulness is not mechanical fidelity.\n\nParticipants specifically noted absent bleeding and difficulty with blunt dissection because of silicone viscosity. Material provided cuttable and graspable boundaries without all real interfacial sliding and fluid-environment behavior. The study recorded task-specific outcomes such as residual simulated tumor, capsule injury and resection time, without simultaneous silicone-versus-human-kidney force–displacement comparisons.\n\nMore experienced participants performed better, indicating that the task expresses skill differences. GEARS improvement from first to last practice was not significant, P=0.16, and the final tumor was more endophytic and difficult. Expert–novice differences do not prove training-induced improvement, while a non-significant practice change does not establish that tactile feedback lacks value.",
+          "figure_ids": [
+            "F06"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Small-vessel feel also depends on wall geometry, matrix restraint and repeated puncture",
+          "markdown": "The neonatal phantom by Pereira et al. embedded printed vessels in an agar–glycerol matrix. Lumens were 1.3 or 1.4 mm, designed walls 0.4 mm and fixed depth 12 mm. Vessel material had nominal hardness of 95 Shore A and the protective surface film was 0.1 mm. Even a harder material can indent locally as a thin hollow structure within a matrix; hardness alone does not determine compressibility of the assembled vessel. [Geometry, matrix and tactile feedback](ref:R04)\n\nUltrasound showed wall indentation and operators perceived entry into the lumen, but needle-force peaks, wall fracture energy and quantitative comparisons with neonatal veins were not recorded. All operators identified vessels and 60% completed phantom cannulation and guidewire insertion by the first session's end. These are phantom outcomes, not clinical success rates. Anticipated reduction in complications was questionnaire opinion without comparative patient follow-up.\n\nThe protective film was replaced after approximately 25 initial attempts. Later, approximately 50 and 20 surface perforations were recorded over two vessels. These were surface/skin perforations, not identical counts of successful cannulation in each vessel. Imaging remained broadly usable, but local leakage occurred and the housing bowed with age. Reuse assessment was primarily qualitative.\n\nFilm damage exposes the matrix and desiccation changes physical properties. Replacement maintains phantom condition rather than proving constant pre- and post-puncture resistance. Fixed depth also affects usable training instruments; the study did not cover shallower or deeper vessel positions or compare puncture feel under pulsatile and continuous flow.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Mashari et al.: From a printed skeleton to a hybrid soft-tissue phantom.",
+          "interpretation": "A shows the skeleton and interspaces, B manually added ligament material and C the gelatin-covered state; insets enlarge local differences. Soft layers were not printed simultaneously with the skeleton. Location and coverage can be inspected, but no axes quantify modulus, thickness uniformity or insertion force. [Construction sequence](ref:R01)"
+        },
+        "F02": {
+          "caption": "Mashari et al.: Paired rating bubbles for different tactile tasks.",
+          "interpretation": "A is surface palpation, B soft-tissue resistance and C ligamentum flavum resistance. Horizontal values rate the existing phantom, vertical values the printed hybrid; points above the diagonal favor the latter, and bubble size and numbers count experts. Opposing distributions in A and C show that improved and impaired signals can coexist. Dispersed opinions in B also resist a claim of universally better tissue feel. [Paired tactile evaluation](ref:R01)"
+        },
+        "F03": {
+          "caption": "Henriques et al.: Shore A hardness in dry and wet states.",
+          "interpretation": "Columns identify materials, each comparing darker dry and lighter wet bars with standard-deviation whiskers. Every wet bar is lower, by different amounts. This measures indentation hardness, not tensile slope or cutting resistance. Against the modulus table, Flex 63A shows lower hardness without a same-direction decrease in mean tensile modulus. [Hardness and tensile results](ref:R02)"
+        },
+        "F04": {
+          "caption": "Henriques et al.: Material and hydration alter cyclic stress–strain loops.",
+          "interpretation": "Left panels a–c are dry, right panels d–f wet, with colors identifying materials. Vertical axes are MPa and horizontal axes percentage strain; row limits are 3, 2 and 0.8, preventing direct visual-width ranking of softness. Dry harder resin shows marked loop displacement, while wet-state slope and extent change. Loops include loading history; initial slope alone cannot explain complete tactile behavior. [Cyclic tension figure](ref:R02)"
+        },
+        "F05": {
+          "caption": "Henriques et al.: Maximum strain and dynamic modulus across cycles.",
+          "interpretation": "a shows maximum strain, b dynamic moduli of softer materials, c the dry–wet difference of the harder material, and d a magnified wet-state view. Solid and dashed lines separate states; error bars reflect specimen variation. Different vertical ranges in c and d prevent interpreting magnified wet fluctuations as equally large dry changes. Absence of fracture and constant response are distinct findings. [Cycle dependence](ref:R02)"
+        },
+        "F06": {
+          "caption": "Hermans et al.: Tumor interfaces in rectangular silicone and robotic interaction.",
+          "interpretation": "The upper row shows model placement, instruments and a local interface; the lower sketch repeats tumors with different embedding depths in a rectangular sheet. It represents local grasping and separation tasks, not a whole patient kidney. Color boundaries permit inspection of simulated capsule damage but do not show biological adhesion, bleeding or force–displacement curves. [Model and task](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie bilden gedruckte Trainingsmodelle Gewebehaptik nach?",
+      "direction": "Simulation und Training",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Haptik entsteht aus Materialien und Schichten; ein gedrucktes Skelett ist kein vollständig gedrucktes Weichgewebe",
+          "markdown": "Das neuraxiale Phantom von Mashari et al. verwendete eine CT-segmentierte PLA-Wirbelsäule als starre Geometriereferenz. Hinzu kamen ein manuell geformtes Silikon-Ligamentum-flavum, Gelatineweichgewebe und ein Silikon-Duralsack. Es war somit ein Hybrid aus gedruckten, gegossenen und manuell geformten Teilen. Wirbelsäule und Behälter waren reproduzierbar; Weichgewebedicke, Kontinuität und Schichtkontakte entstanden erst bei der Montage. Druckauflösung allein erklärt nicht sämtliche taktilen Effekte. [Aufbau des geschichteten Phantoms](ref:R01)\n\nDie Gelatinekonzentration betrug 9.0% w/v; ein Streumittel erzeugte Ultraschallechogenität. Das Design betonte zwei Widerstandskontraste: weicheres Gewebe gegenüber steiferem Band und Widerstandsabnahme beim Eintritt in einen simulierten Raum. Lehrrelevant ist die Unterscheidbarkeit dieser Änderungen. Ein einzelner Elastizitätsmodul beschreibt nicht gleichzeitig Oberflächenpalpation, Nadelpenetration, Membranbruch und Rückstellung nach Entlastung.\n\nDie Originalabbildung stellt das freie Druckskelett, das ergänzte Band und den gelatinebedeckten Zustand gegenüber und trennt Geometrie von Funktionsmaterialien. Eine vollständige Außenform bedeutet nicht die Reproduktion jedes Übergangs durch Haut, Fett, Muskel und Faszie. Die Autoren benennen ausdrücklich ausgewählte wesentliche Widerstandskontraste statt sämtlicher Weichgewebeschichten.\n\nDer Aufbau koppelt auch Bildgebung und Haptik: Streupartikel verbessern die Ultraschalldarstellung, Gelatinesteifigkeit beeinflusst Palpation. Eine zusätzliche Funktion kann eine andere verändern. Bewertet werden daher konkrete Interaktionen, nicht nur allgemeine Weichheit oder patientenähnliches Aussehen.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Dasselbe Wirbelsäulenphantom kann Bandwiderstand verbessern und Oberflächenpalpation verschlechtern",
+          "markdown": "Eingeladen wurden 22 Anästhesisten; 21 bewerteten beide Phantome gepaart, 16 mit regelmäßiger Ultraschallerfahrung beurteilten Bilder. Die klinische Realitätsnähe wurde von 1 bis 5 gegenüber einem vorhandenen Trainer normaler Anatomie bewertet, mit wechselnder Präsentationsreihenfolge. Die Tabelle nennt berichtete Mediane und Interquartilsabstände. Dies sind Expertenwahrnehmungen, keine Kräfte oder Elastizitätsmoduln. [Gepaarte Bewertungen der Realitätsnähe](ref:R01)\n\n| Interaktion | Vorhandenes Phantom | Gedrucktes Hybridphantom |\n|---|---:|---:|\n| Oberflächenpalpation | 4 [3–5] | 3 [2–4] |\n| Nadelwiderstand im Weichgewebe | 3 [3–4] | 3.5 [3–4] |\n| Ligamentum-flavum-Widerstand | 3 [2–4] | 4 [3.25–4.75] |\n| Widerstandsverlust | 2 [2–4] | 4 [4–5] |\n\nHäufig wurde die Gelatineoberfläche als zu weich und empfindlich beschrieben, passend zur schlechteren Palpation. Der Kontrast zwischen steiferem Band und anschließendem Widerstandsverlust war deutlicher; beim Nadelwiderstand des Weichgewebes fehlte ein signifikanter Unterschied. Ein Material war somit nicht durchgehend realistischer: Der Schichtaufbau verbesserte ausgewählte Signale und behielt andere Schwächen.\n\nDie Blasendiagramme paaren die Bewertungen jedes Experten und zeigen unterschiedliche Meinungen innerhalb derselben Gruppe. Eine Verblindung fehlte, sodass das Aussehen Urteile beeinflussen konnte. Auch die statistische Methodenbeschreibung benennt Tests uneinheitlich. Dieser Bericht betont deshalb gepaarte Verteilungen und Tabellenmediane statt mechanischer Gleichwertigkeit aus kleinen Bewertungskollektiven. Untersucht wurden Experten, kein späterer klinischer Transfer bei Anfängern.\n\nNach Gebrauch blieben Nadelspuren; verderbliche Gelatine musste ersetzt werden. Anfängliche Realismuswerte beschreiben nicht, wie Widerstandssignale nach wiederholten Punktionen variieren. Nutzungsdauer und Lehrbewertungen benötigen daher getrennte Erfassung.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Feuchtigkeit verändert den Modul; geringere Härte bedeutet nicht immer weichere Zugantwort",
+          "markdown": "Henriques et al. verglichen drei lichtgehärtete elastomere Harze. Für statischen Zug wurden je Material und Zustand 5 Proben geprüft. Nasse Proben lagen zuvor 15 Tage bei 37°C in PBS; anschließend wurde bei ungefähr 20°C und 1 mm/min getestet. Temperatur, Wassergehalt und Belastungsart beeinflussen die Werte. Gemessen wurden Materialstreifen, keine vollständigen Gefäße oder Patientengewebe. [Statischer Zug und Nassbedingungen](ref:R02)\n\n| Material | Trockener Young-Modul, MPa | Nasser Young-Modul, MPa |\n|---|---:|---:|\n| Flex X | 2.72 ± 0.24 | 2.21 ± 0.56 |\n| Flex 63A | 3.35 ± 0.40 | 3.92 ± 0.56 |\n| Flex 82A | 34.60 ± 5.50 | 11.52 ± 2.21 |\n\nBenetzung senkte die Steifigkeit von Flex 82A deutlich, zugleich jedoch die Bruchfestigkeit von 5.27 ± 0.51 MPa auf 0.67 ± 0.30 MPa. Größere Weichheit ging mit leichterem Versagen einher; Auswahl allein nach Modul reicht nicht. Der nasse Flex-63A-Modul änderte sich nicht in derselben Richtung, obwohl die Härte von 64.0 auf 61.3 Shore A sank. Eindringwiderstand und einachsige Zugsteigung sind keine austauschbaren Kennwerte.\n\nVerglichen wurde mit publizierten Eigenschaften erkrankter Gefäße und Plaques, ohne passende menschliche Gewebe gleichzeitig auf derselben Vorrichtung zu testen. Gewebeschichten, Richtungen und Verfahren ergeben breite Bereiche. Überlappung unterstützt die Kandidatenauswahl, keine patientenspezifische taktile Identität. Zugwerte erkrankter Plaques lassen sich nicht auf sämtliches gesundes Weichgewebe übertragen.\n\nEinige Moduln wurden zudem aus empirischen Härtebeziehungen geschätzt; Messung, empirische Schätzung und Regressionsvorhersage sind getrennt tabelliert. Behandlungsgruppen ohne direkten Zugversuch dürfen nicht als gleichartig gemessene Modulwerte beschrieben werden.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Wiederholte Belastung zeigt Rückstellung und Kriechen; Härteanpassung validiert keine vollständige Operationshaptik",
+          "markdown": "Die Harzstudie führte 100 einachsige Lastwechsel zwischen 0.33–0.67 N durch, mit jeweils 3 Proben pro Material im trockenen und nassen Zustand. Lasten wurden aus angenommener Gefäßgeometrie und Druck abgeleitet. Die Proben blieben jedoch Zugstäbe statt mehrschichtiger Gefäße unter Innendruck, axialer Einspannung und Flüssigkeitsschub. Die Belastungsgeschwindigkeit reproduzierte auch nicht unmittelbar die Herzfrequenz. [Zyklische Prüfung und Randbedingungen](ref:R02)\n\nTrockene Flex-82A-Schleifen verschoben sich zunehmend, der dynamische Modul änderte sich; nasse Proben waren stabiler. Flex X und Flex 63A variierten in diesem Lastbereich weniger. Kein Probenbruch während der Prüfung belegt kurzfristige Zyklustoleranz unter diesen Bedingungen, keine unbegrenzte Wiederverwendung oder Lebensdauer bei Nadelstichen, Nahtauszug und Instrumentenreibung.\n\nDie Originalgrafik verwendet unterschiedliche horizontale Dehnungsbereiche; ein direkter Vergleich sichtbarer Schleifenbreiten würde Nachgiebigkeit falsch einschätzen. Der dynamische Modul stammt aus Spannungs- und Dehnungsdifferenzen eines Zyklus, der statische Young-Modul aus einem anderen Zugverfahren. Besonders beim trockenen härteren Harz dürfen stark abweichende Werte nicht zu einer Gewebesteifigkeit zusammengeführt werden. Schleifenverschiebung hängt außerdem von Kriechen und Entlastungszeit ab; möglicherweise unzureichende Relaxationszeit wird ausdrücklich genannt.\n\nIn einem weiteren Versuch änderte sich die Härte von Flex 63A von 64.0 Shore A als Kontrolle auf 53.3 nach 30 Minuten UV-C und 58.4 nach 60 Minuten. Längere Behandlung machte also nicht monoton weicher. Kettenspaltung und Neuordnung waren mechanistische Deutungen; Zugmoduln dieser Bedingungen wurden vorwiegend aus Härte geschätzt. Belegt wird veränderte Eindringantwort, keine validierten Punktionskraftverläufe oder Gewebetrennung.",
+          "figure_ids": [
+            "F04",
+            "F05"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Silikontumormodelle erzeugen Aufgaben durch Grenzschichten und behalten Materialschwächen",
+          "markdown": "Hermans et al. betteten Nierentumorformen aus Patienten-MRT in eine rechteckige Silikonplatte ein. Härterer Tumor und Kapsel grenzten an weichere Matrix. Vorgesehen waren eine 1 mm dicke braune Kapsel, gelbes Inneres und dunkelroter Hintergrund; Tumordurchmesser betrugen 1.5–3 cm. Farben machen Grenzschäden prüfbar und die entworfene Dicke standardisiert Übungen, misst aber nicht jede tatsächliche Patientenkapsel. Der rechteckige Träger lässt zudem die Orientierung in der vollständigen Niere weg. [Silikongrenzen und Bewertungsobjekte](ref:R03)\n\nDie 36 Teilnehmenden umfassten verschiedene Erfahrungsgruppen. Gesamtrealismus betrug 6.9 ± 0.4, Trainingsnutzen 8.9 ± 0.2 bei maximal 10 Punkten; Fehlerangaben sind Standardfehler. Höherer Nutzen als Realismus passt dazu, dass Aufgabenwert keine perfekte Gewebekopie erfordert. Es bleiben unterschiedliche Fragen; hoher Nutzen ist keine mechanische Wiedergabetreue.\n\nGenannt wurden insbesondere fehlende Blutung und wegen Silikonviskosität erschwerte stumpfe Präparation. Das Material bot schneidbare und greifbare Grenzen, ohne alle realen Schichtgleit- und Flüssigkeitseigenschaften nachzubilden. Erfasst wurden aufgabenbezogene Größen wie verbliebener simulierter Tumor, Kapselverletzung und Resektionszeit, ohne gleichzeitigen Kraft-Weg-Vergleich von Silikon und menschlichem Nierengewebe.\n\nErfahrenere Personen schnitten besser ab; die Aufgabe bildet somit Kompetenzunterschiede ab. Der GEARS-Anstieg zwischen erster und letzter Übung war jedoch nicht signifikant, P=0.16; der letzte Tumor war stärker endophytisch und schwieriger. Experten-Anfänger-Unterschiede beweisen keinen Trainingseffekt, während fehlende Signifikanz eines Übungsanstiegs keinen fehlenden Nutzen taktiler Rückmeldung belegt.",
+          "figure_ids": [
+            "F06"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Die Haptik kleiner Gefäße hängt auch von Wand, Matrixeinspannung und wiederholter Punktion ab",
+          "markdown": "Das neonatale Phantom von Pereira et al. bettete gedruckte Gefäße in eine Agar-Glycerin-Matrix ein. Lumina betrugen 1.3 oder 1.4 mm, entworfene Wände 0.4 mm und die feste Tiefe 12 mm. Die nominelle Materialhärte lag bei 95 Shore A, die Schutzfolie bei 0.1 mm. Auch härteres Material kann als dünnwandige Hohlstruktur in einer Matrix lokal eindellen. Härte allein bestimmt daher nicht die Komprimierbarkeit des zusammengesetzten Gefäßes. [Geometrie, Matrix und taktile Rückmeldung](ref:R04)\n\nUltraschall zeigte Wandeindellung, und Operateure spürten den Lumeneintritt. Nadelkraftspitzen, Wandbruchenergie und quantitative Vergleiche mit neonatalen Venen fehlten jedoch. Alle identifizierten Gefäße; 60% bewältigten bis zum Ende der ersten Sitzung Phantomkanülierung und Drahtplatzierung. Dies sind Phantomleistungen, keine klinischen Erfolgsraten. Erwartete Komplikationsreduktion war Fragebogenmeinung ohne vergleichende Patientennachbeobachtung.\n\nNach ungefähr 25 ersten Versuchen wurde die Schutzfolie ersetzt. Später wurden über zwei Gefäßen ungefähr 50 beziehungsweise 20 Oberflächenperforationen dokumentiert. Das waren Oberflächen- beziehungsweise Hautlöcher, keine entsprechenden Zahlen erfolgreicher Kanülierungen jedes Gefäßes. Die Bildgebung blieb weitgehend nutzbar, doch lokale Leckagen traten auf und das Gehäuse verbog sich mit der Zeit. Wiederverwendung wurde überwiegend qualitativ bewertet.\n\nFolienverletzung legt die Matrix frei; Austrocknung verändert physische Eigenschaften. Austausch erhält den Phantomzustand, beweist aber keinen konstanten Widerstand vor und nach Punktion. Feste Tiefe beeinflusst außerdem nutzbare Trainingsinstrumente. Flachere oder tiefere Gefäße und ein Vergleich der Punktionshaptik bei pulsatilem beziehungsweise kontinuierlichem Fluss wurden nicht untersucht.",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Mashari et al.: Vom Druckskelett zum hybriden Weichgewebephantom.",
+          "interpretation": "A zeigt Skelett und Zwischenräume, B manuell ergänztes Bandmaterial, C den gelatinebedeckten Zustand; Ausschnitte vergrößern lokale Unterschiede. Weiche Schichten wurden nicht gleichzeitig mit dem Skelett gedruckt. Lage und Bedeckung sind prüfbar, Modul, Dickengleichmäßigkeit und Eindringkraft jedoch nicht quantitativ dargestellt. [Aufbausequenz](ref:R01)"
+        },
+        "F02": {
+          "caption": "Mashari et al.: Gepaarte Bewertungsblasen unterschiedlicher taktiler Aufgaben.",
+          "interpretation": "A betrifft Oberflächenpalpation, B Weichgewebewiderstand, C Ligamentum-flavum-Widerstand. Horizontal steht das vorhandene, vertikal das gedruckte Hybridphantom. Oberhalb der Diagonale wird letzteres höher bewertet; Blasengröße und Zahlen zählen Experten. Gegensätzliche Verteilungen in A und C zeigen gleichzeitig verbesserte und verschlechterte Signale. Unterschiedliche Urteile in B erlauben ebenfalls keine pauschal bessere Gewebehaptik. [Gepaarte taktile Bewertung](ref:R01)"
+        },
+        "F03": {
+          "caption": "Henriques et al.: Shore-A-Härte im trockenen und nassen Zustand.",
+          "interpretation": "Spalten kennzeichnen Materialien; jeweils werden dunkle trockene und helle nasse Balken mit Standardabweichung verglichen. Nasse Balken liegen unterschiedlich stark niedriger. Gemessen wird Eindringhärte, keine Zugsteigung oder Schnittkraft. Gegenüber der Modultabelle zeigt Flex 63A niedrigere Härte ohne gleichgerichtete Abnahme des mittleren Zugmoduls. [Härte- und Zugergebnisse](ref:R02)"
+        },
+        "F04": {
+          "caption": "Henriques et al.: Material und Wassergehalt verändern zyklische Spannungs-Dehnungs-Schleifen.",
+          "interpretation": "Links a–c sind trocken, rechts d–f nass; Farben kennzeichnen Materialien. Vertikal stehen MPa, horizontal Prozentdehnung. Zeilengrenzen betragen 3, 2 und 0.8; sichtbare Breiten erlauben keinen direkten Weichheitsvergleich. Trockenes härteres Harz zeigt ausgeprägte Schleifenverschiebung; im nassen Zustand ändern sich Steigung und Ausdehnung. Schleifen enthalten Belastungsgeschichte, die Anfangssteigung erklärt keine vollständige Haptik. [Zyklische Zugdarstellung](ref:R02)"
+        },
+        "F05": {
+          "caption": "Henriques et al.: Maximale Dehnung und dynamischer Modul über Lastwechsel.",
+          "interpretation": "a zeigt maximale Dehnung, b dynamische Moduln weicherer Materialien, c den Trocken-Nass-Unterschied des härteren Materials, d eine vergrößerte Nassansicht. Durchgezogene und gestrichelte Linien trennen Zustände; Fehlerbalken zeigen Probenstreuung. Unterschiedliche vertikale Bereiche in c und d verbieten, vergrößerte Nassschwankungen als gleich starke Trockenänderung zu lesen. Bruchfreiheit und konstante Antwort sind verschiedene Befunde. [Zyklusabhängigkeit](ref:R02)"
+        },
+        "F06": {
+          "caption": "Hermans et al.: Tumorgrenzen in rechteckigem Silikon und robotische Interaktion.",
+          "interpretation": "Oben erscheinen Modellposition, Instrumente und lokale Grenzfläche; unten wiederholte Tumoren verschiedener Einbettungstiefe in einer rechteckigen Platte. Dargestellt werden lokales Greifen und Trennen, keine vollständige Patientenniere. Farbgrenzen erlauben die Prüfung simulierter Kapselschäden, zeigen aber keine biologische Adhäsion, Blutung oder Kraft-Weg-Kurven. [Modell und Aufgabe](ref:R03)"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "schema_version": 2,
+  "question_id": "P1-014",
+  "p": "P1",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_b3999169ced5152ab4b3",
+    "doc_0f079ee142ed4a1dfe79",
+    "doc_1d5623eb184158917885"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Effectiveness of biomechanically stable pergola-like additively manufactured scaffold for extraskeletal vertical bone augmentation",
+      "publisher": "Frontiers in Bioengineering and Biotechnology",
+      "year": 2023,
+      "url": "https://doi.org/10.3389/fbioe.2023.1112335",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "3D-Printed Titanium Trabecular Scaffolds with Sustained Release of Hypoxia-Induced Exosomes for Dual-Mimetic Bone Regeneration",
+      "publisher": "Advanced Science",
+      "year": 2025,
+      "url": "https://doi.org/10.1002/advs.202500599",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Alveolar Ridge Augmentation with a Novel Combination of 3D-Printed Scaffolds and Adipose-Derived Mesenchymal Stem Cells—A Pilot Study in Pigs",
+      "publisher": "Biomedicines",
+      "year": 2023,
+      "url": "https://doi.org/10.3390/biomedicines11082274",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 7",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10089125.1/fbioe-11-1112335-g007.jpg?md5=fe4c966c36a222317042a07e5bcf2244",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10089125/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-014/F01.jpg"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R02",
+      "original_label": "Fig. 4",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12199343.1/ADVS-12-2500599-g002.jpg?md5=67459815077efbd599c58f0ecc2f1c62",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12199343/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-014/F02.jpg"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Fig. 5",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12199343.1/ADVS-12-2500599-g001.jpg?md5=57ad9f7988d4322e3353b8802374cdf6",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12199343/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-014/F03.jpg"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Fig. 6",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12199343.1/ADVS-12-2500599-g004.jpg?md5=8b10a7a6399d7b24544148c301afc708",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12199343/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-014/F04.jpg"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R02",
+      "original_label": "Fig. 8",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12199343.1/ADVS-12-2500599-g009.jpg?md5=094777a8a907f9dd1bb456ac69801c96",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12199343/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-014/F05.jpg"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R03",
+      "original_label": "Fig. 4",
+      "image_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10452669.1/biomedicines-11-02274-g004.jpg?md5=038503fed0b6e9897406ff91560c4ec9",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10452669/",
+      "license": "CC BY 4.0",
+      "asset_path": "assets/academic_figures/P1-014/F06.jpg"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "支架如何促进成骨细胞活动与血管形成？",
+      "direction": "骨再生支架",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "让细胞进入的通道，与让细胞成骨的信号是不同变量",
+          "markdown": "Yang 等设计的 pergola 支架具有顶部拱形结构和内部较大通道，以保持骨增量空间并容纳组织进入。陶瓷原料中 HA 与 β-TCP 的质量为 9 g 与 51 g；光固化打印及热处理后保留双相陶瓷。设计孔隙率为 73.44%、84.65%、91.46%，对应孔径约 320、490、720 µm。三种结构先进行静力学和流体计算，只有选出的 84.65% 结构进入细胞与动物实验，因而实验并未直接比较三种孔隙率的成骨效果。[结构筛选与制造](ref:R01)\n\n在相同入口速度 0.1 mm/s 下，中间孔隙率结构的横向有效渗透率接近最高孔隙率结构，但纵向渗透率较低；静力模型则显示最高孔隙率的变形与应力集中更大。选择中间值是计算条件下通流与承载的折中，不是已经测得的血管灌注最优值。尤其原表雷诺数远低于 1，正文将局部流动称为“湍流”并不符合这些参数，不能把流线图当作血流或新生血管图。[模拟条件与选择依据](ref:R01)\n\n供试牙乳头干细胞 SCAPs 在支架上能够贴附并存活；成骨信号另由表达 BMP9 的腺病毒导入，GFP 腺病毒作为对照。在含成骨诱导补充物的培养基中，BMP9 组第 3、5、7 天 ALP 高于 GFP 组，后续茜素红染色也更多。这里的分化来自细胞、转基因信号与诱导培养条件共同作用，不能归结为陶瓷孔结构自行把细胞转为成骨细胞。[SCAPs 与 BMP9 实验](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "BMP9 形成异位骨，但追加 VEGF 未产生可确认增益",
+          "markdown": "动物实验先将支架植入裸鼠背部皮下，第 7 天再注入经病毒处理的 SCAPs；BMP9+VEGF 组在注细胞 3 天后开始，每天注入 40 ng VEGF，连续 3 天。总计 6 只小鼠承载 12 个支架，四组各 n=3：空支架、SCAPs+GFP、SCAPs+BMP9、SCAPs+BMP9+VEGF。n 指支架数，不能写成每组独立小鼠数；这也不是把同一缓释系统中的两个因子同步释放。[皮下植入与给药时序](ref:R01)\n\n第 8 周空支架和 GFP 组没有观察到新增骨；两个 BMP9 组在支架周围形成矿化组织。BMP9 单独组的新骨体积为 31.49±15.16 mm³，追加 VEGF 组为 15.53±11.12 mm³，原表比较 p=0.3931。三个方向的最大骨厚度也都没有显著组间差异。数值较低不能证明 VEGF 抑制成骨，而未达到显著性也不等于两个方案等效；样本很少且离散较大。[新骨体积与空间分布](ref:R01)\n\n该研究没有提供血管数量、内皮标记或灌注测量，因而不能判断 VEGF 是否先改变血管、再因其他因素没有提高骨量。它直接回答的是这一给药剂量、时序和皮下环境下，没有检出追加 VEGF 的骨形成增益。这里的异位骨形成证据比单纯细胞活性更接近组织层面，但尚未测量实际牙槽骨上方的高度保持或种植体负载后的表现。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "低氧来源外泌体先在内皮细胞上检验剂量反应",
+          "markdown": "Luo 等以人脐静脉内皮细胞 HUVECs 为来源，比较常氧和低氧培养得到的外泌体制备物。形态、粒径和 ALIX、CD9、CD81 标记共同支持细胞外囊泡富集；剂量则以 BCA 测得的蛋白质量表示，不是囊泡个数。低氧组总蛋白和颗粒浓度较高，并不能自动说明每个囊泡更有效。PKH26 荧光示踪显示受体细胞中的信号随时间变化，在 72 h 附近较高，但脂质染料信号并非完整囊泡或特定功能货物的直接计数。[囊泡制备与表征](ref:R02)\n\nHUVECs 在 Matrigel 上培养 6–8 h，接受 50、100、150、200 µg/mL 低氧来源制备物。成网面积随较低剂量升高，150 与 200 µg/mL 间标为无显著差异。这为测试范围内出现平台提供依据，不能把 200 µg/mL 定义为所有材料和细胞条件下的普遍最优剂量。所见结构是短时间形成的内皮样网络，没有循环灌注或长期稳定性的检测。[成网剂量实验](ref:R02)\n\n与前述直接注入 VEGF 的实验相比，这里递送的是含多种蛋白、脂质和核酸的混合囊泡制备物，而且实验首先针对内皮细胞。两项研究可用于区分“加入促血管因素”和“测得内皮细胞功能反应”，但不能据此比较 VEGF 与外泌体的绝对疗效。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "微球释放与成骨反应通过分层对照连接",
+          "markdown": "递送载体为 PEGDA/GelMA 双网络水凝胶微球，约 80 µm，经聚多巴胺层固定在仿骨小梁 Ti–6Al–4V 支架上。低氧来源制备物初始浓度设为 1、2、3 mg/mL；释放试验在模拟体液中持续至第 18 天，以蛋白和微球内残留荧光跟踪。选用的中间浓度组并非恒速释放：原图的每 3 天蛋白增量先升后降，不能概括为始终维持 200 µg/mL。[微球与释放曲线](ref:R02)\n\n释放方法同时写到补充 BSA，而 BCA 本身也检测白蛋白；空白凝胶扣除并不自动等于特异性测量完整外泌体。荧光逐渐减少支持标记物离开或衰减，但未单独给出各时间段释放物的囊泡完整性和成管效力。因此，“检测持续 18 天”和“连续 18 天维持相同有效剂量”有不同实验含义。[释放定量方法](ref:R02)\n\n细胞实验逐级比较裸支架、聚多巴胺支架、空载微球支架和载外泌体微球支架。MC3T3-E1 每支架接种 50000 个，观察第 1、3、5 天 Alamar Blue 信号、第 7 天 ALP，以及第 21 天茜素红矿化。完整组合在这些端点上较高；ALP 和矿化是在成骨诱导培养基中测得，不能说材料在无诱导条件下独立启动成骨。另将 HUVECs 培养 3 天，测量 VEGF、CD31、PDGFB、FGF2 表达；这与成骨细胞实验是不同细胞体系，不是已经建立两类细胞的空间共培养血管网络。[分层支架对照与细胞端点](ref:R02)\n\n转录组富集提示 MAPK、mTOR、HIF-1、VEGF 相关变化，但其对照包含实体钛与完整复合支架，几何和表面组分同时改变；又没有抑制、敲低或救援实验，不能据富集结果指定单一必需通路。分层对照更直接支持的是添加载囊泡微球后观察到的细胞响应增益。",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "兔股骨中骨与血管同时增加，仍需按各自测量解释",
+          "markdown": "兔股骨远端建立直径和深度均为 10 mm 的缺损，第 4、12 周评价。原图将空缺损、裸钛支架、聚多巴胺加空载微球、聚多巴胺加载囊泡微球并列。载囊泡组显示较多支架内骨长入，且相同取样区域中的血管样结构数量高于空载微球组。这提供了共同材料架构上局部递送与两类组织端点关联的证据。[股骨缺损与组织结果](ref:R02)\n\n读数必须按实际坐标：原图 D 为 BMD，E 为 BV/TV，图注把二者顺序写反。正文的 19.3 和 28.1 被称为 mm³ 新骨量，但它们对应 E 中第 4、12 周约 19.3%、28.1% 的骨体积分数，因此这里不将其作为绝对骨体积。组织学 H 是新骨面积，I 是 ROI 内血管数量，也不是单位组织体积中的灌注血管密度。[图中单位与分母](ref:R02)\n\n载囊泡组在两个时间点都优于相应对照，但血管数量的柱高没有随时间明显上升；这与正文所称血管网络持续变密不完全相同。方法的动物分组还列出聚多巴胺组，而结果图使用空缺损组，故不能替原文补造明确的随机分配对应关系。图注 n=3 可用于理解所示定量，不能由此消除分组描述冲突。组织切片没有提供灌注示踪、血管通透性或成熟壁细胞覆盖，因而支持的是骨形成与血管样结构共现增加，而非已证实的功能血管介导成骨机制。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "猪牙槽嵴模型将细胞来源与组织分布放在同一缺损中观察",
+          "markdown": "Lau 等采用 80% PCL、20% TCP 打印 8×8×3 mm 支架，加载同次手术从脂肪组织机械处理得到的间质血管组分 SVF。该组分含脂肪来源间充质细胞、其他基质细胞和免疫细胞，并非已纯化、定量并扩增的单一干细胞群。五只猪各接受四种处理：加载 SVF 支架、空支架、自体骨和空缺损；其中一只出现伤口裂开、支架暴露与明显炎症，被排除于后续分析。[材料、细胞制备物与动物分组](ref:R03)\n\n余下四只猪在植入 3 个月后，加载组平均 BV/TV 为 28.7%，空支架为 18.6%，自体骨为 43.7%。前两组相差约 10.1 个百分点，不是增加 10.1% 的相对比例。每只动物都显示加载组高于空支架，但动物间基线修复能力差别明显；原图将逐只结果与均值分开，避免把多个缺损当成互不相关的动物。空缺损边界因愈合后难以识别，没有报告其定量骨体积分数。[逐只动物的骨量](ref:R03)\n\n组织学显示空支架的矿化多靠近骨壁，加载组内部更广泛出现矿化骨基质与小骨髓腔；纤维包裹在加载组四只动物中的一只仍存在。切片中的空隙还包括处理时被溶解的 PCL-TCP 丝条位置，不能全当作体内未长骨空间。实验没有追踪移入细胞的谱系，也没有定量血管灌注，因此改善可能涉及细胞直接贡献、旁分泌或改变组织占位等多种作用，不能指定为脂肪干细胞直接变成全部新骨。[组织空间分布](ref:R03)",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Yang 等：BMP9 与追加 VEGF 组的异位骨空间分布。",
+          "interpretation": "A 标示三个方向的最大厚度，B 展示切面方向；C 是 BMP9，D 是 BMP9+VEGF，各行显示不同样本而非时间序列。青色为支架，橙色为重建骨，标尺 3 mm。新增骨主要环绕支架，组内差别明显；D 中也有骨量较少的样本。该图结合原表的非显著组间比较，支持在该方案下未检出 VEGF 增益，而不是证明 VEGF 无生物活性。[原图与定量表](ref:R01)"
+        },
+        "F02": {
+          "caption": "Luo 等：低氧来源制备物的表征、摄取示踪与成网剂量反应。",
+          "interpretation": "B 是来源 HUVECs 的 VEGFA 染色，不是囊泡内 VEGFA 的定量；C 是蛋白浓度，D 的实际条带标为 ALIX、CD9、CD81。E/F 为形态与粒径，G 为染料信号随时间的变化。H/I 的 50–200 µg/mL 以蛋白质量计，I 为总成网面积百分比，150 对 200 的括号是 ns。成网面积不是成熟灌注血管数量，也未比较等粒子数下常氧与低氧囊泡的效力。[表征与成网](ref:R02)"
+        },
+        "F03": {
+          "caption": "Luo 等：双网络微球的形态、累积蛋白与分时释放。",
+          "interpretation": "A–D 显示微流控制备、凝胶模量、球形颗粒及约 80 µm 的分布。E 的纵轴是蛋白浓度而非百分比累计释放；F 是每 3 天蛋白浓度增量，曲线先升后降。G/H 显示 0–18 天微球内荧光逐渐衰减。因 BCA 与 PKH26 均非完整功能囊泡的专属测定，这些面板支持持续可检测释放，不能直接证明恒定的成管有效剂量。[释放原图](ref:R02)"
+        },
+        "F04": {
+          "caption": "Luo 等：从表面组装到成骨与内皮相关表达的分层对照。",
+          "interpretation": "A–H 确认表面涂层和微球位置；I–K 是细胞共培养示意、活细胞图及计数，L 为第 1、3、5 天代谢荧光。M 是第 7 天 ALP，N/O 为第 21 天矿化定量和染色，P–S 为成骨细胞基因，T–W 为内皮细胞基因。红色完整组合在多数端点最高，但不同面板来自不同细胞、时间和测量，不是一条连续跟踪同一组织形成的曲线。原图注 L/M 提及空载微球，与实际红色最高柱不符，此处按图例与方法解释。[细胞功能原图](ref:R02)"
+        },
+        "F05": {
+          "caption": "Luo 等：兔股骨缺损中的矿化骨与血管样结构。",
+          "interpretation": "A 为植入手术，B/C 为第 4、12 周 µCT，蓝色为支架、橙色为重建骨；D 的轴为 BMD，E 为 BV/TV，二者与原图注顺序相反。F/G 为外观与组织切片，G 的黄色箭头为新骨、绿色为材料、白色为血管样结构。H 的面积与 I 的 ROI 血管计数均较高，但不能把 I 直接称为灌注率。I 中完整组合第 12 周并未高于第 4 周，提示骨量继续增加与血管数量持续增加不是同一结果。[兔模型原图](ref:R02)"
+        },
+        "F06": {
+          "caption": "Lau 等：逐只猪与组均值的骨体积分数。",
+          "interpretation": "a 显示猪 2–5 的各治疗位点，所有动物均为自体骨最高、SVF 加载支架次之、空支架最低；动物间差别仍明显。b 为均值及标准差，加载对空支架标注 p=0.002，自体骨对两种支架也有显著差异。图中没有被排除的猪，也没有空缺损的定量柱。其纵轴是 BV/TV 百分比，不是细胞成骨转化率或血管化程度。[逐只动物比较](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do scaffolds promote osteoblast activity and blood-vessel formation?",
+      "direction": "Bone-regeneration scaffolds",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Channels for cell entry and signals for osteogenesis are different variables",
+          "markdown": "Yang et al. designed a pergola-like scaffold with an arched upper structure and larger internal channels to maintain augmentation space and admit tissue. Ceramic feedstock contained 9 g HA and 51 g β-TCP; photopolymerization-based printing and heat treatment left biphasic ceramic. Designed porosities were 73.44%, 84.65% and 91.46%, corresponding to pores of approximately 320, 490 and 720 µm. All three structures underwent structural and fluid simulations, but only the selected 84.65% structure entered cell and animal experiments. Osteogenesis was therefore not experimentally compared across the three porosities. [Structural selection and manufacture](ref:R01)\n\nAt the same inlet velocity of 0.1 mm/s, the intermediate-porosity structure had horizontal effective permeability close to the highest-porosity structure but lower vertical permeability. The structural model indicated greater deformation and stress concentration at the highest porosity. Selecting the intermediate value was a modeled compromise between transport and load bearing, not a measured optimum for vascular perfusion. In particular, tabulated Reynolds numbers were far below 1, making the prose description of local turbulence inconsistent with these parameters. Streamlines are not images of blood flow or new vessels. [Simulation conditions and selection](ref:R01)\n\nStem cells from the apical papilla, SCAPs, attached and survived on the scaffold. Osteogenic signaling was separately introduced through a BMP9-expressing adenovirus, with GFP adenovirus as control. In medium containing osteogenic supplements, BMP9 increased ALP on days 3, 5 and 7 relative to GFP, followed by greater Alizarin Red staining. Differentiation therefore reflected cells, transgenic signaling and induction medium together, rather than ceramic pore architecture alone converting cells into osteoblasts. [SCAPs and BMP9 experiments](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "BMP9 produced ectopic bone, but added VEGF had no confirmed benefit",
+          "markdown": "Scaffolds were implanted beneath dorsal skin in nude mice, with virus-treated SCAPs injected on day 7. The BMP9+VEGF group began receiving 40 ng VEGF daily for 3 consecutive days, starting 3 days after cell injection. A total of 6 mice carried 12 scaffolds, with n=3 scaffolds in each of four groups: blank, SCAPs+GFP, SCAPs+BMP9 and SCAPs+BMP9+VEGF. The sample count denotes scaffolds rather than independent mice per group. This was also not simultaneous release of two factors from one sustained-release system. [Subcutaneous implantation and dosing schedule](ref:R01)\n\nAt week 8, no new bone was observed in blank or GFP groups, whereas both BMP9 groups formed mineralized tissue around scaffolds. New bone volume was 31.49±15.16 mm³ with BMP9 alone and 15.53±11.12 mm³ with added VEGF; the original table reports p=0.3931. Maximum bone thickness along all three directions likewise showed no significant group difference. Numerically lower values do not demonstrate VEGF-mediated inhibition, and nonsignificance does not establish equivalence: samples were few and variability substantial. [New bone volume and spatial distribution](ref:R01)\n\nThe study reported no vessel counts, endothelial markers or perfusion measurements. It therefore cannot determine whether VEGF first altered vascularization but other factors prevented additional bone. Its direct finding is that this dose, schedule and subcutaneous environment yielded no detected osteogenic benefit from adding VEGF. Ectopic bone provides tissue-level evidence beyond cell activity, but actual height retention above the alveolar ridge and performance after implant loading were not measured.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Hypoxia-derived exosomes were first tested for endothelial dose response",
+          "markdown": "Luo et al. compared exosome preparations from normoxic and hypoxic human umbilical vein endothelial cells, HUVECs. Morphology, size and ALIX, CD9 and CD81 markers jointly support enrichment of extracellular vesicles. Doses were expressed as BCA-measured protein mass, not vesicle number. Higher total protein and particle concentrations in the hypoxic preparation do not automatically establish greater potency per vesicle. PKH26 tracing showed time-varying signals in recipient cells, higher around 72 h, but lipid-dye fluorescence does not directly count intact vesicles or specific functional cargo. [Vesicle preparation and characterization](ref:R02)\n\nHUVECs were cultured on Matrigel for 6–8 h with 50, 100, 150 or 200 µg/mL of the hypoxia-derived preparation. Mesh area increased across lower doses, while 150 versus 200 µg/mL was labeled nonsignificant. This supports a plateau within the tested range rather than defining 200 µg/mL as a universal optimum across materials and cellular conditions. The structures were short-term endothelial-like networks, without tests of circulating perfusion or long-term stability. [Network-formation dose experiment](ref:R02)\n\nUnlike the preceding direct VEGF injections, this approach delivered a mixed vesicle preparation containing multiple proteins, lipids and nucleic acids, and initially targeted endothelial cells experimentally. The studies distinguish adding a proangiogenic factor from measuring endothelial function, but do not permit an absolute efficacy comparison between VEGF and exosomes.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Layered controls connect microsphere delivery to osteogenic responses",
+          "markdown": "The delivery vehicle comprised PEGDA/GelMA dual-network hydrogel microspheres, approximately 80 µm in size, attached through polydopamine to a trabecular Ti–6Al–4V scaffold. Initial hypoxia-derived preparation concentrations were 1, 2 and 3 mg/mL. Release was monitored in simulated body fluid through day 18 using protein and residual microsphere fluorescence. The selected intermediate-loading group did not release at a constant rate: its plotted protein increment per 3 days first rose and then declined, rather than continuously maintaining 200 µg/mL. [Microspheres and release curves](ref:R02)\n\nThe release method also describes adding BSA, while BCA itself detects albumin. Subtracting a blank gel therefore does not automatically provide an intact-exosome-specific measurement. Declining fluorescence supports loss or decay of label but does not separately establish vesicle integrity and tube-forming potency in each collected interval. Detection lasting 18 days and maintenance of an identical effective dose for 18 days have different experimental meanings. [Release quantification methods](ref:R02)\n\nCell experiments sequentially compared bare scaffolds, polydopamine-coated scaffolds, unloaded-microsphere scaffolds and exosome-loaded-microsphere scaffolds. MC3T3-E1 cells were seeded at 50000 per scaffold, with Alamar Blue on days 1, 3 and 5, ALP on day 7 and Alizarin Red mineralization on day 21. The complete combination gave higher responses across these endpoints. ALP and mineralization were measured in osteogenic induction medium, so the material cannot be said to independently initiate osteogenesis without induction. Separately, HUVECs were cultured for 3 days to measure VEGF, CD31, PDGFB and FGF2 expression. These were different cell systems, not an established vascular network in spatial osteoblast–endothelial coculture. [Layered scaffold controls and cellular endpoints](ref:R02)\n\nTranscriptomic enrichment implicated MAPK, mTOR, HIF-1 and VEGF-related changes, but comparisons included solid titanium versus the complete composite, changing geometry and surface components together. Without inhibition, knockdown or rescue experiments, enrichment does not identify one indispensable pathway. The layered controls more directly support the observed cellular-response increment after adding vesicle-loaded microspheres.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Bone and vessels increased together in rabbit femora, but their measurements differ",
+          "markdown": "Distal-femoral defects in rabbits measured 10 mm in both diameter and depth and were evaluated at weeks 4 and 12. The original figure compares empty defects, bare titanium scaffolds, polydopamine plus unloaded microspheres, and polydopamine plus vesicle-loaded microspheres. The loaded group showed greater bone ingrowth and more vessel-like structures in sampled regions than the unloaded-microsphere group. This links local delivery on a shared architecture to two tissue endpoints. [Femoral defects and tissue findings](ref:R02)\n\nValues must follow actual axes: original panel D is BMD and E is BV/TV, although their order is reversed in the caption. The text calls 19.3 and 28.1 new-bone volumes in mm³, but these correspond to approximately 19.3% and 28.1% bone volume fraction at weeks 4 and 12 in E. They are therefore not reported here as absolute bone volumes. Histological H measures new-bone area and I counts vessels within an ROI, rather than perfused-vessel density per tissue volume. [Units and denominators in the figure](ref:R02)\n\nThe loaded group exceeded corresponding controls at both times, but vessel-count bars did not clearly rise over time, differing from the text's description of progressive network densification. Animal methods also list a polydopamine-only group whereas the results figure uses empty defects; a definitive randomization mapping cannot be reconstructed on the authors' behalf. Captioned n=3 describes the displayed quantification without resolving this grouping conflict. Histology lacks perfusion tracing, permeability or mature mural-cell coverage measurements. It therefore supports increased coexistence of bone and vessel-like structures rather than an established mechanism of functional vessels mediating osteogenesis.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "The porcine ridge model examines cell source and tissue distribution in one defect",
+          "markdown": "Lau et al. printed 8×8×3 mm scaffolds from 80% PCL and 20% TCP and loaded stromal vascular fraction, SVF, mechanically processed from adipose tissue during the same operation. This fraction contained adipose-derived mesenchymal cells, other stromal cells and immune cells; it was not a purified, quantified and expanded single stem-cell population. Five pigs each received four treatments: SVF-loaded scaffold, unloaded scaffold, autologous bone and empty defect. One pig developed wound dehiscence, scaffold exposure and marked inflammation and was excluded from subsequent analysis. [Material, cellular preparation and animal groups](ref:R03)\n\nIn the remaining four pigs, mean BV/TV at 3 months was 28.7% with loading, 18.6% with scaffold alone and 43.7% with autologous bone. The first two differ by approximately 10.1 percentage points, not a relative increase of 10.1%. Every animal had greater bone fraction with loading than without, although baseline healing differed substantially between animals. The original figure separates individual results from means, preventing multiple defects from being treated as unrelated animals. Empty-defect BV/TV was not reported because healing made its boundaries difficult to identify. [Bone quantity in individual animals](ref:R03)\n\nHistology placed most mineralization near the bony wall in unloaded scaffolds, whereas loaded scaffolds showed more widely distributed mineralized matrix and small marrow cavities. Fibrous encapsulation persisted in one of the four loaded animals. Sectional voids also included locations where PCL-TCP filaments dissolved during processing; they cannot all be interpreted as spaces lacking bone in vivo. The experiment neither traced implanted-cell lineage nor quantified vascular perfusion. Improvement could involve direct cellular contributions, paracrine effects or altered tissue occupancy, rather than demonstrating that adipose stem cells directly generated all new bone. [Spatial tissue distribution](ref:R03)",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Yang et al.: ectopic bone distribution with BMP9 and added VEGF.",
+          "interpretation": "A defines maximum thickness in three directions and B the section planes. C shows BMP9 and D BMP9+VEGF; rows are different samples, not a time series. Cyan represents scaffold and orange reconstructed bone; scale bars are 3 mm. Bone mainly surrounds the scaffold with marked within-group variation, including low-bone samples in D. Together with the original table’s nonsignificant comparisons, this supports no detected VEGF benefit under this regimen, rather than biological inactivity of VEGF. [Original figure and quantitative table](ref:R01)"
+        },
+        "F02": {
+          "caption": "Luo et al.: characterization, uptake tracing and network dose response of hypoxia-derived preparations.",
+          "interpretation": "B stains VEGFA in donor HUVECs rather than quantifying VEGFA inside vesicles. C measures protein concentration; actual bands in D are labeled ALIX, CD9 and CD81. E/F show morphology and size, and G tracks dye signal over time. The 50–200 µg/mL doses in H/I refer to protein mass. I plots total mesh area as a percentage, with ns between 150 and 200. Mesh area is not a count of mature perfused vessels, and potency was not compared between normoxic and hypoxic vesicles at equal particle number. [Characterization and networks](ref:R02)"
+        },
+        "F03": {
+          "caption": "Luo et al.: dual-network microsphere morphology, accumulated protein and interval release.",
+          "interpretation": "A–D show microfluidic fabrication, gel moduli, spherical particles and a distribution around 80 µm. E plots protein concentration rather than percentage cumulative release. F is the protein-concentration increment per 3 days, rising and then falling. G/H show declining microsphere fluorescence over 0–18 days. Because neither BCA nor PKH26 specifically measures intact functional vesicles, these panels support sustained detectable release rather than a constant tube-forming effective dose. [Original release figure](ref:R02)"
+        },
+        "F04": {
+          "caption": "Luo et al.: layered controls from surface assembly to osteogenic and endothelial-associated expression.",
+          "interpretation": "A–H locate coating and microspheres. I–K show coculture setup, live-cell images and counts; L measures metabolic fluorescence on days 1, 3 and 5. M is day-7 ALP, N/O day-21 mineralization quantification and staining, P–S osteoblast genes, and T–W endothelial genes. The red complete combination is highest at most endpoints, but panels represent different cells, times and measurements rather than continuous tracking of one forming tissue. Caption L/M mentions unloaded microspheres, conflicting with the highest red bars; interpretation here follows the legend and methods. [Original cellular-function figure](ref:R02)"
+        },
+        "F05": {
+          "caption": "Luo et al.: mineralized bone and vessel-like structures in rabbit femoral defects.",
+          "interpretation": "A shows implantation; B/C show week-4/week-12 µCT, with blue scaffold and orange reconstructed bone. D is BMD and E BV/TV, opposite the caption order. F/G show gross appearance and histology; yellow arrows in G indicate new bone, green material and white vessel-like structures. Area in H and ROI vessel count in I are higher with the combination, but I is not a perfusion rate. The complete combination in I is not higher at week 12 than week 4, separating continued bone gain from continuously increasing vessel number. [Original rabbit-model figure](ref:R02)"
+        },
+        "F06": {
+          "caption": "Lau et al.: bone volume fractions by pig and as group means.",
+          "interpretation": "Panel a shows treatment sites in pigs 2–5. Autologous bone is highest in every animal, followed by SVF-loaded and unloaded scaffold, despite substantial differences between animals. Panel b shows means and standard deviations, labeling loaded versus unloaded scaffold p=0.002; autologous bone also differs significantly from both scaffold groups. Neither the excluded pig nor quantitative empty-defect bars appear. The vertical axis is BV/TV percentage, not cellular osteogenic conversion or vascularization. [Individual-animal comparison](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie fördern Gerüste die Osteoblastenaktivität und Blutgefäßbildung?",
+      "direction": "Gerüste zur Knochenregeneration",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Kanäle für den Zelleintritt und osteogene Signale sind unterschiedliche Variablen",
+          "markdown": "Yang et al. entwarfen ein pergolaähnliches Gerüst mit gewölbtem Oberteil und größeren inneren Kanälen, um Augmentationsraum zu erhalten und Gewebeeintritt zu ermöglichen. Das keramische Ausgangsmaterial enthielt 9 g HA und 51 g β-TCP; nach photopolymerisationsbasiertem Druck und Wärmebehandlung blieb biphasische Keramik. Die vorgesehenen Porositäten betrugen 73.44%, 84.65% und 91.46%, entsprechend Poren von ungefähr 320, 490 und 720 µm. Alle drei Strukturen wurden mechanisch und strömungsmechanisch simuliert, aber nur die ausgewählte 84.65%-Struktur wurde an Zellen und Tieren untersucht. Die Osteogenese wurde daher nicht experimentell zwischen den drei Porositäten verglichen. [Strukturauswahl und Herstellung](ref:R01)\n\nBei gleicher Einlassgeschwindigkeit von 0.1 mm/s lag die horizontale effektive Permeabilität der mittleren Porosität nahe der höchsten, die vertikale Permeabilität jedoch darunter. Das Strukturmodell zeigte bei höchster Porosität größere Verformung und Spannungskonzentration. Die Auswahl des Mittelwerts war ein rechnerischer Kompromiss zwischen Transport und Tragfähigkeit, kein gemessenes Optimum der Gefäßperfusion. Insbesondere lagen die tabellierten Reynolds-Zahlen weit unter 1; die textliche Bezeichnung lokaler Turbulenz passt nicht zu diesen Parametern. Stromlinien sind keine Bilder von Blutfluss oder neuen Gefäßen. [Simulationsbedingungen und Auswahl](ref:R01)\n\nStammzellen der apikalen Papille, SCAPs, hafteten am Gerüst und überlebten. Osteogene Signale wurden separat durch ein BMP9-exprimierendes Adenovirus eingebracht; GFP-Adenovirus diente als Kontrolle. In Medium mit osteogenen Zusätzen steigerte BMP9 gegenüber GFP die ALP an den Tagen 3, 5 und 7; anschließend war auch die Alizarinrotfärbung ausgeprägter. Die Differenzierung spiegelte damit das Zusammenwirken von Zellen, transgenem Signal und Induktionsmedium wider, nicht eine alleinige Umwandlung in Osteoblasten durch keramische Porenarchitektur. [SCAPs- und BMP9-Versuche](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "s2",
+          "title": "BMP9 erzeugte ektopen Knochen, zusätzliches VEGF aber keinen bestätigten Nutzen",
+          "markdown": "Die Gerüste wurden unter die Rückenhaut von Nacktmäusen implantiert; virusbehandelte SCAPs wurden am Tag 7 injiziert. Die BMP9+VEGF-Gruppe erhielt beginnend 3 Tage nach Zellinjektion täglich 40 ng VEGF an 3 aufeinanderfolgenden Tagen. Insgesamt trugen 6 Mäuse 12 Gerüste; jede der vier Gruppen umfasste n=3 Gerüste: leer, SCAPs+GFP, SCAPs+BMP9 und SCAPs+BMP9+VEGF. Die Stichprobenzahl bezeichnet Gerüste, nicht unabhängige Mäuse je Gruppe. Auch handelte es sich nicht um die gleichzeitige Freisetzung zweier Faktoren aus einem gemeinsamen Retardsystem. [Subkutane Implantation und Dosierungsablauf](ref:R01)\n\nIn Woche 8 wurde in Leer- und GFP-Gruppen kein neuer Knochen beobachtet, während beide BMP9-Gruppen mineralisiertes Gewebe um die Gerüste bildeten. Das neue Knochenvolumen betrug mit BMP9 allein 31.49±15.16 mm³ und mit zusätzlichem VEGF 15.53±11.12 mm³; die Originaltabelle nennt p=0.3931. Auch die maximalen Knochendicken in allen drei Richtungen unterschieden sich nicht signifikant. Numerisch niedrigere Werte beweisen keine VEGF-vermittelte Hemmung; fehlende Signifikanz belegt ebenso wenig Gleichwertigkeit. Die Stichproben waren klein und die Streuung erheblich. [Neues Knochenvolumen und räumliche Verteilung](ref:R01)\n\nGefäßzahlen, Endothelmarker und Perfusionsmessungen fehlen. Deshalb lässt sich nicht entscheiden, ob VEGF zunächst die Vaskularisierung veränderte, aber andere Faktoren zusätzliche Knochenbildung verhinderten. Direkt gezeigt wurde bei dieser Dosis, zeitlichen Abfolge und subkutanen Umgebung kein nachweisbarer osteogener Zusatznutzen von VEGF. Ektoper Knochen liefert Gewebeevidenz über Zellaktivität hinaus; tatsächlicher Höhenerhalt über dem Alveolarkamm und Verhalten nach Implantatbelastung wurden jedoch nicht gemessen.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Hypoxiegewonnene Exosomen wurden zunächst auf ihre endotheliale Dosisantwort geprüft",
+          "markdown": "Luo et al. verglichen Exosomenpräparate aus normoxisch und hypoxisch kultivierten humanen Nabelvenenendothelzellen, HUVECs. Morphologie, Größe sowie ALIX-, CD9- und CD81-Marker stützen gemeinsam eine Anreicherung extrazellulärer Vesikel. Die Dosen wurden als BCA-gemessene Proteinmasse angegeben, nicht als Vesikelzahl. Höhere Gesamtprotein- und Partikelkonzentrationen im hypoxischen Präparat belegen nicht automatisch eine höhere Wirksamkeit je Vesikel. Die PKH26-Verfolgung zeigte zeitabhängige Signale in Empfängerzellen mit höheren Werten um 72 h. Lipidfarbstofffluoreszenz zählt jedoch weder intakte Vesikel noch spezifische funktionelle Fracht direkt. [Vesikelgewinnung und Charakterisierung](ref:R02)\n\nHUVECs wurden auf Matrigel für 6–8 h mit 50, 100, 150 oder 200 µg/mL des hypoxiegewonnenen Präparats kultiviert. Die Netzfläche nahm über die niedrigeren Dosen zu; zwischen 150 und 200 µg/mL war der Unterschied als nicht signifikant markiert. Dies stützt ein Plateau im geprüften Bereich, definiert 200 µg/mL aber nicht als allgemeines Optimum für sämtliche Materialien und Zellbedingungen. Beobachtet wurden kurzfristige endothelähnliche Netzwerke ohne Prüfung zirkulierender Perfusion oder langfristiger Stabilität. [Dosisversuch zur Netzwerkbildung](ref:R02)\n\nAnders als bei den vorausgehenden direkten VEGF-Injektionen wurde hier ein gemischtes Vesikelpräparat mit mehreren Proteinen, Lipiden und Nukleinsäuren eingesetzt; zunächst wurden experimentell Endothelzellen untersucht. Die Studien unterscheiden das Hinzufügen eines proangiogenen Faktors von der Messung endothelialer Funktion, erlauben aber keinen absoluten Wirksamkeitsvergleich zwischen VEGF und Exosomen.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Abgestufte Kontrollen verbinden Mikrokugelfreisetzung und osteogene Antworten",
+          "markdown": "Als Träger dienten PEGDA/GelMA-Hydrogelmikrokugeln mit Doppelnetzwerk und ungefähr 80 µm Größe, die über Polydopamin an einem trabekulären Ti–6Al–4V-Gerüst befestigt wurden. Die anfänglichen Konzentrationen des hypoxiegewonnenen Präparats betrugen 1, 2 und 3 mg/mL. Die Freisetzung wurde in simulierter Körperflüssigkeit bis Tag 18 mittels Protein und verbleibender Mikrokugelfluoreszenz verfolgt. Die ausgewählte mittlere Beladung setzte nicht konstant frei: Der dargestellte Proteinzuwachs je 3 Tage stieg zunächst und fiel anschließend, statt dauerhaft 200 µg/mL aufrechtzuerhalten. [Mikrokugeln und Freisetzungskurven](ref:R02)\n\nDie Freisetzungsmethode beschreibt außerdem eine BSA-Zugabe, während BCA selbst Albumin erfasst. Das Abziehen eines Leergels liefert deshalb nicht automatisch eine spezifische Messung intakter Exosomen. Abnehmende Fluoreszenz stützt einen Verlust oder Zerfall der Markierung, bestimmt aber nicht separat Vesikelintegrität und Netzwerkbildungspotenz jedes gesammelten Intervalls. Ein Nachweis über 18 Tage und eine identische wirksame Dosis während 18 Tagen haben unterschiedliche experimentelle Bedeutungen. [Methoden der Freisetzungsquantifizierung](ref:R02)\n\nDie Zellversuche verglichen schrittweise unbeschichtete Gerüste, Polydopamingerüste, Gerüste mit unbeladenen Mikrokugeln und solche mit exosomenbeladenen Mikrokugeln. MC3T3-E1-Zellen wurden mit 50000 je Gerüst ausgesät; untersucht wurden Alamar Blue an den Tagen 1, 3 und 5, ALP am Tag 7 und Alizarinrotmineralisierung am Tag 21. Die vollständige Kombination zeigte an diesen Endpunkten höhere Antworten. ALP und Mineralisierung wurden in osteogenem Induktionsmedium gemessen; eine selbstständige Einleitung ohne Induktion lässt sich dem Material deshalb nicht zuschreiben. Separat wurden HUVECs 3 Tage kultiviert und VEGF-, CD31-, PDGFB- und FGF2-Expression gemessen. Es handelte sich um verschiedene Zellsysteme, nicht um ein etabliertes Gefäßnetz in räumlicher Osteoblasten-Endothel-Kokultur. [Abgestufte Gerüstkontrollen und Zellendpunkte](ref:R02)\n\nTranskriptomische Anreicherung wies auf MAPK-, mTOR-, HIF-1- und VEGF-bezogene Veränderungen hin. Die Vergleiche umfassten jedoch massives Titan gegenüber dem vollständigen Komposit, sodass Geometrie und Oberflächenkomponenten gemeinsam wechselten. Ohne Hemmung, Knockdown oder Rettungsversuche identifiziert die Anreicherung keinen einzelnen notwendigen Signalweg. Die abgestuften Kontrollen stützen unmittelbarer den beobachteten Zuwachs zellulärer Antworten nach Zugabe vesikelbeladener Mikrokugeln.",
+          "figure_ids": [
+            "F03",
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Knochen und Gefäße nahmen im Kaninchenfemur gemeinsam zu, ihre Messgrößen unterscheiden sich jedoch",
+          "markdown": "Distale Femurdefekte bei Kaninchen hatten jeweils 10 mm Durchmesser und Tiefe und wurden in den Wochen 4 und 12 untersucht. Die Originalabbildung vergleicht leere Defekte, unbeschichtete Titangerüste, Polydopamin mit unbeladenen Mikrokugeln und Polydopamin mit vesikelbeladenen Mikrokugeln. Die beladene Gruppe zeigte mehr Knocheneinwachsen und mehr gefäßähnliche Strukturen in untersuchten Regionen als die Gruppe mit unbeladenen Mikrokugeln. Dies verbindet lokale Abgabe auf gemeinsamer Architektur mit zwei Gewebeendpunkten. [Femurdefekte und Gewebebefunde](ref:R02)\n\nWerte müssen den tatsächlichen Achsen folgen: Das ursprüngliche Panel D zeigt BMD und E BV/TV; die Bildlegende vertauscht beide. Im Text heißen 19.3 und 28.1 neue Knochenvolumina in mm³, entsprechen in E jedoch ungefähr 19.3% und 28.1% Knochenvolumenanteil in den Wochen 4 und 12. Hier werden sie deshalb nicht als absolute Knochenvolumina angegeben. Das histologische Panel H misst neue Knochenfläche, I zählt Gefäße innerhalb einer ROI; dies ist keine perfundierte Gefäßdichte je Gewebevolumen. [Einheiten und Bezugsgrößen der Abbildung](ref:R02)\n\nDie beladene Gruppe übertraf die jeweiligen Kontrollen an beiden Zeitpunkten; die Gefäßzahlbalken stiegen zeitlich jedoch nicht deutlich an. Dies unterscheidet sich von der textlichen Beschreibung fortschreitender Netzwerkverdichtung. Außerdem nennen die Tiermethoden eine reine Polydopamingruppe, während die Ergebnisabbildung leere Defekte verwendet. Eine eindeutige Randomisierungszuordnung lässt sich nicht stellvertretend rekonstruieren. Das in der Legende angegebene n=3 beschreibt die dargestellte Quantifizierung, löst den Gruppenkonflikt aber nicht. Perfusionsverfolgung, Permeabilität und reife Gefäßwandzellbedeckung wurden histologisch nicht gemessen. Die Befunde stützen daher vermehrtes gemeinsames Auftreten von Knochen und gefäßähnlichen Strukturen, keinen nachgewiesenen Mechanismus funktioneller Gefäße als Vermittler der Osteogenese.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Das Schweinemodell untersucht Zellquelle und Gewebeverteilung im selben Defekt",
+          "markdown": "Lau et al. druckten 8×8×3 mm große Gerüste aus 80% PCL und 20% TCP und beluden sie mit während derselben Operation mechanisch aus Fettgewebe gewonnener stromal-vaskulärer Fraktion, SVF. Diese enthielt fettgewebsabgeleitete mesenchymale Zellen, weitere Stromazellen und Immunzellen; sie war keine gereinigte, quantifizierte und expandierte einzelne Stammzellpopulation. Fünf Schweine erhielten jeweils vier Behandlungen: SVF-beladenes Gerüst, unbeladenes Gerüst, autologen Knochen und leeren Defekt. Bei einem Schwein traten Wunddehiszenz, Gerüstexposition und ausgeprägte Entzündung auf; es wurde aus der weiteren Analyse ausgeschlossen. [Material, Zellpräparat und Tiergruppen](ref:R03)\n\nBei den verbleibenden vier Schweinen lag der mittlere BV/TV nach 3 Monaten bei 28.7% mit Beladung, 18.6% mit Gerüst allein und 43.7% mit autologem Knochen. Die ersten beiden Werte unterscheiden sich um ungefähr 10.1 Prozentpunkte, nicht um eine relative Zunahme von 10.1%. Jedes Tier zeigte mit Beladung mehr Knochenanteil als ohne, obwohl sich die grundlegende Heilungsfähigkeit zwischen den Tieren deutlich unterschied. Die Originalabbildung trennt Einzeltiere und Mittelwerte, sodass mehrere Defekte nicht als unabhängige Tiere behandelt werden. Für leere Defekte wurde kein BV/TV angegeben, weil sich ihre Grenzen nach Heilung schwer erkennen ließen. [Knochenmenge einzelner Tiere](ref:R03)\n\nHistologisch lag die Mineralisierung bei unbeladenen Gerüsten überwiegend an der Knochenwand; beladene Gerüste zeigten breiter verteilte mineralisierte Matrix und kleine Markräume. Eine fibröse Kapsel blieb bei einem der vier Tiere mit Beladung bestehen. Leerräume im Schnitt umfassten auch Stellen, an denen PCL-TCP-Filamente während der Aufarbeitung aufgelöst wurden; sie dürfen nicht sämtlich als in vivo knochenfreie Räume gelten. Der Versuch verfolgte weder die Abstammung implantierter Zellen noch quantifizierte er Gefäßperfusion. Verbesserungen können direkte Zellbeiträge, parakrine Wirkungen oder veränderte Gewebebelegung umfassen, statt zu beweisen, dass Fettstammzellen sämtlichen neuen Knochen direkt bildeten. [Räumliche Gewebeverteilung](ref:R03)",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Yang et al.: Verteilung ektopen Knochens mit BMP9 und zusätzlichem VEGF.",
+          "interpretation": "A definiert maximale Dicken in drei Richtungen, B die Schnittebenen. C zeigt BMP9, D BMP9+VEGF; die Zeilen sind verschiedene Proben, keine Zeitreihe. Türkis bezeichnet Gerüst, Orange rekonstruierten Knochen; die Maßstabsbalken betragen 3 mm. Knochen liegt überwiegend um das Gerüst, mit deutlicher gruppeninterner Streuung und knochenarmen Proben auch in D. Zusammen mit den nicht signifikanten Tabellenvergleichen stützt dies keinen nachweisbaren VEGF-Zusatznutzen in diesem Schema, nicht biologische Wirkungslosigkeit von VEGF. [Originalabbildung und quantitative Tabelle](ref:R01)"
+        },
+        "F02": {
+          "caption": "Luo et al.: Charakterisierung, Aufnahmeverfolgung und Netzwerk-Dosisantwort hypoxiegewonnener Präparate.",
+          "interpretation": "B färbt VEGFA in Ursprungs-HUVECs an, statt VEGFA innerhalb der Vesikel zu quantifizieren. C misst Proteinkonzentration; die tatsächlichen Banden in D heißen ALIX, CD9 und CD81. E/F zeigen Morphologie und Größe, G den zeitlichen Farbstoffverlauf. Die Dosen von 50–200 µg/mL in H/I beziehen sich auf Proteinmasse. I zeigt die gesamte Netzfläche als Prozentwert; zwischen 150 und 200 steht ns. Netzfläche ist keine Zahl reifer perfundierter Gefäße; die Potenz normoxischer und hypoxischer Vesikel wurde nicht bei gleicher Partikelzahl verglichen. [Charakterisierung und Netzwerke](ref:R02)"
+        },
+        "F03": {
+          "caption": "Luo et al.: Morphologie der Doppelnetzwerkmikrokugeln, akkumuliertes Protein und Intervallfreisetzung.",
+          "interpretation": "A–D zeigen Mikrofluidikherstellung, Gelmoduln, kugelige Partikel und eine Verteilung um 80 µm. E stellt Proteinkonzentration dar, keine prozentuale kumulative Freisetzung. F zeigt den Proteinkonzentrationszuwachs je 3 Tage mit zunächst steigendem, dann fallendem Verlauf. G/H zeigen abnehmende Mikrokugelfluoreszenz über 0–18 Tage. Weder BCA noch PKH26 misst spezifisch intakte funktionelle Vesikel; die Panels stützen daher länger nachweisbare Freisetzung, keine konstante wirksame Dosis zur Netzwerkbildung. [Originalabbildung der Freisetzung](ref:R02)"
+        },
+        "F04": {
+          "caption": "Luo et al.: abgestufte Kontrollen von der Oberflächenmontage bis zu osteogener und endothelialer Expression.",
+          "interpretation": "A–H lokalisieren Beschichtung und Mikrokugeln. I–K zeigen Kokulturaufbau, Lebendzellbilder und Zählung; L misst Stoffwechselfluoreszenz an den Tagen 1, 3 und 5. M zeigt ALP am Tag 7, N/O Mineralisierungsquantifizierung und Färbung am Tag 21, P–S Osteoblastengene und T–W Endothelgene. Die rote vollständige Kombination liegt meist am höchsten. Die Panels betreffen jedoch verschiedene Zellen, Zeiten und Messgrößen, keine kontinuierliche Verfolgung desselben entstehenden Gewebes. Die Legende zu L/M nennt unbeladene Mikrokugeln, entgegen den höchsten roten Balken; hier gelten Diagrammlegende und Methoden. [Originalabbildung der Zellfunktion](ref:R02)"
+        },
+        "F05": {
+          "caption": "Luo et al.: mineralisierter Knochen und gefäßähnliche Strukturen in Kaninchenfemurdefekten.",
+          "interpretation": "A zeigt die Implantation, B/C µCT in Woche 4/12 mit blauem Gerüst und orange rekonstruiertem Knochen. D ist BMD, E BV/TV, entgegen der Legendenreihenfolge. F/G zeigen äußeres Erscheinungsbild und Histologie; gelbe Pfeile in G kennzeichnen neuen Knochen, grüne Material und weiße gefäßähnliche Strukturen. Fläche in H und ROI-Gefäßzahl in I sind unter der Kombination höher, I ist jedoch keine Perfusionsrate. In I liegt die vollständige Kombination in Woche 12 nicht über Woche 4; fortgesetzter Knochenzuwachs und stetig steigende Gefäßzahlen sind unterschiedliche Ergebnisse. [Originalabbildung des Kaninchenmodells](ref:R02)"
+        },
+        "F06": {
+          "caption": "Lau et al.: Knochenvolumenanteile einzelner Schweine und Gruppenmittelwerte.",
+          "interpretation": "Panel a zeigt Behandlungsstellen der Schweine 2–5. Bei jedem Tier liegt autologer Knochen am höchsten, gefolgt von SVF-beladenem und unbeladenem Gerüst, trotz deutlicher Tierunterschiede. Panel b zeigt Mittelwerte und Standardabweichungen; beladen gegen unbeladen ist mit p=0.002 markiert, autologer Knochen unterscheidet sich ebenfalls signifikant von beiden Gerüstgruppen. Weder das ausgeschlossene Schwein noch quantitative Balken leerer Defekte sind enthalten. Die Vertikalachse ist BV/TV in Prozent, keine zelluläre osteogene Umwandlungsrate oder Vaskularisierung. [Einzeltiervergleich](ref:R03)"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "schema_version": 2,
+  "question_id": "P3-051",
+  "p": "P3",
+  "version": 2,
+  "updated_at": "2026-11-03",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_9570565625b4da69743d",
+    "doc_00ddb6360faf3c33e93d",
+    "doc_713343d51c6e98fb5b3b"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "The Effect of 3D Printing Tilt Angle on the Penetration of 3D-Printed Microneedle Arrays",
+      "publisher": "Micromachines",
+      "year": 2023,
+      "url": "https://doi.org/10.3390/mi14061157",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Optimization of Printing Parameters for Digital Light Processing 3D Printing of Hollow Microneedle Arrays",
+      "publisher": "Pharmaceutics",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/pharmaceutics13111837",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Two-Photon Polymerisation 3D Printing of Microneedle Array Templates with Versatile Designs: Application in the Development of Polymeric Drug Delivery Systems",
+      "publisher": "Pharmaceutical Research",
+      "year": 2020,
+      "url": "https://doi.org/10.1007/s11095-020-02887-9",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-051/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10305640/#micromachines-14-01157-f004",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 5",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-051/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10305640/#micromachines-14-01157-f005",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R02",
+      "original_label": "Figure 9",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-051/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8622592/#pharmaceutics-13-01837-f009",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Figure 6",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-051/F04.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8622592/#pharmaceutics-13-01837-f006",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R03",
+      "original_label": "Fig. 5",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-051/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7452932/#Fig5",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R03",
+      "original_label": "Fig. 8",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P3-051/F06.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7452932/#Fig8",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "微针结构如何兼顾强度与皮肤穿刺？",
+      "direction": "微针递送",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "改变打印方向，可以降低同一设计的穿刺载荷",
+          "markdown": "Razzaghi 与 Akbari 用 PEGDA250、Irgacure 819 2 wt% 和 Sudan I 0.04 wt% 制备光固化树脂，以 Photon Mono 4K、100 µm 层高打印，再用乙醇洗 5 min、405 nm 后固化 10 min。比较的是制造时相对平台的倾斜，测试时阵列仍朝向模型垂直压入；不能把制造倾角误写成临床斜插角。[打印与穿刺方法](ref:R01)\n\n实心针直径 400 µm、高 800 µm，根部圆角 250 µm；空心针外径 600 µm、内径 360 µm、高 1400 µm，根部圆角 100 µm。两者均为 4 × 4 阵列，因此空心与实心并非仅有无内腔的单变量比较，针高、直径及根部过渡也同时不同。\n\n在 3 wt% 琼脂糖中，未倾斜、单轴 45° 和双轴各 45° 的力—位移曲线依次降低。作者报告单轴及双轴方案穿刺力约降低 14% 和 38%，每组重复 3 次。穿刺点表现为加载曲线斜率改变，进入材料以后力仍增加，不能把终点最大力当作刺破表面的力。倾斜让粗层高下的针尖逐层形成方式改变，减少尖端钝化；但实验未给出每根针的尖端曲率分布，因而证据是制造方向与整体穿刺载荷的关联，而非已经建立针尖半径的定量预测公式。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "针尖更锐利的收益，需要与针身承载分开评价",
+          "markdown": "同一研究进一步比较针尖角 40°、80°、120° 与打印倾角 0°、30°、45°。空心和实心热图均显示：打印倾角增加时穿刺力下降，针尖角增大时穿刺力上升。最低载荷来自针尖 40°、双轴各 45°，并非 120° 钝尖。这一结果适用于该树脂、层高、几何及琼脂糖模型，不能只保留“倾角最佳”而删除对应条件。[针尖角与打印角的联合比较](ref:R01)\n\n优化阵列随后涂蓝色颜料刺入猪皮，表面着色点及 H&E 切片显示形成通道。组织切片厚度为 20 µm。这是皮肤穿刺的存在性证据；研究没有在同一猪皮试验中对全部角度逐组重测穿刺力，也没有测量疼痛。因此琼脂糖中的百分比降力不能直接称为猪皮降力或无痛程度改善。\n\n尖端需要小接触面积，针身仍须在达到穿刺载荷前保持承载。上述根部圆角用于平滑连接，但没有无圆角对照以量化其独立增益；空心管腔也未在这项力学比较中测量流量、堵塞或递送剂量。外观成形、刺破模型及内腔能够输液是不同观察层级。针尖优化降低的是进入障碍，并未单独给出折断载荷与穿刺载荷之间的安全余量。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "高载荷下未断裂，仍可能伴随弯曲、压短及脱离损伤",
+          "markdown": "Mathew 等使用 Asiga Max UV 与 PlasGRAY 打印圆锥和金字塔空心微针，设计针高 1 mm、底宽或底径 1 mm、内腔 0.25 × 0.25 mm，层高 0.025 mm。打印后 IPA 超声清洗 3 min，比较 385 nm 后固化 0、10、20、30 min。铝块压缩试验以 0.5 mm/s 加载至阵列总力 300 N，测量前后针高及形态；它测的是硬表面压缩响应，而非皮肤穿刺力。[后固化与机械试验](ref:R02)\n\n多数针表现为弯曲而非加载曲线中的突然断裂，研究据此认为强度足以承担通常插入力。但图中针尖已经变形，多数组别高度损失低于约 15%，不等于保持原始几何。作者选择 20 min 固化作为较佳条件；增加到 30 min 未继续降低所有组别的高度损失，部分金字塔针尖在取离铝块后受损，作者提出弯尖在脱离过程中掉落的解释。\n\n10 min 组的正文把 14.9% 与 8.2% 分别归于金字塔和圆锥，图例柱色归属却相反，不能据此确定哪种形状在这一时间点损伤更大。更可靠的读取是：固化时间与形变并非单调关系，需同时看变形照片和误差条。该研究每组 n = 3；300 N 总载荷远高于它引用的 32 N 阵列施加力，也不能由两者相除就得到逐针安全系数，因为接触铝块时针尖接触及载荷分配随变形改变。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "阵列变密后穿得更浅，间距与每针分力不能混为一因",
+          "markdown": "Mathew 等把 10 层 Parafilm M 叠成模型，每层约 127 µm，总厚 1.27 mm；以 1.19 mm/s 下压，达到设定总力后保持 30 s，再逐层数孔。5 × 5 阵列在 10、20、32 N 下穿入层数增加；32 N 时两种形状均有 100% 的针穿过第 2 层，第 3 层分别约为金字塔 75%、圆锥 77%。这描述穿孔比例随深度衰减，不代表全部针均达到最深有孔的一层。[阵列密度与穿孔分布](ref:R02)\n\n同为 15 × 15 × 0.5 mm 底板、32 N 总力，7 × 7 金字塔阵列比 5 × 5 少穿一层，孔数差异 p < 0.05；圆锥阵列差异未显著，p > 0.05。若仅按针数均分总力，25 根对应 1.28 N/针，49 根对应约 0.65 N/针；这是算术平均，不是实测均匀分力。增加密度既减小针间距，也降低平均可用载荷，不能把全部变化单独归因于“钉床效应”。\n\n另把 5 × 5 阵列底板缩为 10 × 10 × 0.5 mm，金字塔插入深度相近，圆锥深层孔数略少，说明密度效应还依赖形状和基底。Parafilm 不具备皮肤的分层组织与回弹；约 400 µm 的模型插入估计不能直接作为每种患者皮肤的已测深度。对空心针而言，出口是否越过实际表面还需由通道位置与有效插入深度共同判断，不能由针高或最深单孔替代。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "复制后的针高和承载底座，改变有效插入比例",
+          "markdown": "Cordeiro 等用双光子聚合打印主模，再复制可溶微针。空白可溶体系为 PVP 20% 与 PVA 50 K 15% 水溶液，模内 5 bar 保持 15 min，室温及 37 °C 各干燥 24 h。最终针高比主模缩短 5–12%，故 CAD 针高不能直接作为最终器件尺寸。[主模复制与可溶针插入](ref:R03)\n\n| 设计 | 针数 | 主模针高/底宽/边缘间距 | 形状 |\n|---|---|---|---|\n| D1 | 256 | 900/300/100 µm | 全圆锥 |\n| D2 | 256 | 900/300/100 µm | 全金字塔 |\n| D3 | 256 | 900/300/100 µm | 300 µm 底座加 600 µm 尖部 |\n| D4 | 121 | 900/300/300 µm | 与 D3 同类底座尖部 |\n| D6 | 25 | 1300/500/500 µm | 全圆锥 |\n\n以 0.5 mm/s 压入、保持 30 s，在 0.082、0.164、0.246 N/针下比较，D1 插入针高的 72–90%，D2 为 64–90%，D6 仅 42–67%。长针并未自动产生最高相对插入。D3/D4 在中间载荷约插入总高的 70%，却已相当于尖部长度的约 97%；把含底座总高与有效尖部长混作分母，会把同一结果解释成不同程度的失败。\n\n载药实验另用 CAB Na 60% 固体含量配方，不能把空白针力学直接等同于载药针。D3、D5 载药较多，但新生猪皮中 24 h 沉积以 D2 最高，D6 最低，跨设计为 95.1–624.5 µg。装入针体的药量与实际进入皮肤的量并不按几何容积简单排序。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "水凝胶的湿态膨胀与干态插入，属于连续但不同的过程",
+          "markdown": "Cordeiro 等还复制 Gantrez S-97 20%、PEG10000 7.5%、Na2CO3 3% 水凝胶针，室温干燥 48 h，80 °C 交联 24 h。D6 为 5 × 5 圆锥，成品针高约 1.2 mm；D7 为 5 × 3 十字形，高约 1.3 mm，两者面积 0.5 cm²、针尖间距 1 mm。十字形设计同时改变针数与横截面，因此不是截面形状单因素试验。[水凝胶针插入与后续递送](ref:R03)\n\nParafilm 中两者可达到 7–8 层、889–1016 µm，但 D6 在 0.8 N/针达到较好插入，D7 需 2.13 N/针才接近。后者每针数值更高，同时整片针数更少；图中十字组误标为 5 × 5，本文按方法、表格及结果一致的 5 × 3 描述。猪全层皮肤另以手指按压 30 s，OCT 证实局部插入，并没有为手指载荷提供同等定量控制。\n\n干针进入后才吸液膨胀。原图按 swelling (%) 报告 1 h 为 1371 ± 75%、24 h 为 2183 ± 48%，这一湿态变化不能当作干态抗压强度。另一项 350 µm 厚猪皮 Franz 扩散实验用约 100 mg 布洛芬钠储库，24 h 累积透过比例为 D6 的 32 ± 8% 与 D7 的 9 ± 4%。两组均能形成通道，却产生不同递送量；插入深度、针数、膨胀后的接触及扩散通路共同进入这一终点，不能把较低递送量全部归于未刺穿皮肤。",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Razzaghi et al. — 原图 4：倾斜制造降低模型穿刺载荷。",
+          "interpretation": "A 为阵列压入琼脂糖的装置；B 对应空心针，C 对应实心针。上排横轴位移 mm、纵轴阵列力 N，蓝、绿、红依次为无旋转、单轴、双轴旋转；下排比较刺破点载荷。B 箭头标出曲线斜率变化，不是后段最高点。B 与 C 的位移及力轴范围不同，不能把视觉高度直接当作两种结构的强度比。[载荷曲线](ref:R01)"
+        },
+        "F02": {
+          "caption": "Razzaghi et al. — 原图 5：最佳组合为小针尖角与较大打印倾角。",
+          "interpretation": "A 画出 40°、80°、120° 针尖；B、C 分别为空心、实心，横轴为针尖角，纵轴为 0°、30°、45° 打印角。颜色越浅代表穿刺力越小，左下区域最低，而不是右侧 120°。图没有逐格误差条，不能从色阶细差推断每对条件都显著；这是琼脂糖比较，猪皮另只测试优化方案。[联合角度矩阵](ref:R01)"
+        },
+        "F03": {
+          "caption": "Mathew et al. — 原图 9：未发生明显载荷突降，仍有针尖形变。",
+          "interpretation": "A 显示针阵列压向铝块；B 的纵轴为针高减少百分比，横轴固化 min。C–F 为不同形状和固化时间的受压后照片，各有 2 mm 标尺，不能当作同一针逐时追踪。B 的 10 min 深浅柱归属与正文相反，故本文不以该点确定形状优劣；20 min 的选择来自综合观察，不能称为完全无损。[压缩后形态](ref:R02)"
+        },
+        "F04": {
+          "caption": "Mathew et al. — 原图 6：穿孔比例沿深度下降，而非单一插入深度。",
+          "interpretation": "A 为金字塔，B 为圆锥；横轴下方是 µm、上方为 Parafilm 层数，纵轴为孔数占针数的百分比。黑线均为大底板 7 × 7，灰线比较两种底板的 5 × 5。两面板的灰色符号对应关系不同，应逐一看图例；稀疏组深层残留孔较多，但同时每针平均可分得更多总载荷。[密度与深度分布](ref:R02)"
+        },
+        "F05": {
+          "caption": "Cordeiro et al. — 原图 5：逐层孔数与按针高归一化是不同读数。",
+          "interpretation": "a 中每条曲线表示某一每针力下孔比例随深度变化，薄膜每层 127 µm；b 横轴为 0.082、0.164、0.246 N/针，纵轴为针高插入百分比。D1/D2 在较高载荷接近 90%，D6 仍较低；这一相对差别不能直接换成绝对深度差，因为各设计高度不同。图上星号仅属于所连比较，不能推广到全部设计对。[可溶针分层插入](ref:R03)"
+        },
+        "F06": {
+          "caption": "Cordeiro et al. — 原图 8：干态插入与吸水膨胀分开测量。",
+          "interpretation": "a 为圆锥及十字形复制件，b 是以 min 为时间轴的膨胀百分比；c 比较不同每针力下的薄膜孔数，d 为猪皮 OCT 人工着色图，蓝色器件、绿色皮肤，不是荧光药物分布。c 右图写 5 × 5，但方法及表格为 5 × 3，本文据后者确定样本。两形状使用的每针力档位不同，不能把同一种线型误认为相同总施力。[水凝胶结构与插入](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "How can microneedle structures combine strength with skin penetration?",
+      "direction": "Microneedle delivery",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Changing build orientation can lower puncture load for the same design",
+          "markdown": "Razzaghi and Akbari prepared resin from PEGDA250, 2 wt% Irgacure 819 and 0.04 wt% Sudan I, printed with a Photon Mono 4K at 100 µm layer height, washed in ethanol for 5 min and post-cured at 405 nm for 10 min. The variable was orientation relative to the build platform during manufacture; arrays were still pressed normally into the test model. Build tilt is not a clinical oblique-insertion angle. [Printing and puncture methods](ref:R01)\n\nSolid needles were 400 µm in diameter and 800 µm high, with a 250 µm root fillet; hollow needles had 600 µm outer diameter, 360 µm lumen diameter and 1400 µm height, with a 100 µm fillet. Both used 4 × 4 arrays. Hollow versus solid therefore was not a lumen-only comparison: height, diameter and root transition also differed.\n\nIn 3 wt% agarose, force–displacement curves decreased from untilted prints to a single 45° rotation and then two 45° rotations. Reported puncture-force reductions were approximately 14% and 38%, with 3 experiments per group. Puncture appeared as a change in loading-curve slope; force continued to increase after entry. Maximum end-of-test force is therefore not surface-puncture force. Tilting changes how a tip forms across coarse layers and reduces blunting. However, distributions of individual tip curvature were not measured. The evidence links build orientation to array puncture load, without establishing a quantitative prediction formula based on tip radius.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "A sharper tip reduces entry resistance, while shaft load capacity requires a separate test",
+          "markdown": "The same study compared tip angles of 40°, 80° and 120° with build tilts of 0°, 30° and 45°. Hollow and solid heatmaps both showed decreasing puncture force with greater build tilt and increasing force with greater tip angle. The minimum came from a 40° tip and two 45° build rotations, not the blunt 120° tip. This applies to the tested resin, layer height, geometry and agarose model; those conditions belong with the stated optimum. [Joint tip-angle and build-angle comparison](ref:R01)\n\nOptimized arrays were then coated with blue paint and inserted into pig skin. Surface staining and H&E sections showed channels; tissue sections were 20 µm thick. This establishes the presence of skin puncture. The investigators did not remeasure every angle group's puncture force in that same pig-skin experiment or measure pain. Percentage force reductions in agarose are therefore not measured pig-skin reductions or improvements in painlessness.\n\nThe tip needs a small contact area, but the shaft must carry load until puncture occurs. Root fillets smooth the connection, yet no unfilleted control quantified their independent contribution. The mechanical comparison also did not measure lumen flow, occlusion or delivered dose. Shape formation, model puncture and fluid transport through a lumen are distinct observations. Tip optimization lowers the entry barrier without separately establishing a margin between fracture and puncture loads.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "No fracture at high load can coexist with bending, shortening and damage on detachment",
+          "markdown": "Mathew and colleagues used an Asiga Max UV and PlasGRAY for conical and pyramidal hollow needles designed at 1 mm height, 1 mm base width or diameter and a 0.25 × 0.25 mm lumen, with 0.025 mm layers. After 3 min IPA sonication, they compared 0, 10, 20 and 30 min post-curing at 385 nm. Compression against aluminium proceeded at 0.5 mm/s to a total array load of 300 N, with pre/post needle heights and morphology recorded. This measures hard-surface compression, not skin puncture force. [Post-curing and mechanical testing](ref:R02)\n\nMost needles bent instead of producing an abrupt fracture event in the loading curve, which the authors interpreted as adequate strength for usual insertion loads. Nevertheless, tips visibly deformed, and height loss below approximately 15% in most groups did not mean preserved original geometry. The authors selected 20 min curing as preferable. Extending curing to 30 min did not further reduce height loss in every group; some pyramidal tips were damaged after removal from aluminium, potentially through detachment of bent tips during separation.\n\nFor 10 min, the text assigns 14.9% and 8.2% to pyramids and cones, respectively, whereas the figure's colour assignment is reversed. That inconsistency prevents deciding which shape was more damaged at this time point. The firmer observation is a non-monotonic curing–deformation relationship requiring photographs and error bars together. Each group used n = 3. The total 300 N load greatly exceeded the cited 32 N array application force, but dividing them does not yield an individual-needle safety factor: tip contact and load distribution against aluminium change during deformation.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Denser arrays can insert less deeply, with spacing and force per needle changing together",
+          "markdown": "Mathew and colleagues stacked 10 Parafilm M layers, approximately 127 µm each and 1.27 mm overall, lowered the probe at 1.19 mm/s and held the target total force for 30 s before counting holes layer by layer. A 5 × 5 array reached progressively more layers at 10, 20 and 32 N. At 32 N, 100% of needles of both shapes passed layer 2, versus approximately 75% for pyramids and 77% for cones in layer 3. This describes a depth-dependent fraction, not every needle reaching the deepest perforated layer. [Array density and hole distributions](ref:R02)\n\nAt the same 15 × 15 × 0.5 mm plate size and 32 N total force, 7 × 7 pyramidal arrays penetrated one layer less than 5 × 5 arrays, with a hole-count difference of p < 0.05. Conical arrays did not differ significantly, p > 0.05. Simply dividing total force gives 1.28 N/needle for 25 needles and approximately 0.65 N/needle for 49. These are arithmetic averages, not measured uniform load sharing. Increasing density reduces spacing and mean available load, so the entire change cannot be assigned solely to a bed-of-nails effect.\n\nReducing the base of a 5 × 5 array to 10 × 10 × 0.5 mm produced similar pyramidal insertion depth and slightly fewer deep-layer holes for cones. Density effects therefore also depend on shape and base. Parafilm lacks skin's layered tissue and recoil; a model estimate near 400 µm is not a measured depth for every patient's skin. For hollow needles, outlet immersion depends jointly on outlet position and effective insertion, rather than nominal needle height or the deepest isolated hole.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Replication shrinkage and supporting pedestals change the meaning of insertion fraction",
+          "markdown": "Cordeiro and colleagues printed masters by two-photon polymerisation and replicated dissolving needles. Blank needles used an aqueous 20% PVP and 15% PVA 50 K blend, held in moulds at 5 bar for 15 min and dried for 24 h each at room temperature and 37 °C. Final needles were 5–12% shorter than masters, so CAD height cannot stand for final device dimensions. [Master replication and dissolving-needle insertion](ref:R03)\n\n| Design | Needle count | Master height/base width/edge spacing | Shape |\n|---|---|---|---|\n| D1 | 256 | 900/300/100 µm | Full cone |\n| D2 | 256 | 900/300/100 µm | Full pyramid |\n| D3 | 256 | 900/300/100 µm | 300 µm pedestal plus 600 µm tip |\n| D4 | 121 | 900/300/300 µm | Same pedestal-tip type as D3 |\n| D6 | 25 | 1300/500/500 µm | Full cone |\n\nInsertion at 0.5 mm/s with a 30 s hold was compared at 0.082, 0.164 and 0.246 N/needle. D1 reached 72–90% of needle height, D2 64–90% and D6 only 42–67%. Longer needles did not automatically achieve the highest relative insertion. D3/D4 reached about 70% of total height at the intermediate load, already approximately 97% of tip length. Using total pedestal-inclusive height or active tip length as the denominator gives very different interpretations of the same result.\n\nDrug-loading experiments separately used 60% CAB Na on a solids basis; blank-needle mechanics do not directly establish loaded-needle mechanics. D3 and D5 carried more drug, but deposition in neonatal pig skin at 24 h was greatest with D2 and lowest with D6, ranging across designs from 95.1–624.5 µg. Drug contained within needles and drug actually deposited in skin do not simply follow geometric volume in the same order.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Hydrogel swelling and dry insertion are connected but distinct processes",
+          "markdown": "Cordeiro and colleagues also replicated hydrogel-forming needles from 20% Gantrez S-97, 7.5% PEG10000 and 3% Na2CO3, dried at room temperature for 48 h and crosslinked at 80 °C for 24 h. D6 had 5 × 5 cones with final height about 1.2 mm; D7 had 5 × 3 cross-shaped needles about 1.3 mm high. Both occupied 0.5 cm² with 1 mm tip-to-tip spacing. The cross-shaped design changed needle count as well as section, preventing a section-only comparison. [Hydrogel insertion and subsequent delivery](ref:R03)\n\nBoth reached 7–8 Parafilm layers, 889–1016 µm, but D6 inserted well at 0.8 N/needle whereas D7 required 2.13 N/needle for comparable efficiency. The latter has a higher per-needle force but fewer needles per patch. The figure mistakenly labels the cross-shaped group 5 × 5; this report follows the consistent 5 × 3 design in methods, table and results. Separate full-thickness pig-skin insertion used thumb pressure for 30 s. OCT confirmed local entry without equally quantitative control of the manual load.\n\nDry needles absorb fluid and swell after entry. The original graph reports swelling (%) of 1371 ± 75% at 1 h and 2183 ± 48% at 24 h; this wet-state change is not dry compressive strength. A separate Franz-cell experiment with 350 µm pig skin and approximately 100 mg ibuprofen sodium reservoirs measured cumulative 24 h permeation of 32 ± 8% for D6 and 9 ± 4% for D7. Both formed pathways but delivered different amounts. Insertion depth, needle count, swollen contact and diffusion paths all contribute; lower delivery cannot be attributed entirely to failure to puncture skin.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Razzaghi et al. — Original Figure 4: tilted manufacture reduces model puncture load.",
+          "interpretation": "A shows the array–agarose apparatus; B concerns hollow needles and C solid needles. Upper plots show displacement in mm and array force in N. Blue, green and red denote no rotation, one-axis rotation and two-axis rotation; lower plots compare puncture-point loads. The arrow in B marks a slope change rather than the later maximum. B and C have different force and displacement ranges, so apparent heights are not a direct strength ratio between structures. [Loading curves](ref:R01)"
+        },
+        "F02": {
+          "caption": "Razzaghi et al. — Original Figure 5: small tip angle and greater build tilt give the lowest load.",
+          "interpretation": "A illustrates 40°, 80° and 120° tips. B and C show hollow and solid needles, with tip angle on x and 0°, 30° and 45° build angle on y. Lighter colour means lower puncture force: the minimum is lower left, not at 120° on the right. There are no per-cell error bars, so subtle colour differences do not prove significance for every pair. Agarose supplies the matrix; pig skin was tested separately only with the optimized design. [Joint angle matrix](ref:R01)"
+        },
+        "F03": {
+          "caption": "Mathew et al. — Original Figure 9: absence of a clear load drop does not exclude tip deformation.",
+          "interpretation": "A shows arrays pressed against aluminium. B plots percentage needle-height loss against curing time in min. C–F are post-compression photographs of different shapes and curing times, each with a 2 mm scale, not longitudinal images of one needle. The dark/light assignment at 10 min conflicts with the text, so this point is not used to rank shapes. Selecting 20 min followed combined observations, without establishing zero damage. [Post-compression morphology](ref:R02)"
+        },
+        "F04": {
+          "caption": "Mathew et al. — Original Figure 6: perforation fraction decreases with depth rather than defining one insertion depth.",
+          "interpretation": "A shows pyramids and B cones. Lower x labels are µm, upper labels Parafilm layers; y is holes as a percentage of needle count. Black denotes large-base 7 × 7 arrays; grey curves compare 5 × 5 arrays on two bases. Grey symbol assignments differ between panels and require their own legends. Sparse groups retain more deep holes, but also have more mean total load available per needle. [Density and depth distributions](ref:R02)"
+        },
+        "F05": {
+          "caption": "Cordeiro et al. — Original Figure 5: layerwise holes and height-normalized insertion are different readings.",
+          "interpretation": "In a, each curve shows hole fraction versus depth at one per-needle force; each film layer is 127 µm. In b, x is 0.082, 0.164 and 0.246 N/needle and y is inserted percentage of needle height. D1/D2 approach 90% at higher load while D6 remains lower. This relative difference is not directly an absolute-depth difference because design heights differ. Asterisks apply only to bracketed comparisons, not every design pair. [Layerwise dissolving-needle insertion](ref:R03)"
+        },
+        "F06": {
+          "caption": "Cordeiro et al. — Original Figure 8: dry insertion and water-driven swelling are measured separately.",
+          "interpretation": "a shows replicated cones and cross-shaped needles; b plots swelling percentage against min. c compares film holes at different per-needle forces, while d contains artificially coloured pig-skin OCT: blue devices and green skin, not fluorescent drug distribution. The right c plot says 5 × 5, whereas methods and table specify 5 × 3; this report uses the latter. Force levels differ between shapes, so identical line styles do not mean identical total application force. [Hydrogel structure and insertion](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie verbinden Mikronadelstrukturen Festigkeit mit Hautpenetration?",
+      "direction": "Mikronadelverabreichung",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Eine andere Druckorientierung kann bei gleichem Design die Einstichlast senken",
+          "markdown": "Razzaghi und Akbari stellten Harz aus PEGDA250, 2 wt% Irgacure 819 und 0.04 wt% Sudan I her, druckten mit einem Photon Mono 4K bei 100 µm Schichthöhe, wuschen 5 min mit Ethanol und härteten bei 405 nm für 10 min nach. Variiert wurde die Orientierung zur Bauplattform während der Herstellung; im Versuch wurden die Arrays weiterhin senkrecht in das Modell gedrückt. Druckneigung ist kein klinischer schräger Einstichwinkel. [Druck- und Einstichmethoden](ref:R01)\n\nMassive Nadeln hatten 400 µm Durchmesser, 800 µm Höhe und 250 µm Wurzelradius; Hohlnadeln besaßen 600 µm Außendurchmesser, 360 µm Lumendurchmesser, 1400 µm Höhe und 100 µm Wurzelradius. Beide bildeten 4 × 4 Arrays. Hohl gegen massiv war somit kein reiner Lumenvergleich: Höhe, Durchmesser und Wurzelübergang unterschieden sich ebenfalls.\n\nIn 3 wt% Agarose nahmen Kraft–Weg-Kurven von ungekippten Drucken über eine einzelne 45°-Drehung zu zwei 45°-Drehungen ab. Berichtet wurden etwa 14% und 38% geringere Einstichkräfte bei 3 Versuchen je Gruppe. Der Durchstich erschien als Steigungsänderung; nach dem Eindringen stieg die Kraft weiter. Die maximale Endkraft ist daher nicht die Kraft zum Oberflächendurchstich. Neigung verändert den schichtweisen Spitzenaufbau bei groben Schichten und vermindert Abstumpfung. Verteilungen individueller Spitzenkrümmung wurden jedoch nicht gemessen. Belegt ist eine Beziehung zwischen Druckorientierung und Array-Einstichlast, keine quantitative Vorhersageformel anhand des Spitzenradius.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Eine schärfere Spitze senkt den Eintrittswiderstand; die Schafttragfähigkeit braucht eine eigene Prüfung",
+          "markdown": "Dieselbe Studie verglich Spitzenwinkel von 40°, 80° und 120° mit Druckneigungen von 0°, 30° und 45°. Beide Wärmekarten für hohle und massive Nadeln zeigen sinkende Einstichkraft bei größerer Druckneigung und steigende Kraft bei größerem Spitzenwinkel. Das Minimum lag bei einer 40°-Spitze und zwei 45°-Druckdrehungen, nicht bei der stumpfen 120°-Spitze. Dies gilt für geprüftes Harz, Schichthöhe, Geometrie und Agarosemodell; diese Bedingungen gehören zur Aussage über das Optimum. [Gemeinsamer Vergleich von Spitzen- und Druckwinkel](ref:R01)\n\nOptimierte Arrays wurden anschließend mit blauer Farbe beschichtet und in Schweinehaut eingeführt. Oberflächenfärbung und H&E-Schnitte zeigten Kanäle; die Gewebeschnitte waren 20 µm dick. Damit ist Hautdurchstich nachgewiesen. Nicht für sämtliche Winkelgruppen wurden im selben Hautversuch Einstichkräfte erneut gemessen; Schmerz wurde ebenfalls nicht untersucht. Prozentuale Kraftsenkung in Agarose ist somit keine gemessene Kraftsenkung in Schweinehaut oder Verbesserung der Schmerzfreiheit.\n\nDie Spitze benötigt eine kleine Kontaktfläche, der Schaft muss jedoch bis zum Durchstich Last tragen. Wurzelrundungen glätten die Verbindung, doch ein ungerundeter Kontrollkörper zur Quantifizierung ihres Einzelbeitrags fehlte. Der mechanische Vergleich bestimmte auch keinen Lumenfluss, keine Verstopfung und keine abgegebene Dosis. Formbildung, Modelldurchstich und Flüssigkeitstransport im Lumen sind getrennte Beobachtungen. Spitzenoptimierung senkt die Eintrittsbarriere, ohne getrennt den Abstand zwischen Bruch- und Einstichlast zu bestimmen.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Kein Bruch bei hoher Last kann mit Biegung, Verkürzung und Ablöseschäden einhergehen",
+          "markdown": "Mathew und Kollegen druckten mit Asiga Max UV und PlasGRAY konische und pyramidenförmige Hohlnadeln: vorgesehen waren 1 mm Höhe, 1 mm Basisbreite beziehungsweise -durchmesser, 0.25 × 0.25 mm Lumen und 0.025 mm Schichthöhe. Nach 3 min IPA-Ultraschallreinigung wurden 0, 10, 20 und 30 min Nachhärtung bei 385 nm verglichen. Gegen Aluminium wurde bei 0.5 mm/s bis zur Array-Gesamtlast von 300 N komprimiert; Nadelhöhe und Morphologie wurden davor und danach gemessen. Geprüft wird Kompression an einer harten Oberfläche, nicht Haut-Einstichkraft. [Nachhärtung und mechanische Prüfung](ref:R02)\n\nDie meisten Nadeln bogen sich, statt einen abrupten Bruch in der Lastkurve zu erzeugen; die Autoren werteten dies als ausreichende Festigkeit für übliche Einführlasten. Dennoch waren Spitzen sichtbar verformt. Höhenverlust unter etwa 15% in den meisten Gruppen bedeutete keinen Erhalt der Ausgangsgeometrie. Die Autoren wählten 20 min Härtung als günstig. Eine Verlängerung auf 30 min senkte Höhenverlust nicht in jeder Gruppe weiter; einige Pyramidenspitzen waren nach Abnahme vom Aluminium beschädigt, möglicherweise durch Ablösen gebogener Spitzen beim Trennen.\n\nFür 10 min ordnet der Text 14.9% und 8.2% Pyramiden beziehungsweise Kegeln zu, während die Farben der Abbildungslegende umgekehrt zugeordnet sind. Damit lässt sich nicht entscheiden, welche Form zu diesem Zeitpunkt stärker geschädigt war. Belastbarer ist der nicht monotone Zusammenhang von Härtung und Verformung, der Fotos und Fehlerbalken gemeinsam erfordert. Jede Gruppe umfasste n = 3. Die Gesamtlast von 300 N lag weit über der zitierten Array-Anlegekraft von 32 N. Ihr Quotient ist dennoch kein Sicherheitsfaktor einer einzelnen Nadel: Spitzenkontakt und Lastverteilung auf Aluminium ändern sich während der Verformung.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Dichtere Arrays können weniger tief eindringen; Abstand und Kraft je Nadel ändern sich zugleich",
+          "markdown": "Mathew und Kollegen stapelten 10 Parafilm-M-Schichten von jeweils etwa 127 µm zu insgesamt 1.27 mm, senkten die Sonde mit 1.19 mm/s und hielten die Zielgesamtkraft 30 s, bevor Löcher schichtweise gezählt wurden. Ein 5 × 5 Array erreichte bei 10, 20 und 32 N zunehmend mehr Schichten. Bei 32 N durchdrangen 100% der Nadeln beider Formen Schicht 2, gegenüber etwa 75% der Pyramiden und 77% der Kegel in Schicht 3. Dies beschreibt einen tiefenabhängigen Anteil, nicht sämtliche Nadeln bis zur tiefsten perforierten Schicht. [Arraydichte und Lochverteilung](ref:R02)\n\nBei gleicher Grundplatte von 15 × 15 × 0.5 mm und 32 N Gesamtlast durchdrangen 7 × 7 Pyramidenarrays eine Schicht weniger als 5 × 5 Arrays; die Lochzahlen unterschieden sich mit p < 0.05. Für Kegel war der Unterschied nicht signifikant, p > 0.05. Einfaches Teilen der Gesamtlast ergibt bei 25 Nadeln 1.28 N/Nadel, bei 49 etwa 0.65 N/Nadel. Dies sind arithmetische Mittel, keine gemessene gleichmäßige Kraftverteilung. Mehr Dichte verringert zugleich Abstand und mittlere verfügbare Last; die gesamte Änderung lässt sich nicht allein einem Nagelbett-Effekt zuschreiben.\n\nEine Verkleinerung der Grundplatte des 5 × 5 Arrays auf 10 × 10 × 0.5 mm ergab ähnliche Pyramideneindringtiefe und bei Kegeln etwas weniger tiefe Löcher. Dichtewirkungen hängen somit auch von Form und Basis ab. Parafilm besitzt weder geschichtetes Hautgewebe noch dessen Rückstellung; eine Modellschätzung um 400 µm ist keine gemessene Tiefe für jede Patientenhaut. Bei Hohlnadeln hängt das Eintauchen des Auslasses gemeinsam von dessen Position und wirksamem Eindringen ab, nicht von Sollnadelhöhe oder tiefstem Einzelloch.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Schrumpfung bei der Replikation und tragende Sockel verändern den Eindringanteil",
+          "markdown": "Cordeiro und Kollegen druckten Master mittels Zweiphotonenpolymerisation und replizierten auflösbare Nadeln. Wirkstofffreie Nadeln bestanden aus einer wässrigen Mischung von 20% PVP und 15% PVA 50 K, blieben 15 min bei 5 bar in Formen und trockneten jeweils 24 h bei Raumtemperatur und 37 °C. Fertige Nadeln waren 5–12% kürzer als die Master; CAD-Höhe ersetzt daher keine Fertigmaße. [Masterreplikation und Eindringen auflösbarer Nadeln](ref:R03)\n\n| Design | Nadelzahl | Masterhöhe/Basisbreite/Randabstand | Form |\n|---|---|---|---|\n| D1 | 256 | 900/300/100 µm | Vollständiger Kegel |\n| D2 | 256 | 900/300/100 µm | Vollständige Pyramide |\n| D3 | 256 | 900/300/100 µm | 300 µm Sockel plus 600 µm Spitze |\n| D4 | 121 | 900/300/300 µm | Sockel-Spitzen-Typ wie D3 |\n| D6 | 25 | 1300/500/500 µm | Vollständiger Kegel |\n\nDas Eindringen bei 0.5 mm/s und 30 s Halten wurde bei 0.082, 0.164 und 0.246 N/Nadel verglichen. D1 erreichte 72–90% der Nadelhöhe, D2 64–90% und D6 nur 42–67%. Längere Nadeln erzielten nicht automatisch das höchste relative Eindringen. D3/D4 erreichten bei mittlerer Last etwa 70% der Gesamthöhe, bereits ungefähr 97% der Spitzenlänge. Gesamthöhe einschließlich Sockel oder aktive Spitzenlänge als Nenner ergeben sehr unterschiedliche Interpretationen desselben Resultats.\n\nBeladungsversuche verwendeten separat 60% CAB Na bezogen auf Feststoffe; Mechanik unbeladener Nadeln belegt nicht direkt die Mechanik beladener Nadeln. D3 und D5 enthielten mehr Wirkstoff, die Ablagerung in neonataler Schweinehaut nach 24 h war jedoch mit D2 am höchsten und mit D6 am niedrigsten, designübergreifend 95.1–624.5 µg. Nadelinhalt und tatsächlich in der Haut deponierte Menge folgen somit nicht einfach derselben geometrischen Volumenrangfolge.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Hydrogelquellung und trockenes Eindringen sind verbundene, aber unterschiedliche Prozesse",
+          "markdown": "Cordeiro und Kollegen replizierten zudem hydrogelbildende Nadeln aus 20% Gantrez S-97, 7.5% PEG10000 und 3% Na2CO3, trockneten 48 h bei Raumtemperatur und vernetzten 24 h bei 80 °C. D6 bestand aus 5 × 5 Kegeln mit etwa 1.2 mm Fertighöhe; D7 aus 5 × 3 kreuzförmigen Nadeln mit etwa 1.3 mm Höhe. Beide belegten 0.5 cm² bei 1 mm Spitzenabstand. Das Kreuzdesign änderte neben dem Querschnitt die Nadelzahl und erlaubt keinen reinen Querschnittsvergleich. [Hydrogeleindringen und anschließende Abgabe](ref:R03)\n\nBeide erreichten 7–8 Parafilm-Schichten beziehungsweise 889–1016 µm. D6 drang bei 0.8 N/Nadel gut ein, D7 benötigte für ähnliche Effizienz 2.13 N/Nadel. Letzteres bedeutet mehr Kraft je Nadel bei weniger Nadeln pro Pflaster. Die Grafik beschriftet die Kreuzgruppe fälschlich als 5 × 5; hier gilt das in Methoden, Tabelle und Ergebnissen übereinstimmende 5 × 3 Design. Vollhaut vom Schwein wurde separat mit 30 s Daumendruck behandelt. OCT bestätigte örtliches Eindringen ohne gleichwertige quantitative Kontrolle der manuellen Kraft.\n\nTrockene Nadeln nehmen nach Eintritt Flüssigkeit auf und quellen. Die Originalgrafik berichtet swelling (%) von 1371 ± 75% nach 1 h und 2183 ± 48% nach 24 h; diese Nasszustandsänderung ist keine trockene Druckfestigkeit. Ein separater Franz-Zell-Versuch mit 350 µm Schweinehaut und etwa 100 mg Ibuprofen-Natrium-Reservoir ergab nach 24 h kumulative Permeation von 32 ± 8% für D6 und 9 ± 4% für D7. Beide bildeten Wege, gaben aber unterschiedliche Mengen ab. Eindringtiefe, Nadelzahl, gequollener Kontakt und Diffusionswege gehen gemeinsam in diesen Endpunkt ein; geringere Abgabe lässt sich nicht vollständig einem fehlenden Hautdurchstich zuschreiben.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Razzaghi et al. — Originalabbildung 4: geneigte Herstellung senkt die Modelldurchstichlast.",
+          "interpretation": "A zeigt die Array–Agarose-Anordnung, B Hohlnadeln und C massive Nadeln. Oben stehen Weg in mm und Array-Kraft in N. Blau, Grün und Rot bezeichnen keine, einachsige und zweiachsige Drehung; unten werden Durchstichlasten verglichen. Der Pfeil in B markiert eine Steigungsänderung, nicht das spätere Maximum. B und C haben verschiedene Kraft- und Wegbereiche; optische Höhen sind kein direkter Festigkeitsquotient beider Strukturen. [Lastkurven](ref:R01)"
+        },
+        "F02": {
+          "caption": "Razzaghi et al. — Originalabbildung 5: kleiner Spitzenwinkel und größere Druckneigung ergeben die geringste Last.",
+          "interpretation": "A zeigt Spitzen mit 40°, 80° und 120°. B und C betreffen hohle und massive Nadeln; x ist Spitzenwinkel, y Druckwinkel von 0°, 30° und 45°. Helle Farbe bedeutet geringere Einstichkraft: Das Minimum liegt links unten, nicht rechts bei 120°. Fehlerbalken je Feld fehlen; kleine Farbunterschiede belegen keine Signifikanz aller Paare. Die Matrix stammt aus Agarose; Schweinehaut wurde separat nur mit dem optimierten Design geprüft. [Gemeinsame Winkelmatrix](ref:R01)"
+        },
+        "F03": {
+          "caption": "Mathew et al. — Originalabbildung 9: fehlender deutlicher Lastabfall schließt Spitzenverformung nicht aus.",
+          "interpretation": "A zeigt Arrays gegen Aluminium; B trägt prozentualen Nadelhöhenverlust gegen Härtungszeit in min auf. C–F zeigen verschiedene Formen und Härtungszeiten nach Kompression mit jeweils 2 mm Maßstab, keine zeitliche Verfolgung einer Nadel. Die Dunkel/Hell-Zuordnung bei 10 min widerspricht dem Text; daraus wird keine Formrangfolge abgeleitet. Die Wahl von 20 min beruht auf gemeinsamen Beobachtungen und belegt keine vollständige Schadensfreiheit. [Morphologie nach Kompression](ref:R02)"
+        },
+        "F04": {
+          "caption": "Mathew et al. — Originalabbildung 6: Der Lochanteil sinkt mit der Tiefe statt eine einzige Eindringtiefe festzulegen.",
+          "interpretation": "A zeigt Pyramiden, B Kegel. Unten auf x stehen µm, oben Parafilm-Schichten; y zeigt Löcher als Prozent der Nadelzahl. Schwarz bezeichnet große Grundplatten mit 7 × 7 Nadeln, Grau vergleicht zwei Grundplatten mit 5 × 5. Graue Symbole sind zwischen den Teilbildern unterschiedlich zugeordnet und benötigen die jeweilige Legende. Lockerere Gruppen bewahren mehr tiefe Löcher, verfügen aber zugleich über mehr mittlere Gesamtlast je Nadel. [Dichte und Tiefenverteilung](ref:R02)"
+        },
+        "F05": {
+          "caption": "Cordeiro et al. — Originalabbildung 5: schichtweise Löcher und höhennormiertes Eindringen sind verschiedene Größen.",
+          "interpretation": "In a beschreibt jede Kurve den Lochanteil über die Tiefe bei einer Kraft je Nadel; jede Filmschicht ist 127 µm dick. In b stehen 0.082, 0.164 und 0.246 N/Nadel auf x, eingedrungene Nadelhöhe in Prozent auf y. D1/D2 nähern sich bei höherer Last 90%, D6 bleibt darunter. Dies ist wegen unterschiedlicher Designhöhen nicht unmittelbar ein absoluter Tiefenunterschied. Sterne gelten nur für verbundene Vergleiche, nicht sämtliche Designpaare. [Schichtweises Eindringen auflösbarer Nadeln](ref:R03)"
+        },
+        "F06": {
+          "caption": "Cordeiro et al. — Originalabbildung 8: trockenes Eindringen und wasserbedingte Quellung werden getrennt gemessen.",
+          "interpretation": "a zeigt replizierte Kegel und Kreuznadeln, b Quellung in Prozent über min. c vergleicht Filmlöcher bei verschiedenen Kräften je Nadel; d enthält künstlich eingefärbtes Haut-OCT mit blauen Geräten und grüner Haut, keine fluoreszierende Wirkstoffverteilung. Rechts in c steht 5 × 5, Methoden und Tabelle nennen 5 × 3; hier gilt Letzteres. Die Kraftstufen unterscheiden sich zwischen Formen; gleicher Linientyp bedeutet daher keine gleiche Gesamtanlegekraft. [Hydrogelstruktur und Eindringen](ref:R03)"
+        }
+      }
+    }
+  }
+}

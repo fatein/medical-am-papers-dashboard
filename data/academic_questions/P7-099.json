@@ -1,0 +1,336 @@
+{
+  "schema_version": 2,
+  "question_id": "P7-099",
+  "p": "P7",
+  "version": 2,
+  "updated_at": "2026-11-04",
+  "evidence_cutoff": "2026-11-03",
+  "related_paper_ids": [
+    "doc_0e546fe4d81d9ac9461f",
+    "doc_fab7f08792dd08b8a033"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "3D-Printed Microfluidic Droplet Generator with Hydrophilic and Hydrophobic Polymers",
+      "publisher": "Micromachines",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/mi12010091",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "3D-Printed Microfluidic One-Way Valves and Pumps",
+      "publisher": "Micromachines",
+      "year": 2023,
+      "url": "https://doi.org/10.3390/mi14071286",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Surface Modification of 3D Printed Microfluidic Devices for Controlled Wetting in Two-Phase Flow",
+      "publisher": "Micromachines",
+      "year": 2023,
+      "url": "https://doi.org/10.3390/mi14010006",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 4",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-099/F01.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7830873/#micromachines-12-00091-f004",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F02",
+      "reference_id": "R01",
+      "original_label": "Figure 6",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-099/F02.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7830873/#micromachines-12-00091-f006",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F03",
+      "reference_id": "R01",
+      "original_label": "Figure 8",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-099/F03.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7830873/#micromachines-12-00091-f008",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F04",
+      "reference_id": "R02",
+      "original_label": "Figure 2",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-099/F04.png",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10384158/#micromachines-14-01286-f002",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F05",
+      "reference_id": "R02",
+      "original_label": "Figure 5",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-099/F05.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10384158/#micromachines-14-01286-f005",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "F06",
+      "reference_id": "R03",
+      "original_label": "Figure 3",
+      "image_url": "",
+      "asset_path": "assets/academic_figures/P7-099/F06.jpg",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9866927/#micromachines-14-00006-f003",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "芯片如何实现稳定的液滴和流体控制？",
+      "direction": "微流控芯片",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "相同交叉口与流量，润湿性决定并流还是断滴",
+          "markdown": "Warr 等将打印交叉口固定为宽 106 μm、高 110 μm，比较 TET、PEGDA、HDDA 和 HDDA/LA 树脂；染色去离子水和食用植物油采用相同的 5 μL/min 设定。TET 和 PEGDA 中水相沿壁铺展，与油相并流；HDDA 及 HDDA/LA 则形成离散液滴。由此可见，在保持几何和供液条件时，材料表面已足以改变流型，不能仅用入口流量比解释液滴稳定性。[材料与固定几何对照](ref:R01)\n\n配方比较还包含可制造性的约束：纯 HDDA 容易粘在 FEP 槽膜上，加入 LA 后以 85% HDDA、15% LA 的质量配比改善脱离，同时仍可成滴；LA 单独使用未形成合适固体。两类吸光剂为 2% NPS 与 0.38% avobenzone，均配 1% Irgacure 819，分别结合 385 nm 和 365 nm 光源，将光穿透深度调至约 12 μm，并采用 10 μm 层厚。吸光剂变化对接触角影响较小，却改变压缩模量，说明表面润湿和阀膜力学不能互相替代。接触角实验每种液体 n≥6，误差为 95% 置信区间；它测的是刚清洗的平面聚合物，交叉口实验才直接检验封闭通道内的两相行为。该平面几何并未测定液滴体积和频率分布。",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "亲水材料可以成滴，但出口必须限制水相接触范围",
+          "markdown": "同一研究进一步用 A-PEGDA 比较空间几何。将平面 T 形改为立体 T 形，或让油从环形通道包围水出口，仍出现水相贴壁和并流；“三维包围”本身不足以消除固体表面的连续润湿路径。有效的 annular channel-in-channel（ACC）设计将中央水出口抬高成台座，油从外圈流入。水相仍附着在台座顶端，但离开顶端后不能沿相邻聚合物继续铺展，随膨胀和拉伸而断开。[几何迭代与成滴过程](ref:R01)\n\n图示 ACC 的中央通道直径为 61 μm，出口为 198 μm；最小通道对应 8 个像素，像素间距 7.6 μm。论文另引述可打印 23 μm 通道，但本次成滴试验没有把 ACC 缩小到该尺寸，台座环壁厚度及材料固化条件仍会限制缩放。显微序列展示液滴从附着、拉长到脱离，不是表面完全不接触水，也不能证明任何亲水材料均具有同样结果。材料筛选中的 HDDA/LA 与这里的 PEGDA 几何方案解决的是同一个贴壁问题的不同环节：前者减少水对壁面的亲和，后者缩短能持续铺展的接触路径。",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "体积与频率可调，稳定区却不是完整的矩形参数范围",
+          "markdown": "ACC 流量实验使用 N-PEGDA，水相流量为 5、10、20、30、40、50 μL/min，扫描植物油流量。总体上，提高连续相流量使断滴频率增加、单滴体积减小；该几何报告约 1–8 nL、10–200 Hz。图中不同水相流量的数据并未覆盖全部油相流量：当油流明显低于水流时，剪切不足，进入不稳定区。不能将体积下限、最高频率与最高水流量拼成一个同时可实现的工作点。[流量窗口实验](ref:R01)\n\n图上每个点代表一次实验，并非多芯片重复的均值，连接线用于呈现变化关系；文中没有给出持续运行数小时的尺寸漂移或统一的粒径 CV。因此该证据支持在所示窗口内按流量调节，而非整段范围均已通过长期单分散性验证。体积与频率也受水相通量守恒约束：固定水流量时，若滴生成更快，则每滴分配的水量必须减少；若有贴壁液膜、并流或卫星滴，主滴体积乘频率便不再能代表全部水量。原图中的不稳定边界和材料配方应随流量值一起保留，才能区分可控断滴与仅有液体通过。",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "单向阀需要反向泄漏曲线，而非只有开关照片",
+          "markdown": "Hinnen 等用 PEGDA MW258、2% NPS 和 1% Irgacure 819 一体打印膜式、挤压式和带状单向阀。实体区曝光 325 ms，柔性膜区 260 ms；膜式阀直径 380 μm、膜厚 10 μm，下腔高 40 μm；挤压式采用上下各厚 5 μm 的膜夹住 20 μm 高通道；带状膜为 167×365 μm、厚 10 μm。对应阀内体积为 10.3、10.2、5.42 nL。不同几何改变的是压差引起的变形和封口位置，而非树脂本身成为不同材料。[单向阀的压力—流量测量](ref:R02)\n\n每种阀测 7 个，误差条为 ±1 SD。膜式在约 −8 psi 至正向超过 10 psi 仍近线性，到约 −10 psi 才明显限制反流且不能完全密封；挤压式约 −3 psi 后进入反向限流，仍有约 25 μL/min 泄漏；带状阀在所测负压下未观察到反流，但正向需约 2 psi 才开启，作者认为可能与清洗后轻微粘连有关。正向以定流量测压，反向以定压力测液体位移，不能把两种颜色理解成同一加载方式的重复曲线。作者报告所有类型试至 50 psi，但曲线无反流的测量区间和器件耐压试验不是同一指标，也未报告检测限为数学意义上的零。",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "反向最密封的阀，未必产生最高循环泵效率",
+          "markdown": "在两只同向单向阀之间加入位移腔后，只需一条气动输入交替施压和卸压或抽真空。相同相位间隔下，循环由传统的 5 相变成 2 相，时间减少 60%；这不等于实测流量自动提高 60%。位移腔直径 532 μm、膜厚 10 μm、液腔高 60 μm，理想单腔排量约 7 nL。膜式单向阀泵采用 3 个并联位移腔，挤压式和带状式各用 1 个，所以不能直接把最大总流量比较当作等体积效率比较。[泵循环与排量实验](ref:R02)\n\n实际每次排量低于理想值，原因包括反向泄漏和膜不能完全贴合腔底。相位间隔大于 100 ms 时，膜式泵尽管稳态反漏最大，归一化排量效率却优于另外两类，作者将其归因于正向阻力较低、回填较充分。相位越短，频率越高，但若位移腔来不及回填，流量反而下降；相位延长又使每次排量趋稳而平均流量减少。误差条来自填满已知体积蛇形通道所需的 7–13 次循环，不能当作 7–13 台独立泵的制造重复性。输出本身为脉动流，单一平均 μL/min 没有证明瞬时流量恒定；这恰好会改变液滴形成时水相与壁面接触的停留时间。",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "停流暴露出持续流实验未覆盖的卫星滴问题",
+          "markdown": "Warr 等后续研究在数字按需成滴中发现：水相在台座上停留数百 ms 时会逐渐铺展，形成更宽的液滴基部和卫星滴。因此连续流下能工作的 ACC 不能直接证明间歇泵送也稳定。为检验表面处理，研究固定 T 形通道：油通道 200×200 μm，居中水出口 76×80 μm，迫使液滴接触侧壁，同时避免直接碰到顶底。打印材料为 PEGDA、1% Irgacure 819、0.38% avobenzone；清洗后注入不加引发剂的 LA、HDDA 或氟化丙烯酸酯 FA，再用 430 nm 光照，利用原打印件残余引发体系进行表面反应。[停流润湿与处理比较](ref:R03)\n\n单次 LA 处理不足以明显改变并流，连续 3 次处理后可见不再铺展的液滴；HDDA 和 FA 也随重复处理改善。先做 HDDA 底层再做 LA，没有显示额外优势。作者以成滴及静止接触照片作比较，未提供定量接触角、卫星滴计数或长期涂层保持曲线；也未给出所有处理可直接复现的数值光强和时间。ACC 处理后数分钟图像显示台座水帽消失、主滴更整齐，但正文一处写 FA，其他叙述和图注写 3 次 LA，本报告按图注归属并保留这一配方矛盾。所谓稳定性在这里得到的是短时润湿改善证据，耐久性和剩余单体对细胞的影响没有在该实验中测定。",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Warr et al.：固定通道条件下的材料流型对照",
+          "interpretation": "a 标出交叉口与油、水入口，b、c 的 TET、PEGDA 中暗色水相仍连续贴壁，d、e 的 HDDA、HDDA/LA 中则出现独立液滴。照片对应同一名义 106×110 μm 几何，能够支持材料相关的流型差异；它们没有显示频率统计、尺寸 CV 或长期运行重复性。[材料对照](ref:R01)"
+        },
+        "F02": {
+          "caption": "Warr et al.：台座隔开可持续润湿的壁面",
+          "interpretation": "a 的中央 61 μm 水道抬高到环形油腔内，顶部出口为 198 μm；b 保留 100 μm 比例尺。c–g 依次显示球冠增大、液桥拉长及脱离，液滴形成前仍连接台座。图中没有标出帧间隔，因此不能仅由相邻画面数计算 Hz；它解释的是接触路径如何被几何截断。[ACC 原图](ref:R01)"
+        },
+        "F03": {
+          "caption": "Warr et al.：稳定窗口内的频率—体积耦合",
+          "interpretation": "a 纵轴为 Hz，b 为 nL，横轴均为连续相 μL/min，颜色表示水相 5–50 μL/min。提高油流时左图频率上升、右图体积下降；浅色不稳定区说明不同颜色的可用区间不相同。每个点是单次实验而非均值误差条，图示稳定区不能外推为长期尺寸精度。[流量扫描](ref:R01)"
+        },
+        "F04": {
+          "caption": "Hinnen et al.：反流限流与完全截止并不相同",
+          "interpretation": "A、B、C 分别为膜式、挤压式和带状阀，横轴 psi、纵轴 μL/min，负值为反向。A、B 在负压增大后形成非零平台，C 的红色定压数据接近零；蓝色定流数据还可在负向出现有限流量，说明加载方式必须保留。误差条为 7 个阀的 ±1 SD。原图分存为两个文件，此处完整连接 A–C，未裁去坐标或示意图。[阀测试](ref:R02)"
+        },
+        "F05": {
+          "caption": "Hinnen et al.：高频循环会因回填不足而失去流量",
+          "interpretation": "A、C、E 为每次排量，B、D、F 为平均流量，横轴均为相位间隔 ms。绿色实测低于黄色理想线；最左侧的快速循环并非最高流量区。膜式列的理想排量约为另两列的 3 倍，源于 3 个位移腔，不是单腔更大。误差条表示循环间变化，不能读成独立制造批次差异。[泵表征](ref:R02)"
+        },
+        "F06": {
+          "caption": "Warr et al.：重复表面处理后的成滴与静止接触",
+          "interpretation": "A 为未处理 PEGDA，B–D 分别为 LA、HDDA、FA，E 为 HDDA 后接 LA。各组从下到上为第 1、2、3 次处理，每行并排比较 static 和 formation。上排出现更清楚的非铺展轮廓，但不同液滴仍可能接触壁面；这些照片支持定性润湿变化，没有提供涂层厚度、统一接触角或持续流耐久数据。[处理实验](ref:R03)"
+        }
+      }
+    },
+    "en": {
+      "title": "How do chips achieve stable droplets and fluid control?",
+      "direction": "Microfluidic chips",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "At identical junctions and flow rates, wetting determines coflow or breakup",
+          "markdown": "Warr et al. fixed a printed cross-junction at 106 μm wide and 110 μm high and compared TET, PEGDA, HDDA and HDDA/LA resins. Dyed deionised water and food-grade vegetable oil used the same 5 μL/min settings. In TET and PEGDA, water spread along the walls and coflowed with oil; HDDA and HDDA/LA produced discrete droplets. With geometry and supply conditions held constant, the surface material alone was sufficient to change the flow regime. Inlet flow ratio therefore cannot by itself explain droplet stability. [Material comparison at fixed geometry](ref:R01)\n\nManufacturability constrained formulation selection. Pure HDDA tended to adhere to the FEP vat film; adding LA at 85% HDDA and 15% LA by mass improved release while retaining droplet formation. LA alone failed to form a suitable solid. Absorbers were 2% NPS and 0.38% avobenzone, both with 1% Irgacure 819, paired with 385 nm and 365 nm sources respectively. They set penetration depth near 12 μm for 10 μm layers. Changing absorber had little effect on contact angles but altered compression modulus, so surface wetting and valve-membrane mechanics are not interchangeable. Contact-angle tests used n≥6 per liquid with 95% confidence intervals. These measured freshly cleaned planar polymers; the junction experiment directly tested two-phase behaviour inside enclosed channels. Droplet-volume and frequency distributions were not measured for this planar geometry.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Hydrophilic material can form droplets if the outlet limits aqueous contact",
+          "markdown": "The same study compared spatial geometries using A-PEGDA. Converting a planar T-junction to a three-dimensional T-junction, or surrounding the aqueous outlet with annular oil flow, still produced wall attachment and coflow. Three-dimensional enclosure alone did not remove the continuous solid wetting pathway. The successful annular channel-in-channel (ACC) design raised the central aqueous outlet into a pedestal, with oil entering around it. Water remained attached to the pedestal top, but after leaving that top it could not continue spreading along adjacent polymer and detached as it expanded and stretched. [Geometry iterations and droplet formation](ref:R01)\n\nThe illustrated ACC had a 61 μm central channel and 198 μm outlet. Its smallest channel spanned 8 pixels at 7.6 μm pitch. The paper separately cited printable 23 μm channels, but did not shrink the tested ACC to that size; pedestal annular-wall thickness and curing conditions still constrain scaling. The microscopy sequence shows attachment, elongation and detachment, not complete avoidance of water–surface contact, nor equivalent performance with every hydrophilic material. HDDA/LA material selection and PEGDA geometric redesign address different parts of the same adhesion problem: the former reduces aqueous affinity for the wall, while the latter shortens the available spreading pathway.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Volume and frequency are adjustable, but the stable region is not rectangular",
+          "markdown": "ACC flow experiments used N-PEGDA and aqueous rates of 5, 10, 20, 30, 40 and 50 μL/min while varying vegetable-oil flow. Increasing continuous-phase flow generally increased breakup frequency and decreased individual droplet volume; this geometry produced approximately 1–8 nL at 10–200 Hz. Data at different aqueous rates did not cover every oil rate. When oil flow was substantially lower than water flow, insufficient shear led to instability. Minimum volume, maximum frequency and highest water flow cannot be combined into a single demonstrated operating point. [Flow-window experiment](ref:R01)\n\nEach plotted point represents an individual experiment, not a mean across independently printed chips, and connecting lines depict trends. The paper does not report hours-long size drift or a uniform droplet-size CV. Evidence therefore supports flow-based adjustment within the displayed window rather than long-term monodispersity validation throughout the whole range. Volume and frequency are also constrained by aqueous mass balance: at fixed water flow, faster droplet production must allocate less water to each droplet. With wall films, coflow or satellite droplets, primary-droplet volume multiplied by frequency no longer represents all aqueous throughput. The original instability boundary and resin formulation must accompany flow values to distinguish controlled breakup from liquid passage alone.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Check valves require reverse-leakage curves, not only switching images",
+          "markdown": "Hinnen et al. monolithically printed membrane, squeeze and ribbon check valves from PEGDA MW258, 2% NPS and 1% Irgacure 819. Bulk exposure was 325 ms and membrane exposure 260 ms. The membrane valve had a 380 μm diameter, 10 μm membrane and 40 μm lower chamber. The squeeze valve used upper and lower 5 μm membranes around a 20 μm channel. The ribbon measured 167×365 μm and was 10 μm thick. Internal volumes were respectively 10.3, 10.2 and 5.42 nL. Geometry changes pressure-driven deformation and sealing location without making the resin a different material. [Check-valve pressure–flow measurements](ref:R02)\n\nEach type was tested with 7 valves; error bars are ±1 SD. The membrane valve remained nearly linear from approximately −8 psi to beyond 10 psi forward pressure, restricting reverse flow substantially only near −10 psi without complete sealing. The squeeze valve restricted reverse flow around −3 psi but retained approximately 25 μL/min leakage. The ribbon showed no observed reverse flow at tested negative pressures but required approximately 2 psi forward pressure to open, possibly because of slight sticking after clearing. Forward tests imposed flow and measured pressure; reverse tests imposed pressure and measured fluid displacement. Colours therefore do not indicate repeat curves under identical loading. All types were reportedly tested to 50 psi, but a no-reverse-flow interval and a device pressure-tolerance test are different endpoints; no detection limit establishing mathematical zero was reported.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "The best reverse seal does not necessarily yield the most efficient cyclic pump",
+          "markdown": "Placing a displacement chamber between two equally oriented check valves allows a single pneumatic input to alternate pressure with release or vacuum. At the same phase interval, a conventional 5-phase cycle becomes 2 phases, shortening cycle time by 60%; measured flow does not automatically increase by 60%. The displacement chamber was 532 μm in diameter, with a 10 μm membrane, 60 μm fluid chamber and ideal single-chamber displacement near 7 nL. The membrane-check-valve pump used 3 parallel displacement chambers, whereas squeeze and ribbon pumps each used 1. Maximum total flow therefore cannot be treated as an equal-volume efficiency comparison. [Pump-cycle and displacement experiments](ref:R02)\n\nActual displacement per actuation was below ideal because of reverse leakage and incomplete membrane collapse against the chamber floor. At phase intervals above 100 ms, the membrane pump had greater normalised displacement efficiency than the other designs despite the largest steady-state reverse leakage. The authors attributed this to lower forward resistance and more complete refilling. Shorter intervals increase frequency but eventually reduce flow when the chamber cannot refill; longer intervals stabilise volume per actuation while reducing average flow. Error bars derive from the 7–13 cycles needed to fill a serpentine channel of known volume, not manufacture-to-manufacture replication across 7–13 independent pumps. Output is pulsatile: a single mean μL/min does not establish constant instantaneous flow, and pulses change aqueous contact time with walls during droplet formation.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Stopping flow reveals satellite droplets missed by continuous-flow tests",
+          "markdown": "In a subsequent study, Warr et al. found that digital droplet-on-demand pauses of several hundred ms let water spread across the pedestal, widening the droplet base and producing satellites. ACC operation under continuous flow therefore does not directly establish intermittent pumping stability. Surface-treatment tests fixed a T-junction with a 200×200 μm oil channel and centred 76×80 μm aqueous outlet, forcing sidewall contact while avoiding direct ceiling and floor contact. Printed material contained PEGDA, 1% Irgacure 819 and 0.38% avobenzone. After cleaning, LA, HDDA or fluorinated acrylate FA without added initiator was introduced and exposed at 430 nm, using residual initiating chemistry in the printed part for surface reaction. [Stopped-flow wetting and treatment comparison](ref:R03)\n\nA single LA treatment did not substantially eliminate coflow. After 3 sequential treatments, nonspreading droplets were visible; repeated HDDA and FA treatment also improved behaviour. An HDDA base treatment followed by LA provided no additional evident advantage. Comparisons used droplet-formation and static-contact images, without quantitative contact angles, satellite counts or long-term coating-retention curves. Numerical intensity and duration sufficient to reproduce every treatment were also absent. Images after several minutes of ACC operation showed disappearance of the aqueous cap and more regular primary droplets, but one sentence identifies FA while surrounding text and the caption identify 3 LA treatments. This report follows the caption while retaining that formulation inconsistency. The stability evidence concerns short-term wetting improvement; durability and effects of residual monomer on cells were not measured in this experiment.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Warr et al.: material-dependent flow regimes at fixed channel conditions",
+          "interpretation": "Panel a identifies the junction and oil/water inlets. In b and c, dark aqueous streams in TET and PEGDA remain continuously attached to walls; d and e show discrete droplets in HDDA and HDDA/LA. Images share the nominal 106×110 μm geometry and support material-related differences in flow regime. They do not show frequency statistics, size CV or long-term repeatability. [Material comparison](ref:R01)"
+        },
+        "F02": {
+          "caption": "Warr et al.: the pedestal separates continuously wettable wall paths",
+          "interpretation": "In a, the central 61 μm aqueous channel rises inside the annular oil chamber, with a 198 μm upper outlet; b retains a 100 μm scale bar. Panels c–g show cap growth, liquid-bridge elongation and detachment, with water still connected to the pedestal before breakup. Frame intervals are not labelled, so Hz cannot be calculated from the number of adjacent images. The sequence explains how geometry interrupts the contact pathway. [Original ACC figure](ref:R01)"
+        },
+        "F03": {
+          "caption": "Warr et al.: frequency–volume coupling inside the stable window",
+          "interpretation": "Vertical axes are Hz in a and nL in b; both horizontal axes show continuous-phase μL/min, with colours denoting aqueous flows of 5–50 μL/min. Greater oil flow raises frequency on the left and reduces volume on the right. The pale unstable region shows that usable intervals differ across colours. Each point is an individual experiment rather than a mean with error bars; the depicted stable region does not establish long-term dimensional precision. [Flow scan](ref:R01)"
+        },
+        "F04": {
+          "caption": "Hinnen et al.: restricting reverse flow differs from stopping it",
+          "interpretation": "A, B and C show membrane, squeeze and ribbon valves, with psi horizontally and μL/min vertically; negative values denote reverse operation. A and B approach nonzero plateaus as reverse pressure increases, while red pressure-controlled data in C approach zero. Blue flow-controlled data can still show finite reverse flow, making loading method essential to interpretation. Error bars are ±1 SD across 7 valves. The original figure was stored in two files; A–C are joined here in full without cropping axes or schematics. [Valve testing](ref:R02)"
+        },
+        "F05": {
+          "caption": "Hinnen et al.: rapid cycling loses flow when refilling is incomplete",
+          "interpretation": "A, C and E show volume per actuation; B, D and F show mean flow. All horizontal axes give phase interval in ms. Green measurements fall below yellow ideal curves; the fastest cycles at the far left do not maximise flow. Ideal membrane-pump displacement is approximately 3 times that of the other columns because it uses 3 displacement chambers, not a larger individual chamber. Error bars describe cycle variation rather than independently manufactured batches. [Pump characterisation](ref:R02)"
+        },
+        "F06": {
+          "caption": "Warr et al.: formation and static contact after repeated surface treatment",
+          "interpretation": "A is untreated PEGDA; B–D are LA, HDDA and FA; E is HDDA followed by LA. Within groups, rows from bottom to top are treatments 1, 2 and 3, each comparing static and formation images. Upper rows show clearer nonspreading outlines, although droplets can still contact walls. These images support qualitative wetting changes without coating thickness, a common quantitative contact angle or continuous-flow durability data. [Treatment experiment](ref:R03)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie ermöglichen Chips stabile Tropfen und Flüssigkeitssteuerung?",
+      "direction": "Mikrofluidische Chips",
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Bei gleichem Kreuzungskanal und Durchfluss entscheidet Benetzung über Parallelstrom oder Tropfenablösung",
+          "markdown": "Warr et al. hielten einen gedruckten Kreuzungskanal bei 106 μm Breite und 110 μm Höhe konstant und verglichen TET-, PEGDA-, HDDA- und HDDA/LA-Harze. Gefärbtes deionisiertes Wasser und lebensmitteltaugliches Pflanzenöl wurden mit denselben Einstellungen von 5 μL/min zugeführt. In TET und PEGDA breitete sich Wasser an den Wänden aus und strömte parallel zum Öl; HDDA und HDDA/LA bildeten einzelne Tropfen. Bei konstanter Geometrie und Zufuhr genügte somit das Oberflächenmaterial, um das Strömungsregime zu verändern. Das Einlassstromverhältnis allein erklärt die Tropfenstabilität nicht. [Materialvergleich bei konstanter Geometrie](ref:R01)\n\nDie Herstellbarkeit begrenzte die Rezepturauswahl. Reines HDDA haftete häufig an der FEP-Folie des Harzbehälters; eine Mischung aus 85% HDDA und 15% LA nach Masse verbesserte die Ablösung und erhielt die Tropfenbildung. LA allein bildete keinen geeigneten Festkörper. Als Absorber dienten 2% NPS und 0.38% avobenzone, jeweils mit 1% Irgacure 819, kombiniert mit 385 nm beziehungsweise 365 nm Lichtquellen. Damit betrug die Eindringtiefe etwa 12 μm bei 10 μm Schichten. Der Absorberwechsel beeinflusste Kontaktwinkel wenig, veränderte aber den Druckmodul; Benetzung und Ventilmembranmechanik sind somit nicht austauschbar. Kontaktwinkelprüfungen verwendeten n≥6 je Flüssigkeit mit 95% Konfidenzintervallen. Sie betrafen frisch gereinigte ebene Polymere; erst der Kreuzungsversuch prüfte Zweiphasenverhalten direkt in geschlossenen Kanälen. Tropfenvolumen- und Frequenzverteilungen wurden für diese ebene Geometrie nicht gemessen.",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Hydrophiles Material kann Tropfen bilden, wenn der Auslass den Wasserkontakt begrenzt",
+          "markdown": "Dieselbe Studie verglich räumliche Geometrien aus A-PEGDA. Sowohl ein räumlicher statt ebener T-Kanal als auch ringförmiger Ölstrom um den Wasserauslass führten weiterhin zu Wandhaftung und Parallelströmung. Dreidimensionale Umschließung allein beseitigte den durchgängigen Benetzungspfad am Festkörper nicht. Das erfolgreiche annular channel-in-channel (ACC) hob den zentralen Wasserauslass als Sockel an; Öl strömte außen herum zu. Wasser blieb an der Sockelspitze haften, konnte nach Verlassen der Spitze jedoch nicht entlang benachbarten Polymers weiterlaufen und löste sich durch Aufweitung und Streckung ab. [Geometrische Iterationen und Tropfenbildung](ref:R01)\n\nDas gezeigte ACC besaß einen zentralen Kanal von 61 μm und einen Auslass von 198 μm. Der kleinste Kanal umfasste 8 Pixel bei 7.6 μm Pixelabstand. Die Publikation verwies separat auf druckbare 23 μm Kanäle, verkleinerte das geprüfte ACC aber nicht auf diese Größe; Ringwanddicke des Sockels und Aushärtungsbedingungen begrenzen weiterhin die Skalierung. Die Mikroskopiesequenz zeigt Anhaften, Verlängern und Ablösen, weder vollständige Vermeidung des Wasser-Oberflächen-Kontakts noch gleichwertige Ergebnisse für jedes hydrophile Material. HDDA/LA-Auswahl und PEGDA-Geometrieänderung greifen an verschiedenen Stellen desselben Haftungsproblems an: Erstere reduziert die Wasser-Wand-Affinität, Letztere verkürzt den verfügbaren Ausbreitungsweg.",
+          "figure_ids": [
+            "F02"
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Volumen und Frequenz sind einstellbar, doch der stabile Bereich ist nicht rechteckig",
+          "markdown": "Die ACC-Durchflussversuche verwendeten N-PEGDA und Wasserströme von 5, 10, 20, 30, 40 und 50 μL/min bei variablem Pflanzenölstrom. Zunehmender Strom der kontinuierlichen Phase erhöhte im Allgemeinen die Ablösefrequenz und verringerte das Tropfenvolumen; diese Geometrie lieferte etwa 1–8 nL bei 10–200 Hz. Daten verschiedener Wasserströme deckten nicht sämtliche Ölströme ab. Lag der Ölstrom deutlich unter dem Wasserstrom, führte unzureichende Scherung zu Instabilität. Kleinstes Volumen, höchste Frequenz und größter Wasserstrom dürfen nicht zu einem gemeinsam nachgewiesenen Betriebspunkt zusammengesetzt werden. [Versuch zum Strömungsfenster](ref:R01)\n\nJeder Datenpunkt repräsentiert einen Einzelversuch, keinen Mittelwert unabhängig gedruckter Chips; Verbindungslinien zeigen Trends. Die Arbeit berichtet weder Größenänderungen über mehrere Betriebsstunden noch einen einheitlichen Tropfengrößen-CV. Belegt ist deshalb durchflussbasierte Einstellung im dargestellten Fenster, keine langfristige Monodispersitätsvalidierung des gesamten Bereichs. Volumen und Frequenz unterliegen außerdem der Wasserbilanz: Bei festem Wasserstrom muss schnellere Tropfenbildung jedem Tropfen weniger Wasser zuteilen. Bei Wandfilmen, Parallelstrom oder Satellitentropfen entspricht Haupttropfenvolumen mal Frequenz nicht mehr dem gesamten Wasserdurchsatz. Die ursprüngliche Instabilitätsgrenze und Harzrezeptur müssen zusammen mit den Durchflusswerten erhalten bleiben, um kontrollierte Ablösung von bloßem Flüssigkeitsdurchtritt zu unterscheiden.",
+          "figure_ids": [
+            "F03"
+          ]
+        },
+        {
+          "id": "s4",
+          "title": "Rückschlagventile benötigen Rückwärtsleckagekurven statt bloßer Schaltbilder",
+          "markdown": "Hinnen et al. druckten Membran-, Quetsch- und Bandrückschlagventile monolithisch aus PEGDA MW258, 2% NPS und 1% Irgacure 819. Die Belichtung betrug im Vollmaterial 325 ms und an Membranen 260 ms. Das Membranventil hatte 380 μm Durchmesser, eine 10 μm Membran und eine 40 μm hohe untere Kammer. Beim Quetschventil umschlossen obere und untere 5 μm Membranen einen 20 μm Kanal. Das Band maß 167×365 μm bei 10 μm Dicke. Die Innenvolumina betrugen entsprechend 10.3, 10.2 und 5.42 nL. Geometrie verändert druckgetriebene Verformung und Dichtstelle, ohne dass das Harz selbst ein anderes Material wird. [Druck-Durchfluss-Messungen der Rückschlagventile](ref:R02)\n\nJe Bauart wurden 7 Ventile untersucht; Fehlerbalken zeigen ±1 SD. Das Membranventil blieb von etwa −8 psi bis über 10 psi Vorwärtsdruck nahezu linear; erst um −10 psi begrenzte es den Rückstrom deutlich, ohne vollständig abzudichten. Das Quetschventil begrenzte Rückstrom ab etwa −3 psi, behielt aber ungefähr 25 μL/min Leckage. Beim Bandventil wurde unter den geprüften negativen Drücken kein Rückstrom beobachtet; zum Öffnen waren vorwärts etwa 2 psi nötig, möglicherweise wegen leichter Haftung nach der Reinigung. Vorwärts wurde Durchfluss vorgegeben und Druck gemessen, rückwärts Druck vorgegeben und Flüssigkeitsverschiebung gemessen. Farben kennzeichnen deshalb keine Wiederholung unter identischer Belastung. Alle Typen wurden laut Bericht bis 50 psi geprüft. Ein Bereich ohne beobachteten Rückstrom und Druckbeständigkeit sind jedoch verschiedene Endpunkte; eine Nachweisgrenze für mathematisch exakt null wurde nicht angegeben.",
+          "figure_ids": [
+            "F04"
+          ]
+        },
+        {
+          "id": "s5",
+          "title": "Das beste rückwärtige Dichten ergibt nicht zwangsläufig die effizienteste zyklische Pumpe",
+          "markdown": "Eine Verdrängungskammer zwischen zwei gleichgerichteten Rückschlagventilen benötigt nur einen pneumatischen Eingang, der Druck mit Entlastung oder Vakuum abwechselt. Bei gleichem Phasenintervall wird ein herkömmlicher 5-Phasen-Zyklus zu 2 Phasen und damit um 60% kürzer; der gemessene Durchfluss steigt dadurch nicht automatisch um 60%. Die Kammer hatte 532 μm Durchmesser, eine 10 μm Membran, 60 μm Flüssigkeitshöhe und etwa 7 nL ideales Einzelkammervolumen. Die Membranrückschlagventil-Pumpe verwendete 3 parallele Verdrängungskammern, Quetsch- und Bandpumpen jeweils 1. Maximaler Gesamtdurchfluss ist deshalb kein Effizienzvergleich bei gleichem Volumen. [Pumpzyklus- und Verdrängungsversuche](ref:R02)\n\nDie tatsächliche Verdrängung je Betätigung blieb wegen Rückwärtsleckage und unvollständigem Anlegen der Membran am Kammerboden unter dem Ideal. Bei Phasenintervallen über 100 ms erreichte die Membranpumpe trotz größter stationärer Rückwärtsleckage eine höhere normierte Verdrängungseffizienz als die anderen Bauarten. Die Autoren führen dies auf geringeren Vorwärtswiderstand und vollständigere Wiederbefüllung zurück. Kürzere Intervalle erhöhen die Frequenz, senken schließlich aber den Durchfluss, wenn die Kammer nicht rechtzeitig nachgefüllt wird. Längere Intervalle stabilisieren das Einzelvolumen, verringern aber den mittleren Strom. Fehlerbalken stammen aus den 7–13 Zyklen zum Füllen eines Schlangenkanals bekannten Volumens, nicht aus der Fertigungsreproduzierbarkeit von 7–13 unabhängigen Pumpen. Die Ausgabe ist pulsierend: Ein Mittelwert in μL/min belegt keinen konstanten Momentanstrom; Pulse verändern die Kontaktzeit von Wasser mit Wänden während der Tropfenbildung.",
+          "figure_ids": [
+            "F05"
+          ]
+        },
+        {
+          "id": "s6",
+          "title": "Strömungspausen zeigen Satellitentropfen, die kontinuierliche Tests nicht erfassen",
+          "markdown": "In einer Folgestudie beobachteten Warr et al., dass Pausen von mehreren hundert ms bei digitaler bedarfsgesteuerter Tropfenbildung Wasser über den Sockel ausbreiten ließen. Dadurch entstanden eine breitere Tropfenbasis und Satelliten. ACC-Betrieb bei kontinuierlichem Strom belegt deshalb keine Stabilität bei intermittierendem Pumpen. Oberflächenbehandlungen wurden mit festem T-Kanal geprüft: Ölkanal 200×200 μm, mittiger Wasserauslass 76×80 μm. Dies erzwang Seitenwandkontakt und vermied direkten Kontakt mit Decke und Boden. Das Druckmaterial enthielt PEGDA, 1% Irgacure 819 und 0.38% avobenzone. Nach Reinigung wurden LA, HDDA oder fluoriertes Acrylat FA ohne zusätzlichen Initiator eingebracht und bei 430 nm belichtet; die verbliebene Initiatorchemie im Druckteil sollte die Oberflächenreaktion auslösen. [Benetzung bei Stillstand und Behandlungsvergleich](ref:R03)\n\nEine einzelne LA-Behandlung beseitigte Parallelströmung nicht deutlich. Nach 3 aufeinanderfolgenden Behandlungen waren nicht spreitende Tropfen sichtbar; wiederholte HDDA- und FA-Behandlung verbesserten das Verhalten ebenfalls. Eine HDDA-Grundschicht vor LA bot keinen erkennbaren Zusatzvorteil. Verglichen wurden Bilder von Tropfenbildung und statischem Kontakt, ohne quantitative Kontaktwinkel, Satellitenzählung oder langfristige Beständigkeitskurven. Auch numerische Lichtintensität und Dauer zur vollständigen Reproduktion sämtlicher Behandlungen fehlten. Bilder nach mehreren Minuten ACC-Betrieb zeigten das Verschwinden der Wasserkappe und regelmäßigere Haupttropfen. Ein Satz nennt jedoch FA, während Umgebungstext und Bildlegende 3 LA-Behandlungen nennen. Der Bericht folgt der Legende und erhält diesen Rezepturwiderspruch. Die Stabilitätsevidenz betrifft kurzfristig verbesserte Benetzung; Dauerbeständigkeit und Auswirkungen verbliebener Monomere auf Zellen wurden in diesem Experiment nicht gemessen.",
+          "figure_ids": [
+            "F06"
+          ]
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Warr et al.: materialabhängige Strömungsregime bei festen Kanalbedingungen",
+          "interpretation": "a kennzeichnet Kreuzung sowie Öl- und Wassereinlässe. In b und c bleiben dunkle Wasserströme in TET und PEGDA durchgehend an Wänden; d und e zeigen einzelne Tropfen in HDDA und HDDA/LA. Die Bilder teilen die nominelle Geometrie von 106×110 μm und stützen materialbezogene Unterschiede des Strömungsregimes. Sie zeigen keine Frequenzstatistik, Größen-CV oder langfristige Wiederholbarkeit. [Materialvergleich](ref:R01)"
+        },
+        "F02": {
+          "caption": "Warr et al.: der Sockel trennt durchgehend benetzbare Wandpfade",
+          "interpretation": "In a ragt der zentrale 61 μm Wasserkanal in die ringförmige Ölkammer; der obere Auslass beträgt 198 μm. b erhält den 100 μm Maßstabsbalken. c–g zeigen Kappenwachstum, Verlängerung der Flüssigkeitsbrücke und Ablösung; vor der Trennung bleibt Wasser mit dem Sockel verbunden. Bildintervalle fehlen, daher lässt sich Hz nicht aus der Zahl benachbarter Bilder berechnen. Die Sequenz erklärt die geometrische Unterbrechung des Kontaktpfads. [ACC-Originalabbildung](ref:R01)"
+        },
+        "F03": {
+          "caption": "Warr et al.: Frequenz-Volumen-Kopplung im stabilen Fenster",
+          "interpretation": "Vertikal steht in a Hz und in b nL; beide horizontalen Achsen zeigen μL/min der kontinuierlichen Phase. Farben bezeichnen Wasserströme von 5–50 μL/min. Mehr Öl erhöht links die Frequenz und senkt rechts das Volumen. Der helle instabile Bereich zeigt unterschiedliche nutzbare Intervalle der Farben. Jeder Punkt ist ein Einzelversuch, kein Mittelwert mit Fehlerbalken; das dargestellte stabile Fenster belegt keine langfristige Maßpräzision. [Durchflussscan](ref:R01)"
+        },
+        "F04": {
+          "caption": "Hinnen et al.: Rückstrombegrenzung unterscheidet sich vom vollständigen Absperren",
+          "interpretation": "A, B und C zeigen Membran-, Quetsch- und Bandventile mit psi horizontal und μL/min vertikal; negative Werte bezeichnen Rückwärtsbetrieb. A und B nähern sich bei stärkerem Rückwärtsdruck von null verschiedenen Plateaus, während rote druckgesteuerte Daten in C nahe null liegen. Blaue durchflussgesteuerte Daten können weiterhin endlichen Rückstrom zeigen; die Belastungsart bleibt deshalb wesentlich. Fehlerbalken sind ±1 SD von 7 Ventilen. Das Original war in zwei Dateien gespeichert; hier sind A–C vollständig verbunden, ohne Achsen oder Skizzen abzuschneiden. [Ventilprüfung](ref:R02)"
+        },
+        "F05": {
+          "caption": "Hinnen et al.: schnelle Zyklen verlieren Durchfluss durch unvollständiges Nachfüllen",
+          "interpretation": "A, C und E zeigen Volumen je Betätigung, B, D und F mittleren Durchfluss; sämtliche horizontalen Achsen geben das Phasenintervall in ms an. Grüne Messwerte liegen unter gelben Idealkurven. Die schnellsten Zyklen ganz links maximieren den Durchfluss nicht. Das ideale Volumen der Membranpumpe beträgt etwa das 3-Fache der anderen Spalten, weil sie 3 Verdrängungskammern verwendet, nicht eine größere Einzelkammer. Fehlerbalken beschreiben Zyklusvariation statt unabhängig gefertigter Chargen. [Pumpencharakterisierung](ref:R02)"
+        },
+        "F06": {
+          "caption": "Warr et al.: Tropfenbildung und statischer Kontakt nach wiederholter Oberflächenbehandlung",
+          "interpretation": "A zeigt unbehandeltes PEGDA, B–D LA, HDDA und FA, E HDDA gefolgt von LA. Innerhalb der Gruppen stehen die Zeilen von unten nach oben für Behandlungen 1, 2 und 3 und vergleichen jeweils static mit formation. Obere Reihen zeigen klarere nicht spreitende Umrisse, obwohl Tropfen weiterhin Wände berühren können. Die Bilder stützen qualitative Benetzungsänderungen, ohne Schichtdicke, einheitlichen quantitativen Kontaktwinkel oder Beständigkeitsdaten bei kontinuierlicher Strömung. [Behandlungsversuch](ref:R03)"
+        }
+      }
+    }
+  }
+}
