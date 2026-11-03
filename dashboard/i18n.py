@@ -885,6 +885,7 @@ LOCALIZED_SELECTION_KEYS = (
     'enterprise_countries', 'enterprise_p_codes', 'enterprise_statuses',
     'enterprise_types', 'enterprise_timeline_company', 'enterprise_event_choice',
     'dimension', 'relation', 'cross_p', 'cross_direction', 'cross_question', 'feedback_status',
+    'page', 'measure',
 )
 
 
@@ -934,8 +935,8 @@ def set_localized_selection(state, base: str, values) -> None:
     state[f'_am_pending_{base}'] = list(values)
 
 
-def localized_selectbox(st, label: str, options, *, key: str, **kwargs):
-    """Remount a translated selectbox while retaining its chosen value."""
+def _localized_single_choice(st, method: str, label: str, options, *, key: str, **kwargs):
+    """Retain internal IDs while remounting locale-dependent wire values."""
     values = list(options)
     widget_key = localized_selection_key(key)
     state = st.session_state
@@ -947,7 +948,15 @@ def localized_selectbox(st, label: str, options, *, key: str, **kwargs):
     # The locale-specific widget must honor that navigation on its next run.
     if saved in values and (widget_key not in state or saved != previous):
         state[widget_key] = saved
-    selected = st.selectbox(label, values, key=widget_key, **kwargs)
+    selected = getattr(st, method)(label, values, key=widget_key, **kwargs)
     state[key] = selected
     state[f'_am_selected_{key}'] = selected
     return selected
+
+
+def localized_selectbox(st, label: str, options, *, key: str, **kwargs):
+    return _localized_single_choice(st,'selectbox',label,options,key=key,**kwargs)
+
+
+def localized_radio(st, label: str, options, *, key: str, **kwargs):
+    return _localized_single_choice(st,'radio',label,options,key=key,**kwargs)

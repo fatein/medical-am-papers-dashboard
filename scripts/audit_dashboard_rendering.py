@@ -70,12 +70,12 @@ for code in ('en','de'):
  at=AppTest.from_file(str(ROOT/'public_app.py'),default_timeout=60)
  at.query_params['lang']=code;at.run()
  for page in pages:
-  if at.radio(key='page').value!=page:at.radio(key='page').set_value(page).run()
+  if at.radio(key=f'page__{code}').value!=page:at.radio(key=f'page__{code}').set_value(page).run()
   item=snapshot(at,page,code);results.append(item)
   print(code,page,'leaks',len(item['leaks']),'errors',len(item['errors']),flush=True)
   (OUT/(sys.argv[1] if len(sys.argv)>1 else 'rendered_before.json')).write_text(json.dumps(results,ensure_ascii=False,indent=2),'utf8')
  # Each trend dimension, cross relation and paper/evidence path needs coverage.
- at.radio(key='page').set_value('研究结构与趋势').run()
+ at.radio(key=f'page__{code}').set_value('研究结构与趋势').run()
  from dashboard.labels import DIMENSIONS
  for dimension in DIMENSIONS:
   at.selectbox(key=f'dimension__{code}').set_value(dimension).run()

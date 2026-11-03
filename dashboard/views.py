@@ -7,7 +7,7 @@ import math
 from urllib.parse import quote
 import pandas as pd
 import streamlit as st
-from dashboard.i18n import preserve_original_text, year_papers_label, hero_metadata, set_localized_selection, tr, ui_format, localized_selectbox
+from dashboard.i18n import preserve_original_text, year_papers_label, hero_metadata, set_localized_selection, tr, ui_format, localized_selectbox, localized_radio
 import plotly.graph_objects as go
 from .analytics import yearly_counts,period_comparison,cross_counts
 from .charts import annual_chart,distribution_chart,composition_chart,comparison_chart,style
@@ -163,7 +163,7 @@ def trends(df,years):
     dimension=localized_selectbox(st,'分析维度',list(DIMENSIONS),key='dimension')
     column,mapping=DIMENSIONS[dimension]
     left,right=st.columns([1,1])
-    with left: measure=st.radio('展示方式',['年度占比','年度数量'],horizontal=True,key='measure')
+    with left: measure=localized_radio(st,'展示方式',['年度占比','年度数量'],horizontal=True,key='measure')
     with right:
         exclude=st.checkbox('排除未明确／未分配标签',value=False,key='exclude_unknown')
     working=df

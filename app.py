@@ -18,7 +18,7 @@ from dashboard.direction_reports import direction_report_page
 from dashboard.feedback_views import feedback_summary
 from dashboard.i18n import (LANGUAGE_OPTIONS, LOCALIZED_SELECTION_KEYS,
                             clear_localized_selection, install_streamlit_translation,
-                            localized_multiselect, protect_names, set_language)
+                            localized_multiselect, localized_radio, protect_names, set_language)
 
 ROOT=Path(__file__).resolve().parent
 PUBLIC_MODE=globals().get('DASHBOARD_PUBLIC_MODE',False) is True
@@ -124,7 +124,7 @@ with st.sidebar:
     st.divider()
     pages=['论文总览','研究结构与趋势','论文检索','学术与企业联系','企业格局','技术路线图','企业检索','反馈汇总']
     if not PUBLIC_MODE: pages.append('数据更新')
-    page=st.radio('浏览页面',pages,key='page',label_visibility='collapsed',on_change=clear_report_route)
+    page=localized_radio(st,'浏览页面',pages,key='page',label_visibility='collapsed',on_change=clear_report_route)
     st.divider()
     if page in ('企业格局','技术路线图','企业检索'):
         try:

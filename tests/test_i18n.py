@@ -18,6 +18,10 @@ from dashboard.report_views import render_cited_markdown
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def page_picker(app):
+    return app.radio(key=f'page__{app.selectbox(key="language").value}')
+
+
 def test_language_lookup_and_original_names():
     protect_names(['测试医疗科技有限公司', '个体化植入物研究'])
     try:
@@ -79,15 +83,15 @@ def test_english_navigation_keeps_internal_pages_and_filters():
     app = AppTest.from_file(str(ROOT/'app.py'), default_timeout=60).run()
     app.selectbox(key='language').set_value('en').run()
     assert not app.exception
-    pages = app.radio(key='page')
+    pages = page_picker(app)
     assert 'Paper overview' in pages.options
     pages.set_value('学术与企业联系').run()
     assert not app.exception
-    assert app.radio(key='page').value == '学术与企业联系'
+    assert page_picker(app).value == '学术与企业联系'
     assert app.selectbox(key='language').value == 'en'
     app.selectbox(key='language').set_value('de').run()
     assert not app.exception
-    assert 'Forschung und Industrie' in app.radio(key='page').options
+    assert 'Forschung und Industrie' in page_picker(app).options
 
 
 def test_language_switch_remounts_selected_filters_without_losing_values():
@@ -185,7 +189,7 @@ def test_company_event_headers_translate_the_complete_title(code):
 def test_company_timeline_preview_translates_newline_terminated_record(code):
     app = AppTest.from_file(str(ROOT/'app.py'), default_timeout=60).run()
     app.selectbox(key='language').set_value(code).run()
-    app.radio(key='page').set_value('技术路线图').run()
+    page_picker(app).set_value('技术路线图').run()
     assert not app.exception
     table = next(item.value for item in app.dataframe
                  if item.key == 'enterprise_timeline_brief')
@@ -232,7 +236,7 @@ def test_all_enterprise_country_filters_are_translated():
 @pytest.mark.parametrize('code', ('en', 'de'))
 def test_timeline_company_selector_refreshes_after_language_change(code):
     app = AppTest.from_file(str(ROOT/'app.py'), default_timeout=60).run()
-    app.radio(key='page').set_value('技术路线图').run()
+    page_picker(app).set_value('技术路线图').run()
     app.selectbox(key='enterprise_timeline_company__zh').set_value('3D-Side S.A.').run()
     app.selectbox(key='language').set_value(code).run()
     assert not app.exception
@@ -275,3 +279,22 @@ def test_localized_direction_navigation_and_report_return_keep_the_selection():
     assert not app.exception
     assert app.selectbox(key='cross_direction__de').value==target
     assert app.selectbox(key='cross_question__de').value==question
+
+
+def test_old_language_page_event_cannot_become_an_internal_route():
+    app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60)
+    app.query_params['lang']='en'
+    app.session_state['page']='反馈汇总'
+    app.run()
+    old_radio=next(item for item in app.radio if 'Feedback summary' in item.options)
+    old_id=old_radio.id
+    app.selectbox(key='language').set_value('de').run()
+    states=app._tree.get_widget_states()
+    old_widget=next((widget for widget in states.widgets if widget.id==old_id),None)
+    if old_widget is None:
+        old_widget=states.widgets.add()
+        old_widget.id=old_id
+    old_widget.string_value='Feedback summary'
+    app._run(states)
+    assert not app.exception
+    assert app.session_state['page']=='反馈汇总'

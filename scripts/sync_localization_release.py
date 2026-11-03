@@ -10,15 +10,19 @@ FILES=['dashboard/i18n.py','dashboard/views.py','dashboard/enterprise_views.py',
        'scripts/apply_localization_review.py','scripts/sync_localization_release.py',
        'docs/localization-review-2026-11-03.md',
        'docs/superpowers/plans/2026-11-03-full-dashboard-localization-audit.md']
-FILES.extend(['dashboard/cross_views.py','dashboard/feedback_views.py'])
+FILES.extend(['dashboard/cross_views.py','dashboard/feedback_views.py','app.py'])
 TARGETS=[ROOT.parent/'dashboard_project_20261002',Path('E:/毕业论文——知识库/文件归档/模型训练/5、dashboard制作')]
 norm=lambda value:value.replace(b'\r\n',b'\n')
 for target in TARGETS:
     assert target.is_dir(),target
-    for rel in [path for path in FILES if path.startswith(('dashboard/','data/direction_reports/'))]:
+    prior_path=target/'outputs/full_i18n_review_20261103/release_manifest.json'
+    prior=json.loads(prior_path.read_text('utf8')) if prior_path.exists() else {}
+    prior_hashes={row['path']:row['sha256'] for row in prior.get('files',[])}
+    for rel in [path for path in FILES if path=='app.py' or path.startswith(('dashboard/','data/direction_reports/'))]:
         dst=target/rel
         base=subprocess.check_output(['git','-c','safe.directory=*','show',BASE+':'+rel],cwd=ROOT)
-        if dst.exists() and norm(dst.read_bytes()) not in (norm(base),norm((ROOT/rel).read_bytes())):
+        if (dst.exists() and norm(dst.read_bytes()) not in (norm(base),norm((ROOT/rel).read_bytes()))
+                and hashlib.sha256(dst.read_bytes()).hexdigest()!=prior_hashes.get(str(dst))):
             raise RuntimeError('Independent local changes require merge: '+str(dst))
 for target in TARGETS:
     out=target/'outputs/full_i18n_review_20261103'
