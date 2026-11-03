@@ -14,6 +14,7 @@ from dashboard.labels import P, label
 from dashboard.i18n import (LOCALIZED_SELECTION_KEYS, clear_localized_selection,
                             tr, language, preserve_original_text, protect_names)
 from dashboard.report_navigation import open_question_report
+from dashboard.direction_reports import direction_id, open_direction_report, UI
 
 
 def _open_company_profile(company: str) -> None:
@@ -66,9 +67,12 @@ def cross_analysis_page(data: dict, available_reports: set[str] | None = None) -
                            '研究问题': row['questions'], '关联论文': row['papers'],
                            '有来源的企业': row['companies'], '具体技术对应问题': row['direct']}
                           for row in visible])
+    root = Path(__file__).resolve().parents[1]
+    table['报告'] = [f'?view=direction-report&direction={direction_id(root,r["p"],r["direction"])}&lang={language()}' for r in visible]
     direction_options = [f"{row['p']} · {row['direction']}" for row in visible]
     st.session_state['cross_direction_options'] = direction_options
     st.dataframe(table, hide_index=True, width='stretch', height=350,
+                 column_config={'报告':st.column_config.LinkColumn(UI[language()]['read'],display_text=UI[language()]['read'])},
                  key='cross_direction_table', on_select=_select_direction_from_table,
                  selection_mode='single-row')
     if selected_p == '全部':
@@ -91,7 +95,11 @@ def cross_analysis_page(data: dict, available_reports: set[str] | None = None) -
     ids = {q['question_id'] for q in scope}
     scoped_papers = [p for p in paper_rows if p['question_id'] in ids]
     st.html('<div id="cross-direction-detail" style="scroll-margin-top:100px"></div>')
-    st.subheader(f"{chosen['p']} · {chosen['direction']}")
+    direction_title, direction_button = st.columns([5,1.6],vertical_alignment='center')
+    direction_title.subheader(f"{chosen['p']} · {chosen['direction']}")
+    rid=direction_id(root,chosen['p'],chosen['direction'])
+    if rid:
+        direction_button.button(UI[language()]['read'],key='open_direction_report',type='primary',on_click=open_direction_report,args=(rid,))
     if st.session_state.pop('cross_scroll_to_direction', False):
         st.html('''<script>
         requestAnimationFrame(() => {

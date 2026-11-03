@@ -14,6 +14,7 @@ from dashboard.cross_views import cross_analysis_page
 from dashboard.report_data import load_question_reports
 from dashboard.report_navigation import resolve_report_id, clear_report_route
 from dashboard.report_views import question_report_page
+from dashboard.direction_reports import direction_report_page
 from dashboard.feedback_views import feedback_summary
 from dashboard.i18n import (LANGUAGE_OPTIONS, LOCALIZED_SELECTION_KEYS,
                             clear_localized_selection, install_streamlit_translation,
@@ -21,7 +22,9 @@ from dashboard.i18n import (LANGUAGE_OPTIONS, LOCALIZED_SELECTION_KEYS,
 
 ROOT=Path(__file__).resolve().parent
 PUBLIC_MODE=globals().get('DASHBOARD_PUBLIC_MODE',False) is True
-language_code = st.session_state.get('language', 'zh')
+language_code = st.session_state.get('language', st.query_params.get('lang', 'zh'))
+if language_code not in ('zh','en','de'): language_code='zh'
+st.session_state.setdefault('language',language_code)
 browser_titles = {
     'zh': '医疗增材制造 · 学术趋势',
     'en': 'Medical additive manufacturing · Research trends',
@@ -62,6 +65,7 @@ with language_column:
     picker_labels = {'zh': '🌐 语言', 'en': '🌐 Language', 'de': '🌐 Sprache'}
     def refresh_selected_filter_labels():
         selected_language = st.session_state['language']
+        st.query_params['lang'] = selected_language
         for base in LOCALIZED_SELECTION_KEYS:
             st.session_state.pop(f'{base}__{selected_language}', None)
     st.selectbox(picker_labels[language_code], list(LANGUAGE_OPTIONS),
@@ -110,7 +114,8 @@ if not (ROOT/'data/papers_pre2026.csv').exists():
     st.stop()
 manifest=json.loads((ROOT/'data/manifest.json').read_text(encoding='utf-8'))
 report_id=resolve_report_id(st.query_params, [])
-if report_id is not None:
+direction_report_id=st.query_params.get('direction') if st.query_params.get('view')=='direction-report' else None
+if report_id is not None or direction_report_id is not None:
     st.session_state['page']='学术与企业联系'
 with st.sidebar:
     st.markdown('<div class="brand">◈ AM Research<br>学术趋势观察台</div><span class="tag">公开 · 开源 · 免费</span>' if PUBLIC_MODE else
@@ -193,7 +198,9 @@ elif page=='学术与企业联系':
     try:
         cross_data=load_cross_analysis(ROOT)
         reports=load_question_reports(ROOT)['reports']
-        if report_id is not None:
+        if direction_report_id is not None:
+            direction_report_page(ROOT,str(direction_report_id))
+        elif report_id is not None:
             question=next((q for q in cross_data['questions'] if q['question_id']==report_id),None)
             question_report_page(reports.get(report_id),question,ROOT)
         else:

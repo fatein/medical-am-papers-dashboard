@@ -11,7 +11,7 @@ def resolve_report_id(params: Mapping[str, str], questions: list[dict]) -> str |
 
 
 def clear_report_route() -> None:
-    for key in ('view', 'question'):
+    for key in ('view', 'question', 'direction'):
         st.query_params.pop(key, None)
 
 
