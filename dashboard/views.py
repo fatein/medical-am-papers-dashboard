@@ -7,7 +7,7 @@ import math
 from urllib.parse import quote
 import pandas as pd
 import streamlit as st
-from dashboard.i18n import preserve_original_text, year_papers_label, hero_metadata, set_localized_selection
+from dashboard.i18n import preserve_original_text, year_papers_label, hero_metadata, set_localized_selection, tr, ui_format
 import plotly.graph_objects as go
 from .analytics import yearly_counts,period_comparison,cross_counts
 from .charts import annual_chart,distribution_chart,composition_chart,comparison_chart,style
@@ -85,7 +85,7 @@ def interactive_heatmap(table, row_column, column_column, row_mapping, column_ma
             for column, column_code in zip(cells[1:], table.columns):
                 count = int(table.loc[row_code, column_code])
                 column.button(str(count), key=f'cross_cell_{row_code}_{column_code}',
-                              help=f'{label(row_code, row_mapping)} × {label(column_code, column_mapping)}：{count:,} 篇；点击查看论文',
+                              help=ui_format('cross_cell',row=label(row_code,row_mapping),column=label(column_code,column_mapping),count=count),
                               width='stretch',
                               on_click=_open_cross_cell,
                               args=(row_column, row_code, column_column, column_code))
@@ -168,14 +168,14 @@ def trends(df,years):
         exclude=st.checkbox('排除未明确／未分配标签',value=False,key='exclude_unknown')
     working=df
     if exclude: working=df.loc[~df[column].isin(['T0','M0','unassigned','U','NA'])]
-    st.caption(f'本维度分母：{len(working):,} 篇；当前筛选共 {len(df):,} 篇。使用单一主标签。')
+    st.caption(ui_format('dimension_counts', count=len(working), total=len(df)))
     if working.empty:
         st.info('所选维度没有明确标签，请保留未明确标签或调整筛选。')
         return
     if column=='lexical_theme_id':
         st.info('词汇主题沿用既有分析的八组主题及其解释性名称。')
     with st.container(border=True):
-        st.subheader(f'{dimension} · 时间演变')
+        st.subheader(f'{tr(dimension)} · {tr("时间演变")}')
         chart(composition_chart(working,column,mapping,years,measure=='年度占比'),'dimension_time')
     if years[0]<years[1]:
         with st.container(border=True):
@@ -190,7 +190,7 @@ def trends(df,years):
                 comparison=period_comparison(working,column,early,late)
                 a=int(working.publication_year.between(*early).sum())
                 b=int(working.publication_year.between(*late).sum())
-                st.caption(f'较早区间 {early[0]}–{early[1]}：{a:,} 篇 · 较晚区间 {late[0]}–{late[1]}：{b:,} 篇。横轴为占比差的百分点，不是增长率。')
+                st.caption(ui_format('period_counts',start=early[0],end=early[1],a=a,start2=late[0],end2=late[1],b=b))
                 if a and b:
                     chart(comparison_chart(comparison,mapping),'period_compare')
                     table=comparison.copy()
@@ -207,7 +207,7 @@ def trends(df,years):
             if specified: cross_df=df.loc[df[r].ne('T0')&df[c].ne('M0')]
         else: r,c,rmap,cmap='analysis_primary_p_layer','disease_primary_code',P,D
         table=cross_counts(cross_df,r,c)
-        st.caption(f'交叉图样本量：{len(cross_df):,} 篇；点击格子进入对应的论文检索结果。颜色越深，篇数越多。')
+        st.caption(ui_format('cross_counts',count=len(cross_df)))
         if table.empty: st.info('当前筛选下没有可用于交叉分析的论文。')
         else:
             interactive_heatmap(table,r,c,rmap,cmap)
@@ -236,7 +236,7 @@ def explorer(df,public_mode=False,root=None):
     pages=max(1,math.ceil(len(ordered)/size))
     with right: page=st.number_input('页码',min_value=1,max_value=pages,value=1,step=1,key='paper_page')
     visible=ordered.iloc[(page-1)*size:page*size]
-    st.caption(f'共 {len(df):,} 篇 · 第 {page}/{pages} 页；下载包含全部筛选结果。')
+    st.caption(ui_format('paper_pages',count=len(df),page=page,pages=pages))
     st.dataframe(display_table(visible),hide_index=True,width='stretch',height=410)
     export=public_download_frame(df) if public_mode else df.drop(
         columns=['canonical_pdf','manual_review_required','disease_manual_review_required',
@@ -300,7 +300,7 @@ def explorer(df,public_mode=False,root=None):
                     section = evidence_field(record, 'cross_layer_evidence_section')
                     pages = evidence_field(record, 'cross_layer_evidence_pages')
                 if section or pages:
-                    st.caption(f'章节／范围：{section or "未记录"} · 页码：{pages or "未记录"}')
+                    st.caption(f'{tr("章节／范围")}: {tr(section or "未记录")} · {tr("页码")}: {tr(pages or "未记录")}')
 
 
 def template_bytes():

@@ -10,7 +10,7 @@ import streamlit as st
 
 from dashboard.enterprise_data import parse_p_codes
 from dashboard.labels import P, label
-from dashboard.i18n import language, localized_multiselect, localized_selectbox, tr
+from dashboard.i18n import language, localized_multiselect, localized_selectbox, tr, ui_format
 
 
 TEAL = '#137F75'
@@ -297,7 +297,7 @@ def enterprise_explorer(companies: pd.DataFrame, events: pd.DataFrame,
     if companies.empty:
         st.info('没有匹配的企业，请调整筛选条件。')
         return
-    st.caption(f'找到 {len(companies):,} 家企业')
+    st.caption(ui_format('companies_found',count=len(companies)))
     table = companies.loc[:, ['name', 'country', 'p_codes', 'status', 'event_count']].copy()
     table.columns = ['企业', '国家／地区', 'P 分类', '企业状态', '年度事件']
     st.dataframe(table, hide_index=True, width='stretch', height=350)

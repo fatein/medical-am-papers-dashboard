@@ -1,0 +1,15 @@
+# Primary-source follow-up — German, with one English correction
+
+Files: `academic_followup_de.json` (5 catalogue entries), `academic_followup_en.json` (1 entry). Merge after the initial audit maps. No shared source data, DOI or classifications were changed.
+
+1. **Nifurtimox comparator → Benznidazol.** Aligns with the English agent's primary-paper check, including its documented supplied-DOI mismatch: [original article](https://pmc.ncbi.nlm.nih.gov/articles/PMC11768318/), DOI 10.3390/pharmaceutics17010080. The original Chinese comparator 苯甲酸肼 is a source error. The underlying record DOI remains unchanged.
+2. **PVA sacrificial microchannels → 40 μm × 300 μm**, not 40 μm × 30 mm; PVA filament is also distinguished from silk. Supported by the English agent's primary-paper verification: [original Scientific Reports article](https://www.nature.com/articles/s41598-018-21638-w).
+3. **Saliva uric-acid detection limit → 0.1 μM**, retaining 0.09 μM in PBS. Supported by the English agent's primary-paper verification: [original ACS article](https://pubs.acs.org/doi/full/10.1021/acsmeasuresciau.6c00046).
+4. **丙丙醇 → propranolol / Propranolol** in pediatric SSE tablets. Independently verified directly from the original publisher's abstract: [European Journal of Pharmaceutical Sciences, DOI 10.1016/j.ejps.2025.107122](https://www.sciencedirect.com/science/article/pii/S0928098725001216). The abstract explicitly identifies propranolol, spironolactone and prednisolone, and confirms 4–36% losses through nasogastric tubes. The [authors' institutional publication record](https://research.abo.fi/en/publications/semi-solid-extruded-tablets-for-personalized-pediatric-use-develo/) corroborates the same abstract. Both German and English mappings are supplied.
+
+Validation: the five summary mappings have existing source keys; one additional whole-section mapping intentionally adds a new source key. All six values are nonempty and contain no Chinese. The verified numerical corrections intentionally differ from corrupted Chinese numbers. Their evidence is recorded above.
+
+These findings supersede the earlier review's unresolved comparator and pediatric-drug caveats. A clarification to its standalone-key caveat: the observed report occurrence of 组织 is in 工艺—组织—腐蚀研究 and means alloy **microstructure (Gefüge)**, rather than biological tissue. A global replacement would still be unsafe because 组织 has several contextual meanings.
+
+Additional fifth German entry: complete P1-011 academic-chain section, reconstructed from its Chinese source. This resolves the context-dependent alloy Gefüge label without changing the global ambiguous 组织 key; it also repairs the split PEEK pin (销) phrase previously rendered as a sale. Original years, reference IDs and Markdown heading count are preserved. This full-section source key is intentionally new to the catalogue; the four summary keys and one English key already exist.
+

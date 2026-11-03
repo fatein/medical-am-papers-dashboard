@@ -32,6 +32,9 @@ _OVERRIDES = {
         '研究问题': 'Research question',
         '医疗对象': 'Medical application',
         '论文名称': 'Paper title',
+        '报告': 'Report',
+        '章节／范围': 'Section / scope',
+        '题名': 'Title',
         '论文数': 'Papers',
         '关联论文': 'Related papers',
         '有来源的企业': 'Companies with sources',
@@ -82,6 +85,9 @@ _OVERRIDES = {
         '研究问题': 'Forschungsfrage',
         '医疗对象': 'Medizinischer Anwendungsbereich',
         '论文名称': 'Publikationstitel',
+        '报告': 'Bericht',
+        '章节／范围': 'Abschnitt / Bereich',
+        '题名': 'Titel',
         '论文数': 'Publikationen',
         '关联论文': 'Zugeordnete Publikationen',
         '有来源的企业': 'Unternehmen mit Quellen',
@@ -189,7 +195,7 @@ _TAXONOMY = {
     '先天与发育异常': ('Congenital and developmental disorders', 'Angeborene und Entwicklungsstörungen'),
     '应用场景未标注': ('Application not specified', 'Anwendung nicht angegeben'),
     '工艺未明确': ('Process not specified', 'Verfahren nicht angegeben'),
-    '槽式光聚合': ('Vat photopolymerization', 'Bad-Photopolymerisation'),
+    '槽式光聚合': ('Vat photopolymerization', 'Badbasierte Photopolymerisation'),
     '材料挤出': ('Material extrusion', 'Materialextrusion'),
     '粉床熔融': ('Powder bed fusion', 'Pulverbettfusion'),
     '材料喷射': ('Material jetting', 'Material-Jetting'),
@@ -229,6 +235,125 @@ _TAXONOMY = {
 for _source, (_english, _german) in _TAXONOMY.items():
     _OVERRIDES['en'][_source] = _english
     _OVERRIDES['de'][_source] = _german
+
+_PRESENTATION_TERMS = {
+    '从医疗对象进入研究方向，再沿研究问题查看论文、企业技术与外部依据':
+        ('Explore research directions by medical application, then follow each question to relevant papers, company technologies and supporting sources',
+         'Erkunden Sie Forschungsrichtungen nach medizinischem Anwendungsbereich und finden Sie zu jeder Frage passende Publikationen, Unternehmenstechnologien und Quellen'),
+    '作者': ('Authors', 'Autorinnen und Autoren'),
+    '作者：': ('Authors: ', 'Autorinnen und Autoren: '),
+    '语料层级：': ('Corpus category: ', 'Korpuskategorie: '),
+    '主类别：': ('Primary categories: ', 'Primäre Kategorien: '),
+    '工艺与材料：': ('Process and materials: ', 'Verfahren und Materialien: '),
+    '医疗增材制造相关性：': ('Relevance to medical additive manufacturing: ', 'Bezug zur medizinischen additiven Fertigung: '),
+    '直接相关': ('Directly related', 'Direkter Bezug'),
+    '文献计量建议：': ('Bibliometric inclusion: ', 'Einbeziehung in die bibliometrische Analyse: '),
+    '纳入': ('Included', 'Eingeschlossen'),
+    '暂不纳入': ('Not included', 'Nicht eingeschlossen'),
+    '内容核验依据：': ('Evidence basis: ', 'Beleggrundlage: '),
+    '原文片段': ('Source excerpt', 'Originaltextauszug'),
+    '疾病／应用场景': ('Disease / application', 'Erkrankung / Anwendung'),
+    '有产品/技术描述': ('Companies with product or technology information', 'Unternehmen mit Produkt- oder Technologieangaben'),
+    '企业': ('Company', 'Unternehmen'),
+    '企业数': ('Companies', 'Unternehmen'),
+    '医疗对象（主 P 类别）': ('Medical application (primary P category)', 'Medizinischer Anwendungsbereich (primäre P-Kategorie)'),
+    '医疗对象 P 类别': ('Medical application (P category)', 'Medizinischer Anwendungsbereich (P-Kategorie)'),
+    '医疗对象 P 分类': ('Companies by P category', 'Unternehmen nach P-Kategorie'),
+    'P · 医疗对象': ('P · Medical application', 'P · Medizinischer Anwendungsbereich'),
+    'P·医疗对象': ('P · Medical application', 'P · Medizinischer Anwendungsbereich'),
+    '语料层级': ('Corpus category', 'Korpuskategorie'),
+    '年度论文': ('Annual papers', 'Publikationen pro Jahr'),
+    '范围内累计': ('Cumulative papers', 'Kumulierte Publikationen'),
+    '年度篇数': ('Papers per year', 'Publikationen pro Jahr'),
+    '范围内累计篇数': ('Cumulative paper count', 'Kumulierte Anzahl der Publikationen'),
+    '年度数量': ('Annual count', 'Anzahl pro Jahr'),
+    '年度占比': ('Annual share', 'Anteil pro Jahr'),
+    '较早区间': ('Earlier period', 'Früherer Zeitraum'),
+    '较晚区间': ('Later period', 'Späterer Zeitraum'),
+    '早期与近期：结构变化': ('Changes between earlier and recent periods', 'Strukturwandel zwischen früherem und jüngstem Zeitraum'),
+    '交叉组合': ('Dimensions to compare', 'Zu vergleichende Dimensionen'),
+    '时间演变': ('Change over time', 'Zeitliche Entwicklung'),
+    '标注证据与来源': ('Classification evidence and sources', 'Klassifikationsbelege und Quellen'),
+    '打开 DOI 原文入口': ('Open paper via DOI', 'Publikation über DOI öffnen'),
+    '查看文件原始路径 ↗': ('Open source document ↗', 'Quelldokument öffnen ↗'),
+    '对应企业': ('Related companies', 'Zugeordnete Unternehmen'),
+    '企业对应': ('Industry connection', 'Verbindung zur Industrie'),
+    '企业年度变化': ('Company developments by year', 'Unternehmensentwicklungen nach Jahr'),
+    '企业状态': ('Company status', 'Unternehmensstatus'),
+    '数据与证据口径': ('Data and source information', 'Daten- und Quelleninformationen'),
+    '定位企业': ('Find a company on the timeline', 'Unternehmen auf der Zeitachse finden'),
+    '匹配企业': ('Matching companies', 'Gefundene Unternehmen'),
+    '年度事件': ('Dated events', 'Datierte Ereignisse'),
+    '资料年份线索': ('Year clues from sources', 'Jahresangaben aus Quellen'),
+    '年度节点（含年份级）': ('Dated events (including year-only dates)', 'Datierte Ereignisse (einschließlich reiner Jahresangaben)'),
+    '有产品／技术描述': ('Companies with product or technology information', 'Unternehmen mit Produkt- oder Technologieangaben'),
+    '事件类型': ('Event type', 'Ereignistyp'),
+    '年份范围': ('Year range', 'Zeitraum'),
+    '内容状态': ('Information status', 'Informationsstand'),
+    '来源核查': ('Source check', 'Quellenprüfung'),
+    '官方网站': ('Official website', 'Offizielle Website'),
+    '产品发布': ('Product launch', 'Produkteinführung'),
+    '技术升级': ('Technology update', 'Technologische Weiterentwicklung'),
+    '临床应用': ('Clinical application', 'Klinische Anwendung'),
+    '企业布局': ('Company expansion', 'Unternehmensexpansion'),
+    '合作': ('Partnership', 'Partnerschaft'),
+    '并购': ('Mergers and acquisitions', 'Fusionen und Übernahmen'),
+    '融资与投资': ('Funding and investment', 'Finanzierung und Investitionen'),
+    '监管许可': ('Regulatory clearance', 'Regulatorische Freigabe'),
+    '将鼠标悬停在论文名称上可查看中文归纳；点击“查看”进入论文检索中的对应记录。':
+        ('Hover over a paper title to read its summary; select “View” to open its paper record.',
+         'Bewegen Sie den Mauszeiger über einen Publikationstitel, um die Zusammenfassung zu lesen; „Ansehen“ öffnet den zugehörigen Publikationsdatensatz.'),
+    '点击图中的节点，可查看对应企业的档案与节点内容。':
+        ('Select a timeline marker to open the company profile and the corresponding event.',
+         'Wählen Sie einen Punkt auf der Zeitachse, um das Unternehmensprofil und den zugehörigen Eintrag zu öffnen.'),
+    '点击企业行左侧的选择框，可打开该企业档案。':
+        ('Select the box beside a company row to open its profile.',
+         'Wählen Sie das Kästchen neben einer Unternehmenszeile, um das Profil zu öffnen.'),
+}
+for _source, (_english, _german) in _PRESENTATION_TERMS.items():
+    _OVERRIDES['en'][_source] = _english
+    _OVERRIDES['de'][_source] = _german
+
+_LATIN_LABELS = {
+    'en': {'LT': 'Lithuania'},
+    'de': {'Bulgaria': 'Bulgarien', 'Colombia': 'Kolumbien',
+           'Czech Republic': 'Tschechien', 'LT': 'Litauen',
+           'Liechtenstein': 'Liechtenstein', 'Taiwan': 'Taiwan',
+           'Thailand': 'Thailand', 'Trinidad and Tobago': 'Trinidad und Tobago'},
+}
+
+_UI_FORMATS = {
+    'paper_pages': (
+        '共 {count:,} 篇 · 第 {page}/{pages} 页；下载包含全部筛选结果。',
+        '{count:,} papers · Page {page}/{pages}; the download includes all filtered results.',
+        '{count:,} Publikationen · Seite {page}/{pages}; der Download enthält alle gefilterten Ergebnisse.'),
+    'dimension_counts': (
+        '本维度分母：{count:,} 篇；当前筛选共 {total:,} 篇。使用单一主标签。',
+        '{count:,} papers in this dimension · {total:,} papers in the current selection. Each paper has one primary category.',
+        '{count:,} Publikationen in dieser Dimension · {total:,} Publikationen in der aktuellen Auswahl. Jede Publikation hat eine primäre Kategorie.'),
+    'period_counts': (
+        '较早区间 {start}–{end}：{a:,} 篇 · 较晚区间 {start2}–{end2}：{b:,} 篇。横轴为占比差的百分点，不是增长率。',
+        'Earlier period {start}–{end}: {a:,} papers · Later period {start2}–{end2}: {b:,} papers. The horizontal axis shows the difference in shares in percentage points, not a growth rate.',
+        'Früherer Zeitraum {start}–{end}: {a:,} Publikationen · Späterer Zeitraum {start2}–{end2}: {b:,} Publikationen. Die horizontale Achse zeigt die Anteilsdifferenz in Prozentpunkten, keine Wachstumsrate.'),
+    'cross_counts': (
+        '交叉图样本量：{count:,} 篇；点击格子进入对应的论文检索结果。颜色越深，篇数越多。',
+        '{count:,} papers in the cross-tabulation. Select a cell to view the matching papers. Darker cells indicate more papers.',
+        '{count:,} Publikationen in der Kreuztabelle. Wählen Sie eine Zelle, um die zugehörigen Publikationen zu sehen. Dunklere Zellen stehen für mehr Publikationen.'),
+    'cross_cell': (
+        '{row} × {column}：{count:,} 篇；点击查看论文',
+        '{row} × {column}: {count:,} papers; select to view papers',
+        '{row} × {column}: {count:,} Publikationen; auswählen, um Publikationen zu sehen'),
+    'companies_found': (
+        '找到 {count:,} 家企业', '{count:,} companies found', '{count:,} Unternehmen gefunden'),
+}
+
+
+def ui_format(key: str, **values) -> str:
+    """Format count-bearing sentences without translating isolated units."""
+    index = {'zh': 0, 'en': 1, 'de': 2}[language()]
+    values = {key: tr(value) if isinstance(value, str) else value for key, value in values.items()}
+    return _UI_FORMATS[key][index].format(**values)
+
 
 _COUNTRIES = {
     '中国': ('China', 'China'), '丹麦': ('Denmark', 'Dänemark'),
@@ -430,28 +555,29 @@ def protect_names(values) -> None:
     _PROTECTED.update(str(value) for value in values if isinstance(value, str) and value)
 
 
+@lru_cache(maxsize=1)
+def _protected_pattern(names: tuple[str, ...]):
+    return re.compile('('+'|'.join(re.escape(name) for name in sorted(names,key=len,reverse=True))+')') if names else None
+
+
 @lru_cache(maxsize=8)
 def _catalogue(root: str, code: str) -> dict[str, str]:
     path = Path(root)/'data'/'i18n'/f'{code}.json'
     if not path.exists():
         return {}
-    catalogue = json.loads(path.read_text(encoding='utf-8'))
-    curated_path = Path(root)/'scripts'/f'question_titles_{code}.json'
-    cross_path = Path(root)/'data'/'cross_analysis.json'
-    if curated_path.exists() and cross_path.exists():
-        curated = json.loads(curated_path.read_text(encoding='utf-8'))
-        cross = json.loads(cross_path.read_text(encoding='utf-8'))
-        catalogue.update({row['question']: curated[row['question_id']]
-                          for row in cross['questions'] if row['question_id'] in curated})
-    return catalogue
+    # Reviewed question titles are already consolidated in the catalogue.
+    # Optional development files must not override the published translations.
+    return json.loads(path.read_text(encoding='utf-8'))
 
 
 def tr(value: str, *, code: str | None = None, root: Path | None = None) -> str:
     code = code or language()
-    if code == 'zh' or not isinstance(value, str) or not _HAN.search(value):
+    if code == 'zh' or not isinstance(value, str):
         return value
     if value in _PROTECTED:
         return value
+    if not _HAN.search(value):
+        return _LATIN_LABELS[code].get(value, value)
     catalogue = _catalogue(str(root or _ROOT.get()), code)
     overrides = _OVERRIDES[code]
     if value in overrides:
@@ -479,7 +605,12 @@ def tr(value: str, *, code: str | None = None, root: Path | None = None) -> str:
         return re.sub(r'[\u3400-\u9fff]+',
                       lambda word: overrides.get(word.group(), catalogue.get(word.group(), word.group())),
                       phrase)
-    return _western_punctuation(_SEGMENT.sub(translate_segment, value))
+    # Dynamic event labels embed original company names beside translated
+    # descriptions. Keep those names intact, just as in standalone fields.
+    pattern = _protected_pattern(tuple(sorted(_PROTECTED)))
+    parts = pattern.split(value) if pattern else [value]
+    return ''.join(part if part in _PROTECTED else _western_punctuation(_SEGMENT.sub(translate_segment, part))
+                   for part in parts)
 
 
 def _western_punctuation(value: str) -> str:
@@ -537,17 +668,24 @@ def _translate_figure(figure):
             for field in ('x', 'y', 'labels', 'text', 'theta', 'r',
                           'hovertext', 'customdata'):
                 values = getattr(trace, field, None)
-                if values is not None and not isinstance(values, (str, bytes)):
+                if values is not None and not isinstance(values, bytes):
                     try:
                         setattr(trace, field, translate_values(values))
                     except (TypeError, ValueError):
                         pass
-        for axis in ('xaxis', 'yaxis', 'xaxis2', 'yaxis2'):
+            for owner in (trace, getattr(trace, 'marker', None)):
+                bar = getattr(owner, 'colorbar', None)
+                if bar and bar.title and isinstance(bar.title.text, str):
+                    bar.title.text = tr(bar.title.text)
+        for axis in (key for key in figure.layout.to_plotly_json()
+                     if re.fullmatch(r'[xy]axis\d*', key)):
             item = getattr(figure.layout, axis, None)
             if item and item.title and isinstance(item.title.text, str):
                 item.title.text = tr(item.title.text)
             if item and item.ticktext is not None:
                 item.ticktext = translate_values(item.ticktext)
+            if item and item.categoryarray is not None:
+                item.categoryarray = translate_values(item.categoryarray)
         if figure.layout.title and isinstance(figure.layout.title.text, str):
             figure.layout.title.text = tr(figure.layout.title.text)
         if figure.layout.legend and figure.layout.legend.title:
@@ -608,6 +746,21 @@ def install_streamlit_translation(st) -> None:
                     args[first] = _translate_frame(args[first])
                 elif 'data' in kwargs:
                     kwargs['data'] = _translate_frame(kwargs['data'])
+                if kwargs.get('column_order') is not None:
+                    kwargs['column_order'] = [tr(key) if isinstance(key, str) else key
+                                              for key in kwargs['column_order']]
+                if kwargs.get('column_config') is not None:
+                    configs = {}
+                    for key, config in kwargs['column_config'].items():
+                        if isinstance(config, dict):
+                            config = dict(config)
+                            for field in ('label', 'help'):
+                                if isinstance(config.get(field), str):
+                                    config[field] = tr(config[field])
+                        elif isinstance(config, str):
+                            config = tr(config)
+                        configs[tr(key) if isinstance(key, str) else key] = config
+                    kwargs['column_config'] = configs
             elif method_name == 'plotly_chart':
                 if len(args) > first:
                     args[first] = _translate_figure(args[first])
@@ -639,7 +792,16 @@ def install_streamlit_translation(st) -> None:
                 if method_name in ('selectbox', 'multiselect', 'radio') and kwargs.get('key') != 'language':
                     original_format = kwargs.get('format_func') or str
                     active_code, active_root = language(), _ROOT.get()
-                    kwargs['format_func'] = lambda option, f=original_format, c=active_code, r=active_root: tr(f(option), code=c, root=r)
+                    def localized_format(option, f=original_format, c=active_code, r=active_root):
+                        # Streamlit also invokes formatters while deserializing a
+                        # later event, outside the original script context.
+                        language_token, root_token = _ACTIVE.set(c), _ROOT.set(r)
+                        try:
+                            return tr(f(option), code=c, root=r)
+                        finally:
+                            _ROOT.reset(root_token)
+                            _ACTIVE.reset(language_token)
+                    kwargs['format_func'] = localized_format
             return original(*args, **kwargs)
         return translated
 
