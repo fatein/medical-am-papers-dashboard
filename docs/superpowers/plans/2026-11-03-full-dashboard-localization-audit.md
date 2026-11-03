@@ -32,4 +32,4 @@
 - [x] Capture all pages in both languages and scan rendered UI, tables and charts for omissions; reproduce language-switch failures before correcting them.
 - [x] Add meaningful regression checks for confirmed failures, fix presentation/catalogue causes, and merge reviewed content patches.
 - [x] Run catalogue integrity, name/link/number checks and page/navigation tests; inspect representative browser layouts in both languages.
-- [ ] Publish only scoped files, restart if required, verify the public pages and synchronize code plus review records locally.
+- [x] Publish only scoped files, restart if required, verify the public pages and synchronize code plus review records locally.

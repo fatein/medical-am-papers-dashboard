@@ -27,3 +27,5 @@
 - 本地公共模式的反馈读取曾返回外部服务错误；错误提示本身已翻译。随后已在公开网站确认英文、德语反馈页均能正常读取。
 
 公开站点已完成英文与德语反馈页、德语国家筛选、语言切换及报告页检查。发布记录、线上截图、41 项回归检查结果和文件同步清单随本轮输出一并归档。
+
+术语参考：[Fraunhofer IPT 的增材制造工艺说明](https://www.ipt.fraunhofer.de/de/technologien/additive-fertigung.html)。药物名与数值的原文依据见 academic_followup_de.md 和 academic_review_en.md。

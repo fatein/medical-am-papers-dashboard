@@ -1,0 +1,33 @@
+{
+  "code_commit": "f766953f59860386050c049cdccef6f451378662",
+  "public_url": "https://medical-am-papers-dashboard-mishyltxecjh3aizqdteec.streamlit.app/",
+  "checks": {
+    "english_feedback_load": "pass",
+    "german_feedback_load": "pass",
+    "english_german_roundtrip": "pass",
+    "selected_status_text_refresh": "pass",
+    "localized_direction_question_values": "pass",
+    "german_country_names": [
+      "Bulgarien",
+      "Tschechien",
+      "Litauen"
+    ],
+    "german_direction_report_title": "Poröse Implantate und Gitterdesign",
+    "direction_report_source_links": 14,
+    "observed_final_exception": false
+  },
+  "tests": {
+    "release": 41,
+    "synced_navigation": 5,
+    "synced_content_and_presentation": 13
+  },
+  "screenshots": [
+    "public_english.jpg",
+    "public_german.jpg"
+  ],
+  "content_patches": {
+    "en": 1064,
+    "de": 1176,
+    "direction_report_paragraphs_de": 2
+  }
+}
