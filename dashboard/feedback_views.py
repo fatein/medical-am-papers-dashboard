@@ -12,7 +12,7 @@ import streamlit as st
 from streamlit.errors import StreamlitSecretNotFoundError
 
 from .data import safe_csv
-from .feedback_data import DIMENSIONS, FEEDBACK_TYPES, make_paper_feedback, paper_classification
+from .feedback_data import DIMENSIONS, FEEDBACK_TYPES, make_paper_feedback, make_report_feedback, paper_classification
 from .feedback_store import FeedbackStoreError, GitHubFeedbackStore, SQLiteFeedbackStore
 from .i18n import language, localized_selectbox, preserve_original_text, protect_names
 from .labels import label
@@ -105,9 +105,60 @@ def paper_feedback(paper, root: Path, public_mode=False):
         st.button('查看反馈汇总', key=f'paper_feedback_summary_{paper_id}', on_click=_open_summary)
 
 
-def _display_feedback(item):
-    with preserve_original_text():
+def report_feedback(report_id, title, kind, root: Path, public_mode=False, version=''):
+    identity = f'{kind}_{report_id}'
+    _, action = st.columns([5, 2])
+    action.button('报告反馈', key=f'report_feedback_open_{identity}',
+                  on_click=_toggle_form, args=(identity,), width='stretch')
+    if st.session_state.get('_am_feedback_open_id') != identity:
+        return
+    store = get_feedback_store(root, public_mode)
+    with st.container(border=True):
+        st.subheader('报告质量反馈')
+        st.write(title)
+        rating = localized_selectbox(st, '质量评分', [5, 4, 3, 2, 1],
+                                    format_func=lambda value: f'{value} / 5',
+                                    key=f'report_rating_{identity}')
+        description = st.text_area('反馈说明', key=f'report_description_{identity}',
+                                   max_chars=3000, height=140,
+                                   placeholder='请说明报告的优点、问题或建议，可附上相关章节和来源链接。')
+        st.caption('反馈将在反馈汇总中公开展示。')
+        if not store.writable:
+            st.info('反馈提交暂未启用。')
+        if st.button('提交反馈', key=f'report_submit_{identity}', type='primary', disabled=not store.writable):
+            fingerprint = hashlib.sha256(json.dumps(
+                [identity, version, rating, description.strip()], ensure_ascii=False).encode()).hexdigest()
+            ids = st.session_state.setdefault('feedback_submission_ids', {})
+            try:
+                record = make_report_feedback(report_id, title, kind, rating, description,
+                                              version=version, language=language(),
+                                              submission_id=ids.setdefault(fingerprint, str(uuid4())))
+                receipt = store.submit(record)
+            except ValueError:
+                st.warning('请填写反馈说明。')
+            except FeedbackStoreError as error:
+                _show_store_error(error)
+            else:
+                st.success('反馈已提交。')
+                st.caption('提交时间（UTC）' + ': ' + receipt['submitted_at'][:19].replace('T', ' '))
+        st.button('查看反馈汇总', key=f'report_summary_{identity}', on_click=_open_summary)
+
+
+def _open_feedback_report(item, root):
+    if item.get('report_kind') == 'direction':
+        from .direction_reports import open_direction_report
+        open_direction_report(item['subject_id'])
+    else:
+        from .report_navigation import open_question_report
+        open_question_report(item['subject_id'])
+
+
+def _display_feedback(item, root):
+    if item['feedback_type'] == 'report_evaluation':
         st.subheader(item['subject_title'])
+    else:
+        with preserve_original_text():
+            st.subheader(item['subject_title'])
     st.caption(item['submitted_at'].replace('T', ' ')[:19] + ' UTC · ' + item['subject_id'])
     st.write('处理状态：', STATUS_LABELS.get(item['status'], '待处理'))
     if item['feedback_type'] == 'paper_classification':
@@ -125,6 +176,10 @@ def _display_feedback(item):
         from .report_navigation import open_report_paper
         st.button('查看对应论文', key='feedback_open_paper', on_click=open_report_paper,
                   args=(item['subject_id'],))
+    elif item.get('report_kind'):
+        st.write('质量评分', f'{item["rating"]} / 5')
+        st.button('查看对应报告', key='feedback_open_report', on_click=_open_feedback_report,
+                  args=(item, root))
     if item.get('source_url', '').startswith('https://github.com/'):
         st.link_button('查看反馈记录 ↗', item['source_url'])
 
@@ -139,7 +194,7 @@ def feedback_summary(root: Path, public_mode=False):
                               format_func=lambda code: '全部状态' if code == 'all' else STATUS_LABELS[code],
                               key='feedback_status')
     with middle:
-        query = st.text_input('检索反馈', placeholder='论文名称、编号或反馈内容…', key='feedback_query')
+        query = st.text_input('检索反馈', placeholder='论文、报告名称、编号或反馈内容…', key='feedback_query')
     with right:
         st.button('刷新', key='feedback_refresh')
     try:
@@ -147,7 +202,7 @@ def feedback_summary(root: Path, public_mode=False):
     except (FeedbackStoreError, ValueError):
         st.error('暂时无法读取反馈，请稍后刷新。')
         return
-    protect_names(item['subject_title'] for item in items)
+    protect_names(item['subject_title'] for item in items if item['feedback_type'] == 'paper_classification')
     metrics = st.columns(3)
     metrics[0].metric('反馈总数', str(len(items)))
     metrics[1].metric('待处理', str(sum(item['status'] == 'pending' for item in items)))
@@ -162,11 +217,14 @@ def feedback_summary(root: Path, public_mode=False):
                                       ('subject_id', 'subject_title', 'description')).casefold())]
             if not selected:
                 st.info('暂无符合条件的论文分类反馈。' if category == 'paper_classification'
-                        else '分析报告评估将归集在此分类。')
+                        else '暂无符合条件的报告反馈。')
                 continue
             table = pd.DataFrame([{
                 '反馈编号': item['feedback_id'], '提交时间（UTC）': item['submitted_at'][:19].replace('T', ' '),
-                '论文题名': item['subject_title'], '变更维度': '、'.join(item.get('changed_dimensions', [])) or '说明',
+                ('论文题名' if category == 'paper_classification' else '报告名称'): item['subject_title'],
+                ('变更维度' if category == 'paper_classification' else '质量评分'):
+                    ('、'.join(item.get('changed_dimensions', [])) or '说明') if category == 'paper_classification'
+                    else f'{item["rating"]} / 5' if item.get('rating') else '—',
                 '处理状态': STATUS_LABELS[item['status']],
             } for item in selected])
             st.dataframe(table, hide_index=True, width='stretch', height=300)
@@ -184,4 +242,4 @@ def feedback_summary(root: Path, public_mode=False):
             choice = st.selectbox('查看反馈详情', list(by_id), key=key,
                                   format_func=lambda ident: by_id[ident]['subject_title'])
             with st.container(border=True):
-                _display_feedback(by_id[choice])
+                _display_feedback(by_id[choice], root)

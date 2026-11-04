@@ -35,8 +35,16 @@ def encode_issue_body(record: dict) -> str:
     fence = '`' * max(3, max((len(x) + 1 for x in re.findall(r'`+', description)), default=3))
     # Literal blocks prevent visitor prose from creating mentions or active Markdown.
     title = record['subject_title'].replace('@', '@\u200b').replace('\n', ' ')
-    return (f'Paper: {title}\n\nID: {record["subject_id"]}\n\n'
-            + '\n'.join(rows) + f'\n\nDescription:\n{fence}\n{description}\n{fence}\n\n'
+    details = '\n'.join(rows)
+    subject = 'Paper'
+    if record['feedback_type'] == 'report_evaluation':
+        subject = 'Report'
+        details = (f'Kind: {record.get("report_kind", "")}\n\n'
+                   f'Rating: {record.get("rating", "")} / 5\n\n'
+                   f'Version: {record.get("report_version", "")}')
+    return (f'{subject}: {title}\n\nID: {record["subject_id"]}\n\n'
+            + f'Submitted (UTC): {record["submitted_at"]}\n\n' + details
+            + f'\n\nDescription:\n{fence}\n{description}\n{fence}\n\n'
             + f'<!-- am-dashboard-feedback-v1:{encoded} -->')
 
 

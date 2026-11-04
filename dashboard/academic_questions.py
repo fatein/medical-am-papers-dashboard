@@ -318,7 +318,7 @@ CSS = '''<style>
 </style>'''
 
 
-def academic_question_page(report: dict, question: dict | None, root: Path) -> None:
+def academic_question_page(report: dict, question: dict | None, root: Path, public_mode=False) -> None:
     import streamlit as st
     from dashboard.i18n import language, preserve_original_text
     from dashboard.report_navigation import restore_question_context, open_report_paper
@@ -327,6 +327,9 @@ def academic_question_page(report: dict, question: dict | None, root: Path) -> N
     r = localize_report(report, code)
     refs = {ref['id']: ref for ref in r['references']}
     figures = {f['id']: f for f in r['figures']}
+    from dashboard.feedback_views import report_feedback
+    report_feedback(report['question_id'], report['title'], 'question', root, public_mode,
+                    version=report.get('updated_at', ''))
     with preserve_original_text():
         st.button(ui['back'], key='report_back', on_click=restore_question_context, args=(question,))
         st.html(CSS)

@@ -63,6 +63,27 @@ def validate_feedback(record: dict) -> None:
             raise ValueError('Inconsistent classification changes')
         if not changes and not description.strip():
             raise ValueError('A suggested change or description is required')
+    elif record.get('report_kind') is not None:
+        if record['report_kind'] not in ('direction', 'question'):
+            raise ValueError('Invalid report kind')
+        if type(record.get('rating')) is not int or not 1 <= record['rating'] <= 5:
+            raise ValueError('Invalid report rating')
+        if not description.strip():
+            raise ValueError('A report description is required')
+
+
+def make_report_feedback(report_id: str, title: str, kind: str, rating: int,
+                         description: str, *, version='', language='zh', submission_id=None) -> dict:
+    item = {
+        'schema_version': 1, 'feedback_id': submission_id or str(uuid4()),
+        'feedback_type': 'report_evaluation', 'subject_id': report_id,
+        'subject_title': title, 'report_kind': kind, 'report_version': str(version),
+        'rating': rating, 'description': description.strip(), 'language': language,
+        'submitted_at': datetime.now(timezone.utc).isoformat(timespec='seconds'),
+        'changed_dimensions': [], 'original_classification': {}, 'suggested_classification': {},
+    }
+    validate_feedback(item)
+    return item
 
 
 def make_paper_feedback(paper, suggested: dict[str, str], description: str,

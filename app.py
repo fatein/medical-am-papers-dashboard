@@ -199,10 +199,10 @@ elif page=='学术与企业联系':
         cross_data=load_cross_analysis(ROOT)
         reports=load_question_reports(ROOT)['reports']
         if direction_report_id is not None:
-            direction_report_page(ROOT,str(direction_report_id))
+            direction_report_page(ROOT,str(direction_report_id),public_mode=PUBLIC_MODE)
         elif report_id is not None:
             question=next((q for q in cross_data['questions'] if q['question_id']==report_id),None)
-            question_report_page(reports.get(report_id),question,ROOT)
+            question_report_page(reports.get(report_id),question,ROOT,public_mode=PUBLIC_MODE)
         else:
             cross_analysis_page(cross_data,set(reports))
     except (OSError,ValueError,KeyError) as error:
