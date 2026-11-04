@@ -34,6 +34,26 @@ DEFAULTS = {'document_id':'','title':'','publication_year':None,'abstract':'',
             'evidence_scope':'',
             'dataset_batch':'historical','imported_at':''}
 
+_LEGACY_MISSING_EVIDENCE = re.compile(
+    r'(?i)^\s*(?:insufficient evidence|no evidence|not recorded|not available)\b')
+_DAMAGED_EVIDENCE_GLYPH = re.compile(
+    r'[\ufffd\uf000-\uf8ff\u25a1\u25af\x00-\x08\x0b\x0e-\x1f]')
+_NON_EVIDENCE_FRONT_MATTER = re.compile(
+    r'(?i)^(?:acknowledg(?:e)?ments?\b|abbreviations\b|'
+    r'https?://doi\.org/|www\.|contents lists available\b|'
+    r'este art[ií]culo se encuentra embargado\b|'
+    r'technique types of\b.{0,130}\breferences\b|'
+    r'fabrication method basic principle\b.{0,130}\breferences\b)')
+
+
+def clean_evidence_display(value):
+    """Leave uncertain evidence absent rather than publishing broken source text."""
+    text = str(value or '').strip()
+    if (_LEGACY_MISSING_EVIDENCE.match(text) or _DAMAGED_EVIDENCE_GLYPH.search(text)
+            or _NON_EVIDENCE_FRONT_MATTER.search(text)):
+        return ''
+    return text
+
 
 def normalize_doi(value):
     text = str(value or '').strip().lower()

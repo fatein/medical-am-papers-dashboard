@@ -11,7 +11,7 @@ from dashboard.i18n import preserve_original_text, year_papers_label, hero_metad
 import plotly.graph_objects as go
 from .analytics import yearly_counts,period_comparison,cross_counts
 from .charts import annual_chart,distribution_chart,composition_chart,comparison_chart,style
-from .data import read_upload,validate_additions,save_additions,safe_csv,load_data,deduplicate
+from .data import read_upload,validate_additions,save_additions,safe_csv,load_data,deduplicate,clean_evidence_display
 from .public_data import public_download_frame
 from .labels import P,D,T,M,THEMES,DIMENSIONS,TIERS,WORK_TYPES,label
 
@@ -22,7 +22,10 @@ EVIDENCE_SCOPES={'pdf_excerpt':'原文片段','abstract':'摘要／元数据','t
 
 def evidence_field(record, key):
     value = record.get(key, '')
-    return '' if value is None or pd.isna(value) else str(value).strip()
+    text = '' if value is None or pd.isna(value) else str(value).strip()
+    if key.endswith('_evidence_text'):
+        return clean_evidence_display(text)
+    return text
 
 
 def chart(fig,key):

@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from .data import deduplicate, normalize_records
+from .data import clean_evidence_display, deduplicate, normalize_records
 from .enterprise_data import (EVENT_COLUMNS, OBSERVATION_COLUMNS,
                               normalize_public_url, observation_coverage,
                               load_enterprises, load_enterprise_observations)
@@ -90,7 +90,7 @@ def _select_public(frame: pd.DataFrame) -> pd.DataFrame:
 
 def _public_evidence(value: str, limit: int = EVIDENCE_EXCERPT_LIMIT) -> str:
     """Publish a brief evidence excerpt; never expose a local file reference."""
-    value = value.strip()
+    value = clean_evidence_display(value)
     if _PRIVATE_PATH.search(value):
         return '已隐去本机文件路径；请通过 DOI 核查原文。'
     if len(value) > limit:
@@ -291,4 +291,8 @@ def validate_public_package(root: Path) -> dict:
 
 
 def public_download_frame(frame: pd.DataFrame) -> pd.DataFrame:
-    return frame.reindex(columns=PUBLIC_COLUMNS, fill_value='').fillna('')
+    output = frame.reindex(columns=PUBLIC_COLUMNS, fill_value='').fillna('')
+    for column in output.columns:
+        if column.endswith('_evidence_text'):
+            output[column] = output[column].map(clean_evidence_display)
+    return output
