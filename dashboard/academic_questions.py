@@ -328,7 +328,7 @@ def academic_question_page(report: dict, question: dict | None, root: Path, publ
     refs = {ref['id']: ref for ref in r['references']}
     figures = {f['id']: f for f in r['figures']}
     from dashboard.feedback_views import report_feedback
-    report_feedback(report['question_id'], report['title'], 'question', root, public_mode,
+    report_feedback(report['question_id'], localize_report(report, 'zh')['title'], 'question', root, public_mode,
                     version=report.get('updated_at', ''))
     with preserve_original_text():
         st.button(ui['back'], key='report_back', on_click=restore_question_context, args=(question,))

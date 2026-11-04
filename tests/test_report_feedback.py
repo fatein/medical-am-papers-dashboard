@@ -61,3 +61,19 @@ def test_new_feedback_labels_are_translated():
         mapping = json.loads((root/'data/i18n'/f'{code}.json').read_text(encoding='utf-8'))
         for key in ('报告反馈', '报告质量反馈', '质量评分', '报告名称', '查看对应报告', '请填写反馈说明。'):
             assert mapping[key] != key
+
+
+def test_academic_reader_uses_localized_report_title_for_feedback(monkeypatch):
+    from dashboard import academic_questions, feedback_views
+    class Captured(Exception):
+        pass
+    report = {'question_id': 'P1-001', 'updated_at': '2026-11-04',
+              'references': [], 'figures': [],
+              'locales': {code: {'title': '孔道问题' if code == 'zh' else 'Pore question'}
+                          for code in ('zh', 'en', 'de')}}
+    def capture(ident, title, kind, *args, **kwargs):
+        assert (ident, title, kind) == ('P1-001', '孔道问题', 'question')
+        raise Captured()
+    monkeypatch.setattr(feedback_views, 'report_feedback', capture)
+    with pytest.raises(Captured):
+        academic_questions.academic_question_page(report, None, Path('.'))
