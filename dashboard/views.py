@@ -302,7 +302,7 @@ def explorer(df,public_mode=False,root=None):
                 if prefix == 'p_layer' and not section:
                     section = evidence_field(record, 'cross_layer_evidence_section')
                     pages = evidence_field(record, 'cross_layer_evidence_pages')
-                if section or pages:
+                if evidence and (section or pages):
                     st.caption(f'{tr("章节／范围")}: {tr(section or "未记录")} · {tr("页码")}: {tr(pages or "未记录")}')
 
 
