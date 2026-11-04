@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P7-105",
   "p": "P7",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [
@@ -134,23 +134,23 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Collins et al.：一体台面与可拆光学模块分担功能",
+          "caption": "Fig. 1 | Collins et al.：一体台面与可拆光学模块分担功能",
           "interpretation": "图中 XY 台面位于物镜上方，右侧 Z actuator 连接下方光学模块；电机安装位是可选部件，底部电子盒也独立。它显示哪些安装和运动结构被打印整合，却没有把物镜、相机或电机的采购成本消除。照片不是打印尺寸或重复定位误差的测量。[结构原图](ref:R01)"
         },
         "F02": {
-          "caption": "Sharkey et al.：轴向稳定与横向蠕变并存",
+          "caption": "Fig. 6 | Sharkey et al.：轴向稳定与横向蠕变并存",
           "interpretation": "左图横轴约 0–20 d，红色 X 缓慢上升、蓝色 Y 下降；右图横轴约 0–5 d，绿色 Z 围绕起点波动，蓝色 Y 则明显下移。两幅记录的时间窗口不同，右侧较大的 Y 松弛与实验前大幅移动有关。原图注概称两周与一周，实际坐标范围并不一致；这里按坐标解释，不将不同记录拼成同一稳定性指标。[漂移原图](ref:R02)"
         },
         "F03": {
-          "caption": "Sharkey et al.：移动范围增大后返回误差上升",
+          "caption": "Fig. 8 | Sharkey et al.：移动范围增大后返回误差上升",
           "interpretation": "横轴为对数尺度移动半径 μm，纵轴为返回起点的 RMS 误差 μm。小半径红点低于 1 μm，较大半径点明显升高；插图是返回位置散点，短、长比例尺分别为 1 μm 和 4 μm。图中没有覆盖全部正文声称的最远测试范围，且微步大小不在这个纵轴上。它直接限定低价机构在重复访问同一点时的性能。[重复定位原图](ref:R02)"
         },
         "F04": {
-          "caption": "Collins et al.：共享成像链并不等于共享全部照明件",
+          "caption": "Fig. 2 | Collins et al.：共享成像链并不等于共享全部照明件",
           "interpretation": "a 中 LED1、L1 从上方照亮样品，O1、L2 与 CAM 形成下方成像链；b 中 LED2、L3、F1、F2 组成侧向照明及滤光路径。图中镜片和滤片是安装到打印壳体中的独立光学件。换模式主要改变照明和滤光配置，机械主体保留；示意图本身没有给出各模式分辨率或透过率相同的证据。[光路原图](ref:R01)"
         },
         "F05": {
-          "caption": "Wincott et al.：打开结构以换取光路可接近性",
+          "caption": "Fig. 1 | Wincott et al.：打开结构以换取光路可接近性",
           "interpretation": "爆炸图自上至下为照明模块、样品与柔性台、折叠光路及电子空间，底部明确标出钢底板。铰接盖和平台可打开，适合观察、调节和更换部件，但增加体积与装配接口。该图说明约 £300 的基础仪器仍包含非打印部件，不能将整机成本归结为 PLA 用量。[装配原图](ref:R03)"
         }
       }
@@ -207,23 +207,23 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Collins et al.: integrated stage and removable optics divide the functions",
+          "caption": "Fig. 1 | Collins et al.: integrated stage and removable optics divide the functions",
           "interpretation": "The XY stage lies above the objective, while the right-hand Z actuator connects to the lower optics module. Motor mounts are optional and the electronics enclosure is separate. The image identifies integrated printed mounting and motion structures, without eliminating purchased objectives, cameras or motors. It is not a measurement of print dimensions or repositioning error. [Original construction image](ref:R01)"
         },
         "F02": {
-          "caption": "Sharkey et al.: axial stability coexists with lateral creep",
+          "caption": "Fig. 6 | Sharkey et al.: axial stability coexists with lateral creep",
           "interpretation": "The left time axis spans approximately 0–20 d: red X rises slowly and blue Y falls. The right spans approximately 0–5 d: green Z fluctuates around the origin while blue Y moves substantially downward. Recording windows differ, and larger right-hand Y relaxation is associated with substantial movement before measurement. The original caption broadly states two weeks and one week, inconsistent with the displayed coordinate ranges. Interpretation here follows the axes rather than combining different records into one stability metric. [Original drift figure](ref:R02)"
         },
         "F03": {
-          "caption": "Sharkey et al.: return error increases with movement range",
+          "caption": "Fig. 8 | Sharkey et al.: return error increases with movement range",
           "interpretation": "The horizontal logarithmic axis gives movement radius in μm; the vertical axis gives RMS return-to-origin error in μm. Small-radius red points lie below 1 μm, with larger errors at greater radii. Insets show returned-position scatter, with short and long scale bars of 1 μm and 4 μm respectively. The plot does not cover the full furthest range claimed in the text, and its vertical axis is not microstep size. It directly bounds repeat-visit performance of the inexpensive mechanism. [Original repositioning figure](ref:R02)"
         },
         "F04": {
-          "caption": "Collins et al.: a shared imaging chain does not share every illumination component",
+          "caption": "Fig. 2 | Collins et al.: a shared imaging chain does not share every illumination component",
           "interpretation": "In a, LED1 and L1 illuminate from above, while O1, L2 and CAM form the lower imaging chain. In b, LED2, L3, F1 and F2 form lateral illumination and filtering. Lenses and filters are separate optical components mounted in printed housings. Mode changes mainly replace illumination and filtering while retaining the mechanical body. The schematic does not establish equal resolution or transmission across modes. [Original optical paths](ref:R01)"
         },
         "F05": {
-          "caption": "Wincott et al.: an opening structure makes the optical path accessible",
+          "caption": "Fig. 1 | Wincott et al.: an opening structure makes the optical path accessible",
           "interpretation": "From top to bottom the exploded view shows illumination, specimen and flexure stage, folded optics and electronics space; the steel baseplate is explicitly labelled. Hinged lid and platform open for observation, adjustment and component replacement, at the cost of volume and assembly interfaces. The figure shows that the approximately £300 basic instrument still includes nonprinted parts; overall cost cannot be reduced to PLA consumption. [Original assembly image](ref:R03)"
         }
       }
@@ -243,7 +243,7 @@
         {
           "id": "s2",
           "title": "Festkörpergelenke ersetzen bearbeitete Gleitflächen durch kontrollierte Verformung",
-          "markdown": "Der frühere Mechanismus von Sharkey et al. nutzt die reversible Biegung nachgiebigen Kunststoffs und benötigt keine präzise geschliffenen gedruckten Führungsflächen. Gelenke sind 0.72 mm dick, 1.5 mm lang und 4 mm breit; maximal etwa 6° Drehung ergibt im Kreisbogenmodell eine maximale Dehnung von ungefähr 0.024. Diese Maße gehören zu dieser Version: Ihr Verfahrweg von 8×8×4 mm darf nicht mit der späteren Version von 12×12×4 mm vermischt werden. Viergelenk- und Parallelogrammführungen erhalten die Orientierung, die Bahn bleibt jedoch leicht gekrümmt. Defokussierung am Rand des Verfahrwegs erfordert Z-Korrektur. [Ursprüngliche Mechanikversuche](ref:R02)\n\nDer Grundkörper benötigt etwa 90 g Kunststoff und ungefähr 8 h auf einem RepRapPro Ormerod beziehungsweise 5 h auf den getesteten Ultimaker 2 und MakerBot 2. Verzicht auf Kragarme und Brückenbildung für die Tischfläche vermeiden aufwendige Stützentfernung. Weniger Arbeitsschritte verlagern Zuverlässigkeit auf dünne Gelenke, Brücken und Schichtverbindungen. Bei normal begrenzten Mechanismen beobachteten die Autoren über 6 Monate keine Gelenkbrüche, wohl aber bei übermäßig biegbaren Entwürfen; unbegrenzte Ermüdungslebensdauer wurde nicht belegt. Spätere OpenFlexure-Versionen ersetzten alternde Gummibänder und verschleißende Schrauben. Geschmierte Edelstahlschrauben und Viton O-rings ermöglichten etwa 30000 Tischbewegungszyklen; schlechte Drucke oder Filamente versagten früher. Lokaler Nachdruck besitzt einen experimentell gestützten Wartungsvorteil, Verbrauchsteile und Montagequalität bleiben jedoch relevant. [Verbesserte Haltbarkeit](ref:R01)",
+          "markdown": "Der frühere Mechanismus von Sharkey et al. nutzt die reversible Biegung nachgiebigen Kunststoffs und benötigt keine präzise geschliffenen gedruckten Führungsflächen. Gelenke sind 0.72 mm dick, 1.5 mm lang und 4 mm breit; maximal etwa 6° Drehung ergibt im Kreisbogenmodell eine maximale Dehnung von ungefähr 0.024. Diese Maße gehören zu dieser Version: Ihr Verfahrweg von 8×8×4 mm darf nicht mit der späteren Version von 12×12×4 mm vermischt werden. Viergelenk- und Parallelogrammführungen erhalten die Orientierung, die Bahn bleibt jedoch leicht gekrümmt. Defokussierung am Rand des Verfahrwegs erfordert Z-Korrektur. [Ursprüngliche Mechanikversuche](ref:R02)\n\nDer Grundkörper benötigt etwa 90 g Kunststoff und ungefähr 8 h auf einem RepRapPro Ormerod beziehungsweise 5 h auf den getesteten Ultimaker 2 und MakerBot 2. Verzicht auf Kragarme und Brückenbildung für die Tischfläche vermeiden aufwendige Stützentfernung. Weniger Arbeitsschritte verlagern Zuverlässigkeit auf dünne Gelenke, Brücken und Schichtverbindungen. Bei normal begrenzten Mechanismen beobachteten die Autoren über 6 Monate keine Gelenkbrüche, wohl aber bei übermäßig biegbaren Entwürfen; unbegrenzte Ermüdungslebensdauer wurde nicht belegt. Spätere OpenFlexure-Versionen ersetzten alternde Gummibänder und verschleißende Schrauben. Geschmierte Edelstahlschrauben und Viton-O-Ringe ermöglichten etwa 30000 Tischbewegungszyklen; schlechte Drucke oder Filamente versagten früher. Lokaler Nachdruck besitzt einen experimentell gestützten Wartungsvorteil, Verbrauchsteile und Montagequalität bleiben jedoch relevant. [Verbesserte Haltbarkeit](ref:R01)",
           "figure_ids": []
         },
         {
@@ -280,23 +280,23 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Collins et al.: integrierter Tisch und herausnehmbares Optikmodul teilen die Funktionen",
+          "caption": "Fig. 1 | Collins et al.: integrierter Tisch und herausnehmbares Optikmodul teilen die Funktionen",
           "interpretation": "Der XY-Tisch liegt oberhalb des Objektivs, rechts verbindet der Z actuator das darunterliegende Optikmodul. Motorhalter sind optional, das Elektronikgehäuse ist getrennt. Erkennbar sind gedruckte integrierte Halte- und Bewegungsstrukturen, ohne dass zugekaufte Objektive, Kameras oder Motoren entfallen. Das Foto misst weder Druckmaße noch Wiederpositionierungsfehler. [Originalaufbau](ref:R01)"
         },
         "F02": {
-          "caption": "Sharkey et al.: axiale Stabilität besteht neben lateralem Kriechen",
+          "caption": "Fig. 6 | Sharkey et al.: axiale Stabilität besteht neben lateralem Kriechen",
           "interpretation": "Links reicht die Zeitachse ungefähr über 0–20 d: X steigt rot langsam an, Y fällt blau. Rechts umfasst sie ungefähr 0–5 d: Z schwankt grün um den Ausgangspunkt, Y wandert blau deutlich nach unten. Die Aufnahmefenster unterscheiden sich; stärkere rechte Y-Relaxation hängt mit großer Bewegung vor der Messung zusammen. Die Originallegende nennt pauschal zwei Wochen und eine Woche, abweichend von den sichtbaren Achsenbereichen. Hier folgt die Interpretation den Achsen und vereinigt unterschiedliche Messungen nicht zu einem Stabilitätswert. [Originaldriftkurven](ref:R02)"
         },
         "F03": {
-          "caption": "Sharkey et al.: größere Bewegungen vergrößern den Rückkehrfehler",
+          "caption": "Fig. 8 | Sharkey et al.: größere Bewegungen vergrößern den Rückkehrfehler",
           "interpretation": "Horizontal steht der Bewegungsradius in μm auf logarithmischer Skala, vertikal der RMS-Fehler nach Rückkehr zum Ursprung in μm. Rote Punkte kleiner Radien liegen unter 1 μm, größere Radien weisen höhere Fehler auf. Einsätze zeigen Rückkehrpositionen; kurze und lange Maßstäbe entsprechen 1 μm beziehungsweise 4 μm. Die Grafik umfasst nicht den gesamten im Text genannten maximalen Prüfbereich; ihre Y-Achse zeigt auch keine Mikroschrittweite. Sie begrenzt unmittelbar die Leistung des günstigen Mechanismus beim wiederholten Anfahren eines Ortes. [Originalgrafik zur Wiederpositionierung](ref:R02)"
         },
         "F04": {
-          "caption": "Collins et al.: gemeinsame Abbildungsoptik bedeutet nicht identische Beleuchtungsbauteile",
+          "caption": "Fig. 2 | Collins et al.: gemeinsame Abbildungsoptik bedeutet nicht identische Beleuchtungsbauteile",
           "interpretation": "In a beleuchten LED1 und L1 von oben; O1, L2 und CAM bilden darunter die Abbildungskette. In b bilden LED2, L3, F1 und F2 seitliche Beleuchtung und Filterung. Linsen und Filter sind eigenständige optische Elemente in gedruckten Gehäusen. Beim Moduswechsel ändern sich hauptsächlich Beleuchtung und Filter, während der Grundkörper bleibt. Die Skizze belegt keine gleiche Auflösung oder Transmission aller Verfahren. [Originalstrahlengänge](ref:R01)"
         },
         "F05": {
-          "caption": "Wincott et al.: aufklappbare Konstruktion macht den Strahlengang zugänglich",
+          "caption": "Fig. 1 | Wincott et al.: aufklappbare Konstruktion macht den Strahlengang zugänglich",
           "interpretation": "Die Explosionszeichnung zeigt von oben Beleuchtung, Probe und Festkörpergelenktisch, gefaltete Optik und Elektronikraum; unten ist die Stahlgrundplatte ausdrücklich bezeichnet. Deckel und Plattform lassen sich zur Beobachtung, Einstellung und zum Bauteiltausch öffnen, benötigen aber Volumen und Montageverbindungen. Das etwa £300 teure Grundinstrument enthält somit weiterhin ungedruckte Teile; Gesamtkosten lassen sich nicht auf PLA-Verbrauch reduzieren. [Originalmontagebild](ref:R03)"
         }
       }

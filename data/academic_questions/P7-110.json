@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P7-110",
   "p": "P7",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [
@@ -146,7 +146,7 @@
         {
           "id": "s6",
           "title": "浓度分类模型需要独立图像单位，而不是更多裁剪块",
-          "markdown": "Kanchan 等把 Sony IMX500 相机、Raspberry Pi 4 与 0.2 W LED 固定在打印外壳内；芯片则由切割的聚乙烯基薄膜层叠在玻璃上，并非直接打印微流道。实验采用 50–200 mg/dL 的 16 个葡萄糖浓度类别，共 1280 张裁剪图，每类 80 张；每个原始画面同时提供 20 个孔的 ROI。相关图像共享照明、反应批次和拍摄条件，文中没有说明交叉验证是否按原始画面或独立配液批次分组。[成像数据与模型评估](ref:R04)\n\n前向特征选择下随机森林的交叉验证准确率为 87.47%、精确率为 89.14%，而 SVM 和神经网络准确率为 11.79% 和 19.21%。这些是所选特征及参数下的浓度类别识别率，不是患者诊断准确率，也不是浓度相对误差。但原 Fig. 13 多数行标有 90，另有 100、98 等计数，且只有极少数非对角项；它与每类 80 张的说明及所报交叉验证准确率不能直接对上。图缺少说明其计数来源的评估划分，不能把它当作独立验证的确认。小于 100 ms 的推理时间也不包含 3–4 min 的显色阶段。所谓不依赖预设曲线仍以已知浓度训练，是经验校准；文中没有患者样本对参考仪的葡萄糖比较。",
+          "markdown": "Kanchan 等把 Sony IMX500 相机、Raspberry Pi 4 与 0.2 W LED 固定在打印外壳内；芯片则由切割的聚乙烯基薄膜层叠在玻璃上，并非直接打印微流道。实验采用 50–200 mg/dL 的 16 个葡萄糖浓度类别，共 1280 张裁剪图，每类 80 张；每个原始画面同时提供 20 个孔的 ROI。相关图像共享照明、反应批次和拍摄条件，文中没有说明交叉验证是否按原始画面或独立配液批次分组。[成像数据与模型评估](ref:R04)\n\n原文方法将配液试剂写为 D-galactose（D-半乳糖），而全文将检测对象称为 glucose（葡萄糖）。这一试剂身份冲突尚未澄清，因此这里的浓度类别按作者标签转述，不能视为已独立核实的葡萄糖标准物信息。[原文试剂描述](ref:R04)\n\n前向特征选择下随机森林的交叉验证准确率为 87.47%、精确率为 89.14%，而 SVM 和神经网络准确率为 11.79% 和 19.21%。这些是所选特征及参数下的浓度类别识别率，不是患者诊断准确率，也不是浓度相对误差。但原 Fig. 13 多数行标有 90，另有 100、98 等计数，且只有极少数非对角项；它与每类 80 张的说明及所报交叉验证准确率不能直接对上。图缺少说明其计数来源的评估划分，不能把它当作独立验证的确认。小于 100 ms 的推理时间也不包含 3–4 min 的显色阶段。所谓不依赖预设曲线仍以已知浓度训练，是经验校准；文中没有患者样本对参考仪的葡萄糖比较。",
           "figure_ids": [
             "F06"
           ]
@@ -154,27 +154,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Palekar et al.：打印外壳固定手机、照明和流通池",
+          "caption": "Fig. 1 | Palekar et al.：打印外壳固定手机、照明和流通池",
           "interpretation": "a 为设计，b 为实物；手机居上、扩散 LED 在侧、流通池在下，黑色壁面限制杂散光。完整图并未包含抽血或全血分离模块，因此照片显示的是固定成像几何，不能据此认为输入患者样本后即可自动获得结果。外壳减少环境变动的机制，也解释了换手机后仍需核查校准。[结构原图](ref:R01)"
         },
         "F02": {
-          "caption": "Palekar et al.：界面明确保留标准与校准因子",
+          "caption": "Fig. 6 | Palekar et al.：界面明确保留标准与校准因子",
           "interpretation": "a–c 从主页进入指标和测试/校准，d 选择图库或相机，e 显示吸光度 0.814 与示例浓度 8 mg/dL，f 提供水、空白、标准和因子。e 的“high”属于示例判读，图没有患者结局数据；b 中葡萄糖、钙菜单也不能替代相应指标实验。原图分为两幅发布，此处完整保留 a–f 并上下拼接。[界面原图](ref:R01)"
         },
         "F03": {
-          "caption": "Pham et al.：相同样本趋势中仍有明显个体差异",
+          "caption": "Fig. 5 | Pham et al.：相同样本趋势中仍有明显个体差异",
           "interpretation": "横轴是样本编号，纵轴是肌酐 mmol/L；蓝色 SA Pathology 与橙色 Proposed Device 在多数编号同向变化，但编号 37 橙色约 48、蓝色约 22 mmol/L，属于目视近似读数。橙色误差棒显示重复读数离散，不能当作参考方法的不确定度。曲线连接表示编号顺序，并非患者时间序列；大偏差点直接限制了从整体均值推断互换性。[真实尿样原图](ref:R02)"
         },
         "F04": {
-          "caption": "Li et al.：手动旋转单元与完整诊断链不是同一尺寸",
-          "interpretation": "a 对比集中与便携流程，b 为手持实物，c、d 展示拉环和旋转架，e 展示芯片分层及 10 mm 比例尺。d 标出的 52 mm 和 78 mm 只对应旋转单元，e 的玻璃基底与 PDMS 层也不是同一制造材料。a 的流程箭头不提供实际周转时间测量；成像外壳和电源要由正文另一部分界定。[平台结构原图](ref:R03)"
+          "caption": "Fig. 1 | Li et al.：手动旋转单元与完整诊断链不是同一尺寸",
+          "interpretation": "a 对比集中与便携流程，b 为手持实物，c、d 展示拉环和旋转架，e 展示芯片分层，f 的实物图保留 10 mm 比例尺。d 标出的 52 mm 和 78 mm 只对应旋转单元，e 的玻璃基底与 PDMS 层也不是同一制造材料。a 的流程箭头不提供实际周转时间测量；成像外壳和电源要由正文另一部分界定。[平台结构原图](ref:R03)"
         },
         "F05": {
-          "caption": "Li et al.：相关、个体一致性与组间区分分面展示",
+          "caption": "Fig. 5 | Li et al.：相关、个体一致性与组间区分分面展示",
           "interpretation": "a 是操作示意；b、c 分别显示健康与患者尿蛋白 μg/mL，d 比较平台横轴与读板仪纵轴，e 给出百分比差对平均浓度。e 的 −2.2% 实线与 −59.4%、54.9% 虚线显示小均值偏差下仍有宽散布。f 的分组箱线图和 g 的 ROC 回答组间区分，并不缩窄 e 中的个体误差；g 的 63.11 μg/mL 阈值来自同一小队列。[临床比较原图](ref:R03)"
         },
         "F06": {
-          "caption": "Kanchan et al.：混淆矩阵的计数与评估集需相互对应",
+          "caption": "Fig. 13 | Kanchan et al.：混淆矩阵的计数与评估集需相互对应",
           "interpretation": "横轴为预测浓度类别、纵轴为真实类别，范围 50–200 mg/dL。50 行显示 89 个对角值与 1 个相邻误分类，100 行为 88 与 2；其他行含 90、98、100。图内没有把计数明确归到独立测试集或折内汇总，不能直接由深色对角线认定所报交叉验证已经复现，也不能将标准液类别判别解释为患者诊断。[分类原图](ref:R04)"
         }
       }
@@ -186,7 +186,7 @@
         {
           "id": "s1",
           "title": "Fixed illumination and calibration access determine transfer of phone readings",
-          "markdown": "Palekar et al. fix a smartphone above a black printed enclosure, illuminate through an LED diffuser, hold the sample in a white PLA flow cell and average a 50×50 pixels region before blank normalisation and absorbance conversion. Printing constrains optical geometry, position and background. The experiments use standards and prepared serum, without validating a complete direct-from-whole-blood platform. Initial multipoint curves and a standard-derived calibration factor during use are different levels of calibration; a concentration displayed by software still requires reference material. [Phone platform and calibration](ref:R01)\n\nThe interface separates testing, calibration and reports, with water, blank and standard entries. The text stresses recalibration for each test or session, whereas the interface description permits retaining an existing factor under unchanged conditions. Together these make validity conditional on current conditions, rather than demonstrating automatic detection of every drift. Glucose and calcium appear in the menu, but quantitative experiments focus on uric acid, creatinine and albumin; a menu entry does not establish validation. A report marked “high” is also an interface example, without separate operator-error or clinical-stratification evaluation. Identifying the current analyte, blank and factor version is as relevant to traceability as successful photography.",
+          "markdown": "Palekar et al. fix a smartphone above a black printed enclosure, illuminate through an LED diffuser, hold the sample in a white PLA flow cell and average a 50×50-pixel region before blank normalisation and absorbance conversion. Printing constrains optical geometry, position and background. The experiments use standards and prepared serum, without validating a complete direct-from-whole-blood platform. Initial multipoint curves and a standard-derived calibration factor during use are different levels of calibration; a concentration displayed by software still requires reference material. [Phone platform and calibration](ref:R01)\n\nThe interface separates testing, calibration and reports, with water, blank and standard entries. The text stresses recalibration for each test or session, whereas the interface description permits retaining an existing factor under unchanged conditions. Together these make validity conditional on current conditions, rather than demonstrating automatic detection of every drift. Glucose and calcium appear in the menu, but quantitative experiments focus on uric acid, creatinine and albumin; a menu entry does not establish validation. A report marked “high” is also an interface example, without separate operator-error or clinical-stratification evaluation. Identifying the current analyte, blank and factor version is as relevant to traceability as successful photography.",
           "figure_ids": [
             "F01",
             "F02"
@@ -225,7 +225,7 @@
         {
           "id": "s6",
           "title": "Concentration classifiers need independent image units, not more crops",
-          "markdown": "Kanchan et al. fix a Sony IMX500 camera, Raspberry Pi 4 and 0.2 W LED within a printed enclosure; the chip uses cut polyvinyl films laminated on glass, not directly printed channels. Experiments comprise 16 glucose classes across 50–200 mg/dL, with 1280 cropped images and 80 per class; each original frame supplies 20 well ROIs. Related images share illumination, reaction batch and capture conditions. The paper does not specify cross-validation grouping by original frame or independently prepared batch. [Imaging data and model evaluation](ref:R04)\n\nWith forward feature selection, random forest cross-validation accuracy is 87.47% and precision 89.14%, versus SVM and neural-network accuracies of 11.79% and 19.21%. These are concentration-class recognition rates for the selected features and parameters, not patient diagnostic accuracy or relative concentration error. However, original Fig. 13 labels most rows with 90, others with counts including 100 and 98, with very few off-diagonal entries. This cannot be directly reconciled with 80 images per class and the reported cross-validation accuracy. Its evaluation split and count provenance are insufficiently explained, so the matrix cannot confirm independent validation. Inference below 100 ms also excludes 3–4 min colour development. Avoiding predefined curves still uses known concentrations for training, an empirical calibration; the paper provides no patient-sample glucose comparison against a reference instrument.",
+          "markdown": "Kanchan et al. fix a Sony IMX500 camera, Raspberry Pi 4 and 0.2 W LED within a printed enclosure; the chip uses cut polyvinyl films laminated on glass, not directly printed channels. Experiments comprise 16 glucose classes across 50–200 mg/dL, with 1280 cropped images and 80 per class; each original frame supplies 20 well ROIs. Related images share illumination, reaction batch and capture conditions. The paper does not specify cross-validation grouping by original frame or independently prepared batch. [Imaging data and model evaluation](ref:R04)\n\nThe methods name D-galactose as the calibration reagent, whereas the paper labels the analyte glucose. This unresolved reagent-identity conflict means that the concentration classes are reported as author-labelled values, not independently verified glucose standards. [Original reagent description](ref:R04)\n\nWith forward feature selection, random forest cross-validation accuracy is 87.47% and precision 89.14%, versus SVM and neural-network accuracies of 11.79% and 19.21%. These are concentration-class recognition rates for the selected features and parameters, not patient diagnostic accuracy or relative concentration error. However, original Fig. 13 labels most rows with 90, others with counts including 100 and 98, with very few off-diagonal entries. This cannot be directly reconciled with 80 images per class and the reported cross-validation accuracy. Its evaluation split and count provenance are insufficiently explained, so the matrix cannot confirm independent validation. Inference below 100 ms also excludes 3–4 min colour development. Avoiding predefined curves still uses known concentrations for training, an empirical calibration; the paper provides no patient-sample glucose comparison against a reference instrument.",
           "figure_ids": [
             "F06"
           ]
@@ -233,27 +233,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Palekar et al.: the printed enclosure fixes phone, illumination and flow cell",
+          "caption": "Fig. 1 | Palekar et al.: the printed enclosure fixes phone, illumination and flow cell",
           "interpretation": "a shows the design and b the physical device: phone above, diffused LED at the side and flow cell below, with black walls restricting stray light. The complete figure includes neither blood collection nor whole-blood separation. It demonstrates fixed imaging geometry, not automatic results after entering a patient sample. The mechanism for reducing environmental variation also explains why calibration still needs checking after a phone change. [Original structure](ref:R01)"
         },
         "F02": {
-          "caption": "Palekar et al.: the interface retains standards and calibration factors",
+          "caption": "Fig. 6 | Palekar et al.: the interface retains standards and calibration factors",
           "interpretation": "a–c move from the home screen to analytes and testing/calibration; d selects gallery or camera, e displays absorbance 0.814 and example concentration 8 mg/dL, and f provides water, blank, standard and factor. The “high” judgement in e is illustrative, without patient-outcome data. Glucose and calcium entries in b do not replace corresponding experiments. The original was published in two image parts; a–f are preserved fully and stacked vertically here. [Original interface](ref:R01)"
         },
         "F03": {
-          "caption": "Pham et al.: common sample trends retain substantial individual differences",
+          "caption": "Fig. 5 | Pham et al.: common sample trends retain substantial individual differences",
           "interpretation": "The horizontal axis is sample number and the vertical axis creatinine in mmol/L. Blue SA Pathology and orange Proposed Device often vary together, but sample 37 is approximately 48 in orange versus 22 mmol/L in blue, approximate visual readings. Orange error bars describe repeated-reading dispersion, not reference-method uncertainty. Connected points follow sample order rather than a patient time series. Large individual deviations directly constrain interchangeability inferred from the overall mean. [Original urine comparison](ref:R02)"
         },
         "F04": {
-          "caption": "Li et al.: the spinning unit and complete diagnostic chain have different dimensions",
-          "interpretation": "a contrasts centralised and portable workflows, b shows the handheld device, c and d the pull ring and rotating holder, and e chip layers with a 10 mm scale bar. The 52 mm and 78 mm dimensions in d describe only the spinning unit; glass substrate and PDMS layers in e also use different materials. Workflow arrows in a are not measured turnaround times. Imaging housing and power requirements are specified elsewhere in the text. [Original platform structure](ref:R03)"
+          "caption": "Fig. 1 | Li et al.: the spinning unit and complete diagnostic chain have different dimensions",
+          "interpretation": "a contrasts centralised and portable workflows, b shows the handheld device, c and d the pull ring and rotating holder, and e the chip layers; the photograph in f carries a 10 mm scale bar. The 52 mm and 78 mm dimensions in d describe only the spinning unit; glass substrate and PDMS layers in e also use different materials. Workflow arrows in a are not measured turnaround times. Imaging housing and power requirements are specified elsewhere in the text. [Original platform structure](ref:R03)"
         },
         "F05": {
-          "caption": "Li et al.: association, individual agreement and group discrimination are separate panels",
+          "caption": "Fig. 5 | Li et al.: association, individual agreement and group discrimination are separate panels",
           "interpretation": "a outlines operation; b and c show healthy and patient urinary protein in μg/mL. In d the platform is horizontal and plate reader vertical; e plots percentage difference against mean concentration. The −2.2% solid line and −59.4%, 54.9% dashed lines in e show wide scatter despite small mean bias. The grouped box plot in f and ROC in g concern group discrimination and do not narrow individual error in e; the 63.11 μg/mL threshold in g comes from the same small cohort. [Original clinical comparison](ref:R03)"
         },
         "F06": {
-          "caption": "Kanchan et al.: confusion counts require an identified evaluation set",
+          "caption": "Fig. 13 | Kanchan et al.: confusion counts require an identified evaluation set",
           "interpretation": "Horizontal and vertical axes are predicted and true concentration classes across 50–200 mg/dL. The 50 row contains 89 diagonal instances and 1 neighbouring error; the 100 row has 88 and 2. Other rows include 90, 98 and 100. Counts are not clearly assigned to an independent test set or aggregated folds. A dark diagonal cannot directly confirm reproduction of reported cross-validation, nor can standard-solution classification be interpreted as patient diagnosis. [Original classification](ref:R04)"
         }
       }
@@ -265,7 +265,7 @@
         {
           "id": "s1",
           "title": "Feste Beleuchtung und Kalibrierzugang bestimmen die Übertragbarkeit von Smartphonewerten",
-          "markdown": "Palekar et al. befestigen ein Smartphone über einem schwarzen Druckgehäuse, beleuchten mit LED und Diffusor, positionieren die Probe in einer weißen PLA-Durchflusszelle und mitteln eine Region von 50×50 pixels vor Blindwertnormalisierung und Absorbanzberechnung. Der Druck legt optische Geometrie, Position und Hintergrund fest. Untersucht werden Standards und vorbereitetes Serum; eine vollständige Plattform zur direkten Messung aus Vollblut wird nicht validiert. Anfängliche Mehrpunktkurven und der im Betrieb aus einem Standard gewonnene Kalibrierfaktor sind verschiedene Kalibrierebenen. Eine angezeigte Konzentration benötigt weiterhin Referenzmaterial. [Smartphoneplattform und Kalibrierung](ref:R01)\n\nDie Oberfläche trennt Messung, Kalibrierung und Berichte und bietet Wasser-, Blindwert- und Standardeinträge. Der Text verlangt neue Kalibrierung je Test beziehungsweise Sitzung, während die Oberflächenbeschreibung bei unveränderten Bedingungen einen vorhandenen Faktor zulässt. Gültigkeit hängt damit von aktuellen Bedingungen ab; automatische Erkennung jeder Drift ist nicht belegt. Glucose und Calcium stehen im Menü, quantitative Versuche betreffen jedoch Harnsäure, Kreatinin und Albumin. Ein Menüeintrag ist keine Validierung. Auch die Ausgabe „hoch“ ist ein Oberflächenbeispiel ohne gesonderte Untersuchung von Bedienfehlern oder klinischer Einstufung. Aktuellen Analyten, Blindwert und Faktorversion zu erkennen, bestimmt die Rückverfolgbarkeit ebenso wie ein gelungenes Foto.",
+          "markdown": "Palekar et al. befestigen ein Smartphone über einem schwarzen Druckgehäuse, beleuchten mit LED und Diffusor, positionieren die Probe in einer weißen PLA-Durchflusszelle und mitteln eine Region von 50×50 Pixeln vor Blindwertnormalisierung und Absorbanzberechnung. Der Druck legt optische Geometrie, Position und Hintergrund fest. Untersucht werden Standards und vorbereitetes Serum; eine vollständige Plattform zur direkten Messung aus Vollblut wird nicht validiert. Anfängliche Mehrpunktkurven und der im Betrieb aus einem Standard gewonnene Kalibrierfaktor sind verschiedene Kalibrierebenen. Eine angezeigte Konzentration benötigt weiterhin Referenzmaterial. [Smartphoneplattform und Kalibrierung](ref:R01)\n\nDie Oberfläche trennt Messung, Kalibrierung und Berichte und bietet Wasser-, Blindwert- und Standardeinträge. Der Text verlangt neue Kalibrierung je Test beziehungsweise Sitzung, während die Oberflächenbeschreibung bei unveränderten Bedingungen einen vorhandenen Faktor zulässt. Gültigkeit hängt damit von aktuellen Bedingungen ab; automatische Erkennung jeder Drift ist nicht belegt. Glucose und Calcium stehen im Menü, quantitative Versuche betreffen jedoch Harnsäure, Kreatinin und Albumin. Ein Menüeintrag ist keine Validierung. Auch die Ausgabe „hoch“ ist ein Oberflächenbeispiel ohne gesonderte Untersuchung von Bedienfehlern oder klinischer Einstufung. Aktuellen Analyten, Blindwert und Faktorversion zu erkennen, bestimmt die Rückverfolgbarkeit ebenso wie ein gelungenes Foto.",
           "figure_ids": [
             "F01",
             "F02"
@@ -304,7 +304,7 @@
         {
           "id": "s6",
           "title": "Konzentrationsklassifikatoren benötigen unabhängige Bilder statt zusätzlicher Ausschnitte",
-          "markdown": "Kanchan et al. befestigen Sony IMX500, Raspberry Pi 4 und eine 0.2 W LED im Druckgehäuse. Der Chip besteht aus geschnittenen Polyvinylfolien auf Glas, nicht direkt gedruckten Kanälen. Untersucht werden 16 Glucoseklassen von 50–200 mg/dL mit 1280 zugeschnittenen Bildern und 80 je Klasse; jedes Ursprungsbild liefert 20 Well-ROIs. Verwandte Bilder teilen Beleuchtung, Reaktionscharge und Aufnahmebedingungen. Ob Kreuzvalidierung nach Ursprungsbild oder unabhängig angesetzter Charge gruppiert ist, wird nicht angegeben. [Bilddaten und Modellevaluation](ref:R04)\n\nBei vorwärtsgerichteter Merkmalsauswahl erreicht Random Forest in Kreuzvalidierung 87.47% Genauigkeit und 89.14% Präzision; SVM und neuronales Netz erreichen 11.79% und 19.21% Genauigkeit. Dies sind Konzentrationsklassen-Erkennungsraten unter gewählten Merkmalen und Parametern, keine Patientendiagnosegenauigkeit und kein relativer Konzentrationsfehler. Original-Fig. 13 zeigt jedoch meist Zeilen mit 90, daneben etwa 100 und 98, bei sehr wenigen Einträgen außerhalb der Diagonale. Dies passt nicht unmittelbar zu 80 Bildern je Klasse und der berichteten Kreuzvalidierungsgenauigkeit. Evaluationsaufteilung und Herkunft der Zählwerte sind unzureichend erklärt; die Matrix bestätigt keine unabhängige Validierung. Inferenz unter 100 ms schließt außerdem die Farbreaktion von 3–4 min aus. Ohne vorgegebene Kurve wird weiterhin mit bekannten Konzentrationen trainiert, also empirisch kalibriert. Ein Glucosevergleich von Patientenproben mit einem Referenzgerät fehlt.",
+          "markdown": "Kanchan et al. befestigen Sony IMX500, Raspberry Pi 4 und eine 0.2 W LED im Druckgehäuse. Der Chip besteht aus geschnittenen Polyvinylfolien auf Glas, nicht direkt gedruckten Kanälen. Untersucht werden 16 Glucoseklassen von 50–200 mg/dL mit 1280 zugeschnittenen Bildern und 80 je Klasse; jedes Ursprungsbild liefert 20 Well-ROIs. Verwandte Bilder teilen Beleuchtung, Reaktionscharge und Aufnahmebedingungen. Ob Kreuzvalidierung nach Ursprungsbild oder unabhängig angesetzter Charge gruppiert ist, wird nicht angegeben. [Bilddaten und Modellevaluation](ref:R04)\n\nDie Methoden nennen D-Galactose als Kalibrierreagenz, während die Arbeit den Analyten als Glucose bezeichnet. Dieser ungeklärte Widerspruch zur Reagenzidentität bedeutet, dass die Konzentrationsklassen gemäß Autorenbeschriftung wiedergegeben werden und nicht als unabhängig bestätigte Glucosestandards gelten. [Originale Reagenzbeschreibung](ref:R04)\n\nBei vorwärtsgerichteter Merkmalsauswahl erreicht Random Forest in Kreuzvalidierung 87.47% Genauigkeit und 89.14% Precision (positiver Vorhersagewert); SVM und neuronales Netz erreichen 11.79% und 19.21% Genauigkeit. Dies sind Konzentrationsklassen-Erkennungsraten unter gewählten Merkmalen und Parametern, keine Patientendiagnosegenauigkeit und kein relativer Konzentrationsfehler. Original-Fig. 13 zeigt jedoch meist Zeilen mit 90, daneben etwa 100 und 98, bei sehr wenigen Einträgen außerhalb der Diagonale. Dies passt nicht unmittelbar zu 80 Bildern je Klasse und der berichteten Kreuzvalidierungsgenauigkeit. Evaluationsaufteilung und Herkunft der Zählwerte sind unzureichend erklärt; die Matrix bestätigt keine unabhängige Validierung. Inferenz unter 100 ms schließt außerdem die Farbreaktion von 3–4 min aus. Ohne vorgegebene Kurve wird weiterhin mit bekannten Konzentrationen trainiert, also empirisch kalibriert. Ein Glucosevergleich von Patientenproben mit einem Referenzgerät fehlt.",
           "figure_ids": [
             "F06"
           ]
@@ -312,27 +312,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Palekar et al.: das Druckgehäuse fixiert Smartphone, Beleuchtung und Durchflusszelle",
+          "caption": "Fig. 1 | Palekar et al.: das Druckgehäuse fixiert Smartphone, Beleuchtung und Durchflusszelle",
           "interpretation": "a zeigt den Entwurf, b das Gerät: Smartphone oben, LED mit Diffusor seitlich, Durchflusszelle unten; schwarze Wände begrenzen Streulicht. Die vollständige Abbildung enthält weder Blutentnahme noch Vollbluttrennung. Sie zeigt feste Bildgeometrie, keine automatische Ergebniserzeugung nach Eingabe einer Patientenprobe. Der Mechanismus verringerter Umgebungseinflüsse erklärt zugleich die nötige Kalibrierprüfung nach Smartphonewechsel. [Originalstruktur](ref:R01)"
         },
         "F02": {
-          "caption": "Palekar et al.: Standards und Kalibrierfaktoren bleiben Teil der Oberfläche",
+          "caption": "Fig. 6 | Palekar et al.: Standards und Kalibrierfaktoren bleiben Teil der Oberfläche",
           "interpretation": "a–c führen vom Start zu Analyten und Messung/Kalibrierung; d wählt Galerie oder Kamera, e zeigt Absorbanz 0.814 und Beispielkonzentration 8 mg/dL, f bietet Wasser, Blindwert, Standard und Faktor. „High“ in e ist beispielhaft, ohne Patientenergebnisdaten. Glucose- und Calciumeinträge in b ersetzen entsprechende Versuche nicht. Das Original erschien in zwei Bildteilen; a–f bleiben hier vollständig erhalten und werden vertikal zusammengesetzt. [Originaloberfläche](ref:R01)"
         },
         "F03": {
-          "caption": "Pham et al.: gemeinsame Trends behalten deutliche individuelle Unterschiede",
+          "caption": "Fig. 5 | Pham et al.: gemeinsame Trends behalten deutliche individuelle Unterschiede",
           "interpretation": "Horizontal steht die Probennummer, vertikal Kreatinin in mmol/L. Blaues SA Pathology und oranges Proposed Device verändern sich häufig gemeinsam; Probe 37 liegt jedoch orange bei ungefähr 48 gegenüber blau 22 mmol/L, näherungsweise visuell abgelesen. Orange Fehlerbalken zeigen Wiederholstreuung, keine Referenzmethodenunsicherheit. Verbindungslinien folgen der Probenreihenfolge, keiner Patientenzeitreihe. Große Einzelabweichungen begrenzen Austauschbarkeit, die aus dem Gesamtmittel abgeleitet würde. [Originalurinvergleich](ref:R02)"
         },
         "F04": {
-          "caption": "Li et al.: Dreheinheit und vollständige Diagnosekette haben unterschiedliche Maße",
-          "interpretation": "a vergleicht zentrale und portable Abläufe, b zeigt das Handgerät, c und d Zugring und Drehhalter, e Chipschichten mit 10 mm-Maßstab. Die Maße 52 mm und 78 mm in d betreffen nur die Dreheinheit; Glassubstrat und PDMS-Schichten in e bestehen zudem aus verschiedenen Materialien. Ablaufpfeile in a sind keine gemessenen Bearbeitungszeiten. Bildgehäuse und Strombedarf werden an anderer Textstelle beschrieben. [Originalplattformstruktur](ref:R03)"
+          "caption": "Fig. 1 | Li et al.: Dreheinheit und vollständige Diagnosekette haben unterschiedliche Maße",
+          "interpretation": "a vergleicht zentrale und portable Abläufe, b zeigt das Handgerät, c und d Zugring und Drehhalter, e die Chipschichten; das Foto in f enthält einen 10 mm-Maßstab. Die Maße 52 mm und 78 mm in d betreffen nur die Dreheinheit; Glassubstrat und PDMS-Schichten in e bestehen zudem aus verschiedenen Materialien. Ablaufpfeile in a sind keine gemessenen Bearbeitungszeiten. Bildgehäuse und Strombedarf werden an anderer Textstelle beschrieben. [Originalplattformstruktur](ref:R03)"
         },
         "F05": {
-          "caption": "Li et al.: Zusammenhang, individuelle Übereinstimmung und Gruppentrennung stehen getrennt",
+          "caption": "Fig. 5 | Li et al.: Zusammenhang, individuelle Übereinstimmung und Gruppentrennung stehen getrennt",
           "interpretation": "a skizziert die Bedienung; b und c zeigen Urinprotein Gesunder beziehungsweise Patienten in μg/mL. In d liegt die Plattform horizontal und der Plattenleser vertikal; e zeigt prozentuale Differenz gegen mittlere Konzentration. Die durchgezogene Linie −2.2% und Strichlinien −59.4%, 54.9% in e zeigen breite Streuung trotz kleinen mittleren Bias. Gruppenboxplot f und ROC g betreffen Gruppentrennung und verengen den Einzelwertfehler in e nicht. Der Schwellenwert 63.11 μg/mL in g stammt aus derselben kleinen Kohorte. [Originalklinischer Vergleich](ref:R03)"
         },
         "F06": {
-          "caption": "Kanchan et al.: Konfusionszählwerte benötigen eine definierte Evaluationsmenge",
+          "caption": "Fig. 13 | Kanchan et al.: Konfusionszählwerte benötigen eine definierte Evaluationsmenge",
           "interpretation": "Horizontal und vertikal stehen vorhergesagte und wahre Konzentrationsklassen von 50–200 mg/dL. Die Zeile 50 enthält 89 Diagonaleinträge und 1 benachbarten Fehler, Zeile 100 enthält 88 und 2. Andere Zeilen enthalten 90, 98 und 100. Die Zahlen werden keinem unabhängigen Testsatz oder zusammengefassten Faltungen eindeutig zugeordnet. Die dunkle Diagonale bestätigt daher nicht unmittelbar die berichtete Kreuzvalidierung; Standardlösungsklassifikation ist keine Patientendiagnostik. [Originalklassifikation](ref:R04)"
         }
       }

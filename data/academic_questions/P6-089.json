@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P6-089",
   "p": "P6",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [
@@ -156,27 +156,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Mashari et al.：从打印骨架到混合软组织体模。",
+          "caption": "Fig 3 | Mashari et al.：从打印骨架到混合软组织体模。",
           "interpretation": "A 显示骨架与椎间区域，B 显示手工添加的韧带材料，C 显示被明胶覆盖后的状态；插图放大局部差别。软组织层不是与骨架同时打印完成。图中可检查位置与覆盖方式，却没有材料模量、厚度均匀性或进针力的测量轴。[结构形成过程](ref:R01)"
         },
         "F02": {
-          "caption": "Mashari et al.：不同触觉任务的配对评分气泡图。",
+          "caption": "Fig 4 | Mashari et al.：不同触觉任务的配对评分气泡图。",
           "interpretation": "A 为表面触诊，B 为软组织阻力，C 为黄韧带阻力。横轴是现成体模评分，纵轴是打印混合体模评分；对角线上方表示后者评分较高，气泡大小及数字表示专家人数。A 与 C 的点分布方向不同，说明层次设计改善的信号和受损的信号可以同时存在。B 的分散意见也不能压缩成“所有组织更像”。[配对触感评价](ref:R01)"
         },
         "F03": {
-          "caption": "Henriques et al.：干湿状态的 Shore A 硬度。",
+          "caption": "Fig. 8 | Henriques et al.：干湿状态的 Shore A 硬度。",
           "interpretation": "三列为不同材料，每列比较深色干态与浅色湿态，误差线为标准差。湿态柱均较低，但不同材料的变化幅度不相同；这测量压入硬度，不是拉伸斜率或切割阻力。与正文模量表对照，Flex 63A 的硬度下降并没有伴随同方向的平均拉伸模量下降。[硬度与拉伸结果](ref:R02)"
         },
         "F04": {
-          "caption": "Henriques et al.：材料与含水状态改变循环应力—应变回线。",
+          "caption": "Fig. 4 | Henriques et al.：材料与含水状态改变循环应力—应变回线。",
           "interpretation": "左列 a–c 为干态，右列 d–f 为湿态，颜色对应材料。纵轴为 MPa，横轴为百分应变；各行横轴上限依次为 3、2、0.8，不能按视觉宽度直接排序柔软度。硬树脂干态回线位置变化明显，湿态斜率与展开范围改变。回线包含加载历史，不能只截取起始斜率解释全部触感。[循环拉伸图](ref:R02)"
         },
         "F05": {
-          "caption": "Henriques et al.：循环次数与最大应变、动态模量的关系。",
+          "caption": "Fig. 7 | Henriques et al.：循环次数与最大应变、动态模量的关系。",
           "interpretation": "a 显示最大应变，b 比较较软材料的动态模量，c 显示硬材料的干湿差别，d 放大湿态硬材料。实线与虚线区分干湿，误差条反映试样差异。c 与 d 的纵轴范围不同，不能把放大后的湿态波动看作与干态同样剧烈；材料没有断裂与响应保持恒定是不同结论。[循环依赖性](ref:R02)"
         },
         "F06": {
-          "caption": "Hermans et al.：矩形硅胶中的肿瘤界面和机器人操作场景。",
+          "caption": "Figure 1 | Hermans et al.：矩形硅胶中的肿瘤界面和机器人操作场景。",
           "interpretation": "上排为模型放置、器械与局部边界，下方示意不同嵌入程度的肿瘤在矩形片中的重复排列。它呈现了局部抓持与分离任务，不是完整患者肾脏。颜色分区可用于检查模拟包膜是否受损，却没有显示真实组织黏附、出血或力—位移曲线。[模型和任务](ref:R03)"
         }
       }
@@ -235,27 +235,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Mashari et al.: From a printed skeleton to a hybrid soft-tissue phantom.",
+          "caption": "Fig 3 | Mashari et al.: From a printed skeleton to a hybrid soft-tissue phantom.",
           "interpretation": "A shows the skeleton and interspaces, B manually added ligament material and C the gelatin-covered state; insets enlarge local differences. Soft layers were not printed simultaneously with the skeleton. Location and coverage can be inspected, but no axes quantify modulus, thickness uniformity or insertion force. [Construction sequence](ref:R01)"
         },
         "F02": {
-          "caption": "Mashari et al.: Paired rating bubbles for different tactile tasks.",
+          "caption": "Fig 4 | Mashari et al.: Paired rating bubbles for different tactile tasks.",
           "interpretation": "A is surface palpation, B soft-tissue resistance and C ligamentum flavum resistance. Horizontal values rate the existing phantom, vertical values the printed hybrid; points above the diagonal favor the latter, and bubble size and numbers count experts. Opposing distributions in A and C show that improved and impaired signals can coexist. Dispersed opinions in B also resist a claim of universally better tissue feel. [Paired tactile evaluation](ref:R01)"
         },
         "F03": {
-          "caption": "Henriques et al.: Shore A hardness in dry and wet states.",
+          "caption": "Fig. 8 | Henriques et al.: Shore A hardness in dry and wet states.",
           "interpretation": "Columns identify materials, each comparing darker dry and lighter wet bars with standard-deviation whiskers. Every wet bar is lower, by different amounts. This measures indentation hardness, not tensile slope or cutting resistance. Against the modulus table, Flex 63A shows lower hardness without a same-direction decrease in mean tensile modulus. [Hardness and tensile results](ref:R02)"
         },
         "F04": {
-          "caption": "Henriques et al.: Material and hydration alter cyclic stress–strain loops.",
+          "caption": "Fig. 4 | Henriques et al.: Material and hydration alter cyclic stress–strain loops.",
           "interpretation": "Left panels a–c are dry, right panels d–f wet, with colors identifying materials. Vertical axes are MPa and horizontal axes percentage strain; row limits are 3, 2 and 0.8, preventing direct visual-width ranking of softness. Dry harder resin shows marked loop displacement, while wet-state slope and extent change. Loops include loading history; initial slope alone cannot explain complete tactile behavior. [Cyclic tension figure](ref:R02)"
         },
         "F05": {
-          "caption": "Henriques et al.: Maximum strain and dynamic modulus across cycles.",
+          "caption": "Fig. 7 | Henriques et al.: Maximum strain and dynamic modulus across cycles.",
           "interpretation": "a shows maximum strain, b dynamic moduli of softer materials, c the dry–wet difference of the harder material, and d a magnified wet-state view. Solid and dashed lines separate states; error bars reflect specimen variation. Different vertical ranges in c and d prevent interpreting magnified wet fluctuations as equally large dry changes. Absence of fracture and constant response are distinct findings. [Cycle dependence](ref:R02)"
         },
         "F06": {
-          "caption": "Hermans et al.: Tumor interfaces in rectangular silicone and robotic interaction.",
+          "caption": "Figure 1 | Hermans et al.: Tumor interfaces in rectangular silicone and robotic interaction.",
           "interpretation": "The upper row shows model placement, instruments and a local interface; the lower sketch repeats tumors with different embedding depths in a rectangular sheet. It represents local grasping and separation tasks, not a whole patient kidney. Color boundaries permit inspection of simulated capsule damage but do not show biological adhesion, bleeding or force–displacement curves. [Model and task](ref:R03)"
         }
       }
@@ -314,27 +314,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Mashari et al.: Vom Druckskelett zum hybriden Weichgewebephantom.",
+          "caption": "Fig 3 | Mashari et al.: Vom Druckskelett zum hybriden Weichgewebephantom.",
           "interpretation": "A zeigt Skelett und Zwischenräume, B manuell ergänztes Bandmaterial, C den gelatinebedeckten Zustand; Ausschnitte vergrößern lokale Unterschiede. Weiche Schichten wurden nicht gleichzeitig mit dem Skelett gedruckt. Lage und Bedeckung sind prüfbar, Modul, Dickengleichmäßigkeit und Eindringkraft jedoch nicht quantitativ dargestellt. [Aufbausequenz](ref:R01)"
         },
         "F02": {
-          "caption": "Mashari et al.: Gepaarte Bewertungsblasen unterschiedlicher taktiler Aufgaben.",
+          "caption": "Fig 4 | Mashari et al.: Gepaarte Bewertungsblasen unterschiedlicher taktiler Aufgaben.",
           "interpretation": "A betrifft Oberflächenpalpation, B Weichgewebewiderstand, C Ligamentum-flavum-Widerstand. Horizontal steht das vorhandene, vertikal das gedruckte Hybridphantom. Oberhalb der Diagonale wird letzteres höher bewertet; Blasengröße und Zahlen zählen Experten. Gegensätzliche Verteilungen in A und C zeigen gleichzeitig verbesserte und verschlechterte Signale. Unterschiedliche Urteile in B erlauben ebenfalls keine pauschal bessere Gewebehaptik. [Gepaarte taktile Bewertung](ref:R01)"
         },
         "F03": {
-          "caption": "Henriques et al.: Shore-A-Härte im trockenen und nassen Zustand.",
+          "caption": "Fig. 8 | Henriques et al.: Shore-A-Härte im trockenen und nassen Zustand.",
           "interpretation": "Spalten kennzeichnen Materialien; jeweils werden dunkle trockene und helle nasse Balken mit Standardabweichung verglichen. Nasse Balken liegen unterschiedlich stark niedriger. Gemessen wird Eindringhärte, keine Zugsteigung oder Schnittkraft. Gegenüber der Modultabelle zeigt Flex 63A niedrigere Härte ohne gleichgerichtete Abnahme des mittleren Zugmoduls. [Härte- und Zugergebnisse](ref:R02)"
         },
         "F04": {
-          "caption": "Henriques et al.: Material und Wassergehalt verändern zyklische Spannungs-Dehnungs-Schleifen.",
+          "caption": "Fig. 4 | Henriques et al.: Material und Wassergehalt verändern zyklische Spannungs-Dehnungs-Schleifen.",
           "interpretation": "Links a–c sind trocken, rechts d–f nass; Farben kennzeichnen Materialien. Vertikal stehen MPa, horizontal Prozentdehnung. Zeilengrenzen betragen 3, 2 und 0.8; sichtbare Breiten erlauben keinen direkten Weichheitsvergleich. Trockenes härteres Harz zeigt ausgeprägte Schleifenverschiebung; im nassen Zustand ändern sich Steigung und Ausdehnung. Schleifen enthalten Belastungsgeschichte, die Anfangssteigung erklärt keine vollständige Haptik. [Zyklische Zugdarstellung](ref:R02)"
         },
         "F05": {
-          "caption": "Henriques et al.: Maximale Dehnung und dynamischer Modul über Lastwechsel.",
+          "caption": "Fig. 7 | Henriques et al.: Maximale Dehnung und dynamischer Modul über Lastwechsel.",
           "interpretation": "a zeigt maximale Dehnung, b dynamische Moduln weicherer Materialien, c den Trocken-Nass-Unterschied des härteren Materials, d eine vergrößerte Nassansicht. Durchgezogene und gestrichelte Linien trennen Zustände; Fehlerbalken zeigen Probenstreuung. Unterschiedliche vertikale Bereiche in c und d verbieten, vergrößerte Nassschwankungen als gleich starke Trockenänderung zu lesen. Bruchfreiheit und konstante Antwort sind verschiedene Befunde. [Zyklusabhängigkeit](ref:R02)"
         },
         "F06": {
-          "caption": "Hermans et al.: Tumorgrenzen in rechteckigem Silikon und robotische Interaktion.",
+          "caption": "Figure 1 | Hermans et al.: Tumorgrenzen in rechteckigem Silikon und robotische Interaktion.",
           "interpretation": "Oben erscheinen Modellposition, Instrumente und lokale Grenzfläche; unten wiederholte Tumoren verschiedener Einbettungstiefe in einer rechteckigen Platte. Dargestellt werden lokales Greifen und Trennen, keine vollständige Patientenniere. Farbgrenzen erlauben die Prüfung simulierter Kapselschäden, zeigen aber keine biologische Adhäsion, Blutung oder Kraft-Weg-Kurven. [Modell und Aufgabe](ref:R03)"
         }
       }

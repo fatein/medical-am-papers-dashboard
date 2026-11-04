@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P7-111",
   "p": "P7",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [
@@ -145,27 +145,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Zhang et al.：槽数通过参数修改形成不同斩波盘",
+          "caption": "Fig. 1 | Zhang et al.：槽数通过参数修改形成不同斩波盘",
           "interpretation": "a、b、c 从稀疏槽到密集槽展示同一类几何的变化。槽数改变每转光束被截断的次数，因而改变相同转速下的调制频率；图是模型渲染，没有转速或光强时间轴。它证明设计可派生，不提供频率稳定度或打印后平衡性的测量。[斩波盘原图](ref:R02)"
         },
         "F02": {
-          "caption": "Zhang et al.：打印接口连接现成光学件与调节件",
+          "caption": "Fig. 5 | Zhang et al.：打印接口连接现成光学件与调节件",
           "interpretation": "a 的方形架夹持光学件，b 的圆形支架使用顶部螺钉，c 展示较厚的可调镜架及金属紧固件。可见层纹属于打印支承，而玻璃、光杆和螺钉未被打印替代。不同形状支持接口适配；照片中没有角度刻度或回程误差数据，不能据外观认定精密调节性能相等。[支架原图](ref:R02)"
         },
         "F03": {
-          "caption": "Zhang et al.：滤轮的外壳与内部转盘具有不同功能",
+          "caption": "Fig. 10 | Zhang et al.：滤轮的外壳与内部转盘具有不同功能",
           "interpretation": "主图展示带光学开口的外壳，插图暴露周向排列的滤片窗口及轮毂。外壳固定光束通道，转盘负责切换元件；其大面积打印件解释为何材料用量远高于单个镜架。图像没有切换时间或角度重复性曲线，所支持的是集成结构与可装配性。[滤轮原图](ref:R02)"
         },
         "F04": {
-          "caption": "Wijnen et al.：拆解图显示打印件与金属传动件的分工",
+          "caption": "Fig. 3 | Wijnen et al.：拆解图显示打印件与金属传动件的分工",
           "interpretation": "左侧电机通过联轴器连接中间螺杆，上下光杆提供导向；白色打印件分别固定电机、端部和被驱动组件。改变安装形状可以容纳不同尺寸，但承载路径仍经过打印支承和金属连接。图中没有载荷标尺，极限推力必须依据正文受力试验，而不能从零件厚薄估算。[执行机构原图](ref:R03)"
         },
         "F05": {
-          "caption": "Wijnen et al.：单板机发出命令，驱动板承担电机驱动",
+          "caption": "Fig. 1 | Wijnen et al.：单板机发出命令，驱动板承担电机驱动",
           "interpretation": "图把 Raspberry Pi、步进驱动板和电机分开，并标出独立的 12 V 电源。信号路径说明网页控制与功率驱动不是同一功能；没有直接测量推杆位移的反馈传感器。它解释低价模块如何组成控制链，不能用连线图替代水称量的准确度和重复性结果。[电控原图](ref:R03)"
         },
         "F06": {
-          "caption": "Baden et al.：软件熟练度与硬件接触分布不同",
+          "caption": "Fig. 3 | Baden et al.：软件熟练度与硬件接触分布不同",
           "interpretation": "A 的横轴为 1–10 自评熟练度，办公使用偏右，编程偏左，开放分析工具分散；B 列出从未听说、听说但无接触、尝试过和经常使用。两组硬件多数落在前两类，说明意识和实际接触也有差别。纵向条高未标为可直接读出的精确百分比，不能从像素高度补造各组占比或显著性。[调查原图](ref:R01)"
         }
       }
@@ -224,27 +224,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Zhang et al.: parameters generate choppers with different slot counts",
+          "caption": "Fig. 1 | Zhang et al.: parameters generate choppers with different slot counts",
           "interpretation": "a, b and c progress from sparse to dense slots within one geometric family. Slot count changes beam interruptions per revolution and hence modulation frequency at fixed rotation speed. These are model renderings without rotation-speed or intensity-time axes. They demonstrate derived designs, not frequency stability or post-print balancing measurements. [Original chopper figure](ref:R02)"
         },
         "F02": {
-          "caption": "Zhang et al.: printed interfaces connect existing optics and adjusters",
+          "caption": "Fig. 5 | Zhang et al.: printed interfaces connect existing optics and adjusters",
           "interpretation": "a holds an optical element in a rectangular frame, b uses a circular holder with a top screw, and c shows a thicker adjustable mirror mount and metal fasteners. Visible layer lines belong to printed supports; glass, rods and screws remain unprinted. Shapes demonstrate interface adaptation, but no angular scale or reversal-error measurement establishes equal precision-adjustment performance. [Original mounts](ref:R02)"
         },
         "F03": {
-          "caption": "Zhang et al.: filter-wheel housing and internal rotor serve different functions",
+          "caption": "Fig. 10 | Zhang et al.: filter-wheel housing and internal rotor serve different functions",
           "interpretation": "The main image shows a housing with an optical opening; the inset exposes peripheral filter windows and the hub. The housing fixes the beam passage while the rotor exchanges elements. Its large printed parts explain greater material use than a single mount. There are no switching-time or angular-repeatability curves; the evidence concerns integration and assembly. [Original filter wheel](ref:R02)"
         },
         "F04": {
-          "caption": "Wijnen et al.: the exploded view separates printed and metal transmission roles",
+          "caption": "Fig. 3 | Wijnen et al.: the exploded view separates printed and metal transmission roles",
           "interpretation": "The motor at left couples to the central screw, while upper and lower smooth rods guide motion. White printed pieces locate the motor, end supports and driven assembly. Mount geometry accommodates different sizes, but loads still pass through printed supports and metal connections. No load scale is present; limiting force must come from the reported test rather than apparent part thickness. [Original actuator](ref:R03)"
         },
         "F05": {
-          "caption": "Wijnen et al.: the computer commands while the driver powers the motor",
+          "caption": "Fig. 1 | Wijnen et al.: the computer commands while the driver powers the motor",
           "interpretation": "The drawing separates Raspberry Pi, stepper driver and motor, identifying a separate 12 V supply. Signal paths distinguish browser control from power actuation; no feedback sensor directly measures plunger displacement. The figure explains assembly of a low-cost control chain but cannot replace water-gravimetry accuracy and repeatability results. [Original electronic control](ref:R03)"
         },
         "F06": {
-          "caption": "Baden et al.: software competence and hardware exposure have different distributions",
+          "caption": "Fig. 3 | Baden et al.: software competence and hardware exposure have different distributions",
           "interpretation": "A uses a 1–10 self-rated competence axis: office use clusters right, programming left, and open analysis tools are dispersed. B distinguishes never heard, heard without access, tried, and routine use. Both hardware groups largely occupy the first categories, separating awareness from practical exposure. Bar heights lack directly readable exact percentages; pixel heights cannot supply invented group proportions or significance. [Original survey](ref:R01)"
         }
       }
@@ -281,7 +281,7 @@
         {
           "id": "s4",
           "title": "Gemessene Streuung statt Mikroschrittbezeichnung bestimmt die Steuerleistung",
-          "markdown": "Die Pumpe nutzt Raspberry Pi, eine Python-Browseroberfläche und einen A4988-Schrittmotortreiber. Impulse und Mikroschritte unterteilen Befehle; ein Encoder zur direkten Messung der tatsächlichen Kolbenposition fehlt. Geprüft wurde mit destilliertem Wasser, einer Mettler AE100 mit 0.1 mg Ablesbarkeit und feuchter geschlossener Umgebung zur Verdunstungsunterdrückung. Tropfen von ungefähr 20 μL begrenzen ebenfalls die Gravimetrie sehr kleiner Volumina. Die angegebene Genauigkeit betrifft 1 mL Inkremente: ±1% für NEMA11 und ±5% für NEMA17. Sie gilt nicht automatisch für beliebige Kleinvolumina oder Flüssigkeiten. [Gravimetrie und Elektronik](ref:R03)\n\nDie Wiederholbarkeitstabelle vergleicht Voll-, Viertel- und Sechzehntelschritte. Variationskoeffizienten betragen für NEMA11 1.17%, 0.56% und 1.55%, für NEMA17 3.66%, 2.13% und 2.26%. Feinere Mikroschritte verbessern keines der Ergebnisse monoton; Viertelschritte liefern hier die geringste Streuung. Die Textzusammenfassung von ungefähr 3% oder weniger erfasst den NEMA17-Vollschrittwert von 3.66% nicht. Eine weitere Tabelle nennt ±0.6% und ±2.1%, nahe den ausgewählten Viertelschrittergebnissen. Dies sind weder einheitliche Intervalle aller Betriebsarten noch mit Genauigkeit austauschbare Werte. Wiederholungszahlen je Bedingung fehlen eindeutig, sodass daraus keine neuen Signifikanztests oder Konfidenzintervalle konstruiert werden können.",
+          "markdown": "Die Pumpe nutzt Raspberry Pi, eine Python-Browseroberfläche und einen A4988-Schrittmotortreiber. Impulse und Mikroschritte unterteilen Befehle; ein Encoder zur direkten Messung der tatsächlichen Kolbenposition fehlt. Geprüft wurde mit destilliertem Wasser, einer Mettler AE100 mit 0.1 mg Ablesbarkeit und feuchter geschlossener Umgebung zur Verdunstungsunterdrückung. Tropfen von ungefähr 20 μL begrenzen ebenfalls die Gravimetrie sehr kleiner Volumina. Die angegebene Genauigkeit betrifft 1 mL Inkremente: ±1% für NEMA11 und ±5% für NEMA17. Sie gilt nicht automatisch für beliebige Kleinvolumina oder Flüssigkeiten. [Gravimetrie und Elektronik](ref:R03)\n\nDie Wiederholbarkeitstabelle vergleicht Voll-, Viertel- und Sechzehntelschritte. Variationskoeffizienten betragen für NEMA11 1.17%, 0.56% und 1.55%, für NEMA17 3.66%, 2.13% und 2.26%. Feinere Mikroschritte verbessern keines der Ergebnisse monoton; Viertelschritte liefern hier die geringste Streuung. Die Textzusammenfassung von ungefähr 3% oder weniger erfasst den NEMA17-Vollschrittwert von 3.66% nicht. Eine weitere Tabelle nennt ±0.6% und ±2.1%, nahe den ausgewählten Viertelschrittergebnissen. Dies sind weder einheitliche Intervalle aller Betriebsarten noch mit Genauigkeit austauschbare Werte. Wiederholungszahlen je Bedingung werden nicht eindeutig angegeben, sodass daraus keine neuen Signifikanztests oder Konfidenzintervalle konstruiert werden können.",
           "figure_ids": [
             "F05"
           ]
@@ -289,7 +289,7 @@
         {
           "id": "s5",
           "title": "Vorwissen und Zugang bestimmen die praktische Nutzbarkeit offener Dateien",
-          "markdown": "Open Labware von Baden et al. verknüpft Hardwareoffenheit mit Nutzerkompetenz. Die Befragung im 2014-08 umfasste 89 Forschende aus 12 Ländern Subsahara-Afrikas; 83/89 hatten Druck- oder Mikrocontrollertechnologien noch nie genutzt. Softwarekompetenz wurde von 1–10 selbst eingeschätzt: Büro- und Internetnutzung lagen eher hoch, Programmierung niedrig, offene Analysesoftware dazwischen. Hardwarekategorien unterscheiden Kenntnis ohne Zugang von völliger Unkenntnis. Herunterladbare Dateien sind somit nicht mit allgemeinem Zugang zu Fertigungswerkzeugen gleichzusetzen. [Ursprüngliche Kompetenzbefragung](ref:R01)\n\nBei einer anderen Aktivität bewerteten 33 Studierende nach praktischer Teilnahme sämtliche gezeigten Modelle im Mittel mit mindestens 9/10 für Nützlichkeit. Dies belegt wahrgenommenen Nutzen, misst aber weder Montagegenauigkeit, selbstständige Reparaturkompetenz noch dauerhafte Nutzung. Eine randomisierte Kontrolle zur kausalen Trainingswirkung fehlt. Die Befragung ist keine repräsentative Erhebung heutiger Labore weltweit; Gruppe, Jahr und Region bleiben wesentlich. Die Trennung von Softwarekompetenz und Hardwareerfahrung zeigt, weshalb geringere Kosten keine verschwundene Kompetenzlücke belegen: Computernutzung kann mit fehlendem Zugang zu Druckern, Material und elektronischer Steuerpraxis einhergehen.",
+          "markdown": "Open Labware von Baden et al. verknüpft Hardwareoffenheit mit Nutzerkompetenz. Die Befragung im August 2014 umfasste 89 Forschende aus 12 Ländern Subsahara-Afrikas; 83/89 hatten Druck- oder Mikrocontrollertechnologien noch nie genutzt. Softwarekompetenz wurde von 1–10 selbst eingeschätzt: Büro- und Internetnutzung lagen eher hoch, Programmierung niedrig, offene Analysesoftware dazwischen. Hardwarekategorien unterscheiden Kenntnis ohne Zugang von völliger Unkenntnis. Herunterladbare Dateien sind somit nicht mit allgemeinem Zugang zu Fertigungswerkzeugen gleichzusetzen. [Ursprüngliche Kompetenzbefragung](ref:R01)\n\nBei einer anderen Aktivität bewerteten 33 Studierende nach praktischer Teilnahme sämtliche gezeigten Modelle im Mittel mit mindestens 9/10 für Nützlichkeit. Dies belegt wahrgenommenen Nutzen, misst aber weder Montagegenauigkeit, selbstständige Reparaturkompetenz noch dauerhafte Nutzung. Eine randomisierte Kontrolle zur kausalen Trainingswirkung fehlt. Die Befragung ist keine repräsentative Erhebung heutiger Labore weltweit; Gruppe, Jahr und Region bleiben wesentlich. Die Trennung von Softwarekompetenz und Hardwareerfahrung zeigt, weshalb geringere Kosten keine verschwundene Kompetenzlücke belegen: Computernutzung kann mit fehlendem Zugang zu Druckern, Material und elektronischer Steuerpraxis einhergehen.",
           "figure_ids": [
             "F06"
           ]
@@ -303,27 +303,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Zhang et al.: Parameter erzeugen Chopperräder verschiedener Schlitzanzahl",
+          "caption": "Fig. 1 | Zhang et al.: Parameter erzeugen Chopperräder verschiedener Schlitzanzahl",
           "interpretation": "a, b und c zeigen zunehmend dichtere Schlitze innerhalb einer Geometriefamilie. Die Schlitzanzahl verändert Strahlunterbrechungen pro Umdrehung und damit die Modulationsfrequenz bei gleicher Drehzahl. Modellansichten besitzen keine Drehzahl- oder Intensitätszeitachse. Sie zeigen abgeleitete Entwürfe, keine Messung von Frequenzstabilität oder Unwucht nach dem Druck. [Originalchopper](ref:R02)"
         },
         "F02": {
-          "caption": "Zhang et al.: Druckschnittstellen verbinden vorhandene Optik und Stellteile",
+          "caption": "Fig. 5 | Zhang et al.: Druckschnittstellen verbinden vorhandene Optik und Stellteile",
           "interpretation": "a hält ein optisches Element in einem Rechteckrahmen, b nutzt einen Rundhalter mit oberer Schraube, c zeigt einen dickeren verstellbaren Spiegelhalter und Metallbefestigungen. Sichtbare Schichten gehören zu Druckstützen; Glas, Stäbe und Schrauben bleiben ungedruckt. Die Formen belegen Anpassbarkeit, aber weder Winkelskala noch Umkehrfehlermessung bestätigen gleichwertige Präzisionsverstellung. [Originalhalter](ref:R02)"
         },
         "F03": {
-          "caption": "Zhang et al.: Filterradgehäuse und innerer Rotor erfüllen verschiedene Aufgaben",
+          "caption": "Fig. 10 | Zhang et al.: Filterradgehäuse und innerer Rotor erfüllen verschiedene Aufgaben",
           "interpretation": "Das Hauptbild zeigt ein Gehäuse mit optischer Öffnung; das Innenbild legt umlaufende Filterfenster und Nabe frei. Das Gehäuse fixiert den Strahldurchgang, der Rotor tauscht Elemente. Große Druckteile erklären den höheren Materialbedarf gegenüber einem Einzelhalter. Umschaltzeit- und Winkelwiederholbarkeitskurven fehlen; belegt sind Integration und Montierbarkeit. [Originalfilterrad](ref:R02)"
         },
         "F04": {
-          "caption": "Wijnen et al.: die Explosionsansicht trennt Druckteile und Metallübertragung",
+          "caption": "Fig. 3 | Wijnen et al.: die Explosionsansicht trennt Druckteile und Metallübertragung",
           "interpretation": "Der linke Motor koppelt an die mittlere Spindel; obere und untere Rundstäbe führen die Bewegung. Weiße Druckteile positionieren Motor, Endstützen und bewegte Baugruppe. Andere Halterformen nehmen andere Größen auf, der Lastpfad führt dennoch über Druckstützen und Metallverbindungen. Eine Lastskala fehlt; Grenzkraft ergibt sich aus dem beschriebenen Versuch, nicht aus sichtbarer Bauteildicke. [Originalantrieb](ref:R03)"
         },
         "F05": {
-          "caption": "Wijnen et al.: Rechnerbefehle und Motorleistungsansteuerung sind getrennt",
+          "caption": "Fig. 1 | Wijnen et al.: Rechnerbefehle und Motorleistungsansteuerung sind getrennt",
           "interpretation": "Die Zeichnung trennt Raspberry Pi, Schrittmotortreiber und Motor und kennzeichnet eine eigene 12 V Versorgung. Signalwege unterscheiden Browsersteuerung und Leistungsantrieb; ein Rückmeldesensor für direkte Kolbenwegmessung fehlt. Die Grafik erklärt den Aufbau einer preiswerten Steuerkette, ersetzt aber keine Genauigkeits- und Wiederholbarkeitsergebnisse der Wassergravimetrie. [Originalelektronik](ref:R03)"
         },
         "F06": {
-          "caption": "Baden et al.: Softwarekompetenz und Hardwareerfahrung sind verschieden verteilt",
+          "caption": "Fig. 3 | Baden et al.: Softwarekompetenz und Hardwareerfahrung sind verschieden verteilt",
           "interpretation": "A besitzt eine 1–10 Achse selbst eingeschätzter Kompetenz: Büronutzung liegt eher rechts, Programmierung links, offene Analysewerkzeuge verteilt. B unterscheidet nie gehört, gehört ohne Zugang, ausprobiert und regelmäßige Nutzung. Beide Hardwaregruppen liegen überwiegend in den ersten Kategorien; Bekanntheit und praktische Erfahrung sind damit getrennt. Balkenhöhen liefern keine direkt ablesbaren exakten Prozentwerte; Pixelhöhen dürfen keine erfundenen Gruppenanteile oder Signifikanz erzeugen. [Originalbefragung](ref:R01)"
         }
       }

@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P6-096",
   "p": "P6",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [
@@ -147,27 +147,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Zavan et al.：胶片位于低密度板的边界。",
+          "caption": "Figure 1 | Zavan et al.：胶片位于低密度板的边界。",
           "interpretation": "a 左侧 P、Q 是单层板的上、下界面，右侧 A–D 为多层结构的测量位置；b–c 显示实物叠层与侧向围挡。多个测量面能区分入射、界面和出射后的剂量变化，但每张胶片仍是一个平面，不能视为连续三维探测。图中板次序是计算与实验共同的几何条件。[平面布局](ref:R01)"
         },
         "F02": {
-          "caption": "Zavan et al.：小射野的中心平台与半影。",
+          "caption": "Figure 2 | Zavan et al.：小射野的中心平台与半影。",
           "interpretation": "行按能量排列，左列为板下 Q，右列为板上 P；实测与计算的剂量曲线使用左轴，虚线相对差使用右轴。中心平台相近而边缘差异增大，说明不能用中心吻合替代全剖面符合。右轴大的相对差有部分出现在低剂量区域，须同时看左轴和空间位置。[剖面图](ref:R01)"
         },
         "F03": {
-          "caption": "Zavan et al.：多层体模中的深度剂量。",
+          "caption": "Figure 6 | Zavan et al.：多层体模中的深度剂量。",
           "interpretation": "列区分较大与较小射野，行区分能量；背景色块指示相邻密度板。连续线为 AXB，红点为有限界面上的胶片读数。较小射野在低密度层和其后呈现更明显变化；这些形状主要来自计算曲线，测量点只检验其被采样位置。误差棒不是整个实验总不确定度。[深度采样](ref:R01)"
         },
         "F04": {
-          "caption": "Zavan et al.：Gamma 图的局部失败区域。",
+          "caption": "Figure 5 | Zavan et al.：Gamma 图的局部失败区域。",
           "interpretation": "上下两组为不同束流与射野条件，左右区分 Q、P 平面。灰度区域中叠加等剂量线，右侧色标用于 Gamma；少数黄红斑块提示局部不符合，不能把背景明暗当作吸收剂量大小。空间失败点的位置补充总通过率，但没有独立证明错误由体模、束流还是配准产生。[二维评价](ref:R01)"
         },
         "F05": {
-          "caption": "Delombaerde et al.：乳房轴位胶片与计算分布。",
+          "caption": "Fig. 4 | Delombaerde et al.：乳房轴位胶片与计算分布。",
           "interpretation": "左上和中上分别是实测与计算，右上为 Gamma 图，红色标出未通过区域。青线选取下方两个剖面；大部分曲线接近，但边缘和局部区域仍有差别。此图对应轴位，不能替代同一计划较低的冠状平面结果；原分析还包括胶片全局缩放，绝对剂量需结合独立点测量。[轴位结果](ref:R02)"
         },
         "F06": {
-          "caption": "Yea et al.：头部矢状面胶片的测量、计算和 Gamma。",
+          "caption": "Fig. 6 | Yea et al.：头部矢状面胶片的测量、计算和 Gamma。",
           "interpretation": "按画面标签，a 是实测、b 是计算、c 是 Gamma、d 是剖面；原正文对前两项的叙述顺序与图内标注相反，本图解以图内标签为准。红色测量线与绿色计算线大体接近但局部偏离，Gamma 图仍有红色区域。其百分数来自指定平面和判据，不代表患者全部体积剂量误差。[头部图内标注](ref:R03)"
         }
       }
@@ -226,27 +226,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Zavan et al.: Films at low-density slab boundaries.",
+          "caption": "Figure 1 | Zavan et al.: Films at low-density slab boundaries.",
           "interpretation": "In a, P and Q are upper and lower single-slab interfaces; A–D sample the multilayer stack. b–c show physical stacking and lateral enclosure. Multiple planes distinguish entry, interface and exit effects, yet each film remains planar rather than a continuous volumetric detector. Slab order is shared experimental and calculation geometry. [Plane arrangement](ref:R01)"
         },
         "F02": {
-          "caption": "Zavan et al.: Small-field plateaus and penumbrae.",
+          "caption": "Figure 2 | Zavan et al.: Small-field plateaus and penumbrae.",
           "interpretation": "Rows distinguish energies; Q below the slab is left and P above it right. Measured and calculated dose use the left axis, dashed relative difference the right. Similar plateaus coexist with edge disagreement, so central overlap does not establish full-profile agreement. Some large relative differences occur at low dose; both axes and location matter. [Profile plot](ref:R01)"
         },
         "F03": {
-          "caption": "Zavan et al.: Depth dose in the multilayer phantom.",
+          "caption": "Figure 6 | Zavan et al.: Depth dose in the multilayer phantom.",
           "interpretation": "Columns distinguish larger and smaller fields, rows energies; colored backgrounds mark density slabs. AXB is continuous, red film points sample limited interfaces. Smaller fields show stronger changes in and beyond low-density layers. These shapes chiefly derive from calculation, with measurements testing sampled positions only. Error bars are not total experimental uncertainty. [Depth sampling](ref:R01)"
         },
         "F04": {
-          "caption": "Zavan et al.: Localized failures on gamma maps.",
+          "caption": "Figure 5 | Zavan et al.: Localized failures on gamma maps.",
           "interpretation": "Upper and lower groups use different beams and fields; columns distinguish Q and P. Isodose lines overlay grayscale regions with gamma color scales at right. Sparse yellow/red spots indicate local disagreement; background brightness is not absorbed dose. Failure locations complement total passing without independently identifying phantom, beam or registration as the cause. [Planar evaluation](ref:R01)"
         },
         "F05": {
-          "caption": "Delombaerde et al.: Axial breast-film and calculated distributions.",
+          "caption": "Fig. 4 | Delombaerde et al.: Axial breast-film and calculated distributions.",
           "interpretation": "Top left is measured, center calculated and right gamma, with red failing areas. Cyan lines select the lower profiles. Most curves are close despite edge and local differences. This axial example does not replace the poorer coronal result from the same plan. Global film rescaling also requires independent point measurements for absolute-dose interpretation. [Axial result](ref:R02)"
         },
         "F06": {
-          "caption": "Yea et al.: Sagittal head-film measurement, calculation and gamma.",
+          "caption": "Fig. 6 | Yea et al.: Sagittal head-film measurement, calculation and gamma.",
           "interpretation": "Image labels identify a as measured, b calculated, c gamma and d profiles. The narrative reverses the first pair; this interpretation follows the image labels. Red measured and green calculated profiles are broadly close with local deviations and red gamma regions. Percentages concern the specified plane and criterion, not errors throughout the patient dose volume. [Head-image labels](ref:R03)"
         }
       }
@@ -305,27 +305,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Zavan et al.: Filme an Grenzen der Niedrigdichteplatten.",
+          "caption": "Figure 1 | Zavan et al.: Filme an Grenzen der Niedrigdichteplatten.",
           "interpretation": "In a bezeichnen P und Q obere und untere Einzelplattengrenzen, A–D den Mehrschichtstapel. b–c zeigen Stapel und seitliche Einfassung. Mehrere Ebenen trennen Eintritts-, Grenz- und Austrittseffekte, jeder Film bleibt aber planar statt kontinuierlich volumetrisch. Plattenfolge ist gemeinsame Mess- und Rechengeometrie. [Ebenenanordnung](ref:R01)"
         },
         "F02": {
-          "caption": "Zavan et al.: Kleinfeld-Plateaus und Halbschatten.",
+          "caption": "Figure 2 | Zavan et al.: Kleinfeld-Plateaus und Halbschatten.",
           "interpretation": "Zeilen unterscheiden Energien, links liegt Q unter der Platte, rechts P darüber. Mess- und Rechendosis nutzen die linke, gestrichelte relative Differenz die rechte Achse. Ähnliche Plateaus bestehen neben Randabweichungen; zentrale Überlagerung bestätigt nicht das Gesamtprofil. Manche großen relativen Unterschiede liegen bei geringer Dosis; beide Achsen und Position sind relevant. [Profilgrafik](ref:R01)"
         },
         "F03": {
-          "caption": "Zavan et al.: Tiefendosis im Mehrschichtphantom.",
+          "caption": "Figure 6 | Zavan et al.: Tiefendosis im Mehrschichtphantom.",
           "interpretation": "Spalten unterscheiden größere und kleinere Felder, Zeilen Energien; farbige Hintergründe markieren Dichteplatten. AXB ist kontinuierlich, rote Filmpunkte erfassen begrenzte Grenzen. Kleinere Felder zeigen stärkere Änderungen in und nach Niedrigdichteschichten. Formen stammen überwiegend aus Berechnung, Messungen prüfen Stichprobenpositionen. Fehlerbalken sind keine Gesamtversuchsunsicherheit. [Tiefenabtastung](ref:R01)"
         },
         "F04": {
-          "caption": "Zavan et al.: Lokales Nichtbestehen auf Gamma-Karten.",
+          "caption": "Figure 5 | Zavan et al.: Lokales Nichtbestehen auf Gamma-Karten.",
           "interpretation": "Obere und untere Gruppen verwenden verschiedene Strahlen und Felder, Spalten Q und P. Isodosen überlagern Graubereiche, rechts stehen Gamma-Farbskalen. Einzelne gelbe/rote Flecken zeigen lokale Abweichung; Hintergrundhelligkeit ist keine Energiedosis. Fehlerlagen ergänzen Gesamtbestehen, identifizieren aber nicht unabhängig Phantom, Strahl oder Registrierung als Ursache. [Ebenenauswertung](ref:R01)"
         },
         "F05": {
-          "caption": "Delombaerde et al.: Axialer Brustfilm und berechnete Verteilung.",
+          "caption": "Fig. 4 | Delombaerde et al.: Axialer Brustfilm und berechnete Verteilung.",
           "interpretation": "Oben links Messung, mittig Berechnung, rechts Gamma mit roten Fehlerbereichen. Cyanlinien wählen die unteren Profile. Kurven liegen meist nahe, trotz Rand- und lokaler Differenzen. Das axiale Beispiel ersetzt nicht das schlechtere koronale Ergebnis desselben Plans. Globale Filmskalierung verlangt zudem unabhängige Punktmessung zur absoluten Dosisinterpretation. [Axiales Ergebnis](ref:R02)"
         },
         "F06": {
-          "caption": "Yea et al.: Sagittaler Kopffilm mit Messung, Berechnung und Gamma.",
+          "caption": "Fig. 6 | Yea et al.: Sagittaler Kopffilm mit Messung, Berechnung und Gamma.",
           "interpretation": "Bildbeschriftungen nennen a gemessen, b berechnet, c Gamma und d Profile. Der Fließtext vertauscht das erste Paar; hier gelten Bildlabels. Rote Mess- und grüne Rechenprofile liegen überwiegend nahe, mit lokalen Differenzen und roten Gamma-Bereichen. Prozente betreffen festgelegte Ebene und Kriterium, keine Fehler des gesamten Patientendosisvolumens. [Kopfbild-Beschriftung](ref:R03)"
         }
       }

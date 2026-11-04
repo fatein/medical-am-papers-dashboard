@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P7-113",
   "p": "P7",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [],
@@ -149,27 +149,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Salazar-Serrano et al.：镜架被调方向与串扰分开显示",
+          "caption": "Fig. 7 | Salazar-Serrano et al.：镜架被调方向与串扰分开显示",
           "interpretation": "左、右分别改变 X、Y 旋钮，蓝色为 X 光束偏转，红色为 Y；圆圈是对照，点或叉是 PLA。被调方向变化明显，另一方向接近零。纵轴是 deg，横轴是任意单位，不能据此直接读出旋钮角度准确度。重合趋势也没有给独立制造件的置信区间。[镜架结果](ref:R01)"
         },
         "F02": {
-          "caption": "Salazar-Serrano et al.：大行程引入明显 Y 偏转",
+          "caption": "Fig. 8 | Salazar-Serrano et al.：大行程引入明显 Y 偏转",
           "interpretation": "横轴为镜面移动 mm，纵轴为光束偏转 deg；对照空心圆接近零，打印件红叉在行程后段向下弯曲，蓝点变化较小。末端约 −0.13° 与初段并不属于同一稳定区间。图支持方向相关的寄生偏转，不是轴向位移误差图。[平移台结果](ref:R01)"
         },
         "F03": {
-          "caption": "Salazar-Serrano et al.：非线性校准后再比较读数",
+          "caption": "Fig. 9 | Salazar-Serrano et al.：非线性校准后再比较读数",
           "interpretation": "左图横轴输入功率 mW、纵轴强度任意单位，橙色曲线随功率弯曲；右图以偏振片角度改变入射功率，红点参考与蓝圈 webcam 接近。左右图回答响应建模和校准后比较两个问题；接近并不说明未校准亮度线性，也没有建立多波长适用性。[功率结果](ref:R01)"
         },
         "F04": {
-          "caption": "Dulal and Alaie：标尺与红点构成独立位移比较",
+          "caption": "Fig. 6 | Dulal and Alaie：标尺与红点构成独立位移比较",
           "interpretation": "a、b 显示不同夹具位置，标尺、红点中心及 Δl 箭头同时可见。程序追踪中心距离，卡尺与图像标尺提供交叉检查；照片不是均匀应变场地图，也没有自动排除标点形变或夹持滑移。[视觉校准原图](ref:R02)"
         },
         "F05": {
-          "caption": "Dulal and Alaie：模拟在较大应变时系统性偏高",
+          "caption": "Fig. 13 | Dulal and Alaie：模拟在较大应变时系统性偏高",
           "interpretation": "横轴 Strain 为 mm/mm，纵轴 Stress 为 MPa；红三角实验与蓝圆 FEA 在低应变接近，随后蓝点持续高于红点。约 0.20 应变时分别约 0.35 和 0.40 MPa。实验点有误差棒，模拟点并无同等实验不确定度；这不是两组独立仪器测量。[模拟比较](ref:R02)"
         },
         "F06": {
-          "caption": "Dulal and Alaie：同时拟合两类试验仍有散点结构",
+          "caption": "Fig. 14 | Dulal and Alaie：同时拟合两类试验仍有散点结构",
           "interpretation": "蓝点与红实线表示单轴测量及拟合，绿三角与紫虚线表示平面拉伸。横轴无量纲应变、纵轴 MPa；平面组整体更高，两组残差并非完全一致。共同参数可解释主要趋势，但曲线贴近不能证明参数唯一，也不能替代其他加载方式的验证。[联合拟合原图](ref:R02)"
         }
       }
@@ -234,27 +234,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Salazar-Serrano et al.: adjusted motion and cross-talk are shown separately",
+          "caption": "Fig. 7 | Salazar-Serrano et al.: adjusted motion and cross-talk are shown separately",
           "interpretation": "Left and right vary X and Y knobs. Blue denotes X beam deflection and red Y; circles are reference data, dots or crosses PLA. The adjusted direction changes strongly while the other stays near zero. Vertical units are deg and horizontal units arbitrary, so knob-angle accuracy cannot be read directly. Overlapping trends supply no confidence interval across independently manufactured mounts. [Mount results](ref:R01)"
         },
         "F02": {
-          "caption": "Salazar-Serrano et al.: large travel introduces substantial Y deflection",
+          "caption": "Fig. 8 | Salazar-Serrano et al.: large travel introduces substantial Y deflection",
           "interpretation": "Horizontal position is mirror travel in mm and vertical position beam deflection in deg. Reference open circles remain near zero; printed red crosses bend downward late in travel, with smaller blue-dot changes. Approximately −0.13° at the end differs from the initial stable region. This demonstrates direction-dependent parasitic deflection, not axial displacement error. [Stage results](ref:R01)"
         },
         "F03": {
-          "caption": "Salazar-Serrano et al.: readings are compared after nonlinear calibration",
+          "caption": "Fig. 9 | Salazar-Serrano et al.: readings are compared after nonlinear calibration",
           "interpretation": "The left graph plots input power in mW against intensity in arbitrary units; its orange curve bends with power. The right changes input power through polariser angle, with red reference points close to blue webcam circles. The panels address response modelling and calibrated comparison separately; agreement establishes neither linear uncalibrated brightness nor multiwavelength validity. [Power results](ref:R01)"
         },
         "F04": {
-          "caption": "Dulal and Alaie: a ruler and markers enable independent displacement comparison",
+          "caption": "Fig. 6 | Dulal and Alaie: a ruler and markers enable independent displacement comparison",
           "interpretation": "a and b show different clamp positions with ruler, red-dot centres and the Δl arrow visible together. Software tracks centre distance while the caliper and image ruler cross-check it. These photographs are not uniform-strain-field maps and do not automatically exclude marker deformation or grip slippage. [Original visual calibration](ref:R02)"
         },
         "F05": {
-          "caption": "Dulal and Alaie: simulation overpredicts at larger strain",
+          "caption": "Fig. 13 | Dulal and Alaie: simulation overpredicts at larger strain",
           "interpretation": "Strain is in mm/mm and Stress in MPa. Red experimental triangles and blue FEA circles agree at low strain, before blue points remain above red. At approximately 0.20 strain, values are approximately 0.35 and 0.40 MPa respectively. Experimental points have error bars; simulation does not carry equivalent experimental uncertainty. These are not measurements from two independent instruments. [Simulation comparison](ref:R02)"
         },
         "F06": {
-          "caption": "Dulal and Alaie: simultaneous fits retain structured scatter",
+          "caption": "Fig. 14 | Dulal and Alaie: simultaneous fits retain structured scatter",
           "interpretation": "Blue dots and the solid red line represent uniaxial measurements and fit; green triangles and dashed purple line represent planar tension. Strain is dimensionless and stress in MPa. The planar group is higher overall, with differing residual patterns. Shared parameters explain main trends, but close curves establish neither parameter uniqueness nor validation under other loading modes. [Original combined fit](ref:R02)"
         }
       }
@@ -282,7 +282,7 @@
         {
           "id": "s3",
           "title": "Kalibrierte Leistungsübereinstimmung gilt innerhalb spektraler und dynamischer Grenzen",
-          "markdown": "Eine gedruckte Ulbrichtkugel nutzt eine Webcam gegen Thorlabs S130C mit PM100 als Referenz. Intensität wird aus einem Bildbereich mit Radius R=100 pixels gewonnen, die nichtlineare Antwort angepasst und bei 633 nm durch veränderte Polarisatorwinkel verglichen. Die gekrümmte Kameraantwort erlaubt keine direkte lineare Leistungsmessung aus unkalibrierter Helligkeit. Nach Kalibrierung nennt die Legende maximal 0.6 μW Fehler, der Text unter 2% relativen Maximalfehler. [Kugelantwort und Kalibrierung](ref:R01)\n\nDie Kamera sättigt bei ungefähr 0.3 mW; ein preiswertes Gehäuse beseitigt keine Detektordynamikgrenzen. Der Vergleich einer Wellenlänge belegt keine Stabilität bei anderen Farben, Einfallswinkeln, langfristiger Quelldrift oder automatischer Verstärkungsänderung. Absolute und relative Fehler unterscheiden sich insbesondere bei kleinen Leistungen; ein fester Prozentsatz ersetzt keine Unsicherheit jeder Einzelablesung. Gezeigt wird ein konfigurationsbezogener Referenzvergleich ohne angegebenen unabhängigen Kalibrierprüfsatz oder Streuung separat gefertigter Kugeln.",
+          "markdown": "Eine gedruckte Ulbrichtkugel nutzt eine Webcam gegen Thorlabs S130C mit PM100 als Referenz. Intensität wird aus einem Bildbereich mit Radius R=100 Pixeln gewonnen, die nichtlineare Antwort angepasst und bei 633 nm durch veränderte Polarisatorwinkel verglichen. Die gekrümmte Kameraantwort erlaubt keine direkte lineare Leistungsmessung aus unkalibrierter Helligkeit. Nach Kalibrierung nennt die Legende maximal 0.6 μW Fehler, der Text unter 2% relativen Maximalfehler. [Kugelantwort und Kalibrierung](ref:R01)\n\nDie Kamera sättigt bei ungefähr 0.3 mW; ein preiswertes Gehäuse beseitigt keine Detektordynamikgrenzen. Der Vergleich einer Wellenlänge belegt keine Stabilität bei anderen Farben, Einfallswinkeln, langfristiger Quelldrift oder automatischer Verstärkungsänderung. Absolute und relative Fehler unterscheiden sich insbesondere bei kleinen Leistungen; ein fester Prozentsatz ersetzt keine Unsicherheit jeder Einzelablesung. Gezeigt wird ein konfigurationsbezogener Referenzvergleich ohne angegebenen unabhängigen Kalibrierprüfsatz oder Streuung separat gefertigter Kugeln.",
           "figure_ids": [
             "F03"
           ]
@@ -319,27 +319,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Salazar-Serrano et al.: Verstellung und Übersprechen werden getrennt dargestellt",
+          "caption": "Fig. 7 | Salazar-Serrano et al.: Verstellung und Übersprechen werden getrennt dargestellt",
           "interpretation": "Links und rechts werden X- und Y-Knöpfe verändert. Blau bezeichnet X-Strahlablenkung, Rot Y; Kreise stehen für Referenz, Punkte oder Kreuze für PLA. Die verstellte Richtung ändert sich stark, die andere bleibt nahe null. Vertikal steht deg, horizontal willkürliche Einheiten; Knopfwinkelgenauigkeit ist nicht direkt ablesbar. Überlagerte Trends liefern keine Konfidenzintervalle unabhängig gefertigter Halter. [Halterergebnisse](ref:R01)"
         },
         "F02": {
-          "caption": "Salazar-Serrano et al.: großer Weg erzeugt deutliche Y-Ablenkung",
+          "caption": "Fig. 8 | Salazar-Serrano et al.: großer Weg erzeugt deutliche Y-Ablenkung",
           "interpretation": "Horizontal ist Spiegelweg in mm, vertikal Strahlablenkung in deg dargestellt. Offene Referenzkreise bleiben nahe null; rote Druckteilkreuze biegen am Wegende abwärts, blaue Punkte ändern sich weniger. Ungefähr −0.13° am Ende unterscheiden sich vom anfänglichen stabilen Bereich. Gezeigt wird richtungsabhängige parasitäre Ablenkung, kein axialer Wegfehler. [Tischergebnisse](ref:R01)"
         },
         "F03": {
-          "caption": "Salazar-Serrano et al.: Vergleich nach nichtlinearer Kalibrierung",
+          "caption": "Fig. 9 | Salazar-Serrano et al.: Vergleich nach nichtlinearer Kalibrierung",
           "interpretation": "Links wird Eingangsleistung in mW gegen Intensität in willkürlichen Einheiten aufgetragen; die orange Kurve ist gekrümmt. Rechts verändert der Polarisatorwinkel die Leistung; rote Referenzpunkte liegen nahe blauen Webcam-Kreisen. Die Tafeln trennen Antwortmodellierung und kalibrierten Vergleich. Übereinstimmung belegt weder lineare Rohhelligkeit noch Gültigkeit mehrerer Wellenlängen. [Leistungsergebnisse](ref:R01)"
         },
         "F04": {
-          "caption": "Dulal and Alaie: Lineal und Marken erlauben unabhängigen Wegvergleich",
+          "caption": "Fig. 6 | Dulal and Alaie: Lineal und Marken erlauben unabhängigen Wegvergleich",
           "interpretation": "a und b zeigen verschiedene Klemmpositionen mit Lineal, roten Punktzentren und Δl-Pfeil. Die Software verfolgt Zentrumsabstände, Messschieber und Bildlineal prüfen gegen. Fotos sind keine Karten homogener Dehnungsfelder und schließen Markenverformung oder Klemmrutschen nicht automatisch aus. [Originalbildkalibrierung](ref:R02)"
         },
         "F05": {
-          "caption": "Dulal and Alaie: Simulation überschätzt größere Dehnung",
+          "caption": "Fig. 13 | Dulal and Alaie: Simulation überschätzt größere Dehnung",
           "interpretation": "Strain besitzt mm/mm, Stress MPa als Einheit. Rote experimentelle Dreiecke und blaue FEM-Kreise stimmen zunächst überein; später liegen blaue Punkte durchgehend höher. Bei ungefähr 0.20 Dehnung betragen die Werte ungefähr 0.35 beziehungsweise 0.40 MPa. Experimentpunkte besitzen Fehlerbalken; Simulation trägt keine gleichartige experimentelle Unsicherheit. Es sind keine Messungen zweier unabhängiger Geräte. [Simulationsvergleich](ref:R02)"
         },
         "F06": {
-          "caption": "Dulal and Alaie: gemeinsame Anpassung behält strukturierte Streuung",
+          "caption": "Fig. 14 | Dulal and Alaie: gemeinsame Anpassung behält strukturierte Streuung",
           "interpretation": "Blaue Punkte und rote durchgezogene Linie zeigen einachsige Messung und Fit, grüne Dreiecke und violette Strichlinie den ebenen Zugtest. Dehnung ist dimensionslos, Spannung in MPa. Die ebene Gruppe liegt insgesamt höher; Residuenstrukturen unterscheiden sich. Gemeinsame Parameter erklären Haupttrends, nahe Kurven belegen aber weder Eindeutigkeit noch Validierung anderer Lastarten. [Originalgesamtfit](ref:R02)"
         }
       }

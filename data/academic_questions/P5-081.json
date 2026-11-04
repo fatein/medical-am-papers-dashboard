@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P5-081",
   "p": "P5",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-04",
   "related_paper_ids": [
@@ -29,7 +29,7 @@
     {
       "id": "R03",
       "title": "Performance of three-dimensional printed nasopharyngeal swabs for COVID-19 testing",
-      "publisher": "Mrs Bulletin",
+      "publisher": "MRS Bulletin",
       "year": 2021,
       "url": "https://doi.org/10.1557/s43577-021-00170-9",
       "kind": "paper"
@@ -115,7 +115,7 @@
         {
           "id": "failure_location",
           "title": "破坏载荷之外：断裂位置与碎裂方式",
-          "markdown": "Polymers 研究把完整打印拭子夹持后拉伸，并记录断裂位置。图中商业植绒样品在杆段断裂，打印样品在预设折断处断裂；作者报告所测打印样品均呈后一种位置。这个结果回答的是特定拉伸载荷路径下最先失效的位置。它与材料试条的强度数值不同，也不能直接回答杆体弯曲并伴随转动时会在哪里破坏。 [拉伸断裂照片及正文](ref:R02)\n\n跨设计比较提供了另一种结果：一些打印拭子具有更高的破坏载荷，却在扭转破坏时形成碎片；组合弯扭试验还观察到部分样品在预设折断处失效。预设折断处既是操作功能，也是使用载荷下可能的薄弱位置。三点折断试验中若样品从夹具滑脱，记录的是测试失效，不能记成“未断所以更安全”。 [多种设计的机械比较](ref:R03)\n\n对于断裂图像，分析应区分裂纹起始、完整分离及碎片数量。Polymers 的照片显示的是最终断口所在区域，没有连续载荷—位移过程或裂纹扩展视频。原文由单轴断裂位置进一步推导鼻腔内不会断裂，跨度超过了这张照片的观测范围；本问题需要保留的是单轴载荷路径、样品结构和破坏位置之间的关系。更高的材料强度若伴随延性下降，可能改变破坏的突然性，而非消除失效。",
+          "markdown": "Polymers 研究把完整打印拭子夹持后拉伸，并记录断裂位置。图中商业植绒样品在杆段断裂，打印样品在预设折断处断裂；作者报告所测打印样品均呈后一种位置。这个结果记录的是特定拉伸载荷路径下最终断裂分离的位置。它与材料试条的强度数值不同，也不能直接回答杆体弯曲并伴随转动时会在哪里破坏。 [拉伸断裂照片及正文](ref:R02)\n\n跨设计比较提供了另一种结果：一些打印拭子具有更高的破坏载荷，却在扭转破坏时形成碎片；组合弯扭试验还观察到部分样品在预设折断处失效。预设折断处既是操作功能，也是使用载荷下可能的薄弱位置。三点折断试验中若样品从夹具滑脱，记录的是测试失效，不能记成“未断所以更安全”。 [多种设计的机械比较](ref:R03)\n\n对于断裂图像，分析应区分裂纹起始、完整分离及碎片数量。Polymers 的照片显示的是最终断口所在区域，没有连续载荷—位移过程或裂纹扩展视频。原文由单轴断裂位置进一步推导鼻腔内不会断裂，跨度超过了这张照片的观测范围；本问题需要保留的是单轴载荷路径、样品结构和破坏位置之间的关系。更高的材料强度若伴随延性下降，可能改变破坏的突然性，而非消除失效。",
           "figure_ids": [
             "F02"
           ]
@@ -194,7 +194,7 @@
         {
           "id": "failure_location",
           "title": "Beyond breaking load: fracture location and fragmentation",
-          "markdown": "The Polymers study loaded complete printed swabs in tension and recorded fracture location. Its photograph shows a commercial flocked specimen separating along the shaft and a printed specimen at the intended breakpoint; the authors report the latter location for all tested printed specimens. This identifies where failure began under that tensile loading path. It differs from a material-coupon strength and does not establish the failure location when bending accompanies rotation. [Fracture photographs and results](ref:R02)\n\nA comparison across designs found higher breaking loads could coexist with fragmentation during torsional failure; combined bending and torsion also broke some specimens at their intended breakpoint. This feature provides a handling function while remaining a potential weak point under use-related loads. Slippage during a three-point break test invalidates the measurement; it does not demonstrate safety through survival. [Mechanical comparison across designs](ref:R03)\n\nInterpreting fracture images requires separating crack initiation, complete separation and fragment count. The Polymers photograph records the final fracture region, without a continuous force–displacement sequence or crack-propagation video. The article extends this observation to an assurance against intranasal breakage; the photograph supports the narrower relationship between loading path, specimen structure and failure location. If higher strength accompanies lower ductility, failure may become more abrupt rather than disappear.",
+          "markdown": "The Polymers study loaded complete printed swabs in tension and recorded fracture location. Its photograph shows a commercial flocked specimen separating along the shaft and a printed specimen at the intended breakpoint; the authors report the latter location for all tested printed specimens. This records where complete fracture separation occurred under that tensile loading path. It differs from a material-coupon strength and does not establish the failure location when bending accompanies rotation. [Fracture photographs and results](ref:R02)\n\nA comparison across designs found higher breaking loads could coexist with fragmentation during torsional failure; combined bending and torsion also broke some specimens at their intended breakpoint. This feature provides a handling function while remaining a potential weak point under use-related loads. Slippage during a three-point break test invalidates the measurement; it does not demonstrate safety through survival. [Mechanical comparison across designs](ref:R03)\n\nInterpreting fracture images requires separating crack initiation, complete separation and fragment count. The Polymers photograph records the final fracture region, without a continuous force–displacement sequence or crack-propagation video. The article extends this observation to an assurance against intranasal breakage; the photograph supports the narrower relationship between loading path, specimen structure and failure location. If higher strength accompanies lower ductility, failure may become more abrupt rather than disappear.",
           "figure_ids": [
             "F02"
           ]
@@ -273,7 +273,7 @@
         {
           "id": "failure_location",
           "title": "Über die Bruchlast hinaus: Bruchort und Fragmentierung",
-          "markdown": "Die Polymers-Studie belastete vollständige gedruckte Tupfer im Zugversuch und dokumentierte den Bruchort. Die Aufnahme zeigt einen kommerziellen beflockten Tupfer mit Schaftbruch und einen gedruckten Tupfer mit Bruch an der Sollbruchstelle; letzteren Ort berichten die Autoren für alle geprüften Druckproben. Damit wird der erste Versagensort unter diesem Zuglastpfad bestimmt. Das ist etwas anderes als eine Materialprobenfestigkeit und beantwortet nicht, wo bei gleichzeitiger Biegung und Drehung der Bruch auftritt. [Bruchaufnahmen und Ergebnisse](ref:R02)\n\nEin Vergleich verschiedener Bauformen fand trotz höherer Bruchlasten Fragmentierung beim Torsionsversagen; kombinierte Biegung und Torsion brachen einige Proben an der Sollbruchstelle. Diese erfüllt eine Handhabungsfunktion, bleibt aber unter Gebrauchslasten eine mögliche Schwachstelle. Verrutschen im Dreipunkt-Bruchversuch macht die Messung ungültig und belegt keine Sicherheit durch ausbleibenden Bruch. [Mechanischer Vergleich verschiedener Bauformen](ref:R03)\n\nBei Bruchbildern sind Rissbeginn, vollständige Trennung und Fragmentzahl zu unterscheiden. Die Polymers-Aufnahme zeigt den endgültigen Bruchbereich, ohne kontinuierlichen Kraft-Weg-Verlauf oder Video der Rissausbreitung. Der Artikel leitet daraus zusätzlich eine Zusicherung gegen intranasalen Bruch ab; die Aufnahme belegt enger den Zusammenhang von Lastpfad, Probenstruktur und Versagensort. Geht höhere Festigkeit mit geringerer Duktilität einher, kann der Bruch abrupter werden, ohne dass Versagen entfällt.",
+          "markdown": "Die Polymers-Studie belastete vollständige gedruckte Tupfer im Zugversuch und dokumentierte den Bruchort. Die Aufnahme zeigt einen kommerziellen beflockten Tupfer mit Schaftbruch und einen gedruckten Tupfer mit Bruch an der Sollbruchstelle; letzteren Ort berichten die Autoren für alle geprüften Druckproben. Damit wird der Ort der vollständigen Bruchtrennung unter diesem Zuglastpfad dokumentiert. Das ist etwas anderes als eine Materialprobenfestigkeit und beantwortet nicht, wo bei gleichzeitiger Biegung und Drehung der Bruch auftritt. [Bruchaufnahmen und Ergebnisse](ref:R02)\n\nEin Vergleich verschiedener Bauformen fand trotz höherer Bruchlasten Fragmentierung beim Torsionsversagen; kombinierte Biegung und Torsion brachen einige Proben an der Sollbruchstelle. Diese erfüllt eine Handhabungsfunktion, bleibt aber unter Gebrauchslasten eine mögliche Schwachstelle. Verrutschen im Dreipunkt-Bruchversuch macht die Messung ungültig und belegt keine Sicherheit durch ausbleibenden Bruch. [Mechanischer Vergleich verschiedener Bauformen](ref:R03)\n\nBei Bruchbildern sind Rissbeginn, vollständige Trennung und Fragmentzahl zu unterscheiden. Die Polymers-Aufnahme zeigt den endgültigen Bruchbereich, ohne kontinuierlichen Kraft-Weg-Verlauf oder Video der Rissausbreitung. Der Artikel leitet daraus zusätzlich eine Zusicherung gegen intranasalen Bruch ab; die Aufnahme belegt enger den Zusammenhang von Lastpfad, Probenstruktur und Versagensort. Geht höhere Festigkeit mit geringerer Duktilität einher, kann der Bruch abrupter werden, ohne dass Versagen entfällt.",
           "figure_ids": [
             "F02"
           ]
@@ -290,7 +290,7 @@
         {
           "id": "surface_measurement",
           "title": "Oberflächenrauheit: Messort und Abweichungen zwischen Grafik und Text",
-          "markdown": "Die Rauheit wurde axial am Tupferhals gemessen; die vertikale Achse zeigt Ra. Kleinere Schichtdicken ergaben insgesamt geringere Oberflächenunregelmäßigkeiten. Längere Nachhärtung bei gleicher Schichtdicke verringerte die Rauheit dagegen nicht in allen Kombinationen einheitlich. Fertigungsbedingungen, Rezeptur und Oberflächenantwort folgen daher keiner einzigen monotonen Beziehung. Gemessen wurde der Hals, nicht die gesamte Kopfoberfläche. [Rauheitsmessung und Figure 19](ref:R02)\n\nDie rote gestrichelte Linie markiert das kommerzielle Vergleichsprodukt mit 0.923 μm. Bei der kleinsten Schichtdicke beträgt der blaue Mittelwert 1.602 μm und der gelbe 2.497 μm; beide Druckgruppen liegen somit über dem Vergleichsprodukt. Der Text nennt zusätzlich ein Minimum von 0.98 μm, das sich weder den dort genannten Gruppenminima noch den dargestellten Balken zuordnen lässt. Daraus lässt sich keine Gleichwertigkeit der Oberflächen ableiten. Interpretierbar sind die im Diagramm lokalisierbaren Gruppenmittelwerte mit ihren Fehlerbalken.\n\nRa beschreibt die Variation der Profilhöhe und misst weder Reibung noch Schleimhautverletzung oder Schmerz unmittelbar. Einige ANOVA-Passagen bezeichnen zudem F-Werte oberhalb des kritischen Werts als „niedriger“; Grafik und Statistiktext sind getrennt zu lesen. Vergleiche müssen Messort und Messrichtung erhalten und Mittelwertverschiebungen von Streuung unterscheiden. Ein lokaler scharfkantiger Vorsprung kann in einem mittleren Rauheitswert verborgen bleiben.",
+          "markdown": "Die Rauheit wurde axial am Tupferhals gemessen; die vertikale Achse zeigt Ra. Kleinere Schichtdicken ergaben insgesamt geringere Oberflächenunregelmäßigkeiten. Längere Nachhärtung bei gleicher Schichtdicke verringerte die Rauheit dagegen nicht in allen Kombinationen einheitlich. Fertigungsbedingungen, Rezeptur und Oberflächenantwort folgen daher keiner einzigen monotonen Beziehung. Gemessen wurde der Hals, nicht die gesamte Kopfoberfläche. [Rauheitsmessung und Abbildung 19](ref:R02)\n\nDie rote gestrichelte Linie markiert das kommerzielle Vergleichsprodukt mit 0.923 μm. Bei der kleinsten Schichtdicke beträgt der blaue Mittelwert 1.602 μm und der gelbe 2.497 μm; beide Druckgruppen liegen somit über dem Vergleichsprodukt. Der Text nennt zusätzlich ein Minimum von 0.98 μm, das sich weder den dort genannten Gruppenminima noch den dargestellten Balken zuordnen lässt. Daraus lässt sich keine Gleichwertigkeit der Oberflächen ableiten. Interpretierbar sind die im Diagramm lokalisierbaren Gruppenmittelwerte mit ihren Fehlerbalken.\n\nRa beschreibt die Variation der Profilhöhe und misst weder Reibung noch Schleimhautverletzung oder Schmerz unmittelbar. Einige ANOVA-Passagen bezeichnen zudem F-Werte oberhalb des kritischen Werts als „niedriger“; Grafik und Statistiktext sind getrennt zu lesen. Vergleiche müssen Messort und Messrichtung erhalten und Mittelwertverschiebungen von Streuung unterscheiden. Ein lokaler scharfkantiger Vorsprung kann in einem mittleren Rauheitswert verborgen bleiben.",
           "figure_ids": [
             "F05"
           ]
@@ -298,7 +298,7 @@
         {
           "id": "dimensional_bias",
           "title": "Maßgenauigkeit: radiale Vergrößerung bei gleichzeitiger axialer Verkürzung",
-          "markdown": "In Figure 22 sind die Abweichungen von Hals-, Kopf- und Basisdurchmesser überwiegend positiv, die der Kopflänge dagegen negativ. Die Achse heißt absolute error, doch die Formel lautet Messwert minus Konstruktionswert, und negative Werte bleiben erhalten. Es handelt sich um eine vorzeichenbehaftete Maßabweichung. Eine Übersetzung als absoluter Fehlerbetrag würde die Verkürzungsrichtung löschen. [Maßdefinitionen und Figure 22](ref:R02)\n\nGeringere Schichtdicke verbesserte nicht jede Abmessung: Die axiale Verkürzung wurde ausgeprägter. Die größten berichteten Längenabweichungen der Harze betrugen −0.21 und −0.274 mm. Die Durchmesserabweichungen änderten sich bei derselben Variablen nicht gleichgerichtet. Eine über die Bauhöhe aufsummierte Länge hat andere Fehlerquellen als ein innerhalb einer Schicht gebildeter Durchmesser. Feinere Schichten bedeuten daher nicht, dass sämtliche Maße näher am Entwurf liegen.\n\nDer Fließtext vertauscht zudem die Sollwerte von Kopfdurchmesser und Kopflänge; diese Aufzählung wird hier nicht als Maßspezifikation wiedergegeben. Der vorgeschlagene klinische Genauigkeitsgrenzwert stammt aus einer Untersuchung anderer Druckobjekte und gilt nicht automatisch als Akzeptanzkriterium für alle Tupferbereiche. Mechanisch verändern Halsdurchmesserabweichungen die Biegung, Übergangsabweichungen können lokale Spannungen beeinflussen, und axiale Verkürzung verändert relative Positionen. Jedes Maß benötigt Vorzeichen, Ort und mechanische Funktion; Maßkonformität und klinische Ereignisraten bleiben unterschiedliche Datensätze.",
+          "markdown": "In Abbildung 22 sind die Abweichungen von Hals-, Kopf- und Basisdurchmesser überwiegend positiv, die der Kopflänge dagegen negativ. Die Achse heißt absolute error, doch die Formel lautet Messwert minus Konstruktionswert, und negative Werte bleiben erhalten. Es handelt sich um eine vorzeichenbehaftete Maßabweichung. Eine Übersetzung als absoluter Fehlerbetrag würde die Verkürzungsrichtung löschen. [Maßdefinitionen und Abbildung 22](ref:R02)\n\nGeringere Schichtdicke verbesserte nicht jede Abmessung: Die axiale Verkürzung wurde ausgeprägter. Die größten berichteten Längenabweichungen der Harze betrugen −0.21 und −0.274 mm. Die Durchmesserabweichungen änderten sich bei derselben Variablen nicht gleichgerichtet. Eine über die Bauhöhe aufsummierte Länge hat andere Fehlerquellen als ein innerhalb einer Schicht gebildeter Durchmesser. Feinere Schichten bedeuten daher nicht, dass sämtliche Maße näher am Entwurf liegen.\n\nDer Fließtext vertauscht zudem die Sollwerte von Kopfdurchmesser und Kopflänge; diese Aufzählung wird hier nicht als Maßspezifikation wiedergegeben. Der vorgeschlagene klinische Genauigkeitsgrenzwert stammt aus einer Untersuchung anderer Druckobjekte und gilt nicht automatisch als Akzeptanzkriterium für alle Tupferbereiche. Mechanisch verändern Halsdurchmesserabweichungen die Biegung, Übergangsabweichungen können lokale Spannungen beeinflussen, und axiale Verkürzung verändert relative Positionen. Jedes Maß benötigt Vorzeichen, Ort und mechanische Funktion; Maßkonformität und klinische Ereignisraten bleiben unterschiedliche Datensätze.",
           "figure_ids": [
             "F06"
           ]
@@ -312,27 +312,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Original Figure 2: Zugantwort und Schaftbiegung",
+          "caption": "Originalabbildung 2: Zugantwort und Schaftbiegung",
           "interpretation": "a und b zeigen Zugkurven und Elastizitätsmodul, c und d Kraft-Durchbiegungs-Kurven und Biegesteifigkeit. Das graue Vergleichsprodukt hat den höchsten Modul, aber die geringste Biegesteifigkeit. Der Übergang von Blau zu Orange zeigt nach Behandlung höheren Biegewiderstand. Jede Linie in a entspricht einer Probe; das Fortlaufen der grauen Kurven im dargestellten Bereich kennzeichnet keinen Bruch."
         },
         "F02": {
-          "caption": "Original Figure 12: Bruchorte nach einachsigem Zug",
+          "caption": "Originalabbildung 12: Bruchorte nach einachsigem Zug",
           "interpretation": "A zeigt eine kommerzielle beflockte Probe, B eine gedruckte. Rote Kreise markieren unterschiedliche Bruchbereiche bei dargestellter Einspannung und Lastrichtung. Die Aufnahme verfolgt weder die Rissausbreitung bei kombinierter Biegung und Torsion noch die Fragmentzahl."
         },
         "F03": {
-          "caption": "Original Figure 14: Biegefestigkeit der Harzproben",
+          "caption": "Originalabbildung 14: Biegefestigkeit der Harzproben",
           "interpretation": "Grau bezeichnet PLA PRO, Grün dental non-castable resin. Die horizontale Achse zeigt Schichtdicke, die Farbabstufung Nachhärtungsgruppen. Graue Balken sind insgesamt höher; der höchste grüne Balken liegt jedoch nicht in derselben Gruppe wie der höchste graue. Das zeigt rezepturabhängige Fertigungsreaktionen. MPa bezeichnet nicht die zum Biegen des fertigen Schafts erforderliche Kraft."
         },
         "F04": {
-          "caption": "Original Figure 15: Biegemodul der entsprechenden Materialproben",
+          "caption": "Originalabbildung 15: Biegemodul der entsprechenden Materialproben",
           "interpretation": "Zusammen mit der vorigen Grafik zeigt sich für die grauen Gruppen neben höherer Festigkeit auch ein höherer Modul. Dargestellt ist die Materialantwort gegen Biegung bei kleiner Verformung, mit anderer Einheit und geometrischer Bedeutung als die Schaftbiegesteifigkeit in N·mm²."
         },
         "F05": {
-          "caption": "Original Figure 19: axiale Rauheit am Tupferhals",
+          "caption": "Originalabbildung 19: axiale Rauheit am Tupferhals",
           "interpretation": "Graue und grüne Balken unterscheiden die Harze; blaue und gelbe Linien verbinden Mittelwerte über Nachhärtungsgruppen. Rot gestrichelt ist das kommerzielle Vergleichsprodukt. Der Gesamtanstieg folgt der Schichtdicke, bei Streuung innerhalb der Gruppen. Die Mittelwertlinien sind keine Alterungsverläufe."
         },
         "F06": {
-          "caption": "Original Figure 22: vorzeichenbehaftete Maßabweichungen an verschiedenen Stellen",
+          "caption": "Originalabbildung 22: vorzeichenbehaftete Maßabweichungen an verschiedenen Stellen",
           "interpretation": "A zeigt Halsdurchmesser, B Kopfdurchmesser, C Basisdurchmesser und D Kopflänge. Die Durchmessergruppen liegen überwiegend über null, D darunter. D hat außerdem einen anderen vertikalen Wertebereich; optische Balkenhöhen sind nicht unmittelbar vergleichbar. Die Verkürzungsrichtung muss in der Übersetzung erhalten bleiben."
         }
       }

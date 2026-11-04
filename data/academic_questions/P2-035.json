@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P2-035",
   "p": "P2",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-04",
   "related_paper_ids": [
@@ -225,7 +225,7 @@
         {
           "id": "compliance_force",
           "title": "柔性关节改善适应性，同时带来驱动力与耐久代价",
-          "markdown": "Mohammadi 等的 X-Limb 用 TPU90、Shore 90A 材料打印柔性关节，手指填充率 30%、手掌 20%，喷嘴 220°C。封闭薄膜包住关节与腱索，减少外物卡入；拇指预设位置配合各指运动实现强力握、指尖捏和三指捏。手部含驱动和控制部件质量 253 g，加快拆腕为 313 g。两路肌电负责开合，握型由独立按钮选择，属于明确的控制分工。[结构、握力和循环试验](ref:R02)\n\n经砝码校准的力敏电阻测得指尖捏力 10.2±0.4 N；直径 40 mm 圆柱上的强力握为 21.5±1.2 N，两者均重复 50 次。这些是同装置重复测量，不能当作使用者间样本。完全屈曲需 1.3 s；改变传动比可更快，却减少抓握力。0.5 mm 包覆膜约使抗扭刚度加倍，但也提高起始弯曲的腱索力，随后膜屈曲折叠，力—角关系呈非线性。减少侧向扭转与降低驱动负担并不是同一优化方向。\n\n单根手指经历 45000 次屈伸后，膜上出现裂纹，关节及驱动仍能工作。该试验没有证明完整假手持续临床使用无损；展示完成 AM-ULA 相关动作，也没有给出患者队列的量表改善。图示携带重物依赖电机制动后的钩挂方式，不能将其与主动捏力或圆柱握力互换。",
+          "markdown": "Mohammadi 等的 X-Limb 用 TPU90、Shore 90A 材料打印柔性关节，手指填充率 30%、手掌 20%，喷嘴 220°C。封闭薄膜包住关节与腱索，减少外物卡入；拇指的转轴设计使其在单个驱动器牵引下向掌心运动，并与其他手指协调形成强力握、指尖捏和三指捏，无需另发拇指预定位指令。手部含驱动和控制部件质量 253 g，加快拆腕为 313 g。两路肌电负责开合，握型由独立按钮选择，属于明确的控制分工。[结构、握力和循环试验](ref:R02)\n\n经砝码校准的力敏电阻测得指尖捏力 10.2±0.4 N；直径 40 mm 圆柱上的强力握为 21.5±1.2 N，两者均重复 50 次。这些是同装置重复测量，不能当作使用者间样本。完全屈曲需 1.3 s；改变传动比可更快，却减少抓握力。0.5 mm 包覆膜约使抗扭刚度加倍，但也提高起始弯曲的腱索力，随后膜屈曲折叠，力—角关系呈非线性。减少侧向扭转与降低驱动负担并不是同一优化方向。\n\n单根手指经历 45000 次屈伸后，膜上出现裂纹，关节及驱动仍能工作。该试验没有证明完整假手持续临床使用无损；展示完成 AM-ULA 相关动作，也没有给出患者队列的量表改善。图示携带重物依赖电机制动后的钩挂方式，不能将其与主动捏力或圆柱握力互换。",
           "figure_ids": [
             "F03",
             "F04"
@@ -262,27 +262,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Andrés-Esperanza et al.：最快记录组合与使用者平均成绩",
+          "caption": "Figure 9 · Andrés-Esperanza et al.：最快记录组合与使用者平均成绩",
           "interpretation": "横轴为四种手，纵轴为简化 SHAP 的 LIF 指数。彩色柱把各任务跨使用者最快记录组合，黑横线与误差线才是使用者指数的均值和标准差。Lb-0 最佳组合为 31.2、平均为 15.7；IMMA 分别为 29.5、22.1，最佳与平均排序不同。柱高不是单名使用者完成所有生活任务的能力，更不是患者恢复比例；它显示机构在最有利试次下的潜力和使用者表现之间仍有距离。[原图和评分方法](ref:R01)"
         },
         "F02": {
-          "caption": "Andrés-Esperanza et al.：时间评分与握型保持评分的差异",
+          "caption": "Figure 10 · Andrés-Esperanza et al.：时间评分与握型保持评分的差异",
           "interpretation": "左图为 SHAP 时间转换分数，右图为 AHAP 各握型分数；各辐射轴对应球形、强力、三指、侧捏、指尖捏和伸展握。左图三指任务均为 0 分，右图却有较高三指握评分：前者超过健康参考的时限即可归零，后者由试验员放置物体后考察握型和保持。两图不构成矛盾，也不能用右图的成功替代自主取物速度。对薄片，手指过度屈曲与接触位置比总关节数更直接限制完成方式。[两种协议的分项对照](ref:R01)"
         },
         "F03": {
-          "caption": "Mohammadi et al.：包覆膜对关节抗扭响应的影响",
+          "caption": "Fig 10 · Mohammadi et al.：包覆膜对关节抗扭响应的影响",
           "interpretation": "横轴是扭转角，纵轴是扭矩 N·mm。紫色菱形为有膜，黑色星形为无膜；相同角度下有膜结构需要约双倍扭矩，说明能更强地限制偏离设计平面的扭转。此处测试的是扭转，而非手指主动屈曲角或抓握力；有膜结构更抗扭并不代表电机可以省力。结合弯曲实验中的初始阻力，膜厚需要同时满足侧向稳定和屈曲驱动需求。[关节测试](ref:R02)"
         },
         "F04": {
-          "caption": "Mohammadi et al.：循环屈伸后的膜裂纹",
+          "caption": "Fig 16 · Mohammadi et al.：循环屈伸后的膜裂纹",
           "interpretation": "左侧是循环前，中部是循环后，右侧为圈定区域放大；原图保留 3 mm 标示。45000 次后细小膜裂纹可见，但腱索和柔性关节仍能运动，因此“仍能开合”和“结构完整”是不同终点。此图来自单指重复屈伸，不包含汗液、撞击和完整接受腔的长期穿戴组合。它支持具体构件的损伤观察，不能把按每日动作次数换算的预计年限当作实测服役时间。[耐久试验](ref:R02)"
         },
         "F05": {
-          "caption": "Min-Yong Lee et al.：单指缺失的残存结构、驱动与打字任务",
+          "caption": "Figure 3 · Min-Yong Lee et al.：单指缺失的残存结构、驱动与打字任务",
           "interpretation": "A 显示患者 2 的左示指近节残存骨与其余手指，B 显示腕带—腱索连接和屈伸位置，C 是键盘任务。装置利用保留的掌指关节带动远端，不需要覆盖全部手掌或替代其余手指的触觉。画面说明为何这种构型能针对按键提供接触点，却不能从照片推算打字速度；改善的量化依据是病例表中的任务自评分与手功能时间。[病例原图及评分](ref:R03)"
         },
         "F06": {
-          "caption": "Ku et al.：单通道肌电命令序列；图由 Sangho Yi 提供，© Korean Society of Plastic and Reconstructive Surgeons",
+          "caption": "Fig. 3 · Ku et al.：单通道肌电命令序列；图由 Sangho Yi 提供，© Korean Society of Plastic and Reconstructive Surgeons",
           "interpretation": "图中 Stage 0–5 为预设手势状态，箭头表示切换方向；1.5 s 与 2.5 s 的收缩/放松组合用于调用不同姿态。框内还注明肌电信号相对移动基线的阈值判断，不能把这些示意方波当作原始肌电波形或识别准确率。该控制把复杂性从更多传感器转移到时间命令学习，适用于解释为何使用熟悉过程会影响功能评价。[原控制图](ref:R04) 原图供图者姓名按正式更正使用 Sangho Yi。[署名更正](ref:R05)"
         }
       }
@@ -303,7 +303,7 @@
         {
           "id": "compliance_force",
           "title": "Compliant joints improve adaptation while imposing force and durability trade-offs",
-          "markdown": "Mohammadi et al. printed X-Limb flexure joints in TPU90, Shore 90A, using 30% finger infill, 20% palm infill and a 220°C nozzle. Enclosing membranes cover joints and tendons to reduce snagging. Thumb preshaping coordinated with finger motion produces power, tip and tripod grasps. The hand, including actuation and control, weighs 253 g, or 313 g with the quick-disconnect wrist. Two myoelectric channels command opening/closing while a separate button selects grasp type.[Structure, grip-force and cyclic tests](ref:R02)\n\nWeight-calibrated force-sensitive resistors measured 10.2±0.4 N tip pinch and 21.5±1.2 N power grip around a 40 mm cylinder, each repeated 50 times. These are repeated measurements of a device, not a sample of users. Full flexion required 1.3 s; altered gearing increased speed at the expense of force. A 0.5 mm membrane approximately doubled torsional stiffness but also increased the tendon force needed to initiate bending. Subsequent membrane buckling and folding produced a nonlinear force–angle relation. Resisting lateral twist and minimizing actuator demand are different design objectives.\n\nAfter 45000 flexion–extension cycles of a single finger, membrane cracks appeared while joints and actuation remained functional. This does not establish damage-free clinical service of a complete hand. Demonstrations of AM-ULA-related activities likewise provided no patient-cohort improvement scores. Carrying a heavy object used a hook-like grip with motor braking, which cannot be equated with active pinch or cylindrical grip force.",
+          "markdown": "Mohammadi et al. printed X-Limb flexure joints in TPU90, Shore 90A, using 30% finger infill, 20% palm infill and a 220°C nozzle. Enclosing membranes cover joints and tendons to reduce snagging. The thumb-axis geometry couples its motion toward the palm with a single actuator; coordination with the other fingers produces power, tip and tripod grasps without an additional thumb-preshaping command. The hand, including actuation and control, weighs 253 g, or 313 g with the quick-disconnect wrist. Two myoelectric channels command opening/closing while a separate button selects grasp type.[Structure, grip-force and cyclic tests](ref:R02)\n\nWeight-calibrated force-sensitive resistors measured 10.2±0.4 N tip pinch and 21.5±1.2 N power grip around a 40 mm cylinder, each repeated 50 times. These are repeated measurements of a device, not a sample of users. Full flexion required 1.3 s; altered gearing increased speed at the expense of force. A 0.5 mm membrane approximately doubled torsional stiffness but also increased the tendon force needed to initiate bending. Subsequent membrane buckling and folding produced a nonlinear force–angle relation. Resisting lateral twist and minimizing actuator demand are different design objectives.\n\nAfter 45000 flexion–extension cycles of a single finger, membrane cracks appeared while joints and actuation remained functional. This does not establish damage-free clinical service of a complete hand. Demonstrations of AM-ULA-related activities likewise provided no patient-cohort improvement scores. Carrying a heavy object used a hook-like grip with motor braking, which cannot be equated with active pinch or cylindrical grip force.",
           "figure_ids": [
             "F03",
             "F04"
@@ -340,27 +340,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Andrés-Esperanza et al.: composite fastest records versus user means",
+          "caption": "Figure 9 · Andrés-Esperanza et al.: composite fastest records versus user means",
           "interpretation": "The horizontal axis lists the four hands; the vertical axis is reduced-SHAP LIF. Colored bars combine the fastest task records across users, whereas black horizontal lines and error bars show mean and SD of individual user indices. Lb-0 reaches 31.2 for the composite best case but 15.7 on average; IMMA reaches 29.5 and 22.1, reversing the ranking. Bar height is neither one person's ability across all daily tasks nor a patient recovery percentage. It separates best-case mechanism potential from typical observed user performance.[Original figure and scoring](ref:R01)"
         },
         "F02": {
-          "caption": "Andrés-Esperanza et al.: differences between timed-task and grasp-retention scores",
+          "caption": "Figure 10 · Andrés-Esperanza et al.: differences between timed-task and grasp-retention scores",
           "interpretation": "The left plot shows SHAP transformed-time scores; the right shows AHAP scores by grip. Radial axes represent spherical, power, tripod, lateral, tip and extension grasps. Tripod tasks score 0 on the left but receive substantial scores on the right: exceeding a healthy-reference time limit produces zero in the timed test, whereas the other protocol examines grip form and retention after examiner placement. These are different endpoints, not contradictory outcomes. Successful retention cannot substitute for independent acquisition speed. For thin plates, excessive flexion and contact location directly constrain task execution.[Protocol-specific comparison](ref:R01)"
         },
         "F03": {
-          "caption": "Mohammadi et al.: membrane effects on joint torsional response",
+          "caption": "Fig 10 · Mohammadi et al.: membrane effects on joint torsional response",
           "interpretation": "The horizontal axis is twist angle and the vertical axis torque in N·mm. Purple diamonds denote membrane enclosure, black stars no membrane. At equal angles, enclosed joints require approximately twice the torque, indicating stronger resistance to unwanted out-of-plane twist. This tests torsion, not active finger-flexion angle or grasp force. Greater torsional resistance does not mean reduced motor effort. Together with initial resistance in bending tests, it establishes competing requirements for lateral stability and flexion actuation.[Joint testing](ref:R02)"
         },
         "F04": {
-          "caption": "Mohammadi et al.: membrane cracks after cyclic flexion–extension",
+          "caption": "Fig 16 · Mohammadi et al.: membrane cracks after cyclic flexion–extension",
           "interpretation": "Left shows the finger before cycling, center after cycling and right the circled region enlarged, retaining the original 3 mm annotation. Small membrane cracks are visible after 45000 cycles while tendon and flexure joints still move. Continued opening/closing and structural integrity are therefore separate endpoints. This was repetitive cycling of one finger, without the combined effects of perspiration, impacts and prolonged use of a complete socket. It documents component damage; a lifetime extrapolated from assumed daily movements is not measured service duration.[Durability test](ref:R02)"
         },
         "F05": {
-          "caption": "Min-Yong Lee et al.: residual anatomy, actuation and typing after single-finger loss",
+          "caption": "Figure 3 · Min-Yong Lee et al.: residual anatomy, actuation and typing after single-finger loss",
           "interpretation": "A shows patient 2's residual left index proximal phalanx and remaining digits; B shows wrist-strap/tendon coupling and flexed/extended positions; C shows keyboard use. Preserved metacarpophalangeal movement drives the distal mechanism without covering the whole palm or replacing sensation in other fingers. This explains a task-specific contact point for key pressing, but photographs do not quantify typing speed. Quantified improvement comes from task self-ratings and timed hand-function testing in the case tables.[Case figure and assessments](ref:R03)"
         },
         "F06": {
-          "caption": "Ku et al.: single-channel command sequences; figure courtesy of Sangho Yi, © Korean Society of Plastic and Reconstructive Surgeons",
+          "caption": "Fig. 3 · Ku et al.: single-channel command sequences; figure courtesy of Sangho Yi, © Korean Society of Plastic and Reconstructive Surgeons",
           "interpretation": "Stages 0–5 represent predefined postures and arrows show switching directions. Contraction/relaxation patterns of 1.5 s and 2.5 s call different postures. The box specifies thresholding relative to a moving baseline; schematic square waves are neither raw EMG recordings nor classification accuracy. This scheme moves complexity from additional sensors to learning timed commands, explaining why familiarization can influence function assessment.[Original control diagram](ref:R04) The contributor's name is given as Sangho Yi following the formal correction.[Attribution correction](ref:R05)"
         }
       }
@@ -372,7 +372,7 @@
         {
           "id": "thumb_control",
           "title": "Unabhängige Daumensteuerung ist wichtiger als die reine Gelenkzahl",
-          "markdown": "Andrés-Esperanza et al. verglichen verwandte gedruckte Handmechanismen. Dextrus koppelte Daumenbeugung und Abduktion über einen Seilzug; IMMA nutzte getrennte Seilzüge für Beugung und Abduktion im Daumensattelgelenk; Lb-0 und Lb-45 fixierten die Daumenbasis bei unterschiedlicher palmarer Abduktion. Adapter für nicht amputierte Personen erlaubten das Ziehen der Seilzüge. 3 Personen absolvierten den verkürzten SHAP, weitere 1 Person den AHAP. Obwohl der ursprüngliche Limbitless-Entwurf sämtliche Finger gemeinsam antrieb, wurden im Versuch alle Finger unabhängig gezogen. Verglichen wurden daher Mechanismen unter festgelegten Steuerbedingungen, keine Patienteneffekte der ursprünglichen Komplettgeräte.[Entwurf und Prüfbedingungen](ref:R01)\n\nDer verkürzte SHAP erfasste Bearbeitungszeiten für nur 6 leichte abstrakte Objekte. Die mittleren Aufgabenzeiten betrugen 10.42 s für IMMA, 11.25 s für Lb-0, 13.71 s für Dextrus und 16.49 s für Lb-45. Ein aus den jeweils schnellsten Einzelaufgaben zusammengesetzter Index begünstigte dagegen Lb-0 mit 31.2 gegenüber IMMA mit 29.5. Bestleistung und mittlere Zeit beantworten unterschiedliche Fragen. Beim AHAP legte die Versuchsleitung das Objekt in die Hand; es wurde 3 s mit der Handfläche nach oben und anschließend 3 s nach unten gehalten, jeweils 3 Wiederholungen pro Objekt. Dies prüft Griffform und Halten, nicht das selbstständige Aufnehmen vom Tisch.\n\nDie AHAP-Gesamtwerte betrugen 56% für IMMA, 48% für Lb-0, 48% für Lb-45 und 44% für Dextrus. Unabhängige und gekoppelte Betätigung lieferten trotz gleicher Daumenfreiheitsgrade unterschiedliche Ergebnisse. Ein höherer Gesamtwert galt nicht für jede Griffart: IMMA war beim Seitengriff besser, Lb-0 beim Spitzgriff; dünne Platten und Dreipunktgriffe blieben schwierig.",
+          "markdown": "Andrés-Esperanza et al. verglichen verwandte gedruckte Handmechanismen. Dextrus koppelte Daumenbeugung und Abduktion über einen Seilzug; IMMA nutzte getrennte Seilzüge für Beugung und Abduktion im Daumensattelgelenk; Lb-0 und Lb-45 fixierten die Daumenbasis bei unterschiedlicher palmarer Abduktion. Adapter für nicht amputierte Personen erlaubten das Ziehen der Seilzüge. 3 Personen absolvierten den verkürzten SHAP, eine weitere Person den AHAP. Obwohl der ursprüngliche Limbitless-Entwurf sämtliche Finger gemeinsam antrieb, wurden im Versuch alle Finger unabhängig gezogen. Verglichen wurden daher Mechanismen unter festgelegten Steuerbedingungen, keine Patienteneffekte der ursprünglichen Komplettgeräte.[Entwurf und Prüfbedingungen](ref:R01)\n\nDer verkürzte SHAP erfasste Bearbeitungszeiten für nur 6 leichte abstrakte Objekte. Die mittleren Aufgabenzeiten betrugen 10.42 s für IMMA, 11.25 s für Lb-0, 13.71 s für Dextrus und 16.49 s für Lb-45. Ein aus den jeweils schnellsten Einzelaufgaben zusammengesetzter Index begünstigte dagegen Lb-0 mit 31.2 gegenüber IMMA mit 29.5. Bestleistung und mittlere Zeit beantworten unterschiedliche Fragen. Beim AHAP legte die Versuchsleitung das Objekt in die Hand; es wurde 3 s mit der Handfläche nach oben und anschließend 3 s nach unten gehalten, jeweils 3 Wiederholungen pro Objekt. Dies prüft Griffform und Halten, nicht das selbstständige Aufnehmen vom Tisch.\n\nDie AHAP-Gesamtwerte betrugen 56% für IMMA, 48% für Lb-0, 48% für Lb-45 und 44% für Dextrus. Unabhängige und gekoppelte Betätigung lieferten trotz gleicher Daumenfreiheitsgrade unterschiedliche Ergebnisse. Ein höherer Gesamtwert galt nicht für jede Griffart: IMMA war beim Seitengriff besser, Lb-0 beim Spitzgriff; dünne Platten und Dreipunktgriffe blieben schwierig.",
           "figure_ids": [
             "F01",
             "F02"
@@ -381,7 +381,7 @@
         {
           "id": "compliance_force",
           "title": "Nachgiebige Gelenke verbessern die Anpassung, beanspruchen aber Antrieb und Haltbarkeit",
-          "markdown": "Mohammadi et al. fertigten die nachgiebigen Gelenke von X-Limb aus TPU90 mit Shore 90A, 30% Fingerfüllung, 20% Handflächenfüllung und 220°C Düsentemperatur. Geschlossene Membranen um Gelenke und Seilzüge vermindern das Verfangen von Gegenständen. Daumenvorpositionierung und koordinierte Fingerbewegung ermöglichen Kraft-, Spitz- und Dreipunktgriff. Einschließlich Antrieb und Steuerung wiegt die Hand 253 g, mit Schnellwechselgelenk 313 g. Zwei Muskelaktivitätskanäle steuern Öffnen und Schließen; eine separate Taste wählt die Griffart.[Aufbau, Greifkraft und zyklische Prüfung](ref:R02)\n\nMit Gewichten kalibrierte kraftabhängige Widerstände erfassten 10.2±0.4 N Spitzgriffkraft und 21.5±1.2 N Kraftgriff an einem 40-mm-Zylinder, jeweils in 50 Wiederholungen. Dies sind Wiederholungsmessungen eines Geräts, keine Nutzerstichprobe. Vollständige Beugung dauerte 1.3 s; eine andere Übersetzung erhöhte das Tempo zulasten der Kraft. Eine 0.5-mm-Membran verdoppelte ungefähr die Torsionssteifigkeit, erhöhte aber auch die zum Beugungsbeginn erforderliche Seilkraft. Nachfolgendes Beulen und Falten der Membran erzeugte eine nichtlineare Kraft-Winkel-Beziehung. Seitenverdrehung zu verhindern und den Antriebsbedarf zu minimieren sind unterschiedliche Entwurfsziele.\n\nNach 45000 Beuge-Streck-Zyklen eines einzelnen Fingers entstanden Membranrisse, während Gelenke und Antrieb funktionsfähig blieben. Dies belegt keinen schadensfreien klinischen Dauergebrauch einer vollständigen Hand. Auch Demonstrationen AM-ULA-bezogener Tätigkeiten lieferten keine Verbesserungswerte einer Patientenkohorte. Das Tragen schwerer Gegenstände nutzte einen hakenartigen Griff bei gebremstem Motor; dies ist nicht mit aktiver Spitz- oder Zylindergriffkraft gleichzusetzen.",
+          "markdown": "Mohammadi et al. fertigten die nachgiebigen Gelenke von X-Limb aus TPU90 mit Shore 90A, 30% Fingerfüllung, 20% Handflächenfüllung und 220°C Düsentemperatur. Geschlossene Membranen um Gelenke und Seilzüge vermindern das Verfangen von Gegenständen. Die Geometrie der Daumenachse ermöglicht mit einem einzelnen Antrieb eine Bewegung zur Handfläche; die Abstimmung mit den übrigen Fingern erzeugt Kraft-, Spitz- und Dreipunktgriffe ohne zusätzlichen Befehl zur Daumenvorpositionierung. Einschließlich Antrieb und Steuerung wiegt die Hand 253 g, mit Schnellwechselgelenk 313 g. Zwei Muskelaktivitätskanäle steuern Öffnen und Schließen; eine separate Taste wählt die Griffart.[Aufbau, Greifkraft und zyklische Prüfung](ref:R02)\n\nMit Gewichten kalibrierte kraftabhängige Widerstände erfassten 10.2±0.4 N Spitzgriffkraft und 21.5±1.2 N Kraftgriff an einem 40-mm-Zylinder, jeweils in 50 Wiederholungen. Dies sind Wiederholungsmessungen eines Geräts, keine Nutzerstichprobe. Vollständige Beugung dauerte 1.3 s; eine andere Übersetzung erhöhte das Tempo zulasten der Kraft. Eine 0.5-mm-Membran verdoppelte ungefähr die Torsionssteifigkeit, erhöhte aber auch die zum Beugungsbeginn erforderliche Seilkraft. Nachfolgendes Beulen und Falten der Membran erzeugte eine nichtlineare Kraft-Winkel-Beziehung. Seitenverdrehung zu verhindern und den Antriebsbedarf zu minimieren sind unterschiedliche Entwurfsziele.\n\nNach 45000 Beuge-Streck-Zyklen eines einzelnen Fingers entstanden Membranrisse, während Gelenke und Antrieb funktionsfähig blieben. Dies belegt keinen schadensfreien klinischen Dauergebrauch einer vollständigen Hand. Auch Demonstrationen AM-ULA-bezogener Tätigkeiten lieferten keine Verbesserungswerte einer Patientenkohorte. Das Tragen schwerer Gegenstände nutzte einen hakenartigen Griff bei gebremstem Motor; dies ist nicht mit aktiver Spitz- oder Zylindergriffkraft gleichzusetzen.",
           "figure_ids": [
             "F03",
             "F04"
@@ -390,7 +390,7 @@
         {
           "id": "partial_finger_tasks",
           "title": "Der Nutzen einer Fingerprothese kann auf individuell gewählte Aufgaben begrenzt sein",
-          "markdown": "Min-Yong Lee et al. nutzten erhaltene Grundgelenkbewegung, um über ein Gestänge und einen am Handgelenk befestigten Seilzug eine gedruckte Fingerspitze anzutreiben. Die parametrische Anpassung beruhte auf 9 Maßen; starre Teile bestanden aus ABS, weiche aus TPU. Die genannten 1 Tag Fertigung entsprechen nicht der gesamten Versorgung einschließlich Untersuchung, Anpassung und Training. Klinische Ergebnisse sind nach Rehabilitationsphase zu trennen.[Fälle und originale Bewertungstabellen](ref:R03)\n\nPatientin 1 war 25 Jahre alt und hatte Zeige- und Mittelfinger auf Höhe des proximalen Interphalangealgelenks verloren. Nach zunächst 2 Monaten Handrehabilitation folgte bei wiederhergestellter Beweglichkeit 1 Monat Prothesentraining. Leistung/Zufriedenheit beim Kochen stiegen vor/nach Anpassung von 1/1 auf 7/7; Tippen blieb bei 8/8. Im Box-and-Block-Test sank der Wert von 55 auf 49; die JHFT-Gesamtzeit verkürzte sich von 63.68 s auf 56.35 s und lag damit nahe den ursprünglichen 56.40 s vor dem Training. Frühe Schmerz- und Beweglichkeitsverbesserungen sind nicht vollständig der Prothese zuzuschreiben; der Gewinn beim Kochen gilt nicht automatisch für sämtliche Handfunktionen.\n\nPatient 2 war 26 Jahre alt, hatte einen Zeigefinger verloren und besaß uneingeschränkte Grundgelenkbeweglichkeit. Nach 1 Monat Training sank die JHFT-Zeit von 105.51 s auf 65.13 s; Leistung/Zufriedenheit beim Tippen stiegen von 3/3 auf 8/8, während Gitarrenspiel bei 1/1 blieb. Kürzere JHFT-Zeiten und höhere COPM-Werte bedeuten Verbesserung; die Bewertungsrichtungen unterscheiden sich. Gemeinsam stützen die Fälle aufgabenspezifische Unterstützung, wobei Restanatomie, Trainingsausgangslage und Aufgabenanforderung mit unterschiedlichen Reaktionen einhergehen.",
+          "markdown": "Min-Yong Lee et al. nutzten erhaltene Grundgelenkbewegung, um über ein Gestänge und einen am Handgelenk befestigten Seilzug eine gedruckte Fingerspitze anzutreiben. Die parametrische Anpassung beruhte auf 9 Maßen; starre Teile bestanden aus ABS, weiche aus TPU. Der genannte Fertigungstag entspricht nicht der gesamten Versorgung einschließlich Untersuchung, Anpassung und Training. Klinische Ergebnisse sind nach Rehabilitationsphase zu trennen.[Fälle und originale Bewertungstabellen](ref:R03)\n\nPatientin 1 war 25 Jahre alt und hatte Zeige- und Mittelfinger auf Höhe des proximalen Interphalangealgelenks verloren. Nach zunächst 2 Monaten Handrehabilitation folgte bei wiederhergestellter Beweglichkeit 1 Monat Prothesentraining. Leistung/Zufriedenheit beim Kochen stiegen vor/nach Anpassung von 1/1 auf 7/7; Tippen blieb bei 8/8. Im Box-and-Block-Test sank der Wert von 55 auf 49; die JHFT-Gesamtzeit verkürzte sich von 63.68 s auf 56.35 s und lag damit nahe den ursprünglichen 56.40 s vor dem Training. Frühe Schmerz- und Beweglichkeitsverbesserungen sind nicht vollständig der Prothese zuzuschreiben; der Gewinn beim Kochen gilt nicht automatisch für sämtliche Handfunktionen.\n\nPatient 2 war 26 Jahre alt, hatte einen Zeigefinger verloren und besaß uneingeschränkte Grundgelenkbeweglichkeit. Nach 1 Monat Training sank die JHFT-Zeit von 105.51 s auf 65.13 s; Leistung/Zufriedenheit beim Tippen stiegen von 3/3 auf 8/8, während Gitarrenspiel bei 1/1 blieb. Kürzere JHFT-Zeiten und höhere COPM-Werte bedeuten Verbesserung; die Bewertungsrichtungen unterscheiden sich. Gemeinsam stützen die Fälle aufgabenspezifische Unterstützung, wobei Restanatomie, Trainingsausgangslage und Aufgabenanforderung mit unterschiedlichen Reaktionen einhergehen.",
           "figure_ids": [
             "F05"
           ]
@@ -418,27 +418,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Andrés-Esperanza et al.: zusammengesetzte Bestzeiten und Nutzermittelwerte",
+          "caption": "Figure 9 · Andrés-Esperanza et al.: zusammengesetzte Bestzeiten und Nutzermittelwerte",
           "interpretation": "Horizontal stehen die vier Hände, vertikal der LIF des verkürzten SHAP. Farbige Säulen kombinieren die schnellsten Aufgabenwerte verschiedener Nutzer; schwarze Querlinien und Fehlerbalken zeigen Mittelwert und SD der individuellen Indizes. Lb-0 erreicht im zusammengesetzten Bestfall 31.2, im Mittel 15.7; IMMA erreicht 29.5 und 22.1, wodurch sich die Rangfolge umkehrt. Die Säulenhöhe beschreibt weder die Alltagsfähigkeit einer einzelnen Person noch einen prozentualen Rehabilitationserfolg. Sie trennt günstigste Mechanismusleistung von mittlerer beobachteter Nutzerleistung.[Originalabbildung und Bewertung](ref:R01)"
         },
         "F02": {
-          "caption": "Andrés-Esperanza et al.: Unterschiede zwischen Zeit- und Griffhaltebewertung",
+          "caption": "Figure 10 · Andrés-Esperanza et al.: Unterschiede zwischen Zeit- und Griffhaltebewertung",
           "interpretation": "Links stehen transformierte SHAP-Zeitwerte, rechts AHAP-Werte nach Griffart. Die radialen Achsen zeigen Kugel-, Kraft-, Dreipunkt-, Seiten-, Spitz- und Extensionsgriff. Dreipunktaufgaben erzielen links 0, rechts dagegen beträchtliche Werte: Überschreiten der gesunden Referenzzeitgrenze ergibt im Zeittest null; das andere Protokoll bewertet Griffform und Halten nach Platzierung durch die Versuchsleitung. Es handelt sich um unterschiedliche Endpunkte, nicht widersprüchliche Ergebnisse. Erfolgreiches Halten ersetzt keine selbstständige Aufnahmegeschwindigkeit. Bei dünnen Platten begrenzen übermäßige Beugung und Kontaktposition die Ausführung unmittelbar.[Protokollspezifischer Vergleich](ref:R01)"
         },
         "F03": {
-          "caption": "Mohammadi et al.: Membraneinfluss auf die Torsionsantwort des Gelenks",
+          "caption": "Fig 10 · Mohammadi et al.: Membraneinfluss auf die Torsionsantwort des Gelenks",
           "interpretation": "Horizontal steht der Verdrehwinkel, vertikal das Drehmoment in N·mm. Violette Rauten kennzeichnen die Membran, schwarze Sterne deren Fehlen. Bei gleichem Winkel benötigt das umhüllte Gelenk ungefähr das doppelte Moment und widersteht unerwünschter Verdrehung aus der Ebene stärker. Geprüft wird Torsion, nicht aktive Fingerbeugung oder Greifkraft. Höhere Torsionssteifigkeit bedeutet nicht weniger Motoraufwand. Zusammen mit dem Anfangswiderstand im Biegeversuch zeigt dies konkurrierende Anforderungen an Seitenstabilität und Beugeantrieb.[Gelenkprüfung](ref:R02)"
         },
         "F04": {
-          "caption": "Mohammadi et al.: Membranrisse nach zyklischer Beugung und Streckung",
+          "caption": "Fig 16 · Mohammadi et al.: Membranrisse nach zyklischer Beugung und Streckung",
           "interpretation": "Links ist der Finger vor, mittig nach zyklischer Belastung und rechts der markierte Bereich vergrößert dargestellt; die originale 3-mm-Angabe bleibt erhalten. Nach 45000 Zyklen sind kleine Membranrisse sichtbar, obwohl Seilzug und nachgiebige Gelenke weiterhin funktionieren. Fortgesetztes Öffnen/Schließen und strukturelle Unversehrtheit sind somit unterschiedliche Endpunkte. Geprüft wurde ein einzelner Finger ohne kombinierte Einwirkung von Schweiß, Stößen und langfristigem Tragen eines vollständigen Schafts. Die Abbildung dokumentiert Bauteilschäden; aus angenommenen täglichen Bewegungen hochgerechnete Lebensdauer ist keine gemessene Gebrauchsdauer.[Haltbarkeitsprüfung](ref:R02)"
         },
         "F05": {
-          "caption": "Min-Yong Lee et al.: Restanatomie, Antrieb und Tippen nach Einzelfingerverlust",
+          "caption": "Figure 3 · Min-Yong Lee et al.: Restanatomie, Antrieb und Tippen nach Einzelfingerverlust",
           "interpretation": "A zeigt bei Patient 2 die verbliebene linke Zeigefingergrundphalanx und die übrigen Finger; B zeigt Handgelenkband, Seilzug und Beuge-/Streckpositionen; C die Tastaturnutzung. Erhaltene Grundgelenkbewegung treibt den distalen Mechanismus an, ohne die ganze Handfläche zu bedecken oder die Sensibilität anderer Finger zu ersetzen. Dies erklärt einen aufgabenspezifischen Kontaktpunkt für Tasten, quantifiziert aber keine Tippgeschwindigkeit. Quantitative Verbesserungen stammen aus Aufgaben-Selbsteinschätzungen und zeitbasierten Handfunktionstests der Falltabellen.[Fallabbildung und Bewertungen](ref:R03)"
         },
         "F06": {
-          "caption": "Ku et al.: einkanalige Befehlsfolgen; Abbildung mit freundlicher Genehmigung von Sangho Yi, © Korean Society of Plastic and Reconstructive Surgeons",
+          "caption": "Fig. 3 · Ku et al.: einkanalige Befehlsfolgen; Abbildung mit freundlicher Genehmigung von Sangho Yi, © Korean Society of Plastic and Reconstructive Surgeons",
           "interpretation": "Stage 0–5 bezeichnen vorprogrammierte Handstellungen; Pfeile zeigen Wechselrichtungen. Kontraktions-/Entspannungsmuster von 1.5 s und 2.5 s rufen unterschiedliche Positionen auf. Das Textfeld nennt Schwellen relativ zu einer gleitenden Basislinie; schematische Rechtecksignale sind weder rohe EMG-Aufzeichnungen noch Klassifikationsgenauigkeiten. Das Verfahren verlagert Komplexität von zusätzlichen Sensoren zum Erlernen zeitlicher Befehle und erklärt damit den Einfluss der Eingewöhnung auf Funktionsbewertungen.[Originales Steuerdiagramm](ref:R04) Der Urhebername Sangho Yi folgt der formalen Korrektur.[Namenskorrektur](ref:R05)"
         }
       }

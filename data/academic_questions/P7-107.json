@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P7-107",
   "p": "P7",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [
@@ -147,27 +147,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Wincott et al.：便携机架中的光路、台面与底板",
+          "caption": "Fig. 1 | Wincott et al.：便携机架中的光路、台面与底板",
           "interpretation": "上部照明、中部样品台、下部反射镜与相机沿固定位置分层。上盖和平台的铰接允许打开，钢底板提供非打印支承；这解释体积较大但可接近内部部件的设计。图中并没有给出电池容量、散热或运输保护测试，所以不能仅据封闭外观认定整机适合所有户外环境。[结构原图](ref:R01)"
         },
         "F02": {
-          "caption": "Wincott et al.：同一控制服务适配桌面与手机",
+          "caption": "Fig. 6 | Wincott et al.：同一控制服务适配桌面与手机",
           "interpretation": "A 是电脑浏览器视图，B 是手机视图，C 展示时间序列、Z-stack、拼接及相机设置窗口。手机改变布局，仪器内的摄像头和控制逻辑保留。截图上的参数是界面示例而非性能测量；它支持本地访问方式的可用性描述，不提供无线距离、延迟或新手操作成功率。[控制界面原图](ref:R01)"
         },
         "F03": {
-          "caption": "Aidukas et al.：单板机采集与多角度重建是两个环节",
+          "caption": "Fig. 1 | Aidukas et al.：单板机采集与多角度重建是两个环节",
           "interpretation": "a 的硬币给出机身尺度，标出底部 Raspberry Pi 3、LED 阵列、样品台和相机；b 展示 Bayer 分色后的稀疏数据；c 将不同照明角度对应的频谱区域拼成较大频谱。它解释为何轻小镜头仍可获得更高重建分辨率，也明确需要顺序多幅数据。图中单板机不证明论文已在它上面完成全部重建。[系统原图](ref:R02)"
         },
         "F04": {
-          "caption": "Aidukas et al.：单色重建成功与白光重建失败并列展示",
+          "caption": "Fig. 3 | Aidukas et al.：单色重建成功与白光重建失败并列展示",
           "interpretation": "a 是原始低分辨率靶图，b/c 是 DR/SSR 的 RGB 分通道重建及最细线条剖面，d 是同时使用 RGB 的重建。蓝色边框对应最佳 780 nm 条件，但 d 的细密伪影显示光谱混合违反单色假设。横向曲线用 pixel 作距离；不同色彩面板并未给同一波长、同一 NA 的独立重复试验。[靶图原图](ref:R02)"
         },
         "F05": {
-          "caption": "Aidukas et al.：采样冗余和频谱重叠决定收敛条件",
+          "caption": "Fig. 2 | Aidukas et al.：采样冗余和频谱重叠决定收敛条件",
           "interpretation": "a 定义相邻频带重叠，b/c 分别改变采样因子与重叠百分比，d 比较随迭代次数的强度和光瞳误差；e/f 是频谱和模拟恢复图。这是包含噪声与像差的仿真比较，不是现场实测错误率。b 中低采样时 SSR、DR 误差明显上升，充分采样后接近；e 表明圆边界校准还需要比仅恢复图像更高的采样条件。[采样模拟原图](ref:R02)"
         },
         "F06": {
-          "caption": "Aidukas et al.：每个视场区块具有不同照明几何和像差",
+          "caption": "Fig. 6 | Aidukas et al.：每个视场区块具有不同照明几何和像差",
           "interpretation": "a 中实际图例用红点标 measured、黑点标 estimated LED 位置；原图注写蓝/绿，与画面不一致，这里依据画面。b 从中心向边缘传递光瞳初值，并显示空间变化的相位色图；c 比较理论与校准后的阵列中心。它是计算标定的空间分布，不是打印件物理尺寸的误差图，也不能证明全部移动由同一种机械原因产生。[自校准原图](ref:R02)"
         }
       }
@@ -226,27 +226,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Wincott et al.: optical path, stage and baseplate within a portable frame",
+          "caption": "Fig. 1 | Wincott et al.: optical path, stage and baseplate within a portable frame",
           "interpretation": "Upper illumination, central specimen stage and lower mirror and camera occupy fixed layers. Hinges open the lid and platform, while a steel baseplate provides nonprinted support. This explains a larger design with accessible internals. The image supplies no battery capacity, thermal assessment or transport-protection test; enclosure appearance alone does not establish operation in every outdoor environment. [Original construction](ref:R01)"
         },
         "F02": {
-          "caption": "Wincott et al.: one control service adapts to desktop and phone",
+          "caption": "Fig. 6 | Wincott et al.: one control service adapts to desktop and phone",
           "interpretation": "A shows a computer-browser layout, B a phone layout, and C time-series, Z-stack, stitching and camera-setting windows. The phone changes presentation while the instrument retains its camera and control logic. Displayed settings are interface examples rather than performance measurements. The figure supports local-access functionality, not wireless range, latency or novice success rates. [Original control interface](ref:R01)"
         },
         "F03": {
-          "caption": "Aidukas et al.: single-board acquisition and multi-angle reconstruction are separate stages",
+          "caption": "Fig. 1 | Aidukas et al.: single-board acquisition and multi-angle reconstruction are separate stages",
           "interpretation": "The coin in a indicates body scale, with Raspberry Pi 3, LED array, stage and camera labelled. b shows sparse Bayer-separated data, and c combines frequency regions from different illumination angles into a larger spectrum. This explains higher reconstructed resolution from a small lens while requiring multiple sequential frames. The presence of the board does not establish that all reconstruction was performed on it. [Original system figure](ref:R02)"
         },
         "F04": {
-          "caption": "Aidukas et al.: successful monochromatic and failed white-light reconstruction are shown together",
+          "caption": "Fig. 3 | Aidukas et al.: successful monochromatic and failed white-light reconstruction are shown together",
           "interpretation": "a contains raw low-resolution target images; b/c show DR/SSR reconstructions for separate RGB channels and finest-bar profiles; d shows reconstruction with simultaneous RGB illumination. Blue borders identify the best 780 nm condition, while fine artefacts in d reveal violation of the monochromatic assumption by spectral mixing. Profile distance is in pixel; different colour panels are not independent repeats at identical wavelength and NA. [Original target comparison](ref:R02)"
         },
         "F05": {
-          "caption": "Aidukas et al.: sampling redundancy and frequency overlap determine convergence",
+          "caption": "Fig. 2 | Aidukas et al.: sampling redundancy and frequency overlap determine convergence",
           "interpretation": "a defines overlap of adjacent frequency bands; b/c vary sampling factor and overlap percentage, while d tracks intensity and pupil errors against iteration. e/f show spectra and simulated reconstructions. This is a noise-and-aberration simulation, not a measured field error rate. In b, SSR and DR errors rise at insufficient sampling and converge with sufficient sampling. e shows that circle-boundary calibration needs stronger sampling than image recovery alone. [Original sampling simulation](ref:R02)"
         },
         "F06": {
-          "caption": "Aidukas et al.: illumination geometry and aberrations vary across field segments",
+          "caption": "Fig. 6 | Aidukas et al.: illumination geometry and aberrations vary across field segments",
           "interpretation": "The actual legend in a marks measured LED position in red and estimated position in black. The original caption says blue/green, inconsistent with the image; interpretation here follows the image. b propagates pupil initialisation from centre to periphery and shows spatially varying phase maps. c compares theoretical and calibrated array centres. This maps computational calibration, not printed-part dimensional errors, and does not establish one mechanical cause for every displacement. [Original self-calibration](ref:R02)"
         }
       }
@@ -305,27 +305,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Wincott et al.: Strahlengang, Tisch und Grundplatte im tragbaren Rahmen",
+          "caption": "Fig. 1 | Wincott et al.: Strahlengang, Tisch und Grundplatte im tragbaren Rahmen",
           "interpretation": "Beleuchtung oben, Probentisch mittig sowie Spiegel und Kamera unten liegen in festen Ebenen. Scharniere öffnen Deckel und Plattform; eine Stahlgrundplatte liefert ungedruckte Abstützung. Das erklärt eine größere, innen gut zugängliche Bauweise. Akkukapazität, Wärmeprüfung und Transportschutztest fehlen in der Zeichnung. Das Gehäusebild allein belegt keinen Betrieb in jeder Außenumgebung. [Originalkonstruktion](ref:R01)"
         },
         "F02": {
-          "caption": "Wincott et al.: derselbe Steuerdienst passt sich Computer und Telefon an",
+          "caption": "Fig. 6 | Wincott et al.: derselbe Steuerdienst passt sich Computer und Telefon an",
           "interpretation": "A zeigt die Computer-Browseransicht, B die Telefonansicht und C Fenster für Zeitserien, Z-stack, Stitching und Kameraeinstellungen. Das Telefon verändert die Darstellung, Kamera und Steuerlogik bleiben im Instrument. Angezeigte Werte sind Bedienbeispiele, keine Leistungsmessungen. Die Grafik belegt lokalen Zugang, keine Funkreichweite, Latenz oder Erfolgsquote unerfahrener Nutzer. [Originalbedienoberfläche](ref:R01)"
         },
         "F03": {
-          "caption": "Aidukas et al.: Einplatinen-Erfassung und Mehrwinkelrekonstruktion sind getrennte Schritte",
+          "caption": "Fig. 1 | Aidukas et al.: Einplatinen-Erfassung und Mehrwinkelrekonstruktion sind getrennte Schritte",
           "interpretation": "Die Münze in a verdeutlicht die Gehäusegröße; Raspberry Pi 3, LED-Matrix, Tisch und Kamera sind markiert. b zeigt dünn besetzte Bayer-Farbkanäle, c verbindet Frequenzbereiche unterschiedlicher Beleuchtungswinkel zu einem größeren Spektrum. Dies erklärt höhere rekonstruierte Auflösung mit kleiner Linse, benötigt aber mehrere sequenzielle Aufnahmen. Die Platine im Bild belegt keine vollständig darauf ausgeführte Rekonstruktion. [Originalsystemabbildung](ref:R02)"
         },
         "F04": {
-          "caption": "Aidukas et al.: gelungene monochromatische und fehlerhafte Weißlichtrekonstruktion stehen nebeneinander",
+          "caption": "Fig. 3 | Aidukas et al.: gelungene monochromatische und fehlerhafte Weißlichtrekonstruktion stehen nebeneinander",
           "interpretation": "a enthält niedrig aufgelöste Rohbilder; b/c zeigen DR/SSR für getrennte RGB-Kanäle und Profile feinster Linien, d die Rekonstruktion bei gleichzeitigem RGB-Licht. Blaue Rahmen kennzeichnen die beste 780 nm Bedingung; feine Artefakte in d zeigen die Verletzung der Monochromasieannahme durch Spektralmischung. Profilabstand ist in pixel angegeben. Verschiedene Farbtafeln sind keine unabhängigen Wiederholungen bei identischer Wellenlänge und NA. [Originaltargetvergleich](ref:R02)"
         },
         "F05": {
-          "caption": "Aidukas et al.: Abtastredundanz und Frequenzüberlappung bestimmen Konvergenz",
+          "caption": "Fig. 2 | Aidukas et al.: Abtastredundanz und Frequenzüberlappung bestimmen Konvergenz",
           "interpretation": "a definiert benachbarte Frequenzüberlappung; b/c verändern Abtastfaktor und Überlappungsanteil, d verfolgt Intensitäts- und Pupillenfehler über Iterationen. e/f zeigen Spektren und simulierte Rekonstruktionen. Dies ist eine Simulation mit Rauschen und Aberrationen, keine gemessene Feldfehlerquote. In b steigen SSR- und DR-Fehler bei Unterabtastung und nähern sich bei ausreichender Abtastung an. e zeigt stärkere Anforderungen für Kreisgrenzenkalibrierung als für reine Bildrekonstruktion. [Originalabtastsimulation](ref:R02)"
         },
         "F06": {
-          "caption": "Aidukas et al.: Beleuchtungsgeometrie und Aberrationen variieren zwischen Bildfeldbereichen",
+          "caption": "Fig. 6 | Aidukas et al.: Beleuchtungsgeometrie und Aberrationen variieren zwischen Bildfeldbereichen",
           "interpretation": "Die tatsächliche Legende in a zeigt measured LED position rot und estimated schwarz. Die Originallegende nennt dagegen blau/grün; hier wird das sichtbare Bild zugrunde gelegt. b überträgt Pupillenstartwerte vom Zentrum zum Rand und zeigt räumlich veränderliche Phasenkarten. c vergleicht theoretische und kalibrierte Matrixzentren. Dargestellt wird Rechenkalibrierung, kein Maßfehler gedruckter Bauteile und kein Beleg für eine einzige mechanische Ursache sämtlicher Verschiebungen. [Originalselbstkalibrierung](ref:R02)"
         }
       }

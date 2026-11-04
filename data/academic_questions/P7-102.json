@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P7-102",
   "p": "P7",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-04",
   "related_paper_ids": [
@@ -128,14 +128,14 @@
         {
           "id": "mechanical_inputs",
           "title": "机械输入与细胞反应：刺激实现了，不代表所有终点都会改变",
-          "markdown": "另一项 96 孔板研究把不同压力波形与人脐静脉内皮细胞的反应对应。系统可以同时容纳 12 种压力条件；研究观察到细胞在 3 天内保持存活和增殖，静态与动态压力组之间未见显著增殖差异。这里同时存在两个结果：装置能够呈现不同机械输入，而选定的增殖终点没有明显区分这些输入。[压力波形研究](ref:R04)\n\n| 所研究的微环境环节 | 对应读数 | 比较时保留的条件 |\n|---|---|---|\n| 支架内空间占据 | 空间成像、Hoover 系数 | 总量与均匀性分别解释 |\n| 基质稳定性与支持细胞 | 细胞数、表型群体 | 基质种类与细胞组成对应 |\n| 水凝胶微腔中的相容性 | 形态与活死染色 | 成像位置、材料背景及对照容器 |\n| 较晚的组织表型 | 组织学、蛋白与转录指标 | 时间点、阳性对照及背景信号 |\n| 机械压力刺激 | 输入波形与增殖 | 细胞类型及观测终点 |\n\n这些结果给出了不同研究结论的适用范围。分布更均匀的装置可能没有最高的细胞总量；基质保持更稳定时细胞数量可能较多；可成像的微腔可以维持与孔板相近的细胞状态；压力差异也可能没有反映到增殖上。它们描述的是不同的环境变量与细胞响应，不能只用一个“培养效果更好”把差别抹平。",
+          "markdown": "另一项 96 孔板研究把压力波形与人脐静脉内皮细胞的反应对应。系统可以同时容纳 12 种压力条件；出版社摘要报告细胞在 3 天内保持存活和增殖，病理性及超生理性压力暴露未抑制增殖。摘要未提供足以核实静态与动态组间全部统计比较的细节，因此这里不将“未抑制增殖”扩展为各组已经证明等效。[压力波形研究](ref:R04)\n\n| 所研究的微环境环节 | 对应读数 | 比较时保留的条件 |\n|---|---|---|\n| 支架内空间占据 | 空间成像、Hoover 系数 | 总量与均匀性分别解释 |\n| 基质稳定性与支持细胞 | 细胞数、表型群体 | 基质种类与细胞组成对应 |\n| 水凝胶微腔中的相容性 | 形态与活死染色 | 成像位置、材料背景及对照容器 |\n| 较晚的组织表型 | 组织学、蛋白与转录指标 | 时间点、阳性对照及背景信号 |\n| 机械压力刺激 | 输入波形与增殖 | 细胞类型及观测终点 |\n\n这些结果给出了不同研究结论的适用范围。分布更均匀的装置可能没有最高的细胞总量；基质保持更稳定时细胞数量可能较多；可成像的微腔可以维持与孔板相近的细胞状态；压力差异也可能没有反映到增殖上。它们描述的是不同的环境变量与细胞响应，不能只用一个“培养效果更好”把差别抹平。",
           "figure_ids": []
         }
       ],
       "figure_texts": {
         "F01": {
           "caption": "Engel 等，原文 Figure 6：两种成像方法的细胞分布比较。",
-          "interpretation": "左侧为荧光重建，右侧为放射性示踪成像，中间箭头标示观察所对应的方向。两者相近的宏观占据模式支持分布判断；右图的白色高信号区不应和左图亮度作绝对细胞数量比较。这里没有从颜色反推出新的浓度或输运条件。"
+          "interpretation": "左侧为荧光重建，右侧为放射性示踪成像，中间箭头标示流入端至流出端的方向，供两幅重建图作空间对应。两者相近的宏观占据模式支持分布判断；右图的白色高信号区不应和左图亮度作绝对细胞数量比较。这里没有从颜色反推出新的浓度或输运条件。"
         },
         "F02": {
           "caption": "Engel 等，原文 Figure 8：组织学、背景荧光与成骨相关表达。",
@@ -195,14 +195,14 @@
         {
           "id": "mechanical_inputs",
           "title": "Mechanical input and cellular response: a delivered stimulus need not change every endpoint",
-          "markdown": "A separate 96-well-plate study related pressure waveforms to human umbilical vein endothelial-cell responses. Its system accommodated 12 simultaneous pressure conditions. Cells remained viable and proliferative over 3 days, with no significant proliferation difference between static and dynamic pressure groups. Two findings coexist: the device presents different mechanical inputs, while the selected proliferation endpoint does not clearly distinguish them.[Pressure-waveform study](ref:R04)\n\n| Microenvironment component | Readout | Conditions retained in interpretation |\n|---|---|---|\n| Spatial scaffold occupancy | Spatial imaging and Hoover coefficient | Quantity and uniformity interpreted separately |\n| Matrix stability and supporting cells | Cell counts and phenotypic populations | Matrix type and cell composition |\n| Hydrogel-microchamber compatibility | Morphology and live/dead staining | Imaging location, material background and comparator vessel |\n| Later tissue phenotype | Histology, protein and transcript measurements | Time point, positive control and background signal |\n| Mechanical pressure | Input waveform and proliferation | Cell type and observation endpoint |\n\nThese results define the applicability of different conclusions. A more uniform distribution need not have the largest cell total; a more stable matrix may retain more cells; an imageable microchamber may maintain a state similar to a well plate; and pressure differences may not appear in proliferation. They describe different environmental variables and responses that a single phrase such as “better culture performance” would obscure.",
+          "markdown": "A separate 96-well-plate study related pressure waveforms to human umbilical vein endothelial-cell responses. Its system accommodated 12 simultaneous pressure conditions. The publisher abstract reports viability and proliferation over 3 days and no inhibition of proliferation under pathological or supraphysiological pressure exposure. It does not provide enough detail to verify all statistical comparisons between static and dynamic groups, so absence of inhibition is not treated here as demonstrated equivalence. [Pressure-waveform study](ref:R04)\n\n| Microenvironment component | Readout | Conditions retained in interpretation |\n|---|---|---|\n| Spatial scaffold occupancy | Spatial imaging and Hoover coefficient | Quantity and uniformity interpreted separately |\n| Matrix stability and supporting cells | Cell counts and phenotypic populations | Matrix type and cell composition |\n| Hydrogel-microchamber compatibility | Morphology and live/dead staining | Imaging location, material background and comparator vessel |\n| Later tissue phenotype | Histology, protein and transcript measurements | Time point, positive control and background signal |\n| Mechanical pressure | Input waveform and proliferation | Cell type and observation endpoint |\n\nThese results define the applicability of different conclusions. A more uniform distribution need not have the largest cell total; a more stable matrix may retain more cells; an imageable microchamber may maintain a state similar to a well plate; and pressure differences may not appear in proliferation. They describe different environmental variables and responses that a single phrase such as “better culture performance” would obscure.",
           "figure_ids": []
         }
       ],
       "figure_texts": {
         "F01": {
           "caption": "Engel et al., original Figure 6: cell distribution by two imaging modalities.",
-          "interpretation": "Fluorescence reconstruction is on the left and radiotracer imaging on the right; the central arrow identifies the corresponding direction. Similar macroscopic occupancy patterns support the spatial finding. High white signal in the right image should not be compared with left-image brightness as an absolute cell count. No additional concentration or transport setting is inferred from colour."
+          "interpretation": "Fluorescence reconstruction is on the left and radiotracer imaging on the right; the central arrow labels the inflow-to-outflow orientation. Similar macroscopic occupancy patterns support the spatial finding. High white signal in the right image should not be compared with left-image brightness as an absolute cell count. No additional concentration or transport setting is inferred from colour."
         },
         "F02": {
           "caption": "Engel et al., original Figure 8: histology, background fluorescence and osteogenesis-related expression.",
@@ -262,14 +262,14 @@
         {
           "id": "mechanical_inputs",
           "title": "Mechanischer Eingang und Zellreaktion: ein realisierter Reiz verändert nicht jeden Endpunkt",
-          "markdown": "Eine weitere Studie mit einer 96-Well-Platte verknüpfte Druckwellenformen mit Reaktionen menschlicher Nabelvenenendothelzellen. Das System erlaubte 12 gleichzeitige Druckbedingungen. Die Zellen blieben über 3 Tage vital und proliferationsfähig; zwischen statischen und dynamischen Druckgruppen wurde kein signifikanter Proliferationsunterschied gefunden. Zwei Befunde bestehen nebeneinander: Die Vorrichtung stellt unterschiedliche mechanische Eingänge bereit, während der gewählte Proliferationsendpunkt sie nicht deutlich unterscheidet.[Druckwellenformstudie](ref:R04)\n\n| Untersuchte Mikroumgebung | Messgröße | Beizubehaltende Interpretationsbedingungen |\n|---|---|---|\n| Räumliche Gerüstbesiedlung | Bildgebung und Hoover-Koeffizient | Menge und Gleichmäßigkeit getrennt betrachten |\n| Matrixstabilität und unterstützende Zellen | Zellzahl und Phänotyppopulationen | Matrixtyp und Zellzusammensetzung |\n| Verträglichkeit der Hydrogel-Mikrokammer | Morphologie und Lebend/Tot-Färbung | Bildposition, Materialhintergrund und Vergleichsgefäß |\n| Späterer Gewebephänotyp | Histologie, Protein- und Transkriptmessungen | Zeitpunkt, Positivkontrolle und Hintergrundsignal |\n| Mechanischer Druckreiz | Eingangswellenform und Proliferation | Zelltyp und Beobachtungsendpunkt |\n\nDiese Ergebnisse bestimmen den Geltungsbereich unterschiedlicher Aussagen. Eine gleichmäßigere Verteilung muss nicht die höchste Gesamtzellzahl besitzen; eine stabilere Matrix kann mehr Zellen erhalten; eine abbildbare Mikrokammer kann einen ähnlichen Zellzustand wie eine Mikrotiterplatte ermöglichen; Druckunterschiede müssen sich nicht in der Proliferation zeigen. Beschrieben werden verschiedene Umgebungsvariablen und Reaktionen, die durch die pauschale Bezeichnung „bessere Kulturleistung“ verdeckt würden.",
+          "markdown": "Eine weitere Studie mit einer 96-Well-Platte verknüpfte Druckwellenformen mit Reaktionen menschlicher Nabelvenenendothelzellen. Das System erlaubte 12 gleichzeitige Druckbedingungen. Die Verlagszusammenfassung berichtet über 3 Tage erhaltene Vitalität und Proliferation sowie keine Proliferationshemmung unter pathologischem oder supraphysiologischem Druck. Sie enthält jedoch nicht genügend Angaben, um sämtliche statistischen Vergleiche zwischen statischen und dynamischen Gruppen zu prüfen. Ausbleibende Hemmung wird hier daher nicht als nachgewiesene Äquivalenz interpretiert. [Druckwellenformstudie](ref:R04)\n\n| Untersuchte Mikroumgebung | Messgröße | Beizubehaltende Interpretationsbedingungen |\n|---|---|---|\n| Räumliche Gerüstbesiedlung | Bildgebung und Hoover-Koeffizient | Menge und Gleichmäßigkeit getrennt betrachten |\n| Matrixstabilität und unterstützende Zellen | Zellzahl und Phänotyppopulationen | Matrixtyp und Zellzusammensetzung |\n| Verträglichkeit der Hydrogel-Mikrokammer | Morphologie und Lebend/Tot-Färbung | Bildposition, Materialhintergrund und Vergleichsgefäß |\n| Späterer Gewebephänotyp | Histologie, Protein- und Transkriptmessungen | Zeitpunkt, Positivkontrolle und Hintergrundsignal |\n| Mechanischer Druckreiz | Eingangswellenform und Proliferation | Zelltyp und Beobachtungsendpunkt |\n\nDiese Ergebnisse bestimmen den Geltungsbereich unterschiedlicher Aussagen. Eine gleichmäßigere Verteilung muss nicht die höchste Gesamtzellzahl besitzen; eine stabilere Matrix kann mehr Zellen erhalten; eine abbildbare Mikrokammer kann einen ähnlichen Zellzustand wie eine Mikrotiterplatte ermöglichen; Druckunterschiede müssen sich nicht in der Proliferation zeigen. Beschrieben werden verschiedene Umgebungsvariablen und Reaktionen, die durch die pauschale Bezeichnung „bessere Kulturleistung“ verdeckt würden.",
           "figure_ids": []
         }
       ],
       "figure_texts": {
         "F01": {
           "caption": "Engel et al., ursprüngliche Figure 6: Zellverteilung mit zwei Bildgebungsverfahren.",
-          "interpretation": "Links ist die Fluoreszenzrekonstruktion, rechts die Radiotracerbildgebung dargestellt; der mittlere Pfeil kennzeichnet die zugehörige Richtung. Ähnliche makroskopische Besiedlungsmuster stützen den räumlichen Befund. Helle weiße Bereiche rechts sind nicht anhand der Helligkeit links als absolute Zellzahl vergleichbar. Aus den Farben werden keine zusätzlichen Konzentrationen oder Transportbedingungen abgeleitet."
+          "interpretation": "Links ist die Fluoreszenzrekonstruktion, rechts die Radiotracerbildgebung dargestellt; der mittlere Pfeil kennzeichnet die Orientierung vom Einlass zum Auslass. Ähnliche makroskopische Besiedlungsmuster stützen den räumlichen Befund. Helle weiße Bereiche rechts sind nicht anhand der Helligkeit links als absolute Zellzahl vergleichbar. Aus den Farben werden keine zusätzlichen Konzentrationen oder Transportbedingungen abgeleitet."
         },
         "F02": {
           "caption": "Engel et al., ursprüngliche Figure 8: Histologie, Hintergrundfluoreszenz und osteogeneseassoziierte Expression.",

@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P5-085",
   "p": "P5",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-04",
   "related_paper_ids": [
@@ -125,7 +125,7 @@
         {
           "id": "mechanical_failure_and_physiology",
           "title": "负载下暴露的失效：材料选择改变了验证结果",
-          "markdown": "Dhanani 等人的第一版装置在模拟肺上运行 12 小时后进入健康猪实验。较高负载阶段出现 PLA 小齿轮受电机轴传热软化并脱离啮合；换用打印 ABS 齿轮后又发生齿剪断。两种齿轮各维持约 6 小时，完成的实验时长因此包含中途更换，而不是原组件无故障运行。[版本迭代与原始失效记录](ref:R02)\n\n第二版改用 CNC 切削尼龙齿轮，台架运行达到 72 小时；气囊出现磨损迹象但保持完整。改进并非“更换一种打印材料就解决全部问题”，而是制造路线与材料一起改变。这个案例说明，增材制造可以服务初期验证，而最终承载件的工艺选择取决于热传导、接触磨损和循环受力。\n\n动物部分共 3 只健康猪：第一版用于其中 1 只，第二版用于另外 2 只；每只分别接受试验设备与标准设备各 12 小时通气。图中把版本合并分析，在三个呼气末正压条件下比较 pH、血氧及二氧化碳分压、峰值吸气压、潮气量与呼吸频率。六项指标的组间比较未达显著差异，原文报告 p > 0.05。\n\n这个统计结果对应小样本健康肺和合并版本，不能改写为已完成等效性检验。原图后段显示潮气量下降、呼吸频率上升，与实验人员为约束峰压而调整通气相一致；生理指标维持同时依赖设备输出、监测与主动调整。误差线和时间轨迹应与中途机械更换一起阅读。",
+          "markdown": "Dhanani 等人的第一版装置在模拟肺上运行 12 小时后进入健康猪实验。较高负载阶段出现 PLA 小齿轮受电机轴传热软化并脱离啮合；换用打印 ABS 齿轮后又发生齿剪断。两种齿轮各维持约 6 小时，完成的实验时长因此包含中途更换，而不是原组件无故障运行。[版本迭代与原始失效记录](ref:R02)\n\n第二版改用 CNC 切削尼龙齿轮，台架运行达到 72 小时；气囊出现磨损迹象但保持完整。改进并非“更换一种打印材料就解决全部问题”，而是制造路线与材料一起改变。这个案例说明，增材制造可以服务初期验证，而最终承载件的工艺选择取决于热传导、接触磨损和循环受力。\n\n动物部分共 3 只健康猪：第一版用于其中 1 只，第二版用于另外 2 只；每只分别接受试验设备与标准设备各 12 小时通气。图中把版本合并分析，在三个呼气末正压条件下比较 pH、动脉血氧分压及二氧化碳分压、峰值吸气压、潮气量与呼吸频率。六项指标的组间比较未达显著差异，原文报告 p > 0.05。\n\n这个统计结果对应小样本健康肺和合并版本，不能改写为已完成等效性检验。原图后段显示潮气量下降、呼吸频率上升，与实验人员为约束峰压而调整通气相一致；生理指标维持同时依赖设备输出、监测与主动调整。误差线和时间轨迹应与中途机械更换一起阅读。",
           "figure_ids": [
             "F02"
           ]
@@ -171,7 +171,7 @@
         },
         "F02": {
           "caption": "Dhanani 原图 3｜健康猪实验的生理与通气轨迹",
-          "interpretation": "a–f 分别为 pH、氧分压、二氧化碳分压、峰值吸气压、潮气量和频率。后段潮气量下降而频率上升，应与人员调整一并解释。d 轴标注 mmHg，正文压力条件却用 cmH₂O，不能把图上读数默认为正文单位。数据合并了两个版本及其机械更换经历。"
+          "interpretation": "a–f 分别为 pH、动脉血氧分压、动脉血二氧化碳分压、峰值吸气压、潮气量和频率。后段潮气量下降而频率上升，应与人员调整一并解释。d 轴标注 mmHg，正文压力条件却用 cmH₂O，不能把图上读数默认为正文单位。数据合并了两个版本及其机械更换经历。"
         },
         "F03": {
           "caption": "BubbleVent 原图 5｜压力、流量、体积三条证据链",
@@ -319,7 +319,7 @@
         {
           "id": "endurance_and_fault_response",
           "title": "Langzeitkurven und Störungsantwort: Zuverlässigkeit braucht Daueraufzeichnung und Fehlerereignisse",
-          "markdown": "PVP1 integriert einstellbare Druckregelung, Sensorik und Alarme in eine Forschungsplattform. Originalabbildung 2 überlagert 75,229 Atemzyklen aus 3 durchgehenden Tagen; der Text fasst dies als mehr als 70,000 Zyklen zusammen. Schattierungen um die blaue Druck- und orange Exspirationsflusskurve geben die Standardabweichung über den Versuch wieder. Gezeigt wird eine langfristige Wellenformverteilung unter einer festen Modelllungenbedingung. [PVP1-Studie zu Stabilität und Störungsantwort](ref:R04)\n\nDie Abbildung verwendet 20 mL/cmH₂O Compliance, 20 cmH₂O/L/s Widerstand, 30 cmH₂O Soll-Spitzendruck und 5 cmH₂O PEEP. Weitere Lasten wurden getrennt geprüft; die größte Soll-Spitzendruckabweichung betrug 9% bei hohem Widerstand. Die Dauerlaufzykluszahl eines Betriebspunkts zeigt nicht, dass jede Last gleich lange geprüft wurde.\n\nAbbildung 3 trennt drei Ereignisse: veränderte Druckanstiegsgeschwindigkeit, simulierte Eigenatemtriggerung und Reaktion auf einen kurzfristigen Hochdruck. Die berichtete Hochdruckalarmreaktion erfolgte innerhalb von 500 ms. Das bezieht sich auf dieses Ereignis und belegt nicht dieselbe Latenz für sämtliche Alarmarten, Sensorausfälle oder Stromunterbrechungen.\n\nDie Dauerlaufgrafik untersucht reguläre Wiederholung, die Ereignisgrafik die Verhaltensänderung nach Störung. Beide ergänzen sich: Die erste zeigt Drift und Schwankung, die zweite Regelungs- und Überwachungsreaktionen. Visuelle und akustische Alarme sind Teil der untersuchten Reaktion. Leistung erklärt sich deshalb nicht allein aus Gasweggeometrie oder Druckteilgenauigkeit.",
+          "markdown": "PVP1 integriert einstellbare Druckregelung, Sensorik und Alarme in eine Forschungsplattform. Originalabbildung 2 überlagert 75 229 Atemzyklen aus 3 durchgehenden Tagen; der Text fasst dies als mehr als 70 000 Zyklen zusammen. Schattierungen um die blaue Druck- und orange Exspirationsflusskurve geben die Standardabweichung über den Versuch wieder. Gezeigt wird eine langfristige Wellenformverteilung unter einer festen Modelllungenbedingung. [PVP1-Studie zu Stabilität und Störungsantwort](ref:R04)\n\nDie Abbildung verwendet 20 mL/cmH₂O Compliance, 20 cmH₂O/L/s Widerstand, 30 cmH₂O Soll-Spitzendruck und 5 cmH₂O PEEP. Weitere Lasten wurden getrennt geprüft; die größte Soll-Spitzendruckabweichung betrug 9% bei hohem Widerstand. Die Dauerlaufzykluszahl eines Betriebspunkts zeigt nicht, dass jede Last gleich lange geprüft wurde.\n\nAbbildung 3 trennt drei Ereignisse: veränderte Druckanstiegsgeschwindigkeit, simulierte Eigenatemtriggerung und Reaktion auf einen kurzfristigen Hochdruck. Die berichtete Hochdruckalarmreaktion erfolgte innerhalb von 500 ms. Das bezieht sich auf dieses Ereignis und belegt nicht dieselbe Latenz für sämtliche Alarmarten, Sensorausfälle oder Stromunterbrechungen.\n\nDie Dauerlaufgrafik untersucht reguläre Wiederholung, die Ereignisgrafik die Verhaltensänderung nach Störung. Beide ergänzen sich: Die erste zeigt Drift und Schwankung, die zweite Regelungs- und Überwachungsreaktionen. Visuelle und akustische Alarme sind Teil der untersuchten Reaktion. Leistung erklärt sich deshalb nicht allein aus Gasweggeometrie oder Druckteilgenauigkeit.",
           "figure_ids": [
             "F05",
             "F06"
@@ -353,7 +353,7 @@
         },
         "F05": {
           "caption": "PVP1 Originalabbildung 2 | Überlagerte Kurven nach Dauerbetrieb",
-          "interpretation": "Links steht Druck, rechts Exspirationsfluss; Schattierung zeigt die Standardabweichung zwischen Zyklen. Die Grafik nennt N = 75,229; horizontal stehen Sekunden eines repräsentativen Zyklus, nicht die gesamte dreitägige Laufzeit. Gezeigt werden phasengleich überlagerte Verteilungen, keine zeitliche Zuordnung eines einzelnen Ereignisses zu einem bestimmten Tag."
+          "interpretation": "Links steht Druck, rechts Exspirationsfluss; Schattierung zeigt die Standardabweichung zwischen Zyklen. Die Grafik nennt N = 75 229; horizontal stehen Sekunden eines repräsentativen Zyklus, nicht die gesamte dreitägige Laufzeit. Gezeigt werden phasengleich überlagerte Verteilungen, keine zeitliche Zuordnung eines einzelnen Ereignisses zu einem bestimmten Tag."
         },
         "F06": {
           "caption": "PVP1 Originalabbildung 3 | Regeländerung, Triggerung und Alarm",

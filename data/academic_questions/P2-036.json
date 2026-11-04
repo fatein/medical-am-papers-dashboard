@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P2-036",
   "p": "P2",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-04",
   "related_paper_ids": [
@@ -217,7 +217,7 @@
         {
           "id": "randomized_stroke",
           "title": "随机试验把支具效应与联合干预分开",
-          "markdown": "Zhang 等纳入 60 名亚急性卒中老人，每组 20 人，均接受 4 周康复；三组分别增加假支具与假刺激、打印 AFO 与假刺激、打印 AFO 与主动重复经颅磁刺激。真实支具为碳纤维增强 PLA，设定踝背屈 10°、距下外翻 5°，再经负重与行走调校；假支具去掉刚性支撑。这个对照能检验功能性支具的增量，不能比较打印和传统定制 AFO。[随机分组、方法与结果表](ref:R05)\n\n| 结果 | 假支具组 | 打印 AFO 组 | 联合组 |\n|---|---:|---:|---:|\n| 最大速度 10 m 步行，前→后（m/s） | 0.43→0.63 | 0.46→0.66 | 0.45→0.80 |\n| Berg 平衡分数增量 | 4.55 | 7.50 | 9.55 |\n| 主动背屈增量（°） | 3.95 | 4.65 | 6.20 |\n\n打印组相对假支具组的步速增量差异不显著（p=0.996），主动背屈也不显著（p=0.437）；平衡增量较大（p=0.009）。联合组步速增量超过打印组（p=0.024），但其平衡增量并未显著超过打印组（p=0.091）。因此不能把“全部组内改善”写成“打印支具全面优胜”。试验在完成入组后登记，所谓临床应答阈值来自分布法且为事后分析，不能替代预设主要结局；对神经重组的解释也没有直接神经环路测量支持。",
+          "markdown": "Zhang 等纳入 60 名亚急性卒中老人，每组 20 人，均接受 4 周康复；三组分别增加假支具与假刺激、打印 AFO 与假刺激、打印 AFO 与主动重复经颅磁刺激。真实支具为碳纤维增强 PLA，设定踝背屈 10°、距下外翻 5°，再经负重与行走调校；假支具去掉刚性支撑。这个对照能检验功能性支具的增量，不能比较打印和传统定制 AFO。[随机分组、方法与结果表](ref:R05)\n\n| 结果 | 假支具组 | 打印 AFO 组 | 联合组 |\n|---|---:|---:|---:|\n| 最大速度 10 m 步行，前→后（m/s） | 0.43→0.63 | 0.46→0.66 | 0.45→0.80 |\n| Berg 平衡分数增量 | 4.55 | 7.50 | 9.55 |\n| 主动背屈增量（°） | 3.95 | 4.65 | 6.20 |\n\n打印组相对假支具组的步速增量差异不显著（p=0.996），主动背屈也不显著（p=0.437）；平衡增量较大（p=0.009）。联合组步速增量超过打印组（p=0.024），但其平衡增量并未显著超过打印组（p=0.091）。因此不能把“全部组内改善”写成“打印支具全面优胜”。试验在完成入组后登记，所谓临床应答阈值来自分布法且为事后分析，不能替代预设主要结局；对神经重组的解释也没有直接神经环路测量支持。 原文表 2 还显示联合组的主动背屈增量高于打印组（p=0.022），而讨论段却称该比较不显著；此处按表 2 报告数值和显著性。",
           "figure_ids": []
         },
         {
@@ -229,27 +229,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Um et al.：弯曲区加入前后的趾力矩、接触位置与转角。",
-          "interpretation": "A 图横轴为趾角度、纵轴为趾力矩，黑线 Type 2S 与蓝线 Type 3 呈现不同的力矩变化轨迹；灰色虚线是人体参考，不是另一组打印实验。B 图绿网格显示足跟抬起和足趾离地两位置，红色标记指示法向接触位置。C 图把峰值力矩与角度分开：Type 3 降低力矩，却保持接近参考的角度。力矩变小必须与可达转角一起读，不能单独称为推进能力增强。[原始模拟图](ref:R01)"
+          "caption": "Figure 7 · Um et al.：弯曲区加入前后的趾力矩、接触位置与转角。",
+          "interpretation": "A 图横轴为趾角度、纵轴为趾力矩，黑线 Type 2S 与蓝线 Type 3 呈现不同的力矩变化轨迹；灰色虚线是人体参考，不是另一组打印实验。B 图绿网格显示足跟抬起和足趾离地两位置，红色标记指示法向接触力的作用位置。C 图把峰值力矩与角度分开：Type 3 降低力矩，却保持接近参考的角度。力矩变小必须与可达转角一起读，不能单独称为推进能力增强。[原始模拟图](ref:R01)"
         },
         "F02": {
-          "caption": "Walker et al.：各步次拟合圆心在接受腔坐标系中的位置。",
+          "caption": "Fig 6 · Walker et al.：各步次拟合圆心在接受腔坐标系中的位置。",
           "interpretation": "三个面板分别对应三名参与者；横纵轴 X₀、Y₀ 均以 cm 表示，方形、圆形和三角形分别标识各人的三种鞋跟升高量。灰带宽度为 1.6 cm，只约束前后方向，并不要求所有点重合。第一人高跟鞋的红三角明显下移，但仍留在横向比较带内；第三人红三角的前后分布较宽，提示同一鞋内也有步次差异。原图图例包含实测所用的鞋跟升高量，不能把竖直分离误判成对线失效。[圆心位置图](ref:R02)"
         },
         "F03": {
-          "caption": "Mavroidis et al.：四种条件下踝角度及分期活动范围。",
+          "caption": "Figure 8 · Mavroidis et al.：四种条件下踝角度及分期活动范围。",
           "interpretation": "A 图标出受控跖屈、受控背屈、动力跖屈和摆动背屈四段；B 图横轴是步态周期百分比，纵轴为角度，黑色无支具曲线在离地前有更深的负向跖屈谷。C–F 以均值与标准差展开各段运动，不能把正负两段柱形当成不同人群。打印与预制支具曲线接近，反映本例对运动的约束相近；它没有说明更小的活动范围在所有患者中都更好。[踝运动学](ref:R03)"
         },
         "F04": {
-          "caption": "Mavroidis et al.：踝功率曲线与吸收、生成峰值。",
+          "caption": "Figure 10 · Mavroidis et al.：踝功率曲线与吸收、生成峰值。",
           "interpretation": "A 图横轴同为步态周期，纵轴原图标为 W；本报告保留该标注，不自行换成 W/kg。支撑末期正峰在无支具条件最高，刚性打印件居中，柔性打印与预制件较低；B 图比较负的吸收峰与正的生成峰，并给出步次间离散程度。它展示机械关节功率改变，不能由正峰降低断言整个人走路更省能，也不能把峰值等同整个周期的机械功。[踝功率原图](ref:R03)"
         },
         "F05": {
-          "caption": "Cho et al.：三名病例在平地及上下楼的即时表现。",
+          "caption": "Figure 3 · Cho et al.：三名病例在平地及上下楼的即时表现。",
           "interpretation": "蓝、橙、黄柱依次为仅穿鞋、传统 AFO、打印 AFO；横轴的 3DAFO1、3DAFO2、AFO 是病例标识，不能误读成三个独立随机组。左侧平地速度多见黄柱更高，但病例 1 的偏瘫侧步长在传统 AFO 下更长，说明“更快”并非所有参数同时优化。右侧上下楼的排序随任务改变；下楼速度没有统一的打印优势。协同收缩指标与时间指标同列展示，但不是耗氧量。[即时步态比较](ref:R04)"
         },
         "F06": {
-          "caption": "Cho et al.：训练前后肌力、活动能力与参与量表。",
+          "caption": "Figure 4 · Cho et al.：训练前后肌力、活动能力与参与量表。",
           "interpretation": "蓝色为训练前、橙色为训练后；上排为踝肌最大自主等长收缩，中排为下肢运动、平衡及六分钟步行，下面是卒中影响、跌倒效能和抑郁量表。大部分身体功能柱上升，但跌倒效能在第一人下降、第二人上升，社会心理反应并不一致。六分钟步行面板的距离单位未标明，因此只读取前后趋势，不把纵轴数值直接解释为米。虽然原图注提到 FU，实际可见柱组只有 Pre/Post，不能据此补造长期随访结果。[训练结果原图](ref:R04)"
         }
       }
@@ -295,7 +295,7 @@
         {
           "id": "randomized_stroke",
           "title": "A randomized trial separates orthosis and combined-treatment effects",
-          "markdown": "Zhang et al. enrolled 60 older adults after subacute stroke, with 20 per arm receiving 4 weeks of rehabilitation. Additional treatments were sham orthosis plus sham stimulation, printed AFO plus sham stimulation, or printed AFO plus active repetitive transcranial magnetic stimulation. The functional carbon-fiber-reinforced PLA orthosis prescribed 10° ankle dorsiflexion and 5° subtalar eversion before adjustment during weight bearing and walking; the sham removed rigid support. This comparison tests the increment from a functional orthosis, not printing versus a conventional custom AFO.[Randomization, methods and result tables](ref:R05)\n\n| Outcome | Sham orthosis | Printed AFO | Combined |\n|---|---:|---:|---:|\n| Maximum-speed 10 m walking, pre→post (m/s) | 0.43→0.63 | 0.46→0.66 | 0.45→0.80 |\n| Berg balance score change | 4.55 | 7.50 | 9.55 |\n| Active dorsiflexion change (°) | 3.95 | 4.65 | 6.20 |\n\nPrinted versus sham orthoses did not differ significantly in walking-speed gain (p=0.996) or active dorsiflexion gain (p=0.437), although balance improved more (p=0.009). The combined arm gained more speed than the printed-only arm (p=0.024), but not significantly more balance (p=0.091). Improvement within every arm is therefore not comprehensive superiority of the printed orthosis. Registration followed completed recruitment; clinical responder thresholds were distribution-derived and analyzed post hoc, rather than replacements for prespecified primary outcomes. Interpretations involving neural reorganization lacked direct neural-circuit measurements.",
+          "markdown": "Zhang et al. enrolled 60 older adults after subacute stroke, with 20 per arm receiving 4 weeks of rehabilitation. Additional treatments were sham orthosis plus sham stimulation, printed AFO plus sham stimulation, or printed AFO plus active repetitive transcranial magnetic stimulation. The functional carbon-fiber-reinforced PLA orthosis prescribed 10° ankle dorsiflexion and 5° subtalar eversion before adjustment during weight bearing and walking; the sham removed rigid support. This comparison tests the increment from a functional orthosis, not printing versus a conventional custom AFO.[Randomization, methods and result tables](ref:R05)\n\n| Outcome | Sham orthosis | Printed AFO | Combined |\n|---|---:|---:|---:|\n| Maximum-speed 10 m walking, pre→post (m/s) | 0.43→0.63 | 0.46→0.66 | 0.45→0.80 |\n| Berg balance score change | 4.55 | 7.50 | 9.55 |\n| Active dorsiflexion change (°) | 3.95 | 4.65 | 6.20 |\n\nPrinted versus sham orthoses did not differ significantly in walking-speed gain (p=0.996) or active dorsiflexion gain (p=0.437), although balance improved more (p=0.009). The combined arm gained more speed than the printed-only arm (p=0.024), but not significantly more balance (p=0.091). Improvement within every arm is therefore not comprehensive superiority of the printed orthosis. Registration followed completed recruitment; clinical responder thresholds were distribution-derived and analyzed post hoc, rather than replacements for prespecified primary outcomes. Interpretations involving neural reorganization lacked direct neural-circuit measurements. Original Table 2 also reports a greater active-dorsiflexion gain in the combined arm than in the printed-only arm (p=0.022), whereas the discussion calls that comparison nonsignificant; the numerical result and significance reported here follow Table 2.",
           "figure_ids": []
         },
         {
@@ -307,27 +307,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Um et al.: toe torque, contact position and rotation before and after adding a bending zone.",
-          "interpretation": "Panel A plots toe angle against torque; black Type 2S and blue Type 3 show different torque trajectories. The gray dashed human reference is not another printed experimental group. Panel B uses green meshes for heel-off and toe-off configurations, with red markers identifying normal contact positions. Panel C separates peak torque from angle: Type 3 lowers torque while retaining an angle close to the reference. Lower torque must be read together with attainable rotation and does not independently demonstrate stronger propulsion.[Original simulation figure](ref:R01)"
+          "caption": "Figure 7 · Um et al.: toe torque, contact position and rotation before and after adding a bending zone.",
+          "interpretation": "Panel A plots toe angle against torque; black Type 2S and blue Type 3 show different torque trajectories. The gray dashed human reference is not another printed experimental group. Panel B uses green meshes for heel-off and toe-off configurations, with red markers identifying where the normal contact force acts. Panel C separates peak torque from angle: Type 3 lowers torque while retaining an angle close to the reference. Lower torque must be read together with attainable rotation and does not independently demonstrate stronger propulsion.[Original simulation figure](ref:R01)"
         },
         "F02": {
-          "caption": "Walker et al.: fitted circle origins for individual steps in socket coordinates.",
+          "caption": "Fig 6 · Walker et al.: fitted circle origins for individual steps in socket coordinates.",
           "interpretation": "The three panels correspond to the three participants. Both X₀ and Y₀ use cm; squares, circles and triangles identify each participant's three heel-rise conditions. The 1.6 cm gray band constrains the anteroposterior direction without requiring all points to overlap. For the first participant, red high-heel triangles move markedly downward while remaining within the horizontal comparison band. The third participant's red triangles spread more widely anteroposteriorly, indicating variation between steps even within footwear. Legend values specify the heel rises actually tested; vertical separation should not be mistaken for alignment failure.[Circle-origin plot](ref:R02)"
         },
         "F03": {
-          "caption": "Mavroidis et al.: ankle angles and phase-specific ranges under four conditions.",
+          "caption": "Figure 8 · Mavroidis et al.: ankle angles and phase-specific ranges under four conditions.",
           "interpretation": "Panel A marks controlled plantarflexion, controlled dorsiflexion, powered plantarflexion and swing dorsiflexion. Panel B plots gait-cycle percentage against angle; the black unbraced curve has a deeper negative plantarflexion trough before toe-off. Panels C–F expand phase-specific motion as means and standard deviations; positive and negative bars are not separate populations. Printed and prefabricated curves are close, indicating similar movement constraints in this case, not that smaller range is preferable for every patient.[Ankle kinematics](ref:R03)"
         },
         "F04": {
-          "caption": "Mavroidis et al.: ankle power and peak absorption and generation.",
+          "caption": "Figure 10 · Mavroidis et al.: ankle power and peak absorption and generation.",
           "interpretation": "Panel A again uses gait-cycle percentage, with the original ordinate labeled W; this report preserves that label rather than converting it to W/kg. The late-stance positive peak is highest without an orthosis, intermediate with the rigid printed device, and lower with flexible printed and prefabricated devices. Panel B contrasts negative absorption and positive generation peaks with variation between cycles. These are changes in mechanical joint power: a lower positive peak does not establish lower whole-body metabolic demand, and a peak is not the work integrated over a cycle.[Original ankle-power figure](ref:R03)"
         },
         "F05": {
-          "caption": "Cho et al.: immediate level-ground and stair performance in three cases.",
+          "caption": "Figure 3 · Cho et al.: immediate level-ground and stair performance in three cases.",
           "interpretation": "Blue, orange and yellow bars denote shoes, conventional AFO and printed AFO. The horizontal labels 3DAFO1, 3DAFO2 and AFO identify cases, not three independent randomized groups. Yellow bars generally favor level-ground speed on the left, yet case 1 has a longer paretic step with the conventional AFO: faster walking does not optimize every parameter. Stair rankings on the right change with the task, with no uniform printed-device advantage for descent speed. The co-contraction index appears alongside timing measures but is not oxygen consumption.[Immediate gait comparison](ref:R04)"
         },
         "F06": {
-          "caption": "Cho et al.: strength, activity and participation measures before and after training.",
+          "caption": "Figure 4 · Cho et al.: strength, activity and participation measures before and after training.",
           "interpretation": "Blue denotes pre-training and orange post-training. The top row shows maximal voluntary isometric ankle contractions; the middle row covers lower-limb motor function, balance and the six-minute walk; the bottom row shows stroke impact, falls efficacy and depression scales. Most physical-function bars rise, while falls efficacy decreases in the first participant and increases in the second: psychosocial responses are not uniform. The six-minute-walk panel omits a distance unit, so only the direction of change is interpreted; ordinate values are not recast as meters. Although the original caption mentions FU, visible bars contain only Pre/Post and do not provide long-term follow-up.[Original training outcomes](ref:R04)"
         }
       }
@@ -373,7 +373,7 @@
         {
           "id": "randomized_stroke",
           "title": "Eine randomisierte Studie trennt Orthesen- und Kombinationseffekte",
-          "markdown": "Zhang et al. schlossen 60 ältere Personen nach subakutem Schlaganfall ein; je 20 erhielten 4 Wochen Rehabilitation. Zusätzlich bekamen sie Scheinorthese plus Scheinstimulation, Druck-AFO plus Scheinstimulation oder Druck-AFO plus aktive repetitive transkranielle Magnetstimulation. Die funktionelle Orthese aus kohlefaserverstärktem PLA sah 10° Dorsalflexion und 5° subtalare Eversion vor und wurde unter Belastung und beim Gehen angepasst; bei der Scheinorthese fehlte die starre Stützung. Dieser Vergleich prüft den Zusatznutzen einer funktionellen Orthese, nicht Druck gegenüber konventioneller Maß-AFO.[Randomisierung, Methoden und Ergebnistabellen](ref:R05)\n\n| Ergebnis | Scheinorthese | Druck-AFO | Kombination |\n|---|---:|---:|---:|\n| Maximale Geschwindigkeit über 10 m, vorher→nachher (m/s) | 0.43→0.63 | 0.46→0.66 | 0.45→0.80 |\n| Änderung des Berg-Gleichgewichtswerts | 4.55 | 7.50 | 9.55 |\n| Änderung aktiver Dorsalflexion (°) | 3.95 | 4.65 | 6.20 |\n\nDruck- und Scheinorthese unterschieden sich weder im Geschwindigkeitsgewinn (p=0.996) noch im aktiven Dorsalflexionsgewinn (p=0.437) signifikant, wohl aber im Gleichgewichtsgewinn (p=0.009). Die Kombination erhöhte die Geschwindigkeit stärker als die Druckorthese allein (p=0.024), das Gleichgewicht jedoch nicht signifikant stärker (p=0.091). Verbesserungen innerhalb aller Gruppen bedeuten daher keine umfassende Überlegenheit der Druckorthese. Die Registrierung erfolgte nach abgeschlossener Rekrutierung; klinische Ansprechschwellen waren verteilungsbasiert und wurden nachträglich analysiert, nicht als Ersatz für vorab definierte Hauptendpunkte. Deutungen neuronaler Reorganisation stützten sich nicht auf direkte Messungen neuronaler Schaltkreise.",
+          "markdown": "Zhang et al. schlossen 60 ältere Personen nach subakutem Schlaganfall ein; je 20 erhielten 4 Wochen Rehabilitation. Zusätzlich bekamen sie Scheinorthese plus Scheinstimulation, Druck-AFO plus Scheinstimulation oder Druck-AFO plus aktive repetitive transkranielle Magnetstimulation. Die funktionelle Orthese aus kohlefaserverstärktem PLA sah 10° Dorsalflexion und 5° subtalare Eversion vor und wurde unter Belastung und beim Gehen angepasst; bei der Scheinorthese fehlte die starre Stützung. Dieser Vergleich prüft den Zusatznutzen einer funktionellen Orthese, nicht Druck gegenüber konventioneller Maß-AFO.[Randomisierung, Methoden und Ergebnistabellen](ref:R05)\n\n| Ergebnis | Scheinorthese | Druck-AFO | Kombination |\n|---|---:|---:|---:|\n| Maximale Geschwindigkeit über 10 m, vorher→nachher (m/s) | 0.43→0.63 | 0.46→0.66 | 0.45→0.80 |\n| Änderung des Berg-Gleichgewichtswerts | 4.55 | 7.50 | 9.55 |\n| Änderung aktiver Dorsalflexion (°) | 3.95 | 4.65 | 6.20 |\n\nDruck- und Scheinorthese unterschieden sich weder im Geschwindigkeitsgewinn (p=0.996) noch im aktiven Dorsalflexionsgewinn (p=0.437) signifikant, wohl aber im Gleichgewichtsgewinn (p=0.009). Die Kombination erhöhte die Geschwindigkeit stärker als die Druckorthese allein (p=0.024), das Gleichgewicht jedoch nicht signifikant stärker (p=0.091). Verbesserungen innerhalb aller Gruppen bedeuten daher keine umfassende Überlegenheit der Druckorthese. Die Registrierung erfolgte nach abgeschlossener Rekrutierung; klinische Ansprechschwellen waren verteilungsbasiert und wurden nachträglich analysiert, nicht als Ersatz für vorab definierte Hauptendpunkte. Deutungen neuronaler Reorganisation stützten sich nicht auf direkte Messungen neuronaler Schaltkreise. Originaltabelle 2 weist zudem einen größeren Zugewinn der aktiven Dorsalflexion in der Kombinationsgruppe als in der Gruppe mit Druck-AFO allein aus (p=0.022), während die Diskussion diesen Vergleich als nicht signifikant bezeichnet. Die hier wiedergegebenen Zahlen und die Signifikanz folgen Tabelle 2.",
           "figure_ids": []
         },
         {
@@ -385,27 +385,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Um et al.: Zehenmoment, Kontaktposition und Winkel vor und nach Ergänzung einer Biegezone.",
-          "interpretation": "A stellt Zehenwinkel und Moment dar; schwarzer Type 2S und blauer Type 3 zeigen unterschiedliche Momentverläufe. Die grau gestrichelte menschliche Referenz ist keine weitere gedruckte Versuchsgruppe. B zeigt grüne Netze bei Fersenabhebung und Zehenablösung; rote Markierungen kennzeichnen den normalen Kontaktort. C trennt maximales Moment und Winkel: Type 3 senkt das Moment bei weiterhin referenznahem Winkel. Ein kleineres Moment muss zusammen mit dem erreichbaren Winkel gelesen werden und belegt allein keinen stärkeren Vortrieb.[Originale Simulationsabbildung](ref:R01)"
+          "caption": "Figure 7 · Um et al.: Zehenmoment, Kontaktposition und Winkel vor und nach Ergänzung einer Biegezone.",
+          "interpretation": "A stellt Zehenwinkel und Moment dar; schwarzer Type 2S und blauer Type 3 zeigen unterschiedliche Momentverläufe. Die grau gestrichelte menschliche Referenz ist keine weitere gedruckte Versuchsgruppe. B zeigt grüne Netze bei Fersenabhebung und Zehenablösung; rote Markierungen kennzeichnen den Angriffspunkt der normalen Kontaktkraft. C trennt maximales Moment und Winkel: Type 3 senkt das Moment bei weiterhin referenznahem Winkel. Ein kleineres Moment muss zusammen mit dem erreichbaren Winkel gelesen werden und belegt allein keinen stärkeren Vortrieb.[Originale Simulationsabbildung](ref:R01)"
         },
         "F02": {
-          "caption": "Walker et al.: angepasste Kreismittelpunkte einzelner Schritte im Schaftkoordinatensystem.",
+          "caption": "Fig 6 · Walker et al.: angepasste Kreismittelpunkte einzelner Schritte im Schaftkoordinatensystem.",
           "interpretation": "Die drei Felder entsprechen den drei Teilnehmerinnen. X₀ und Y₀ sind in cm angegeben; Quadrate, Kreise und Dreiecke kennzeichnen die jeweils drei Absatzsprengungen. Das graue Band von 1.6 cm begrenzt nur die anteroposteriore Richtung und verlangt keine Überlagerung aller Punkte. Bei der ersten Person liegen rote Dreiecke der hohen Absätze deutlich tiefer, bleiben aber innerhalb des horizontalen Vergleichsbands. Bei der dritten Person streuen die roten Dreiecke stärker nach vorn und hinten; selbst innerhalb einer Schuhbedingung unterscheiden sich die Schritte. Die Legende nennt die tatsächlich getesteten Absatzsprengungen. Vertikale Trennung darf daher nicht als Ausrichtungsversagen gelten.[Diagramm der Kreismittelpunkte](ref:R02)"
         },
         "F03": {
-          "caption": "Mavroidis et al.: Knöchelwinkel und phasenspezifischer Bewegungsumfang unter vier Bedingungen.",
+          "caption": "Figure 8 · Mavroidis et al.: Knöchelwinkel und phasenspezifischer Bewegungsumfang unter vier Bedingungen.",
           "interpretation": "A kennzeichnet kontrollierte Plantarflexion, kontrollierte Dorsalflexion, kraftvolle Plantarflexion und Dorsalflexion in der Schwungphase. B stellt Gangzyklusanteil und Winkel dar; die schwarze Kurve ohne Orthese hat vor der Zehenablösung ein tieferes negatives Plantarflexionstal. C–F zeigen phasenspezifische Mittelwerte und Standardabweichungen; positive und negative Balken sind keine getrennten Populationen. Gedruckte und vorgefertigte Orthesen zeigen hier ähnliche Bewegungseinschränkungen. Daraus folgt nicht, dass weniger Bewegungsumfang für sämtliche Patienten günstiger wäre.[Knöchelkinematik](ref:R03)"
         },
         "F04": {
-          "caption": "Mavroidis et al.: Knöchelleistung und Spitzenwerte von Absorption und Erzeugung.",
+          "caption": "Figure 10 · Mavroidis et al.: Knöchelleistung und Spitzenwerte von Absorption und Erzeugung.",
           "interpretation": "A verwendet erneut den Gangzyklusanteil; die Originalordinate ist mit W beschriftet und wird hier nicht in W/kg umgedeutet. Der positive Gipfel am Standphasenende ist ohne Orthese am höchsten, mit der starren Druckorthese mittelhoch und mit flexibler Druckorthese sowie vorgefertigter Orthese niedriger. B vergleicht negative Absorptions- und positive Erzeugungsspitzen samt Streuung zwischen Zyklen. Dies sind Änderungen mechanischer Gelenkleistung: Ein kleinerer positiver Gipfel belegt keinen geringeren Ganzkörperstoffwechsel, und ein Spitzenwert entspricht nicht der über den Zyklus integrierten Arbeit.[Originale Knöchelleistung](ref:R03)"
         },
         "F05": {
-          "caption": "Cho et al.: unmittelbare Leistungen dreier Fälle auf ebenem Boden und Treppen.",
+          "caption": "Figure 3 · Cho et al.: unmittelbare Leistungen dreier Fälle auf ebenem Boden und Treppen.",
           "interpretation": "Blaue, orange und gelbe Balken stehen für Schuhe, konventionelle und gedruckte AFO. Die horizontalen Bezeichnungen 3DAFO1, 3DAFO2 und AFO kennzeichnen Fälle, keine drei unabhängigen randomisierten Gruppen. Gelbe Balken begünstigen links meist die Geschwindigkeit auf ebenem Boden; Fall 1 hat jedoch mit konventioneller AFO einen längeren paretischen Schritt. Schnelleres Gehen optimiert somit nicht jeden Parameter. Rechts wechselt die Rangfolge mit der Treppenaufgabe; beim Abstieg besteht kein einheitlicher Geschwindigkeitsvorteil der Druckorthese. Der gleichzeitig dargestellte Kokontraktionsindex ist kein Sauerstoffverbrauch.[Unmittelbarer Gangvergleich](ref:R04)"
         },
         "F06": {
-          "caption": "Cho et al.: Kraft, Aktivität und Teilhabemaße vor und nach dem Training.",
+          "caption": "Figure 4 · Cho et al.: Kraft, Aktivität und Teilhabemaße vor und nach dem Training.",
           "interpretation": "Blau bezeichnet den Zustand vor, Orange nach dem Training. Oben stehen maximale willkürliche isometrische Knöchelmuskelkontraktionen, mittig Beinmotorik, Gleichgewicht und Sechs-Minuten-Gehen, unten Schlaganfallauswirkungen, sturzbezogene Selbstwirksamkeit und Depression. Die meisten körperlichen Funktionswerte steigen; die sturzbezogene Selbstwirksamkeit sinkt jedoch bei der ersten und steigt bei der zweiten Person. Psychosoziale Reaktionen sind somit uneinheitlich. Im Gehpanel fehlt die Entfernungseinheit; interpretiert wird nur die Änderungsrichtung, ohne Ordinatenwerte als Meter auszugeben. Obwohl die Originallegende FU erwähnt, enthalten die sichtbaren Balken nur Pre/Post und liefern keine Langzeitnachbeobachtung.[Originale Trainingsresultate](ref:R04)"
         }
       }

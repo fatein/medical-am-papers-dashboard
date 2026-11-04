@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P7-106",
   "p": "P7",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [
@@ -146,27 +146,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Christopher et al.：球面拟合残差不同于表面粗糙度",
+          "caption": "Fig. 4 | Christopher et al.：球面拟合残差不同于表面粗糙度",
           "interpretation": "A/B 是商品/打印 #1，C/D 是打印 #3/#4；上方为轮廓与球面拟合，下方为残差，横轴以 mm、纵轴以 μm 表示。C 的微米级残差明显较大。A/B 图示残差幅值与正文 152/270 nm 的归属并不吻合，保留原图而不自行对调。各面板不同量程也不能用柱高印象比较粗糙度。[轮廓原图](ref:R01)"
         },
         "F02": {
-          "caption": "Christopher et al.：物镜性能取决于镜片组合与光阑",
+          "caption": "Fig. 3 | Christopher et al.：物镜性能取决于镜片组合与光阑",
           "interpretation": "A 为 #1 单片、8 mm 光阑；B 为 #2–#5 四片组、2 mm 光阑，图中还包括光线追迹和理论 MTF。下方剖面显示打印支架控制镜片间距与居中。理论曲线不能代替实测 PSF；而四片组只有部分镜片被打印替代，并非整套商品元件都消失。[物镜设计原图](ref:R01)"
         },
         "F03": {
-          "caption": "Christopher et al.：色彩配准改善条纹对比，但保留原始分辨率边界",
+          "caption": "Fig. 2 | Christopher et al.：色彩配准改善条纹对比，但保留原始分辨率边界",
           "interpretation": "A/B 是原始/色差校正的同一靶图，黄色框定位放大区域，C 将两条灰度曲线叠加。蓝色校正线在一些峰谷处增加对比，但未显示所有细纹变为可分辨。图像保留 250 μm 与 50 μm 比例尺，支持追溯测量区域；仅做横向通道平移不能推断轴向色差已消除。[色差校正原图](ref:R02)"
         },
         "F04": {
-          "caption": "Christopher et al.：标尺峰谷可见不代表照明均匀",
+          "caption": "Fig. 3 | Christopher et al.：标尺峰谷可见不代表照明均匀",
           "interpretation": "A 的黄色线规定 B 的取样路径，B 横轴是距离 μm、纵轴是 8-bit 灰度。峰谷重复而整体包络向右降低，说明标尺仍可识别，但亮度有系统性梯度。作者量化约 24% 下降；图中还存在局部异常峰谷，因此单条路径不等于完整二维均匀性或畸变地图。[标尺原图](ref:R02)"
         },
         "F05": {
-          "caption": "Christopher et al.：蜂窝阵列同时改变填充方式和制作途径",
+          "caption": "Fig. 4 | Christopher et al.：蜂窝阵列同时改变填充方式和制作途径",
           "interpretation": "a/b 对比 ML-1 方阵、ML-2 矩形阵、ML-3 蜂窝阵；c 明确显示打印母版、模具、最终阵列的不同对象。d/e/f 给轮廓、球面拟合和残差，ML-1 的测量距离用 μm，小尺寸与其他阵列并非相同采样区域。ML-3 边缘残差升高，说明掩膜抑制边界照明有实际原因。表面相近不能推出相同焦距或相同通光。[阵列原图](ref:R03)"
         },
         "F06": {
-          "caption": "Christopher et al.：标准微球的重分配收益可与商品阵列比较",
+          "caption": "Fig. 5 | Christopher et al.：标准微球的重分配收益可与商品阵列比较",
           "interpretation": "a/b/c 分别为 ML-1/ML-2/ML-3，每行都并列 WF、LS、mSIM；右侧归一化曲线显示从 LS 到 mSIM 的宽度由 235→166、247→186、246→178 nm 缩小。全场与局部比例尺分别为 10 μm 和 500 nm。曲线归一化隐藏绝对光量差异，不能直接比较传输效率；这些微球结果未使用反卷积。[微球原图](ref:R03)"
         }
       }
@@ -225,27 +225,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Christopher et al.: spherical-fit residuals are not surface roughness",
+          "caption": "Fig. 4 | Christopher et al.: spherical-fit residuals are not surface roughness",
           "interpretation": "A/B show commercial/printed #1 and C/D printed #3/#4. Profiles and spherical fits appear above residuals, with horizontal mm and vertical μm axes. C has visibly larger micrometre-scale residuals. A/B residual amplitudes do not match the text assignment of 152/270 nm, so the original is preserved without swapping labels. Different panel scales also prevent visual height comparisons from establishing roughness. [Original profiles](ref:R01)"
         },
         "F02": {
-          "caption": "Christopher et al.: lens combinations and apertures determine objective performance",
+          "caption": "Fig. 3 | Christopher et al.: lens combinations and apertures determine objective performance",
           "interpretation": "A shows singlet #1 and an 8 mm aperture; B shows the #2–#5 compound objective and a 2 mm aperture, together with ray tracing and theoretical MTF. Lower cross-sections show how printed holders control spacing and centring. Theoretical curves do not replace measured PSFs, and only some compound-objective elements are printed replacements. [Original objective design](ref:R01)"
         },
         "F03": {
-          "caption": "Christopher et al.: colour registration improves bar contrast within the original resolution boundary",
+          "caption": "Fig. 2 | Christopher et al.: colour registration improves bar contrast within the original resolution boundary",
           "interpretation": "A/B compare raw and chromatically corrected images of the same target; yellow boxes locate magnified regions and C overlays greyscale profiles. The blue corrected trace increases contrast at some peaks and troughs without resolving every fine bar. Retained 250 μm and 50 μm scales make the region traceable. Lateral channel translation does not establish removal of axial chromatic aberration. [Original chromatic correction](ref:R02)"
         },
         "F04": {
-          "caption": "Christopher et al.: visible graticule peaks do not establish uniform illumination",
+          "caption": "Fig. 3 | Christopher et al.: visible graticule peaks do not establish uniform illumination",
           "interpretation": "The yellow line in A defines the sampling path in B. B plots distance in μm against 8-bit intensity. Repeated peaks and troughs remain visible while their envelope declines to the right, revealing a systematic brightness gradient. The authors quantify approximately 24% decrease. Local irregularities are also present; a single profile is not a full spatial uniformity or distortion map. [Original graticule image](ref:R02)"
         },
         "F05": {
-          "caption": "Christopher et al.: honeycomb arrays change both packing and manufacturing route",
+          "caption": "Fig. 4 | Christopher et al.: honeycomb arrays change both packing and manufacturing route",
           "interpretation": "a/b compare square ML-1, rectangular ML-2 and honeycomb ML-3; c distinguishes the printed master, mold and final array. d/e/f give profiles, spherical fits and residuals. The ML-1 measurement distance is in μm, and its small size means the arrays do not cover identical sampled regions. ML-3 edge residuals increase, supporting the rationale for blocking boundary illumination. Similar surfaces do not establish equal focal lengths or throughput. [Original array comparison](ref:R03)"
         },
         "F06": {
-          "caption": "Christopher et al.: standard beads compare reassignment gains across arrays",
+          "caption": "Fig. 5 | Christopher et al.: standard beads compare reassignment gains across arrays",
           "interpretation": "a/b/c represent ML-1/ML-2/ML-3, each juxtaposing WF, LS and mSIM. Right-hand normalised profiles narrow from LS to mSIM by 235→166, 247→186 and 246→178 nm. Full-field and enlarged scale bars are 10 μm and 500 nm. Normalisation hides absolute light differences and cannot compare transmission efficiency directly. These bead results use no deconvolution. [Original bead comparison](ref:R03)"
         }
       }
@@ -304,27 +304,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Christopher et al.: sphärische Fitresiduen sind keine Oberflächenrauheit",
+          "caption": "Fig. 4 | Christopher et al.: sphärische Fitresiduen sind keine Oberflächenrauheit",
           "interpretation": "A/B zeigen kommerzielle/gedruckte #1, C/D gedruckte #3/#4. Oberhalb der Residuen stehen Profile und Kugelfits; horizontal gilt mm, vertikal μm. C besitzt deutlich größere mikrometergroße Abweichungen. A/B-Amplituden passen nicht zur Textzuordnung von 152/270 nm; das Original bleibt ohne eigenständigen Etikettentausch erhalten. Unterschiedliche Achsenskalierung verhindert außerdem einen visuellen Höhenvergleich als Rauheitsbewertung. [Originalprofile](ref:R01)"
         },
         "F02": {
-          "caption": "Christopher et al.: Linsenkombination und Blenden bestimmen die Objektivleistung",
+          "caption": "Fig. 3 | Christopher et al.: Linsenkombination und Blenden bestimmen die Objektivleistung",
           "interpretation": "A zeigt Einzellinse #1 mit 8 mm Blende, B die Kombination #2–#5 mit 2 mm Blende sowie Raytracing und theoretische MTF. Untere Schnitte zeigen, wie gedruckte Halter Abstände und Zentrierung bestimmen. Theoriekurven ersetzen keine gemessene PSF; außerdem werden nur einige Elemente des Vierlinsenobjektivs gedruckt ersetzt. [Originalobjektiventwurf](ref:R01)"
         },
         "F03": {
-          "caption": "Christopher et al.: Farbregistrierung erhöht Linienkontrast innerhalb der ursprünglichen Auflösungsgrenze",
+          "caption": "Fig. 2 | Christopher et al.: Farbregistrierung erhöht Linienkontrast innerhalb der ursprünglichen Auflösungsgrenze",
           "interpretation": "A/B vergleichen Rohbild und Farbkorrektur desselben Targets; gelbe Rahmen markieren Vergrößerungen, C überlagert Grauwertprofile. Die blaue korrigierte Kurve verbessert einzelne Maxima und Minima, ohne sämtliche feinen Linien aufzulösen. Erhaltene Maßstäbe von 250 μm und 50 μm machen den Bereich nachvollziehbar. Laterale Kanalverschiebung belegt keine Beseitigung axialer chromatischer Aberration. [Originalfarbkorrektur](ref:R02)"
         },
         "F04": {
-          "caption": "Christopher et al.: erkennbare Teilungsmaxima belegen keine homogene Beleuchtung",
+          "caption": "Fig. 3 | Christopher et al.: erkennbare Teilungsmaxima belegen keine homogene Beleuchtung",
           "interpretation": "Die gelbe Linie in A definiert den Messweg in B. Dort steht Abstand in μm gegen 8-bit-Intensität. Maxima und Minima bleiben erkennbar, während ihre Hüllkurve nach rechts abfällt und einen systematischen Helligkeitsgradienten zeigt. Die Autoren beziffern ihn auf ungefähr 24%. Lokale Unregelmäßigkeiten bleiben sichtbar; eine einzelne Linie ist keine vollständige räumliche Homogenitäts- oder Verzeichnungskarte. [Originalobjektmikrometerbild](ref:R02)"
         },
         "F05": {
-          "caption": "Christopher et al.: Wabenarrays verändern Packung und Herstellungsweg gemeinsam",
+          "caption": "Fig. 4 | Christopher et al.: Wabenarrays verändern Packung und Herstellungsweg gemeinsam",
           "interpretation": "a/b vergleichen quadratisches ML-1, rechteckiges ML-2 und wabenförmiges ML-3; c trennt gedruckten Master, Form und fertiges Array. d/e/f zeigen Profile, Kugelfits und Residuen. Die ML-1-Messstrecke ist in μm angegeben; wegen seiner kleineren Elemente werden keine identischen Bereiche erfasst. ML-3-Randresiduen steigen an und begründen das Blockieren der Randbeleuchtung. Ähnliche Oberflächen belegen weder gleiche Brennweite noch gleichen Lichtdurchsatz. [Originalarrayvergleich](ref:R03)"
         },
         "F06": {
-          "caption": "Christopher et al.: Standardkugeln vergleichen Reassignment-Gewinne der Arrays",
+          "caption": "Fig. 5 | Christopher et al.: Standardkugeln vergleichen Reassignment-Gewinne der Arrays",
           "interpretation": "a/b/c stehen für ML-1/ML-2/ML-3, jeweils mit WF, LS und mSIM. Rechts verengen sich normierte Profile von LS zu mSIM um 235→166, 247→186 beziehungsweise 246→178 nm. Maßstäbe für Gesamtfeld und Ausschnitt sind 10 μm und 500 nm. Normierung verdeckt absolute Lichtunterschiede und erlaubt keinen direkten Transmissionseffizienzvergleich. Diese Kugelergebnisse verwenden keine Dekonvolution. [Originalkugelvergleich](ref:R03)"
         }
       }

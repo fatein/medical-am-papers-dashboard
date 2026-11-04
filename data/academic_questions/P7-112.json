@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P7-112",
   "p": "P7",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [
@@ -155,27 +155,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Diederich et al.：焦平面与可拆接口共同定义模块",
+          "caption": "Fig. 1 | Diederich et al.：焦平面与可拆接口共同定义模块",
           "interpretation": "a 展示照明、聚光镜、物镜、管镜与传感器间的焦平面关系；b 分解盖板、螺钉、磁球、插件和电子板，c 是组合实物。统一接口仍要求光学件位置匹配。磁性连接旁没有位移误差坐标，不能作为重复拆装后的光轴保持测量。[UC2 原图](ref:R02)"
         },
         "F02": {
-          "caption": "McDermott et al.：红色连杆解释运动约束",
+          "caption": "Fig. 9 | McDermott et al.：红色连杆解释运动约束",
           "interpretation": "电机经过齿轮和螺杆驱动下方杠杆，红线标出平行四边形等效铰接链，上部为承载台，右侧为固定基座。图区分运动和固定件，解释光学件为何静止；它不是应力云图或循环寿命曲线。[机构原图](ref:R01)"
         },
         "F03": {
-          "caption": "McDermott et al.：平移需要多个驱动配合",
+          "caption": "Fig. 10 | McDermott et al.：平移需要多个驱动配合",
           "interpretation": "左、中、右分别示意正 X、Y、Z 运动；a、b、c 齿轮旁箭头表示转向。横向运动需要反向或加权驱动组合，不能按单电机单轴理解。图没有换向后的实际落点，运动学示意与误差测量是不同证据。[映射原图](ref:R01)"
         },
         "F04": {
-          "caption": "McDermott et al.：底座分开电源、数据与电机接口",
+          "caption": "Fig. 12 | McDermott et al.：底座分开电源、数据与电机接口",
           "interpretation": "Raspberry Pi 4 在下、Sangaboard v0.3 在上，分别标出 Power USB、Data USB、电机接口和 SD card access slot。接口可接近有利于维修；图没有电流、温升或通信延迟实测，不能从紧凑布置推导长期可靠性。[电子原图](ref:R01)"
         },
         "F05": {
-          "caption": "Wincott et al.：不同终端调用同一任务控制",
+          "caption": "Fig. 6 | Wincott et al.：不同终端调用同一任务控制",
           "interpretation": "A、B 为桌面和手机视图，C 是时间序列、Z-stack、拼接及相机窗口。终端变化没有新增机械反馈。显示步长是界面参数而非定位准确度；图支持任务可组合，不证明全部组合的完成率。[界面原图](ref:R03)"
         },
         "F06": {
-          "caption": "Sharkey et al.：返回误差随路径半径增长",
+          "caption": "Fig. 8 | Sharkey et al.：返回误差随路径半径增长",
           "interpretation": "横轴 Move Radius 为对数刻度，纵轴 Error，均为 μm。小半径红点低于 1 μm，大半径快速上升，插图落点云显示离群返回位置。最后可见点约 500 μm、5.6 μm，正文约 1 mm、15 μm 并非图中另一点。它检验路径后重复性而非最小步长。[误差原图](ref:R04)"
         }
       }
@@ -235,27 +235,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Diederich et al.: focal planes and detachable interfaces jointly define modules",
+          "caption": "Fig. 1 | Diederich et al.: focal planes and detachable interfaces jointly define modules",
           "interpretation": "a links focal planes of illumination, condenser, objective, tube lens and sensor; b separates lid, screws, magnetic balls, insert and electronics; c shows an assembly. Shared interfaces still require correctly positioned optics. There are no displacement-error axes beside the magnetic connection; it does not measure optical-axis retention after reassembly. [Original UC2 figure](ref:R02)"
         },
         "F02": {
-          "caption": "McDermott et al.: red links explain motion constraints",
+          "caption": "Fig. 9 | McDermott et al.: red links explain motion constraints",
           "interpretation": "Motor, gears and screw drive the lower lever; red lines identify the equivalent parallelogram joint chain, with the platform above and fixed base at right. Moving and stationary parts explain stationary optics. This is not a stress map or cyclic-lifetime curve. [Original mechanism](ref:R01)"
         },
         "F03": {
-          "caption": "McDermott et al.: translations require coordinated drives",
+          "caption": "Fig. 10 | McDermott et al.: translations require coordinated drives",
           "interpretation": "Left, centre and right show positive X, Y and Z motion; arrows beside gears a, b and c indicate rotation. Lateral motion needs opposing or weighted contributions rather than one independent axis per motor. Actual landing positions after reversal are absent; kinematics and error measurements are different evidence. [Original mapping](ref:R01)"
         },
         "F04": {
-          "caption": "McDermott et al.: the base separates power, data and motor access",
+          "caption": "Fig. 12 | McDermott et al.: the base separates power, data and motor access",
           "interpretation": "Raspberry Pi 4 sits below Sangaboard v0.3, with Power USB, Data USB, motor connectors and SD card access slot labelled. Accessible interfaces assist repair. No currents, thermal rises or communication latencies are measured; compact packaging does not establish long-term reliability. [Original electronics](ref:R01)"
         },
         "F05": {
-          "caption": "Wincott et al.: different terminals call common task controls",
+          "caption": "Fig. 6 | Wincott et al.: different terminals call common task controls",
           "interpretation": "A and B show desktop and phone layouts; C contains time-series, Z-stack, stitching and camera windows. Terminal changes add no mechanical feedback. Displayed step sizes are interface parameters rather than positioning accuracy. The figure supports task composition, not completion rates for all combinations. [Original interface](ref:R03)"
         },
         "F06": {
-          "caption": "Sharkey et al.: return errors increase with path radius",
+          "caption": "Fig. 8 | Sharkey et al.: return errors increase with path radius",
           "interpretation": "Move Radius is logarithmic and Error linear, both in μm. Small-radius red points remain below 1 μm, rising rapidly at larger radii; inset landing clouds show outliers. The last visible point is approximately 500 μm and 5.6 μm. Prose values of approximately 1 mm and 15 μm are not another plotted point. This tests post-path repeatability rather than minimum steps. [Original error plot](ref:R04)"
         }
       }
@@ -291,7 +291,7 @@
         {
           "id": "s4",
           "title": "Hardwarewechsel verlangt Funktionskenntnis im Steuerdienst",
-          "markdown": "Delta integriert Raspberry Pi 4 und Sangaboard im Sockel, getrennt durch 20 mm Abstandshalter mit M2.5-Befestigung und zugänglichen Strom-, USB- und Speicherkartenanschlüssen. OpenFlexure-Software 2.10 verwendet eine Python/Flask-Server-Client-Architektur. Browser und Skripte steuern Motoren, Kamera und Erfassung über eine API. Erweiterungen registrieren Schnittstellen und Bedienelemente zusätzlicher Hardware; jedes neue Modul verlangt daher keine vollständige Neuentwicklung des Steuerdiensts. [Softwareerweiterung und Elektronik](ref:R01)\n\nErweiterbarkeit setzt dennoch definierte Treiber und Befehlsbedeutungen voraus. Die programmierbare Beleuchtungserweiterung koordiniert Lichtzustände und Kameraaufnahme; Hardwaretriggerjitter, Wiederherstellungsraten nach Netzausfall und Synchronisationsfehler zwischen Geräten werden nicht gemessen. Sony IMX219 besitzt 8 MP beziehungsweise 3280×2464 Pixel. Nach Entfernung der ursprünglichen kurzbrennweitigen Linse entstehen ungleichmäßiger Hintergrund und Farbreaktion, die konfigurationsbezogene Korrektur benötigen. Gemeinsame Steckplätze und APIs garantieren keine weiterhin gültige Kalibrierung nach Detektorwechsel. OpenSCAD-Quellen, automatisch erzeugte STL-Dateien und versionierte Montageanleitungen sichern Dateizusammenhänge, ersetzen aber keine physikalische Kalibrierung.",
+          "markdown": "Delta integriert Raspberry Pi 4 und Sangaboard im Sockel, getrennt durch 20 mm Abstandshalter mit M2.5-Befestigung und zugänglichen Strom-, USB- und Speicherkartenanschlüssen. OpenFlexure-Software 2.10 verwendet eine Python/Flask-Server-Client-Architektur. Browser und Skripte steuern Motoren, Kamera und Erfassung über eine API. Erweiterungen registrieren Schnittstellen und Bedienelemente zusätzlicher Hardware; jedes neue Modul verlangt daher keine vollständige Neuentwicklung des Steuerdiensts. [Softwareerweiterung und Elektronik](ref:R01)\n\nErweiterbarkeit setzt dennoch definierte Treiber und Befehlsbedeutungen voraus. Die programmierbare Beleuchtungserweiterung koordiniert Lichtzustände und Kameraaufnahme; Hardwaretriggerjitter, Wiederherstellungsraten nach Netzwerkunterbrechungen und Synchronisationsfehler zwischen Geräten werden nicht gemessen. Sony IMX219 besitzt 8 MP beziehungsweise 3280×2464 Pixel. Nach Entfernung der ursprünglichen kurzbrennweitigen Linse entstehen ungleichmäßiger Hintergrund und Farbreaktion, die konfigurationsbezogene Korrektur benötigen. Gemeinsame Steckplätze und APIs garantieren keine weiterhin gültige Kalibrierung nach Detektorwechsel. OpenSCAD-Quellen, automatisch erzeugte STL-Dateien und versionierte Montageanleitungen sichern Dateizusammenhänge, ersetzen aber keine physikalische Kalibrierung.",
           "figure_ids": [
             "F04"
           ]
@@ -315,27 +315,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Diederich et al.: Fokalebenen und lösbare Schnittstellen definieren Module gemeinsam",
+          "caption": "Fig. 1 | Diederich et al.: Fokalebenen und lösbare Schnittstellen definieren Module gemeinsam",
           "interpretation": "a verbindet Fokalebenen von Beleuchtung, Kondensor, Objektiv, Tubuslinse und Sensor; b trennt Deckel, Schrauben, Magnetkugeln, Einsatz und Elektronik; c zeigt einen Aufbau. Gemeinsame Schnittstellen verlangen korrekt positionierte Optik. Wegfehlerachsen fehlen an der Magnetverbindung; Achserhalt nach Wiederzusammenbau wird nicht gemessen. [Original-UC2-Abbildung](ref:R02)"
         },
         "F02": {
-          "caption": "McDermott et al.: rote Verbindungen erklären Bewegungszwänge",
+          "caption": "Fig. 9 | McDermott et al.: rote Verbindungen erklären Bewegungszwänge",
           "interpretation": "Motor, Getriebe und Schraube bewegen den unteren Hebel; rote Linien markieren die äquivalente Parallelogramm-Gelenkkette, oben liegt der Tisch, rechts die feste Basis. Bewegte und feste Teile erklären stationäre Optik. Dies ist keine Spannungskarte oder Lebensdauerkurve. [Originalmechanismus](ref:R01)"
         },
         "F03": {
-          "caption": "McDermott et al.: Translation verlangt koordinierte Antriebe",
+          "caption": "Fig. 10 | McDermott et al.: Translation verlangt koordinierte Antriebe",
           "interpretation": "Links, mittig und rechts sind positive X-, Y- und Z-Bewegungen gezeigt; Pfeile neben a, b und c kennzeichnen Drehungen. Seitliche Bewegung benötigt gegenläufige oder gewichtete Beiträge statt einer unabhängigen Achse je Motor. Endpositionen nach Umkehr fehlen; Kinematik und Fehlermessung liefern unterschiedliche Evidenz. [Originalabbildung](ref:R01)"
         },
         "F04": {
-          "caption": "McDermott et al.: der Sockel trennt Strom-, Daten- und Motorzugang",
+          "caption": "Fig. 12 | McDermott et al.: der Sockel trennt Strom-, Daten- und Motorzugang",
           "interpretation": "Raspberry Pi 4 liegt unter Sangaboard v0.3; Power USB, Data USB, Motoranschlüsse und SD card access slot sind markiert. Zugänglichkeit unterstützt Reparaturen. Ströme, Temperaturanstiege und Kommunikationslatenzen sind ungemessen; kompakte Anordnung belegt keine langfristige Zuverlässigkeit. [Originalelektronik](ref:R01)"
         },
         "F05": {
-          "caption": "Wincott et al.: verschiedene Endgeräte rufen gemeinsame Aufgabensteuerung auf",
+          "caption": "Fig. 6 | Wincott et al.: verschiedene Endgeräte rufen gemeinsame Aufgabensteuerung auf",
           "interpretation": "A und B zeigen Computer- und Telefonansicht; C enthält Zeitserien-, Z-stack-, Stitching- und Kamerafenster. Andere Endgeräte liefern keine zusätzliche mechanische Rückmeldung. Schrittangaben sind Oberflächenparameter, keine Positionsgenauigkeit. Belegt wird Kombinierbarkeit, nicht die Erfolgsquote aller Kombinationen. [Originaloberfläche](ref:R03)"
         },
         "F06": {
-          "caption": "Sharkey et al.: Rückkehrfehler wachsen mit dem Wegradius",
+          "caption": "Fig. 8 | Sharkey et al.: Rückkehrfehler wachsen mit dem Wegradius",
           "interpretation": "Move Radius ist logarithmisch, Error linear, beide in μm. Rote Punkte kleiner Radien bleiben unter 1 μm und steigen bei größeren stark an; eingefügte Positionswolken zeigen Ausreißer. Der letzte sichtbare Punkt liegt bei ungefähr 500 μm und 5.6 μm. Textwerte von ungefähr 1 mm und 15 μm bilden keinen weiteren Grafikpunkt. Geprüft wird Wiederholbarkeit nach Bewegung, nicht kleinste Schrittweite. [Originalfehlerkurve](ref:R04)"
         }
       }

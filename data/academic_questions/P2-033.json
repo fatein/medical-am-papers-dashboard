@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P2-033",
   "p": "P2",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-04",
   "related_paper_ids": [
@@ -184,27 +184,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Devin et al.（© IMechE 2024）：压缩曲线与相对密度—模量关系",
+          "caption": "Figure 5. · Devin et al.（© IMechE 2024）：压缩曲线与相对密度—模量关系",
           "interpretation": "a 横轴为应变百分比、纵轴为应力 kPa，圆点为试验、直线为拟合；b 将拟合模量与相对密度关联。D1 到 D4、再到实心 EL50，斜率逐步增大。模量不能由 a 图的斜率数值直接照抄为 kPa，因为横轴使用百分数，应变换算后才得到 MPa。该图验证了结构调节材料响应的范围，但没有测量穿戴压力；把最软配方选为全腔材料仍需下一步空间载荷比较。[原压缩图](ref:R01)"
         },
         "F02": {
-          "caption": "Devin et al.（© IMechE 2024）：局部分区衬套与均质硅胶的压力比较",
+          "caption": "Figure 9. · Devin et al.（© IMechE 2024）：局部分区衬套与均质硅胶的压力比较",
           "interpretation": "a 的灰柱为硅胶、红斜线柱为定制衬套；主要差别在 DTE、DFE 两个远端骨突，PT、PF 的柱高接近。b 则比较各均质方案和定制方案的 PV，不能将其误读为受试者间标准差。定制方案比 D1 更均匀，展示“按位置分配刚度”与“全部变软”的区别。两图都是同一有限元设定的结果，没有临床样本误差条，不能从柱高差直接推断统计显著性。[区域压力原图](ref:R01)"
         },
         "F03": {
-          "caption": "Myers et al.：几何改变与三个压缩位移的载荷响应",
-          "interpretation": "a 从左至右为压缩 1、2、3 cm 所需平均载荷，横轴列出圆角、厚度和单元数改变；蓝线为偏置菱形，红虚线为内凹拉胀结构。圆角变化带来的增硬在两种几何中不同，不能仅按相同名义密度套用刚度。b 的 A、B、C 展示低密度、高密度及过渡结构；过渡样品是制造展示，并不是新的临床减压曲线。星号标注最高、最低柔硬配置，含义不是显著性标记。[原载荷与结构图](ref:R02)"
+          "caption": "Figure 5. · Myers et al.：几何改变与三个压缩位移的载荷响应",
+          "interpretation": "a 从左至右为压缩 1、2、3 cm 所需平均载荷，横轴列出圆角、厚度和单元数改变；蓝线为偏置菱形，红虚线为内凹拉胀结构。圆角变化带来的增硬在两种几何中不同，不能仅按相同名义密度套用刚度。b 的 A、B、C 展示低密度、高密度及过渡结构；过渡样品是制造展示，并不是新的临床减压曲线。星号标注最高、最低柔硬配置，含义不是显著性标记。图中为各配置的平均载荷；正文的 94.83 N 和 22.61 N 是最高、最低单次记录，不应直接当作这里的均值。[原载荷与结构图](ref:R02)"
         },
         "F04": {
-          "caption": "Dugas et al.：同一总载荷下，模拟步态改变测区输出",
+          "caption": "Fig. 4 · Dugas et al.：同一总载荷下，模拟步态改变测区输出",
           "interpretation": "总载荷固定为 600 N。左图蓝星、绿圆、红圆分别为支撑中期、预摆动和承重响应；右侧模型标明 AP、AD、PP 的单元位置。AP 区预摆动输出升高、承重响应降低，AD 和 PP 则显示相反重分布。单元编号是空间网格坐标，不是患者编号。纵轴明确标为 ADC 输出，连线用于展示条件差别，不能解释成连续时间的行走轨迹，也不是直接测得的人体压力单位。[原灵敏度图](ref:R03)"
         },
         "F05": {
-          "caption": "Lee et al.：坐、站、走三种活动的相对压力感受",
+          "caption": "Fig. 3 · Lee et al.：坐、站、走三种活动的相对压力感受",
           "interpretation": "纵轴 50 为与常规界面相同，高于 50 才偏向新界面；圆、菱形、方块分别是坐、站、走。第 1、2 个单元站立和行走评价较高，坐姿却在中线；第 4、5、6、8 个单元部分评分低于或接近中线。可见“患者更舒适”不能用一个统一方向概括所有动作。这是相对压力感受评分，不是传感器压力，也不能把高分理解为更高的物理压力。[问卷原图及评分定义](ref:R04)"
         },
         "F06": {
-          "caption": "Xie et al.：界面热像与不同载荷下的温升",
+          "caption": "Fig. 9 · Xie et al.：界面热像与不同载荷下的温升",
           "interpretation": "a–c 为丙烯酸材料分别接触两种泡沫和硅胶衬套织物面的热像；d、e 为 0.8、8.0 N 下的温升，注意两图纵轴量程不同。硅胶组各配对温升较低，但泡沫配对并非所有材料都按同一顺序排列；原图中第一种泡沫多数柱高于第二种，与正文笼统排序有出入，因此这里按图保留具体条件。热像亮区反映局部材料接触发热，不能据此判断皮肤灌注、溃疡发生率或整个接受腔的散热性能。[原热像与实验条件](ref:R06)"
         }
       }
@@ -264,27 +264,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Devin et al. (© IMechE 2024): compression curves and relative-density–modulus relationship",
+          "caption": "Figure 5. · Devin et al. (© IMechE 2024): compression curves and relative-density–modulus relationship",
           "interpretation": "Panel a plots percentage strain against stress in kPa, with experimental circles and fitted lines; b relates fitted modulus to relative density. Slopes rise from D1 through D4 to solid EL50. A plotted slope in a cannot simply be copied as a modulus in kPa because strain is expressed in percent; conversion yields MPa. The figure establishes the architectural range of material response, not wearing pressure. Choosing the softest design for an entire interface still requires spatial load comparisons.[Original compression plot](ref:R01)"
         },
         "F02": {
-          "caption": "Devin et al. (© IMechE 2024): regional liner versus uniform silicone pressure comparison",
+          "caption": "Figure 9. · Devin et al. (© IMechE 2024): regional liner versus uniform silicone pressure comparison",
           "interpretation": "In a, gray bars represent silicone and red-hatched bars the custom liner. Differences concentrate at distal bony sites DTE and DFE, with similar PT and PF values. Panel b compares PV among homogeneous and custom designs; it is not a between-participant standard deviation. The custom design is more uniform than D1, distinguishing regional stiffness allocation from softening everything. Both panels derive from the same finite-element configuration and lack clinical-sample error bars; bar differences do not imply statistical significance.[Original regional pressures](ref:R01)"
         },
         "F03": {
-          "caption": "Myers et al.: geometric changes and load responses at three compressive displacements",
-          "interpretation": "Across a, the plots show mean forces for 1, 2 and 3 cm compression; the horizontal categories alter blend radius, thickness or cell count. Blue denotes offset diamond and red dashed lines re-entrant auxetic structures. Joint rounding stiffens the geometries differently, preventing inference of stiffness solely from matching nominal density. In b, A, B and C display low-density, high-density and transitional structures. The transition piece demonstrates fabrication, not a new clinical offloading curve. Stars identify maximum and minimum firmness configurations, not statistical significance.[Original load and architecture figure](ref:R02)"
+          "caption": "Figure 5. · Myers et al.: geometric changes and load responses at three compressive displacements",
+          "interpretation": "Across a, the plots show mean forces for 1, 2 and 3 cm compression; the horizontal categories alter blend radius, thickness or cell count. Blue denotes offset diamond and red dashed lines re-entrant auxetic structures. Joint rounding stiffens the geometries differently, preventing inference of stiffness solely from matching nominal density. In b, A, B and C display low-density, high-density and transitional structures. The transition piece demonstrates fabrication, not a new clinical offloading curve. Stars identify maximum and minimum firmness configurations, not statistical significance. The plotted forces are configuration means; the text’s 94.83 N and 22.61 N are the highest and lowest individual records, not these means.[Original load and architecture figure](ref:R02)"
         },
         "F04": {
-          "caption": "Dugas et al.: simulated gait changes regional outputs at the same total load",
+          "caption": "Fig. 4 · Dugas et al.: simulated gait changes regional outputs at the same total load",
           "interpretation": "Total load is fixed at 600 N. Blue stars, green circles and red circles denote midstance, preswing and loading response; the right-hand model locates AP, AD and PP cells. AP output rises in preswing and falls during loading response, while AD and PP show the opposite redistribution. Cell labels are spatial grid coordinates, not patient identifiers. The vertical axis explicitly reports ADC output. Connecting lines illustrate condition differences, not a continuous walking time series or direct human-pressure units.[Original sensitivity plot](ref:R03)"
         },
         "F05": {
-          "caption": "Lee et al.: comparative pressure experience during sitting, standing and walking",
+          "caption": "Fig. 3 · Lee et al.: comparative pressure experience during sitting, standing and walking",
           "interpretation": "A score of 50 means equivalent to the conventional interface; values above 50 favor the novel interface. Circles, diamonds and squares denote sitting, standing and walking. Units 1 and 2 rate standing and walking highly but sitting at the reference line; units 4, 5, 6 and 8 include ratings near or below it. “Greater comfort” therefore cannot describe every activity with one direction. These are comparative pressure-experience ratings, not sensor pressures; a higher score does not mean higher physical pressure.[Original questionnaire and scoring definition](ref:R04)"
         },
         "F06": {
-          "caption": "Xie et al.: interface thermal images and temperature rise under different loads",
+          "caption": "Fig. 9 · Xie et al.: interface thermal images and temperature rise under different loads",
           "interpretation": "Panels a–c show acrylic against the two foams and the silicone liner's fabric face. Panels d and e report temperature rise at 0.8 and 8.0 N, with different vertical-axis ranges. Silicone pairings heat less, but foam rankings are not identical for every socket material. Most bars for the first foam exceed those for the second, differing from the prose's broad ordering; the interpretation therefore retains the plotted conditions. Bright thermal regions indicate local frictional heating of material contact, not skin perfusion, ulcer incidence or whole-socket heat dissipation.[Original thermal images and experimental conditions](ref:R06)"
         }
       }
@@ -312,7 +312,7 @@
         {
           "id": "graded_release",
           "title": "Graduierte Gitter erfüllten die Kompressionsanforderung, nicht die Entlastungsvorgabe",
-          "markdown": "Myers et al. untersuchten transhumerale Schäfte mit Kompressions-Entlastungs-Stabilisierung und wollten dichte Kompressionszonen allmählich in nachgiebige Entlastungszonen überführen. Die Proben waren 5.08 cm große Würfel aus 80A-TPU. Verglichen wurden versetzte Diamant- und einspringende auxetische Zellen mit Änderungen von Verbindungsrundung, Balkendicke und Zellzahl. Je 16 Bedingungen wurden mit 3 Wiederholungen bei 1, 2 und 3 cm Verschiebung geprüft: insgesamt 144 Kompressionsbedingungen. Alle regulär geprüften Würfel waren intern homogen; graduierte Demonstratoren entstanden anschließend.[Struktur und Prüfstandversuche](ref:R02)\n\nDie Kompressionszone sollte mindestens 65 N für 1 cm Verschiebung benötigen, die Entlastungszone höchstens 10 N für 3 cm. Der höchste Einzelwert betrug 94.83 N und erfüllte die erste Vorgabe; der niedrigste lag noch bei 22.61 N und verfehlte die zweite. Versetzte Diamantzellen mit veränderter Verbindungsrundung ermöglichten einen großen Einstellbereich. Druckbare hohe und niedrige Dichten belegten jedoch nicht den vollständigen Funktionsbereich. Die Kraftvorgaben stammen aus einer bestimmten Oberarmfunktion und sind keine allgemeinen hautverträglichen Druckgrenzen. Scherdehnung, Ulzera oder Tragekomfort wurden nicht an Personen gemessen.",
+          "markdown": "Myers et al. untersuchten transhumerale Schäfte mit Kompressions-Entlastungs-Stabilisierung und wollten dichte Kompressionszonen allmählich in nachgiebige Entlastungszonen überführen. Die Proben waren 5.08 cm große Würfel aus 80A-TPU. Verglichen wurden versetzte Diamant- und einspringende auxetische Zellen mit Änderungen von Verbindungsrundung, Balkendicke und Zellzahl. Die 16 Bedingungen wurden jeweils mit 3 Wiederholungen bei 1, 2 und 3 cm Verschiebung geprüft: insgesamt 144 Kompressionsbedingungen. Alle regulär geprüften Würfel waren intern homogen; graduierte Demonstratoren entstanden anschließend.[Struktur und Prüfstandversuche](ref:R02)\n\nDie Kompressionszone sollte mindestens 65 N für 1 cm Verschiebung benötigen, die Entlastungszone höchstens 10 N für 3 cm. Der höchste Einzelwert betrug 94.83 N und erfüllte die erste Vorgabe; der niedrigste lag noch bei 22.61 N und verfehlte die zweite. Versetzte Diamantzellen mit veränderter Verbindungsrundung ermöglichten einen großen Einstellbereich. Druckbare hohe und niedrige Dichten belegten jedoch nicht den vollständigen Funktionsbereich. Die Kraftvorgaben stammen aus einer bestimmten Oberarmfunktion und sind keine allgemeinen hautverträglichen Druckgrenzen. Scherdehnung, Ulzera oder Tragekomfort wurden nicht an Personen gemessen.",
           "figure_ids": [
             "F03"
           ]
@@ -328,7 +328,7 @@
         {
           "id": "clinical_experience",
           "title": "Lokale klinische Entlastung und allgemeiner Komfort verändern sich nicht immer gemeinsam",
-          "markdown": "Lee et al. verglichen eine bildgebungs- und Finite-Elemente-gestützte Liner-Schaft-Kombination mit konventionellen Schnittstellen bei 8 Personen und 9 Stümpfen. Die neuen Schäfte erhielten zusätzlich manuelle Entlastungen und Anpassungen. Der mediane normalisierte Druck an der vorderen distalen Tibia im Stehen betrug konventionell 0.886 und mit neuer Schnittstelle 0.467, p=0.012; andere Stellen unterschieden sich nicht signifikant. Die vergleichende Bewertung des Druckgefühls im Sitzen erreichte einen Median von 52, wobei 50 Gleichwertigkeit mit konventionell bedeutete, p=0.031. Allgemeine Passform- oder Druckbewertungen beim Stehen und Gehen verbesserten sich nicht signifikant. Einige Personen berichteten zudem Beschwerden durch den dickeren, bei Kniebeugung in der Kniekehle zusammengeschobenen Liner. Ein Entwurf kann somit lokal entlasten und zugleich eine andere Bewegung einschränken.[Druck, Fragebogen und qualitative Rückmeldungen](ref:R04)\n\nOwen et al. untersuchten eine örtlich begrenzte Lösung: Weiche Polymerinlays mit Dreieckszellen wurden in formgleiche Nachbildungen der gewohnten Schäfte eingesetzt und mit formgleichen Schäften ohne Inlays verglichen. Die 3 Personen trugen beide Bedingungen jeweils 4 Wochen; am Periodenende wurde der Druck beim ebenen Gehen gemessen. Der distale Tibiaspitzendruck in der mittleren Standphase sank bei 2 Personen; die andere zeigte nicht dieselbe Reaktion. Dies ist vorläufige Humannachweislage für austauschbare lokale Inlays, keine allgemein wirksame Reduktionsgröße oder ein Nachweis seltenerer Hautschäden.[Crossover-Untersuchung lokaler Inlays](ref:R05)",
+          "markdown": "Lee et al. verglichen eine bildgebungs- und Finite-Elemente-gestützte Liner-Schaft-Kombination mit konventionellen Schnittstellen bei 8 Personen und 9 Stümpfen. Die neuen Schäfte erhielten zusätzlich manuelle Entlastungen und Anpassungen. Der mediane normalisierte Druck an der vorderen distalen Tibia im Stehen betrug konventionell 0.886 und mit neuer Schnittstelle 0.467, p=0.012; andere Stellen unterschieden sich nicht signifikant. Die vergleichende Bewertung des Druckgefühls im Sitzen erreichte einen Median von 52, wobei 50 Gleichwertigkeit mit konventionell bedeutete, p=0.031. Allgemeine Passform- oder Druckbewertungen beim Stehen und Gehen verbesserten sich nicht signifikant. Einige Personen berichteten zudem Beschwerden durch den dickeren, bei Kniebeugung in der Kniekehle zusammengeschobenen Liner. Ein Entwurf kann somit lokal entlasten und zugleich eine andere Bewegung einschränken.[Druck, Fragebogen und qualitative Rückmeldungen](ref:R04)\n\nOwen et al. untersuchten eine örtlich begrenzte Lösung: Weiche Polymerinlays mit Dreieckszellen wurden in formgleiche Nachbildungen der gewohnten Schäfte eingesetzt und mit formgleichen Schäften ohne Inlays verglichen. Die 3 Personen trugen beide Bedingungen jeweils 4 Wochen; am Periodenende wurde der Druck beim ebenen Gehen gemessen. Der distale Tibiaspitzendruck in der mittleren Standphase sank bei 2 Personen; die andere zeigte nicht dieselbe Reaktion. Dies ist vorläufige klinische Evidenz für austauschbare lokale Inlays, keine allgemein wirksame Reduktionsgröße oder ein Nachweis seltenerer Hautschäden.[Crossover-Untersuchung lokaler Inlays](ref:R05)",
           "figure_ids": [
             "F05"
           ]
@@ -344,27 +344,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Devin et al. (© IMechE 2024): Druckkurven und Beziehung zwischen relativer Dichte und Modul",
+          "caption": "Figure 5. · Devin et al. (© IMechE 2024): Druckkurven und Beziehung zwischen relativer Dichte und Modul",
           "interpretation": "In a stehen prozentuale Dehnung und Spannung in kPa gegenüber; Kreise sind Versuche, Geraden Anpassungen. b verbindet den Modul mit relativer Dichte. Die Steigungen nehmen von D1 über D4 bis zum massiven EL50 zu. Eine grafische Steigung aus a darf wegen der prozentualen Dehnungsachse nicht unmittelbar als Modul in kPa übernommen werden; erst die Umrechnung liefert MPa. Die Abbildung belegt den strukturellen Einstellbereich des Materialverhaltens, keine Tragedrücke. Die Wahl der weichsten Variante für die gesamte Schnittstelle erfordert zusätzlich einen räumlichen Lastvergleich.[Originaldruckdiagramm](ref:R01)"
         },
         "F02": {
-          "caption": "Devin et al. (© IMechE 2024): Druckvergleich regionaler Liner und homogenes Silikon",
+          "caption": "Figure 9. · Devin et al. (© IMechE 2024): Druckvergleich regionaler Liner und homogenes Silikon",
           "interpretation": "In a stehen graue Säulen für Silikon und rot schraffierte für den angepassten Liner. Unterschiede liegen vor allem an den distalen Knochenstellen DTE und DFE; PT und PF bleiben ähnlich. b vergleicht PV homogener und angepasster Entwürfe, keine Standardabweichung zwischen Personen. Der angepasste Entwurf ist gleichmäßiger als D1 und unterscheidet somit regionale Steifigkeitszuordnung vom durchgehenden Erweichen. Beide Darstellungen entstammen derselben Finite-Elemente-Konfiguration ohne Fehlerbalken klinischer Stichproben. Säulendifferenzen belegen keine statistische Signifikanz.[Originale regionale Drücke](ref:R01)"
         },
         "F03": {
-          "caption": "Myers et al.: Geometrieänderungen und Lastantwort bei drei Kompressionswegen",
-          "interpretation": "In a zeigen die Diagramme von links nach rechts mittlere Kräfte für 1, 2 und 3 cm Kompression. Horizontal werden Rundung, Dicke oder Zellzahl verändert. Blau bezeichnet versetzte Diamanten, rote gestrichelte Linien einspringende auxetische Strukturen. Rundungen versteifen beide Geometrien unterschiedlich; gleiche nominale Dichte erlaubt daher keine identische Steifigkeitszuordnung. In b zeigen A, B und C niedrige Dichte, hohe Dichte und den Übergang. Das Übergangsteil demonstriert die Fertigung, keine zusätzliche klinische Entlastungskurve. Sterne markieren höchste und niedrigste Steifigkeit, keine statistische Signifikanz.[Originale Last- und Strukturabbildung](ref:R02)"
+          "caption": "Figure 5. · Myers et al.: Geometrieänderungen und Lastantwort bei drei Kompressionswegen",
+          "interpretation": "In a zeigen die Diagramme von links nach rechts mittlere Kräfte für 1, 2 und 3 cm Kompression. Horizontal werden Rundung, Dicke oder Zellzahl verändert. Blau bezeichnet versetzte Diamanten, rote gestrichelte Linien einspringende auxetische Strukturen. Rundungen versteifen beide Geometrien unterschiedlich; gleiche nominale Dichte erlaubt daher keine identische Steifigkeitszuordnung. In b zeigen A, B und C niedrige Dichte, hohe Dichte und den Übergang. Das Übergangsteil demonstriert die Fertigung, keine zusätzliche klinische Entlastungskurve. Sterne markieren höchste und niedrigste Steifigkeit, keine statistische Signifikanz. Dargestellt sind Mittelwerte je Konfiguration; die im Text genannten 94.83 N und 22.61 N sind höchste beziehungsweise niedrigste Einzelwerte, nicht diese Mittelwerte.[Originale Last- und Strukturabbildung](ref:R02)"
         },
         "F04": {
-          "caption": "Dugas et al.: simulierte Gangphasen verändern regionale Signale bei gleicher Gesamtlast",
+          "caption": "Fig. 4 · Dugas et al.: simulierte Gangphasen verändern regionale Signale bei gleicher Gesamtlast",
           "interpretation": "Die Gesamtlast beträgt konstant 600 N. Blaue Sterne, grüne und rote Kreise markieren mittlere Standphase, Vorschwung und Belastungsübernahme; rechts sind AP-, AD- und PP-Zellen lokalisiert. Das AP-Signal steigt im Vorschwung und sinkt bei Belastungsübernahme; AD und PP zeigen die umgekehrte Umlagerung. Zellnummern sind räumliche Gitterkoordinaten, keine Personenkennungen. Die vertikale Achse bezeichnet ausdrücklich ADC-Signale. Verbindungslinien zeigen Bedingungsunterschiede, keine kontinuierliche Gangzeitreihe oder direkt gemessene menschliche Druckeinheiten.[Originales Empfindlichkeitsdiagramm](ref:R03)"
         },
         "F05": {
-          "caption": "Lee et al.: vergleichendes Druckempfinden im Sitzen, Stehen und Gehen",
+          "caption": "Fig. 3 · Lee et al.: vergleichendes Druckempfinden im Sitzen, Stehen und Gehen",
           "interpretation": "Ein Wert von 50 bedeutet Gleichwertigkeit mit der konventionellen Schnittstelle; Werte über 50 bevorzugen die neue. Kreise, Rauten und Quadrate stehen für Sitzen, Stehen und Gehen. Einheiten 1 und 2 bewerten Stehen und Gehen hoch, Sitzen jedoch an der Referenzlinie; bei 4, 5, 6 und 8 liegen einige Werte nahe oder unter ihr. „Mehr Komfort“ beschreibt daher nicht sämtliche Aktivitäten einheitlich. Dies sind vergleichende Druckempfindungsbewertungen, keine Sensordrücke; ein höherer Wert bedeutet keinen höheren physikalischen Druck.[Originalfragebogen und Bewertungsdefinition](ref:R04)"
         },
         "F06": {
-          "caption": "Xie et al.: Wärmebilder der Grenzfläche und Temperaturanstieg bei verschiedenen Lasten",
+          "caption": "Fig. 9 · Xie et al.: Wärmebilder der Grenzfläche und Temperaturanstieg bei verschiedenen Lasten",
           "interpretation": "a–c zeigen Acrylkontakt mit den beiden Schäumen und der Textilseite des Silikonliners. d und e stellen den Temperaturanstieg bei 0.8 und 8.0 N dar; die vertikalen Achsen haben unterschiedliche Bereiche. Silikonpaarungen erwärmen sich weniger, die Reihenfolge der Schäume ist aber nicht bei jedem Schaftmaterial gleich. Meist liegt der erste Schaum über dem zweiten, abweichend von der pauschalen Reihenfolge im Text. Die Interpretation bleibt deshalb bei den dargestellten Bedingungen. Helle Wärmebildbereiche zeigen lokale Reibungswärme am Materialkontakt, keine Hautperfusion, Ulkushäufigkeit oder Wärmeabgabe des gesamten Schafts.[Originalwärmebilder und Versuchsbedingungen](ref:R06)"
         }
       }

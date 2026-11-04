@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P6-088",
   "p": "P6",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [
@@ -139,7 +139,7 @@
         {
           "id": "s5",
           "title": "空间能力、信心与耐受性决定谁能完成任务，不能由平均分代替",
-          "markdown": "在交叉研究中，心理旋转测验成绩越高，复杂任务的 VR 相对桌面优势越大，相关系数 r=0.31，P=0.018。这与“空间能力较弱者必然更需要、也更受益于 VR”的直觉相反。作者提出较强空间能力者可能更快掌握新界面，但并未单独测量这种适应机制。散点图中同一能力水平仍存在正负两种差值，不能按测验分数保证个人收益。[空间能力与个体差异](ref:R03)\n\n信心并没有随平均成绩出现显著提升：VR 为 3.30 ± 1.20，桌面为 3.21 ± 1.19，P=0.305。两种条件下信心与准确性的关联系数均为 0.41，也没有显示 VR 的自我判断校准更好。该分析只选取可作二元评分的肝段识别和血管路径题，不能泛指全部临床决策信心；它属于探索性分析，未纳入主要假设的多重检验校正。\n\n最初招募 62 人，最终分析 58 人；退出包括 2 人晕动不适、1 人问卷不完整及1 人难以理解术语。排除未完成者后的平均表现不包含这些使用障碍。比较设备时，身体耐受和语言任务要求影响谁能进入最终样本；“完成者得分较高”并不能说明每位学员都能在相同条件下使用。\n\n该研究的桌面参与者大多已有相关操作经验，VR 对多数人较新。短期技术熟悉既可能低估尚未掌握设备者的表现，也可能使后半程练习效应与病例难度混在一起。研究没有按长期熟练程度匹配后再重复比较。",
+          "markdown": "在交叉研究中，心理旋转测验成绩越高，复杂任务的 VR 相对桌面优势越大，相关系数 r=0.31，P=0.018。这与“空间能力较弱者必然更需要、也更受益于 VR”的直觉相反。作者提出较强空间能力者可能更快掌握新界面，但并未单独测量这种适应机制。散点图中同一能力水平仍存在正负两种差值，不能按测验分数保证个人收益。[空间能力与个体差异](ref:R03)\n\n信心并没有随平均成绩出现显著提升：VR 为 3.30 ± 1.20，桌面为 3.21 ± 1.19，P=0.305。两种条件下信心与准确性的 Goodman–Kruskal γ 系数均为 0.41，也没有显示 VR 的自我判断校准更好。该分析只选取可作二元评分的肝段识别和血管路径题，不能泛指全部临床决策信心；它属于探索性分析，未纳入主要假设的多重检验校正。\n\n最初招募 62 人，最终分析 58 人；退出包括 2 人晕动不适、1 人问卷不完整及1 人难以理解术语。排除未完成者后的平均表现不包含这些使用障碍。比较设备时，身体耐受和语言任务要求影响谁能进入最终样本；“完成者得分较高”并不能说明每位学员都能在相同条件下使用。\n\n该研究的桌面参与者大多已有相关操作经验，VR 对多数人较新。短期技术熟悉既可能低估尚未掌握设备者的表现，也可能使后半程练习效应与病例难度混在一起。研究没有按长期熟练程度匹配后再重复比较。",
           "figure_ids": [
             "F06"
           ]
@@ -153,27 +153,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Huettl et al.：同一肝脏重建的实体、屏幕与 VR 表示。",
+          "caption": "Figure 1 | Huettl et al.：同一肝脏重建的实体、屏幕与 VR 表示。",
           "interpretation": "A 为透明实体包围彩色内部结构，B 为三维 PDF，C 为 VR 截图；黄色病灶与分支关系可跨画面对照。外层透明程度、颜色与光照存在差别，因此共享网格不等于视觉输入完全相同。静态截图还不能传达 VR 的双目深度或实体的手持反馈，须结合研究中的交互方法理解。[表示方式](ref:R01)"
         },
         "F02": {
-          "caption": "Huettl et al.：按显示方式与经验层级分组的定位用时。",
+          "caption": "Figure 5 | Huettl et al.：按显示方式与经验层级分组的定位用时。",
           "interpretation": "横轴分为 VR、PDF、PR，灰阶区分学生、住院医师、进修医师与专家。纵轴采用对数尺度，不能把刻度直接当作秒数，也不能把箱体高度理解为线性时间比例。实体组整体较低，经验层级仍有分布重叠；星号比较经验组，不应误读为每一相邻箱体均有显著差异。[时间分析](ref:R01)"
         },
         "F03": {
-          "caption": "Preukschas et al.：正确答案数与回答用时的随机组比较。",
+          "caption": "Fig. 6 | Preukschas et al.：正确答案数与回答用时的随机组比较。",
           "interpretation": "上图纵轴为正确答案数，下图为分钟；蓝色为切片，橙色为屏幕三维，绿色为 VR。屏幕三维与 VR 的箱体接近，两者之间标注不显著；相对切片组，两种重建都提高正确性并减少用时。菱形是离群值，箱图并未显示个别错误属于血管、肝段还是切除问题。[随机比较结果](ref:R02)"
         },
         "F04": {
-          "caption": "Zolkin et al.：单病灶与双病灶的实验模型。",
+          "caption": "Fig. 2 | Zolkin et al.：单病灶与双病灶的实验模型。",
           "interpretation": "A–B 各含单个病灶，C–D 各含两个病灶；肝脏外形半透明，蓝紫红色分支提供位置参照。病灶为人工加入，分支经过简化，实验比较的是同时追踪目标数增加后的空间任务。图片不能证明复杂组具有更严重的临床疾病，也没有定量标尺用以读取病灶到血管的实际距离。[模型构建](ref:R03)"
         },
         "F05": {
-          "caption": "Zolkin et al.：复杂任务的逐人配对成绩。",
+          "caption": "Fig. 5 | Zolkin et al.：复杂任务的逐人配对成绩。",
           "interpretation": "横轴为桌面与 VR，纵轴为问卷成绩；每条线连接同一参与者的两次条件。青绿色上升线、灰色不变线与红色下降线并存，箱体显示总体分布。读图时应同时看总体提高和下降者，而不能把平均值差当作人人增加相同分数；它也不是随培训次数变化的学习曲线。[配对成绩](ref:R03)"
         },
         "F06": {
-          "caption": "Zolkin et al.：心理旋转能力与 VR 相对成绩差的关系。",
+          "caption": "Fig. 7 | Zolkin et al.：心理旋转能力与 VR 相对成绩差的关系。",
           "interpretation": "横轴为心理旋转测验成绩，纵轴为复杂任务 VR 减桌面的成绩差。拟合线缓慢上升，阴影为置信区间，散点却广泛分布于零线上下。它支持群体层面的正相关，不支持按空间能力给个人确定获益；正相关也不能证明其机制是更强立体视觉或更快学习控制器。[能力关联分析](ref:R03)"
         }
       }
@@ -218,7 +218,7 @@
         {
           "id": "s5",
           "title": "Spatial ability, confidence and tolerance determine who can complete the task",
-          "markdown": "In the crossover study, higher mental-rotation scores correlated with a larger complex-task advantage for VR over desktop, r=0.31, P=0.018. This contradicts the intuition that poorer spatial ability necessarily produces greater VR benefit. The authors suggest that stronger spatial skills might facilitate faster interface adaptation, but did not measure that mechanism separately. The scatterplot contains positive and negative differences at similar ability levels, precluding guarantees of individual benefit from test scores. [Spatial ability and individual variation](ref:R03)\n\nConfidence did not increase significantly with the mean performance advantage: VR was 3.30 ± 1.20 versus 3.21 ± 1.19 on desktop, P=0.305. Confidence–accuracy association was 0.41 in both conditions, without better calibration in VR. This analysis included only binary-scored segment-identification and vessel-pathway items, not all clinical decision confidence. It was exploratory and outside the multiple-testing correction for primary hypotheses.\n\nOf 62 recruited participants, 58 were analyzed. Exclusions included 2 with motion sickness, 1 with incomplete questionnaires and 1 with difficulty understanding terminology. Average performance after excluding non-completers does not include these barriers. Physical tolerance and language requirements affect entry into the final sample; better scores among completers do not imply that every learner can use the system under identical conditions.\n\nMost participants had prior desktop interaction experience, whereas VR was new to most. Brief familiarization can disadvantage those still learning controls and also confound later practice effects with case difficulty. The study did not repeat comparisons after matching long-term interface proficiency.",
+          "markdown": "In the crossover study, higher mental-rotation scores correlated with a larger complex-task advantage for VR over desktop, r=0.31, P=0.018. This contradicts the intuition that poorer spatial ability necessarily produces greater VR benefit. The authors suggest that stronger spatial skills might facilitate faster interface adaptation, but did not measure that mechanism separately. The scatterplot contains positive and negative differences at similar ability levels, precluding guarantees of individual benefit from test scores. [Spatial ability and individual variation](ref:R03)\n\nConfidence did not increase significantly with the mean performance advantage: VR was 3.30 ± 1.20 versus 3.21 ± 1.19 on desktop, P=0.305. The Goodman–Kruskal γ coefficient for confidence–accuracy association was 0.41 in both conditions, without better calibration in VR. This analysis included only binary-scored segment-identification and vessel-pathway items, not all clinical decision confidence. It was exploratory and outside the multiple-testing correction for primary hypotheses.\n\nOf 62 recruited participants, 58 were analyzed. Exclusions included 2 with motion sickness, 1 with incomplete questionnaires and 1 with difficulty understanding terminology. Average performance after excluding non-completers does not include these barriers. Physical tolerance and language requirements affect entry into the final sample; better scores among completers do not imply that every learner can use the system under identical conditions.\n\nMost participants had prior desktop interaction experience, whereas VR was new to most. Brief familiarization can disadvantage those still learning controls and also confound later practice effects with case difficulty. The study did not repeat comparisons after matching long-term interface proficiency.",
           "figure_ids": [
             "F06"
           ]
@@ -232,27 +232,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Huettl et al.: Physical, screen and VR representations of the same liver reconstruction.",
+          "caption": "Figure 1 | Huettl et al.: Physical, screen and VR representations of the same liver reconstruction.",
           "interpretation": "A shows a transparent physical exterior enclosing colored structures, B the three-dimensional PDF and C a VR screenshot. Yellow lesions and branch relationships can be compared across panels. Transparency, colors and illumination differ, so shared meshes do not mean identical visual input. Static screenshots cannot convey binocular VR depth or handheld physical feedback; the interaction methods remain essential. [Presentation modalities](ref:R01)"
         },
         "F02": {
-          "caption": "Huettl et al.: Localization time by modality and experience level.",
+          "caption": "Figure 5 | Huettl et al.: Localization time by modality and experience level.",
           "interpretation": "The horizontal groups are VR, PDF and PR; grayscale separates students, residents, fellows and experts. The vertical axis is logarithmic, so ticks are not seconds and box heights are not linear time ratios. Physical-model distributions are generally lower, with overlapping experience groups. Stars compare experience levels, not every adjacent pair of boxes. [Time analysis](ref:R01)"
         },
         "F03": {
-          "caption": "Preukschas et al.: Randomized-group comparison of correct answers and response time.",
+          "caption": "Fig. 6 | Preukschas et al.: Randomized-group comparison of correct answers and response time.",
           "interpretation": "The upper axis shows correct answers and the lower axis minutes. Blue denotes sections, orange screen-based three-dimensional models and green VR. Screen and VR boxes are close, with a non-significant comparison; both reconstructions improve correctness and reduce time relative to sections. Diamonds mark outliers. The plot does not identify whether individual errors concern vessels, segments or resection questions. [Randomized comparison](ref:R02)"
         },
         "F04": {
-          "caption": "Zolkin et al.: Experimental single-lesion and dual-lesion models.",
+          "caption": "Fig. 2 | Zolkin et al.: Experimental single-lesion and dual-lesion models.",
           "interpretation": "A–B each contain one lesion; C–D each contain two. A translucent liver surface and blue, purple and red branches provide orientation. Lesions were inserted artificially and branches simplified; the experiment tests spatial tracking with more simultaneous targets. Images do not establish more severe clinical disease in complex cases, and no quantitative scale permits reading actual lesion–vessel distance. [Model construction](ref:R03)"
         },
         "F05": {
-          "caption": "Zolkin et al.: Individual paired scores on complex tasks.",
+          "caption": "Fig. 5 | Zolkin et al.: Individual paired scores on complex tasks.",
           "interpretation": "Desktop and VR form the horizontal conditions; the vertical axis is questionnaire score. Each line connects one participant across conditions. Turquoise improvements, gray unchanged scores and red declines coexist; boxes show overall distributions. Both the average increase and declining participants matter, rather than assuming the same gain for everyone. This is not a learning curve across repeated training sessions. [Paired performance](ref:R03)"
         },
         "F06": {
-          "caption": "Zolkin et al.: Mental rotation ability and relative VR performance.",
+          "caption": "Fig. 7 | Zolkin et al.: Mental rotation ability and relative VR performance.",
           "interpretation": "The horizontal axis is mental-rotation score; the vertical axis is complex-task VR minus desktop performance. The fitted line rises modestly and shading marks its confidence interval, while points remain widely dispersed above and below zero. This supports a group-level positive association, not guaranteed individual benefit from spatial ability, and does not identify stronger stereopsis or faster controller learning as its mechanism. [Ability association](ref:R03)"
         }
       }
@@ -297,7 +297,7 @@
         {
           "id": "s5",
           "title": "Raumfähigkeit, Sicherheit und Verträglichkeit beeinflussen die Aufgabenbearbeitung",
-          "markdown": "In der Crossover-Studie korrelierten höhere Werte im mentalen Rotationstest mit größerem VR-Vorteil bei komplexen Aufgaben, r=0.31, P=0.018. Dies widerspricht der Annahme, geringere Raumfähigkeit führe zwangsläufig zu stärkerem VR-Nutzen. Die Autoren vermuten schnellere Bedienanpassung bei stärkerem Raumvermögen, maßen diesen Mechanismus aber nicht getrennt. Bei ähnlichen Fähigkeiten enthält das Streudiagramm positive und negative Differenzen; individuelle Vorteile lassen sich aus Testwerten nicht garantieren. [Raumfähigkeit und individuelle Unterschiede](ref:R03)\n\nDie Antwortsicherheit stieg trotz mittlerem Leistungsvorteil nicht signifikant: VR 3.30 ± 1.20 gegenüber Desktop 3.21 ± 1.19, P=0.305. Der Zusammenhang zwischen Sicherheit und Richtigkeit betrug in beiden Bedingungen 0.41, ohne bessere Kalibrierung in VR. Analysiert wurden nur binär bewertete Segment- und Gefäßwegfragen, nicht sämtliche klinische Entscheidungssicherheit. Die Analyse war explorativ und außerhalb der Mehrfachtestkorrektur der Haupthypothesen.\n\nVon 62 Rekrutierten wurden 58 analysiert. Ausgeschlossen wurden 2 wegen Bewegungsübelkeit, 1 wegen unvollständiger Fragebögen und 1 wegen Verständnisschwierigkeiten mit Fachbegriffen. Mittelwerte nach Ausschluss von Abbrüchen enthalten diese Hindernisse nicht. Körperliche Verträglichkeit und Sprachanforderungen beeinflussen die endgültige Stichprobe; höhere Werte der Abschließenden bedeuten keine gleiche Nutzbarkeit für alle Lernenden.\n\nDie meisten hatten bereits Erfahrung mit Desktop-Interaktion, VR war für die Mehrheit neu. Kurze Einarbeitung kann noch ungeübte Personen benachteiligen und spätere Übungseffekte mit Fallschwierigkeit vermischen. Nach Angleichung langfristiger Bedienkompetenz wurde kein erneuter Vergleich durchgeführt.",
+          "markdown": "In der Crossover-Studie korrelierten höhere Werte im mentalen Rotationstest mit größerem VR-Vorteil bei komplexen Aufgaben, r=0.31, P=0.018. Dies widerspricht der Annahme, geringere Raumfähigkeit führe zwangsläufig zu stärkerem VR-Nutzen. Die Autoren vermuten schnellere Bedienanpassung bei stärkerem Raumvermögen, maßen diesen Mechanismus aber nicht getrennt. Bei ähnlichen Fähigkeiten enthält das Streudiagramm positive und negative Differenzen; individuelle Vorteile lassen sich aus Testwerten nicht garantieren. [Raumfähigkeit und individuelle Unterschiede](ref:R03)\n\nDie Antwortsicherheit stieg trotz mittlerem Leistungsvorteil nicht signifikant: VR 3.30 ± 1.20 gegenüber Desktop 3.21 ± 1.19, P=0.305. Der Goodman–Kruskal-γ-Koeffizient für den Zusammenhang zwischen Sicherheit und Richtigkeit betrug in beiden Bedingungen 0.41, ohne bessere Kalibrierung in VR. Analysiert wurden nur binär bewertete Segment- und Gefäßwegfragen, nicht sämtliche klinische Entscheidungssicherheit. Die Analyse war explorativ und außerhalb der Mehrfachtestkorrektur der Haupthypothesen.\n\nVon 62 Rekrutierten wurden 58 analysiert. Ausgeschlossen wurden 2 wegen Bewegungsübelkeit, 1 wegen unvollständiger Fragebögen und 1 wegen Verständnisschwierigkeiten mit Fachbegriffen. Mittelwerte nach Ausschluss von Abbrüchen enthalten diese Hindernisse nicht. Körperliche Verträglichkeit und Sprachanforderungen beeinflussen die endgültige Stichprobe; höhere Werte der Abschließenden bedeuten keine gleiche Nutzbarkeit für alle Lernenden.\n\nDie meisten hatten bereits Erfahrung mit Desktop-Interaktion, VR war für die Mehrheit neu. Kurze Einarbeitung kann noch ungeübte Personen benachteiligen und spätere Übungseffekte mit Fallschwierigkeit vermischen. Nach Angleichung langfristiger Bedienkompetenz wurde kein erneuter Vergleich durchgeführt.",
           "figure_ids": [
             "F06"
           ]
@@ -311,27 +311,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Huettl et al.: Physische, Bildschirm- und VR-Darstellung derselben Leberrekonstruktion.",
+          "caption": "Figure 1 | Huettl et al.: Physische, Bildschirm- und VR-Darstellung derselben Leberrekonstruktion.",
           "interpretation": "A zeigt eine transparente Außenform um farbige Strukturen, B das dreidimensionale PDF, C einen VR-Screenshot. Gelbe Läsionen und Astbeziehungen lassen sich vergleichen. Transparenz, Farben und Beleuchtung unterscheiden sich; gleiche Netze bedeuten daher keinen identischen visuellen Eingang. Statische Bilder vermitteln weder binokulare VR-Tiefe noch Greifbarkeit. Die Interaktionsmethoden bleiben wesentlich. [Darstellungsmodalitäten](ref:R01)"
         },
         "F02": {
-          "caption": "Huettl et al.: Lokalisationszeit nach Modalität und Erfahrungsstufe.",
+          "caption": "Figure 5 | Huettl et al.: Lokalisationszeit nach Modalität und Erfahrungsstufe.",
           "interpretation": "Horizontal stehen VR, PDF und PR; Graustufen unterscheiden Studierende, Weiterbildungsärzte, Fellows und Experten. Die vertikale Achse ist logarithmisch: Teilstriche sind keine Sekunden und Boxhöhen keine linearen Zeitverhältnisse. Physische Modelle liegen insgesamt niedriger, Erfahrungsgruppen überlappen dennoch. Sterne vergleichen Erfahrungsstufen, nicht jedes benachbarte Boxpaar. [Zeitanalyse](ref:R01)"
         },
         "F03": {
-          "caption": "Preukschas et al.: Randomisierter Gruppenvergleich richtiger Antworten und Antwortzeit.",
+          "caption": "Fig. 6 | Preukschas et al.: Randomisierter Gruppenvergleich richtiger Antworten und Antwortzeit.",
           "interpretation": "Oben stehen richtige Antworten, unten Minuten. Blau bezeichnet Schnittbilder, Orange dreidimensionale Bildschirmmodelle, Grün VR. Bildschirm- und VR-Boxen liegen nahe beieinander und sind als nicht signifikant verschieden markiert; beide Rekonstruktionen erhöhen Richtigkeit und senken Zeit gegenüber Schnitten. Rauten kennzeichnen Ausreißer. Die Grafik ordnet einzelne Fehler nicht Gefäß-, Segment- oder Resektionsfragen zu. [Randomisierter Vergleich](ref:R02)"
         },
         "F04": {
-          "caption": "Zolkin et al.: Experimentelle Modelle mit einer beziehungsweise zwei Läsionen.",
+          "caption": "Fig. 2 | Zolkin et al.: Experimentelle Modelle mit einer beziehungsweise zwei Läsionen.",
           "interpretation": "A–B enthalten jeweils eine Läsion, C–D jeweils zwei. Eine transparente Leberoberfläche und blaue, violette und rote Äste dienen der Orientierung. Läsionen wurden künstlich eingefügt und Äste vereinfacht; geprüft wird räumliches Verfolgen zusätzlicher gleichzeitiger Ziele. Die Bilder belegen keine schwerere klinische Erkrankung komplexer Fälle; ohne Maßstab lassen sich tatsächliche Läsion-Gefäß-Distanzen nicht ablesen. [Modellaufbau](ref:R03)"
         },
         "F05": {
-          "caption": "Zolkin et al.: Individuell gepaarte Werte komplexer Aufgaben.",
+          "caption": "Fig. 5 | Zolkin et al.: Individuell gepaarte Werte komplexer Aufgaben.",
           "interpretation": "Desktop und VR stehen horizontal, der Fragebogenwert vertikal. Jede Linie verbindet dieselbe Person zwischen Bedingungen. Türkise Verbesserungen, graue unveränderte Werte und rote Verschlechterungen treten gemeinsam auf; Boxen zeigen Gesamtverteilungen. Mittlerer Anstieg und Personen mit Abfall sind zugleich zu beachten, statt gleichen Gewinn für alle anzunehmen. Dies ist keine Lernkurve wiederholter Trainingssitzungen. [Gepaarte Leistung](ref:R03)"
         },
         "F06": {
-          "caption": "Zolkin et al.: Mentale Rotationsfähigkeit und relative VR-Leistung.",
+          "caption": "Fig. 7 | Zolkin et al.: Mentale Rotationsfähigkeit und relative VR-Leistung.",
           "interpretation": "Horizontal steht der Rotationstestwert, vertikal die komplexe Aufgabenleistung in VR minus Desktop. Die Anpassungslinie steigt mäßig, ihre Schattierung zeigt das Konfidenzintervall; Punkte streuen weit über und unter null. Unterstützt wird ein positiver Zusammenhang auf Gruppenebene, kein garantierter individueller Nutzen. Stärkere Stereoskopie oder schnelleres Controllerlernen sind dadurch nicht als Mechanismus nachgewiesen. [Fähigkeitsassoziation](ref:R03)"
         }
       }

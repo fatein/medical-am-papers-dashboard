@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P2-029",
   "p": "P2",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-04",
   "related_paper_ids": [
@@ -72,7 +72,7 @@
     {
       "id": "F02",
       "reference_id": "R02",
-      "original_label": "Fig. 2:",
+      "original_label": "Fig. 2",
       "image_url": "",
       "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13585098/#F2",
       "license": "CC BY-NC 4.0",
@@ -81,7 +81,7 @@
     {
       "id": "F03",
       "reference_id": "R02",
-      "original_label": "Fig. 4:",
+      "original_label": "Fig. 4",
       "image_url": "",
       "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13585098/#F4",
       "license": "CC BY-NC 4.0",
@@ -90,7 +90,7 @@
     {
       "id": "F04",
       "reference_id": "R02",
-      "original_label": "Figs 5A to D:",
+      "original_label": "Fig. 5A–D",
       "image_url": "",
       "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13585098/#F5",
       "license": "CC BY-NC 4.0",
@@ -99,7 +99,7 @@
     {
       "id": "F05",
       "reference_id": "R04",
-      "original_label": "Fig. 5",
+      "original_label": "Fig. 5",
       "image_url": "",
       "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13099685/#Fig5",
       "license": "CC BY 4.0",
@@ -108,7 +108,7 @@
     {
       "id": "F06",
       "reference_id": "R04",
-      "original_label": "Fig. 6",
+      "original_label": "Fig. 6",
       "image_url": "",
       "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13099685/#Fig6",
       "license": "CC BY 4.0",
@@ -164,33 +164,33 @@
         {
           "id": "adult_randomized_comparisons",
           "title": "成人随机比较需区分树脂打印与氧化锆打印",
-          "markdown": "Shin 等随机比较56名成人的后牙树脂打印冠与整体氧化锆冠。一年发生6与2例断裂，无断裂存留为78.6%与92.9%，差异未显著；打印组磨耗深度为92.33±69.81 μm，对照14.48±7.95 μm。[成人永久单冠随机试验](ref:R05)\n\n这些数据中，“差异未显著”不能替代等效检验。两组断裂比例的数值差并没有因为统计阈值未达到而消失；同时，磨耗是连续结局，即使冠没有断裂或更换，也仍能表现出材料间差别。无断裂存留也不同于前述允许小断裂后继续使用的存留定义，不能直接把百分比从不同研究排成优劣顺序。\n\nCai 等则比较纳米颗粒喷射氧化锆与铣削氧化锆，43人48颗后牙、每组24颗，随访12个月，两组各一例断裂，主要FDI领域未见显著组间差异。[氧化锆制造路线随机比较](ref:R06) 这里主要改变制造路线，和树脂对氧化锆同时改变材料组成的研究不是同一个问题。对前一项树脂研究，不能借用后一项氧化锆结果来解释其磨耗；对后一项短期试验，也不能由少量事件推算多年累积失效率。",
+          "markdown": "Shin 等随机比较56名成人的后牙树脂打印冠与整体氧化锆冠。一年发生6与2例断裂，无断裂存留为78.6%与92.9%，差异未显著；打印组磨耗深度为92.33±69.81 μm，对照14.48±7.95 μm。[成人永久单冠随机试验](ref:R05)\n\n该随机试验的无断裂存留率 95% 置信区间分别为 58.4%–89.8% 和 74.3%–98.2%，组间检验 p=0.12。8 次断裂中有 7 次发生在牙列最远中的修复牙，该位置与断裂发生有关（p=0.002）。这是同一试验中观察到的位置关联，提示解读材料平均表现时还应保留修复牙位置，而不是把所有后牙归为相同负荷环境。\n\n这些数据中，“差异未显著”不能替代等效检验。两组断裂比例的数值差并没有因为统计阈值未达到而消失；同时，磨耗是连续结局，即使冠没有断裂或更换，也仍能表现出材料间差别。无断裂存留也不同于前述允许小断裂后继续使用的存留定义，不能直接把百分比从不同研究排成优劣顺序。\n\nCai 等则比较纳米颗粒喷射氧化锆与铣削氧化锆，43人48颗后牙、每组24颗，随访12个月，两组各一例断裂，主要FDI领域未见显著组间差异。[氧化锆制造路线随机比较](ref:R06) 这里主要改变制造路线，和树脂对氧化锆同时改变材料组成的研究不是同一个问题。对前一项树脂研究，不能借用后一项氧化锆结果来解释其磨耗；对后一项短期试验，也不能由少量事件推算多年累积失效率。",
           "figure_ids": []
         }
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Al-Halabi 等：乳磨牙冠随访中的保留数量（完整原图；European Journal of Dentistry/Thieme；NLM存档）。",
+          "caption": "原图 4｜Al-Halabi 等：乳磨牙冠随访中的保留数量（完整原图；European Journal of Dentistry/Thieme；NLM存档）。",
           "interpretation": "横轴从左到右是12个月、6个月、3个月、基线，时间顺序反向；纵轴为牙冠数量，不是百分比。橙线为打印、蓝线为铣削PMMA，两组基线均25颗，左端分别21和20颗。按正确时间方向读图才会看到保留减少，而非随时间增加。图没有置信区间，也不是Kaplan–Meier曲线；末次差一颗并未达到统计显著。"
         },
         "F02": {
-          "caption": "Bhavana 等：完整、明显损伤和完全脱落三类冠状态（原图，NLM存档）。",
+          "caption": "原图 2｜Bhavana 等：完整、明显损伤和完全脱落三类冠状态（原图，NLM存档）。",
           "interpretation": "纵轴为百分比，蓝色score 0为完整，红色score 2为大裂纹或穿孔，绿色score 3为完全脱落。6个月打印柱的53.1%完整加9.4%受损，才对应仍在位的20颗；37.5%已经脱落。12个月打印柱为43.8%完整与56.2%脱落。钢冠各柱均100%完整。红色受损冠后来转为脱落，故这不是可直接相加的独立事件发生率图。"
         },
         "F03": {
-          "caption": "Bhavana 等：打印与不锈钢冠的时间–存留曲线（原图，NLM存档）。",
+          "caption": "原图 4｜Bhavana 等：打印与不锈钢冠的时间–存留曲线（原图，NLM存档）。",
           "interpretation": "横轴为观察月份，纵轴为累积存留；绿色钢冠线维持顶部，蓝色打印线逐阶下降，末端接近0.4。加号表示删失，不是新失败。图没有在险人数表和置信带，不能从阶梯间距恢复全部事件时间或核验每个风险集。蓝线末值不宜按像素强行精确化为正文43.8%；正文的14/32与状态柱用于报告准确末次计数。分口配对的相关性也没有在图中展示。"
         },
         "F04": {
-          "caption": "Bhavana 等：穿孔后脱落及替换治疗的完整病例图（原图，NLM存档）。",
+          "caption": "原图 5A–D｜Bhavana 等：穿孔后脱落及替换治疗的完整病例图（原图，NLM存档）。",
           "interpretation": "上排A记录85牙打印冠穿孔及脱落，取出的冠可见贯穿缺损；B显示随后改用不锈钢冠。下排C为基线，D显示65牙打印冠脱落及取出后的外观。照片连接了结构损伤与临床处理：即使牙齿后来恢复覆盖，原打印冠已失败。它不能提供磨耗速率、最薄处厚度或裂纹扩展方向，也不能据所示病例推断整组失效均为同一种机制。"
         },
         "F05": {
-          "caption": "del Piñal Pellón 等：成人打印后牙单冠的累计存留（原图，NLM存档）。",
+          "caption": "原图 5｜del Piñal Pellón 等：成人打印后牙单冠的累计存留（原图，NLM存档）。",
           "interpretation": "横轴是月，纵轴为存留概率。曲线有两次下降，约在4和20个月，符合两颗不可修复失败；末次约0.93。末端加号为删失标记，不表示额外断裂。曲线没有把可再粘接的脱粘和可抛光的小断裂分别标出，也没有传统冠对照线。因而它能表示该队列原冠仍使用的概率，却不能表示无维护概率，更不能直接形成与铣削或金属冠的风险比。"
         },
         "F06": {
-          "caption": "del Piñal Pellón 等：上颌打印树脂基陶瓷冠的临床断裂外观（原图，NLM存档）。",
+          "caption": "原图 6｜del Piñal Pellón 等：上颌打印树脂基陶瓷冠的临床断裂外观（原图，NLM存档）。",
           "interpretation": "该咬合面照片显示后牙修复体局部形态缺失与不连续边界，是临床技术并发症的实例。原文另区分不可修复断裂、可抛光的小牙尖缺损及可重新粘接的脱粘，照片本身没有逐个标出这些类别。它不是显微断口图，不能从反光、色泽或邻牙接触推断内部孔隙、打印层方向或具体破坏载荷；与存留曲线联合阅读，重点是原冠是否需要退出使用，而不是仅凭一张照片评定材料寿命。"
         }
       }
@@ -243,33 +243,33 @@
         {
           "id": "adult_randomized_comparisons",
           "title": "Adult randomized comparisons distinguish printed resin from printed zirconia",
-          "markdown": "Shin et al. randomized 56 adults to posterior printed resin or monolithic zirconia crowns. There were 6 versus 2 fractures at one year; fracture-free survival was 78.6% versus 92.9%, a nonsignificant difference. Wear depth was 92.33±69.81 μm for printed resin versus 14.48±7.95 μm.[Adult definitive single-crown randomized trial](ref:R05)\n\nNonsignificance here cannot replace an equivalence test. The numerical fracture difference does not disappear because a statistical threshold was not reached. Wear is also a continuous outcome: material differences can develop without fracture or replacement. Fracture-free survival differs from a definition allowing minor fractures followed by continued function, so percentages from different studies cannot simply be ranked.\n\nCai et al. compared nanoparticle-jetted and milled zirconia in 43 people with 48 posterior teeth, 24 per arm. At 12 months each arm had one fracture, without significant differences in the main FDI domains.[Randomized zirconia manufacturing comparison](ref:R06) This primarily changes manufacturing route, unlike resin-versus-zirconia studies that also change composition. Zirconia findings cannot explain the resin trial’s wear, and few events in the short zirconia trial cannot determine cumulative failure over many years.",
+          "markdown": "Shin et al. randomized 56 adults to posterior printed resin or monolithic zirconia crowns. There were 6 versus 2 fractures at one year; fracture-free survival was 78.6% versus 92.9%, a nonsignificant difference. Wear depth was 92.33±69.81 μm for printed resin versus 14.48±7.95 μm.[Adult definitive single-crown randomized trial](ref:R05)\n\nThe trial reported 95% confidence intervals of 58.4%–89.8% and 74.3%–98.2% for fracture-free survival, with p=0.12 between groups. Seven of eight fractures involved the most-posterior restored teeth, a position associated with fracture incidence (p=0.002). This within-trial association makes tooth position relevant to interpretation of the material averages; posterior teeth do not all represent the same loading setting.\n\nNonsignificance here cannot replace an equivalence test. The numerical fracture difference does not disappear because a statistical threshold was not reached. Wear is also a continuous outcome: material differences can develop without fracture or replacement. Fracture-free survival differs from a definition allowing minor fractures followed by continued function, so percentages from different studies cannot simply be ranked.\n\nCai et al. compared nanoparticle-jetted and milled zirconia in 43 people with 48 posterior teeth, 24 per arm. At 12 months each arm had one fracture, without significant differences in the main FDI domains.[Randomized zirconia manufacturing comparison](ref:R06) This primarily changes manufacturing route, unlike resin-versus-zirconia studies that also change composition. Zirconia findings cannot explain the resin trial’s wear, and few events in the short zirconia trial cannot determine cumulative failure over many years.",
           "figure_ids": []
         }
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Al-Halabi et al.: retained primary-molar crown counts (complete original; European Journal of Dentistry/Thieme; NLM archive).",
+          "caption": "Original figure 4 | Al-Halabi et al.: retained primary-molar crown counts (complete original; European Journal of Dentistry/Thieme; NLM archive).",
           "interpretation": "From left to right the axis reads 12 months, 6 months, 3 months and baseline, reversing chronological order. The vertical axis counts crowns rather than percentages. Orange denotes printed resin and blue milled PMMA. Both start with 25, ending at 21 and 20 on the left. Correct time-direction reading shows declining rather than increasing retention. The figure has no confidence intervals and is not a Kaplan–Meier curve; the final one-crown difference was nonsignificant."
         },
         "F02": {
-          "caption": "Bhavana et al.: intact, substantially damaged and completely lost crowns (original figure, NLM archive).",
+          "caption": "Original figure 2 | Bhavana et al.: intact, substantially damaged and completely lost crowns (original figure, NLM archive).",
           "interpretation": "The vertical axis is percentage. Blue score 0 indicates intact crowns, red score 2 major cracks or perforation, and green score 3 complete loss. At 6 months, 53.1% intact plus 9.4% damaged accounts for 20 crowns still present; 37.5% were lost. At 12 months printed crowns divide into 43.8% intact and 56.2% lost. Steel bars remain 100% intact. Damaged red-category crowns later became losses, so these are not independent event rates to add together."
         },
         "F03": {
-          "caption": "Bhavana et al.: time-to-event curves for printed and steel crowns (original figure, NLM archive).",
+          "caption": "Original figure 4 | Bhavana et al.: time-to-event curves for printed and steel crowns (original figure, NLM archive).",
           "interpretation": "The horizontal axis is follow-up in months and the vertical axis cumulative survival. Green steel crowns stay at the top; blue printed crowns decline stepwise to near 0.4. Plus signs denote censoring, not new failures. Without a number-at-risk table or confidence band, step spacing cannot recover every event time or verify each risk set. The blue endpoint should not be forced from pixels to exactly the reported 43.8%; the text’s 14/32 and categorical chart supply the final count. Within-child pairing is also not displayed."
         },
         "F04": {
-          "caption": "Bhavana et al.: complete cases of perforation, dislodgement and replacement (original figure, NLM archive).",
+          "caption": "Original figure 5A–D | Bhavana et al.: complete cases of perforation, dislodgement and replacement (original figure, NLM archive).",
           "interpretation": "Upper panel A documents perforation and loss of the printed crown on tooth 85, including a through-defect in the retrieved crown; B shows subsequent steel-crown replacement. Lower C is baseline and D shows loss of the printed crown on tooth 65 and its retrieved appearance. These photographs connect structural damage with treatment: restored tooth coverage does not undo failure of the original crown. They supply no wear rate, minimum thickness or crack-propagation direction and cannot establish one mechanism for the entire group."
         },
         "F05": {
-          "caption": "del Piñal Pellón et al.: cumulative survival of adult printed posterior single crowns (original figure, NLM archive).",
+          "caption": "Original figure 5 | del Piñal Pellón et al.: cumulative survival of adult printed posterior single crowns (original figure, NLM archive).",
           "interpretation": "The horizontal axis is months and the vertical axis survival probability. Two steps around 4 and 20 months correspond to the two irreparable failures; the endpoint is approximately 0.93. The terminal plus denotes censoring, not another fracture. Recementable debondings and polishable minor fractures are not separately marked, and no conventional-crown control curve appears. The plot therefore describes continued service of original crowns within this cohort, not freedom from maintenance or a risk ratio against milled or metal crowns."
         },
         "F06": {
-          "caption": "del Piñal Pellón et al.: clinical fracture appearance of a maxillary printed resin-matrix ceramic crown (original figure, NLM archive).",
+          "caption": "Original figure 6 | del Piñal Pellón et al.: clinical fracture appearance of a maxillary printed resin-matrix ceramic crown (original figure, NLM archive).",
           "interpretation": "The occlusal photograph shows localized loss of restorative form and a discontinuous boundary in a posterior restoration, illustrating a technical complication. The paper separately distinguishes irreparable fracture, polishable cusp damage and recementable debonding; the photograph does not label all these categories. It is not microscopic fractography. Reflections, color and adjacent contacts cannot identify internal pores, print-layer direction or failure load. Read with the survival curve, its relevance is whether the original crown must leave service, not estimating material lifetime from one image."
         }
       }
@@ -322,33 +322,33 @@
         {
           "id": "adult_randomized_comparisons",
           "title": "Randomisierte Erwachsenenvergleiche trennen Druckharz von gedrucktem Zirkonoxid",
-          "markdown": "Shin et al. randomisierten 56 Erwachsene auf gedruckte Harz- oder monolithische Zirkonoxidkronen im Seitenzahnbereich. Nach einem Jahr gab es 6 gegenüber 2 Frakturen; frakturfreies Überleben betrug 78.6% gegenüber 92.9%, ohne signifikanten Unterschied. Die Verschleißtiefe betrug 92.33±69.81 μm beim Druckharz gegenüber 14.48±7.95 μm.[Randomisierte definitive Einzelkronenstudie bei Erwachsenen](ref:R05)\n\nNichtsignifikanz ersetzt hier keine Äquivalenzprüfung. Der numerische Frakturunterschied verschwindet nicht, weil eine statistische Schwelle verfehlt wurde. Verschleiß ist außerdem ein kontinuierlicher Endpunkt: Materialunterschiede können ohne Bruch oder Ersatz entstehen. Frakturfreies Überleben unterscheidet sich von einer Definition, die Kleinfrakturen mit anschließender Weiterfunktion erlaubt; Prozentsätze verschiedener Studien bilden daher keine einfache Rangfolge.\n\nCai et al. verglichen mittels Nanopartikel-Jetting hergestelltes und gefrästes Zirkonoxid bei 43 Personen mit 48 Seitenzähnen, jeweils 24 pro Gruppe. Nach 12 Monaten gab es jeweils eine Fraktur, ohne signifikante Unterschiede der wesentlichen FDI-Bereiche.[Randomisierter Vergleich der Zirkonoxidfertigung](ref:R06) Hier ändert sich vorrangig die Fertigungsroute, anders als bei Harz–Zirkonoxid-Vergleichen mit zugleich anderer Zusammensetzung. Zirkonoxidbefunde erklären nicht den Harzverschleiß; wenige Ereignisse der kurzen Zirkonoxidstudie bestimmen auch keine kumulativen Ausfallraten über viele Jahre.",
+          "markdown": "Shin et al. randomisierten 56 Erwachsene auf gedruckte Harz- oder monolithische Zirkonoxidkronen im Seitenzahnbereich. Nach einem Jahr gab es 6 gegenüber 2 Frakturen; frakturfreies Überleben betrug 78.6% gegenüber 92.9%, ohne signifikanten Unterschied. Die Verschleißtiefe betrug 92.33±69.81 μm beim Druckharz gegenüber 14.48±7.95 μm.[Randomisierte definitive Einzelkronenstudie bei Erwachsenen](ref:R05)\n\nDie 95%-Konfidenzintervalle des frakturfreien Überlebens betrugen 58.4%–89.8% beziehungsweise 74.3%–98.2%; der Gruppenvergleich ergab p=0.12. Sieben von acht Frakturen betrafen die am weitesten posterior gelegenen restaurierten Zähne; diese Position war mit der Frakturhäufigkeit assoziiert (p=0.002). Dieser Zusammenhang innerhalb der Studie macht die Zahnposition für die Interpretation der Materialmittelwerte relevant: Seitenzähne bilden nicht sämtlich dieselbe Belastungssituation ab.\n\nNichtsignifikanz ersetzt hier keine Äquivalenzprüfung. Der numerische Frakturunterschied verschwindet nicht, weil eine statistische Schwelle verfehlt wurde. Verschleiß ist außerdem ein kontinuierlicher Endpunkt: Materialunterschiede können ohne Bruch oder Ersatz entstehen. Frakturfreies Überleben unterscheidet sich von einer Definition, die Kleinfrakturen mit anschließender Weiterfunktion erlaubt; Prozentsätze verschiedener Studien bilden daher keine einfache Rangfolge.\n\nCai et al. verglichen mittels Nanopartikel-Jetting hergestelltes und gefrästes Zirkonoxid bei 43 Personen mit 48 Seitenzähnen, jeweils 24 pro Gruppe. Nach 12 Monaten gab es jeweils eine Fraktur, ohne signifikante Unterschiede der wesentlichen FDI-Bereiche.[Randomisierter Vergleich der Zirkonoxidfertigung](ref:R06) Hier ändert sich vorrangig die Fertigungsroute, anders als bei Harz–Zirkonoxid-Vergleichen mit zugleich anderer Zusammensetzung. Zirkonoxidbefunde erklären nicht den Harzverschleiß; wenige Ereignisse der kurzen Zirkonoxidstudie bestimmen auch keine kumulativen Ausfallraten über viele Jahre.",
           "figure_ids": []
         }
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Al-Halabi et al.: Anzahl verbliebener Milchmolarenkronen (vollständiges Original; European Journal of Dentistry/Thieme; NLM-Archiv).",
+          "caption": "Originalabbildung 4 | Al-Halabi et al.: Anzahl verbliebener Milchmolarenkronen (vollständiges Original; European Journal of Dentistry/Thieme; NLM-Archiv).",
           "interpretation": "Von links nach rechts stehen 12 Monate, 6 Monate, 3 Monate und Ausgangswert, also umgekehrte Chronologie. Vertikal werden Kronen gezählt, keine Prozentwerte. Orange bezeichnet Druckharz, Blau gefrästes PMMA. Beide beginnen mit 25 und enden links bei 21 beziehungsweise 20. Korrekte Zeitrichtung zeigt sinkende statt steigender Retention. Es fehlen Konfidenzintervalle, die Grafik ist keine Kaplan–Meier-Kurve; der abschließende Unterschied einer Krone war nicht signifikant."
         },
         "F02": {
-          "caption": "Bhavana et al.: intakte, deutlich beschädigte und vollständig verlorene Kronen (Originalgrafik, NLM-Archiv).",
+          "caption": "Originalabbildung 2 | Bhavana et al.: intakte, deutlich beschädigte und vollständig verlorene Kronen (Originalgrafik, NLM-Archiv).",
           "interpretation": "Vertikal stehen Prozentwerte. Blau, Score 0, bedeutet intakt; Rot, Score 2, große Risse oder Perforation; Grün, Score 3, vollständigen Verlust. Nach 6 Monaten ergeben 53.1% intakte plus 9.4% beschädigte die 20 noch vorhandenen Kronen; 37.5% waren verloren. Nach 12 Monaten verteilen sich Druckkronen auf 43.8% intakte und 56.2% verlorene. Stahlbalken bleiben zu 100% intakt. Beschädigte rote Kronen gingen später verloren; dies sind keine unabhängigen, addierbaren Ereignisraten."
         },
         "F03": {
-          "caption": "Bhavana et al.: Zeit–Überlebens-Kurven für Druck- und Stahlkronen (Originalgrafik, NLM-Archiv).",
-          "interpretation": "Horizontal steht die Nachbeobachtung in Monaten, vertikal kumulatives Überleben. Die grüne Stahlkurve bleibt oben, die blaue Druckkurve fällt stufenweise bis nahe 0.4. Pluszeichen bedeuten Zensierung, keine neuen Ausfälle. Ohne Risikosatztabelle und Konfidenzband lassen sich nicht sämtliche Ereigniszeiten oder Risikosätze prüfen. Der blaue Endpunkt darf nicht pixelbasiert auf exakt berichtete 43.8% festgelegt werden; 14/32 im Text und die Zustandsbalken liefern die Endzählung. Die Paarung innerhalb desselben Kindes ist ebenfalls nicht dargestellt."
+          "caption": "Originalabbildung 4 | Bhavana et al.: Zeit–Überlebens-Kurven für Druck- und Stahlkronen (Originalgrafik, NLM-Archiv).",
+          "interpretation": "Horizontal steht die Nachbeobachtung in Monaten, vertikal kumulatives Überleben. Die grüne Stahlkurve bleibt oben, die blaue Druckkurve fällt stufenweise bis nahe 0.4. Pluszeichen bedeuten Zensierung, keine neuen Ausfälle. Ohne Tabelle der jeweils noch unter Risiko stehenden Kronen und ohne Konfidenzband lassen sich nicht sämtliche Ereigniszeiten oder Risikomengen prüfen. Der blaue Endpunkt darf nicht pixelbasiert auf exakt berichtete 43.8% festgelegt werden; 14/32 im Text und die Zustandsbalken liefern die Endzählung. Die Paarung innerhalb desselben Kindes ist ebenfalls nicht dargestellt."
         },
         "F04": {
-          "caption": "Bhavana et al.: vollständige Fälle mit Perforation, Ablösung und Ersatz (Originalgrafik, NLM-Archiv).",
+          "caption": "Originalabbildung 5A–D | Bhavana et al.: vollständige Fälle mit Perforation, Ablösung und Ersatz (Originalgrafik, NLM-Archiv).",
           "interpretation": "Oben dokumentiert A Perforation und Verlust der Druckkrone an Zahn 85 einschließlich durchgehenden Defekts der entnommenen Krone; B zeigt den anschließenden Stahlkronenersatz. Unten ist C der Ausgangsbefund, D die Ablösung an Zahn 65 und die entnommene Krone. Die Fotos verknüpfen strukturelle Schäden mit Behandlung: Wiederhergestellte Zahnüberdeckung hebt das Versagen der ursprünglichen Krone nicht auf. Verschleißrate, Mindestdicke und Rissausbreitungsrichtung fehlen; ein einheitlicher Mechanismus der ganzen Gruppe ist daraus nicht ableitbar."
         },
         "F05": {
-          "caption": "del Piñal Pellón et al.: kumulatives Überleben erwachsener gedruckter Seitenzahn-Einzelkronen (Originalgrafik, NLM-Archiv).",
+          "caption": "Originalabbildung 5 | del Piñal Pellón et al.: kumulatives Überleben gedruckter Seitenzahn-Einzelkronen bei Erwachsenen (Originalgrafik, NLM-Archiv).",
           "interpretation": "Horizontal stehen Monate, vertikal die Überlebenswahrscheinlichkeit. Zwei Stufen ungefähr nach 4 und 20 Monaten entsprechen den zwei irreparablen Ausfällen; der Endwert liegt etwa bei 0.93. Das abschließende Plus bedeutet Zensierung, keine weitere Fraktur. Erneut befestigbare Ablösungen und polierbare Kleinfrakturen sind nicht separat markiert; eine konventionelle Kontrollkurve fehlt. Die Grafik beschreibt somit Weiterfunktion ursprünglicher Kronen dieser Kohorte, nicht Wartungsfreiheit oder ein Risikoverhältnis gegenüber gefrästen beziehungsweise metallischen Kronen."
         },
         "F06": {
-          "caption": "del Piñal Pellón et al.: klinisches Frakturbild einer gedruckten Oberkieferkrone aus Harzmatrixkeramik (Originalgrafik, NLM-Archiv).",
+          "caption": "Originalabbildung 6 | del Piñal Pellón et al.: klinisches Frakturbild einer gedruckten Oberkieferkrone aus Harzmatrixkeramik (Originalgrafik, NLM-Archiv).",
           "interpretation": "Die okklusale Aufnahme zeigt örtlichen Formverlust und eine unterbrochene Begrenzung einer Seitenzahnrestauration als technische Komplikation. Die Arbeit unterscheidet irreparable Fraktur, polierbaren Höckerschaden und erneut befestigbare Ablösung; das Foto kennzeichnet nicht sämtliche Kategorien. Es ist keine mikroskopische Fraktografie. Reflexe, Farbe und Nachbarkontakte bestimmen weder innere Poren noch Druckschichtrichtung oder Bruchlast. Zusammen mit der Überlebenskurve betrifft die Aussage das Ausscheiden der ursprünglichen Krone aus dem Gebrauch, keine Lebensdauerschätzung anhand eines Bildes."
         }
       }

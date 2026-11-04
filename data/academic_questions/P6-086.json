@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P6-086",
   "p": "P6",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [
@@ -140,33 +140,33 @@
         {
           "id": "s6",
           "title": "程序时间的组间差异尚未转化为明确的随访获益",
-          "markdown": "Gong 等回顾性纳入 46 名患者，模型规划组 22 人、常规影像组 24 人。是否使用模型由治疗团队按解剖复杂性、预期模拟价值、患者意愿和紧急程度决定，不是随机分配。模型组手术时间与造影剂用量较低，但这个差异可能同时受病例选择和团队工作流程影响；研究未将刚性模型、柔性模型和额外术前讨论的作用分别估计。[临床比较的分组方式](ref:R03)\n\n| 观察终点 | 模型规划组 | 常规影像组 | 原文比较 |\n|---|---|---|---|\n| 手术时间，min | 133.6±43.3 | 171.4±72.1 | p=0.039 |\n| 造影剂，mL | 181.7±68.6 | 234.9±101.0 | p=0.044 |\n| 术中器械调整次数 | 0.4±0.9 | 0.5±1.1 | p=0.643 |\n| 术中内漏 | 1/22 | 3/24 | p=0.327 |\n| 1 年全因死亡 | 2/22 | 2/24 | p>0.999 |\n| 1 年晚期内漏 | 3/22 | 4/24 | p=0.550 |\n\n这里支持的是部分程序指标的组间关联，而非所有终点一起改善。模型组仍发生术中破裂死亡病例，作者认为与模型指导无关；这一解释不应使事件从总体临床结果中消失。表格的术中内漏、晚期内漏和死亡也属于不同时间与不同终点，不能用一个合并“成功”比例替代。[围术期及随访结果](ref:R03)\n\n模型是否能进入术前讨论还受到制作时间约束。该中心从影像获取到模型可用，刚性模型平均需要 14.2±1.2 h，动态模型为 19.3±3.6 h；并行制作时不需把两项简单相加。作者报告所有模型在计划的术前时段完成，但没有记录缺少这种时间窗口的患者会获得怎样的结果，也未按每次计划修改报告提出备选方案、采纳方案及实际执行之间的完整记录。[模型可用时间](ref:R03)",
+          "markdown": "Gong 等回顾性纳入 46 名患者，模型规划组 22 人、常规影像组 24 人。是否使用模型由治疗团队按解剖复杂性、预期模拟价值、患者意愿和紧急程度决定，不是随机分配。模型组手术时间与造影剂用量较低，但这个差异可能同时受病例选择和团队工作流程影响；研究未将刚性模型、柔性模型和额外术前讨论的作用分别估计。[临床比较的分组方式](ref:R03)\n\n| 观察终点 | 模型规划组 | 常规影像组 | 原文比较 |\n|---|---|---|---|\n| 手术时间，min | 133.6±43.3 | 171.4±72.1 | p=0.039 |\n| 造影剂，mL | 181.7±68.6 | 234.9±101.0 | p=0.044 |\n| 术中器械调整次数 | 0.4±0.9 | 0.5±1.1 | p=0.643 |\n| 术中内漏 | 1/22 | 3/24 | p=0.327 |\n| 1 年全因死亡 | 2/22 | 2/24 | p>0.999 |\n| 1 年晚期内漏 | 3/22 | 4/24 | p=0.550 |\n\n这里支持的是部分程序指标的组间关联，而非所有终点一起改善。模型组仍发生术中破裂死亡病例，作者认为与模型指导无关；这一解释不应使事件从总体临床结果中消失。表格的术中内漏、晚期内漏和死亡也属于不同时间与不同终点，不能用一个合并“成功”比例替代。[围术期及随访结果](ref:R03)\n\n模型是否能进入术前讨论还受到制作时间约束。该中心从影像获取到完成灭菌、模型可用，刚性模型平均需要 14.2±1.2 h，动态模型为 19.3±3.6 h；并行制作时不需把两项简单相加。作者报告所有模型在计划的术前时段完成，但没有记录缺少这种时间窗口的患者会获得怎样的结果，也未按每次计划修改报告提出备选方案、采纳方案及实际执行之间的完整记录。[模型可用时间](ref:R03)",
           "figure_ids": []
         }
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Ghosh et al.：同一临床建模服务中的实体、屏幕、VR 与 CAD 表示。",
+          "caption": "Fig. 2 | Ghosh et al.：同一临床建模服务中的实体、屏幕、VR 与 CAD 表示。",
           "interpretation": "a 为手持实体模型，b 是带室间隔补片标记的屏幕模型，c 是 VR 观察，d 是拟议修复结构的 CAD 表示。a 提供实际尺度的外部空间关系；b 与 d 可把修复结构加入已有解剖并检查邻近通道。四幅图不是四个随机对照组，也没有在图内显示术后结局。它解释了病例系列为何只能评价联合建模服务，而不能把全部结果归给打印件。[原图与工作流程](ref:R01)"
         },
         "F02": {
-          "caption": "Avella et al.：胰腺钩突病例的血管邻接关系。",
+          "caption": "Fig. 2 | Avella et al.：胰腺钩突病例的血管邻接关系。",
           "interpretation": "两种视角显示同一模型，红色动脉与蓝色静脉围绕黄色胰腺相关结构，星号定位病灶与肠系膜血管邻接区域。旋转后可追踪前后遮挡关系，帮助团队讨论影像中约 170° 接触所对应的位置。颜色本身不是组织学浸润证据；原图也没有比例尺或测角工具，接触角来自病例描述，不能由照片重新量取。该模型的作用是让已分割的关系更容易共同观察。[钩突病例模型](ref:R02)"
         },
         "F03": {
-          "caption": "Avella et al.：巨大肝血管瘤与变异供血血管的多视角模型。",
+          "caption": "Fig. 4 | Avella et al.：巨大肝血管瘤与变异供血血管的多视角模型。",
           "interpretation": "主要画面为实体模型的不同方向，左下角为包含肝外形的数字参照。较大的黄色病灶与邻近蓝色血管网络占据不同空间，右侧星号标示来自胃左动脉的左肝动脉变异。去掉大部分实质遮挡后，小血管走行更容易连续追踪；代价是模型不再展示完整组织包裹。原文的保留血管计划依据这一空间关系，但照片不能证明术后灌注或切缘状态。[血管瘤病例模型](ref:R02)"
         },
         "F04": {
-          "caption": "Gong et al.：表面偏差与制造壁厚的颜色分布和直方图。",
+          "caption": "Fig. 5 | Gong et al.：表面偏差与制造壁厚的颜色分布和直方图。",
           "interpretation": "A1/A2 分别显示与数字目标的表面偏差图和频数分布，B1/B2 显示壁厚图和分布。A 的色标跨越正负值，故约 0.01 mm 均值不能当作平均绝对误差；B 的主要峰位在约 1 mm，反映预设壁壳的制造结果。分支起始部的局部色差提示总体均值可能掩盖关键位置偏差。图的参照是 CTA 衍生数字模型，不是真实病理壁厚。[几何核查原图](ref:R03)"
         },
         "F05": {
-          "caption": "Gong et al.：脉动回路与主动脉模型内的超声观察。",
+          "caption": "Fig. 6 | Gong et al.：脉动回路与主动脉模型内的超声观察。",
           "interpretation": "A、B 展示泵、单向阀及模型连接，C 为二维超声中的管腔，D 为彩色多普勒流动，E 为频谱速度随时间变化。E 显示的是代表性位置的波形，不是所有患者的平均流速；彩色流动显示也不能单独给出壁面应力。该图将柔性模型从静态几何展示扩展到可观测的动态状态，但没有建立患者逐区域的力学等效。[动态回路原图](ref:R03)"
         },
         "F06": {
-          "caption": "Gong et al.：柔性模型对应的四组规划情景。",
+          "caption": "Fig. 9 | Gong et al.：柔性模型对应的四组规划情景。",
           "interpretation": "A–D、E–H、I–L、M–P 分别对应四个病例，每组把模型或规划展示与最终造影并列。前几组涉及器械展开、狭窄真腔和瘤囊分支位置；M–P 进一步包含超声及局部内漏的彩色信号。柔性变形能够显现刚性外形中不易表达的贴壁问题，但最终造影不是全部远期结局。图示病例属于经验展示，不能由挑选出的成功图像估算模型敏感度；其分组也不是随机的刚性/柔性临床试验。[病例情景原图](ref:R03)"
         }
       }
@@ -218,33 +218,33 @@
         {
           "id": "s6",
           "title": "Procedure-time differences have not established a clear follow-up benefit",
-          "markdown": "Gong et al. retrospectively included 46 patients: 22 planned with models and 24 with conventional imaging. Model use was selected by the treating team according to anatomical complexity, expected simulation value, patient preference and urgency, not randomized. Operative time and contrast use were lower in the model group, but selection and team workflow may contribute. Rigid models, flexible models and additional preoperative discussion were not estimated as separate effects. [Allocation in the clinical comparison](ref:R03)\n\n| Observed endpoint | Model-planning group | Conventional imaging group | Reported comparison |\n|---|---|---|---|\n| Operative time, min | 133.6±43.3 | 171.4±72.1 | p=0.039 |\n| Contrast, mL | 181.7±68.6 | 234.9±101.0 | p=0.044 |\n| Intraoperative device adjustments | 0.4±0.9 | 0.5±1.1 | p=0.643 |\n| Intraoperative endoleak | 1/22 | 3/24 | p=0.327 |\n| All-cause death at 1 year | 2/22 | 2/24 | p>0.999 |\n| Late endoleak at 1 year | 3/22 | 4/24 | p=0.550 |\n\nThese results support associations for selected procedural measures, not simultaneous improvement in every endpoint. An intraoperative rupture death occurred in the model group and was considered unrelated to model guidance by the authors; that interpretation must not remove the event from overall clinical results. Intraoperative endoleak, late endoleak and death also have different timings and definitions and cannot be replaced by one pooled success rate. [Perioperative and follow-up results](ref:R03)\n\nProduction time also constrained availability for preoperative discussion. From imaging acquisition to model availability, the center required a mean of 14.2±1.2 h for rigid models and 19.3±3.6 h for dynamic models; parallel fabrication did not require simply adding both durations. All models were reported ready within the planned preoperative period. Outcomes for patients lacking such a time window were not documented, nor were complete records from proposing an alternative through adoption and execution provided for every plan modification. [Time to model availability](ref:R03)",
+          "markdown": "Gong et al. retrospectively included 46 patients: 22 planned with models and 24 with conventional imaging. Model use was selected by the treating team according to anatomical complexity, expected simulation value, patient preference and urgency, not randomized. Operative time and contrast use were lower in the model group, but selection and team workflow may contribute. Rigid models, flexible models and additional preoperative discussion were not estimated as separate effects. [Allocation in the clinical comparison](ref:R03)\n\n| Observed endpoint | Model-planning group | Conventional imaging group | Reported comparison |\n|---|---|---|---|\n| Operative time, min | 133.6±43.3 | 171.4±72.1 | p=0.039 |\n| Contrast, mL | 181.7±68.6 | 234.9±101.0 | p=0.044 |\n| Intraoperative device adjustments | 0.4±0.9 | 0.5±1.1 | p=0.643 |\n| Intraoperative endoleak | 1/22 | 3/24 | p=0.327 |\n| All-cause death at 1 year | 2/22 | 2/24 | p>0.999 |\n| Late endoleak at 1 year | 3/22 | 4/24 | p=0.550 |\n\nThese results support associations for selected procedural measures, not simultaneous improvement in every endpoint. An intraoperative rupture death occurred in the model group and was considered unrelated to model guidance by the authors; that interpretation must not remove the event from overall clinical results. Intraoperative endoleak, late endoleak and death also have different timings and definitions and cannot be replaced by one pooled success rate. [Perioperative and follow-up results](ref:R03)\n\nProduction time also constrained availability for preoperative discussion. From imaging acquisition to completion of sterilization and model availability, the center required a mean of 14.2±1.2 h for rigid models and 19.3±3.6 h for dynamic models; parallel fabrication did not require simply adding both durations. All models were reported ready within the planned preoperative period. Outcomes for patients lacking such a time window were not documented, nor were complete records from proposing an alternative through adoption and execution provided for every plan modification. [Time to model availability](ref:R03)",
           "figure_ids": []
         }
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Ghosh et al.: physical, screen, VR and CAD representations within one clinical modeling service.",
+          "caption": "Fig. 2 | Ghosh et al.: physical, screen, VR and CAD representations within one clinical modeling service.",
           "interpretation": "Panel a is a handheld model, b a screen model with a ventricular septal patch annotation, c VR viewing and d a CAD representation of proposed repair structures. Panel a supplies external relationships at physical scale; b and d add repair structures to anatomy for inspection of neighboring pathways. These are not four randomized groups and contain no postoperative outcomes. The figure explains why the series evaluates a combined modeling service rather than attributing all results to prints. [Original figure and workflow](ref:R01)"
         },
         "F02": {
-          "caption": "Avella et al.: vascular adjacency in the pancreatic uncinate case.",
+          "caption": "Fig. 2 | Avella et al.: vascular adjacency in the pancreatic uncinate case.",
           "interpretation": "Two views show the same model, with red arteries and blue veins around yellow pancreatic structures; the asterisk locates the lesion–mesenteric-vessel interface. Rotation reveals anterior–posterior overlap and helps discuss the location of approximately 170° contact described in the imaging. Color is not evidence of histological invasion. The photograph has neither scale bar nor angular measurement tool; the angle comes from the case description, not remeasurement of the image. The model supports shared inspection of segmented relationships. [Uncinate-case model](ref:R02)"
         },
         "F03": {
-          "caption": "Avella et al.: multiple views of a giant hemangioma and variant arterial supply.",
+          "caption": "Fig. 4 | Avella et al.: multiple views of a giant hemangioma and variant arterial supply.",
           "interpretation": "The main views show the physical model, while the lower-left digital reference includes the liver outline. The large yellow lesion and neighboring blue vascular network occupy different spaces; the right-hand asterisk marks the left hepatic artery arising from the left gastric artery. Removing much of the parenchymal enclosure makes small-vessel courses easier to follow, while omitting complete tissue surroundings. The reported preservation plan used this relationship, but the photographs do not establish postoperative perfusion or margin status. [Hemangioma-case model](ref:R02)"
         },
         "F04": {
-          "caption": "Gong et al.: color maps and histograms of surface deviation and manufactured wall thickness.",
+          "caption": "Fig. 5 | Gong et al.: color maps and histograms of surface deviation and manufactured wall thickness.",
           "interpretation": "A1/A2 show surface deviation from the digital target and its frequency distribution; B1/B2 show thickness and its distribution. The A scale spans positive and negative values, so the approximately 0.01 mm mean is not a mean absolute error. The main B peak near 1 mm reflects manufacture of the prescribed shell. Local color changes at branch origins indicate that global means may hide errors at important sites. The reference is a CTA-derived digital model, not actual pathological wall thickness. [Original geometric assessment](ref:R03)"
         },
         "F05": {
-          "caption": "Gong et al.: pulsatile loop and ultrasound observation inside the aortic model.",
+          "caption": "Fig. 6 | Gong et al.: pulsatile loop and ultrasound observation inside the aortic model.",
           "interpretation": "A and B show pumps, one-way valves and model connections; C displays the lumen on two-dimensional ultrasound, D color Doppler flow and E spectral velocity over time. E is a representative location waveform, not the average velocity of all patients; color flow alone also does not measure wall stress. The figure extends a flexible model from static geometry to observable dynamics without establishing patient-specific regional mechanical equivalence. [Original dynamic-loop figure](ref:R03)"
         },
         "F06": {
-          "caption": "Gong et al.: four planning scenarios represented by flexible models.",
+          "caption": "Fig. 9 | Gong et al.: four planning scenarios represented by flexible models.",
           "interpretation": "A–D, E–H, I–L and M–P correspond to four cases, juxtaposing models or planning views with final angiography. Earlier rows concern deployment, narrowed true lumen and branch origins within an aneurysmal sac; M–P additionally include ultrasound and a color signal of local endoleak. Deformation can reveal apposition issues less evident in rigid geometry, but final angiography is not complete long-term outcome. These are illustrative cases, not a basis for estimating sensitivity from selected successful images or a randomized rigid-versus-flexible clinical trial. [Original case scenarios](ref:R03)"
         }
       }
@@ -296,33 +296,33 @@
         {
           "id": "s6",
           "title": "Unterschiede der Eingriffsdauer belegen noch keinen eindeutigen Nachbeobachtungsvorteil",
-          "markdown": "Gong et al. schlossen retrospektiv 46 Patienten ein: 22 mit modellgestützter Planung und 24 mit konventionellen Bildern. Das Behandlungsteam entschied anhand anatomischer Komplexität, erwarteten Simulationsnutzens, Patientenwunsches und Dringlichkeit, nicht randomisiert. Operationsdauer und Kontrastmittelverbrauch waren in der Modellgruppe niedriger, wobei Auswahl und Teamabläufe beitragen können. Starre Modelle, flexible Modelle und zusätzliche präoperative Diskussion wurden nicht als getrennte Effekte geschätzt. [Gruppenzuordnung im klinischen Vergleich](ref:R03)\n\n| Beobachteter Endpunkt | Modellplanungsgruppe | Konventionelle Bildgruppe | Berichteter Vergleich |\n|---|---|---|---|\n| Operationsdauer, min | 133.6±43.3 | 171.4±72.1 | p=0.039 |\n| Kontrastmittel, mL | 181.7±68.6 | 234.9±101.0 | p=0.044 |\n| Intraoperative Implantatanpassungen | 0.4±0.9 | 0.5±1.1 | p=0.643 |\n| Intraoperative Endoleckage | 1/22 | 3/24 | p=0.327 |\n| Gesamtsterblichkeit nach 1 Jahr | 2/22 | 2/24 | p>0.999 |\n| Späte Endoleckage nach 1 Jahr | 3/22 | 4/24 | p=0.550 |\n\nDie Ergebnisse unterstützen Zusammenhänge ausgewählter Eingriffsgrößen, keine gleichzeitige Verbesserung aller Endpunkte. In der Modellgruppe trat ein intraoperativer Rupturtodesfall auf, den die Autoren als unabhängig von der Modellführung bewerteten; diese Interpretation darf das Ereignis nicht aus dem klinischen Gesamtergebnis entfernen. Intraoperative Endoleckage, späte Endoleckage und Tod betreffen außerdem verschiedene Zeitpunkte und Definitionen und lassen sich nicht durch eine gemeinsame Erfolgsrate ersetzen. [Perioperative und Nachbeobachtungsergebnisse](ref:R03)\n\nAuch die Fertigungsdauer begrenzte die Verfügbarkeit für präoperative Diskussionen. Von der Bildaufnahme bis zum verfügbaren Modell benötigte das Zentrum im Mittel 14.2±1.2 h für starre und 19.3±3.6 h für dynamische Modelle; bei paralleler Herstellung waren beide Zeiten nicht einfach zu addieren. Alle Modelle waren laut Bericht innerhalb des geplanten präoperativen Zeitraums fertig. Ergebnisse von Patienten ohne entsprechendes Zeitfenster wurden nicht dokumentiert, ebenso wenig vollständige Aufzeichnungen vom Alternativvorschlag über dessen Annahme bis zur Ausführung für jede Planänderung. [Zeit bis zur Modellverfügbarkeit](ref:R03)",
+          "markdown": "Gong et al. schlossen retrospektiv 46 Patienten ein: 22 mit modellgestützter Planung und 24 mit konventionellen Bildern. Das Behandlungsteam entschied anhand anatomischer Komplexität, erwarteten Simulationsnutzens, Patientenwunsches und Dringlichkeit, nicht randomisiert. Operationsdauer und Kontrastmittelverbrauch waren in der Modellgruppe niedriger, wobei Auswahl und Teamabläufe beitragen können. Starre Modelle, flexible Modelle und zusätzliche präoperative Diskussion wurden nicht als getrennte Effekte geschätzt. [Gruppenzuordnung im klinischen Vergleich](ref:R03)\n\n| Beobachteter Endpunkt | Modellplanungsgruppe | Konventionelle Bildgruppe | Berichteter Vergleich |\n|---|---|---|---|\n| Operationsdauer, min | 133.6±43.3 | 171.4±72.1 | p=0.039 |\n| Kontrastmittel, mL | 181.7±68.6 | 234.9±101.0 | p=0.044 |\n| Intraoperative Implantatanpassungen | 0.4±0.9 | 0.5±1.1 | p=0.643 |\n| Intraoperative Endoleckage | 1/22 | 3/24 | p=0.327 |\n| Gesamtsterblichkeit nach 1 Jahr | 2/22 | 2/24 | p>0.999 |\n| Späte Endoleckage nach 1 Jahr | 3/22 | 4/24 | p=0.550 |\n\nDie Ergebnisse unterstützen Zusammenhänge ausgewählter Eingriffsgrößen, keine gleichzeitige Verbesserung aller Endpunkte. In der Modellgruppe trat ein intraoperativer Rupturtodesfall auf, den die Autoren als unabhängig von der Modellführung bewerteten; diese Interpretation darf das Ereignis nicht aus dem klinischen Gesamtergebnis entfernen. Intraoperative Endoleckage, späte Endoleckage und Tod betreffen außerdem verschiedene Zeitpunkte und Definitionen und lassen sich nicht durch eine gemeinsame Erfolgsrate ersetzen. [Perioperative und Nachbeobachtungsergebnisse](ref:R03)\n\nAuch die Fertigungsdauer begrenzte die Verfügbarkeit für präoperative Diskussionen. Von der Bildaufnahme bis zum fertig sterilisierten und verfügbaren Modell benötigte das Zentrum im Mittel 14.2±1.2 h für starre und 19.3±3.6 h für dynamische Modelle; bei paralleler Herstellung waren beide Zeiten nicht einfach zu addieren. Alle Modelle waren laut Bericht innerhalb des geplanten präoperativen Zeitraums fertig. Ergebnisse von Patienten ohne entsprechendes Zeitfenster wurden nicht dokumentiert, ebenso wenig vollständige Aufzeichnungen vom Alternativvorschlag über dessen Annahme bis zur Ausführung für jede Planänderung. [Zeit bis zur Modellverfügbarkeit](ref:R03)",
           "figure_ids": []
         }
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Ghosh et al.: physische, Bildschirm-, VR- und CAD-Darstellungen eines klinischen Modellierungsdienstes.",
+          "caption": "Fig. 2 | Ghosh et al.: physische, Bildschirm-, VR- und CAD-Darstellungen eines klinischen Modellierungsdienstes.",
           "interpretation": "a zeigt ein handgehaltenes Modell, b ein Bildschirmmodell mit Septumpatch-Markierung, c VR-Betrachtung und d die CAD-Darstellung geplanter Korrekturstrukturen. a vermittelt äußere Beziehungen im physischen Maßstab; b und d ergänzen Korrekturstrukturen zur Prüfung benachbarter Wege. Dies sind keine vier randomisierten Gruppen; postoperative Ergebnisse fehlen im Bild. Es erklärt die Bewertung eines kombinierten Modellierungsdienstes statt ausschließlicher Zuordnung aller Ergebnisse zum Druck. [Originalabbildung und Arbeitsablauf](ref:R01)"
         },
         "F02": {
-          "caption": "Avella et al.: Gefäßnachbarschaft im Uncinatusfall.",
+          "caption": "Fig. 2 | Avella et al.: Gefäßnachbarschaft im Uncinatusfall.",
           "interpretation": "Zwei Ansichten zeigen dasselbe Modell mit roten Arterien und blauen Venen um gelbe Pankreasstrukturen; der Stern lokalisiert die Läsionsgrenze zu den Mesenterialgefäßen. Drehung verdeutlicht vordere und hintere Überlagerungen und unterstützt die Diskussion des bildlich beschriebenen Kontakts von etwa 170°. Farbe belegt keine histologische Invasion. Maßstab und Winkelmesswerkzeug fehlen; der Winkel stammt aus der Fallbeschreibung, nicht aus einer Nachmessung des Fotos. Das Modell erleichtert die gemeinsame Betrachtung segmentierter Beziehungen. [Uncinatus-Fallmodell](ref:R02)"
         },
         "F03": {
-          "caption": "Avella et al.: Mehrfachansichten eines großen Hämangioms und varianten arteriellen Zuflusses.",
+          "caption": "Fig. 4 | Avella et al.: Mehrfachansichten eines großen Hämangioms und varianten arteriellen Zuflusses.",
           "interpretation": "Die Hauptansichten zeigen das physische Modell, die digitale Referenz links unten zusätzlich die Leberkontur. Die große gelbe Läsion und das benachbarte blaue Gefäßnetz besetzen unterschiedliche Räume; rechts markiert ein Stern die aus der linken Magenarterie entspringende linke Leberarterie. Weglassen eines Großteils der Parenchymhülle erleichtert das kontinuierliche Verfolgen kleiner Gefäße, zeigt jedoch nicht die gesamte Gewebeumgebung. Die beschriebene Erhaltungsplanung nutzte diese Beziehung; postoperative Perfusion oder Resektionsrandstatus belegen die Fotos nicht. [Hämangiom-Fallmodell](ref:R02)"
         },
         "F04": {
-          "caption": "Gong et al.: Farbkarten und Histogramme von Oberflächenabweichung und gefertigter Wanddicke.",
+          "caption": "Fig. 5 | Gong et al.: Farbkarten und Histogramme von Oberflächenabweichung und gefertigter Wanddicke.",
           "interpretation": "A1/A2 zeigen Oberflächenabweichung vom Digitalziel und Häufigkeitsverteilung, B1/B2 Dicke und deren Verteilung. Die A-Skala umfasst positive und negative Werte; ungefähr 0.01 mm Mittelwert sind daher kein mittlerer Absolutfehler. Der B-Hauptgipfel bei etwa 1 mm beschreibt die Fertigung der vorgegebenen Schale. Lokale Farbwechsel an Gefäßabgängen verdeutlichen, dass globale Mittel wichtige Ortsfehler verdecken können. Referenz ist ein CTA-Digitalmodell, nicht die tatsächliche pathologische Wanddicke. [Originale Geometrieprüfung](ref:R03)"
         },
         "F05": {
-          "caption": "Gong et al.: Pulsationskreislauf und Ultraschallbeobachtung im Aortenmodell.",
+          "caption": "Fig. 6 | Gong et al.: Pulsationskreislauf und Ultraschallbeobachtung im Aortenmodell.",
           "interpretation": "A und B zeigen Pumpen, Rückschlagventile und Modellanschlüsse, C das Lumen im zweidimensionalen Ultraschall, D Farbdopplerströmung und E die spektrale Geschwindigkeit über die Zeit. E ist eine repräsentative Ortskurve, keine mittlere Patientengeschwindigkeit; Farbdoppler allein misst ebenfalls keine Wandspannung. Die Abbildung erweitert flexible Modelle von statischer Geometrie um beobachtbare Dynamik, ohne patientenspezifische regionale mechanische Gleichwertigkeit zu belegen. [Originaler dynamischer Kreislauf](ref:R03)"
         },
         "F06": {
-          "caption": "Gong et al.: vier Planungsszenarien mit flexiblen Modellen.",
+          "caption": "Fig. 9 | Gong et al.: vier Planungsszenarien mit flexiblen Modellen.",
           "interpretation": "A–D, E–H, I–L und M–P entsprechen vier Fällen mit Modell- oder Planungsansichten neben abschließender Angiografie. Frühere Reihen betreffen Entfaltung, eingeengtes wahres Lumen und Abgänge aus dem Aneurysmasack; M–P enthalten zusätzlich Ultraschall und ein Farbsignal lokaler Endoleckage. Verformung kann in starrer Geometrie weniger sichtbare Anlagerungsprobleme zeigen; Abschlussangiografie ist jedoch kein vollständiger Langzeitverlauf. Es handelt sich um Fallillustrationen, keine Sensitivitätsschätzung aus ausgewählten Erfolgsbildern oder randomisierte klinische Prüfung starrer gegen flexible Modelle. [Originale Fallszenarien](ref:R03)"
         }
       }

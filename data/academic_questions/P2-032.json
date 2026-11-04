@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P2-032",
   "p": "P2",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-04",
   "related_paper_ids": [
@@ -147,7 +147,7 @@
         {
           "id": "repeatable_geometry",
           "title": "结构光能稳定记录形状，但模型精度不等于人体贴合",
-          "markdown": "残肢扫描为修型提供可重复的几何起点。Cutti 等在 3 个场地，用各自的 EinScan Pro 2X Plus 扫描 4 种刚性模型：大腿坐骨包容型、水用型，以及小腿圆锥型、圆柱型。每场地由经验不同的 2 名操作者完成扫描，合计 36 次；参考来自另一台计量级扫描仪，不能称为活体残肢的“真实形状”。高细节模式的点间距设为 0.5 mm，扫描及导出在 5 min 内完成。定位孔用于初始配准，再进行表面配准，以减少任意摆放对误差的影响。[多场地验证](ref:R01)\n\n研究分开评价相对参考的准确度、同一操作者的重复性、不同操作者的再现性。径向 RMSE 分别为 0.06–0.27、0.04–0.16、0.04–0.52 mm；有符号平均径向误差接近零，仍可能掩盖局部正负偏差。周长与体积比较还使用最小可检测变化量（MDC），回答变化是否超过测量噪声。这些结果支持记录几何变化，却没有测试软组织受压、残肢运动、日内体积变化或穿戴舒适度，不能把亚毫米扫描误差直接换算为某一患者可接受的压紧量。",
+          "markdown": "残肢扫描为修型提供可重复的几何起点。Cutti 等在 3 个场地，用各自的 EinScan Pro 2X Plus 扫描 4 种刚性模型：大腿坐骨包容型、基于静水压取型的 TF Aqua 型，以及小腿圆锥型、圆柱型。每场地由经验不同的 2 名操作者完成扫描，合计 36 次；参考来自另一台计量级扫描仪，不能称为活体残肢的“真实形状”。高细节模式的点间距设为 0.5 mm，扫描及导出在 5 min 内完成。定位孔用于初始配准，再进行表面配准，以减少任意摆放对误差的影响。[多场地验证](ref:R01)\n\n研究分开评价相对参考的准确度、同一操作者的重复性、不同操作者的再现性。径向 RMSE 分别为 0.06–0.27、0.04–0.16、0.04–0.52 mm；有符号平均径向误差接近零，仍可能掩盖局部正负偏差。周长与体积比较还使用最小可检测变化量（MDC），回答变化是否超过测量噪声。这些结果支持记录几何变化，却没有测试软组织受压、残肢运动、日内体积变化或穿戴舒适度，不能把亚毫米扫描误差直接换算为某一患者可接受的压紧量。",
           "figure_ids": [
             "F01"
           ]
@@ -170,7 +170,7 @@
         {
           "id": "automated_video",
           "title": "自动视频重建改善了模型实验，但尚未验证运动软组织",
-          "markdown": "De Waele 等用 4 种 SLA 打印、涂覆皮肤样纹理的刚性模型，对 Pixel 6a 照片、同手机视频和 Sony 相机照片进行比较。每种形状、每种方式重复 10 次，共 120 次；独立参考是 100 μm 体素 CT 所得外轮廓。视频帧经清晰度筛选、背景去除、ArUco 标记定标、多视图重建和保留表面的平滑。视频采集约 2 min，照片约 5–10 min；自动处理在高性能工作站上约 1 h 30 min，并非手机即时生成接受腔。[自动流程及模型验证](ref:R04)\n\n| 检查量 | 作者采用的全局阈值 | 解释边界 |\n|---|---|---|\n| 有符号径向误差 MRE | ±0.25 mm | 局部正负误差仍可能抵消 |\n| 径向 RMSE | <1 mm | 均方误差不等于最大误差 |\n| Hausdorff 距离 | ≤1.8 mm | 对局部极端偏差敏感 |\n| 法向角误差 MAE | <4° | 描述表面方向，不是距离 |\n\n视频与相机的汇总体积、周长偏差保持在 ±1% 内；但视频 40 次中仍有 2 次、相机 40 次中有 1 次超过 MRE 阈值。小腿圆柱模型的手机照片误差尤其明显。全部采集由同一名受训者完成；文中跨形状的“再现性”不能等同于 Cutti 的跨操作者再现性，更不能抵消前述真实残肢的运动问题。",
+          "markdown": "De Waele 等用 4 种 SLA 打印、涂覆皮肤样纹理的刚性模型，对 Pixel 6a 照片、同手机视频和 Sony 相机照片进行比较。每种形状、每种方式重复 10 次，共 120 次；独立参考是 100 μm 体素 CT 所得外轮廓。视频帧经清晰度筛选、背景去除、ArUco 标记定标、多视图重建和保留表面的平滑。视频采集约 2 min，照片约 5–10 min；自动处理在高性能工作站上约 1 h 30 min，并非手机即时生成接受腔。[自动流程及模型验证](ref:R04)\n\n| 检查量 | 作者采用的全局阈值 | 解释边界 |\n|---|---|---|\n| 有符号径向误差 MRE | ±0.25 mm | 局部正负误差仍可能抵消 |\n| 径向 RMSE | <1 mm | 均方根误差不等于最大误差 |\n| Hausdorff 距离 | ≤1.8 mm | 对局部极端偏差敏感 |\n| 法向角误差 MAE | <4° | 描述表面方向，不是距离 |\n\n视频与相机的汇总体积、周长偏差保持在 ±1% 内；但视频 40 次中仍有 2 次、相机 40 次中有 1 次超过 MRE 阈值。小腿圆柱模型的手机照片误差尤其明显。全部采集由同一名受训者完成；文中跨形状的“再现性”不能等同于 Cutti 的跨操作者再现性，更不能抵消前述真实残肢的运动问题。",
           "figure_ids": [
             "F04"
           ]
@@ -193,27 +193,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Cutti et al.：体积准确度、重复性和再现性的不同参照",
+          "caption": "Figure 9 · Cutti et al.：体积准确度、重复性和再现性的不同参照",
           "interpretation": "横轴均为模型类型，纵轴为体积百分比误差；左图相对参考操作者，中图比较同操作者重复，右图比较不同操作者，红虚线表示零。下表的偏倚/MDC 依次为 0.05/0.34%、0.04/0.49%、−0.04/0.21%。个别点偏离零与整体偏倚很小可以同时存在，不能把偏倚值当作每次扫描的误差上限。模型固定且不变，图中稳定性不包含活体残肢随姿势或时间变化的成分。[原图及测量定义](ref:R01)"
         },
         "F02": {
-          "caption": "Cullen et al.：摄影重建与数字参照的纵向剖面",
+          "caption": "Figure 6 · Cullen et al.：摄影重建与数字参照的纵向剖面",
           "interpretation": "上方 a 是重建，下方 b 是参照；左侧为封闭腔底，右侧为开口及侧缘。外轮廓接近，但 a 左侧内表面抬高，壁厚明显增加。b 的标注还显示用于固定模型的内部夹具，不能把它误认作人体解剖结构。剖面把问题定位到深部内腔，从而解释为什么表面积和高度接近参考，容量却偏小；它不是残肢与接受腔之间的压力图。[剖面原图](ref:R02)"
         },
         "F03": {
-          "caption": "Cullen et al.：壁厚随距腔底高度变化",
+          "caption": "Figure 7 · Cullen et al.：壁厚随距腔底高度变化",
           "interpretation": "横轴为距底部高度，单位 mm；纵轴为横截面平均壁厚，单位 mm。蓝色重建曲线在底部明显高于灰色参照，向中段逐渐接近，开口附近又有偏离。这一位置依赖性与“全局统一缩放错误”不同；仅靠调节整体比例不能修复缺少视角造成的内壁形变。曲线没有误差条，也不是多名受试者的均值，不能由它推断人群中的误差分布。[厚度曲线](ref:R02)"
         },
         "F04": {
-          "caption": "De Waele et al.：不同形状与采集方式的多指标误差",
+          "caption": "Figure 6 · De Waele et al.：不同形状与采集方式的多指标误差",
           "interpretation": "A–E 分别为 MRE、RMSE、Hausdorff 距离、径向误差四分位距和法向角误差。每个形状内按 Sony、Pixel 照片、Pixel 视频排列；红虚线是所设阈值，绿色三角为均值，箱线显示重复分布。圆柱小腿模型的 Pixel 照片在 A、B、C 明显较高，但 E 并非最高；表面方向误差小不保证尺寸正确。A 中个别超限也提醒：箱体落在阈值内，不等于所有重建均合格。图比较刚性模型，并没有显示视频已消除活体运动。[全局指标原图](ref:R04)"
         },
         "F05": {
-          "caption": "Lee et al.：由内部解剖、区域约束和人工修型共同生成界面",
+          "caption": "Fig. 6 · Lee et al.：由内部解剖、区域约束和人工修型共同生成界面",
           "interpretation": "D 显示影像分割及骨性标志控制的口缘，E 为体网格，F 为衬套和接受腔的分区；G–J 以穿入、加载、几何更新及压力场反馈形成循环。K 将后续人工处理单列，包括衬套近端延伸、胫骨前远端卸载及腓骨头附近修型。图中的彩色区域有不同含义：F 是设计分区，J 是模拟场，K 是修改区域，不能共用一个压力色标解释。流程保留人工决策，因而临床结果评价的是整个界面设计组合。[原流程图](ref:R06)"
         },
         "F06": {
-          "caption": "Lee et al.：各残肢胫骨前远端的归一化界面压力",
+          "caption": "Fig. 2 · Lee et al.：各残肢胫骨前远端的归一化界面压力",
           "interpretation": "横轴列出 9 个残肢测试单元，蓝色为常规界面、橙色为新界面；纵轴是归一化平均值，不是 kPa。每个测点按两种条件中的最大值归一化，因此不能把不同患者柱高直接解释为绝对压力大小。多数橙柱较低，但第 8 个单元反而较高，展示了总体差异中的个体异质性。读图应与该测点的配对统计对应；其他部位压力和整体贴合没有同时获得显著改善，不能由这一局部图推出全部皮肤区域均卸载。[原压力图与方法](ref:R06)"
         }
       }
@@ -225,7 +225,7 @@
         {
           "id": "repeatable_geometry",
           "title": "Structured light records shape reproducibly, but model accuracy is not bodily fit",
-          "markdown": "Residual-limb scanning provides a repeatable geometric starting point for rectification. Cutti et al. used separate EinScan Pro 2X Plus units at 3 sites to scan 4 rigid models: transfemoral ischial-containment and aquatic shapes, and transtibial conical and cylindrical shapes. At each site, 2 operators with different experience produced 36 scans in total. A separate metrology scanner supplied the reference, rather than a living limb's “true shape.” High-detail point spacing was 0.5 mm; scanning and export took less than 5 min. Registration holes initialized alignment before surface registration, reducing effects of arbitrary positioning.[Multisite validation](ref:R01)\n\nThe study separated accuracy against the reference, repeatability within an operator and reproducibility between operators. Radial RMSE ranges were 0.06–0.27, 0.04–0.16 and 0.04–0.52 mm, respectively. A signed mean radial error near zero can still conceal opposing local deviations. Circumference and volume comparisons also used minimum detectable change (MDC) to distinguish change from measurement noise. These results support recording geometry, but did not test tissue compression, limb movement, daily volume change or wearing comfort. Submillimeter scan error therefore cannot directly determine a patient's tolerable compression.",
+          "markdown": "Residual-limb scanning provides a repeatable geometric starting point for rectification. Cutti et al. used separate EinScan Pro 2X Plus units at 3 sites to scan 4 rigid models: transfemoral ischial-containment and hydrostatic-casting-derived TF Aqua shapes, and transtibial conical and cylindrical shapes. At each site, 2 operators with different experience produced 36 scans in total. A separate metrology scanner supplied the reference, rather than a living limb's “true shape.” High-detail point spacing was 0.5 mm; scanning and export took less than 5 min. Registration holes initialized alignment before surface registration, reducing effects of arbitrary positioning.[Multisite validation](ref:R01)\n\nThe study separated accuracy against the reference, repeatability within an operator and reproducibility between operators. Radial RMSE ranges were 0.06–0.27, 0.04–0.16 and 0.04–0.52 mm, respectively. A signed mean radial error near zero can still conceal opposing local deviations. Circumference and volume comparisons also used minimum detectable change (MDC) to distinguish change from measurement noise. These results support recording geometry, but did not test tissue compression, limb movement, daily volume change or wearing comfort. Submillimeter scan error therefore cannot directly determine a patient's tolerable compression.",
           "figure_ids": [
             "F01"
           ]
@@ -248,7 +248,7 @@
         {
           "id": "automated_video",
           "title": "Automated video improves model reconstruction without validating moving tissue",
-          "markdown": "De Waele et al. compared Pixel 6a photographs, video from the same phone and Sony-camera photographs using 4 rigid SLA-printed models painted with skin-like texture. Each shape and modality was repeated 10 times, totaling 120 acquisitions. The independent reference was the outer contour from CT with 100 μm voxels. Processing selected sharp video frames, removed backgrounds, scaled with ArUco markers, reconstructed multiple views and applied surface-preserving smoothing. Video capture took approximately 2 min and photography 5–10 min; automated processing took approximately 1 h 30 min on a powerful workstation, rather than generating a socket instantly on the phone.[Automated workflow and model validation](ref:R04)\n\n| Measure | Authors' global threshold | Interpretation |\n|---|---|---|\n| Signed radial error, MRE | ±0.25 mm | Opposing local errors can cancel |\n| Radial RMSE | <1 mm | Squared-error average is not maximum error |\n| Hausdorff distance | ≤1.8 mm | Sensitive to extreme local deviations |\n| Surface-normal angular error, MAE | <4° | Surface orientation, not distance |\n\nAggregated volume and circumference biases for video and camera photographs remained within ±1%. Nevertheless, 2 of 40 video acquisitions and 1 of 40 camera acquisitions exceeded the MRE threshold. Phone photographs performed particularly poorly on the cylindrical transtibial model. All acquisitions used a single trained operator. The article's cross-shape “reproducibility” is therefore not equivalent to Cutti's between-operator reproducibility, and does not resolve movement errors in living limbs.",
+          "markdown": "De Waele et al. compared Pixel 6a photographs, video from the same phone and Sony-camera photographs using 4 rigid SLA-printed models painted with skin-like texture. Each shape and modality was repeated 10 times, totaling 120 acquisitions. The independent reference was the outer contour from CT with 100 μm voxels. Processing selected sharp video frames, removed backgrounds, scaled with ArUco markers, reconstructed multiple views and applied surface-preserving smoothing. Video capture took approximately 2 min and photography 5–10 min; automated processing took approximately 1 h 30 min on a powerful workstation, rather than generating a socket instantly on the phone.[Automated workflow and model validation](ref:R04)\n\n| Measure | Authors' global threshold | Interpretation |\n|---|---|---|\n| Signed radial error, MRE | ±0.25 mm | Opposing local errors can cancel |\n| Radial RMSE | <1 mm | Root mean square error is not maximum error |\n| Hausdorff distance | ≤1.8 mm | Sensitive to extreme local deviations |\n| Surface-normal angular error, MAE | <4° | Surface orientation, not distance |\n\nAggregated volume and circumference biases for video and camera photographs remained within ±1%. Nevertheless, 2 of 40 video acquisitions and 1 of 40 camera acquisitions exceeded the MRE threshold. Phone photographs performed particularly poorly on the cylindrical transtibial model. All acquisitions used a single trained operator. The article's cross-shape “reproducibility” is therefore not equivalent to Cutti's between-operator reproducibility, and does not resolve movement errors in living limbs.",
           "figure_ids": [
             "F04"
           ]
@@ -271,27 +271,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Cutti et al.: different references for volume accuracy, repeatability and reproducibility",
+          "caption": "Figure 9 · Cutti et al.: different references for volume accuracy, repeatability and reproducibility",
           "interpretation": "All panels show model type horizontally and percentage volume error vertically. The left compares scans with the reference operator, the middle repeats within an operator and the right compares operators; red dashed lines mark zero. The table gives bias/MDC of 0.05/0.34%, 0.04/0.49% and −0.04/0.21%, respectively. Individual deviations can coexist with minimal aggregate bias; bias is not an upper error bound for each scan. Because the models are fixed, this stability excludes living-limb changes with posture or time.[Original figure and measurement definitions](ref:R01)"
         },
         "F02": {
-          "caption": "Cullen et al.: longitudinal sections of reconstruction and digital reference",
+          "caption": "Figure 6 · Cullen et al.: longitudinal sections of reconstruction and digital reference",
           "interpretation": "Panel a above is the reconstruction; b below is the reference. The closed base lies left and the opening and side guards right. Exterior contours are similar, but the interior near the left of a rises, substantially thickening the wall. The internal clamp labeled in b fixes the model and is not anatomy. The section locates error in the deep cavity, explaining why area and height can approximate the reference while capacity is underestimated. It is not a limb–socket pressure map.[Original sections](ref:R02)"
         },
         "F03": {
-          "caption": "Cullen et al.: wall thickness versus height above the socket base",
+          "caption": "Figure 7 · Cullen et al.: wall thickness versus height above the socket base",
           "interpretation": "The horizontal axis is height above the base in mm; the vertical axis is mean transverse wall thickness in mm. The blue reconstruction substantially exceeds the gray reference near the base, approaches it centrally and diverges again near the opening. This spatial pattern differs from a uniform scale error: changing overall scale cannot repair interior deformation caused by missing views. The curve has no error bars and is not an average across participants; it cannot establish a population error distribution.[Thickness curves](ref:R02)"
         },
         "F04": {
-          "caption": "De Waele et al.: multiple error metrics by shape and acquisition modality",
+          "caption": "Figure 6 · De Waele et al.: multiple error metrics by shape and acquisition modality",
           "interpretation": "A–E display MRE, RMSE, Hausdorff distance, radial-error interquartile range and normal-angle error. Each shape orders Sony, Pixel photographs and Pixel video. Red dashed lines are specified thresholds, green triangles means and boxes the repeated distributions. Pixel photographs of the cylindrical transtibial model are elevated in A, B and C, but not highest in E: small orientation error does not ensure correct dimensions. Outlying threshold exceedances in A also show that a box within limits does not mean every reconstruction passed. These rigid-model comparisons do not demonstrate elimination of living-limb motion.[Original global metrics](ref:R04)"
         },
         "F05": {
-          "caption": "Lee et al.: interfaces generated from internal anatomy, regional constraints and manual rectification",
+          "caption": "Fig. 6 · Lee et al.: interfaces generated from internal anatomy, regional constraints and manual rectification",
           "interpretation": "D shows segmented imaging and a brim controlled by bony landmarks; E is the volume mesh and F partitions liner and socket. G–J cycle through donning, loading, geometric updating and pressure-field feedback. K separately shows subsequent manual changes: proximal liner extension, anterior-distal-tibial relief and modification near the fibular head. Colors have different meanings: F denotes design regions, J a simulated field and K modified regions. They cannot be interpreted with one pressure scale. Because manual decisions remain, clinical outcomes evaluate the complete interface-design combination.[Original workflow](ref:R06)"
         },
         "F06": {
-          "caption": "Lee et al.: normalized anterior-distal-tibial interface pressure by residual limb",
+          "caption": "Fig. 2 · Lee et al.: normalized anterior-distal-tibial interface pressure by residual limb",
           "interpretation": "The horizontal axis lists 9 tested residual limbs; blue denotes conventional and orange novel interfaces. The vertical axis is normalized mean pressure, not kPa. Each site was normalized to the maximum across conditions, so column heights across patients cannot be interpreted as absolute-pressure comparisons. Most orange columns are lower, but unit 8 is higher, exposing individual heterogeneity within the aggregate difference. Interpretation belongs with paired statistics for this site. Other regions and overall fit did not simultaneously improve significantly; this local plot does not establish unloading of all skin regions.[Original pressure plot and methods](ref:R06)"
         }
       }
@@ -303,7 +303,7 @@
         {
           "id": "repeatable_geometry",
           "title": "Strukturiertes Licht erfasst Formen reproduzierbar; Modellgenauigkeit ist keine Passform",
-          "markdown": "Ein Stumpfscan liefert einen wiederholbaren geometrischen Ausgangspunkt für die Modellierung. Cutti et al. untersuchten an 3 Standorten mit jeweils einem EinScan Pro 2X Plus 4 starre Modelle: transfemorale ischial umgreifende und wassergeeignete Formen sowie transtibiale konische und zylindrische Formen. Je Standort arbeiteten 2 unterschiedlich erfahrene Personen; über alle Standorte entstanden insgesamt 36 Scans. Ein separates Messsystem lieferte die Referenz; diese ist keine „wahre Form“ eines lebenden Stumpfes. Im Detailmodus betrug der Punktabstand 0.5 mm; Scannen und Export dauerten weniger als 5 min. Referenzbohrungen initialisierten die Ausrichtung vor der Oberflächenregistrierung und verminderten Lageeinflüsse.[Validierung an mehreren Standorten](ref:R01)\n\nUnterschieden wurden Genauigkeit gegenüber der Referenz, Wiederholbarkeit derselben Person und Reproduzierbarkeit zwischen Personen. Die radialen RMSE-Bereiche betrugen entsprechend 0.06–0.27, 0.04–0.16 und 0.04–0.52 mm. Ein vorzeichenbehafteter mittlerer Radialfehler nahe null kann gegenläufige lokale Abweichungen verdecken. Für Umfang und Volumen wurde außerdem die kleinste nachweisbare Änderung (MDC) berechnet, um Veränderung von Messrauschen zu unterscheiden. Die Befunde stützen die geometrische Dokumentation; Gewebekompression, Stumpfbewegung, tägliche Volumenschwankungen und Tragekomfort wurden nicht geprüft. Aus einem Scanfehler unter einem Millimeter folgt daher kein individuell verträgliches Kompressionsmaß.",
+          "markdown": "Ein Stumpfscan liefert einen wiederholbaren geometrischen Ausgangspunkt für die Modellierung. Cutti et al. untersuchten an 3 Standorten mit jeweils einem EinScan Pro 2X Plus 4 starre Modelle: transfemorale ischial umgreifende Formen und aus hydrostatischer Abformung abgeleitete TF-Aqua-Formen sowie transtibiale konische und zylindrische Formen. Je Standort arbeiteten 2 unterschiedlich erfahrene Personen; über alle Standorte entstanden insgesamt 36 Scans. Ein separates Messsystem lieferte die Referenz; diese ist keine „wahre Form“ eines lebenden Stumpfes. Im Detailmodus betrug der Punktabstand 0.5 mm; Scannen und Export dauerten weniger als 5 min. Referenzbohrungen initialisierten die Ausrichtung vor der Oberflächenregistrierung und verminderten Lageeinflüsse.[Validierung an mehreren Standorten](ref:R01)\n\nUnterschieden wurden Genauigkeit gegenüber der Referenz, Wiederholbarkeit derselben Person und Reproduzierbarkeit zwischen Personen. Die radialen RMSE-Bereiche betrugen entsprechend 0.06–0.27, 0.04–0.16 und 0.04–0.52 mm. Ein vorzeichenbehafteter mittlerer Radialfehler nahe null kann gegenläufige lokale Abweichungen verdecken. Für Umfang und Volumen wurde außerdem die kleinste nachweisbare Änderung (MDC) berechnet, um Veränderung von Messrauschen zu unterscheiden. Die Befunde stützen die geometrische Dokumentation; Gewebekompression, Stumpfbewegung, tägliche Volumenschwankungen und Tragekomfort wurden nicht geprüft. Aus einem Scanfehler unter einem Millimeter folgt daher kein individuell verträgliches Kompressionsmaß.",
           "figure_ids": [
             "F01"
           ]
@@ -326,7 +326,7 @@
         {
           "id": "automated_video",
           "title": "Automatisierte Videos verbessern Modellrekonstruktionen, ohne bewegtes Gewebe zu validieren",
-          "markdown": "De Waele et al. verglichen Pixel-6a-Fotos, Videos desselben Smartphones und Sony-Kameraaufnahmen an 4 starren SLA-Modellen mit hautähnlicher Oberflächentextur. Jede Form und Methode wurde 10-mal erfasst, insgesamt 120 Aufnahmen. Die unabhängige Referenz war die Außenkontur einer CT mit 100 μm Voxelgröße. Die Verarbeitung wählte scharfe Videobilder aus, entfernte Hintergründe, skalierte mit ArUco-Markern, rekonstruierte mehrere Ansichten und glättete oberflächenschonend. Videoaufnahmen dauerten etwa 2 min, Fotos 5–10 min; die automatisierte Verarbeitung benötigte auf einer leistungsfähigen Workstation etwa 1 h 30 min. Der Schaft entstand nicht unmittelbar auf dem Smartphone.[Automatisierter Ablauf und Modellvalidierung](ref:R04)\n\n| Messgröße | Globaler Grenzwert der Autoren | Interpretation |\n|---|---|---|\n| Vorzeichenbehafteter Radialfehler MRE | ±0.25 mm | Gegenläufige lokale Fehler können sich aufheben |\n| Radialer RMSE | <1 mm | Quadratischer Mittelwert ist kein Maximalfehler |\n| Hausdorff-Abstand | ≤1.8 mm | Empfindlich gegenüber extremen lokalen Abweichungen |\n| Winkelfehler der Flächennormalen MAE | <4° | Oberflächenrichtung, kein Abstand |\n\nDie zusammengefassten Volumen- und Umfangsabweichungen von Videos und Kameraaufnahmen blieben innerhalb ±1%. Dennoch überschritten 2 von 40 Videoaufnahmen und 1 von 40 Kameraaufnahmen den MRE-Grenzwert. Smartphone-Fotos des zylindrischen transtibialen Modells wichen besonders deutlich ab. Alle Aufnahmen führte dieselbe geschulte Person durch. Die im Artikel bezeichnete „Reproduzierbarkeit“ zwischen Formen entspricht daher nicht Cuttis Reproduzierbarkeit zwischen Personen und löst das Bewegungsproblem lebender Stümpfe nicht.",
+          "markdown": "De Waele et al. verglichen Pixel-6a-Fotos, Videos desselben Smartphones und Sony-Kameraaufnahmen an 4 starren SLA-Modellen mit hautähnlicher Oberflächentextur. Jede Form und Methode wurde 10-mal erfasst, insgesamt 120 Aufnahmen. Die unabhängige Referenz war die Außenkontur einer CT mit 100 μm Voxelgröße. Die Verarbeitung wählte scharfe Videobilder aus, entfernte Hintergründe, skalierte mit ArUco-Markern, rekonstruierte mehrere Ansichten und glättete oberflächenschonend. Videoaufnahmen dauerten etwa 2 min, Fotos 5–10 min; die automatisierte Verarbeitung benötigte auf einer leistungsfähigen Workstation etwa 1 h 30 min. Der Schaft entstand nicht unmittelbar auf dem Smartphone.[Automatisierter Ablauf und Modellvalidierung](ref:R04)\n\n| Messgröße | Globaler Grenzwert der Autoren | Interpretation |\n|---|---|---|\n| Vorzeichenbehafteter Radialfehler MRE | ±0.25 mm | Gegenläufige lokale Fehler können sich aufheben |\n| Radialer RMSE | <1 mm | Wurzel des mittleren quadratischen Fehlers, nicht der Maximalfehler |\n| Hausdorff-Abstand | ≤1.8 mm | Empfindlich gegenüber extremen lokalen Abweichungen |\n| Winkelfehler der Flächennormalen MAE | <4° | Oberflächenrichtung, kein Abstand |\n\nDie zusammengefassten Volumen- und Umfangsabweichungen von Videos und Kameraaufnahmen blieben innerhalb ±1%. Dennoch überschritten 2 von 40 Videoaufnahmen und 1 von 40 Kameraaufnahmen den MRE-Grenzwert. Smartphone-Fotos des zylindrischen transtibialen Modells wichen besonders deutlich ab. Alle Aufnahmen führte dieselbe geschulte Person durch. Die im Artikel bezeichnete „Reproduzierbarkeit“ zwischen Formen entspricht daher nicht Cuttis Reproduzierbarkeit zwischen Personen und löst das Bewegungsproblem lebender Stümpfe nicht.",
           "figure_ids": [
             "F04"
           ]
@@ -349,27 +349,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Cutti et al.: unterschiedliche Referenzen für Volumengenauigkeit, Wiederholbarkeit und Reproduzierbarkeit",
+          "caption": "Figure 9 · Cutti et al.: unterschiedliche Referenzen für Volumengenauigkeit, Wiederholbarkeit und Reproduzierbarkeit",
           "interpretation": "Die horizontale Achse zeigt jeweils den Modelltyp, die vertikale den prozentualen Volumenfehler. Links wird mit der Referenzperson, mittig innerhalb derselben Person und rechts zwischen Personen verglichen; rote gestrichelte Linien markieren null. Die Tabelle nennt Bias/MDC von 0.05/0.34%, 0.04/0.49% und −0.04/0.21%. Einzelabweichungen können trotz geringem Gesamtbias auftreten; der Bias begrenzt nicht den Fehler jedes Scans. Da die Modelle unveränderlich sind, umfasst diese Stabilität keine haltungs- oder zeitabhängigen Veränderungen lebender Stümpfe.[Originalabbildung und Messdefinitionen](ref:R01)"
         },
         "F02": {
-          "caption": "Cullen et al.: Längsschnitte der Rekonstruktion und digitalen Referenz",
+          "caption": "Figure 6 · Cullen et al.: Längsschnitte der Rekonstruktion und digitalen Referenz",
           "interpretation": "Oben zeigt a die Rekonstruktion, unten b die Referenz. Links liegt der geschlossene Boden, rechts die Öffnung mit Seitenrändern. Die Außenkonturen ähneln sich, doch links in a steigt die Innenfläche an und verdickt die Wand deutlich. Die in b markierte innere Klemme dient der Modellfixierung und ist keine Anatomie. Der Schnitt lokalisiert den Fehler im tiefen Innenraum und erklärt ähnliche Flächen- und Höhenwerte bei unterschätztem Fassungsvolumen. Er zeigt keine Druckverteilung zwischen Stumpf und Schaft.[Originalschnitte](ref:R02)"
         },
         "F03": {
-          "caption": "Cullen et al.: Wandstärke in Abhängigkeit von der Höhe über dem Schaftboden",
+          "caption": "Figure 7 · Cullen et al.: Wandstärke in Abhängigkeit von der Höhe über dem Schaftboden",
           "interpretation": "Die horizontale Achse zeigt die Höhe über dem Boden in mm, die vertikale die mittlere Wandstärke des Querschnitts in mm. Die blaue Rekonstruktion liegt am Boden deutlich über der grauen Referenz, nähert sich ihr im Mittelteil und weicht an der Öffnung erneut ab. Dieses ortsabhängige Muster unterscheidet sich von einem einheitlichen Skalierungsfehler. Eine globale Maßstabsänderung behebt keine Innenwandverformung durch fehlende Ansichten. Die Kurve enthält keine Fehlerbalken und ist kein Mittel über Versuchspersonen; eine Fehlerverteilung in der Bevölkerung lässt sich daraus nicht ableiten.[Wandstärkenkurven](ref:R02)"
         },
         "F04": {
-          "caption": "De Waele et al.: mehrere Fehlermetriken nach Form und Aufnahmeverfahren",
+          "caption": "Figure 6 · De Waele et al.: mehrere Fehlermetriken nach Form und Aufnahmeverfahren",
           "interpretation": "A–E zeigen MRE, RMSE, Hausdorff-Abstand, Interquartilsabstand der radialen Fehler und Normalenwinkelfehler. Je Form folgen Sony, Pixel-Fotos und Pixel-Video. Rote gestrichelte Linien kennzeichnen Grenzwerte, grüne Dreiecke Mittelwerte und Boxen die Wiederholungsverteilungen. Pixel-Fotos des zylindrischen transtibialen Modells liegen in A, B und C höher, jedoch nicht am höchsten in E: Kleine Richtungsfehler garantieren keine richtigen Abmessungen. Einzelne Überschreitungen in A zeigen zudem, dass eine Box innerhalb der Grenzen nicht ausschließlich gültige Rekonstruktionen bedeutet. Der Vergleich starrer Modelle belegt keine Beseitigung von Stumpfbewegungen.[Originale globale Messgrößen](ref:R04)"
         },
         "F05": {
-          "caption": "Lee et al.: Schnittstellen aus innerer Anatomie, regionalen Vorgaben und manueller Modellierung",
+          "caption": "Fig. 6 · Lee et al.: Schnittstellen aus innerer Anatomie, regionalen Vorgaben und manueller Modellierung",
           "interpretation": "D zeigt segmentierte Bildgebung und knöcherne Bezugspunkte für den Schaftrand, E das Volumennetz und F die Unterteilung von Liner und Schaft. G–J bilden einen Zyklus aus Anziehen, Belastung, Geometrieänderung und Rückmeldung des Druckfeldes. K stellt anschließende manuelle Änderungen getrennt dar: proximale Linerverlängerung, Entlastung der vorderen distalen Tibia und Modellierung am Fibulaköpfchen. Farben bedeuten Verschiedenes: in F Entwurfsregionen, in J ein simuliertes Feld, in K veränderte Bereiche. Ein gemeinsamer Druckfarbmaßstab wäre falsch. Da manuelle Entscheidungen verbleiben, bewerten die klinischen Ergebnisse die gesamte Schnittstellengestaltung.[Originalablauf](ref:R06)"
         },
         "F06": {
-          "caption": "Lee et al.: normalisierter Grenzflächendruck an der vorderen distalen Tibia je Stumpf",
+          "caption": "Fig. 2 · Lee et al.: normalisierter Grenzflächendruck an der vorderen distalen Tibia je Stumpf",
           "interpretation": "Horizontal sind 9 untersuchte Stümpfe aufgetragen; Blau kennzeichnet konventionelle und Orange neue Schnittstellen. Vertikal steht der normalisierte Mittelwert, nicht kPa. Jeder Messort wurde auf das Maximum beider Bedingungen normiert. Säulenhöhen verschiedener Personen erlauben deshalb keinen Vergleich absoluter Drücke. Die meisten orangefarbenen Säulen sind niedriger, diejenige von Einheit 8 jedoch höher: Der Gesamteffekt enthält individuelle Heterogenität. Die Interpretation gehört zur gepaarten Statistik dieses Messorts. Andere Regionen und die allgemeine Passform verbesserten sich nicht gleichzeitig signifikant; die lokale Darstellung belegt keine Entlastung sämtlicher Hautregionen.[Originaldruckdiagramm und Methoden](ref:R06)"
         }
       }

@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P6-094",
   "p": "P6",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [
@@ -155,27 +155,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Chen et al.：同一解剖形状在成型平台上的方向变化。",
+          "caption": "Fig. 2 | Chen et al.：同一解剖形状在成型平台上的方向变化。",
           "interpretation": "三行分别为桡骨远端、椎柱和跟骨示例，列为水平、垂直及倾斜方向。图保留形状而改变平台接触关系，说明比较并非缩小模型来省料；支撑与逐层路径会随方向改变。画面是切片前数字对象，没有实际失败率或教学可辨识度的测量。[方向定义](ref:R01)"
         },
         "F02": {
-          "caption": "Chen et al.：挤出打印的层厚、预计时间与材料费用。",
-          "interpretation": "横轴是层厚，左纵轴是分钟，右纵轴是美元；形状符号区分设备。左图随层厚增加而下降，右图的方形系列却随层厚增加而下降，另外两个系列变化较小且方向不同。时间与材料不能用同一斜率推断，连接线也不证明中间任意设置均能切片成功。[挤出估算](ref:R01)"
+          "caption": "Fig. 3 | Chen et al.：挤出打印的层厚、预计时间与材料费用。",
+          "interpretation": "横轴是层厚，左纵轴是分钟，右纵轴是美元；形状符号区分设备。左图随层厚增加而下降，右图的方形系列也随层厚增加而下降，另外两个系列变化较小且方向不同。时间与材料不能用同一斜率推断，连接线也不证明中间任意设置均能切片成功。[挤出估算](ref:R01)"
         },
         "F03": {
-          "caption": "Chen et al.：树脂方案中时间变化远大于耗材变化。",
+          "caption": "Fig. 4 | Chen et al.：树脂方案中时间变化远大于耗材变化。",
           "interpretation": "圆点与方形代表两个树脂设备。左图的预计分钟数明显随层厚增加下降，右图费用变化很小。右纵轴没有从零开始，视觉斜率会放大价格差；该图排除了放不进平台的股骨模型，因此不能直接与保留全部模型的挤出图均值比较。清洗和固化时间不在左图估时中。[树脂比较](ref:R01)"
         },
         "F04": {
-          "caption": "Mashari et al.：打印框架之后仍有软组织构建阶段。",
+          "caption": "Fig. 3 | Mashari et al.：打印框架之后仍有软组织构建阶段。",
           "interpretation": "A 是打印骨架和容器，B 显示追加的硅胶结构及局部放大，C 是加入凝胶后的完整体模。图中的阶段转换说明模型并非离开打印机即可用于全部练习；人工构建、凝固等待及软材料更换属于不同于骨架耗材的资源。照片没有给出各阶段重复制作的寿命或失败分布。[混合构建](ref:R02)"
         },
         "F05": {
-          "caption": "Seok et al.：网格结构兼顾内部可见性与个体形状。",
+          "caption": "Figure 2 | Seok et al.：网格结构兼顾内部可见性与个体形状。",
           "interpretation": "A–D 为同一数字设计的不同视角，红色病灶透过灰色网格可见。图解释了为什么不必用透明实体包裹整个腺体，却没有提供网格相对实心节省多少材料的实测对照。白色底座和显示网格也提醒，临床分割之后仍有展示设计与可打印性处理。[设计与修整](ref:R03)"
         },
         "F06": {
-          "caption": "Avella et al.：分部着色保留胆道与血管的空间关系。",
+          "caption": "Fig. 3 | Avella et al.：分部着色保留胆道与血管的空间关系。",
           "interpretation": "左侧为整体关系，右侧放大胆道与病灶邻近区域；绿色胆道与胆囊、红色动脉和蓝色静脉帮助追踪不同分支，箭头与星号定位论文讨论的结构。这样的分部表达增加装配与检查对象，不能仅以线材总量代表制作工作。原图无工时坐标，也不直接验证正文所列费用或产能。[分部模型](ref:R04)"
         }
       }
@@ -234,27 +234,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Chen et al.: Orientation changes of identical anatomy on the build plate.",
+          "caption": "Fig. 2 | Chen et al.: Orientation changes of identical anatomy on the build plate.",
           "interpretation": "Rows show distal radius, spine and calcaneus; columns show horizontal, vertical and oblique placement. Shape is retained while plate relationships change, rather than scaling to save material. Supports and layer paths depend on orientation. These digital objects do not measure physical failure or educational recognizability. [Orientation definitions](ref:R01)"
         },
         "F02": {
-          "caption": "Chen et al.: Layer height, estimated time and material cost for extrusion.",
+          "caption": "Fig. 3 | Chen et al.: Layer height, estimated time and material cost for extrusion.",
           "interpretation": "Horizontal axes show layer height, left vertical minutes and right vertical dollars; symbols distinguish machines. Time falls as layers thicken. On the right the square series also falls, whereas the other series change less and in the opposite direction. Time and material cannot share an assumed slope, and connecting lines do not establish slicing feasibility at every intermediate setting. [Extrusion estimates](ref:R01)"
         },
         "F03": {
-          "caption": "Chen et al.: Resin time changes are much larger than consumption changes.",
+          "caption": "Fig. 4 | Chen et al.: Resin time changes are much larger than consumption changes.",
           "interpretation": "Circles and squares denote two resin machines. Estimated minutes fall markedly with thicker layers, while cost changes little. The right vertical axis does not start at zero and visually magnifies price differences. The oversized femoral model was excluded, preventing direct comparison with extrusion means retaining all anatomies. Washing and curing are absent from the left-panel estimate. [Resin comparison](ref:R01)"
         },
         "F04": {
-          "caption": "Mashari et al.: Soft-tissue construction follows printing of the frame.",
+          "caption": "Fig. 3 | Mashari et al.: Soft-tissue construction follows printing of the frame.",
           "interpretation": "A shows printed bone and enclosure, B added silicone with a close-up, and C the gel-filled phantom. Stage changes show that leaving the printer does not make the object ready for every exercise. Manual construction, setting delays and soft-material renewal are resources beyond frame material. Photos do not quantify repeated-fabrication lifespan or failures. [Hybrid construction](ref:R02)"
         },
         "F05": {
-          "caption": "Seok et al.: Mesh combines interior visibility with individual shape.",
+          "caption": "Figure 2 | Seok et al.: Mesh combines interior visibility with individual shape.",
           "interpretation": "A–D show different views of one digital design; the red lesion is visible through gray mesh. The design explains why a transparent solid gland shell is unnecessary, but supplies no measured mesh-versus-solid material saving. The white base and display mesh also show that segmentation is followed by presentation design and printability work. [Design and editing](ref:R03)"
         },
         "F06": {
-          "caption": "Avella et al.: Compartment colors preserve duct–vessel relationships.",
+          "caption": "Fig. 3 | Avella et al.: Compartment colors preserve duct–vessel relationships.",
           "interpretation": "The left shows overall relationships and the right enlarges the duct and lesion region. Green ducts and gallbladder, red arteries and blue veins distinguish branches; arrows and asterisk locate discussed structures. Compartment representation adds assembly and inspection tasks, not captured by filament mass alone. No time axis verifies the reported costs or capacity. [Compartment model](ref:R04)"
         }
       }
@@ -313,27 +313,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Chen et al.: Orientierungen identischer Anatomie auf der Bauplattform.",
+          "caption": "Fig. 2 | Chen et al.: Orientierungen identischer Anatomie auf der Bauplattform.",
           "interpretation": "Zeilen zeigen distalen Radius, Wirbelsäule und Kalkaneus, Spalten horizontale, vertikale und schräge Lage. Die Form bleibt erhalten, während Plattformbeziehungen wechseln; Materialersparnis erfolgt nicht durch Verkleinerung. Stützen und Schichtwege hängen von Orientierung ab. Digitale Objekte messen weder reale Fehler noch didaktische Erkennbarkeit. [Orientierungsdefinitionen](ref:R01)"
         },
         "F02": {
-          "caption": "Chen et al.: Schichthöhe, geschätzte Zeit und Materialkosten bei Extrusion.",
+          "caption": "Fig. 3 | Chen et al.: Schichthöhe, geschätzte Zeit und Materialkosten bei Extrusion.",
           "interpretation": "Horizontal steht Schichthöhe, links vertikal Minuten, rechts Dollar; Symbole unterscheiden Geräte. Mit dickeren Schichten fällt Zeit. Rechts fällt auch die quadratische Serie, während andere Serien schwächer und entgegengesetzt verlaufen. Zeit und Material haben keine gemeinsam voraussetzbare Steigung; Verbindungslinien belegen keine Slicing-Machbarkeit beliebiger Zwischenwerte. [Extrusionsschätzungen](ref:R01)"
         },
         "F03": {
-          "caption": "Chen et al.: Harz-Zeitänderungen übertreffen Verbrauchsänderungen deutlich.",
+          "caption": "Fig. 4 | Chen et al.: Harz-Zeitänderungen übertreffen Verbrauchsänderungen deutlich.",
           "interpretation": "Kreise und Quadrate bezeichnen zwei Harzgeräte. Geschätzte Minuten sinken deutlich bei dickeren Schichten, Kosten ändern sich wenig. Die rechte Achse beginnt nicht bei null und vergrößert Preisunterschiede optisch. Das zu große Femurmodell wurde ausgeschlossen; direkter Vergleich mit Extrusionsmitteln aller Anatomien ist unzulässig. Waschen und Nachhärten fehlen in der linken Schätzung. [Harzvergleich](ref:R01)"
         },
         "F04": {
-          "caption": "Mashari et al.: Weichteilaufbau folgt auf den Druck des Rahmens.",
+          "caption": "Fig. 3 | Mashari et al.: Weichteilaufbau folgt auf den Druck des Rahmens.",
           "interpretation": "A zeigt Knochen und Behälter, B ergänztes Silikon mit Vergrößerung, C das gelgefüllte Phantom. Phasenwechsel zeigen, dass Druckende nicht Einsatzbereitschaft für jede Übung bedeutet. Handarbeit, Erstarrungswartezeit und Weichmaterialerneuerung benötigen Ressourcen zusätzlich zum Rahmenmaterial. Fotos quantifizieren weder Lebensdauer wiederholter Herstellung noch Fehlerverteilungen. [Hybridaufbau](ref:R02)"
         },
         "F05": {
-          "caption": "Seok et al.: Netz verbindet innere Sichtbarkeit mit individueller Form.",
+          "caption": "Figure 2 | Seok et al.: Netz verbindet innere Sichtbarkeit mit individueller Form.",
           "interpretation": "A–D zeigen verschiedene Ansichten eines digitalen Entwurfs; die rote Läsion bleibt durch graues Netz sichtbar. Dies erklärt den Verzicht auf eine transparente massive Drüsenhülle, liefert aber keine gemessene Materialersparnis gegenüber Vollmodellen. Weißer Sockel und Darstellungsnetz verdeutlichen zusätzliche Präsentationsgestaltung und Druckbarkeitsarbeit nach Segmentierung. [Entwurf und Korrektur](ref:R03)"
         },
         "F06": {
-          "caption": "Avella et al.: Kompartimentfarben erhalten Gang-Gefäß-Beziehungen.",
+          "caption": "Fig. 3 | Avella et al.: Kompartimentfarben erhalten Gang-Gefäß-Beziehungen.",
           "interpretation": "Links stehen Gesamtbeziehungen, rechts der vergrößerte Gang-Läsions-Bereich. Grüne Gänge und Gallenblase, rote Arterien und blaue Venen unterscheiden Äste; Pfeile und Stern markieren besprochene Strukturen. Kompartimentdarstellung erzeugt Montage- und Kontrollaufgaben, die Filamentmasse allein nicht erfasst. Keine Zeitachse bestätigt berichtete Kosten oder Kapazität. [Kompartimentmodell](ref:R04)"
         }
       }

@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P7-101",
   "p": "P7",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [
@@ -153,27 +153,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "van der Borg et al.：分件 PLA 模具与 PDMS 培养环",
+          "caption": "Figure 2 | van der Borg et al.：分件 PLA 模具与 PDMS 培养环",
           "interpretation": "A、B 为平滑后的外、内模，C 为组装，D 为 PDMS 环与玻璃。27、33、5 mm 等标注显示毫米级装配关系，不能当作微通道尺寸精度；照片也未提供多次复制后的尺寸漂移。D 的密封性能来自后续 PBS 静置试验，而不是仅凭外观透明判定。[模具原图](ref:R01)"
         },
         "F02": {
-          "caption": "van der Borg et al.：细胞形态的点分布与供者数量",
+          "caption": "Figure 3 | van der Borg et al.：细胞形态的点分布与供者数量",
           "interpretation": "左侧比较盖片与培养井中 actin、DAPI 及合并图，右侧为面积 μm² 和周长 μm。橙点与绿点各表示测量的细胞，横线和误差显示均值与 SEM；不是每个点都来自独立供者。分布重叠支持未见明显形态偏移，但不能替代细胞活率、化学残留和长期重复培养检测。[形态实验](ref:R01)"
         },
         "F03": {
-          "caption": "Mercimek et al.：温度、时间与模具共同影响局部模量",
+          "caption": "Figure 4 | Mercimek et al.：温度、时间与模具共同影响局部模量",
           "interpretation": "a、b、c 为 55、65、75 °C，柱色为 2、6、12 h，组别为 Resin、Al、PLA、PET。多个长时间组在 65 °C 高于 75 °C，趋势不单调。纵轴标 MPa、刻度至约 20，与摘要约 1–2 MPa 不一致；保留完整原轴，不能自行把图缩小一个数量级后宣称已核准。[AFM 模量](ref:R04)"
         },
         "F04": {
-          "caption": "Mercimek et al.：固化质量比例与局部模量并不等同",
+          "caption": "Figure 5 | Mercimek et al.：固化质量比例与局部模量并不等同",
           "interpretation": "a、b、c 为 2、6、12 h，每个温度内以颜色区分 PET、PLA、Resin、Al。纵轴为 Soxhlet 后保留质量计算的固化百分比；55 °C 短时组较低，延长后趋近其他组。其差异幅度远小于模量图的组间变化，支持将固化程度和力学响应分开评价，不能把接近的百分比当成相同复制件性能。[萃取实验](ref:R04)"
         },
         "F05": {
-          "caption": "Anyaduba et al.：打印的是母模，流体接触的是复制 PDMS",
+          "caption": "Figure 1 | Anyaduba et al.：打印的是母模，流体接触的是复制 PDMS",
           "interpretation": "A 给出 60×25 mm 母模及 100×100 μm 通道设计，B 展示浇注、65 °C 45 min 固化、剥离和连接。示意图未显示全部质量筛选和过夜硬化步骤，不能将其中一次固化时间当成完整制造周期。成品功能还依赖脱模后通道宽度和封接检查。[复制流程](ref:R03)"
         },
         "F06": {
-          "caption": "Anyaduba et al.：最小液滴的 CV 反而较高",
+          "caption": "Figure 2 | Anyaduba et al.：最小液滴的 CV 反而较高",
           "interpretation": "A 展示不同油流下回收液滴，B 叠列直径分布并标注 25、50、75、100 μL/min 对应 CV 2%、3%、6%、12%；C 同时绘制直径与体积。较快油流使液滴缩小，但分布更宽，且体积来自图像直径的球体换算。此图验证功能窗口，不是重复使用母模后的批间尺寸一致性实验。[液滴表征](ref:R03)"
         }
       }
@@ -232,27 +232,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "van der Borg et al.: separate PLA mold parts and a PDMS culture ring",
+          "caption": "Figure 2 | van der Borg et al.: separate PLA mold parts and a PDMS culture ring",
           "interpretation": "A and B show smoothed outer and inner molds, C their assembly, and D the PDMS ring on glass. Labels such as 27, 33 and 5 mm describe millimetre-scale assembly, not microchannel dimensional accuracy. Photographs also provide no dimensional drift across repeated casting. Sealing in D is supported by the later static PBS test, not transparency alone. [Original mold figure](ref:R01)"
         },
         "F02": {
-          "caption": "van der Borg et al.: cell-level morphology distributions and donor numbers",
+          "caption": "Figure 3 | van der Borg et al.: cell-level morphology distributions and donor numbers",
           "interpretation": "The left compares actin, DAPI and merged images on coverslips and in wells. The right plots area in μm² and perimeter in μm. Orange and green points represent measured cells, with mean and SEM indicators; each point is not an independent donor. Overlapping distributions support no evident morphological shift, but do not replace viability, chemical-residue or long-term repeated-culture testing. [Morphology experiment](ref:R01)"
         },
         "F03": {
-          "caption": "Mercimek et al.: temperature, duration and mold jointly affect local modulus",
+          "caption": "Figure 4 | Mercimek et al.: temperature, duration and mold jointly affect local modulus",
           "interpretation": "Panels a, b and c represent 55, 65 and 75 °C; colours denote 2, 6 and 12 h, grouped by Resin, Al, PLA and PET. Several longer-duration groups at 65 °C exceed those at 75 °C, giving nonmonotonic trends. The axis is labelled MPa and extends to approximately 20, inconsistent with roughly 1–2 MPa in the abstract. The original axis is retained; rescaling it by an order of magnitude would not constitute verified correction. [AFM modulus](ref:R04)"
         },
         "F04": {
-          "caption": "Mercimek et al.: cured mass fraction differs from local modulus",
+          "caption": "Figure 5 | Mercimek et al.: cured mass fraction differs from local modulus",
           "interpretation": "Panels a, b and c represent 2, 6 and 12 h. Within each temperature, colours identify PET, PLA, Resin and Al. The vertical axis is curing percentage calculated from mass retained after Soxhlet extraction. Short treatment at 55 °C gives lower values; longer treatment approaches other groups. Differences are much smaller than between-group changes in the modulus plot, supporting separate assessment of curing extent and mechanics rather than equating similar percentages with identical replica performance. [Extraction experiment](ref:R04)"
         },
         "F05": {
-          "caption": "Anyaduba et al.: the printed object is the master, while fluid contacts replicated PDMS",
+          "caption": "Figure 1 | Anyaduba et al.: the printed object is the master, while fluid contacts replicated PDMS",
           "interpretation": "A gives the 60×25 mm master and 100×100 μm channel design. B shows pouring, curing at 65 °C for 45 min, peeling and bonding. The schematic omits complete quality screening and overnight hardening, so its single curing interval is not the full manufacturing cycle. Functional performance also depends on post-demolding channel-width and bond checks. [Replication workflow](ref:R03)"
         },
         "F06": {
-          "caption": "Anyaduba et al.: the smallest droplets have higher CV",
+          "caption": "Figure 2 | Anyaduba et al.: the smallest droplets have higher CV",
           "interpretation": "A shows collected droplets at different oil flows. B overlays diameter distributions and labels CV values of 2%, 3%, 6% and 12% for 25, 50, 75 and 100 μL/min respectively. C plots diameter and volume together. Faster oil flow makes smaller but more dispersed droplets; volume is calculated from imaged diameter assuming spheres. The figure validates a functional window, not between-batch consistency after repeated mold reuse. [Droplet characterisation](ref:R03)"
         }
       }
@@ -272,7 +272,7 @@
         {
           "id": "s2",
           "title": "Dichtheit und Zelltests prüfen unterschiedliche Fehler nach der Replikation",
-          "markdown": "Nach Verbindung mit einem 27 mm Glasdeckglas hielt der PDMS-Ring 800 μL PBS bei Raumtemperatur für 72 h, gewöhnlich ohne Leckage. Dies ist eine statische Flüssigkeitsprüfung ohne quantifizierte Druckdifferenz, zyklische Biegung oder wiederholte Hochtemperatursterilisation. Hochdruckfestigkeit mikrofluidischer Verbindungen ist damit nicht belegt. Fehlende PLA-bedingte Aushärtungshemmung in diesem Versuch schließt zudem Effekte des Glättungslösemittels, kommerzieller Filamentzusätze oder wiederholter Entformung in anderen Tests nicht aus. [Validierung des Kulturgefäßes](ref:R01)\n\nHumane monozytenabgeleitete dendritische Zellen, moDCs, wurden über Nacht auf gewöhnlichen Deckgläsern oder in PDMS-Gefäßen kultiviert. Actin- und DAPI-Bilder dienten zum Vergleich von Fläche und Umfang. Daten stammten von 3 gesunden Spendern mit jeweils 36 beziehungsweise 38 gemessenen Zellen auf Deckglas und im Gefäß. Die Autoren verwendeten auf Zellebene einen ungepaarten zweiseitigen t-Test bei α=0.05 und fanden keinen signifikanten Unterschied. Zellzahlen sind keine gleich hohen Zahlen unabhängiger Spender; ein formaler Äquivalenztest fehlte. Als Positivbedingung wurden 150000 Zellen in 500 μL Medium über Nacht mit 1 μg/mL LPS stimuliert; TNF und IL-6 lagen über unstimulierten Werten. Dies stützt erhaltene Entzündungsantwort und geringe Basisaktivierung, keine chemische Quantifizierung sämtlicher auslaugbarer Stoffe oder allgemeine Toxizitätsfreiheit für alle Zelltypen.",
+          "markdown": "Nach Verbindung mit einem 27 mm Glasdeckglas hielt der PDMS-Ring 800 μL PBS bei Raumtemperatur für 72 h, gewöhnlich ohne Leckage. Dies ist eine statische Flüssigkeitsprüfung ohne quantifizierte Druckdifferenz, zyklische Biegung oder wiederholte Hochtemperatursterilisation. Hochdruckfestigkeit mikrofluidischer Verbindungen ist damit nicht belegt. Fehlende PLA-bedingte Aushärtungshemmung in diesem Versuch schließt zudem Effekte des Glättungslösemittels, kommerzieller Filamentzusätze oder wiederholter Entformung in anderen Tests nicht aus. [Validierung des Kulturgefäßes](ref:R01)\n\nHumane monozytenabgeleitete dendritische Zellen, moDCs, wurden über Nacht auf gewöhnlichen Deckgläsern oder in PDMS-Gefäßen kultiviert. Actin- und DAPI-Bilder dienten zum Vergleich von Fläche und Umfang. Die Daten stammten von 3 gesunden Spendern; insgesamt wurden 36 Zellen auf Deckgläsern und 38 Zellen in PDMS-Gefäßen gemessen. Die Autoren verwendeten auf Zellebene einen ungepaarten zweiseitigen t-Test bei α=0.05 und fanden keinen signifikanten Unterschied. Zellzahlen sind keine gleich hohen Zahlen unabhängiger Spender; ein formaler Äquivalenztest fehlte. Als Positivbedingung wurden 150000 Zellen in 500 μL Medium über Nacht mit 1 μg/mL LPS stimuliert; TNF und IL-6 lagen über unstimulierten Werten. Dies stützt erhaltene Entzündungsantwort und geringe Basisaktivierung, keine chemische Quantifizierung sämtlicher auslaugbarer Stoffe oder allgemeine Toxizitätsfreiheit für alle Zelltypen.",
           "figure_ids": [
             "F02"
           ]
@@ -280,13 +280,13 @@
         {
           "id": "s3",
           "title": "Entformbarkeit und PDMS-Aushärtung sind getrennte Anforderungen",
-          "markdown": "Venzac et al. prüften Replikation anhand 400 μm hoher Stufen und Kammzähne mit 190–500 μm Breite, entsprechend Höhen-Breiten-Verhältnissen von 2.1–0.8. Auf unbehandelten industrial red Formen konnte PDMS vollständig ungehärtet bleiben. Alleiniges Erwärmen bei 120 °C für 1 h verursachte weiterhin beschädigte Stufen oder starke Haftung; 1 h UV gefolgt von 1 h Erwärmung lieferte intakte Replikate. Die scheinbare Stufenbreite wurde aus mikroskopischen Grauwertübergängen bestimmt. Erfolg verlangte weniger als 50 μm und Replikation des feinsten Zahns. Dies ist kein allgemeiner Nachweis von Formmaßfehlern unter 50 μm. [Mechanistische Versuche zur Aushärtungshemmung](ref:R02)\n\nDie 16 Harze wurden nicht sämtlich auf demselben Drucker direkt verarbeitet. Gedruckte Teile erzeugten zunächst PDMS-Gegenformen; andere Harze wurden darin gegossen, um Prüfgeometrien zu vereinheitlichen. Table 1 nennt für industrial red UV bei 405 nm und 14 mW/cm² für 15 min plus 120 °C für 2 h oder dieselbe UV-Behandlung plus 60 °C für 48 h. Geprüftes Formlabs clear benötigte nur 120 °C für 1 h. Rezeptur, Abschattung und schlanke Strukturen verändern Behandlungsanforderungen; ein Rezept gilt nicht für sämtliche Harze. Zusatzversuche trennten Mechanismen: Phosphorhaltige Initiatoren BAPO und TPO-L sowie ihre flüchtigen Kondensate hemmten Pt-katalysierte Aushärtung, während Methylmethacrylat vor allem Haftung erhöhte. Photothermische Behandlung reduzierte auslaugbare kleine Moleküle und bildete größere, weniger mobile Spezies. Auch eine bereits feste Druckform kann daher Hemmstoffe an PDMS abgeben.",
+          "markdown": "Venzac et al. prüften Replikation anhand 400 μm hoher Stufen und Kammzähne mit 190–500 μm Breite, entsprechend Höhen-Breiten-Verhältnissen von 2.1–0.8. Auf unbehandelten industrial red Formen konnte PDMS vollständig ungehärtet bleiben. Alleiniges Erwärmen bei 120 °C für 1 h verursachte weiterhin beschädigte Stufen oder starke Haftung; 1 h UV gefolgt von 1 h Erwärmung lieferte intakte Replikate. Die scheinbare Stufenbreite wurde aus mikroskopischen Grauwertübergängen bestimmt. Erfolg verlangte weniger als 50 μm und Replikation des feinsten Zahns. Dies ist kein allgemeiner Nachweis von Formmaßfehlern unter 50 μm. [Mechanistische Versuche zur Aushärtungshemmung](ref:R02)\n\nDie 16 Harze wurden nicht sämtlich auf demselben Drucker direkt verarbeitet. Gedruckte Teile erzeugten zunächst PDMS-Gegenformen; andere Harze wurden darin gegossen, um Prüfgeometrien zu vereinheitlichen. Tabelle 1 nennt für industrial red UV bei 405 nm und 14 mW/cm² für 15 min plus 120 °C für 2 h oder dieselbe UV-Behandlung plus 60 °C für 48 h. Geprüftes Formlabs clear benötigte nur 120 °C für 1 h. Rezeptur, Abschattung und schlanke Strukturen verändern Behandlungsanforderungen; ein Rezept gilt nicht für sämtliche Harze. Zusatzversuche trennten Mechanismen: Phosphorhaltige Initiatoren BAPO und TPO-L sowie ihre flüchtigen Kondensate hemmten Pt-katalysierte Aushärtung, während Methylmethacrylat vor allem Haftung erhöhte. Photothermische Behandlung reduzierte auslaugbare kleine Moleküle und bildete größere, weniger mobile Spezies. Auch eine bereits feste Druckform kann daher Hemmstoffe an PDMS abgeben.",
           "figure_ids": []
         },
         {
           "id": "s4",
           "title": "Ähnliche ausgehärtete Anteile gewährleisten keine gleiche Mechanik",
-          "markdown": "Mercimek et al. verglichen Formen aus PLA, PET, Grey Resin v4 und Aluminum 7075 mit Sylgard 186 bei einem Basis-Härter-Verhältnis von 10:1 sowie 55, 65 und 75 °C und 2, 6 beziehungsweise 12 h. Proben waren vereinfachte Kammern von 1.92 mm Höhe, 10.4 mm Breite und 16 mm Länge mit jeweils 1 mm Wand und Boden. Strömung in Mikrokanalnetzen wurde dabei nicht verglichen. Harzformen wurden 30 min mit IPA gereinigt und 50 min bei 405 nm nachgehärtet; die Ergebnisse betreffen somit kein unbehandeltes Harz. [Formmaterialien und Aushärtungsbedingungen](ref:R04)\n\nSoxhlet-Extraktion zeigte bei 55 °C für 2 h geringere ausgehärtete Anteile und Annäherung zwischen Formen nach längerer oder heißerer Härtung. Der lokale AFM-Modul blieb dennoch bedingungsabhängig: Bei längeren Zeiten lagen Aluminium-, PLA- und PET-Gruppen bei 65 °C über entsprechenden 75 °C Gruppen. Höhere Temperatur bedeutet daher nicht einfach höhere Steifigkeit. Für absolute Modulwerte besteht außerdem ein erheblicher Quellenwiderspruch. Der Abstract nennt etwa 1.84 MPa für Aluminium, 1.23 MPa für PLA und 1.17 MPa für PET, während Figure 4 ihre Achse als MPa beschriftet und mehrere Balken bei etwa 10–18 MPa zeigt. Ohne bestätigte Einheitenkorrektur wird keine Reihe als präziser Auslegungswert ausgewählt. Die AFM-Anpassung verwendete zudem Poissonzahl 1/3 und Hertz-Näherung und beschreibt lokale Eindrückung statt Zug- oder Druckvalidierung ganzer Kanalwände. Die 36 Material-Temperatur-Zeit-Kombinationen bedeuten auch keine 36 Wiederholungen je Bedingung.",
+          "markdown": "Mercimek et al. verglichen Formen aus PLA, PET, Grey Resin v4 und Aluminium 7075 mit Sylgard 186 bei einem Basis-Härter-Verhältnis von 10:1 sowie 55, 65 und 75 °C und 2, 6 beziehungsweise 12 h. Proben waren vereinfachte Kammern von 1.92 mm Höhe, 10.4 mm Breite und 16 mm Länge mit jeweils 1 mm Wand und Boden. Strömung in Mikrokanalnetzen wurde dabei nicht verglichen. Harzformen wurden 30 min mit IPA gereinigt und 50 min bei 405 nm nachgehärtet; die Ergebnisse betreffen somit kein unbehandeltes Harz. [Formmaterialien und Aushärtungsbedingungen](ref:R04)\n\nSoxhlet-Extraktion zeigte bei 55 °C für 2 h geringere ausgehärtete Anteile und Annäherung zwischen Formen nach längerer oder heißerer Härtung. Der lokale AFM-Modul blieb dennoch bedingungsabhängig: Bei längeren Zeiten lagen Aluminium-, PLA- und PET-Gruppen bei 65 °C über entsprechenden 75 °C Gruppen. Höhere Temperatur bedeutet daher nicht einfach höhere Steifigkeit. Für absolute Modulwerte besteht außerdem ein erheblicher Quellenwiderspruch. Der Abstract nennt etwa 1.84 MPa für Aluminium, 1.23 MPa für PLA und 1.17 MPa für PET, während Abbildung 4 die Achse mit MPa beschriftet und mehrere Balken bei etwa 10–18 MPa zeigt. Ohne bestätigte Einheitenkorrektur wird keine Reihe als präziser Auslegungswert ausgewählt. Die AFM-Anpassung verwendete zudem Poissonzahl 1/3 und Hertz-Näherung und beschreibt lokale Eindrückung statt Zug- oder Druckvalidierung ganzer Kanalwände. Die 36 Material-Temperatur-Zeit-Kombinationen bedeuten auch keine 36 Wiederholungen je Bedingung.",
           "figure_ids": [
             "F03",
             "F04"
@@ -311,27 +311,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "van der Borg et al.: getrennte PLA-Formteile und PDMS-Kulturring",
+          "caption": "Figure 2 | van der Borg et al.: getrennte PLA-Formteile und PDMS-Kulturring",
           "interpretation": "A und B zeigen geglättete Außen- und Innenformen, C ihre Montage, D den PDMS-Ring auf Glas. Angaben wie 27, 33 und 5 mm beschreiben millimetergroße Montagebeziehungen, keine Mikrokanal-Maßgenauigkeit. Die Fotos liefern auch keine Maßdrift bei wiederholtem Gießen. Dichtheit in D wird durch den späteren statischen PBS-Test gestützt, nicht allein durch Transparenz. [Originalabbildung der Form](ref:R01)"
         },
         "F02": {
-          "caption": "van der Borg et al.: Zellmorphologieverteilungen und Spenderzahl",
+          "caption": "Figure 3 | van der Borg et al.: Zellmorphologieverteilungen und Spenderzahl",
           "interpretation": "Links werden Actin-, DAPI- und kombinierte Bilder auf Deckglas und im Gefäß verglichen, rechts Fläche in μm² und Umfang in μm. Orange und grüne Punkte sind gemessene Zellen mit Mittelwert- und SEM-Markierungen; nicht jeder Punkt entspricht einem unabhängigen Spender. Überlappende Verteilungen stützen fehlende deutliche Morphologieverschiebung, ersetzen aber keine Viabilitäts-, Reststoff- oder langfristigen Wiederholungskulturtests. [Morphologieversuch](ref:R01)"
         },
         "F03": {
-          "caption": "Mercimek et al.: Temperatur, Dauer und Form beeinflussen gemeinsam den lokalen Modul",
+          "caption": "Figure 4 | Mercimek et al.: Temperatur, Dauer und Form beeinflussen gemeinsam den lokalen Modul",
           "interpretation": "a, b und c entsprechen 55, 65 und 75 °C; Farben stehen für 2, 6 und 12 h, gruppiert nach Resin, Al, PLA und PET. Mehrere Langzeitgruppen bei 65 °C liegen über 75 °C, der Verlauf ist nicht monoton. Die Achse ist als MPa beschriftet und reicht bis etwa 20, widersprüchlich zu rund 1–2 MPa im Abstract. Die Originalachse bleibt erhalten; eigenständige Skalierung um eine Größenordnung wäre keine bestätigte Korrektur. [AFM-Modul](ref:R04)"
         },
         "F04": {
-          "caption": "Mercimek et al.: ausgehärteter Massenanteil unterscheidet sich vom lokalen Modul",
+          "caption": "Figure 5 | Mercimek et al.: ausgehärteter Massenanteil unterscheidet sich vom lokalen Modul",
           "interpretation": "a, b und c stehen für 2, 6 und 12 h. Innerhalb jeder Temperatur kennzeichnen Farben PET, PLA, Resin und Al. Vertikal steht der aus verbleibender Masse nach Soxhlet-Extraktion berechnete Aushärtungsprozentsatz. Kurze Behandlung bei 55 °C liefert niedrigere Werte, längere Behandlung nähert sich anderen Gruppen. Unterschiede sind wesentlich kleiner als Gruppenänderungen im Moduldiagramm. Aushärtungsgrad und Mechanik sind deshalb getrennt zu bewerten; ähnliche Prozentsätze bedeuten keine identischen Replikateigenschaften. [Extraktionsversuch](ref:R04)"
         },
         "F05": {
-          "caption": "Anyaduba et al.: gedruckt wird der Master, Flüssigkeit berührt repliziertes PDMS",
+          "caption": "Figure 1 | Anyaduba et al.: gedruckt wird der Master, Flüssigkeit berührt repliziertes PDMS",
           "interpretation": "A zeigt den 60×25 mm Master und das 100×100 μm Kanaldesign. B zeigt Gießen, Aushärten bei 65 °C für 45 min, Ablösen und Verbinden. Die Skizze enthält nicht die gesamte Qualitätsauswahl und Härtung über Nacht. Ein einzelnes Härtungsintervall ist daher nicht der vollständige Herstellungszyklus. Funktion hängt auch von Kanalbreiten- und Verbindungsprüfung nach Entformung ab. [Replikationsablauf](ref:R03)"
         },
         "F06": {
-          "caption": "Anyaduba et al.: kleinste Tropfen besitzen höheren CV",
+          "caption": "Figure 2 | Anyaduba et al.: kleinste Tropfen besitzen höheren CV",
           "interpretation": "A zeigt gesammelte Tropfen bei unterschiedlichen Ölströmen. B überlagert Durchmesserverteilungen und nennt CV von 2%, 3%, 6% und 12% für 25, 50, 75 beziehungsweise 100 μL/min. C stellt Durchmesser und Volumen gemeinsam dar. Schnellerer Ölstrom erzeugt kleinere, aber breiter verteilte Tropfen; Volumen wird aus dem Bilddurchmesser unter Kugelannahme berechnet. Validiert wird ein Funktionsfenster, keine Chargenkonsistenz nach wiederholter Formnutzung. [Tropfencharakterisierung](ref:R03)"
         }
       }

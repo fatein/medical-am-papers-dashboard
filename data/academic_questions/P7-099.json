@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P7-099",
   "p": "P7",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [
@@ -139,7 +139,7 @@
         {
           "id": "s6",
           "title": "停流暴露出持续流实验未覆盖的卫星滴问题",
-          "markdown": "Warr 等后续研究在数字按需成滴中发现：水相在台座上停留数百 ms 时会逐渐铺展，形成更宽的液滴基部和卫星滴。因此连续流下能工作的 ACC 不能直接证明间歇泵送也稳定。为检验表面处理，研究固定 T 形通道：油通道 200×200 μm，居中水出口 76×80 μm，迫使液滴接触侧壁，同时避免直接碰到顶底。打印材料为 PEGDA、1% Irgacure 819、0.38% avobenzone；清洗后注入不加引发剂的 LA、HDDA 或氟化丙烯酸酯 FA，再用 430 nm 光照，利用原打印件残余引发体系进行表面反应。[停流润湿与处理比较](ref:R03)\n\n单次 LA 处理不足以明显改变并流，连续 3 次处理后可见不再铺展的液滴；HDDA 和 FA 也随重复处理改善。先做 HDDA 底层再做 LA，没有显示额外优势。作者以成滴及静止接触照片作比较，未提供定量接触角、卫星滴计数或长期涂层保持曲线；也未给出所有处理可直接复现的数值光强和时间。ACC 处理后数分钟图像显示台座水帽消失、主滴更整齐，但正文一处写 FA，其他叙述和图注写 3 次 LA，本报告按图注归属并保留这一配方矛盾。所谓稳定性在这里得到的是短时润湿改善证据，耐久性和剩余单体对细胞的影响没有在该实验中测定。",
+          "markdown": "Warr 等后续研究在数字按需成滴中发现：水相在台座上停留数百 ms 时会逐渐铺展，形成更宽的液滴基部和卫星滴。因此连续流下能工作的 ACC 不能直接证明间歇泵送也稳定。为检验表面处理，研究固定 T 形通道：油通道 200×200 μm，居中水出口 76×80 μm，迫使液滴接触侧壁，同时避免直接碰到顶底。打印材料为 PEGDA、1% Irgacure 819、0.38% avobenzone；清洗后注入不加引发剂的 LA、HDDA 或氟化丙烯酸酯 FA，再用 430 nm 光照，作者假设这一表面反应由原打印件中的残余引发体系启动，但没有直接鉴定残余引发剂或表面共价键。[停流润湿与处理比较](ref:R03)\n\n单次 LA 处理不足以明显改变并流，连续 3 次处理后可见不再铺展的液滴；HDDA 和 FA 也随重复处理改善。先做 HDDA 底层再做 LA，没有显示额外优势。作者以成滴及静止接触照片作比较，未提供定量接触角、卫星滴计数或长期涂层保持曲线；也未给出所有处理可直接复现的数值光强和时间。ACC 处理后数分钟图像显示台座水帽消失、主滴更整齐，但正文一处写 FA，其他叙述和图注写 3 次 LA，本报告按图注归属并保留这一配方矛盾。所谓稳定性在这里得到的是短时润湿改善证据，耐久性和剩余单体对细胞的影响没有在该实验中测定。",
           "figure_ids": [
             "F06"
           ]
@@ -147,27 +147,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Warr et al.：固定通道条件下的材料流型对照",
+          "caption": "Figure 4 | Warr et al.：固定通道条件下的材料流型对照",
           "interpretation": "a 标出交叉口与油、水入口，b、c 的 TET、PEGDA 中暗色水相仍连续贴壁，d、e 的 HDDA、HDDA/LA 中则出现独立液滴。照片对应同一名义 106×110 μm 几何，能够支持材料相关的流型差异；它们没有显示频率统计、尺寸 CV 或长期运行重复性。[材料对照](ref:R01)"
         },
         "F02": {
-          "caption": "Warr et al.：台座隔开可持续润湿的壁面",
+          "caption": "Figure 6 | Warr et al.：台座隔开可持续润湿的壁面",
           "interpretation": "a 的中央 61 μm 水道抬高到环形油腔内，顶部出口为 198 μm；b 保留 100 μm 比例尺。c–g 依次显示球冠增大、液桥拉长及脱离，液滴形成前仍连接台座。图中没有标出帧间隔，因此不能仅由相邻画面数计算 Hz；它解释的是接触路径如何被几何截断。[ACC 原图](ref:R01)"
         },
         "F03": {
-          "caption": "Warr et al.：稳定窗口内的频率—体积耦合",
+          "caption": "Figure 8 | Warr et al.：稳定窗口内的频率—体积耦合",
           "interpretation": "a 纵轴为 Hz，b 为 nL，横轴均为连续相 μL/min，颜色表示水相 5–50 μL/min。提高油流时左图频率上升、右图体积下降；浅色不稳定区说明不同颜色的可用区间不相同。每个点是单次实验而非均值误差条，图示稳定区不能外推为长期尺寸精度。[流量扫描](ref:R01)"
         },
         "F04": {
-          "caption": "Hinnen et al.：反流限流与完全截止并不相同",
+          "caption": "Figure 2 | Hinnen et al.：反流限流与完全截止并不相同",
           "interpretation": "A、B、C 分别为膜式、挤压式和带状阀，横轴 psi、纵轴 μL/min，负值为反向。A、B 在负压增大后形成非零平台，C 的红色定压数据接近零；蓝色定流数据还可在负向出现有限流量，说明加载方式必须保留。误差条为 7 个阀的 ±1 SD。原图分存为两个文件，此处完整连接 A–C，未裁去坐标或示意图。[阀测试](ref:R02)"
         },
         "F05": {
-          "caption": "Hinnen et al.：高频循环会因回填不足而失去流量",
+          "caption": "Figure 5 | Hinnen et al.：高频循环会因回填不足而失去流量",
           "interpretation": "A、C、E 为每次排量，B、D、F 为平均流量，横轴均为相位间隔 ms。绿色实测低于黄色理想线；最左侧的快速循环并非最高流量区。膜式列的理想排量约为另两列的 3 倍，源于 3 个位移腔，不是单腔更大。误差条表示循环间变化，不能读成独立制造批次差异。[泵表征](ref:R02)"
         },
         "F06": {
-          "caption": "Warr et al.：重复表面处理后的成滴与静止接触",
+          "caption": "Figure 3 | Warr et al.：重复表面处理后的成滴与静止接触",
           "interpretation": "A 为未处理 PEGDA，B–D 分别为 LA、HDDA、FA，E 为 HDDA 后接 LA。各组从下到上为第 1、2、3 次处理，每行并排比较 static 和 formation。上排出现更清楚的非铺展轮廓，但不同液滴仍可能接触壁面；这些照片支持定性润湿变化，没有提供涂层厚度、统一接触角或持续流耐久数据。[处理实验](ref:R03)"
         }
       }
@@ -219,7 +219,7 @@
         {
           "id": "s6",
           "title": "Stopping flow reveals satellite droplets missed by continuous-flow tests",
-          "markdown": "In a subsequent study, Warr et al. found that digital droplet-on-demand pauses of several hundred ms let water spread across the pedestal, widening the droplet base and producing satellites. ACC operation under continuous flow therefore does not directly establish intermittent pumping stability. Surface-treatment tests fixed a T-junction with a 200×200 μm oil channel and centred 76×80 μm aqueous outlet, forcing sidewall contact while avoiding direct ceiling and floor contact. Printed material contained PEGDA, 1% Irgacure 819 and 0.38% avobenzone. After cleaning, LA, HDDA or fluorinated acrylate FA without added initiator was introduced and exposed at 430 nm, using residual initiating chemistry in the printed part for surface reaction. [Stopped-flow wetting and treatment comparison](ref:R03)\n\nA single LA treatment did not substantially eliminate coflow. After 3 sequential treatments, nonspreading droplets were visible; repeated HDDA and FA treatment also improved behaviour. An HDDA base treatment followed by LA provided no additional evident advantage. Comparisons used droplet-formation and static-contact images, without quantitative contact angles, satellite counts or long-term coating-retention curves. Numerical intensity and duration sufficient to reproduce every treatment were also absent. Images after several minutes of ACC operation showed disappearance of the aqueous cap and more regular primary droplets, but one sentence identifies FA while surrounding text and the caption identify 3 LA treatments. This report follows the caption while retaining that formulation inconsistency. The stability evidence concerns short-term wetting improvement; durability and effects of residual monomer on cells were not measured in this experiment.",
+          "markdown": "In a subsequent study, Warr et al. found that digital droplet-on-demand pauses of several hundred ms let water spread across the pedestal, widening the droplet base and producing satellites. ACC operation under continuous flow therefore does not directly establish intermittent pumping stability. Surface-treatment tests fixed a T-junction with a 200×200 μm oil channel and centred 76×80 μm aqueous outlet, forcing sidewall contact while avoiding direct ceiling and floor contact. Printed material contained PEGDA, 1% Irgacure 819 and 0.38% avobenzone. After cleaning, LA, HDDA or fluorinated acrylate FA without added initiator was introduced and exposed at 430 nm. The authors hypothesised that residual initiating chemistry in the printed part drove the surface reaction; residual initiator and surface covalent bonds were not directly identified. [Stopped-flow wetting and treatment comparison](ref:R03)\n\nA single LA treatment did not substantially eliminate coflow. After 3 sequential treatments, nonspreading droplets were visible; repeated HDDA and FA treatment also improved behaviour. An HDDA base treatment followed by LA provided no additional evident advantage. Comparisons used droplet-formation and static-contact images, without quantitative contact angles, satellite counts or long-term coating-retention curves. Numerical intensity and duration sufficient to reproduce every treatment were also absent. Images after several minutes of ACC operation showed disappearance of the aqueous cap and more regular primary droplets, but one sentence identifies FA while surrounding text and the caption identify 3 LA treatments. This report follows the caption while retaining that formulation inconsistency. The stability evidence concerns short-term wetting improvement; durability and effects of residual monomer on cells were not measured in this experiment.",
           "figure_ids": [
             "F06"
           ]
@@ -227,27 +227,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Warr et al.: material-dependent flow regimes at fixed channel conditions",
+          "caption": "Figure 4 | Warr et al.: material-dependent flow regimes at fixed channel conditions",
           "interpretation": "Panel a identifies the junction and oil/water inlets. In b and c, dark aqueous streams in TET and PEGDA remain continuously attached to walls; d and e show discrete droplets in HDDA and HDDA/LA. Images share the nominal 106×110 μm geometry and support material-related differences in flow regime. They do not show frequency statistics, size CV or long-term repeatability. [Material comparison](ref:R01)"
         },
         "F02": {
-          "caption": "Warr et al.: the pedestal separates continuously wettable wall paths",
+          "caption": "Figure 6 | Warr et al.: the pedestal separates continuously wettable wall paths",
           "interpretation": "In a, the central 61 μm aqueous channel rises inside the annular oil chamber, with a 198 μm upper outlet; b retains a 100 μm scale bar. Panels c–g show cap growth, liquid-bridge elongation and detachment, with water still connected to the pedestal before breakup. Frame intervals are not labelled, so Hz cannot be calculated from the number of adjacent images. The sequence explains how geometry interrupts the contact pathway. [Original ACC figure](ref:R01)"
         },
         "F03": {
-          "caption": "Warr et al.: frequency–volume coupling inside the stable window",
+          "caption": "Figure 8 | Warr et al.: frequency–volume coupling inside the stable window",
           "interpretation": "Vertical axes are Hz in a and nL in b; both horizontal axes show continuous-phase μL/min, with colours denoting aqueous flows of 5–50 μL/min. Greater oil flow raises frequency on the left and reduces volume on the right. The pale unstable region shows that usable intervals differ across colours. Each point is an individual experiment rather than a mean with error bars; the depicted stable region does not establish long-term dimensional precision. [Flow scan](ref:R01)"
         },
         "F04": {
-          "caption": "Hinnen et al.: restricting reverse flow differs from stopping it",
+          "caption": "Figure 2 | Hinnen et al.: restricting reverse flow differs from stopping it",
           "interpretation": "A, B and C show membrane, squeeze and ribbon valves, with psi horizontally and μL/min vertically; negative values denote reverse operation. A and B approach nonzero plateaus as reverse pressure increases, while red pressure-controlled data in C approach zero. Blue flow-controlled data can still show finite reverse flow, making loading method essential to interpretation. Error bars are ±1 SD across 7 valves. The original figure was stored in two files; A–C are joined here in full without cropping axes or schematics. [Valve testing](ref:R02)"
         },
         "F05": {
-          "caption": "Hinnen et al.: rapid cycling loses flow when refilling is incomplete",
+          "caption": "Figure 5 | Hinnen et al.: rapid cycling loses flow when refilling is incomplete",
           "interpretation": "A, C and E show volume per actuation; B, D and F show mean flow. All horizontal axes give phase interval in ms. Green measurements fall below yellow ideal curves; the fastest cycles at the far left do not maximise flow. Ideal membrane-pump displacement is approximately 3 times that of the other columns because it uses 3 displacement chambers, not a larger individual chamber. Error bars describe cycle variation rather than independently manufactured batches. [Pump characterisation](ref:R02)"
         },
         "F06": {
-          "caption": "Warr et al.: formation and static contact after repeated surface treatment",
+          "caption": "Figure 3 | Warr et al.: formation and static contact after repeated surface treatment",
           "interpretation": "A is untreated PEGDA; B–D are LA, HDDA and FA; E is HDDA followed by LA. Within groups, rows from bottom to top are treatments 1, 2 and 3, each comparing static and formation images. Upper rows show clearer nonspreading outlines, although droplets can still contact walls. These images support qualitative wetting changes without coating thickness, a common quantitative contact angle or continuous-flow durability data. [Treatment experiment](ref:R03)"
         }
       }
@@ -299,7 +299,7 @@
         {
           "id": "s6",
           "title": "Strömungspausen zeigen Satellitentropfen, die kontinuierliche Tests nicht erfassen",
-          "markdown": "In einer Folgestudie beobachteten Warr et al., dass Pausen von mehreren hundert ms bei digitaler bedarfsgesteuerter Tropfenbildung Wasser über den Sockel ausbreiten ließen. Dadurch entstanden eine breitere Tropfenbasis und Satelliten. ACC-Betrieb bei kontinuierlichem Strom belegt deshalb keine Stabilität bei intermittierendem Pumpen. Oberflächenbehandlungen wurden mit festem T-Kanal geprüft: Ölkanal 200×200 μm, mittiger Wasserauslass 76×80 μm. Dies erzwang Seitenwandkontakt und vermied direkten Kontakt mit Decke und Boden. Das Druckmaterial enthielt PEGDA, 1% Irgacure 819 und 0.38% avobenzone. Nach Reinigung wurden LA, HDDA oder fluoriertes Acrylat FA ohne zusätzlichen Initiator eingebracht und bei 430 nm belichtet; die verbliebene Initiatorchemie im Druckteil sollte die Oberflächenreaktion auslösen. [Benetzung bei Stillstand und Behandlungsvergleich](ref:R03)\n\nEine einzelne LA-Behandlung beseitigte Parallelströmung nicht deutlich. Nach 3 aufeinanderfolgenden Behandlungen waren nicht spreitende Tropfen sichtbar; wiederholte HDDA- und FA-Behandlung verbesserten das Verhalten ebenfalls. Eine HDDA-Grundschicht vor LA bot keinen erkennbaren Zusatzvorteil. Verglichen wurden Bilder von Tropfenbildung und statischem Kontakt, ohne quantitative Kontaktwinkel, Satellitenzählung oder langfristige Beständigkeitskurven. Auch numerische Lichtintensität und Dauer zur vollständigen Reproduktion sämtlicher Behandlungen fehlten. Bilder nach mehreren Minuten ACC-Betrieb zeigten das Verschwinden der Wasserkappe und regelmäßigere Haupttropfen. Ein Satz nennt jedoch FA, während Umgebungstext und Bildlegende 3 LA-Behandlungen nennen. Der Bericht folgt der Legende und erhält diesen Rezepturwiderspruch. Die Stabilitätsevidenz betrifft kurzfristig verbesserte Benetzung; Dauerbeständigkeit und Auswirkungen verbliebener Monomere auf Zellen wurden in diesem Experiment nicht gemessen.",
+          "markdown": "In einer Folgestudie beobachteten Warr et al., dass Pausen von mehreren hundert ms bei digitaler bedarfsgesteuerter Tropfenbildung Wasser über den Sockel ausbreiten ließen. Dadurch entstanden eine breitere Tropfenbasis und Satelliten. ACC-Betrieb bei kontinuierlichem Strom belegt deshalb keine Stabilität bei intermittierendem Pumpen. Oberflächenbehandlungen wurden mit festem T-Kanal geprüft: Ölkanal 200×200 μm, mittiger Wasserauslass 76×80 μm. Dies erzwang Seitenwandkontakt und vermied direkten Kontakt mit Decke und Boden. Das Druckmaterial enthielt PEGDA, 1% Irgacure 819 und 0.38% avobenzone. Nach Reinigung wurden LA, HDDA oder fluoriertes Acrylat FA ohne zusätzlichen Initiator eingebracht und bei 430 nm belichtet; nach Hypothese der Autoren sollte verbliebene Initiatorchemie im Druckteil die Oberflächenreaktion auslösen; Restinitiator und kovalente Oberflächenbindungen wurden nicht direkt nachgewiesen. [Benetzung bei Stillstand und Behandlungsvergleich](ref:R03)\n\nEine einzelne LA-Behandlung beseitigte Parallelströmung nicht deutlich. Nach 3 aufeinanderfolgenden Behandlungen waren nicht spreitende Tropfen sichtbar; wiederholte HDDA- und FA-Behandlung verbesserten das Verhalten ebenfalls. Eine HDDA-Grundschicht vor LA bot keinen erkennbaren Zusatzvorteil. Verglichen wurden Bilder von Tropfenbildung und statischem Kontakt, ohne quantitative Kontaktwinkel, Satellitenzählung oder langfristige Beständigkeitskurven. Auch numerische Lichtintensität und Dauer zur vollständigen Reproduktion sämtlicher Behandlungen fehlten. Bilder nach mehreren Minuten ACC-Betrieb zeigten das Verschwinden der Wasserkappe und regelmäßigere Haupttropfen. Ein Satz nennt jedoch FA, während Umgebungstext und Bildlegende 3 LA-Behandlungen nennen. Der Bericht folgt der Legende und erhält diesen Rezepturwiderspruch. Die Stabilitätsevidenz betrifft kurzfristig verbesserte Benetzung; Dauerbeständigkeit und Auswirkungen verbliebener Monomere auf Zellen wurden in diesem Experiment nicht gemessen.",
           "figure_ids": [
             "F06"
           ]
@@ -307,27 +307,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Warr et al.: materialabhängige Strömungsregime bei festen Kanalbedingungen",
+          "caption": "Figure 4 | Warr et al.: materialabhängige Strömungsregime bei festen Kanalbedingungen",
           "interpretation": "a kennzeichnet Kreuzung sowie Öl- und Wassereinlässe. In b und c bleiben dunkle Wasserströme in TET und PEGDA durchgehend an Wänden; d und e zeigen einzelne Tropfen in HDDA und HDDA/LA. Die Bilder teilen die nominelle Geometrie von 106×110 μm und stützen materialbezogene Unterschiede des Strömungsregimes. Sie zeigen keine Frequenzstatistik, Größen-CV oder langfristige Wiederholbarkeit. [Materialvergleich](ref:R01)"
         },
         "F02": {
-          "caption": "Warr et al.: der Sockel trennt durchgehend benetzbare Wandpfade",
+          "caption": "Figure 6 | Warr et al.: der Sockel trennt durchgehend benetzbare Wandpfade",
           "interpretation": "In a ragt der zentrale 61 μm Wasserkanal in die ringförmige Ölkammer; der obere Auslass beträgt 198 μm. b erhält den 100 μm Maßstabsbalken. c–g zeigen Kappenwachstum, Verlängerung der Flüssigkeitsbrücke und Ablösung; vor der Trennung bleibt Wasser mit dem Sockel verbunden. Bildintervalle fehlen, daher lässt sich Hz nicht aus der Zahl benachbarter Bilder berechnen. Die Sequenz erklärt die geometrische Unterbrechung des Kontaktpfads. [ACC-Originalabbildung](ref:R01)"
         },
         "F03": {
-          "caption": "Warr et al.: Frequenz-Volumen-Kopplung im stabilen Fenster",
+          "caption": "Figure 8 | Warr et al.: Frequenz-Volumen-Kopplung im stabilen Fenster",
           "interpretation": "Vertikal steht in a Hz und in b nL; beide horizontalen Achsen zeigen μL/min der kontinuierlichen Phase. Farben bezeichnen Wasserströme von 5–50 μL/min. Mehr Öl erhöht links die Frequenz und senkt rechts das Volumen. Der helle instabile Bereich zeigt unterschiedliche nutzbare Intervalle der Farben. Jeder Punkt ist ein Einzelversuch, kein Mittelwert mit Fehlerbalken; das dargestellte stabile Fenster belegt keine langfristige Maßpräzision. [Durchflussscan](ref:R01)"
         },
         "F04": {
-          "caption": "Hinnen et al.: Rückstrombegrenzung unterscheidet sich vom vollständigen Absperren",
+          "caption": "Figure 2 | Hinnen et al.: Rückstrombegrenzung unterscheidet sich vom vollständigen Absperren",
           "interpretation": "A, B und C zeigen Membran-, Quetsch- und Bandventile mit psi horizontal und μL/min vertikal; negative Werte bezeichnen Rückwärtsbetrieb. A und B nähern sich bei stärkerem Rückwärtsdruck von null verschiedenen Plateaus, während rote druckgesteuerte Daten in C nahe null liegen. Blaue durchflussgesteuerte Daten können weiterhin endlichen Rückstrom zeigen; die Belastungsart bleibt deshalb wesentlich. Fehlerbalken sind ±1 SD von 7 Ventilen. Das Original war in zwei Dateien gespeichert; hier sind A–C vollständig verbunden, ohne Achsen oder Skizzen abzuschneiden. [Ventilprüfung](ref:R02)"
         },
         "F05": {
-          "caption": "Hinnen et al.: schnelle Zyklen verlieren Durchfluss durch unvollständiges Nachfüllen",
+          "caption": "Figure 5 | Hinnen et al.: schnelle Zyklen verlieren Durchfluss durch unvollständiges Nachfüllen",
           "interpretation": "A, C und E zeigen Volumen je Betätigung, B, D und F mittleren Durchfluss; sämtliche horizontalen Achsen geben das Phasenintervall in ms an. Grüne Messwerte liegen unter gelben Idealkurven. Die schnellsten Zyklen ganz links maximieren den Durchfluss nicht. Das ideale Volumen der Membranpumpe beträgt etwa das 3-Fache der anderen Spalten, weil sie 3 Verdrängungskammern verwendet, nicht eine größere Einzelkammer. Fehlerbalken beschreiben Zyklusvariation statt unabhängig gefertigter Chargen. [Pumpencharakterisierung](ref:R02)"
         },
         "F06": {
-          "caption": "Warr et al.: Tropfenbildung und statischer Kontakt nach wiederholter Oberflächenbehandlung",
+          "caption": "Figure 3 | Warr et al.: Tropfenbildung und statischer Kontakt nach wiederholter Oberflächenbehandlung",
           "interpretation": "A zeigt unbehandeltes PEGDA, B–D LA, HDDA und FA, E HDDA gefolgt von LA. Innerhalb der Gruppen stehen die Zeilen von unten nach oben für Behandlungen 1, 2 und 3 und vergleichen jeweils static mit formation. Obere Reihen zeigen klarere nicht spreitende Umrisse, obwohl Tropfen weiterhin Wände berühren können. Die Bilder stützen qualitative Benetzungsänderungen, ohne Schichtdicke, einheitlichen quantitativen Kontaktwinkel oder Beständigkeitsdaten bei kontinuierlicher Strömung. [Behandlungsversuch](ref:R03)"
         }
       }

@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P6-097",
   "p": "P6",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [
@@ -156,27 +156,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Yea et al.：影像轮廓到可插胶片的头部实物。",
+          "caption": "Fig. 1 | Yea et al.：影像轮廓到可插胶片的头部实物。",
           "interpretation": "a–c 为原始影像上的轮廓，d–f 为分半与表面对象，g–h 为打印实物和内部空气腔。骨在原始 CT 上可见，但成品没有用另一种材料逐骨复原。图证明几何和空腔的保留，不直接证明组织组成或剂量完全等同于患者。[几何转换](ref:R01)"
         },
         "F02": {
-          "caption": "Delombaerde et al.：乳房轮廓映射与重叠裁切。",
+          "caption": "Fig. 1 | Delombaerde et al.：乳房轮廓映射与重叠裁切。",
           "interpretation": "a 的患者轮廓被移到 b 的既有胸部体模，再于 c 裁掉重叠区，d 显示最终配合。颜色变化代表几何操作，不是剂量响应。这个过程说明研究对象是适配既有体模的附件；真实患者胸壁、肺与乳房的相对关系已经经过映射，不能把最终形状称为未修改的完整患者复制。[附件生成](ref:R02)"
         },
         "F03": {
-          "caption": "Wilson et al.：分腔检漏提供独立定量的前提。",
+          "caption": "Figure 1 | Wilson et al.：分腔检漏提供独立定量的前提。",
           "interpretation": "A 是肾髓质与皮质的不同染色，B–C 是面部模型中骨、腮腺和软组织分步染色。颜色保持分离支持所观察时段内未见明显混合；照片不量化微小泄漏检测下限，也不证明放射信号能无溢出地重建在每个腔室边界内。[密封检验](ref:R03)"
         },
         "F04": {
-          "caption": "Wilson et al.：CT 几何轮廓与 SPECT 活度分布并不完全重合。",
+          "caption": "Figure 2 | Wilson et al.：CT 几何轮廓与 SPECT 活度分布并不完全重合。",
           "interpretation": "A 为整体冠状视图，B 为腮腺横断面，C 为肾脏横断面；彩色活度覆盖灰度 CT，轮廓表示分析区域。信号越过轮廓边界说明有限分辨率与溢出，不能直接当作泄漏。色标代表活度浓度而非吸收剂量；整肾与皮质轮廓收集的信号范围不同。[定量影像对象](ref:R03)"
         },
         "F05": {
-          "caption": "Wilson et al.：恢复系数与几何量的相关性。",
+          "caption": "Figure 3 | Wilson et al.：恢复系数与几何量的相关性。",
           "interpretation": "A 横轴为参考活度，B 为 ROI 体积，C 为表面积体积比；纵轴均为恢复系数。C 的负趋势最明显，但点包含同一肾模型的整肾和皮质读出，并非全部独立样本。拟合线描述本实验数据，不能直接作为所有患者或重建算法的校正曲线；恢复系数接近满值也没有检验时间—活度积分。[几何相关性](ref:R03)"
         },
         "F06": {
-          "caption": "Lustermans et al.：静态回位误差与动态运动幅度是不同纵轴。",
+          "caption": "Fig. 2 | Lustermans et al.：静态回位误差与动态运动幅度是不同纵轴。",
           "interpretation": "A 的方形点比较重复静态压缩后的定位差，B 的菱形点和连线比较重复动态扫描的运动轨迹。A 的较大离群点不能被整体重复性描述抹去；B 中下部肿块运动明显、上部很小，说明驱动行程不等于每个肿块的位移。连线只是连接相位采样点，不是独立验证的连续运动模型。[重复性原图](ref:R04)"
         }
       }
@@ -235,27 +235,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Yea et al.: Image contours become a head object accommodating film.",
+          "caption": "Fig. 1 | Yea et al.: Image contours become a head object accommodating film.",
           "interpretation": "a–c show image contours, d–f split surfaces, and g–h the physical print with air cavities. Bone is visible in original CT but not separately reconstructed in another material. The figure shows retained geometry and cavities, not identical tissue composition or patient dose. [Geometry conversion](ref:R01)"
         },
         "F02": {
-          "caption": "Delombaerde et al.: Breast-contour mapping and overlap removal.",
+          "caption": "Fig. 1 | Delombaerde et al.: Breast-contour mapping and overlap removal.",
           "interpretation": "The patient contour in a moves to the existing thorax in b, is cropped in c, and fits in d. Colors denote geometry operations, not dose response. The object is an adapted attachment; original chest-wall, lung and breast relationships underwent mapping, not unchanged whole-patient reproduction. [Attachment generation](ref:R02)"
         },
         "F03": {
-          "caption": "Wilson et al.: Compartment leak tests support independent quantification.",
+          "caption": "Figure 1 | Wilson et al.: Compartment leak tests support independent quantification.",
           "interpretation": "A distinguishes medulla and cortex dyes; B–C stage bone, parotid and soft-tissue coloring. Separation supports no visible mixing during observation. Photos do not quantify the detection limit for tiny leaks or establish reconstruction without signal spill-out across chamber boundaries. [Sealing evaluation](ref:R03)"
         },
         "F04": {
-          "caption": "Wilson et al.: CT boundaries and SPECT activity do not coincide exactly.",
+          "caption": "Figure 2 | Wilson et al.: CT boundaries and SPECT activity do not coincide exactly.",
           "interpretation": "A is the overall coronal view, B axial parotids and C axial kidneys. Colored activity overlays grayscale CT; contours define analysis regions. Signal beyond boundaries reflects limited resolution and spill-out rather than directly establishing leakage. The scale is activity concentration, not absorbed dose; whole-kidney and cortical regions collect different signals. [Quantitative imaging object](ref:R03)"
         },
         "F05": {
-          "caption": "Wilson et al.: Recovery versus geometric quantities.",
+          "caption": "Figure 3 | Wilson et al.: Recovery versus geometric quantities.",
           "interpretation": "A plots reference activity, B ROI volume and C surface-area-to-volume ratio; all vertical axes show recovery. C has the clearest negative trend, but points include whole-kidney and cortical readings from the same objects, not fully independent samples. Fits describe this experiment rather than universal patient or reconstruction corrections, and near-full recovery does not test time–activity integration. [Geometry association](ref:R03)"
         },
         "F06": {
-          "caption": "Lustermans et al.: Static return error and dynamic amplitude use different vertical quantities.",
+          "caption": "Fig. 2 | Lustermans et al.: Static return error and dynamic amplitude use different vertical quantities.",
           "interpretation": "Squares in A compare positional differences after repeated static compression; diamonds and connecting lines in B compare dynamic-scan trajectories. Larger A outliers must not disappear behind overall reproducibility claims. Lower tumors move more than upper ones in B, separating actuator travel from each lesion’s displacement. Lines join sampled phases rather than independently validating continuous motion. [Original repeatability figure](ref:R04)"
         }
       }
@@ -267,7 +267,7 @@
         {
           "id": "s1",
           "title": "Patientenbasierte Form ist keine vollständige Replikation des ursprünglichen Patientenplans",
-          "markdown": "Yea et al. extrahierten Außenkontur und Lufträume einer Kopf-Hals-CT und teilten den Kopf zur sagittalen Filmeinlage. Nasen- und Mundgeometrie blieben erhalten; einheitliches ABS rekonstruierte Knochen, Fett und Weichteile nicht getrennt. Individualisierung betraf vor allem Umriss und Hohlräume, nicht die vollständige radiologische Gewebeverteilung. [Patientengeometrie zum Phantom](ref:R01)\n\nDie ursprünglichen CT-Abstände betrugen 3 mm, für die Modellrekonstruktion auf 0.5 mm resampelt. Dichtere Abtastung glättet Oberflächen, erzeugt aber keine fehlenden Aufnahmedetails. Der Druck wurde mit 1 mm erneut gescannt, mit Patientenbildern registriert, mit kopierten Strukturen versehen und auf eigener CT neu geplant. Verglichen wird somit neu berechnete und applizierte Dosis im Druckobjekt, kein unveränderter Patientenplan in realen Patientengeweben.\n\nBei 3%/3 mm bestanden 95.97% der Filmpunkte und 97.28% des konventionellen Arrays. Unterschiedliche Ebenen und Winkelbehandlung verhindern Äquivalenzaussagen aus dieser kleinen Differenz; hohes Bestehen bestätigt auch keine fehlerfreie Segmentierung. Die Verbindung von Scan, Maskenfixierung, Planung und Messung bezieht formbezogene Lagerung ein, ausgelassene Gewebeheterogenität bleibt ungeprüft.\n\nMehrfallwiederholungen, vorgegebene Fehlereinbringung und In-patient-Referenzmessungen fehlen. Durchlaufene Prozessschritte lassen sich benennen, eine Erkennungswahrscheinlichkeit sämtlicher Planungsfehler nicht berechnen.",
+          "markdown": "Yea et al. extrahierten Außenkontur und Lufträume einer Kopf-Hals-CT und teilten den Kopf zur sagittalen Filmeinlage. Nasen- und Mundgeometrie blieben erhalten; einheitliches ABS rekonstruierte Knochen, Fett und Weichteile nicht getrennt. Individualisierung betraf vor allem Umriss und Hohlräume, nicht die vollständige radiologische Gewebeverteilung. [Patientengeometrie zum Phantom](ref:R01)\n\nDie ursprünglichen CT-Abstände betrugen 3 mm, für die Modellrekonstruktion auf 0.5 mm resampelt. Dichtere Abtastung glättet Oberflächen, erzeugt aber keine fehlenden Aufnahmedetails. Der Druck wurde mit 1 mm erneut gescannt, mit Patientenbildern registriert, mit kopierten Strukturen versehen und auf eigener CT neu geplant. Verglichen wird somit neu berechnete und applizierte Dosis im Druckobjekt, kein unveränderter Patientenplan in realen Patientengeweben.\n\nBei 3%/3 mm bestanden 95.97% der Filmpunkte und 97.28% des konventionellen Arrays. Unterschiedliche Ebenen und Winkelbehandlung verhindern Äquivalenzaussagen aus dieser kleinen Differenz; hohes Bestehen bestätigt auch keine fehlerfreie Segmentierung. Die Verbindung von Scan, Maskenfixierung, Planung und Messung bezieht formbezogene Lagerung ein, ausgelassene Gewebeheterogenität bleibt ungeprüft.\n\nMehrfallwiederholungen, vorgegebene Fehlereinbringung und Referenzmessungen im Patienten fehlen. Durchlaufene Prozessschritte lassen sich benennen, eine Erkennungswahrscheinlichkeit sämtlicher Planungsfehler nicht berechnen.",
           "figure_ids": [
             "F01"
           ]
@@ -314,27 +314,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Yea et al.: Bildkonturen werden zum Kopfobjekt mit Filmeinlage.",
+          "caption": "Fig. 1 | Yea et al.: Bildkonturen werden zum Kopfobjekt mit Filmeinlage.",
           "interpretation": "a–c zeigen Bildkonturen, d–f geteilte Oberflächen, g–h den Druck mit Lufträumen. Im Original-CT sichtbarer Knochen wurde nicht gesondert aus anderem Material hergestellt. Geometrie und Hohlräume bleiben erhalten, gleiche Gewebezusammensetzung oder Patientendosis ist damit nicht belegt. [Geometrieumwandlung](ref:R01)"
         },
         "F02": {
-          "caption": "Delombaerde et al.: Brustkonturübertragung und Überlappungsentfernung.",
+          "caption": "Fig. 1 | Delombaerde et al.: Brustkonturübertragung und Überlappungsentfernung.",
           "interpretation": "Die Patientenkontur aus a wird in b übertragen, in c beschnitten und passt in d. Farben bezeichnen Geometrieoperationen, keine Dosisantwort. Das Objekt ist ein angepasster Aufsatz; ursprüngliche Brustwand-Lungen-Brust-Beziehungen wurden übertragen, nicht unverändert als ganze Patientin reproduziert. [Aufsatzherstellung](ref:R02)"
         },
         "F03": {
-          "caption": "Wilson et al.: Kammerlecktests stützen unabhängige Quantifizierung.",
+          "caption": "Figure 1 | Wilson et al.: Kammerlecktests stützen unabhängige Quantifizierung.",
           "interpretation": "A unterscheidet Mark- und Rindenfärbung, B–C stufenweise Knochen-, Parotis- und Weichteilfärbung. Trennung stützt fehlende sichtbare Mischung im Beobachtungszeitraum. Fotos quantifizieren weder Nachweisgrenzen kleinster Lecks noch Rekonstruktion ohne Signal-Spill-out über Kammergrenzen. [Dichtigkeitsprüfung](ref:R03)"
         },
         "F04": {
-          "caption": "Wilson et al.: CT-Grenzen und SPECT-Aktivität decken sich nicht vollständig.",
+          "caption": "Figure 2 | Wilson et al.: CT-Grenzen und SPECT-Aktivität decken sich nicht vollständig.",
           "interpretation": "A zeigt die koronale Übersicht, B axiale Parotiden, C axiale Nieren. Farbige Aktivität überlagert Graustufen-CT, Konturen definieren Auswertungsregionen. Grenzüberschreitendes Signal betrifft Auflösung und Spill-out, nicht unmittelbar Leckage. Die Skala bedeutet Aktivitätskonzentration statt Energiedosis; Gesamtniere und Rinde erfassen unterschiedliche Signale. [Quantitatives Bildobjekt](ref:R03)"
         },
         "F05": {
-          "caption": "Wilson et al.: Recovery im Verhältnis zu Geometriegrößen.",
+          "caption": "Figure 3 | Wilson et al.: Recovery im Verhältnis zu Geometriegrößen.",
           "interpretation": "A zeigt Referenzaktivität, B ROI-Volumen, C Oberflächen-Volumen-Verhältnis; vertikal steht jeweils Recovery. C hat den deutlichsten negativen Trend, doch Punkte enthalten Gesamtnieren- und Rindenwerte derselben Objekte statt unabhängiger Proben. Anpassungen beschreiben diesen Versuch, keine universelle Patienten- oder Rekonstruktionskorrektur; nahezu vollständige Recovery prüft keine Zeit-Aktivitäts-Integration. [Geometrieassoziation](ref:R03)"
         },
         "F06": {
-          "caption": "Lustermans et al.: Statische Rückkehrfehler und dynamische Amplituden sind verschiedene Größen.",
+          "caption": "Fig. 2 | Lustermans et al.: Statische Rückkehrfehler und dynamische Amplituden sind verschiedene Größen.",
           "interpretation": "Quadrate in A vergleichen Positionsdifferenzen wiederholter statischer Kompression; Rauten und Linien in B dynamische Scanverläufe. Größere Ausreißer in A dürfen nicht hinter allgemeinen Wiederholbarkeitsaussagen verschwinden. Untere Tumoren bewegen sich in B stärker als obere; Antriebsweg ist nicht jede Läsionsverschiebung. Linien verbinden Phasenstichproben, keine unabhängig validierte kontinuierliche Bewegung. [Originale Wiederholbarkeitsgrafik](ref:R04)"
         }
       }

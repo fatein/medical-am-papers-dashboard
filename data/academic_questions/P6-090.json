@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P6-090",
   "p": "P6",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [
@@ -136,23 +136,23 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Hermans et al.：经验层级与不同任务终点的关系。",
+          "caption": "Figure 3 | Hermans et al.：经验层级与不同任务终点的关系。",
           "interpretation": "A 为 GEARS，B 为切入深度，C 为切除重量，D 为时间，E–H 为不同损伤或残留终点。误差为标准误。经验组差异在各终点上不一致，H 没有显著差异标记；B 的符号按原方法区分包膜外与进入肿瘤，不能把每个数值上升都理解为进步。这幅图比较不同人群，不是同一个人的学习轨迹。[操作结果](ref:R01)"
         },
         "F02": {
-          "caption": "Hermans et al.：首次和末次任务的评分，而非连续学习曲线。",
+          "caption": "Figure 4 | Hermans et al.：首次和末次任务的评分，而非连续学习曲线。",
           "interpretation": "红点为 Trial 1，青点为 Trial 4；各经验组之间的差距大于组内两个时间点的变化。顶部星号跨经验组，不是组内训练前后检验。图只含两次评分，而且任务难度不同，无法直接读出达到熟练所需次数；青点较高也不自动意味着统计显著。[练习比较](ref:R01)"
         },
         "F03": {
-          "caption": "Gondalia et al.：手工腓骨构件与软组织、血管参照。",
+          "caption": "Fig. 2 | Gondalia et al.：手工腓骨构件与软组织、血管参照。",
           "interpretation": "A–B 从两个角度展示白色亚克力骨、红色泡沫肌肉、铜线血管和黄色皮岛。构件强调骨与穿支、皮岛的相对关系，颜色和材料用于区分对象，不是人体材料性能测量。该图能说明截骨与嵌入练习需要同时考虑哪些结构，不能直接证明参与者的截骨误差降低。[模拟构件](ref:R02)"
         },
         "F04": {
-          "caption": "Shen et al.：模型组逐人的重复练习时间。",
+          "caption": "Figure 3 | Shen et al.：模型组逐人的重复练习时间。",
           "interpretation": "A 为分轮柱图，B 为同一批参与者的折线，纵轴为分钟，颜色区分个人。总体先明显下降，末段部分曲线反弹；这与原始时间表相符。不能把五条线当成五个随机组，也不能仅由少量末段点认定稳定平台。该图未同步绘出每轮质量或误差。[时间记录](ref:R03)"
         },
         "F05": {
-          "caption": "Shen et al.：离体器官吻合质量的评分实例。",
+          "caption": "Figure 2 | Shen et al.：离体器官吻合质量的评分实例。",
           "interpretation": "A–E 展示从无漏液且缝线紧密到漏液与松线的不同产物，照片为离体组织评估。F 说明前壁、后壁分别评分再合计。质量评分因此增加了速度之外的终点，但它仍是当次机械完整性检查，不是灌注组织愈合后并发症随访；各示例照片也不是随机组的发生率。[评分定义](ref:R03)"
         }
       }
@@ -210,23 +210,23 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Hermans et al.: Experience level and distinct task outcomes.",
+          "caption": "Figure 3 | Hermans et al.: Experience level and distinct task outcomes.",
           "interpretation": "A is GEARS, B incision depth, C excised mass, D time, and E–H damage or residual-material outcomes. Errors are standard errors. Group patterns differ by endpoint; H has no significance marker. B uses signs to distinguish outside-capsule from intratumoral depth, so not every increase is improvement. This compares populations, not one learner over time. [Task outcomes](ref:R01)"
         },
         "F02": {
-          "caption": "Hermans et al.: First and final task scores, not a continuous learning curve.",
+          "caption": "Figure 4 | Hermans et al.: First and final task scores, not a continuous learning curve.",
           "interpretation": "Red points are Trial 1, turquoise points Trial 4. Experience-group gaps exceed changes between the two observations. Upper stars compare experience groups, not within-group pre/post training. Only two rated trials with different difficulty are shown, so trials to proficiency cannot be read from the figure. A higher turquoise point does not automatically mean significance. [Practice comparison](ref:R01)"
         },
         "F03": {
-          "caption": "Gondalia et al.: Handmade fibula component with tissue and vascular references.",
+          "caption": "Fig. 2 | Gondalia et al.: Handmade fibula component with tissue and vascular references.",
           "interpretation": "A–B show white acrylic bone, red foam muscle, wire vessels and yellow skin paddle from two angles. The assembly emphasizes bone–perforator–skin-paddle relationships; colors and materials distinguish objects rather than measure human tissue mechanics. It identifies structures involved in osteotomy and inset practice, not a demonstrated reduction in participants’ osteotomy errors. [Simulation assembly](ref:R02)"
         },
         "F04": {
-          "caption": "Shen et al.: Repeated-trial times for individual model trainees.",
+          "caption": "Figure 3 | Shen et al.: Repeated-trial times for individual model trainees.",
           "interpretation": "A displays bars by trial and B lines for the same participants; vertical values are minutes and colors identify individuals. A pronounced early decrease is followed by some late rebounds, matching the source table. Lines are not separate randomized groups, and a few late points do not establish a stable plateau. Per-trial quality and errors are not plotted. [Time records](ref:R03)"
         },
         "F05": {
-          "caption": "Shen et al.: Examples of anastomotic quality scoring on isolated organs.",
+          "caption": "Figure 2 | Shen et al.: Examples of anastomotic quality scoring on isolated organs.",
           "interpretation": "A–E show products ranging from no leakage and tight stitches to leakage and loose stitches, assessed on isolated tissues. F specifies separate anterior and posterior wall scores that are added. Quality therefore supplements speed, but remains a test of immediate mechanical integrity rather than complications after perfused-tissue healing. Example photographs are not randomized-group incidence rates. [Scoring definition](ref:R03)"
         }
       }
@@ -262,7 +262,7 @@
         {
           "id": "s4",
           "title": "Wiederholung verkürzt Modellzeiten; spätes Wiederansteigen spricht gegen eine einfache lineare Lernkurve",
-          "markdown": "Shen et al. randomisierten 15 Allgemeinchirurgen in Gruppen mit 5 Personen: Lehrvideo allein, Video plus allgemeine Nahtübung oder Video plus anatomisch eingebettete Silikonmodellübung. Alle hatten erhebliche Erfahrung mit laparoskopischer Cholezystektomie, aber keine klinische biliodigestive Anastomosenerfahrung. Geprüft wurde eine neue Aufgabe bei vorhandenen Grundfertigkeiten, keine Ausbildung von Studierenden ohne Vorerfahrung. [Randomisierung und Aufgabenhintergrund](ref:R03)\n\nDie Modellgruppe absolvierte 5 aufeinanderfolgende Versuche. Allgemeine Nahtübungen dauerten 157 Minuten, entsprechend der mittleren Gesamtübungszeit der Modellgruppe. Aus den Einzelzeiten der Originaltabelle berechnet ergeben sich nacheinander 45.4, 37.2, 29.6, 22.0 und 23.0 Minuten. Insgesamt wurde die Bearbeitung deutlich schneller, Versuch 5 war jedoch etwas langsamer als Versuch 4; bei 3 Personen stieg die Zeit zuletzt wieder an. [Rohdaten wiederholter Versuche](ref:R03)\n\nDie Autoren beschreiben ein nahendes Plateau. Die wenigen kurzfristigen Wiederholungen schätzen jedoch weder Versuche bis zu einem Kompetenzkriterium noch Stabilität nach weiterer Übung. Fallende Kurven zeigen zunächst Vertrautheit mit dieser Modellaufgabe. Zeit allein bestätigt keine gleichbleibende Anastomosenqualität jeder Wiederholung.\n\nDie zeitgleiche allgemeine Nahtkontrolle vermindert die Erklärung allein durch längere Übung. Aufgaben unterschieden sich dennoch: Modelltraining enthielt spezifische räumliche und prozedurale Organisation, die andere Bedingung allgemeines Nähen. Besserer Transfer kann dieses aufgabenbezogene Lehrpaket stützen, ohne Beiträge von Druck, Geometrie und Curriculum zu trennen.",
+          "markdown": "Shen et al. randomisierten 15 Allgemeinchirurgen in Gruppen mit 5 Personen: Lehrvideo allein, Video plus allgemeine Nahtübung oder Video plus anatomisch eingebettete Silikonmodellübung. Alle hatten erhebliche Erfahrung mit laparoskopischer Cholezystektomie, aber keine klinische biliodigestive Anastomosenerfahrung. Geprüft wurde eine neue Aufgabe bei vorhandenen Grundfertigkeiten, keine Ausbildung von Studierenden ohne Vorerfahrung. [Randomisierung und Aufgabenhintergrund](ref:R03)\n\nDie Modellgruppe absolvierte 5 aufeinanderfolgende Versuche. Allgemeine Nahtübungen dauerten 157 Minuten, entsprechend der mittleren Gesamtübungszeit der Modellgruppe. Aus den Einzelzeiten der Originaltabelle berechnet ergeben sich nacheinander 45.4, 37.2, 29.6, 22.0 und 23.0 Minuten. Insgesamt wurde die Bearbeitung deutlich schneller, Versuch 5 war jedoch etwas langsamer als Versuch 4; bei 3 Personen stieg die Zeit zuletzt wieder an. [Rohdaten wiederholter Versuche](ref:R03)\n\nDie Autoren beschreiben ein nahendes Plateau. Die wenigen kurzfristigen Wiederholungen schätzen jedoch weder Versuche bis zu einem Kompetenzkriterium noch Stabilität nach weiterer Übung. Fallende Kurven zeigen zunächst Vertrautheit mit dieser Modellaufgabe. Zeit allein bestätigt keine gleichbleibende Anastomosenqualität jeder Wiederholung.\n\nDie Kontrollgruppe mit gleich langer allgemeiner Nahtübung vermindert die Erklärung allein durch längere Übung. Aufgaben unterschieden sich dennoch: Modelltraining enthielt spezifische räumliche und prozedurale Organisation, die andere Bedingung allgemeines Nähen. Besserer Transfer kann dieses aufgabenbezogene Lehrpaket stützen, ohne Beiträge von Druck, Geometrie und Curriculum zu trennen.",
           "figure_ids": [
             "F04"
           ]
@@ -270,7 +270,7 @@
         {
           "id": "s5",
           "title": "Unterschiede bleiben an isolierten Schweineorganen bestehen und liefern stärkere Transferevidenz",
-          "markdown": "Nach dem Training am selben Tag bearbeiteten alle Gruppen eine vergleichbare Aufgabe auf einer isolierten Schweine-Multiorganplattform. Zwei Beurteiler ohne Kenntnis der Teilnehmeridentität bewerteten allgemeine laparoskopische Fertigkeiten mit GOALS und Anastomosenqualität. Letztere summierte getrennte Vorder- und Rückwandbewertungen von Leckage und Knotenzustand. Erfasst wurden Prozess und Produkt bei verändertem Material und lokaler Geometrie. [Transferprüfung an anderem Material](ref:R03)\n\n| Isoliertes Organergebnis, Mittelwert ± SD | Modellübung | Allgemeines Nähen | Nur Video |\n|---|---:|---:|---:|\n| Zeit, min | 29.4 ± 2.3 | 42.4 ± 9.7 | 45.4 ± 12.3 |\n| Anastomosenqualität | 8.2 ± 0.8 | 6.8 ± 0.5 | 5.2 ± 1.3 |\n| GOALS | 21.2 ± 1.8 | 17.8 ± 1.6 | 15.6 ± 2.7 |\n\nDie Ergebnistabelle nennt für Modell gegen zeitgleiche Nahtübung post-hoc P-Werte von 0.044, 0.035 und 0.025 für Zeit, Qualität und GOALS. Allgemeines Nähen verbesserte gegenüber Video ebenfalls Qualität, GOALS jedoch nicht signifikant. Der Vorteil des Modellpakets beruht somit nicht nur auf Instrumentenkontakt; spezifische Aufgabenstruktur könnte Grundbewegungen zu einer Gesamtleistung verbinden.\n\nDies stützt unmittelbaren materialübergreifenden Transfer, näher an Generalisierung als schnelleres Arbeiten am selben Druckobjekt. Die Aussage beruht dennoch auf kleinen Gruppen, einem Zentrum und einem Test. Text und Tabelle unterscheiden sich geringfügig bei der mittleren Videozeit. Hier wird einheitlich die Tabelle verwendet; ein Gesamt-P-Wert wird nicht als Signifikanz sämtlicher Paarvergleiche gelesen.",
+          "markdown": "Nach dem Training am selben Tag bearbeiteten alle Gruppen eine vergleichbare Aufgabe auf einer isolierten Schweine-Multiorganplattform. Zwei Beurteiler ohne Kenntnis der Teilnehmeridentität bewerteten allgemeine laparoskopische Fertigkeiten mit GOALS und Anastomosenqualität. Letztere summierte getrennte Vorder- und Rückwandbewertungen von Leckage und Knotenzustand. Erfasst wurden Prozess und Produkt bei verändertem Material und lokaler Geometrie. [Transferprüfung an anderem Material](ref:R03)\n\n| Isoliertes Organergebnis, Mittelwert ± SD | Modellübung | Allgemeines Nähen | Nur Video |\n|---|---:|---:|---:|\n| Zeit, min | 29.4 ± 2.3 | 42.4 ± 9.7 | 45.4 ± 12.3 |\n| Anastomosenqualität | 8.2 ± 0.8 | 6.8 ± 0.5 | 5.2 ± 1.3 |\n| GOALS | 21.2 ± 1.8 | 17.8 ± 1.6 | 15.6 ± 2.7 |\n\nDie Ergebnistabelle nennt für Modell gegen Nahtübung gleicher Dauer post-hoc P-Werte von 0.044, 0.035 und 0.025 für Zeit, Qualität und GOALS. Allgemeines Nähen verbesserte gegenüber Video ebenfalls Qualität, GOALS jedoch nicht signifikant. Der Vorteil des Modellpakets beruht somit nicht nur auf Instrumentenkontakt; spezifische Aufgabenstruktur könnte Grundbewegungen zu einer Gesamtleistung verbinden.\n\nDies stützt unmittelbaren materialübergreifenden Transfer, näher an Generalisierung als schnelleres Arbeiten am selben Druckobjekt. Die Aussage beruht dennoch auf kleinen Gruppen, einem Zentrum und einem Test. Text und Tabelle unterscheiden sich geringfügig bei der mittleren Videozeit. Hier wird einheitlich die Tabelle verwendet; ein Gesamt-P-Wert wird nicht als Signifikanz sämtlicher Paarvergleiche gelesen.",
           "figure_ids": [
             "F05"
           ]
@@ -284,23 +284,23 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Hermans et al.: Erfahrungsstufe und unterschiedliche Aufgabenendpunkte.",
+          "caption": "Figure 3 | Hermans et al.: Erfahrungsstufe und unterschiedliche Aufgabenendpunkte.",
           "interpretation": "A zeigt GEARS, B Schnitttiefe, C Resektatmasse, D Zeit, E–H Schäden oder Restmaterial. Fehler sind Standardfehler. Gruppenmuster unterscheiden sich; H trägt keine Signifikanzmarkierung. In B trennen Vorzeichen kapseläußere und intratumorale Tiefe, weshalb nicht jeder Anstieg Verbesserung bedeutet. Verglichen werden Populationen, keine individuelle Lerntrajektorie. [Aufgabenergebnisse](ref:R01)"
         },
         "F02": {
-          "caption": "Hermans et al.: Erste und letzte Aufgabenwerte statt kontinuierlicher Lernkurve.",
+          "caption": "Figure 4 | Hermans et al.: Erste und letzte Aufgabenwerte statt kontinuierlicher Lernkurve.",
           "interpretation": "Rote Punkte sind Trial 1, türkise Trial 4. Erfahrungsgruppen unterscheiden sich stärker als die beiden Zeitpunkte innerhalb einer Gruppe. Obere Sterne vergleichen Erfahrungsgruppen, keine internen Vorher-Nachher-Veränderungen. Zwei bewertete Aufgaben verschiedener Schwierigkeit ergeben keine Zahl bis zur Kompetenz; ein höherer türkiser Punkt bedeutet nicht automatisch Signifikanz. [Übungsvergleich](ref:R01)"
         },
         "F03": {
-          "caption": "Gondalia et al.: Handgefertigte Fibulakomponente mit Gewebe- und Gefäßreferenzen.",
+          "caption": "Fig. 2 | Gondalia et al.: Handgefertigte Fibulakomponente mit Gewebe- und Gefäßreferenzen.",
           "interpretation": "A–B zeigen weißen Acrylknochen, roten Schaummuskel, Drahtgefäße und gelbe Hautinsel aus zwei Richtungen. Betont werden Knochen-Perforator-Hautinsel-Beziehungen; Farben und Materialien unterscheiden Objekte statt menschliche Gewebemechanik zu messen. Erkennbar sind relevante Übungsstrukturen, keine nachgewiesene Verringerung von Osteotomiefehlern. [Simulationsaufbau](ref:R02)"
         },
         "F04": {
-          "caption": "Shen et al.: Wiederholungszeiten einzelner Modelltrainierender.",
+          "caption": "Figure 3 | Shen et al.: Wiederholungszeiten einzelner Modelltrainierender.",
           "interpretation": "A zeigt Balken nach Versuch, B Linien derselben Personen; vertikal stehen Minuten, Farben kennzeichnen Personen. Auf deutlichen frühen Rückgang folgen teilweise erneute Anstiege, passend zur Tabelle. Linien sind keine getrennten randomisierten Gruppen; wenige späte Punkte belegen kein stabiles Plateau. Qualität und Fehler jeder Wiederholung sind nicht dargestellt. [Zeitaufzeichnungen](ref:R03)"
         },
         "F05": {
-          "caption": "Shen et al.: Beispiele der Anastomosenqualitätsbewertung isolierter Organe.",
+          "caption": "Figure 2 | Shen et al.: Beispiele der Anastomosenqualitätsbewertung isolierter Organe.",
           "interpretation": "A–E zeigen Produkte von fehlender Leckage mit fester Naht bis zu Leckage und lockerer Naht an isoliertem Gewebe. F beschreibt getrennte Vorder- und Rückwandwerte mit anschließender Addition. Qualität ergänzt Geschwindigkeit, prüft jedoch unmittelbare mechanische Integrität statt Komplikationen nach Heilung durchbluteten Gewebes. Beispielfotos sind keine Gruppeninzidenzen. [Bewertungsdefinition](ref:R03)"
         }
       }

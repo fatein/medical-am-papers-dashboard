@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P2-030",
   "p": "P2",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-04",
   "related_paper_ids": [
@@ -193,7 +193,7 @@
         {
           "id": "visits_and_adjustments",
           "title": "减少制作就诊，未同步减少调整负担",
-          "markdown": "同一试验的打印流程原计划 3 次完成：获取印模及颌位、试戴、交付。实际统计纳入重做所需就诊，打印组制作阶段次数仍显著较少；但交付后调整次数，以及制作和调整各阶段的总椅旁时间均未见显著差异。计时从患者坐上牙椅到离开牙椅，未覆盖技工劳动、寄送或患者交通，故它回答的是临床就诊组织，而非全部治疗周期。[就诊与计时结果](ref:R01)\n\n传统流程把个别牙位与咬合问题分散在多个蜡型步骤中处理；合并记录或整组牙打印减少前端步骤后，未解决的问题仍可在交付时表现为压痛、咬合调整或重做。试验确实同时观察到制作次数减少和传统组舒适评分较高，但没有把每名患者的交通负担、调整内容与偏好建立因果联系。因此对需要照护者陪诊的患者，少就诊是可单独讨论的获益；这组数据不能量化其相对于发音或舒适的权重。",
+          "markdown": "同一试验的打印流程原计划 3 次完成：获取印模及颌位、试戴、交付。实际统计纳入重做所需就诊，打印组制作阶段次数仍显著较少；但交付后调整次数，以及制作和调整各阶段的总椅旁时间均未见显著差异。计时从患者坐上牙椅到离开牙椅，未覆盖技工劳动、寄送或患者交通，故它回答的是临床就诊组织，而非全部治疗周期。[就诊与计时结果](ref:R01)\n\n传统流程把个别牙位与咬合问题分散在多个蜡型步骤中处理；合并记录或整组牙打印减少前端步骤后，未解决的问题仍可在交付时表现为压痛、咬合调整或重做。试验确实同时观察到打印组制作阶段就诊次数减少和传统组舒适评分较高，但没有把每名患者的交通负担、调整内容与偏好建立因果联系。因此对需要照护者陪诊的患者，少就诊是可单独讨论的获益；这组数据不能量化其相对于发音或舒适的权重。",
           "figure_ids": [
             "F02"
           ]
@@ -232,27 +232,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Ohara et al.：完成交叉试戴者的最终偏好。© Japan Prosthodontic Society。",
+          "caption": "原文图 3：Ohara et al.：完成交叉试戴者的最终偏好。© Japan Prosthodontic Society。",
           "interpretation": "深灰 CD 为传统，浅灰 DD 为打印；80%/20% 对应 15 名完成者中的 12/3 人。图没有展示退出者的偏好，也没有分解患者选择时对舒适、就诊次数或外观的权重。它与一般满意度评分方向一致，却不能用饼图直接推算未来拒戴率；交叉佩戴后“更喜欢其中一副”与一副义齿无法使用是不同事件。[偏好原图与试验流程](ref:R01)"
         },
         "F02": {
-          "caption": "Ohara et al.：制作与调整阶段的就诊次数。© Japan Prosthodontic Society。",
+          "caption": "原文图 4：Ohara et al.：制作与调整阶段的就诊次数。© Japan Prosthodontic Society。",
           "interpretation": "纵轴为次数，左侧 delivery 包含制作到交付，右侧 adjustment 为调整；灰柱传统、白柱打印，误差线为标准差。星号只标在左组，说明制作阶段的差异达到显著，而右侧调整没有相应差异。图中打印左柱仍高于理想流程的 3 次，反映实际重做等额外就诊。它没有显示分钟数，不能把柱高差换算成等比例的椅旁时间节约。[就诊原图](ref:R01)"
         },
         "F03": {
-          "caption": "Osnes et al.：把蜡型牙位转移至打印基托的定位夹板。",
+          "caption": "原文图 4：Osnes et al.：把蜡型牙位转移至打印基托的定位夹板。",
           "interpretation": "a 显示带牙槽窝的下颌基托及透明夹板；b、c 为夹板控制人工牙位置的装配状态；d 为完成的上下颌义齿。图把误差链定位在牙位转移与固化粘接，而非只看组织面贴合。夹板是研究过程中加入的工艺修正，图中没有偏差坐标或对照组统计，故只能说明如何约束牙位，不能证明它已消除患者感到的咬合不适。原网页标为 Fig. 4，媒体文件名含 Fig5，按实际图版对应。[夹板及临床观察](ref:R02)"
         },
         "F04": {
-          "caption": "Emera et al.：双色口香糖的图像分析界面。",
+          "caption": "原文图 5：Emera et al.：双色口香糖的图像分析界面。",
           "interpretation": "图左为压平样品两面的扫描，右为色相分布；混合后残留异色区域使分布变宽，H-SD 随之增加。样品厚度与扫描条件被控制，是为了使颜色分布尽量反映咀嚼混合。该画面是测量示例，并未把传统与打印两组分别标成左右样品，不能通过左右颜色直接判断组间优劣。组间比较来自表中的 H-SD，而非样品照片的视觉印象。[分析方法与结果表](ref:R03)"
         },
         "F05": {
-          "caption": "Kukucka et al.：随访截止时的使用状态及退出原因。",
+          "caption": "原文图 9：Kukucka et al.：随访截止时的使用状态及退出原因。",
           "interpretation": "饼图以全部 1011 副为分母，仍在使用的 LDP 347 副占 34.3%，SRHI 262 副占 25.9%；这不同于左侧各材料组内部的 68% 和 52.3%。其余扇区为计划交付永久义齿 154、副体断裂 131、重做 72、其他 45，共 402 副停止使用。最大退出类别是计划更换，故把所有退出直接叫失败会放大失败负担。图没有时间轴、删失标记或风险人数，不是 Kaplan–Meier 曲线；各病例随访长短不同，不能把截止时比例读作统一时长的存留概率。[状态原图](ref:R05)"
         },
         "F06": {
-          "caption": "Kukucka et al.：断裂比例和病例原因分类。",
+          "caption": "原文图 2：Kukucka et al.：断裂比例和病例原因分类。",
           "interpretation": "左侧深柱为交付总数 510/501，浅柱为断裂 68/63；材料组内比例为 13.3%/12.6%。右侧仅分析 131 个断裂病例，蓝色 LDP、红色 SRHI；Design 类别 35+25=60，占 45.8%，No Issues Noted 为 10+13=23。它不是每副义齿接受统一机械检查后的因果分类；设计标签还可能与临床或扫描标签交叠，研究未报告分类一致性。图支持定位待复查的病例资料，不能据“设计”条最长就认定工艺因素对断裂的因果效应超过材料。正文称相关图为生存曲线，但实际图版为计数柱图，解释以可见图版及结果表为准。[断裂原图和模型表](ref:R05)"
         }
       }
@@ -272,7 +272,7 @@
         {
           "id": "visits_and_adjustments",
           "title": "Fewer fabrication visits did not eliminate adjustment visits",
-          "markdown": "The same trial planned 3 visits for the printed workflow: impression and jaw registration, try-in, and delivery. Actual fabrication visits included remakes and remained significantly fewer with printing. However, post-delivery adjustment visits and total chairside time during either fabrication or adjustment did not differ significantly. Timing ran from sitting down to leaving the dental chair; it did not include laboratory work, shipping or patient travel. The measured benefit concerns the organization of clinical visits rather than the entire treatment cycle.[Visit and timing outcomes](ref:R01)\n\nConventional fabrication distributes individual tooth-position and occlusal corrections across several wax stages. Combining records or printing teeth as a unit removes early steps, but unresolved problems can still require relief of pressure areas, occlusal adjustment or remaking at delivery. The trial observed both fewer fabrication visits and higher comfort scores with conventional dentures, yet did not establish a causal relationship linking each patient's travel burden, adjustment procedures and preference. Fewer visits can therefore be discussed as a distinct benefit for patients needing caregiver accompaniment; these data do not quantify its weight relative to speech or comfort.",
+          "markdown": "The same trial planned 3 visits for the printed workflow: impression and jaw registration, try-in, and delivery. Actual fabrication visits included remakes and remained significantly fewer with printing. However, post-delivery adjustment visits and total chairside time during either fabrication or adjustment did not differ significantly. Timing ran from sitting down to leaving the dental chair; it did not include laboratory work, shipping or patient travel. The measured benefit concerns the organization of clinical visits rather than the entire treatment cycle.[Visit and timing outcomes](ref:R01)\n\nConventional fabrication distributes individual tooth-position and occlusal corrections across several wax stages. Combining records or printing teeth as a unit removes early steps, but unresolved problems can still require relief of pressure areas, occlusal adjustment or remaking at delivery. The trial observed fewer fabrication visits with printed dentures and higher comfort scores with conventional dentures, yet did not establish a causal relationship linking each patient's travel burden, adjustment procedures and preference. Fewer visits can therefore be discussed as a distinct benefit for patients needing caregiver accompaniment; these data do not quantify its weight relative to speech or comfort.",
           "figure_ids": [
             "F02"
           ]
@@ -311,27 +311,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Ohara et al.: final preference among crossover completers. © Japan Prosthodontic Society.",
+          "caption": "Original Figure 3: Ohara et al.: final preference among crossover completers. © Japan Prosthodontic Society.",
           "interpretation": "Dark-gray CD denotes conventional and light-gray DD printed dentures; 80%/20% corresponds to 12/3 of the 15 completers. The figure neither shows preferences of participants who withdrew nor separates the weight of comfort, visits and appearance in choosing. It agrees directionally with general-satisfaction scores, but does not estimate future nonwear: preferring one denture after wearing both differs from being unable to use the other.[Preference figure and trial flow](ref:R01)"
         },
         "F02": {
-          "caption": "Ohara et al.: visits during fabrication and adjustment. © Japan Prosthodontic Society.",
+          "caption": "Original Figure 4: Ohara et al.: visits during fabrication and adjustment. © Japan Prosthodontic Society.",
           "interpretation": "The vertical axis counts visits. Delivery on the left covers fabrication through delivery, while adjustment on the right covers later corrections. Gray bars are conventional and white bars printed; error bars are standard deviations. Only the left comparison carries an asterisk, indicating a significant fabrication-stage difference without a corresponding adjustment difference. The printed delivery bar exceeds the planned 3 visits, incorporating additional attendance such as remakes. Minutes are not plotted, so the bar-height difference cannot be converted into proportional chairside-time savings.[Original visit figure](ref:R01)"
         },
         "F03": {
-          "caption": "Osnes et al.: positioning splint transferring the wax tooth arrangement to a printed base.",
+          "caption": "Original Figure 4: Osnes et al.: positioning splint transferring the wax tooth arrangement to a printed base.",
           "interpretation": "Panel a shows the socketed mandibular base and transparent splint; b and c show assembly with the splint controlling tooth position; d shows the completed upper and lower dentures. The image locates an error pathway in tooth-position transfer and bonded polymerization, beyond intaglio fit alone. The splint was a procedural modification introduced during the study. No deviation coordinates or comparative statistics are shown, so the image explains positional constraint but does not demonstrate elimination of perceived occlusal discomfort. The webpage labels it Fig. 4 although the media filename contains Fig5; identification follows the actual displayed figure.[Splint and clinical observations](ref:R02)"
         },
         "F04": {
-          "caption": "Emera et al.: image-analysis interface for two-color gum.",
+          "caption": "Original Figure 5: Emera et al.: image-analysis interface for two-color gum.",
           "interpretation": "The left shows scans of both sides of a flattened specimen and the right the hue distribution. Remaining regions of different color broaden the distribution and increase H-SD. Controlling thickness and scanning conditions helps the color distribution reflect chewing-related mixing. This is a measurement example; left and right specimens are not labeled as conventional versus printed groups. Their colors therefore cannot establish a group ranking. Between-group inference comes from tabulated H-SD, rather than visual impressions of the specimen photograph.[Analysis method and results table](ref:R03)"
         },
         "F05": {
-          "caption": "Kukucka et al.: service status and reasons for discontinuation at the cutoff.",
+          "caption": "Original Figure 9: Kukucka et al.: service status and reasons for discontinuation at the cutoff.",
           "interpretation": "The pie uses all 1011 arches as its denominator: 347 LDP arches still in service represent 34.3%, and 262 SRHI arches 25.9%. These differ from the within-material proportions of 68% and 52.3% shown on the left. Other sectors comprise 154 planned permanent-denture deliveries, 131 fractures, 72 remakes and 45 other reasons, totaling 402 discontinued arches. Planned replacement is the largest exit category, so calling every discontinuation a failure exaggerates failure burden. Without a time axis, censoring marks or numbers at risk, this is not a Kaplan–Meier curve. Follow-up durations vary; status at cutoff is not survival probability at a common duration.[Original status figure](ref:R05)"
         },
         "F06": {
-          "caption": "Kukucka et al.: fracture proportions and assigned case categories.",
+          "caption": "Original Figure 2: Kukucka et al.: fracture proportions and assigned case categories.",
           "interpretation": "Dark bars on the left show 510/501 delivered arches and light bars 68/63 fractures, giving within-material proportions of 13.3%/12.6%. The right analyzes only the 131 fractured arches, with blue LDP and red SRHI. Design contains 35+25=60 cases, or 45.8%; No Issues Noted contains 10+13=23. These are not causal categories established by standardized mechanical examination of every denture. Design labels can overlap clinical or scanning labels, and classification agreement was not reported. The figure identifies records meriting review; the longest Design bar does not demonstrate that workflow has a larger causal effect on fracture than material. The prose describes related figures as survival curves, whereas this actual figure contains counts; interpretation follows the visible figure and results table.[Fracture figure and model table](ref:R05)"
         }
       }
@@ -351,7 +351,7 @@
         {
           "id": "visits_and_adjustments",
           "title": "Weniger Herstellungstermine beseitigten den Korrekturbedarf nicht",
-          "markdown": "In derselben Studie waren für den Druckablauf 3 Termine vorgesehen: Abformung und Kieferrelationsbestimmung, Einprobe und Eingliederung. Die tatsächliche Zahl der Herstellungstermine berücksichtigte Neuanfertigungen und blieb beim Druck signifikant geringer. Die Zahl späterer Korrekturtermine sowie die gesamte Behandlungszeit während Herstellung beziehungsweise Nachkorrektur unterschieden sich jedoch nicht signifikant. Gemessen wurde vom Hinsetzen bis zum Verlassen des Behandlungsstuhls; Laborarbeit, Versand und Anfahrt waren nicht eingeschlossen. Der Vorteil betrifft damit die Organisation klinischer Termine, nicht den gesamten Behandlungszyklus.[Termin- und Zeitdaten](ref:R01)\n\nDie konventionelle Herstellung verteilt Korrekturen einzelner Zahnpositionen und der Okklusion auf mehrere Wachsschritte. Zusammengefasste Registrierungen oder gemeinsam gedruckte Zähne reduzieren frühe Schritte; ungelöste Probleme können bei der Eingliederung dennoch Druckstellenkorrekturen, Einschleifen oder Neuanfertigungen erfordern. Die Studie beobachtete gleichzeitig weniger Herstellungstermine und höhere Komfortwerte für konventionelle Prothesen. Sie stellte aber keinen kausalen Zusammenhang zwischen individuellem Anfahrtsaufwand, Korrekturmaßnahmen und Präferenz her. Weniger Termine lassen sich für Patienten mit erforderlicher Begleitperson als eigenständiger Nutzen besprechen; das Gewicht gegenüber Sprache oder Tragekomfort lässt sich daraus nicht beziffern.",
+          "markdown": "In derselben Studie waren für den Druckablauf 3 Termine vorgesehen: Abformung und Kieferrelationsbestimmung, Einprobe und Eingliederung. Die tatsächliche Zahl der Herstellungstermine berücksichtigte Neuanfertigungen und blieb beim Druck signifikant geringer. Die Zahl späterer Korrekturtermine sowie die gesamte Behandlungszeit während Herstellung beziehungsweise Nachkorrektur unterschieden sich jedoch nicht signifikant. Gemessen wurde vom Hinsetzen bis zum Verlassen des Behandlungsstuhls; Laborarbeit, Versand und Anfahrt waren nicht eingeschlossen. Der Vorteil betrifft damit die Organisation klinischer Termine, nicht den gesamten Behandlungszyklus.[Termin- und Zeitdaten](ref:R01)\n\nDie konventionelle Herstellung verteilt Korrekturen einzelner Zahnpositionen und der Okklusion auf mehrere Wachsschritte. Zusammengefasste Registrierungen oder gemeinsam gedruckte Zähne reduzieren frühe Schritte; ungelöste Probleme können bei der Eingliederung dennoch Druckstellenkorrekturen, Einschleifen oder Neuanfertigungen erfordern. Die Studie beobachtete weniger Herstellungstermine bei gedruckten Prothesen und höhere Komfortwerte bei konventionellen Prothesen. Sie stellte aber keinen kausalen Zusammenhang zwischen individuellem Anfahrtsaufwand, Korrekturmaßnahmen und Präferenz her. Weniger Termine lassen sich für Patienten mit erforderlicher Begleitperson als eigenständiger Nutzen besprechen; das Gewicht gegenüber Sprache oder Tragekomfort lässt sich daraus nicht beziffern.",
           "figure_ids": [
             "F02"
           ]
@@ -390,27 +390,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Ohara et al.: abschließende Präferenz nach vollständig absolviertem Crossover. © Japan Prosthodontic Society.",
+          "caption": "Originalabbildung 3: Ohara et al.: abschließende Präferenz nach vollständig absolviertem Crossover. © Japan Prosthodontic Society.",
           "interpretation": "Dunkelgraues CD bezeichnet konventionelle, hellgraues DD gedruckte Prothesen; 80%/20% entsprechen 12/3 der 15 Teilnehmer mit vollständiger Bewertung. Die Grafik zeigt weder die Präferenzen ausgeschiedener Teilnehmer noch das Gewicht von Komfort, Terminen und Erscheinungsbild. Die Richtung stimmt mit der allgemeinen Zufriedenheit überein, erlaubt aber keine Schätzung späterer Nichtbenutzung: Nach dem Tragen beider Prothesen eine zu bevorzugen bedeutet nicht, die andere nicht benutzen zu können.[Präferenzgrafik und Studienablauf](ref:R01)"
         },
         "F02": {
-          "caption": "Ohara et al.: Termine während Herstellung und Korrektur. © Japan Prosthodontic Society.",
+          "caption": "Originalabbildung 4: Ohara et al.: Termine während Herstellung und Korrektur. © Japan Prosthodontic Society.",
           "interpretation": "Die vertikale Achse zählt Termine. Links umfasst delivery die Herstellung bis zur Eingliederung, rechts adjustment die anschließenden Korrekturen. Graue Balken stehen für konventionell, weiße für gedruckt; Fehlerbalken zeigen Standardabweichungen. Nur links kennzeichnet ein Stern einen signifikanten Unterschied, während die Korrekturphase keinen entsprechenden Unterschied zeigt. Der gedruckte delivery-Balken liegt über den geplanten 3 Terminen und berücksichtigt zusätzliche Besuche etwa für Neuanfertigungen. Minuten sind nicht dargestellt; die Balkendifferenz lässt sich nicht in proportionale Einsparungen der Behandlungszeit umrechnen.[Originalgrafik der Termine](ref:R01)"
         },
         "F03": {
-          "caption": "Osnes et al.: Positionierschiene zur Übertragung der Wachsaufstellung auf die Druckbasis.",
+          "caption": "Originalabbildung 4: Osnes et al.: Positionierschiene zur Übertragung der Wachsaufstellung auf die Druckbasis.",
           "interpretation": "Bild a zeigt die Unterkieferbasis mit Zahnfächern und die transparente Schiene; b und c zeigen die Montage mit kontrollierter Zahnposition, d die fertigen Ober- und Unterkieferprothesen. Die Abbildung verortet eine Fehlerkette in der Übertragung von Zahnpositionen und der polymerisierenden Verklebung, zusätzlich zur Passung der Schleimhautseite. Die Schiene wurde während der Studie als Verfahrensänderung eingeführt. Ohne Abweichungskoordinaten oder Vergleichsstatistik erklärt das Bild die Positionskontrolle, belegt aber keine Beseitigung empfundener Okklusionsbeschwerden. Die Webseite bezeichnet es als Fig. 4, obwohl der Medienname Fig5 enthält; maßgeblich ist die tatsächlich angezeigte Abbildung.[Schiene und klinische Beobachtungen](ref:R02)"
         },
         "F04": {
-          "caption": "Emera et al.: Bildanalyseoberfläche für zweifarbigen Kaugummi.",
+          "caption": "Originalabbildung 5: Emera et al.: Bildanalyseoberfläche für zweifarbigen Kaugummi.",
           "interpretation": "Links sind Scans beider Seiten einer abgeflachten Probe, rechts die Farbtonverteilung zu sehen. Verbleibende andersfarbige Bereiche verbreitern die Verteilung und erhöhen H-SD. Kontrollierte Dicke und Scanbedingungen sollen die Verteilung möglichst auf die kaufunktionsbedingte Durchmischung beziehen. Dies ist ein Messbeispiel; die linken und rechten Proben sind nicht als konventionelle beziehungsweise gedruckte Gruppe gekennzeichnet. Ihre Farben begründen daher keine Rangfolge. Der Gruppenvergleich beruht auf tabellierten H-SD-Werten statt auf dem visuellen Eindruck des Probenfotos.[Auswertungsmethode und Ergebnistabelle](ref:R03)"
         },
         "F05": {
-          "caption": "Kukucka et al.: Nutzungsstatus und Absetzgründe zum Stichtag.",
-          "interpretation": "Das Kreisdiagramm verwendet alle 1011 Kieferprothesen als Nenner: 347 weiterhin genutzte LDP-Prothesen entsprechen 34.3%, 262 SRHI-Prothesen 25.9%. Davon unterscheiden sich die links angegebenen gruppeninternen Anteile von 68% und 52.3%. Weitere Segmente umfassen 154 geplante Eingliederungen definitiver Prothesen, 131 Brüche, 72 Neuanfertigungen und 45 sonstige Gründe, zusammen 402 abgesetzte Prothesen. Der geplante Austausch ist die größte Kategorie; jede Beendigung als Versagen zu werten überschätzt die Versagenslast. Ohne Zeitachse, Zensierungszeichen oder Risikotabelle ist dies keine Kaplan–Meier-Kurve. Bei unterschiedlicher Nachbeobachtung entspricht der Stichtagsstatus keiner Überlebenswahrscheinlichkeit nach einheitlicher Dauer.[Originalgrafik des Nutzungsstatus](ref:R05)"
+          "caption": "Originalabbildung 9: Kukucka et al.: Nutzungsstatus und Absetzgründe zum Stichtag.",
+          "interpretation": "Das Kreisdiagramm verwendet alle 1011 Kieferprothesen als Nenner: 347 weiterhin genutzte LDP-Prothesen entsprechen 34.3%, 262 SRHI-Prothesen 25.9%. Davon unterscheiden sich die links angegebenen gruppeninternen Anteile von 68% und 52.3%. Weitere Segmente umfassen 154 geplante Eingliederungen definitiver Prothesen, 131 Brüche, 72 Neuanfertigungen und 45 sonstige Gründe, zusammen 402 abgesetzte Prothesen. Der geplante Austausch ist die größte Kategorie; jede Beendigung als Versagen zu werten überschätzt die Versagenslast. Ohne Zeitachse, Zensierungszeichen oder Tabelle mit der Anzahl noch unter Risiko stehender Prothesen ist dies keine Kaplan–Meier-Kurve. Bei unterschiedlicher Nachbeobachtung entspricht der Stichtagsstatus keiner Überlebenswahrscheinlichkeit nach einheitlicher Dauer.[Originalgrafik des Nutzungsstatus](ref:R05)"
         },
         "F06": {
-          "caption": "Kukucka et al.: Bruchanteile und zugeordnete Fallkategorien.",
+          "caption": "Originalabbildung 2: Kukucka et al.: Bruchanteile und zugeordnete Fallkategorien.",
           "interpretation": "Links zeigen dunkle Balken 510/501 eingegliederte Prothesen und helle Balken 68/63 Brüche, entsprechend gruppenintern 13.3%/12.6%. Rechts werden nur die 131 gebrochenen Prothesen analysiert, LDP blau und SRHI rot. Design umfasst 35+25=60 Fälle beziehungsweise 45.8%, No Issues Noted umfasst 10+13=23. Diese kausalen Kategorien wurden nicht durch standardisierte mechanische Untersuchung jeder Prothese gesichert. Designkennzeichnungen können sich mit klinischen oder Scan-Kategorien überschneiden; eine Übereinstimmung der Klassifizierenden wurde nicht berichtet. Die Grafik identifiziert überprüfungsbedürftige Unterlagen. Der längste Design-Balken belegt keinen größeren kausalen Einfluss des Arbeitsablaufs gegenüber dem Werkstoff. Der Text bezeichnet zugehörige Abbildungen als Überlebenskurven, tatsächlich zeigt diese Grafik Fallzahlen; die Interpretation folgt der sichtbaren Abbildung und Ergebnistabelle.[Bruchgrafik und Modelltabelle](ref:R05)"
         }
       }

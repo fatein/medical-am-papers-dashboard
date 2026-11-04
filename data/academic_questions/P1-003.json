@@ -2,8 +2,8 @@
   "schema_version": 2,
   "question_id": "P1-003",
   "p": "P1",
-  "version": 2,
-  "updated_at": "2026-11-03",
+  "version": 3,
+  "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [
     "doc_e63b6d3b99acc6e41606",
@@ -90,7 +90,7 @@
         {
           "id": "s2",
           "title": "细胞增殖、成骨分化与线粒体相关表达的时间并不相同",
-          "markdown": "在同一研究中，MG-63细胞于第1、3、5天的MTT读数均随时间增加，但SLM-UT与SLM-CO之间没有显著差异。第14天，化学氧化组Runx2和OCN相对表达提高，茜素红显示较连续的矿化结节。因此这项处理的主要细胞信号是分化与矿化改变，而不是把所有早期增殖指标一并提高。若只用培养早期的代谢读数筛选表面，便可能漏掉随后出现的分化差别。[细胞实验与原图5](ref:R01)\n\n第5天的PINK1、PARKIN、LC3B和LAMP1表达上调，使线粒体自噬成为一个相关的机制线索；线粒体生成、融合与分裂所测基因则没有同样的显著变化。这种选择性比“所有线粒体功能增强”的概括更有信息。图中的表达量是相对于对照并经内参归一化的量，不是线粒体数量，也不是直接测得的自噬通量。\n\n时间先后可以把第5天的细胞状态与第14天的成骨响应联系起来，但该研究没有通过抑制或敲低实验确定前者是后者必需的原因。这里更合理的解释是：表面改性伴随一组较早的细胞调节信号，随后出现成骨相关表达和矿化差异。原图5的实际面板为A增殖、B线粒体相关表达、C成骨表达、D矿化照片；按原图标签阅读，也能避免正文与图注面板引用不一致造成的错配。",
+          "markdown": "在同一研究中，MG-63细胞于第1、3、5天的MTT读数均随时间增加，但SLM-UT与SLM-CO之间没有显著差异。第14天，化学氧化组Runx2和OCN相对表达提高，茜素红显示较连续的矿化结节。因此这项处理的主要细胞信号是分化与矿化改变，而不是把所有早期增殖指标一并提高。若只用培养早期的代谢读数筛选表面，便可能漏掉随后出现的分化差别。[细胞实验与原图5](ref:R01)\n\n第5天的PINK1、PARKIN、LC3B和LAMP1表达上调，使线粒体自噬成为一个相关的机制线索；线粒体生成、融合与分裂所测基因则没有同样的显著变化。这种选择性比“所有线粒体功能增强”的概括更有信息。图中的表达量是相对于对照并经内参归一化的量，不是线粒体数量，也不是直接测得的自噬通量。\n\n时间先后可以把第5天的细胞状态与第14天的成骨响应联系起来，但该研究未实施用于检验因果必需性的抑制或敲低实验，因而不能确定前者是后者必需的原因。这里更合理的解释是：表面改性伴随一组较早的细胞调节信号，随后出现成骨相关表达和矿化差异。原图5的实际面板为A增殖、B线粒体相关表达、C成骨表达、D矿化照片；按原图标签阅读，也能避免正文与图注面板引用不一致造成的错配。",
           "figure_ids": [
             "F02"
           ]
@@ -133,7 +133,7 @@
         },
         "F03": {
           "caption": "Shu等，原图7：2、4、8周界面接触与类骨质。",
-          "interpretation": "上方以组别为行、时间为列，甲苯胺蓝未脱钙切片与局部放大并置；下方分别显示BIC及OS/BS、OV/BV。SLM-CO在2周具有较高接触率和较少类骨质，后期三组曲线趋近。接触与成熟两个终点共同支持加速早期矿化，而不是任何时间都更高的终末接触。"
+          "interpretation": "上方以组别为行、时间为列，甲苯胺蓝未脱钙切片与局部放大并置；下方分别显示BIC及OS/BS、OV/BV。2周时，SLM-CO的接触率高于另外两组；类骨质比例仅相对SLM-UT显著较低，与TixOs无显著差异。后期三组曲线趋近。接触与成熟两个终点共同支持加速早期矿化，而不是任何时间都更高的终末接触。"
         }
       }
     },
@@ -152,7 +152,7 @@
         {
           "id": "s2",
           "title": "Proliferation, differentiation and mitochondrial expression follow different timelines",
-          "markdown": "In the same study, MG-63 MTT readings increased on days 1, 3 and 5, without a significant difference between SLM-UT and SLM-CO. On day 14, the oxidized surface increased relative Runx2 and OCN expression and showed more continuous Alizarin-red-positive mineralized nodules. The principal cellular signal was therefore altered differentiation and mineralization, rather than a simultaneous increase in every early proliferation measure. Screening solely by early metabolic readings could miss later differentiation differences. [Cell experiments and original Figure 5](ref:R01)\n\nHigher PINK1, PARKIN, LC3B and LAMP1 expression on day 5 identifies mitophagy as an associated mechanistic lead. The tested genes for mitochondrial biogenesis, fusion and fission did not show the same significant changes. This selectivity is more informative than describing all mitochondrial functions as enhanced. Expression was normalized to a reference gene and to the control group; it is neither mitochondrial number nor a direct measurement of autophagic flux.\n\nThe temporal order links the day-5 cellular state to day-14 osteogenic responses, but inhibition or knockdown experiments did not establish that the earlier change was necessary for the later one. The supported interpretation is an early set of regulatory signals accompanying surface modification, followed by osteogenic expression and mineralization differences. The actual labels in original Figure 5 are A for proliferation, B for mitochondrial expression, C for osteogenic expression and D for mineralization photographs. Reading the image itself avoids the mismatch between panel references in parts of the text and caption.",
+          "markdown": "In the same study, MG-63 MTT readings increased on days 1, 3 and 5, without a significant difference between SLM-UT and SLM-CO. On day 14, the oxidized surface increased relative Runx2 and OCN expression and showed more continuous Alizarin-red-positive mineralized nodules. The principal cellular signal was therefore altered differentiation and mineralization, rather than a simultaneous increase in every early proliferation measure. Screening solely by early metabolic readings could miss later differentiation differences. [Cell experiments and original Figure 5](ref:R01)\n\nHigher PINK1, PARKIN, LC3B and LAMP1 expression on day 5 identifies mitophagy as an associated mechanistic lead. The tested genes for mitochondrial biogenesis, fusion and fission did not show the same significant changes. This selectivity is more informative than describing all mitochondrial functions as enhanced. Expression was normalized to a reference gene and to the control group; it is neither mitochondrial number nor a direct measurement of autophagic flux.\n\nThe temporal order links the day-5 cellular state to day-14 osteogenic responses, but the study did not include inhibition or knockdown experiments to establish whether the earlier change was necessary for the later one. The supported interpretation is an early set of regulatory signals accompanying surface modification, followed by osteogenic expression and mineralization differences. The actual labels in original Figure 5 are A for proliferation, B for mitochondrial expression, C for osteogenic expression and D for mineralization photographs. Reading the image itself avoids the mismatch between panel references in parts of the text and caption.",
           "figure_ids": [
             "F02"
           ]
@@ -195,7 +195,7 @@
         },
         "F03": {
           "caption": "Shu et al., original Fig. 7: contact and osteoid at 2, 4 and 8 weeks.",
-          "interpretation": "Rows represent surfaces and columns represent time; undecalcified toluidine-blue sections are paired with enlarged regions. Lower graphs report BIC, OS/BS and OV/BV. SLM-CO combines greater contact with less osteoid at 2 weeks, while later curves converge. Together, contact and maturation support accelerated early mineralization rather than a higher final contact fraction at every time."
+          "interpretation": "Rows represent surfaces and columns represent time; undecalcified toluidine-blue sections are paired with enlarged regions. Lower graphs report BIC, OS/BS and OV/BV. At 2 weeks, SLM-CO has higher contact than both comparators; osteoid fractions are significantly lower than SLM-UT, but do not differ significantly from TixOs. The later curves converge. Together, contact and maturation support accelerated early mineralization rather than a higher final contact fraction at every time."
         }
       }
     },
@@ -214,7 +214,7 @@
         {
           "id": "s2",
           "title": "Proliferation, Differenzierung und mitochondriale Expression verlaufen zeitlich verschieden",
-          "markdown": "In derselben Studie stiegen die MTT-Messwerte von MG-63-Zellen an den Tagen 1, 3 und 5, ohne signifikanten Unterschied zwischen SLM-UT und SLM-CO. Am Tag 14 waren die relative Runx2- und OCN-Expression auf der oxidierten Oberfläche höher; Alizarinrot zeigte zusammenhängendere mineralisierte Knötchen. Das wesentliche Zellsignal war daher eine veränderte Differenzierung und Mineralisierung, nicht eine gleichzeitige Verbesserung sämtlicher früher Proliferationsgrößen. Ein Screening allein anhand früher Stoffwechselmessungen könnte spätere Differenzierungsunterschiede übersehen. [Zellversuche und Originalabbildung 5](ref:R01)\n\nDie erhöhte Expression von PINK1, PARKIN, LC3B und LAMP1 am Tag 5 liefert einen mit Mitophagie verbundenen mechanistischen Hinweis. Die untersuchten Gene für mitochondriale Biogenese, Fusion und Spaltung zeigten keine entsprechenden signifikanten Änderungen. Diese Selektivität ist aussagekräftiger als eine pauschale Verstärkung aller mitochondrialen Funktionen. Die Expression wurde auf Referenzgen und Kontrollgruppe normiert; sie misst weder die Mitochondrienzahl noch unmittelbar den autophagischen Fluss.\n\nDie zeitliche Reihenfolge verbindet den Zellzustand am Tag 5 mit osteogenen Antworten am Tag 14. Hemmungs- oder Knockdown-Versuche belegten jedoch nicht, dass die frühe Änderung für die spätere erforderlich war. Gestützt ist die Interpretation früher regulatorischer Signale nach Oberflächenmodifikation, gefolgt von Unterschieden in osteogener Expression und Mineralisierung. Die tatsächlichen Bildfelder in Originalabbildung 5 zeigen A Proliferation, B mitochondriale Expression, C osteogene Expression und D Mineralisierungsfotos. Das Lesen der Bildbeschriftung vermeidet die teilweise widersprüchlichen Panelverweise in Text und Legende.",
+          "markdown": "In derselben Studie stiegen die MTT-Messwerte von MG-63-Zellen an den Tagen 1, 3 und 5, ohne signifikanten Unterschied zwischen SLM-UT und SLM-CO. Am Tag 14 waren die relative Runx2- und OCN-Expression auf der oxidierten Oberfläche höher; Alizarinrot zeigte zusammenhängendere mineralisierte Knötchen. Das wesentliche Zellsignal war daher eine veränderte Differenzierung und Mineralisierung, nicht eine gleichzeitige Verbesserung sämtlicher früher Proliferationsgrößen. Ein Screening allein anhand früher Stoffwechselmessungen könnte spätere Differenzierungsunterschiede übersehen. [Zellversuche und Originalabbildung 5](ref:R01)\n\nDie erhöhte Expression von PINK1, PARKIN, LC3B und LAMP1 am Tag 5 liefert einen mit Mitophagie verbundenen mechanistischen Hinweis. Die untersuchten Gene für mitochondriale Biogenese, Fusion und Spaltung zeigten keine entsprechenden signifikanten Änderungen. Diese Selektivität ist aussagekräftiger als eine pauschale Verstärkung aller mitochondrialen Funktionen. Die Expression wurde auf Referenzgen und Kontrollgruppe normiert; sie misst weder die Mitochondrienzahl noch unmittelbar den autophagischen Fluss.\n\nDie zeitliche Reihenfolge verbindet den Zellzustand am Tag 5 mit osteogenen Antworten am Tag 14. Die Studie enthielt jedoch keine Hemmungs- oder Knockdown-Versuche, mit denen geprüft wurde, ob die frühe Änderung für die spätere erforderlich war. Gestützt ist die Interpretation früher regulatorischer Signale nach Oberflächenmodifikation, gefolgt von Unterschieden in osteogener Expression und Mineralisierung. Die tatsächlichen Bildfelder in Originalabbildung 5 zeigen A Proliferation, B mitochondriale Expression, C osteogene Expression und D Mineralisierungsfotos. Das Lesen der Bildbeschriftung vermeidet die teilweise widersprüchlichen Panelverweise in Text und Legende.",
           "figure_ids": [
             "F02"
           ]
@@ -257,7 +257,7 @@
         },
         "F03": {
           "caption": "Shu et al., Originalabb. 7: Kontakt und Osteoid nach 2, 4 und 8 Wochen.",
-          "interpretation": "Zeilen stehen für Oberflächen, Spalten für Zeitpunkte; unentkalkte Toluidinblau-Schnitte werden mit vergrößerten Ausschnitten gezeigt. Unten folgen BIC, OS/BS und OV/BV. SLM-CO verbindet nach 2 Wochen höheren Kontakt mit weniger Osteoid, während die späteren Kurven zusammenlaufen. Kontakt und Reifung stützen zusammen eine frühere Mineralisierung, keine zu jedem Zeitpunkt höhere endgültige Kontaktfraktion."
+          "interpretation": "Zeilen stehen für Oberflächen, Spalten für Zeitpunkte; unentkalkte Toluidinblau-Schnitte werden mit vergrößerten Ausschnitten gezeigt. Unten folgen BIC, OS/BS und OV/BV. Nach 2 Wochen liegt der Kontakt bei SLM-CO höher als bei beiden Vergleichsgruppen; die Osteoidanteile sind nur gegenüber SLM-UT signifikant niedriger und unterscheiden sich nicht signifikant von TixOs. Die späteren Kurven nähern sich an. Kontakt und Reifung stützen zusammen eine frühere Mineralisierung, keine zu jedem Zeitpunkt höhere endgültige Kontaktfraktion."
         }
       }
     }

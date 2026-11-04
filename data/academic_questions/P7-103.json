@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P7-103",
   "p": "P7",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [
@@ -148,27 +148,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Goldstein et al.：分层通道的计算速度与剪切应力。",
+          "caption": "Figure 4 | Goldstein et al.：分层通道的计算速度与剪切应力。",
           "interpretation": "a、b 为上下视角速度场，c、d 为剪切应力；d 的色标上限远小于 c。培养腔中心较低，出口局部较高，说明区室可以形成不同力学环境。图是模拟结果，不能作为实际细胞表面载荷的直接测量。[分层流场](ref:R01)"
         },
         "F02": {
-          "caption": "Pun et al.：荧光残留与药物回收是不同读数。",
+          "caption": "Figure 3 | Pun et al.：荧光残留与药物回收是不同读数。",
           "interpretation": "A 的绿色图像和柱状图比较器件残留示踪物；B 的质谱柱图比较液体中回收的药物相对量。PDMS 残留较多而回收药物较少，支持材料影响暴露的解释。两部分并未测量细胞死亡，亦不能互相替代为基质内自由药物浓度。[材料作用](ref:R02)"
         },
         "F03": {
-          "caption": "Pun et al.：结构、渗漏与分泌因子的联合观察。",
+          "caption": "Figure 5 | Pun et al.：结构、渗漏与分泌因子的联合观察。",
           "interpretation": "A–D 交代通道与内皮层；E 对比连接标记连续性；F 的热图显示 U87 条件下示踪物越过管壁更明显，G 给出表观通透系数。H、I 同时保留显著与 ns 比较，不能把所有柱高差都称为显著。内皮组织、传输功能和分泌变化分别贡献不同证据。[屏障实验](ref:R02)"
         },
         "F04": {
-          "caption": "Pun et al.：同一细胞系的空间形态与 CD133 分布。",
+          "caption": "Figure 6 | Pun et al.：同一细胞系的空间形态与 CD133 分布。",
           "interpretation": "A、B 标出管周与外围，C、D 将外观转换成形状指数；D 每点为细胞，不能当作独立芯片。E 的黄色信号与 F 的阳性细胞比例支持管周标记富集，仍不等于直接测得肿瘤起始能力。图中静态基质是对照，不能与同一器件外围混为一组。[区域异质性](ref:R02)"
         },
         "F05": {
-          "caption": "Pun et al.：药物处理后的相对死亡信号。",
+          "caption": "Figure 7 | Pun et al.：药物处理后的相对死亡信号。",
           "interpretation": "A 显示试验时间线，B 对比各位置处理与假处理的活死染色，C 以各自假处理为分母。管周柱接近基线，外围和静态柱升高；静态与管周的显著差异不能改写为全部配对均显著。均值及 SEM 描述重复间的不确定性，纵轴不是绝对死亡百分比。[药物终点](ref:R02)"
         },
         "F06": {
-          "caption": "Rosalem et al.：白血病样微环境的相对分泌输出。",
+          "caption": "Figure 8 | Rosalem et al.：白血病样微环境的相对分泌输出。",
           "interpretation": "A、B、C 分别为细胞因子、趋化因子及生长因子，红虚线为健康样组归一化基线 1。并非所有柱均带显著标记。整个器件的浓度比混合了细胞数量、组成和相互作用，不能读成每个白血病细胞的分泌倍数，也不是已经测得化疗耐药。[分泌谱](ref:R03)"
         }
       }
@@ -228,27 +228,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Goldstein et al.: Calculated velocity and shear in layered channels.",
+          "caption": "Figure 4 | Goldstein et al.: Calculated velocity and shear in layered channels.",
           "interpretation": "a and b show velocity from upper/lower views; c and d show shear. The upper colour limit in d is much smaller than in c. Low chamber-centre and higher outlet values illustrate different mechanical environments. These are simulations, not direct cellular surface-load measurements. [Layered flow](ref:R01)"
         },
         "F02": {
-          "caption": "Pun et al.: Tracer retention and drug recovery are different readouts.",
+          "caption": "Figure 3 | Pun et al.: Tracer retention and drug recovery are different readouts.",
           "interpretation": "A compares retained tracer by green fluorescence and bar plots; B compares relative drug recovered in liquid by mass spectrometry. More retention and less recovered drug for PDMS support material-dependent exposure. Neither panel measures cell death or freely available drug in the matrix. [Material effects](ref:R02)"
         },
         "F03": {
-          "caption": "Pun et al.: Joint observation of structure, leakage and soluble factors.",
+          "caption": "Figure 5 | Pun et al.: Joint observation of structure, leakage and soluble factors.",
           "interpretation": "A–D locate channel and endothelium; E compares junction-marker continuity. F shows more tracer crossing the wall with U87, and G reports apparent permeability. H and I retain both significant and ns comparisons: not every height difference is significant. Endothelial structure, transport and secretion provide distinct evidence. [Barrier experiment](ref:R02)"
         },
         "F04": {
-          "caption": "Pun et al.: Spatial morphology and CD133 within one cell line.",
+          "caption": "Figure 6 | Pun et al.: Spatial morphology and CD133 within one cell line.",
           "interpretation": "A and B identify perivascular/peripheral regions; C and D convert morphology to shape index. Each D point is a cell, not an independent chip. Yellow signal in E and positive-cell fractions in F support perivascular marker enrichment, not measured tumour-initiation capacity. Static matrices are controls, distinct from the device periphery. [Regional heterogeneity](ref:R02)"
         },
         "F05": {
-          "caption": "Pun et al.: Relative death signal after drug exposure.",
+          "caption": "Figure 7 | Pun et al.: Relative death signal after drug exposure.",
           "interpretation": "A shows the study timeline; B compares treated/sham live–dead images at each location. C uses each corresponding sham as denominator. Perivascular values stay near baseline while peripheral/static values rise; significance between static and perivascular conditions does not establish every pairwise difference. Mean and SEM express replicate uncertainty; the ordinate is not absolute percent death. [Drug endpoint](ref:R02)"
         },
         "F06": {
-          "caption": "Rosalem et al.: Relative secretory output of a leukaemia-like microenvironment.",
+          "caption": "Figure 8 | Rosalem et al.: Relative secretory output of a leukaemia-like microenvironment.",
           "interpretation": "A, B and C show cytokines, chemokines and growth factors; the red dashed healthy-like reference is 1. Not every bar has a significance mark. Whole-device concentration ratios combine abundance, composition and interactions, rather than secretion per leukaemia cell or measured chemotherapy resistance. [Secretory profile](ref:R03)"
         }
       }
@@ -308,27 +308,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Goldstein et al.: Berechnete Geschwindigkeit und Schubspannung in Kanalebenen.",
+          "caption": "Figure 4 | Goldstein et al.: Berechnete Geschwindigkeit und Schubspannung in Kanalebenen.",
           "interpretation": "a und b zeigen Geschwindigkeiten aus oberer und unterer Sicht, c und d Schubspannungen. Die Farbskalenobergrenze in d ist deutlich kleiner als in c. Niedrige Kammermitten- und höhere Auslasswerte zeigen unterschiedliche mechanische Umgebungen. Simulationen messen jedoch keine tatsächlichen Zelloberflächenlasten. [Strömungsebenen](ref:R01)"
         },
         "F02": {
-          "caption": "Pun et al.: Tracerrückhalt und Wirkstoffwiederfindung sind verschiedene Messgrößen.",
+          "caption": "Figure 3 | Pun et al.: Tracerrückhalt und Wirkstoffwiederfindung sind verschiedene Messgrößen.",
           "interpretation": "A vergleicht zurückgehaltenen Tracer anhand grüner Fluoreszenz und Balken; B vergleicht massenspektrometrisch die relative Wirkstoffmenge in der Flüssigkeit. Mehr Rückhalt und weniger Wiederfindung bei PDMS stützen materialabhängige Exposition. Keines der Teilbilder misst Zelltod oder freien Wirkstoff in der Matrix. [Materialeinfluss](ref:R02)"
         },
         "F03": {
-          "caption": "Pun et al.: Gemeinsame Beobachtung von Struktur, Leckage und löslichen Faktoren.",
+          "caption": "Figure 5 | Pun et al.: Gemeinsame Beobachtung von Struktur, Leckage und löslichen Faktoren.",
           "interpretation": "A–D verorten Kanal und Endothel; E vergleicht die Kontinuität des Kontaktmarkers. F zeigt stärkeren Traceraustritt bei U87, G die scheinbare Permeabilität. H und I enthalten signifikante und ns-Vergleiche; nicht jeder Höhenunterschied ist signifikant. Endothelstruktur, Transport und Sekretion liefern unterschiedliche Nachweise. [Barriereversuch](ref:R02)"
         },
         "F04": {
-          "caption": "Pun et al.: Räumliche Morphologie und CD133 innerhalb einer Zelllinie.",
+          "caption": "Figure 6 | Pun et al.: Räumliche Morphologie und CD133 innerhalb einer Zelllinie.",
           "interpretation": "A und B markieren gefäßnahe und periphere Bereiche; C und D überführen Formen in einen Index. Jeder Punkt in D ist eine Zelle, kein unabhängiger Chip. Gelbe Signale in E und positive Anteile in F stützen gefäßnahe Markeranreicherung, nicht gemessene Tumorinitiierung. Statische Matrizes sind Kontrollen und nicht die Geräteperipherie. [Regionale Heterogenität](ref:R02)"
         },
         "F05": {
-          "caption": "Pun et al.: Relatives Todessignal nach Wirkstoffexposition.",
+          "caption": "Figure 7 | Pun et al.: Relatives Todessignal nach Wirkstoffexposition.",
           "interpretation": "A zeigt den Studienzeitplan, B behandelte und scheinbehandelte Lebend-Tot-Bilder je Position. C verwendet die jeweilige Scheinkontrolle als Nenner. Gefäßnahe Werte bleiben basisnah, periphere und statische steigen; der signifikante statisch-perivaskuläre Unterschied macht nicht alle Paarvergleiche signifikant. Mittelwert und SEM beschreiben Replikatunsicherheit; die Ordinate ist kein absoluter Todesprozentsatz. [Arzneimittelendpunkt](ref:R02)"
         },
         "F06": {
-          "caption": "Rosalem et al.: Relative Sekretion eines leukämieähnlichen Milieus.",
+          "caption": "Figure 8 | Rosalem et al.: Relative Sekretion eines leukämieähnlichen Milieus.",
           "interpretation": "A, B und C zeigen Zytokine, Chemokine und Wachstumsfaktoren; die rote gestrichelte gesundheitsähnliche Referenz ist 1. Nicht jeder Balken trägt eine Signifikanzmarkierung. Gerätekonzentrationsverhältnisse vermischen Zellmenge, Zusammensetzung und Wechselwirkungen; sie messen weder Sekretion pro Leukämiezelle noch Chemotherapieresistenz. [Sekretionsprofil](ref:R03)"
         }
       }

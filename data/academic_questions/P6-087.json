@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P6-087",
   "p": "P6",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [
@@ -107,7 +107,7 @@
         {
           "id": "s1",
           "title": "心内结构通过分体显露，制造壁厚不等于心肌厚度",
-          "markdown": "Lee 等从 6 例先天性心脏病 CT 中选择影像质量较好的 3 例打印，分别为室间隔缺损、右心室双出口和法洛四联症。原始层厚为 0.5 mm；先提取血池，再向外增加 2 mm 壁层，并把模型分成可打开的部件。因此，切开的实体显示的是经过编辑的腔室边界与开口关系，外壁不是对患者心肌厚度的逐点复制。[病例选择与模型构造](ref:R01)\n\n原图把数字模型与黄色打印件并排，标出主动脉、右心房、右心室、室间隔缺损及肺动脉狭窄。打开模型后，观察者可沿缺损边缘追踪相邻腔室与流出通路；完整外壳则会遮住这些关系。分体位置也是一种展示选择：它增加内部可见范围，同时去掉了完整胸腔、周围组织和实际暴露入口的限制，不能直接等同于术中视野。\n\n研究采用柔性聚氨酯或树脂，打印分辨率分别为 100 μm 和 50 μm。这些参数描述制造过程，既不是每处解剖边界的误差，也不能证明与心肌力学一致。原文还说明瓣膜位置难以打印；可见的缺损和大血管关系较清楚，并不表示薄瓣叶、搏动或全部小结构都已被重现。",
+          "markdown": "Lee 等从 6 例先天性心脏病 CT 中选择影像质量较好的 3 例打印，分别为室间隔缺损、右心室双出口和法洛四联症。原始层厚为 0.5 mm；先提取血池，再向外增加 2 mm 壁层，并把模型分成可打开的部件。因此，切开的实体显示的是经过编辑的腔室边界与开口关系，外壁不是对患者心肌厚度的逐点复制。[病例选择与模型构造](ref:R01)\n\n原图把数字模型与黄色打印件并排，标出主动脉、右心房、右心室、室间隔缺损及肺动脉狭窄。打开模型后，观察者可沿缺损边缘追踪相邻腔室与流出通路；完整外壳则会遮住这些关系。分体位置也是一种展示选择：它增加内部可见范围，同时去掉了完整胸腔、周围组织和实际暴露入口的限制，不能直接等同于术中视野。\n\n研究采用热塑性聚氨酯（TPU-50A）或光敏树脂；前者的 Z 向打印分辨率为 100 μm，后者报告的打印分辨率为 50 μm。这些参数描述制造过程，既不是每处解剖边界的误差，也不能证明与心肌力学一致。原文还说明瓣膜位置难以打印；可见的缺损和大血管关系较清楚，并不表示薄瓣叶、搏动或全部小结构都已被重现。",
           "figure_ids": [
             "F01"
           ]
@@ -153,27 +153,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Lee et al.：分体心脏的数字视图与原始打印件。",
+          "caption": "Figure 2 | Lee et al.：分体心脏的数字视图与原始打印件。",
           "interpretation": "左侧数字网格与右侧黄色实体采用相似观察方向；红箭头分别指向肺动脉狭窄和室间隔缺损，字母标识主动脉、右心房和右心室。打开的前部让缺损与流出通路同时可见，颜色和光泽不是组织属性测量。图像可检查结构是否被保留，尺寸一致性还需对应测距。[原图说明](ref:R01)"
         },
         "F02": {
-          "caption": "Lee et al.：将缺损的影像、实体与网格测距并列。",
+          "caption": "Figure 4 | Lee et al.：将缺损的影像、实体与网格测距并列。",
           "interpretation": "A 为不同 CT 切面的距离，B 为卡尺接触实体缺损边缘，C 为数字模型的距离线。影像长径显示 15.88 mm，实体读数为 15.10 mm，网格对应标注为 15.48；另一个方向分别标出 6.89 和 7.41。它们提示端点与方向应匹配，不能任意拿不同方向相减；单张示例也不是研究的重复测量均值。[测量方法](ref:R01)"
         },
         "F03": {
-          "caption": "Lee et al.：原始 CT 与打印件的 Bland–Altman 一致性图。",
+          "caption": "Figure 6 | Lee et al.：原始 CT 与打印件的 Bland–Altman 一致性图。",
           "interpretation": "每个点以一对测量的均值为横坐标、CT 减打印件的差值为纵坐标，单位均为 mm。实线为平均偏倚，虚线为一致性界限；部分正偏差点接近或超过上界。尺寸较大的对象没有自动消除偏差，这幅图比相关系数更直接说明平均接近与个别误差之间的差别。[一致性分析](ref:R01)"
         },
         "F04": {
-          "caption": "Uhl et al.：颅骨多视角重建与打印支撑。",
+          "caption": "Figure 2 | Uhl et al.：颅骨多视角重建与打印支撑。",
           "interpretation": "A–C 为正面、侧面及顶视图，显示同一颅形在不同方向的轮廓。D–E 是切片准备中的模型和支撑，F 是打印设备工作场景。支撑柱与底座属于制造过程；它们的存在不能被解释为患者内部骨性结构。该图记录表示与制造转换，没有提供实测表面误差。[图与制作方法](ref:R02)"
         },
         "F05": {
-          "caption": "Uhl et al.：模型表面标记与不同骨块组合。",
+          "caption": "Figure 3 | Uhl et al.：模型表面标记与不同骨块组合。",
           "interpretation": "A–C 展示不同骨块重排形态，D 显示多个带标记的模型，E–F 显示手持模型的局部开口。最后两幅视觉上高度相似，不据此推断操作发生了可测量进展。图的贡献是显示同一骨性对象可被标记和重新组织；没有坐标、量尺或评分轴，不能从照片估算校正幅度。[模拟照片与结果表](ref:R02)"
         },
         "F06": {
-          "caption": "Li et al.：主动脉、支架外瘤囊与分支联系的数字分层显示。",
+          "caption": "Fig. 1 | Li et al.：主动脉、支架外瘤囊与分支联系的数字分层显示。",
           "interpretation": "a 保留白色骨性背景以及红色动脉、蓝色静脉；b 通过减少遮挡显示支架及其外部空间；c 进一步突出与瘤囊相联系的分支。观察层级的改变帮助把整体定位与局部病理机制联系起来。画面为数字模型，既非打印件照片，也不是流速随时间变化的实验曲线。[教学病例原图](ref:R04)"
         }
       }
@@ -185,7 +185,7 @@
         {
           "id": "s1",
           "title": "Opening the heart exposes internal relationships; manufactured walls are not myocardium",
-          "markdown": "Lee et al. selected 3 good-quality datasets for printing from 6 congenital-heart CT cases: ventricular septal defect, double-outlet right ventricle and tetralogy of Fallot. Source slice thickness was 0.5 mm. The blood pool was segmented, a 2 mm wall was added outward, and models were divided into opening components. The exposed physical model therefore represents edited chamber boundaries and communications, rather than a pointwise reproduction of patient myocardial thickness. [Case selection and model construction](ref:R01)\n\nThe original illustration places the digital model beside a yellow print and labels the aorta, right atrium, right ventricle, ventricular septal defect and pulmonary artery stenosis. Opening the model allows the observer to follow defect margins relative to adjacent chambers and outflow pathways; an intact shell would obscure these relationships. The separation plane is itself a presentation choice. It increases internal visibility while removing restrictions imposed by the intact thorax, surrounding tissues and actual access, so it does not directly reproduce an operative view.\n\nFlexible polyurethane or resin was used, with reported printing resolutions of 100 μm and 50 μm, respectively. These describe fabrication, not the error at every anatomical boundary or mechanical equivalence to myocardium. The authors also report difficulty printing valve locations. Clear defects and major vessels do not imply reproduction of thin leaflets, pulsation or all small structures.",
+          "markdown": "Lee et al. selected 3 good-quality datasets for printing from 6 congenital-heart CT cases: ventricular septal defect, double-outlet right ventricle and tetralogy of Fallot. Source slice thickness was 0.5 mm. The blood pool was segmented, a 2 mm wall was added outward, and models were divided into opening components. The exposed physical model therefore represents edited chamber boundaries and communications, rather than a pointwise reproduction of patient myocardial thickness. [Case selection and model construction](ref:R01)\n\nThe original illustration places the digital model beside a yellow print and labels the aorta, right atrium, right ventricle, ventricular septal defect and pulmonary artery stenosis. Opening the model allows the observer to follow defect margins relative to adjacent chambers and outflow pathways; an intact shell would obscure these relationships. The separation plane is itself a presentation choice. It increases internal visibility while removing restrictions imposed by the intact thorax, surrounding tissues and actual access, so it does not directly reproduce an operative view.\n\nThermoplastic polyurethane (TPU-50A) or photopolymer resin was used. The former had a Z-axis printing resolution of 100 μm; the latter had a reported printing resolution of 50 μm. These describe fabrication, not the error at every anatomical boundary or mechanical equivalence to myocardium. The authors also report difficulty printing valve locations. Clear defects and major vessels do not imply reproduction of thin leaflets, pulsation or all small structures.",
           "figure_ids": [
             "F01"
           ]
@@ -231,27 +231,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Lee et al.: Digital view and original print of an opened heart.",
+          "caption": "Figure 2 | Lee et al.: Digital view and original print of an opened heart.",
           "interpretation": "The digital mesh on the left and yellow print on the right use similar viewing directions. Red arrows identify pulmonary artery stenosis and the ventricular septal defect; labels locate the aorta, right atrium and right ventricle. Opening the anterior region exposes the defect and outflow relationships together. Color and gloss do not measure tissue properties. Structural retention is visible, while dimensional agreement requires matched measurements. [Original figure description](ref:R01)"
         },
         "F02": {
-          "caption": "Lee et al.: Defect measurements on images, the print and the mesh.",
+          "caption": "Figure 4 | Lee et al.: Defect measurements on images, the print and the mesh.",
           "interpretation": "A shows distances in different CT planes, B caliper contact with the physical defect margin, and C distance lines on the digital model. The imaging long dimension reads 15.88 mm, the physical reading 15.10 mm and the corresponding mesh annotation 15.48; another direction is labeled 6.89 and 7.41. Endpoints and directions must correspond rather than subtracting unrelated axes. This example is not the study mean of repeated measurements. [Measurement method](ref:R01)"
         },
         "F03": {
-          "caption": "Lee et al.: Bland–Altman agreement between original CT and the print.",
+          "caption": "Figure 6 | Lee et al.: Bland–Altman agreement between original CT and the print.",
           "interpretation": "Each point plots the mean of paired measurements horizontally and CT minus print vertically, both in mm. The solid line is mean bias and dashed lines are agreement limits; several positive differences approach or exceed the upper limit. Larger structures do not automatically eliminate bias. This plot distinguishes close average agreement from individual errors more directly than a correlation coefficient. [Agreement analysis](ref:R01)"
         },
         "F04": {
-          "caption": "Uhl et al.: Multiview skull reconstruction and printing supports.",
+          "caption": "Figure 2 | Uhl et al.: Multiview skull reconstruction and printing supports.",
           "interpretation": "A–C show frontal, lateral and superior contours of the same skull. D–E depict the model and supports during slicing preparation; F shows the printer at work. Columns and base belong to fabrication, not internal patient bones. The figure documents conversion from representation to manufacture without a measured surface-error map. [Figure and fabrication method](ref:R02)"
         },
         "F05": {
-          "caption": "Uhl et al.: Surface markings and different skull-segment arrangements.",
+          "caption": "Figure 3 | Uhl et al.: Surface markings and different skull-segment arrangements.",
           "interpretation": "A–C show alternative segment arrangements, D several marked models, and E–F local openings in a handheld model. The last two panels are visually very similar and do not establish measurable procedural progress. The figure shows that a bony object can be marked and reorganized. Without coordinates, rulers or score axes, correction magnitude cannot be estimated from these photographs. [Simulation photographs and results tables](ref:R02)"
         },
         "F06": {
-          "caption": "Li et al.: Layered digital display of aorta, perigraft sac and branch connections.",
+          "caption": "Fig. 1 | Li et al.: Layered digital display of aorta, perigraft sac and branch connections.",
           "interpretation": "a retains white skeletal context, red arteries and blue veins; b reduces occlusion to expose the graft and surrounding space; c further emphasizes branches connected to the sac. Changing the display level links global orientation to local pathological mechanisms. This is a digital model, neither a photograph of a print nor an experimental flow-velocity time series. [Original teaching-case figure](ref:R04)"
         }
       }
@@ -263,7 +263,7 @@
         {
           "id": "s1",
           "title": "Das geöffnete Herz zeigt innere Beziehungen; gefertigte Wände sind kein Myokard",
-          "markdown": "Lee et al. wählten aus 6 CT-Fällen angeborener Herzfehler 3 Datensätze guter Qualität zum Druck aus: Ventrikelseptumdefekt, Double-outlet right ventricle und Fallot-Tetralogie. Die ursprüngliche Schichtdicke betrug 0.5 mm. Nach Segmentierung des Blutvolumens wurde außen eine 2 mm dicke Wand ergänzt; die Modelle wurden in zu öffnende Teile zerlegt. Sichtbar werden somit bearbeitete Kammergrenzen und Verbindungen, keine punktweise Reproduktion der patienteneigenen Myokarddicke. [Fallauswahl und Modellaufbau](ref:R01)\n\nDie Originalabbildung stellt das digitale Modell einem gelben Druck gegenüber und markiert Aorta, rechten Vorhof, rechten Ventrikel, Ventrikelseptumdefekt und Pulmonalarterienstenose. Durch Öffnen lassen sich Defektränder relativ zu benachbarten Kammern und Ausflusswegen verfolgen; eine geschlossene Hülle würde diese Beziehungen verdecken. Auch die Teilungsebene ist eine Darstellungsentscheidung. Sie erweitert die innere Sicht, beseitigt aber Einschränkungen durch den geschlossenen Thorax, Nachbargewebe und den tatsächlichen Zugang. Sie entspricht daher nicht unmittelbar dem Operationsblick.\n\nVerwendet wurden flexibles Polyurethan oder Harz mit angegebenen Druckauflösungen von 100 μm beziehungsweise 50 μm. Diese Werte beschreiben die Fertigung, weder den Fehler jeder Anatomiegrenze noch mechanische Gleichwertigkeit mit Myokard. Die Autoren berichten zudem Schwierigkeiten beim Druck der Klappenpositionen. Gut sichtbare Defekte und große Gefäße bedeuten nicht, dass dünne Segel, Pulsation oder sämtliche kleinen Strukturen reproduziert sind.",
+          "markdown": "Lee et al. wählten aus 6 CT-Fällen angeborener Herzfehler 3 Datensätze guter Qualität zum Druck aus: Ventrikelseptumdefekt, Double-outlet right ventricle und Fallot-Tetralogie. Die ursprüngliche Schichtdicke betrug 0.5 mm. Nach Segmentierung des Blutvolumens wurde außen eine 2 mm dicke Wand ergänzt; die Modelle wurden in zu öffnende Teile zerlegt. Sichtbar werden somit bearbeitete Kammergrenzen und Verbindungen, keine punktweise Reproduktion der patienteneigenen Myokarddicke. [Fallauswahl und Modellaufbau](ref:R01)\n\nDie Originalabbildung stellt das digitale Modell einem gelben Druck gegenüber und markiert Aorta, rechten Vorhof, rechten Ventrikel, Ventrikelseptumdefekt und Pulmonalarterienstenose. Durch Öffnen lassen sich Defektränder relativ zu benachbarten Kammern und Ausflusswegen verfolgen; eine geschlossene Hülle würde diese Beziehungen verdecken. Auch die Teilungsebene ist eine Darstellungsentscheidung. Sie erweitert die innere Sicht, beseitigt aber Einschränkungen durch den geschlossenen Thorax, Nachbargewebe und den tatsächlichen Zugang. Sie entspricht daher nicht unmittelbar dem Operationsblick.\n\nVerwendet wurden thermoplastisches Polyurethan (TPU-50A) oder Photopolymerharz. Für Ersteres betrug die Druckauflösung in Z-Richtung 100 μm, für Letzteres wurde eine Druckauflösung von 50 μm angegeben. Diese Werte beschreiben die Fertigung, weder den Fehler jeder Anatomiegrenze noch mechanische Gleichwertigkeit mit Myokard. Die Autoren berichten zudem Schwierigkeiten beim Druck der Klappenpositionen. Gut sichtbare Defekte und große Gefäße bedeuten nicht, dass dünne Segel, Pulsation oder sämtliche kleinen Strukturen reproduziert sind.",
           "figure_ids": [
             "F01"
           ]
@@ -309,27 +309,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Lee et al.: Digitale Ansicht und Originaldruck eines geöffneten Herzens.",
+          "caption": "Figure 2 | Lee et al.: Digitale Ansicht und Originaldruck eines geöffneten Herzens.",
           "interpretation": "Digitales Netz links und gelber Druck rechts zeigen ähnliche Blickrichtungen. Rote Pfeile markieren Pulmonalarterienstenose und Ventrikelseptumdefekt; Beschriftungen verorten Aorta, rechten Vorhof und rechten Ventrikel. Die vordere Öffnung zeigt Defekt und Ausflussbeziehungen gemeinsam. Farbe und Glanz messen keine Gewebeeigenschaften. Strukturerhalt ist erkennbar, Maßübereinstimmung erfordert zugeordnete Messungen. [Originalbeschreibung](ref:R01)"
         },
         "F02": {
-          "caption": "Lee et al.: Defektmessungen in Bildern, Druck und Netz.",
+          "caption": "Figure 4 | Lee et al.: Defektmessungen in Bildern, Druck und Netz.",
           "interpretation": "A zeigt Strecken verschiedener CT-Ebenen, B den Messschieberkontakt am physischen Defektrand, C digitale Distanzlinien. Die bildliche Längsdimension beträgt 15.88 mm, die physische Anzeige 15.10 mm und die entsprechende Netzmarkierung 15.48; eine weitere Richtung ist mit 6.89 und 7.41 bezeichnet. Endpunkte und Richtungen müssen übereinstimmen, statt beliebige Achsen zu subtrahieren. Das Beispiel ist kein Studienmittelwert wiederholter Messungen. [Messmethode](ref:R01)"
         },
         "F03": {
-          "caption": "Lee et al.: Bland–Altman-Übereinstimmung zwischen ursprünglichem CT und Druck.",
+          "caption": "Figure 6 | Lee et al.: Bland–Altman-Übereinstimmung zwischen ursprünglichem CT und Druck.",
           "interpretation": "Jeder Punkt zeigt horizontal den Mittelwert eines Messpaars und vertikal CT minus Druck, jeweils in mm. Die durchgezogene Linie bezeichnet die mittlere Abweichung, gestrichelte Linien die Übereinstimmungsgrenzen; mehrere positive Differenzen erreichen oder überschreiten die obere Grenze. Größere Strukturen beseitigen Abweichungen nicht automatisch. Die Grafik trennt mittlere Nähe und Einzelfehler direkter als ein Korrelationskoeffizient. [Übereinstimmungsanalyse](ref:R01)"
         },
         "F04": {
-          "caption": "Uhl et al.: Schädelrekonstruktion aus mehreren Blickrichtungen und Druckstützen.",
+          "caption": "Figure 2 | Uhl et al.: Schädelrekonstruktion aus mehreren Blickrichtungen und Druckstützen.",
           "interpretation": "A–C zeigen frontale, seitliche und obere Konturen desselben Schädels. D–E stellen Modell und Stützen bei der Druckvorbereitung dar, F den arbeitenden Drucker. Säulen und Basis gehören zur Fertigung, nicht zu inneren Patientenknochen. Dokumentiert wird die Übertragung von Darstellung zu Fertigung ohne gemessene Oberflächenfehlerkarte. [Abbildung und Fertigungsmethode](ref:R02)"
         },
         "F05": {
-          "caption": "Uhl et al.: Oberflächenmarkierungen und verschiedene Schädelsegmentanordnungen.",
+          "caption": "Figure 3 | Uhl et al.: Oberflächenmarkierungen und verschiedene Schädelsegmentanordnungen.",
           "interpretation": "A–C zeigen unterschiedliche Segmentanordnungen, D mehrere markierte Modelle und E–F lokale Öffnungen eines gehaltenen Modells. Die letzten beiden Felder sind visuell sehr ähnlich und belegen keinen messbaren Arbeitsfortschritt. Die Abbildung zeigt, dass ein knöchernes Objekt markiert und neu angeordnet werden kann. Ohne Koordinaten, Maßstäbe oder Bewertungsachsen ist das Korrekturausmaß aus den Fotos nicht schätzbar. [Simulationsfotos und Ergebnistabellen](ref:R02)"
         },
         "F06": {
-          "caption": "Li et al.: Geschichtete digitale Darstellung von Aorta, Sack außerhalb der Prothese und Astverbindungen.",
+          "caption": "Fig. 1 | Li et al.: Geschichtete digitale Darstellung von Aorta, Sack außerhalb der Prothese und Astverbindungen.",
           "interpretation": "a erhält weißen Knochenkontext, rote Arterien und blaue Venen; b reduziert Verdeckung und legt Prothese und Außenraum frei; c betont weiter die mit dem Sack verbundenen Äste. Wechselnde Darstellungsebenen verbinden Gesamtposition und lokalen pathologischen Mechanismus. Gezeigt wird ein digitales Modell, weder ein Druckfoto noch eine experimentelle Flussgeschwindigkeits-Zeitreihe. [Originalabbildung des Lehrfalls](ref:R04)"
         }
       }

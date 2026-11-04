@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P7-098",
   "p": "P7",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-04",
   "evidence_cutoff": "2026-11-03",
   "related_paper_ids": [
@@ -124,7 +124,7 @@
         {
           "id": "s4",
           "title": "降低曝光与提高连接强度之间存在取舍",
-          "markdown": "为避免通道堵塞而整体降低顶层曝光，会同时削弱壁顶连接。Luo 等将常规 DLP、DZC-VPP 和软刻蚀 PDMS 进行拉伸比较：试件高 5 mm，中部 200 μm 区域包含 100×100 μm 通道；因此力学测试并不是直接拉伸最小 20×20 μm 通道。DZC-VPP 的断裂应力为 5.07±0.20 MPa，常规 DLP 为 3.28±0.15 MPa，PDMS 为 0.41±0.08 MPa。分区曝光在保留空腔的同时提高了连接区的固化程度，这个结果支持连接强化，而不是仅凭较小像素推定强度提高。[连接力学对照](ref:R02)\n\n应力与应变不能混为一个“更好”的排名：DZC-VPP 断裂应变 ε=1.53±0.09，PDMS 为 11.52±0.63，后者能承受更大变形。原图将 ε 作为无量纲应变绘制，不能把这些数值自行改写为百分数。拉伸断裂又不同于有接头、液体和局部缺陷时的爆破压力，不能将 MPa 拉伸强度作为通道工作压力。成品还经过 IPA 清洗、水中 80 °C 处理 10 min、365 nm 且 100 mW/cm² 的 UV 后固化 15 min；用于油包水液滴时另有 Aquapel 疏水化及 80 °C 处理 2 h。最终材料性能和表面润湿状态属于这条完整工艺，而非刚离开打印槽的树脂。",
+          "markdown": "为避免通道堵塞而整体降低顶层曝光，会同时削弱壁顶连接。Luo 等将常规 DLP、DZC-VPP 和软刻蚀 PDMS 进行拉伸比较：试件高 5 mm，中部 200 μm 区域包含 100×100 μm 通道；因此力学测试并不是直接拉伸最小 20×20 μm 通道。DZC-VPP 的断裂应力为 5.07±0.20 MPa，常规 DLP 为 3.28±0.15 MPa，PDMS 为 0.41±0.08 MPa。分区曝光在保留空腔的同时提高了连接区的固化程度，这个结果支持连接强化，而不是仅凭较小像素推定强度提高。[连接力学对照](ref:R02)\n\n应力与应变不能混为一个“更好”的排名：DZC-VPP 断裂应变 ε=1.53±0.09，PDMS 为 11.52±0.63，后者能承受更大变形。原图将 ε 作为无量纲应变绘制，不能把这些数值自行改写为百分数。拉伸断裂又不同于有接头、液体和局部缺陷时的爆破压力，不能将 MPa 拉伸强度作为通道工作压力。成品还经过 IPA 清洗、去离子水冲洗及残余溶剂去除，并接受紫外处理；原文将紫外步骤称为灭菌，而非后固化；用于油包水液滴时另有 Aquapel 疏水化及 80 °C 处理 2 h。最终材料性能和表面润湿状态属于这条完整工艺，而非刚离开打印槽的树脂。",
           "figure_ids": [
             "F04"
           ]
@@ -148,27 +148,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Rehmani et al.：相同名义开口随打印方向变形",
+          "caption": "Figure 6 | Rehmani et al.：相同名义开口随打印方向变形",
           "interpretation": "a、b 分别为 UP 02 与 Prusa 的水平开口，c、d 为相应垂直开口，比例尺均为 500 μm。可见层纹与变形的孔缘；c、d 不能按名义圆形孔径直接计算流通面积。该图比较实际轮廓，但没有逐孔统计误差条，也同时混入切片器差异。[原始显微对照](ref:R01)"
         },
         "F02": {
-          "caption": "Rehmani et al.：流量增大时的压力与漏液起点",
+          "caption": "Figure 8 | Rehmani et al.：流量增大时的压力与漏液起点",
           "interpretation": "a、b、c 分别为直线、弯曲和平面螺旋；横轴为 μL/min，纵轴为 Pa，颜色对应 0.25–0.5 mm。圈和箭头标示漏液起点，最小孔径的虚线趋平不代表阻力最低，而伴随早期漏液。0.35 mm 曲线继续升高也不表示漏液后仍具有密封性；压力轴的精度还受正文所述仪器量程矛盾限制。[原始水力实验](ref:R01)"
         },
         "F03": {
-          "caption": "Luo et al.：单次剂量不足，累积剂量仍可封堵空腔",
+          "caption": "Fig. 2 | Luo et al.：单次剂量不足，累积剂量仍可封堵空腔",
           "interpretation": "按图形及正文，a、b 为常规工艺，c、d 为分区工艺；原图注对 b、d 的文字归属有倒置。蓝线为累积归一化剂量，红线为单次剂量，虚线标临界值。常规蓝线在通道区超阈，分区曲线在相应界面降至阈值以下。e 同列比较 20×20、30×30、40×40 μm 及表面，上排常规、下排分区；应将残余堵塞与开口边缘一起读，而非只看设计标签。[曝光与 SEM 对照](ref:R02)"
         },
         "F04": {
-          "caption": "Luo et al.：强连接与大形变是不同的优势",
+          "caption": "Fig. 3 | Luo et al.：强连接与大形变是不同的优势",
           "interpretation": "a、b 为拉伸夹持，c 的纵轴为工程应力、横轴为 ε，黑色 PDMS 曲线需在横轴断点后才能显示其大形变范围。d 显示分区组断裂应力最高，e 则是 PDMS 断裂应变最高。f 的断裂能以 kJ/m² 标示；本文不将其换算为爆破压力。图中星号属于原作者组间比较，不代表最小孔径也完成相同力学测试。[原始拉伸比较](ref:R02)"
         },
         "F05": {
-          "caption": "Xu et al.：利用界面黏附次序完成槽内封顶",
+          "caption": "Fig. 2 | Xu et al.：利用界面黏附次序完成槽内封顶",
           "interpretation": "a 为主、辅助平台装置；b 横轴为成形面积、纵轴为分离力并带断轴，不同接触材料跨越明显不同力级。c 定义通道尺寸，d–i 显示底座、未封闭通道、辅助顶盖、平台转换和再次曝光。红色掩模边框及 ε 间隙说明连接依赖定位与曝光配合；该图不是最终孔径精度的测量，尺寸证据来自后续截面。[转移机制](ref:R03)"
         },
         "F06": {
-          "caption": "Xu et al.：10 μm 是最小高度而非各向同性分辨率",
+          "caption": "Fig. 3 | Xu et al.：10 μm 是最小高度而非各向同性分辨率",
           "interpretation": "a、b 比较单层设计与截面，c、d 为多层设计与切面，比例尺为 100 μm。e 横轴为目标高度、纵轴为实测高度；10–60 μm 各柱接近对应目标，误差条很小，但通道宽度固定为 75 μm。最浅通道能够形成狭缝并不等于相同宽高的方孔可打印；多层图同时表明顶盖和层间实体占用额外垂直空间。[尺寸实验](ref:R03)"
         }
       }
@@ -204,7 +204,7 @@
         {
           "id": "s4",
           "title": "Reduced exposure trades against connection strength",
-          "markdown": "Uniformly reducing roof exposure to prevent blockage also weakens wall–roof connections. Luo et al. compared conventional DLP, DZC-VPP and soft-lithographic PDMS in tension. Specimens were 5 mm high, with a central 200 μm region containing a 100×100 μm channel; the mechanical test therefore did not directly stretch the minimum 20×20 μm channel. Fracture stresses were 5.07±0.20 MPa for DZC-VPP, 3.28±0.15 MPa for conventional DLP and 0.41±0.08 MPa for PDMS. Zoned exposure increased polymerisation at the connection while preserving the cavity. This supports strengthened bonding, rather than assuming higher strength from smaller pixels. [Connection-mechanics comparison](ref:R02)\n\nStress and strain do not give a single ranking of superior performance. DZC-VPP fractured at ε=1.53±0.09, compared with 11.52±0.63 for PDMS, which tolerated much larger deformation. The original plot shows ε as dimensionless strain; these values must not simply be relabelled as percentages. Tensile fracture also differs from burst pressure in a liquid-filled device with connectors and local defects, so tensile strength in MPa cannot be assigned as working pressure. Finished devices additionally underwent IPA cleaning, treatment in water at 80 °C for 10 min, and UV post-curing at 365 nm and 100 mW/cm² for 15 min. Water-in-oil droplet use added Aquapel hydrophobisation and 80 °C treatment for 2 h. Final mechanical and wetting properties belong to this complete process rather than resin directly removed from the vat.",
+          "markdown": "Uniformly reducing roof exposure to prevent blockage also weakens wall–roof connections. Luo et al. compared conventional DLP, DZC-VPP and soft-lithographic PDMS in tension. Specimens were 5 mm high, with a central 200 μm region containing a 100×100 μm channel; the mechanical test therefore did not directly stretch the minimum 20×20 μm channel. Fracture stresses were 5.07±0.20 MPa for DZC-VPP, 3.28±0.15 MPa for conventional DLP and 0.41±0.08 MPa for PDMS. Zoned exposure increased polymerisation at the connection while preserving the cavity. This supports strengthened bonding, rather than assuming higher strength from smaller pixels. [Connection-mechanics comparison](ref:R02)\n\nStress and strain do not give a single ranking of superior performance. DZC-VPP fractured at ε=1.53±0.09, compared with 11.52±0.63 for PDMS, which tolerated much larger deformation. The original plot shows ε as dimensionless strain; these values must not simply be relabelled as percentages. Tensile fracture also differs from burst pressure in a liquid-filled device with connectors and local defects, so tensile strength in MPa cannot be assigned as working pressure. Finished devices additionally underwent IPA cleaning, deionised-water flushing and removal of residual solvents, followed by UV treatment that the paper describes as sterilisation, not post-curing. Water-in-oil droplet use added Aquapel hydrophobisation and 80 °C treatment for 2 h. Final mechanical and wetting properties belong to this complete process rather than resin directly removed from the vat.",
           "figure_ids": [
             "F04"
           ]
@@ -228,27 +228,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Rehmani et al.: nominally identical openings distort with printing direction",
+          "caption": "Figure 6 | Rehmani et al.: nominally identical openings distort with printing direction",
           "interpretation": "Panels a and b show horizontal openings from UP 02 and Prusa; c and d show the corresponding vertical openings. All scale bars are 500 μm. Layer lines and deformed pore edges are visible; nominal circular diameter cannot directly determine the flowing area in c and d. The image compares actual profiles but supplies no per-opening statistical error bars and also includes slicer differences. [Original microscopy comparison](ref:R01)"
         },
         "F02": {
-          "caption": "Rehmani et al.: pressure and leakage onset as flow increases",
+          "caption": "Figure 8 | Rehmani et al.: pressure and leakage onset as flow increases",
           "interpretation": "Panels a, b and c represent straight, curved and planar-spiral channels. Flow in μL/min is horizontal, pressure in Pa vertical, and colours denote 0.25–0.5 mm. Circles and arrows mark leakage onset. Flattening dashed curves for the smallest channels does not demonstrate minimal resistance; it accompanies early leakage. Continued growth of the 0.35 mm curve does not establish sealing after leakage starts. Pressure-axis accuracy is additionally limited by the instrument-range inconsistency discussed in the text. [Original hydraulic experiment](ref:R01)"
         },
         "F03": {
-          "caption": "Luo et al.: subcritical individual doses can still accumulate and close a cavity",
+          "caption": "Fig. 2 | Luo et al.: subcritical individual doses can still accumulate and close a cavity",
           "interpretation": "Following the graphics and main text, a and b depict the conventional process, c and d the zoned process; the original caption reverses its verbal assignment of b and d. Blue lines show accumulated normalised dose, red lines individual dose, and dashed lines the threshold. The conventional accumulated curve exceeds threshold in the channel; zoning brings it below threshold at the relevant interface. Panel e compares 20×20, 30×30 and 40×40 μm channels plus surfaces, with conventional processing above and zoning below. Residual blockage and aperture boundaries must be read together rather than only the design labels. [Exposure and SEM comparison](ref:R02)"
         },
         "F04": {
-          "caption": "Luo et al.: stronger connections and greater deformation are distinct advantages",
+          "caption": "Fig. 3 | Luo et al.: stronger connections and greater deformation are distinct advantages",
           "interpretation": "Panels a and b show tensile gripping. In c, engineering stress is vertical and ε horizontal; an axis break is needed to display the large deformation of black PDMS. Panel d gives the highest fracture stress for zoning, whereas e gives the highest fracture strain for PDMS. Panel f labels fracture energy in kJ/m²; this report does not convert it to burst pressure. Asterisks belong to the authors’ group comparisons and do not establish equivalent mechanical testing of the smallest aperture. [Original tensile comparison](ref:R02)"
         },
         "F05": {
-          "caption": "Xu et al.: interfacial adhesion order enables roof transfer inside the vat",
+          "caption": "Fig. 2 | Xu et al.: interfacial adhesion order enables roof transfer inside the vat",
           "interpretation": "Panel a shows the main and auxiliary platforms. In b, built area is horizontal and separation force vertical with an axis break; contacting materials span substantially different force ranges. Panel c defines channel dimensions; d–i show the base, open channel, auxiliary roof, platform exchange and renewed exposure. Red mask outlines and the ε gap show that connection depends on coordinated positioning and exposure. This diagram does not measure final pore accuracy; that evidence comes from later cross-sections. [Transfer mechanism](ref:R03)"
         },
         "F06": {
-          "caption": "Xu et al.: 10 μm denotes minimum height rather than isotropic resolution",
+          "caption": "Fig. 3 | Xu et al.: 10 μm denotes minimum height rather than isotropic resolution",
           "interpretation": "Panels a and b compare single-layer design and cross-sections; c and d show multilayer design and sections, with 100 μm scale bars. In e, target height is horizontal and measured height vertical. Bars from 10–60 μm closely approach their targets and have small error bars, but channel width remains 75 μm. Forming the shallowest slit does not establish printability of a square opening of equal width and height. Multilayer images also show the additional vertical space occupied by roofs and intervening solid material. [Dimensional experiment](ref:R03)"
         }
       }
@@ -284,7 +284,7 @@
         {
           "id": "s4",
           "title": "Geringere Belichtung steht im Zielkonflikt mit der Verbindungsfestigkeit",
-          "markdown": "Eine insgesamt verringerte Dachbelichtung gegen Kanalverschluss schwächt zugleich die Wand-Dach-Verbindung. Luo et al. verglichen konventionelles DLP, DZC-VPP und weichlithographisches PDMS im Zugversuch. Die Proben waren 5 mm hoch; eine zentrale 200 μm Zone enthielt einen 100×100 μm Kanal. Mechanisch geprüft wurde somit nicht unmittelbar der kleinste 20×20 μm Kanal. Die Bruchspannungen betrugen 5.07±0.20 MPa für DZC-VPP, 3.28±0.15 MPa für konventionelles DLP und 0.41±0.08 MPa für PDMS. Zonenbelichtung erhöhte den Polymerisationsgrad an der Verbindung und erhielt zugleich den Hohlraum. Dies belegt eine verstärkte Verbindung, statt höhere Festigkeit allein aus kleineren Pixeln abzuleiten. [Vergleich der Verbindungsmechanik](ref:R02)\n\nSpannung und Dehnung ergeben keine einheitliche Rangfolge besserer Leistung. DZC-VPP brach bei ε=1.53±0.09, PDMS bei 11.52±0.63; PDMS vertrug deutlich größere Verformungen. Die Originalgrafik zeigt ε als dimensionslose Dehnung; diese Werte dürfen nicht einfach als Prozent umbeschriftet werden. Zugbruch unterscheidet sich außerdem vom Berstdruck eines flüssigkeitsgefüllten Bauteils mit Anschlüssen und lokalen Defekten. Die Zugfestigkeit in MPa ist deshalb kein zulässiger Betriebsdruck. Fertige Bauteile wurden zudem mit IPA gereinigt, in Wasser bei 80 °C für 10 min behandelt und mit UV bei 365 nm und 100 mW/cm² für 15 min nachgehärtet. Für Wasser-in-Öl-Tropfen kamen Aquapel-Hydrophobierung und eine Behandlung bei 80 °C für 2 h hinzu. Mechanische Eigenschaften und Benetzung gehören zu diesem vollständigen Prozess, nicht zum Harz unmittelbar nach Entnahme aus dem Behälter.",
+          "markdown": "Eine insgesamt verringerte Dachbelichtung gegen Kanalverschluss schwächt zugleich die Wand-Dach-Verbindung. Luo et al. verglichen konventionelles DLP, DZC-VPP und weichlithographisches PDMS im Zugversuch. Die Proben waren 5 mm hoch; eine zentrale 200 μm Zone enthielt einen 100×100 μm Kanal. Mechanisch geprüft wurde somit nicht unmittelbar der kleinste 20×20 μm Kanal. Die Bruchspannungen betrugen 5.07±0.20 MPa für DZC-VPP, 3.28±0.15 MPa für konventionelles DLP und 0.41±0.08 MPa für PDMS. Zonenbelichtung erhöhte den Polymerisationsgrad an der Verbindung und erhielt zugleich den Hohlraum. Dies belegt eine verstärkte Verbindung, statt höhere Festigkeit allein aus kleineren Pixeln abzuleiten. [Vergleich der Verbindungsmechanik](ref:R02)\n\nSpannung und Dehnung ergeben keine einheitliche Rangfolge besserer Leistung. DZC-VPP brach bei ε=1.53±0.09, PDMS bei 11.52±0.63; PDMS vertrug deutlich größere Verformungen. Die Originalgrafik zeigt ε als dimensionslose Dehnung; diese Werte dürfen nicht einfach als Prozent umbeschriftet werden. Zugbruch unterscheidet sich außerdem vom Berstdruck eines flüssigkeitsgefüllten Bauteils mit Anschlüssen und lokalen Defekten. Die Zugfestigkeit in MPa ist deshalb kein zulässiger Betriebsdruck. Fertige Bauteile wurden zudem mit IPA gereinigt, mit deionisiertem Wasser gespült und von Restlösemitteln befreit. Es folgte eine UV-Behandlung, die der Artikel als Sterilisation und nicht als Nachhärtung bezeichnet. Für Wasser-in-Öl-Tropfen kamen Aquapel-Hydrophobierung und eine Behandlung bei 80 °C für 2 h hinzu. Mechanische Eigenschaften und Benetzung gehören zu diesem vollständigen Prozess, nicht zum Harz unmittelbar nach Entnahme aus dem Behälter.",
           "figure_ids": [
             "F04"
           ]
@@ -308,27 +308,27 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Rehmani et al.: nominell gleiche Öffnungen verformen sich mit der Druckrichtung",
+          "caption": "Figure 6 | Rehmani et al.: nominell gleiche Öffnungen verformen sich mit der Druckrichtung",
           "interpretation": "a und b zeigen horizontale Öffnungen von UP 02 und Prusa, c und d die entsprechenden vertikalen Öffnungen. Sämtliche Maßstabsbalken betragen 500 μm. Schichtlinien und verformte Porenränder sind sichtbar; aus einem nominellen Kreisdurchmesser lässt sich die durchströmte Fläche in c und d nicht direkt berechnen. Das Bild vergleicht tatsächliche Profile, liefert aber keine statistischen Fehlerbalken je Öffnung und enthält zugleich Unterschiede der Slicer. [Originaler Mikroskopievergleich](ref:R01)"
         },
         "F02": {
-          "caption": "Rehmani et al.: Druck und Leckagebeginn bei steigendem Durchfluss",
+          "caption": "Figure 8 | Rehmani et al.: Druck und Leckagebeginn bei steigendem Durchfluss",
           "interpretation": "a, b und c zeigen gerade, gekrümmte und eben-spiralförmige Kanäle. Horizontal steht Durchfluss in μL/min, vertikal Druck in Pa; Farben kennzeichnen 0.25–0.5 mm. Kreise und Pfeile markieren den Leckagebeginn. Abflachende gestrichelte Kurven der kleinsten Kanäle belegen keinen minimalen Widerstand, sondern begleiten frühe Leckage. Weiterer Anstieg der 0.35 mm Kurve belegt nach Leckagebeginn keine Dichtheit. Die Genauigkeit der Druckachse wird zusätzlich durch den im Text beschriebenen Widerspruch beim Messbereich begrenzt. [Originaler hydraulischer Versuch](ref:R01)"
         },
         "F03": {
-          "caption": "Luo et al.: unterkritische Einzeldosen können sich dennoch bis zum Hohlraumverschluss summieren",
+          "caption": "Fig. 2 | Luo et al.: unterkritische Einzeldosen können sich dennoch bis zum Hohlraumverschluss summieren",
           "interpretation": "Nach Grafik und Haupttext zeigen a und b den konventionellen Prozess, c und d den zonengesteuerten; die Originallegende vertauscht die sprachliche Zuordnung von b und d. Blau steht für akkumulierte normierte Dosis, Rot für Einzeldosis, gestrichelte Linien für den Schwellenwert. Die konventionelle Gesamtkurve überschreitet den Schwellenwert im Kanal; Zonensteuerung senkt sie an der relevanten Grenzfläche darunter. e vergleicht 20×20, 30×30 und 40×40 μm Kanäle sowie Oberflächen, oben konventionell und unten zonengesteuert. Restblockierung und Öffnungsränder sind gemeinsam zu lesen, nicht nur die Sollbeschriftungen. [Belichtungs- und REM-Vergleich](ref:R02)"
         },
         "F04": {
-          "caption": "Luo et al.: stärkere Verbindungen und größere Verformung sind unterschiedliche Vorteile",
+          "caption": "Fig. 3 | Luo et al.: stärkere Verbindungen und größere Verformung sind unterschiedliche Vorteile",
           "interpretation": "a und b zeigen die Einspannung im Zugversuch. In c steht technische Spannung vertikal und ε horizontal; ein Achsenbruch ermöglicht die Darstellung der großen Verformung des schwarzen PDMS. d zeigt die höchste Bruchspannung bei Zonensteuerung, e dagegen die höchste Bruchdehnung bei PDMS. f beschriftet die Bruchenergie in kJ/m²; der Bericht rechnet sie nicht in Berstdruck um. Sternchen gehören zu den Gruppenvergleichen der Autoren und belegen keine gleichwertige mechanische Prüfung der kleinsten Öffnung. [Originaler Zugvergleich](ref:R02)"
         },
         "F05": {
-          "caption": "Xu et al.: die Reihenfolge der Grenzflächenhaftung ermöglicht den Dachtransfer im Behälter",
+          "caption": "Fig. 2 | Xu et al.: die Reihenfolge der Grenzflächenhaftung ermöglicht den Dachtransfer im Behälter",
           "interpretation": "a zeigt Haupt- und Hilfsplattform. In b steht die gebaute Fläche horizontal, die Trennkraft vertikal mit Achsenbruch; Kontaktmaterialien umfassen deutlich unterschiedliche Kraftbereiche. c definiert Kanalabmessungen, d–i zeigen Basis, offenen Kanal, Hilfsdach, Plattformwechsel und erneute Belichtung. Rote Maskenumrandungen und der ε-Spalt zeigen, dass die Verbindung abgestimmte Positionierung und Belichtung benötigt. Diese Skizze misst keine endgültige Porengenauigkeit; entsprechende Nachweise liefern die späteren Querschnitte. [Transfermechanismus](ref:R03)"
         },
         "F06": {
-          "caption": "Xu et al.: 10 μm bezeichnet die Mindesthöhe statt isotroper Auflösung",
+          "caption": "Fig. 3 | Xu et al.: 10 μm bezeichnet die Mindesthöhe statt isotroper Auflösung",
           "interpretation": "a und b vergleichen einschichtiges Design und Querschnitte; c und d zeigen mehrschichtiges Design und Schnittbilder mit Maßstabsbalken von 100 μm. In e steht die Sollhöhe horizontal, die gemessene Höhe vertikal. Die Balken von 10–60 μm liegen nahe ihren Sollwerten und besitzen kleine Fehlerbalken; die Kanalbreite bleibt jedoch 75 μm. Ein sehr flacher Schlitz belegt keine Druckbarkeit einer quadratischen Öffnung gleicher Breite und Höhe. Die Mehrschichtbilder zeigen zudem den zusätzlichen vertikalen Raum für Dächer und dazwischenliegendes Vollmaterial. [Abmessungsversuch](ref:R03)"
         }
       }
