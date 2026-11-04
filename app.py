@@ -22,15 +22,15 @@ from dashboard.i18n import (LANGUAGE_OPTIONS, LOCALIZED_SELECTION_KEYS,
 
 ROOT=Path(__file__).resolve().parent
 PUBLIC_MODE=globals().get('DASHBOARD_PUBLIC_MODE',False) is True
-language_code = st.session_state.get('language', st.query_params.get('lang', 'zh'))
-if language_code not in ('zh','en','de'): language_code='zh'
+language_code = st.session_state.get('language', st.query_params.get('lang', 'en'))
+if language_code not in ('zh','en','de'): language_code='en'
 st.session_state.setdefault('language',language_code)
 browser_titles = {
     'zh': '医疗增材制造 · 学术趋势',
     'en': 'Medical additive manufacturing · Research trends',
     'de': 'Additive Fertigung in der Medizin · Forschungstrends',
 }
-st.set_page_config(page_title=browser_titles.get(language_code, browser_titles['zh']),
+st.set_page_config(page_title=browser_titles.get(language_code, browser_titles['en']),
                    page_icon='◈',layout='wide',initial_sidebar_state='expanded')
 set_language(language_code, ROOT)
 @st.cache_data(show_spinner=False)

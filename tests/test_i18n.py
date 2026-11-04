@@ -96,6 +96,7 @@ def test_english_navigation_keeps_internal_pages_and_filters():
 
 def test_language_switch_remounts_selected_filters_without_losing_values():
     app = AppTest.from_file(str(ROOT/'app.py'), default_timeout=60).run()
+    app.selectbox(key='language').set_value('zh').run()
     app.multiselect(key='p_layers__zh').set_value(['P1']).run()
     assert app.multiselect(key='p_layers__zh').value == ['P1']
     app.selectbox(key='language').set_value('en').run()
@@ -106,6 +107,17 @@ def test_language_switch_remounts_selected_filters_without_losing_values():
     german = app.multiselect(key='p_layers__de')
     assert german.value == ['P1']
     assert any('Chirurgische und dentale Implantate' in item for item in german.options)
+
+
+def test_new_visitors_default_to_english_and_can_select_chinese_and_german():
+    app = AppTest.from_file(str(ROOT/'app.py'), default_timeout=60).run()
+    assert not app.exception
+    assert app.selectbox(key='language').value == 'en'
+    assert 'Paper overview' in page_picker(app).options
+    for code in ('zh', 'de'):
+        app.selectbox(key='language').set_value(code).run()
+        assert not app.exception
+        assert app.selectbox(key='language').value == code
 
 
 def test_enterprise_observation_with_trailing_newline_is_translated():
