@@ -11,12 +11,11 @@ import streamlit as st
 from dashboard.i18n import (clear_localized_selection, language,
                             localized_multiselect, preserve_original_text)
 from dashboard.patent_data import MEDICAL_APPLICATIONS, filter_patents, load_patents
+from dashboard.patent_charts import APPLICATION_LABELS, patent_figures
 
 _COPY = {
     'title': ('医疗增材制造 · 专利检索', 'Medical additive manufacturing · Patents', 'Additive Fertigung in der Medizin · Patente'),
-    'intro': ('原始筛选快照；按原始医疗分类、申请人和公开年份探索。更新后的细分关联见“医疗应用联动”。', 'Original screened snapshot. Explore its original medical labels, applicants and publication years; updated detailed associations are in Linked evidence.', 'Ursprünglicher geprüfter Datenstand mit ursprünglichen medizinischen Labels, Anmeldern und Veröffentlichungsjahren; aktualisierte Detailzuordnungen stehen unter Verknüpfte Evidenz.'),
-    'isolated': ('本快照保留 {count} 条已因明确非医疗语境隔离的原始记录；它们未纳入医疗应用和报告关联。', 'This snapshot retains {count} original record(s) isolated for explicit nonmedical context; they are excluded from medical-application and report associations.', 'Dieser Datenstand enthält {count} wegen eindeutig nichtmedizinischen Kontexts isolierte Originaleinträge; sie sind von medizinischen Anwendungs- und Berichtszuordnungen ausgeschlossen.'),
-    'excluded': ('该原始记录因明确非医疗语境未纳入医疗关联与报告证据。', 'This original record is excluded from medical associations and report evidence because its context is explicitly nonmedical.', 'Dieser Originaleintrag ist wegen eindeutig nichtmedizinischen Kontexts von medizinischen Zuordnungen und Berichtsevidenz ausgeschlossen.'),
+    'intro': ('按医疗应用、申请人和公开年份探索专利，查看数据分析与原文。', 'Explore patents by medical application, applicant and publication year, with analytics and original publications.', 'Patente nach medizinischer Anwendung, Anmelder und Veröffentlichungsjahr erkunden, mit Analysen und Originalveröffentlichungen.'),
     'applications': ('医疗应用', 'Medical application', 'Medizinische Anwendung'),
     'applicants': ('申请人（留空表示全部）', 'Applicants (empty = all)', 'Anmelder (leer = alle)'),
     'years': ('公开年份', 'Publication year', 'Veröffentlichungsjahr'),
@@ -28,7 +27,6 @@ _COPY = {
     'families': ('已知同族组', 'Observed patent families', 'Bekannte Patentfamilien'),
     'applicant_count': ('申请人名称', 'Applicant names', 'Anmeldernamen'),
     'countries': ('公开国家／地区', 'Publication authorities', 'Veröffentlichungsbehörden'),
-    'scope': ('原始筛选快照共 {total:,} 条公开记录；同一发明可能有多个国家或公开阶段的记录。', 'The original screened snapshot contains {total:,} publication records. An invention may have records from multiple jurisdictions or publication stages.', 'Der ursprüngliche geprüfte Datenstand enthält {total:,} Veröffentlichungen. Eine Erfindung kann Einträge aus mehreren Ländern oder Veröffentlichungsstufen haben.'),
     'empty': ('没有匹配的专利，请调整筛选或点击“重置专利筛选”。', 'No patents match. Adjust the filters or reset them.', 'Keine passenden Patente. Filter anpassen oder zurücksetzen.'),
     'page': ('结果页', 'Results page', 'Ergebnisseite'),
     'range': ('第 {start:,}–{end:,} 条，共 {total:,} 条 · {pages:,} 页', 'Records {start:,}–{end:,} of {total:,} · {pages:,} pages', 'Einträge {start:,}–{end:,} von {total:,} · {pages:,} Seiten'),
@@ -42,17 +40,7 @@ _COPY = {
     'family': ('已知同族编号', 'Observed family ID', 'Bekannte Familien-ID'),
     'missing': ('未提供', 'Not provided', 'Nicht angegeben'),
     'excerpt': ('原始摘要节选', 'Original abstract excerpt', 'Auszug aus der Originalzusammenfassung'),
-    'method': ('纳入依据：现有题名、摘要与分类中的直接医疗增材制造证据。医疗应用可多选归类；题名和申请人保留原文。年份指公开年份，不代表首次申请年份。', 'Included using direct medical additive manufacturing evidence in the available titles, abstracts and classifications. Applications may have multiple labels. Titles and applicants retain their original wording. Years refer to publication, not first filing.', 'Aufgenommen aufgrund direkter Belege für medizinische additive Fertigung in vorhandenen Titeln, Zusammenfassungen und Klassifikationen. Mehrere Anwendungslabels sind möglich. Titel und Anmelder bleiben im Original. Jahre beziehen sich auf die Veröffentlichung, nicht die Erstanmeldung.'),
-    'link_note': ('原文在 Espacenet 新页面打开。本模块不保存专利全文；具体可用内容以来源网站为准。', 'Original publications open on Espacenet in a new tab. Patent full texts are not stored here; available content depends on the source website.', 'Originalveröffentlichungen öffnen auf Espacenet in einem neuen Tab. Hier werden keine Patentvolltexte gespeichert; verfügbare Inhalte hängen von der Quellwebsite ab.'),
     'load_error': ('专利数据暂时无法读取，请稍后重试。', 'Patent data could not be loaded. Please try again later.', 'Patentdaten konnten nicht geladen werden. Bitte später erneut versuchen.'),
-}
-_APPLICATION_LABELS = {
-    'dental': ('口腔与牙科', 'Dental', 'Zahnmedizin'),
-    'implants_and_prostheses': ('植入物与假体', 'Implants and prostheses', 'Implantate und Prothesen'),
-    'tissue_engineering_and_bioprinting': ('组织工程与生物打印', 'Tissue engineering and bioprinting', 'Gewebeengineering und Bioprinting'),
-    'pharmaceuticals_and_drug_delivery': ('药物与递送', 'Pharmaceuticals and drug delivery', 'Arzneimittel und Wirkstofffreisetzung'),
-    'surgical_tools_and_anatomical_models': ('手术工具与解剖模型', 'Surgical tools and anatomical models', 'Chirurgische Instrumente und anatomische Modelle'),
-    'medical_devices_and_rehabilitation': ('医疗器械与康复', 'Medical devices and rehabilitation', 'Medizinprodukte und Rehabilitation'),
 }
 
 
@@ -65,7 +53,7 @@ def text(key):
 
 
 def application_label(code):
-    return _localized(_APPLICATION_LABELS[code])
+    return _localized(APPLICATION_LABELS[code])
 
 
 @st.cache_data(show_spinner=False)
@@ -78,24 +66,6 @@ def reset_patent_filters():
     for key in ('patent_applicants', 'patent_years', 'patent_unknown_year',
                 'patent_query', 'patent_page', 'patent_record', '_patent_filter_signature'):
         st.session_state.pop(key, None)
-
-
-@st.cache_data(show_spinner=False)
-def _isolated_original_records(root,signature):
-    from dashboard.bridge_data import load_bridge
-    graph=load_bridge(root)
-    return {r['id']:r.get('exclusion_reason','') for r in graph['patents']
-            if r.get('association_status')=='excluded_nonmedical_context'}
-
-
-def _isolation_annotations():
-    root=Path(__file__).resolve().parents[1]
-    paths=[root/'data'/name for name in ('patent_bridge.json.gz','patent_bridge_manifest.json')]
-    if not all(p.exists() for p in paths): return {}
-    try:
-        return _isolated_original_records(str(root),tuple((p.stat().st_mtime_ns,p.stat().st_size) for p in paths))
-    except (OSError,ValueError,KeyError):
-        return {}
 
 
 def patent_filters(root):
@@ -122,7 +92,6 @@ def patent_filters(root):
                if source.publication_year.isna().any() else False)
     query = st.text_input(text('query'), key='patent_query')
     st.button(text('reset'), key='patent_reset', on_click=reset_patent_filters, width='stretch')
-    st.caption(text('logic'))
     current = json.dumps([sorted(applications), sorted(applicants), years, unknown, query], ensure_ascii=False)
     if st.session_state.get('_patent_filter_signature') != current:
         st.session_state.pop('patent_page', None)
@@ -141,9 +110,12 @@ def patent_explorer(source, filtered):
               len({v for names in filtered.applicants for v in names}), filtered.country.nunique()]
     for column, key, value in zip(st.columns(4), ('records', 'families', 'applicant_count', 'countries'), counts):
         column.metric(text(key), f'{value:,}')
-    st.caption(text('scope').format(total=len(source)))
-    isolated=_isolation_annotations()
-    if isolated: st.info(text('isolated').format(count=len(isolated)))
+    figures = patent_figures(filtered, language())
+    for keys in [('years', 'applications'), ('applicants', 'authorities')]:
+        for column, key in zip(st.columns(2), keys):
+            with column, preserve_original_text():
+                st.plotly_chart(figures[key], width='stretch', theme=None,
+                                key=f'patent_chart_{key}', config={'displayModeBar': False})
     if filtered.empty:
         st.info(text('empty'))
         return
@@ -172,9 +144,6 @@ def patent_explorer(source, filtered):
         selected = st.selectbox(detail_label, ids, key='patent_record')
     row = records.set_index('publication_id').loc[selected]
     with st.container(border=True):
-        if selected in isolated:
-            st.warning(text('excluded'))
-            with preserve_original_text(): st.caption(isolated[selected])
         with preserve_original_text():
             st.subheader(row.title or selected)
             st.text('; '.join(row.applicants))
@@ -186,5 +155,3 @@ def patent_explorer(source, filtered):
             with preserve_original_text():
                 st.text(row.abstract_excerpt)
         st.link_button(text('open'), row.source_url, type='primary')
-    st.caption(text('method'))
-    st.caption(text('link_note'))

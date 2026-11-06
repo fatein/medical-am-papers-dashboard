@@ -154,8 +154,8 @@ def test_public_navigation_loads_complete_snapshot_and_all_report_scopes():
     app.text_input(key='bridge_query').set_value(excluded['id']).run()
     assert not app.exception
     assert app.metric[1].value == '1'
-    assert any('eindeutig nichtmedizinischen Kontext' in item.value for item in app.caption)
-    assert any(item.value == excluded['association_reason'] for item in app.text)
+    assert not any('eindeutig nichtmedizinischen Kontext' in item.value for item in app.caption)
+    assert not any(item.value == excluded['association_reason'] for item in app.text)
     app.selectbox(key='bridge_application__de').set_value('dental').run()
     assert app.metric[1].value == '0'
     app.button(key='bridge_reset').click().run()
@@ -197,7 +197,7 @@ def test_report_scope_labels_follow_locale_and_keep_scope_id():
         assert any(title in option for option in app.selectbox(key=f'bridge_scope__{code}').options)
         assert any(title in item.value for item in app.caption)
 
-def test_excluded_nonmedical_patent_explains_why_its_original_record_is_retained():
+def test_excluded_patent_keeps_original_record_and_filtering_without_notices():
     graph = fixture_graph()
     graph['patents'][0].update(association_status='excluded_nonmedical_context',
                                association_reason='原始非医疗语境依据', applications=[], topics=[])
@@ -207,5 +207,24 @@ def test_excluded_nonmedical_patent_explains_why_its_original_record_is_retained
         app.selectbox(key='language').set_value(code).run()
         assert not app.exception
         assert app.metric[1].value == '2'
-        assert any(phrase in item.value for item in app.caption)
-        assert any(item.value == '原始非医疗语境依据' for item in app.text)
+        assert not any(phrase in item.value for item in app.caption)
+        assert not any(item.value == '原始非医疗语境依据' for item in app.text)
+        assert any(item.value == '原始牙冠专利' for item in app.subheader)
+        app.selectbox(key=f'bridge_application__{code}').set_value('dental').run()
+        assert app.metric[1].value == '0'
+        app.button(key='bridge_reset').click().run()
+
+
+def test_linked_view_retains_counts_and_relationships_without_canned_caveats():
+    app = fixture_app()
+    for code, phrases in [
+        ('zh', ('快照：', '不等于独立发明', '不构成专利权属', '不能替代名称证据')),
+        ('en', ('Snapshot:', 'not unique inventions', 'do not establish patent ownership', 'does not replace name evidence')),
+        ('de', ('Datenstand:', 'eigenständiger Erfindungen', 'belegen keine Patentinhaberschaft', 'ersetzt keinen Namensbeleg')),
+    ]:
+        app.selectbox(key='language').set_value(code).run()
+        assert not app.exception
+        visible = '\n'.join(item.value for item in app.caption)
+        assert all(phrase not in visible for phrase in phrases)
+        assert [item.value for item in app.metric[:3]] == ['30', '2', '1']
+        assert any('原始企业 · 原始申请人' == item.value for item in app.text)

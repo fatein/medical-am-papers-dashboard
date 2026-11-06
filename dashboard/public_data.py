@@ -37,6 +37,7 @@ PUBLIC_PACKAGE_FILES = frozenset({
     'dashboard/bridge_data.py', 'dashboard/bridge_matching.py', 'dashboard/bridge_views.py',
     'dashboard/patent_report_views.py', 'dashboard/direction_reports.py',
     'dashboard/technical_features.py',
+    'dashboard/relationship_graph.py', 'dashboard/patent_charts.py',
     'data/patent_bridge.json.gz', 'data/patent_bridge_manifest.json',
     'data/patent_report_editorial.json',
     'data/direction_reports/zh.json', 'data/direction_reports/en.json', 'data/direction_reports/de.json',

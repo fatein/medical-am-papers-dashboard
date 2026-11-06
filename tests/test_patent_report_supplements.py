@@ -76,13 +76,50 @@ def test_every_released_report_has_composable_three_language_patent_analysis():
         for code in ('zh','en','de'):
             model=compose_patent_supplement(data,editorial,ident,code)
             assert model['counts']['publications']==len({r['patent_id'] for r in scope['patent_links']})
-            assert model['scope_title'] and len(model['editorial']['focus'])>30
+            assert model['scope_title'] and all(model['editorial'][key].strip() for key in ('focus','academic_comparison','industry_question'))
             assert all(r['patent']['id'] in patent_ids for r in model['representatives'])
             families=[r['patent'].get('family_id') or r['patent']['id'] for r in model['representatives']]
             assert len(families)==len(set(families))
 
-@pytest.mark.parametrize('scope_id,view,param,code',[('P1-001','question-report','question','en'),('P1-01','direction-report','direction','de')])
+
+@pytest.mark.parametrize('code,focus,academic,industry,boilerplate', [
+    ('zh', '孔径分布、孔形、开放孔隙和贯通路径', '实际孔隙测量与组织学骨长入深度及分布', '植入物型号的孔隙设计文件与制造后孔隙检测',
+     ('仅将披露中明确涉及', '专利披露可用于', '技术相近只是核验线索', '全领域专利规模', '方法与限制：', '本问题的证据边界', '不能作为临床', '共同关键词本身不能', '不按法律价值排序', '不等于权利要求限定', '同词也不能证明', '技术主题相似不能证明')),
+    ('en', 'pore-size distribution, pore shape, open porosity and connected paths', 'histological depth and distribution of bone ingrowth', 'model-specific pore design documents and as-manufactured porosity measurements',
+     ('retain a problem-level connection only', 'A patent disclosure can suggest', 'Technical similarity remains a verification lead', 'not the entire patent landscape', 'Method and limits:', 'Evidence boundary for this question', 'not comparative clinical', 'shared terms alone do not', 'not ranked by legal value', 'do not establish claim limitations', 'same term does not establish identical', 'Topic similarity does not establish ownership')),
+    ('de', 'Porengrößenverteilung, Porenform, offene Porosität und durchgängige Wege', 'histologischer Tiefe und Verteilung des Knocheneinwachsens', 'modellspezifische Porendesigns und Messungen am gefertigten Implantat',
+     ('einen Bezug zur Forschungsfrage nur', 'Eine Patentschrift kann Prüfvariablen', 'Technische Ähnlichkeit bleibt ein Prüfhinweis', 'nicht auf die gesamte Patentlandschaft', 'Methode und Grenzen:', 'Evidenzgrenze dieser Fragestellung', 'keine vergleichende klinische', 'gemeinsame Begriffe belegen keine', 'Rangliste des rechtlichen Werts', 'belegen weder Anspruchsmerkmale', 'gleiche Begriffe belegen keine identischen', 'Thematische Ähnlichkeit belegt weder Inhaberschaft')),
+])
+def test_localized_chapters_keep_specific_guidance_without_shared_caveats(code,focus,academic,industry,boilerplate):
+    import json
+    from dashboard.bridge_data import load_bridge
+    graph=load_bridge(ROOT)
+    editorial=json.loads((ROOT/'data/patent_report_editorial.json').read_text(encoding='utf-8'))
+    models=[compose_patent_supplement(graph,editorial,ident,code) for ident in graph['reports']]
+    first=next(m for m in models if m['scope_id']=='P1-001')
+    assert focus in first['editorial']['focus']
+    assert academic in first['editorial']['academic_comparison']
+    assert industry in first['editorial']['industry_question']
+    rendered=export_html(models)
+    assert all(phrase not in rendered for phrase in boilerplate)
+    assert all(m['editorial']['boundary'] not in rendered for m in models)
+    assert editorial['reports']['P1-001']['locales'][code]['boundary']==first['editorial']['boundary']
+
+
+def test_cleanup_preserves_source_negation_and_nonboilerplate_guidance():
+    graph,editorial=fixture()
+    original='A porous coating does not improve bone ingrowth in this experiment.'
+    graph['patents'][0]['abstract_excerpt']=original
+    editorial['reports']['P1-001']['locales']['en']['academic_comparison']='The study does not measure pore connectivity.'
+    model=compose_patent_supplement(graph,editorial,'P1-001','en')
+    rendered=export_html([model])
+    assert original in rendered
+    assert 'The study does not measure pore connectivity.' in rendered
+    assert 'Disclosure is not clinical validation.' not in rendered
+
+@pytest.mark.parametrize('scope_id,view,param,code',[('P1-001','question-report','question','zh'),('P1-001','question-report','question','en'),('P1-01','direction-report','direction','de')])
 def test_report_chapter_opens_the_exact_scope_in_linked_browser(scope_id,view,param,code):
+    import json
     from streamlit.testing.v1 import AppTest
     from dashboard.bridge_data import load_bridge
     data=load_bridge(ROOT)
@@ -90,6 +127,20 @@ def test_report_chapter_opens_the_exact_scope_in_linked_browser(scope_id,view,pa
     app.query_params.update({'lang':code,'view':view,param:scope_id})
     app.run()
     assert not app.exception
+    editorial=json.loads((ROOT/'data/patent_report_editorial.json').read_text(encoding='utf-8'))
+    original=editorial['reports'][scope_id]['locales'][code]
+    visible='\n'.join(item.value for kind in ('caption','markdown','text','info') for item in app.get(kind))
+    assert original['boundary'] not in visible
+    assert original['focus'] not in visible
+    for phrase in {
+        'zh': ('专利披露可用于提出待测变量','技术相近只是核验线索','方法与限制：','共同关键词本身不能证明'),
+        'en': ('A patent disclosure can suggest variables','Technical similarity remains a verification lead','Method and limits:','shared terms alone do not establish'),
+        'de': ('Eine Patentschrift kann Prüfvariablen','Technische Ähnlichkeit bleibt ein Prüfhinweis','Methode und Grenzen:','gemeinsame Begriffe belegen keine'),
+    }[code]:
+        assert phrase not in visible
+    concise=compose_patent_supplement(data,editorial,scope_id,code)
+    assert concise['editorial']['focus'] in visible
+    assert concise['editorial']['academic_comparison'] in visible
     assert app.button(key=f'patent_bridge_report_{scope_id}')
     app.button(key=f'patent_bridge_report_{scope_id}').click().run()
     assert not app.exception

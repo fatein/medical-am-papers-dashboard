@@ -31,8 +31,6 @@ _COPY = {
     'papers': ('论文', 'Papers', 'Publikationen'),
     'patents': ('专利公开记录', 'Patent publications', 'Patentveröffentlichungen'),
     'companies': ('企业档案', 'Company profiles', 'Unternehmensprofile'),
-    'counts': ('快照：{papers:,} 篇论文 · {patents:,} 条专利公开记录 · {companies:,} 份企业档案。各类数量分别统计；专利公开记录不等于独立发明数量。', 'Snapshot: {papers:,} papers · {patents:,} patent publications · {companies:,} company profiles. Counts are separate resource counts; publications are not unique inventions.', 'Datenstand: {papers:,} Publikationen · {patents:,} Patentveröffentlichungen · {companies:,} Unternehmensprofile. Ressourcen werden getrennt gezählt; Patentveröffentlichungen sind keine Anzahl eigenständiger Erfindungen.'),
-    'method': ('主题对应来自现有题名、摘要和档案元数据的证据筛选，不表示论文引用、合作、许可、产品实施或临床效果。申请人名称对应单独列示，不构成专利权属认定。', 'Topic alignment screens available titles, abstracts and profile metadata. It does not establish citations, collaboration, licensing, product implementation or clinical effects. Applicant-name correspondences are shown separately and do not establish patent ownership.', 'Thematische Zuordnung beruht auf vorhandenen Titeln, Zusammenfassungen und Profilmetadaten. Sie belegt keine Zitation, Zusammenarbeit, Lizenzierung, Produktumsetzung oder klinische Wirkung. Anmeldernamensentsprechungen werden getrennt gezeigt und belegen keine Patentinhaberschaft.'),
     'empty': ('当前条件没有匹配记录。请调整筛选或重置联动筛选。', 'No records match these filters. Adjust or reset the linked filters.', 'Keine Einträge für diese Filter. Filter anpassen oder zurücksetzen.'),
     'empty_type': ('此范围内没有此类记录。', 'No records of this type in the current scope.', 'Keine Einträge dieser Art im aktuellen Bereich.'),
     'page': ('结果页', 'Results page', 'Ergebnisseite'),
@@ -51,9 +49,8 @@ _COPY = {
     'family': ('已知同族编号', 'Observed family ID', 'Bekannte Familien-ID'),
     'missing': ('未提供', 'Not provided', 'Nicht angegeben'),
     'excerpt': ('原始摘要节选', 'Original abstract excerpt', 'Auszug aus der Originalzusammenfassung'),
-    'name_matches': ('申请人名称对应（独立于主题相似性）', 'Applicant-name correspondences (separate from topic similarity)', 'Anmeldernamensentsprechungen (getrennt von thematischer Ähnlichkeit)'),
-    'no_name_matches': ('此记录没有已验证的企业—申请人名称对应。主题相似性不能替代名称证据。', 'No verified company–applicant name correspondence for this record. Topic similarity does not replace name evidence.', 'Für diesen Eintrag liegt keine geprüfte Unternehmens-Anmeldernamensentsprechung vor. Thematische Ähnlichkeit ersetzt keinen Namensbeleg.'),
-    'excluded': ('该记录因明确非医疗语境未纳入医疗应用和报告关联（保留原始记录供追溯）', 'This record has an explicit nonmedical context and is excluded from medical-application and report associations; its original record is retained for traceability.', 'Dieser Eintrag hat einen eindeutig nichtmedizinischen Kontext und ist von medizinischen Anwendungs- und Berichtszuordnungen ausgeschlossen; der Originaleintrag bleibt zur Nachverfolgung erhalten.'),
+    'name_matches': ('申请人名称对应', 'Applicant-name correspondences', 'Anmeldernamensentsprechungen'),
+    'no_name_matches': ('暂无申请人名称对应。', 'No applicant-name correspondence.', 'Keine Anmeldernamensentsprechung.'),
     'load_error': ('联动数据暂时无法读取，请稍后重试。', 'Linked evidence could not be loaded. Please try again later.', 'Verknüpfte Evidenz konnte nicht geladen werden. Bitte später erneut versuchen.'),
 }
 
@@ -230,12 +227,6 @@ def _entity_tab(graph, records, kind):
             st.subheader(row.get(name_field) or row['id'])
             if kind == 'patents':
                 st.text('; '.join(row.get('applicants', [])))
-        if kind == 'patents' and row.get('association_status') == 'excluded_nonmedical_context':
-            st.caption(text('excluded'))
-            reason = row.get('association_reason') or row.get('exclusion_reason')
-            if reason:
-                with preserve_original_text():
-                    st.text(reason)
         st.caption(f"{text('topics')}: " + ('; '.join(topic_labels.get(value, value) for value in row.get('topics', []))
                                            or text('no_topic')))
         if kind == 'patents':
@@ -264,8 +255,6 @@ def bridge_page(graph, selection):
                 unsafe_allow_html=True)
     for column, kind in zip(st.columns(3), ('papers', 'patents', 'companies')):
         column.metric(text(kind), f'{len(selected[kind]):,}')
-    st.caption(text('counts').format(**{kind: len(graph[kind]) for kind in ('papers', 'patents', 'companies')}))
-    st.caption(text('method'))
     scope = graph.get('reports', {}).get(selection.get('scope_id'))
     if scope:
         caption = text('active_scope').format(title=_report_title(scope))
@@ -274,7 +263,12 @@ def bridge_page(graph, selection):
     if not any(selected[kind] for kind in ('papers', 'patents', 'companies')):
         st.info(text('empty'))
         return
-    for tab, kind in zip(st.tabs([text('papers'), text('patents'), text('companies')]),
+    graph_title={'zh':'关系图','en':'Relationship graph','de':'Beziehungsgraph'}[language()]
+    tabs=st.tabs([graph_title,text('papers'),text('patents'),text('companies')])
+    with tabs[0]:
+        from dashboard.relationship_graph import render_relationship_graph
+        render_relationship_graph(graph,selection)
+    for tab, kind in zip(tabs[1:],
                          ('papers', 'patents', 'companies')):
         with tab:
             _entity_tab(graph, selected[kind], kind)

@@ -43,7 +43,7 @@ def export_supplements(root,output):
              'coverage':rows}
     (output/'coverage_summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     links=''.join(f'<li><a href="{html.escape(r["path"],quote=True)}">{html.escape(r["id"]+" · "+r["title"])}</a> — {r["publications"]} 条主题匹配公开记录 / {r["families"]} 个已知同族组</li>' for r in rows)
-    index='<!doctype html><meta charset="utf-8"><title>专利补充报告索引</title><style>body{font:16px/1.9 system-ui;max-width:1100px;margin:40px auto;padding:20px}a{color:#107e77}</style><h1>论文—专利—企业：报告补充索引</h1><p>113 份问题报告与 35 份方向报告。各页含中文、英文、德文；保留原始题名、申请人与来源链接。每份报告计数可能与其他报告重叠；无匹配不代表领域内没有专利。</p><ul>'+links+'</ul>'
+    index='<!doctype html><meta charset="utf-8"><title>专利补充报告索引</title><style>body{font:16px/1.9 system-ui;max-width:1100px;margin:40px auto;padding:20px}a{color:#107e77}</style><h1>论文—专利—企业：报告补充索引</h1><p>113 份问题报告与 35 份方向报告。中文、英文、德文版本，包含专利、论文与企业来源链接。</p><ul>'+links+'</ul>'
     (output/'index.html').write_text(index,encoding='utf-8')
     return {k:v for k,v in summary.items() if k not in ('source_manifest','coverage')}
 
