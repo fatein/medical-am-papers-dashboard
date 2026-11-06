@@ -69,6 +69,8 @@ views.bridge_page(graph, selected)
 
 def test_shared_filters_pagination_and_original_source_records():
     app = fixture_app()
+    assert [tab.label for tab in app.tabs] == ['论文', '专利公开记录', '企业档案']
+    assert not app.get('plotly_chart')
     assert [item.value for item in app.metric[:3]] == ['30', '2', '1']
     assert len(app.dataframe[0].value) == 25
     assert app.dataframe[0].value.iloc[0]['title'] == '原始论文 0'

@@ -263,12 +263,8 @@ def bridge_page(graph, selection):
     if not any(selected[kind] for kind in ('papers', 'patents', 'companies')):
         st.info(text('empty'))
         return
-    graph_title={'zh':'关系图','en':'Relationship graph','de':'Beziehungsgraph'}[language()]
-    tabs=st.tabs([graph_title,text('papers'),text('patents'),text('companies')])
-    with tabs[0]:
-        from dashboard.relationship_graph import render_relationship_graph
-        render_relationship_graph(graph,selection)
-    for tab, kind in zip(tabs[1:],
+    tabs=st.tabs([text('papers'),text('patents'),text('companies')])
+    for tab, kind in zip(tabs,
                          ('papers', 'patents', 'companies')):
         with tab:
             _entity_tab(graph, selected[kind], kind)

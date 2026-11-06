@@ -9,9 +9,9 @@ import streamlit.components.v1 as components
 from dashboard.i18n import language,preserve_original_text
 
 UI={
- 'zh':{'read':'查看报告 →','back':'← 返回研究方向','contents':'报告目录','graph':'详细研究脉络图','sources':'论文与网页来源','questions':'研究问题','finding':'核心判断','zoom':'缩放','reset':'适应宽度','feedback':'虚线：反馈任务','date':'更新于 2026-11-03'},
- 'en':{'read':'Read report →','back':'← Back to research direction','contents':'Contents','graph':'Detailed research pathway','sources':'Papers and web sources','questions':'Research questions','finding':'Core finding','zoom':'Zoom','reset':'Fit to width','feedback':'Dashed lines: feedback tasks','date':'Updated 2026-11-03'},
- 'de':{'read':'Bericht lesen →','back':'← Zurück zur Forschungsrichtung','contents':'Inhalt','graph':'Detaillierter Forschungsverlauf','sources':'Publikationen und Webquellen','questions':'Forschungsfragen','finding':'Kernaussage','zoom':'Zoom','reset':'An Breite anpassen','feedback':'Gestrichelte Linien: Rückkopplungsaufgaben','date':'Aktualisiert am 03.11.2026'},
+ 'zh':{'read':'查看报告 →','back':'← 返回研究方向','contents':'报告目录','graph':'详细研究脉络图','sources':'论文、专利与企业来源','questions':'研究问题','finding':'核心判断','zoom':'缩放','reset':'适应宽度','feedback':'虚线：反馈任务','date':'更新于 2026-11-07'},
+ 'en':{'read':'Read report →','back':'← Back to research direction','contents':'Contents','graph':'Detailed research pathway','sources':'Paper, patent and company sources','questions':'Research questions','finding':'Core finding','zoom':'Zoom','reset':'Fit to width','feedback':'Dashed lines: feedback tasks','date':'Updated 2026-11-07'},
+ 'de':{'read':'Bericht lesen →','back':'← Zurück zur Forschungsrichtung','contents':'Inhalt','graph':'Detaillierter Forschungsverlauf','sources':'Publikations-, Patent- und Unternehmensquellen','questions':'Forschungsfragen','finding':'Kernaussage','zoom':'Zoom','reset':'An Breite anpassen','feedback':'Gestrichelte Linien: Rückkopplungsaufgaben','date':'Aktualisiert am 07.11.2026'},
 }
 COLORS={'P1':'#386c9c','P2':'#11857f','P3':'#9d692d','P4':'#7760a3','P5':'#a44f68','P6':'#477653','P7':'#307d91'}
 
@@ -119,7 +119,7 @@ def direction_report_page(root:Path,rid:str,public_mode=False)->None:
   st.info({'zh':'未找到对应报告。','en':'Report not found.','de':'Bericht nicht gefunden.'}[code]);return
  r=reports[rid];refs={v['id']:v for v in r['references']};accent=COLORS[r['p']]
  from .feedback_views import report_feedback
- report_feedback(rid,load_reports(str(root),'zh')[rid]['title'],'direction',root,public_mode,version='2026-11-03')
+ report_feedback(rid,load_reports(str(root),'zh')[rid]['title'],'direction',root,public_mode,version='2026-11-07')
  with preserve_original_text():
   st.button(ui['back'],on_click=return_to_direction,args=(root,rid),key='direction_report_back')
   hero=f'<div class="dr" style="--accent:{accent}"><div class="dr-hero"><div class="dr-kicker">{r["p"]} / {rid} · AM HEALTHCARE</div><h1>{html.escape(r["title"])}</h1><p class="dr-sub">{html.escape(r["subtitle"])}</p><div class="dr-date">{ui["date"]}</div><aside><h3>{ui["finding"]}</h3><p>{cited(r["thesis"],refs)}</p></aside></div>'
