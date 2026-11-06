@@ -23,6 +23,7 @@ _OVERRIDES = {
         '论文总览': 'Paper overview',
         '研究结构与趋势': 'Research structure & trends',
         '论文检索': 'Search papers',
+        '专利检索': 'Search patents',
         '学术与企业联系': 'Research & industry',
         '企业格局': 'Company landscape',
         '技术路线图': 'Technology roadmap',
@@ -76,6 +77,7 @@ _OVERRIDES = {
         '论文总览': 'Publikationsübersicht',
         '研究结构与趋势': 'Forschungsstruktur und Trends',
         '论文检索': 'Publikationen suchen',
+        '专利检索': 'Patente suchen',
         '学术与企业联系': 'Forschung und Industrie',
         '企业格局': 'Unternehmenslandschaft',
         '技术路线图': 'Technologie-Zeitachse',
@@ -881,6 +883,7 @@ _OVERRIDES['de'].update({
 })
 
 LOCALIZED_SELECTION_KEYS = (
+    'patent_applications',
     'p_layers', 'tiers', 'diseases', 'processes', 'materials', 'work_types',
     'enterprise_countries', 'enterprise_p_codes', 'enterprise_statuses',
     'enterprise_types', 'enterprise_timeline_company', 'enterprise_event_choice',

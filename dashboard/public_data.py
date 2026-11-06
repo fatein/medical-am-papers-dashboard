@@ -32,6 +32,8 @@ PUBLIC_PACKAGE_FILES = frozenset({
     'dashboard/__init__.py', 'dashboard/analytics.py', 'dashboard/charts.py',
     'dashboard/data.py', 'dashboard/filter_state.py', 'dashboard/labels.py', 'dashboard/i18n.py',
     'dashboard/public_data.py', 'dashboard/views.py',
+    'dashboard/patent_data.py', 'dashboard/patent_views.py',
+    'data/patents.jsonl.gz', 'data/patents_manifest.json',
     'dashboard/enterprise_data.py', 'dashboard/enterprise_views.py',
     'dashboard/cross_data.py', 'dashboard/cross_views.py',
     'dashboard/report_data.py', 'dashboard/report_views.py', 'dashboard/report_navigation.py',
@@ -188,6 +190,10 @@ def validate_public_package(root: Path) -> dict:
         raise ValueError(f'公开包含非白名单文件：{sorted(extra)}')
     if missing:
         raise ValueError(f'公开包缺少文件：{sorted(missing)}')
+    from dashboard.patent_data import load_patents
+    patents = load_patents(root)
+    if any(_contains_private_path(row) for row in patents.to_dict('records')):
+        raise ValueError('Patent display data contains a private file path.')
     config = (root/'.streamlit/config.toml').read_text(encoding='utf-8')
     if re.search(r'(?im)^\s*(address|port)\s*=', config):
         raise ValueError('公开包包含本机监听地址或端口。')

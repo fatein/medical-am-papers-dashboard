@@ -247,7 +247,9 @@ def test_all_enterprise_country_filters_are_translated():
 
 @pytest.mark.parametrize('code', ('en', 'de'))
 def test_timeline_company_selector_refreshes_after_language_change(code):
-    app = AppTest.from_file(str(ROOT/'app.py'), default_timeout=60).run()
+    app = AppTest.from_file(str(ROOT/'app.py'), default_timeout=60)
+    app.query_params['lang'] = 'zh'
+    app.run()
     page_picker(app).set_value('技术路线图').run()
     app.selectbox(key='enterprise_timeline_company__zh').set_value('3D-Side S.A.').run()
     app.selectbox(key='language').set_value(code).run()
