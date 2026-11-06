@@ -24,7 +24,6 @@ _OVERRIDES = {
         '研究结构与趋势': 'Research structure & trends',
         '论文检索': 'Search papers',
         '专利检索': 'Search patents',
-        '医疗应用联动': 'Linked evidence',
         '学术与企业联系': 'Research & industry',
         '企业格局': 'Company landscape',
         '技术路线图': 'Technology roadmap',
@@ -79,7 +78,6 @@ _OVERRIDES = {
         '研究结构与趋势': 'Forschungsstruktur und Trends',
         '论文检索': 'Publikationen suchen',
         '专利检索': 'Patente suchen',
-        '医疗应用联动': 'Verknüpfte Evidenz',
         '学术与企业联系': 'Forschung und Industrie',
         '企业格局': 'Unternehmenslandschaft',
         '技术路线图': 'Technologie-Zeitachse',
@@ -886,8 +884,6 @@ _OVERRIDES['de'].update({
 
 LOCALIZED_SELECTION_KEYS = (
     'patent_applications',
-    'bridge_application', 'bridge_topic', 'bridge_scope',
-    'bridge_papers_record', 'bridge_patents_record', 'bridge_companies_record',
     'p_layers', 'tiers', 'diseases', 'processes', 'materials', 'work_types',
     'enterprise_countries', 'enterprise_p_codes', 'enterprise_statuses',
     'enterprise_types', 'enterprise_timeline_company', 'enterprise_event_choice',

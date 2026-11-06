@@ -41,7 +41,6 @@ COPY = {
  'no_paper': ('暂无同一细分主题的报告论文。','No report papers share this specific topic.','Keine Berichtspublikationen mit diesem konkreten Thema.'),
  'no_company': ('暂无申请人名称对应的企业档案。','No company profiles match the applicant name.','Keine Unternehmensprofile mit passendem Anmeldernamen.'),
  'empty': ('当前报告范围内暂无匹配专利。','No matching patents in this report scope.','Keine passenden Patente in diesem Berichtsbereich.'),
- 'linked': ('联动查看本报告的论文、专利和企业 →','Explore this report’s papers, patents and companies →','Publikationen, Patente und Unternehmen dieses Berichts erkunden →'),
  'open': ('查看专利原文 ↗','View original patent ↗','Originalpatent ansehen ↗'),
  'not_available': ('未提供','Not provided','Nicht angegeben'),
  'unavailable': ('专利补充数据暂时不可用，请稍后重试。','The patent supplement is temporarily unavailable. Please try again later.','Die Patentergänzung ist vorübergehend nicht verfügbar. Bitte später erneut versuchen.'),
@@ -228,8 +227,6 @@ def patent_report_section(root,scope_id,code=None):
                         else: st.text(company['name'])
                         comparison=_comparison_text(company['technical_comparison'],code)
                         if comparison: st.caption(comparison)
-        from dashboard.bridge_views import open_bridge_context
-        st.button(text('linked',code),key=f'patent_bridge_report_{scope_id}',on_click=open_bridge_context,kwargs={'scope_id':scope_id},width='stretch')
 
 
 def _link(label,url):

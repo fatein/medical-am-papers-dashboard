@@ -118,7 +118,7 @@ def test_cleanup_preserves_source_negation_and_nonboilerplate_guidance():
     assert 'Disclosure is not clinical validation.' not in rendered
 
 @pytest.mark.parametrize('scope_id,view,param,code',[('P1-001','question-report','question','zh'),('P1-001','question-report','question','en'),('P1-01','direction-report','direction','de')])
-def test_report_chapter_opens_the_exact_scope_in_linked_browser(scope_id,view,param,code):
+def test_report_chapter_preserves_evidence_without_removed_page_button(scope_id,view,param,code):
     import json
     from streamlit.testing.v1 import AppTest
     from dashboard.bridge_data import load_bridge
@@ -141,9 +141,8 @@ def test_report_chapter_opens_the_exact_scope_in_linked_browser(scope_id,view,pa
     concise=compose_patent_supplement(data,editorial,scope_id,code)
     assert concise['editorial']['focus'] in visible
     assert concise['editorial']['academic_comparison'] in visible
-    assert app.button(key=f'patent_bridge_report_{scope_id}')
-    app.button(key=f'patent_bridge_report_{scope_id}').click().run()
-    assert not app.exception
-    assert app.radio(key=f'page__{code}').value=='医疗应用联动'
-    assert app.selectbox(key=f'bridge_scope__{code}').value==scope_id
-    assert app.metric[1].value==f'{len(data["reports"][scope_id]["patent_links"]):,}'
+    assert not any((button.key or '').startswith('patent_bridge_report_') for button in app.button)
+    assert app.radio(key=f'page__{code}').value=='学术与企业联系'
+    assert app.query_params['view']==[view]
+    assert app.query_params[param]==[scope_id]
+    assert app.get('link_button')

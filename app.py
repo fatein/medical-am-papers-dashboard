@@ -17,7 +17,6 @@ from dashboard.report_views import question_report_page
 from dashboard.direction_reports import direction_report_page
 from dashboard.feedback_views import feedback_summary
 from dashboard.patent_views import patent_filters, patent_explorer
-from dashboard.bridge_views import bridge_filters, bridge_page
 from dashboard.i18n import (LANGUAGE_OPTIONS, LOCALIZED_SELECTION_KEYS,
                             clear_localized_selection, install_streamlit_translation,
                             localized_multiselect, localized_radio, protect_names, set_language)
@@ -124,7 +123,7 @@ with st.sidebar:
                 '<div class="brand">◈ AM Research<br>学术趋势观察台</div><span class="tag">本地 · 开源 · 无订阅</span>',unsafe_allow_html=True)
     st.caption('医疗增材制造 / 论文研究项目')
     st.divider()
-    pages=['论文总览','研究结构与趋势','论文检索','学术与企业联系','医疗应用联动','专利检索','企业格局','技术路线图','企业检索','反馈汇总']
+    pages=['论文总览','研究结构与趋势','论文检索','学术与企业联系','专利检索','企业格局','技术路线图','企业检索','反馈汇总']
     if not PUBLIC_MODE: pages.append('数据更新')
     page=localized_radio(st,'浏览页面',pages,key='page',label_visibility='collapsed',on_change=clear_report_route)
     st.divider()
@@ -157,8 +156,6 @@ with st.sidebar:
         st.divider()
         filtered_companies=filter_enterprises(companies,countries=chosen_countries,p_codes=chosen_ps,
                                                query=enterprise_query,statuses=chosen_statuses)
-    elif page=='医疗应用联动':
-        bridge_graph, bridge_selection = bridge_filters(ROOT)
     elif page=='专利检索':
         patent_source, filtered_patents = patent_filters(ROOT)
     elif page=='学术与企业联系':
@@ -198,9 +195,7 @@ with st.sidebar:
             st.rerun()
         st.divider()
 
-if page=='医疗应用联动':
-    bridge_page(bridge_graph, bridge_selection)
-elif page=='专利检索':
+if page=='专利检索':
     patent_explorer(patent_source, filtered_patents)
 elif page=='反馈汇总':
     feedback_summary(ROOT,public_mode=PUBLIC_MODE)
