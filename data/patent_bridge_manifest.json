@@ -1,0 +1,1043 @@
+{
+  "schema_version": 1,
+  "method_version": "medical-object-and-question-facet-1.0",
+  "counts": {
+    "papers": 7169,
+    "patents": 5516,
+    "companies": 352,
+    "reports": 148
+  },
+  "snapshot_sha256": "3dd1d0140db2832e1da924dd8a9f45c4e5a5a3012695886babf4e7266c1b8159",
+  "strict_source_sha256": "b6d1c38d4afaf21e67b3164248a71a39c2791d53276d3c8e2b790cdbc2f87d05",
+  "public_source_sha256": {
+    "data/papers_pre2026.csv": "3b6f6b5468cf81e7058655e549cedc60aba4421738deb29c7f2e3562484506e1",
+    "data/additions.jsonl": "284a5ec71a14be0afd9d1ec6be8fd235bbf9ca728cc741d409725f3757aaa4b3",
+    "data/enterprises.csv": "8e3de3c2409f0a6a85d86db81d52e0f0457c6d6415021d8a9dedc857366aed0c",
+    "data/enterprise_events.jsonl": "18b0b97c5d14a0534d6e4f4b10236c27ff1b80a6a82825e2a42d7bfcaa69c3e8",
+    "data/enterprise_observations.jsonl": "79a74f2044cb7c1918fe257579070a4b2443eb1b7388974b5c23a0aaa7ea2b47",
+    "data/cross_analysis.json": "bd6951d84072d5588a1b1ce79a5cc1bf2b200f0c9dcf09012ad94b3413200759",
+    "data/patents.jsonl.gz": "ef001d41e827146c76314920108db1f2070f67e5462223ec4c5e65564a0e1d82",
+    "data/patents_manifest.json": "92f362179d3a2c10ad5c2607ce1f8c0536a7f4f00080f18aef3d70b6fd0f15d7",
+    "data/direction_reports/zh.json": "6d89bc971078c0caa9e95123afd19d6c7a7bb700867150cdfc492087153c70eb",
+    "data/direction_reports/en.json": "1ea2d253d5e10a6769789eb890eb30ee6ff492efd952a903748bfe46c2094a1a",
+    "data/direction_reports/de.json": "41c5dc72569c02a972a4a04413ac1a6d7cacc8f5958b4208d0e3ce896a319b05",
+    "data/academic_questions/P1-001.json": "786950d8cd55271705db0d9116b1cf1ae030f436b08821ca1c33a14b841a3bdb",
+    "data/academic_questions/P1-002.json": "26a087bdc4ecbf0a8fde437dc9ad4d2826c95633ab851d3f71068111d2554daf",
+    "data/academic_questions/P1-003.json": "585c74d87c98c04c41b4d8c02a246ca403cd8ade1d9037fcd4819b6c80a75a6c",
+    "data/academic_questions/P1-004.json": "62a0def458e68bd6d93152b8725ed0f02167baccee75d915adf179207ce24d58",
+    "data/academic_questions/P1-005.json": "15ed66db96cfbeec4b9fadbbc4843e8db65216249a4ba825ca69a6b9ec97c48d",
+    "data/academic_questions/P1-006.json": "857a58e981d2d4e5adfcb4b7f5904ad89fdaea4dce45a6cc16a0dd25edc144ed",
+    "data/academic_questions/P1-007.json": "3e3d980284d6795b873056209959fd73c8a6ddc11606868e91a0ba9730ec550a",
+    "data/academic_questions/P1-008.json": "454c86742f491831b4604c4abb7795390240a6183052b6846e92ebc36d5909ae",
+    "data/academic_questions/P1-009.json": "3ad85584162eb9c3b9915c5acf276576747a11f0ae609ed3b07f2d2c2be387b6",
+    "data/academic_questions/P1-010.json": "12b28ec6a85bf904f9cf1e85b03024beeb51123054830872d83a6d2c88024932",
+    "data/academic_questions/P1-011.json": "2bdb803df5c61be0b2014829b503692209f5e9543871454b76d04a491d971ec8",
+    "data/academic_questions/P1-012.json": "3e1334c2808c04192a27782e60e0b7dbe12cd626d0573281a9b096887ce0f5a0",
+    "data/academic_questions/P1-013.json": "bd496e26fd4d8af468b65d046198f5ba52699dc944358e5d09f3ef71b1d64195",
+    "data/academic_questions/P1-014.json": "4abd9a0a7957baaf9519d676a18c30b80e9a20d6f4fc03cea7c3feafcc8b3134",
+    "data/academic_questions/P1-015.json": "12d652439ad9d90e804a08f085c4af035e42ff96cee40e2149e8b58652bff16c",
+    "data/academic_questions/P2-016.json": "1a7b7df9506e2fe9962b8625cf3b6fb10bda6c0c25a91c23c3816f7bab1a0bb1",
+    "data/academic_questions/P2-017.json": "f18c1d4bc47de149df0a70b0510907edebe61806f3b089b9f9080de5cacf4a89",
+    "data/academic_questions/P2-018.json": "b34de29f9d2ed650a9a42b1760fc5d6b1eb39a5a19f5c48a7c33fa8b8b793381",
+    "data/academic_questions/P2-019.json": "14db263cf1f95be031789fbaa45c336626733a341db729c70441a78ebf622ff1",
+    "data/academic_questions/P2-020.json": "289aa39b0b1a63a0a690aeb70b3d54b7149c614cf3c5790812872649e5152e81",
+    "data/academic_questions/P2-021.json": "09dfef140c3a7deace7d00e5554c7ab330fc0b5ed8b53ecf8889a8fbe28af257",
+    "data/academic_questions/P2-022.json": "843d002840a18be48a9f67ca137d5eef18b051a3d625b2b029c077f169223bdd",
+    "data/academic_questions/P2-023.json": "f968752e4acd060a517be73ae3c583148632c2ea8f687a09dbe858af63fec07f",
+    "data/academic_questions/P2-024.json": "a7471e9b841dc871688484bcfee56305612a019e9a3c8b6ca9a2bc270a7e49a7",
+    "data/academic_questions/P2-025.json": "6a0bac94e92bd2056097f0f507b3d4939fefc029728c0fdb8c6be8cfe11b9836",
+    "data/academic_questions/P2-026.json": "c2dc348e5f22ea3d5a1b06d29fa2bd66ed141805fffaf6333a31489a85403311",
+    "data/academic_questions/P2-027.json": "31cf0534eef32327586d5806934b4b7a762d29f17fe33ba42aaee79309df8728",
+    "data/academic_questions/P2-028.json": "5657ae654ceb2bbdf733673d34599f3e07ca36fcf35967f25a1fbdf9024b2d5d",
+    "data/academic_questions/P2-029.json": "847f7300815874f29d9d9d59292a63f8f31cbfc2c54c4f337633f30b2d5b4751",
+    "data/academic_questions/P2-030.json": "eaba2a96561e1639e5e762d399aa52b55abefd5b5b5cd57033b6f82cacea24bd",
+    "data/academic_questions/P2-031.json": "99b898a427040a74769429882d9d8518a4bf629b91873ca37e3a39a279909158",
+    "data/academic_questions/P2-032.json": "a483db0ab1e51ca0a7bbb1701a8680584f2ff88093beee537064f35df9d61afe",
+    "data/academic_questions/P2-033.json": "9319f57eb02d1bec0dd199e8e02626e658818cda47b631c718ab3e1e847955c0",
+    "data/academic_questions/P2-034.json": "eafb752c91408221a3cbbad923ebbd5ccf95eaf8dbca07f0c1d3b00a7f22076a",
+    "data/academic_questions/P2-035.json": "85c958f49aafa7e595eca4652f93c8b512016ff541cc8038bbe3737719b84259",
+    "data/academic_questions/P2-036.json": "7cc9b82f95fa981606fe1e1318e91ac03d5cb5706ee5c5bad399d9a4c761c573",
+    "data/academic_questions/P2-037.json": "1abd636326a61c840be1f03bcb15b03c4978e3d557a3a680cc2a0b764ac775e8",
+    "data/academic_questions/P2-038.json": "31682eddb14a6baab7cda14e8b577bb0ad44ceaa964d0bdafd80e360867d8f95",
+    "data/academic_questions/P3-039.json": "dfc4783dd2d6f5330a4f86f5236d0f4d0448afd4eb78e71ac98f546ffece73c1",
+    "data/academic_questions/P3-040.json": "55528b7b9786fec854538268211903f0e18313910d3d0d32b921f89c63d565cd",
+    "data/academic_questions/P3-041.json": "0c2fea4c2c8d987964e2c714c6986c0cdc050b4033df20f3a9849b083645237d",
+    "data/academic_questions/P3-042.json": "a157dadc4b6623741557089c8b72cacb14624177b53466cba1709d0f17761156",
+    "data/academic_questions/P3-043.json": "225b4b4a5e259820dece85f3f4c7ad51597697b6b2f6fd70766346c6b660f1b6",
+    "data/academic_questions/P3-044.json": "d00f54550d17784c019175bd6eef443cd28e9068e12fcc0272d7d9da43c4225e",
+    "data/academic_questions/P3-045.json": "f44bc32c9d43cf174bc55915f4996f838471e42e06febbcab02a09926d2137c6",
+    "data/academic_questions/P3-046.json": "fe5ce735527fa1b45e421da256e54da004123619ec8b6a163899b4ac64089167",
+    "data/academic_questions/P3-047.json": "6e8188d2e844d3ad661cbd2f4b884d97f76e09a1e0a73b54146da4ac075b4ec7",
+    "data/academic_questions/P3-048.json": "fa9e2914485725540ecace3403881f737457e1ee9416a5c923335dba9fa9f4d1",
+    "data/academic_questions/P3-049.json": "941852c08b621e357d0bfe3849dc407351b6b584fa9e2a14a1872e540381dd21",
+    "data/academic_questions/P3-050.json": "d4fc05380620d761d5e31386a06f74b12305ef9b2e9e7d83e1aec65980d48d7e",
+    "data/academic_questions/P3-051.json": "b29cc2a799cb3f260d23ad4b3c50139d150e32a840d0ef4bcaee1cd39139c56c",
+    "data/academic_questions/P3-052.json": "5068f395026fb8559eb997c2930f7170be10321a728c82d80b6339f17ad556cb",
+    "data/academic_questions/P3-053.json": "ee1bc3f22def55dbe6266f3b76a50eb47d537c229023a5bdda223274cdcabb8e",
+    "data/academic_questions/P3-054.json": "050e2c67d91201877b36d94072df10eb79867410b44b9885735a2826ec4ddc4e",
+    "data/academic_questions/P3-055.json": "3221f58e5c7b368c976b1c4532c61bc1efb1fc212d26c1999129df846246152a",
+    "data/academic_questions/P3-056.json": "364e485aefb615491eae8a790b8c17b45d1cfb2f914ffa354f76309f31342a57",
+    "data/academic_questions/P3-057.json": "96f47ae06fdc3baf0db19e4e425599ef405b9a7350c5f82ff0ae5c5c6ae33762",
+    "data/academic_questions/P3-058.json": "929bcc8c4b290749bd985402ad1699004db22088a54fc1698d84289630197c74",
+    "data/academic_questions/P3-059.json": "5e8b72af9852129e99c5b7db6f2c115f7024999c530c0cb10b388b2b04b0c688",
+    "data/academic_questions/P3-060.json": "456f07284ec0f046176dee69aa53331ae726ce88f8c4991ae0f0bc94d875cdfb",
+    "data/academic_questions/P4-061.json": "80634832e3a3c64bdd8fba87b2b933fcc1b2004188f61e825e1f59fec1e2aa81",
+    "data/academic_questions/P4-062.json": "6ec5d53dc5430a09b3565151b723af67ea1ed45b7b73a8f47bd01efa81df4515",
+    "data/academic_questions/P4-063.json": "7aa108a911665226ab3681f377bc3eb9d761c55983c06f0392a083fcc569b444",
+    "data/academic_questions/P4-064.json": "ab71517cc71405a867225ab15b245438b9beda25985f33e4e6eb5e45c563d043",
+    "data/academic_questions/P4-065.json": "4b64048f5a24277558dd0fe61fa3051b34ca1e6a1e1b03db533df7358641ee5c",
+    "data/academic_questions/P4-066.json": "133c9a15c8c7d92fe1a0d269d39174c7790b92cad0dbf824546e1e195f7ff50b",
+    "data/academic_questions/P4-067.json": "6d09feb3d79e6c8f52afe2eb9c5d9d7c97cbd68a0c39e72cfb5e596938a84f59",
+    "data/academic_questions/P4-068.json": "42588979891beea2ed125b16c03e7ac4a8c7a4646a1c80e9503f327df4e9dc7f",
+    "data/academic_questions/P4-069.json": "6b8d913f946a0372cf1fe64adcfca2eb9a3fd1bfb4ea9fd2e87c33062b23c680",
+    "data/academic_questions/P4-070.json": "8e014e26fa893e81e49deb8be2c8e04e60543d7150ba57f9a885f50b43335903",
+    "data/academic_questions/P4-071.json": "4c8fa0d2667eb0d21857724f1353dc77d4ee4756d3d4c4b69cf7fa6c3883c655",
+    "data/academic_questions/P4-072.json": "bbc8fffdf19c06d74a06ec3bc6e1c6f35b35569df35c97c7df632eb7fad9df90",
+    "data/academic_questions/P4-073.json": "23f2e08a1e109f7d343803d70a8cb34ec9d4baa7eedea29cd21193976064cc51",
+    "data/academic_questions/P4-074.json": "aac7453ff285899810da2ddd3582a569a1d3ef6d4507f25e1cf1ff615ab0419c",
+    "data/academic_questions/P4-075.json": "4ed47dbeffe3aa77a7d99597950598f3bac7b49e6ff399df1d5cc9c9a88d8569",
+    "data/academic_questions/P5-076.json": "064cfe9e6951ed523afe24c95965dc808b463a06b2e63086d78b46b0393d58ae",
+    "data/academic_questions/P5-077.json": "ca56c2db5777a94a42b1d00651d609bd4554902e625b17839b29ad879133ca87",
+    "data/academic_questions/P5-078.json": "e10bfb45975a68c305c958b6c710568b4b7df11dd33d26af30128391e1a96ff3",
+    "data/academic_questions/P5-079.json": "48d095e3c5b0ad9985f8db3a1f8f9b169370775a16fdb6fc801a1bc134ae8c9d",
+    "data/academic_questions/P5-080.json": "90b1a711bc9a249d1526192156396c8abcf88e6807496befd184a15172f80e79",
+    "data/academic_questions/P5-081.json": "b830086338859a39904d4208b8a57d09340ff224ff7bfa79ad14536a6f0fb180",
+    "data/academic_questions/P5-082.json": "c53c48cb5cf0e48858e9cab5f505b8898b54590d8fdbb38307fedefcfe6809d3",
+    "data/academic_questions/P5-083.json": "28bf91ea422f7211a80ba7e79f4c04d73dc8e3750694cf8a05c8e3613325c3b3",
+    "data/academic_questions/P5-084.json": "f5c228b7d2bd56e1611bd1355ffa3a90f35a5c38af9202ef2257e6cbb0f0f60f",
+    "data/academic_questions/P5-085.json": "216c8c87ed0ff64b41ef70470cbddf47db43ff88551b2692b21a026d90edd37d",
+    "data/academic_questions/P6-086.json": "8e1e8ffcf8ba939b21a42d797a3407da40f69a7bfa8469d68f84873679bb6f0b",
+    "data/academic_questions/P6-087.json": "05fec282148924270702e5822c3ff25b01b493bcd0720546c12baba97c4b50d9",
+    "data/academic_questions/P6-088.json": "35d08c2eb01892b63d65d282358616415331b95b779fc6b8230942332433fd41",
+    "data/academic_questions/P6-089.json": "7c6e2cef75fa23cec852bbd57ce64cbe131592a6a3cdc378bdfc015b79a31faa",
+    "data/academic_questions/P6-090.json": "d3b07f7a64c4f87c73fc3ce2cfd590a19fd087a9be2163122e9fbc430f2208ef",
+    "data/academic_questions/P6-091.json": "acc955cd1919109d476148a1a5b9ea5a0a33bb5919761aad1c5f8935378f06a3",
+    "data/academic_questions/P6-092.json": "75e8867bd50f92a9beef9bba5a45bcc5d8978645cdbb4b1250b4db6c26d44fde",
+    "data/academic_questions/P6-093.json": "62e0a8c5d3942340c46e082e15e00dca312e485e773fb9eca810580824754d53",
+    "data/academic_questions/P6-094.json": "f4d0aa51a865d5d04e3bfd7fe7da6c27165ddfeec519684b3a53460dd179de38",
+    "data/academic_questions/P6-095.json": "04849e935adcfe437068e3b84afe7e077b69796714753fbdba9f58a6fe9a96c4",
+    "data/academic_questions/P6-096.json": "4300fb08d0c1af0495c0f9eac8142487863926f5c274d317b4ea3024bae3d734",
+    "data/academic_questions/P6-097.json": "f6d53255767ef05442df8eefebf0079025b2dfa9cc138861feceb1c75f942cc1",
+    "data/academic_questions/P7-098.json": "2b863642686cc4ab9a60f01273137cbabe051a2f709086faac3181c5bf76f9bd",
+    "data/academic_questions/P7-099.json": "f7cc9e772cf22bd20231b63d088cc6582308fe8935ff4fc9b710cfa8907a3a75",
+    "data/academic_questions/P7-100.json": "0c8a86c04f0a72d69ac73b6697c941561ce0aaed1bcf0f905373117ae313c5cd",
+    "data/academic_questions/P7-101.json": "c96b47fb22e3352de85cf4ad967c5ec372c68a45b185002f89ac655f0c29f733",
+    "data/academic_questions/P7-102.json": "a597f7c104e98f9ad503473dce8e23144bb302d75730169b69f6366d829450ed",
+    "data/academic_questions/P7-103.json": "837ed92eccf30c23eab56fc080d71243081850bee2ac6cd74a7fae5607beaccc",
+    "data/academic_questions/P7-104.json": "f283baee0ac132f8667cad6f4db320a20c1ee8770b1ce8a235b9908d3b7f2303",
+    "data/academic_questions/P7-105.json": "a43bf3e9d406af669cde1c59531bffbf7be099ca654030b13e807e9fde8ef569",
+    "data/academic_questions/P7-106.json": "feb2f72384475efb6c41330f730e56ba0111494e074e951b04a5b2dc70dc4091",
+    "data/academic_questions/P7-107.json": "33d1254b52a8df76a936b6de392c864b243589e5a6f1d80949c9212179238d9d",
+    "data/academic_questions/P7-108.json": "5000bbcf35c5b73a3b252965a11fb2e9d8739370d120b7edecf0b80ed308e059",
+    "data/academic_questions/P7-109.json": "936beb1b540b3a12e0acca07b2bd21f7fa4a3f97bf94be3ce6c702ad67364963",
+    "data/academic_questions/P7-110.json": "03dcf67b9dc66b3d675d42bb70d1ed09d7d5e9302fc9f47d918fb9cc45895336",
+    "data/academic_questions/P7-111.json": "06f5dc99a5ae5245a92e75d4f61c1d14057b4678526ed2660c3abbd2cb9a39c1",
+    "data/academic_questions/P7-112.json": "b926f24a6425c413b246c143c2e220f9536cc5d0a293a54691d775bc7d2322e0",
+    "data/academic_questions/P7-113.json": "2d5b383c793dec3eaef5f7d8196f1f587f69a0cccb9a0e40070e14ef566e04ce"
+  },
+  "source_hash_normalization": "newline-lf-v1",
+  "topic_count": 41,
+  "applicant_name_links": 226,
+  "excluded_nonmedical_context": 1,
+  "applicant_matched_companies": 40,
+  "topic_matched": {
+    "papers": 4831,
+    "patents": 2726,
+    "companies": 235
+  },
+  "reports_with_patents": 138,
+  "coverage": {
+    "P1-001": {
+      "patents": 229,
+      "families": 212,
+      "papers": 36,
+      "companies": 4
+    },
+    "P1-002": {
+      "patents": 145,
+      "families": 130,
+      "papers": 4,
+      "companies": 4
+    },
+    "P1-003": {
+      "patents": 79,
+      "families": 70,
+      "papers": 4,
+      "companies": 2
+    },
+    "P1-004": {
+      "patents": 29,
+      "families": 22,
+      "papers": 4,
+      "companies": 2
+    },
+    "P1-005": {
+      "patents": 114,
+      "families": 95,
+      "papers": 3,
+      "companies": 5
+    },
+    "P1-006": {
+      "patents": 108,
+      "families": 90,
+      "papers": 3,
+      "companies": 4
+    },
+    "P1-007": {
+      "patents": 165,
+      "families": 150,
+      "papers": 4,
+      "companies": 3
+    },
+    "P1-008": {
+      "patents": 60,
+      "families": 52,
+      "papers": 4,
+      "companies": 1
+    },
+    "P1-009": {
+      "patents": 43,
+      "families": 42,
+      "papers": 3,
+      "companies": 0
+    },
+    "P1-010": {
+      "patents": 7,
+      "families": 7,
+      "papers": 5,
+      "companies": 1
+    },
+    "P1-011": {
+      "patents": 80,
+      "families": 63,
+      "papers": 4,
+      "companies": 2
+    },
+    "P1-012": {
+      "patents": 60,
+      "families": 58,
+      "papers": 4,
+      "companies": 2
+    },
+    "P1-013": {
+      "patents": 252,
+      "families": 244,
+      "papers": 4,
+      "companies": 3
+    },
+    "P1-014": {
+      "patents": 124,
+      "families": 122,
+      "papers": 3,
+      "companies": 1
+    },
+    "P1-015": {
+      "patents": 317,
+      "families": 307,
+      "papers": 3,
+      "companies": 1
+    },
+    "P2-016": {
+      "patents": 24,
+      "families": 24,
+      "papers": 4,
+      "companies": 2
+    },
+    "P2-017": {
+      "patents": 262,
+      "families": 236,
+      "papers": 5,
+      "companies": 8
+    },
+    "P2-018": {
+      "patents": 19,
+      "families": 18,
+      "papers": 4,
+      "companies": 2
+    },
+    "P2-019": {
+      "patents": 71,
+      "families": 56,
+      "papers": 6,
+      "companies": 2
+    },
+    "P2-020": {
+      "patents": 89,
+      "families": 78,
+      "papers": 5,
+      "companies": 5
+    },
+    "P2-021": {
+      "patents": 9,
+      "families": 9,
+      "papers": 7,
+      "companies": 1
+    },
+    "P2-022": {
+      "patents": 8,
+      "families": 7,
+      "papers": 4,
+      "companies": 3
+    },
+    "P2-023": {
+      "patents": 54,
+      "families": 49,
+      "papers": 6,
+      "companies": 3
+    },
+    "P2-024": {
+      "patents": 31,
+      "families": 31,
+      "papers": 5,
+      "companies": 4
+    },
+    "P2-025": {
+      "patents": 57,
+      "families": 53,
+      "papers": 5,
+      "companies": 5
+    },
+    "P2-026": {
+      "patents": 18,
+      "families": 15,
+      "papers": 4,
+      "companies": 3
+    },
+    "P2-027": {
+      "patents": 8,
+      "families": 7,
+      "papers": 1,
+      "companies": 2
+    },
+    "P2-028": {
+      "patents": 6,
+      "families": 6,
+      "papers": 2,
+      "companies": 2
+    },
+    "P2-029": {
+      "patents": 55,
+      "families": 53,
+      "papers": 2,
+      "companies": 2
+    },
+    "P2-030": {
+      "patents": 13,
+      "families": 13,
+      "papers": 72,
+      "companies": 1
+    },
+    "P2-031": {
+      "patents": 275,
+      "families": 254,
+      "papers": 25,
+      "companies": 7
+    },
+    "P2-032": {
+      "patents": 16,
+      "families": 13,
+      "papers": 26,
+      "companies": 1
+    },
+    "P2-033": {
+      "patents": 7,
+      "families": 7,
+      "papers": 15,
+      "companies": 0
+    },
+    "P2-034": {
+      "patents": 19,
+      "families": 16,
+      "papers": 22,
+      "companies": 0
+    },
+    "P2-035": {
+      "patents": 33,
+      "families": 30,
+      "papers": 87,
+      "companies": 1
+    },
+    "P2-036": {
+      "patents": 35,
+      "families": 29,
+      "papers": 62,
+      "companies": 1
+    },
+    "P2-037": {
+      "patents": 35,
+      "families": 26,
+      "papers": 20,
+      "companies": 1
+    },
+    "P2-038": {
+      "patents": 17,
+      "families": 16,
+      "papers": 41,
+      "companies": 1
+    },
+    "P3-039": {
+      "patents": 23,
+      "families": 13,
+      "papers": 3,
+      "companies": 3
+    },
+    "P3-040": {
+      "patents": 25,
+      "families": 25,
+      "papers": 3,
+      "companies": 1
+    },
+    "P3-041": {
+      "patents": 4,
+      "families": 4,
+      "papers": 4,
+      "companies": 1
+    },
+    "P3-042": {
+      "patents": 1,
+      "families": 1,
+      "papers": 4,
+      "companies": 1
+    },
+    "P3-043": {
+      "patents": 17,
+      "families": 9,
+      "papers": 4,
+      "companies": 1
+    },
+    "P3-044": {
+      "patents": 65,
+      "families": 60,
+      "papers": 3,
+      "companies": 1
+    },
+    "P3-045": {
+      "patents": 19,
+      "families": 17,
+      "papers": 3,
+      "companies": 1
+    },
+    "P3-046": {
+      "patents": 41,
+      "families": 38,
+      "papers": 3,
+      "companies": 1
+    },
+    "P3-047": {
+      "patents": 17,
+      "families": 17,
+      "papers": 4,
+      "companies": 1
+    },
+    "P3-048": {
+      "patents": 1,
+      "families": 1,
+      "papers": 2,
+      "companies": 1
+    },
+    "P3-049": {
+      "patents": 12,
+      "families": 10,
+      "papers": 3,
+      "companies": 3
+    },
+    "P3-050": {
+      "patents": 8,
+      "families": 8,
+      "papers": 3,
+      "companies": 1
+    },
+    "P3-051": {
+      "patents": 7,
+      "families": 6,
+      "papers": 3,
+      "companies": 1
+    },
+    "P3-052": {
+      "patents": 15,
+      "families": 13,
+      "papers": 3,
+      "companies": 1
+    },
+    "P3-053": {
+      "patents": 9,
+      "families": 7,
+      "papers": 4,
+      "companies": 1
+    },
+    "P3-054": {
+      "patents": 81,
+      "families": 65,
+      "papers": 3,
+      "companies": 0
+    },
+    "P3-055": {
+      "patents": 63,
+      "families": 60,
+      "papers": 2,
+      "companies": 1
+    },
+    "P3-056": {
+      "patents": 46,
+      "families": 37,
+      "papers": 3,
+      "companies": 0
+    },
+    "P3-057": {
+      "patents": 2,
+      "families": 2,
+      "papers": 1,
+      "companies": 0
+    },
+    "P3-058": {
+      "patents": 18,
+      "families": 9,
+      "papers": 2,
+      "companies": 2
+    },
+    "P3-059": {
+      "patents": 0,
+      "families": 0,
+      "papers": 2,
+      "companies": 2
+    },
+    "P3-060": {
+      "patents": 10,
+      "families": 6,
+      "papers": 1,
+      "companies": 1
+    },
+    "P4-061": {
+      "patents": 69,
+      "families": 69,
+      "papers": 28,
+      "companies": 1
+    },
+    "P4-062": {
+      "patents": 38,
+      "families": 37,
+      "papers": 67,
+      "companies": 3
+    },
+    "P4-063": {
+      "patents": 25,
+      "families": 25,
+      "papers": 16,
+      "companies": 1
+    },
+    "P4-064": {
+      "patents": 64,
+      "families": 62,
+      "papers": 13,
+      "companies": 2
+    },
+    "P4-065": {
+      "patents": 176,
+      "families": 173,
+      "papers": 6,
+      "companies": 3
+    },
+    "P4-066": {
+      "patents": 25,
+      "families": 23,
+      "papers": 6,
+      "companies": 2
+    },
+    "P4-067": {
+      "patents": 65,
+      "families": 62,
+      "papers": 1,
+      "companies": 1
+    },
+    "P4-068": {
+      "patents": 8,
+      "families": 6,
+      "papers": 3,
+      "companies": 1
+    },
+    "P4-069": {
+      "patents": 66,
+      "families": 66,
+      "papers": 2,
+      "companies": 3
+    },
+    "P4-070": {
+      "patents": 14,
+      "families": 14,
+      "papers": 1,
+      "companies": 1
+    },
+    "P4-071": {
+      "patents": 198,
+      "families": 195,
+      "papers": 4,
+      "companies": 2
+    },
+    "P4-072": {
+      "patents": 191,
+      "families": 185,
+      "papers": 4,
+      "companies": 3
+    },
+    "P4-073": {
+      "patents": 33,
+      "families": 32,
+      "papers": 4,
+      "companies": 3
+    },
+    "P4-074": {
+      "patents": 5,
+      "families": 4,
+      "papers": 1,
+      "companies": 2
+    },
+    "P4-075": {
+      "patents": 7,
+      "families": 6,
+      "papers": 1,
+      "companies": 1
+    },
+    "P5-076": {
+      "patents": 0,
+      "families": 0,
+      "papers": 4,
+      "companies": 1
+    },
+    "P5-077": {
+      "patents": 0,
+      "families": 0,
+      "papers": 4,
+      "companies": 1
+    },
+    "P5-078": {
+      "patents": 1,
+      "families": 1,
+      "papers": 3,
+      "companies": 1
+    },
+    "P5-079": {
+      "patents": 0,
+      "families": 0,
+      "papers": 1,
+      "companies": 1
+    },
+    "P5-080": {
+      "patents": 0,
+      "families": 0,
+      "papers": 2,
+      "companies": 2
+    },
+    "P5-081": {
+      "patents": 0,
+      "families": 0,
+      "papers": 2,
+      "companies": 2
+    },
+    "P5-082": {
+      "patents": 5,
+      "families": 5,
+      "papers": 1,
+      "companies": 2
+    },
+    "P5-083": {
+      "patents": 3,
+      "families": 3,
+      "papers": 43,
+      "companies": 1
+    },
+    "P5-084": {
+      "patents": 3,
+      "families": 3,
+      "papers": 1,
+      "companies": 2
+    },
+    "P5-085": {
+      "patents": 0,
+      "families": 0,
+      "papers": 3,
+      "companies": 1
+    },
+    "P6-086": {
+      "patents": 14,
+      "families": 11,
+      "papers": 3,
+      "companies": 2
+    },
+    "P6-087": {
+      "patents": 3,
+      "families": 2,
+      "papers": 2,
+      "companies": 1
+    },
+    "P6-088": {
+      "patents": 1,
+      "families": 1,
+      "papers": 1,
+      "companies": 2
+    },
+    "P6-089": {
+      "patents": 3,
+      "families": 3,
+      "papers": 4,
+      "companies": 1
+    },
+    "P6-090": {
+      "patents": 12,
+      "families": 11,
+      "papers": 2,
+      "companies": 1
+    },
+    "P6-091": {
+      "patents": 7,
+      "families": 7,
+      "papers": 4,
+      "companies": 1
+    },
+    "P6-092": {
+      "patents": 30,
+      "families": 28,
+      "papers": 2,
+      "companies": 2
+    },
+    "P6-093": {
+      "patents": 41,
+      "families": 38,
+      "papers": 2,
+      "companies": 2
+    },
+    "P6-094": {
+      "patents": 34,
+      "families": 30,
+      "papers": 3,
+      "companies": 2
+    },
+    "P6-095": {
+      "patents": 3,
+      "families": 3,
+      "papers": 3,
+      "companies": 0
+    },
+    "P6-096": {
+      "patents": 2,
+      "families": 2,
+      "papers": 3,
+      "companies": 0
+    },
+    "P6-097": {
+      "patents": 2,
+      "families": 2,
+      "papers": 4,
+      "companies": 0
+    },
+    "P7-098": {
+      "patents": 14,
+      "families": 13,
+      "papers": 3,
+      "companies": 1
+    },
+    "P7-099": {
+      "patents": 5,
+      "families": 5,
+      "papers": 2,
+      "companies": 1
+    },
+    "P7-100": {
+      "patents": 12,
+      "families": 12,
+      "papers": 2,
+      "companies": 1
+    },
+    "P7-101": {
+      "patents": 1,
+      "families": 1,
+      "papers": 1,
+      "companies": 1
+    },
+    "P7-102": {
+      "patents": 111,
+      "families": 101,
+      "papers": 4,
+      "companies": 3
+    },
+    "P7-103": {
+      "patents": 43,
+      "families": 37,
+      "papers": 3,
+      "companies": 2
+    },
+    "P7-104": {
+      "patents": 43,
+      "families": 41,
+      "papers": 3,
+      "companies": 3
+    },
+    "P7-105": {
+      "patents": 1,
+      "families": 1,
+      "papers": 1,
+      "companies": 0
+    },
+    "P7-106": {
+      "patents": 2,
+      "families": 2,
+      "papers": 2,
+      "companies": 1
+    },
+    "P7-107": {
+      "patents": 1,
+      "families": 1,
+      "papers": 3,
+      "companies": 0
+    },
+    "P7-108": {
+      "patents": 0,
+      "families": 0,
+      "papers": 2,
+      "companies": 1
+    },
+    "P7-109": {
+      "patents": 3,
+      "families": 3,
+      "papers": 4,
+      "companies": 1
+    },
+    "P7-110": {
+      "patents": 1,
+      "families": 1,
+      "papers": 2,
+      "companies": 1
+    },
+    "P7-111": {
+      "patents": 1,
+      "families": 1,
+      "papers": 1,
+      "companies": 0
+    },
+    "P7-112": {
+      "patents": 1,
+      "families": 1,
+      "papers": 2,
+      "companies": 1
+    },
+    "P7-113": {
+      "patents": 0,
+      "families": 0,
+      "papers": 0,
+      "companies": 0
+    },
+    "P1-01": {
+      "patents": 437,
+      "families": 394,
+      "papers": 44,
+      "companies": 6
+    },
+    "P1-02": {
+      "patents": 211,
+      "families": 173,
+      "papers": 10,
+      "companies": 7
+    },
+    "P1-03": {
+      "patents": 362,
+      "families": 334,
+      "papers": 10,
+      "companies": 4
+    },
+    "P1-04": {
+      "patents": 145,
+      "families": 126,
+      "papers": 12,
+      "companies": 5
+    },
+    "P1-05": {
+      "patents": 415,
+      "families": 399,
+      "papers": 10,
+      "companies": 3
+    },
+    "P2-01": {
+      "patents": 287,
+      "families": 260,
+      "papers": 13,
+      "companies": 9
+    },
+    "P2-02": {
+      "patents": 115,
+      "families": 98,
+      "papers": 18,
+      "companies": 6
+    },
+    "P2-03": {
+      "patents": 146,
+      "families": 137,
+      "papers": 16,
+      "companies": 8
+    },
+    "P2-04": {
+      "patents": 20,
+      "families": 17,
+      "papers": 7,
+      "companies": 4
+    },
+    "P2-05": {
+      "patents": 278,
+      "families": 257,
+      "papers": 94,
+      "companies": 9
+    },
+    "P2-06": {
+      "patents": 25,
+      "families": 21,
+      "papers": 41,
+      "companies": 1
+    },
+    "P2-07": {
+      "patents": 114,
+      "families": 101,
+      "papers": 207,
+      "companies": 3
+    },
+    "P3-01": {
+      "patents": 118,
+      "families": 95,
+      "papers": 17,
+      "companies": 4
+    },
+    "P3-02": {
+      "patents": 116,
+      "families": 106,
+      "papers": 13,
+      "companies": 2
+    },
+    "P3-03": {
+      "patents": 19,
+      "families": 17,
+      "papers": 8,
+      "companies": 3
+    },
+    "P3-04": {
+      "patents": 18,
+      "families": 15,
+      "papers": 8,
+      "companies": 1
+    },
+    "P3-05": {
+      "patents": 153,
+      "families": 134,
+      "papers": 9,
+      "companies": 1
+    },
+    "P3-06": {
+      "patents": 20,
+      "families": 11,
+      "papers": 5,
+      "companies": 2
+    },
+    "P4-01": {
+      "patents": 121,
+      "families": 120,
+      "papers": 111,
+      "companies": 5
+    },
+    "P4-02": {
+      "patents": 200,
+      "families": 196,
+      "papers": 24,
+      "companies": 4
+    },
+    "P4-03": {
+      "patents": 118,
+      "families": 114,
+      "papers": 6,
+      "companies": 3
+    },
+    "P4-04": {
+      "patents": 257,
+      "families": 251,
+      "papers": 9,
+      "companies": 3
+    },
+    "P4-05": {
+      "patents": 43,
+      "families": 41,
+      "papers": 6,
+      "companies": 4
+    },
+    "P5-01": {
+      "patents": 1,
+      "families": 1,
+      "papers": 11,
+      "companies": 2
+    },
+    "P5-02": {
+      "patents": 0,
+      "families": 0,
+      "papers": 4,
+      "companies": 2
+    },
+    "P5-03": {
+      "patents": 5,
+      "families": 5,
+      "papers": 47,
+      "companies": 3
+    },
+    "P6-01": {
+      "patents": 14,
+      "families": 11,
+      "papers": 5,
+      "companies": 3
+    },
+    "P6-02": {
+      "patents": 14,
+      "families": 13,
+      "papers": 6,
+      "companies": 1
+    },
+    "P6-03": {
+      "patents": 62,
+      "families": 57,
+      "papers": 7,
+      "companies": 3
+    },
+    "P6-04": {
+      "patents": 4,
+      "families": 4,
+      "papers": 6,
+      "companies": 0
+    },
+    "P7-01": {
+      "patents": 19,
+      "families": 18,
+      "papers": 8,
+      "companies": 1
+    },
+    "P7-02": {
+      "patents": 119,
+      "families": 109,
+      "papers": 10,
+      "companies": 3
+    },
+    "P7-03": {
+      "patents": 2,
+      "families": 2,
+      "papers": 5,
+      "companies": 1
+    },
+    "P7-04": {
+      "patents": 5,
+      "families": 5,
+      "papers": 8,
+      "companies": 1
+    },
+    "P7-05": {
+      "patents": 1,
+      "families": 1,
+      "papers": 3,
+      "companies": 1
+    }
+  },
+  "full_text_included": false,
+  "excerpt_character_limit": 360,
+  "rules_sha256": "6221073fa9b06b4bfb5f69382a45d072b9fef1015d16be74b7bfbc81f9040fca",
+  "technical_features_sha256": "f116f9c9199f417e915003bafc6f7bd4d2f11c5059a042befb6c449251bb16f8"
+}

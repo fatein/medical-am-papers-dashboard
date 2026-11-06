@@ -63,3 +63,10 @@ def test_patent_locale_switch_keeps_filter_and_original_metadata():
         ident = app.selectbox(key='patent_record').value
         original = load_patents(ROOT).set_index('publication_id').loc[ident]
         assert any(value.value == original.title for value in app.subheader)
+
+def test_original_snapshot_identifies_a_record_excluded_from_medical_associations():
+    app=open_patents()
+    app.text_input(key='patent_query').set_value('CN122168417A').run()
+    assert not app.exception
+    assert app.metric[0].value=='1'
+    assert any('未纳入医疗' in str(item.value) for item in app.warning)

@@ -14,7 +14,9 @@ from dashboard.patent_data import MEDICAL_APPLICATIONS, filter_patents, load_pat
 
 _COPY = {
     'title': ('医疗增材制造 · 专利检索', 'Medical additive manufacturing · Patents', 'Additive Fertigung in der Medizin · Patente'),
-    'intro': ('严格筛选的直接相关专利；按医疗应用、申请人和公开年份探索。', 'Strictly selected, directly relevant patents. Explore by medical application, applicant and publication year.', 'Streng ausgewählte, direkt relevante Patente. Nach medizinischer Anwendung, Anmelder und Veröffentlichungsjahr filtern.'),
+    'intro': ('原始筛选快照；按原始医疗分类、申请人和公开年份探索。更新后的细分关联见“医疗应用联动”。', 'Original screened snapshot. Explore its original medical labels, applicants and publication years; updated detailed associations are in Linked evidence.', 'Ursprünglicher geprüfter Datenstand mit ursprünglichen medizinischen Labels, Anmeldern und Veröffentlichungsjahren; aktualisierte Detailzuordnungen stehen unter Verknüpfte Evidenz.'),
+    'isolated': ('本快照保留 {count} 条已因明确非医疗语境隔离的原始记录；它们未纳入医疗应用和报告关联。', 'This snapshot retains {count} original record(s) isolated for explicit nonmedical context; they are excluded from medical-application and report associations.', 'Dieser Datenstand enthält {count} wegen eindeutig nichtmedizinischen Kontexts isolierte Originaleinträge; sie sind von medizinischen Anwendungs- und Berichtszuordnungen ausgeschlossen.'),
+    'excluded': ('该原始记录因明确非医疗语境未纳入医疗关联与报告证据。', 'This original record is excluded from medical associations and report evidence because its context is explicitly nonmedical.', 'Dieser Originaleintrag ist wegen eindeutig nichtmedizinischen Kontexts von medizinischen Zuordnungen und Berichtsevidenz ausgeschlossen.'),
     'applications': ('医疗应用', 'Medical application', 'Medizinische Anwendung'),
     'applicants': ('申请人（留空表示全部）', 'Applicants (empty = all)', 'Anmelder (leer = alle)'),
     'years': ('公开年份', 'Publication year', 'Veröffentlichungsjahr'),
@@ -26,7 +28,7 @@ _COPY = {
     'families': ('已知同族组', 'Observed patent families', 'Bekannte Patentfamilien'),
     'applicant_count': ('申请人名称', 'Applicant names', 'Anmeldernamen'),
     'countries': ('公开国家／地区', 'Publication authorities', 'Veröffentlichungsbehörden'),
-    'scope': ('当前严格快照共 {total:,} 条公开记录；同一发明可能有多个国家或公开阶段的记录。', 'The strict snapshot contains {total:,} publication records. An invention may have records from multiple jurisdictions or publication stages.', 'Der strenge Datenstand enthält {total:,} Veröffentlichungen. Eine Erfindung kann Einträge aus mehreren Ländern oder Veröffentlichungsstufen haben.'),
+    'scope': ('原始筛选快照共 {total:,} 条公开记录；同一发明可能有多个国家或公开阶段的记录。', 'The original screened snapshot contains {total:,} publication records. An invention may have records from multiple jurisdictions or publication stages.', 'Der ursprüngliche geprüfte Datenstand enthält {total:,} Veröffentlichungen. Eine Erfindung kann Einträge aus mehreren Ländern oder Veröffentlichungsstufen haben.'),
     'empty': ('没有匹配的专利，请调整筛选或点击“重置专利筛选”。', 'No patents match. Adjust the filters or reset them.', 'Keine passenden Patente. Filter anpassen oder zurücksetzen.'),
     'page': ('结果页', 'Results page', 'Ergebnisseite'),
     'range': ('第 {start:,}–{end:,} 条，共 {total:,} 条 · {pages:,} 页', 'Records {start:,}–{end:,} of {total:,} · {pages:,} pages', 'Einträge {start:,}–{end:,} von {total:,} · {pages:,} Seiten'),
@@ -78,6 +80,24 @@ def reset_patent_filters():
         st.session_state.pop(key, None)
 
 
+@st.cache_data(show_spinner=False)
+def _isolated_original_records(root,signature):
+    from dashboard.bridge_data import load_bridge
+    graph=load_bridge(root)
+    return {r['id']:r.get('exclusion_reason','') for r in graph['patents']
+            if r.get('association_status')=='excluded_nonmedical_context'}
+
+
+def _isolation_annotations():
+    root=Path(__file__).resolve().parents[1]
+    paths=[root/'data'/name for name in ('patent_bridge.json.gz','patent_bridge_manifest.json')]
+    if not all(p.exists() for p in paths): return {}
+    try:
+        return _isolated_original_records(str(root),tuple((p.stat().st_mtime_ns,p.stat().st_size) for p in paths))
+    except (OSError,ValueError,KeyError):
+        return {}
+
+
 def patent_filters(root):
     paths = [Path(root)/'data'/name for name in ('patents.jsonl.gz', 'patents_manifest.json')]
     try:
@@ -122,6 +142,8 @@ def patent_explorer(source, filtered):
     for column, key, value in zip(st.columns(4), ('records', 'families', 'applicant_count', 'countries'), counts):
         column.metric(text(key), f'{value:,}')
     st.caption(text('scope').format(total=len(source)))
+    isolated=_isolation_annotations()
+    if isolated: st.info(text('isolated').format(count=len(isolated)))
     if filtered.empty:
         st.info(text('empty'))
         return
@@ -150,6 +172,9 @@ def patent_explorer(source, filtered):
         selected = st.selectbox(detail_label, ids, key='patent_record')
     row = records.set_index('publication_id').loc[selected]
     with st.container(border=True):
+        if selected in isolated:
+            st.warning(text('excluded'))
+            with preserve_original_text(): st.caption(isolated[selected])
         with preserve_original_text():
             st.subheader(row.title or selected)
             st.text('; '.join(row.applicants))

@@ -286,9 +286,11 @@ def figure_html(figure: dict, text: dict, reference: dict, root: Path | None = N
 
 
 def header_html(report: dict, code: str) -> str:
+    from dashboard.patent_report_views import patent_section_title
     ui = UI[code]
     esc = html.escape
     toc = ''.join(f'<a href="#aq-{s["id"]}" target="_self">{esc(s["title"])}</a>' for s in report['sections'])
+    toc += f'<a href="#patent-evidence" target="_self">{esc(patent_section_title(code))}</a>'
     return (f'<div class="aq-hero"><div class="aq-kicker">{esc(report["p"])} / '
             f'{esc(report["direction"])} / {esc(report["question_id"])}</div>'
             f'<h1>{esc(report["title"])}</h1><div class="aq-date">'
@@ -346,6 +348,8 @@ def academic_question_page(report: dict, question: dict | None, root: Path, publ
                     c1, c2 = st.columns(2)
                     c1.link_button(ui['figure']+' ↗', fig['source_url'])
                     c2.link_button(ui['source']+' ↗', refs[fig['reference_id']]['url'])
+            from dashboard.patent_report_views import patent_report_section
+            patent_report_section(root,report['question_id'],code=code)
             st.html(f'<div class="aq-section" id="aq-sources"><h2>{ui["sources"]}</h2></div>')
             for ref in r['references']:
                 st.markdown(f'**{ref["id"]} · {ref["publisher"]} · {ref["year"]}**')

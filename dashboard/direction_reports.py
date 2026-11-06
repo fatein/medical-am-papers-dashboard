@@ -113,6 +113,7 @@ def diagram_html(report:dict,ui:dict)->str:
  return '<!doctype html><meta charset="utf-8"><style>body{margin:0;color:#19374b;font-family:Arial,"Microsoft YaHei",sans-serif}.toolbar{display:flex;gap:8px;align-items:center;padding:10px;position:sticky;top:0;background:#f3f7fa;z-index:2}button{border:1px solid #ccdce5;background:white;padding:7px 13px;border-radius:6px;cursor:pointer}#viewport{overflow:auto;height:690px;border:1px solid #dce7ed;border-radius:10px;background:#fff}#canvas{transform-origin:top left}.node{height:188px;box-sizing:border-box;border:1px solid #cbdde6;border-radius:9px;background:#fff;overflow:auto}header{color:white;padding:10px 13px;font-size:15px;line-height:1.4}header small{display:block;font-size:12px;margin-top:3px}.node-body{padding:12px 14px;font-size:14px;line-height:1.6}.node-body strong{font-weight:500}.node-body p{margin:8px 0;color:#607b8e;font-size:13px}a{color:#087b77}.edge{text-align:center;font-size:12px;line-height:1.4}.edge span{background:white;padding:1px 4px}footer{font-size:12px;line-height:1.7;padding:10px;color:#8e673b}</style><div class="toolbar"><button onclick="scaleBy(1.25)">＋</button><button onclick="scaleBy(.8)">−</button><button onclick="fit()">'+html.escape(ui['reset'])+'</button></div><div id="viewport"><div id="canvas">'+svg+'</div></div><footer>'+html.escape(ui['feedback']+' · '+feeds)+'</footer><script>let scale=1;function apply(){document.querySelector("svg").style.width=1600*scale+"px";document.querySelector("svg").style.height=1390*scale+"px"}function scaleBy(v){scale=Math.max(.35,Math.min(2.5,scale*v));apply()}function fit(){scale=document.getElementById("viewport").clientWidth/1600;apply()}fit();</script>'
 
 def direction_report_page(root:Path,rid:str,public_mode=False)->None:
+ from dashboard.patent_report_views import patent_report_section,patent_section_title
  code=language();ui=UI[code];reports=load_reports(str(root),code)
  if rid not in reports:
   st.info({'zh':'未找到对应报告。','en':'Report not found.','de':'Bericht nicht gefunden.'}[code]);return
@@ -122,8 +123,8 @@ def direction_report_page(root:Path,rid:str,public_mode=False)->None:
  with preserve_original_text():
   st.button(ui['back'],on_click=return_to_direction,args=(root,rid),key='direction_report_back')
   hero=f'<div class="dr" style="--accent:{accent}"><div class="dr-hero"><div class="dr-kicker">{r["p"]} / {rid} · AM HEALTHCARE</div><h1>{html.escape(r["title"])}</h1><p class="dr-sub">{html.escape(r["subtitle"])}</p><div class="dr-date">{ui["date"]}</div><aside><h3>{ui["finding"]}</h3><p>{cited(r["thesis"],refs)}</p></aside></div>'
-  toc=[('questions',ui['questions']),('pathway',ui['graph'])]+[(f's{i}',s['title']) for i,s in enumerate(r['sections'])]+[('sources',ui['sources'])]
-  hero+='<nav class="dr-toc">'+''.join(f'<a href="#dr-{k}" target="_self">{html.escape(t)}</a>' for k,t in toc)+'</nav>'
+  toc=[('dr-questions',ui['questions']),('dr-pathway',ui['graph'])]+[(f'dr-s{i}',s['title']) for i,s in enumerate(r['sections'])]+[('patent-evidence',patent_section_title(code)),('dr-sources',ui['sources'])]
+  hero+='<nav class="dr-toc">'+''.join(f'<a href="#{k}" target="_self">{html.escape(t)}</a>' for k,t in toc)+'</nav>'
   hero+=f'<section id="dr-questions"><h2>{ui["questions"]}</h2>'+''.join(f'<div class="dr-question"><strong>{q["id"]} · {cited(q["question"],refs)}</strong><p>{cited(q["focus"],refs)}</p></div>' for q in r['questions'])+'</section></div>'
   st.html(CSS+hero)
   for i,s in enumerate(r['sections']):
@@ -131,6 +132,7 @@ def direction_report_page(root:Path,rid:str,public_mode=False)->None:
     st.html(f'<div class="dr"><section id="dr-pathway"><h2>{html.escape(r["graph"]["title"])}</h2><p>{html.escape(r["graph"]["summary"])}</p></section></div>')
     components.html(diagram_html(r,ui),height=820,scrolling=True)
    st.html(f'<div class="dr" style="--accent:{accent}"><section id="dr-s{i}"><h2>{i+1}. {html.escape(s["title"])}</h2>'+''.join(block_html(b,refs) for b in s['blocks'])+'</section></div>')
+  patent_report_section(root,rid,code=code)
   source_html=f'<div class="dr"><section id="dr-sources"><h2>{ui["sources"]}</h2>'
   for ref in r['references']:
    if safe_url(ref['url']):source_html+=f'<div class="dr-source"><b>{ref["id"]}</b> · <a href="{html.escape(ref["url"],quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(ref["title"])}</a><br><small>{html.escape(source_date(str(ref.get("year","")),code))} · {html.escape(ref.get("source",""))}</small></div>'

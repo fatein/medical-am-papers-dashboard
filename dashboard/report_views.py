@@ -67,6 +67,9 @@ def question_report_page(report: dict | None, question: dict | None, root: Path,
             f'<div class="report-date">更新于 {html.escape(report["updated_at"])} · 资料截至 {html.escape(report["evidence_cutoff"])}</div>'
             f'<div class="report-lead">{html.escape(tr(report["core_finding"]))}</div></div>', unsafe_allow_html=True)
         toc = ''.join(f'<a href="#report-{s["id"]}" target="_self">{html.escape(tr(s["title"]))}</a>' for s in report['sections'])
+        from dashboard.patent_report_views import patent_report_section,patent_section_title
+        from dashboard.i18n import language
+        toc += f'<a href="#patent-evidence" target="_self">{html.escape(patent_section_title(language()))}</a>'
         toc += '<a href="#report-sources" target="_self">来源与相关档案</a>'
         st.markdown(f'<details class="report-mobile-toc"><summary>报告目录</summary><nav class="report-toc">{toc}</nav></details>',unsafe_allow_html=True)
         nav, content = st.columns([1, 4], gap='large')
@@ -75,6 +78,7 @@ def question_report_page(report: dict | None, question: dict | None, root: Path,
             for section in report['sections']:
                 st.markdown(f'<div class="report-section" id="report-{section["id"]}"><h2>{html.escape(tr(section["title"]))}</h2></div>',unsafe_allow_html=True)
                 st.markdown(render_cited_markdown(section, report['references']), unsafe_allow_html=True)
+            patent_report_section(root,report['question_id'],code=language())
             st.markdown('<div class="report-section" id="report-sources"><h2>来源与相关档案</h2></div>',unsafe_allow_html=True)
             for ref in report['references']:
                 if not safe_source_url(ref['url']):

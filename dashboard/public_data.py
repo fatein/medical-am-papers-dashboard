@@ -34,6 +34,12 @@ PUBLIC_PACKAGE_FILES = frozenset({
     'dashboard/public_data.py', 'dashboard/views.py',
     'dashboard/patent_data.py', 'dashboard/patent_views.py',
     'data/patents.jsonl.gz', 'data/patents_manifest.json',
+    'dashboard/bridge_data.py', 'dashboard/bridge_matching.py', 'dashboard/bridge_views.py',
+    'dashboard/patent_report_views.py', 'dashboard/direction_reports.py',
+    'dashboard/technical_features.py',
+    'data/patent_bridge.json.gz', 'data/patent_bridge_manifest.json',
+    'data/patent_report_editorial.json',
+    'data/direction_reports/zh.json', 'data/direction_reports/en.json', 'data/direction_reports/de.json',
     'dashboard/enterprise_data.py', 'dashboard/enterprise_views.py',
     'dashboard/cross_data.py', 'dashboard/cross_views.py',
     'dashboard/report_data.py', 'dashboard/report_views.py', 'dashboard/report_navigation.py',
@@ -194,6 +200,13 @@ def validate_public_package(root: Path) -> dict:
     patents = load_patents(root)
     if any(_contains_private_path(row) for row in patents.to_dict('records')):
         raise ValueError('Patent display data contains a private file path.')
+    from dashboard.bridge_data import load_bridge
+    from dashboard.patent_report_views import validate_editorial
+    bridge = load_bridge(root)
+    editorial = json.loads((root/'data/patent_report_editorial.json').read_text(encoding='utf-8'))
+    editorial_errors = validate_editorial(editorial, bridge['reports'])
+    if editorial_errors or _contains_private_path(editorial):
+        raise ValueError('Invalid or private patent report guidance: '+ '; '.join(editorial_errors))
     config = (root/'.streamlit/config.toml').read_text(encoding='utf-8')
     if re.search(r'(?im)^\s*(address|port)\s*=', config):
         raise ValueError('公开包包含本机监听地址或端口。')
