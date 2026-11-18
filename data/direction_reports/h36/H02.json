@@ -1,0 +1,1514 @@
+{
+  "zh": {
+    "id": "H02",
+    "p": "P5",
+    "title": "疫情应急采样、防护与呼吸支持附件",
+    "subtitle": "短缺时的应急替代如何变成可复验的供应能力",
+    "thesis": "应急打印的共同问题是重新建立完整器械的验证和交付。面屏、口罩辅助件、采样器件和呼吸气路配件分属不同检验路径，能够共享设计版本、批次验收和供应追踪。",
+    "questions": [],
+    "graph": {
+      "title": "从临床短缺到分路径验证与批次交付",
+      "summary": "需求与器械边界确定后分为三路。按各自的使用结果进行比较，再把过程数据反馈给供应网络。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2020",
+          "refs": [
+            "R01"
+          ],
+          "title": "明确短缺与院内需求",
+          "question": "哪些产品需要本地替代？",
+          "evidence": "教学医院的面屏案例把设计、验收和急诊部门引入放进同一流程。"
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2020–2021",
+          "refs": [
+            "R02",
+            "R08"
+          ],
+          "title": "区分面屏与面部密合",
+          "question": "哪一个界面决定防护性能？",
+          "evidence": "面屏项目验证装配与佩戴。贴脸器件研究比较个体脸型、统计脸型和市售产品的密合。"
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2020",
+          "refs": [
+            "R04"
+          ],
+          "title": "采样器件验证",
+          "question": "打印件能否满足相同任务？",
+          "evidence": "开放开发研究将多个候选拭子与临床参照进行配对比较，验证任务适配的同时观察机械完整性和使用体验。"
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2025",
+          "refs": [
+            "R05",
+            "R12"
+          ],
+          "title": "呼吸附件进入完整气路",
+          "question": "连接件改变哪些系统指标？",
+          "evidence": "CPAP 头盔配件研究把接头几何、制造和装配测试连接，企业项目也将呼吸表现与完整面罩接口一起评价。"
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 0,
+          "time": "2021–2023",
+          "refs": [
+            "R03",
+            "R14"
+          ],
+          "title": "联合观察泄漏和压差",
+          "question": "密合改善会怎样改变呼吸负担？",
+          "evidence": "台架指标把旁路泄漏和透过滤材的流动分开。半面罩研究将迭代后的定量密合与材料成本一起报告。"
+        },
+        {
+          "id": "N6",
+          "stage": 2,
+          "lane": 1,
+          "time": "2020–2021",
+          "refs": [
+            "R06",
+            "R07"
+          ],
+          "title": "组织设计、转产和发放",
+          "question": "产能如何转化为可验收交付？",
+          "evidence": "跨校 AJFlex 和医院网络案例把实际交付、组织者和质量控制纳入制造评价。"
+        },
+        {
+          "id": "N7",
+          "stage": 3,
+          "lane": 1,
+          "time": "2027–2029",
+          "refs": [
+            "R06",
+            "R07",
+            "R09"
+          ],
+          "title": "按批次复验并维持备援",
+          "question": "怎样保留下一次短缺可调用的能力？",
+          "evidence": "以设计版次、材料来源、验收批次和可接受交货时间反查排产，记录异地供应点的复验结果。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "防护器械"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "临床采样器件"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "气路附件"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "完整面罩端点评价"
+        },
+        {
+          "from": "N3",
+          "to": "N6",
+          "kind": "advance",
+          "label": "临床对照进入发放"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "系统测量连接验收"
+        },
+        {
+          "from": "N5",
+          "to": "N7",
+          "kind": "advance",
+          "label": "把组合指标列入复验"
+        },
+        {
+          "from": "N6",
+          "to": "N7",
+          "kind": "advance",
+          "label": "交付数据校验供应能力"
+        },
+        {
+          "from": "N7",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "失败件与延误反馈需求"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究对象与评价边界",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "按与人和系统接触的位置定义方向。面屏的透明片、支架强度与佩戴时间关系到覆盖和视野，紧密贴脸的呼吸防护则要另测密合及压差。连接呼吸回路的配件必须结合其系统路径评价。 [R01] [R02] [R03] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与研究解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "明确短缺与院内需求"
+          },
+          {
+            "type": "p",
+            "text": "教学医院的面屏案例把设计、验收和急诊部门引入放进同一流程。 [R01]"
+          },
+          {
+            "type": "h3",
+            "text": "区分面屏与面部密合"
+          },
+          {
+            "type": "p",
+            "text": "面屏项目验证装配与佩戴。贴脸器件研究比较个体脸型、统计脸型和市售产品的密合。 [R02] [R08]"
+          },
+          {
+            "type": "h3",
+            "text": "采样器件验证"
+          },
+          {
+            "type": "p",
+            "text": "开放开发研究将多个候选拭子与临床参照进行配对比较，验证任务适配的同时观察机械完整性和使用体验。 [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "呼吸附件进入完整气路"
+          },
+          {
+            "type": "p",
+            "text": "CPAP 头盔配件研究把接头几何、制造和装配测试连接，企业项目也将呼吸表现与完整面罩接口一起评价。 [R05] [R12]"
+          },
+          {
+            "type": "h3",
+            "text": "联合观察泄漏和压差"
+          },
+          {
+            "type": "p",
+            "text": "台架指标把旁路泄漏和透过滤材的流动分开。半面罩研究将迭代后的定量密合与材料成本一起报告。 [R03] [R14]"
+          },
+          {
+            "type": "h3",
+            "text": "组织设计、转产和发放"
+          },
+          {
+            "type": "p",
+            "text": "跨校 AJFlex 和医院网络案例把实际交付、组织者和质量控制纳入制造评价。 [R06] [R07]"
+          },
+          {
+            "type": "h3",
+            "text": "按批次复验并维持备援"
+          },
+          {
+            "type": "p",
+            "text": "以设计版次、材料来源、验收批次和可接受交货时间反查排产，记录异地供应点的复验结果。 [R06] [R07] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "面罩台架可以把滤材效率和面部边缘泄漏分开解释。边缘约束改善时，经过滤材的流量比例可能增加，完整产品的压差应随同测量。可重复使用的器件还可在重复佩戴后观察密合位置和零件完整度。 [R02] [R03] [R14]"
+          },
+          {
+            "type": "p",
+            "text": "呼吸支持附件可按接口原型与系统级评价分别记载。前者检查装配保持与重复连接，后者对照原系统的压力和气流表现。只有把附件、患者接口、气源和使用条件写在一起，才能定位性能变化对应的部位。 [R05] [R12]"
+          },
+          {
+            "type": "h3",
+            "text": "整机颗粒测试发现旁路"
+          },
+          {
+            "type": "p",
+            "text": "这一方法把面部边缘暂时固定，使壳体和连接位置成为可观察对象。对打印用品而言，空气可以沿材料缺陷、接缝和滤芯周边流动，滤材本身的名义效率因而不能单独描述装配后的表现。设计评价需要先绘出可能的流动路径，再分别改变壳体、接口和滤芯，定位哪个环节主导穿透。"
+          },
+          {
+            "type": "p",
+            "text": "后续试验可以用相同滤材和相同有效面积比较不同壳体工艺，同时记录装配力与接口尺寸。若加固滤芯盖后颗粒下降，应进一步观察重新装配能否复现，以识别操作因素。这个节点引出的任务是将颗粒和压差放进同一台架，因为阻断一条容易流动的旁路后，空气需要更多地通过滤材，系统阻力也随之改变。"
+          },
+          {
+            "type": "h3",
+            "text": "个体与统计脸型比较"
+          },
+          {
+            "type": "p",
+            "text": "2021年研究利用扫描生成刚性测试脸模，设置呼吸模拟管路，比较个体化打印口罩、统计形状口罩和市售用品。个体化方案的空气泄漏整体较低，统计形状方案在测试脸模上提供另一种尺寸适配路线。[R02]"
+          },
+          {
+            "type": "p",
+            "text": "刚性脸模的价值在于固定几何边界，能够重复改变口罩形状并观察泄漏。实际佩戴还涉及软组织变形、头带张力与说话动作，因此脸模结果适合筛选接触轮廓，再由人体测试检验。设计中鼻梁、颧部和下颌的曲率需要分别处理，局部间隙可能比整体外形误差更直接地决定气流通道。"
+          },
+          {
+            "type": "p",
+            "text": "个体设计与统计尺寸可以采用共同的比较框架。首先确定人群中哪些形态组合容易失配，再比较增加一个尺寸与逐人扫描各自需要的设计和服务资源。随后将边界形状与柔性垫层、框架弹性联动调整。这样定制的价值能够表达为特定失配群体的改善，而制造端也能知道哪些参数应由个人数据决定，哪些参数可以保持统一。"
+          },
+          {
+            "type": "h3",
+            "text": "扫描框架强化周边贴合"
+          },
+          {
+            "type": "p",
+            "text": "框架的作用机制是改变边缘受力和褶皱形状。医用口罩本身柔软，局部压紧可以减少翘起，也可能把间隙转移到另一个位置。因此研究需要同时记录框架轮廓、压紧方式与动作中的接触变化，不能只凭静止照片判断。平均改善还需要由个体分布补充，才能识别仍然失配的人群和部位。"
+          },
+          {
+            "type": "p",
+            "text": "这一节点为定制配件提供了清晰起点：已有滤材承担过滤，打印结构承担形状约束，二者分别测量后再评价组合。下一阶段可以比较相同口罩上个体化框架、统计尺寸框架与调整后的原有固定方式，并重复佩戴多次。这样能区分框架几何带来的收益和熟悉佩戴方法带来的收益，也能判断密合改善是否伴随局部压迫。"
+          },
+          {
+            "type": "h3",
+            "text": "可调框架适配不同呼吸器"
+          },
+          {
+            "type": "p",
+            "text": "可调结构把形态适配的一部分交给佩戴时操作，能够减少逐人设计步骤，同时引入调节一致性问题。研究可以将首次调节时间、所需协助、再次佩戴的位置变化和测试结果一起记录。调节自由度较多时，使用者可能找到更合适的状态，也可能在拆卸后难以恢复，因而需要形成明确的定位和检查方式。"
+          },
+          {
+            "type": "p",
+            "text": "与扫描定制框架相比，可调框架更适合提出服务路径的比较问题：哪类失配适合现场调节，哪类需要重新生成接触曲线。将呼吸器型号作为分层因素，有助于避免把一个模型上的改善推广到所有组合。头带状态、材料使用时间和滤材性能则分别记录，使结构固定效果能够与整件用品的剩余使用性能对应。"
+          },
+          {
+            "type": "h3",
+            "text": "台架联合测泄漏与压差"
+          },
+          {
+            "type": "p",
+            "text": "2023年台架研究比较四种打印口罩设计、两类滤材组合及不同头模，测量颗粒进入与呼吸压差。滤材、有效面积、泡棉密封和热成形共同影响结果；改善边缘密封可能增加通过滤材的流量，从而提高压力需求。[R03]"
+          },
+          {
+            "type": "p",
+            "text": "颗粒与压力需要在同一流量和装配条件下解读。低压差可能来自足够大的滤材面积，也可能来自绕过滤材的旁路；降低泄漏后出现较高压差，提示气流路径发生变化。研究因此应同时报告泄漏、过滤和阻力，并说明测量时的流向、流量及头模接触条件，以便区分不同设计获得数值优势的原因。"
+          },
+          {
+            "type": "p",
+            "text": "设计优化可以先固定密封状态，研究滤材面积和支撑结构；再固定滤材组合，研究边缘和接口。最终把两组参数合并，寻找在颗粒控制、呼吸负担、体积和重量之间可接受的区域。与前述人体框架研究衔接时，还需要评价说话及头部运动是否重新打开旁路，使台架得到的性能能够在动态佩戴中保持。"
+          },
+          {
+            "type": "h3",
+            "text": "医护交叉试验检验框架"
+          },
+          {
+            "type": "p",
+            "text": "配对比较使同一人的脸型成为相对稳定的条件，适合检验框架加入后的即时变化。结果还应按原先是否通过测试分析：对已经贴合的人，重点是附加结构是否带来压迫和操作负担；对原先失配的人，重点是哪些形态及接触位置获得改善。两类人群对应不同的产品需求和服务收益。"
+          },
+          {
+            "type": "p",
+            "text": "进一步研究可以把重复佩戴、较长工作时段和多次清洁加入交叉设计，同时平衡先后顺序，观察学习效应。扫描到交付的时间也应作为实际服务指标，因为一次测量成功需要转化为及时可获得的用品。图中的反馈因此返回面部设计：将持续失配的位置、舒适评分和调节记录共同用于修改接触轮廓，而不只追求单次测试的平均值。"
+          },
+          {
+            "type": "h3",
+            "text": "社区生产优化面罩流程"
+          },
+          {
+            "type": "p",
+            "text": "面罩的制造单元是一个组件系统。头带打印时间、透明片裁切、打孔与装配需要协调，增加打印设备并不必然增加完成品数量。研究可以沿每个环节记录等待、返工和不合格原因，识别限制交付的资源。相同模型在不同设备上的外形和孔位差异，还需要通过统一样件或装配检查获得可比结果。"
+          },
+          {
+            "type": "p",
+            "text": "排产优化同时影响后处理质量。堆叠方式可能节省人员操作，却改变拆分和边缘整理任务，因此产能应以通过检查的整件计量。这个节点向重复使用研究延伸时，产品记录应保留材料、工艺和批次，便于把后续翘曲、开裂或清洁问题返回制造条件。分布式制造由此形成能够学习的生产网络，而不仅是文件的远程复制。"
+          },
+          {
+            "type": "p",
+            "text": "外观检查是重复使用评价的一层，还需要与尺寸、连接强度、透光和佩戴稳定性衔接。细小变形可能尚未形成明显裂纹，却改变透明片位置或头带张力；表面细纹也可能影响视野。研究可以对同一件用品连续追踪，并以未处理样品作为时间对照，描述性能随循环次数的变化路径。"
+          },
+          {
+            "type": "h3",
+            "text": "打印转注塑的产能接力"
+          },
+          {
+            "type": "p",
+            "text": "Drexel AJFlex项目的实证案例报告记录了打印头带与注塑量产并行的过程，团队向区域内100余家组织交付约33,000副面屏。临床、工程、制造、配送和志愿者共同参与，工业伙伴支持产能扩大。[R06] 该报告以项目运行和交付记录呈现制造组织的变化。"
+          },
+          {
+            "type": "p",
+            "text": "工艺接力解决的是需求和设计状态不同步的问题。早期数量不明、设计仍在调整，数字制造能够承接小批试制；随后需求集中且结构稳定，固定模具成本可由更多产品分摊。两条路线并行还能保留快速修改的通道，把标准批量产品与局部特殊需求分开安排。真正的切换条件因此包括剩余订单、模具交付时间、设计冻结程度和组装能力。"
+          },
+          {
+            "type": "h3",
+            "text": "医院枢纽的实际交付"
+          },
+          {
+            "type": "p",
+            "text": "一项单中心观察研究记录2020年3月14日至5月10日的应急生产，累计交付17,276件用品，其中57.3%由个人制造；研究医院作为中心节点连接另外10家医院，每日接收需求并协调院内外生产。[R07] 产品覆盖防护、通气支持及诊断耗材。"
+          },
+          {
+            "type": "p",
+            "text": "这类记录的主要贡献是把分散的制造活动与具体用途关联。中心医院能够看到需求变化，外部制造者提供弹性设备和人力；两者通过订单与交付形成闭环。分析单位由单件转为一次补货任务后，交付比例、响应时长、品类缺口和库存恢复速度就能被共同观察。相同数量的产品可以对应完全不同的缺货缓解程度，比较时需要结合需求发生的时点与各用品的临床任务。"
+          }
+        ]
+      },
+      {
+        "title": "企业技术与服务路线",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "2020 年形成三种公开协作路径。Prusa 以开放面屏设计连接社会制造力量，后续记录认证和转产。Formlabs 与医院合作开发拭子，Carbon 与 Resolution Medical 的格栅拭子体现专业制造分工。比较这些节点时可记录发布、临床配对验证、实际交付和工艺转移四个不同日期。 [R08] [R09] [R10] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "同年六月，Prusa公布面罩认证过程，涉及熔融沉积打印及注塑路线，并把材料、参数、透明片、装配和质量记录纳入产品描述。历史文件围绕机械、光学、视野及飞溅防护组织评价，显示产品化需要将制造条件与最终组件一起固定。[R09]"
+          },
+          {
+            "type": "p",
+            "text": "从打印转向注塑可以理解为需求和批量变化下的工艺选择。打印适合早期修改和多点供给，重复需求趋于稳定后，生产者可以比较模具投入、单件时间和材料利用率。两种路线能否共用评价结果，取决于最终几何、材料及装配状态的可比性；工艺变化也为研究提供了检验设计稳健性的机会。"
+          }
+        ]
+      },
+      {
+        "title": "专利设计与制造接口",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN120828529A 将医疗设备的应急备用件制造作为系统任务。可借用其对象层级梳理备援工作：确认待替代件、定义数字版本、约定验收条件，再记录替换后的系统表现。对面屏生产重点是改变生产方式时核对装配接口，对气路配件则重点确认系统功能。 [R13] [R09] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "学术与产业的结合点",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "学术比较给出什么需要测量，企业项目给出如何把合格件交到使用部门。联合评价应以一次完整订单为单位，同时记录验证失败数、实际材料批次、重做量和首次交付耗时。它能识别瓶颈在验证、设备产出、物流还是医院接受。 [R01] [R06] [R07]"
+          }
+        ]
+      },
+      {
+        "title": "未来演进与验证指标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "下一轮重点是平时演练能否复现疫情阶段建立的供给链。试验性订单可在两处制造点使用同一版次，比较通过率、单位合格件工时和交付时长，再检验变更材料或设备后能否维持相同验收判断。 [R06] [R07] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Regulatory and Safety Considerations in Deploying a Locally Fabricated, Reusable Face Shield in a Hospital Responding to the COVID-19 Pandemic.",
+        "url": "https://doi.org/10.1016/j.medj.2020.06.003",
+        "year": "2020",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "Air seal performance of personalized and statistically shaped 3D-printed face masks compared with market-available surgical and FFP2 masks",
+        "url": "https://www.nature.com/articles/s41598-021-98963-0",
+        "year": "2021",
+        "source": "Scientific Reports",
+        "id": "R02"
+      },
+      {
+        "title": "Benchtop assessment of sealing efficacy and breathability of additively manufactured (AM) face masks",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9974208/",
+        "year": "2023",
+        "source": "Additive Manufacturing",
+        "id": "R03"
+      },
+      {
+        "title": "Open Development and Clinical Validation of Multiple 3D-Printed Nasopharyngeal Collection Swabs: Rapid Resolution of a Critical COVID-19 Testing Bottleneck",
+        "url": "https://doi.org/10.1128/JCM.00876-20",
+        "year": "2020",
+        "source": "Journal of Clinical Microbiology",
+        "id": "R04"
+      },
+      {
+        "title": "Design, manufacturing, and testing of 3D-printed fittings for ergonomic helmet CPAP devices: a case study.",
+        "url": "https://doi.org/10.1038/s41598-025-25851-2",
+        "year": "2025",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "A Cross University-Led COVID-19 Rapid-Response Effort: Design, Build, and Distribute Drexel AJFlex Face Shields",
+        "url": "https://link.springer.com/article/10.1007/s10439-021-02743-w",
+        "year": "2021",
+        "source": "Annals of Biomedical Engineering",
+        "id": "R06"
+      },
+      {
+        "title": "Application of 3D printing and distributed manufacturing during the first-wave of COVID-19 pandemic. Our experience at a third-level university hospital",
+        "url": "https://link.springer.com/article/10.1186/s41205-021-00097-6",
+        "year": "2021",
+        "source": "3D Printing in Medicine",
+        "id": "R07"
+      },
+      {
+        "title": "COVID-19: Prusa Face Shield",
+        "url": "https://www.prusa3d.com/page/covid-19_379/",
+        "year": "2020项目",
+        "source": "Prusa Research",
+        "id": "R08"
+      },
+      {
+        "title": "How to get a certification for face shields",
+        "url": "https://blog.prusa3d.com/how-to-get-a-certification-for-face-shields_36481/",
+        "year": "2020",
+        "source": "Prusa Research",
+        "id": "R09"
+      },
+      {
+        "title": "University of South Florida Health, Northwell Health, Formlabs and Tampa General Hospital Join Forces to Create 3D Printed Nasal Swabs to Test for COVID-19 in Patients in Emergency Shortage Situations",
+        "url": "https://formlabs.com/company/press/joined-forces-3d-printed-nasal-swabs-to-test-covid-19/",
+        "year": "2020",
+        "source": "Formlabs",
+        "id": "R10"
+      },
+      {
+        "title": "Resolution Medical using Carbon to 3D Print Swabs for COVID-19",
+        "url": "https://www.carbon3d.com/news/press-releases/resolution-medical-3d-prints-swabs-for-covid19",
+        "year": "2020",
+        "source": "Carbon / Resolution Medical",
+        "id": "R11"
+      },
+      {
+        "title": "COVID-19 Mask Conversion",
+        "url": "https://formlabs.com/covid-19-response/mask-conversion/",
+        "year": "2020项目",
+        "source": "Formlabs",
+        "id": "R12"
+      },
+      {
+        "title": "Method for emergently processing damage faults of parts of medical apparatus and instruments based on 3d printer",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120828529A",
+        "year": "2025",
+        "source": "Espacenet",
+        "id": "R13"
+      },
+      {
+        "title": "Development, manufacturing, and preliminary validation of a reusable half-face respirator during the COVID-19 pandemic.",
+        "url": "https://doi.org/10.1371/journal.pone.0247575",
+        "year": "2021",
+        "source": "",
+        "id": "R14"
+      }
+    ]
+  },
+  "en": {
+    "id": "H02",
+    "p": "P5",
+    "title": "Emergency sampling, protective equipment and respiratory support accessories",
+    "subtitle": "How emergency substitution becomes a verifiable supply capability",
+    "thesis": "Emergency printing must restore both validation and delivery of the complete device. Face shields, mask accessories, sampling devices and breathing-circuit fittings follow distinct test pathways and can share design versioning, lot acceptance and supply tracking.",
+    "questions": [],
+    "graph": {
+      "title": "From a clinical shortage to separate testing and lot release",
+      "summary": "Three pathways open once the need and device boundary are defined. Each has its own use outcomes. Production records then feed back into the supply network.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2020",
+          "refs": [
+            "R01"
+          ],
+          "title": "Define the clinical shortage and need",
+          "question": "Which devices need local substitution?",
+          "evidence": "The hospital face-shield case followed design, acceptance and rollout in the emergency department."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2020–2021",
+          "refs": [
+            "R02",
+            "R08"
+          ],
+          "title": "Distinguish face shields from facial seals",
+          "question": "Which interface determines protective performance?",
+          "evidence": "A shield project addressed assembly and wearing. Mask studies compared the seals of personalized, statistically shaped and commercial products."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2020",
+          "refs": [
+            "R04"
+          ],
+          "title": "Validate sampling devices",
+          "question": "Can a printed device serve the same task?",
+          "evidence": "An open-development study evaluated multiple swab candidates against a clinical comparator. Device integrity and user experience accompanied the comparison for the intended task."
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2025",
+          "refs": [
+            "R05",
+            "R12"
+          ],
+          "title": "Test respiratory fittings in the complete circuit",
+          "question": "Which system measures can fittings change?",
+          "evidence": "A helmet CPAP study linked fitting geometry, manufacturing and assembly testing. Industry projects also examined breathing performance at the complete mask interface."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 0,
+          "time": "2021–2023",
+          "refs": [
+            "R03",
+            "R14"
+          ],
+          "title": "Track leakage and pressure drop together",
+          "question": "How does a better seal change breathing resistance?",
+          "evidence": "Bench measures separate bypass leakage from flow through the filter. A half-mask study documented quantitative fit and material cost after design iterations."
+        },
+        {
+          "id": "N6",
+          "stage": 2,
+          "lane": 1,
+          "time": "2020–2021",
+          "refs": [
+            "R06",
+            "R07"
+          ],
+          "title": "Coordinate design, scale-up and distribution",
+          "question": "How does capacity become accepted delivery?",
+          "evidence": "The AJFlex interuniversity project and a hospital network brought delivered units, coordination and quality control into the manufacturing assessment."
+        },
+        {
+          "id": "N7",
+          "stage": 3,
+          "lane": 1,
+          "time": "2027–2029",
+          "refs": [
+            "R06",
+            "R07",
+            "R09"
+          ],
+          "title": "Recheck lots and maintain backup capacity",
+          "question": "What capability can be retained for the next shortage?",
+          "evidence": "Use design revisions, material sources, accepted lots and required lead times to review capacity. Record repeat audit results for distributed sites."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Protective equipment"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Sampling devices"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Respiratory fittings"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Test the whole mask"
+        },
+        {
+          "from": "N3",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Validation precedes distribution"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "System tests inform acceptance"
+        },
+        {
+          "from": "N5",
+          "to": "N7",
+          "kind": "advance",
+          "label": "Combine criteria in rechecks"
+        },
+        {
+          "from": "N6",
+          "to": "N7",
+          "kind": "advance",
+          "label": "Delivery data verify supply"
+        },
+        {
+          "from": "N7",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Failures and delays refine requirements"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Research scope and outcomes",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Define each branch by its point of contact with users and systems. Shield coverage and vision depend on visor and headband design and duration of wear. Close-fitting respiratory protection also calls for seal and pressure-drop measurements. Breathing circuit accessories belong in a system-level assessment. [R01] [R02] [R03] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathways and evidence",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Define the clinical shortage and need"
+          },
+          {
+            "type": "p",
+            "text": "The hospital face-shield case followed design, acceptance and rollout in the emergency department. [R01]"
+          },
+          {
+            "type": "h3",
+            "text": "Distinguish face shields from facial seals"
+          },
+          {
+            "type": "p",
+            "text": "A shield project addressed assembly and wearing. Mask studies compared the seals of personalized, statistically shaped and commercial products. [R02] [R08]"
+          },
+          {
+            "type": "h3",
+            "text": "Validate sampling devices"
+          },
+          {
+            "type": "p",
+            "text": "An open-development study evaluated multiple swab candidates against a clinical comparator. Device integrity and user experience accompanied the comparison for the intended task. [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "Test respiratory fittings in the complete circuit"
+          },
+          {
+            "type": "p",
+            "text": "A helmet CPAP study linked fitting geometry, manufacturing and assembly testing. Industry projects also examined breathing performance at the complete mask interface. [R05] [R12]"
+          },
+          {
+            "type": "h3",
+            "text": "Track leakage and pressure drop together"
+          },
+          {
+            "type": "p",
+            "text": "Bench measures separate bypass leakage from flow through the filter. A half-mask study documented quantitative fit and material cost after design iterations. [R03] [R14]"
+          },
+          {
+            "type": "h3",
+            "text": "Coordinate design, scale-up and distribution"
+          },
+          {
+            "type": "p",
+            "text": "The AJFlex interuniversity project and a hospital network brought delivered units, coordination and quality control into the manufacturing assessment. [R06] [R07]"
+          },
+          {
+            "type": "h3",
+            "text": "Recheck lots and maintain backup capacity"
+          },
+          {
+            "type": "p",
+            "text": "Use design revisions, material sources, accepted lots and required lead times to review capacity. Record repeat audit results for distributed sites. [R06] [R07] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Mask bench testing can distinguish filtration from edge leakage. A better edge seal can redirect more flow through the filter, so pressure drop across the assembled product merits concurrent measurement. Reusable devices can also be assessed for seal placement and component integrity after repeated donning. [R02] [R03] [R14]"
+          },
+          {
+            "type": "p",
+            "text": "Record the fit of a respiratory accessory prototype separately from its system-level evaluation. The first covers retention and repeat assembly. The second compares pressure and airflow to the reference system. Recording the accessory, patient interface, supply and operating conditions together helps locate the source of performance changes. [R05] [R12]"
+          },
+          {
+            "type": "h3",
+            "text": "Whole-device particle tests reveal bypass routes"
+          },
+          {
+            "type": "p",
+            "text": "This method temporarily fixes the face edges, making the housing and connection points observable. For printed materials, air can flow along material defects, seams, and around the filter element, so the nominal efficiency of the filter material itself cannot independently describe the performance after assembly. Design evaluation requires first drawing possible flow paths, then changing the housing, interface, and filter element individually to pinpoint which component dominates penetration."
+          },
+          {
+            "type": "p",
+            "text": "Subsequent tests can compare housing manufacturing processes using identical filter media and effective filtration areas, while recording assembly force and interface dimensions. If reinforcing the filter cover reduces particle penetration, repeated assembly should test whether the effect is reproducible and how much it depends on handling. This node calls for measuring particles and pressure drop on the same test rig: once an easy bypass is closed, more air must pass through the filter, changing system resistance."
+          },
+          {
+            "type": "h3",
+            "text": "Comparing individual and statistical face shapes"
+          },
+          {
+            "type": "p",
+            "text": "A 2021 study used scanning to generate rigid test face molds, set up breathing simulation tubing, and compared personalized printed masks, statistically shaped masks, and commercially available products. The personalized approach had lower overall air leakage, while the statistically shaped approach provided an alternative sizing method for the test face molds. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "The value of the rigid face mold lies in its fixed geometric boundaries, allowing for repeated changes in mask shape and observation of leaks. Actual wearing also involves soft tissue deformation, headband tension, and speaking movements; therefore, the face mold results are suitable for screening contact contours, which are then verified through human testing. In the design, the curvature of the bridge of the nose, cheekbones, and jawline needs to be addressed separately, and local gaps may determine the airflow channel more directly than overall shape errors."
+          },
+          {
+            "type": "p",
+            "text": "Individualized designs and population-based sizing can use a common comparison framework. First identify facial shape combinations prone to poor fit, then compare the design and service resources needed to add another standard size with those needed to scan each wearer individually. The contact contour can then be adjusted together with compliant padding and frame elasticity. This expresses customization benefits for specific groups with poor fit and identifies which manufacturing parameters require personal data and which can remain standardized."
+          },
+          {
+            "type": "h3",
+            "text": "Scan-based frames improve peripheral fit"
+          },
+          {
+            "type": "p",
+            "text": "The frame works by altering edge stress and wrinkle shape. Medical masks are inherently soft; localized compression can reduce warping and may also shift gaps to another location. Therefore, research needs to simultaneously record the frame outline, compression method, and contact changes during movement; it cannot rely solely on still photographs. Average improvement also needs to be supplemented with individual distribution data to identify still-mismatched individuals and areas."
+          },
+          {
+            "type": "p",
+            "text": "This node provides a clear starting point for customized accessories: existing filter media provide filtration, while the printed structure constrains shape. Each function can be measured separately before evaluating the combination. Future studies can compare individualized frames, population-sized frames and adjusted standard fastening on the same mask over repeated donning cycles. This separates geometric benefits from familiarity with donning and tests whether better sealing also increases local pressure."
+          },
+          {
+            "type": "h3",
+            "text": "Adjustable frames for different respirators"
+          },
+          {
+            "type": "p",
+            "text": "The adjustable structure delegates part of the form-fitting process to the wearer, reducing individual design steps but introducing issues of adjustment consistency. Research can record the initial adjustment time, required assistance, changes in position after re-wearing, and test results. With more degrees of freedom in adjustment, users may find a more suitable state, or it may be difficult to restore the fit after disassembly; therefore, clear positioning and inspection methods are needed."
+          },
+          {
+            "type": "p",
+            "text": "Compared to custom scanning frames, adjustable frames are better suited for comparing service paths: which types of mismatches are suitable for on-site adjustments, and which require regenerating contact profiles. Using the respirator model as a stratification factor helps avoid generalizing improvements on one model to all combinations. Headband condition, material usage time, and filter performance are recorded separately, ensuring that structural fixation effects correspond to the remaining performance of the entire product."
+          },
+          {
+            "type": "h3",
+            "text": "Joint bench measurements of leakage and pressure drop"
+          },
+          {
+            "type": "p",
+            "text": "A 2023 bench study compared four printed mask designs, two types of filter media combinations, and different head molds, measuring particle entry and respiratory pressure differential. Filter media, effective area, foam sealing, and thermoforming all affected the results; improving edge sealing may increase the flow rate through the filter media, thereby increasing pressure requirements. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Particle penetration and pressure drop must be interpreted at the same flow rate and assembly state. A low pressure drop can reflect adequate filter area or a bypass around the filter. A higher pressure drop after leakage is reduced indicates a changed airflow path. Studies should therefore report leakage, filtration and resistance together, specifying flow direction, flow rate and headform contact conditions so that numerical advantages can be traced to their causes."
+          },
+          {
+            "type": "p",
+            "text": "The design optimization can begin by fixing the sealed state and studying the filter media area and support structure; then, fixing the filter media assembly and studying the edges and interfaces. Finally, the two sets of parameters are combined to find an acceptable range between particle control, respiratory burden, volume, and weight. When connecting with the aforementioned human frame studies, it is also necessary to evaluate whether speaking and head movements reopen the bypass, so that the performance obtained from the bench can be maintained during dynamic wear."
+          },
+          {
+            "type": "h3",
+            "text": "Healthcare-worker crossover trial of frames"
+          },
+          {
+            "type": "p",
+            "text": "The pairing comparison makes the facial structure of the same person a relatively stable condition, suitable for examining immediate changes after the frame is added. The results should also be analyzed based on whether the initial test was passed: for those who have already achieved a fit, the focus is on whether the added structure causes pressure or operational burden; for those who were initially misfitted, the focus is on which shapes and contact points have improved. These two groups correspond to different product needs and service benefits."
+          },
+          {
+            "type": "p",
+            "text": "Further research could add repeated donning, longer work periods and repeated cleaning to the crossover design, counterbalancing the order to assess learning effects. Time from scan to delivery is also a service outcome: a successful fit must translate into timely access to usable equipment. Feedback therefore returns to facial design, using persistent leakage locations, comfort scores and adjustment records to refine contact contours rather than optimizing only the mean result of a single test."
+          },
+          {
+            "type": "h3",
+            "text": "Community production optimizes face-shield workflows"
+          },
+          {
+            "type": "p",
+            "text": "The face shield manufacturing unit is a component system. Headband printing time, transparent sheet cutting, punching, and assembly need to be coordinated; adding printing equipment does not necessarily increase the number of finished products. Research can record the reasons for waiting, rework, and defects at each stage, identifying resources that limit delivery. Differences in shape and hole placement of the same model on different machines also require comparable results through standardized part or assembly inspections."
+          },
+          {
+            "type": "p",
+            "text": "Production scheduling optimization also impacts post-processing quality. While stacking methods may save manpower, they alter splitting and edge finishing tasks; therefore, capacity should be measured in inspected complete units. As this node extends to reuse studies, product records should retain material, process, and batch information to facilitate returning subsequent warping, cracking, or cleaning issues to manufacturing conditions. Distributed manufacturing thus forms a learning production network, rather than simply a remote copy of documents."
+          },
+          {
+            "type": "p",
+            "text": "Visual inspection is one layer of reusability evaluation and needs to be integrated with dimensions, connection strength, light transmission, and wearing stability. Minor deformations may not yet form obvious cracks, but they can alter the position of the transparent lens or the tension of the headband; surface fine lines can also affect vision. Studies can continuously track the same product and use untreated samples as time controls to describe the path of performance changes with the number of cycles."
+          },
+          {
+            "type": "h3",
+            "text": "Capacity handoff from printing to injection molding"
+          },
+          {
+            "type": "p",
+            "text": "A case report from the Drexel AJFlex project documented printed-headband production alongside injection molding. The team delivered approximately 33,000 face shields to more than 100 organizations in the region. Clinicians, engineers, manufacturers, distribution teams and volunteers participated, with industrial partners supporting capacity expansion. [R06] Project operations and delivery records show how manufacturing organization changed."
+          },
+          {
+            "type": "p",
+            "text": "The process relay addresses the issue of misalignment between demand and design status. In the early stages, when quantities are unclear and designs are still being adjusted, digital manufacturing can handle small-batch trial production. Subsequently, as demand becomes concentrated and the structure stabilizes, fixed mold costs can be spread across more products. Running two processes in parallel also preserves a channel for rapid modifications, separating standard batch production from specific localized needs. The actual switchover conditions therefore include remaining orders, mold delivery time, design freeze level, and assembly capacity."
+          },
+          {
+            "type": "h3",
+            "text": "Actual delivery through a hospital hub"
+          },
+          {
+            "type": "p",
+            "text": "A single-center observational study documented emergency production from March 14 to May 10, 2020, delivering a total of 17,276 items, of which 57.3% were manufactured by individuals; the study hospital served as a central node connecting 10 other hospitals, receiving daily requests and coordinating production both inside and outside the hospital. [R07] Products cover protective equipment, ventilation support, and diagnostic consumables."
+          },
+          {
+            "type": "p",
+            "text": "Such records connect distributed manufacturing with specific uses. The central hospital observes demand, while external makers contribute flexible equipment and staffing; orders and deliveries close the loop. Shifting the unit of analysis from an individual item to a replenishment task allows delivery proportion, response time, product gaps and stock-recovery speed to be studied together. Equal output quantities can alleviate shortages to very different degrees, depending on when demand occurs and what clinical task each item serves."
+          }
+        ]
+      },
+      {
+        "title": "Industry technologies and services",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Three collaboration models became visible in 2020. Prusa organized community manufacturing around an open shield and documented certification and scale-up. Formlabs worked with hospitals on swabs. Carbon and Resolution Medical illustrate a partnership for specialized production of a lattice swab. The dates of announcement, paired clinical validation, delivery and process transfer give distinct milestones. [R08] [R09] [R10] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "In June 2020, Prusa documented its face-shield certification process, covering fused-deposition printing and injection-molding routes. Product documentation included materials, process parameters, transparent sheets, assembly and quality records. Mechanical performance, optical properties, field of view and splash protection were assessed, showing how commercialization fixes manufacturing conditions together with the final assembly. [R09]"
+          },
+          {
+            "type": "p",
+            "text": "The shift from printing to injection molding can be understood as a process choice driven by changes in demand and batch size. Printing is suitable for early modifications and multi-point supply; once recurring demand stabilizes, producers can compare mold investment, unit time, and material utilization. Whether the two approaches can share evaluation results depends on the comparability of the final geometry, materials, and assembly state; the process change also provides an opportunity to test the robustness of the design."
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and production interfaces",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN120828529A considers emergency manufacture for replacement of medical-device parts. It offers a way to organize backup production around part identification, a controlled digital version, acceptance criteria and system performance after substitution. For shields, preserve assembly interfaces when production changes. For breathing circuits, verify system function. [R13] [R09] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Research and industry connections",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Academic comparisons identify what to measure. Industry and hospital projects show how accepted devices reach users. Follow a complete order through failed inspections, material lots, reprints and time to first delivery. These measures locate bottlenecks in testing, production, transport or hospital acceptance. [R01] [R06] [R07]"
+          }
+        ]
+      },
+      {
+        "title": "Outlook and measures of progress",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A useful next step is to test preparedness outside a shortage. A trial order can use the same design revision at two sites and compare acceptance rate, labor per accepted unit and lead time, then test whether decisions remain consistent after changing material or equipment. [R06] [R07] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Regulatory and Safety Considerations in Deploying a Locally Fabricated, Reusable Face Shield in a Hospital Responding to the COVID-19 Pandemic.",
+        "url": "https://doi.org/10.1016/j.medj.2020.06.003",
+        "year": "2020",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "Air seal performance of personalized and statistically shaped 3D-printed face masks compared with market-available surgical and FFP2 masks",
+        "url": "https://www.nature.com/articles/s41598-021-98963-0",
+        "year": "2021",
+        "source": "Scientific Reports",
+        "id": "R02"
+      },
+      {
+        "title": "Benchtop assessment of sealing efficacy and breathability of additively manufactured (AM) face masks",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9974208/",
+        "year": "2023",
+        "source": "Additive Manufacturing",
+        "id": "R03"
+      },
+      {
+        "title": "Open Development and Clinical Validation of Multiple 3D-Printed Nasopharyngeal Collection Swabs: Rapid Resolution of a Critical COVID-19 Testing Bottleneck",
+        "url": "https://doi.org/10.1128/JCM.00876-20",
+        "year": "2020",
+        "source": "Journal of Clinical Microbiology",
+        "id": "R04"
+      },
+      {
+        "title": "Design, manufacturing, and testing of 3D-printed fittings for ergonomic helmet CPAP devices: a case study.",
+        "url": "https://doi.org/10.1038/s41598-025-25851-2",
+        "year": "2025",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "A Cross University-Led COVID-19 Rapid-Response Effort: Design, Build, and Distribute Drexel AJFlex Face Shields",
+        "url": "https://link.springer.com/article/10.1007/s10439-021-02743-w",
+        "year": "2021",
+        "source": "Annals of Biomedical Engineering",
+        "id": "R06"
+      },
+      {
+        "title": "Application of 3D printing and distributed manufacturing during the first-wave of COVID-19 pandemic. Our experience at a third-level university hospital",
+        "url": "https://link.springer.com/article/10.1186/s41205-021-00097-6",
+        "year": "2021",
+        "source": "3D Printing in Medicine",
+        "id": "R07"
+      },
+      {
+        "title": "COVID-19: Prusa Face Shield",
+        "url": "https://www.prusa3d.com/page/covid-19_379/",
+        "year": "2020项目",
+        "source": "Prusa Research",
+        "id": "R08"
+      },
+      {
+        "title": "How to get a certification for face shields",
+        "url": "https://blog.prusa3d.com/how-to-get-a-certification-for-face-shields_36481/",
+        "year": "2020",
+        "source": "Prusa Research",
+        "id": "R09"
+      },
+      {
+        "title": "University of South Florida Health, Northwell Health, Formlabs and Tampa General Hospital Join Forces to Create 3D Printed Nasal Swabs to Test for COVID-19 in Patients in Emergency Shortage Situations",
+        "url": "https://formlabs.com/company/press/joined-forces-3d-printed-nasal-swabs-to-test-covid-19/",
+        "year": "2020",
+        "source": "Formlabs",
+        "id": "R10"
+      },
+      {
+        "title": "Resolution Medical using Carbon to 3D Print Swabs for COVID-19",
+        "url": "https://www.carbon3d.com/news/press-releases/resolution-medical-3d-prints-swabs-for-covid19",
+        "year": "2020",
+        "source": "Carbon / Resolution Medical",
+        "id": "R11"
+      },
+      {
+        "title": "COVID-19 Mask Conversion",
+        "url": "https://formlabs.com/covid-19-response/mask-conversion/",
+        "year": "2020项目",
+        "source": "Formlabs",
+        "id": "R12"
+      },
+      {
+        "title": "Method for emergently processing damage faults of parts of medical apparatus and instruments based on 3d printer",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120828529A",
+        "year": "2025",
+        "source": "Espacenet",
+        "id": "R13"
+      },
+      {
+        "title": "Development, manufacturing, and preliminary validation of a reusable half-face respirator during the COVID-19 pandemic.",
+        "url": "https://doi.org/10.1371/journal.pone.0247575",
+        "year": "2021",
+        "source": "",
+        "id": "R14"
+      }
+    ]
+  },
+  "de": {
+    "id": "H02",
+    "p": "P5",
+    "title": "Probenahme, Schutzausrüstung und Atemtherapiezubehör für den Pandemieeinsatz",
+    "subtitle": "Wie aus dem Ersatz im Engpass eine überprüfbare Lieferfähigkeit wird",
+    "thesis": "Im Notfall muss der 3D-Druck sowohl die Prüfung als auch die Bereitstellung des vollständigen Produkts ermöglichen. Visiere, Maskenzubehör, Probenahmeprodukte und Atemkreisverbinder folgen eigenen Prüfpfaden, können aber Versionsverwaltung, Chargenabnahme und Lieferverfolgung gemeinsam nutzen.",
+    "questions": [],
+    "graph": {
+      "title": "Vom klinischen Engpass zu getrennten Prüfpfaden und Chargenfreigabe",
+      "summary": "Nach der Bestimmung von Bedarf und Produktgrenze entstehen drei Pfade. Jeder wird anhand eigener Anwendungsendpunkte geprüft. Produktionsdaten fließen anschließend in das Liefernetz zurück.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2020",
+          "refs": [
+            "R01"
+          ],
+          "title": "Klinischen Engpass und Bedarf bestimmen",
+          "question": "Welche Produkte müssen vor Ort ersetzt werden?",
+          "evidence": "Das Klinikbeispiel zu Visieren umfasste Gestaltung, Abnahme und Einführung in der Notaufnahme."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2020–2021",
+          "refs": [
+            "R02",
+            "R08"
+          ],
+          "title": "Visiere und Gesichtsabdichtung unterscheiden",
+          "question": "Welche Schnittstelle bestimmt die Schutzwirkung?",
+          "evidence": "Ein Visierprojekt prüfte Montage und Trageverhalten. Maskenstudien verglichen die Dichtheit individuell angepasster, statistischer und marktüblicher Formen."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2020",
+          "refs": [
+            "R04"
+          ],
+          "title": "Probenahmeprodukte validieren",
+          "question": "Erfüllt ein gedrucktes Produkt dieselbe Aufgabe?",
+          "evidence": "Eine offene Entwicklung verglich mehrere Abstrichtupfer paarweise mit einem klinischen Referenzprodukt. Mechanische Integrität und Anwendungserfahrung ergänzten die Funktionsprüfung."
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2025",
+          "refs": [
+            "R05",
+            "R12"
+          ],
+          "title": "Atemtherapiezubehör im gesamten Atemkreis prüfen",
+          "question": "Welche Systemkennwerte können Verbinder verändern?",
+          "evidence": "Eine Studie zu CPAP-Helmen verband Verbindergeometrie, Fertigung und Montageprüfung. Unternehmensprojekte beurteilten die Atemfunktion am vollständigen Maskensystem."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 0,
+          "time": "2021–2023",
+          "refs": [
+            "R03",
+            "R14"
+          ],
+          "title": "Leckage und Druckverlust gemeinsam erfassen",
+          "question": "Wie verändert eine bessere Abdichtung den Atemwiderstand?",
+          "evidence": "Prüfstandsmessungen unterscheiden Leckströmung am Rand vom Durchfluss durch den Filter. Eine Halbmaskenstudie erfasste quantitativen Dichtsitz und Materialkosten nach mehreren Entwurfsrunden."
+        },
+        {
+          "id": "N6",
+          "stage": 2,
+          "lane": 1,
+          "time": "2020–2021",
+          "refs": [
+            "R06",
+            "R07"
+          ],
+          "title": "Entwurf, Hochlauf und Verteilung organisieren",
+          "question": "Wie wird Fertigungskapazität zur abnahmefähigen Lieferung?",
+          "evidence": "Das Hochschulprojekt AJFlex und ein Kliniknetz erfassten gelieferte Stückzahlen, Koordination und Qualitätssicherung als Teil der Fertigungsbewertung."
+        },
+        {
+          "id": "N7",
+          "stage": 3,
+          "lane": 1,
+          "time": "2027–2029",
+          "refs": [
+            "R06",
+            "R07",
+            "R09"
+          ],
+          "title": "Chargen nachprüfen und Reservekapazität erhalten",
+          "question": "Welche Fähigkeit bleibt für den nächsten Engpass abrufbar?",
+          "evidence": "Entwurfsstände, Materialherkunft, abgenommene Chargen und erforderliche Lieferzeiten dienen zur Überprüfung der Kapazität. Dezentrale Standorte dokumentieren Wiederholungsprüfungen."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Schutzausrüstung"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Probenahmeprodukte"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Atemkreisverbinder"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Gesamte Maske prüfen"
+        },
+        {
+          "from": "N3",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Validierung vor Verteilung"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Systemprüfung unterstützt Abnahme"
+        },
+        {
+          "from": "N5",
+          "to": "N7",
+          "kind": "advance",
+          "label": "Kriterien gemeinsam nachprüfen"
+        },
+        {
+          "from": "N6",
+          "to": "N7",
+          "kind": "advance",
+          "label": "Lieferdaten prüfen Versorgung"
+        },
+        {
+          "from": "N7",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Fehler und Verzug schärfen Anforderungen"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Forschungsgegenstand und Endpunkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Die Äste unterscheiden sich in ihrem Kontakt mit Anwendern und Systemen. Abdeckung und Sicht beim Visier hängen von Scheibe, Halterung und Tragedauer ab. Dichtsitz und Druckverlust sind zusätzliche Kriterien beim eng sitzenden Atemschutz. Zubehör für Atemkreise wird im Gesamtsystem bewertet. [R01] [R02] [R03] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Evidenz",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Klinischen Engpass und Bedarf bestimmen"
+          },
+          {
+            "type": "p",
+            "text": "Das Klinikbeispiel zu Visieren umfasste Gestaltung, Abnahme und Einführung in der Notaufnahme. [R01]"
+          },
+          {
+            "type": "h3",
+            "text": "Visiere und Gesichtsabdichtung unterscheiden"
+          },
+          {
+            "type": "p",
+            "text": "Ein Visierprojekt prüfte Montage und Trageverhalten. Maskenstudien verglichen die Dichtheit individuell angepasster, statistischer und marktüblicher Formen. [R02] [R08]"
+          },
+          {
+            "type": "h3",
+            "text": "Probenahmeprodukte validieren"
+          },
+          {
+            "type": "p",
+            "text": "Eine offene Entwicklung verglich mehrere Abstrichtupfer paarweise mit einem klinischen Referenzprodukt. Mechanische Integrität und Anwendungserfahrung ergänzten die Funktionsprüfung. [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "Atemtherapiezubehör im gesamten Atemkreis prüfen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie zu CPAP-Helmen verband Verbindergeometrie, Fertigung und Montageprüfung. Unternehmensprojekte beurteilten die Atemfunktion am vollständigen Maskensystem. [R05] [R12]"
+          },
+          {
+            "type": "h3",
+            "text": "Leckage und Druckverlust gemeinsam erfassen"
+          },
+          {
+            "type": "p",
+            "text": "Prüfstandsmessungen unterscheiden Leckströmung am Rand vom Durchfluss durch den Filter. Eine Halbmaskenstudie erfasste quantitativen Dichtsitz und Materialkosten nach mehreren Entwurfsrunden. [R03] [R14]"
+          },
+          {
+            "type": "h3",
+            "text": "Entwurf, Hochlauf und Verteilung organisieren"
+          },
+          {
+            "type": "p",
+            "text": "Das Hochschulprojekt AJFlex und ein Kliniknetz erfassten gelieferte Stückzahlen, Koordination und Qualitätssicherung als Teil der Fertigungsbewertung. [R06] [R07]"
+          },
+          {
+            "type": "h3",
+            "text": "Chargen nachprüfen und Reservekapazität erhalten"
+          },
+          {
+            "type": "p",
+            "text": "Entwurfsstände, Materialherkunft, abgenommene Chargen und erforderliche Lieferzeiten dienen zur Überprüfung der Kapazität. Dezentrale Standorte dokumentieren Wiederholungsprüfungen. [R06] [R07] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Maskenprüfungen können Filterwirkung und Randleckage getrennt erklären. Bei besserer Randabdichtung strömt möglicherweise mehr Luft durch den Filter. Daher wird der Druckverlust am zusammengesetzten Produkt mitgemessen. Bei wiederverwendbaren Geräten sind Dichtsitz und Zustand der Bauteile nach wiederholtem Anlegen relevant. [R02] [R03] [R14]"
+          },
+          {
+            "type": "p",
+            "text": "Bei Atemtherapiezubehör sind Montageprüfung und Systemprüfung getrennt zu dokumentieren. Erstere erfasst Haltekraft und wiederholte Montage. Letztere vergleicht Druck und Luftstrom mit dem Referenzsystem. Zubehörteil, Patientenschnittstelle, Gasquelle und Betriebsbedingungen werden gemeinsam erfasst, damit sich Leistungsänderungen zuordnen lassen. [R05] [R12]"
+          },
+          {
+            "type": "h3",
+            "text": "Partikelprüfung des Gesamtsystems zeigt Nebenwege"
+          },
+          {
+            "type": "p",
+            "text": "Dieses Verfahren fixiert die Kanten der Filterfläche temporär, wodurch Gehäuse und Anschlusspunkte sichtbar werden. Bei gedruckten Materialien kann Luft entlang von Materialfehlern, Nähten und um das Filterelement herum strömen. Daher lässt sich die Leistung nach der Montage nicht allein anhand des nominellen Wirkungsgrades des Filtermaterials beschreiben. Zur Bewertung des Designs müssen zunächst mögliche Strömungswege eingezeichnet und anschließend Gehäuse, Schnittstelle und Filterelement einzeln verändert werden, um die Komponente zu ermitteln, die die Luftdurchlässigkeit maßgeblich beeinflusst."
+          },
+          {
+            "type": "p",
+            "text": "Nachfolgende Tests mit dem ermöglichen den Vergleich verschiedener Gehäuseprozesse mit demselben Filtermedium und derselben effektiven Fläche. Dabei werden Montagekraft und Schnittstellenabmessungen erfasst. Sinkt die Partikelanzahl nach der Verstärkung der Filterabdeckung, ist eine erneute Montage erforderlich, um festzustellen, ob sich das Ergebnis reproduzieren lässt und somit die Betriebsfaktoren zu identifizieren. Hierbei ist es wichtig, Partikel und Differenzdruck auf demselben Prüfstand zu simulieren, da das Blockieren eines Bypasses, der den Durchfluss erleichtert, einen höheren Luftdurchsatz durch das Filtermedium erfordert und somit den Systemwiderstand verändert."
+          },
+          {
+            "type": "h3",
+            "text": "Individuelle und statistische Gesichtsformen vergleichen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2021 erzeugte starre Testgesichtsmodelle aus Scans und verband sie mit einem Atemsimulationskreislauf. Verglichen wurden individuell gedruckte Masken, statistisch gestaltete Masken und kommerzielle Produkte. Individuelle Modelle hatten insgesamt weniger Luftleckage; statistische Formen boten eine weitere Größenanpassungsstrategie für die Testgesichter.[R02]"
+          },
+          {
+            "type": "p",
+            "text": "Der Wert der starren Gesichtsmaske liegt in ihren festen geometrischen Grenzen, die wiederholte Anpassungen der Maskenform und die Beobachtung von Undichtigkeiten ermöglichen. Da das Tragen einer Maske auch zu Verformungen des Weichgewebes, Spannung des Kopfbandes und Sprechbewegungen führt, eignen sich die Ergebnisse der Gesichtsmasken-Analyse zur Bestimmung der Kontaktkonturen, die anschließend durch Tests mit Probanden verifiziert werden. Bei der Konstruktion müssen die Krümmung des Nasenrückens, der Wangenknochen und der Kieferlinie separat berücksichtigt werden, und lokale Spalten können den Luftstromkanal direkter beeinflussen als allgemeine Formfehler."
+          },
+          {
+            "type": "p",
+            "text": "Individuelle Designs und statistische Dimensionen können einen gemeinsamen Vergleichsrahmen nutzen. Zunächst wird ermittelt, welche morphologischen Kombinationen innerhalb einer Population zu Fehlpaarungen neigen. Anschließend wird der Aufwand für das Hinzufügen einer Dimension mit dem Design- und Serviceaufwand für jeden einzelnen Scan verglichen. Daraufhin wird die Begrenzungsform in Verbindung mit der flexiblen Polsterung und der Rahmenelastizität angepasst. So lässt sich der Wert der Individualisierung als Verbesserung für spezifische Gruppen mit Fehlpaarungen ausdrücken, während gleichzeitig der Fertigung klar wird, welche Parameter anhand individueller Daten bestimmt werden sollten und welche konstant bleiben können."
+          },
+          {
+            "type": "h3",
+            "text": "Scangestützte Rahmen verbessern die Randpassung"
+          },
+          {
+            "type": "p",
+            "text": "Der Rahmen wirkt durch die Veränderung der Kantenspannung und der Faltenform. Medizinische Masken sind von Natur aus weich; eine lokale Kompression kann Verformungen reduzieren und Lücken verlagern. Daher muss die Forschung die Rahmenkontur, die Kompressionsmethode und die Kontaktveränderungen während der Bewegung gleichzeitig erfassen; sie kann sich nicht allein auf Standbilder stützen. Die durchschnittliche Verbesserung muss zudem durch individuelle Verteilungsdaten ergänzt werden, um weiterhin unpassende Personen und Bereiche zu identifizieren."
+          },
+          {
+            "type": "p",
+            "text": "bietet eine klare Ausgangsbasis für individuelles Zubehör: Das vorhandene Filtermaterial übernimmt die Filtration, die gedruckte Struktur gibt die Form vor; beides wird separat vermessen, bevor die Kombination bewertet wird. Im nächsten Schritt werden individualisierte Rahmen, Rahmen mit standardisierten Abmessungen und die angepasste Originalbefestigungsmethode an derselben Maske verglichen und diese anschließend wiederholt getragen. So lassen sich die Vorteile der Rahmengeometrie und die Vorteile der Vertrautheit mit der Trageweise unterscheiden sowie feststellen, ob eine verbesserte Passform mit lokalem Druck einhergeht."
+          },
+          {
+            "type": "h3",
+            "text": "Verstellbare Rahmen für unterschiedliche Atemschutzmasken"
+          },
+          {
+            "type": "p",
+            "text": "Die verstellbare Struktur des überträgt dem Träger einen Teil des Anpassungsprozesses, wodurch zwar die Anzahl der einzelnen Konstruktionsschritte reduziert wird, jedoch Probleme hinsichtlich der Konsistenz der Anpassung entstehen können. Untersuchungen können die anfängliche Anpassungszeit, die benötigte Unterstützung, Positionsänderungen nach erneutem Tragen und Testergebnisse erfassen. Durch die größere Flexibilität bei der Anpassung finden Anwender möglicherweise eine besser geeignete Position, oder es kann schwierig sein, die Passform nach dem Auseinandernehmen wiederherzustellen. Daher sind eindeutige Positionierungs- und Prüfmethoden erforderlich."
+          },
+          {
+            "type": "p",
+            "text": "Im Vergleich zu kundenspezifischen Scanrahmen eignen sich verstellbare Rahmen besser für den Vergleich von Servicepfaden: Welche Arten von Abweichungen eignen sich für Anpassungen vor Ort und welche erfordern die Neuerstellung von Kontaktprofilen. Die Verwendung des Atemschutzmaskenmodells als Stratifizierungsfaktor hilft, die Verallgemeinerung von Verbesserungen an einem Modell auf alle Kombinationen zu vermeiden. Zustand des Kopfbandes, Nutzungsdauer des Materials und Filterleistung werden separat erfasst, um sicherzustellen, dass die Auswirkungen der strukturellen Fixierung der verbleibenden Leistung des Gesamtprodukts entsprechen."
+          },
+          {
+            "type": "h3",
+            "text": "Leckage und Druckdifferenz am Prüfstand gemeinsam messen"
+          },
+          {
+            "type": "p",
+            "text": "Eine 2023 durchgeführte Laborstudie verglich vier gedruckte Maskendesigns, zwei Arten von Filtermedienkombinationen und verschiedene Kopfformen. Gemessen wurden der Partikeleintritt und die Atemdruckdifferenz. Filtermedium, effektive Fläche, Schaumstoffabdichtung und Thermoformen beeinflussten die Ergebnisse. Eine verbesserte Randabdichtung kann den Durchfluss durch das Filtermedium erhöhen und dadurch den Druckbedarf steigern. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Partikel- und Druckmesswerte müssen unter gleichen Durchfluss- und Montagebedingungen interpretiert werden. Niedrige Druckdifferenzen können auf eine ausreichend große Filtermedienfläche oder einen Bypass um das Filtermedium herum zurückzuführen sein; höhere Druckdifferenzen nach Reduzierung der Leckage deuten auf eine Änderung des Luftströmungswegs hin. Daher sollten Studien Leckage, Filtration und Widerstand gleichzeitig erfassen und die Strömungsrichtung, den Durchfluss und die Kontaktbedingungen zwischen Kopf und Bohrung während der Messung angeben, um die Gründe für numerische Vorteile verschiedener Konstruktionen zu differenzieren."
+          },
+          {
+            "type": "p",
+            "text": "Die Designoptimierung kann mit der Festlegung des abgedichteten Zustands und der Untersuchung der Filtermedienfläche und der Trägerstruktur beginnen. Anschließend wird die Filtermedienanordnung festgelegt und die Kanten und Grenzflächen untersucht. Abschließend werden die beiden Parametersätze kombiniert, um einen akzeptablen Bereich zwischen Partikelkontrolle, Atembelastung, Volumen und Gewicht zu ermitteln. In Verbindung mit den zuvor genannten Studien zur menschlichen Belastbarkeit muss außerdem geprüft werden, ob Sprechen und Kopfbewegungen den Bypass wieder öffnen, damit die im Labor ermittelten Ergebnisse auch unter dynamischer Belastung erhalten bleiben."
+          },
+          {
+            "type": "h3",
+            "text": "Rahmen in einer Crossover-Studie mit Gesundheitspersonal prüfen"
+          },
+          {
+            "type": "p",
+            "text": "Der Paarvergleich stellt eine relativ stabile Gesichtsstruktur derselben Person dar und eignet sich daher zur Untersuchung unmittelbarer Veränderungen nach dem Anbringen des Rahmens. Die Ergebnisse sollten zudem danach analysiert werden, ob der Ausgangstest bestanden wurde: Bei Personen, die bereits eine optimale Passform erreicht haben, liegt der Fokus darauf, ob die zusätzliche Struktur Druck oder eine Belastung bei der Bedienung verursacht; bei Personen mit anfänglicher Fehlanpassung liegt der Fokus darauf, welche Formen und Kontaktpunkte sich verbessert haben. Diese beiden Gruppen entsprechen unterschiedlichen Produktanforderungen und Servicevorteilen."
+          },
+          {
+            "type": "p",
+            "text": "Weiterführende Forschung könnte wiederholtes Tragen, längere Arbeitszeiten und mehrfache Reinigungen in die Entwicklung einbeziehen und dabei die Reihenfolge dieser Elemente variieren, um den Lerneffekt zu beobachten. Die Zeitspanne zwischen Scan und Lieferung sollte ebenfalls als praktischer Serviceindikator betrachtet werden, da eine erfolgreiche Messung zu einer schnellen Verfügbarkeit der benötigten Materialien führen muss. Das Feedback in der Abbildung führt somit zurück zum Gesichtsdesign: Anstatt nur den Durchschnitt eines einzelnen Tests zu betrachten, sollten anhaltende Fehlpassungen, Komfortbewertungen und Anpassungsdaten gemeinsam genutzt werden, um die Kontaktkontur zu optimieren."
+          },
+          {
+            "type": "h3",
+            "text": "Gemeinschaftsfertigung organisiert die Gesichtsschutzproduktion"
+          },
+          {
+            "type": "p",
+            "text": "Die Gesichtsschutzschilde-Fertigungseinheit ist ein Komponentensystem. Druckzeit für das Kopfband, Zuschnitt der transparenten Folie, Stanzen und Montage müssen koordiniert werden; zusätzliche Druckmaschinen erhöhen nicht zwangsläufig die Anzahl der fertigen Produkte. Untersuchungen können die Gründe für Wartezeiten, Nacharbeiten und Fehler in jeder Phase erfassen und so die Ressourcen identifizieren, die die Lieferfähigkeit einschränken. Unterschiede in Form und Lochpositionierung desselben Modells auf verschiedenen Maschinen erfordern zudem vergleichbare Ergebnisse durch standardisierte Teile- oder Montageprüfungen."
+          },
+          {
+            "type": "p",
+            "text": "Die Optimierung der Produktionsplanung wirkt sich auch auf die Qualität der Nachbearbeitung aus. Stapelverfahren sparen zwar Arbeitskräfte, verändern aber die Arbeitsschritte des Teilens und der Kantenbearbeitung. Daher sollte die Kapazität in geprüften, vollständigen Einheiten gemessen werden. Da dieser Ansatz auch Wiederverwendungsstudien umfasst, sollten die Produktdokumentationen Material-, Prozess- und Chargeninformationen enthalten, um die Rückführung von Problemen wie Verzug, Rissen oder Reinigungsfehlern in die Produktion zu erleichtern. Die dezentrale Fertigung bildet somit ein lernendes Produktionsnetzwerk und nicht nur eine digitale Kopie von Dokumenten."
+          },
+          {
+            "type": "p",
+            "text": "Die Sichtprüfung ist ein Bestandteil der Wiederverwendbarkeitsbewertung und muss mit den Prüfungen von Abmessungen, Verbindungsfestigkeit, Lichtdurchlässigkeit und Tragestabilität kombiniert werden. Geringfügige Verformungen führen möglicherweise noch nicht zu sichtbaren Rissen, können aber die Position der transparenten Linse oder die Spannung des Kopfbandes verändern; auch feine Oberflächenlinien können die Sicht beeinträchtigen. Studien können dasselbe Produkt kontinuierlich verfolgen und unbehandelte Proben als Zeitkontrollen verwenden, um die Leistungsveränderungen in Abhängigkeit von der Anzahl der Zyklen zu beschreiben."
+          },
+          {
+            "type": "h3",
+            "text": "Kapazität vom Druck an den Spritzguss übergeben"
+          },
+          {
+            "type": "p",
+            "text": "Der Fallbericht zum Drexel-AJFlex-Projekt dokumentiert parallelen Kopfbanddruck und Spritzgussserienfertigung. Etwa 33.000 Gesichtsschutzschilde wurden an über 100 regionale Organisationen geliefert. Klinik, Technik, Fertigung, Verteilung und Freiwillige wirkten mit; Industriepartner erweiterten die Kapazität.[R06] Projekt- und Lieferdaten beschreiben die veränderte Fertigungsorganisation."
+          },
+          {
+            "type": "p",
+            "text": "Das Prozessrelais löst das Problem der Diskrepanz zwischen Bedarf und Konstruktionsstatus. In der Anfangsphase, wenn die Mengen noch unklar sind und die Konstruktionen angepasst werden, ermöglicht die digitale Fertigung die Durchführung von Kleinserien-Testproduktionen. Sobald sich der Bedarf konzentriert und die Struktur stabilisiert, können die fixen Werkzeugkosten auf mehr Produkte verteilt werden. Der parallele Betrieb zweier Prozesse gewährleistet zudem die Möglichkeit schneller Anpassungen und trennt die Standardserienfertigung von spezifischen, lokal begrenzten Anforderungen. Die tatsächlichen Umschaltbedingungen umfassen daher Restaufträge, Werkzeuglieferzeit, Konstruktionsstatus und Montagekapazität."
+          },
+          {
+            "type": "h3",
+            "text": "Tatsächliche Auslieferungen eines Krankenhausknotens"
+          },
+          {
+            "type": "p",
+            "text": "Eine monozentrische Beobachtungsstudie dokumentierte die Notfallproduktion vom 14. März bis 10. Mai 2020. Insgesamt wurden 17.276 Artikel geliefert, von denen 57,3 % von Einzelpersonen hergestellt wurden. Das Studienkrankenhaus diente als zentrale Anlaufstelle für zehn weitere Krankenhäuser, nahm täglich Anfragen entgegen und koordinierte die Produktion innerhalb und außerhalb des Krankenhauses. [R07] Die Produkte umfassen Schutzausrüstung, Beatmungsgeräte und diagnostische Verbrauchsmaterialien."
+          },
+          {
+            "type": "p",
+            "text": "Der Hauptbeitrag von Datensätzen wie liegt in der Verknüpfung dezentraler Fertigungsaktivitäten mit spezifischen Anwendungsbereichen. Zentrale Krankenhäuser können Bedarfsänderungen beobachten, während externe Hersteller flexible Ausrüstung und Personal bereitstellen; beide bilden durch Bestellungen und Lieferungen einen geschlossenen Kreislauf. Sobald die Analyseeinheit von Einzelartikeln auf Nachschubvorgänge verlagert wird, lassen sich Lieferraten, Reaktionszeiten, Angebotslücken und Bestandserholungsgeschwindigkeiten gemeinsam betrachten. Dieselbe Produktmenge kann völlig unterschiedlichen Maßnahmen zur Deckung von Engpässen entsprechen; Vergleiche müssen den Zeitpunkt des Bedarfsauftretens und den klinischen Zweck jedes Artikels berücksichtigen."
+          }
+        ]
+      },
+      {
+        "title": "Technologien und Angebote der Unternehmen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "2020 wurden drei Kooperationsformen sichtbar. Prusa koordinierte dezentrale Fertigung mit einem offenen Visierentwurf und dokumentierte Zertifizierung und Produktionshochlauf. Formlabs entwickelte Tupfer mit Kliniken. Carbon und Resolution Medical stehen für arbeitsteilige Spezialfertigung eines Gittertupfers. Veröffentlichung, klinischer Paarvergleich, Lieferung und Prozessübertragung ergeben getrennte Zeitpunkte. [R08] [R09] [R10] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Im Juni 2020 veröffentlichte Prusa den Zertifizierungsprozess für Gesichtsschutzschilde aus Schmelzschichtdruck und Spritzguss. Material, Parameter, transparente Folie, Montage und Qualitätsaufzeichnungen gehörten zur Produktbeschreibung. Die historische Bewertung von Mechanik, Optik, Sichtfeld und Spritzschutz zeigt, dass Fertigungsbedingungen und fertige Komponenten gemeinsam festgelegt werden müssen.[R09]"
+          },
+          {
+            "type": "p",
+            "text": "Der Wechsel vom Drucken zum Spritzgießen lässt sich als eine durch Nachfrage- und Losgrößenänderungen bedingte Prozesswahl verstehen. Drucken eignet sich für frühe Anpassungen und die Versorgung mit mehreren Standorten; sobald sich die wiederkehrende Nachfrage stabilisiert hat, können Hersteller Werkzeuginvestitionen, Durchlaufzeiten und Materialausnutzung vergleichen. Ob die beiden Verfahren vergleichbare Bewertungsergebnisse liefern können, hängt von der Vergleichbarkeit der Endgeometrie, der Materialien und des Montagezustands ab; der Prozesswechsel bietet zudem die Möglichkeit, die Robustheit des Designs zu testen."
+          }
+        ]
+      },
+      {
+        "title": "Patentansätze und Fertigungsschnittstellen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN120828529A behandelt die Notfallfertigung von Ersatzteilen für Medizinprodukte. Eine Ersatzversorgung lässt sich daran entlang strukturieren: Teil identifizieren, digitalen Stand festlegen, Abnahmekriterien bestimmen und die Systemfunktion nach dem Austausch dokumentieren. Bei Visieren steht die Montageschnittstelle im Vordergrund, beim Atemkreis die Gesamtfunktion. [R13] [R09] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Verbindungen von Forschung und Industrie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Studien zeigen, was gemessen werden muss. Projekte aus Kliniken und Unternehmen zeigen, wie abgenommene Produkte die Anwender erreichen. Bei einem vollständigen Auftrag sind nicht bestandene Prüfungen, Materialchargen, Nachdrucke und Zeit bis zur ersten Lieferung zu verfolgen. Daraus ergeben sich Engpässe bei Prüfung, Fertigung, Logistik oder Klinikabnahme. [R01] [R06] [R07]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick und Kriterien für Fortschritt",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Als nächster Schritt eignet sich eine Übung außerhalb des Engpasses. Ein Probeauftrag mit demselben Entwurfsstand an zwei Standorten erlaubt Vergleiche von Abnahmequote, Arbeitszeit je akzeptierter Einheit und Lieferzeit. Anschließend lässt sich die Übereinstimmung der Abnahme bei Material- oder Gerätewechsel prüfen. [R06] [R07] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Regulatory and Safety Considerations in Deploying a Locally Fabricated, Reusable Face Shield in a Hospital Responding to the COVID-19 Pandemic.",
+        "url": "https://doi.org/10.1016/j.medj.2020.06.003",
+        "year": "2020",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "Air seal performance of personalized and statistically shaped 3D-printed face masks compared with market-available surgical and FFP2 masks",
+        "url": "https://www.nature.com/articles/s41598-021-98963-0",
+        "year": "2021",
+        "source": "Scientific Reports",
+        "id": "R02"
+      },
+      {
+        "title": "Benchtop assessment of sealing efficacy and breathability of additively manufactured (AM) face masks",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9974208/",
+        "year": "2023",
+        "source": "Additive Manufacturing",
+        "id": "R03"
+      },
+      {
+        "title": "Open Development and Clinical Validation of Multiple 3D-Printed Nasopharyngeal Collection Swabs: Rapid Resolution of a Critical COVID-19 Testing Bottleneck",
+        "url": "https://doi.org/10.1128/JCM.00876-20",
+        "year": "2020",
+        "source": "Journal of Clinical Microbiology",
+        "id": "R04"
+      },
+      {
+        "title": "Design, manufacturing, and testing of 3D-printed fittings for ergonomic helmet CPAP devices: a case study.",
+        "url": "https://doi.org/10.1038/s41598-025-25851-2",
+        "year": "2025",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "A Cross University-Led COVID-19 Rapid-Response Effort: Design, Build, and Distribute Drexel AJFlex Face Shields",
+        "url": "https://link.springer.com/article/10.1007/s10439-021-02743-w",
+        "year": "2021",
+        "source": "Annals of Biomedical Engineering",
+        "id": "R06"
+      },
+      {
+        "title": "Application of 3D printing and distributed manufacturing during the first-wave of COVID-19 pandemic. Our experience at a third-level university hospital",
+        "url": "https://link.springer.com/article/10.1186/s41205-021-00097-6",
+        "year": "2021",
+        "source": "3D Printing in Medicine",
+        "id": "R07"
+      },
+      {
+        "title": "COVID-19: Prusa Face Shield",
+        "url": "https://www.prusa3d.com/page/covid-19_379/",
+        "year": "2020项目",
+        "source": "Prusa Research",
+        "id": "R08"
+      },
+      {
+        "title": "How to get a certification for face shields",
+        "url": "https://blog.prusa3d.com/how-to-get-a-certification-for-face-shields_36481/",
+        "year": "2020",
+        "source": "Prusa Research",
+        "id": "R09"
+      },
+      {
+        "title": "University of South Florida Health, Northwell Health, Formlabs and Tampa General Hospital Join Forces to Create 3D Printed Nasal Swabs to Test for COVID-19 in Patients in Emergency Shortage Situations",
+        "url": "https://formlabs.com/company/press/joined-forces-3d-printed-nasal-swabs-to-test-covid-19/",
+        "year": "2020",
+        "source": "Formlabs",
+        "id": "R10"
+      },
+      {
+        "title": "Resolution Medical using Carbon to 3D Print Swabs for COVID-19",
+        "url": "https://www.carbon3d.com/news/press-releases/resolution-medical-3d-prints-swabs-for-covid19",
+        "year": "2020",
+        "source": "Carbon / Resolution Medical",
+        "id": "R11"
+      },
+      {
+        "title": "COVID-19 Mask Conversion",
+        "url": "https://formlabs.com/covid-19-response/mask-conversion/",
+        "year": "2020项目",
+        "source": "Formlabs",
+        "id": "R12"
+      },
+      {
+        "title": "Method for emergently processing damage faults of parts of medical apparatus and instruments based on 3d printer",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120828529A",
+        "year": "2025",
+        "source": "Espacenet",
+        "id": "R13"
+      },
+      {
+        "title": "Development, manufacturing, and preliminary validation of a reusable half-face respirator during the COVID-19 pandemic.",
+        "url": "https://doi.org/10.1371/journal.pone.0247575",
+        "year": "2021",
+        "source": "",
+        "id": "R14"
+      }
+    ]
+  }
+}

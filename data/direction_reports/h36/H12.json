@@ -1,0 +1,1262 @@
+{
+  "zh": {
+    "id": "H12",
+    "p": "P1",
+    "title": "颌面重建中的导板与个体化植入物",
+    "subtitle": "从切除和分段到重建位置、固定与咬合",
+    "thesis": "颌面重建中，导板首先传递切除边界，定制板及植入物再传递骨段之间的空间关系。切面准确度、重建位置和后期功能需要在同一组合流程内分别测量。",
+    "questions": [],
+    "graph": {
+      "title": "切除、骨段布置、固定与功能的连续校验",
+      "summary": "影像定义边界后分成切除、移植骨段与直接植入三路。通过配准和病例随访区分转移误差与远期因素。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2021–2025",
+          "refs": [
+            "R04",
+            "R07"
+          ],
+          "title": "定义切除边界和重建目标",
+          "question": "切除边界、可用骨面与咬合如何协调？",
+          "evidence": "影像分割与医生约束共同决定剩余骨、计划切除和预期咬合。规划验收要保留用于固定与定位的可靠骨面。"
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2023",
+          "refs": [
+            "R02",
+            "R04"
+          ],
+          "title": "从模型切面到实际切面",
+          "question": "最终切面偏离术前计划多少？",
+          "evidence": "14 例节段下颌骨切除研究记录计划与实际切除平均偏差 1.52 mm。测量部位、切面角度和肿瘤边界分别进入分析。"
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2021",
+          "refs": [
+            "R06",
+            "R16"
+          ],
+          "title": "按导板布置腓骨段和固定点",
+          "question": "预设孔位能否保持骨段位置？",
+          "evidence": "打印切割导板给出骨段形态，预设孔道与定制板把骨段排列带到术中。中面部病例描述了导板、移植骨段和钛固定件的组合。"
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2023–2026",
+          "refs": [
+            "R03",
+            "R05",
+            "R09"
+          ],
+          "title": "用直接植入体恢复曲面和容积",
+          "question": "不同部位要恢复曲面还是容积？",
+          "evidence": "上颌、眼眶和正颌的几何目标不同。在眼眶，应关注曲面和容积，在上颌位置比较中，要保留计划位置和最终骨面配准。"
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 1,
+          "time": "2022–2025",
+          "refs": [
+            "R08",
+            "R10"
+          ],
+          "title": "核对结构强度和整体流程",
+          "question": "力学和流程评价能否解释总偏差？",
+          "evidence": "下颌连续性缺损的轻量结构需要疲劳验证。流程研究可另行记录术前投入、术中耗时和变更。"
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025",
+          "refs": [
+            "R01"
+          ],
+          "title": "比较相同适应证下的制造路线",
+          "question": "同一适应证下加工路径改变了哪些结果？",
+          "evidence": "20 例严重萎缩无牙下颌随机比较铣削和打印骨膜下植入物。12 个月存留、角度偏差及影像骨吸收未见统计显著组间差异。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "界定切除"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "计划骨段复位"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "确定直接植入形态"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "验证计划执行"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "检查配置及固定"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "比较曲面与结构载荷"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "按用途比较成品和临床"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "术后偏差和软组织结果回校"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究对象与评价边界",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "把导板、重建板和替代骨体分别注册到术前计划。切面可用距离与角度描述，重建体可用骨段位置、关节关系和咬合描述，远期评价还要记录愈合、固定稳定和软组织情况。 [R02] [R04] [R05] [R16]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与研究解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "定义切除边界和重建目标"
+          },
+          {
+            "type": "p",
+            "text": "影像分割与医生约束共同决定剩余骨、计划切除和预期咬合。规划验收要保留用于固定与定位的可靠骨面。 [R04] [R07]"
+          },
+          {
+            "type": "h3",
+            "text": "从模型切面到实际切面"
+          },
+          {
+            "type": "p",
+            "text": "14 例节段下颌骨切除研究记录计划与实际切除平均偏差 1.52 mm。测量部位、切面角度和肿瘤边界分别进入分析。 [R02] [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "按导板布置腓骨段和固定点"
+          },
+          {
+            "type": "p",
+            "text": "打印切割导板给出骨段形态，预设孔道与定制板把骨段排列带到术中。中面部病例描述了导板、移植骨段和钛固定件的组合。 [R06] [R16]"
+          },
+          {
+            "type": "h3",
+            "text": "用直接植入体恢复曲面和容积"
+          },
+          {
+            "type": "p",
+            "text": "上颌、眼眶和正颌的几何目标不同。在眼眶，应关注曲面和容积，在上颌位置比较中，要保留计划位置和最终骨面配准。 [R03] [R05] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "核对结构强度和整体流程"
+          },
+          {
+            "type": "p",
+            "text": "下颌连续性缺损的轻量结构需要疲劳验证。流程研究可另行记录术前投入、术中耗时和变更。 [R08] [R10]"
+          },
+          {
+            "type": "h3",
+            "text": "比较相同适应证下的制造路线"
+          },
+          {
+            "type": "p",
+            "text": "20 例严重萎缩无牙下颌随机比较铣削和打印骨膜下植入物。12 个月存留、角度偏差及影像骨吸收未见统计显著组间差异。 [R01]"
+          },
+          {
+            "type": "p",
+            "text": "骨切除精度和最终重建偏差是两个问题。第一项由导板接触与切面执行决定，第二项还加入骨段、固定件和软组织张力。应逐步记录骨段未固定和固定后的姿态，否则术后 CT 只能发现总体误差。 [R02] [R04] [R05] [R16]"
+          },
+          {
+            "type": "p",
+            "text": "骨膜下试验的铣削、打印组各 10 例，出现一枚铣削植入物失效。小样本在指定指标上的非显著差异可引导扩大比较。若目标是以工艺替代保持临床等效，需预设临床可接受的差异范围并记录后处理、版次和软组织条件。 [R01]"
+          },
+          {
+            "type": "h3",
+            "text": "医生意图转为约束"
+          },
+          {
+            "type": "p",
+            "text": "几何可靠之后，设计工具仍需表达医生对固定的判断。2025年下颌算法让医生选取板路径及螺钉位置，程序完成样条插值、曲面扫掠、孔位整合与打印文件生成，并利用有限元检验应力。研究报告选点约一分钟，后续CAD生成约40—60秒。[R07]"
+          },
+          {
+            "type": "p",
+            "text": "这项工作把临床选择与重复几何操作分开，为理解自动设计的价值提供了具体对象。路径与孔位不是装饰性参数，它们决定固定到哪块骨、手术是否可达以及载荷如何跨越缺损；算法则使这些选择能够稳定成为可计算模型。由此，评价速度时应把输入准备、自动生成、医生审核和返工分别计时，避免将局部建模速度当作完整病例周期。"
+          },
+          {
+            "type": "h3",
+            "text": "轻量结构接受疲劳检验"
+          },
+          {
+            "type": "p",
+            "text": "下颌重建把形态恢复推进到跨缺损的受力问题。研究利用105例下颌影像建立几何依据，结合有限元及加权拓扑优化，三类结构较实心设计减重54.3%—69.7%，增材制造重建件通过25万次动态加载。研究同时观察传统骨板构型的断裂或松动。[R08]"
+          },
+          {
+            "type": "p",
+            "text": "设计思想是根据不同咬合条件安排内部支撑，而非均匀删去材料。外形服务于解剖关系，内部梁的位置与尺寸服务于力流，两者可以具有不同的优化目标。有限元提供某个边界条件下的应力分布，台架则检验实际制造结构及连接在循环载荷中是否维持功能；将这两种方法结合，能够发现仅靠静态峰值无法解释的问题。"
+          },
+          {
+            "type": "h3",
+            "text": "眼眶曲面与容积恢复"
+          },
+          {
+            "type": "p",
+            "text": "眼眶分支强调空间支撑而非下颌式的跨缺损承载。40例回顾性研究使用TnR mesh，比较术前及六个月CT。患健侧容积比由109.0%降至100.6%，形态均方根距离中位值由3.426降至1.073毫米；器械使用PCL与β-TCP复合材料。[R09]"
+          },
+          {
+            "type": "p",
+            "text": "容积与局部曲面距离提供互补信息。两个形状可以具有相近容积，却在重要支撑区存在局部凹陷；相反，局部距离改善也可能不足以解释整体空间恢复。将两者同时测量，能够把整体空间目标与表面适配连接起来。对侧镜像提供了个体内参照，因而研究问题聚焦于单侧缺损条件下的恢复程度，而不必假定所有患者拥有同一标准眼眶形态。"
+          },
+          {
+            "type": "h3",
+            "text": "颌面重建的术前组织"
+          },
+          {
+            "type": "p",
+            "text": "2022 年在线发表、2024 年见刊的颌面重建研究比较 13 名患者，其中 8 名使用虚拟规划和打印切割导板，5 名采用常规方式。小规模系列报告手术时间减少。其工作流把腓骨分段和切割位置提前确定，减少术中重新测量与调整。[R10]"
+          },
+          {
+            "type": "p",
+            "text": "腓骨瓣重建包含供区切割、受区切除和多骨段组装，术前规划可以将一部分空间推理和测量提前完成。时间节省的机制应通过阶段记录来检验，例如分别测量切割、骨段定位和固定耗时，确定哪一部分真正受导板影响。"
+          },
+          {
+            "type": "p",
+            "text": "两组病例数量较少，比较时需要保留缺损范围、骨段数量及团队配置等具体条件。更有解释力的后续设计是连续记录相同团队的病例，并对复杂度进行分层。术中时间、缺血时间和术前工时各有不同意义，将它们分别呈现，能够判断节省来自工作转移、流程熟练还是几何定位的实质改进。"
+          },
+          {
+            "type": "p",
+            "text": "对医院资源评价而言，术前任务常可并行完成，而手术室时间更难扩展。研究可据此计算不同岗位的实际投入，并观察是否减少加台、延迟或重复准备，使效率收益对应具体服务能力。"
+          }
+        ]
+      },
+      {
+        "title": "企业技术与服务路线",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Stryker Facial iD 的 K193143 描述增材制造患者特异性板，3D Systems VSP 交付规划、模型和定位器件。Materialise 颌面创伤服务由医生与工程人员复核导板和植入物设计。组合交付应核查导板、板件和骨段版本是否一致，并将法规用途与病例数据分开。 [R11] [R12] [R13] [R14]"
+          }
+        ]
+      },
+      {
+        "title": "专利设计与制造接口",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN109394328A 将钛板嵌合、预设孔道与腓骨瓣重建放到导板系统中，EP4454614A2 聚焦颅颌面植入对象。可把技术主张展开成可测变量：孔位、板件锁定和骨段间姿态，以及实际植入件与软组织可覆盖空间。 [R06] [R15]"
+          }
+        ]
+      },
+      {
+        "title": "学术与产业的结合点",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "连接两端的最小信息包包括影像版本、切面和孔位坐标、制造检查数据、术中变更及随访。把不同图像中的计划、导板和骨段保留在同一坐标中，可以解释错误是由制造、就位还是改变计划导致。 [R02] [R04] [R07] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "未来演进与验证指标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "下一步可按原发病因、缺损部位和重建材料建立病例登记，将切面误差和种植位置分别连接到功能和再干预。重点观察按期可用的产品、临时改板率、复合骨段误差、软组织暴露及长期牙列或咬合恢复。 [R01] [R02] [R09] [R16]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Clinical and Radiographic Assessment of Milled Versus 3D-Printed Patient-Specific Subperiosteal Implants for Atrophic Mandibular Ridges: A Randomized Clinical Trial.",
+        "url": "https://doi.org/10.7759/cureus.80326",
+        "year": "2025",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "Cutting guides in mandibular tumor ablation: Are we as accurate as we think?",
+        "url": "https://doi.org/10.1016/j.sdentj.2023.11.017",
+        "year": "2023",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "Analysis of the Effectiveness of 3D Printed Patient-Specific Implants for Reconstruction of Maxillary Defect Secondary to Mucormycosis.",
+        "url": "https://doi.org/10.1007/s12663-023-01922-7",
+        "year": "2023",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Procedure Increasing the Accuracy of Modelling and the Manufacturing of Surgical Templates with the Use of 3D Printing Techniques, Applied in Planning the Procedures of Reconstruction of the Mandible.",
+        "url": "https://doi.org/10.3390/jcm10235525",
+        "year": "2021",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Accuracy of maxillary positioning using patient-specific implants in a surgery-first approach",
+        "url": "https://doi.org/10.1016/j.jcms.2026.104648",
+        "year": "2026",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "3D printing titanium-plate-embedding guide plate system provided with preset nail channels and used for assisting mandibular defect repairing during fibular flap transplantation",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN109394328A",
+        "year": "2019",
+        "source": "Espacenet",
+        "id": "R06"
+      },
+      {
+        "title": "A novel algorithm for streamlined surgeon-dominated patient-specific implant design in computer-assisted jaw reconstruction",
+        "url": "https://link.springer.com/article/10.1186/s41205-025-00260-3",
+        "year": "2025",
+        "source": "3D Printing in Medicine",
+        "id": "R07"
+      },
+      {
+        "title": "Design Criteria for Patient-specific Mandibular Continuity Defect Reconstructed Implant with Lightweight Structure using Weighted Topology Optimization and Validated with Biomechanical Fatigue Testing",
+        "url": "https://www.accscience.com/journal/IJB/8/1/10.18063/ijb.v8i1.437",
+        "year": "2021在线／2022卷期",
+        "source": "International Journal of Bioprinting",
+        "id": "R08"
+      },
+      {
+        "title": "Efficacy of 3D-printed patient specific implant for orbital wall fracture repair in a series of 40 patients",
+        "url": "https://link.springer.com/article/10.1038/s41598-024-84166-w",
+        "year": "2025",
+        "source": "Scientific Reports",
+        "id": "R09"
+      },
+      {
+        "title": "Cost-effective Solution for Maxillofacial Reconstruction Surgery with Virtual Surgical Planning and 3D Printed Cutting Guides Reduces Operative Time",
+        "url": "https://doi.org/10.1177/22925503221078692",
+        "year": "2022在线／2024卷期",
+        "source": "Plastic Surgery",
+        "id": "R10"
+      },
+      {
+        "title": "iD Solutions",
+        "url": "https://www.stryker.com/us/en/craniomaxillofacial/systems/id-solutions.html",
+        "year": "2026",
+        "source": "Stryker",
+        "id": "R11"
+      },
+      {
+        "title": "Stryker Facial iD Plating System — K193143",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf19/K193143.pdf",
+        "year": "2020",
+        "source": "FDA",
+        "id": "R12"
+      },
+      {
+        "title": "VSP Craniomaxillofacial Solutions",
+        "url": "https://www.3dsystems.com/healthcare/craniomaxillofacial-solutions",
+        "year": "2026",
+        "source": "3D Systems",
+        "id": "R13"
+      },
+      {
+        "title": "Trauma | 3D Guides and 3D Personalized Trauma Implants",
+        "url": "https://www.materialise.com/en/healthcare/hcps/cmf/trauma",
+        "year": "2026",
+        "source": "Materialise",
+        "id": "R14"
+      },
+      {
+        "title": "CRANIAL-MAXILLOFACIAL IMPLANT",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DEP4454614A2",
+        "year": "2024",
+        "source": "Espacenet",
+        "id": "R15"
+      },
+      {
+        "title": "Simplifying Bony Midface Reconstruction with Patient-specific Titanium Plates",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8078310/",
+        "year": "2021",
+        "source": "Plastic and Reconstructive Surgery – Global Open",
+        "id": "R16"
+      }
+    ]
+  },
+  "en": {
+    "id": "H12",
+    "p": "P1",
+    "title": "Guides and patient-specific implants for maxillofacial reconstruction",
+    "subtitle": "From resection and segmentation to reconstructed position, fixation and occlusion",
+    "thesis": "In maxillofacial reconstruction, guides first transfer resection boundaries. Custom plates and implants then transfer spatial relationships between segments. Cut accuracy, reconstructed position and later function require separate measurement along the combined workflow.",
+    "questions": [],
+    "graph": {
+      "title": "Linked checks of resection, segment placement, fixation and function",
+      "summary": "Once imaging defines boundaries, resection, graft placement and direct implantation follow separate branches. Registration and follow-up distinguish transfer error from later factors.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2021–2025",
+          "refs": [
+            "R04",
+            "R07"
+          ],
+          "title": "Define resection boundaries and reconstruction targets",
+          "question": "How do margins, bone stock and occlusion fit together?",
+          "evidence": "Segmentation and clinical constraints define remaining bone, planned resection and intended occlusion. Review also identifies reliable bone surfaces for fixation and positioning."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2023",
+          "refs": [
+            "R02",
+            "R04"
+          ],
+          "title": "Transfer planned cuts to achieved cuts",
+          "question": "How far do achieved cuts deviate from the plan?",
+          "evidence": "In 14 segmental mandibular resections, mean planned-to-achieved deviation was 1.52 mm. Measurement site, cut angle and tumor boundaries remain separate variables."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2021",
+          "refs": [
+            "R06",
+            "R16"
+          ],
+          "title": "Use guides to align fibular segments and fixation points",
+          "question": "Can planned holes preserve segment placement?",
+          "evidence": "Printed guides shape graft segments, while planned holes and a custom plate transfer their arrangement. A midface case series describes guides, graft segments and titanium fixation together."
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2023–2026",
+          "refs": [
+            "R03",
+            "R05",
+            "R09"
+          ],
+          "title": "Restore contour and volume with a direct implant",
+          "question": "Which sites require contour or volume restoration?",
+          "evidence": "Maxillary, orbital and orthognathic geometry have different targets. For the orbit, track contour and volume. For maxillary positioning, retain planned location and achieved bone registration."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 1,
+          "time": "2022–2025",
+          "refs": [
+            "R08",
+            "R10"
+          ],
+          "title": "Check structural strength and process performance",
+          "question": "Can mechanics and workflow explain overall error?",
+          "evidence": "Lightweight designs for mandibular continuity defects require fatigue checks. Workflow studies separately record planning effort, operating time and deviations."
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025",
+          "refs": [
+            "R01"
+          ],
+          "title": "Compare manufacturing routes within the same indication",
+          "question": "Which outcomes differ by fabrication route within the same indication?",
+          "evidence": "A randomized trial in 20 severely atrophic edentulous mandibles compared milled and printed subperiosteal implants. Twelve-month survival, angular deviation and radiographic bone resorption did not differ significantly."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Define resection"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Plan graft segment positions"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Define direct implant contour"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Verify plan transfer"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Check configuration and fixation"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Compare contour and structural load"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Compare devices and outcomes by indication"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Revise design from clinical observations"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Research scope and outcomes",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Register the guide, plate and bone substitute separately to the surgical plan. Cuts can be described by distance and angle, and the reconstruction by segment position, joint relationships and occlusion. Follow-up adds healing, fixation and soft tissue. [R02] [R04] [R05] [R16]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathways and evidence",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Define resection boundaries and reconstruction targets"
+          },
+          {
+            "type": "p",
+            "text": "Segmentation and clinical constraints define remaining bone, planned resection and intended occlusion. Review also identifies reliable bone surfaces for fixation and positioning. [R04] [R07]"
+          },
+          {
+            "type": "h3",
+            "text": "Transfer planned cuts to achieved cuts"
+          },
+          {
+            "type": "p",
+            "text": "In 14 segmental mandibular resections, mean planned-to-achieved deviation was 1.52 mm. Measurement site, cut angle and tumor boundaries remain separate variables. [R02] [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "Use guides to align fibular segments and fixation points"
+          },
+          {
+            "type": "p",
+            "text": "Printed guides shape graft segments, while planned holes and a custom plate transfer their arrangement. A midface case series describes guides, graft segments and titanium fixation together. [R06] [R16]"
+          },
+          {
+            "type": "h3",
+            "text": "Restore contour and volume with a direct implant"
+          },
+          {
+            "type": "p",
+            "text": "Maxillary, orbital and orthognathic geometry have different targets. For the orbit, track contour and volume. For maxillary positioning, retain planned location and achieved bone registration. [R03] [R05] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "Check structural strength and process performance"
+          },
+          {
+            "type": "p",
+            "text": "Lightweight designs for mandibular continuity defects require fatigue checks. Workflow studies separately record planning effort, operating time and deviations. [R08] [R10]"
+          },
+          {
+            "type": "h3",
+            "text": "Compare manufacturing routes within the same indication"
+          },
+          {
+            "type": "p",
+            "text": "A randomized trial in 20 severely atrophic edentulous mandibles compared milled and printed subperiosteal implants. Twelve-month survival, angular deviation and radiographic bone resorption did not differ significantly. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Resection accuracy and final reconstruction error are separate. Guide contact and cut execution drive the first. Segment position, fixation and soft-tissue tension also shape the second. Record positions before and after fixation to localize deviations that a final CT sees only in aggregate. [R02] [R04] [R05] [R16]"
+          },
+          {
+            "type": "p",
+            "text": "The subperiosteal trial had ten patients in each arm and one failure in the milled arm. Its measured outcomes can inform a larger comparison. A study of clinical equivalence after process substitution would need a prespecified clinically acceptable margin, with finishing, revision and soft-tissue conditions documented. [R01]"
+          },
+          {
+            "type": "h3",
+            "text": "Translating clinical intent into constraints"
+          },
+          {
+            "type": "p",
+            "text": "After reliable geometry is established, design tools must still express the surgeon's fixation choices. A 2025 mandibular algorithm let surgeons select plate paths and screw positions, then generated spline interpolation, swept surfaces, integrated holes and printable files, with finite element stress assessment. Point selection took about one minute, followed by approximately 40–60 seconds for CAD generation. [R07]"
+          },
+          {
+            "type": "p",
+            "text": "This work separates clinical choices from repetitive geometric operations, providing a concrete object for understanding the value of automated design. Paths and hole positions are not decorative parameters; they determine which bone to fix to, surgical accessibility, and how the load crosses the defect. The algorithm then stabilizes these choices into a computable model. Therefore, when evaluating speed, input preparation, automated generation, physician review, and rework should be timed separately, avoiding treating the speed of local modeling as the entire case cycle."
+          },
+          {
+            "type": "h3",
+            "text": "Fatigue testing lightweight structures"
+          },
+          {
+            "type": "p",
+            "text": "The mandibular reconstruction advances morphological restoration to address the stress issues across the defect. This study established a geometric basis using 105 mandibular images, combined with finite element analysis and weighted topology optimization. The three types of structures achieved a weight reduction of 54.3%–69.7% compared to a solid design. The additive manufacturing reconstruction piece passed 250,000 dynamic loading cycles. The study also observed fracture or loosening of traditional bone plate configurations. [R08]"
+          },
+          {
+            "type": "p",
+            "text": "The design principle is to arrange internal supports according to different occlusal loading conditions rather than remove material uniformly. External shape serves anatomical relationships, whereas internal beam positions and dimensions serve load paths; these can have different optimization objectives. Finite element analysis estimates stress under specified boundary conditions, while bench tests establish whether the manufactured structure and its connections retain function under cyclic loading. Together, the methods can reveal problems that static peak values alone do not explain."
+          },
+          {
+            "type": "h3",
+            "text": "Restoring orbital surfaces and volume"
+          },
+          {
+            "type": "p",
+            "text": "The orbital branch emphasizes spatial support rather than mandibular trans-defect bearing. A retrospective study of 40 cases using TnR mesh compared preoperative and six-month CT scans. The volume ratio of the affected to healthy side decreased from 109.0% to 100.6%, and the median root mean square distance of the morphology decreased from 3.426 mm to 1.073 mm; the device used was a composite material of PCL and β-TCP. [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Volume and local surface distances provide complementary information. Two shapes may have similar volumes but differ through local depressions in important support regions; conversely, improved local distances may not fully describe restoration of the overall space. Measuring both links the volumetric objective to surface fit. Mirroring the contralateral side provides a within-patient reference, allowing assessment of restoration after unilateral defects without assuming one standard orbital shape for every patient."
+          },
+          {
+            "type": "h3",
+            "text": "Preoperative organization of maxillofacial reconstruction"
+          },
+          {
+            "type": "p",
+            "text": "A maxillofacial reconstruction study,, published online in 2022 and in the journal in 2024, compared 13 patients, 8 of whom used virtual planning and printed cutting guides, and 5 of whom used conventional methods. The small-scale series reports reduced surgical time. Its workflow pre-determines fibular segmentation and cutting locations, reducing intraoperative remeasurement and adjustments. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "Fibular flap reconstruction involves donor site cutting, recipient site resection, and multi-segment assembly. Preoperative planning can complete in advance some spatial reasoning and measurements. The time-saving mechanism should be examined through staged recording, such as separately measuring the time spent on cutting, segment positioning, and fixation, to determine which part is truly affected by the surgical guide."
+          },
+          {
+            "type": "p",
+            "text": "The two groups of cases have relatively small numbers, and comparisons need to retain specific conditions such as defect extent, number of bone segments, and team configuration. A more interpretable subsequent design would be to continuously record cases from the same team and stratify complexity. Intraoperative time, ischemic time, and preoperative time each have different meanings; presenting them separately allows us to determine whether the savings come from work transfer, proficiency in procedures, or substantial improvements in geometric positioning."
+          },
+          {
+            "type": "p",
+            "text": "For hospital resource evaluation, preoperative tasks can often be completed in parallel, while operating room time is more difficult to extend. Research can use this to calculate the actual input of different positions and observe whether additional procedures, delays, or redundant preparations should be reduced, so that efficiency gains correspond to specific service capabilities."
+          }
+        ]
+      },
+      {
+        "title": "Industry technologies and services",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Stryker Facial iD K193143 describes additively manufactured patient-specific plates. 3D Systems VSP delivers planning, models and positioning devices. Materialise's maxillofacial trauma service includes review of guide and implant design by surgeons and engineers. For a combined delivery, confirm matching revisions of guides, plates and segments, and document device indications separately from case data. [R11] [R12] [R13] [R14]"
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and production interfaces",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN109394328A combines plate seating, planned screw paths and fibula flap reconstruction in a guide system. EP4454614A2 addresses a craniomaxillofacial implant. Their mechanisms suggest measurable variables such as hole position, plate retention, segment pose and the space available for soft-tissue coverage. [R06] [R15]"
+          }
+        ]
+      },
+      {
+        "title": "Research and industry connections",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A minimal shared record contains imaging revisions, cut and hole coordinates, manufacturing checks, surgical deviations and follow-up. Keeping plans, guides and fragments in a shared coordinate system helps attribute discrepancies to production, seating or a changed plan. [R02] [R04] [R07] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Outlook and measures of progress",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A registry can stratify by original condition, defect site and reconstruction material, linking cut error and implant position separately to function and reintervention. Track on-time usable devices, plate changes, segment assembly error, soft-tissue exposure and long-term occlusal or dental rehabilitation. [R01] [R02] [R09] [R16]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Clinical and Radiographic Assessment of Milled Versus 3D-Printed Patient-Specific Subperiosteal Implants for Atrophic Mandibular Ridges: A Randomized Clinical Trial.",
+        "url": "https://doi.org/10.7759/cureus.80326",
+        "year": "2025",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "Cutting guides in mandibular tumor ablation: Are we as accurate as we think?",
+        "url": "https://doi.org/10.1016/j.sdentj.2023.11.017",
+        "year": "2023",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "Analysis of the Effectiveness of 3D Printed Patient-Specific Implants for Reconstruction of Maxillary Defect Secondary to Mucormycosis.",
+        "url": "https://doi.org/10.1007/s12663-023-01922-7",
+        "year": "2023",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Procedure Increasing the Accuracy of Modelling and the Manufacturing of Surgical Templates with the Use of 3D Printing Techniques, Applied in Planning the Procedures of Reconstruction of the Mandible.",
+        "url": "https://doi.org/10.3390/jcm10235525",
+        "year": "2021",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Accuracy of maxillary positioning using patient-specific implants in a surgery-first approach",
+        "url": "https://doi.org/10.1016/j.jcms.2026.104648",
+        "year": "2026",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "3D printing titanium-plate-embedding guide plate system provided with preset nail channels and used for assisting mandibular defect repairing during fibular flap transplantation",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN109394328A",
+        "year": "2019",
+        "source": "Espacenet",
+        "id": "R06"
+      },
+      {
+        "title": "A novel algorithm for streamlined surgeon-dominated patient-specific implant design in computer-assisted jaw reconstruction",
+        "url": "https://link.springer.com/article/10.1186/s41205-025-00260-3",
+        "year": "2025",
+        "source": "3D Printing in Medicine",
+        "id": "R07"
+      },
+      {
+        "title": "Design Criteria for Patient-specific Mandibular Continuity Defect Reconstructed Implant with Lightweight Structure using Weighted Topology Optimization and Validated with Biomechanical Fatigue Testing",
+        "url": "https://www.accscience.com/journal/IJB/8/1/10.18063/ijb.v8i1.437",
+        "year": "2021在线／2022卷期",
+        "source": "International Journal of Bioprinting",
+        "id": "R08"
+      },
+      {
+        "title": "Efficacy of 3D-printed patient specific implant for orbital wall fracture repair in a series of 40 patients",
+        "url": "https://link.springer.com/article/10.1038/s41598-024-84166-w",
+        "year": "2025",
+        "source": "Scientific Reports",
+        "id": "R09"
+      },
+      {
+        "title": "Cost-effective Solution for Maxillofacial Reconstruction Surgery with Virtual Surgical Planning and 3D Printed Cutting Guides Reduces Operative Time",
+        "url": "https://doi.org/10.1177/22925503221078692",
+        "year": "2022在线／2024卷期",
+        "source": "Plastic Surgery",
+        "id": "R10"
+      },
+      {
+        "title": "iD Solutions",
+        "url": "https://www.stryker.com/us/en/craniomaxillofacial/systems/id-solutions.html",
+        "year": "2026",
+        "source": "Stryker",
+        "id": "R11"
+      },
+      {
+        "title": "Stryker Facial iD Plating System — K193143",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf19/K193143.pdf",
+        "year": "2020",
+        "source": "FDA",
+        "id": "R12"
+      },
+      {
+        "title": "VSP Craniomaxillofacial Solutions",
+        "url": "https://www.3dsystems.com/healthcare/craniomaxillofacial-solutions",
+        "year": "2026",
+        "source": "3D Systems",
+        "id": "R13"
+      },
+      {
+        "title": "Trauma | 3D Guides and 3D Personalized Trauma Implants",
+        "url": "https://www.materialise.com/en/healthcare/hcps/cmf/trauma",
+        "year": "2026",
+        "source": "Materialise",
+        "id": "R14"
+      },
+      {
+        "title": "CRANIAL-MAXILLOFACIAL IMPLANT",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DEP4454614A2",
+        "year": "2024",
+        "source": "Espacenet",
+        "id": "R15"
+      },
+      {
+        "title": "Simplifying Bony Midface Reconstruction with Patient-specific Titanium Plates",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8078310/",
+        "year": "2021",
+        "source": "Plastic and Reconstructive Surgery – Global Open",
+        "id": "R16"
+      }
+    ]
+  },
+  "de": {
+    "id": "H12",
+    "p": "P1",
+    "title": "Schablonen und patientenspezifische Implantate für die Kiefer-Gesichts-Rekonstruktion",
+    "subtitle": "Von Resektion und Segmentierung zu rekonstruierter Lage, Fixation und Okklusion",
+    "thesis": "Bei der Kiefer-Gesichts-Rekonstruktion übertragen Schablonen zunächst die Resektionsgrenzen. Individuelle Platten und Implantate übertragen anschließend die Lagebeziehungen der Segmente. Schnittgenauigkeit, rekonstruierte Lage und spätere Funktion werden im gemeinsamen Ablauf getrennt gemessen.",
+    "questions": [],
+    "graph": {
+      "title": "Verknüpfte Prüfung von Resektion, Segmentlage, Fixation und Funktion",
+      "summary": "Nach Festlegung der Grenzen in der Bildgebung verzweigen Resektion, Transplantatlage und direkte Implantation. Registrierung und Nachkontrolle trennen Übertragungsfehler von späteren Einflüssen.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2021–2025",
+          "refs": [
+            "R04",
+            "R07"
+          ],
+          "title": "Resektionsgrenzen und Rekonstruktionsziele definieren",
+          "question": "Wie werden Ränder, Restknochen und Okklusion abgestimmt?",
+          "evidence": "Segmentierung und klinische Vorgaben bestimmen Restknochen, Resektion und Okklusionsziel. Bei der Freigabe werden belastbare Knochenflächen für Fixation und Positionierung festgelegt."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2023",
+          "refs": [
+            "R02",
+            "R04"
+          ],
+          "title": "Geplante Schnitte in tatsächliche Schnitte übertragen",
+          "question": "Wie stark weichen die Schnitte vom Plan ab?",
+          "evidence": "Bei 14 segmentalen Unterkieferresektionen lag die mittlere Plan-Ist-Abweichung bei 1,52 mm. Messort, Schnittwinkel und Tumorgrenzen sind getrennte Variablen."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2021",
+          "refs": [
+            "R06",
+            "R16"
+          ],
+          "title": "Fibulasegmente und Fixationspunkte anhand von Schablonen ausrichten",
+          "question": "Halten geplante Bohrungen die Segmentlage?",
+          "evidence": "Gedruckte Schablonen bestimmen die Form der Transplantatsegmente. Geplante Bohrungen und individuelle Platte übertragen deren Anordnung. Eine Mittelgesichtsserie beschreibt Schablonen, Transplantatsegmente und Titanfixation gemeinsam."
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2023–2026",
+          "refs": [
+            "R03",
+            "R05",
+            "R09"
+          ],
+          "title": "Kontur und Volumen mit direktem Implantat wiederherstellen",
+          "question": "Welche Regionen benötigen Kontur- oder Volumenrekonstruktion?",
+          "evidence": "Oberkiefer, Orbita und orthognathe Rekonstruktion haben unterschiedliche Geometrieziele. In der Orbita zählen Kontur und Volumen. Beim Oberkiefer sind Planposition und Registrierung des erreichten Knochenstands wichtig."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 1,
+          "time": "2022–2025",
+          "refs": [
+            "R08",
+            "R10"
+          ],
+          "title": "Strukturfestigkeit und Gesamtablauf prüfen",
+          "question": "Erklären Mechanik und Ablauf die Gesamtabweichung?",
+          "evidence": "Leicht ausgelegte Implantate für Kontinuitätsdefekte des Unterkiefers erfordern Ermüdungsprüfungen. Prozessstudien erfassen Planungsaufwand, Operationsdauer und Änderungen getrennt."
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025",
+          "refs": [
+            "R01"
+          ],
+          "title": "Fertigungswege bei gleicher Indikation vergleichen",
+          "question": "Welche Ergebnisse unterscheiden sich je Fertigung bei gleicher Indikation?",
+          "evidence": "Eine randomisierte Studie bei 20 stark atrophierten zahnlosen Unterkiefern verglich gefräste und gedruckte subperiostale Implantate. Nach zwölf Monaten waren Überleben, Winkelabweichung und radiologischer Knochenabbau nicht signifikant verschieden."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Resektion festlegen"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Transplantatlage planen"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Direkte Implantatform bestimmen"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Planübertragung prüfen"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Anordnung und Fixation prüfen"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Kontur und Last vergleichen"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Produkte und Ergebnisse nach Indikation vergleichen"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Design anhand klinischer Befunde anpassen"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Forschungsgegenstand und Endpunkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Schablone, Platte und Knochenersatz werden getrennt mit dem Plan registriert. Schnittflächen lassen sich über Abstand und Winkel beschreiben, die Rekonstruktion über Segmentlage, Gelenkbeziehung und Okklusion. Nachkontrollen erfassen Heilung, Fixation und Weichteile. [R02] [R04] [R05] [R16]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Evidenz",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Resektionsgrenzen und Rekonstruktionsziele definieren"
+          },
+          {
+            "type": "p",
+            "text": "Segmentierung und klinische Vorgaben bestimmen Restknochen, Resektion und Okklusionsziel. Bei der Freigabe werden belastbare Knochenflächen für Fixation und Positionierung festgelegt. [R04] [R07]"
+          },
+          {
+            "type": "h3",
+            "text": "Geplante Schnitte in tatsächliche Schnitte übertragen"
+          },
+          {
+            "type": "p",
+            "text": "Bei 14 segmentalen Unterkieferresektionen lag die mittlere Plan-Ist-Abweichung bei 1,52 mm. Messort, Schnittwinkel und Tumorgrenzen sind getrennte Variablen. [R02] [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "Fibulasegmente und Fixationspunkte anhand von Schablonen ausrichten"
+          },
+          {
+            "type": "p",
+            "text": "Gedruckte Schablonen bestimmen die Form der Transplantatsegmente. Geplante Bohrungen und individuelle Platte übertragen deren Anordnung. Eine Mittelgesichtsserie beschreibt Schablonen, Transplantatsegmente und Titanfixation gemeinsam. [R06] [R16]"
+          },
+          {
+            "type": "h3",
+            "text": "Kontur und Volumen mit direktem Implantat wiederherstellen"
+          },
+          {
+            "type": "p",
+            "text": "Oberkiefer, Orbita und orthognathe Rekonstruktion haben unterschiedliche Geometrieziele. In der Orbita zählen Kontur und Volumen. Beim Oberkiefer sind Planposition und Registrierung des erreichten Knochenstands wichtig. [R03] [R05] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "Strukturfestigkeit und Gesamtablauf prüfen"
+          },
+          {
+            "type": "p",
+            "text": "Leicht ausgelegte Implantate für Kontinuitätsdefekte des Unterkiefers erfordern Ermüdungsprüfungen. Prozessstudien erfassen Planungsaufwand, Operationsdauer und Änderungen getrennt. [R08] [R10]"
+          },
+          {
+            "type": "h3",
+            "text": "Fertigungswege bei gleicher Indikation vergleichen"
+          },
+          {
+            "type": "p",
+            "text": "Eine randomisierte Studie bei 20 stark atrophierten zahnlosen Unterkiefern verglich gefräste und gedruckte subperiostale Implantate. Nach zwölf Monaten waren Überleben, Winkelabweichung und radiologischer Knochenabbau nicht signifikant verschieden. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Resektionsgenauigkeit und endgültige Rekonstruktionsabweichung sind getrennt. Erstere hängt von Schablonenkontakt und Schnittausführung ab. Bei der zweiten zählen auch Segmentlage, Fixation und Weichteilspannung. Lage vor und nach Fixation dokumentieren, damit das Abschluss-CT nicht nur den Gesamtfehler zeigt. [R02] [R04] [R05] [R16]"
+          },
+          {
+            "type": "p",
+            "text": "Die Studie zu subperiostalen Implantaten umfasste zehn Personen pro Gruppe und einen Ausfall in der Fräsgruppe. Die Messwerte helfen, einen größeren Vergleich zu planen. Für klinische Äquivalenz nach Verfahrenswechsel braucht es eine vorab festgelegte klinisch vertretbare Grenze sowie Angaben zu Nachbearbeitung, Version und Weichteilen. [R01]"
+          },
+          {
+            "type": "h3",
+            "text": "Ärztliche Vorgaben in Randbedingungen übersetzen"
+          },
+          {
+            "type": "p",
+            "text": "Nachdem die geometrische Zuverlässigkeit sichergestellt wurde, muss das Konstruktionswerkzeug noch die Beurteilung des Chirurgen hinsichtlich der Fixierung berücksichtigen. Ab 2025 ermöglicht der Unterkieferalgorithmus dem Chirurgen die Auswahl des Plattenverlaufs und der Schraubenpositionen. Anschließend führt das Programm Spline-Interpolation, Oberflächenberechnung, Lochintegration und die Erstellung der Druckdatei durch und überprüft die Spannungen mittels Finite-Elemente-Analyse. Die Auswahl der Punkte im Forschungsbericht dauert etwa eine Minute, die anschließende CAD-Generierung etwa 40–60 Sekunden. [R07]"
+          },
+          {
+            "type": "p",
+            "text": "Diese Arbeit trennt klinische Entscheidungen von sich wiederholenden geometrischen Operationen und liefert so ein konkretes Beispiel zum Verständnis des Nutzens automatisierter Konstruktion. Pfade und Bohrlochpositionen sind keine rein dekorativen Parameter; sie bestimmen, an welchem Knochen fixiert wird, die chirurgische Zugänglichkeit und wie die Last den Defekt überwindet. Der Algorithmus stabilisiert diese Entscheidungen anschließend in einem berechenbaren Modell. Daher sollten bei der Bewertung der Geschwindigkeit die Eingabevorbereitung, die automatisierte Generierung, die ärztliche Überprüfung und die Nachbearbeitung separat zeitlich erfasst werden, anstatt die Geschwindigkeit der lokalen Modellierung als Gesamtzeit des Behandlungsablaufs zu betrachten."
+          },
+          {
+            "type": "h3",
+            "text": "Leichtbau unter Ermüdungsprüfung"
+          },
+          {
+            "type": "p",
+            "text": "Die Unterkieferrekonstruktion erweitert die Formwiederherstellung um die Lastübertragung über den Defekt. Bilddaten aus 105 Fällen lieferten die geometrische Grundlage für Finite-Elemente-Analyse und gewichtete Topologieoptimierung. Drei Strukturtypen waren gegenüber massiven Designs um 54,3–69,7 % leichter; additiv gefertigte Rekonstruktionsteile bestanden 250.000 dynamische Lastzyklen. An konventionellen Plattenkonfigurationen wurden auch Brüche oder Lockerung beobachtet.[R08]"
+          },
+          {
+            "type": "p",
+            "text": "Die Konstruktionsphilosophie besteht darin, die internen Stützen entsprechend unterschiedlicher Verzahnungsbedingungen anzuordnen, anstatt Material gleichmäßig abzutragen. Die äußere Formgebung orientiert sich an anatomischen Gegebenheiten, während Position und Abmessungen der internen Träger den Kraftfluss optimieren; beides kann unterschiedliche Optimierungsziele verfolgen. Die Finite-Elemente-Analyse liefert die Spannungsverteilung unter bestimmten Randbedingungen, während der Prüfstand überprüft, ob die gefertigte Struktur und die Verbindungen unter zyklischer Belastung funktionsfähig bleiben. Die Kombination dieser beiden Methoden ermöglicht es, Probleme aufzudecken, die sich allein durch statische Spitzenwerte nicht erklären lassen."
+          },
+          {
+            "type": "h3",
+            "text": "Wiederherstellung von Orbitakontur und -volumen"
+          },
+          {
+            "type": "p",
+            "text": "Der Forschungszweig zur Orbita betont die räumliche Abstützung. Eine retrospektive Studie mit 40 TnR-mesh-Fällen verglich präoperative CT-Aufnahmen mit Aufnahmen nach sechs Monaten. Das Volumenverhältnis der betroffenen zur gesunden Seite sank von 109,0 % auf 100,6 %; der Median des geometrischen RMS-Abstands sank von 3,426 auf 1,073 mm. Das Implantat bestand aus PCL und β-TCP.[R09]"
+          },
+          {
+            "type": "p",
+            "text": "Das Volumen und der lokale Oberflächenabstand liefern komplementäre Informationen. Zwei Formen können ähnliche Volumina aufweisen, aber lokale Vertiefungen in wichtigen Stützbereichen zeigen; umgekehrt reichen Verbesserungen des lokalen Abstands möglicherweise nicht aus, um die gesamte räumliche Erholung zu erklären. Die gleichzeitige Messung beider Größen ermöglicht die Verknüpfung zwischen dem gesamten räumlichen Ziel und der Oberflächenpassung. Das kontralaterale Spiegelbild (in vivo) dient als Referenz und konzentriert die Forschung somit auf den Grad der Erholung bei einseitigen Defekten, ohne anzunehmen, dass alle Patienten die gleiche Standardmorphologie der Orbita aufweisen."
+          },
+          {
+            "type": "h3",
+            "text": "Präoperative Organisation der maxillofazialen Rekonstruktion"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie zur maxillofazialen Rekonstruktion, die 2022 online und 2024 in der Fachzeitschrift veröffentlicht wurde, verglich 13 Patienten. Acht von ihnen nutzten virtuelle Planung und gedruckte Schnittschablonen, fünf konventionelle Methoden. Die kleine Fallserie berichtet von einer verkürzten Operationszeit. Der Arbeitsablauf legt die Segmentierung des Wadenbeins und die Schnittpositionen im Voraus fest, wodurch intraoperative Nachmessungen und Anpassungen reduziert werden. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "Die Fibula-Lappenrekonstruktion umfasst das Schneiden an der Entnahmestelle, die Resektion an der Empfängerstelle und die mehrsegmentige Präparation. Die präoperative Planung ermöglicht die Vorab-Berechnung räumlicher Gegebenheiten und Messungen. Der zeitsparende Mechanismus sollte durch eine schrittweise Dokumentation untersucht werden, beispielsweise durch separate Messung der Zeit für Schneiden, Segmentpositionierung und Fixierung, um festzustellen, welcher Teil des Eingriffs tatsächlich von der chirurgischen Schablone beeinflusst wird."
+          },
+          {
+            "type": "p",
+            "text": "Die beiden Fallgruppen weisen relativ geringe Fallzahlen auf, weshalb Vergleiche spezifische Bedingungen wie Defektausdehnung, Anzahl der Knochensegmente und Teamzusammensetzung berücksichtigen müssen. Ein aussagekräftigeres Folgedesign wäre die kontinuierliche Erfassung von Fällen desselben Teams und die Stratifizierung nach Komplexität. Intraoperative Zeit, Ischämiezeit und präoperative Zeit haben jeweils unterschiedliche Bedeutungen; ihre separate Darstellung ermöglicht es uns, festzustellen, ob die Einsparungen auf Arbeitsverlagerung, Verfahrenskompetenz oder wesentliche Verbesserungen der geometrischen Positionierung zurückzuführen sind."
+          },
+          {
+            "type": "p",
+            "text": "Bei der Bewertung der Krankenhausressourcen lassen sich präoperative Aufgaben oft parallel erledigen, während die OP-Zeit schwieriger zu verlängern ist. Die Forschung kann dies nutzen, um den tatsächlichen Aufwand verschiedener Positionen zu berechnen und zu prüfen, ob zusätzliche Verfahren, Verzögerungen oder redundante Vorbereitungen reduziert werden sollten, sodass Effizienzgewinne den jeweiligen Leistungskapazitäten entsprechen."
+          }
+        ]
+      },
+      {
+        "title": "Technologien und Angebote der Unternehmen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Stryker Facial iD K193143 beschreibt additiv gefertigte patientenspezifische Platten. 3D Systems VSP liefert Planung, Modelle und Positionierungshilfen. Im Traumadienst von Materialise prüfen Chirurgie und Technik Schablone und Implantatentwurf. Bei kombinierter Lieferung sind die Versionen von Schablone, Platte und Segmenten abzugleichen. Geräteindikation und Falldaten werden getrennt erfasst. [R11] [R12] [R13] [R14]"
+          }
+        ]
+      },
+      {
+        "title": "Patentansätze und Fertigungsschnittstellen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN109394328A kombiniert Plattensitz, geplante Schraubenkanäle und Fibulalappenrekonstruktion in einem Schablonensystem. EP4454614A2 betrifft ein kraniomaxillofaziales Implantat. Messgrößen sind Lochposition, Plattenhalt, Segmentlage und Platz für Weichteildeckung. [R06] [R15]"
+          }
+        ]
+      },
+      {
+        "title": "Verbindungen von Forschung und Industrie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Ein gemeinsamer Mindestdatensatz umfasst Bildversion, Schnitt- und Lochkoordinaten, Fertigungsprüfungen, intraoperative Änderungen und Nachkontrollen. Plan, Schablonen und Fragmente in gemeinsamen Koordinaten helfen, Abweichungen Fertigung, Sitz oder Planänderung zuzuordnen. [R02] [R04] [R07] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick und Kriterien für Fortschritt",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Ein Register kann nach Ursache, Defektort und Material gliedern und Schnittabweichung sowie Implantatlage getrennt mit Funktion und Folgeeingriffen verknüpfen. Relevant sind termingerecht nutzbare Produkte, Plattenänderungen, Fehler der Segmentanordnung, Weichteilexposition und langfristige dentale oder okklusale Rehabilitation. [R01] [R02] [R09] [R16]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Clinical and Radiographic Assessment of Milled Versus 3D-Printed Patient-Specific Subperiosteal Implants for Atrophic Mandibular Ridges: A Randomized Clinical Trial.",
+        "url": "https://doi.org/10.7759/cureus.80326",
+        "year": "2025",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "Cutting guides in mandibular tumor ablation: Are we as accurate as we think?",
+        "url": "https://doi.org/10.1016/j.sdentj.2023.11.017",
+        "year": "2023",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "Analysis of the Effectiveness of 3D Printed Patient-Specific Implants for Reconstruction of Maxillary Defect Secondary to Mucormycosis.",
+        "url": "https://doi.org/10.1007/s12663-023-01922-7",
+        "year": "2023",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Procedure Increasing the Accuracy of Modelling and the Manufacturing of Surgical Templates with the Use of 3D Printing Techniques, Applied in Planning the Procedures of Reconstruction of the Mandible.",
+        "url": "https://doi.org/10.3390/jcm10235525",
+        "year": "2021",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Accuracy of maxillary positioning using patient-specific implants in a surgery-first approach",
+        "url": "https://doi.org/10.1016/j.jcms.2026.104648",
+        "year": "2026",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "3D printing titanium-plate-embedding guide plate system provided with preset nail channels and used for assisting mandibular defect repairing during fibular flap transplantation",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN109394328A",
+        "year": "2019",
+        "source": "Espacenet",
+        "id": "R06"
+      },
+      {
+        "title": "A novel algorithm for streamlined surgeon-dominated patient-specific implant design in computer-assisted jaw reconstruction",
+        "url": "https://link.springer.com/article/10.1186/s41205-025-00260-3",
+        "year": "2025",
+        "source": "3D Printing in Medicine",
+        "id": "R07"
+      },
+      {
+        "title": "Design Criteria for Patient-specific Mandibular Continuity Defect Reconstructed Implant with Lightweight Structure using Weighted Topology Optimization and Validated with Biomechanical Fatigue Testing",
+        "url": "https://www.accscience.com/journal/IJB/8/1/10.18063/ijb.v8i1.437",
+        "year": "2021在线／2022卷期",
+        "source": "International Journal of Bioprinting",
+        "id": "R08"
+      },
+      {
+        "title": "Efficacy of 3D-printed patient specific implant for orbital wall fracture repair in a series of 40 patients",
+        "url": "https://link.springer.com/article/10.1038/s41598-024-84166-w",
+        "year": "2025",
+        "source": "Scientific Reports",
+        "id": "R09"
+      },
+      {
+        "title": "Cost-effective Solution for Maxillofacial Reconstruction Surgery with Virtual Surgical Planning and 3D Printed Cutting Guides Reduces Operative Time",
+        "url": "https://doi.org/10.1177/22925503221078692",
+        "year": "2022在线／2024卷期",
+        "source": "Plastic Surgery",
+        "id": "R10"
+      },
+      {
+        "title": "iD Solutions",
+        "url": "https://www.stryker.com/us/en/craniomaxillofacial/systems/id-solutions.html",
+        "year": "2026",
+        "source": "Stryker",
+        "id": "R11"
+      },
+      {
+        "title": "Stryker Facial iD Plating System — K193143",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf19/K193143.pdf",
+        "year": "2020",
+        "source": "FDA",
+        "id": "R12"
+      },
+      {
+        "title": "VSP Craniomaxillofacial Solutions",
+        "url": "https://www.3dsystems.com/healthcare/craniomaxillofacial-solutions",
+        "year": "2026",
+        "source": "3D Systems",
+        "id": "R13"
+      },
+      {
+        "title": "Trauma | 3D Guides and 3D Personalized Trauma Implants",
+        "url": "https://www.materialise.com/en/healthcare/hcps/cmf/trauma",
+        "year": "2026",
+        "source": "Materialise",
+        "id": "R14"
+      },
+      {
+        "title": "CRANIAL-MAXILLOFACIAL IMPLANT",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DEP4454614A2",
+        "year": "2024",
+        "source": "Espacenet",
+        "id": "R15"
+      },
+      {
+        "title": "Simplifying Bony Midface Reconstruction with Patient-specific Titanium Plates",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8078310/",
+        "year": "2021",
+        "source": "Plastic and Reconstructive Surgery – Global Open",
+        "id": "R16"
+      }
+    ]
+  }
+}

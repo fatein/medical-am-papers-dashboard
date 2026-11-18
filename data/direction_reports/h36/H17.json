@@ -1,0 +1,1571 @@
+{
+  "zh": {
+    "id": "H17",
+    "p": "P6",
+    "title": "医学影像、拟人体模与放疗剂量验证",
+    "subtitle": "分别校准形状、辐射响应和测量链",
+    "thesis": "可用的体模同时要求关键器官形状、衰减与探测器布置可追溯。形状相近的模型仍可能有不同 CT 值、纹理和剂量响应。 [R03] [R06]",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络 · 医学影像、拟人体模与放疗剂量验证",
+      "summary": "先确定测量任务，再分开标定解剖与材料，合并验证成品，最后以跨设备测量定位偏差。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2023",
+          "question": "每项测量应对应明确参考。",
+          "title": "定义任务与参照",
+          "evidence": "肿瘤病例的 CT 体模用于观察重复测量。器官边界、均匀区与肿瘤结构可以承担不同任务，分别测试分割、CT 值稳定性和纹理。",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2020",
+          "question": "应为哪些器官保留真实位置与相互距离？",
+          "title": "解剖重建",
+          "evidence": "儿科躯干研究打印了代表1岁解剖的原尺度10 cm躯干段，包含30个独立解剖区域。分割、体模姿势和外部轮廓会改变对应关系，比较时应将几何调整单独记录。",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2018–2020",
+          "question": "试块校准曲线与器官的局部响应应对应。",
+          "title": "材料衰减标定",
+          "evidence": "双喷头儿科体模研究用 PLA 与含铁 PLA 表现不同组织。成品心脏、右肺和椎体平均测值分别为94、−417和1180 HU，显示填充标定需在实际体部复核。",
+          "refs": [
+            "R03",
+            "R06"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2026",
+          "question": "成品重装后探测点是否保持？",
+          "title": "探测器与成品验证",
+          "evidence": "头颈体模将患者 CT、打印结构和剂量验证连起来。检测位置、气隙、配准误差与重复插入需在成品上记录，借此明确测量空间与计划剂量网格的对应。",
+          "refs": [
+            "R02"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025–2026",
+          "question": "分别记录 CT 表征和剂量结果。",
+          "title": "能谱、算法与用途",
+          "evidence": "光子计数 CT 儿科腹部体模与儿科放射剂量体模对应两项用途。前者关注不同重建条件的图像表现，后者关注剂量测量及尺度。材料等效性的检查应随任务和能谱改变。",
+          "refs": [
+            "R04",
+            "R05"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2020–2026",
+          "question": "用已知参考分辨设计、制造与测量贡献。",
+          "title": "误差反馈",
+          "evidence": "若同一试样扫描的均值相近但纹理差异较大，需检查填充结构和重建。若剂量结果偏离而几何复核合格，则需要定位材料等效性或探测器布置。",
+          "refs": [
+            "R02",
+            "R03"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "解剖重建",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "材料衰减标定",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "探测器与成品验证",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "探测器与成品验证",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "能谱、算法与用途",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "误差反馈",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "将剂量或纹理偏差反馈标定",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究范围与目标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "本方向包含设备验收、定量影像重复性和患者计划验证。体模应先定义成像方式、能谱、解剖尺度、对比目标或剂量终点，再决定患者形态的复杂程度。"
+          }
+        ]
+      },
+      {
+        "title": "学术研究脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 定义任务与参照"
+          },
+          {
+            "type": "p",
+            "text": "肿瘤病例的 CT 体模用于观察重复测量。器官边界、均匀区与肿瘤结构可以承担不同任务，分别测试分割、CT 值稳定性和纹理。 [R01]"
+          },
+          {
+            "type": "p",
+            "text": "每项测量应对应明确参考。"
+          },
+          {
+            "type": "p",
+            "text": "Ehler等2014年以拟人体模头颈区作为患者替代，制作软组织等效打印模型并进行调强放疗验证。与常规体模相比，打印体模在浅表深度显示更大的测量与计算差异，提示几何会改变测试所暴露的问题。[R07]"
+          },
+          {
+            "type": "p",
+            "text": "研究选择已知拟人体模作参照，使打印转换与原有验证方法之间可以直接比较。它的关键意义是把空间外形引入剂量检查，而不仅在标准块体中检查束流。但浅表区域涉及电子平衡、剂量梯度和测量位置，差异可能来自多个环节。因此结果应先按空间位置检查，再区分材料、摆位及剂量计响应，形成能够追问原因的验证链。"
+          },
+          {
+            "type": "p",
+            "text": "Yea等2017年从患者头部轮廓构建FDM体模，比较计算与测量剂量，并与既有质量保证方法对照。研究以患者相关空间形态承载调强放疗剂量验证，展示了病例几何与平面分析结合的可行性。[R08]"
+          },
+          {
+            "type": "p",
+            "text": "测量平面使空间分布可见，但其位置决定能看到什么。高梯度区域中很小的位置变化可能形成明显差异，而远离目标的平面即使一致，也未必覆盖计划中最敏感的部分。设计体模时应将剂量计空间和对准结构一起考虑，使重复插入的坐标能够追溯到计划影像。分析时则把绝对剂量与形状偏差分别检查，避免单个汇总值隐藏局部问题。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 解剖重建"
+          },
+          {
+            "type": "p",
+            "text": "儿科躯干研究打印了代表1岁解剖的原尺度10 cm躯干段，包含30个独立解剖区域。分割、体模姿势和外部轮廓会改变对应关系，比较时应将几何调整单独记录。 [R03]"
+          },
+          {
+            "type": "p",
+            "text": "应为哪些器官保留真实位置与相互距离？"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 材料衰减标定"
+          },
+          {
+            "type": "p",
+            "text": "双喷头儿科体模研究用 PLA 与含铁 PLA 表现不同组织。成品心脏、右肺和椎体平均测值分别为94、−417和1180 HU，显示填充标定需在实际体部复核。 [R03] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "试块校准曲线与器官的局部响应应对应。"
+          },
+          {
+            "type": "p",
+            "text": "Zavan等2018年通过打印参数制造不同密度的聚苯乙烯体模，针对临床光子束及小射野条件检验Acuros XB算法。研究使用相同材料成分调节密度，计算与测量在多数非半影区域接近。[R09]"
+          },
+          {
+            "type": "p",
+            "text": "同一成分是方法选择的核心。若同时更换材料与密度，观察到的差异可能混合元素组成、电子输运与几何结构；使用同种材料更容易识别密度及界面的作用。打印孔隙还带来尺度问题：宏观平均密度接近肺组织，并不保证微观通道在每个射束方向表现相同。应检查密度均匀性与方向依赖，说明算法输入代表的是怎样的实际结构。"
+          },
+          {
+            "type": "p",
+            "text": "2020年乳腺体模研究在既有胸廓体模上附接打印乳腺结构，预留电离室及不同平面胶片位置，连接扫描、表面定位、计划与弧形治疗交付。研究进行了多个计划测量和完整端到端测试。[R10]"
+          },
+          {
+            "type": "p",
+            "text": "附接结构的选择兼顾实际几何与可复用基础设备，使新增制造集中于原有体模缺少的部位。预先设计剂量计位置，则把测量需求变成模型的一部分。完整流程测试能够让多个转换共同接受检查，但一旦出现差异，需要分阶段复测才能定位原因。端到端的价值在于发现组合问题，局部测试的价值在于解释问题，两者应形成循环。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 探测器与成品验证"
+          },
+          {
+            "type": "p",
+            "text": "头颈体模将患者 CT、打印结构和剂量验证连起来。检测位置、气隙、配准误差与重复插入需在成品上记录，借此明确测量空间与计划剂量网格的对应。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "成品重装后探测点是否保持？"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 能谱、算法与用途"
+          },
+          {
+            "type": "p",
+            "text": "光子计数 CT 儿科腹部体模与儿科放射剂量体模对应两项用途。前者关注不同重建条件的图像表现，后者关注剂量测量及尺度。材料等效性的检查应随任务和能谱改变。 [R04] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "分别记录 CT 表征和剂量结果。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 误差反馈"
+          },
+          {
+            "type": "p",
+            "text": "若同一试样扫描的均值相近但纹理差异较大，需检查填充结构和重建。若剂量结果偏离而几何复核合格，则需要定位材料等效性或探测器布置。 [R02] [R03]"
+          },
+          {
+            "type": "p",
+            "text": "用已知参考分辨设计、制造与测量贡献。"
+          },
+          {
+            "type": "p",
+            "text": "2024年Micromachines研究采用可注入对比介质的打印肿瘤体模，调节CT不透射性。可填充结构将外形与成像介质分开，为构建不同对比情景提供设计自由度。[R11]"
+          },
+          {
+            "type": "p",
+            "text": "这种解耦适合研究影像算法的敏感性：固定几何而改变对比，可以观察分割或检测表现；固定对比而改变形状，可以观察边界复杂度影响。对比介质、壳体和背景分别影响图像，分析时需要检查壳体是否成为额外高对比边界，以及填充是否均匀。体模的可控性来自这些状态可测量，而不是只来自材料可调。"
+          },
+          {
+            "type": "p",
+            "text": "2024年动态胸廓研究用可压缩肺与肿瘤结构模拟定制呼吸曲线，肿瘤运动幅度重复性约为正负0.2毫米，并用于四维CT伪影研究。模型把呼吸不规则性变成可重复测试条件。[R12]"
+          },
+          {
+            "type": "p",
+            "text": "运动体模需要同时控制形变与时间。相同位移幅度若速度和停顿不同，扫描分相与重建表现也可能不同。可压缩结构比刚体平移更接近某些呼吸行为，但其形变分布仍需要独立测量。记录驱动信号、实际肿瘤轨迹和影像重建位置，能够判断偏差来自驱动、扫描同步还是重建。"
+          },
+          {
+            "type": "p",
+            "text": "2025年器官体模研究构建肾脏和腮腺相关可填充结构，进行几何及密封检查，并将已知活度与SPECT/CT估计比较。影像出现系统性低估，恢复系数与表面积体积比相关，显示器官形状影响定量。[R13]"
+          },
+          {
+            "type": "p",
+            "text": "其方法把几何制造与计量问题紧密连接。相同体积的规则体和细长或不规则器官具有不同边界比例，有限分辨率会使部分信号分布到边界之外，因而校准结果需要考虑形状。可填充体模提供独立输入，但实际内腔体积、残留、泄漏和背景都会影响参照，应先确认这些因素再解释图像低估。"
+          }
+        ]
+      },
+      {
+        "title": "研究之间如何比较",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "在共同扫描条件下，比较组织的目标衰减、实测均值与空间分布。对临床计划，重点还应包括组织界面与测量重复性。"
+          },
+          {
+            "type": "p",
+            "text": "拟开展材料验证应以标准组织等效体模作对照，对专利全身材料配方与脊柱树脂—凝胶结构分别测量质量密度、CT响应及选定照射条件下剂量差异，并在骨软界面、浅表和均质区布点。相同CT值可能对应不同材料组成，因此不以影像外观代替剂量测量。若某材料只在一种能量表现合适，应限定该条件并重新选材；只有材料、界面和几何共同稳定，才推进整套计划验证。[R09][R07][R18][R20]"
+          },
+          {
+            "type": "p",
+            "text": "端到端比较应保持同一计划与分析方法，将常规体模、患者形状模型和含骨软界面的个体模型放入扫描、计划、定位及交付链，记录探测器复位误差、拼接空隙、凝胶变化和重复装配。分片打印研究提示装配后再扫描的重要性，乳腺研究则提供预置探测器的结构逻辑。若剂量偏差随装配改变，先修正定位与接口；若仅个体几何揭示问题，再判断是否需要该类定制服务。[R10][R19][R17][R18][R20]"
+          },
+          {
+            "type": "p",
+            "text": "动态与核医学用途另设比较层。动态胸廓模型需以已知运动输入检查幅度、相位与重建伪影；可填充肾和腮腺研究则用已知活度检查恢复偏差，多中心数据研究提供共同测量依据。静态全身体模专利可贡献形状与材料参数，但运动机构和活度腔还需各自确认。若加入复杂功能使密封、几何或参考输入无法稳定，应拆分模块验证；达到可追踪输入和输出后再整合。[R12][R13][R21][R18]"
+          }
+        ]
+      },
+      {
+        "title": "企业路线与公开产品",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "商业方案已将解剖形状、测量插入件及体模服务组合交付。采购比较可根据复核时间、定位误差及版本重复制件能力组织。"
+          },
+          {
+            "type": "p",
+            "text": "RTsafe的产业路线为打印体模从研究工具走向质量服务提供了可追踪例子。公司2018年7月公告Personalized PseudoPatient获得美国FDA 510(k)许可，所附函件为K180697，产品面向患者相关放疗验证。[R14]这一阶段把个体影像与治疗前测试组织为明确产品用途。"
+          },
+          {
+            "type": "p",
+            "text": "官方里程碑随后记录，2022年独立远程剂量服务进入ISRS认证项目，2024年与ZAP Surgical建立颅内放射外科相关合作。[R15]产品演变因此涉及从单件体模到独立测量、流程比较和设备生态的连接。"
+          },
+          {
+            "type": "p",
+            "text": "当前产品体系包含头部、脊柱及腹部相关体模，提供点、二维和三维剂量测量选择；Encephalon 3D将骨等效结构与聚合物凝胶读出结合。[R16]不同产品把几何、材料和测量维度组合起来，分别覆盖设备检查、复杂计划及患者相关验证。"
+          },
+          {
+            "type": "p",
+            "text": "定制服务允许使用者参与体模设计，按体部、CT来源、探测器、测量方向及额外特征组织需求，官方案例包含表面定位用途和肺部测量插入件。[R17]这种产品逻辑与学术研究的任务拆分相接：先明确需要发现的偏差，再选择物理结构和读出方式。"
+          }
+        ]
+      },
+      {
+        "title": "专利机制与转化验证",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "体模专利围绕组织衰减与可装配结构组织机制。验证同时要覆盖参考物、成品测量和剂量结果。"
+          },
+          {
+            "type": "p",
+            "text": "放疗体模的专利桥梁是将解剖外形与可测量的辐射等效性相接。CN122455332A（2026）提出依据体型与生理参数建立个体表面模型，计算目标组织等效指标，再选择材料配方增材制造全身体模。它把定制从轮廓推进到组织响应；不同密度聚苯乙烯验证Acuros XB的研究则提供同成分改变密度的具体对照，提示等效性需要与束流、能量和测量位置一起定义。[R09][R18]"
+          },
+          {
+            "type": "p",
+            "text": "RO139161A1（2025）披露CT椎体分割、骨近似密度树脂打印及软组织近似凝胶包埋，形成“骨结构—包埋介质”的双材料脊柱剂量体模。它与早期患者特异性头颈和分片体模研究互补：前者使骨与软组织界面成为可调变量，后者暴露浅表剂量差异、尺寸限制与翘曲。对RTsafe的解剖剂量体模和定制服务而言，这些方案提供可比较的制造变量与验收任务。[R08][R07][R19][R16][R17][R20]"
+          },
+          {
+            "type": "p",
+            "text": "RTsafe的产品与服务资料以及个体放疗验证历史公告说明企业端组织的是解剖模型、测量介质和验证流程的交付。乳腺端到端研究把电离室与胶片位置预置在模型中，动态胸廓研究把可压缩肺和肿瘤运动接入四维CT。这些学术任务可反向约束专利材料与装配：需要保留探测器可定位性、骨软界面与运动后几何，而非只交付逼真的外形。两项专利在此承担静态材料与个体几何的技术比较。[R10][R12][R16][R17][R14][R18][R20]"
+          }
+        ]
+      },
+      {
+        "title": "后续研究与应用走向",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "值得关注的是能在不同机构间重复测量的结构和校准流程。设计档案可记录每次成像的能谱和重建版本、材料批次、实测 HU 与探测点复位变异。 [R01] [R02] [R05]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "A customized anthropomorphic 3D-printed phantom to reproducibility assessment in computed tomography: an oncological case study.",
+        "url": "https://doi.org/10.3389/fonc.2023.1123796",
+        "year": "2023",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R01"
+      },
+      {
+        "title": "In-house development of CT-based 3D-printed head & neck phantom for Radiotherapy applications.",
+        "url": "https://doi.org/10.1002/acm2.70706",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R02"
+      },
+      {
+        "title": "Fabrication of a pediatric torso phantom with multiple tissues represented using a dual nozzle thermoplastic 3D printer.",
+        "url": "https://doi.org/10.1002/acm2.13064",
+        "year": "2020",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R03"
+      },
+      {
+        "title": "Development and validation of a 3D-printed dosimetry phantom for paediatric radiology.",
+        "url": "https://doi.org/10.1007/s13246-026-01698-3",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R04"
+      },
+      {
+        "title": "Validation of a novel 3D-printed anthropomorphic pediatric abdomen phantom using photon-counting CT.",
+        "url": "https://doi.org/10.1038/s41598-025-32391-2",
+        "year": "2025",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R05"
+      },
+      {
+        "title": "Three-dimensional printing CT-derived objects with controllable radiopacity.",
+        "url": "https://aapm.onlinelibrary.wiley.com/doi/10.1002/acm2.12278",
+        "year": "2018",
+        "kind": "论文",
+        "source": "Journal of Applied Clinical Medical Physics",
+        "id": "R06"
+      },
+      {
+        "id": "R07",
+        "title": "Patient specific 3D printed phantom for IMRT quality assurance",
+        "year": "2014",
+        "source": "Physics in Medicine & Biology",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1088/0031-9155/59/19/5763"
+      },
+      {
+        "id": "R08",
+        "title": "Feasibility of a 3D-printed anthropomorphic patient-specific head phantom for patient-specific quality assurance of intensity-modulated radiotherapy",
+        "year": "2017",
+        "source": "PLOS ONE",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1371/journal.pone.0181560"
+      },
+      {
+        "id": "R09",
+        "title": "Verification of Acuros XB dose algorithm using 3D printed low-density phantoms for clinical photon beams",
+        "year": "2018",
+        "source": "Journal of Applied Clinical Medical Physics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1002/acm2.12299"
+      },
+      {
+        "id": "R10",
+        "title": "Technical Note: Development of 3D-printed breast phantoms for end-to-end testing of whole breast volumetric arc radiotherapy",
+        "year": "2020",
+        "source": "Journal of Applied Clinical Medical Physics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1002/acm2.12976"
+      },
+      {
+        "id": "R11",
+        "title": "Customization of Computed Tomography Radio-Opacity in 3D-Printed Contrast-Injectable Tumor Phantoms",
+        "year": "2024",
+        "source": "Micromachines",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.3390/mi15080992"
+      },
+      {
+        "id": "R12",
+        "title": "Development of a novel 3D-printed dynamic anthropomorphic thorax phantom for evaluation of four-dimensional computed tomography",
+        "year": "2024",
+        "source": "Physics and Imaging in Radiation Oncology",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.phro.2024.100656"
+      },
+      {
+        "id": "R13",
+        "title": "3D-Printed Organ-Realistic Phantoms to Verify Quantitative SPECT/CT Accuracy for 177Lu-PSMA-617 Treatment Planning",
+        "year": "2025",
+        "source": "Pharmaceuticals",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.3390/ph18040550"
+      },
+      {
+        "id": "R14",
+        "title": "RTsafe receives 510(k) FDA clearance for personalized radiotherapy verification",
+        "year": "2018",
+        "source": "RTsafe",
+        "kind": "企业公告",
+        "url": "https://rt-safe.com/rtsafe-receives-510k-fda-clearance-personalized-radiotherapy-verification/"
+      },
+      {
+        "id": "R15",
+        "title": "About RTsafe: Milestones",
+        "year": "2026（访问）",
+        "source": "RTsafe",
+        "kind": "企业资料",
+        "url": "https://rt-safe.com/about/"
+      },
+      {
+        "id": "R16",
+        "title": "Products and services: anatomy-based dosimetry phantoms",
+        "year": "2026（访问）",
+        "source": "RTsafe",
+        "kind": "企业产品资料",
+        "url": "https://rt-safe.com/product-services/"
+      },
+      {
+        "id": "R17",
+        "title": "Customized phantom service",
+        "year": "2026（访问）",
+        "source": "RTsafe",
+        "kind": "企业产品资料",
+        "url": "https://rt-safe.com/customized-phantom-service/"
+      },
+      {
+        "id": "R18",
+        "title": "Individualized whole-body physical phantom manufacturing method and device",
+        "year": "2026",
+        "source": "Espacenet",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN122455332A",
+        "kind": "patent"
+      },
+      {
+        "id": "R19",
+        "title": "Preparation and fabrication of a full-scale, sagittal-sliced, 3D-printed, patient-specific radiotherapy phantom",
+        "year": "2017",
+        "source": "Journal of Applied Clinical Medical Physics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1002/acm2.12162"
+      },
+      {
+        "id": "R20",
+        "title": "METHOD FOR PRODUCING ANTHROPOMORPHIC SPINE DOSIMETRY PHANTOMS USING 3D PRINTING",
+        "year": "2025",
+        "source": "Espacenet",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DRO139161A1",
+        "kind": "patent"
+      },
+      {
+        "id": "R21",
+        "title": "Development of a validation imaging dataset for molecular radiation dosimetry multicenter intercomparison exercises based on anthropomorphic phantoms",
+        "year": "2023",
+        "source": "Physica Medica",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.ejmp.2023.102583"
+      }
+    ]
+  },
+  "en": {
+    "id": "H17",
+    "p": "P6",
+    "title": "Medical imaging, anthropomorphic phantoms and radiotherapy dose verification",
+    "subtitle": "Calibrate geometry, radiological response and the measurement chain",
+    "thesis": "A useful phantom requires traceable organ geometry, attenuation and detector placement. Similar geometry can coexist with different CT numbers, textures and dose responses. [R03] [R06]",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway · Medical imaging, anthropomorphic phantoms and radiotherapy dose verification",
+      "summary": "Start with the measurement task, calibrate geometry and materials separately, verify the assembled phantom and locate deviations across systems.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2023",
+          "question": "Associate each measurement with an explicit reference.",
+          "title": "Define a reference for the task",
+          "evidence": "A CT phantom derived from an oncology case supports repeated measurements. Organ boundaries, homogeneous regions and tumour features test segmentation, CT number stability and texture, respectively.",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2020",
+          "question": "Which organs need faithful positions and separations?",
+          "title": "Reconstruct anatomy",
+          "evidence": "A paediatric torso study printed a full-scale 10 cm segment representing a one-year-old child with 30 separate anatomical regions. Segmentation, positioning and outer contour affect correspondence and should be tracked separately.",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2018–2020",
+          "question": "Compare coupon calibration with local organ response.",
+          "title": "Calibrate material attenuation",
+          "evidence": "The dual-nozzle paediatric phantom used PLA and iron-filled PLA. Mean CT numbers in the printed heart, right lung and vertebral body were 94, −417 and 1180 HU. Infill calibration needs rechecking on the assembled anatomy.",
+          "refs": [
+            "R03",
+            "R06"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2026",
+          "question": "Is the detector position stable after reassembly?",
+          "title": "Detector and assembled phantom checks",
+          "evidence": "A head-and-neck phantom connects patient CT, a printed structure and radiotherapy verification. Detector position, air gaps, registration and repeat insertion should be tracked on the assembled part to align measurements with the dose grid.",
+          "refs": [
+            "R02"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025–2026",
+          "question": "Record CT characterisation and dose separately.",
+          "title": "Spectrum, algorithm and application",
+          "evidence": "The photon-counting CT abdomen and paediatric radiology dosimetry phantoms serve distinct tasks. One probes image behaviour under reconstruction choices, the other dose and geometry. Equivalence checks should match task and spectrum.",
+          "refs": [
+            "R04",
+            "R05"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2020–2026",
+          "question": "Use a known reference to distinguish design, fabrication and measurement.",
+          "title": "Feed deviations back into design",
+          "evidence": "Similar mean CT numbers with different textures call for checking infill and reconstruction. A dose discrepancy with adequate geometry directs attention to material equivalence or detector placement.",
+          "refs": [
+            "R02",
+            "R03"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Reconstruct anatomy",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Calibrate material attenuation",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Detector and assembled phantom checks",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Detector and assembled phantom checks",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Spectrum, algorithm and application",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Feed deviations back into design",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Recalibrate from dose or texture error",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Scope and objectives",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Applications include equipment checks, quantitative imaging repeatability and patient-plan verification. Define modality, spectrum, anatomy, target contrast or dose outcome before selecting how much patient geometry is needed."
+          }
+        ]
+      },
+      {
+        "title": "Academic pathway and interpretation",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Define a reference for the task"
+          },
+          {
+            "type": "p",
+            "text": "A CT phantom derived from an oncology case supports repeated measurements. Organ boundaries, homogeneous regions and tumour features test segmentation, CT number stability and texture, respectively. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Associate each measurement with an explicit reference."
+          },
+          {
+            "type": "p",
+            "text": "In 2014, Ehler and colleagues used the head-and-neck region of an anthropomorphic phantom as a patient surrogate to produce a soft-tissue-equivalent printed model for intensity-modulated radiotherapy verification. Relative to conventional phantoms, it revealed larger measurement–calculation differences at shallow depths, showing how geometry changes the problems exposed by a test. [R07]"
+          },
+          {
+            "type": "p",
+            "text": "A known anthropomorphic reference permits direct comparison between printed conversion and existing verification methods. The key is adding anatomical shape to dose checks rather than testing a beam only in a standard block. At shallow depths, electron equilibrium, dose gradients and measurement position can all affect differences. Results should therefore be examined spatially and then separated by material, setup and dosimeter response, creating a verification chain capable of investigating causes."
+          },
+          {
+            "type": "p",
+            "text": "In 2017, Yea et al. constructed an FDM phantom based on the patient's head contour, compared calculated and measured doses, and contrasted it with existing quality assurance methods. This study validated the intensity-modulated radiotherapy dose using the patient's relevant spatial morphology, demonstrating the feasibility of combining case geometry and planar analysis. [R08]"
+          },
+          {
+            "type": "p",
+            "text": "The measurement plane makes spatial distribution visible, but its location determines what can be seen. Small positional changes in high-gradient regions can create significant differences, while even if the plane is consistent away from the target, it may not cover the most sensitive parts of the plan. When designing the phantom, the dosimeter space and alignment structure should be considered together so that repeatedly inserted coordinates can be traced back to the planned image. During analysis, absolute dose and shape deviations should be checked separately to avoid a single summary value hiding local problems."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Reconstruct anatomy"
+          },
+          {
+            "type": "p",
+            "text": "A paediatric torso study printed a full-scale 10 cm segment representing a one-year-old child with 30 separate anatomical regions. Segmentation, positioning and outer contour affect correspondence and should be tracked separately. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Which organs need faithful positions and separations?"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Calibrate material attenuation"
+          },
+          {
+            "type": "p",
+            "text": "The dual-nozzle paediatric phantom used PLA and iron-filled PLA. Mean CT numbers in the printed heart, right lung and vertebral body were 94, −417 and 1180 HU. Infill calibration needs rechecking on the assembled anatomy. [R03] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Compare coupon calibration with local organ response."
+          },
+          {
+            "type": "p",
+            "text": "In 2018, Zavan et al. fabricated polystyrene phantoms of varying densities using printing parameters to test the Acuros XB algorithm under clinical photon beam and small field conditions. The study used the same material composition to adjust the density, and the calculated and measured results were consistent in most non-penumbra regions. [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Using the same composition is central to method selection. Changing both material and density simultaneously may result in observed differences that mix elemental composition, electron transport, and geometry; using the same material makes it easier to identify the effects of density and interfaces. Printing pores also introduces scale issues: while the macroscopic average density approximates lung tissue, it doesn't guarantee that microscopic channels behave identically in every beam direction. Density uniformity and orientation dependence should be examined to determine what actual structure the algorithm input represents."
+          },
+          {
+            "type": "p",
+            "text": "A 2020 breast-phantom study attached printed breast structures to an existing thorax phantom, with spaces for an ionization chamber and film in different planes. Scanning, surface-guided positioning, planning and arc-therapy delivery were connected through several treatment-plan measurements and a complete end-to-end test. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "An attachable structure combines relevant anatomy with reusable equipment and concentrates fabrication on what the existing phantom lacks. Predesigned dosimeter locations make measurement part of the model. End-to-end testing checks several transformations together; staged retesting then locates the cause of any discrepancy. The complete workflow reveals combined problems, while local tests explain them, forming an iterative cycle."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Detector and assembled phantom checks"
+          },
+          {
+            "type": "p",
+            "text": "A head-and-neck phantom connects patient CT, a printed structure and radiotherapy verification. Detector position, air gaps, registration and repeat insertion should be tracked on the assembled part to align measurements with the dose grid. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Is the detector position stable after reassembly?"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Spectrum, algorithm and application"
+          },
+          {
+            "type": "p",
+            "text": "The photon-counting CT abdomen and paediatric radiology dosimetry phantoms serve distinct tasks. One probes image behaviour under reconstruction choices, the other dose and geometry. Equivalence checks should match task and spectrum. [R04] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Record CT characterisation and dose separately."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Feed deviations back into design"
+          },
+          {
+            "type": "p",
+            "text": "Similar mean CT numbers with different textures call for checking infill and reconstruction. A dose discrepancy with adequate geometry directs attention to material equivalence or detector placement. [R02] [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Use a known reference to distinguish design, fabrication and measurement."
+          },
+          {
+            "type": "p",
+            "text": "A 2024 Micromachines study used a printed tumor phantom with injectable contrast medium to adjust CT radiopacity. The fillable design separates external shape from the imaging medium, allowing different contrast conditions to be constructed. [R11]"
+          },
+          {
+            "type": "p",
+            "text": "This decoupling is suitable for studying the sensitivity of image algorithms: fixing the geometry while changing the contrast allows observation of segmentation or detection performance; fixing the contrast while changing the shape allows observation of the impact of boundary complexity. The contrast medium, shell, and background each affect the image; analysis requires checking whether the shell becomes an additional high-contrast boundary and whether the filling is uniform. The controllability of the phantom comes from the measurability of these states, rather than just from the tunability of the materials."
+          },
+          {
+            "type": "p",
+            "text": "The 2024 dynamic thoracic cage study used compressible lung and tumor structures to simulate customized respiratory curves. The repeatability of tumor motion amplitude was approximately ±0.2 mm, and it was used for 4D CT artifact studies. The model transforms respiratory irregularities into repeatable test conditions. [R12]"
+          },
+          {
+            "type": "p",
+            "text": "The motion phantom requires simultaneous control of deformation and time. For the same displacement amplitude, different speeds and pauses can lead to different scan phases and reconstruction results. Compressible structures more closely resemble certain respiratory behaviors than rigid body translations, but their deformation distribution still needs independent measurement. Recording the drive signal, actual tumor trajectory, and image reconstruction location allows determination of whether the deviation originates from the drive, scan synchronization, or reconstruction."
+          },
+          {
+            "type": "p",
+            "text": "A 2025 organ-phantom study created fillable kidney- and parotid-gland-related structures, checked geometry and sealing, and compared known radioactivity with SPECT/CT estimates. Images systematically underestimated activity, and recovery coefficients correlated with surface-area-to-volume ratio, demonstrating an effect of organ shape on quantification. [R13]"
+          },
+          {
+            "type": "p",
+            "text": "The method closely links geometric fabrication with metrological problems. Regular bodies and slender or irregular organs of the same volume have different boundary proportions; limited resolution will cause some signals to be distributed outside the boundaries, so the calibration results need to take shape into account. Fillable phantoms provide independent inputs, but the actual internal volume, residues, leaks, and background will all affect the reference; these factors should be identified before interpreting image underestimation."
+          }
+        ]
+      },
+      {
+        "title": "Comparing the evidence",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Use common scan conditions to compare target attenuation, measured means and spatial distributions. Clinical-plan verification also needs tissue interfaces and measurement repeatability."
+          },
+          {
+            "type": "p",
+            "text": "A materials study would compare the whole-body formulations and spine resin–gel construction with standard tissue-equivalent phantoms for density, CT response and dose under selected exposures, sampling interfaces, superficial and homogeneous regions. Similar CT values may arise from different compositions. Energy-specific suitability would restrict use or prompt material revision; stable material, interface and geometry would gate full-plan verification. [R09][R07][R18][R20]"
+          },
+          {
+            "type": "p",
+            "text": "End-to-end comparisons would use the same plan and analysis for conventional, patient-shaped and bone–soft-interface models across scanning, planning, positioning and delivery. Detector repositioning, seams, gel change and reassembly would be tracked. Sliced printing motivates postassembly imaging; breast phantoms motivate fixed detector locations. Assembly-dependent dose deviations trigger connector revision; anatomy-specific discrepancies inform whether customization adds value. [R10][R19][R17][R18][R20]"
+          },
+          {
+            "type": "p",
+            "text": "Dynamic and nuclear-medicine use needs a separate layer. Known motion inputs would test amplitude, phase and artifacts; fillable kidney/parotid work compares known activity with recovery, supported by multicenter reference data. The static whole-body patent contributes shape and material parameters, while motion hardware and activity chambers need separate qualification. Unstable sealing, geometry or reference input would require modular testing before integration. [R12][R13][R21][R18]"
+          }
+        ]
+      },
+      {
+        "title": "Industry approaches and documented products",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Commercial offerings combine anatomical geometry, measurement inserts and phantom services. Compare verification time, positioning error and the ability to reproduce a specific revision."
+          },
+          {
+            "type": "p",
+            "text": "RTsafe provides a traceable example of printed phantoms progressing from research tools to quality-assurance services. In July 2018, the company announced US FDA 510(k) clearance for Personalized PseudoPatient; the attached letter is K180697. The product supports patient-related radiotherapy verification. [R14] This stage connected individual imaging with pretreatment testing as a defined product use."
+          },
+          {
+            "type": "p",
+            "text": "Official milestones record an independent remote dosimetry service entering the ISRS certification program in 2022 and a collaboration with ZAP Surgical on intracranial radiosurgery in 2024. [R15] The evolution extends from an individual phantom to independent measurements, workflow comparisons and integration with equipment platforms."
+          },
+          {
+            "type": "p",
+            "text": "The current product portfolio includes phantoms for the head, spine, and abdomen, offering point, two-dimensional, and three-dimensional dose measurement options; Encephalon 3D combines bone equivalent structure with polymer gel readout. [R16] Different products combine geometry, materials, and measurement dimensions to cover equipment inspection, complex planning, and patient-related validation."
+          },
+          {
+            "type": "p",
+            "text": "The customization service allows users to participate in phantom design, organizing requirements according to body, CT source, detector, measurement direction, and additional features. Official case studies include surface positioning applications and lung measurement inserts. This product logic aligns with the task breakdown in academic research: first, identify the deviations to be discovered, then select the physical structure and readout method. [R17]"
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and translational testing",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Phantom patent concepts link tissue attenuation with assembly. Their evaluation covers the reference object, measurements on the assembled device and the resulting dose."
+          },
+          {
+            "type": "p",
+            "text": "Radiotherapy phantom patents connect anatomy to measurable radiation equivalence. CN122455332A (2026) proposes a personalized surface model from body and physiological parameters, tissue-equivalence indices and material formulations for whole-body additive manufacture. The variable-density polystyrene Acuros XB study provides a concrete same-composition density comparator. Equivalence therefore needs definition alongside beam, energy and measurement location. [R09][R18]"
+          },
+          {
+            "type": "p",
+            "text": "RO139161A1 (2025) describes CT-segmented vertebrae printed in bone-density-like resin and embedded in soft-tissue-like gel. This bone–matrix construction complements patient-specific head/neck and sliced-phantom work on superficial dose discrepancies, size limits and warping. RTsafe’s anatomical dosimetry phantoms and customization service provide enterprise interfaces for comparing these manufacturing variables and acceptance tasks. [R08][R07][R19][R16][R17][R20]"
+          },
+          {
+            "type": "p",
+            "text": "RTsafe’s product, service and historical verification announcement describe delivery of anatomy, measurement media and workflow. Breast end-to-end work fixes chamber and film locations; dynamic-thorax work combines compressible lung and tumor motion with 4D CT. These tasks constrain patent materials and assembly through detector positioning, bone–soft-tissue interfaces and geometry under motion. The patents serve as comparators for static materials and personalized geometry within that delivery chain. [R10][R12][R16][R17][R14][R18][R20]"
+          }
+        ]
+      },
+      {
+        "title": "Research and adoption outlook",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The next advance is reproducible testing across centres. Design records can track spectrum and reconstruction version, material lot, measured HU and detector repositioning spread. [R01] [R02] [R05]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "A customized anthropomorphic 3D-printed phantom to reproducibility assessment in computed tomography: an oncological case study.",
+        "url": "https://doi.org/10.3389/fonc.2023.1123796",
+        "year": "2023",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R01"
+      },
+      {
+        "title": "In-house development of CT-based 3D-printed head & neck phantom for Radiotherapy applications.",
+        "url": "https://doi.org/10.1002/acm2.70706",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R02"
+      },
+      {
+        "title": "Fabrication of a pediatric torso phantom with multiple tissues represented using a dual nozzle thermoplastic 3D printer.",
+        "url": "https://doi.org/10.1002/acm2.13064",
+        "year": "2020",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R03"
+      },
+      {
+        "title": "Development and validation of a 3D-printed dosimetry phantom for paediatric radiology.",
+        "url": "https://doi.org/10.1007/s13246-026-01698-3",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R04"
+      },
+      {
+        "title": "Validation of a novel 3D-printed anthropomorphic pediatric abdomen phantom using photon-counting CT.",
+        "url": "https://doi.org/10.1038/s41598-025-32391-2",
+        "year": "2025",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R05"
+      },
+      {
+        "title": "Three-dimensional printing CT-derived objects with controllable radiopacity.",
+        "url": "https://aapm.onlinelibrary.wiley.com/doi/10.1002/acm2.12278",
+        "year": "2018",
+        "kind": "Research paper",
+        "source": "Journal of Applied Clinical Medical Physics",
+        "id": "R06"
+      },
+      {
+        "id": "R07",
+        "title": "Patient specific 3D printed phantom for IMRT quality assurance",
+        "year": "2014",
+        "source": "Physics in Medicine & Biology",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1088/0031-9155/59/19/5763"
+      },
+      {
+        "id": "R08",
+        "title": "Feasibility of a 3D-printed anthropomorphic patient-specific head phantom for patient-specific quality assurance of intensity-modulated radiotherapy",
+        "year": "2017",
+        "source": "PLOS ONE",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1371/journal.pone.0181560"
+      },
+      {
+        "id": "R09",
+        "title": "Verification of Acuros XB dose algorithm using 3D printed low-density phantoms for clinical photon beams",
+        "year": "2018",
+        "source": "Journal of Applied Clinical Medical Physics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1002/acm2.12299"
+      },
+      {
+        "id": "R10",
+        "title": "Technical Note: Development of 3D-printed breast phantoms for end-to-end testing of whole breast volumetric arc radiotherapy",
+        "year": "2020",
+        "source": "Journal of Applied Clinical Medical Physics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1002/acm2.12976"
+      },
+      {
+        "id": "R11",
+        "title": "Customization of Computed Tomography Radio-Opacity in 3D-Printed Contrast-Injectable Tumor Phantoms",
+        "year": "2024",
+        "source": "Micromachines",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.3390/mi15080992"
+      },
+      {
+        "id": "R12",
+        "title": "Development of a novel 3D-printed dynamic anthropomorphic thorax phantom for evaluation of four-dimensional computed tomography",
+        "year": "2024",
+        "source": "Physics and Imaging in Radiation Oncology",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.phro.2024.100656"
+      },
+      {
+        "id": "R13",
+        "title": "3D-Printed Organ-Realistic Phantoms to Verify Quantitative SPECT/CT Accuracy for 177Lu-PSMA-617 Treatment Planning",
+        "year": "2025",
+        "source": "Pharmaceuticals",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.3390/ph18040550"
+      },
+      {
+        "id": "R14",
+        "title": "RTsafe receives 510(k) FDA clearance for personalized radiotherapy verification",
+        "year": "2018",
+        "source": "RTsafe",
+        "kind": "企业公告",
+        "url": "https://rt-safe.com/rtsafe-receives-510k-fda-clearance-personalized-radiotherapy-verification/"
+      },
+      {
+        "id": "R15",
+        "title": "About RTsafe: Milestones",
+        "year": "2026（访问）",
+        "source": "RTsafe",
+        "kind": "企业资料",
+        "url": "https://rt-safe.com/about/"
+      },
+      {
+        "id": "R16",
+        "title": "Products and services: anatomy-based dosimetry phantoms",
+        "year": "2026（访问）",
+        "source": "RTsafe",
+        "kind": "企业产品资料",
+        "url": "https://rt-safe.com/product-services/"
+      },
+      {
+        "id": "R17",
+        "title": "Customized phantom service",
+        "year": "2026（访问）",
+        "source": "RTsafe",
+        "kind": "企业产品资料",
+        "url": "https://rt-safe.com/customized-phantom-service/"
+      },
+      {
+        "id": "R18",
+        "title": "Individualized whole-body physical phantom manufacturing method and device",
+        "year": "2026",
+        "source": "Espacenet",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN122455332A",
+        "kind": "patent"
+      },
+      {
+        "id": "R19",
+        "title": "Preparation and fabrication of a full-scale, sagittal-sliced, 3D-printed, patient-specific radiotherapy phantom",
+        "year": "2017",
+        "source": "Journal of Applied Clinical Medical Physics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1002/acm2.12162"
+      },
+      {
+        "id": "R20",
+        "title": "METHOD FOR PRODUCING ANTHROPOMORPHIC SPINE DOSIMETRY PHANTOMS USING 3D PRINTING",
+        "year": "2025",
+        "source": "Espacenet",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DRO139161A1",
+        "kind": "patent"
+      },
+      {
+        "id": "R21",
+        "title": "Development of a validation imaging dataset for molecular radiation dosimetry multicenter intercomparison exercises based on anthropomorphic phantoms",
+        "year": "2023",
+        "source": "Physica Medica",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.ejmp.2023.102583"
+      }
+    ]
+  },
+  "de": {
+    "id": "H17",
+    "p": "P6",
+    "title": "Medizinische Bildgebung, anthropomorphe Phantome und Dosisverifikation in der Strahlentherapie",
+    "subtitle": "Geometrie, radiologische Eigenschaften und Messkette kalibrieren",
+    "thesis": "Ein geeignetes Phantom verlangt rückverfolgbare Organgeometrie, Schwächung und Detektorposition. Ähnliche Geometrie kann mit unterschiedlichen CT-Werten, Texturen und Dosisantworten einhergehen. [R03] [R06]",
+    "questions": [],
+    "graph": {
+      "title": "Forschungsverlauf · Medizinische Bildgebung, anthropomorphe Phantome und Dosisverifikation in der Strahlentherapie",
+      "summary": "Von der Messaufgabe ausgehend werden Geometrie und Material getrennt kalibriert. Am zusammengebauten Phantom folgt die Prüfung, geräteübergreifend dann die Fehlerlokalisierung.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2023",
+          "question": "Jede Messung einer Referenzgröße zuordnen.",
+          "title": "Aufgabenbezogene Referenz bestimmen",
+          "evidence": "Ein CT-Phantom eines onkologischen Falls ermöglicht Wiederholungsmessungen. Organgrenzen, homogene Bereiche und Tumormerkmale dienen der Prüfung von Segmentierung, CT-Wertstabilität und Textur.",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2020",
+          "question": "Für welche Organe sind Lage und Abstand originalgetreu abzubilden?",
+          "title": "Anatomie rekonstruieren",
+          "evidence": "Eine Studie druckte einen 10 cm langen Rumpfabschnitt eines einjährigen Kindes in Originalgröße mit 30 anatomischen Regionen. Segmentierung, Haltung und Außenkontur beeinflussen die Übereinstimmung und sind getrennt zu dokumentieren.",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2018–2020",
+          "question": "Kalibrierkurven von Proben und lokale Organantwort vergleichen.",
+          "title": "Materialschwächung kalibrieren",
+          "evidence": "Das pädiatrische Phantom mit zwei Düsen nutzte PLA und eisenhaltiges PLA. Gedrucktes Herz, rechter Lungenflügel und Wirbelkörper ergaben im Mittel 94, −417 und 1180 HU. Die Füllgradkalibrierung ist an der fertigen Anatomie zu überprüfen.",
+          "refs": [
+            "R03",
+            "R06"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2026",
+          "question": "Bleibt die Detektorposition nach Wiedermontage stabil?",
+          "title": "Detektor und Endprodukt prüfen",
+          "evidence": "Ein Kopf-Hals-Phantom verbindet Patienten-CT, Druckstruktur und Strahlentherapieprüfung. Detektorlage, Luftspalte, Registrierung und Wiederpositionierung sind am Endprodukt zu erfassen, um Messort und Dosisraster abzugleichen.",
+          "refs": [
+            "R02"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025–2026",
+          "question": "CT-Charakterisierung und Dosis getrennt dokumentieren.",
+          "title": "Spektrum, Algorithmus und Einsatz",
+          "evidence": "Abdomenphantom für photonenzählende CT und pädiatrisches Dosimetriephantom dienen verschiedenen Aufgaben. Das eine prüft Bildverhalten bei Rekonstruktion, das andere Dosis und Geometrie. Äquivalenzprüfungen richten sich nach Aufgabe und Spektrum.",
+          "refs": [
+            "R04",
+            "R05"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2020–2026",
+          "question": "Beiträge von Konstruktion, Fertigung und Messung über eine bekannte Referenz trennen.",
+          "title": "Abweichungen in die Konstruktion zurückführen",
+          "evidence": "Ähnliche mittlere CT-Werte bei abweichender Textur sprechen für eine Prüfung von Füllstruktur und Rekonstruktion. Bei Dosisabweichung trotz passender Geometrie sind Materialäquivalenz oder Detektorlage zu untersuchen.",
+          "refs": [
+            "R02",
+            "R03"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Anatomie rekonstruieren",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Materialschwächung kalibrieren",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Detektor und Endprodukt prüfen",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Detektor und Endprodukt prüfen",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Spektrum, Algorithmus und Einsatz",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Abweichungen in die Konstruktion zurückführen",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Bei Dosis- oder Texturabweichung neu kalibrieren",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Untersuchungsrahmen und Ziele",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Anwendungen umfassen Geräteprüfung, Wiederholbarkeit quantitativer Bildgebung und Planverifikation. Modalität, Spektrum, Anatomie, Zielkontrast oder Dosisendpunkt sind vor der Wahl der anatomischen Komplexität festzulegen."
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Einordnung der Einzelschritte",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Aufgabenbezogene Referenz bestimmen"
+          },
+          {
+            "type": "p",
+            "text": "Ein CT-Phantom eines onkologischen Falls ermöglicht Wiederholungsmessungen. Organgrenzen, homogene Bereiche und Tumormerkmale dienen der Prüfung von Segmentierung, CT-Wertstabilität und Textur. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Jede Messung einer Referenzgröße zuordnen."
+          },
+          {
+            "type": "p",
+            "text": "Ehler et al. verwendeten 2014 ein humanoides Phantommodell des Kopf-Hals-Bereichs als Patientenersatz, um ein druckbares Weichgewebe-Äquivalent zu erstellen und validierten es mittels intensitätsmodulierter Strahlentherapie (IMRT). Im Vergleich zu herkömmlichen Phantomen zeigten die gedruckten Phantome größere Mess- und Berechnungsabweichungen in oberflächlichen Tiefen, was darauf hindeutet, dass die Geometrie die durch die Tests aufgedeckten Probleme beeinflussen kann. [R07]"
+          },
+          {
+            "type": "p",
+            "text": "Ein bekanntes anthropomorphes Phantom ermöglicht den direkten Vergleich der gedruckten Umsetzung mit bisherigen Prüfmethoden. Die anatomische Form ergänzt die Dosisprüfung gegenüber einem Standardblock. Oberflächennah beeinflussen jedoch Elektronengleichgewicht, Dosisgradient und Messort das Ergebnis. Unterschiede müssen deshalb zunächst räumlich und anschließend nach Material, Lagerung und Dosimeterantwort untersucht werden, um Ursachen zu lokalisieren."
+          },
+          {
+            "type": "p",
+            "text": "Im Jahr 2017 erstellten Yea et al. ein FDM-Phantom basierend auf der Kopfkontur des Patienten, verglichen berechnete und gemessene Dosen und stellten es bestehenden Qualitätssicherungsmethoden gegenüber. Diese Studie validierte die Dosis der intensitätsmodulierten Strahlentherapie unter Berücksichtigung der relevanten räumlichen Morphologie des Patienten und demonstrierte die Machbarkeit der Kombination von Fallgeometrie und planarer Analyse. [R08]"
+          },
+          {
+            "type": "p",
+            "text": "Die Messebene visualisiert die räumliche Verteilung, ihre Position bestimmt jedoch, was sichtbar ist. Geringfügige Positionsänderungen in Bereichen mit hohem Gradienten können erhebliche Unterschiede hervorrufen. Selbst wenn die Ebene außerhalb des Zielbereichs konsistent ist, erfasst sie möglicherweise nicht die empfindlichsten Bereiche des Plans. Bei der Phantomkonstruktion sollten Dosimeterraum und Ausrichtungsstruktur gemeinsam betrachtet werden, um wiederholt eingegebene Koordinaten auf das geplante Bild zurückzuführen. Bei der Analyse sollten absolute Dosis- und Formabweichungen separat geprüft werden, um zu vermeiden, dass ein einzelner zusammenfassender Wert lokale Probleme verschleiert."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Anatomie rekonstruieren"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie druckte einen 10 cm langen Rumpfabschnitt eines einjährigen Kindes in Originalgröße mit 30 anatomischen Regionen. Segmentierung, Haltung und Außenkontur beeinflussen die Übereinstimmung und sind getrennt zu dokumentieren. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Für welche Organe sind Lage und Abstand originalgetreu abzubilden?"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Materialschwächung kalibrieren"
+          },
+          {
+            "type": "p",
+            "text": "Das pädiatrische Phantom mit zwei Düsen nutzte PLA und eisenhaltiges PLA. Gedrucktes Herz, rechter Lungenflügel und Wirbelkörper ergaben im Mittel 94, −417 und 1180 HU. Die Füllgradkalibrierung ist an der fertigen Anatomie zu überprüfen. [R03] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Kalibrierkurven von Proben und lokale Organantwort vergleichen."
+          },
+          {
+            "type": "p",
+            "text": "Im Jahr 2018 stellten Zavan et al. Polystyrolphantome mit unterschiedlichen Dichten her, indem sie die Druckparameter variierten, um den Acuros-XB-Algorithmus unter klinischen Photonenstrahl- und Kleinfeldbedingungen zu testen. In der Studie wurde die gleiche Materialzusammensetzung zur Anpassung der Dichte verwendet, und die berechneten und gemessenen Ergebnisse stimmten in den meisten Bereichen außerhalb der Halbschattenzone überein. [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Die Verwendung derselben Materialzusammensetzung ist für die Methodenauswahl entscheidend. Eine gleichzeitige Änderung von Material und Dichte kann zu beobachteten Unterschieden führen, die Elementzusammensetzung, Elektronentransport und Geometrie vermischen. Die Verwendung desselben Materials erleichtert die Identifizierung der Auswirkungen von Dichte und Grenzflächen. Das Drucken von Poren führt außerdem zu Skalierungsproblemen: Obwohl die makroskopische Durchschnittsdichte Lungengewebe annähernd entspricht, ist nicht garantiert, dass sich mikroskopische Kanäle in jeder Strahlrichtung identisch verhalten. Dichtehomogenität und Orientierungsabhängigkeit sollten untersucht werden, um zu bestimmen, welche tatsächliche Struktur die Algorithmuseingabe repräsentiert."
+          },
+          {
+            "type": "p",
+            "text": "Die Brustphantomstudie 2020 befestigte gedruckte Bruststrukturen an einem bestehenden Thoraxphantom. Dabei wurden Ionisationskammern und Positionen für verschiedene planare Filme reserviert und Scanning, Oberflächenlokalisierung, Planung und bogenförmige Bestrahlung miteinander verknüpft. Die Studie umfasste mehrere Planungsmessungen und vollständige End-to-End-Tests. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "Die ergänzte Struktur verbindet relevante Anatomie mit wiederverwendbarer Basisausrüstung und konzentriert die Herstellung auf fehlende Bereiche. Vorgeplante Dosimeterpositionen machen die Messung zum Modellbestandteil. Gesamtablaufprüfungen erfassen mehrere Umwandlungen zugleich; gestufte Wiederholungen lokalisieren anschließend die Ursachen. End-to-End-Prüfung entdeckt kombinierte Probleme, lokale Prüfung erklärt sie. Beides bildet einen Rückkopplungskreis."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Detektor und Endprodukt prüfen"
+          },
+          {
+            "type": "p",
+            "text": "Ein Kopf-Hals-Phantom verbindet Patienten-CT, Druckstruktur und Strahlentherapieprüfung. Detektorlage, Luftspalte, Registrierung und Wiederpositionierung sind am Endprodukt zu erfassen, um Messort und Dosisraster abzugleichen. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Bleibt die Detektorposition nach Wiedermontage stabil?"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Spektrum, Algorithmus und Einsatz"
+          },
+          {
+            "type": "p",
+            "text": "Abdomenphantom für photonenzählende CT und pädiatrisches Dosimetriephantom dienen verschiedenen Aufgaben. Das eine prüft Bildverhalten bei Rekonstruktion, das andere Dosis und Geometrie. Äquivalenzprüfungen richten sich nach Aufgabe und Spektrum. [R04] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "CT-Charakterisierung und Dosis getrennt dokumentieren."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Abweichungen in die Konstruktion zurückführen"
+          },
+          {
+            "type": "p",
+            "text": "Ähnliche mittlere CT-Werte bei abweichender Textur sprechen für eine Prüfung von Füllstruktur und Rekonstruktion. Bei Dosisabweichung trotz passender Geometrie sind Materialäquivalenz oder Detektorlage zu untersuchen. [R02] [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Beiträge von Konstruktion, Fertigung und Messung über eine bekannte Referenz trennen."
+          },
+          {
+            "type": "p",
+            "text": "Eine 2024 in Micromachines veröffentlichte Studie nutzte ein gedrucktes Tumorphantom mit injizierbarem Kontrastmittel zur Einstellung der CT-Röntgendichte. Die befüllbare Struktur trennt Form und Bildgebungsmedium und ermöglicht unterschiedliche Kontrastsituationen. [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Diese Entkopplung eignet sich zur Untersuchung der Sensitivität von Bildalgorithmen: Durch Fixierung der Geometrie bei gleichzeitiger Kontraständerung lässt sich die Segmentierungs- oder Detektionsleistung beobachten; durch Fixierung des Kontrasts bei gleichzeitiger Formänderung kann der Einfluss der Komplexität der Begrenzungen untersucht werden. Kontrastmittel, Hülle und Hintergrund beeinflussen das Bild; die Analyse erfordert die Überprüfung, ob die Hülle eine zusätzliche kontrastreiche Begrenzung darstellt und ob die Füllung gleichmäßig ist. Die Kontrollierbarkeit des Phantoms ergibt sich aus der Messbarkeit dieser Zustände und nicht allein aus der Einstellbarkeit der Materialien."
+          },
+          {
+            "type": "p",
+            "text": "Die dynamische Thorax-Cage-Studie 2024 nutzte kompressible Lungen- und Tumorstrukturen zur Simulation individueller Atemkurven. Die Wiederholgenauigkeit der Tumorbewegungsamplitude betrug ca. ±0,2 mm und wurde für 4D-CT-Artefaktstudien verwendet. Das Modell transformiert Atemunregelmäßigkeiten in reproduzierbare Testbedingungen. [R12]"
+          },
+          {
+            "type": "p",
+            "text": "Das Bewegungsphantom erfordert die simultane Steuerung von Deformation und Zeit. Bei gleicher Auslenkungsamplitude können unterschiedliche Geschwindigkeiten und Pausen zu unterschiedlichen Scanphasen und Rekonstruktionsergebnissen führen. Kompressible Strukturen ähneln bestimmten Atembewegungen stärker als Translationen starrer Körper, ihre Deformationsverteilung muss jedoch weiterhin separat gemessen werden. Die Aufzeichnung des Ansteuersignals, der tatsächlichen Tumortrajektorie und der Position der Bildrekonstruktion ermöglicht die Bestimmung, ob die Abweichung auf die Ansteuerung, die Scansynchronisation oder die Rekonstruktion zurückzuführen ist."
+          },
+          {
+            "type": "p",
+            "text": "Eine Organphantomstudie von 2025 konstruierte befüllbare nieren- und ohrspeicheldrüsenbezogene Strukturen, prüfte Geometrie und Dichtigkeit und verglich bekannte Radioaktivität mit SPECT/CT-Schätzungen. Die Bildgebung unterschätzte die Aktivität systematisch; der Recovery-Koeffizient hing vom Oberflächen-Volumen-Verhältnis ab. Damit beeinflusst die Organform die Quantifizierung. [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Die Methode verknüpft die geometrische Fertigung eng mit messtechnischen Fragestellungen. Regelmäßige Körper und schlanke oder unregelmäßige Organe gleichen Volumens weisen unterschiedliche Randproportionen auf; die begrenzte Auflösung führt dazu, dass sich einige Signale außerhalb der Ränder verteilen, weshalb die Kalibrierungsergebnisse die Form berücksichtigen müssen. Füllbare Phantome liefern unabhängige Eingangsdaten, jedoch beeinflussen das tatsächliche Innenvolumen, Rückstände, Leckagen und der Hintergrund die Referenz; diese Faktoren müssen vor der Interpretation der Bildunterschätzung identifiziert werden."
+          }
+        ]
+      },
+      {
+        "title": "Vergleich der Befunde",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Bei gleichen Scanbedingungen sind Zielschwächung, gemessener Mittelwert und räumliche Verteilung zu vergleichen. Für klinische Pläne zählen zusätzlich Gewebegrenzen und Messwiederholbarkeit."
+          },
+          {
+            "type": "p",
+            "text": "Eine Materialprüfung würde Ganzkörperrezepturen und Wirbelsäulen-Harz-Gel-Aufbau mit Standardphantomen hinsichtlich Dichte, CT-Antwort und Dosis unter ausgewählten Bestrahlungen vergleichen, mit Messorten an Grenzen, Oberfläche und homogenen Bereichen. Gleiche CT-Werte können verschiedene Zusammensetzungen verdecken. Energiespezifische Eignung begrenzt den Einsatz oder verlangt neues Material; stabile Materialien, Grenzen und Geometrie bestimmen die vollständige Planprüfung. [R09][R07][R18][R20]"
+          },
+          {
+            "type": "p",
+            "text": "End-to-End-Vergleiche würden denselben Plan und dieselbe Analyse für Standard-, Patientenform- und Knochen-Weichgewebe-Modelle über Scan, Planung, Positionierung und Lieferung nutzen. Detektorversatz, Fugen, Geländerung und Neumontage werden erfasst. Schichtdruck begründet Bildgebung nach Montage, Brustphantome feste Messplätze. Montageabhängige Dosisabweichung verlangt Verbindungsänderung; anatomiespezifische Unterschiede bestimmen den Zusatzwert der Individualisierung. [R10][R19][R17][R18][R20]"
+          },
+          {
+            "type": "p",
+            "text": "Dynamische und nuklearmedizinische Nutzung benötigt eine eigene Ebene. Bekannte Bewegung prüft Amplitude, Phase und Artefakte; befüllbare Nieren- und Parotismodelle vergleichen bekannte Aktivität und Rückgewinnung, ergänzt durch Multizenterreferenzen. Das statische Ganzkörperpatent liefert Form und Materialgrößen; Bewegung und Aktivitätskammern erfordern eigene Qualifikation. Instabile Dichtung, Geometrie oder Referenzeingabe verlangt Modulprüfung vor Integration. [R12][R13][R21][R18]"
+          }
+        ]
+      },
+      {
+        "title": "Industrielle Ansätze und dokumentierte Produkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Kommerzielle Angebote verbinden anatomische Geometrie, Messeinsätze und Phantomdienstleistung. Prüfzeit, Positionierfehler und Reproduzierbarkeit einer bestimmten Version ermöglichen den Vergleich."
+          },
+          {
+            "type": "p",
+            "text": "RTsafe bietet ein nachvollziehbares Beispiel dafür, wie gedruckte Phantome vom Forschungswerkzeug zur Qualitätssicherungsdienstleistung werden. Das Unternehmen meldete im Juli 2018 die FDA-510(k)-Freigabe für Personalized PseudoPatient; beigefügt war das Schreiben K180697. Das Produkt dient der patientenbezogenen Strahlentherapieverifikation.[R14] Individuelle Bilddaten und Tests vor der Behandlung wurden damit zu einem klaren Verwendungszweck verbunden."
+          },
+          {
+            "type": "p",
+            "text": "Offizielle Meilensteine dokumentieren die Aufnahme eines unabhängigen Ferndosimetrie-Dienstes in das ISRS-Zertifizierungsprogramm 2022 und eine Zusammenarbeit mit ZAP Surgical zur intrakraniellen Radiochirurgie 2024. [R15] Die Entwicklung reicht somit vom einzelnen Phantom zu unabhängigen Messungen, Ablaufvergleichen und Gerätepartnerschaften."
+          },
+          {
+            "type": "p",
+            "text": "Das aktuelle Produktportfolio umfasst Phantome für Kopf, Wirbelsäule und Abdomen und bietet punktuelle, zweidimensionale und dreidimensionale Dosis-Messoptionen. Encephalon 3D kombiniert eine knochenäquivalente Struktur mit einer Polymergel-Auslesung. [R16] Verschiedene Produkte kombinieren Geometrie, Materialien und Messdimensionen für die Geräteprüfung, komplexe Planung und patientenbezogene Validierung."
+          },
+          {
+            "type": "p",
+            "text": "Der Anpassungsservice ermöglicht es Anwendern, sich an der Phantomentwicklung zu beteiligen und die Anforderungen hinsichtlich Körper, CT-Quelle, Detektor, Messrichtung und zusätzlichen Merkmalen zu organisieren. Offizielle Anwendungsbeispiele umfassen Oberflächenpositionierung und Einsätze zur Lungenmessung. [R17] Diese Produktlogik entspricht der Aufgabenstruktur in der akademischen Forschung: Zuerst werden die zu ermittelnden Abweichungen identifiziert, dann die physikalische Struktur und die Auslesemethode ausgewählt."
+          }
+        ]
+      },
+      {
+        "title": "Patentmechanismen und Prüfung für den Einsatz",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Patentansätze verbinden Gewebeschwächung mit montierbaren Strukturen. Die Prüfung umfasst Referenzobjekt, Messung am montierten Bauteil und resultierende Dosis."
+          },
+          {
+            "type": "p",
+            "text": "Strahlentherapiephantom-Patente verbinden Anatomie mit messbarer Strahlenäquivalenz. CN122455332A (2026) sieht ein individuelles Oberflächenmodell aus Körper- und physiologischen Größen sowie Gewebeäquivalenzindizes und Materialrezepturen für den Ganzkörperdruck vor. Die Polystyrolstudie zu Acuros XB liefert einen Vergleich variabler Dichte bei gleicher Zusammensetzung. Äquivalenz ist deshalb zusammen mit Strahl, Energie und Messort zu definieren. [R09][R18]"
+          },
+          {
+            "type": "p",
+            "text": "RO139161A1 (2025) beschreibt CT-segmentierte Wirbel aus knochendichteähnlichem Harz in weichgewebeähnlichem Gel. Die Knochen-Matrix-Konstruktion ergänzt Kopf-Hals- und Schichtphantomstudien zu oberflächlichen Dosisabweichungen, Größe und Verzug. RTsafes anatomische Dosimetriephantome und Individualisierung bieten Unternehmensschnittstellen zum Vergleich dieser Fertigungsgrößen und Abnahmeaufgaben. [R08][R07][R19][R16][R17][R20]"
+          },
+          {
+            "type": "p",
+            "text": "RTsafes Produkt-, Service- und historische Verifikationsunterlagen beschreiben die Lieferung von Anatomie, Messmedium und Ablauf. Brust-End-to-End-Arbeit legt Kammer- und Filmpositionen fest; das dynamische Thoraxmodell verbindet komprimierbare Lunge und Tumorbewegung mit 4D-CT. Daraus folgen Anforderungen an Patentmaterialien und Montage: Detektorposition, Knochen-Weichgewebe-Grenzen und Bewegungsgeometrie. Die Patente liefern Vergleiche für statische Materialien und Individualgeometrie innerhalb dieser Kette. [R10][R12][R16][R17][R14][R18][R20]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick auf Forschung und Anwendung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Der nächste Fortschritt liegt in reproduzierbaren Messungen zwischen Standorten. Spektrum und Rekonstruktionsversion, Materialcharge, gemessene HU und Streuung der Detektorposition sind zu dokumentieren. [R01] [R02] [R05]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "A customized anthropomorphic 3D-printed phantom to reproducibility assessment in computed tomography: an oncological case study.",
+        "url": "https://doi.org/10.3389/fonc.2023.1123796",
+        "year": "2023",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R01"
+      },
+      {
+        "title": "In-house development of CT-based 3D-printed head & neck phantom for Radiotherapy applications.",
+        "url": "https://doi.org/10.1002/acm2.70706",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R02"
+      },
+      {
+        "title": "Fabrication of a pediatric torso phantom with multiple tissues represented using a dual nozzle thermoplastic 3D printer.",
+        "url": "https://doi.org/10.1002/acm2.13064",
+        "year": "2020",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R03"
+      },
+      {
+        "title": "Development and validation of a 3D-printed dosimetry phantom for paediatric radiology.",
+        "url": "https://doi.org/10.1007/s13246-026-01698-3",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R04"
+      },
+      {
+        "title": "Validation of a novel 3D-printed anthropomorphic pediatric abdomen phantom using photon-counting CT.",
+        "url": "https://doi.org/10.1038/s41598-025-32391-2",
+        "year": "2025",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R05"
+      },
+      {
+        "title": "Three-dimensional printing CT-derived objects with controllable radiopacity.",
+        "url": "https://aapm.onlinelibrary.wiley.com/doi/10.1002/acm2.12278",
+        "year": "2018",
+        "kind": "Forschungsartikel",
+        "source": "Journal of Applied Clinical Medical Physics",
+        "id": "R06"
+      },
+      {
+        "id": "R07",
+        "title": "Patient specific 3D printed phantom for IMRT quality assurance",
+        "year": "2014",
+        "source": "Physics in Medicine & Biology",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1088/0031-9155/59/19/5763"
+      },
+      {
+        "id": "R08",
+        "title": "Feasibility of a 3D-printed anthropomorphic patient-specific head phantom for patient-specific quality assurance of intensity-modulated radiotherapy",
+        "year": "2017",
+        "source": "PLOS ONE",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1371/journal.pone.0181560"
+      },
+      {
+        "id": "R09",
+        "title": "Verification of Acuros XB dose algorithm using 3D printed low-density phantoms for clinical photon beams",
+        "year": "2018",
+        "source": "Journal of Applied Clinical Medical Physics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1002/acm2.12299"
+      },
+      {
+        "id": "R10",
+        "title": "Technical Note: Development of 3D-printed breast phantoms for end-to-end testing of whole breast volumetric arc radiotherapy",
+        "year": "2020",
+        "source": "Journal of Applied Clinical Medical Physics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1002/acm2.12976"
+      },
+      {
+        "id": "R11",
+        "title": "Customization of Computed Tomography Radio-Opacity in 3D-Printed Contrast-Injectable Tumor Phantoms",
+        "year": "2024",
+        "source": "Micromachines",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.3390/mi15080992"
+      },
+      {
+        "id": "R12",
+        "title": "Development of a novel 3D-printed dynamic anthropomorphic thorax phantom for evaluation of four-dimensional computed tomography",
+        "year": "2024",
+        "source": "Physics and Imaging in Radiation Oncology",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.phro.2024.100656"
+      },
+      {
+        "id": "R13",
+        "title": "3D-Printed Organ-Realistic Phantoms to Verify Quantitative SPECT/CT Accuracy for 177Lu-PSMA-617 Treatment Planning",
+        "year": "2025",
+        "source": "Pharmaceuticals",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.3390/ph18040550"
+      },
+      {
+        "id": "R14",
+        "title": "RTsafe receives 510(k) FDA clearance for personalized radiotherapy verification",
+        "year": "2018",
+        "source": "RTsafe",
+        "kind": "企业公告",
+        "url": "https://rt-safe.com/rtsafe-receives-510k-fda-clearance-personalized-radiotherapy-verification/"
+      },
+      {
+        "id": "R15",
+        "title": "About RTsafe: Milestones",
+        "year": "2026（访问）",
+        "source": "RTsafe",
+        "kind": "企业资料",
+        "url": "https://rt-safe.com/about/"
+      },
+      {
+        "id": "R16",
+        "title": "Products and services: anatomy-based dosimetry phantoms",
+        "year": "2026（访问）",
+        "source": "RTsafe",
+        "kind": "企业产品资料",
+        "url": "https://rt-safe.com/product-services/"
+      },
+      {
+        "id": "R17",
+        "title": "Customized phantom service",
+        "year": "2026（访问）",
+        "source": "RTsafe",
+        "kind": "企业产品资料",
+        "url": "https://rt-safe.com/customized-phantom-service/"
+      },
+      {
+        "id": "R18",
+        "title": "Individualized whole-body physical phantom manufacturing method and device",
+        "year": "2026",
+        "source": "Espacenet",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN122455332A",
+        "kind": "patent"
+      },
+      {
+        "id": "R19",
+        "title": "Preparation and fabrication of a full-scale, sagittal-sliced, 3D-printed, patient-specific radiotherapy phantom",
+        "year": "2017",
+        "source": "Journal of Applied Clinical Medical Physics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1002/acm2.12162"
+      },
+      {
+        "id": "R20",
+        "title": "METHOD FOR PRODUCING ANTHROPOMORPHIC SPINE DOSIMETRY PHANTOMS USING 3D PRINTING",
+        "year": "2025",
+        "source": "Espacenet",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DRO139161A1",
+        "kind": "patent"
+      },
+      {
+        "id": "R21",
+        "title": "Development of a validation imaging dataset for molecular radiation dosimetry multicenter intercomparison exercises based on anthropomorphic phantoms",
+        "year": "2023",
+        "source": "Physica Medica",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.ejmp.2023.102583"
+      }
+    ]
+  }
+}

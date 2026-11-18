@@ -1,0 +1,1220 @@
+{
+  "zh": {
+    "id": "H06",
+    "p": "P1",
+    "title": "骨缺损、关节与脊柱重建的个体化植入物",
+    "subtitle": "把术后载荷、残余骨和初期稳定放进设计回路",
+    "thesis": "定制植入的价值在于同时解剖适配与建立可靠传力路径。髋臼、长骨和椎体分别需要验证骨接触、连接固定和塌陷或移位风险，随访指标应针对各自失效方式。",
+    "questions": [],
+    "graph": {
+      "title": "影像、承载与临床迁移的设计反馈",
+      "summary": "影像决定可用骨，三类承载场景形成各自的几何和固定设计。在制造实物上核查后，以亚组随访回校。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2020",
+          "refs": [
+            "R09"
+          ],
+          "title": "确认残余骨与金属伪影",
+          "question": "哪里还有可靠的固定骨？",
+          "evidence": "髋臼翻修中的既有金属伪影会影响轮廓，导致接触和螺钉计划误差。用影像叠加保留需要医生核对的区域。"
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2021–2023",
+          "refs": [
+            "R02",
+            "R03"
+          ],
+          "title": "长骨固定分配给骨端和节段",
+          "question": "保留关节后还剩多长固定段？",
+          "evidence": "超短柄研究针对肿瘤切除后有限的干骺端，节段假体研究则比较大段股骨缺损方案。保持关节与获得足够固定骨量是一对约束。"
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2020–2025",
+          "refs": [
+            "R04",
+            "R05",
+            "R11"
+          ],
+          "title": "髋臼以骨量和可达固定分区",
+          "question": "接触区、法兰和螺钉能否同时就位？",
+          "evidence": "法兰、螺钉和多孔接触各有位置约束。杯笼研究用术前和术后位置及迁移比较来追踪计划转移。"
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2023–2025",
+          "refs": [
+            "R01",
+            "R12"
+          ],
+          "title": "椎体端面承载与沉降",
+          "question": "端面与多节段固定如何分担负荷？",
+          "evidence": "整块切除后重建要求端面接触适应负荷，并将多节段固定的贡献纳入随访。"
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 1,
+          "time": "2024",
+          "refs": [
+            "R10"
+          ],
+          "title": "核对同设计制造偏差",
+          "question": "同一数字设计产生多大制造差异？",
+          "evidence": "七家企业按同一骨盆植入物设计制造，检查工艺落实与成品。设计发行后的制造测量提供独立证据。"
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2023",
+          "refs": [
+            "R04"
+          ],
+          "title": "随访功能、影像和植入物保留",
+          "question": "功能改善、骨长入和迁移是否一致？",
+          "evidence": "严重 Paprosky 3B 髋臼缺损的 26 人系列中位随访 53 个月，Oxford Hip Score 中位数从 8 到 32，24 人影像观察到骨长入。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "按截骨和残余骨设定固定"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "选择法兰和固定区"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "重建轴向载荷"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "实物核查固定接口"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "实测面形"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "端面几何对照"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "连到术后结果"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "迁移和适用性反馈设计"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究对象与评价边界",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "三类适应证共享从 CT 到 CAD 的流程，目标不同。髋臼重建处理承重区骨量与关节中心，长骨节段假体处理切除后剩余固定长度，椎体重建关注端面接触和轴向稳定。几何匹配度应与相应载荷和影像终点配对。 [R01] [R02] [R03] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与研究解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "确认残余骨与金属伪影"
+          },
+          {
+            "type": "p",
+            "text": "髋臼翻修中的既有金属伪影会影响轮廓，导致接触和螺钉计划误差。用影像叠加保留需要医生核对的区域。 [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "长骨固定分配给骨端和节段"
+          },
+          {
+            "type": "p",
+            "text": "超短柄研究针对肿瘤切除后有限的干骺端，节段假体研究则比较大段股骨缺损方案。保持关节与获得足够固定骨量是一对约束。 [R02] [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "髋臼以骨量和可达固定分区"
+          },
+          {
+            "type": "p",
+            "text": "法兰、螺钉和多孔接触各有位置约束。杯笼研究用术前和术后位置及迁移比较来追踪计划转移。 [R04] [R05] [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "椎体端面承载与沉降"
+          },
+          {
+            "type": "p",
+            "text": "整块切除后重建要求端面接触适应负荷，并将多节段固定的贡献纳入随访。 [R01] [R12]"
+          },
+          {
+            "type": "h3",
+            "text": "核对同设计制造偏差"
+          },
+          {
+            "type": "p",
+            "text": "七家企业按同一骨盆植入物设计制造，检查工艺落实与成品。设计发行后的制造测量提供独立证据。 [R10]"
+          },
+          {
+            "type": "h3",
+            "text": "随访功能、影像和植入物保留"
+          },
+          {
+            "type": "p",
+            "text": "严重 Paprosky 3B 髋臼缺损的 26 人系列中位随访 53 个月，Oxford Hip Score 中位数从 8 到 32，24 人影像观察到骨长入。 [R04]"
+          },
+          {
+            "type": "p",
+            "text": "髋臼病例系列在双活动衬垫与个体化植入物组合下报告功能改善。影像骨长入、植入物保留和功能评分三者对应不同结果。检验设计贡献宜保留标准关节组件、缺损等级与骨盆连续性，并用术中植入位置和随后迁移连接在同一病例。 [R04] [R05] [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "确认手术阶段的骨面"
+          },
+          {
+            "type": "p",
+            "text": "定制植入物的起点是能承担接触与固定的真实骨面。2020年髋臼研究在26例复杂缺损中，对8例比较旧假体移除前后CT；全部重建形态改变，3例导致设计调整。变化同时涉及金属伪影和取出过程改变的骨量，研究使用Lima ProMade方案。[R09]"
+          },
+          {
+            "type": "p",
+            "text": "这一设计提出了一个比分割精度更基础的问题：数字模型描述的是术前骨面，还是植入新器械时的骨面？如果接触区在清创或取出旧假体时改变，即使分割与打印完全忠实，成品仍可能无法按计划支撑。因此可把影像表示拆成可信保留区、受伪影影响区和计划改变区，分别给出不同的设计约束，使每个区域的成像特征与预期手术改变对应。"
+          },
+          {
+            "type": "h3",
+            "text": "同设计的制造差异"
+          },
+          {
+            "type": "p",
+            "text": "制造是独立的证据环节。2024年研究将同一Ti6Al4V骨盆设计交由七家企业粉末床熔融制造，检查几何与微观结构。两家样件在所检查项目中未发现缺陷，其余存在不同缺陷，包括局部最大5毫米偏差、晶格断裂以及孔洞或裂纹。[R10]"
+          },
+          {
+            "type": "p",
+            "text": "同一输入产生不同输出，说明不能用设计文件替代成品验证。不同区域还需要不同判据：骨接触面影响就位，螺钉孔影响固定，梁交汇区影响局部应力，内部缺陷影响循环载荷中的裂纹起始。全表面平均误差有助于描述整体形态，却可能把少量关键区域的严重偏差稀释。因此，检验应先按功能定位区域，再选择几何测量、成像或材料试验。"
+          },
+          {
+            "type": "h3",
+            "text": "髋臼规划与位置保持"
+          },
+          {
+            "type": "p",
+            "text": "髋臼重建需要把设计意图与术后空间位置连接起来。10例aMace观察研究比较计划、术后及一年CT，倾斜、前倾与旋转的中位偏差分别为3.6°、−2.8°、−1.2°；随访迁移较小，期间未再翻修。研究评价严重髋臼缺损下的位置实现及早期保持。[R11]"
+          },
+          {
+            "type": "p",
+            "text": "方法上的关键是区分两个时间差：计划到术后衡量实现，术后到随访衡量保持。若直接比较计划与一年影像，手术初始偏差和植入后迁移会混合，无法定位需要改善的环节。共同配准方法及测量重复性同样重要，因为接近测量噪声的位移与清晰可测的迁移具有不同解释。位置指标还应回到原先的接触及固定意图，判断偏差发生在哪个方向。"
+          },
+          {
+            "type": "h3",
+            "text": "椎体端面与长期支撑"
+          },
+          {
+            "type": "p",
+            "text": "椎体重建分支把载荷问题放到邻近骨面和固定系统之间。2025年前瞻性四例研究在整块椎体切除后使用个体化重建，结合力学测试、疼痛和功能评价以及两年CT，报告位置稳定，未见沉降或固定失效。[R12]"
+          },
+          {
+            "type": "p",
+            "text": "端面适配具有双重作用：决定支撑发生在哪里，也决定载荷通过多大区域传递。若数字设计仅追求外形相似，局部高接触压力仍可能成为失效起点；若只追求较大面积，又可能增加置入困难。解释此类结构需要同时考察几何接触、材料刚度与后方固定条件，并把预期接触区域同随访骨面变化对应。力学试验因此应保留系统层面的载荷路径。"
+          }
+        ]
+      },
+      {
+        "title": "企业技术与服务路线",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Materialise aMace 将严重髋臼缺损转为病例设计与制造服务，LimaCorporate/HSS 的 ProMade 在医院园区交付髋、肩定制件。Orthofix WaveForm L 与 MiRus K232154 则是腰椎融合产品的术式或器械接口变化，体现规模化植入制造与逐病例定制并行。 [R13] [R14] [R15] [R16]"
+          }
+        ]
+      },
+      {
+        "title": "专利设计与制造接口",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN112155795A 公开分区骨小梁髋部套件及制造，CN108904104A 把个性化髋臼支撑与匹配导板组织到一起。一个问题是材料实体与多孔区的连接，另一个是如何把固定位置转移到术中。测试可分别追踪局部变形、植入物位置与螺钉可达性。 [R07] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "学术与产业的结合点",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "设计企业可输出骨接触区、计划螺钉轨迹和版本记录。医院将其与实际使用件、术后影像及术中改动配对。制造侧的配合公差和临床侧的移位因此能在同一坐标中区分。 [R10] [R11] [R13]"
+          }
+        ]
+      },
+      {
+        "title": "未来演进与验证指标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "下一步优先建设分部位的随访登记，保留骨量、实际使用件、早期位置及长期失效。定制走向可重复交付可通过首件通过率、医生改版次数、按时手术和分层再干预率检验。 [R04] [R10] [R12] [R14]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "The application of 3D-printed auto-stable artificial vertebral body in en bloc resection and reconstruction of thoracolumbar metastases.",
+        "url": "https://doi.org/10.1186/s13018-023-04135-3",
+        "year": "2023",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "Is three-dimensional-printed custom-made ultra-short stem with a porous structure an acceptable reconstructive alternative in peri-knee metaphysis for the tumorous bone defect?",
+        "url": "https://doi.org/10.1186/s12957-021-02355-7",
+        "year": "2021",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "Reconstruction of massive bone defects after femoral tumor resection using two new-designed 3D-printed intercalary prostheses: a clinical analytic study with the cooperative utilization of multiple technologies.",
+        "url": "https://doi.org/10.1186/s12891-023-06171-w",
+        "year": "2023",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Custom 3D-Printed Implants for Acetabular Reconstruction: Intermediate-Term Functional and Radiographic Results.",
+        "url": "https://doi.org/10.2106/jbjs.oa.22.00120",
+        "year": "2023",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Custom 3D-printed split-type triflange implants for severe acetabular defects: mid-term clinical outcomes and biomechanical insights from finite element analysis.",
+        "url": "https://doi.org/10.3389/fbioe.2025.1702276",
+        "year": "2025",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "METHOD FOR REPLACEMENT OF DEFECTS OF PROXIMAL TIBIA WHEN PERFORMING KNEE JOINT ENDOPROSTHESIS REPLACEMENT AND DEVICE FOR ITS IMPLEMENTATION",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DRU2730985C1",
+        "year": "2020",
+        "source": "Espacenet",
+        "id": "R06"
+      },
+      {
+        "title": "Additive manufacturing titanium alloy partition bone trabecula artificial hip joint oversleeve and preparation method",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN112155795A",
+        "year": "2021",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "Personalized acetabulum based on 3D (three-dimensional) printing and intraosseous support prosthesis, operation guide plate matched with support prosthesis, and preparation method",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN108904104A",
+        "year": "2018",
+        "source": "Espacenet",
+        "id": "R08"
+      },
+      {
+        "title": "The effect of metal artefact on the design of custom 3D printed acetabular implants",
+        "url": "https://link.springer.com/article/10.1186/s41205-020-00074-5",
+        "year": "2020",
+        "source": "3D Printing in Medicine",
+        "id": "R09"
+      },
+      {
+        "title": "Manufacturing evaluation of seven medical device companies during the production of a 3D-printed titanium pelvic implant",
+        "url": "https://accscience.com/journal/IJB/10/2/10.36922/ijb.0140",
+        "year": "2024",
+        "source": "International Journal of Bioprinting",
+        "id": "R10"
+      },
+      {
+        "title": "Custom-made 3D-printed cup-cage implants for complex acetabular revisions: evaluation of pre-planned versus achieved positioning and 1-year migration data in 10 patients",
+        "url": "https://actaorthop.org/actao/article/view/327",
+        "year": "2020在线／2021卷期",
+        "source": "Acta Orthopaedica",
+        "id": "R11"
+      },
+      {
+        "title": "Biomechanical and clinical evaluation of 3D-printed personalized vertebral implants after total En-Bloc spondylectomy: two-year follow-up outcomes",
+        "url": "https://link.springer.com/article/10.1186/s41205-025-00294-7",
+        "year": "2025",
+        "source": "3D Printing in Medicine",
+        "id": "R12"
+      },
+      {
+        "title": "Materialise aMace: Personalized acetabular implants",
+        "url": "https://www.materialise.com/en/healthcare/amace-acetabular-hip-implant",
+        "year": "2026访问",
+        "source": "Materialise",
+        "id": "R13"
+      },
+      {
+        "title": "First surgeries completed with implants produced at the LimaCorporate ProMade Point of Care Center at HSS",
+        "url": "https://news.hss.edu/first-surgeries-completed-with-patient-specific-3d-printed-implants-produced-at-the-limacorporate-promade-point-of-care-center-at-hospital-for-special-surgery/",
+        "year": "2022",
+        "source": "Hospital for Special Surgery",
+        "id": "R14"
+      },
+      {
+        "title": "K232154: MiRus 3DR Lateral Lumbar Interbody Fusion System with Integrated Plate Fixation",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K232154",
+        "year": "2024",
+        "source": "FDA",
+        "id": "R15"
+      },
+      {
+        "title": "Orthofix Announces Full Commercial Launch of the WaveForm L Interbody System for Lateral Lumbar Fusion Procedures",
+        "url": "https://ir.orthofix.com/news/news-details/2023/Orthofix-Announces-Full-Commercial-Launch-of-the-WaveForm-L-Interbody-System-for-Lateral-Lumbar-Fusion-Procedures/default.aspx",
+        "year": "2023",
+        "source": "Orthofix",
+        "id": "R16"
+      }
+    ]
+  },
+  "en": {
+    "id": "H06",
+    "p": "P1",
+    "title": "Patient-specific implants for bone defects, joints and spinal reconstruction",
+    "subtitle": "Design around postoperative load, remaining bone and primary stability",
+    "thesis": "Personalization combines anatomical fit with a reliable load path. Acetabular, long-bone and vertebral reconstructions require their own checks of bone contact, fixation and risks of subsidence or migration. Endpoints should follow those failure modes.",
+    "questions": [],
+    "graph": {
+      "title": "Design feedback from imaging, loading and clinical migration",
+      "summary": "Imaging identifies bone stock and guides three branches for different loading conditions. Devices are verified as manufactured, and follow-up by subgroup feeds back into design.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2020",
+          "refs": [
+            "R09"
+          ],
+          "title": "Verify bone stock and metal artifacts",
+          "question": "Where is reliable fixation bone available?",
+          "evidence": "Prior metal can distort the boundary in acetabular revisions, affecting contact and screw planning. Keep uncertain regions visible in imaging overlays for review."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2021–2023",
+          "refs": [
+            "R02",
+            "R03"
+          ],
+          "title": "Assign fixation to remaining bone and replacement segment",
+          "question": "What fixation length remains after joint preservation?",
+          "evidence": "Ultra-short stems addressed limited metaphyseal bone after tumor resection. Intercalary studies examined large femoral defects. Joint preservation and sufficient fixation bone are paired constraints."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2020–2025",
+          "refs": [
+            "R04",
+            "R05",
+            "R11"
+          ],
+          "title": "Plan acetabular fixation around available bone",
+          "question": "Can contact surfaces, flanges and screws be seated together?",
+          "evidence": "Flanges, screws and porous contact have separate placement constraints. Cup-cage work used planned and achieved positions and migration to track transfer."
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2023–2025",
+          "refs": [
+            "R01",
+            "R12"
+          ],
+          "title": "Evaluate vertebral endplate loading and subsidence",
+          "question": "How do endplates and multilevel fixation share load?",
+          "evidence": "Reconstruction after en bloc resection requires endplate contact suited to load. Follow-up also accounts for the contribution of multilevel fixation."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 1,
+          "time": "2024",
+          "refs": [
+            "R10"
+          ],
+          "title": "Compare manufactured geometry across suppliers",
+          "question": "How much variation arises from a shared digital design?",
+          "evidence": "Seven manufacturers produced one pelvic implant design for comparison of fabrication and finished geometry. As-built measurement provides a separate stage after design release."
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2023",
+          "refs": [
+            "R04"
+          ],
+          "title": "Follow function, imaging and implant retention",
+          "question": "Do function, ingrowth and migration tell the same story?",
+          "evidence": "In 26 people treated for Paprosky type 3B acetabular defects, median follow-up was 53 months. Median Oxford Hip Score changed from 8 to 32, and imaging identified bone ingrowth in 24."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Plan fixation from resection and bone stock"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Select flanges and fixation regions"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Restore axial loading"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Inspect fixation interfaces"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Measure surface geometry"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Check endplate geometry"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Link to postoperative outcomes"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Migration and feasibility refine design"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Research scope and outcomes",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The three indications share a CT-to-CAD workflow with distinct objectives. Acetabular reconstruction addresses load-bearing stock and the hip center. Intercalary implants address fixation length after resection. Vertebral reconstruction depends on endplate contact and axial stability. Pair geometric fit with the corresponding load and imaging endpoints. [R01] [R02] [R03] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathways and evidence",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Verify bone stock and metal artifacts"
+          },
+          {
+            "type": "p",
+            "text": "Prior metal can distort the boundary in acetabular revisions, affecting contact and screw planning. Keep uncertain regions visible in imaging overlays for review. [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "Assign fixation to remaining bone and replacement segment"
+          },
+          {
+            "type": "p",
+            "text": "Ultra-short stems addressed limited metaphyseal bone after tumor resection. Intercalary studies examined large femoral defects. Joint preservation and sufficient fixation bone are paired constraints. [R02] [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "Plan acetabular fixation around available bone"
+          },
+          {
+            "type": "p",
+            "text": "Flanges, screws and porous contact have separate placement constraints. Cup-cage work used planned and achieved positions and migration to track transfer. [R04] [R05] [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "Evaluate vertebral endplate loading and subsidence"
+          },
+          {
+            "type": "p",
+            "text": "Reconstruction after en bloc resection requires endplate contact suited to load. Follow-up also accounts for the contribution of multilevel fixation. [R01] [R12]"
+          },
+          {
+            "type": "h3",
+            "text": "Compare manufactured geometry across suppliers"
+          },
+          {
+            "type": "p",
+            "text": "Seven manufacturers produced one pelvic implant design for comparison of fabrication and finished geometry. As-built measurement provides a separate stage after design release. [R10]"
+          },
+          {
+            "type": "h3",
+            "text": "Follow function, imaging and implant retention"
+          },
+          {
+            "type": "p",
+            "text": "In 26 people treated for Paprosky type 3B acetabular defects, median follow-up was 53 months. Median Oxford Hip Score changed from 8 to 32, and imaging identified bone ingrowth in 24. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "The acetabular series reported functional improvement with a dual-mobility bearing and custom implant. Imaging-defined ingrowth, implant retention and functional scores describe distinct outcomes. A design comparison should record bearing configuration, defect grade and pelvic continuity and link achieved placement to subsequent migration. [R04] [R05] [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "Confirming bone surfaces at the surgical stage"
+          },
+          {
+            "type": "p",
+            "text": "The starting point for custom implants is to provide a real bone surface capable of contact and fixation. A 2020 acetabular study compared CT scans before and after removal of the old prosthesis in 8 out of 26 complex defects; all showed morphological changes upon reconstruction, with 3 requiring redesign adjustments. These changes involved both metal artifacts and altered bone volume during removal. The study used the Lima ProMade protocol. [R09]"
+          },
+          {
+            "type": "p",
+            "text": "The design raises a more fundamental question than segmentation accuracy: does the digital model describe the preoperative bone surface or the bone surface when the new device is implanted? If the contact area changes during debridement or removal of the old prosthesis, even if the segmentation and printing are perfectly faithful, the final product may still not support the intended area. Therefore, the image representation can be broken down into a reliable preservation area, an artifact-affected area, and a planned alteration area, each with different design constraints, ensuring that the imaging characteristics of each area correspond to the expected surgical changes."
+          },
+          {
+            "type": "h3",
+            "text": "Manufacturing variability for the same design"
+          },
+          {
+            "type": "p",
+            "text": "Manufacturing is an independent link in the evidence chain. A 2024 study had seven companies manufacture the same Ti6Al4V pelvic design by powder bed fusion and examined geometry and microstructure. Specimens from two companies had no defects in the features examined; the others had different defects, including local deviations of up to 5 mm, broken lattice elements, and pores or cracks. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "The fact that the same input produces different outputs indicates that design documents cannot replace finished product verification. Different regions require different criteria: bone contact surfaces affect positioning, screw holes affect fixation, beam intersections affect local stress, and internal defects affect crack initiation during cyclic loading. While the average error across the entire surface helps describe the overall morphology, it may dilute significant deviations in a few critical areas. Therefore, inspection should begin by functionally locating the area, followed by selecting geometric measurements, imaging, or materials testing."
+          },
+          {
+            "type": "h3",
+            "text": "Acetabular planning and positional stability"
+          },
+          {
+            "type": "p",
+            "text": "Acetabular reconstruction requires linking design intent to postoperative spatial position. An observational study of 10 aMace cases compared planned, postoperative and one-year CT data. Median deviations in inclination, anteversion and rotation were 3.6°, −2.8° and −1.2°, respectively; migration during follow-up was small, with no re-revision during that period. The study assessed achievement and early maintenance of position in severe acetabular defects. [R11]"
+          },
+          {
+            "type": "p",
+            "text": "The key to the method is distinguishing between two time lags: from planning to postoperative measurement achievement, and from postoperative to follow-up measurement maintenance. Directly comparing the plan with one-year imaging results in a mix of initial surgical deviations and post-implantation migration, making it impossible to pinpoint the areas requiring improvement. Co-registration methods and measurement repeatability are equally important, as displacements near measurement noise and clearly measurable migrations have different interpretations. Positional indicators should also be aligned with the original contact and fixation intentions to determine the direction of deviation."
+          },
+          {
+            "type": "h3",
+            "text": "Vertebral endplates and long-term support"
+          },
+          {
+            "type": "p",
+            "text": "Vertebral reconstruction branches place the load-bearing problem between adjacent bone surfaces and the fixation system. A prospective four-case study in 2025, using individualized reconstruction after en bloc vertebral resection, combined with biomechanical testing, pain and functional assessments, and two years of CT scans, reported stable positioning with no subsidence or fixation failure. [R12]"
+          },
+          {
+            "type": "p",
+            "text": "Endplate fit has two roles: determining where support occurs and the area over which loads are transferred. A design that merely reproduces the external shape can still create local contact pressures that initiate failure, whereas maximizing contact area alone may make implantation harder. Assessment must combine geometric contact, material stiffness and posterior fixation conditions, and relate intended contact regions to changes in adjacent bone during follow-up. Mechanical tests should therefore preserve system-level load paths."
+          }
+        ]
+      },
+      {
+        "title": "Industry technologies and services",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Materialise aMace organizes design and manufacture for severe acetabular defects. LimaCorporate/HSS ProMade supplied individualized hip and shoulder devices from a hospital-campus facility. Orthofix WaveForm L and MiRus K232154 cover changes in lumbar-fusion approach or device interface, illustrating a parallel route for repeatable product production. [R13] [R14] [R15] [R16]"
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and production interfaces",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN112155795A describes a partitioned trabecular hip component and its fabrication. CN108904104A couples an individualized acetabular support with a matching guide. These address joining solid and porous regions and transferring fixation geometry to surgery. Local deformation, achieved position and screw access can be tested separately. [R07] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "Research and industry connections",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A design provider can release bone contact regions, planned screw trajectories and revision records. Clinics can pair these with the used component, postoperative imaging and intraoperative changes. Manufacturing tolerance and clinical displacement can then be distinguished in one coordinate system. [R10] [R11] [R13]"
+          }
+        ]
+      },
+      {
+        "title": "Outlook and measures of progress",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The next step is a site-specific registry retaining bone stock, component used, early placement and later failure. Repeatable delivery can be tracked using first-pass acceptance, design revisions, surgery delivered on time and stratified reintervention rates. [R04] [R10] [R12] [R14]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "The application of 3D-printed auto-stable artificial vertebral body in en bloc resection and reconstruction of thoracolumbar metastases.",
+        "url": "https://doi.org/10.1186/s13018-023-04135-3",
+        "year": "2023",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "Is three-dimensional-printed custom-made ultra-short stem with a porous structure an acceptable reconstructive alternative in peri-knee metaphysis for the tumorous bone defect?",
+        "url": "https://doi.org/10.1186/s12957-021-02355-7",
+        "year": "2021",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "Reconstruction of massive bone defects after femoral tumor resection using two new-designed 3D-printed intercalary prostheses: a clinical analytic study with the cooperative utilization of multiple technologies.",
+        "url": "https://doi.org/10.1186/s12891-023-06171-w",
+        "year": "2023",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Custom 3D-Printed Implants for Acetabular Reconstruction: Intermediate-Term Functional and Radiographic Results.",
+        "url": "https://doi.org/10.2106/jbjs.oa.22.00120",
+        "year": "2023",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Custom 3D-printed split-type triflange implants for severe acetabular defects: mid-term clinical outcomes and biomechanical insights from finite element analysis.",
+        "url": "https://doi.org/10.3389/fbioe.2025.1702276",
+        "year": "2025",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "METHOD FOR REPLACEMENT OF DEFECTS OF PROXIMAL TIBIA WHEN PERFORMING KNEE JOINT ENDOPROSTHESIS REPLACEMENT AND DEVICE FOR ITS IMPLEMENTATION",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DRU2730985C1",
+        "year": "2020",
+        "source": "Espacenet",
+        "id": "R06"
+      },
+      {
+        "title": "Additive manufacturing titanium alloy partition bone trabecula artificial hip joint oversleeve and preparation method",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN112155795A",
+        "year": "2021",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "Personalized acetabulum based on 3D (three-dimensional) printing and intraosseous support prosthesis, operation guide plate matched with support prosthesis, and preparation method",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN108904104A",
+        "year": "2018",
+        "source": "Espacenet",
+        "id": "R08"
+      },
+      {
+        "title": "The effect of metal artefact on the design of custom 3D printed acetabular implants",
+        "url": "https://link.springer.com/article/10.1186/s41205-020-00074-5",
+        "year": "2020",
+        "source": "3D Printing in Medicine",
+        "id": "R09"
+      },
+      {
+        "title": "Manufacturing evaluation of seven medical device companies during the production of a 3D-printed titanium pelvic implant",
+        "url": "https://accscience.com/journal/IJB/10/2/10.36922/ijb.0140",
+        "year": "2024",
+        "source": "International Journal of Bioprinting",
+        "id": "R10"
+      },
+      {
+        "title": "Custom-made 3D-printed cup-cage implants for complex acetabular revisions: evaluation of pre-planned versus achieved positioning and 1-year migration data in 10 patients",
+        "url": "https://actaorthop.org/actao/article/view/327",
+        "year": "2020在线／2021卷期",
+        "source": "Acta Orthopaedica",
+        "id": "R11"
+      },
+      {
+        "title": "Biomechanical and clinical evaluation of 3D-printed personalized vertebral implants after total En-Bloc spondylectomy: two-year follow-up outcomes",
+        "url": "https://link.springer.com/article/10.1186/s41205-025-00294-7",
+        "year": "2025",
+        "source": "3D Printing in Medicine",
+        "id": "R12"
+      },
+      {
+        "title": "Materialise aMace: Personalized acetabular implants",
+        "url": "https://www.materialise.com/en/healthcare/amace-acetabular-hip-implant",
+        "year": "2026访问",
+        "source": "Materialise",
+        "id": "R13"
+      },
+      {
+        "title": "First surgeries completed with implants produced at the LimaCorporate ProMade Point of Care Center at HSS",
+        "url": "https://news.hss.edu/first-surgeries-completed-with-patient-specific-3d-printed-implants-produced-at-the-limacorporate-promade-point-of-care-center-at-hospital-for-special-surgery/",
+        "year": "2022",
+        "source": "Hospital for Special Surgery",
+        "id": "R14"
+      },
+      {
+        "title": "K232154: MiRus 3DR Lateral Lumbar Interbody Fusion System with Integrated Plate Fixation",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K232154",
+        "year": "2024",
+        "source": "FDA",
+        "id": "R15"
+      },
+      {
+        "title": "Orthofix Announces Full Commercial Launch of the WaveForm L Interbody System for Lateral Lumbar Fusion Procedures",
+        "url": "https://ir.orthofix.com/news/news-details/2023/Orthofix-Announces-Full-Commercial-Launch-of-the-WaveForm-L-Interbody-System-for-Lateral-Lumbar-Fusion-Procedures/default.aspx",
+        "year": "2023",
+        "source": "Orthofix",
+        "id": "R16"
+      }
+    ]
+  },
+  "de": {
+    "id": "H06",
+    "p": "P1",
+    "title": "Patientenspezifische Implantate bei Knochendefekten sowie zur Gelenk- und Wirbelsäulenrekonstruktion",
+    "subtitle": "Postoperative Last, Restknochen und Primärstabilität in den Entwurf einbeziehen",
+    "thesis": "Individualisierung verbindet anatomische Passform mit einem verlässlichen Lastpfad. Rekonstruktionen am Acetabulum, an langen Röhrenknochen und an Wirbelkörpern erfordern eigene Prüfungen von Knochenkontakt, Fixation und Risiko für Einsinken oder Migration. Endpunkte folgen den jeweiligen Versagensarten.",
+    "questions": [],
+    "graph": {
+      "title": "Rückkopplung aus Bildgebung, Last und klinischer Migration",
+      "summary": "Bildgebung erfasst den Restknochen und steuert drei Lastpfade. Gefertigte Implantate werden geprüft. Die Nachbeobachtung nach Untergruppen fließt in den Entwurf zurück.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2020",
+          "refs": [
+            "R09"
+          ],
+          "title": "Restknochen und Metallartefakte prüfen",
+          "question": "Wo ist verlässlicher Fixationsknochen vorhanden?",
+          "evidence": "Vorhandenes Metall kann bei Hüftrevisionen die Konturen verzerren und Kontakt- sowie Schraubenplanung beeinflussen. Unsichere Bereiche bleiben in Bildüberlagerungen zur Kontrolle sichtbar."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2021–2023",
+          "refs": [
+            "R02",
+            "R03"
+          ],
+          "title": "Fixation auf Restknochen und Ersatzsegment verteilen",
+          "question": "Wie viel Fixationslänge bleibt bei Gelenkerhalt?",
+          "evidence": "Ultrakurze Schäfte betreffen begrenzten metaphysären Knochen nach Tumorresektion. Interkaläre Implantate adressieren große Femurdefekte. Gelenkerhalt und ausreichend Fixationsknochen sind gekoppelte Anforderungen."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2020–2025",
+          "refs": [
+            "R04",
+            "R05",
+            "R11"
+          ],
+          "title": "Acetabuläre Fixation nach verfügbarem Knochen planen",
+          "question": "Lassen sich Kontaktfläche, Flansche und Schrauben gemeinsam positionieren?",
+          "evidence": "Flansche, Schrauben und poröser Kontakt haben eigene Lageanforderungen. Cup-Cage-Studien verglichen geplante und erreichte Lage sowie Migration."
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2023–2025",
+          "refs": [
+            "R01",
+            "R12"
+          ],
+          "title": "Endplattenbelastung und Einsinken am Wirbelkörper bewerten",
+          "question": "Wie teilen Endplatten und mehrsegmentale Fixation die Last?",
+          "evidence": "Nach En-bloc-Resektion muss der Endplattenkontakt zur Belastung passen. Die Nachbeobachtung berücksichtigt auch mehrsegmentale Fixation."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 1,
+          "time": "2024",
+          "refs": [
+            "R10"
+          ],
+          "title": "Fertigungsabweichungen zwischen Anbietern vergleichen",
+          "question": "Wie stark streut die Fertigung bei identischem Design?",
+          "evidence": "Sieben Hersteller fertigten dasselbe Beckenimplantat, um Umsetzung und Endgeometrie zu vergleichen. Die Vermessung des Fertigteils bildet nach der Designfreigabe eine eigene Prüfphase."
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2023",
+          "refs": [
+            "R04"
+          ],
+          "title": "Funktion, Bildgebung und Implantaterhalt verfolgen",
+          "question": "Stimmen Funktion, Einwuchs und Migration überein?",
+          "evidence": "Bei 26 Personen mit Paprosky-3B-Acetabulumdefekten betrug die mediane Nachbeobachtung 53 Monate. Der mediane Oxford Hip Score stieg von 8 auf 32. Bei 24 wurde bildgebend Knocheneinwuchs beobachtet."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Fixation nach Resektion und Restknochen planen"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Flansche und Fixationszonen wählen"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Axialen Lastpfad wiederherstellen"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Fixationsschnittstellen prüfen"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Flächengestalt messen"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Endplattengeometrie abgleichen"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Mit postoperativen Ergebnissen verknüpfen"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Migration und Eignung korrigieren Entwurf"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Forschungsgegenstand und Endpunkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Die drei Indikationen teilen den Weg vom CT zum CAD, verfolgen aber unterschiedliche Ziele. Am Acetabulum stehen tragfähiger Knochen und Hüftzentrum im Vordergrund, bei interkalären Implantaten die Fixationslänge, am Wirbelkörper Endplattenkontakt und axiale Stabilität. Geometrische Passform wird mit passenden Last- und Bildgebungsendpunkten verknüpft. [R01] [R02] [R03] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Evidenz",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Restknochen und Metallartefakte prüfen"
+          },
+          {
+            "type": "p",
+            "text": "Vorhandenes Metall kann bei Hüftrevisionen die Konturen verzerren und Kontakt- sowie Schraubenplanung beeinflussen. Unsichere Bereiche bleiben in Bildüberlagerungen zur Kontrolle sichtbar. [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "Fixation auf Restknochen und Ersatzsegment verteilen"
+          },
+          {
+            "type": "p",
+            "text": "Ultrakurze Schäfte betreffen begrenzten metaphysären Knochen nach Tumorresektion. Interkaläre Implantate adressieren große Femurdefekte. Gelenkerhalt und ausreichend Fixationsknochen sind gekoppelte Anforderungen. [R02] [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "Acetabuläre Fixation nach verfügbarem Knochen planen"
+          },
+          {
+            "type": "p",
+            "text": "Flansche, Schrauben und poröser Kontakt haben eigene Lageanforderungen. Cup-Cage-Studien verglichen geplante und erreichte Lage sowie Migration. [R04] [R05] [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "Endplattenbelastung und Einsinken am Wirbelkörper bewerten"
+          },
+          {
+            "type": "p",
+            "text": "Nach En-bloc-Resektion muss der Endplattenkontakt zur Belastung passen. Die Nachbeobachtung berücksichtigt auch mehrsegmentale Fixation. [R01] [R12]"
+          },
+          {
+            "type": "h3",
+            "text": "Fertigungsabweichungen zwischen Anbietern vergleichen"
+          },
+          {
+            "type": "p",
+            "text": "Sieben Hersteller fertigten dasselbe Beckenimplantat, um Umsetzung und Endgeometrie zu vergleichen. Die Vermessung des Fertigteils bildet nach der Designfreigabe eine eigene Prüfphase. [R10]"
+          },
+          {
+            "type": "h3",
+            "text": "Funktion, Bildgebung und Implantaterhalt verfolgen"
+          },
+          {
+            "type": "p",
+            "text": "Bei 26 Personen mit Paprosky-3B-Acetabulumdefekten betrug die mediane Nachbeobachtung 53 Monate. Der mediane Oxford Hip Score stieg von 8 auf 32. Bei 24 wurde bildgebend Knocheneinwuchs beobachtet. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "In der Acetabulumserie verbesserte sich die Funktion mit Dual-Mobility-Lager und individuellem Implantat. Bildgebender Einwuchs, Implantaterhalt und Funktionswerte sind getrennte Endpunkte. Ein Designvergleich erfasst Lagerkonfiguration, Defektgrad und Beckenkontinuität und verknüpft Implantatlage mit späterer Migration. [R04] [R05] [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "Knochenoberfläche zum Operationszeitpunkt bestätigen"
+          },
+          {
+            "type": "p",
+            "text": "Ausgangspunkt individueller Implantate ist die reale Knochenoberfläche für Kontakt und Fixierung. Eine Hüftpfannenstudie von 2020 verglich bei 8 von 26 komplexen Defekten CT-Aufnahmen vor und nach Entfernung der alten Prothese. Alle rekonstruierten Oberflächenformen änderten sich; in 3 Fällen musste das Design angepasst werden. Metallartefakte und die während der Entfernung veränderte Knochenmenge trugen dazu bei. Verwendet wurde Lima ProMade.[R09]"
+          },
+          {
+            "type": "p",
+            "text": "Das Design des wirft eine grundlegendere Frage als die Segmentierungsgenauigkeit auf: Beschreibt das digitale Modell die Knochenoberfläche vor der Operation oder die Knochenoberfläche nach der Implantation des neuen Instruments? Verändert sich die Kontaktfläche während des Débridements oder der Entfernung der alten Prothese, kann das Endprodukt selbst bei perfekter Segmentierung und präzisem Druck den vorgesehenen Bereich möglicherweise nicht optimal stützen. Daher lässt sich die Bilddarstellung in einen Bereich mit zuverlässiger Erhaltung, einen artefaktbeeinträchtigten Bereich und einen Bereich mit geplanter Veränderung unterteilen, wobei für jeden Bereich unterschiedliche Designvorgaben gelten. So wird sichergestellt, dass die Bildgebungseigenschaften jedes Bereichs den erwarteten chirurgischen Veränderungen entsprechen."
+          },
+          {
+            "type": "h3",
+            "text": "Fertigungsunterschiede bei identischem Design"
+          },
+          {
+            "type": "p",
+            "text": "Die Herstellung von stellt einen separaten Beweisschritt dar. In einer Studie aus dem Jahr 2024 wurde dasselbe Beckendesign aus Ti6Al4V von sieben Unternehmen mittels Pulverbett-Schmelzverfahren hergestellt. Dabei wurden Geometrie und Mikrostruktur untersucht. Zwei Proben wiesen keine Defekte auf, während die anderen verschiedene Defekte zeigten, darunter lokale Abweichungen von bis zu 5 mm, Gitterbrüche sowie Hohlräume oder Risse. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "Die Tatsache, dass dieselbe Eingangsgröße unterschiedliche Ergebnisse liefert, zeigt, dass Konstruktionsdokumente die Überprüfung des fertigen Produkts nicht ersetzen können. Unterschiedliche Bereiche erfordern unterschiedliche Kriterien: Knochenkontaktflächen beeinflussen die Positionierung, Schraubenlöcher die Fixierung, Balkenübergänge die lokale Spannung und interne Defekte die Rissbildung bei zyklischer Belastung. Obwohl der mittlere Fehler über die gesamte Oberfläche die Gesamtmorphologie beschreibt, kann er signifikante Abweichungen in einigen kritischen Bereichen verschleiern. Daher sollte die Inspektion mit der funktionalen Lokalisierung des Bereichs beginnen, gefolgt von geometrischen Messungen, Bildgebung oder Materialprüfung."
+          },
+          {
+            "type": "h3",
+            "text": "Hüftpfannenplanung und Positionserhalt"
+          },
+          {
+            "type": "p",
+            "text": "Die Rekonstruktion der Hüftgelenkpfanne erfordert die Abstimmung des geplanten Designs auf die postoperative räumliche Position. In einer Nachuntersuchung von 10 aMace-Fällen wurden Planungs-, postoperative und Einjahres-CT-Scans verglichen. Die medianen Abweichungen für Neigung, Anteversion und Rotation betrugen 3,6°, −2,8° bzw. −1,2°. Die Nachuntersuchung zeigte eine minimale Migration, und es war keine Revision erforderlich. Diese Studie evaluiert die Positionierung und die frühe Retention bei schweren Hüftgelenkpfannendefekten. [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Der Schlüssel zum Verfahren liegt in der Unterscheidung zweier Zeitverzögerungen: von der Planung bis zur postoperativen Messung und von der postoperativen Messung bis zur Nachsorge. Ein direkter Vergleich des Plans mit den Bildgebungsergebnissen nach einem Jahr, der sowohl anfängliche chirurgische Abweichungen als auch postoperative Migrationen berücksichtigt, macht es unmöglich, die verbesserungsbedürftigen Bereiche genau zu identifizieren. Koregistrierungsverfahren und Messwiederholbarkeit sind gleichermaßen wichtig, da Verschiebungen im Bereich des Messrauschens und deutlich messbare Migrationen unterschiedlich interpretiert werden. Positionsindikatoren sollten zudem an den ursprünglichen Kontakt- und Fixierungszielen ausgerichtet werden, um die Richtung der Abweichung zu bestimmen."
+          },
+          {
+            "type": "h3",
+            "text": "Wirbelendplatten und langfristige Abstützung"
+          },
+          {
+            "type": "p",
+            "text": "Bei der Wirbelsäulenrekonstruktion liegt das Problem der Lastverteilung zwischen den angrenzenden Knochenoberflächen und dem Fixationssystem. Eine prospektive Studie mit vier Fällen aus dem Jahr 2025, in der eine individualisierte Rekonstruktion nach en-bloc-Wirbelsäulenresektion in Kombination mit biomechanischen Tests, Schmerz- und Funktionsbeurteilungen sowie zweijährigen CT-Untersuchungen durchgeführt wurde, berichtete über eine stabile Positionierung ohne Absinken oder Fixationsversagen. [R12]"
+          },
+          {
+            "type": "p",
+            "text": "Der Endflächenadapter erfüllt einen doppelten Zweck: Er bestimmt die Bereiche der Unterstützung und der Lastübertragung. Wird bei der digitalen Konstruktion lediglich eine ähnliche Optik angestrebt, kann lokal hoher Kontaktdruck dennoch zu einem Schwachpunkt werden; umgekehrt kann die alleinige Berücksichtigung einer größeren Fläche die Platzierung erschweren. Die Interpretation solcher Strukturen erfordert die gleichzeitige Untersuchung des geometrischen Kontakts, der Materialsteifigkeit und der nachfolgenden Fixierungsbedingungen sowie die Korrelation der erwarteten Kontaktfläche mit Veränderungen der Knochenoberfläche im Verlauf. Mechanische Prüfungen sollten daher den Lastpfad auf Systemebene erhalten."
+          }
+        ]
+      },
+      {
+        "title": "Technologien und Angebote der Unternehmen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Materialise aMace organisiert Entwurf und Fertigung bei schweren Acetabulumdefekten. LimaCorporate/HSS ProMade lieferte individuelle Hüft- und Schulterimplantate vom Klinikgelände. Orthofix WaveForm L und MiRus K232154 betreffen Zugänge oder Geräteschnittstellen bei lumbaler Fusion und zeigen einen parallelen Weg zur Serienfertigung. [R13] [R14] [R15] [R16]"
+          }
+        ]
+      },
+      {
+        "title": "Patentansätze und Fertigungsschnittstellen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN112155795A beschreibt ein Hüftbauteil mit zonierter trabekulärer Struktur und seine Herstellung. CN108904104A koppelt eine individuelle Acetabulumstütze an eine passende Schablone. Zu prüfen sind die Verbindung massiver und poröser Bereiche sowie die Übertragung der Fixation. Lokale Verformung, erreichte Lage und Schraubenzugang sind getrennte Messgrößen. [R07] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "Verbindungen von Forschung und Industrie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Der Entwurfsdienst kann Kontaktflächen, geplante Schraubentrajektorien und Versionsstände bereitstellen. Kliniken verknüpfen sie mit dem eingesetzten Bauteil, postoperativen Bildern und intraoperativen Änderungen. Fertigungstoleranz und klinische Abweichung lassen sich so im selben Koordinatensystem trennen. [R10] [R11] [R13]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick und Kriterien für Fortschritt",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Ein nächster Schritt ist ein lokalisationsspezifisches Register mit Knochenbestand, eingesetztem Bauteil, früher Lage und spätem Versagen. Wiederholbare Versorgung lässt sich anhand von Erstabnahme, Designrevisionen, termingerechter Operation und stratifizierten Folgeeingriffen verfolgen. [R04] [R10] [R12] [R14]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "The application of 3D-printed auto-stable artificial vertebral body in en bloc resection and reconstruction of thoracolumbar metastases.",
+        "url": "https://doi.org/10.1186/s13018-023-04135-3",
+        "year": "2023",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "Is three-dimensional-printed custom-made ultra-short stem with a porous structure an acceptable reconstructive alternative in peri-knee metaphysis for the tumorous bone defect?",
+        "url": "https://doi.org/10.1186/s12957-021-02355-7",
+        "year": "2021",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "Reconstruction of massive bone defects after femoral tumor resection using two new-designed 3D-printed intercalary prostheses: a clinical analytic study with the cooperative utilization of multiple technologies.",
+        "url": "https://doi.org/10.1186/s12891-023-06171-w",
+        "year": "2023",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Custom 3D-Printed Implants for Acetabular Reconstruction: Intermediate-Term Functional and Radiographic Results.",
+        "url": "https://doi.org/10.2106/jbjs.oa.22.00120",
+        "year": "2023",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Custom 3D-printed split-type triflange implants for severe acetabular defects: mid-term clinical outcomes and biomechanical insights from finite element analysis.",
+        "url": "https://doi.org/10.3389/fbioe.2025.1702276",
+        "year": "2025",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "METHOD FOR REPLACEMENT OF DEFECTS OF PROXIMAL TIBIA WHEN PERFORMING KNEE JOINT ENDOPROSTHESIS REPLACEMENT AND DEVICE FOR ITS IMPLEMENTATION",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DRU2730985C1",
+        "year": "2020",
+        "source": "Espacenet",
+        "id": "R06"
+      },
+      {
+        "title": "Additive manufacturing titanium alloy partition bone trabecula artificial hip joint oversleeve and preparation method",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN112155795A",
+        "year": "2021",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "Personalized acetabulum based on 3D (three-dimensional) printing and intraosseous support prosthesis, operation guide plate matched with support prosthesis, and preparation method",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN108904104A",
+        "year": "2018",
+        "source": "Espacenet",
+        "id": "R08"
+      },
+      {
+        "title": "The effect of metal artefact on the design of custom 3D printed acetabular implants",
+        "url": "https://link.springer.com/article/10.1186/s41205-020-00074-5",
+        "year": "2020",
+        "source": "3D Printing in Medicine",
+        "id": "R09"
+      },
+      {
+        "title": "Manufacturing evaluation of seven medical device companies during the production of a 3D-printed titanium pelvic implant",
+        "url": "https://accscience.com/journal/IJB/10/2/10.36922/ijb.0140",
+        "year": "2024",
+        "source": "International Journal of Bioprinting",
+        "id": "R10"
+      },
+      {
+        "title": "Custom-made 3D-printed cup-cage implants for complex acetabular revisions: evaluation of pre-planned versus achieved positioning and 1-year migration data in 10 patients",
+        "url": "https://actaorthop.org/actao/article/view/327",
+        "year": "2020在线／2021卷期",
+        "source": "Acta Orthopaedica",
+        "id": "R11"
+      },
+      {
+        "title": "Biomechanical and clinical evaluation of 3D-printed personalized vertebral implants after total En-Bloc spondylectomy: two-year follow-up outcomes",
+        "url": "https://link.springer.com/article/10.1186/s41205-025-00294-7",
+        "year": "2025",
+        "source": "3D Printing in Medicine",
+        "id": "R12"
+      },
+      {
+        "title": "Materialise aMace: Personalized acetabular implants",
+        "url": "https://www.materialise.com/en/healthcare/amace-acetabular-hip-implant",
+        "year": "2026访问",
+        "source": "Materialise",
+        "id": "R13"
+      },
+      {
+        "title": "First surgeries completed with implants produced at the LimaCorporate ProMade Point of Care Center at HSS",
+        "url": "https://news.hss.edu/first-surgeries-completed-with-patient-specific-3d-printed-implants-produced-at-the-limacorporate-promade-point-of-care-center-at-hospital-for-special-surgery/",
+        "year": "2022",
+        "source": "Hospital for Special Surgery",
+        "id": "R14"
+      },
+      {
+        "title": "K232154: MiRus 3DR Lateral Lumbar Interbody Fusion System with Integrated Plate Fixation",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K232154",
+        "year": "2024",
+        "source": "FDA",
+        "id": "R15"
+      },
+      {
+        "title": "Orthofix Announces Full Commercial Launch of the WaveForm L Interbody System for Lateral Lumbar Fusion Procedures",
+        "url": "https://ir.orthofix.com/news/news-details/2023/Orthofix-Announces-Full-Commercial-Launch-of-the-WaveForm-L-Interbody-System-for-Lateral-Lumbar-Fusion-Procedures/default.aspx",
+        "year": "2023",
+        "source": "Orthofix",
+        "id": "R16"
+      }
+    ]
+  }
+}

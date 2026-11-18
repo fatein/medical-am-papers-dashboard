@@ -1,0 +1,1274 @@
+{
+  "zh": {
+    "id": "H18",
+    "p": "P2",
+    "title": "牙科工作模型与印模精度",
+    "subtitle": "从扫描参考到制件局部偏差",
+    "thesis": "工作模型的整体准确度与基牙边缘、邻接和咬合的局部准确度要分别检查。树脂、壳层、内部结构和打印机是可交互的变量。 [R01] [R04]",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络 · 牙科工作模型与印模精度",
+      "summary": "统一参考扫描后，分别改变成形参数和内部结构，再用整体与局部两组测量验证，结果反馈模型设计和质量控制。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2026",
+          "question": "先确认偏差起算于哪个数字对象。",
+          "title": "固定数字参考",
+          "evidence": "全牙弓线性研究可对比参考扫描与多打印机制造模型之间的距离。数字参考的配准方式与量测误差需保持可追溯，避免混同扫描与打印影响。",
+          "refs": [
+            "R06"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2025",
+          "question": "检查变化是否局限于特定解剖点。",
+          "title": "方向与外壳",
+          "evidence": "144件全弓模型研究比较 SLA、DLP、0°、10°、20°和2、4 mm外壳。全弓 RMS 真度为73.9–194 μm，所测因素的整体差异不显著，个别解剖点仍见差异。",
+          "refs": [
+            "R01",
+            "R03"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2023",
+          "question": "分别观察结构刚度与局部收缩。",
+          "title": "实体、空心与网格",
+          "evidence": "另一体外研究比较实体、空心及蜂窝结构，测得内部结构对真度的影响随打印系统变化，空心组总体准确度较低。改变模型内部结构与只改变外壳厚度属于不同挑战。",
+          "refs": [
+            "R04"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2023–2025",
+          "question": "局部误差要放回相应工作任务。",
+          "title": "实现功能性模型",
+          "evidence": "固定修复的模型应检查预备边缘与轴壁，植入模型测量替代体的三维关系，对颌模型则关注咬合定位。整体表面合格而跨弓距离出现偏离时，应追踪配准及扫描累计变形。",
+          "refs": [
+            "R02",
+            "R05"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2023–2025",
+          "question": "模型比较同时包含真度和精密度。",
+          "title": "测量差异的分层",
+          "evidence": "同一模型的偏差图可分为牙体、龈缘、后牙跨弓区域和基底，分别检查偏差方向。重复扫描与重复制造要分开估计。",
+          "refs": [
+            "R01",
+            "R04"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2023–2025",
+          "question": "将数字误差对应到实体交付。",
+          "title": "对接修复结果",
+          "evidence": "最终可用同一修复体的边缘与咬合调整量，验证模型误差是否传入后续工序。若是局部标志重复偏离，可回调支撑布置或收缩补偿。",
+          "refs": [
+            "R01",
+            "R05"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "方向与外壳",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "实体、空心与网格",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "实现功能性模型",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "实现功能性模型",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "测量差异的分层",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "对接修复结果",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "用返工区域修订局部补偿",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究范围与目标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "研究对象是用于修复体设计、制作或检查的模型。工作模型、对颌模型和带种植替代体的模型具有不同局部标志，验证要根据功能选点。"
+          }
+        ]
+      },
+      {
+        "title": "学术研究脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 固定数字参考"
+          },
+          {
+            "type": "p",
+            "text": "全牙弓线性研究可对比参考扫描与多打印机制造模型之间的距离。数字参考的配准方式与量测误差需保持可追溯，避免混同扫描与打印影响。 [R06]"
+          },
+          {
+            "type": "p",
+            "text": "先确认偏差起算于哪个数字对象。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 方向与外壳"
+          },
+          {
+            "type": "p",
+            "text": "144件全弓模型研究比较 SLA、DLP、0°、10°、20°和2、4 mm外壳。全弓 RMS 真度为73.9–194 μm，所测因素的整体差异不显著，个别解剖点仍见差异。 [R01] [R03]"
+          },
+          {
+            "type": "p",
+            "text": "检查变化是否局限于特定解剖点。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 实体、空心与网格"
+          },
+          {
+            "type": "p",
+            "text": "另一体外研究比较实体、空心及蜂窝结构，测得内部结构对真度的影响随打印系统变化，空心组总体准确度较低。改变模型内部结构与只改变外壳厚度属于不同挑战。 [R04]"
+          },
+          {
+            "type": "p",
+            "text": "分别观察结构刚度与局部收缩。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 实现功能性模型"
+          },
+          {
+            "type": "p",
+            "text": "固定修复的模型应检查预备边缘与轴壁，植入模型测量替代体的三维关系，对颌模型则关注咬合定位。整体表面合格而跨弓距离出现偏离时，应追踪配准及扫描累计变形。 [R02] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "局部误差要放回相应工作任务。"
+          },
+          {
+            "type": "p",
+            "text": "2025年研究使用两台打印机制作三单位桥，比较乙醇、异丙醇及其与超声结合等五种清洗策略。几何库配准分析显示，设备差异与角度、距离等评价方式共同影响观察到的变形响应。[R12]"
+          },
+          {
+            "type": "p",
+            "text": "三单位结构比简单试片更容易显示局部位移和跨距变化。固定一端后比较另一端的位置，可以揭示整体最佳拟合可能分摊掉的角度偏移。清洗的研究任务也因此包含两项：移除未反应残余，以及在处理过程中保持设计形状。溶剂、超声和干燥之间可能存在交互，适合在受控组合中测量，而不是将清洗时间作为唯一解释。"
+          },
+          {
+            "type": "p",
+            "text": "后续可在清洗前后及最终固化后保留扫描，结合质量变化和表面残余分析，分离去除效果与形变。若某方案缩短时间却增加后续偏差，整体流程成本可能并未改善。这个节点向表面和方向研究分支：残余表面状态影响后续涂层和颜色，层向则可能改变薄壁结构对清洗与释放应力的敏感性。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 测量差异的分层"
+          },
+          {
+            "type": "p",
+            "text": "同一模型的偏差图可分为牙体、龈缘、后牙跨弓区域和基底，分别检查偏差方向。重复扫描与重复制造要分开估计。 [R01] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "模型比较同时包含真度和精密度。"
+          },
+          {
+            "type": "p",
+            "text": "2014年研究在相同病例模型上制作40件三单位固定修复体，用硅橡胶复制法测量960个间隙点。SLA路线总间隙为98.6微米，蜡型路线为66.6微米，提示当时SLA过程仍有适配改进空间。[R13]"
+          },
+          {
+            "type": "p",
+            "text": "复制法把难以直接观察的内部空隙转为可切片测量的材料层，适合明确不同区域的空间关系。但测点密度、切片位置和就位载荷都会影响最终表示的间隙。分析单位也应保留器械与测点两层：同一修复体上的多个点共同描述其几何，不能使独立器械数量随测点数增加。这个设计逻辑后来仍适用于更密集的数字测量。"
+          },
+          {
+            "type": "p",
+            "text": "间隙增加可能来自数字设计、成形偏差或就位干涉，因而单一总平均值无法直接决定应修改哪个环节。下一步需要将边缘、轴壁和咬合面分开，并与数字设计对齐。此处的科学推进是把“能否制作”转为“误差出现在哪里”，为后续表面真实度、局部补偿和粘固空间设计建立共同问题。与材料承载分支并行时，还可以检查改变间隙是否同时改变剩余修复体厚度。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 对接修复结果"
+          },
+          {
+            "type": "p",
+            "text": "最终可用同一修复体的边缘与咬合调整量，验证模型误差是否传入后续工序。若是局部标志重复偏离，可回调支撑布置或收缩补偿。 [R01] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "将数字误差对应到实体交付。"
+          },
+          {
+            "type": "p",
+            "text": "2021年研究扫描SLA、DLP和铣削制作的临时冠内表面，与设计文件比较。所测打印组整体及多个分区偏差较小；铣削组存在不同区域之间的表现差异，研究同时展示了误差分布图。[R14]"
+          },
+          {
+            "type": "p",
+            "text": "从稀疏间隙点转向三维表面，可以观察误差是否集中在转角、轴壁或咬合区。均方根值适合概括偏差大小，正负误差则有助于区分过度成形与材料不足。配准方法在这里相当重要：最佳拟合可能把局部就位干涉分摊到整个表面，固定关键参照后的结果更容易与临床就位相连。后续比较宜同时保留总体与局部图，而不是只输出一个排序。"
+          },
+          {
+            "type": "p",
+            "text": "该节点为补偿研究提供了诊断工具。若某区域在不同批次稳定出现同方向误差，可以尝试修改像素边界或局部设计；若误差方向不稳定，则应先追踪清洗、支撑去除和固化的变异。由此形成两种不同研发任务：减少系统偏差和减少随机波动。它们对临床交付均有价值，却需要不同的实验和质量控制方法。"
+          }
+        ]
+      },
+      {
+        "title": "研究之间如何比较",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "壳厚研究与空心研究的结果可并存。前者在指定厚度范围比较外壳，后者改变内部支撑布局和设备。整体 RMS 有助于批次质控，边缘和跨弓误差帮助判断不同修复任务。 [R01] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "种植模型研究将含3个骨水平种植体的钛模型作为工业扫描参照，使用同一模型的10份口内扫描共打印30个模型。两台 DLP 设备的平均偏差分别为0.07 ± 0.02和0.12 ± 0.13 mm，所测 SLA 设备为0.26 ± 0.17 mm。差异主要集中在前庭至口腔和咬合至根尖的方向。比较对象是具体设备组合生成的种植模型。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "对颌模型研究在同一上颌主模型上比较3类印模材料和打印模型，以前后位置和垂直尺寸检验装架。研究中的长效藻酸盐及其替代印模组咬合表现优于打印组和常规藻酸盐组。研究任务在于复现上下颌关系，因此不能以每个牙弓各自的表面 RMS 代替装架和接触验证。 [R05]"
+          }
+        ]
+      },
+      {
+        "title": "企业路线与公开产品",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Formlabs 把 Fast Model Resin 主要用于正畸和热成形模型，另用 Precision Model Resin 配套 Form 4B 及 Form 4BL 制作修复工作模型。品牌资料将超过99%的打印表面在数字模型100 μm以内作为其测量指标。小范围预备边缘与种植接口仍应单独测量，以便将大批量效率和工作模型适合性放在同一次验证中。 [R11] [R15]"
+          }
+        ]
+      },
+      {
+        "title": "专利机制与转化验证",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN106073918A对应打印媒介用于牙科模型模具，WO2026208767A1面向数字化种植模型与套件，CN110095063A面向口腔制件精度检测。宜分别核对复制误差、替代体位置与测量基准的可重复性。 [R08] [R09] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "后续研究与应用走向",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "随着批量打印进入常规工作流，测量重点会从样件平均值移到自动提取边缘、种植接口、咬合关键点的局部质量。可核对空间分布、初次合格率和不同机台间的复现。 [R01] [R02] [R04]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Effect of 3D printing technology, build orientation, and shell thickness on the accuracy of full-arch dental models for fixed dental prostheses: an in vitro study.",
+        "url": "https://doi.org/10.1038/s41598-025-24780-4",
+        "year": "2025",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R01"
+      },
+      {
+        "title": "The Impact of Three-Dimensional Printer Technology on the Accuracy of Dental Implant Models",
+        "url": "https://doi.org/10.3390/ma18091902",
+        "year": "2025",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R02"
+      },
+      {
+        "title": "Influence of the print orientation and cast thickness on the accuracy of DLP master casts for fixed dental prostheses.",
+        "url": "https://doi.org/10.1186/s12903-025-05944-0",
+        "year": "2025",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R03"
+      },
+      {
+        "title": "Effect of internal structures on the accuracy of 3D printed full-arch dentition preparation models in different printing systems.",
+        "url": "https://doi.org/10.4047/jap.2023.15.3.145",
+        "year": "2023",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R04"
+      },
+      {
+        "title": "Comparative Evaluation of Dimensional and Occlusal Accuracy of Non-Working Antagonist Casts: A Study on Different Impression Materials and 3D Printing.",
+        "url": "https://doi.org/10.12659/msm.941654",
+        "year": "2023",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R05"
+      },
+      {
+        "title": "Accuracy of 3D-Scanned Full-Arch Dentition Versus 3D-Printed Models Generated Using Various 3D Printers Based on Linear Measurements.",
+        "url": "https://doi.org/10.7759/cureus.114449",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R06"
+      },
+      {
+        "title": "3D DENTURE TRAY USING 3D PRINTING TECHNIC AND DENTURE MANUFACTURING MEHTOD THEREFOR",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DKR20200017565A",
+        "year": "2020",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R07"
+      },
+      {
+        "title": "Method for making dental model mold through 3D printing",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN106073918A",
+        "year": "2016",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R08"
+      },
+      {
+        "title": "DIGITAL DESIGN METHOD AND MANUFACTURING METHOD FOR DENTAL IMPLANT MODEL, DENTAL IMPLANT MODEL, AND KIT",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DWO2026208767A1",
+        "year": "2026",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R09"
+      },
+      {
+        "title": "Standard detection method for 3D printing precision of oral cavity medical products",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN110095063A",
+        "year": "2019",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R10"
+      },
+      {
+        "title": "Fast Model Resin",
+        "url": "https://dental.formlabs.com/global/products/fast-model-resin/",
+        "year": "",
+        "kind": "企业公告",
+        "source": "企业公告",
+        "id": "R11"
+      },
+      {
+        "title": "Deformation analysis of 3D-printed three-unit fixed partial dentures according to various cleaning strategies after DLP 3D printing: a geometric library matching approach",
+        "year": "2025",
+        "source": "Journal of Advanced Prosthodontics",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11886403/",
+        "kind": "原始研究",
+        "id": "R12"
+      },
+      {
+        "title": "In vitro evaluation of marginal and internal adaptation of three-unit fixed dental prostheses produced by stereolithography",
+        "year": "2014",
+        "source": "Dental Materials Journal",
+        "url": "https://www.jstage.jst.go.jp/article/dmj/33/4/33_2014-017/_article",
+        "kind": "原始研究",
+        "id": "R13"
+      },
+      {
+        "title": "Comparison of Intaglio Surface Trueness of Interim Dental Crowns Fabricated with SLA 3D Printing, DLP 3D Printing, and Milling Technologies",
+        "year": "2021",
+        "source": "Healthcare",
+        "url": "https://www.mdpi.com/2227-9032/9/8/983",
+        "kind": "原始研究",
+        "id": "R14"
+      },
+      {
+        "id": "R15",
+        "title": "Precision Model Resin (Form 4)",
+        "url": "https://dental.formlabs.com/products/precision-model-resin/",
+        "year": "",
+        "source": "Formlabs Dental",
+        "kind": "企业产品资料"
+      }
+    ]
+  },
+  "en": {
+    "id": "H18",
+    "p": "P2",
+    "title": "Accuracy of dental working casts and impressions",
+    "subtitle": "From the scan reference to local deviations in the finished cast",
+    "thesis": "Global cast accuracy and local accuracy at preparation margins, proximal contacts and occlusal surfaces should be checked separately. Resin, shell, internal structure and printer can interact. [R01] [R04]",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway · Accuracy of dental working casts and impressions",
+      "summary": "Establish a reference scan, vary build parameters and internal structure on separate branches, then verify global and local deviations. Feed results back into design and quality control.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2026",
+          "question": "Specify which digital object anchors the deviations.",
+          "title": "Fix the digital reference",
+          "evidence": "Full-arch linear comparisons can measure distances from a reference scan across printers. Trace the reference registration and measurement error separately from fabrication error.",
+          "refs": [
+            "R06"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2025",
+          "question": "Check whether differences are confined to specific landmarks.",
+          "title": "Orientation and shell",
+          "evidence": "A 144-cast study compared SLA and DLP, angles of 0°, 10° and 20°, and 2 or 4 mm shells. Global RMS trueness ranged from 73.9 to 194 μm. Global differences were not significant for the factors tested, while individual landmarks differed.",
+          "refs": [
+            "R01",
+            "R03"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2023",
+          "question": "Separate structural stiffness from local shrinkage.",
+          "title": "Solid, hollow and lattice structures",
+          "evidence": "Another experiment compared solid, hollow and honeycomb casts. The effect on trueness depended on the printing system, and hollow casts showed lower accuracy overall. Changing support structure is a different intervention from changing shell thickness alone.",
+          "refs": [
+            "R04"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2023–2025",
+          "question": "Relate local errors to the intended laboratory task.",
+          "title": "Verify the functional cast",
+          "evidence": "Inspect preparation margins and axial walls on fixed-restoration casts, analogue positions on implant casts, and occlusal registration on opposing casts. Divergence in cross-arch dimensions despite acceptable global surfaces warrants checking alignment and scan distortion.",
+          "refs": [
+            "R02",
+            "R05"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2023–2025",
+          "question": "Report both trueness and precision.",
+          "title": "Interpret measurements by region",
+          "evidence": "Segment the deviation map into tooth surfaces, gingival margins, posterior span and base, preserving the sign of local deviation. Estimate repeat scanning and repeat fabrication separately.",
+          "refs": [
+            "R01",
+            "R04"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2023–2025",
+          "question": "Tie digital deviation to the delivered restoration.",
+          "title": "Connect to restoration fit",
+          "evidence": "Use marginal fit and occlusal adjustment of the subsequent restoration to determine which cast errors propagate. A repeatedly displaced feature can guide support placement or shrinkage compensation.",
+          "refs": [
+            "R01",
+            "R05"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Orientation and shell",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Solid, hollow and lattice structures",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Verify the functional cast",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Verify the functional cast",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Interpret measurements by region",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Connect to restoration fit",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Update compensation from rework locations",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Scope and objectives",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The subject is the cast used for restoration design, fabrication or inspection. Working casts, opposing casts and implant-analogue models have different functional landmarks."
+          }
+        ]
+      },
+      {
+        "title": "Academic pathway and interpretation",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Fix the digital reference"
+          },
+          {
+            "type": "p",
+            "text": "Full-arch linear comparisons can measure distances from a reference scan across printers. Trace the reference registration and measurement error separately from fabrication error. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Specify which digital object anchors the deviations."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Orientation and shell"
+          },
+          {
+            "type": "p",
+            "text": "A 144-cast study compared SLA and DLP, angles of 0°, 10° and 20°, and 2 or 4 mm shells. Global RMS trueness ranged from 73.9 to 194 μm. Global differences were not significant for the factors tested, while individual landmarks differed. [R01] [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Check whether differences are confined to specific landmarks."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Solid, hollow and lattice structures"
+          },
+          {
+            "type": "p",
+            "text": "Another experiment compared solid, hollow and honeycomb casts. The effect on trueness depended on the printing system, and hollow casts showed lower accuracy overall. Changing support structure is a different intervention from changing shell thickness alone. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Separate structural stiffness from local shrinkage."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Verify the functional cast"
+          },
+          {
+            "type": "p",
+            "text": "Inspect preparation margins and axial walls on fixed-restoration casts, analogue positions on implant casts, and occlusal registration on opposing casts. Divergence in cross-arch dimensions despite acceptable global surfaces warrants checking alignment and scan distortion. [R02] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Relate local errors to the intended laboratory task."
+          },
+          {
+            "type": "p",
+            "text": "The 2025 study used two printers to fabricate a three-unit bridge and compared five cleaning strategies, including ethanol, isopropanol, and a combination of these with ultrasound. Geometric library registration analysis showed that equipment differences, along with evaluation methods such as angle and distance, collectively influenced the observed deformation response. [R12]"
+          },
+          {
+            "type": "p",
+            "text": "The three-unit structure is more effective than simple specimens in revealing local displacement and span variations. By fixing one end and comparing the position of the other, the angular shift that might be amortized by the overall best fit can be revealed. Therefore, the cleaning task thus includes two aspects: removing unreacted residues and maintaining the designed shape during processing. Interactions may exist between solvent, sonication, and drying, making it suitable for measurement in controlled combinations, rather than relying solely on cleaning time as the sole explanation."
+          },
+          {
+            "type": "p",
+            "text": "Retain scans before and after cleaning and after final curing, together with mass changes and surface-residue analysis, to separate removal effects from deformation. A faster cleaning method may not reduce total workflow cost if it increases subsequent deviations. This node branches into surface and orientation studies: residual surface state affects coatings and colour, while layer orientation may influence thin-wall sensitivity to cleaning and stress release."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Interpret measurements by region"
+          },
+          {
+            "type": "p",
+            "text": "Segment the deviation map into tooth surfaces, gingival margins, posterior span and base, preserving the sign of local deviation. Estimate repeat scanning and repeat fabrication separately. [R01] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Report both trueness and precision."
+          },
+          {
+            "type": "p",
+            "text": "A 2014 study fabricated 40 three-unit fixed restorations on the same case model and measured 960 gap points by silicone-replica analysis. Overall gaps were 98.6 µm for the SLA route and 66.6 µm for the wax-pattern route, indicating room to improve fit in the SLA workflow used at the time. [R13]"
+          },
+          {
+            "type": "p",
+            "text": "The replication method transforms internal voids that are difficult to observe directly into measurable material layers that can be sliced, making it suitable for clearly defining the spatial relationships between different areas. However, the density of measurement points, the location of the slices, and the in-situ load all affect the final represented voids. The unit of analysis should also retain two layers: devices and measurement points. Multiple points on the same restoration collectively describe its geometry, and the number of independent devices should not increase with the number of measurement points. This design logic was later applied to more intensive digital measurements."
+          },
+          {
+            "type": "p",
+            "text": "Larger gaps may arise from digital design, forming deviations or seating interference, so one overall mean cannot identify the step to modify. Margins, axial walls and occlusal surfaces should be analysed separately against the digital design. The research task shifts from manufacturability to error localization, providing a common basis for surface-trueness assessment, local compensation and cement-space design. Alongside material load-bearing studies, investigators can test whether changing the gap also changes restoration thickness."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Connect to restoration fit"
+          },
+          {
+            "type": "p",
+            "text": "Use marginal fit and occlusal adjustment of the subsequent restoration to determine which cast errors propagate. A repeatedly displaced feature can guide support placement or shrinkage compensation. [R01] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Tie digital deviation to the delivered restoration."
+          },
+          {
+            "type": "p",
+            "text": "A 2021 study investigated the scanning of the inner surface of temporary crowns fabricated using SLA, DLP, and milling, comparing it with design documents. The overall deviation of the printed group and several regional deviations were small; the milled group showed performance differences between different areas, and the study also presented an error distribution map. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "Moving from sparse gap measurements to three-dimensional surfaces reveals whether errors cluster at corners, axial walls or occlusal regions. RMS summarizes deviation magnitude, while signed deviations distinguish excess from missing material. Registration is critical: best-fit alignment can distribute local seating interference across the surface, whereas fixed key references may relate more directly to clinical seating. Retain both global and local maps rather than only a ranking."
+          },
+          {
+            "type": "p",
+            "text": "This node provides a diagnostic tool for compensation studies. If a region consistently exhibits errors in the same direction across different batches, modifications to pixel boundaries or local design can be attempted; if the error direction is unstable, variations in cleaning, support removal, and curing should be tracked first. This results in two distinct R&D tasks: reducing systematic bias and reducing random fluctuations. Both are valuable for clinical delivery but require different experimental and quality control methods."
+          }
+        ]
+      },
+      {
+        "title": "Comparing the evidence",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The shell study and internal-structure study address different interventions. One varies a limited shell range. The other changes internal reinforcement and printer. Global RMS can support batch checks while margin or cross-arch error informs specific restorations. [R01] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "An implant-model experiment used an industrial scan of a titanium model with 3 bone-level implants as the reference. Ten intraoral scans yielded 30 printed casts. Mean deviations were 0.07 ± 0.02 and 0.12 ± 0.13 mm for the two DLP systems and 0.26 ± 0.17 mm for the SLA system tested. The largest SLA errors were vestibulo-oral and occlusal-apical. The comparison concerns implant casts from these systems. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "An opposing-cast study mounted models obtained from 3 impression materials or printing against the same maxillary master. It checked anteroposterior and vertical dimensions. The extended-pour alginate and alginate-alternative groups had better occlusal accuracy than the printed and conventional alginate groups. This task concerns the relation between arches, so per-arch surface RMS needs to be accompanied by mounting and contact checks. [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Industry approaches and documented products",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Formlabs positions Fast Model Resin primarily for orthodontic and thermoforming models and pairs Precision Model Resin with Form 4B and Form 4BL for restorative casts. Its documentation reports over 99% of the printed surface within 100 μm of the digital model. Verify local preparation margins and implant interfaces separately to assess batch throughput and functional fit in the same evaluation. [R11] [R15]"
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and translational testing",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN106073918A concerns a dental mould produced through printing, WO2026208767A1 a digital implant model and kit, and CN110095063A dental print accuracy testing. Assess replication error, analogue position and measurement-reference repeatability, respectively. [R08] [R09] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "Research and adoption outlook",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Routine production shifts measurement toward automated checks at margins, implant interfaces and occlusal landmarks. Track spatial patterns, first-pass yield and reproducibility across printers. [R01] [R02] [R04]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Effect of 3D printing technology, build orientation, and shell thickness on the accuracy of full-arch dental models for fixed dental prostheses: an in vitro study.",
+        "url": "https://doi.org/10.1038/s41598-025-24780-4",
+        "year": "2025",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R01"
+      },
+      {
+        "title": "The Impact of Three-Dimensional Printer Technology on the Accuracy of Dental Implant Models",
+        "url": "https://doi.org/10.3390/ma18091902",
+        "year": "2025",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R02"
+      },
+      {
+        "title": "Influence of the print orientation and cast thickness on the accuracy of DLP master casts for fixed dental prostheses.",
+        "url": "https://doi.org/10.1186/s12903-025-05944-0",
+        "year": "2025",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R03"
+      },
+      {
+        "title": "Effect of internal structures on the accuracy of 3D printed full-arch dentition preparation models in different printing systems.",
+        "url": "https://doi.org/10.4047/jap.2023.15.3.145",
+        "year": "2023",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R04"
+      },
+      {
+        "title": "Comparative Evaluation of Dimensional and Occlusal Accuracy of Non-Working Antagonist Casts: A Study on Different Impression Materials and 3D Printing.",
+        "url": "https://doi.org/10.12659/msm.941654",
+        "year": "2023",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R05"
+      },
+      {
+        "title": "Accuracy of 3D-Scanned Full-Arch Dentition Versus 3D-Printed Models Generated Using Various 3D Printers Based on Linear Measurements.",
+        "url": "https://doi.org/10.7759/cureus.114449",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R06"
+      },
+      {
+        "title": "3D DENTURE TRAY USING 3D PRINTING TECHNIC AND DENTURE MANUFACTURING MEHTOD THEREFOR",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DKR20200017565A",
+        "year": "2020",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R07"
+      },
+      {
+        "title": "Method for making dental model mold through 3D printing",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN106073918A",
+        "year": "2016",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R08"
+      },
+      {
+        "title": "DIGITAL DESIGN METHOD AND MANUFACTURING METHOD FOR DENTAL IMPLANT MODEL, DENTAL IMPLANT MODEL, AND KIT",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DWO2026208767A1",
+        "year": "2026",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R09"
+      },
+      {
+        "title": "Standard detection method for 3D printing precision of oral cavity medical products",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN110095063A",
+        "year": "2019",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R10"
+      },
+      {
+        "title": "Fast Model Resin",
+        "url": "https://dental.formlabs.com/global/products/fast-model-resin/",
+        "year": "",
+        "kind": "Company announcement",
+        "source": "Company announcement",
+        "id": "R11"
+      },
+      {
+        "title": "Deformation analysis of 3D-printed three-unit fixed partial dentures according to various cleaning strategies after DLP 3D printing: a geometric library matching approach",
+        "year": "2025",
+        "source": "Journal of Advanced Prosthodontics",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11886403/",
+        "kind": "原始研究",
+        "id": "R12"
+      },
+      {
+        "title": "In vitro evaluation of marginal and internal adaptation of three-unit fixed dental prostheses produced by stereolithography",
+        "year": "2014",
+        "source": "Dental Materials Journal",
+        "url": "https://www.jstage.jst.go.jp/article/dmj/33/4/33_2014-017/_article",
+        "kind": "原始研究",
+        "id": "R13"
+      },
+      {
+        "title": "Comparison of Intaglio Surface Trueness of Interim Dental Crowns Fabricated with SLA 3D Printing, DLP 3D Printing, and Milling Technologies",
+        "year": "2021",
+        "source": "Healthcare",
+        "url": "https://www.mdpi.com/2227-9032/9/8/983",
+        "kind": "原始研究",
+        "id": "R14"
+      },
+      {
+        "id": "R15",
+        "title": "Precision Model Resin (Form 4)",
+        "url": "https://dental.formlabs.com/products/precision-model-resin/",
+        "year": "",
+        "source": "Formlabs Dental",
+        "kind": "Product documentation"
+      }
+    ]
+  },
+  "de": {
+    "id": "H18",
+    "p": "P2",
+    "title": "Genauigkeit dentaler Arbeitsmodelle und Abformungen",
+    "subtitle": "Von der Scanreferenz zur lokalen Abweichung am Arbeitsmodell",
+    "thesis": "Globale Modellgenauigkeit und lokale Genauigkeit an Präparationsrändern, Approximalkontakten und Okklusionsflächen sind getrennt zu prüfen. Harz, Schale, Innenstruktur und Drucker können wechselwirken. [R01] [R04]",
+    "questions": [],
+    "graph": {
+      "title": "Forschungsverlauf · Genauigkeit dentaler Arbeitsmodelle und Abformungen",
+      "summary": "Auf einen Referenzscan folgen getrennte Variationen von Bauparametern und Innenstruktur. Globale und lokale Messungen prüfen das Ergebnis und fließen in Konstruktion und Qualitätskontrolle zurück.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2026",
+          "question": "Das digitale Referenzobjekt eindeutig festlegen.",
+          "title": "Digitale Referenz festlegen",
+          "evidence": "Linearmessungen am ganzen Zahnbogen erlauben den Druckervergleich gegen einen Referenzscan. Registrierung und Messfehler sind getrennt von der Fertigung zu dokumentieren.",
+          "refs": [
+            "R06"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2025",
+          "question": "Prüfen, ob Unterschiede auf bestimmte Landmarken begrenzt sind.",
+          "title": "Orientierung und Schale",
+          "evidence": "Eine Studie mit 144 Ganzkiefermodellen verglich SLA und DLP, Winkel von 0°, 10° und 20° sowie 2 und 4 mm Schalenstärke. Die globale RMS-Richtigkeit lag bei 73,9 bis 194 µm. Global waren Unterschiede der getesteten Faktoren nicht signifikant. Einzelne Landmarken unterschieden sich.",
+          "refs": [
+            "R01",
+            "R03"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2023",
+          "question": "Struktursteifigkeit und lokale Schrumpfung getrennt betrachten.",
+          "title": "Vollkörper, Hohlkörper und Gitter",
+          "evidence": "Ein weiterer Versuch verglich Voll-, Hohl- und Wabenmodelle. Die Wirkung auf die Richtigkeit war druckerspezifisch. Hohlmodelle zeigten insgesamt geringere Genauigkeit. Eine andere Innenstruktur ist ein anderer Eingriff als eine Änderung der Schalenstärke allein.",
+          "refs": [
+            "R04"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2023–2025",
+          "question": "Lokale Fehler auf die zahntechnische Aufgabe beziehen.",
+          "title": "Funktion des Modells prüfen",
+          "evidence": "Bei festsitzenden Versorgungen sind Präparationsgrenzen und axiale Flächen zu prüfen, bei Implantatmodellen Analogpositionen und bei Gegenkiefermodellen die Okklusionszuordnung. Abweichende Querdimensionen trotz passender Gesamtfläche machen eine Prüfung von Registrierung und Scanverzug sinnvoll.",
+          "refs": [
+            "R02",
+            "R05"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2023–2025",
+          "question": "Richtigkeit und Präzision gemeinsam berichten.",
+          "title": "Messwerte nach Region einordnen",
+          "evidence": "Abweichungskarten nach Zahnfläche, Gingivasaum, distaler Spannweite und Basis auswerten und das Vorzeichen erhalten. Wiederholung von Scan und Herstellung getrennt schätzen.",
+          "refs": [
+            "R01",
+            "R04"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2023–2025",
+          "question": "Digitale Abweichung mit der gelieferten Versorgung verknüpfen.",
+          "title": "Passung der Versorgung anbinden",
+          "evidence": "Randpassung und okklusale Korrektur der nachfolgenden Versorgung zeigen, welche Modellfehler weiterwirken. Wiederholt verschobene Merkmale können zu geänderter Stützung oder Schrumpfungskompensation führen.",
+          "refs": [
+            "R01",
+            "R05"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Orientierung und Schale",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Vollkörper, Hohlkörper und Gitter",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Funktion des Modells prüfen",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Funktion des Modells prüfen",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Messwerte nach Region einordnen",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Passung der Versorgung anbinden",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Kompensation anhand der Nacharbeitsstellen anpassen",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Untersuchungsrahmen und Ziele",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Gegenstand ist das Modell für Entwurf, Herstellung oder Kontrolle einer Versorgung. Arbeitsmodelle, Gegenkiefermodelle und Modelle mit Implantatanalogen haben unterschiedliche funktionelle Landmarken."
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Einordnung der Einzelschritte",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Digitale Referenz festlegen"
+          },
+          {
+            "type": "p",
+            "text": "Linearmessungen am ganzen Zahnbogen erlauben den Druckervergleich gegen einen Referenzscan. Registrierung und Messfehler sind getrennt von der Fertigung zu dokumentieren. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Das digitale Referenzobjekt eindeutig festlegen."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Orientierung und Schale"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie mit 144 Ganzkiefermodellen verglich SLA und DLP, Winkel von 0°, 10° und 20° sowie 2 und 4 mm Schalenstärke. Die globale RMS-Richtigkeit lag bei 73,9 bis 194 µm. Global waren Unterschiede der getesteten Faktoren nicht signifikant. Einzelne Landmarken unterschieden sich. [R01] [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Prüfen, ob Unterschiede auf bestimmte Landmarken begrenzt sind."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Vollkörper, Hohlkörper und Gitter"
+          },
+          {
+            "type": "p",
+            "text": "Ein weiterer Versuch verglich Voll-, Hohl- und Wabenmodelle. Die Wirkung auf die Richtigkeit war druckerspezifisch. Hohlmodelle zeigten insgesamt geringere Genauigkeit. Eine andere Innenstruktur ist ein anderer Eingriff als eine Änderung der Schalenstärke allein. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Struktursteifigkeit und lokale Schrumpfung getrennt betrachten."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Funktion des Modells prüfen"
+          },
+          {
+            "type": "p",
+            "text": "Bei festsitzenden Versorgungen sind Präparationsgrenzen und axiale Flächen zu prüfen, bei Implantatmodellen Analogpositionen und bei Gegenkiefermodellen die Okklusionszuordnung. Abweichende Querdimensionen trotz passender Gesamtfläche machen eine Prüfung von Registrierung und Scanverzug sinnvoll. [R02] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Lokale Fehler auf die zahntechnische Aufgabe beziehen."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2025 fertigte dreigliedrige Brücken auf zwei Druckern und verglich fünf Reinigungsstrategien mit Ethanol, Isopropanol und Kombinationen mit Ultraschall. Die Registrierung an einer Geometriebibliothek zeigte, dass Gerät und Bewertungsmaß, etwa Winkel oder Abstand, das erfasste Verformungsverhalten gemeinsam beeinflussten.[R12]"
+          },
+          {
+            "type": "p",
+            "text": "Die dreiteilige Struktur ist effektiver als einfache Proben, um lokale Verschiebungen und Spannweitenabweichungen aufzudecken. Durch Fixierung eines Endes und Vergleich der Position des anderen lässt sich die Winkelverschiebung ermitteln, die durch die optimale Gesamtpassung möglicherweise kompensiert wird. Die Reinigung umfasst daher zwei Aspekte: die Entfernung nicht umgesetzter Rückstände und die Erhaltung der gewünschten Form während der Verarbeitung. Wechselwirkungen zwischen Lösungsmittel, Ultraschall und Trocknung sind möglich, weshalb Messungen in kontrollierten Kombinationen sinnvoll sind, anstatt sich allein auf die Reinigungszeit als Erklärung zu verlassen."
+          },
+          {
+            "type": "p",
+            "text": "Scans vor und nach Reinigung sowie nach endgültiger Aushärtung können mit Massenänderungen und Oberflächenrückständen kombiniert werden, um Entfernung und Verformung zu trennen. Ein schnelleres Verfahren kann durch spätere Abweichungen den Gesamtaufwand dennoch erhöhen. Der Knoten verbindet Oberflächen- und Orientierungsforschung: Rückstände beeinflussen Beschichtung und Farbe; Schichtorientierung kann die Empfindlichkeit dünner Wände gegenüber Reinigung und Spannungsabbau verändern."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Messwerte nach Region einordnen"
+          },
+          {
+            "type": "p",
+            "text": "Abweichungskarten nach Zahnfläche, Gingivasaum, distaler Spannweite und Basis auswerten und das Vorzeichen erhalten. Wiederholung von Scan und Herstellung getrennt schätzen. [R01] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Richtigkeit und Präzision gemeinsam berichten."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie aus dem Jahr 2014 fertigte 40 dreigliedrige festsitzende Restaurationen an demselben Fallmodell an und maß 960 Spaltpunkte mithilfe der Silikonkautschuk-Replikationsmethode. Der Gesamtspalt des SLA-Verfahrens betrug 98,6 Mikrometer, der des Wachsverfahrens 66,6 Mikrometer. Dies deutet darauf hin, dass das SLA-Verfahren zu diesem Zeitpunkt noch Verbesserungspotenzial aufwies. [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Das Replikationsverfahren wandelt schwer direkt sichtbare innere Hohlräume in messbare, schnittfähige Materialschichten um und eignet sich daher zur präzisen Definition der räumlichen Beziehungen zwischen verschiedenen Bereichen. Die Dichte der Messpunkte, die Lage der Schnitte und die Belastung vor Ort beeinflussen jedoch die endgültig dargestellten Hohlräume. Die Analyseeinheit sollte zudem zwei Ebenen umfassen: Instrumente und Messpunkte. Mehrere Punkte an derselben Restauration beschreiben gemeinsam deren Geometrie, und die Anzahl der unabhängigen Instrumente sollte nicht mit der Anzahl der Messpunkte zunehmen. Diese Designlogik wurde später auf intensivere digitale Messungen angewendet."
+          },
+          {
+            "type": "p",
+            "text": "Eine Vergrößerung des Spalts kann durch digitale Konstruktionsfehler, Formabweichungen oder Positionierungsinterferenzen bedingt sein. Daher reicht ein einzelner Durchschnittswert nicht aus, um den zu korrigierenden Aspekt zu bestimmen. Im nächsten Schritt müssen die Ränder, axialen Wände und Okklusionsflächen getrennt und mit der digitalen Konstruktion ausgerichtet werden. Dieser wissenschaftliche Fortschritt verlagert den Fokus von der Frage „Ist die Herstellung möglich?“ hin zur Frage „Wo liegt der Fehler?“. Dadurch wird ein gemeinsames Problem für die nachfolgende Oberflächenrealistik, die lokale Kompensation und die Gestaltung des Adhäsivraums geschaffen. Parallel zur Materialunterstützung kann auch untersucht werden, ob eine Änderung des Spalts gleichzeitig die verbleibende Restaurationsdicke beeinflusst."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Passung der Versorgung anbinden"
+          },
+          {
+            "type": "p",
+            "text": "Randpassung und okklusale Korrektur der nachfolgenden Versorgung zeigen, welche Modellfehler weiterwirken. Wiederholt verschobene Merkmale können zu geänderter Stützung oder Schrumpfungskompensation führen. [R01] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Digitale Abweichung mit der gelieferten Versorgung verknüpfen."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie aus dem Jahr 2021 untersuchte das Scannen der Innenfläche von provisorischen Kronen, die mittels SLA, DLP und Fräsen hergestellt wurden, und verglich die Ergebnisse mit den Konstruktionszeichnungen. Die Gesamtabweichung der gedruckten Gruppe sowie mehrere regionale Abweichungen waren gering; die gefräste Gruppe zeigte Leistungsunterschiede zwischen verschiedenen Bereichen, und die Studie präsentierte auch eine Fehlerverteilungskarte. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "Dies ermöglicht durch die Umwandlung von wenigen Messpunkten in eine dreidimensionale Oberfläche die Beobachtung, ob Fehler an Ecken, axialen Wänden oder Okklusionsflächen konzentriert auftreten. Der Effektivwert (RMS) eignet sich zur Zusammenfassung des Ausmaßes der Abweichungen, während positive und negative Fehler die Unterscheidung zwischen über- und untergeformten Materialien erleichtern. Die Registrierungsmethode ist hierbei entscheidend: Eine optimale Anpassung kann lokale Platzierungsstörungen über die gesamte Oberfläche verteilen, und Ergebnisse mit festen Referenzpunkten lassen sich leichter mit der klinischen Platzierung korrelieren. Für nachfolgende Vergleiche sollten idealerweise sowohl Gesamt- als auch Detailbilder beibehalten werden, anstatt nur eine Rangfolge auszugeben."
+          },
+          {
+            "type": "p",
+            "text": "Dieser Knoten dient als Diagnosewerkzeug für Kompensationsstudien. Weist ein Bereich über verschiedene Chargen hinweg konsistent Fehler in derselben Richtung auf, können Anpassungen an Pixelgrenzen oder im lokalen Design vorgenommen werden. Ist die Fehlerrichtung instabil, sollten zunächst Schwankungen bei Reinigung, Stützmaterialentfernung und Aushärtung untersucht werden. Daraus ergeben sich zwei unterschiedliche Forschungs- und Entwicklungsaufgaben: die Reduzierung systematischer Abweichungen und die Reduzierung zufälliger Schwankungen. Beide sind für die klinische Anwendung wertvoll, erfordern jedoch unterschiedliche experimentelle Methoden und Qualitätskontrollverfahren."
+          }
+        ]
+      },
+      {
+        "title": "Vergleich der Befunde",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Schalenstudie und Innenstrukturstudie untersuchen unterschiedliche Eingriffe. Erstere variiert eine begrenzte Schalendicke, letztere Verstärkung und Drucksystem. Globaler RMS dient der Chargenkontrolle, Rand- und Zahnbogenfehler charakterisieren bestimmte Versorgungen. [R01] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "In einer Studie diente ein industrieller Scan eines Titanmodells mit 3 Implantaten auf Knochenniveau als Referenz. Aus 10 Intraoralscans entstanden 30 Druckmodelle. Die mittleren Abweichungen betrugen 0,07 ± 0,02 und 0,12 ± 0,13 mm bei den beiden DLP-Systemen sowie 0,26 ± 0,17 mm beim untersuchten SLA-System. Die größten SLA-Fehler lagen vestibulooral sowie okklusal-apikal. Der Vergleich gilt den Implantatmodellen aus diesen Systemen. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Eine Untersuchung montierte Modelle aus 3 Abformmaterialien oder Druck gegen dasselbe Oberkiefer-Referenzmodell. Geprüft wurden anteroposteriore und vertikale Maße. Modelle aus verlängert ausgießbarem Alginat und Alginatersatz zeigten eine höhere Okklusionsgenauigkeit als die Druck- und Standardalginatgruppen. Bei der Zuordnung der Kiefer sind Montage und Kontakte ergänzend zum Oberflächen-RMS pro Kiefer zu prüfen. [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Industrielle Ansätze und dokumentierte Produkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Formlabs richtet Fast Model Resin primär auf kieferorthopädische und Tiefziehmodelle aus. Precision Model Resin ist für restaurative Arbeitsmodelle mit Form 4B und Form 4BL vorgesehen. Die Herstellerangaben nennen über 99 % der Druckoberfläche innerhalb von 100 µm zum digitalen Modell. Lokale Präparationsränder und Implantatschnittstellen sollten gesondert geprüft werden, um Durchsatz und funktionelle Passung gemeinsam zu beurteilen. [R11] [R15]"
+          }
+        ]
+      },
+      {
+        "title": "Patentmechanismen und Prüfung für den Einsatz",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN106073918A betrifft eine mittels Druck erzeugte Dentalform, WO2026208767A1 ein digitales Implantatmodell mit Kit und CN110095063A die Genauigkeitsprüfung dentaler Druckteile. Zu prüfen sind entsprechend Replikationsfehler, Analogposition und Wiederholbarkeit der Messreferenz. [R08] [R09] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick auf Forschung und Anwendung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Bei Routinefertigung gewinnen automatisierte Prüfungen an Rändern, Implantatschnittstellen und Okklusionspunkten an Bedeutung. Räumliche Fehlermuster, Erstpassquote und Reproduzierbarkeit zwischen Druckern sind geeignete Größen. [R01] [R02] [R04]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Effect of 3D printing technology, build orientation, and shell thickness on the accuracy of full-arch dental models for fixed dental prostheses: an in vitro study.",
+        "url": "https://doi.org/10.1038/s41598-025-24780-4",
+        "year": "2025",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R01"
+      },
+      {
+        "title": "The Impact of Three-Dimensional Printer Technology on the Accuracy of Dental Implant Models",
+        "url": "https://doi.org/10.3390/ma18091902",
+        "year": "2025",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R02"
+      },
+      {
+        "title": "Influence of the print orientation and cast thickness on the accuracy of DLP master casts for fixed dental prostheses.",
+        "url": "https://doi.org/10.1186/s12903-025-05944-0",
+        "year": "2025",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R03"
+      },
+      {
+        "title": "Effect of internal structures on the accuracy of 3D printed full-arch dentition preparation models in different printing systems.",
+        "url": "https://doi.org/10.4047/jap.2023.15.3.145",
+        "year": "2023",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R04"
+      },
+      {
+        "title": "Comparative Evaluation of Dimensional and Occlusal Accuracy of Non-Working Antagonist Casts: A Study on Different Impression Materials and 3D Printing.",
+        "url": "https://doi.org/10.12659/msm.941654",
+        "year": "2023",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R05"
+      },
+      {
+        "title": "Accuracy of 3D-Scanned Full-Arch Dentition Versus 3D-Printed Models Generated Using Various 3D Printers Based on Linear Measurements.",
+        "url": "https://doi.org/10.7759/cureus.114449",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R06"
+      },
+      {
+        "title": "3D DENTURE TRAY USING 3D PRINTING TECHNIC AND DENTURE MANUFACTURING MEHTOD THEREFOR",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DKR20200017565A",
+        "year": "2020",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R07"
+      },
+      {
+        "title": "Method for making dental model mold through 3D printing",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN106073918A",
+        "year": "2016",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R08"
+      },
+      {
+        "title": "DIGITAL DESIGN METHOD AND MANUFACTURING METHOD FOR DENTAL IMPLANT MODEL, DENTAL IMPLANT MODEL, AND KIT",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DWO2026208767A1",
+        "year": "2026",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R09"
+      },
+      {
+        "title": "Standard detection method for 3D printing precision of oral cavity medical products",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN110095063A",
+        "year": "2019",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R10"
+      },
+      {
+        "title": "Fast Model Resin",
+        "url": "https://dental.formlabs.com/global/products/fast-model-resin/",
+        "year": "",
+        "kind": "Unternehmensmitteilung",
+        "source": "Unternehmensmitteilung",
+        "id": "R11"
+      },
+      {
+        "title": "Deformation analysis of 3D-printed three-unit fixed partial dentures according to various cleaning strategies after DLP 3D printing: a geometric library matching approach",
+        "year": "2025",
+        "source": "Journal of Advanced Prosthodontics",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11886403/",
+        "kind": "原始研究",
+        "id": "R12"
+      },
+      {
+        "title": "In vitro evaluation of marginal and internal adaptation of three-unit fixed dental prostheses produced by stereolithography",
+        "year": "2014",
+        "source": "Dental Materials Journal",
+        "url": "https://www.jstage.jst.go.jp/article/dmj/33/4/33_2014-017/_article",
+        "kind": "原始研究",
+        "id": "R13"
+      },
+      {
+        "title": "Comparison of Intaglio Surface Trueness of Interim Dental Crowns Fabricated with SLA 3D Printing, DLP 3D Printing, and Milling Technologies",
+        "year": "2021",
+        "source": "Healthcare",
+        "url": "https://www.mdpi.com/2227-9032/9/8/983",
+        "kind": "原始研究",
+        "id": "R14"
+      },
+      {
+        "id": "R15",
+        "title": "Precision Model Resin (Form 4)",
+        "url": "https://dental.formlabs.com/products/precision-model-resin/",
+        "year": "",
+        "source": "Formlabs Dental",
+        "kind": "Produktdokumentation"
+      }
+    ]
+  }
+}

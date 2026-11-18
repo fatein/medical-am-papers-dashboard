@@ -65,5 +65,6 @@ def test_return_restores_question_and_ignores_stale_context(monkeypatch):
  assert fake.session_state['cross_paper_page_P1-004']==3
  assert fake.session_state['cross_p']=='全部'
  direction_reports.return_to_direction(ROOT,'P2-01')
- assert fake.session_state['cross_p']=='P2'
+ assert fake.session_state['cross_p']=='全部'
+ assert fake.session_state['cross_direction']=='H20'
  assert 'cross_question' not in fake.session_state

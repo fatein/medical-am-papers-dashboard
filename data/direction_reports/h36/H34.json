@@ -1,0 +1,1592 @@
+{
+  "zh": {
+    "id": "H34",
+    "p": "P7",
+    "title": "打印微流控与芯片器件",
+    "subtitle": "从最小特征尺寸到可重复的流体与观测任务",
+    "thesis": "打印的价值取决于能否在同一器件中保持开放通道、可控流体和适合应用的接口。不同制程在分辨率、材料和封装上的取舍应由完整任务验证。",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络图",
+      "summary": "通道可制造性分成低成本成形和高分辨率集成。两路都要验证光学、材料与流体边界，再通过应用实验反馈几何与封装。",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2016",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R06"
+          ],
+          "title": "直接成形通道与密封面",
+          "question": "低成本挤出可以承担哪些芯片任务？",
+          "evidence": "熔丝制造研究展示透明、密封的打印微流控装置并用于单细胞观测应用。"
+        },
+        {
+          "id": "N2",
+          "time": "2019",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R02"
+          ],
+          "title": "把功能件纳入整体",
+          "question": "怎样把流体功能从接口移到芯片内部？",
+          "evidence": "功能打印研究归纳阀、泵、混合与检测元件的集成路径。"
+        },
+        {
+          "id": "N3",
+          "time": "2024",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R05"
+          ],
+          "title": "在低成本光固化下保持微通道",
+          "question": "树脂和曝光怎样共同限定可打印结构？",
+          "evidence": "LCD 芯片研究将低成本成形与共培养器件演示连接。"
+        },
+        {
+          "id": "N4",
+          "time": "2023",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R01"
+          ],
+          "title": "把分辨率连到集成流体功能",
+          "question": "精细结构如何转为可测的流体任务？",
+          "evidence": "高分辨率研究报告 15 μm 方柱及 5 μm 层厚，并比较集成泵与外接泵对真核细胞趋化观察的表现。"
+        },
+        {
+          "id": "N5",
+          "time": "2022",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R03",
+            "R05"
+          ],
+          "title": "从开放流道推进到持续观测",
+          "question": "芯片材料和流体环境如何影响细胞读数？",
+          "evidence": "直接打印芯片支持间充质细胞分化及化合物反应研究，LCD 共培养研究展示内皮芽生观察。"
+        },
+        {
+          "id": "N6",
+          "time": "2023–2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R10",
+            "R11"
+          ],
+          "title": "把器件方案与制造能力匹配",
+          "question": "供应平台的能力应在哪个尺度核验？",
+          "evidence": "Nanoscribe 展示微流体高分辨率部件应用，Microlight3D 把微制造作为开放研究平台。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "选择系统功能"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "改善精细成形"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "比较内外部驱动"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "评价材料与观察窗"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "验证系统稳定"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "形成用途验收"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "以泄漏和失真反馈几何"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "芯片证据的三个尺度",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "孤立微结构说明构建能力，封闭流路检验成品连通性，器件里的功能实验确定可用范围。用相同工作任务比较直接打印、模具复刻和模块拼接，才可判断哪种做法适合重复试验。[R01] [R02] [R05] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 直接成形通道与密封面"
+          },
+          {
+            "type": "p",
+            "text": "熔丝制造研究展示透明、密封的打印微流控装置并用于单细胞观测应用。 [R06]"
+          },
+          {
+            "type": "p",
+            "text": "层纹和膨胀会影响通道阻力与成像，记录不同朝向通道的真实截面，以及接头在压差下的泄漏。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 把功能件纳入整体"
+          },
+          {
+            "type": "p",
+            "text": "功能打印研究归纳阀、泵、混合与检测元件的集成路径。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "评估集成前后分别比较连接死体积、流量变化与可维护性。故障定位应区分部件、连接和整个流体系统。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 在低成本光固化下保持微通道"
+          },
+          {
+            "type": "p",
+            "text": "LCD 芯片研究将低成本成形与共培养器件演示连接。 [R05]"
+          },
+          {
+            "type": "p",
+            "text": "外部最小特征与内部开放通道要采用不同测试件，分别记录朝向、残留和光学可读性。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 把分辨率连到集成流体功能"
+          },
+          {
+            "type": "p",
+            "text": "高分辨率研究报告 15 μm 方柱及 5 μm 层厚，并比较集成泵与外接泵对真核细胞趋化观察的表现。 [R01]"
+          },
+          {
+            "type": "p",
+            "text": "方柱尺寸是可制造性结果，流动与迁移对照才检验系统任务。应用比较要保留稳定流量、控温和图像一致性。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 从开放流道推进到持续观测"
+          },
+          {
+            "type": "p",
+            "text": "直接打印芯片支持间充质细胞分化及化合物反应研究，LCD 共培养研究展示内皮芽生观察。 [R03] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "设置相同材料静态组、动态流动组和共培养条件，把材料相容与细胞环境效应分开。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 把器件方案与制造能力匹配"
+          },
+          {
+            "type": "p",
+            "text": "Nanoscribe 展示微流体高分辨率部件应用，Microlight3D 把微制造作为开放研究平台。 [R10] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "分辨率与吞吐量应按照所需部件而定。可将精细元件与较大主体分开制造，再验证接口装配和批次偏差。"
+          },
+          {
+            "type": "h3",
+            "text": "相关实验的补充比较"
+          },
+          {
+            "type": "h3",
+            "text": "透明与细胞相容的通道"
+          },
+          {
+            "type": "p",
+            "text": "微通道中的透明性首先是测量条件：细胞形态、流动界面和颗粒轨迹都依赖稳定成像。PEG-DA透明器件研究将立体光刻打印和细胞培养放在同一评价中，展示打印材料可同时参与结构形成与生物观察。[R4001] 它为后续研究提出了一个复合目标：打印后留下的实体既是流体边界，也是显微观察窗口和细胞接触环境。"
+          },
+          {
+            "type": "p",
+            "text": "由此可把“分辨率”拆成设计尺寸、成品空腔尺寸和可运行尺寸。最小结构能够被曝光形成，并不意味着封闭通道中的残留材料容易清除；观察窗口透明，也不等于细胞接触表面的化学状态相同。研究设计应把这几类量分别与实验任务对应，解释为何一个几何改动会影响流阻、图像背景或细胞响应。"
+          },
+          {
+            "type": "p",
+            "text": "从这一节点出发，问题自然分成两条路径：改变材料以满足直接使用需求，或把打印用于模具而将最终培养界面交给另一材料。前者保留三维结构一体化的优势，后者有利于沿用既有培养和成像条件。选择路径时最有解释力的指标，是一次实验中几何准确性和生物可用性能够共同达到的水平。"
+          },
+          {
+            "type": "p",
+            "text": "实验上还可以设置“几何相同、材料不同”和“材料相同、几何不同”的两组比较。前一组用于解释界面与光学，后一组用于解释流动与连通。再把两组结果交叉，才能识别某种材料优势是否依赖特定结构。这样的设计使材料筛选与结构开发相互配合，并避免在多个变量同时改变时难以判断原因。"
+          },
+          {
+            "type": "h3",
+            "text": "几何与润湿性的双路径"
+          },
+          {
+            "type": "p",
+            "text": "液滴生成需要连续相稳定包裹分散相。2021年的研究同时考察疏水树脂和三维环形通道：前者改变液滴接触的壁面，后者利用空间构型减少液滴与壁面的接触。[R4003] 两种办法针对同一个失败机制，却分别从材料和几何入口解决，为设计提供了比单纯提高打印精度更丰富的选择。"
+          },
+          {
+            "type": "p",
+            "text": "这个结果引出的机制判断是：结构设计能够改变界面相遇的方式。若目标液体容易润湿现有材料，研究可以先考察是否通过通道布局维持连续相包围，再决定是否开发新配方。反过来，即使树脂具备理想润湿性，入口波动和转弯处的局部流场仍会改变液滴生成。因此，材料和几何应作为联合变量比较。"
+          },
+          {
+            "type": "p",
+            "text": "进一步研究需要观察液滴在整段流程中的行为，而非只记录生成瞬间。下游转弯、收集、表面老化和长时间运行都可能改变接触条件。从节点N2到N4的关键跨越，就是把一个位置上的稳定生成转化为多个通道、持续运行条件下的一致输出；稳定性的评价因而从局部扩展到整个网络。"
+          },
+          {
+            "type": "p",
+            "text": "液滴研究还需要区分形成频率、体积分布和合并行为。前两项反映发生器输出，后一项反映下游稳定。研究者可以分别观察入口、发生区和出口，使一次失稳能够定位到具体区域。这样得到的分段证据有助于决定改进润湿、收缩几何还是出口收集，而非整体提高压力后重新试验。"
+          },
+          {
+            "type": "h3",
+            "text": "模具复制保留生物界面"
+          },
+          {
+            "type": "p",
+            "text": "打印模具路线把高自由度结构和生物实验材料分开组织。2023年的LCD模具研究使用微孔、浓度梯度和载水凝胶装置，开展细胞活性、药物响应和三维侵袭实验，将打印质量与实际生物读出相连。[R4005] 其研究意义在于检验复制后的器件是否仍能完成预定实验。"
+          },
+          {
+            "type": "p",
+            "text": "这一节点可以从两个层面理解。几何层面，模具表面的细节会传递到复制器件；实验层面，最终材料与细胞接触，表面形貌、光学窗口和装配方式共同影响测量。通过同时比较结构与响应，可以判断差异来自制造还是生物过程。由此形成的分析顺序是先确认复制结构，再确认培养条件，最后解释实验结果。"
+          },
+          {
+            "type": "p",
+            "text": "复制方法还改变了迭代经济性：研究者可以把设计修改集中在模具，重复制作多个芯片用于对照。真正重要的是同一设计能否在多个实验批次中形成相近环境。它将问题推向N6的模块化模具库，也为N5中处理真实样本提供可替换的流体功能单元。"
+          },
+          {
+            "type": "p",
+            "text": "复制结构的对照可以沿设计—模具—成品三级展开。设计与模具差异定位加工，模具与成品差异定位复制，成品与实验差异定位运行。三级对应还允许对同一模具制作多个器件，从而把工装差异与批次差异分开。这种比较为后续规模化提供了清楚的质量检查位置。"
+          },
+          {
+            "type": "h3",
+            "text": "并联通道的流量均衡"
+          },
+          {
+            "type": "p",
+            "text": "提高液滴产量需要增加通道，但并联网络中的流体不会自动平均分配。2020年的研究以计算流体动力学与立体光刻协同设计堆叠、径向并联的液滴发生器，并将输出用于细胞包裹。[R4002] 它把研究焦点从“单个发生器能工作”推进到“多个发生器如何共同工作”。"
+          },
+          {
+            "type": "p",
+            "text": "这里的技术链路包含设计与试验之间的往返。计算模型用于识别分支阻力与入口条件对分配的影响，打印成品把网络实现出来，实验再检查制造偏差是否改变均衡。可以据此建立更有解释力的比较：同一流量下的通道间差异，与同一通道不同时间的波动应分别统计，才能区分结构不均和驱动不稳。"
+          },
+          {
+            "type": "p",
+            "text": "这一节点也说明扩展通量并非简单复制模块。上游歧管、接口和出口收集会成为公共约束；通道数增加后，局部性能的平均值可能掩盖少数失效支路。下一步任务是把并联网络连接到可测量、可独立控制的驱动系统，使异常支路能够被识别和维护。"
+          },
+          {
+            "type": "p",
+            "text": "并联网络还可以按通道建立分布图，而不只比较全部液滴的总体平均。若某些支路持续偏离，结构不对称或阻力差异可能值得优先检查；若全部支路随时间同步变化，则驱动与输入更值得关注。这种空间—时间分解能把计算设计与运行诊断连接起来，提高下一轮改动的针对性。"
+          },
+          {
+            "type": "h3",
+            "text": "模块重组与复制制造"
+          },
+          {
+            "type": "p",
+            "text": "模块化的核心是让可复用功能进入不同实验组合。2023年受活字印刷启发的研究通过组装模具复制三维流路，并将阀、光源和微型成像附件组合到芯片上，展示浓度梯度、液滴、细胞捕获和药物筛选平台。[R4006] 它使结构迭代从整块重做转向功能组合。"
+          },
+          {
+            "type": "p",
+            "text": "这种组织方式需要同时保持接口一致和功能可解释。相同形状的连接口不一定具有相同死体积与密封表现；两个独立验证的模块接在一起后，上游流量和下游背压会相互影响。因而模块库应同时保存几何文件、适用流体条件、连接边界和基础性能，使组合后的系统能够计算和验证。"
+          },
+          {
+            "type": "p",
+            "text": "其学术价值是提高问题比较的可操作性。例如，在保持驱动与检测不变时替换混合模块，就能更清晰地观察混合过程造成的差异；在保持几何不变时替换培养材料，则有助于定位界面因素。N6因此成为多条研究路径的汇合点，并将系统需求交给N7和N8处理。"
+          },
+          {
+            "type": "p",
+            "text": "功能库可以按“输入条件—输出行为”组织。例如，混合模块保存输入流量比例与混合读出，捕获模块保存样本对象与回收表现。接口定义明确后，模块组合就具有可检验的预期；若整机偏离，可以沿模块边界定位。这种组织方式使公开设计从几何图库发展成实验知识库。"
+          },
+          {
+            "type": "h3",
+            "text": "灌流由外部系统稳定"
+          },
+          {
+            "type": "p",
+            "text": "可持续灌流依赖芯片外部设备。2023年的模块化蠕动泵研究把打印机械部件、控制电子和用户界面整合，支持流率设定与预编程流动模式。[R4007] 其研究对象是日常实验中可操控的灌流系统，把使用者的调节与设定能力纳入设计。"
+          },
+          {
+            "type": "p",
+            "text": "从流体实验角度，泵的名义设定值需要与芯片中的实际环境相连。管路弹性、泵脉动和装置阻力会共同决定细胞或液滴经历的条件，因此可以把驱动测量和芯片读出同步记录。通过改变驱动而保持芯片不变，研究者能区分几何诱发的流动差异与外部设备造成的变化。"
+          },
+          {
+            "type": "p",
+            "text": "这一节点带来的产业机会，是把打印芯片和易用的驱动系统作为一个实验工作流交付。使用者最关心的通常是设定能否保存、运行能否复现、管路能否便捷更换。可编程性进一步要求开放数据接口，以便后续把成像、传感和驱动连接起来；这正是N8的研究任务。"
+          },
+          {
+            "type": "p",
+            "text": "长期培养中的流动控制应与短时分配分别检验。前者关注持续波动、管路状态与环境影响，后者关注每次动作的体积和响应。两类任务可以共用机械平台，却需要不同的校准与记录。按任务区分测试，能够让同一低成本泵在多个研究场景中得到更清楚的配置。"
+          },
+          {
+            "type": "h3",
+            "text": "独立通道与自动化接口"
+          },
+          {
+            "type": "p",
+            "text": "2025年的开源多通道蠕动泵将四个独立驱动通道、可快速更换的卡匣和SiLA 2接口组合在一起。[R4008] 独立通道使不同实验不必共享同一运行速度；可更换耗材使流体接触部分能够独立维护；软件接口则让设备进入更大的自动化系统。"
+          },
+          {
+            "type": "p",
+            "text": "它揭示了研究重点从几何制造向系统可管理性的延伸。多芯片运行时，各通道需要自己的状态和控制记录，异常流量也应能定位到对应实验。若设备只报告总运行时间，就难以解释某个样本的环境变化。将实验身份、控制指令与传感读数联系起来，才可能形成可重复的并行实验。"
+          },
+          {
+            "type": "p",
+            "text": "反馈路径回到N4：独立控制能够暴露原先被平均值掩盖的支路差异，继而改进歧管与接口设计。另一条由N5回到N3的反馈，关注前处理中的目标损失和背景残留如何受材料与连接件影响。由此形成完整闭环——制造提供结构，实验检验功能，运行数据再决定下一轮结构和维护方案。"
+          },
+          {
+            "type": "p",
+            "text": "独立通道为实验设计增加了新的对照方式：可以在同一系统中同时比较不同流动程序，并保留每条支路的实际记录。当控制、传感和样本身份相连时，异常不再只是一次失败，而成为分析结构、管路和材料的证据。这也是设备平台从执行工具向研究反馈工具转变的关键。"
+          }
+        ]
+      },
+      {
+        "title": "产品路线",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "微制造平台可提供高精部件，面向单次实验的整芯片则需要材料、可见性、接口和重复采购一起成立。产品选型时应比较每个有效器件的生产时间、流量变异和维护负担。[R10] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "专利与技术交汇",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN115891150A 以微流体实现仿生异质材料分配；CN116077230A 聚焦仿生血管芯片。微流体在前者是制造工具，在后者是成品内部的功能；验证分别看多材料分配与流体模型的重现性。[R07] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "贯通实验与交付",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "每版记录真实截面、封口失败、初次启动成功率和软件读出。在几何相同的对照中依次切换材料、连接方式和驱动器，使异常能追溯到具体部件。[R01] [R02] [R03]"
+          }
+        ]
+      },
+      {
+        "title": "后续观察",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "重点关注以公开基准验证真实通道、兼容重复操作的接头标准以及跨实验室复现的生物或光学功能。实际成功率能区分精细原型与可交付芯片。"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Biocompatible High-Resolution 3D-Printed Microfluidic Devices: Integrated Cell Chemotaxis Demonstration.",
+        "year": "2023",
+        "url": "https://doi.org/10.3390/mi14081589",
+        "kind": "paper",
+        "source": "10.3390/mi14081589"
+      },
+      {
+        "id": "R02",
+        "title": "Functional 3D Printing for Microfluidic Chips",
+        "year": "2019",
+        "url": "https://doi.org/10.1002/admt.201900275",
+        "kind": "paper",
+        "source": "10.1002/admt.201900275"
+      },
+      {
+        "id": "R03",
+        "title": "Direct 3D printed biocompatible microfluidics: assessment of human mesenchymal stem cell differentiation and cytotoxic drug screening in a dynamic culture system.",
+        "year": "2022",
+        "url": "https://doi.org/10.1186/s12951-022-01737-7",
+        "kind": "paper",
+        "source": "10.1186/s12951-022-01737-7"
+      },
+      {
+        "id": "R05",
+        "title": "High-resolution low-cost LCD 3D printing for microfluidics and organ-on-a-chip devices.",
+        "year": "2024",
+        "url": "https://doi.org/10.1039/d3lc01125a",
+        "kind": "paper",
+        "source": "10.1039/d3lc01125a"
+      },
+      {
+        "id": "R06",
+        "title": "Simple and Versatile 3D Printed Microfluidics Using Fused Filament Fabrication.",
+        "year": "2016",
+        "url": "https://doi.org/10.1371/journal.pone.0152023",
+        "kind": "paper",
+        "source": "10.1371/journal.pone.0152023"
+      },
+      {
+        "id": "R07",
+        "title": "3D printing device and method for bionic pixelated heterogeneous material based on microfluidic principle",
+        "year": "2023",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN115891150A",
+        "kind": "patent",
+        "source": "CN115891150A"
+      },
+      {
+        "id": "R10",
+        "year": "",
+        "title": "High-resolution 3D-printed components for microfluidics",
+        "url": "https://www.nanoscribe.com/en/applications-markets/3d-printed-microfluidics/",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R11",
+        "year": "",
+        "title": "microFAB-3D — Open 3D-microfabrication platform for research applications",
+        "url": "https://microlight3d.com/our-products/microfab-3d",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R12",
+        "year": "",
+        "title": "Bionic blood vessel chip and application thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN116077230A",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R4001",
+        "title": "3D-printing of transparent bio-microfluidic devices in PEG-DA",
+        "year": "2016",
+        "source": "Lab on a Chip",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27217203/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4002",
+        "title": "Engineering 3D parallelized microfluidic droplet generators with equal flow profiles by computational fluid dynamics and stereolithographic printing",
+        "year": "2020",
+        "source": "Lab on a Chip",
+        "url": "https://doi.org/10.1039/C9LC00980A",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4003",
+        "title": "3D-Printed Microfluidic Droplet Generator with Hydrophilic and Hydrophobic Polymers",
+        "year": "2021",
+        "source": "Micromachines",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7830873/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4005",
+        "title": "Fabrication of 3D-printed molds for polydimethylsiloxane-based microfluidic devices using a liquid crystal display-based vat photopolymerization process: printing quality, drug response and 3D invasion cell culture assays",
+        "year": "2023",
+        "source": "Microsystems & Nanoengineering",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10632127/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4006",
+        "title": "3D free-assembly modular microfluidics inspired by movable type printing",
+        "year": "2023",
+        "source": "Microsystems & Nanoengineering",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10495351/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4007",
+        "title": "A User-Centric 3D-Printed Modular Peristaltic Pump for Microfluidic Perfusion Applications",
+        "year": "2023",
+        "source": "Micromachines",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10222968/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4008",
+        "title": "An open-source peristaltic pump with multiple independent channels for laboratory automation",
+        "year": "2025",
+        "source": "Digital Discovery",
+        "url": "https://pubs.rsc.org/en/content/articlehtml/2025/dd/d5dd00157a",
+        "kind": "原始研究"
+      }
+    ]
+  },
+  "en": {
+    "id": "H34",
+    "p": "P7",
+    "title": "Printed microfluidics and chip devices",
+    "subtitle": "From minimum feature size to repeatable flow and observation",
+    "thesis": "The value of printing depends on maintaining open channels, controlled flow and suitable interfaces in one device. Validate trade-offs in resolution, materials and packaging against the complete task.",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway",
+      "summary": "Channel manufacturability branches into low-cost fabrication and high-resolution integration. Both require optical, material and fluidic checks and use application results to refine geometry and packaging.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2016",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R06"
+          ],
+          "title": "Form channels and seals directly",
+          "question": "Which chip tasks can low-cost extrusion support?",
+          "evidence": "A fused-filament study demonstrated transparent sealed microfluidic devices for single-cell observation."
+        },
+        {
+          "id": "N2",
+          "time": "2019",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R02"
+          ],
+          "title": "Integrate functional components",
+          "question": "How can fluidic functions move from interfaces onto the chip?",
+          "evidence": "Work on functional printing describes integration routes for valves, pumps, mixers and sensing elements."
+        },
+        {
+          "id": "N3",
+          "time": "2024",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R05"
+          ],
+          "title": "Preserve channels in low-cost photopolymerization",
+          "question": "How do resin and exposure constrain printable features?",
+          "evidence": "LCD chip work paired low-cost fabrication with a co-culture demonstration."
+        },
+        {
+          "id": "N4",
+          "time": "2023",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R01"
+          ],
+          "title": "Connect resolution to integrated fluidics",
+          "question": "How do fine features enable a measurable flow task?",
+          "evidence": "A high-resolution study reported 15 µm square posts and 5 µm layers and compared integrated and external pumps for eukaryotic cell chemotaxis observation."
+        },
+        {
+          "id": "N5",
+          "time": "2022",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R03",
+            "R05"
+          ],
+          "title": "Move from open channels to sustained observation",
+          "question": "How do chip materials and fluid conditions affect readouts?",
+          "evidence": "Direct printing supported mesenchymal differentiation and chemical response studies, while LCD co-culture work demonstrated observation of endothelial sprouting."
+        },
+        {
+          "id": "N6",
+          "time": "2023–2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R10",
+            "R11"
+          ],
+          "title": "Match device architecture to manufacturing capability",
+          "question": "At which scale should the production platform be verified?",
+          "evidence": "Nanoscribe illustrates high-resolution microfluidic components, and Microlight3D presents an open research microfabrication platform."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Select fluidic functions"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Improve feature fidelity"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Compare on- and off-chip actuation"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Evaluate material and optics"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Verify system stability"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Define use-based acceptance"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Feed leaks and distortion back into geometry"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Three scales of chip evidence",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Isolated features demonstrate fabrication, closed paths test connectivity, and on-device experiments establish the operating range. Compare direct printing, mold replication and modular assembly using the same task. [R01] [R02] [R05] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathway and evidence by stage",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Form channels and seals directly"
+          },
+          {
+            "type": "p",
+            "text": "A fused-filament study demonstrated transparent sealed microfluidic devices for single-cell observation. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Layer lines and spreading can influence resistance and imaging. Record actual sections across orientations and leakage at connectors under pressure difference."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Integrate functional components"
+          },
+          {
+            "type": "p",
+            "text": "Work on functional printing describes integration routes for valves, pumps, mixers and sensing elements. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Compare dead volume, flow variation and serviceability with and without integration. Localize faults to components, connections or the full fluidic system."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Preserve channels in low-cost photopolymerization"
+          },
+          {
+            "type": "p",
+            "text": "LCD chip work paired low-cost fabrication with a co-culture demonstration. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "External minimum features and internal open passages need separate test pieces. Record orientation, residuals and optical readability."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Connect resolution to integrated fluidics"
+          },
+          {
+            "type": "p",
+            "text": "A high-resolution study reported 15 µm square posts and 5 µm layers and compared integrated and external pumps for eukaryotic cell chemotaxis observation. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Pillar size is a fabrication result, while flow and migration comparisons test the system task. Retain flow stability, temperature control and imaging consistency."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Move from open channels to sustained observation"
+          },
+          {
+            "type": "p",
+            "text": "Direct printing supported mesenchymal differentiation and chemical response studies, while LCD co-culture work demonstrated observation of endothelial sprouting. [R03] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Use matched-material static and dynamic conditions and separate co-culture conditions to distinguish material compatibility from environmental effects."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Match device architecture to manufacturing capability"
+          },
+          {
+            "type": "p",
+            "text": "Nanoscribe illustrates high-resolution microfluidic components, and Microlight3D presents an open research microfabrication platform. [R10] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Set resolution and throughput by component needs. Fabricate fine elements and larger bodies separately where appropriate, and verify assembly and batch variation."
+          },
+          {
+            "type": "h3",
+            "text": "Related experimental comparisons"
+          },
+          {
+            "type": "h3",
+            "text": "Transparent, cell-compatible channels"
+          },
+          {
+            "type": "p",
+            "text": "Transparency in microchannels is primarily a matter of measurement conditions: cell morphology, flow interfaces, and particle trajectories all depend on stable imaging. Research on PEG-DA transparent devices places stereolithography printing and cell culture in the same evaluation, demonstrating that printed materials can simultaneously participate in structure formation and biological observation. This presents a composite goal for future research: the solid entity left after printing serves as both a fluid boundary and a microscopic observation window and cell contact environment. [R4001]"
+          },
+          {
+            "type": "p",
+            "text": "Therefore, \"resolution\" can be broken down into design size, finished cavity size, and operational size. The fact that a minimal structure can be formed through exposure does not mean that residual material in a closed channel is easily removed; a transparent observation window does not equate to a uniform chemical state of the cell contact surface. Research designs should correlate these quantities with the experimental task, explaining why a geometric change affects flow resistance, image background, or cell response."
+          },
+          {
+            "type": "p",
+            "text": "Starting from this point, the problem naturally branches into two paths: changing the material to meet direct application requirements, or using printing for the mold while entrusting the final culture interface to another material. The former retains the advantage of integrated three-dimensional structure, while the latter facilitates the use of existing culture and imaging conditions. The most explanatory indicator when choosing a path is the level that geometric accuracy and biological usability can be achieved simultaneously in a single experiment."
+          },
+          {
+            "type": "p",
+            "text": "The experiment can also set up two sets of comparisons: \"same geometry, different materials\" and \"same materials, different geometry.\" The former is used to explain interfaces and optics, while the latter is used to explain flow and connectivity. Cross-referencing the results of the two sets is then necessary to identify whether a material's advantages depend on a specific structure. This design allows material selection and structure development to work together and avoids the difficulty of determining the cause when multiple variables change simultaneously."
+          },
+          {
+            "type": "h3",
+            "text": "Geometry and wettability as two design routes"
+          },
+          {
+            "type": "p",
+            "text": "Droplet formation requires a continuous phase to stably encapsulate the dispersed phase. A 2021 study examined both hydrophobic resins and three-dimensional annular channels: the former alters the wall surface in contact with the droplets, while the latter utilizes spatial configuration to reduce the contact between the droplets and the wall surface. [R4003] Both approaches target the same failure mechanism but address it from the material and geometric entry points, respectively, providing a wider range of design options than simply improving printing accuracy."
+          },
+          {
+            "type": "p",
+            "text": "The mechanistic implication is that structural design can alter the way interfaces meet. If the target liquid easily wets existing materials, research can first examine whether a continuous phase envelopment can be maintained through channel layout before deciding whether to develop a new formulation. Conversely, even if the resin possesses ideal wettability, inlet fluctuations and local flow fields at bends can still alter droplet formation. Therefore, materials and geometry should be compared as joint variables."
+          },
+          {
+            "type": "p",
+            "text": "Further research requires observing the droplet behavior throughout the entire process, rather than just recording the moment of generation. Downstream turns, collection, surface aging, and long-term operation can all alter contact conditions. The key leap from node N2 to N4 is transforming stable generation at a single location into consistent output under continuous operation conditions across multiple channels; thus, the evaluation of stability expands from local to the entire network."
+          },
+          {
+            "type": "p",
+            "text": "Droplet studies also require distinguishing between formation frequency, volume distribution, and merging behavior. The first two reflect generator output, while the last reflects downstream stability. Researchers can observe the inlet, generation zone, and outlet separately, pinpointing a single instability to a specific region. This segmented evidence helps determine whether to improve wetting, contraction geometry, or outlet collection, rather than simply increasing the overall pressure and retesting."
+          },
+          {
+            "type": "h3",
+            "text": "Mold replication preserves biological interfaces"
+          },
+          {
+            "type": "p",
+            "text": "The printing mold route separates the high-degree-of-freedom structure from the biological experimental materials. The 2023 LCD mold research used micropores, concentration gradients, and hydrogel devices to conduct cell activity, drug response, and three-dimensional invasion experiments, linking printing quality to actual biological readout. Its significance lies in verifying whether the replicated device can still complete the predetermined experiments. [R4005]"
+          },
+          {
+            "type": "p",
+            "text": "The node can be understood on two levels. On a geometric level, the details of the mold surface are transmitted to the replicating device; on an experimental level, the final material comes into contact with the cells, and surface morphology, optical windows, and assembly methods all influence the measurements. By simultaneously comparing structure and response, it's possible to determine whether the difference originates from manufacturing or a biological process. The resulting analytical sequence is to first confirm the replicating structure, then confirm the culture conditions, and finally interpret the experimental results."
+          },
+          {
+            "type": "p",
+            "text": "The replication method also changes the iterative economy: researchers can focus design modifications on the mold, repeatedly fabricating multiple chips for control. What truly matters is whether the same design can achieve similar environments across multiple experimental batches. This addresses the issue with N6's modular mold library and also provides replaceable fluidic functional units for handling real-world samples in N5."
+          },
+          {
+            "type": "p",
+            "text": "Replicated structures can be compared at three levels: design, mold and final product. Design–mold differences locate fabrication errors, mold–product differences locate replication errors, and product–experiment differences locate operational effects. Producing multiple devices from one mold separates tooling variation from batch variation and identifies where quality checks belong during scale-up."
+          },
+          {
+            "type": "h3",
+            "text": "Balancing flow in parallel channels"
+          },
+          {
+            "type": "p",
+            "text": "Increasing droplet production requires adding more channels, but fluid in a parallel network is not automatically evenly distributed. A 2020 study used computational fluid dynamics and stereolithography to co-design stacked, radially parallel droplet generators and used the output for cell encapsulation. [R4002] This shifted the research focus from \"how a single generator can work\" to \"how multiple generators work together\"."
+          },
+          {
+            "type": "p",
+            "text": "The technical chain here involves round trips between design and testing. The computational model is used to identify the impact of branch resistance and inlet conditions on distribution; the printed product realizes the network; and experiments are conducted to check whether manufacturing deviations have altered the equilibrium. This allows for more interpretive comparisons: differences between channels under the same flow rate and fluctuations of the same channel at different times should be statistically analyzed separately to distinguish between structural inhomogeneities and drive instability."
+          },
+          {
+            "type": "p",
+            "text": "The node also illustrates that expanding throughput is not simply a matter of copying modules. Upstream manifolds, interfaces, and outgoing collection become common constraints; with an increase in the number of channels, the average local performance may mask a few failed branches. The next task is to connect the parallel network to a measurable and independently controllable drive system, enabling the identification and maintenance of abnormal branches."
+          },
+          {
+            "type": "p",
+            "text": "The parallel network can also create distribution maps by channel, rather than just comparing the overall average of all droplets. If some branches continue to deviate, structural asymmetry or resistance differences may warrant priority investigation; if all branches change synchronously over time, the drive and input deserve more attention. This space-time decomposition connects computational design with operational diagnostics, improving the targeting of the next round of modifications."
+          },
+          {
+            "type": "h3",
+            "text": "Module reconfiguration and replication manufacturing"
+          },
+          {
+            "type": "p",
+            "text": "The core of the modularity is to allow reusable functions to be incorporated into different experimental combinations. A 2023 study inspired by movable type printing replicated three-dimensional flow paths by assembling molds and combining valves, light sources, and micro-imaging accessories onto the chip, demonstrating concentration gradient, droplet, cell capture, and drug screening platforms. This shifts structural iteration from a complete redesign to functional combination. [R4006]"
+          },
+          {
+            "type": "p",
+            "text": "This organizational approach requires maintaining both interface consistency and functional interpretability. Connections of the same shape do not necessarily have the same dead volume and sealing performance; when two independently validated modules are connected, upstream flow and downstream back pressure will affect each other. Therefore, the module library should simultaneously store geometry files, applicable fluid conditions, connection boundaries, and basic performance characteristics, enabling the combined system to be calculated and validated."
+          },
+          {
+            "type": "p",
+            "text": "The academic value of lies in improving the operability of problem comparisons. For example, replacing the mixing module while keeping the driving and detection constant allows for a clearer observation of the differences caused by the mixing process; replacing the culture material while keeping the geometry constant helps to pinpoint interface factors. Therefore, N6 becomes the convergence point of multiple research paths, leaving the system requirements to N7 and N8."
+          },
+          {
+            "type": "p",
+            "text": "The function library can be organized according to \"input conditions - output behavior\". For example, the mixing module stores the input flow ratio and mixed readout, while the capture module stores the sample objects and retrieval performance. Once the interface is clearly defined, the module combination has verifiable expectations; if the whole system deviates, it can be located along the module boundaries. This organizational method allows open designs to evolve from a geometric library into an experimental knowledge base."
+          },
+          {
+            "type": "h3",
+            "text": "External systems stabilize perfusion"
+          },
+          {
+            "type": "p",
+            "text": "Sustainable perfusion relies on external devices. The 2023 modular peristaltic pump research integrates printed mechanical components, control electronics, and a user interface to support flow rate settings and pre-programmed flow patterns. [R4007] Its research focuses on controllable perfusion systems for everyday experiments, incorporating user adjustment and setting capabilities into the design."
+          },
+          {
+            "type": "p",
+            "text": "From a fluid dynamics experiment perspective, the nominal setpoints of the pump need to be correlated with the actual environment within the chip. Pipeline elasticity, pump pulsation, and device resistance collectively determine the conditions experienced by the cell or droplet, thus allowing for synchronized recording of drive measurements and chip readouts. By changing the drive while keeping the chip constant, researchers can distinguish between geometry-induced flow differences and variations caused by external equipment."
+          },
+          {
+            "type": "p",
+            "text": "The industrial opportunity presented by the node lies in delivering a printed chip and an easy-to-use driver system as an experimental workflow. Users are typically most concerned with whether settings can be saved, whether operation can be reproduced, and whether piping can be easily replaced. Programmability further requires open data interfaces to connect imaging, sensing, and driving systems later; this is precisely the research task of N8."
+          },
+          {
+            "type": "p",
+            "text": "flow control during long-term cultivation should be tested separately from short-term allocation. The former focuses on continuous fluctuations, pipeline conditions, and environmental influences, while the latter focuses on the volume and response of each action. Both types of tasks can share the same mechanical platform but require different calibrations and recordings. Testing separately for each task allows for clearer configuration of the same low-cost pump in multiple research scenarios."
+          },
+          {
+            "type": "h3",
+            "text": "Independent channels and automation interfaces"
+          },
+          {
+            "type": "p",
+            "text": "The 2025 open-source multichannel peristaltic pump combines four independent drive channels, quick-change cartridges, and a SiLA 2 interface. Independent channels allow different experiments to run at different speeds; replaceable consumables enable independent maintenance of fluid contact parts; and the software interface allows the device to be integrated into larger automated systems. [R4008]"
+          },
+          {
+            "type": "p",
+            "text": "This shows an extension from geometric fabrication to system manageability. In multichip operation, each channel needs its own state and control records, and abnormal flow must be traceable to the corresponding experiment. Total running time alone cannot explain environmental changes experienced by a sample. Connecting experimental identity, control commands and sensor readings enables reproducible parallel experiments."
+          },
+          {
+            "type": "p",
+            "text": "The feedback path returns to N4: independent control can expose branch differences previously masked by average values, thereby improving manifold and interface design. Another feedback path, from N5 back to N3, focuses on how target losses and background residues in pretreatment are affected by materials and connectors. This forms a complete closed loop—manufacturing provides the structure, experiments verify the functionality, and operational data determines the next round of structure and maintenance plans."
+          },
+          {
+            "type": "p",
+            "text": "The independent channel adds a new control method to experimental design: different flow programs can be compared simultaneously within the same system, and actual records of each branch are retained. When control, sensing, and sample identity are linked, anomalies are no longer just failures, but become evidence for analyzing structures, piping, and materials. This is also a key aspect of the device platform's transformation from an execution tool to a research feedback tool."
+          }
+        ]
+      },
+      {
+        "title": "Product routes",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Microfabrication platforms can provide precise components. A whole experiment-ready chip requires a compatible material, visibility, interfaces and repeatable supply. Compare manufacturing time, flow variation and maintenance per working device. [R10] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Patent and technology overlap",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN115891150A uses microfluidics for heterogeneous material placement. CN116077230A focuses on a biomimetic vessel chip. Microfluidics serves as a fabrication tool in one and a device function in the other, with placement and fluid-model reproducibility as distinct test targets. [R07] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Link experiments and delivery",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Record as-built sections, sealing failures, successful starts and readout for each revision. In matched geometries, change material, connection and drive separately to trace anomalies to a component. [R01] [R02] [R03]"
+          }
+        ]
+      },
+      {
+        "title": "Outlook and observables",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Watch open as-built channel benchmarks, repeat-use connector specifications and biological or optical functions reproduced across labs. Operational yield differentiates fine prototypes and deliverable chips."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Biocompatible High-Resolution 3D-Printed Microfluidic Devices: Integrated Cell Chemotaxis Demonstration.",
+        "year": "2023",
+        "url": "https://doi.org/10.3390/mi14081589",
+        "kind": "paper",
+        "source": "10.3390/mi14081589"
+      },
+      {
+        "id": "R02",
+        "title": "Functional 3D Printing for Microfluidic Chips",
+        "year": "2019",
+        "url": "https://doi.org/10.1002/admt.201900275",
+        "kind": "paper",
+        "source": "10.1002/admt.201900275"
+      },
+      {
+        "id": "R03",
+        "title": "Direct 3D printed biocompatible microfluidics: assessment of human mesenchymal stem cell differentiation and cytotoxic drug screening in a dynamic culture system.",
+        "year": "2022",
+        "url": "https://doi.org/10.1186/s12951-022-01737-7",
+        "kind": "paper",
+        "source": "10.1186/s12951-022-01737-7"
+      },
+      {
+        "id": "R05",
+        "title": "High-resolution low-cost LCD 3D printing for microfluidics and organ-on-a-chip devices.",
+        "year": "2024",
+        "url": "https://doi.org/10.1039/d3lc01125a",
+        "kind": "paper",
+        "source": "10.1039/d3lc01125a"
+      },
+      {
+        "id": "R06",
+        "title": "Simple and Versatile 3D Printed Microfluidics Using Fused Filament Fabrication.",
+        "year": "2016",
+        "url": "https://doi.org/10.1371/journal.pone.0152023",
+        "kind": "paper",
+        "source": "10.1371/journal.pone.0152023"
+      },
+      {
+        "id": "R07",
+        "title": "3D printing device and method for bionic pixelated heterogeneous material based on microfluidic principle",
+        "year": "2023",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN115891150A",
+        "kind": "patent",
+        "source": "CN115891150A"
+      },
+      {
+        "id": "R10",
+        "year": "",
+        "title": "High-resolution 3D-printed components for microfluidics",
+        "url": "https://www.nanoscribe.com/en/applications-markets/3d-printed-microfluidics/",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R11",
+        "year": "",
+        "title": "microFAB-3D — Open 3D-microfabrication platform for research applications",
+        "url": "https://microlight3d.com/our-products/microfab-3d",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R12",
+        "year": "",
+        "title": "Bionic blood vessel chip and application thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN116077230A",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R4001",
+        "title": "3D-printing of transparent bio-microfluidic devices in PEG-DA",
+        "year": "2016",
+        "source": "Lab on a Chip",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27217203/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4002",
+        "title": "Engineering 3D parallelized microfluidic droplet generators with equal flow profiles by computational fluid dynamics and stereolithographic printing",
+        "year": "2020",
+        "source": "Lab on a Chip",
+        "url": "https://doi.org/10.1039/C9LC00980A",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4003",
+        "title": "3D-Printed Microfluidic Droplet Generator with Hydrophilic and Hydrophobic Polymers",
+        "year": "2021",
+        "source": "Micromachines",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7830873/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4005",
+        "title": "Fabrication of 3D-printed molds for polydimethylsiloxane-based microfluidic devices using a liquid crystal display-based vat photopolymerization process: printing quality, drug response and 3D invasion cell culture assays",
+        "year": "2023",
+        "source": "Microsystems & Nanoengineering",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10632127/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4006",
+        "title": "3D free-assembly modular microfluidics inspired by movable type printing",
+        "year": "2023",
+        "source": "Microsystems & Nanoengineering",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10495351/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4007",
+        "title": "A User-Centric 3D-Printed Modular Peristaltic Pump for Microfluidic Perfusion Applications",
+        "year": "2023",
+        "source": "Micromachines",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10222968/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4008",
+        "title": "An open-source peristaltic pump with multiple independent channels for laboratory automation",
+        "year": "2025",
+        "source": "Digital Discovery",
+        "url": "https://pubs.rsc.org/en/content/articlehtml/2025/dd/d5dd00157a",
+        "kind": "原始研究"
+      }
+    ]
+  },
+  "de": {
+    "id": "H34",
+    "p": "P7",
+    "title": "Gedruckte Mikrofluidik und Chipbauteile",
+    "subtitle": "Von der kleinsten Struktur zur reproduzierbaren Strömung und Beobachtung",
+    "thesis": "Der Nutzen des Drucks hängt von offenen Kanälen, kontrollierter Strömung und geeigneten Schnittstellen im selben Gerät ab. Zielkonflikte bei Auflösung, Material und Gehäuse sind an der vollständigen Aufgabe zu prüfen.",
+    "questions": [],
+    "graph": {
+      "title": "Forschungspfad",
+      "summary": "Kanalherstellbarkeit verzweigt sich in kostengünstige Fertigung und hochauflösende Integration. Beide benötigen optische, materielle und fluidische Prüfungen sowie Rückmeldung aus der Anwendung.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2016",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R06"
+          ],
+          "title": "Kanäle und Dichtflächen direkt herstellen",
+          "question": "Welche Chipaufgaben trägt kostengünstige Extrusion?",
+          "evidence": "Eine Schmelzschichtstudie demonstrierte transparente dichte Mikrofluidikbauteile zur Einzelzellbeobachtung."
+        },
+        {
+          "id": "N2",
+          "time": "2019",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R02"
+          ],
+          "title": "Funktionselemente integrieren",
+          "question": "Wie lassen sich Fluidikfunktionen von Anschlüssen in den Chip verlagern?",
+          "evidence": "Arbeiten zum Funktionsdruck beschreiben Integration von Ventilen, Pumpen, Mischern und Sensorelementen."
+        },
+        {
+          "id": "N3",
+          "time": "2024",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R05"
+          ],
+          "title": "Mikrokanäle bei kostengünstiger Photopolymerisation erhalten",
+          "question": "Wie begrenzen Harz und Belichtung druckbare Strukturen?",
+          "evidence": "LCD-Chipforschung verband kostengünstige Fertigung und Kokultur-Demonstration."
+        },
+        {
+          "id": "N4",
+          "time": "2023",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R01"
+          ],
+          "title": "Auflösung mit integrierter Fluidik verknüpfen",
+          "question": "Wie ermöglichen feine Strukturen eine messbare Strömungsaufgabe?",
+          "evidence": "Eine hochauflösende Studie berichtete 15 µm breite quadratische Säulen und 5 µm Schichten und verglich integrierte und externe Pumpen bei der Beobachtung eukaryotischer Zellchemotaxis."
+        },
+        {
+          "id": "N5",
+          "time": "2022",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R03",
+            "R05"
+          ],
+          "title": "Von offenen Kanälen zur dauerhaften Beobachtung",
+          "question": "Wie beeinflussen Chipmaterialien und Fluidik die Messwerte?",
+          "evidence": "Direktdruck ermöglichte Studien zu mesenchymaler Differenzierung und chemischer Antwort. Die LCD-Kokultur zeigte beobachtbare endotheliale Sprossung."
+        },
+        {
+          "id": "N6",
+          "time": "2023–2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R10",
+            "R11"
+          ],
+          "title": "Gerätearchitektur an Fertigungsfähigkeit anpassen",
+          "question": "Auf welcher Skala wird die Fertigungsplattform geprüft?",
+          "evidence": "Nanoscribe zeigt hochauflösende Mikrofluidikbauteile, Microlight3D eine offene Forschungsplattform zur Mikrofertigung."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Fluidikfunktionen wählen"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Feingeometrie verbessern"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Interne und externe Antriebe vergleichen"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Material und Optik bewerten"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Systemstabilität prüfen"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Nutzungsbezogene Abnahme definieren"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Leckage und Verzerrung ins Design zurückführen"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Drei Maßstabsebenen der Chipevidenz",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Einzelstrukturen zeigen Fertigungsfähigkeit, geschlossene Pfade Vernetzung, Geräteversuche den Arbeitsbereich. Direktdruck, Formreplikation und Modulmontage mit gleicher Aufgabe vergleichen. [R01] [R02] [R05] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungspfad und Evidenz je Station",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Kanäle und Dichtflächen direkt herstellen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Schmelzschichtstudie demonstrierte transparente dichte Mikrofluidikbauteile zur Einzelzellbeobachtung. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Schichtlinien und Verlaufen beeinflussen Widerstand und Bildgebung. Reale Querschnitte nach Orientierung und Leckage an Anschlüssen unter Druckdifferenz erfassen."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Funktionselemente integrieren"
+          },
+          {
+            "type": "p",
+            "text": "Arbeiten zum Funktionsdruck beschreiben Integration von Ventilen, Pumpen, Mischern und Sensorelementen. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Totvolumen, Durchflussstreuung und Wartbarkeit mit und ohne Integration vergleichen. Fehler Bauteilen, Verbindungen oder Gesamtsystem zuordnen."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Mikrokanäle bei kostengünstiger Photopolymerisation erhalten"
+          },
+          {
+            "type": "p",
+            "text": "LCD-Chipforschung verband kostengünstige Fertigung und Kokultur-Demonstration. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Kleinste Außenstrukturen und offene Innenkanäle brauchen getrennte Prüfkörper. Ausrichtung, Rückstände und optische Lesbarkeit erfassen."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Auflösung mit integrierter Fluidik verknüpfen"
+          },
+          {
+            "type": "p",
+            "text": "Eine hochauflösende Studie berichtete 15 µm breite quadratische Säulen und 5 µm Schichten und verglich integrierte und externe Pumpen bei der Beobachtung eukaryotischer Zellchemotaxis. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Säulengröße ist ein Fertigungsbefund, Strömungs- und Migrationsvergleich prüfen die Systemaufgabe. Durchflussstabilität, Temperaturkontrolle und Bildkonsistenz erhalten."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Von offenen Kanälen zur dauerhaften Beobachtung"
+          },
+          {
+            "type": "p",
+            "text": "Direktdruck ermöglichte Studien zu mesenchymaler Differenzierung und chemischer Antwort. Die LCD-Kokultur zeigte beobachtbare endotheliale Sprossung. [R03] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Statische und dynamische Bedingungen bei gleichem Material sowie eigene Kokulturbedingungen nutzen, um Verträglichkeit und Umwelteffekte zu trennen."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Gerätearchitektur an Fertigungsfähigkeit anpassen"
+          },
+          {
+            "type": "p",
+            "text": "Nanoscribe zeigt hochauflösende Mikrofluidikbauteile, Microlight3D eine offene Forschungsplattform zur Mikrofertigung. [R10] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Auflösung und Durchsatz nach Bauteilbedarf festlegen. Feine Elemente und größere Körper können getrennt gefertigt und Montage sowie Chargenstreuung geprüft werden."
+          },
+          {
+            "type": "h3",
+            "text": "Ergänzende Versuchsvergleiche"
+          },
+          {
+            "type": "h3",
+            "text": "Transparente und zellverträgliche Kanäle"
+          },
+          {
+            "type": "p",
+            "text": "Transparenz in Mikrokanälen ist zunächst eine Messvoraussetzung: Zellmorphologie, Flüssigkeitsgrenzflächen und Partikelbahnen erfordern stabile Bildgebung. Studien mit transparenten PEG-DA-Bauteilen verbinden Stereolithographie und Zellkultur und zeigen die gemeinsame Rolle des Materials für Strukturbildung und biologische Beobachtung.[R4001] Die gedruckte Struktur muss zugleich Strömungsgrenze, mikroskopisches Fenster und Zellkontaktumgebung sein."
+          },
+          {
+            "type": "p",
+            "text": "Daher lässt sich die „Auflösung“ in Entwurfsgröße, fertige Kavitätsgröße und Betriebsgröße unterteilen. Die Tatsache, dass durch Belichtung eine minimale Struktur erzeugt werden kann, bedeutet nicht, dass sich Restmaterial in einem geschlossenen Kanal leicht entfernen lässt; ein transparentes Beobachtungsfenster entspricht nicht einem einheitlichen chemischen Zustand der Zellkontaktfläche. Forschungsdesigns sollten diese Größen mit der experimentellen Aufgabe korrelieren und erklären, warum eine geometrische Änderung den Strömungswiderstand, den Bildhintergrund oder die Zellreaktion beeinflusst."
+          },
+          {
+            "type": "p",
+            "text": "Ausgehend von diesem Punkt verzweigt sich das Problem naturgemäß in zwei Lösungsansätze: die Anpassung des Materials an die direkten Anwendungsanforderungen oder die Verwendung des 3D-Druckverfahrens für die Formgebung, während die finale Kulturschnittstelle einem anderen Material überlassen wird. Ersteres erhält den Vorteil einer integrierten dreidimensionalen Struktur, während letzteres die Nutzung bestehender Kultur- und Bildgebungsbedingungen ermöglicht. Der wichtigste Indikator für die Wahl des Lösungswegs ist der Grad, in dem geometrische Genauigkeit und biologische Eignung gleichzeitig in einem einzigen Experiment erreicht werden können."
+          },
+          {
+            "type": "p",
+            "text": "Das Experiment ermöglicht zwei Vergleichsreihen: „gleiche Geometrie, unterschiedliche Materialien“ und „gleiche Materialien, unterschiedliche Geometrie“. Erstere dient der Erklärung von Grenzflächen und optischen Effekten, letztere der Erklärung von Strömung und Konnektivität. Der Vergleich der Ergebnisse beider Reihen ist notwendig, um festzustellen, ob die Vorteile eines Materials von einer spezifischen Struktur abhängen. Dieses Design ermöglicht die gleichzeitige Materialauswahl und Strukturentwicklung und vermeidet die Schwierigkeit, die Ursache zu bestimmen, wenn sich mehrere Variablen gleichzeitig ändern."
+          },
+          {
+            "type": "h3",
+            "text": "Zwei Wege über Geometrie und Benetzbarkeit"
+          },
+          {
+            "type": "p",
+            "text": "Die Tröpfchenbildung erfordert eine kontinuierliche Phase, die die dispergierte Phase stabil einkapselt. Eine Studie aus dem Jahr 2021 untersuchte sowohl hydrophobe Harze als auch dreidimensionale Ringkanäle: Erstere verändern die Wandoberfläche im Kontaktbereich mit den Tröpfchen, während letztere die räumliche Konfiguration nutzen, um den Kontakt zwischen den Tröpfchen und der Wandoberfläche zu reduzieren. [R4003] Beide Ansätze zielen auf denselben Versagensmechanismus ab, jedoch von den Material- bzw. Geometrie-Eintrittspunkten aus. Dadurch bieten sie ein breiteres Spektrum an Gestaltungsmöglichkeiten als die reine Verbesserung der Druckgenauigkeit."
+          },
+          {
+            "type": "p",
+            "text": "Die mechanistische Schlussfolgerung beruht darauf, dass die Strukturgestaltung die Art der Grenzflächenbenetzung beeinflussen kann. Benetzt die Zielflüssigkeit vorhandene Materialien gut, kann zunächst untersucht werden, ob durch die Kanalanordnung eine kontinuierliche Phasenumhüllung gewährleistet werden kann, bevor über die Entwicklung einer neuen Formulierung entschieden wird. Umgekehrt können selbst bei idealer Benetzbarkeit des Harzes Einlassschwankungen und lokale Strömungsfelder in Krümmungen die Tropfenbildung beeinflussen. Daher sollten Materialien und Geometrie als gemeinsame Variablen verglichen werden."
+          },
+          {
+            "type": "p",
+            "text": "Weiterführende Forschung erfordert die Beobachtung des Tropfenverhaltens während des gesamten Prozesses, anstatt nur den Zeitpunkt der Entstehung zu erfassen. Nachgelagerte Prozessumlenkungen, Sammlung, Oberflächenalterung und Langzeitbetrieb können die Kontaktbedingungen verändern. Der entscheidende Schritt von Knoten N2 zu N4 besteht darin, die stabile Tropfenerzeugung an einem einzelnen Ort in eine konsistente Ausgabe unter kontinuierlichen Betriebsbedingungen über mehrere Kanäle hinweg zu transformieren; dadurch erweitert sich die Stabilitätsbewertung von lokal auf das gesamte Netzwerk."
+          },
+          {
+            "type": "p",
+            "text": "Tröpfchenuntersuchungen erfordern zudem die Unterscheidung zwischen Entstehungshäufigkeit, Volumenverteilung und Verschmelzungsverhalten. Die ersten beiden Größen spiegeln die Generatorleistung wider, während die letzte die Stabilität stromabwärts beschreibt. Forscher können Einlass, Entstehungszone und Auslass separat beobachten und so eine einzelne Instabilität einem bestimmten Bereich zuordnen. Diese segmentierten Daten helfen zu entscheiden, ob die Benetzung, die Kontraktionsgeometrie oder die Auslassabscheidung verbessert werden sollten, anstatt einfach den Gesamtdruck zu erhöhen und erneut zu testen."
+          },
+          {
+            "type": "h3",
+            "text": "Formreplikation erhält die biologische Grenzfläche"
+          },
+          {
+            "type": "p",
+            "text": "Das Druckformverfahren trennt die Struktur mit hohem Freiheitsgrad von den biologischen Versuchsmaterialien. Die LCD-Formforschung von 2023 nutzte Mikroporen, Konzentrationsgradienten und Hydrogelstrukturen, um Zellaktivitäts-, Arzneimittelreaktions- und dreidimensionale Invasionsversuche durchzuführen und die Druckqualität mit tatsächlichen biologischen Messwerten zu verknüpfen. [R4005] Ihre Bedeutung liegt in der Überprüfung, ob die replizierte Struktur die vorgegebenen Experimente weiterhin durchführen kann."
+          },
+          {
+            "type": "p",
+            "text": "Der Knoten lässt sich auf zwei Ebenen verstehen. Auf geometrischer Ebene werden die Details der Formoberfläche auf das Replikationsgerät übertragen; auf experimenteller Ebene kommt das fertige Material mit den Zellen in Kontakt, wobei Oberflächenmorphologie, optische Fenster und Montageverfahren die Messungen beeinflussen. Durch den gleichzeitigen Vergleich von Struktur und Reaktion lässt sich feststellen, ob die Abweichung auf die Herstellung oder einen biologischen Prozess zurückzuführen ist. Die daraus resultierende analytische Vorgehensweise besteht darin, zunächst die Replikationsstruktur zu bestätigen, dann die Kulturbedingungen zu überprüfen und schließlich die experimentellen Ergebnisse zu interpretieren."
+          },
+          {
+            "type": "p",
+            "text": "Das Replikationsverfahren verändert auch die iterative Ökonomie: Forscher können Designmodifikationen auf die Form konzentrieren und wiederholt mehrere Chips zur Kontrolle herstellen. Entscheidend ist, ob dasselbe Design in mehreren Versuchsreihen vergleichbare Umgebungsbedingungen erzeugt. Dies führt zur Frage der modularen Formbibliothek von N6 und bietet zudem austauschbare fluidische Funktionseinheiten für die Handhabung realer Proben in N5."
+          },
+          {
+            "type": "p",
+            "text": "Replizierte Strukturen lassen sich auf drei Ebenen vergleichen: Entwurf, Form und Endprodukt. Unterschiede zwischen Entwurf und Form lokalisieren Fertigungseinflüsse, zwischen Form und Produkt Replikationseinflüsse und zwischen Produkt und Experiment Betriebseinflüsse. Mehrere Bauteile aus derselben Form trennen Werkzeug- von Chargenunterschieden und zeigen geeignete Orte für Qualitätsprüfungen beim Hochskalieren."
+          },
+          {
+            "type": "h3",
+            "text": "Durchfluss in parallelen Kanälen ausgleichen"
+          },
+          {
+            "type": "p",
+            "text": "Um die Tröpfchenproduktion zu steigern, müssen zusätzliche Kanäle hinzugefügt werden. Allerdings ist die Flüssigkeit in einem parallelen Netzwerk nicht automatisch gleichmäßig verteilt. Eine Studie aus dem Jahr 2020 nutzte numerische Strömungsmechanik und Stereolithographie, um gestapelte, radial parallele Tröpfchengeneratoren gemeinsam zu entwickeln und deren Output für die Zellverkapselung zu verwenden. [R4002] Dadurch verlagerte sich der Forschungsschwerpunkt von der Frage „Wie funktioniert ein einzelner Generator?“ hin zur Frage „Wie funktionieren mehrere Generatoren zusammen?“."
+          },
+          {
+            "type": "p",
+            "text": "Die technische Kette umfasst hier mehrere Zyklen zwischen Design und Test. Mithilfe des Rechenmodells wird der Einfluss von Zweigwiderständen und Einlassbedingungen auf die Verteilung ermittelt; das gedruckte Produkt realisiert das Netzwerk; und Experimente werden durchgeführt, um zu überprüfen, ob Fertigungsabweichungen das Gleichgewicht verändert haben. Dies ermöglicht aussagekräftigere Vergleiche: Unterschiede zwischen Kanälen bei gleicher Durchflussrate und Schwankungen desselben Kanals zu verschiedenen Zeitpunkten sollten statistisch separat analysiert werden, um zwischen strukturellen Inhomogenitäten und Antriebsinstabilität zu unterscheiden."
+          },
+          {
+            "type": "p",
+            "text": "Der Knoten verdeutlicht zudem, dass eine Steigerung des Durchsatzes nicht einfach durch das Kopieren von Modulen erreicht werden kann. Upstream-Verteiler, Schnittstellen und die Sammlung am Auslass stellen häufige Einschränkungen dar; mit zunehmender Kanalanzahl kann die durchschnittliche lokale Leistung einige fehlerhafte Zweige verschleiern. Die nächste Aufgabe besteht darin, das parallele Netzwerk mit einem messbaren und unabhängig steuerbaren Antriebssystem zu verbinden, um fehlerhafte Zweige zu identifizieren und zu warten."
+          },
+          {
+            "type": "p",
+            "text": "Das parallele Netzwerk kann zudem Verteilungskarten pro Kanal erstellen, anstatt nur den Gesamtdurchschnitt aller Tröpfchen zu vergleichen. Weichen einzelne Zweige weiterhin ab, sollten strukturelle Asymmetrien oder Widerstandsunterschiede vorrangig untersucht werden; verändern sich hingegen alle Zweige synchron im Zeitverlauf, bedürfen Antrieb und Eingangssignal besonderer Aufmerksamkeit. Diese Raum-Zeit-Zerlegung verknüpft die computergestützte Entwicklung mit der Betriebsdiagnostik und verbessert so die Zielgenauigkeit der nächsten Modifikationsrunde."
+          },
+          {
+            "type": "h3",
+            "text": "Module neu kombinieren und replizieren"
+          },
+          {
+            "type": "p",
+            "text": "Der Kern der Modularität besteht darin, wiederverwendbare Funktionen in verschiedene experimentelle Kombinationen zu integrieren. Eine Studie aus dem Jahr 2023, inspiriert vom Buchdruck mit beweglichen Lettern, replizierte dreidimensionale Strömungswege durch die Montage von Formen und die Kombination von Ventilen, Lichtquellen und Mikroimaging-Zubehör auf dem Chip und demonstrierte Plattformen für Konzentrationsgradienten, Tröpfchen, Zellfang und Wirkstoff-Screening. [R4006] Dadurch verschiebt sich die strukturelle Iteration von einer vollständigen Neuentwicklung hin zu einer funktionalen Kombination."
+          },
+          {
+            "type": "p",
+            "text": "Dieser organisatorische Ansatz erfordert sowohl konsistente Schnittstellen als auch funktionale Interpretierbarkeit. Verbindungen gleicher Form weisen nicht zwangsläufig dasselbe Totvolumen und dieselbe Dichtungsleistung auf. Werden zwei unabhängig validierte Module verbunden, beeinflussen sich Zufluss und Gegendruck gegenseitig. Daher sollte die Modulbibliothek Geometriedateien, relevante Fluidbedingungen, Verbindungsgrenzen und grundlegende Leistungskennwerte speichern, um die Berechnung und Validierung des Gesamtsystems zu ermöglichen."
+          },
+          {
+            "type": "p",
+            "text": "Der akademische Wert liegt in der verbesserten Vergleichbarkeit von Problemen. Beispielsweise ermöglicht der Austausch des Mischmoduls bei gleichbleibender Ansteuerung und Detektion eine klarere Beobachtung der durch den Mischprozess bedingten Unterschiede; der Austausch des Kulturmaterials bei gleichbleibender Geometrie hilft, Grenzflächenfaktoren genauer zu bestimmen. Daher wird N6 zum Konvergenzpunkt mehrerer Forschungsrichtungen, während die Systemanforderungen N7 und N8 überlassen bleiben."
+          },
+          {
+            "type": "p",
+            "text": "Die Funktionsbibliothek lässt sich nach dem Prinzip „Eingangsbedingungen – Ausgangsverhalten“ organisieren. Beispielsweise speichert das Mischmodul das Eingangsflussverhältnis und den Messwert der Mischung, während das Erfassungsmodul die Probenobjekte und die Extraktionsleistung speichert. Sobald die Schnittstelle klar definiert ist, lassen sich die Erwartungen an die Modulkombinationen überprüfen; Abweichungen des Gesamtsystems können an den Modulgrenzen lokalisiert werden. Diese Organisationsmethode ermöglicht es, offene Designs von einer geometrischen Bibliothek zu einer experimentellen Wissensbasis weiterzuentwickeln."
+          },
+          {
+            "type": "h3",
+            "text": "Perfusion mit externen Systemen stabilisieren"
+          },
+          {
+            "type": "p",
+            "text": "Die nachhaltige Perfusion ist auf externe Geräte angewiesen. Die 2023 gestartete Forschung zur modularen Peristaltikpumpe integriert gedruckte mechanische Komponenten, Steuerelektronik und eine Benutzerschnittstelle zur Unterstützung von Durchflussrateneinstellungen und vorprogrammierten Durchflussmustern. [R4007] Der Forschungsschwerpunkt liegt auf steuerbaren Perfusionssystemen für alltägliche Experimente, wobei die Möglichkeit zur Benutzeranpassung und -einstellung in das Design integriert ist."
+          },
+          {
+            "type": "p",
+            "text": "Aus der Perspektive eines fluiddynamischen Experiments müssen die Sollwerte der Pumpe mit den tatsächlichen Umgebungsbedingungen im Chip korreliert werden. Die Elastizität der Rohrleitung, die Pumpenpulsation und der Widerstand des Bauteils bestimmen gemeinsam die Bedingungen, denen die Zelle oder der Tropfen ausgesetzt ist. Dies ermöglicht die synchrone Aufzeichnung von Antriebsmessungen und Chip-Auslesungen. Durch die Änderung des Antriebs bei gleichbleibendem Chip können Forscher zwischen geometriebedingten Strömungsunterschieden und durch externe Geräte verursachten Variationen unterscheiden."
+          },
+          {
+            "type": "p",
+            "text": "Die industrielle Chance, die der Knoten bietet, liegt in der Bereitstellung eines gedruckten Chips und eines benutzerfreundlichen Treibersystems für einen experimentellen Workflow. Anwender interessieren sich typischerweise vor allem dafür, ob Einstellungen gespeichert, der Betrieb reproduzierbar und die Verrohrung leicht austauschbar sind. Programmierbarkeit erfordert zudem offene Datenschnittstellen, um später Bildgebungs-, Sensor- und Ansteuerungssysteme anzuschließen; genau dies ist die Forschungsaufgabe von N8."
+          },
+          {
+            "type": "p",
+            "text": "Die Strömungsregelung bei Langzeitkulturen ist getrennt von kurzzeitiger Dosierung zu prüfen. Erstere betrifft anhaltende Schwankungen, Schlauchzustand und Umgebungseinflüsse, letztere das Volumen und Ansprechverhalten jeder Aktion. Beide Aufgaben können dieselbe Mechanik nutzen, benötigen aber unterschiedliche Kalibrierung und Dokumentation. Aufgabenbezogene Prüfungen ermöglichen klarere Konfigurationen derselben kostengünstigen Pumpe."
+          },
+          {
+            "type": "h3",
+            "text": "Unabhängige Kanäle und Automatisierungsschnittstellen"
+          },
+          {
+            "type": "p",
+            "text": "Die Open-Source-Mehrkanal-Schlauchpumpe 2025 kombiniert vier unabhängige Antriebskanäle, Schnellwechselkartuschen und eine SiLA-2-Schnittstelle. [R4008] Unabhängige Kanäle ermöglichen die Durchführung verschiedener Experimente mit unterschiedlichen Geschwindigkeiten; austauschbare Verbrauchsmaterialien gewährleisten die unabhängige Wartung der medienberührenden Teile; und die Softwareschnittstelle erlaubt die Integration des Geräts in größere automatisierte Systeme."
+          },
+          {
+            "type": "p",
+            "text": "verdeutlicht einen Forschungsschwerpunktwechsel von der geometrischen Fertigung hin zur Systemverwaltung. Im Multi-Chip-Betrieb benötigt jeder Kanal eigene Status- und Steuerungsprotokolle, und Abweichungen vom Normalablauf müssen dem jeweiligen Experiment zugeordnet werden können. Meldet das Gerät lediglich die Gesamtlaufzeit, lassen sich Umweltveränderungen für eine bestimmte Probe nur schwer erklären. Die Verknüpfung von Experimentidentität, Steuerbefehlen und Sensormesswerten ist daher unerlässlich für die Durchführung reproduzierbarer Parallelversuche."
+          },
+          {
+            "type": "p",
+            "text": "Der Rückkopplungspfad führt zurück zu N4: Unabhängige Steuerung kann zuvor durch Mittelwerte verdeckte Zweigunterschiede aufdecken und so das Design von Verteilern und Schnittstellen verbessern. Ein weiterer Rückkopplungspfad, von N5 zurück zu N3, konzentriert sich darauf, wie Zielverluste und Hintergrundrückstände in der Vorbehandlung durch Materialien und Verbinder beeinflusst werden. Dies bildet einen geschlossenen Kreislauf: Die Fertigung liefert die Struktur, Experimente verifizieren die Funktionalität, und Betriebsdaten bestimmen die nächste Runde von Struktur- und Wartungsplänen."
+          },
+          {
+            "type": "p",
+            "text": "Der unabhängige Kanal erweitert die Versuchsplanung um eine neue Steuerungsmethode: Unterschiedliche Durchflussprogramme lassen sich innerhalb desselben Systems gleichzeitig vergleichen, wobei die Messwerte jedes Zweigs gespeichert werden. Durch die Verknüpfung von Steuerung, Sensorik und Probenidentifizierung werden Anomalien nicht länger nur als Fehler betrachtet, sondern liefern wertvolle Hinweise für die Analyse von Strukturen, Rohrleitungen und Materialien. Dies ist ein wesentlicher Aspekt der Transformation der Geräteplattform von einem Ausführungswerkzeug zu einem Werkzeug für Forschungsfeedback."
+          }
+        ]
+      },
+      {
+        "title": "Produktwege",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Mikrofertigungsplattformen liefern Präzisionsbauteile. Ein versuchsfertiger Chip verlangt Material, Sichtbarkeit, Schnittstellen und wiederholbare Beschaffung. Fertigungszeit, Durchflussstreuung und Wartung je funktionsfähigem Gerät vergleichen. [R10] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Überschneidung von Patenten und Technologie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN115891150A nutzt Mikrofluidik zur Platzierung heterogener Materialien. CN116077230A behandelt einen biomimetischen Gefäßchip. Mikrofluidik ist Fertigungswerkzeug bzw. Gerätefunktion, mit unterschiedlichen Prüfgrößen für Materialplatzierung und Modellreproduktion. [R07] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Versuch und Bereitstellung verbinden",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Je Version Ist-Querschnitte, Dichtungsfehler, Start-Erfolg und Messausgabe erfassen. Bei gleicher Geometrie Material, Anschluss und Antrieb getrennt ändern, um Auffälligkeiten Bauteilen zuzuordnen. [R01] [R02] [R03]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick und Messgrößen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Offene Benchmarks zur Kanalgeometrie, Anschlussspezifikationen für wiederholte Nutzung und laborübergreifend reproduzierbare biologische oder optische Funktionen verfolgen. Die Einsatzausbeute unterscheidet feine Prototypen von lieferbaren Chips."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Biocompatible High-Resolution 3D-Printed Microfluidic Devices: Integrated Cell Chemotaxis Demonstration.",
+        "year": "2023",
+        "url": "https://doi.org/10.3390/mi14081589",
+        "kind": "paper",
+        "source": "10.3390/mi14081589"
+      },
+      {
+        "id": "R02",
+        "title": "Functional 3D Printing for Microfluidic Chips",
+        "year": "2019",
+        "url": "https://doi.org/10.1002/admt.201900275",
+        "kind": "paper",
+        "source": "10.1002/admt.201900275"
+      },
+      {
+        "id": "R03",
+        "title": "Direct 3D printed biocompatible microfluidics: assessment of human mesenchymal stem cell differentiation and cytotoxic drug screening in a dynamic culture system.",
+        "year": "2022",
+        "url": "https://doi.org/10.1186/s12951-022-01737-7",
+        "kind": "paper",
+        "source": "10.1186/s12951-022-01737-7"
+      },
+      {
+        "id": "R05",
+        "title": "High-resolution low-cost LCD 3D printing for microfluidics and organ-on-a-chip devices.",
+        "year": "2024",
+        "url": "https://doi.org/10.1039/d3lc01125a",
+        "kind": "paper",
+        "source": "10.1039/d3lc01125a"
+      },
+      {
+        "id": "R06",
+        "title": "Simple and Versatile 3D Printed Microfluidics Using Fused Filament Fabrication.",
+        "year": "2016",
+        "url": "https://doi.org/10.1371/journal.pone.0152023",
+        "kind": "paper",
+        "source": "10.1371/journal.pone.0152023"
+      },
+      {
+        "id": "R07",
+        "title": "3D printing device and method for bionic pixelated heterogeneous material based on microfluidic principle",
+        "year": "2023",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN115891150A",
+        "kind": "patent",
+        "source": "CN115891150A"
+      },
+      {
+        "id": "R10",
+        "year": "",
+        "title": "High-resolution 3D-printed components for microfluidics",
+        "url": "https://www.nanoscribe.com/en/applications-markets/3d-printed-microfluidics/",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R11",
+        "year": "",
+        "title": "microFAB-3D — Open 3D-microfabrication platform for research applications",
+        "url": "https://microlight3d.com/our-products/microfab-3d",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R12",
+        "year": "",
+        "title": "Bionic blood vessel chip and application thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN116077230A",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R4001",
+        "title": "3D-printing of transparent bio-microfluidic devices in PEG-DA",
+        "year": "2016",
+        "source": "Lab on a Chip",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27217203/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4002",
+        "title": "Engineering 3D parallelized microfluidic droplet generators with equal flow profiles by computational fluid dynamics and stereolithographic printing",
+        "year": "2020",
+        "source": "Lab on a Chip",
+        "url": "https://doi.org/10.1039/C9LC00980A",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4003",
+        "title": "3D-Printed Microfluidic Droplet Generator with Hydrophilic and Hydrophobic Polymers",
+        "year": "2021",
+        "source": "Micromachines",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7830873/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4005",
+        "title": "Fabrication of 3D-printed molds for polydimethylsiloxane-based microfluidic devices using a liquid crystal display-based vat photopolymerization process: printing quality, drug response and 3D invasion cell culture assays",
+        "year": "2023",
+        "source": "Microsystems & Nanoengineering",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10632127/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4006",
+        "title": "3D free-assembly modular microfluidics inspired by movable type printing",
+        "year": "2023",
+        "source": "Microsystems & Nanoengineering",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10495351/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4007",
+        "title": "A User-Centric 3D-Printed Modular Peristaltic Pump for Microfluidic Perfusion Applications",
+        "year": "2023",
+        "source": "Micromachines",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10222968/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4008",
+        "title": "An open-source peristaltic pump with multiple independent channels for laboratory automation",
+        "year": "2025",
+        "source": "Digital Discovery",
+        "url": "https://pubs.rsc.org/en/content/articlehtml/2025/dd/d5dd00157a",
+        "kind": "原始研究"
+      }
+    ]
+  }
+}

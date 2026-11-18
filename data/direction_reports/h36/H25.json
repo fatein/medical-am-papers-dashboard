@@ -1,0 +1,1850 @@
+{
+  "zh": {
+    "id": "H25",
+    "p": "P1",
+    "title": "医用金属增材制造、表面处理与生物学评价",
+    "subtitle": "从合金和粉末到成品表面的可追溯证据链",
+    "thesis": "金属植入物的力学和生物学表现由合金组织、构件几何及表面状态共同决定。把三者拆开测量，再在成品上重新组合，能够解释为什么类似粗糙度或孔隙率会产生不同结果。",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络图",
+      "summary": "低模量材料与多孔结构首先确定承载方案。之后把微观表面改性和化学状态分开测量，最后以实际器械的骨界面及质量控制重新约束合金、工艺和几何的选择。",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2022",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R02"
+          ],
+          "title": "先区分材料模量与结构刚度",
+          "question": "降低刚度是通过换合金还是改变几何？",
+          "evidence": "激光粉末床熔融 Ti-35Nb-7Zr-5Ta 提供与 Ti-6Al-4V 不同的低模量合金路线。"
+        },
+        {
+          "id": "N2",
+          "time": "2023–2025",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R06",
+            "R01"
+          ],
+          "title": "从试样走到承载构件",
+          "question": "薄网、连接筋和转角如何承受真实载荷？",
+          "evidence": "个体化牙槽钛网研究把机械性能与表面形貌放进同一产品几何，改性 Ti-6Al-4V 研究进一步连接表征和力学模型。"
+        },
+        {
+          "id": "N3",
+          "time": "2021",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R05"
+          ],
+          "title": "把表面改性作为对照变量",
+          "question": "处理方式如何改变骨细胞接触的界面？",
+          "evidence": "同类打印 Ti6Al4V 支架分别接受水热处理与微弧氧化，研究比较处理后的成骨相关反应。"
+        },
+        {
+          "id": "N4",
+          "time": "2022",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R03"
+          ],
+          "title": "拆分粗糙度与表面自由能",
+          "question": "细胞反应如何从处理名称追溯到表面读数？",
+          "evidence": "对后处理 Ti-6Al-4V 的研究着重辨别了表面自由能在生物相互作用中的作用。"
+        },
+        {
+          "id": "N5",
+          "time": "2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R04"
+          ],
+          "title": "给结构与涂层设置独立验证",
+          "question": "骨再生改进来自拓扑、涂层还是二者联用？",
+          "evidence": "一项多孔钛合金研究把拓扑优化与纳米羟基磷灰石涂层组合，用于增强骨再生。"
+        },
+        {
+          "id": "N6",
+          "time": "2022–2024",
+          "stage": 4,
+          "lane": 1,
+          "refs": [
+            "R11",
+            "R12",
+            "R13",
+            "R14"
+          ],
+          "title": "转入成品变更和放行",
+          "question": "同一工艺平台怎样处理不同解剖和固定方案？",
+          "evidence": "髋臼杯、颈椎融合器和有固定件的脊柱桁架形成了不同的成品路径。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "分配宏观载荷"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "确定骨侧界面"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "kind": "advance",
+          "label": "识别表面机制"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "加入矿物功能层"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "将几何纳入对照"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "验证最不利成品"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "kind": "feedback",
+          "label": "把失效位置反馈给网状几何"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "从合金到植入界面的三个尺度",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "致密本体承载，宏观孔道为骨和流体提供空间，处理后的表面决定局部细胞接触。按三个尺度布置表征，可以区分弹性匹配、实际孔道可及性与骨整合。低模量合金走的是材料路线，优化晶格走的是结构路线，二者的应力和失效应在同一适应部位分别判断。[R02] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 先区分材料模量与结构刚度"
+          },
+          {
+            "type": "p",
+            "text": "激光粉末床熔融 Ti-35Nb-7Zr-5Ta 提供与 Ti-6Al-4V 不同的低模量合金路线。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "材料试样的弹性模量用于解释本体变形，构件刚度还取决于外形、晶格和约束。按相同几何比较合金，再按相同合金比较致密与多孔样品，才能定位骨侧应变变化的来源。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 从试样走到承载构件"
+          },
+          {
+            "type": "p",
+            "text": "个体化牙槽钛网研究把机械性能与表面形貌放进同一产品几何，改性 Ti-6Al-4V 研究进一步连接表征和力学模型。 [R06] [R01]"
+          },
+          {
+            "type": "p",
+            "text": "网状外形的薄弱点往往在支柱连接处、锐角或螺钉固定邻域。把成品断裂位置与实际截面、内部缺陷和表面缺口对照，可以区分设计集中应力与工艺造成的薄弱点。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 把表面改性作为对照变量"
+          },
+          {
+            "type": "p",
+            "text": "同类打印 Ti6Al4V 支架分别接受水热处理与微弧氧化，研究比较处理后的成骨相关反应。 [R05]"
+          },
+          {
+            "type": "p",
+            "text": "固定基础合金和孔几何后，仍需要同时确认氧化层形貌、表面成分及其在内外孔壁的分布。只在平面试片测出的粗糙度难以代表处理作用能够进入多深。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 拆分粗糙度与表面自由能"
+          },
+          {
+            "type": "p",
+            "text": "对后处理 Ti-6Al-4V 的研究着重辨别了表面自由能在生物相互作用中的作用。 [R03]"
+          },
+          {
+            "type": "p",
+            "text": "形貌、润湿性和表面化学会共同变化。对比成分或纹理接近而表面能不同的样品，并记录处理后暴露与储存时间，才能提高归因质量。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 给结构与涂层设置独立验证"
+          },
+          {
+            "type": "p",
+            "text": "一项多孔钛合金研究把拓扑优化与纳米羟基磷灰石涂层组合，用于增强骨再生。 [R04]"
+          },
+          {
+            "type": "p",
+            "text": "宜设置基础结构、仅优化结构、仅涂层和组合结构四组，区分早期骨细胞附着、孔内骨长入与后期界面承载。用孔内截面和空间分区比用整件平均值更能解释结果。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 转入成品变更和放行"
+          },
+          {
+            "type": "p",
+            "text": "髋臼杯、颈椎融合器和有固定件的脊柱桁架形成了不同的成品路径。 [R11] [R12] [R13] [R14]"
+          },
+          {
+            "type": "p",
+            "text": "在共用材料和生产能力的同时，按承载部位、是否带独立固定件、表面可及性确定各器械最不利构型并验证，把失败处反馈至几何和后处理。"
+          },
+          {
+            "type": "h3",
+            "text": "相关实验的补充比较"
+          },
+          {
+            "type": "h3",
+            "text": "方向与后处理的材料状态"
+          },
+          {
+            "type": "p",
+            "text": "2020 年研究以垂直和水平两个方向打印 Ti6Al4V 试样，再组合热等静压、喷砂、抛光和化学蚀刻进行比较。不同构建方向的强度和延性表现不同，热等静压又改变了这种性能组合。该研究把“钛合金材料参数”具体化为某种制造方向及处理状态下的参数，为后续结构计算提供基础。[R1301]"
+          },
+          {
+            "type": "p",
+            "text": "同一研究进一步比较疲劳与表面形貌。热等静压后化学蚀刻的组合，在所测试方案中取得较好的疲劳表现，同时保持有利的细胞亲和性。由此形成的设计问题是：如何减少导致起裂的表面不规则，又保留组织接触所需的界面性质。疲劳与生物评价需要针对同一个最终表面状态开展。[R1301]"
+          },
+          {
+            "type": "p",
+            "text": "构建方向、内部组织和表面缺口可能分别影响屈服、延性与疲劳，因此材料不能仅以合金牌号进入设计模型。更有信息量的记录是每种方向和处理组合的性能分布，以及断裂从何处开始。若某处理改善延性但未消除关键表面缺口，循环承载的改善便需要另行检验。"
+          },
+          {
+            "type": "p",
+            "text": "N1向几何疲劳分支和腐蚀分支同时提供基础状态。研究中的最优组合是特定样件与处理范围的结果，扩展到薄杆和深孔时应先确认处理是否均匀，以及去除材料后尺寸是否仍满足设计。"
+          },
+          {
+            "type": "h3",
+            "text": "实际几何修正寿命预测"
+          },
+          {
+            "type": "p",
+            "text": "2023 年多孔牙种植体研究将疲劳实验与有限元模型结合，比较理想 CAD、微 CT 重建和修正后的 CAD 几何。制造偏差进入模型后，预测与实验之间的偏差明显改变。这说明疲劳计算中的关键输入不仅是材料强度，还包括实际支杆厚度、孔形和过渡区形状；设计图上的结构不一定等同于承受循环载荷的真实结构。[R1302]"
+          },
+          {
+            "type": "p",
+            "text": "预测模型的价值来自对独立构型的检验，而不是对已知试验曲线的重现。真实几何能揭示过厚、过薄和过渡区变化；修正CAD则尝试用较低数据处理成本保留主要误差。两者的选择应以预测失效位置和载荷能力为依据，并记录模型在新尺寸上是否需要重新校准。"
+          },
+          {
+            "type": "p",
+            "text": "这一节点向N3和N4传递一个约束：优化得到的形态需要能在现有工艺中实现。若优化解依赖极薄连接，其名义性能可能对制造波动格外敏感，应把尺寸不确定性加入计算，寻找具有余量的设计区间。"
+          },
+          {
+            "type": "h3",
+            "text": "表面残留与电化学行为"
+          },
+          {
+            "type": "p",
+            "text": "2022 年研究比较机加工与激光熔融 Ti6Al4V，结合显微形貌和多种电化学测试，考察酸蚀前后的表面。未熔颗粒较多的打印表面耐腐蚀表现较弱，酸蚀改善了测试样件的耐腐蚀性；磨平后两种制造方式的表现趋于接近。结果说明，评价差异时需要辨认它来自制造技术本身，还是来自不同最终表面状态。[R1307]"
+          },
+          {
+            "type": "p",
+            "text": "这一比较将表面残留从制造方式中分离出来。原始打印表面与磨平表面拥有不同有效面积和局部缺口，电化学结果应与相同归一方式、暴露面积及环境条件对应。否则一个较大电流可能同时反映更大的可接触面积与不同的表面反应，难以据此决定材料选择。"
+          },
+          {
+            "type": "p",
+            "text": "N5连接N1的表面形成过程，并向N6的组织比较提供统一表面基线。它也提示骨整合纹理与不稳定颗粒必须分别管理：前者属于设计功能，后者属于成品状态，需要用形貌和残留测量说明两者是否已经分离。"
+          },
+          {
+            "type": "h3",
+            "text": "热组织与腐蚀响应"
+          },
+          {
+            "type": "p",
+            "text": "2025 年研究对激光熔融、电子束熔融及后续热处理或热等静压的钛合金进行比较，同时观察显微组织、力学、电化学及涂层后的细胞表现。后处理改变材料组织和腐蚀指标，羟基磷灰石涂层又带来生物界面变化。由此可见，可靠的比较应记录完整加工链：同样的 Ti6Al4V 可以因组织和表面状态不同而表现不同。[R1308]"
+          },
+          {
+            "type": "p",
+            "text": "材料组织与表面保护层共同影响测试表现，因而不同工艺路线的比较应保留热历史、相组成和表面终态。细胞试验又可能针对涂层后的样件，与未涂层腐蚀试验属于不同状态；把两者联系时需要清楚说明加工顺序，以免把某一步的优点赋予整个流程。"
+          },
+          {
+            "type": "p",
+            "text": "这一节点向N7扩展到三维面积，向N8扩展到动态接触。两条路径分别询问更多暴露表面和表面反复破坏如何改变稳定性。将相同最终处理用于不同几何或材料配对，能减少跨论文比较中原料与状态不一致带来的解释困难。"
+          },
+          {
+            "type": "h3",
+            "text": "晶格面积与离子溶出"
+          },
+          {
+            "type": "p",
+            "text": "2025 年结构研究比较实体、晶格及混合 Ti6Al4V 试件，并将浸泡、电化学和计算分析延伸到植入物几何。结果将较大的晶格暴露面积和微观相间耦合与钛溶出联系起来。研究由平面材料试样推进到空间结构，提示骨长入设计也需要同时考虑总表面积、局部环境和材料稳定性。[R1309]"
+          },
+          {
+            "type": "p",
+            "text": "三维结构让材料稳定性的评价从单位平面扩展到完整器械。较大总表面积可能改变总释放量，而单位面积释放又反映局部状态；二者需要同时报告。深孔内外的交换条件也可能不同，平均溶液浓度不能直接描述最靠近组织界面的暴露。"
+          },
+          {
+            "type": "p",
+            "text": "从设计看，增加内部孔壁同时引入组织进入机会和更多材料接触面积。后续可在相近表面积下改变通路，在相近通路下改变表面处理，以识别几何与化学的贡献。该节点向N10提出清洁后再测的要求，避免残留粉末成为未记录的额外释放来源。"
+          },
+          {
+            "type": "h3",
+            "text": "粉末历史与化学追溯"
+          },
+          {
+            "type": "p",
+            "text": "2023 年牙根形钛植入物研究通过 X 射线光电子能谱比较新粉、重复使用粉末及相关表面化学状态。此类研究将制造记录从成形参数扩展到原料历史。对可靠性而言，需要进一步把表面化学、颗粒状态与成形质量连接，明确某种原料管理方式适用于怎样的生产路线。[R1313]"
+          },
+          {
+            "type": "p",
+            "text": "原料历史在几何生成之前进入证据链。表面化学相似只能回答该测量尺度上的问题，还需进一步联系颗粒状态、铺粉质量、成形缺陷与最终性能。由此，粉末批次、复用次数和筛分处理应与具体构件绑定，才能判断某次变化是否与材料输入相关。"
+          },
+          {
+            "type": "p",
+            "text": "N9向N2反馈的不是一个预设优劣结论，而是需要纳入模型与测试的生产变量。更有效的比较是在固定构建参数和后处理下改变原料历史，再测量关键缺陷及循环表现。只有建立这种对应，原料管理才可能从经验次数限制转向可验证的状态范围。"
+          },
+          {
+            "type": "h3",
+            "text": "内部清洁与成品验证"
+          },
+          {
+            "type": "p",
+            "text": "2026 年研究比较超声与结合振动、滚动的清粉方法，使用不同孔径的 Gyroid 结构及带封闭外壁的牙种植原型。小孔、长流出路径和封闭外形使清粉更困难；改变结构可帮助排粉，但也会影响力学完整性。研究把清洁从制造后的补救步骤，推进到孔道与承载设计需要共同满足的条件。[R1314]"
+          },
+          {
+            "type": "p",
+            "text": "FDA 2017 年增材制造医疗器械技术指导文件提出，应记录后处理及其对性能的影响，并针对复杂几何开展制造残留去除和灭菌验证。学术研究中分别观察到的材料、几何和清洁问题，在这里汇合为最终器械的评价任务。[R1316]"
+          },
+          {
+            "type": "p",
+            "text": "清洁完成后得到的才是性能验证所对应的器械。若去粉过程改变细杆、留下局部残留或使表面状态不同，前期疲劳与腐蚀结果就需要重新对应。对复杂内部结构，应把最难清洁位置与关键承载位置叠加，识别两种要求冲突的区域，并据此安排检查与工艺验证。"
+          },
+          {
+            "type": "p",
+            "text": "最终反馈可有两种方向：工艺能够在既有设计下稳定解决问题时，修订处理参数；若结构本身阻碍清洁，则返回孔道和支撑设计。两种路径都应复核疲劳、表面与尺寸，形成同一最终状态的连续证据。长期可靠性因而是制造与使用条件共同维持的结果。"
+          },
+          {
+            "type": "h3",
+            "text": "微纳与矿物信号"
+          },
+          {
+            "type": "p",
+            "text": "2018 年研究先以选择性激光熔融制备钛合金，再通过阳极氧化形成二氧化钛纳米管并引入羟基磷灰石。人原代成骨细胞和细胞系实验观察到蛋白吸附、细胞黏附与铺展改善，成熟相关基因也发生变化。这个步骤把打印形成的微观粗糙表面与后处理形成的纳米、化学信号组合起来，研究终点由“能制造”推进到“细胞如何响应”。[R1201]"
+          },
+          {
+            "type": "p",
+            "text": "该方法把形貌和化学放在同一界面，因而结果首先支持组合处理能够改变细胞接触环境。若要辨认主导因素，需要保留只有纳米管、只有矿物及二者组合的比较，并在相近有效表面积下解释吸附量。这样才能区分增加了可接触面积，还是单位面积的吸附与细胞反应发生变化。"
+          },
+          {
+            "type": "p",
+            "text": "这一节点向N2传递表面变量拆分的问题，也向N3提出体内界面验证任务。细胞铺展和成熟基因并不描述整个骨—材料连接；后续应将其对应到形成骨接触的位置与时间，识别哪些早期指标具有后续解释力。"
+          },
+          {
+            "type": "h3",
+            "text": "酸热处理拆分变量"
+          },
+          {
+            "type": "p",
+            "text": "2021 年酸处理与热处理研究比较激光熔融钛表面的状态，考察粗糙度、润湿性、磷灰石形成及前成骨细胞分化。联合处理改善了这些表面指标，并增强成骨相关基因表达。其价值在于建立处理过程与细胞变化的对应，而后续设计需要进一步辨认哪些变量真正支配效果，避免只凭单个粗糙度数值筛选工艺。[R1202]"
+          },
+          {
+            "type": "p",
+            "text": "处理路径的价值在于能够连续追踪一个成品表面经历的变化。相同酸处理后再增加加热步骤，可将某些形貌近似而化学不同的状态放在一起分析，使工艺名称成为可检验变量。后续比较还应保留处理残留、表面成分和细胞培养条件，避免将不同实验环境中的表达量直接排名。"
+          },
+          {
+            "type": "p",
+            "text": "与N1相比，处理方式更简单也不等于验证更简单。要走向深孔植入物，仍需要检查内外表面是否接受相同作用、处理后是否改变局部尺寸，以及储存后状态是否保持。N4的物理功能化提供另一条调节界面的路线，可以用共同终点作机制比较。"
+          },
+          {
+            "type": "h3",
+            "text": "异物反应阻隔骨连接"
+          },
+          {
+            "type": "p",
+            "text": "2023 年研究比较打印聚合物／羟基磷灰石复合支架与烧结羟基磷灰石支架。复合支架出现更强的异物反应；有纤维组织、巨噬细胞或异物巨细胞的界面区域未形成骨整合。研究还观察到骨先在孔内形成，再向支杆表面生长。由此，孔内骨量、直接骨接触和纤维包裹应分别记录，表面有细胞或孔内有骨不能替代完整的界面分析。[R1203]"
+          },
+          {
+            "type": "p",
+            "text": "该研究使界面分析具有空间分辨率：孔内骨与直接骨接触分属于不同区域，纤维组织还可能位于二者之间。一个总骨量数值会把这些状态合并，因此解释固定时应联合组织位置、界面组成和加载方向。对不同材料还需关注材料本身持续变化后，原先形成的连接是否被保留。"
+          },
+          {
+            "type": "p",
+            "text": "N1和N2提供细胞尺度的候选解释，N3则检验这些解释能否覆盖完整宿主反应。它向N8的免疫干预提出明确任务：先辨认哪类细胞与哪一阶段相关，再决定干预方向。抑制所有炎症或统一增加某一表型，都不能代替对疾病环境的具体分析。"
+          }
+        ]
+      },
+      {
+        "title": "企业技术与器械代际",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Lidakang 披露采用电子束熔融制造骨小梁髋臼杯。4WEB Medical 从脊柱桁架进一步扩展至颈椎一体化钢板方案与带锚定固定的前路构型，GS Medical 的 PYXIS 则提供另一条打印钛颈椎融合器的监管记录。髋臼靠壳体、骨界面和固定配合，脊柱器械需要把载荷路径、植入足印和固定组件一并验证。[R11] [R12] [R13] [R14]"
+          }
+        ]
+      },
+      {
+        "title": "专利机制与公开产品的交点",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN120055291A 从钛钽合金切入，CN122168943A 结合低模量 Ti-Nb 与多孔设计。两份公开文本共同指向对骨侧结构和材料的联合调节。产品端的打印钛融合器和髋臼杯表明多孔形貌可以固化为规格，合金路线扩展则需要新的本体性能、界面和成品数据。[R07] [R08] [R11] [R14]"
+          }
+        ]
+      },
+      {
+        "title": "什么实验能够改变设计选择",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "在同一表面处理下比较构建方向、薄壁尺寸和热处理，再在同一成品几何中测相同载荷下的寿命差异。生物学评价同时记录表面自由能、测试时点与孔内外空间位置。将断裂、孔堵塞或界面脱开逐一回配到成品图像，可把设计修改限定在真正的失效位置。[R01] [R03] [R05] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "2027–2029 年值得追踪的变化",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "近期有望形成更清晰的组合验证，覆盖粉末批次和再用记录、内部实际尺寸、孔内外表面一致性与疲劳。最有信息量的进展是同一系列器械在多个构型和制造批次重复验证，并把临床随访的翻修原因反馈到载荷与界面设计。"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Characterization and modeling of additively manufactured Ti-6Al-4V alloy with modified surfaces for medical applications.",
+        "year": "2025",
+        "url": "https://doi.org/10.3389/fbioe.2025.1526873",
+        "kind": "paper",
+        "source": "10.3389/fbioe.2025.1526873"
+      },
+      {
+        "id": "R02",
+        "title": "Laser Powder Bed Fusion Additive Manufacturing of a Low-Modulus Ti-35Nb-7Zr-5Ta Alloy for Orthopedic Applications.",
+        "year": "2022",
+        "url": "https://doi.org/10.1021/acsomega.1c06261",
+        "kind": "paper",
+        "source": "10.1021/acsomega.1c06261"
+      },
+      {
+        "id": "R03",
+        "title": "Surface Free Energy Dominates the Biological Interactions of Postprocessed Additively Manufactured Ti-6Al-4V.",
+        "year": "2022",
+        "url": "https://doi.org/10.1021/acsbiomaterials.2c00298",
+        "kind": "paper",
+        "source": "10.1021/acsbiomaterials.2c00298"
+      },
+      {
+        "id": "R04",
+        "title": "Topological optimization synergized with a high-activity nano-hydroxyapatite coating to enhance bone regeneration in a porous titanium alloy scaffold.",
+        "year": "2026",
+        "url": "https://doi.org/10.1093/rb/rbag090",
+        "kind": "paper",
+        "source": "10.1093/rb/rbag090"
+      },
+      {
+        "id": "R05",
+        "title": "Comparative Study on 3D Printed Ti6Al4V Scaffolds with Surface Modifications Using Hydrothermal Treatment and Microarc Oxidation to Enhance Osteogenic Activity.",
+        "year": "2021",
+        "url": "https://doi.org/10.1021/acsomega.0c05191",
+        "kind": "paper",
+        "source": "10.1021/acsomega.0c05191"
+      },
+      {
+        "id": "R06",
+        "title": "Enhancing the mechanical properties and surface morphology of individualized Ti-mesh fabricated through additive manufacturing for the treatment of alveolar bone defects.",
+        "year": "2023",
+        "url": "https://doi.org/10.3389/fbioe.2023.1284359",
+        "kind": "paper",
+        "source": "10.3389/fbioe.2023.1284359"
+      },
+      {
+        "id": "R07",
+        "title": "Novel titanium-tantalum alloy dental implant material as well as preparation method and application thereof",
+        "year": "2025",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120055291A",
+        "kind": "patent",
+        "source": "CN120055291A"
+      },
+      {
+        "id": "R08",
+        "title": "Low-modulus bioactive Ti-Nb alloy porous bone implant",
+        "year": "2026",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN122168943A",
+        "kind": "patent",
+        "source": "CN122168943A"
+      },
+      {
+        "id": "R11",
+        "title": "Lidakang — EBM additively manufactured trabecular acetabular cup",
+        "year": "2022",
+        "url": "https://lidakang.com/index.php/article/325.html",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R12",
+        "title": "4WEB Medical Announces Commercial Launch of its Cervical Spine Integrated Plating Solution",
+        "year": "2024",
+        "url": "https://www.prnewswire.com/news-releases/4web-medical-announces-commercial-launch-of-its-cervical-spine-integrated-plating-solution-302176216.html",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R1201",
+        "title": "Micro- and nano-structured 3D printed titanium implants with a hydroxyapatite coating for improved osseointegration",
+        "year": "2018",
+        "source": "Journal of Materials Chemistry B",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32254348/"
+      },
+      {
+        "id": "R1202",
+        "title": "Bioactivation Treatment with Mixed Acid and Heat on Titanium Implants Fabricated by Selective Laser Melting Enhances Preosteoblast Cell Differentiation",
+        "year": "2021",
+        "source": "Nanomaterials",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8069428/"
+      },
+      {
+        "id": "R1203",
+        "title": "Elucidating osseointegration in vivo in 3D printed scaffolds eliciting different foreign body responses",
+        "year": "2023",
+        "source": "Materials Today Bio",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10477687/"
+      },
+      {
+        "id": "R13",
+        "title": "FDA 510(k) K233966 — 4WEB Medical Anterior Spine Truss System",
+        "year": "2024",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K233966",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R1301",
+        "title": "Selective Laser Melting of Ti-6Al-4V: The Impact of Post-processing on the Tensile, Fatigue and Biological Properties for Medical Implant Applications",
+        "year": "2020",
+        "source": "Materials",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32580477/"
+      },
+      {
+        "id": "R1302",
+        "title": "Fatigue life of 3D-printed porous titanium dental implants predicted by validated finite element simulations",
+        "year": "2023",
+        "source": "Frontiers in Bioengineering and Biotechnology",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37636001/"
+      },
+      {
+        "id": "R1307",
+        "title": "Surface morphology, roughness, and corrosion resistance of dental implants produced by additive manufacturing",
+        "year": "2022",
+        "source": "Journal of Materials Research and Technology",
+        "kind": "原始研究",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2238785422016520"
+      },
+      {
+        "id": "R1308",
+        "title": "Effect of processing on microstructure, mechanical properties, corrosion and biocompatibility of additive manufacturing Ti-6Al-4V orthopaedic implants",
+        "year": "2025",
+        "source": "Scientific Reports",
+        "kind": "原始研究",
+        "url": "https://www.nature.com/articles/s41598-025-98349-6"
+      },
+      {
+        "id": "R1309",
+        "title": "Structural influence on titanium ion dissolution in 3D-printed Ti6Al4V orthopedic implants",
+        "year": "2025",
+        "source": "Scientific Reports",
+        "kind": "原始研究",
+        "url": "https://www.nature.com/articles/s41598-025-21129-9"
+      },
+      {
+        "id": "R1313",
+        "title": "Nanoscale Chemical Surface Analyses of Recycled Powder for Direct Metal Powder Bed Fusion Ti-6Al-4V Root Analog Dental Implant: An X-ray Photoelectron Spectroscopy Study",
+        "year": "2023",
+        "source": "Bioengineering",
+        "kind": "原始研究",
+        "url": "https://www.mdpi.com/2306-5354/10/3/379"
+      },
+      {
+        "id": "R1314",
+        "title": "Trapped powder removal from complex lattice structures with small macro pore sizes and dental implant application",
+        "year": "2026",
+        "source": "The International Journal of Advanced Manufacturing Technology",
+        "kind": "原始研究",
+        "url": "https://link.springer.com/article/10.1007/s00170-026-17457-3"
+      },
+      {
+        "id": "R1316",
+        "title": "Technical Considerations for Additive Manufactured Medical Devices",
+        "year": "2017",
+        "source": "FDA",
+        "kind": "监管指导文件",
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/technical-considerations-additive-manufactured-medical-devices"
+      },
+      {
+        "id": "R14",
+        "title": "FDA 510(k) K241738 — PYXIS 3D Titanium Cervical Cage System",
+        "year": "2024",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf24/K241738.pdf",
+        "kind": "dated_company_event",
+        "source": ""
+      }
+    ]
+  },
+  "en": {
+    "id": "H25",
+    "p": "P1",
+    "title": "Additive manufacturing, surface treatment and biological evaluation of medical metals",
+    "subtitle": "Tracing the evidence from alloy and powder to the finished surface",
+    "thesis": "The mechanical and biological performance of a metal implant depends on the alloy microstructure, component geometry and surface condition. Measuring them separately and reuniting them in the finished device explains why similar roughness or porosity can produce different outcomes.",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway",
+      "summary": "Low-modulus alloys and porous structures define the load-bearing concept. Surface morphology and chemistry are then measured separately, and finished-device assessment feeds back to alloy, process and geometry selection.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2022",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R02"
+          ],
+          "title": "Separate material modulus from structural stiffness",
+          "question": "Will stiffness be reduced by alloy selection or by geometry?",
+          "evidence": "Laser powder bed fusion of Ti-35Nb-7Zr-5Ta provides a low-modulus alloy route distinct from Ti-6Al-4V."
+        },
+        {
+          "id": "N2",
+          "time": "2023–2025",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R06",
+            "R01"
+          ],
+          "title": "Move from coupons to load-bearing components",
+          "question": "How do thin meshes, struts and corners carry actual loads?",
+          "evidence": "Studies of individualized alveolar titanium meshes relate mechanics to surface morphology in a specific device geometry. Work on modified Ti-6Al-4V links characterization to mechanical modelling."
+        },
+        {
+          "id": "N3",
+          "time": "2021",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R05"
+          ],
+          "title": "Treat surface modification as a controlled variable",
+          "question": "How does treatment change the interface encountered by bone cells?",
+          "evidence": "Hydrothermal treatment and micro-arc oxidation were compared on printed Ti6Al4V scaffolds using osteogenesis-related readouts."
+        },
+        {
+          "id": "N4",
+          "time": "2022",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R03"
+          ],
+          "title": "Separate roughness from surface free energy",
+          "question": "How can a cellular response be traced back to measurable surface properties?",
+          "evidence": "A study of postprocessed Ti-6Al-4V identified the contribution of surface free energy to biological interactions."
+        },
+        {
+          "id": "N5",
+          "time": "2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R04"
+          ],
+          "title": "Validate structure and coating independently",
+          "question": "Does improved bone repair arise from topology, coating or their combination?",
+          "evidence": "A porous titanium alloy study combined topology optimization with a nano-hydroxyapatite coating for bone regeneration."
+        },
+        {
+          "id": "N6",
+          "time": "2022–2024",
+          "stage": 4,
+          "lane": 1,
+          "refs": [
+            "R11",
+            "R12",
+            "R13",
+            "R14"
+          ],
+          "title": "Move to device changes and release",
+          "question": "How can a shared process platform support different anatomies and fixation concepts?",
+          "evidence": "Acetabular cups, cervical cages and spine trusses with fixation features represent different finished-device routes."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Distribute load"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Define bone interface"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Identify surface mechanism"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Add mineral coating"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Include geometry as a factor"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Verify worst-case product"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "kind": "feedback",
+          "label": "Feed failure locations back into mesh design"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Three scales from alloy to implant interface",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The dense bulk carries loads, macropores provide space for bone and fluid, and surface treatment determines local cell contact. Characterization across three scales distinguishes elastic matching, actual pore access and osseointegration. Low-modulus alloys and optimized lattices act at different scales and should be evaluated on their own stress and failure behavior at the same anatomical site. [R02] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathway and evidence by stage",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Separate material modulus from structural stiffness"
+          },
+          {
+            "type": "p",
+            "text": "Laser powder bed fusion of Ti-35Nb-7Zr-5Ta provides a low-modulus alloy route distinct from Ti-6Al-4V. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Coupon modulus explains deformation of the bulk material. Component stiffness also depends on overall shape, the lattice and boundary conditions. Compare alloys at fixed geometry, then dense and porous specimens within one alloy to isolate the origin of changes in bone strain."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Move from coupons to load-bearing components"
+          },
+          {
+            "type": "p",
+            "text": "Studies of individualized alveolar titanium meshes relate mechanics to surface morphology in a specific device geometry. Work on modified Ti-6Al-4V links characterization to mechanical modelling. [R06] [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Meshes can concentrate strain at strut junctions, sharp corners or screw interfaces. Matching the fracture location to as-built cross-sections, internal defects and surface notches separates design stress concentrations from manufacturing defects."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Treat surface modification as a controlled variable"
+          },
+          {
+            "type": "p",
+            "text": "Hydrothermal treatment and micro-arc oxidation were compared on printed Ti6Al4V scaffolds using osteogenesis-related readouts. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "With the base alloy and pore geometry held constant, characterize the oxide morphology, surface composition and distribution inside and outside the pores. Roughness on a flat coupon alone cannot resolve the depth reached by the treatment."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Separate roughness from surface free energy"
+          },
+          {
+            "type": "p",
+            "text": "A study of postprocessed Ti-6Al-4V identified the contribution of surface free energy to biological interactions. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Morphology, wettability and surface chemistry can vary together. Compare samples with similar composition or texture and distinct surface energy, and record exposure and storage after treatment to strengthen attribution."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Validate structure and coating independently"
+          },
+          {
+            "type": "p",
+            "text": "A porous titanium alloy study combined topology optimization with a nano-hydroxyapatite coating for bone regeneration. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "A four-arm design with baseline, topology only, coating only and combined groups can distinguish initial cell adhesion, ingrowth and later interfacial loading. Pore sections and spatially resolved measurements are more informative than a whole-device average."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Move to device changes and release"
+          },
+          {
+            "type": "p",
+            "text": "Acetabular cups, cervical cages and spine trusses with fixation features represent different finished-device routes. [R11] [R12] [R13] [R14]"
+          },
+          {
+            "type": "p",
+            "text": "Even on a shared material and manufacturing platform, verify worst-case configurations for load location, fixation features and surface access. Use failure locations to update geometry and finishing."
+          },
+          {
+            "type": "h3",
+            "text": "Related experimental comparisons"
+          },
+          {
+            "type": "h3",
+            "text": "Material state after build orientation and post-processing"
+          },
+          {
+            "type": "p",
+            "text": "A 2020 study printed Ti6Al4V specimens in vertical and horizontal orientations and compared combinations of hot isostatic pressing, sandblasting, polishing and chemical etching. Strength and ductility differed by build orientation, and hot isostatic pressing altered their combination. The study defined titanium-alloy properties for specific build orientations and treatment states, providing inputs for subsequent structural calculations. [R1301]"
+          },
+          {
+            "type": "p",
+            "text": "The same study further compared fatigue and surface morphology. The combination of hot isostatic pressing followed by chemical etching achieved better fatigue performance in the tested scheme while maintaining favorable cell affinity. The resulting design problem is: how to reduce surface irregularities that lead to crack initiation while preserving the interfacial properties required for tissue contact. Fatigue and bioassessment need to be conducted on the same final surface state. [R1301]"
+          },
+          {
+            "type": "p",
+            "text": "The orientation, internal microstructure, and surface notches can affect yield, ductility, and fatigue, respectively; therefore, a material cannot be included in a design model solely based on its alloy designation. More informative records are the performance distribution for each orientation and treatment combination, as well as where fracture initiation occurs. If a treatment improves ductility but does not eliminate critical surface notches, the improvement in cyclic loading needs further evaluation."
+          },
+          {
+            "type": "p",
+            "text": "N1 provides the basic conditions for both geometric fatigue and corrosion branches. The optimal combination in the study is the result of a specific sample and treatment range. When extending to thin struts and deep holes, it should be confirmed first whether the treatment is uniform and whether the dimensions still meet the design after material removal."
+          },
+          {
+            "type": "h3",
+            "text": "Correcting fatigue-life predictions using actual geometry"
+          },
+          {
+            "type": "p",
+            "text": "The 2023 study on porous dental implants combined fatigue experiments with finite element models, comparing ideal CAD, micro-CT reconstruction, and corrected CAD geometry. After manufacturing deviations were incorporated into the model, the discrepancy between predictions and experiments significantly changed. This indicates that key inputs in fatigue calculations include not only material strength but also actual support thickness, bore shape, and transition zone shape; the structure on the design drawing is not necessarily equivalent to the actual structure subjected to cyclic loads. [R1302]"
+          },
+          {
+            "type": "p",
+            "text": "The value of the predictive model comes from testing independent configurations, not from reproducing known test curves. Real geometry reveals overthickness, underthickness, and transition zone variations; modified CAD attempts to preserve key errors with lower data processing costs. The choice between the two should be based on predicting failure locations and load capacities, and whether the model needs recalibration on new dimensions should be recorded."
+          },
+          {
+            "type": "p",
+            "text": "The node imposes a constraint on N3 and N4: the optimized shape must be achievable using existing processes. If the optimized solution relies on extremely thin connections, its nominal performance may be particularly sensitive to manufacturing fluctuations; therefore, dimensional uncertainties should be factored into the calculations to find a design range with sufficient margin."
+          },
+          {
+            "type": "h3",
+            "text": "Surface residues and electrochemical behavior"
+          },
+          {
+            "type": "p",
+            "text": "The 2022 study compared machined and laser-melted Ti6Al4V, examining the surface before and after acid etching using microscopic morphology and various electrochemical tests. Printed surfaces with more unmelted particles showed weaker corrosion resistance, while acid etching improved the corrosion resistance of the test samples. After grinding, the performance of the two manufacturing methods became more similar. The results indicate that evaluating differences requires identifying whether they originate from the manufacturing technology itself or from different final surface states. [R1307]"
+          },
+          {
+            "type": "p",
+            "text": "This comparison separates surface residues from the manufacturing process. The original printed surface and the ground surface have different effective areas and localized gaps; the electrochemical results should correspond to the same normalization method, exposed area, and environmental conditions. Otherwise, a larger current might simultaneously reflect a larger accessible area and different surface reactions, making it difficult to determine material selection."
+          },
+          {
+            "type": "p",
+            "text": "N5 connects to the surface formation process of N1 and provides a unified surface baseline for the microstructure comparison of N6. It also suggests that texture and unstable particles must be managed separately: the former belongs to the design function, while the latter belongs to the finished product state, requiring morphological and residual measurements to demonstrate whether the two have been separated."
+          },
+          {
+            "type": "h3",
+            "text": "Thermal microstructure and corrosion response"
+          },
+          {
+            "type": "p",
+            "text": "The 2025 study compared titanium alloys treated with laser melting, electron beam melting, and subsequent heat treatment or hot isostatic pressing, while observing their microstructure, mechanical properties, electrochemical properties, and cellular behavior after coating. Post-treatment alters the material's microstructure and corrosion indices, and the hydroxyapatite coating introduces changes to the biological interface. This demonstrates that reliable comparisons should record the entire processing chain: the same Ti6Al4V can exhibit different characteristics depending on its microstructure and surface condition. [R1308]"
+          },
+          {
+            "type": "p",
+            "text": "The microstructure of the material and the surface protective layer both affect the test performance; therefore, comparisons of different process routes should retain thermal history, phase composition, and final surface state. Cellular assays may also target coated samples, which are in different states from uncoated corrosion tests; when linking the two, the processing sequence needs to be clearly explained to avoid attributing the advantages of one step to the entire process."
+          },
+          {
+            "type": "p",
+            "text": "This node extends to three-dimensional area at N7 and to dynamic contact at N8. The two paths respectively inquire how more exposed surface and repeated surface damage alter stability. Applying the same final treatment to different geometries or material pairings reduces the interpretative difficulties arising from inconsistencies between raw materials and states in cross-paper comparisons."
+          },
+          {
+            "type": "h3",
+            "text": "Lattice area and ion release"
+          },
+          {
+            "type": "p",
+            "text": "A 2025 structural study compared solid, lattice and hybrid Ti6Al4V specimens and extended immersion, electrochemical and computational analyses to implant geometry. Greater exposed lattice area and coupling between microscopic phases were associated with titanium dissolution. Moving from flat material specimens to three-dimensional structures shows that bone-ingrowth designs also require assessment of total surface area, local environment and material stability. [R1309]"
+          },
+          {
+            "type": "p",
+            "text": "The three-dimensional structure extends the evaluation of material stability from a unit plane to the entire device. A larger total surface area may alter the total release, while release per unit area reflects local conditions; both need to be reported simultaneously. Exchange conditions inside and outside deep pores may also differ, and average solution concentration cannot directly describe exposure closest to the tissue interface."
+          },
+          {
+            "type": "p",
+            "text": "Adding internal pore walls creates both opportunities for tissue entry and more material-contact area. Future work can vary pathways at similar surface areas and surface treatments at similar pathways to distinguish geometric and chemical contributions. This node requires reassessment after cleaning in N10 so that residual powder does not become an unrecorded additional release source."
+          },
+          {
+            "type": "h3",
+            "text": "Powder history and chemical traceability"
+          },
+          {
+            "type": "p",
+            "text": "2023 Root-shaped Titanium Implants Research compared virgin powder, reused powder, and related surface chemical states using X-ray photoelectron spectroscopy. This type of research extends the manufacturing record from molding parameters to raw material history. For reliability, further linking surface chemistry, particle state, and molding quality is needed to clarify which production routes are suitable for a particular raw material management approach. [R1313]"
+          },
+          {
+            "type": "p",
+            "text": "The raw material history of enters the chain of evidence before geometry is generated. Surface chemical similarity can only answer questions at this measurement scale; further consideration is needed regarding particle state, powder spreading quality, forming defects, and final properties. Therefore, powder batches, reuse counts, and sieving processes should be linked to specific components to determine whether a particular change is related to the material input."
+          },
+          {
+            "type": "p",
+            "text": "N9 supplies N2 with production variables for modelling and testing rather than a predetermined ranking. A stronger comparison varies raw-material history while holding build parameters and post-processing constant, then measures critical defects and cyclic performance. Such links could shift powder management from empirical limits on reuse count to verifiable ranges of material state."
+          },
+          {
+            "type": "h3",
+            "text": "Internal cleaning and final-product validation"
+          },
+          {
+            "type": "p",
+            "text": "A 2026 study compared ultrasonic depowdering with methods combining vibration and rolling, using Gyroid structures with different pore sizes and dental implant prototypes with closed outer walls. Small pores, long outflow paths and closed geometries made powder removal more difficult. Structural changes could improve powder evacuation but also affect mechanical integrity. Cleaning thus became a joint requirement for channel and load-bearing design rather than a remedial manufacturing step. [R1314]"
+          },
+          {
+            "type": "p",
+            "text": "FDA 2017 technical guidance document additive manufacturing for medical devices states that post-processing and its impact on performance should be documented, and validation of manufacturing residue removal and sterilization should be conducted for complex geometries. Material, geometric, and cleaning issues observed separately in academic studies converge here as the final device evaluation task. [R1316]"
+          },
+          {
+            "type": "p",
+            "text": "Only after cleaning is the device obtained for performance verification. If the powder removal process alters the thin strut, leaves localized residue, or changes the surface condition, the initial fatigue and corrosion results need to be recalculated. For complex internal structures, the most difficult-to-clean areas should be superimposed with critical load-bearing areas to identify areas where the two requirements conflict, and inspections and process verifications should be arranged accordingly."
+          },
+          {
+            "type": "p",
+            "text": "The final feedback can go in two directions: if the process can reliably solve the problem under the existing design, the processing parameters are revised; if the structure itself hinders cleaning, then the design of the ducts and supports is returned. Both paths should review fatigue, surface, and dimensions to form continuous evidence of the same final state. Long-term reliability is therefore the result of both manufacturing and usage conditions."
+          },
+          {
+            "type": "h3",
+            "text": "Micro/nanostructure and mineral signals"
+          },
+          {
+            "type": "p",
+            "text": "A 2018 study first manufactured titanium alloy by selective laser melting, then used anodization to form titanium dioxide nanotubes and introduced hydroxyapatite. Experiments with primary human osteoblasts and cell lines found improved protein adsorption, cell adhesion and spreading, together with changes in maturation-related gene expression. This combined printing-induced microroughness with nanoscale and chemical signals introduced by post-processing, moving the research question from manufacturability to cellular response. [R1201]"
+          },
+          {
+            "type": "p",
+            "text": "This method places morphology and chemistry at the same interface, thus the results initially support the ability of combined treatments to alter the cell contact environment. To identify the dominant factor, comparisons of nanotubes alone, minerals alone, and combinations of both are needed, and the amount of adsorption needs to be explained at similar effective surface areas. This allows for a distinction between increased contact area and changes in adsorption per unit area and cellular responses."
+          },
+          {
+            "type": "p",
+            "text": "The node passes the surface variable decomposition problem to N2 and also proposes the in vivo interface verification task to N3. Cell spreading and maturation genes do not describe the entire bone-material connection; they should be mapped to the location and time of bone contact formation to identify which early indicators have explanatory power."
+          },
+          {
+            "type": "h3",
+            "text": "Separating variables in acid and heat treatment"
+          },
+          {
+            "type": "p",
+            "text": "The 2021 study comparing acid treatment and heat treatment on laser-melted titanium surfaces examined roughness, wettability, apatite formation, and pre-osteoblast differentiation. The combined treatment improved these surface parameters and enhanced the expression of osteogenic-related genes. Its value lies in establishing a correlation between the treatment process and cellular changes; however, subsequent design requires further identification of which variables truly govern the effects, avoiding process selection based solely on a single roughness value. [R1202]"
+          },
+          {
+            "type": "p",
+            "text": "The value of the treatment path lies in its ability to continuously track changes experienced by the surface of a finished product. Adding a heating step after the same acid treatment allows for the analysis of states with similar morphologies but different chemistry, making the process name a testable variable. Subsequent comparisons should also retain treatment residues, surface components, and cell culture conditions to avoid directly ranking expression levels under different experimental environments."
+          },
+          {
+            "type": "p",
+            "text": "A simpler treatment than N1 does not necessarily require simpler validation. Application to implants with deep pores still requires checks that internal and external surfaces receive equivalent treatment, local dimensions are preserved, and the surface state remains stable during storage. Physical functionalization in N4 offers another route to interface regulation that can be compared mechanistically using common endpoints."
+          },
+          {
+            "type": "h3",
+            "text": "Foreign-body responses impede bone attachment"
+          },
+          {
+            "type": "p",
+            "text": "A 2023 study comparing printed polymer/hydroxyapatite composite scaffolds with sintered hydroxyapatite scaffolds showed that the composite scaffold exhibited a stronger foreign body reaction; interfacial regions containing fibrous tissue, macrophages, or foreign body giant cells did not form (osseointegration). The study also observed that bone first formed within the pores and then grew onto the strut surface. Therefore, the amount of bone within the pores, direct bone contact, and fibrous encapsulation should be recorded separately; the presence of cells on the surface or bone within the pores cannot replace complete interfacial analysis. [R1203]"
+          },
+          {
+            "type": "p",
+            "text": "This study enables spatial resolution in interface analysis: the bone within the pores and the direct bone contact belong to different regions, and fibrous tissue may also be located in between. A total bone mass value will incorporate these states, therefore, the interpretation of fixation should consider tissue location, interface composition, and loading direction. For different materials, it is also necessary to consider whether the originally formed connections are preserved after continuous changes in the material itself."
+          },
+          {
+            "type": "p",
+            "text": "N1 and N2 provide candidate interpretations at the cellular level, while N3 examines whether these interpretations can cover the complete host response. It sets a clear task for N8 immune intervention: first identify which cell type is associated with which stage, and then determine the direction of intervention. Suppressing all inflammation or uniformly increasing a certain phenotype cannot replace a specific analysis of the disease environment."
+          }
+        ]
+      },
+      {
+        "title": "Industrial technology and device generations",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Lidakang disclosed electron beam melting for its trabecular acetabular cup. 4WEB Medical expanded its spine truss concept to integrated cervical plating and an anchored anterior configuration. GS Medical’s PYXIS supplies a separate regulatory example for a printed titanium cervical cage. An acetabular cup relies on the shell, bone interface and fixation, while spine devices require joint verification of the load path, footprint and fixation components. [R11] [R12] [R13] [R14]"
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and their overlap with products",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN120055291A starts from a titanium–tantalum alloy and CN122168943A combines low-modulus Ti–Nb with porosity. The disclosures point to joint control of material and bone-facing structure. Printed titanium cages and acetabular cups show that porous geometry can be specified at product level. Extending that approach to another alloy calls for bulk, interface and finished-device data. [R07] [R08] [R11] [R14]"
+          }
+        ]
+      },
+      {
+        "title": "Experiments that can change design decisions",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Compare build directions, thin-wall dimensions and heat treatment under one surface protocol, then compare life at equal load in the same device geometry. Record surface free energy, timing and inner versus outer pore location in biological experiments. Register fractures, blocked pores and interface separation to device images to target the design changes. [R01] [R03] [R05] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "What to track in 2027–2029",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "More explicit combined validation is likely to cover powder batches and reuse, as-built internal dimensions, consistency across inner and outer surfaces and fatigue. Particularly informative progress would be verification across configurations and batches within one device family, with reasons for revision feeding back into load and interface design."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Characterization and modeling of additively manufactured Ti-6Al-4V alloy with modified surfaces for medical applications.",
+        "year": "2025",
+        "url": "https://doi.org/10.3389/fbioe.2025.1526873",
+        "kind": "paper",
+        "source": "10.3389/fbioe.2025.1526873"
+      },
+      {
+        "id": "R02",
+        "title": "Laser Powder Bed Fusion Additive Manufacturing of a Low-Modulus Ti-35Nb-7Zr-5Ta Alloy for Orthopedic Applications.",
+        "year": "2022",
+        "url": "https://doi.org/10.1021/acsomega.1c06261",
+        "kind": "paper",
+        "source": "10.1021/acsomega.1c06261"
+      },
+      {
+        "id": "R03",
+        "title": "Surface Free Energy Dominates the Biological Interactions of Postprocessed Additively Manufactured Ti-6Al-4V.",
+        "year": "2022",
+        "url": "https://doi.org/10.1021/acsbiomaterials.2c00298",
+        "kind": "paper",
+        "source": "10.1021/acsbiomaterials.2c00298"
+      },
+      {
+        "id": "R04",
+        "title": "Topological optimization synergized with a high-activity nano-hydroxyapatite coating to enhance bone regeneration in a porous titanium alloy scaffold.",
+        "year": "2026",
+        "url": "https://doi.org/10.1093/rb/rbag090",
+        "kind": "paper",
+        "source": "10.1093/rb/rbag090"
+      },
+      {
+        "id": "R05",
+        "title": "Comparative Study on 3D Printed Ti6Al4V Scaffolds with Surface Modifications Using Hydrothermal Treatment and Microarc Oxidation to Enhance Osteogenic Activity.",
+        "year": "2021",
+        "url": "https://doi.org/10.1021/acsomega.0c05191",
+        "kind": "paper",
+        "source": "10.1021/acsomega.0c05191"
+      },
+      {
+        "id": "R06",
+        "title": "Enhancing the mechanical properties and surface morphology of individualized Ti-mesh fabricated through additive manufacturing for the treatment of alveolar bone defects.",
+        "year": "2023",
+        "url": "https://doi.org/10.3389/fbioe.2023.1284359",
+        "kind": "paper",
+        "source": "10.3389/fbioe.2023.1284359"
+      },
+      {
+        "id": "R07",
+        "title": "Novel titanium-tantalum alloy dental implant material as well as preparation method and application thereof",
+        "year": "2025",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120055291A",
+        "kind": "patent",
+        "source": "CN120055291A"
+      },
+      {
+        "id": "R08",
+        "title": "Low-modulus bioactive Ti-Nb alloy porous bone implant",
+        "year": "2026",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN122168943A",
+        "kind": "patent",
+        "source": "CN122168943A"
+      },
+      {
+        "id": "R11",
+        "title": "Lidakang — EBM additively manufactured trabecular acetabular cup",
+        "year": "2022",
+        "url": "https://lidakang.com/index.php/article/325.html",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R12",
+        "title": "4WEB Medical Announces Commercial Launch of its Cervical Spine Integrated Plating Solution",
+        "year": "2024",
+        "url": "https://www.prnewswire.com/news-releases/4web-medical-announces-commercial-launch-of-its-cervical-spine-integrated-plating-solution-302176216.html",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R1201",
+        "title": "Micro- and nano-structured 3D printed titanium implants with a hydroxyapatite coating for improved osseointegration",
+        "year": "2018",
+        "source": "Journal of Materials Chemistry B",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32254348/"
+      },
+      {
+        "id": "R1202",
+        "title": "Bioactivation Treatment with Mixed Acid and Heat on Titanium Implants Fabricated by Selective Laser Melting Enhances Preosteoblast Cell Differentiation",
+        "year": "2021",
+        "source": "Nanomaterials",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8069428/"
+      },
+      {
+        "id": "R1203",
+        "title": "Elucidating osseointegration in vivo in 3D printed scaffolds eliciting different foreign body responses",
+        "year": "2023",
+        "source": "Materials Today Bio",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10477687/"
+      },
+      {
+        "id": "R13",
+        "title": "FDA 510(k) K233966 — 4WEB Medical Anterior Spine Truss System",
+        "year": "2024",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K233966",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R1301",
+        "title": "Selective Laser Melting of Ti-6Al-4V: The Impact of Post-processing on the Tensile, Fatigue and Biological Properties for Medical Implant Applications",
+        "year": "2020",
+        "source": "Materials",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32580477/"
+      },
+      {
+        "id": "R1302",
+        "title": "Fatigue life of 3D-printed porous titanium dental implants predicted by validated finite element simulations",
+        "year": "2023",
+        "source": "Frontiers in Bioengineering and Biotechnology",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37636001/"
+      },
+      {
+        "id": "R1307",
+        "title": "Surface morphology, roughness, and corrosion resistance of dental implants produced by additive manufacturing",
+        "year": "2022",
+        "source": "Journal of Materials Research and Technology",
+        "kind": "原始研究",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2238785422016520"
+      },
+      {
+        "id": "R1308",
+        "title": "Effect of processing on microstructure, mechanical properties, corrosion and biocompatibility of additive manufacturing Ti-6Al-4V orthopaedic implants",
+        "year": "2025",
+        "source": "Scientific Reports",
+        "kind": "原始研究",
+        "url": "https://www.nature.com/articles/s41598-025-98349-6"
+      },
+      {
+        "id": "R1309",
+        "title": "Structural influence on titanium ion dissolution in 3D-printed Ti6Al4V orthopedic implants",
+        "year": "2025",
+        "source": "Scientific Reports",
+        "kind": "原始研究",
+        "url": "https://www.nature.com/articles/s41598-025-21129-9"
+      },
+      {
+        "id": "R1313",
+        "title": "Nanoscale Chemical Surface Analyses of Recycled Powder for Direct Metal Powder Bed Fusion Ti-6Al-4V Root Analog Dental Implant: An X-ray Photoelectron Spectroscopy Study",
+        "year": "2023",
+        "source": "Bioengineering",
+        "kind": "原始研究",
+        "url": "https://www.mdpi.com/2306-5354/10/3/379"
+      },
+      {
+        "id": "R1314",
+        "title": "Trapped powder removal from complex lattice structures with small macro pore sizes and dental implant application",
+        "year": "2026",
+        "source": "The International Journal of Advanced Manufacturing Technology",
+        "kind": "原始研究",
+        "url": "https://link.springer.com/article/10.1007/s00170-026-17457-3"
+      },
+      {
+        "id": "R1316",
+        "title": "Technical Considerations for Additive Manufactured Medical Devices",
+        "year": "2017",
+        "source": "FDA",
+        "kind": "监管指导文件",
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/technical-considerations-additive-manufactured-medical-devices"
+      },
+      {
+        "id": "R14",
+        "title": "FDA 510(k) K241738 — PYXIS 3D Titanium Cervical Cage System",
+        "year": "2024",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf24/K241738.pdf",
+        "kind": "dated_company_event",
+        "source": ""
+      }
+    ]
+  },
+  "de": {
+    "id": "H25",
+    "p": "P1",
+    "title": "Additive Fertigung, Oberflächenbehandlung und biologische Bewertung medizinischer Metalle",
+    "subtitle": "Nachvollziehbare Evidenz vom Pulver und der Legierung bis zur fertigen Oberfläche",
+    "thesis": "Die mechanische und biologische Leistung eines Metallimplantats hängt vom Legierungsgefüge, der Bauteilgeometrie und dem Oberflächenzustand ab. Getrennte Messungen und ihre Zusammenführung am fertigen Bauteil erklären, weshalb ähnliche Rauheit oder Porosität unterschiedliche Ergebnisse liefern können.",
+    "questions": [],
+    "graph": {
+      "title": "Forschungspfad",
+      "summary": "Niedrigmodulige Legierungen und poröse Strukturen bestimmen das Tragkonzept. Oberflächenmorphologie und Chemie werden getrennt gemessen, die Prüfung des fertigen Bauteils wirkt auf die Auswahl von Legierung, Verfahren und Geometrie zurück.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2022",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R02"
+          ],
+          "title": "Werkstoffmodul und Bauteilsteifigkeit trennen",
+          "question": "Soll die Steifigkeit über die Legierung oder über die Geometrie sinken?",
+          "evidence": "Das Laser-Pulverbettverfahren mit Ti-35Nb-7Zr-5Ta bietet einen niedrigmoduligen Legierungsansatz neben Ti-6Al-4V."
+        },
+        {
+          "id": "N2",
+          "time": "2023–2025",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R06",
+            "R01"
+          ],
+          "title": "Vom Probekörper zum tragenden Bauteil",
+          "question": "Wie tragen dünne Gitter, Stege und Übergänge reale Lasten?",
+          "evidence": "Untersuchungen an individualisierten Titangittern für den Alveolarknochen verbinden Mechanik und Oberflächenmorphologie in einer konkreten Bauteilgeometrie. Arbeiten an modifiziertem Ti-6Al-4V verknüpfen Charakterisierung und mechanische Modellierung."
+        },
+        {
+          "id": "N3",
+          "time": "2021",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R05"
+          ],
+          "title": "Oberflächenmodifikation als kontrollierte Variable behandeln",
+          "question": "Wie verändert die Behandlung die Kontaktfläche für Knochenzellen?",
+          "evidence": "Hydrothermalbehandlung und Mikrolichtbogenoxidation wurden an gedruckten Ti6Al4V-Gerüsten anhand osteogenesebezogener Messgrößen verglichen."
+        },
+        {
+          "id": "N4",
+          "time": "2022",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R03"
+          ],
+          "title": "Rauheit und freie Oberflächenenergie trennen",
+          "question": "Wie lässt sich eine Zellreaktion auf messbare Oberflächeneigenschaften zurückführen?",
+          "evidence": "Eine Studie zu nachbearbeitetem Ti-6Al-4V untersuchte den Beitrag der freien Oberflächenenergie zu biologischen Wechselwirkungen."
+        },
+        {
+          "id": "N5",
+          "time": "2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R04"
+          ],
+          "title": "Struktur und Beschichtung getrennt validieren",
+          "question": "Beruht die verbesserte Knochenregeneration auf Topologie, Beschichtung oder deren Kombination?",
+          "evidence": "Eine Studie an poröser Titanlegierung kombinierte Topologieoptimierung mit einer Nano-Hydroxylapatit-Beschichtung zur Knochenregeneration."
+        },
+        {
+          "id": "N6",
+          "time": "2022–2024",
+          "stage": 4,
+          "lane": 1,
+          "refs": [
+            "R11",
+            "R12",
+            "R13",
+            "R14"
+          ],
+          "title": "Bauteiländerungen und Freigabe beurteilen",
+          "question": "Wie unterstützt eine gemeinsame Prozessplattform unterschiedliche Anatomien und Fixationskonzepte?",
+          "evidence": "Hüftpfannen, zervikale Cages und Wirbelsäulen-Trägerstrukturen mit Fixation stehen für unterschiedliche Bauteilpfade."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Lasten verteilen"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Knochenseitige Grenzfläche festlegen"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Oberflächenmechanismus bestimmen"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Mineralschicht ergänzen"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Geometrie als Faktor einbeziehen"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Ungünstigstes Bauteil prüfen"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "kind": "feedback",
+          "label": "Versagensorte ins Gitterdesign zurückführen"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Drei Maßstabsebenen von der Legierung zur Implantatgrenzfläche",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Das Vollmaterial trägt die Last, Makroporen schaffen Raum für Knochen und Flüssigkeit, und die Oberflächenbehandlung bestimmt den lokalen Zellkontakt. Charakterisierung auf drei Ebenen trennt elastische Anpassung, tatsächlichen Porenzugang und Osseointegration. Niedrigmodulige Legierungen und optimierte Gitter wirken auf unterschiedlichen Ebenen und sollten am gleichen Einsatzort hinsichtlich Spannung und Versagen einzeln bewertet werden. [R02] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungspfad und Evidenz je Station",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Werkstoffmodul und Bauteilsteifigkeit trennen"
+          },
+          {
+            "type": "p",
+            "text": "Das Laser-Pulverbettverfahren mit Ti-35Nb-7Zr-5Ta bietet einen niedrigmoduligen Legierungsansatz neben Ti-6Al-4V. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Der Elastizitätsmodul eines Probekörpers erklärt die Verformung des Vollmaterials. Die Bauteilsteifigkeit hängt zusätzlich von Außenform, Gitter und Lagerung ab. Ein Vergleich von Legierungen bei gleicher Geometrie und danach von dichten und porösen Proben derselben Legierung trennt die Ursachen veränderter Knochendehnung."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Vom Probekörper zum tragenden Bauteil"
+          },
+          {
+            "type": "p",
+            "text": "Untersuchungen an individualisierten Titangittern für den Alveolarknochen verbinden Mechanik und Oberflächenmorphologie in einer konkreten Bauteilgeometrie. Arbeiten an modifiziertem Ti-6Al-4V verknüpfen Charakterisierung und mechanische Modellierung. [R06] [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Bei Netzen kann sich Dehnung an Stegknoten, scharfen Übergängen oder Schraubanschlüssen konzentrieren. Die Zuordnung des Bruchorts zu Ist-Querschnitten, inneren Fehlstellen und Oberflächenkerben trennt konstruktive Spannungsspitzen von Fertigungsfehlern."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Oberflächenmodifikation als kontrollierte Variable behandeln"
+          },
+          {
+            "type": "p",
+            "text": "Hydrothermalbehandlung und Mikrolichtbogenoxidation wurden an gedruckten Ti6Al4V-Gerüsten anhand osteogenesebezogener Messgrößen verglichen. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Bei konstantem Grundwerkstoff und gleicher Porengeometrie sind Morphologie, Zusammensetzung und Verteilung der Oxidschicht innen und außen zu bestimmen. Die Rauheit eines ebenen Probekörpers allein erfasst die Eindringtiefe der Behandlung nicht."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Rauheit und freie Oberflächenenergie trennen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie zu nachbearbeitetem Ti-6Al-4V untersuchte den Beitrag der freien Oberflächenenergie zu biologischen Wechselwirkungen. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Morphologie, Benetzbarkeit und Oberflächenchemie können sich gemeinsam verändern. Proben ähnlicher Zusammensetzung oder Textur mit unterschiedlicher Oberflächenenergie und dokumentierter Lagerdauer nach der Behandlung verbessern die Zuordnung."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Struktur und Beschichtung getrennt validieren"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie an poröser Titanlegierung kombinierte Topologieoptimierung mit einer Nano-Hydroxylapatit-Beschichtung zur Knochenregeneration. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Vier Gruppen mit Grundstruktur, alleiniger Topologieoptimierung, alleiniger Beschichtung und Kombination können frühe Zelladhäsion, Einwachsen und spätere Grenzflächenbelastung trennen. Porenquerschnitte und räumlich aufgelöste Messungen sind aussagekräftiger als ein Mittelwert des gesamten Bauteils."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Bauteiländerungen und Freigabe beurteilen"
+          },
+          {
+            "type": "p",
+            "text": "Hüftpfannen, zervikale Cages und Wirbelsäulen-Trägerstrukturen mit Fixation stehen für unterschiedliche Bauteilpfade. [R11] [R12] [R13] [R14]"
+          },
+          {
+            "type": "p",
+            "text": "Auch bei gemeinsamer Material- und Fertigungsplattform sind ungünstigste Konfigurationen nach Lastort, Fixation und Oberflächenzugang zu prüfen. Versagensorte geben Rückmeldung an Konstruktion und Nachbearbeitung."
+          },
+          {
+            "type": "h3",
+            "text": "Ergänzende Versuchsvergleiche"
+          },
+          {
+            "type": "h3",
+            "text": "Materialzustand nach Bauorientierung und Nachbearbeitung"
+          },
+          {
+            "type": "p",
+            "text": "Die Studie aus dem Jahr 2020 druckte Ti6Al4V-Proben sowohl vertikal als auch horizontal und verglich anschließend die Ergebnisse verschiedener Bearbeitungsverfahren wie Heißisostatisches Pressen, Sandstrahlen, Polieren und chemisches Ätzen. Festigkeit und Duktilität zeigten je nach Fertigungsrichtung unterschiedliche Eigenschaften, wobei das Heißisostatische Pressen diese Eigenschaften zusätzlich veränderte. Die Studie konkretisierte die „Materialparameter der Titanlegierung“ und definierte sie als spezifische Parameter für eine bestimmte Fertigungsrichtung und einen bestimmten Verarbeitungszustand. Damit wurde eine Grundlage für nachfolgende Strukturberechnungen geschaffen. [R1301]"
+          },
+          {
+            "type": "p",
+            "text": "Dieselbe Studie verglich zudem Ermüdung und Oberflächenmorphologie. Die Kombination aus Heißisostatischem Pressen und anschließender chemischer Ätzung erzielte im getesteten Verfahren eine bessere Ermüdungsbeständigkeit bei gleichzeitiger Erhaltung einer günstigen Zellaffinität. Die sich daraus ergebende Konstruktionsfrage lautet: Wie lassen sich Oberflächenunregelmäßigkeiten, die zur Rissbildung führen, reduzieren, während gleichzeitig die für den Gewebekontakt erforderlichen Grenzflächeneigenschaften erhalten bleiben? Ermüdungs- und Biobewertung müssen am selben Endzustand der Oberfläche durchgeführt werden. [R1301]"
+          },
+          {
+            "type": "p",
+            "text": "Die Orientierung, das innere Gefüge und die Oberflächenkerben können Streckgrenze, Duktilität und Dauerfestigkeit beeinflussen; daher kann ein Werkstoff nicht allein aufgrund seiner Legierungsbezeichnung in ein Konstruktionsmodell einbezogen werden. Aussagekräftiger sind die Leistungsverteilung für jede Orientierungs- und Behandlungskombination sowie die Bruchinitiierungsstellen. Verbessert eine Behandlung die Duktilität, beseitigt aber nicht die kritischen Oberflächenkerben, muss die Verbesserung unter zyklischer Belastung weiter untersucht werden."
+          },
+          {
+            "type": "p",
+            "text": "N1 bietet die grundlegenden Voraussetzungen für die Untersuchung von geometrischer Ermüdung und Korrosion. Die optimale Kombination in der Studie ergibt sich aus einer spezifischen Probe und einem bestimmten Behandlungsbereich. Bei der Anwendung auf dünne Stäbe und tiefe Bohrungen muss zunächst geprüft werden, ob die Behandlung gleichmäßig ist und ob die Abmessungen nach dem Materialabtrag noch den Vorgaben entsprechen."
+          },
+          {
+            "type": "h3",
+            "text": "Lebensdauerprognose durch reale Geometrie korrigieren"
+          },
+          {
+            "type": "p",
+            "text": "Die Studie aus dem Jahr 2023 zu multiporösen Zahnimplantaten kombinierte Ermüdungsversuche mit Finite-Elemente-Modellen und verglich ideale CAD-Daten, Mikro-CT-Rekonstruktionen und korrigierte CAD-Geometrien. Nach Berücksichtigung von Fertigungstoleranzen im Modell veränderte sich die Diskrepanz zwischen Vorhersagen und Experimenten signifikant. Dies deutet darauf hin, dass neben der Materialfestigkeit auch die tatsächliche Stützdicke, die Bohrungsform und die Form der Übergangszone wichtige Eingangsgrößen für Ermüdungsberechnungen sind; die Struktur in der Konstruktionszeichnung entspricht nicht zwangsläufig der tatsächlichen, zyklisch belasteten Struktur. [R1302]"
+          },
+          {
+            "type": "p",
+            "text": "Der Wert des Vorhersagemodells beruht auf der Prüfung unabhängiger Konfigurationen, nicht auf der Reproduktion bekannter Testkurven. Die reale Geometrie offenbart Abweichungen in der Materialstärke (Über- und Unterdicke) sowie in der Übergangszone; modifizierte CAD-Systeme versuchen, wesentliche Fehler bei geringeren Datenverarbeitungskosten zu erhalten. Die Wahl zwischen den beiden Modellen sollte auf der Vorhersage von Versagensstellen und Tragfähigkeiten basieren. Zudem sollte dokumentiert werden, ob das Modell bei neuen Abmessungen neu kalibriert werden muss."
+          },
+          {
+            "type": "p",
+            "text": "Der Knoten stellt eine Einschränkung für N3 und N4 dar: Die optimierte Form muss mit bestehenden Prozessen realisierbar sein. Falls die optimierte Lösung auf extrem dünnen Verbindungen basiert, kann ihre Nennleistung besonders empfindlich auf Fertigungsschwankungen reagieren. Daher sollten Maßunsicherheiten in die Berechnungen einbezogen werden, um einen Auslegungsbereich mit ausreichendem Sicherheitsspielraum zu ermitteln."
+          },
+          {
+            "type": "h3",
+            "text": "Oberflächenrückstände und elektrochemisches Verhalten"
+          },
+          {
+            "type": "p",
+            "text": "Die Studie aus dem Jahr 2022 verglich maschinell bearbeitetes und lasergeschmolzenes Ti6Al4V. Die Oberfläche wurde vor und nach der Säureätzung mittels mikroskopischer Morphologie und verschiedener elektrochemischer Tests untersucht. Gedruckte Oberflächen mit einem höheren Anteil ungeschmolzener Partikel wiesen eine geringere Korrosionsbeständigkeit auf, während die Säureätzung die Korrosionsbeständigkeit der Proben verbesserte. Nach dem Schleifen glichen sich die Ergebnisse beider Herstellungsverfahren an. Die Ergebnisse deuten darauf hin, dass zur Bewertung von Unterschieden geklärt werden muss, ob diese auf die Fertigungstechnologie selbst oder auf unterschiedliche Oberflächenbeschaffenheiten zurückzuführen sind. [R1307]"
+          },
+          {
+            "type": "p",
+            "text": "Dieser Vergleich trennt Oberflächenrückstände vom Herstellungsprozess. Die ursprüngliche gedruckte Oberfläche und die geschliffene Oberfläche weisen unterschiedliche effektive Flächen und lokale Lücken auf; die elektrochemischen Ergebnisse sollten der gleichen Normierungsmethode, exponierten Fläche und Umgebungsbedingungen entsprechen. Andernfalls könnte ein höherer Strom gleichzeitig eine größere zugängliche Fläche und unterschiedliche Oberflächenreaktionen widerspiegeln, was die Materialauswahl erschwert."
+          },
+          {
+            "type": "p",
+            "text": "N5 knüpft an den Oberflächenbildungsprozess von N1 an und liefert eine einheitliche Oberflächenbasislinie für den Mikrostrukturvergleich von N6. Es legt außerdem nahe, dass Textur und instabile Partikel getrennt behandelt werden müssen: Erstere gehört zur Designfunktion, während letztere zum Zustand des fertigen Produkts gehört und morphologische sowie Restmessungen erfordert, um nachzuweisen, ob die beiden getrennt wurden."
+          },
+          {
+            "type": "h3",
+            "text": "Wärmebeeinflusste Mikrostruktur und Korrosion"
+          },
+          {
+            "type": "p",
+            "text": "Die Studie aus dem Jahr 2025 verglich Titanlegierungen, die mittels Laserschmelzen, Elektronenstrahlschmelzen und anschließender Wärmebehandlung oder Heißisostatischem Pressen behandelt wurden. Dabei wurden Mikrostruktur, mechanische und elektrochemische Eigenschaften sowie das Zellverhalten nach der Beschichtung untersucht. Die Nachbehandlung verändert die Mikrostruktur und die Korrosionseigenschaften des Materials, und die Hydroxylapatit-Beschichtung führt zu Veränderungen an der biologischen Grenzfläche. Dies zeigt, dass für zuverlässige Vergleiche die gesamte Prozesskette erfasst werden muss: Dasselbe Ti6Al4V kann je nach Mikrostruktur und Oberflächenbeschaffenheit unterschiedliche Eigenschaften aufweisen. [R1308]"
+          },
+          {
+            "type": "p",
+            "text": "Die Mikrostruktur des Materials und die Oberflächenschutzschicht beeinflussen die Testergebnisse. Daher sollten bei Vergleichen verschiedener Prozesswege die thermische Vorgeschichte, die Phasenzusammensetzung und der finale Oberflächenzustand berücksichtigt werden. Zelluläre Tests können auch beschichtete Proben umfassen, die sich in einem anderen Zustand befinden als unbeschichtete Proben in Korrosionstests. Bei der Verknüpfung beider Verfahren muss die Prozessfolge klar erläutert werden, um zu vermeiden, dass die Vorteile eines einzelnen Schrittes auf den gesamten Prozess übertragen werden."
+          },
+          {
+            "type": "p",
+            "text": "Dieser Knotenpunkt erweitert den dreidimensionalen Bereich bei N7 und den dynamischen Kontakt bei N8. Die beiden Ansätze untersuchen, wie sich eine größere exponierte Oberfläche und wiederholte Oberflächenbeschädigungen auf die Stabilität auswirken. Die Anwendung derselben Endbehandlung auf unterschiedliche Geometrien oder Materialpaarungen reduziert die Interpretationsschwierigkeiten, die sich aus Inkonsistenzen zwischen Rohmaterialien und Zuständen bei vergleichenden Studien ergeben."
+          },
+          {
+            "type": "h3",
+            "text": "Gitteroberfläche und Ionenfreisetzung"
+          },
+          {
+            "type": "p",
+            "text": "Eine Strukturstudie von 2025 verglich massive, gitterförmige und hybride Ti6Al4V-Proben und übertrug Immersion, elektrochemische Messungen und Berechnungen auf Implantatgeometrien. Größere exponierte Gitterflächen und die Kopplung zwischen mikroskopischen Phasen wurden mit Titanfreisetzung verknüpft. Der Schritt von ebenen Materialproben zu räumlichen Strukturen zeigt, dass Designs für Knocheneinwachsen Gesamtoberfläche, lokale Umgebung und Materialstabilität gemeinsam berücksichtigen müssen.[R1309]"
+          },
+          {
+            "type": "p",
+            "text": "Die dreidimensionale Struktur des erweitert die Bewertung der Materialstabilität von einer Einheitsfläche auf das gesamte Implantat. Eine größere Gesamtoberfläche kann die Gesamtfreisetzung beeinflussen, während die Freisetzung pro Flächeneinheit die lokalen Bedingungen widerspiegelt; beide Werte müssen gleichzeitig angegeben werden. Auch die Austauschbedingungen innerhalb und außerhalb tiefer Poren können unterschiedlich sein, und die durchschnittliche Lösungskonzentration kann die Exposition in unmittelbarer Nähe der Gewebegrenze nicht direkt beschreiben."
+          },
+          {
+            "type": "p",
+            "text": "Aus konstruktiver Sicht vergrößert die inneren Porenwände und schafft so gleichzeitig mehr Möglichkeiten für den Gewebeeintritt und eine größere Materialkontaktfläche. Weitere Modifikationen des Pfades können an ähnlichen Oberflächen vorgenommen und Oberflächenbehandlungen an ähnlichen Pfaden verändert werden, um geometrische und chemische Einflüsse zu identifizieren. Dieser Knoten muss vor der Prüfung mit N10 gereinigt werden, um zu verhindern, dass Pulverreste eine unbemerkte Quelle zusätzlicher Freisetzung darstellen."
+          },
+          {
+            "type": "h3",
+            "text": "Pulverhistorie und chemische Rückverfolgbarkeit"
+          },
+          {
+            "type": "p",
+            "text": "2023: Forschung zu wurzelförmigen Titanimplantaten verglich Neupulver, wiederverwendetes Pulver und die damit verbundenen oberflächenchemischen Zustände mittels Röntgenphotoelektronenspektroskopie. Diese Art von Forschung erweitert die Fertigungsdokumentation von den Formgebungsparametern auf die Rohmaterialhistorie. Für mehr Zuverlässigkeit ist es notwendig, Oberflächenchemie, Partikelzustand und Formgebungsqualität weiter zu verknüpfen, um zu klären, welche Produktionswege für einen bestimmten Ansatz im Rohmaterialmanagement geeignet sind. [R1313]"
+          },
+          {
+            "type": "p",
+            "text": "Die Rohstoffhistorie von fließt in die Beweiskette ein, bevor die Geometrie generiert wird. Die chemische Oberflächenähnlichkeit kann auf dieser Messskala nur Fragen beantworten; weitere Untersuchungen sind hinsichtlich Partikelzustand, Pulverstreuverhalten, Formfehlern und Endprodukteigenschaften erforderlich. Daher sollten Pulverchargen, Wiederverwendungszahlen und Siebprozesse mit spezifischen Komponenten verknüpft werden, um festzustellen, ob eine bestimmte Veränderung mit dem Materialeinsatz zusammenhängt."
+          },
+          {
+            "type": "p",
+            "text": "N9 liefert keine vordefinierte Schlussfolgerung hinsichtlich Überlegenheit oder Unterlegenheit gegenüber N2, sondern berücksichtigt Produktionsvariablen, die in das Modell und die Tests einbezogen werden müssen. Ein aussagekräftigerer Vergleich erfordert die Variation der Rohmaterialhistorie bei festgelegten Fertigungsparametern und Nachbearbeitung sowie die anschließende Messung wichtiger Defekte und der Zyklusleistung. Nur durch die Herstellung dieser Korrelation kann das Rohmaterialmanagement von erfahrungsbasierten Versuchen hin zu einem überprüfbaren Spektrum an Zuständen weiterentwickelt werden."
+          },
+          {
+            "type": "h3",
+            "text": "Innere Reinigung und Endproduktprüfung"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2026 verglich Ultraschallreinigung mit Kombinationen aus Vibration und Rollbewegung zur Pulverentfernung an Gyroidstrukturen verschiedener Porengrößen und dentalen Prototypen mit geschlossener Außenwand. Kleine Poren, lange Ausflusswege und geschlossene Formen erschwerten die Entpulverung. Strukturänderungen konnten die Pulverabfuhr erleichtern, aber auch die mechanische Integrität beeinflussen. Reinigung wurde so zu einer gemeinsamen Randbedingung von Kanal- und Tragwerksdesign.[R1314]"
+          },
+          {
+            "type": "p",
+            "text": "Die FDA-Leitlinie zu additiv gefertigten Medizinprodukten von 2017 empfiehlt die Dokumentation der Nachbearbeitung und ihrer Leistungseinflüsse sowie die Validierung von Rückstandsentfernung und Sterilisation bei komplexen Geometrien. Die in einzelnen Studien untersuchten Material-, Geometrie- und Reinigungsfragen münden damit in die Prüfung des fertigen Medizinprodukts.[R1316]"
+          },
+          {
+            "type": "p",
+            "text": "Erst nach der Reinigung wird das Instrument zur Leistungsüberprüfung entnommen. Falls die Pulverentfernung den dünnen Stab verändert, lokale Rückstände hinterlässt oder den Oberflächenzustand beeinflusst, müssen die ursprünglichen Ergebnisse der Ermüdungs- und Korrosionsprüfung neu berechnet werden. Bei komplexen internen Strukturen sollten die am schwierigsten zu reinigenden Bereiche mit kritischen, tragenden Bereichen überlagert werden, um Konfliktpunkte zwischen den beiden Anforderungen zu identifizieren. Inspektionen und Prozessüberprüfungen sind entsprechend anzupassen."
+          },
+          {
+            "type": "p",
+            "text": "Das abschließende Feedback kann in zwei Richtungen gehen: Kann der Prozess das Problem im Rahmen der bestehenden Konstruktion zuverlässig lösen, werden die Prozessparameter angepasst; behindert die Struktur selbst die Reinigung, wird die Konstruktion der Kanäle und Halterungen überarbeitet. In beiden Fällen sollten Ermüdung, Oberfläche und Abmessungen überprüft werden, um einen durchgängigen Nachweis des gleichen Endzustands zu erbringen. Die Langzeitzuverlässigkeit ist somit das Ergebnis sowohl der Fertigungs- als auch der Nutzungsbedingungen."
+          },
+          {
+            "type": "h3",
+            "text": "Mikro-/Nanotopographie und mineralische Signale"
+          },
+          {
+            "type": "p",
+            "text": "Die Studie aus dem Jahr 2018 stellte zunächst Titanlegierungen mittels selektivem Laserschmelzen her, formte anschließend Titandioxid-Nanoröhrchen durch anodische Oxidation und brachte Hydroxylapatit ein. Experimente mit humanen primären Osteoblasten und Zelllinien zeigten eine verbesserte Proteinadsorption, Zelladhäsion und -ausbreitung sowie Veränderungen in Reifungs-assoziierten Genen. Dieser Schritt kombiniert die durch den Druck erzeugte mikrostrukturierte Oberfläche mit den durch die Nachbearbeitung generierten Nano- und chemischen Signalen und erweitert so den Forschungsschwerpunkt von „Herstellung möglich“ zu „Wie reagieren Zellen?“. [R1201]"
+          },
+          {
+            "type": "p",
+            "text": "Diese Methode betrachtet Morphologie und Chemie an derselben Schnittstelle. Die Ergebnisse stützen daher zunächst die Annahme, dass kombinierte Behandlungen die Zellkontaktumgebung verändern können. Um den dominanten Faktor zu identifizieren, sind Vergleiche von Nanoröhren allein, Mineralien allein und Kombinationen beider erforderlich. Zudem muss die Adsorptionsmenge bei ähnlichen effektiven Oberflächen erklärt werden. Dies ermöglicht eine Unterscheidung zwischen vergrößerter Kontaktfläche und Veränderungen der Adsorption pro Flächeneinheit sowie zellulären Reaktionen."
+          },
+          {
+            "type": "p",
+            "text": "Der Knoten übergibt das Problem der Oberflächenvariablenzerlegung an N2 und schlägt außerdem die Schnittstellenverifizierungsaufgabe in vivo an N3 vor. Gene für Zellausbreitung und -reifung beschreiben nicht die gesamte Knochen-Material-Verbindung; sie sollten dem Ort und Zeitpunkt der Knochenkontaktbildung zugeordnet werden, um diejenigen frühen Indikatoren mit Erklärungskraft zu identifizieren."
+          },
+          {
+            "type": "h3",
+            "text": "Variablen durch Säure- und Wärmebehandlung trennen"
+          },
+          {
+            "type": "p",
+            "text": "Die Studie aus dem Jahr 2021, die Säurebehandlung und Wärmebehandlung lasergeschmolzener Titanoberflächen verglich, untersuchte Rauheit, Benetzbarkeit, Apatitbildung und die Differenzierung von Präosteoblasten. Die kombinierte Behandlung verbesserte diese Oberflächenparameter und verstärkte die Expression osteogener Gene. Ihr Wert liegt in der Etablierung eines Zusammenhangs zwischen dem Behandlungsprozess und den zellulären Veränderungen. Für die weitere Entwicklung ist jedoch eine genauere Identifizierung der tatsächlich bestimmenden Variablen erforderlich, um eine Prozessauswahl allein auf Basis eines einzelnen Rauheitswertes zu vermeiden. [R1202]"
+          },
+          {
+            "type": "p",
+            "text": "Der Wert des Behandlungspfads liegt in seiner Fähigkeit, Veränderungen an der Oberfläche eines Endprodukts kontinuierlich zu erfassen. Durch einen zusätzlichen Erhitzungsschritt nach der Säurebehandlung lassen sich Zustände mit ähnlicher Morphologie, aber unterschiedlicher chemischer Zusammensetzung analysieren, wodurch der Prozessname zu einer testbaren Variable wird. Bei nachfolgenden Vergleichen sollten zudem Behandlungsrückstände, Oberflächenkomponenten und Zellkulturbedingungen berücksichtigt werden, um eine direkte Rangfolge der Expressionsniveaus unter verschiedenen experimentellen Bedingungen zu vermeiden."
+          },
+          {
+            "type": "p",
+            "text": "Obwohl die Verarbeitung des einfacher ist als die des N1, bedeutet dies nicht automatisch eine einfachere Validierung. Für Tieflochimplantate muss weiterhin geprüft werden, ob die Innen- und Außenflächen die gleiche Behandlung erfahren, ob die Verarbeitung lokale Abmessungen verändert und ob der Zustand nach der Lagerung erhalten bleibt. Die physikalische Funktionalisierung des N4 bietet eine weitere Möglichkeit zur Regulierung der Grenzfläche und ermöglicht mechanistische Vergleiche anhand gemeinsamer Endpunkte."
+          },
+          {
+            "type": "h3",
+            "text": "Fremdkörperreaktionen behindern den Knochenkontakt"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2023 verglich gedruckte Polymer/Hydroxyapatit-Verbundgerüste mit gesinterten Hydroxyapatitgerüsten. Die Verbundgerüste lösten stärkere Fremdkörperreaktionen aus. In Grenzflächenbereichen mit fibrösem Gewebe, Makrophagen oder Fremdkörperriesenzellen kam es nicht zur Osseointegration. Knochen entstand zunächst in den Poren und wuchs anschließend zu den Strebenoberflächen. Knochenmenge in den Poren, direkter Knochenkontakt und fibröse Einkapselung müssen daher getrennt erfasst werden; Oberflächenzellen oder Knochen in den Poren ersetzen keine vollständige Grenzflächenanalyse.[R1203]"
+          },
+          {
+            "type": "p",
+            "text": "Diese Studie ermöglicht eine räumliche Auflösung in der Grenzflächenanalyse: Der Knochen innerhalb der Poren und der direkte Knochenkontakt gehören unterschiedlichen Bereichen an, und dazwischen kann sich auch Bindegewebe befinden. Ein Wert für die Gesamtknochenmasse berücksichtigt diese Zustände; daher sollte die Interpretation der Fixierung die Gewebelage, die Zusammensetzung der Grenzfläche und die Belastungsrichtung einbeziehen. Bei unterschiedlichen Materialien muss zudem geprüft werden, ob die ursprünglich gebildeten Verbindungen nach kontinuierlichen Materialveränderungen erhalten bleiben."
+          },
+          {
+            "type": "p",
+            "text": "N1 und N2 liefern mögliche Interpretationen auf zellulärer Ebene, während N3 untersucht, ob diese Interpretationen die gesamte Wirtsreaktion abdecken können. Es definiert eine klare Aufgabe für die Immunintervention in N8: Zunächst muss identifiziert werden, welcher Zelltyp mit welchem Stadium assoziiert ist, und anschließend muss die Interventionsrichtung festgelegt werden. Die Unterdrückung jeglicher Entzündung oder die einheitliche Steigerung eines bestimmten Phänotyps kann eine spezifische Analyse des Krankheitsmilieus nicht ersetzen."
+          }
+        ]
+      },
+      {
+        "title": "Industrietechnologie und Bauteilgenerationen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Lidakang dokumentierte Elektronenstrahlschmelzen für seine trabekuläre Hüftpfanne. 4WEB Medical erweiterte das Wirbelsäulen-Trägerkonzept um eine integrierte zervikale Platte und eine verankerte anteriore Ausführung. GS Medicals PYXIS liefert ein eigenes regulatorisches Beispiel für einen gedruckten zervikalen Titancage. Bei der Hüftpfanne wirken Schale, Knochenkontakt und Fixation zusammen. Bei Wirbelsäulenimplantaten sind Lastpfad, Auflagefläche und Fixationskomponenten gemeinsam zu prüfen. [R11] [R12] [R13] [R14]"
+          }
+        ]
+      },
+      {
+        "title": "Patentmechanismen und Schnittstellen zu Produkten",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN120055291A setzt bei einer Titan-Tantal-Legierung an. CN122168943A kombiniert niedrigmoduliges Ti-Nb mit Porosität. Beide Schriften adressieren die gemeinsame Steuerung von Werkstoff und knochenseitiger Struktur. Gedruckte Titancages und Hüftpfannen zeigen, dass poröse Geometrie als Produktspezifikation gefasst werden kann. Andere Legierungen erfordern neue Daten zu Vollmaterial, Grenzfläche und fertigem Bauteil. [R07] [R08] [R11] [R14]"
+          }
+        ]
+      },
+      {
+        "title": "Versuche mit Einfluss auf die Auslegung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Baurichtung, Dünnwandabmessung und Wärmebehandlung lassen sich unter gleichem Oberflächenprotokoll vergleichen. Es folgt der Lebensdauervergleich bei gleicher Last und Bauteilgeometrie. In biologischen Versuchen sind freie Oberflächenenergie, Zeitpunkt und Lage innerhalb bzw. außerhalb der Poren zu erfassen. Die Zuordnung von Bruch, blockierten Poren und Grenzflächenablösung zu Bauteilbildern lenkt Änderungen auf die betroffenen Stellen. [R01] [R03] [R05] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Beobachtungspunkte für 2027–2029",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Eine klarere kombinierte Validierung dürfte Pulvercharge und Wiederverwendung, innere Ist-Abmessungen, Konsistenz der Innen- und Außenflächen sowie Ermüdung erfassen. Besonders aufschlussreich ist die Prüfung mehrerer Ausführungen und Chargen einer Produktfamilie mit Rückführung klinischer Revisionsgründe in Last- und Grenzflächendesign."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Characterization and modeling of additively manufactured Ti-6Al-4V alloy with modified surfaces for medical applications.",
+        "year": "2025",
+        "url": "https://doi.org/10.3389/fbioe.2025.1526873",
+        "kind": "paper",
+        "source": "10.3389/fbioe.2025.1526873"
+      },
+      {
+        "id": "R02",
+        "title": "Laser Powder Bed Fusion Additive Manufacturing of a Low-Modulus Ti-35Nb-7Zr-5Ta Alloy for Orthopedic Applications.",
+        "year": "2022",
+        "url": "https://doi.org/10.1021/acsomega.1c06261",
+        "kind": "paper",
+        "source": "10.1021/acsomega.1c06261"
+      },
+      {
+        "id": "R03",
+        "title": "Surface Free Energy Dominates the Biological Interactions of Postprocessed Additively Manufactured Ti-6Al-4V.",
+        "year": "2022",
+        "url": "https://doi.org/10.1021/acsbiomaterials.2c00298",
+        "kind": "paper",
+        "source": "10.1021/acsbiomaterials.2c00298"
+      },
+      {
+        "id": "R04",
+        "title": "Topological optimization synergized with a high-activity nano-hydroxyapatite coating to enhance bone regeneration in a porous titanium alloy scaffold.",
+        "year": "2026",
+        "url": "https://doi.org/10.1093/rb/rbag090",
+        "kind": "paper",
+        "source": "10.1093/rb/rbag090"
+      },
+      {
+        "id": "R05",
+        "title": "Comparative Study on 3D Printed Ti6Al4V Scaffolds with Surface Modifications Using Hydrothermal Treatment and Microarc Oxidation to Enhance Osteogenic Activity.",
+        "year": "2021",
+        "url": "https://doi.org/10.1021/acsomega.0c05191",
+        "kind": "paper",
+        "source": "10.1021/acsomega.0c05191"
+      },
+      {
+        "id": "R06",
+        "title": "Enhancing the mechanical properties and surface morphology of individualized Ti-mesh fabricated through additive manufacturing for the treatment of alveolar bone defects.",
+        "year": "2023",
+        "url": "https://doi.org/10.3389/fbioe.2023.1284359",
+        "kind": "paper",
+        "source": "10.3389/fbioe.2023.1284359"
+      },
+      {
+        "id": "R07",
+        "title": "Novel titanium-tantalum alloy dental implant material as well as preparation method and application thereof",
+        "year": "2025",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120055291A",
+        "kind": "patent",
+        "source": "CN120055291A"
+      },
+      {
+        "id": "R08",
+        "title": "Low-modulus bioactive Ti-Nb alloy porous bone implant",
+        "year": "2026",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN122168943A",
+        "kind": "patent",
+        "source": "CN122168943A"
+      },
+      {
+        "id": "R11",
+        "title": "Lidakang — EBM additively manufactured trabecular acetabular cup",
+        "year": "2022",
+        "url": "https://lidakang.com/index.php/article/325.html",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R12",
+        "title": "4WEB Medical Announces Commercial Launch of its Cervical Spine Integrated Plating Solution",
+        "year": "2024",
+        "url": "https://www.prnewswire.com/news-releases/4web-medical-announces-commercial-launch-of-its-cervical-spine-integrated-plating-solution-302176216.html",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R1201",
+        "title": "Micro- and nano-structured 3D printed titanium implants with a hydroxyapatite coating for improved osseointegration",
+        "year": "2018",
+        "source": "Journal of Materials Chemistry B",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32254348/"
+      },
+      {
+        "id": "R1202",
+        "title": "Bioactivation Treatment with Mixed Acid and Heat on Titanium Implants Fabricated by Selective Laser Melting Enhances Preosteoblast Cell Differentiation",
+        "year": "2021",
+        "source": "Nanomaterials",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8069428/"
+      },
+      {
+        "id": "R1203",
+        "title": "Elucidating osseointegration in vivo in 3D printed scaffolds eliciting different foreign body responses",
+        "year": "2023",
+        "source": "Materials Today Bio",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10477687/"
+      },
+      {
+        "id": "R13",
+        "title": "FDA 510(k) K233966 — 4WEB Medical Anterior Spine Truss System",
+        "year": "2024",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K233966",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R1301",
+        "title": "Selective Laser Melting of Ti-6Al-4V: The Impact of Post-processing on the Tensile, Fatigue and Biological Properties for Medical Implant Applications",
+        "year": "2020",
+        "source": "Materials",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32580477/"
+      },
+      {
+        "id": "R1302",
+        "title": "Fatigue life of 3D-printed porous titanium dental implants predicted by validated finite element simulations",
+        "year": "2023",
+        "source": "Frontiers in Bioengineering and Biotechnology",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37636001/"
+      },
+      {
+        "id": "R1307",
+        "title": "Surface morphology, roughness, and corrosion resistance of dental implants produced by additive manufacturing",
+        "year": "2022",
+        "source": "Journal of Materials Research and Technology",
+        "kind": "原始研究",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2238785422016520"
+      },
+      {
+        "id": "R1308",
+        "title": "Effect of processing on microstructure, mechanical properties, corrosion and biocompatibility of additive manufacturing Ti-6Al-4V orthopaedic implants",
+        "year": "2025",
+        "source": "Scientific Reports",
+        "kind": "原始研究",
+        "url": "https://www.nature.com/articles/s41598-025-98349-6"
+      },
+      {
+        "id": "R1309",
+        "title": "Structural influence on titanium ion dissolution in 3D-printed Ti6Al4V orthopedic implants",
+        "year": "2025",
+        "source": "Scientific Reports",
+        "kind": "原始研究",
+        "url": "https://www.nature.com/articles/s41598-025-21129-9"
+      },
+      {
+        "id": "R1313",
+        "title": "Nanoscale Chemical Surface Analyses of Recycled Powder for Direct Metal Powder Bed Fusion Ti-6Al-4V Root Analog Dental Implant: An X-ray Photoelectron Spectroscopy Study",
+        "year": "2023",
+        "source": "Bioengineering",
+        "kind": "原始研究",
+        "url": "https://www.mdpi.com/2306-5354/10/3/379"
+      },
+      {
+        "id": "R1314",
+        "title": "Trapped powder removal from complex lattice structures with small macro pore sizes and dental implant application",
+        "year": "2026",
+        "source": "The International Journal of Advanced Manufacturing Technology",
+        "kind": "原始研究",
+        "url": "https://link.springer.com/article/10.1007/s00170-026-17457-3"
+      },
+      {
+        "id": "R1316",
+        "title": "Technical Considerations for Additive Manufactured Medical Devices",
+        "year": "2017",
+        "source": "FDA",
+        "kind": "监管指导文件",
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/technical-considerations-additive-manufactured-medical-devices"
+      },
+      {
+        "id": "R14",
+        "title": "FDA 510(k) K241738 — PYXIS 3D Titanium Cervical Cage System",
+        "year": "2024",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf24/K241738.pdf",
+        "kind": "dated_company_event",
+        "source": ""
+      }
+    ]
+  }
+}

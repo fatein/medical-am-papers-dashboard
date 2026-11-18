@@ -178,6 +178,10 @@ def public_package_files(root: Path) -> frozenset[str]:
     """Allow only validated released reports and the assets they actually reference."""
     from dashboard.academic_questions import load_released_reports
     files = set(PUBLIC_PACKAGE_FILES)
+    from dashboard.cross_data import H36_IDS, load_direction_classification
+    if load_direction_classification(Path(root)):
+        files.add('data/direction_reports/classification.json')
+        files.update(f'data/direction_reports/h36/{rid}.json' for rid in H36_IDS)
     library = load_released_reports(Path(root))
     if library is not None:
         files.add('data/academic_questions/release.json')
@@ -301,6 +305,10 @@ def validate_public_package(root: Path) -> dict:
         catalogue = json.loads((root/'data/i18n'/f'{language}.json').read_text(encoding='utf-8'))
         if not isinstance(catalogue, dict) or not catalogue or _contains_private_path(catalogue):
             raise ValueError(f'{language} 语言包无效或包含本机路径。')
+    from dashboard.direction_reports import validate_themed_reports
+    direction_count = validate_themed_reports(root, ids, len(combined))
+    if direction_count:
+        expected['direction_report_rows'] = direction_count
     expected['report_rows'] = len(reports['reports'])
     expected['enterprise_rows'] = len(companies)
     expected['enterprise_event_rows'] = len(events)

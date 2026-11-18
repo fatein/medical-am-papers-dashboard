@@ -58,17 +58,20 @@ def question_report_page(report: dict | None, question: dict | None, root: Path,
         return
     from .feedback_views import report_feedback
     report_feedback(report['question_id'],report['title'],'question',root,public_mode,version=report.get('updated_at',''))
+    from dashboard.direction_reports import localized_direction_title
+    from dashboard.i18n import language
+    direction = (localized_direction_title(root, question['direction_id'], language())
+                 if question and question.get('direction_id') else tr(report['direction']))
     st.markdown(REPORT_CSS, unsafe_allow_html=True)
     with st.container(key='report_reader'):
         st.markdown(
             '<div class="report-hero">'
-            f'<div class="report-breadcrumb">{html.escape(report["p"])} / {html.escape(tr(report["direction"]))} / {html.escape(report["question_id"])}</div>'
+            f'<div class="report-breadcrumb">{html.escape(report["p"])} / {html.escape(direction)} / {html.escape(report["question_id"])}</div>'
             f'<h1>{html.escape(tr(report["title"]))}</h1>'
             f'<div class="report-date">更新于 {html.escape(report["updated_at"])} · 资料截至 {html.escape(report["evidence_cutoff"])}</div>'
             f'<div class="report-lead">{html.escape(tr(report["core_finding"]))}</div></div>', unsafe_allow_html=True)
         toc = ''.join(f'<a href="#report-{s["id"]}" target="_self">{html.escape(tr(s["title"]))}</a>' for s in report['sections'])
         from dashboard.patent_report_views import patent_report_section,patent_section_title
-        from dashboard.i18n import language
         toc += f'<a href="#patent-evidence" target="_self">{html.escape(patent_section_title(language()))}</a>'
         toc += '<a href="#report-sources" target="_self">来源与相关档案</a>'
         st.markdown(f'<details class="report-mobile-toc"><summary>报告目录</summary><nav class="report-toc">{toc}</nav></details>',unsafe_allow_html=True)

@@ -1,0 +1,1016 @@
+{
+  "zh": {
+    "id": "H11",
+    "p": "P4",
+    "title": "牙移植及牙髓外科个体化辅助器具",
+    "subtitle": "分开验证供牙复制、受区适配和根尖通路",
+    "thesis": "在自体牙移植，复制件的价值体现在减少真实供牙反复试放。根尖外科导板则要把接触面稳定性转换为接近靶点的通路。两类装置应分别连接早期几何与后期牙齿和组织结果。",
+    "questions": [],
+    "graph": {
+      "title": "供牙复制和静态导向的两套证据链",
+      "summary": "影像输入分为供牙几何与根尖定位。不同器具在对照台架和病例中检验，结果反馈几何容差。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2024–2026",
+          "refs": [
+            "R02",
+            "R05"
+          ],
+          "title": "分割根形与邻近结构",
+          "question": "哪些根和邻近结构必须保留？",
+          "evidence": "供牙的根长、弯曲和根尖发育程度决定复制对象。外科导向还依赖靶点和邻近结构的相对位置。"
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2025",
+          "refs": [
+            "R02",
+            "R04"
+          ],
+          "title": "用复制件检验受区匹配",
+          "question": "复制件能否减少供牙试配？",
+          "evidence": "试配可先在数字模型与替代牙上进行。临床病例报告用打印复制件后，真实供牙离体不足一分钟。"
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2025–2026",
+          "refs": [
+            "R01",
+            "R09"
+          ],
+          "title": "用导板约束根尖通路",
+          "question": "如何把目标传到骨窗或根尖？",
+          "evidence": "根尖外科研究分别使用骨窗导向或套筒导向，将骨面和牙面接触连接到计划的靶点。"
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 0,
+          "time": "2025",
+          "refs": [
+            "R03"
+          ],
+          "title": "在体外比较器具的定位贡献",
+          "question": "固定方式会改变切面还是长度？",
+          "evidence": "意向再植研究在体外检验打印术中辅助器。体外位置测量可用于区分器具几何和操作者差异。"
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 2,
+          "time": "2025–2026",
+          "refs": [
+            "R01",
+            "R09"
+          ],
+          "title": "测靶点偏差和骨保留",
+          "question": "入口、角度和深度各有多大误差？",
+          "evidence": "病例与可行性研究将导板就位、取骨区和病灶通路联系。还可用对照区分接触面误差、器械间隙和达到位置。"
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025–2026",
+          "refs": [
+            "R02",
+            "R04",
+            "R09"
+          ],
+          "title": "按牙齿和组织随访",
+          "question": "早期几何结果如何连接后期愈合？",
+          "evidence": "单例自体移植记录 12 个月临床与影像随访。在扩大样本时分别报告牙保留、根吸收、愈合及额外治疗。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "将供牙形态转移到复制件"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "把靶点转换为导向"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "比较器具与操作"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "检验导航几何与保骨"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "在同类病例中观察愈合"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "连到临床结果"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "失配与再干预反馈设计"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究对象与评价边界",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "牙移植用替代牙检验真实供牙受区的匹配，而根尖外科用几何导向保留邻近结构。把器械角色写清后，可区分离体时间、根尖目标转移和随访牙保留三个结果。 [R01] [R02] [R03]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与研究解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "分割根形与邻近结构"
+          },
+          {
+            "type": "p",
+            "text": "供牙的根长、弯曲和根尖发育程度决定复制对象。外科导向还依赖靶点和邻近结构的相对位置。 [R02] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "用复制件检验受区匹配"
+          },
+          {
+            "type": "p",
+            "text": "试配可先在数字模型与替代牙上进行。临床病例报告用打印复制件后，真实供牙离体不足一分钟。 [R02] [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "用导板约束根尖通路"
+          },
+          {
+            "type": "p",
+            "text": "根尖外科研究分别使用骨窗导向或套筒导向，将骨面和牙面接触连接到计划的靶点。 [R01] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "在体外比较器具的定位贡献"
+          },
+          {
+            "type": "p",
+            "text": "意向再植研究在体外检验打印术中辅助器。体外位置测量可用于区分器具几何和操作者差异。 [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "测靶点偏差和骨保留"
+          },
+          {
+            "type": "p",
+            "text": "病例与可行性研究将导板就位、取骨区和病灶通路联系。还可用对照区分接触面误差、器械间隙和达到位置。 [R01] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "按牙齿和组织随访"
+          },
+          {
+            "type": "p",
+            "text": "单例自体移植记录 12 个月临床与影像随访。在扩大样本时分别报告牙保留、根吸收、愈合及额外治疗。 [R02] [R04] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "报道的供牙病例为 12 岁患者，牙根尚未发育完全。研究采用 FDM 复制、报告 0.1 mm 切片层高，并用成品与 STL 对照。层高对应加工采样，复制误差还取决于分割、边缘修整及材料形变。低于一分钟的离体结果应与供牙阶段、复杂度和操作者经验一起记录。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "牙根尖靶点偏差应分为入口点、角度、实际深度和骨窗边界。入口准确仍可能伴随末端角差。与徒手或导航的研究应同时关注计划完成率、实际骨量和根端处理后的愈合。 [R01] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "意向再植体外研究纳入 22 颗下颌前磨牙和 18 颗下颌磨牙。打印辅助组的根尖切除角度偏差较小，切除长度、倒预备角度和操作时间的差异未达统计显著。结果指向稳定固定对切面方向的作用。牙体冠部贴合面积和材料刚度可作为下一轮对照变量。 [R03]"
+          },
+          {
+            "type": "p",
+            "text": "院内静态导板概念验证纳入 6 位患者、9 个牙根，记录骨开窗面积 20–93 mm²，手术耗时 40–102 分钟，6 个月完全愈合 4 人，其余 2 人到 12 个月完全愈合。后牙视野、病灶大小和骨壁条件会影响比较，宜在同类型病例中将开窗几何与影像愈合按时间分别报告。 [R09]"
+          }
+        ]
+      },
+      {
+        "title": "企业技术与服务路线",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Endo Guides 将根尖切除导板作为设计与制造服务，Formlabs 提供口内导板材料及验证工作流。服务负责病例几何和版本，材料系统负责可复验的成品质量。院内概念验证论文实例记录了所用 Shining 3D SG01，连接了通用导板材料和专科应用。 [R09] [R10] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "专利设计与制造接口",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN119950065A 针对严重骨缺损的自体牙移植辅助；CN107802358A 与 CN108618854A 分别聚焦影像型根尖手术导向与数字设计制造。研究可将受区适配与目标传递分成两套实物测试。 [R06] [R07] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "学术与产业的结合点",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "在交付件上标注与病例版本配套的接触方式和关键测量点，临床端再统一收集就位顺利度、重复试放、离体时间和后续牙保留。通过同一病例编号关联成品与随访，识别器具变化是否解释结果分歧。 [R02] [R03] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "未来演进与验证指标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "后续应优先建立按根发育和病例复杂度分层的比较队列。观察一次就位、位置偏差、骨窗面积、术后处理与长期牙保留，并记录病例是否实际使用了计划器具。 [R01] [R02] [R04] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Preserving Natural Bone With Bone Window Guided Endodontic Surgery Utilizing a Piezoelectric Device: Case Reports of Two Molars.",
+        "url": "https://doi.org/10.1155/crid/3731270",
+        "year": "2026",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "Template-Guided Autogenous Tooth Transplantation Using a CAD/CAM Dental Replica in a Complex Anatomical Scenario: A Case Report.",
+        "url": "https://doi.org/10.3390/dj13070281",
+        "year": "2025",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "An in vitro study of a novel intraoperative 3D-printed device for intentional replantation.",
+        "url": "https://doi.org/10.1186/s12903-025-07422-z",
+        "year": "2025",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Application of computer-aided design combined with 3-dimensional-printed guide in tooth autotransplantation: a case report.",
+        "url": "https://doi.org/10.1186/s12903-025-07459-0",
+        "year": "2026",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "A Novel Diagnostic and Treatment Approach to an Unusual Case of Dens Invaginatus in a Mandibular Lateral Incisor Using CBCT and 3D Printing Technology.",
+        "url": "https://doi.org/10.3390/dj12040107",
+        "year": "2024",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "Method and auxiliary equipment for repairing missing tooth with severe bone defect by autogenous tooth transplantation",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119950065A",
+        "year": "2025",
+        "source": "Espacenet",
+        "id": "R06"
+      },
+      {
+        "title": "CT type endodontic surgery guide plate and applications thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN107802358A",
+        "year": "2018",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "Digital endodontic surgery guide plate and applications thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN107802357A",
+        "year": "2018",
+        "source": "Espacenet",
+        "id": "R08"
+      },
+      {
+        "title": "Endodontic surgery using 3D-guides in-house manufacturing and trephine burs for osteotomy and root-end resection: a proof-of-concept clinical study",
+        "url": "https://doi.org/10.1007/s00784-025-06660-3",
+        "year": "2025",
+        "source": "Clinical Oral Investigations",
+        "id": "R09"
+      },
+      {
+        "title": "Endo Guides",
+        "url": "https://www.endoguides.com/",
+        "year": "2026",
+        "source": "Endo Guides",
+        "id": "R10"
+      },
+      {
+        "title": "Digital designing and manufacturing method for apical surgery guide plate",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN108618854A",
+        "year": 2018,
+        "source": "Espacenet",
+        "id": "R11"
+      },
+      {
+        "title": "Surgical Guide Resin and validated digital workflow",
+        "url": "https://dental.formlabs.com/global/products/surgical-guide-resin/",
+        "year": "2026访问",
+        "source": "Formlabs Dental",
+        "id": "R12"
+      }
+    ]
+  },
+  "en": {
+    "id": "H11",
+    "p": "P4",
+    "title": "Patient-specific aids for tooth transplantation and endodontic surgery",
+    "subtitle": "Verify donor replication, recipient fit and apical access separately",
+    "thesis": "A replica in tooth autotransplantation can reduce trial placement of the donor. An apical guide must convert stable seating into access near the target. Each device requires a separate link between early geometry and later tooth and tissue outcomes.",
+    "questions": [],
+    "graph": {
+      "title": "Distinct evidence pathways for donor replication and static guidance",
+      "summary": "Imaging branches into donor geometry and apical localization. Each aid is assessed in bench comparisons and cases, with outcomes informing tolerances.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2024–2026",
+          "refs": [
+            "R02",
+            "R05"
+          ],
+          "title": "Segment root shape and nearby structures",
+          "question": "Which root features and neighboring structures must be retained?",
+          "evidence": "Root length, curvature and apical development define the donor replica. Surgical guidance also depends on the target's location relative to neighboring structures."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2025",
+          "refs": [
+            "R02",
+            "R04"
+          ],
+          "title": "Assess recipient fit with a replica",
+          "question": "Can a replica reduce donor trial insertions?",
+          "evidence": "Fit can be examined in the digital model and with a replica. A clinical case reported less than one minute of extraoral time with the actual donor after replica-assisted preparation."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2025–2026",
+          "refs": [
+            "R01",
+            "R09"
+          ],
+          "title": "Constrain apical access with a guide",
+          "question": "How is the target transferred to the bone window or apex?",
+          "evidence": "Apical surgery studies use bone-window or sleeve-based guidance linking bone or tooth support to a planned target."
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 0,
+          "time": "2025",
+          "refs": [
+            "R03"
+          ],
+          "title": "Compare localization contribution in vitro",
+          "question": "Does stabilization affect the plane or resection length?",
+          "evidence": "An intentional replantation study tested a printed intraoperative aid in vitro. Bench positioning measurements help separate device geometry from operator variability."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 2,
+          "time": "2025–2026",
+          "refs": [
+            "R01",
+            "R09"
+          ],
+          "title": "Measure target deviation and bone preservation",
+          "question": "How much error arises at entry, angle and depth?",
+          "evidence": "Cases and feasibility studies link guide seating, the bone window and access to the lesion. Comparisons can distinguish support error, instrument clearance and achieved position."
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025–2026",
+          "refs": [
+            "R02",
+            "R04",
+            "R09"
+          ],
+          "title": "Follow tooth and tissue outcomes",
+          "question": "How does early geometry relate to later healing?",
+          "evidence": "A tooth autotransplantation case reported clinical and imaging follow-up at 12 months. Larger studies can report retention, root resorption, healing and additional treatment separately."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Transfer donor shape to the replica"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Translate target into a guide"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Compare device and handling"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Verify guidance and bone preservation"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Follow healing in comparable cases"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Connect to clinical outcomes"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Fit and reintervention refine design"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Research scope and outcomes",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Tooth transplantation uses a replica to examine recipient fit. Endodontic surgery uses geometric guidance near adjacent structures. Recording the aid's role separates extraoral time, apical targeting and tooth retention on follow-up. [R01] [R02] [R03]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathways and evidence",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Segment root shape and nearby structures"
+          },
+          {
+            "type": "p",
+            "text": "Root length, curvature and apical development define the donor replica. Surgical guidance also depends on the target's location relative to neighboring structures. [R02] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "Assess recipient fit with a replica"
+          },
+          {
+            "type": "p",
+            "text": "Fit can be examined in the digital model and with a replica. A clinical case reported less than one minute of extraoral time with the actual donor after replica-assisted preparation. [R02] [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "Constrain apical access with a guide"
+          },
+          {
+            "type": "p",
+            "text": "Apical surgery studies use bone-window or sleeve-based guidance linking bone or tooth support to a planned target. [R01] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "Compare localization contribution in vitro"
+          },
+          {
+            "type": "p",
+            "text": "An intentional replantation study tested a printed intraoperative aid in vitro. Bench positioning measurements help separate device geometry from operator variability. [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "Measure target deviation and bone preservation"
+          },
+          {
+            "type": "p",
+            "text": "Cases and feasibility studies link guide seating, the bone window and access to the lesion. Comparisons can distinguish support error, instrument clearance and achieved position. [R01] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "Follow tooth and tissue outcomes"
+          },
+          {
+            "type": "p",
+            "text": "A tooth autotransplantation case reported clinical and imaging follow-up at 12 months. Larger studies can report retention, root resorption, healing and additional treatment separately. [R02] [R04] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "The report concerned a 12-year-old patient with incomplete root development. It used FDM at a 0.1 mm layer height and checked the replica against the STL. Layer height describes manufacturing sampling, whereas replica error can also arise from segmentation, trimming and deformation. Extraoral time below one minute belongs with root stage, complexity and operator experience. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Split apical targeting error into entry, angle, achieved depth and bone-window extent. Accurate entry can still leave an angular error at the endpoint. Comparisons with freehand or navigation should track plan completion, bone removal and healing after root-end treatment. [R01] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "An in vitro replantation study included 22 mandibular premolars and 18 mandibular molars. Printed support reduced resection angle deviation. Differences in resection length, root-end preparation angle and operating time were not significant. The result ties stabilization to the cutting plane and identifies crown support area and material stiffness as comparison variables. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "The in-house static-guide feasibility series had six patients and nine roots. Bone windows ranged from 20 to 93 mm² and operations from 40 to 102 minutes. Four patients were fully healed by six months and the other two by 12 months. Posterior visibility, lesion size and bone wall conditions affect comparisons. Report window geometry and imaging-defined healing at separate times in comparable cases. [R09]"
+          }
+        ]
+      },
+      {
+        "title": "Industry technologies and services",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Endo Guides offers apicoectomy guide design and production. Formlabs provides guide material and its validated workflow. The service controls case geometry and revisions, while the material system controls finished-part repeatability. An in-house proof-of-concept study documented Shining 3D SG01, linking a guide material to a specialist use. [R09] [R10] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and production interfaces",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN119950065A addresses autotransplantation aids for severe bone defects. CN107802358A and CN108618854A address image-based apical guides and digital design and manufacture. Recipient fit and target transfer suggest two distinct physical tests. [R06] [R07] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Research and industry connections",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Deliverables can carry support type and measurement landmarks linked to the case revision. Clinics can consistently capture seating, repeated trial placements, extraoral time and later retention. Linking the manufactured part and follow-up by case helps determine whether the aid accounts for divergent outcomes. [R02] [R03] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "Outlook and measures of progress",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Future comparative cohorts can stratify by root development and case complexity. Document first seating, position error, bone-window area, postoperative treatment and longer-term retention, including whether the planned aid was actually used. [R01] [R02] [R04] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Preserving Natural Bone With Bone Window Guided Endodontic Surgery Utilizing a Piezoelectric Device: Case Reports of Two Molars.",
+        "url": "https://doi.org/10.1155/crid/3731270",
+        "year": "2026",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "Template-Guided Autogenous Tooth Transplantation Using a CAD/CAM Dental Replica in a Complex Anatomical Scenario: A Case Report.",
+        "url": "https://doi.org/10.3390/dj13070281",
+        "year": "2025",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "An in vitro study of a novel intraoperative 3D-printed device for intentional replantation.",
+        "url": "https://doi.org/10.1186/s12903-025-07422-z",
+        "year": "2025",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Application of computer-aided design combined with 3-dimensional-printed guide in tooth autotransplantation: a case report.",
+        "url": "https://doi.org/10.1186/s12903-025-07459-0",
+        "year": "2026",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "A Novel Diagnostic and Treatment Approach to an Unusual Case of Dens Invaginatus in a Mandibular Lateral Incisor Using CBCT and 3D Printing Technology.",
+        "url": "https://doi.org/10.3390/dj12040107",
+        "year": "2024",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "Method and auxiliary equipment for repairing missing tooth with severe bone defect by autogenous tooth transplantation",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119950065A",
+        "year": "2025",
+        "source": "Espacenet",
+        "id": "R06"
+      },
+      {
+        "title": "CT type endodontic surgery guide plate and applications thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN107802358A",
+        "year": "2018",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "Digital endodontic surgery guide plate and applications thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN107802357A",
+        "year": "2018",
+        "source": "Espacenet",
+        "id": "R08"
+      },
+      {
+        "title": "Endodontic surgery using 3D-guides in-house manufacturing and trephine burs for osteotomy and root-end resection: a proof-of-concept clinical study",
+        "url": "https://doi.org/10.1007/s00784-025-06660-3",
+        "year": "2025",
+        "source": "Clinical Oral Investigations",
+        "id": "R09"
+      },
+      {
+        "title": "Endo Guides",
+        "url": "https://www.endoguides.com/",
+        "year": "2026",
+        "source": "Endo Guides",
+        "id": "R10"
+      },
+      {
+        "title": "Digital designing and manufacturing method for apical surgery guide plate",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN108618854A",
+        "year": 2018,
+        "source": "Espacenet",
+        "id": "R11"
+      },
+      {
+        "title": "Surgical Guide Resin and validated digital workflow",
+        "url": "https://dental.formlabs.com/global/products/surgical-guide-resin/",
+        "year": "2026访问",
+        "source": "Formlabs Dental",
+        "id": "R12"
+      }
+    ]
+  },
+  "de": {
+    "id": "H11",
+    "p": "P4",
+    "title": "Patientenspezifische Hilfsmittel für Zahntransplantation und endodontische Chirurgie",
+    "subtitle": "Spenderzahnreplik, Empfängerpassung und apikalen Zugang getrennt prüfen",
+    "thesis": "Bei autogener Zahntransplantation kann eine Replik Probepassungen mit dem Spenderzahn verringern. Eine apikale Führung muss stabilen Sitz in einen zielnahen Zugang übertragen. Beide Hilfsmittel verknüpfen frühe Geometrie und spätere Zahn- und Gewebebefunde auf eigene Weise.",
+    "questions": [],
+    "graph": {
+      "title": "Getrennte Evidenzpfade für Spenderzahnreplik und statische Führung",
+      "summary": "Bildgebung liefert Spenderzahngeometrie und apikale Lokalisation. Hilfsmittel werden am Prüfstand und in Fällen geprüft. Ergebnisse fließen in die Toleranzen ein.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2024–2026",
+          "refs": [
+            "R02",
+            "R05"
+          ],
+          "title": "Wurzelform und Nachbarstrukturen segmentieren",
+          "question": "Welche Wurzelmerkmale und Nachbarstrukturen müssen erhalten bleiben?",
+          "evidence": "Wurzellänge, Krümmung und apikale Entwicklung bestimmen die Spenderzahnreplik. Für die Chirurgieschablone zählt auch die Lage des Ziels zu Nachbarstrukturen."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2025",
+          "refs": [
+            "R02",
+            "R04"
+          ],
+          "title": "Empfängerpassung mit einer Replik prüfen",
+          "question": "Kann die Replik Probepassungen des Spenderzahns verringern?",
+          "evidence": "Die Passform lässt sich im digitalen Modell und mit einer Replik prüfen. Ein klinischer Fall berichtete nach Vorbereitung mit der Replik weniger als eine Minute extraorale Zeit des Spenderzahns."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2025–2026",
+          "refs": [
+            "R01",
+            "R09"
+          ],
+          "title": "Apikalen Zugang mit Schablone führen",
+          "question": "Wie wird das Ziel auf Knochenfenster oder Apex übertragen?",
+          "evidence": "Studien zur apikalen Chirurgie verwenden Knochenfenster- oder Hülsenführungen, die Knochen- bzw. Zahnkontakt mit einem geplanten Ziel verbinden."
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 0,
+          "time": "2025",
+          "refs": [
+            "R03"
+          ],
+          "title": "Beitrag des Hilfsmittels zur Positionierung in vitro vergleichen",
+          "question": "Ändert die Fixierung Schnittebene oder Resektionslänge?",
+          "evidence": "Eine Studie zur intentionellen Replantation prüfte ein gedrucktes OP-Hilfsmittel in vitro. Positionsmessungen trennen Geometriebeitrag und Anwenderstreuung."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 2,
+          "time": "2025–2026",
+          "refs": [
+            "R01",
+            "R09"
+          ],
+          "title": "Zielabweichung und Knochenerhalt messen",
+          "question": "Wie groß sind Eintritts-, Winkel- und Tiefenfehler?",
+          "evidence": "Fall- und Machbarkeitsstudien verknüpfen Sitz, Knochenfenster und Läsionszugang. Vergleiche können Auflagefehler, Instrumentenspiel und erreichte Lage unterscheiden."
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025–2026",
+          "refs": [
+            "R02",
+            "R04",
+            "R09"
+          ],
+          "title": "Zahn- und Gewebeendpunkte nachverfolgen",
+          "question": "Wie hängt die frühe Geometrie mit späterer Heilung zusammen?",
+          "evidence": "Ein Fall der autogenen Zahntransplantation wurde klinisch und bildgebend über zwölf Monate verfolgt. Größere Studien können Zahnerhalt, Wurzelresorption, Heilung und Zusatzbehandlung getrennt berichten."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Spenderform auf Replik übertragen"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Zielpunkt in Führung übertragen"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Hilfsmittel und Handhabung vergleichen"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Führung und Knochenerhalt prüfen"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Heilung bei vergleichbaren Fällen verfolgen"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Klinische Ergebnisse anbinden"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Passung und Folgeeingriffe korrigieren Entwurf"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Forschungsgegenstand und Endpunkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Bei Zahntransplantation dient eine Replik der Empfängerpassung. Bei endodontischer Chirurgie führt eine Schablone nahe benachbarten Strukturen. Mit der Gerätefunktion lassen sich extraorale Zeit, apikale Zielübertragung und Zahnerhalt trennen. [R01] [R02] [R03]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Evidenz",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Wurzelform und Nachbarstrukturen segmentieren"
+          },
+          {
+            "type": "p",
+            "text": "Wurzellänge, Krümmung und apikale Entwicklung bestimmen die Spenderzahnreplik. Für die Chirurgieschablone zählt auch die Lage des Ziels zu Nachbarstrukturen. [R02] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "Empfängerpassung mit einer Replik prüfen"
+          },
+          {
+            "type": "p",
+            "text": "Die Passform lässt sich im digitalen Modell und mit einer Replik prüfen. Ein klinischer Fall berichtete nach Vorbereitung mit der Replik weniger als eine Minute extraorale Zeit des Spenderzahns. [R02] [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "Apikalen Zugang mit Schablone führen"
+          },
+          {
+            "type": "p",
+            "text": "Studien zur apikalen Chirurgie verwenden Knochenfenster- oder Hülsenführungen, die Knochen- bzw. Zahnkontakt mit einem geplanten Ziel verbinden. [R01] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "Beitrag des Hilfsmittels zur Positionierung in vitro vergleichen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie zur intentionellen Replantation prüfte ein gedrucktes OP-Hilfsmittel in vitro. Positionsmessungen trennen Geometriebeitrag und Anwenderstreuung. [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "Zielabweichung und Knochenerhalt messen"
+          },
+          {
+            "type": "p",
+            "text": "Fall- und Machbarkeitsstudien verknüpfen Sitz, Knochenfenster und Läsionszugang. Vergleiche können Auflagefehler, Instrumentenspiel und erreichte Lage unterscheiden. [R01] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "Zahn- und Gewebeendpunkte nachverfolgen"
+          },
+          {
+            "type": "p",
+            "text": "Ein Fall der autogenen Zahntransplantation wurde klinisch und bildgebend über zwölf Monate verfolgt. Größere Studien können Zahnerhalt, Wurzelresorption, Heilung und Zusatzbehandlung getrennt berichten. [R02] [R04] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Der Fall betraf einen Zwölfjährigen mit unvollständiger Wurzelentwicklung. FDM mit 0,1 mm Schichthöhe erzeugte die Replik, die mit dem STL abgeglichen wurde. Die Schichthöhe beschreibt die Fertigungsabtastung. Replikafehler können auch aus Segmentierung, Nacharbeit und Verformung entstehen. Eine extraorale Zeit unter einer Minute wird mit Wurzelstadium, Komplexität und Anwendererfahrung dokumentiert. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Die apikale Zielabweichung wird nach Eintritt, Winkel, erreichter Tiefe und Knochenfenster getrennt. Auch bei präzisem Eintritt ist am Ziel eine Winkelabweichung möglich. Vergleiche mit Freihand oder Navigation erfassen Planumsetzung, Knochenabtrag und Heilung nach der Wurzelspitzenbehandlung. [R01] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Die In-vitro-Replantationsstudie untersuchte 22 Unterkieferprämolaren und 18 Unterkiefermolaren. Die gedruckte Halterung verringerte den Winkelfehler der Resektion. Resektionslänge, Winkel der apikalen Präparation und Eingriffszeit unterschieden sich nicht signifikant. Damit wird die Stabilisierung mit der Schnittebene verknüpft. Kronenauflage und Materialsteifigkeit eignen sich als nächste Vergleichsvariablen. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Die klinikinterne Machbarkeitsserie zur statischen Schablone umfasste sechs Personen und neun Wurzeln. Die Knochenfenster maßen 20–93 mm², die Eingriffe dauerten 40–102 Minuten. Vier Personen waren nach sechs Monaten vollständig geheilt, die übrigen zwei nach zwölf Monaten. Sicht im Seitenzahnbereich, Läsionsgröße und Knochenwand beeinflussen Vergleiche. Fenstergeometrie und bildgebende Heilung werden bei vergleichbaren Fällen zeitlich getrennt erfasst. [R09]"
+          }
+        ]
+      },
+      {
+        "title": "Technologien und Angebote der Unternehmen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Endo Guides bietet Entwurf und Fertigung von Schablonen zur Wurzelspitzenresektion. Formlabs stellt Schablonenmaterial und validierten Ablauf bereit. Der Dienst kontrolliert Fallgeometrie und Version, das Materialsystem die Wiederholbarkeit des Fertigteils. Eine klinikinterne Machbarkeitsstudie dokumentierte Shining 3D SG01 als Material im konkreten Einsatz. [R09] [R10] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Patentansätze und Fertigungsschnittstellen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN119950065A betrifft Hilfen zur autogenen Zahntransplantation bei schweren Knochendefekten. CN107802358A und CN108618854A betreffen bildgestützte apikale Führung bzw. deren digitalen Entwurf und Fertigung. Empfängerpassung und Zielübertragung ergeben zwei getrennte Prüfungen. [R06] [R07] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Verbindungen von Forschung und Industrie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Das Fertigteil kann Auflageart und Messpunkte mit dem Fallstand verknüpfen. Kliniken erfassen Sitz, wiederholte Probepassungen, extraorale Zeit und späteren Zahnerhalt einheitlich. Der Fallbezug zeigt, ob Änderungen des Hilfsmittels unterschiedliche Resultate erklären. [R02] [R03] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick und Kriterien für Fortschritt",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Künftige Vergleichskohorten können nach Wurzelentwicklung und Fallkomplexität stratifizieren. Erstsitz, Lageabweichung, Knochenfensterfläche, Nachbehandlung und längerfristiger Zahnerhalt sind einschließlich des tatsächlichen Hilfsmitteleinsatzes zu dokumentieren. [R01] [R02] [R04] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Preserving Natural Bone With Bone Window Guided Endodontic Surgery Utilizing a Piezoelectric Device: Case Reports of Two Molars.",
+        "url": "https://doi.org/10.1155/crid/3731270",
+        "year": "2026",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "Template-Guided Autogenous Tooth Transplantation Using a CAD/CAM Dental Replica in a Complex Anatomical Scenario: A Case Report.",
+        "url": "https://doi.org/10.3390/dj13070281",
+        "year": "2025",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "An in vitro study of a novel intraoperative 3D-printed device for intentional replantation.",
+        "url": "https://doi.org/10.1186/s12903-025-07422-z",
+        "year": "2025",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Application of computer-aided design combined with 3-dimensional-printed guide in tooth autotransplantation: a case report.",
+        "url": "https://doi.org/10.1186/s12903-025-07459-0",
+        "year": "2026",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "A Novel Diagnostic and Treatment Approach to an Unusual Case of Dens Invaginatus in a Mandibular Lateral Incisor Using CBCT and 3D Printing Technology.",
+        "url": "https://doi.org/10.3390/dj12040107",
+        "year": "2024",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "Method and auxiliary equipment for repairing missing tooth with severe bone defect by autogenous tooth transplantation",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119950065A",
+        "year": "2025",
+        "source": "Espacenet",
+        "id": "R06"
+      },
+      {
+        "title": "CT type endodontic surgery guide plate and applications thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN107802358A",
+        "year": "2018",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "Digital endodontic surgery guide plate and applications thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN107802357A",
+        "year": "2018",
+        "source": "Espacenet",
+        "id": "R08"
+      },
+      {
+        "title": "Endodontic surgery using 3D-guides in-house manufacturing and trephine burs for osteotomy and root-end resection: a proof-of-concept clinical study",
+        "url": "https://doi.org/10.1007/s00784-025-06660-3",
+        "year": "2025",
+        "source": "Clinical Oral Investigations",
+        "id": "R09"
+      },
+      {
+        "title": "Endo Guides",
+        "url": "https://www.endoguides.com/",
+        "year": "2026",
+        "source": "Endo Guides",
+        "id": "R10"
+      },
+      {
+        "title": "Digital designing and manufacturing method for apical surgery guide plate",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN108618854A",
+        "year": 2018,
+        "source": "Espacenet",
+        "id": "R11"
+      },
+      {
+        "title": "Surgical Guide Resin and validated digital workflow",
+        "url": "https://dental.formlabs.com/global/products/surgical-guide-resin/",
+        "year": "2026访问",
+        "source": "Formlabs Dental",
+        "id": "R12"
+      }
+    ]
+  }
+}

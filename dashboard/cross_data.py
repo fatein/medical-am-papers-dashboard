@@ -3,12 +3,67 @@ from __future__ import annotations
 
 import json
 from collections import defaultdict
+from functools import lru_cache
 from pathlib import Path
 from statistics import median
 
 
 def load_cross_analysis(root: Path) -> dict:
     return json.loads((Path(root) / 'data/cross_analysis.json').read_text(encoding='utf-8'))
+
+
+CROSS_CUTTING = 'cross-cutting'
+H36_IDS = tuple(f'H{i:02d}' for i in range(1, 37))
+
+
+@lru_cache(maxsize=4)
+def load_direction_classification(root: Path) -> dict | None:
+    path = Path(root) / 'data/direction_reports/classification.json'
+    if not path.is_file():
+        return None
+    return json.loads(path.read_text(encoding='utf-8'))
+
+
+def question_direction_map(classification: dict) -> dict[str, str]:
+    return {qid: group['id'] for group in classification['directions']
+            for qid in group['questions']} | {
+                qid: CROSS_CUTTING for qid in classification['cross_cutting']
+            }
+
+
+def load_questions_for_navigation(data: dict, root: Path) -> dict:
+    classification = load_direction_classification(root)
+    if classification is None:
+        return data
+    groups = {group['id']: group for group in classification['directions']}
+    parents = question_direction_map(classification)
+    return {
+        **data,
+        'questions': [
+            {**q, 'direction_id': parents[q['question_id']],
+             'direction': groups.get(parents[q['question_id']], {}).get('title', '跨方向研究问题')}
+            for q in data['questions']
+        ],
+    }
+
+
+def themed_direction_summary(data: dict, classification: dict) -> list[dict]:
+    companies = defaultdict(set)
+    for evidence in data['enterprise_evidence']:
+        if evidence['source_kind'] != '非企业开源项目':
+            companies[evidence['question_id']].add(evidence['company'])
+    groups = [*classification['directions'], {
+        'id': CROSS_CUTTING,
+        'title': '跨方向研究问题',
+        'questions': classification['cross_cutting'],
+        'related': [],
+        'p_layers': sorted({q['p'] for q in data['questions']
+                            if q['question_id'] in classification['cross_cutting']}),
+    }]
+    return [
+        {**row, 'companies': len(set().union(*(companies[q] for q in row['questions'])))}
+        for row in groups
+    ]
 
 
 def direction_summary(data: dict) -> list[dict]:

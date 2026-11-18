@@ -1,0 +1,1295 @@
+{
+  "zh": {
+    "id": "H26",
+    "p": "P1",
+    "title": "可打印水凝胶与软组织修复材料",
+    "subtitle": "把挤出过程、网络成形与湿态使用连接起来",
+    "thesis": "打印精度取决于凝胶沉积后的短期支撑，修复材料的价值则取决于最终湿态下的力学和界面表现。双网络、颗粒填充及生物基材料各自把限制转移到不同的加工或使用阶段。",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络图",
+      "summary": "起始流变窗口分成网络固化和材料功能两路，随后在湿态形状与组织作用处重新汇合，产品资料提供配方版本与用途的交付检查。",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2022",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R04"
+          ],
+          "title": "凝胶可打印性窗口",
+          "question": "沉积前后如何满足相反的流动需求？",
+          "evidence": "低温适用 GelMA 研究把热响应与多材料高分辨率打印联系起来。"
+        },
+        {
+          "id": "N2",
+          "time": "2025",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R01"
+          ],
+          "title": "肽凝胶的纤维增强",
+          "question": "增强组分能否把软基质变成可控的打印材料？",
+          "evidence": "无异种成分的肽生物墨水研究引入纤维素纳米纤维构建支撑。"
+        },
+        {
+          "id": "N3",
+          "time": "2026",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R02"
+          ],
+          "title": "在沉积时固定光交联网络",
+          "question": "如何把减少铺展和最终湿态模量同时量化？",
+          "evidence": "一项直写研究比较海藻酸盐/羧甲基纤维素对照和三档 PEGDA 杂化配方。原位交联可打印 10 层、孔约 1 × 1 mm 的试样，报告复合模量范围 620–4,600 Pa。"
+        },
+        {
+          "id": "N4",
+          "time": "2025",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R05"
+          ],
+          "title": "为细胞环境选择基体",
+          "question": "打印基体如何保留可解释的组织信号？",
+          "evidence": "透明质酸生物墨水研究把无额外添加物的配方用于骨髓微环境构建。"
+        },
+        {
+          "id": "N5",
+          "time": "2021",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R06"
+          ],
+          "title": "落到湿接触与局部承载",
+          "question": "伤口敷料的连续接触怎样评价？",
+          "evidence": "热响应水凝胶研究将可打印载体用于伤口敷料概念。"
+        },
+        {
+          "id": "N6",
+          "time": "2023–2025",
+          "stage": 4,
+          "lane": 1,
+          "refs": [
+            "R11",
+            "R12"
+          ],
+          "title": "把可复现性放到产品规格",
+          "question": "学术配方怎样转为稳定可比较的材料？",
+          "evidence": "CELLINK 公布 Vivoink，REGEMAT 3D 推出面向研究的 GelMA–Graphene Kit，商业路线分别侧重材料质量与导电功能。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "引入纤维支撑"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "引入光固化"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "检查基质环境"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "检验湿态构件"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "比较接触功能"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "形成验收规格"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "批次差异反馈流变窗口"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "材料与用途的匹配",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "水凝胶设计同时包括生产时的流动、沉积后保持形状，以及使用时吸水、载荷和界面行为。敷料需要贴合及易移除，软组织替代物重在湿态模量、变形恢复和组织接触，细胞承载墨水则需要可解释的生物环境。按用途定义首要终点可以避免把同一种高保真打印结果推广到多个不同场景。[R01] [R02] [R05] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 凝胶可打印性窗口"
+          },
+          {
+            "type": "p",
+            "text": "低温适用 GelMA 研究把热响应与多材料高分辨率打印联系起来。 [R04]"
+          },
+          {
+            "type": "p",
+            "text": "用黏度描述挤出阻力，用剪切后的恢复和线宽随时间的变化描述沉积稳定性。相同黏度在不同历史载荷下可对应不同线材融合，因此两组指标必须配对。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 肽凝胶的纤维增强"
+          },
+          {
+            "type": "p",
+            "text": "无异种成分的肽生物墨水研究引入纤维素纳米纤维构建支撑。 [R01]"
+          },
+          {
+            "type": "p",
+            "text": "评价单位应从新鲜挤出线段延伸到浸湿后整体构件。相同含水和几何下可比较增强前后的恢复、形状保持和刚度，检验增强是否以界面均匀性为代价。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 在沉积时固定光交联网络"
+          },
+          {
+            "type": "p",
+            "text": "一项直写研究比较海藻酸盐/羧甲基纤维素对照和三档 PEGDA 杂化配方。原位交联可打印 10 层、孔约 1 × 1 mm 的试样，报告复合模量范围 620–4,600 Pa。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "图形精度和模量需要分开读取。模量落入某类组织范围只说明力学尺度可设计，组织修复还要测吸水后的形状、载荷传递及界面反应。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 为细胞环境选择基体"
+          },
+          {
+            "type": "p",
+            "text": "透明质酸生物墨水研究把无额外添加物的配方用于骨髓微环境构建。 [R05]"
+          },
+          {
+            "type": "p",
+            "text": "应把同一配方在打印和非打印状态下对照，再用相同打印结构比较基质组成。否则细胞表型变化可能反映空间边界而非化学信号。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 落到湿接触与局部承载"
+          },
+          {
+            "type": "p",
+            "text": "热响应水凝胶研究将可打印载体用于伤口敷料概念。 [R06]"
+          },
+          {
+            "type": "p",
+            "text": "平面干态试样用于筛选成形，吸液后的贴合、体积变化与移除完整性更接近敷料任务。组织替代构件则应选循环载荷和界面变形等不同读数。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 把可复现性放到产品规格"
+          },
+          {
+            "type": "p",
+            "text": "CELLINK 公布 Vivoink，REGEMAT 3D 推出面向研究的 GelMA–Graphene Kit，商业路线分别侧重材料质量与导电功能。 [R11] [R12]"
+          },
+          {
+            "type": "p",
+            "text": "不同产品对应不同用途，验收应把批次、运输储存、可打印性及特定功能绑定在同一版本。研究端以明确配方和成形后的实测值支持这种比较。"
+          },
+          {
+            "type": "h3",
+            "text": "相关实验的补充比较"
+          },
+          {
+            "type": "h3",
+            "text": "开放敷料与蛋白载体"
+          },
+          {
+            "type": "p",
+            "text": "2023年Nano Convergence研究用海藻酸盐和氧化锌四足体构建开放及封闭敷料，考察蛋白吸附、抗菌表现和离体皮肤相容性。开放结构中颗粒臂与表面的接触状态使几何成为功能变量。[R2605]"
+          },
+          {
+            "type": "p",
+            "text": "创面敷料面对的是持续交换的湿润界面。选择开放孔道会同时改变液体通路、气体通路和颗粒暴露，因此某一抗菌结果不能单独决定最优孔隙率。蛋白能吸附到载体也不等同于到达组织后仍具有所需生物活性；吸附能力、释放后的结构完整性与受体水平功能应分成连续但独立的证据。"
+          },
+          {
+            "type": "p",
+            "text": "这一节点把局部递送从封闭储库带向大面积动态接触。与N2相比，两者都用凝胶承载功能成分，但创面应用还需要面对渗出物、换药和局部形状变化。后续研究可以把病程状态作为外部条件，比较相同材料在不同接触与液体交换条件下的表现，再决定是调整结构、表面性质还是释放程序。这样的比较有助于避免把所有变化都归结为材料配比。"
+          }
+        ]
+      },
+      {
+        "title": "凝胶构建的实测比较",
+        "blocks": [
+          {
+            "type": "table",
+            "headers": [
+              "实验路线",
+              "测量与结果",
+              "如何读取"
+            ],
+            "rows": [
+              [
+                "肽–纳米纤维 [R01]",
+                "一周后 Gel 1:1 和 1:2 的 MG63 细胞活性分别为 95% 和 96%，Gel 3:1 为 50%。",
+                "保留配方与时间条件，不能合并为系列平均值。"
+              ],
+              [
+                "PEGDA 杂化直写 [R02]",
+                "4% w/v 海藻酸盐和 4% w/v CMC 为对照，分别比较 4.5%、6.5% 和 10% w/v PEGDA，测得复合模量 620–4,600 Pa。",
+                "同时比较线条铺展、孔形和固化后的材料刚度。"
+              ],
+              [
+                "改性透明质酸 [R05]",
+                "物理交联与共价光交联在同一聚合物中建立，研究比较预包埋与结构成形后定位。",
+                "结构选择同时改变细胞经历的过程。"
+              ]
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "自组装如何改变对照设计"
+          },
+          {
+            "type": "p",
+            "text": "Netti 等用短肽自组装与纤维网络提供结构稳定性，避免把后续化学固化引起的变化混入比较。原文图 4 将活性按 24 小时、72 小时及一周分开。Gel 3:1 的活性先从 24 小时约 65% 下降至 72 小时约 30%，再到一周约 50%。Gel 1:1 和 1:2 一周则分别约 95% 和 96%。同系列材料的排序依赖组成和时间，因此应在同一细胞参照、检测条件与观察期内比较。[R01]"
+          },
+          {
+            "type": "p",
+            "text": "自支撑不等于加料越多越好。调配改变黏弹性与细胞接触，图 3 中的流变和形变数据可以与图 4 的活性按同一组配方对齐。比较长期软组织替代时，还应加入湿态周期载荷和细胞界面读数，用于判断短期打印保形与长期表现是否同向。[R01]"
+          },
+          {
+            "type": "h3",
+            "text": "原位固化同时影响几何和力学"
+          },
+          {
+            "type": "p",
+            "text": "Rohauer 等采用双层线材融合试验分别描述孔形逼近程度及沉积后扩散速率，并以光差示扫描量热和光流变比较固化。含 PEGDA 组在原位光照后改善双层成形，最终展示 10 层、约 1 × 1 mm 孔的构件。最有解释力的同配方前后对照是将线条跨距、孔占空与固化后的复合模量并列，辨别孔保持来自材料流变还是更快的成网。通过模量范围匹配软组织是候选材料筛选的一步，后续仍需围绕界面、通水和连续载荷安排验证。[R02]"
+          },
+          {
+            "type": "h3",
+            "text": "先形成承载网络，再设计组织环境"
+          },
+          {
+            "type": "p",
+            "text": "透明质酸研究在同一材料上利用可逆的疏水相互作用和后续共价固化。材料能恢复局部变形，有助于把细胞定位与构件几何连接。原文还区分了细胞在成形过程中承受的条件与构件形成后引入的条件。判断改进来自材料还是定位策略时，配对相同空间位置的细胞活性、表型及浓度，避免把边界或细胞数量变化当作材料生物学效应。[R05]"
+          },
+          {
+            "type": "h3",
+            "text": "交付路线的分解与验证"
+          },
+          {
+            "type": "p",
+            "text": "对于敷料，首要失败可能是接触不连续或湿态移除时断裂，评价便从干态孔形转到液体接触及再次受力后的整体性。对于组织样构件，适配负荷的湿态模量、长时尺寸保持与细胞表型才构成完整对照。企业试剂作为研究材料时可优先统一批次和应用对象。若用于转化开发，需把材料批号、成品制造和后处理窗口对应到同样的功能读数。[R02] [R06] [R11] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "企业材料路线",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Vivoink 公告把材料等级与转化准备联系起来，GelMA–Graphene Kit 则将导电读数作为先进研究用途的选项。同一设备可以面对不同材料，但放行比较需要按配方、使用范围及其配套仪器记录，尤其要考察湿态力学、批次漂移和可靠储存期。[R11] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "专利如何解决成形自由度",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN110126254A 将重点放在凝胶内部无需支撑的构建。CN114470336A 采用可共挤共成形的混合水凝胶思路，CN120420502A 把微球墨水用于逐层光固化。三类机制对应内部支撑、不同材料连接、离散颗粒承载三个不同约束，测试分别看内部塌陷、交界面开裂与成形后颗粒分布。[R07] [R08] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "可比的开发方案",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "同批基体先比较打印和浇注，磨合工艺窗口后再选择不同添加相。每组报告成形后孔的有效宽度、浸湿质量与体积变化、循环应变下的恢复和组织模型中的功能读数。将外形均匀却低模量、或高精度却湿态膨胀的试样保留进结果，才能解释候选材料如何因用途而分流。[R01] [R02] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "未来三年的可观测进展",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "优先关注可在多个批次重现的流变恢复、适配不同几何形状的固化均匀性及浸湿后的功能保持。真正推动定制修复的进展将来自按组织任务验证的材料库和成品记录，共用墨水也需要单独评价不同部位的接触、变形与运输条件。"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Xeno-Free Biocompatible Peptide-Based Bioinks Reinforced with Cellulose Nanofibers for 3D Printing.",
+        "year": "2025",
+        "url": "https://doi.org/10.1002/adhm.202501729",
+        "kind": "paper",
+        "source": "10.1002/adhm.202501729"
+      },
+      {
+        "id": "R02",
+        "title": "Photo Crosslinkable Hybrid Hydrogels for High Fidelity Direct Write 3D Printing: Rheology, Curing Kinetics, and Bio-Scaffold Fabrication.",
+        "year": "2026",
+        "url": "https://doi.org/10.3390/jfb17010030",
+        "kind": "paper",
+        "source": "10.3390/jfb17010030"
+      },
+      {
+        "id": "R04",
+        "title": "A Psychrophilic GelMA: Breaking Technical and Immunological Barriers for Multimaterial High-Resolution 3D Bioprinting.",
+        "year": "2022",
+        "url": "https://doi.org/10.1021/acs.biomac.2c01019",
+        "kind": "paper",
+        "source": "10.1021/acs.biomac.2c01019"
+      },
+      {
+        "id": "R05",
+        "title": "Additive-free hyaluronic acid-based bioink for 3D bioprinting of bone marrow microenvironments.",
+        "year": "2025",
+        "url": "https://doi.org/10.1016/j.mtbio.2025.102512",
+        "kind": "paper",
+        "source": "10.1016/j.mtbio.2025.102512"
+      },
+      {
+        "id": "R06",
+        "title": "3D Printing of Thermoresponsive Hydrogel Laden with an Antimicrobial Agent towards Wound Healing Applications.",
+        "year": "2021",
+        "url": "https://doi.org/10.3390/bioengineering8060079",
+        "kind": "paper",
+        "source": "10.3390/bioengineering8060079"
+      },
+      {
+        "id": "R07",
+        "title": "Method for interior support-free 3D printing of bionic support based on gel",
+        "year": "2019",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN110126254A",
+        "kind": "patent",
+        "source": "CN110126254A"
+      },
+      {
+        "id": "R08",
+        "title": "Mixed hydrogel capable of being co-extruded and co-molded and method for 3D printing of hydrogel stent",
+        "year": "2022",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN114470336A",
+        "kind": "patent",
+        "source": "CN114470336A"
+      },
+      {
+        "id": "R09",
+        "title": "Hydrogel microsphere-based bio-ink capable of being used for layer-by-layer photocuring 3D printing",
+        "year": "2025",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120420502A",
+        "kind": "patent",
+        "source": "CN120420502A"
+      },
+      {
+        "id": "R11",
+        "title": "CELLINK announces CELLINK Vivoink, our first medical-grade bioink",
+        "year": "2023",
+        "url": "https://www.cellink.com/cellink-announces-cellink-vivoink-our-first-medical-grade-bioink/",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R12",
+        "title": "REGEMAT 3D launches GelMA–Graphene Kit",
+        "year": "2025",
+        "url": "https://www.regemat3d.com/regemat-3d-launches-gelma-graphene-kit-the-only-electroconductivegelma-based-bioink-for-advanced-research/",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R2605",
+        "title": "3D-printed wound dressing platform for protein administration based on alginate and zinc oxide tetrapods",
+        "year": "2023",
+        "source": "Nano Convergence",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1186/s40580-023-00401-6"
+      }
+    ]
+  },
+  "en": {
+    "id": "H26",
+    "p": "P1",
+    "title": "Printable hydrogels and materials for soft tissue repair",
+    "subtitle": "Connecting extrusion, network formation and wet-state performance",
+    "thesis": "Print fidelity depends on short-term support after deposition. The value of a repair material depends on final wet-state mechanics and interface performance. Dual networks, particle reinforcement and biological matrices shift the constraints to different stages.",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway",
+      "summary": "The initial rheological window branches into network fixation and material function. The routes converge at wet-state shape and tissue interaction, with product documentation defining formulation and intended use at delivery.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2022",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R04"
+          ],
+          "title": "Printability window",
+          "question": "How can opposing flow requirements before and after deposition be met?",
+          "evidence": "Work on low-temperature GelMA connects thermal response with high-resolution multimaterial printing."
+        },
+        {
+          "id": "N2",
+          "time": "2025",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R01"
+          ],
+          "title": "Fibre reinforcement of peptide gels",
+          "question": "Can reinforcement turn a soft matrix into a controllable ink?",
+          "evidence": "A xeno-free peptide bioink study added cellulose nanofibres as reinforcement."
+        },
+        {
+          "id": "N3",
+          "time": "2026",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R02"
+          ],
+          "title": "Fix the photocrosslinked network during deposition",
+          "question": "How can lateral spreading and final wet-state modulus both be quantified?",
+          "evidence": "A direct-write study compared an alginate/carboxymethyl cellulose control with three PEGDA hybrid formulations. In situ crosslinking enabled ten-layer specimens with roughly 1 × 1 mm pores, and the reported complex modulus ranged from 620 to 4,600 Pa."
+        },
+        {
+          "id": "N4",
+          "time": "2025",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R05"
+          ],
+          "title": "Choose the matrix for the cellular environment",
+          "question": "How can a printed matrix preserve interpretable tissue signals?",
+          "evidence": "An additive-free hyaluronic-acid bioink was investigated for modelling bone marrow microenvironments."
+        },
+        {
+          "id": "N5",
+          "time": "2021",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R06"
+          ],
+          "title": "Evaluate wet contact and local support",
+          "question": "How should continuous dressing contact be assessed?",
+          "evidence": "Thermoresponsive hydrogel research applied a printable carrier to the wound-dressing concept."
+        },
+        {
+          "id": "N6",
+          "time": "2023–2025",
+          "stage": 4,
+          "lane": 1,
+          "refs": [
+            "R11",
+            "R12"
+          ],
+          "title": "Move reproducibility into product specifications",
+          "question": "How does an academic formulation become a reproducible material?",
+          "evidence": "CELLINK announced Vivoink, and REGEMAT 3D introduced its research-oriented GelMA–Graphene Kit. The commercial routes emphasize material quality and conductivity respectively."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Add fibrous reinforcement"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Introduce photocuring"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Assess the matrix environment"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Examine hydrated constructs"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Compare contact function"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Define acceptance specifications"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Feed lot differences back into the rheology window"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Matching materials to use",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Hydrogel design spans flow during manufacture, shape retention after deposition and hydration, loading and interface behavior in use. Dressings prioritize fit and removal, soft tissue substitutes prioritize wet-state modulus, recovery and tissue contact, and cell-bearing inks require a defined biological environment. Application-specific endpoints give print fidelity its proper context. [R01] [R02] [R05] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathway and evidence by stage",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Printability window"
+          },
+          {
+            "type": "p",
+            "text": "Work on low-temperature GelMA connects thermal response with high-resolution multimaterial printing. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Viscosity describes extrusion resistance, while post-shear recovery and time-dependent line width describe deposition stability. Equal viscosity after different loading histories can yield different filament fusion, so the measures should be paired."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Fibre reinforcement of peptide gels"
+          },
+          {
+            "type": "p",
+            "text": "A xeno-free peptide bioink study added cellulose nanofibres as reinforcement. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Evaluate both deposited filaments and the immersed construct. At matched hydration and geometry, compare recovery, shape retention and stiffness with and without reinforcement to test the trade-off with interface uniformity."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Fix the photocrosslinked network during deposition"
+          },
+          {
+            "type": "p",
+            "text": "A direct-write study compared an alginate/carboxymethyl cellulose control with three PEGDA hybrid formulations. In situ crosslinking enabled ten-layer specimens with roughly 1 × 1 mm pores, and the reported complex modulus ranged from 620 to 4,600 Pa. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Read shape fidelity and modulus separately. Matching the modulus range of a tissue shows mechanical tunability. Repair applications also require measurements of hydrated geometry, load transfer and interface response."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Choose the matrix for the cellular environment"
+          },
+          {
+            "type": "p",
+            "text": "An additive-free hyaluronic-acid bioink was investigated for modelling bone marrow microenvironments. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Compare printed and unprinted specimens of the same formulation, then vary matrix chemistry at fixed print geometry. That separates spatial boundary effects from chemical influences on cell phenotype."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Evaluate wet contact and local support"
+          },
+          {
+            "type": "p",
+            "text": "Thermoresponsive hydrogel research applied a printable carrier to the wound-dressing concept. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Flat dry specimens screen fabrication. Wet fit, volume change and intact removal better represent dressing use. Tissue replacements require separate measures such as cyclic loading and interface deformation."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Move reproducibility into product specifications"
+          },
+          {
+            "type": "p",
+            "text": "CELLINK announced Vivoink, and REGEMAT 3D introduced its research-oriented GelMA–Graphene Kit. The commercial routes emphasize material quality and conductivity respectively. [R11] [R12]"
+          },
+          {
+            "type": "p",
+            "text": "Release criteria should link lot, transport and storage, printability and application-specific function to one product version. Research supports comparison by specifying formulations and measured as-built properties."
+          },
+          {
+            "type": "h3",
+            "text": "Related experimental comparisons"
+          },
+          {
+            "type": "h3",
+            "text": "Open dressings and protein carriers"
+          },
+          {
+            "type": "p",
+            "text": "In 2023, Nano Convergence research constructed open and closed dressings using alginate and zinc oxide tetrapods, investigating protein adsorption, antibacterial performance, and ex vivo skin compatibility. In open structures, the contact state between the particle arms and the surface makes geometry a functional variable. [R2605]"
+          },
+          {
+            "type": "p",
+            "text": "Wound dressings deal with a constantly changing, moist interface. Choosing open pores simultaneously alters fluid pathways, gas pathways, and particle exposure; therefore, optimal porosity cannot be solely determined by a single antibacterial outcome. Protein adsorption to a carrier does not equate to retaining the desired biological activity upon reaching the tissue; adsorption capacity, post-release structural integrity, and receptor-level function should be considered as separate but continuous pieces of evidence."
+          },
+          {
+            "type": "p",
+            "text": "This node represents a shift in local delivery from closed reservoirs to large-area dynamic contact. Compared to N2, both use gels to carry functional components, but wound application requires addressing exudate, dressing changes, and local shape variations. Future research could consider disease progression as an external factor, comparing the performance of the same material under different contact and fluid exchange conditions to determine whether to adjust the structure, surface properties, or release program. Such comparisons help avoid attributing all changes to material formulation."
+          }
+        ]
+      },
+      {
+        "title": "Measured comparisons in hydrogel fabrication",
+        "blocks": [
+          {
+            "type": "table",
+            "headers": [
+              "Experimental route",
+              "Measures and results",
+              "Interpretation"
+            ],
+            "rows": [
+              [
+                "Peptide–nanofibre [R01]",
+                "At one week, MG63 viability was 95% and 96% for Gel 1:1 and 1:2 and 50% for Gel 3:1.",
+                "Retain formulation and time rather than pooling across formulations."
+              ],
+              [
+                "PEGDA hybrid direct writing [R02]",
+                "Three PEGDA levels of 4.5%, 6.5% and 10% w/v were compared with a 4% w/v alginate and 4% w/v CMC control. Complex moduli ranged from 620 to 4,600 Pa.",
+                "Assess filament spreading, pore shape and stiffness after curing together."
+              ],
+              [
+                "Modified hyaluronic acid [R05]",
+                "Physical and covalent photocrosslinks coexist in one polymer. The study compared embedding before printing with localization in the formed construct.",
+                "Structure choice also changes the history experienced by the cells."
+              ]
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "How self-assembly changes the comparison"
+          },
+          {
+            "type": "p",
+            "text": "Netti and colleagues used peptide self-assembly and a fibrous network to provide stability without a later chemical curing step. Figure 4 distinguishes 24 hours, 72 hours and one week. Gel 3:1 fell from about 65% at 24 hours to about 30% at 72 hours and reached about 50% at one week, while Gel 1:1 and 1:2 reached about 95% and 96%. Formulation and timing affect ranking, so compare using a common cellular reference, assay and observation interval. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Self-support is not simply proportional to additive content. Formulation changes viscoelasticity and cell contact. The rheology and deformation data in Figure 3 can be matched by formulation to viability in Figure 4. For longer-term soft tissue replacement, add cyclic wet loading and interface readouts to see whether print stability and long-term performance move together. [R01]"
+          },
+          {
+            "type": "h3",
+            "text": "In situ curing affects both geometry and mechanics"
+          },
+          {
+            "type": "p",
+            "text": "Rohauer and colleagues used bilayer filament-fusion tests to distinguish pore fidelity from spreading after deposition, alongside photo-DSC and photorheology. In situ exposure improved bilayer geometry in PEGDA-containing groups and enabled a ten-layer construct with roughly 1 × 1 mm openings. Compare spans, pore opening and post-cure complex modulus within the same formulation to separate rheological effects from rapid network formation. Matching tissue-scale modulus screens candidates, with interface, water transport and continuous loading as further checks. [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "Build the support network and then define the tissue environment"
+          },
+          {
+            "type": "p",
+            "text": "Modified hyaluronic-acid work combines reversible hydrophobic interactions with subsequent covalent fixation. Material recovery links cell positioning with geometry. The study distinguishes conditions during shaping from those after forming the construct. To separate material and placement effects, match cell viability, phenotype and concentration by location and account for boundary and cell-number effects. [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "Decomposing and validating the delivery routes"
+          },
+          {
+            "type": "p",
+            "text": "For a dressing, key failures can be loss of contact or tearing during wet removal, shifting evaluation from dry geometry to contact and integrity after use. Tissue-like constructs call for hydrated modulus under relevant load, dimensional retention and phenotype. Research reagents can be compared by batch and task, while translation links material lot and fabrication and finishing windows to the same function readouts. [R02] [R06] [R11] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Industrial material routes",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The Vivoink announcement links material grade to translational readiness. The GelMA–Graphene Kit offers conductivity for advanced research. A common printer may support different materials, but release comparisons need the formulation, use range and associated equipment, with particular attention to hydrated mechanics, lot drift and shelf life. [R11] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "How patent disclosures address geometric freedom",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN110126254A focuses on unsupported interior gel construction. CN114470336A addresses coextruded and coformed hydrogel mixtures, while CN120420502A uses a microsphere ink for layerwise photocuring. These mechanisms address different constraints: internal support, material junctions and particle placement. Appropriate tests examine collapse, interfacial cracking and particle distribution respectively. [R07] [R08] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "Comparable development studies",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "First compare printed and cast constructs from the same matrix lot, then compare additives after the process window is established. Report as-built pore width, wet mass and volume change, recovery under cyclic strain and functional readouts in the tissue model. Specimens with uniform geometry but low modulus, or high print fidelity followed by swelling, explain why candidates diverge by application. [R01] [R02] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Observable progress over the next three years",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Prioritize reproducible rheological recovery across lots, uniform curing across geometries and retention of function after hydration. Progress toward custom repair will come from material libraries and finished-device records validated against a tissue task. A common ink still needs site-specific evaluations of contact, deformation and transport."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Xeno-Free Biocompatible Peptide-Based Bioinks Reinforced with Cellulose Nanofibers for 3D Printing.",
+        "year": "2025",
+        "url": "https://doi.org/10.1002/adhm.202501729",
+        "kind": "paper",
+        "source": "10.1002/adhm.202501729"
+      },
+      {
+        "id": "R02",
+        "title": "Photo Crosslinkable Hybrid Hydrogels for High Fidelity Direct Write 3D Printing: Rheology, Curing Kinetics, and Bio-Scaffold Fabrication.",
+        "year": "2026",
+        "url": "https://doi.org/10.3390/jfb17010030",
+        "kind": "paper",
+        "source": "10.3390/jfb17010030"
+      },
+      {
+        "id": "R04",
+        "title": "A Psychrophilic GelMA: Breaking Technical and Immunological Barriers for Multimaterial High-Resolution 3D Bioprinting.",
+        "year": "2022",
+        "url": "https://doi.org/10.1021/acs.biomac.2c01019",
+        "kind": "paper",
+        "source": "10.1021/acs.biomac.2c01019"
+      },
+      {
+        "id": "R05",
+        "title": "Additive-free hyaluronic acid-based bioink for 3D bioprinting of bone marrow microenvironments.",
+        "year": "2025",
+        "url": "https://doi.org/10.1016/j.mtbio.2025.102512",
+        "kind": "paper",
+        "source": "10.1016/j.mtbio.2025.102512"
+      },
+      {
+        "id": "R06",
+        "title": "3D Printing of Thermoresponsive Hydrogel Laden with an Antimicrobial Agent towards Wound Healing Applications.",
+        "year": "2021",
+        "url": "https://doi.org/10.3390/bioengineering8060079",
+        "kind": "paper",
+        "source": "10.3390/bioengineering8060079"
+      },
+      {
+        "id": "R07",
+        "title": "Method for interior support-free 3D printing of bionic support based on gel",
+        "year": "2019",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN110126254A",
+        "kind": "patent",
+        "source": "CN110126254A"
+      },
+      {
+        "id": "R08",
+        "title": "Mixed hydrogel capable of being co-extruded and co-molded and method for 3D printing of hydrogel stent",
+        "year": "2022",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN114470336A",
+        "kind": "patent",
+        "source": "CN114470336A"
+      },
+      {
+        "id": "R09",
+        "title": "Hydrogel microsphere-based bio-ink capable of being used for layer-by-layer photocuring 3D printing",
+        "year": "2025",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120420502A",
+        "kind": "patent",
+        "source": "CN120420502A"
+      },
+      {
+        "id": "R11",
+        "title": "CELLINK announces CELLINK Vivoink, our first medical-grade bioink",
+        "year": "2023",
+        "url": "https://www.cellink.com/cellink-announces-cellink-vivoink-our-first-medical-grade-bioink/",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R12",
+        "title": "REGEMAT 3D launches GelMA–Graphene Kit",
+        "year": "2025",
+        "url": "https://www.regemat3d.com/regemat-3d-launches-gelma-graphene-kit-the-only-electroconductivegelma-based-bioink-for-advanced-research/",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R2605",
+        "title": "3D-printed wound dressing platform for protein administration based on alginate and zinc oxide tetrapods",
+        "year": "2023",
+        "source": "Nano Convergence",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1186/s40580-023-00401-6"
+      }
+    ]
+  },
+  "de": {
+    "id": "H26",
+    "p": "P1",
+    "title": "Druckbare Hydrogele und Materialien für die Weichgewebereparatur",
+    "subtitle": "Extrusion, Netzwerkbildung und Einsatz im feuchten Zustand verbinden",
+    "thesis": "Die Drucktreue hängt von der kurzzeitigen Formstabilität nach der Ablage ab. Für Reparaturmaterialien zählen die Mechanik und Grenzflächenleistung im endgültigen nassen Zustand. Doppelte Netzwerke, Partikelverstärkung und biologische Matrizes verlagern die Grenzen in unterschiedliche Phasen.",
+    "questions": [],
+    "graph": {
+      "title": "Forschungspfad",
+      "summary": "Das rheologische Ausgangsfenster verzweigt sich in Netzwerkfixierung und Materialfunktion. Beide Wege treffen bei Nassgeometrie und Gewebeinteraktion zusammen. Produktunterlagen definieren Formulierung und Verwendungszweck bei der Bereitstellung.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2022",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R04"
+          ],
+          "title": "Druckbarkeitsfenster",
+          "question": "Wie lassen sich gegensätzliche Fließanforderungen vor und nach der Ablage erfüllen?",
+          "evidence": "Arbeiten zu niedertemperaturtauglichem GelMA verknüpfen thermisches Verhalten mit hochauflösendem Mehrmaterialdruck."
+        },
+        {
+          "id": "N2",
+          "time": "2025",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R01"
+          ],
+          "title": "Faserverstärkung von Peptidgelen",
+          "question": "Kann eine Verstärkung aus einer weichen Matrix eine kontrollierbare Tinte machen?",
+          "evidence": "Eine Studie zu einer xenofreien Peptid-Biotinte ergänzte Cellulose-Nanofasern zur Verstärkung."
+        },
+        {
+          "id": "N3",
+          "time": "2026",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R02"
+          ],
+          "title": "Das photovernetzte Netzwerk bei der Ablage fixieren",
+          "question": "Wie lassen sich seitliches Verlaufen und endgültiger Nassmodul gemeinsam quantifizieren?",
+          "evidence": "Eine Direktdruckstudie verglich eine Alginat-Carboxymethylcellulose-Kontrolle mit drei PEGDA-Hybridformulierungen. In-situ-Vernetzung erlaubte zehnlagige Proben mit etwa 1 × 1 mm großen Poren. Der komplexe Modul lag bei 620–4.600 Pa."
+        },
+        {
+          "id": "N4",
+          "time": "2025",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R05"
+          ],
+          "title": "Matrix für die Zellumgebung wählen",
+          "question": "Wie bewahrt eine gedruckte Matrix nachvollziehbare Gewebesignale?",
+          "evidence": "Eine Hyaluronsäure-Biotinte ohne Zusatzstoffe wurde zur Modellierung von Knochenmark-Mikroumgebungen untersucht."
+        },
+        {
+          "id": "N5",
+          "time": "2021",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R06"
+          ],
+          "title": "Nasskontakt und lokale Stützung prüfen",
+          "question": "Wie lässt sich der kontinuierliche Kontakt einer Wundauflage prüfen?",
+          "evidence": "Forschung an thermoresponsiven Hydrogelen untersuchte einen druckbaren Träger für Wundauflagen."
+        },
+        {
+          "id": "N6",
+          "time": "2023–2025",
+          "stage": 4,
+          "lane": 1,
+          "refs": [
+            "R11",
+            "R12"
+          ],
+          "title": "Reproduzierbarkeit in Produktspezifikationen abbilden",
+          "question": "Wie wird eine Forschungsformulierung zu einem reproduzierbaren Material?",
+          "evidence": "CELLINK kündigte Vivoink an, REGEMAT 3D führte sein GelMA–Graphene Kit für Forschungsanwendungen ein. Die kommerziellen Wege betonen Materialqualität bzw. Leitfähigkeit."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Faserverstärkung einführen"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Photohärtung einführen"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Matrixumgebung prüfen"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Hydratisiertes Konstrukt prüfen"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Kontaktfunktion vergleichen"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Freigabekriterien definieren"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Chargenunterschiede ins Rheologiefenster zurückführen"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Material und Verwendung aufeinander abstimmen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Hydrogelentwicklung umfasst Fließen bei der Herstellung, Formhaltung nach der Ablage sowie Wasseraufnahme, Last und Grenzflächenverhalten im Einsatz. Wundauflagen brauchen Passform und gute Abnehmbarkeit, Weichgewebeersatz Nassmodul, Verformungserholung und Gewebekontakt, zellhaltige Tinten eine definierte biologische Umgebung. Anwendungsspezifische Endpunkte geben der Drucktreue ihren Kontext. [R01] [R02] [R05] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungspfad und Evidenz je Station",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Druckbarkeitsfenster"
+          },
+          {
+            "type": "p",
+            "text": "Arbeiten zu niedertemperaturtauglichem GelMA verknüpfen thermisches Verhalten mit hochauflösendem Mehrmaterialdruck. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Viskosität beschreibt den Extrusionswiderstand. Erholung nach Scherung und zeitabhängige Linienbreite beschreiben die Ablagestabilität. Gleiche Viskosität bei unterschiedlicher Belastungsvorgeschichte kann verschiedene Strangverschmelzung ergeben, weshalb beide Messgrößen zusammengehören."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Faserverstärkung von Peptidgelen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie zu einer xenofreien Peptid-Biotinte ergänzte Cellulose-Nanofasern zur Verstärkung. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Bewertet werden abgelegte Stränge und der hydratisierte Körper. Bei gleicher Wasseraufnahme und Geometrie lassen sich Erholung, Formhaltung und Steifigkeit mit und ohne Verstärkung vergleichen und mögliche Einbußen bei der Grenzflächenhomogenität prüfen."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Das photovernetzte Netzwerk bei der Ablage fixieren"
+          },
+          {
+            "type": "p",
+            "text": "Eine Direktdruckstudie verglich eine Alginat-Carboxymethylcellulose-Kontrolle mit drei PEGDA-Hybridformulierungen. In-situ-Vernetzung erlaubte zehnlagige Proben mit etwa 1 × 1 mm großen Poren. Der komplexe Modul lag bei 620–4.600 Pa. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Formtreue und Modul sind getrennt auszuwerten. Ein gewebetypischer Modulbereich zeigt mechanische Einstellbarkeit. Für Reparaturanwendungen sind zudem Nassgeometrie, Lastübertragung und Grenzflächenreaktion zu messen."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Matrix für die Zellumgebung wählen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Hyaluronsäure-Biotinte ohne Zusatzstoffe wurde zur Modellierung von Knochenmark-Mikroumgebungen untersucht. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Gedruckte und ungedruckte Proben derselben Formulierung lassen sich zuerst vergleichen, anschließend die Matrixchemie bei gleicher Druckgeometrie. So werden räumliche Randbedingungen und chemische Einflüsse auf den Zellphänotyp getrennt."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Nasskontakt und lokale Stützung prüfen"
+          },
+          {
+            "type": "p",
+            "text": "Forschung an thermoresponsiven Hydrogelen untersuchte einen druckbaren Träger für Wundauflagen. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Ebene trockene Proben dienen zur Vorauswahl für die Formgebung. Feuchte Passform, Volumenänderung und intakte Entfernung bilden die Anwendung einer Auflage besser ab. Gewebeersatz erfordert andere Größen wie zyklische Belastung und Grenzflächenverformung."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Reproduzierbarkeit in Produktspezifikationen abbilden"
+          },
+          {
+            "type": "p",
+            "text": "CELLINK kündigte Vivoink an, REGEMAT 3D führte sein GelMA–Graphene Kit für Forschungsanwendungen ein. Die kommerziellen Wege betonen Materialqualität bzw. Leitfähigkeit. [R11] [R12]"
+          },
+          {
+            "type": "p",
+            "text": "Freigabekriterien sollten Charge, Transport und Lagerung, Druckbarkeit und anwendungsspezifische Funktion einer Produktversion zuordnen. Forschung unterstützt solche Vergleiche mit dokumentierten Formulierungen und gemessenen Eigenschaften des Druckteils."
+          },
+          {
+            "type": "h3",
+            "text": "Ergänzende Versuchsvergleiche"
+          },
+          {
+            "type": "h3",
+            "text": "Offene Wundauflagen und Proteinträger"
+          },
+          {
+            "type": "p",
+            "text": "Eine 2023 in Nano Convergence erschienene Studie fertigte offene und geschlossene Wundauflagen aus Alginat und Zinkoxid-Tetrapoden. Geprüft wurden Proteinadsorption, antibakterielle Wirkung und Ex-vivo-Hautverträglichkeit. Der Kontakt der Partikelarme mit der Oberfläche machte die Geometrie zur funktionellen Variable.[R2605]"
+          },
+          {
+            "type": "p",
+            "text": "Wundverbände sind mit einer sich ständig verändernden, feuchten Oberfläche konfrontiert. Die Wahl offener Poren beeinflusst gleichzeitig den Flüssigkeits- und Gasaustausch sowie die Exposition gegenüber Partikeln; daher kann die optimale Porosität nicht allein anhand eines einzelnen antibakteriellen Effekts bestimmt werden. Die Proteinadsorption an einen Träger bedeutet nicht zwangsläufig, dass die gewünschte biologische Aktivität nach Erreichen des Gewebes erhalten bleibt; Adsorptionskapazität, strukturelle Integrität nach der Freisetzung und Rezeptorfunktion sollten als separate, aber zusammenhängende Faktoren betrachtet werden."
+          },
+          {
+            "type": "p",
+            "text": "stellt eine Verlagerung der lokalen Wirkstoffabgabe von geschlossenen Depots hin zu großflächigem, dynamischem Kontakt dar. Im Vergleich zu N2 verwenden beide Gele als Träger für funktionelle Komponenten, jedoch erfordert die Wundapplikation die Berücksichtigung von Exsudat, Verbandwechseln und lokalen Formveränderungen. Zukünftige Forschung könnte den Krankheitsverlauf als externen Faktor einbeziehen und die Leistung desselben Materials unter verschiedenen Kontakt- und Flüssigkeitsaustauschbedingungen vergleichen, um zu entscheiden, ob die Struktur, die Oberflächeneigenschaften oder das Freisetzungsprogramm angepasst werden müssen. Solche Vergleiche tragen dazu bei, nicht alle Veränderungen allein der Materialzusammensetzung zuzuschreiben."
+          }
+        ]
+      },
+      {
+        "title": "Messvergleiche beim Hydrogelaufbau",
+        "blocks": [
+          {
+            "type": "table",
+            "headers": [
+              "Versuchsweg",
+              "Messung und Ergebnis",
+              "Einordnung"
+            ],
+            "rows": [
+              [
+                "Peptid–Nanofaser [R01]",
+                "Nach einer Woche betrug die MG63-Vitalität 95 % und 96 % für Gel 1:1 und 1:2 und 50 % für Gel 3:1.",
+                "Formulierung und Zeit erhalten, statt Formulierungen zusammenzufassen."
+              ],
+              [
+                "PEGDA-Hybrid-Direktdruck [R02]",
+                "Drei PEGDA-Stufen mit 4,5 %, 6,5 % und 10 % w/v wurden mit 4 % w/v Alginat und 4 % w/v CMC als Kontrolle verglichen. Komplexe Module lagen bei 620–4.600 Pa.",
+                "Verlaufen der Stränge, Porenform und Steifigkeit nach Härtung gemeinsam prüfen."
+              ],
+              [
+                "Modifizierte Hyaluronsäure [R05]",
+                "Physikalische und kovalente Photovernetzung befinden sich im selben Polymer. Die Studie verglich vorherige Einbettung mit Platzierung im geformten Konstrukt.",
+                "Die Strukturwahl ändert zugleich die Prozessvorgeschichte der Zellen."
+              ]
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Wie Selbstorganisation den Vergleich verändert"
+          },
+          {
+            "type": "p",
+            "text": "Netti und Kollegen stabilisierten das Material durch Peptid-Selbstorganisation und ein Fasernetz ohne spätere chemische Härtung. Abbildung 4 trennt 24 Stunden, 72 Stunden und eine Woche. Gel 3:1 fiel von rund 65 % nach 24 Stunden auf rund 30 % nach 72 Stunden und erreichte nach einer Woche rund 50 %. Gel 1:1 und 1:2 erreichten rund 95 % und 96 %. Zusammensetzung und Zeitpunkt beeinflussen die Rangfolge, daher sind Zellreferenz, Test und Beobachtungszeitraum anzugleichen. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Selbststützung steigt nicht einfach proportional zum Zusatzgehalt. Die Formulierung ändert Viskoelastizität und Zellkontakt. Rheologie und Verformung in Abbildung 3 lassen sich nach Formulierung der Vitalität in Abbildung 4 zuordnen. Für längerfristigen Weichgewebeersatz Nass-Wechsellast und Grenzflächenparameter ergänzen, um den Zusammenhang von Druckstabilität und Langzeitleistung zu prüfen. [R01]"
+          },
+          {
+            "type": "h3",
+            "text": "In-situ-Härtung beeinflusst Geometrie und Mechanik"
+          },
+          {
+            "type": "p",
+            "text": "Rohauer und Kollegen trennten Porentreue und Verlaufen nach Ablage mit zweilagigen Strangversuchen, ergänzt durch Photo-DSC und Photorheologie. In-situ-Belichtung verbesserte die Geometrie der PEGDA-Gruppen und ermöglichte zehn Lagen mit etwa 1 × 1 mm Öffnungen. Spannweite, Porenöffnung und komplexen Modul nach der Härtung innerhalb derselben Formulierung vergleichen, um Rheologie und rasche Netzwerkbildung zu trennen. Gewebetypische Modulbereiche dienen der Vorauswahl, gefolgt von Grenzflächen-, Wassertransport- und Dauerlastprüfung. [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "Stütznetz bilden und anschließend Gewebeumgebung definieren"
+          },
+          {
+            "type": "p",
+            "text": "Arbeiten an modifizierter Hyaluronsäure kombinieren reversible hydrophobe Wechselwirkungen mit anschließender kovalenter Fixierung. Materialerholung verbindet Zellplatzierung und Geometrie. Bedingungen während der Formgebung und nach der Herstellung sind unterschieden. Material- und Platzierungseffekte anhand ortsgleicher Vitalität, Phänotyp und Zellzahl mit Kontrolle der Randbedingungen trennen. [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "Bereitstellungswege gliedern und prüfen"
+          },
+          {
+            "type": "p",
+            "text": "Bei Wundauflagen sind Kontaktverlust oder Riss bei nasser Entfernung wichtige Fehler. Die Bewertung geht von trockener Geometrie zu Kontakt und Integrität nach Nutzung. Gewebeähnliche Konstrukte verlangen Nassmodul unter passender Last, Maßhaltigkeit und Phänotyp. Forschungsreagenzien nach Charge und Aufgabe vergleichen, Translation verknüpft Materialcharge und Fertigungs- sowie Nachbehandlungsfenster mit denselben Funktionsmessungen. [R02] [R06] [R11] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Industrielle Materialwege",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Die Vivoink-Ankündigung verbindet Materialqualität mit Translationsvorbereitung. Das GelMA–Graphene Kit bietet Leitfähigkeit für Forschungsanwendungen. Ein gemeinsamer Drucker kann unterschiedliche Materialien verarbeiten. Freigabevergleiche brauchen jedoch Angaben zu Formulierung, Einsatzbereich und Gerät, insbesondere zu Nassmechanik, Chargendrift und Lagerdauer. [R11] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Wie Patentschriften die Formfreiheit adressieren",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN110126254A behandelt die Herstellung innerer Gelgeometrien ohne Stütze. CN114470336A betrifft gemeinsam extrudierte und geformte Hydrogelmischungen. CN120420502A nutzt eine Mikrosphärentinte zur schichtweisen Photohärtung. Die Mechanismen adressieren innere Stützung, Materialübergänge und Partikelanordnung. Entsprechende Prüfungen erfassen Kollaps, Grenzflächenrisse und Partikelverteilung. [R07] [R08] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "Vergleichbare Entwicklungsstudien",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Zunächst werden Druck- und Gusskörper derselben Matrixcharge verglichen. Zusätze folgen nach Festlegung des Prozessfensters. Zu berichten sind Ist-Porenweite, Masse- und Volumenänderung bei Hydratation, Erholung bei zyklischer Dehnung und funktionelle Messgrößen im Gewebemodell. Gleichmäßige, aber weiche Körper oder formtreue, später quellende Proben erklären die Auswahl nach Anwendung. [R01] [R02] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Beobachtbare Fortschritte in den nächsten drei Jahren",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Vorrang haben reproduzierbare rheologische Erholung über Chargen, gleichmäßige Vernetzung über Geometrien und Funktionserhalt nach Hydratation. Fortschritte bei individueller Reparatur stützen sich auf aufgabenbezogen validierte Materialbibliotheken und Bauteildaten. Gemeinsame Tinten brauchen ortsspezifische Bewertungen von Kontakt, Verformung und Transport."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Xeno-Free Biocompatible Peptide-Based Bioinks Reinforced with Cellulose Nanofibers for 3D Printing.",
+        "year": "2025",
+        "url": "https://doi.org/10.1002/adhm.202501729",
+        "kind": "paper",
+        "source": "10.1002/adhm.202501729"
+      },
+      {
+        "id": "R02",
+        "title": "Photo Crosslinkable Hybrid Hydrogels for High Fidelity Direct Write 3D Printing: Rheology, Curing Kinetics, and Bio-Scaffold Fabrication.",
+        "year": "2026",
+        "url": "https://doi.org/10.3390/jfb17010030",
+        "kind": "paper",
+        "source": "10.3390/jfb17010030"
+      },
+      {
+        "id": "R04",
+        "title": "A Psychrophilic GelMA: Breaking Technical and Immunological Barriers for Multimaterial High-Resolution 3D Bioprinting.",
+        "year": "2022",
+        "url": "https://doi.org/10.1021/acs.biomac.2c01019",
+        "kind": "paper",
+        "source": "10.1021/acs.biomac.2c01019"
+      },
+      {
+        "id": "R05",
+        "title": "Additive-free hyaluronic acid-based bioink for 3D bioprinting of bone marrow microenvironments.",
+        "year": "2025",
+        "url": "https://doi.org/10.1016/j.mtbio.2025.102512",
+        "kind": "paper",
+        "source": "10.1016/j.mtbio.2025.102512"
+      },
+      {
+        "id": "R06",
+        "title": "3D Printing of Thermoresponsive Hydrogel Laden with an Antimicrobial Agent towards Wound Healing Applications.",
+        "year": "2021",
+        "url": "https://doi.org/10.3390/bioengineering8060079",
+        "kind": "paper",
+        "source": "10.3390/bioengineering8060079"
+      },
+      {
+        "id": "R07",
+        "title": "Method for interior support-free 3D printing of bionic support based on gel",
+        "year": "2019",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN110126254A",
+        "kind": "patent",
+        "source": "CN110126254A"
+      },
+      {
+        "id": "R08",
+        "title": "Mixed hydrogel capable of being co-extruded and co-molded and method for 3D printing of hydrogel stent",
+        "year": "2022",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN114470336A",
+        "kind": "patent",
+        "source": "CN114470336A"
+      },
+      {
+        "id": "R09",
+        "title": "Hydrogel microsphere-based bio-ink capable of being used for layer-by-layer photocuring 3D printing",
+        "year": "2025",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120420502A",
+        "kind": "patent",
+        "source": "CN120420502A"
+      },
+      {
+        "id": "R11",
+        "title": "CELLINK announces CELLINK Vivoink, our first medical-grade bioink",
+        "year": "2023",
+        "url": "https://www.cellink.com/cellink-announces-cellink-vivoink-our-first-medical-grade-bioink/",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R12",
+        "title": "REGEMAT 3D launches GelMA–Graphene Kit",
+        "year": "2025",
+        "url": "https://www.regemat3d.com/regemat-3d-launches-gelma-graphene-kit-the-only-electroconductivegelma-based-bioink-for-advanced-research/",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R2605",
+        "title": "3D-printed wound dressing platform for protein administration based on alginate and zinc oxide tetrapods",
+        "year": "2023",
+        "source": "Nano Convergence",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1186/s40580-023-00401-6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1301 @@
+{
+  "zh": {
+    "id": "H07",
+    "p": "P4",
+    "title": "脊柱置钉与截骨手术的个体化导板",
+    "subtitle": "把规划坐标变成可检验的骨面接触、路径和切面",
+    "thesis": "置钉导板要控制入口和轴线，截骨导板还要把切面与最终矫正保持在一起。加工精度、术中就位和切后固定各有独立误差，比较必须记录哪一步发生偏差。",
+    "questions": [],
+    "graph": {
+      "title": "脊柱置钉与截骨的计划转移",
+      "summary": "两类手术从解剖边界分为轨迹和切面，在骨面就位处汇合，再分别用术后置钉和矫正目标核对。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2022–2023",
+          "refs": [
+            "R01",
+            "R02",
+            "R06"
+          ],
+          "title": "在影像上定义约束",
+          "question": "哪项解剖约束决定手术目标？",
+          "evidence": "置钉路径需保留与关键解剖的空间关系，截骨方向则需连到肢体轴线及计划矫正。高位胫骨研究还使用负重影像。"
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2020–2026",
+          "refs": [
+            "R04",
+            "R11"
+          ],
+          "title": "把螺钉轨迹编码进导向",
+          "question": "入口误差与方向误差各占多少？",
+          "evidence": "导向器控制入口和方向。脊柱研究逐轨迹核查计划实施与术后位置，避免将同一患者的多枚螺钉视为独立病人。"
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2022–2023",
+          "refs": [
+            "R01",
+            "R03",
+            "R05"
+          ],
+          "title": "用切面实现计划矫正",
+          "question": "完成切面是否达到矫正目标？",
+          "evidence": "胫骨、踝关节与小儿股骨的试验使用计划切面和个体化导板。切完后的骨段位置与固定结果仍须独立核对。"
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2017–2023",
+          "refs": [
+            "R09",
+            "R10"
+          ],
+          "title": "核查骨面就位和处理后几何",
+          "question": "接触面在实际受载时是否稳定？",
+          "evidence": "改变接触位置会改变就位误差，灭菌与载荷可能改变成品贴合。检验应覆盖真实就位状态。"
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 0,
+          "time": "2026",
+          "refs": [
+            "R04"
+          ],
+          "title": "置钉准确率与流程耗时分开",
+          "question": "术中效率与准确置钉怎样变化？",
+          "evidence": "C1–C2 比较纳入 21 位患者、84 枚螺钉。准确置钉为导板 38/40、徒手 41/44，导板组平均手术时间 126.6 分钟，徒手组 171.4 分钟。"
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 2,
+          "time": "2023–2025",
+          "refs": [
+            "R05",
+            "R15"
+          ],
+          "title": "截骨角度与功能并行",
+          "question": "骨段移动和固定会损失多少矫正？",
+          "evidence": "前瞻性高位胫骨队列与回顾性小儿股骨研究属于不同设计。应按术式同时保留轴线偏差、额外调整、透视和功能结果。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "保留轨迹安全边界"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "把轴线写入切面"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "验证入口和贴合"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "kind": "advance",
+          "label": "对照接触与切面"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "复测术后轨迹"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "复测最终矫正"
+        },
+        {
+          "from": "N5",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "轨迹偏差回溯计划"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "矫正损失回溯骨段与固定"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究对象与评价边界",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "脊柱导板与矫形截骨导板共享影像到器械流程。前者评价螺钉入口、方向和偏离分级，后者需要分别量化切面和最终矫正，避免将导板就位等同于术后对线。 [R01] [R04] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与研究解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "在影像上定义约束"
+          },
+          {
+            "type": "p",
+            "text": "置钉路径需保留与关键解剖的空间关系，截骨方向则需连到肢体轴线及计划矫正。高位胫骨研究还使用负重影像。 [R01] [R02] [R06]"
+          },
+          {
+            "type": "h3",
+            "text": "把螺钉轨迹编码进导向"
+          },
+          {
+            "type": "p",
+            "text": "导向器控制入口和方向。脊柱研究逐轨迹核查计划实施与术后位置，避免将同一患者的多枚螺钉视为独立病人。 [R04] [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "用切面实现计划矫正"
+          },
+          {
+            "type": "p",
+            "text": "胫骨、踝关节与小儿股骨的试验使用计划切面和个体化导板。切完后的骨段位置与固定结果仍须独立核对。 [R01] [R03] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "核查骨面就位和处理后几何"
+          },
+          {
+            "type": "p",
+            "text": "改变接触位置会改变就位误差，灭菌与载荷可能改变成品贴合。检验应覆盖真实就位状态。 [R09] [R10]"
+          },
+          {
+            "type": "h3",
+            "text": "置钉准确率与流程耗时分开"
+          },
+          {
+            "type": "p",
+            "text": "C1–C2 比较纳入 21 位患者、84 枚螺钉。准确置钉为导板 38/40、徒手 41/44，导板组平均手术时间 126.6 分钟，徒手组 171.4 分钟。 [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "截骨角度与功能并行"
+          },
+          {
+            "type": "p",
+            "text": "前瞻性高位胫骨队列与回顾性小儿股骨研究属于不同设计。应按术式同时保留轴线偏差、额外调整、透视和功能结果。 [R05] [R15]"
+          },
+          {
+            "type": "p",
+            "text": "C1–C2 研究中平均透视为 21.90 秒与 27.09 秒，两组置钉准确率接近。可将主要观察定义为流程耗时，并将越界分级、每例螺钉数和经验作为同时记录的分层变量。 [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "高位胫骨前瞻比较"
+          },
+          {
+            "type": "p",
+            "text": "2025 年高位胫骨截骨前瞻性研究将30名患者随机分组，报告手术时间及术中 X 线暴露减少，矫正效果与功能结局未表现出相应优势。时间节省与治疗效果是两条需要分别验证的结果链。[R15]"
+          },
+          {
+            "type": "p",
+            "text": "高位胫骨截骨具有明确的矫正目标和相对可标准化的流程，适合同时比较手术资源与患者恢复。随机分组的前瞻研究将时间和影像暴露与矫正、功能分开测量，显示导板价值可能首先体现在执行效率。对资源紧张的日间流程，这种收益需要与交付成本共同评价。"
+          },
+          {
+            "type": "p",
+            "text": "进一步研究应使用相同的影像计划、固定方案和康复路径，减少执行工具之外的差异。矫正角度应同时报告目标值、实际值和离群分布；功能则观察预先设定的时间点，并记录术前水平。这样可以判断相近的平均结果是否掩盖复杂病例或较差结果的减少。"
+          },
+          {
+            "type": "p",
+            "text": "评价还应跟踪取消、延期和临时转换。若节省的术中时间被生产等待抵消，服务能力未必改善；若生产稳定且术中波动缩小，则可能使排程更可预测，形成另一种可量化收益。"
+          },
+          {
+            "type": "h3",
+            "text": "脊柱轨迹执行率"
+          },
+          {
+            "type": "p",
+            "text": "2020 年在线发表、2021 年见刊的临床研究在 15 名患者中使用患者特异性脊柱导板，实施 76 条引导轨迹。部分预定轨迹因设计或其他实际条件改用替代方式。导板使用率与中途转换情况，是准确度之外的重要临床信息。[R11]"
+          },
+          {
+            "type": "p",
+            "text": "计划执行率揭示精度统计之外的实际使用过程。部分轨迹因为治疗决策改变而取消，部分因为导板设计或术中条件而转换，两者应分别记录。以全部计划作为分母，再报告实际完成轨迹的精度，可以同时回答交付可用性和技术表现。"
+          },
+          {
+            "type": "p",
+            "text": "连续病例登记可为每条轨迹保留设计批准、试配、钻孔和置钉状态，记录转换发生的时点及原因。这样能够判断问题是在术前沟通、接触设计还是操作现场出现。对于未使用导板的病例，仍应跟踪最终结果，使选择性成功不会遮蔽整个流程。"
+          },
+          {
+            "type": "p",
+            "text": "此类数据也适合反馈企业。若转换集中在相同骨面或节段，设计团队可修改结构；若主要来自计划变化，则应改善术前讨论和备用方案，使产品更适合实际治疗决策。"
+          },
+          {
+            "type": "h3",
+            "text": "骨面接触与就位"
+          },
+          {
+            "type": "p",
+            "text": "2017 年在线发表的桡骨实验在相同骨模型上改变导板位置和侧向延伸。中段导板的定位误差较大，延伸改善平移但可能增加部分旋转误差。研究说明几何上可贴合的结构仍可能存在多种就位姿态。[R09]"
+          },
+          {
+            "type": "p",
+            "text": "接触面决定导板在患者坐标中的刚体位姿。对于近似轴对称的骨段，沿轴平移和绕轴旋转可能仍有自由度；复杂骨端虽然提供更多形态信息，也可能需要更大暴露范围。合理设计应让独特形态参与定位，同时避免对难以暴露或容易改变的表面过度依赖。"
+          },
+          {
+            "type": "p",
+            "text": "若导板设计在计算机中只有一个理想匹配位置，仍需通过重复人工放置测试是否存在多个近似稳定位置。测量每次就位的六自由度偏差，才能确定增大接触面积是在增强方向约束还是增加软组织干涉。这项实验为后续灭菌与储存研究提供了区分几何变形和就位变动的基准。"
+          },
+          {
+            "type": "h3",
+            "text": "灭菌后的受力贴合"
+          },
+          {
+            "type": "p",
+            "text": "2023 年研究比较蒸汽灭菌前后的导板精度与就位，材料和灭菌都会影响结果，就位载荷也会改变实验中的贴合表现。成品质量因此应指向准备使用时的状态。[R10]"
+          },
+          {
+            "type": "p",
+            "text": "灭菌后的间隙变化与加载条件相互关联，说明“能够放回模型”不是一个完整性能终点。较大力量可能暂时压低间隙，也可能把应力转移到固定点或薄弱连接处。评估时应同时关注所需就位力、加载后的位姿及卸载后的恢复，而不是仅判断最终是否贴紧。"
+          },
+          {
+            "type": "p",
+            "text": "从误差传播看，后处理造成的几何变化可以被支撑方式放大，也可能被某些接触区吸收。导板应在实际使用的固定状态下验证，但不能以不明确的人工按压力掩盖批次差异。标准化夹持和测量载荷能够让材料比较具有可重复性，并为医院规定的放行检查提供依据。"
+          }
+        ]
+      },
+      {
+        "title": "企业技术与服务路线",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "FIREFLY 的 2016 和 2018 年 FDA 记录展示患者匹配脊柱轨迹的产品化。Materialise 截骨规划强调医生确认和导板交付。QUANTUM 的 FDA 文档属于足踝患者匹配器械，可用于理解流程接口，两类脊柱和截骨结果仍按术式评价。 [R12] [R13] [R14] [R16]"
+          }
+        ]
+      },
+      {
+        "title": "专利设计与制造接口",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN216294233U 针对经皮脊柱定位，CN114617608A 针对胫骨横向骨搬运的截骨导板。两者把不同物理约束固化到形状：入口和导向轴线，或切面和作用范围。评价应按各自的执行边界测量。 [R07] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "学术与产业的结合点",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "制造服务可交付几何与验收记录，医院可关联术中就位、实际使用与术后测量。把不匹配、接触受阻和临时改用其他工具纳入病例台账，可以解释器械规划后为何未用。 [R06] [R10] [R11] [R14]"
+          }
+        ]
+      },
+      {
+        "title": "未来演进与验证指标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "后续研究可按术式比较传统、纯导板与导板加独立定位三路，记录每例有无改变计划、导板一次就位、辐射、最终位置和额外工时。指南明确共享的是质保过程，而轨迹阈值和临床端点来自各术式。 [R04] [R06] [R15]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "3D MEDICAL IMAGING ANALYSIS, PATIENT-SPECIFIC INSTRUMENTATION AND INDIVIDUALIZED IMPLANT DESIGN, WITH ADDITIVE MANUFACTURING CREATES A NEW PERSONALIZED HIGH TIBIAL OSTEOTOMY TREATMENT OPTION",
+        "url": "https://doi.org/10.1142/s0219519423400419",
+        "year": "2023",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "Virtual Surgical Planning and Patient-Specific Instruments for Correcting Lower Limb Deformities in Pediatric Patients: Preliminary Results from the In-Office 3D Printing Point of Care.",
+        "url": "https://doi.org/10.3390/jpm13121664",
+        "year": "2023",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "Intra-articular opening wedge osteotomy for varus ankle arthritis with computer-assisted planning and patient-specific surgical guides: a retrospective case series.",
+        "url": "https://doi.org/10.1186/s12891-022-05437-z",
+        "year": "2022",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Clinical and Radiological Outcomes of C1-C2 Fixation: 3D-Printed Template vs. Free-Hand Technique.",
+        "url": "https://doi.org/10.3390/jcm15020408",
+        "year": "2026",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Application of 3D-printed osteotomy guide plates in proximal femoral osteotomy for DDH in children: a retrospective study.",
+        "url": "https://doi.org/10.1186/s13018-023-03801-w",
+        "year": "2023",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "Vital Role of In-House 3D Lab to Create Unprecedented Solutions for Challenges in Spinal Surgery, Practical Guidelines and Clinical Case Series",
+        "url": "https://doi.org/10.3390/jpm12030395",
+        "year": "2022",
+        "source": "",
+        "id": "R06"
+      },
+      {
+        "title": "3D printing spine percutaneous precise positioning guide plate",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN216294233U",
+        "year": "2022",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "3D printing method of osteotomy guide plate for tibia transverse bone transport operation",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN114617608A",
+        "year": "2022",
+        "source": "Espacenet",
+        "id": "R08"
+      },
+      {
+        "title": "Positioning error of custom 3D-printed surgical guides for the radius: influence of fitting location and guide design",
+        "url": "https://doi.org/10.1007/s11548-017-1682-6",
+        "year": "2017",
+        "source": "International Journal of Computer Assisted Radiology and Surgery",
+        "id": "R09"
+      },
+      {
+        "title": "The Effect of Sterilization on the Accuracy and Fit of 3D-Printed Surgical Guides",
+        "url": "https://doi.org/10.3390/ma16155305",
+        "year": "2023",
+        "source": "Materials",
+        "id": "R10"
+      },
+      {
+        "title": "Accuracy of Patient-Specific 3D-Printed Drill Guides for Pedicle and Lateral Mass Screw Insertion: An Analysis of 76 Cervical and Thoracic Screw Trajectories",
+        "url": "https://doi.org/10.1097/BRS.0000000000003747",
+        "year": "2020在线／2021卷期",
+        "source": "Spine",
+        "id": "R11"
+      },
+      {
+        "title": "FIREFLY Pedicle Screw Navigation Guide K162419",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm?ID=K162419",
+        "year": "2016",
+        "source": "FDA",
+        "id": "R12"
+      },
+      {
+        "title": "FIREFLY Pedicle Screw Navigation Guide K181399",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K181399",
+        "year": "2018",
+        "source": "FDA",
+        "id": "R13"
+      },
+      {
+        "title": "3D Planning and Guides for Osteotomies",
+        "url": "https://www.materialise.com/en/healthcare/osteotomy-guides",
+        "year": "2026访问",
+        "source": "Materialise",
+        "id": "R14"
+      },
+      {
+        "title": "3D-printed patient-specific instrumentation and the freehand technique in high-tibial osteotomy: A prospective cohort-comparative study in an outpatient setting",
+        "url": "https://doi.org/10.1002/jeo2.70088",
+        "year": "2025",
+        "source": "Journal of Experimental Orthopaedics",
+        "id": "R15"
+      },
+      {
+        "title": "K230313: QUANTUM Patient Specific Instrumentation System",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K230313.pdf",
+        "year": "2023",
+        "source": "FDA",
+        "id": "R16"
+      }
+    ]
+  },
+  "en": {
+    "id": "H07",
+    "p": "P4",
+    "title": "Patient-specific guides for spinal screw placement and osteotomy",
+    "subtitle": "Translate planning coordinates into verifiable bone contact, trajectories and cut planes",
+    "thesis": "Screw guides control entry and axis. Osteotomy guides must also link the cut plane to the final correction. Manufacturing, seating and fixation each introduce distinct errors, and comparisons should identify the stage at which they arise.",
+    "questions": [],
+    "graph": {
+      "title": "Plan transfer in spinal screw placement and osteotomy",
+      "summary": "The procedures branch from anatomy into screw trajectories and cut planes. They share bone seating checks and diverge again at postoperative accuracy and correction.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2022–2023",
+          "refs": [
+            "R01",
+            "R02",
+            "R06"
+          ],
+          "title": "Define constraints in imaging",
+          "question": "Which anatomical constraint determines the target?",
+          "evidence": "Screw plans retain clearance from critical anatomy. Cut direction depends on limb axis and target correction. High tibial osteotomy research also used weight-bearing imaging."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2020–2026",
+          "refs": [
+            "R04",
+            "R11"
+          ],
+          "title": "Encode screw trajectories in a guide",
+          "question": "How do entry and angular errors differ?",
+          "evidence": "Guides control entry and direction. Spinal studies verify plan execution and achieved position by trajectory, accounting for multiple screws per patient in analysis."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2022–2023",
+          "refs": [
+            "R01",
+            "R03",
+            "R05"
+          ],
+          "title": "Use the cut plane to realize correction",
+          "question": "Does cutting achieve the planned correction?",
+          "evidence": "Tibial, ankle and pediatric femoral studies used planned planes and personalized guides. Achieved segment position and fixation after cutting need separate checks."
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2017–2023",
+          "refs": [
+            "R09",
+            "R10"
+          ],
+          "title": "Check seating on bone and geometry after processing",
+          "question": "Is the contact surface stable under load?",
+          "evidence": "Changing contact location changes seating error. Sterilization and load can affect fit. Verification should represent the actual seated condition."
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 0,
+          "time": "2026",
+          "refs": [
+            "R04"
+          ],
+          "title": "Separate screw accuracy and procedure time",
+          "question": "How do efficiency and screw accuracy change?",
+          "evidence": "A C1–C2 comparison included 21 patients and 84 screws. Accurate placement was 38/40 with templates and 41/44 freehand. Mean operating times were 126.6 and 171.4 minutes, respectively."
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 2,
+          "time": "2023–2025",
+          "refs": [
+            "R05",
+            "R15"
+          ],
+          "title": "Track angular correction and function",
+          "question": "How much correction is lost in reposition and fixation?",
+          "evidence": "The prospective high tibial cohort and retrospective pediatric femoral study address different procedures and designs. Record alignment deviation, adjustments, fluoroscopy and function by procedure."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Retain trajectory margins"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Encode limb axis in cut plane"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Verify entry and fit"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Check contact and cut plane"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Measure postoperative trajectories"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Measure achieved correction"
+        },
+        {
+          "from": "N5",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Trace trajectory deviations to planning"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Trace correction loss to segments and fixation"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Research scope and outcomes",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Spinal and corrective osteotomy guides share an image-to-instrument workflow. The former assesses screw entry, direction and breach grade. The latter quantifies cut plane and achieved correction separately. [R01] [R04] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathways and evidence",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Define constraints in imaging"
+          },
+          {
+            "type": "p",
+            "text": "Screw plans retain clearance from critical anatomy. Cut direction depends on limb axis and target correction. High tibial osteotomy research also used weight-bearing imaging. [R01] [R02] [R06]"
+          },
+          {
+            "type": "h3",
+            "text": "Encode screw trajectories in a guide"
+          },
+          {
+            "type": "p",
+            "text": "Guides control entry and direction. Spinal studies verify plan execution and achieved position by trajectory, accounting for multiple screws per patient in analysis. [R04] [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "Use the cut plane to realize correction"
+          },
+          {
+            "type": "p",
+            "text": "Tibial, ankle and pediatric femoral studies used planned planes and personalized guides. Achieved segment position and fixation after cutting need separate checks. [R01] [R03] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "Check seating on bone and geometry after processing"
+          },
+          {
+            "type": "p",
+            "text": "Changing contact location changes seating error. Sterilization and load can affect fit. Verification should represent the actual seated condition. [R09] [R10]"
+          },
+          {
+            "type": "h3",
+            "text": "Separate screw accuracy and procedure time"
+          },
+          {
+            "type": "p",
+            "text": "A C1–C2 comparison included 21 patients and 84 screws. Accurate placement was 38/40 with templates and 41/44 freehand. Mean operating times were 126.6 and 171.4 minutes, respectively. [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "Track angular correction and function"
+          },
+          {
+            "type": "p",
+            "text": "The prospective high tibial cohort and retrospective pediatric femoral study address different procedures and designs. Record alignment deviation, adjustments, fluoroscopy and function by procedure. [R05] [R15]"
+          },
+          {
+            "type": "p",
+            "text": "In the C1–C2 study, mean fluoroscopy times were 21.90 and 27.09 seconds, with similar screw accuracy. Procedure time can be the primary workflow measure, with breach grade, screws per case and experience retained for stratification. [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "Prospective high tibial osteotomy comparison"
+          },
+          {
+            "type": "p",
+            "text": "The 2025 prospective study of high tibial osteotomy randomly assigned 30 patients to different groups. Reports indicated reduced operation time and intraoperative radiographic exposure, but no corresponding advantage in corrective effect or functional outcomes. Time savings and treatment efficacy are two separate outcome chains that need to be validated. [R15]"
+          },
+          {
+            "type": "p",
+            "text": "High tibial osteotomy has a clear corrective goal and a relatively standardized procedure, making it suitable for comparing surgical resources and patient recovery simultaneously. Prospective randomized studies, measuring time and imaging exposure separately from correction and function, suggest that the value of the guide may primarily lie in its efficiency. For resource-constrained day procedures, this benefit needs to be evaluated in conjunction with delivery costs."
+          },
+          {
+            "type": "p",
+            "text": "Further research should use the same imaging plan, fixation protocol, and rehabilitation pathway to minimize variability beyond the implementation tools. Correction angles should be reported simultaneously with target values, actual values, and outlier distributions; function should be observed at pre-defined time points, and preoperative levels should be recorded. This allows for assessment of whether similar average results mask the reduction in complex cases or poorer outcomes."
+          },
+          {
+            "type": "p",
+            "text": "The evaluation should also track cancellations, postponements, and temporary conversions. If the saved intraoperative time is offset by production wait times, service capacity may not necessarily improve; however, if production is stable and intraoperative fluctuations are reduced, scheduling may become more predictable, creating another quantifiable benefit."
+          },
+          {
+            "type": "h3",
+            "text": "Execution rates of spinal trajectories"
+          },
+          {
+            "type": "p",
+            "text": "The clinical study, published online in 2020 and in the journal in 2021, used a patient-specific spinal guide in 15 patients, implementing 76 guide tracks. Some planned tracks were modified due to design or other practical conditions. Guide track usage and mid-track switching are important clinical information in addition to accuracy. [R11]"
+          },
+          {
+            "type": "p",
+            "text": "The plan execution rate reveals the actual usage process beyond accuracy statistics. Some trajectories are cancelled due to changes in treatment decisions, and others are changed due to guide design or intraoperative conditions; both should be recorded separately. Reporting the accuracy of actual completed trajectories using the entire plan as the denominator provides a comprehensive answer to both delivery availability and technical performance."
+          },
+          {
+            "type": "p",
+            "text": "Continuous case registration can retain the design approval, fitting, drilling, and screw placement status for each trajectory, recording the timing and reason for any changes. This allows for determining whether the problem arose during preoperative communication, contact with the design, or on-site. For cases where guides were not used, the final outcome should still be tracked to ensure that selective success does not obscure the entire process."
+          },
+          {
+            "type": "p",
+            "text": "Data is also suitable for feedback to companies. If the changes are concentrated on the same bone surface or segment, the design team can modify the structure; if they mainly come from changes in the plan, preoperative discussions and backup plans should be improved to make the product more suitable for actual treatment decisions."
+          },
+          {
+            "type": "h3",
+            "text": "Bone-surface contact and seating"
+          },
+          {
+            "type": "p",
+            "text": "The radial bone experiment published online in 2017 involved changing the position and lateral extension of the surgical guide on the same bone model. The mid-section surgical guide showed a larger positioning error; extension improved translation but may increase some rotational error. This study indicates that geometrically conformable structures may still exhibit multiple positioning postures. [R09]"
+          },
+          {
+            "type": "p",
+            "text": "The contact surface of the surgical guide determines its rigid body pose in the patient's coordinate system. For approximately axisymmetric bone segments, translation along the axis and rotation about the axis may still have degrees of freedom; complex bone ends, while providing more morphological information, may also require a larger exposure area. A well-designed system should allow unique morphology to participate in positioning while avoiding over-reliance on surfaces that are difficult to expose or easily altered."
+          },
+          {
+            "type": "p",
+            "text": "If the surgical guide design has only one ideal matching position in the computer, it is still necessary to repeatedly test manually to see if multiple approximately stable positions exist. Measuring the six degrees of freedom deviation of each placement is necessary to determine whether increasing the contact area enhances directional constraints or increases soft tissue interference. This experiment provides a benchmark for subsequent sterilization and storage studies to distinguish between geometric deformation and placement variations."
+          },
+          {
+            "type": "h3",
+            "text": "Loaded fit after sterilization"
+          },
+          {
+            "type": "p",
+            "text": "The 2023 study compared the accuracy and positioning of surgical guides before and after steam sterilization. Materials and sterilization processes both affect the results, and the positioning load also alters the fit performance during the experiment. Therefore, the final product quality should reflect its state at the point of preparation for use. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "The gap changes after sterilization are correlated with loading conditions, indicating that \"being able to return the model\" is not a complete performance endpoint. Larger forces may temporarily reduce the gap or transfer stress to fixed points or weak connections. Evaluation should consider the required positioning force, the post-loading pose, and the recovery after unloading, rather than simply determining whether the model ultimately fits snugly."
+          },
+          {
+            "type": "p",
+            "text": "From the perspective of error propagation, geometric changes caused by post-processing can be amplified by the support method or absorbed by certain contact areas. surgical guides should be verified under actual use in a fixed state, but batch differences should not be masked by ambiguous manual pressing pressure. Standardized clamping and measurement loads enable repeatable material comparisons and provide a basis for hospital-mandated release checks."
+          }
+        ]
+      },
+      {
+        "title": "Industry technologies and services",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "FIREFLY's 2016 and 2018 FDA records document patient-matched spinal trajectories as a product. Materialise osteotomy planning emphasizes clinician review and guide delivery. QUANTUM's FDA record concerns ankle instrumentation and provides a workflow comparison. Spinal and osteotomy outcomes remain procedure-specific. [R12] [R13] [R14] [R16]"
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and production interfaces",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN216294233U addresses percutaneous spinal localization. CN114617608A concerns an osteotomy guide for transverse tibial transport. The designs encode distinct physical constraints: entry and guidance axis, or cutting plane and extent. Verification can follow each implementation boundary. [R07] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "Research and industry connections",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Manufacturing services can deliver geometry with inspection records. Clinics can link seating, actual use and postoperative assessment. Recording mismatch, obstructed contact and conversion to another tool explains when a planned instrument was not used. [R06] [R10] [R11] [R14]"
+          }
+        ]
+      },
+      {
+        "title": "Outlook and measures of progress",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Future studies can compare conventional methods, guides alone and guides plus independent localization for each procedure. Track plan changes, first seating, radiation, achieved position and added work. Quality assurance can be shared while trajectory thresholds and clinical endpoints follow the procedure. [R04] [R06] [R15]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "3D MEDICAL IMAGING ANALYSIS, PATIENT-SPECIFIC INSTRUMENTATION AND INDIVIDUALIZED IMPLANT DESIGN, WITH ADDITIVE MANUFACTURING CREATES A NEW PERSONALIZED HIGH TIBIAL OSTEOTOMY TREATMENT OPTION",
+        "url": "https://doi.org/10.1142/s0219519423400419",
+        "year": "2023",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "Virtual Surgical Planning and Patient-Specific Instruments for Correcting Lower Limb Deformities in Pediatric Patients: Preliminary Results from the In-Office 3D Printing Point of Care.",
+        "url": "https://doi.org/10.3390/jpm13121664",
+        "year": "2023",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "Intra-articular opening wedge osteotomy for varus ankle arthritis with computer-assisted planning and patient-specific surgical guides: a retrospective case series.",
+        "url": "https://doi.org/10.1186/s12891-022-05437-z",
+        "year": "2022",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Clinical and Radiological Outcomes of C1-C2 Fixation: 3D-Printed Template vs. Free-Hand Technique.",
+        "url": "https://doi.org/10.3390/jcm15020408",
+        "year": "2026",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Application of 3D-printed osteotomy guide plates in proximal femoral osteotomy for DDH in children: a retrospective study.",
+        "url": "https://doi.org/10.1186/s13018-023-03801-w",
+        "year": "2023",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "Vital Role of In-House 3D Lab to Create Unprecedented Solutions for Challenges in Spinal Surgery, Practical Guidelines and Clinical Case Series",
+        "url": "https://doi.org/10.3390/jpm12030395",
+        "year": "2022",
+        "source": "",
+        "id": "R06"
+      },
+      {
+        "title": "3D printing spine percutaneous precise positioning guide plate",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN216294233U",
+        "year": "2022",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "3D printing method of osteotomy guide plate for tibia transverse bone transport operation",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN114617608A",
+        "year": "2022",
+        "source": "Espacenet",
+        "id": "R08"
+      },
+      {
+        "title": "Positioning error of custom 3D-printed surgical guides for the radius: influence of fitting location and guide design",
+        "url": "https://doi.org/10.1007/s11548-017-1682-6",
+        "year": "2017",
+        "source": "International Journal of Computer Assisted Radiology and Surgery",
+        "id": "R09"
+      },
+      {
+        "title": "The Effect of Sterilization on the Accuracy and Fit of 3D-Printed Surgical Guides",
+        "url": "https://doi.org/10.3390/ma16155305",
+        "year": "2023",
+        "source": "Materials",
+        "id": "R10"
+      },
+      {
+        "title": "Accuracy of Patient-Specific 3D-Printed Drill Guides for Pedicle and Lateral Mass Screw Insertion: An Analysis of 76 Cervical and Thoracic Screw Trajectories",
+        "url": "https://doi.org/10.1097/BRS.0000000000003747",
+        "year": "2020在线／2021卷期",
+        "source": "Spine",
+        "id": "R11"
+      },
+      {
+        "title": "FIREFLY Pedicle Screw Navigation Guide K162419",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm?ID=K162419",
+        "year": "2016",
+        "source": "FDA",
+        "id": "R12"
+      },
+      {
+        "title": "FIREFLY Pedicle Screw Navigation Guide K181399",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K181399",
+        "year": "2018",
+        "source": "FDA",
+        "id": "R13"
+      },
+      {
+        "title": "3D Planning and Guides for Osteotomies",
+        "url": "https://www.materialise.com/en/healthcare/osteotomy-guides",
+        "year": "2026访问",
+        "source": "Materialise",
+        "id": "R14"
+      },
+      {
+        "title": "3D-printed patient-specific instrumentation and the freehand technique in high-tibial osteotomy: A prospective cohort-comparative study in an outpatient setting",
+        "url": "https://doi.org/10.1002/jeo2.70088",
+        "year": "2025",
+        "source": "Journal of Experimental Orthopaedics",
+        "id": "R15"
+      },
+      {
+        "title": "K230313: QUANTUM Patient Specific Instrumentation System",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K230313.pdf",
+        "year": "2023",
+        "source": "FDA",
+        "id": "R16"
+      }
+    ]
+  },
+  "de": {
+    "id": "H07",
+    "p": "P4",
+    "title": "Patientenspezifische Schablonen für Wirbelsäulenverschraubung und Osteotomie",
+    "subtitle": "Planungskoordinaten in überprüfbaren Knochenkontakt, Trajektorien und Schnittebenen übertragen",
+    "thesis": "Schraubenschablonen führen Eintrittspunkt und Achse. Osteotomieschablonen müssen zusätzlich Schnittebene und endgültige Korrektur verbinden. Fertigung, Sitz und Fixation bringen eigene Fehler ein. Vergleiche sollen die jeweilige Fehlerphase bestimmen.",
+    "questions": [],
+    "graph": {
+      "title": "Planübertragung bei Wirbelsäulenverschraubung und Osteotomie",
+      "summary": "Aus der Anatomie entstehen Schraubentrajektorien und Schnittebenen. Beide Pfade treffen beim Knochensitz zusammen und werden danach getrennt an Schraubenlage und Korrektur gemessen.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2022–2023",
+          "refs": [
+            "R01",
+            "R02",
+            "R06"
+          ],
+          "title": "Anforderungen in der Bildgebung definieren",
+          "question": "Welche anatomische Anforderung bestimmt das Ziel?",
+          "evidence": "Schraubenpläne berücksichtigen kritische Nachbarstrukturen. Schnittrichtung hängt von Beinachse und Zielkorrektur ab. Die Forschung zur hohen tibialen Osteotomie nutzte auch Belastungsaufnahmen."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2020–2026",
+          "refs": [
+            "R04",
+            "R11"
+          ],
+          "title": "Schraubentrajektorien in eine Führung übertragen",
+          "question": "Wie unterscheiden sich Eintritts- und Winkelfehler?",
+          "evidence": "Führungen bestimmen Eintritt und Richtung. Wirbelsäulenstudien prüfen Umsetzung und Lage je Trajektorie und berücksichtigen mehrere Schrauben derselben Person in der Analyse."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2022–2023",
+          "refs": [
+            "R01",
+            "R03",
+            "R05"
+          ],
+          "title": "Zielkorrektur über die Schnittebene übertragen",
+          "question": "Erreicht der Schnitt die Zielkorrektur?",
+          "evidence": "Tibiale, Sprunggelenk- und pädiatrische Femurstudien nutzten geplante Schnittebenen und individuelle Schablonen. Die erreichte Fragmentlage und Fixation nach dem Schnitt werden gesondert geprüft."
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2017–2023",
+          "refs": [
+            "R09",
+            "R10"
+          ],
+          "title": "Sitz auf dem Knochen und Geometrie nach Aufbereitung prüfen",
+          "question": "Bleibt die Auflage unter Last stabil?",
+          "evidence": "Der Kontaktort beeinflusst den Sitzfehler. Sterilisation und Belastung können die Passform verändern. Die Prüfung soll den tatsächlichen Sitz abbilden."
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 0,
+          "time": "2026",
+          "refs": [
+            "R04"
+          ],
+          "title": "Schraubengenauigkeit und Eingriffszeit trennen",
+          "question": "Wie ändern sich Effizienz und Schraubengenauigkeit?",
+          "evidence": "Ein C1–C2-Vergleich umfasste 21 Personen und 84 Schrauben. Genau platziert waren 38 von 40 mit Schablone und 41 von 44 freihand. Die mittlere Operationsdauer betrug 126,6 bzw. 171,4 Minuten."
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 2,
+          "time": "2023–2025",
+          "refs": [
+            "R05",
+            "R15"
+          ],
+          "title": "Winkelkorrektur und Funktion parallel verfolgen",
+          "question": "Wie viel Korrektur geht bei Umlagerung und Fixation verloren?",
+          "evidence": "Die prospektive Kohorte zur hohen tibialen Osteotomie und die retrospektive pädiatrische Femurstudie untersuchen verschiedene Verfahren. Achsabweichung, Anpassungen, Durchleuchtung und Funktion werden verfahrensbezogen berichtet."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Trajektorienreserve berücksichtigen"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Beinachse in Schnittebene übertragen"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Eintritt und Passform prüfen"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Kontakt und Schnittebene prüfen"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Postoperative Trajektorien messen"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Erreichte Korrektur messen"
+        },
+        {
+          "from": "N5",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Trajektorienabweichung zur Planung zurückverfolgen"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Korrekturverlust auf Fragmente und Fixation zurückführen"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Forschungsgegenstand und Endpunkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Wirbelsäulen- und Osteotomieschablonen folgen demselben Weg von Bildgebung zu Instrument. Schraubeneintritt, Richtung und Abweichungsgrad sind bei der Wirbelsäule relevant. Schnittebene und erreichte Korrektur werden bei der Osteotomie getrennt erfasst. [R01] [R04] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Evidenz",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Anforderungen in der Bildgebung definieren"
+          },
+          {
+            "type": "p",
+            "text": "Schraubenpläne berücksichtigen kritische Nachbarstrukturen. Schnittrichtung hängt von Beinachse und Zielkorrektur ab. Die Forschung zur hohen tibialen Osteotomie nutzte auch Belastungsaufnahmen. [R01] [R02] [R06]"
+          },
+          {
+            "type": "h3",
+            "text": "Schraubentrajektorien in eine Führung übertragen"
+          },
+          {
+            "type": "p",
+            "text": "Führungen bestimmen Eintritt und Richtung. Wirbelsäulenstudien prüfen Umsetzung und Lage je Trajektorie und berücksichtigen mehrere Schrauben derselben Person in der Analyse. [R04] [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "Zielkorrektur über die Schnittebene übertragen"
+          },
+          {
+            "type": "p",
+            "text": "Tibiale, Sprunggelenk- und pädiatrische Femurstudien nutzten geplante Schnittebenen und individuelle Schablonen. Die erreichte Fragmentlage und Fixation nach dem Schnitt werden gesondert geprüft. [R01] [R03] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "Sitz auf dem Knochen und Geometrie nach Aufbereitung prüfen"
+          },
+          {
+            "type": "p",
+            "text": "Der Kontaktort beeinflusst den Sitzfehler. Sterilisation und Belastung können die Passform verändern. Die Prüfung soll den tatsächlichen Sitz abbilden. [R09] [R10]"
+          },
+          {
+            "type": "h3",
+            "text": "Schraubengenauigkeit und Eingriffszeit trennen"
+          },
+          {
+            "type": "p",
+            "text": "Ein C1–C2-Vergleich umfasste 21 Personen und 84 Schrauben. Genau platziert waren 38 von 40 mit Schablone und 41 von 44 freihand. Die mittlere Operationsdauer betrug 126,6 bzw. 171,4 Minuten. [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "Winkelkorrektur und Funktion parallel verfolgen"
+          },
+          {
+            "type": "p",
+            "text": "Die prospektive Kohorte zur hohen tibialen Osteotomie und die retrospektive pädiatrische Femurstudie untersuchen verschiedene Verfahren. Achsabweichung, Anpassungen, Durchleuchtung und Funktion werden verfahrensbezogen berichtet. [R05] [R15]"
+          },
+          {
+            "type": "p",
+            "text": "In der C1–C2-Studie lagen die mittleren Durchleuchtungszeiten bei 21,90 und 27,09 Sekunden bei ähnlicher Schraubengenauigkeit. Die Eingriffszeit kann als primäres Prozessmaß dienen. Abweichungsgrad, Schraubenzahl pro Fall und Erfahrung ermöglichen Stratifizierung. [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "Prospektiver Vergleich der hohen Tibiaosteotomie"
+          },
+          {
+            "type": "p",
+            "text": "In der prospektiven Studie 2025 zur hohen Tibiaosteotomie wurden 30 Patienten randomisiert verschiedenen Gruppen zugeteilt. Berichte zeigten eine verkürzte Operationszeit und geringere intraoperative Strahlenbelastung, jedoch keinen entsprechenden Vorteil hinsichtlich des Korrektureffekts oder der funktionellen Ergebnisse. Zeitersparnis und Behandlungseffektivität sind zwei separate Ergebnisketten, die validiert werden müssen. [R15]"
+          },
+          {
+            "type": "p",
+            "text": "Die hohe Tibiaosteotomie verfolgt ein klares Korrekturziel und ist ein relativ standardisiertes Verfahren, wodurch sie sich gut eignet, um den chirurgischen Aufwand und die Patientenerholung gleichzeitig zu vergleichen. Prospektive randomisierte Studien, die Zeitaufwand und Strahlenbelastung getrennt von Korrektur und Funktion messen, legen nahe, dass der Nutzen der Schablone primär in ihrer Effizienz liegt. Bei ressourcenbeschränkten ambulanten Eingriffen muss dieser Vorteil im Zusammenhang mit den Kosten bewertet werden."
+          },
+          {
+            "type": "p",
+            "text": "Weitere Studien sollten denselben Bildgebungsplan, dasselbe Fixationsprotokoll und denselben Rehabilitationspfad verwenden, um die Variabilität über die Implementierungsinstrumente hinaus zu minimieren. Korrekturwinkel sollten zusammen mit Zielwerten, Ist-Werten und Ausreißerverteilungen dokumentiert werden; die Funktion sollte zu vordefinierten Zeitpunkten beobachtet und die präoperativen Werte erfasst werden. Dies ermöglicht die Beurteilung, ob ähnliche Durchschnittsergebnisse die Reduktion in komplexen Fällen oder schlechtere Ergebnisse verschleiern."
+          },
+          {
+            "type": "p",
+            "text": "Die Auswertung sollte auch Stornierungen, Verschiebungen und vorübergehende Umstellungen erfassen. Werden die eingesparte OP-Zeit durch Wartezeiten in der Produktion kompensiert, verbessert sich die Servicekapazität möglicherweise nicht; ist die Produktion jedoch stabil und reduzieren sich die intraoperativen Schwankungen, kann die Terminplanung besser planbar werden, was einen weiteren messbaren Vorteil mit sich bringt."
+          },
+          {
+            "type": "h3",
+            "text": "Umsetzungsrate geplanter Wirbelsäulentrajektorien"
+          },
+          {
+            "type": "p",
+            "text": "Die klinische Studie, die 2020 online und 2021 in der Fachzeitschrift veröffentlicht wurde, verwendete bei 15 Patienten eine patientenspezifische Wirbelsäulenführung und implementierte 76 Führungsbahnen. Einige geplante Bahnen wurden aufgrund von Konstruktions- oder anderen praktischen Gegebenheiten modifiziert. Die Nutzung der Führungsbahnen und der Wechsel während der Bahn sind neben der Genauigkeit wichtige klinische Informationen. [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Die Planausführungsrate gibt Aufschluss über den tatsächlichen Nutzungsprozess und geht über reine Genauigkeitsstatistiken hinaus. Einige Trajektorien werden aufgrund geänderter Behandlungsentscheidungen abgebrochen, andere aufgrund der Schablonenkonstruktion oder intraoperativer Gegebenheiten angepasst; beides sollte separat erfasst werden. Die Angabe der Genauigkeit der tatsächlich abgeschlossenen Trajektorien unter Verwendung des gesamten Plans als Bezugsgröße liefert eine umfassende Antwort sowohl zur Verfügbarkeit als auch zur technischen Leistungsfähigkeit."
+          },
+          {
+            "type": "p",
+            "text": "Die kontinuierliche Fallregistrierung ermöglicht die Speicherung des Status von Designfreigabe, Anpassung, Bohrung und Schraubenplatzierung für jede Trajektorie sowie die Erfassung von Zeitpunkt und Grund jeglicher Änderungen. Dadurch lässt sich feststellen, ob das Problem während der präoperativen Kommunikation, im Zusammenhang mit der Konstruktion oder vor Ort aufgetreten ist. Auch in Fällen, in denen keine Führungsschablonen verwendet wurden, sollte das Endergebnis erfasst werden, um sicherzustellen, dass ein einzelner Erfolg nicht den gesamten Prozess verfälscht."
+          },
+          {
+            "type": "p",
+            "text": "Solche Daten eignen sich auch für Feedback an Unternehmen. Konzentrieren sich die Änderungen auf dieselbe Knochenoberfläche oder dasselbe Segment, kann das Designteam die Struktur anpassen; stammen sie hauptsächlich aus Planänderungen, sollten präoperative Gespräche und Ausweichpläne verbessert werden, um das Produkt besser an die tatsächlichen Behandlungsentscheidungen anzupassen."
+          },
+          {
+            "type": "h3",
+            "text": "Knochenkontakt und Sitz"
+          },
+          {
+            "type": "p",
+            "text": "Das 2017 online veröffentlichte Experiment am Radiusknochen untersuchte die Position und laterale Ausdehnung einer chirurgischen Schablone an demselben Knochenmodell. Die mittig positionierte chirurgische Schablone wies einen größeren Positionierungsfehler auf; eine Verlängerung verbesserte zwar die Translation, konnte aber den Rotationsfehler erhöhen. Diese Studie zeigt, dass geometrisch anpassungsfähige Strukturen dennoch mehrere Positionierungspositionen einnehmen können. [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Die Kontaktfläche der chirurgischen Schablone bestimmt ihre starre Position im Koordinatensystem des Patienten. Bei annähernd rotationssymmetrischen Knochensegmenten können Translation entlang der Achse und Rotation um die Achse noch Freiheitsgrade aufweisen; komplexe Knochenenden liefern zwar mehr morphologische Informationen, erfordern aber unter Umständen auch eine größere Expositionsfläche. Ein gut konzipiertes System sollte die individuelle Morphologie bei der Positionierung berücksichtigen und gleichzeitig eine übermäßige Abhängigkeit von schwer zugänglichen oder leicht veränderlichen Oberflächen vermeiden."
+          },
+          {
+            "type": "p",
+            "text": "Auch wenn die chirurgische Schablonenkonstruktion im Computer nur eine ideale Position aufweist, sind wiederholte manuelle Tests erforderlich, um festzustellen, ob mehrere annähernd stabile Positionen existieren. Die Messung der Abweichung in sechs Freiheitsgraden jeder Positionierung ist notwendig, um zu ermitteln, ob eine Vergrößerung der Kontaktfläche die Richtungsstabilität verbessert oder die Beeinträchtigung des Weichgewebes erhöht. Dieses Experiment dient als Referenzwert für nachfolgende Sterilisations- und Lagerungsstudien, um zwischen geometrischer Verformung und Positionierungsabweichungen zu unterscheiden."
+          },
+          {
+            "type": "h3",
+            "text": "Lastabhängige Passung nach Sterilisation"
+          },
+          {
+            "type": "p",
+            "text": "Die Studie aus dem Jahr 2023 verglich die Genauigkeit und Positionierung von chirurgischen Schablonen vor und nach der Dampfsterilisation. Sowohl die Materialien als auch die Sterilisationsprozesse beeinflussen die Ergebnisse, und auch die Positionierungslast verändert die Passgenauigkeit während des Experiments. Daher sollte die Qualität des Endprodukts dessen Zustand zum Zeitpunkt der Gebrauchsvorbereitung widerspiegeln. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "Die Spaltveränderungen nach der Sterilisation korrelieren mit den Belastungsbedingungen. Dies deutet darauf hin, dass die „Wiederaufsetzen auf das Modell“ kein vollständiges Leistungskriterium darstellt. Größere Kräfte können den Spalt vorübergehend verringern oder Spannungen auf Fixpunkte oder schwache Verbindungen verlagern. Die Bewertung sollte die erforderliche Positionierungskraft, die Position nach der Belastung und die Rückstellung nach der Entlastung berücksichtigen, anstatt lediglich festzustellen, ob das Modell letztendlich passgenau sitzt."
+          },
+          {
+            "type": "p",
+            "text": "Im Hinblick auf die Fehlerfortpflanzung können geometrische Veränderungen, die durch die Nachbearbeitung entstehen, durch die Trägermethode verstärkt oder durch bestimmte Kontaktflächen absorbiert werden. chirurgische Schablonen sollten im realen Einsatz im fixierten Zustand geprüft werden, Chargenunterschiede dürfen jedoch nicht durch uneindeutigen manuellen Anpressdruck verschleiert werden. Standardisierte Spann- und Messkräfte ermöglichen reproduzierbare Materialvergleiche und bilden die Grundlage für die im Krankenhaus vorgeschriebenen Freigabeprüfungen."
+          }
+        ]
+      },
+      {
+        "title": "Technologien und Angebote der Unternehmen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Die FDA-Dokumente von 2016 und 2018 zeigen FIREFLY als Produkt für patientenangepasste Wirbelsäulentrajektorien. Materialise betont ärztliche Planfreigabe und Schablonenlieferung. QUANTUMs FDA-Unterlage betrifft Instrumente am Sprunggelenk und erlaubt einen Prozessvergleich. Ergebnisse bleiben verfahrensspezifisch. [R12] [R13] [R14] [R16]"
+          }
+        ]
+      },
+      {
+        "title": "Patentansätze und Fertigungsschnittstellen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN216294233U betrifft perkutane Wirbelsäulenlokalisation. CN114617608A betrifft eine Osteotomieschablone für den transversalen Tibiatransport. Die Entwürfe fixieren unterschiedliche Randbedingungen: Eintritt und Achse oder Schnittebene und Ausdehnung. Die Prüfung folgt der Anwendung. [R07] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "Verbindungen von Forschung und Industrie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Fertiger können Geometrie und Prüfprotokolle bereitstellen. Kliniken verbinden Schablonensitz, tatsächlichen Einsatz und postoperative Messung. Passprobleme, blockierter Kontakt und Wechsel zu einem anderen Instrument erklären, warum ein geplantes Instrument unbenutzt blieb. [R06] [R10] [R11] [R14]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick und Kriterien für Fortschritt",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Weitere Studien können je Verfahren konventionelle Technik, alleinige Schablone und Schablone mit unabhängiger Lokalisation vergleichen. Erfasst werden Planänderung, Erstsitz, Strahlung, erreichte Lage und Zusatzaufwand. Qualitätssicherung ist teilbar. Trajektoriengrenzen und klinische Endpunkte folgen dem Eingriff. [R04] [R06] [R15]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "3D MEDICAL IMAGING ANALYSIS, PATIENT-SPECIFIC INSTRUMENTATION AND INDIVIDUALIZED IMPLANT DESIGN, WITH ADDITIVE MANUFACTURING CREATES A NEW PERSONALIZED HIGH TIBIAL OSTEOTOMY TREATMENT OPTION",
+        "url": "https://doi.org/10.1142/s0219519423400419",
+        "year": "2023",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "Virtual Surgical Planning and Patient-Specific Instruments for Correcting Lower Limb Deformities in Pediatric Patients: Preliminary Results from the In-Office 3D Printing Point of Care.",
+        "url": "https://doi.org/10.3390/jpm13121664",
+        "year": "2023",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "Intra-articular opening wedge osteotomy for varus ankle arthritis with computer-assisted planning and patient-specific surgical guides: a retrospective case series.",
+        "url": "https://doi.org/10.1186/s12891-022-05437-z",
+        "year": "2022",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Clinical and Radiological Outcomes of C1-C2 Fixation: 3D-Printed Template vs. Free-Hand Technique.",
+        "url": "https://doi.org/10.3390/jcm15020408",
+        "year": "2026",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Application of 3D-printed osteotomy guide plates in proximal femoral osteotomy for DDH in children: a retrospective study.",
+        "url": "https://doi.org/10.1186/s13018-023-03801-w",
+        "year": "2023",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "Vital Role of In-House 3D Lab to Create Unprecedented Solutions for Challenges in Spinal Surgery, Practical Guidelines and Clinical Case Series",
+        "url": "https://doi.org/10.3390/jpm12030395",
+        "year": "2022",
+        "source": "",
+        "id": "R06"
+      },
+      {
+        "title": "3D printing spine percutaneous precise positioning guide plate",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN216294233U",
+        "year": "2022",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "3D printing method of osteotomy guide plate for tibia transverse bone transport operation",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN114617608A",
+        "year": "2022",
+        "source": "Espacenet",
+        "id": "R08"
+      },
+      {
+        "title": "Positioning error of custom 3D-printed surgical guides for the radius: influence of fitting location and guide design",
+        "url": "https://doi.org/10.1007/s11548-017-1682-6",
+        "year": "2017",
+        "source": "International Journal of Computer Assisted Radiology and Surgery",
+        "id": "R09"
+      },
+      {
+        "title": "The Effect of Sterilization on the Accuracy and Fit of 3D-Printed Surgical Guides",
+        "url": "https://doi.org/10.3390/ma16155305",
+        "year": "2023",
+        "source": "Materials",
+        "id": "R10"
+      },
+      {
+        "title": "Accuracy of Patient-Specific 3D-Printed Drill Guides for Pedicle and Lateral Mass Screw Insertion: An Analysis of 76 Cervical and Thoracic Screw Trajectories",
+        "url": "https://doi.org/10.1097/BRS.0000000000003747",
+        "year": "2020在线／2021卷期",
+        "source": "Spine",
+        "id": "R11"
+      },
+      {
+        "title": "FIREFLY Pedicle Screw Navigation Guide K162419",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm?ID=K162419",
+        "year": "2016",
+        "source": "FDA",
+        "id": "R12"
+      },
+      {
+        "title": "FIREFLY Pedicle Screw Navigation Guide K181399",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K181399",
+        "year": "2018",
+        "source": "FDA",
+        "id": "R13"
+      },
+      {
+        "title": "3D Planning and Guides for Osteotomies",
+        "url": "https://www.materialise.com/en/healthcare/osteotomy-guides",
+        "year": "2026访问",
+        "source": "Materialise",
+        "id": "R14"
+      },
+      {
+        "title": "3D-printed patient-specific instrumentation and the freehand technique in high-tibial osteotomy: A prospective cohort-comparative study in an outpatient setting",
+        "url": "https://doi.org/10.1002/jeo2.70088",
+        "year": "2025",
+        "source": "Journal of Experimental Orthopaedics",
+        "id": "R15"
+      },
+      {
+        "title": "K230313: QUANTUM Patient Specific Instrumentation System",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K230313.pdf",
+        "year": "2023",
+        "source": "FDA",
+        "id": "R16"
+      }
+    ]
+  }
+}

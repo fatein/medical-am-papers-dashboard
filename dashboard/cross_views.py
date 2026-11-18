@@ -9,12 +9,16 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-from dashboard.cross_data import direction_summary
+from dashboard.cross_data import (
+    CROSS_CUTTING, direction_summary, load_direction_classification, themed_direction_summary,
+)
 from dashboard.labels import P, label
 from dashboard.i18n import (LOCALIZED_SELECTION_KEYS, clear_localized_selection,
                             tr, language, preserve_original_text, protect_names, localized_selectbox)
 from dashboard.report_navigation import open_question_report
-from dashboard.direction_reports import direction_id, open_direction_report, UI
+from dashboard.direction_reports import (
+    UI, direction_id, direction_report_url, localized_direction_title, open_direction_report,
+)
 
 
 def _open_company_profile(company: str) -> None:
@@ -42,62 +46,127 @@ def _select_direction_from_table() -> None:
         st.session_state['cross_scroll_to_direction'] = True
 
 
+def _select_cross_cutting() -> None:
+    st.session_state['cross_direction'] = CROSS_CUTTING
+    st.session_state['cross_scroll_to_direction'] = True
+
+
+def _direction_picker(data: dict, root: Path, classification: dict) -> dict:
+    code = language()
+    directions = themed_direction_summary(data, classification)
+    st.subheader('H01–H36 研究方向')
+    selected_p = localized_selectbox(
+        st, '医疗对象', ['全部'] + [f'P{i}' for i in range(1, 8)],
+        format_func=lambda value: '全部 P 层' if value == '全部' else label(value, P),
+        key='cross_p',
+    )
+    visible = [row for row in directions
+               if selected_p == '全部' or selected_p in row['p_layers']]
+    report_rows = [row for row in visible if row['id'] != CROSS_CUTTING]
+    titles = {row['id']: localized_direction_title(root, row['id'], code) for row in visible}
+    options = [row['id'] for row in report_rows]
+    st.session_state['cross_direction_options'] = options
+    table = pd.DataFrame([{
+        'P 层': ' / '.join(row['p_layers']),
+        '研究方向': titles[row['id']],
+        '研究问题': len(row['questions']),
+        '主题关联论文': row['paper_count'],
+        '问题关联企业': row['companies'],
+        '报告': direction_report_url(row['id'], code),
+    } for row in report_rows])
+    st.dataframe(
+        table, hide_index=True, width='stretch', height=380,
+        column_config={'报告': st.column_config.LinkColumn(UI[code]['read'], display_text=UI[code]['read'])},
+        key='cross_direction_table', on_select=_select_direction_from_table,
+        selection_mode='single-row',
+    )
+    st.caption(tr('主题关联来自 H36 分类资料与论文库的匹配，共 {n} 篇；研究问题按主方向计数。')
+               .format(n=f"{classification['unique_papers_with_theme']:,}"))
+    if CROSS_CUTTING in titles:
+        st.button(titles[CROSS_CUTTING] + f" ({len(classification['cross_cutting'])})",
+                  key='open_cross_cutting', on_click=_select_cross_cutting)
+    if selected_p == '全部':
+        st.markdown('**学术与企业证据分布**')
+        points = table.drop(columns=['报告'])
+        fig = px.scatter(points, x='主题关联论文', y='问题关联企业',
+                         color='P 层', hover_name='研究方向',
+                         hover_data={'研究问题': True})
+        fig.update_traces(marker={'size': 11, 'opacity': .8})
+        fig.update_layout(height=390, margin=dict(l=10, r=20, t=15, b=20),
+                          plot_bgcolor='rgba(0,0,0,0)', legend=dict(orientation='h', y=-0.16))
+        st.plotly_chart(fig, width='stretch')
+    selection = localized_selectbox(
+        st, '选择研究方向', list(titles), key='cross_direction', format_func=titles.__getitem__,
+    )
+    return next(row for row in visible if row['id'] == selection)
+
+
 def cross_analysis_page(data: dict, available_reports: set[str] | None = None) -> None:
+    root = Path(__file__).resolve().parents[1]
+    classification = load_direction_classification(root)
+    hero_copy = (tr('从 36 个技术主题进入方向报告，或按研究问题查阅论文、企业技术和来源。')
+                 if classification else tr('从医疗对象进入研究方向，再沿研究问题查看论文、企业技术与外部依据。'))
     st.markdown(
         '<div class="hero"><div class="eyebrow">ACADEMIC × INDUSTRY · RESEARCH MAP</div>'
-        '<h1>学术与企业联系</h1><p>从医疗对象进入研究方向，再沿研究问题查看论文、企业技术与外部依据。</p></div>',
+        f'<h1>{html.escape(tr("学术与企业联系"))}</h1><p>{html.escape(hero_copy)}</p></div>',
         unsafe_allow_html=True,
     )
-    directions = direction_summary(data)
     questions = data['questions']
     evidence = data['enterprise_evidence']
     paper_rows = data['papers']
     a, b, c, d = st.columns(4)
-    a.metric('研究方向', len(directions))
+    a.metric('研究方向', len(classification['directions']) if classification else len(direction_summary(data)))
     b.metric('研究问题', len(questions))
-    c.metric('关联论文', f"{len({row['id'] for row in paper_rows}):,}")
+    c.metric('问题关联论文', f"{len({row['id'] for row in paper_rows}):,}")
     d.metric('对应企业', len({row['company'] for row in evidence
                           if row['source_kind'] != '非企业开源项目'}))
-    st.subheader('七个 P 层中的研究方向')
-    selected_p = localized_selectbox(st,'医疗对象', ['全部'] + [f'P{i}' for i in range(1, 8)],
-                              format_func=lambda code: '全部 P 层' if code == '全部' else label(code, P),
-                              key='cross_p')
-    visible = [row for row in directions if selected_p == '全部' or row['p'] == selected_p]
-    table = pd.DataFrame([{'P 层': label(row['p'], P), '研究方向': row['direction'],
-                           '研究问题': row['questions'], '关联论文': row['papers'],
-                           '有来源的企业': row['companies'], '具体技术对应问题': row['direct']}
-                          for row in visible])
-    root = Path(__file__).resolve().parents[1]
-    table['报告'] = [f'?view=direction-report&direction={direction_id(root,r["p"],r["direction"])}&lang={language()}' for r in visible]
-    direction_options = [f"{row['p']} · {row['direction']}" for row in visible]
-    st.session_state['cross_direction_options'] = direction_options
-    st.dataframe(table, hide_index=True, width='stretch', height=350,
-                 column_config={'报告':st.column_config.LinkColumn(UI[language()]['read'],display_text=UI[language()]['read'])},
-                 key='cross_direction_table', on_select=_select_direction_from_table,
-                 selection_mode='single-row')
-    if selected_p == '全部':
-        st.markdown('**学术与企业证据分布**')
-        points = pd.DataFrame([{'P 层': row['p'], '研究方向': row['direction'],
-                                '关联论文': row['papers'], '有来源的企业': row['companies'],
-                                '研究问题': row['questions']}
-                               for row in directions])
-        chart = px.scatter(points, x='关联论文', y='有来源的企业', color='P 层',
-                           size='研究问题', hover_name='研究方向',
-                           size_max=22)
-        chart.update_layout(height=460, margin=dict(l=10, r=20, t=15, b=20),
-                            plot_bgcolor='rgba(0,0,0,0)', legend=dict(orientation='h', y=-0.16))
-        st.plotly_chart(chart, width='stretch')
+    if classification:
+        chosen = _direction_picker(data, root, classification)
+        scope = [q for q in questions if q['question_id'] in chosen['questions']]
+        rid = chosen['id'] if chosen['id'] != CROSS_CUTTING else None
+        heading = localized_direction_title(root, chosen['id'], language())
+    else:
+        directions = direction_summary(data)
+        st.subheader('七个 P 层中的研究方向')
+        selected_p = localized_selectbox(st,'医疗对象', ['全部'] + [f'P{i}' for i in range(1, 8)],
+                                  format_func=lambda code: '全部 P 层' if code == '全部' else label(code, P),
+                                  key='cross_p')
+        visible = [row for row in directions if selected_p == '全部' or row['p'] == selected_p]
+        table = pd.DataFrame([{'P 层': label(row['p'], P), '研究方向': row['direction'],
+                               '研究问题': row['questions'], '关联论文': row['papers'],
+                               '有来源的企业': row['companies'], '具体技术对应问题': row['direct']}
+                              for row in visible])
+        table['报告'] = [f'?view=direction-report&direction={direction_id(root,r["p"],r["direction"])}&lang={language()}' for r in visible]
+        direction_options = [f"{row['p']} · {row['direction']}" for row in visible]
+        st.session_state['cross_direction_options'] = direction_options
+        st.dataframe(table, hide_index=True, width='stretch', height=350,
+                     column_config={'报告':st.column_config.LinkColumn(UI[language()]['read'],display_text=UI[language()]['read'])},
+                     key='cross_direction_table', on_select=_select_direction_from_table,
+                     selection_mode='single-row')
+        if selected_p == '全部':
+            st.markdown('**学术与企业证据分布**')
+            points = pd.DataFrame([{'P 层': row['p'], '研究方向': row['direction'],
+                                    '关联论文': row['papers'], '有来源的企业': row['companies'],
+                                    '研究问题': row['questions']}
+                                   for row in directions])
+            chart = px.scatter(points, x='关联论文', y='有来源的企业', color='P 层',
+                               size='研究问题', hover_name='研究方向',
+                               size_max=22)
+            chart.update_layout(height=460, margin=dict(l=10, r=20, t=15, b=20),
+                                plot_bgcolor='rgba(0,0,0,0)', legend=dict(orientation='h', y=-0.16))
+            st.plotly_chart(chart, width='stretch')
 
-    choice = localized_selectbox(st,'选择研究方向', direction_options, key='cross_direction',
-                          format_func=lambda option: tr(option))
-    chosen = visible[direction_options.index(choice)]
-    scope = [q for q in questions if q['p'] == chosen['p'] and q['direction'] == chosen['direction']]
+        choice = localized_selectbox(st,'选择研究方向', direction_options, key='cross_direction',
+                              format_func=lambda option: tr(option))
+        chosen = visible[direction_options.index(choice)]
+        scope = [q for q in questions if q['p'] == chosen['p'] and q['direction'] == chosen['direction']]
+        rid = direction_id(root, chosen['p'], chosen['direction'])
+        heading = f"{chosen['p']} · {chosen['direction']}"
     ids = {q['question_id'] for q in scope}
     scoped_papers = [p for p in paper_rows if p['question_id'] in ids]
     st.html('<div id="cross-direction-detail" style="scroll-margin-top:100px"></div>')
     direction_title, direction_button = st.columns([5,1.6],vertical_alignment='center')
-    direction_title.subheader(f"{chosen['p']} · {chosen['direction']}")
-    rid=direction_id(root,chosen['p'],chosen['direction'])
+    direction_title.subheader(heading)
     if rid:
         direction_button.button(UI[language()]['read'],key='open_direction_report',type='primary',on_click=open_direction_report,args=(rid,))
     if st.session_state.pop('cross_scroll_to_direction', False):
@@ -109,16 +178,33 @@ def cross_analysis_page(data: dict, available_reports: set[str] | None = None) -
         </script>''', unsafe_allow_javascript=True)
     c1, c2, c3 = st.columns(3)
     c1.metric('研究问题', len(scope))
-    c2.metric('关联论文', len({p['id'] for p in scoped_papers}))
-    c3.metric('有来源的企业', chosen['companies'])
-    if scoped_papers:
-        annual = Counter((p['year'], p['id']) for p in scoped_papers)
-        years = Counter(year for year, _ in annual)
-        timeline = pd.DataFrame({'年份': sorted(years), '论文数': [years[y] for y in sorted(years)]})
-        fig = px.bar(timeline, x='年份', y='论文数', text='论文数', color_discrete_sequence=['#137F75'])
+    if classification and rid:
+        c2.metric('主题关联论文', chosen['paper_count'])
+        years = {int(year): count for year, count in chosen['paper_year_counts'].items()}
+        axis = '主题关联论文'
+    else:
+        c2.metric('问题关联论文', len({p['id'] for p in scoped_papers}))
+        years = Counter(year for year, _ in {(p['year'], p['id']) for p in scoped_papers})
+        axis = '问题关联论文'
+    c3.metric('问题关联企业', chosen['companies'])
+    if years:
+        timeline = pd.DataFrame({'年份': sorted(years), axis: [years[y] for y in sorted(years)]})
+        fig = px.bar(timeline, x='年份', y=axis, text=axis, color_discrete_sequence=['#137F75'])
         fig.update_layout(height=320, margin=dict(l=10, r=15, t=10, b=20),
                           plot_bgcolor='rgba(0,0,0,0)')
         st.plotly_chart(fig, width='stretch')
+
+    related_ids = chosen.get('related', [])
+    if related_ids:
+        code = language()
+        question_lookup = {q['question_id']: q['question'] for q in questions}
+        with st.expander(tr('相关研究问题')+f' ({len(related_ids)})', expanded=not scope):
+            for qid in related_ids:
+                st.link_button(f'{qid} · {tr(question_lookup[qid])}',
+                               direction_report_url(qid, code, question=True),
+                               key=f'related_question_{qid}')
+    if not scope:
+        return
 
     options = [q['question_id'] for q in scope]
     by_id = {q['question_id']: q for q in scope}

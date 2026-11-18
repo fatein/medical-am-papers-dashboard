@@ -1,0 +1,1163 @@
+{
+  "zh": {
+    "id": "H29",
+    "p": "P1",
+    "title": "血管与腔道打印支架",
+    "subtitle": "尺寸、部署、通畅和迁移的分部位证据",
+    "thesis": "血管、胆道、食管与气道支架共享几何定制和受限通道部署的问题。各自的壁面、流体和运动决定成品应优先验证的失效方式。",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络图",
+      "summary": "细小血管把分辨率和支撑强度推向新范围，胆道与食管强调保留分支流通和控制迁移，气道产品则检验定制设计与成品流程的衔接。",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2025",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R01"
+          ],
+          "title": "突破亚毫米成形",
+          "question": "能否打印出相互分离的细支柱？",
+          "evidence": "双光子聚合研究打印了长 5 mm、直径 0.7 或 0.9 mm 的原型，支柱最薄 50 μm。"
+        },
+        {
+          "id": "N2",
+          "time": "2025",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R04"
+          ],
+          "title": "把可吸收载体与径向支撑配对",
+          "question": "早期支撑怎样与后续递送分开评价？",
+          "evidence": "旋转平台路线制造柔性圆截面支柱的可吸收紫杉醇洗脱血管支架。"
+        },
+        {
+          "id": "N3",
+          "time": "2024",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R02"
+          ],
+          "title": "部署弯曲淘汰材料组合",
+          "question": "材料通过基础筛选后能否经导管部署？",
+          "evidence": "胆道支架研究用三点弯曲校核仿真，在约 30° 的预期部署弯曲下预测峰值应力超过聚合物屈服应力。"
+        },
+        {
+          "id": "N4",
+          "time": "2024",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R05"
+          ],
+          "title": "壁面位置与迁移",
+          "question": "防迁移几何如何改变壁面作用？",
+          "evidence": "食管实验以仿生形态探索迁移问题，目标场景为食管癌姑息治疗。"
+        },
+        {
+          "id": "N5",
+          "time": "2025",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R06"
+          ],
+          "title": "按气道任务选择材料",
+          "question": "气道支架需要怎样的形变与恢复？",
+          "evidence": "打印气管支架研究将材料选择与力学差异配对。"
+        },
+        {
+          "id": "N6",
+          "time": "2022",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R11"
+          ],
+          "title": "CT 定制衔接模具与成品",
+          "question": "如何让患者几何落到已记录的制造流程？",
+          "evidence": "VisionAir K213969 披露医生按 CT 分割和设计，3D 打印模具后注射硅胶形成成品。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "追踪材料降解"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "加入部署约束"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "比较时间依赖力学"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "kind": "advance",
+          "label": "从导入到留置"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "验证几何和持位"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "约束成品性能"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "把实际壁面接触反馈给设计"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "四种部位如何共享设计知识",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "可共享成品尺寸与预测误差的方法，随后以部位定义终点。细血管看支柱、回缩和通流，胆道看分叉与导管弯曲，食管看迁移和壁面作用，气道考虑分叉几何及持续变形。[R01] [R02] [R05] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 突破亚毫米成形"
+          },
+          {
+            "type": "p",
+            "text": "双光子聚合研究打印了长 5 mm、直径 0.7 或 0.9 mm 的原型，支柱最薄 50 μm。 [R01]"
+          },
+          {
+            "type": "p",
+            "text": "微型样件的意义是成品分辨率。后续需将实际支柱尺寸和连接误差输入力学模型，并在产生永久变形的界限附近验证模型。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 把可吸收载体与径向支撑配对"
+          },
+          {
+            "type": "p",
+            "text": "旋转平台路线制造柔性圆截面支柱的可吸收紫杉醇洗脱血管支架。 [R04]"
+          },
+          {
+            "type": "p",
+            "text": "分时测量径向力、构件质量和释放曲线，分别检验支撑保持与递送变化。应以同一结构的不载药组识别材料与药物的贡献。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 部署弯曲淘汰材料组合"
+          },
+          {
+            "type": "p",
+            "text": "胆道支架研究用三点弯曲校核仿真，在约 30° 的预期部署弯曲下预测峰值应力超过聚合物屈服应力。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "这是重要的淘汰证据。研究通过成品弯曲定位部署障碍，并可据此比较材料延展性、开口结构和导入路径。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 壁面位置与迁移"
+          },
+          {
+            "type": "p",
+            "text": "食管实验以仿生形态探索迁移问题，目标场景为食管癌姑息治疗。 [R05]"
+          },
+          {
+            "type": "p",
+            "text": "将持位能力与局部接触压力一起测量，便于区分固定收益和局部负荷增加。它们与血管的径向回缩、胆道的分支流通是不同指标。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 按气道任务选择材料"
+          },
+          {
+            "type": "p",
+            "text": "打印气管支架研究将材料选择与力学差异配对。 [R06]"
+          },
+          {
+            "type": "p",
+            "text": "比较对象要包括循环压缩后的回弹和接触形变，将机械结果对应到使用过程中可能出现的移位与狭窄。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · CT 定制衔接模具与成品"
+          },
+          {
+            "type": "p",
+            "text": "VisionAir K213969 披露医生按 CT 分割和设计，3D 打印模具后注射硅胶形成成品。 [R11]"
+          },
+          {
+            "type": "p",
+            "text": "最终性能取决于模具几何、脱模后的硅胶复现度和成品结构。直接打样的参数应和模具复制路线的误差分别追踪。"
+          }
+        ]
+      },
+      {
+        "title": "四类支架实测证据对照",
+        "blocks": [
+          {
+            "type": "table",
+            "headers": [
+              "对象",
+              "实测或仿真条件",
+              "对设计的反馈"
+            ],
+            "rows": [
+              [
+                "小血管双光子原型 [R01]",
+                "直径 0.7 或 0.9 mm，长度 5 mm，支柱薄至 50 μm。",
+                "把细支柱的实际形态带入载荷模型与台架检验。"
+              ],
+              [
+                "可吸收 PLCL 支架 [R04]",
+                "体外径向强度从初始 652 mmHg 先升至 1 个月的 1,182 ± 141 mmHg，再降至 6 个月的 169 mmHg。",
+                "用时间序列描述支撑变化。"
+              ],
+              [
+                "胆道 SLA 原型 [R02]",
+                "仿真经三点弯曲实测校核，约 30° 部署弯曲时预测超过屈服。",
+                "材料、开孔或导入方式会影响淘汰结论。"
+              ],
+              [
+                "食管仿生原型 [R05]",
+                "图 10 的防滑台架力约 1.32 N，简单、FCC、SC 结构分别约 0.50、0.88、0.87 N。",
+                "这是台架持位读数，松动与壁面接触还需在部位条件中评价。"
+              ]
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "亚毫米试验和载药支架回答不同问题"
+          },
+          {
+            "type": "p",
+            "text": "Grigorianaitė 等以开放式小单元结构展示形状和尺寸可制造性，并将机械试验与数值模型比较。该论文的动物观察为 7 天，适合用作初步材料与形态相容性的记录。Liu 等使用的 PLCL 结构则把径向力与降解时间配对。后者图 5 将分子量与径向强度并列，六个月时分子量约留存 28%，表 5 的质量测量仍约留存 96.44%。由此可见早期链段降解、成品减重和力学衰减的时程不同，不能用任意一项代替其余变量。[R01] [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "把仿真条件同台架结果对齐"
+          },
+          {
+            "type": "p",
+            "text": "胆道原型的价值来自反向验证。处理后的树脂通过了初步柔性和细胞毒性筛选，三点弯曲校核的模型仍预测在目标弯曲时进入屈服区。可以先在同一材料改变开口位置与厚度，或在同一设计更换材料，然后记录部署后回弹和分支开通情况。食管原型的改进则来自滑动对照，需用不同壁面接触状态再次测试，重点检查支架持位是否因过高接触压力获得。[R02] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "气道产品的实际制造边界"
+          },
+          {
+            "type": "p",
+            "text": "VisionAir 的 510(k) 摘要将云端设计、CT 分割、3D 打印模具和植入级硅胶注射列为同一流程，成品有分叉及防移位设计。文件的适用范围为出现症状的成年气道狭窄，预期留置最长 12 个月。其放行可分别检查患者外形适配、模具复制偏差和独立的植入物性能。与直接打印研究对照时，比较最终材料、几何和部署测试，打印环节分别标明发生在支架本体还是成形模具。[R11]"
+          },
+          {
+            "type": "h3",
+            "text": "双路线转化选择"
+          },
+          {
+            "type": "p",
+            "text": "直接打印允许复杂支柱和快速调整局部结构；间接打印允许复杂模具后使用独立的成熟材料成形。两条路线均可采用相同解剖影像建立工装参照：对照实际尺寸、接触压力、失效部位、制造时间。长期证据根据部位分别看组织相容、通流或迁移，避免将某型支架的台架强度直接用于其他部位。[R01] [R02] [R05] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "企业与监管记录",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "VisionAir 先建立定制气道支架流程，K213969 记录对既有 K182743 器械的设计修改。软件、医师设计、打印模具与硅胶复制组成连续流程。该案例可作为评价复杂外形和批次交付的参照。[R11]"
+          }
+        ]
+      },
+      {
+        "title": "专利与学术对照",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN114652902A 披露 X 射线可视的可吸收血管支架，CN105771003A 关注可降解聚合物自扩张。前者引入影像可追踪性，后者强调部署后的形状恢复。两方面应与相同构型的径向性能并行测试。[R08] [R09] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "把部署挑战纳入比较",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "同时保留自由状态、通过模拟路径和部署后的成品，比较损伤、通流和载荷恢复。用相同截面和部位约束对比打印、模具成形与血管常规加工；把破坏位置反馈给结构和材料研究。[R01] [R02] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "2027–2029 年的观察指标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "优先关注小血管支架尺寸与生产时间的共同改善、胆道部件通过部署筛选的材料组合，以及气道或食管支架在连续随访中的迁移和更换记录。各部位分别建立验证组合，有助于判断定制价值是否体现在真实使用中。"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "3D printing of stents via two-photon polymerization.",
+        "year": "2025",
+        "url": "https://doi.org/10.1038/s41598-025-07190-4",
+        "kind": "paper",
+        "source": "10.1038/s41598-025-07190-4"
+      },
+      {
+        "id": "R02",
+        "title": "Towards a Customizable, SLA 3D-Printed Biliary Stent: Optimizing a Commercially Available Resin and Predicting Stent Behavior with Accurate In Silico Testing.",
+        "year": "2024",
+        "url": "https://doi.org/10.3390/polym16141978",
+        "kind": "paper",
+        "source": "10.3390/polym16141978"
+      },
+      {
+        "id": "R04",
+        "title": "A novel paclitaxel eluting bioresorbable vascular stent with a super flexible stent structure and round cross section struts fabricated using 3D printing technology with a rotating platform.",
+        "year": "2025",
+        "url": "https://doi.org/10.1093/rb/rbaf073",
+        "kind": "paper",
+        "source": "10.1093/rb/rbaf073"
+      },
+      {
+        "id": "R05",
+        "title": "Innovative Design of a 3D Printed Esophageal Stent Inspired by Nature: Mitigating Migration Challenges in Palliative Esophageal Cancer Therapy.",
+        "year": "2024",
+        "url": "https://doi.org/10.3390/biomimetics9060359",
+        "kind": "paper",
+        "source": "10.3390/biomimetics9060359"
+      },
+      {
+        "id": "R06",
+        "title": "Influence of Material Selection on the Mechanical Properties of 3D-Printed Tracheal Stents for Surgical Applications.",
+        "year": "2025",
+        "url": "https://doi.org/10.3390/polym17162223",
+        "kind": "paper",
+        "source": "10.3390/polym17162223"
+      },
+      {
+        "id": "R08",
+        "title": "X-ray visualized 3D printing intravascular absorbable stent and preparation method thereof",
+        "year": "2022",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN114652902A",
+        "kind": "patent",
+        "source": "CN114652902A"
+      },
+      {
+        "id": "R09",
+        "title": "Method for preparing biodegradable polymer self-expansion type intravascular stent based on 3D printing technology",
+        "year": "2016",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN105771003A",
+        "kind": "patent",
+        "source": "CN105771003A"
+      },
+      {
+        "id": "R11",
+        "title": "FDA 510(k) K213969 — VisionAir Patient-Specific Airway Stent",
+        "year": "2022",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf21/K213969.pdf",
+        "kind": "dated_company_event",
+        "source": ""
+      }
+    ]
+  },
+  "en": {
+    "id": "H29",
+    "p": "P1",
+    "title": "3D-printed vascular and luminal stents",
+    "subtitle": "Site-specific evidence on dimensions, deployment, patency and migration",
+    "thesis": "Vascular, biliary, esophageal and airway stents share challenges of geometric customization and constrained deployment. The surrounding wall, fluid and motion determine which failure modes matter most in each site.",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway",
+      "summary": "Small vessels push resolution and support strength, biliary and esophageal routes prioritize branch flow and migration, and airway products test how custom design connects with finished-device production.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2025",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R01"
+          ],
+          "title": "Fabricate submillimetre stents",
+          "question": "Can discrete thin struts be printed?",
+          "evidence": "Two-photon polymerization produced 5 mm prototypes with diameters of 0.7 or 0.9 mm and struts as thin as 50 µm."
+        },
+        {
+          "id": "N2",
+          "time": "2025",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R04"
+          ],
+          "title": "Pair resorption with radial support",
+          "question": "How can initial support and later delivery be assessed separately?",
+          "evidence": "A rotating-platform route fabricated flexible round-strut bioresorbable paclitaxel-eluting vascular stents."
+        },
+        {
+          "id": "N3",
+          "time": "2024",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R02"
+          ],
+          "title": "Deployment bending screens material options",
+          "question": "Can a material that passes initial screening be delivered through a catheter?",
+          "evidence": "Biliary stent simulations checked against three-point bending predicted peak stress exceeding polymer yield at the roughly 30° bend anticipated during deployment."
+        },
+        {
+          "id": "N4",
+          "time": "2024",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R05"
+          ],
+          "title": "Wall contact and migration",
+          "question": "How does migration-resistant geometry alter wall interaction?",
+          "evidence": "A biomimetic esophageal prototype addressed migration in the context of palliative cancer care."
+        },
+        {
+          "id": "N5",
+          "time": "2025",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R06"
+          ],
+          "title": "Select material for the airway task",
+          "question": "What deformation and recovery are needed in an airway stent?",
+          "evidence": "Printed tracheal stent research links material choice with differences in mechanics."
+        },
+        {
+          "id": "N6",
+          "time": "2022",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R11"
+          ],
+          "title": "Connect CT customization to mold and device",
+          "question": "How is patient geometry translated into a documented process?",
+          "evidence": "VisionAir K213969 documents clinician design from CT segmentation and silicone injection into a printed mold."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Track material resorption"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Add deployment constraints"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Compare time-dependent mechanics"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "kind": "advance",
+          "label": "From insertion to residence"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Verify geometry and retention"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Constrain device performance"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Feed wall contact back into design"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Design knowledge across four anatomical sites",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Share methods for as-built geometry and prediction error, then specify site endpoints. Small vessels emphasize struts, recoil and flow. Bile ducts emphasize branching and catheter bending. The esophagus emphasizes migration and wall interaction. Airways emphasize branch geometry and sustained deformation. [R01] [R02] [R05] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathway and evidence by stage",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Fabricate submillimetre stents"
+          },
+          {
+            "type": "p",
+            "text": "Two-photon polymerization produced 5 mm prototypes with diameters of 0.7 or 0.9 mm and struts as thin as 50 µm. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "These prototypes establish as-built resolution. Feed measured strut dimensions and junction errors into mechanical models and verify predictions near permanent deformation."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Pair resorption with radial support"
+          },
+          {
+            "type": "p",
+            "text": "A rotating-platform route fabricated flexible round-strut bioresorbable paclitaxel-eluting vascular stents. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Measure radial force, device mass and release over time. A geometry-matched unloaded device helps isolate material and drug effects."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Deployment bending screens material options"
+          },
+          {
+            "type": "p",
+            "text": "Biliary stent simulations checked against three-point bending predicted peak stress exceeding polymer yield at the roughly 30° bend anticipated during deployment. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "This provides a concrete reason to eliminate the tested option. Finished-device bending localizes the deployment barrier and guides comparisons of ductility, openings and insertion path."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Wall contact and migration"
+          },
+          {
+            "type": "p",
+            "text": "A biomimetic esophageal prototype addressed migration in the context of palliative cancer care. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Measure retention and local contact pressure together to distinguish anchoring benefit from increased wall loading. These metrics differ from vascular recoil and biliary branch flow."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Select material for the airway task"
+          },
+          {
+            "type": "p",
+            "text": "Printed tracheal stent research links material choice with differences in mechanics. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Evaluate springback after cyclic compression and changes in contact under load, relating them to potential movement and narrowing."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Connect CT customization to mold and device"
+          },
+          {
+            "type": "p",
+            "text": "VisionAir K213969 documents clinician design from CT segmentation and silicone injection into a printed mold. [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Final performance depends on mold geometry, silicone replication and device structure. Track direct prototyping parameters and mold replication error separately."
+          }
+        ]
+      },
+      {
+        "title": "Measured evidence across four stent classes",
+        "blocks": [
+          {
+            "type": "table",
+            "headers": [
+              "Device",
+              "Measurement or simulation condition",
+              "Design implication"
+            ],
+            "rows": [
+              [
+                "Two-photon small-vessel prototype [R01]",
+                "Diameters 0.7 or 0.9 mm, length 5 mm, struts down to 50 µm.",
+                "Feed as-built thin-strut geometry into load modelling and bench tests."
+              ],
+              [
+                "Bioresorbable PLCL stent [R04]",
+                "In vitro radial strength rose from 652 mmHg initially to 1,182 ± 141 mmHg at one month and fell to 169 mmHg at six months.",
+                "Use time-series data for retained support."
+              ],
+              [
+                "SLA biliary prototype [R02]",
+                "Simulation checked against three-point bending predicted yielding at roughly 30° deployment bending.",
+                "Material, openings and insertion approach affect the screening result."
+              ],
+              [
+                "Biomimetic esophageal prototype [R05]",
+                "Figure 10 shows about 1.32 N against sliding, versus 0.50, 0.88 and 0.87 N for the simple, FCC and SC structures.",
+                "This bench retention measure is complemented by site-specific tests of loosening and wall contact."
+              ]
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Submillimetre fabrication and drug elution answer different questions"
+          },
+          {
+            "type": "p",
+            "text": "Grigorianaitė and colleagues demonstrate manufacturability in an open-cell submillimetre structure and compare mechanical tests with modelling. The seven-day animal observation is an initial compatibility record. Liu and colleagues pair radial resistance with degradation time in a PLCL device. Figure 5 compares molecular weight with radial strength. At six months about 28% of weight-average molecular weight remained, while Table 5 records about 96.44% of mass. Chain breakdown, mass loss and mechanical change proceed on different time scales. [R01] [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "Align simulations with bench conditions"
+          },
+          {
+            "type": "p",
+            "text": "The biliary prototype is informative because material screening and device deployment gave different results. The processed resin passed preliminary flexibility and cytotoxicity screens, yet a three-point-bending-checked model predicted yielding at the target bend. Vary opening position and thickness at fixed material or vary material at fixed geometry, then measure recovery and branch patency. The esophageal prototype gains retention in a sliding comparison. Retest across wall-contact conditions to see whether anchoring comes with excessive contact pressure. [R02] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "The actual manufacturing boundary of an airway product"
+          },
+          {
+            "type": "p",
+            "text": "VisionAir’s 510(k) summary links cloud design, CT segmentation, 3D printed tooling and injection of implant-grade silicone. The finished device uses branching and migration-resistant features. The indication covers symptomatic airway stenosis in adults, with intended placement up to 12 months. Release checks can distinguish anatomical fit, replication error and implant performance. Compare final material, geometry and deployment with direct printing studies while identifying the printed object. [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "Choosing between translation routes"
+          },
+          {
+            "type": "p",
+            "text": "Direct printing enables complex struts and local design changes. Indirect printing provides complex tooling for a separately formed material. Compare both from the same anatomical reference for as-built dimensions, contact pressure, failure location and lead time. Long-term evidence depends on site-specific compatibility, flow or migration. [R01] [R02] [R05] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Industrial and regulatory record",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "VisionAir first established its custom airway workflow, and K213969 documents design changes from K182743. Software, clinician design, printed molds and silicone replication form one chain. The record provides a benchmark for complex shapes and batch delivery. [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Patents and academic comparisons",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN114652902A discloses an X-ray-visible absorbable vascular stent. CN105771003A addresses a self-expanding degradable polymer. The first adds imaging visibility and the second focuses on shape recovery. Both should be tested alongside radial performance in matched geometries. [R08] [R09] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "Include deployment in the comparison",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Compare free-state devices, devices passed through a representative path and deployed devices for damage, flow and load recovery. Match cross-section and site constraints across printing, molding and conventional fabrication. Feed failure locations into design and materials studies. [R01] [R02] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "What to track in 2027–2029",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Watch for improved small-vessel dimensions at practical production times, biliary materials that pass deployment screens, and longitudinal migration and replacement data for airway or esophageal devices. Site-specific validation can show where customization adds value in use."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "3D printing of stents via two-photon polymerization.",
+        "year": "2025",
+        "url": "https://doi.org/10.1038/s41598-025-07190-4",
+        "kind": "paper",
+        "source": "10.1038/s41598-025-07190-4"
+      },
+      {
+        "id": "R02",
+        "title": "Towards a Customizable, SLA 3D-Printed Biliary Stent: Optimizing a Commercially Available Resin and Predicting Stent Behavior with Accurate In Silico Testing.",
+        "year": "2024",
+        "url": "https://doi.org/10.3390/polym16141978",
+        "kind": "paper",
+        "source": "10.3390/polym16141978"
+      },
+      {
+        "id": "R04",
+        "title": "A novel paclitaxel eluting bioresorbable vascular stent with a super flexible stent structure and round cross section struts fabricated using 3D printing technology with a rotating platform.",
+        "year": "2025",
+        "url": "https://doi.org/10.1093/rb/rbaf073",
+        "kind": "paper",
+        "source": "10.1093/rb/rbaf073"
+      },
+      {
+        "id": "R05",
+        "title": "Innovative Design of a 3D Printed Esophageal Stent Inspired by Nature: Mitigating Migration Challenges in Palliative Esophageal Cancer Therapy.",
+        "year": "2024",
+        "url": "https://doi.org/10.3390/biomimetics9060359",
+        "kind": "paper",
+        "source": "10.3390/biomimetics9060359"
+      },
+      {
+        "id": "R06",
+        "title": "Influence of Material Selection on the Mechanical Properties of 3D-Printed Tracheal Stents for Surgical Applications.",
+        "year": "2025",
+        "url": "https://doi.org/10.3390/polym17162223",
+        "kind": "paper",
+        "source": "10.3390/polym17162223"
+      },
+      {
+        "id": "R08",
+        "title": "X-ray visualized 3D printing intravascular absorbable stent and preparation method thereof",
+        "year": "2022",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN114652902A",
+        "kind": "patent",
+        "source": "CN114652902A"
+      },
+      {
+        "id": "R09",
+        "title": "Method for preparing biodegradable polymer self-expansion type intravascular stent based on 3D printing technology",
+        "year": "2016",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN105771003A",
+        "kind": "patent",
+        "source": "CN105771003A"
+      },
+      {
+        "id": "R11",
+        "title": "FDA 510(k) K213969 — VisionAir Patient-Specific Airway Stent",
+        "year": "2022",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf21/K213969.pdf",
+        "kind": "dated_company_event",
+        "source": ""
+      }
+    ]
+  },
+  "de": {
+    "id": "H29",
+    "p": "P1",
+    "title": "3D-gedruckte Stents für Gefäße und andere Körperlumina",
+    "subtitle": "Ortsspezifische Evidenz zu Abmessungen, Entfaltung, Durchgängigkeit und Migration",
+    "thesis": "Gefäß-, Gallenwegs-, Ösophagus- und Atemwegsstents teilen die Probleme der geometrischen Anpassung und Entfaltung im begrenzten Raum. Wand, Fluid und Bewegung bestimmen die vorrangig zu prüfenden Versagensarten.",
+    "questions": [],
+    "graph": {
+      "title": "Forschungspfad",
+      "summary": "Kleine Gefäße stellen hohe Anforderungen an Auflösung und Stützwirkung. Gallenwege und Ösophagus verlangen Seitenastdurchfluss und Migrationskontrolle. Atemwegsprodukte verbinden Individualdesign mit der Fertigung des Endprodukts.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2025",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R01"
+          ],
+          "title": "Submillimeterstents fertigen",
+          "question": "Lassen sich schmale, getrennte Stege drucken?",
+          "evidence": "Zweiphotonenpolymerisation erzeugte 5 mm lange Prototypen mit 0,7 oder 0,9 mm Durchmesser und bis zu 50 µm dünnen Stegen."
+        },
+        {
+          "id": "N2",
+          "time": "2025",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R04"
+          ],
+          "title": "Resorption mit radialer Stützung koppeln",
+          "question": "Wie lassen sich frühe Stützung und spätere Wirkstoffabgabe getrennt bewerten?",
+          "evidence": "Eine Rotationsplattform fertigte flexible, bioresorbierbare Paclitaxel-freisetzende Gefäßstents mit runden Stegen."
+        },
+        {
+          "id": "N3",
+          "time": "2024",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R02"
+          ],
+          "title": "Biegung bei der Entfaltung filtert Werkstoffoptionen",
+          "question": "Kann ein im Screening geeignetes Material durch einen Katheter platziert werden?",
+          "evidence": "Durch Dreipunktbiegung überprüfte Gallenwegsstent-Simulationen ergaben bei etwa 30° vorgesehener Entfaltungsbiegung eine Spitzenspannung über der Fließgrenze des Polymers."
+        },
+        {
+          "id": "N4",
+          "time": "2024",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R05"
+          ],
+          "title": "Wandkontakt und Migration",
+          "question": "Wie verändert migrationshemmende Geometrie den Wandkontakt?",
+          "evidence": "Ein biomimetischer Ösophagusprototyp untersuchte Migration im Kontext palliativer Tumortherapie."
+        },
+        {
+          "id": "N5",
+          "time": "2025",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R06"
+          ],
+          "title": "Material für die Atemwegsaufgabe wählen",
+          "question": "Welche Verformung und Erholung benötigt ein Atemwegsstent?",
+          "evidence": "Untersuchungen an gedruckten Trachealstents verknüpfen Materialwahl und mechanische Unterschiede."
+        },
+        {
+          "id": "N6",
+          "time": "2022",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R11"
+          ],
+          "title": "CT-Individualisierung mit Form und Bauteil verbinden",
+          "question": "Wie geht Patientengeometrie in einen dokumentierten Prozess ein?",
+          "evidence": "VisionAir K213969 dokumentiert ärztlichen Entwurf aus CT-Segmentierung und Silikoninjektion in eine Druckform."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Materialresorption verfolgen"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Entfaltungsgrenzen ergänzen"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Zeitabhängige Mechanik vergleichen"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Von der Einführung zum Verbleib"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Geometrie und Halt prüfen"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Bauteilleistung eingrenzen"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Wandkontakt in die Konstruktion zurückführen"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Konstruktionswissen über vier anatomische Orte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Methoden zu Ist-Geometrie und Vorhersagefehlern sind gemeinsam nutzbar. Endpunkte bleiben ortsspezifisch: Stege, Rückfederung und Durchfluss im Gefäß, Verzweigung und Katheterbiegung im Gallengang, Migration und Wandkontakt im Ösophagus, Verzweigung und Dauerverformung im Atemweg. [R01] [R02] [R05] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungspfad und Evidenz je Station",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Submillimeterstents fertigen"
+          },
+          {
+            "type": "p",
+            "text": "Zweiphotonenpolymerisation erzeugte 5 mm lange Prototypen mit 0,7 oder 0,9 mm Durchmesser und bis zu 50 µm dünnen Stegen. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Die Prototypen zeigen die erreichbare Auflösung. Gemessene Stegmaße und Knotenabweichungen gehören in das mechanische Modell, das nahe der plastischen Verformungsgrenze zu prüfen ist."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Resorption mit radialer Stützung koppeln"
+          },
+          {
+            "type": "p",
+            "text": "Eine Rotationsplattform fertigte flexible, bioresorbierbare Paclitaxel-freisetzende Gefäßstents mit runden Stegen. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Radialkraft, Bauteilmasse und Freisetzung über die Zeit messen. Ein geometrisch gleicher unbeladener Stent trennt Material- und Wirkstoffbeiträge."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Biegung bei der Entfaltung filtert Werkstoffoptionen"
+          },
+          {
+            "type": "p",
+            "text": "Durch Dreipunktbiegung überprüfte Gallenwegsstent-Simulationen ergaben bei etwa 30° vorgesehener Entfaltungsbiegung eine Spitzenspannung über der Fließgrenze des Polymers. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Dies liefert ein konkretes Ausschlusskriterium für die geprüfte Option. Bauteilbiegung lokalisiert die Entfaltungshürde und erlaubt Vergleiche von Duktilität, Öffnungen und Einführweg."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Wandkontakt und Migration"
+          },
+          {
+            "type": "p",
+            "text": "Ein biomimetischer Ösophagusprototyp untersuchte Migration im Kontext palliativer Tumortherapie. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Halt und lokalen Kontaktdruck gemeinsam messen, um Fixationsvorteile von erhöhter Wandlast zu trennen. Die Größen unterscheiden sich von Gefäßrecoil und Seitenastdurchfluss."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Material für die Atemwegsaufgabe wählen"
+          },
+          {
+            "type": "p",
+            "text": "Untersuchungen an gedruckten Trachealstents verknüpfen Materialwahl und mechanische Unterschiede. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Rückstellung nach zyklischer Kompression und belastungsabhängigen Kontakt messen und auf mögliche Lageänderungen und Verengung beziehen."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · CT-Individualisierung mit Form und Bauteil verbinden"
+          },
+          {
+            "type": "p",
+            "text": "VisionAir K213969 dokumentiert ärztlichen Entwurf aus CT-Segmentierung und Silikoninjektion in eine Druckform. [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Die endgültige Leistung hängt von Formgeometrie, Silikonreplikation und Bauteilstruktur ab. Parameter des Direktdrucks und Fehler der Formreplikation getrennt verfolgen."
+          }
+        ]
+      },
+      {
+        "title": "Messbefunde zu vier Stentklassen",
+        "blocks": [
+          {
+            "type": "table",
+            "headers": [
+              "Bauteil",
+              "Mess- oder Simulationsbedingung",
+              "Rückmeldung an die Konstruktion"
+            ],
+            "rows": [
+              [
+                "Zweiphotonenprototyp für kleine Gefäße [R01]",
+                "Durchmesser 0,7 oder 0,9 mm, Länge 5 mm, Stege bis zu 50 µm.",
+                "Reale Feinsteggeometrie in Lastmodell und Prüfstand übernehmen."
+              ],
+              [
+                "Bioresorbierbarer PLCL-Stent [R04]",
+                "Die radiale Festigkeit in vitro stieg von 652 mmHg auf 1.182 ± 141 mmHg nach einem Monat und fiel auf 169 mmHg nach sechs Monaten.",
+                "Erhaltene Stützung anhand einer Zeitreihe beschreiben."
+              ],
+              [
+                "SLA-Prototyp für die Gallenwege [R02]",
+                "Durch Dreipunktbiegung geprüfte Simulation sagte bei etwa 30° Entfaltungsbiegung Fließen voraus.",
+                "Material, Öffnungen und Einführung beeinflussen das Ausscheidungsergebnis."
+              ],
+              [
+                "Biomimetischer Ösophagusprototyp [R05]",
+                "Abbildung 10 zeigt rund 1,32 N gegen Verrutschen, gegenüber 0,50, 0,88 und 0,87 N für einfache, FCC- und SC-Strukturen.",
+                "Der Prüfstandswert für Halt wird durch ortsspezifische Prüfung von Lockerung und Wandkontakt ergänzt."
+              ]
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Submillimeterfertigung und Wirkstofffreisetzung beantworten unterschiedliche Fragen"
+          },
+          {
+            "type": "p",
+            "text": "Grigorianaitė und Kollegen zeigen die Machbarkeit einer offenporigen Submillimeterstruktur und vergleichen mechanische Tests und Modell. Die siebentägige Tierbeobachtung ist eine erste Verträglichkeitsreferenz. Liu und Kollegen verknüpfen radialen Widerstand und Abbauzeit in einem PLCL-Stent. Abbildung 5 stellt Molekulargewicht und radiale Festigkeit gegenüber. Nach sechs Monaten blieben etwa 28 % des gewichtsmittleren Molekulargewichts und laut Tabelle 5 rund 96,44 % der Masse. Kettenabbau, Massenverlust und mechanische Änderung verlaufen auf unterschiedlichen Zeitskalen. [R01] [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "Simulation und Prüfstandsbedingungen abstimmen"
+          },
+          {
+            "type": "p",
+            "text": "Beim Gallenwegsprototyp lieferten Materialscreening und Entfaltung unterschiedliche Befunde. Das nachbehandelte Harz bestand erste Flexibilitäts- und Zytotoxizitätsprüfungen, das durch Dreipunktbiegung geprüfte Modell sagte jedoch Fließen bei Zielbiegung voraus. Öffnungslage und Dicke bei gleichem Material oder Material bei gleicher Geometrie variieren, dann Rückstellung und Seitenastdurchgängigkeit messen. Der Ösophagusprototyp zeigt im Gleitversuch besseren Halt, der unter verschiedenen Wandkontaktbedingungen auf erhöhten Druck zu prüfen ist. [R02] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "Die reale Fertigungsgrenze eines Atemwegsprodukts"
+          },
+          {
+            "type": "p",
+            "text": "Die 510(k)-Zusammenfassung von VisionAir verbindet Cloud-Design, CT-Segmentierung, gedruckte Form und Injektion implantierbaren Silikons. Das fertige Bauteil hat Verzweigung und migrationshemmende Merkmale. Die Indikation betrifft symptomatische Atemwegsstenose bei Erwachsenen mit vorgesehenem Verbleib bis zwölf Monate. Abnahme kann Passung, Replikationsfehler und Implantatleistung trennen. Für Vergleiche mit Direktdruck Endmaterial, Geometrie und Entfaltung sowie das gedruckte Objekt dokumentieren. [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "Zwischen Translationswegen wählen"
+          },
+          {
+            "type": "p",
+            "text": "Direktdruck erlaubt komplexe Stege und lokale Anpassungen. Indirekter Druck liefert komplexe Formen für separat geformte Werkstoffe. Beide anhand derselben Anatomie auf Ist-Maße, Kontaktdruck, Versagensort und Durchlaufzeit prüfen. Langzeitevidenz richtet sich je Ort nach Verträglichkeit, Durchfluss oder Migration. [R01] [R02] [R05] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Industrie- und Regulierungsnachweis",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "VisionAir etablierte einen individualisierten Atemwegsworkflow. K213969 dokumentiert Änderungen gegenüber K182743. Software, ärztlicher Entwurf, Druckform und Silikonreplikation bilden eine Kette, die als Referenz für komplexe Formen und Chargenlieferung dient. [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Patente und Forschungsvergleiche",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN114652902A offenbart einen röntgensichtbaren resorbierbaren Gefäßstent. CN105771003A adressiert selbstexpandierendes abbaubares Polymer. Sichtbarkeit und Formrückstellung sind parallel zur radialen Leistung bei gleicher Geometrie zu prüfen. [R08] [R09] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "Entfaltung in den Vergleich aufnehmen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Freie, durch einen repräsentativen Pfad geführte und entfaltete Bauteile auf Schäden, Durchfluss und Belastungserholung vergleichen. Querschnitt und Randbedingungen bei Druck, Formgebung und konventioneller Fertigung angleichen. Versagensorte fließen in Konstruktion und Materialstudien ein. [R01] [R02] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Beobachtungspunkte für 2027–2029",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Zu beobachten sind praktikable Fertigungszeiten bei kleinen Gefäßstents, Gallengangsmaterialien mit bestandener Entfaltungsprüfung sowie Verlaufsdaten zu Migration und Austausch in Atemwegen und Ösophagus. Ortsspezifische Validierung zeigt den Nutzen der Individualisierung im Einsatz."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "3D printing of stents via two-photon polymerization.",
+        "year": "2025",
+        "url": "https://doi.org/10.1038/s41598-025-07190-4",
+        "kind": "paper",
+        "source": "10.1038/s41598-025-07190-4"
+      },
+      {
+        "id": "R02",
+        "title": "Towards a Customizable, SLA 3D-Printed Biliary Stent: Optimizing a Commercially Available Resin and Predicting Stent Behavior with Accurate In Silico Testing.",
+        "year": "2024",
+        "url": "https://doi.org/10.3390/polym16141978",
+        "kind": "paper",
+        "source": "10.3390/polym16141978"
+      },
+      {
+        "id": "R04",
+        "title": "A novel paclitaxel eluting bioresorbable vascular stent with a super flexible stent structure and round cross section struts fabricated using 3D printing technology with a rotating platform.",
+        "year": "2025",
+        "url": "https://doi.org/10.1093/rb/rbaf073",
+        "kind": "paper",
+        "source": "10.1093/rb/rbaf073"
+      },
+      {
+        "id": "R05",
+        "title": "Innovative Design of a 3D Printed Esophageal Stent Inspired by Nature: Mitigating Migration Challenges in Palliative Esophageal Cancer Therapy.",
+        "year": "2024",
+        "url": "https://doi.org/10.3390/biomimetics9060359",
+        "kind": "paper",
+        "source": "10.3390/biomimetics9060359"
+      },
+      {
+        "id": "R06",
+        "title": "Influence of Material Selection on the Mechanical Properties of 3D-Printed Tracheal Stents for Surgical Applications.",
+        "year": "2025",
+        "url": "https://doi.org/10.3390/polym17162223",
+        "kind": "paper",
+        "source": "10.3390/polym17162223"
+      },
+      {
+        "id": "R08",
+        "title": "X-ray visualized 3D printing intravascular absorbable stent and preparation method thereof",
+        "year": "2022",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN114652902A",
+        "kind": "patent",
+        "source": "CN114652902A"
+      },
+      {
+        "id": "R09",
+        "title": "Method for preparing biodegradable polymer self-expansion type intravascular stent based on 3D printing technology",
+        "year": "2016",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN105771003A",
+        "kind": "patent",
+        "source": "CN105771003A"
+      },
+      {
+        "id": "R11",
+        "title": "FDA 510(k) K213969 — VisionAir Patient-Specific Airway Stent",
+        "year": "2022",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf21/K213969.pdf",
+        "kind": "dated_company_event",
+        "source": ""
+      }
+    ]
+  }
+}

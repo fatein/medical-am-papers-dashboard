@@ -1,0 +1,1217 @@
+{
+  "zh": {
+    "id": "H30",
+    "p": "P2",
+    "title": "足踝矫形器与个体化鞋垫",
+    "subtitle": "从静态扫描走到动态负荷和长期适配",
+    "thesis": "鞋垫重在足底负荷分配，足踝矫形器重在限制或引导关节运动。相同的个体化扫描可以支持两类器具，比较时应以步态任务、局部刚度与患者体验共同评价。",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络图",
+      "summary": "从脚形和步态数据出发，分别进入鞋内足弓支撑与跨踝约束。临床研究以适应证和活动任务区分读数，制造记录把现场调整反馈到下一版器具。",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2025",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R01"
+          ],
+          "title": "同时采集脚形和步态",
+          "question": "静态外形能解释受力吗？",
+          "evidence": "网格硅胶矫形器研究联合站立足扫描与动态步态。"
+        },
+        {
+          "id": "N2",
+          "time": "2019",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R02"
+          ],
+          "title": "评估足底分区压力",
+          "question": "跟部减压是否伴随其他区域载荷变化？",
+          "evidence": "60 名双侧足底筋膜炎患者随机比较打印定制和预制器具，测量第 0 和第 8 周的足底与舒适度。"
+        },
+        {
+          "id": "N3",
+          "time": "2025",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R04"
+          ],
+          "title": "明确跨踝器具任务",
+          "question": "脑瘫人群的矫形效果如何观察？",
+          "evidence": "痉挛型脑瘫儿童病例系列探索定制打印足踝矫形器的应用。"
+        },
+        {
+          "id": "N4",
+          "time": "2025",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R03",
+            "R05"
+          ],
+          "title": "用任务揭示平地测量之外的变化",
+          "question": "上坡时的足部对线和压力路径会怎样改变？",
+          "evidence": "一项 20 人的比较在 10% 坡度下观察功能性扁平足人群，定制足弓鞋垫减轻了相对于单穿鞋时的踝旋前。"
+        },
+        {
+          "id": "N5",
+          "time": "2026",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R06"
+          ],
+          "title": "将神经康复单独验证",
+          "question": "足部支撑会不会改变全身代偿？",
+          "evidence": "卒中人群的探索性随机研究将足对线和身体对线同时纳入鞋垫评价。"
+        },
+        {
+          "id": "N6",
+          "time": "2025",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R11",
+            "R12"
+          ],
+          "title": "把调整结果反馈生产",
+          "question": "如何把临床量测转成可追溯的产品版本？",
+          "evidence": "Spentys 展示定制打印 AFO 流程，Peacocks 与 Fyous 的合作公开了可变模具定制思路。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "匹配足底接触"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "设置关节约束"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "引入坡道任务"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "测量全身代偿"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "确认局部支撑区域"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "确认佩戴适配"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "用试穿结果修订扫描和参数"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "足底支撑与关节引导的区别",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "鞋垫可改变压力中心的路径，跨踝器械则通过壳体形状、刚度及铰链控制姿势。比较同一人群内设计时，用鞋、步速、坡度与佩戴时间共同限定结论，再对照足底压力、踝角、舒适度和穿戴率。[R01] [R02] [R03] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 同时采集脚形和步态"
+          },
+          {
+            "type": "p",
+            "text": "网格硅胶矫形器研究联合站立足扫描与动态步态。 [R01]"
+          },
+          {
+            "type": "p",
+            "text": "扫描给出承重外形，步态给出受力移动位置。配对可判断局部支撑应该施加于何处以及在哪个步态阶段起作用。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 评估足底分区压力"
+          },
+          {
+            "type": "p",
+            "text": "60 名双侧足底筋膜炎患者随机比较打印定制和预制器具，测量第 0 和第 8 周的足底与舒适度。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "早期组间比较提示跟部压力较低而拇趾和第一跖骨区较高，应把卸载与前足载荷迁移一起评估。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 明确跨踝器具任务"
+          },
+          {
+            "type": "p",
+            "text": "痉挛型脑瘫儿童病例系列探索定制打印足踝矫形器的应用。 [R04]"
+          },
+          {
+            "type": "p",
+            "text": "围绕需要控制的关节运动选择步态指标，并记录鞋、穿戴时长和生长后的适配调整。这些变量影响随访中器具效应的解释。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 用任务揭示平地测量之外的变化"
+          },
+          {
+            "type": "p",
+            "text": "一项 20 人的比较在 10% 坡度下观察功能性扁平足人群，定制足弓鞋垫减轻了相对于单穿鞋时的踝旋前。 [R03] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "任务强度决定能否观察到器具差异。平地、坡道和步态不同阶段单独报告，可避免平均值掩盖设计作用的位置。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 将神经康复单独验证"
+          },
+          {
+            "type": "p",
+            "text": "卒中人群的探索性随机研究将足对线和身体对线同时纳入鞋垫评价。 [R06]"
+          },
+          {
+            "type": "p",
+            "text": "区分局部对线改善、步行功能及使用体验，有助于判断变化究竟发生在足部，还是扩展至全身控制。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 把调整结果反馈生产"
+          },
+          {
+            "type": "p",
+            "text": "Spentys 展示定制打印 AFO 流程，Peacocks 与 Fyous 的合作公开了可变模具定制思路。 [R11] [R12]"
+          },
+          {
+            "type": "p",
+            "text": "记录扫描、参数修改、成形和试穿处置，区分设计不适配与生产偏差。"
+          }
+        ]
+      },
+      {
+        "title": "按适应证与活动任务读取实测结果",
+        "blocks": [
+          {
+            "type": "table",
+            "headers": [
+              "研究条件",
+              "观察",
+              "适用范围"
+            ],
+            "rows": [
+              [
+                "足底筋膜炎随机分组 [R02]",
+                "60 人，0 和 8 周。起始组间测量呈现跟部峰压降低和拇趾、第一跖骨峰压增高。",
+                "应按分区读压力，不把局部降低等同全足卸载。"
+              ],
+              [
+                "健康志愿者网格硅胶鞋垫 [R01]",
+                "21 人，4 周。原文表 5 的步态分期变化无显著差异。",
+                "适合验证制造与使用流程，并提示步态指标的敏感度。"
+              ],
+              [
+                "功能性扁平足坡走 [R03]",
+                "20 人，10% 坡度。单穿鞋与加鞋垫比较时，鞋垫使扁平足组踝旋前减轻，推进阶段的力中心更外侧。",
+                "结论针对坡走任务与该群体。"
+              ],
+              [
+                "卒中探索试验 [R06]",
+                "慢性可步行卒中者 20 人随机分组，实验组内侧纵弓角平均增 7.95°，TUG 未达到显著变化。",
+                "主要读数是足部对线，队列排除了需 AFO 支撑者。"
+              ]
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "扫描输入、负荷和舒适度需要对应"
+          },
+          {
+            "type": "p",
+            "text": "扫描分为无负重、站立负重和动态数据，各自代表不同构建条件。Kubach 等联用站立扫描与动态足底数据，形成网格硅胶鞋垫，并用 21 人短期队列观察可实施性。原文将舒适与功能量表、姿势指数及三维运动分开测量。步态分期未变的结果可与局部压力转移并存。适配型面优化后，应观察是否减少局部热点，同时看调整后的穿鞋空间、踝关节活动和耐久。[R01] [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "把关节约束和鞋内支撑区分开"
+          },
+          {
+            "type": "p",
+            "text": "痉挛型脑瘫儿童研究从病历各选 62 名接受打印组合 AFO 或传统聚乙烯器具的儿童，并用三个月记录比较被动背屈、GMFM 与步态。组别来自实际选配，主要用于建立真实使用的对照线索。卒中随机试验则明确排除有明显足下垂和 AFO 需要的行走人群。把两项证据放在一起可见，跨踝约束与鞋内支撑解决的是不同功能问题，对照组应保留康复训练、鞋与活动条件。[R04] [R06]"
+          },
+          {
+            "type": "h3",
+            "text": "几何支撑强度并不自动对应使用收益"
+          },
+          {
+            "type": "p",
+            "text": "扁平足坡走实验中，单穿鞋与加打印鞋垫由同一任务设置偏差。足底支撑在推进阶段改变力中心和旋前，站立脚形不能单独反映这些变化。以可调过渡和刚度区域建立候选设计时，复核实际接触位置是否移至预定区域，并观察是否出现边缘不适或前足负荷代偿。[R01] [R02] [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "从可重复制品到可重复制配"
+          },
+          {
+            "type": "p",
+            "text": "对照可变模具与直接打印时，应在相同扫描、足底分区和试穿目标基础上记录人员时间及交付周期。若误差来自姿态注册、鞋空间或当天试穿变化，更换制造工艺可能并不解决主要问题。将重做分为扫描错误、设计约束、成形偏差和随使用变化四类，才能检验技术平台改善的是哪个环节。[R11] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "产品变化与交付",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Spentys 代表扫描到打印的直接器具流程。Peacocks–Fyous 组合强调通过可变模具改善定制生产。对比两条路线需统一型面误差、数据录入时间、可返工性及材料维护。[R11] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "专利机制与可比较设计",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN113303958A 引入弹簧式铰链来解决足下垂场景，CN119903714A 指向参数化优化。一个改变关节的活动与恢复，另一个将设计变量转成可追溯设置。可用相同壳体比较不同铰链和刚度配置，并测多次使用后的变化。[R07] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "临床与制造的共同验证",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "按适应证分层，对扫描后的器具按同一脚形比较定制形状、局部材料区和刚度分布。记录是在试穿时、行走任务中或随访后出现差异，再决定需要调整支撑形态、鞋内配合或机械约束。[R02] [R03] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "2027–2029 年关注点",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "后续重点是把站立扫描、真实活动日志与定期复测连接。最有价值的信号包括更少的重做、更稳定的负荷分布，以及在不同材料批次和门诊之间能够保持的佩戴体验。"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Clinical Evaluation of Novel Custom 3D-Printed Meshed-Silicone Orthotics Utilizing Standing Foot Scans and Dynamic Gait Data.",
+        "year": "2025",
+        "url": "https://doi.org/10.1177/11795972251371476",
+        "kind": "paper",
+        "source": "10.1177/11795972251371476"
+      },
+      {
+        "id": "R02",
+        "title": "Effect of 3D Printing Individualized Ankle-Foot Orthosis on Plantar Biomechanics and Pain in Patients with Plantar Fasciitis: A Randomized Controlled Trial.",
+        "year": "2019",
+        "url": "https://doi.org/10.12659/msm.915045",
+        "kind": "paper",
+        "source": "10.12659/msm.915045"
+      },
+      {
+        "id": "R03",
+        "title": "3D-Printed Customized Arch-Support Insoles Improve Gait Mechanics and Ankle Alignment in Young Adults with Functional Flat Foot During Uphill Walking.",
+        "year": "2025",
+        "url": "https://doi.org/10.3390/medicina61020281",
+        "kind": "paper",
+        "source": "10.3390/medicina61020281"
+      },
+      {
+        "id": "R04",
+        "title": "Therapeutic outcomes of customized 3D-printed ankle-foot orthoses in children with spastic cerebral palsy: a case series study.",
+        "year": "2025",
+        "url": "https://doi.org/10.3389/fped.2025.1661098",
+        "kind": "paper",
+        "source": "10.3389/fped.2025.1661098"
+      },
+      {
+        "id": "R05",
+        "title": "Biomechanical Analysis of the FlatFoot with Different 3D-Printed Insoles on the Lower Extremities.",
+        "year": "2022",
+        "url": "https://doi.org/10.3390/bioengineering9100563",
+        "kind": "paper",
+        "source": "10.3390/bioengineering9100563"
+      },
+      {
+        "id": "R06",
+        "title": "Effects of custom-made 3D-printed insoles on foot and body alignment in stroke survivors: an exploratory pilot randomized controlled trial.",
+        "year": "2026",
+        "url": "https://doi.org/10.7717/peerj.21533",
+        "kind": "paper",
+        "source": "10.7717/peerj.21533"
+      },
+      {
+        "id": "R07",
+        "title": "3D printing foot drop orthosis based on spring type hinge",
+        "year": "2021",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN113303958A",
+        "kind": "patent",
+        "source": "CN113303958A"
+      },
+      {
+        "id": "R09",
+        "title": "Ankle foot orthosis parameterization design optimization method and system for 3D printing",
+        "year": "2025",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119903714A",
+        "kind": "patent",
+        "source": "CN119903714A"
+      },
+      {
+        "id": "R11",
+        "title": "Peacocks Medical Group pioneers orthotics innovation in Fyous partnership",
+        "year": "2025",
+        "url": "https://www.peacocks.net/newsroom/peacocks-medical-group-pioneers-orthotics-innovation-groundbreaking-fyous-partnership",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R12",
+        "year": "",
+        "title": "How to make your 3D Printed AFO - Custom Workflow",
+        "url": "https://help.spentys.com/how-to-make-your-3d-printed-afo-custom-workflow",
+        "source": "",
+        "kind": "reference"
+      }
+    ]
+  },
+  "en": {
+    "id": "H30",
+    "p": "P2",
+    "title": "Ankle-foot orthoses and custom insoles",
+    "subtitle": "From static scans to dynamic loading and sustained fit",
+    "thesis": "Insoles redistribute plantar loading, while ankle-foot orthoses constrain or guide joint movement. Both can use custom scans. Compare them through gait tasks, local stiffness and patient experience.",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway",
+      "summary": "Geometry and gait data branch into in-shoe arch support and ankle-spanning restraint. Clinical studies distinguish indications and activities, and manufacturing records return fitting adjustments to the next version.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2025",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R01"
+          ],
+          "title": "Capture foot shape and gait",
+          "question": "Can static shape explain loading?",
+          "evidence": "A meshed silicone orthosis study combined standing scans and dynamic gait data."
+        },
+        {
+          "id": "N2",
+          "time": "2019",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R02"
+          ],
+          "title": "Assess regional plantar pressure",
+          "question": "Does heel unloading shift load elsewhere?",
+          "evidence": "Sixty patients with bilateral plantar fasciitis were randomized to custom printed or prefabricated devices, with plantar and comfort assessments at weeks 0 and 8."
+        },
+        {
+          "id": "N3",
+          "time": "2025",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R04"
+          ],
+          "title": "Specify the ankle-spanning task",
+          "question": "How can effects in cerebral palsy be observed?",
+          "evidence": "A case series examined custom printed ankle-foot orthoses in children with spastic cerebral palsy."
+        },
+        {
+          "id": "N4",
+          "time": "2025",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R03",
+            "R05"
+          ],
+          "title": "Use a walking task to reveal further changes",
+          "question": "How do alignment and force path change uphill?",
+          "evidence": "A 20-person comparison on a 10% incline found that the custom arch support moderated ankle pronation in participants with functional flat feet compared with shoes alone."
+        },
+        {
+          "id": "N5",
+          "time": "2026",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R06"
+          ],
+          "title": "Test neurological rehabilitation separately",
+          "question": "Can foot support alter whole-body compensation?",
+          "evidence": "An exploratory randomized study in stroke survivors assessed foot and body alignment together."
+        },
+        {
+          "id": "N6",
+          "time": "2025",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R11",
+            "R12"
+          ],
+          "title": "Feed fitting results into production",
+          "question": "How can clinical measurements become traceable device versions?",
+          "evidence": "Spentys documents a custom printed AFO workflow. The Peacocks and Fyous collaboration presents a reconfigurable molding approach."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Match plantar contact"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Define joint restraint"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Add an incline task"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Assess whole-body compensation"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Verify support regions"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Verify wearable fit"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Refine scans and parameters from fitting"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Plantar support and joint guidance",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "An insole can change the centre-of-pressure path. An ankle-spanning device controls posture through shell shape, stiffness and hinges. Within one population, record footwear, gait speed, incline and wear time alongside plantar pressure, ankle angle, comfort and adherence. [R01] [R02] [R03] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathway and evidence by stage",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Capture foot shape and gait"
+          },
+          {
+            "type": "p",
+            "text": "A meshed silicone orthosis study combined standing scans and dynamic gait data. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Scans describe weight-bearing contour, while gait data locate moving loads. Together they locate support and the phase in which it acts."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Assess regional plantar pressure"
+          },
+          {
+            "type": "p",
+            "text": "Sixty patients with bilateral plantar fasciitis were randomized to custom printed or prefabricated devices, with plantar and comfort assessments at weeks 0 and 8. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Early between-group comparisons indicated lower heel pressures and higher pressures at the hallux and first metatarsal. Interpret unloading alongside redistribution to the forefoot."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Specify the ankle-spanning task"
+          },
+          {
+            "type": "p",
+            "text": "A case series examined custom printed ankle-foot orthoses in children with spastic cerebral palsy. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Choose gait endpoints for the target joint movement and record shoes, wear duration and adjustment during growth. These variables affect interpretation over time."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Use a walking task to reveal further changes"
+          },
+          {
+            "type": "p",
+            "text": "A 20-person comparison on a 10% incline found that the custom arch support moderated ankle pronation in participants with functional flat feet compared with shoes alone. [R03] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Task intensity affects observable differences. Report level walking, incline and gait phases separately to avoid averaging away where the design acts."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Test neurological rehabilitation separately"
+          },
+          {
+            "type": "p",
+            "text": "An exploratory randomized study in stroke survivors assessed foot and body alignment together. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Distinguish local alignment, walking function and user experience to determine whether change remains at the foot or extends to whole-body control."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Feed fitting results into production"
+          },
+          {
+            "type": "p",
+            "text": "Spentys documents a custom printed AFO workflow. The Peacocks and Fyous collaboration presents a reconfigurable molding approach. [R11] [R12]"
+          },
+          {
+            "type": "p",
+            "text": "Record scanning, parameter edits, fabrication and fitting decisions to distinguish design mismatch from production variation."
+          }
+        ]
+      },
+      {
+        "title": "Measured outcomes by indication and activity",
+        "blocks": [
+          {
+            "type": "table",
+            "headers": [
+              "Study conditions",
+              "Findings",
+              "Scope"
+            ],
+            "rows": [
+              [
+                "Randomized plantar fasciitis study [R02]",
+                "Sixty participants at weeks 0 and 8. The initial between-group comparison showed lower peak heel and higher hallux and first-metatarsal pressures.",
+                "Read pressure regionally to distinguish load transfer."
+              ],
+              [
+                "Meshed silicone insoles in healthy volunteers [R01]",
+                "Twenty-one participants over four weeks. Gait phase differences in Table 5 were not significant.",
+                "Useful for testing manufacturing and wear and examining endpoint sensitivity."
+              ],
+              [
+                "Uphill walking in functional flat feet [R03]",
+                "Twenty participants on a 10% incline. Compared with shoes alone, insoles reduced pronation and shifted the centre of force laterally during propulsion in the flat-foot group.",
+                "Applies to the tested incline task and cohort."
+              ],
+              [
+                "Exploratory stroke trial [R06]",
+                "Twenty ambulatory chronic stroke survivors were randomized. The experimental group's medial longitudinal arch angle increased by a mean 7.95°, without significant change in Timed Up and Go.",
+                "The main signal concerns foot alignment in a cohort without an indication for AFO support."
+              ]
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Match scan input, loading and comfort"
+          },
+          {
+            "type": "p",
+            "text": "Unloaded scans, weight-bearing scans and dynamic recordings represent different design conditions. Kubach and colleagues combined standing scans with dynamic plantar data to develop meshed silicone insoles and studied feasibility in 21 participants. They separated comfort and function scores, posture and three-dimensional motion. Unchanged gait phases can coexist with regional load transfer. After contour optimization, look for reduced pressure peaks, sufficient shoe space, ankle mobility and durability. [R01] [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "Distinguish joint restraint and in-shoe support"
+          },
+          {
+            "type": "p",
+            "text": "The spastic cerebral palsy study used records for 62 children per group receiving a printed combined AFO or a conventional polyethylene device. Three-month outcomes included passive dorsiflexion, the Gross Motor Function Measure and gait. Allocation reflected clinical selection, providing a real-use comparison. The stroke pilot excluded notable foot drop and AFO need among ambulatory participants. Ankle-spanning restraint and in-shoe support therefore address distinct tasks, with rehabilitation, shoes and activity retained as comparison variables. [R04] [R06]"
+          },
+          {
+            "type": "h3",
+            "text": "Stronger geometric support does not automatically improve use"
+          },
+          {
+            "type": "p",
+            "text": "The incline study held the walking task constant for shoes with and without printed insoles. The support shifted force path and pronation during propulsion, which static foot shape cannot capture on its own. For designs with graded transitions and stiffness zones, check actual contact and any edge discomfort or compensating forefoot loading. [R01] [R02] [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "From repeatable devices to repeatable fittings"
+          },
+          {
+            "type": "p",
+            "text": "Compare reconfigurable molding and direct printing with matched scans, plantar zones and fitting goals, recording labour and delivery time. If mismatch arises from posture registration, shoe space or fitting variability, changing fabrication alone may miss the main issue. Classify remakes by scan, design, forming and use-related changes to identify where a platform improves care. [R11] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Product changes and delivery",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Spentys represents a scan-to-print route. Peacocks–Fyous emphasizes custom production via reconfigurable molds. Compare contour deviation, data-entry time, rework and material maintenance under common criteria. [R11] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and comparable designs",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN113303958A introduces a spring hinge for foot drop, while CN119903714A addresses parametric optimization. One changes movement and return, the other makes design variables traceable. Compare hinge and stiffness settings in matched shells and track change with repeated use. [R07] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "Shared clinical and manufacturing validation",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Stratify by indication and vary custom contour, local material zones and stiffness at matched foot geometry. Determine whether differences appear at fitting, during walking or after follow-up, then revise support shape, shoe fit or mechanical restraint. [R02] [R03] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Outlook for 2027–2029",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Connect standing scans, real activity logs and periodic reassessment. Informative signals include fewer remakes, more stable load distribution and consistent wear experience across material lots and clinics."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Clinical Evaluation of Novel Custom 3D-Printed Meshed-Silicone Orthotics Utilizing Standing Foot Scans and Dynamic Gait Data.",
+        "year": "2025",
+        "url": "https://doi.org/10.1177/11795972251371476",
+        "kind": "paper",
+        "source": "10.1177/11795972251371476"
+      },
+      {
+        "id": "R02",
+        "title": "Effect of 3D Printing Individualized Ankle-Foot Orthosis on Plantar Biomechanics and Pain in Patients with Plantar Fasciitis: A Randomized Controlled Trial.",
+        "year": "2019",
+        "url": "https://doi.org/10.12659/msm.915045",
+        "kind": "paper",
+        "source": "10.12659/msm.915045"
+      },
+      {
+        "id": "R03",
+        "title": "3D-Printed Customized Arch-Support Insoles Improve Gait Mechanics and Ankle Alignment in Young Adults with Functional Flat Foot During Uphill Walking.",
+        "year": "2025",
+        "url": "https://doi.org/10.3390/medicina61020281",
+        "kind": "paper",
+        "source": "10.3390/medicina61020281"
+      },
+      {
+        "id": "R04",
+        "title": "Therapeutic outcomes of customized 3D-printed ankle-foot orthoses in children with spastic cerebral palsy: a case series study.",
+        "year": "2025",
+        "url": "https://doi.org/10.3389/fped.2025.1661098",
+        "kind": "paper",
+        "source": "10.3389/fped.2025.1661098"
+      },
+      {
+        "id": "R05",
+        "title": "Biomechanical Analysis of the FlatFoot with Different 3D-Printed Insoles on the Lower Extremities.",
+        "year": "2022",
+        "url": "https://doi.org/10.3390/bioengineering9100563",
+        "kind": "paper",
+        "source": "10.3390/bioengineering9100563"
+      },
+      {
+        "id": "R06",
+        "title": "Effects of custom-made 3D-printed insoles on foot and body alignment in stroke survivors: an exploratory pilot randomized controlled trial.",
+        "year": "2026",
+        "url": "https://doi.org/10.7717/peerj.21533",
+        "kind": "paper",
+        "source": "10.7717/peerj.21533"
+      },
+      {
+        "id": "R07",
+        "title": "3D printing foot drop orthosis based on spring type hinge",
+        "year": "2021",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN113303958A",
+        "kind": "patent",
+        "source": "CN113303958A"
+      },
+      {
+        "id": "R09",
+        "title": "Ankle foot orthosis parameterization design optimization method and system for 3D printing",
+        "year": "2025",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119903714A",
+        "kind": "patent",
+        "source": "CN119903714A"
+      },
+      {
+        "id": "R11",
+        "title": "Peacocks Medical Group pioneers orthotics innovation in Fyous partnership",
+        "year": "2025",
+        "url": "https://www.peacocks.net/newsroom/peacocks-medical-group-pioneers-orthotics-innovation-groundbreaking-fyous-partnership",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R12",
+        "year": "",
+        "title": "How to make your 3D Printed AFO - Custom Workflow",
+        "url": "https://help.spentys.com/how-to-make-your-3d-printed-afo-custom-workflow",
+        "source": "",
+        "kind": "reference"
+      }
+    ]
+  },
+  "de": {
+    "id": "H30",
+    "p": "P2",
+    "title": "Sprunggelenk-Fuß-Orthesen und individuelle Einlagen",
+    "subtitle": "Vom statischen Scan zu dynamischer Last und dauerhafter Passung",
+    "thesis": "Einlagen verteilen plantare Last, Sprunggelenk-Fuß-Orthesen begrenzen oder führen Gelenkbewegung. Beide können individuelle Scans nutzen. Verglichen werden Gangaufgabe, lokale Steifigkeit und Patientenerfahrung.",
+    "questions": [],
+    "graph": {
+      "title": "Forschungspfad",
+      "summary": "Fußgeometrie und Gangdaten verzweigen sich in Gewölbestütze im Schuh und gelenkübergreifende Führung. Klinische Studien unterscheiden Indikation und Aktivität, Fertigungsdaten führen Anpassungen in die nächste Version zurück.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2025",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R01"
+          ],
+          "title": "Fußform und Gang erfassen",
+          "question": "Erklärt statische Form die Belastung?",
+          "evidence": "Eine Studie zu Silikonorthesen mit Gitterstruktur kombinierte Scans im Stand mit dynamischen Gangdaten."
+        },
+        {
+          "id": "N2",
+          "time": "2019",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R02"
+          ],
+          "title": "Regionalen plantaren Druck prüfen",
+          "question": "Verlegt Fersenentlastung Last in andere Regionen?",
+          "evidence": "60 Personen mit beidseitiger Plantarfasziitis erhielten randomisiert gedruckte Individual- oder Fertigorthesen. Plantare Messung und Komforterfassung erfolgten in Woche 0 und 8."
+        },
+        {
+          "id": "N3",
+          "time": "2025",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R04"
+          ],
+          "title": "Aufgabe der gelenkübergreifenden Orthese definieren",
+          "question": "Wie lassen sich Effekte bei Zerebralparese beobachten?",
+          "evidence": "Eine Fallserie untersuchte gedruckte individuelle Sprunggelenk-Fuß-Orthesen bei Kindern mit spastischer Zerebralparese."
+        },
+        {
+          "id": "N4",
+          "time": "2025",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R03",
+            "R05"
+          ],
+          "title": "Durch Gehaufgaben weitere Änderungen erfassen",
+          "question": "Wie verändern sich Achsstellung und Kraftpfad beim Bergaufgehen?",
+          "evidence": "Ein Vergleich mit 20 Personen bei 10 % Steigung zeigte mit individueller Gewölbestütze gegenüber Schuhen allein eine geringere Sprunggelenkpronation bei funktionellem Plattfuß."
+        },
+        {
+          "id": "N5",
+          "time": "2026",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R06"
+          ],
+          "title": "Neurologische Rehabilitation getrennt prüfen",
+          "question": "Kann Fußstützung Kompensation des gesamten Körpers verändern?",
+          "evidence": "Eine explorative randomisierte Studie nach Schlaganfall untersuchte Fuß- und Körperausrichtung gemeinsam."
+        },
+        {
+          "id": "N6",
+          "time": "2025",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R11",
+            "R12"
+          ],
+          "title": "Anpassungsergebnisse in die Fertigung zurückführen",
+          "question": "Wie werden klinische Messungen zu nachvollziehbaren Produktversionen?",
+          "evidence": "Spentys dokumentiert einen Workflow für gedruckte Individualorthesen. Die Partnerschaft Peacocks–Fyous stellt rekonfigurierbare Formgebung vor."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Plantarkontakt anpassen"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Gelenkführung festlegen"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Steigungsaufgabe ergänzen"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Ganzkörperkompensation erfassen"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Stützregionen prüfen"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Tragepassung prüfen"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Scan und Parameter anhand der Anprobe anpassen"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Plantare Stützung und Gelenkführung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Eine Einlage kann den Verlauf des Druckzentrums ändern. Eine gelenkübergreifende Orthese führt über Schalenform, Steifigkeit und Gelenk. Innerhalb einer Population sind Schuhe, Gangtempo, Steigung und Tragedauer neben Plantardruck, Gelenkwinkel, Komfort und Trageadhärenz zu erfassen. [R01] [R02] [R03] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungspfad und Evidenz je Station",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Fußform und Gang erfassen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie zu Silikonorthesen mit Gitterstruktur kombinierte Scans im Stand mit dynamischen Gangdaten. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Scans beschreiben belastete Kontur, Gangdaten wandernde Lasten. Zusammen lokalisieren sie Stützung und wirksame Gangphase."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Regionalen plantaren Druck prüfen"
+          },
+          {
+            "type": "p",
+            "text": "60 Personen mit beidseitiger Plantarfasziitis erhielten randomisiert gedruckte Individual- oder Fertigorthesen. Plantare Messung und Komforterfassung erfolgten in Woche 0 und 8. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Frühe Gruppenvergleiche zeigten geringeren Fersendruck und höheren Druck an Großzehe und erstem Mittelfußknochen. Entlastung und Verlagerung zum Vorfuß sind gemeinsam zu bewerten."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Aufgabe der gelenkübergreifenden Orthese definieren"
+          },
+          {
+            "type": "p",
+            "text": "Eine Fallserie untersuchte gedruckte individuelle Sprunggelenk-Fuß-Orthesen bei Kindern mit spastischer Zerebralparese. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Gangendpunkte für die Zielbewegung wählen und Schuhe, Tragedauer und wachstumsbedingte Anpassungen erfassen. Diese Größen beeinflussen die Interpretation im Verlauf."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Durch Gehaufgaben weitere Änderungen erfassen"
+          },
+          {
+            "type": "p",
+            "text": "Ein Vergleich mit 20 Personen bei 10 % Steigung zeigte mit individueller Gewölbestütze gegenüber Schuhen allein eine geringere Sprunggelenkpronation bei funktionellem Plattfuß. [R03] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Die Aufgabenintensität bestimmt messbare Unterschiede. Ebenes Gehen, Steigung und Gangphasen getrennt ausweisen, damit Mittelwerte den Wirkungsort nicht verdecken."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Neurologische Rehabilitation getrennt prüfen"
+          },
+          {
+            "type": "p",
+            "text": "Eine explorative randomisierte Studie nach Schlaganfall untersuchte Fuß- und Körperausrichtung gemeinsam. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Lokale Ausrichtung, Gehfunktion und Nutzererfahrung unterscheiden, um Änderungen am Fuß von Veränderungen der Ganzkörperkontrolle zu trennen."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Anpassungsergebnisse in die Fertigung zurückführen"
+          },
+          {
+            "type": "p",
+            "text": "Spentys dokumentiert einen Workflow für gedruckte Individualorthesen. Die Partnerschaft Peacocks–Fyous stellt rekonfigurierbare Formgebung vor. [R11] [R12]"
+          },
+          {
+            "type": "p",
+            "text": "Scan, Parameteränderungen, Fertigung und Anprobe dokumentieren, um Designabweichung und Fertigungsstreuung zu trennen."
+          }
+        ]
+      },
+      {
+        "title": "Messbefunde nach Indikation und Aktivität",
+        "blocks": [
+          {
+            "type": "table",
+            "headers": [
+              "Studienbedingungen",
+              "Befunde",
+              "Geltungsbereich"
+            ],
+            "rows": [
+              [
+                "Randomisierte Plantarfasziitis-Studie [R02]",
+                "60 Personen in Woche 0 und 8. Anfangsvergleich zeigte niedrigere Fersen- und höhere Großzehen- und erste Mittelfuß-Spitzendrücke.",
+                "Druck regional auswerten, um Lastverlagerung zu erkennen."
+              ],
+              [
+                "Silikongittereinlagen bei Gesunden [R01]",
+                "21 Personen über vier Wochen. Gangphasen in Tabelle 5 änderten sich nicht signifikant.",
+                "Geeignet für Fertigungs- und Tragetests sowie Prüfung der Endpunktsensitivität."
+              ],
+              [
+                "Bergaufgehen bei funktionellem Plattfuß [R03]",
+                "20 Personen auf 10 % Steigung. Einlagen verringerten bei Plattfuß Pronation und verlagerten das Kraftzentrum beim Abstoß nach lateral gegenüber Schuhen allein.",
+                "Gilt für die geprüfte Steigungsaufgabe und Kohorte."
+              ],
+              [
+                "Explorative Schlaganfallstudie [R06]",
+                "20 gehfähige Personen nach chronischem Schlaganfall wurden randomisiert. Der mediale Längsgewölbewinkel stieg in der Versuchsgruppe im Mittel um 7,95°, ohne signifikante Änderung im Timed Up and Go.",
+                "Das Hauptsignal betrifft Fußausrichtung in einer Kohorte ohne AFO-Indikation."
+              ]
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Scandaten, Last und Komfort einander zuordnen"
+          },
+          {
+            "type": "p",
+            "text": "Entlastete Scans, belastete Standscans und dynamische Aufnahmen repräsentieren verschiedene Entwurfsbedingungen. Kubach und Kollegen kombinierten Standscan und Plantardaten für Silikongittereinlagen, deren Machbarkeit bei 21 Personen geprüft wurde. Komfort und Funktion, Haltung und dreidimensionale Bewegung wurden getrennt gemessen. Unveränderte Gangphasen können mit regionaler Lastverlagerung einhergehen. Nach Konturoptimierung Druckspitzen, Schuhraum, Sprunggelenkbeweglichkeit und Haltbarkeit prüfen. [R01] [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "Gelenkführung und Stützung im Schuh trennen"
+          },
+          {
+            "type": "p",
+            "text": "Die Studie bei spastischer Zerebralparese nutzte Akten von je 62 Kindern mit gedruckter kombinierter AFO oder konventioneller Polyethylenorthese. Nach drei Monaten wurden passive Dorsalflexion, Gross Motor Function Measure und Gang verglichen. Gruppen entsprachen klinischer Auswahl. Die randomisierte Schlaganfall-Pilotstudie schloss deutliche Fußheberschwäche und AFO-Bedarf aus. Gelenkübergreifende Führung und Schuhstützung bearbeiten unterschiedliche Aufgaben. Rehabilitation, Schuhe und Aktivität gehören in den Vergleich. [R04] [R06]"
+          },
+          {
+            "type": "h3",
+            "text": "Stärkere geometrische Stützung verbessert die Nutzung nicht automatisch"
+          },
+          {
+            "type": "p",
+            "text": "Beim Steigungsversuch blieb die Gehaufgabe mit und ohne Druckeinlage gleich. Kraftpfad und Pronation änderten sich beim Abstoß, was die statische Fußform allein nicht abbildet. Bei abgestuften Übergängen und Steifigkeitszonen realen Kontakt, Randbeschwerden und kompensatorische Vorfußbelastung prüfen. [R01] [R02] [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "Vom reproduzierbaren Bauteil zur reproduzierbaren Anpassung"
+          },
+          {
+            "type": "p",
+            "text": "Rekonfigurierbare Formen und Direktdruck bei gleichen Scans, Plantarzonen und Passzielen vergleichen und Personal- sowie Lieferzeit erfassen. Bei Fehlern durch Lageregistrierung, Schuhraum oder Anprobe löst ein anderes Verfahren allein das Hauptproblem womöglich nicht. Neuanfertigungen nach Scan, Design, Formgebung und Nutzungsänderung gliedern. [R11] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Produktänderungen und Bereitstellung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Spentys steht für einen Scan-zu-Druck-Weg. Peacocks–Fyous setzt auf Individualfertigung mit rekonfigurierbaren Formen. Konturabweichung, Datenerfassungszeit, Nacharbeit und Materialpflege nach gemeinsamen Kriterien vergleichen. [R11] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Patentmechanismen und vergleichbare Konstruktionen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN113303958A verwendet ein Federgelenk bei Fußheberschwäche, CN119903714A parametrische Optimierung. Eines verändert Bewegung und Rückstellung, das andere macht Designvariablen nachvollziehbar. Gelenk- und Steifigkeitsvarianten in gleichen Schalen wiederholt prüfen. [R07] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "Gemeinsame klinische und fertigungstechnische Validierung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Nach Indikation stratifizieren und Kontur, lokale Materialzonen und Steifigkeit bei gleicher Fußgeometrie variieren. Unterschiede bei Anprobe, Gehen und Nachbeobachtung getrennt erfassen und danach Stützform, Schuhpassung oder Gelenkführung anpassen. [R02] [R03] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick 2027–2029",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Standscans, reale Aktivitätsprotokolle und regelmäßige Nachmessung verbinden. Aussagekräftig sind weniger Neuanfertigungen, stabilere Lastverteilung und konsistente Trageerfahrung über Materialchargen und Praxen."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Clinical Evaluation of Novel Custom 3D-Printed Meshed-Silicone Orthotics Utilizing Standing Foot Scans and Dynamic Gait Data.",
+        "year": "2025",
+        "url": "https://doi.org/10.1177/11795972251371476",
+        "kind": "paper",
+        "source": "10.1177/11795972251371476"
+      },
+      {
+        "id": "R02",
+        "title": "Effect of 3D Printing Individualized Ankle-Foot Orthosis on Plantar Biomechanics and Pain in Patients with Plantar Fasciitis: A Randomized Controlled Trial.",
+        "year": "2019",
+        "url": "https://doi.org/10.12659/msm.915045",
+        "kind": "paper",
+        "source": "10.12659/msm.915045"
+      },
+      {
+        "id": "R03",
+        "title": "3D-Printed Customized Arch-Support Insoles Improve Gait Mechanics and Ankle Alignment in Young Adults with Functional Flat Foot During Uphill Walking.",
+        "year": "2025",
+        "url": "https://doi.org/10.3390/medicina61020281",
+        "kind": "paper",
+        "source": "10.3390/medicina61020281"
+      },
+      {
+        "id": "R04",
+        "title": "Therapeutic outcomes of customized 3D-printed ankle-foot orthoses in children with spastic cerebral palsy: a case series study.",
+        "year": "2025",
+        "url": "https://doi.org/10.3389/fped.2025.1661098",
+        "kind": "paper",
+        "source": "10.3389/fped.2025.1661098"
+      },
+      {
+        "id": "R05",
+        "title": "Biomechanical Analysis of the FlatFoot with Different 3D-Printed Insoles on the Lower Extremities.",
+        "year": "2022",
+        "url": "https://doi.org/10.3390/bioengineering9100563",
+        "kind": "paper",
+        "source": "10.3390/bioengineering9100563"
+      },
+      {
+        "id": "R06",
+        "title": "Effects of custom-made 3D-printed insoles on foot and body alignment in stroke survivors: an exploratory pilot randomized controlled trial.",
+        "year": "2026",
+        "url": "https://doi.org/10.7717/peerj.21533",
+        "kind": "paper",
+        "source": "10.7717/peerj.21533"
+      },
+      {
+        "id": "R07",
+        "title": "3D printing foot drop orthosis based on spring type hinge",
+        "year": "2021",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN113303958A",
+        "kind": "patent",
+        "source": "CN113303958A"
+      },
+      {
+        "id": "R09",
+        "title": "Ankle foot orthosis parameterization design optimization method and system for 3D printing",
+        "year": "2025",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119903714A",
+        "kind": "patent",
+        "source": "CN119903714A"
+      },
+      {
+        "id": "R11",
+        "title": "Peacocks Medical Group pioneers orthotics innovation in Fyous partnership",
+        "year": "2025",
+        "url": "https://www.peacocks.net/newsroom/peacocks-medical-group-pioneers-orthotics-innovation-groundbreaking-fyous-partnership",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R12",
+        "year": "",
+        "title": "How to make your 3D Printed AFO - Custom Workflow",
+        "url": "https://help.spentys.com/how-to-make-your-3d-printed-afo-custom-workflow",
+        "source": "",
+        "kind": "reference"
+      }
+    ]
+  }
+}

@@ -1,12 +1,14 @@
 """Direction-level reports, fully pretranslated with source-preserving diagrams."""
 from __future__ import annotations
 import html,json,re
+from collections import Counter
 from pathlib import Path
 from functools import lru_cache
-from urllib.parse import urlparse
+from urllib.parse import urlencode,urlparse
 import streamlit as st
 import streamlit.components.v1 as components
-from dashboard.i18n import language,preserve_original_text
+from dashboard.cross_data import CROSS_CUTTING, H36_IDS, load_direction_classification, question_direction_map
+from dashboard.i18n import language,preserve_original_text,tr
 
 UI={
  'zh':{'read':'查看报告 →','back':'← 返回研究方向','contents':'报告目录','graph':'详细研究脉络图','sources':'论文、专利与企业来源','questions':'研究问题','finding':'核心判断','zoom':'缩放','reset':'适应宽度','feedback':'虚线：反馈任务','date':'更新于 2026-11-07'},
@@ -18,6 +20,80 @@ COLORS={'P1':'#386c9c','P2':'#11857f','P3':'#9d692d','P4':'#7760a3','P5':'#a44f6
 @lru_cache(maxsize=9)
 def load_reports(root:str,code:str='zh')->dict:
  return json.loads((Path(root)/'data/direction_reports'/f'{code}.json').read_text(encoding='utf8'))
+
+def direction_report_url(rid: str, code: str, question: bool = False) -> str:
+ view, key = ('question-report', 'question') if question else ('direction-report', 'direction')
+ return '?' + urlencode({'view': view, key: rid, 'lang': code})
+
+
+@lru_cache(maxsize=108)
+def load_themed_report(root: Path, rid: str, code: str) -> dict:
+ locales = json.loads((root / 'data/direction_reports/h36' / f'{rid}.json').read_text(encoding='utf8'))
+ return locales[code]
+
+
+def localized_direction_title(root: Path, rid: str, code: str) -> str:
+ if rid == CROSS_CUTTING:
+  return tr('跨方向研究问题', code=code, root=root)
+ if rid in H36_IDS:
+  return f"{rid} · {load_themed_report(root, rid, code)['title']}"
+ return rid
+
+
+def themed_questions(root: Path, rid: str, code: str) -> list[dict]:
+ classification = load_direction_classification(root)
+ group = next(d for d in classification['directions'] if d['id'] == rid)
+ questions = {q['id']: q for r in load_reports(str(root), code).values() for q in r['questions']}
+ return [{**questions[qid], 'related': qid in group['related']}
+         for qid in [*group['questions'], *group['related']]]
+
+def validate_themed_reports(root: Path, question_ids: set[str], paper_count: int) -> int:
+ classification = load_direction_classification(root)
+ if classification is None:
+  return 0
+ groups = classification['directions']
+ if tuple(group['id'] for group in groups) != H36_IDS:
+  raise ValueError('Expected H01–H36 in taxonomy order.')
+ assigned = [qid for group in groups for qid in group['questions']] + classification['cross_cutting']
+ if len(assigned) != len(question_ids) or set(assigned) != question_ids:
+  raise ValueError('Every research question must have exactly one primary destination.')
+ if not 0 < classification['unique_papers_with_theme'] <= paper_count:
+  raise ValueError('Invalid theme-paper corpus size.')
+ for group in groups:
+  rid = group['id']
+  if not set(group['related']) <= question_ids - set(group['questions']):
+   raise ValueError(f'{rid}: invalid related question')
+  if not sum(group['paper_year_counts'].values()) <= group['paper_count'] <= paper_count:
+   raise ValueError(f'{rid}: inconsistent annual counts')
+  original = load_themed_report(root, rid, 'zh')
+  if original['title'] != group['title']:
+   raise ValueError(f'{rid}: report title and taxonomy disagree')
+  reference_identity = [(ref['id'], ref['title'], ref['url']) for ref in original['references']]
+  for code in ('zh', 'en', 'de'):
+   report = load_themed_report(root, rid, code)
+   refs = report['references']
+   ref_ids = {ref['id'] for ref in refs}
+   nodes = report['graph']['nodes']
+   edges = report['graph']['edges']
+   node_ids = {node['id'] for node in nodes}
+   positions = {(node['stage'], node['lane']) for node in nodes}
+   body = report['sections']
+   cited_ids = set(re.findall(r'\[(R\d+)\]', json.dumps(body, ensure_ascii=False)))
+   if (report['id'] != rid or report['p'] not in COLORS or
+       not report['title'].strip() or not report['thesis'].strip() or len(body) < 6 or
+       any(not section['blocks'] for section in body) or
+       len(ref_ids) != len(refs) or not all(safe_url(ref['url']) for ref in refs) or
+       [(ref['id'], ref['title'], ref['url']) for ref in refs] != reference_identity or
+       len(nodes) < 6 or len(nodes) != len(node_ids) or len(nodes) != len(positions) or
+       not all(0 <= stage <= 4 and 0 <= lane <= 2 for stage,lane in positions) or
+       not all(node['refs'] and set(node['refs']) <= ref_ids for node in nodes) or
+       not all({edge['from'], edge['to']} <= node_ids for edge in edges) or
+       not any(edge.get('kind') == 'feedback' for edge in edges) or not cited_ids <= ref_ids):
+    raise ValueError(f'{rid}: invalid report, graph or references in {code}')
+   if re.search(r'(?i)(?<![A-Z])[A-Z]:[\/]|file://', json.dumps(report, ensure_ascii=False)):
+    raise ValueError(f'{rid}: local path in {code}')
+ return len(groups)
+
 
 def direction_id(root:Path,p:str,title:str)->str|None:
  return next((k for k,v in load_reports(str(root)).items() if v['p']==p and v['title']==title),None)
@@ -37,19 +113,38 @@ def open_direction_report(rid:str)->None:
 
 def return_to_direction(root:Path,rid:str)->None:
  for k in ('view','direction','question'):st.query_params.pop(k,None)
- original=load_reports(str(root))[rid]
  st.session_state['page']='学术与企业联系'
  saved=st.session_state.get('direction_report_return',{})
  if saved.get('rid')!=rid:saved={}
- st.session_state['cross_p']=saved.get('cross_p',original['p'])
- st.session_state['cross_direction']=f"{original['p']} · {original['title']}"
- qid=saved.get('cross_question')
- if qid in {q['id'] for q in original['questions']}:
+ classification=load_direction_classification(root)
+ if classification:
+  groups={group['id']:group for group in classification['directions']}
+  parents=question_direction_map(classification)
+  qid=saved.get('cross_question')
+  if rid in groups:
+   target=rid
+  else:
+   historic=load_reports(str(root))[rid]
+   candidates=Counter(parents[q['id']] for q in historic['questions'])
+   target=parents.get(qid) or candidates.most_common(1)[0][0]
+  allowed=groups.get(target,{}).get('p_layers',[])
+  p=saved.get('cross_p','全部')
+  st.session_state['cross_p']=p if p in allowed else '全部'
+  st.session_state['cross_direction']=target
+  valid=parents.get(qid)==target
+ else:
+  original=load_reports(str(root))[rid]
+  st.session_state['cross_p']=saved.get('cross_p',original['p'])
+  st.session_state['cross_direction']=f"{original['p']} · {original['title']}"
+  qid=saved.get('cross_question')
+  valid=qid in {q['id'] for q in original['questions']}
+ if valid:
   st.session_state['cross_question']=qid
   page_key=f'cross_paper_page_{qid}'
   if page_key in saved:st.session_state[page_key]=saved[page_key]
  else:st.session_state.pop('cross_question',None)
  st.session_state['cross_scroll_to_direction']=True
+
 
 def safe_url(url:str)->bool:
  p=urlparse(url);return p.scheme in ('http','https') and bool(p.netloc) and not p.username
@@ -115,24 +210,49 @@ def diagram_html(report:dict,ui:dict)->str:
 def direction_report_page(root:Path,rid:str,public_mode=False)->None:
  from dashboard.patent_report_views import patent_report_section,patent_section_title
  code=language();ui=UI[code];reports=load_reports(str(root),code)
- if rid not in reports:
+ themed=rid in H36_IDS and load_direction_classification(root) is not None
+ if not themed and rid not in reports:
   st.info({'zh':'未找到对应报告。','en':'Report not found.','de':'Bericht nicht gefunden.'}[code]);return
- r=reports[rid];refs={v['id']:v for v in r['references']};accent=COLORS[r['p']]
+ r=load_themed_report(root,rid,code) if themed else reports[rid]
+ refs={v['id']:v for v in r['references']};accent=COLORS[r['p']]
+ report_questions=themed_questions(root,rid,code) if themed else r['questions']
+ chinese_title=load_themed_report(root,rid,'zh')['title'] if themed else load_reports(str(root),'zh')[rid]['title']
+ version='2026-11-19' if themed else '2026-11-07'
+ date=ui['date'].replace('2026-11-07',version).replace('07.11.2026','19.11.2026' if themed else '07.11.2026')
  from .feedback_views import report_feedback
- report_feedback(rid,load_reports(str(root),'zh')[rid]['title'],'direction',root,public_mode,version='2026-11-07')
+ report_feedback(rid,chinese_title,'direction',root,public_mode,version=version)
  with preserve_original_text():
   st.button(ui['back'],on_click=return_to_direction,args=(root,rid),key='direction_report_back')
-  hero=f'<div class="dr" style="--accent:{accent}"><div class="dr-hero"><div class="dr-kicker">{r["p"]} / {rid} · AM HEALTHCARE</div><h1>{html.escape(r["title"])}</h1><p class="dr-sub">{html.escape(r["subtitle"])}</p><div class="dr-date">{ui["date"]}</div><aside><h3>{ui["finding"]}</h3><p>{cited(r["thesis"],refs)}</p></aside></div>'
-  toc=[('dr-questions',ui['questions']),('dr-pathway',ui['graph'])]+[(f'dr-s{i}',s['title']) for i,s in enumerate(r['sections'])]+[('patent-evidence',patent_section_title(code)),('dr-sources',ui['sources'])]
+  kicker=rid if themed else f'{r["p"]} / {rid}'
+  hero=f'<div class="dr" style="--accent:{accent}"><div class="dr-hero"><div class="dr-kicker">{kicker} · AM HEALTHCARE</div><h1>{html.escape(r["title"])}</h1><p class="dr-sub">{html.escape(r["subtitle"])}</p><div class="dr-date">{date}</div><aside><h3>{ui["finding"]}</h3><p>{cited(r["thesis"],refs)}</p></aside></div>'
+  toc=[('dr-pathway',ui['graph'])]+[(f'dr-s{i}',s['title']) for i,s in enumerate(r['sections'])]
+  if report_questions:
+   toc.insert(0,('dr-questions',ui['questions']))
+  if not themed:
+   toc.append(('patent-evidence',patent_section_title(code)))
+  toc.append(('dr-sources',ui['sources']))
   hero+='<nav class="dr-toc">'+''.join(f'<a href="#{k}" target="_self">{html.escape(t)}</a>' for k,t in toc)+'</nav>'
-  hero+=f'<section id="dr-questions"><h2>{ui["questions"]}</h2>'+''.join(f'<div class="dr-question"><strong>{q["id"]} · {cited(q["question"],refs)}</strong><p>{cited(q["focus"],refs)}</p></div>' for q in r['questions'])+'</section></div>'
+  if report_questions:
+   cards=[]
+   for q in report_questions:
+    title=f'{q["id"]} · {q["question"]}'
+    if themed:
+     href=html.escape(direction_report_url(q['id'],code,question=True),quote=True)
+     heading=f'<a href="{href}" target="_self">{html.escape(title)} ↗</a>'
+    else:
+     heading=html.escape(title)
+    note=tr('相关研究问题',code=code,root=root)+' · ' if q.get('related') else ''
+    cards.append(f'<div class="dr-question"><strong>{heading}</strong><p>{html.escape(note+q["focus"])}</p></div>')
+   hero+=f'<section id="dr-questions"><h2>{ui["questions"]}</h2>'+''.join(cards)+'</section>'
+  hero+='</div>'
   st.html(CSS+hero)
   for i,s in enumerate(r['sections']):
    if i==1:
     st.html(f'<div class="dr"><section id="dr-pathway"><h2>{html.escape(r["graph"]["title"])}</h2><p>{html.escape(r["graph"]["summary"])}</p></section></div>')
     components.html(diagram_html(r,ui),height=820,scrolling=True)
    st.html(f'<div class="dr" style="--accent:{accent}"><section id="dr-s{i}"><h2>{i+1}. {html.escape(s["title"])}</h2>'+''.join(block_html(b,refs) for b in s['blocks'])+'</section></div>')
-  patent_report_section(root,rid,code=code)
+  if not themed:
+   patent_report_section(root,rid,code=code)
   source_html=f'<div class="dr"><section id="dr-sources"><h2>{ui["sources"]}</h2>'
   for ref in r['references']:
    if safe_url(ref['url']):source_html+=f'<div class="dr-source"><b>{ref["id"]}</b> · <a href="{html.escape(ref["url"],quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(ref["title"])}</a><br><small>{html.escape(source_date(str(ref.get("year","")),code))} · {html.escape(ref.get("source",""))}</small></div>'

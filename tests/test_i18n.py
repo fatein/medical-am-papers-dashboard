@@ -280,7 +280,7 @@ def test_localized_direction_navigation_and_report_return_keep_the_selection():
     app.query_params['lang']='de'
     app.session_state['page']='学术与企业联系'
     app.run()
-    target='P1 · 个体化植入物'
+    target='H06'
     app.session_state['cross_direction']=target  # Same update as a summary-row click.
     app.run()
     assert not app.exception
@@ -288,7 +288,7 @@ def test_localized_direction_navigation_and_report_return_keep_the_selection():
     question=app.selectbox(key='cross_question__de').value
     app.button(key='open_direction_report').click().run()
     assert not app.exception
-    assert app.query_params['direction']==['P1-02']
+    assert app.query_params['direction']==['H06']
     app.button(key='direction_report_back').click().run()
     assert not app.exception
     assert app.selectbox(key='cross_direction__de').value==target

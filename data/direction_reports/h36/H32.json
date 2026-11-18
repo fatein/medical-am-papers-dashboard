@@ -1,0 +1,1046 @@
+{
+  "zh": {
+    "id": "H32",
+    "p": "P6",
+    "title": "根管器械评价用打印牙齿复制模型",
+    "subtitle": "在统一解剖下比较成形，并用天然牙校准结果",
+    "thesis": "复制模型使同一复杂根管能在多个器械组重现。设计的重点因此转向真实打印几何、材料差异和配准误差，以及由局部根管读数支持的比较。",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络图",
+      "summary": "复制标准根管后，一路核验影像和天然牙相似性，一路扩展到特殊根管形态与入路。两路在术前术后空间配准处汇合，异常区域反馈给模型制造。",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2021",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R04"
+          ],
+          "title": "在同一几何比较器械",
+          "question": "能否从个体解剖差异中分离器械效应？",
+          "evidence": "使用标准打印牙齿复制体与锥形束 CT 的研究比较三种热处理镍钛器械。"
+        },
+        {
+          "id": "N2",
+          "time": "2024",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R05"
+          ],
+          "title": "与天然牙建立参照",
+          "question": "树脂复制体能复现哪些成形差异？",
+          "evidence": "11 颗 Vertucci IV 型下颌磨牙为原型，共测量 132 个根管。天然牙和复制体用同一 RE 系统直接比较，其他器械组用树脂。复制体在根尖段的容积增幅略大。"
+        },
+        {
+          "id": "N3",
+          "time": "2024",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R06"
+          ],
+          "title": "复制额外的近中根管",
+          "question": "如何把复杂变异变成可复现实验？",
+          "evidence": "下颌第一磨牙近中中央根管研究用打印模型对比三种镍钛旋转系统。"
+        },
+        {
+          "id": "N4",
+          "time": "2026",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R01",
+            "R03"
+          ],
+          "title": "读出特定区域成形",
+          "question": "曲率、峡部和根尖哪里决定器械差异？",
+          "evidence": "C 形根管与三根磨牙远舌根管是两种不同的局部比较场景。"
+        },
+        {
+          "id": "N5",
+          "time": "2026",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R02"
+          ],
+          "title": "把开髓入路作为独立因素",
+          "question": "器械差异是否取决于进入路径？",
+          "evidence": "Vertucci III 型下颌切牙复制体用于比较不同开髓洞型的器械操作表现。"
+        },
+        {
+          "id": "N6",
+          "time": "2024–2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R05",
+            "R08",
+            "R09"
+          ],
+          "title": "复用测试件并保留误差地图",
+          "question": "同一模型在哪些部位可靠？",
+          "evidence": "天然牙对照提供区段差异，模拟教学牙和侧支根管专利提供可制造的模型实例。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "检查材料和真实牙"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "扩展到解剖变异"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "按区域解读"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "固定形态切换入路"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "建立局部偏差图"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "标注入路条件"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "由误差地图决定重印部位"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "复制体的任务边界",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "方向核心是对比器械和入路，测的是成形空间、保存结构和可重复性。教学模拟另需衡量触感与技能转移。相同打印体可供两类用途，验收指标应随任务变化。[R02] [R04] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 在同一几何比较器械"
+          },
+          {
+            "type": "p",
+            "text": "使用标准打印牙齿复制体与锥形束 CT 的研究比较三种热处理镍钛器械。 [R04]"
+          },
+          {
+            "type": "p",
+            "text": "统一原型后还要抽检打印后内壁和根尖尺度。将器械的差异与制造变异区间共同报告。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 与天然牙建立参照"
+          },
+          {
+            "type": "p",
+            "text": "11 颗 Vertucci IV 型下颌磨牙为原型，共测量 132 个根管。天然牙和复制体用同一 RE 系统直接比较，其他器械组用树脂。复制体在根尖段的容积增幅略大。 [R05]"
+          },
+          {
+            "type": "p",
+            "text": "整体相似与根尖局部偏差可以同时出现。应单列根尖组结果并报告树脂、后处理和影像边界。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 复制额外的近中根管"
+          },
+          {
+            "type": "p",
+            "text": "下颌第一磨牙近中中央根管研究用打印模型对比三种镍钛旋转系统。 [R06]"
+          },
+          {
+            "type": "p",
+            "text": "同一形态内对比利于归因，多种形态都出现相同差异才能表明结果跨解剖稳定。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 读出特定区域成形"
+          },
+          {
+            "type": "p",
+            "text": "C 形根管与三根磨牙远舌根管是两种不同的局部比较场景。 [R01] [R03]"
+          },
+          {
+            "type": "p",
+            "text": "除总体积外，报告分区表面积、未被触及的内壁及偏移方向。相同体积变化可能由不同接触区域产生。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 把开髓入路作为独立因素"
+          },
+          {
+            "type": "p",
+            "text": "Vertucci III 型下颌切牙复制体用于比较不同开髓洞型的器械操作表现。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "同一器械更换入路的比较，应与同一入路更换器械分开，必要时采用交叉设计识别交互作用。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 复用测试件并保留误差地图"
+          },
+          {
+            "type": "p",
+            "text": "天然牙对照提供区段差异，模拟教学牙和侧支根管专利提供可制造的模型实例。 [R05] [R08] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "将模型与源几何配准，保存根冠、根中、根尖各区偏差和批次变异，为下一次器械对照限定可比范围。"
+          }
+        ]
+      },
+      {
+        "title": "两种实验解剖与材料对照",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "配对材料研究以 11 颗 Vertucci IV 型下颌磨牙为原型，合计测量 132 个根管。天然牙与树脂复制体的直接比较使用同一 RE 系统，另外的器械组在树脂上开展。直接对照中，未接触壁面为全长 26.1% 对 31.5%、根尖 4 mm 内 24.3% 对 32.5%，均未达统计显著。根尖段容积百分比增幅仍存在显著组间差异。应分开报告初始形态、器械接触和最终材料去除。 [R05]"
+          },
+          {
+            "type": "p",
+            "text": "近中中央根管研究用同一牙体的 18 个复制体比较三套器械，每组 6 个。原型平均弯曲度 15.3°。ProTaper Gold 组根管更趋直，体积与表面积增幅更大，分叉下 1、2 和 3 mm 的剩余壁更薄。统一原型使比较聚焦同一解剖条件，也使结论成立在这一个原型上。多原型复验应把弯曲度、分叉位置和起始壁厚记录在每组结果旁。 [R06]"
+          },
+          {
+            "type": "p",
+            "text": "C 形根管研究使用连续型与非连续型两颗原牙，每种打印 16 个复制体，分给 XP4 和 ProTaper Next，各 8 个。连续型未预备表面积为 XP4 25.5%、ProTaper Next 42.0%，非连续型为 31.6% 和 32.0%。去除树脂体积排序则随几何翻转：连续型是 4.3 对 2.7 mm³，非连续型是 8.9 对 13.0 mm³。图谱应把内壁接触、树脂去除量、剩余厚度设为独立读数。软件统一配准和分区后，才可追踪器械差异随解剖变化的方向。 [R01]"
+          }
+        ]
+      },
+      {
+        "title": "供应与使用者的验收",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "研究指出商业模型的牙种选项以及材料、工艺差异限制比较。实验采购可要求源几何、打印批和成品内壁误差记录。器械开发测试可优先纳入高复现几何和天然牙配对。[R05]"
+          }
+        ]
+      },
+      {
+        "title": "专利对应的制造任务",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN122609005A 关注用于根管预备的打印材料及钻削模型，CN212229909U 聚焦可呈现侧支的牙模型。可分别验证材料对切削/成形的影响，以及狭小侧支的实际开放度。[R07] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "从实验室走向跨中心基准",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "共用盲测几何与分区定义，每中心保留设备、体素尺度、分割和配准条件。在全局差异接近时报告区域差异，特别关注根尖和弯曲处，并检验树脂与天然牙的排序是否一致。[R01] [R05] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "2027–2029 年的可验证进展",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "关注公开数字模型是否附带成品校准数据、相同器械差异能否跨材料与实验中心重现，以及微小解剖变异是否能在统一评价体系中表达。"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Shaping Performance of XP4 versus ProTaper Next in C-Shaped Canals: A Micro-CT Study of 3D-Printed Mandibular Second Molar Replicas.",
+        "year": "2026",
+        "url": "https://doi.org/10.1002/cre2.70434",
+        "kind": "paper",
+        "source": "10.1002/cre2.70434"
+      },
+      {
+        "id": "R02",
+        "title": "Influence of access cavity design on instrumentation efficiency in 3D-printed replicas of mandibular incisors with Vertucci Type III canals.",
+        "year": "2026",
+        "url": "https://doi.org/10.1186/s12903-026-07991-7",
+        "kind": "paper",
+        "source": "10.1186/s12903-026-07991-7"
+      },
+      {
+        "id": "R03",
+        "title": "Comparative evaluation of the shaping performance of three NiTi rotary systems in distolingual canals of 3D-printed three-rooted mandibular first molars.",
+        "year": "2026",
+        "url": "https://doi.org/10.3389/fdmed.2026.1742809",
+        "kind": "paper",
+        "source": "10.3389/fdmed.2026.1742809"
+      },
+      {
+        "id": "R04",
+        "title": "Evaluation of the Shaping Ability of Three Thermally Treated Nickel-Titanium Endodontic Instruments on Standardized 3D-printed Dental Replicas Using Cone-Beam Computed Tomography.",
+        "year": "2021",
+        "url": "https://doi.org/10.3390/medicina57090901",
+        "kind": "paper",
+        "source": "10.3390/medicina57090901"
+      },
+      {
+        "id": "R05",
+        "title": "Comparative Micro-CT Analysis of Minimally Invasive Endodontic Systems Using 3D-Printed Replicas and Natural Teeth.",
+        "year": "2024",
+        "url": "https://doi.org/10.3390/ma17215279",
+        "kind": "paper",
+        "source": "10.3390/ma17215279"
+      },
+      {
+        "id": "R06",
+        "title": "Micro-computed tomographic evaluation of the shaping ability of three nickel-titanium rotary systems in the middle mesial canal of mandibular first molars: an ex vivo study based on 3D printed tooth replicas.",
+        "year": "2024",
+        "url": "https://doi.org/10.1186/s12903-024-04024-z",
+        "kind": "paper",
+        "source": "10.1186/s12903-024-04024-z"
+      },
+      {
+        "id": "R07",
+        "title": "3D printing material for root canal preparation, preparation method of 3D printing material and preparation drilling model",
+        "year": "2026",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN122609005A",
+        "kind": "patent",
+        "source": "CN122609005A"
+      },
+      {
+        "id": "R08",
+        "title": "3D printing simulation tooth model for root canal therapy training teaching",
+        "year": "2025",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120726884A",
+        "kind": "patent",
+        "source": "CN120726884A"
+      },
+      {
+        "id": "R09",
+        "title": "A 3D printed tooth model with lateral root canal",
+        "year": "2020",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN212229909U",
+        "kind": "patent",
+        "source": "CN212229909U"
+      }
+    ]
+  },
+  "en": {
+    "id": "H32",
+    "p": "P6",
+    "title": "Printed tooth replicas for endodontic instrument evaluation",
+    "subtitle": "Comparing shaping in matched anatomies and calibrating against natural teeth",
+    "thesis": "Replicas reproduce a complex canal across instrument groups. The focus shifts to as-built geometry, material differences, registration error and comparisons supported by regional canal measures.",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway",
+      "summary": "After standardizing canals, one branch verifies imaging and natural-tooth similarity, while the other expands to complex anatomies and access. Registered pre/post measurements reunite the branches, and discrepancies inform replica fabrication.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2021",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R04"
+          ],
+          "title": "Compare instruments in matched anatomy",
+          "question": "Can instrument effects be separated from anatomical variability?",
+          "evidence": "A standardized printed-replica and cone-beam CT study compared three heat-treated nickel–titanium instruments."
+        },
+        {
+          "id": "N2",
+          "time": "2024",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R05"
+          ],
+          "title": "Establish a natural-tooth reference",
+          "question": "Which shaping differences can resin replicas reproduce?",
+          "evidence": "The study used 11 Vertucci type IV mandibular molars and measured 132 canals. Natural teeth and replicas were compared with the same RE system. The other systems were assessed in resin. Apical volume increase was slightly greater in replicas."
+        },
+        {
+          "id": "N3",
+          "time": "2024",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R06"
+          ],
+          "title": "Replicate accessory mesial canals",
+          "question": "How can complex variation become a reproducible experiment?",
+          "evidence": "A middle mesial canal study compared three rotary NiTi systems in mandibular first-molar replicas."
+        },
+        {
+          "id": "N4",
+          "time": "2026",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R01",
+            "R03"
+          ],
+          "title": "Read out regional shaping",
+          "question": "Where do curvature, isthmuses and the apex reveal differences?",
+          "evidence": "C-shaped and distolingual canals in three-rooted molars represent distinct regional comparisons."
+        },
+        {
+          "id": "N5",
+          "time": "2026",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R02"
+          ],
+          "title": "Make access design an independent factor",
+          "question": "Does instrument performance depend on access?",
+          "evidence": "Vertucci type III mandibular incisor replicas enabled comparison of access cavity designs."
+        },
+        {
+          "id": "N6",
+          "time": "2024–2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R05",
+            "R08",
+            "R09"
+          ],
+          "title": "Reuse test specimens and retain error maps",
+          "question": "Where is the model reliable?",
+          "evidence": "Natural-tooth controls establish regional differences. Training tooth and lateral canal patent disclosures provide examples of manufacturable models."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Verify material and natural teeth"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Expand to anatomical variations"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Interpret by region"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Hold anatomy and vary access"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Build regional deviation maps"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Record access conditions"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Use deviation maps to revise the replica"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Intended uses of the replica",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "This direction compares instruments and access, measuring shaping, structural preservation and repeatability. Training simulations additionally assess tactile feedback and skill transfer. One print can serve both needs with different acceptance criteria. [R02] [R04] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathway and evidence by stage",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Compare instruments in matched anatomy"
+          },
+          {
+            "type": "p",
+            "text": "A standardized printed-replica and cone-beam CT study compared three heat-treated nickel–titanium instruments. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Once the design is held constant, sample printed canal walls and apical dimensions. Report instrument differences alongside manufacturing variation."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Establish a natural-tooth reference"
+          },
+          {
+            "type": "p",
+            "text": "The study used 11 Vertucci type IV mandibular molars and measured 132 canals. Natural teeth and replicas were compared with the same RE system. The other systems were assessed in resin. Apical volume increase was slightly greater in replicas. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Overall similarity can coexist with local apical differences. Report the apical region separately, with resin, finishing and imaging boundary conditions."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Replicate accessory mesial canals"
+          },
+          {
+            "type": "p",
+            "text": "A middle mesial canal study compared three rotary NiTi systems in mandibular first-molar replicas. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Comparison within one anatomy improves attribution. Testing multiple anatomies establishes whether the difference persists across them."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Read out regional shaping"
+          },
+          {
+            "type": "p",
+            "text": "C-shaped and distolingual canals in three-rooted molars represent distinct regional comparisons. [R01] [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Alongside total volume, report regional surface area, untouched walls and the direction of transportation. Similar volume changes can arise from different contact regions."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Make access design an independent factor"
+          },
+          {
+            "type": "p",
+            "text": "Vertucci type III mandibular incisor replicas enabled comparison of access cavity designs. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Separate access comparisons at fixed instrumentation from instrument comparisons at fixed access. A crossed design can identify interactions."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Reuse test specimens and retain error maps"
+          },
+          {
+            "type": "p",
+            "text": "Natural-tooth controls establish regional differences. Training tooth and lateral canal patent disclosures provide examples of manufacturable models. [R05] [R08] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Register replicas to source geometry and retain deviation and lot variation by coronal, middle and apical segments to define valid comparisons."
+          }
+        ]
+      },
+      {
+        "title": "Comparisons across anatomy and model material",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The paired material study used 11 Vertucci type IV mandibular molars as prototypes and measured 132 canals. The direct comparison of natural teeth and replicas used the same RE system. The additional instrument groups used resin. Unprepared wall areas were 26.1% versus 31.5% over the full canal and 24.3% versus 32.5% in the apical 4 mm. Both comparisons were non-significant. The percentage increase in apical volume differed significantly. Record initial anatomy, instrument contact and final material removal as separate outcomes. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "The middle mesial canal study used 18 replicas of one tooth to compare three instrument systems, with 6 per group. Mean curvature was 15.3°. The ProTaper Gold group showed greater straightening, increases in volume and surface area, and thinner walls at 1, 2 and 3 mm below the furcation. A common prototype focuses the comparison on one anatomy. A study across several prototypes should record initial curvature, position relative to the furcation and wall thickness for each group. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "The C-shaped canal study selected a continuous and a discontinuous original tooth, printed 16 replicas of each and allocated 8 to each of XP4 and ProTaper Next. In continuous canals, the unprepared surface was 25.5% with XP4 and 42.0% with ProTaper Next. In discontinuous canals those values were 31.6% and 32.0%. The ranking by resin volume removed reversed with geometry, from 4.3 versus 2.7 mm³ in continuous canals to 8.9 versus 13.0 mm³ in discontinuous canals. Evaluate wall contact, resin removal and remaining wall thickness separately. Common registration and regional definitions make anatomical differences comparable. [R01]"
+          }
+        ]
+      },
+      {
+        "title": "Acceptance by suppliers and users",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The study notes that available commercial models vary in materials and processes and offer limited tooth types. Procurement can request source geometry, print lots and as-built canal deviations. Instrument development can prioritize reproducible anatomy paired with natural teeth. [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Manufacturing tasks in patent disclosures",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN122609005A concerns printable material and a preparation model, and CN212229909U focuses on a tooth model with a lateral canal. Test how material affects shaping and whether narrow side branches remain patent. [R07] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "From laboratory to multi-site benchmarks",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Share blinded geometries and region definitions and retain scanner, voxel, segmentation and registration settings at each site. When global measures converge, report apical and curved regions and compare rankings in resin and natural teeth. [R01] [R05] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Verifiable progress in 2027–2029",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Track whether open models include calibration data, whether instrument differences replicate across materials and laboratories, and whether subtle anatomical variation can be represented in shared evaluation schemes."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Shaping Performance of XP4 versus ProTaper Next in C-Shaped Canals: A Micro-CT Study of 3D-Printed Mandibular Second Molar Replicas.",
+        "year": "2026",
+        "url": "https://doi.org/10.1002/cre2.70434",
+        "kind": "paper",
+        "source": "10.1002/cre2.70434"
+      },
+      {
+        "id": "R02",
+        "title": "Influence of access cavity design on instrumentation efficiency in 3D-printed replicas of mandibular incisors with Vertucci Type III canals.",
+        "year": "2026",
+        "url": "https://doi.org/10.1186/s12903-026-07991-7",
+        "kind": "paper",
+        "source": "10.1186/s12903-026-07991-7"
+      },
+      {
+        "id": "R03",
+        "title": "Comparative evaluation of the shaping performance of three NiTi rotary systems in distolingual canals of 3D-printed three-rooted mandibular first molars.",
+        "year": "2026",
+        "url": "https://doi.org/10.3389/fdmed.2026.1742809",
+        "kind": "paper",
+        "source": "10.3389/fdmed.2026.1742809"
+      },
+      {
+        "id": "R04",
+        "title": "Evaluation of the Shaping Ability of Three Thermally Treated Nickel-Titanium Endodontic Instruments on Standardized 3D-printed Dental Replicas Using Cone-Beam Computed Tomography.",
+        "year": "2021",
+        "url": "https://doi.org/10.3390/medicina57090901",
+        "kind": "paper",
+        "source": "10.3390/medicina57090901"
+      },
+      {
+        "id": "R05",
+        "title": "Comparative Micro-CT Analysis of Minimally Invasive Endodontic Systems Using 3D-Printed Replicas and Natural Teeth.",
+        "year": "2024",
+        "url": "https://doi.org/10.3390/ma17215279",
+        "kind": "paper",
+        "source": "10.3390/ma17215279"
+      },
+      {
+        "id": "R06",
+        "title": "Micro-computed tomographic evaluation of the shaping ability of three nickel-titanium rotary systems in the middle mesial canal of mandibular first molars: an ex vivo study based on 3D printed tooth replicas.",
+        "year": "2024",
+        "url": "https://doi.org/10.1186/s12903-024-04024-z",
+        "kind": "paper",
+        "source": "10.1186/s12903-024-04024-z"
+      },
+      {
+        "id": "R07",
+        "title": "3D printing material for root canal preparation, preparation method of 3D printing material and preparation drilling model",
+        "year": "2026",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN122609005A",
+        "kind": "patent",
+        "source": "CN122609005A"
+      },
+      {
+        "id": "R08",
+        "title": "3D printing simulation tooth model for root canal therapy training teaching",
+        "year": "2025",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120726884A",
+        "kind": "patent",
+        "source": "CN120726884A"
+      },
+      {
+        "id": "R09",
+        "title": "A 3D printed tooth model with lateral root canal",
+        "year": "2020",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN212229909U",
+        "kind": "patent",
+        "source": "CN212229909U"
+      }
+    ]
+  },
+  "de": {
+    "id": "H32",
+    "p": "P6",
+    "title": "Gedruckte Zahnrepliken zur Prüfung endodontischer Instrumente",
+    "subtitle": "Formgebung in gleicher Anatomie vergleichen und an natürlichen Zähnen kalibrieren",
+    "thesis": "Repliken reproduzieren komplexe Kanäle über Instrumentengruppen. Damit rücken Ist-Geometrie, Materialunterschiede, Registrierungsfehler und regional gestützte Vergleiche in den Vordergrund.",
+    "questions": [],
+    "graph": {
+      "title": "Forschungspfad",
+      "summary": "Nach Standardisierung prüft ein Zweig Bildgebung und Ähnlichkeit zu natürlichen Zähnen. Der andere erweitert auf komplexe Anatomien und Zugänge. Registrierte Vorher-Nachher-Messungen vereinen die Pfade; Abweichungen fließen in die Replikafertigung ein.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2021",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R04"
+          ],
+          "title": "Instrumente bei gleicher Anatomie vergleichen",
+          "question": "Lassen sich Instrumenteneffekte von anatomischer Streuung trennen?",
+          "evidence": "Eine Studie mit standardisierten Repliken und dentaler Volumentomographie verglich drei wärmebehandelte Nickel-Titan-Instrumente."
+        },
+        {
+          "id": "N2",
+          "time": "2024",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R05"
+          ],
+          "title": "Referenz zu natürlichen Zähnen herstellen",
+          "question": "Welche Formgebungsunterschiede bilden Harzrepliken ab?",
+          "evidence": "11 Unterkiefermolaren vom Vertucci-Typ IV dienten als Vorlagen. Erfasst wurden 132 Kanäle. Natürliche Zähne und Replikate wurden mit demselben RE-System verglichen. Die übrigen Systeme wurden an Kunstharz getestet. Im apikalen Abschnitt zeigten die Replikate eine etwas größere Volumenzunahme."
+        },
+        {
+          "id": "N3",
+          "time": "2024",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R06"
+          ],
+          "title": "Zusätzliche mesiale Kanäle replizieren",
+          "question": "Wie wird komplexe Variation zum reproduzierbaren Versuch?",
+          "evidence": "Eine Studie am mittleren mesialen Kanal verglich drei rotierende NiTi-Systeme in Repliken erster Unterkiefermolaren."
+        },
+        {
+          "id": "N4",
+          "time": "2026",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R01",
+            "R03"
+          ],
+          "title": "Regionale Formgebung auswerten",
+          "question": "Wo zeigen Krümmung, Isthmen und Apex Unterschiede?",
+          "evidence": "C-förmige und distolinguale Kanäle in dreiwurzeligen Molaren sind unterschiedliche regionale Vergleichsaufgaben."
+        },
+        {
+          "id": "N5",
+          "time": "2026",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R02"
+          ],
+          "title": "Zugangsgestaltung als eigenen Faktor prüfen",
+          "question": "Hängt die Instrumentenleistung vom Zugang ab?",
+          "evidence": "Repliken von Unterkieferschneidezähnen des Vertucci-Typs III ermöglichten Vergleiche verschiedener Zugangskavitäten."
+        },
+        {
+          "id": "N6",
+          "time": "2024–2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R05",
+            "R08",
+            "R09"
+          ],
+          "title": "Prüfgeometrien wiederverwenden und Fehlerkarten erhalten",
+          "question": "Wo ist das Modell zuverlässig?",
+          "evidence": "Natürliche Zähne liefern regionale Referenzen. Patentschriften zu Übungszähnen und Seitenkanälen liefern herstellbare Modellbeispiele."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Material und natürliche Zähne prüfen"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Anatomische Varianten ergänzen"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Regional auswerten"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Anatomie konstant halten, Zugang variieren"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Regionale Abweichung kartieren"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Zugangsbedingungen dokumentieren"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Replika anhand der Abweichungskarte korrigieren"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Aufgabenbereich der Replika",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Der Schwerpunkt ist der Vergleich von Instrumenten und Zugang anhand Formgebung, Strukturerhalt und Wiederholbarkeit. Trainingsmodelle erfordern zusätzlich Haptik und Kompetenztransfer. Ein Druckkörper kann beide Nutzungen mit unterschiedlichen Kriterien bedienen. [R02] [R04] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungspfad und Evidenz je Station",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Instrumente bei gleicher Anatomie vergleichen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie mit standardisierten Repliken und dentaler Volumentomographie verglich drei wärmebehandelte Nickel-Titan-Instrumente. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Nach Konstanthaltung des Entwurfs gefertigte Kanalwände und apikale Maße stichprobenartig prüfen. Instrumentenunterschiede zusammen mit Fertigungsstreuung berichten."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Referenz zu natürlichen Zähnen herstellen"
+          },
+          {
+            "type": "p",
+            "text": "11 Unterkiefermolaren vom Vertucci-Typ IV dienten als Vorlagen. Erfasst wurden 132 Kanäle. Natürliche Zähne und Replikate wurden mit demselben RE-System verglichen. Die übrigen Systeme wurden an Kunstharz getestet. Im apikalen Abschnitt zeigten die Replikate eine etwas größere Volumenzunahme. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Globale Ähnlichkeit kann mit lokalen apikalen Abweichungen einhergehen. Die apikale Region getrennt mit Harz, Nachbearbeitung und Bildgebungsgrenzen ausweisen."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Zusätzliche mesiale Kanäle replizieren"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie am mittleren mesialen Kanal verglich drei rotierende NiTi-Systeme in Repliken erster Unterkiefermolaren. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Vergleiche innerhalb einer Anatomie verbessern die Zuordnung. Mehrere Anatomien zeigen, ob ein Unterschied bestehen bleibt."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Regionale Formgebung auswerten"
+          },
+          {
+            "type": "p",
+            "text": "C-förmige und distolinguale Kanäle in dreiwurzeligen Molaren sind unterschiedliche regionale Vergleichsaufgaben. [R01] [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Neben Gesamtvolumen regionale Fläche, unberührte Wände und Richtung der Kanalverlagerung ausweisen. Ähnliche Volumenänderung kann aus unterschiedlichem Kontakt entstehen."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Zugangsgestaltung als eigenen Faktor prüfen"
+          },
+          {
+            "type": "p",
+            "text": "Repliken von Unterkieferschneidezähnen des Vertucci-Typs III ermöglichten Vergleiche verschiedener Zugangskavitäten. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Zugangsvergleiche bei gleichem Instrument und Instrumentenvergleiche bei gleichem Zugang trennen. Ein faktorielles Design kann Wechselwirkungen erkennen."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Prüfgeometrien wiederverwenden und Fehlerkarten erhalten"
+          },
+          {
+            "type": "p",
+            "text": "Natürliche Zähne liefern regionale Referenzen. Patentschriften zu Übungszähnen und Seitenkanälen liefern herstellbare Modellbeispiele. [R05] [R08] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Repliken zur Ausgangsgeometrie registrieren, Abweichungen und Chargenstreuung koronal, mittig und apikal speichern und Vergleichsbereiche festlegen."
+          }
+        ]
+      },
+      {
+        "title": "Vergleiche nach Anatomie und Modellwerkstoff",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Die gepaarte Materialstudie verwendete 11 Unterkiefermolaren vom Vertucci-Typ IV als Vorlagen und erfasste 132 Kanäle. Natürliche Zähne und Replikate wurden direkt mit demselben RE-System verglichen. Weitere Instrumentengruppen verwendeten Kunstharz. Unbearbeitete Wandanteile lagen über die gesamte Länge bei 26,1 % gegenüber 31,5 % und im apikalen Abschnitt von 4 mm bei 24,3 % gegenüber 32,5 %. Beide Unterschiede waren statistisch nicht signifikant. Die prozentuale apikale Volumenzunahme unterschied sich signifikant. Ausgangsanatomie, Instrumentenkontakt und Materialabtrag getrennt erfassen. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Die Untersuchung des mittleren mesialen Kanals verglich drei Instrumentensysteme an 18 Replikaten eines Zahns mit je 6 pro Gruppe. Die mittlere Krümmung betrug 15,3°. Bei ProTaper Gold wurden stärkere Begradigung, größere Zunahmen von Volumen und Oberfläche sowie dünnere Wände in 1, 2 und 3 mm Abstand unterhalb der Furkation gemessen. Ein gemeinsames Modell konzentriert den Vergleich auf eine Anatomie. Mehrere Vorlagen erfordern je Gruppe Angaben zu Ausgangskrümmung, Furkationslage und Wanddicke. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Die Studie zu C-förmigen Kanälen wählte je einen Zahn mit kontinuierlicher und diskontinuierlicher Form aus, fertigte je 16 Replikate und teilte je 8 XP4 und ProTaper Next zu. Bei kontinuierlichen Kanälen betrug die unbearbeitete Wandfläche mit XP4 25,5 % und mit ProTaper Next 42,0 %, bei diskontinuierlichen 31,6 % und 32,0 %. Die Rangfolge beim Harzabtrag kehrte sich mit der Geometrie um, von 4,3 gegenüber 2,7 mm³ auf 8,9 gegenüber 13,0 mm³. Wandkontakt, Harzabtrag und verbleibende Wanddicke sind getrennte Messgrößen. Einheitliche Registrierung und Abschnittsgrenzen ermöglichen den anatomischen Vergleich. [R01]"
+          }
+        ]
+      },
+      {
+        "title": "Abnahme durch Anbieter und Anwender",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Die Studie beschreibt Unterschiede kommerzieller Modelle bei Material und Verfahren sowie eine begrenzte Zahntypauswahl. Beschaffung kann Ausgangsgeometrie, Druckcharge und Ist-Kanalabweichungen verlangen. Instrumentenentwicklung kann reproduzierbare Anatomien mit natürlichen Zähnen paaren. [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Fertigungsaufgaben in Patentschriften",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN122609005A betrifft Druckmaterial und Aufbereitungsmodell, CN212229909U ein Zahnmodell mit Seitenkanal. Materialeinfluss auf Formgebung und Durchgängigkeit enger Seitenäste getrennt prüfen. [R07] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "Vom Labor zum multizentrischen Benchmark",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Verblindete Geometrien und Regionsdefinitionen teilen, Geräte, Voxelmaß, Segmentierung und Registrierung am Standort dokumentieren. Bei ähnlichen Gesamtwerten Apex und Krümmungen getrennt ausweisen, Rangfolgen in Harz und natürlichen Zähnen vergleichen. [R01] [R05] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Überprüfbare Fortschritte 2027–2029",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Zu verfolgen sind Kalibrierdaten offener Modelle, Reproduktion von Instrumentenunterschieden über Materialien und Labore sowie Erfassung subtiler Anatomievarianten mit gemeinsamen Schemata."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Shaping Performance of XP4 versus ProTaper Next in C-Shaped Canals: A Micro-CT Study of 3D-Printed Mandibular Second Molar Replicas.",
+        "year": "2026",
+        "url": "https://doi.org/10.1002/cre2.70434",
+        "kind": "paper",
+        "source": "10.1002/cre2.70434"
+      },
+      {
+        "id": "R02",
+        "title": "Influence of access cavity design on instrumentation efficiency in 3D-printed replicas of mandibular incisors with Vertucci Type III canals.",
+        "year": "2026",
+        "url": "https://doi.org/10.1186/s12903-026-07991-7",
+        "kind": "paper",
+        "source": "10.1186/s12903-026-07991-7"
+      },
+      {
+        "id": "R03",
+        "title": "Comparative evaluation of the shaping performance of three NiTi rotary systems in distolingual canals of 3D-printed three-rooted mandibular first molars.",
+        "year": "2026",
+        "url": "https://doi.org/10.3389/fdmed.2026.1742809",
+        "kind": "paper",
+        "source": "10.3389/fdmed.2026.1742809"
+      },
+      {
+        "id": "R04",
+        "title": "Evaluation of the Shaping Ability of Three Thermally Treated Nickel-Titanium Endodontic Instruments on Standardized 3D-printed Dental Replicas Using Cone-Beam Computed Tomography.",
+        "year": "2021",
+        "url": "https://doi.org/10.3390/medicina57090901",
+        "kind": "paper",
+        "source": "10.3390/medicina57090901"
+      },
+      {
+        "id": "R05",
+        "title": "Comparative Micro-CT Analysis of Minimally Invasive Endodontic Systems Using 3D-Printed Replicas and Natural Teeth.",
+        "year": "2024",
+        "url": "https://doi.org/10.3390/ma17215279",
+        "kind": "paper",
+        "source": "10.3390/ma17215279"
+      },
+      {
+        "id": "R06",
+        "title": "Micro-computed tomographic evaluation of the shaping ability of three nickel-titanium rotary systems in the middle mesial canal of mandibular first molars: an ex vivo study based on 3D printed tooth replicas.",
+        "year": "2024",
+        "url": "https://doi.org/10.1186/s12903-024-04024-z",
+        "kind": "paper",
+        "source": "10.1186/s12903-024-04024-z"
+      },
+      {
+        "id": "R07",
+        "title": "3D printing material for root canal preparation, preparation method of 3D printing material and preparation drilling model",
+        "year": "2026",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN122609005A",
+        "kind": "patent",
+        "source": "CN122609005A"
+      },
+      {
+        "id": "R08",
+        "title": "3D printing simulation tooth model for root canal therapy training teaching",
+        "year": "2025",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120726884A",
+        "kind": "patent",
+        "source": "CN120726884A"
+      },
+      {
+        "id": "R09",
+        "title": "A 3D printed tooth model with lateral root canal",
+        "year": "2020",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN212229909U",
+        "kind": "patent",
+        "source": "CN212229909U"
+      }
+    ]
+  }
+}

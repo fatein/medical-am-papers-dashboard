@@ -1,0 +1,2006 @@
+{
+  "zh": {
+    "id": "H01",
+    "p": "P3",
+    "title": "微针与经皮药物递送",
+    "subtitle": "从母模误差、阵列插入到皮肤内剂量",
+    "thesis": "打印可分别承担造模、制造针体或载药。三条路线的共同检验是单位贴片能否在不同批次和使用条件下重复送达预定剂量。",
+    "questions": [],
+    "graph": {
+      "title": "从制造分工到皮肤剂量评价",
+      "summary": "沿涂层、主动输注和可溶针三条路径，分别连接制造尺寸、皮肤接触与实际递送。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2018",
+          "refs": [
+            "R01"
+          ],
+          "title": "分离针体与涂层",
+          "question": "如何处理易受加工影响的药物？",
+          "evidence": "SLA 制造针体，喷墨沉积胰岛素，并在猪皮中考察递送。"
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2020",
+          "refs": [
+            "R02"
+          ],
+          "title": "把几何转移到母模",
+          "question": "针尖形状如何改变插入？",
+          "evidence": "双光子聚合制造七种模板，复制后比较皮肤模型中的插入。"
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2020–2021",
+          "refs": [
+            "R03"
+          ],
+          "title": "中空针实现主动输注",
+          "question": "怎样控制流体进入组织？",
+          "evidence": "将打印中空针与微机电系统结合。"
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 0,
+          "time": "2021–2024",
+          "refs": [
+            "R04",
+            "R05",
+            "R16"
+          ],
+          "title": "测成品尺寸与阵列插入",
+          "question": "打印误差是否改变力学？",
+          "evidence": "用打印参数、倾角和长径比实验联系尺寸、穿刺力及形变。"
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 1,
+          "time": "2024–2026",
+          "refs": [
+            "R14",
+            "R15"
+          ],
+          "title": "用两道工序承担载药",
+          "question": "基底材料与涂层能否独立选取？",
+          "evidence": "多奈哌齐研究结合 DLP 和半固态挤出，LCD 研究比较锥形和金字塔形针的涂层。"
+        },
+        {
+          "id": "N6",
+          "stage": 2,
+          "lane": 2,
+          "time": "2023",
+          "refs": [
+            "R06"
+          ],
+          "title": "柔性基底适应表面",
+          "question": "阵列接触如何改变用药？",
+          "evidence": "柔性中空阵列研究检验局部递送。"
+        },
+        {
+          "id": "N7",
+          "stage": 3,
+          "lane": 0,
+          "time": "2025–2026",
+          "refs": [
+            "R07",
+            "R08"
+          ],
+          "title": "在可溶针中承载药物",
+          "question": "复制能否保留针尖并实现释放？",
+          "evidence": "利斯的明和普瑞巴林研究采用不同成模路线，检查力学及释放。"
+        },
+        {
+          "id": "N8",
+          "stage": 4,
+          "lane": 1,
+          "time": "2027–2029",
+          "refs": [
+            "R01",
+            "R03",
+            "R08",
+            "R14"
+          ],
+          "title": "以递送剂量校准设计",
+          "question": "载量和实际递送怎样对照？",
+          "evidence": "联合记录阵列插入、皮肤内药量、受体相药量和贴片残留。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "隔离几何"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "追踪实测尺寸"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "引入通道"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "连接几何与穿刺"
+        },
+        {
+          "from": "N1",
+          "to": "N5",
+          "kind": "advance",
+          "label": "分工扩展载药"
+        },
+        {
+          "from": "N3",
+          "to": "N6",
+          "kind": "advance",
+          "label": "校验贴肤输注"
+        },
+        {
+          "from": "N4",
+          "to": "N7",
+          "kind": "advance",
+          "label": "进入复制成品"
+        },
+        {
+          "from": "N5",
+          "to": "N8",
+          "kind": "advance",
+          "label": "核查药物去向"
+        },
+        {
+          "from": "N6",
+          "to": "N8",
+          "kind": "advance",
+          "label": "验证局部递送"
+        },
+        {
+          "from": "N7",
+          "to": "N8",
+          "kind": "advance",
+          "label": "比较载量和释出"
+        },
+        {
+          "from": "N8",
+          "to": "N2",
+          "kind": "feedback",
+          "label": "以剂量反馈针形"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究对象与评价边界",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "涂层、中空和可溶路线对药物的保护、容量和输送动力提出不同要求。比较时先确定药物所在部位及打印发生的步骤，再用实际针形、整片插入与皮肤内剂量追踪工艺影响。 [R01] [R02] [R03] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与研究解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "分离针体与涂层"
+          },
+          {
+            "type": "p",
+            "text": "SLA 制造针体，喷墨沉积胰岛素，并在猪皮中考察递送。 [R01]"
+          },
+          {
+            "type": "h3",
+            "text": "把几何转移到母模"
+          },
+          {
+            "type": "p",
+            "text": "双光子聚合制造七种模板，复制后比较皮肤模型中的插入。 [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "中空针实现主动输注"
+          },
+          {
+            "type": "p",
+            "text": "将打印中空针与微机电系统结合。 [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "测成品尺寸与阵列插入"
+          },
+          {
+            "type": "p",
+            "text": "用打印参数、倾角和长径比实验联系尺寸、穿刺力及形变。 [R04] [R05] [R16]"
+          },
+          {
+            "type": "h3",
+            "text": "用两道工序承担载药"
+          },
+          {
+            "type": "p",
+            "text": "多奈哌齐研究结合 DLP 和半固态挤出，LCD 研究比较锥形和金字塔形针的涂层。 [R14] [R15]"
+          },
+          {
+            "type": "h3",
+            "text": "柔性基底适应表面"
+          },
+          {
+            "type": "p",
+            "text": "柔性中空阵列研究检验局部递送。 [R06]"
+          },
+          {
+            "type": "h3",
+            "text": "在可溶针中承载药物"
+          },
+          {
+            "type": "p",
+            "text": "利斯的明和普瑞巴林研究采用不同成模路线，检查力学及释放。 [R07] [R08]"
+          },
+          {
+            "type": "h3",
+            "text": "以递送剂量校准设计"
+          },
+          {
+            "type": "p",
+            "text": "联合记录阵列插入、皮肤内药量、受体相药量和贴片残留。 [R01] [R03] [R08] [R14]"
+          },
+          {
+            "type": "p",
+            "text": "在六种长径比的 10×10 阵列比较中，较高长径比对应更深穿入，同时形变增加。适用性需要把达到的深度和卸载后保持的完整性一起考虑。 [R16]"
+          },
+          {
+            "type": "h3",
+            "text": "针体与蛋白涂层分工"
+          },
+          {
+            "type": "p",
+            "text": "2018 年研究打印锥形及棱锥形微针，再喷墨涂覆胰岛素与糖类保护成分。光谱检查药物结构，猪皮 Franz 扩散实验评价释放。打印负责针体，涂覆负责载药及保护，两步共同决定递送表现。[R01]"
+          },
+          {
+            "type": "p",
+            "text": "分开制造针体和载药层，使针体选择主要服从力学与几何，涂层选择主要服从药物稳定和释放。圆二色和拉曼观察蛋白构象，猪皮扩散实验观察递送，两类方法分别对应生物分子状态与组织屏障通过。研究设计因而把制造成功拆成两个必须同时满足的任务，而不是只看针尖是否完整。"
+          },
+          {
+            "type": "p",
+            "text": "同一药物在不同涂层材料中稳定，不等于不同生物大分子都可沿用相同保护关系。更适合迁移的是分段验证方法：先确认活性结构，再确认成形与穿刺，最后确认组织递送。同时应比较涂层前后的几何和承载，判断载药步骤是否反过来削弱结构功能。这使药剂学优化与微结构优化形成双向反馈。"
+          },
+          {
+            "type": "h3",
+            "text": "模板隔离几何变量"
+          },
+          {
+            "type": "p",
+            "text": "2020 年双光子聚合研究制作七种不同高度、形状、底宽和间距的模板，再复制为可溶及水凝胶微针。不同针形在皮肤模型中的插入深度不同，并与模型药物递送表现大体对应。模板使几何能够成为受控比较变量。[R02]"
+          },
+          {
+            "type": "p",
+            "text": "高精度模板的价值在于让针形成为可重复变量。最终材料由复制成形提供，能够避免为每一种载药配方重新调整高分辨打印过程。研究同时比较插入深度和药物递送，使几何影响不再止于显微外观，而与皮肤内有效接触建立关系。"
+          },
+          {
+            "type": "p",
+            "text": "模板可重复并不意味着最终产品自动重复。负模充填、干燥收缩和脱模变形都可能改变针尖，质量评价应跟踪主模、负模和最终针体三个阶段，识别误差究竟在哪一步增加。每个阵列中中心针与边缘针可能承受不同载荷；空间分布比平均插入深度更能显示是否有部分针未进入。"
+          },
+          {
+            "type": "h3",
+            "text": "中空微针接入主动控制"
+          },
+          {
+            "type": "p",
+            "text": "2020 年在线发表的中空微针 MEMS 研究，将打印针体与控制系统结合，实时观察皮肤内液体分布，并在糖尿病动物中评价胰岛素给药。研究从被动溶解释放推进到可控制的输注过程。[R03]"
+          },
+          {
+            "type": "p",
+            "text": "中空结构把载药容量与针体体积分开，控制系统则使递送成为随时间变化的过程。实时成像的加入尤其重要，因为泵送出的液体不一定全部进入目标组织，通道阻力、接触状态和组织回压都可能改变分布。研究由被动释放转向可监测输注，使控制量与实际组织结果能够相互校验。"
+          },
+          {
+            "type": "p",
+            "text": "与可溶微针相比，主动系统增加了流路、驱动和连接部件，因此整套装置的可靠性需要联合评价。单针能够穿透，只说明流路入口具备条件；持续运行还取决于密封、堵塞和接触稳定。控制系统的设定值需要独立流量或质量参照，才能排除指令执行正确但液体实际输送不足的情况。"
+          },
+          {
+            "type": "h3",
+            "text": "直接打印的几何误差"
+          },
+          {
+            "type": "p",
+            "text": "2021 年 DLP 中空微针研究比较打印角度对几何的影响，并考察固化与力学表现。针尖和通道的实际形态可能偏离 CAD，制造参数因此进入穿刺设计，而不只是生产设置。[R04]"
+          },
+          {
+            "type": "p",
+            "text": "中空针的内通道使制造问题比实体针更复杂：过度固化可能缩小开口，清洗和残留会改变实际流路。打印方向同时影响层阶、支撑和局部曝光，因此应当测量实际针尖及通道，而不能只报告标称分辨率。几何误差研究为后续穿刺和输注提供了可解释的输入。"
+          },
+          {
+            "type": "p",
+            "text": "后固化也会改变材料刚度与残留组分，可能同时改善承载并改变脆性。质量窗口应包含穿刺后完整性和化学残留，而不能以最高硬度作为唯一优化目标。打印批次不同位置也可能存在曝光差异，检查单个最优样品不足以代表整个制造区域的几何一致性。"
+          },
+          {
+            "type": "h3",
+            "text": "制造方向改变穿刺"
+          },
+          {
+            "type": "p",
+            "text": "2023 年研究比较不同打印倾角，在所用 DLP 体系中，45 度方案比零度方案需要更低的穿刺力。结果将工艺方向、针尖形成和穿刺表现连接起来，说明优化需要基于实际设备及材料。[R05]"
+          },
+          {
+            "type": "p",
+            "text": "倾角研究将数字几何、打印形成的针尖与实测穿刺联系起来。其方法学重点是让制造方向成为受控变量，再在统一力学条件下比较功能。这比只展示某个针尖更锐利更有说服力，因为微小外观差异只有通过组织或标准模型的响应才能获得应用意义。"
+          },
+          {
+            "type": "p",
+            "text": "不同打印机的像素尺寸、光学系统和材料反应不同，制造方向带来的改善需要按系统重现。更可迁移的结论是检查真实针尖与穿刺的关系，而不是把某一角度当作通用工艺选择。穿刺力降低还应与针体破坏阈值比较，只有保留足够的承载余量，较低的施加负担才具有稳定产品意义。"
+          },
+          {
+            "type": "h3",
+            "text": "柔性阵列连接局部疾病"
+          },
+          {
+            "type": "p",
+            "text": "同年柔性中空微针研究使用打印主模和双重成模，调整针体尺寸与基底特性，并在小鼠银屑病模型中评价局部递送。设计由单根针扩展到阵列与皮肤接触的整体关系。[R06]"
+          },
+          {
+            "type": "p",
+            "text": "柔性基底处理的是整个阵列与皮肤曲面的贴合，针体则承担穿刺与输送，两者需要不同的力学属性。双重成模使这两类要求有可能分别设计。小鼠疾病模型进一步把局部递送与组织反应连接，使评价从打出孔洞转向特定病灶中的实际作用。"
+          },
+          {
+            "type": "p",
+            "text": "转化中还应观察活动和长时间接触下的稳定性。柔性提高贴合，也可能改变针体受力方向；皮肤运动是否造成局部退出或不均匀插入，需要作为重复递送的研究任务。组织反应评价应把药物作用与穿刺本身造成的变化分开，空白阵列和相同材料对照有助于识别各自贡献。"
+          },
+          {
+            "type": "h3",
+            "text": "真空压缩形成载药针"
+          },
+          {
+            "type": "p",
+            "text": "2025 年卡巴拉汀研究结合 DLP 和 Free-D Molding，检查成品结构、力学和皮肤通透。真空压缩成模为载药材料进入复杂微结构提供另一种方法，精度需要在最终针体上确认。[R07]"
+          },
+          {
+            "type": "p",
+            "text": "该路线把高精度打印用于前体几何，再由真空压缩处理最终材料，避免最终载药体系必须兼容光聚合。多种显微观察和皮肤通透测试分别检查复制精度与功能，使模具技术的价值可以在产品层面评估。MeltPrep人员参与研究，也形成设备供应商与药剂学开发的直接联系。[R07]"
+          },
+          {
+            "type": "p",
+            "text": "成模成本也应按合格最终阵列计算。主模重复使用降低单次几何开发负担，但缺针、气泡与脱模损失可能主导产率；记录这些失效能帮助确定制造扩展时真正需要优化的环节。离体通透的比较需要保存相同皮肤来源和完整性条件，避免样本屏障差异盖过成形方法的影响。"
+          },
+          {
+            "type": "h3",
+            "text": "可溶载体的承载与释放"
+          },
+          {
+            "type": "p",
+            "text": "2026 年普瑞巴林研究由打印主模转成 PDMS 负模，再制备双层 PVA/PVP 微针，检查形貌、插入及体外释放。它展示主模精度与最终配方性能需要共同验证，不能只凭主模图像评价整条制造链。[R08]"
+          },
+          {
+            "type": "p",
+            "text": "可溶微针把载体材料本身作为释放来源，因此力学和传质高度耦合。干态压缩与模型穿刺观察使用前的承载能力，溶胀和体外释放观察湿润后的行为；两类结果必须接在一起，才说明结构能够先完成进入，再释放载荷。研究中的模型插入为这一链条提供早期证据。"
+          },
+          {
+            "type": "p",
+            "text": "这一节点将模板、力学和释放分支汇合为材料选择问题。评价优先级应从总装载量转向实际递送的可重复性，同时关注保持活性的时间、湿度敏感性和使用后的结构完整性，形成面向具体应用的产品边界。多次独立制备和不同模具位置的结果，能够补充单批平均值，揭示复制路线是否具备稳定扩大产量的基础。"
+          }
+        ]
+      },
+      {
+        "title": "企业技术与服务路线",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Nanoscribe 提供母模精度路线，MeltPrep 提供成模路线。两类企业能力分别对应尺寸验收和复制一致性。 [R09] [R10]"
+          },
+          {
+            "type": "h3",
+            "text": "微针结构如何兼顾强度与皮肤穿刺？"
+          },
+          {
+            "type": "p",
+            "text": "企业能力主要位于高精度几何制造与模板环节。学术研究进一步提供插入、材料及递送验证，使精密结构能够与具体应用相接。"
+          },
+          {
+            "type": "p",
+            "text": "产品路线的选择需要同时考虑精度与数量：直接打印适合探索复杂结构，主模复制可将设计转移到更多材料和批量制备。不同路线都要检查最终针体，而不能只评价主模。"
+          },
+          {
+            "type": "h3",
+            "text": "载药微针如何控制经皮递送和释放？"
+          },
+          {
+            "type": "p",
+            "text": "Nanoscribe 提供复杂微针及主模的高精度制造能力；MeltPrep 的 Free-D Molding 则将打印原型、负模和真空压缩成形连接，支持少量材料制作复杂剂型原型。2025 年卡巴拉汀研究直接采用相关成模路线。[R09] [R10] [R07]"
+          },
+          {
+            "type": "p",
+            "text": "企业能力在这里形成制造端分工：精密打印确定几何，成模使目标药物和聚合物进入最终针体。主动输注还需要泵、流道、控制和贴合系统共同参与。"
+          },
+          {
+            "type": "p",
+            "text": "从设备到治疗产品的主要连接，是把这些组件与明确配方及使用方式结合，并验证最终剂量。"
+          },
+          {
+            "type": "h3",
+            "text": "模具和打印工艺如何提高微针制备精度？"
+          },
+          {
+            "type": "p",
+            "text": "MeltPrep 的 Free-D Molding 将工程材料打印原型转为负模，再使用真空压缩制备目标材料原型，为高价值、少量配方提供微成模工具。[R10]"
+          },
+          {
+            "type": "p",
+            "text": "这两类企业能力具有互补关系。选择直接打印还是主模复制，应结合最终材料、所需数量、通道结构和质量检查，而不是只比较打印速度。"
+          }
+        ]
+      },
+      {
+        "title": "专利设计与制造接口",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "中空阵列的主动输送与通道加工分别见 CN112587790A 和 CN118061534A。CN119606857A 则探索光固化可溶贴片。在可溶路线，针体的释出和包装后稳定性进入验证；中空路线关注通畅性和连接界面的密封。 [R11] [R12] [R13]"
+          }
+        ]
+      },
+      {
+        "title": "学术与产业的结合点",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "把力学、成像和定量化学检测分配给不同工序，可辨别剂量损失来自未插入、针体残留、涂层脱落还是组织内分布差异。优先用同批产品开展药量闭合比较。 [R01] [R03] [R07] [R08]"
+          },
+          {
+            "type": "p",
+            "text": "验证顺序应由结构完整性进入皮肤界面，再到实际药量。首先用无药或示踪体系识别针尖破损、堵孔和泄漏，之后用相同载药量比较实际送达与残留。改变针倾角、皮肤贴合和按压方式时，应保留同一阵列密度以区分制造与使用因素。空心和可溶路线的失效终点不同：空心针重点是通路与驱动，可溶针重点是插入后溶解及残留；两者都需要记录移除后的完整性。[R04][R05][R11][R12][R13]"
+          },
+          {
+            "type": "p",
+            "text": "名义载药量应拆为储药量、进入针通路的量、皮肤表面损失、针内残留和真正送达量。空心针方案中，储药层被压缩可能只是把液体推到皮肤表面；可溶针方案中，针体变短可能来自未插入部分溶解。因此，使用后外观和储药层重量都不足以独立证明送达。应在相同给药任务下核对各部分物料去向，并将针孔堵塞、背衬翘起及皮肤贴合差异与送达曲线逐项关联，寻找可由结构修改解决的损失。[R01][R03][R06][R07][R11][R13]"
+          },
+          {
+            "type": "table",
+            "headers": [
+              "验证对象",
+              "变量、对照、终点与失败后决策"
+            ],
+            "rows": [
+              [
+                "加工对照",
+                "比较直接打印与打印后激光加工的相同外形针，检查孔道连续性、流阻、碎屑与穿刺后破损。若贯通率改善却强度下降，应调整加工窗口，不能仅凭显微照片进入递送评价。[R04][R12]"
+              ],
+              [
+                "驱动对照",
+                "在匹配阵列下分别测试无驱动、按压及电驱动，记录流出、皮肤表面泄漏和实际穿透后的送达量。若储药层排空但药物主要留在表面，先解决密封与贴合，再讨论个体剂量调整。[R03][R06][R11]"
+              ],
+              [
+                "可溶对照",
+                "比较原始背衬与再处理背衬，在相同针层下测载药均匀性、溶解及残留；设置未循环材料参照。若回收改变力学或引入残留，先限制背衬循环用途，递送层仍按独立批次验证。[R07][R08][R13]"
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "微制造路线还应分别评价直接接触药物/皮肤的打印件与仅用于复制的模板。双光子模板可以把复杂尖端转移到另一材料，直接光固化针则把固化及后处理状态带到最终器件；激光成孔又增加加工表面与清洁任务。Nanoscribe和Free-D Molding的比较应围绕模板重现、复制损失和终件检查，而不是把模板的精细程度等同于终件质量。若复制后针尖钝化或孔道改变，应回到终件测量决定工艺选择。[R02][R04][R09][R10][R12]"
+          }
+        ]
+      },
+      {
+        "title": "未来演进与验证指标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "下一步可比较同一配方在不同批次、应用部位和使用者之间的皮肤剂量波动，并将其与贴片受潮、变形及全阵列插入比例联系。 [R05] [R07] [R08]"
+          },
+          {
+            "type": "p",
+            "text": "微针技术的共同难题是把五个量连起来：装载量、可释放量、实际插入的载荷、组织内回收量和到达目标的有效量。五者具有不同分母。涂层路线可能在表面留下残留，中空路线可能发生回流，可溶路线可能有载荷留在未进入皮肤的基底。因此，完整质量平衡比单独提高装载率更有助于选择产品路线。"
+          },
+          {
+            "type": "p",
+            "text": "结构比较需要区分单针与阵列。单针尖锐有利于局部穿透，阵列密度增加却可能让皮肤共同变形，改变每根针获得的有效载荷。柔性基底又会影响载荷分配。因此，评价应同时呈现单针承载、阵列穿刺和插入位置分布，再判断某种几何是否在实际阵列中仍有优势。"
+          },
+          {
+            "type": "p",
+            "text": "模型层次应按照具体问题选择。均一薄膜便于筛查制造重复性，离体皮肤更接近角质层和组织结构，动物研究能够观察局部反应和全身分布。各模型提供的证据在研究链中互补。由标准膜到组织的迁移应比较相同装置和相同评价量，明确增加生物复杂性后发生了什么变化，而非把不同模型结果直接合并。"
+          },
+          {
+            "type": "p",
+            "text": "工业路线可分为直接制造最终针体与制造模具后复制。前者减少几何转移步骤，后者扩大最终材料选择并便于重复复制。Nanoscribe官网把高分辨率微针阵列和主模制造列为应用，体现设备平台对几何研究的支持；MeltPrep Free-D则将打印前体与真空压缩成形连接，强调小材料量的原型开发。[R09][R10]"
+          },
+          {
+            "type": "p",
+            "text": "企业技术演变需要沿任务而非产品数量观察。2020年双光子模板研究证明几何可以被重复复制，2021及2023年DLP研究把制造方向推进到功能验证，2025年MeltPrep参与的研究将复制路线连接到具体载药微针。这里既有设备被研究，也有企业共同参与，不能由使用类似工艺推断所有论文属于同一产品开发链。[R02][R04][R05][R07]"
+          },
+          {
+            "type": "p",
+            "text": "产业放大最重要的指标是合格阵列产率、通道开放比例、针尖尺寸分布、载药分布及最终递送变异。打印速度只描述其中一个步骤；若后处理、复制、装配或检验成为瓶颈，加快打印未必改善总产出。将失效位置记录到单根针或单个阵列，可以识别应投资于打印精度、模具寿命还是终检能力。"
+          },
+          {
+            "type": "p",
+            "text": "2027年的优先研究是同一产品在不同皮肤模型和多个独立批次中的一致性。具有明确用途的涂层、可溶或中空系统，宜分别验证各自最主要的剂量损失路径。触发进一步转化的证据应是实际递送量稳定，并且药物与结构在保存后仍满足预定功能，而不仅是某次穿刺成功。"
+          },
+          {
+            "type": "p",
+            "text": "2028年的关键条件是将施加方式和使用情境纳入设计。皮肤曲率、运动、不同操作者与接触状态会影响阵列进入的数量，装置设计需要降低这些因素造成的波动。研究可以用受控变化测量系统对使用差异的敏感性，把结果反馈到基底、针距或反馈检测的选择。"
+          },
+          {
+            "type": "p",
+            "text": "2029年的较强情景是形成能够说明实际递送量、局部组织反应和长期产品稳定性的证据包，并在具体药物任务中证明相对现有方式的价值。较弱情景则是高精度微结构不断增加，而剂量去向和重复使用问题仍未解决。两者的差别取决于机制研究能否接续到真实应用终点。"
+          },
+          {
+            "type": "p",
+            "text": "研究优先序还包括对失败样品的系统分析。通道堵塞、针尖弯折、复制气泡和湿度软化分别对应不同改进方向；若只展示最完整阵列，制造窗口将被高估。让失效样品进入结构、力学与递送测试，可以明确哪一类缺陷具有功能意义，进而确定合理的检验重点。"
+          },
+          {
+            "type": "p",
+            "text": "跨路线比较宜使用与目标一致的共同终点。对局部皮肤疾病，应优先关注组织内暴露分布与局部反应；对全身递送，应关注进入循环的量及时间变化。这样既保留各类微针的特点，也能避免以某个方便测量的体外释放比例替代实际应用价值。"
+          },
+          {
+            "type": "p",
+            "text": "可复用研究成果还应说明模具和最终产品的检查位置、组织样本背景以及实际进入针体的估计方式。不同团队若采用相同数字模型却使用不同组织或计量定义，结果差异未必来自制造水平。建立共同的几何和剂量表述，能够使下一轮比较聚焦真正的材料与机制差异，并减少重复的原型探索。"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "3D printed microneedles for insulin skin delivery",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29555437/",
+        "year": "2018",
+        "source": "International Journal of Pharmaceutics",
+        "id": "R01"
+      },
+      {
+        "title": "Two-Photon Polymerisation 3D Printing of Microneedle Array Templates with Versatile Designs: Application in the Development of Polymeric Drug Delivery Systems",
+        "url": "https://link.springer.com/article/10.1007/s11095-020-02887-9",
+        "year": "2020",
+        "source": "Pharmaceutical Research",
+        "id": "R02"
+      },
+      {
+        "title": "A novel 3D printed hollow microneedle microelectromechanical system for controlled, personalized transdermal drug delivery",
+        "url": "https://gala.gre.ac.uk/id/eprint/30938/",
+        "year": "2020（在线）/2021",
+        "source": "Additive Manufacturing",
+        "id": "R03"
+      },
+      {
+        "title": "Optimization of Printing Parameters for Digital Light Processing 3D Printing of Hollow Microneedle Arrays",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8622592/",
+        "year": "2021",
+        "source": "Pharmaceutics",
+        "id": "R04"
+      },
+      {
+        "title": "The Effect of 3D Printing Tilt Angle on the Penetration of 3D-Printed Microneedle Arrays",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10305640/",
+        "year": "2023",
+        "source": "Micromachines",
+        "id": "R05"
+      },
+      {
+        "title": "Customized flexible hollow microneedles for psoriasis treatment with reduced-dose drug",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10354769/",
+        "year": "2023",
+        "source": "Bioengineering & Translational Medicine",
+        "id": "R06"
+      },
+      {
+        "title": "Fabrication and characterization of dissolving microneedles combining digital light processing and vacuum compression molding technique for the transdermal delivery of rivastigmine",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40043920/",
+        "year": "2025",
+        "source": "European Journal of Pharmaceutics and Biopharmaceutics",
+        "id": "R07"
+      },
+      {
+        "title": "3D-Printing-Assisted Fabrication and Characterization of Pregabalin-Loaded PVA/PVP Dissolving Microneedle Arrays",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13303589/",
+        "year": "2026",
+        "source": "Micromachines",
+        "id": "R08"
+      },
+      {
+        "title": "Explore Quantum X: microneedle microfabrication",
+        "url": "https://www.nanoscribe.com/en/campaigns/explore-quantum-x/",
+        "year": "2026（访问）",
+        "source": "Nanoscribe",
+        "id": "R09"
+      },
+      {
+        "title": "Free-D Molding",
+        "url": "https://www.meltprep.com/free-d",
+        "year": "2026（访问）",
+        "source": "MeltPrep",
+        "id": "R10"
+      },
+      {
+        "title": "Percutaneous drug pressing/ionophoresis controlled release device based on 3D printing hollow microneedle array",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN112587790A",
+        "year": 2021,
+        "source": "Espacenet",
+        "id": "R11"
+      },
+      {
+        "title": "Method for manufacturing hollow microneedle through additive and subtractive combination",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN118061534A",
+        "year": 2024,
+        "source": "Espacenet",
+        "id": "R12"
+      },
+      {
+        "title": "Recyclable photocuring 3D printed soluble microneedle patch and preparation method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119606857A",
+        "year": 2025,
+        "source": "Espacenet",
+        "id": "R13"
+      },
+      {
+        "title": "Fabrication of Hybrid Coated Microneedles with Donepezil Utilizing Digital Light Processing and Semisolid Extrusion Printing for the Management of Alzheimer's Disease.",
+        "url": "https://doi.org/10.1021/acs.molpharmaceut.4c00377",
+        "year": "2024",
+        "source": "",
+        "id": "R14"
+      },
+      {
+        "title": "Comparative Evaluation of Hydrogel Dip-Coating on Cone and Pyramid Microneedle Arrays Fabricated by LCD 3D Printing.",
+        "url": "https://doi.org/10.3390/pharmaceutics18050518",
+        "year": "2026",
+        "source": "",
+        "id": "R15"
+      },
+      {
+        "title": "3D Printing of Biodegradable Polymeric Microneedles for Transdermal Drug Delivery Applications.",
+        "url": "https://doi.org/10.3390/pharmaceutics16020237",
+        "year": "2024",
+        "source": "",
+        "id": "R16"
+      }
+    ]
+  },
+  "en": {
+    "id": "H01",
+    "p": "P3",
+    "title": "Microneedles and transdermal drug delivery",
+    "subtitle": "From master geometry and array insertion to dose in the skin",
+    "thesis": "Printing can produce tooling, structural needles or a drug-bearing component. All three routes share an endpoint: reproducibility of dose delivered per patch across lots and conditions of use.",
+    "questions": [],
+    "graph": {
+      "title": "From manufacturing roles to dose assessment",
+      "summary": "Follow coating, active infusion and dissolving needles from manufactured geometry through skin contact to delivery.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2018",
+          "refs": [
+            "R01"
+          ],
+          "title": "Separate structure and coating",
+          "question": "How can processing-sensitive drugs be handled?",
+          "evidence": "SLA made the needles and inkjet deposited insulin. Delivery was studied in porcine skin."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2020",
+          "refs": [
+            "R02"
+          ],
+          "title": "Transfer geometry to the master",
+          "question": "How does tip shape affect insertion?",
+          "evidence": "Two-photon polymerization produced seven templates for insertion comparisons after replication."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2020–2021",
+          "refs": [
+            "R03"
+          ],
+          "title": "Enable active infusion with a lumen",
+          "question": "How can fluid delivery to tissue be controlled?",
+          "evidence": "Printed hollow needles were coupled to a microelectromechanical system."
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 0,
+          "time": "2021–2024",
+          "refs": [
+            "R04",
+            "R05",
+            "R16"
+          ],
+          "title": "Measure geometry and array insertion",
+          "question": "Does printing error affect mechanics?",
+          "evidence": "Experiments linked printing parameters, tilt and aspect ratio to geometry, insertion force and deformation."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 1,
+          "time": "2024–2026",
+          "refs": [
+            "R14",
+            "R15"
+          ],
+          "title": "Assign drug loading to a separate step",
+          "question": "Can substrate and coating be selected independently?",
+          "evidence": "A donepezil study combined DLP with semisolid extrusion. An LCD study compared coatings on conical and pyramidal needles."
+        },
+        {
+          "id": "N6",
+          "stage": 2,
+          "lane": 2,
+          "time": "2023",
+          "refs": [
+            "R06"
+          ],
+          "title": "Conform the backing to the application site",
+          "question": "How does array contact affect administration?",
+          "evidence": "A flexible hollow array study investigated local delivery."
+        },
+        {
+          "id": "N7",
+          "stage": 3,
+          "lane": 0,
+          "time": "2025–2026",
+          "refs": [
+            "R07",
+            "R08"
+          ],
+          "title": "Carry drug in dissolving needles",
+          "question": "Can replication preserve the tip and enable release?",
+          "evidence": "Rivastigmine and pregabalin studies tested distinct molding routes for mechanics and release."
+        },
+        {
+          "id": "N8",
+          "stage": 4,
+          "lane": 1,
+          "time": "2027–2029",
+          "refs": [
+            "R01",
+            "R03",
+            "R08",
+            "R14"
+          ],
+          "title": "Use delivered dose to refine design",
+          "question": "How should loaded and delivered dose be compared?",
+          "evidence": "Record array insertion, drug in skin, drug in the receptor compartment and residual drug on the patch."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Isolate geometry"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Measure as built"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Add a lumen"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Link geometry and insertion"
+        },
+        {
+          "from": "N1",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Separate loading"
+        },
+        {
+          "from": "N3",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Check conformal infusion"
+        },
+        {
+          "from": "N4",
+          "to": "N7",
+          "kind": "advance",
+          "label": "Verify replication"
+        },
+        {
+          "from": "N5",
+          "to": "N8",
+          "kind": "advance",
+          "label": "Trace drug disposition"
+        },
+        {
+          "from": "N6",
+          "to": "N8",
+          "kind": "advance",
+          "label": "Verify local delivery"
+        },
+        {
+          "from": "N7",
+          "to": "N8",
+          "kind": "advance",
+          "label": "Compare load and release"
+        },
+        {
+          "from": "N8",
+          "to": "N2",
+          "kind": "feedback",
+          "label": "Refine geometry using dose"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Research scope and outcomes",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Coated, hollow and dissolving routes have different requirements for drug protection, capacity and delivery. First identify where the drug is located and which component is printed. Then track as-manufactured geometry, insertion across the patch and dose in the skin. [R01] [R02] [R03] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathways and evidence",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Separate structure and coating"
+          },
+          {
+            "type": "p",
+            "text": "SLA made the needles and inkjet deposited insulin. Delivery was studied in porcine skin. [R01]"
+          },
+          {
+            "type": "h3",
+            "text": "Transfer geometry to the master"
+          },
+          {
+            "type": "p",
+            "text": "Two-photon polymerization produced seven templates for insertion comparisons after replication. [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "Enable active infusion with a lumen"
+          },
+          {
+            "type": "p",
+            "text": "Printed hollow needles were coupled to a microelectromechanical system. [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "Measure geometry and array insertion"
+          },
+          {
+            "type": "p",
+            "text": "Experiments linked printing parameters, tilt and aspect ratio to geometry, insertion force and deformation. [R04] [R05] [R16]"
+          },
+          {
+            "type": "h3",
+            "text": "Assign drug loading to a separate step"
+          },
+          {
+            "type": "p",
+            "text": "A donepezil study combined DLP with semisolid extrusion. An LCD study compared coatings on conical and pyramidal needles. [R14] [R15]"
+          },
+          {
+            "type": "h3",
+            "text": "Conform the backing to the application site"
+          },
+          {
+            "type": "p",
+            "text": "A flexible hollow array study investigated local delivery. [R06]"
+          },
+          {
+            "type": "h3",
+            "text": "Carry drug in dissolving needles"
+          },
+          {
+            "type": "p",
+            "text": "Rivastigmine and pregabalin studies tested distinct molding routes for mechanics and release. [R07] [R08]"
+          },
+          {
+            "type": "h3",
+            "text": "Use delivered dose to refine design"
+          },
+          {
+            "type": "p",
+            "text": "Record array insertion, drug in skin, drug in the receptor compartment and residual drug on the patch. [R01] [R03] [R08] [R14]"
+          },
+          {
+            "type": "p",
+            "text": "In a comparison of six aspect ratios using 10 × 10 arrays, higher aspect ratios were associated with deeper penetration and greater deformation. Suitability depends jointly on depth and integrity after unloading. [R16]"
+          },
+          {
+            "type": "h3",
+            "text": "Separating needle fabrication and protein coating"
+          },
+          {
+            "type": "p",
+            "text": "In 2018, research was conducted on printing conical and pyramidal microneedle needles, followed by inkjet coating with insulin and carbohydrate-protective components. Drug structure was examined using spectroscopy, and release was evaluated using a Franz diffusion assay on porcine skin. Printing is responsible for the needle body, while coating is responsible for drug loading and protection; these two steps together determine delivery performance. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Separating the needle body and drug-loaded layer allows the needle body selection to primarily conform to mechanics and geometry, while the coating selection primarily conforms to drug stability and release. Circular dichroism and Raman spectroscopy are used to observe protein conformation, and porcine skin diffusion assays are used to observe delivery; these two methods correspond to biomolecular states and tissue barrier penetration, respectively. The research design thus breaks down successful manufacturing into two tasks that must be met simultaneously, rather than simply focusing on the integrity of the needle tip."
+          },
+          {
+            "type": "p",
+            "text": "The stability of the same drug in different coating materials does not mean that different biomolecules can utilize the same protective relationship. A more suitable approach is a segmented validation method: first confirm the active structure, then confirm shaping and puncture, and finally confirm tissue delivery. Simultaneously, the geometry and load-bearing capacity before and after coating should be compared to determine whether the drug loading step, in turn, weakens the structural function. This creates a two-way feedback loop between pharmaceutics optimization and microstructure optimization."
+          },
+          {
+            "type": "h3",
+            "text": "Molds isolate geometric variables"
+          },
+          {
+            "type": "p",
+            "text": "A 2020 two-photon polymerization study fabricated seven master molds with different heights, shapes, base widths and spacing, then replicated them into dissolving and hydrogel microneedles. Needle geometries produced different insertion depths in skin models, broadly corresponding to delivery of a model drug. Molds made geometry a controlled comparison variable. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "The value of the high-precision template lies in making needle formation a repeatable variable. The final material is provided by replication molding, avoiding the need to readjust the high-resolution printing process for each drug-loaded formulation. The study simultaneously compares insertion depth and drug delivery, establishing a relationship between geometric effects and effective intradermal contact, going beyond mere microscopic appearance."
+          },
+          {
+            "type": "p",
+            "text": "The repeatability of the template does not mean that the final product will automatically repeat. Negative mold filling, drying shrinkage, and demolding deformation can all alter the needle tip. Quality evaluation should track three stages: the master mold, the negative mold, and the final needle body, to identify at which step the error increases. The center needle and edge needles in each array may bear different loads; spatial distribution is more indicative than average insertion depth of whether some needles have not entered."
+          },
+          {
+            "type": "h3",
+            "text": "Hollow microneedles with active control"
+          },
+          {
+            "type": "p",
+            "text": "The hollow-microneedle MEMS study, published online in 2020, combined a printed needle with a control system to observe intradermal fluid distribution in real time and evaluate insulin administration in diabetic animals. The study advanced from passive dissolution and release to a controlled infusion process. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "The hollow structure of the needle separates the drug-load capacity from the needle volume, while the control system makes delivery a time-varying process. The inclusion of real-time imaging is particularly important because not all pumped fluid necessarily reaches the target tissue; channel resistance, contact state, and tissue backpressure can all alter the distribution. Research has shifted from passive release to monitorable infusion, allowing for cross-verification of controlled doses with actual tissue results."
+          },
+          {
+            "type": "p",
+            "text": "Compared to the soluble microneedle, the active system of adds flow paths, drive components, and connecting parts; therefore, the reliability of the entire device requires a joint evaluation. A single needle's ability to penetrate only indicates that the flow path inlet is adequate; continuous operation also depends on sealing, blockage, and contact stability. The control system's setpoints require independent flow or mass references to rule out situations where commands are executed correctly but actual liquid delivery is insufficient."
+          },
+          {
+            "type": "h3",
+            "text": "Geometric errors in direct printing"
+          },
+          {
+            "type": "p",
+            "text": "The 2021 DLP hollow needle microneedle study compared the effects of printing angle on geometry and examined curing and mechanical performance. The actual shape of the needle tip and channel may deviate from the CAD design, thus manufacturing parameters are incorporated into the puncture design, not just production settings. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "The internal channels of the hollow needle complicate manufacturing issues compared to solid needles: over-curing can shrink the opening, and cleaning and residue can alter the actual flow path. The printing orientation affects both stair-stepping, support, and localized exposure; therefore, the actual needle tip and channels should be measured, not just the nominal resolution. Geometric error studies provide interpretable input for subsequent puncture and infusion."
+          },
+          {
+            "type": "p",
+            "text": "Post-curing can also alter material stiffness and residual composition, potentially improving load-bearing capacity while changing brittleness. The quality window should include post-puncture integrity and chemical residue, rather than using maximum hardness as the sole optimization objective. Exposure variations may also exist between different locations within a printing batch; examining a single optimal sample is insufficient to represent the geometric consistency of the entire manufacturing area."
+          },
+          {
+            "type": "h3",
+            "text": "Build orientation changes insertion"
+          },
+          {
+            "type": "p",
+            "text": "A 2023 study compared different printing tilt angles, finding that the 45-degree angle required less puncture force than the zero-degree angle in the DLP system used. The results linked process direction, tip formation, and puncture performance, indicating that optimization needs to be based on actual equipment and materials. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "The tilt angle study links digital geometry, printed needle tips, and measured punctures. Its methodological focus is on making the manufacturing orientation a controlled variable, then comparing functions under uniform mechanical conditions. This is more convincing than simply demonstrating the sharpness of a single needle tip, because minute appearance differences only gain practical significance through the response of the tissue or standard model."
+          },
+          {
+            "type": "p",
+            "text": "Different printers have different pixel sizes, optical systems, and material responses, so improvements brought about by manufacturing direction need to be reproduced on a system-by-system basis. A more transferable conclusion is to examine the relationship between the actual needle tip and the puncture, rather than treating a certain angle as a universal process choice. The reduction in puncture force should also be compared with the needle body damage threshold; only by retaining sufficient load-bearing margin can a lower applied load be meaningful for product stability."
+          },
+          {
+            "type": "h3",
+            "text": "Flexible arrays for localized disease"
+          },
+          {
+            "type": "p",
+            "text": "In the same year, the flexible hollow microneedle study used a printed master mold and double molding to adjust the needle size and substrate characteristics, and evaluated local delivery in a mouse psoriasis model. The design expanded from a single needle to the overall relationship between the array and skin contact. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "The flexible substrate addresses the fit between the entire array and the skin's curvature, while the needle body handles puncture and delivery; both require different mechanical properties. Dual molding makes it possible to design these two types of requirements separately. Mouse disease models further connect local delivery with tissue response, shifting the evaluation from creating holes to actual effects on specific lesions."
+          },
+          {
+            "type": "p",
+            "text": "During the translation process, stability under activity and prolonged contact should also be observed. Flexibility improves adhesion but may also alter the direction of force on the needle; whether skin movement causes local withdrawal or uneven insertion needs to be investigated as part of repeated delivery studies. Tissue response evaluation should separate changes caused by drug action from those caused by the puncture itself; blank arrays and identical material controls help identify their respective contributions."
+          },
+          {
+            "type": "h3",
+            "text": "Vacuum compression forms drug-loaded needles"
+          },
+          {
+            "type": "p",
+            "text": "The 2025 rivastigmine study combined DLP and Free-D Molding to examine the finished product's structure, mechanics, and skin permeability. Vacuum compression molding provides another method for drug-loaded materials to enter complex microstructures; accuracy needs to be confirmed on the final needle body. [R07]"
+          },
+          {
+            "type": "p",
+            "text": "This route uses high-precision printing for precursor geometry, followed by vacuum compression of the final material, avoiding the need for the final drug delivery system to be compatible with photopolymerization. Multiple microscopic observations and skin permeability tests are used to examine replication accuracy and functionality, allowing the value of the molding technology to be assessed at the product level. MeltPrep personnel are involved in the research, also establishing a direct link between equipment suppliers and pharmaceutical development. [R07]"
+          },
+          {
+            "type": "p",
+            "text": "The molding cost should also be calculated based on the qualified final array. Reusing the master mold reduces the burden of single-cycle geometry development, but missing needles, air bubbles, and demolding losses may dominate yield; recording these failures can help identify the areas that truly need optimization during manufacturing expansion. Comparisons of ex vivo permeability require maintaining the same skin source and integrity conditions to avoid sample barrier differences overshadowing the influence of the molding method."
+          },
+          {
+            "type": "h3",
+            "text": "Mechanical support and release in dissolving carriers"
+          },
+          {
+            "type": "p",
+            "text": "The 2026 pregabalin study involved converting the printed master mold into a PDMS negative mold, followed by the fabrication of a bilayer PVA/PVP microneedle, and examination of morphology, insertion, and release (in vitro). This demonstrates that the accuracy of the master mold and the performance of the final formulation need to be jointly verified; the entire manufacturing chain cannot be evaluated solely based on the master mold image. [R08]"
+          },
+          {
+            "type": "p",
+            "text": "Dissolving microneedles use the carrier material itself as the source of release, tightly coupling mechanics and mass transfer. Dry-state compression and model insertion test load bearing before use; swelling and in vitro release assess behavior after wetting. Linking the two shows whether a structure can enter first and then release its payload. Model insertion provides early evidence for this chain."
+          },
+          {
+            "type": "p",
+            "text": "This node merges the template, mechanics, and release branches into a material selection problem. Evaluation priorities should shift from total load to the repeatability of actual delivery, while also considering duration of retained activity, humidity sensitivity, and post-use structural integrity, thus defining product boundaries for specific applications. Results from multiple independent preparations and different die locations can supplement single-batch averages, revealing whether the replication route has a basis for stable scaling-up of production."
+          }
+        ]
+      },
+      {
+        "title": "Industry technologies and services",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Nanoscribe addresses master precision and MeltPrep addresses molding. The two capabilities correspond to different acceptance criteria: master geometry and replication consistency. [R09] [R10]"
+          },
+          {
+            "type": "h3",
+            "text": "How can microneedle structures balance strength and skin insertion?"
+          },
+          {
+            "type": "p",
+            "text": "The core capabilities lie in high-precision geometry manufacturing and template processes. Academic research further provides insertion, material, and delivery verification, enabling the precision structures to be integrated with specific applications."
+          },
+          {
+            "type": "p",
+            "text": "The choice of product route requires consideration of both accuracy and quantity: direct printing is suitable for exploring complex structures, while master mold replication allows for the transfer of designs to more materials and batch production. The final needle body must be examined for different routes, not just the master mold."
+          },
+          {
+            "type": "h3",
+            "text": "How can drug-loaded microneedles control transdermal delivery and release?"
+          },
+          {
+            "type": "p",
+            "text": "Nanoscribe provides high-precision manufacturing capabilities for complex microneedle models and master molds; MeltPrep's Free-D Molding connects the printing of prototypes, negative molds, and vacuum compression molding, supporting the production of complex dosage form prototypes with small amounts of material. The 2025 rivastigmine research directly adopts this molding route. [R09][R10][R07]"
+          },
+          {
+            "type": "p",
+            "text": "Enterprise capabilities here are divided into manufacturing segments: precision printing determines the geometry, molding allows the target drug and polymer to enter the final needle. Active infusion also requires the joint participation of pumps, flow channels, control, and bonding systems."
+          },
+          {
+            "type": "p",
+            "text": "The key link between devices and therapeutic products is to combine these components with a defined formulation and usage method, and to validate the final dosage."
+          },
+          {
+            "type": "h3",
+            "text": "How can molds and printing improve microneedle fabrication accuracy?"
+          },
+          {
+            "type": "p",
+            "text": "MeltPrep’s Free-D Molding converts printed engineering-material prototypes into negative molds, then uses vacuum compression to form prototypes in the target material, providing micromolding tools for high-value formulations available in small quantities. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "These two types of companies have complementary capabilities. The choice between direct printing and master mold replication should be based on the final material, required quantity, channel structure, and quality control, rather than simply comparing printing speed."
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and production interfaces",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN112587790A and CN118061534A address active delivery and channel fabrication in hollow arrays. CN119606857A explores photocured dissolving patches. Dissolving routes call for release and packaged stability tests. Hollow routes prioritize lumen patency and sealing at connections. [R11] [R12] [R13]"
+          }
+        ]
+      },
+      {
+        "title": "Research and industry connections",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Assigning mechanics, imaging and chemical quantitation to separate stages helps identify losses from incomplete insertion, residual needle material, coating loss or differences in tissue distribution. Test the mass balance on the same production lots. [R01] [R03] [R07] [R08]"
+          },
+          {
+            "type": "p",
+            "text": "Move from structural integrity to skin interface and delivered amount. Drug-free/tracer tests first identify broken tips, blockage and leakage; then compare delivery/residue at equal loading. Hold array density while varying tilt, contact and pressing to distinguish manufacture from use. Hollow routes emphasize patency/actuation, soluble routes insertion/dissolution/residue; both require post-removal integrity records.[R04][R05][R11][R12][R13]"
+          },
+          {
+            "type": "p",
+            "text": "Partition nominal loading into reservoir amount, channel entry, surface loss, needle residue and delivered amount. Pressing may merely move fluid onto skin, and soluble-needle shortening may reflect dissolution outside skin. Appearance/reservoir mass alone cannot prove delivery. Reconcile material destinations under matched tasks and link blockage, backing lift and contact variation to delivery curves to locate design-correctable losses.[R01][R03][R06][R07][R11][R13]"
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Validation task",
+              "Variables, controls, endpoints and failure decisions"
+            ],
+            "rows": [
+              [
+                "Machining control",
+                "Compare direct printing and post-laser machining at equal shape; measure lumen continuity, resistance, debris and post-penetration damage. Better patency with weaker needles requires machining-window revision.[R04][R12]"
+              ],
+              [
+                "Actuation control",
+                "Compare passive, pressed and electrical modes with matched arrays; measure outflow, surface leakage and delivered amount after penetration. Reservoir depletion with surface retention requires sealing/contact redesign before dose customization.[R03][R06][R11]"
+              ],
+              [
+                "Soluble control",
+                "Compare virgin/reprocessed backing under the same needle layer; assay loading uniformity, dissolution and residue. If recycling alters mechanics or residues, restrict backing reuse and validate delivery layers separately.[R07][R08][R13]"
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Distinguish printed parts contacting drug/skin from replication templates. Two-photon templates transfer tips into another material; direct photocured needles carry curing/processing state into the device, and laser holes add surfaces/cleaning. Compare Nanoscribe/Free-D routes through template reproducibility, replication losses and finished inspection, not template detail alone. Blunted tips or altered channels after replication require finished-part measurements.[R02][R04][R09][R10][R12]"
+          }
+        ]
+      },
+      {
+        "title": "Outlook and measures of progress",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The next comparison can track variation in skin dose for a single formulation across lots, sites and users, alongside moisture exposure, deformation and fraction of needles inserted. [R05] [R07] [R08]"
+          },
+          {
+            "type": "p",
+            "text": "A common challenge with and microneedle technologies is connecting five quantities: load capacity, releasable capacity, actual inserted load, tissue recovery, and effective amount reaching the target. These five quantities have different denominators. Coated routes may leave residues on the surface, hollow routes may experience backflow, and soluble routes may leave loads in the substrate that haven't penetrated the skin. Therefore, overall mass balance is more helpful in selecting a product route than simply increasing the loading rate."
+          },
+          {
+            "type": "p",
+            "text": "Structural comparison requires distinguishing between single-needle and array-based designs. The sharpness of a single needle facilitates localized penetration, while increased array density can cause skin deformation, altering the effective load on each needle. A flexible substrate further affects load distribution. Therefore, the evaluation should simultaneously consider single-needle load-bearing capacity, array puncture, and insertion location distribution to determine whether a particular geometry still holds an advantage in actual array applications."
+          },
+          {
+            "type": "p",
+            "text": "The model hierarchy should be selected according to the specific problem. Homogeneous membranes facilitate screening and reproducibility, ex vivo skin more closely approximates the stratum corneum and tissue structure, and animal studies allow for observation of local responses and systemic distribution. The evidence provided by different models is complementary in the research chain. Migration from standard membranes to tissues should be compared using the same apparatus and the same evaluation metrics to clearly identify what changes occur with increased biological complexity, rather than directly merging results from different models."
+          },
+          {
+            "type": "p",
+            "text": "The industrial route can be divided into direct manufacturing of the final needle and replication after mold manufacturing. The former reduces geometry transfer steps, while the latter expands the choice of final materials and facilitates repeated replication. Nanoscribe lists the high-resolution microneedle array and master mold manufacturing as applications, demonstrating the platform's support for geometric research; MeltPrep Free-D connects the printing precursor with vacuum compression forming, emphasizing small-scale prototyping. [R09][R10]"
+          },
+          {
+            "type": "p",
+            "text": "Commercial technology should be tracked by task rather than product counts. Two-photon mold studies in 2020 showed repeatable geometric replication; DLP studies in 2021 and 2023 linked build orientation to function; a 2025 study involving MeltPrep connected replication to specific drug-loaded microneedles. These include both equipment use and company participation; similar processes alone do not establish that all papers belong to one product-development chain. [R02][R04][R05][R07]"
+          },
+          {
+            "type": "p",
+            "text": "For industrial scale-up, the most important metrics are qualified array yield, channel open ratio, needle tip size distribution, drug loading distribution, and final delivery variability. Printing speed only describes one step; if post-processing, duplication, assembly, or inspection becomes a bottleneck, speeding up printing may not improve overall output. Recording failure locations to individual needles or arrays can identify whether investment should be made in printing accuracy, die life, or final inspection capabilities."
+          },
+          {
+            "type": "p",
+            "text": "The priority study for in 2027 is the consistency of the same product across different skin models and multiple independent batches. For coated, soluble, or hollow systems with clearly defined uses, it is advisable to validate their respective primary dose loss pathways. Evidence triggering further translation should be stable actual delivery rates and that the drug and structure retain their intended function after storage, rather than just a single successful puncture."
+          },
+          {
+            "type": "p",
+            "text": "A key condition for in 2028 is incorporating application methods and usage scenarios into the design. Skin curvature, movement, different operators, and contact states can affect the number of array entries; device design needs to mitigate the fluctuations caused by these factors. Research can use controlled-change measurements to assess the system's sensitivity to usage differences, feeding the results back to the choice of substrate, needle spacing, or feedback detection."
+          },
+          {
+            "type": "p",
+            "text": "The stronger scenario for 2029 is the development of an evidence package that can explain actual delivery volume, local tissue response, and long-term product stability, demonstrating its value relative to existing methods in specific drug missions. The weaker scenario involves increasing precision in microstructures, while issues of dose delivery and reusability remain unresolved. The difference between the two depends on whether mechanistic studies can extend to real-world application endpoints."
+          },
+          {
+            "type": "p",
+            "text": "Research priorities also include a systematic analysis of failed samples. Channel blockage, tip bending, replicated bubbles, and moisture softening each correspond to different improvement directions; if only the most complete array is shown, the manufacturing window will be overestimated. Introducing failed samples into structural, mechanical, and delivery tests can clarify which types of defects have functional significance, thereby determining reasonable inspection priorities."
+          },
+          {
+            "type": "p",
+            "text": "For cross-route comparisons, a common endpoint consistent with the target should be used. For local skin diseases, priority should be given to the distribution of intratissue exposure and local response; for systemic delivery, the amount entering circulation and changes in time should be considered. This preserves the characteristics of various microneedle types and avoids substituting practical application value with a conveniently measurable in vitro release ratio."
+          },
+          {
+            "type": "p",
+            "text": "Reusable research findings should also specify the inspection locations of the mold and final product, the background of the tissue sample, and the estimation method for the actual needle insertion. Differences in results obtained by different teams using the same digital model but different tissue or metrological definitions may not necessarily stem from manufacturing level. Establishing common geometric and dosage representations allows subsequent comparisons to focus on genuine material and mechanistic differences and reduces redundant prototype exploration."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "3D printed microneedles for insulin skin delivery",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29555437/",
+        "year": "2018",
+        "source": "International Journal of Pharmaceutics",
+        "id": "R01"
+      },
+      {
+        "title": "Two-Photon Polymerisation 3D Printing of Microneedle Array Templates with Versatile Designs: Application in the Development of Polymeric Drug Delivery Systems",
+        "url": "https://link.springer.com/article/10.1007/s11095-020-02887-9",
+        "year": "2020",
+        "source": "Pharmaceutical Research",
+        "id": "R02"
+      },
+      {
+        "title": "A novel 3D printed hollow microneedle microelectromechanical system for controlled, personalized transdermal drug delivery",
+        "url": "https://gala.gre.ac.uk/id/eprint/30938/",
+        "year": "2020（在线）/2021",
+        "source": "Additive Manufacturing",
+        "id": "R03"
+      },
+      {
+        "title": "Optimization of Printing Parameters for Digital Light Processing 3D Printing of Hollow Microneedle Arrays",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8622592/",
+        "year": "2021",
+        "source": "Pharmaceutics",
+        "id": "R04"
+      },
+      {
+        "title": "The Effect of 3D Printing Tilt Angle on the Penetration of 3D-Printed Microneedle Arrays",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10305640/",
+        "year": "2023",
+        "source": "Micromachines",
+        "id": "R05"
+      },
+      {
+        "title": "Customized flexible hollow microneedles for psoriasis treatment with reduced-dose drug",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10354769/",
+        "year": "2023",
+        "source": "Bioengineering & Translational Medicine",
+        "id": "R06"
+      },
+      {
+        "title": "Fabrication and characterization of dissolving microneedles combining digital light processing and vacuum compression molding technique for the transdermal delivery of rivastigmine",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40043920/",
+        "year": "2025",
+        "source": "European Journal of Pharmaceutics and Biopharmaceutics",
+        "id": "R07"
+      },
+      {
+        "title": "3D-Printing-Assisted Fabrication and Characterization of Pregabalin-Loaded PVA/PVP Dissolving Microneedle Arrays",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13303589/",
+        "year": "2026",
+        "source": "Micromachines",
+        "id": "R08"
+      },
+      {
+        "title": "Explore Quantum X: microneedle microfabrication",
+        "url": "https://www.nanoscribe.com/en/campaigns/explore-quantum-x/",
+        "year": "2026（访问）",
+        "source": "Nanoscribe",
+        "id": "R09"
+      },
+      {
+        "title": "Free-D Molding",
+        "url": "https://www.meltprep.com/free-d",
+        "year": "2026（访问）",
+        "source": "MeltPrep",
+        "id": "R10"
+      },
+      {
+        "title": "Percutaneous drug pressing/ionophoresis controlled release device based on 3D printing hollow microneedle array",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN112587790A",
+        "year": 2021,
+        "source": "Espacenet",
+        "id": "R11"
+      },
+      {
+        "title": "Method for manufacturing hollow microneedle through additive and subtractive combination",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN118061534A",
+        "year": 2024,
+        "source": "Espacenet",
+        "id": "R12"
+      },
+      {
+        "title": "Recyclable photocuring 3D printed soluble microneedle patch and preparation method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119606857A",
+        "year": 2025,
+        "source": "Espacenet",
+        "id": "R13"
+      },
+      {
+        "title": "Fabrication of Hybrid Coated Microneedles with Donepezil Utilizing Digital Light Processing and Semisolid Extrusion Printing for the Management of Alzheimer's Disease.",
+        "url": "https://doi.org/10.1021/acs.molpharmaceut.4c00377",
+        "year": "2024",
+        "source": "",
+        "id": "R14"
+      },
+      {
+        "title": "Comparative Evaluation of Hydrogel Dip-Coating on Cone and Pyramid Microneedle Arrays Fabricated by LCD 3D Printing.",
+        "url": "https://doi.org/10.3390/pharmaceutics18050518",
+        "year": "2026",
+        "source": "",
+        "id": "R15"
+      },
+      {
+        "title": "3D Printing of Biodegradable Polymeric Microneedles for Transdermal Drug Delivery Applications.",
+        "url": "https://doi.org/10.3390/pharmaceutics16020237",
+        "year": "2024",
+        "source": "",
+        "id": "R16"
+      }
+    ]
+  },
+  "de": {
+    "id": "H01",
+    "p": "P3",
+    "title": "Mikronadeln und transdermale Arzneistoffabgabe",
+    "subtitle": "Von der Mastergeometrie über das Eindringen des Arrays bis zur Dosis in der Haut",
+    "thesis": "Der Druck dient der Werkzeugherstellung, dem Nadelkörper oder der Wirkstoffbeladung. Für alle drei Pfade ist entscheidend, ob ein Pflaster über Chargen und Anwendungsbedingungen hinweg eine reproduzierbare Dosis abgibt.",
+    "questions": [],
+    "graph": {
+      "title": "Von der Fertigungsaufteilung zur Dosismessung",
+      "summary": "Drei Pfade verbinden Fertigungsgeometrie, Hautkontakt und Abgabe über Beschichtungen, aktive Infusion und lösliche Nadeln.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2018",
+          "refs": [
+            "R01"
+          ],
+          "title": "Nadelkörper und Beschichtung trennen",
+          "question": "Wie lassen sich verarbeitungsempfindliche Wirkstoffe handhaben?",
+          "evidence": "SLA erzeugte die Nadeln, Tintenstrahldruck brachte Insulin auf. Die Abgabe wurde an Schweinehaut untersucht."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2020",
+          "refs": [
+            "R02"
+          ],
+          "title": "Geometrie in die Masterform übertragen",
+          "question": "Wie wirkt sich die Spitzenform auf das Eindringen aus?",
+          "evidence": "Zwei-Photonen-Polymerisation erzeugte sieben Vorlagen. Nach der Abformung wurde das Eindringen verglichen."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2020–2021",
+          "refs": [
+            "R03"
+          ],
+          "title": "Aktive Infusion über ein Lumen ermöglichen",
+          "question": "Wie lässt sich die Flüssigkeitsabgabe ins Gewebe steuern?",
+          "evidence": "Gedruckte Hohlnadeln wurden an ein mikroelektromechanisches System gekoppelt."
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 0,
+          "time": "2021–2024",
+          "refs": [
+            "R04",
+            "R05",
+            "R16"
+          ],
+          "title": "Geometrie und Arrayeindringen messen",
+          "question": "Beeinflussen Druckabweichungen die Mechanik?",
+          "evidence": "Versuche verknüpften Druckparameter, Neigung und Seitenverhältnis mit Geometrie, Einstichkraft und Verformung."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 1,
+          "time": "2024–2026",
+          "refs": [
+            "R14",
+            "R15"
+          ],
+          "title": "Beladung in einen separaten Arbeitsschritt legen",
+          "question": "Lassen sich Substrat und Beschichtung unabhängig wählen?",
+          "evidence": "Eine Donepezil-Studie kombinierte DLP mit halbfester Extrusion. Eine LCD-Studie verglich Beschichtungen konischer und pyramidenförmiger Nadeln."
+        },
+        {
+          "id": "N6",
+          "stage": 2,
+          "lane": 2,
+          "time": "2023",
+          "refs": [
+            "R06"
+          ],
+          "title": "Träger an die Applikationsstelle anpassen",
+          "question": "Wie verändert der Arraykontakt die Abgabe?",
+          "evidence": "Eine Studie mit flexiblen Hohlnadelarrays untersuchte die lokale Abgabe."
+        },
+        {
+          "id": "N7",
+          "stage": 3,
+          "lane": 0,
+          "time": "2025–2026",
+          "refs": [
+            "R07",
+            "R08"
+          ],
+          "title": "Wirkstoff in lösliche Nadeln einbringen",
+          "question": "Kann die Abformung die Spitze erhalten und Freisetzung ermöglichen?",
+          "evidence": "Studien mit Rivastigmin und Pregabalin verglichen Formgebungswege hinsichtlich Mechanik und Freisetzung."
+        },
+        {
+          "id": "N8",
+          "stage": 4,
+          "lane": 1,
+          "time": "2027–2029",
+          "refs": [
+            "R01",
+            "R03",
+            "R08",
+            "R14"
+          ],
+          "title": "Design anhand der abgegebenen Dosis nachjustieren",
+          "question": "Wie sind Beladung und abgegebene Dosis zu vergleichen?",
+          "evidence": "Arraypenetration, Wirkstoff in der Haut und im Rezeptor sowie Rückstände auf dem Pflaster gemeinsam erfassen."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Geometrie isolieren"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Ist-Maße erfassen"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Lumen ergänzen"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Geometrie mit Einstich verknüpfen"
+        },
+        {
+          "from": "N1",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Beladung entkoppeln"
+        },
+        {
+          "from": "N3",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Infusion bei Hautkontakt prüfen"
+        },
+        {
+          "from": "N4",
+          "to": "N7",
+          "kind": "advance",
+          "label": "Abformung prüfen"
+        },
+        {
+          "from": "N5",
+          "to": "N8",
+          "kind": "advance",
+          "label": "Wirkstoffverbleib erfassen"
+        },
+        {
+          "from": "N6",
+          "to": "N8",
+          "kind": "advance",
+          "label": "Lokale Abgabe prüfen"
+        },
+        {
+          "from": "N7",
+          "to": "N8",
+          "kind": "advance",
+          "label": "Beladung und Abgabe vergleichen"
+        },
+        {
+          "from": "N8",
+          "to": "N2",
+          "kind": "feedback",
+          "label": "Geometrie anhand der Dosis anpassen"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Forschungsgegenstand und Endpunkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Beschichtete, hohle und lösliche Systeme stellen unterschiedliche Anforderungen an Wirkstoffschutz, Kapazität und Abgabe. Zunächst werden Wirkstoffort und gedruckte Komponente bestimmt. Danach folgen Ist-Geometrie, Eindringen des Arrays und Dosis in der Haut. [R01] [R02] [R03] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Evidenz",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Nadelkörper und Beschichtung trennen"
+          },
+          {
+            "type": "p",
+            "text": "SLA erzeugte die Nadeln, Tintenstrahldruck brachte Insulin auf. Die Abgabe wurde an Schweinehaut untersucht. [R01]"
+          },
+          {
+            "type": "h3",
+            "text": "Geometrie in die Masterform übertragen"
+          },
+          {
+            "type": "p",
+            "text": "Zwei-Photonen-Polymerisation erzeugte sieben Vorlagen. Nach der Abformung wurde das Eindringen verglichen. [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "Aktive Infusion über ein Lumen ermöglichen"
+          },
+          {
+            "type": "p",
+            "text": "Gedruckte Hohlnadeln wurden an ein mikroelektromechanisches System gekoppelt. [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "Geometrie und Arrayeindringen messen"
+          },
+          {
+            "type": "p",
+            "text": "Versuche verknüpften Druckparameter, Neigung und Seitenverhältnis mit Geometrie, Einstichkraft und Verformung. [R04] [R05] [R16]"
+          },
+          {
+            "type": "h3",
+            "text": "Beladung in einen separaten Arbeitsschritt legen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Donepezil-Studie kombinierte DLP mit halbfester Extrusion. Eine LCD-Studie verglich Beschichtungen konischer und pyramidenförmiger Nadeln. [R14] [R15]"
+          },
+          {
+            "type": "h3",
+            "text": "Träger an die Applikationsstelle anpassen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie mit flexiblen Hohlnadelarrays untersuchte die lokale Abgabe. [R06]"
+          },
+          {
+            "type": "h3",
+            "text": "Wirkstoff in lösliche Nadeln einbringen"
+          },
+          {
+            "type": "p",
+            "text": "Studien mit Rivastigmin und Pregabalin verglichen Formgebungswege hinsichtlich Mechanik und Freisetzung. [R07] [R08]"
+          },
+          {
+            "type": "h3",
+            "text": "Design anhand der abgegebenen Dosis nachjustieren"
+          },
+          {
+            "type": "p",
+            "text": "Arraypenetration, Wirkstoff in der Haut und im Rezeptor sowie Rückstände auf dem Pflaster gemeinsam erfassen. [R01] [R03] [R08] [R14]"
+          },
+          {
+            "type": "p",
+            "text": "Beim Vergleich von sechs Seitenverhältnissen in 10 × 10 Arrays gingen höhere Seitenverhältnisse mit tieferem Eindringen und stärkerer Verformung einher. Für die Eignung sind Eindringtiefe und Integrität nach Entlastung gemeinsam zu bewerten. [R16]"
+          },
+          {
+            "type": "h3",
+            "text": "Nadelkörper und Proteinbeschichtung getrennt herstellen"
+          },
+          {
+            "type": "p",
+            "text": "Im Jahr 2018 wurden Untersuchungen zur Herstellung konischer und pyramidenförmiger Nadeln (Mikronadel) mittels Druckverfahren durchgeführt. Anschließend erfolgte die Beschichtung mit Insulin und kohlenhydratschützenden Komponenten im Tintenstrahlverfahren. Die Wirkstoffstruktur wurde spektroskopisch untersucht, und die Freisetzung wurde mittels Franz-Diffusionstest an Schweinehaut evaluiert. Der Druckprozess bestimmt den Nadelkörper, während die Beschichtung für die Wirkstoffbeladung und den Schutz verantwortlich ist; diese beiden Schritte zusammen bestimmen die Freisetzungsleistung. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "trennt den Nadelkörper von der wirkstoffbeladenen Schicht. Dadurch kann die Auswahl des Nadelkörpers primär auf mechanische und geometrische Anforderungen und die Auswahl der Beschichtung primär auf die Stabilität und Freisetzung des Wirkstoffs ausgerichtet werden. Zirkulardichroismus und Raman-Spektroskopie dienen der Beobachtung der Proteinkonformation, und Diffusionstests an Schweinehaut werden zur Untersuchung der Wirkstoffabgabe eingesetzt. Diese beiden Methoden korrespondieren mit biomolekularen Zuständen bzw. der Penetration der Gewebebarriere. Das Forschungsdesign unterteilt die erfolgreiche Herstellung somit in zwei Aufgaben, die gleichzeitig erfüllt werden müssen, anstatt sich lediglich auf die Integrität der Nadelspitze zu konzentrieren."
+          },
+          {
+            "type": "p",
+            "text": "Die Stabilität desselben Wirkstoffs in verschiedenen Beschichtungsmaterialien bedeutet nicht, dass unterschiedliche Biomoleküle dieselbe Schutzwirkung nutzen können. Ein besser geeigneter Ansatz ist eine segmentierte Validierungsmethode: Zunächst wird die aktive Struktur bestätigt, dann die Formgebung und Perforation und schließlich die Gewebeverabreichung. Gleichzeitig sollten Geometrie und Belastbarkeit vor und nach der Beschichtung verglichen werden, um festzustellen, ob die Wirkstoffbeladung die Strukturfunktion beeinträchtigt. Dadurch entsteht ein bidirektionaler Feedback-Kreislauf zwischen pharmazeutischer Optimierung und Mikrostrukturoptimierung."
+          },
+          {
+            "type": "h3",
+            "text": "Geometrische Variablen mit Masterformen isolieren"
+          },
+          {
+            "type": "p",
+            "text": "Im Jahr 2020 wurden mittels Zwei-Photonen-Polymerisation sieben Matrizen mit unterschiedlichen Höhen, Formen, Basisbreiten und Abständen hergestellt und anschließend in lösliche und Hydrogel-Formen repliziert (Mikronadel). Die Eindringtiefe der verschiedenen Nadelformen im Hautmodell variierte und korrelierte weitgehend mit der Wirkstofffreisetzungsleistung des Modells. Die Matrizen ermöglichten es, die Geometrie als kontrollierte Vergleichsvariable zu nutzen. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Der Wert der hochpräzisen Schablone liegt in der reproduzierbaren Nadelformung. Das Endmaterial wird durch Replikationsformung hergestellt, wodurch eine Anpassung des hochauflösenden Druckprozesses für jede wirkstoffhaltige Formulierung entfällt. Die Studie vergleicht gleichzeitig Einführtiefe und Wirkstoffabgabe und stellt so einen Zusammenhang zwischen geometrischen Effekten und effektivem intradermalen Kontakt her, der über das rein mikroskopische Erscheinungsbild hinausgeht."
+          },
+          {
+            "type": "p",
+            "text": "Die Wiederholgenauigkeit der Vorlage bedeutet nicht, dass das Endprodukt automatisch identisch ist. Formfüllung, Trocknungsschrumpfung und Verformung beim Entformen können die Nadelspitze verändern. Die Qualitätsbewertung sollte drei Phasen umfassen: die Masterform, die Negativform und den fertigen Nadelkörper, um festzustellen, in welchem Schritt der Fehler zunimmt. Die mittlere Nadel und die Randnadeln in jeder Anordnung können unterschiedlich belastet werden; die räumliche Verteilung ist aussagekräftiger als die durchschnittliche Eindringtiefe, um festzustellen, ob einige Nadeln nicht eingedrungen sind."
+          },
+          {
+            "type": "h3",
+            "text": "Hohle Mikronadeln mit aktiver Steuerung verbinden"
+          },
+          {
+            "type": "p",
+            "text": "Die 2020 online veröffentlichte Studie zu hohlen MEMS kombinierte eine gedruckte Nadel mit einem Steuerungssystem, um die intradermale Flüssigkeitsverteilung in Echtzeit zu beobachten und die Insulinverabreichung bei diabetischen Tieren zu evaluieren. Die Studie entwickelte sich von passiver Auflösung und Freisetzung zu einem kontrollierten Infusionsprozess weiter. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Die Hohlstruktur der Nadel trennt die Wirkstoffbeladungskapazität vom Nadelvolumen, während das Steuerungssystem die Applikation zeitlich variabel gestaltet. Die Echtzeit-Bildgebung ist besonders wichtig, da nicht die gesamte gepumpte Flüssigkeit zwangsläufig das Zielgewebe erreicht; Kanalwiderstand, Kontaktzustand und Gewebegegendruck können die Verteilung beeinflussen. Die Forschung hat sich von der passiven Freisetzung hin zur überwachten Infusion verlagert, wodurch eine Querverifizierung der kontrollierten Dosen mit den tatsächlichen Gewebeergebnissen ermöglicht wird."
+          },
+          {
+            "type": "p",
+            "text": "Im Vergleich zum löslichen System Mikronadel verfügt das aktive System über zusätzliche Strömungswege, Antriebskomponenten und Verbindungsteile. Daher muss die Zuverlässigkeit des gesamten Geräts gemeinsam bewertet werden. Die Fähigkeit einer einzelnen Nadel, einzudringen, zeigt lediglich an, dass der Strömungseinlass ausreichend ist; der kontinuierliche Betrieb hängt auch von Dichtheit, Verstopfungsfreiheit und Kontaktstabilität ab. Die Sollwerte des Regelsystems benötigen unabhängige Durchfluss- oder Massenreferenzen, um Situationen auszuschließen, in denen Befehle zwar korrekt ausgeführt werden, die tatsächliche Flüssigkeitszufuhr jedoch unzureichend ist."
+          },
+          {
+            "type": "h3",
+            "text": "Geometrische Fehler beim Direktdruck"
+          },
+          {
+            "type": "p",
+            "text": "Die Studie Mikronadel aus dem Jahr 2021 untersuchte die Auswirkungen des Druckwinkels auf die Geometrie von DLP-Hohlnadeln und analysierte Aushärtung und mechanische Eigenschaften. Da die tatsächliche Form der Nadelspitze und des Kanals von der CAD-Konstruktion abweichen kann, fließen Fertigungsparameter in die Punktionskonstruktion ein und nicht nur in die Produktionseinstellungen. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Die internen Kanäle der Hohlnadel erschweren die Herstellung im Vergleich zu Vollnadeln: Überhärtung kann die Öffnung verkleinern, und Reinigungsrückstände können den tatsächlichen Flussweg verändern. Die Druckausrichtung beeinflusst sowohl die Schichthierarchie als auch die Stützstruktur und die lokale Belichtung; daher sollten die tatsächliche Nadelspitze und die Kanäle vermessen werden, nicht nur die nominelle Auflösung. Geometrische Fehleranalysen liefern interpretierbare Daten für die nachfolgende Punktion und Infusion."
+          },
+          {
+            "type": "p",
+            "text": "Die Nachhärtung kann die Materialsteifigkeit und die Restzusammensetzung verändern und potenziell die Tragfähigkeit verbessern, während sich gleichzeitig die Sprödigkeit ändert. Das Qualitätsfenster sollte die Integrität nach dem Durchstoßen und chemische Rückstände berücksichtigen, anstatt die maximale Härte als einziges Optimierungsziel zu verwenden. Auch können Belichtungsschwankungen zwischen verschiedenen Stellen innerhalb einer Druckcharge auftreten; die Untersuchung einer einzelnen optimalen Probe reicht nicht aus, um die geometrische Konsistenz des gesamten Fertigungsbereichs abzubilden."
+          },
+          {
+            "type": "h3",
+            "text": "Bauorientierung beeinflusst die Punktion"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie aus dem Jahr 2023 verglich verschiedene Druckneigungswinkel und stellte fest, dass der 45-Grad-Winkel im verwendeten DLP-System eine geringere Durchstoßkraft erforderte als der Null-Grad-Winkel. Die Ergebnisse verknüpften Prozessrichtung, Spitzenbildung und Durchstoßleistung und zeigten, dass die Optimierung auf den tatsächlichen Anlagen und Materialien basieren muss. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Die Studie zum Neigungswinkel verknüpft digitale Geometrie, gedruckte Nadelspitzen und gemessene Punktionen. Methodisch liegt der Fokus darauf, die Fertigungsorientierung als kontrollierte Variable zu definieren und anschließend die Funktionen unter einheitlichen mechanischen Bedingungen zu vergleichen. Dies ist aussagekräftiger als der bloße Nachweis der Schärfe einer einzelnen Nadelspitze, da geringfügige optische Unterschiede erst durch die Reaktion des Gewebes oder eines Standardmodells praktische Bedeutung erlangen."
+          },
+          {
+            "type": "p",
+            "text": "Unterschiedliche Drucker weisen unterschiedliche Pixelgrößen, optische Systeme und Materialeigenschaften auf. Daher müssen Verbesserungen, die durch Optimierungen in der Fertigung erzielt werden, systemspezifisch reproduziert werden. Eine besser übertragbare Schlussfolgerung ergibt sich aus der Untersuchung des Verhältnisses zwischen Nadelspitze und Punktion, anstatt einen bestimmten Winkel als universelle Prozessgröße zu betrachten. Die Reduzierung der Punktionskraft sollte zudem mit der Beschädigungsschwelle des Nadelkörpers verglichen werden. Nur bei ausreichendem Belastbarkeitsspielraum ist eine geringere Belastung für die Produktstabilität sinnvoll."
+          },
+          {
+            "type": "h3",
+            "text": "Flexible Arrays für lokale Erkrankungen"
+          },
+          {
+            "type": "p",
+            "text": "Im selben Jahr wurde in der Studie Mikronadel eine flexible Hohlnadel mithilfe einer gedruckten Masterform und eines Doppelformverfahrens angepasst, um die Nadelgröße und die Substrateigenschaften zu optimieren. Anschließend wurde die lokale Applikation in einem Mausmodell für Psoriasis evaluiert. Das Design wurde von einer einzelnen Nadel auf die Gesamtbeziehung zwischen dem Array und dem Hautkontakt erweitert. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Das flexible Substrat sorgt für die optimale Anpassung des gesamten Arrays an die Hautkrümmung, während der Nadelkörper für Punktion und Applikation zuständig ist; beides erfordert unterschiedliche mechanische Eigenschaften. Durch das Dual-Molding-Verfahren können diese beiden Anforderungen separat berücksichtigt werden. Krankheitsmodelle an Mäusen verknüpfen die lokale Applikation mit der Gewebereaktion und verlagern den Fokus von der Erzeugung von Löchern auf die tatsächlichen Auswirkungen auf spezifische Läsionen."
+          },
+          {
+            "type": "p",
+            "text": "Während des Translationsprozesses sollte die Stabilität unter Belastung und bei längerem Kontakt beobachtet werden. Flexibilität verbessert die Haftung, kann aber auch die Kraftrichtung auf die Nadel verändern; ob Hautbewegungen zu lokalem Zurückziehen oder ungleichmäßigem Einführen führen, muss im Rahmen von Studien mit wiederholter Applikation untersucht werden. Die Beurteilung der Gewebereaktion sollte Veränderungen, die durch die Arzneimittelwirkung verursacht werden, von solchen trennen, die durch die Punktion selbst bedingt sind; leere Arrays und Kontrollen mit identischem Material helfen, deren jeweiligen Beitrag zu identifizieren."
+          },
+          {
+            "type": "h3",
+            "text": "Wirkstoffhaltige Nadeln durch Vakuumkompression formen"
+          },
+          {
+            "type": "p",
+            "text": "Die Rivastigmin-Studie aus dem Jahr 2025 kombinierte DLP und Free-D Molding, um die Struktur, die mechanischen Eigenschaften und die Hautpermeabilität des Endprodukts zu untersuchen. Das Vakuumformverfahren bietet eine weitere Methode, um arzneimittelbeladene Materialien in komplexe Mikrostrukturen einzubringen; die Genauigkeit muss am fertigen Nadelkörper bestätigt werden. [R07]"
+          },
+          {
+            "type": "p",
+            "text": "Dieses Verfahren nutzt hochpräzises Drucken für die Geometrie der Vorstufe, gefolgt von der Vakuumverpressung des Endmaterials. Dadurch entfällt die Notwendigkeit, dass das finale Wirkstoffabgabesystem mit der Photopolymerisation kompatibel sein muss. Mehrere mikroskopische Untersuchungen und Hautpermeabilitätstests dienen der Überprüfung der Replikationsgenauigkeit und Funktionalität und ermöglichen die Bewertung des Werts der Formgebungstechnologie auf Produktebene. Mitarbeiter von MeltPrep sind an der Forschung beteiligt und stellen so eine direkte Verbindung zwischen Geräteherstellern und der pharmazeutischen Entwicklung her. [R07]"
+          },
+          {
+            "type": "p",
+            "text": "Die Formkosten sollten ebenfalls auf Basis des qualifizierten Endprodukts berechnet werden. Die Wiederverwendung der Masterform reduziert den Aufwand für die Geometrieentwicklung in einem einzigen Zyklus, jedoch können fehlende Nadeln, Luftblasen und Entformungsverluste die Ausbeute erheblich beeinträchtigen. Die Dokumentation dieser Fehler hilft, die Bereiche zu identifizieren, die bei einer Produktionserweiterung tatsächlich optimiert werden müssen. Vergleiche der Ex-vivo-Permeabilität erfordern die Beibehaltung derselben Hautquellen und Integritätsbedingungen, um zu vermeiden, dass Unterschiede in der Probenbarriere den Einfluss des Formverfahrens überdecken."
+          },
+          {
+            "type": "h3",
+            "text": "Tragfähigkeit und Freisetzung auflösbarer Träger"
+          },
+          {
+            "type": "p",
+            "text": "Die Pregabalin-Studie 2026 umfasste die Umwandlung der gedruckten Masterform in eine PDMS-Negativform, gefolgt von der Herstellung einer zweischichtigen PVA/PVP-Formulierung (Mikronadel) und der Untersuchung von Morphologie, Insertion und Freisetzung (in vitro). Dies zeigt, dass die Genauigkeit der Masterform und die Leistungsfähigkeit der finalen Formulierung gemeinsam überprüft werden müssen; die gesamte Fertigungskette kann nicht allein anhand des Bildes der Masterform bewertet werden. [R08]"
+          },
+          {
+            "type": "p",
+            "text": "(löslich) und Mikronadel (freisetzend) nutzen das Trägermaterial selbst als Freisetzungsquelle und weisen daher eine hohe Kopplung zwischen Mechanik und Stofftransport auf. Trockenkompression und Modellperforation dienen der Untersuchung der Belastbarkeit vor der Anwendung, während Quellung und die Freisetzung von in vitro das Verhalten nach der Benetzung dokumentieren. Die Ergebnisse beider Ansätze müssen miteinander verknüpft werden, um zu zeigen, dass die Struktur die Last zunächst vollständig aufnehmen und anschließend wieder abgeben kann. Die Modellperforation in dieser Studie liefert erste Hinweise auf diese Wirkungsweise."
+          },
+          {
+            "type": "p",
+            "text": "Dieser Knotenpunkt führt die Zweige für Vorlage, Mechanik und Freisetzung zu einem Materialauswahlproblem zusammen. Die Bewertungsprioritäten sollten sich von der Gesamtlast hin zur Wiederholbarkeit der tatsächlichen Abgabe verlagern, wobei gleichzeitig Verweilzeit, Feuchtigkeitsempfindlichkeit und strukturelle Integrität nach Gebrauch berücksichtigt werden, um so Produktgrenzen für spezifische Anwendungen zu definieren. Ergebnisse aus mehreren unabhängigen Präparationen und an verschiedenen Werkzeugpositionen können die Mittelwerte einer einzelnen Charge ergänzen und aufzeigen, ob der Replikationsprozess eine Grundlage für eine stabile Produktionsskalierung bietet."
+          }
+        ]
+      },
+      {
+        "title": "Technologien und Angebote der Unternehmen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Nanoscribe adressiert die Masterpräzision, MeltPrep die Formgebung. Dazu passen unterschiedliche Abnahmekriterien: Geometrie des Masters und Gleichmäßigkeit der Abformung. [R09] [R10]"
+          },
+          {
+            "type": "h3",
+            "text": "Wie verbinden Mikronadelstrukturen Festigkeit und Hautpunktion?"
+          },
+          {
+            "type": "p",
+            "text": "Die Kernkompetenzen liegen in der Fertigung hochpräziser Geometrien und Schablonenverfahren. Akademische Forschung liefert darüber hinaus Verifizierungen für Einfügung, Material und Lieferung und ermöglicht so die Integration der Präzisionsstrukturen in spezifische Anwendungen."
+          },
+          {
+            "type": "p",
+            "text": "Die Wahl des Herstellungsverfahrens erfordert die Berücksichtigung von Genauigkeit und Menge: Direktdruck eignet sich für die Untersuchung komplexer Strukturen, während die Replikation mit einer Masterform die Übertragung von Designs auf verschiedene Materialien und die Serienfertigung ermöglicht. Der fertige Nadelkörper muss für verschiedene Herstellungsverfahren geprüft werden, nicht nur für die Masterform."
+          },
+          {
+            "type": "h3",
+            "text": "Wie steuern wirkstoffhaltige Mikronadeln transdermale Abgabe und Freisetzung?"
+          },
+          {
+            "type": "p",
+            "text": "Nanoscribe ermöglicht die hochpräzise Fertigung komplexer Mikronadel-Modelle und Masterformen; MeltPrep Free-D Molding verbindet den 3D-Druck von Prototypen, Negativformen und das Vakuumformverfahren und unterstützt so die Herstellung komplexer Darreichungsformprototypen mit geringen Materialmengen. Die Rivastigmin-Forschung von 2025 nutzt dieses Formverfahren direkt. [R09] [R10] [R07]"
+          },
+          {
+            "type": "p",
+            "text": "Die Unternehmenskompetenzen sind in Fertigungssegmente unterteilt: Präzisionsdruck bestimmt die Geometrie, Formgebung ermöglicht das Einbringen des Wirkstoffs und des Polymers in die fertige Nadel. Die aktive Infusion erfordert zudem das Zusammenwirken von Pumpen, Durchflusskanälen, Steuerungs- und Verbindungssystemen."
+          },
+          {
+            "type": "p",
+            "text": "Die entscheidende Verbindung zwischen Medizinprodukten und therapeutischen Produkten besteht darin, diese Komponenten mit einer definierten Formulierung und Anwendungsmethode zu kombinieren und die endgültige Dosierung zu validieren."
+          },
+          {
+            "type": "h3",
+            "text": "Wie erhöhen Formen und Druckverfahren die Fertigungsgenauigkeit von Mikronadeln?"
+          },
+          {
+            "type": "p",
+            "text": "Die MeltPrep-Geräte und Free-D Molding wandeln Druckprototypen aus technischen Werkstoffen in Negativformen um und fertigen anschließend mittels Vakuumkompression Prototypen aus dem Zielmaterial. Sie bieten ein Mikrospritzgusswerkzeug für hochwertige Kleinserien. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "Diese beiden Unternehmenstypen verfügen über komplementäre Kompetenzen. Die Wahl zwischen Direktdruck und Masterformreplikation sollte sich nach dem Endmaterial, der benötigten Menge, der Kanalstruktur und der Qualitätskontrolle richten und nicht lediglich nach der Druckgeschwindigkeit."
+          }
+        ]
+      },
+      {
+        "title": "Patentansätze und Fertigungsschnittstellen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN112587790A und CN118061534A betreffen aktive Abgabe und Kanalherstellung bei Hohlnadelarrays. CN119606857A beschreibt ein lichthärtendes lösliches Pflaster. Lösliche Systeme erfordern Prüfungen der Freisetzung und Lagerstabilität. Bei Hohlnadeln stehen Lumendurchgängigkeit und Dichtheit im Vordergrund. [R11] [R12] [R13]"
+          }
+        ]
+      },
+      {
+        "title": "Verbindungen von Forschung und Industrie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Mechanik, Bildgebung und chemische Quantifizierung können getrennten Fertigungs- und Anwendungsschritten zugeordnet werden. So lassen sich unvollständiges Eindringen, Rückstände, Beschichtungsverluste und Verteilungsunterschiede im Gewebe unterscheiden. Die Stoffbilanz sollte an denselben Chargen geprüft werden. [R01] [R03] [R07] [R08]"
+          },
+          {
+            "type": "p",
+            "text": "Von Strukturintegrität über Hautkontakt zur Dosis vorgehen. Wirkstofffreie/Tracer-Prüfungen erkennen Spitzenbruch, Blockade und Leckage; danach Abgabe/Rückstände bei gleicher Beladung vergleichen. Arraydichte bei variierter Neigung, Kontaktierung und Druck konstant halten. Hohlrouten prüfen Durchgängigkeit/Antrieb, lösliche Routen Einbringen/Auflösung/Rückstände; beide die Integrität nach Entfernung.[R04][R05][R11][R12][R13]"
+          },
+          {
+            "type": "p",
+            "text": "Beladung in Reservoir, Kanaleintritt, Oberflächenverlust, Nadelrest und applizierte Menge zerlegen. Druck kann Flüssigkeit nur auf die Haut bringen; Verkürzung kann Auflösung außerhalb der Haut sein. Aussehen/Reservoirmasse belegen keine Abgabe. Materialpfade abgleichen und Blockade, Trägerabhebung und Kontaktvariation mit Kurven verbinden.[R01][R03][R06][R07][R11][R13]"
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Prüfaufgabe",
+              "Variablen, Kontrollen, Endpunkte und Fehlerentscheidungen"
+            ],
+            "rows": [
+              [
+                "Bearbeitung",
+                "Direktdruck und Laser-Nachbearbeitung bei gleicher Form vergleichen; Durchgängigkeit, Widerstand, Partikel und Penetrationsschäden prüfen. Mehr offene Kanäle bei geringerer Festigkeit verlangen ein neues Prozessfenster.[R04][R12]"
+              ],
+              [
+                "Antrieb",
+                "Passiv-, Druck- und Elektromodus bei gleichen Arrays vergleichen; Ausfluss, Oberflächenleckage und applizierte Menge messen. Reservoirentleerung bei Oberflächenrückhalt verlangt bessere Dichtung/Kontaktierung.[R03][R06][R11]"
+              ],
+              [
+                "Lösliche Systeme",
+                "Neue und wiederaufbereitete Träger bei gleicher Nadelschicht vergleichen; Beladung, Auflösung und Rückstände messen. Ändert Recycling Mechanik oder Rückstände, Wiederverwendung begrenzen und Abgabeschichten getrennt validieren.[R07][R08][R13]"
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Direkte Wirkstoff-/Hautteile von Replikationsvorlagen unterscheiden. Zweiphotonenvorlagen übertragen Spitzen in andere Materialien; direkte Photohärtung überträgt Prozesszustände, Laserkanäle ergänzen Oberflächen/Reinigung. Nanoscribe/Free-D über Reproduzierbarkeit, Replikationsverlust und Endprüfung vergleichen. Stumpfe Spitzen oder veränderte Kanäle verlangen Endteilmessungen.[R02][R04][R09][R10][R12]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick und Kriterien für Fortschritt",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Ein nächster Vergleich kann die Hautdosis derselben Formulierung über Chargen, Applikationsstellen und Anwender hinweg erfassen und mit Feuchte, Verformung und Anteil eingedrungener Nadeln verknüpfen. [R05] [R07] [R08]"
+          },
+          {
+            "type": "p",
+            "text": "Eine häufige Herausforderung bei den Technologien und Mikronadel besteht darin, fünf Größen miteinander zu verknüpfen: Beladungskapazität, freisetzbare Kapazität, tatsächlich eingebrachte Last, Geweberegeneration und die effektiv das Ziel erreichende Menge. Diese fünf Größen haben unterschiedliche Bezugsgrößen. Beschichtete Applikationswege können Rückstände auf der Oberfläche hinterlassen, Hohlapplikationswege können Rückfluss aufweisen und lösliche Applikationswege können Lasten im Substrat zurücklassen, die nicht in die Haut eingedrungen sind. Daher ist die Gesamtmassenbilanz bei der Auswahl eines geeigneten Applikationswegs hilfreicher als die bloße Erhöhung der Beladungsrate."
+          },
+          {
+            "type": "p",
+            "text": "Der Strukturvergleich erfordert die Unterscheidung zwischen Einzelnadel- und Array-basierten Designs. Die Schärfe einer einzelnen Nadel ermöglicht ein lokalisiertes Eindringen, während eine höhere Array-Dichte zu Hautverformungen führen und die effektive Belastung jeder einzelnen Nadel verändern kann. Ein flexibles Substrat beeinflusst die Lastverteilung zusätzlich. Daher sollte die Bewertung gleichzeitig die Belastbarkeit der Einzelnadel, die Punktionsrate des Arrays und die Verteilung der Einstichstellen berücksichtigen, um festzustellen, ob eine bestimmte Geometrie in realen Array-Anwendungen weiterhin Vorteile bietet."
+          },
+          {
+            "type": "p",
+            "text": "Die Modellhierarchie sollte entsprechend der jeweiligen Problemstellung ausgewählt werden. Homogene Membranen erleichtern das Screening und die Reproduzierbarkeit, ex vivo Haut bildet die Struktur des Stratum corneum und des Gewebes besser nach, und Tierstudien ermöglichen die Beobachtung lokaler Reaktionen und der systemischen Verteilung. Die durch verschiedene Modelle gewonnenen Erkenntnisse ergänzen sich in der Forschungskette. Die Migration von Standardmembranen zu Geweben sollte mit demselben Apparat und denselben Bewertungskriterien verglichen werden, um die Veränderungen bei zunehmender biologischer Komplexität klar zu identifizieren, anstatt Ergebnisse verschiedener Modelle direkt zusammenzuführen."
+          },
+          {
+            "type": "p",
+            "text": "Der industrielle Herstellungsprozess des lässt sich in die direkte Fertigung der finalen Nadel und die Replikation nach der Werkzeugherstellung unterteilen. Ersteres reduziert die Schritte der Geometrieübertragung, während letzteres die Auswahl an Endmaterialien erweitert und die wiederholte Replikation erleichtert. Nanoscribe nennt die Herstellung des hochauflösenden Mikronadel-Arrays und der Masterform als Anwendungsbeispiele und demonstriert damit die Unterstützung der Plattform für die Geometrieforschung. MeltPrep Free-D verbindet den Druckvorläufer mit dem Vakuumpressformen und legt den Schwerpunkt auf die Prototypenfertigung im kleinen Maßstab. [R09][R10]"
+          },
+          {
+            "type": "p",
+            "text": "Die technologische Entwicklung in Unternehmen sollte eher aufgabenorientiert als mengenorientiert betrachtet werden. Die Forschung zur Zwei-Photonen-Template-Technologie aus dem Jahr 2020 bewies, dass Geometrien wiederholt repliziert werden können; die DLP-Forschungen aus den Jahren 2021 und 2023 trieben die Fertigung in Richtung Funktionsverifizierung voran; und die Forschung zu MeltPrep aus dem Jahr 2025 wird den Replikationsweg mit spezifischen Arzneimittelverabreichungssystemen verknüpfen. Mikronadel Dies umfasst sowohl die Geräteentwicklung als auch die Zusammenarbeit in Unternehmen; aus der Verwendung ähnlicher Prozesse lässt sich nicht schließen, dass alle Veröffentlichungen zur selben Produktentwicklungskette gehören. [R02][R04][R05][R07]"
+          },
+          {
+            "type": "p",
+            "text": "Für die industrielle Skalierung sind die wichtigsten Kennzahlen die Ausbeute an qualifizierten Arrays, die Kanalöffnungsrate, die Nadelspitzengrößenverteilung, die Wirkstoffbeladungsverteilung und die Variabilität der finalen Wirkstoffabgabe. Die Druckgeschwindigkeit beschreibt nur einen Schritt; wenn Nachbearbeitung, Duplizierung, Montage oder Inspektion zum Engpass werden, führt eine Beschleunigung des Drucks möglicherweise nicht zu einer Verbesserung des Gesamtausstoßes. Die Erfassung von Fehlerstellen an einzelnen Nadeln oder Arrays ermöglicht es, zu entscheiden, ob Investitionen in Druckgenauigkeit, Werkzeugstandzeit oder Endprüfung sinnvoll sind."
+          },
+          {
+            "type": "p",
+            "text": "Die Forschungspriorität für 2027 ist die Konsistenz desselben Produkts in verschiedenen Hautmodellen und mehreren unabhängigen Chargen. Für beschichtete, lösliche oder hohle Mikronadelsysteme mit klar definiertem Verwendungszweck sollten die jeweils wichtigsten Dosisverlustwege gesondert validiert werden. Voraussetzung für eine weitere Translation sollten eine stabile tatsächlich verabreichte Dosis sowie der Erhalt der vorgesehenen Funktion von Wirkstoff und Struktur nach der Lagerung sein, nicht nur eine einzelne erfolgreiche Punktion."
+          },
+          {
+            "type": "p",
+            "text": "Eine zentrale Voraussetzung für die Markteinführung von im Jahr 2028 ist die Integration von Anwendungsmethoden und Nutzungsszenarien in das Design. Hautkrümmung, Bewegung, unterschiedliche Anwender und Kontaktzustände können die Anzahl der Array-Einträge beeinflussen; das Gerätedesign muss daher die durch diese Faktoren verursachten Schwankungen minimieren. Mithilfe von Messungen kontrollierter Änderungen kann die Empfindlichkeit des Systems gegenüber Nutzungsunterschieden untersucht und die Ergebnisse in die Wahl des Substrats, des Nadelabstands oder der Rückkopplungserkennung einfließen."
+          },
+          {
+            "type": "p",
+            "text": "Das stärkere Szenario für 2029 sieht die Entwicklung eines Evidenzpakets vor, das das tatsächliche Abgabevolumen, die lokale Gewebereaktion und die Langzeitstabilität des Produkts erklären kann und dessen Wert im Vergleich zu bestehenden Methoden in spezifischen Arzneimittelanwendungen aufzeigt. Das schwächere Szenario beinhaltet die Erhöhung der Präzision von Mikrostrukturen, wobei Fragen der Dosisabgabe und Wiederverwendbarkeit weiterhin ungeklärt bleiben. Der Unterschied zwischen den beiden Szenarien hängt davon ab, ob sich mechanistische Studien auf reale Anwendungsbereiche übertragen lassen."
+          },
+          {
+            "type": "p",
+            "text": "Zu den Forschungsprioritäten von gehört auch die systematische Analyse fehlerhafter Proben. Kanalverstopfungen, Spitzenverbiegungen, Blasenbildung und Feuchtigkeitserweichung weisen jeweils auf unterschiedliche Verbesserungsmöglichkeiten hin; wird nur das vollständigste Spektrum betrachtet, wird das Fertigungsfenster überschätzt. Die Einbeziehung fehlerhafter Proben in Struktur-, Mechanik- und Lieferprüfungen kann klären, welche Defekttypen funktionelle Bedeutung haben und somit sinnvolle Prüfprioritäten festlegen."
+          },
+          {
+            "type": "p",
+            "text": "Für vergleichende Analysen verschiedener Applikationswege sollte ein gemeinsamer, mit dem Zielwert übereinstimmender Endpunkt verwendet werden. Bei lokalen Hauterkrankungen sollte der intrazellulären Exposition und der lokalen Reaktion Priorität eingeräumt werden; bei systemischer Verabreichung sollten die Menge im Blutkreislauf und deren zeitliche Veränderungen berücksichtigt werden. Dadurch bleiben die Eigenschaften der verschiedenen Mikronadel-Typen erhalten und der praktische Nutzen wird nicht durch ein leicht messbares Freisetzungsverhältnis von in vitro ersetzt."
+          },
+          {
+            "type": "p",
+            "text": "Wiederverwendbare Forschungsergebnisse sollten auch die Prüfpositionen der Form und des Endprodukts, den Hintergrund der Gewebeprobe sowie die Schätzmethode für die tatsächliche Nadeleinführung spezifizieren. Unterschiede in den Ergebnissen verschiedener Teams, die dasselbe digitale Modell, aber unterschiedliche Gewebe- oder metrologische Definitionen verwenden, müssen nicht zwangsläufig auf die Fertigungsebene zurückzuführen sein. Die Festlegung gemeinsamer geometrischer und Dosierungsdarstellungen ermöglicht es, nachfolgende Vergleiche auf tatsächliche Material- und Wirkungsmechanismusunterschiede zu konzentrieren und redundante Prototypenentwicklungen zu reduzieren."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "3D printed microneedles for insulin skin delivery",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29555437/",
+        "year": "2018",
+        "source": "International Journal of Pharmaceutics",
+        "id": "R01"
+      },
+      {
+        "title": "Two-Photon Polymerisation 3D Printing of Microneedle Array Templates with Versatile Designs: Application in the Development of Polymeric Drug Delivery Systems",
+        "url": "https://link.springer.com/article/10.1007/s11095-020-02887-9",
+        "year": "2020",
+        "source": "Pharmaceutical Research",
+        "id": "R02"
+      },
+      {
+        "title": "A novel 3D printed hollow microneedle microelectromechanical system for controlled, personalized transdermal drug delivery",
+        "url": "https://gala.gre.ac.uk/id/eprint/30938/",
+        "year": "2020（在线）/2021",
+        "source": "Additive Manufacturing",
+        "id": "R03"
+      },
+      {
+        "title": "Optimization of Printing Parameters for Digital Light Processing 3D Printing of Hollow Microneedle Arrays",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8622592/",
+        "year": "2021",
+        "source": "Pharmaceutics",
+        "id": "R04"
+      },
+      {
+        "title": "The Effect of 3D Printing Tilt Angle on the Penetration of 3D-Printed Microneedle Arrays",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10305640/",
+        "year": "2023",
+        "source": "Micromachines",
+        "id": "R05"
+      },
+      {
+        "title": "Customized flexible hollow microneedles for psoriasis treatment with reduced-dose drug",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10354769/",
+        "year": "2023",
+        "source": "Bioengineering & Translational Medicine",
+        "id": "R06"
+      },
+      {
+        "title": "Fabrication and characterization of dissolving microneedles combining digital light processing and vacuum compression molding technique for the transdermal delivery of rivastigmine",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40043920/",
+        "year": "2025",
+        "source": "European Journal of Pharmaceutics and Biopharmaceutics",
+        "id": "R07"
+      },
+      {
+        "title": "3D-Printing-Assisted Fabrication and Characterization of Pregabalin-Loaded PVA/PVP Dissolving Microneedle Arrays",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13303589/",
+        "year": "2026",
+        "source": "Micromachines",
+        "id": "R08"
+      },
+      {
+        "title": "Explore Quantum X: microneedle microfabrication",
+        "url": "https://www.nanoscribe.com/en/campaigns/explore-quantum-x/",
+        "year": "2026（访问）",
+        "source": "Nanoscribe",
+        "id": "R09"
+      },
+      {
+        "title": "Free-D Molding",
+        "url": "https://www.meltprep.com/free-d",
+        "year": "2026（访问）",
+        "source": "MeltPrep",
+        "id": "R10"
+      },
+      {
+        "title": "Percutaneous drug pressing/ionophoresis controlled release device based on 3D printing hollow microneedle array",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN112587790A",
+        "year": 2021,
+        "source": "Espacenet",
+        "id": "R11"
+      },
+      {
+        "title": "Method for manufacturing hollow microneedle through additive and subtractive combination",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN118061534A",
+        "year": 2024,
+        "source": "Espacenet",
+        "id": "R12"
+      },
+      {
+        "title": "Recyclable photocuring 3D printed soluble microneedle patch and preparation method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119606857A",
+        "year": 2025,
+        "source": "Espacenet",
+        "id": "R13"
+      },
+      {
+        "title": "Fabrication of Hybrid Coated Microneedles with Donepezil Utilizing Digital Light Processing and Semisolid Extrusion Printing for the Management of Alzheimer's Disease.",
+        "url": "https://doi.org/10.1021/acs.molpharmaceut.4c00377",
+        "year": "2024",
+        "source": "",
+        "id": "R14"
+      },
+      {
+        "title": "Comparative Evaluation of Hydrogel Dip-Coating on Cone and Pyramid Microneedle Arrays Fabricated by LCD 3D Printing.",
+        "url": "https://doi.org/10.3390/pharmaceutics18050518",
+        "year": "2026",
+        "source": "",
+        "id": "R15"
+      },
+      {
+        "title": "3D Printing of Biodegradable Polymeric Microneedles for Transdermal Drug Delivery Applications.",
+        "url": "https://doi.org/10.3390/pharmaceutics16020237",
+        "year": "2024",
+        "source": "",
+        "id": "R16"
+      }
+    ]
+  }
+}

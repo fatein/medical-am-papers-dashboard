@@ -1,0 +1,1361 @@
+{
+  "zh": {
+    "id": "H22",
+    "p": "P7",
+    "title": "打印传感器、电极与生物电接口",
+    "subtitle": "从电极几何和组织接触走向可靠读出",
+    "thesis": "电极材料、流体传递和接触几何共同决定读出，临床相关证据需要围绕指定目标建立。分析型传感器重在选择性与基质效应，生物电接口还需检验阻抗、力学匹配和长期接触。 [R01] [R03]",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络 · 打印传感器、电极与生物电接口",
+      "summary": "从测量需求分出器件导电和界面贴合两路，随后用整机测试验证读出并回溯误差。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2025–2026",
+          "question": "比较前先固定测量对象。",
+          "title": "确定目标与参照",
+          "evidence": "应用的两个典型目标是化学物质浓度与组织电信号。评价前者需说明基质、校准和检出能力，后者需说明组织接触与信号质量。",
+          "refs": [
+            "R01",
+            "R03"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2025",
+          "question": "记录检测限所对应的基质与方法。",
+          "title": "导电材料与结构",
+          "evidence": "手术刀集成电化学单元把打印结构做成一体化小型测量单元。研究比较多种电化学测定方式，肾上腺素最低检出限达到0.13 μM，并用人工血样检查回收。",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2026",
+          "question": "保留变形前后的电学结果。",
+          "title": "贴合与生物电界面",
+          "evidence": "蜂窝仿生神经接口将几何柔顺性用于患者特异性贴合。可分别量化弯曲后的阻抗、接触面积和信号噪声，以区分材料与几何的作用。",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2022–2026",
+          "question": "测试读出应同时观察干扰与漂移。",
+          "title": "信号与分析特异性",
+          "evidence": "有机晶体管的打印传感栅与槽体内铅笔电极代表两种实现。前者把传感表面放进晶体管读出，后者将简单电极与打印结构组合。可在相同目标物与读出条件下核对界面变化。",
+          "refs": [
+            "R02",
+            "R04"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025–2026",
+          "question": "优先确认同批与跨批可重复性。",
+          "title": "整机评价",
+          "evidence": "便携系统的测量寿命受材料批次、储存、机械应变及接头影响。应用实验可围绕使用周期记录假信号、失效件和无效测量。",
+          "refs": [
+            "R01",
+            "R03"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2025–2026",
+          "question": "失效归因决定下一轮改版。",
+          "title": "报告反馈到制造",
+          "evidence": "当检测限稳定但是整体无效测量增加，应回看接触、连接与读出软件。若漂移与弯折方向相关，再核对打印层向、导电路径与封装。",
+          "refs": [
+            "R01",
+            "R03",
+            "R04"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "导电材料与结构",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "贴合与生物电界面",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "信号与分析特异性",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "信号与分析特异性",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "整机评价",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "报告反馈到制造",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "用漂移或失灵回查电极与接触",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究范围与目标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "方向覆盖打印导电结构、打印支撑件中的功能电极和贴合组织的器件。比较时先确定打印参与的是承载、导电还是样品传递，再去评价其对整个系统的作用。"
+          }
+        ]
+      },
+      {
+        "title": "学术研究脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 确定目标与参照"
+          },
+          {
+            "type": "p",
+            "text": "应用的两个典型目标是化学物质浓度与组织电信号。评价前者需说明基质、校准和检出能力，后者需说明组织接触与信号质量。 [R01] [R03]"
+          },
+          {
+            "type": "p",
+            "text": "比较前先固定测量对象。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 导电材料与结构"
+          },
+          {
+            "type": "p",
+            "text": "手术刀集成电化学单元把打印结构做成一体化小型测量单元。研究比较多种电化学测定方式，肾上腺素最低检出限达到0.13 μM，并用人工血样检查回收。 [R03]"
+          },
+          {
+            "type": "p",
+            "text": "记录检测限所对应的基质与方法。"
+          },
+          {
+            "type": "p",
+            "text": "导电复合材料让打印从装置结构进入传感界面。2022年的研究以多材料打印形成分析槽体与碳黑/PLA电极，并在模型样本中检验电化学测量。[R10] 一体化结构把电极位置、液体空间和连接方式交给共同设计。"
+          },
+          {
+            "type": "p",
+            "text": "这里的科学问题不仅是材料导电。电极表面的活性区域、基体暴露和界面状态共同影响响应；不同打印方向、批次和表面处理可能改变有效界面。研究可以把几何面积与实际电化学表现对应，解释为什么同样的外形会得到不同信号，并建立针对用途的性能检查。"
+          },
+          {
+            "type": "p",
+            "text": "与常规平面电极相比，打印有机会形成特殊空间结构和更方便的装配。但任何几何改进都需要与传质、背景和重复性一起比较。N3向N5推进时，多电极或多分析物进一步增加交互作用，研究重点便从一个电极的性能扩展到阵列的一致性和相互独立性。"
+          },
+          {
+            "type": "p",
+            "text": "电极的有效表现还受使用和保存历史影响。研究可在相同打印批次中比较新制、处理后和保存后的器件，再将表面变化与响应相接。对于导电复合材料，体相导电与表面反应需要分别理解；通过两类检查，能够更明确地决定改进配方、打印路径还是界面处理。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 贴合与生物电界面"
+          },
+          {
+            "type": "p",
+            "text": "蜂窝仿生神经接口将几何柔顺性用于患者特异性贴合。可分别量化弯曲后的阻抗、接触面积和信号噪声，以区分材料与几何的作用。 [R01]"
+          },
+          {
+            "type": "p",
+            "text": "保留变形前后的电学结果。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 信号与分析特异性"
+          },
+          {
+            "type": "p",
+            "text": "有机晶体管的打印传感栅与槽体内铅笔电极代表两种实现。前者把传感表面放进晶体管读出，后者将简单电极与打印结构组合。可在相同目标物与读出条件下核对界面变化。 [R02] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "测试读出应同时观察干扰与漂移。"
+          },
+          {
+            "type": "p",
+            "text": "便携读出将传感器与电子或光学测量共同组织。2025年的打印电化学发光平台以葡萄糖和乳酸为对象，展示同一装置中的多分析物检测，并使用血清样本进行评价。[R11] 研究把结构、电极、反应与读出连接为一个系统。"
+          },
+          {
+            "type": "p",
+            "text": "便携化后的性能应在系统尺度重新评价。电源、读出位置、环境光、温度和数据处理都可能影响信号；缩小体积还可能改变液体操作和反应空间。与台式配置比较时，研究需要说明哪些模块保持、哪些被替换，才能将差异归因于具体变化。"
+          },
+          {
+            "type": "p",
+            "text": "这一节点体现企业协作的实际空间。打印材料与器件团队可以提供结构和电极，电子读出团队提供稳定测量，应用团队定义样本与流程。若接口清楚，各方可以围绕同一参考样本进行迭代。下一步重点是把系统状态与检测结果一起记录，方便发现异常并恢复工作。"
+          },
+          {
+            "type": "p",
+            "text": "便携系统应同时观察原始信号与最终计算结果。环境变化可能影响原始测量，算法也可能改变校准表现。保留两层数据能够解释问题发生在哪里，并支持不同读出模块的公平比较。对于手机或便携设备连接，接口稳定和数据保存也应成为完整实验的一部分。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 整机评价"
+          },
+          {
+            "type": "p",
+            "text": "便携系统的测量寿命受材料批次、储存、机械应变及接头影响。应用实验可围绕使用周期记录假信号、失效件和无效测量。 [R01] [R03]"
+          },
+          {
+            "type": "p",
+            "text": "优先确认同批与跨批可重复性。"
+          },
+          {
+            "type": "p",
+            "text": "采样与检测之间仍可能存在多次人工处理。2026年的唾液尿酸平台将采样、液体处理和电化学检测共同设计，并以尿酸测量展示系统功能。[R12] 打印结构通过固定空间关系减少独立装配和样本操作。"
+          },
+          {
+            "type": "p",
+            "text": "从研究问题看，采样是检测链中的重要输入变量。样本体积、进入位置、与反应区的接触以及混合程度，都会影响信号。将这些步骤放入几何结构后，可以用标准化操作检查系统是否维持预期条件，再通过不同使用者和样本情况检验操作的稳定性。"
+          },
+          {
+            "type": "p",
+            "text": "该节点将评价重点推向总流程。一次测量的成功需要采样、处理、传感和读出共同工作，因而可以记录每一阶段的失败类型及其后果。对企业而言，这种记录有助于优化使用界面和制造检查；对学术而言，它使“集成”成为可以通过操作与输出验证的具体研究问题。"
+          },
+          {
+            "type": "p",
+            "text": "采样结构可以通过不同操作情形检验，而不只使用理想加入方式。少量体积变化、位置偏移和等待时间都可能影响反应开始。把这些情形与结果对应，能够找到对使用者最敏感的步骤，并通过几何引导、状态提示或流程简化降低操作差异。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 报告反馈到制造"
+          },
+          {
+            "type": "p",
+            "text": "当检测限稳定但是整体无效测量增加，应回看接触、连接与读出软件。若漂移与弯折方向相关，再核对打印层向、导电路径与封装。 [R01] [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "失效归因决定下一轮改版。"
+          }
+        ]
+      },
+      {
+        "title": "研究之间如何比较",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "比较分析设备时，先对齐目标物、基质、工作范围与判废规则。接口研究应对齐接触时间、应变、稳定性及刺激或采集任务。"
+          }
+        ]
+      },
+      {
+        "title": "企业路线与公开产品",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "产业链中 Proto-pasta 提供导电 PLA，PalmSens 提供微型电化学读出。分别建立耗材批次、导电稳定性和读出仪器的技术档案，再测试系统能否在不同操作员间重现。 [R08] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "值得关注的产品变化是技术包逐渐完整：除硬件外，开始需要材料批次、界面处理、校准文件、数据接口和操作支持。完整交付使研究者能够把精力集中在目标识别和样本问题，也使企业有机会积累可重复应用知识。"
+          },
+          {
+            "type": "p",
+            "text": "Formlabs的微流控制造资料对应器件加工环节，PalmSens的Sensit Smart则对应电化学读出环节。[R13][R09] 将两类能力接入同一应用时，关键工作是定义电极连接、样本空间和数据输出。应用团队可以先用共同参考样本验证接口，再逐步加入真实样本和使用者操作，使系统构建具有清楚的阶段目标。"
+          },
+          {
+            "type": "p",
+            "text": "对于材料供应商，下一步产品目标可以是更完整的批次资料与应用测试：哪些加工状态与界面处理能够形成稳定响应，哪些变化需要重新校准。对于读出供应商，重点可以是简便连接、原始数据导出与设备状态记录。对于器件制造者，重点则是反应空间和样本操作的一致性。三者各自解决一个环节，又共同影响最终结果。"
+          },
+          {
+            "type": "p",
+            "text": "评价合作成果时，可以观察是否形成持续使用的参考装置、是否能够追踪跨批差异，以及使用者能否在问题出现时定位到材料、结构或读出。这样的进展说明平台正在积累可复用知识。它也使后续拓展新分析物时，可以保留已验证的共用模块，将研发集中到新的识别与样本问题上。"
+          }
+        ]
+      },
+      {
+        "title": "专利机制与转化验证",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN116656595A面向微组织电化学信号，CN220109746U将打印用于家用心电电极定位，CN120284564A将反馈用于矫形器控制。三者分别对应组织响应、定位重复性与闭环控制。 [R05] [R06] [R07]"
+          },
+          {
+            "type": "p",
+            "text": "拟开展电极比较应固定分析任务与槽体，比较商业参考电极、导电PLA电极和专利修饰界面，测量背景、漂移、重复性、干扰与批次差异，并用独立参考方法测定目标。Protopasta材料的打印方向和有效暴露面积应与后处理记录关联；PalmSens读出需以参考仪器核对。若信号增强伴随背景同幅上升，应先改进界面或校准；只有总误差与批次稳定满足用途要求，才推进完整流程。[R10][R08][R09][R06][R14]"
+          },
+          {
+            "type": "p",
+            "text": "组织传感方案需要设置无组织电极、未刺激组织、参考刺激与样本背景对照，区分电极直接响应、基础细胞状态和目标刺激的贡献。固定组织来源与模型版本，记录反应时程和重复批次，并核对报告分子。若样本自身产生信号或不同组织状态造成更大波动，应先解决背景和一致性；若分离后仍能稳定区分指定刺激，再评估食品检测场景，不将结论扩展到临床诊断。[R10][R09][R06][R14][R15]"
+          }
+        ]
+      },
+      {
+        "title": "后续研究与应用走向",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "后续可关注标准化电极接头、贴合状态下的连续信号与成品可校准性。观察指标包括批间方差、弯折后的信号保持、无效测量率及与参照方法的符合度。 [R01] [R03] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "3D-Printable, Honeycomb-Inspired Tissue-Like Bioelectrodes for Patient-Specific Neural Interface.",
+        "url": "https://doi.org/10.1002/adma.202516291",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R01"
+      },
+      {
+        "title": "A large-area organic transistor with 3D-printed sensing gate for noninvasive single-molecule detection of pancreatic mucinous cyst markers.",
+        "url": "https://doi.org/10.1007/s00216-022-04040-4",
+        "year": "2022",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R02"
+      },
+      {
+        "title": "Lab-on-a-Scalpel: Medical Tool Incorporating a Disposable Fully 3D-Printed Electrochemical Cell Promoting Drop-Volume Chemical Analysis in the Operating Theater.",
+        "url": "https://doi.org/10.1021/acs.analchem.5c00599",
+        "year": "2025",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R03"
+      },
+      {
+        "title": "Pencil-Drawn Electrode within Additively Manufactured Devices for Uric Acid Detection.",
+        "url": "https://doi.org/10.1021/acsomega.6c02346",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R04"
+      },
+      {
+        "title": "Intelligent lower limb orthosis based on bimodal biofeedback and cooperative control system",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120284564A",
+        "year": "2025",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R05"
+      },
+      {
+        "title": "Bionic blood vessel micro-tissue electrochemical sensor as well as preparation method and application thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN116656595A",
+        "year": "2023",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R06"
+      },
+      {
+        "title": "Household electrocardiogram electrode positioning assistive device based on 3D printing",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN220109746U",
+        "year": "2023",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R07"
+      },
+      {
+        "title": "Conductive PLA",
+        "url": "https://proto-pasta.com/pages/conductive-pla",
+        "year": "",
+        "kind": "企业公告",
+        "source": "企业公告",
+        "id": "R08"
+      },
+      {
+        "title": "Sensit Smart",
+        "url": "https://assets.palmsens.com/product/sensit-smart/",
+        "year": "",
+        "kind": "企业公告",
+        "source": "企业公告",
+        "id": "R09"
+      },
+      {
+        "id": "R10",
+        "title": "3D-printed electrochemical platform with multi-purpose carbon black sensing electrodes",
+        "year": "2022",
+        "source": "Microchimica Acta",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9142345/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R11",
+        "title": "Portable 3D-printed electrochemiluminescence sensor for simultaneous glucose and lactate monitoring",
+        "year": "2025",
+        "source": "Scientific Reports",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12494991/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R12",
+        "title": "Fully 3D-Printed Sampling-to-Detection Electrochemical Platform for Point-of-Care Measurement of Salivary Uric Acid",
+        "year": "2026",
+        "source": "ACS Measurement Science Au",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13281170/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R13",
+        "title": "Guide to Microfluidics and Millifluidics, and Lab-on-a-Chip Manufacturing",
+        "year": "现行技术资料",
+        "source": "Formlabs",
+        "url": "https://formlabs.com/blog/microfluidics-millifluidics-lab-on-a-chip-manufacturing/",
+        "kind": "企业技术资料"
+      },
+      {
+        "id": "R14",
+        "title": "Bionic skin micro-tissue electrochemical sensor as well as preparation method and application thereof",
+        "year": "2024",
+        "source": "Espacenet",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN118032895A",
+        "kind": "patent"
+      },
+      {
+        "id": "R15",
+        "title": "Bionic liver micro-tissue micro-nano channel electrochemical sensor and preparation and application thereof",
+        "year": "2024",
+        "source": "Espacenet",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN118883679A",
+        "kind": "patent"
+      }
+    ]
+  },
+  "en": {
+    "id": "H22",
+    "p": "P7",
+    "title": "Printed sensors, electrodes and bioelectronic interfaces",
+    "subtitle": "From electrode geometry and tissue contact to dependable readout",
+    "thesis": "Material, transport and contact geometry jointly shape readout. Analytical sensors emphasize selectivity and matrix effects. Bioelectronic interfaces also need impedance, mechanical matching and long-term contact assessment. [R01] [R03]",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway · Printed sensors, electrodes and bioelectronic interfaces",
+      "summary": "Measurement needs branch into conduction and interface fit. Integrated testing verifies readout and locates error.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2025–2026",
+          "question": "Fix the measurement target before comparison.",
+          "title": "Set target and comparator",
+          "evidence": "Chemical concentration and tissue electrical signals illustrate two measurement goals. The former needs matrix, calibration and detection performance, the latter contact and signal quality.",
+          "refs": [
+            "R01",
+            "R03"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2025",
+          "question": "Match detection limit to matrix and method.",
+          "title": "Conductor and structure",
+          "evidence": "A scalpel-integrated electrochemical cell combined printed components into a compact measurement cell. The study compared electrochemical methods, reporting a best epinephrine detection limit of 0.13 μM and testing recovery in artificial blood.",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2026",
+          "question": "Retain electrical results before and after deformation.",
+          "title": "Conformity and bioelectronic contact",
+          "evidence": "A honeycomb-inspired neural interface uses geometry to bring compliance and patient-specific conformity. Impedance after bending, contact area and noise can distinguish material from geometric effects.",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2022–2026",
+          "question": "Examine interference and drift as well as signal.",
+          "title": "Signal and analytical specificity",
+          "evidence": "A printed sensing gate for an organic transistor and a pencil-drawn electrode in a printed device represent different implementations. One places the sensing surface in transistor readout, the other combines a simple conductor and a printed geometry. Compare interface changes at matched target and readout.",
+          "refs": [
+            "R02",
+            "R04"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025–2026",
+          "question": "Check within-lot and between-lot reproducibility.",
+          "title": "System evaluation",
+          "evidence": "Portable systems depend on lot, storage, deformation and connectors. Application tests can log spurious signals, failed units and invalid readings over a use cycle.",
+          "refs": [
+            "R01",
+            "R03"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2025–2026",
+          "question": "Failure attribution guides the next revision.",
+          "title": "Feed performance into manufacturing",
+          "evidence": "If the detection limit is stable but invalid measurements increase, inspect contact, connectors and readout software. Drift correlated with bend direction warrants reviewing layer orientation, conductor path and encapsulation.",
+          "refs": [
+            "R01",
+            "R03",
+            "R04"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Conductor and structure",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Conformity and bioelectronic contact",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Signal and analytical specificity",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Signal and analytical specificity",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "System evaluation",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Feed performance into manufacturing",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Trace drift and failed readings to electrodes and contact",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Scope and objectives",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The direction covers printed conductors, functional electrodes in printed housings and tissue-conforming devices. Identify whether printing provides support, conductivity or transport before evaluating its system-level role."
+          }
+        ]
+      },
+      {
+        "title": "Academic pathway and interpretation",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Set target and comparator"
+          },
+          {
+            "type": "p",
+            "text": "Chemical concentration and tissue electrical signals illustrate two measurement goals. The former needs matrix, calibration and detection performance, the latter contact and signal quality. [R01] [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Fix the measurement target before comparison."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Conductor and structure"
+          },
+          {
+            "type": "p",
+            "text": "A scalpel-integrated electrochemical cell combined printed components into a compact measurement cell. The study compared electrochemical methods, reporting a best epinephrine detection limit of 0.13 μM and testing recovery in artificial blood. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Match detection limit to matrix and method."
+          },
+          {
+            "type": "p",
+            "text": "Conductive composite materials allow printing to move from the device structure to the sensing interface. A 2022 study used multi-material printing to form analytical tanks and carbon black/PLA electrodes, and verified electrochemical measurements in model samples. [R10] The integrated structure allows for collaborative design of electrode placement, liquid space, and connectivity."
+          },
+          {
+            "type": "p",
+            "text": "The scientific questions here extend beyond material conductivity. The active regions on the electrode surface, substrate exposure, and interfacial states all influence the response; different printing orientations, batches, and surface treatments can alter the effective interface. Research can correlate geometric areas with actual electrochemical performance, explaining why the same shape yields different signals, and establishing performance checks for specific applications."
+          },
+          {
+            "type": "p",
+            "text": "Compared with conventional planar electrodes, printing offers the opportunity to create unique spatial structures and facilitates assembly. However, any geometric improvements need to be compared with mass transfer, background, and repeatability."
+          },
+          {
+            "type": "p",
+            "text": "The effective performance of the electrode is also affected by its usage and storage history. Studies can compare newly fabricated, treated, and stored devices within the same printing batch, and then correlate surface changes with the response. For conductive composite materials, bulk conductivity and surface reaction need to be understood separately; through these two types of checks, it is possible to more clearly determine whether to improve the formulation, printing path, or interface treatment."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Conformity and bioelectronic contact"
+          },
+          {
+            "type": "p",
+            "text": "A honeycomb-inspired neural interface uses geometry to bring compliance and patient-specific conformity. Impedance after bending, contact area and noise can distinguish material from geometric effects. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Retain electrical results before and after deformation."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Signal and analytical specificity"
+          },
+          {
+            "type": "p",
+            "text": "A printed sensing gate for an organic transistor and a pencil-drawn electrode in a printed device represent different implementations. One places the sensing surface in transistor readout, the other combines a simple conductor and a printed geometry. Compare interface changes at matched target and readout. [R02] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Examine interference and drift as well as signal."
+          },
+          {
+            "type": "p",
+            "text": "The portable readout integrates sensors with electronic or optical measurements. A 2025 printed electrochemiluminescence platform, using glucose and lactate as examples, demonstrates multi-analyte detection in the same device and is evaluated using serum samples. The study connects structure, electrodes, reactions, and readout into a single system. [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Performance after miniaturization for portable use should be re-evaluated at the system scale. Power supply, readout location, ambient light, temperature, and data processing can all affect the signal; reducing size may also alter liquid handling and reaction space. When comparing with a benchtop configuration, studies need to specify which modules remain and which have been replaced to attribute the differences to specific changes."
+          },
+          {
+            "type": "p",
+            "text": "This node embodies the practical scope of enterprise collaboration. The printing materials and devices team can provide the structure and electrodes, the electronic readout team can provide stable measurements, and the application team can define the samples and processes. If the interfaces are clear, all parties can iterate around the same reference sample. The next key step is to record the system status and test results together to facilitate the detection of anomalies and the restoration of operations."
+          },
+          {
+            "type": "p",
+            "text": "The portable system should simultaneously observe both the raw signal and the final calculated result. Environmental changes may affect the raw measurement, and the algorithm may also alter calibration performance. Retaining both layers of data allows for explanation of where problems occur and supports fair comparisons between different readout modules. For mobile phone or portable device connections, interface stability and data retention should also be part of the complete experiment."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · System evaluation"
+          },
+          {
+            "type": "p",
+            "text": "Portable systems depend on lot, storage, deformation and connectors. Application tests can log spurious signals, failed units and invalid readings over a use cycle. [R01] [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Check within-lot and between-lot reproducibility."
+          },
+          {
+            "type": "p",
+            "text": "Multiple manual processes may still occur between sampling and detection. The 2026 salivary uric acid platform integrates sampling, liquid handling, and electrochemical detection, demonstrating system functionality through uric acid measurement. [R12] The printed structure reduces independent assembly and sample handling through fixed spatial relationships."
+          },
+          {
+            "type": "p",
+            "text": "From the perspective of the research question, sampling is a crucial input variable in the detection chain. Sample volume, entry point, contact with the reaction zone, and degree of mixing all affect the signal. By incorporating these steps into the geometry, standardized procedures can be used to check whether the system maintains the expected conditions, and then the stability of the operation can be verified through different users and sample conditions."
+          },
+          {
+            "type": "p",
+            "text": "This node shifts the evaluation focus to the overall process. A successful measurement requires the coordinated work of sampling, processing, sensing, and readout, thus allowing for the recording of failure types and their consequences at each stage. For businesses, this recording helps optimize user interfaces and manufacturing checks; for academia, it makes \"integration\" a concrete research question that can be verified through operation and output."
+          },
+          {
+            "type": "p",
+            "text": "The sampling structure can be tested under various operating conditions, rather than relying solely on the ideal addition method. Small volume variations, positional shifts, and waiting times can all affect reaction initiation. Corresponding these conditions to the results allows us to identify the steps most sensitive to the user and reduce operational variability through geometric guidance, status indicators, or process simplification."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Feed performance into manufacturing"
+          },
+          {
+            "type": "p",
+            "text": "If the detection limit is stable but invalid measurements increase, inspect contact, connectors and readout software. Drift correlated with bend direction warrants reviewing layer orientation, conductor path and encapsulation. [R01] [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Failure attribution guides the next revision."
+          }
+        ]
+      },
+      {
+        "title": "Comparing the evidence",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Compare analytical devices at matched analyte, matrix, working range and invalid-run criteria. For interfaces, match contact time, strain, stability and stimulation or recording task."
+          }
+        ]
+      },
+      {
+        "title": "Industry approaches and documented products",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Proto-pasta supplies conductive PLA and PalmSens miniaturized electrochemical readout. Record material lots, electrical stability and instruments separately, then test reproducibility across operators. [R08] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "A noteworthy product change is the increasingly complete technology package: in addition to hardware, it now requires material batches, interface processing, calibration documentation, data interfaces, and operational support. This complete delivery allows researchers to focus on target identification and sample issues, while also giving companies the opportunity to accumulate reusable knowledge."
+          },
+          {
+            "type": "p",
+            "text": "Formlabs’ microfluidic manufacturing information addresses device fabrication, while PalmSens’ Sensit Smart addresses electrochemical readout.[R13][R09] Integrating them requires defined electrode connections, sample spaces and data outputs. Application teams can validate interfaces with shared reference samples, then introduce real samples and user handling to establish clear development stages."
+          },
+          {
+            "type": "p",
+            "text": "For material suppliers, the next product goal could be more complete batch data and application testing: which processing states and interface treatments produce stable responses, and which changes require recalibration. For readout suppliers, the focus could be on easy connectivity, raw data export, and device status logging. For device manufacturers, the focus is on reaction space and consistency of sample operations. Each of these three addresses a specific aspect, yet they collectively influence the final result."
+          },
+          {
+            "type": "p",
+            "text": "When evaluating the collaborative results, one can observe whether a continuously usable reference device has been formed, whether cross-batch differences can be tracked, and whether users can pinpoint materials, structures, or readouts when problems arise. Such progress indicates that the platform is accumulating reusable knowledge. It also allows for the retention of validated shared modules when expanding to new analytes, enabling research and development to focus on new identification and sample-related issues."
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and translational testing",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN116656595A covers electrochemical signals in microtissue, CN220109746U uses printing to position home ECG electrodes, and CN120284564A addresses biofeedback in an orthosis. They motivate tests of tissue response, placement repeatability and closed-loop performance. [R05] [R06] [R07]"
+          },
+          {
+            "type": "p",
+            "text": "Electrode comparisons would hold assay and chamber fixed across commercial references, conductive PLA and patent-modified interfaces, measuring background, drift, repeatability, interference and batches against independent reference methods. PLA orientation, exposed area and postprocessing remain linked; PalmSens readings would be checked against reference instrumentation. Signal and background rising together trigger interface/calibration revision; total error and batch stability gate whole-workflow evaluation. [R10][R08][R09][R06][R14]"
+          },
+          {
+            "type": "p",
+            "text": "Tissue sensors need electrode-only, unstimulated-tissue, reference-stimulus and sample-background controls to separate direct electrode response, baseline cell state and stimulus effects. Fixed tissue sources/versions accompany response timing, batches and reporter confirmation. Sample-generated signals or dominant tissue-state variation trigger background/consistency work; reproducible discrimination then supports evaluation in the specified food-testing setting. [R10][R09][R06][R14][R15]"
+          }
+        ]
+      },
+      {
+        "title": "Research and adoption outlook",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Future work can focus on standardized electrode connectors, continuous signals under contact and calibration of assembled devices. Track batch variance, signal retention after bending, invalid runs and reference agreement. [R01] [R03] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "3D-Printable, Honeycomb-Inspired Tissue-Like Bioelectrodes for Patient-Specific Neural Interface.",
+        "url": "https://doi.org/10.1002/adma.202516291",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R01"
+      },
+      {
+        "title": "A large-area organic transistor with 3D-printed sensing gate for noninvasive single-molecule detection of pancreatic mucinous cyst markers.",
+        "url": "https://doi.org/10.1007/s00216-022-04040-4",
+        "year": "2022",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R02"
+      },
+      {
+        "title": "Lab-on-a-Scalpel: Medical Tool Incorporating a Disposable Fully 3D-Printed Electrochemical Cell Promoting Drop-Volume Chemical Analysis in the Operating Theater.",
+        "url": "https://doi.org/10.1021/acs.analchem.5c00599",
+        "year": "2025",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R03"
+      },
+      {
+        "title": "Pencil-Drawn Electrode within Additively Manufactured Devices for Uric Acid Detection.",
+        "url": "https://doi.org/10.1021/acsomega.6c02346",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R04"
+      },
+      {
+        "title": "Intelligent lower limb orthosis based on bimodal biofeedback and cooperative control system",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120284564A",
+        "year": "2025",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R05"
+      },
+      {
+        "title": "Bionic blood vessel micro-tissue electrochemical sensor as well as preparation method and application thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN116656595A",
+        "year": "2023",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R06"
+      },
+      {
+        "title": "Household electrocardiogram electrode positioning assistive device based on 3D printing",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN220109746U",
+        "year": "2023",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R07"
+      },
+      {
+        "title": "Conductive PLA",
+        "url": "https://proto-pasta.com/pages/conductive-pla",
+        "year": "",
+        "kind": "Company announcement",
+        "source": "Company announcement",
+        "id": "R08"
+      },
+      {
+        "title": "Sensit Smart",
+        "url": "https://assets.palmsens.com/product/sensit-smart/",
+        "year": "",
+        "kind": "Company announcement",
+        "source": "Company announcement",
+        "id": "R09"
+      },
+      {
+        "id": "R10",
+        "title": "3D-printed electrochemical platform with multi-purpose carbon black sensing electrodes",
+        "year": "2022",
+        "source": "Microchimica Acta",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9142345/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R11",
+        "title": "Portable 3D-printed electrochemiluminescence sensor for simultaneous glucose and lactate monitoring",
+        "year": "2025",
+        "source": "Scientific Reports",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12494991/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R12",
+        "title": "Fully 3D-Printed Sampling-to-Detection Electrochemical Platform for Point-of-Care Measurement of Salivary Uric Acid",
+        "year": "2026",
+        "source": "ACS Measurement Science Au",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13281170/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R13",
+        "title": "Guide to Microfluidics and Millifluidics, and Lab-on-a-Chip Manufacturing",
+        "year": "现行技术资料",
+        "source": "Formlabs",
+        "url": "https://formlabs.com/blog/microfluidics-millifluidics-lab-on-a-chip-manufacturing/",
+        "kind": "企业技术资料"
+      },
+      {
+        "id": "R14",
+        "title": "Bionic skin micro-tissue electrochemical sensor as well as preparation method and application thereof",
+        "year": "2024",
+        "source": "Espacenet",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN118032895A",
+        "kind": "patent"
+      },
+      {
+        "id": "R15",
+        "title": "Bionic liver micro-tissue micro-nano channel electrochemical sensor and preparation and application thereof",
+        "year": "2024",
+        "source": "Espacenet",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN118883679A",
+        "kind": "patent"
+      }
+    ]
+  },
+  "de": {
+    "id": "H22",
+    "p": "P7",
+    "title": "Gedruckte Sensoren, Elektroden und bioelektronische Schnittstellen",
+    "subtitle": "Von Elektrodengeometrie und Gewebekontakt zur zuverlässigen Auslesung",
+    "thesis": "Material, Stofftransport und Kontaktgeometrie beeinflussen das Auslesen gemeinsam. Analytische Sensoren erfordern Selektivität und Betrachtung von Matrixeffekten. Bioelektronische Schnittstellen benötigen zusätzlich Impedanz, mechanische Anpassung und Langzeitkontakt. [R01] [R03]",
+    "questions": [],
+    "graph": {
+      "title": "Forschungsverlauf · Gedruckte Sensoren, Elektroden und bioelektronische Schnittstellen",
+      "summary": "Aus der Messaufgabe folgen getrennte Pfade für Leitfähigkeit und Kontaktpassung. Die Systemprüfung bewertet das Signal und lokalisiert Abweichungen.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2025–2026",
+          "question": "Messziel vor dem Vergleich festlegen.",
+          "title": "Ziel und Referenz festlegen",
+          "evidence": "Chemische Konzentration und elektrische Gewebesignale stehen für zwei Messziele. Erstere benötigt Matrix, Kalibrierung und Nachweisleistung, letztere Kontakt- und Signalqualität.",
+          "refs": [
+            "R01",
+            "R03"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2025",
+          "question": "Nachweisgrenze der Matrix und Methode zuordnen.",
+          "title": "Leitermaterial und Struktur",
+          "evidence": "Eine in ein Skalpell integrierte elektrochemische Zelle verband Druckteile zu einem kompakten Messzelle. Die Studie verglich elektrochemische Verfahren, berichtete eine beste Adrenalin-Nachweisgrenze von 0,13 µM und prüfte die Wiederfindung in künstlichem Blut.",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2026",
+          "question": "Elektrische Befunde vor und nach Verformung dokumentieren.",
+          "title": "Anpassung und bioelektronischer Kontakt",
+          "evidence": "Eine wabenartige neuronale Schnittstelle nutzt Geometrie für Nachgiebigkeit und patientenspezifische Anpassung. Impedanz nach Biegung, Kontaktfläche und Rauschen können Material- und Geometrieeffekte trennen.",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2022–2026",
+          "question": "Störungen und Drift zusätzlich zum Signal erfassen.",
+          "title": "Signal und analytische Spezifität",
+          "evidence": "Ein gedrucktes Sensorgate am organischen Transistor und eine Bleistiftelektrode im Druckgehäuse sind verschiedene Umsetzungen. Ersteres integriert die Sensoroberfläche in den Transistor, letztere verbindet einen einfachen Leiter mit der Druckgeometrie. Grenzflächen sind bei gleichem Analyten und Auslesen zu vergleichen.",
+          "refs": [
+            "R02",
+            "R04"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025–2026",
+          "question": "Wiederholbarkeit innerhalb und zwischen Chargen prüfen.",
+          "title": "Systemprüfung",
+          "evidence": "Tragbare Systeme hängen von Charge, Lagerung, Verformung und Anschlüssen ab. Anwendungstests erfassen Fehlsignale, ausgefallene Bauteile und ungültige Messungen über den Nutzungszyklus.",
+          "refs": [
+            "R01",
+            "R03"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2025–2026",
+          "question": "Fehlerzuordnung bestimmt die nächste Revision.",
+          "title": "Messergebnisse in die Fertigung zurückführen",
+          "evidence": "Bleibt die Nachweisgrenze stabil und steigen ungültige Messungen, sind Kontakt, Anschlüsse und Auslesesoftware zu prüfen. Richtungsabhängige Drift beim Biegen weist auf Schichtorientierung, Leiterpfad oder Kapselung hin.",
+          "refs": [
+            "R01",
+            "R03",
+            "R04"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Leitermaterial und Struktur",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Anpassung und bioelektronischer Kontakt",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Signal und analytische Spezifität",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Signal und analytische Spezifität",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Systemprüfung",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Messergebnisse in die Fertigung zurückführen",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Drift und Ausfälle auf Elektrode und Kontakt zurückführen",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Untersuchungsrahmen und Ziele",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Die Richtung umfasst gedruckte Leiter, funktionelle Elektroden in Druckgehäusen und gewebeangepasste Bauteile. Zunächst ist zu klären, ob der Druck Träger, Leiter oder Transport bereitstellt."
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Einordnung der Einzelschritte",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Ziel und Referenz festlegen"
+          },
+          {
+            "type": "p",
+            "text": "Chemische Konzentration und elektrische Gewebesignale stehen für zwei Messziele. Erstere benötigt Matrix, Kalibrierung und Nachweisleistung, letztere Kontakt- und Signalqualität. [R01] [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Messziel vor dem Vergleich festlegen."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Leitermaterial und Struktur"
+          },
+          {
+            "type": "p",
+            "text": "Eine in ein Skalpell integrierte elektrochemische Zelle verband Druckteile zu einem kompakten Messzelle. Die Studie verglich elektrochemische Verfahren, berichtete eine beste Adrenalin-Nachweisgrenze von 0,13 µM und prüfte die Wiederfindung in künstlichem Blut. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Nachweisgrenze der Matrix und Methode zuordnen."
+          },
+          {
+            "type": "p",
+            "text": "Leitfähige Verbundwerkstoffe ermöglichen es, den Druckprozess von der Gerätestruktur auf die Sensorschnittstelle auszudehnen. Eine Studie aus dem Jahr 2022 nutzte den Multimaterialdruck zur Herstellung von Analysetanks und Ruß/PLA-Elektroden und verifizierte elektrochemische Messungen an Modellproben. [R10] Die integrierte Struktur erlaubt die gemeinsame Entwicklung von Elektrodenplatzierung, Flüssigkeitsraum und Konnektivität."
+          },
+          {
+            "type": "p",
+            "text": "Die wissenschaftlichen Fragestellungen reichen hier über die Materialleitfähigkeit hinaus. Die aktiven Bereiche auf der Elektrodenoberfläche, die Substratexposition und die Grenzflächenzustände beeinflussen das Ansprechverhalten; unterschiedliche Druckorientierungen, Chargen und Oberflächenbehandlungen können die effektive Grenzfläche verändern. Die Forschung kann geometrische Bereiche mit der tatsächlichen elektrochemischen Leistung korrelieren, erklären, warum dieselbe Form unterschiedliche Signale erzeugt, und Leistungsprüfungen für spezifische Anwendungen etablieren."
+          },
+          {
+            "type": "p",
+            "text": "Gegenüber herkömmlichen planaren Elektroden kann der Druck besondere räumliche Strukturen und einfachere Montage ermöglichen. Geometrische Änderungen müssen jedoch zusammen mit Stofftransport, Hintergrund und Wiederholbarkeit geprüft werden."
+          },
+          {
+            "type": "p",
+            "text": "Die Leistungsfähigkeit der Elektrode wird auch durch ihre Nutzungs- und Lagergeschichte beeinflusst. Studien können neu hergestellte, behandelte und gelagerte Bauteile aus derselben Druckcharge vergleichen und Oberflächenveränderungen mit der Reaktion korrelieren. Bei leitfähigen Verbundwerkstoffen müssen die Volumenleitfähigkeit und die Oberflächenreaktion getrennt betrachtet werden; durch diese beiden Arten von Untersuchungen lässt sich genauer bestimmen, ob die Rezeptur, der Druckprozess oder die Grenzflächenbehandlung verbessert werden müssen."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Anpassung und bioelektronischer Kontakt"
+          },
+          {
+            "type": "p",
+            "text": "Eine wabenartige neuronale Schnittstelle nutzt Geometrie für Nachgiebigkeit und patientenspezifische Anpassung. Impedanz nach Biegung, Kontaktfläche und Rauschen können Material- und Geometrieeffekte trennen. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Elektrische Befunde vor und nach Verformung dokumentieren."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Signal und analytische Spezifität"
+          },
+          {
+            "type": "p",
+            "text": "Ein gedrucktes Sensorgate am organischen Transistor und eine Bleistiftelektrode im Druckgehäuse sind verschiedene Umsetzungen. Ersteres integriert die Sensoroberfläche in den Transistor, letztere verbindet einen einfachen Leiter mit der Druckgeometrie. Grenzflächen sind bei gleichem Analyten und Auslesen zu vergleichen. [R02] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Störungen und Drift zusätzlich zum Signal erfassen."
+          },
+          {
+            "type": "p",
+            "text": "Das tragbare Auslesegerät integriert Sensoren mit elektronischen oder optischen Messverfahren. Eine gedruckte Elektrochemilumineszenz-Plattform (2025) demonstriert anhand von Glukose und Laktat die Detektion mehrerer Analyten im selben Gerät und wird mit Serumproben evaluiert. [R11] Die Studie verbindet Struktur, Elektroden, Reaktionen und Ausleseverfahren zu einem einzigen System."
+          },
+          {
+            "type": "p",
+            "text": "Nach der Entwicklung einer tragbaren Ausführung muss die Leistung auf Systemebene erneut geprüft werden. Stromversorgung, Messposition, Umgebungslicht, Temperatur und Datenverarbeitung können Signale verändern; kleinere Abmessungen beeinflussen möglicherweise auch Flüssigkeitshandhabung und Reaktionsraum. Vergleiche mit Tischsystemen müssen beibehaltene und ersetzte Module benennen, um Unterschiede konkreten Änderungen zuordnen zu können."
+          },
+          {
+            "type": "p",
+            "text": "Dieser Knotenpunkt verdeutlicht den praktischen Anwendungsbereich der unternehmensweiten Zusammenarbeit. Das Team für Druckmaterialien und -geräte stellt die Struktur und Elektroden bereit, das Team für elektronische Auslesegeräte liefert stabile Messwerte und das Anwendungsteam definiert die Proben und Prozesse. Bei klar definierten Schnittstellen können alle Beteiligten anhand derselben Referenzprobe iterativ arbeiten. Der nächste wichtige Schritt ist die gemeinsame Erfassung des Systemstatus und der Testergebnisse, um die Erkennung von Anomalien und die Wiederherstellung des Betriebs zu erleichtern."
+          },
+          {
+            "type": "p",
+            "text": "Tragbare Systeme sollten Rohsignale und berechnete Ergebnisse gemeinsam erfassen. Umweltänderungen können die Messung beeinflussen, Algorithmen die Kalibrierung. Beide Datenebenen zu erhalten, hilft bei der Ursachenanalyse und beim fairen Vergleich von Auslesemodulen. Bei Smartphone- oder anderen mobilen Verbindungen gehören Schnittstellenstabilität und Datenspeicherung ebenfalls zum vollständigen Versuch."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Systemprüfung"
+          },
+          {
+            "type": "p",
+            "text": "Tragbare Systeme hängen von Charge, Lagerung, Verformung und Anschlüssen ab. Anwendungstests erfassen Fehlsignale, ausgefallene Bauteile und ungültige Messungen über den Nutzungszyklus. [R01] [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Wiederholbarkeit innerhalb und zwischen Chargen prüfen."
+          },
+          {
+            "type": "p",
+            "text": "Zwischen Probenahme und Detektion können weiterhin mehrere manuelle Arbeitsschritte erforderlich sein. Die Speichelharnsäure-Plattform von 2026 integriert Probenahme, Flüssigkeitshandhabung und elektrochemische Detektion und demonstriert die Systemfunktionalität anhand der Harnsäuremessung. [R12] Die gedruckte Struktur reduziert durch feste räumliche Beziehungen die unabhängige Montage und Probenhandhabung."
+          },
+          {
+            "type": "p",
+            "text": "Aus Sicht der Forschungsfrage ist die Probenahme eine entscheidende Eingangsvariable in der Detektionskette. Probenvolumen, Eintrittspunkt, Kontakt mit der Reaktionszone und Mischungsgrad beeinflussen das Signal. Durch die Integration dieser Schritte in die Geometrie lassen sich standardisierte Verfahren anwenden, um zu überprüfen, ob das System die erwarteten Bedingungen einhält. Anschließend kann die Stabilität des Betriebs unter verschiedenen Anwender- und Probenbedingungen verifiziert werden."
+          },
+          {
+            "type": "p",
+            "text": "Dieser Knotenpunkt verlagert den Fokus der Auswertung auf den Gesamtprozess. Eine erfolgreiche Messung erfordert das koordinierte Zusammenspiel von Probenahme, Verarbeitung, Erfassung und Auslesung und ermöglicht so die Erfassung von Fehlertypen und deren Folgen in jeder Phase. Unternehmen profitieren von dieser Erfassung, da sie die Optimierung von Benutzeroberflächen und Fertigungsprüfungen unterstützt; in der Forschung wird die „Integration“ zu einer konkreten Fragestellung, die sich anhand von Betrieb und Ergebnissen verifizieren lässt."
+          },
+          {
+            "type": "p",
+            "text": "Die Probenahmestruktur kann unter verschiedenen Betriebsbedingungen getestet werden, anstatt sich ausschließlich auf die ideale Zugabemethode zu verlassen. Geringfügige Volumenänderungen, Positionsverschiebungen und Wartezeiten können die Reaktionsinitiierung beeinflussen. Durch die Zuordnung dieser Bedingungen zu den Ergebnissen können wir die für den Anwender relevantesten Schritte identifizieren und die Betriebsvariabilität durch geometrische Führung, Statusanzeigen oder Prozessvereinfachung reduzieren."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Messergebnisse in die Fertigung zurückführen"
+          },
+          {
+            "type": "p",
+            "text": "Bleibt die Nachweisgrenze stabil und steigen ungültige Messungen, sind Kontakt, Anschlüsse und Auslesesoftware zu prüfen. Richtungsabhängige Drift beim Biegen weist auf Schichtorientierung, Leiterpfad oder Kapselung hin. [R01] [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Fehlerzuordnung bestimmt die nächste Revision."
+          }
+        ]
+      },
+      {
+        "title": "Vergleich der Befunde",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Analytische Geräte sind bei gleichem Analyten, gleicher Matrix, gleichem Arbeitsbereich und gleichen Ausschlussregeln zu vergleichen. Bei Schnittstellen sind Kontaktzeit, Dehnung, Stabilität und Stimulations- oder Ableitungsaufgabe abzugleichen."
+          }
+        ]
+      },
+      {
+        "title": "Industrielle Ansätze und dokumentierte Produkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Proto-pasta liefert leitfähiges PLA und PalmSens miniaturisierte elektrochemische Messtechnik. Materialcharge, elektrische Stabilität und Messgerät getrennt erfassen, anschließend die Reproduzierbarkeit zwischen Anwendern prüfen. [R08] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Technologiepakete werden zunehmend vollständiger: Neben Hardware werden Angaben zu Materialchargen, Grenzflächenbehandlung, Kalibrierdateien, Datenschnittstellen und Bedienunterstützung benötigt. Eine vollständige Bereitstellung erlaubt Forschungsteams, sich auf Zielerkennung und Probenfragen zu konzentrieren, und Unternehmen, wiederverwendbares Anwendungswissen aufzubauen."
+          },
+          {
+            "type": "p",
+            "text": "Die Formlabs-Unterlagen zur Mikrofluidik betreffen die Bauteilfertigung, PalmSens Sensit Smart die elektrochemische Auslesung. [R13][R09] Für eine gemeinsame Anwendung sind Elektrodenanschlüsse, Probenraum und Datenausgabe festzulegen. Teams können zunächst Schnittstellen mit gemeinsamen Referenzproben prüfen und danach reale Proben und Bedienhandlungen einbeziehen, um klare Entwicklungsstufen zu schaffen."
+          },
+          {
+            "type": "p",
+            "text": "Für Materiallieferanten könnte das nächste Produktziel eine umfassendere Chargendatenanalyse und Anwendungsprüfung sein: Welche Verarbeitungszustände und Grenzflächenbehandlungen führen zu stabilen Ergebnissen, und welche Änderungen erfordern eine Neukalibrierung? Für Auslesegeräteanbieter könnte der Fokus auf einfacher Konnektivität, Rohdatenexport und Protokollierung des Gerätestatus liegen. Für Gerätehersteller liegt der Fokus auf dem Reaktionsraum und der Konsistenz der Probenverarbeitung. Jeder dieser drei Aspekte befasst sich mit einem spezifischen Thema, doch gemeinsam beeinflussen sie das Endergebnis."
+          },
+          {
+            "type": "p",
+            "text": "Kooperationsergebnisse lassen sich daran messen, ob dauerhaft nutzbare Referenzgeräte entstehen, Chargenunterschiede nachvollziehbar werden und Nutzer Fehler Material, Struktur oder Auslesung zuordnen können. Dies zeigt den Aufbau wiederverwendbaren Wissens. Bei neuen Analyten können dann validierte gemeinsame Module erhalten bleiben, während sich die Entwicklung auf neue Erkennungsreaktionen und Probenfragen konzentriert."
+          }
+        ]
+      },
+      {
+        "title": "Patentmechanismen und Prüfung für den Einsatz",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN116656595A betrifft elektrochemische Signale in Mikrogewebe, CN220109746U die Positionierung von EKG-Elektroden zu Hause und CN120284564A Biofeedback in einer Orthese. Dazu passen Prüfungen von Gewebereaktion, Positionierwiederholbarkeit und Regelkreisleistung. [R05] [R06] [R07]"
+          },
+          {
+            "type": "p",
+            "text": "Elektrodenvergleiche halten Aufgabe und Kammer konstant zwischen kommerzieller Referenz, leitfähigem PLA und der im Patent beschriebenen modifizierten Elektrodenoberfläche; Hintergrund, Drift, Wiederholung, Interferenz und Chargen werden unabhängig referenziert. Orientierung, exponierte Fläche und Nachbearbeitung bleiben verknüpft; PalmSens wird gegen Referenzgeräte geprüft. Gleichzeitiger Signal- und Hintergrundanstieg erfordert eine Anpassung der Elektrodenoberfläche oder der Kalibrierung; Gesamtfehler und Chargenstabilität bestimmen die Gesamtprüfung. [R10][R08][R09][R06][R14]"
+          },
+          {
+            "type": "p",
+            "text": "Gewebesensoren benötigen elektrodengestützte Leer-, unstimulierte Gewebe-, Referenzreiz- und Probenhintergrundkontrollen zur Trennung von direkter Elektrode, Zellgrundzustand und Reiz. Feste Quellen und Versionen ergänzen Antwortzeit, Chargen und Reporterbestätigung. Probensignale oder überwiegende Gewebezustandsstreuung verlangen Hintergrund- und Konsistenzarbeit; reproduzierbare Unterscheidung trägt die Prüfung im festgelegten Lebensmittelkontext. [R10][R09][R06][R14][R15]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick auf Forschung und Anwendung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Künftige Arbeiten können standardisierte Elektrodenanschlüsse, kontinuierliche Signale bei Kontakt und Kalibrierbarkeit des Gesamtsystems adressieren. Chargenstreuung, Signalerhalt nach Biegung, ungültige Messungen und Referenzübereinstimmung sind geeignete Maße. [R01] [R03] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "3D-Printable, Honeycomb-Inspired Tissue-Like Bioelectrodes for Patient-Specific Neural Interface.",
+        "url": "https://doi.org/10.1002/adma.202516291",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R01"
+      },
+      {
+        "title": "A large-area organic transistor with 3D-printed sensing gate for noninvasive single-molecule detection of pancreatic mucinous cyst markers.",
+        "url": "https://doi.org/10.1007/s00216-022-04040-4",
+        "year": "2022",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R02"
+      },
+      {
+        "title": "Lab-on-a-Scalpel: Medical Tool Incorporating a Disposable Fully 3D-Printed Electrochemical Cell Promoting Drop-Volume Chemical Analysis in the Operating Theater.",
+        "url": "https://doi.org/10.1021/acs.analchem.5c00599",
+        "year": "2025",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R03"
+      },
+      {
+        "title": "Pencil-Drawn Electrode within Additively Manufactured Devices for Uric Acid Detection.",
+        "url": "https://doi.org/10.1021/acsomega.6c02346",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R04"
+      },
+      {
+        "title": "Intelligent lower limb orthosis based on bimodal biofeedback and cooperative control system",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120284564A",
+        "year": "2025",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R05"
+      },
+      {
+        "title": "Bionic blood vessel micro-tissue electrochemical sensor as well as preparation method and application thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN116656595A",
+        "year": "2023",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R06"
+      },
+      {
+        "title": "Household electrocardiogram electrode positioning assistive device based on 3D printing",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN220109746U",
+        "year": "2023",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R07"
+      },
+      {
+        "title": "Conductive PLA",
+        "url": "https://proto-pasta.com/pages/conductive-pla",
+        "year": "",
+        "kind": "Unternehmensmitteilung",
+        "source": "Unternehmensmitteilung",
+        "id": "R08"
+      },
+      {
+        "title": "Sensit Smart",
+        "url": "https://assets.palmsens.com/product/sensit-smart/",
+        "year": "",
+        "kind": "Unternehmensmitteilung",
+        "source": "Unternehmensmitteilung",
+        "id": "R09"
+      },
+      {
+        "id": "R10",
+        "title": "3D-printed electrochemical platform with multi-purpose carbon black sensing electrodes",
+        "year": "2022",
+        "source": "Microchimica Acta",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9142345/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R11",
+        "title": "Portable 3D-printed electrochemiluminescence sensor for simultaneous glucose and lactate monitoring",
+        "year": "2025",
+        "source": "Scientific Reports",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12494991/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R12",
+        "title": "Fully 3D-Printed Sampling-to-Detection Electrochemical Platform for Point-of-Care Measurement of Salivary Uric Acid",
+        "year": "2026",
+        "source": "ACS Measurement Science Au",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13281170/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R13",
+        "title": "Guide to Microfluidics and Millifluidics, and Lab-on-a-Chip Manufacturing",
+        "year": "现行技术资料",
+        "source": "Formlabs",
+        "url": "https://formlabs.com/blog/microfluidics-millifluidics-lab-on-a-chip-manufacturing/",
+        "kind": "企业技术资料"
+      },
+      {
+        "id": "R14",
+        "title": "Bionic skin micro-tissue electrochemical sensor as well as preparation method and application thereof",
+        "year": "2024",
+        "source": "Espacenet",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN118032895A",
+        "kind": "patent"
+      },
+      {
+        "id": "R15",
+        "title": "Bionic liver micro-tissue micro-nano channel electrochemical sensor and preparation and application thereof",
+        "year": "2024",
+        "source": "Espacenet",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN118883679A",
+        "kind": "patent"
+      }
+    ]
+  }
+}

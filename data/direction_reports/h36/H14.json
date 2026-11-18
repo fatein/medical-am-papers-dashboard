@@ -1,0 +1,1757 @@
+{
+  "zh": {
+    "id": "H14",
+    "p": "P2",
+    "title": "牙科修复材料的力学、连接与耐久性能",
+    "subtitle": "从树脂聚合状态追踪义齿与冠桥的真实失效",
+    "thesis": "同种打印树脂可因层向、固化或湿热而得到不同力学表现。义齿或冠桥的选择要同时看基体、界面、成品形状和使用期失效。 [R01] [R02] [R05]",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络 · 牙科修复材料的力学、连接与耐久性能",
+      "summary": "制造控制形成两路证据，先计算层向与加工效应，再验证不同连接区域。湿热及表面磨损作用于两路，完整器械失效再回到设计与生产。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2025",
+          "question": "按产品用途定义可比较的试样。",
+          "title": "材料与设计分组",
+          "evidence": "临时修复材料的体外比较同时包括增材、铣削与传统工艺。可用此类分组确定参照，但工艺变化若同时换材料，所得差异属于整套系统。",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2022–2025",
+          "question": "要在加载方向中记录层面与固化条件。",
+          "title": "方向与后处理",
+          "evidence": "三点弯曲试条采用0°、45°、90°打印。干燥条件下 Temp PRINT 的峰值为45°时117 MPa，CROWNTEC 为0°时102 MPa。两材料的最高组均比各自90°组显著更高，配方对最佳方向有影响。",
+          "refs": [
+            "R01",
+            "R05"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2025",
+          "question": "同步记录失效在粘接层还是材料内部。",
+          "title": "表面与结合强度",
+          "evidence": "表面处理和延长老化研究用正畸托槽与打印或铣削甲基丙烯酸酯类临时冠的剪切粘接区分界面效应。喷砂粒径实验再把表面处理分成不同程度，并检查人工老化后效果。",
+          "refs": [
+            "R04",
+            "R06"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2025",
+          "question": "把可维修性纳入选择方案。",
+          "title": "完整成品与维修",
+          "evidence": "完整牙冠的抗折承载与条形试片弯曲强度可互补。牙冠的受力集中区受成品形状、支撑和粘接影响，义齿则应记录基托、牙位组装和重衬后的变形。 [LR01]",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025",
+          "question": "报告老化前后变化和存留性能。",
+          "title": "老化、颜色和耐磨",
+          "evidence": "CROWNTEC 与 Temp PRINT 的打印试条在该水热试验中均表现为弯曲强度下降。CROWNTEC 硬度稍高而磨损深度更大，说明表面压痕响应与磨损终点需要单独测量。",
+          "refs": [
+            "R01",
+            "R02"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2025",
+          "question": "复测时保留初代样作为参照。",
+          "title": "从失效位置倒查",
+          "evidence": "若试条强度维持而整体修复体失效，需要定位是薄壁、界面剥离还是成品载荷集中。失效位置能决定下一轮改变基体、粘接面还是几何。",
+          "refs": [
+            "R01",
+            "R04"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "方向与后处理",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "表面与结合强度",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "完整成品与维修",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "完整成品与维修",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "老化、颜色和耐磨",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "从失效位置倒查",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "按老化失效回调方向与表面",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究范围与目标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "评价从聚合形成的材料状态出发，拆分层间结合、表面连接、整体厚度和环境老化，把强度与耐磨、颜色、维修等任务分开。冠桥功能层与义齿基托承担的载荷不同，产品登记要保留适用器械。"
+          }
+        ]
+      },
+      {
+        "title": "学术研究脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 材料与设计分组"
+          },
+          {
+            "type": "p",
+            "text": "临时修复材料的体外比较同时包括增材、铣削与传统工艺。可用此类分组确定参照，但工艺变化若同时换材料，所得差异属于整套系统。 [R03]"
+          },
+          {
+            "type": "p",
+            "text": "按产品用途定义可比较的试样。"
+          },
+          {
+            "type": "p",
+            "text": "2021年研究对上下颌打印基托施加不固化及5、15、30、60分钟后固化，连续28天测量尺寸。短固化组后续变化较大，下颌基托较敏感，早期一天内的变化突出。[R12]"
+          },
+          {
+            "type": "p",
+            "text": "时间序列的价值在于把刚离开设备时的形状与随后稳定状态分开。后固化可以继续改变聚合网络，同时在整个器械中产生或释放形变；上下颌几何不同，使相同处理不一定产生同样响应。研究可用区域扫描和关键距离追踪收缩、弯曲及局部翘曲，再与试样反应程度联系，判断某种变化主要由材料继续反应还是几何约束决定。"
+          },
+          {
+            "type": "p",
+            "text": "2022年研究将LCD和DLP打印与空气、氮气闪光固化组合，测试硬咬合板材料的弯曲、硬度、韧性、转化率及吸水溶出。固化气氛和打印方式影响多个终点，而韧性等指标并未呈同样变化。[R13]"
+          },
+          {
+            "type": "p",
+            "text": "气氛试验把表面反应条件引入材料评价。它有助于检验表面聚合状态是否与整体力学一致，但硬度和弯曲结果的共同变化仍需要直接化学或显微证据解释。若某处理只改善表面而未改变裂纹扩展，可能提示不同性能由不同结构尺度控制。将断口、表面层和内部网络分别测量，可以让这种差异成为下一步可验证假说。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 方向与后处理"
+          },
+          {
+            "type": "p",
+            "text": "三点弯曲试条采用0°、45°、90°打印。干燥条件下 Temp PRINT 的峰值为45°时117 MPa，CROWNTEC 为0°时102 MPa。两材料的最高组均比各自90°组显著更高，配方对最佳方向有影响。 [R01] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "要在加载方向中记录层面与固化条件。"
+          },
+          {
+            "type": "p",
+            "text": "2025年研究使用两台打印机制作三单位桥，比较乙醇、异丙醇及其与超声结合等五种清洗策略。几何库配准分析显示，设备差异与角度、距离等评价方式共同影响观察到的变形响应。[R14]"
+          },
+          {
+            "type": "p",
+            "text": "三单位结构比简单试片更容易显示局部位移和跨距变化。固定一端后比较另一端的位置，可以揭示整体最佳拟合可能分摊掉的角度偏移。清洗的研究任务也因此包含两项：移除未反应残余，以及在处理过程中保持设计形状。溶剂、超声和干燥之间可能存在交互，适合在受控组合中测量，而不是将清洗时间作为唯一解释。"
+          },
+          {
+            "type": "p",
+            "text": "2025年研究将同一固定修复树脂在两台DLP打印机与两种固化设备间交叉组合，测量尺寸、破坏强度及FTIR转化率。不同组合表现不同，后固化设备对多个结果的影响较突出。[R15]"
+          },
+          {
+            "type": "p",
+            "text": "交叉设计能够将打印阶段和追加聚合阶段分别作为因素。转化率与强度一起观察，可以检验材料反应是否与承载变化一致；尺寸变化又提醒研究保留几何约束。解释时应注意不同设备同时改变光谱、能量分布及温度，因此设备名称只是组合的标识。若希望提炼普遍机制，需要进一步测量和控制这些实际物理量。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 表面与结合强度"
+          },
+          {
+            "type": "p",
+            "text": "表面处理和延长老化研究用正畸托槽与打印或铣削甲基丙烯酸酯类临时冠的剪切粘接区分界面效应。喷砂粒径实验再把表面处理分成不同程度，并检查人工老化后效果。 [R04] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "同步记录失效在粘接层还是材料内部。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 完整成品与维修"
+          },
+          {
+            "type": "p",
+            "text": "完整牙冠的抗折承载与条形试片弯曲强度可互补。牙冠的受力集中区受成品形状、支撑和粘接影响，义齿则应记录基托、牙位组装和重衬后的变形。 [R01] [LR01]"
+          },
+          {
+            "type": "p",
+            "text": "把可维修性纳入选择方案。"
+          },
+          {
+            "type": "p",
+            "text": "2024年在线发表、编入2025年卷期的Löscher等研究，以相同牙形和连接面积组织11种组合，每组8件，改变人工牙、基托和连接方法，再施加热机械循环及破坏载荷。组合之间存续循环和破坏力不同，部分铣削、压制及预制体系表现较好。[R16]"
+          },
+          {
+            "type": "p",
+            "text": "这一设计回答的是系统中哪个环节先成为薄弱点。统一几何可减少牙形对受力的干扰，而让牙体、基托及连接剂组合变化，有助于识别单独评价材料无法发现的相容问题。疲劳存续与最终破坏力又承担不同任务：前者观察损伤累积，后者描述剩余承载。将两者并列，才能分辨某个组合是很早发生脱落，还是经历循环后仍可承受一次较高载荷。"
+          },
+          {
+            "type": "p",
+            "text": "机制分析应把失效位置与强度一起阅读。界面增强可能使裂纹进入牙体或基托，这意味着载荷传递发生变化，也改变后续维修方式。相同破坏力下，易于更换单颗牙的失效与基托深部断裂具有不同的服务后果。这个节点因此向两条研究线分支：保留分体结构并改善定位与连接，或者改变制造方式以减少后续装配。两条线最后仍要接受相同使用期终点的比较。"
+          },
+          {
+            "type": "p",
+            "text": "2025年DentaBase研究比较90件试样的机械和化学预处理。完整对照中位拉伸强度为25.9兆帕，未处理重衬组为11.5兆帕，喷砂加单体组为19.7兆帕；所有重衬组在基托与重衬材料界面失效。[R17]"
+          },
+          {
+            "type": "p",
+            "text": "重衬恢复的是组织面适配，研究任务因此不同于初次牙—基托连接。原基托已经形成交联网络，新增材料需要在其表面建立连续载荷传递。粗化增加接触路径，化学处理可能改善润湿或表层结合，两者配合值得用表面形貌和化学表征进一步分离。不同处理组的结果也说明，复杂步骤数与连接效果之间不应预设单调关系。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 老化、颜色和耐磨"
+          },
+          {
+            "type": "p",
+            "text": "CROWNTEC 与 Temp PRINT 的打印试条在该水热试验中均表现为弯曲强度下降。CROWNTEC 硬度稍高而磨损深度更大，说明表面压痕响应与磨损终点需要单独测量。 [R01] [R02]"
+          },
+          {
+            "type": "p",
+            "text": "报告老化前后变化和存留性能。"
+          },
+          {
+            "type": "p",
+            "text": "2025年研究用180件传统及四种打印基托材料试样，比较机械抛光和VITA AKZENT LC釉层，再施加5000次咖啡热循环。釉层对强度、硬度、粗糙度及颜色的影响随材料而异，未形成所有指标同步改善。[R18]"
+          },
+          {
+            "type": "p",
+            "text": "该结果把表面完成从外观步骤推进到材料系统的一部分。涂层可能改变粗糙度、保护外层或引入新的界面，而不同基体的润湿与结合状态影响其作用。要解释某种组合为何改善硬度却没有改善颜色，可结合表面形貌、涂层厚度及老化后的界面完整性。单一终点的提高不能代替对其他功能的观察，因而多终点设计在这里具有直接意义。"
+          },
+          {
+            "type": "p",
+            "text": "2025年72件试样研究比较热固化与打印基托聚合物，测量热循环后的强度、硬度与颜色。所测打印材料的弯曲、拉伸及硬度受到老化影响，提示初始性能与环境后表现需要分别评价。[R19]"
+          },
+          {
+            "type": "p",
+            "text": "多项力学同时观察能够区分表面软化与整体承载变化。拉伸和弯曲对缺陷位置及应力状态的敏感性不同，硬度又主要描述局部表层，因此指标不一致可以帮助定位变化发生的尺度。进一步结合吸水、溶出和化学表征，可检验塑化、残余反应或界面变化等候选机制，而不必将所有性能下降归入同一种解释。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 从失效位置倒查"
+          },
+          {
+            "type": "p",
+            "text": "若试条强度维持而整体修复体失效，需要定位是薄壁、界面剥离还是成品载荷集中。失效位置能决定下一轮改变基体、粘接面还是几何。 [R01] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "复测时保留初代样作为参照。"
+          }
+        ]
+      },
+      {
+        "title": "研究之间如何比较",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "可以在同一树脂和打印机上改变方向及后固化，再分别对比强度、曲率、色差与结合。跨品牌比较则对齐型材厚度、加载和老化条件。建议将剪切强度与粘接失效位置并列，以确定表面处理改善了粘接还是使基体先行破坏。 [R01] [R04] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "企业路线与公开产品",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Formlabs 的 Form 4B 资料将打印平台与修复材料的适用用途相连。Zahn Dental 展出的 Myerson TruJetX3 与 Trusana One 以喷墨及多区域义齿为产品方向。两种路线都需要把已验证的成形与后处理条件下沉到零件批次。 [R10] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "VITA在2024年产品资料中列出AKZENT LC等用于聚合物修复体表面个性化处理的材料体系，表面着色与釉层进入数字修复流程。[R20] 2025年独立实验直接使用AKZENT LC评价不同打印基托材料，显示表面处理需要与基体配对研究。[R18] 企业提供的是可应用的处理工具，研究进一步解释该工具在不同组合中的作用。"
+          },
+          {
+            "type": "p",
+            "text": "NextDent于2025年文件发布材料与打印机兼容表，表内状态日期为2024年11月，并区分已验证与进行中的组合。[R21] 这一形式体现材料管理从单瓶树脂转为设备组合。对研发而言，兼容状态可以成为组织试验的入口，后续仍需保存具体固化、清洗和几何条件，使一个验证组合的结果能够被重复制造。"
+          },
+          {
+            "type": "p",
+            "text": "Carbon于2026年8月发布DB 4000基托树脂，将断裂功、精度和单次固化流程列为重点，面向其M系列平台。[R22] 产品叙述显示关注点从初始强度扩展到损伤承受及生产过程。对应的独立评价可以比较老化后的断裂功、完整基托破坏位置和实际返工，并将材料更新与工艺更新分开追踪。"
+          },
+          {
+            "type": "p",
+            "text": "Formlabs现行数字义齿指南同时覆盖分体装配、表面完成及修补重衬。[R23] 维护被纳入工作流，意味着新制材料的性能需要与再次处理后的颜色、连接和承载共同评价。企业材料迭代的时间线因此可以同时记录初次制造与维修协议变化，观察产品是否在整个使用期减少重复加工和患者停用时间。"
+          }
+        ]
+      },
+      {
+        "title": "专利机制与转化验证",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN121101779A将区域性能差异作为制件设计变量，CN120168711A将陶瓷墨水与直写成形相连，CN119735782A处理感光预聚体及树脂组合。可用区域模量、内部缺陷、界面失效模式和老化后性能分别评价三条机制。 [R07] [R08] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "拟议验证采用成品状态矩阵：制造后、清洗后、后处理后以及水热或磨耗后分别测量。匹配试件厚度和观察区域，保留未老化对照与不同后处理组合，避免把几何变化解释成纯粹材料衰减。人工唾液加速筛选用于识别机制与排序，随后仍要在实际器械和使用条件中核查；单冠两年观察中的脱粘和颜色变化应作为独立终点。[R14][R24][R25] 每种老化后变化都应回查暴露前状态。强度差异可能来自转化程度、孔隙或试样厚度，颜色差异可能来自表面吸附和体相变化。宜保留相同位置的重复测量以及破坏样本的配对替代样本，并把抛光、釉层和清洗版本写入记录。若工艺组合改变，原有材料排名应重新核查，不能由商品名称直接沿用原来的耐久判断。"
+          },
+          {
+            "type": "table",
+            "headers": [
+              "专利导出的变量",
+              "拟议比较、终点与下一步"
+            ],
+            "rows": [
+              [
+                "区域树脂",
+                "同树脂均一与区域参数对照，测转化率、硬度、吸水及应力松弛；若区域界面先开裂或性能随存放漂移，收窄参数差异。[R07]"
+              ],
+              [
+                "光学来源",
+                "体相着色与表面着色分组，老化前后测色差、粗糙和强度。若抛光去色或磨耗暴露不均匀层，应调整颜色深度与后处理。[R26]"
+              ],
+              [
+                "浸渗烧结",
+                "同生坯比较浸渗组合，测晶相、透光、孔隙和疲劳。若透光改善伴随裂纹或湿态衰减，应返回浸渗浓度与烧结过程。[R27]"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "后续研究与应用走向",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "下一步应以具体成品为单位汇总加工与使用数据，优先观察热循环和载荷后错配、磨损、破裂与重新粘接。若不同打印机使用同一树脂仍出现稳定差异，则需把材料与过程作为单一验证组合。 [R01] [R05]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Characterization of temporary and permanent 3D-printed crown and bridge resins.",
+        "url": "https://doi.org/10.2340/biid.v12.43584",
+        "year": "2025",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R01"
+      },
+      {
+        "title": "Evaluation of mechanical properties and color stability of 3D-printed denture base materials following two surface treatments.",
+        "url": "https://doi.org/10.1186/s12903-025-06056-5",
+        "year": "2025",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R02"
+      },
+      {
+        "title": "A Comparative In Vitro Study of Materials for Provisional Restorations Manufactured With Additive (3Dprinting), Subtractive (Milling), and Conventional Techniques.",
+        "url": "https://doi.org/10.1111/jerd.13481",
+        "year": "2025",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R03"
+      },
+      {
+        "title": "Influence of Surface Treatment and Protracted Ageing on the Shear Bond Strength of Orthodontic Brackets to Two Digitally Fabricated (Milled and 3D-Printed) Polymethacrylate-Based Provisional Crowns.",
+        "url": "https://doi.org/10.3390/polym17050699",
+        "year": "2025",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R04"
+      },
+      {
+        "title": "Effect of Printing Layer Thickness and Postprinting Conditions on the Flexural Strength and Hardness of a 3D-Printed Resin.",
+        "url": "https://doi.org/10.1155/2022/8353137",
+        "year": "2022",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R05"
+      },
+      {
+        "title": "Influence of Sandblasting Particle Size on the Shear Bond Strength of Orthodontic Brackets to Milled and 3D-Printed Provisional Crowns or Materials After Artificial Aging.",
+        "url": "https://doi.org/10.3390/jfb16120457",
+        "year": "2025",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R06"
+      },
+      {
+        "title": "Dental appliance with regional differentiation physical properties and additive manufacturing method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN121101779A",
+        "year": "2025",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R07"
+      },
+      {
+        "title": "Ink direct-writing 3D printing ceramic material as well as preparation method and application thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120168711A",
+        "year": "2025",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R08"
+      },
+      {
+        "title": "Photosensitive prepolymer, photosensitive resin composition and application thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119735782A",
+        "year": "2025",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R09"
+      },
+      {
+        "title": "Formlabs Launches Form 4, Its Fastest and Most Versatile 3D Printer",
+        "url": "https://dental.formlabs.com/global/company/press/formlabs-launches-form-4-its-fastest-most-versatile-3d-printer/",
+        "year": "",
+        "kind": "企业公告",
+        "source": "企业公告",
+        "id": "R10"
+      },
+      {
+        "title": "Zahn Dental Showcases One-Piece 3D Printed Denture System at LMT Lab Day",
+        "url": "https://news.henryschein.com/press-releases/press-release-details/2024/Zahn-Dental-Showcases-One-Piece-3D-Printed-Denture-System-at-LMT-Lab-Day-to-Help-Laboratories-Enhance-Digital-Workflows-02-22-2024/default.aspx",
+        "year": "",
+        "kind": "企业公告",
+        "source": "企业公告",
+        "id": "R11"
+      },
+      {
+        "title": "Evaluation of Dimensional Changes According to Aging Period and Postcuring Time of 3D-Printed Denture Base Prostheses: An In Vitro Study",
+        "year": "2021",
+        "source": "Materials",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8539717/",
+        "kind": "原始研究",
+        "id": "R12"
+      },
+      {
+        "title": "Effect of Nitrogen Gas Post-Curing and Printer Type on the Mechanical Properties of 3D-Printed Hard Occlusal Splint Material",
+        "year": "2022",
+        "source": "Polymers",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9571503/",
+        "kind": "原始研究",
+        "id": "R13"
+      },
+      {
+        "title": "Deformation analysis of 3D-printed three-unit fixed partial dentures according to various cleaning strategies after DLP 3D printing: a geometric library matching approach",
+        "year": "2025",
+        "source": "Journal of Advanced Prosthodontics",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11886403/",
+        "kind": "原始研究",
+        "id": "R14"
+      },
+      {
+        "title": "Effects of 3D-printers and manufacturer-specified post-curing units on the dimensional accuracy, compressive strength, and degree of conversion of resin for fixed dental prostheses",
+        "year": "2025",
+        "source": "Journal of Dental Sciences",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12254842/",
+        "kind": "原始研究",
+        "id": "R15"
+      },
+      {
+        "id": "R16",
+        "title": "In vitro bonding strength of denture teeth to denture base in CAD/CAM-milled, 3D-printed and conventional manufacturing processes",
+        "year": "2024在线／2025卷期",
+        "source": "Clinical Oral Investigations",
+        "kind": "原始研究",
+        "url": "https://link.springer.com/article/10.1007/s00784-024-06099-y"
+      },
+      {
+        "id": "R17",
+        "title": "Improving reline bonding in 3D-printed dentures: an experimental in vitro study",
+        "year": "2025",
+        "source": "Journal of Dentistry",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40460970/"
+      },
+      {
+        "title": "Evaluation of mechanical properties and color stability of 3D-printed denture base materials following two surface treatments",
+        "year": "2025",
+        "source": "BMC Oral Health",
+        "url": "https://link.springer.com/article/10.1186/s12903-025-06056-5",
+        "kind": "原始研究",
+        "id": "R18"
+      },
+      {
+        "title": "An In-Vitro Evaluation of Strength, Hardness, and Color Stability of Heat-Polymerized and 3D-Printed Denture Base Polymers After Aging",
+        "year": "2025",
+        "source": "Polymers",
+        "url": "https://www.mdpi.com/2073-4360/17/3/288",
+        "kind": "原始研究",
+        "id": "R19"
+      },
+      {
+        "title": "VITA AKZENT LC characterization",
+        "year": "2024",
+        "source": "VITA Zahnfabrik",
+        "url": "https://www.vita-zahnfabrik.com/datei.php?src=portal%2Fsap%2Fkompendium%2Fausgaben%2F263644%2Fdownload%2F180076%2FVITA-Characterization_EN_7.2024.pdf",
+        "kind": "企业技术资料",
+        "id": "R20"
+      },
+      {
+        "title": "NextDent compatibility chart",
+        "year": "2025文件／2024年11月状态",
+        "source": "3D Systems",
+        "url": "https://www.3dsystems.com/sites/default/files/2025-05/3d-systems-nextdent-compatibility-chart-2025.pdf",
+        "kind": "企业技术资料",
+        "id": "R21"
+      },
+      {
+        "title": "Carbon launches DB 4000 denture base resin",
+        "year": "2026",
+        "source": "Carbon",
+        "url": "https://www.carbon3d.com/news/press-releases/carbon-launches-db-4000-a-high-impact-denture-base-resin-delivering-high-work-of-fracture-print-accuracy-and-better-economics-for-dental-labs",
+        "kind": "企业公告",
+        "id": "R22"
+      },
+      {
+        "title": "Application Guide: 3D Printing Digital Dentures",
+        "year": "2026年现行资料",
+        "source": "Formlabs",
+        "url": "https://dental.formlabs.com/global/indications/digital-dentures/guide/",
+        "kind": "企业技术资料",
+        "id": "R23"
+      },
+      {
+        "title": "Mechanical Properties of Dental Occlusal Splint Materials After Accelerated Aging in Artificial Saliva: An In Vitro Study",
+        "year": "2026",
+        "source": "Dentistry Journal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13511532/",
+        "kind": "原始研究",
+        "id": "R24"
+      },
+      {
+        "title": "Performance of posterior 3D printed resin-matrix ceramic crowns fabricated in a fully digital workflow: a two-year prospective clinical study",
+        "year": "2026",
+        "source": "Clinical Oral Investigations",
+        "url": "https://link.springer.com/article/10.1007/s00784-026-06883-y",
+        "kind": "原始研究",
+        "id": "R25"
+      },
+      {
+        "id": "R26",
+        "title": "Raw material and additive manufacturing method of colorful multi-transparency dental restoration",
+        "year": "2021",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN113416071A",
+        "source": "Espacenet",
+        "kind": "patent"
+      },
+      {
+        "id": "R27",
+        "title": "Method for improving semi-permeability and strength of additive manufactured zirconia dental restoration",
+        "year": "2024",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN118078643A",
+        "source": "Espacenet",
+        "kind": "patent"
+      }
+    ]
+  },
+  "en": {
+    "id": "H14",
+    "p": "P2",
+    "title": "Dental restorative materials: mechanics, bonding and durability",
+    "subtitle": "Tracing denture and crown failure to the state of the resin",
+    "thesis": "Layer orientation, curing and hydrothermal exposure change the behaviour of the same resin. Selecting a denture or crown-and-bridge system requires material, interfaces, finished geometry and failure in service to be assessed together. [R01] [R02] [R05]",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway · Dental restorative materials: mechanics, bonding and durability",
+      "summary": "Manufacturing control branches into bulk behaviour and the joining interface. Wet ageing and wear challenge both branches. Failure in the complete device then informs design and production.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2025",
+          "question": "Match specimens to their intended application.",
+          "title": "Define the resin and intended geometry",
+          "evidence": "An in vitro provisional-restoration comparison included printing, milling and conventional fabrication. These groups provide useful comparators. When fabrication and material change together, the result pertains to the complete system.",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2022–2025",
+          "question": "Record layer alignment relative to loading and the curing conditions.",
+          "title": "Orientation and post-processing",
+          "evidence": "Three-point bend specimens were printed at 0°, 45° and 90°. In dry conditions, Temp PRINT peaked at 117 MPa at 45°, and CROWNTEC at 102 MPa at 0°. Each peak differed significantly from that material’s 90° group. The best orientation depends on formulation.",
+          "refs": [
+            "R01",
+            "R05"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2025",
+          "question": "Record whether failure occurs in the joint or within the material.",
+          "title": "Surface treatment and adhesion",
+          "evidence": "Studies of surface treatment and ageing used shear bonding of brackets to printed and milled methacrylate provisional crowns to isolate interface behaviour. A particle-size study further varied the abrasion treatment and assessed it after artificial ageing.",
+          "refs": [
+            "R04",
+            "R06"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2025",
+          "question": "Include repairability when comparing systems.",
+          "title": "Whole device and repair",
+          "evidence": "Whole-crown fracture load complements bar flexural strength. Crown stresses depend on geometry, support and bonding. For dentures, record distortion of the base, tooth assembly and the relined appliance. [LR01]",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025",
+          "question": "Report change from baseline and the property retained after ageing.",
+          "title": "Ageing, colour and wear",
+          "evidence": "Hydrothermal ageing lowered flexural strength in the printed groups in the CROWNTEC and Temp PRINT study. CROWNTEC was harder in that test series and exhibited greater wear depth, illustrating the need to measure hardness and wear separately.",
+          "refs": [
+            "R01",
+            "R02"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2025",
+          "question": "Retain the first design as a retest reference.",
+          "title": "Trace failure back to its origin",
+          "evidence": "If the bar remains strong while the appliance fails, locate thin sections, interface separation or geometry-driven load concentration. The failure site determines whether to revise resin, bonding or geometry.",
+          "refs": [
+            "R01",
+            "R04"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Orientation and post-processing",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Surface treatment and adhesion",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Whole device and repair",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Whole device and repair",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Ageing, colour and wear",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Trace failure back to its origin",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Use aged failures to revise orientation and finish",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Scope and objectives",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Start with the polymerized material and separate interlayer bonds, surface bonds, thickness and ageing. Strength, wear, colour and repair answer different questions. Crown-and-bridge layers and denture bases carry different loads, so material records must specify the intended appliance."
+          }
+        ]
+      },
+      {
+        "title": "Academic pathway and interpretation",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Define the resin and intended geometry"
+          },
+          {
+            "type": "p",
+            "text": "An in vitro provisional-restoration comparison included printing, milling and conventional fabrication. These groups provide useful comparators. When fabrication and material change together, the result pertains to the complete system. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Match specimens to their intended application."
+          },
+          {
+            "type": "p",
+            "text": "A 2021 study applied no post-curing or post-curing for 5, 15, 30 or 60 minutes to printed maxillary and mandibular denture bases and measured dimensions over 28 days. Shorter curing was associated with greater subsequent changes; mandibular bases were more sensitive, and changes were particularly pronounced during the first day. [R12]"
+          },
+          {
+            "type": "p",
+            "text": "The value of time series analysis lies in separating the shape immediately after leaving the device from its subsequent steady state. Post-curing can continue to alter the polymer network while simultaneously inducing or releasing deformation throughout the device; the different geometries of the upper and lower jaws mean that the same treatment may not produce the same response. Studies can use area scanning and key distances to track shrinkage, bending, and localized warping, and then correlate this with the degree of sample reaction to determine whether a change is primarily determined by continued material reaction or geometric constraints."
+          },
+          {
+            "type": "p",
+            "text": "A 2022 study combined LCD and DLP printing with flash post-curing in air or nitrogen, assessing flexural properties, hardness, fracture toughness, degree of conversion, water sorption and solubility in hard occlusal-splint materials. Curing atmosphere and printing method affected several endpoints, but toughness and other measures did not all change in the same way. [R13]"
+          },
+          {
+            "type": "p",
+            "text": "The atmosphere test introduces surface reaction conditions into material evaluation. It helps verify whether the surface polymerization state is consistent with the overall mechanics, but the combined changes in hardness and bending results still require direct chemical or microscopic evidence for explanation. If a treatment only improves the surface without altering crack propagation, it may suggest that different properties are controlled by different structural scales. Measuring the fracture surface, surface layer, and internal network separately allows this difference to become a verifiable hypothesis for further investigation."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Orientation and post-processing"
+          },
+          {
+            "type": "p",
+            "text": "Three-point bend specimens were printed at 0°, 45° and 90°. In dry conditions, Temp PRINT peaked at 117 MPa at 45°, and CROWNTEC at 102 MPa at 0°. Each peak differed significantly from that material’s 90° group. The best orientation depends on formulation. [R01] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Record layer alignment relative to loading and the curing conditions."
+          },
+          {
+            "type": "p",
+            "text": "The 2025 study used two printers to fabricate a three-unit bridge and compared five cleaning strategies, including ethanol, isopropanol, and a combination of these with ultrasound. Geometric library registration analysis showed that equipment differences, along with evaluation methods such as angle and distance, collectively influenced the observed deformation response. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "The three-unit structure is more effective than simple specimens in revealing local displacement and span variations. By fixing one end and comparing the position of the other, the angular shift that might be amortized by the overall best fit can be revealed. Therefore, the cleaning task thus includes two aspects: removing unreacted residues and maintaining the designed shape during processing. Interactions may exist between solvent, sonication, and drying, making it suitable for measurement in controlled combinations, rather than relying solely on cleaning time as the sole explanation."
+          },
+          {
+            "type": "p",
+            "text": "A 2025 study crossed two DLP printers and two curing devices using the same fixed-restoration resin, measuring dimensions, fracture strength and degree of conversion by FTIR. Performance differed among combinations, with particularly notable effects of the post-curing device on several outcomes. [R15]"
+          },
+          {
+            "type": "p",
+            "text": "The cross-design allows for the separate consideration of the printing and additional polymerization stages. Observing degree of conversion and strength together can verify whether the material response is consistent with changes in load; dimensional changes also remind researchers to retain geometric constraints. It should be noted that different devices simultaneously alter the spectrum, energy distribution, and temperature; therefore, device names are merely identifiers of the combination. Further measurement and control of these actual physical quantities are needed to extract a general mechanism."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Surface treatment and adhesion"
+          },
+          {
+            "type": "p",
+            "text": "Studies of surface treatment and ageing used shear bonding of brackets to printed and milled methacrylate provisional crowns to isolate interface behaviour. A particle-size study further varied the abrasion treatment and assessed it after artificial ageing. [R04] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Record whether failure occurs in the joint or within the material."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Whole device and repair"
+          },
+          {
+            "type": "p",
+            "text": "Whole-crown fracture load complements bar flexural strength. Crown stresses depend on geometry, support and bonding. For dentures, record distortion of the base, tooth assembly and the relined appliance. [R01] [LR01]"
+          },
+          {
+            "type": "p",
+            "text": "Include repairability when comparing systems."
+          },
+          {
+            "type": "p",
+            "text": "A study by Löscher et al., published online in 2024 and included in the 2025 issue, used 11 combinations of artificial teeth with the same tooth shape and connection area, with 8 pieces in each combination. The artificial teeth, denture bases, and connection methods were varied, and then thermomechanical cycles and destructive loads were applied. The duration of cycles and destructive forces differed among the combinations, with some milled, pressed, and prefabricated systems showing better performance. [R16]"
+          },
+          {
+            "type": "p",
+            "text": "This design answers the question of which component in the system becomes the weakest point first. A uniform geometry reduces the interference of tooth shape on stress, while variations in the combination of tooth structure, base, and connector help identify compatibility issues that cannot be detected by evaluating materials individually. Fatigue survival and final failure force serve different purposes: the former observes damage accumulation, while the latter describes the remaining load-bearing capacity. Only by considering both side-by-side can one determine whether a particular combination will detach early or withstand a higher load after cycling."
+          },
+          {
+            "type": "p",
+            "text": "Failure location and strength must be interpreted together. A stronger interface can shift cracks into a tooth or the base, changing load transfer and subsequent repair options. At the same failure load, a readily replaceable tooth failure and a deep base fracture have different service consequences. Research therefore branches into retaining separate components with better positioning and bonding, or changing manufacturing to reduce assembly. Both approaches should ultimately be compared using common outcomes over the service period."
+          },
+          {
+            "type": "p",
+            "text": "A 2025 DentaBase study compared mechanical and chemical pretreatments in 90 specimens. Median tensile strength was 25.9 MPa in the intact control, 11.5 MPa in the untreated relined group and 19.7 MPa after sandblasting plus monomer treatment. All relined groups failed at the base–reline-material interface. [R17]"
+          },
+          {
+            "type": "p",
+            "text": "The relining restores tissue surface adaptation, thus the research task differs from the primary tooth-base connection. The original base has already formed a cross-linked network, and the new material needs to establish continuous load transfer on its surface. Roughening increases the contact path, and chemical treatment may improve wetting or surface bonding; the combination of these two deserves further differentiation using surface morphology and chemical characterization. The results of different treatment groups also indicate that a monotonic relationship should not be assumed between the number of complex steps and the connection effect."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Ageing, colour and wear"
+          },
+          {
+            "type": "p",
+            "text": "Hydrothermal ageing lowered flexural strength in the printed groups in the CROWNTEC and Temp PRINT study. CROWNTEC was harder in that test series and exhibited greater wear depth, illustrating the need to measure hardness and wear separately. [R01] [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Report change from baseline and the property retained after ageing."
+          },
+          {
+            "type": "p",
+            "text": "A 2025 study used 180 specimens of conventional and four printed denture-base materials to compare mechanical polishing with VITA AKZENT LC glazing, followed by 5,000 thermocycles in coffee. Effects on strength, hardness, roughness and colour depended on the material; the glaze did not improve all outcomes together. [R18]"
+          },
+          {
+            "type": "p",
+            "text": "This result elevates surface finishing from a mere aesthetic step to an integral part of the material system. Coatings can alter roughness, protect the outer layer, or introduce new interfaces, and their effects are influenced by the wetting and bonding states of different substrates. To explain why a certain combination improves hardness without improving color, one can consider surface morphology, coating thickness, and interfacial integrity after aging. Improvements at a single endpoint cannot replace observations of other functions; therefore, multi-endpoint design is directly relevant here."
+          },
+          {
+            "type": "p",
+            "text": "A 2025 study of 72 specimens compared heat-cured and printed denture-base polymers, measuring strength, hardness and colour after thermocycling. Flexural strength, tensile strength and hardness of the tested printed materials were affected by ageing, highlighting the need to assess initial properties and retention after environmental exposure separately. [R19]"
+          },
+          {
+            "type": "p",
+            "text": "Simultaneous observation of multiple mechanical parameters can distinguish between surface softening and changes in overall load-bearing capacity. Tensile and bending parameters differ in their sensitivity to defect location and stress state, and hardness primarily describes the local surface layer; therefore, inconsistencies in these parameters can help pinpoint the scale of change. Further integration with water absorption, dissolution, and chemical characterization can examine candidate mechanisms such as plasticization, residual reactions, or interfacial changes, rather than attributing all performance degradation to a single explanation."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Trace failure back to its origin"
+          },
+          {
+            "type": "p",
+            "text": "If the bar remains strong while the appliance fails, locate thin sections, interface separation or geometry-driven load concentration. The failure site determines whether to revise resin, bonding or geometry. [R01] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Retain the first design as a retest reference."
+          }
+        ]
+      },
+      {
+        "title": "Comparing the evidence",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Vary orientation and cure within one resin and printer, then compare strength, curvature, colour change and bonding. Match specimen thickness, loading and ageing across products. Pair shear strength with the location of failure to see whether treatment improved the joint or moved failure into the substrate. [R01] [R04] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Industry approaches and documented products",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Formlabs links the Form 4B platform to specific restorative indications and materials. The Myerson TruJetX3 and Trusana One presented by Zahn Dental take an inkjet approach to multi-region dentures. Both routes need validated fabrication and post-processing conditions tied to the individual part batch. [R10] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "VITA's 2024 product documentation lists AKZENT LC and other systems for individualizing polymer-restoration surfaces, incorporating stains and glazes into digital restorative workflows. [R20] A 2025 independent experiment directly used AKZENT LC on different printed denture-base materials, showing why surface treatments must be evaluated with their substrates. [R18] The company supplies a usable treatment, while research explains its effects in specific combinations."
+          },
+          {
+            "type": "p",
+            "text": "A NextDent document issued in 2025 provides a material–printer compatibility table with a November 2024 status date, distinguishing validated combinations from those still being evaluated. [R21] This treats materials as equipment-linked systems rather than isolated resin bottles. Compatibility status can guide testing, but specific curing, cleaning and geometric conditions must still be documented for reproducible manufacturing."
+          },
+          {
+            "type": "p",
+            "text": "Carbon released its DB 4000 baseplate resin in August 2026, emphasizing fracture work, precision, and a single-curing process for its M-series platform. [R22] The product description shows a focus shifting from initial strength to damage tolerance and the manufacturing process. Corresponding independent evaluations can compare fracture work after aging, the location of intact baseplate failure, and actual rework, and track material updates and process updates separately."
+          },
+          {
+            "type": "p",
+            "text": "Formlabs' current digital-denture guide covers separate-component assembly, surface finishing, repair and relining. [R23] Including maintenance means that properties of newly manufactured materials must be assessed alongside colour, bonding and load bearing after reprocessing. Product timelines can therefore track changes in initial manufacturing and repair protocols, asking whether they reduce repeated work and patient downtime over the service period."
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and translational testing",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN121101779A treats local properties as design variables. CN120168711A links ceramic ink to direct writing, and CN119735782A concerns a photosensitive prepolymer and resin composition. Local modulus, internal defects, failure mode and retained properties after ageing provide separate tests of these mechanisms. [R07] [R08] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Use a state matrix after manufacture, cleaning, post-treatment and hydrothermal/wear exposure. Match thickness and regions, retain unaged controls and alternative finishing combinations, and distinguish dimensional from material deterioration. Artificial-saliva screening identifies mechanisms/ranking before device/use-condition confirmation. Two-year crown debonding and color changes remain separate endpoints.[R14][R24][R25] Trace aged changes to pre-exposure states. Strength may reflect conversion, pores or thickness; color may reflect adsorption or bulk change. Retain repeated regional measurements and matched destructive-test specimens, recording polishing, glaze and cleaning versions. Changed processing requires rechecking rankings rather than transferring durability judgments by trade name."
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Patent-derived variable",
+              "Proposed comparison, endpoints and next decision"
+            ],
+            "rows": [
+              [
+                "Regional resin",
+                "Compare uniform/regional parameters in one resin for conversion, hardness, uptake and relaxation. Interregional cracking or storage drift narrows parameter differences.[R07]"
+              ],
+              [
+                "Optical origin",
+                "Compare bulk/surface coloring before/after aging for color, roughness and strength. Color removal by polishing or uneven wear exposure requires depth/finishing revision.[R26]"
+              ],
+              [
+                "Infiltration/sintering",
+                "Compare infiltration variants from equal green bodies for phases, translucency, pores and fatigue. Better translucency with cracks/wet deterioration redirects infiltration and thermal processing.[R27]"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Research and adoption outlook",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Track fabrication and service data at the finished-device level, prioritizing misfit, wear, fracture and rebonding after thermal and mechanical loading. Persistent differences across printers using the same resin would justify validating the resin and workflow as one combination. [R01] [R05]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Characterization of temporary and permanent 3D-printed crown and bridge resins.",
+        "url": "https://doi.org/10.2340/biid.v12.43584",
+        "year": "2025",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R01"
+      },
+      {
+        "title": "Evaluation of mechanical properties and color stability of 3D-printed denture base materials following two surface treatments.",
+        "url": "https://doi.org/10.1186/s12903-025-06056-5",
+        "year": "2025",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R02"
+      },
+      {
+        "title": "A Comparative In Vitro Study of Materials for Provisional Restorations Manufactured With Additive (3Dprinting), Subtractive (Milling), and Conventional Techniques.",
+        "url": "https://doi.org/10.1111/jerd.13481",
+        "year": "2025",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R03"
+      },
+      {
+        "title": "Influence of Surface Treatment and Protracted Ageing on the Shear Bond Strength of Orthodontic Brackets to Two Digitally Fabricated (Milled and 3D-Printed) Polymethacrylate-Based Provisional Crowns.",
+        "url": "https://doi.org/10.3390/polym17050699",
+        "year": "2025",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R04"
+      },
+      {
+        "title": "Effect of Printing Layer Thickness and Postprinting Conditions on the Flexural Strength and Hardness of a 3D-Printed Resin.",
+        "url": "https://doi.org/10.1155/2022/8353137",
+        "year": "2022",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R05"
+      },
+      {
+        "title": "Influence of Sandblasting Particle Size on the Shear Bond Strength of Orthodontic Brackets to Milled and 3D-Printed Provisional Crowns or Materials After Artificial Aging.",
+        "url": "https://doi.org/10.3390/jfb16120457",
+        "year": "2025",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R06"
+      },
+      {
+        "title": "Dental appliance with regional differentiation physical properties and additive manufacturing method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN121101779A",
+        "year": "2025",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R07"
+      },
+      {
+        "title": "Ink direct-writing 3D printing ceramic material as well as preparation method and application thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120168711A",
+        "year": "2025",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R08"
+      },
+      {
+        "title": "Photosensitive prepolymer, photosensitive resin composition and application thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119735782A",
+        "year": "2025",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R09"
+      },
+      {
+        "title": "Formlabs Launches Form 4, Its Fastest and Most Versatile 3D Printer",
+        "url": "https://dental.formlabs.com/global/company/press/formlabs-launches-form-4-its-fastest-most-versatile-3d-printer/",
+        "year": "",
+        "kind": "Company announcement",
+        "source": "Company announcement",
+        "id": "R10"
+      },
+      {
+        "title": "Zahn Dental Showcases One-Piece 3D Printed Denture System at LMT Lab Day",
+        "url": "https://news.henryschein.com/press-releases/press-release-details/2024/Zahn-Dental-Showcases-One-Piece-3D-Printed-Denture-System-at-LMT-Lab-Day-to-Help-Laboratories-Enhance-Digital-Workflows-02-22-2024/default.aspx",
+        "year": "",
+        "kind": "Company announcement",
+        "source": "Company announcement",
+        "id": "R11"
+      },
+      {
+        "title": "Evaluation of Dimensional Changes According to Aging Period and Postcuring Time of 3D-Printed Denture Base Prostheses: An In Vitro Study",
+        "year": "2021",
+        "source": "Materials",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8539717/",
+        "kind": "原始研究",
+        "id": "R12"
+      },
+      {
+        "title": "Effect of Nitrogen Gas Post-Curing and Printer Type on the Mechanical Properties of 3D-Printed Hard Occlusal Splint Material",
+        "year": "2022",
+        "source": "Polymers",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9571503/",
+        "kind": "原始研究",
+        "id": "R13"
+      },
+      {
+        "title": "Deformation analysis of 3D-printed three-unit fixed partial dentures according to various cleaning strategies after DLP 3D printing: a geometric library matching approach",
+        "year": "2025",
+        "source": "Journal of Advanced Prosthodontics",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11886403/",
+        "kind": "原始研究",
+        "id": "R14"
+      },
+      {
+        "title": "Effects of 3D-printers and manufacturer-specified post-curing units on the dimensional accuracy, compressive strength, and degree of conversion of resin for fixed dental prostheses",
+        "year": "2025",
+        "source": "Journal of Dental Sciences",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12254842/",
+        "kind": "原始研究",
+        "id": "R15"
+      },
+      {
+        "id": "R16",
+        "title": "In vitro bonding strength of denture teeth to denture base in CAD/CAM-milled, 3D-printed and conventional manufacturing processes",
+        "year": "2024在线／2025卷期",
+        "source": "Clinical Oral Investigations",
+        "kind": "原始研究",
+        "url": "https://link.springer.com/article/10.1007/s00784-024-06099-y"
+      },
+      {
+        "id": "R17",
+        "title": "Improving reline bonding in 3D-printed dentures: an experimental in vitro study",
+        "year": "2025",
+        "source": "Journal of Dentistry",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40460970/"
+      },
+      {
+        "title": "Evaluation of mechanical properties and color stability of 3D-printed denture base materials following two surface treatments",
+        "year": "2025",
+        "source": "BMC Oral Health",
+        "url": "https://link.springer.com/article/10.1186/s12903-025-06056-5",
+        "kind": "原始研究",
+        "id": "R18"
+      },
+      {
+        "title": "An In-Vitro Evaluation of Strength, Hardness, and Color Stability of Heat-Polymerized and 3D-Printed Denture Base Polymers After Aging",
+        "year": "2025",
+        "source": "Polymers",
+        "url": "https://www.mdpi.com/2073-4360/17/3/288",
+        "kind": "原始研究",
+        "id": "R19"
+      },
+      {
+        "title": "VITA AKZENT LC characterization",
+        "year": "2024",
+        "source": "VITA Zahnfabrik",
+        "url": "https://www.vita-zahnfabrik.com/datei.php?src=portal%2Fsap%2Fkompendium%2Fausgaben%2F263644%2Fdownload%2F180076%2FVITA-Characterization_EN_7.2024.pdf",
+        "kind": "企业技术资料",
+        "id": "R20"
+      },
+      {
+        "title": "NextDent compatibility chart",
+        "year": "2025文件／2024年11月状态",
+        "source": "3D Systems",
+        "url": "https://www.3dsystems.com/sites/default/files/2025-05/3d-systems-nextdent-compatibility-chart-2025.pdf",
+        "kind": "企业技术资料",
+        "id": "R21"
+      },
+      {
+        "title": "Carbon launches DB 4000 denture base resin",
+        "year": "2026",
+        "source": "Carbon",
+        "url": "https://www.carbon3d.com/news/press-releases/carbon-launches-db-4000-a-high-impact-denture-base-resin-delivering-high-work-of-fracture-print-accuracy-and-better-economics-for-dental-labs",
+        "kind": "企业公告",
+        "id": "R22"
+      },
+      {
+        "title": "Application Guide: 3D Printing Digital Dentures",
+        "year": "2026年现行资料",
+        "source": "Formlabs",
+        "url": "https://dental.formlabs.com/global/indications/digital-dentures/guide/",
+        "kind": "企业技术资料",
+        "id": "R23"
+      },
+      {
+        "title": "Mechanical Properties of Dental Occlusal Splint Materials After Accelerated Aging in Artificial Saliva: An In Vitro Study",
+        "year": "2026",
+        "source": "Dentistry Journal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13511532/",
+        "kind": "原始研究",
+        "id": "R24"
+      },
+      {
+        "title": "Performance of posterior 3D printed resin-matrix ceramic crowns fabricated in a fully digital workflow: a two-year prospective clinical study",
+        "year": "2026",
+        "source": "Clinical Oral Investigations",
+        "url": "https://link.springer.com/article/10.1007/s00784-026-06883-y",
+        "kind": "原始研究",
+        "id": "R25"
+      },
+      {
+        "id": "R26",
+        "title": "Raw material and additive manufacturing method of colorful multi-transparency dental restoration",
+        "year": "2021",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN113416071A",
+        "source": "Espacenet",
+        "kind": "patent"
+      },
+      {
+        "id": "R27",
+        "title": "Method for improving semi-permeability and strength of additive manufactured zirconia dental restoration",
+        "year": "2024",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN118078643A",
+        "source": "Espacenet",
+        "kind": "patent"
+      }
+    ]
+  },
+  "de": {
+    "id": "H14",
+    "p": "P2",
+    "title": "Dentale Restaurationswerkstoffe: Mechanik, Verbund und Dauerhaftigkeit",
+    "subtitle": "Versagen von Prothesen und Kronen aus dem Materialzustand erklären",
+    "thesis": "Schichtorientierung, Härtung und hydrothermale Beanspruchung verändern das Verhalten desselben Harzes. Für die Wahl eines Prothesen- oder Kronen-Brücken-Systems sind Matrix, Grenzflächen, Endgeometrie und Versagen im Gebrauch gemeinsam zu betrachten. [R01] [R02] [R05]",
+    "questions": [],
+    "graph": {
+      "title": "Forschungsverlauf · Dentale Restaurationswerkstoffe: Mechanik, Verbund und Dauerhaftigkeit",
+      "summary": "Die Fertigungskontrolle verzweigt in Volumenverhalten und Fügegrenzfläche. Hydrothermale Alterung und Verschleiß beanspruchen beide Pfade. Versagen am Gesamtbauteil gibt Rückmeldung für Konstruktion und Fertigung.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2025",
+          "question": "Probekörper der vorgesehenen Anwendung zuordnen.",
+          "title": "Harz und Zielgeometrie festlegen",
+          "evidence": "Ein In-vitro-Vergleich provisorischer Versorgungen umfasste Druck, Fräsen und konventionelle Fertigung. Solche Gruppen liefern Referenzen. Ändern sich Werkstoff und Verfahren zugleich, gilt der Befund für das Gesamtsystem.",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2022–2025",
+          "question": "Schichtlage zur Last und Härtungsbedingungen dokumentieren.",
+          "title": "Orientierung und Nachbearbeitung",
+          "evidence": "Die Dreipunktbiegeproben wurden bei 0°, 45° und 90° gedruckt. Trocken erreichte Temp PRINT bei 45° 117 MPa und CROWNTEC bei 0° 102 MPa. Der jeweilige Spitzenwert unterschied sich signifikant von der zugehörigen 90°-Gruppe. Die günstigste Orientierung ist somit formulierungsspezifisch.",
+          "refs": [
+            "R01",
+            "R05"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2025",
+          "question": "Versagensort im Verbund oder im Material erfassen.",
+          "title": "Oberflächenbehandlung und Haftung",
+          "evidence": "Studien zu Oberflächenbehandlung und Alterung verwendeten die Scherhaftung von Brackets auf gedruckten und gefrästen provisorischen Methacrylatkronen zur Prüfung der Grenzfläche. Eine weitere Studie variierte die Strahlkorngröße und prüfte die Wirkung nach künstlicher Alterung.",
+          "refs": [
+            "R04",
+            "R06"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2025",
+          "question": "Reparierbarkeit beim Systemvergleich berücksichtigen.",
+          "title": "Gesamtbauteil und Reparatur",
+          "evidence": "Die Bruchlast der gesamten Krone ergänzt die Biegefestigkeit am Stab. Kronenspannungen hängen von Form, Abstützung und Verbund ab. Bei Prothesen sind Verformung der Basis, Zahnmontage und Zustand nach Unterfütterung zu erfassen. [LR01]",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025",
+          "question": "Ausgangswert, Änderung und verbleibende Eigenschaft angeben.",
+          "title": "Alterung, Farbe und Verschleiß",
+          "evidence": "Die hydrothermale Alterung verringerte in der Studie mit CROWNTEC und Temp PRINT die Biegefestigkeit der gedruckten Gruppen. CROWNTEC zeigte höhere Härte und größeren Verschleiß. Härte und Abrieb sind daher getrennt zu prüfen.",
+          "refs": [
+            "R01",
+            "R02"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2025",
+          "question": "Die Ausgangskonstruktion als Referenz der Wiederholungsprüfung beibehalten.",
+          "title": "Ursprung des Versagens zurückverfolgen",
+          "evidence": "Bleibt der Stab fest und versagt trotzdem die Versorgung, sind dünne Abschnitte, Grenzflächenablösung oder geometrisch bedingte Lastkonzentrationen zu lokalisieren. Der Versagensort bestimmt, ob Harz, Verbund oder Geometrie angepasst wird.",
+          "refs": [
+            "R01",
+            "R04"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Orientierung und Nachbearbeitung",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Oberflächenbehandlung und Haftung",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Gesamtbauteil und Reparatur",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Gesamtbauteil und Reparatur",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Alterung, Farbe und Verschleiß",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Ursprung des Versagens zurückverfolgen",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Orientierung und Oberfläche nach Alterungsversagen anpassen",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Untersuchungsrahmen und Ziele",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Ausgangspunkt ist der Polymerisationszustand. Schichtverbund, Oberflächenverbund, Dicke und Alterung werden getrennt betrachtet. Festigkeit, Verschleiß, Farbe und Reparatur beantworten unterschiedliche Fragen. Kronen- und Brückenbereiche werden anders belastet als Prothesenbasen, weshalb die vorgesehene Anwendung erfasst wird."
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Einordnung der Einzelschritte",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Harz und Zielgeometrie festlegen"
+          },
+          {
+            "type": "p",
+            "text": "Ein In-vitro-Vergleich provisorischer Versorgungen umfasste Druck, Fräsen und konventionelle Fertigung. Solche Gruppen liefern Referenzen. Ändern sich Werkstoff und Verfahren zugleich, gilt der Befund für das Gesamtsystem. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Probekörper der vorgesehenen Anwendung zuordnen."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2021 verglich gedruckte Ober- und Unterkieferbasen ohne Nachhärtung sowie nach 5, 15, 30 oder 60 Minuten Nachhärtung. Die Abmessungen wurden 28 Tage lang verfolgt. Kürzer nachgehärtete Gruppen veränderten sich später stärker; Unterkieferbasen waren empfindlicher, und besonders am ersten Tag traten ausgeprägte Änderungen auf.[R12]"
+          },
+          {
+            "type": "p",
+            "text": "Der Wert der Zeitreihenanalyse liegt darin, die Form unmittelbar nach Verlassen des Instruments von ihrem späteren stationären Zustand zu trennen. Die Nachhärtung kann das Polymernetzwerk weiterhin verändern und gleichzeitig Verformungen im gesamten Instrument hervorrufen oder abbauen; die unterschiedlichen Geometrien der Ober- und Unterbacken bedeuten, dass dieselbe Behandlung nicht dieselbe Reaktion hervorruft. Untersuchungen können Flächenabtastung und die Messung von Schlüsselabständen nutzen, um Schrumpfung, Biegung und lokale Verformung zu verfolgen und diese dann mit dem Grad der Probenreaktion zu korrelieren, um festzustellen, ob eine Veränderung primär durch die fortgesetzte Materialreaktion oder geometrische Einschränkungen bedingt ist."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2022 kombinierte LCD- und DLP-Druck mit Blitzlichthärtung an Luft oder unter Stickstoff. An starren Aufbissschienenmaterialien wurden Biegeverhalten, Härte, Zähigkeit, Konversionsgrad, Wasseraufnahme und Löslichkeit geprüft. Atmosphäre und Druckverfahren beeinflussten mehrere Endpunkte; Zähigkeit und weitere Maße änderten sich nicht im selben Muster.[R13]"
+          },
+          {
+            "type": "p",
+            "text": "Der Atmosphärentest berücksichtigt Oberflächenreaktionsbedingungen bei der Materialbewertung. Er hilft zu überprüfen, ob der Polymerisationszustand der Oberfläche mit den mechanischen Eigenschaften übereinstimmt. Die kombinierten Änderungen der Härte und der Biegeergebnisse erfordern jedoch weiterhin direkte chemische oder mikroskopische Nachweise zur Erklärung. Verbessert eine Behandlung lediglich die Oberfläche, ohne die Rissausbreitung zu beeinflussen, deutet dies möglicherweise darauf hin, dass unterschiedliche Eigenschaften von verschiedenen Strukturebenen bestimmt werden. Die separate Messung der Bruchfläche, der Oberflächenschicht und des inneren Netzwerks ermöglicht es, diesen Unterschied als überprüfbare Hypothese für weitere Untersuchungen zu etablieren."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Orientierung und Nachbearbeitung"
+          },
+          {
+            "type": "p",
+            "text": "Die Dreipunktbiegeproben wurden bei 0°, 45° und 90° gedruckt. Trocken erreichte Temp PRINT bei 45° 117 MPa und CROWNTEC bei 0° 102 MPa. Der jeweilige Spitzenwert unterschied sich signifikant von der zugehörigen 90°-Gruppe. Die günstigste Orientierung ist somit formulierungsspezifisch. [R01] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Schichtlage zur Last und Härtungsbedingungen dokumentieren."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2025 fertigte dreigliedrige Brücken auf zwei Druckern und verglich fünf Reinigungsstrategien mit Ethanol, Isopropanol und Kombinationen mit Ultraschall. Die Registrierung an einer Geometriebibliothek zeigte, dass Gerät und Bewertungsmaß, etwa Winkel oder Abstand, das erfasste Verformungsverhalten gemeinsam beeinflussten.[R14]"
+          },
+          {
+            "type": "p",
+            "text": "Die dreiteilige Struktur ist effektiver als einfache Proben, um lokale Verschiebungen und Spannweitenabweichungen aufzudecken. Durch Fixierung eines Endes und Vergleich der Position des anderen lässt sich die Winkelverschiebung ermitteln, die durch die optimale Gesamtpassung möglicherweise kompensiert wird. Die Reinigung umfasst daher zwei Aspekte: die Entfernung nicht umgesetzter Rückstände und die Erhaltung der gewünschten Form während der Verarbeitung. Wechselwirkungen zwischen Lösungsmittel, Ultraschall und Trocknung sind möglich, weshalb Messungen in kontrollierten Kombinationen sinnvoll sind, anstatt sich allein auf die Reinigungszeit als Erklärung zu verlassen."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2025 kombinierte dasselbe Harz für festsitzende Restaurationen mit zwei DLP-Druckern und zwei Aushärtungsgeräten. Gemessen wurden Abmessungen, Bruchfestigkeit und FTIR-Konversionsgrad. Die Kombinationen unterschieden sich; das Nachhärtungsgerät beeinflusste mehrere Ergebnisse besonders deutlich.[R15]"
+          },
+          {
+            "type": "p",
+            "text": "Das Kreuzdesign ermöglicht die separate Betrachtung des Druckprozesses und zusätzlicher Polymerisationsstufen. Die gleichzeitige Beobachtung von Umwandlungsrate und Festigkeit kann überprüfen, ob das Materialverhalten mit Laständerungen übereinstimmt; Dimensionsänderungen erinnern die Forschenden zudem daran, geometrische Randbedingungen einzuhalten. Es ist zu beachten, dass verschiedene Geräte gleichzeitig Spektrum, Energieverteilung und Temperatur verändern; daher dienen Gerätebezeichnungen lediglich der Identifizierung der jeweiligen Kombination. Weitere Messungen und Kontrollen dieser physikalischen Größen sind erforderlich, um einen allgemeinen Mechanismus zu ermitteln."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Oberflächenbehandlung und Haftung"
+          },
+          {
+            "type": "p",
+            "text": "Studien zu Oberflächenbehandlung und Alterung verwendeten die Scherhaftung von Brackets auf gedruckten und gefrästen provisorischen Methacrylatkronen zur Prüfung der Grenzfläche. Eine weitere Studie variierte die Strahlkorngröße und prüfte die Wirkung nach künstlicher Alterung. [R04] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Versagensort im Verbund oder im Material erfassen."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Gesamtbauteil und Reparatur"
+          },
+          {
+            "type": "p",
+            "text": "Die Bruchlast der gesamten Krone ergänzt die Biegefestigkeit am Stab. Kronenspannungen hängen von Form, Abstützung und Verbund ab. Bei Prothesen sind Verformung der Basis, Zahnmontage und Zustand nach Unterfütterung zu erfassen. [R01] [LR01]"
+          },
+          {
+            "type": "p",
+            "text": "Reparierbarkeit beim Systemvergleich berücksichtigen."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von Löscher et al., die 2024 online veröffentlicht und in der Ausgabe 2025 aufgenommen wurde, untersuchte elf Kombinationen künstlicher Zähne mit gleicher Zahnform und Verbindungsfläche, jeweils bestehend aus acht Teilen. Die künstlichen Zähne, Prothesenbasen und Verbindungsmethoden wurden variiert, anschließend wurden thermomechanische Zyklen und zerstörende Belastungen angewendet. Die Dauer der Zyklen und die Zerstörungskräfte unterschieden sich zwischen den Kombinationen, wobei einige gefräste, gepresste und vorgefertigte Systeme eine bessere Leistung zeigten. [R16]"
+          },
+          {
+            "type": "p",
+            "text": "Diese Konstruktion beantwortet die Frage, welche Komponente im System zuerst zum schwächsten Punkt wird. Eine einheitliche Geometrie reduziert den Einfluss der Zahnform auf die Belastung, während Variationen in der Kombination aus Zahnstruktur, Basis und Verbinder dazu beitragen, Kompatibilitätsprobleme zu identifizieren, die bei der Einzelbewertung der Materialien nicht erkennbar sind. Dauerfestigkeit und Bruchkraft dienen unterschiedlichen Zwecken: Erstere erfasst die Schadensakkumulation, während letztere die verbleibende Tragfähigkeit beschreibt. Nur durch die Betrachtung beider Größen lässt sich feststellen, ob eine bestimmte Kombination frühzeitig versagt oder nach mehreren Lastwechseln einer höheren Belastung standhält."
+          },
+          {
+            "type": "p",
+            "text": "Die Mechanismusanalyse sollte Versagensort und -festigkeit gleichermaßen berücksichtigen. Verstärkungen an den Schnittstellen können dazu führen, dass Risse in die Zahnstruktur oder die Prothesenbasis eindringen, was die Lastübertragung und die nachfolgenden Reparaturmethoden verändert. Unter gleicher Belastung unterscheidet sich der Ausfall eines einzelnen, leicht austauschbaren Zahns hinsichtlich der Nutzungsdauer von einem tiefen Bruch der Prothesenbasis. Daraus ergeben sich zwei Forschungsrichtungen: die Beibehaltung der modularen Struktur und die Verbesserung von Positionierung und Verbindungen oder die Änderung der Fertigungsmethoden zur Reduzierung des Montageaufwands. Beide Ansätze müssen letztendlich am Ende der Nutzungsdauer verglichen werden."
+          },
+          {
+            "type": "p",
+            "text": "Eine DentaBase-Studie von 2025 verglich mechanische und chemische Vorbehandlungen an 90 Proben. Die mediane Zugfestigkeit betrug 25,9 MPa für die intakte Kontrolle, 11,5 MPa für die unbehandelte Unterfütterungsgruppe und 19,7 MPa nach Sandstrahlen plus Monomer. Alle unterfütterten Gruppen versagten an der Grenzfläche zwischen Basis und Unterfütterungsmaterial.[R17]"
+          },
+          {
+            "type": "p",
+            "text": "Die Unterfütterung mit stellt die Gewebeoberflächenanpassung wieder her, wodurch sich die Forschungsaufgabe von der primären Zahn-Basis-Verbindung unterscheidet. Die ursprüngliche Basis hat bereits ein vernetztes Gefüge ausgebildet, und das neue Material muss eine kontinuierliche Lastübertragung auf seiner Oberfläche gewährleisten. Durch Aufrauen wird die Kontaktfläche vergrößert, und eine chemische Behandlung kann die Benetzung oder die Oberflächenhaftung verbessern; die Kombination dieser beiden Faktoren erfordert eine weitere Differenzierung mittels Oberflächenmorphologie und chemischer Charakterisierung. Die Ergebnisse verschiedener Behandlungsgruppen deuten zudem darauf hin, dass kein monotoner Zusammenhang zwischen der Anzahl der komplexen Schritte und dem Verbindungseffekt angenommen werden sollte."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Alterung, Farbe und Verschleiß"
+          },
+          {
+            "type": "p",
+            "text": "Die hydrothermale Alterung verringerte in der Studie mit CROWNTEC und Temp PRINT die Biegefestigkeit der gedruckten Gruppen. CROWNTEC zeigte höhere Härte und größeren Verschleiß. Härte und Abrieb sind daher getrennt zu prüfen. [R01] [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Ausgangswert, Änderung und verbleibende Eigenschaft angeben."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2025 verglich an 180 Proben aus konventionellem und vier gedruckten Prothesenbasismaterialien mechanisches Polieren mit VITA-AKZENT-LC-Glasur, gefolgt von 5000 Temperaturzyklen in Kaffee. Die Wirkung auf Festigkeit, Härte, Rauheit und Farbe war materialabhängig; eine gleichzeitige Verbesserung aller Maße trat nicht auf.[R18]"
+          },
+          {
+            "type": "p",
+            "text": "Dieses Ergebnis hebt die Oberflächenveredelung von einem rein ästhetischen Schritt zu einem integralen Bestandteil des Materialsystems. Beschichtungen können die Rauheit verändern, die äußere Schicht schützen oder neue Grenzflächen schaffen. Ihre Wirkung wird durch den Benetzungs- und Bindungszustand verschiedener Substrate beeinflusst. Um zu erklären, warum eine bestimmte Kombination die Härte verbessert, ohne die Farbe zu beeinflussen, können Oberflächenmorphologie, Beschichtungsdicke und Grenzflächenintegrität nach der Alterung betrachtet werden. Verbesserungen an einem einzelnen Endpunkt können die Beobachtung anderer Funktionen nicht ersetzen; daher ist ein Design mit mehreren Endpunkten hier von direkter Relevanz."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2025 verglich an 72 Proben heißpolymerisierte und gedruckte Prothesenbasispolymere nach Thermozyklierung hinsichtlich Festigkeit, Härte und Farbe. Biege-, Zug- und Härteeigenschaften der geprüften Druckmaterialien wurden von Alterung beeinflusst. Anfangseigenschaften und Verhalten nach Umweltexposition müssen getrennt bewertet werden.[R19]"
+          },
+          {
+            "type": "p",
+            "text": "Die gleichzeitige Beobachtung mehrerer mechanischer Parameter ermöglicht die Unterscheidung zwischen Oberflächenerweichung und Veränderungen der Gesamttragfähigkeit. Zug- und Biegeparameter unterscheiden sich in ihrer Empfindlichkeit gegenüber Defektort und Spannungszustand, während die Härte primär die lokale Oberflächenschicht beschreibt. Daher können Inkonsistenzen dieser Parameter helfen, das Ausmaß der Veränderung zu bestimmen. Die weitere Integration von Wasseraufnahme, Auflösung und chemischer Charakterisierung ermöglicht die Untersuchung möglicher Mechanismen wie Plastifizierung, Restreaktionen oder Grenzflächenveränderungen, anstatt die gesamte Leistungsverschlechterung auf eine einzige Erklärung zurückzuführen."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Ursprung des Versagens zurückverfolgen"
+          },
+          {
+            "type": "p",
+            "text": "Bleibt der Stab fest und versagt trotzdem die Versorgung, sind dünne Abschnitte, Grenzflächenablösung oder geometrisch bedingte Lastkonzentrationen zu lokalisieren. Der Versagensort bestimmt, ob Harz, Verbund oder Geometrie angepasst wird. [R01] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Die Ausgangskonstruktion als Referenz der Wiederholungsprüfung beibehalten."
+          }
+        ]
+      },
+      {
+        "title": "Vergleich der Befunde",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Im selben Drucker und Harzsystem lassen sich Orientierung und Nachhärtung variieren, anschließend Festigkeit, Krümmung, Farbänderung und Haftung vergleichen. Beim Produktvergleich sind Probendicke, Last und Alterung anzugleichen. Scherfestigkeit und Versagensort zeigen gemeinsam, ob die Behandlung den Verbund verbessert oder das Versagen in den Grundwerkstoff verlagert. [R01] [R04] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Industrielle Ansätze und dokumentierte Produkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Formlabs ordnet die Plattform Form 4B konkreten restaurativen Indikationen und Werkstoffen zu. Myerson TruJetX3 und Trusana One, vorgestellt von Zahn Dental, verfolgen einen Inkjet-Ansatz für Prothesen mit mehreren Materialzonen. Beide Ansätze benötigen eine Zuordnung der validierten Fertigungs- und Nachbearbeitungsbedingungen zur jeweiligen Bauteilcharge. [R10] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "VITA führte 2024 AKZENT LC und weitere Systeme zur individuellen Oberflächengestaltung von Polymerrestaurationen auf; Oberflächenfärbung und Glasur wurden Teil des digitalen Ablaufs.[R20] Unabhängige Experimente von 2025 nutzten AKZENT LC an unterschiedlichen gedruckten Prothesenbasismaterialien und zeigten, dass Behandlung und Substrat gemeinsam geprüft werden müssen.[R18] Das Unternehmen liefert ein nutzbares Werkzeug; Forschung erklärt dessen Wirkung in konkreten Kombinationen."
+          },
+          {
+            "type": "p",
+            "text": "NextDent veröffentlichte 2025 eine Material-Drucker-Kompatibilitätstabelle mit Stand November 2024 und unterschied validierte und noch in Bearbeitung befindliche Kombinationen.[R21] Dies verschiebt die Materialverwaltung von einzelnen Harzflaschen auf Gerätekombinationen. Der Kompatibilitätsstatus kann Versuche strukturieren; genaue Aushärtungs-, Reinigungs- und Geometriebedingungen müssen weiterhin dokumentiert werden, damit Ergebnisse einer validierten Kombination reproduzierbar herstellbar sind."
+          },
+          {
+            "type": "p",
+            "text": "Carbon stellte im August 2026 DB 4000 für Prothesenbasen auf seiner M-Serie vor und betonte Brucharbeit, Genauigkeit und einmalige Aushärtung.[R22] Der Fokus erweitert sich damit von Anfangsfestigkeit auf Schadensaufnahme und Fertigung. Unabhängige Prüfungen können Brucharbeit nach Alterung, Versagensorte vollständiger Basen und tatsächliche Nacharbeit vergleichen; Material- und Prozessänderungen sind getrennt zu verfolgen."
+          },
+          {
+            "type": "p",
+            "text": "Die aktuellen Richtlinien von Formlabs für digitale Prothesen umfassen sowohl die modulare Montage als auch die Oberflächenbearbeitung und Unterfütterung. [R23] Die Wartung ist in den Arbeitsablauf integriert, d. h. die Leistung neu hergestellter Materialien muss in Verbindung mit Farbe, Passform und Belastbarkeit nach der Aufbereitung bewertet werden. Der Materialiterationsplan des Unternehmens kann daher Änderungen in den ursprünglichen Herstellungs- und Wartungsprotokollen gleichzeitig erfassen und beobachten, ob das Produkt die Aufbereitung und die Ausfallzeiten der Patienten über seine gesamte Lebensdauer reduziert."
+          }
+        ]
+      },
+      {
+        "title": "Patentmechanismen und Prüfung für den Einsatz",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN121101779A behandelt lokale Eigenschaften als Entwurfsgrößen. CN120168711A verbindet keramische Tinte mit Direktschreiben. CN119735782A betrifft ein lichtempfindliches Präpolymer und die Harzzusammensetzung. Lokaler Modul, innere Defekte, Versagensart und verbleibende Eigenschaften nach Alterung prüfen diese Mechanismen getrennt. [R07] [R08] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Eine Zustandsmatrix nach Fertigung, Reinigung, Nachbehandlung und Wasserwärme-/Abriebexposition verwenden. Dicke/Region angleichen, ungealterte Kontrollen und Finishkombinationen behalten und Maß- von Materialänderung trennen. Kunstspeichelscreening dient Mechanismus/Rangfolge vor Bauteil-/Anwendungsprüfung. Ablösung und Farbänderung zweijähriger Kronen bleiben getrennte Endpunkte.[R14][R24][R25] Alterungsänderungen auf Ausgangszustände zurückführen. Festigkeit kann Umsatz, Poren oder Dicke widerspiegeln; Farbe Adsorption oder Volumenänderung. Wiederholte Regionalmessungen und passende Ersatzproben für zerstörende Tests mit Polier-, Glasur- und Reinigungsversion erhalten. Prozessänderung verlangt neue Rangprüfung statt Übernahme nach Handelsnamen."
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Patentbezogene Variable",
+              "Vorgeschlagener Vergleich, Endpunkte und nächste Entscheidung"
+            ],
+            "rows": [
+              [
+                "Regionales Harz",
+                "Einheitliche/regionale Parameter im gleichen Harz auf Umsatz, Härte, Aufnahme und Relaxation prüfen. Zonenrisse oder Lagerdrift begrenzen Parameterunterschiede.[R07]"
+              ],
+              [
+                "Optischer Ursprung",
+                "Volumen-/Oberflächenfarbe vor/nach Alterung auf Farbe, Rauheit und Festigkeit prüfen. Farbverlust beim Polieren oder ungleichmäßige Freilegung verlangt neue Farbtiefe/Nachbehandlung.[R26]"
+              ],
+              [
+                "Infiltration/Sintern",
+                "Varianten gleicher Grünkörper auf Phasen, Transluzenz, Poren und Ermüdung prüfen. Bessere Transluzenz bei Rissen/Nassabbau verlangt neue Infiltration/Wärmeführung.[R27]"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ausblick auf Forschung und Anwendung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Fertigungs- und Gebrauchsdaten sollten am Endprodukt zusammengeführt werden. Im Fokus stehen Fehlpassung, Verschleiß, Bruch und erneute Befestigung nach thermischer und mechanischer Belastung. Bleiben Druckerunterschiede beim gleichen Harz bestehen, sind Harz und Prozess als Kombination zu validieren. [R01] [R05]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Characterization of temporary and permanent 3D-printed crown and bridge resins.",
+        "url": "https://doi.org/10.2340/biid.v12.43584",
+        "year": "2025",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R01"
+      },
+      {
+        "title": "Evaluation of mechanical properties and color stability of 3D-printed denture base materials following two surface treatments.",
+        "url": "https://doi.org/10.1186/s12903-025-06056-5",
+        "year": "2025",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R02"
+      },
+      {
+        "title": "A Comparative In Vitro Study of Materials for Provisional Restorations Manufactured With Additive (3Dprinting), Subtractive (Milling), and Conventional Techniques.",
+        "url": "https://doi.org/10.1111/jerd.13481",
+        "year": "2025",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R03"
+      },
+      {
+        "title": "Influence of Surface Treatment and Protracted Ageing on the Shear Bond Strength of Orthodontic Brackets to Two Digitally Fabricated (Milled and 3D-Printed) Polymethacrylate-Based Provisional Crowns.",
+        "url": "https://doi.org/10.3390/polym17050699",
+        "year": "2025",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R04"
+      },
+      {
+        "title": "Effect of Printing Layer Thickness and Postprinting Conditions on the Flexural Strength and Hardness of a 3D-Printed Resin.",
+        "url": "https://doi.org/10.1155/2022/8353137",
+        "year": "2022",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R05"
+      },
+      {
+        "title": "Influence of Sandblasting Particle Size on the Shear Bond Strength of Orthodontic Brackets to Milled and 3D-Printed Provisional Crowns or Materials After Artificial Aging.",
+        "url": "https://doi.org/10.3390/jfb16120457",
+        "year": "2025",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R06"
+      },
+      {
+        "title": "Dental appliance with regional differentiation physical properties and additive manufacturing method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN121101779A",
+        "year": "2025",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R07"
+      },
+      {
+        "title": "Ink direct-writing 3D printing ceramic material as well as preparation method and application thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120168711A",
+        "year": "2025",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R08"
+      },
+      {
+        "title": "Photosensitive prepolymer, photosensitive resin composition and application thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119735782A",
+        "year": "2025",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R09"
+      },
+      {
+        "title": "Formlabs Launches Form 4, Its Fastest and Most Versatile 3D Printer",
+        "url": "https://dental.formlabs.com/global/company/press/formlabs-launches-form-4-its-fastest-most-versatile-3d-printer/",
+        "year": "",
+        "kind": "Unternehmensmitteilung",
+        "source": "Unternehmensmitteilung",
+        "id": "R10"
+      },
+      {
+        "title": "Zahn Dental Showcases One-Piece 3D Printed Denture System at LMT Lab Day",
+        "url": "https://news.henryschein.com/press-releases/press-release-details/2024/Zahn-Dental-Showcases-One-Piece-3D-Printed-Denture-System-at-LMT-Lab-Day-to-Help-Laboratories-Enhance-Digital-Workflows-02-22-2024/default.aspx",
+        "year": "",
+        "kind": "Unternehmensmitteilung",
+        "source": "Unternehmensmitteilung",
+        "id": "R11"
+      },
+      {
+        "title": "Evaluation of Dimensional Changes According to Aging Period and Postcuring Time of 3D-Printed Denture Base Prostheses: An In Vitro Study",
+        "year": "2021",
+        "source": "Materials",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8539717/",
+        "kind": "原始研究",
+        "id": "R12"
+      },
+      {
+        "title": "Effect of Nitrogen Gas Post-Curing and Printer Type on the Mechanical Properties of 3D-Printed Hard Occlusal Splint Material",
+        "year": "2022",
+        "source": "Polymers",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9571503/",
+        "kind": "原始研究",
+        "id": "R13"
+      },
+      {
+        "title": "Deformation analysis of 3D-printed three-unit fixed partial dentures according to various cleaning strategies after DLP 3D printing: a geometric library matching approach",
+        "year": "2025",
+        "source": "Journal of Advanced Prosthodontics",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11886403/",
+        "kind": "原始研究",
+        "id": "R14"
+      },
+      {
+        "title": "Effects of 3D-printers and manufacturer-specified post-curing units on the dimensional accuracy, compressive strength, and degree of conversion of resin for fixed dental prostheses",
+        "year": "2025",
+        "source": "Journal of Dental Sciences",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12254842/",
+        "kind": "原始研究",
+        "id": "R15"
+      },
+      {
+        "id": "R16",
+        "title": "In vitro bonding strength of denture teeth to denture base in CAD/CAM-milled, 3D-printed and conventional manufacturing processes",
+        "year": "2024在线／2025卷期",
+        "source": "Clinical Oral Investigations",
+        "kind": "原始研究",
+        "url": "https://link.springer.com/article/10.1007/s00784-024-06099-y"
+      },
+      {
+        "id": "R17",
+        "title": "Improving reline bonding in 3D-printed dentures: an experimental in vitro study",
+        "year": "2025",
+        "source": "Journal of Dentistry",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40460970/"
+      },
+      {
+        "title": "Evaluation of mechanical properties and color stability of 3D-printed denture base materials following two surface treatments",
+        "year": "2025",
+        "source": "BMC Oral Health",
+        "url": "https://link.springer.com/article/10.1186/s12903-025-06056-5",
+        "kind": "原始研究",
+        "id": "R18"
+      },
+      {
+        "title": "An In-Vitro Evaluation of Strength, Hardness, and Color Stability of Heat-Polymerized and 3D-Printed Denture Base Polymers After Aging",
+        "year": "2025",
+        "source": "Polymers",
+        "url": "https://www.mdpi.com/2073-4360/17/3/288",
+        "kind": "原始研究",
+        "id": "R19"
+      },
+      {
+        "title": "VITA AKZENT LC characterization",
+        "year": "2024",
+        "source": "VITA Zahnfabrik",
+        "url": "https://www.vita-zahnfabrik.com/datei.php?src=portal%2Fsap%2Fkompendium%2Fausgaben%2F263644%2Fdownload%2F180076%2FVITA-Characterization_EN_7.2024.pdf",
+        "kind": "企业技术资料",
+        "id": "R20"
+      },
+      {
+        "title": "NextDent compatibility chart",
+        "year": "2025文件／2024年11月状态",
+        "source": "3D Systems",
+        "url": "https://www.3dsystems.com/sites/default/files/2025-05/3d-systems-nextdent-compatibility-chart-2025.pdf",
+        "kind": "企业技术资料",
+        "id": "R21"
+      },
+      {
+        "title": "Carbon launches DB 4000 denture base resin",
+        "year": "2026",
+        "source": "Carbon",
+        "url": "https://www.carbon3d.com/news/press-releases/carbon-launches-db-4000-a-high-impact-denture-base-resin-delivering-high-work-of-fracture-print-accuracy-and-better-economics-for-dental-labs",
+        "kind": "企业公告",
+        "id": "R22"
+      },
+      {
+        "title": "Application Guide: 3D Printing Digital Dentures",
+        "year": "2026年现行资料",
+        "source": "Formlabs",
+        "url": "https://dental.formlabs.com/global/indications/digital-dentures/guide/",
+        "kind": "企业技术资料",
+        "id": "R23"
+      },
+      {
+        "title": "Mechanical Properties of Dental Occlusal Splint Materials After Accelerated Aging in Artificial Saliva: An In Vitro Study",
+        "year": "2026",
+        "source": "Dentistry Journal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13511532/",
+        "kind": "原始研究",
+        "id": "R24"
+      },
+      {
+        "title": "Performance of posterior 3D printed resin-matrix ceramic crowns fabricated in a fully digital workflow: a two-year prospective clinical study",
+        "year": "2026",
+        "source": "Clinical Oral Investigations",
+        "url": "https://link.springer.com/article/10.1007/s00784-026-06883-y",
+        "kind": "原始研究",
+        "id": "R25"
+      },
+      {
+        "id": "R26",
+        "title": "Raw material and additive manufacturing method of colorful multi-transparency dental restoration",
+        "year": "2021",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN113416071A",
+        "source": "Espacenet",
+        "kind": "patent"
+      },
+      {
+        "id": "R27",
+        "title": "Method for improving semi-permeability and strength of additive manufactured zirconia dental restoration",
+        "year": "2024",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN118078643A",
+        "source": "Espacenet",
+        "kind": "patent"
+      }
+    ]
+  }
+}

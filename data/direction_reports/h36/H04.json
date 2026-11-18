@@ -1,0 +1,1022 @@
+{
+  "zh": {
+    "id": "H04",
+    "p": "P2",
+    "title": "耳部与眼部个体化假体及制造辅助器具",
+    "subtitle": "用不同制造路线解决外形、色彩、边缘和固定",
+    "thesis": "耳廓硅胶假体把打印优势集中在母模，数字义眼则将形态和颜色同时送入制造系统。最终适配由组织接触、临床修整和长期维护共同决定。",
+    "questions": [],
+    "graph": {
+      "title": "耳廓与眼窝两条适配路径",
+      "summary": "采集几何后，两条路线分别解决柔性边缘和眼窝适配，再由颜色、贴合及佩戴结果回校。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2018–2024",
+          "refs": [
+            "R01",
+            "R02",
+            "R03"
+          ],
+          "title": "采集缺损侧与对侧",
+          "question": "缺损边界和外观目标来自哪里？",
+          "evidence": "耳廓外表面可镜像对侧几何，眼窝几何和健眼虹膜图像分别提供适合性与色彩输入。"
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2020",
+          "refs": [
+            "R02"
+          ],
+          "title": "打印耳廓模具",
+          "question": "模具质量会怎样传到软假体？",
+          "evidence": "PLA 模具路线平均总时间 575 ± 52 分钟，人工 116 ± 11 分钟。平滑 ABS 模具缩小了表面台阶表现，试验总用时 748 分钟。"
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2018–2019",
+          "refs": [
+            "R03",
+            "R05"
+          ],
+          "title": "眼窝形态与虹膜颜色分开建模",
+          "question": "哪一步负责几何，哪一步负责外观？",
+          "evidence": "体积差重建用于设计眼窝适配形体。半自动打印路线再用转印重现虹膜外观。"
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 0,
+          "time": "2020",
+          "refs": [
+            "R04"
+          ],
+          "title": "检验附着与边缘",
+          "question": "软体接触如何与种植固定结合？",
+          "evidence": "骨整合固定耳假体病例用 CBCT 和修复体导向的数字流程定位固定关系。"
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 2,
+          "time": "2024",
+          "refs": [
+            "R01",
+            "R10"
+          ],
+          "title": "把形色设计送入彩色制造",
+          "question": "自动设计能交付多少临床适配工作？",
+          "evidence": "Moorfields 报告为 10 位患者交付义眼。研究团队估计在该机构同等人工下可达到约五倍的产量，适配时仍由技师处理眼睑等局部因素。"
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2024–2026",
+          "refs": [
+            "R01",
+            "R02",
+            "R11"
+          ],
+          "title": "把重做和皮肤接触纳入交付",
+          "question": "批量生产的对象是几何文件还是临床结果？",
+          "evidence": "将扫描、颜色、材料与修改记录绑定在同一病例，复诊时比较佩戴保持、局部刺激及重新制作耗时。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "外耳镜像进入模具"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "扫描和色彩分路"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "边缘与固定共同验证"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "结合形色进入制造"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "把贴合变化放进病例记录"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "记录技师修整与复诊"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "过厚或刺激反馈解剖输入"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究对象与评价边界",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "外耳软假体的指标是边缘隐蔽、触感、颜色和固定，眼部义眼则要同时考虑眼睑关系、眼窝贴合、虹膜朝向及清洁。中耳听骨替代件以微小结构和声学传递为主，用另一组功能指标。 [R01] [R02] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与研究解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "采集缺损侧与对侧"
+          },
+          {
+            "type": "p",
+            "text": "耳廓外表面可镜像对侧几何，眼窝几何和健眼虹膜图像分别提供适合性与色彩输入。 [R01] [R02] [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "打印耳廓模具"
+          },
+          {
+            "type": "p",
+            "text": "PLA 模具路线平均总时间 575 ± 52 分钟，人工 116 ± 11 分钟。平滑 ABS 模具缩小了表面台阶表现，试验总用时 748 分钟。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "分别报告机器占用、主动人工、边缘修整和返工。改善模具表面可能节省装饰，也可能增加准备时间。"
+          },
+          {
+            "type": "h3",
+            "text": "眼窝形态与虹膜颜色分开建模"
+          },
+          {
+            "type": "p",
+            "text": "体积差重建用于设计眼窝适配形体。半自动打印路线再用转印重现虹膜外观。 [R03] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "检验附着与边缘"
+          },
+          {
+            "type": "p",
+            "text": "骨整合固定耳假体病例用 CBCT 和修复体导向的数字流程定位固定关系。 [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "把形色设计送入彩色制造"
+          },
+          {
+            "type": "p",
+            "text": "Moorfields 报告为 10 位患者交付义眼。研究团队估计在该机构同等人工下可达到约五倍的产量，适配时仍由技师处理眼睑等局部因素。 [R01] [R10]"
+          },
+          {
+            "type": "h3",
+            "text": "把重做和皮肤接触纳入交付"
+          },
+          {
+            "type": "p",
+            "text": "将扫描、颜色、材料与修改记录绑定在同一病例，复诊时比较佩戴保持、局部刺激及重新制作耗时。 [R01] [R02] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "2020 年耳廓研究记录光滑 ABS 模具的成品外观提升和边缘偏厚，说明机械地追求光滑会转移缺陷。义眼研究也发现七位受试者的多个形态候选获得相同适配评分，因而保留候选和人工选择比单纯优化点到点距离更贴近临床。 [R01] [R02]"
+          }
+        ]
+      },
+      {
+        "title": "复核原始数据与交付环节",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "耳廓模具路线有三种不同时间。未抛光 PLA 模具路线的全流程中心值为 575 分钟，占用打印机的时间约占 59%，技师直接操作 116 分钟。抛光 ABS 试制为 748 分钟和 150 分钟。更平滑的模具减少了分层条纹，但分模接缝处出现更厚的飞边。评价应分别比较打印占用、技师时间、边缘修整及完工前返工，才能定位时间转移发生在哪一步。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "眼部全彩打印在满盘条件下折合每件约 6 分钟。Moorfields 报告为 10 位患者交付义眼。形态试戴中，4 位患者至少有一个候选只需调整一次，另有 3 位的可接受候选需要至少两次调整。通过前节光学相干断层扫描（OCT）获取局部眼窝形态，从健眼获取虹膜和巩膜色彩，再由技师调整眼睑关系。成品产能会同时受满盘率和现场适配时间影响。 [R01]"
+          },
+          {
+            "type": "p",
+            "text": "耳廓另一临床个案使用 CBCT 和光学扫描规划外形、导板及固定，在颞骨乳突部放置 4 个 VistaFix 植入体。可见外形由硅胶实现，定位和装卸由骨锚与金属框架承担。如果同一耳廓需复做，保留已接受的边缘、固位件几何以及颜色版本有助于追踪变化。 [R04]"
+          }
+        ]
+      },
+      {
+        "title": "企业技术与服务路线",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Fraunhofer IGD 将视觉数据及 Cuttlefish 打印流程授权给 Ocupeye，Moorfields 负责病例适配，制造链采用 Stratasys 彩色打印体系。色彩管理、形状计算和临床交付因此形成了可单独维护的工序。耳廓方向还有硅胶粉末粘结喷射的实验路线，考察的是直接成形能否承担传统铸造中的材料功能。 [R09] [R10] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "专利设计与制造接口",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN115707438A 把角膜地形信息作为个体化义眼片设计的输入。CN115923122A 的主题是三维仿生义眼片与制造。RU2724391C1 则聚焦耳假体制造装置。可分别检验输入与适配的关系、外观图案复现和耳廓工具的重复性。 [R06] [R07] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "学术与产业的结合点",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "数字设计节省的时间可用来扩大病例量，也可能转移到人工配色和边缘修整。供应商和医院宜按同一病例记录制作节拍及最终修整时长，并同日用自然光及门诊光检查视觉一致性。 [R01] [R02] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "未来演进与验证指标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "条件性进展是跨机构复现相同的扫描、色彩校准与接受标准。首件适配、重新制作间隔、配色修正次数及持续佩戴是比打印机占用时间更完整的服务指标。 [R01] [R02] [R10]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Automatic data-driven design and 3D printing of custom ocular prostheses.",
+        "url": "https://doi.org/10.1038/s41467-024-45345-5",
+        "year": "2024",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "An advanced prosthetic manufacturing framework for economic personalised ear prostheses.",
+        "url": "https://doi.org/10.1038/s41598-020-67945-z",
+        "year": "2020",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "Automatic Design and Fabrication of a Custom Ocular Prosthesis Using 3D Volume Difference Reconstruction (VDR)",
+        "url": "https://doi.org/10.1109/access.2018.2802700",
+        "year": "2018",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Osseointegrated implant-retained auricular prosthesis constructed using cone-beam computed tomography and a prosthetically driven digital workflow: a case report.",
+        "url": "https://doi.org/10.1002/ccr3.3386",
+        "year": "2021",
+        "source": "Clinical Case Reports",
+        "id": "R04"
+      },
+      {
+        "title": "Semi-automated fabrication of customized ocular prosthesis with three-dimensional printing and sublimation transfer printing technology",
+        "url": "https://doi.org/10.1038/s41598-019-38992-y",
+        "year": "2019",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "Personalized ocular prosthesis sheet manufacturing method based on 3D printing technology and corneal topography map assistance",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN115707438A",
+        "year": "2023",
+        "source": "Espacenet",
+        "id": "R06"
+      },
+      {
+        "title": "Manufacturing method of 3D bionic structure ocular prosthesis sheet and ocular prosthesis sheet",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN115923122A",
+        "year": "2023",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "DEVICE FOR MAKING A BIONIC EAR PROSTHESIS",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DRU2724391C1",
+        "year": "2020",
+        "source": "Espacenet",
+        "id": "R08"
+      },
+      {
+        "title": "Binder Jetting of Custom Silicone Powder for Direct Three-Dimensional Printing of Maxillofacial Prostheses",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9831568/",
+        "year": "2022卷期",
+        "source": "3D Printing and Additive Manufacturing",
+        "id": "R09"
+      },
+      {
+        "title": "Breakthrough: patients and ocularists impressed by quality of computer-generated 3D-printed eye prostheses",
+        "url": "https://www.igd.fraunhofer.de/en/media-center/news-from-the-institute/2024/breakthrough-patients-and-ocularists-impressed-by-quality-of-computer-generated-3d-printed-eye-prostheses.html",
+        "year": "2024",
+        "source": "Fraunhofer IGD",
+        "id": "R10"
+      },
+      {
+        "title": "3D-printed prosthetic eyes",
+        "url": "https://www.igd.fraunhofer.de/en/research/public-projects/healthcare/3d-printed-prosthetic-eyes.html",
+        "year": "",
+        "source": "Fraunhofer IGD",
+        "id": "R11"
+      }
+    ]
+  },
+  "en": {
+    "id": "H04",
+    "p": "P2",
+    "title": "Patient-specific auricular and ocular prostheses and fabrication aids",
+    "subtitle": "Distinct fabrication routes for shape, color, margins and retention",
+    "thesis": "Silicone auricular prostheses concentrate the value of printing in mold fabrication. Digital ocular prostheses bring both shape and color into manufacturing. The final fitting depends on tissue contact, clinical adjustment and maintenance.",
+    "questions": [],
+    "graph": {
+      "title": "Two fitting pathways for the auricle and eye socket",
+      "summary": "After geometry capture, the two tracks address flexible margins and socket fit. Color, fit and wear feed back into design.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2018–2024",
+          "refs": [
+            "R01",
+            "R02",
+            "R03"
+          ],
+          "title": "Capture the defect and contralateral anatomy",
+          "question": "What defines defect margins and appearance?",
+          "evidence": "A mirrored contralateral surface can guide auricular shape. Socket geometry and fellow-eye images provide separate fit and color inputs."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2020",
+          "refs": [
+            "R02"
+          ],
+          "title": "Print auricular molds",
+          "question": "How does mold quality transfer to silicone?",
+          "evidence": "The PLA-mold route averaged 575 ± 52 minutes overall and 116 ± 11 minutes of hands-on work. The smoothed ABS route reduced visible stair-stepping and took 748 minutes in the trial."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2018–2019",
+          "refs": [
+            "R03",
+            "R05"
+          ],
+          "title": "Model socket shape and iris color separately",
+          "question": "Which step controls geometry and which controls appearance?",
+          "evidence": "Volume-difference reconstruction was used to design shapes for fitting. A semiautomated printing route used transfer printing to reproduce iris appearance."
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 0,
+          "time": "2020",
+          "refs": [
+            "R04"
+          ],
+          "title": "Check retention and margins",
+          "question": "How does soft contact combine with implant retention?",
+          "evidence": "A case with osseointegrated auricular retention used CBCT and a prosthetically driven workflow to locate attachments."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 2,
+          "time": "2024",
+          "refs": [
+            "R01",
+            "R10"
+          ],
+          "title": "Send shape and color to production",
+          "question": "How much of fitting can automated design deliver?",
+          "evidence": "Moorfields reported delivery to 10 patients. The team estimated approximately five times the output for comparable ocularist effort at its site. Local issues such as eyelid position were addressed at fitting."
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2024–2026",
+          "refs": [
+            "R01",
+            "R02",
+            "R11"
+          ],
+          "title": "Include remakes and tissue contact in delivery",
+          "question": "What scales: geometry files or completed fittings?",
+          "evidence": "Bind scan, color, material and adjustment records to one case. At follow-up, record retention, local irritation and time for a remake."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Mirror the ear into a mold"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Separate scanning and color"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Verify margins and attachment"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Combine shape and color"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Record fitting changes"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Record manual adjustment and follow-up"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Bulk and irritation inform design inputs"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Research scope and outcomes",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "External ear prostheses are assessed for margin concealment, feel, color and retention. Ocular prostheses add eyelid interaction, socket fit, iris alignment and cleaning. Ossicular implants require their own measures of miniature geometry and sound transmission. [R01] [R02] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathways and evidence",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Capture the defect and contralateral anatomy"
+          },
+          {
+            "type": "p",
+            "text": "A mirrored contralateral surface can guide auricular shape. Socket geometry and fellow-eye images provide separate fit and color inputs. [R01] [R02] [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "Print auricular molds"
+          },
+          {
+            "type": "p",
+            "text": "The PLA-mold route averaged 575 ± 52 minutes overall and 116 ± 11 minutes of hands-on work. The smoothed ABS route reduced visible stair-stepping and took 748 minutes in the trial. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Separate machine occupancy, hands-on labor, margin finishing and rework. Smoother molds can save finishing labor while requiring more preparation."
+          },
+          {
+            "type": "h3",
+            "text": "Model socket shape and iris color separately"
+          },
+          {
+            "type": "p",
+            "text": "Volume-difference reconstruction was used to design shapes for fitting. A semiautomated printing route used transfer printing to reproduce iris appearance. [R03] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "Check retention and margins"
+          },
+          {
+            "type": "p",
+            "text": "A case with osseointegrated auricular retention used CBCT and a prosthetically driven workflow to locate attachments. [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "Send shape and color to production"
+          },
+          {
+            "type": "p",
+            "text": "Moorfields reported delivery to 10 patients. The team estimated approximately five times the output for comparable ocularist effort at its site. Local issues such as eyelid position were addressed at fitting. [R01] [R10]"
+          },
+          {
+            "type": "h3",
+            "text": "Include remakes and tissue contact in delivery"
+          },
+          {
+            "type": "p",
+            "text": "Bind scan, color, material and adjustment records to one case. At follow-up, record retention, local irritation and time for a remake. [R01] [R02] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "The 2020 ear study reported smoother prostheses with the ABS mold alongside thicker borders, showing how optimization can move flaws across attributes. In the ocular study, seven participants had the same fit grade for all modeled shapes. Keeping a set of shape options for professional selection can therefore be more informative than minimizing pointwise distance alone. [R01] [R02]"
+          }
+        ]
+      },
+      {
+        "title": "Original results and delivery decisions",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The auricular mould workflow has three distinct time measures. The unsmoothed PLA workflow took 575 minutes overall, about 59% of which was printer time, with 116 minutes of hands-on labour. The smoothed ABS trial took 748 minutes overall and 150 minutes of labour. Smoothing reduced visible layer marks and produced thicker flash at the mould joints. Measure printer occupancy, labour, margin finishing and rework separately to locate where time shifts. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "A full tray of full-colour ocular prostheses corresponds to about 6 minutes of printing per unit. Moorfields delivered prostheses to 10 patients. In the shape assessment, 4 patients had at least one candidate requiring one adjustment, while an acceptable candidate for 3 patients required at least two. Anterior-segment optical coherence tomography (OCT) supplies partial socket geometry, the fellow eye supplies iris and scleral colour and the ocularist refines the relationship to the lids. Output depends on tray utilisation and fitting time. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "A separate auricular case used CBCT and optical scanning to plan shape, guidance and retention, with 4 VistaFix implants placed in the mastoid. Silicone supplies the visible shape. The bone anchors and metal framework govern seating and removal. Saving the accepted margins, retention geometry and colour version supports a later remake. [R04]"
+          }
+        ]
+      },
+      {
+        "title": "Industry technologies and services",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Fraunhofer IGD licensed the visual-data and Cuttlefish printing workflow to Ocupeye, with Moorfields providing clinical fitting and Stratasys hardware used in full-color production. Color management, shape computation and clinical fitting are distinct stages that can be maintained separately. Experimental binder jetting of silicone powder asks whether direct forming can take over material functions from conventional casting. [R09] [R10] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and production interfaces",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN115707438A uses corneal topography as an input to individualized ocular prosthesis design. CN115923122A concerns fabrication of a biomimetic ocular prosthesis. RU2724391C1 focuses on equipment for auricular prosthesis production. They point to separate checks of input to fit, appearance reproduction and tooling repeatability. [R06] [R07] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "Research and industry connections",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Time saved by digital design can increase case capacity or shift into color matching and margin finishing. Supplier and clinic can record production and final adjustment time for each case and check visual matching under daylight and clinic lighting. [R01] [R02] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Outlook and measures of progress",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A conditional next milestone is reproducing scanning, color calibration and acceptance standards across sites. First fitting, time to remake, number of color corrections and continued wear describe service performance more fully than printer occupancy alone. [R01] [R02] [R10]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Automatic data-driven design and 3D printing of custom ocular prostheses.",
+        "url": "https://doi.org/10.1038/s41467-024-45345-5",
+        "year": "2024",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "An advanced prosthetic manufacturing framework for economic personalised ear prostheses.",
+        "url": "https://doi.org/10.1038/s41598-020-67945-z",
+        "year": "2020",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "Automatic Design and Fabrication of a Custom Ocular Prosthesis Using 3D Volume Difference Reconstruction (VDR)",
+        "url": "https://doi.org/10.1109/access.2018.2802700",
+        "year": "2018",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Osseointegrated implant-retained auricular prosthesis constructed using cone-beam computed tomography and a prosthetically driven digital workflow: a case report.",
+        "url": "https://doi.org/10.1002/ccr3.3386",
+        "year": "2021",
+        "source": "Clinical Case Reports",
+        "id": "R04"
+      },
+      {
+        "title": "Semi-automated fabrication of customized ocular prosthesis with three-dimensional printing and sublimation transfer printing technology",
+        "url": "https://doi.org/10.1038/s41598-019-38992-y",
+        "year": "2019",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "Personalized ocular prosthesis sheet manufacturing method based on 3D printing technology and corneal topography map assistance",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN115707438A",
+        "year": "2023",
+        "source": "Espacenet",
+        "id": "R06"
+      },
+      {
+        "title": "Manufacturing method of 3D bionic structure ocular prosthesis sheet and ocular prosthesis sheet",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN115923122A",
+        "year": "2023",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "DEVICE FOR MAKING A BIONIC EAR PROSTHESIS",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DRU2724391C1",
+        "year": "2020",
+        "source": "Espacenet",
+        "id": "R08"
+      },
+      {
+        "title": "Binder Jetting of Custom Silicone Powder for Direct Three-Dimensional Printing of Maxillofacial Prostheses",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9831568/",
+        "year": "2022卷期",
+        "source": "3D Printing and Additive Manufacturing",
+        "id": "R09"
+      },
+      {
+        "title": "Breakthrough: patients and ocularists impressed by quality of computer-generated 3D-printed eye prostheses",
+        "url": "https://www.igd.fraunhofer.de/en/media-center/news-from-the-institute/2024/breakthrough-patients-and-ocularists-impressed-by-quality-of-computer-generated-3d-printed-eye-prostheses.html",
+        "year": "2024",
+        "source": "Fraunhofer IGD",
+        "id": "R10"
+      },
+      {
+        "title": "3D-printed prosthetic eyes",
+        "url": "https://www.igd.fraunhofer.de/en/research/public-projects/healthcare/3d-printed-prosthetic-eyes.html",
+        "year": "",
+        "source": "Fraunhofer IGD",
+        "id": "R11"
+      }
+    ]
+  },
+  "de": {
+    "id": "H04",
+    "p": "P2",
+    "title": "Patientenspezifische Ohr- und Augenprothesen und Fertigungshilfen",
+    "subtitle": "Unterschiedliche Fertigungswege für Form, Farbe, Ränder und Halt",
+    "thesis": "Bei Silikon-Ohrprothesen liegt der Druckvorteil vor allem im Formenbau. Digitale Augenprothesen übertragen Form und Farbe gemeinsam in die Fertigung. Gewebekontakt, klinische Anpassung und Pflege bestimmen die endgültige Versorgung.",
+    "questions": [],
+    "graph": {
+      "title": "Zwei Anpassungspfade für Ohrmuschel und Augenhöhle",
+      "summary": "Nach der Geometrieerfassung werden flexible Ränder und Sitz in der Augenhöhle auf getrennten Pfaden untersucht. Farbe, Passform und Nutzung fließen in den Entwurf zurück.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2018–2024",
+          "refs": [
+            "R01",
+            "R02",
+            "R03"
+          ],
+          "title": "Defekt- und Gegenseite erfassen",
+          "question": "Woher stammen Defektränder und Erscheinungsbild?",
+          "evidence": "Die gespiegelte Gegenseite kann die Ohrform vorgeben. Geometrie der Augenhöhle und Bilder des Partnerauges liefern getrennte Angaben zu Sitz und Farbe."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2020",
+          "refs": [
+            "R02"
+          ],
+          "title": "Ohrformen drucken",
+          "question": "Wie überträgt sich Formenqualität auf Silikon?",
+          "evidence": "Der PLA-Formenpfad benötigte im Mittel 575 ± 52 Minuten insgesamt und 116 ± 11 Minuten Handarbeit. Die geglättete ABS-Form verringerte sichtbare Schichtstufen. Der Versuch dauerte insgesamt 748 Minuten."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2018–2019",
+          "refs": [
+            "R03",
+            "R05"
+          ],
+          "title": "Form der Augenhöhle und Irisfarbe getrennt modellieren",
+          "question": "Welcher Schritt bestimmt Geometrie, welcher das Aussehen?",
+          "evidence": "Die Volumendifferenz-Rekonstruktion diente der Formanpassung. Ein halbautomatischer Druckpfad nutzte Transferdruck für das Erscheinungsbild der Iris."
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 0,
+          "time": "2020",
+          "refs": [
+            "R04"
+          ],
+          "title": "Halt und Ränder prüfen",
+          "question": "Wie verbindet sich weicher Kontakt mit Implantathalt?",
+          "evidence": "Ein Fall mit osseointegriertem Halt nutzte DVT und einen prothetisch orientierten Ablauf zur Positionierung der Befestigung."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 2,
+          "time": "2024",
+          "refs": [
+            "R01",
+            "R10"
+          ],
+          "title": "Form und Farbe in die Fertigung übertragen",
+          "question": "Welchen Anteil der Anpassung übernimmt der automatische Entwurf?",
+          "evidence": "Moorfields berichtete über die Versorgung von zehn Personen. Das Team schätzte bei vergleichbarer Arbeitszeit des Ocularisten etwa das Fünffache der Stückzahl am eigenen Standort. Faktoren wie die Lidposition wurden bei der Anpassung berücksichtigt."
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2024–2026",
+          "refs": [
+            "R01",
+            "R02",
+            "R11"
+          ],
+          "title": "Neuanfertigung und Gewebekontakt in die Versorgung aufnehmen",
+          "question": "Was lässt sich skalieren: Geometriedaten oder abgeschlossene Versorgungen?",
+          "evidence": "Scan-, Farb-, Material- und Anpassungsdaten werden im Fall zusammengeführt. Bei Nachkontrollen werden Halt, lokale Reizung und Zeitaufwand einer Neuanfertigung erfasst."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Ohrspiegelung in die Form übertragen"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Scan und Farbe trennen"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Ränder und Halt gemeinsam prüfen"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Form und Farbe kombinieren"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Passformänderungen dokumentieren"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Nacharbeit und Nachkontrolle erfassen"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Dicke und Reizung korrigieren Entwurfseingaben"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Forschungsgegenstand und Endpunkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Bei äußeren Ohrprothesen zählen unauffällige Ränder, Haptik, Farbe und Halt. Bei Augenprothesen kommen Lidbeziehung, Anpassung an die Augenhöhle, Irislage und Reinigung hinzu. Gehörknöchelchenimplantate erfordern eigene Messgrößen für Mikrogeometrie und Schallübertragung. [R01] [R02] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Evidenz",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Defekt- und Gegenseite erfassen"
+          },
+          {
+            "type": "p",
+            "text": "Die gespiegelte Gegenseite kann die Ohrform vorgeben. Geometrie der Augenhöhle und Bilder des Partnerauges liefern getrennte Angaben zu Sitz und Farbe. [R01] [R02] [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "Ohrformen drucken"
+          },
+          {
+            "type": "p",
+            "text": "Der PLA-Formenpfad benötigte im Mittel 575 ± 52 Minuten insgesamt und 116 ± 11 Minuten Handarbeit. Die geglättete ABS-Form verringerte sichtbare Schichtstufen. Der Versuch dauerte insgesamt 748 Minuten. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Maschinenbelegung, Handarbeit, Randbearbeitung und Nacharbeit werden getrennt erfasst. Glattere Formen können das Finish erleichtern und zugleich mehr Vorbereitung erfordern."
+          },
+          {
+            "type": "h3",
+            "text": "Form der Augenhöhle und Irisfarbe getrennt modellieren"
+          },
+          {
+            "type": "p",
+            "text": "Die Volumendifferenz-Rekonstruktion diente der Formanpassung. Ein halbautomatischer Druckpfad nutzte Transferdruck für das Erscheinungsbild der Iris. [R03] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "Halt und Ränder prüfen"
+          },
+          {
+            "type": "p",
+            "text": "Ein Fall mit osseointegriertem Halt nutzte DVT und einen prothetisch orientierten Ablauf zur Positionierung der Befestigung. [R04]"
+          },
+          {
+            "type": "h3",
+            "text": "Form und Farbe in die Fertigung übertragen"
+          },
+          {
+            "type": "p",
+            "text": "Moorfields berichtete über die Versorgung von zehn Personen. Das Team schätzte bei vergleichbarer Arbeitszeit des Ocularisten etwa das Fünffache der Stückzahl am eigenen Standort. Faktoren wie die Lidposition wurden bei der Anpassung berücksichtigt. [R01] [R10]"
+          },
+          {
+            "type": "h3",
+            "text": "Neuanfertigung und Gewebekontakt in die Versorgung aufnehmen"
+          },
+          {
+            "type": "p",
+            "text": "Scan-, Farb-, Material- und Anpassungsdaten werden im Fall zusammengeführt. Bei Nachkontrollen werden Halt, lokale Reizung und Zeitaufwand einer Neuanfertigung erfasst. [R01] [R02] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Die Ohrstudie von 2020 beschrieb mit der ABS-Form glattere Prothesen und zugleich dickere Ränder. Eine Optimierung kann Mängel zwischen Merkmalen verlagern. In der Augenstudie erhielten alle Formvarianten bei sieben Personen dieselbe Passformbewertung. Die Vorauswahl mehrerer Formen für die Fachkraft kann daher aussagekräftiger sein als allein ein geringer Punktabstand. [R01] [R02]"
+          }
+        ]
+      },
+      {
+        "title": "Ergebnisse der Originalstudien und Konsequenzen für die Versorgung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Beim Formenverfahren für Ohrprothesen sind drei Zeitgrößen zu unterscheiden. Das Verfahren mit ungeglättetem PLA dauerte insgesamt 575 Minuten, rund 59 % davon entfielen auf den Druck und 116 Minuten auf Handarbeit. Der Versuch mit geglättetem ABS dauerte insgesamt 748 Minuten bei 150 Minuten Handarbeit. Die Glättung verringerte sichtbare Schichtlinien und ließ an den Formfugen dickere Grate entstehen. Druckerbelegung, Handarbeit, Randbearbeitung und Nacharbeit getrennt erfassen. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Bei voller Druckplattform entfielen rechnerisch etwa 6 Minuten auf den Druck einer vollfarbigen Augenprothese. Moorfields versorgte 10 Personen. Für 4 war mindestens ein Formvorschlag mit einmaliger Anpassung geeignet. Für 3 erforderte ein akzeptabler Vorschlag mindestens zwei Anpassungen. Eine optische Kohärenztomografie des vorderen Augenabschnitts (OCT) liefert einen Teil der Formdaten. Das Partnerauge liefert Iris- und Sklerafarbe. Die Fachkraft passt die Prothese an die Lider an. Auslastung und Anpassungszeit beeinflussen gemeinsam den Durchsatz. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Ein eigener Fall zur Ohrprothetik nutzte DVT und optische Scans für die Planung von Form, Führung und Halt. Im Warzenfortsatz wurden 4 VistaFix-Implantate eingesetzt. Silikon bildet die sichtbare Form. Knochenanker und Metallgerüst bestimmen Sitz und Entnahme. Dokumentierte Ränder, Befestigungsgeometrie und Farbfassung erleichtern eine spätere Neuanfertigung. [R04]"
+          }
+        ]
+      },
+      {
+        "title": "Technologien und Angebote der Unternehmen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Fraunhofer IGD lizenzierte den Bilddaten- und Cuttlefish-Druckablauf an Ocupeye. Moorfields übernimmt die klinische Anpassung. Für den Farbdruck kommt ein Stratasys-System zum Einsatz. Farbmanagement, Formberechnung und Versorgung sind getrennt betreubare Schritte. Beim experimentellen Binder Jetting von Silikonpulver wird geprüft, ob direkte Formgebung die Materialfunktion des Gusses übernehmen kann. [R09] [R10] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Patentansätze und Fertigungsschnittstellen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN115707438A nutzt Hornhauttopografie als Eingang für den individuellen Augenprothesenentwurf. CN115923122A betrifft die Herstellung einer biomimetischen Augenprothese. RU2724391C1 behandelt ein Fertigungsgerät für Ohrprothesen. Daraus folgen getrennte Prüfungen von Dateneingang und Sitz, Reproduktion des Erscheinungsbilds und Wiederholbarkeit der Werkzeuge. [R06] [R07] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "Verbindungen von Forschung und Industrie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Zeitgewinne im digitalen Entwurf können die Fallkapazität erhöhen oder in Farbabgleich und Randkorrektur fließen. Anbieter und Klinik können Fertigungs- und Anpassungszeit fallbezogen erfassen und das Aussehen bei Tages- und Praxislicht vergleichen. [R01] [R02] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick und Kriterien für Fortschritt",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Ein nächster Meilenstein ist die standortübergreifende Reproduktion von Scan, Farbkalibrierung und Abnahmekriterien. Erstanpassung, Zeit bis zur Neuanfertigung, Zahl der Farbkorrekturen und weitere Nutzung beschreiben die Versorgung umfassender als die Druckerbelegung allein. [R01] [R02] [R10]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Automatic data-driven design and 3D printing of custom ocular prostheses.",
+        "url": "https://doi.org/10.1038/s41467-024-45345-5",
+        "year": "2024",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "An advanced prosthetic manufacturing framework for economic personalised ear prostheses.",
+        "url": "https://doi.org/10.1038/s41598-020-67945-z",
+        "year": "2020",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "Automatic Design and Fabrication of a Custom Ocular Prosthesis Using 3D Volume Difference Reconstruction (VDR)",
+        "url": "https://doi.org/10.1109/access.2018.2802700",
+        "year": "2018",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Osseointegrated implant-retained auricular prosthesis constructed using cone-beam computed tomography and a prosthetically driven digital workflow: a case report.",
+        "url": "https://doi.org/10.1002/ccr3.3386",
+        "year": "2021",
+        "source": "Clinical Case Reports",
+        "id": "R04"
+      },
+      {
+        "title": "Semi-automated fabrication of customized ocular prosthesis with three-dimensional printing and sublimation transfer printing technology",
+        "url": "https://doi.org/10.1038/s41598-019-38992-y",
+        "year": "2019",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "Personalized ocular prosthesis sheet manufacturing method based on 3D printing technology and corneal topography map assistance",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN115707438A",
+        "year": "2023",
+        "source": "Espacenet",
+        "id": "R06"
+      },
+      {
+        "title": "Manufacturing method of 3D bionic structure ocular prosthesis sheet and ocular prosthesis sheet",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN115923122A",
+        "year": "2023",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "DEVICE FOR MAKING A BIONIC EAR PROSTHESIS",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DRU2724391C1",
+        "year": "2020",
+        "source": "Espacenet",
+        "id": "R08"
+      },
+      {
+        "title": "Binder Jetting of Custom Silicone Powder for Direct Three-Dimensional Printing of Maxillofacial Prostheses",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9831568/",
+        "year": "2022卷期",
+        "source": "3D Printing and Additive Manufacturing",
+        "id": "R09"
+      },
+      {
+        "title": "Breakthrough: patients and ocularists impressed by quality of computer-generated 3D-printed eye prostheses",
+        "url": "https://www.igd.fraunhofer.de/en/media-center/news-from-the-institute/2024/breakthrough-patients-and-ocularists-impressed-by-quality-of-computer-generated-3d-printed-eye-prostheses.html",
+        "year": "2024",
+        "source": "Fraunhofer IGD",
+        "id": "R10"
+      },
+      {
+        "title": "3D-printed prosthetic eyes",
+        "url": "https://www.igd.fraunhofer.de/en/research/public-projects/healthcare/3d-printed-prosthetic-eyes.html",
+        "year": "",
+        "source": "Fraunhofer IGD",
+        "id": "R11"
+      }
+    ]
+  }
+}

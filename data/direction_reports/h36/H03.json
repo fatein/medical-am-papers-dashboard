@@ -1,0 +1,1652 @@
+{
+  "zh": {
+    "id": "H03",
+    "p": "P2",
+    "title": "肢体假肢与矫形辅助器具",
+    "subtitle": "从可打印的手部机构到真实任务、适配与维护",
+    "thesis": "手部假肢恢复失去的动作，矫形器利用或辅助保有的运动。两者都需要从用户能力倒推结构、驱动和接触界面，再用真实任务与持续佩戴记录检验。",
+    "questions": [],
+    "graph": {
+      "title": "机构、人体界面与用户反馈",
+      "summary": "按体动、肌电和压力适配分支，最终用日常任务、可靠性和更换周期汇合。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2019",
+          "refs": [
+            "R02",
+            "R07"
+          ],
+          "title": "从保有动作定义任务",
+          "question": "残余关节或肌肉信号足以做什么？",
+          "evidence": "体动部分手指病例从保有的主动活动出发选择抓握任务。不同截肢水平改变控制信号和有效负荷。"
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2018–2019",
+          "refs": [
+            "R01",
+            "R05"
+          ],
+          "title": "打印活动副与传力结构",
+          "question": "少装配能否保持运动和强度？",
+          "evidence": "一体成形假手把装配工作转为制造公差、活动副间隙和材料承载约束。"
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2018–2024",
+          "refs": [
+            "R03",
+            "R04",
+            "R10",
+            "R11"
+          ],
+          "title": "从腕驱动扩展到肌电",
+          "question": "驱动与固定界面怎样分工？",
+          "evidence": "腕驱动支具与肌电辅助手必须同时适应保留活动范围、握持形态和支具穿脱。"
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2024–2025",
+          "refs": [
+            "R14",
+            "R15"
+          ],
+          "title": "接受腔引入压力测量",
+          "question": "表面复制能保证力分布吗？",
+          "evidence": "手工和数字修型比较检查舒适度；滚动台架将模型压力与实际测量对照。"
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 0,
+          "time": "2022–2024",
+          "refs": [
+            "R08",
+            "R09"
+          ],
+          "title": "以共同任务比较抓握",
+          "question": "结构变化影响哪种抓握？",
+          "evidence": "拇指朝向和驱动改变抓握能力。人体拟态手部评价协议为商业和可打印假手提供共同基准。"
+        },
+        {
+          "id": "N6",
+          "stage": 2,
+          "lane": 1,
+          "time": "2019",
+          "refs": [
+            "R02",
+            "R11"
+          ],
+          "title": "把台架输出接到用户任务",
+          "question": "机械能力能否变成可用动作？",
+          "evidence": "单例部分手指假肢在 Box and Block 测试达到每分钟 22 块，无假肢时 18 块，健侧 30 块。"
+        },
+        {
+          "id": "N7",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025–2026",
+          "refs": [
+            "R16",
+            "R18",
+            "R20"
+          ],
+          "title": "检验佩戴与更换周期",
+          "question": "器械在日常使用中何时需要调整？",
+          "evidence": "接受腔随访和假肢公开交付都将修型、维护和服务人员响应变成设计的一部分。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "保留运动提供驱动"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "按信号选择控制方式"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "舒适依赖身体界面"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "零件特性映射任务"
+        },
+        {
+          "from": "N3",
+          "to": "N6",
+          "kind": "advance",
+          "label": "从可驱动到可操作"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "共同协议连接人机比较"
+        },
+        {
+          "from": "N4",
+          "to": "N7",
+          "kind": "advance",
+          "label": "负荷与舒适进入随访"
+        },
+        {
+          "from": "N6",
+          "to": "N7",
+          "kind": "advance",
+          "label": "动作表现进入持续佩戴"
+        },
+        {
+          "from": "N7",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "维护记录反馈任务定义"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究对象与评价边界",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "假手、腕手矫形器与接受腔的性能单位不同。假手以抓取和释放等任务衡量，矫形器关注辅助后的运动和独立操作，接受腔需要在承载与皮肤压力之间维持可接受界面。足踝特定设计另有独立方向。 [R09] [R11] [R14] [R15]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与研究解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "从保有动作定义任务"
+          },
+          {
+            "type": "p",
+            "text": "体动部分手指病例从保有的主动活动出发选择抓握任务。不同截肢水平改变控制信号和有效负荷。 [R02] [R07]"
+          },
+          {
+            "type": "h3",
+            "text": "打印活动副与传力结构"
+          },
+          {
+            "type": "p",
+            "text": "一体成形假手把装配工作转为制造公差、活动副间隙和材料承载约束。 [R01] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "从腕驱动扩展到肌电"
+          },
+          {
+            "type": "p",
+            "text": "腕驱动支具与肌电辅助手必须同时适应保留活动范围、握持形态和支具穿脱。 [R03] [R04] [R10] [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "接受腔引入压力测量"
+          },
+          {
+            "type": "p",
+            "text": "手工和数字修型比较检查舒适度；滚动台架将模型压力与实际测量对照。 [R14] [R15]"
+          },
+          {
+            "type": "h3",
+            "text": "以共同任务比较抓握"
+          },
+          {
+            "type": "p",
+            "text": "拇指朝向和驱动改变抓握能力。人体拟态手部评价协议为商业和可打印假手提供共同基准。 [R08] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "把台架输出接到用户任务"
+          },
+          {
+            "type": "p",
+            "text": "单例部分手指假肢在 Box and Block 测试达到每分钟 22 块，无假肢时 18 块，健侧 30 块。 [R02] [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "检验佩戴与更换周期"
+          },
+          {
+            "type": "p",
+            "text": "接受腔随访和假肢公开交付都将修型、维护和服务人员响应变成设计的一部分。 [R16] [R18] [R20]"
+          },
+          {
+            "type": "p",
+            "text": "抓握总分会掩盖机构之间的差异。球形物、薄片与柱体对拇指对指、指间刚度和手掌包覆提出不同要求。在比较中将物体形状、驱动路径、完成时间和失败原因对齐，可以区分结构、控制与佩戴者训练的贡献。 [R08] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "身体驱动手指进入个人任务"
+          },
+          {
+            "type": "p",
+            "text": "2022年两例手指截肢报告采用开源Knick Finger设计，通过保留的掌指关节运动及连杆、牵引结构辅助屈伸。一个月训练后，两名参与者分别在烹饪和电脑打字等个人目标上表现改善，并报告满意。[R07]"
+          },
+          {
+            "type": "p",
+            "text": "该研究把结构设计起点放在残余运动能力上。相同外观的缺损可能具有不同关节活动范围、力量和接触耐受，因此装置的牵引路径和固定方式需要与使用者共同决定。个人目标还能区分任务需求：稳定握住餐具、触及键盘与提起重物，对指尖位置、运动速度和接触摩擦提出的要求各不相同。"
+          },
+          {
+            "type": "p",
+            "text": "从病例推进到比较研究，可以同时记录标准任务和个人任务，并观察训练前后的变化。标准任务便于不同装置对照，个人任务解释装置是否改变了实际生活。还应记录每天在何种任务中选择佩戴、何时主动取下，以及维护需要。这样身体驱动设计的收益能够对应具体使用情境，也能为后续改进关节行程、指尖表面和固定环提供有方向的反馈。"
+          },
+          {
+            "type": "h3",
+            "text": "拇指构型拆分抓握变量"
+          },
+          {
+            "type": "p",
+            "text": "2022年研究比较四种低成本假手构型，以AHAP和简化SHAP观察抓握与保持表现。拇指对掌、外展内收及屈伸的组合影响不同物体的操作，独立控制提供更多选择，同时增加控制环节。[R08]"
+          },
+          {
+            "type": "p",
+            "text": "这一节点说明自由度数量需要与运动组织一起解释。拇指能够运动，并不保证它在接触物体时提供合适的对向力；固定拇指若方向合适，也可能稳定完成某些大物体任务。测试中应分别观察物体是否被抓起、姿态是否符合目标、转动手部后是否仍能保持，以及需要多少次重新定位。每一种失败都对应不同设计原因。"
+          },
+          {
+            "type": "p",
+            "text": "设计迭代可以固定其余手指和驱动，仅改变拇指方向、活动范围或控制耦合，再用同一物体集比较。这样能将构型作用与表面摩擦、制造质量及操作者技巧区分。图中后续台架比较返回此处的反馈，正是把某类抓握失败变成可修改参数。使用者训练则安排在机构表现稳定之后，使新增控制能力最终服务于较少的操作负担和更可靠的动作。"
+          },
+          {
+            "type": "h3",
+            "text": "统一台架比较打印与商业假手"
+          },
+          {
+            "type": "p",
+            "text": "2024年研究以统一AHAP台架比较三种打印假手与三种商业假手，并纳入四种既有打印设计数据。打印样本在圆柱、斜掌、伸展和球形等抓握中整体较弱，结果用于定位机构或制作质量相关的改进环节。[R09]"
+          },
+          {
+            "type": "p",
+            "text": "台架评价把假手与物体的接触作为研究对象，能够减少接受腔贴合和肌电控制能力带来的差异。它适合回答一种机构在选定抓握模式后能否稳定拿住物体，也便于重复测试零件更换或材料调整。评分最好保留各类抓握的分项，因为总体均值可能掩盖装置在某项关键生活动作上的薄弱环节。"
+          },
+          {
+            "type": "p",
+            "text": "进入用户研究时，测试任务还需加入自主选择抓握、定位手臂和双手协作。台架性能是这类评价的结构基础，用户结果则把控制与训练重新纳入。可采用先台架后用户的两级比较，在同一版本上报告物体保持、任务时间、误动作和使用偏好。这样企业获得的是具体可执行的改进清单，临床选择也能依据使用者主要任务与装置能力之间的匹配。"
+          },
+          {
+            "type": "h3",
+            "text": "开源腕驱动支具以反馈迭代"
+          },
+          {
+            "type": "p",
+            "text": "2018年开源腕驱动支具研究吸收三名脊髓损伤使用者和六名矫形专业学生反馈，公开尺寸与装配方法。不同尺寸的材料费用约15—20美元，手工装配约1.5小时；个体任务收益呈现差异，反馈用于修改结构与固定件。[R10]"
+          },
+          {
+            "type": "p",
+            "text": "该研究把可及性拆成可以观察的工作环节。材料容易获得只是起点，制作人员还需要理解尺寸修改、关节装配及适配方法，使用者则需要能够完成穿脱并维持稳定接触。针对扣带、磁性连接和手指支撑的修改，使研究从机械动作拓展到日常操作。对于手部能力受限者，独立穿戴本身就是重要功能终点。"
+          },
+          {
+            "type": "p",
+            "text": "后续评价适合记录从测量到首次使用的全过程，包括打印等待、手工装配、临床调整和再次重制。每次修改的原因与任务结果配对，可判断简化装配是否影响可靠性，或更易穿脱是否改善持续使用。开源资料也可以以版本形式维护，使不同机构复现相同方案，再将本地需求返回设计。由此，低成本原型转化为能够持续交付的康复服务。"
+          },
+          {
+            "type": "h3",
+            "text": "肌电矫形器检验即时手功能"
+          },
+          {
+            "type": "p",
+            "text": "2019年研究用打印结构、肌电输入和主动驱动组成手部矫形器，在10名慢性颈髓损伤参与者中开展同日有无器械比较。手功能测试及进食相关表现改善，精细物体操作和其他自理任务的变化较有限。[R11]"
+          },
+          {
+            "type": "p",
+            "text": "这一节点使主动辅助的评价单位从驱动器输出转向使用者完成任务的能力。握持力量提高可以帮助举起杯子，但穿衣、洗漱等活动还依赖躯干控制、关节活动和双手协调。因此不同自理项目应单独报告，同时记录器械体积、重量、调节和佩戴要求。这样才能找到机械辅助最直接能够改善的任务。"
+          },
+          {
+            "type": "p",
+            "text": "研究进入较长时间应用后，可以先设置适应期，再观察任务收益是否随学习扩大，以及新增控制是否增加疲劳。固定器械版本、记录肌电校准和每日使用时间，有助于区分训练收益与设计变化。图中反馈回到腕驱动节点，表示两类路线共享穿脱、贴合和任务匹配问题；选用身体驱动还是主动驱动，应依据保留能力和生活目标形成可解释的设计选择。"
+          },
+          {
+            "type": "h3",
+            "text": "同制造条件比较手工与数字修型"
+          },
+          {
+            "type": "p",
+            "text": "2024年可行性研究为9名小腿截肢者比较手工取型修型与扫描后数字修型，两条路线最终均采用打印。研究同时记录几何、舒适评分及流程时间，两种接受腔的舒适表现接近，扫描较省时而数字修型耗时较长。[R14]"
+          },
+          {
+            "type": "p",
+            "text": "这种比较的关键在于共同的制造路线。它使临床问题聚焦到“如何决定接触形状”，避免将扫描、软件、材料和打印机同时变化产生的结果全部归给数字化。手工经验包括触诊和对软组织变形的判断，转入软件后需要由解剖标记、局部缩减和空间增加等操作表达。操作本身是否被完整记录，决定了不同假肢师之间能否复用这些判断。"
+          },
+          {
+            "type": "p",
+            "text": "在图中的位置，这一节点同时分向算法与界面力学。算法需要学习修改后的形状，力学模型需要知道修改改变了哪个接触区域。后续比较可以在同一使用者内保留初始残肢扫描、每一步修改和最终器械三种表面，并加入统一行走任务。这样既能定位具体差异，也能识别为了舒适而发生的必要人工调整，形成真实的数字适配工作量。"
+          },
+          {
+            "type": "h3",
+            "text": "滚动模拟器校准界面有限元"
+          },
+          {
+            "type": "p",
+            "text": "2025年研究在打印接受腔外壁集成负荷测量单元，通过活塞界面感知内侧受力，并在滚动模拟器上与有限元的7个位置预测比较。结果显示几何描述的准确性对界面压力预测具有关键影响。[R15]"
+          },
+          {
+            "type": "p",
+            "text": "这一节点把计算模型的有效性放到可重复的实验情境中。模拟残肢、接受腔和滚动轨迹使负荷输入能够重复，从而观察误差来自材料本构、接触假设还是几何。负荷单元测量的是相应位置的法向作用，模型也应输出同位置、同面积、同时间点的量。若拿全场最大应力与局部平均压力比较，即使数字接近，也无法检验预测机制。"
+          },
+          {
+            "type": "p",
+            "text": "它与扫描节点构成重要汇合：几何误差会通过接触关系放大为压力误差。后续数字修型可以先预测变化方向，再用同一台架比较修改前后，以建立有明确输入和结果的局部设计规则。转入人体时，还需将组织状态、衬垫和悬吊条件纳入记录。这样压力模型能够辅助解释修型，而患者报告的疼痛、稳定和活动仍作为实际效果的终点。"
+          },
+          {
+            "type": "h3",
+            "text": "农村队列追踪使用与损伤"
+          },
+          {
+            "type": "p",
+            "text": "2025年在线、2026年卷期发表的塞拉利昂队列随访9名小腿截肢者2.5年。6个接受腔在随访期间损伤，另有因尺寸问题更换；末次记录的中位日穿戴时间为12.4小时。研究同时测量活动、功能与生活质量。[R16]"
+          },
+          {
+            "type": "p",
+            "text": "这一节点使服务评价获得时间维度。器械被持续使用说明它进入了日常生活，而损伤和重制揭示维持使用所需的支持。研究分析需要把初始接受腔寿命、后续替换件、维修等待与最终穿戴分开，才能解释一名参与者在设备更换后仍保持较高活动量的情形。活动暴露也值得记录，因为相同使用月数可能对应不同步数与负荷次数。"
+          },
+          {
+            "type": "p",
+            "text": "图中的两条反馈由此形成。尺寸变化回到扫描和修型，要求保存历次残肢状态；损伤位置回到材料和增强路径，要求记录断裂区域与制造批次。对服务可及性的评价则进一步纳入交通、重制和临时替代方案。把这些记录接入同一档案，数字化才能把每次更换转为下一版设计的依据，并以更长的有效穿戴时间检验制造效率是否真正改善康复。"
+          }
+        ]
+      },
+      {
+        "title": "企业技术与服务路线",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Open Bionics 的 Hero Arm 公开资料描述定制肌电手路线，Hero Gauntlet 则面向部分手缺损。Össur 的 PIPDriver 围绕剩余指关节活动提供机械路径。Ottobock 的 iFab 和 MyFit 将数字形状用于试戴接受腔，交付环节需要保留临床修型。 [R12] [R13] [R17] [R18] [R20]"
+          },
+          {
+            "type": "p",
+            "text": "2025 年 6 月，Open Bionics 公布 Hero Gauntlet 扩大适配范围，并面向美国义肢矫形诊所开放订购。该型号借助腕部动作驱动手指，使用 Multi Jet Fusion 制造定制部件。与肌电手比较时应控制缺损范围，并记录真实手能否提供腕部驱动、固定后的活动度和重复穿脱。 [R13] [R20]"
+          }
+        ]
+      },
+      {
+        "title": "专利设计与制造接口",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN105287064A 将打印接受腔作为制造对象。CN120531531A 将数字修型与柔性压力传感联系，形成从接触测量到形态调整的闭环。可以将专利构想转为两项独立验证：同一已知载荷下的测量一致性，以及同一使用者修改前后的舒适和滑移。 [R06] [R19]"
+          }
+        ]
+      },
+      {
+        "title": "学术与产业的结合点",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "实验室可以先固定接受腔和控制方式比较两个抓握机构。临床阶段再保持机构不变，比较配戴界面和训练。这样能够定位是零件、配戴还是学习限制了功能。企业服务同时要保留零件版次和替换记录，以解释后续性能变化。 [R01] [R09] [R14] [R18]"
+          }
+        ]
+      },
+      {
+        "title": "未来演进与验证指标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "今后可用同类截肢水平和同一任务集跟踪使用频率、维修和放弃使用原因。对于接受腔，优先把调整前后压力与实际佩戴小时数配对，并用持续使用验证预计的舒适改善。 [R14] [R15] [R16]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Functional evaluation of a non-assembly 3D-printed hand prosthesis",
+        "url": "https://doi.org/10.1177/0954411919874523",
+        "year": "2019",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "Assessment of body-powered 3D printed partial finger prostheses: a case study",
+        "url": "https://doi.org/10.1186/s41205-019-0044-0",
+        "year": "2019",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "A 3D Printed, Bionic Hand Powered by EMG Signals and Controlled by an Online Neural Network.",
+        "url": "https://doi.org/10.3390/biomimetics8020255",
+        "year": "2023",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Design, modeling, and preliminary evaluation of a 3D-printed wrist-hand grasping orthosis for stroke survivors.",
+        "url": "https://doi.org/10.1017/wtc.2024.18",
+        "year": "2024",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Ten guidelines for the design of non-assembly mechanisms: The case of 3D-printed prosthetic hands.",
+        "url": "https://doi.org/10.1177/0954411918794734",
+        "year": "2018",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "Prosthetic socket and 3D printing preparation method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN105287064A",
+        "year": "2016",
+        "source": "Espacenet",
+        "id": "R06"
+      },
+      {
+        "title": "Functional improvement by body-powered 3D-printed prosthesis in patients with finger amputation: Two case reports",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9276309/",
+        "year": "2022",
+        "source": "Medicine",
+        "id": "R07"
+      },
+      {
+        "title": "Effect of the Thumb Orientation and Actuation on the Functionality and Performance of Affordable Prosthetic Hands: Obtaining Design Criteria",
+        "url": "https://doi.org/10.3390/biomimetics7040233",
+        "year": "2022",
+        "source": "Biomimetics",
+        "id": "R08"
+      },
+      {
+        "title": "A performance evaluation of commercially available and 3D-printable prosthetic hands: a comparison using the anthropomorphic hand assessment protocol",
+        "url": "https://link.springer.com/article/10.1186/s42490-024-00086-w",
+        "year": "2024",
+        "source": "BMC Biomedical Engineering",
+        "id": "R09"
+      },
+      {
+        "title": "Design of a 3D-printed, open-source wrist-driven orthosis for individuals with spinal cord injury",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0193106",
+        "year": "2018",
+        "source": "PLOS ONE",
+        "id": "R10"
+      },
+      {
+        "title": "Development of a 3D-printed myoelectric hand orthosis for patients with spinal cord injury",
+        "url": "https://link.springer.com/article/10.1186/s12984-019-0633-6",
+        "year": "2019",
+        "source": "Journal of NeuroEngineering and Rehabilitation",
+        "id": "R11"
+      },
+      {
+        "title": "PIPDriver",
+        "url": "https://www.ossur.com/en-in/prosthetics/arms/pipdriver",
+        "year": "2026年现行资料",
+        "source": "Naked Prosthetics / Össur",
+        "id": "R12"
+      },
+      {
+        "title": "Frequently asked questions: Hero Arm history and manufacture",
+        "url": "https://openbionics.com/en/faq/",
+        "year": "2026年现行资料",
+        "source": "Open Bionics",
+        "id": "R13"
+      },
+      {
+        "title": "Comparison of Socket Geometry, Socket Comfort, and Patient Experience between Manually- and Digitally-Designed Prosthetic Sockets for Lower-Limb Amputees: A Feasibility Study",
+        "url": "https://www.mdpi.com/2673-1592/6/3/48",
+        "year": "2024",
+        "source": "Prosthesis",
+        "id": "R14"
+      },
+      {
+        "title": "Evaluating interface pressure in a lower-limb prosthetic socket: Comparison of FEM and experimental measurements on a roll-over simulator",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39778443/",
+        "year": "2025",
+        "source": "Journal of Biomechanics",
+        "id": "R15"
+      },
+      {
+        "title": "Longevity and effectiveness of 3D-printed transtibial prosthetic sockets in rural Sierra Leone: A pilot study with 2.5-year follow-up",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40464523/",
+        "year": "2025在线；2026卷期",
+        "source": "Prosthetics and Orthotics International",
+        "id": "R16"
+      },
+      {
+        "title": "iFab – the individual fabrication",
+        "url": "https://corporate.ottobock.com/en/futuring/ifab",
+        "year": "2026年现行资料",
+        "source": "Ottobock",
+        "id": "R17"
+      },
+      {
+        "title": "MyFit TT/TF",
+        "url": "https://www.ottobock.com/en-us/professionals/services/fabrication/myfit-tt-tf-test-sockets",
+        "year": "2026年现行资料",
+        "source": "Ottobock",
+        "id": "R18"
+      },
+      {
+        "title": "Digitization and flexible pressure sensor combined thigh artificial limb socket optimization manufacturing method",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120531531A",
+        "year": "2025",
+        "source": "Espacenet",
+        "id": "R19"
+      },
+      {
+        "title": "4, 3, 2, 1 Fingers! Now Available For All",
+        "url": "https://openbionics.com/4-3-2-1-fingers-now-available-for-all/",
+        "year": "2025",
+        "source": "Open Bionics",
+        "id": "R20"
+      }
+    ]
+  },
+  "en": {
+    "id": "H03",
+    "p": "P2",
+    "title": "Limb prostheses and orthotic assistive devices",
+    "subtitle": "From printable hand mechanisms to tasks, fit and maintenance",
+    "thesis": "A hand prosthesis restores missing movement, while an orthosis supports retained movement. Both begin with the user's capabilities, which determine mechanism, actuation and the body interface. Tasks and continued wear then test the resulting design.",
+    "questions": [],
+    "graph": {
+      "title": "Mechanisms, body interfaces and user feedback",
+      "summary": "Body-powered control, myoelectric assistance and pressure-based fitting converge on everyday tasks, reliability and replacement intervals.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2019",
+          "refs": [
+            "R02",
+            "R07"
+          ],
+          "title": "Define the task from retained movement",
+          "question": "What can residual joint motion or muscle signals support?",
+          "evidence": "Body-powered partial-finger studies start with active motion that remains. The level of limb loss alters control input and usable load."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2018–2019",
+          "refs": [
+            "R01",
+            "R05"
+          ],
+          "title": "Print joints and force transmission",
+          "question": "Can fewer assembly steps retain motion and strength?",
+          "evidence": "Print-in-place hands trade assembly operations for control of manufacturing tolerance, joint clearance and material strength."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2018–2024",
+          "refs": [
+            "R03",
+            "R04",
+            "R10",
+            "R11"
+          ],
+          "title": "Extend wrist-driven devices with myoelectric assistance",
+          "question": "How should actuation and attachment be coordinated?",
+          "evidence": "Wrist-driven and myoelectric orthoses must accommodate residual motion, grasp shape and donning and removal."
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2024–2025",
+          "refs": [
+            "R14",
+            "R15"
+          ],
+          "title": "Add pressure measurement to socket fitting",
+          "question": "Does shape replication ensure load distribution?",
+          "evidence": "Manual and digital modification were compared for comfort. A roll-over rig compared modeled and measured pressures."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 0,
+          "time": "2022–2024",
+          "refs": [
+            "R08",
+            "R09"
+          ],
+          "title": "Compare grasp on common tasks",
+          "question": "Which grip changes with the mechanism?",
+          "evidence": "Thumb orientation and actuation affect grasp. An anthropomorphic hand assessment protocol provides a common benchmark for commercial and printable hands."
+        },
+        {
+          "id": "N6",
+          "stage": 2,
+          "lane": 1,
+          "time": "2019",
+          "refs": [
+            "R02",
+            "R11"
+          ],
+          "title": "Connect bench output to user tasks",
+          "question": "Does mechanical capability become usable motion?",
+          "evidence": "A single partial-finger case moved 22 blocks per minute with the prosthesis, 18 without it and 30 using the unaffected hand in the Box and Block Test."
+        },
+        {
+          "id": "N7",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025–2026",
+          "refs": [
+            "R16",
+            "R18",
+            "R20"
+          ],
+          "title": "Track wear and replacement cycles",
+          "question": "When does the device need adjustment in daily use?",
+          "evidence": "Socket follow-up and public product delivery both make adjustment, maintenance and provider response part of device design."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Residual motion drives the device"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Select control by available signal"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Comfort depends on the interface"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Map mechanism to task"
+        },
+        {
+          "from": "N3",
+          "to": "N6",
+          "kind": "advance",
+          "label": "From actuation to usable motion"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Common protocol links comparisons"
+        },
+        {
+          "from": "N4",
+          "to": "N7",
+          "kind": "advance",
+          "label": "Follow pressure and comfort"
+        },
+        {
+          "from": "N6",
+          "to": "N7",
+          "kind": "advance",
+          "label": "Track task performance during wear"
+        },
+        {
+          "from": "N7",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Maintenance informs the task definition"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Research scope and outcomes",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Hands, wrist-hand orthoses and sockets require different outcomes. Hands are assessed in grasp and release tasks, orthoses in assisted motion and independent use, and sockets in load bearing and acceptable skin pressures. Foot and ankle devices form a separate direction. [R09] [R11] [R14] [R15]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathways and evidence",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Define the task from retained movement"
+          },
+          {
+            "type": "p",
+            "text": "Body-powered partial-finger studies start with active motion that remains. The level of limb loss alters control input and usable load. [R02] [R07]"
+          },
+          {
+            "type": "h3",
+            "text": "Print joints and force transmission"
+          },
+          {
+            "type": "p",
+            "text": "Print-in-place hands trade assembly operations for control of manufacturing tolerance, joint clearance and material strength. [R01] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "Extend wrist-driven devices with myoelectric assistance"
+          },
+          {
+            "type": "p",
+            "text": "Wrist-driven and myoelectric orthoses must accommodate residual motion, grasp shape and donning and removal. [R03] [R04] [R10] [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "Add pressure measurement to socket fitting"
+          },
+          {
+            "type": "p",
+            "text": "Manual and digital modification were compared for comfort. A roll-over rig compared modeled and measured pressures. [R14] [R15]"
+          },
+          {
+            "type": "h3",
+            "text": "Compare grasp on common tasks"
+          },
+          {
+            "type": "p",
+            "text": "Thumb orientation and actuation affect grasp. An anthropomorphic hand assessment protocol provides a common benchmark for commercial and printable hands. [R08] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "Connect bench output to user tasks"
+          },
+          {
+            "type": "p",
+            "text": "A single partial-finger case moved 22 blocks per minute with the prosthesis, 18 without it and 30 using the unaffected hand in the Box and Block Test. [R02] [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "Track wear and replacement cycles"
+          },
+          {
+            "type": "p",
+            "text": "Socket follow-up and public product delivery both make adjustment, maintenance and provider response part of device design. [R16] [R18] [R20]"
+          },
+          {
+            "type": "p",
+            "text": "An aggregate grasp score can hide differences between mechanisms. Spheres, thin objects and cylinders place different demands on opposition, finger stiffness and palm enclosure. Match object shape, control input, completion time and failure descriptions to separate mechanisms, control and user training. [R08] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "Body-powered fingers in personal tasks"
+          },
+          {
+            "type": "p",
+            "text": "Two finger amputation cases reported in 2022 utilized the open-source Knick Finger design, which assisted flexion and extension by preserving the metacarpophalangeal joint movement and using linkages and traction structures. After one month of training, both participants showed improvement in personal goals such as cooking and computer typing, and reported satisfaction. [R07]"
+          },
+          {
+            "type": "p",
+            "text": "This study focuses on residual motor function as the starting point for structural design. Defects with the same appearance may have different joint ranges of motion, strength, and contact tolerance; therefore, the traction path and fixation method of the device need to be determined in collaboration with the user. Individual goals can also differentiate task requirements: holding cutlery stably, touching a keyboard, and lifting heavy objects all place different demands on fingertip position, movement speed, and contact friction."
+          },
+          {
+            "type": "p",
+            "text": "Moving from case studies to comparative studies allows for simultaneous recording of standard and personal tasks, observing changes before and after training. Standard tasks facilitate comparison between different devices, while personal tasks explain whether the device alters daily life. It's also important to record which tasks the device is chosen to wear, when it is actively removed, and maintenance needs each day. This ensures the benefits of body-driven design correspond to specific usage scenarios and provides directional feedback for subsequent improvements to joint range of motion, fingertip surfaces, and retainer rings."
+          },
+          {
+            "type": "h3",
+            "text": "Separating grasp variables through thumb configurations"
+          },
+          {
+            "type": "p",
+            "text": "The 2022 study compared four low-cost prosthetic hand configurations, observing grasping and retention performance using AHAP and simplified SHAP. The combination of thumb opposition, abduction/adduction, and flexion/extension affects the manipulation of different objects; independent control provides more options while increasing the number of control components. [R08]"
+          },
+          {
+            "type": "p",
+            "text": "The node indicates that the number of degrees of freedom needs to be interpreted in conjunction with the motion organization. The thumb's ability to move does not guarantee it will provide adequate counterforce when contacting an object; a fixed thumb, if properly oriented, may stably complete tasks involving large objects. During testing, it should be observed whether the object is grasped, whether the posture matches the target, whether the hand can maintain its position after rotation, and how many repositionings are required. Each failure corresponds to a different design reason."
+          },
+          {
+            "type": "p",
+            "text": "The design iteration can fix the other fingers and actuators, changing only the thumb's direction, range of motion, or control coupling, and then comparing the results using the same set of objects. This distinguishes configuration effects from surface friction, manufacturing quality, and operator skill. The feedback returned here by subsequent bench comparisons in the diagram precisely transforms certain types of grip failures into modifiable parameters. User training is then arranged after the mechanism's performance stabilizes, ensuring that the added control capabilities ultimately serve to reduce operational burden and achieve more reliable movements."
+          },
+          {
+            "type": "h3",
+            "text": "Matched bench comparisons of printed and commercial prosthetic hands"
+          },
+          {
+            "type": "p",
+            "text": "A 2024 study used a standardized AHAP bench setup to compare three printed and three commercial prosthetic hands, adding published data for four existing printed designs. Printed specimens generally performed worse in cylindrical, diagonal volar, extension and spherical grasps. The results identified targets for improvements in mechanisms or manufacturing quality. [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Bench tests examine hand–object contact while reducing variation from socket fit and myoelectric control. They assess whether a mechanism can hold an object after a grasp pattern is selected and permit repeat testing after component or material changes. Report separate scores for each grasp because an overall mean may conceal weakness in a key daily task."
+          },
+          {
+            "type": "p",
+            "text": "When conducting user studies, the testing tasks should also include autonomous grip selection, arm positioning, and bimanual coordination. Bench performance forms the structural basis for this type of evaluation, while user outcomes reintegrate control and training. A two-stage comparison can be used, first the bench and then the user, reporting object retention, task time, erroneous actions, and usage preferences on the same version. This provides companies with a concrete list of actionable improvements, and clinical selection can be based on the match between the user's primary tasks and the device's capabilities."
+          },
+          {
+            "type": "h3",
+            "text": "Feedback-driven iteration of an open-source wrist-powered orthosis"
+          },
+          {
+            "type": "p",
+            "text": "A 2018 open-source wrist-driven orthosis study incorporated feedback from three people with spinal cord injury and six orthotics students and published dimensions and assembly methods. Material costs were approximately US$15–20 depending on size, and manual assembly took about 1.5 hours. Benefits varied across personal tasks, and feedback informed changes to structure and fasteners. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "This study breaks down accessibility into observable steps. Easy material availability is just the starting point; manufacturers also need to understand sizing modifications, joint assembly, and fitting methods, while users need to be able to put on and take off the garment and maintain stable contact. Modifications to the straps, magnetic connections, and finger supports extend the research from mechanical movements to everyday operations. For individuals with limited hand dexterity, independent wearability is itself an important functional endpoint."
+          },
+          {
+            "type": "p",
+            "text": "Future evaluation should record the full pathway from measurement to first use, including printing waits, manual assembly, clinical adjustments and remanufacture. Pair reasons for modifications with task outcomes to determine whether simpler assembly affects reliability or easier donning and doffing supports continued use. Versioned open-source documentation enables replication across institutions and feedback from local needs, supporting transition from low-cost prototypes to sustainable rehabilitation services."
+          },
+          {
+            "type": "h3",
+            "text": "Testing immediate hand function with a myoelectric orthosis"
+          },
+          {
+            "type": "p",
+            "text": "A 2019 study used a printed structure, electromyographic input, and active actuation to construct a hand orthosis, comparing participants with and without the device on the same day in 10 participants with chronic cervical spinal cord injury. Improvements were observed in hand function tests and eating-related performance, while changes in fine object manipulation and other self-care tasks were limited. [R11]"
+          },
+          {
+            "type": "p",
+            "text": "This node shifts evaluation of active assistance from actuator output to the user's ability to complete tasks. Greater grip strength may help lift a cup, but dressing and washing also depend on trunk control, joint movement and bimanual coordination. Report self-care tasks separately, alongside device size, weight, adjustment and wearing requirements, to identify the tasks most directly improved by mechanical assistance."
+          },
+          {
+            "type": "p",
+            "text": "Longer-term studies can include adaptation before examining whether learning expands task benefits or added control increases fatigue. Hold the device version constant and record myoelectric calibration and daily use to distinguish training from redesign. Feedback to the wrist-driven node represents shared questions of donning and doffing, fit and task matching. Choices between body-powered and active assistance should follow residual abilities and daily-life goals."
+          },
+          {
+            "type": "h3",
+            "text": "Manual versus digital rectification under matched manufacturing"
+          },
+          {
+            "type": "p",
+            "text": "A 2024 feasibility study in nine people with transtibial amputations compared manual casting and rectification with scanning followed by digital rectification; both routes ultimately used printed sockets. Geometry, comfort and workflow time were recorded. Comfort was similar, scanning saved time, and digital rectification took longer. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "The key to this comparison lies in the shared manufacturing process. It focuses clinical questions on \"how to determine the contact shape,\" avoiding attributing all results from simultaneous changes in scanning, software, materials, and printers to digitization. Manual experience, including palpation and assessment of soft tissue deformities, needs to be expressed in software through anatomical marking, local reduction, and spatial addition. Whether these operations are fully recorded determines whether these judgments can be reused among different prosthetists."
+          },
+          {
+            "type": "p",
+            "text": "At the location shown in the diagram, node represents both the algorithm and interface mechanics. The algorithm needs to learn the modified shape, while the mechanics model needs to understand which contact area has been altered. Subsequent comparisons can retain three surfaces within the same user: the initial residual limb scan, each step of modification, and the final device, while incorporating a unified walking task. This approach not only pinpoints specific differences but also identifies necessary manual adjustments for comfort, thus representing a realistic digital adaptation workload."
+          },
+          {
+            "type": "h3",
+            "text": "Calibrating interface finite element models with a rollover simulator"
+          },
+          {
+            "type": "p",
+            "text": "The 2025 study integrated a load measurement unit into the outer wall of a printed prosthetic socket, sensing the internal force through the piston interface and comparing it with predictions from finite element methods at seven locations on a rolling simulator. The results show that the accuracy of the geometric description has a crucial impact on the prediction of interface pressure. [R15]"
+          },
+          {
+            "type": "p",
+            "text": "The node places the validity of the computational model within a repeatable experimental context. Simulating residual limbs, prosthetic sockets, and rolling trajectories allows for repeatable load inputs, enabling observation of whether the error originates from material constitutive modeling, contact assumptions, or geometry. The load element measures the normal force at the corresponding location, and the model should output the quantity at the same location, area, and time point. Comparing the maximum stress across the entire field with the local average pressure, even if the numbers are close, fails to verify the prediction mechanism."
+          },
+          {
+            "type": "p",
+            "text": "This model, along with the scanning nodes, forms a crucial convergence: geometric errors are amplified into pressure errors through contact relationships. Subsequent digital modeling can first predict the direction of change, then compare the before and after modifications using the same device to establish local design rules with clear inputs and results. When transferred to the human body, tissue condition, padding, and suspension conditions must also be recorded. In this way, the pressure model can help interpret the modeling, while patient-reported pain, stability, and activity remain the endpoints of the actual outcome."
+          },
+          {
+            "type": "h3",
+            "text": "Rural cohort tracks use and damage"
+          },
+          {
+            "type": "p",
+            "text": "A Sierra Leone cohort study, published online in 2025 and in issue 2026, followed nine lower leg amputees for 2.5 years. Six sockets were damaged during follow-up, and others were replaced due to size issues; the median daily wearing time at the last recorded point was 12.4 hours. The study simultaneously measured activity, function, and quality of life. [R16]"
+          },
+          {
+            "type": "p",
+            "text": "This node adds time to service evaluation. Continued wear shows integration into daily life, while damage and remanufacture reveal the support needed to sustain use. Separate the lifetime of the initial socket, replacement devices, repair waiting time and eventual wear so that high activity after replacement can be interpreted. Activity exposure also matters: the same months of use may represent different step counts and loading cycles."
+          },
+          {
+            "type": "p",
+            "text": "The two feedback loops in the diagram are thus formed. Size changes are returned to scanning and reshaping, requiring the preservation of the limb's state at each stage; damage location is returned to materials and reinforcement paths, requiring the recording of the fracture area and manufacturing batch. The evaluation of service accessibility further incorporates transportation, remanufacturing, and temporary alternatives. By integrating these records into a single archive and digitizing them, each replacement can become the basis for the next design iteration, and longer effective wear time can be used to verify whether manufacturing efficiency truly improves rehabilitation."
+          }
+        ]
+      },
+      {
+        "title": "Industry technologies and services",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Open Bionics documents the custom myoelectric Hero Arm and a Hero Gauntlet for partial hand loss. Össur's PIPDriver offers a mechanical route centered on residual finger-joint motion. Ottobock's iFab and MyFit apply digital shapes to test sockets, with clinical modification part of the fitting process. [R12] [R13] [R17] [R18] [R20]"
+          },
+          {
+            "type": "p",
+            "text": "In June 2025, Open Bionics announced expanded fitting eligibility for Hero Gauntlet and ordering across US orthotics and prosthetics clinics. Wrist motion drives its fingers, with Multi Jet Fusion used for custom parts. A comparison with myoelectric designs can match the extent of limb loss and document available wrist input, motion after attachment and repeated donning and removal. [R13] [R20]"
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and production interfaces",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN105287064A addresses the printed socket as a manufacturing object. CN120531531A connects digital adjustment to flexible pressure sensing, linking contact measurement with reshaping. Two tests follow: agreement under the same known loading and comfort and motion before and after modification in the same user. [R06] [R19]"
+          }
+        ]
+      },
+      {
+        "title": "Research and industry connections",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The bench can compare two grasp mechanisms while holding the socket and control method constant. Clinical comparisons can then hold the mechanism constant and vary interface or training. This identifies whether the component, fitting or practice is limiting function. Service teams can retain part revisions and replacement records to interpret later changes. [R01] [R09] [R14] [R18]"
+          }
+        ]
+      },
+      {
+        "title": "Outlook and measures of progress",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Next, follow frequency of use, repair and reasons for abandonment across a common task set and comparable levels of limb loss. For sockets, pair pressure before and after adjustment with actual hours worn, and test predicted comfort improvements against continued use. [R14] [R15] [R16]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Functional evaluation of a non-assembly 3D-printed hand prosthesis",
+        "url": "https://doi.org/10.1177/0954411919874523",
+        "year": "2019",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "Assessment of body-powered 3D printed partial finger prostheses: a case study",
+        "url": "https://doi.org/10.1186/s41205-019-0044-0",
+        "year": "2019",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "A 3D Printed, Bionic Hand Powered by EMG Signals and Controlled by an Online Neural Network.",
+        "url": "https://doi.org/10.3390/biomimetics8020255",
+        "year": "2023",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Design, modeling, and preliminary evaluation of a 3D-printed wrist-hand grasping orthosis for stroke survivors.",
+        "url": "https://doi.org/10.1017/wtc.2024.18",
+        "year": "2024",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Ten guidelines for the design of non-assembly mechanisms: The case of 3D-printed prosthetic hands.",
+        "url": "https://doi.org/10.1177/0954411918794734",
+        "year": "2018",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "Prosthetic socket and 3D printing preparation method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN105287064A",
+        "year": "2016",
+        "source": "Espacenet",
+        "id": "R06"
+      },
+      {
+        "title": "Functional improvement by body-powered 3D-printed prosthesis in patients with finger amputation: Two case reports",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9276309/",
+        "year": "2022",
+        "source": "Medicine",
+        "id": "R07"
+      },
+      {
+        "title": "Effect of the Thumb Orientation and Actuation on the Functionality and Performance of Affordable Prosthetic Hands: Obtaining Design Criteria",
+        "url": "https://doi.org/10.3390/biomimetics7040233",
+        "year": "2022",
+        "source": "Biomimetics",
+        "id": "R08"
+      },
+      {
+        "title": "A performance evaluation of commercially available and 3D-printable prosthetic hands: a comparison using the anthropomorphic hand assessment protocol",
+        "url": "https://link.springer.com/article/10.1186/s42490-024-00086-w",
+        "year": "2024",
+        "source": "BMC Biomedical Engineering",
+        "id": "R09"
+      },
+      {
+        "title": "Design of a 3D-printed, open-source wrist-driven orthosis for individuals with spinal cord injury",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0193106",
+        "year": "2018",
+        "source": "PLOS ONE",
+        "id": "R10"
+      },
+      {
+        "title": "Development of a 3D-printed myoelectric hand orthosis for patients with spinal cord injury",
+        "url": "https://link.springer.com/article/10.1186/s12984-019-0633-6",
+        "year": "2019",
+        "source": "Journal of NeuroEngineering and Rehabilitation",
+        "id": "R11"
+      },
+      {
+        "title": "PIPDriver",
+        "url": "https://www.ossur.com/en-in/prosthetics/arms/pipdriver",
+        "year": "2026年现行资料",
+        "source": "Naked Prosthetics / Össur",
+        "id": "R12"
+      },
+      {
+        "title": "Frequently asked questions: Hero Arm history and manufacture",
+        "url": "https://openbionics.com/en/faq/",
+        "year": "2026年现行资料",
+        "source": "Open Bionics",
+        "id": "R13"
+      },
+      {
+        "title": "Comparison of Socket Geometry, Socket Comfort, and Patient Experience between Manually- and Digitally-Designed Prosthetic Sockets for Lower-Limb Amputees: A Feasibility Study",
+        "url": "https://www.mdpi.com/2673-1592/6/3/48",
+        "year": "2024",
+        "source": "Prosthesis",
+        "id": "R14"
+      },
+      {
+        "title": "Evaluating interface pressure in a lower-limb prosthetic socket: Comparison of FEM and experimental measurements on a roll-over simulator",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39778443/",
+        "year": "2025",
+        "source": "Journal of Biomechanics",
+        "id": "R15"
+      },
+      {
+        "title": "Longevity and effectiveness of 3D-printed transtibial prosthetic sockets in rural Sierra Leone: A pilot study with 2.5-year follow-up",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40464523/",
+        "year": "2025在线；2026卷期",
+        "source": "Prosthetics and Orthotics International",
+        "id": "R16"
+      },
+      {
+        "title": "iFab – the individual fabrication",
+        "url": "https://corporate.ottobock.com/en/futuring/ifab",
+        "year": "2026年现行资料",
+        "source": "Ottobock",
+        "id": "R17"
+      },
+      {
+        "title": "MyFit TT/TF",
+        "url": "https://www.ottobock.com/en-us/professionals/services/fabrication/myfit-tt-tf-test-sockets",
+        "year": "2026年现行资料",
+        "source": "Ottobock",
+        "id": "R18"
+      },
+      {
+        "title": "Digitization and flexible pressure sensor combined thigh artificial limb socket optimization manufacturing method",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120531531A",
+        "year": "2025",
+        "source": "Espacenet",
+        "id": "R19"
+      },
+      {
+        "title": "4, 3, 2, 1 Fingers! Now Available For All",
+        "url": "https://openbionics.com/4-3-2-1-fingers-now-available-for-all/",
+        "year": "2025",
+        "source": "Open Bionics",
+        "id": "R20"
+      }
+    ]
+  },
+  "de": {
+    "id": "H03",
+    "p": "P2",
+    "title": "Gliedmaßenprothesen und orthopädische Hilfsmittel",
+    "subtitle": "Vom druckbaren Handmechanismus zu Aufgaben, Passform und Instandhaltung",
+    "thesis": "Eine Handprothese ersetzt fehlende Bewegung, eine Orthese unterstützt verbliebene Bewegung. Die Fähigkeiten der Person bestimmen Mechanismus, Antrieb und Körperkontakt. Reale Aufgaben und die längerfristige Nutzung prüfen den Entwurf.",
+    "questions": [],
+    "graph": {
+      "title": "Mechanismen, Körperkontakt und Rückmeldung",
+      "summary": "Körperkraft, myoelektrische Unterstützung und druckgestützte Anpassung treffen bei Alltagsaufgaben, Zuverlässigkeit und Austauschintervallen zusammen.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2019",
+          "refs": [
+            "R02",
+            "R07"
+          ],
+          "title": "Aufgabe aus erhaltener Bewegung ableiten",
+          "question": "Was ermöglichen Restbewegung oder Muskelsignale?",
+          "evidence": "Körperkraftbetriebene Teilfingerprothesen nutzen verbliebene aktive Bewegung. Die Amputationshöhe verändert das Steuersignal und die nutzbare Belastung."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2018–2019",
+          "refs": [
+            "R01",
+            "R05"
+          ],
+          "title": "Gelenke und Kraftübertragung drucken",
+          "question": "Bleiben Bewegung und Festigkeit mit weniger Montage erhalten?",
+          "evidence": "In einem Stück gedruckte Hände verlagern die Anforderungen von der Montage auf Fertigungstoleranz, Gelenkspiel und Materialfestigkeit."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2018–2024",
+          "refs": [
+            "R03",
+            "R04",
+            "R10",
+            "R11"
+          ],
+          "title": "Von Handgelenksantrieb zu myoelektrischer Unterstützung",
+          "question": "Wie werden Antrieb und Befestigung aufeinander abgestimmt?",
+          "evidence": "Handgelenkgetriebene und myoelektrische Orthesen müssen Restbewegung, Griffform sowie An- und Ablegen berücksichtigen."
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2024–2025",
+          "refs": [
+            "R14",
+            "R15"
+          ],
+          "title": "Druckmessung in die Schaftanpassung aufnehmen",
+          "question": "Sichert die Formreplikation die Lastverteilung?",
+          "evidence": "Manuelle und digitale Modellierung wurden beim Komfort verglichen. Ein Abrollprüfstand verglich berechnete und gemessene Drücke."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 0,
+          "time": "2022–2024",
+          "refs": [
+            "R08",
+            "R09"
+          ],
+          "title": "Griffleistung in gemeinsamen Aufgaben vergleichen",
+          "question": "Welcher Griff ändert sich durch den Mechanismus?",
+          "evidence": "Daumenausrichtung und Antrieb beeinflussen den Griff. Ein anthropomorphes Prüfprotokoll liefert eine gemeinsame Referenz für kommerzielle und druckbare Hände."
+        },
+        {
+          "id": "N6",
+          "stage": 2,
+          "lane": 1,
+          "time": "2019",
+          "refs": [
+            "R02",
+            "R11"
+          ],
+          "title": "Prüfstandswerte mit Nutzeraufgaben verbinden",
+          "question": "Wird mechanische Leistung zu nutzbarer Bewegung?",
+          "evidence": "Im Box-and-Block-Test bewegte eine Person mit Teilfingerprothese 22 Blöcke pro Minute, ohne Prothese 18 und mit der nicht betroffenen Hand 30."
+        },
+        {
+          "id": "N7",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025–2026",
+          "refs": [
+            "R16",
+            "R18",
+            "R20"
+          ],
+          "title": "Tragedauer und Austauschzyklen erfassen",
+          "question": "Wann ist im Alltag eine Anpassung nötig?",
+          "evidence": "Schaftnachbeobachtung und Produktversorgung machen Anpassung, Instandhaltung und Reaktion des Versorgers zu Bestandteilen des Entwurfs."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Restbewegung treibt das Produkt an"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Steuerung nach Signal wählen"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Komfort hängt vom Körperkontakt ab"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Mechanismus der Aufgabe zuordnen"
+        },
+        {
+          "from": "N3",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Vom Antrieb zur nutzbaren Bewegung"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Prüfprotokoll verbindet Vergleiche"
+        },
+        {
+          "from": "N4",
+          "to": "N7",
+          "kind": "advance",
+          "label": "Druck und Komfort nachverfolgen"
+        },
+        {
+          "from": "N6",
+          "to": "N7",
+          "kind": "advance",
+          "label": "Aufgabenleistung im Gebrauch erfassen"
+        },
+        {
+          "from": "N7",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Wartungsdaten schärfen die Aufgabe"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Forschungsgegenstand und Endpunkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Hände, Hand-Handgelenk-Orthesen und Schäfte erfordern unterschiedliche Endpunkte. Hände werden beim Greifen und Loslassen bewertet, Orthesen bei unterstützter Bewegung und selbstständiger Nutzung, Schäfte bei Lastaufnahme und verträglichem Hautdruck. Fuß- und Sprunggelenkprodukte bilden eine eigene Richtung. [R09] [R11] [R14] [R15]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Evidenz",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Aufgabe aus erhaltener Bewegung ableiten"
+          },
+          {
+            "type": "p",
+            "text": "Körperkraftbetriebene Teilfingerprothesen nutzen verbliebene aktive Bewegung. Die Amputationshöhe verändert das Steuersignal und die nutzbare Belastung. [R02] [R07]"
+          },
+          {
+            "type": "h3",
+            "text": "Gelenke und Kraftübertragung drucken"
+          },
+          {
+            "type": "p",
+            "text": "In einem Stück gedruckte Hände verlagern die Anforderungen von der Montage auf Fertigungstoleranz, Gelenkspiel und Materialfestigkeit. [R01] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "Von Handgelenksantrieb zu myoelektrischer Unterstützung"
+          },
+          {
+            "type": "p",
+            "text": "Handgelenkgetriebene und myoelektrische Orthesen müssen Restbewegung, Griffform sowie An- und Ablegen berücksichtigen. [R03] [R04] [R10] [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "Druckmessung in die Schaftanpassung aufnehmen"
+          },
+          {
+            "type": "p",
+            "text": "Manuelle und digitale Modellierung wurden beim Komfort verglichen. Ein Abrollprüfstand verglich berechnete und gemessene Drücke. [R14] [R15]"
+          },
+          {
+            "type": "h3",
+            "text": "Griffleistung in gemeinsamen Aufgaben vergleichen"
+          },
+          {
+            "type": "p",
+            "text": "Daumenausrichtung und Antrieb beeinflussen den Griff. Ein anthropomorphes Prüfprotokoll liefert eine gemeinsame Referenz für kommerzielle und druckbare Hände. [R08] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "Prüfstandswerte mit Nutzeraufgaben verbinden"
+          },
+          {
+            "type": "p",
+            "text": "Im Box-and-Block-Test bewegte eine Person mit Teilfingerprothese 22 Blöcke pro Minute, ohne Prothese 18 und mit der nicht betroffenen Hand 30. [R02] [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "Tragedauer und Austauschzyklen erfassen"
+          },
+          {
+            "type": "p",
+            "text": "Schaftnachbeobachtung und Produktversorgung machen Anpassung, Instandhaltung und Reaktion des Versorgers zu Bestandteilen des Entwurfs. [R16] [R18] [R20]"
+          },
+          {
+            "type": "p",
+            "text": "Eine Gesamtpunktzahl kann mechanische Unterschiede verdecken. Kugeln, dünne Gegenstände und Zylinder erfordern unterschiedliche Daumenopposition, Fingersteifigkeit und Umschließung. Objektform, Antrieb, Aufgabenzeit und Fehlerbild helfen, Mechanismus, Steuerung und Training auseinanderzuhalten. [R08] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "Körperkraftbetriebene Finger bei individuellen Alltagsaufgaben"
+          },
+          {
+            "type": "p",
+            "text": "Zwei im Jahr 2022 gemeldete Fälle von Fingeramputationen nutzten das Open-Source-Design „Knick Finger“, das Beugung und Streckung durch Erhalt der Metakarpophalangealgelenkbewegung und mithilfe von Verbindungsstücken und Traktionsstrukturen unterstützte. Nach einem Monat Training zeigten beide Patienten Verbesserungen bei persönlichen Zielen wie Kochen und Computertippen und äußerten sich zufrieden. [R07]"
+          },
+          {
+            "type": "p",
+            "text": "Diese Studie konzentriert sich auf die Restmotorik als Ausgangspunkt für die Konstruktion. Defekte mit gleichem Erscheinungsbild können unterschiedliche Gelenkbeweglichkeiten, Kräfte und Kontakttoleranzen aufweisen; daher müssen Zugweg und Fixierungsmethode des Geräts in Zusammenarbeit mit dem Anwender festgelegt werden. Individuelle Ziele können die Aufgabenanforderungen ebenfalls differenzieren: Das stabile Halten von Besteck, das Bedienen einer Tastatur und das Heben schwerer Gegenstände stellen jeweils unterschiedliche Anforderungen an Fingerspitzenposition, Bewegungsgeschwindigkeit und Kontaktreibung."
+          },
+          {
+            "type": "p",
+            "text": "Der Übergang von Fallstudien zu Vergleichsstudien ermöglicht die gleichzeitige Erfassung von Standard- und individuellen Aufgaben und die Beobachtung von Veränderungen vor und nach dem Training. Standardaufgaben erleichtern den Vergleich verschiedener Geräte, während individuelle Aufgaben Aufschluss darüber geben, ob das Gerät den Alltag beeinflusst. Wichtig ist auch, täglich zu dokumentieren, für welche Aufgaben das Gerät gewählt wird, wann es aktiv abgenommen wird und welcher Wartungsaufwand anfällt. So wird sichergestellt, dass die Vorteile des körperorientierten Designs den jeweiligen Anwendungsszenarien entsprechen und gezieltes Feedback für nachfolgende Verbesserungen der Gelenkbeweglichkeit, der Fingerkuppenoberflächen und der Halteringe gegeben wird."
+          },
+          {
+            "type": "h3",
+            "text": "Greifvariablen durch Daumenkonfigurationen trennen"
+          },
+          {
+            "type": "p",
+            "text": "Die Studie aus dem Jahr 2022 verglich vier kostengünstige Prothesenhandkonfigurationen hinsichtlich ihrer Greif- und Halteleistung mithilfe von AHAP und einem vereinfachten SHAP-Modell. Die Kombination aus Daumenopposition, Abduktion/Adduktion und Flexion/Extension beeinflusst die Manipulation verschiedener Objekte; eine unabhängige Steuerung bietet mehr Optionen, erhöht aber gleichzeitig die Anzahl der Steuerungskomponenten. [R08]"
+          },
+          {
+            "type": "p",
+            "text": "Der Knoten weist darauf hin, dass die Anzahl der Freiheitsgrade im Zusammenhang mit der Bewegungsorganisation interpretiert werden muss. Die Beweglichkeit des Daumens garantiert nicht, dass er beim Kontakt mit einem Objekt ausreichend Gegenkraft aufbringt; ein fixierter Daumen kann, bei korrekter Ausrichtung, Aufgaben mit großen Objekten stabil ausführen. Während der Tests sollte beobachtet werden, ob das Objekt gegriffen wird, ob die Körperhaltung dem Ziel entspricht, ob die Hand ihre Position nach der Rotation beibehalten kann und wie viele Neupositionierungen erforderlich sind. Jeder Fehler weist auf einen anderen Konstruktionsgrund hin."
+          },
+          {
+            "type": "p",
+            "text": "Die Designiteration ermöglicht die Korrektur der übrigen Finger und Aktuatoren, indem lediglich die Richtung, der Bewegungsbereich oder die Steuerkopplung des Daumens verändert werden. Anschließend werden die Ergebnisse anhand desselben Objektsatzes verglichen. Dadurch lassen sich Konfigurationseffekte von Oberflächenreibung, Fertigungsqualität und Bedienererfahrung unterscheiden. Die Rückmeldung aus den nachfolgenden Vergleichstests im Diagramm ermöglicht es, bestimmte Arten von Greiffehlern präzise in veränderbare Parameter umzuwandeln. Nach Stabilisierung der Mechanismusleistung wird eine Anwenderschulung durchgeführt, um sicherzustellen, dass die zusätzlichen Steuerungsmöglichkeiten letztendlich die Bedienungsbelastung reduzieren und zuverlässigere Bewegungen ermöglichen."
+          },
+          {
+            "type": "h3",
+            "text": "Gedruckte und kommerzielle Handprothesen am selben Prüfstand vergleichen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2024 verglich drei gedruckte und drei kommerzielle Handprothesen am einheitlichen AHAP-Prüfstand und bezog Daten zu vier bestehenden Druckdesigns ein. Die Druckmodelle waren unter anderem bei Zylinder-, schrägen Palmar-, Extensions- und Kugelgriffen insgesamt schwächer. Die Ergebnisse lokalisierten Verbesserungen an Mechanismus oder Fertigungsqualität.[R09]"
+          },
+          {
+            "type": "p",
+            "text": "Die Benchmark-Evaluierung konzentriert sich auf den Kontakt zwischen der Prothesenhand und dem Objekt und reduziert so Unterschiede, die durch die Passform der Empfängerprothese und die elektromyografische Steuerung bedingt sind. Sie eignet sich zur Beurteilung, ob ein Mechanismus ein Objekt nach Auswahl eines Greifmusters stabil halten kann, und ermöglicht zudem wiederholte Tests von Teileaustauschen oder Materialanpassungen. Die Bewertung sollte idealerweise Unterkriterien für jede Greifart enthalten, da der Gesamtmittelwert Schwächen in einer bestimmten wichtigen motorischen Fertigkeit des Alltags verschleiern kann."
+          },
+          {
+            "type": "p",
+            "text": "Bei Nutzerstudien sollten die Testaufgaben auch die autonome Griffwahl, die Armpositionierung und die beidhändige Koordination umfassen. Die Leistung auf dem Prüfstand bildet die strukturelle Grundlage für diese Art der Evaluation, während die Nutzerergebnisse Kontrolle und Training wieder integrieren. Ein zweistufiger Vergleich, zunächst auf dem Prüfstand und anschließend beim Nutzer, kann durchgeführt werden. Dabei werden Objektbehalten, Bearbeitungszeit, Fehlaktionen und Nutzungspräferenzen für dieselbe Version erfasst. Dies liefert Unternehmen eine konkrete Liste umsetzbarer Verbesserungen, und die klinische Auswahl kann auf der Übereinstimmung zwischen den Hauptaufgaben des Nutzers und den Fähigkeiten des Geräts basieren."
+          },
+          {
+            "type": "h3",
+            "text": "Eine offene handgelenkgetriebene Orthese anhand von Rückmeldungen verbessern"
+          },
+          {
+            "type": "p",
+            "text": "Die Open-Source-Forschungsarbeit aus dem Jahr 2018 zur handgelenksgesteuerten Orthese berücksichtigte das Feedback von drei Rückenmarksverletzten und sechs Orthopädiestudierenden. Abmessungen und Montageanleitungen wurden öffentlich zugänglich gemacht. Die Materialkosten für verschiedene Größen liegen bei etwa 15–20 US-Dollar, die manuelle Montage dauert ca. 1,5 Stunden. Der Nutzen variiert je nach Anwendung, und das Feedback wird zur Optimierung der Struktur und der Befestigungselemente genutzt. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "Diese Studie unterteilt Barrierefreiheit in beobachtbare Schritte. Die einfache Verfügbarkeit von Materialien ist nur der Anfang; Hersteller müssen auch Größenanpassungen, Gelenkverbindungen und Passformmethoden berücksichtigen, während Nutzer das Kleidungsstück an- und ausziehen und einen stabilen Kontakt gewährleisten können müssen. Modifikationen an Gurten, Magnetverbindungen und Fingerstützen erweitern die Forschung von mechanischen Bewegungen auf alltägliche Funktionen. Für Menschen mit eingeschränkter Handbeweglichkeit ist die selbstständige Tragbarkeit an sich ein wichtiges funktionales Ziel."
+          },
+          {
+            "type": "p",
+            "text": "Das Auswertungstool eignet sich zur Dokumentation des gesamten Prozesses von der Messung bis zur ersten Anwendung, einschließlich Wartezeiten beim Drucken, manueller Montage, klinischer Anpassungen und Reproduktion. Durch die Zuordnung der Gründe für jede Modifikation zum jeweiligen Ergebnis lässt sich beurteilen, ob eine vereinfachte Montage die Zuverlässigkeit beeinträchtigt oder ob ein leichteres Ablegen die kontinuierliche Nutzung verbessert. Die Open-Source-Dokumentation kann versioniert werden, sodass verschiedene Institutionen dasselbe Protokoll reproduzieren und lokale Anforderungen in die Entwicklung einfließen lassen können. Dadurch wird aus einem kostengünstigen Prototyp ein kontinuierlich nutzbarer Rehabilitationsdienst."
+          },
+          {
+            "type": "h3",
+            "text": "Myoelektrische Orthesen auf unmittelbare Handfunktion prüfen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie aus dem Jahr 2019 nutzte eine gedruckte Struktur, elektromyografische Daten und aktive Aktorik zur Entwicklung einer Handorthese. Zehn Teilnehmer mit chronischer zervikaler Rückenmarksverletzung wurden am selben Tag mit und ohne Orthese verglichen. Es zeigten sich Verbesserungen in Handfunktionstests und bei der Nahrungsaufnahme, während die Veränderungen bei der Feinmotorik und anderen Selbstpflegeaufgaben begrenzt waren. [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Aktive Unterstützung wird hier anhand der Aufgabenleistung des Nutzers statt allein am Aktuator gemessen. Höhere Greifkraft kann das Anheben einer Tasse erleichtern; Anziehen und Körperpflege benötigen zusätzlich Rumpfkontrolle, Gelenkbewegung und beidhändige Koordination. Selbstversorgungsaufgaben sind getrennt zu berichten, ergänzt um Volumen, Gewicht, Einstellung und Trageanforderungen des Hilfsmittels."
+          },
+          {
+            "type": "p",
+            "text": "Nachdem die Studie über einen längeren Zeitraum angewendet wurde, kann zunächst eine Anpassungsphase eingerichtet werden. Anschließend können die Ergebnisse ausgewertet werden, um festzustellen, ob der Nutzen der Aufgabe mit dem Lernprozess zunimmt und ob die zusätzliche Steuerung zu verstärkter Ermüdung führt. Die Version des Fixiergeräts, die Aufzeichnung der Elektromyographie-Kalibrierung und die tägliche Nutzungsdauer helfen, den Nutzen des Trainings von Designänderungen zu unterscheiden. Das Feedback im Diagramm führt zurück zum handgelenkgesteuerten Knotenpunkt und zeigt, dass beide Wege ähnliche Probleme im Zusammenhang mit Anlegen/Andocken, Haftung und Aufgabenanpassung aufweisen. Die Wahl zwischen körpergesteuerten und aktivgesteuerten Ansätzen sollte daher auf der Erhaltung der Leistungsfähigkeit und den Lebenszielen basieren, um eine nachvollziehbare Designentscheidung zu ermöglichen."
+          },
+          {
+            "type": "h3",
+            "text": "Manuelle und digitale Formanpassung bei gleicher Fertigung vergleichen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Machbarkeitsstudie von 2024 verglich bei 9 transtibial amputierten Personen manuelle Abformung und Formanpassung mit Scannen und anschließender digitaler Formanpassung. Beide Wege endeten im 3D-Druck. Geometrie, Komfortwerte und Prozesszeit wurden gemeinsam erfasst. Der Komfort beider Schaftarten war ähnlich; Scannen sparte Zeit, die digitale Formanpassung dauerte länger.[R14]"
+          },
+          {
+            "type": "p",
+            "text": "Der Schlüssel zu diesem Vergleich liegt im gemeinsamen Herstellungsprozess. Er konzentriert sich auf klinische Fragestellungen zur Bestimmung der Kontaktform und vermeidet es, alle Ergebnisse gleichzeitiger Änderungen bei Scannern, Software, Materialien und Druckern allein der Digitalisierung zuzuschreiben. Manuelle Erfahrung, einschließlich Palpation und Beurteilung von Weichteildeformitäten, muss in der Software durch anatomische Markierung, lokale Reduktion und räumliche Addition abgebildet werden. Ob diese Arbeitsschritte vollständig dokumentiert werden, entscheidet darüber, ob diese Beurteilungen von verschiedenen Orthopädietechnikern wiederverwendet werden können."
+          },
+          {
+            "type": "p",
+            "text": "An der im Diagramm dargestellten Position repräsentiert der Knoten sowohl den Algorithmus als auch die Schnittstellenmechanik. Der Algorithmus muss die modifizierte Form erlernen, während das Mechanikmodell erkennen muss, welcher Kontaktbereich verändert wurde. Nachfolgende Vergleiche können drei Oberflächen desselben Benutzers berücksichtigen: den initialen Stumpfscan, jeden Modifikationsschritt und das fertige Gerät, wobei eine einheitliche Gehaufgabe integriert wird. Dieser Ansatz identifiziert nicht nur spezifische Unterschiede, sondern auch notwendige manuelle Anpassungen für mehr Komfort und bildet somit eine realistische digitale Anpassungsbelastung ab."
+          },
+          {
+            "type": "h3",
+            "text": "Grenzflächen-FE-Modell mit einem Rollsimulator kalibrieren"
+          },
+          {
+            "type": "p",
+            "text": "Die Studie 2025 integrierte eine Lastmesseinheit in die Außenwand eines gedruckten Prothesenschafts. Diese erfasste die innere Kraft über die Kolbenschnittstelle und verglich sie mit Vorhersagen aus Finite-Elemente-Methoden an sieben Positionen eines Rollsimulators. Die Ergebnisse zeigen, dass die Genauigkeit der geometrischen Beschreibung einen entscheidenden Einfluss auf die Vorhersage des Schnittstellendrucks hat. [R15]"
+          },
+          {
+            "type": "p",
+            "text": "Der Knoten validiert das Rechenmodell in einem reproduzierbaren experimentellen Kontext. Die Simulation von Stumpfenden, Prothesenschaften und Rollbahnen ermöglicht reproduzierbare Lasteingaben und erlaubt so die Beobachtung, ob der Fehler auf die Materialmodellierung, Kontaktannahmen oder die Geometrie zurückzuführen ist. Das Lastelement misst die Normalkraft an der entsprechenden Stelle, und das Modell sollte diese Größe an derselben Stelle, im selben Bereich und zum selben Zeitpunkt ausgeben. Ein Vergleich der maximalen Spannung über das gesamte Feld mit dem lokalen Durchschnittsdruck, selbst bei ähnlichen Werten, reicht nicht aus, um den Vorhersagemechanismus zu bestätigen."
+          },
+          {
+            "type": "p",
+            "text": "Dieses Modell bildet zusammen mit den Scan-Knoten eine entscheidende Konvergenz: Geometrische Fehler werden durch Kontaktbeziehungen zu Druckfehlern verstärkt. Die nachfolgende digitale Modellierung kann zunächst die Änderungsrichtung vorhersagen und anschließend die Ergebnisse vor und nach den Modifikationen mit demselben Instrument vergleichen, um lokale Designregeln mit klaren Eingaben und Ergebnissen zu erstellen. Bei der Übertragung auf den menschlichen Körper müssen auch Gewebezustand, Polsterung und Aufhängungsbedingungen erfasst werden. Auf diese Weise kann das Druckmodell die Interpretation der Modellierung unterstützen, während die vom Patienten berichteten Schmerzen, die Stabilität und die Aktivität die Endpunkte des tatsächlichen Ergebnisses bleiben."
+          },
+          {
+            "type": "h3",
+            "text": "Nutzung und Schäden in einer ländlichen Kohorte verfolgen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Kohortenstudie aus Sierra Leone, die 2025 online und in der Ausgabe 2026 veröffentlicht wurde, begleitete neun Unterschenkelamputierte über einen Zeitraum von 2,5 Jahren. Sechs Prothesenschäfte wurden während der Nachbeobachtung beschädigt, andere mussten aufgrund von Größenproblemen ersetzt werden; die mediane tägliche Tragezeit betrug zum letzten erfassten Zeitpunkt 12,4 Stunden. Die Studie erfasste gleichzeitig Aktivität, Funktion und Lebensqualität. [R16]"
+          },
+          {
+            "type": "p",
+            "text": "Dieser Knotenpunkt erweitert die Servicebewertung um eine zeitliche Dimension. Die fortgesetzte Nutzung des Geräts zeigt dessen Integration in den Alltag an, während Läsionen und Nachjustierungen den erforderlichen Unterstützungsbedarf für die Aufrechterhaltung der Nutzung verdeutlichen. Die Forschungsanalyse muss die anfängliche Nutzungsdauer, nachfolgende Austausche, Wartungswartezeiten und den endgültigen Verschleiß separat betrachten, um zu erklären, wie ein Teilnehmer nach einem Geräteaustausch ein hohes Aktivitätsniveau beibehalten kann. Auch die Aktivitätsbelastung sollte erfasst werden, da die gleiche Nutzungsdauer in Monaten mit unterschiedlichen Nutzungshäufigkeiten und -intensitäten einhergehen kann."
+          },
+          {
+            "type": "p",
+            "text": "Die beiden Rückkopplungsschleifen im Diagramm sind somit ausgebildet. Größenänderungen werden an Scan- und Umformprozesse zurückgeführt, wobei der Zustand der Extremität in jeder Phase erhalten bleiben muss; die Schadenslokalisation wird an die Material- und Verstärkungspfade zurückgeführt, was die Erfassung des Bruchbereichs und der Fertigungscharge erfordert. Die Bewertung der Servicezugänglichkeit berücksichtigt zudem Transport, Wiederaufbereitung und temporäre Alternativen. Durch die Integration dieser Daten in ein zentrales Archiv und deren Digitalisierung kann jeder Ersatz als Grundlage für die nächste Designiteration dienen, und eine längere effektive Tragezeit kann genutzt werden, um zu überprüfen, ob die Fertigungseffizienz die Rehabilitation tatsächlich verbessert."
+          }
+        ]
+      },
+      {
+        "title": "Technologien und Angebote der Unternehmen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Open Bionics dokumentiert den individuell gefertigten myoelektrischen Hero Arm und den Hero Gauntlet bei Teilhandverlust. Der PIPDriver von Össur nutzt die Restbewegung eines Fingergelenks. Ottobocks iFab und MyFit übertragen digitale Formen auf Testschäfte. Die klinische Nachanpassung bleibt Teil der Versorgung. [R12] [R13] [R17] [R18] [R20]"
+          },
+          {
+            "type": "p",
+            "text": "Im Juni 2025 kündigte Open Bionics einen erweiterten Anpassungsbereich des Hero Gauntlet und die Bestellmöglichkeit für US-amerikanische Orthopädietechnik-Praxen an. Das Handgelenk treibt die Finger an. Individuelle Teile entstehen mit Multi Jet Fusion. Beim Vergleich mit myoelektrischen Systemen sind Defektausmaß, verfügbare Handgelenkbewegung, Bewegung nach Anlegen und wiederholtes An- und Ablegen zu erfassen. [R13] [R20]"
+          }
+        ]
+      },
+      {
+        "title": "Patentansätze und Fertigungsschnittstellen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN105287064A adressiert den gedruckten Schaft als Fertigungsobjekt. CN120531531A verbindet digitale Anpassung mit flexibler Drucksensorik und koppelt so Kontaktmessung und Formänderung. Zwei Prüfungen ergeben sich: Übereinstimmung bei bekannter Last sowie Komfort und Relativbewegung vor und nach Anpassung derselben Person. [R06] [R19]"
+          }
+        ]
+      },
+      {
+        "title": "Verbindungen von Forschung und Industrie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Am Prüfstand lassen sich zwei Griffmechanismen bei gleichem Schaft und gleicher Steuerung vergleichen. Klinisch kann bei konstantem Mechanismus die Passform oder das Training variiert werden. So wird sichtbar, ob Bauteil, Anpassung oder Übung die Funktion begrenzen. Versions- und Austauschdaten erleichtern später die Zuordnung von Leistungsänderungen. [R01] [R09] [R14] [R18]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick und Kriterien für Fortschritt",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Künftig können Nutzungshäufigkeit, Reparaturen und Gründe für den Abbruch bei vergleichbarer Amputationshöhe und gemeinsamen Aufgaben verfolgt werden. Bei Schäften werden Drücke vor und nach Anpassung mit der tatsächlichen Tragedauer verknüpft. Die fortgesetzte Nutzung prüft die erwartete Komfortverbesserung. [R14] [R15] [R16]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Functional evaluation of a non-assembly 3D-printed hand prosthesis",
+        "url": "https://doi.org/10.1177/0954411919874523",
+        "year": "2019",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "Assessment of body-powered 3D printed partial finger prostheses: a case study",
+        "url": "https://doi.org/10.1186/s41205-019-0044-0",
+        "year": "2019",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "A 3D Printed, Bionic Hand Powered by EMG Signals and Controlled by an Online Neural Network.",
+        "url": "https://doi.org/10.3390/biomimetics8020255",
+        "year": "2023",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Design, modeling, and preliminary evaluation of a 3D-printed wrist-hand grasping orthosis for stroke survivors.",
+        "url": "https://doi.org/10.1017/wtc.2024.18",
+        "year": "2024",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Ten guidelines for the design of non-assembly mechanisms: The case of 3D-printed prosthetic hands.",
+        "url": "https://doi.org/10.1177/0954411918794734",
+        "year": "2018",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "Prosthetic socket and 3D printing preparation method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN105287064A",
+        "year": "2016",
+        "source": "Espacenet",
+        "id": "R06"
+      },
+      {
+        "title": "Functional improvement by body-powered 3D-printed prosthesis in patients with finger amputation: Two case reports",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9276309/",
+        "year": "2022",
+        "source": "Medicine",
+        "id": "R07"
+      },
+      {
+        "title": "Effect of the Thumb Orientation and Actuation on the Functionality and Performance of Affordable Prosthetic Hands: Obtaining Design Criteria",
+        "url": "https://doi.org/10.3390/biomimetics7040233",
+        "year": "2022",
+        "source": "Biomimetics",
+        "id": "R08"
+      },
+      {
+        "title": "A performance evaluation of commercially available and 3D-printable prosthetic hands: a comparison using the anthropomorphic hand assessment protocol",
+        "url": "https://link.springer.com/article/10.1186/s42490-024-00086-w",
+        "year": "2024",
+        "source": "BMC Biomedical Engineering",
+        "id": "R09"
+      },
+      {
+        "title": "Design of a 3D-printed, open-source wrist-driven orthosis for individuals with spinal cord injury",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0193106",
+        "year": "2018",
+        "source": "PLOS ONE",
+        "id": "R10"
+      },
+      {
+        "title": "Development of a 3D-printed myoelectric hand orthosis for patients with spinal cord injury",
+        "url": "https://link.springer.com/article/10.1186/s12984-019-0633-6",
+        "year": "2019",
+        "source": "Journal of NeuroEngineering and Rehabilitation",
+        "id": "R11"
+      },
+      {
+        "title": "PIPDriver",
+        "url": "https://www.ossur.com/en-in/prosthetics/arms/pipdriver",
+        "year": "2026年现行资料",
+        "source": "Naked Prosthetics / Össur",
+        "id": "R12"
+      },
+      {
+        "title": "Frequently asked questions: Hero Arm history and manufacture",
+        "url": "https://openbionics.com/en/faq/",
+        "year": "2026年现行资料",
+        "source": "Open Bionics",
+        "id": "R13"
+      },
+      {
+        "title": "Comparison of Socket Geometry, Socket Comfort, and Patient Experience between Manually- and Digitally-Designed Prosthetic Sockets for Lower-Limb Amputees: A Feasibility Study",
+        "url": "https://www.mdpi.com/2673-1592/6/3/48",
+        "year": "2024",
+        "source": "Prosthesis",
+        "id": "R14"
+      },
+      {
+        "title": "Evaluating interface pressure in a lower-limb prosthetic socket: Comparison of FEM and experimental measurements on a roll-over simulator",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39778443/",
+        "year": "2025",
+        "source": "Journal of Biomechanics",
+        "id": "R15"
+      },
+      {
+        "title": "Longevity and effectiveness of 3D-printed transtibial prosthetic sockets in rural Sierra Leone: A pilot study with 2.5-year follow-up",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40464523/",
+        "year": "2025在线；2026卷期",
+        "source": "Prosthetics and Orthotics International",
+        "id": "R16"
+      },
+      {
+        "title": "iFab – the individual fabrication",
+        "url": "https://corporate.ottobock.com/en/futuring/ifab",
+        "year": "2026年现行资料",
+        "source": "Ottobock",
+        "id": "R17"
+      },
+      {
+        "title": "MyFit TT/TF",
+        "url": "https://www.ottobock.com/en-us/professionals/services/fabrication/myfit-tt-tf-test-sockets",
+        "year": "2026年现行资料",
+        "source": "Ottobock",
+        "id": "R18"
+      },
+      {
+        "title": "Digitization and flexible pressure sensor combined thigh artificial limb socket optimization manufacturing method",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120531531A",
+        "year": "2025",
+        "source": "Espacenet",
+        "id": "R19"
+      },
+      {
+        "title": "4, 3, 2, 1 Fingers! Now Available For All",
+        "url": "https://openbionics.com/4-3-2-1-fingers-now-available-for-all/",
+        "year": "2025",
+        "source": "Open Bionics",
+        "id": "R20"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1154 @@
+{
+  "zh": {
+    "id": "H08",
+    "p": "P1",
+    "title": "颅骨个体化修复植入物",
+    "subtitle": "让术前轮廓、实物适配与术后保护相互校验",
+    "thesis": "颅骨重建需要在恢复轮廓和保护组织之间建立病例级证据。金属直接打印、PEEK 挤出和打印模具铸造 PMMA 分别改变临床修整、制造验证与交付范围。",
+    "questions": [],
+    "graph": {
+      "title": "从缺损几何到三种制造路径",
+      "summary": "缺损轮廓经过数字验收后，钛、直接打印 PEEK 及间接 PMMA 分路。成品检验与随访反馈边缘和固定约束。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2022–2024",
+          "refs": [
+            "R02",
+            "R03",
+            "R05"
+          ],
+          "title": "分割缺损缘并重建形态",
+          "question": "哪些骨缘和对称面决定成品轮廓？",
+          "evidence": "术前影像决定骨缘和缺损范围。镜像依赖对侧完整；中线缺损或不对称病例需要联合曲面重建和医生确认。"
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2015–2026",
+          "refs": [
+            "R07",
+            "R10",
+            "R13"
+          ],
+          "title": "金属直接制造",
+          "question": "薄壳与固定孔应如何一并核对？",
+          "evidence": "患者特异钛板把薄壳曲面与螺钉固定共同定义。FDA 文件可核对明确型号、适用范围与制造主体。"
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2021–2026",
+          "refs": [
+            "R04",
+            "R09",
+            "R11"
+          ],
+          "title": "直接打印 PEEK",
+          "question": "尺寸和承载分别验证什么？",
+          "evidence": "院内 FFF PEEK 准静态测试的平均峰值载荷 798.38 ± 211.45 N，对应 2.54 ± 0.56 mm 平均位移。应同时保留植入物形态、加载位置和失效模式。"
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2022–2023",
+          "refs": [
+            "R01",
+            "R06",
+            "R08"
+          ],
+          "title": "打印模具后成形 PMMA",
+          "question": "模具复制增加了哪些几何偏差？",
+          "evidence": "技术报告用模型评估尺寸、模具塑形 PMMA。十例早期系列报告每件平均支出 40 美元，体现当地项目计价。"
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 1,
+          "time": "2021–2026",
+          "refs": [
+            "R03",
+            "R04",
+            "R09"
+          ],
+          "title": "检验成品边缘、形状与固定",
+          "question": "平均误差是否掩盖局部台阶？",
+          "evidence": "数字拟合只能给出计划距离。复测实物时应独立核对局部边缘台阶、固定孔和受载变形，记录术中必须修整的部位。"
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2024–2026",
+          "refs": [
+            "R05",
+            "R09",
+            "R13"
+          ],
+          "title": "跟踪体积轮廓、皮肤与固定",
+          "question": "术后适配异常由哪个阶段造成？",
+          "evidence": "把手术所用植入物版本与术后表面轮廓、软组织状态和复诊记录联系，追溯偏差来自计划、制造还是术中调整。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "金属分路"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "热塑材料分路"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "模具分路"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "检查薄壳与孔位"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "检查层间和成品几何"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "核对模具转移后的边缘"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "将术中记录带入随访"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "适配问题回溯边缘"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究对象与评价边界",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "颅骨方向涉及保护性整体轮廓，以及骨缘、固定件与软组织相容关系。用标志点配准可以同步观察整体对称度与薄边缘的局部台阶，避免把平均误差用于掩盖局部突出。 [R02] [R04] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与研究解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "分割缺损缘并重建形态"
+          },
+          {
+            "type": "p",
+            "text": "术前影像决定骨缘和缺损范围。镜像依赖对侧完整；中线缺损或不对称病例需要联合曲面重建和医生确认。 [R02] [R03] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "金属直接制造"
+          },
+          {
+            "type": "p",
+            "text": "患者特异钛板把薄壳曲面与螺钉固定共同定义。FDA 文件可核对明确型号、适用范围与制造主体。 [R07] [R10] [R13]"
+          },
+          {
+            "type": "h3",
+            "text": "直接打印 PEEK"
+          },
+          {
+            "type": "p",
+            "text": "院内 FFF PEEK 准静态测试的平均峰值载荷 798.38 ± 211.45 N，对应 2.54 ± 0.56 mm 平均位移。应同时保留植入物形态、加载位置和失效模式。 [R04] [R09] [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "打印模具后成形 PMMA"
+          },
+          {
+            "type": "p",
+            "text": "技术报告用模型评估尺寸、模具塑形 PMMA。十例早期系列报告每件平均支出 40 美元，体现当地项目计价。 [R01] [R06] [R08]"
+          },
+          {
+            "type": "h3",
+            "text": "检验成品边缘、形状与固定"
+          },
+          {
+            "type": "p",
+            "text": "数字拟合只能给出计划距离。复测实物时应独立核对局部边缘台阶、固定孔和受载变形，记录术中必须修整的部位。 [R03] [R04] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "跟踪体积轮廓、皮肤与固定"
+          },
+          {
+            "type": "p",
+            "text": "把手术所用植入物版本与术后表面轮廓、软组织状态和复诊记录联系，追溯偏差来自计划、制造还是术中调整。 [R05] [R09] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "PMMA 研究把打印用于几何工具，直接打印 PEEK 研究把打印用于承载成品。前者以模型尺寸、模具转移和临床整形为重点，后者将测试载荷、层间失效及成品验收连在一起。两种流程都要区分生产成本和完整就医周期。 [R04] [R06] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "PEEK 研究将与计划的真度和重复件之间的精密度分开：10 次成品与设计比较量化真度，另外在成品扫描之间比较制造重复性。以扫描曲面整体配准得到的均方根误差适合比较几何过程，应加上骨缺损边缘分区图，以显示局部台阶和螺孔偏位。平均载荷与位移则来自特定准静态夹持加载，不能代替边缘贴合。 [R04]"
+          },
+          {
+            "type": "p",
+            "text": "2026 年院内框架论文记录约 35 个颅骨和 6 个面部 PEEK 植入件的制造规模。研究区分颅骨 0.30 mm 和面部 0.28 mm 层厚，目标分别落在结构、生产时间和可见表面表现的取舍。比较医院间流程时，应逐适应证保留设计、检验、实际植入及返工的版本记录。 [R09]"
+          }
+        ]
+      },
+      {
+        "title": "企业技术与服务路线",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "BioArchitects 的 K151692 提供钛板参考节点。3D Systems 在 2024 年公布 VSP PEEK 颅骨产品许可 K231834。2026 年 K253116 是 3D MAC Titanium Cranial Plate System 的另一条制造与申报路径。三条记录可用来核对产品、制造地点与责任主体。 [R10] [R11] [R12] [R13] [R14]"
+          },
+          {
+            "type": "p",
+            "text": "3D Systems的两条路线需要清楚分开。VSP PEEK Cranial Implant于2024年4月4日取得K231834许可，4月15日发布公告；对象是材料挤出制造的非承重PEEK颅骨植入物。公司将分割建模、EXT 220 MED、材料和预定义生产过程一起描述，显示交付对象扩展为一套受控工作流程。[R11][R12]"
+          },
+          {
+            "type": "p",
+            "text": "2026年6月18日获得K253116许可的是3D MAC Titanium Cranial Plate System，申请人为美国陆军军医部。7月28日公告说明3D Systems参与质量管理、设计验证和申报支持。该系统的植入部分为EBM制造的Ti6Al4V钛板，SLA树脂颅骨参考模型承担适配检查与定位任务；两部分通过不同材料和制造工艺完成各自功能。[R13][R14]"
+          },
+          {
+            "type": "callout",
+            "title": "产品许可与院内生产的不同路径",
+            "text": "K253116以BioArchitects K151692作为对比器械，形成明确的监管参照关系。2026年院内PEEK论文采用Article 5(5)框架组织机构内部生产。FDA产品许可、院内生产安排和临床研究，分别提供器械监管、生产组织和使用结果的证据。[R13][R09]"
+          }
+        ]
+      },
+      {
+        "title": "专利设计与制造接口",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN106377343A 聚焦钛网和制备，CN103393486A 聚焦颅骨修补瓣制作，US2018113992A1 使用对侧图像生成骨科植入信息。可审查网孔及边缘形态、打印环节与成品的界面、对侧与缺损侧配准误差。 [R07] [R08] [R15]"
+          }
+        ]
+      },
+      {
+        "title": "学术与产业的结合点",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "供应商测量成品形态、边界及固定层结构，医院记录患者解剖、贴合、调磨与术后随访。统一测量坐标可以区分板件制造偏差和同一成品在手术中的位置误差。 [R04] [R09] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "PMMA模具链应跟踪打印模板、翻模材料和最终件的三次几何转移。PEEK 和钛的直接制造链则可用同一套定位标记对照打印前后与术后的位置。用同一骨缘邻域和检查点报告差值，有利于比较加工路线对最终适配的贡献。 [R04] [R06] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "未来演进与验证指标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "可关注同类缺损条件下的按期交付、边缘返工、修复轮廓、软组织并发症和再次手术。院内路线的规模化应在相同交付条件下比较完整工时、跨批一致性及记录可追溯性。 [R04] [R06] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Bespoke Implants for Cranial Reconstructions: Preoperative to Postoperative Surgery Management System.",
+        "url": "https://doi.org/10.3390/bioengineering10050544",
+        "year": "2023",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "From Imaging Data to Cranioplasty Implant Designs",
+        "url": "https://doi.org/10.35882/jeemi.v5i3.300",
+        "year": "2023",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "Surgical planning and finite element analysis for the neurocraneal protection in cranioplasty with PMMA: A case study.",
+        "url": "https://doi.org/10.1016/j.heliyon.2022.e10706",
+        "year": "2022",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Quantitative Assessment of Point-of-Care 3D-Printed Patient-Specific Polyetheretherketone (PEEK) Cranial Implants.",
+        "url": "https://doi.org/10.3390/ijms22168521",
+        "year": "2021",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Personalized 3D-printed cranial implants for complex cranioplasty using open-source software.",
+        "url": "https://doi.org/10.25259/sni_906_2023",
+        "year": "2024",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "Early experience with patient-specific low-cost 3D-printed polymethylmethacrylate cranioplasty implants in a lower-middle-income-country: Technical note and economic analysis.",
+        "url": "https://doi.org/10.25259/sni_250_2022",
+        "year": "2022",
+        "source": "",
+        "id": "R06"
+      },
+      {
+        "title": "3D printing cranioplasty titanium net, and preparation method of same",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN106377343A",
+        "year": "2017",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "Method for preparing to-be-repaired skull flap by 3D printing",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN103393486A",
+        "year": "2013",
+        "source": "Espacenet",
+        "id": "R08"
+      },
+      {
+        "title": "Clinical implementation of an EU MDR-compliant point-of-care manufacturing framework for patient-specific 3D-printed PEEK implants in craniomaxillofacial reconstruction",
+        "url": "https://link.springer.com/article/10.1186/s41205-026-00325-x",
+        "year": "2026",
+        "source": "3D Printing in Medicine",
+        "id": "R09"
+      },
+      {
+        "title": "K151692: BioArchitects Patient Specific Cranial/Craniofacial Plate",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf15/K151692.pdf",
+        "year": "2015",
+        "source": "FDA",
+        "id": "R10"
+      },
+      {
+        "title": "K231834: VSP PEEK Cranial Implant",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K231834.pdf",
+        "year": "2024",
+        "source": "FDA",
+        "id": "R11"
+      },
+      {
+        "title": "3D Systems Announces FDA Clearance for World's First 3D-Printed PEEK Cranial Implants",
+        "url": "https://www.3dsystems.com/press-releases/3d-systems-announces-fda-clearance-worlds-first-3d-printed-peek-cranial-implants",
+        "year": "2024",
+        "source": "3D Systems",
+        "id": "R12"
+      },
+      {
+        "title": "K253116: 3D MAC Titanium Cranial Plate System",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K253116.pdf",
+        "year": "2026",
+        "source": "FDA",
+        "id": "R13"
+      },
+      {
+        "title": "3D Systems Enables First FDA Clearance for Implant from a Point-of-Care Institution",
+        "url": "https://www.3dsystems.com/press-releases/3d-systems-enables-first-fda-clearance-implant-point-care-institution",
+        "year": "2026",
+        "source": "3D Systems",
+        "id": "R14"
+      },
+      {
+        "title": "Contralateral image orthopedic implant",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS2018113992A1",
+        "year": "2018",
+        "source": "Espacenet",
+        "id": "R15"
+      }
+    ]
+  },
+  "en": {
+    "id": "H08",
+    "p": "P1",
+    "title": "Patient-specific cranial repair implants",
+    "subtitle": "Cross-check planned contour, manufactured fit and postoperative protection",
+    "thesis": "Cranial reconstruction links contour restoration to tissue protection at case level. Direct metal printing, PEEK extrusion and PMMA cast in printed tooling have different implications for clinical adjustment, manufacturing verification and delivery.",
+    "questions": [],
+    "graph": {
+      "title": "From defect geometry to three manufacturing routes",
+      "summary": "After digital review, titanium, direct PEEK and indirect PMMA branch. Inspection and follow-up refine the constraints on margins and fixation.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2022–2024",
+          "refs": [
+            "R02",
+            "R03",
+            "R05"
+          ],
+          "title": "Segment the defect and reconstruct contour",
+          "question": "Which margins and symmetry planes determine contour?",
+          "evidence": "Imaging defines residual bone and defect extent. Mirroring depends on an intact opposite side. Midline or asymmetric defects call for surface reconstruction with clinical review."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2015–2026",
+          "refs": [
+            "R07",
+            "R10",
+            "R13"
+          ],
+          "title": "Manufacture metal directly",
+          "question": "How can the thin shell and fixation holes be checked together?",
+          "evidence": "Patient-specific titanium plates define thin shell geometry together with fixation. FDA records identify device, scope and manufacturer."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2021–2026",
+          "refs": [
+            "R04",
+            "R09",
+            "R11"
+          ],
+          "title": "Print PEEK directly",
+          "question": "What do geometry and load tests verify separately?",
+          "evidence": "Quasistatic tests of in-hospital FFF PEEK implants recorded 798.38 ± 211.45 N mean peak force at 2.54 ± 0.56 mm mean displacement. Retain implant shape, load location and failure mode alongside the result."
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2022–2023",
+          "refs": [
+            "R01",
+            "R06",
+            "R08"
+          ],
+          "title": "Cast PMMA using printed tooling",
+          "question": "What deviations arise during molding?",
+          "evidence": "A technical series checked size on a model and formed PMMA using a mold. The early ten-case series reported a US$40 mean cost per implant in that local program."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 1,
+          "time": "2021–2026",
+          "refs": [
+            "R03",
+            "R04",
+            "R09"
+          ],
+          "title": "Inspect as-built margins, contour and fixation",
+          "question": "Can averages hide a local step-off?",
+          "evidence": "Digital fitting provides planned distances. Inspection should separately check local step-off, fixation holes and loaded deformation, recording regions that needed intraoperative finishing."
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2024–2026",
+          "refs": [
+            "R05",
+            "R09",
+            "R13"
+          ],
+          "title": "Follow contour, skin and fixation",
+          "question": "Which stage explains postoperative fit issues?",
+          "evidence": "Link the installed implant revision to postoperative contour, soft-tissue status and follow-up. Trace differences to design, manufacture or surgical adjustment."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Metal route"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Thermoplastic route"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Molding route"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Inspect shell and holes"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Inspect layers and geometry"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Check margins after molding"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Carry surgical records to follow-up"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Trace fit issues to margins"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Research scope and outcomes",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Cranial reconstruction involves protective contour and the relationship between bone margins, fasteners and soft tissue. Landmark registration allows simultaneous assessment of overall symmetry and local edge step-off, which can be obscured by averaging. [R02] [R04] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathways and evidence",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Segment the defect and reconstruct contour"
+          },
+          {
+            "type": "p",
+            "text": "Imaging defines residual bone and defect extent. Mirroring depends on an intact opposite side. Midline or asymmetric defects call for surface reconstruction with clinical review. [R02] [R03] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "Manufacture metal directly"
+          },
+          {
+            "type": "p",
+            "text": "Patient-specific titanium plates define thin shell geometry together with fixation. FDA records identify device, scope and manufacturer. [R07] [R10] [R13]"
+          },
+          {
+            "type": "h3",
+            "text": "Print PEEK directly"
+          },
+          {
+            "type": "p",
+            "text": "Quasistatic tests of in-hospital FFF PEEK implants recorded 798.38 ± 211.45 N mean peak force at 2.54 ± 0.56 mm mean displacement. Retain implant shape, load location and failure mode alongside the result. [R04] [R09] [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "Cast PMMA using printed tooling"
+          },
+          {
+            "type": "p",
+            "text": "A technical series checked size on a model and formed PMMA using a mold. The early ten-case series reported a US$40 mean cost per implant in that local program. [R01] [R06] [R08]"
+          },
+          {
+            "type": "h3",
+            "text": "Inspect as-built margins, contour and fixation"
+          },
+          {
+            "type": "p",
+            "text": "Digital fitting provides planned distances. Inspection should separately check local step-off, fixation holes and loaded deformation, recording regions that needed intraoperative finishing. [R03] [R04] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "Follow contour, skin and fixation"
+          },
+          {
+            "type": "p",
+            "text": "Link the installed implant revision to postoperative contour, soft-tissue status and follow-up. Trace differences to design, manufacture or surgical adjustment. [R05] [R09] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "PMMA studies use printing for geometric tooling, whereas direct PEEK studies print the finished load-bearing object. The first route concerns dimensions, mold transfer and adjustment. The second links loading, interlayer failure and acceptance. Both distinguish production costs from the full care episode. [R04] [R06] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "The PEEK study separated trueness relative to the plan from precision between repeat prints. Ten comparisons to the design quantified trueness, with separate scan-to-scan comparisons for repeatability. Surface-registered RMSE characterizes the geometry process. A regional map of the defect margin adds local step-off and screw-hole displacement. Mean load and displacement came from a specific quasistatic fixture and address mechanics rather than edge fit. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "A 2026 point-of-care framework reported manufacture of about 35 cranial and six facial PEEK implants. It distinguished 0.30 mm layers for cranial parts from 0.28 mm layers for facial parts, reflecting different trade-offs between structural integrity, time and surface finish. Compare hospitals by indication using linked design, inspection, actual use and rework records. [R09]"
+          }
+        ]
+      },
+      {
+        "title": "Industry technologies and services",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "BioArchitects K151692 provides a titanium plate reference. 3D Systems announced clearance of VSP PEEK under K231834 in 2024. K253116 documents a separate 2026 manufacturing and submission route for the 3D MAC Titanium Cranial Plate System. Compare the devices, manufacturing locations and responsible parties across those records. [R10] [R11] [R12] [R13] [R14]"
+          },
+          {
+            "type": "p",
+            "text": "The two 3D Systems pathways should be distinguished. VSP PEEK Cranial Implant received FDA clearance under K231834 on 4 April 2024, followed by a company announcement on 15 April. It is a non-load-bearing PEEK cranial implant manufactured by material extrusion. The company describes segmentation and modelling, the EXT 220 MED, material and a predefined production process together, showing an expansion from supplying a product to providing a controlled workflow. [R11][R12]"
+          },
+          {
+            "type": "p",
+            "text": "The 3D MAC Titanium Cranial Plate System received FDA clearance under K253116 on 18 June 2026, with the U.S. Army Medical Department as the applicant. A 28 July announcement describes 3D Systems' support for quality management, design validation and the submission. The implantable component is an EBM-manufactured Ti6Al4V titanium plate; an SLA resin cranial reference model supports fit checks and positioning. The components serve distinct functions through different materials and manufacturing processes. [R13][R14]"
+          },
+          {
+            "type": "callout",
+            "title": "Product clearance and in-house production: distinct pathways",
+            "text": "K253116 identifies BioArchitects K151692 as its predicate device, establishing a specific regulatory reference. The 2026 in-house PEEK paper organizes internal institutional production under the Article 5(5) framework. FDA product clearance, in-house production arrangements and clinical research provide evidence about device regulation, production organization and clinical outcomes, respectively. [R13][R09]"
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and production interfaces",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN106377343A concerns titanium mesh and its production. CN103393486A concerns fabrication of a cranial repair flap. US2018113992A1 uses contralateral imaging for orthopedic implants. Their design interfaces can be assessed through mesh and edge geometry, the role of printing in the finished object and side-to-side registration. [R07] [R08] [R15]"
+          }
+        ]
+      },
+      {
+        "title": "Research and industry connections",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Suppliers measure contour, edge and fixation geometry. Clinics record anatomy, placement, trimming and follow-up. A shared coordinate system distinguishes device fabrication variation from placement variation in surgery. [R04] [R09] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "For molded PMMA, follow geometry across template, mold and final part. For direct PEEK and titanium, shared landmarks can align the design, printed part and postoperative position. Reporting differences for the same bone-margin regions and inspection points helps compare the role of each fabrication route in final fit. [R04] [R06] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "Outlook and measures of progress",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Track on-time delivery, edge rework, repaired contour, soft-tissue complications and reoperation for comparable defects. Scaling point-of-care production calls for comparable total labor, lot consistency and record traceability. [R04] [R06] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Bespoke Implants for Cranial Reconstructions: Preoperative to Postoperative Surgery Management System.",
+        "url": "https://doi.org/10.3390/bioengineering10050544",
+        "year": "2023",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "From Imaging Data to Cranioplasty Implant Designs",
+        "url": "https://doi.org/10.35882/jeemi.v5i3.300",
+        "year": "2023",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "Surgical planning and finite element analysis for the neurocraneal protection in cranioplasty with PMMA: A case study.",
+        "url": "https://doi.org/10.1016/j.heliyon.2022.e10706",
+        "year": "2022",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Quantitative Assessment of Point-of-Care 3D-Printed Patient-Specific Polyetheretherketone (PEEK) Cranial Implants.",
+        "url": "https://doi.org/10.3390/ijms22168521",
+        "year": "2021",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Personalized 3D-printed cranial implants for complex cranioplasty using open-source software.",
+        "url": "https://doi.org/10.25259/sni_906_2023",
+        "year": "2024",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "Early experience with patient-specific low-cost 3D-printed polymethylmethacrylate cranioplasty implants in a lower-middle-income-country: Technical note and economic analysis.",
+        "url": "https://doi.org/10.25259/sni_250_2022",
+        "year": "2022",
+        "source": "",
+        "id": "R06"
+      },
+      {
+        "title": "3D printing cranioplasty titanium net, and preparation method of same",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN106377343A",
+        "year": "2017",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "Method for preparing to-be-repaired skull flap by 3D printing",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN103393486A",
+        "year": "2013",
+        "source": "Espacenet",
+        "id": "R08"
+      },
+      {
+        "title": "Clinical implementation of an EU MDR-compliant point-of-care manufacturing framework for patient-specific 3D-printed PEEK implants in craniomaxillofacial reconstruction",
+        "url": "https://link.springer.com/article/10.1186/s41205-026-00325-x",
+        "year": "2026",
+        "source": "3D Printing in Medicine",
+        "id": "R09"
+      },
+      {
+        "title": "K151692: BioArchitects Patient Specific Cranial/Craniofacial Plate",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf15/K151692.pdf",
+        "year": "2015",
+        "source": "FDA",
+        "id": "R10"
+      },
+      {
+        "title": "K231834: VSP PEEK Cranial Implant",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K231834.pdf",
+        "year": "2024",
+        "source": "FDA",
+        "id": "R11"
+      },
+      {
+        "title": "3D Systems Announces FDA Clearance for World's First 3D-Printed PEEK Cranial Implants",
+        "url": "https://www.3dsystems.com/press-releases/3d-systems-announces-fda-clearance-worlds-first-3d-printed-peek-cranial-implants",
+        "year": "2024",
+        "source": "3D Systems",
+        "id": "R12"
+      },
+      {
+        "title": "K253116: 3D MAC Titanium Cranial Plate System",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K253116.pdf",
+        "year": "2026",
+        "source": "FDA",
+        "id": "R13"
+      },
+      {
+        "title": "3D Systems Enables First FDA Clearance for Implant from a Point-of-Care Institution",
+        "url": "https://www.3dsystems.com/press-releases/3d-systems-enables-first-fda-clearance-implant-point-care-institution",
+        "year": "2026",
+        "source": "3D Systems",
+        "id": "R14"
+      },
+      {
+        "title": "Contralateral image orthopedic implant",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS2018113992A1",
+        "year": "2018",
+        "source": "Espacenet",
+        "id": "R15"
+      }
+    ]
+  },
+  "de": {
+    "id": "H08",
+    "p": "P1",
+    "title": "Patientenspezifische Implantate für die Schädelrekonstruktion",
+    "subtitle": "Geplante Kontur, Passform des Implantats und postoperativen Schutz abgleichen",
+    "thesis": "Bei der Schädelrekonstruktion werden Kontur und Gewebeschutz fallbezogen verknüpft. Metalldirektdruck, PEEK-Extrusion und PMMA-Guss aus gedruckten Formen unterscheiden sich bei Anpassung, Fertigungsprüfung und Versorgung.",
+    "questions": [],
+    "graph": {
+      "title": "Von der Defektgeometrie zu drei Fertigungspfaden",
+      "summary": "Nach digitaler Prüfung verzweigen Titan, direkt gedrucktes PEEK und indirektes PMMA. Prüfung und Nachkontrolle präzisieren Rand- und Fixationsanforderungen.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2022–2024",
+          "refs": [
+            "R02",
+            "R03",
+            "R05"
+          ],
+          "title": "Defektrand segmentieren und Kontur rekonstruieren",
+          "question": "Welche Ränder und Symmetrieebenen bestimmen die Kontur?",
+          "evidence": "Bildgebung definiert Restknochen und Defekt. Spiegelung setzt eine intakte Gegenseite voraus. Mittelliniennahe oder asymmetrische Defekte verlangen Flächenrekonstruktion und ärztliche Prüfung."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2015–2026",
+          "refs": [
+            "R07",
+            "R10",
+            "R13"
+          ],
+          "title": "Metall direkt fertigen",
+          "question": "Wie lassen sich Schale und Fixationslöcher gemeinsam prüfen?",
+          "evidence": "Patientenspezifische Titanplatten verbinden dünne Schale und Schraubenfixation. FDA-Unterlagen geben Produkt, Anwendungsbereich und Hersteller an."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2021–2026",
+          "refs": [
+            "R04",
+            "R09",
+            "R11"
+          ],
+          "title": "PEEK direkt drucken",
+          "question": "Was prüfen Geometrie- und Belastungstests jeweils?",
+          "evidence": "Quasistatische Prüfungen von klinikintern per FFF gefertigten PEEK-Implantaten ergaben 798,38 ± 211,45 N mittlere Maximalkraft bei 2,54 ± 0,56 mm mittlerem Weg. Implantatform, Lasteinleitung und Versagensart gehören zum Ergebnis."
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2022–2023",
+          "refs": [
+            "R01",
+            "R06",
+            "R08"
+          ],
+          "title": "PMMA mit gedrucktem Werkzeug formen",
+          "question": "Welche Abweichungen entstehen bei der Abformung?",
+          "evidence": "Eine technische Fallserie prüfte Maße am Modell und formte PMMA über eine Form. In der frühen Serie mit zehn Fällen lagen die mittleren Kosten im lokalen Programm bei 40 US-Dollar pro Implantat."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 1,
+          "time": "2021–2026",
+          "refs": [
+            "R03",
+            "R04",
+            "R09"
+          ],
+          "title": "Rand, Kontur und Fixation am Fertigteil prüfen",
+          "question": "Kann der Mittelwert lokale Randstufen verdecken?",
+          "evidence": "Die digitale Passprüfung liefert geplante Abstände. Am Fertigteil sind Randstufen, Fixationslöcher und Verformung unter Last getrennt zu prüfen. Intraoperativ nachgearbeitete Bereiche werden dokumentiert."
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2024–2026",
+          "refs": [
+            "R05",
+            "R09",
+            "R13"
+          ],
+          "title": "Kontur, Haut und Fixation nachverfolgen",
+          "question": "Welche Phase erklärt postoperative Passprobleme?",
+          "evidence": "Die eingesetzte Implantatversion wird mit postoperativer Kontur, Weichteilbefund und Nachkontrollen verknüpft. Abweichungen lassen sich Entwurf, Fertigung oder intraoperativer Anpassung zuordnen."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Metallpfad"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Thermoplastpfad"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Formenpfad"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Schale und Löcher prüfen"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Schichten und Form prüfen"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Ränder nach Abformung prüfen"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Operationsdaten in Nachkontrolle übernehmen"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Passprobleme auf Ränder zurückführen"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Forschungsgegenstand und Endpunkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Schädelrekonstruktion betrifft die schützende Kontur und das Zusammenspiel von Knochenrand, Befestigung und Weichteilen. Registrierung anhand anatomischer Landmarken zeigt globale Symmetrie und lokale Randstufen, die sich im Mittelwert verlieren können. [R02] [R04] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Evidenz",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Defektrand segmentieren und Kontur rekonstruieren"
+          },
+          {
+            "type": "p",
+            "text": "Bildgebung definiert Restknochen und Defekt. Spiegelung setzt eine intakte Gegenseite voraus. Mittelliniennahe oder asymmetrische Defekte verlangen Flächenrekonstruktion und ärztliche Prüfung. [R02] [R03] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "Metall direkt fertigen"
+          },
+          {
+            "type": "p",
+            "text": "Patientenspezifische Titanplatten verbinden dünne Schale und Schraubenfixation. FDA-Unterlagen geben Produkt, Anwendungsbereich und Hersteller an. [R07] [R10] [R13]"
+          },
+          {
+            "type": "h3",
+            "text": "PEEK direkt drucken"
+          },
+          {
+            "type": "p",
+            "text": "Quasistatische Prüfungen von klinikintern per FFF gefertigten PEEK-Implantaten ergaben 798,38 ± 211,45 N mittlere Maximalkraft bei 2,54 ± 0,56 mm mittlerem Weg. Implantatform, Lasteinleitung und Versagensart gehören zum Ergebnis. [R04] [R09] [R11]"
+          },
+          {
+            "type": "h3",
+            "text": "PMMA mit gedrucktem Werkzeug formen"
+          },
+          {
+            "type": "p",
+            "text": "Eine technische Fallserie prüfte Maße am Modell und formte PMMA über eine Form. In der frühen Serie mit zehn Fällen lagen die mittleren Kosten im lokalen Programm bei 40 US-Dollar pro Implantat. [R01] [R06] [R08]"
+          },
+          {
+            "type": "h3",
+            "text": "Rand, Kontur und Fixation am Fertigteil prüfen"
+          },
+          {
+            "type": "p",
+            "text": "Die digitale Passprüfung liefert geplante Abstände. Am Fertigteil sind Randstufen, Fixationslöcher und Verformung unter Last getrennt zu prüfen. Intraoperativ nachgearbeitete Bereiche werden dokumentiert. [R03] [R04] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "Kontur, Haut und Fixation nachverfolgen"
+          },
+          {
+            "type": "p",
+            "text": "Die eingesetzte Implantatversion wird mit postoperativer Kontur, Weichteilbefund und Nachkontrollen verknüpft. Abweichungen lassen sich Entwurf, Fertigung oder intraoperativer Anpassung zuordnen. [R05] [R09] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Bei PMMA dient der Druck der geometrischen Formhilfe, bei PEEK dem belasteten Fertigteil. Beim ersten Pfad zählen Maße, Formübertragung und Anpassung. Der zweite verknüpft Belastung, Schichtversagen und Abnahme. Beide unterscheiden Fertigungskosten von der gesamten Versorgung. [R04] [R06] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Die PEEK-Studie trennte Richtigkeit gegenüber dem Plan von Präzision bei Wiederholungsdrucken. Zehn Vergleiche mit dem Entwurf erfassten die Richtigkeit. Separate Scanvergleiche erfassten die Wiederholbarkeit. Der RMSE nach Oberflächenregistrierung bewertet den Geometrieprozess. Regionale Karten zeigen zusätzlich Randstufen und verschobene Schraubenlöcher. Kraft und Weg stammen aus einer bestimmten quasistatischen Einspannung und beschreiben die Mechanik. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Ein klinikinterner Rahmen von 2026 berichtete über etwa 35 kraniale und sechs faziale PEEK-Implantate. Für kraniale Teile wurden 0,30 mm, für faziale 0,28 mm Schichthöhe angegeben. Dahinter stehen unterschiedliche Abwägungen von Struktur, Zeit und Oberfläche. Klinikvergleiche sollten die Versionen von Entwurf, Prüfung, Einsatz und Nacharbeit je Indikation verknüpfen. [R09]"
+          }
+        ]
+      },
+      {
+        "title": "Technologien und Angebote der Unternehmen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "BioArchitects K151692 ist ein Referenzpunkt für Titanplatten. 3D Systems meldete 2024 die Freigabe für VSP PEEK unter K231834. K253116 dokumentiert 2026 einen anderen Fertigungs- und Einreichungsweg für das 3D MAC Titanium Cranial Plate System. Die Unterlagen erlauben den Vergleich von Produkt, Fertigungsort und verantwortlicher Organisation. [R10] [R11] [R12] [R13] [R14]"
+          },
+          {
+            "type": "p",
+            "text": "Die beiden Ansätze von 3D Systems sind getrennt zu betrachten. VSP PEEK Cranial Implant erhielt am 4. April 2024 die 510(k)-Freigabe K231834; die Mitteilung erschien am 15. April. Gegenstand ist ein nicht lasttragendes PEEK-Schädelimplantat aus Materialextrusion. Das Unternehmen beschreibt Segmentierung und Modellierung, EXT 220 MED, Material und vordefinierten Fertigungsprozess gemeinsam und erweitert damit das Angebot zu einem kontrollierten Arbeitsablauf.[R11][R12]"
+          },
+          {
+            "type": "p",
+            "text": "Am 18. Juni 2026 erhielt das 3D MAC Titanium Cranial Plate System die 510(k)-Freigabe K253116; Antragsteller war das US Army Medical Department. Die Mitteilung vom 28. Juli erläuterte die Beteiligung von 3D Systems an Qualitätsmanagement, Designverifizierung und Unterstützung der Einreichung. Der implantierbare Teil ist eine EBM-gefertigte Ti6Al4V-Titanplatte; ein Schädelreferenzmodell aus SLA-Harz dient zur Passungsprüfung und Positionierung. Beide Teile erfüllen mit unterschiedlichen Materialien und Fertigungsverfahren ihre jeweiligen Funktionen.[R13][R14]"
+          },
+          {
+            "type": "callout",
+            "title": "Produktlizenzierung und Krankenhausproduktion: Unterschiedliche Wege",
+            "text": "K253116 nennt BioArchitects K151692 als Vergleichsprodukt und schafft damit eine klare regulatorische Referenz. Die Krankenhaus-PEEK-Arbeit von 2026 organisiert die interne Herstellung im Rahmen von Artikel 5(5). FDA-Produktfreigabe, Organisation der hausinternen Fertigung und klinische Studie liefern jeweils Belege zu Regulierung, Produktionsorganisation und Anwendungsergebnissen.[R13][R09]"
+          }
+        ]
+      },
+      {
+        "title": "Patentansätze und Fertigungsschnittstellen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN106377343A betrifft Titanmesh und Herstellung. CN103393486A behandelt eine Schädelrekonstruktion mit individuell gefertigtem Knochenersatzteil. US2018113992A1 nutzt kontralaterale Bildgebung für orthopädische Implantate. Prüfpunkte sind Maschen- und Randgeometrie, Rolle des Drucks am Fertigteil und seitenübergreifende Registrierung. [R07] [R08] [R15]"
+          }
+        ]
+      },
+      {
+        "title": "Verbindungen von Forschung und Industrie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Anbieter vermessen Kontur, Rand und Fixationsgeometrie. Kliniken erfassen Anatomie, Sitz, Nacharbeit und Nachkontrolle. Gemeinsame Koordinaten trennen Fertigungsabweichungen von Lageabweichungen im Eingriff. [R04] [R09] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Bei geformtem PMMA wird die Geometrie über Muster, Form und Endteil verfolgt. Bei direkt gedrucktem PEEK und Titan können gemeinsame Landmarken Design, Fertigteil und postoperative Lage verbinden. Abweichungen an denselben Knochenrandzonen und Prüfpunkten erlauben den Vergleich des Fertigungsbeitrags zur Passform. [R04] [R06] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick und Kriterien für Fortschritt",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Bei vergleichbaren Defekten zählen termingerechte Lieferung, Randnacharbeit, rekonstruierte Kontur, Weichteilkomplikationen und Revisionen. Für den Ausbau der Vor-Ort-Fertigung sind Gesamtarbeitszeit, Chargenkonstanz und Rückverfolgbarkeit unter vergleichbaren Bedingungen zu prüfen. [R04] [R06] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Bespoke Implants for Cranial Reconstructions: Preoperative to Postoperative Surgery Management System.",
+        "url": "https://doi.org/10.3390/bioengineering10050544",
+        "year": "2023",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "From Imaging Data to Cranioplasty Implant Designs",
+        "url": "https://doi.org/10.35882/jeemi.v5i3.300",
+        "year": "2023",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "Surgical planning and finite element analysis for the neurocraneal protection in cranioplasty with PMMA: A case study.",
+        "url": "https://doi.org/10.1016/j.heliyon.2022.e10706",
+        "year": "2022",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "Quantitative Assessment of Point-of-Care 3D-Printed Patient-Specific Polyetheretherketone (PEEK) Cranial Implants.",
+        "url": "https://doi.org/10.3390/ijms22168521",
+        "year": "2021",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Personalized 3D-printed cranial implants for complex cranioplasty using open-source software.",
+        "url": "https://doi.org/10.25259/sni_906_2023",
+        "year": "2024",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "Early experience with patient-specific low-cost 3D-printed polymethylmethacrylate cranioplasty implants in a lower-middle-income-country: Technical note and economic analysis.",
+        "url": "https://doi.org/10.25259/sni_250_2022",
+        "year": "2022",
+        "source": "",
+        "id": "R06"
+      },
+      {
+        "title": "3D printing cranioplasty titanium net, and preparation method of same",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN106377343A",
+        "year": "2017",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "Method for preparing to-be-repaired skull flap by 3D printing",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN103393486A",
+        "year": "2013",
+        "source": "Espacenet",
+        "id": "R08"
+      },
+      {
+        "title": "Clinical implementation of an EU MDR-compliant point-of-care manufacturing framework for patient-specific 3D-printed PEEK implants in craniomaxillofacial reconstruction",
+        "url": "https://link.springer.com/article/10.1186/s41205-026-00325-x",
+        "year": "2026",
+        "source": "3D Printing in Medicine",
+        "id": "R09"
+      },
+      {
+        "title": "K151692: BioArchitects Patient Specific Cranial/Craniofacial Plate",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf15/K151692.pdf",
+        "year": "2015",
+        "source": "FDA",
+        "id": "R10"
+      },
+      {
+        "title": "K231834: VSP PEEK Cranial Implant",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K231834.pdf",
+        "year": "2024",
+        "source": "FDA",
+        "id": "R11"
+      },
+      {
+        "title": "3D Systems Announces FDA Clearance for World's First 3D-Printed PEEK Cranial Implants",
+        "url": "https://www.3dsystems.com/press-releases/3d-systems-announces-fda-clearance-worlds-first-3d-printed-peek-cranial-implants",
+        "year": "2024",
+        "source": "3D Systems",
+        "id": "R12"
+      },
+      {
+        "title": "K253116: 3D MAC Titanium Cranial Plate System",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K253116.pdf",
+        "year": "2026",
+        "source": "FDA",
+        "id": "R13"
+      },
+      {
+        "title": "3D Systems Enables First FDA Clearance for Implant from a Point-of-Care Institution",
+        "url": "https://www.3dsystems.com/press-releases/3d-systems-enables-first-fda-clearance-implant-point-care-institution",
+        "year": "2026",
+        "source": "3D Systems",
+        "id": "R14"
+      },
+      {
+        "title": "Contralateral image orthopedic implant",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS2018113992A1",
+        "year": "2018",
+        "source": "Espacenet",
+        "id": "R15"
+      }
+    ]
+  }
+}

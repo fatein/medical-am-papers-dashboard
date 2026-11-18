@@ -1,0 +1,1055 @@
+{
+  "zh": {
+    "id": "H05",
+    "p": "P4",
+    "title": "骨折手术规划与个体化固定",
+    "subtitle": "从虚拟复位到实际骨块、钢板和螺钉的空间关系",
+    "thesis": "在复杂骨折，打印可支持理解骨块、预弯标准板或制造专用固定件。三者的增量价值要通过复位质量、稳定固定和就诊到手术的时间成本逐项衡量。",
+    "questions": [],
+    "graph": {
+      "title": "从骨块识别到固定和随访",
+      "summary": "实体模型、标准件辅助和定制固定在复位之后分支。实现的复位和手术等待共同决定流程选择。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2021–2024",
+          "refs": [
+            "R01",
+            "R05",
+            "R08"
+          ],
+          "title": "从影像分离移位骨块",
+          "question": "测量目标",
+          "evidence": "用骨折块、关节面与计划复位后形态定义三种空间关系。髋臼病例系列使用层厚不超过 1 mm 的 CT 进行三维规划。"
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2022–2026",
+          "refs": [
+            "R01",
+            "R05",
+            "R12"
+          ],
+          "title": "实体模型辅助选择方案",
+          "question": "测量目标",
+          "evidence": "模型可用于理解骨块遮挡、模拟复位与比较器械方案。先导随机试验观察到手术时间缩短方向，差异的 p 值为 0.10。"
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2023–2024",
+          "refs": [
+            "R02",
+            "R09"
+          ],
+          "title": "标准植入件配定制辅助",
+          "question": "测量目标",
+          "evidence": "胫骨平台研究使用专用导向或结合规划的螺钉策略，把部分个体化留给夹具和轨迹，保留标准接骨板的供应。"
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2021–2024",
+          "refs": [
+            "R03",
+            "R08"
+          ],
+          "title": "按复位骨面定制接骨板",
+          "question": "测量目标",
+          "evidence": "重建后的骨面决定板贴合和螺孔位置。严重髋臼骨折病例系列将个体化接骨板与钻孔导板联合，覆盖十名患者。"
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 1,
+          "time": "2024",
+          "refs": [
+            "R03"
+          ],
+          "title": "验证术中收益和等待代价",
+          "question": "测量目标",
+          "evidence": "回顾性匹配的 22 对 22 例中，打印模型与定制板组的手术时间、出血和透视次数更低，术前准备和住院时间更长。愈合时间的组间差异未达统计显著。"
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2024–2026",
+          "refs": [
+            "R03",
+            "R05",
+            "R12"
+          ],
+          "title": "核对复位、功能和再干预",
+          "question": "测量目标",
+          "evidence": "同一病例应并行记录关节面偏差、术中方案变化、术后活动度和后续固定失效。短时效率和长期结果分别分析。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "规划模型路线"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "标准件路线"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "定制固定路线"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "仅改变计划环节"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "验证轨迹转移"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "验收板形与螺孔"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "跟踪复位和功能"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "结果反馈病例选择"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究对象与评价边界",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "复杂髋臼、关节内胫骨平台与长骨粉碎性骨折分别受不同的关节面、工作空间和载荷约束。将可手持模型、与骨面接触的术中导向、最终内固定件分别标注，才能比较各自对急诊评估、术前计划和稳定性的影响。 [R01] [R03] [R08] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与研究解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "从影像分离移位骨块"
+          },
+          {
+            "type": "p",
+            "text": "用骨折块、关节面与计划复位后形态定义三种空间关系。髋臼病例系列使用层厚不超过 1 mm 的 CT 进行三维规划。 [R01] [R05] [R08]"
+          },
+          {
+            "type": "h3",
+            "text": "实体模型辅助选择方案"
+          },
+          {
+            "type": "p",
+            "text": "模型可用于理解骨块遮挡、模拟复位与比较器械方案。先导随机试验观察到手术时间缩短方向，差异的 p 值为 0.10。 [R01] [R05] [R12]"
+          },
+          {
+            "type": "h3",
+            "text": "标准植入件配定制辅助"
+          },
+          {
+            "type": "p",
+            "text": "胫骨平台研究使用专用导向或结合规划的螺钉策略，把部分个体化留给夹具和轨迹，保留标准接骨板的供应。 [R02] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "按复位骨面定制接骨板"
+          },
+          {
+            "type": "p",
+            "text": "重建后的骨面决定板贴合和螺孔位置。严重髋臼骨折病例系列将个体化接骨板与钻孔导板联合，覆盖十名患者。 [R03] [R08]"
+          },
+          {
+            "type": "h3",
+            "text": "验证术中收益和等待代价"
+          },
+          {
+            "type": "p",
+            "text": "回顾性匹配的 22 对 22 例中，打印模型与定制板组的手术时间、出血和透视次数更低，术前准备和住院时间更长。愈合时间的组间差异未达统计显著。 [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "核对复位、功能和再干预"
+          },
+          {
+            "type": "p",
+            "text": "同一病例应并行记录关节面偏差、术中方案变化、术后活动度和后续固定失效。短时效率和长期结果分别分析。 [R03] [R05] [R12]"
+          },
+          {
+            "type": "p",
+            "text": "同样是手术时间下降，实体模型可能只改变器械选择，定制板还会改变复位后的固定位置。将两种干预合并的回顾性研究无法分解各工序的贡献，因此可在同类骨折分型下分别设置模型、导向和内固定的对照。 [R03] [R08] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "三个临床设计分别回答复位、手术负荷和模型增益",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "2021 年髋臼病例系列纳入 10 例，个体化接骨板和导板从设计到临床使用在 4 天内完成。术后 CT 显示，骨折间隙中位数由 20 降至 3 mm，关节面台阶由 5 降至 0 mm，螺钉实际轴线与计划方向的夹角中位数为 7.1°。骨折间隙与关节面台阶分别描述两种复位特征，螺钉轴线则用于评价计划的执行。 [R08]"
+          },
+          {
+            "type": "p",
+            "text": "2024 年胫骨平台匹配研究每组 22 例。实体模型加定制接骨板组与传统组的平均手术时长为 75.27 对 102.82 分钟，出血 129.32 对 158.18 mL，透视次数 6.50 对 11.32。定制组术前准备和住院更长，骨折愈合时间差异未达统计显著。该组用 0.6 mm 层厚 CT 分割骨块，以实体初版复核接骨板形态和螺钉规划，成品接骨板的制造材料为 TA3 钛。应分别记录计划审批、实物交付和术中使用，才能判断效率改善是否抵消额外准备。 [R03]"
+          },
+          {
+            "type": "p",
+            "text": "2026 年先导随机试验对 33 人进行最终分析，两组均采用标准植入物，仅一组增加实体模型。手术时间中位数为 100 对 119 分钟（p=0.10），透视时长为 98 对 100 秒（p=0.23），12 个月时两组膝屈曲中位数均为 130°。这组比较回答的是模型本身的增益。它与模型加定制接骨板的队列测量不同环节，也分别使用透视时长和透视次数。后续研究要同时保存模型是否改变计划、术后影像的复位读数、功能和再干预。 [R03] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "企业技术与服务路线",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "3D Systems 的骨科 VSP 提供从影像到计划、解剖模型和患者匹配器械的交付，K190044 给出对应产品范围。对骨折团队，这类能力可用于准备器械与计划沟通；交付日期、手术紧迫程度、适用范围和判读责任应与具体病例一起核对。 [R10] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "专利设计与制造接口",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN214966464U 与 CN214966463U 分别设计复位支具用于指骨和桡骨远端。它们把复位姿态与患者表面配合关联，所承受的载荷、接触路径和服役期与植入内固定不同。评价可把姿态保持与皮肤界面设为成对终点。 [R06] [R07]"
+          }
+        ]
+      },
+      {
+        "title": "学术与产业的结合点",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "研究和供应的共同接口是一份可复核的复位坐标系。确认解剖坐标后，标准接骨板的预弯、引导孔与定制板都可对照计划和术后影像，把偏差分解到骨块移动、导板就位或螺钉执行。 [R08] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "未来演进与验证指标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "后续优先记录计划改变比例、到手术时间、术中替代件数量、复位偏差和再手术。易于快速准备的模型可先覆盖时间窗狭窄的任务，复杂固定路线的可扩展性取决于紧急交付和实际植入的可预测性。 [R03] [R08] [R12]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Management of Complex Acetabular Fractures by Using 3D Printed Models.",
+        "url": "https://doi.org/10.3390/medicina58121854",
+        "year": "2022",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "3D printing combined with anteroposterior cannulated screws for the treatment of posterolateral tibial plateau fracture.",
+        "url": "https://doi.org/10.1186/s12891-023-06887-9",
+        "year": "2023",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "Study on the efficacy of 3D printing technology combined with customized plates for the treatment of complex tibial plateau fractures.",
+        "url": "https://doi.org/10.1186/s13018-024-05051-w",
+        "year": "2024",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "3D printing and three column concept in surgical treatment of tibial plateau fracture.",
+        "url": "https://doi.org/10.1038/s41598-025-30475-7",
+        "year": "2025",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Efficacy of 3D printing-assisted treatment for acetabular fractures.",
+        "url": "https://doi.org/10.52312/jdrs.2024.1756",
+        "year": "2024",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "3D printed phalanx fracture reduction brace",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN214966464U",
+        "year": "2021",
+        "source": "Espacenet",
+        "id": "R06"
+      },
+      {
+        "title": "3D printed distal radius fracture reduction brace",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN214966463U",
+        "year": "2021",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "Feasibility of Imaging-Based 3-Dimensional Models to Design Patient-Specific Osteosynthesis Plates and Drilling Guides",
+        "url": "https://doi.org/10.1001/jamanetworkopen.2020.37519",
+        "year": "2021",
+        "source": "JAMA Network Open",
+        "id": "R08"
+      },
+      {
+        "title": "3D surgical planning including patient-specific drilling guides for tibial plateau fractures",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10797644/",
+        "year": "2024",
+        "source": "Journal of Orthopaedic Surgery and Research",
+        "id": "R09"
+      },
+      {
+        "title": "Orthopaedic Solutions",
+        "url": "https://www.3dsystems.com/healthcare/orthopaedic-solutions",
+        "year": "",
+        "source": "3D Systems",
+        "id": "R10"
+      },
+      {
+        "title": "Orthopaedic Surgical Planning and Instrument Guides — K190044",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf19/K190044.pdf",
+        "year": "2019",
+        "source": "FDA",
+        "id": "R11"
+      },
+      {
+        "title": "Efficacy of the use of 3D printing models in the treatment of tibial plateau fractures: a pilot randomized clinical trial",
+        "url": "https://doi.org/10.1186/s13018-026-06950-w",
+        "year": "2026",
+        "source": "Journal of Orthopaedic Surgery and Research",
+        "id": "R12"
+      }
+    ]
+  },
+  "en": {
+    "id": "H05",
+    "p": "P4",
+    "title": "Fracture surgery planning and patient-specific fixation",
+    "subtitle": "From virtual reduction to the achieved relationship between fragments, plates and screws",
+    "thesis": "In complex fractures, printing can help interpret fragments, contour a standard plate or produce patient-specific fixation. Their contributions are assessed separately through reduction quality, fixation stability and the time from presentation to surgery.",
+    "questions": [],
+    "graph": {
+      "title": "From fragment identification to fixation and follow-up",
+      "summary": "Physical models, assistance with standard hardware and patient-specific fixation branch after virtual reduction. Achieved reduction and delay jointly inform workflow choice.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2021–2024",
+          "refs": [
+            "R01",
+            "R05",
+            "R08"
+          ],
+          "title": "Separate displaced fragments in imaging",
+          "question": "Measurement target",
+          "evidence": "Define the relationships between fragments, joint surface and planned reduced geometry. The acetabular case series used CT slices of at most 1 mm for 3D planning."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2022–2026",
+          "refs": [
+            "R01",
+            "R05",
+            "R12"
+          ],
+          "title": "Use physical models to choose an approach",
+          "question": "Measurement target",
+          "evidence": "Models can reveal fragment overlap and support rehearsal and hardware selection. A pilot randomized trial observed shorter operative duration in the print group with p = 0.10."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2023–2024",
+          "refs": [
+            "R02",
+            "R09"
+          ],
+          "title": "Pair standard implants with tailored instrumentation",
+          "question": "Measurement target",
+          "evidence": "Tibial plateau studies use dedicated guides or planning-assisted screw strategies, putting customization into tooling and trajectories while retaining standard plate availability."
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2021–2024",
+          "refs": [
+            "R03",
+            "R08"
+          ],
+          "title": "Shape plates to reduced bone geometry",
+          "question": "Measurement target",
+          "evidence": "The reduced bone surface determines plate fit and screw-hole positions. A severe acetabular fracture case series coupled custom osteosynthesis plates to drill guides in ten patients."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 1,
+          "time": "2024",
+          "refs": [
+            "R03"
+          ],
+          "title": "Compare intraoperative gains and preparation burden",
+          "question": "Measurement target",
+          "evidence": "In a matched retrospective comparison of 22 versus 22 patients, models and custom plates were associated with shorter surgery, less blood loss and fewer fluoroscopy uses, alongside longer preparation and hospitalization. Healing time did not differ significantly."
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2024–2026",
+          "refs": [
+            "R03",
+            "R05",
+            "R12"
+          ],
+          "title": "Assess reduction, function and reintervention",
+          "question": "Measurement target",
+          "evidence": "Record articular deviation, intraoperative deviations from plan, postoperative motion and subsequent fixation failure in the same case. Analyze operating efficiency and long-term results separately."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Planning model route"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Standard hardware route"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Custom fixation route"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Change planning only"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Verify trajectory transfer"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Verify plate and screw fit"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Follow reduction and function"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Outcomes refine case selection"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Research scope and outcomes",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Complex acetabular, intra-articular tibial plateau and comminuted long-bone injuries impose different constraints on joint surface, access and loading. Code handheld models, intraoperative bone-contact guides and definitive fixation separately to compare effects on assessment, planning and stability. [R01] [R03] [R08] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathways and evidence",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Separate displaced fragments in imaging"
+          },
+          {
+            "type": "p",
+            "text": "Define the relationships between fragments, joint surface and planned reduced geometry. The acetabular case series used CT slices of at most 1 mm for 3D planning. [R01] [R05] [R08]"
+          },
+          {
+            "type": "h3",
+            "text": "Use physical models to choose an approach"
+          },
+          {
+            "type": "p",
+            "text": "Models can reveal fragment overlap and support rehearsal and hardware selection. A pilot randomized trial observed shorter operative duration in the print group with p = 0.10. [R01] [R05] [R12]"
+          },
+          {
+            "type": "h3",
+            "text": "Pair standard implants with tailored instrumentation"
+          },
+          {
+            "type": "p",
+            "text": "Tibial plateau studies use dedicated guides or planning-assisted screw strategies, putting customization into tooling and trajectories while retaining standard plate availability. [R02] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "Shape plates to reduced bone geometry"
+          },
+          {
+            "type": "p",
+            "text": "The reduced bone surface determines plate fit and screw-hole positions. A severe acetabular fracture case series coupled custom osteosynthesis plates to drill guides in ten patients. [R03] [R08]"
+          },
+          {
+            "type": "h3",
+            "text": "Compare intraoperative gains and preparation burden"
+          },
+          {
+            "type": "p",
+            "text": "In a matched retrospective comparison of 22 versus 22 patients, models and custom plates were associated with shorter surgery, less blood loss and fewer fluoroscopy uses, alongside longer preparation and hospitalization. Healing time did not differ significantly. [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "Assess reduction, function and reintervention"
+          },
+          {
+            "type": "p",
+            "text": "Record articular deviation, intraoperative deviations from plan, postoperative motion and subsequent fixation failure in the same case. Analyze operating efficiency and long-term results separately. [R03] [R05] [R12]"
+          },
+          {
+            "type": "p",
+            "text": "Shorter operating time can come from hardware selection using a model or from altered fixation after a custom plate is selected. A retrospective study combining both does not separate the steps. Matched fracture classes support separate comparisons for models, guides and fixation. [R03] [R08] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Three clinical designs assess reduction, operative workload and the model’s contribution",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The 2021 acetabular series included 10 patients and completed design through clinical use of the plates and guides within 4 days. On postoperative CT, the median fracture gap fell from 20 to 3 mm and the articular step-off from 5 to 0 mm. The median angular difference between actual and planned screw directions was 7.1°. Gap, step-off and screw trajectory describe distinct aspects of reduction and plan execution. [R08]"
+          },
+          {
+            "type": "p",
+            "text": "The 2024 matched tibial plateau study had 22 patients per group. Mean operative time was 75.27 versus 102.82 minutes for models plus custom plates versus conventional fixation. Blood loss was 129.32 versus 158.18 mL and fluoroscopy counts were 6.50 versus 11.32. Preparation and hospital stay were longer in the custom group, and the difference in fracture healing time was statistically non-significant. The group segmented CT scans with a 0.6 mm slice thickness, checked plate geometry and screws with physical prototypes and used TA3 titanium for the final plate. Tracking plan approval, delivery and operative use separately lets a team assess whether the operating-room savings offset the extra preparation. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "The 2026 pilot randomised trial analysed 33 patients. Both arms received standard implants and one added a physical model. Median operative time was 100 versus 119 minutes (p=0.10), fluoroscopy duration was 98 versus 100 seconds (p=0.23) and median knee flexion at 12 months was 130° in both groups. This study estimates the model’s added contribution. The model-plus-plate cohort examined a different intervention and counted fluoroscopy events instead of timing them. Future comparisons should track changes to the plan, postoperative reduction, function and reintervention. [R03] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Industry technologies and services",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Orthopaedic VSP from 3D Systems links imaging to plans, anatomical models and patient-matched instrumentation. K190044 defines a corresponding device scope. Fracture teams can use these capabilities for preparation and planning communication, while tracking lead time, urgency, intended scope and clinical review for each case. [R10] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and production interfaces",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN214966464U and CN214966463U concern reduction braces for phalangeal and distal-radius fractures. They relate reduction posture to patient surface fit, with loading, contact and duration distinct from implanted fixation. Pair reduction retention with skin-interface outcomes. [R06] [R07]"
+          }
+        ]
+      },
+      {
+        "title": "Research and industry connections",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A reviewable reduction coordinate system is the common interface between research and supply. Once anatomy is registered, precontoured standard plates, guide holes and custom plates can be checked against the plan and postoperative imaging to separate fragment movement, guide seating and screw placement. [R08] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "Outlook and measures of progress",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Next, track the proportion of plans changed, time to surgery, intraoperative substitutions, reduction error and reoperation. Fast models can serve tightly timed cases. The ability to scale complex fixation depends on predictable urgent delivery and actual use at surgery. [R03] [R08] [R12]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Management of Complex Acetabular Fractures by Using 3D Printed Models.",
+        "url": "https://doi.org/10.3390/medicina58121854",
+        "year": "2022",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "3D printing combined with anteroposterior cannulated screws for the treatment of posterolateral tibial plateau fracture.",
+        "url": "https://doi.org/10.1186/s12891-023-06887-9",
+        "year": "2023",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "Study on the efficacy of 3D printing technology combined with customized plates for the treatment of complex tibial plateau fractures.",
+        "url": "https://doi.org/10.1186/s13018-024-05051-w",
+        "year": "2024",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "3D printing and three column concept in surgical treatment of tibial plateau fracture.",
+        "url": "https://doi.org/10.1038/s41598-025-30475-7",
+        "year": "2025",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Efficacy of 3D printing-assisted treatment for acetabular fractures.",
+        "url": "https://doi.org/10.52312/jdrs.2024.1756",
+        "year": "2024",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "3D printed phalanx fracture reduction brace",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN214966464U",
+        "year": "2021",
+        "source": "Espacenet",
+        "id": "R06"
+      },
+      {
+        "title": "3D printed distal radius fracture reduction brace",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN214966463U",
+        "year": "2021",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "Feasibility of Imaging-Based 3-Dimensional Models to Design Patient-Specific Osteosynthesis Plates and Drilling Guides",
+        "url": "https://doi.org/10.1001/jamanetworkopen.2020.37519",
+        "year": "2021",
+        "source": "JAMA Network Open",
+        "id": "R08"
+      },
+      {
+        "title": "3D surgical planning including patient-specific drilling guides for tibial plateau fractures",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10797644/",
+        "year": "2024",
+        "source": "Journal of Orthopaedic Surgery and Research",
+        "id": "R09"
+      },
+      {
+        "title": "Orthopaedic Solutions",
+        "url": "https://www.3dsystems.com/healthcare/orthopaedic-solutions",
+        "year": "",
+        "source": "3D Systems",
+        "id": "R10"
+      },
+      {
+        "title": "Orthopaedic Surgical Planning and Instrument Guides — K190044",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf19/K190044.pdf",
+        "year": "2019",
+        "source": "FDA",
+        "id": "R11"
+      },
+      {
+        "title": "Efficacy of the use of 3D printing models in the treatment of tibial plateau fractures: a pilot randomized clinical trial",
+        "url": "https://doi.org/10.1186/s13018-026-06950-w",
+        "year": "2026",
+        "source": "Journal of Orthopaedic Surgery and Research",
+        "id": "R12"
+      }
+    ]
+  },
+  "de": {
+    "id": "H05",
+    "p": "P4",
+    "title": "Frakturoperationsplanung und patientenspezifische Fixation",
+    "subtitle": "Von der virtuellen Reposition zur tatsächlichen Lage von Fragmenten, Platten und Schrauben",
+    "thesis": "Bei komplexen Frakturen kann der Druck Fragmente veranschaulichen, das Vorbiegen einer Standardplatte unterstützen oder individuelle Fixation bereitstellen. Der Zusatznutzen wird anhand von Repositionsqualität, Stabilität und Zeit bis zur Operation getrennt bewertet.",
+    "questions": [],
+    "graph": {
+      "title": "Von der Fragmenterkennung über die Fixation zur Nachbeobachtung",
+      "summary": "Nach virtueller Reposition verzweigen sich Modell, Unterstützung für Standardimplantate und individuelle Fixation. Erreichte Reposition und Wartezeit bestimmen gemeinsam die Verfahrenswahl.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2021–2024",
+          "refs": [
+            "R01",
+            "R05",
+            "R08"
+          ],
+          "title": "Dislozierte Fragmente in der Bildgebung trennen",
+          "question": "Messziel",
+          "evidence": "Fragmente, Gelenkfläche und geplante Repositionsform bestimmen drei räumliche Beziehungen. In der Fallserie am Acetabulum wurden CT-Schichten von höchstens 1 mm verwendet."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2022–2026",
+          "refs": [
+            "R01",
+            "R05",
+            "R12"
+          ],
+          "title": "Mit einem Modell den Zugang auswählen",
+          "question": "Messziel",
+          "evidence": "Modelle zeigen Fragmentüberlagerungen und unterstützen Probeplanung und Implantatauswahl. In einer randomisierten Pilotstudie war die Operationsdauer in der Druckgruppe tendenziell kürzer, mit p = 0,10."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2023–2024",
+          "refs": [
+            "R02",
+            "R09"
+          ],
+          "title": "Standardimplantate mit individuellen Hilfen kombinieren",
+          "question": "Messziel",
+          "evidence": "Bei Tibiakopffrakturen übertragen Bohrschablonen und Planungsstrategien die Individualisierung auf Hilfsmittel und Trajektorien. Standardplatten bleiben verfügbar."
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2021–2024",
+          "refs": [
+            "R03",
+            "R08"
+          ],
+          "title": "Platten an reponierte Knochenform anpassen",
+          "question": "Messziel",
+          "evidence": "Die reponierte Knochenoberfläche bestimmt Plattensitz und Schraubenlöcher. Eine Fallserie bei schweren Acetabulumfrakturen kombinierte individuelle Osteosyntheseplatten und Bohrschablonen bei zehn Personen."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 1,
+          "time": "2024",
+          "refs": [
+            "R03"
+          ],
+          "title": "Intraoperativen Nutzen und Vorbereitungsaufwand vergleichen",
+          "question": "Messziel",
+          "evidence": "Im retrospektiven Paarvergleich mit 22 zu 22 Personen gingen Modelle und individuelle Platten mit kürzerer Operation, geringerem Blutverlust und weniger Durchleuchtungen einher. Vorbereitung und Aufenthalt dauerten länger. Die Heilungszeit unterschied sich statistisch nicht signifikant."
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2024–2026",
+          "refs": [
+            "R03",
+            "R05",
+            "R12"
+          ],
+          "title": "Reposition, Funktion und Folgeeingriffe prüfen",
+          "question": "Messziel",
+          "evidence": "Gelenkflächenabweichung, intraoperative Planabweichung, postoperative Beweglichkeit und spätere Fixationsprobleme am selben Fall erfassen. Eingriffseffizienz und Langzeitergebnis getrennt auswerten."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Planungsmodell"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Standardimplantate"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Individuelle Fixation"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Nur Planung ändern"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Trajektorienübertragung prüfen"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Platte und Schrauben prüfen"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Reposition und Funktion verfolgen"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Ergebnisse schärfen Fallauswahl"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Forschungsgegenstand und Endpunkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Komplexe Acetabulum-, intraartikuläre Tibiakopf- und mehrfragmentäre Schaftfrakturen stellen unterschiedliche Anforderungen an Gelenkfläche, Zugang und Last. Handmodelle, intraoperative knochengetragene Führungen und endgültige Fixation getrennt erfassen, um Beurteilung, Planung und Stabilität zu vergleichen. [R01] [R03] [R08] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Evidenz",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Dislozierte Fragmente in der Bildgebung trennen"
+          },
+          {
+            "type": "p",
+            "text": "Fragmente, Gelenkfläche und geplante Repositionsform bestimmen drei räumliche Beziehungen. In der Fallserie am Acetabulum wurden CT-Schichten von höchstens 1 mm verwendet. [R01] [R05] [R08]"
+          },
+          {
+            "type": "h3",
+            "text": "Mit einem Modell den Zugang auswählen"
+          },
+          {
+            "type": "p",
+            "text": "Modelle zeigen Fragmentüberlagerungen und unterstützen Probeplanung und Implantatauswahl. In einer randomisierten Pilotstudie war die Operationsdauer in der Druckgruppe tendenziell kürzer, mit p = 0,10. [R01] [R05] [R12]"
+          },
+          {
+            "type": "h3",
+            "text": "Standardimplantate mit individuellen Hilfen kombinieren"
+          },
+          {
+            "type": "p",
+            "text": "Bei Tibiakopffrakturen übertragen Bohrschablonen und Planungsstrategien die Individualisierung auf Hilfsmittel und Trajektorien. Standardplatten bleiben verfügbar. [R02] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "Platten an reponierte Knochenform anpassen"
+          },
+          {
+            "type": "p",
+            "text": "Die reponierte Knochenoberfläche bestimmt Plattensitz und Schraubenlöcher. Eine Fallserie bei schweren Acetabulumfrakturen kombinierte individuelle Osteosyntheseplatten und Bohrschablonen bei zehn Personen. [R03] [R08]"
+          },
+          {
+            "type": "h3",
+            "text": "Intraoperativen Nutzen und Vorbereitungsaufwand vergleichen"
+          },
+          {
+            "type": "p",
+            "text": "Im retrospektiven Paarvergleich mit 22 zu 22 Personen gingen Modelle und individuelle Platten mit kürzerer Operation, geringerem Blutverlust und weniger Durchleuchtungen einher. Vorbereitung und Aufenthalt dauerten länger. Die Heilungszeit unterschied sich statistisch nicht signifikant. [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "Reposition, Funktion und Folgeeingriffe prüfen"
+          },
+          {
+            "type": "p",
+            "text": "Gelenkflächenabweichung, intraoperative Planabweichung, postoperative Beweglichkeit und spätere Fixationsprobleme am selben Fall erfassen. Eingriffseffizienz und Langzeitergebnis getrennt auswerten. [R03] [R05] [R12]"
+          },
+          {
+            "type": "p",
+            "text": "Kürzere Eingriffszeit kann durch Modellauswahl oder veränderte Fixation mit individueller Platte entstehen. Ein retrospektiver Vergleich der Kombination trennt die Schritte nicht. Bei vergleichbaren Frakturtypen lassen sich Modell, Führung und Fixation separat untersuchen. [R03] [R08] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Drei klinische Designs untersuchen Reposition, OP-Aufwand und den Beitrag des Modells",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Die Azetabulum-Fallserie von 2021 umfasste 10 Patienten. Die Zeit von der Planung bis zum klinischen Einsatz von Platten und Schablonen betrug höchstens 4 Tage. Im postoperativen CT sank der mediane Frakturspalt von 20 auf 3 mm und die mediane Gelenkflächenstufe von 5 auf 0 mm. Der Median der Winkelabweichung zwischen tatsächlicher und geplanter Schraubenrichtung lag bei 7,1°. Frakturspalt, Gelenkflächenstufe und Schraubenverlauf beschreiben unterschiedliche Merkmale der Reposition und Planumsetzung. [R08]"
+          },
+          {
+            "type": "p",
+            "text": "Die gematchte Studie zum Tibiaplateau von 2024 umfasste je 22 Patienten pro Gruppe. Bei Modell plus individueller Platte gegenüber konventioneller Fixation betrugen die mittlere Operationszeit 75,27 gegenüber 102,82 Minuten, der Blutverlust 129,32 gegenüber 158,18 mL und die Zahl der Durchleuchtungen 6,50 gegenüber 11,32. Vorbereitung und Aufenthalt dauerten in der individualisierten Gruppe länger. Die Heilungszeit unterschied sich statistisch nicht signifikant. Das Team segmentierte CT-Daten mit 0,6 mm Schichtdicke, prüfte Plattenform und Schraubenplanung mit physischen Prototypen und verwendete TA3-Titan für die endgültige Platte. Die getrennte Erfassung von Planfreigabe, Lieferung und Einsatz zeigt, ob die OP-Zeitersparnis den zusätzlichen Vorbereitungsaufwand ausgleicht. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Die randomisierte Pilotstudie von 2026 wertete 33 Patienten aus. Beide Gruppen erhielten Standardimplantate, eine Gruppe erhielt zusätzlich ein physisches Modell. Die mediane Operationszeit betrug 100 gegenüber 119 Minuten (p=0,10), die Durchleuchtungsdauer 98 gegenüber 100 Sekunden (p=0,23). Nach 12 Monaten betrug die mediane Knieflexion in beiden Gruppen 130°. Diese Studie prüfte den Zusatzbeitrag des Modells. Die Kohorte mit Modell und individueller Platte untersuchte eine andere Intervention und zählte Durchleuchtungen. Künftige Vergleiche sollten Planänderungen, radiologische Reposition, Funktion und erneute Eingriffe erfassen. [R03] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Technologien und Angebote der Unternehmen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Orthopaedic VSP von 3D Systems verbindet Bildgebung mit Plänen, anatomischen Modellen und patientenangepassten Instrumenten. K190044 beschreibt den Produktumfang. Bei Frakturen unterstützt dies Vorbereitung und Abstimmung. Lieferzeit, Dringlichkeit, Anwendungsbereich und klinische Prüfung gehören zum einzelnen Fall. [R10] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Patentansätze und Fertigungsschnittstellen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN214966464U und CN214966463U betreffen Repositionsorthesen für Phalangen bzw. distalen Radius. Sie koppeln Repositionsstellung und Oberflächenanpassung. Last, Kontakt und Einsatzdauer unterscheiden sich von der internen Fixation. Stellungserhalt und Hautkontakt sind gemeinsam zu prüfen. [R06] [R07]"
+          }
+        ]
+      },
+      {
+        "title": "Verbindungen von Forschung und Industrie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Ein überprüfbares Repositionskoordinatensystem verbindet Forschung und Fertigung. Nach Registrierung der Anatomie können vorgebogene Standardplatten, Führungsbohrungen und individuelle Platten mit Plan und postoperativer Bildgebung verglichen werden. So lassen sich Fragmentbewegung, Schablonensitz und Schraubenposition unterscheiden. [R08] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick und Kriterien für Fortschritt",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Künftig sind Anteil geänderter Pläne, Zeit bis zur Operation, intraoperative Ersatzteile, Repositionsabweichung und Folgeoperationen zu erfassen. Schnell verfügbare Modelle können enge Zeitfenster bedienen. Die Skalierung komplexer Fixation hängt von verlässlicher Eillieferung und tatsächlicher Verwendung ab. [R03] [R08] [R12]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Management of Complex Acetabular Fractures by Using 3D Printed Models.",
+        "url": "https://doi.org/10.3390/medicina58121854",
+        "year": "2022",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "3D printing combined with anteroposterior cannulated screws for the treatment of posterolateral tibial plateau fracture.",
+        "url": "https://doi.org/10.1186/s12891-023-06887-9",
+        "year": "2023",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "Study on the efficacy of 3D printing technology combined with customized plates for the treatment of complex tibial plateau fractures.",
+        "url": "https://doi.org/10.1186/s13018-024-05051-w",
+        "year": "2024",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "3D printing and three column concept in surgical treatment of tibial plateau fracture.",
+        "url": "https://doi.org/10.1038/s41598-025-30475-7",
+        "year": "2025",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Efficacy of 3D printing-assisted treatment for acetabular fractures.",
+        "url": "https://doi.org/10.52312/jdrs.2024.1756",
+        "year": "2024",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "3D printed phalanx fracture reduction brace",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN214966464U",
+        "year": "2021",
+        "source": "Espacenet",
+        "id": "R06"
+      },
+      {
+        "title": "3D printed distal radius fracture reduction brace",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN214966463U",
+        "year": "2021",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "Feasibility of Imaging-Based 3-Dimensional Models to Design Patient-Specific Osteosynthesis Plates and Drilling Guides",
+        "url": "https://doi.org/10.1001/jamanetworkopen.2020.37519",
+        "year": "2021",
+        "source": "JAMA Network Open",
+        "id": "R08"
+      },
+      {
+        "title": "3D surgical planning including patient-specific drilling guides for tibial plateau fractures",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10797644/",
+        "year": "2024",
+        "source": "Journal of Orthopaedic Surgery and Research",
+        "id": "R09"
+      },
+      {
+        "title": "Orthopaedic Solutions",
+        "url": "https://www.3dsystems.com/healthcare/orthopaedic-solutions",
+        "year": "",
+        "source": "3D Systems",
+        "id": "R10"
+      },
+      {
+        "title": "Orthopaedic Surgical Planning and Instrument Guides — K190044",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf19/K190044.pdf",
+        "year": "2019",
+        "source": "FDA",
+        "id": "R11"
+      },
+      {
+        "title": "Efficacy of the use of 3D printing models in the treatment of tibial plateau fractures: a pilot randomized clinical trial",
+        "url": "https://doi.org/10.1186/s13018-026-06950-w",
+        "year": "2026",
+        "source": "Journal of Orthopaedic Surgery and Research",
+        "id": "R12"
+      }
+    ]
+  }
+}

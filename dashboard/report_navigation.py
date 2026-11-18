@@ -35,8 +35,9 @@ def restore_question_context(question: dict | None) -> None:
         return
     qid = question['question_id']
     saved = st.session_state.get('report_return_state', {}) if st.session_state.get('report_return_question') == qid else {}
-    st.session_state['cross_p'] = saved.get('cross_p', question['p'])
-    st.session_state['cross_direction'] = f"{question['p']} · {question['direction']}"
+    st.session_state['cross_p'] = saved.get('cross_p', '全部' if question.get('direction_id') else question['p'])
+    st.session_state['cross_direction'] = question.get('direction_id') or f"{question['p']} · {question['direction']}"
+    st.session_state['cross_scroll_to_direction'] = True
     st.session_state['cross_question'] = qid
     key = f'cross_paper_page_{qid}'
     st.session_state[key] = saved.get(key, 1)

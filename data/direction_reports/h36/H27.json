@@ -1,0 +1,1556 @@
+{
+  "zh": {
+    "id": "H27",
+    "p": "P1",
+    "title": "骨再生支架的细胞调控与成骨机制",
+    "subtitle": "从递送活性组分走向验证骨修复的中间机制",
+    "thesis": "成骨信号在缺损中依次影响局部反应、血管进入和组织沉积。证明支架具有这些效应，需要分离结构、信号与时间三个变量，并在同一缺损的不同空间区域连续观察。",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络图",
+      "summary": "从能够保持空间的骨架出发，分别追踪炎症反应和成骨–血管耦合，随后考察信号时序和力学边界何时使两条路径汇合。",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2025",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R04"
+          ],
+          "title": "骨架首先保留修复空间",
+          "question": "功能需要在哪个阶段出现？",
+          "evidence": "多阶段成骨活性研究将支架功能按时间组织。"
+        },
+        {
+          "id": "N2",
+          "time": "2024",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R03"
+          ],
+          "title": "重塑局部微环境",
+          "question": "微环境改变能否先于组织生长？",
+          "evidence": "含二氧化锰的打印支架用于难修复骨缺损，其研究将微环境变化与成骨–血管耦合联系。"
+        },
+        {
+          "id": "N3",
+          "time": "2026",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R02"
+          ],
+          "title": "把养分运输与细胞支持配对",
+          "question": "活性微球与承载骨架是否互补？",
+          "evidence": "镁合金架与负载骨髓间充质基质细胞的打印微球用于股骨头坏死修复研究。"
+        },
+        {
+          "id": "N4",
+          "time": "2026",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R05"
+          ],
+          "title": "把矿物与免疫信号解耦",
+          "question": "载体、矿物和细胞因子怎样归因？",
+          "evidence": "双仿生支架联用 IL-4 与纳米羟基磷灰石，研究免疫调节与内源性成骨。"
+        },
+        {
+          "id": "N5",
+          "time": "2026",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R01",
+            "R06"
+          ],
+          "title": "控制刺激时点",
+          "question": "外部介入何时产生独立贡献？",
+          "evidence": "导电支架结合电刺激，同轴凝胶支架结合超声激活递送，代表两种不同的时序控制思路。"
+        },
+        {
+          "id": "N6",
+          "time": "2025–2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R04",
+            "R02"
+          ],
+          "title": "用连续证据复核修复机制",
+          "question": "什么样的结果能反馈支架结构选择？",
+          "evidence": "多阶段骨缺损研究与承载部位研究共同把证据推进到组织分布与时间顺序。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "观察早期反应"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "定位细胞和养分"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "分离矿物和因子"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "改变作用时间"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "检查成骨分布"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "对齐刺激和终点"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "用缺损中心的实际连通性反推孔道"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "从细胞反应到缺损修复",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "细胞增殖回答哪些细胞能存活，早期成骨标志回答是否进入分化，矿化和组织连接回答其结果是否位于缺损需要的位置。以三类证据对应不同时间和空间，能够区分促进局部细胞反应与实现对整个缺损有效的修复。[R03] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 骨架首先保留修复空间"
+          },
+          {
+            "type": "p",
+            "text": "多阶段成骨活性研究将支架功能按时间组织。 [R04]"
+          },
+          {
+            "type": "p",
+            "text": "支撑、释放和组织沉积各有时标。报告整个缺损中的骨体积分数时，还应区分骨首先出现于宿主边缘还是进入支架中心，两者回答不同问题。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 重塑局部微环境"
+          },
+          {
+            "type": "p",
+            "text": "含二氧化锰的打印支架用于难修复骨缺损，其研究将微环境变化与成骨–血管耦合联系。 [R03]"
+          },
+          {
+            "type": "p",
+            "text": "材料添加后的终点差异不足以确定中介。按时间并列测量环境标志、血管分布和新骨来源，并比较相同基体的无添加组，能够验证顺序。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 把养分运输与细胞支持配对"
+          },
+          {
+            "type": "p",
+            "text": "镁合金架与负载骨髓间充质基质细胞的打印微球用于股骨头坏死修复研究。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "分离空微球、负载微球和单独骨架的贡献，能够验证细胞作用是否依赖载体和局部固定。股骨头部位还要求读出坏死区形态和负载相关变化。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 把矿物与免疫信号解耦"
+          },
+          {
+            "type": "p",
+            "text": "双仿生支架联用 IL-4 与纳米羟基磷灰石，研究免疫调节与内源性成骨。 [R05]"
+          },
+          {
+            "type": "p",
+            "text": "对照用四组分解联合效应，时间点分别覆盖早期界面与后期矿化。应把细胞标记的位置和实际骨出现的位置配对。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 控制刺激时点"
+          },
+          {
+            "type": "p",
+            "text": "导电支架结合电刺激，同轴凝胶支架结合超声激活递送，代表两种不同的时序控制思路。 [R01] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "对照应包含材料无刺激与刺激无活性负载的条件。在骨再生读数之外，还要单独证明刺激能到达目标区间并改变预期变量。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 用连续证据复核修复机制"
+          },
+          {
+            "type": "p",
+            "text": "多阶段骨缺损研究与承载部位研究共同把证据推进到组织分布与时间顺序。 [R04] [R02]"
+          },
+          {
+            "type": "p",
+            "text": "将骨体积分数、组织学定位和界面力学并列。若整体骨量增加而中心区缺乏连接，应回到通路设计和空间保持，而非仅提高信号浓度。"
+          },
+          {
+            "type": "h3",
+            "text": "相关实验的补充比较"
+          },
+          {
+            "type": "h3",
+            "text": "分区孔隙与局部添加物"
+          },
+          {
+            "type": "p",
+            "text": "2022 年 TCP 支架研究采用多孔内部与较致密外部的结构，并负载姜、蒜提取物，在体外和大鼠股骨模型中评价细胞与骨形成。研究将支撑、局部释放和组织反应放在一个体系内，展示复合设计的另一条路径。此后的关键是明确添加物、结构和释放各自贡献，而不是用最终骨量替代机制分析。[R1402]"
+          },
+          {
+            "type": "p",
+            "text": "分区结构将外部支撑与内部组织进入分开安排，添加物又引入释放与作用时间。最终组织结果可能同时来自几何、陶瓷界面、载体及添加成分，因而评价协同需要具有相同结构的未负载对照，以及不同成分单独和联合使用的比较。若只有最复杂组合与空白组，无法判断增加复杂度是否必要。"
+          },
+          {
+            "type": "p",
+            "text": "该节点向N5传递的任务是确定生物信号何时成为主要限制。若内部供给不足，增加信号可能仍不能改善深部组织；若结构已经允许充分进入，剂量和时序才可能成为下一瓶颈。研究设计应把释放曲线与细胞或组织采样时间对齐，让作用发生的区间能够被追踪。"
+          },
+          {
+            "type": "h3",
+            "text": "微球构筑与原位成骨"
+          },
+          {
+            "type": "p",
+            "text": "2024 年 PLGA 微球打印研究比较不同直径微球形成的支架，在小鼠颅骨缺损中观察骨形成。微球尺寸改变了局部接触、空间组织和组织进入条件，使“结构设计”由毫米级外形进一步延伸到构筑单元。该模型提供了骨位点内的修复证据，也提出降解过程与微球间通路如何协同变化的问题。[R1403]"
+          },
+          {
+            "type": "p",
+            "text": "2024 年 PLGA 微球支架在小鼠颅骨缺损中比较微球尺寸，将结构变量与骨位点修复联系起来。这里应同时观察骨从边缘向内部的分布、支架残留和对照组愈合，从而判断结构是否真正改善了缺损内部的组织形成。[R1403]"
+          },
+          {
+            "type": "p",
+            "text": "微球直径变化不仅改变局部曲率，也会改变接触点、间隙和降解时的结构保持。因此，解释骨形成时应把初始孔隙与随时间出现的通路区分开。若只在终点测量剩余材料与骨量，难以辨认细胞进入是由最初结构还是降解后开放造成，适合加入早期空间分布与中期材料状态观察。"
+          },
+          {
+            "type": "p",
+            "text": "与N2不同，此路线主要通过构筑单元安排局部环境，提示生物调节并非必须依赖额外因子。其结果在原位颅骨条件中产生，向N7大型动物推进前，需要检验更长的进入距离、固定需求和软组织覆盖。图中的承接表示实验任务逐步增加，而不是将一种模型的效果数值直接搬到另一种部位。"
+          },
+          {
+            "type": "h3",
+            "text": "通路优化与信号组合"
+          },
+          {
+            "type": "p",
+            "text": "2023 年 pergola 支架研究结合有限元与流体计算优化结构，再配置牙乳头干细胞、BMP9 和 VEGF。裸鼠皮下实验中，含 BMP9 的组合出现骨形成，而增加 VEGF 未显著进一步提高成骨。这一结果说明，加入更多信号并不自动产生协同效果；剂量、时间与局部通路需要一起研究。[R1409]"
+          },
+          {
+            "type": "p",
+            "text": "2023 年 pergola 支架在裸鼠皮下植入，并组合牙乳头干细胞、BMP9 和 VEGF。其作用是研究所配置体系在异位环境中的骨形成；它并未直接重建承受咀嚼载荷的牙槽骨缺损。不同因子组的比较帮助判断生物信号贡献，随后需要在目标骨位点检验同一方案。[R1409]"
+          },
+          {
+            "type": "p",
+            "text": "几何计算首先回答支架能否维持空间和允许流动，因子比较随后回答在这一空间里哪些信号改变组织反应。VEGF组合未表现进一步成骨增益，提示协同需要在具体剂量、供给和观察时间下检验。无统计增益也不等于血管对修复没有作用，而是需要追踪血管和骨形成的先后及相互关系。"
+          },
+          {
+            "type": "p",
+            "text": "该研究采用异位环境，因而更适合回答体系是否能够诱导骨形成。进入目标骨缺损时，还会加入宿主骨边缘、骨膜、固定和负载等来源。N6将局部递送与骨位点观察连接起来；后续可用同一支架在异位与原位任务中比较信号贡献，识别哪些机制能够随应用场景迁移。"
+          },
+          {
+            "type": "h3",
+            "text": "缓释信号与血管成骨"
+          },
+          {
+            "type": "p",
+            "text": "2025 年研究将仿骨小梁钛支架与载低氧诱导外泌体的水凝胶微球组合，评价成骨与血管相关细胞反应，并在兔股骨缺损中观察组织形成。结构提供空间与支撑，微球提供局部信号递送，二者共同构成复合系统。后续评价需进一步识别结构、递送载体与外泌体各自的增益。[R1410]"
+          },
+          {
+            "type": "p",
+            "text": "2025 年仿骨小梁钛支架与外泌体微球研究在兔股骨缺损中设置不同观察时点，并结合成骨和血管相关评价。时间序列能够帮助区分早期反应与后续组织形成，使复合功能的解释超越单次终点。[R1410]"
+          },
+          {
+            "type": "p",
+            "text": "结构提供可持续的支撑，微球提供局部信号，而外泌体的组成与活性决定生物作用。三者形成系统之后，新增变量包括装载保持、释放中的活性、微球所在位置和孔道占用。评价协同应比较空微球、未处理信号来源及无递送载体等条件，让每个组件的贡献能够被分解。"
+          },
+          {
+            "type": "p",
+            "text": "时间序列的价值是辨认早期血管相关反应是否进入后续骨组织过程。若短期细胞信号明显却没有深部组织进入，应回到通路与释放位置；若骨量增加主要位于边缘，则需要检查微球的空间分布。该节点向N7提出完整手术条件下的验证任务，并接受N8对界面连接的进一步检验。"
+          },
+          {
+            "type": "h3",
+            "text": "大型缺损中的固定与软组织"
+          },
+          {
+            "type": "p",
+            "text": "2026 年 PDLLA/SrHAp 小型猪下颌研究保留骨膜并采用钛板固定，12 只动物中有 11 只出现并发症。缺损最终出现桥接，但骨主要形成于支架周围，部分提前移除支架的动物也发生桥接。该结果说明，单看影像上的连续骨不能确定支架内部整合，更不能把全部修复归于支架材料。[R1405]"
+          },
+          {
+            "type": "p",
+            "text": "沿上述链路，评价应同时记录骨形成的位置和质量、材料残留、固定状态、软组织恢复及二次干预。支架如果增加骨量却导致难以处理的伤口问题，仍需要改变设计或使用流程。模型因此成为识别改进方向的工具，而不仅是确认可行性的步骤。"
+          },
+          {
+            "type": "p",
+            "text": "这项研究使支架评价面对完整手术环境。骨膜、重建板和周围组织都可能促进缺损桥接，因此影像上的连续性需要结合骨的位置与材料界面解释。软组织开裂、肿胀或提前移除还会改变后续条件，记录全部动物的时间线有助于辨认修复到底发生在何种状态下。"
+          },
+          {
+            "type": "p",
+            "text": "它对前面节点构成实质反馈：结构优化若只追求填满缺损，可能压缩软组织空间；降解如果改变体积和稳定性，初始适配也难以保持。下一轮应联合考虑固定、软组织覆盖与材料变化，再选择需要保留的支架体积和进入通道。把这些条件先在计算和台架中检查，可以减少大型动物验证中无法归因的多因素变化。"
+          },
+          {
+            "type": "h3",
+            "text": "异物界面与直接骨连接"
+          },
+          {
+            "type": "p",
+            "text": "2023年研究比较打印聚合物/羟基磷灰石和烧结羟基磷灰石支架，观察到异物反应较强的界面出现更多巨噬细胞、异物巨细胞和纤维组织，相关区域缺少直接骨整合；孔内骨形成与骨向材料表面的连接具有不同空间过程。[R1412]"
+          },
+          {
+            "type": "p",
+            "text": "这补上了总骨量与功能之间的一环。新骨可能形成在支架附近或孔道中，却尚未建立能够传递载荷的接触；材料周围的纤维层又可能改变两者关系。因此可以把缺损填充、孔内骨分布、直接接触和力学连接作为相邻指标，追踪一个改善能否传向下一层。"
+          },
+          {
+            "type": "p",
+            "text": "N8接收N4材料和结构比较的结果，并为N7解释大型缺损提供组织依据。它向N4反馈的任务是识别哪些材料状态引发持续阻隔，向N6反馈的任务是检查信号促进的新骨是否位于需要连接的区域。若这些位置关系没有建立，继续增加因子浓度或单纯提高总骨量，可能无法解决真正的结构功能问题。"
+          },
+          {
+            "type": "h3",
+            "text": "异物反应阻隔骨连接"
+          },
+          {
+            "type": "p",
+            "text": "2023 年研究比较打印聚合物／羟基磷灰石复合支架与烧结羟基磷灰石支架。复合支架出现更强的异物反应；有纤维组织、巨噬细胞或异物巨细胞的界面区域未形成骨整合。研究还观察到骨先在孔内形成，再向支杆表面生长。由此，孔内骨量、直接骨接触和纤维包裹应分别记录，表面有细胞或孔内有骨不能替代完整的界面分析。[R1203]"
+          },
+          {
+            "type": "p",
+            "text": "该研究使界面分析具有空间分辨率：孔内骨与直接骨接触分属于不同区域，纤维组织还可能位于二者之间。一个总骨量数值会把这些状态合并，因此解释固定时应联合组织位置、界面组成和加载方向。对不同材料还需关注材料本身持续变化后，原先形成的连接是否被保留。"
+          },
+          {
+            "type": "p",
+            "text": "N1和N2提供细胞尺度的候选解释，N3则检验这些解释能否覆盖完整宿主反应。它向N8的免疫干预提出明确任务：先辨认哪类细胞与哪一阶段相关，再决定干预方向。抑制所有炎症或统一增加某一表型，都不能代替对疾病环境的具体分析。"
+          }
+        ]
+      },
+      {
+        "title": "企业与产品边界",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Dimension Inx 的 CMFlex 首批手术应用公告提供可交付人工骨移植材料的参照。复杂活性支架会增加活性组分一致性、释放阶段和使用条件等质量属性，研究优先判断这些增加的投入对应哪个可以重复的修复改善。[R11] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "专利中的细胞调控安排",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN114042191A 将成骨功能化支架和细胞打印连接，CN118403212A 将打印锌支架和血清外泌体组合。前者的验证重点包括细胞位置与基体功能的可重复性，后者应追踪金属降解和囊泡相关效应各自的时间变化。[R08] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "研究与应用共有的对照",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "机械性对照先匹配外形、空隙及固定，化学对照再匹配基体，活性组用单独与组合方式交叉比较。同步读取炎症、血管和成骨时间窗，将不同部位分别统计，最后以能解释承载恢复或界面失败的证据作决策。[R02] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "后续重点",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "未来三年的有价值证据包括相同缺损内的空间谱系追踪、第二种模型中的机制复现，以及不同批次和/或规模下保持相同信号时序。支架设计可以据此在单一生物活性、组合递送和外部触发之间选择。"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Immunomodulatory 3D-printed conductive scaffold combined with electrostimulation: a dual-strategy approach to enhance bone regeneration.",
+        "year": "2026",
+        "url": "https://doi.org/10.1186/s12951-026-04784-6",
+        "kind": "paper",
+        "source": "10.1186/s12951-026-04784-6"
+      },
+      {
+        "id": "R02",
+        "title": "A bioactive magnesium alloy scaffold integrated with BMSCs-Loaded 3D microspheres synergistically promotes femoral head osteonecrosis repair by improving the osteogenic-angiogenic microenvironment.",
+        "year": "2026",
+        "url": "https://doi.org/10.1016/j.bioactmat.2026.03.035",
+        "kind": "paper",
+        "source": "10.1016/j.bioactmat.2026.03.035"
+      },
+      {
+        "id": "R03",
+        "title": "3D-printed manganese dioxide incorporated scaffold promotes osteogenic-angiogenic coupling for refractory bone defect by remodeling osteo-regenerative microenvironment.",
+        "year": "2024",
+        "url": "https://doi.org/10.1016/j.bioactmat.2024.10.019",
+        "kind": "paper",
+        "source": "10.1016/j.bioactmat.2024.10.019"
+      },
+      {
+        "id": "R04",
+        "title": "3D printed scaffolds with multistage osteogenic activity for bone defect repair.",
+        "year": "2025",
+        "url": "https://doi.org/10.1093/rb/rbaf010",
+        "kind": "paper",
+        "source": "10.1093/rb/rbaf010"
+      },
+      {
+        "id": "R05",
+        "title": "IL-4/Nanohydroxyapatite Codelivery in a Dual-Bionic Scaffold: Design and Immunomodulatory Endogenous Osteogenesis Mechanism.",
+        "year": "2026",
+        "url": "https://doi.org/10.1021/acsami.5c23172",
+        "kind": "paper",
+        "source": "10.1021/acsami.5c23172"
+      },
+      {
+        "id": "R06",
+        "title": "Programmed regulation of microenvironment remodeling and bone regeneration for bone repair by coaxial hydrogel scaffold with ultrasound-activated drug delivery.",
+        "year": "2026",
+        "url": "https://doi.org/10.1016/j.mtbio.2026.102988",
+        "kind": "paper",
+        "source": "10.1016/j.mtbio.2026.102988"
+      },
+      {
+        "id": "R08",
+        "title": "Osteogenesis functionalized scaffold for cell printing and preparation method and application thereof",
+        "year": "2022",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN114042191A",
+        "kind": "patent",
+        "source": "CN114042191A"
+      },
+      {
+        "id": "R09",
+        "title": "Composite implant of 3D printing zinc scaffold combined with serum exosome and preparation method of composite implant",
+        "year": "2024",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN118403212A",
+        "kind": "patent",
+        "source": "CN118403212A"
+      },
+      {
+        "id": "R11",
+        "year": "2023",
+        "title": "Dimension Inx Announces First Surgical Cases Utilizing CMFlex Synthetic Bone Graft",
+        "url": "https://www.prnewswire.com/news-releases/dimension-inx-announces-first-surgical-cases-utilizing-cmflex-synthetic-bone-graft---the-first-3d-printed-regenerative-bone-graft-product-cleared-by-the-fda-301946996.html",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R1203",
+        "title": "Elucidating osseointegration in vivo in 3D printed scaffolds eliciting different foreign body responses",
+        "year": "2023",
+        "source": "Materials Today Bio",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10477687/"
+      },
+      {
+        "id": "R1402",
+        "title": "Ginger and Garlic Extracts Enhance Osteogenesis in 3D Printed Calcium Phosphate Bone Scaffolds with Bimodal Pore Distribution",
+        "year": "2022",
+        "source": "ACS Applied Materials & Interfaces",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9034760/"
+      },
+      {
+        "id": "R1403",
+        "title": "The induction of bone formation by 3D-printed PLGA microsphere scaffolds in a calvarial orthotopic mouse model: a pilot study",
+        "year": "2024",
+        "source": "Frontiers in Bioengineering and Biotechnology",
+        "kind": "原始研究",
+        "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1425469/full"
+      },
+      {
+        "id": "R1405",
+        "title": "Preclinical evaluation of patient-specific 3D-printed PDLLA/SrHAp implants in a minipig segmental mandibular defect model",
+        "year": "2026",
+        "source": "Materials Today Bio",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13473966/"
+      },
+      {
+        "id": "R1409",
+        "title": "Effectiveness of biomechanically stable pergola-like additively manufactured scaffold for extraskeletal vertical bone augmentation",
+        "year": "2023",
+        "source": "Frontiers in Bioengineering and Biotechnology",
+        "kind": "原始研究",
+        "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2023.1112335/full"
+      },
+      {
+        "id": "R1410",
+        "title": "3D-Printed Titanium Trabecular Scaffolds with Sustained Release of Hypoxia-Induced Exosomes for Dual-Mimetic Bone Regeneration",
+        "year": "2025",
+        "source": "Advanced Science",
+        "kind": "原始研究",
+        "url": "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/advs.202500599"
+      },
+      {
+        "id": "R1412",
+        "title": "Elucidating osseointegration in vivo in 3D printed scaffolds eliciting different foreign body responses",
+        "year": "2023",
+        "source": "Materials Today Bio",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37674779/"
+      }
+    ]
+  },
+  "en": {
+    "id": "H27",
+    "p": "P1",
+    "title": "Cellular regulation and osteogenic mechanisms in bone regeneration scaffolds",
+    "subtitle": "From delivering active components to testing intermediate repair mechanisms",
+    "thesis": "Osteogenic cues affect local response, vascular invasion and tissue deposition over time. Establishing these effects requires separating architecture, cues and timing and tracking different regions of the same defect.",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway",
+      "summary": "Start with space maintenance, branch into inflammatory response and osteogenic–vascular coupling, then examine when signal timing and mechanical constraints bring the pathways together.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2025",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R04"
+          ],
+          "title": "Preserve the defect space",
+          "question": "At what stage is each function needed?",
+          "evidence": "A multistage osteogenic scaffold study organized functions by time."
+        },
+        {
+          "id": "N2",
+          "time": "2024",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R03"
+          ],
+          "title": "Remodel the local microenvironment",
+          "question": "Do environmental changes precede tissue growth?",
+          "evidence": "A printed manganese dioxide-containing scaffold linked environmental changes to coupled bone and vessel development in refractory defects."
+        },
+        {
+          "id": "N3",
+          "time": "2026",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R02"
+          ],
+          "title": "Pair transport with cell support",
+          "question": "Do active microspheres complement the structural frame?",
+          "evidence": "A magnesium alloy frame and printed microspheres carrying bone marrow mesenchymal stromal cells were studied for femoral head osteonecrosis repair."
+        },
+        {
+          "id": "N4",
+          "time": "2026",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R05"
+          ],
+          "title": "Decouple mineral and immune cues",
+          "question": "How can effects of carrier, mineral and cytokine be attributed?",
+          "evidence": "A dual-bionic scaffold combined IL-4 and nano-hydroxyapatite to investigate immunomodulation and endogenous osteogenesis."
+        },
+        {
+          "id": "N5",
+          "time": "2026",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R01",
+            "R06"
+          ],
+          "title": "Control stimulus timing",
+          "question": "When does external intervention make an independent contribution?",
+          "evidence": "A conductive scaffold paired with electrical stimulation and a coaxial gel scaffold paired with ultrasound-activated delivery illustrate two timing strategies."
+        },
+        {
+          "id": "N6",
+          "time": "2025–2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R04",
+            "R02"
+          ],
+          "title": "Test the repair mechanism with linked evidence",
+          "question": "Which outcomes can inform scaffold architecture?",
+          "evidence": "Multistage defect studies and work at load-bearing sites advance the evidence toward tissue distribution and temporal sequence."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Observe early response"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Locate cells and nutrients"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Isolate mineral and cytokine"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Vary timing"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Check bone distribution"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Align stimulus and endpoint"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Use central integration to revise pore paths"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "From cellular response to defect repair",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Proliferation addresses survival and expansion, early markers address differentiation, and mineralization and integration address where repair occurs. Mapping each to time and location separates a local cellular response from repair across a defect. [R03] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathway and evidence by stage",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Preserve the defect space"
+          },
+          {
+            "type": "p",
+            "text": "A multistage osteogenic scaffold study organized functions by time. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Support, release and tissue deposition follow different time scales. A total bone volume fraction should be accompanied by the location of early bone at the host margins or inside the scaffold."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Remodel the local microenvironment"
+          },
+          {
+            "type": "p",
+            "text": "A printed manganese dioxide-containing scaffold linked environmental changes to coupled bone and vessel development in refractory defects. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "An endpoint difference after adding a material cannot identify mediators by itself. Parallel time courses of environmental markers, vessel distribution and new bone, together with an additive-free control, can test the sequence."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Pair transport with cell support"
+          },
+          {
+            "type": "p",
+            "text": "A magnesium alloy frame and printed microspheres carrying bone marrow mesenchymal stromal cells were studied for femoral head osteonecrosis repair. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Separating empty microspheres, cell-loaded microspheres and the frame alone tests whether the cell effect depends on retention and the carrier. Femoral head studies should also read out lesion morphology and load-related changes."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Decouple mineral and immune cues"
+          },
+          {
+            "type": "p",
+            "text": "A dual-bionic scaffold combined IL-4 and nano-hydroxyapatite to investigate immunomodulation and endogenous osteogenesis. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "A four-arm comparison separates joint effects. Cover early interface response and later mineralization, and pair the spatial distribution of cellular markers with actual bone."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Control stimulus timing"
+          },
+          {
+            "type": "p",
+            "text": "A conductive scaffold paired with electrical stimulation and a coaxial gel scaffold paired with ultrasound-activated delivery illustrate two timing strategies. [R01] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Include material without stimulation and stimulation without active load. Alongside regeneration, show independently that stimulation reaches the intended region and changes the intended variable."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Test the repair mechanism with linked evidence"
+          },
+          {
+            "type": "p",
+            "text": "Multistage defect studies and work at load-bearing sites advance the evidence toward tissue distribution and temporal sequence. [R04] [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Report bone volume fraction, spatial histology and interface mechanics together. If total bone rises while central integration remains weak, revisit transport paths and space maintenance before increasing cue concentration."
+          },
+          {
+            "type": "h3",
+            "text": "Related experimental comparisons"
+          },
+          {
+            "type": "h3",
+            "text": "Zoned porosity and local additives"
+          },
+          {
+            "type": "p",
+            "text": "A 2022 TCP scaffold study combined a porous interior with a denser exterior and loaded ginger and garlic extracts, assessing cells and bone formation in vitro and in a rat femoral model. Support, local release and tissue responses were evaluated in one composite system. The next priority is to isolate the contributions of additives, structure and release rather than substitute final bone volume for mechanistic analysis. [R1402]"
+          },
+          {
+            "type": "p",
+            "text": "Zoned structures separate external support from internal tissue access, while additives introduce release kinetics and duration of action. Tissue outcomes may arise from geometry, ceramic interfaces, carriers and active constituents together. Demonstrating synergy therefore requires unloaded controls with the same structure and comparisons of constituents alone and in combination. Comparing only the most complex combination with a blank control cannot establish whether the added complexity is necessary."
+          },
+          {
+            "type": "p",
+            "text": "The task of this node,, in transmitting signals to N5 is to determine when biological signals become the primary constraint. If internal supply is insufficient, increasing signaling may still not improve deep tissues; if the structure has already allowed sufficient entry, dose and timing may become the next bottlenecks. Study designs should align release profiles with cell or tissue sampling times to allow the intervals in which the action occurs to be tracked."
+          },
+          {
+            "type": "h3",
+            "text": "Microsphere assembly and in situ bone formation"
+          },
+          {
+            "type": "p",
+            "text": "A 2024 PLGA microsphere printing study compared scaffolds formed by microspheres of different diameters and observed bone formation in mouse skull defects. Microsphere size altered local contact, spatial organization, and tissue access conditions, extending \"structural design\" from millimeter-scale shapes to building blocks. This model provides evidence of repair within bone sites and raises the question of how degradation processes and inter-microsphere pathways change synergistically. [R1403]"
+          },
+          {
+            "type": "p",
+            "text": "In 2024, PLGA microsphere scaffolds were used to compare microsphere size in mouse skull defects, linking structural variables to bone site repair. Simultaneous observation of bone distribution from the periphery inwards, scaffold residue, and healing in the control group is necessary to determine whether the structure truly improves tissue formation within the defect. [R1403]"
+          },
+          {
+            "type": "p",
+            "text": "Changes in the diameter of microspheres not only alter local curvature but also change contact points, gaps, and structural retention during degradation. Therefore, when interpreting bone formation, it is crucial to distinguish between initial porosity and pathways that develop over time. Measuring only the remaining material and bone mass at the endpoint makes it difficult to determine whether cell entry is caused by the initial structure or by opening after degradation; therefore, it is appropriate to incorporate observations of early spatial distribution and intermediate material state."
+          },
+          {
+            "type": "p",
+            "text": "Unlike N2, this approach primarily organizes the local environment through building blocks, showing that biological regulation need not depend on added factors. Its findings concern orthotopic cranial defects. Before progression to the large-animal work in N7, longer tissue-entry distances, fixation needs and soft-tissue coverage require evaluation. Links in the diagram represent added experimental tasks rather than direct transfer of effect sizes between anatomical sites."
+          },
+          {
+            "type": "h3",
+            "text": "Pathway optimization and combined signals"
+          },
+          {
+            "type": "p",
+            "text": "In 2023, a Pergola scaffold study combined finite element and fluid dynamics calculations to optimize the structure, and then incorporated dental papilla stem cells, BMP9, and VEGF. In subcutaneous experiments on nude mice, the combination containing BMP9 showed bone formation, while increasing VEGF did not significantly further enhance osteogenicity. This result indicates that adding more signals does not automatically produce a synergistic effect; dosage, time, and local pathways need to be studied together. [R1409]"
+          },
+          {
+            "type": "p",
+            "text": "In 2023, the Pergola scaffold was subcutaneously implanted in nude mice, combined with dental papilla stem cells, BMP9, and VEGF. Its role was to study bone formation in an ectopic environment; it did not directly reconstruct alveolar bone defects bearing masticatory loads. Comparison of different factor groups helped determine the contribution of biological signals, and the same protocol needed to be tested at the target bone site. [R1409]"
+          },
+          {
+            "type": "p",
+            "text": "The geometric calculation first answers whether the scaffold can maintain space and allow flow, and factor comparisons then answer which signals alter tissue responses within this space. The VEGF combination did not show further osteogenic gain, suggesting that synergy needs to be tested under specific dosage, delivery, and observation time. The lack of statistical gain does not mean that blood vessels have no effect on repair; rather, it is necessary to track the sequence and interrelationship between angiogenesis and bone formation."
+          },
+          {
+            "type": "p",
+            "text": "This study utilizes an ectopic environment, making it more suitable for answering whether the system can induce bone formation. When entering the target bone defect, sources such as the host bone margin, periosteum, fixation, and load are also incorporated. N6 connects local delivery with bone site observation; subsequently, the same scaffold can be used to compare signal contributions in ectopic and in situ tasks to identify which mechanisms can migrate with the application scenario."
+          },
+          {
+            "type": "h3",
+            "text": "Sustained signals and vascularized bone formation"
+          },
+          {
+            "type": "p",
+            "text": "The 2025 study combined a bone-inspired trabecular titanium scaffold with hydrogel microspheres carrying hypoxia-induced exosomes to evaluate osteogenic and vascular-associated cell responses and observe tissue formation in rabbit femoral defects. The structure provides space and support, while the microspheres provide local signal delivery; together, they constitute a composite system. Further evaluation requires identifying the individual gains of the structure, delivery carrier, and exosomes. [R1410]"
+          },
+          {
+            "type": "p",
+            "text": "A 2025 study of biomimetic trabecular titanium scaffolds and exosome microspheres was conducted in rabbit femoral defects, setting different observation time points and combining osteogenic and vascular-related evaluations. Time series analysis helps distinguish early responses from subsequent tissue formation, allowing the interpretation of complex functions to transcend a single endpoint. [R1410]"
+          },
+          {
+            "type": "p",
+            "text": "The structure provides sustainable support, microspheres provide localized signaling, and the composition and activity of exosomes determine biological action. Once these three components form a system, new variables include loading retention, activity during release, microsphere location, and pore occupancy. Evaluation of synergy should compare conditions such as empty microspheres, untreated signal sources, and the absence of a delivery carrier, allowing the contribution of each component to be decomposed."
+          },
+          {
+            "type": "p",
+            "text": "The value of the time series is to identify whether early vascular-related responses proceed into subsequent bone tissue processes. If short-term cellular signals are prominent but no deep tissue involvement occurs, the focus should return to the pathway and release site; if bone increase is primarily located at the periphery, the spatial distribution of microspheres needs to be examined. This node presents a validation task to N7 under complete surgical conditions and undergoes further examination of interfacial connectivity by N8."
+          },
+          {
+            "type": "h3",
+            "text": "Fixation and soft tissue in large defects"
+          },
+          {
+            "type": "p",
+            "text": "A 2026 study of PDLLA/SrHAp scaffolds in minipig mandibular defects preserved the periosteum and used titanium-plate fixation; complications occurred in 11 of 12 animals. The defects ultimately bridged, but bone formed mainly around the scaffolds, and bridging also occurred in some animals whose scaffolds had been removed early. Imaging continuity alone therefore cannot establish internal scaffold integration or attribute all repair to the scaffold material. [R1405]"
+          },
+          {
+            "type": "p",
+            "text": "Along the aforementioned pathway, the evaluation should simultaneously record the location and quality of bone formation, material residue, fixation status, soft tissue recovery, and secondary interventions. If the scaffold increases bone volume but leads to difficult-to-manage wound problems, a change in design or usage procedure is still necessary. Therefore, the model serves as a tool to identify areas for improvement, rather than merely a step to confirm feasibility."
+          },
+          {
+            "type": "p",
+            "text": "This study allows for scaffold evaluation within the complete surgical setting. The periosteum, reconstruction plate, and surrounding tissues can all contribute to defect bridging; therefore, continuity on imaging needs to be interpreted in conjunction with bone location and material interfaces. Soft tissue dehiscence, swelling, or premature removal can alter subsequent conditions, and recording the timeline of all animals helps identify the specific state under which repair occurred."
+          },
+          {
+            "type": "p",
+            "text": "Provides substantial feedback to the preceding nodes: structural optimization that only aims to fill defects may compress soft tissue space; degradation that alters volume and stability makes it difficult to maintain the initial fit. The next round should consider fixation, soft tissue coverage, and material changes together before selecting the scaffold volume and access channel to be retained. Checking these conditions in calculations and on a test bench beforehand can reduce unattributable multi-factor variations in large animal validation."
+          },
+          {
+            "type": "h3",
+            "text": "Foreign-body interfaces and direct bone attachment"
+          },
+          {
+            "type": "p",
+            "text": "A 2023 study comparing printed polymer/hydroxyapatite and sintered hydroxyapatite scaffolds observed more macrophages, foreign body giant cells, and fibrous tissue at interfaces with stronger foreign body reactions, while direct osseointegration was lacking in these areas; intrapore bone formation and bone-to-material surface connections exhibited different spatial processes. [R1412]"
+          },
+          {
+            "type": "p",
+            "text": "This fills a gap between total bone volume and function. New bone may form near the scaffold or within the pores, but contact capable of transmitting loads has not yet been established; the fibrous layer surrounding the material may also alter this relationship. Therefore, defect filling, intrapore bone distribution, direct contact, and mechanical connectivity can be used as adjacent indicators to track whether an improvement can be passed on to the next layer."
+          },
+          {
+            "type": "p",
+            "text": "N8 receives the results of the material and structural comparison from N4 and provides the tissue basis for N7 to interpret large defects. Its task in feeding back to N4 is to identify which material states cause persistent obstruction, and its task in feeding back to N6 is to check whether the signal-promoted new bone is located in the area that needs to be connected. If these positional relationships are not established, continuing to increase factor concentration or simply increasing total bone mass may not solve the true structural-functional problem."
+          },
+          {
+            "type": "h3",
+            "text": "Foreign-body responses impede bone attachment"
+          },
+          {
+            "type": "p",
+            "text": "A 2023 study comparing printed polymer/hydroxyapatite composite scaffolds with sintered hydroxyapatite scaffolds showed that the composite scaffold exhibited a stronger foreign body reaction; interfacial regions containing fibrous tissue, macrophages, or foreign body giant cells did not form (osseointegration). The study also observed that bone first formed within the pores and then grew onto the strut surface. Therefore, the amount of bone within the pores, direct bone contact, and fibrous encapsulation should be recorded separately; the presence of cells on the surface or bone within the pores cannot replace complete interfacial analysis. [R1203]"
+          },
+          {
+            "type": "p",
+            "text": "This study enables spatial resolution in interface analysis: the bone within the pores and the direct bone contact belong to different regions, and fibrous tissue may also be located in between. A total bone mass value will incorporate these states, therefore, the interpretation of fixation should consider tissue location, interface composition, and loading direction. For different materials, it is also necessary to consider whether the originally formed connections are preserved after continuous changes in the material itself."
+          },
+          {
+            "type": "p",
+            "text": "N1 and N2 provide candidate interpretations at the cellular level, while N3 examines whether these interpretations can cover the complete host response. It sets a clear task for N8 immune intervention: first identify which cell type is associated with which stage, and then determine the direction of intervention. Suppressing all inflammation or uniformly increasing a certain phenotype cannot replace a specific analysis of the disease environment."
+          }
+        ]
+      },
+      {
+        "title": "Companies and product evidence",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Dimension Inx's CMFlex first-case announcement provides a benchmark for a deliverable synthetic graft. More complex active scaffolds add quality attributes for active-component consistency, release phases and use conditions. Development should establish which reproducible gains justify this added complexity. [R11] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "Cellular regulation in patent disclosures",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN114042191A links an osteogenic functional scaffold to cell printing. CN118403212A combines a printed zinc scaffold with serum exosomes. The former calls for reproducible cell positioning and matrix function, while the latter calls for tracking metal degradation and vesicle-related effects separately over time. [R08] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "Controls shared by research and translation",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Match geometry, porosity and fixation in mechanical controls, then match the matrix in chemistry controls and test active components alone and combined. Align inflammatory, vascular and osteogenic time windows, report regions separately, and use the evidence that explains load recovery or interface failure to make decisions. [R02] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Next evidence to watch",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Over the next three years, informative evidence will include spatial lineage tracking in the same defect, mechanism replication in a second model and preserved signal timing across batches or scales. These results can guide choices among a single active cue, combined delivery and external triggering."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Immunomodulatory 3D-printed conductive scaffold combined with electrostimulation: a dual-strategy approach to enhance bone regeneration.",
+        "year": "2026",
+        "url": "https://doi.org/10.1186/s12951-026-04784-6",
+        "kind": "paper",
+        "source": "10.1186/s12951-026-04784-6"
+      },
+      {
+        "id": "R02",
+        "title": "A bioactive magnesium alloy scaffold integrated with BMSCs-Loaded 3D microspheres synergistically promotes femoral head osteonecrosis repair by improving the osteogenic-angiogenic microenvironment.",
+        "year": "2026",
+        "url": "https://doi.org/10.1016/j.bioactmat.2026.03.035",
+        "kind": "paper",
+        "source": "10.1016/j.bioactmat.2026.03.035"
+      },
+      {
+        "id": "R03",
+        "title": "3D-printed manganese dioxide incorporated scaffold promotes osteogenic-angiogenic coupling for refractory bone defect by remodeling osteo-regenerative microenvironment.",
+        "year": "2024",
+        "url": "https://doi.org/10.1016/j.bioactmat.2024.10.019",
+        "kind": "paper",
+        "source": "10.1016/j.bioactmat.2024.10.019"
+      },
+      {
+        "id": "R04",
+        "title": "3D printed scaffolds with multistage osteogenic activity for bone defect repair.",
+        "year": "2025",
+        "url": "https://doi.org/10.1093/rb/rbaf010",
+        "kind": "paper",
+        "source": "10.1093/rb/rbaf010"
+      },
+      {
+        "id": "R05",
+        "title": "IL-4/Nanohydroxyapatite Codelivery in a Dual-Bionic Scaffold: Design and Immunomodulatory Endogenous Osteogenesis Mechanism.",
+        "year": "2026",
+        "url": "https://doi.org/10.1021/acsami.5c23172",
+        "kind": "paper",
+        "source": "10.1021/acsami.5c23172"
+      },
+      {
+        "id": "R06",
+        "title": "Programmed regulation of microenvironment remodeling and bone regeneration for bone repair by coaxial hydrogel scaffold with ultrasound-activated drug delivery.",
+        "year": "2026",
+        "url": "https://doi.org/10.1016/j.mtbio.2026.102988",
+        "kind": "paper",
+        "source": "10.1016/j.mtbio.2026.102988"
+      },
+      {
+        "id": "R08",
+        "title": "Osteogenesis functionalized scaffold for cell printing and preparation method and application thereof",
+        "year": "2022",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN114042191A",
+        "kind": "patent",
+        "source": "CN114042191A"
+      },
+      {
+        "id": "R09",
+        "title": "Composite implant of 3D printing zinc scaffold combined with serum exosome and preparation method of composite implant",
+        "year": "2024",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN118403212A",
+        "kind": "patent",
+        "source": "CN118403212A"
+      },
+      {
+        "id": "R11",
+        "year": "2023",
+        "title": "Dimension Inx Announces First Surgical Cases Utilizing CMFlex Synthetic Bone Graft",
+        "url": "https://www.prnewswire.com/news-releases/dimension-inx-announces-first-surgical-cases-utilizing-cmflex-synthetic-bone-graft---the-first-3d-printed-regenerative-bone-graft-product-cleared-by-the-fda-301946996.html",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R1203",
+        "title": "Elucidating osseointegration in vivo in 3D printed scaffolds eliciting different foreign body responses",
+        "year": "2023",
+        "source": "Materials Today Bio",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10477687/"
+      },
+      {
+        "id": "R1402",
+        "title": "Ginger and Garlic Extracts Enhance Osteogenesis in 3D Printed Calcium Phosphate Bone Scaffolds with Bimodal Pore Distribution",
+        "year": "2022",
+        "source": "ACS Applied Materials & Interfaces",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9034760/"
+      },
+      {
+        "id": "R1403",
+        "title": "The induction of bone formation by 3D-printed PLGA microsphere scaffolds in a calvarial orthotopic mouse model: a pilot study",
+        "year": "2024",
+        "source": "Frontiers in Bioengineering and Biotechnology",
+        "kind": "原始研究",
+        "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1425469/full"
+      },
+      {
+        "id": "R1405",
+        "title": "Preclinical evaluation of patient-specific 3D-printed PDLLA/SrHAp implants in a minipig segmental mandibular defect model",
+        "year": "2026",
+        "source": "Materials Today Bio",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13473966/"
+      },
+      {
+        "id": "R1409",
+        "title": "Effectiveness of biomechanically stable pergola-like additively manufactured scaffold for extraskeletal vertical bone augmentation",
+        "year": "2023",
+        "source": "Frontiers in Bioengineering and Biotechnology",
+        "kind": "原始研究",
+        "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2023.1112335/full"
+      },
+      {
+        "id": "R1410",
+        "title": "3D-Printed Titanium Trabecular Scaffolds with Sustained Release of Hypoxia-Induced Exosomes for Dual-Mimetic Bone Regeneration",
+        "year": "2025",
+        "source": "Advanced Science",
+        "kind": "原始研究",
+        "url": "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/advs.202500599"
+      },
+      {
+        "id": "R1412",
+        "title": "Elucidating osseointegration in vivo in 3D printed scaffolds eliciting different foreign body responses",
+        "year": "2023",
+        "source": "Materials Today Bio",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37674779/"
+      }
+    ]
+  },
+  "de": {
+    "id": "H27",
+    "p": "P1",
+    "title": "Zellregulation und osteogene Mechanismen bei Gerüsten zur Knochenregeneration",
+    "subtitle": "Von aktiven Komponenten zur Prüfung intermediärer Reparaturmechanismen",
+    "thesis": "Osteogene Signale beeinflussen lokale Reaktion, Gefäßeinwachsen und Gewebeablagerung im Zeitverlauf. Ihr Nachweis erfordert die Trennung von Architektur, Signalen und Zeit sowie die Beobachtung verschiedener Bereiche desselben Defekts.",
+    "questions": [],
+    "graph": {
+      "title": "Forschungspfad",
+      "summary": "Ausgangspunkt ist der Raumerhalt. Darauf folgen Entzündungsreaktion und Kopplung von Osteogenese und Gefäßbildung. Signalzeitpunkt und mechanische Randbedingungen bestimmen ihr Zusammenwirken.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2025",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R04"
+          ],
+          "title": "Defektraum erhalten",
+          "question": "In welcher Phase ist welche Funktion nötig?",
+          "evidence": "Eine Studie zu Gerüsten mit mehrstufiger osteogener Aktivität ordnete Funktionen zeitlich."
+        },
+        {
+          "id": "N2",
+          "time": "2024",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R03"
+          ],
+          "title": "Lokale Mikroumgebung verändern",
+          "question": "Geht die Änderung der Mikroumgebung dem Gewebewachstum voraus?",
+          "evidence": "Ein Mangandioxid-haltiges Druckgerüst verknüpfte Umweltveränderungen mit gekoppelter Knochen- und Gefäßbildung in schwer heilenden Defekten."
+        },
+        {
+          "id": "N3",
+          "time": "2026",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R02"
+          ],
+          "title": "Transport und Zellunterstützung verbinden",
+          "question": "Ergänzen aktive Mikrosphären das tragende Gerüst?",
+          "evidence": "Ein Magnesiumgerüst und gedruckte Mikrosphären mit mesenchymalen Knochenmarkstromazellen wurden zur Reparatur bei Femurkopfnekrose untersucht."
+        },
+        {
+          "id": "N4",
+          "time": "2026",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R05"
+          ],
+          "title": "Mineral- und Immunsignale entkoppeln",
+          "question": "Wie lassen sich Wirkungen von Träger, Mineral und Zytokin zuordnen?",
+          "evidence": "Ein doppelt biomimetisches Gerüst kombinierte IL-4 und Nano-Hydroxylapatit zur Untersuchung von Immunmodulation und endogener Osteogenese."
+        },
+        {
+          "id": "N5",
+          "time": "2026",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R01",
+            "R06"
+          ],
+          "title": "Reizzeitpunkt steuern",
+          "question": "Wann liefert externe Intervention einen eigenständigen Beitrag?",
+          "evidence": "Ein leitfähiges Gerüst mit elektrischer Stimulation und ein koaxiales Gelgerüst mit ultraschallaktivierter Abgabe zeigen zwei Strategien der Zeitsteuerung."
+        },
+        {
+          "id": "N6",
+          "time": "2025–2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R04",
+            "R02"
+          ],
+          "title": "Reparaturmechanismus mit verknüpfter Evidenz prüfen",
+          "question": "Welche Ergebnisse können die Gerüstarchitektur beeinflussen?",
+          "evidence": "Mehrstufige Defektstudien und Untersuchungen an belasteten Orten rücken Gewebeverteilung und zeitliche Abfolge in den Vordergrund."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Frühreaktion beobachten"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Zellen und Nährstoffe lokalisieren"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Mineral und Zytokin trennen"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Wirkzeit variieren"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Knochenverteilung prüfen"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Reiz und Endpunkt abstimmen"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Zentrale Integration zur Revision der Porenwege nutzen"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Von der Zellreaktion zur Defektreparatur",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Proliferation beschreibt Überleben und Vermehrung, frühe Marker die Differenzierung, Mineralisierung und Integration den Reparaturort. Die Zuordnung zu Zeit und Position trennt lokale Zellreaktion von der Reparatur eines gesamten Defekts. [R03] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungspfad und Evidenz je Station",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Defektraum erhalten"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie zu Gerüsten mit mehrstufiger osteogener Aktivität ordnete Funktionen zeitlich. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Stützung, Freisetzung und Gewebeablagerung folgen unterschiedlichen Zeitskalen. Zum gesamten Knochenvolumenanteil gehört die Information, ob früher Knochen am Wirtsrand oder im Gerüstinneren entsteht."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Lokale Mikroumgebung verändern"
+          },
+          {
+            "type": "p",
+            "text": "Ein Mangandioxid-haltiges Druckgerüst verknüpfte Umweltveränderungen mit gekoppelter Knochen- und Gefäßbildung in schwer heilenden Defekten. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Ein Endpunktunterschied nach Materialzugabe allein identifiziert keine Vermittler. Zeitreihen zu Umfeldmarkern, Gefäßverteilung und neuem Knochen sowie eine zusatzfreie Kontrolle prüfen die Abfolge."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Transport und Zellunterstützung verbinden"
+          },
+          {
+            "type": "p",
+            "text": "Ein Magnesiumgerüst und gedruckte Mikrosphären mit mesenchymalen Knochenmarkstromazellen wurden zur Reparatur bei Femurkopfnekrose untersucht. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Leere und zellbeladene Mikrosphären sowie das alleinige Gerüst trennen Beiträge von Retention und Träger. Am Femurkopf sind zusätzlich Defektmorphologie und lastbezogene Änderungen relevant."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Mineral- und Immunsignale entkoppeln"
+          },
+          {
+            "type": "p",
+            "text": "Ein doppelt biomimetisches Gerüst kombinierte IL-4 und Nano-Hydroxylapatit zur Untersuchung von Immunmodulation und endogener Osteogenese. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Ein Viergruppenvergleich zerlegt Kombinationseffekte. Frühe Grenzflächenreaktion und spätere Mineralisierung werden getrennt erfasst. Zellmarker werden räumlich neuem Knochen zugeordnet."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Reizzeitpunkt steuern"
+          },
+          {
+            "type": "p",
+            "text": "Ein leitfähiges Gerüst mit elektrischer Stimulation und ein koaxiales Gelgerüst mit ultraschallaktivierter Abgabe zeigen zwei Strategien der Zeitsteuerung. [R01] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Kontrollen umfassen Material ohne Stimulation und Stimulation ohne aktive Beladung. Neben Regeneration ist getrennt zu zeigen, dass der Reiz die Zielregion erreicht und die vorgesehene Variable ändert."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Reparaturmechanismus mit verknüpfter Evidenz prüfen"
+          },
+          {
+            "type": "p",
+            "text": "Mehrstufige Defektstudien und Untersuchungen an belasteten Orten rücken Gewebeverteilung und zeitliche Abfolge in den Vordergrund. [R04] [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Knochenvolumenanteil, räumliche Histologie und Grenzflächenmechanik gehören zusammen. Nimmt das Gesamtvolumen ohne zentrale Integration zu, sollten Transportwege und Raumerhalt vor einer höheren Signalkonzentration untersucht werden."
+          },
+          {
+            "type": "h3",
+            "text": "Ergänzende Versuchsvergleiche"
+          },
+          {
+            "type": "h3",
+            "text": "Zonierte Porosität und lokale Zusätze"
+          },
+          {
+            "type": "p",
+            "text": "Eine TCP-Gerüststudie von 2022 kombinierte ein poröses Inneres mit einer dichteren Außenseite und belud die Struktur mit Ingwer- und Knoblauchextrakten. Zellverhalten und Knochenbildung wurden in vitro und im Rattenfemur untersucht. Abstützung, lokale Freisetzung und Gewebereaktion wurden in einem System verbunden. Die Beiträge von Zusätzen, Struktur und Freisetzung müssen getrennt erklärt werden; die endgültige Knochenmenge ersetzt keine Mechanismusanalyse.[R1402]"
+          },
+          {
+            "type": "p",
+            "text": "Die unterteilte Struktur des trennt die externe Stützstruktur vom Gewebeeintritt, und Additive beeinflussen Freisetzung und Wirkungsdauer. Die endgültige Gewebezusammensetzung kann gleichzeitig von Geometrie, Keramikschnittstellen, Trägermaterialien und Additiven abhängen; daher erfordert die Bewertung von Synergien unbelastete Kontrollen mit derselben Struktur sowie Vergleiche verschiedener Komponenten, sowohl einzeln als auch in Kombination. Ohne eine möglichst komplexe Kombination und eine Kontrollgruppe lässt sich nicht feststellen, ob eine Erhöhung der Komplexität notwendig ist."
+          },
+          {
+            "type": "p",
+            "text": "Die Aufgabe dieses Knotens, bei der Signalübertragung an N5 besteht darin, zu bestimmen, wann biologische Signale zum primären limitierenden Faktor werden. Bei unzureichender interner Versorgung kann eine verstärkte Signalgebung die Versorgung tieferliegender Gewebe möglicherweise nicht verbessern; hat die Struktur bereits einen ausreichenden Eintritt ermöglicht, können Dosis und Zeitpunkt die nächsten Engpässe darstellen. Studiendesigns sollten die Freisetzungsprofile mit den Zeitpunkten der Zell- oder Gewebeentnahme abstimmen, um die Zeitintervalle, in denen die Wirkung eintritt, erfassen zu können."
+          },
+          {
+            "type": "h3",
+            "text": "Aufbau aus Mikrosphären und lokale Knochenbildung"
+          },
+          {
+            "type": "p",
+            "text": "Eine 2024 durchgeführte Studie zum PLGA-Mikrosphären-Druck verglich Gerüste aus Mikrosphären unterschiedlichen Durchmessers und beobachtete die Knochenbildung in Schädeldefekten bei Mäusen. Die Größe der Mikrosphären beeinflusste den lokalen Kontakt, die räumliche Anordnung und die Gewebezugänglichkeit und erweiterte so das „strukturelle Design“ von Millimeter-großen Formen auf Bausteine. Dieses Modell liefert Hinweise auf Reparaturprozesse im Knochengewebe und wirft die Frage auf, wie Abbauprozesse und Wechselwirkungen zwischen den Mikrosphären synergistisch wirken. [R1403]"
+          },
+          {
+            "type": "p",
+            "text": "Im Jahr 2024 wurden PLGA-Mikrosphärengerüste verwendet, um die Mikrosphärengröße in Schädeldefekten bei Mäusen zu vergleichen und strukturelle Variablen mit der Knochenheilung in Zusammenhang zu bringen. Die gleichzeitige Beobachtung der Knochenverteilung von der Peripherie nach innen, der Gerüstreste und der Heilung in der Kontrollgruppe ist notwendig, um festzustellen, ob die Struktur die Gewebeneubildung innerhalb des Defekts tatsächlich verbessert. [R1403]"
+          },
+          {
+            "type": "p",
+            "text": "Veränderungen des Durchmessers von Mikrokügelchen beeinflussen nicht nur die lokale Krümmung, sondern auch Kontaktpunkte, Zwischenräume und die strukturelle Stabilität während des Abbaus. Daher ist es bei der Interpretation der Knochenbildung entscheidend, zwischen der anfänglichen Porosität und den sich im Laufe der Zeit entwickelnden Prozessen zu unterscheiden. Die alleinige Messung des verbleibenden Materials und der Knochenmasse am Endpunkt erschwert die Bestimmung, ob der Zelleintritt durch die ursprüngliche Struktur oder durch Öffnungen nach dem Abbau bedingt ist. Daher ist es sinnvoll, Beobachtungen der frühen räumlichen Verteilung und des intermediären Materialzustands einzubeziehen."
+          },
+          {
+            "type": "p",
+            "text": "Im Gegensatz zu N2 strukturiert die lokale Umgebung primär durch Bausteine, was darauf hindeutet, dass die biologische Regulation nicht zwangsläufig von zusätzlichen Faktoren abhängt. Die Ergebnisse wurden unter in-situ-Bedingungen im Schädelbereich erzielt; vor einer Übertragung auf größere Tiere wie N7 müssen größere Eindringtiefen, Fixierungsanforderungen und die Weichteildeckung untersucht werden. Die Übergänge in der Abbildung stellen eine schrittweise Steigerung der experimentellen Aufgaben dar und übertragen nicht direkt die Effektwerte eines Modells auf ein anderes."
+          },
+          {
+            "type": "h3",
+            "text": "Transportwege optimieren und Signale kombinieren"
+          },
+          {
+            "type": "p",
+            "text": "In einer Studie aus dem Jahr 2023 wurde ein Pergola-Gerüst mittels Finite-Elemente- und Fluiddynamikberechnungen optimiert. Anschließend wurden Stammzellen der Zahnpapille, BMP9 und VEGF integriert. Subkutane Experimente an Nacktmäusen zeigten, dass die Kombination mit BMP9 Knochenbildung bewirkte, während eine Erhöhung der VEGF-Konzentration die Osteogenese nicht signifikant steigerte. Dieses Ergebnis deutet darauf hin, dass die Zugabe weiterer Signale nicht automatisch einen synergistischen Effekt erzeugt; Dosierung, Zeit und lokale Signalwege müssen gemeinsam untersucht werden. [R1409]"
+          },
+          {
+            "type": "p",
+            "text": "Im Jahr 2023 wurde das Pergola-Gerüst in Kombination mit dentalen Papillenstammzellen, BMP9 und VEGF subkutan in Nacktmäuse implantiert. Ziel war die Untersuchung der Knochenbildung in einer ektopischen Umgebung; es diente nicht der direkten Rekonstruktion von Alveolarknochendefekten unter Kaubelastung. Der Vergleich verschiedener Faktorgruppen half, den Beitrag biologischer Signale zu bestimmen, und dasselbe Protokoll musste am Zielort im Knochen getestet werden. [R1409]"
+          },
+          {
+            "type": "p",
+            "text": "Die geometrische Berechnung des -Gerüsts klärt zunächst, ob es ausreichend Platz bietet und den Blutfluss ermöglicht. Faktorvergleiche zeigen anschließend, welche Signale die Gewebereaktionen innerhalb dieses Raums beeinflussen. Die VEGF-Kombination führte zu keinem weiteren osteogenen Zuwachs, was darauf hindeutet, dass die Synergie unter spezifischen Dosierungs-, Applikations- und Beobachtungsbedingungen untersucht werden muss. Das Ausbleiben eines statistisch signifikanten Zuwachses bedeutet nicht, dass Blutgefäße keinen Einfluss auf die Reparatur haben; vielmehr ist es notwendig, die Abfolge und die Wechselwirkungen zwischen Angiogenese und Knochenbildung zu verfolgen."
+          },
+          {
+            "type": "p",
+            "text": "Diese Studie nutzt eine ektopische Umgebung und eignet sich daher besser zur Beantwortung der Frage, ob das System die Knochenbildung induzieren kann. Beim Eindringen in den Zielknochendefekt werden Faktoren wie der Knochenrand des Wirts, das Periost, die Fixierung und die Belastung miteinbezogen. N6 verbindet die lokale Applikation mit der Beobachtung des Knochengewebes; anschließend kann dasselbe Gerüst verwendet werden, um die Signalbeiträge bei ektopischen und in-situ-Anwendungen zu vergleichen und so zu identifizieren, welche Mechanismen sich mit dem Anwendungsszenario verlagern."
+          },
+          {
+            "type": "h3",
+            "text": "Verzögerte Signalabgabe und vaskularisierte Knochenbildung"
+          },
+          {
+            "type": "p",
+            "text": "Die Studie aus dem Jahr 2025 kombinierte ein knocheninspiriertes, trabekuläres Titan-Gerüst mit Hydrogel-Mikrosphären, die hypoxieinduzierte Exosomen enthielten, um osteogene und vaskulär assoziierte Zellreaktionen zu untersuchen und die Gewebeneubildung in Femurdefekten bei Kaninchen zu beobachten. Die Struktur bietet Raum und Stabilität, während die Mikrosphären die lokale Signalübertragung ermöglichen; zusammen bilden sie ein Kompositsystem. Für eine weiterführende Evaluierung müssen die individuellen Vorteile der Struktur, des Trägersystems und der Exosomen ermittelt werden. [R1410]"
+          },
+          {
+            "type": "p",
+            "text": "In einer Studie aus dem Jahr 2025 wurden biomimetische trabekuläre Titan-Gerüste und Exosomen-Mikrosphären an Femurdefekten von Kaninchen untersucht. Dabei wurden verschiedene Beobachtungszeitpunkte festgelegt und osteogene sowie vaskuläre Beurteilungen kombiniert. Die Zeitreihenanalyse hilft, frühe Reaktionen von der nachfolgenden Gewebeneubildung zu unterscheiden und ermöglicht so die Interpretation komplexer Funktionen, die über einen einzelnen Endpunkt hinausgeht. [R1410]"
+          },
+          {
+            "type": "p",
+            "text": "Die Struktur bietet nachhaltige Unterstützung, Mikrosphären ermöglichen lokalisierte Signalübertragung, und Zusammensetzung und Aktivität der Exosomen bestimmen die biologische Wirkung. Sobald diese drei Komponenten ein System bilden, kommen neue Variablen wie Beladungsretention, Aktivität während der Freisetzung, Mikrosphärenposition und Porenbelegung hinzu. Zur Bewertung der Synergie sollten verschiedene Bedingungen verglichen werden, z. B. leere Mikrosphären, unbehandelte Signalquellen und das Fehlen eines Transportsystems, um den Beitrag jeder Komponente zu analysieren."
+          },
+          {
+            "type": "p",
+            "text": "Der Wert der Zeitserie besteht darin, festzustellen, ob frühe vaskuläre Reaktionen in nachfolgende Knochengewebeprozesse münden. Sind kurzfristige zelluläre Signale prominent, ohne dass tieferliegendes Gewebe betroffen ist, sollte der Fokus wieder auf den Signalweg und die Freisetzungsstelle gerichtet werden. Befindet sich der Knochenzuwachs primär in der Peripherie, muss die räumliche Verteilung der Mikrosphären untersucht werden. Dieser Knoten stellt eine Validierungsaufgabe für N7 unter vollständigen chirurgischen Bedingungen dar und wird von N8 hinsichtlich der Grenzflächenkonnektivität weiter untersucht."
+          },
+          {
+            "type": "h3",
+            "text": "Fixierung und Weichgewebe bei großen Defekten"
+          },
+          {
+            "type": "p",
+            "text": "In der 2026 durchgeführten Studie an Unterkiefern von Miniaturschweinen mit PDLLA/SrHAp wurde das Periost erhalten und mit einer Titanplatte fixiert. Bei 11 von 12 Tieren traten Komplikationen auf. Der Defekt heilte schließlich ab, die Knochenbildung erfolgte jedoch primär um das Gerüst herum; eine Überbrückung trat auch bei einigen Tieren auf, bei denen das Gerüst vorzeitig entfernt wurde. Diese Ergebnisse deuten darauf hin, dass die alleinige Darstellung von durchgehendem Knochen im Bildgebungsverfahren keine Aussage über die interne Integration des Gerüsts zulässt und dass nicht die gesamte Reparatur dem Gerüstmaterial zugeschrieben werden kann. [R1405]"
+          },
+          {
+            "type": "p",
+            "text": "Im Rahmen der oben beschriebenen Vorgehensweise sollte die Evaluation gleichzeitig die Lokalisation und Qualität der Knochenneubildung, Materialrückstände, den Fixierungsstatus, die Weichteilregeneration und sekundäre Eingriffe erfassen. Falls das Gerüst zwar das Knochenvolumen erhöht, aber zu schwer zu behandelnden Wundheilungsstörungen führt, ist weiterhin eine Anpassung des Designs oder des Anwendungsverfahrens erforderlich. Daher dient das Modell als Instrument zur Identifizierung von Verbesserungspotenzialen und nicht lediglich als Schritt zur Bestätigung der Machbarkeit."
+          },
+          {
+            "type": "p",
+            "text": "Diese Studie ermöglicht die Beurteilung des Gerüstmaterials im Rahmen des gesamten chirurgischen Eingriffs. Periost, Rekonstruktionsplatte und umliegendes Gewebe können zur Defektüberbrückung beitragen; daher muss die Kontinuität in der Bildgebung in Verbindung mit der Knochenlage und den Materialgrenzflächen interpretiert werden. Weichteildehiszenz, Schwellungen oder vorzeitige Entfernung können den weiteren Verlauf beeinflussen, und die Dokumentation des zeitlichen Ablaufs aller Tiere hilft, den spezifischen Zustand zum Zeitpunkt der Reparatur zu identifizieren."
+          },
+          {
+            "type": "p",
+            "text": "liefert wichtiges Feedback zu den vorhergehenden Knoten: Eine Strukturoptimierung, die lediglich auf die Füllung von Defekten abzielt, kann den Weichteilraum verkleinern; Degradation, die Volumen und Stabilität verändert, erschwert die Aufrechterhaltung der ursprünglichen Passform. Im nächsten Schritt sollten Fixierung, Weichteildeckung und Materialänderungen gemeinsam berücksichtigt werden, bevor das zu erhaltende Gerüstvolumen und der Zugangskanal ausgewählt werden. Die vorherige Überprüfung dieser Bedingungen in Berechnungen und auf einem Prüfstand kann nicht zuordenbare, multifaktorielle Variationen bei der Validierung an Großtieren reduzieren."
+          },
+          {
+            "type": "h3",
+            "text": "Fremdkörpergrenzfläche und direkter Knochenkontakt"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie aus dem Jahr 2023, die gedruckte Polymer/Hydroxyapatit- und gesinterte Hydroxyapatit-Gerüste verglich, beobachtete an Grenzflächen mit stärkeren Fremdkörperreaktionen vermehrt Makrophagen, Fremdkörperriesenzellen und Bindegewebe, während direktes Osseointegration in diesen Bereichen fehlte; die Knochenbildung innerhalb der Poren und die Verbindungen zwischen Knochen und Materialoberfläche zeigten unterschiedliche räumliche Prozesse. [R1412]"
+          },
+          {
+            "type": "p",
+            "text": "Dies schließt eine Lücke zwischen dem gesamten Knochenvolumen und seiner Funktion. Neuer Knochen kann sich in der Nähe des Gerüsts oder in den Poren bilden, jedoch ist noch kein lastübertragender Kontakt hergestellt; die das Material umgebende Faserschicht kann dieses Verhältnis ebenfalls beeinflussen. Daher können Defektfüllung, Knochenverteilung innerhalb der Poren, direkter Kontakt und mechanische Konnektivität als Indikatoren genutzt werden, um zu verfolgen, ob eine Verbesserung auf die nächste Schicht übertragen werden kann."
+          },
+          {
+            "type": "p",
+            "text": "N8 empfängt die Ergebnisse des Material- und Strukturvergleichs von N4 und liefert die Gewebegrundlage für N7 zur Interpretation großer Defekte. Seine Aufgabe bei der Rückmeldung an N4 besteht darin, die Materialzustände zu identifizieren, die eine persistierende Obstruktion verursachen, und seine Aufgabe bei der Rückmeldung an N6 darin, zu überprüfen, ob sich der signalinduzierte Knochenneubau in dem zu verbindenden Bereich befindet. Werden diese Positionsbeziehungen nicht hergestellt, kann eine weitere Erhöhung der Faktorkonzentration oder eine bloße Erhöhung der gesamten Knochenmasse das eigentliche strukturell-funktionelle Problem möglicherweise nicht lösen."
+          },
+          {
+            "type": "h3",
+            "text": "Fremdkörperreaktionen behindern den Knochenkontakt"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2023 verglich gedruckte Polymer/Hydroxyapatit-Verbundgerüste mit gesinterten Hydroxyapatitgerüsten. Die Verbundgerüste lösten stärkere Fremdkörperreaktionen aus. In Grenzflächenbereichen mit fibrösem Gewebe, Makrophagen oder Fremdkörperriesenzellen kam es nicht zur Osseointegration. Knochen entstand zunächst in den Poren und wuchs anschließend zu den Strebenoberflächen. Knochenmenge in den Poren, direkter Knochenkontakt und fibröse Einkapselung müssen daher getrennt erfasst werden; Oberflächenzellen oder Knochen in den Poren ersetzen keine vollständige Grenzflächenanalyse.[R1203]"
+          },
+          {
+            "type": "p",
+            "text": "Diese Studie ermöglicht eine räumliche Auflösung in der Grenzflächenanalyse: Der Knochen innerhalb der Poren und der direkte Knochenkontakt gehören unterschiedlichen Bereichen an, und dazwischen kann sich auch Bindegewebe befinden. Ein Wert für die Gesamtknochenmasse berücksichtigt diese Zustände; daher sollte die Interpretation der Fixierung die Gewebelage, die Zusammensetzung der Grenzfläche und die Belastungsrichtung einbeziehen. Bei unterschiedlichen Materialien muss zudem geprüft werden, ob die ursprünglich gebildeten Verbindungen nach kontinuierlichen Materialveränderungen erhalten bleiben."
+          },
+          {
+            "type": "p",
+            "text": "N1 und N2 liefern mögliche Interpretationen auf zellulärer Ebene, während N3 untersucht, ob diese Interpretationen die gesamte Wirtsreaktion abdecken können. Es definiert eine klare Aufgabe für die Immunintervention in N8: Zunächst muss identifiziert werden, welcher Zelltyp mit welchem Stadium assoziiert ist, und anschließend muss die Interventionsrichtung festgelegt werden. Die Unterdrückung jeglicher Entzündung oder die einheitliche Steigerung eines bestimmten Phänotyps kann eine spezifische Analyse des Krankheitsmilieus nicht ersetzen."
+          }
+        ]
+      },
+      {
+        "title": "Unternehmen und Produktevidenz",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Die ersten von Dimension Inx gemeldeten CMFlex-Operationen sind ein Bezugspunkt für ein verfügbares synthetisches Knochenersatzmaterial. Komplexere aktive Gerüste ergänzen Qualitätsmerkmale für Wirkkomponenten, Freisetzungsphasen und Anwendung. Die Entwicklung sollte zeigen, welcher reproduzierbare Nutzen den Aufwand rechtfertigt. [R11] [R04]"
+          }
+        ]
+      },
+      {
+        "title": "Zellregulation in Patentschriften",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN114042191A verbindet ein osteogen funktionalisiertes Gerüst mit Zelldruck. CN118403212A kombiniert ein gedrucktes Zinkgerüst mit Serumexosomen. Im ersten Fall sind Zellposition und Matrixfunktion reproduzierbar zu prüfen, im zweiten Metallabbau und vesikelbezogene Effekte getrennt über die Zeit. [R08] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "Gemeinsame Kontrollen von Forschung und Translation",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Mechanische Kontrollen gleichen Geometrie, Porosität und Fixation an, chemische Kontrollen die Matrix. Aktive Komponenten werden einzeln und kombiniert geprüft. Entzündung, Gefäßbildung und Osteogenese werden zeitlich abgestimmt, Regionen getrennt ausgewertet und Befunde zur Lastaufnahme oder Grenzflächenversagen für Entscheidungen herangezogen. [R02] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Nächste Beobachtungspunkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "In den nächsten drei Jahren sind räumliche Zelllinienverfolgung im selben Defekt, Reproduktion in einem zweiten Modell und stabile Signalzeitpunkte über Chargen oder Maßstäbe aufschlussreich. Darauf kann die Wahl zwischen einem aktiven Signal, kombinierter Abgabe und externer Aktivierung beruhen."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Immunomodulatory 3D-printed conductive scaffold combined with electrostimulation: a dual-strategy approach to enhance bone regeneration.",
+        "year": "2026",
+        "url": "https://doi.org/10.1186/s12951-026-04784-6",
+        "kind": "paper",
+        "source": "10.1186/s12951-026-04784-6"
+      },
+      {
+        "id": "R02",
+        "title": "A bioactive magnesium alloy scaffold integrated with BMSCs-Loaded 3D microspheres synergistically promotes femoral head osteonecrosis repair by improving the osteogenic-angiogenic microenvironment.",
+        "year": "2026",
+        "url": "https://doi.org/10.1016/j.bioactmat.2026.03.035",
+        "kind": "paper",
+        "source": "10.1016/j.bioactmat.2026.03.035"
+      },
+      {
+        "id": "R03",
+        "title": "3D-printed manganese dioxide incorporated scaffold promotes osteogenic-angiogenic coupling for refractory bone defect by remodeling osteo-regenerative microenvironment.",
+        "year": "2024",
+        "url": "https://doi.org/10.1016/j.bioactmat.2024.10.019",
+        "kind": "paper",
+        "source": "10.1016/j.bioactmat.2024.10.019"
+      },
+      {
+        "id": "R04",
+        "title": "3D printed scaffolds with multistage osteogenic activity for bone defect repair.",
+        "year": "2025",
+        "url": "https://doi.org/10.1093/rb/rbaf010",
+        "kind": "paper",
+        "source": "10.1093/rb/rbaf010"
+      },
+      {
+        "id": "R05",
+        "title": "IL-4/Nanohydroxyapatite Codelivery in a Dual-Bionic Scaffold: Design and Immunomodulatory Endogenous Osteogenesis Mechanism.",
+        "year": "2026",
+        "url": "https://doi.org/10.1021/acsami.5c23172",
+        "kind": "paper",
+        "source": "10.1021/acsami.5c23172"
+      },
+      {
+        "id": "R06",
+        "title": "Programmed regulation of microenvironment remodeling and bone regeneration for bone repair by coaxial hydrogel scaffold with ultrasound-activated drug delivery.",
+        "year": "2026",
+        "url": "https://doi.org/10.1016/j.mtbio.2026.102988",
+        "kind": "paper",
+        "source": "10.1016/j.mtbio.2026.102988"
+      },
+      {
+        "id": "R08",
+        "title": "Osteogenesis functionalized scaffold for cell printing and preparation method and application thereof",
+        "year": "2022",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN114042191A",
+        "kind": "patent",
+        "source": "CN114042191A"
+      },
+      {
+        "id": "R09",
+        "title": "Composite implant of 3D printing zinc scaffold combined with serum exosome and preparation method of composite implant",
+        "year": "2024",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN118403212A",
+        "kind": "patent",
+        "source": "CN118403212A"
+      },
+      {
+        "id": "R11",
+        "year": "2023",
+        "title": "Dimension Inx Announces First Surgical Cases Utilizing CMFlex Synthetic Bone Graft",
+        "url": "https://www.prnewswire.com/news-releases/dimension-inx-announces-first-surgical-cases-utilizing-cmflex-synthetic-bone-graft---the-first-3d-printed-regenerative-bone-graft-product-cleared-by-the-fda-301946996.html",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R1203",
+        "title": "Elucidating osseointegration in vivo in 3D printed scaffolds eliciting different foreign body responses",
+        "year": "2023",
+        "source": "Materials Today Bio",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10477687/"
+      },
+      {
+        "id": "R1402",
+        "title": "Ginger and Garlic Extracts Enhance Osteogenesis in 3D Printed Calcium Phosphate Bone Scaffolds with Bimodal Pore Distribution",
+        "year": "2022",
+        "source": "ACS Applied Materials & Interfaces",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9034760/"
+      },
+      {
+        "id": "R1403",
+        "title": "The induction of bone formation by 3D-printed PLGA microsphere scaffolds in a calvarial orthotopic mouse model: a pilot study",
+        "year": "2024",
+        "source": "Frontiers in Bioengineering and Biotechnology",
+        "kind": "原始研究",
+        "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1425469/full"
+      },
+      {
+        "id": "R1405",
+        "title": "Preclinical evaluation of patient-specific 3D-printed PDLLA/SrHAp implants in a minipig segmental mandibular defect model",
+        "year": "2026",
+        "source": "Materials Today Bio",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13473966/"
+      },
+      {
+        "id": "R1409",
+        "title": "Effectiveness of biomechanically stable pergola-like additively manufactured scaffold for extraskeletal vertical bone augmentation",
+        "year": "2023",
+        "source": "Frontiers in Bioengineering and Biotechnology",
+        "kind": "原始研究",
+        "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2023.1112335/full"
+      },
+      {
+        "id": "R1410",
+        "title": "3D-Printed Titanium Trabecular Scaffolds with Sustained Release of Hypoxia-Induced Exosomes for Dual-Mimetic Bone Regeneration",
+        "year": "2025",
+        "source": "Advanced Science",
+        "kind": "原始研究",
+        "url": "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/advs.202500599"
+      },
+      {
+        "id": "R1412",
+        "title": "Elucidating osseointegration in vivo in 3D printed scaffolds eliciting different foreign body responses",
+        "year": "2023",
+        "source": "Materials Today Bio",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37674779/"
+      }
+    ]
+  }
+}

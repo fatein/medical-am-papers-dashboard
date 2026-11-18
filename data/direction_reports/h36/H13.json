@@ -1,0 +1,1427 @@
+{
+  "zh": {
+    "id": "H13",
+    "p": "P4",
+    "title": "牙科种植导板的制造、处理与定位精度",
+    "subtitle": "把误差定位到导板、支撑或种植轨迹",
+    "thesis": "种植位点的误差来自影像配准、导板成形、处理变形、组织支持和钻具间隙。自由端下颌的设计需要兼顾视野与抗倾斜能力，临床评价则应同时报告入口、根尖与角度。 [R02] [R03]",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络 · 牙科种植导板的制造、处理与定位精度",
+      "summary": "使用共同参考坐标，将制造与支持分开试验，再在已处理并就位的导板上合并检验，最终由临床轨迹反向定位误差来源。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2022",
+          "question": "误差从术前规划的哪个基准测量？",
+          "title": "建立计划基准",
+          "evidence": "模型研究比较原型导板和传统导板的植入偏差。各组都应在同一计划坐标系中比较，入口点可描述平移，根尖与角度还反映轴线偏转。",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2020–2024",
+          "question": "比较牙支持与黏膜支持时，还需分层记录组织顺应性。",
+          "title": "组织支撑与自由端",
+          "evidence": "下颌自由端体外试验比较三组导板，每组20件。新设计用牙齿倒凹固位并加入骨面螺钉支撑，覆盖两牙或三牙，均较跨弓对照减小偏差。120枚种植体总体入口与根尖三维偏差为0.69 ± 0.19和1.10 ± 0.34 mm，角度为2.72 ± 1.08°。",
+          "refs": [
+            "R03",
+            "R06"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2026",
+          "question": "位移出现在拆支撑、处理还是就位时？",
+          "title": "制造与灭菌变形",
+          "evidence": "高压蒸汽处理后应重新测量导板的几何表现。自由形态扫描适合定位变形，加载后的接触间隙和轴向误差可判断变形是否传入钻孔。灭菌验证以指定树脂、设备与最终成品为单位。",
+          "refs": [
+            "R04"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2022–2025",
+          "question": "支撑型式与器械接口何时成为主要误差项？",
+          "title": "成品就位与套筒",
+          "evidence": "前瞻性体内研究把模板设计放到临床环境中评价。就位后可记录相对牙面的间隙和摇动，并对导向轴相对支撑面的误差做成品复核。张口受限时还应保留钻具、套筒和手柄的操作空间。",
+          "refs": [
+            "R05",
+            "R08"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2024",
+          "question": "入口与根尖的结果不同步时，检查角度与深度。",
+          "title": "临床结果与误差预算",
+          "evidence": "在部分缺牙患者的前瞻性观察中，以临床数据追踪静态计算机辅助种植的误差。逐步核对用于区分配准与就位偏差，病例分布则要记录缺牙跨度、位点和支持类型。",
+          "refs": [
+            "R02"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2024–2026",
+          "question": "改变前序变量后，在同一参考条件复测。",
+          "title": "失效结果反馈设计",
+          "evidence": "如果导板在模型上的自由态符合设计、但自由端受力后偏斜，下一轮应改变支撑与跨度。如果偏斜在灭菌后即出现，则优先区分加工变形和量测基准。这样失效记录能够改动具体工序。",
+          "refs": [
+            "R03",
+            "R04"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "组织支撑与自由端",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "制造与灭菌变形",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "成品就位与套筒",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "成品就位与套筒",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "临床结果与误差预算",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "失效结果反馈设计",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "用定位偏差回查支撑与成形",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究范围与目标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "本方向沿术前计划、导板制造、组织就位和植入后配准建立坐标链。导向孔的成形真度、导板就位重复性与种植体位置偏差是不同终点。可以在同一病例几何上逐级改变制造方式或支持结构，结合口内数据验证累计误差。"
+          }
+        ]
+      },
+      {
+        "title": "学术研究脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 建立计划基准"
+          },
+          {
+            "type": "p",
+            "text": "模型研究比较原型导板和传统导板的植入偏差。各组都应在同一计划坐标系中比较，入口点可描述平移，根尖与角度还反映轴线偏转。 [R01]"
+          },
+          {
+            "type": "p",
+            "text": "误差从术前规划的哪个基准测量？"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 组织支撑与自由端"
+          },
+          {
+            "type": "p",
+            "text": "下颌自由端体外试验比较三组导板，每组20件。新设计用牙齿倒凹固位并加入骨面螺钉支撑，覆盖两牙或三牙，均较跨弓对照减小偏差。120枚种植体总体入口与根尖三维偏差为0.69 ± 0.19和1.10 ± 0.34 mm，角度为2.72 ± 1.08°。 [R03]"
+          },
+          {
+            "type": "p",
+            "text": "比较牙支持与黏膜支持时，还需分层记录组织顺应性。 [R06]"
+          },
+          {
+            "type": "p",
+            "text": "2021 年无牙颌体外研究用桌面设备制作黏膜支持导板，发现黏膜弹性会影响稳定性并增加植入偏差。设计不能只依据静态表面形状，还要考虑支撑组织在操作中如何受力。[R10]"
+          },
+          {
+            "type": "p",
+            "text": "黏膜支持的核心变量是接触面受载后的形状。导板在扫描时与在钻孔时承受的压力可能不同，固定钉也会改变压力分布。因此，评价应先确定哪个表面代表患者坐标，再解释导板与植入物的相对运动。研究中不同配准得到不同偏差，说明测量协议本身属于证据链的一部分，不能将配准误差混入器械性能。"
+          },
+          {
+            "type": "p",
+            "text": "进一步实验可在同一模型上逐级改变加载方向与固定顺序，重复拆装导板，再同时测量导板刚体位姿和钻孔轴线。若位姿已变而孔轴保持一致，应检查测量基准；若导板未动而孔轴改变，则转向套筒配合和钻具挠曲。这样的分解将问题交给制造跨度与临床流程节点。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 制造与灭菌变形"
+          },
+          {
+            "type": "p",
+            "text": "高压蒸汽处理后应重新测量导板的几何表现。自由形态扫描适合定位变形，加载后的接触间隙和轴向误差可判断变形是否传入钻孔。灭菌验证以指定树脂、设备与最终成品为单位。 [R04]"
+          },
+          {
+            "type": "p",
+            "text": "位移出现在拆支撑、处理还是就位时？"
+          },
+          {
+            "type": "p",
+            "text": "2022 年研究测试 SLA、DLP 标准试样和完整导板，比较消毒及两种蒸汽温度后的力学。热处理改变了拉伸、弯曲或承载表现，说明灭菌也是材料过程的一部分。[R11]"
+          },
+          {
+            "type": "p",
+            "text": "热处理既可能进一步改变固化状态，也可能引起软化、应力释放或尺寸变化，其结果取决于材料和制造过程。因而承载能力变化不能仅用“灭菌损伤”概括，应分别观察弹性范围、断裂模式与加载后的永久变形。完整导板的表现还受连接臂和导向孔几何影响。"
+          },
+          {
+            "type": "p",
+            "text": "标准试样适合比较材料本身，实际导板则揭示结构对载荷的放大。两类实验应使用相同处理历史，并在接近操作方向的载荷下对应分析。若试样强度变化较小而导板偏移明显，应检查几何变形和局部屈曲；若形状保持而断裂提前，则应转向材料脆化和关键连接区。"
+          },
+          {
+            "type": "p",
+            "text": "2023 年研究将灭菌前后导板放回含种植体参照的模型，比较精度和贴合。材料与灭菌影响结果，就位载荷也影响实验测量，说明自由状态扫描与真实适配并非同一指标。[R12]"
+          },
+          {
+            "type": "p",
+            "text": "该研究把灭菌后的自由形态与受力就位连接起来，揭示测量方法对结论的重要影响。较大载荷使间隙减小，并不意味着导板恢复了原始无应力形状。固定点与接触组织承担的附加载荷、导向通道的方向是否变化，都需要同时检查。"
+          },
+          {
+            "type": "p",
+            "text": "实际验收可以采用规定加载范围内的位移曲线，而不是只测量某一时刻是否贴紧。若导板必须用明显更大力量才能就位，可能意味着处理变形已影响使用窗口。将就位力、固定后位置和卸载恢复作为一组指标，可以区分可接受弹性适配与需要返工的几何失配，并避免操作者习惯掩盖材料差异。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 成品就位与套筒"
+          },
+          {
+            "type": "p",
+            "text": "前瞻性体内研究把模板设计放到临床环境中评价。就位后可记录相对牙面的间隙和摇动，并对导向轴相对支撑面的误差做成品复核。张口受限时还应保留钻具、套筒和手柄的操作空间。 [R05] [R08]"
+          },
+          {
+            "type": "p",
+            "text": "支撑型式与器械接口何时成为主要误差项？"
+          },
+          {
+            "type": "p",
+            "text": "2024 年三坐标测量研究发现所测试导板的主要尺寸偏差集中于自由端向上弯曲。整体平均偏差之外，悬臂与跨度会产生局部问题，需要按功能区域评价。[R13]"
+          },
+          {
+            "type": "p",
+            "text": "局部坐标测量适合发现整体表面平均值容易隐藏的结构问题。自由端上翘意味着形变具有方向和空间分布，可能改变接触顺序或套筒轴线。对于牙弓或长条导板，端部偏差即使只占较小表面积，也可能决定就位时是否发生摇摆。"
+          },
+          {
+            "type": "p",
+            "text": "两周储存观察在该实验中主要显示较小的附加变化，应与打印形成的初始偏差区分。更完整的设计可固定测量基准，在处理后各时间点追踪相同标志，并记录环境条件。若变化随时间持续，应进一步观察何时稳定；若一开始就存在，则优先优化打印方向、支撑和后固化。"
+          },
+          {
+            "type": "p",
+            "text": "2025 年 SG01 树脂研究比较三台 LCD 设备，并观察打印后、存放一个月、灭菌后及再次存放后的尺寸。设备与处理阶段均影响结果，材料名称相同仍可能出现不同成品表现。[R14]"
+          },
+          {
+            "type": "p",
+            "text": "同一种树脂在不同设备上得到不同成品，说明曝光、光场、支撑及后处理共同决定实际状态。设备比较若只引用标称像素或层厚，容易忽略聚合程度和残余应力。把一个月储存及灭菌纳入同一实验，使设备差异可以沿交付周期持续观察。"
+          },
+          {
+            "type": "p",
+            "text": "对产品开发而言，需要定义的是设备、材料和流程的组合，而非一个可任意迁移的树脂名称。不同几何试样的结果也应按功能区域解释：长跨距、孔径及薄壁可能具有不同敏感性。验证可选择最不利几何作为代表，再用真实导板确认这种代表性，减少每个病例重新开展完整实验的负担。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 临床结果与误差预算"
+          },
+          {
+            "type": "p",
+            "text": "在部分缺牙患者的前瞻性观察中，以临床数据追踪静态计算机辅助种植的误差。逐步核对用于区分配准与就位偏差，病例分布则要记录缺牙跨度、位点和支持类型。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "入口与根尖的结果不同步时，检查角度与深度。"
+          },
+          {
+            "type": "p",
+            "text": "2024 年前瞻性观察研究分析 25 枚种植体，报告平均起点位移约 0.71 毫米、角度偏差约 3.34 度，并逐步比较数字设计、制造和手术结果。研究认为较大部分偏差来自手术过程，学习过程也是影响因素。[R02]"
+          },
+          {
+            "type": "p",
+            "text": "该研究的意义在于将最终种植位置放回连续流程。入口、深度和角度分别对应不同几何后果：入口平移会整体移动种植体，角度偏差会随长度放大到根尖，深度偏差则改变肩台和骨面的关系。把这些量合为一个精度等级，会掩盖具体改进方向。"
+          },
+          {
+            "type": "p",
+            "text": "对于有限缺牙间隙，牙支持条件较为明确，仍需记录口内扫描与影像融合、导板就位检查及每级钻孔的执行方式。研究设计可按操作者累计病例绘制偏差变化，并观察不良结果是否集中在相同支撑条件。若制造误差较稳定而临床离散性较大，质量改进应优先覆盖实际操作。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 失效结果反馈设计"
+          },
+          {
+            "type": "p",
+            "text": "如果导板在模型上的自由态符合设计、但自由端受力后偏斜，下一轮应改变支撑与跨度。如果偏斜在灭菌后即出现，则优先区分加工变形和量测基准。这样失效记录能够改动具体工序。 [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "改变前序变量后，在同一参考条件复测。"
+          }
+        ]
+      },
+      {
+        "title": "研究之间如何比较",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "体外模型固定解剖条件，能辨析局部设计机制。临床数据引入真实软组织、操作视野和个体差异。两类结果可并列，比较时需标明坐标定义、测量方法和患者支持条件，尤其要分辨平均误差与危险方向上最大的偏差。 [R02] [R03]"
+          }
+        ]
+      },
+      {
+        "title": "企业路线与公开产品",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Formlabs 的 Surgical Guide Resin 将材料与特定打印、清洗、固化及蒸汽处理流程配套。数字规划厂商位于流程入口，重在影像与扫描配准、套筒库以及导板设计输出。企业交付可按版本核对工序和适用条件。 [R09]"
+          },
+          {
+            "type": "p",
+            "text": "3D Industrial Imaging 的 DentiqGuide 提供种植规划及导板设计工具，官方手册包含导板区域生成和标识等操作。软件把数字规划转成可制造形态，是学术误差链中的设计环节。[R15]"
+          },
+          {
+            "type": "p",
+            "text": "企业发展方向是连接影像、口内扫描、种植体规划与制造文件。临床研究则说明这些步骤仍要与支撑和术中操作一起验证，产品价值最终体现为完整工作流的可靠性。"
+          },
+          {
+            "type": "p",
+            "text": "Formlabs 为导板树脂提供制造指南和使用说明，连接设备兼容、清洗、后固化与可采用的灭菌流程。Materialise 的截骨导板说明则按地区提供对应版本。[R09] [R16]"
+          },
+          {
+            "type": "p",
+            "text": "企业产品的价值包括把加工条件整理为可执行流程，使不同制造场所能够得到预期的最终状态。医院生产与集中交付都需要管理处理记录和存放周期。"
+          }
+        ]
+      },
+      {
+        "title": "专利机制与转化验证",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN216136075U把扫描获取的牙体模型和打印导板放进同一技术方案。CN216365343U针对咬合空间不足。对应的实验应固定植入计划，比较普通与低空间结构的钻具可达范围、加载后轴向位移和重新就位表现。 [R07] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "后续研究与应用走向",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "下一步优先建立从计划到灭菌成品再到术中定位的记录。高价值指标包括局部间隙、重复就位方差、最小器械通行空间和临床角度离群值。多中心汇报若保留病例类型和工作流版本，便可定位适合标准化设计与需要个体化支撑的位点。 [R02] [R04] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Assessment of Deviations of Implants Installed with Prototyped Surgical Guide and Conventional Guide: In Vitro Study.",
+        "url": "https://doi.org/10.1055/s-0040-1718791",
+        "year": "2022",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R01"
+      },
+      {
+        "title": "Accuracy of computer-guided implant surgery in partially edentulous patients: a prospective observational study.",
+        "url": "https://doi.org/10.1186/s40729-024-00552-z",
+        "year": "2024",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R02"
+      },
+      {
+        "title": "Accuracy of the novel digital non-cross-arch surgical guides with integration of tooth undercut retention and screw-bone support for implant placement in mandibular free-end.",
+        "url": "https://doi.org/10.1186/s12903-024-04329-z",
+        "year": "2024",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R03"
+      },
+      {
+        "title": "Effects of autoclave sterilization on the precision of 3D-printed surgical guides in implant dentistry",
+        "url": "https://doi.org/10.1007/s10266-026-01499-w",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R04"
+      },
+      {
+        "title": "Accuracy of Three-Dimensional Computer-Aided Implant Surgical Guides: A Prospective In Vivo Study of the Impact of Template Design.",
+        "url": "https://doi.org/10.3390/dj13040150",
+        "year": "2025",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R05"
+      },
+      {
+        "title": "EVALUATING THE ACCURACY OF TOOTH-SUPPORTED VS MUCOSA-SUPPORTED 3D-PRINTED SURGICAL GUIDE IN DENTAL IMPLANT PLACEMENT (CROSS-SECTIONAL STUDY)",
+        "url": "https://doi.org/10.7126/cumudj.694621",
+        "year": "2020",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R06"
+      },
+      {
+        "title": "Dental implantation guide plate manufactured based on 3D printing and tooth three-dimensional model laser scanning device",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN216136075U",
+        "year": "2022",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R07"
+      },
+      {
+        "title": "3D printing planting guide plate suitable for insufficient occlusion space",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN216365343U",
+        "year": "2022",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R08"
+      },
+      {
+        "title": "Surgical Guide Resin",
+        "url": "https://dental.formlabs.com/global/products/surgical-guide-resin/",
+        "year": "",
+        "kind": "企业公告",
+        "source": "企业公告",
+        "id": "R09"
+      },
+      {
+        "id": "R10",
+        "title": "Accuracy of Guided Implant Surgery in the Edentulous Jaw Using Desktop 3D-Printed Mucosal Supported Guides",
+        "year": "2021",
+        "source": "Journal of Clinical Medicine",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.3390/jcm10030391"
+      },
+      {
+        "id": "R11",
+        "title": "Effects of Disinfection and Steam Sterilization on the Mechanical Properties of 3D SLA- and DLP-Printed Surgical Guides for Orthodontic Implant Placement",
+        "year": "2022",
+        "source": "Polymers",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.3390/polym14102107"
+      },
+      {
+        "id": "R12",
+        "title": "The Effect of Sterilization on the Accuracy and Fit of 3D-Printed Surgical Guides",
+        "year": "2023",
+        "source": "Materials",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.3390/ma16155305"
+      },
+      {
+        "id": "R13",
+        "title": "Achieving automated and high-precision in situ analysis of the dimensional accuracy and dynamic deformation of 3D-printed surgical templates: an in vitro study",
+        "year": "2024",
+        "source": "International Journal of Implant Dentistry",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1186/s40729-024-00561-y"
+      },
+      {
+        "id": "R14",
+        "title": "The Effects of Light Crystal Display 3D Printers, Storage Time and Steam Sterilization on the Dimensional Stability of a Photopolymer Resin for Surgical Guides: An In Vitro Study",
+        "year": "2025",
+        "source": "Materials",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.3390/ma18030474"
+      },
+      {
+        "id": "R15",
+        "title": "DentiqGuide version 1.3.04 user manual",
+        "year": "2026访问",
+        "source": "3D Industrial Imaging",
+        "kind": "企业产品资料",
+        "url": "https://www.3dii.net/wp-content/uploads/2021/01/DentiqGuide_Manual_Eng.pdf"
+      },
+      {
+        "id": "R16",
+        "title": "Osteotomy Guides and Models: Instructions for Use",
+        "year": "2026访问",
+        "source": "Materialise",
+        "kind": "企业产品资料",
+        "url": "https://www.materialise.com/en/documentation/instructions-for-use/osteotomy-guides-models"
+      }
+    ]
+  },
+  "en": {
+    "id": "H13",
+    "p": "P4",
+    "title": "Dental implant guides: fabrication, processing and placement accuracy",
+    "subtitle": "Tracing error to the guide, its support or the implant trajectory",
+    "thesis": "Placement error accumulates through image registration, guide fabrication, processing distortion, tissue support and drill clearance. A mandibular free-end guide must balance visibility with resistance to tilt. Clinical evaluation should report entry, apex and angular deviations. [R02] [R03]",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway · Dental implant guides: fabrication, processing and placement accuracy",
+      "summary": "Use common reference coordinates to test fabrication and support separately, recombine them in the processed and seated guide, and trace clinical trajectory errors back to their source.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2022",
+          "question": "Which planning reference anchors the error measurements?",
+          "title": "Establish the planning reference",
+          "evidence": "A bench study compared implant deviations with prototyped and conventional guides. Entry, apex and angular deviations identify different contributions to the trajectory error when assessed in the same planning coordinates.",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2020–2024",
+          "question": "Tooth- versus mucosa-supported guides should be compared with attention to tissue compliance.",
+          "title": "Tissue support and distal extension",
+          "evidence": "The mandibular free-end simulation compared three guide designs, 20 per group. Both short guides combined tooth-undercut retention with screw-to-bone support and showed lower deviations than the cross-arch control. Across 120 implants, mean 3D entry and apex errors were 0.69 ± 0.19 and 1.10 ± 0.34 mm, with a mean angular error of 2.72 ± 1.08°.",
+          "refs": [
+            "R03",
+            "R06"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2026",
+          "question": "Does displacement arise during support removal, processing or seating?",
+          "title": "Fabrication and sterilization distortion",
+          "evidence": "Guide geometry should be remeasured after autoclaving. An unloaded scan locates distortion, while gaps and channel-axis deviations under load show whether it propagates to the bore. Sterilization should be validated for the specific resin, equipment and finished guide.",
+          "refs": [
+            "R04"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2022–2025",
+          "question": "When do support and instrument interfaces dominate the error?",
+          "title": "Seating and the guide sleeve",
+          "evidence": "Prospective in vivo work evaluates template design in the operative setting. Checks can record gaps and rocking on seating and measure the finished channel axis relative to the support surface. Restricted opening also constrains clearance for the drill, sleeve and handpiece.",
+          "refs": [
+            "R05",
+            "R08"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2024",
+          "question": "If entry and apex errors diverge, examine angle and depth.",
+          "title": "Clinical placement and error budget",
+          "evidence": "A prospective study in partially edentulous patients evaluated errors in static computer-guided placement using clinical data. Stepwise measurement helps separate registration from seating error. Site, edentulous span and guide support define the case mix.",
+          "refs": [
+            "R02"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2024–2026",
+          "question": "Recheck the changed variable against the same reference.",
+          "title": "Feed failure modes back into design",
+          "evidence": "When a guide matches CAD unloaded but tilts under distal force, support and span become the next design variables. A deviation already present after sterilization instead calls for separating processing distortion from the measurement reference. Failure records can then identify a specific step to change.",
+          "refs": [
+            "R03",
+            "R04"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Tissue support and distal extension",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Fabrication and sterilization distortion",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Seating and the guide sleeve",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Seating and the guide sleeve",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Clinical placement and error budget",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Feed failure modes back into design",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Trace placement errors to support and fabrication",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Scope and objectives",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A common coordinate chain connects planning, guide fabrication, tissue seating and post-placement registration. Guide-channel trueness, seating repeatability and implant-position deviations are distinct outcomes. Changing one fabrication or support variable on the same anatomy can isolate its contribution before the accumulated error is assessed in vivo."
+          }
+        ]
+      },
+      {
+        "title": "Academic pathway and interpretation",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Establish the planning reference"
+          },
+          {
+            "type": "p",
+            "text": "A bench study compared implant deviations with prototyped and conventional guides. Entry, apex and angular deviations identify different contributions to the trajectory error when assessed in the same planning coordinates. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Which planning reference anchors the error measurements?"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Tissue support and distal extension"
+          },
+          {
+            "type": "p",
+            "text": "The mandibular free-end simulation compared three guide designs, 20 per group. Both short guides combined tooth-undercut retention with screw-to-bone support and showed lower deviations than the cross-arch control. Across 120 implants, mean 3D entry and apex errors were 0.69 ± 0.19 and 1.10 ± 0.34 mm, with a mean angular error of 2.72 ± 1.08°. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Tooth- versus mucosa-supported guides should be compared with attention to tissue compliance. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "A 2021 in vitro edentulous-jaw study used desktop equipment to fabricate mucosa-supported guides and found that mucosal elasticity affected stability and increased implantation deviations. Design must consider how supporting tissue is loaded during use, in addition to static surface geometry. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "The core variable for mucosal support is the shape of the contact surface after loading. The pressure exerted on the guide during scanning may differ from that during drilling, and the fixation pins also alter the pressure distribution. Therefore, evaluation should first determine which surface represents the patient's coordinates before interpreting the relative motion between the guide and the implant. The different registrations observed in the study resulted in varying biases, indicating that the measurement protocol itself is part of the chain of evidence and registration errors should not be inferred from device performance."
+          },
+          {
+            "type": "p",
+            "text": "Further experiments can be conducted by progressively changing the loading direction and fixing sequence on the same model, repeatedly disassembling and assembling the surgical guide, and simultaneously measuring the rigid body pose of the surgical guide and the borehole axis. If the pose has changed but the borehole axis remains consistent, the measurement reference should be checked; if the surgical guide has not moved but the borehole axis has changed, then the steering sleeve fit and drill bit deflection should be considered. This decomposition delegates the problems to manufacturing spans and clinical workflow nodes."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Fabrication and sterilization distortion"
+          },
+          {
+            "type": "p",
+            "text": "Guide geometry should be remeasured after autoclaving. An unloaded scan locates distortion, while gaps and channel-axis deviations under load show whether it propagates to the bore. Sterilization should be validated for the specific resin, equipment and finished guide. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Does displacement arise during support removal, processing or seating?"
+          },
+          {
+            "type": "p",
+            "text": "A 2022 study tested standard SLA and DLP specimens and complete guides, comparing mechanical properties after disinfection and steam treatment at two temperatures. Heat treatment changed tensile, flexural or load-bearing performance, showing that sterilization is part of the material-processing history. [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Heat treatment can further alter the solidification state and may cause softening, stress release, or dimensional changes, the outcome of which depends on the material and manufacturing process. Therefore, changes in load-bearing capacity cannot be simply summarized as \"sterilization damage\"; the elastic range, fracture mode, and permanent deformation after loading should be observed separately. The performance of the intact surgical guide is also affected by the geometry of the connecting arm and guide hole."
+          },
+          {
+            "type": "p",
+            "text": "The standard specimen is suitable for comparing the material itself, while the actual surgical guide reveals the amplification of the load on the structure. Both types of tests should use the same treatment history and be analyzed correspondingly under loads close to the operating direction. If the specimen strength changes little but the surgical guide shifts significantly, geometric deformation and local buckling should be examined; if the shape is maintained but fracture occurs prematurely, attention should be paid to material embrittlement and critical joint areas."
+          },
+          {
+            "type": "p",
+            "text": "A 2023 study placed guides on an implant-referenced model before and after sterilization to compare accuracy and fit. Material and sterilization affected results, while seating load also influenced measurements. Free-state scans and actual fit therefore describe different properties. [R12]"
+          },
+          {
+            "type": "p",
+            "text": "This study connects the free form after sterilization with the stress-bearing placement, revealing the significant impact of measurement methods on the conclusions. A larger load reducing the gap does not necessarily mean the surgical guide has returned to its original stress-free shape. The additional load borne by the fixation point and the contact tissue, as well as whether the direction of the guide channel has changed, all need to be examined simultaneously."
+          },
+          {
+            "type": "p",
+            "text": "For, actual acceptance testing can use displacement curves within the specified loading range, rather than simply measuring whether it is tightly fitted at a single moment. If the surgical guide requires significantly greater force to be in place, it may mean that the deformation has affected the usability window. Using positioning force, post-fixation position, and unloading recovery as a set of indicators can distinguish between acceptable elastic fit and geometric mismatch requiring rework, and prevent operators from habitually masking material differences."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Seating and the guide sleeve"
+          },
+          {
+            "type": "p",
+            "text": "Prospective in vivo work evaluates template design in the operative setting. Checks can record gaps and rocking on seating and measure the finished channel axis relative to the support surface. Restricted opening also constrains clearance for the drill, sleeve and handpiece. [R05] [R08]"
+          },
+          {
+            "type": "p",
+            "text": "When do support and instrument interfaces dominate the error?"
+          },
+          {
+            "type": "p",
+            "text": "A coordinate measuring machine study conducted in 2024 revealed that the main dimensional deviations of the tested surgical guide were concentrated in the upward bending at the free end. Besides the overall average deviation, localized issues arose with the cantilever and span, requiring evaluation by functional area. [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Local coordinate measurement is suitable for discovering structural problems that are easily hidden by the overall surface average. Upward tilting of the free end indicates that the deformation has direction and spatial distribution, which may change the contact sequence or the sleeve axis. For dental arches or long surgical guides, even end deviations occupying only a small surface area can determine whether wobbling occurs during positioning."
+          },
+          {
+            "type": "p",
+            "text": "Two-week storage observation of in this experiment mainly showed minor additional changes, which should be distinguished from the initial deviations formed during printing. A more complete design would fix the measurement benchmark, track the same indicators at various time points after processing, and record environmental conditions. If the changes persist over time, further observation should be conducted to see when they stabilize; if they exist from the beginning, priority should be given to optimizing the printing orientation, support, and post-curing."
+          },
+          {
+            "type": "p",
+            "text": "2025 SG01 Resin Study: Comparison of three LCD devices, and observation of dimensions after printing, one month of storage, sterilization, and re-storage. Equipment and processing stages both affect the results; even with the same material name, different finished product performances may occur. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "The fact that the same resin yielded different finished products on different equipment illustrates that exposure, light field, support, and post-processing all jointly determine the actual state. Comparing equipment solely based on nominal pixels or layer thickness easily overlooks the degree of polymerization and residual stress. Including a month of storage and sterilization in the same experiment allows for continuous observation of equipment differences throughout the delivery cycle."
+          },
+          {
+            "type": "p",
+            "text": "For product development, what needs to be defined is the combination of equipment, materials, and processes, rather than a resin name that can be arbitrarily transferred. Results from different geometric specimens should also be interpreted according to functional regions: long spans, pore sizes, and thin walls may have different sensitivities. Validation can be performed by selecting the most unfavorable geometry as representative, and then confirming this representativeness using a real surgical guide, reducing the burden of repeating the entire experiment for each case."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Clinical placement and error budget"
+          },
+          {
+            "type": "p",
+            "text": "A prospective study in partially edentulous patients evaluated errors in static computer-guided placement using clinical data. Stepwise measurement helps separate registration from seating error. Site, edentulous span and guide support define the case mix. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "If entry and apex errors diverge, examine angle and depth."
+          },
+          {
+            "type": "p",
+            "text": "A prospective observational study in 2024 analyzed 25 implants, reporting an average origin displacement of approximately 0.71 mm and an angular deviation of approximately 3.34 degrees, and progressively comparing digital design, manufacturing, and surgical outcomes. The study concluded that a significant portion of the deviation stemmed from the surgical procedure, with the learning process also being a contributing factor. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "The significance of this study lies in restoring the final implantation location to a continuous process. The entry point, depth, and angle each correspond to different geometric consequences: translation of the entry point will move the entire implant; angular deviation will amplify with length to the root apex; and depth deviation will alter the relationship between the shoulder and the bone surface. Combining these quantities into a single level of precision will obscure specific areas for improvement."
+          },
+          {
+            "type": "p",
+            "text": "For finite edentulous spaces where tooth support conditions are relatively clear, it is still necessary to record intraoral scans and image fusion, guide placement checks, and the execution methods for each drilling stage. The study design can plot deviation changes based on the operator's cumulative cases and observe whether adverse outcomes are concentrated under the same support conditions. If manufacturing errors are relatively stable but clinical variability is large, quality improvements should prioritize covering actual procedures."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Feed failure modes back into design"
+          },
+          {
+            "type": "p",
+            "text": "When a guide matches CAD unloaded but tilts under distal force, support and span become the next design variables. A deviation already present after sterilization instead calls for separating processing distortion from the measurement reference. Failure records can then identify a specific step to change. [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Recheck the changed variable against the same reference."
+          }
+        ]
+      },
+      {
+        "title": "Comparing the evidence",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Bench models control anatomy and isolate design mechanisms. Clinical data incorporate real soft tissue, access and patient variation. Compare them with coordinate definitions, measurement methods and support conditions explicit, giving attention to maximum deviations in clinically consequential directions as well as means. [R02] [R03]"
+          }
+        ]
+      },
+      {
+        "title": "Industry approaches and documented products",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Formlabs pairs Surgical Guide Resin with specified printing, washing, curing and steam-processing workflows. Digital planning vendors work upstream on image and scan registration, sleeve libraries and design output. A product comparison can trace each step and indication to the applicable version. [R09]"
+          },
+          {
+            "type": "p",
+            "text": "3D Industrial Imaging's DentiqGuide provides dental implant planning and guide design tools. The official manual includes operations such as guide area generation and labeling. The software transforms digital planning into a manufacturable form, representing a design link in the academic error chain. [R15]"
+          },
+          {
+            "type": "p",
+            "text": "The corporate development direction is to connect imaging, intraoral scanning, implant planning, and manufacturing documentation. Clinical studies indicate that these steps still need to be validated together with support and intraoperative procedures; the product's value is ultimately reflected in the reliability of the complete workflow."
+          },
+          {
+            "type": "p",
+            "text": "Formlabs provides manufacturing guidelines and usage instructions for surgical guide resins, including connection equipment compatibility, cleaning, post-curing, and applicable sterilization processes. Materialise's osteotomy guide instructions are available in region-specific versions. [R09][R16]"
+          },
+          {
+            "type": "p",
+            "text": "The value of a company's products lies in organizing processing conditions into executable processes, enabling different manufacturing sites to achieve the expected final state. Both hospital production and centralized delivery require the management of processing records and storage cycles."
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and translational testing",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN216136075U combines a scanned dental model with guide fabrication. CN216365343U addresses restricted occlusal clearance. With the implant plan held constant, a test can compare instrument access, under-load axis error and reseating performance for standard and low-clearance designs. [R07] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "Research and adoption outlook",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The next priority is a traceable record from plan through sterilized part to intraoperative placement. Useful measures include local gaps, reseating variance, minimum instrument clearance and clinical angular outliers. Multicentre reporting by case type and workflow version can identify where standard design or patient-specific support is needed. [R02] [R04] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Assessment of Deviations of Implants Installed with Prototyped Surgical Guide and Conventional Guide: In Vitro Study.",
+        "url": "https://doi.org/10.1055/s-0040-1718791",
+        "year": "2022",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R01"
+      },
+      {
+        "title": "Accuracy of computer-guided implant surgery in partially edentulous patients: a prospective observational study.",
+        "url": "https://doi.org/10.1186/s40729-024-00552-z",
+        "year": "2024",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R02"
+      },
+      {
+        "title": "Accuracy of the novel digital non-cross-arch surgical guides with integration of tooth undercut retention and screw-bone support for implant placement in mandibular free-end.",
+        "url": "https://doi.org/10.1186/s12903-024-04329-z",
+        "year": "2024",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R03"
+      },
+      {
+        "title": "Effects of autoclave sterilization on the precision of 3D-printed surgical guides in implant dentistry",
+        "url": "https://doi.org/10.1007/s10266-026-01499-w",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R04"
+      },
+      {
+        "title": "Accuracy of Three-Dimensional Computer-Aided Implant Surgical Guides: A Prospective In Vivo Study of the Impact of Template Design.",
+        "url": "https://doi.org/10.3390/dj13040150",
+        "year": "2025",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R05"
+      },
+      {
+        "title": "EVALUATING THE ACCURACY OF TOOTH-SUPPORTED VS MUCOSA-SUPPORTED 3D-PRINTED SURGICAL GUIDE IN DENTAL IMPLANT PLACEMENT (CROSS-SECTIONAL STUDY)",
+        "url": "https://doi.org/10.7126/cumudj.694621",
+        "year": "2020",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R06"
+      },
+      {
+        "title": "Dental implantation guide plate manufactured based on 3D printing and tooth three-dimensional model laser scanning device",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN216136075U",
+        "year": "2022",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R07"
+      },
+      {
+        "title": "3D printing planting guide plate suitable for insufficient occlusion space",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN216365343U",
+        "year": "2022",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R08"
+      },
+      {
+        "title": "Surgical Guide Resin",
+        "url": "https://dental.formlabs.com/global/products/surgical-guide-resin/",
+        "year": "",
+        "kind": "Company announcement",
+        "source": "Company announcement",
+        "id": "R09"
+      },
+      {
+        "id": "R10",
+        "title": "Accuracy of Guided Implant Surgery in the Edentulous Jaw Using Desktop 3D-Printed Mucosal Supported Guides",
+        "year": "2021",
+        "source": "Journal of Clinical Medicine",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.3390/jcm10030391"
+      },
+      {
+        "id": "R11",
+        "title": "Effects of Disinfection and Steam Sterilization on the Mechanical Properties of 3D SLA- and DLP-Printed Surgical Guides for Orthodontic Implant Placement",
+        "year": "2022",
+        "source": "Polymers",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.3390/polym14102107"
+      },
+      {
+        "id": "R12",
+        "title": "The Effect of Sterilization on the Accuracy and Fit of 3D-Printed Surgical Guides",
+        "year": "2023",
+        "source": "Materials",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.3390/ma16155305"
+      },
+      {
+        "id": "R13",
+        "title": "Achieving automated and high-precision in situ analysis of the dimensional accuracy and dynamic deformation of 3D-printed surgical templates: an in vitro study",
+        "year": "2024",
+        "source": "International Journal of Implant Dentistry",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1186/s40729-024-00561-y"
+      },
+      {
+        "id": "R14",
+        "title": "The Effects of Light Crystal Display 3D Printers, Storage Time and Steam Sterilization on the Dimensional Stability of a Photopolymer Resin for Surgical Guides: An In Vitro Study",
+        "year": "2025",
+        "source": "Materials",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.3390/ma18030474"
+      },
+      {
+        "id": "R15",
+        "title": "DentiqGuide version 1.3.04 user manual",
+        "year": "2026访问",
+        "source": "3D Industrial Imaging",
+        "kind": "企业产品资料",
+        "url": "https://www.3dii.net/wp-content/uploads/2021/01/DentiqGuide_Manual_Eng.pdf"
+      },
+      {
+        "id": "R16",
+        "title": "Osteotomy Guides and Models: Instructions for Use",
+        "year": "2026访问",
+        "source": "Materialise",
+        "kind": "企业产品资料",
+        "url": "https://www.materialise.com/en/documentation/instructions-for-use/osteotomy-guides-models"
+      }
+    ]
+  },
+  "de": {
+    "id": "H13",
+    "p": "P4",
+    "title": "Implantologische Bohrschablonen: Herstellung, Aufbereitung und Positioniergenauigkeit",
+    "subtitle": "Fehler an Schablone, Abstützung oder Implantatachse lokalisieren",
+    "thesis": "Positionierfehler entstehen durch Bildregistrierung, Fertigung, aufbereitungsbedingte Verformung, Abstützung und Bohrerspiel. Bei distalen Freiendsituationen sind Sicht und Kippsicherheit gemeinsam zu berücksichtigen. Klinische Auswertungen sollten Eintritts-, Apex- und Winkelabweichung erfassen. [R02] [R03]",
+    "questions": [],
+    "graph": {
+      "title": "Forschungsverlauf · Implantologische Bohrschablonen: Herstellung, Aufbereitung und Positioniergenauigkeit",
+      "summary": "Gemeinsame Referenzkoordinaten erlauben getrennte Prüfungen von Fertigung und Abstützung. Die aufbereitete, eingesetzte Schablone führt beide Pfade zusammen. Klinische Abweichungen werden anschließend bis zu ihrer Ursache zurückverfolgt.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2022",
+          "question": "Auf welche Planungsreferenz beziehen sich die Abweichungen?",
+          "title": "Planungsreferenz festlegen",
+          "evidence": "Ein Modellversuch verglich Implantatabweichungen mit prototypisch gefertigten und konventionellen Schablonen. Eintrittspunkt, Apex und Winkel bringen in demselben Planungskoordinatensystem unterschiedliche Fehleranteile zum Ausdruck.",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2020–2024",
+          "question": "Beim Vergleich zahn- und schleimhautgetragener Schablonen ist die Nachgiebigkeit des Gewebes zu berücksichtigen.",
+          "title": "Abstützung beim Freiendsattel",
+          "evidence": "In der Freiendsimulation wurden drei Schablonengruppen mit jeweils 20 Exemplaren untersucht. Die kurzen Schablonen mit Unterschnittretention und Knochenabstützung durch eine Schraube wiesen geringere Abweichungen als die kieferübergreifende Kontrolle auf. Bei 120 Implantaten betrugen die mittleren 3D-Abweichungen am Eintritt und Apex 0,69 ± 0,19 und 1,10 ± 0,34 mm sowie im Winkel 2,72 ± 1,08°.",
+          "refs": [
+            "R03",
+            "R06"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2026",
+          "question": "Entsteht die Verschiebung beim Entfernen der Stützen, bei der Aufbereitung oder beim Einsetzen?",
+          "title": "Fertigung und Verformung bei der Sterilisation",
+          "evidence": "Nach der Dampfsterilisation ist die Schablonengeometrie erneut zu erfassen. Ein unbelasteter Scan lokalisiert Verformungen. Spaltmaß und Führungsachse unter Last zeigen deren Übertragung auf die Bohrung. Die Prüfung gilt für das jeweilige Harz, Gerät und Endprodukt.",
+          "refs": [
+            "R04"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2022–2025",
+          "question": "Wann dominieren Abstützung und Instrumentenschnittstelle die Abweichung?",
+          "title": "Schablonensitz und Führungshülse",
+          "evidence": "Eine prospektive In-vivo-Untersuchung bewertet die Schablonengestaltung im klinischen Einsatz. Sitzspalt, Kippbewegung und Achslage relativ zur Auflagefläche prüfen das Endprodukt. Bei begrenzter Mundöffnung ist der Freiraum für Bohrer, Hülse und Handstück relevant.",
+          "refs": [
+            "R05",
+            "R08"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2024",
+          "question": "Bei abweichenden Befunden am Eintritt und Apex sind Winkel und Tiefe zu prüfen.",
+          "title": "Klinische Positionierung und Fehlerbudget",
+          "evidence": "Eine prospektive Beobachtung bei Teilbezahnten untersuchte Fehler der statisch computergeführten Implantation klinisch. Schrittweise Messungen helfen, Registrierungs- und Sitzfehler zu trennen. Region, Lückenspanne und Abstützung kennzeichnen das Fallkollektiv.",
+          "refs": [
+            "R02"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2024–2026",
+          "question": "Die geänderte Größe unter denselben Referenzbedingungen erneut prüfen.",
+          "title": "Fehlerbilder in die Konstruktion zurückführen",
+          "evidence": "Entspricht die unbelastete Schablone dem CAD-Modell und kippt erst unter distaler Last, sollten Abstützung und Spannweite variiert werden. Bei Abweichung unmittelbar nach der Sterilisation sind Aufbereitungsverformung und Messreferenz zu trennen. Fehlerdaten geben so Hinweise auf einen konkreten Prozessschritt.",
+          "refs": [
+            "R03",
+            "R04"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Abstützung beim Freiendsattel",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Fertigung und Verformung bei der Sterilisation",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Schablonensitz und Führungshülse",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Schablonensitz und Führungshülse",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Klinische Positionierung und Fehlerbudget",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Fehlerbilder in die Konstruktion zurückführen",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Positionierfehler zu Abstützung und Herstellung zurückverfolgen",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Untersuchungsrahmen und Ziele",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Planung, Herstellung, Schablonensitz und Registrierung nach Implantation bilden eine gemeinsame Koordinatenkette. Richtigkeit des Führungskanals, Wiederholbarkeit des Sitzes und Abweichung der Implantatposition sind unterschiedliche Endpunkte. Eine gezielte Variation an derselben Anatomie trennt einzelne Beiträge vor der klinischen Prüfung."
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Einordnung der Einzelschritte",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Planungsreferenz festlegen"
+          },
+          {
+            "type": "p",
+            "text": "Ein Modellversuch verglich Implantatabweichungen mit prototypisch gefertigten und konventionellen Schablonen. Eintrittspunkt, Apex und Winkel bringen in demselben Planungskoordinatensystem unterschiedliche Fehleranteile zum Ausdruck. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Auf welche Planungsreferenz beziehen sich die Abweichungen?"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Abstützung beim Freiendsattel"
+          },
+          {
+            "type": "p",
+            "text": "In der Freiendsimulation wurden drei Schablonengruppen mit jeweils 20 Exemplaren untersucht. Die kurzen Schablonen mit Unterschnittretention und Knochenabstützung durch eine Schraube wiesen geringere Abweichungen als die kieferübergreifende Kontrolle auf. Bei 120 Implantaten betrugen die mittleren 3D-Abweichungen am Eintritt und Apex 0,69 ± 0,19 und 1,10 ± 0,34 mm sowie im Winkel 2,72 ± 1,08°. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Beim Vergleich zahn- und schleimhautgetragener Schablonen ist die Nachgiebigkeit des Gewebes zu berücksichtigen. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Eine In-vitro-Studie am zahnlosen Kiefermodell von 2021 fertigte schleimhautgetragene Schablonen mit Tischgeräten. Die Schleimhautelastizität beeinflusste die Stabilität und erhöhte die Implantationsabweichung. Das Design muss daher neben der statischen Oberflächenform auch die Belastung des Stützgewebes während der Anwendung berücksichtigen.[R10]"
+          },
+          {
+            "type": "p",
+            "text": "Die zentrale Variable für die mukosale Unterstützung ist die Form der Kontaktfläche nach Belastung. Der während des Scannens auf die Bohrschablone ausgeübte Druck kann sich von dem während des Bohrens unterscheiden, und die Fixierungsstifte beeinflussen die Druckverteilung zusätzlich. Daher sollte zunächst ermittelt werden, welche Oberfläche die Patientenkoordinaten repräsentiert, bevor die Relativbewegung zwischen Bohrschablone und Implantat interpretiert wird. Die in der Studie beobachteten unterschiedlichen Registrierungen führten zu variierenden Abweichungen. Dies zeigt, dass das Messprotokoll selbst Teil der Beweiskette ist und Registrierungsfehler nicht mit der Geräteleistung vermischt werden dürfen."
+          },
+          {
+            "type": "p",
+            "text": "Weitere Experimente können durchgeführt werden, indem die Belastungsrichtung und die Fixierungsreihenfolge am selben Modell schrittweise geändert, die chirurgische Schablone wiederholt demontiert und montiert und gleichzeitig die Starrkörperposition der chirurgischen Schablone und der Bohrlochachse gemessen wird. Hat sich die Position geändert, die Bohrlochachse aber konstant geblieben, sollte der Messreferenzpunkt überprüft werden. Hat sich die chirurgische Schablone nicht bewegt, die Bohrlochachse aber verändert, sollten der Sitz der Steuerhülse und die Bohrerablenkung berücksichtigt werden. Diese Aufteilung der Probleme ordnet sie den Fertigungsbereichen und den Knotenpunkten des klinischen Arbeitsablaufs zu."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Fertigung und Verformung bei der Sterilisation"
+          },
+          {
+            "type": "p",
+            "text": "Nach der Dampfsterilisation ist die Schablonengeometrie erneut zu erfassen. Ein unbelasteter Scan lokalisiert Verformungen. Spaltmaß und Führungsachse unter Last zeigen deren Übertragung auf die Bohrung. Die Prüfung gilt für das jeweilige Harz, Gerät und Endprodukt. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Entsteht die Verschiebung beim Entfernen der Stützen, bei der Aufbereitung oder beim Einsetzen?"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie aus dem Jahr 2022 untersuchte SLA- und DLP-Standardproben sowie intakte chirurgische Schablonen und verglich die mechanischen Eigenschaften nach Desinfektion und Dampfbehandlung bei zwei verschiedenen Temperaturen. Die Wärmebehandlung veränderte die Zug-, Biege- und Tragfähigkeit, was darauf hindeutet, dass die Sterilisation ebenfalls Teil der Materialverarbeitung ist. [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Die Wärmebehandlung kann den Aushärtungszustand weiter verändern und zu Erweichung, Spannungsabbau oder Dimensionsänderungen führen, deren Auswirkungen vom Material und Herstellungsverfahren abhängen. Daher lassen sich Änderungen der Tragfähigkeit nicht einfach als „Sterilisationsschaden“ zusammenfassen; der elastische Bereich, das Bruchverhalten und die bleibende Verformung nach Belastung müssen gesondert betrachtet werden. Die Leistungsfähigkeit der intakten chirurgischen Schablone wird zudem durch die Geometrie des Verbindungsarms und der Führungsbohrung beeinflusst."
+          },
+          {
+            "type": "p",
+            "text": "Die Standardprobe eignet sich zum Vergleich des Materials selbst, während die tatsächliche chirurgische Schablone die Verstärkung der Last auf die Struktur aufzeigt. Beide Prüfarten sollten die gleiche Behandlungshistorie aufweisen und entsprechend unter Lasten nahe der Betriebsrichtung analysiert werden. Ändert sich die Festigkeit der Probe nur geringfügig, verschiebt sich die chirurgische Schablone jedoch deutlich, sind geometrische Verformungen und lokales Beulen zu untersuchen. Bleibt die Form erhalten, tritt aber ein vorzeitiger Bruch auf, ist auf Materialversprödung und kritische Verbindungsstellen zu achten."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2023 verglich Schablonen vor und nach der Sterilisation auf einem Modell mit Implantatreferenzen hinsichtlich Genauigkeit und Passung. Material und Sterilisation beeinflussten die Ergebnisse, ebenso die beim Aufsetzen wirkende Last. Scans im unbelasteten Zustand und tatsächliche Passung beschreiben daher unterschiedliche Größen.[R12]"
+          },
+          {
+            "type": "p",
+            "text": "Diese Studie stellt einen Zusammenhang zwischen der freien Form nach der Sterilisation und der spannungstragenden Platzierung her und zeigt den deutlichen Einfluss der Messmethoden auf die Schlussfolgerungen auf. Eine höhere Belastung, die den Spalt verringert, bedeutet nicht zwangsläufig, dass die chirurgische Schablone ihre ursprüngliche, spannungsfreie Form wiedererlangt hat. Die zusätzliche Belastung durch den Fixationspunkt und das Kontaktgewebe sowie eine mögliche Änderung der Führungskanalrichtung müssen gleichzeitig untersucht werden."
+          },
+          {
+            "type": "p",
+            "text": "Bei können für die Abnahmeprüfung Verschiebungs- und Passkurven innerhalb des spezifizierten Lastbereichs herangezogen werden, anstatt lediglich die Passgenauigkeit in einem einzelnen Moment zu messen. Benötigt die chirurgische Schablone deutlich mehr Kraft zum Positionieren, kann dies bedeuten, dass die Verformung den Einsatzbereich beeinträchtigt. Die Verwendung von Positionierkraft, Position nach der Fixierung und Rückstellverhalten nach der Entlastung als Indikatoren ermöglicht die Unterscheidung zwischen akzeptabler elastischer Passung und geometrischen Abweichungen, die eine Nachbearbeitung erfordern, und verhindert, dass Bediener Materialunterschiede gewohnheitsmäßig vernachlässigen."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Schablonensitz und Führungshülse"
+          },
+          {
+            "type": "p",
+            "text": "Eine prospektive In-vivo-Untersuchung bewertet die Schablonengestaltung im klinischen Einsatz. Sitzspalt, Kippbewegung und Achslage relativ zur Auflagefläche prüfen das Endprodukt. Bei begrenzter Mundöffnung ist der Freiraum für Bohrer, Hülse und Handstück relevant. [R05] [R08]"
+          },
+          {
+            "type": "p",
+            "text": "Wann dominieren Abstützung und Instrumentenschnittstelle die Abweichung?"
+          },
+          {
+            "type": "p",
+            "text": "Eine 2024 durchgeführte Studie mit einer Koordinatenmessmaschine ergab, dass die größten Maßabweichungen der geprüften chirurgische Schablone auf die Aufwärtsbiegung am freien Ende zurückzuführen waren. Neben der durchschnittlichen Gesamtabweichung traten lokale Probleme im Bereich des Kragarms und der Spannweite auf, die eine Bewertung nach Funktionsbereich erforderten. [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Die lokale Koordinatenmessung eignet sich zur Erkennung von Strukturproblemen, die durch die Mittelwertbildung über die gesamte Oberfläche leicht verdeckt werden. Eine Neigung des freien Endes nach oben deutet darauf hin, dass die Verformung eine Richtung und räumliche Verteilung aufweist, wodurch sich die Kontaktfolge oder die Achse der Hülse verändern kann. Bei Zahnbögen oder langen chirurgische Schablonen können selbst geringfügige Abweichungen am Ende, die nur eine kleine Fläche betreffen, Aufschluss darüber geben, ob es beim Positionieren zu Wackeln kommt."
+          },
+          {
+            "type": "p",
+            "text": "Die zweiwöchige Lagerungsbeobachtung von in diesem Experiment zeigte hauptsächlich geringfügige zusätzliche Veränderungen, die von den anfänglichen Abweichungen während des Druckvorgangs zu unterscheiden sind. Ein umfassenderes Versuchsdesign würde den Messstandard festlegen, dieselben Indikatoren zu verschiedenen Zeitpunkten nach der Verarbeitung erfassen und die Umgebungsbedingungen dokumentieren. Sollten die Veränderungen über die Zeit bestehen bleiben, sind weitere Beobachtungen erforderlich, um festzustellen, wann sie sich stabilisieren. Bestehen sie von Anfang an, sollte der Optimierung der Druckausrichtung, der Stützstruktur und der Nachhärtung Priorität eingeräumt werden."
+          },
+          {
+            "type": "p",
+            "text": "2025 SG01 Harzstudie: Vergleich dreier LCD-Druckgeräte und Beobachtung der Abmessungen nach dem Drucken, einmonatiger Lagerung, Sterilisation und erneuter Lagerung. Sowohl die Ausrüstung als auch die Verarbeitungsschritte beeinflussen die Ergebnisse; selbst bei gleichem Materialnamen können unterschiedliche Eigenschaften des Endprodukts auftreten. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "Die Tatsache, dass dasselbe Harz auf verschiedenen Geräten zu unterschiedlichen Endprodukten führte, verdeutlicht, dass Belichtung, Lichtfeld, Trägermaterial und Nachbearbeitung gemeinsam den tatsächlichen Zustand bestimmen. Ein Vergleich der Geräte allein anhand der nominellen Pixelgröße oder Schichtdicke lässt den Polymerisationsgrad und die Eigenspannungen leicht außer Acht. Die Einbeziehung eines Monats Lagerung und Sterilisation in dasselbe Experiment ermöglicht die kontinuierliche Beobachtung von Geräteunterschieden während des gesamten Lieferprozesses."
+          },
+          {
+            "type": "p",
+            "text": "Für die Produktentwicklung ist die Kombination aus Ausrüstung, Materialien und Prozessen entscheidend, nicht die willkürliche Verwendung eines Harznamens. Ergebnisse von Proben mit unterschiedlichen Geometrien sollten zudem funktionsbezogen interpretiert werden: Große Spannweiten, Bohrungsdurchmesser und dünne Wände können unterschiedliche Empfindlichkeiten aufweisen. Die Validierung kann durch Auswahl der ungünstigsten Geometrie als repräsentatives Beispiel und anschließende Bestätigung dieser Repräsentativität mithilfe einer realen chirurgische Schablone erfolgen. Dadurch wird der Aufwand reduziert, das gesamte Experiment für jeden Fall zu wiederholen."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Klinische Positionierung und Fehlerbudget"
+          },
+          {
+            "type": "p",
+            "text": "Eine prospektive Beobachtung bei Teilbezahnten untersuchte Fehler der statisch computergeführten Implantation klinisch. Schrittweise Messungen helfen, Registrierungs- und Sitzfehler zu trennen. Region, Lückenspanne und Abstützung kennzeichnen das Fallkollektiv. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Bei abweichenden Befunden am Eintritt und Apex sind Winkel und Tiefe zu prüfen."
+          },
+          {
+            "type": "p",
+            "text": "Eine prospektive Beobachtungsstudie aus dem Jahr 2024 analysierte 25 Implantate. Dabei wurde eine durchschnittliche Abweichung am Eintrittspunkt von ca. 0,71 mm und eine Winkelabweichung von ca. 3,34 Grad festgestellt. Die Studie verglich schrittweise digitales Design, Fertigung und chirurgische Ergebnisse. Sie kam zu dem Schluss, dass ein erheblicher Anteil der Abweichung auf den chirurgischen Eingriff zurückzuführen war, wobei auch der Lernprozess eine Rolle spielte. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Die Bedeutung dieser Studie liegt in der Wiederherstellung eines kontinuierlichen Prozesses zur Bestimmung der endgültigen Implantationsposition. Eintrittspunkt, Tiefe und Winkel haben jeweils unterschiedliche geometrische Auswirkungen: Eine Verschiebung des Eintrittspunkts führt zu einer Verschiebung des gesamten Implantats; Winkelabweichungen verstärken sich mit zunehmender Länge bis zur Wurzelspitze; und Tiefenabweichungen verändern das Verhältnis zwischen Schulter und Knochenoberfläche. Die Zusammenfassung dieser Größen zu einer einzigen Präzisionsebene verdeckt spezifische Verbesserungsmöglichkeiten."
+          },
+          {
+            "type": "p",
+            "text": "Auch bei begrenzten zahnlosen Bereichen mit relativ klaren Zahnhaltverhältnissen ist es notwendig, intraorale Scans und Bildfusionen, Kontrollen der Bohrschablonenplatzierung und die Durchführung der einzelnen Bohrschritte zu dokumentieren. Die Studie kann Abweichungsänderungen anhand der kumulierten Fallzahlen des Behandlers darstellen und beobachten, ob unerwünschte Ergebnisse gehäuft unter denselben Haltverhältnissen auftreten. Sind Fertigungsfehler relativ stabil, die klinische Variabilität jedoch hoch, sollten Qualitätsverbesserungen vorrangig die tatsächlichen Behandlungsabläufe abdecken."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Fehlerbilder in die Konstruktion zurückführen"
+          },
+          {
+            "type": "p",
+            "text": "Entspricht die unbelastete Schablone dem CAD-Modell und kippt erst unter distaler Last, sollten Abstützung und Spannweite variiert werden. Bei Abweichung unmittelbar nach der Sterilisation sind Aufbereitungsverformung und Messreferenz zu trennen. Fehlerdaten geben so Hinweise auf einen konkreten Prozessschritt. [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Die geänderte Größe unter denselben Referenzbedingungen erneut prüfen."
+          }
+        ]
+      },
+      {
+        "title": "Vergleich der Befunde",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Modellversuche isolieren Konstruktionsmechanismen bei konstanter Anatomie. Klinische Daten berücksichtigen Weichgewebe, Zugang und individuelle Unterschiede. Ein Vergleich braucht Koordinatendefinition, Messmethode und Abstützungsbedingungen. Mittelwerte und maximale Abweichungen in klinisch relevanten Richtungen sind getrennt zu betrachten. [R02] [R03]"
+          }
+        ]
+      },
+      {
+        "title": "Industrielle Ansätze und dokumentierte Produkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Formlabs verknüpft Surgical Guide Resin mit festgelegten Druck-, Reinigungs-, Härtungs- und Dampfprozessen. Planungsanbieter bearbeiten vorgeschaltet die Bild- und Scanregistrierung, Hülsenbibliotheken und Designausgabe. Im Produktvergleich sind Prozess und Indikation der jeweiligen Version zuzuordnen. [R09]"
+          },
+          {
+            "type": "p",
+            "text": "DentiqGuide von 3D Industrial Imaging bietet Werkzeuge für Zahnimplantatplanung und Schablonendesign. Das offizielle Handbuch beschreibt unter anderem die Erzeugung und Kennzeichnung von Schablonenbereichen. Die Software überführt die digitale Planung in herstellbare Geometrie und bildet damit den Designschritt der untersuchten Fehlerkette.[R15]"
+          },
+          {
+            "type": "p",
+            "text": "Die Unternehmensentwicklung von zielt darauf ab, Bildgebung, intraorales Scannen, Implantatplanung und Fertigungsdokumentation zu verknüpfen. Klinische Studien zeigen, dass diese Schritte zusammen mit unterstützenden und intraoperativen Verfahren noch validiert werden müssen; der Wert des Produkts spiegelt sich letztendlich in der Zuverlässigkeit des gesamten Arbeitsablaufs wider."
+          },
+          {
+            "type": "p",
+            "text": "Formlabs bietet Herstellungsrichtlinien und Anwendungshinweise für chirurgische Schablonenkunststoffe, einschließlich Kompatibilität mit Druckgeräten, Reinigung, Nachhärtung und anwendbaren Sterilisationsverfahren. Die Anweisungen für Osteotomieführungen von Materialise sind in regionsspezifischen Versionen erhältlich. [R09] [R16]"
+          },
+          {
+            "type": "p",
+            "text": "Der Wert der Produkte eines Unternehmens liegt in der Organisation von Verarbeitungsbedingungen in ausführbare Prozesse, die es verschiedenen Produktionsstandorten ermöglichen, den erwarteten Endzustand zu erreichen. Sowohl die Krankenhausproduktion als auch die zentrale Auslieferung erfordern die Verwaltung von Verarbeitungsprotokollen und Lagerzyklen."
+          }
+        ]
+      },
+      {
+        "title": "Patentmechanismen und Prüfung für den Einsatz",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN216136075U verbindet ein gescanntes Zahnmodell mit der Schablonenfertigung. CN216365343U adressiert begrenzten okklusalen Raum. Bei identischem Implantatplan lassen sich Instrumentenzugang, Achsabweichung unter Last und wiederholter Sitz bei üblicher und platzsparender Bauform vergleichen. [R07] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick auf Forschung und Anwendung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Vorrang hat die Rückverfolgbarkeit vom Plan über das sterile Endprodukt bis zur intraoperativen Lage. Relevante Größen sind lokale Spalten, Sitzstreuung, Instrumentenfreiraum und klinische Winkelausreißer. Eine multizentrische Erfassung nach Falltyp und Workflow-Version hilft, standardisierbare Fälle und solche mit individueller Abstützung zu identifizieren. [R02] [R04] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Assessment of Deviations of Implants Installed with Prototyped Surgical Guide and Conventional Guide: In Vitro Study.",
+        "url": "https://doi.org/10.1055/s-0040-1718791",
+        "year": "2022",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R01"
+      },
+      {
+        "title": "Accuracy of computer-guided implant surgery in partially edentulous patients: a prospective observational study.",
+        "url": "https://doi.org/10.1186/s40729-024-00552-z",
+        "year": "2024",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R02"
+      },
+      {
+        "title": "Accuracy of the novel digital non-cross-arch surgical guides with integration of tooth undercut retention and screw-bone support for implant placement in mandibular free-end.",
+        "url": "https://doi.org/10.1186/s12903-024-04329-z",
+        "year": "2024",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R03"
+      },
+      {
+        "title": "Effects of autoclave sterilization on the precision of 3D-printed surgical guides in implant dentistry",
+        "url": "https://doi.org/10.1007/s10266-026-01499-w",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R04"
+      },
+      {
+        "title": "Accuracy of Three-Dimensional Computer-Aided Implant Surgical Guides: A Prospective In Vivo Study of the Impact of Template Design.",
+        "url": "https://doi.org/10.3390/dj13040150",
+        "year": "2025",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R05"
+      },
+      {
+        "title": "EVALUATING THE ACCURACY OF TOOTH-SUPPORTED VS MUCOSA-SUPPORTED 3D-PRINTED SURGICAL GUIDE IN DENTAL IMPLANT PLACEMENT (CROSS-SECTIONAL STUDY)",
+        "url": "https://doi.org/10.7126/cumudj.694621",
+        "year": "2020",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R06"
+      },
+      {
+        "title": "Dental implantation guide plate manufactured based on 3D printing and tooth three-dimensional model laser scanning device",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN216136075U",
+        "year": "2022",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R07"
+      },
+      {
+        "title": "3D printing planting guide plate suitable for insufficient occlusion space",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN216365343U",
+        "year": "2022",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R08"
+      },
+      {
+        "title": "Surgical Guide Resin",
+        "url": "https://dental.formlabs.com/global/products/surgical-guide-resin/",
+        "year": "",
+        "kind": "Unternehmensmitteilung",
+        "source": "Unternehmensmitteilung",
+        "id": "R09"
+      },
+      {
+        "id": "R10",
+        "title": "Accuracy of Guided Implant Surgery in the Edentulous Jaw Using Desktop 3D-Printed Mucosal Supported Guides",
+        "year": "2021",
+        "source": "Journal of Clinical Medicine",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.3390/jcm10030391"
+      },
+      {
+        "id": "R11",
+        "title": "Effects of Disinfection and Steam Sterilization on the Mechanical Properties of 3D SLA- and DLP-Printed Surgical Guides for Orthodontic Implant Placement",
+        "year": "2022",
+        "source": "Polymers",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.3390/polym14102107"
+      },
+      {
+        "id": "R12",
+        "title": "The Effect of Sterilization on the Accuracy and Fit of 3D-Printed Surgical Guides",
+        "year": "2023",
+        "source": "Materials",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.3390/ma16155305"
+      },
+      {
+        "id": "R13",
+        "title": "Achieving automated and high-precision in situ analysis of the dimensional accuracy and dynamic deformation of 3D-printed surgical templates: an in vitro study",
+        "year": "2024",
+        "source": "International Journal of Implant Dentistry",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1186/s40729-024-00561-y"
+      },
+      {
+        "id": "R14",
+        "title": "The Effects of Light Crystal Display 3D Printers, Storage Time and Steam Sterilization on the Dimensional Stability of a Photopolymer Resin for Surgical Guides: An In Vitro Study",
+        "year": "2025",
+        "source": "Materials",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.3390/ma18030474"
+      },
+      {
+        "id": "R15",
+        "title": "DentiqGuide version 1.3.04 user manual",
+        "year": "2026访问",
+        "source": "3D Industrial Imaging",
+        "kind": "企业产品资料",
+        "url": "https://www.3dii.net/wp-content/uploads/2021/01/DentiqGuide_Manual_Eng.pdf"
+      },
+      {
+        "id": "R16",
+        "title": "Osteotomy Guides and Models: Instructions for Use",
+        "year": "2026访问",
+        "source": "Materialise",
+        "kind": "企业产品资料",
+        "url": "https://www.materialise.com/en/documentation/instructions-for-use/osteotomy-guides-models"
+      }
+    ]
+  }
+}

@@ -327,6 +327,9 @@ def academic_question_page(report: dict, question: dict | None, root: Path, publ
     code = language()
     ui = UI[code]
     r = localize_report(report, code)
+    if question and question.get('direction_id'):
+        from dashboard.direction_reports import localized_direction_title
+        r = {**r, 'direction': localized_direction_title(root, question['direction_id'], code)}
     refs = {ref['id']: ref for ref in r['references']}
     figures = {f['id']: f for f in r['figures']}
     from dashboard.feedback_views import report_feedback

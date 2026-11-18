@@ -1,0 +1,2018 @@
+{
+  "zh": {
+    "id": "H19",
+    "p": "P2",
+    "title": "活动义齿适合性、流程与临床体验",
+    "subtitle": "将组织面、摘戴、维护和体验作为连续结果",
+    "thesis": "从数字工作流获取的组织面、咬合关系和实际戴入表现需要连续验证。全口义齿、种植覆盖义齿和局部义齿的固位机制不同，比较应按类型分层。 [R01] [R02] [R05]",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络 · 活动义齿适合性、流程与临床体验",
+      "summary": "取模后分支到基托适合性与支架或固位。成品咬合与患者体验连接两条路线，维修事件反馈到组织面和连接区。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2024",
+          "question": "把临床基线保留到复诊。",
+          "title": "记录颌关系与组织",
+          "evidence": "即刻局部义齿病例说明预先设计与交付可进入同一数字流程。组织变化和拔牙后调整是即刻义齿与常规全口义齿不同的使用条件。",
+          "refs": [
+            "R02"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2026",
+          "question": "区分负载区、边缘区及连接件周围。",
+          "title": "组织面的适合性",
+          "evidence": "一年随机试验比较了铣削与打印种植辅助下颌覆盖义齿，同时评价基托适合性和种植体周软组织。适合性应按部位比较，再和组织结果建立联系。",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2020–2025",
+          "question": "让试验对照符合实际固位机制。",
+          "title": "结构与摘戴",
+          "evidence": "局部义齿可以使用钴铬支架，固位与变形受卡环位置、梁跨度、支架加工和就位道影响。下颌无牙颌研究可另行比较黏膜支持的固位力。",
+          "refs": [
+            "R05",
+            "R06"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2025",
+          "question": "同时测量基托与牙列。",
+          "title": "成品咬合与牙位",
+          "evidence": "分体义齿的粘接和一体制造的成形误差影响牙位。数字全口义齿专利把成形精度纳入目标，可用牙位与组织面分区扫描、咬合调整量比较。",
+          "refs": [
+            "R07",
+            "R11"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025",
+          "question": "并列记录患者稳定感、压痛和摘戴难度。",
+          "title": "固位与患者感受",
+          "evidence": "20名全口无牙患者的两组研究中，打印义齿表现出优于金属增强传统下颌基托的测量固位，一月和三月随访均需结合病例分组阅读。病例系列还展示了残余牙槽嵴条件。",
+          "refs": [
+            "R04",
+            "R05"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2026",
+          "question": "使用事件应能回到模块与批次。",
+          "title": "维修反馈至设计",
+          "evidence": "病例随访可区分调磨后继续使用、重衬、断裂修复和停用。若事件集中在基托薄区、连接区或局部压痛点，应回看相应制造和组织面记录。",
+          "refs": [
+            "R03",
+            "R11"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "组织面的适合性",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "结构与摘戴",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "成品咬合与牙位",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "成品咬合与牙位",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "固位与患者感受",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "维修反馈至设计",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "用压痛与调整反馈组织面",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究范围与目标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "从临床取模到结构承载、牙位装配、交付及复诊，将重制、压力点、固位和患者报告放到同一成品历程。"
+          }
+        ]
+      },
+      {
+        "title": "学术研究脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 记录颌关系与组织"
+          },
+          {
+            "type": "p",
+            "text": "即刻局部义齿病例说明预先设计与交付可进入同一数字流程。组织变化和拔牙后调整是即刻义齿与常规全口义齿不同的使用条件。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "把临床基线保留到复诊。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 组织面的适合性"
+          },
+          {
+            "type": "p",
+            "text": "一年随机试验比较了铣削与打印种植辅助下颌覆盖义齿，同时评价基托适合性和种植体周软组织。适合性应按部位比较，再和组织结果建立联系。 [R01]"
+          },
+          {
+            "type": "p",
+            "text": "区分负载区、边缘区及连接件周围。"
+          },
+          {
+            "type": "p",
+            "text": "2024年研究比较两种铣削和五种打印系统，每组制作10件上颌基托，在37摄氏度人工唾液中保存七天后扫描。所测铣削组组织面真实度和精密度较好，打印系统之间存在不一致。[R14]"
+          },
+          {
+            "type": "p",
+            "text": "同一研究内比较多个系统的意义，在于减少不同病例设计与测量方法造成的差别。材料和设备仍作为完整组合进入试验，所以结果适合定位某类工作流的偏差特征。基托腭部、边缘及牙槽区域具有不同曲率和厚度，整体均方根值可用于总览，局部误差图更适合解释可能的就位或压迫问题。两种表达相互补充，可以避免某个较大面积区域掩盖关键小区域的偏差。"
+          },
+          {
+            "type": "p",
+            "text": "后续验证可将扫描和保存过程分开设置重复测量，从而估计仪器、配准和环境变化各自的误差。若某系统存在稳定的区域偏差，可以进入参数调整；若批次间波动较大，则需要先追踪材料、支撑和后处理。下一节点将支撑作为干预变量，正是从系统比较走向工艺解释的一步。"
+          },
+          {
+            "type": "p",
+            "text": "2023年在线、2024年卷期研究制作80件上颌基托，比较不减少支撑及腭部、边缘、两处共同减少四种设置，并记录打印时间与树脂消耗。不同设置改变精度和局部偏差，完整支撑对照的总体误差较小。[R15]"
+          },
+          {
+            "type": "p",
+            "text": "支撑在打印中限制位移，也增加去除、修整和耗材。减少某一区域支撑后，局部误差可能改变方向，因此资源优化应与误差分布一起分析。由色彩图推断某个区域更贴近模型，可以提出固位假说；进一步测量实际脱位力和局部压力，才能把几何改变与功能联系起来。这个顺序让制造实验既提供效率信息，也留下明确的临床验证任务。"
+          },
+          {
+            "type": "p",
+            "text": "研究可在打印完成、去支撑和后固化后分别扫描，检验变形是在制造中形成还是在释放约束后出现。支撑方案还应跨不同腭穹隆和牙槽形态重复，以判断一个设置能否覆盖不同病例。这个节点向患者体验和资源核算分支，因为同一项支撑改变可能同时影响修整时间、表面质量和局部适配，三者共同决定是否值得采用。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 结构与摘戴"
+          },
+          {
+            "type": "p",
+            "text": "局部义齿可以使用钴铬支架，固位与变形受卡环位置、梁跨度、支架加工和就位道影响。下颌无牙颌研究可另行比较黏膜支持的固位力。 [R05] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "让试验对照符合实际固位机制。"
+          },
+          {
+            "type": "p",
+            "text": "2022年研究按制造方法、基牙类型和倒凹深度构成八组，每组10个钴铬卡环，测量适配及最多7200次摘戴后的固位变化。SLM与铸造卡环初始固位和适配总体相近，区域与设计因素参与决定表现。[R16]"
+          },
+          {
+            "type": "p",
+            "text": "卡环需要在摘戴时弹性变形，又要在就位后恢复固位，因此单次最大脱位力只描述初始状态。反复摘戴将累积变形和磨损带入，能识别某种设计是否以更快的固位衰减换取较大的初始力。不同倒凹与牙形改变卡环的变形路径，研究应把其几何参数与制造表面状态同时记录，使结果能够回到具体设计而不是工艺标签。"
+          },
+          {
+            "type": "p",
+            "text": "从单个卡环进入完整支架后，多个固位与支撑元件会相互制约。某一卡环贴合较紧可能增加整架就位阻力，也可能改变邻近基牙受力。下一节点因此采用能够感知约束力的模型，把单个部件的适配与整副支架的力学行为连接起来。临床转化还可进一步观察患者摘戴困难、局部疼痛和调整次数，补充台架疲劳的功能含义。"
+          },
+          {
+            "type": "p",
+            "text": "2023年研究制作60件不同设计的钴铬局部义齿支架，在可水平位移的基牙模型上测量约束和脱位力。SLM与铸造的平均水平约束力相近，SLM结果离散较小，所测SLM组达到研究设定的固位目标。[R17]"
+          },
+          {
+            "type": "p",
+            "text": "该方法的推进在于不只问支架表面偏离多少，还观察偏差如何推动基牙。柔性支撑使就位后的形变可以转成力，从而让几何与功能之间出现可测的中间变量。水平约束与脱位力承担不同任务：前者反映就位后额外负载，后者反映取出时的阻力。两者并列有助于识别高固位是否伴随不必要的持续约束。"
+          },
+          {
+            "type": "p",
+            "text": "进一步研究可增加垂直载荷和黏膜支撑，模拟不同缺牙类型的载荷分配，并将同一支架扫描数据与各基牙受力配对。若局部尺寸偏差稳定对应异常力，就能形成针对该区域的制造公差。钛支架的增强杆研究沿着控制制造变形的支线推进，目标是减少进入口内之前已经形成的结构不匹配。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 成品咬合与牙位"
+          },
+          {
+            "type": "p",
+            "text": "分体义齿的粘接和一体制造的成形误差影响牙位。数字全口义齿专利把成形精度纳入目标，可用牙位与组织面分区扫描、咬合调整量比较。 [R07] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "同时测量基托与牙列。"
+          },
+          {
+            "type": "p",
+            "text": "2025年研究在80副义齿中比较不同牙槽和连牙组合，并设置其他制造路线。三维牙位比较发现半传统装盒压制组偏差最低；在相关分体打印组合中，全牙弓连牙配凹槽设计表现较好。[R18]"
+          },
+          {
+            "type": "p",
+            "text": "牙槽在这里同时承担容纳连接剂和限制位移的任务。连接间隙较大，能够给就位留下空间，却也允许牙列偏移；间隙过小，又可能出现局部干涉而使牙列未完全就位。因此，研究的核心不是简单选择凹槽或平槽，而是把间隙、深度、定位面和排出多余连接剂的通道纳入几何约束。全牙弓连牙还可能把局部位移转化为整体变形，需要同时观察前后牙区。"
+          },
+          {
+            "type": "p",
+            "text": "2026年研究将60副体外义齿分成四组，每组15副：两组以模型树脂或牙色临时冠树脂单块打印，另两组分别打印基托和完整或分段牙列后粘接。三维匹配显示单块组全牙弓和各牙区位置偏差较小。[R19]"
+          },
+          {
+            "type": "p",
+            "text": "单块参照的价值是去掉手工装配这个环节，从而帮助定位成品偏差的来源。它也同时改变材料和成形状态，所以后续实验宜在同一设计上控制树脂收缩、支撑位置和固化条件。每个加工节点留存扫描文件，可观察误差是逐步增加还是在后续处理时部分抵消。将六分区数据保留下来，比只报告全牙弓平均值更有机会找到与咬合接触有关的局部异常。"
+          },
+          {
+            "type": "p",
+            "text": "2023年研究采用Stratasys J55及Vero系列材料，将牙色和基托色区域打印为连续单元，比较热循环后的破坏、吸水与几何表现。该实验发现部分承载和形状指标有利，同时观察到较高吸水。[R20]"
+          },
+          {
+            "type": "p",
+            "text": "连续成形减少了后续装配，却仍保留不同功能区域。牙部需要抵抗咬合与磨耗，基托需要适应组织面及整体弯曲，两者在厚度、颜色和局部载荷方面存在不同要求。因而应观察材料过渡区域如何传递应力、环境吸水后是否改变尺寸，以及最终裂纹从哪个区域起始。把几何一致与材料一致同时纳入，才能判断连续制造的收益来自界面减少还是材料体系本身。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 固位与患者感受"
+          },
+          {
+            "type": "p",
+            "text": "20名全口无牙患者的两组研究中，打印义齿表现出优于金属增强传统下颌基托的测量固位，一月和三月随访均需结合病例分组阅读。病例系列还展示了残余牙槽嵴条件。 [R04] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "并列记录患者稳定感、压痛和摘戴难度。"
+          },
+          {
+            "type": "p",
+            "text": "2026年随机交叉研究比较热固化、打印及注射聚酰胺全口义齿的固位与口腔健康相关生活质量。不同时间点上打印与热固化组固位未见显著差异，聚酰胺组与另外两组存在差异。[R21]"
+          },
+          {
+            "type": "p",
+            "text": "同时测量脱位力与患者报告，能够检验主观稳定感是否与机械固位方向一致。两者出现差异时，可以进一步分析边缘活动、疼痛、唾液及患者适应等条件。力的测量本身需要固定脱位方向、加载位置和重复次数，否则试验装置差别可能被误认为义齿性能差别。纵向重复测量则能区分初次交付与适应后的表现。"
+          },
+          {
+            "type": "p",
+            "text": "2024年18人交叉随机试验比较另一套打印与传统全口义齿工作流，报告口腔健康相关生活质量和满意度相当。其研究对象为所用材料、设计与临床步骤共同形成的器械。[R22]"
+          },
+          {
+            "type": "p",
+            "text": "与较早试验放在一起，研究问题转为哪些工作流条件解释体验差别。材料更新、试戴策略、牙位记录及操作者经验都可以作为待检验因素，而不是将发表年份本身当成技术进步的原因。对同一工作流进行多中心重复，或在固定临床步骤下比较制造方式，能够逐步分离这些因素。分项体验与客观固位保留一致定义，有助于不同试验之间形成可比较的结果。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 维修反馈至设计"
+          },
+          {
+            "type": "p",
+            "text": "病例随访可区分调磨后继续使用、重衬、断裂修复和停用。若事件集中在基托薄区、连接区或局部压痛点，应回看相应制造和组织面记录。 [R03] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "使用事件应能回到模块与批次。"
+          },
+          {
+            "type": "p",
+            "text": "2026年前瞻队列随访18名患者36副打印义齿，两年有12人24副完成观察。四副上颌首年断裂，两人之后停用；研究分别报告成功与存活，累计估计为88%和87%。[R23]"
+          },
+          {
+            "type": "p",
+            "text": "对事件作分层，可以保留修补后继续使用的临床价值，同时呈现维护负担。首次断裂、维修、再次事件及停用可组成连续路径；不同路径需要不同资源，并影响患者信心与正常使用时间。上下颌义齿来自同一患者，分析应保留其关联，随访时长与失访则通过适合的时间到事件方法处理。"
+          },
+          {
+            "type": "p",
+            "text": "这一观察将早期随机试验延长为真实使用过程，但进入队列的继续佩戴选择本身也属于结果。未来多中心设计可以在最初交付时纳入所有接受治疗者，持续记录选择改变与干预。这样能够判断材料、几何和临床操作的变化是否减少事件，并为下一轮比较确定合适观察期与主要终点。"
+          },
+          {
+            "type": "p",
+            "text": "2025年60人回顾研究比较传统、铣削与打印全口义齿，六个月功能结果总体相近，数字组椅旁时间及实验室成本较低。[R24] 研究同时记录临床结果与治疗相关投入。"
+          },
+          {
+            "type": "p",
+            "text": "回顾资料能够反映成熟工作流，却需要解释病例选择、人员经验和成本口径。时间宜分为制作前记录、试戴、交付与后续调整；费用则保留设备、材料和人工组成，使其他机构能代入自身条件。患者交通与停用时间也可以单列，呈现临床相近时哪一方实际受益。"
+          }
+        ]
+      },
+      {
+        "title": "研究之间如何比较",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "固位提升的比较与交叉试验间相近的患者评价可以并存。应明确上下颌、对照树脂、支架、试戴流程与评价时间，同时跟踪功能和工作量。 [R01] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "企业路线与公开产品",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "DeltaMed、Vertex-Dental 与 Ivoclar 的企业路线覆盖分体配套、喷射式基托与牙材料和全口基托。Carbon 的 FP3D 面向柔性局部义齿。选择时，应将器械范围、维护方式和交付流程写入同一表。 [R10] [R11] [R12] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Stratasys的路线以多色单体义齿为中心：2023年2月发布TrueDent及J5 DentaJet配套方案；2025年1月TrueDent-D以CEⅠ类进入欧洲；2026年3月17日TrueDent树脂获得CEⅡa类认证，扩展相应使用范围。欧洲市场进入与认证类别升级，构成产品区域发展的两个阶段。[R25][R26][R27]"
+          },
+          {
+            "type": "p",
+            "text": "3D Systems的NextDent路线以Jet Base、Jet Teeth和NextDent 300组成多材料喷射系统。企业于2025年7月29日宣布美国全面商业发布；2026年4月28日宣布该组合取得欧盟MDRⅡa类认证，并规定5月4日起欧洲供应。这些节点记录的是具体产品组合的商业与认证进展。[R28][R29]"
+          },
+          {
+            "type": "p",
+            "text": "Formlabs保留分体制造与装配。现行指南围绕Denture Base V2及Premium Teeth说明连接，并包含表面修补、断裂修补、换牙和软硬重衬。[R30] 这条路线同时覆盖初次制造与后续局部维护。其可分析的价值在于材料与操作选择是否足够明确，以及不同维护任务能否在现有实验室能力内稳定完成。"
+          }
+        ]
+      },
+      {
+        "title": "专利机制与转化验证",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN110833462A将钴铬支架与可摘义齿联系，CN109223217A连接局部义齿的数字设计与制造，CN106037967A面向即刻交付。可以用跨弓位置重现、摘戴力和拔牙后改动记录检验三类机制。 [R06] [R08] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "北京大学口腔CN109223217A描述先设计局部义齿及打印预备导板，在模型上按导板预备牙体，重扫预备后的模型，再重新设计和制造义齿，最终将导板与义齿共同交付临床使用。它与卡环适配研究的交点，是计划模型、预备后模型和最终临床牙面之间的几何对应。BEGO金属支架工作流可作为制造情境；应检验模型上的预备设计能否转移到临床，并分别记录就位、约束和调磨。[R16][R17][R31][R08]"
+          },
+          {
+            "type": "p",
+            "text": "SIRONA的CN111372536A描述将内部增强结构从数字体积扣除、先打印下部、放置增强件再打印上部。该案保留内部增强件；R05研究的是钛支架制造阶段的临时增强杆。二者共享增强位置与变形分布的问题，但增强件的保留状态和材料不同。Carbon及Formlabs基托情境可用于提出组织面真实度要求：增强后应检查局部翘曲、残余应力与组织面接触，不能仅以弯曲强度认定更舒适。[R15][R32][R33][R30][R34]"
+          },
+          {
+            "type": "p",
+            "text": "GUANGDONG JISHU ZENGCAICN116350371A描述计算各牙咬合区、调整数字义齿咬合面，并将部分牙和基托一体打印。它与固位—生活质量交叉试验及临床成本比较共同提出完整流程问题：数字接触分布是否减少调磨，同时保持固位、发音和咀嚼。Formlabs工作流为分体装配提供参照，比较时需把装配方式与咬合改版分开，以免将工艺差异误解释为患者收益。[R24][R21][R22][R30][R35]"
+          }
+        ]
+      },
+      {
+        "title": "后续研究与应用走向",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "数字流程通过减少返工和组织面改动形成收益的可能性，适合用每副义齿的调整时间、维护频率、重制与主观固位共同检验。 [R05] [R13]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Peri-implant soft tissue health and denture base adaptation of CAD/CAM milled versus 3D-printed implant-assisted mandibular overdentures: one-year randomized clinical trial",
+        "url": "https://doi.org/10.1038/s41598-026-40422-9",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R01"
+      },
+      {
+        "title": "Application of the full digital workflow in immediate removable partial denture: an innovative case report",
+        "url": "https://doi.org/10.37897/rjs.2024.4.8",
+        "year": "2024",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R02"
+      },
+      {
+        "title": "Conventional vs. 3D-printed complete dentures in an irradiated edentulous patient: a case report with clinical comparison",
+        "url": "https://doi.org/10.15386/mpr-2973",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R03"
+      },
+      {
+        "title": "3D-Printed Complete Dentures for Patients With Limited Mandibular Residual Ridges: A Case Report.",
+        "url": "https://doi.org/10.1155/crid/8849925",
+        "year": "2025",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R04"
+      },
+      {
+        "title": "Retention of 3D-printed versus conventional metal-reinforced acrylic mandibular denture bases: a comparative study",
+        "url": "https://doi.org/10.1186/s12903-025-07188-4",
+        "year": "2025",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R05"
+      },
+      {
+        "title": "Cobalt-chromium stent removable complete denture and processing method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN110833462A",
+        "year": "2020",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R06"
+      },
+      {
+        "title": "High-precision digital complete denture 3D printing method",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119925017A",
+        "year": "2025",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R07"
+      },
+      {
+        "title": "High-precision rapid manufacturing method for removable partial denture",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN109223217A",
+        "year": "2019",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R08"
+      },
+      {
+        "title": "Method for producing immediate complete or half denture based on 3D printing technique",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN106037967A",
+        "year": "2016",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R09"
+      },
+      {
+        "title": "FDA 510(k) K212541 · 3Delta Denture System",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf21/K212541.pdf",
+        "year": "",
+        "kind": "企业公告",
+        "source": "企业公告",
+        "id": "R10"
+      },
+      {
+        "title": "FDA 510(k) K241071 · NextDent Jet Denture Base and NextDent Jet Denture Teeth",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K241071",
+        "year": "",
+        "kind": "企业公告",
+        "source": "企业公告",
+        "id": "R11"
+      },
+      {
+        "title": "Carbon Announces Commercial Availability of FP3D Resin",
+        "url": "https://www.carbon3d.com/news/press-releases/carbon-announces-commercial-availability-of-fp3d-resin-enabling-dental-labs-to-produce-3d-printed-flexible-partial-dentures",
+        "year": "",
+        "kind": "企业公告",
+        "source": "企业公告",
+        "id": "R12"
+      },
+      {
+        "title": "Print it. Feel it. Ivoclar introduces Ivotion Base Print",
+        "url": "https://www.ivoclar.com/en_nz/media-release/2025/print-it-feel-it-ivoclar-introduces-ivotion-base-print",
+        "year": "",
+        "kind": "企业公告",
+        "source": "企业公告",
+        "id": "R13"
+      },
+      {
+        "title": "Intaglio surface of CNC milled versus 3D printed maxillary complete denture bases – An in vitro investigation of the accuracy of seven systems",
+        "year": "2024",
+        "source": "Journal of Dentistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39393605/",
+        "kind": "原始研究",
+        "id": "R14"
+      },
+      {
+        "title": "Effect of support structures on the trueness and precision of 3D printing dentures: An in vitro study",
+        "year": "2023在线／2024卷期",
+        "source": "Journal of Prosthodontic Research",
+        "url": "https://www.jstage.jst.go.jp/article/jpr/68/1/68_JPR_D_22_00266/_article",
+        "kind": "原始研究",
+        "id": "R15"
+      },
+      {
+        "title": "Retentive force and fitness accuracy of cobalt-chrome alloy clasps for removable partial denture fabricated with SLM technique",
+        "year": "2022",
+        "source": "Journal of Prosthodontic Research",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34615841/",
+        "kind": "原始研究",
+        "id": "R16"
+      },
+      {
+        "title": "Fit and Retention of Cobalt–Chromium Removable Partial Denture Frameworks Fabricated with Selective Laser Melting",
+        "year": "2023",
+        "source": "Journal of Functional Biomaterials",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10456016/",
+        "kind": "原始研究",
+        "id": "R17"
+      },
+      {
+        "id": "R18",
+        "title": "Evaluation of the occlusal trueness among 3-Dimensionally printed CAD-CAM complete dentures with different socket designs and teeth splinting assemblies",
+        "year": "2025",
+        "source": "BMC Oral Health",
+        "kind": "原始研究",
+        "url": "https://link.springer.com/article/10.1186/s12903-025-05894-7"
+      },
+      {
+        "id": "R19",
+        "title": "Accuracy of teeth positioning in bonded three-dimensionally printed complete dentures: an in vitro study",
+        "year": "2026",
+        "source": "BMC Oral Health",
+        "kind": "原始研究",
+        "url": "https://link.springer.com/article/10.1186/s12903-026-09125-5"
+      },
+      {
+        "id": "R20",
+        "title": "Physical Properties of Additively Manufactured Tooth-Colored Material Attached to Denture Base-Colored Material in a Printed Monolithic Unit",
+        "year": "2023",
+        "source": "Polymers",
+        "kind": "原始研究",
+        "url": "https://www.mdpi.com/2073-4360/15/9/2134"
+      },
+      {
+        "title": "Evaluation of Retention and Oral Health-Related Quality of Life for Completely Edentulous Subjects Wearing Heat-Cured, 3D-Printed, and Injection-Molded Polyamide Complete Dentures: Randomized Crossover Clinical Trial",
+        "year": "2026",
+        "source": "Dentistry Journal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12939638/",
+        "kind": "原始研究",
+        "id": "R21"
+      },
+      {
+        "title": "Oral health-related quality of life and patient satisfaction using three-dimensional printed dentures: A crossover randomized controlled trial",
+        "year": "2024",
+        "source": "Journal of Dentistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39265652/",
+        "kind": "原始研究",
+        "id": "R22"
+      },
+      {
+        "title": "Two-year clinical outcomes of three-dimensional printed complete dentures: A prospective multicenter study of survival and patient-reported outcomes",
+        "year": "2026",
+        "source": "Journal of Dentistry",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42869411/",
+        "id": "R23"
+      },
+      {
+        "title": "Digital vs. conventional removable complete dentures: A retrospective study on clinical effectiveness and cost-efficiency in edentulous patients",
+        "year": "2025",
+        "source": "Journal of Dentistry",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0300571224006742",
+        "kind": "原始研究",
+        "id": "R24"
+      },
+      {
+        "id": "R25",
+        "title": "Stratasys发布TrueDent单体多色打印义齿方案",
+        "year": "2023",
+        "source": "Stratasys",
+        "kind": "企业公告",
+        "url": "https://investors.stratasys.com/news-events/press-releases/detail/802/stratasys-introduces-first-monolithic-multi-color"
+      },
+      {
+        "id": "R26",
+        "title": "Stratasys宣布TrueDent-D进入欧洲市场",
+        "year": "2025",
+        "source": "Stratasys",
+        "kind": "企业公告",
+        "url": "https://investors.stratasys.com/news-events/press-releases/detail/927/stratasys-launches-truedent-in-europe-bringing-the"
+      },
+      {
+        "id": "R27",
+        "title": "TrueDent树脂获得欧洲CEⅡa类认证",
+        "year": "2026",
+        "source": "Stratasys",
+        "kind": "企业公告",
+        "url": "https://investors.stratasys.com/news-events/press-releases/detail/977/stratasys-truedent-becomes-the-first-high-esthetic"
+      },
+      {
+        "id": "R28",
+        "title": "NextDent喷射式义齿系统在美国全面商业发布",
+        "year": "2025",
+        "source": "3D Systems",
+        "kind": "企业公告",
+        "url": "https://investor.3dsystems.com/news/news-details/2025/3D-Systems-Announces-Major-Milestone-in-Digital-Dentistry-with-Full-Commercial-Release-of-New-FDA-cleared-Denture-Solution/default.aspx"
+      },
+      {
+        "id": "R29",
+        "title": "NextDent喷射式义齿组合获得欧盟MDRⅡa类认证并宣布欧洲供应",
+        "year": "2026",
+        "source": "3D Systems",
+        "kind": "企业公告",
+        "url": "https://www.3dsystems.com/press-releases/3d-systems-secures-class-iia-eu-mdr-certification-nextdentr-jetted-denture-solution"
+      },
+      {
+        "id": "R30",
+        "title": "Application Guide: 3D Printing Digital Dentures",
+        "year": "截至2026年10月的现行指南",
+        "source": "Formlabs Dental",
+        "kind": "企业技术资料",
+        "url": "https://dental.formlabs.com/global/indications/digital-dentures/guide/"
+      },
+      {
+        "title": "WIRONIUM RP Complete – einfach digital individuell",
+        "year": "2025",
+        "source": "BEGO",
+        "url": "https://www.bego.com/cad-cam-solutions/materials/cad-cam-alloys/wironium-rp-complete/",
+        "kind": "企业技术资料",
+        "id": "R31"
+      },
+      {
+        "title": "Effect of Reinforcement Bar on Trueness of Printed Titanium Kennedy I Removable Partial Denture Frameworks by Selective Laser Melting",
+        "year": "2025",
+        "source": "International Dental Journal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11976462/",
+        "kind": "原始研究",
+        "id": "R32"
+      },
+      {
+        "title": "Carbon launches DB 4000 denture base resin",
+        "year": "2026",
+        "source": "Carbon",
+        "url": "https://www.carbon3d.com/news/press-releases/carbon-launches-db-4000-a-high-impact-denture-base-resin-delivering-high-work-of-fracture-print-accuracy-and-better-economics-for-dental-labs",
+        "kind": "企业公告",
+        "id": "R33"
+      },
+      {
+        "id": "R34",
+        "title": "METHOD FOR PRODUCING A DENTAL PROSTHESIS PART, AND DENTAL PROSTHESIS PART",
+        "year": "2020",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN111372536A",
+        "source": "Espacenet",
+        "kind": "patent"
+      },
+      {
+        "id": "R35",
+        "title": "Occlusion relation remodeling method and 3D printing method for adsorptive false tooth",
+        "year": "2023",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN116350371A",
+        "source": "Espacenet",
+        "kind": "patent"
+      }
+    ]
+  },
+  "en": {
+    "id": "H19",
+    "p": "P2",
+    "title": "Removable dentures: fit, workflow and clinical experience",
+    "subtitle": "Link tissue fit, removal, maintenance and patient experience",
+    "thesis": "Digital workflows require sequential checks of the fitting surface, occlusion and actual wear. Complete dentures, implant overdentures and partial dentures retain differently and should form separate comparison groups. [R01] [R02] [R05]",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway · Removable dentures: fit, workflow and clinical experience",
+      "summary": "After impression capture, branch into base fit and framework or retention. Occlusion and patient experience connect both branches. Repair events feed back to the fitting surface and joint.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2024",
+          "question": "Keep the clinical baseline for follow-up.",
+          "title": "Record jaws and soft tissue",
+          "evidence": "An immediate partial-denture case linked advance design and delivery in one digital workflow. Tissue change and post-extraction adjustment distinguish the case from routine complete dentures.",
+          "refs": [
+            "R02"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2026",
+          "question": "Separate load-bearing, peripheral and attachment regions.",
+          "title": "Fitting-surface adaptation",
+          "evidence": "A one-year randomized trial compared milled and printed implant-assisted mandibular overdentures, assessing both base adaptation and peri-implant soft tissue. Interpret fit by region and link it to tissue outcomes.",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2020–2025",
+          "question": "Match comparison groups to actual retention mechanisms.",
+          "title": "Structure and insertion or removal",
+          "evidence": "Partial dentures may use cobalt-chromium frameworks, where clasp position, span, manufacturing and path of insertion affect retention and distortion. In edentulous mandibles, a separate comparison targets mucosa-supported retention.",
+          "refs": [
+            "R05",
+            "R06"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2025",
+          "question": "Measure the base and dentition together.",
+          "title": "Finished occlusion and tooth position",
+          "evidence": "Assembly of separate teeth and shape error in one-piece manufacturing both affect tooth position. A digital complete-denture patent targets fabrication accuracy, which can be evaluated using regional scans and occlusal adjustment.",
+          "refs": [
+            "R07",
+            "R11"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025",
+          "question": "Pair retention with perceived stability, soreness and handling.",
+          "title": "Retention and patient experience",
+          "evidence": "In a two-group study of 20 edentulous patients, printed dentures had greater measured retention than conventional metal-reinforced mandibular bases. Interpret the one- and three-month assessments within that comparison. Case reports add context on residual ridge anatomy.",
+          "refs": [
+            "R04",
+            "R05"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2026",
+          "question": "Link service events to components and batches.",
+          "title": "Use repairs to revise design",
+          "evidence": "Follow-up can distinguish wear after adjustment, relining, repair and discontinuation. Clusters at thin base regions, interfaces or sore spots direct attention to corresponding manufacturing and fitting-surface records.",
+          "refs": [
+            "R03",
+            "R11"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Fitting-surface adaptation",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Structure and insertion or removal",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Finished occlusion and tooth position",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Finished occlusion and tooth position",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Retention and patient experience",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Use repairs to revise design",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Feed soreness and adjustment back to the base",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Scope and objectives",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Trace impression, structure, assembly, delivery and review. Remakes, pressure spots, retention and patient reports belong to the same device history."
+          }
+        ]
+      },
+      {
+        "title": "Academic pathway and interpretation",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Record jaws and soft tissue"
+          },
+          {
+            "type": "p",
+            "text": "An immediate partial-denture case linked advance design and delivery in one digital workflow. Tissue change and post-extraction adjustment distinguish the case from routine complete dentures. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Keep the clinical baseline for follow-up."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Fitting-surface adaptation"
+          },
+          {
+            "type": "p",
+            "text": "A one-year randomized trial compared milled and printed implant-assisted mandibular overdentures, assessing both base adaptation and peri-implant soft tissue. Interpret fit by region and link it to tissue outcomes. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Separate load-bearing, peripheral and attachment regions."
+          },
+          {
+            "type": "p",
+            "text": "A 2024 study compared two milling and five printing systems, producing 10 maxillary denture bases per group and scanning them after seven days in artificial saliva at 37°C. The tested milling groups showed better intaglio-surface trueness and precision, while results varied among printing systems. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "The significance of comparing multiple systems within the same study lies in reducing the differences caused by varying case designs and measurement methods. Materials and equipment are still used as a complete assembly in the experiment, so the results are suitable for identifying the bias characteristics of a particular workflow. The palatal, marginal, and alveolar regions of the denture base have different curvatures and thicknesses; the overall root mean square value can be used for overview, while local error maps are better suited for interpreting potential placement or compression problems. These two representations complement each other, preventing a large area from masking the bias in critical small areas."
+          },
+          {
+            "type": "p",
+            "text": "Repeated scanning and storage measurements can be designed separately to estimate contributions from the scanner, registration and environmental changes. Stable regional biases suggest targets for parameter adjustment; large batch variation instead requires tracing materials, supports and post-processing. The next node treats support layout as an intervention, moving from system comparison to process explanation."
+          },
+          {
+            "type": "p",
+            "text": "A study published online in 2023 and in a 2024 journal issue produced 80 maxillary denture bases and compared four support conditions: no reduction, reduction at the palate, reduction at the margins, and reduction at both. Printing time and resin consumption were recorded. Support settings affected accuracy and regional deviations; the fully supported control had a smaller overall error. [R15]"
+          },
+          {
+            "type": "p",
+            "text": "The support restricts displacement during printing and also increases removal, trimming, and material consumption. Reducing the support in a certain area may change the direction of local errors; therefore, resource optimization should be analyzed together with error distribution. Inferring a region's closer fit to the model from the color map can lead to a retention hypothesis; further measurements of actual dislodgement forces and local pressures are needed to link geometric changes to function. This sequence allows manufacturing experiments to provide both efficiency information and a clear clinical validation task."
+          },
+          {
+            "type": "p",
+            "text": "The study can be conducted after printing, unsupporting, and post-curing to examine whether deformation occurs during manufacturing or after constraint release. Support schemes should also be repeated across different palatal vaults and alveolar morphologies to determine if a single setup can cover diverse cases. This stage branches towards patient experience and resource accounting, as the same support change can simultaneously affect finishing time, surface quality, and local fit; all three factors jointly determine its worthiness."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Structure and insertion or removal"
+          },
+          {
+            "type": "p",
+            "text": "Partial dentures may use cobalt-chromium frameworks, where clasp position, span, manufacturing and path of insertion affect retention and distortion. In edentulous mandibles, a separate comparison targets mucosa-supported retention. [R05] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Match comparison groups to actual retention mechanisms."
+          },
+          {
+            "type": "p",
+            "text": "The 2022 study categorized clasps into eight groups based on manufacturing method, abutment tooth type, and undercut depth, with 10 cobalt-chromium clasps in each group. Fitting and retention changes were measured after up to 7200 insertions and removals. Initial retention and fit were generally similar between SLM and cast clasps, with regional and design factors contributing to performance. [R16]"
+          },
+          {
+            "type": "p",
+            "text": "The clasp needs to elastically deform during insertion and removal, and then regain retention after being in place. Therefore, the maximum dislodgement force in a single instance only describes the initial state. Repeated insertion and removal introduce cumulative deformation and wear, which can identify whether a design trades faster retention decay for a larger initial force. Different undercuts and tooth profiles change the deformation path of the clasp. Studies should record both its geometric parameters and the manufacturing surface condition, so that the results can be applied to the specific design rather than the manufacturing label."
+          },
+          {
+            "type": "p",
+            "text": "After a single clasp is inserted into the complete framework, multiple retention and support elements interact and constrain each other. A tighter fit of a clasp may increase the overall placement resistance of the framework and may also alter the force on adjacent abutment teeth. Therefore, the next step employs a constraint-sensing model to connect the fit of individual components with the mechanical behavior of the entire framework. Clinical translation can further observe patient difficulties in insertion and removal, local pain, and the number of adjustments required, supplementing the functional implications of framework fatigue."
+          },
+          {
+            "type": "p",
+            "text": "A 2023 study produced 60 cobalt-chromium removable partial denture frameworks with different designs and measured constraint and dislodgement forces on a model with horizontally movable abutment teeth. Mean horizontal constraint forces were similar for SLM and cast frameworks, but SLM results were less dispersed; the tested SLM groups met the study's retention target. [R17]"
+          },
+          {
+            "type": "p",
+            "text": "The advancement of this method lies in not only asking how much the framework surface deviates, but also observing how the deviation drives the abutment tooth. Flexible support allows deformation after placement to be converted into force, thus creating a measurable intermediate variable between geometry and function. Horizontal constraint and dislodgement force serve different purposes: the former reflects the additional load after placement, while the latter reflects the resistance during removal. Using both side-by-side helps identify whether high retention is accompanied by unnecessary continuous constraint."
+          },
+          {
+            "type": "p",
+            "text": "Further research could increase vertical load and mucosal support, simulate load distribution for different tooth loss types, and pair the same framework scan data with the forces acting on each abutment tooth. If local dimensional deviations stably correspond to abnormal forces, manufacturing tolerances specific to that area can be established. Research on the reinforcing rods of titanium frameworks advances along the branches controlling manufacturing deformation, aiming to reduce structural mismatches that have already formed before entering the oral cavity."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Finished occlusion and tooth position"
+          },
+          {
+            "type": "p",
+            "text": "Assembly of separate teeth and shape error in one-piece manufacturing both affect tooth position. A digital complete-denture patent targets fabrication accuracy, which can be evaluated using regional scans and occlusal adjustment. [R07] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Measure the base and dentition together."
+          },
+          {
+            "type": "p",
+            "text": "A 2025 study compared tooth-socket and linked-tooth arrangements in 80 dentures, alongside other manufacturing routes. Three-dimensional tooth-position analysis found the smallest deviations in a semi-conventional flask-and-press group; among relevant separately printed combinations, a full-arch linked dentition with a grooved socket design performed better. [R18]"
+          },
+          {
+            "type": "p",
+            "text": "Tooth sockets accommodate bonding agent and constrain displacement. Larger clearance permits seating but also tooth movement; too little clearance can cause local interference and incomplete seating. Research should therefore examine clearance, depth, locating surfaces and channels for excess bonding agent rather than simply choose a groove or flat socket. A full-arch linked dentition can also convert local displacement into overall deformation, requiring assessment of anterior and posterior regions together."
+          },
+          {
+            "type": "p",
+            "text": "A 2026 in vitro study divided 60 dentures into four groups of 15. Two were printed as monolithic units using either model resin or tooth-coloured provisional-crown resin; the other two used separately printed bases and complete or segmented tooth arches bonded afterwards. Three-dimensional matching showed smaller full-arch and regional tooth-position deviations in the monolithic groups. [R19]"
+          },
+          {
+            "type": "p",
+            "text": "The value of a single-piece reference lies in eliminating the manual assembly step, thereby helping to pinpoint the source of finished product deviations. It also alters the material and molding state, so subsequent experiments should control resin shrinkage, support positions, and curing conditions within the same design. Retaining scanned files for each processing node allows observation of whether errors gradually increase or are partially offset during subsequent processing. Preserving data from all six zones provides a better chance of identifying localized anomalies related to occlusal contact than simply reporting the overall arch average."
+          },
+          {
+            "type": "p",
+            "text": "The 2023 study used Stratasys J55 and Vero series materials to print the tooth color and baseplate color areas as continuous units, comparing damage, water absorption, and geometric performance after thermal cycling. The experiment found some favorable load-bearing and shape properties, but also observed high water absorption. [R20]"
+          },
+          {
+            "type": "p",
+            "text": "Continuous forming reduces subsequent assembly while still retaining different functional areas. The teeth need to resist occlusion and wear, while the denture base needs to adapt to tissue surfaces and overall curvature; both have different requirements in terms of thickness, color, and localized loads. Therefore, it is necessary to observe how stress is transferred in material transition areas, whether the dimensions change after environmental water absorption, and from which region the final crack originates. Only by incorporating both geometric and material consistency can it be determined whether the benefits of continuous manufacturing come from reduced interfaces or the material system itself."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Retention and patient experience"
+          },
+          {
+            "type": "p",
+            "text": "In a two-group study of 20 edentulous patients, printed dentures had greater measured retention than conventional metal-reinforced mandibular bases. Interpret the one- and three-month assessments within that comparison. Case reports add context on residual ridge anatomy. [R04] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Pair retention with perceived stability, soreness and handling."
+          },
+          {
+            "type": "p",
+            "text": "A randomized crossover study in 2026 compared the retention and oral health-related quality of life of thermocured, printed, and injected polyamide complete dentures. No significant differences in retention were observed in the printed and thermocured groups at different time points, while the polyamide group showed differences compared to the other two groups. [R21]"
+          },
+          {
+            "type": "p",
+            "text": "Simultaneous measurement of dislodgement force and patient reports can verify whether subjective stability aligns with the mechanical retention direction. Discrepancies between the two can be further analyzed based on factors such as marginal movement, pain, saliva production, and patient adaptation. Force measurement itself requires a fixed dislocation direction, loading position, and number of repetitions; otherwise, differences in the testing apparatus may be mistaken for differences in denture performance. Longitudinal repeated measurements can distinguish between initial delivery and post-adaptation performance."
+          },
+          {
+            "type": "p",
+            "text": "A crossover randomized trial of in 2024, involving 18 participants, compared a different workflow for printed and traditional complete dentures, reporting comparable oral health-related quality of life and satisfaction. The study focused on the devices resulting from the materials used, their design, and the clinical procedures employed. [R22]"
+          },
+          {
+            "type": "p",
+            "text": "Compared with earlier trials, shifts the research question to which workflow conditions explain differences in experience. Material updates, trial-and-place strategies, tooth position recording, and operator experience can all be considered as factors to be examined, rather than simply attributing the publication year to technological advancements. Multicenter replication of the same workflow, or comparison of manufacturing methods under fixed clinical procedures, can progressively isolate these factors. Consistent definitions of individual experience and objective retention facilitate comparable results between different trials."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Use repairs to revise design"
+          },
+          {
+            "type": "p",
+            "text": "Follow-up can distinguish wear after adjustment, relining, repair and discontinuation. Clusters at thin base regions, interfaces or sore spots direct attention to corresponding manufacturing and fitting-surface records. [R03] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Link service events to components and batches."
+          },
+          {
+            "type": "p",
+            "text": "A 2026 prospective cohort followed 18 patients with 36 printed dentures; 12 patients with 24 dentures completed two years of observation. Four maxillary dentures fractured during the first year, and two patients subsequently discontinued use. Success and survival were reported separately, with cumulative estimates of 88% and 87%, respectively. [R23]"
+          },
+          {
+            "type": "p",
+            "text": "Stratifies events to preserve the clinical value of continued use after repair while also presenting the maintenance burden. The initial fracture, repair, recurrence, and discontinuation can form a continuous path; different paths require different resources and affect patient confidence and normal usage time. For maxillary and mandibular dentures from the same patient, the analysis should preserve their association, and follow-up duration and loss to follow-up should be handled using an appropriate time-to-event approach."
+          },
+          {
+            "type": "p",
+            "text": "This observation extends the early randomized trial into a real-world usage process, but the continued wear choice within the cohort is itself an outcome. Future multicenter designs could include all recipients at initial delivery, continuously recording choice changes and interventions. This would allow for assessment of whether changes in materials, geometry, and clinical manipulation reduced events, and determine appropriate observation periods and primary endpoints for subsequent comparisons."
+          },
+          {
+            "type": "p",
+            "text": "A retrospective study of 60 participants in 2025 compared traditional, milled, and printed complete dentures. Overall functional outcomes at six months were similar, with the digital group having lower chairside time and laboratory costs. [R24] The study also recorded clinical outcomes and treatment-related inputs."
+          },
+          {
+            "type": "p",
+            "text": "While reviewing the data can reflect established workflows, it's necessary to explain case selection, staff experience, and cost metrics. Timeframes should be divided into pre-production documentation, trial use, delivery, and subsequent adjustments; costs should retain the components of equipment, materials, and labor, allowing other institutions to incorporate their own resources. Patient travel and downtime can also be listed separately, demonstrating which approach actually benefits in clinically similar cases."
+          }
+        ]
+      },
+      {
+        "title": "Comparing the evidence",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A measured retention advantage and similar patient reports in crossover work can coexist. Specify arch, control resin, framework, try-in and evaluation timing, then track function and workload together. [R01] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Industry approaches and documented products",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "DeltaMed, Vertex-Dental and Ivoclar cover component systems, jettable base and teeth, and complete-denture bases. Carbon’s FP3D targets flexible partial dentures. Compare appliance scope, maintenance and delivery in the same decision. [R10] [R11] [R12] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Stratasys' strategy centres on multicolour monolithic dentures. TrueDent and its J5 DentaJet workflow were launched in February 2023; TrueDent-D entered Europe as a CE Class I product in January 2025; and TrueDent resin received CE Class IIa certification on 17 March 2026, expanding the corresponding scope of use. Market entry and the later certification-class change represent distinct stages in European development. [R25][R26][R27]"
+          },
+          {
+            "type": "p",
+            "text": "3D Systems' NextDent roadmap comprises a multi-material jetting system consisting of Jet Base, Jet Teeth, and NextDent 300. The company announced a full commercial launch in the US on July 29, 2025; and on April 28, 2026, announced that the portfolio had obtained EU MDR IIa certification, stipulating that it would be available in Europe from May 4th. These milestones record the commercial and certification progress of the specific product portfolio. [R28][R29]"
+          },
+          {
+            "type": "p",
+            "text": "Formlabs retains separate manufacturing and assembly. Its current guide describes bonding Denture Base V2 and Premium Teeth and includes surface repair, fracture repair, tooth replacement, and soft and hard relining. [R30] This approach covers initial manufacture and subsequent local maintenance. Its value can be assessed through the clarity of material and procedural choices and whether laboratories can perform maintenance tasks consistently."
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and translational testing",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN110833462A couples a cobalt-chromium framework with a removable denture. CN109223217A links partial-denture design and fabrication. CN106037967A addresses immediate delivery. Compare cross-arch reproducibility, insertion and removal force, and changes after extraction. [R06] [R08] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Peking University Stomatology’s CN109223217A describes designing the partial denture and printed preparation guide, preparing teeth on the model with that guide, rescanning the prepared model, redesigning/manufacturing the denture, and delivering the guide with the denture for clinical use. Clasp-fit research connects the planned model, prepared model and eventual clinical tooth surfaces. BEGO supplies a framework context. Test transfer of model-side preparation to clinical surfaces through seating, restraint and adjustment.[R16][R17][R31][R08]"
+          },
+          {
+            "type": "p",
+            "text": "SIRONA’s CN111372536A describes digitally subtracting an internal reinforcement volume, printing the lower part, inserting reinforcement and printing above it. The patent retains internal reinforcement; R05 studies temporary bars during titanium-framework manufacture. Both address location-dependent deformation, with different retention states and materials. Carbon/Formlabs bases provide tissue-surface requirements: reinforcement needs checks for local warping, residual stress and tissue contact; flexural strength alone cannot establish comfort.[R15][R32][R33][R30][R34]"
+          },
+          {
+            "type": "p",
+            "text": "Guangdong Jishu’s CN116350371A describes calculating tooth contact areas, adjusting digital occlusal surfaces and partly printing teeth/base together. Retention/quality-of-life trials and cost research motivate a full-workflow question: can contact design reduce adjustment while retaining retention, speech and chewing? Formlabs provides an assembly context. Separate assembly from occlusal changes to identify the source of patient benefit.[R24][R21][R22][R30][R35]"
+          }
+        ]
+      },
+      {
+        "title": "Research and adoption outlook",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Digital workflows could gain value through reduced rework and fitting-surface corrections. Track chairside adjustment time, maintenance, remakes and perceived retention per denture. [R05] [R13]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Peri-implant soft tissue health and denture base adaptation of CAD/CAM milled versus 3D-printed implant-assisted mandibular overdentures: one-year randomized clinical trial",
+        "url": "https://doi.org/10.1038/s41598-026-40422-9",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R01"
+      },
+      {
+        "title": "Application of the full digital workflow in immediate removable partial denture: an innovative case report",
+        "url": "https://doi.org/10.37897/rjs.2024.4.8",
+        "year": "2024",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R02"
+      },
+      {
+        "title": "Conventional vs. 3D-printed complete dentures in an irradiated edentulous patient: a case report with clinical comparison",
+        "url": "https://doi.org/10.15386/mpr-2973",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R03"
+      },
+      {
+        "title": "3D-Printed Complete Dentures for Patients With Limited Mandibular Residual Ridges: A Case Report.",
+        "url": "https://doi.org/10.1155/crid/8849925",
+        "year": "2025",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R04"
+      },
+      {
+        "title": "Retention of 3D-printed versus conventional metal-reinforced acrylic mandibular denture bases: a comparative study",
+        "url": "https://doi.org/10.1186/s12903-025-07188-4",
+        "year": "2025",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R05"
+      },
+      {
+        "title": "Cobalt-chromium stent removable complete denture and processing method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN110833462A",
+        "year": "2020",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R06"
+      },
+      {
+        "title": "High-precision digital complete denture 3D printing method",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119925017A",
+        "year": "2025",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R07"
+      },
+      {
+        "title": "High-precision rapid manufacturing method for removable partial denture",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN109223217A",
+        "year": "2019",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R08"
+      },
+      {
+        "title": "Method for producing immediate complete or half denture based on 3D printing technique",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN106037967A",
+        "year": "2016",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R09"
+      },
+      {
+        "title": "FDA 510(k) K212541 · 3Delta Denture System",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf21/K212541.pdf",
+        "year": "",
+        "kind": "Company announcement",
+        "source": "Company announcement",
+        "id": "R10"
+      },
+      {
+        "title": "FDA 510(k) K241071 · NextDent Jet Denture Base and NextDent Jet Denture Teeth",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K241071",
+        "year": "",
+        "kind": "Company announcement",
+        "source": "Company announcement",
+        "id": "R11"
+      },
+      {
+        "title": "Carbon Announces Commercial Availability of FP3D Resin",
+        "url": "https://www.carbon3d.com/news/press-releases/carbon-announces-commercial-availability-of-fp3d-resin-enabling-dental-labs-to-produce-3d-printed-flexible-partial-dentures",
+        "year": "",
+        "kind": "Company announcement",
+        "source": "Company announcement",
+        "id": "R12"
+      },
+      {
+        "title": "Print it. Feel it. Ivoclar introduces Ivotion Base Print",
+        "url": "https://www.ivoclar.com/en_nz/media-release/2025/print-it-feel-it-ivoclar-introduces-ivotion-base-print",
+        "year": "",
+        "kind": "Company announcement",
+        "source": "Company announcement",
+        "id": "R13"
+      },
+      {
+        "title": "Intaglio surface of CNC milled versus 3D printed maxillary complete denture bases – An in vitro investigation of the accuracy of seven systems",
+        "year": "2024",
+        "source": "Journal of Dentistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39393605/",
+        "kind": "原始研究",
+        "id": "R14"
+      },
+      {
+        "title": "Effect of support structures on the trueness and precision of 3D printing dentures: An in vitro study",
+        "year": "2023在线／2024卷期",
+        "source": "Journal of Prosthodontic Research",
+        "url": "https://www.jstage.jst.go.jp/article/jpr/68/1/68_JPR_D_22_00266/_article",
+        "kind": "原始研究",
+        "id": "R15"
+      },
+      {
+        "title": "Retentive force and fitness accuracy of cobalt-chrome alloy clasps for removable partial denture fabricated with SLM technique",
+        "year": "2022",
+        "source": "Journal of Prosthodontic Research",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34615841/",
+        "kind": "原始研究",
+        "id": "R16"
+      },
+      {
+        "title": "Fit and Retention of Cobalt–Chromium Removable Partial Denture Frameworks Fabricated with Selective Laser Melting",
+        "year": "2023",
+        "source": "Journal of Functional Biomaterials",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10456016/",
+        "kind": "原始研究",
+        "id": "R17"
+      },
+      {
+        "id": "R18",
+        "title": "Evaluation of the occlusal trueness among 3-Dimensionally printed CAD-CAM complete dentures with different socket designs and teeth splinting assemblies",
+        "year": "2025",
+        "source": "BMC Oral Health",
+        "kind": "原始研究",
+        "url": "https://link.springer.com/article/10.1186/s12903-025-05894-7"
+      },
+      {
+        "id": "R19",
+        "title": "Accuracy of teeth positioning in bonded three-dimensionally printed complete dentures: an in vitro study",
+        "year": "2026",
+        "source": "BMC Oral Health",
+        "kind": "原始研究",
+        "url": "https://link.springer.com/article/10.1186/s12903-026-09125-5"
+      },
+      {
+        "id": "R20",
+        "title": "Physical Properties of Additively Manufactured Tooth-Colored Material Attached to Denture Base-Colored Material in a Printed Monolithic Unit",
+        "year": "2023",
+        "source": "Polymers",
+        "kind": "原始研究",
+        "url": "https://www.mdpi.com/2073-4360/15/9/2134"
+      },
+      {
+        "title": "Evaluation of Retention and Oral Health-Related Quality of Life for Completely Edentulous Subjects Wearing Heat-Cured, 3D-Printed, and Injection-Molded Polyamide Complete Dentures: Randomized Crossover Clinical Trial",
+        "year": "2026",
+        "source": "Dentistry Journal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12939638/",
+        "kind": "原始研究",
+        "id": "R21"
+      },
+      {
+        "title": "Oral health-related quality of life and patient satisfaction using three-dimensional printed dentures: A crossover randomized controlled trial",
+        "year": "2024",
+        "source": "Journal of Dentistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39265652/",
+        "kind": "原始研究",
+        "id": "R22"
+      },
+      {
+        "title": "Two-year clinical outcomes of three-dimensional printed complete dentures: A prospective multicenter study of survival and patient-reported outcomes",
+        "year": "2026",
+        "source": "Journal of Dentistry",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42869411/",
+        "id": "R23"
+      },
+      {
+        "title": "Digital vs. conventional removable complete dentures: A retrospective study on clinical effectiveness and cost-efficiency in edentulous patients",
+        "year": "2025",
+        "source": "Journal of Dentistry",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0300571224006742",
+        "kind": "原始研究",
+        "id": "R24"
+      },
+      {
+        "id": "R25",
+        "title": "Stratasys发布TrueDent单体多色打印义齿方案",
+        "year": "2023",
+        "source": "Stratasys",
+        "kind": "企业公告",
+        "url": "https://investors.stratasys.com/news-events/press-releases/detail/802/stratasys-introduces-first-monolithic-multi-color"
+      },
+      {
+        "id": "R26",
+        "title": "Stratasys宣布TrueDent-D进入欧洲市场",
+        "year": "2025",
+        "source": "Stratasys",
+        "kind": "企业公告",
+        "url": "https://investors.stratasys.com/news-events/press-releases/detail/927/stratasys-launches-truedent-in-europe-bringing-the"
+      },
+      {
+        "id": "R27",
+        "title": "TrueDent树脂获得欧洲CEⅡa类认证",
+        "year": "2026",
+        "source": "Stratasys",
+        "kind": "企业公告",
+        "url": "https://investors.stratasys.com/news-events/press-releases/detail/977/stratasys-truedent-becomes-the-first-high-esthetic"
+      },
+      {
+        "id": "R28",
+        "title": "NextDent喷射式义齿系统在美国全面商业发布",
+        "year": "2025",
+        "source": "3D Systems",
+        "kind": "企业公告",
+        "url": "https://investor.3dsystems.com/news/news-details/2025/3D-Systems-Announces-Major-Milestone-in-Digital-Dentistry-with-Full-Commercial-Release-of-New-FDA-cleared-Denture-Solution/default.aspx"
+      },
+      {
+        "id": "R29",
+        "title": "NextDent喷射式义齿组合获得欧盟MDRⅡa类认证并宣布欧洲供应",
+        "year": "2026",
+        "source": "3D Systems",
+        "kind": "企业公告",
+        "url": "https://www.3dsystems.com/press-releases/3d-systems-secures-class-iia-eu-mdr-certification-nextdentr-jetted-denture-solution"
+      },
+      {
+        "id": "R30",
+        "title": "Application Guide: 3D Printing Digital Dentures",
+        "year": "截至2026年10月的现行指南",
+        "source": "Formlabs Dental",
+        "kind": "企业技术资料",
+        "url": "https://dental.formlabs.com/global/indications/digital-dentures/guide/"
+      },
+      {
+        "title": "WIRONIUM RP Complete – einfach digital individuell",
+        "year": "2025",
+        "source": "BEGO",
+        "url": "https://www.bego.com/cad-cam-solutions/materials/cad-cam-alloys/wironium-rp-complete/",
+        "kind": "企业技术资料",
+        "id": "R31"
+      },
+      {
+        "title": "Effect of Reinforcement Bar on Trueness of Printed Titanium Kennedy I Removable Partial Denture Frameworks by Selective Laser Melting",
+        "year": "2025",
+        "source": "International Dental Journal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11976462/",
+        "kind": "原始研究",
+        "id": "R32"
+      },
+      {
+        "title": "Carbon launches DB 4000 denture base resin",
+        "year": "2026",
+        "source": "Carbon",
+        "url": "https://www.carbon3d.com/news/press-releases/carbon-launches-db-4000-a-high-impact-denture-base-resin-delivering-high-work-of-fracture-print-accuracy-and-better-economics-for-dental-labs",
+        "kind": "企业公告",
+        "id": "R33"
+      },
+      {
+        "id": "R34",
+        "title": "METHOD FOR PRODUCING A DENTAL PROSTHESIS PART, AND DENTAL PROSTHESIS PART",
+        "year": "2020",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN111372536A",
+        "source": "Espacenet",
+        "kind": "patent"
+      },
+      {
+        "id": "R35",
+        "title": "Occlusion relation remodeling method and 3D printing method for adsorptive false tooth",
+        "year": "2023",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN116350371A",
+        "source": "Espacenet",
+        "kind": "patent"
+      }
+    ]
+  },
+  "de": {
+    "id": "H19",
+    "p": "P2",
+    "title": "Herausnehmbarer Zahnersatz: Passung, Arbeitsablauf und klinische Erfahrung",
+    "subtitle": "Gewebeseitige Passung, Handhabung, Pflege und Erfahrung verknüpfen",
+    "thesis": "Digitale Abläufe erfordern Prüfungen von Protheseninnenfläche, Okklusion und tatsächlichem Tragen. Totalprothese, implantatgestützte Deckprothese und Teilprothese werden unterschiedlich gehalten und sollten getrennt verglichen werden. [R01] [R02] [R05]",
+    "questions": [],
+    "graph": {
+      "title": "Forschungsverlauf · Herausnehmbarer Zahnersatz: Passung, Arbeitsablauf und klinische Erfahrung",
+      "summary": "Nach der Abformung folgen getrennte Pfade für Basispassung und Gerüst oder Halt. Okklusion und Trageerfahrung führen beide zusammen. Reparaturereignisse geben Rückmeldung für Innenfläche und Verbund.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2024",
+          "question": "Klinischen Ausgangsbefund für die Nachsorge erhalten.",
+          "title": "Kieferrelation und Gewebe erfassen",
+          "evidence": "Ein Fall mit Immediatteilprothese verband Vorausplanung und Eingliederung digital. Gewebeveränderungen und Anpassung nach Extraktion unterscheiden ihn von routinemäßigen Totalprothesen.",
+          "refs": [
+            "R02"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2026",
+          "question": "Lastzonen, Rand und Bereiche um Halteelemente unterscheiden.",
+          "title": "Passung der Protheseninnenfläche",
+          "evidence": "Eine randomisierte Einjahresstudie verglich gefräste und gedruckte implantatgestützte Unterkieferdeckprothesen anhand von Basispassung und periimplantärem Weichgewebe. Die Passung ist regional auszuwerten und mit Gewebebefunden zu verknüpfen.",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2020–2025",
+          "question": "Vergleichsgruppen an die tatsächliche Haltewirkung anpassen.",
+          "title": "Struktur und Handhabung",
+          "evidence": "Teilprothesen können Kobalt-Chrom-Gerüste nutzen. Klammerlage, Spannweite, Fertigung und Einschubrichtung beeinflussen Halt und Verformung. Im zahnlosen Unterkiefer ist der Halt schleimhautgetragener Prothesen separat zu prüfen.",
+          "refs": [
+            "R05",
+            "R06"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2025",
+          "question": "Basis und Zahnreihe gemeinsam vermessen.",
+          "title": "Okklusion und Zahnposition im Endprodukt",
+          "evidence": "Montage einzelner Zähne und Formfehler bei einteiliger Fertigung beeinflussen die Zahnposition. Ein digitales Totalprothesenpatent adressiert die Fertigungsgenauigkeit, prüfbar mit regionalen Scans und Okklusionskorrektur.",
+          "refs": [
+            "R07",
+            "R11"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025",
+          "question": "Halt mit subjektiver Stabilität, Druckschmerz und Handhabung verbinden.",
+          "title": "Halt und Trageerfahrung",
+          "evidence": "In einer Studie mit zwei Gruppen und 20 Zahnlosen zeigten Druckprothesen höheren gemessenen Halt als konventionelle metallverstärkte Unterkieferbasen. Die Messzeitpunkte nach einem und drei Monaten sind im Rahmen dieses Vergleichs zu lesen. Fallberichte ergänzen Angaben zum Restkamm.",
+          "refs": [
+            "R04",
+            "R05"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2026",
+          "question": "Nutzungsereignisse Bauteilen und Chargen zuordnen.",
+          "title": "Reparaturbefunde für die Konstruktion nutzen",
+          "evidence": "Nachsorge unterscheidet Weitertragen nach Korrektur, Unterfütterung, Reparatur und Absetzen. Häufungen an dünnen Basisstellen, Grenzflächen oder Druckstellen geben Hinweise auf Fertigung und Innenfläche.",
+          "refs": [
+            "R03",
+            "R11"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Passung der Protheseninnenfläche",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Struktur und Handhabung",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Okklusion und Zahnposition im Endprodukt",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Okklusion und Zahnposition im Endprodukt",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Halt und Trageerfahrung",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Reparaturbefunde für die Konstruktion nutzen",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Druckstellen und Korrekturen auf die Basis zurückführen",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Untersuchungsrahmen und Ziele",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Abformung, Struktur, Montage, Übergabe und Nachsorge bilden den Verlauf. Neuanfertigungen, Druckstellen, Halt und Patientenberichte sind derselben Prothese zuzuordnen."
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Einordnung der Einzelschritte",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Kieferrelation und Gewebe erfassen"
+          },
+          {
+            "type": "p",
+            "text": "Ein Fall mit Immediatteilprothese verband Vorausplanung und Eingliederung digital. Gewebeveränderungen und Anpassung nach Extraktion unterscheiden ihn von routinemäßigen Totalprothesen. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Klinischen Ausgangsbefund für die Nachsorge erhalten."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Passung der Protheseninnenfläche"
+          },
+          {
+            "type": "p",
+            "text": "Eine randomisierte Einjahresstudie verglich gefräste und gedruckte implantatgestützte Unterkieferdeckprothesen anhand von Basispassung und periimplantärem Weichgewebe. Die Passung ist regional auszuwerten und mit Gewebebefunden zu verknüpfen. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Lastzonen, Rand und Bereiche um Halteelemente unterscheiden."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie aus dem Jahr 2024 verglich zwei Fräsverfahren und fünf Drucksysteme. Für jede Gruppe wurden zehn Oberkieferbasen hergestellt und nach siebentägiger Lagerung in künstlichem Speichel bei 37 °C gescannt. Die Fräsgruppe zeigte eine realistischere und präzisere Darstellung der Gewebeoberfläche, während zwischen den Drucksystemen Inkonsistenzen auftraten. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "Die Bedeutung des Vergleichs mehrerer Systeme innerhalb derselben Studie liegt in der Reduzierung von Unterschieden, die durch variierende Falldesigns und Messmethoden bedingt sind. Materialien und Geräte werden im Experiment weiterhin als vollständige Einheit verwendet, sodass die Ergebnisse geeignet sind, die systematischen Merkmale eines bestimmten Arbeitsablaufs zu identifizieren. Die palatinalen, marginalen und alveolären Bereiche der Prothesenbasis weisen unterschiedliche Krümmungen und Dicken auf; der Gesamt-RMS-Wert kann für einen Überblick verwendet werden, während lokale Fehlerkarten besser geeignet sind, um potenzielle Platzierungs- oder Kompressionsprobleme zu interpretieren. Diese beiden Darstellungen ergänzen sich und verhindern, dass eine große Fläche die systematische Abweichung in kritischen kleinen Bereichen verdeckt."
+          },
+          {
+            "type": "p",
+            "text": "Die anschließende Validierung mit ermöglicht die Aufteilung der Scan- und Speicherprozesse in wiederholte Messungen, um die durch Geräte-, Registrierungs- und Umgebungsschwankungen verursachten Fehler abzuschätzen. Weist ein System stabile regionale Abweichungen auf, können Parameteranpassungen vorgenommen werden; sind die Schwankungen zwischen den Chargen signifikant, müssen zunächst die Materialien, Träger und die Nachbearbeitung überprüft werden. Der nächste Schritt, bei dem die Träger als Interventionsvariable eingesetzt werden, stellt einen Schritt vom Systemvergleich zur Prozessinterpretation dar."
+          },
+          {
+            "type": "p",
+            "text": "Eine 2023 online und 2024 in einer regulären Ausgabe erschienene Studie fertigte 80 Oberkieferbasen und verglich vollständige Stützen mit einer Reduktion am Gaumen, am Rand oder an beiden Bereichen. Druckzeit und Harzverbrauch wurden erfasst. Die Anordnungen veränderten Genauigkeit und lokale Abweichungen; die Kontrolle mit vollständigen Stützen hatte den kleineren Gesamtfehler.[R15]"
+          },
+          {
+            "type": "p",
+            "text": "Die Stützstruktur begrenzt die Verschiebung während des Druckvorgangs und erhöht gleichzeitig den Aufwand für Abtrag, Beschnitt und Materialverbrauch. Eine Reduzierung der Stützstruktur in einem bestimmten Bereich kann die Richtung lokaler Fehler verändern; daher sollte die Ressourcenoptimierung zusammen mit der Fehlerverteilung analysiert werden. Die Ableitung einer besseren Übereinstimmung eines Bereichs mit dem Modell anhand der Farbskala kann zu einer Hypothese über die Retention führen; weitere Messungen der tatsächlichen Verschiebungskräfte und lokalen Drücke sind erforderlich, um geometrische Änderungen mit der Funktion in Verbindung zu bringen. Diese Vorgehensweise ermöglicht es, dass Fertigungsversuche sowohl Informationen zur Effizienz als auch eine klare klinische Validierungsaufgabe liefern."
+          },
+          {
+            "type": "p",
+            "text": "Die Studie kann nach dem Drucken, Entfernen der Stützstrukturen und der Nachhärtung durchgeführt werden, um zu untersuchen, ob Verformungen während der Herstellung oder nach der Entlastung auftreten. Stützstrukturen sollten zudem an verschiedenen Gaumenwölbungen und Alveolarmorphologien wiederholt werden, um festzustellen, ob ein einzelnes Setup verschiedene Fälle abdecken kann. Diese Phase trägt zur Patientenerfahrung und Ressourceneffizienz bei, da dieselbe Stützstrukturänderung gleichzeitig die Bearbeitungszeit, die Oberflächenqualität und die lokale Passung beeinflussen kann; alle drei Faktoren bestimmen gemeinsam die Wirtschaftlichkeit."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Struktur und Handhabung"
+          },
+          {
+            "type": "p",
+            "text": "Teilprothesen können Kobalt-Chrom-Gerüste nutzen. Klammerlage, Spannweite, Fertigung und Einschubrichtung beeinflussen Halt und Verformung. Im zahnlosen Unterkiefer ist der Halt schleimhautgetragener Prothesen separat zu prüfen. [R05] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Vergleichsgruppen an die tatsächliche Haltewirkung anpassen."
+          },
+          {
+            "type": "p",
+            "text": "Die Studie aus dem Jahr 2022 kategorisierte Klammern anhand des Herstellungsverfahrens, des Pfeilerzahntyps und der Unterschnitttiefe in acht Gruppen mit jeweils zehn Kobalt-Chrom-Klammern. Veränderungen des Sitzes und der Retention wurden nach bis zu 7200 Ein- und Ausgliederungen gemessen. Die anfängliche Retention und der Sitz waren bei SLM- und gegossenen Klammern im Allgemeinen vergleichbar, wobei regionale und konstruktionsbedingte Faktoren die Leistung beeinflussten. [R16]"
+          },
+          {
+            "type": "p",
+            "text": "Die Klammer muss sich beim Einsetzen und Entfernen elastisch verformen und anschließend wieder festen Halt finden. Daher beschreibt die maximale Auslösekraft in einem einzelnen Fall lediglich den Ausgangszustand. Wiederholtes Einsetzen und Entfernen führen zu kumulativer Verformung und Abnutzung. Dadurch lässt sich feststellen, ob ein Design einen schnelleren Haftungsverlust zugunsten einer höheren Anfangskraft in Kauf nimmt. Unterschiedliche Hinterschnitte und Zahnprofile beeinflussen den Verformungsweg der Klammer. Studien sollten sowohl die geometrischen Parameter als auch den Oberflächenzustand der Fertigung erfassen, damit die Ergebnisse auf das jeweilige Design und nicht auf das Fertigungsetikett angewendet werden können."
+          },
+          {
+            "type": "p",
+            "text": "Nach dem Einsetzen einer einzelnen Klammer in das gesamte Gerüst interagieren und beeinflussen sich gegenseitig. Ein zu festerer Sitz der Klammer kann den Gesamtwiderstand des Gerüsts erhöhen und die Krafteinwirkung auf benachbarte Pfeilerzähne verändern. Daher wird im nächsten Schritt ein Modell zur Erfassung von Belastungsgrenzen eingesetzt, um den Sitz einzelner Komponenten mit dem mechanischen Verhalten des gesamten Gerüsts zu verknüpfen. Die klinische Anwendung ermöglicht zudem die Beobachtung von Schwierigkeiten der Patienten beim Einsetzen und Entfernen, lokalen Schmerzen und der Anzahl erforderlicher Nachjustierungen und ergänzt so die funktionellen Auswirkungen von Materialermüdung des Gerüsts."
+          },
+          {
+            "type": "p",
+            "text": "Im Jahr 2023 untersuchte und fertigte das Projekt 60 Kobalt-Chrom-Teilprothesengerüste unterschiedlicher Bauart und maß die Halte- und Dislokationskräfte an horizontal verschiebbaren Pfeilerzahnmodellen. Die durchschnittliche Haltekraft der SLM-Prothesen war vergleichbar mit der von gegossenen Prothesen, und die SLM-Ergebnisse zeigten eine geringere Streuung. Die untersuchte SLM-Gruppe erreichte das im Rahmen der Studie festgelegte Retentionsziel. [R17]"
+          },
+          {
+            "type": "p",
+            "text": "Der Fortschritt dieser Methode liegt darin, nicht nur die Abweichung der Gerüstoberfläche zu messen, sondern auch deren Einfluss auf den Pfeilerzahn zu beobachten. Flexible Stützen ermöglichen es, die Verformung nach dem Einsetzen in Kraft umzuwandeln und so eine messbare Zwischengröße zwischen Geometrie und Funktion zu schaffen. Horizontale Fixierung und Dislokationskraft dienen unterschiedlichen Zwecken: Erstere spiegelt die zusätzliche Belastung nach dem Einsetzen wider, letztere den Widerstand beim Entfernen. Die gleichzeitige Anwendung beider Größen hilft zu erkennen, ob eine hohe Retention mit einer unnötigen, kontinuierlichen Fixierung einhergeht."
+          },
+          {
+            "type": "p",
+            "text": "Weiterführende Untersuchungen an könnten die vertikale Belastbarkeit und die Unterstützung der Mundschleimhaut verbessern, die Lastverteilung bei verschiedenen Zahnverlusttypen simulieren und die Scandaten des Gerüsts mit den auf die einzelnen Pfeilerzähne wirkenden Kräften verknüpfen. Wenn lokale Maßabweichungen stabil mit abnormalen Kräften korrespondieren, lassen sich spezifische Fertigungstoleranzen für diesen Bereich festlegen. Die Forschung an den Verstärkungsstäben von Titangerüsten konzentriert sich auf die Kontrolle der Fertigungsverformung, um bereits vor dem Einsetzen in die Mundhöhle entstandene strukturelle Unstimmigkeiten zu reduzieren."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Okklusion und Zahnposition im Endprodukt"
+          },
+          {
+            "type": "p",
+            "text": "Montage einzelner Zähne und Formfehler bei einteiliger Fertigung beeinflussen die Zahnposition. Ein digitales Totalprothesenpatent adressiert die Fertigungsgenauigkeit, prüfbar mit regionalen Scans und Okklusionskorrektur. [R07] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Basis und Zahnreihe gemeinsam vermessen."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2025 verglich an 80 Zahnprothesen unterschiedliche Zahntaschen- und Zahnverbundkombinationen mit weiteren Herstellungswegen. Im dreidimensionalen Zahnpositionsvergleich hatte die teilkonventionelle Küvettenpressgruppe die kleinsten Abweichungen. Unter den geteilten Druckkombinationen war ein vollständiger Zahnverbund über den Zahnbogen mit Nutdesign günstiger.[R18]"
+          },
+          {
+            "type": "p",
+            "text": "Im Zahnbogen dient der Alveolarknochen gleichzeitig als Aufnahme für das Haftmittel und zur Begrenzung von Verschiebungen. Ein größerer Spalt ermöglicht zwar eine korrekte Positionierung, kann aber auch zu Fehlstellungen der Zähne führen; ein zu kleiner Spalt kann lokale Interferenzen verursachen und die vollständige Positionierung der Zähne verhindern. Daher besteht der Kern der Forschung nicht einfach in der Wahl zwischen Rillen oder flachen Schlitzen, sondern vielmehr in der Integration von Spalt, Tiefe, Positionierungsfläche und Kanälen zum Entfernen von überschüssigem Haftmittel in geometrische Randbedingungen. Die vollständige Verklebung des Zahnbogens kann zudem lokale Verschiebungen in eine Gesamtverformung umwandeln, weshalb eine gleichzeitige Beobachtung sowohl der Front- als auch der Seitenzahnbereiche erforderlich ist."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2026 teilte 60 In-vitro-Prothesen in vier Gruppen zu je 15 auf. Zwei Gruppen wurden aus Modellharz beziehungsweise zahnfarbenem provisorischem Kronenharz einteilig gedruckt. In zwei weiteren Gruppen wurden Basis und vollständige oder segmentierte Zahnreihen getrennt gedruckt und verklebt. Die einteiligen Gruppen zeigten kleinere Zahnpositionsabweichungen am Gesamtbogen und in einzelnen Bereichen.[R19]"
+          },
+          {
+            "type": "p",
+            "text": "Der Vorteil eines einteiligen Referenzmodells liegt darin, dass der manuelle Montageschritt entfällt und somit die Ursache von Abweichungen im Endprodukt präzise ermittelt werden kann. Da sich dadurch auch der Material- und Formzustand ändert, sollten nachfolgende Versuche die Harzschrumpfung, die Stützpositionen und die Aushärtungsbedingungen innerhalb desselben Designs kontrollieren. Durch die Speicherung der Scandateien für jeden Bearbeitungsschritt lässt sich beobachten, ob sich Fehler im Verlauf der weiteren Bearbeitung allmählich verstärken oder teilweise kompensieren. Die Speicherung der Daten aus allen sechs Zonen erhöht die Wahrscheinlichkeit, lokalisierte Anomalien im Zusammenhang mit dem Okklusionskontakt zu identifizieren, im Vergleich zur Angabe des Durchschnittswerts des gesamten Zahnbogens."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2023 druckte mit Stratasys J55 und Materialien der Vero-Serie zahnfarbene und basisfarbene Bereiche als kontinuierliche Einheiten. Bruchverhalten, Wasseraufnahme und Geometrie nach Thermozyklierung wurden verglichen. Einige Last- und Formkennwerte waren günstig, gleichzeitig war die Wasseraufnahme erhöht.[R20]"
+          },
+          {
+            "type": "p",
+            "text": "Die kontinuierliche Formgebung reduziert den Montageaufwand und erhält gleichzeitig die verschiedenen Funktionsbereiche. Die Zähne müssen Okklusion und Abrieb standhalten, während sich die Prothesenbasis an die Gewebeoberflächen und die Gesamtkrümmung anpassen muss; beide stellen unterschiedliche Anforderungen hinsichtlich Dicke, Farbe und lokaler Belastungen. Daher ist es notwendig zu beobachten, wie sich Spannungen in den Materialübergangsbereichen verteilen, ob sich die Abmessungen nach der Aufnahme von Wasser verändern und wo der endgültige Riss entsteht. Nur durch die Berücksichtigung sowohl geometrischer als auch materialtechnischer Konsistenz lässt sich feststellen, ob die Vorteile der kontinuierlichen Fertigung auf die Reduzierung von Grenzflächen oder auf das Materialsystem selbst zurückzuführen sind."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Halt und Trageerfahrung"
+          },
+          {
+            "type": "p",
+            "text": "In einer Studie mit zwei Gruppen und 20 Zahnlosen zeigten Druckprothesen höheren gemessenen Halt als konventionelle metallverstärkte Unterkieferbasen. Die Messzeitpunkte nach einem und drei Monaten sind im Rahmen dieses Vergleichs zu lesen. Fallberichte ergänzen Angaben zum Restkamm. [R04] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Halt mit subjektiver Stabilität, Druckschmerz und Handhabung verbinden."
+          },
+          {
+            "type": "p",
+            "text": "Eine randomisierte Crossover-Studie aus dem Jahr 2026 verglich die Retention und die mundgesundheitsbezogene Lebensqualität von thermisch gehärteten, gedruckten und spritzgegossenen Polyamid-Totalprothesen. Zwischen den gedruckten und den thermisch gehärteten Gruppen wurden zu verschiedenen Messzeitpunkten keine signifikanten Unterschiede in der Retention beobachtet, während die Polyamid-Gruppe im Vergleich zu den beiden anderen Gruppen Unterschiede aufwies. [R21]"
+          },
+          {
+            "type": "p",
+            "text": "Die gleichzeitige Messung der Dislokationskraft und der Patientenangaben ermöglicht die Überprüfung, ob die subjektive Stabilität mit der mechanischen Retentionsrichtung übereinstimmt. Abweichungen zwischen beiden können anhand von Faktoren wie Randbewegung, Schmerzen, Speichelproduktion und Patientenadaptation weiter analysiert werden. Die Kraftmessung selbst erfordert eine festgelegte Dislokationsrichtung, Belastungsposition und Anzahl der Wiederholungen; andernfalls können Unterschiede im Prüfgerät fälschlicherweise als Unterschiede in der Prothesenleistung interpretiert werden. Längsschnittliche, wiederholte Messungen ermöglichen die Unterscheidung zwischen der initialen Eingliederung und der Leistung nach der Adaptationsphase."
+          },
+          {
+            "type": "p",
+            "text": "Eine randomisierte Crossover-Studie aus dem Jahr 2024 mit 18 Teilnehmern verglich unterschiedliche Arbeitsabläufe für gedruckte und traditionelle Totalprothesen und berichtete über eine vergleichbare mundgesundheitsbezogene Lebensqualität und Zufriedenheit. Die Studie konzentrierte sich auf die verwendeten Instrumente, deren Design und die angewandten klinischen Verfahren. [R22]"
+          },
+          {
+            "type": "p",
+            "text": "Die Studie verlagert im Vergleich zu früheren Studien den Fokus der Forschung darauf, welche Arbeitsablaufbedingungen die Unterschiede in den Erfahrungen erklären. Materialaktualisierungen, Trial-and-Place-Strategien, die Erfassung der Zahnposition und die Erfahrung des Behandlers können als zu untersuchende Faktoren berücksichtigt werden, anstatt das Publikationsjahr allein technologischen Fortschritten zuzuschreiben. Die multizentrische Replikation desselben Arbeitsablaufs oder der Vergleich von Herstellungsverfahren unter festgelegten klinischen Bedingungen kann diese Faktoren schrittweise isolieren. Einheitliche Definitionen von individueller Erfahrung und objektiver Retention ermöglichen vergleichbare Ergebnisse zwischen verschiedenen Studien."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Reparaturbefunde für die Konstruktion nutzen"
+          },
+          {
+            "type": "p",
+            "text": "Nachsorge unterscheidet Weitertragen nach Korrektur, Unterfütterung, Reparatur und Absetzen. Häufungen an dünnen Basisstellen, Grenzflächen oder Druckstellen geben Hinweise auf Fertigung und Innenfläche. [R03] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Nutzungsereignisse Bauteilen und Chargen zuordnen."
+          },
+          {
+            "type": "p",
+            "text": "Eine prospektive Kohorte von 2026 beobachtete 18 Patienten mit 36 gedruckten Zahnprothesen. 12 Personen mit 24 Prothesen schlossen zwei Jahre ab. Vier Oberkieferprothesen brachen im ersten Jahr; zwei Personen verwendeten ihre Prothesen später nicht weiter. Die getrennt berichteten kumulativen Schätzungen für Erfolg und Überleben betrugen 88 % und 87 %.[R23]"
+          },
+          {
+            "type": "p",
+            "text": "stratifiziert Ereignisse, um den klinischen Nutzen der Weiterverwendung nach der Reparatur zu erhalten und gleichzeitig den Wartungsaufwand darzustellen. Der ursprüngliche Bruch, die Reparatur, das Rezidiv und die Beendigung der Behandlung können einen kontinuierlichen Verlauf bilden; unterschiedliche Verläufe erfordern unterschiedliche Ressourcen und beeinflussen das Vertrauen des Patienten sowie die normale Nutzungsdauer. Bei Ober- und Unterkieferprothesen desselben Patienten sollte die Analyse deren Zusammenhang berücksichtigen, und die Nachbeobachtungsdauer sowie der Verlust von Patienten während der Nachbeobachtung sollten mithilfe eines geeigneten Zeit-bis-zum-Ereignis-Ansatzes behandelt werden."
+          },
+          {
+            "type": "p",
+            "text": "Diese Beobachtung erweitert die Ergebnisse der frühen randomisierten Studie auf die Anwendung im realen Alltag, wobei die fortgesetzte Trageentscheidung innerhalb der Kohorte selbst ein Ergebnis darstellt. Zukünftige multizentrische Studien könnten alle Empfänger bei der Erstversorgung einbeziehen und Wahländerungen sowie Interventionen kontinuierlich erfassen. Dies würde es ermöglichen, zu beurteilen, ob Änderungen an Material, Geometrie und klinischer Handhabung Ereignisse reduzierten, und geeignete Beobachtungszeiträume sowie primäre Endpunkte für nachfolgende Vergleiche festzulegen."
+          },
+          {
+            "type": "p",
+            "text": "Eine retrospektive Studie mit 60 Teilnehmern aus dem Jahr 2025 verglich traditionelle, gefräste und gedruckte Totalprothesen. Die funktionellen Gesamtergebnisse nach sechs Monaten waren vergleichbar, wobei die digitale Gruppe eine geringere Behandlungszeit und niedrigere Laborkosten aufwies. [R24] Die Studie erfasste außerdem klinische Ergebnisse und behandlungsbezogene Daten."
+          },
+          {
+            "type": "p",
+            "text": "Die Auswertung der Daten kann zwar etablierte Arbeitsabläufe widerspiegeln, es ist jedoch notwendig, die Fallauswahl, die Erfahrung des Personals und die Kostenkennzahlen zu erläutern. Die Zeiträume sollten in Vorproduktionsdokumentation, Testnutzung, Auslieferung und nachfolgende Anpassungen unterteilt werden; die Kosten sollten die Komponenten Ausrüstung, Material und Arbeitsaufwand enthalten, damit andere Einrichtungen ihre eigenen Ressourcen einbeziehen können. Patientenreise und Ausfallzeiten können ebenfalls separat aufgeführt werden, um zu zeigen, welcher Ansatz in klinisch ähnlichen Fällen tatsächlich Vorteile bietet."
+          }
+        ]
+      },
+      {
+        "title": "Vergleich der Befunde",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Höherer gemessener Halt und ähnliche Patientenberichte in Crossover-Studien können nebeneinander bestehen. Kiefer, Kontrollwerkstoff, Gerüst, Einprobe und Bewertungszeitpunkt sind anzugeben. Funktion und Aufwand sollten parallel erfasst werden. [R01] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Industrielle Ansätze und dokumentierte Produkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "DeltaMed, Vertex-Dental und Ivoclar decken Komponentensysteme, per Materialstrahlverfahren gefertigte Basen und Zähne sowie Totalprothesenbasen ab. Carbon FP3D richtet sich an flexible Teilprothesen. Produktumfang, Wartung und Eingliederung sind gemeinsam zu vergleichen. [R10] [R11] [R12] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Stratasys konzentriert sich auf mehrfarbige einteilige Zahnprothesen: Im Februar 2023 wurden TrueDent und die passende J5-DentaJet-Lösung vorgestellt; im Januar 2025 kam TrueDent-D als CE-Klasse-I-Produkt nach Europa. Am 17. März 2026 erhielt TrueDent-Harz die CE-Klasse-IIa-Zertifizierung mit entsprechend erweitertem Anwendungsbereich. Europäischer Markteintritt und Höherklassifizierung bilden zwei getrennte Phasen der regionalen Produktentwicklung.[R25][R26][R27]"
+          },
+          {
+            "type": "p",
+            "text": "Die NextDent-Roadmap von 3D Systems umfasst ein Multi-Material-Jetting-System bestehend aus Jet Base, Jet Teeth und NextDent 300. Das Unternehmen kündigte die vollständige Markteinführung in den USA am 29. Juli 2025 an und gab am 28. April 2026 bekannt, dass das Portfolio die EU-MDR-IIa-Zertifizierung erhalten hat, wodurch es ab dem 4. Mai in Europa verfügbar sein wird. Diese Meilensteine dokumentieren den Fortschritt der Vermarktung und Zertifizierung des jeweiligen Produktportfolios. [R28][R29]"
+          },
+          {
+            "type": "p",
+            "text": "Formlabs behält den getrennten Fertigungs- und Montageansatz bei. Die aktuelle Richtlinie beschreibt die Verbindung zwischen Denure Base V2 und Premium Teeth und umfasst Oberflächenreparatur, Frakturreparatur, Zahnersatz sowie weiche/harte Unterfütterung. [R30] Dieser Ansatz deckt sowohl die Erstfertigung als auch die anschließende lokale Wartung ab. Sein analytischer Wert liegt darin, ob die Material- und Verfahrenswahl ausreichend definiert ist und ob verschiedene Wartungsarbeiten zuverlässig mit den vorhandenen Laborkapazitäten durchgeführt werden können."
+          }
+        ]
+      },
+      {
+        "title": "Patentmechanismen und Prüfung für den Einsatz",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN110833462A verbindet ein Kobalt-Chrom-Gerüst mit herausnehmbarem Zahnersatz. CN109223217A verknüpft Konstruktion und Fertigung von Teilprothesen. CN106037967A adressiert die Sofortversorgung. Reproduzierbarkeit über den Zahnbogen, Ein- und Ausgliederungskraft und Änderungen nach Extraktion dienen der Prüfung. [R06] [R08] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "CN109223217A der Peking University Stomatology beschreibt Teilprothesenentwurf und gedruckte Präparationsführung, geführte Zahnpräparation am Modell, Neuscan des präparierten Modells, Neuentwurf/Fertigung und gemeinsame Lieferung von Führung und Prothese für den klinischen Einsatz. Klammerstudien verbinden Planmodell, präpariertes Modell und spätere klinische Zahnflächen. BEGO liefert den Gerüstkontext. Die Übertragung der Modellpräparation anhand von Sitz, Zwang und Anpassung prüfen.[R16][R17][R31][R08]"
+          },
+          {
+            "type": "p",
+            "text": "CN111372536A von SIRONA beschreibt digitales Aussparen eines Verstärkungsvolumens, Druck des Unterteils, Einlegen der Verstärkung und Weiterdruck. Das Patent behält die innere Verstärkung bei; R05 untersucht temporäre Stäbe während der Titangerüstfertigung. Gemeinsam ist die lageabhängige Verformung bei unterschiedlichem Verbleib und Material. Carbon-/Formlabs-Basen liefern Anforderungen an Gewebeflächen: lokale Verwerfung, Eigenspannung und Kontakt prüfen; Biegefestigkeit allein belegt keinen Komfort.[R15][R32][R33][R30][R34]"
+          },
+          {
+            "type": "p",
+            "text": "CN116350371A von Guangdong Jishu beschreibt berechnete Zahnkontaktflächen, digitale Okklusionsänderung und teilweise gemeinsamen Zahn-/Basisdruck. Retentions-/Lebensqualitätsstudien und Kostenvergleiche begründen die Gesamtfrage: Sinkt der Anpassungsbedarf bei erhaltener Retention, Sprache und Kaufunktion? Formlabs liefert den Montagekontext. Montage und Okklusionsänderung trennen, um Patientennutzen zuzuordnen.[R24][R21][R22][R30][R35]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick auf Forschung und Anwendung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Digitale Abläufe können durch weniger Nacharbeit und Korrekturen der Innenfläche an Nutzen gewinnen. Korrekturzeit, Pflege, Neuanfertigung und subjektiver Halt sind je Prothese zu erfassen. [R05] [R13]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Peri-implant soft tissue health and denture base adaptation of CAD/CAM milled versus 3D-printed implant-assisted mandibular overdentures: one-year randomized clinical trial",
+        "url": "https://doi.org/10.1038/s41598-026-40422-9",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R01"
+      },
+      {
+        "title": "Application of the full digital workflow in immediate removable partial denture: an innovative case report",
+        "url": "https://doi.org/10.37897/rjs.2024.4.8",
+        "year": "2024",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R02"
+      },
+      {
+        "title": "Conventional vs. 3D-printed complete dentures in an irradiated edentulous patient: a case report with clinical comparison",
+        "url": "https://doi.org/10.15386/mpr-2973",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R03"
+      },
+      {
+        "title": "3D-Printed Complete Dentures for Patients With Limited Mandibular Residual Ridges: A Case Report.",
+        "url": "https://doi.org/10.1155/crid/8849925",
+        "year": "2025",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R04"
+      },
+      {
+        "title": "Retention of 3D-printed versus conventional metal-reinforced acrylic mandibular denture bases: a comparative study",
+        "url": "https://doi.org/10.1186/s12903-025-07188-4",
+        "year": "2025",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R05"
+      },
+      {
+        "title": "Cobalt-chromium stent removable complete denture and processing method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN110833462A",
+        "year": "2020",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R06"
+      },
+      {
+        "title": "High-precision digital complete denture 3D printing method",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119925017A",
+        "year": "2025",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R07"
+      },
+      {
+        "title": "High-precision rapid manufacturing method for removable partial denture",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN109223217A",
+        "year": "2019",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R08"
+      },
+      {
+        "title": "Method for producing immediate complete or half denture based on 3D printing technique",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN106037967A",
+        "year": "2016",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R09"
+      },
+      {
+        "title": "FDA 510(k) K212541 · 3Delta Denture System",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf21/K212541.pdf",
+        "year": "",
+        "kind": "Unternehmensmitteilung",
+        "source": "Unternehmensmitteilung",
+        "id": "R10"
+      },
+      {
+        "title": "FDA 510(k) K241071 · NextDent Jet Denture Base and NextDent Jet Denture Teeth",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K241071",
+        "year": "",
+        "kind": "Unternehmensmitteilung",
+        "source": "Unternehmensmitteilung",
+        "id": "R11"
+      },
+      {
+        "title": "Carbon Announces Commercial Availability of FP3D Resin",
+        "url": "https://www.carbon3d.com/news/press-releases/carbon-announces-commercial-availability-of-fp3d-resin-enabling-dental-labs-to-produce-3d-printed-flexible-partial-dentures",
+        "year": "",
+        "kind": "Unternehmensmitteilung",
+        "source": "Unternehmensmitteilung",
+        "id": "R12"
+      },
+      {
+        "title": "Print it. Feel it. Ivoclar introduces Ivotion Base Print",
+        "url": "https://www.ivoclar.com/en_nz/media-release/2025/print-it-feel-it-ivoclar-introduces-ivotion-base-print",
+        "year": "",
+        "kind": "Unternehmensmitteilung",
+        "source": "Unternehmensmitteilung",
+        "id": "R13"
+      },
+      {
+        "title": "Intaglio surface of CNC milled versus 3D printed maxillary complete denture bases – An in vitro investigation of the accuracy of seven systems",
+        "year": "2024",
+        "source": "Journal of Dentistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39393605/",
+        "kind": "原始研究",
+        "id": "R14"
+      },
+      {
+        "title": "Effect of support structures on the trueness and precision of 3D printing dentures: An in vitro study",
+        "year": "2023在线／2024卷期",
+        "source": "Journal of Prosthodontic Research",
+        "url": "https://www.jstage.jst.go.jp/article/jpr/68/1/68_JPR_D_22_00266/_article",
+        "kind": "原始研究",
+        "id": "R15"
+      },
+      {
+        "title": "Retentive force and fitness accuracy of cobalt-chrome alloy clasps for removable partial denture fabricated with SLM technique",
+        "year": "2022",
+        "source": "Journal of Prosthodontic Research",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34615841/",
+        "kind": "原始研究",
+        "id": "R16"
+      },
+      {
+        "title": "Fit and Retention of Cobalt–Chromium Removable Partial Denture Frameworks Fabricated with Selective Laser Melting",
+        "year": "2023",
+        "source": "Journal of Functional Biomaterials",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10456016/",
+        "kind": "原始研究",
+        "id": "R17"
+      },
+      {
+        "id": "R18",
+        "title": "Evaluation of the occlusal trueness among 3-Dimensionally printed CAD-CAM complete dentures with different socket designs and teeth splinting assemblies",
+        "year": "2025",
+        "source": "BMC Oral Health",
+        "kind": "原始研究",
+        "url": "https://link.springer.com/article/10.1186/s12903-025-05894-7"
+      },
+      {
+        "id": "R19",
+        "title": "Accuracy of teeth positioning in bonded three-dimensionally printed complete dentures: an in vitro study",
+        "year": "2026",
+        "source": "BMC Oral Health",
+        "kind": "原始研究",
+        "url": "https://link.springer.com/article/10.1186/s12903-026-09125-5"
+      },
+      {
+        "id": "R20",
+        "title": "Physical Properties of Additively Manufactured Tooth-Colored Material Attached to Denture Base-Colored Material in a Printed Monolithic Unit",
+        "year": "2023",
+        "source": "Polymers",
+        "kind": "原始研究",
+        "url": "https://www.mdpi.com/2073-4360/15/9/2134"
+      },
+      {
+        "title": "Evaluation of Retention and Oral Health-Related Quality of Life for Completely Edentulous Subjects Wearing Heat-Cured, 3D-Printed, and Injection-Molded Polyamide Complete Dentures: Randomized Crossover Clinical Trial",
+        "year": "2026",
+        "source": "Dentistry Journal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12939638/",
+        "kind": "原始研究",
+        "id": "R21"
+      },
+      {
+        "title": "Oral health-related quality of life and patient satisfaction using three-dimensional printed dentures: A crossover randomized controlled trial",
+        "year": "2024",
+        "source": "Journal of Dentistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39265652/",
+        "kind": "原始研究",
+        "id": "R22"
+      },
+      {
+        "title": "Two-year clinical outcomes of three-dimensional printed complete dentures: A prospective multicenter study of survival and patient-reported outcomes",
+        "year": "2026",
+        "source": "Journal of Dentistry",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42869411/",
+        "id": "R23"
+      },
+      {
+        "title": "Digital vs. conventional removable complete dentures: A retrospective study on clinical effectiveness and cost-efficiency in edentulous patients",
+        "year": "2025",
+        "source": "Journal of Dentistry",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0300571224006742",
+        "kind": "原始研究",
+        "id": "R24"
+      },
+      {
+        "id": "R25",
+        "title": "Stratasys发布TrueDent单体多色打印义齿方案",
+        "year": "2023",
+        "source": "Stratasys",
+        "kind": "企业公告",
+        "url": "https://investors.stratasys.com/news-events/press-releases/detail/802/stratasys-introduces-first-monolithic-multi-color"
+      },
+      {
+        "id": "R26",
+        "title": "Stratasys宣布TrueDent-D进入欧洲市场",
+        "year": "2025",
+        "source": "Stratasys",
+        "kind": "企业公告",
+        "url": "https://investors.stratasys.com/news-events/press-releases/detail/927/stratasys-launches-truedent-in-europe-bringing-the"
+      },
+      {
+        "id": "R27",
+        "title": "TrueDent树脂获得欧洲CEⅡa类认证",
+        "year": "2026",
+        "source": "Stratasys",
+        "kind": "企业公告",
+        "url": "https://investors.stratasys.com/news-events/press-releases/detail/977/stratasys-truedent-becomes-the-first-high-esthetic"
+      },
+      {
+        "id": "R28",
+        "title": "NextDent喷射式义齿系统在美国全面商业发布",
+        "year": "2025",
+        "source": "3D Systems",
+        "kind": "企业公告",
+        "url": "https://investor.3dsystems.com/news/news-details/2025/3D-Systems-Announces-Major-Milestone-in-Digital-Dentistry-with-Full-Commercial-Release-of-New-FDA-cleared-Denture-Solution/default.aspx"
+      },
+      {
+        "id": "R29",
+        "title": "NextDent喷射式义齿组合获得欧盟MDRⅡa类认证并宣布欧洲供应",
+        "year": "2026",
+        "source": "3D Systems",
+        "kind": "企业公告",
+        "url": "https://www.3dsystems.com/press-releases/3d-systems-secures-class-iia-eu-mdr-certification-nextdentr-jetted-denture-solution"
+      },
+      {
+        "id": "R30",
+        "title": "Application Guide: 3D Printing Digital Dentures",
+        "year": "截至2026年10月的现行指南",
+        "source": "Formlabs Dental",
+        "kind": "企业技术资料",
+        "url": "https://dental.formlabs.com/global/indications/digital-dentures/guide/"
+      },
+      {
+        "title": "WIRONIUM RP Complete – einfach digital individuell",
+        "year": "2025",
+        "source": "BEGO",
+        "url": "https://www.bego.com/cad-cam-solutions/materials/cad-cam-alloys/wironium-rp-complete/",
+        "kind": "企业技术资料",
+        "id": "R31"
+      },
+      {
+        "title": "Effect of Reinforcement Bar on Trueness of Printed Titanium Kennedy I Removable Partial Denture Frameworks by Selective Laser Melting",
+        "year": "2025",
+        "source": "International Dental Journal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11976462/",
+        "kind": "原始研究",
+        "id": "R32"
+      },
+      {
+        "title": "Carbon launches DB 4000 denture base resin",
+        "year": "2026",
+        "source": "Carbon",
+        "url": "https://www.carbon3d.com/news/press-releases/carbon-launches-db-4000-a-high-impact-denture-base-resin-delivering-high-work-of-fracture-print-accuracy-and-better-economics-for-dental-labs",
+        "kind": "企业公告",
+        "id": "R33"
+      },
+      {
+        "id": "R34",
+        "title": "METHOD FOR PRODUCING A DENTAL PROSTHESIS PART, AND DENTAL PROSTHESIS PART",
+        "year": "2020",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN111372536A",
+        "source": "Espacenet",
+        "kind": "patent"
+      },
+      {
+        "id": "R35",
+        "title": "Occlusion relation remodeling method and 3D printing method for adsorptive false tooth",
+        "year": "2023",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN116350371A",
+        "source": "Espacenet",
+        "kind": "patent"
+      }
+    ]
+  }
+}

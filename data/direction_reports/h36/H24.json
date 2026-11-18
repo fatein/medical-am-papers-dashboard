@@ -1,0 +1,1364 @@
+{
+  "zh": {
+    "id": "H24",
+    "p": "P1",
+    "title": "结构性医疗制件的设计与力学评价",
+    "subtitle": "以同一载荷路径连接试样、仿真和成品失效",
+    "thesis": "结构性能由材料方向、壁厚和内部结构共同决定。以人体任务设定边界条件，再用材料试样、局部结构与成品逐级定标。 [R01] [R03] [R04]",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络 · 结构性医疗制件的设计与力学评价",
+      "summary": "从边界条件分别进入材料试样与人体几何，随后以成品受力和失效形态验证模型并反馈材料方向及厚度。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2023–2024",
+          "question": "明确边界条件如何对应人体任务。",
+          "title": "定义真实载荷",
+          "evidence": "腕手矫形器主要控制指定方向的活动，踝足矫形器则在步态中控制弯曲与回弹。材料筛选应先明确约束、载荷方向、变形窗口和可能接触位置。",
+          "refs": [
+            "R01",
+            "R02"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2023–2024",
+          "question": "测量顺层与跨层的响应。",
+          "title": "试样、层向和孔洞",
+          "evidence": "PET-G腕手矫形器研究比较三点弯曲试样、矫形器片段和完整器械，并结合有限元模拟。整体刚度受孔洞、曲率和打印方向共同影响。",
+          "refs": [
+            "R01",
+            "R06"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2025",
+          "question": "分开测量壳与芯在载荷中的作用。",
+          "title": "外壳与芯层",
+          "evidence": "打印股骨研究以皮质层厚度和骨小梁填充调整承载。不同打印变体的压缩强度以破坏力表示时约为1100–7300 N，常见断裂部位为股骨头或颈。比较应保留加载姿态。",
+          "refs": [
+            "R04"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2022",
+          "question": "校准多于一个指标。",
+          "title": "以实体标定模型",
+          "evidence": "人工股骨研究在压入股骨柄时同时记录人工件与人体骨的力和应变。比较可用相同加载下的峰值、沉降曲线与局部应变辨识不同材料路径。",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2022–2024",
+          "question": "用应用特异任务检验重现性。",
+          "title": "从构件到使用",
+          "evidence": "椎体、股骨和前臂支具面临不同负载几何。若研究已匹配整体刚度，应再比较失效位置、载荷传播、变形方向和是否形成危险断片。",
+          "refs": [
+            "R03",
+            "R05",
+            "R06"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2022–2023",
+          "question": "让失效位置指导新一轮对照。",
+          "title": "反馈结构和工艺",
+          "evidence": "若加载表现偏离且断裂沿层界面，应检查打印方向与结合。若整体材料响应接近而局部过载，优先调整壳厚、开孔或载荷接触。",
+          "refs": [
+            "R01",
+            "R03",
+            "R04"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "试样、层向和孔洞",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "外壳与芯层",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "以实体标定模型",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "以实体标定模型",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "从构件到使用",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "反馈结构和工艺",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "将断裂路径反馈到层向和厚度",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究范围与目标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "本方向覆盖需要承载或重现受力的医疗零件。矫形器控制变形与贴合，骨替代试验模型重现力和应变，植入构件还需规定长期载荷与界面性能。"
+          }
+        ]
+      },
+      {
+        "title": "学术研究脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 定义真实载荷"
+          },
+          {
+            "type": "p",
+            "text": "腕手矫形器主要控制指定方向的活动，踝足矫形器则在步态中控制弯曲与回弹。材料筛选应先明确约束、载荷方向、变形窗口和可能接触位置。 [R01] [R02]"
+          },
+          {
+            "type": "p",
+            "text": "明确边界条件如何对应人体任务。"
+          },
+          {
+            "type": "p",
+            "text": "2011年研究将激光扫描、计算机设计和快速成形连接，制造两种个体踝足矫形器，并在一名受试者中与预制聚丙烯器械比较。所观察的步态功能相近，数字路线实现了针对个人解剖形态的适配。[R09]"
+          },
+          {
+            "type": "p",
+            "text": "这一节点建立了从身体表面到支撑器械的基本链条。踝足矫形器的接触范围、边缘和鞋内空间影响是否能够舒适佩戴，而它对关节的限制和支撑作用又取决于刚度。单纯复制外形时，这两层作用可能混合；研究设计可以在同样几何下比较材料，或在同样材料下改变支撑范围，逐步识别形态与力学贡献。"
+          },
+          {
+            "type": "p",
+            "text": "步态评价需要与预定治疗目标对应。例如控制足下垂时可观察摆动期足尖间隙和踝位置，支撑不稳定关节时则关注负重阶段和左右差异。鞋具、步速和适应时间同时记录，便于解释同一器械在不同测量中的变化。数字档案随后可保存这些条件，使下一轮修改直接针对行走中发现的问题，并与首次方案形成病例内比较。"
+          },
+          {
+            "type": "p",
+            "text": "2021年假足研究以有限元模拟末期支撑相，联动前足曲线、弯曲空间、内凹结构和弯曲区，优化趾部的力矩—角度关系及应力。论文形成可打印结构的计算设计，实物制造与进一步验证被安排为后续步骤。[R10]"
+          },
+          {
+            "type": "p",
+            "text": "其科学问题是同一部件在不同变形程度下提供不同响应。人体推进阶段的需求并非由一个固定刚度描述，结构可以通过几何改变逐步增加阻力。将目标曲线写入优化，使研究从“形似足部”转向“在明确动作阶段产生目标力学行为”。同时，最大应力约束使设计过程兼顾变形与承载。"
+          },
+          {
+            "type": "p",
+            "text": "从计算进入实际器械，需要把材料方向性、层间连接和打印误差加入机械验证。可先测量实物力矩—角度曲线，再开展循环与多方向载荷，最后考察使用者的滚动推进和不同步速表现。每一级都保留相同设计版本，使模拟、台架和行走可以相互解释。该节点与踝足支具共同提示，个体化刚度应按具体运动目标选择，并通过真实任务检验其适用范围。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 试样、层向和孔洞"
+          },
+          {
+            "type": "p",
+            "text": "PET-G腕手矫形器研究比较三点弯曲试样、矫形器片段和完整器械，并结合有限元模拟。整体刚度受孔洞、曲率和打印方向共同影响。 [R01] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "测量顺层与跨层的响应。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 外壳与芯层"
+          },
+          {
+            "type": "p",
+            "text": "打印股骨研究以皮质层厚度和骨小梁填充调整承载。不同打印变体的压缩强度以破坏力表示时约为1100–7300 N，常见断裂部位为股骨头或颈。比较应保留加载姿态。 [R04]"
+          },
+          {
+            "type": "p",
+            "text": "分开测量壳与芯在载荷中的作用。"
+          },
+          {
+            "type": "p",
+            "text": "2018年开源腕驱动支具研究吸收三名脊髓损伤使用者和六名矫形专业学生反馈，公开尺寸与装配方法。不同尺寸的材料费用约15—20美元，手工装配约1.5小时；个体任务收益呈现差异，反馈用于修改结构与固定件。[R11]"
+          },
+          {
+            "type": "p",
+            "text": "该研究把可及性拆成可以观察的工作环节。材料容易获得只是起点，制作人员还需要理解尺寸修改、关节装配及适配方法，使用者则需要能够完成穿脱并维持稳定接触。针对扣带、磁性连接和手指支撑的修改，使研究从机械动作拓展到日常操作。对于手部能力受限者，独立穿戴本身就是重要功能终点。"
+          },
+          {
+            "type": "p",
+            "text": "后续评价适合记录从测量到首次使用的全过程，包括打印等待、手工装配、临床调整和再次重制。每次修改的原因与任务结果配对，可判断简化装配是否影响可靠性，或更易穿脱是否改善持续使用。开源资料也可以以版本形式维护，使不同机构复现相同方案，再将本地需求返回设计。由此，低成本原型转化为能够持续交付的康复服务。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 以实体标定模型"
+          },
+          {
+            "type": "p",
+            "text": "人工股骨研究在压入股骨柄时同时记录人工件与人体骨的力和应变。比较可用相同加载下的峰值、沉降曲线与局部应变辨识不同材料路径。 [R03]"
+          },
+          {
+            "type": "p",
+            "text": "校准多于一个指标。"
+          },
+          {
+            "type": "p",
+            "text": "下颌连续性缺损研究采用加权拓扑优化，为不同缺损位置配置轻量支撑结构，再通过有限元和动态疲劳测试验证。2022 年卷期论文中的所测试结构通过 25 万次循环加载。它展示了从统一单元选型向具体缺损载荷路径设计的延伸。[R12]"
+          },
+          {
+            "type": "p",
+            "text": "局部结构优化接下来需要接入完整固定系统。剩余骨、螺钉位置和咬合方向会改变边界条件；对于脊柱融合器，终板接触和沉降同样影响整体表现。因此不同部位需要各自的验证载荷和失效判据。"
+          },
+          {
+            "type": "p",
+            "text": "两项研究共同表明平均模量只是设计描述的一部分。孔隙可以降低整体刚度，也可能使载荷集中到有限杆件或固定区；应同时报告骨侧响应和器械侧失效。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 从构件到使用"
+          },
+          {
+            "type": "p",
+            "text": "椎体、股骨和前臂支具面临不同负载几何。若研究已匹配整体刚度，应再比较失效位置、载荷传播、变形方向和是否形成危险断片。 [R03] [R05] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "用应用特异任务检验重现性。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 反馈结构和工艺"
+          },
+          {
+            "type": "p",
+            "text": "若加载表现偏离且断裂沿层界面，应检查打印方向与结合。若整体材料响应接近而局部过载，优先调整壳厚、开孔或载荷接触。 [R01] [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "让失效位置指导新一轮对照。"
+          }
+        ]
+      },
+      {
+        "title": "研究之间如何比较",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "有限元宜用独立工况检查，保留材料方向性、边界条件与接触。仿真与三点弯曲相符可作为起点，完整结构仍需验证应变分布和真实失效。 [R01] [R03]"
+          }
+        ]
+      },
+      {
+        "title": "企业路线与公开产品",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "矫形器供应商把扫描、临床调节和生产相连。若需比较数字方案与传统方案，应记录最初刚度、局部贴合、返工率和长期维护，并按肢体任务分层。"
+          },
+          {
+            "type": "p",
+            "text": "Spentys的现行踝足矫形器流程把体重、活动水平、临床类型、扫描来源、支撑形状、局部厚度和制造地点纳入订单。动态模型还可选择关节方式及活动要求。该平台将临床选择变为可以传递给设计与制造端的字段，使个体化超出外形尺寸，并允许机构选择集中打印或本地制造。[R13]"
+          },
+          {
+            "type": "p",
+            "text": "ActivArmor的提供者流程连接手机扫描、依据临床体位和指令定制设计，以及机构内制造。其产品服务重点在固定与保护装置的交付，开放结构和可调整固定则为复查提供操作空间。[R14]评价这类平台可着重观察采集成功率、设计往返、首次佩戴与体积变化后的调整，从而了解当天制造目标在完整临床流程中如何实现。"
+          }
+        ]
+      },
+      {
+        "title": "专利机制与转化验证",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN112155795A描述分区骨小梁式髋关节构件，CN121101779A描述区域性能可变的牙科器械。两类结构均要核对设计边界、区域力学响应和整体破坏机制。 [R07] [R08]"
+          },
+          {
+            "type": "p",
+            "text": "US2016235158A1列名Clemson大学及ABILITY PROSTHETICS & ORTHOTICS，描述用单元空隙体积和材料改变矫形器层的局部硬度。它与早期AFO个体步态和腕驱动支具反馈研究相接：外形相同也可产生不同支撑与接触。Spentys订单中的体重、活动与厚度字段提供输入接口，ActivArmor提供体位和开放结构的交付情境；区域硬度应同时评价压力、功能任务与穿戴操作。[R09][R11][R13][R14][R15]"
+          },
+          {
+            "type": "p",
+            "text": "密歇根大学US2022339017A1描述分开的打印足板、腿箍及预制支条，通过支条宽厚调整个体踝部刚度并兼顾鞋内空间。它与非线性趾关节假足研究共同把平均刚度扩展为力矩—角度和任务阶段响应。Spentys动态AFO流程提供患者活动情境；应测支条、接口与完整装置，区分支条调节带来的目标帮助和连接处疲劳，不能只用部件刚度判断步态获益。[R09][R10][R13][R16]"
+          }
+        ]
+      },
+      {
+        "title": "后续研究与应用走向",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "有价值的推进是把数字模型、机台、局部材料属性和失效试验并入同一可复现记录，进而确认制造变化能否维持目标刚度与安全余量。 [R01] [R03] [R06]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Mechanical Evaluation of PET-G 3D-Printed Wrist-Hand Orthosis: An Integrated Experimental and Numerical Approach.",
+        "url": "https://doi.org/10.3390/ma16186132",
+        "year": "2023",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R01"
+      },
+      {
+        "title": "Mechanical Properties of Carbon Fiber Reinforced Materials for 3D Printing of Ankle Foot Orthoses",
+        "url": "https://doi.org/10.12913/22998624/188819",
+        "year": "2024",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R02"
+      },
+      {
+        "title": "Biomechanical validation of additively manufactured artificial femoral bones",
+        "url": "https://doi.org/10.1186/s42490-022-00063-1",
+        "year": "2022",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R03"
+      },
+      {
+        "title": "Influence of the Cortical Layer Thickness and Trabecular Layer Pattern Density on 3D-Printed Femur Strength.",
+        "url": "https://doi.org/10.3390/ma18102187",
+        "year": "2025",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R04"
+      },
+      {
+        "title": "Biomechanical evaluation of individual 3D-printed vertebrae.",
+        "url": "https://doi.org/10.1186/s42490-026-00107-w",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R05"
+      },
+      {
+        "title": "Assessment of the Mechanical Properties and Fragment Characteristics of a 3D-Printed Forearm Orthosis.",
+        "url": "https://doi.org/10.3390/polym16233349",
+        "year": "2024",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R06"
+      },
+      {
+        "title": "Additive manufacturing titanium alloy partition bone trabecula artificial hip joint oversleeve and preparation method",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN112155795A",
+        "year": "2021",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R07"
+      },
+      {
+        "title": "Dental appliance with regional differentiation physical properties and additive manufacturing method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN121101779A",
+        "year": "2025",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R08"
+      },
+      {
+        "title": "Patient specific ankle-foot orthoses using rapid prototyping",
+        "year": "2011",
+        "source": "Journal of NeuroEngineering and Rehabilitation",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3024934/",
+        "kind": "原始研究",
+        "id": "R09"
+      },
+      {
+        "title": "Design of 3D printable prosthetic foot to implement nonlinear stiffness behavior of human toe joint based on finite element analysis",
+        "year": "2021",
+        "source": "Scientific Reports",
+        "url": "https://www.nature.com/articles/s41598-021-98839-3",
+        "kind": "原始研究",
+        "id": "R10"
+      },
+      {
+        "title": "Design of a 3D-printed, open-source wrist-driven orthosis for individuals with spinal cord injury",
+        "year": "2018",
+        "source": "PLOS ONE",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0193106",
+        "kind": "原始研究",
+        "id": "R11"
+      },
+      {
+        "id": "R12",
+        "title": "Design Criteria for Patient-specific Mandibular Continuity Defect Reconstructed Implant with Lightweight Structure using Weighted Topology Optimization and Validated with Biomechanical Fatigue Testing",
+        "year": "2022",
+        "source": "International Journal of Bioprinting",
+        "kind": "原始研究",
+        "url": "https://www.accscience.com/journal/IJB/8/1/10.18063/ijb.v8i1.437"
+      },
+      {
+        "title": "How to make your 3D Printed AFO - Custom Workflow",
+        "year": "2026年现行资料",
+        "source": "Spentys",
+        "url": "https://help.spentys.com/how-to-make-your-3d-printed-afo-custom-workflow",
+        "kind": "企业技术资料",
+        "id": "R13"
+      },
+      {
+        "title": "Provider workflow",
+        "year": "2026年现行资料",
+        "source": "ActivArmor",
+        "url": "https://www.activarmor.com/provider",
+        "kind": "企业技术资料",
+        "id": "R14"
+      },
+      {
+        "id": "R15",
+        "title": "Variable hardness orthotic",
+        "year": "2016",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS2016235158A1",
+        "source": "Espacenet",
+        "kind": "patent"
+      },
+      {
+        "id": "R16",
+        "title": "SYSTEM AND METHOD FOR ADDITIVELY MANUFACTURING AN ANKLE FOOT ORTHOSIS",
+        "year": "2022",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS2022339017A1",
+        "source": "Espacenet",
+        "kind": "patent"
+      }
+    ]
+  },
+  "en": {
+    "id": "H24",
+    "p": "P1",
+    "title": "Design and mechanical evaluation of structural medical parts",
+    "subtitle": "Connect coupons, simulation and failure through a common load path",
+    "thesis": "Structural performance depends on material orientation, wall thickness and infill. Use the human task to set boundary conditions, then calibrate coupons, local features and the finished part in sequence. [R01] [R03] [R04]",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway · Design and mechanical evaluation of structural medical parts",
+      "summary": "Boundary conditions branch into material testing and anatomical geometry. Loading and failure of the finished part validate the model and inform orientation and thickness.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2023–2024",
+          "question": "Tie boundary conditions to human function.",
+          "title": "Define functional loads",
+          "evidence": "Wrist-hand orthoses restrict motion in defined directions, whereas ankle-foot devices control flexion and rebound during gait. Specify constraints, load directions, deflection windows and contact locations before screening materials.",
+          "refs": [
+            "R01",
+            "R02"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2023–2024",
+          "question": "Measure response along and across layers.",
+          "title": "Coupons, layer direction and perforations",
+          "evidence": "A PET-G wrist-hand study compared three-point bend bars, orthosis fragments and complete devices using finite elements alongside tests. Perforations, curvature and print direction jointly shape device stiffness.",
+          "refs": [
+            "R01",
+            "R06"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2025",
+          "question": "Separate shell and core contributions to load.",
+          "title": "Shell and core",
+          "evidence": "A printed femur study varied cortical shell thickness and trabecular pattern density. Compressive failure loads ranged from roughly 1100 to 7300 N across variants. Head or neck fracture was common, so loading posture should accompany comparisons.",
+          "refs": [
+            "R04"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2022",
+          "question": "Calibrate more than one outcome.",
+          "title": "Calibrate models against parts",
+          "evidence": "Artificial and human femora were compared during stem insertion using force and strain. Peak loads, subsidence curves and local strain under matched conditions identify differences among routes.",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2022–2024",
+          "question": "Assess reproducibility on an application-specific task.",
+          "title": "From part to use",
+          "evidence": "Vertebrae, femora and forearm orthoses have different load geometries. After matching global stiffness, compare failure sites, load transfer, deformation direction and fragmentation.",
+          "refs": [
+            "R03",
+            "R05",
+            "R06"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2022–2023",
+          "question": "Use failure location to guide the next comparison.",
+          "title": "Feed results into design and process",
+          "evidence": "A discrepancy with interlayer fracture calls for reviewing orientation and bonding. Similar bulk behaviour with local overload points instead to shell thickness, perforations or load contacts.",
+          "refs": [
+            "R01",
+            "R03",
+            "R04"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Coupons, layer direction and perforations",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Shell and core",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Calibrate models against parts",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Calibrate models against parts",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "From part to use",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Feed results into design and process",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Feed crack paths back into orientation and thickness",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Scope and objectives",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Structural medical parts may carry or reproduce load. Orthoses control deformation and fit, synthetic bones reproduce forces and strains in testing, and implants must also consider long-term loads and interfaces."
+          }
+        ]
+      },
+      {
+        "title": "Academic pathway and interpretation",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Define functional loads"
+          },
+          {
+            "type": "p",
+            "text": "Wrist-hand orthoses restrict motion in defined directions, whereas ankle-foot devices control flexion and rebound during gait. Specify constraints, load directions, deflection windows and contact locations before screening materials. [R01] [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Tie boundary conditions to human function."
+          },
+          {
+            "type": "p",
+            "text": "A 2011 study used laser scanning, computer design, and rapid prototyping to create two individual ankle-foot orthoses, which were then compared with prefabricated polypropylene devices in one subject. The observed gait function was similar, and the digital route enabled adaptation to individual anatomical features. [R09]"
+          },
+          {
+            "type": "p",
+            "text": "This node establishes the basic chain from the body surface to the supporting device. The contact area, edges, and in-shoe space of the ankle-foot orthosis affect whether it can be worn comfortably, while its restriction and support effect on the joint depends on stiffness. When simply replicating the shape, these two layers of effects may be mixed; research designs can compare materials under the same geometry, or change the support range under the same materials, gradually identifying the morphological and mechanical contributions."
+          },
+          {
+            "type": "p",
+            "text": "Gait assessment should follow the intended treatment goal. For foot drop, assess toe clearance and ankle position during swing; for joint instability, assess weight-bearing phases and asymmetry. Record footwear, walking speed and adaptation time to interpret repeated measurements. Digital records can then guide changes targeted at observed walking problems and support within-person comparisons with the first design."
+          },
+          {
+            "type": "p",
+            "text": "The 2021 prosthetic foot research used finite element analysis to simulate the final support phase, linking the forefoot curve, flexion space, concave structure, and flexion zone to optimize the moment-angle relationship and stress in the toe. The paper resulted in a computational design for a printable structure; physical fabrication and further verification are planned as subsequent steps. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "The question is how one component can provide different responses at different deformation levels. Propulsion demands are not captured by one fixed stiffness; geometry can progressively increase mechanical resistance. A target moment–angle curve shifts design from resembling a foot to producing specified behaviour during a defined gait phase, while a maximum-stress constraint addresses load-bearing capacity."
+          },
+          {
+            "type": "p",
+            "text": "The model transitions from calculation to actual device implementation, requiring the incorporation of material orientation, interlayer bonding, and printing errors into mechanical verification. This can be achieved by first measuring the actual torque-angle curve, then conducting cyclic and multi-directional load tests, and finally examining the user's rolling propulsion and performance at different speeds. Each stage retains the same design version, allowing simulation, bench testing, and walking to be mutually interpretable. This node, along with the ankle-foot brace, emphasizes that individualized stiffness should be selected according to specific movement goals, and its applicability should be verified through real-world tasks."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Coupons, layer direction and perforations"
+          },
+          {
+            "type": "p",
+            "text": "A PET-G wrist-hand study compared three-point bend bars, orthosis fragments and complete devices using finite elements alongside tests. Perforations, curvature and print direction jointly shape device stiffness. [R01] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Measure response along and across layers."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Shell and core"
+          },
+          {
+            "type": "p",
+            "text": "A printed femur study varied cortical shell thickness and trabecular pattern density. Compressive failure loads ranged from roughly 1100 to 7300 N across variants. Head or neck fracture was common, so loading posture should accompany comparisons. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Separate shell and core contributions to load."
+          },
+          {
+            "type": "p",
+            "text": "A 2018 open-source wrist-driven orthosis study incorporated feedback from three people with spinal cord injury and six orthotics students and published dimensions and assembly methods. Material costs were approximately US$15–20 depending on size, and manual assembly took about 1.5 hours. Benefits varied across personal tasks, and feedback informed changes to structure and fasteners. [R11]"
+          },
+          {
+            "type": "p",
+            "text": "This study breaks down accessibility into observable steps. Easy material availability is just the starting point; manufacturers also need to understand sizing modifications, joint assembly, and fitting methods, while users need to be able to put on and take off the garment and maintain stable contact. Modifications to the straps, magnetic connections, and finger supports extend the research from mechanical movements to everyday operations. For individuals with limited hand dexterity, independent wearability is itself an important functional endpoint."
+          },
+          {
+            "type": "p",
+            "text": "Future evaluation should record the full pathway from measurement to first use, including printing waits, manual assembly, clinical adjustments and remanufacture. Pair reasons for modifications with task outcomes to determine whether simpler assembly affects reliability or easier donning and doffing supports continued use. Versioned open-source documentation enables replication across institutions and feedback from local needs, supporting transition from low-cost prototypes to sustainable rehabilitation services."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Calibrate models against parts"
+          },
+          {
+            "type": "p",
+            "text": "Artificial and human femora were compared during stem insertion using force and strain. Peak loads, subsidence curves and local strain under matched conditions identify differences among routes. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Calibrate more than one outcome."
+          },
+          {
+            "type": "p",
+            "text": "Research on mandibular continuity defects used weighted topology optimization to configure lightweight support structures for different defect locations, followed by finite element analysis and dynamic fatigue testing. The tested structures reported in the paper published in a 2022 journal issue passed 250,000 loading cycles. This extends the selection of standard unit cells towards load-path design for specific defects. [R12]"
+          },
+          {
+            "type": "p",
+            "text": "Local structural optimization must then be integrated into the complete fixation system. Remaining bone, screw positions and the direction of occlusal loading alter boundary conditions; in spinal fusion cages, endplate contact and subsidence also affect overall performance. Each anatomical site therefore requires its own validation loads and failure criteria."
+          },
+          {
+            "type": "p",
+            "text": "Both studies demonstrate that the average modulus is only one part of the design description. Porosity can reduce overall stiffness and may also concentrate loads in finite members or fixed areas; both bone-side response and device-side failure should be reported simultaneously."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · From part to use"
+          },
+          {
+            "type": "p",
+            "text": "Vertebrae, femora and forearm orthoses have different load geometries. After matching global stiffness, compare failure sites, load transfer, deformation direction and fragmentation. [R03] [R05] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Assess reproducibility on an application-specific task."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Feed results into design and process"
+          },
+          {
+            "type": "p",
+            "text": "A discrepancy with interlayer fracture calls for reviewing orientation and bonding. Similar bulk behaviour with local overload points instead to shell thickness, perforations or load contacts. [R01] [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Use failure location to guide the next comparison."
+          }
+        ]
+      },
+      {
+        "title": "Comparing the evidence",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Validate finite elements against independent load cases while preserving anisotropy, constraints and contact. Agreement in bending is a starting point, followed by strain distribution and actual failure of the complete structure. [R01] [R03]"
+          }
+        ]
+      },
+      {
+        "title": "Industry approaches and documented products",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Orthotics suppliers link scanning, clinical adjustment and manufacture. Compare initial stiffness, local fit, rework and maintenance for digital and conventional routes by limb task."
+          },
+          {
+            "type": "p",
+            "text": "Spentys' current ankle-foot orthosis process incorporates weight, activity level, clinical type, scan source, support shape, local thickness, and manufacturing location into the order. Dynamic models also allow selection of joint configuration and activity requirements. This platform transforms clinical choices into fields that can be passed to both design and manufacturing, enabling individualization beyond physical dimensions and allowing institutions to choose between centralized printing or local manufacturing. [R13]"
+          },
+          {
+            "type": "p",
+            "text": "ActivArmor's provider workflow connects mobile phone scanning, custom design based on clinical positioning and instructions, and in-house manufacturing. Its product service focuses on the delivery of fixation and protection devices, with open structures and adjustable fixation providing operational space for follow-up examinations. [R14] Evaluating this type of platform can focus on observing acquisition success rates, design round trips, initial wear, and adjustments after volume changes to understand how same-day manufacturing goals are achieved within the complete clinical workflow."
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and translational testing",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN112155795A describes a regionally trabecular hip component, and CN121101779A a dental appliance with variable local properties. Both warrant checks of regional boundaries, mechanical response and whole-part failure. [R07] [R08]"
+          },
+          {
+            "type": "p",
+            "text": "US2016235158A1 names Clemson University and ABILITY PROSTHETICS & ORTHOTICS and describes local hardness through cell void volume/material. AFO gait and wrist-driven orthosis studies show why equal contours may provide different support/contact. Spentys weight/activity/thickness fields supply inputs; ActivArmor supplies posture/open-structure context. Evaluate pressure, tasks and donning alongside hardness.[R09][R11][R13][R14][R15]"
+          },
+          {
+            "type": "p",
+            "text": "Michigan’s US2022339017A1 describes separate printed footplate/cuff and a prefabricated strut with width/thickness for ankle stiffness and shoe fit. Nonlinear prosthetic-foot research extends average stiffness to moment–angle/task-phase response. Spentys dynamic AFOs supply activity context. Test struts, joints and whole devices, distinguishing assistance from junction fatigue; component stiffness alone does not establish gait benefit.[R09][R10][R13][R16]"
+          }
+        ]
+      },
+      {
+        "title": "Research and adoption outlook",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A useful advance is a reproducible record linking model, printer, local material properties and failure testing. It can establish whether a manufacturing change preserves target stiffness and margin. [R01] [R03] [R06]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Mechanical Evaluation of PET-G 3D-Printed Wrist-Hand Orthosis: An Integrated Experimental and Numerical Approach.",
+        "url": "https://doi.org/10.3390/ma16186132",
+        "year": "2023",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R01"
+      },
+      {
+        "title": "Mechanical Properties of Carbon Fiber Reinforced Materials for 3D Printing of Ankle Foot Orthoses",
+        "url": "https://doi.org/10.12913/22998624/188819",
+        "year": "2024",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R02"
+      },
+      {
+        "title": "Biomechanical validation of additively manufactured artificial femoral bones",
+        "url": "https://doi.org/10.1186/s42490-022-00063-1",
+        "year": "2022",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R03"
+      },
+      {
+        "title": "Influence of the Cortical Layer Thickness and Trabecular Layer Pattern Density on 3D-Printed Femur Strength.",
+        "url": "https://doi.org/10.3390/ma18102187",
+        "year": "2025",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R04"
+      },
+      {
+        "title": "Biomechanical evaluation of individual 3D-printed vertebrae.",
+        "url": "https://doi.org/10.1186/s42490-026-00107-w",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R05"
+      },
+      {
+        "title": "Assessment of the Mechanical Properties and Fragment Characteristics of a 3D-Printed Forearm Orthosis.",
+        "url": "https://doi.org/10.3390/polym16233349",
+        "year": "2024",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R06"
+      },
+      {
+        "title": "Additive manufacturing titanium alloy partition bone trabecula artificial hip joint oversleeve and preparation method",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN112155795A",
+        "year": "2021",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R07"
+      },
+      {
+        "title": "Dental appliance with regional differentiation physical properties and additive manufacturing method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN121101779A",
+        "year": "2025",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R08"
+      },
+      {
+        "title": "Patient specific ankle-foot orthoses using rapid prototyping",
+        "year": "2011",
+        "source": "Journal of NeuroEngineering and Rehabilitation",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3024934/",
+        "kind": "原始研究",
+        "id": "R09"
+      },
+      {
+        "title": "Design of 3D printable prosthetic foot to implement nonlinear stiffness behavior of human toe joint based on finite element analysis",
+        "year": "2021",
+        "source": "Scientific Reports",
+        "url": "https://www.nature.com/articles/s41598-021-98839-3",
+        "kind": "原始研究",
+        "id": "R10"
+      },
+      {
+        "title": "Design of a 3D-printed, open-source wrist-driven orthosis for individuals with spinal cord injury",
+        "year": "2018",
+        "source": "PLOS ONE",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0193106",
+        "kind": "原始研究",
+        "id": "R11"
+      },
+      {
+        "id": "R12",
+        "title": "Design Criteria for Patient-specific Mandibular Continuity Defect Reconstructed Implant with Lightweight Structure using Weighted Topology Optimization and Validated with Biomechanical Fatigue Testing",
+        "year": "2022",
+        "source": "International Journal of Bioprinting",
+        "kind": "原始研究",
+        "url": "https://www.accscience.com/journal/IJB/8/1/10.18063/ijb.v8i1.437"
+      },
+      {
+        "title": "How to make your 3D Printed AFO - Custom Workflow",
+        "year": "2026年现行资料",
+        "source": "Spentys",
+        "url": "https://help.spentys.com/how-to-make-your-3d-printed-afo-custom-workflow",
+        "kind": "企业技术资料",
+        "id": "R13"
+      },
+      {
+        "title": "Provider workflow",
+        "year": "2026年现行资料",
+        "source": "ActivArmor",
+        "url": "https://www.activarmor.com/provider",
+        "kind": "企业技术资料",
+        "id": "R14"
+      },
+      {
+        "id": "R15",
+        "title": "Variable hardness orthotic",
+        "year": "2016",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS2016235158A1",
+        "source": "Espacenet",
+        "kind": "patent"
+      },
+      {
+        "id": "R16",
+        "title": "SYSTEM AND METHOD FOR ADDITIVELY MANUFACTURING AN ANKLE FOOT ORTHOSIS",
+        "year": "2022",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS2022339017A1",
+        "source": "Espacenet",
+        "kind": "patent"
+      }
+    ]
+  },
+  "de": {
+    "id": "H24",
+    "p": "P1",
+    "title": "Konstruktion und mechanische Prüfung struktureller Medizinbauteile",
+    "subtitle": "Probekörper, Simulation und Versagen über den Lastpfad verbinden",
+    "thesis": "Strukturverhalten hängt von Materialorientierung, Wanddicke und Innenstruktur ab. Randbedingungen folgen der menschlichen Aufgabe. Proben, lokale Strukturen und das Endprodukt werden stufenweise kalibriert. [R01] [R03] [R04]",
+    "questions": [],
+    "graph": {
+      "title": "Forschungsverlauf · Konstruktion und mechanische Prüfung struktureller Medizinbauteile",
+      "summary": "Die Randbedingungen führen zu Materialprüfung und anatomischer Geometrie. Belastung und Bruchbild des Endprodukts validieren das Modell und geben Hinweise zu Orientierung und Dicke.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2023–2024",
+          "question": "Randbedingungen der menschlichen Funktion zuordnen.",
+          "title": "Funktionslasten festlegen",
+          "evidence": "Handgelenk-Hand-Orthesen begrenzen Bewegungen in bestimmten Richtungen. Knöchel-Fuß-Orthesen steuern Biegung und Rückstellung beim Gehen. Vor der Materialwahl sind Auflager, Lastrichtungen, Verformungsbereich und Kontaktstellen festzulegen.",
+          "refs": [
+            "R01",
+            "R02"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2023–2024",
+          "question": "Verhalten entlang und quer zu den Schichten messen.",
+          "title": "Probekörper, Schichtorientierung und Öffnungen",
+          "evidence": "Eine PET-G-Studie verglich Dreipunktbiegestäbe, Orthesensegmente und vollständige Orthesen experimentell und mit Finiten Elementen. Öffnungen, Krümmung und Druckrichtung bestimmen die Bauteilsteifigkeit gemeinsam.",
+          "refs": [
+            "R01",
+            "R06"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2025",
+          "question": "Lastbeiträge von Schale und Kern getrennt ermitteln.",
+          "title": "Schale und Kern",
+          "evidence": "Eine Studie an Druckfemora variierte Kortikalisdicke und trabekuläre Fülldichte. Druckbruchlasten lagen je Variante bei etwa 1100 bis 7300 N. Häufig brachen Kopf oder Hals, weshalb die Belastungslage zu dokumentieren ist.",
+          "refs": [
+            "R04"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2022",
+          "question": "Mehr als eine Messgröße zur Kalibrierung verwenden.",
+          "title": "Modelle an Bauteilen kalibrieren",
+          "evidence": "Künstliche und humane Femora wurden beim Einbringen eines Schafts anhand von Kräften und Dehnungen verglichen. Spitzenlast, Einsinkkurve und lokale Dehnung unter gleichen Bedingungen zeigen Unterschiede zwischen Ansätzen.",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2022–2024",
+          "question": "Reproduzierbarkeit an einer anwendungsspezifischen Aufgabe prüfen.",
+          "title": "Vom Bauteil zur Anwendung",
+          "evidence": "Wirbel, Femora und Unterarmorthesen haben unterschiedliche Lastgeometrien. Nach Abgleich der Gesamtsteifigkeit sind Versagensort, Lastübertragung, Verformungsrichtung und Fragmentierung zu vergleichen.",
+          "refs": [
+            "R03",
+            "R05",
+            "R06"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2022–2023",
+          "question": "Versagensorte für den nächsten Vergleich nutzen.",
+          "title": "Ergebnisse in Konstruktion und Prozess zurückführen",
+          "evidence": "Abweichungen mit Schichtbruch weisen auf Orientierung oder Schichtverbund. Ähnliches Volumenverhalten bei lokaler Überlastung lenkt den Blick auf Schalendicke, Öffnungen oder Lasteinleitung.",
+          "refs": [
+            "R01",
+            "R03",
+            "R04"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Probekörper, Schichtorientierung und Öffnungen",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Schale und Kern",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Modelle an Bauteilen kalibrieren",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Modelle an Bauteilen kalibrieren",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Vom Bauteil zur Anwendung",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Ergebnisse in Konstruktion und Prozess zurückführen",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Risspfade zur Anpassung von Orientierung und Dicke nutzen",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Untersuchungsrahmen und Ziele",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Strukturelle Medizinbauteile tragen Last oder bilden sie nach. Orthesen bestimmen Verformung und Anpassung, künstliche Knochen bilden Kräfte und Dehnungen nach, und Implantate erfordern zusätzlich Langzeitlasten und Grenzflächenbeurteilung."
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Einordnung der Einzelschritte",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Funktionslasten festlegen"
+          },
+          {
+            "type": "p",
+            "text": "Handgelenk-Hand-Orthesen begrenzen Bewegungen in bestimmten Richtungen. Knöchel-Fuß-Orthesen steuern Biegung und Rückstellung beim Gehen. Vor der Materialwahl sind Auflager, Lastrichtungen, Verformungsbereich und Kontaktstellen festzulegen. [R01] [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Randbedingungen der menschlichen Funktion zuordnen."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie aus dem Jahr 2011 nutzte Laserscanning, computergestütztes Design und Rapid Prototyping, um zwei individuelle Knöchel-Fuß-Orthesen herzustellen. Diese wurden anschließend an einem Probanden mit vorgefertigten Polypropylen-Orthesen verglichen. Die beobachtete Gangfunktion war vergleichbar, und die digitale Methode ermöglichte die Anpassung an individuelle anatomische Gegebenheiten. [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Dieser Knotenpunkt bildet die Basiskette von der Körperoberfläche bis zur Stützvorrichtung. Kontaktfläche, Kanten und der Platz im Schuh der Knöchel-Fuß-Orthese beeinflussen den Tragekomfort, während ihre einschränkende und stützende Wirkung auf das Gelenk von der Steifigkeit abhängt. Bei einer einfachen Formreproduktion können sich diese beiden Wirkungsebenen vermischen. Forschungsansätze können Materialien mit gleicher Geometrie vergleichen oder den Unterstützungsbereich bei gleichen Materialien variieren, um so schrittweise die morphologischen und mechanischen Beiträge zu ermitteln."
+          },
+          {
+            "type": "p",
+            "text": "Die Ganganalyse muss auf die vorab festgelegten Behandlungsziele abgestimmt sein. Beispielsweise können bei der Korrektur einer Fußheberschwäche die Zehenlücke und die Knöchelposition während der Schwungphase beobachtet werden; bei der Unterstützung instabiler Gelenke sollten die Belastungsphase und Links-Rechts-Unterschiede berücksichtigt werden. Schuhwerk, Gehgeschwindigkeit und Adaptationszeit sollten gleichzeitig erfasst werden, um die Interpretation von Variationen bei Verwendung desselben Geräts über verschiedene Messungen hinweg zu erleichtern. Das digitale Archiv speichert diese Bedingungen und ermöglicht so nachfolgende Anpassungen, um während des Gehens festgestellte Probleme direkt zu beheben und Vergleiche innerhalb eines Patienten mit dem ursprünglichen Protokoll durchzuführen."
+          },
+          {
+            "type": "p",
+            "text": "Eine Prothesenfußstudie von 2021 simulierte die terminale Standphase mit Finite-Elemente-Analyse. Vorfußkurve, Biegeraum, auxetische Struktur und Biegezone wurden zur Optimierung von Zehenmoment-Winkel-Beziehung und Spannungen verknüpft. Ergebnis war ein berechnetes Design einer druckbaren Struktur; Fertigung und weitere Validierung waren als nachfolgende Schritte vorgesehen.[R10]"
+          },
+          {
+            "type": "p",
+            "text": "Das wissenschaftliche Problem, das mit behandelt wird, besteht darin, dass ein und dasselbe Bauteil unter verschiedenen Verformungsgraden unterschiedlich reagiert. Die Anforderungen an die menschliche Fortbewegung lassen sich nicht durch eine feste Steifigkeit beschreiben; die Struktur kann den Luftwiderstand durch geometrische Veränderungen schrittweise erhöhen. Die Einbeziehung der Zielkurve in den Optimierungsprozess verlagert den Fokus der Forschung von der „fußähnlichen Form“ hin zur „Erzeugung des gewünschten mechanischen Verhaltens während einer definierten Bewegungsphase“. Gleichzeitig stellen maximale Spannungsbeschränkungen sicher, dass der Konstruktionsprozess sowohl die Verformung als auch die Tragfähigkeit berücksichtigt."
+          },
+          {
+            "type": "p",
+            "text": "Das Modell wird von der Berechnung zur praktischen Geräteimplementierung überführt. Dabei müssen Materialorientierung, Zwischenschichthaftung und Druckfehler in die mechanische Verifizierung einbezogen werden. Dies geschieht durch Messung der Drehmoment-Winkel-Kurve, anschließende Durchführung zyklischer und multidirektionaler Belastungstests und abschließende Untersuchung der Rollbewegung und -leistung des Nutzers bei verschiedenen Geschwindigkeiten. Jede Phase verwendet dieselbe Designversion, sodass Simulation, Labortests und Gehversuche gegenseitig interpretierbar sind. Dieser Knotenpunkt, zusammen mit der Knöchel-Fuß-Orthese, unterstreicht, dass die individuelle Steifigkeit entsprechend den spezifischen Bewegungszielen gewählt und ihre Anwendbarkeit durch reale Aufgaben verifiziert werden sollte."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Probekörper, Schichtorientierung und Öffnungen"
+          },
+          {
+            "type": "p",
+            "text": "Eine PET-G-Studie verglich Dreipunktbiegestäbe, Orthesensegmente und vollständige Orthesen experimentell und mit Finiten Elementen. Öffnungen, Krümmung und Druckrichtung bestimmen die Bauteilsteifigkeit gemeinsam. [R01] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Verhalten entlang und quer zu den Schichten messen."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Schale und Kern"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie an Druckfemora variierte Kortikalisdicke und trabekuläre Fülldichte. Druckbruchlasten lagen je Variante bei etwa 1100 bis 7300 N. Häufig brachen Kopf oder Hals, weshalb die Belastungslage zu dokumentieren ist. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Lastbeiträge von Schale und Kern getrennt ermitteln."
+          },
+          {
+            "type": "p",
+            "text": "Die Open-Source-Forschungsarbeit aus dem Jahr 2018 zur handgelenksgesteuerten Orthese berücksichtigte das Feedback von drei Rückenmarksverletzten und sechs Orthopädiestudierenden. Abmessungen und Montageanleitungen wurden öffentlich zugänglich gemacht. Die Materialkosten für verschiedene Größen liegen bei etwa 15–20 US-Dollar, die manuelle Montage dauert ca. 1,5 Stunden. Der Nutzen variiert je nach Anwendung, und das Feedback wird zur Optimierung der Struktur und der Befestigungselemente genutzt. [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Diese Studie unterteilt Barrierefreiheit in beobachtbare Schritte. Die einfache Verfügbarkeit von Materialien ist nur der Anfang; Hersteller müssen auch Größenanpassungen, Gelenkverbindungen und Passformmethoden berücksichtigen, während Nutzer das Kleidungsstück an- und ausziehen und einen stabilen Kontakt gewährleisten können müssen. Modifikationen an Gurten, Magnetverbindungen und Fingerstützen erweitern die Forschung von mechanischen Bewegungen auf alltägliche Funktionen. Für Menschen mit eingeschränkter Handbeweglichkeit ist die selbstständige Tragbarkeit an sich ein wichtiges funktionales Ziel."
+          },
+          {
+            "type": "p",
+            "text": "Das Auswertungstool eignet sich zur Dokumentation des gesamten Prozesses von der Messung bis zur ersten Anwendung, einschließlich Wartezeiten beim Drucken, manueller Montage, klinischer Anpassungen und Reproduktion. Durch die Zuordnung der Gründe für jede Modifikation zum jeweiligen Ergebnis lässt sich beurteilen, ob eine vereinfachte Montage die Zuverlässigkeit beeinträchtigt oder ob ein leichteres Ablegen die kontinuierliche Nutzung verbessert. Die Open-Source-Dokumentation kann versioniert werden, sodass verschiedene Institutionen dasselbe Protokoll reproduzieren und lokale Anforderungen in die Entwicklung einfließen lassen können. Dadurch wird aus einem kostengünstigen Prototyp ein kontinuierlich nutzbarer Rehabilitationsdienst."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Modelle an Bauteilen kalibrieren"
+          },
+          {
+            "type": "p",
+            "text": "Künstliche und humane Femora wurden beim Einbringen eines Schafts anhand von Kräften und Dehnungen verglichen. Spitzenlast, Einsinkkurve und lokale Dehnung unter gleichen Bedingungen zeigen Unterschiede zwischen Ansätzen. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Mehr als eine Messgröße zur Kalibrierung verwenden."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie zu Kontinuitätsdefekten des Unterkiefers nutzte gewichtete Topologieoptimierung für leichte Stützstrukturen an unterschiedlichen Defektpositionen und validierte sie mittels Finite-Elemente-Analyse und dynamischer Ermüdungsprüfung. Die in der Ausgabe von 2022 beschriebenen geprüften Strukturen bestanden 250.000 Lastzyklen. Damit wurde die Auswahl einheitlicher Zellen um die Auslegung defektspezifischer Lastpfade erweitert.[R12]"
+          },
+          {
+            "type": "p",
+            "text": "Die lokale Strukturoptimierung erfordert die Integration in ein komplettes Fixationssystem. Restknochen, Schraubenpositionen und Okklusionsrichtung verändern die Randbedingungen; bei Wirbelsäulenversteifungsimplantaten beeinflussen zudem Endplattenkontakt und Setzung die Gesamtleistung. Daher benötigen unterschiedliche Positionen jeweils eigene Validierungslasten und Versagenskriterien."
+          },
+          {
+            "type": "p",
+            "text": "Beide Studien zeigen, dass der mittlere Elastizitätsmodul nur einen Teil der Konstruktionsbeschreibung darstellt. Porosität kann die Gesamtsteifigkeit verringern und Lasten in endlichen Elementen oder fixierten Bereichen konzentrieren; sowohl die Reaktion auf die Knochenseite als auch das Versagen auf die Geräteseite sollten gleichzeitig erfasst werden."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Vom Bauteil zur Anwendung"
+          },
+          {
+            "type": "p",
+            "text": "Wirbel, Femora und Unterarmorthesen haben unterschiedliche Lastgeometrien. Nach Abgleich der Gesamtsteifigkeit sind Versagensort, Lastübertragung, Verformungsrichtung und Fragmentierung zu vergleichen. [R03] [R05] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Reproduzierbarkeit an einer anwendungsspezifischen Aufgabe prüfen."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Ergebnisse in Konstruktion und Prozess zurückführen"
+          },
+          {
+            "type": "p",
+            "text": "Abweichungen mit Schichtbruch weisen auf Orientierung oder Schichtverbund. Ähnliches Volumenverhalten bei lokaler Überlastung lenkt den Blick auf Schalendicke, Öffnungen oder Lasteinleitung. [R01] [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Versagensorte für den nächsten Vergleich nutzen."
+          }
+        ]
+      },
+      {
+        "title": "Vergleich der Befunde",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Finite-Elemente-Modelle sind anhand unabhängiger Lastfälle mit Anisotropie, Randbedingungen und Kontakt zu prüfen. Übereinstimmung im Biegeversuch ist der Ausgangspunkt, gefolgt von Dehnungsverteilung und tatsächlichem Versagen am Gesamtbauteil. [R01] [R03]"
+          }
+        ]
+      },
+      {
+        "title": "Industrielle Ansätze und dokumentierte Produkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Orthesenanbieter verbinden Scan, klinische Anpassung und Fertigung. Ausgangssteifigkeit, lokale Passung, Nacharbeit und Wartung digitaler und konventioneller Wege sind nach Funktionsaufgabe zu vergleichen."
+          },
+          {
+            "type": "p",
+            "text": "Der aktuelle Prozess von Spentys zur Herstellung von Knöchel-Fuß-Orthesen berücksichtigt Gewicht, Aktivitätsniveau, klinische Art, Scanquelle, Stützform, lokale Dicke und Fertigungsort. Dynamische Modelle ermöglichen zudem die Auswahl der Gelenkkonfiguration und der Aktivitätsanforderungen. Diese Plattform wandelt klinische Vorgaben in Felder um, die sowohl an Design als auch an Fertigung weitergegeben werden können. So wird eine Individualisierung über die rein physikalischen Dimensionen hinaus ermöglicht und Institutionen können zwischen zentralisierter Druckerei und lokaler Fertigung wählen. [R13]"
+          },
+          {
+            "type": "p",
+            "text": "ActivArmors Versorgerablauf verbindet Smartphone-Scans, individuelle Entwürfe nach klinischer Positionierung und Vorgaben sowie Fertigung in der Einrichtung. Die Fixierungs- und Schutzprodukte bieten mit offenen Strukturen und verstellbarer Befestigung Raum für Kontrolluntersuchungen.[R14] Scanerfolg, Designrückläufe, erstes Anlegen und Anpassungen nach Volumenänderungen zeigen, wie die Fertigung am selben Tag im gesamten Ablauf gelingt."
+          }
+        ]
+      },
+      {
+        "title": "Patentmechanismen und Prüfung für den Einsatz",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN112155795A beschreibt eine regional trabekuläre Hüftkomponente. CN121101779A betrifft eine dentale Vorrichtung mit regional variablen Eigenschaften. Beide erfordern Prüfungen von Zonengrenzen, mechanischem Verhalten und Gesamtversagen. [R07] [R08]"
+          },
+          {
+            "type": "p",
+            "text": "US2016235158A1 nennt Clemson University und ABILITY PROSTHETICS & ORTHOTICS und beschreibt lokale Härte über Zellhohlraum/Material. AFO-Gang- und Handorthesenstudien zeigen unterschiedliche Stützung bei gleicher Kontur. Spentys-Gewichts-/Aktivitäts-/Dickenfelder liefern Eingaben, ActivArmor Körperhaltungs-/Offenstrukturkontext. Druck, Aufgaben und Anlegen zusammen mit Härte prüfen.[R09][R11][R13][R14][R15]"
+          },
+          {
+            "type": "p",
+            "text": "US2022339017A1 der University of Michigan beschreibt getrennte gedruckte Fußplatte/Manschette und vorgefertigte Strebe mit Breite/Dicke für Knöchelsteifigkeit und Schuhraum. Nichtlineare Fußstudien erweitern Mittelsteifigkeit zu Moment-Winkel-/Phasenreaktion. Spentys liefert Aktivitätskontext. Streben, Verbindungen und Gesamtgerät prüfen; Bauteilsteifigkeit allein belegt keinen Gangnutzen.[R09][R10][R13][R16]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick auf Forschung und Anwendung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Ein reproduzierbarer Datensatz aus Modell, Drucker, lokalen Werkstoffeigenschaften und Versagensprüfung zeigt, ob Fertigungsänderungen Zielsteifigkeit und Reserve erhalten. [R01] [R03] [R06]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Mechanical Evaluation of PET-G 3D-Printed Wrist-Hand Orthosis: An Integrated Experimental and Numerical Approach.",
+        "url": "https://doi.org/10.3390/ma16186132",
+        "year": "2023",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R01"
+      },
+      {
+        "title": "Mechanical Properties of Carbon Fiber Reinforced Materials for 3D Printing of Ankle Foot Orthoses",
+        "url": "https://doi.org/10.12913/22998624/188819",
+        "year": "2024",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R02"
+      },
+      {
+        "title": "Biomechanical validation of additively manufactured artificial femoral bones",
+        "url": "https://doi.org/10.1186/s42490-022-00063-1",
+        "year": "2022",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R03"
+      },
+      {
+        "title": "Influence of the Cortical Layer Thickness and Trabecular Layer Pattern Density on 3D-Printed Femur Strength.",
+        "url": "https://doi.org/10.3390/ma18102187",
+        "year": "2025",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R04"
+      },
+      {
+        "title": "Biomechanical evaluation of individual 3D-printed vertebrae.",
+        "url": "https://doi.org/10.1186/s42490-026-00107-w",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R05"
+      },
+      {
+        "title": "Assessment of the Mechanical Properties and Fragment Characteristics of a 3D-Printed Forearm Orthosis.",
+        "url": "https://doi.org/10.3390/polym16233349",
+        "year": "2024",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R06"
+      },
+      {
+        "title": "Additive manufacturing titanium alloy partition bone trabecula artificial hip joint oversleeve and preparation method",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN112155795A",
+        "year": "2021",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R07"
+      },
+      {
+        "title": "Dental appliance with regional differentiation physical properties and additive manufacturing method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN121101779A",
+        "year": "2025",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R08"
+      },
+      {
+        "title": "Patient specific ankle-foot orthoses using rapid prototyping",
+        "year": "2011",
+        "source": "Journal of NeuroEngineering and Rehabilitation",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3024934/",
+        "kind": "原始研究",
+        "id": "R09"
+      },
+      {
+        "title": "Design of 3D printable prosthetic foot to implement nonlinear stiffness behavior of human toe joint based on finite element analysis",
+        "year": "2021",
+        "source": "Scientific Reports",
+        "url": "https://www.nature.com/articles/s41598-021-98839-3",
+        "kind": "原始研究",
+        "id": "R10"
+      },
+      {
+        "title": "Design of a 3D-printed, open-source wrist-driven orthosis for individuals with spinal cord injury",
+        "year": "2018",
+        "source": "PLOS ONE",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0193106",
+        "kind": "原始研究",
+        "id": "R11"
+      },
+      {
+        "id": "R12",
+        "title": "Design Criteria for Patient-specific Mandibular Continuity Defect Reconstructed Implant with Lightweight Structure using Weighted Topology Optimization and Validated with Biomechanical Fatigue Testing",
+        "year": "2022",
+        "source": "International Journal of Bioprinting",
+        "kind": "原始研究",
+        "url": "https://www.accscience.com/journal/IJB/8/1/10.18063/ijb.v8i1.437"
+      },
+      {
+        "title": "How to make your 3D Printed AFO - Custom Workflow",
+        "year": "2026年现行资料",
+        "source": "Spentys",
+        "url": "https://help.spentys.com/how-to-make-your-3d-printed-afo-custom-workflow",
+        "kind": "企业技术资料",
+        "id": "R13"
+      },
+      {
+        "title": "Provider workflow",
+        "year": "2026年现行资料",
+        "source": "ActivArmor",
+        "url": "https://www.activarmor.com/provider",
+        "kind": "企业技术资料",
+        "id": "R14"
+      },
+      {
+        "id": "R15",
+        "title": "Variable hardness orthotic",
+        "year": "2016",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS2016235158A1",
+        "source": "Espacenet",
+        "kind": "patent"
+      },
+      {
+        "id": "R16",
+        "title": "SYSTEM AND METHOD FOR ADDITIVELY MANUFACTURING AN ANKLE FOOT ORTHOSIS",
+        "year": "2022",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS2022339017A1",
+        "source": "Espacenet",
+        "kind": "patent"
+      }
+    ]
+  }
+}

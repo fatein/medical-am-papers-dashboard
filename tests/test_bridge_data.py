@@ -177,7 +177,10 @@ def test_selection_intersects_scope_application_topic_and_literal_query():
 def test_snapshot_retains_every_record_and_all_report_scopes():
     from dashboard.bridge_data import load_bridge
     graph = load_bridge(ROOT)
-    assert [len(graph[k]) for k in ['papers', 'patents', 'companies', 'reports']] == [7169, 5516, 352, 148]
+    import json
+    manifest = json.loads((ROOT/'data/manifest.json').read_text(encoding='utf-8'))
+    assert [len(graph[k]) for k in ['papers', 'patents', 'companies', 'reports']] == [
+        manifest['total_rows'], 5516, 352, 148]
     assert all(len(row['abstract_excerpt']) <= 360 for row in graph['patents'])
     assert all('source_urls' in c for c in graph['companies'])
     assert all(row['facet_terms'] for p in graph['reports'].values() if p['scope'] == 'question' for row in p['patent_links'])

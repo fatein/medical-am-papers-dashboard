@@ -1,0 +1,1616 @@
+{
+  "zh": {
+    "id": "H23",
+    "p": "P1",
+    "title": "聚合物及复合支架的结构制造与组织修复",
+    "subtitle": "从可制造的孔道到缺损适配与时间匹配",
+    "thesis": "聚合物、陶瓷填料与多尺度支架可分别调节成形、支撑和组织界面。先检查真实孔道与力学，再用细胞、缺损及软组织环境分层检验。 [R01] [R03] [R05]",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络 · 聚合物及复合支架的结构制造与组织修复",
+      "summary": "缺损需求向材料与空间结构展开两路。成品与界面验证把两条路线连接，缺损中的分区组织形成和残余支架记录反馈设计。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2020",
+          "question": "将缺损几何转成区域功能。",
+          "title": "以缺损设定结构",
+          "evidence": "牙周多层支架研究把区域组织需求写入结构。可以区分软组织阻隔、骨空间保持与相邻组织通路，分别定义厚度、孔结构和接口可承受的搬运变化。",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2022",
+          "question": "核对孔通路和纤维覆盖。",
+          "title": "多尺度孔结构",
+          "evidence": "PCL研究将打印大尺度构筑与电纺微纤维结合，并评估结构与成骨分化。添加尺度后应分开检查承载、空间连通及到达内部的能力。",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2025",
+          "question": "分离设计尺寸与实测成形尺寸。",
+          "title": "配方与可制造性",
+          "evidence": "单步熔融挤出制备仿骨生物陶瓷支架，将复合配方放到成形设备内验证。应同步查看连续性、真实条宽、填料分布与层间结合。",
+          "refs": [
+            "R04"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2025",
+          "question": "用共同几何对照分离界面效果。",
+          "title": "表面功能与基础支撑",
+          "evidence": "RGD功能化涂层研究把生物活性设计与PCL主体可加工性分开。配对比较可固定结构并改变表面，也可固定表面比较孔形。",
+          "refs": [
+            "R05"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2021",
+          "question": "用空间结果解读组织修复。",
+          "title": "从细胞到缺损",
+          "evidence": "医用PCL与β-TCP支架研究考察成骨分化中的基因表达。评价扩展到缺损时，还需区分细胞早期信号、骨连接、固定与连续组织结构。",
+          "refs": [
+            "R06"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2020–2021",
+          "question": "将中心和边缘的结果反馈材料与孔道。",
+          "title": "时间与失效反馈",
+          "evidence": "若边缘有组织形成而中央不足，应结合真实连通、固定和材料消退位置寻找机制。持续支撑和组织进入的时点可用成品、缺损和随访分别记录。",
+          "refs": [
+            "R01",
+            "R03",
+            "R06"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "多尺度孔结构",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "配方与可制造性",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "表面功能与基础支撑",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "表面功能与基础支撑",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "从细胞到缺损",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "时间与失效反馈",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "以缺损中心与边缘差异修订孔道",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究范围与目标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "本方向聚焦结构制造如何服务修复。不同部位的空间保持、固定、液体通道与分解时间各不相同，共同材料名称并不能定义可直接互换的产品。"
+          }
+        ]
+      },
+      {
+        "title": "学术研究脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 以缺损设定结构"
+          },
+          {
+            "type": "p",
+            "text": "牙周多层支架研究把区域组织需求写入结构。可以区分软组织阻隔、骨空间保持与相邻组织通路，分别定义厚度、孔结构和接口可承受的搬运变化。 [R01]"
+          },
+          {
+            "type": "p",
+            "text": "将缺损几何转成区域功能。"
+          },
+          {
+            "type": "p",
+            "text": "2020 年研究用打印 PCL 框架容纳羟基磷灰石和 β-TCP 颗粒，把聚合物的成形能力与陶瓷颗粒结合。细胞实验评价了增殖和成骨相关活性。这一阶段的贡献是将容易散失的填充材料组织成保持形状、具有连通空间的构件；后续问题是颗粒保留与组织进入能否同时维持。[R10]"
+          },
+          {
+            "type": "p",
+            "text": "支架首先承担空间组织任务。散装颗粒的化学组成与被框架限制后的组成可以相同，但位置保持、颗粒间通路和局部稳定性已经变化。因此，评价应把“保留了多少颗粒”与“剩下多少可进入空间”同时测量，避免以颗粒装填量代替有效修复体积。复合方案的细胞优势还需要对应到细胞实际接触的位置。"
+          },
+          {
+            "type": "p",
+            "text": "2022 年 TCP 支架研究采用多孔内部与较致密外部的结构，并负载姜、蒜提取物，在体外和大鼠股骨模型中评价细胞与骨形成。研究将支撑、局部释放和组织反应放在一个体系内，展示复合设计的另一条路径。此后的关键是明确添加物、结构和释放各自贡献，而不是用最终骨量替代机制分析。[R11]"
+          },
+          {
+            "type": "p",
+            "text": "分区结构将外部支撑与内部组织进入分开安排，添加物又引入释放与作用时间。最终组织结果可能同时来自几何、陶瓷界面、载体及添加成分，因而评价协同需要具有相同结构的未负载对照，以及不同成分单独和联合使用的比较。若只有最复杂组合与空白组，无法判断增加复杂度是否必要。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 多尺度孔结构"
+          },
+          {
+            "type": "p",
+            "text": "PCL研究将打印大尺度构筑与电纺微纤维结合，并评估结构与成骨分化。添加尺度后应分开检查承载、空间连通及到达内部的能力。 [R03]"
+          },
+          {
+            "type": "p",
+            "text": "核对孔通路和纤维覆盖。"
+          },
+          {
+            "type": "p",
+            "text": "2024 年 PLGA 微球打印研究比较不同直径微球形成的支架，在小鼠颅骨缺损中观察骨形成。微球尺寸改变了局部接触、空间组织和组织进入条件，使“结构设计”由毫米级外形进一步延伸到构筑单元。该模型提供了骨位点内的修复证据，也提出降解过程与微球间通路如何协同变化的问题。[R12]"
+          },
+          {
+            "type": "p",
+            "text": "2024 年 PLGA 微球支架在小鼠颅骨缺损中比较微球尺寸，将结构变量与骨位点修复联系起来。这里应同时观察骨从边缘向内部的分布、支架残留和对照组愈合，从而判断结构是否真正改善了缺损内部的组织形成。[R12]"
+          },
+          {
+            "type": "p",
+            "text": "微球直径变化不仅改变局部曲率，也会改变接触点、间隙和降解时的结构保持。因此，解释骨形成时应把初始孔隙与随时间出现的通路区分开。若只在终点测量剩余材料与骨量，难以辨认细胞进入是由最初结构还是降解后开放造成，适合加入早期空间分布与中期材料状态观察。"
+          },
+          {
+            "type": "p",
+            "text": "2026 年研究比较 PCL 与 β-TCP 的网格、蜂窝和 gyroid 结构，并纳入 PCL 纳米纤维体系。力学测试与短期细胞实验显示，较高刚度、较大变形能力和较好的早期细胞表现并不集中于同一种体系。由此应把材料选择与结构选择共同优化，按缺损的承载和组织需求确定组合。[R13]"
+          },
+          {
+            "type": "p",
+            "text": "2026 年 PCL/β-TCP 多结构对照研究使用短期 MG63 培养，显示早期细胞表现与结构、材料共同相关。它提供了便于重复的基础比较，也说明短期增殖与成熟骨形成应使用不同评价终点。链路由此形成闭环：复杂生物信号方案仍需要可靠的结构与细胞基础对照。[R13]"
+          },
+          {
+            "type": "p",
+            "text": "材料与孔形的共同比较能够暴露单指标排序的矛盾。更高的承载或更均匀的变形、较好的早期细胞铺展，可能来自不同体系；选择取决于缺损需要哪种功能，并且是否由其他固定装置承担主要载荷。研究中的短期培养与力学测试构成筛选依据，后续应在水合、降解和组织环境下检查排序是否保持。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 配方与可制造性"
+          },
+          {
+            "type": "p",
+            "text": "单步熔融挤出制备仿骨生物陶瓷支架，将复合配方放到成形设备内验证。应同步查看连续性、真实条宽、填料分布与层间结合。 [R04]"
+          },
+          {
+            "type": "p",
+            "text": "分离设计尺寸与实测成形尺寸。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 表面功能与基础支撑"
+          },
+          {
+            "type": "p",
+            "text": "RGD功能化涂层研究把生物活性设计与PCL主体可加工性分开。配对比较可固定结构并改变表面，也可固定表面比较孔形。 [R05]"
+          },
+          {
+            "type": "p",
+            "text": "用共同几何对照分离界面效果。"
+          },
+          {
+            "type": "p",
+            "text": "2023 年 pergola 支架研究结合有限元与流体计算优化结构，再配置牙乳头干细胞、BMP9 和 VEGF。裸鼠皮下实验中，含 BMP9 的组合出现骨形成，而增加 VEGF 未显著进一步提高成骨。这一结果说明，加入更多信号并不自动产生协同效果；剂量、时间与局部通路需要一起研究。[R14]"
+          },
+          {
+            "type": "p",
+            "text": "2023 年 pergola 支架在裸鼠皮下植入，并组合牙乳头干细胞、BMP9 和 VEGF。其作用是研究所配置体系在异位环境中的骨形成；它并未直接重建承受咀嚼载荷的牙槽骨缺损。不同因子组的比较帮助判断生物信号贡献，随后需要在目标骨位点检验同一方案。[R14]"
+          },
+          {
+            "type": "p",
+            "text": "几何计算首先回答支架能否维持空间和允许流动，因子比较随后回答在这一空间里哪些信号改变组织反应。VEGF组合未表现进一步成骨增益，提示协同需要在具体剂量、供给和观察时间下检验。无统计增益也不等于血管对修复没有作用，而是需要追踪血管和骨形成的先后及相互关系。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 从细胞到缺损"
+          },
+          {
+            "type": "p",
+            "text": "医用PCL与β-TCP支架研究考察成骨分化中的基因表达。评价扩展到缺损时，还需区分细胞早期信号、骨连接、固定与连续组织结构。 [R06]"
+          },
+          {
+            "type": "p",
+            "text": "用空间结果解读组织修复。"
+          },
+          {
+            "type": "p",
+            "text": "2026 年 PDLLA/SrHAp 小型猪下颌研究保留骨膜并采用钛板固定，12 只动物中有 11 只出现并发症。缺损最终出现桥接，但骨主要形成于支架周围，部分提前移除支架的动物也发生桥接。该结果说明，单看影像上的连续骨不能确定支架内部整合，更不能把全部修复归于支架材料。[R15]"
+          },
+          {
+            "type": "p",
+            "text": "沿上述链路，评价应同时记录骨形成的位置和质量、材料残留、固定状态、软组织恢复及二次干预。支架如果增加骨量却导致难以处理的伤口问题，仍需要改变设计或使用流程。模型因此成为识别改进方向的工具，而不仅是确认可行性的步骤。"
+          },
+          {
+            "type": "p",
+            "text": "这项研究使支架评价面对完整手术环境。骨膜、重建板和周围组织都可能促进缺损桥接，因此影像上的连续性需要结合骨的位置与材料界面解释。软组织开裂、肿胀或提前移除还会改变后续条件，记录全部动物的时间线有助于辨认修复到底发生在何种状态下。"
+          },
+          {
+            "type": "p",
+            "text": "2023年研究比较打印聚合物/羟基磷灰石和烧结羟基磷灰石支架，观察到异物反应较强的界面出现更多巨噬细胞、异物巨细胞和纤维组织，相关区域缺少直接骨整合；孔内骨形成与骨向材料表面的连接具有不同空间过程。[R16]"
+          },
+          {
+            "type": "p",
+            "text": "这补上了总骨量与功能之间的一环。新骨可能形成在支架附近或孔道中，却尚未建立能够传递载荷的接触；材料周围的纤维层又可能改变两者关系。因此可以把缺损填充、孔内骨分布、直接接触和力学连接作为相邻指标，追踪一个改善能否传向下一层。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 时间与失效反馈"
+          },
+          {
+            "type": "p",
+            "text": "若边缘有组织形成而中央不足，应结合真实连通、固定和材料消退位置寻找机制。持续支撑和组织进入的时点可用成品、缺损和随访分别记录。 [R01] [R03] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "将中心和边缘的结果反馈材料与孔道。"
+          }
+        ]
+      },
+      {
+        "title": "研究之间如何比较",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "同材料比较结构可隔离孔形效应，同结构比较涂层可隔离界面贡献。长期评价还应计算剩余材料、桥接形态与承载状态的时间关系。"
+          }
+        ]
+      },
+      {
+        "title": "企业路线与公开产品",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "FDA 510(k) K213260 将 Dimension Inx 的 CMFlex 记录为羟基磷灰石与可降解聚合物结合的合成骨移植块。挤出结构包含宏观孔道与支柱微孔，产品范围对应规定的骨缺损填充用途。 [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Ossiform 的 P3D Scaffolds 以打印 β-TCP 支架服务三维细胞培养。其商品支架直接进入 2026 年材料—结构对比研究，企业提供可重复获得的结构，研究团队比较力学与早期细胞表现，形成明确的产品—论文联系。[R17] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Dimension Inx 于 2023 年公布 CMFlex 首批手术应用，采用 HA/PLGA 复合路线，目标是口腔颌面骨移植。CERHUM 的 MyBone 则以患者特异性多孔羟基磷灰石构件进入颅颌面重建。两者分别体现复合材料可操作性与个体化陶瓷结构的产品化选择。[R18] [R19]"
+          },
+          {
+            "type": "p",
+            "text": "Ossiform P3D Scaffolds 提供 β-TCP 三维培养支架，2026 年材料—结构论文实际使用其商品构件。企业供应稳定结构，学术团队评价细胞与力学结果，使跨团队的研究更容易使用共同起点。[R17] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Ossiform 提供研究级 β-TCP 支架，商品构件进入材料与结构对照研究，为相同条件下的比较提供基础。其价值是减少结构来源变化，使研究者能够聚焦生物与培养条件。[R17] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "2026 年 PDLLA/SrHAp 下颌论文披露 INNOTERE 与 KLS Martin 人员参与。大型动物结果把材料、制造、固定和手术条件连在一起，体现产品研发与评价方法之间的直接联系。并发症和组织分布也为下一轮设计提供了具体问题。[R15]"
+          }
+        ]
+      },
+      {
+        "title": "专利机制与转化验证",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN115554476A将打印与发泡相结合，CN121445944A面向羟基磷灰石/氧化锆复合多孔支架。两类方案需要分别核对多尺度连通性、实际空间保持与复合界面的成形可靠性。 [R07] [R08]"
+          },
+          {
+            "type": "p",
+            "text": "上海九院/上海交通大学CN111848150A描述锶铜硅酸盐与磷酸三钙复合陶瓷、打印后烧结，并提出骨软骨一体修复用途。它与双峰孔陶瓷添加物研究及PCL/β-TCP孔形比较的交点，是化学组成、孔形和力学是否能独立拆分。CERHUM的合成陶瓷路线提供形状与界面参照；应同时报告离子暴露、降解和软骨下骨区域，避免把一个表面的成骨反应替代整个骨软骨界面。[R11][R13][R19][R20]"
+          },
+          {
+            "type": "p",
+            "text": "华东理工大学CN111956864A描述β-TCP/可降解PEGS有机无机复合支架，通过组分调节流变、打印和力学。它与PCL框架保留颗粒、PLGA微球构筑以及材料—孔形共同对照形成桥梁：结构完整性来自骨替代颗粒、聚合物相和几何的组合。CMFlex的复合材料产品情境可帮助提出操作和保持形状的问题，但该专利不等于CMFlex配方；关键是湿态稳定与降解后载荷如何变化。[R10][R12][R13][R18][R21]"
+          }
+        ]
+      },
+      {
+        "title": "后续研究与应用走向",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "可观察的进展包括按缺损尺寸匹配的参数数据库、真实结构质控和位置分辨的组织响应。产品价值可用首次适合、术中修整、固定保持和长期事件衡量。 [R01] [R03] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "研究优先序首先应围绕空间而非总量组织。用原始设计、成品扫描和组织切片建立共同坐标，把缺损边缘、骨膜侧、支架中心及固定板附近分区，分别量化骨、血管、材料残留与纤维组织。这样能够回答骨是否进入预期区域，也能将并发症位置与支架外形对应。"
+          },
+          {
+            "type": "p",
+            "text": "第二项优先任务是建立材料状态的时间轴。在组织采样前后测量尺寸、力学和释放，明确某个细胞反应发生时支架处于什么状态。比较可降解与永久骨架时，应以承担的功能和组织接替时间为共同参照，而不是要求两类材料拥有同一降解终点。"
+          },
+          {
+            "type": "p",
+            "text": "第三项是分离支架贡献与手术环境贡献。固定板、骨膜保留和软组织处理应完整记录，必要时用分层对照回答其影响。大型动物中的提前移除、感染处理和再次固定应进入分析，因为这些事件直接改变了材料暴露及后续修复条件，不能从研究路径中消失。"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Towards 3D Multi-Layer Scaffolds for Periodontal Tissue Engineering Applications: Addressing Manufacturing and Architectural Challenges.",
+        "url": "https://doi.org/10.3390/polym12102233",
+        "year": "2020",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R01"
+      },
+      {
+        "title": "Engineering Porous PET-RAFT Scaffolds with PLGA-Insulin Nanoparticles: Advancing Bone Tissue Regeneration Through Additive Manufacturing.",
+        "url": "https://doi.org/10.3390/polym18101184",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R02"
+      },
+      {
+        "title": "Hybrid 3D Printed and Electrospun Multi-Scale Hierarchical Polycaprolactone Scaffolds to Induce Bone Differentiation.",
+        "url": "https://doi.org/10.3390/pharmaceutics14122843",
+        "year": "2022",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R03"
+      },
+      {
+        "title": "Development of Bioceramic Bone-Inspired Scaffolds Through Single-Step Melt-Extrusion 3D Printing for Segmental Defect Treatment.",
+        "url": "https://doi.org/10.3390/jfb16100358",
+        "year": "2025",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R04"
+      },
+      {
+        "title": "Decoupling Bioactivity and Processability: RGD Click-Functionalized Coatings for a 3D-Printed PCL Scaffold.",
+        "url": "https://doi.org/10.1021/acs.biomac.5c01691",
+        "year": "2025",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R05"
+      },
+      {
+        "title": "Modifications in Gene Expression in the Process of Osteoblastic Differentiation of Multipotent Bone Marrow-Derived Human Mesenchymal Stem Cells Induced by a Novel Osteoinductive Porous Medical-Grade 3D-Printed Poly(ε-caprolactone)/β-tricalcium Phosphate Composite.",
+        "url": "https://doi.org/10.3390/ijms222011216",
+        "year": "2021",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R06"
+      },
+      {
+        "title": "Method for preparing polylactic acid-based bone repair tissue engineering porous scaffold by combining 3D printing with supercritical foaming design",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN115554476A",
+        "year": "2023",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R07"
+      },
+      {
+        "title": "3D printing preparation method of hydroxyapatite/zirconium dioxide composite porous scaffold for bone defect repair, scaffold and application",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN121445944A",
+        "year": "2026",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R08"
+      },
+      {
+        "title": "FDA 510(k) K213260 · CMFlex",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf21/K213260.pdf",
+        "year": "2022",
+        "kind": "企业公告",
+        "source": "企业公告",
+        "id": "R09"
+      },
+      {
+        "id": "R10",
+        "title": "Fabrication of Three-Dimensional Composite Scaffold for Simultaneous Alveolar Bone Regeneration in Dental Implant Installation",
+        "year": "2020",
+        "source": "International Journal of Molecular Sciences",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7084329/"
+      },
+      {
+        "id": "R11",
+        "title": "Ginger and Garlic Extracts Enhance Osteogenesis in 3D Printed Calcium Phosphate Bone Scaffolds with Bimodal Pore Distribution",
+        "year": "2022",
+        "source": "ACS Applied Materials & Interfaces",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9034760/"
+      },
+      {
+        "id": "R12",
+        "title": "The induction of bone formation by 3D-printed PLGA microsphere scaffolds in a calvarial orthotopic mouse model: a pilot study",
+        "year": "2024",
+        "source": "Frontiers in Bioengineering and Biotechnology",
+        "kind": "原始研究",
+        "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1425469/full"
+      },
+      {
+        "id": "R13",
+        "title": "Scaffold Material–Architecture Design Rules Linking Mechanics and Early Osteogenesis in PCL/β-TCP Grid, Honeycomb, and Gyroid Lattices",
+        "year": "2026",
+        "source": "ACS Omega",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13150591/"
+      },
+      {
+        "id": "R14",
+        "title": "Effectiveness of biomechanically stable pergola-like additively manufactured scaffold for extraskeletal vertical bone augmentation",
+        "year": "2023",
+        "source": "Frontiers in Bioengineering and Biotechnology",
+        "kind": "原始研究",
+        "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2023.1112335/full"
+      },
+      {
+        "id": "R15",
+        "title": "Preclinical evaluation of patient-specific 3D-printed PDLLA/SrHAp implants in a minipig segmental mandibular defect model",
+        "year": "2026",
+        "source": "Materials Today Bio",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13473966/"
+      },
+      {
+        "id": "R16",
+        "title": "Elucidating osseointegration in vivo in 3D printed scaffolds eliciting different foreign body responses",
+        "year": "2023",
+        "source": "Materials Today Bio",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37674779/"
+      },
+      {
+        "id": "R17",
+        "title": "P3D Scaffolds technical datasheet",
+        "year": "2026",
+        "source": "Ossiform",
+        "kind": "企业产品资料",
+        "url": "https://ossiform.com/wp-content/uploads/2026/03/P3D-Scaffolds-Technical-Datasheet.pdf"
+      },
+      {
+        "id": "R18",
+        "title": "Dimension Inx announces first surgical cases utilizing CMFlex",
+        "year": "2023",
+        "source": "Dimension Inx",
+        "kind": "企业公告",
+        "url": "https://www.prnewswire.com/news-releases/dimension-inx-announces-first-surgical-cases-utilizing-cmflex-synthetic-bone-graft---the-first-3d-printed-regenerative-bone-graft-product-cleared-by-the-fda-301946996.html"
+      },
+      {
+        "id": "R19",
+        "title": "MyBone: patient-specific synthetic bone grafts",
+        "year": "2026访问",
+        "source": "CERHUM",
+        "kind": "企业产品资料",
+        "url": "https://www.cerhum.com/solution/mybone"
+      },
+      {
+        "id": "R20",
+        "title": "SrCuSi4O10-Ca3(PO4)2 composite biological ceramic, bone scaffold and application of bone scaffold",
+        "year": "2020",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN111848150A",
+        "source": "Espacenet",
+        "kind": "patent"
+      },
+      {
+        "id": "R21",
+        "title": "3D printing composite stent as well as preparation method and application thereof",
+        "year": "2020",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN111956864A",
+        "source": "Espacenet",
+        "kind": "patent"
+      }
+    ]
+  },
+  "en": {
+    "id": "H23",
+    "p": "P1",
+    "title": "Structural fabrication and tissue repair with polymer and composite scaffolds",
+    "subtitle": "From manufacturable pores to defect fit and time-dependent performance",
+    "thesis": "Polymers, ceramic fillers and multiscale scaffolds allow separate control of fabrication, support and tissue interfaces. Verify the actual pore network and mechanics first, then assess cells, defects and surrounding soft tissue at distinct stages. [R01] [R03] [R05]",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway · Structural fabrication and tissue repair with polymer and composite scaffolds",
+      "summary": "Defect requirements branch into material and architecture. Finished-part and interface tests connect them. Spatial tissue formation and remaining scaffold in the defect feed back into design.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2020",
+          "question": "Translate defect geometry into regional functions.",
+          "title": "Define the architecture from the defect",
+          "evidence": "A multilayer periodontal scaffold was designed around regional requirements. Barrier function, bone-space maintenance and adjacent-tissue pathways call for distinct thicknesses, pores and interface handling tolerances.",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2022",
+          "question": "Check pore pathways and fibre coverage.",
+          "title": "Multiscale pore architecture",
+          "evidence": "A PCL study combined printed macrostructure with electrospun fibres and assessed architecture and osteogenic differentiation. Adding a scale calls for checking load, connectivity and access to the interior separately.",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2025",
+          "question": "Separate nominal dimensions from fabricated dimensions.",
+          "title": "Formulation and manufacturability",
+          "evidence": "Single-step melt extrusion of bone-inspired ceramic-bearing scaffolds tests the formulation on the manufacturing equipment. Characterize strand continuity, width, filler distribution and interlayer bonds together.",
+          "refs": [
+            "R04"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2025",
+          "question": "Use shared geometry to isolate interface effects.",
+          "title": "Surface function and structural support",
+          "evidence": "An RGD-functionalized coating study separated bioactivity from the processability of the PCL core. Matched designs can vary only the surface or only the pore architecture.",
+          "refs": [
+            "R05"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2021",
+          "question": "Interpret repair through spatial outcomes.",
+          "title": "From cells to defect performance",
+          "evidence": "A medical-grade PCL and β-TCP scaffold study examined gene expression during osteogenic differentiation. Defect studies additionally distinguish early cellular signals, bone continuity, fixation and spatial tissue structure.",
+          "refs": [
+            "R06"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2020–2021",
+          "question": "Feed regional results back to material and pore design.",
+          "title": "Feed back time and failure",
+          "evidence": "Where tissue forms at the edge but not the centre, compare connectivity, fixation and local material loss. Follow support and tissue ingress over time from the finished part into defect evaluation and follow-up.",
+          "refs": [
+            "R01",
+            "R03",
+            "R06"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Multiscale pore architecture",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Formulation and manufacturability",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Surface function and structural support",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Surface function and structural support",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "From cells to defect performance",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Feed back time and failure",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Revise pore design from central and peripheral repair",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Scope and objectives",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "This direction studies how scaffold fabrication serves repair. Space maintenance, fixation, fluid paths and resorption vary by site. Products with the same nominal material can have different functions."
+          }
+        ]
+      },
+      {
+        "title": "Academic pathway and interpretation",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Define the architecture from the defect"
+          },
+          {
+            "type": "p",
+            "text": "A multilayer periodontal scaffold was designed around regional requirements. Barrier function, bone-space maintenance and adjacent-tissue pathways call for distinct thicknesses, pores and interface handling tolerances. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Translate defect geometry into regional functions."
+          },
+          {
+            "type": "p",
+            "text": "A 2020 study used printed PCL frameworks to retain hydroxyapatite and β-TCP particles, combining polymer formability with ceramic particles. Cell experiments evaluated proliferation and osteogenic activity. The contribution was to organize readily dispersed filler into shape-retaining components with interconnected spaces; the next question is whether particle retention and tissue entry can be maintained together. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "The scaffold primarily undertakes the task of spatial organization. The chemical composition of the bulk particles may be the same as that of the scaffolded particles, but positional retention, interparticle pathways, and local stability have changed. Therefore, evaluation should simultaneously measure \"how many particles were retained\" and \"how much remains available for entry into the space,\" avoiding substituting particle packing volume for effective repair volume. The cellular advantages of the composite approach also need to be correlated with the actual location of cell contact."
+          },
+          {
+            "type": "p",
+            "text": "A 2022 TCP scaffold study combined a porous interior with a denser exterior and loaded ginger and garlic extracts, assessing cells and bone formation in vitro and in a rat femoral model. Support, local release and tissue responses were evaluated in one composite system. The next priority is to isolate the contributions of additives, structure and release rather than substitute final bone volume for mechanistic analysis. [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Zoned structures separate external support from internal tissue access, while additives introduce release kinetics and duration of action. Tissue outcomes may arise from geometry, ceramic interfaces, carriers and active constituents together. Demonstrating synergy therefore requires unloaded controls with the same structure and comparisons of constituents alone and in combination. Comparing only the most complex combination with a blank control cannot establish whether the added complexity is necessary."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Multiscale pore architecture"
+          },
+          {
+            "type": "p",
+            "text": "A PCL study combined printed macrostructure with electrospun fibres and assessed architecture and osteogenic differentiation. Adding a scale calls for checking load, connectivity and access to the interior separately. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Check pore pathways and fibre coverage."
+          },
+          {
+            "type": "p",
+            "text": "A 2024 PLGA microsphere printing study compared scaffolds formed by microspheres of different diameters and observed bone formation in mouse skull defects. Microsphere size altered local contact, spatial organization, and tissue access conditions, extending \"structural design\" from millimeter-scale shapes to building blocks. This model provides evidence of repair within bone sites and raises the question of how degradation processes and inter-microsphere pathways change synergistically. [R12]"
+          },
+          {
+            "type": "p",
+            "text": "In 2024, PLGA microsphere scaffolds were used to compare microsphere size in mouse skull defects, linking structural variables to bone site repair. Simultaneous observation of bone distribution from the periphery inwards, scaffold residue, and healing in the control group is necessary to determine whether the structure truly improves tissue formation within the defect. [R12]"
+          },
+          {
+            "type": "p",
+            "text": "Changes in the diameter of microspheres not only alter local curvature but also change contact points, gaps, and structural retention during degradation. Therefore, when interpreting bone formation, it is crucial to distinguish between initial porosity and pathways that develop over time. Measuring only the remaining material and bone mass at the endpoint makes it difficult to determine whether cell entry is caused by the initial structure or by opening after degradation; therefore, it is appropriate to incorporate observations of early spatial distribution and intermediate material state."
+          },
+          {
+            "type": "p",
+            "text": "A 2026 study compared mesh, honeycomb and Gyroid structures made from PCL and β-TCP, and also included a PCL nanofibre system. Mechanical and short-term cell tests showed that greater stiffness, greater deformation capacity and better early cellular performance did not occur in the same system. Material and structure should therefore be optimized together for the defect's load-bearing and tissue requirements. [R13]"
+          },
+          {
+            "type": "p",
+            "text": "The 2026 PCL/β-TCP multi-structure control study, using short-term MG63 culture, showed that early cell performance was correlated with structure and material composition. It provides a readily reproducible baseline comparison and illustrates that different evaluation endpoints should be used for short-term proliferation and mature bone formation. This creates a closed loop: complex biological signaling protocols still require reliable structural and cellular baseline controls. [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Joint comparisons of material and pore geometry reveal the limitations of ranking designs by one measure. Higher load capacity, more uniform deformation and better early cell spreading may favour different systems. Selection depends on the required function and whether other fixation devices carry the main load. Short-term culture and mechanical tests provide screening evidence; subsequent work should test whether rankings persist under hydration, degradation and tissue conditions."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Formulation and manufacturability"
+          },
+          {
+            "type": "p",
+            "text": "Single-step melt extrusion of bone-inspired ceramic-bearing scaffolds tests the formulation on the manufacturing equipment. Characterize strand continuity, width, filler distribution and interlayer bonds together. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Separate nominal dimensions from fabricated dimensions."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Surface function and structural support"
+          },
+          {
+            "type": "p",
+            "text": "An RGD-functionalized coating study separated bioactivity from the processability of the PCL core. Matched designs can vary only the surface or only the pore architecture. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Use shared geometry to isolate interface effects."
+          },
+          {
+            "type": "p",
+            "text": "In 2023, a Pergola scaffold study combined finite element and fluid dynamics calculations to optimize the structure, and then incorporated dental papilla stem cells, BMP9, and VEGF. In subcutaneous experiments on nude mice, the combination containing BMP9 showed bone formation, while increasing VEGF did not significantly further enhance osteogenicity. This result indicates that adding more signals does not automatically produce a synergistic effect; dosage, time, and local pathways need to be studied together. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "In 2023, the Pergola scaffold was subcutaneously implanted in nude mice, combined with dental papilla stem cells, BMP9, and VEGF. Its role was to study bone formation in an ectopic environment; it did not directly reconstruct alveolar bone defects bearing masticatory loads. Comparison of different factor groups helped determine the contribution of biological signals, and the same protocol needed to be tested at the target bone site. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "The geometric calculation first answers whether the scaffold can maintain space and allow flow, and factor comparisons then answer which signals alter tissue responses within this space. The VEGF combination did not show further osteogenic gain, suggesting that synergy needs to be tested under specific dosage, delivery, and observation time. The lack of statistical gain does not mean that blood vessels have no effect on repair; rather, it is necessary to track the sequence and interrelationship between angiogenesis and bone formation."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · From cells to defect performance"
+          },
+          {
+            "type": "p",
+            "text": "A medical-grade PCL and β-TCP scaffold study examined gene expression during osteogenic differentiation. Defect studies additionally distinguish early cellular signals, bone continuity, fixation and spatial tissue structure. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Interpret repair through spatial outcomes."
+          },
+          {
+            "type": "p",
+            "text": "A 2026 study of PDLLA/SrHAp scaffolds in minipig mandibular defects preserved the periosteum and used titanium-plate fixation; complications occurred in 11 of 12 animals. The defects ultimately bridged, but bone formed mainly around the scaffolds, and bridging also occurred in some animals whose scaffolds had been removed early. Imaging continuity alone therefore cannot establish internal scaffold integration or attribute all repair to the scaffold material. [R15]"
+          },
+          {
+            "type": "p",
+            "text": "Along the aforementioned pathway, the evaluation should simultaneously record the location and quality of bone formation, material residue, fixation status, soft tissue recovery, and secondary interventions. If the scaffold increases bone volume but leads to difficult-to-manage wound problems, a change in design or usage procedure is still necessary. Therefore, the model serves as a tool to identify areas for improvement, rather than merely a step to confirm feasibility."
+          },
+          {
+            "type": "p",
+            "text": "This study allows for scaffold evaluation within the complete surgical setting. The periosteum, reconstruction plate, and surrounding tissues can all contribute to defect bridging; therefore, continuity on imaging needs to be interpreted in conjunction with bone location and material interfaces. Soft tissue dehiscence, swelling, or premature removal can alter subsequent conditions, and recording the timeline of all animals helps identify the specific state under which repair occurred."
+          },
+          {
+            "type": "p",
+            "text": "A 2023 study comparing printed polymer/hydroxyapatite and sintered hydroxyapatite scaffolds observed more macrophages, foreign body giant cells, and fibrous tissue at interfaces with stronger foreign body reactions, while direct osseointegration was lacking in these areas; intrapore bone formation and bone-to-material surface connections exhibited different spatial processes. [R16]"
+          },
+          {
+            "type": "p",
+            "text": "This fills a gap between total bone volume and function. New bone may form near the scaffold or within the pores, but contact capable of transmitting loads has not yet been established; the fibrous layer surrounding the material may also alter this relationship. Therefore, defect filling, intrapore bone distribution, direct contact, and mechanical connectivity can be used as adjacent indicators to track whether an improvement can be passed on to the next layer."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Feed back time and failure"
+          },
+          {
+            "type": "p",
+            "text": "Where tissue forms at the edge but not the centre, compare connectivity, fixation and local material loss. Follow support and tissue ingress over time from the finished part into defect evaluation and follow-up. [R01] [R03] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Feed regional results back to material and pore design."
+          }
+        ]
+      },
+      {
+        "title": "Comparing the evidence",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Vary architecture within one material to isolate pore effects and vary coatings on the same architecture to isolate interface effects. Longer evaluation should relate remaining material, tissue bridging and load over time."
+          }
+        ]
+      },
+      {
+        "title": "Industry approaches and documented products",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "FDA 510(k) K213260 describes Dimension Inx’s CMFlex as a synthetic bone graft block combining hydroxyapatite with a biodegradable polymer. Extrusion produces macropores and microporosity in the struts. The indicated defect-filling uses define its clinical scope. [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Ossiform's P3D Scaffolds are printed β-TCP scaffolds for three-dimensional cell culture. Commercial scaffolds were used directly in the 2026 material–structure comparison: the company supplied reproducible structures and the research team assessed mechanics and early cellular performance, establishing a specific product-to-paper link. [R17] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Dimension Inx announced the first surgical applications of CMFlex in 2023, employing a HA/PLGA composite approach with the goal of oral and maxillofacial bone grafting. CERHUM's MyBone utilizes patient-specific porous hydroxyapatite components for craniofacial reconstruction. Both represent the manipulability of composite materials and the commercialization of personalized ceramic structures, respectively. [R18] [R19]"
+          },
+          {
+            "type": "p",
+            "text": "Ossiform P3D Scaffolds provides β-TCP three-dimensional culture scaffolds, and its product components were actually used in a 2026 Materials—Structure paper. The company supplies stable structures, and academic teams evaluate cell and mechanical results, making cross-team research easier to use from a common starting point. [R17] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Ossiform provides research-grade β-TCP scaffolds. Commercial components are used in material and structural control studies, providing a basis for comparisons under identical conditions. Its value lies in reducing variations in structural origin, allowing researchers to focus on biological and culture conditions. [R17] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "The 2026 PDLLA/SrHAp mandibular paper disclosed the involvement of INNOTERE and KLS Martin personnel. Large animal results link materials, manufacturing, fixation, and surgical conditions, demonstrating a direct connection between product development and evaluation methodologies. Complications and tissue distribution also provide specific questions for the next round of design. [R15]"
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and translational testing",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN115554476A combines printing and foaming. CN121445944A concerns a porous hydroxyapatite/zirconia scaffold. Assess connectivity across scales, space maintenance and fabrication integrity at composite interfaces. [R07] [R08]"
+          },
+          {
+            "type": "p",
+            "text": "CN111848150A from Shanghai Ninth People’s Hospital/Shanghai Jiao Tong University describes strontium-copper-silicate/TCP ceramics, printing and sintering for osteochondral repair. Bimodal-pore additive studies and PCL/TCP architecture comparisons suggest separating chemistry, geometry and mechanics. CERHUM supplies a synthetic-ceramic shape context. Report ionic exposure, degradation and subchondral regions together; surface osteogenesis does not establish whole osteochondral-interface repair.[R11][R13][R19][R20]"
+          },
+          {
+            "type": "p",
+            "text": "East China University’s CN111956864A describes a TCP/degradable-PEGS composite with composition-dependent rheology, printing and mechanics. PCL particle-retaining frames, PLGA microspheres and material/architecture comparisons connect through the combined roles of particles, polymer and geometry. CMFlex supplies a handling/shape-retention context; the patent does not identify its formulation. Wet stability and load-bearing change during degradation are the central questions.[R10][R12][R13][R18][R21]"
+          }
+        ]
+      },
+      {
+        "title": "Research and adoption outlook",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Watch for defect-scaled design databases, quality checks on actual structures and spatially resolved tissue response. Product evaluation can track first fit, intraoperative trimming, fixation and long-term events. [R01] [R03] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Research priorities should first focus on spatial organization rather than total quantity. A common coordinate system should be established using the original design, finished product scans, and tissue sections to divide the defect margins, periosteal side, scaffold center, and area near the fixation plate into zones, quantifying bone, blood vessels, residual material, and fibrous tissue separately. This will allow us to answer whether bone has entered the expected area and to correlate the location of complications with the scaffold shape."
+          },
+          {
+            "type": "p",
+            "text": "The second priority task is to establish a timeline of material states. This involves measuring dimensions, mechanical properties, and release before and after tissue sampling to determine the state of the scaffold at the time of a given cellular response. When comparing degradable and permanent scaffolds, the common reference should be the function performed and the tissue succession time, rather than requiring both types of materials to have the same degradation endpoint."
+          },
+          {
+            "type": "p",
+            "text": "The third priority is to separate scaffold contributions from those of the surgical environment. Fixation plates, periosteal preservation and soft-tissue management should be fully documented, using stratified controls where needed. Early removal, infection treatment and repeat fixation in large animals must remain in the analysis because they directly alter material exposure and subsequent repair conditions."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Towards 3D Multi-Layer Scaffolds for Periodontal Tissue Engineering Applications: Addressing Manufacturing and Architectural Challenges.",
+        "url": "https://doi.org/10.3390/polym12102233",
+        "year": "2020",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R01"
+      },
+      {
+        "title": "Engineering Porous PET-RAFT Scaffolds with PLGA-Insulin Nanoparticles: Advancing Bone Tissue Regeneration Through Additive Manufacturing.",
+        "url": "https://doi.org/10.3390/polym18101184",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R02"
+      },
+      {
+        "title": "Hybrid 3D Printed and Electrospun Multi-Scale Hierarchical Polycaprolactone Scaffolds to Induce Bone Differentiation.",
+        "url": "https://doi.org/10.3390/pharmaceutics14122843",
+        "year": "2022",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R03"
+      },
+      {
+        "title": "Development of Bioceramic Bone-Inspired Scaffolds Through Single-Step Melt-Extrusion 3D Printing for Segmental Defect Treatment.",
+        "url": "https://doi.org/10.3390/jfb16100358",
+        "year": "2025",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R04"
+      },
+      {
+        "title": "Decoupling Bioactivity and Processability: RGD Click-Functionalized Coatings for a 3D-Printed PCL Scaffold.",
+        "url": "https://doi.org/10.1021/acs.biomac.5c01691",
+        "year": "2025",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R05"
+      },
+      {
+        "title": "Modifications in Gene Expression in the Process of Osteoblastic Differentiation of Multipotent Bone Marrow-Derived Human Mesenchymal Stem Cells Induced by a Novel Osteoinductive Porous Medical-Grade 3D-Printed Poly(ε-caprolactone)/β-tricalcium Phosphate Composite.",
+        "url": "https://doi.org/10.3390/ijms222011216",
+        "year": "2021",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R06"
+      },
+      {
+        "title": "Method for preparing polylactic acid-based bone repair tissue engineering porous scaffold by combining 3D printing with supercritical foaming design",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN115554476A",
+        "year": "2023",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R07"
+      },
+      {
+        "title": "3D printing preparation method of hydroxyapatite/zirconium dioxide composite porous scaffold for bone defect repair, scaffold and application",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN121445944A",
+        "year": "2026",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R08"
+      },
+      {
+        "title": "FDA 510(k) K213260 · CMFlex",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf21/K213260.pdf",
+        "year": "2022",
+        "kind": "Company announcement",
+        "source": "Company announcement",
+        "id": "R09"
+      },
+      {
+        "id": "R10",
+        "title": "Fabrication of Three-Dimensional Composite Scaffold for Simultaneous Alveolar Bone Regeneration in Dental Implant Installation",
+        "year": "2020",
+        "source": "International Journal of Molecular Sciences",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7084329/"
+      },
+      {
+        "id": "R11",
+        "title": "Ginger and Garlic Extracts Enhance Osteogenesis in 3D Printed Calcium Phosphate Bone Scaffolds with Bimodal Pore Distribution",
+        "year": "2022",
+        "source": "ACS Applied Materials & Interfaces",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9034760/"
+      },
+      {
+        "id": "R12",
+        "title": "The induction of bone formation by 3D-printed PLGA microsphere scaffolds in a calvarial orthotopic mouse model: a pilot study",
+        "year": "2024",
+        "source": "Frontiers in Bioengineering and Biotechnology",
+        "kind": "原始研究",
+        "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1425469/full"
+      },
+      {
+        "id": "R13",
+        "title": "Scaffold Material–Architecture Design Rules Linking Mechanics and Early Osteogenesis in PCL/β-TCP Grid, Honeycomb, and Gyroid Lattices",
+        "year": "2026",
+        "source": "ACS Omega",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13150591/"
+      },
+      {
+        "id": "R14",
+        "title": "Effectiveness of biomechanically stable pergola-like additively manufactured scaffold for extraskeletal vertical bone augmentation",
+        "year": "2023",
+        "source": "Frontiers in Bioengineering and Biotechnology",
+        "kind": "原始研究",
+        "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2023.1112335/full"
+      },
+      {
+        "id": "R15",
+        "title": "Preclinical evaluation of patient-specific 3D-printed PDLLA/SrHAp implants in a minipig segmental mandibular defect model",
+        "year": "2026",
+        "source": "Materials Today Bio",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13473966/"
+      },
+      {
+        "id": "R16",
+        "title": "Elucidating osseointegration in vivo in 3D printed scaffolds eliciting different foreign body responses",
+        "year": "2023",
+        "source": "Materials Today Bio",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37674779/"
+      },
+      {
+        "id": "R17",
+        "title": "P3D Scaffolds technical datasheet",
+        "year": "2026",
+        "source": "Ossiform",
+        "kind": "企业产品资料",
+        "url": "https://ossiform.com/wp-content/uploads/2026/03/P3D-Scaffolds-Technical-Datasheet.pdf"
+      },
+      {
+        "id": "R18",
+        "title": "Dimension Inx announces first surgical cases utilizing CMFlex",
+        "year": "2023",
+        "source": "Dimension Inx",
+        "kind": "企业公告",
+        "url": "https://www.prnewswire.com/news-releases/dimension-inx-announces-first-surgical-cases-utilizing-cmflex-synthetic-bone-graft---the-first-3d-printed-regenerative-bone-graft-product-cleared-by-the-fda-301946996.html"
+      },
+      {
+        "id": "R19",
+        "title": "MyBone: patient-specific synthetic bone grafts",
+        "year": "2026访问",
+        "source": "CERHUM",
+        "kind": "企业产品资料",
+        "url": "https://www.cerhum.com/solution/mybone"
+      },
+      {
+        "id": "R20",
+        "title": "SrCuSi4O10-Ca3(PO4)2 composite biological ceramic, bone scaffold and application of bone scaffold",
+        "year": "2020",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN111848150A",
+        "source": "Espacenet",
+        "kind": "patent"
+      },
+      {
+        "id": "R21",
+        "title": "3D printing composite stent as well as preparation method and application thereof",
+        "year": "2020",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN111956864A",
+        "source": "Espacenet",
+        "kind": "patent"
+      }
+    ]
+  },
+  "de": {
+    "id": "H23",
+    "p": "P1",
+    "title": "Strukturfertigung und Gewebereparatur mit Polymer- und Verbundscaffolds",
+    "subtitle": "Von herstellbaren Poren zu Defektpassung und zeitabhängiger Funktion",
+    "thesis": "Polymere, keramische Füllstoffe und mehrskalige Scaffolds erlauben getrennte Steuerung von Fertigung, Abstützung und Gewebekontakt. Zunächst werden reales Porennetz und Mechanik geprüft, anschließend Zellen, Defekt und Weichgewebe stufenweise untersucht. [R01] [R03] [R05]",
+    "questions": [],
+    "graph": {
+      "title": "Forschungsverlauf · Strukturfertigung und Gewebereparatur mit Polymer- und Verbundscaffolds",
+      "summary": "Defektanforderungen führen zu Werkstoff und Architektur. Bauteil- und Grenzflächenprüfung verbinden die Pfade. Räumliche Gewebebildung und verbleibendes Scaffold geben Rückmeldung für die Konstruktion.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2020",
+          "question": "Defektgeometrie in regionale Funktionen übersetzen.",
+          "title": "Architektur aus dem Defekt ableiten",
+          "evidence": "Ein mehrlagiges parodontales Scaffold bildet regionale Anforderungen ab. Barriere, Raumerhalt für Knochen und Gewebewege erfordern unterschiedliche Dicken, Poren und Handhabungstoleranzen an Grenzflächen.",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2022",
+          "question": "Porenwege und Faserabdeckung prüfen.",
+          "title": "Mehrskalige Porenarchitektur",
+          "evidence": "Eine PCL-Studie verband gedruckte Makrostrukturen und elektrogesponnene Fasern und prüfte Architektur und osteogene Differenzierung. Bei zusätzlicher Skala sind Lastaufnahme, Konnektivität und Zugang ins Innere getrennt zu untersuchen.",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2025",
+          "question": "Sollmaße und Fertigungsmaße getrennt erfassen.",
+          "title": "Rezeptur und Herstellbarkeit",
+          "evidence": "Einstufige Schmelzextrusion knochenähnlicher keramikhaltiger Scaffolds erprobt die Rezeptur in der Fertigung. Strangkontinuität, Breite, Füllstoffverteilung und Schichtverbund sind gemeinsam zu erfassen.",
+          "refs": [
+            "R04"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2025",
+          "question": "Grenzflächeneffekte bei identischer Geometrie isolieren.",
+          "title": "Oberflächenfunktion und strukturelle Abstützung",
+          "evidence": "Eine Studie zu RGD-funktionalisierten Beschichtungen trennte Bioaktivität von Verarbeitbarkeit des PCL-Kerns. Paarweise Vergleiche können allein Oberfläche oder Porenarchitektur verändern.",
+          "refs": [
+            "R05"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2021",
+          "question": "Reparatur anhand räumlicher Befunde einordnen.",
+          "title": "Von Zellbefunden zum Defekt",
+          "evidence": "Eine Studie zu medizinischem PCL und β-TCP untersuchte Genexpression bei osteogener Differenzierung. Defektstudien erfassen zusätzlich frühe Zellsignale, Knochenverbindung, Fixierung und räumliche Gewebestruktur.",
+          "refs": [
+            "R06"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2020–2021",
+          "question": "Regionale Befunde an Werkstoff- und Porendesign rückmelden.",
+          "title": "Zeit und Versagen rückkoppeln",
+          "evidence": "Bildet sich Gewebe am Rand, jedoch kaum zentral, sind Porenverbindung, Fixierung und lokaler Materialverlust zu vergleichen. Lastaufnahme und Gewebeeinwachsen werden vom Endprodukt bis zur Defektbeobachtung zeitlich erfasst.",
+          "refs": [
+            "R01",
+            "R03",
+            "R06"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Mehrskalige Porenarchitektur",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Rezeptur und Herstellbarkeit",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Oberflächenfunktion und strukturelle Abstützung",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Oberflächenfunktion und strukturelle Abstützung",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Von Zellbefunden zum Defekt",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Zeit und Versagen rückkoppeln",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Porenlayout anhand zentraler und peripherer Heilung anpassen",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Untersuchungsrahmen und Ziele",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Diese Richtung untersucht die Fertigung für die Gewebereparatur. Raumerhalt, Fixierung, Flüssigkeitswege und Resorption sind ortsabhängig. Produkte mit gleichem Werkstoffnamen können unterschiedliche Funktionen haben."
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Einordnung der Einzelschritte",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Architektur aus dem Defekt ableiten"
+          },
+          {
+            "type": "p",
+            "text": "Ein mehrlagiges parodontales Scaffold bildet regionale Anforderungen ab. Barriere, Raumerhalt für Knochen und Gewebewege erfordern unterschiedliche Dicken, Poren und Handhabungstoleranzen an Grenzflächen. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Defektgeometrie in regionale Funktionen übersetzen."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2020 nutzte gedruckte PCL-Rahmen, um Hydroxylapatit- und β-TCP-Partikel aufzunehmen. Die Formbarkeit des Polymers wurde mit Keramikpartikeln kombiniert; Zellversuche bewerteten Proliferation und osteogene Aktivität. Leicht verlorengehendes Füllmaterial wurde damit zu formstabilen Bauteilen mit zusammenhängenden Freiräumen organisiert. Zu prüfen bleibt, ob Partikelrückhalt und Gewebeeinwachsen gleichzeitig erhalten bleiben.[R10]"
+          },
+          {
+            "type": "p",
+            "text": "Das Gerüst dient primär der räumlichen Organisation. Die chemische Zusammensetzung der Bulk-Partikel kann mit derjenigen der Gerüstpartikel übereinstimmen, jedoch haben sich Positionsstabilität, Wechselwirkungen zwischen den Partikeln und lokale Stabilität verändert. Daher sollte die Evaluierung gleichzeitig messen, „wie viele Partikel erhalten blieben“ und „wie viele noch für den Eintritt in den Raum zur Verfügung stehen“, um zu vermeiden, dass das Partikelpackungsvolumen mit dem effektiven Reparaturvolumen verwechselt wird. Die zellulären Vorteile des Kompositansatzes müssen zudem mit dem tatsächlichen Ort des Zellkontakts korreliert werden."
+          },
+          {
+            "type": "p",
+            "text": "Eine TCP-Gerüststudie von 2022 kombinierte ein poröses Inneres mit einer dichteren Außenseite und belud die Struktur mit Ingwer- und Knoblauchextrakten. Zellverhalten und Knochenbildung wurden in vitro und im Rattenfemur untersucht. Abstützung, lokale Freisetzung und Gewebereaktion wurden in einem System verbunden. Die Beiträge von Zusätzen, Struktur und Freisetzung müssen getrennt erklärt werden; die endgültige Knochenmenge ersetzt keine Mechanismusanalyse.[R11]"
+          },
+          {
+            "type": "p",
+            "text": "Die unterteilte Struktur des trennt die externe Stützstruktur vom Gewebeeintritt, und Additive beeinflussen Freisetzung und Wirkungsdauer. Die endgültige Gewebezusammensetzung kann gleichzeitig von Geometrie, Keramikschnittstellen, Trägermaterialien und Additiven abhängen; daher erfordert die Bewertung von Synergien unbelastete Kontrollen mit derselben Struktur sowie Vergleiche verschiedener Komponenten, sowohl einzeln als auch in Kombination. Ohne eine möglichst komplexe Kombination und eine Kontrollgruppe lässt sich nicht feststellen, ob eine Erhöhung der Komplexität notwendig ist."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Mehrskalige Porenarchitektur"
+          },
+          {
+            "type": "p",
+            "text": "Eine PCL-Studie verband gedruckte Makrostrukturen und elektrogesponnene Fasern und prüfte Architektur und osteogene Differenzierung. Bei zusätzlicher Skala sind Lastaufnahme, Konnektivität und Zugang ins Innere getrennt zu untersuchen. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Porenwege und Faserabdeckung prüfen."
+          },
+          {
+            "type": "p",
+            "text": "Eine 2024 durchgeführte Studie zum PLGA-Mikrosphären-Druck verglich Gerüste aus Mikrosphären unterschiedlichen Durchmessers und beobachtete die Knochenbildung in Schädeldefekten bei Mäusen. Die Größe der Mikrosphären beeinflusste den lokalen Kontakt, die räumliche Anordnung und die Gewebezugänglichkeit und erweiterte so das „strukturelle Design“ von Millimeter-großen Formen auf Bausteine. Dieses Modell liefert Hinweise auf Reparaturprozesse im Knochengewebe und wirft die Frage auf, wie Abbauprozesse und Wechselwirkungen zwischen den Mikrosphären synergistisch wirken. [R12]"
+          },
+          {
+            "type": "p",
+            "text": "Im Jahr 2024 wurden PLGA-Mikrosphärengerüste verwendet, um die Mikrosphärengröße in Schädeldefekten bei Mäusen zu vergleichen und strukturelle Variablen mit der Knochenheilung in Zusammenhang zu bringen. Die gleichzeitige Beobachtung der Knochenverteilung von der Peripherie nach innen, der Gerüstreste und der Heilung in der Kontrollgruppe ist notwendig, um festzustellen, ob die Struktur die Gewebeneubildung innerhalb des Defekts tatsächlich verbessert. [R12]"
+          },
+          {
+            "type": "p",
+            "text": "Veränderungen des Durchmessers von Mikrokügelchen beeinflussen nicht nur die lokale Krümmung, sondern auch Kontaktpunkte, Zwischenräume und die strukturelle Stabilität während des Abbaus. Daher ist es bei der Interpretation der Knochenbildung entscheidend, zwischen der anfänglichen Porosität und den sich im Laufe der Zeit entwickelnden Prozessen zu unterscheiden. Die alleinige Messung des verbleibenden Materials und der Knochenmasse am Endpunkt erschwert die Bestimmung, ob der Zelleintritt durch die ursprüngliche Struktur oder durch Öffnungen nach dem Abbau bedingt ist. Daher ist es sinnvoll, Beobachtungen der frühen räumlichen Verteilung und des intermediären Materialzustands einzubeziehen."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2026 verglich Gitter-, Waben- und Gyroidstrukturen aus PCL und β-TCP und bezog ein PCL-Nanofasersystem ein. Mechanische und kurzzeitige Zellprüfungen zeigten, dass höhere Steifigkeit, größere Verformbarkeit und bessere frühe Zellreaktionen nicht im selben System zusammenfielen. Material und Struktur müssen daher nach den mechanischen und Gewebeanforderungen des Defekts gemeinsam gewählt werden.[R13]"
+          },
+          {
+            "type": "p",
+            "text": "Die 2026 durchgeführte PCL/β-TCP-Multistrukturkontrollstudie mit Kurzzeitkultur von MG63-Zellen zeigte, dass die frühe Zellleistung mit der Struktur und der Materialzusammensetzung korrelierte. Sie liefert einen leicht reproduzierbaren Vergleichswert und verdeutlicht, dass für die kurzfristige Proliferation und die Bildung von reifem Knochen unterschiedliche Bewertungsendpunkte verwendet werden sollten. Dadurch entsteht ein geschlossener Regelkreis: Komplexe biologische Signalprotokolle benötigen weiterhin zuverlässige strukturelle und zelluläre Basiskontrollen. [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Ein Vergleich des Materials und der Porenform kann Widersprüche in der Rangfolge nach einer einzelnen Messgröße aufzeigen. Höhere Belastbarkeit, gleichmäßigere Verformung und bessere frühe Zellausbreitung können auf unterschiedliche Systeme zurückzuführen sein; die Wahl hängt davon ab, welche Funktion der Defekt erfordert und ob andere Fixierungsvorrichtungen die Hauptlast tragen. Kurzzeitkultur und mechanische Tests in dieser Studie bilden die Screening-Kriterien; eine anschließende Untersuchung der Stabilität der Rangfolge unter Hydratations-, Degradations- und Gewebebedingungen ist erforderlich."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Rezeptur und Herstellbarkeit"
+          },
+          {
+            "type": "p",
+            "text": "Einstufige Schmelzextrusion knochenähnlicher keramikhaltiger Scaffolds erprobt die Rezeptur in der Fertigung. Strangkontinuität, Breite, Füllstoffverteilung und Schichtverbund sind gemeinsam zu erfassen. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Sollmaße und Fertigungsmaße getrennt erfassen."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Oberflächenfunktion und strukturelle Abstützung"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie zu RGD-funktionalisierten Beschichtungen trennte Bioaktivität von Verarbeitbarkeit des PCL-Kerns. Paarweise Vergleiche können allein Oberfläche oder Porenarchitektur verändern. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Grenzflächeneffekte bei identischer Geometrie isolieren."
+          },
+          {
+            "type": "p",
+            "text": "In einer Studie aus dem Jahr 2023 wurde ein Pergola-Gerüst mittels Finite-Elemente- und Fluiddynamikberechnungen optimiert. Anschließend wurden Stammzellen der Zahnpapille, BMP9 und VEGF integriert. Subkutane Experimente an Nacktmäusen zeigten, dass die Kombination mit BMP9 Knochenbildung bewirkte, während eine Erhöhung der VEGF-Konzentration die Osteogenese nicht signifikant steigerte. Dieses Ergebnis deutet darauf hin, dass die Zugabe weiterer Signale nicht automatisch einen synergistischen Effekt erzeugt; Dosierung, Zeit und lokale Signalwege müssen gemeinsam untersucht werden. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "Im Jahr 2023 wurde das Pergola-Gerüst in Kombination mit dentalen Papillenstammzellen, BMP9 und VEGF subkutan in Nacktmäuse implantiert. Ziel war die Untersuchung der Knochenbildung in einer ektopischen Umgebung; es diente nicht der direkten Rekonstruktion von Alveolarknochendefekten unter Kaubelastung. Der Vergleich verschiedener Faktorgruppen half, den Beitrag biologischer Signale zu bestimmen, und dasselbe Protokoll musste am Zielort im Knochen getestet werden. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "Die geometrische Berechnung des -Gerüsts klärt zunächst, ob es ausreichend Platz bietet und den Blutfluss ermöglicht. Faktorvergleiche zeigen anschließend, welche Signale die Gewebereaktionen innerhalb dieses Raums beeinflussen. Die VEGF-Kombination führte zu keinem weiteren osteogenen Zuwachs, was darauf hindeutet, dass die Synergie unter spezifischen Dosierungs-, Applikations- und Beobachtungsbedingungen untersucht werden muss. Das Ausbleiben eines statistisch signifikanten Zuwachses bedeutet nicht, dass Blutgefäße keinen Einfluss auf die Reparatur haben; vielmehr ist es notwendig, die Abfolge und die Wechselwirkungen zwischen Angiogenese und Knochenbildung zu verfolgen."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Von Zellbefunden zum Defekt"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie zu medizinischem PCL und β-TCP untersuchte Genexpression bei osteogener Differenzierung. Defektstudien erfassen zusätzlich frühe Zellsignale, Knochenverbindung, Fixierung und räumliche Gewebestruktur. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Reparatur anhand räumlicher Befunde einordnen."
+          },
+          {
+            "type": "p",
+            "text": "In der 2026 durchgeführten Studie an Unterkiefern von Miniaturschweinen mit PDLLA/SrHAp wurde das Periost erhalten und mit einer Titanplatte fixiert. Bei 11 von 12 Tieren traten Komplikationen auf. Der Defekt heilte schließlich ab, die Knochenbildung erfolgte jedoch primär um das Gerüst herum; eine Überbrückung trat auch bei einigen Tieren auf, bei denen das Gerüst vorzeitig entfernt wurde. Diese Ergebnisse deuten darauf hin, dass die alleinige Darstellung von durchgehendem Knochen im Bildgebungsverfahren keine Aussage über die interne Integration des Gerüsts zulässt und dass nicht die gesamte Reparatur dem Gerüstmaterial zugeschrieben werden kann. [R15]"
+          },
+          {
+            "type": "p",
+            "text": "Im Rahmen der oben beschriebenen Vorgehensweise sollte die Evaluation gleichzeitig die Lokalisation und Qualität der Knochenneubildung, Materialrückstände, den Fixierungsstatus, die Weichteilregeneration und sekundäre Eingriffe erfassen. Falls das Gerüst zwar das Knochenvolumen erhöht, aber zu schwer zu behandelnden Wundheilungsstörungen führt, ist weiterhin eine Anpassung des Designs oder des Anwendungsverfahrens erforderlich. Daher dient das Modell als Instrument zur Identifizierung von Verbesserungspotenzialen und nicht lediglich als Schritt zur Bestätigung der Machbarkeit."
+          },
+          {
+            "type": "p",
+            "text": "Diese Studie ermöglicht die Beurteilung des Gerüstmaterials im Rahmen des gesamten chirurgischen Eingriffs. Periost, Rekonstruktionsplatte und umliegendes Gewebe können zur Defektüberbrückung beitragen; daher muss die Kontinuität in der Bildgebung in Verbindung mit der Knochenlage und den Materialgrenzflächen interpretiert werden. Weichteildehiszenz, Schwellungen oder vorzeitige Entfernung können den weiteren Verlauf beeinflussen, und die Dokumentation des zeitlichen Ablaufs aller Tiere hilft, den spezifischen Zustand zum Zeitpunkt der Reparatur zu identifizieren."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie aus dem Jahr 2023, die gedruckte Polymer/Hydroxyapatit- und gesinterte Hydroxyapatit-Gerüste verglich, beobachtete an Grenzflächen mit stärkeren Fremdkörperreaktionen vermehrt Makrophagen, Fremdkörperriesenzellen und Bindegewebe, während direktes Osseointegration in diesen Bereichen fehlte; die Knochenbildung innerhalb der Poren und die Verbindungen zwischen Knochen und Materialoberfläche zeigten unterschiedliche räumliche Prozesse. [R16]"
+          },
+          {
+            "type": "p",
+            "text": "Dies schließt eine Lücke zwischen dem gesamten Knochenvolumen und seiner Funktion. Neuer Knochen kann sich in der Nähe des Gerüsts oder in den Poren bilden, jedoch ist noch kein lastübertragender Kontakt hergestellt; die das Material umgebende Faserschicht kann dieses Verhältnis ebenfalls beeinflussen. Daher können Defektfüllung, Knochenverteilung innerhalb der Poren, direkter Kontakt und mechanische Konnektivität als Indikatoren genutzt werden, um zu verfolgen, ob eine Verbesserung auf die nächste Schicht übertragen werden kann."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Zeit und Versagen rückkoppeln"
+          },
+          {
+            "type": "p",
+            "text": "Bildet sich Gewebe am Rand, jedoch kaum zentral, sind Porenverbindung, Fixierung und lokaler Materialverlust zu vergleichen. Lastaufnahme und Gewebeeinwachsen werden vom Endprodukt bis zur Defektbeobachtung zeitlich erfasst. [R01] [R03] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Regionale Befunde an Werkstoff- und Porendesign rückmelden."
+          }
+        ]
+      },
+      {
+        "title": "Vergleich der Befunde",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Architekturvariation beim selben Material isoliert Poreneffekte, unterschiedliche Beschichtungen auf gleicher Struktur den Grenzflächeneffekt. Langzeitbewertungen verbinden Restmaterial, Gewebebrücken und Lastaufnahme über die Zeit."
+          }
+        ]
+      },
+      {
+        "title": "Industrielle Ansätze und dokumentierte Produkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "FDA 510(k) K213260 beschreibt CMFlex von Dimension Inx als synthetischen Knochenersatzblock aus Hydroxylapatit und biologisch abbaubarem Polymer. Extrusion erzeugt Makroporen und Mikroporosität in den Stegen. Die angegebenen Defektindikationen bestimmen den Einsatzbereich. [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Die P3D-Gerüste von Ossiform werden zum Drucken von β-TCP-Gerüsten für die 3D-Zellkultur verwendet. Ihre kommerziellen Gerüste sind direkt in eine Material-Struktur-Vergleichsstudie aus dem Jahr 2026 einbezogen. Das Unternehmen stellt reproduzierbare Strukturen bereit, und das Forschungsteam vergleicht die mechanischen Eigenschaften mit der frühen Zellleistung, wodurch ein klarer Bezug zwischen Produkt und wissenschaftlicher Publikation hergestellt wird. [R17] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Dimension Inx kündigte 2023 die ersten chirurgischen Anwendungen von CMFlex an. Dabei kommt ein HA/PLGA-Kompositmaterial zum Einsatz, das für Knochentransplantationen im Mund- und Kieferbereich entwickelt wurde. CERHUMs MyBone verwendet patientenspezifische, poröse Hydroxylapatit-Komponenten für die kraniofaziale Rekonstruktion. Beide Produkte demonstrieren die Verarbeitbarkeit von Kompositmaterialien bzw. die Kommerzialisierung personalisierter Keramikstrukturen. [R18] [R19]"
+          },
+          {
+            "type": "p",
+            "text": "Ossiform P3D Scaffolds bietet dreidimensionale Kulturgerüste aus β-TCP an. Produktkomponenten des Unternehmens wurden in einer Publikation in Materials—Structure aus dem Jahr 2026 verwendet. Ossiform P3D Scaffolds liefert stabile Strukturen, anhand derer akademische Teams Zell- und mechanische Ergebnisse auswerten können. Dies erleichtert die teamübergreifende Forschung durch eine gemeinsame Ausgangsbasis. [R17] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Ossiform bietet β-TCP-Gerüste in Forschungsqualität. Kommerzielle Komponenten werden in Material- und Strukturkontrollstudien eingesetzt und ermöglichen so Vergleiche unter identischen Bedingungen. Der Vorteil liegt in der Reduzierung von Schwankungen im Strukturursprung, wodurch sich Forscher auf biologische und kulturelle Bedingungen konzentrieren können. [R17] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Die 2026 veröffentlichte Studie (PDLLA/SrHAp) zum Unterkieferprothesenimplantat offenbarte die Beteiligung von Mitarbeitern von INNOTERE und KLS Martin. Ergebnisse aus Großtierstudien verknüpfen Materialien, Herstellung, Fixierung und chirurgische Bedingungen und demonstrieren so einen direkten Zusammenhang zwischen Produktentwicklung und Evaluierungsmethoden. Komplikationen und Gewebeverteilung werfen zudem spezifische Fragen für die nächste Designphase auf. [R15]"
+          }
+        ]
+      },
+      {
+        "title": "Patentmechanismen und Prüfung für den Einsatz",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN115554476A kombiniert Druck und Aufschäumen. CN121445944A betrifft ein poröses Hydroxylapatit-Zirkonoxid-Scaffold. Mehrskalige Konnektivität, Raumerhalt und Fertigungsintegrität der Verbundgrenzflächen sind zu prüfen. [R07] [R08]"
+          },
+          {
+            "type": "p",
+            "text": "CN111848150A des Shanghai Ninth People’s Hospital/der Shanghai Jiao Tong University beschreibt Strontium-Kupfer-Silikat/TCP-Keramik, Druck und Sintern für osteochondrale Reparatur. Studien mit bimodalen Poren und PCL/TCP-Architekturen begründen die Trennung von Chemie, Geometrie und Mechanik. CERHUM bietet den synthetischen Keramikformkontext. Ionenexposition, Abbau und subchondrale Regionen gemeinsam berichten; Oberflächenosteogenese belegt keine vollständige Grenzflächenreparatur.[R11][R13][R19][R20]"
+          },
+          {
+            "type": "p",
+            "text": "CN111956864A der East China University beschreibt TCP/abbaubares PEGS mit zusammensetzungsabhängiger Rheologie, Druckbarkeit und Mechanik. PCL-Partikelrahmen, PLGA-Mikrokugeln und Material-/Architekturvergleiche verbinden sich über Partikel, Polymer und Geometrie. CMFlex liefert einen Handhabungs-/Formhaltungskontext; das Patent benennt dessen Rezeptur nicht. Nassstabilität und Laständerung während des Abbaus sind die zentralen Fragen.[R10][R12][R13][R18][R21]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick auf Forschung und Anwendung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Zu beobachten sind defektgrößenbezogene Designdaten, Qualitätsprüfung realer Strukturen und räumlich aufgelöste Gewebereaktion. Erstpassung, intraoperative Formkorrektur, Fixierung und Langzeitereignisse quantifizieren den Produktnutzen. [R01] [R03] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Die Forschungsprioritäten sollten sich zunächst auf die räumliche Organisation und nicht auf die Gesamtmenge konzentrieren. Mithilfe des ursprünglichen Designs, Scans des fertigen Produkts und Gewebeschnitten sollte ein gemeinsames Koordinatensystem etabliert werden, um die Defektränder, die periostale Seite, das Zentrum des Gerüsts und den Bereich nahe der Fixationsplatte in Zonen zu unterteilen und Knochen, Blutgefäße, Restmaterial und Bindegewebe separat zu quantifizieren. Dies ermöglicht es uns, zu klären, ob Knochen in den erwarteten Bereich eingewachsen ist und die Lage von Komplikationen mit der Form des Gerüsts zu korrelieren."
+          },
+          {
+            "type": "p",
+            "text": "Die zweite Prioritätsaufgabe ist die Erstellung einer Zeitleiste der Materialzustände. Dies beinhaltet die Messung von Abmessungen, mechanischen Eigenschaften und Freisetzung vor und nach der Gewebeentnahme, um den Zustand des Gerüsts zum Zeitpunkt einer bestimmten zellulären Reaktion zu bestimmen. Beim Vergleich von abbaubaren und permanenten Gerüsten sollte die gemeinsame Referenz die ausgeführte Funktion und die Gewebenachfolgezeit sein, anstatt zu fordern, dass beide Materialtypen den gleichen Abbauendpunkt aufweisen."
+          },
+          {
+            "type": "p",
+            "text": "Der dritte Punkt betrifft den Einfluss des Dissektionsgerüsts und der Operationsumgebung. Fixationsplatten, Periosterhaltung und Weichteilbehandlung sollten vollständig dokumentiert werden; gegebenenfalls sind Kontrollgruppen mit mehreren Schichten einzusetzen, um deren Auswirkungen zu berücksichtigen. Vorzeitige Entfernung, Infektionsmanagement und Refixierung bei Großtieren sollten in die Analyse einbezogen werden, da diese Ereignisse die Materialexposition und die nachfolgenden Reparaturbedingungen direkt beeinflussen und nicht aus dem Studienablauf ausgeschlossen werden können."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Towards 3D Multi-Layer Scaffolds for Periodontal Tissue Engineering Applications: Addressing Manufacturing and Architectural Challenges.",
+        "url": "https://doi.org/10.3390/polym12102233",
+        "year": "2020",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R01"
+      },
+      {
+        "title": "Engineering Porous PET-RAFT Scaffolds with PLGA-Insulin Nanoparticles: Advancing Bone Tissue Regeneration Through Additive Manufacturing.",
+        "url": "https://doi.org/10.3390/polym18101184",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R02"
+      },
+      {
+        "title": "Hybrid 3D Printed and Electrospun Multi-Scale Hierarchical Polycaprolactone Scaffolds to Induce Bone Differentiation.",
+        "url": "https://doi.org/10.3390/pharmaceutics14122843",
+        "year": "2022",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R03"
+      },
+      {
+        "title": "Development of Bioceramic Bone-Inspired Scaffolds Through Single-Step Melt-Extrusion 3D Printing for Segmental Defect Treatment.",
+        "url": "https://doi.org/10.3390/jfb16100358",
+        "year": "2025",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R04"
+      },
+      {
+        "title": "Decoupling Bioactivity and Processability: RGD Click-Functionalized Coatings for a 3D-Printed PCL Scaffold.",
+        "url": "https://doi.org/10.1021/acs.biomac.5c01691",
+        "year": "2025",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R05"
+      },
+      {
+        "title": "Modifications in Gene Expression in the Process of Osteoblastic Differentiation of Multipotent Bone Marrow-Derived Human Mesenchymal Stem Cells Induced by a Novel Osteoinductive Porous Medical-Grade 3D-Printed Poly(ε-caprolactone)/β-tricalcium Phosphate Composite.",
+        "url": "https://doi.org/10.3390/ijms222011216",
+        "year": "2021",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R06"
+      },
+      {
+        "title": "Method for preparing polylactic acid-based bone repair tissue engineering porous scaffold by combining 3D printing with supercritical foaming design",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN115554476A",
+        "year": "2023",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R07"
+      },
+      {
+        "title": "3D printing preparation method of hydroxyapatite/zirconium dioxide composite porous scaffold for bone defect repair, scaffold and application",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN121445944A",
+        "year": "2026",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R08"
+      },
+      {
+        "title": "FDA 510(k) K213260 · CMFlex",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf21/K213260.pdf",
+        "year": "2022",
+        "kind": "Unternehmensmitteilung",
+        "source": "Unternehmensmitteilung",
+        "id": "R09"
+      },
+      {
+        "id": "R10",
+        "title": "Fabrication of Three-Dimensional Composite Scaffold for Simultaneous Alveolar Bone Regeneration in Dental Implant Installation",
+        "year": "2020",
+        "source": "International Journal of Molecular Sciences",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7084329/"
+      },
+      {
+        "id": "R11",
+        "title": "Ginger and Garlic Extracts Enhance Osteogenesis in 3D Printed Calcium Phosphate Bone Scaffolds with Bimodal Pore Distribution",
+        "year": "2022",
+        "source": "ACS Applied Materials & Interfaces",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9034760/"
+      },
+      {
+        "id": "R12",
+        "title": "The induction of bone formation by 3D-printed PLGA microsphere scaffolds in a calvarial orthotopic mouse model: a pilot study",
+        "year": "2024",
+        "source": "Frontiers in Bioengineering and Biotechnology",
+        "kind": "原始研究",
+        "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1425469/full"
+      },
+      {
+        "id": "R13",
+        "title": "Scaffold Material–Architecture Design Rules Linking Mechanics and Early Osteogenesis in PCL/β-TCP Grid, Honeycomb, and Gyroid Lattices",
+        "year": "2026",
+        "source": "ACS Omega",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13150591/"
+      },
+      {
+        "id": "R14",
+        "title": "Effectiveness of biomechanically stable pergola-like additively manufactured scaffold for extraskeletal vertical bone augmentation",
+        "year": "2023",
+        "source": "Frontiers in Bioengineering and Biotechnology",
+        "kind": "原始研究",
+        "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2023.1112335/full"
+      },
+      {
+        "id": "R15",
+        "title": "Preclinical evaluation of patient-specific 3D-printed PDLLA/SrHAp implants in a minipig segmental mandibular defect model",
+        "year": "2026",
+        "source": "Materials Today Bio",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13473966/"
+      },
+      {
+        "id": "R16",
+        "title": "Elucidating osseointegration in vivo in 3D printed scaffolds eliciting different foreign body responses",
+        "year": "2023",
+        "source": "Materials Today Bio",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37674779/"
+      },
+      {
+        "id": "R17",
+        "title": "P3D Scaffolds technical datasheet",
+        "year": "2026",
+        "source": "Ossiform",
+        "kind": "企业产品资料",
+        "url": "https://ossiform.com/wp-content/uploads/2026/03/P3D-Scaffolds-Technical-Datasheet.pdf"
+      },
+      {
+        "id": "R18",
+        "title": "Dimension Inx announces first surgical cases utilizing CMFlex",
+        "year": "2023",
+        "source": "Dimension Inx",
+        "kind": "企业公告",
+        "url": "https://www.prnewswire.com/news-releases/dimension-inx-announces-first-surgical-cases-utilizing-cmflex-synthetic-bone-graft---the-first-3d-printed-regenerative-bone-graft-product-cleared-by-the-fda-301946996.html"
+      },
+      {
+        "id": "R19",
+        "title": "MyBone: patient-specific synthetic bone grafts",
+        "year": "2026访问",
+        "source": "CERHUM",
+        "kind": "企业产品资料",
+        "url": "https://www.cerhum.com/solution/mybone"
+      },
+      {
+        "id": "R20",
+        "title": "SrCuSi4O10-Ca3(PO4)2 composite biological ceramic, bone scaffold and application of bone scaffold",
+        "year": "2020",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN111848150A",
+        "source": "Espacenet",
+        "kind": "patent"
+      },
+      {
+        "id": "R21",
+        "title": "3D printing composite stent as well as preparation method and application thereof",
+        "year": "2020",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN111956864A",
+        "source": "Espacenet",
+        "kind": "patent"
+      }
+    ]
+  }
+}

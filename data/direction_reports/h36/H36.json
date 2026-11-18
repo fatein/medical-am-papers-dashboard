@@ -1,0 +1,1439 @@
+{
+  "zh": {
+    "id": "H36",
+    "p": "P3",
+    "title": "薄膜与其他打印给药载体",
+    "subtitle": "沿施用部位拆分膜尺寸、黏附时间与释放机制",
+    "thesis": "打印可把载体外形和载药量联系起来。口崩膜、颊黏附膜、局部敷料和储库的几何优势各有不同，必须在相应的溶出、黏膜接触或局部停留条件下比较。",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络图",
+      "summary": "起始尺寸–剂量关系分成快崩解与局部停留两路。将材料与成品任务分别验证，再把含量均匀性和多批次过程反馈给尺寸和载药设计。",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2019",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R04"
+          ],
+          "title": "用面积改变口崩膜含量",
+          "question": "设计尺寸能直接映射到实测含量吗？",
+          "evidence": "挤出打印的华法林口崩膜，在研究制剂的 3.9–7.4 mg 范围内，设计尺寸和实测含量的决定系数为 0.9996。"
+        },
+        {
+          "id": "N2",
+          "time": "2020",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R02"
+          ],
+          "title": "把设备当作变异来源",
+          "question": "相同配方是否可跨打印机复现？",
+          "evidence": "兽用制剂研究用三种半固态挤出打印机对比可溶性薄膜生产。"
+        },
+        {
+          "id": "N3",
+          "time": "2021",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R05"
+          ],
+          "title": "让颊膜停留而非快速溶散",
+          "question": "黏附和释放怎样联合比较？",
+          "evidence": "明胶–PVP 普萘洛尔颊膜比明胶–PVA 配方报告更高的黏附和拉伸强度、更慢的释放。"
+        },
+        {
+          "id": "N4",
+          "time": "2026",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R01"
+          ],
+          "title": "把纳米结构与口崩性能配对",
+          "question": "活性成分状态是否会改变口崩任务？",
+          "evidence": "儿科肿瘤用药研究探索面向药物再利用的纳米结构口崩膜。"
+        },
+        {
+          "id": "N5",
+          "time": "2022",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R06",
+            "R11"
+          ],
+          "title": "比较敷料与储库的时标",
+          "question": "载体什么时候需要保持完整？",
+          "evidence": "含大麻素纳米颗粒的海藻酸盐膜开展体外评价，聚氨酯阴道环使用不同结构调节释放。"
+        },
+        {
+          "id": "N6",
+          "time": "2019–2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R04",
+            "R10",
+            "R12"
+          ],
+          "title": "建立成品质量与制造追溯",
+          "question": "平台和具体制剂如何分别验收？",
+          "evidence": "FABRX 展示个体化药品制备设备，AnelleO 公开基于阴道环的开发产品，研究膜可作为尺寸–剂量校准参照。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "验证跨设备制造"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "改用停留型膜"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "检查活性物状态"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "延长释放任务"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "对齐单位含量"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "保留局部适配"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "把含量和释放偏差反馈设计"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "按使用部位读剂型证据",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "口崩膜关心剂量、储存和崩解，颊膜增加黏附和停留，局部敷料与环需要评价湿态性能和持续释放。口崩膜尺寸能对应含量的研究提供制造标定方法，不能直接替代特定部位的功能验证。[R04] [R05] [R06] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 用面积改变口崩膜含量"
+          },
+          {
+            "type": "p",
+            "text": "挤出打印的华法林口崩膜，在研究制剂的 3.9–7.4 mg 范围内，设计尺寸和实测含量的决定系数为 0.9996。 [R04]"
+          },
+          {
+            "type": "p",
+            "text": "线性关系可用于工艺校准，仍需单独测同尺寸件的剂量分布，并把膜强度与崩解证据配对。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 把设备当作变异来源"
+          },
+          {
+            "type": "p",
+            "text": "兽用制剂研究用三种半固态挤出打印机对比可溶性薄膜生产。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "此设备对照用于识别制造偏差。需要把干燥前后不同尺寸、实测含量和机械完整性联立，定量区分设备误差和配方差异。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 让颊膜停留而非快速溶散"
+          },
+          {
+            "type": "p",
+            "text": "明胶–PVP 普萘洛尔颊膜比明胶–PVA 配方报告更高的黏附和拉伸强度、更慢的释放。 [R05]"
+          },
+          {
+            "type": "p",
+            "text": "同一处方不同聚合物改变的是口内停留及给药行为。将模拟药代和体外释放分开阅读，并把跨黏膜证据作为下一层。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 把纳米结构与口崩性能配对"
+          },
+          {
+            "type": "p",
+            "text": "儿科肿瘤用药研究探索面向药物再利用的纳米结构口崩膜。 [R01]"
+          },
+          {
+            "type": "p",
+            "text": "比较对象应包括同成分但无纳米构建的膜，以及同基体空白膜，才能分离成分状态与口崩后释放。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 比较敷料与储库的时标"
+          },
+          {
+            "type": "p",
+            "text": "含大麻素纳米颗粒的海藻酸盐膜开展体外评价，聚氨酯阴道环使用不同结构调节释放。 [R06] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "敷料比较应保留吸液后的贴合与力学，环则要区分尺寸配合、持续释放和终末残留。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 建立成品质量与制造追溯"
+          },
+          {
+            "type": "p",
+            "text": "FABRX 展示个体化药品制备设备，AnelleO 公开基于阴道环的开发产品，研究膜可作为尺寸–剂量校准参照。 [R04] [R10] [R12]"
+          },
+          {
+            "type": "p",
+            "text": "用版本绑定处方、设备、干燥、成品包装和剂量检测；以部位用途定义释放和使用要求。"
+          },
+          {
+            "type": "h3",
+            "text": "相关实验的补充比较"
+          },
+          {
+            "type": "h3",
+            "text": "耳部植入物几何"
+          },
+          {
+            "type": "p",
+            "text": "Triacca等将载左氧氟沙星的柔性材料用于立体光固化耳部植入物，检查几何、力学、体外释放及抗菌作用。研究把局部解剖适配与药物递送放入同一原型，而不是分别证明可打印和有药效。[R2601]"
+          },
+          {
+            "type": "p",
+            "text": "耳部空间的约束使柔性和外形成为递送的一部分：装置必须接近目标区域，同时维持可放置、可停留的状态。选择光固化的研究意义在于提供精细外形的比较工具；然而改变外形也改变液体接触面积与扩散距离。因此释放差异不能直接归因于“个体化”，应把相同载量下的几何效应与材料本身的扩散阻力分开。"
+          },
+          {
+            "type": "p",
+            "text": "这一节点建立的因果链是结构改变接触边界，边界再改变质量传递。它引出的后续任务有两支：感染装置需要在持续暴露中处理耐药选择问题；黏膜装置需要保证组织接触期间的机械稳定。两支在研究方法上都要求把静态释放曲线连接到使用环境。可比较的终点应包括释放后结构完整性，以及结构变形前后动力学是否保持，而不只是最长释放天数。"
+          },
+          {
+            "type": "h3",
+            "text": "开放敷料与蛋白载体"
+          },
+          {
+            "type": "p",
+            "text": "2023年Nano Convergence研究用海藻酸盐和氧化锌四足体构建开放及封闭敷料，考察蛋白吸附、抗菌表现和离体皮肤相容性。开放结构中颗粒臂与表面的接触状态使几何成为功能变量。[R2605]"
+          },
+          {
+            "type": "p",
+            "text": "创面敷料面对的是持续交换的湿润界面。选择开放孔道会同时改变液体通路、气体通路和颗粒暴露，因此某一抗菌结果不能单独决定最优孔隙率。蛋白能吸附到载体也不等同于到达组织后仍具有所需生物活性；吸附能力、释放后的结构完整性与受体水平功能应分成连续但独立的证据。"
+          },
+          {
+            "type": "p",
+            "text": "这一节点把局部递送从封闭储库带向大面积动态接触。与N2相比，两者都用凝胶承载功能成分，但创面应用还需要面对渗出物、换药和局部形状变化。后续研究可以把病程状态作为外部条件，比较相同材料在不同接触与液体交换条件下的表现，再决定是调整结构、表面性质还是释放程序。这样的比较有助于避免把所有变化都归结为材料配比。"
+          },
+          {
+            "type": "h3",
+            "text": "自由成形阴道环"
+          },
+          {
+            "type": "p",
+            "text": "Welsh等2019年将塑料自由成形用于含达匹韦林阴道环，采用熔融热塑性材料的高压喷射建立环形载药结构。研究把以往较依赖固定成形工艺的环形递送体系带入可数字调节的制造框架。[R2606]"
+          },
+          {
+            "type": "p",
+            "text": "环形装置具有一个特别的设计矛盾：环需要柔顺以便变形，又需要恢复形状以维持停留。材料沉积改变内部路径和层间结合，也可能同时改变药物迁移路径。因此打印成功只解决了形态问题，真正的制剂研究还需确定机械循环与释放功能是否耦合。表面连续性和内部孔道不能被简单当成外观指标。"
+          },
+          {
+            "type": "p",
+            "text": "这项研究为N7的储库结构与N9的内部填充调节提供共同起点。两种后续路线分别调节跨膜扩散和整个环的有效刚度，适合回答不同问题。若以个体尺寸改变环的周长，载药量、表面积与压缩响应可能共同变化；需要先明确希望保持哪个性能，再决定数字模型允许改变哪些尺寸，形成有边界的个体化设计。"
+          },
+          {
+            "type": "h3",
+            "text": "柔性储库环多载荷"
+          },
+          {
+            "type": "p",
+            "text": "2022年研究利用熔融沉积制造柔性聚氨酯阴道储库环，考察膜厚与填充等结构因素对多类活性成分释放的影响，所研究载荷跨越小分子、蛋白和颗粒体系。[R2607]"
+          },
+          {
+            "type": "p",
+            "text": "选择储库架构的意义是把装置主体和药物空间分开，使每类载荷不必经历完全相同的主体制造过程。不过不同分子尺寸、亲疏水性与界面相互作用会改变跨膜运输，所以同一外形不意味着同一释放机制。平台通用性应通过不同载荷下哪些参数保持作用、哪些参数需要重标定来证明。"
+          },
+          {
+            "type": "p",
+            "text": "与N6直接载药的材料体系相比，储库提供了新的解耦机会，同时增加密封和长期完整性任务。其研究衔接不是单向追求更多药物种类，而是找到可重复的参数映射。若膜厚变化可以稳定预测一类分子的传输，才有可能形成尺寸设计范围；若蛋白受吸附影响显著，则应把活性回收而非溶出质量作为后续核心读数。储库还应在机械循环前后分别评价。若变形只改变短期扩散而不破坏密封，问题属于可建模的使用扰动；若出现不可逆泄漏，则需要回到接缝和结构设计，而不能仅以平均释放曲线掩盖少数失效。"
+          },
+          {
+            "type": "h3",
+            "text": "眼部插入物因子设计"
+          },
+          {
+            "type": "p",
+            "text": "眼部插入物研究将热熔挤出与FDM连接，用全因子设计分析结构变量，并进行体外释放、离体角膜及抗菌评价。论文于2022年在线发表、2023年卷期刊载，研究对象为含盐酸环丙沙星的可降解插入物。[R2608]"
+          },
+          {
+            "type": "p",
+            "text": "全因子设计有价值的原因是厚度和填充可能互相影响：增加厚度延长扩散距离，却也可能增加载量；降低填充增加接触面积，同时减弱完整性。统计交互项帮助区分这些变化能否独立解释，而不是用一个看起来理想的原型代替设计规律。对有限样本研究，模型范围应由实际测试的结构组合界定。"
+          },
+          {
+            "type": "p",
+            "text": "眼表存在快速更新的液体和机械扰动，因而装置释放与角膜到达量之间有多重损失路径。离体评价把问题从容器释放推进到组织屏障，但下一步仍需连接停留、舒适性和实际接触面积。该支线与阴道环共同说明：局部装置的成功单位是“在正确位置保持正确暴露的系统”，几何既参与制剂功能，也参与使用行为。"
+          },
+          {
+            "type": "h3",
+            "text": "液滴沉积个体化环"
+          },
+          {
+            "type": "p",
+            "text": "2024年液滴沉积阴道环研究考察填充和内部结构的个体化，结合压缩、回弹、几何、孔隙与释放等质量属性。研究显示设计参数的影响需要同时放在机械响应与递送表现中阅读。[R2609]"
+          },
+          {
+            "type": "p",
+            "text": "这一节点把前面两条研究线汇合：外形负责适配，内部结构负责调节有效刚度和传质。相同外径下可以产生不同变形行为，但用户感受并不能由一次压缩力直接代表。循环载荷、回复速度以及长期接触后材料变化共同决定装置是否保持原先的设计状态，因此个体化的评价对象应是使用期间的性能轨迹。"
+          },
+          {
+            "type": "p",
+            "text": "从这里反馈至N1的原则是先定义可接受的接触和暴露窗口，再选择需要个体化的参数。对于企业研发，可形成以材料和基础架构固定、几何在验证边界内变化的产品族；对于学术研究，则应优先揭示一个参数同时影响多个终点时的权衡。只有这种耦合被量化，复杂结构才会从制造展示转为有解释力的递送设计。"
+          }
+        ]
+      },
+      {
+        "title": "企业路线与发展阶段",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "FABRX 公开设备路线，AnelleO 的 ANL0102 属于特定局部给药产品研发。设备能够制造多尺寸件，与某一药物处方完成临床开发之间，需要处方级测试和组批记录。[R10] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "专利公开的储库机制",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "EP3501543A1 描述三维打印阴道给药系统，设有含活性成分的核心与膜。膜厚、核心体积和整体形态作用不同，比较时要分别建立几何到含量和几何到释放的关系。[R09] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "制造与药学如何共用比较",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "在每个尺寸组测单元含量、边缘与中心厚度、保存后强度和释放；按同一给药任务对照打印与常规膜，区分打印改变的几何和配方变化。[R02] [R04] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "2027–2029 年的观察重点",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "近期应追踪多尺寸批次的含量一致性、湿度和包装对膜的影响，以及明确的局部停留数据。对需要缓释的载体，应共同评价材料变化、驻留和释放，并透明报告达到哪一级实验验证。"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "On the road to personalized therapy: 3D-printed nanostructured orodispersible films for repurposed anticancer drug delivery in pediatric oncology",
+        "year": "2026",
+        "url": "https://doi.org/10.1016/j.ijpharm.2026.127450",
+        "kind": "paper",
+        "source": "10.1016/j.ijpharm.2026.127450"
+      },
+      {
+        "id": "R02",
+        "title": "3D-Printed Veterinary Dosage Forms-A Comparative Study of Three Semi-Solid Extrusion 3D Printers.",
+        "year": "2020",
+        "url": "https://doi.org/10.3390/pharmaceutics12121239",
+        "kind": "paper",
+        "source": "10.3390/pharmaceutics12121239"
+      },
+      {
+        "id": "R04",
+        "title": "Additive manufacturing of personalized orodispersible warfarin films.",
+        "year": "2019",
+        "url": "https://doi.org/10.1016/j.ijpharm.2019.04.018",
+        "kind": "paper",
+        "source": "10.1016/j.ijpharm.2019.04.018"
+      },
+      {
+        "id": "R05",
+        "title": "3D Printed Buccal Films for Prolonged-Release of Propranolol Hydrochloride: Development, Characterization and Bioavailability Prediction.",
+        "year": "2021",
+        "url": "https://doi.org/10.3390/pharmaceutics13122143",
+        "kind": "paper",
+        "source": "10.3390/pharmaceutics13122143"
+      },
+      {
+        "id": "R06",
+        "title": "Fabrication and Preliminary In Vitro Evaluation of 3D-Printed Alginate Films with Cannabidiol (CBD) and Cannabigerol (CBG) Nanoparticles for Potential Wound-Healing Applications.",
+        "year": "2022",
+        "url": "https://doi.org/10.3390/pharmaceutics14081637",
+        "kind": "paper",
+        "source": "10.3390/pharmaceutics14081637"
+      },
+      {
+        "id": "R09",
+        "year": "2019",
+        "title": "Method for manufacturing vaginal drug delivery systems using a three dimensional printer",
+        "url": "https://patents.google.com/patent/EP3501543A1/en",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R10",
+        "year": "",
+        "title": "AnelleO Products: ANL0102 for Infertility",
+        "url": "https://anelleo.com/anelleo-products/",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R11",
+        "year": "2022",
+        "title": "Fused deposition modeling three-dimensional printing of flexible polyurethane intravaginal rings with controlled tunable release profiles",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8870081/",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R12",
+        "year": "",
+        "title": "Pharmaceutical printers for personalized medicine",
+        "url": "https://www.fabrx.co.uk/products",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R2601",
+        "title": "Stereolithography 3D printed implants: A preliminary investigation as potential local drug delivery systems to the ear",
+        "year": "2022",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.ijpharm.2022.121529"
+      },
+      {
+        "id": "R2605",
+        "title": "3D-printed wound dressing platform for protein administration based on alginate and zinc oxide tetrapods",
+        "year": "2023",
+        "source": "Nano Convergence",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1186/s40580-023-00401-6"
+      },
+      {
+        "id": "R2606",
+        "title": "Dapivirine-releasing vaginal rings produced by plastic freeforming additive manufacturing",
+        "year": "2019",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.ijpharm.2019.118725"
+      },
+      {
+        "id": "R2607",
+        "title": "Fused deposition modeling three-dimensional printing of flexible polyurethane intravaginal rings with controlled tunable release profiles for multiple active drugs",
+        "year": "2022",
+        "source": "Drug Delivery and Translational Research",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8870081/"
+      },
+      {
+        "id": "R2608",
+        "title": "Design and optimization of ciprofloxacin hydrochloride biodegradable 3D printed ocular inserts: Full factorial design and in-vitro and ex-vivo evaluations: Part II",
+        "year": "2023",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.ijpharm.2022.122533"
+      },
+      {
+        "id": "R2609",
+        "title": "Personalization of Intravaginal rings by droplet deposition modeling based 3D printing technology",
+        "year": "2024",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.ijpharm.2024.124754"
+      }
+    ]
+  },
+  "en": {
+    "id": "H36",
+    "p": "P3",
+    "title": "Printed drug delivery films and other carriers",
+    "subtitle": "Distinguish film size, residence and release by application site",
+    "thesis": "Printing can link carrier geometry and drug content. Orodispersible films, buccal films, dressings and reservoirs offer different geometric advantages that require matched dissolution, mucosal contact or local residence tests.",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway",
+      "summary": "The size–dose relationship branches into rapid dispersion and local residence. Validate material and intended use separately, then feed content uniformity and lot behaviour back into geometry and loading.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2019",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R04"
+          ],
+          "title": "Vary orodispersible film content through size",
+          "question": "Can design size map directly to measured content?",
+          "evidence": "In the studied 3.9–7.4 mg range of extruded warfarin orodispersible films, the coefficient of determination for designed size versus measured content was 0.9996."
+        },
+        {
+          "id": "N2",
+          "time": "2020",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R02"
+          ],
+          "title": "Treat equipment as a source of variation",
+          "question": "Does one formulation reproduce across printers?",
+          "evidence": "A veterinary dosage-form study compared soluble film manufacturing on three semisolid extrusion printers."
+        },
+        {
+          "id": "N3",
+          "time": "2021",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R05"
+          ],
+          "title": "Design for buccal residence",
+          "question": "How should adhesion and release be compared together?",
+          "evidence": "Gelatin–PVP propranolol buccal films showed higher adhesion and tensile strength and slower release than gelatin–PVA films."
+        },
+        {
+          "id": "N4",
+          "time": "2026",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R01"
+          ],
+          "title": "Pair nanostructure with film dispersion",
+          "question": "Does the active ingredient state change dispersion?",
+          "evidence": "Pediatric oncology research explored nanostructured orodispersible films for drug repurposing."
+        },
+        {
+          "id": "N5",
+          "time": "2022",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R06",
+            "R11"
+          ],
+          "title": "Compare the time scales of dressings and reservoirs",
+          "question": "When must a carrier remain intact?",
+          "evidence": "Alginate films containing cannabinoid nanoparticles underwent preliminary in vitro testing, and polyurethane vaginal rings used structure to tune release."
+        },
+        {
+          "id": "N6",
+          "time": "2019–2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R04",
+            "R10",
+            "R12"
+          ],
+          "title": "Define product quality and manufacturing traceability",
+          "question": "How should the platform and the formulation be accepted?",
+          "evidence": "FABRX presents personalized manufacturing equipment, AnelleO describes a vaginal ring candidate, and the film study provides a size–dose calibration benchmark."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Verify across printers"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Shift to residence-based films"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Check active ingredient state"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Extend the release task"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Align unit content"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Retain local fit"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Feed content and release deviations into design"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Read formulation evidence by application site",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Orodispersible films require content, stability and disintegration. Buccal films add adhesion and residence. Dressings and rings need hydrated performance and sustained release. Size–content research provides a calibration method to complement site-specific function tests. [R04] [R05] [R06] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathway and evidence by stage",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Vary orodispersible film content through size"
+          },
+          {
+            "type": "p",
+            "text": "In the studied 3.9–7.4 mg range of extruded warfarin orodispersible films, the coefficient of determination for designed size versus measured content was 0.9996. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "The linear relationship supports calibration. Measure dose distributions within each size separately and pair film strength with disintegration evidence."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Treat equipment as a source of variation"
+          },
+          {
+            "type": "p",
+            "text": "A veterinary dosage-form study compared soluble film manufacturing on three semisolid extrusion printers. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "The printer comparison identifies manufacturing variance. Link dimensions before and after drying, measured content and mechanical integrity to separate equipment and formulation effects."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Design for buccal residence"
+          },
+          {
+            "type": "p",
+            "text": "Gelatin–PVP propranolol buccal films showed higher adhesion and tensile strength and slower release than gelatin–PVA films. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "The polymers alter buccal residence and delivery behavior. Interpret simulated pharmacokinetics separately from in vitro release and add transmucosal evidence as a subsequent layer."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Pair nanostructure with film dispersion"
+          },
+          {
+            "type": "p",
+            "text": "Pediatric oncology research explored nanostructured orodispersible films for drug repurposing. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Use films with the same ingredient without the nanostructure and matching blank films to distinguish ingredient state from post-dispersion release."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Compare the time scales of dressings and reservoirs"
+          },
+          {
+            "type": "p",
+            "text": "Alginate films containing cannabinoid nanoparticles underwent preliminary in vitro testing, and polyurethane vaginal rings used structure to tune release. [R06] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Dressing comparisons should retain wet fit and mechanics. Ring comparisons require fit, sustained release and residual content at the end."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Define product quality and manufacturing traceability"
+          },
+          {
+            "type": "p",
+            "text": "FABRX presents personalized manufacturing equipment, AnelleO describes a vaginal ring candidate, and the film study provides a size–dose calibration benchmark. [R04] [R10] [R12]"
+          },
+          {
+            "type": "p",
+            "text": "Link formulation, equipment, drying, packaging and content assay to one version, with site-specific release and use requirements."
+          },
+          {
+            "type": "h3",
+            "text": "Related experimental comparisons"
+          },
+          {
+            "type": "h3",
+            "text": "Ear-implant geometry"
+          },
+          {
+            "type": "p",
+            "text": "Triacca and colleagues used flexible levofloxacin-loaded material to fabricate stereolithographic ear implants, assessing geometry, mechanics, in vitro release and antibacterial activity. The prototype combined local anatomical fit with drug delivery, rather than demonstrating printability and drug activity separately. [R2601]"
+          },
+          {
+            "type": "p",
+            "text": "The constraints of the ear space make flexibility and shape integral to delivery: the device must be close to the target area while maintaining a placeable and stable state. The significance of choosing photopolymerization lies in providing a comparative tool for finely shaped devices; however, changing the shape also alters the liquid contact area and diffusion distance. Therefore, release differences cannot be directly attributed to \"individualization\"; the geometric effects under the same loading capacity should be separated from the diffusion resistance of the material itself."
+          },
+          {
+            "type": "p",
+            "text": "The causal chain established by node is that structural changes alter the contact boundary, which in turn alters mass transfer. This leads to two subsequent tasks: infection devices need to address drug resistance selection during continuous exposure; mucosal devices need to ensure mechanical stability during tissue contact. Both require methodologically linking the static release profile to the usage environment. Comparable endpoints should include post-release structural integrity and whether the dynamics remain consistent before and after structural deformation, not just the longest release duration."
+          },
+          {
+            "type": "h3",
+            "text": "Open dressings and protein carriers"
+          },
+          {
+            "type": "p",
+            "text": "In 2023, Nano Convergence research constructed open and closed dressings using alginate and zinc oxide tetrapods, investigating protein adsorption, antibacterial performance, and ex vivo skin compatibility. In open structures, the contact state between the particle arms and the surface makes geometry a functional variable. [R2605]"
+          },
+          {
+            "type": "p",
+            "text": "Wound dressings deal with a constantly changing, moist interface. Choosing open pores simultaneously alters fluid pathways, gas pathways, and particle exposure; therefore, optimal porosity cannot be solely determined by a single antibacterial outcome. Protein adsorption to a carrier does not equate to retaining the desired biological activity upon reaching the tissue; adsorption capacity, post-release structural integrity, and receptor-level function should be considered as separate but continuous pieces of evidence."
+          },
+          {
+            "type": "p",
+            "text": "This node represents a shift in local delivery from closed reservoirs to large-area dynamic contact. Compared to N2, both use gels to carry functional components, but wound application requires addressing exudate, dressing changes, and local shape variations. Future research could consider disease progression as an external factor, comparing the performance of the same material under different contact and fluid exchange conditions to determine whether to adjust the structure, surface properties, or release program. Such comparisons help avoid attributing all changes to material formulation."
+          },
+          {
+            "type": "h3",
+            "text": "Freeform vaginal rings"
+          },
+          {
+            "type": "p",
+            "text": "In 2019, Welsh and colleagues used plastic freeforming to fabricate dapivirine-containing vaginal rings, creating drug-loaded annular structures through high-pressure jetting of molten thermoplastics. This placed ring-delivery systems, previously more dependent on fixed forming processes, in a digitally adjustable manufacturing framework. [R2606]"
+          },
+          {
+            "type": "p",
+            "text": "The ring device presents a unique design contradiction: the ring needs to be flexible enough to deform, yet it also needs to regain its shape to maintain its position. Material deposition alters internal pathways and interlayer bonding, potentially changing drug migration pathways as well. Therefore, successful printing only addresses the morphological issue; actual formulation research requires determining whether mechanical circulation and release functions are coupled. Surface continuity and internal pores cannot be simply considered as aesthetic indicators."
+          },
+          {
+            "type": "p",
+            "text": "This study provides a common starting point for regulating the reservoir structure of N7 and the internal filling of N9. Two subsequent approaches, respectively adjusting transmembrane diffusion and the effective stiffness of the entire ring, are suitable for answering different questions. Changing the ring's perimeter by individual dimensions may affect drug loading, surface area, and compression response; it is necessary to first clarify which performance characteristics are desired to be maintained, and then determine which dimensions the digital model allows to be altered, resulting in a bounded, individualized design."
+          },
+          {
+            "type": "h3",
+            "text": "Flexible reservoir rings for multiple payloads"
+          },
+          {
+            "type": "p",
+            "text": "A 2022 study used fused deposition modeling to fabricate flexible polyurethane vaginal reservoir rings, testing how membrane thickness, infill and other structural factors affected release of different active ingredients. Payloads spanned small molecules, proteins and particulate systems.[R2607]"
+          },
+          {
+            "type": "p",
+            "text": "The significance of choosing the reservoir architecture is to separate the device body from the drug space, so that each type of payload does not have to undergo the exact same body manufacturing process. However, different molecular sizes, hydrophilicity/hydrophobicity, and interfacial interactions will alter transmembrane transport, so the same shape does not imply the same release mechanism. The platform's versatility should be demonstrated by identifying which parameters remain effective under different payloads and which parameters require recalibration."
+          },
+          {
+            "type": "p",
+            "text": "Compared to N6 direct drug delivery systems, the reservoir offers new decoupling opportunities while simultaneously increasing the requirements for sealing and long-term integrity. Its research focus is not solely on increasing the number of drug types, but on finding reproducible parameter mappings. Only if membrane thickness variations can stably predict the transport of a class of molecules can a size design range be established; if protein adsorption is significantly affected, then activity recovery, rather than dissolution mass, should be used as the core subsequent reading. The reservoir should also be evaluated before and after mechanical cycling. If deformation only alters short-term diffusion without compromising the seal, the problem falls under the category of modelable usage perturbations; if irreversible leakage occurs, it is necessary to return to seam and structural design, rather than simply masking a few failures with average release curves."
+          },
+          {
+            "type": "h3",
+            "text": "Factorial design of ocular inserts"
+          },
+          {
+            "type": "p",
+            "text": "An ocular-insert study combined hot-melt extrusion and FDM, using a full factorial design to analyze structural variables alongside in vitro release, ex vivo corneal and antibacterial evaluations. Published online in 2022 and in a 2023 journal issue, it examined biodegradable ciprofloxacin-hydrochloride inserts. [R2608]"
+          },
+          {
+            "type": "p",
+            "text": "The full factorial design is valuable because thickness and infill can influence each other: increasing thickness extends the diffusion distance but may also increase the load; reducing infill increases the contact area but weakens integrity. Statistical interaction terms help distinguish whether these variations can be independently explained, rather than replacing design principles with a seemingly ideal prototype. For finite sample studies, the model scope should be defined by the actual combination of structures tested."
+          },
+          {
+            "type": "p",
+            "text": "The ocular surface is subject to rapidly changing fluid and mechanical disturbances, resulting in multiple loss paths between device release and corneal reach. Ex vivo evaluation moves the issue from container release to the tissue barrier, but the next step still needs to connect retention, comfort, and actual contact area. This branch, along with the vaginal ring, illustrates that the successful unit of a local device is \"a system that maintains proper exposure in the correct position,\" where geometry participates in both formulation function and user behavior."
+          },
+          {
+            "type": "h3",
+            "text": "Personalized rings by droplet deposition"
+          },
+          {
+            "type": "p",
+            "text": "The 2024 study on droplet-deposited vaginal rings examined the individualization of filling and internal structure, considering quality properties such as compression, resilience, geometry, porosity, and release. The study shows that the impact of design parameters needs to be considered in conjunction with both mechanical response and delivery performance. [R2609]"
+          },
+          {
+            "type": "p",
+            "text": "The node merges the two previous research lines: the external shape is responsible for adaptation, while the internal structure is responsible for adjusting effective stiffness and mass transfer. Different deformation behaviors can occur under the same outer diameter, but the user experience cannot be directly represented by a single compressive force. Cyclic load, recovery rate, and material changes after long-term contact jointly determine whether the device maintains its original design state; therefore, the individualized evaluation object should be the performance trajectory during use."
+          },
+          {
+            "type": "p",
+            "text": "The principle fed back to N1 from here is to first define the acceptable contact and exposure windows, and then select the parameters that need to be individualized. For enterprise R&D, this can lead to product families with fixed materials and infrastructure, and geometry that varies within the verification boundary; for academic research, the priority should be to reveal the trade-offs when a parameter simultaneously affects multiple endpoints. Only when this coupling is quantified can complex structures be transformed from manufacturing demonstrations into interpretable delivery designs."
+          }
+        ]
+      },
+      {
+        "title": "Industrial routes and stages",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "FABRX documents an equipment route, and AnelleO's ANL0102 represents development of a local delivery candidate. Moving from size options to clinical formulation development requires formulation-specific tests and batch records. [R10] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Reservoir mechanisms in patent disclosures",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "EP3501543A1 describes a printed vaginal delivery system with an active-containing core and membrane. Membrane thickness, core volume and overall form operate differently. Map geometry to content and release separately. [R09] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Shared pharmaceutical and manufacturing comparisons",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Measure unit content, edge and centre thickness, retained strength and release by size. Compare printing and conventional films for the same delivery task to distinguish geometry from formulation changes. [R02] [R04] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Priorities for 2027–2029",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Track content consistency across sizes and lots, humidity and packaging effects, and site-specific residence data. For sustained delivery, jointly assess material change, residence and release and report the stage reached."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "On the road to personalized therapy: 3D-printed nanostructured orodispersible films for repurposed anticancer drug delivery in pediatric oncology",
+        "year": "2026",
+        "url": "https://doi.org/10.1016/j.ijpharm.2026.127450",
+        "kind": "paper",
+        "source": "10.1016/j.ijpharm.2026.127450"
+      },
+      {
+        "id": "R02",
+        "title": "3D-Printed Veterinary Dosage Forms-A Comparative Study of Three Semi-Solid Extrusion 3D Printers.",
+        "year": "2020",
+        "url": "https://doi.org/10.3390/pharmaceutics12121239",
+        "kind": "paper",
+        "source": "10.3390/pharmaceutics12121239"
+      },
+      {
+        "id": "R04",
+        "title": "Additive manufacturing of personalized orodispersible warfarin films.",
+        "year": "2019",
+        "url": "https://doi.org/10.1016/j.ijpharm.2019.04.018",
+        "kind": "paper",
+        "source": "10.1016/j.ijpharm.2019.04.018"
+      },
+      {
+        "id": "R05",
+        "title": "3D Printed Buccal Films for Prolonged-Release of Propranolol Hydrochloride: Development, Characterization and Bioavailability Prediction.",
+        "year": "2021",
+        "url": "https://doi.org/10.3390/pharmaceutics13122143",
+        "kind": "paper",
+        "source": "10.3390/pharmaceutics13122143"
+      },
+      {
+        "id": "R06",
+        "title": "Fabrication and Preliminary In Vitro Evaluation of 3D-Printed Alginate Films with Cannabidiol (CBD) and Cannabigerol (CBG) Nanoparticles for Potential Wound-Healing Applications.",
+        "year": "2022",
+        "url": "https://doi.org/10.3390/pharmaceutics14081637",
+        "kind": "paper",
+        "source": "10.3390/pharmaceutics14081637"
+      },
+      {
+        "id": "R09",
+        "year": "2019",
+        "title": "Method for manufacturing vaginal drug delivery systems using a three dimensional printer",
+        "url": "https://patents.google.com/patent/EP3501543A1/en",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R10",
+        "year": "",
+        "title": "AnelleO Products: ANL0102 for Infertility",
+        "url": "https://anelleo.com/anelleo-products/",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R11",
+        "year": "2022",
+        "title": "Fused deposition modeling three-dimensional printing of flexible polyurethane intravaginal rings with controlled tunable release profiles",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8870081/",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R12",
+        "year": "",
+        "title": "Pharmaceutical printers for personalized medicine",
+        "url": "https://www.fabrx.co.uk/products",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R2601",
+        "title": "Stereolithography 3D printed implants: A preliminary investigation as potential local drug delivery systems to the ear",
+        "year": "2022",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.ijpharm.2022.121529"
+      },
+      {
+        "id": "R2605",
+        "title": "3D-printed wound dressing platform for protein administration based on alginate and zinc oxide tetrapods",
+        "year": "2023",
+        "source": "Nano Convergence",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1186/s40580-023-00401-6"
+      },
+      {
+        "id": "R2606",
+        "title": "Dapivirine-releasing vaginal rings produced by plastic freeforming additive manufacturing",
+        "year": "2019",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.ijpharm.2019.118725"
+      },
+      {
+        "id": "R2607",
+        "title": "Fused deposition modeling three-dimensional printing of flexible polyurethane intravaginal rings with controlled tunable release profiles for multiple active drugs",
+        "year": "2022",
+        "source": "Drug Delivery and Translational Research",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8870081/"
+      },
+      {
+        "id": "R2608",
+        "title": "Design and optimization of ciprofloxacin hydrochloride biodegradable 3D printed ocular inserts: Full factorial design and in-vitro and ex-vivo evaluations: Part II",
+        "year": "2023",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.ijpharm.2022.122533"
+      },
+      {
+        "id": "R2609",
+        "title": "Personalization of Intravaginal rings by droplet deposition modeling based 3D printing technology",
+        "year": "2024",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.ijpharm.2024.124754"
+      }
+    ]
+  },
+  "de": {
+    "id": "H36",
+    "p": "P3",
+    "title": "Gedruckte Wirkstofffilme und weitere Trägersysteme",
+    "subtitle": "Filmgröße, Verweildauer und Freisetzung nach Anwendungsort trennen",
+    "thesis": "Der Druck kann Trägergeometrie und Wirkstoffgehalt verknüpfen. Orodispersible Filme, Bukkalfilme, Auflagen und Depots bieten unterschiedliche geometrische Vorteile, die mit passenden Tests zu Auflösung, Schleimhautkontakt oder lokaler Verweildauer zu prüfen sind.",
+    "questions": [],
+    "graph": {
+      "title": "Forschungspfad",
+      "summary": "Die Größen-Dosis-Beziehung verzweigt sich in schnellen Zerfall und lokalen Verbleib. Material und Verwendungsaufgabe getrennt prüfen. Gehaltsgleichförmigkeit und Chargenverhalten beeinflussen Geometrie und Beladung.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2019",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R04"
+          ],
+          "title": "Gehalt orodispersibler Filme über die Größe ändern",
+          "question": "Lässt sich die Entwurfsgröße dem gemessenen Gehalt zuordnen?",
+          "evidence": "Bei extrudierten orodispersiblen Warfarinfilmen im untersuchten Bereich von 3,9–7,4 mg betrug das Bestimmtheitsmaß von Entwurfsgröße zu gemessenem Gehalt 0,9996."
+        },
+        {
+          "id": "N2",
+          "time": "2020",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R02"
+          ],
+          "title": "Geräte als Streuquelle behandeln",
+          "question": "Ist dieselbe Formulierung auf mehreren Druckern reproduzierbar?",
+          "evidence": "Eine veterinärpharmazeutische Studie verglich die Herstellung löslicher Filme auf drei Halbfestextrusionsdruckern."
+        },
+        {
+          "id": "N3",
+          "time": "2021",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R05"
+          ],
+          "title": "Bukkale Verweildauer gestalten",
+          "question": "Wie lassen sich Haftung und Freisetzung gemeinsam vergleichen?",
+          "evidence": "Bukkale Propranololfilme aus Gelatine–PVP zeigten höhere Haftung und Zugfestigkeit sowie langsamere Freisetzung als Gelatine–PVA."
+        },
+        {
+          "id": "N4",
+          "time": "2026",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R01"
+          ],
+          "title": "Nanostruktur und Filmzerfall verbinden",
+          "question": "Beeinflusst der Wirkstoffzustand den Filmzerfall?",
+          "evidence": "Pädiatrisch-onkologische Forschung untersuchte nanostrukturierte orodispersible Filme zur Wirkstoffumwidmung."
+        },
+        {
+          "id": "N5",
+          "time": "2022",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R06",
+            "R11"
+          ],
+          "title": "Zeitskalen von Auflagen und Depots vergleichen",
+          "question": "Wann muss ein Träger intakt bleiben?",
+          "evidence": "Alginatfilme mit Cannabinoid-Nanopartikeln wurden in vitro vorläufig geprüft. Polyurethan-Vaginalringe nutzten Struktur zur Freisetzungssteuerung."
+        },
+        {
+          "id": "N6",
+          "time": "2019–2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R04",
+            "R10",
+            "R12"
+          ],
+          "title": "Produktqualität und Fertigungsrückverfolgung definieren",
+          "question": "Wie werden Plattform und Formulierung getrennt abgenommen?",
+          "evidence": "FABRX zeigt Technik zur Individualfertigung, AnelleO einen Vaginalring-Entwicklungskandidaten. Die Filmstudie liefert eine Referenz für Größen-Dosis-Kalibrierung."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Geräteübergreifende Fertigung prüfen"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Auf Filme mit Verweildauer wechseln"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Wirkstoffzustand prüfen"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Freisetzungsaufgabe verlängern"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Einzelgehalt abgleichen"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Lokale Passung berücksichtigen"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Gehalts- und Freisetzungsabweichung ins Design zurückführen"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Darreichungsevidenz nach Anwendungsort lesen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Orodispersible Filme erfordern Gehalt, Stabilität und Zerfall. Bukkalfilme ergänzen Haftung und Verweildauer. Auflagen und Ringe benötigen Nassprüfung und Dauerfreisetzung. Größen-Gehalts-Versuche liefern eine Kalibriermethode neben ortsspezifischer Funktionsprüfung. [R04] [R05] [R06] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungspfad und Evidenz je Station",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Gehalt orodispersibler Filme über die Größe ändern"
+          },
+          {
+            "type": "p",
+            "text": "Bei extrudierten orodispersiblen Warfarinfilmen im untersuchten Bereich von 3,9–7,4 mg betrug das Bestimmtheitsmaß von Entwurfsgröße zu gemessenem Gehalt 0,9996. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Der lineare Zusammenhang unterstützt die Kalibrierung. Dosisverteilungen gleicher Größe getrennt messen und Filmfestigkeit mit Zerfallsbefunden verbinden."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Geräte als Streuquelle behandeln"
+          },
+          {
+            "type": "p",
+            "text": "Eine veterinärpharmazeutische Studie verglich die Herstellung löslicher Filme auf drei Halbfestextrusionsdruckern. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Der Gerätevergleich zeigt Fertigungsstreuung. Maße vor und nach Trocknung, Gehalt und Integrität verknüpfen, um Geräte- von Formulierungseffekten zu trennen."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Bukkale Verweildauer gestalten"
+          },
+          {
+            "type": "p",
+            "text": "Bukkale Propranololfilme aus Gelatine–PVP zeigten höhere Haftung und Zugfestigkeit sowie langsamere Freisetzung als Gelatine–PVA. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Polymere verändern bukkalen Verbleib und Abgabeverhalten. Simulierte Pharmakokinetik und In-vitro-Freisetzung getrennt lesen. Transmukosale Evidenz ist eine weitere Stufe."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Nanostruktur und Filmzerfall verbinden"
+          },
+          {
+            "type": "p",
+            "text": "Pädiatrisch-onkologische Forschung untersuchte nanostrukturierte orodispersible Filme zur Wirkstoffumwidmung. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Filme mit gleichem Wirkstoff ohne Nanostruktur und passende Leerfilme einsetzen, um Wirkstoffzustand und Freisetzung nach Zerfall zu trennen."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Zeitskalen von Auflagen und Depots vergleichen"
+          },
+          {
+            "type": "p",
+            "text": "Alginatfilme mit Cannabinoid-Nanopartikeln wurden in vitro vorläufig geprüft. Polyurethan-Vaginalringe nutzten Struktur zur Freisetzungssteuerung. [R06] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Auflagen nach Nasspassung und Mechanik vergleichen. Bei Ringen Passung, Dauerfreisetzung und Restgehalt getrennt prüfen."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Produktqualität und Fertigungsrückverfolgung definieren"
+          },
+          {
+            "type": "p",
+            "text": "FABRX zeigt Technik zur Individualfertigung, AnelleO einen Vaginalring-Entwicklungskandidaten. Die Filmstudie liefert eine Referenz für Größen-Dosis-Kalibrierung. [R04] [R10] [R12]"
+          },
+          {
+            "type": "p",
+            "text": "Formulierung, Gerät, Trocknung, Verpackung und Gehaltsprüfung einer Version zuordnen. Freisetzung und Verwendung ortsspezifisch definieren."
+          },
+          {
+            "type": "h3",
+            "text": "Ergänzende Versuchsvergleiche"
+          },
+          {
+            "type": "h3",
+            "text": "Geometrie von Ohrimplantaten"
+          },
+          {
+            "type": "p",
+            "text": "Triacca et al. verwendeten flexibles, mit Levofloxacin beladenes Material für stereolithographisch gefertigte Ohrimplantate. Sie prüften Geometrie, Mechanik, In-vitro-Freisetzung und antibakterielle Wirkung. Anatomische Passung und Wirkstoffabgabe wurden im selben Prototyp untersucht.[R2601]"
+          },
+          {
+            "type": "p",
+            "text": "Die beengten Platzverhältnisse im Ohr machen Flexibilität und Formgebung entscheidend für die Applikation: Das Applikationsgerät muss nahe am Zielort positioniert werden und gleichzeitig stabil und platzierbar sein. Die Photopolymerisation bietet den Vorteil, dass sie ein Vergleichsinstrument für fein geformte Applikationsgeräte ermöglicht. Allerdings verändert eine Formänderung auch die Kontaktfläche mit der Flüssigkeit und die Diffusionsstrecke. Daher lassen sich Unterschiede in der Freisetzung nicht direkt auf die „Individualisierung“ zurückführen; die geometrischen Effekte bei gleicher Beladungskapazität müssen vom Diffusionswiderstand des Materials selbst getrennt betrachtet werden."
+          },
+          {
+            "type": "p",
+            "text": "Die durch den Knoten etablierte Kausalkette besagt, dass strukturelle Veränderungen die Kontaktfläche und damit den Stofftransport beeinflussen. Daraus ergeben sich zwei Folgeaufgaben: Infektionspräparate müssen der Resistenzentwicklung bei kontinuierlicher Exposition entgegenwirken; mukosale Präparate müssen die mechanische Stabilität beim Gewebekontakt gewährleisten. Beide erfordern eine methodische Verknüpfung des statischen Freisetzungsprofils mit der Anwendungsumgebung. Vergleichbare Endpunkte sollten neben der längsten Freisetzungsdauer auch die strukturelle Integrität nach der Freisetzung und die Konsistenz der Dynamik vor und nach der strukturellen Deformation umfassen."
+          },
+          {
+            "type": "h3",
+            "text": "Offene Wundauflagen und Proteinträger"
+          },
+          {
+            "type": "p",
+            "text": "Eine 2023 in Nano Convergence erschienene Studie fertigte offene und geschlossene Wundauflagen aus Alginat und Zinkoxid-Tetrapoden. Geprüft wurden Proteinadsorption, antibakterielle Wirkung und Ex-vivo-Hautverträglichkeit. Der Kontakt der Partikelarme mit der Oberfläche machte die Geometrie zur funktionellen Variable.[R2605]"
+          },
+          {
+            "type": "p",
+            "text": "Wundverbände sind mit einer sich ständig verändernden, feuchten Oberfläche konfrontiert. Die Wahl offener Poren beeinflusst gleichzeitig den Flüssigkeits- und Gasaustausch sowie die Exposition gegenüber Partikeln; daher kann die optimale Porosität nicht allein anhand eines einzelnen antibakteriellen Effekts bestimmt werden. Die Proteinadsorption an einen Träger bedeutet nicht zwangsläufig, dass die gewünschte biologische Aktivität nach Erreichen des Gewebes erhalten bleibt; Adsorptionskapazität, strukturelle Integrität nach der Freisetzung und Rezeptorfunktion sollten als separate, aber zusammenhängende Faktoren betrachtet werden."
+          },
+          {
+            "type": "p",
+            "text": "stellt eine Verlagerung der lokalen Wirkstoffabgabe von geschlossenen Depots hin zu großflächigem, dynamischem Kontakt dar. Im Vergleich zu N2 verwenden beide Gele als Träger für funktionelle Komponenten, jedoch erfordert die Wundapplikation die Berücksichtigung von Exsudat, Verbandwechseln und lokalen Formveränderungen. Zukünftige Forschung könnte den Krankheitsverlauf als externen Faktor einbeziehen und die Leistung desselben Materials unter verschiedenen Kontakt- und Flüssigkeitsaustauschbedingungen vergleichen, um zu entscheiden, ob die Struktur, die Oberflächeneigenschaften oder das Freisetzungsprogramm angepasst werden müssen. Solche Vergleiche tragen dazu bei, nicht alle Veränderungen allein der Materialzusammensetzung zuzuschreiben."
+          },
+          {
+            "type": "h3",
+            "text": "Freiformgefertigte Vaginalringe"
+          },
+          {
+            "type": "p",
+            "text": "Im Jahr 2019 wandten Welsh et al. die Freiform-Kunststoffformung auf Vaginalringe mit Dapivirin an. Dabei nutzten sie Hochdruckstrahlen aus geschmolzenem thermoplastischem Material, um die ringförmige, mit Wirkstoff beladene Struktur zu erzeugen. Diese Forschung überführte das zuvor auf starre Formgebungsverfahren angewiesene ringförmige Applikationssystem in einen digital anpassbaren Fertigungsrahmen. [R2606]"
+          },
+          {
+            "type": "p",
+            "text": "Die Ringvorrichtung stellt einen einzigartigen Konstruktionswiderspruch dar: Der Ring muss flexibel genug sein, um sich zu verformen, gleichzeitig aber auch seine ursprüngliche Form wiedererlangen, um seine Position zu halten. Die Materialabscheidung verändert interne Kanäle und die Bindung zwischen den Schichten und kann somit auch die Wirkstoffmigration beeinflussen. Daher adressiert ein erfolgreicher Druck lediglich das morphologische Problem; die eigentliche Formulierungsforschung erfordert die Klärung, ob die mechanische Zirkulation und die Freisetzungsfunktion gekoppelt sind. Oberflächenkontinuität und interne Poren dürfen nicht allein als ästhetische Indikatoren betrachtet werden."
+          },
+          {
+            "type": "p",
+            "text": "Diese Studie bietet einen gemeinsamen Ausgangspunkt für die Regulierung der Reservoirstruktur von N7 und der internen Füllung von N9. Zwei aufeinanderfolgende Ansätze – die Anpassung der transmembranären Diffusion bzw. der effektiven Steifigkeit des gesamten Rings – eignen sich zur Beantwortung unterschiedlicher Fragestellungen. Die Veränderung des Ringumfangs durch einzelne Dimensionen kann die Wirkstoffbeladung, die Oberfläche und das Kompressionsverhalten beeinflussen. Daher ist es notwendig, zunächst zu klären, welche Leistungseigenschaften erhalten bleiben sollen, und anschließend zu bestimmen, welche Dimensionen das digitale Modell zur Veränderung zulässt, um ein begrenztes, individualisiertes Design zu ermöglichen."
+          },
+          {
+            "type": "h3",
+            "text": "Flexible Reservoirringe für unterschiedliche Frachten"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2022 nutzte Schmelzschichtfertigung für flexible Vaginalreservoirringe aus Polyurethan. Membrandicke und Füllung wurden auf ihren Einfluss auf die Freisetzung unterschiedlicher aktiver Frachten untersucht; diese umfassten kleine Moleküle, Proteine und Partikelsysteme.[R2607]"
+          },
+          {
+            "type": "p",
+            "text": "Die Wahl der Reservoirarchitektur ist deshalb von Bedeutung, weil sie den Gerätekörper vom Wirkstoffraum trennt, sodass nicht jede Nutzlast den gleichen Herstellungsprozess durchlaufen muss. Unterschiedliche Molekülgrößen, Hydrophilie/Hydrophobie und Grenzflächenwechselwirkungen beeinflussen jedoch den Transmembrantransport, sodass dieselbe Form nicht zwangsläufig denselben Freisetzungsmechanismus bedingt. Die Vielseitigkeit der Plattform sollte demonstriert werden, indem identifiziert wird, welche Parameter unter verschiedenen Nutzlasten wirksam bleiben und welche eine Neukalibrierung erfordern."
+          },
+          {
+            "type": "p",
+            "text": "Im Vergleich zu N6-Direktverabreichungssystemen bietet das Reservoir neue Möglichkeiten zur Entkopplung, erhöht aber gleichzeitig die Anforderungen an Dichtigkeit und Langzeitstabilität. Der Forschungsschwerpunkt liegt nicht allein auf der Erweiterung der Anzahl der Wirkstofftypen, sondern auf der Entwicklung reproduzierbarer Parameterprofile. Nur wenn Variationen der Membrandicke den Transport einer Molekülklasse zuverlässig vorhersagen können, lässt sich ein Größenbereich festlegen. Wird die Proteinadsorption signifikant beeinflusst, sollte die Aktivitätsrückgewinnung anstelle der gelösten Masse als zentraler Messwert herangezogen werden. Das Reservoir sollte zudem vor und nach mechanischen Belastungszyklen evaluiert werden. Verändert die Verformung lediglich die kurzfristige Diffusion, ohne die Dichtigkeit zu beeinträchtigen, handelt es sich um modellierbare Nutzungsstörungen. Tritt hingegen irreversibles Leckage auf, ist eine Überarbeitung der Naht- und Strukturkonstruktion erforderlich, anstatt einzelne Fehler durch durchschnittliche Freisetzungskurven zu kaschieren."
+          },
+          {
+            "type": "h3",
+            "text": "Faktorielles Design von Augeninserts"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie zu Augeninserts verknüpfte Schmelzextrusion und FDM. Ein vollfaktorieller Versuchsplan analysierte Strukturvariablen; In-vitro-Freisetzung, Ex-vivo-Hornhautprüfungen und antibakterielle Wirkung wurden untersucht. Die Arbeit erschien 2022 online und 2023 in einer regulären Ausgabe. Gegenstand waren abbaubare Inserts mit Ciprofloxacinhydrochlorid.[R2608]"
+          },
+          {
+            "type": "p",
+            "text": "Das vollständige faktorielle Versuchsdesign ist wertvoll, da Dicke und Füllung sich gegenseitig beeinflussen können: Eine größere Dicke verlängert die Diffusionsstrecke, kann aber auch die Belastung erhöhen; eine geringere Füllung vergrößert die Kontaktfläche, schwächt aber die Stabilität. Statistische Interaktionsterme helfen zu unterscheiden, ob diese Variationen unabhängig voneinander erklärt werden können, anstatt Konstruktionsprinzipien durch einen scheinbar idealen Prototyp zu ersetzen. Bei Studien mit endlichen Stichproben sollte der Modellumfang durch die tatsächliche Kombination der getesteten Strukturen definiert werden."
+          },
+          {
+            "type": "p",
+            "text": "Die Augenoberfläche ist schnell wechselnden Flüssigkeits- und mechanischen Einflüssen ausgesetzt, was zu vielfältigen Verlustpfaden zwischen der Freisetzung des Produkts und dem Erreichen der Hornhaut führt. In-vitro-Studien verlagern den Fokus von der Freisetzung aus dem Behälter auf die Gewebebarriere. Im nächsten Schritt müssen jedoch noch Retention, Tragekomfort und die tatsächliche Kontaktfläche miteinander verknüpft werden. Dieser Aspekt, zusammen mit dem Vaginalring, verdeutlicht, dass ein erfolgreiches lokales Medizinprodukt „ein System ist, das eine optimale Exposition in der richtigen Position gewährleistet“, wobei die Geometrie sowohl die Funktion der Formulierung als auch das Anwenderverhalten beeinflusst."
+          },
+          {
+            "type": "h3",
+            "text": "Individuelle Ringe durch Tropfenabscheidung"
+          },
+          {
+            "type": "p",
+            "text": "Die Studie aus dem Jahr 2024 zu vaginalen Ringen mit Tropfendeposition untersuchte die Individualisierung der Füllung und der inneren Struktur unter Berücksichtigung von Qualitätseigenschaften wie Kompression, Elastizität, Geometrie, Porosität und Freisetzung. Die Studie zeigt, dass der Einfluss von Designparametern in Verbindung mit dem mechanischen Verhalten und der Freisetzungsleistung betrachtet werden muss. [R2609]"
+          },
+          {
+            "type": "p",
+            "text": "Der Knoten vereint die beiden bisherigen Forschungsrichtungen: Die äußere Form dient der Anpassung, während die innere Struktur die effektive Steifigkeit und den Massentransfer reguliert. Unterschiedliche Verformungsverhalten können bei gleichem Außendurchmesser auftreten, die Benutzererfahrung lässt sich jedoch nicht direkt durch eine einzelne Druckkraft abbilden. Zyklische Belastung, Rückstellrate und Materialveränderungen nach Langzeitkontakt bestimmen gemeinsam, ob das Bauteil seinen ursprünglichen Konstruktionszustand beibehält. Daher sollte der individuelle Bewertungsgegenstand die Leistungsentwicklung während der Nutzung sein."
+          },
+          {
+            "type": "p",
+            "text": "Das von hier abgeleitete Prinzip für N1 besteht darin, zunächst die zulässigen Kontakt- und Belichtungsfenster zu definieren und anschließend die zu individualisierenden Parameter auszuwählen. In der Unternehmensforschung kann dies zu Produktfamilien mit festen Materialien und Infrastrukturen sowie einer innerhalb des Verifizierungsbereichs variierenden Geometrie führen. In der akademischen Forschung sollte die Priorität darauf liegen, die Wechselwirkungen aufzuzeigen, die entstehen, wenn ein Parameter gleichzeitig mehrere Endpunkte beeinflusst. Erst wenn diese Wechselwirkung quantifiziert ist, lassen sich komplexe Strukturen von Fertigungsdemonstrationen in interpretierbare Lieferkonstruktionen überführen."
+          }
+        ]
+      },
+      {
+        "title": "Industrielle Wege und Entwicklungsstufen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "FABRX dokumentiert eine Gerätelinie, AnelleO ANL0102 die Entwicklung eines lokalen Kandidaten. Von Größenoptionen zur klinischen Formulierungsentwicklung braucht es spezifische Tests und Chargendokumentation. [R10] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Depotmechanismen in Patentschriften",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "EP3501543A1 beschreibt ein gedrucktes Vaginalsystem mit wirkstoffhaltigem Kern und Membran. Membrandicke, Kernvolumen und Gesamtform wirken unterschiedlich. Geometrie getrennt zu Gehalt und Freisetzung in Beziehung setzen. [R09] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Gemeinsame pharmazeutische und fertigungstechnische Vergleiche",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Einzelgehalt, Rand- und Mittendicke, Festigkeit nach Lagerung und Freisetzung je Größe messen. Druck und herkömmliche Filme bei gleicher Abgabeaufgabe vergleichen und Geometrie von Formulierungsänderung trennen. [R02] [R04] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Schwerpunkte 2027–2029",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Gehalt über Größen und Chargen, Einflüsse von Feuchte und Verpackung sowie ortsspezifische Verweildaten verfolgen. Bei Dauerfreisetzung Materialveränderung, Verweildauer und Abgabe gemeinsam bewerten und erreichte Evidenzstufe angeben."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "On the road to personalized therapy: 3D-printed nanostructured orodispersible films for repurposed anticancer drug delivery in pediatric oncology",
+        "year": "2026",
+        "url": "https://doi.org/10.1016/j.ijpharm.2026.127450",
+        "kind": "paper",
+        "source": "10.1016/j.ijpharm.2026.127450"
+      },
+      {
+        "id": "R02",
+        "title": "3D-Printed Veterinary Dosage Forms-A Comparative Study of Three Semi-Solid Extrusion 3D Printers.",
+        "year": "2020",
+        "url": "https://doi.org/10.3390/pharmaceutics12121239",
+        "kind": "paper",
+        "source": "10.3390/pharmaceutics12121239"
+      },
+      {
+        "id": "R04",
+        "title": "Additive manufacturing of personalized orodispersible warfarin films.",
+        "year": "2019",
+        "url": "https://doi.org/10.1016/j.ijpharm.2019.04.018",
+        "kind": "paper",
+        "source": "10.1016/j.ijpharm.2019.04.018"
+      },
+      {
+        "id": "R05",
+        "title": "3D Printed Buccal Films for Prolonged-Release of Propranolol Hydrochloride: Development, Characterization and Bioavailability Prediction.",
+        "year": "2021",
+        "url": "https://doi.org/10.3390/pharmaceutics13122143",
+        "kind": "paper",
+        "source": "10.3390/pharmaceutics13122143"
+      },
+      {
+        "id": "R06",
+        "title": "Fabrication and Preliminary In Vitro Evaluation of 3D-Printed Alginate Films with Cannabidiol (CBD) and Cannabigerol (CBG) Nanoparticles for Potential Wound-Healing Applications.",
+        "year": "2022",
+        "url": "https://doi.org/10.3390/pharmaceutics14081637",
+        "kind": "paper",
+        "source": "10.3390/pharmaceutics14081637"
+      },
+      {
+        "id": "R09",
+        "year": "2019",
+        "title": "Method for manufacturing vaginal drug delivery systems using a three dimensional printer",
+        "url": "https://patents.google.com/patent/EP3501543A1/en",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R10",
+        "year": "",
+        "title": "AnelleO Products: ANL0102 for Infertility",
+        "url": "https://anelleo.com/anelleo-products/",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R11",
+        "year": "2022",
+        "title": "Fused deposition modeling three-dimensional printing of flexible polyurethane intravaginal rings with controlled tunable release profiles",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8870081/",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R12",
+        "year": "",
+        "title": "Pharmaceutical printers for personalized medicine",
+        "url": "https://www.fabrx.co.uk/products",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R2601",
+        "title": "Stereolithography 3D printed implants: A preliminary investigation as potential local drug delivery systems to the ear",
+        "year": "2022",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.ijpharm.2022.121529"
+      },
+      {
+        "id": "R2605",
+        "title": "3D-printed wound dressing platform for protein administration based on alginate and zinc oxide tetrapods",
+        "year": "2023",
+        "source": "Nano Convergence",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1186/s40580-023-00401-6"
+      },
+      {
+        "id": "R2606",
+        "title": "Dapivirine-releasing vaginal rings produced by plastic freeforming additive manufacturing",
+        "year": "2019",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.ijpharm.2019.118725"
+      },
+      {
+        "id": "R2607",
+        "title": "Fused deposition modeling three-dimensional printing of flexible polyurethane intravaginal rings with controlled tunable release profiles for multiple active drugs",
+        "year": "2022",
+        "source": "Drug Delivery and Translational Research",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8870081/"
+      },
+      {
+        "id": "R2608",
+        "title": "Design and optimization of ciprofloxacin hydrochloride biodegradable 3D printed ocular inserts: Full factorial design and in-vitro and ex-vivo evaluations: Part II",
+        "year": "2023",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.ijpharm.2022.122533"
+      },
+      {
+        "id": "R2609",
+        "title": "Personalization of Intravaginal rings by droplet deposition modeling based 3D printing technology",
+        "year": "2024",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.ijpharm.2024.124754"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1781 @@
+{
+  "zh": {
+    "id": "H20",
+    "p": "P2",
+    "title": "打印牙冠的适合性与抗折性能",
+    "subtitle": "把边缘几何、咬合厚度与临床失效联系起来",
+    "thesis": "相同咬合厚度下，边缘适合性与抗折排序可以不同。试验需保留冠材料、预备形态、粘固与加载，并用随访确定失效类型。 [R02] [R03]",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络 · 打印牙冠的适合性与抗折性能",
+      "summary": "先对齐预备和冠形，再分开量测边缘与材料承载，用完整修复体与随访连接两路，失效位置反馈几何及生产。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2026",
+          "question": "分别保存边缘内面和厚度数据。",
+          "title": "定义预备体和设计",
+          "evidence": "研究对比预备类型、软件和树脂对永久冠边缘及内部适合性的影响。需要固定黏固间隙、配准区域和插入方向，才能解释不同设计的结果。",
+          "refs": [
+            "R02"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2023–2026",
+          "question": "评价局部最大偏差及重复性。",
+          "title": "局部间隙定位",
+          "evidence": "打印层厚研究和儿童冠三维间隙研究对应两类比较。前者改变成形参数，后者比较预制氧化锆与打印冠。相似数值应在同测量位置、同间隙定义下比较。",
+          "refs": [
+            "R01",
+            "R05"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2023",
+          "question": "把加载结果与支撑和几何一同解释。",
+          "title": "厚度与承载",
+          "evidence": "研究使用90颗磨牙单冠，比较0.8、1和1.5 mm咬合厚度的两种铣削材料与打印 VarseoSmile。打印试样边缘间隙较小，但其断裂载荷从1480.3到1747.2 N，低于该试验中的铣削组表现。",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2022",
+          "question": "对齐粘固、老化和加载方向。",
+          "title": "从单冠到桥体",
+          "evidence": "三单位临时修复体的实验同时评价适合和抗折。桥体引入连接截面和跨度，与单冠受力不同。测试应观察失效起点和破坏路径。",
+          "refs": [
+            "R04"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2023–2026",
+          "question": "将不同失效模式单独统计。",
+          "title": "临床随访解释失效",
+          "evidence": "打印树脂冠的临床表现需要区分脱粘、材料断裂、颜色和继续使用。体外试验指向应力集中的位置，使用期记录评估其真实后果。",
+          "refs": [
+            "R03",
+            "R09"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2022–2023",
+          "question": "把随访转化为下一次台架试验。",
+          "title": "临床反馈进入设计",
+          "evidence": "如果病例记录以脱粘为主，需要查预备形态和界面。如果以材料裂纹为主，需回到冠厚、局部载荷及后处理。桥体失效则应另外追踪连接区。",
+          "refs": [
+            "R03",
+            "R04",
+            "R10"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "局部间隙定位",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "厚度与承载",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "从单冠到桥体",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "从单冠到桥体",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "临床随访解释失效",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "临床反馈进入设计",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "用冠折与脱粘记录修订设计",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究范围与目标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "报告覆盖打印单冠及直接有解释作用的固定修复实验，按成人、儿童、临时与永久用途区分。边缘间隙、内部间隙、承载和疲劳响应各解释一段。"
+          }
+        ]
+      },
+      {
+        "title": "学术研究脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 定义预备体和设计"
+          },
+          {
+            "type": "p",
+            "text": "研究对比预备类型、软件和树脂对永久冠边缘及内部适合性的影响。需要固定黏固间隙、配准区域和插入方向，才能解释不同设计的结果。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "分别保存边缘内面和厚度数据。"
+          },
+          {
+            "type": "p",
+            "text": "2014年研究在相同病例模型上制作40件三单位固定修复体，用硅橡胶复制法测量960个间隙点。SLA路线总间隙为98.6微米，蜡型路线为66.6微米，提示当时SLA过程仍有适配改进空间。[R13]"
+          },
+          {
+            "type": "p",
+            "text": "复制法把难以直接观察的内部空隙转为可切片测量的材料层，适合明确不同区域的空间关系。但测点密度、切片位置和就位载荷都会影响最终表示的间隙。分析单位也应保留器械与测点两层：同一修复体上的多个点共同描述其几何，不能使独立器械数量随测点数增加。这个设计逻辑后来仍适用于更密集的数字测量。"
+          },
+          {
+            "type": "p",
+            "text": "间隙增加可能来自数字设计、成形偏差或就位干涉，因而单一总平均值无法直接决定应修改哪个环节。下一步需要将边缘、轴壁和咬合面分开，并与数字设计对齐。此处的科学推进是把“能否制作”转为“误差出现在哪里”，为后续表面真实度、局部补偿和粘固空间设计建立共同问题。与材料承载分支并行时，还可以检查改变间隙是否同时改变剩余修复体厚度。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 局部间隙定位"
+          },
+          {
+            "type": "p",
+            "text": "打印层厚研究和儿童冠三维间隙研究对应两类比较。前者改变成形参数，后者比较预制氧化锆与打印冠。相似数值应在同测量位置、同间隙定义下比较。 [R01] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "评价局部最大偏差及重复性。"
+          },
+          {
+            "type": "p",
+            "text": "2021年研究扫描SLA、DLP和铣削制作的临时冠内表面，与设计文件比较。所测打印组整体及多个分区偏差较小；铣削组存在不同区域之间的表现差异，研究同时展示了误差分布图。[R14]"
+          },
+          {
+            "type": "p",
+            "text": "从稀疏间隙点转向三维表面，可以观察误差是否集中在转角、轴壁或咬合区。均方根值适合概括偏差大小，正负误差则有助于区分过度成形与材料不足。配准方法在这里相当重要：最佳拟合可能把局部就位干涉分摊到整个表面，固定关键参照后的结果更容易与临床就位相连。后续比较宜同时保留总体与局部图，而不是只输出一个排序。"
+          },
+          {
+            "type": "p",
+            "text": "该节点为补偿研究提供了诊断工具。若某区域在不同批次稳定出现同方向误差，可以尝试修改像素边界或局部设计；若误差方向不稳定，则应先追踪清洗、支撑去除和固化的变异。由此形成两种不同研发任务：减少系统偏差和减少随机波动。它们对临床交付均有价值，却需要不同的实验和质量控制方法。"
+          },
+          {
+            "type": "p",
+            "text": "2025年氧化锆冠实验设置−1、0、1三档XY像素偏移，以三次扫描评价适配和表面真实度。像素偏移显著改变边缘、内部及表面误差，较高偏移伴随较大的正向误差。[R15]"
+          },
+          {
+            "type": "p",
+            "text": "这一设计将数字边界作为可控变量，使误差测量能够直接反馈到成形。氧化锆过程还包含脱脂和烧结，像素变化在最终形状上的效应可能经过收缩放大或重新分布。因此，适合在生坯、脱脂后与烧结后分别建立几何记录，分辨曝光边界与热处理收缩的贡献。局部区域使用同一补偿值是否合适，也应通过冠壁厚度和表面方向进行检验。"
+          },
+          {
+            "type": "p",
+            "text": "补偿目标应同时包括边缘、内部间隙和可重复就位。若只最小化一个整体误差指标，可能使局部内表面过紧，增加临床调整。可将允许就位、边缘分布及最小厚度设为共同约束，比较不同预备体形状上的稳定性。该研究线随后进入氧化锆临床比较，连接的是测量与评价方法；纳米颗粒喷射和DLP具有不同工艺，临床结果需要跟随实际使用的制造路线解释。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 厚度与承载"
+          },
+          {
+            "type": "p",
+            "text": "研究使用90颗磨牙单冠，比较0.8、1和1.5 mm咬合厚度的两种铣削材料与打印 VarseoSmile。打印试样边缘间隙较小，但其断裂载荷从1480.3到1747.2 N，低于该试验中的铣削组表现。 [R03]"
+          },
+          {
+            "type": "p",
+            "text": "把加载结果与支撑和几何一同解释。"
+          },
+          {
+            "type": "p",
+            "text": "2025年研究采用同一种NextDent C&B树脂，交叉组合两台DLP打印机和两种后固化设备，测量尺寸、破坏强度与转化率。各组合表现不同，作者发现后固化设备对所测性能的影响较突出。[R16]"
+          },
+          {
+            "type": "p",
+            "text": "交叉组合能够把材料名称相同而性能不同的现象拆成设备与处理因素。转化率提供化学反应程度的线索，尺寸与力学测量则描述结构结果；三者并行能够检验提高反应程度是否伴随收缩或脆性变化。研究还可把光谱、温度、时间和试样位置记录下来，逐步解释为何相同名义时间不能代表相同处理过程。"
+          },
+          {
+            "type": "p",
+            "text": "这一节点与几何分支之间存在汇合：后固化既塑造材料网络，也可能改变最终适配。研发宜在一个试验中同时观察两者，并把批次内位置差异作为重复性问题处理。对于新平台，先确认配套工艺能稳定得到所需性能，再讨论增加产量或缩短处理时间。临床随访中的产品版本记录也应包含固化体系，使后续失效能够找到相应制造条件。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 从单冠到桥体"
+          },
+          {
+            "type": "p",
+            "text": "三单位临时修复体的实验同时评价适合和抗折。桥体引入连接截面和跨度，与单冠受力不同。测试应观察失效起点和破坏路径。 [R04]"
+          },
+          {
+            "type": "p",
+            "text": "对齐粘固、老化和加载方向。"
+          },
+          {
+            "type": "p",
+            "text": "2022年研究制作40件三单位临时桥，比较传统、铣削及两种打印树脂，进行热循环后静载测试。材料组合的承载和硬度不同，多数破坏发生在连接体。虽然题名使用热机械老化，正文方法和讨论明确未模拟动态咬合载荷。[R17]"
+          },
+          {
+            "type": "p",
+            "text": "完整桥形试样将连接截面、桥体长度和支撑方式带入材料评价，能够解释条形材料强度为何不总能预测器械表现。连接体同时承担载荷传递与几何过渡，局部截面或转角改变可能比整体材料名义强度更敏感。断口位置和载荷—位移关系因此可与最大载荷共同使用，识别变形累积和裂纹起始的可能位置。"
+          },
+          {
+            "type": "p",
+            "text": "从热循环后静载继续推进，应增加不同方向的循环载荷，并用相同几何比较连接体设计。研究可将初始缺陷、支持去除痕迹和后固化条件作为候选解释逐一测试。这个节点向长期临床桥体观察延伸，目的在于检验实验发现的薄弱区是否也出现在实际失效中，并据此调整试验载荷与结构设计，而不是用一次破坏值换算使用年限。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 临床随访解释失效"
+          },
+          {
+            "type": "p",
+            "text": "打印树脂冠的临床表现需要区分脱粘、材料断裂、颜色和继续使用。体外试验指向应力集中的位置，使用期记录评估其真实后果。 [R03] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "将不同失效模式单独统计。"
+          },
+          {
+            "type": "p",
+            "text": "2026年单臂前瞻研究随访30颗VarseoSmile Crown plus后牙单冠两年，报告存留率93%、成功率87%，出现两颗脱粘，并观察到部分颜色变化。研究统一了扫描、制造及粘固工作流。[R09]"
+          },
+          {
+            "type": "p",
+            "text": "单冠结果让几何、表面和粘固共同接受使用检验。脱粘与材料断裂是不同机制：前者涉及牙体条件、预备体几何及连接界面，后者涉及局部厚度和载荷。因此，随访中应分别记录再粘固、修补和重制，而不是只保留最终是否仍在口内。颜色变化也应与患者接受度和是否需要干预关联，使美学结果进入明确的临床决策。"
+          },
+          {
+            "type": "p",
+            "text": "该研究的病例条件为工作流提供了具体应用场景。进一步比较可在相似预备体高度、对颌条件及咬合风险内设置对照，观察材料变化与操作者学习各自的贡献。它与下一节点儿童冠研究共同说明，临床问题需要按牙列和用途提出；同样的存留结果可以伴随不同的磨耗、颜色或牙龈表现，必须保留这些维度才能确定适用场景。"
+          },
+          {
+            "type": "p",
+            "text": "2026年研究在25名儿童的50颗乳磨牙中进行对侧比较，随访12个月。打印树脂与预制氧化锆在固位和多项功能结果上相近，打印组牙菌斑、牙龈指标以及磨耗和颜色变化更不利。[R18]"
+          },
+          {
+            "type": "p",
+            "text": "对侧设计减少儿童个体卫生习惯和一般生理环境的影响，能够在同一人内观察材料与制造路线差别。乳牙形态、预备方式、龈缘位置及剩余使用期又构成独立研究条件。以这些变量组织分析，比把儿童冠视为成人单冠的小型版本更有解释力。后续可以同时记录表面粗糙度与清洁行为，判断表面变化和菌斑之间是否具有一致的时间关系。"
+          },
+          {
+            "type": "p",
+            "text": "这里形成一个重要研究判断：器械仍然固位并不意味着所有结果保持稳定。磨耗可能改变接触与负载，着色可能增加美学干预，牙龈指标则提示组织响应。对产品开发而言，需要同时优化功能、表面及可清洁性。图中的汇合因此保留多个临床维度，使不同材料路线能够在共同事件表上比较，同时允许不同病例对这些结果赋予不同权重。"
+          },
+          {
+            "type": "p",
+            "text": "2025年随机试验纳入43名参与者48颗后牙，比较纳米颗粒喷射打印与铣削氧化锆冠。12个月主要美学、功能和生物学指标总体相近，每组发生一例断裂；研究同时记录牙周参数和患者满意度。[R19]"
+          },
+          {
+            "type": "p",
+            "text": "随机分组在这里帮助区分制造路线与病例选择，因为两组采用相同材料类别却使用不同成形过程。烧结后的材料结构、边缘状态和临床粘固仍然构成共同结果的多个来源。若要解释哪一工艺步骤产生差异，可将制造阶段的尺寸与缺陷测量连接到每颗临床冠，形成从生坯到患者的配对记录。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 临床反馈进入设计"
+          },
+          {
+            "type": "p",
+            "text": "如果病例记录以脱粘为主，需要查预备形态和界面。如果以材料裂纹为主，需回到冠厚、局部载荷及后处理。桥体失效则应另外追踪连接区。 [R03] [R04] [R10]"
+          },
+          {
+            "type": "p",
+            "text": "把随访转化为下一次台架试验。"
+          },
+          {
+            "type": "p",
+            "text": "2025年研究观察49名患者接受的68件三单位打印树脂复合物后牙桥，平均观察22.36个月，最长超过三年。主要失败集中于机械损伤和连接区，联合机械与生物事件的累积存留估计为36.2%。[R10]"
+          },
+          {
+            "type": "p",
+            "text": "这一临床对象同时包含多单位跨度、连接体和实际咬合环境，因而为台架桥体试验提供了独特反馈。单冠与桥体使用不同材料、设计及病例，比较的价值在于识别需要重新验证的结构任务。把临床裂纹位置、桥体尺寸和受力条件回接到实验，可以检验连接区的应力集中与材料疲劳是否共同解释事件分布。"
+          },
+          {
+            "type": "p",
+            "text": "后续研究宜预先区分可修复损伤、需要重制的失败及牙体生物学事件，并保留同一患者多件修复体的关联。不同观察时长通过时间到事件分析处理，能够减少只比较末次复诊比例所造成的信息损失。该反馈链使研发优先序更清楚：先找出连接体几何、材料和加工缺陷中可改变的因素，再以改进后的完整工作流开展新的临床比较。"
+          }
+        ]
+      },
+      {
+        "title": "研究之间如何比较",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "打印组在特定材料和对照条件下的边缘收益可与较低的破坏载荷并存。研究选材要同时考虑几何误差、后牙加载、随访和维护，比较时按用途分层。 [R01] [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "验证宜采用同一牙冠模型建立阶段尺寸链，再按修复用途设置载荷。树脂冠与陶瓷冠分别使用各自匹配工艺，不以同一固化参数强行比较；浆料光学、支撑和颜色变量先单独变化，再检验组合。单冠结果不能替代连接体评价，需把三单位桥的连接区作为独立试样与完整结构共同加载，并记录热机械老化后的失效位置。[R16][R17][R10] 误差评价还应保留方向和区域。边缘向外扩展、内表面向内偏移以及咬合面高度变化对应不同临床调整，不能由一个绝对偏差相互抵消。机械比较需记录裂纹是否起源于支撑去除区、薄边或连接体，并与同一件修复体的阶段扫描对应。这样才能判断修改浆料、支撑或热处理是否真正解决了失效来源。"
+          },
+          {
+            "type": "table",
+            "headers": [
+              "专利导出的变量",
+              "拟议比较、终点与下一步"
+            ],
+            "rows": [
+              [
+                "固化边界",
+                "同浆料比较补偿设置，再同设备比较浆料；测固化轮廓、边缘和内表面。若补偿改善外形却压缩内间隙，应按区域重标定。[R20]"
+              ],
+              [
+                "阶段误差",
+                "逐阶段扫描生坯、去支撑与烧结冠；比较支撑位置与薄壁变化。若误差在烧结反向或扩大，应调整收缩模型而非继续加大像素偏移。[R21]"
+              ],
+              [
+                "光学与力学",
+                "同几何比较色彩配方，测透光、色差、孔隙与老化后破坏。若颜色达到目标而薄区提前断裂，先限定配方与用途。[R22]"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "企业路线与公开产品",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "BEGO 的冠材料、Formlabs 的材料与设备指南和 DMG 的椅旁 DLP 平台从材料、配套制程和工作现场三个层面组织交付。平台适用范围与成品验证按具体树脂和设备版本核对。 [R08] [R11] [R12]"
+          },
+          {
+            "type": "p",
+            "text": "BEGO于2020年发布VarseoSmile Crown plus，产品路线将可打印混合材料推进到永久单冠这一特定用途。其临床研究随后以具体材料、Varseo XS设备和配套处理组成完整工作流，使产品用途能够对应前瞻性观察。[R11][R09] 这一时间线呈现从材料及适应证提出，到使用结果逐渐积累的过程。"
+          },
+          {
+            "type": "p",
+            "text": "截至2026年的Formlabs官方指南已以BEGO VarseoSmile TriniQ为对象，围绕Form 4B、清洗、后固化、修整和交付组织步骤。[R12] 该变化体现材料进入另一平台后的配套管理：设备、材料与处理组合共同成为产品使用单位。Crown plus的既有随访与TriniQ当前工作流可以共享研究问题，材料身份和工艺版本则分别建档。"
+          },
+          {
+            "type": "p",
+            "text": "企业的技术迭代因此可以分成三个相互关联的层次。材料层调整填料、聚合及表面表现；制造层调整曝光、支撑和后处理；服务层将设计检查、培训和交付记录串联。研究者可追踪每次版本改变主要作用于哪一层，并比较它减少的是尺寸偏差、断裂风险还是返工时间。这种对应有助于解释一项产品更新为何在不同实验室产生不同实际收益。"
+          },
+          {
+            "type": "p",
+            "text": "单冠、桥体和氧化锆路线在产业上对应不同设备与工作组织。树脂体系重视从打印到粘固的快速流程，氧化锆体系则需要把成形与热处理一致性纳入产能。企业决策可以比较每个合格交付病例的总投入，包括设计、打印、清洗、固化或烧结、修整和返工。机器运行速度只是其中一个组成部分，产量增加是否改善经济性还取决于失败与人工环节的变化。"
+          }
+        ]
+      },
+      {
+        "title": "专利机制与转化验证",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN113208750A聚焦冠的渐变透光，CN122342684A描述二硅酸锂陶瓷与流动树脂复合。可进一步分区测量光学、度量边缘、对比薄区抗折，并记录复合材料内部失效。 [R06] [R07]"
+          },
+          {
+            "type": "p",
+            "text": "佛山仙湖实验室CN112745120A描述纳米氧化锆、分散剂与丙烯酸光敏树脂浆料，提出改善光散射和打印精度的方案。它与像素偏移论文形成直接机制桥梁：浆料的光传播与设备补偿共同改变固化边界。BEGO/Formlabs树脂冠路线也需设备和材料匹配，但陶瓷还经历脱脂烧结，故应分阶段量测，辨认精度变化发生在曝光还是热处理。[R15][R16][R12][R20]"
+          },
+          {
+            "type": "p",
+            "text": "江苏乾度CN112390646A描述牙冠数据、DLP生坯、支撑去除、脱脂、可选染色、烧结与表面处理。它把内表面真实度论文的区域误差转成阶段问题：支撑接触、边缘薄壁和烧结收缩是否在相同区域累积。与Formlabs指南的联系在于完整工作流的控制逻辑；陶瓷成品应单独验证边缘、内表面与咬合面，不能只报告全冠平均误差。[R14][R19][R12][R21]"
+          },
+          {
+            "type": "p",
+            "text": "嘉兴学院/嘉兴雅宝CN113416071A描述喷墨与陶瓷浆料协同固化，并用不同喷墨组成配置颜色和透明度。该方案与冠临床随访中的颜色变化及桥连接区机械失败形成两条检验线：光学设计必须与密度、残留和薄区承载一起评价。与BEGO材料的对应是修复体美学和用途需求，不能由彩色成形直接推定后牙桥长期耐久。[R09][R10][R11][R22]"
+          }
+        ]
+      },
+      {
+        "title": "后续研究与应用走向",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "有意义的后续指标包括薄区和边缘的局部极值、分期疲劳、脱粘与折裂次数，以及再粘或重制工时。多中心记录需要保留系统版本和修复用途。 [R02] [R03] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Three-Dimensional Evaluation of Marginal Gap in Prefabricated Zirconia and 3D-Printed Pediatric Crowns.",
+        "url": "https://doi.org/10.3390/ma19163400",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R01"
+      },
+      {
+        "title": "Marginal and internal fit of 3D printed permanent crowns: effect of CAD/CAM software, preparation type and resin material.",
+        "url": "https://doi.org/10.1186/s12903-026-08948-6",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R02"
+      },
+      {
+        "title": "Marginal adaptation and fracture resistance of milled and 3D-printed CAD/CAM hybrid dental crown materials with various occlusal thicknesses",
+        "url": "https://doi.org/10.2186/jpr.jpr_d_23_00089",
+        "year": "2023",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R03"
+      },
+      {
+        "title": "Marginal and internal fit and fracture resistance of three-unit provisional restorations fabricated by additive, subtractive, and conventional methods.",
+        "url": "https://doi.org/10.1002/cre2.637",
+        "year": "2022",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R04"
+      },
+      {
+        "title": "Comparison of the marginal and internal fit of PMMA interim crowns printed with different layer thicknesses in 3D-printing technique",
+        "url": "https://doi.org/10.1002/cre2.758",
+        "year": "2023",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R05"
+      },
+      {
+        "title": "Lithium disilicate ceramic-dental fluid resin composite material as well as preparation method and application thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN122342684A",
+        "year": "2026",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R06"
+      },
+      {
+        "title": "Dental crown with gradually-varied light transmittance based on stereolithography 3D printing and preparation method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN113208750A",
+        "year": "2021",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R07"
+      },
+      {
+        "title": "DMG Launches DentaMile Desk RS-1",
+        "url": "https://www.dmg-america.com/news-press/detail/dmg-launches-dentamile-desk-rs-1-compact-chairside-3d-printing-solution-for-busy-dental-practices",
+        "year": "",
+        "kind": "企业公告",
+        "source": "企业公告",
+        "id": "R08"
+      },
+      {
+        "title": "Performance of posterior 3D printed resin-matrix ceramic crowns fabricated in a fully digital workflow: a two-year prospective clinical study",
+        "year": "2026",
+        "source": "Clinical Oral Investigations",
+        "url": "https://link.springer.com/article/10.1007/s00784-026-06883-y",
+        "kind": "原始研究",
+        "id": "R09"
+      },
+      {
+        "title": "Assessing the performance of 3D-printed resin composite posterior fixed dental prostheses: A 3-year prospective clinical trial",
+        "year": "2025",
+        "source": "Journal of Dentistry",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0300571225003318",
+        "kind": "原始研究",
+        "id": "R10"
+      },
+      {
+        "title": "3D Printing World Premiere: VarseoSmile Crown plus – the First 3D Printing Hybrid Material for Permanent Crowns",
+        "year": "2020",
+        "source": "BEGO",
+        "url": "https://www.bego.com/news/bego-news-detail/3d-printing-world-premiere-varseosmile-crown-plus-the-first-3d-printing-hybrid-material-for-permanent-crowns/",
+        "kind": "企业公告",
+        "id": "R11"
+      },
+      {
+        "title": "Application Guide: 3D Printing Permanent Crowns With BEGO VarseoSmile TriniQ Resin",
+        "year": "2026年现行资料",
+        "source": "Formlabs",
+        "url": "https://dental.formlabs.com/indications/permanent-crowns/guide/",
+        "kind": "企业技术资料",
+        "id": "R12"
+      },
+      {
+        "title": "In vitro evaluation of marginal and internal adaptation of three-unit fixed dental prostheses produced by stereolithography",
+        "year": "2014",
+        "source": "Dental Materials Journal",
+        "url": "https://www.jstage.jst.go.jp/article/dmj/33/4/33_2014-017/_article",
+        "kind": "原始研究",
+        "id": "R13"
+      },
+      {
+        "title": "Comparison of Intaglio Surface Trueness of Interim Dental Crowns Fabricated with SLA 3D Printing, DLP 3D Printing, and Milling Technologies",
+        "year": "2021",
+        "source": "Healthcare",
+        "url": "https://www.mdpi.com/2227-9032/9/8/983",
+        "kind": "原始研究",
+        "id": "R14"
+      },
+      {
+        "title": "Effect of Pixel Offset Adjustments for XY Plane Dimensional Compensation in Digital Light Processing 3D Printing on the Surface Trueness and Fit of Zirconia Crowns",
+        "year": "2025",
+        "source": "Journal of Functional Biomaterials",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11943054/",
+        "kind": "原始研究",
+        "id": "R15"
+      },
+      {
+        "title": "Effects of 3D-printers and manufacturer-specified post-curing units on the dimensional accuracy, compressive strength, and degree of conversion of resin for fixed dental prostheses",
+        "year": "2025",
+        "source": "Journal of Dental Sciences",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12254842/",
+        "kind": "原始研究",
+        "id": "R16"
+      },
+      {
+        "title": "Influence of CAD/CAM Milling and 3D-Printing Fabrication Methods on the Mechanical Properties of 3-Unit Interim Fixed Dental Prosthesis after Thermo-Mechanical Aging Process",
+        "year": "2022",
+        "source": "Polymers",
+        "url": "https://www.mdpi.com/2073-4360/14/19/4103",
+        "kind": "原始研究",
+        "id": "R17"
+      },
+      {
+        "title": "Clinical performance of 3D-printed resin versus prefabricated zirconia crowns in primary molars: A split-mouth clinical study",
+        "year": "2026",
+        "source": "Journal of Dentistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42142616/",
+        "kind": "原始研究",
+        "id": "R18"
+      },
+      {
+        "title": "Clinical efficacy of a novel 3D-printed zirconia single crown: A randomized controlled trial",
+        "year": "2025",
+        "source": "Journal of Dentistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40885299/",
+        "kind": "原始研究",
+        "id": "R19"
+      },
+      {
+        "id": "R20",
+        "title": "Nano-zirconia ceramic slurry for photocuring 3D printing of dental crown and preparation method of nano-zirconia ceramic slurry",
+        "year": "2021",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN112745120A",
+        "source": "Espacenet",
+        "kind": "patent"
+      },
+      {
+        "id": "R21",
+        "title": "Method for forming all-ceramic dental crown by stereolithography of zirconia ceramic slurry",
+        "year": "2021",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN112390646A",
+        "source": "Espacenet",
+        "kind": "patent"
+      },
+      {
+        "id": "R22",
+        "title": "Raw material and additive manufacturing method of colorful multi-transparency dental restoration",
+        "year": "2021",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN113416071A",
+        "source": "Espacenet",
+        "kind": "patent"
+      }
+    ]
+  },
+  "en": {
+    "id": "H20",
+    "p": "P2",
+    "title": "Fit and fracture resistance of printed dental crowns",
+    "subtitle": "Link marginal geometry, occlusal thickness and clinical failure",
+    "thesis": "Fit and fracture rankings can differ at the same occlusal thickness. Assess crown material, preparation, cementation and loading together, with follow-up to identify failures. [R02] [R03]",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway · Fit and fracture resistance of printed dental crowns",
+      "summary": "Start from the same preparation and crown geometry. Measure margins and load response separately, link them at the crown and follow-up levels, then use failure location to revise fabrication or geometry.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2026",
+          "question": "Preserve marginal, internal and thickness data.",
+          "title": "Define the preparation and CAD",
+          "evidence": "A permanent-crown study examines preparation, software and resin effects on marginal and internal fit. Cement space, registration regions and insertion axis should be held constant to interpret design differences.",
+          "refs": [
+            "R02"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2023–2026",
+          "question": "Assess local maximum deviation and repeatability.",
+          "title": "Locate local gaps",
+          "evidence": "Layer-height and paediatric 3D gap studies represent distinct comparisons. One varies fabrication, the other contrasts prefabricated zirconia and printed crowns. Compare values at matched locations and with the same gap definition.",
+          "refs": [
+            "R01",
+            "R05"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2023",
+          "question": "Interpret loads with support and geometry.",
+          "title": "Thickness and load-bearing",
+          "evidence": "Ninety molar crowns compared two milled materials and printed VarseoSmile at 0.8, 1 and 1.5 mm occlusal thickness. Printed crowns showed smaller marginal gaps, while their mean fracture loads ranged from 1480.3 to 1747.2 N and were below the milled groups' performance in this test.",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2022",
+          "question": "Match cementation, ageing and loading direction.",
+          "title": "From single crowns to bridges",
+          "evidence": "A three-unit provisional study assessed both fit and fracture resistance. Bridges introduce connector cross-sections and span, changing load transfer from a single crown. Track failure origin and crack path.",
+          "refs": [
+            "R04"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2023–2026",
+          "question": "Count distinct failure modes separately.",
+          "title": "Use follow-up to distinguish failures",
+          "evidence": "Clinical follow-up of printed resin crowns distinguishes debonding, fracture, colour and continued use. Bench tests locate stress concentrations, while service records capture their consequences.",
+          "refs": [
+            "R03",
+            "R09"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2022–2023",
+          "question": "Use follow-up to design the next bench test.",
+          "title": "Feed clinical observations into design",
+          "evidence": "A predominance of debonding directs attention to preparation and bonding. Material cracks point to thickness, local load or processing. Bridge failures also require inspecting connectors.",
+          "refs": [
+            "R03",
+            "R04",
+            "R10"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Locate local gaps",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Thickness and load-bearing",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "From single crowns to bridges",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "From single crowns to bridges",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Use follow-up to distinguish failures",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Feed clinical observations into design",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Feed fracture and debonding records into design",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Scope and objectives",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "This direction includes printed single crowns and fixed-restoration experiments that clarify their mechanisms. Adult, paediatric, provisional and permanent uses are distinguished, with marginal gap, internal fit, load and fatigue describing different stages."
+          }
+        ]
+      },
+      {
+        "title": "Academic pathway and interpretation",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Define the preparation and CAD"
+          },
+          {
+            "type": "p",
+            "text": "A permanent-crown study examines preparation, software and resin effects on marginal and internal fit. Cement space, registration regions and insertion axis should be held constant to interpret design differences. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Preserve marginal, internal and thickness data."
+          },
+          {
+            "type": "p",
+            "text": "A 2014 study fabricated 40 three-unit fixed restorations on the same case model and measured 960 gap points by silicone-replica analysis. Overall gaps were 98.6 µm for the SLA route and 66.6 µm for the wax-pattern route, indicating room to improve fit in the SLA workflow used at the time. [R13]"
+          },
+          {
+            "type": "p",
+            "text": "The replication method transforms internal voids that are difficult to observe directly into measurable material layers that can be sliced, making it suitable for clearly defining the spatial relationships between different areas. However, the density of measurement points, the location of the slices, and the in-situ load all affect the final represented voids. The unit of analysis should also retain two layers: devices and measurement points. Multiple points on the same restoration collectively describe its geometry, and the number of independent devices should not increase with the number of measurement points. This design logic was later applied to more intensive digital measurements."
+          },
+          {
+            "type": "p",
+            "text": "Larger gaps may arise from digital design, forming deviations or seating interference, so one overall mean cannot identify the step to modify. Margins, axial walls and occlusal surfaces should be analysed separately against the digital design. The research task shifts from manufacturability to error localization, providing a common basis for surface-trueness assessment, local compensation and cement-space design. Alongside material load-bearing studies, investigators can test whether changing the gap also changes restoration thickness."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Locate local gaps"
+          },
+          {
+            "type": "p",
+            "text": "Layer-height and paediatric 3D gap studies represent distinct comparisons. One varies fabrication, the other contrasts prefabricated zirconia and printed crowns. Compare values at matched locations and with the same gap definition. [R01] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Assess local maximum deviation and repeatability."
+          },
+          {
+            "type": "p",
+            "text": "A 2021 study investigated the scanning of the inner surface of temporary crowns fabricated using SLA, DLP, and milling, comparing it with design documents. The overall deviation of the printed group and several regional deviations were small; the milled group showed performance differences between different areas, and the study also presented an error distribution map. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "Moving from sparse gap measurements to three-dimensional surfaces reveals whether errors cluster at corners, axial walls or occlusal regions. RMS summarizes deviation magnitude, while signed deviations distinguish excess from missing material. Registration is critical: best-fit alignment can distribute local seating interference across the surface, whereas fixed key references may relate more directly to clinical seating. Retain both global and local maps rather than only a ranking."
+          },
+          {
+            "type": "p",
+            "text": "This node provides a diagnostic tool for compensation studies. If a region consistently exhibits errors in the same direction across different batches, modifications to pixel boundaries or local design can be attempted; if the error direction is unstable, variations in cleaning, support removal, and curing should be tracked first. This results in two distinct R&D tasks: reducing systematic bias and reducing random fluctuations. Both are valuable for clinical delivery but require different experimental and quality control methods."
+          },
+          {
+            "type": "p",
+            "text": "A 2025 zirconia-crown experiment used XY pixel offsets of −1, 0 and 1 and a triple-scan method to assess fit and surface trueness. Pixel offset significantly affected marginal, internal and surface deviations, with higher offsets associated with larger positive errors. [R15]"
+          },
+          {
+            "type": "p",
+            "text": "This design makes the digital boundary a controllable variable, allowing measured errors to inform forming directly. Zirconia production also includes debinding and sintering, so shrinkage may amplify or redistribute the effects of pixel changes. Geometry should therefore be recorded in the green state, after debinding and after sintering to separate exposure-boundary effects from thermal shrinkage. Whether one compensation value is suitable across regions should also be tested against crown-wall thickness and surface orientation."
+          },
+          {
+            "type": "p",
+            "text": "The compensation target should simultaneously include edges, internal gaps, and repeatable positioning. Minimizing only one overall error index may result in excessively tight local internal surfaces, increasing clinical adjustments. Allowable positioning, edge distribution, and minimum thickness can be set as common constraints to compare the stability of different preform shapes. This research line then moves into a clinical comparison of zirconia, connecting measurement and evaluation methods; nanoparticle jetting and DLP have different processes, and clinical results need to be interpreted in accordance with the actual manufacturing route used."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Thickness and load-bearing"
+          },
+          {
+            "type": "p",
+            "text": "Ninety molar crowns compared two milled materials and printed VarseoSmile at 0.8, 1 and 1.5 mm occlusal thickness. Printed crowns showed smaller marginal gaps, while their mean fracture loads ranged from 1480.3 to 1747.2 N and were below the milled groups' performance in this test. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Interpret loads with support and geometry."
+          },
+          {
+            "type": "p",
+            "text": "A 2025 study crossed two DLP printers with two post-curing devices using the same NextDent C&B resin, measuring dimensions, fracture strength and degree of conversion. Performance differed among combinations, with the post-curing device exerting a particularly notable effect on the measured properties. [R16]"
+          },
+          {
+            "type": "p",
+            "text": "The cross-combination method can break down the phenomenon of materials with the same name but different properties into equipment and processing factors. degree of conversion provides clues to the extent of chemical reaction, while dimensional and mechanical measurements describe the structural results; the parallel application of these three methods can examine whether increased reaction intensity is accompanied by shrinkage or brittleness changes. The study can also record spectra, temperature, time, and sample location to progressively explain why the same nominal time does not represent the same processing procedure."
+          },
+          {
+            "type": "p",
+            "text": "The node merges with the geometric branch: post-curing shapes the material network and may alter the final fit. R&D should observe both simultaneously in a single trial, treating intra-batch positional variations as a reproducibility issue. For new platforms, first confirm that the supporting processes consistently achieve the desired performance before discussing increasing yield or shortening processing time. Product version records in clinical follow-ups should also include the curing system, enabling identification of corresponding manufacturing conditions for subsequent failures."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · From single crowns to bridges"
+          },
+          {
+            "type": "p",
+            "text": "A three-unit provisional study assessed both fit and fracture resistance. Bridges introduce connector cross-sections and span, changing load transfer from a single crown. Track failure origin and crack path. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Match cementation, ageing and loading direction."
+          },
+          {
+            "type": "p",
+            "text": "A 2022 study fabricated 40 three-unit provisional bridges using conventional, milled and two printed resin approaches, followed by static loading after thermocycling. Load-bearing capacity and hardness differed among materials, and most failures occurred at connectors. Although the title refers to thermomechanical ageing, the methods and discussion explicitly state that dynamic occlusal loading was not simulated. [R17]"
+          },
+          {
+            "type": "p",
+            "text": "The complete bridge-shaped specimen incorporates the connection section, bridge length, and support method into material evaluation, explaining why the strength of strip materials does not always predict device performance. The connector simultaneously bears load transfer and geometric transition; changes in local sections or angles may be more sensitive than the overall nominal strength of the material. Fracture location and load-displacement relationships can therefore be used in conjunction with the maximum load to identify potential locations of deformation accumulation and crack initiation."
+          },
+          {
+            "type": "p",
+            "text": "Continuing from static loading after thermal cycling, cyclic loads in different directions should be increased, and the connection design should be compared using the same geometry. The study can test initial defects, support removal marks, and post-curing conditions as candidate explanations one by one. This stage extends to long-term clinical bridge observation, aiming to verify whether weak areas identified in experiments also appear in actual failures, and to adjust the test loads and structural design accordingly, rather than using a single failure value to calculate service life."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Use follow-up to distinguish failures"
+          },
+          {
+            "type": "p",
+            "text": "Clinical follow-up of printed resin crowns distinguishes debonding, fracture, colour and continued use. Bench tests locate stress concentrations, while service records capture their consequences. [R03] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Count distinct failure modes separately."
+          },
+          {
+            "type": "p",
+            "text": "A prospective single-arm study in 2026 followed 30 VarseoSmile Crown plus posterior single crowns for two years, reporting a survival rate of 93% and a success rate of 87%. Two crowns detached, and some color changes were observed. The study standardized the scanning, fabrication, and cementation workflows. [R09]"
+          },
+          {
+            "type": "p",
+            "text": "The single crown result allows for the joint evaluation of geometry, surface, and cementation. Debonding and material fracture are different mechanisms: the former involves tooth condition, prepared geometry, and connection interfaces, while the latter involves local thickness and load. Therefore, follow-up should record re-cementation, repair, and re-fabrication separately, rather than simply recording whether it is still in the mouth. Color changes should also be correlated with patient acceptance and the need for intervention, ensuring that aesthetic outcomes are integrated into clear clinical decisions."
+          },
+          {
+            "type": "p",
+            "text": "This study's case conditions provide a specific application scenario for the workflow. Further comparisons can be made by setting up controls within similar prepared body heights, opposing conditions, and occlusal risks to observe the contributions of material changes and operator learning. Together with the next node in pediatric crown research, it illustrates that clinical problems need to be addressed according to dentition and purpose; the same retention outcome can be accompanied by different wear, color, or gingival appearance, and these dimensions must be preserved to determine the applicable scenario."
+          },
+          {
+            "type": "p",
+            "text": "A 2026 split-mouth study compared 50 primary molars in 25 children over 12 months. Printed resin and prefabricated zirconia crowns had similar retention and several functional outcomes, but the printed group had less favourable plaque and gingival indices, wear and colour changes. [R18]"
+          },
+          {
+            "type": "p",
+            "text": "The contralateral design reduces the influence of children's individual hygiene habits and general physiological environment, allowing for observation of differences in materials and manufacturing processes within the same individual. Primary tooth morphology, preparation method, gingival margin position, and remaining service life constitute independent research conditions. Organizing analyses using these variables is more explanatory than treating children's crowns as miniature versions of adult single crowns. Subsequent recording of surface roughness and cleaning behavior can determine whether there is a consistent temporal relationship between surface changes and plaque."
+          },
+          {
+            "type": "p",
+            "text": "This leads to an important research conclusion: device retention does not necessarily mean all outcomes remain stable. Wear can alter contact and load, staining can increase aesthetic intervention, and gingival indices indicate tissue response. For product development, it is necessary to simultaneously optimize function, surface finish, and cleanability. The convergence in the diagram therefore retains multiple clinical dimensions, allowing different material approaches to be compared on a common event table, while also allowing different weights to be assigned to these outcomes in different cases."
+          },
+          {
+            "type": "p",
+            "text": "The 2025 randomized trial enrolled 43 participants and 48 posterior teeth, comparing nanoparticle jet printing with milling of zirconia crowns. Over 12 months, the main aesthetic, functional, and biological indicators were generally similar, with one fracture occurring in each group; periodontal parameters and patient satisfaction were also recorded. [R19]"
+          },
+          {
+            "type": "p",
+            "text": "Randomization helps separate manufacturing-route effects from case selection because the groups use the same material category but different forming processes. Post-sintering microstructure, marginal condition and clinical cementation still contribute to the outcomes. Linking dimensional and defect measurements from manufacturing to each clinical crown would create paired records from the green body to the patient and help identify which process steps cause differences."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Feed clinical observations into design"
+          },
+          {
+            "type": "p",
+            "text": "A predominance of debonding directs attention to preparation and bonding. Material cracks point to thickness, local load or processing. Bridge failures also require inspecting connectors. [R03] [R04] [R10]"
+          },
+          {
+            "type": "p",
+            "text": "Use follow-up to design the next bench test."
+          },
+          {
+            "type": "p",
+            "text": "A 2025 study followed 68 three-unit printed resin-composite posterior bridges in 49 patients for a mean of 22.36 months, with the longest observations exceeding three years. Failures were concentrated in mechanical damage and connector regions; estimated cumulative survival accounting for mechanical and biological events was 36.2%. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "The clinical subject, encompassing multiple spans, connectors, and actual occlusal environments, provides unique feedback for benchtop bridge testing. The comparison between single-crown and bridge structures using different materials, designs, and cases is valuable in identifying structural tasks requiring re-validation. Reintroducing clinical crack locations, bridge dimensions, and stress conditions into the experimental setup allows for examination of whether stress concentration in the connection zone and material fatigue jointly explain event distribution."
+          },
+          {
+            "type": "p",
+            "text": "Follow-up studies should pre-differentiate between repairable damage, failures requiring re-fabrication, and dental biological events, while preserving the correlation between multiple restorations from the same patient. Using time-to-event analysis to handle different observation durations can reduce information loss caused by comparing only the proportion of restorations performed at the last follow-up visit. This feedback chain clarifies R&D priorities: first identify modifiable factors in connector geometry, materials, and fabrication defects, then conduct new clinical comparisons using an improved, complete workflow."
+          }
+        ]
+      },
+      {
+        "title": "Comparing the evidence",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "An advantage in marginal fit under specific comparisons can coexist with lower fracture loads. Compare geometry, posterior loads, follow-up and maintenance by indication. [R01] [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Use one crown model for stagewise dimensions and indication-specific loads. Resin and ceramic crowns need their own matched workflows. Vary optical slurry, support and color parameters separately before combinations. Crown results cannot substitute for connector evaluation: test connector specimens and complete three-unit bridges after thermomechanical aging and map failure sites.[R16][R17][R10] Retain direction and region in error analysis. Outward margins, inward intaglio and occlusal-height changes imply different adjustments and should not collapse into one absolute deviation. Map fracture origins to support-removal regions, thin margins or connectors and register them to stage scans of the same restoration. This tests whether slurry, support or thermal revisions address the actual failure source."
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Patent-derived variable",
+              "Proposed comparison, endpoints and next decision"
+            ],
+            "rows": [
+              [
+                "Cure boundary",
+                "Compare compensation within a slurry, then slurries on one device; measure cured outlines, margins and intaglio. Better envelopes with reduced internal gaps require regional recalibration.[R20]"
+              ],
+              [
+                "Stage error",
+                "Scan green, support-removed and sintered crowns; compare supports and thin walls. Reversed/amplified errors during sintering call for shrinkage-model revision rather than larger pixel offsets.[R21]"
+              ],
+              [
+                "Optics/mechanics",
+                "Compare color formulations in equal geometry for translucency, color difference, porosity and aged fracture. Target color with early thin-region fracture narrows formulation and indication.[R22]"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Industry approaches and documented products",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "BEGO crown materials, Formlabs workflow guides and DMG chairside DLP organize delivery around material, validated workflows and site of care. Check indicated uses and finished-part validation by resin and hardware version. [R08] [R11] [R12]"
+          },
+          {
+            "type": "p",
+            "text": "BEGO launched VarseoSmile Crown plus in 2020, advancing its product roadmap to the specific application of permanent single crowns using printable hybrid materials. Its clinical studies subsequently formed a complete workflow encompassing specific materials, the Varseo XS device, and accompanying processing, enabling prospective observation of the product's intended use. [R11][R09] This timeline illustrates the process from the initial proposal of materials and indications to the gradual accumulation of usage results."
+          },
+          {
+            "type": "p",
+            "text": "The Formlabs official guideline up to 2026 uses BEGO VarseoSmile TriniQ as its subject, organizing the steps around Form 4B, cleaning, post-curing, finishing, and delivery. [R12] This change reflects the integrated management of materials after they enter another platform: equipment, materials, and processing combinations become the unit of product use. Existing Crown Plus follow-ups and the current TriniQ workflow can share research questions, while material identities and process versions are documented separately."
+          },
+          {
+            "type": "p",
+            "text": "The technological iteration can therefore be divided into three interconnected layers. The materials layer adjusts fillers, polymerization, and surface finish; the manufacturing layer adjusts exposure, support, and post-processing; and the service layer links design checks, training, and delivery records. Researchers can track which layer each version change primarily affects and compare whether it reduces dimensional deviations, breakage risks, or rework time. This correspondence helps explain why a product update produces different practical benefits in different laboratories."
+          },
+          {
+            "type": "p",
+            "text": "The single-crown, bridge, and zirconia routes correspond to different equipment and work organization in the industry. Resin systems emphasize a rapid process from printing to bonding, while zirconia systems require incorporating consistency between molding and heat treatment into production capacity. Enterprise decisions can compare the total input for each successful delivery, including design, printing, cleaning, curing or sintering, finishing, and rework. Machine operating speed is only one component; whether increased output improves economics also depends on failures and changes in manual processes."
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and translational testing",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN113208750A concerns a translucency gradient in a crown. CN122342684A describes a lithium-disilicate ceramic and flowable-resin composite. Evaluate optical response by region, margins, resistance at thin sections and internal failure. [R06] [R07]"
+          },
+          {
+            "type": "p",
+            "text": "Foshan Xianhu Laboratory’s CN112745120A describes nano-zirconia, dispersant and acrylic photopolymer slurry intended to address scattering and accuracy. Pixel-offset research supplies the mechanism bridge: optical propagation and compensation jointly change cured boundaries. BEGO/Formlabs resin workflows also require matching, while ceramics additionally undergo debinding/sintering. Stagewise measurements should locate deviation in exposure or thermal processing.[R15][R16][R12][R20]"
+          },
+          {
+            "type": "p",
+            "text": "Jiangsu Qiandu’s CN112390646A describes crown data, DLP green bodies, support removal, debinding, optional staining, sintering and finishing. Regional trueness becomes a stage-specific question: do support contact, thin margins and shrinkage accumulate in the same regions? The Formlabs guide supplies whole-workflow logic. Ceramic margins, intaglio and occlusal surfaces need separate verification rather than one average deviation.[R14][R19][R12][R21]"
+          },
+          {
+            "type": "p",
+            "text": "CN113416071A from Jiaxing University/Jiaxing Yabao describes ink/slurry co-curing and ink composition for color/transparency. Crown color changes and bridge connector failures supply two evaluation paths: optical design must be tested alongside density, residues and thin-region strength. BEGO supplies esthetic/use requirements; colored forming does not establish long-term posterior-bridge durability.[R09][R10][R11][R22]"
+          }
+        ]
+      },
+      {
+        "title": "Research and adoption outlook",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Useful future measures include local extremes at thin zones and margins, fatigue stages, debonding and fracture frequency, and rebonding or remake time. Multicentre records should preserve system version and indication. [R02] [R03] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Three-Dimensional Evaluation of Marginal Gap in Prefabricated Zirconia and 3D-Printed Pediatric Crowns.",
+        "url": "https://doi.org/10.3390/ma19163400",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R01"
+      },
+      {
+        "title": "Marginal and internal fit of 3D printed permanent crowns: effect of CAD/CAM software, preparation type and resin material.",
+        "url": "https://doi.org/10.1186/s12903-026-08948-6",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R02"
+      },
+      {
+        "title": "Marginal adaptation and fracture resistance of milled and 3D-printed CAD/CAM hybrid dental crown materials with various occlusal thicknesses",
+        "url": "https://doi.org/10.2186/jpr.jpr_d_23_00089",
+        "year": "2023",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R03"
+      },
+      {
+        "title": "Marginal and internal fit and fracture resistance of three-unit provisional restorations fabricated by additive, subtractive, and conventional methods.",
+        "url": "https://doi.org/10.1002/cre2.637",
+        "year": "2022",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R04"
+      },
+      {
+        "title": "Comparison of the marginal and internal fit of PMMA interim crowns printed with different layer thicknesses in 3D-printing technique",
+        "url": "https://doi.org/10.1002/cre2.758",
+        "year": "2023",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R05"
+      },
+      {
+        "title": "Lithium disilicate ceramic-dental fluid resin composite material as well as preparation method and application thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN122342684A",
+        "year": "2026",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R06"
+      },
+      {
+        "title": "Dental crown with gradually-varied light transmittance based on stereolithography 3D printing and preparation method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN113208750A",
+        "year": "2021",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R07"
+      },
+      {
+        "title": "DMG Launches DentaMile Desk RS-1",
+        "url": "https://www.dmg-america.com/news-press/detail/dmg-launches-dentamile-desk-rs-1-compact-chairside-3d-printing-solution-for-busy-dental-practices",
+        "year": "",
+        "kind": "Company announcement",
+        "source": "Company announcement",
+        "id": "R08"
+      },
+      {
+        "title": "Performance of posterior 3D printed resin-matrix ceramic crowns fabricated in a fully digital workflow: a two-year prospective clinical study",
+        "year": "2026",
+        "source": "Clinical Oral Investigations",
+        "url": "https://link.springer.com/article/10.1007/s00784-026-06883-y",
+        "kind": "原始研究",
+        "id": "R09"
+      },
+      {
+        "title": "Assessing the performance of 3D-printed resin composite posterior fixed dental prostheses: A 3-year prospective clinical trial",
+        "year": "2025",
+        "source": "Journal of Dentistry",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0300571225003318",
+        "kind": "原始研究",
+        "id": "R10"
+      },
+      {
+        "title": "3D Printing World Premiere: VarseoSmile Crown plus – the First 3D Printing Hybrid Material for Permanent Crowns",
+        "year": "2020",
+        "source": "BEGO",
+        "url": "https://www.bego.com/news/bego-news-detail/3d-printing-world-premiere-varseosmile-crown-plus-the-first-3d-printing-hybrid-material-for-permanent-crowns/",
+        "kind": "企业公告",
+        "id": "R11"
+      },
+      {
+        "title": "Application Guide: 3D Printing Permanent Crowns With BEGO VarseoSmile TriniQ Resin",
+        "year": "2026年现行资料",
+        "source": "Formlabs",
+        "url": "https://dental.formlabs.com/indications/permanent-crowns/guide/",
+        "kind": "企业技术资料",
+        "id": "R12"
+      },
+      {
+        "title": "In vitro evaluation of marginal and internal adaptation of three-unit fixed dental prostheses produced by stereolithography",
+        "year": "2014",
+        "source": "Dental Materials Journal",
+        "url": "https://www.jstage.jst.go.jp/article/dmj/33/4/33_2014-017/_article",
+        "kind": "原始研究",
+        "id": "R13"
+      },
+      {
+        "title": "Comparison of Intaglio Surface Trueness of Interim Dental Crowns Fabricated with SLA 3D Printing, DLP 3D Printing, and Milling Technologies",
+        "year": "2021",
+        "source": "Healthcare",
+        "url": "https://www.mdpi.com/2227-9032/9/8/983",
+        "kind": "原始研究",
+        "id": "R14"
+      },
+      {
+        "title": "Effect of Pixel Offset Adjustments for XY Plane Dimensional Compensation in Digital Light Processing 3D Printing on the Surface Trueness and Fit of Zirconia Crowns",
+        "year": "2025",
+        "source": "Journal of Functional Biomaterials",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11943054/",
+        "kind": "原始研究",
+        "id": "R15"
+      },
+      {
+        "title": "Effects of 3D-printers and manufacturer-specified post-curing units on the dimensional accuracy, compressive strength, and degree of conversion of resin for fixed dental prostheses",
+        "year": "2025",
+        "source": "Journal of Dental Sciences",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12254842/",
+        "kind": "原始研究",
+        "id": "R16"
+      },
+      {
+        "title": "Influence of CAD/CAM Milling and 3D-Printing Fabrication Methods on the Mechanical Properties of 3-Unit Interim Fixed Dental Prosthesis after Thermo-Mechanical Aging Process",
+        "year": "2022",
+        "source": "Polymers",
+        "url": "https://www.mdpi.com/2073-4360/14/19/4103",
+        "kind": "原始研究",
+        "id": "R17"
+      },
+      {
+        "title": "Clinical performance of 3D-printed resin versus prefabricated zirconia crowns in primary molars: A split-mouth clinical study",
+        "year": "2026",
+        "source": "Journal of Dentistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42142616/",
+        "kind": "原始研究",
+        "id": "R18"
+      },
+      {
+        "title": "Clinical efficacy of a novel 3D-printed zirconia single crown: A randomized controlled trial",
+        "year": "2025",
+        "source": "Journal of Dentistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40885299/",
+        "kind": "原始研究",
+        "id": "R19"
+      },
+      {
+        "id": "R20",
+        "title": "Nano-zirconia ceramic slurry for photocuring 3D printing of dental crown and preparation method of nano-zirconia ceramic slurry",
+        "year": "2021",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN112745120A",
+        "source": "Espacenet",
+        "kind": "patent"
+      },
+      {
+        "id": "R21",
+        "title": "Method for forming all-ceramic dental crown by stereolithography of zirconia ceramic slurry",
+        "year": "2021",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN112390646A",
+        "source": "Espacenet",
+        "kind": "patent"
+      },
+      {
+        "id": "R22",
+        "title": "Raw material and additive manufacturing method of colorful multi-transparency dental restoration",
+        "year": "2021",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN113416071A",
+        "source": "Espacenet",
+        "kind": "patent"
+      }
+    ]
+  },
+  "de": {
+    "id": "H20",
+    "p": "P2",
+    "title": "Passung und Bruchfestigkeit gedruckter Zahnkronen",
+    "subtitle": "Randgeometrie, okklusale Dicke und klinisches Versagen verknüpfen",
+    "thesis": "Die Rangfolge von Passung und Bruchfestigkeit kann bei gleicher okklusaler Dicke verschieden sein. Werkstoff, Präparation, Befestigung und Belastung müssen dokumentiert, Versagensarten nachbeobachtet werden. [R02] [R03]",
+    "questions": [],
+    "graph": {
+      "title": "Forschungsverlauf · Passung und Bruchfestigkeit gedruckter Zahnkronen",
+      "summary": "Ausgangspunkt sind gleiche Präparation und Kronengeometrie. Rand und Lastverhalten werden getrennt geprüft, an der Krone und in der Nachsorge verknüpft. Der Versagensort gibt Hinweise zu Fertigung und Geometrie.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2026",
+          "question": "Rand-, Innenflächen- und Dickendaten getrennt speichern.",
+          "title": "Präparation und CAD festlegen",
+          "evidence": "Eine Studie zu definitiven Kronen untersucht Präparation, Software und Harz bei Rand- und Innenpassung. Zementspalt, Registrierungsregionen und Einschubrichtung sollten für die Einordnung von Designunterschieden konstant bleiben.",
+          "refs": [
+            "R02"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2023–2026",
+          "question": "Lokale Maximalabweichung und Wiederholbarkeit prüfen.",
+          "title": "Lokale Spalten erfassen",
+          "evidence": "Schichthöhen- und pädiatrische 3D-Spaltstudien verfolgen verschiedene Vergleiche. Erstere variiert die Fertigung, letztere vergleicht konfektionierte Zirkonoxid- und Druckkronen. Messort und Spaltdefinition sind abzugleichen.",
+          "refs": [
+            "R01",
+            "R05"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2023",
+          "question": "Lastwerte zusammen mit Abstützung und Geometrie einordnen.",
+          "title": "Dicke und Lastaufnahme",
+          "evidence": "Bei 90 Molarenkronen wurden zwei Fräswerkstoffe und gedrucktes VarseoSmile bei 0,8, 1 und 1,5 mm okklusaler Dicke verglichen. Druckkronen hatten kleinere Randspalten. Ihre mittleren Bruchlasten von 1480,3 bis 1747,2 N lagen in diesem Versuch unter denen der Fräsgruppen.",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2022",
+          "question": "Befestigung, Alterung und Lastrichtung abgleichen.",
+          "title": "Von Einzelkronen zu Brücken",
+          "evidence": "Eine Studie zu dreigliedrigen Provisorien erfasste Passung und Bruchfestigkeit. Brücken bringen Verbinderquerschnitt und Spannweite hinzu, wodurch sich die Lastübertragung ändert. Versagensursprung und Risspfad sind zu dokumentieren.",
+          "refs": [
+            "R04"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2023–2026",
+          "question": "Versagensarten getrennt erfassen.",
+          "title": "Versagensarten in der Nachsorge unterscheiden",
+          "evidence": "Klinische Nachsorge gedruckter Harzkronen unterscheidet Ablösung, Bruch, Farbe und Weiternutzung. Laborversuche lokalisieren Spannungsspitzen, Gebrauchsdaten erfassen ihre Folgen.",
+          "refs": [
+            "R03",
+            "R09"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2022–2023",
+          "question": "Nachsorge zur Planung des nächsten Laborversuchs nutzen.",
+          "title": "Klinische Daten für die Konstruktion nutzen",
+          "evidence": "Überwiegt Ablösung, sind Präparation und Verbund zu prüfen. Materialrisse weisen auf Dicke, lokale Last oder Aufbereitung hin. Bei Brücken ist auch der Verbinder zu untersuchen.",
+          "refs": [
+            "R03",
+            "R04",
+            "R10"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Lokale Spalten erfassen",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Dicke und Lastaufnahme",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Von Einzelkronen zu Brücken",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Von Einzelkronen zu Brücken",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Versagensarten in der Nachsorge unterscheiden",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Klinische Daten für die Konstruktion nutzen",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Bruch- und Ablösebefunde für die Konstruktion nutzen",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Untersuchungsrahmen und Ziele",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Die Richtung umfasst gedruckte Einzelkronen und mechanistisch relevante festsitzende Versorgungen. Getrennt werden Erwachsene, Kinder, Provisorien und definitive Kronen. Randspalt, Innenpassung, Last und Ermüdung beschreiben unterschiedliche Stufen."
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Einordnung der Einzelschritte",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Präparation und CAD festlegen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie zu definitiven Kronen untersucht Präparation, Software und Harz bei Rand- und Innenpassung. Zementspalt, Registrierungsregionen und Einschubrichtung sollten für die Einordnung von Designunterschieden konstant bleiben. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Rand-, Innenflächen- und Dickendaten getrennt speichern."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie aus dem Jahr 2014 fertigte 40 dreigliedrige festsitzende Restaurationen an demselben Fallmodell an und maß 960 Spaltpunkte mithilfe der Silikonkautschuk-Replikationsmethode. Der Gesamtspalt des SLA-Verfahrens betrug 98,6 Mikrometer, der des Wachsverfahrens 66,6 Mikrometer. Dies deutet darauf hin, dass das SLA-Verfahren zu diesem Zeitpunkt noch Verbesserungspotenzial aufwies. [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Das Replikationsverfahren wandelt schwer direkt sichtbare innere Hohlräume in messbare, schnittfähige Materialschichten um und eignet sich daher zur präzisen Definition der räumlichen Beziehungen zwischen verschiedenen Bereichen. Die Dichte der Messpunkte, die Lage der Schnitte und die Belastung vor Ort beeinflussen jedoch die endgültig dargestellten Hohlräume. Die Analyseeinheit sollte zudem zwei Ebenen umfassen: Instrumente und Messpunkte. Mehrere Punkte an derselben Restauration beschreiben gemeinsam deren Geometrie, und die Anzahl der unabhängigen Instrumente sollte nicht mit der Anzahl der Messpunkte zunehmen. Diese Designlogik wurde später auf intensivere digitale Messungen angewendet."
+          },
+          {
+            "type": "p",
+            "text": "Eine Vergrößerung des Spalts kann durch digitale Konstruktionsfehler, Formabweichungen oder Positionierungsinterferenzen bedingt sein. Daher reicht ein einzelner Durchschnittswert nicht aus, um den zu korrigierenden Aspekt zu bestimmen. Im nächsten Schritt müssen die Ränder, axialen Wände und Okklusionsflächen getrennt und mit der digitalen Konstruktion ausgerichtet werden. Dieser wissenschaftliche Fortschritt verlagert den Fokus von der Frage „Ist die Herstellung möglich?“ hin zur Frage „Wo liegt der Fehler?“. Dadurch wird ein gemeinsames Problem für die nachfolgende Oberflächenrealistik, die lokale Kompensation und die Gestaltung des Adhäsivraums geschaffen. Parallel zur Materialunterstützung kann auch untersucht werden, ob eine Änderung des Spalts gleichzeitig die verbleibende Restaurationsdicke beeinflusst."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Lokale Spalten erfassen"
+          },
+          {
+            "type": "p",
+            "text": "Schichthöhen- und pädiatrische 3D-Spaltstudien verfolgen verschiedene Vergleiche. Erstere variiert die Fertigung, letztere vergleicht konfektionierte Zirkonoxid- und Druckkronen. Messort und Spaltdefinition sind abzugleichen. [R01] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Lokale Maximalabweichung und Wiederholbarkeit prüfen."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie aus dem Jahr 2021 untersuchte das Scannen der Innenfläche von provisorischen Kronen, die mittels SLA, DLP und Fräsen hergestellt wurden, und verglich die Ergebnisse mit den Konstruktionszeichnungen. Die Gesamtabweichung der gedruckten Gruppe sowie mehrere regionale Abweichungen waren gering; die gefräste Gruppe zeigte Leistungsunterschiede zwischen verschiedenen Bereichen, und die Studie präsentierte auch eine Fehlerverteilungskarte. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "Dies ermöglicht durch die Umwandlung von wenigen Messpunkten in eine dreidimensionale Oberfläche die Beobachtung, ob Fehler an Ecken, axialen Wänden oder Okklusionsflächen konzentriert auftreten. Der Effektivwert (RMS) eignet sich zur Zusammenfassung des Ausmaßes der Abweichungen, während positive und negative Fehler die Unterscheidung zwischen über- und untergeformten Materialien erleichtern. Die Registrierungsmethode ist hierbei entscheidend: Eine optimale Anpassung kann lokale Platzierungsstörungen über die gesamte Oberfläche verteilen, und Ergebnisse mit festen Referenzpunkten lassen sich leichter mit der klinischen Platzierung korrelieren. Für nachfolgende Vergleiche sollten idealerweise sowohl Gesamt- als auch Detailbilder beibehalten werden, anstatt nur eine Rangfolge auszugeben."
+          },
+          {
+            "type": "p",
+            "text": "Dieser Knoten dient als Diagnosewerkzeug für Kompensationsstudien. Weist ein Bereich über verschiedene Chargen hinweg konsistent Fehler in derselben Richtung auf, können Anpassungen an Pixelgrenzen oder im lokalen Design vorgenommen werden. Ist die Fehlerrichtung instabil, sollten zunächst Schwankungen bei Reinigung, Stützmaterialentfernung und Aushärtung untersucht werden. Daraus ergeben sich zwei unterschiedliche Forschungs- und Entwicklungsaufgaben: die Reduzierung systematischer Abweichungen und die Reduzierung zufälliger Schwankungen. Beide sind für die klinische Anwendung wertvoll, erfordern jedoch unterschiedliche experimentelle Methoden und Qualitätskontrollverfahren."
+          },
+          {
+            "type": "p",
+            "text": "Im Rahmen des Experiments mit der Zirkonoxidkrone 2025 wurden drei XY-Pixel-Offset-Einstellungen (−1, 0, 1) verwendet und Passgenauigkeit und Oberflächenrealismus anhand von drei Scans bewertet. Der Pixel-Offset veränderte Kanten-, Innen- und Oberflächenfehler signifikant, wobei höhere Offsets mit größeren positiven Fehlern einhergingen. [R15]"
+          },
+          {
+            "type": "p",
+            "text": "Das Design nutzt die digitale Begrenzung als steuerbare Variable, wodurch Fehlermessungen direkt in den Formgebungsprozess zurückgeführt werden können. Der Zirkonoxidprozess umfasst auch das Entbindern und Sintern, und die Auswirkungen von Pixelabweichungen auf die Endform können durch Schrumpfung verstärkt oder umverteilt werden. Daher ist es sinnvoll, geometrische Aufzeichnungen nach dem Grünling, dem Entbindern und dem Sintern separat zu erstellen, um die Beiträge von Belichtungsgrenzen und Wärmebehandlungsschrumpfung zu unterscheiden. Ob die Verwendung desselben Kompensationswertes für lokalisierte Bereiche angemessen ist, sollte auch anhand der Kronenwandstärke und der Oberflächenorientierung überprüft werden."
+          },
+          {
+            "type": "p",
+            "text": "Das Kompensationsziel sollte Kanten, innere Spalten und wiederholgenaue Positionierung gleichermaßen berücksichtigen. Die Minimierung nur eines Gesamtfehlerindexes kann zu übermäßig engen lokalen Innenflächen und damit zu erhöhten klinischen Anpassungen führen. Zulässige Positionierung, Kantenverteilung und Mindestdicke können als gemeinsame Randbedingungen festgelegt werden, um die Stabilität verschiedener Vorformlinge zu vergleichen. Dieser Forschungsansatz führt anschließend zu einem klinischen Vergleich von Zirkonoxid und verknüpft Mess- und Bewertungsmethoden. Nanopartikel-Jetting und DLP verwenden unterschiedliche Verfahren, und die klinischen Ergebnisse müssen entsprechend dem tatsächlich angewandten Herstellungsverfahren interpretiert werden."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Dicke und Lastaufnahme"
+          },
+          {
+            "type": "p",
+            "text": "Bei 90 Molarenkronen wurden zwei Fräswerkstoffe und gedrucktes VarseoSmile bei 0,8, 1 und 1,5 mm okklusaler Dicke verglichen. Druckkronen hatten kleinere Randspalten. Ihre mittleren Bruchlasten von 1480,3 bis 1747,2 N lagen in diesem Versuch unter denen der Fräsgruppen. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Lastwerte zusammen mit Abstützung und Geometrie einordnen."
+          },
+          {
+            "type": "p",
+            "text": "Die Studie aus dem Jahr 2025 verwendete dasselbe NextDent C&B-Harz und kombinierte zwei DLP-Drucker mit zwei Nachhärtungsgeräten, um Abmessungen, Bruchfestigkeit und Umwandlungseffizienz zu messen. Die Kombinationen zeigten unterschiedliche Ergebnisse, wobei die Autoren feststellten, dass das Nachhärtungsgerät einen signifikanten Einfluss auf die gemessenen Eigenschaften hatte. [R16]"
+          },
+          {
+            "type": "p",
+            "text": "Die Kreuzkombinationsmethode ermöglicht die Analyse von Werkstoffen mit gleichem Namen, aber unterschiedlichen Eigenschaften hinsichtlich der Einflussfaktoren auf Anlagen und Verarbeitung. Die Umsetzungsrate gibt Aufschluss über das Ausmaß der chemischen Reaktion, während Dimensions- und mechanische Messungen die strukturellen Ergebnisse beschreiben. Die parallele Anwendung dieser drei Methoden erlaubt die Untersuchung, ob eine erhöhte Reaktionsintensität mit Schrumpfung oder Sprödigkeitsänderungen einhergeht. Die Studie erfasst zudem Spektren, Temperatur, Zeit und Probenort, um schrittweise zu erklären, warum dieselbe nominelle Zeit nicht zwangsläufig denselben Verarbeitungsprozess darstellt."
+          },
+          {
+            "type": "p",
+            "text": "Der Knoten verschmilzt mit dem geometrischen Zweig: Die Nachhärtung formt das Materialnetzwerk und kann die endgültige Passung verändern. Die Forschung und Entwicklung sollte beides gleichzeitig in einem einzigen Versuch beobachten und Positionsabweichungen innerhalb einer Charge als Reproduzierbarkeitsproblem behandeln. Bei neuen Plattformen sollte zunächst sichergestellt werden, dass die unterstützenden Prozesse die gewünschte Leistung konsistent erbringen, bevor eine Steigerung der Ausbeute oder eine Verkürzung der Verarbeitungszeit diskutiert wird. Die Produktversionsaufzeichnungen in klinischen Nachuntersuchungen sollten auch das Härtungssystem enthalten, um die entsprechenden Herstellungsbedingungen für nachfolgende Fehler identifizieren zu können."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Von Einzelkronen zu Brücken"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie zu dreigliedrigen Provisorien erfasste Passung und Bruchfestigkeit. Brücken bringen Verbinderquerschnitt und Spannweite hinzu, wodurch sich die Lastübertragung ändert. Versagensursprung und Risspfad sind zu dokumentieren. [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Befestigung, Alterung und Lastrichtung abgleichen."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2022 verglich an 40 dreigliedrigen provisorischen Brücken konventionelle, gefräste und zwei gedruckte Harze. Nach Thermozyklierung erfolgte eine statische Belastung. Belastbarkeit und Härte unterschieden sich; die meisten Brüche lagen an Verbindern. Obwohl der Titel thermomechanische Alterung nennt, stellen Methoden und Diskussion ausdrücklich klar, dass dynamische Kaulasten nicht simuliert wurden.[R17]"
+          },
+          {
+            "type": "p",
+            "text": "Die vollständige, brückenförmige Probe berücksichtigt den Verbindungsbereich, die Brückenlänge und die Lagerungsmethode bei der Materialbewertung und erklärt, warum die Festigkeit von Streifenmaterialien nicht immer die Leistungsfähigkeit von Messgeräten vorhersagt. Der Verbinder trägt gleichzeitig die Lastübertragung und den geometrischen Übergang; Änderungen lokaler Querschnitte oder Winkel können empfindlicher reagieren als die nominelle Gesamtfestigkeit des Materials. Bruchstellen und Last-Verschiebungs-Beziehungen können daher zusammen mit der maximalen Last verwendet werden, um potenzielle Stellen der Verformungsakkumulation und Rissinitiierung zu identifizieren."
+          },
+          {
+            "type": "p",
+            "text": "Nach der statischen Belastung im Anschluss an die thermische Zyklisierung sollten die zyklischen Belastungen in verschiedenen Richtungen erhöht und die Verbindungskonstruktion bei gleicher Geometrie verglichen werden. Die Studie kann anfängliche Defekte, Spuren der Stützentfernung und die Nachhärtungsbedingungen nacheinander als mögliche Ursachen untersuchen. In dieser Phase wird die Brücke über einen längeren Zeitraum klinisch beobachtet, um zu überprüfen, ob die in den Experimenten identifizierten Schwachstellen auch bei tatsächlichen Ausfällen auftreten. Die Testbelastungen und die Konstruktion sollten entsprechend angepasst werden, anstatt die Lebensdauer anhand eines einzelnen Ausfallwertes zu berechnen."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Versagensarten in der Nachsorge unterscheiden"
+          },
+          {
+            "type": "p",
+            "text": "Klinische Nachsorge gedruckter Harzkronen unterscheidet Ablösung, Bruch, Farbe und Weiternutzung. Laborversuche lokalisieren Spannungsspitzen, Gebrauchsdaten erfassen ihre Folgen. [R03] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Versagensarten getrennt erfassen."
+          },
+          {
+            "type": "p",
+            "text": "Eine prospektive, einarmige Studie aus dem Jahr 2026 untersuchte 30 VarseoSmile Crown Plus-Einzelkronen im Seitenzahnbereich über einen Zeitraum von zwei Jahren. Die Überlebensrate lag bei 93 %, die Erfolgsrate bei 87 %. Zwei Kronen lösten sich, und es wurden vereinzelt Farbveränderungen beobachtet. Die Studie standardisierte die Arbeitsabläufe für Scannen, Herstellung und Zementierung. [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Das Ergebnis der Einzelkrone ermöglicht die gemeinsame Beurteilung von Geometrie, Oberfläche und Zementierung. Ablösung und Materialbruch sind unterschiedliche Mechanismen: Erstere hängen vom Zahnzustand, der präparierten Geometrie und den Verbindungsstellen ab, während letztere von der lokalen Dicke und Belastung beeinflusst werden. Daher sollten im Rahmen der Nachsorge erneute Zementierung, Reparatur und Neuanfertigung separat dokumentiert werden, anstatt lediglich den Verbleib der Krone im Mund zu erfassen. Farbveränderungen sollten zudem mit der Patientenakzeptanz und der Notwendigkeit einer Intervention korreliert werden, um sicherzustellen, dass ästhetische Ergebnisse in klare klinische Entscheidungen einfließen."
+          },
+          {
+            "type": "p",
+            "text": "Die Fallbedingungen dieser Studie liefern ein konkretes Anwendungsszenario für den Arbeitsablauf. Weitere Vergleiche können durch die Einrichtung von Kontrollgruppen mit ähnlicher präparierter Körperhöhe, Antagonistenbedingungen und okklusalen Risiken angestellt werden, um die Auswirkungen von Materialveränderungen und der Lernfähigkeit des Behandlers zu beobachten. Zusammen mit dem nächsten Schritt in der Forschung zu Kinderkronen verdeutlicht dies, dass klinische Probleme je nach Gebiss und Zweck individuell betrachtet werden müssen. Das gleiche Überlebensergebnis kann mit unterschiedlichem Abrieb, unterschiedlicher Farbe oder unterschiedlichem Zahnfleischbild einhergehen, und diese Dimensionen müssen berücksichtigt werden, um das jeweils anwendbare Szenario zu bestimmen."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2026 verglich kontralaterale Restaurationen an 50 Milchmolaren von 25 Kindern über 12 Monate. Gedrucktes Kunstharz und vorgefertigtes Zirkonoxid waren bei Retention und mehreren Funktionsmaßen ähnlich. Plaque, Gingivaindizes, Verschleiß und Farbveränderungen fielen in der Druckgruppe ungünstiger aus.[R18]"
+          },
+          {
+            "type": "p",
+            "text": "Das kontralaterale Design des reduziert den Einfluss individueller Mundhygienegewohnheiten und des allgemeinen physiologischen Umfelds von Kindern und ermöglicht so die Beobachtung von Unterschieden in Materialien und Herstellungsverfahren innerhalb desselben Individuums. Milchzahnmorphologie, Präparationsmethode, Zahnfleischrandposition und Restlebensdauer stellen unabhängige Forschungsbedingungen dar. Analysen anhand dieser Variablen sind aussagekräftiger als die Betrachtung von Kinderkronen als Miniaturversionen von Einzelkronen für Erwachsene. Die anschließende Erfassung der Oberflächenrauheit und des Reinigungsverhaltens kann Aufschluss darüber geben, ob ein konsistenter zeitlicher Zusammenhang zwischen Oberflächenveränderungen und Plaquebildung besteht."
+          },
+          {
+            "type": "p",
+            "text": "Dies führt zu einer wichtigen Forschungserkenntnis: Instrumentenretention bedeutet nicht zwangsläufig, dass alle Ergebnisse stabil bleiben. Abnutzung kann Kontakt und Belastung verändern, Verfärbungen können ästhetische Eingriffe erforderlich machen, und Gingiva-Indizes geben Aufschluss über die Gewebereaktion. Für die Produktentwicklung ist es daher notwendig, Funktion, Oberflächenbeschaffenheit und Reinigungsfähigkeit gleichzeitig zu optimieren. Die Konvergenz im Diagramm erhält somit mehrere klinische Dimensionen und ermöglicht den Vergleich verschiedener Materialansätze auf einer gemeinsamen Ereignistabelle, während gleichzeitig den einzelnen Ergebnissen in unterschiedlichen Fällen unterschiedliche Gewichtungen zugewiesen werden können."
+          },
+          {
+            "type": "p",
+            "text": "In der randomisierten Studie 2025 wurden 43 Teilnehmer und 48 Seitenzähne eingeschlossen. Verglichen wurde das Nanopartikel-Jet-Printing mit dem Fräsen von Zirkonoxidkronen. Über einen Zeitraum von 12 Monaten waren die wichtigsten ästhetischen, funktionellen und biologischen Indikatoren im Allgemeinen vergleichbar; in jeder Gruppe trat ein Bruch auf. Parodontale Parameter und die Patientenzufriedenheit wurden ebenfalls erfasst. [R19]"
+          },
+          {
+            "type": "p",
+            "text": "Die Randomisierung trägt zur Differenzierung zwischen Herstellungsverfahren und Fallauswahl bei, da beide Gruppen zwar dieselbe Materialkategorie, aber unterschiedliche Formgebungsprozesse verwenden. Die Materialstruktur nach dem Sintern, der Randzustand und die klinische Haftung stellen weiterhin mehrere Ursachen für gemeinsame Ergebnisse dar. Um zu erklären, welcher Prozessschritt die Unterschiede verursacht hat, können Maß- und Defektmessungen aus der Herstellungsphase mit jedem klinischen Koronarpräparat verknüpft werden, wodurch ein zusammengehöriger Datensatz vom Rohmaterial bis zum Patienten entsteht."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Klinische Daten für die Konstruktion nutzen"
+          },
+          {
+            "type": "p",
+            "text": "Überwiegt Ablösung, sind Präparation und Verbund zu prüfen. Materialrisse weisen auf Dicke, lokale Last oder Aufbereitung hin. Bei Brücken ist auch der Verbinder zu untersuchen. [R03] [R04] [R10]"
+          },
+          {
+            "type": "p",
+            "text": "Nachsorge zur Planung des nächsten Laborversuchs nutzen."
+          },
+          {
+            "type": "p",
+            "text": "Die Studie 2025 untersuchte 68 dreigliedrige, gedruckte Kompositbrücken im Seitenzahnbereich bei 49 Patienten. Die mittlere Beobachtungsdauer betrug 22,36 Monate, maximal über drei Jahre. Hauptsächlich traten mechanische Beschädigungen und Probleme im Verbindungsbereich auf. Die Überlebensschätzung beim kombinierten mechanischen und biologischen Ereignisendpunkt wurde auf 36,2 % geschätzt. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "Das klinische Prüfobjekt, das mehrere Spannweiten, Verbindungsstücke und reale Okklusionsumgebungen umfasst, liefert einzigartiges Feedback für die Brückenprüfung im Labormaßstab. Der Vergleich zwischen Einzelkronen und Brückenkonstruktionen mit unterschiedlichen Materialien, Designs und Fallbeispielen ist wertvoll, um strukturelle Aufgaben zu identifizieren, die einer erneuten Validierung bedürfen. Die Wiedereinführung klinischer Risslokalisationen, Brückenabmessungen und Spannungszustände in den Versuchsaufbau ermöglicht die Untersuchung, ob Spannungskonzentrationen in der Verbindungszone und Materialermüdung gemeinsam die Ereignisverteilung erklären."
+          },
+          {
+            "type": "p",
+            "text": "Nachfolgestudien sollten zwischen reparierbaren Schäden, Ausfällen mit Revisionsbedarf und dentalbiologischen Ereignissen differenzieren und gleichzeitig die Korrelation zwischen mehreren Restaurationen desselben Patienten erhalten. Die Anwendung der Zeit-bis-zum-Ereignis-Analyse zur Berücksichtigung unterschiedlicher Beobachtungsdauern kann den Informationsverlust reduzieren, der durch den Vergleich lediglich des Anteils der bei der letzten Nachuntersuchung durchgeführten Restaurationen entsteht. Diese Feedbackkette verdeutlicht die Prioritäten in Forschung und Entwicklung: Zunächst sollten veränderbare Faktoren in der Geometrie der Konnektoren, den Materialien und Herstellungsfehlern identifiziert werden, anschließend sollten neue klinische Vergleiche mit einem optimierten, vollständigen Arbeitsablauf durchgeführt werden."
+          }
+        ]
+      },
+      {
+        "title": "Vergleich der Befunde",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Kleinere Randspalten können in einem bestimmten Vergleich mit geringeren Bruchlasten einhergehen. Geometrie, Seitenzahnbelastung, Nachsorge und Wartung sind nach Indikation zu vergleichen. [R01] [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Ein Kronenmodell für Stufenmaße und indikationsabhängige Lasten verwenden. Harz- und Keramikkronen benötigen abgestimmte eigene Abläufe. Suspensionsoptik, Stützung und Farbe zunächst getrennt, danach kombiniert variieren. Kronenergebnisse ersetzen keine Verbinderprüfung: Verbinderproben und vollständige Dreigliedbrücken nach thermomechanischer Alterung mit Bruchortkartierung prüfen.[R16][R17][R10] Fehlerrichtung und Region erhalten. Außenrand-, Innenflächen- und Kauhöhenänderungen verlangen verschiedene Anpassungen und gehören nicht in einen einzigen Absolutwert. Rissursprünge an Stützentfernung, dünnen Rändern oder Verbindern den Stufenscans derselben Restauration zuordnen. So wird geprüft, ob Suspension, Stützung oder Wärmeführung die Ursache behebt."
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Patentbezogene Variable",
+              "Vorgeschlagener Vergleich, Endpunkte und nächste Entscheidung"
+            ],
+            "rows": [
+              [
+                "Härtungsgrenze",
+                "Kompensation bei gleicher Suspension, dann Suspensionen am gleichen Gerät vergleichen; Kontur, Rand und Innenfläche messen. Bessere Außenform bei kleinerem Innenspalt verlangt regionale Kalibrierung.[R20]"
+              ],
+              [
+                "Stufenfehler",
+                "Grünkörper, entstützte und gesinterte Kronen scannen; Stützorte und dünne Wände vergleichen. Umgekehrte/vergrößerte Sinterfehler verlangen ein neues Schwindungsmodell statt größeren Pixelversatz.[R21]"
+              ],
+              [
+                "Optik/Mechanik",
+                "Farbrezepturen bei gleicher Geometrie auf Transluzenz, Farbabstand, Poren und Bruch nach Alterung prüfen. Zielfarbe bei frühem Dünnwandbruch begrenzt Rezeptur und Indikation.[R22]"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Industrielle Ansätze und dokumentierte Produkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Kronenwerkstoffe von BEGO, Formlabs-Prozessleitfäden und die Chairside-DLP-Plattform von DMG organisieren die Versorgung über Material, Prozess und Ort. Indikation und Endproduktprüfung sind je Harz- und Geräteversion abzugleichen. [R08] [R11] [R12]"
+          },
+          {
+            "type": "p",
+            "text": "BEGO brachte 2020 VarseoSmile Crown plus auf den Markt und erweiterte damit seine Produktstrategie auf die spezifische Anwendung von permanenten Einzelkronen mit druckbaren Hybridmaterialien. Die anschließenden klinischen Studien bildeten einen vollständigen Arbeitsablauf, der spezifische Materialien, das Varseo XS-Gerät und die dazugehörige Verarbeitung umfasste und die prospektive Beobachtung der beabsichtigten Produktanwendung ermöglichte. [R11][R09] Diese Zeitleiste veranschaulicht den Prozess von der ersten Material- und Indikationsentwicklung bis zur schrittweisen Erfassung der Anwendungsergebnisse."
+          },
+          {
+            "type": "p",
+            "text": "Die offizielle Formlabs-Richtlinie bis 2026 verwendet BEGO VarseoSmile TriniQ als Grundlage und gliedert die Arbeitsschritte in Form 4B, Reinigung, Nachhärtung, Endbearbeitung und Auslieferung. [R12] Diese Änderung spiegelt das integrierte Materialmanagement nach dem Übergang in eine andere Plattform wider: Geräte, Materialien und Prozesskombinationen bilden die Einheit der Produktnutzung. Bestehende Crown Plus-Folgeprozesse und der aktuelle TriniQ-Workflow können gemeinsame Forschungsfragen aufgreifen, während Materialidentitäten und Prozessversionen separat dokumentiert werden."
+          },
+          {
+            "type": "p",
+            "text": "Die technologische Weiterentwicklung von lässt sich daher in drei miteinander verbundene Ebenen unterteilen. Die Materialebene optimiert Füllstoffe, Polymerisation und Oberflächenbeschaffenheit; die Fertigungsebene optimiert Belichtung, Stützstruktur und Nachbearbeitung; und die Serviceebene verknüpft Designprüfungen, Schulungen und Lieferdokumentation. Forscher können nachvollziehen, welche Ebene durch jede Versionsänderung primär beeinflusst wird und vergleichen, ob sich dadurch Maßabweichungen, Bruchrisiken oder Nachbearbeitungszeiten reduzieren. Diese Zusammenhänge tragen dazu bei, zu erklären, warum ein Produktupdate in verschiedenen Laboren unterschiedliche praktische Vorteile bietet."
+          },
+          {
+            "type": "p",
+            "text": "Die Herstellungsverfahren für Einzelkronen, Brücken und Zirkonoxid erfordern unterschiedliche Ausrüstung und Arbeitsorganisation in der Branche. Harzsysteme setzen auf einen schnellen Prozess vom Drucken bis zum Verkleben, während Zirkonoxidsysteme die Integration von Konsistenz zwischen Formgebung und Wärmebehandlung in die Produktionskapazität erfordern. Unternehmen können den gesamten Aufwand für jede erfolgreiche Lieferung vergleichen, einschließlich Design, Drucken, Reinigen, Aushärten oder Sintern, Endbearbeitung und Nachbearbeitung. Die Maschinengeschwindigkeit ist nur ein Faktor; ob eine höhere Produktionsmenge die Wirtschaftlichkeit verbessert, hängt auch von Fehlern und Änderungen in manuellen Prozessen ab."
+          }
+        ]
+      },
+      {
+        "title": "Patentmechanismen und Prüfung für den Einsatz",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN113208750A betrifft einen Transluzenzgradienten in Kronen. CN122342684A beschreibt einen Verbund aus Lithiumdisilikatkeramik und fließfähigem Harz. Optisches Verhalten, Ränder, Bruchlast in dünnen Zonen und inneres Versagen sind zu prüfen. [R06] [R07]"
+          },
+          {
+            "type": "p",
+            "text": "CN112745120A des Foshan Xianhu Laboratory beschreibt Nanozirkonoxid, Dispergiermittel und Acrylphotopolymer zur Beeinflussung von Streuung und Genauigkeit. Pixelversatzstudien liefern die mechanistische Brücke: Lichtausbreitung und Kompensation verändern gemeinsam die Härtungsgrenze. BEGO-/Formlabs-Harzabläufe verlangen ebenfalls Abstimmung; Keramik wird zusätzlich entbindert/gesintert. Stufenmessungen lokalisieren Abweichungen in Belichtung oder Wärmeprozess.[R15][R16][R12][R20]"
+          },
+          {
+            "type": "p",
+            "text": "CN112390646A von Jiangsu Qiandu beschreibt Kronendaten, DLP-Grünkörper, Stützentfernung, Entbindern, optionale Färbung, Sintern und Nachbearbeitung. Regionale Formtreue wird zur Stufenfrage: Überlagern sich Stützkontakt, dünne Ränder und Schwindung? Der Formlabs-Leitfaden liefert die Logik des Gesamtablaufs. Keramikränder, Innen- und Kauflächen sind getrennt statt über einen Mittelwert zu prüfen.[R14][R19][R12][R21]"
+          },
+          {
+            "type": "p",
+            "text": "CN113416071A der Jiaxing University/Jiaxing Yabao beschreibt gemeinsame Härtung von Tinte/Suspension und Tintenzusammensetzung für Farbe/Transparenz. Farbänderungen klinischer Kronen und Bruch an Brückenverbindern liefern zwei Prüfpfade: Optik zusammen mit Dichte, Resten und Dünnwandfestigkeit prüfen. BEGO liefert ästhetische Anwendungsanforderungen; Farbdruck belegt keine langfristige Seitenzahnbrückendauerhaftigkeit.[R09][R10][R11][R22]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick auf Forschung und Anwendung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Geeignete Größen sind lokale Extremwerte an dünnen Zonen und Rändern, Ermüdungsstadien, Ablöse- und Bruchhäufigkeit sowie Aufwand für Wiederbefestigung oder Neuanfertigung. Multizentrische Daten sollten Systemversion und Indikation enthalten. [R02] [R03] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Three-Dimensional Evaluation of Marginal Gap in Prefabricated Zirconia and 3D-Printed Pediatric Crowns.",
+        "url": "https://doi.org/10.3390/ma19163400",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R01"
+      },
+      {
+        "title": "Marginal and internal fit of 3D printed permanent crowns: effect of CAD/CAM software, preparation type and resin material.",
+        "url": "https://doi.org/10.1186/s12903-026-08948-6",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R02"
+      },
+      {
+        "title": "Marginal adaptation and fracture resistance of milled and 3D-printed CAD/CAM hybrid dental crown materials with various occlusal thicknesses",
+        "url": "https://doi.org/10.2186/jpr.jpr_d_23_00089",
+        "year": "2023",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R03"
+      },
+      {
+        "title": "Marginal and internal fit and fracture resistance of three-unit provisional restorations fabricated by additive, subtractive, and conventional methods.",
+        "url": "https://doi.org/10.1002/cre2.637",
+        "year": "2022",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R04"
+      },
+      {
+        "title": "Comparison of the marginal and internal fit of PMMA interim crowns printed with different layer thicknesses in 3D-printing technique",
+        "url": "https://doi.org/10.1002/cre2.758",
+        "year": "2023",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R05"
+      },
+      {
+        "title": "Lithium disilicate ceramic-dental fluid resin composite material as well as preparation method and application thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN122342684A",
+        "year": "2026",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R06"
+      },
+      {
+        "title": "Dental crown with gradually-varied light transmittance based on stereolithography 3D printing and preparation method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN113208750A",
+        "year": "2021",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R07"
+      },
+      {
+        "title": "DMG Launches DentaMile Desk RS-1",
+        "url": "https://www.dmg-america.com/news-press/detail/dmg-launches-dentamile-desk-rs-1-compact-chairside-3d-printing-solution-for-busy-dental-practices",
+        "year": "",
+        "kind": "Unternehmensmitteilung",
+        "source": "Unternehmensmitteilung",
+        "id": "R08"
+      },
+      {
+        "title": "Performance of posterior 3D printed resin-matrix ceramic crowns fabricated in a fully digital workflow: a two-year prospective clinical study",
+        "year": "2026",
+        "source": "Clinical Oral Investigations",
+        "url": "https://link.springer.com/article/10.1007/s00784-026-06883-y",
+        "kind": "原始研究",
+        "id": "R09"
+      },
+      {
+        "title": "Assessing the performance of 3D-printed resin composite posterior fixed dental prostheses: A 3-year prospective clinical trial",
+        "year": "2025",
+        "source": "Journal of Dentistry",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0300571225003318",
+        "kind": "原始研究",
+        "id": "R10"
+      },
+      {
+        "title": "3D Printing World Premiere: VarseoSmile Crown plus – the First 3D Printing Hybrid Material for Permanent Crowns",
+        "year": "2020",
+        "source": "BEGO",
+        "url": "https://www.bego.com/news/bego-news-detail/3d-printing-world-premiere-varseosmile-crown-plus-the-first-3d-printing-hybrid-material-for-permanent-crowns/",
+        "kind": "企业公告",
+        "id": "R11"
+      },
+      {
+        "title": "Application Guide: 3D Printing Permanent Crowns With BEGO VarseoSmile TriniQ Resin",
+        "year": "2026年现行资料",
+        "source": "Formlabs",
+        "url": "https://dental.formlabs.com/indications/permanent-crowns/guide/",
+        "kind": "企业技术资料",
+        "id": "R12"
+      },
+      {
+        "title": "In vitro evaluation of marginal and internal adaptation of three-unit fixed dental prostheses produced by stereolithography",
+        "year": "2014",
+        "source": "Dental Materials Journal",
+        "url": "https://www.jstage.jst.go.jp/article/dmj/33/4/33_2014-017/_article",
+        "kind": "原始研究",
+        "id": "R13"
+      },
+      {
+        "title": "Comparison of Intaglio Surface Trueness of Interim Dental Crowns Fabricated with SLA 3D Printing, DLP 3D Printing, and Milling Technologies",
+        "year": "2021",
+        "source": "Healthcare",
+        "url": "https://www.mdpi.com/2227-9032/9/8/983",
+        "kind": "原始研究",
+        "id": "R14"
+      },
+      {
+        "title": "Effect of Pixel Offset Adjustments for XY Plane Dimensional Compensation in Digital Light Processing 3D Printing on the Surface Trueness and Fit of Zirconia Crowns",
+        "year": "2025",
+        "source": "Journal of Functional Biomaterials",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11943054/",
+        "kind": "原始研究",
+        "id": "R15"
+      },
+      {
+        "title": "Effects of 3D-printers and manufacturer-specified post-curing units on the dimensional accuracy, compressive strength, and degree of conversion of resin for fixed dental prostheses",
+        "year": "2025",
+        "source": "Journal of Dental Sciences",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12254842/",
+        "kind": "原始研究",
+        "id": "R16"
+      },
+      {
+        "title": "Influence of CAD/CAM Milling and 3D-Printing Fabrication Methods on the Mechanical Properties of 3-Unit Interim Fixed Dental Prosthesis after Thermo-Mechanical Aging Process",
+        "year": "2022",
+        "source": "Polymers",
+        "url": "https://www.mdpi.com/2073-4360/14/19/4103",
+        "kind": "原始研究",
+        "id": "R17"
+      },
+      {
+        "title": "Clinical performance of 3D-printed resin versus prefabricated zirconia crowns in primary molars: A split-mouth clinical study",
+        "year": "2026",
+        "source": "Journal of Dentistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42142616/",
+        "kind": "原始研究",
+        "id": "R18"
+      },
+      {
+        "title": "Clinical efficacy of a novel 3D-printed zirconia single crown: A randomized controlled trial",
+        "year": "2025",
+        "source": "Journal of Dentistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40885299/",
+        "kind": "原始研究",
+        "id": "R19"
+      },
+      {
+        "id": "R20",
+        "title": "Nano-zirconia ceramic slurry for photocuring 3D printing of dental crown and preparation method of nano-zirconia ceramic slurry",
+        "year": "2021",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN112745120A",
+        "source": "Espacenet",
+        "kind": "patent"
+      },
+      {
+        "id": "R21",
+        "title": "Method for forming all-ceramic dental crown by stereolithography of zirconia ceramic slurry",
+        "year": "2021",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN112390646A",
+        "source": "Espacenet",
+        "kind": "patent"
+      },
+      {
+        "id": "R22",
+        "title": "Raw material and additive manufacturing method of colorful multi-transparency dental restoration",
+        "year": "2021",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN113416071A",
+        "source": "Espacenet",
+        "kind": "patent"
+      }
+    ]
+  }
+}

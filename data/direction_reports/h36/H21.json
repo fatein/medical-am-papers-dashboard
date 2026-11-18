@@ -1,0 +1,1847 @@
+{
+  "zh": {
+    "id": "H21",
+    "p": "P3",
+    "title": "口服打印制剂的成形与释放调控",
+    "subtitle": "联合设计剂量、结构和溶出曲线",
+    "thesis": "打印片的结构、固态和辅料共同影响释放。双氯芬酸管状片实验出现预期之外的释放减慢，说明增大几何表面积后需要复测溶出机制。 [R01] [R02]",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络 · 口服打印制剂的成形与释放调控",
+      "summary": "从用药目标分出配方成形和结构传质，在单位制剂中汇合，随后用完成的溶出曲线与质量记录反馈配方及形状。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2016–2020",
+          "question": "剂量和每个时间段的目标分别定义。",
+          "title": "定义规格和靶曲线",
+          "evidence": "文献显示零级释放设计与个体剂量速释设计采用不同评价目标。前者看恒定速率的维持时段，后者优先考察及时崩解与不同剂量的一致性。",
+          "refs": [
+            "R02",
+            "R06"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2016–2023",
+          "question": "把药物稳定性放进成形窗口。",
+          "title": "配方与成形",
+          "evidence": "辅料影响供料、熔体沉积和进液。热熔挤出与熔融沉积相接时，药物经历连续热历史。应同时记录材料连续成形、单位质量、药物固态与含量。",
+          "refs": [
+            "R01",
+            "R06"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2023",
+          "question": "区分设计孔道、进液、膨胀与溶蚀。",
+          "title": "几何与湿润变化",
+          "evidence": "双氯芬酸钠体外研究比较圆柱与管状。管状原本用于增大暴露，但实测释放慢于圆柱。辅料组合同样改变溶出，几何排序需在配方与溶出条件内解释。",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2019–2023",
+          "question": "用与目标组织环境相符的模型比较。",
+          "title": "胃内行为和释放",
+          "evidence": "普瑞巴林研究采用打印浮力结构，另一研究采用黏附亲水基质。漂浮、黏附和释放曲线须分开测定，结构耐受性要与目标胃内时段匹配。",
+          "refs": [
+            "R03",
+            "R04"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2016–2020",
+          "question": "将质量控制与释药功能同步。",
+          "title": "全曲线和批次一致性",
+          "evidence": "几何有时改变不同时间段的斜率，单个时间点可能掩盖首段或尾段差异。多规格试验应比较完整曲线、片间含量与工艺启动偏差。",
+          "refs": [
+            "R01",
+            "R02",
+            "R06"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "",
+          "question": "以变更前后的质量与释放记录建立反馈。",
+          "title": "研发与放行反馈",
+          "evidence": "设计进入企业研发或 cGMP 制造后，工艺变更需要对照质量、固态与溶出。若剂量标签改变但释放比例不再匹配，可回查挤出、单位几何和药物分布。",
+          "refs": [
+            "R11",
+            "R12",
+            "R13"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "配方与成形",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "几何与湿润变化",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "胃内行为和释放",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "胃内行为和释放",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "全曲线和批次一致性",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "研发与放行反馈",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "用含量与溶出变化回查成形",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究范围与目标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "结构设计的价值在于把患者规格、成形重复性和溶出目标放到同一系统。速释、持续释放、胃滞留和分阶段释放各有不同的验证条件。"
+          }
+        ]
+      },
+      {
+        "title": "学术研究脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 定义规格和靶曲线"
+          },
+          {
+            "type": "p",
+            "text": "文献显示零级释放设计与个体剂量速释设计采用不同评价目标。前者看恒定速率的维持时段，后者优先考察及时崩解与不同剂量的一致性。 [R02] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "剂量和每个时间段的目标分别定义。"
+          },
+          {
+            "type": "p",
+            "text": "2015 年研究将含对乙酰氨基酚的聚乙烯醇丝材打印为五种几何形状，发现释放与表面积体积比相关。它说明尺寸变化不仅改变药量，也可能改变释放，个体化设计需要同时控制这两项结果。[R14]"
+          },
+          {
+            "type": "p",
+            "text": "同一材料体系中比较几何，能够把组成变化与形状变化尽量分开。表面积决定最初接触液体的界面，体积决定需释放的总量；二者之比因此比单看面积更接近质量转移任务。该结论使个体化剂量出现一个约束：放大体积通常不会按同一比例增加界面，改变剂量可能同时改变释放速度。"
+          },
+          {
+            "type": "p",
+            "text": "下一研究需要区分外形、内部结构和材料行为。若目标是不同剂量但相似释放，可以考虑保持关键传质长度或采用多个小单元组合，并用实测曲线判定是否达成。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 配方与成形"
+          },
+          {
+            "type": "p",
+            "text": "辅料影响供料、熔体沉积和进液。热熔挤出与熔融沉积相接时，药物经历连续热历史。应同时记录材料连续成形、单位质量、药物固态与含量。 [R01] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "把药物稳定性放进成形窗口。"
+          },
+          {
+            "type": "p",
+            "text": "2016 年聚合物混合研究尝试改善 FDM 固体分散体的可加工性，同时调节释放。材料组合既影响丝材能否进料，也影响药物释放，配方优化由单一机械目标进入多目标平衡。[R15]"
+          },
+          {
+            "type": "p",
+            "text": "将聚合物混合用于可打印性，体现了药用材料和机械输送之间的矛盾：丝材需要抵抗进料压力，又要在成形后按产品目标解体。研究比较不同基质中的整体解体与条带剥离，使层间融合进入释放解释。由此，可打印性不是一种材料固有的单一标签，而是材料、设备和最终性能之间的关系。[R15]"
+          },
+          {
+            "type": "p",
+            "text": "后续的测量应分别覆盖固态进料、熔体流动及冷却后层间结合。只优化其中一个阶段，可能把缺陷转移到另一阶段，例如易进料却在喷出后无法保持形状。"
+          },
+          {
+            "type": "p",
+            "text": "2023 年在线发表的研究制备二十三种丝材，将机械与流变参数用于预测加工性及片剂属性一致性。其贡献是把“太脆或太软”的经验判断转化为可测量变量，帮助缩小试验范围。[R16]"
+          },
+          {
+            "type": "p",
+            "text": "进料是固态受力问题，喷出与沉积是熔体流动问题，因而多类测量比单一硬度更接近制造过程。研究使用多元回归连接物性与输出，并指出进料模型与设备有关，这一结果使“可移植模型”有了具体边界。材料参数相同而设备施力不同，失败阈值就可能变化。[R16]"
+          },
+          {
+            "type": "p",
+            "text": "后续验证需按设备和材料类型留出数据，观察模型在哪一层迁移失败。若只是进料失效，可改进机械接口；若片宽或释放一致性变化，则需追踪沉积和冷却。N6的逐片称量提供生产过程中的结果信号，使离线模型与实际输出建立反馈。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 几何与湿润变化"
+          },
+          {
+            "type": "p",
+            "text": "双氯芬酸钠体外研究比较圆柱与管状。管状原本用于增大暴露，但实测释放慢于圆柱。辅料组合同样改变溶出，几何排序需在配方与溶出条件内解释。 [R01]"
+          },
+          {
+            "type": "p",
+            "text": "区分设计孔道、进液、膨胀与溶蚀。"
+          },
+          {
+            "type": "p",
+            "text": "2015 年不同形状的含药片剂研究显示，表面积体积比能够解释所研究体系中的释放差异。几何因此成为配方之外的设计变量。[R14]"
+          },
+          {
+            "type": "p",
+            "text": "这一方法控制材料组成而改变形状，适合识别几何是否具有独立解释力。表面积对应液体进入界面，体积对应待释放总量，因此二者之比提供初始的尺度描述。但释放过程中边界会移动，初始几何不能替代对吸水和侵蚀的观察。该节点建立的是可检验的结构假设，后续需要问它在哪些材料中成立。"
+          },
+          {
+            "type": "p",
+            "text": "N2考察动态孔隙，N3检验能否由关联走向预测，两条分支分别增加机制解释与设计用途。更有信息量的对照应包括相同表面积体积比而形状不同的试样：若释放仍有差异，曲率、路径连通和局部传质就需要进入模型。"
+          },
+          {
+            "type": "p",
+            "text": "2021 年研究使用可膨胀、侵蚀的聚合物体系，通过热熔液滴沉积制备不同孔隙结构。研究将孔隙置于动态材料环境中考察：药物释放过程中，起初打印的结构也在吸水和变化。[R17]"
+          },
+          {
+            "type": "p",
+            "text": "打印孔隙并不是静止的液体通道。吸水可能扩大聚合物体积并压缩孔隙，侵蚀又可能打开新界面；初始孔隙率与有效传质面积之间因而不存在普遍的一一对应。选择可溶胀和可侵蚀材料，能够主动检验结构与材料响应的耦合，而不是只比较干燥片剂外观。"
+          },
+          {
+            "type": "p",
+            "text": "与N1相比，该研究要求将时间引入结构描述。后续可把质量损失、尺寸变化与释放同时记录，判断何时以扩散为主、何时以侵蚀为主。N3的几何预测若在不同材料间表现不同，就应从这些过程寻找原因，重新选择特征而非单纯增加回归复杂度。"
+          },
+          {
+            "type": "p",
+            "text": "同年的释放预测研究以表面积体积比组织实验数据，为指定药物和配方建立设计与释放的关联。预测的用途是筛选可能满足目标的结构，再由实验确认。[R18]"
+          },
+          {
+            "type": "p",
+            "text": "研究使用此前未打印的几何作验证，这一步将拟合与预测分开。平均溶出时间压缩了曲线信息，完整曲线方程则保留早期和后期差异；两种尺度共同检验几何特征能否支持设计。可溶与惰性基质并列，使几何关系的适用范围能够按释放机制比较。[R18]"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 胃内行为和释放"
+          },
+          {
+            "type": "p",
+            "text": "普瑞巴林研究采用打印浮力结构，另一研究采用黏附亲水基质。漂浮、黏附和释放曲线须分开测定，结构耐受性要与目标胃内时段匹配。 [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "用与目标组织环境相符的模型比较。"
+          },
+          {
+            "type": "p",
+            "text": "2023 年双喷头研究以 HPMCAS 外层与含 5-氨基水杨酸的 PVA 内部结构组合，评价面向结肠递送的可行性。酸碱响应层与含药区通过打印组织，减少了仅靠均一混合配方设计的限制。[R19]"
+          },
+          {
+            "type": "p",
+            "text": "双喷头选择让屏障和载药区分别采用适合各自任务的聚合物。外部环境响应改变通路开放程度，内部结构决定溶出面积及药物扩散；开口使早期阶段也可能发生释放。因此“结肠定位”应被拆解为前段泄漏与后段加速两项，而非一个简单二元标签。"
+          },
+          {
+            "type": "p",
+            "text": "与N6的包衣方式相比，整体打印增加几何自由度，却引入界面黏合、细孔和加工精度等问题。显微和断层成像用于确认实际结构，随后才解释释放差异。研究下一步应让制造偏差进入释放模型，判断哪些尺寸误差真正改变目标曲线。"
+          },
+          {
+            "type": "p",
+            "text": "2024 年双层片研究联合液滴沉积和注塑，分别处理不同配方的流变及结构需求。打印部分可调整孔隙，包覆成形部分则形成较致密结构。两种方法结合，拓宽了可制造的配方和释放组合。[R20]"
+          },
+          {
+            "type": "p",
+            "text": "两种成形方法并列，使材料不必同时适合所有制造过程。高黏度配方可能不适合某种沉积方式，却能用于包覆成形；这样工艺选择服从产品功能，而不由单一设备限制整个设计。研究观察孔隙与致密结构的释放差异，连接了可制造性和性能目标。"
+          },
+          {
+            "type": "p",
+            "text": "混合制造的新问题在界面：两层的热历史、收缩和湿润行为不同，可能在保存或释放时分离。后续应把界面强度与单成分释放同步考察，并用截面结构判断曲线变化来自脱层还是扩散屏障改变。该节点向N9反馈制造边界，帮助选择能够稳定覆盖多规格的方案。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 全曲线和批次一致性"
+          },
+          {
+            "type": "p",
+            "text": "几何有时改变不同时间段的斜率，单个时间点可能掩盖首段或尾段差异。多规格试验应比较完整曲线、片间含量与工艺启动偏差。 [R01] [R02] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "将质量控制与释药功能同步。"
+          },
+          {
+            "type": "p",
+            "text": "2024 年卡博替尼研究联合水溶性聚合物、辅料及几何设计，研究流变并建立不同剂量所需尺寸的计算方式。它将问题从单一试样的快速释放，推进到同一制剂方案能否覆盖多个规格。[R21]"
+          },
+          {
+            "type": "p",
+            "text": "这一研究把即时释放从单一样品的属性转为多个规格共同满足的要求。尺寸计算解决目标药量对应的几何问题，流变和辅料研究解决能否稳定形成结构，溶出则检验改变尺寸后是否保留目标。三者相互约束，不能用剂量线性替代释放一致性。"
+          },
+          {
+            "type": "p",
+            "text": "后续宜验证最小和最大规格及中间规格，以识别哪个变量在尺寸变化时成为主导，并将保存后的表现纳入同一判断。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 研发与放行反馈"
+          },
+          {
+            "type": "p",
+            "text": "设计进入企业研发或 cGMP 制造后，工艺变更需要对照质量、固态与溶出。若剂量标签改变但释放比例不再匹配，可回查挤出、单位几何和药物分布。 [R11] [R12] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "以变更前后的质量与释放记录建立反馈。"
+          },
+          {
+            "type": "p",
+            "text": "2024 年研究把分析天平集成到打印机，自动记录氢化可的松制剂的逐片质量，并与外部天平比较。系统识别到首片制造偏差，说明在线称量可以捕捉平均批次结果容易掩盖的单元问题。[R22]"
+          },
+          {
+            "type": "p",
+            "text": "逐片记录保留了生产顺序，因而可以观察启动、连续运行和结束阶段的差异。半固态物料的输出可能受到装载状态和流动恢复影响，某个异常单元对批次平均的影响很小，却对该单元剂量有直接意义。这解释了为何质量数据必须有单元层级，而不能只有总产量和平均片重。"
+          },
+          {
+            "type": "p",
+            "text": "称量反馈与N4的物性预测相接，可以判断某类丝材或药墨是否更容易出现时序漂移。但质量相同并不保证含药比例相同，N7进一步引入成分敏感光谱。两种方法在同一单元上联合，才能把输出数量偏差与混合或组成偏差分开。"
+          },
+          {
+            "type": "p",
+            "text": "2025年研究将微型近红外和拉曼用于Gustave Roussy医院生产的他莫昔芬制剂。校准样品在研究中心制备，医院采集光谱并对本地产品验证；研究保持材料供应来源一致，同时考察打开胶囊和透过闭合外壳测量的方式。[R23]"
+          },
+          {
+            "type": "p",
+            "text": "这一设计直接处理分散制造最困难的知识迁移：中心掌握分析开发能力，医院掌握真实生产环境。外壳会改变光路与背景，因而闭壳预测需要验证取样信息是否代表内部药物。两种光谱的互补性来自不同物理响应，选择不应只看拟合优度，还取决于检测时间、包装干扰、维护和与生产记录的连接方式。"
+          }
+        ]
+      },
+      {
+        "title": "研究之间如何比较",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "对比几何效应要固定配方，对比辅料时要保持可比结构。药剂行为分为体外目标曲线与人体相关终点，胃定位还需区分结构浮力与实际滞留。 [R01] [R03] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "企业路线与公开产品",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Laxxon Medical 与 Adare 公布面向 cGMP 制造的丝网印刷合作。Triastek 公布 T25 与 T26 的 FDA IND 许可，可据此跟进临床开发节点。企业路线还可用制剂可制造性、工艺切换和批次放行能力比较。 [R11] [R12] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "FABRX 的平台提供称量、近红外与压力附件，并结合软件记录批次；在线天平和医院光谱研究与其相关技术形成直接连接。[R24] [R22]"
+          },
+          {
+            "type": "p",
+            "text": "2026年1月，CurifyLabs发布PharmaPrinter Aurum，把内置称量、清洁校准、装载便利与软件追溯作为产品更新重点。其与2025年呋塞米及2026年美托洛尔研究的联系，是设备进入具体制剂验证和多点质量比较；这些研究与产品公告分别提供质量证据及产品功能信息。[R25][R26][R27]"
+          },
+          {
+            "type": "p",
+            "text": "FABRX的产品配置与2024年天平整合研究、2025年医院光谱研究相接，形成从沉积到逐单元检测的路线。企业参与使检测与设备控制更容易连接，学术评价则需要继续量化检测误差、真实异常检出和跨场地迁移。产品配置能够承载检测方法，经过验证的配方和模型决定方法在哪些产品中有效。[R22][R23][R24]"
+          }
+        ]
+      },
+      {
+        "title": "专利机制与转化验证",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "分散片、胃肠缓释片与可分剂量片的公开文本描述不同功能。对应试验应分别观察崩解、分时段释放和分割单元的质量与含量一致性。 [R07] [R08] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "后续研究与应用走向",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "后续优先观察跨规格保持的质量窗口和可迁移测试。工艺确认应在同一制剂路线记录规格相似性、换批时间、含量、溶出及储存变化。 [R01] [R06] [R11]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Development of Diclofenac Sodium 3D Printed Cylindrical and Tubular-Shaped Tablets through Hot Melt Extrusion and Fused Deposition Modelling Techniques.",
+        "url": "https://doi.org/10.3390/ph16081062",
+        "year": "2023",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R01"
+      },
+      {
+        "title": "3D Printing of Tunable Zero-Order Release Printlets.",
+        "url": "https://doi.org/10.3390/polym12081769",
+        "year": "2020",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R02"
+      },
+      {
+        "title": "Customized Novel Design of 3D Printed Pregabalin Tablets for Intra-Gastric Floating and Controlled Release Using Fused Deposition Modeling.",
+        "url": "https://doi.org/10.3390/pharmaceutics11110564",
+        "year": "2019",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R03"
+      },
+      {
+        "title": "Personalised 3D-Printed Mucoadhesive Gastroretentive Hydrophilic Matrices for Managing Overactive Bladder (OAB).",
+        "url": "https://doi.org/10.3390/ph16030372",
+        "year": "2023",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R04"
+      },
+      {
+        "title": "Beyond Immediate Release: FDM-Printed Pediatric 6-Mercaptopurine Chewable Tablets with Spontaneous In Situ Nanostructure Formation",
+        "url": "https://doi.org/10.1208/s12249-026-03556-7",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R05"
+      },
+      {
+        "title": "Adaptation of pharmaceutical excipients to FDM 3D printing for the fabrication of patient-tailored immediate release tablets.",
+        "url": "https://doi.org/10.1016/j.ijpharm.2016.09.050",
+        "year": "2016",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R06"
+      },
+      {
+        "title": "3DP (three-dimensional printed) hawthorn leaf flavonoid dispersible tablets and preparation method for same",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN106074412A",
+        "year": "2016",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R07"
+      },
+      {
+        "title": "3D printing gastrointestinal slow-release medicinal tablet",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN108295037A",
+        "year": "2018",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R08"
+      },
+      {
+        "title": "3D (Three dimensional) printed hydrochlorothiazide tablets and preparation method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN107412177A",
+        "year": "2017",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R09"
+      },
+      {
+        "title": "Ketotifen fumarate divided dose tablet based on 3D printing technology and preparation method",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119235803A",
+        "year": "2025",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R10"
+      },
+      {
+        "title": "Laxxon Medical and Adare Pharma Solutions Announce Joint Cooperation for Production of cGMP 3D Printed Oral Dosage Forms",
+        "url": "https://www.laxxonmedical.com/post/laxxon-medical-and-adare-pharma-solutions-announce-joint-cooperation-for-production-of-cgmp-3d-print",
+        "year": "",
+        "kind": "企业公告",
+        "source": "企业公告",
+        "id": "R11"
+      },
+      {
+        "title": "Triastek · T25 FDA IND",
+        "url": "https://www.triastek.com/detail/43.html",
+        "year": "",
+        "kind": "企业公告",
+        "source": "企业公告",
+        "id": "R12"
+      },
+      {
+        "title": "Triastek · T26 FDA IND",
+        "url": "https://www.triastek.com/detail/42.html",
+        "year": "",
+        "kind": "企业公告",
+        "source": "企业公告",
+        "id": "R13"
+      },
+      {
+        "id": "R14",
+        "title": "Effect of geometry on drug release from 3D printed tablets",
+        "year": "2015",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25934428/"
+      },
+      {
+        "id": "R15",
+        "title": "An investigation into the use of polymer blends to improve the printability of and regulate drug release from pharmaceutical solid dispersions prepared via fused deposition modeling (FDM) 3D printing",
+        "year": "2016",
+        "source": "European Journal of Pharmaceutics and Biopharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27594210/"
+      },
+      {
+        "id": "R16",
+        "title": "Correlating mechanical and rheological filament properties to processability and quality of 3D printed tablets using multiple linear regression",
+        "year": "2023（在线）/2024",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38110015/"
+      },
+      {
+        "id": "R17",
+        "title": "Effects of porosity on drug release kinetics of swellable and erodible porous pharmaceutical solid dosage forms fabricated by hot melt droplet deposition 3D printing",
+        "year": "2021",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33957266/"
+      },
+      {
+        "id": "R18",
+        "title": "Predicting Drug Release from 3D Printed Oral Medicines Based on the Surface Area to Volume Ratio of Tablet Geometry",
+        "year": "2021",
+        "source": "Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://www.mdpi.com/1999-4923/13/9/1453"
+      },
+      {
+        "id": "R19",
+        "title": "Development of 3D-Printed Bicompartmental Devices by Dual-Nozzle Fused Deposition Modeling (FDM) for Colon-Specific Drug Delivery",
+        "year": "2023",
+        "source": "Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10535423/"
+      },
+      {
+        "id": "R20",
+        "title": "Tailoring drug release in bilayer tablets through droplet deposition modeling and injection molding",
+        "year": "2024",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38307401/"
+      },
+      {
+        "id": "R21",
+        "title": "Dosage by design – 3D printing individualized cabozantinib tablets with immediate release",
+        "year": "2024",
+        "source": "European Journal of Pharmaceutics and Biopharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39278333/"
+      },
+      {
+        "id": "R22",
+        "title": "Ensuring the quality of 3D printed medicines: Integrating a balance into a pharmaceutical printer for in-line uniformity of mass testing",
+        "year": "2024",
+        "source": "Journal of Drug Delivery Science and Technology",
+        "kind": "原始研究",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1773224724000054"
+      },
+      {
+        "id": "R23",
+        "title": "3D printing personalized medications in a hospital: Rapid and non-destructive dose verification of printed medicines enabled by miniaturised spectroscopy",
+        "year": "2025",
+        "source": "Journal of Pharmaceutical Sciences",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40609639/"
+      },
+      {
+        "id": "R24",
+        "title": "Pharmaceutical printers for personalized medicine",
+        "year": "2026（访问）",
+        "source": "FABRX",
+        "kind": "企业产品资料",
+        "url": "https://www.fabrx.co.uk/products"
+      },
+      {
+        "id": "R25",
+        "title": "Automated 3D printing of pediatric furosemide tablets: A personalized medicine approach using semi-solid extrusion and NIR monitoring",
+        "year": "2025",
+        "source": "European Journal of Pharmaceutical Sciences",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40939844/"
+      },
+      {
+        "id": "R26",
+        "title": "Dose Accuracy and Content Uniformity of Low-Dose Metoprolol Tablets: 3D Printing Compared with Tablet Splitting in Hospital Pharmacy Setting",
+        "year": "2026",
+        "source": "Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13209887/"
+      },
+      {
+        "id": "R27",
+        "title": "CurifyLabs Unveils Next Gen 3D Printer for Scalable Plug-and-Play Pharmaceutical Compounding",
+        "year": "2026",
+        "source": "CurifyLabs",
+        "kind": "企业公告",
+        "url": "https://news.curifylabs.com/curifylabs-unveils-next-gen-3d-printer-for-scalable-plug-and-play-pharmaceutical-compounding"
+      }
+    ]
+  },
+  "en": {
+    "id": "H21",
+    "p": "P3",
+    "title": "Fabrication and release control of printed oral dosage forms",
+    "subtitle": "Design dose, geometry and dissolution together",
+    "thesis": "Structure, solid state and excipients jointly govern release. A tubular diclofenac design unexpectedly slowed dissolution, illustrating why the mechanism must be rechecked when geometric surface area increases. [R01] [R02]",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway · Fabrication and release control of printed oral dosage forms",
+      "summary": "The treatment objective branches into formulation and geometry. They converge at the dosage unit, where dissolution and quality records feed back into both choices.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2016–2020",
+          "question": "Define strength and time-dependent targets separately.",
+          "title": "Define strength and target profile",
+          "evidence": "Zero-order design and patient-tailored immediate release pursue different targets. One tracks the duration of a near-constant release rate, the other prompt disintegration and equivalence across strengths.",
+          "refs": [
+            "R02",
+            "R06"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2016–2023",
+          "question": "Include drug stability in the process window.",
+          "title": "Formulation and fabrication",
+          "evidence": "Excipients affect feed, deposition and fluid ingress. Hot-melt extrusion followed by fused deposition creates successive thermal exposures. Track continuous printability, unit mass, solid state and content together.",
+          "refs": [
+            "R01",
+            "R06"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2023",
+          "question": "Distinguish CAD channels, liquid ingress, swelling and erosion.",
+          "title": "Geometry and evolving wetting",
+          "evidence": "An in vitro diclofenac study compared cylinders and tubes. Tubes were intended to increase exposure but released more slowly than cylinders. Excipient combinations also changed dissolution, so shape rankings apply within a specified formulation and test.",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2019–2023",
+          "question": "Match the experimental model to the intended environment.",
+          "title": "Gastric behaviour and release",
+          "evidence": "A pregabalin study used a printed buoyant structure. A separate study used a mucoadhesive hydrophilic matrix. Measure flotation, adhesion and release independently, matching structural persistence to the target gastric duration.",
+          "refs": [
+            "R03",
+            "R04"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2016–2020",
+          "question": "Pair quality controls with release function.",
+          "title": "Whole curve and batch consistency",
+          "evidence": "Geometry can change the slope at different times, so a single measurement can conceal early or late shifts. Compare complete curves, unit content and start-up variation when validating multiple strengths.",
+          "refs": [
+            "R01",
+            "R02",
+            "R06"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "",
+          "question": "Use pre- and post-change quality records as feedback.",
+          "title": "Feed development back into release testing",
+          "evidence": "Process changes entering development or cGMP manufacture require comparison of quality, solid state and dissolution. If a strength change alters fractional release, revisit extrusion, unit geometry and drug distribution.",
+          "refs": [
+            "R11",
+            "R12",
+            "R13"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Formulation and fabrication",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Geometry and evolving wetting",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Gastric behaviour and release",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Gastric behaviour and release",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Whole curve and batch consistency",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Feed development back into release testing",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Trace content and dissolution drift back to fabrication",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Scope and objectives",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Geometry links patient-specific strengths, reproducible manufacture and dissolution. Immediate, sustained, gastroretentive and staged release require different validation conditions."
+          }
+        ]
+      },
+      {
+        "title": "Academic pathway and interpretation",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Define strength and target profile"
+          },
+          {
+            "type": "p",
+            "text": "Zero-order design and patient-tailored immediate release pursue different targets. One tracks the duration of a near-constant release rate, the other prompt disintegration and equivalence across strengths. [R02] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Define strength and time-dependent targets separately."
+          },
+          {
+            "type": "p",
+            "text": "A 2015 study printed acetaminophen-containing polyvinyl alcohol filaments into five geometries and found that release correlated with surface-area-to-volume ratio. Dimensional changes can alter both dose and release, so personalized design must control both outcomes. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "Comparing the geometry within the same material system allows for a better separation of compositional and shape changes. Surface area determines the initial interface with the liquid, while volume determines the total amount to be released; therefore, the ratio of the two is closer to the mass transfer task than considering area alone. This conclusion imposes a constraint on individualized dosing: scaling up the volume typically does not increase the interface proportionally, and changing the dosage may simultaneously alter the release rate."
+          },
+          {
+            "type": "p",
+            "text": "The next step in the research needs to differentiate between external shape, internal structure, and material behavior. If the goal is similar release at different doses, it's advisable to maintain the critical mass transfer length or use a combination of multiple small units, and use measured curves to determine whether this is achieved."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Formulation and fabrication"
+          },
+          {
+            "type": "p",
+            "text": "Excipients affect feed, deposition and fluid ingress. Hot-melt extrusion followed by fused deposition creates successive thermal exposures. Track continuous printability, unit mass, solid state and content together. [R01] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Include drug stability in the process window."
+          },
+          {
+            "type": "p",
+            "text": "2016 polymer blending research attempted to improve the processability of FDM solid dispersions while regulating release. Material composition affects both filament feeding and drug release, shifting formulation optimization from a single mechanical objective to a multi-objective equilibrium. [R15]"
+          },
+          {
+            "type": "p",
+            "text": "Using polymer blends for printability exposes a tension between pharmaceutical materials and mechanical feeding: filaments must resist feeding pressure yet disintegrate after fabrication according to product targets. Comparing whole-matrix disintegration with strip peeling brings interlayer fusion into explanations of release. Printability is therefore a relationship among material, equipment and final performance, rather than a single intrinsic material label. [R15]"
+          },
+          {
+            "type": "p",
+            "text": "Subsequent measurements should cover solid feed, melt flow, and post-cooling interlayer bonding. Optimizing only one stage may transfer defects to another stage; for example, easy-to-feed material may fail to maintain its shape after ejection."
+          },
+          {
+            "type": "p",
+            "text": "The study, published online in 2023, prepared twenty-three types of filaments and used mechanical and rheological parameters to predict processability and tablet property consistency. Its contribution was transforming the empirical judgment of \"too brittle or too soft\" into a measurable variable, helping to narrow down the experimental scope. [R16]"
+          },
+          {
+            "type": "p",
+            "text": "Feeding is a solid-state stress problem, while ejection and deposition are melt flow problems; therefore, multiple measurements are closer to the manufacturing process than a single hardness measurement. The study uses multivariate regression to connect material properties and output, and points out that the feeding model is equipment-dependent. This result gives a concrete boundary to the \"portable model.\" With the same material parameters but different equipment forces, the failure threshold may change. [R16]"
+          },
+          {
+            "type": "p",
+            "text": "Subsequent validation should hold out data by equipment and material type to determine where model transfer fails. Feeding failures suggest a mechanical-interface problem; changes in tablet width or release consistency require tracking deposition and cooling."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Geometry and evolving wetting"
+          },
+          {
+            "type": "p",
+            "text": "An in vitro diclofenac study compared cylinders and tubes. Tubes were intended to increase exposure but released more slowly than cylinders. Excipient combinations also changed dissolution, so shape rankings apply within a specified formulation and test. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Distinguish CAD channels, liquid ingress, swelling and erosion."
+          },
+          {
+            "type": "p",
+            "text": "A 2015 study of drug-containing tablets of different shapes showed that the surface area to volume ratio could explain the release differences in the studied systems. Geometry therefore became a design variable beyond formulation. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "This method holds material composition constant while changing shape, allowing the independent explanatory value of geometry to be tested. Surface area represents the liquid-contact interface and volume the total quantity to be released, so their ratio provides an initial scale measure. Boundaries move during release, however, and initial geometry cannot replace observations of water uptake and erosion. The node establishes a testable structural hypothesis whose material-specific validity must then be examined."
+          },
+          {
+            "type": "p",
+            "text": "The two branches respectively add mechanism explanation and design applications. More informative comparisons should include samples with the same surface area to volume ratio but different shapes: if the release still differs, curvature, path connectivity, and local mass transfer need to be incorporated into the model."
+          },
+          {
+            "type": "p",
+            "text": "A 2021 study used swellable, erodible polymers to fabricate different porous structures by hot-melt droplet deposition. Porosity was examined in a dynamic material environment: the initially printed structure absorbed water and changed during drug release. [R17]"
+          },
+          {
+            "type": "p",
+            "text": "Printed pores are not static liquid channels. Water absorption can expand the polymer volume and compress the pores, while erosion can open new interfaces; therefore, there is no universal one-to-one correspondence between initial porosity and effective mass transfer area. Choosing swellable and erosive materials allows for proactive testing of the coupling between structure and material response, rather than simply comparing the appearance of dry tablets."
+          },
+          {
+            "type": "p",
+            "text": "Subsequently, mass loss, dimensional changes, and release can be recorded simultaneously to determine when diffusion or erosion is dominant."
+          },
+          {
+            "type": "p",
+            "text": "The release prediction study of the same year used surface area to volume ratio to organize experimental data and establish a design-release correlation for specified drugs and formulations. The purpose of the prediction is to screen structures that may meet the target, which are then confirmed experimentally. [R18]"
+          },
+          {
+            "type": "p",
+            "text": "The study used previously unprinted geometry for validation, separating the fitting from the prediction. The average dissolution time compresses the curve information, while the complete curve equation preserves the differences between early and late stages; both scales jointly examine whether the geometric features support the design. The juxtaposition of soluble and inert matrices allows for comparison of the applicability of geometric relationships based on the release mechanism. [R18]"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Gastric behaviour and release"
+          },
+          {
+            "type": "p",
+            "text": "A pregabalin study used a printed buoyant structure. A separate study used a mucoadhesive hydrophilic matrix. Measure flotation, adhesion and release independently, matching structural persistence to the target gastric duration. [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Match the experimental model to the intended environment."
+          },
+          {
+            "type": "p",
+            "text": "The 2023 dual-nozzle study evaluated the feasibility of colon-oriented delivery using a combination of an HPMCAS outer layer and a PVA internal structure containing 5-aminosalicylic acid. The acid-base responsive layer and drug-containing zone, through printing, reduced the limitations of relying solely on homogeneous formulation designs. [R19]"
+          },
+          {
+            "type": "p",
+            "text": "The dual-nozzle selection allows the barrier and drug delivery zones to use polymers suitable for their respective tasks. External environmental responses alter the degree of pathway opening, while internal structure determines dissolution area and drug diffusion; openings allow for release even in the early stages. Therefore, \"colon localization\" should be broken down into two aspects: pre-leakage and post-acceleration, rather than a simple binary label."
+          },
+          {
+            "type": "p",
+            "text": "Microscopic and tomographic imaging were used to confirm the actual structure before interpreting release differences. The next step in the research should be to incorporate manufacturing deviations into the release model to determine which dimensional errors truly alter the target curve."
+          },
+          {
+            "type": "p",
+            "text": "2024 bilayer tablet research combines droplet deposition and injection molding to address the rheological and structural requirements of different formulations. The printed portion allows for adjustable porosity, while the overmolded portion forms a denser structure. The combination of these two methods broadens the range of manufacturable formulations and release combinations. [R20]"
+          },
+          {
+            "type": "p",
+            "text": "Combining two forming methods means materials need not suit every manufacturing process. A high-viscosity formulation may be unsuitable for one deposition method yet work in overmolding. Process selection can therefore follow product function rather than allowing one machine to constrain the entire design. Comparing release from porous and dense structures connects manufacturability with performance targets."
+          },
+          {
+            "type": "p",
+            "text": "A new challenge in hybrid manufacturing of lies at the interface: the two layers have different thermal histories, shrinkage, and wetting behaviors, potentially leading to separation during storage or release. Future research should examine the interface strength in conjunction with single-component release, and use cross-sectional structure analysis to determine whether curve changes originate from delamination or alterations in the diffusion barrier."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Whole curve and batch consistency"
+          },
+          {
+            "type": "p",
+            "text": "Geometry can change the slope at different times, so a single measurement can conceal early or late shifts. Compare complete curves, unit content and start-up variation when validating multiple strengths. [R01] [R02] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Pair quality controls with release function."
+          },
+          {
+            "type": "p",
+            "text": "In 2024, the cabozantinib study combined water-soluble polymers, excipients, and geometric design to investigate rheology and establish a calculation method for the required dimensions at different dosages. It advances the problem from the rapid release of a single sample to whether a single formulation can cover multiple strengths. [R21]"
+          },
+          {
+            "type": "p",
+            "text": "This study transforms immediate release from a single-sample attribute to a requirement met by multiple specifications. Dimensional calculations address the geometry corresponding to the target drug dosage, rheological and excipient studies determine whether a stable structure can be formed, and dissolution tests whether the target is retained after dimensional changes. These three factors are interdependent; dose linearity cannot replace release consistency."
+          },
+          {
+            "type": "p",
+            "text": "Subsequent validation of the minimum, maximum, and intermediate specifications is recommended to identify which variable dominates with dimensional variations, and the saved performance should be incorporated into the same judgment."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Feed development back into release testing"
+          },
+          {
+            "type": "p",
+            "text": "Process changes entering development or cGMP manufacture require comparison of quality, solid state and dissolution. If a strength change alters fractional release, revisit extrusion, unit geometry and drug distribution. [R11] [R12] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Use pre- and post-change quality records as feedback."
+          },
+          {
+            "type": "p",
+            "text": "The 2024 study integrated an analytical balance into a printer to automatically record the tablet-by-tablet mass of hydrocortisone formulations and compare it with an external balance. The system identified manufacturing deviations in the first tablet, demonstrating that online weighing can capture unit problems that are easily masked by average batch results. [R22]"
+          },
+          {
+            "type": "p",
+            "text": "The tablet-by-tablet record preserves the production sequence, allowing observation of differences during start-up, continuous operation, and termination phases. The output of semi-solid materials can be affected by loading conditions and flow recovery; an abnormal unit may have a small impact on the batch average but a direct significance for the unit's dosage. This explains why quality data must be at the unit level, and not just total yield and average tablet weight."
+          },
+          {
+            "type": "p",
+            "text": "Only by combining these two methods on the same unit can output quantity deviations be separated from mixing or composition deviations."
+          },
+          {
+            "type": "p",
+            "text": "A 2025 study applied miniature near-infrared and Raman spectroscopy to tamoxifen formulations produced at Gustave Roussy Hospital. Calibration samples were prepared at the research center, while the hospital collected spectra and validated local products. Material sources were kept consistent, and both open-capsule measurements and measurements through closed shells were examined. [R23]"
+          },
+          {
+            "type": "p",
+            "text": "This design directly addresses the most challenging aspect of knowledge transfer in decentralized manufacturing: the center possesses analytical and development capabilities, while the hospital controls the actual production environment. The outer shell alters the optical path and background, thus closed-shell prediction requires verification that the sampling information represents the internal drug. The complementarity of the two spectra stems from their different physical responses; the choice should not solely rely on goodness of fit but also depend on detection time, packaging interference, maintenance, and the connection to production records."
+          }
+        ]
+      },
+      {
+        "title": "Comparing the evidence",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Hold formulation constant to compare geometries and match geometry when changing excipients. Separate in vitro target curves from human outcomes and flotation from actual gastric retention. [R01] [R03] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Industry approaches and documented products",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Laxxon Medical and Adare announced screen-printing collaboration for cGMP manufacturing. Triastek announced FDA IND clearance for T25 and T26 as development milestones. Compare industrial routes by manufacturability, changeover and batch release. [R11] [R12] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "The FABRX platform offers weighing, near-infrared, and pressure accessories, combined with software for batch recording; online balances and hospital spectroscopy studies are directly linked to its related technologies. [R24][R22]"
+          },
+          {
+            "type": "p",
+            "text": "In January 2026, CurifyLabs released the PharmaPrinter Aurum, focusing on built-in weighing, cleaning and calibration, ease of loading, and software traceability as key product updates. Its connection to the furosemide study in 2025 and the metoprolol study in 2026 lies in the device's entry into specific formulation validation and multi-site quality comparisons; these studies and product announcements provide quality evidence and product functionality information, respectively. [R25][R26][R27]"
+          },
+          {
+            "type": "p",
+            "text": "The FABRX product configuration aligns with the 2024 balance integration study and the 2025 hospital spectroscopy study, forming a roadmap from deposition to unit-by-unit detection. Enterprise involvement facilitates easier integration of detection and equipment control, while academic evaluation requires continued quantification of detection errors, true anomaly detection, and cross-site migration. The product configuration can support the detection methods, and validated formulations and models determine which products the methods are effective in. [R22][R23][R24]"
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and translational testing",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Publications on dispersible, gastrointestinal sustained-release and divisible tablets describe distinct functions. Tests should assess disintegration, interval release, and mass or content uniformity of the divided units, respectively. [R07] [R08] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "Research and adoption outlook",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Prioritize a quality window maintained across strengths and tests reproducible across sites. Process validation should track strength comparability, changeover, content, dissolution and storage under the same formulation route. [R01] [R06] [R11]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Development of Diclofenac Sodium 3D Printed Cylindrical and Tubular-Shaped Tablets through Hot Melt Extrusion and Fused Deposition Modelling Techniques.",
+        "url": "https://doi.org/10.3390/ph16081062",
+        "year": "2023",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R01"
+      },
+      {
+        "title": "3D Printing of Tunable Zero-Order Release Printlets.",
+        "url": "https://doi.org/10.3390/polym12081769",
+        "year": "2020",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R02"
+      },
+      {
+        "title": "Customized Novel Design of 3D Printed Pregabalin Tablets for Intra-Gastric Floating and Controlled Release Using Fused Deposition Modeling.",
+        "url": "https://doi.org/10.3390/pharmaceutics11110564",
+        "year": "2019",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R03"
+      },
+      {
+        "title": "Personalised 3D-Printed Mucoadhesive Gastroretentive Hydrophilic Matrices for Managing Overactive Bladder (OAB).",
+        "url": "https://doi.org/10.3390/ph16030372",
+        "year": "2023",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R04"
+      },
+      {
+        "title": "Beyond Immediate Release: FDM-Printed Pediatric 6-Mercaptopurine Chewable Tablets with Spontaneous In Situ Nanostructure Formation",
+        "url": "https://doi.org/10.1208/s12249-026-03556-7",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R05"
+      },
+      {
+        "title": "Adaptation of pharmaceutical excipients to FDM 3D printing for the fabrication of patient-tailored immediate release tablets.",
+        "url": "https://doi.org/10.1016/j.ijpharm.2016.09.050",
+        "year": "2016",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R06"
+      },
+      {
+        "title": "3DP (three-dimensional printed) hawthorn leaf flavonoid dispersible tablets and preparation method for same",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN106074412A",
+        "year": "2016",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R07"
+      },
+      {
+        "title": "3D printing gastrointestinal slow-release medicinal tablet",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN108295037A",
+        "year": "2018",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R08"
+      },
+      {
+        "title": "3D (Three dimensional) printed hydrochlorothiazide tablets and preparation method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN107412177A",
+        "year": "2017",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R09"
+      },
+      {
+        "title": "Ketotifen fumarate divided dose tablet based on 3D printing technology and preparation method",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119235803A",
+        "year": "2025",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R10"
+      },
+      {
+        "title": "Laxxon Medical and Adare Pharma Solutions Announce Joint Cooperation for Production of cGMP 3D Printed Oral Dosage Forms",
+        "url": "https://www.laxxonmedical.com/post/laxxon-medical-and-adare-pharma-solutions-announce-joint-cooperation-for-production-of-cgmp-3d-print",
+        "year": "",
+        "kind": "Company announcement",
+        "source": "Company announcement",
+        "id": "R11"
+      },
+      {
+        "title": "Triastek · T25 FDA IND",
+        "url": "https://www.triastek.com/detail/43.html",
+        "year": "",
+        "kind": "Company announcement",
+        "source": "Company announcement",
+        "id": "R12"
+      },
+      {
+        "title": "Triastek · T26 FDA IND",
+        "url": "https://www.triastek.com/detail/42.html",
+        "year": "",
+        "kind": "Company announcement",
+        "source": "Company announcement",
+        "id": "R13"
+      },
+      {
+        "id": "R14",
+        "title": "Effect of geometry on drug release from 3D printed tablets",
+        "year": "2015",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25934428/"
+      },
+      {
+        "id": "R15",
+        "title": "An investigation into the use of polymer blends to improve the printability of and regulate drug release from pharmaceutical solid dispersions prepared via fused deposition modeling (FDM) 3D printing",
+        "year": "2016",
+        "source": "European Journal of Pharmaceutics and Biopharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27594210/"
+      },
+      {
+        "id": "R16",
+        "title": "Correlating mechanical and rheological filament properties to processability and quality of 3D printed tablets using multiple linear regression",
+        "year": "2023（在线）/2024",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38110015/"
+      },
+      {
+        "id": "R17",
+        "title": "Effects of porosity on drug release kinetics of swellable and erodible porous pharmaceutical solid dosage forms fabricated by hot melt droplet deposition 3D printing",
+        "year": "2021",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33957266/"
+      },
+      {
+        "id": "R18",
+        "title": "Predicting Drug Release from 3D Printed Oral Medicines Based on the Surface Area to Volume Ratio of Tablet Geometry",
+        "year": "2021",
+        "source": "Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://www.mdpi.com/1999-4923/13/9/1453"
+      },
+      {
+        "id": "R19",
+        "title": "Development of 3D-Printed Bicompartmental Devices by Dual-Nozzle Fused Deposition Modeling (FDM) for Colon-Specific Drug Delivery",
+        "year": "2023",
+        "source": "Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10535423/"
+      },
+      {
+        "id": "R20",
+        "title": "Tailoring drug release in bilayer tablets through droplet deposition modeling and injection molding",
+        "year": "2024",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38307401/"
+      },
+      {
+        "id": "R21",
+        "title": "Dosage by design – 3D printing individualized cabozantinib tablets with immediate release",
+        "year": "2024",
+        "source": "European Journal of Pharmaceutics and Biopharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39278333/"
+      },
+      {
+        "id": "R22",
+        "title": "Ensuring the quality of 3D printed medicines: Integrating a balance into a pharmaceutical printer for in-line uniformity of mass testing",
+        "year": "2024",
+        "source": "Journal of Drug Delivery Science and Technology",
+        "kind": "原始研究",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1773224724000054"
+      },
+      {
+        "id": "R23",
+        "title": "3D printing personalized medications in a hospital: Rapid and non-destructive dose verification of printed medicines enabled by miniaturised spectroscopy",
+        "year": "2025",
+        "source": "Journal of Pharmaceutical Sciences",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40609639/"
+      },
+      {
+        "id": "R24",
+        "title": "Pharmaceutical printers for personalized medicine",
+        "year": "2026（访问）",
+        "source": "FABRX",
+        "kind": "企业产品资料",
+        "url": "https://www.fabrx.co.uk/products"
+      },
+      {
+        "id": "R25",
+        "title": "Automated 3D printing of pediatric furosemide tablets: A personalized medicine approach using semi-solid extrusion and NIR monitoring",
+        "year": "2025",
+        "source": "European Journal of Pharmaceutical Sciences",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40939844/"
+      },
+      {
+        "id": "R26",
+        "title": "Dose Accuracy and Content Uniformity of Low-Dose Metoprolol Tablets: 3D Printing Compared with Tablet Splitting in Hospital Pharmacy Setting",
+        "year": "2026",
+        "source": "Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13209887/"
+      },
+      {
+        "id": "R27",
+        "title": "CurifyLabs Unveils Next Gen 3D Printer for Scalable Plug-and-Play Pharmaceutical Compounding",
+        "year": "2026",
+        "source": "CurifyLabs",
+        "kind": "企业公告",
+        "url": "https://news.curifylabs.com/curifylabs-unveils-next-gen-3d-printer-for-scalable-plug-and-play-pharmaceutical-compounding"
+      }
+    ]
+  },
+  "de": {
+    "id": "H21",
+    "p": "P3",
+    "title": "Herstellung und Freisetzungssteuerung gedruckter oraler Arzneiformen",
+    "subtitle": "Dosis, Geometrie und Freisetzung gemeinsam entwickeln",
+    "thesis": "Struktur, Feststoffzustand und Hilfsstoffe bestimmen die Freisetzung gemeinsam. Eine röhrenförmige Diclofenac-Arzneiform setzte unerwartet langsamer frei. Eine größere geometrische Oberfläche verlangt daher eine erneute Prüfung des Mechanismus. [R01] [R02]",
+    "questions": [],
+    "graph": {
+      "title": "Forschungsverlauf · Herstellung und Freisetzungssteuerung gedruckter oraler Arzneiformen",
+      "summary": "Das Therapieziel führt zu Rezeptur und Geometrie. Beide Pfade laufen in der Dosiseinheit zusammen. Freisetzungs- und Qualitätsdaten fließen in beide Entscheidungen zurück.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2016–2020",
+          "question": "Wirkstärke und zeitabhängige Ziele getrennt festlegen.",
+          "title": "Wirkstärke und Zielprofil definieren",
+          "evidence": "Nullter-Ordnung-Freisetzung und individualisierte Sofortfreisetzung verfolgen unterschiedliche Ziele. Ein Ansatz prüft die Dauer annähernd konstanter Freisetzung, der andere raschen Zerfall und Vergleichbarkeit der Wirkstärken.",
+          "refs": [
+            "R02",
+            "R06"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2016–2023",
+          "question": "Wirkstoffstabilität in das Prozessfenster einbeziehen.",
+          "title": "Rezeptur und Herstellung",
+          "evidence": "Hilfsstoffe beeinflussen Zuführung, Ablage und Flüssigkeitseintritt. Heißschmelzextrusion und Schmelzschichtung erzeugen aufeinanderfolgende Wärmebelastungen. Kontinuierliche Formgebung, Masse, Feststoffzustand und Gehalt sind gemeinsam zu erfassen.",
+          "refs": [
+            "R01",
+            "R06"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2023",
+          "question": "Konstruktive Kanäle, Flüssigkeitseintritt, Quellung und Erosion trennen.",
+          "title": "Geometrie und Benetzung",
+          "evidence": "Eine In-vitro-Studie zu Diclofenac verglich Zylinder und Röhren. Röhren sollten die Exposition vergrößern, setzten aber langsamer frei. Hilfsstoffkombinationen veränderten ebenfalls die Freisetzung, weshalb die Rangfolge von Geometrien an Rezeptur und Versuch gebunden ist.",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2019–2023",
+          "question": "Versuchsmodell an die Zielumgebung anpassen.",
+          "title": "Verhalten im Magen und Freisetzung",
+          "evidence": "Eine Pregabalin-Studie verwendete eine gedruckte schwimmfähige Struktur. Eine weitere Studie nutzte eine mucoadhäsive hydrophile Matrix. Auftrieb, Haftung und Freisetzung sind getrennt zu prüfen, mit zur Zielliegedauer passender Strukturstabilität.",
+          "refs": [
+            "R03",
+            "R04"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2016–2020",
+          "question": "Qualitätskontrolle mit Freisetzungsfunktion verbinden.",
+          "title": "Gesamtkurve und Chargenkonstanz",
+          "evidence": "Geometrie kann die Steigung zu verschiedenen Zeiten verändern. Einzelmessungen können frühe oder späte Abweichungen verdecken. Für mehrere Wirkstärken sind volle Kurven, Wirkstoffgehalt pro Einheit und Anlaufstreuung zu vergleichen.",
+          "refs": [
+            "R01",
+            "R02",
+            "R06"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "",
+          "question": "Qualitäts- und Freisetzungsdaten vor und nach der Änderung als Rückmeldung nutzen.",
+          "title": "Rückmeldung für Entwicklung und Freigabe",
+          "evidence": "Prozessänderungen in Entwicklung oder cGMP-Fertigung erfordern Vergleiche von Qualität, Feststoffzustand und Freisetzung. Ändert eine Wirkstärke den freigesetzten Anteil, sind Extrusion, Einheitsgeometrie und Wirkstoffverteilung erneut zu prüfen.",
+          "refs": [
+            "R11",
+            "R12",
+            "R13"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Rezeptur und Herstellung",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Geometrie und Benetzung",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Verhalten im Magen und Freisetzung",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Verhalten im Magen und Freisetzung",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Gesamtkurve und Chargenkonstanz",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Rückmeldung für Entwicklung und Freigabe",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Gehalts- und Freisetzungsabweichungen zur Fertigung zurückverfolgen",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Untersuchungsrahmen und Ziele",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Die Geometrie verbindet patientenspezifische Wirkstärken, reproduzierbare Herstellung und Freisetzung. Sofortige, verzögerte, gastroretentive und gestufte Freisetzung haben unterschiedliche Prüfbedingungen."
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Einordnung der Einzelschritte",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Wirkstärke und Zielprofil definieren"
+          },
+          {
+            "type": "p",
+            "text": "Nullter-Ordnung-Freisetzung und individualisierte Sofortfreisetzung verfolgen unterschiedliche Ziele. Ein Ansatz prüft die Dauer annähernd konstanter Freisetzung, der andere raschen Zerfall und Vergleichbarkeit der Wirkstärken. [R02] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Wirkstärke und zeitabhängige Ziele getrennt festlegen."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie aus dem Jahr 2015 druckte Polyvinylalkohol-Filamente mit Paracetamol in fünf verschiedenen Geometrien und fand heraus, dass die Freisetzung vom Verhältnis von Oberfläche zu Volumen abhängt. Dies deutet darauf hin, dass Dimensionsänderungen nicht nur die Dosierung, sondern auch die Freisetzung beeinflussen können und dass personalisierte Designs die gleichzeitige Kontrolle beider Parameter erfordern. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "Der Vergleich der Geometrie innerhalb desselben Materialsystems ermöglicht eine bessere Trennung von Zusammensetzungs- und Formänderungen. Die Oberfläche bestimmt die anfängliche Grenzfläche zur Flüssigkeit, während das Volumen die freizusetzende Gesamtmenge bestimmt. Daher ist das Verhältnis beider Größen aussagekräftiger für den Stofftransport als die alleinige Betrachtung der Oberfläche. Diese Erkenntnis schränkt die individuelle Dosierung ein: Eine Erhöhung des Volumens führt in der Regel nicht zu einer proportionalen Vergrößerung der Grenzfläche, und eine Änderung der Dosierung kann gleichzeitig die Freisetzungsrate beeinflussen."
+          },
+          {
+            "type": "p",
+            "text": "Der nächste Forschungsschritt erfordert die Unterscheidung zwischen äußerer Form, innerer Struktur und Materialverhalten. Soll eine vergleichbare Freisetzung bei unterschiedlichen Dosen erreicht werden, empfiehlt es sich, die kritische Stofftransportlänge beizubehalten oder mehrere kleine Einheiten zu kombinieren und anhand gemessener Kurven zu überprüfen, ob dies gelingt."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Rezeptur und Herstellung"
+          },
+          {
+            "type": "p",
+            "text": "Hilfsstoffe beeinflussen Zuführung, Ablage und Flüssigkeitseintritt. Heißschmelzextrusion und Schmelzschichtung erzeugen aufeinanderfolgende Wärmebelastungen. Kontinuierliche Formgebung, Masse, Feststoffzustand und Gehalt sind gemeinsam zu erfassen. [R01] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Wirkstoffstabilität in das Prozessfenster einbeziehen."
+          },
+          {
+            "type": "p",
+            "text": "2016 untersuchte die Polymermischung und versuchte, die Verarbeitbarkeit von FDM-Feststoffdispersionen bei gleichzeitiger Regulierung der Wirkstofffreisetzung zu verbessern. Die Materialzusammensetzung beeinflusst sowohl die Filamentzufuhr als auch die Wirkstofffreisetzung, wodurch sich die Formulierungsoptimierung von einem einzelnen mechanischen Ziel zu einem Gleichgewicht mehrerer Ziele verschiebt. [R15]"
+          },
+          {
+            "type": "p",
+            "text": "nutzt Polymermischungen für die Druckbarkeit und verdeutlicht den inhärenten Widerspruch zwischen pharmazeutischen Materialien und mechanischer Applikation: Das Filament muss dem Zuführdruck standhalten und sich gleichzeitig nach der Formgebung gemäß den Produktvorgaben auflösen. Die Studie vergleicht die Gesamtauflösung mit dem Ablösen von Streifen in verschiedenen Matrices und ermöglicht so die Aufklärung von Zwischenschichtfusionen. Daher ist Druckbarkeit keine einzelne, inhärente Eigenschaft eines Materials, sondern vielmehr eine Beziehung zwischen Materialien, Geräten und deren Endleistung. [R15]"
+          },
+          {
+            "type": "p",
+            "text": "Die nachfolgenden Messungen sollten die Feststoffzufuhr, den Schmelzfluss und die Zwischenschichthaftung nach dem Abkühlen umfassen. Die Optimierung nur einer Stufe kann Defekte auf eine andere Stufe übertragen; beispielsweise kann leicht zuzuführendes Material nach dem Auswerfen seine Form verlieren."
+          },
+          {
+            "type": "p",
+            "text": "Die 2023 online veröffentlichte Studie untersuchte 23 verschiedene Filamenttypen und nutzte mechanische und rheologische Parameter zur Vorhersage der Verarbeitbarkeit und der Konsistenz der Tabletteneigenschaften. Ihr Beitrag bestand darin, die empirische Beurteilung „zu spröde oder zu weich“ in eine messbare Variable umzuwandeln und so den experimentellen Umfang einzugrenzen. [R16]"
+          },
+          {
+            "type": "p",
+            "text": "Die Materialzufuhr ist ein Problem der Festkörperspannung, während Auswurf und Ablagerung Schmelzflussprobleme darstellen. Daher bilden mehrere Messungen den Fertigungsprozess besser ab als eine einzelne Härtemessung. Die Studie verwendet multivariate Regression, um Materialeigenschaften und Ergebnisse zu verknüpfen, und zeigt auf, dass das Zufuhrmodell anlagenabhängig ist. Dieses Ergebnis definiert eine konkrete Grenze für das „portable Modell“. Bei gleichen Materialparametern, aber unterschiedlichen Anlagenkräften, kann sich die Versagensschwelle ändern. [R16]"
+          },
+          {
+            "type": "p",
+            "text": "Die anschließende Validierung erfordert die Zuordnung von Daten nach Anlagen- und Materialtyp, um festzustellen, in welcher Schicht die Modellmigration fehlschlägt. Wird lediglich ein Zuführungsfehler festgestellt, kann die mechanische Schnittstelle optimiert werden; bei Änderungen der Waferbreite oder der Ablösekonsistenz müssen Abscheidung und Kühlung überwacht werden."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Geometrie und Benetzung"
+          },
+          {
+            "type": "p",
+            "text": "Eine In-vitro-Studie zu Diclofenac verglich Zylinder und Röhren. Röhren sollten die Exposition vergrößern, setzten aber langsamer frei. Hilfsstoffkombinationen veränderten ebenfalls die Freisetzung, weshalb die Rangfolge von Geometrien an Rezeptur und Versuch gebunden ist. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Konstruktive Kanäle, Flüssigkeitseintritt, Quellung und Erosion trennen."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie aus dem Jahr 2015 mit arzneimittelhaltigen Tabletten unterschiedlicher Form zeigte, dass das Verhältnis von Oberfläche zu Volumen die Freisetzungsunterschiede in den untersuchten Systemen erklären kann. Die Geometrie wurde somit zu einer Designvariablen, die über die Formulierung hinausgeht. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "Diese Methode steuert die Materialzusammensetzung, um die Form zu verändern und eignet sich, um festzustellen, ob die Geometrie unabhängig interpretierbar ist. Die Oberfläche entspricht der in die Grenzfläche eintretenden Flüssigkeit, das Volumen der insgesamt freizusetzenden Menge; daher liefert das Verhältnis beider Größen eine erste Skalenbeschreibung. Die Grenzfläche verschiebt sich jedoch während der Freisetzung, und die anfängliche Geometrie kann Beobachtungen der Wasseraufnahme und -erosion nicht ersetzen. Dieser Knotenpunkt etabliert eine überprüfbare Strukturhypothese; in den folgenden Schritten muss ermittelt werden, für welche Materialien diese Hypothese zutrifft."
+          },
+          {
+            "type": "p",
+            "text": "Die beiden Zweige tragen jeweils zur Erklärung des Mechanismus und zu Designanwendungen bei. Aussagekräftigere Vergleiche sollten Proben mit gleichem Oberflächen-Volumen-Verhältnis, aber unterschiedlicher Form umfassen: Falls die Freisetzung weiterhin unterschiedlich ist, müssen Krümmung, Pfadkonnektivität und lokaler Stofftransport in das Modell einbezogen werden."
+          },
+          {
+            "type": "p",
+            "text": "In der Studie aus dem Jahr 2021 wurde ein expandierbares, erosives Polymersystem verwendet, um mittels Heißschmelz-Tropfendeposition verschiedene poröse Strukturen herzustellen. Die Studie untersuchte die Poren in einer dynamischen Materialumgebung: Während der Wirkstofffreisetzung absorbierten die anfänglich gedruckten Strukturen auch Wasser und veränderten sich. [R17]"
+          },
+          {
+            "type": "p",
+            "text": "Die mit erzeugten Poren sind keine statischen Flüssigkeitskanäle. Wasseraufnahme kann das Polymervolumen vergrößern und die Poren verkleinern, während Erosion neue Grenzflächen öffnen kann. Daher besteht keine universelle Eins-zu-eins-Korrelation zwischen anfänglicher Porosität und effektiver Stoffaustauschfläche. Die Wahl quellfähiger und erosiver Materialien ermöglicht die proaktive Untersuchung der Wechselwirkung zwischen Struktur und Materialverhalten, anstatt lediglich das Aussehen trockener Tabletten zu vergleichen."
+          },
+          {
+            "type": "p",
+            "text": "Anschließend können Massenverlust, Dimensionsänderungen und Freisetzung simultan erfasst werden, um festzustellen, wann Diffusion oder Erosion dominiert."
+          },
+          {
+            "type": "p",
+            "text": "Die im selben Jahr durchgeführte Freisetzungsprognosestudie nutzte das Verhältnis von Oberfläche zu Volumen, um experimentelle Daten zu strukturieren und eine Design-Freisetzungs-Korrelation für bestimmte Wirkstoffe und Formulierungen zu erstellen. Ziel der Prognose ist es, Strukturen zu identifizieren, die die Zielvorgaben erfüllen könnten und anschließend experimentell bestätigt werden. [R18]"
+          },
+          {
+            "type": "p",
+            "text": "Die Studie nutzte zuvor nicht gedruckte Geometrien zur Validierung und trennte die Anpassung von der Vorhersage. Die mittlere Auflösungszeit komprimiert die Kurveninformation, während die vollständige Kurvengleichung die Unterschiede zwischen frühen und späten Phasen beibehält; beide Skalen untersuchen gemeinsam, ob die geometrischen Merkmale das Design unterstützen. Die Gegenüberstellung von löslichen und inerten Matrizen ermöglicht einen Vergleich der Anwendbarkeit geometrischer Beziehungen basierend auf dem Freisetzungsmechanismus. [R18]"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Verhalten im Magen und Freisetzung"
+          },
+          {
+            "type": "p",
+            "text": "Eine Pregabalin-Studie verwendete eine gedruckte schwimmfähige Struktur. Eine weitere Studie nutzte eine mucoadhäsive hydrophile Matrix. Auftrieb, Haftung und Freisetzung sind getrennt zu prüfen, mit zur Zielliegedauer passender Strukturstabilität. [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Versuchsmodell an die Zielumgebung anpassen."
+          },
+          {
+            "type": "p",
+            "text": "Die 2023 durchgeführte Studie mit zwei Düsen untersuchte die Machbarkeit einer gezielten Wirkstofffreisetzung im Dickdarm durch die Kombination einer äußeren HPMCAS-Schicht und einer inneren PVA-Struktur mit 5-Aminosalicylsäure. Die säure-base-responsive Schicht und die wirkstoffhaltige Zone reduzierten durch den Druckprozess die Einschränkungen, die sich aus der alleinigen Verwendung homogener Formulierungen ergeben. [R19]"
+          },
+          {
+            "type": "p",
+            "text": "Die Auswahl zweier Düsen beim ermöglicht die Verwendung von Polymeren, die für die jeweilige Aufgabe in der Barriere- und Wirkstofffreisetzungszone geeignet sind. Äußere Umwelteinflüsse verändern den Grad der Kanalöffnung, während die innere Struktur die Auflösungsfläche und die Wirkstoffdiffusion bestimmt; Öffnungen ermöglichen die Freisetzung bereits in frühen Stadien. Daher sollte die „Kolonlokalisierung“ in zwei Aspekte unterteilt werden: vor dem Austritt und nach der Beschleunigung, anstatt sie einfach binär zu kategorisieren."
+          },
+          {
+            "type": "p",
+            "text": "Mikroskopische und tomografische Aufnahmen dienten der Bestätigung der tatsächlichen Struktur vor der Interpretation der Ablöseunterschiede. Im nächsten Forschungsschritt sollten Fertigungsabweichungen in das Ablösemodell integriert werden, um zu ermitteln, welche Maßabweichungen die Zielkurve tatsächlich beeinflussen."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie zu Zweischichttabletten von 2024 verband Tropfenabscheidung und Spritzguss, um die rheologischen und strukturellen Anforderungen unterschiedlicher Formulierungen getrennt zu erfüllen. Der Druckteil erlaubte einstellbare Porosität, der umspritze Teil erzeugte eine dichtere Struktur. Die Kombination erweiterte die herstellbaren Formulierungs- und Freisetzungskombinationen.[R20]"
+          },
+          {
+            "type": "p",
+            "text": "stellt zwei Formgebungsverfahren nebeneinander vor, sodass die Materialien gleichzeitig für alle Fertigungsprozesse geeignet sind. Eine hochviskose Formulierung ist möglicherweise für ein bestimmtes Beschichtungsverfahren ungeeignet, kann aber zum Umspritzen verwendet werden. Die Prozessauswahl orientiert sich somit an der Produktfunktion und ist nicht durch ein einzelnes Gerät für das gesamte Design eingeschränkt. Die Untersuchung der Unterschiede bei der Freisetzung von Porosität und dichten Strukturen verknüpft Herstellbarkeit und Leistungsziele."
+          },
+          {
+            "type": "p",
+            "text": "Eine neue Herausforderung bei der Hybridfertigung liegt an der Grenzfläche: Die beiden Schichten weisen unterschiedliche thermische Vorgeschichten, Schrumpfungs- und Benetzungsverhalten auf, was potenziell zu einer Trennung während der Lagerung oder Entnahme führen kann. Zukünftige Forschung sollte die Grenzflächenfestigkeit in Verbindung mit der Entnahme der Einzelkomponenten untersuchen und mittels Querschnittsstrukturanalyse feststellen, ob Kurvenänderungen auf Delamination oder Veränderungen der Diffusionsbarriere zurückzuführen sind."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Gesamtkurve und Chargenkonstanz"
+          },
+          {
+            "type": "p",
+            "text": "Geometrie kann die Steigung zu verschiedenen Zeiten verändern. Einzelmessungen können frühe oder späte Abweichungen verdecken. Für mehrere Wirkstärken sind volle Kurven, Wirkstoffgehalt pro Einheit und Anlaufstreuung zu vergleichen. [R01] [R02] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Qualitätskontrolle mit Freisetzungsfunktion verbinden."
+          },
+          {
+            "type": "p",
+            "text": "Die Cabozantinib-Studie aus dem Jahr 2024 kombinierte wasserlösliche Polymere, Hilfsstoffe und geometrisches Design, um die Rheologie zu untersuchen und eine Berechnungsmethode für die erforderlichen Abmessungen bei verschiedenen Dosierungen zu entwickeln. Sie erweitert das Problem von der schnellen Freisetzung einer einzelnen Probe hin zu der Frage, ob eine einzige Formulierung mehrere Stärken abdecken kann. [R21]"
+          },
+          {
+            "type": "p",
+            "text": "Diese Studie transformiert die sofortige Wirkstofffreisetzung von einem Einzelprobenmerkmal zu einer Anforderung, die durch mehrere Spezifikationen erfüllt wird. Dimensionsberechnungen berücksichtigen die Geometrie entsprechend der Zielwirkstoffdosierung, rheologische und Hilfsstoffstudien ermitteln, ob sich eine stabile Struktur bilden kann, und Auflösungstests prüfen, ob der Zielwirkstoff nach Dimensionsänderungen erhalten bleibt. Diese drei Faktoren sind voneinander abhängig; Dosislinearität kann die Konsistenz der Freisetzung nicht ersetzen."
+          },
+          {
+            "type": "p",
+            "text": "Eine anschließende Validierung der minimalen, maximalen und mittleren Spezifikationen wird empfohlen, um die Variable zu identifizieren, die bei Dimensionsabweichungen den größten Einfluss hat. Die erzielten Leistungseinsparungen sollten in dieselbe Bewertung einfließen."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Rückmeldung für Entwicklung und Freigabe"
+          },
+          {
+            "type": "p",
+            "text": "Prozessänderungen in Entwicklung oder cGMP-Fertigung erfordern Vergleiche von Qualität, Feststoffzustand und Freisetzung. Ändert eine Wirkstärke den freigesetzten Anteil, sind Extrusion, Einheitsgeometrie und Wirkstoffverteilung erneut zu prüfen. [R11] [R12] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Qualitäts- und Freisetzungsdaten vor und nach der Änderung als Rückmeldung nutzen."
+          },
+          {
+            "type": "p",
+            "text": "Die Studie aus dem Jahr 2024 integrierte eine Analysenwaage in einen Drucker, um die Masse einzelner Hydrocortison-Tabletten automatisch zu erfassen und mit einer externen Waage zu vergleichen. Das System identifizierte Herstellungsabweichungen bereits bei der ersten Tablette und zeigte damit, dass die Online-Wägung Einzelmengenprobleme aufdecken kann, die durch durchschnittliche Chargenergebnisse leicht verschleiert werden. [R22]"
+          },
+          {
+            "type": "p",
+            "text": "Die Tabletten-für-Tabletten-Aufzeichnung dokumentiert die Produktionsreihenfolge und ermöglicht so die Beobachtung von Unterschieden während der Anlauf-, Produktions- und Abschaltphasen. Die Ausbeute halbfester Materialien kann durch Beladungsbedingungen und die Rückgewinnung des Materialflusses beeinflusst werden; eine fehlerhafte Einheit kann zwar einen geringen Einfluss auf den Chargenmittelwert haben, aber direkte Auswirkungen auf die Dosierung der Einheit. Dies erklärt, warum Qualitätsdaten auf Einheitenebene erfasst werden müssen und nicht nur die Gesamtausbeute und das durchschnittliche Tablettengewicht."
+          },
+          {
+            "type": "p",
+            "text": "Nur durch die Kombination dieser beiden Methoden auf demselben Gerät lassen sich Abweichungen der Ausgabemenge von Abweichungen aufgrund von Mischung oder Zusammensetzung trennen."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2025 setzte miniaturisierte Nahinfrarot- und Raman-Spektroskopie an Tamoxifenpräparaten des Gustave-Roussy-Krankenhauses ein. Kalibrierproben wurden im Forschungszentrum hergestellt, Spektren im Krankenhaus erfasst und lokale Produkte damit validiert. Die Materialbezugsquelle blieb gleich. Messungen an geöffneten Kapseln wurden mit Messungen durch geschlossene Hüllen verglichen.[R23]"
+          },
+          {
+            "type": "p",
+            "text": "Dieses Design adressiert direkt den größten Aspekt des Wissenstransfers in der dezentralen Fertigung: Das Zentrum verfügt über Analyse- und Entwicklungskapazitäten, während das Krankenhaus die eigentliche Produktionsumgebung steuert. Die äußere Hülle verändert den optischen Pfad und den Hintergrund, daher muss bei der Vorhersage für geschlossene Hüllen überprüft werden, ob die Probenahmeinformationen den internen Wirkstoff repräsentieren. Die Komplementarität der beiden Spektren beruht auf ihren unterschiedlichen physikalischen Reaktionen; die Wahl sollte nicht allein auf der Güte der Anpassung basieren, sondern auch von der Detektionszeit, Verpackungsinterferenzen, der Wartung und der Anbindung an Produktionsaufzeichnungen abhängen."
+          }
+        ]
+      },
+      {
+        "title": "Vergleich der Befunde",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Für Geometrievergleiche ist die Rezeptur konstant zu halten, bei Hilfsstoffvergleichen die Geometrie. In-vitro-Zielkurven und Humanendpunkte sowie Auftrieb und tatsächliche Magenverweildauer sind zu trennen. [R01] [R03] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Industrielle Ansätze und dokumentierte Produkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Laxxon Medical und Adare meldeten eine Siebdruckkooperation für cGMP-Fertigung. Triastek meldete FDA-IND-Freigaben für T25 und T26 als Entwicklungsschritte. Herstellbarkeit, Umstellung und Chargenfreigabe ermöglichen den Vergleich industrieller Ansätze. [R11] [R12] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Die FABRX-Plattform bietet Zubehör für Wäge-, Nahinfrarot- und Druckmessung sowie Software zur Chargenaufzeichnung; Online-Waagen und spektroskopische Untersuchungen im Krankenhaus sind direkt mit den zugehörigen Technologien verknüpft. [R24] [R22]"
+          },
+          {
+            "type": "p",
+            "text": "Im Januar 2026 brachte CurifyLabs den PharmaPrinter Aurum auf den Markt. Zu den wichtigsten Produktverbesserungen zählen die integrierte Wiegefunktion, die Reinigungskalibrierung, die einfache Beladung und die Software-Rückverfolgbarkeit. Der Bezug zur Furosemid-Studie (2025) und zur Metoprolol-Studie (2026) besteht in der Teilnahme des Geräts an spezifischen Formulierungsvalidierungen und multizentrischen Qualitätsvergleichen. Diese Studien und Produktankündigungen liefern Qualitätsnachweise bzw. Informationen zur Produktfunktionalität. [R25][R26][R27]"
+          },
+          {
+            "type": "p",
+            "text": "Die Produktkonfiguration FABRX ist auf die Integrationsstudie für Waagen (2024) und die Spektroskopiestudie für Krankenhäuser (2025) abgestimmt und bildet einen Fahrplan von der Deposition bis zur gerätespezifischen Detektion. Die Einbindung von Unternehmen erleichtert die Integration von Detektion und Gerätesteuerung, während die akademische Evaluierung die kontinuierliche Quantifizierung von Detektionsfehlern, die Erkennung echter Anomalien und die standortübergreifende Migration erfordert. Die Produktkonfiguration unterstützt die Detektionsmethoden, und validierte Formulierungen und Modelle bestimmen, für welche Produkte die Methoden effektiv sind. [R22][R23][R24]"
+          }
+        ]
+      },
+      {
+        "title": "Patentmechanismen und Prüfung für den Einsatz",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Veröffentlichungen zu dispergierbaren, gastrointestinal retardierten und teilbaren Tabletten beschreiben unterschiedliche Funktionen. Entsprechend sind Zerfall, zeitabschnittsbezogene Freisetzung und Masse- oder Gehaltsgleichförmigkeit der Teile zu prüfen. [R07] [R08] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick auf Forschung und Anwendung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Vorrang haben ein stabiler Qualitätsbereich über Wirkstärken und standortübergreifend reproduzierbare Prüfungen. Prozessvalidierung sollte Vergleichbarkeit der Wirkstärken, Umstellung, Gehalt, Freisetzung und Lagerung auf demselben Rezepturpfad erfassen. [R01] [R06] [R11]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Development of Diclofenac Sodium 3D Printed Cylindrical and Tubular-Shaped Tablets through Hot Melt Extrusion and Fused Deposition Modelling Techniques.",
+        "url": "https://doi.org/10.3390/ph16081062",
+        "year": "2023",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R01"
+      },
+      {
+        "title": "3D Printing of Tunable Zero-Order Release Printlets.",
+        "url": "https://doi.org/10.3390/polym12081769",
+        "year": "2020",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R02"
+      },
+      {
+        "title": "Customized Novel Design of 3D Printed Pregabalin Tablets for Intra-Gastric Floating and Controlled Release Using Fused Deposition Modeling.",
+        "url": "https://doi.org/10.3390/pharmaceutics11110564",
+        "year": "2019",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R03"
+      },
+      {
+        "title": "Personalised 3D-Printed Mucoadhesive Gastroretentive Hydrophilic Matrices for Managing Overactive Bladder (OAB).",
+        "url": "https://doi.org/10.3390/ph16030372",
+        "year": "2023",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R04"
+      },
+      {
+        "title": "Beyond Immediate Release: FDM-Printed Pediatric 6-Mercaptopurine Chewable Tablets with Spontaneous In Situ Nanostructure Formation",
+        "url": "https://doi.org/10.1208/s12249-026-03556-7",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R05"
+      },
+      {
+        "title": "Adaptation of pharmaceutical excipients to FDM 3D printing for the fabrication of patient-tailored immediate release tablets.",
+        "url": "https://doi.org/10.1016/j.ijpharm.2016.09.050",
+        "year": "2016",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R06"
+      },
+      {
+        "title": "3DP (three-dimensional printed) hawthorn leaf flavonoid dispersible tablets and preparation method for same",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN106074412A",
+        "year": "2016",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R07"
+      },
+      {
+        "title": "3D printing gastrointestinal slow-release medicinal tablet",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN108295037A",
+        "year": "2018",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R08"
+      },
+      {
+        "title": "3D (Three dimensional) printed hydrochlorothiazide tablets and preparation method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN107412177A",
+        "year": "2017",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R09"
+      },
+      {
+        "title": "Ketotifen fumarate divided dose tablet based on 3D printing technology and preparation method",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119235803A",
+        "year": "2025",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R10"
+      },
+      {
+        "title": "Laxxon Medical and Adare Pharma Solutions Announce Joint Cooperation for Production of cGMP 3D Printed Oral Dosage Forms",
+        "url": "https://www.laxxonmedical.com/post/laxxon-medical-and-adare-pharma-solutions-announce-joint-cooperation-for-production-of-cgmp-3d-print",
+        "year": "",
+        "kind": "Unternehmensmitteilung",
+        "source": "Unternehmensmitteilung",
+        "id": "R11"
+      },
+      {
+        "title": "Triastek · T25 FDA IND",
+        "url": "https://www.triastek.com/detail/43.html",
+        "year": "",
+        "kind": "Unternehmensmitteilung",
+        "source": "Unternehmensmitteilung",
+        "id": "R12"
+      },
+      {
+        "title": "Triastek · T26 FDA IND",
+        "url": "https://www.triastek.com/detail/42.html",
+        "year": "",
+        "kind": "Unternehmensmitteilung",
+        "source": "Unternehmensmitteilung",
+        "id": "R13"
+      },
+      {
+        "id": "R14",
+        "title": "Effect of geometry on drug release from 3D printed tablets",
+        "year": "2015",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25934428/"
+      },
+      {
+        "id": "R15",
+        "title": "An investigation into the use of polymer blends to improve the printability of and regulate drug release from pharmaceutical solid dispersions prepared via fused deposition modeling (FDM) 3D printing",
+        "year": "2016",
+        "source": "European Journal of Pharmaceutics and Biopharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27594210/"
+      },
+      {
+        "id": "R16",
+        "title": "Correlating mechanical and rheological filament properties to processability and quality of 3D printed tablets using multiple linear regression",
+        "year": "2023（在线）/2024",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38110015/"
+      },
+      {
+        "id": "R17",
+        "title": "Effects of porosity on drug release kinetics of swellable and erodible porous pharmaceutical solid dosage forms fabricated by hot melt droplet deposition 3D printing",
+        "year": "2021",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33957266/"
+      },
+      {
+        "id": "R18",
+        "title": "Predicting Drug Release from 3D Printed Oral Medicines Based on the Surface Area to Volume Ratio of Tablet Geometry",
+        "year": "2021",
+        "source": "Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://www.mdpi.com/1999-4923/13/9/1453"
+      },
+      {
+        "id": "R19",
+        "title": "Development of 3D-Printed Bicompartmental Devices by Dual-Nozzle Fused Deposition Modeling (FDM) for Colon-Specific Drug Delivery",
+        "year": "2023",
+        "source": "Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10535423/"
+      },
+      {
+        "id": "R20",
+        "title": "Tailoring drug release in bilayer tablets through droplet deposition modeling and injection molding",
+        "year": "2024",
+        "source": "International Journal of Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38307401/"
+      },
+      {
+        "id": "R21",
+        "title": "Dosage by design – 3D printing individualized cabozantinib tablets with immediate release",
+        "year": "2024",
+        "source": "European Journal of Pharmaceutics and Biopharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39278333/"
+      },
+      {
+        "id": "R22",
+        "title": "Ensuring the quality of 3D printed medicines: Integrating a balance into a pharmaceutical printer for in-line uniformity of mass testing",
+        "year": "2024",
+        "source": "Journal of Drug Delivery Science and Technology",
+        "kind": "原始研究",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1773224724000054"
+      },
+      {
+        "id": "R23",
+        "title": "3D printing personalized medications in a hospital: Rapid and non-destructive dose verification of printed medicines enabled by miniaturised spectroscopy",
+        "year": "2025",
+        "source": "Journal of Pharmaceutical Sciences",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40609639/"
+      },
+      {
+        "id": "R24",
+        "title": "Pharmaceutical printers for personalized medicine",
+        "year": "2026（访问）",
+        "source": "FABRX",
+        "kind": "企业产品资料",
+        "url": "https://www.fabrx.co.uk/products"
+      },
+      {
+        "id": "R25",
+        "title": "Automated 3D printing of pediatric furosemide tablets: A personalized medicine approach using semi-solid extrusion and NIR monitoring",
+        "year": "2025",
+        "source": "European Journal of Pharmaceutical Sciences",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40939844/"
+      },
+      {
+        "id": "R26",
+        "title": "Dose Accuracy and Content Uniformity of Low-Dose Metoprolol Tablets: 3D Printing Compared with Tablet Splitting in Hospital Pharmacy Setting",
+        "year": "2026",
+        "source": "Pharmaceutics",
+        "kind": "原始研究",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13209887/"
+      },
+      {
+        "id": "R27",
+        "title": "CurifyLabs Unveils Next Gen 3D Printer for Scalable Plug-and-Play Pharmaceutical Compounding",
+        "year": "2026",
+        "source": "CurifyLabs",
+        "kind": "企业公告",
+        "url": "https://news.curifylabs.com/curifylabs-unveils-next-gen-3d-printer-for-scalable-plug-and-play-pharmaceutical-compounding"
+      }
+    ]
+  }
+}

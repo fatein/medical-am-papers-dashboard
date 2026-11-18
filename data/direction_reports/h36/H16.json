@@ -1,0 +1,1526 @@
+{
+  "zh": {
+    "id": "H16",
+    "p": "P6",
+    "title": "医学教学与手术技能模拟训练模型",
+    "subtitle": "从空间理解到可测量操作",
+    "thesis": "教学模型的价值取决于任务设计。空间结构适合检验辨识与规划，受力、切割和穿刺则需要材料响应与评分证据。重复训练还依赖损耗管理与模型重置。 [R01] [R03] [R06]",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络 · 医学教学与手术技能模拟训练模型",
+      "summary": "任务定义分出空间认知与动作模拟两路，课程比较再将两路放回实际动作，重复训练记录反向修正结构和材料。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2026",
+          "question": "先指定学生要做出的观察与判断。",
+          "title": "设定教学目标",
+          "evidence": "骨折教学纵向研究把讲授、打印模型与组合教学作为比较条件。比较应区分学习者既有经验、即时理解、延迟记忆与在新病例中识别骨折类型。",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2024",
+          "question": "空间辨认与材料触感分别定标。",
+          "title": "空间关系与模态",
+          "evidence": "颅底训练研究将实体头模和虚拟现实引入培训。学员在空间关系与步骤理解两项评分中，均由3.40 ± 0.70升至4.50 ± 0.53。教师评价软组织真实性相对较低。",
+          "refs": [
+            "R05"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2026",
+          "question": "用任务中的动作标定触感。",
+          "title": "构建可操作组织",
+          "evidence": "内镜颅底与肿瘤整形乳房模型将实际路径和可操作区域写入模型。对切割评价，需要区分几何可达、变形反馈、操作力和器械通过空间。",
+          "refs": [
+            "R01",
+            "R04"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2026",
+          "question": "用盲评与重复动作测量进步。",
+          "title": "结构化技能训练",
+          "evidence": "下颌支矢状劈开截骨训练将截骨与劈开动作放入打印下颌模型。用切线位置、欠切、错误劈裂和动作顺序可区分不同失误机制。",
+          "refs": [
+            "R06"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2026",
+          "question": "按目标匹配实验对照。",
+          "title": "比较学习解释",
+          "evidence": "骨肿瘤教学和骨折教学可以用辨识准确性与保留率比较，而手术模拟需再记录路径偏差、切缘或成功完成。满意度可以帮助评价可用性。",
+          "refs": [
+            "R02",
+            "R03",
+            "R06"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2026",
+          "question": "重复使用数据反向决定更换设计。",
+          "title": "循环使用与维护",
+          "evidence": "训练寿命由最先失效的区域决定。重复拆装和更换后，应验证器械通行、形状和评分的可比性，并用质量控制记录区分训练进步和模型变化。",
+          "refs": [
+            "R01",
+            "R06"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "空间关系与模态",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "构建可操作组织",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "结构化技能训练",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "结构化技能训练",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "比较学习解释",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "循环使用与维护",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "复位与损耗信息反馈模型结构",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究范围与目标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "解剖教学、路径认识与手术技能模拟具有不同终点。模型开发应先指定学习者、目标动作与评分规则，再确定解剖范围、材料、可替换结构和模态组合。"
+          }
+        ]
+      },
+      {
+        "title": "学术研究脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 设定教学目标"
+          },
+          {
+            "type": "p",
+            "text": "骨折教学纵向研究把讲授、打印模型与组合教学作为比较条件。比较应区分学习者既有经验、即时理解、延迟记忆与在新病例中识别骨折类型。 [R03]"
+          },
+          {
+            "type": "p",
+            "text": "先指定学生要做出的观察与判断。"
+          },
+          {
+            "type": "p",
+            "text": "2017年PLOS ONE研究将影像转实体分为分割、网格修整和打印，并用肋骨、肝及肺实例展示可实现流程。其贡献是让个体解剖从影像中的隐含信息变成能够被指认和操作的对象。[R12]"
+          },
+          {
+            "type": "p",
+            "text": "教学与患者沟通对这一流程提出不同表达需求。学生需要辨认结构、建立位置关系并联系机制，患者需要理解与自己疾病和选择相关的部分。因而模型生成之后还要经历信息选择：保留哪些结构、如何开窗、是否使用颜色或可拆分部件。每一种选择都会改变注意分配，表达设计应围绕学习问题，而不是简单复制所有可见组织。"
+          },
+          {
+            "type": "p",
+            "text": "该节点的关键衔接是把制造流程接到理解过程。模型准确但重点不清，使用者仍可能只看到复杂形状；模型适当简化且关系清楚，则有机会降低空间转换负担。研究可以让使用者解释结构关系，而非只说模型是否好看，再将错误回答反馈到颜色、开窗和标签设计。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 空间关系与模态"
+          },
+          {
+            "type": "p",
+            "text": "颅底训练研究将实体头模和虚拟现实引入培训。学员在空间关系与步骤理解两项评分中，均由3.40 ± 0.70升至4.50 ± 0.53。教师评价软组织真实性相对较低。 [R05]"
+          },
+          {
+            "type": "p",
+            "text": "空间辨认与材料触感分别定标。"
+          },
+          {
+            "type": "p",
+            "text": "2018年椎管内麻醉模型研究邀请22名麻醉医师，21人完成与商业模型的对照。打印方案在阻力消失、穿刺及超声相关评价中较好，表面触诊较弱，显示逼真度需要按操作任务拆解。[R13]"
+          },
+          {
+            "type": "p",
+            "text": "这一方法把模型评价从整体印象带到具体感觉线索。操作者触诊的是表面与深层骨关系，进针感知的是材料阻力变化，超声观察的是声学界面；三者需要的物理性质并不相同。选择商业模型作对照，有助于识别新方案的相对优势，也让材料较软或易损造成的任务缺陷显现。设计优化应先决定最重要的教学动作，再分配材料和结构要求。"
+          },
+          {
+            "type": "p",
+            "text": "不同任务分数不一致是一项有用发现，因为它说明可以建设任务模块。定位训练可保留稳定表面，穿刺区可作为耗材更换，超声区则需要维持散射和对比。后续研究应记录每种任务中错误发生的阶段，而非只记录完成时间。这个节点分别连接N2的学习表现与N3的模块化结构：前者回答练习带来什么变化，后者回答这种练习怎样在模型上可重复发生。"
+          },
+          {
+            "type": "p",
+            "text": "材料选择还可以通过对照逐步优化：固定骨性几何比较表面覆盖，再固定覆盖比较深部阻力层。这样的拆分使每次改变都能对应到特定感觉线索，也能判断一种改良是否损害另一任务。研究得到的是可迁移的设计原则，课程据此选择模块，而不是依赖一个整体评分决定所有用途。"
+          },
+          {
+            "type": "p",
+            "text": "2025年血管模型材料研究利用紫外处理和水解改变打印聚合物力学，使其接近目标动脉粥样硬化组织的机械表现。材料后处理成为可设计变量，研究焦点从形状复现扩展到目标组织响应。[R14]"
+          },
+          {
+            "type": "p",
+            "text": "用材料试验标定的优点，是可以在引入复杂解剖之前确定响应范围。若材料拉伸或变形过于容易，即使形状逼真，器械推送和扩张任务也可能得到错误反馈。不过单轴参数只描述一种加载方式，血管器械任务还涉及弯曲、接触、摩擦及局部失稳。研究应从任务出发选择必要的材料测试，而不是追求一个统一的“像组织”指标。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 构建可操作组织"
+          },
+          {
+            "type": "p",
+            "text": "内镜颅底与肿瘤整形乳房模型将实际路径和可操作区域写入模型。对切割评价，需要区分几何可达、变形反馈、操作力和器械通过空间。 [R01] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "用任务中的动作标定触感。"
+          },
+          {
+            "type": "p",
+            "text": "2025年经蝶手术训练模型将打印结构、薄膜与液体系统结合，用压力传感间接估计模拟蛛网膜受力，并由11名有经验外科医师试用。不同器械操作产生不同受力分布，研究形成初步反馈区间。[R15]"
+          },
+          {
+            "type": "p",
+            "text": "间接传感需要先解释测量链：器械接触薄膜，薄膜与液体发生响应，传感器再记录压力。加载位置、接触面积和边界条件可能影响同一个读数，因此标定决定了反馈能代表什么。专家数据适合描述特定模型中的操作分布，进一步教学时则应研究哪些信号能有效提示动作修正，以及修正是否改善任务质量。"
+          },
+          {
+            "type": "p",
+            "text": "反馈的形式也构成教学干预。连续显示力值可能帮助控制峰值，却使学员依赖显示；间歇反馈更接近自主完成，但初期错误识别较慢。可比较两种安排下的学习和无反馈复测，把传感信号、动作视频与结果连接。该节点向N7的课程组织输出一种新能力：教师不只说明“动作太重”，还可以指出何时、何处发生偏差，并在下一次练习检验调整。"
+          },
+          {
+            "type": "p",
+            "text": "传感器进入模型后，重置过程也需要检查零点和灵敏度。薄膜替换可能改变机械耦合，使相同动作产生不同信号。把每轮功能校验纳入训练记录，有助于区分学员进步和测量系统变化，并为以后采用自动评分保存可解释的数据基础。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 结构化技能训练"
+          },
+          {
+            "type": "p",
+            "text": "下颌支矢状劈开截骨训练将截骨与劈开动作放入打印下颌模型。用切线位置、欠切、错误劈裂和动作顺序可区分不同失误机制。 [R06]"
+          },
+          {
+            "type": "p",
+            "text": "用盲评与重复动作测量进步。"
+          },
+          {
+            "type": "p",
+            "text": "机器人肾部分切除模型研究于2023年在线发表、2024年卷期刊载，36名参与者按经验分组完成模拟切除，评价组织保留、切缘、时间及GEARS评分。经验组间存在表现差异，重复尝试的评分改善趋势未达到显著。[R16]"
+          },
+          {
+            "type": "p",
+            "text": "多终点评价的重要性在于防止把速度当成全部技能。更快切除若伴随过多正常组织损失，并不符合任务目标；较长操作时间也可能来自更谨慎的边界控制。经验分层提供了构念验证线索：如果模型能让已有经验表现为更好的任务质量，它适合承载部分技能评价。接下来应检查这种差异是否在不同病例结构与材料批次中稳定。"
+          },
+          {
+            "type": "p",
+            "text": "重复试次结果需要结合每个肿瘤的难度阅读。后一个任务更复杂时，即使能力进步也未必表现为更高分；反之，材料磨损使操作变容易也可能形成虚假进步。因此学习曲线应同时建模学员、任务和模型状态。此研究与N2汇合，提出用质量约束下的效率、延迟保持和新病例迁移共同描述学习，而非只将一次专家评价扩展成培训有效性的结论。"
+          },
+          {
+            "type": "p",
+            "text": "评分一致性同样重要。切缘与组织保留可以作为较接近任务结果的指标，操作量表需要明确评分者训练和重复评分规则。把视频中的错误事件与最终切除结果配对，可以识别哪些动作值得优先教学，也便于在不同培训中心复用同一能力定义。"
+          },
+          {
+            "type": "p",
+            "text": "2025年头颈重建工作坊纳入30名住院医师，使用打印模型和定制人工腓骨进行截骨、皮瓣放置训练，采用独立盲评的Zwisch量表与前后问卷。自评和技术独立性指标在课程后改善。[R17]"
+          },
+          {
+            "type": "p",
+            "text": "工作坊的研究价值在于把材料放进明确的教学序列。截骨和放置之间存在规划依赖，某一步偏差会累积到后续匹配，所以完整任务有助于观察学员能否将局部动作组织成整体方案。独立评估减少教师参与指导时产生的评分混杂，问卷则补充学员觉得最有帮助的环节。两类结果可以并列解释，但承担不同问题。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 比较学习解释"
+          },
+          {
+            "type": "p",
+            "text": "骨肿瘤教学和骨折教学可以用辨识准确性与保留率比较，而手术模拟需再记录路径偏差、切缘或成功完成。满意度可以帮助评价可用性。 [R02] [R03] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "按目标匹配实验对照。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 循环使用与维护"
+          },
+          {
+            "type": "p",
+            "text": "训练寿命由最先失效的区域决定。重复拆装和更换后，应验证器械通行、形状和评分的可比性，并用质量控制记录区分训练进步和模型变化。 [R01] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "重复使用数据反向决定更换设计。"
+          },
+          {
+            "type": "p",
+            "text": "2026年新生儿血管通路研究将超声引导穿刺置于小尺度模型中，记录多轮穿刺、覆盖层更换与少量渗漏，超声图像在重复使用中受影响较小。参与者均能识别血管，部分完成穿刺及导丝任务。[R18]"
+          },
+          {
+            "type": "p",
+            "text": "这一节点把模型寿命从抽象耐用性变为可观察过程。穿刺道、表面损伤和渗漏会逐步改变下一次练习的条件；若不同学员轮到不同损耗阶段，其成绩可能受模型状态影响。将表面覆盖和深部血管分开记录，可以找到功能下降来自哪个组件，从而制定更换规则并保留仍可使用的主体。"
+          },
+          {
+            "type": "p",
+            "text": "小尺度操作还要求影像与触觉同时可靠。图像清晰可能降低定位难度，柔软表面可能改变进针稳定性，因此训练评价需要观察针尖可见性、路径修正和最终任务质量的连续过程。它汇合N3模块替换、N5材料稳定性和N6反馈测量，并反馈N1：课程使用后的模型应重新按任务验证。未来训练体系的基本单位应是一轮条件明确、反馈有效且可追踪的练习，而不仅是一件能够反复使用的实体。"
+          }
+        ]
+      },
+      {
+        "title": "研究之间如何比较",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "课程评价需拆分模型效果、教学时间与熟练度影响。前后测试看即时变化，错误类型可定位机制，延迟和新病例测试考察保持与迁移。"
+          }
+        ]
+      },
+      {
+        "title": "企业路线与公开产品",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Lazarus 3D 将 Skill-Sure 用于培训，Pre-Sure 面向病例排演。训练路线强调可重复的课程和任务，病例路线强调患者几何及术前团队协作。 [R10] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Lazarus 3D以Skill-Sure提供面向培训的定制模型，Pre-Sure提供基于患者影像的术前预演。官方页面将软组织响应和真实器械操作作为主要产品能力；两种服务分别围绕训练课程和具体病例组织。[R11][R10]"
+          },
+          {
+            "type": "p",
+            "text": "两条产品路线的差别直接影响制造组织。课程模型重视多名学员面对可比难度、耗材补充和重复供给，患者预演重视特定几何、关键区域的响应及手术前交付。共同的材料能力可以复用，但规格管理需要分别围绕课程目标和病例问题建立。"
+          },
+          {
+            "type": "p",
+            "text": "从产品演变看，下一阶段有价值的增量是把更换组件、重置时间、模型寿命和评分接口纳入交付。可替换部分减少整件报废，也支持预设难度；标准化记录则让培训中心比较不同课程轮次。对器械企业，模型还可提供新器械使用训练，但应将器械熟悉度和临床能力作为不同学习目标。"
+          },
+          {
+            "type": "p",
+            "text": "产业合作可以围绕真实的使用负担展开。若教师每次都要花较长时间修复模型，材料成本低也难以形成高频训练；若耗材能快速替换并保持功能，学员可用时间会增加。模型服务的经济性因此取决于一轮有效练习的全部成本，包括教师准备、设备占用、维护和废弃，而不只是实体售价。"
+          }
+        ]
+      },
+      {
+        "title": "专利机制与转化验证",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN115534298A、CN112735240A以 MRI 构建解剖病变场景，CN120089054A面向上颌窦增骨训练。前者适合核对分割与关键结构位置，后者适合评价任务中的操作路径与分层反馈。 [R07] [R08] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "后续研究与应用走向",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "可预期的是可替换模块及任务特异性评分的结合。观察指标包括单位课程的消耗与复位时间、重复评分一致性、不同经验层次和跨病例技能保持。 [R03] [R06] [R10]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Development and preliminary validation of a multidisciplinary 3D‑printed skull base model for endoscopic endonasal surgical training.",
+        "url": "https://doi.org/10.1186/s41205-026-00318-w",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R01"
+      },
+      {
+        "title": "The use of 3-dimensional (3D) printing in teaching musculoskeletal oncology for medical undergraduates.",
+        "url": "https://doi.org/10.1186/s12909-026-10023-1",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R02"
+      },
+      {
+        "title": "Lecture, model, or both? Optimizing fracture education with 3D printing: a longitudinal interventional study.",
+        "url": "https://doi.org/10.1186/s41205-026-00342-w",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R03"
+      },
+      {
+        "title": "Development and educational evaluation of patient-specific 3D-printed breast phantoms for oncoplastic surgical training.",
+        "url": "https://doi.org/10.1186/s12893-026-04110-9",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R04"
+      },
+      {
+        "title": "Evaluating the impact of a hand-crafted 3D-Printed head Model and virtual reality in skull base surgery training.",
+        "url": "https://doi.org/10.1016/j.bas.2024.104163",
+        "year": "2024",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R05"
+      },
+      {
+        "title": "Evaluation of structured training in osteotomy and splitting for BSSO using a 3D-printed mandibular model.",
+        "url": "https://doi.org/10.1186/s12909-026-09748-w",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R06"
+      },
+      {
+        "title": "Preparation method of piriformis syndrome model based on MR image",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN115534298A",
+        "year": "2022",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R07"
+      },
+      {
+        "title": "Facial spasm model based on MR images and preparation method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN112735240A",
+        "year": "2021",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R08"
+      },
+      {
+        "title": "3D printing teaching model and method for maxillary sinus bone increment surgery training",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120089054A",
+        "year": "2025",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R09"
+      },
+      {
+        "title": "Skill-Sure custom models to enhance training",
+        "url": "https://www.lazarus3d.com/skill-sure",
+        "year": "",
+        "kind": "企业公告",
+        "source": "企业公告",
+        "id": "R10"
+      },
+      {
+        "title": "Pre-Sure pre-operative surgical rehearsal models",
+        "url": "https://www.lazarus3d.com/pre-sure",
+        "year": "",
+        "kind": "企业公告",
+        "source": "企业公告",
+        "id": "R11"
+      },
+      {
+        "id": "R12",
+        "title": "From medical imaging data to 3D printed anatomical models",
+        "year": "2017",
+        "source": "PLOS ONE",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1371/journal.pone.0178540"
+      },
+      {
+        "id": "R13",
+        "title": "Low-cost three-dimensional printed phantom for neuraxial anesthesia training: Development and comparison to a commercial model",
+        "year": "2018",
+        "source": "PLOS ONE",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1371/journal.pone.0191664"
+      },
+      {
+        "id": "R14",
+        "title": "3D printed polymers that mimic the mechanical properties of atherosclerotic blood vessels for training models: the advantageous degradation induced by UV radiation and hydrolysis",
+        "year": "2025",
+        "source": "3D Printing in Medicine",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1186/s41205-025-00288-5"
+      },
+      {
+        "id": "R15",
+        "title": "3D printed training model with sensorized arachnoid for endoscopic transsphenoidal surgery: development and initial validation",
+        "year": "2025",
+        "source": "Heliyon",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.heliyon.2025.e43380"
+      },
+      {
+        "id": "R16",
+        "title": "Validation of a 3D-printed robot-assisted partial nephrectomy training model",
+        "year": "2023在线／2024卷期",
+        "source": "BJUI Compass",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1002/bco2.269"
+      },
+      {
+        "id": "R17",
+        "title": "Evaluating educational effectiveness of three-dimensional (3D)-printed training models and custom-made fibula model for osteotomy and flap inset training in head and neck reconstruction",
+        "year": "2025",
+        "source": "Maxillofacial Plastic and Reconstructive Surgery",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1186/s40902-025-00476-7"
+      },
+      {
+        "id": "R18",
+        "title": "Three-dimensional printed neonatal cannulation phantom for ultrasound-guided vascular access training",
+        "year": "2026",
+        "source": "Scientific Reports",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1038/s41598-025-34863-x"
+      }
+    ]
+  },
+  "en": {
+    "id": "H16",
+    "p": "P6",
+    "title": "Models for medical teaching and surgical skills training",
+    "subtitle": "From spatial understanding to measurable performance",
+    "thesis": "The value of a model depends on the task. Spatial structures support recognition and planning, while loading, cutting and puncture require calibrated material behaviour and performance measures. Repeated practice also depends on wear and resetting the model. [R01] [R03] [R06]",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway · Models for medical teaching and surgical skills training",
+      "summary": "Task definition branches into spatial learning and manipulation. Course comparisons bring both back to performance. Repeated-use data then inform structure and material.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2026",
+          "question": "Specify what the learner must observe and decide.",
+          "title": "Define the learning objective",
+          "evidence": "A longitudinal fracture-education study compared lecture, printed model and combined teaching. Comparisons can distinguish prior experience, immediate understanding, recall and recognition in a new case.",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2024",
+          "question": "Calibrate spatial recognition and material feel separately.",
+          "title": "Spatial relationships and modalities",
+          "evidence": "A skull-base training study used a physical head model and virtual reality. Scores for spatial relationships and procedural steps both rose from 3.40 ± 0.70 to 4.50 ± 0.53. Faculty rated soft-tissue realism less favourably.",
+          "refs": [
+            "R05"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2026",
+          "question": "Calibrate tactile response against the target action.",
+          "title": "Build manipulable structures",
+          "evidence": "Endoscopic skull-base and oncoplastic breast models encode access routes and working regions. A cutting task should distinguish geometric reach, deformation, force feedback and instrument clearance.",
+          "refs": [
+            "R01",
+            "R04"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2026",
+          "question": "Use blinded scoring and repeated tasks to assess improvement.",
+          "title": "Structured skills training",
+          "evidence": "A sagittal split osteotomy training study used a printed mandible for cutting and splitting. Cut position, incomplete cuts, unintended splits and task sequence distinguish different error mechanisms.",
+          "refs": [
+            "R06"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2026",
+          "question": "Match the comparator to the objective.",
+          "title": "Interpret learning outcomes",
+          "evidence": "Musculoskeletal oncology and fracture teaching can assess recognition and retention. Surgical simulation additionally needs path deviations, margins or successful execution. Satisfaction measures usability.",
+          "refs": [
+            "R02",
+            "R03",
+            "R06"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2026",
+          "question": "Reuse data inform replacement design.",
+          "title": "Repeated use and maintenance",
+          "evidence": "The first component to fail determines training life. Reassembly or replacement should preserve access, geometry and scoring comparability. Quality-control records help distinguish learning from model drift.",
+          "refs": [
+            "R01",
+            "R06"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Spatial relationships and modalities",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Build manipulable structures",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Structured skills training",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Structured skills training",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Interpret learning outcomes",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Repeated use and maintenance",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Reset and wear data inform model design",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Scope and objectives",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Anatomy teaching, route planning and surgical simulation have different outcomes. Define learner, target action and scoring before choosing anatomy, material, replaceable features or modalities."
+          }
+        ]
+      },
+      {
+        "title": "Academic pathway and interpretation",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Define the learning objective"
+          },
+          {
+            "type": "p",
+            "text": "A longitudinal fracture-education study compared lecture, printed model and combined teaching. Comparisons can distinguish prior experience, immediate understanding, recall and recognition in a new case. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Specify what the learner must observe and decide."
+          },
+          {
+            "type": "p",
+            "text": "The 2017 PLOS ONE study divided image-to-solid transformation into segmentation, mesh trimming, and printing, demonstrating the feasible process using examples of ribs, liver, and lungs. Its contribution is transforming individual anatomy from implicit information in images into identifiable and manipulable objects. [R12]"
+          },
+          {
+            "type": "p",
+            "text": "Teaching and patient communication need different presentations. Students identify anatomy, establish spatial relationships and connect mechanisms; patients need the parts relevant to their illness and choices. Model generation must therefore be followed by information selection: which structures to retain, where to add cutaways and whether colors or separable components are helpful. Each choice directs attention, so presentation should follow the learning question rather than reproduce every visible tissue."
+          },
+          {
+            "type": "p",
+            "text": "The key connection at this node is linking the manufacturing process to the understanding process. Even if the model is accurate, if the focus is unclear, users may still only see complex shapes; a model that is appropriately simplified and has clear relationships has the potential to reduce the burden of spatial transformation. Research allows users to explain structural relationships, rather than just saying whether the model looks good, and then feedback on incorrect answers is used to design colors, windowing, and labeling."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Spatial relationships and modalities"
+          },
+          {
+            "type": "p",
+            "text": "A skull-base training study used a physical head model and virtual reality. Scores for spatial relationships and procedural steps both rose from 3.40 ± 0.70 to 4.50 ± 0.53. Faculty rated soft-tissue realism less favourably. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Calibrate spatial recognition and material feel separately."
+          },
+          {
+            "type": "p",
+            "text": "A 2018 neuraxial-anesthesia model study invited 22 anesthesiologists, of whom 21 completed comparison with a commercial model. The printed approach scored better for loss-of-resistance, puncture and ultrasound-related tasks, but worse for surface palpation. Realism therefore needs to be assessed by procedural task. [R13]"
+          },
+          {
+            "type": "p",
+            "text": "This method shifts model evaluation from an overall impression to specific sensory cues. The operator palpates the relationship between the surface and deep bone, the needle senses changes in material resistance, and ultrasound observes the acoustic interface; these three require different physical properties. Using a commercial model as a comparison helps identify the relative advantages of the new approach and also reveals task limitations caused by softer or more fragile materials. Design optimization should first determine the most important instructional actions, then allocate material and structural requirements."
+          },
+          {
+            "type": "p",
+            "text": "The inconsistent scores across different tasks is a useful finding because it demonstrates the potential for task modularization. Localization training preserves a stable surface, the puncture zone can be used as a consumable replacement, and the ultrasound zone needs to maintain scattering and contrast. Future research should document the stages at which errors occur in each task, rather than just the completion time."
+          },
+          {
+            "type": "p",
+            "text": "Material selection can also be optimized step-by-step through comparison: fixing the bony geometry to compare the surface coverage, then fixing the coverage to compare the deeper resistance layer. This breakdown allows each change to correspond to a specific sensory cue, and also allows determining whether one improvement impairs another task. The research yields transferable design principles, which the course uses to select modules, rather than relying on a single overall score to determine all applications."
+          },
+          {
+            "type": "p",
+            "text": "The 2025 research on vascular model materials utilizes UV treatment and hydrolysis to alter the mechanics of printed polymers, making them approximate the mechanical properties of target atherosclerotic tissue. Material post-processing becomes a designable variable, expanding the research focus from shape reproduction to the target tissue response. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "The advantage of using materials testing for calibration is that it allows for the determination of the response range before introducing complex anatomy. If the material is too easily stretched or deformed, even with a realistic shape, erroneous feedback may be obtained during instrument delivery and expansion tasks. However, uniaxial parameters only describe one loading mode; vascular instrumentation tasks also involve bending, contact, friction, and local instability. Research should select necessary material tests based on the task, rather than pursuing a uniform \"tissue-like\" metric."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Build manipulable structures"
+          },
+          {
+            "type": "p",
+            "text": "Endoscopic skull-base and oncoplastic breast models encode access routes and working regions. A cutting task should distinguish geometric reach, deformation, force feedback and instrument clearance. [R01] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Calibrate tactile response against the target action."
+          },
+          {
+            "type": "p",
+            "text": "The 2025 transsphenoidal surgery training model combines a printed structure, a thin film, and a liquid system. It uses pressure sensing to indirectly estimate and simulate the forces acting on the arachnoid membrane, and was tested by 11 experienced surgeons. Different instrument operations produced different force distributions, and the study established a preliminary feedback range. [R15]"
+          },
+          {
+            "type": "p",
+            "text": "Indirect sensing requires first explaining the measurement chain: the instrument contacts the membrane, the membrane responds to the liquid, and the sensor records the pressure. Loading location, contact area, and boundary conditions can affect the same reading; therefore, calibration determines what the feedback represents. Expert data is suitable for describing the operational distribution in a specific model; further instruction should focus on which signals effectively prompt action corrections and whether those corrections improve task quality."
+          },
+          {
+            "type": "p",
+            "text": "The form of feedback also constitutes an instructional intervention. Continuous display of force values may help control peak values, but it makes learners dependent on the display; intermittent feedback is closer to autonomous completion, but initial error identification is slower. Learning under both arrangements and retesting without feedback can be compared, linking sensor signals, motion videos, and results."
+          },
+          {
+            "type": "p",
+            "text": "After the sensor is incorporated into the model, the reset process also requires checking the zero point and sensitivity. Thin-film replacement may alter the mechanical coupling, causing the same action to produce different signals. Incorporating each round of functional calibration into the training log helps distinguish between trainee progress and changes in the measurement system, and preserves an interpretable data foundation for future use of automated scoring."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Structured skills training"
+          },
+          {
+            "type": "p",
+            "text": "A sagittal split osteotomy training study used a printed mandible for cutting and splitting. Cut position, incomplete cuts, unintended splits and task sequence distinguish different error mechanisms. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Use blinded scoring and repeated tasks to assess improvement."
+          },
+          {
+            "type": "p",
+            "text": "The study of the robotic partial nephrectomy model was published online in 2023 and in the journal in 2024. Thirty-six participants completed a simulated nephrectomy in experience-based groups, and tissue preservation, resection margins, time, and GEARS scores were evaluated. Performance differences existed between experience groups, and the trend of score improvement with repeated attempts was not statistically significant. [R16]"
+          },
+          {
+            "type": "p",
+            "text": "The importance of multi-endpoint evaluation lies in preventing speed from being equated with overall skill. Faster resection accompanied by excessive loss of normal tissue does not align with the task objective; longer operation times may also stem from more cautious boundary control. Experience stratification provides construct validation clues: if the model allows existing experience to translate into better task quality, it is suitable for partial skill evaluation. The next step should be to examine whether this difference is stable across different case structures and material batches."
+          },
+          {
+            "type": "p",
+            "text": "Repeated-attempt results must be interpreted in relation to each tumor’s difficulty. A harder later task can obscure improvement, while material wear can make a task easier and create apparent progress. Learning curves should therefore model the learner, task and simulator condition together."
+          },
+          {
+            "type": "p",
+            "text": "Consistency in scoring is equally important. Resection margins and tissue preservation can serve as indicators that closely approximate task outcomes, and the performance scale needs to clearly define the rules for rater training and repetition scoring. Pairing error events in the video with the final resection result can identify which actions deserve priority teaching and also facilitates the reuse of the same competency definition across different training centers."
+          },
+          {
+            "type": "p",
+            "text": "A 2025 head-and-neck reconstruction workshop enrolled 30 residents who practiced osteotomy and flap placement using printed models and customized artificial fibulas. Independent blinded assessment used the Zwisch scale alongside pre- and post-course questionnaires. Self-assessment and measures of technical independence improved after the course. [R17]"
+          },
+          {
+            "type": "p",
+            "text": "The research value of the workshop lies in placing materials within a clear teaching sequence. There is a planning dependency between osteotomy and placement; deviations in one step accumulate in subsequent matching. Therefore, a complete task helps observe whether participants can organize local movements into a holistic plan. Independent assessment reduces the confounding effect of teacher-led instruction, while questionnaires supplement the learning outcomes based on what participants found most helpful. Both types of results can be interpreted concurrently, but they address different issues."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Interpret learning outcomes"
+          },
+          {
+            "type": "p",
+            "text": "Musculoskeletal oncology and fracture teaching can assess recognition and retention. Surgical simulation additionally needs path deviations, margins or successful execution. Satisfaction measures usability. [R02] [R03] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Match the comparator to the objective."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Repeated use and maintenance"
+          },
+          {
+            "type": "p",
+            "text": "The first component to fail determines training life. Reassembly or replacement should preserve access, geometry and scoring comparability. Quality-control records help distinguish learning from model drift. [R01] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Reuse data inform replacement design."
+          },
+          {
+            "type": "p",
+            "text": "A 2026 neonatal vascular-access study used a small-scale model for ultrasound-guided puncture, recording repeated punctures, covering-layer replacement and minor leakage. Ultrasound images were relatively little affected by reuse. All participants identified the vessels, and some completed the puncture and guidewire tasks. [R18]"
+          },
+          {
+            "type": "p",
+            "text": "This node transforms model lifetime from an abstract durability into an observable process. Puncture paths, surface damage, and leakage progressively alter the conditions for the next practice session; if different trainees reach different stages of wear and tear, their performance may be affected by the model's condition. Recording surface coverage and deep vessels separately allows identification of which component is experiencing functional decline, enabling the development of replacement rules while preserving usable components."
+          },
+          {
+            "type": "p",
+            "text": "Small-scale manipulation also requires both image and tactile reliability. Clear images can reduce positioning difficulty, while soft surfaces can alter needle insertion stability. Therefore, training evaluation needs to observe the continuous process of needle tip visibility, path correction, and final task quality. The basic unit of future training systems should be a round of well-defined, effective, and traceable practice, rather than just a reusable entity."
+          }
+        ]
+      },
+      {
+        "title": "Comparing the evidence",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Evaluation should distinguish the model, instructional time and learner experience. Pre/post testing describes immediate change, error categories reveal mechanisms and delayed or new-case tasks test retention and transfer."
+          }
+        ]
+      },
+      {
+        "title": "Industry approaches and documented products",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Lazarus 3D offers Skill-Sure for training and Pre-Sure for case rehearsal. Skill-Sure emphasizes repeatable curricula and tasks. Pre-Sure emphasizes patient geometry and preoperative team coordination. [R10] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "The Lazarus 3D offers Skill-Sure, providing customized training models, and Pre-Sure, offering preoperative simulations based on patient images. The official page highlights soft tissue response and realistic instrument manipulation as key product capabilities; the two services are organized around training courses and specific case studies, respectively. [R11][R10]"
+          },
+          {
+            "type": "p",
+            "text": "The differences between the two product lines directly impact manufacturing organization. The course model emphasizes multiple learners facing comparable difficulty, consumable replenishment, and repetitive supply, while patient rehearsals focus on responses to specific geometries and critical areas, as well as pre-operative delivery. Shared material capabilities can be reused, but specification management needs to be established separately around course objectives and case-related issues."
+          },
+          {
+            "type": "p",
+            "text": "From a product evolution perspective, the next valuable incremental step is to incorporate component replacement, reset time, model lifespan, and scoring interfaces into the delivery. Replaceable parts reduce the scrapping of entire units and also support preset difficulty levels; standardized records allow training centers to compare different course rounds. For medical device companies, the model can also provide training on the use of new devices, but device familiarity and clinical competence should be treated as different learning objectives."
+          },
+          {
+            "type": "p",
+            "text": "Industry collaborations can revolve around real-world usage burdens. If instructors spend a significant amount of time fixing models each time, even low material costs make it difficult to achieve high-frequency training; consumables that can be quickly replaced and maintain functionality will increase the available time for learners. Therefore, the economics of model services depend on the total cost of a single effective practice run, including instructor preparation, equipment usage, maintenance, and disposal, not just the physical selling price."
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and translational testing",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN115534298A and CN112735240A use MRI to represent specific anatomical conditions. CN120089054A addresses maxillary sinus augmentation training. The former invite checks of segmentation and landmark position, the latter of instrument path and layered feedback. [R07] [R08] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "Research and adoption outlook",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Replaceable modules are likely to develop alongside task-specific scoring. Track consumables and reset time per course, scoring agreement, skill retention by experience and transfer across cases. [R03] [R06] [R10]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Development and preliminary validation of a multidisciplinary 3D‑printed skull base model for endoscopic endonasal surgical training.",
+        "url": "https://doi.org/10.1186/s41205-026-00318-w",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R01"
+      },
+      {
+        "title": "The use of 3-dimensional (3D) printing in teaching musculoskeletal oncology for medical undergraduates.",
+        "url": "https://doi.org/10.1186/s12909-026-10023-1",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R02"
+      },
+      {
+        "title": "Lecture, model, or both? Optimizing fracture education with 3D printing: a longitudinal interventional study.",
+        "url": "https://doi.org/10.1186/s41205-026-00342-w",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R03"
+      },
+      {
+        "title": "Development and educational evaluation of patient-specific 3D-printed breast phantoms for oncoplastic surgical training.",
+        "url": "https://doi.org/10.1186/s12893-026-04110-9",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R04"
+      },
+      {
+        "title": "Evaluating the impact of a hand-crafted 3D-Printed head Model and virtual reality in skull base surgery training.",
+        "url": "https://doi.org/10.1016/j.bas.2024.104163",
+        "year": "2024",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R05"
+      },
+      {
+        "title": "Evaluation of structured training in osteotomy and splitting for BSSO using a 3D-printed mandibular model.",
+        "url": "https://doi.org/10.1186/s12909-026-09748-w",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R06"
+      },
+      {
+        "title": "Preparation method of piriformis syndrome model based on MR image",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN115534298A",
+        "year": "2022",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R07"
+      },
+      {
+        "title": "Facial spasm model based on MR images and preparation method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN112735240A",
+        "year": "2021",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R08"
+      },
+      {
+        "title": "3D printing teaching model and method for maxillary sinus bone increment surgery training",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120089054A",
+        "year": "2025",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R09"
+      },
+      {
+        "title": "Skill-Sure custom models to enhance training",
+        "url": "https://www.lazarus3d.com/skill-sure",
+        "year": "",
+        "kind": "Company announcement",
+        "source": "Company announcement",
+        "id": "R10"
+      },
+      {
+        "title": "Pre-Sure pre-operative surgical rehearsal models",
+        "url": "https://www.lazarus3d.com/pre-sure",
+        "year": "",
+        "kind": "Company announcement",
+        "source": "Company announcement",
+        "id": "R11"
+      },
+      {
+        "id": "R12",
+        "title": "From medical imaging data to 3D printed anatomical models",
+        "year": "2017",
+        "source": "PLOS ONE",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1371/journal.pone.0178540"
+      },
+      {
+        "id": "R13",
+        "title": "Low-cost three-dimensional printed phantom for neuraxial anesthesia training: Development and comparison to a commercial model",
+        "year": "2018",
+        "source": "PLOS ONE",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1371/journal.pone.0191664"
+      },
+      {
+        "id": "R14",
+        "title": "3D printed polymers that mimic the mechanical properties of atherosclerotic blood vessels for training models: the advantageous degradation induced by UV radiation and hydrolysis",
+        "year": "2025",
+        "source": "3D Printing in Medicine",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1186/s41205-025-00288-5"
+      },
+      {
+        "id": "R15",
+        "title": "3D printed training model with sensorized arachnoid for endoscopic transsphenoidal surgery: development and initial validation",
+        "year": "2025",
+        "source": "Heliyon",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.heliyon.2025.e43380"
+      },
+      {
+        "id": "R16",
+        "title": "Validation of a 3D-printed robot-assisted partial nephrectomy training model",
+        "year": "2023在线／2024卷期",
+        "source": "BJUI Compass",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1002/bco2.269"
+      },
+      {
+        "id": "R17",
+        "title": "Evaluating educational effectiveness of three-dimensional (3D)-printed training models and custom-made fibula model for osteotomy and flap inset training in head and neck reconstruction",
+        "year": "2025",
+        "source": "Maxillofacial Plastic and Reconstructive Surgery",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1186/s40902-025-00476-7"
+      },
+      {
+        "id": "R18",
+        "title": "Three-dimensional printed neonatal cannulation phantom for ultrasound-guided vascular access training",
+        "year": "2026",
+        "source": "Scientific Reports",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1038/s41598-025-34863-x"
+      }
+    ]
+  },
+  "de": {
+    "id": "H16",
+    "p": "P6",
+    "title": "Modelle für medizinische Lehre und chirurgisches Fertigkeitstraining",
+    "subtitle": "Vom räumlichen Verständnis zur messbaren Fertigkeit",
+    "thesis": "Der Nutzen eines Modells hängt von der Aufgabe ab. Räumliche Strukturen unterstützen Erkennung und Planung. Für Last, Schnitt und Punktion sind Materialverhalten und Leistungsmaße erforderlich. Wiederholtes Üben hängt auch von Verschleiß und Rücksetzbarkeit ab. [R01] [R03] [R06]",
+    "questions": [],
+    "graph": {
+      "title": "Forschungsverlauf · Modelle für medizinische Lehre und chirurgisches Fertigkeitstraining",
+      "summary": "Die Aufgabenbeschreibung verzweigt in räumliches Lernen und manuelle Ausführung. Kursvergleiche führen beide zum Handlungsergebnis zusammen. Nutzungsdaten geben Rückmeldung zu Struktur und Material.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2026",
+          "question": "Die erwartete Beobachtung und Entscheidung der Lernenden festlegen.",
+          "title": "Lernziel bestimmen",
+          "evidence": "Eine Längsschnittstudie zur Frakturlehre verglich Vortrag, Druckmodell und kombinierten Unterricht. Vorerfahrung, unmittelbares Verständnis, Erinnerung und Erkennung in neuen Fällen sind getrennte Maße.",
+          "refs": [
+            "R03"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2024",
+          "question": "Räumliche Erkennung und Materialhaptik getrennt kalibrieren.",
+          "title": "Räumliche Beziehungen und Darstellungsformen",
+          "evidence": "Eine Studie zum Schädelbasistraining setzte ein physisches Kopfmodell und Virtual Reality ein. Die Werte für räumliche Beziehungen und Operationsschritte stiegen jeweils von 3,40 ± 0,70 auf 4,50 ± 0,53. Lehrende bewerteten den Weichgeweberealismus weniger günstig.",
+          "refs": [
+            "R05"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2026",
+          "question": "Haptik an der Zielhandlung kalibrieren.",
+          "title": "Bearbeitbare Strukturen gestalten",
+          "evidence": "Modelle für die endoskopische Schädelbasis- und onkoplastische Brustchirurgie bilden Zugangswege und Arbeitsbereiche ab. Bei Schneidaufgaben sind Erreichbarkeit, Verformung, Kraftrückmeldung und Instrumentenfreiraum getrennt zu erfassen.",
+          "refs": [
+            "R01",
+            "R04"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2026",
+          "question": "Verbesserungen verblindet und über wiederholte Aufgaben messen.",
+          "title": "Strukturiertes Fertigkeitstraining",
+          "evidence": "Eine Trainingsstudie zur sagittalen Spaltungsosteotomie nutzte einen gedruckten Unterkiefer für Schnitt und Spaltung. Schnittlage, unvollständiger Schnitt, unerwünschte Spaltung und Handlungsschritte kennzeichnen verschiedene Fehler.",
+          "refs": [
+            "R06"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2026",
+          "question": "Kontrollgruppe dem Lernziel zuordnen.",
+          "title": "Lernergebnisse einordnen",
+          "evidence": "Lehre zur muskuloskelettalen Onkologie und Frakturen kann Erkennung und Behalten erfassen. Simulation benötigt zusätzlich Pfadabweichung, Schnittrand oder erfolgreiche Ausführung. Zufriedenheit beschreibt die Nutzbarkeit.",
+          "refs": [
+            "R02",
+            "R03",
+            "R06"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2026",
+          "question": "Nutzungsdaten geben Hinweise zur Auslegung austauschbarer Teile.",
+          "title": "Wiederholte Nutzung und Wartung",
+          "evidence": "Die zuerst ausfallende Komponente begrenzt die Trainingslebensdauer. Nach Wiedermontage oder Austausch sollten Zugang, Geometrie und Bewertung vergleichbar bleiben. Qualitätsdaten helfen, Lerneffekt und Modellveränderung zu trennen.",
+          "refs": [
+            "R01",
+            "R06"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Räumliche Beziehungen und Darstellungsformen",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Bearbeitbare Strukturen gestalten",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Strukturiertes Fertigkeitstraining",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Strukturiertes Fertigkeitstraining",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Lernergebnisse einordnen",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Wiederholte Nutzung und Wartung",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Rücksetz- und Verschleißdaten in den Modellaufbau übernehmen",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Untersuchungsrahmen und Ziele",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Anatomielehre, Wegplanung und chirurgische Simulation haben unterschiedliche Endpunkte. Zielgruppe, Handlung und Bewertung sind festzulegen, bevor Anatomie, Material, austauschbare Elemente und Darstellungsform gewählt werden."
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Einordnung der Einzelschritte",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Lernziel bestimmen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Längsschnittstudie zur Frakturlehre verglich Vortrag, Druckmodell und kombinierten Unterricht. Vorerfahrung, unmittelbares Verständnis, Erinnerung und Erkennung in neuen Fällen sind getrennte Maße. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Die erwartete Beobachtung und Entscheidung der Lernenden festlegen."
+          },
+          {
+            "type": "p",
+            "text": "Die 2017 in PLOS ONE veröffentlichte Studie unterteilte die Bild-zu-Volumen-Transformation in Segmentierung, Netzbeschneidung und Druck und demonstrierte die Machbarkeit des Prozesses anhand von Beispielen von Rippen, Leber und Lunge. Ihr Beitrag besteht darin, individuelle Anatomie aus impliziten Informationen in Bildern in identifizierbare und manipulierbare Objekte zu transformieren. [R12]"
+          },
+          {
+            "type": "p",
+            "text": "Lehre und Patientengespräch stellen unterschiedliche Anforderungen an die Darstellung. Studierende müssen Strukturen, Lagebeziehungen und Mechanismen verstehen; Patienten benötigen die für ihre Erkrankung und Entscheidungen relevanten Informationen. Nach der Modellerstellung folgt deshalb die Auswahl: Welche Strukturen bleiben, wo helfen Aussparungen, und sind Farben oder trennbare Bauteile sinnvoll? Jede Wahl lenkt Aufmerksamkeit und sollte sich nach dem Lernproblem richten."
+          },
+          {
+            "type": "p",
+            "text": "Die zentrale Verbindung an diesem Knotenpunkt besteht darin, den Fertigungsprozess mit dem Verständnisprozess zu verknüpfen. Selbst bei einem präzisen Modell nehmen Nutzer bei unklarem Fokus möglicherweise nur komplexe Formen wahr. Ein angemessen vereinfachtes Modell mit klaren Beziehungen kann den Aufwand für räumliche Transformationen reduzieren. Forschung ermöglicht es Nutzern, strukturelle Zusammenhänge zu erläutern, anstatt lediglich die Optik des Modells zu beurteilen. Das Feedback zu falschen Antworten fließt in die Gestaltung von Farben, Fenstern und Beschriftungen ein."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Räumliche Beziehungen und Darstellungsformen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie zum Schädelbasistraining setzte ein physisches Kopfmodell und Virtual Reality ein. Die Werte für räumliche Beziehungen und Operationsschritte stiegen jeweils von 3,40 ± 0,70 auf 4,50 ± 0,53. Lehrende bewerteten den Weichgeweberealismus weniger günstig. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Räumliche Erkennung und Materialhaptik getrennt kalibrieren."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2018 zu einem neuraxialen Anästhesiemodell lud 22 Anästhesisten ein; 21 schlossen den Vergleich mit einem kommerziellen Modell ab. Der gedruckte Ansatz wurde bei Widerstandsverlust, Punktion und ultraschallbezogenen Aufgaben besser, bei Oberflächenpalpation schlechter bewertet. Modelltreue muss daher nach konkreter Handlung aufgeschlüsselt werden. [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Diese Methode verlagert die Modellbewertung von einem Gesamteindruck hin zu spezifischen sensorischen Hinweisen. Der Anwender ertastet die Beziehung zwischen Oberfläche und tieferliegendem Knochen, die Nadel erfasst Veränderungen des Materialwiderstands und der Ultraschall beobachtet die akustische Grenzfläche; diese drei Verfahren erfordern unterschiedliche physikalische Eigenschaften. Der Vergleich mit einem kommerziellen Modell hilft, die relativen Vorteile des neuen Ansatzes zu identifizieren und deckt gleichzeitig die durch weichere oder empfindlichere Materialien bedingten Einschränkungen auf. Für die Designoptimierung sollten zunächst die wichtigsten Schulungsmaßnahmen festgelegt und anschließend die Material- und Strukturanforderungen bestimmt werden."
+          },
+          {
+            "type": "p",
+            "text": "Die inkonsistenten Ergebnisse bei verschiedenen Aufgaben sind ein nützlicher Befund, da sie das Potenzial für eine Aufgabenmodularisierung aufzeigen. Das Lokalisierungstraining erhält eine stabile Oberfläche, die Punktionszone kann als Verbrauchsmaterial verwendet werden, und die Ultraschallzone muss Streuung und Kontrast beibehalten. Zukünftige Forschung sollte die Phasen dokumentieren, in denen Fehler in jeder Aufgabe auftreten, anstatt nur die Bearbeitungszeit."
+          },
+          {
+            "type": "p",
+            "text": "Die Materialauswahl lässt sich schrittweise durch Vergleich optimieren: Zunächst wird die Knochengeometrie fixiert, um die Oberflächenabdeckung zu vergleichen. Anschließend wird die Abdeckung fixiert, um die tiefer liegende Widerstandsschicht zu vergleichen. Diese Aufschlüsselung ermöglicht es, jede Änderung einem spezifischen sensorischen Hinweis zuzuordnen und festzustellen, ob eine Verbesserung eine andere Aufgabe beeinträchtigt. Die Forschung liefert übertragbare Gestaltungsprinzipien, anhand derer der Kurs Module auswählt, anstatt sich auf eine einzige Gesamtbewertung zur Bestimmung aller Anwendungen zu stützen."
+          },
+          {
+            "type": "p",
+            "text": "Die Forschung zu vaskulären Modellmaterialien aus dem Jahr 2025 nutzt UV-Behandlung und Hydrolyse, um die mechanischen Eigenschaften gedruckter Polymere so zu verändern, dass sie den mechanischen Eigenschaften von atherosklerotischem Zielgewebe ähneln. Die Materialnachbearbeitung wird dadurch zu einer gestaltbaren Variable, wodurch der Forschungsschwerpunkt von der Formreproduktion auf die Reaktion des Zielgewebes erweitert wird. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "Der Vorteil von Materialprüfungen zur Kalibrierung liegt darin, dass der Ansprechbereich vor der Einführung komplexer anatomischer Strukturen bestimmt werden kann. Ist das Material zu dehnbar oder verformbar, kann dies selbst bei realistischer Formgebung zu fehlerhaften Rückmeldungen bei der Instrumenteneinführung und -expansion führen. Uniaxiale Parameter beschreiben jedoch nur einen Belastungsmodus; bei vaskulären Instrumenten spielen zusätzlich Biegung, Kontakt, Reibung und lokale Instabilität eine Rolle. Die Forschung sollte die notwendigen Materialprüfungen aufgabenbezogen auswählen, anstatt eine einheitliche, „gewebeähnliche“ Kennzahl anzustreben."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Bearbeitbare Strukturen gestalten"
+          },
+          {
+            "type": "p",
+            "text": "Modelle für die endoskopische Schädelbasis- und onkoplastische Brustchirurgie bilden Zugangswege und Arbeitsbereiche ab. Bei Schneidaufgaben sind Erreichbarkeit, Verformung, Kraftrückmeldung und Instrumentenfreiraum getrennt zu erfassen. [R01] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Haptik an der Zielhandlung kalibrieren."
+          },
+          {
+            "type": "p",
+            "text": "Ein transsphenoidales Operationstrainingsmodell von 2025 verband gedruckte Strukturen, eine Membran und ein Flüssigkeitssystem. Drucksensoren schätzten indirekt die Kräfte auf die simulierte Arachnoidea; 11 erfahrene Chirurgen erprobten das Modell. Verschiedene Instrumentenhandlungen erzeugten unterschiedliche Kraftverteilungen und lieferten erste Rückmeldebereiche. [R15]"
+          },
+          {
+            "type": "p",
+            "text": "Indirekte Sensorik erfordert eine erklärte Messkette: Das chirurgische Instrument berührt die Membran, Membran und Flüssigkeit reagieren, und ein Sensor erfasst den Druck. Angriffspunkt, Kontaktfläche und Randbedingungen beeinflussen den Messwert; Kalibrierung bestimmt deshalb dessen Aussage. Expertendaten beschreiben Handlungsverteilungen in diesem Modell. Lehrstudien müssen anschließend zeigen, welche Signale sinnvolle Korrekturen auslösen und ob diese die Aufgabenqualität verbessern."
+          },
+          {
+            "type": "p",
+            "text": "Die Form des Feedbacks stellt gleichzeitig eine didaktische Intervention dar. Die kontinuierliche Anzeige von Kraftwerten kann zwar helfen, Spitzenwerte zu kontrollieren, macht Lernende aber von der Anzeige abhängig; intermittierendes Feedback fördert hingegen die selbstständige Durchführung, verlangsamt jedoch die anfängliche Fehlererkennung. Der Lernerfolg unter beiden Bedingungen sowie ein erneuter Test ohne Feedback können verglichen werden, indem Sensorsignale, Bewegungsvideos und Ergebnisse verknüpft werden."
+          },
+          {
+            "type": "p",
+            "text": "Nach der Integration des Sensors in das Modell muss im Rahmen des Reset-Prozesses auch der Nullpunkt und die Empfindlichkeit überprüft werden. Der Austausch der Dünnschicht kann die mechanische Kopplung verändern, sodass dieselbe Aktion unterschiedliche Signale erzeugt. Die Dokumentation jeder Funktionskalibrierung im Trainingsprotokoll hilft, zwischen Lernfortschritten und Änderungen im Messsystem zu unterscheiden und sichert eine interpretierbare Datengrundlage für die zukünftige automatisierte Auswertung."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Strukturiertes Fertigkeitstraining"
+          },
+          {
+            "type": "p",
+            "text": "Eine Trainingsstudie zur sagittalen Spaltungsosteotomie nutzte einen gedruckten Unterkiefer für Schnitt und Spaltung. Schnittlage, unvollständiger Schnitt, unerwünschte Spaltung und Handlungsschritte kennzeichnen verschiedene Fehler. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Verbesserungen verblindet und über wiederholte Aufgaben messen."
+          },
+          {
+            "type": "p",
+            "text": "Die Studie zum robotergestützten Modell der partiellen Nephrektomie wurde 2023 online und 2024 in der Fachzeitschrift veröffentlicht. 36 Teilnehmer führten in erfahrungsbasierten Gruppen eine simulierte Nephrektomie durch. Gewebeschonung, Resektionsränder, Operationszeit und GEARS-Scores wurden ausgewertet. Es zeigten sich Leistungsunterschiede zwischen den Erfahrungsgruppen, der Trend einer Score-Verbesserung bei wiederholten Versuchen war jedoch statistisch nicht signifikant. [R16]"
+          },
+          {
+            "type": "p",
+            "text": "Die Bedeutung der Multi-Endpunkt-Evaluation liegt darin, zu verhindern, dass Geschwindigkeit mit Gesamtkompetenz gleichgesetzt wird. Eine schnellere Resektion, die mit übermäßigem Verlust an gesundem Gewebe einhergeht, entspricht nicht dem Aufgabenziel; längere Operationszeiten können auch auf eine vorsichtigere Grenzkontrolle zurückzuführen sein. Die Erfahrungsstratifizierung liefert Hinweise zur Validierung des Konstrukts: Wenn das Modell es ermöglicht, vorhandene Erfahrung in eine bessere Aufgabenqualität umzusetzen, eignet es sich für die partielle Kompetenzbewertung. Im nächsten Schritt sollte untersucht werden, ob dieser Unterschied über verschiedene Fallstrukturen und Materialchargen hinweg stabil ist."
+          },
+          {
+            "type": "p",
+            "text": "Die Ergebnisse wiederholter Versuche müssen im Zusammenhang mit der Schwierigkeit der Beurteilung jedes einzelnen Tumors betrachtet werden. Bei komplexeren Aufgaben führt selbst eine verbesserte Fähigkeit nicht zwangsläufig zu einer höheren Punktzahl; umgekehrt kann Materialverschleiß, der die Arbeit erleichtert, auch einen scheinbaren Fortschritt vortäuschen. Daher sollte die Lernkurve gleichzeitig den Lernenden, die Aufgabe und den Modellzustand abbilden."
+          },
+          {
+            "type": "p",
+            "text": "Eine einheitliche Bewertung ist ebenso wichtig. Resektionsränder und Gewebeerhaltung können als Indikatoren dienen, die die Ergebnisse der Aufgabe gut abbilden, und die Leistungsskala muss die Regeln für die Schulung der Beurteiler und die wiederholte Bewertung klar definieren. Die Zuordnung von Fehlerereignissen im Video zum endgültigen Resektionsergebnis kann aufzeigen, welche Maßnahmen vorrangig zu schulen sind, und erleichtert zudem die Wiederverwendung derselben Kompetenzdefinition in verschiedenen Ausbildungszentren."
+          },
+          {
+            "type": "p",
+            "text": "Ein Workshop zur Kopf-Hals-Rekonstruktion von 2025 umfasste 30 Assistenzärzte. An gedruckten Modellen und angepassten künstlichen Fibulae übten sie Osteotomie und Lappenplatzierung. Unabhängige verblindete Beurteilungen nutzten die Zwisch-Skala, ergänzt durch Fragebögen vor und nach dem Kurs. Sowohl Selbsteinschätzung als auch Kennwerte technischer Selbstständigkeit verbesserten sich. [R17]"
+          },
+          {
+            "type": "p",
+            "text": "Der Workshop ordnete Materialien in eine klare Lernfolge ein. Osteotomie und Platzierung hängen planerisch zusammen, sodass sich Abweichungen fortpflanzen. Eine vollständige Aufgabe zeigt daher, ob Lernende Einzelhandlungen zu einem Gesamtplan verbinden. Unabhängige Beurteilung verringert Bewertungsverzerrungen durch die Lehrbetreuung; Fragebögen ergänzen, welche Schritte Lernende hilfreich fanden. Beide Ergebnisarten stehen nebeneinander und beantworten unterschiedliche Fragen."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Lernergebnisse einordnen"
+          },
+          {
+            "type": "p",
+            "text": "Lehre zur muskuloskelettalen Onkologie und Frakturen kann Erkennung und Behalten erfassen. Simulation benötigt zusätzlich Pfadabweichung, Schnittrand oder erfolgreiche Ausführung. Zufriedenheit beschreibt die Nutzbarkeit. [R02] [R03] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Kontrollgruppe dem Lernziel zuordnen."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Wiederholte Nutzung und Wartung"
+          },
+          {
+            "type": "p",
+            "text": "Die zuerst ausfallende Komponente begrenzt die Trainingslebensdauer. Nach Wiedermontage oder Austausch sollten Zugang, Geometrie und Bewertung vergleichbar bleiben. Qualitätsdaten helfen, Lerneffekt und Modellveränderung zu trennen. [R01] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Nutzungsdaten geben Hinweise zur Auslegung austauschbarer Teile."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie zum neonatalen Gefäßzugang von 2026 nutzte ein kleines Modell für ultraschallgeführte Punktion und erfasste wiederholte Punktionen, Deckschichtwechsel und geringe Leckage. Wiederverwendung beeinträchtigte die Ultraschallbilder nur wenig. Alle Teilnehmenden erkannten Gefäße; einige schlossen Punktion und Führungsdrahtaufgaben ab. [R18]"
+          },
+          {
+            "type": "p",
+            "text": "Dieser Knoten wandelt die Lebensdauer eines Modells von einer abstrakten Haltbarkeit in einen beobachtbaren Prozess um. Durchstoßspuren, Oberflächenschäden und Leckagen verändern zunehmend die Bedingungen für die nächste Übungseinheit. Erreichen verschiedene Auszubildende unterschiedliche Verschleißstadien, kann ihre Leistung durch den Zustand des Modells beeinträchtigt werden. Die separate Erfassung der Oberflächenabdeckung und tiefer liegender Gefäße ermöglicht die Identifizierung der Komponente mit Funktionsbeeinträchtigungen und somit die Entwicklung von Austauschregeln unter Schonung der nutzbaren Komponenten."
+          },
+          {
+            "type": "p",
+            "text": "Die Manipulation im kleinen Maßstab erfordert sowohl Bild- als auch Tastgenauigkeit. Klare Bilder erleichtern die Positionierung, während weiche Oberflächen die Stabilität beim Einführen der Nadel beeinträchtigen können. Daher muss die Trainingsevaluation den kontinuierlichen Prozess der Nadelspitzen-Sichtbarkeit, der Pfadkorrektur und der finalen Aufgabenqualität beobachten. Die Basiseinheit zukünftiger Trainingssysteme sollte eine Runde klar definierter, effektiver und nachvollziehbarer Übung sein und nicht nur eine wiederverwendbare Einheit."
+          }
+        ]
+      },
+      {
+        "title": "Vergleich der Befunde",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Bewertung sollte Modellwirkung, Unterrichtszeit und Vorerfahrung trennen. Vorher-nachher-Tests erfassen unmittelbare Veränderungen. Fehlertypen zeigen Mechanismen, verzögerte Tests und neue Fälle prüfen Behalten und Transfer."
+          }
+        ]
+      },
+      {
+        "title": "Industrielle Ansätze und dokumentierte Produkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Lazarus 3D bietet Skill-Sure für Training und Pre-Sure für fallbezogene Proben an. Der erste Ansatz betont wiederholbare Kurse und Aufgaben, der zweite die Patientenanatomie und präoperative Zusammenarbeit. [R10] [R11]"
+          },
+          {
+            "type": "p",
+            "text": "Das Lazarus 3D-System bietet mit Skill-Sure individualisierte Trainingsmodelle und mit Pre-Sure präoperative Simulationen auf Basis von Patientenbildern. Auf der offiziellen Webseite werden die Reaktion des Weichgewebes und die realistische Instrumentenführung als zentrale Produktmerkmale hervorgehoben. Die beiden Services sind in Form von Schulungen bzw. spezifischen Fallstudien organisiert. [R11][R10]"
+          },
+          {
+            "type": "p",
+            "text": "Die Unterschiede zwischen den beiden Produktlinien wirken sich direkt auf die Fertigungsorganisation aus. Das Kursmodell legt Wert auf mehrere Lernende mit vergleichbarem Schwierigkeitsgrad, die Nachbestellung von Verbrauchsmaterialien und die regelmäßige Bereitstellung. Die Patientensimulationen konzentrieren sich auf die Reaktionen auf spezifische Geometrien und kritische Bereiche sowie auf die präoperative Vorbereitung. Gemeinsam genutzte Materialien können wiederverwendet werden, jedoch muss das Spezifikationsmanagement separat für Kursziele und fallbezogene Fragestellungen eingerichtet werden."
+          },
+          {
+            "type": "p",
+            "text": "Aus Sicht der Produktentwicklung ist der nächste sinnvolle Schritt die Integration von Komponentenaustausch, Rücksetzzeit, Modelllebensdauer und Bewertungsschnittstellen in die Bereitstellung. Austauschbare Teile reduzieren die Verschrottung ganzer Einheiten und unterstützen vordefinierte Schwierigkeitsgrade; standardisierte Aufzeichnungen ermöglichen es Schulungszentren, verschiedene Kursdurchgänge zu vergleichen. Für Medizintechnikunternehmen kann das Modell auch Schulungen zur Anwendung neuer Geräte bieten, wobei Gerätekenntnis und klinische Kompetenz als unterschiedliche Lernziele behandelt werden sollten."
+          },
+          {
+            "type": "p",
+            "text": "Branchenkooperationen können sich um den praktischen Nutzen drehen. Wenn Ausbilder viel Zeit mit der Reparatur von Modellen verbringen müssen, erschweren selbst geringe Materialkosten häufige Schulungen. Verbrauchsmaterialien, die schnell ausgetauscht werden können und die Funktionalität erhalten, erhöhen die verfügbare Zeit für die Lernenden. Daher hängt die Wirtschaftlichkeit von Modelldienstleistungen von den Gesamtkosten eines einzelnen effektiven Übungsdurchgangs ab, einschließlich der Vorbereitung der Ausbilder, der Gerätenutzung, der Wartung und der Entsorgung, und nicht nur vom reinen Verkaufspreis."
+          }
+        ]
+      },
+      {
+        "title": "Patentmechanismen und Prüfung für den Einsatz",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN115534298A und CN112735240A nutzen MRT zur Darstellung anatomischer Krankheitsbilder. CN120089054A betrifft Training zur Sinusbodenaugmentation. Bei den ersten sind Segmentierung und Landmarken, beim letzten Instrumentenpfad und Schichtrückmeldung zu prüfen. [R07] [R08] [R09]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick auf Forschung und Anwendung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Austauschbare Module dürften sich mit aufgabenspezifischer Bewertung weiterentwickeln. Messgrößen sind Verbrauch und Rücksetzzeit je Kurs, Bewertungsübereinstimmung, Behalten nach Erfahrungsstufe und Transfer auf andere Fälle. [R03] [R06] [R10]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Development and preliminary validation of a multidisciplinary 3D‑printed skull base model for endoscopic endonasal surgical training.",
+        "url": "https://doi.org/10.1186/s41205-026-00318-w",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R01"
+      },
+      {
+        "title": "The use of 3-dimensional (3D) printing in teaching musculoskeletal oncology for medical undergraduates.",
+        "url": "https://doi.org/10.1186/s12909-026-10023-1",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R02"
+      },
+      {
+        "title": "Lecture, model, or both? Optimizing fracture education with 3D printing: a longitudinal interventional study.",
+        "url": "https://doi.org/10.1186/s41205-026-00342-w",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R03"
+      },
+      {
+        "title": "Development and educational evaluation of patient-specific 3D-printed breast phantoms for oncoplastic surgical training.",
+        "url": "https://doi.org/10.1186/s12893-026-04110-9",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R04"
+      },
+      {
+        "title": "Evaluating the impact of a hand-crafted 3D-Printed head Model and virtual reality in skull base surgery training.",
+        "url": "https://doi.org/10.1016/j.bas.2024.104163",
+        "year": "2024",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R05"
+      },
+      {
+        "title": "Evaluation of structured training in osteotomy and splitting for BSSO using a 3D-printed mandibular model.",
+        "url": "https://doi.org/10.1186/s12909-026-09748-w",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R06"
+      },
+      {
+        "title": "Preparation method of piriformis syndrome model based on MR image",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN115534298A",
+        "year": "2022",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R07"
+      },
+      {
+        "title": "Facial spasm model based on MR images and preparation method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN112735240A",
+        "year": "2021",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R08"
+      },
+      {
+        "title": "3D printing teaching model and method for maxillary sinus bone increment surgery training",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120089054A",
+        "year": "2025",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R09"
+      },
+      {
+        "title": "Skill-Sure custom models to enhance training",
+        "url": "https://www.lazarus3d.com/skill-sure",
+        "year": "",
+        "kind": "Unternehmensmitteilung",
+        "source": "Unternehmensmitteilung",
+        "id": "R10"
+      },
+      {
+        "title": "Pre-Sure pre-operative surgical rehearsal models",
+        "url": "https://www.lazarus3d.com/pre-sure",
+        "year": "",
+        "kind": "Unternehmensmitteilung",
+        "source": "Unternehmensmitteilung",
+        "id": "R11"
+      },
+      {
+        "id": "R12",
+        "title": "From medical imaging data to 3D printed anatomical models",
+        "year": "2017",
+        "source": "PLOS ONE",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1371/journal.pone.0178540"
+      },
+      {
+        "id": "R13",
+        "title": "Low-cost three-dimensional printed phantom for neuraxial anesthesia training: Development and comparison to a commercial model",
+        "year": "2018",
+        "source": "PLOS ONE",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1371/journal.pone.0191664"
+      },
+      {
+        "id": "R14",
+        "title": "3D printed polymers that mimic the mechanical properties of atherosclerotic blood vessels for training models: the advantageous degradation induced by UV radiation and hydrolysis",
+        "year": "2025",
+        "source": "3D Printing in Medicine",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1186/s41205-025-00288-5"
+      },
+      {
+        "id": "R15",
+        "title": "3D printed training model with sensorized arachnoid for endoscopic transsphenoidal surgery: development and initial validation",
+        "year": "2025",
+        "source": "Heliyon",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1016/j.heliyon.2025.e43380"
+      },
+      {
+        "id": "R16",
+        "title": "Validation of a 3D-printed robot-assisted partial nephrectomy training model",
+        "year": "2023在线／2024卷期",
+        "source": "BJUI Compass",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1002/bco2.269"
+      },
+      {
+        "id": "R17",
+        "title": "Evaluating educational effectiveness of three-dimensional (3D)-printed training models and custom-made fibula model for osteotomy and flap inset training in head and neck reconstruction",
+        "year": "2025",
+        "source": "Maxillofacial Plastic and Reconstructive Surgery",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1186/s40902-025-00476-7"
+      },
+      {
+        "id": "R18",
+        "title": "Three-dimensional printed neonatal cannulation phantom for ultrasound-guided vascular access training",
+        "year": "2026",
+        "source": "Scientific Reports",
+        "kind": "原始研究",
+        "url": "https://doi.org/10.1038/s41598-025-34863-x"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1451 @@
+{
+  "zh": {
+    "id": "H35",
+    "p": "P7",
+    "title": "生物打印细胞/组织构建与体外模型",
+    "subtitle": "从成形时细胞分布走向组织功能和可比较应用",
+    "thesis": "生物打印能预先组织细胞与材料，培养过程中细胞产生的结构和功能则需要独立量测。由近似外观走向预测性模型，依赖组织功能、对照和批次重现性。",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络图",
+      "summary": "先确认细胞存活，再沿组织自组装和可观测环境两路推进。以模型是否重现实验任务汇合，并将异常读数反馈到空间分区与细胞组合。",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2021",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R06"
+          ],
+          "title": "用分时存活建立基线",
+          "question": "打印后有多少细胞保持功能潜力？",
+          "evidence": "纤维蛋白基神经样组织研究第 12 天活性比例为实验组 93.5 ± 0.7%、对照组 53.4 ± 1.6%。"
+        },
+        {
+          "id": "N2",
+          "time": "2023",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R01"
+          ],
+          "title": "用同轴界面组织细胞",
+          "question": "模型能否呈现两个区域之间的功能？",
+          "evidence": "胶原基研究制备中空同轴神经血管模型，观察紧密连接蛋白、选择性通透与内外细胞接触。"
+        },
+        {
+          "id": "N3",
+          "time": "2024/2025",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R02"
+          ],
+          "title": "追踪打印后的自组装",
+          "question": "初始排列为最终组织形态提供多大约束？",
+          "evidence": "DLP 生物打印研究在水凝胶构建后观察干细胞球原位形成。"
+        },
+        {
+          "id": "N4",
+          "time": "2026",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R03",
+            "R04"
+          ],
+          "title": "区分管状形态与功能",
+          "question": "不同细胞组织方式怎样影响管状结构？",
+          "evidence": "iPSC 来源前体的自组织研究与间充质细胞和内皮细胞的共培养研究分别考察了血管样结构。"
+        },
+        {
+          "id": "N5",
+          "time": "2021",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R05"
+          ],
+          "title": "把组织复杂度接到实验终点",
+          "question": "复杂模型比简单对照增加了什么信息？",
+          "evidence": "肿瘤微环境模型研究将组织构造用于表达体外微环境。"
+        },
+        {
+          "id": "N6",
+          "time": "2023–2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R10",
+            "R12",
+            "R13"
+          ],
+          "title": "把模型平台与组织疗法分开推进",
+          "question": "从研究设备到应用需要记录哪些区别？",
+          "evidence": "CELLINK 展示光学打印设备，Aspect Biosystems 与 Novo Nordisk 公告组织疗法开发合作。器官样结构专利另展示体外微环境构建路线。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "建立组织界面"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "允许原位重组"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "检验界面功能"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "kind": "advance",
+          "label": "检验结构形成"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "定义组织终点"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "定义实验适用性"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "按失败条件调整组织分区与细胞选择"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "从活细胞到有功能的模型",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "构建几何、存活、组织特异信号与稳定功能形成递进证据。例如神经血管结构需将成形和连接标记与通透读数并列，组织组装实验需要按时间记录新生结构与预先设计的空间关系。[R01] [R02] [R03] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 用分时存活建立基线"
+          },
+          {
+            "type": "p",
+            "text": "纤维蛋白基神经样组织研究第 12 天活性比例为实验组 93.5 ± 0.7%、对照组 53.4 ± 1.6%。 [R06]"
+          },
+          {
+            "type": "p",
+            "text": "存活读数是后续功能实验的基线。分别报告细胞数量、组织分布和功能读数，以免把更多存活细胞带来的总体信号误作单细胞功能变化。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 用同轴界面组织细胞"
+          },
+          {
+            "type": "p",
+            "text": "胶原基研究制备中空同轴神经血管模型，观察紧密连接蛋白、选择性通透与内外细胞接触。 [R01]"
+          },
+          {
+            "type": "p",
+            "text": "组织样貌和通透性是两种证据，后者用适合模型的输运对照才能解释。边界几何、界面标记与读数位置应配对。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 追踪打印后的自组装"
+          },
+          {
+            "type": "p",
+            "text": "DLP 生物打印研究在水凝胶构建后观察干细胞球原位形成。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "模型验收宜包含成球位置分布、尺寸变异与周围组织连续性，并与初始打印几何配准。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 区分管状形态与功能"
+          },
+          {
+            "type": "p",
+            "text": "iPSC 来源前体的自组织研究与间充质细胞和内皮细胞的共培养研究分别考察了血管样结构。 [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "管样长度、分支和连通不同于有效灌流或屏障，应按模型任务选择终点并使用重复实验区分。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 把组织复杂度接到实验终点"
+          },
+          {
+            "type": "p",
+            "text": "肿瘤微环境模型研究将组织构造用于表达体外微环境。 [R05]"
+          },
+          {
+            "type": "p",
+            "text": "把关键成分去掉形成对照，再考察功能或响应变化是否由该成分解释。细胞种类、三维布局和培养方式分开变化。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 把模型平台与组织疗法分开推进"
+          },
+          {
+            "type": "p",
+            "text": "CELLINK 展示光学打印设备，Aspect Biosystems 与 Novo Nordisk 公告组织疗法开发合作。器官样结构专利另展示体外微环境构建路线。 [R10] [R12] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "平台验收侧重跨实验室几何和测试可复现，组织疗法还需组织功能与使用条件的独立验证。"
+          },
+          {
+            "type": "h3",
+            "text": "相关实验的补充比较"
+          },
+          {
+            "type": "h3",
+            "text": "让厚组织获得持续输送"
+          },
+          {
+            "type": "p",
+            "text": "组织增厚会改变营养、氧及代谢物的输送条件。2016年的血管化厚组织研究采用多种打印材料组织细胞和可灌流通道，形成可以维持培养的三维组织结构。[R4102] 关键进展是把内部通道作为组织设计的一部分，使输送路径能够随组织几何一同构建。"
+          },
+          {
+            "type": "p",
+            "text": "研究由此从单个细胞是否存活，推进到不同空间位置是否经历一致或预定的环境。靠近通道与远离通道的细胞可能得到不同供给；通道连接方式也会影响暴露分布。因此，整体活性指标之外还需要空间读出，以识别模型内部是否形成期望的梯度，或出现不希望的区域差异。"
+          },
+          {
+            "type": "p",
+            "text": "从机制上看，可灌流通道同时承担输送与信号边界。改变灌流不仅改变营养，也改变细胞接触的流体环境。后续实验可以保持组织结构不变而改变流动，或保持总体流量不变而改变通道布局。这样的双向对照把制造结构与生物功能真正连接起来，也为N6的动态培养提供基础。"
+          },
+          {
+            "type": "p",
+            "text": "为了判断灌流带来的作用，可以同时观察总体培养表现与远近通道区域的差异。若总体改善而中心区域仍偏离，说明平均指标遗漏了空间问题；若各区域共同变化，则可能需要检查全局培养输入。由位置出发解释结果，使血管化结构的价值能够被逐层检验，而不只用外形相似描述。"
+          },
+          {
+            "type": "h3",
+            "text": "组织组成与药物响应"
+          },
+          {
+            "type": "p",
+            "text": "多细胞模型进一步把组织环境变成研究变量。2020年的结直肠癌体外模型采用打印支架和多种细胞组织三维肿瘤环境，并考察相关生物行为及药物响应。[R4104] 它将问题从培养空间扩展到细胞组成和细胞间相互作用。"
+          },
+          {
+            "type": "p",
+            "text": "这一转变使比较设计格外重要。二维培养、单一细胞三维模型和多细胞三维模型分别加入不同因素；药物进入模型的速度、细胞增殖状态和基质分布也会影响读出。逐层设置对照，可以帮助判断观察到的变化与空间结构、细胞组成还是暴露过程有关，而不是把所有差异都归因于“三维”。"
+          },
+          {
+            "type": "p",
+            "text": "研究的下一步是把功能结果与制造输入对应。支架几何、接种分布和培养时间如何共同决定响应，需要在多个批次中观察。对企业而言，这些关系决定模型能否成为有稳定表现的产品。对学术而言，它们帮助识别可重复的机制效应，并将流动、材料和细胞组成分成可以独立检验的研究问题。"
+          },
+          {
+            "type": "p",
+            "text": "组织组成研究可以采用逐项加入策略：先固定支架和主要细胞，再加入辅助细胞或基质组分，比较新增成分改变了哪个读出。不同因素也可能相互作用，因此需要保留组合对照。这样获得的深度来自解释成分之间的关系，并能为企业选择稳定而必要的模型配置提供依据。"
+          },
+          {
+            "type": "h3",
+            "text": "将灌流作为实验变量"
+          },
+          {
+            "type": "p",
+            "text": "动态培养使时间进入模型设计。2023年的可编程蠕动泵研究提供打印机械结构与流动控制界面，为芯片灌流提供可调平台。[R4106] 对组织模型而言，外部驱动把连续供给、流动变化和实验时间表组织为可重复的输入。"
+          },
+          {
+            "type": "p",
+            "text": "研究可以据此比较静态培养与动态灌流，也可以在相同总交换量下改变流动时序。两者回答不同问题：前者关注环境是否流动，后者关注细胞是否对动态模式敏感。将驱动记录与空间成像同步，可以进一步解释某个区域的变化发生在什么流动阶段。"
+          },
+          {
+            "type": "p",
+            "text": "动态模型还需要区分设定值与实际暴露。流体经过管路、器件和组织后，局部条件可能发生变化。因而构建可靠模型需要把控制输入、流体状态和生物响应同时纳入观察。这样的闭环有助于发现哪些复杂结构在实际运行中带来收益，并把结果反馈到N2的通道布局和N4的组织设计。"
+          },
+          {
+            "type": "p",
+            "text": "动态条件的价值可以通过相位和持续时间体现。相同平均流量下，不同时间程序可能对应不同细胞经历；实验应保存实际控制历史，并与采样时间对应。由此产生的时间序列能够显示响应是快速、累积还是恢复性的，为选择后续功能终点提供更具体的信息。"
+          },
+          {
+            "type": "h3",
+            "text": "灭菌与复用影响培养"
+          },
+          {
+            "type": "p",
+            "text": "培养平台的材料状态会随使用过程改变。2026年的FDM平台研究比较多种聚合物的灭菌适应与细胞行为，指出PHA及其混合体系在所研究的高温灭菌任务中更适配，并观察材料在培养过程中的表现。[R4107] 这使模型评价从首次使用延伸到处理和复用后的状态。"
+          },
+          {
+            "type": "p",
+            "text": "在研究设计中，灭菌、清洗和复用可以看作连续的材料历史。相同设计经过不同处理后，尺寸、表面和透明性可能发生变化，进而影响细胞附着或测量。将处理历史与结果一起记录，有助于解释某个批次为何偏离，也帮助确定哪些部件适合重复使用、哪些更适合更换。"
+          },
+          {
+            "type": "p",
+            "text": "该节点把制造质量与生物可重复性相接。企业提供材料和器件时，使用者需要知道匹配的处理方式与适用任务；学术研究可以通过具体细胞、具体读出和多次处理比较来建立这些知识。最终形成的技术包应同时包含结构文件、处理记录和功能检查，而不只是打印参数。"
+          },
+          {
+            "type": "p",
+            "text": "复用研究还应关注失效发生的顺序：是尺寸先变化、光学先下降，还是细胞状态先偏离。将物理检查和生物读出同步记录，可以判断哪项指标更适合日常预警。对设备制造者而言，这有助于形成维护建议；对模型开发者而言，它能够减少处理历史对生物结论的混杂。"
+          },
+          {
+            "type": "h3",
+            "text": "从模型进入发现流程"
+          },
+          {
+            "type": "p",
+            "text": "模型价值在明确研发任务中变得具体。Prellis于2025年宣布与Lilly开展多靶点药物发现合作，采用其淋巴结类器官与相关平台支持人源抗体发现。[R4110] 企业活动展示了从构建组织样结构向提供研发能力的延伸。"
+          },
+          {
+            "type": "p",
+            "text": "对于这种应用，评价模型的重点是能否产生下一阶段可利用的候选结果。模型结构、细胞相互作用和数据分析共同服务于发现流程，交付物也从器件转为实验输出。由此可以反推需要控制的变量：输入细胞如何组织、不同批次能否得到可比较响应、候选结果怎样在后续环节接受验证。"
+          },
+          {
+            "type": "p",
+            "text": "这一产业路线为学术研究提供了更具体的目标。研究者可以围绕“哪些模型特征影响候选发现”设计实验，逐项比较组织结构与功能。企业则能把长期运行中暴露的批间差异反馈给模型开发者。两者以任务输出和重复表现组织发现流程。模型若进一步承担药物开发中的非临床安全性评价，则进入N9所讨论的验证问题。"
+          },
+          {
+            "type": "p",
+            "text": "研发服务中的模型也需要清楚区分探索阶段和稳定运行阶段。探索阶段可以快速改变结构和细胞配置，稳定阶段则需要保留一致输入来比较候选结果。把两种工作方式分开组织，有助于既维持创新速度，又积累可比较的项目数据，并使合作双方对交付内容形成共同理解。"
+          }
+        ]
+      },
+      {
+        "title": "企业平台与用途",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "设备产品支持实验材料与几何选择，合作公告则属于组织疗法研发。用于体外研究时，可重点比较样品一致性、成像和读数便利性；组织疗法工作应记录目标组织、功能和研发阶段。[R12] [R13]"
+          }
+        ]
+      },
+      {
+        "title": "专利的两个层次",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN113956506A 的双网络水凝胶关注材料，CN120056443A 公开带类器官微环境的打印设备和方法。材料可按成形、湿态与相容性比较，模型则需检验空间安排是否改变可测功能。[R07] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "跨中心复现的比较",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "优先采用材料与结构保持一致的对照，报告阴性和正向响应、批次效应以及试验内分布。把功能结果同时按整体和局部呈现，以判断是否被边界或存活差异主导。[R01] [R04] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "2027–2029 年的观察重点",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "关注组织功能跨批次保持、光学或灌流质量与模型终点的对应，以及模型能否在共同对照中复现对已知干预的反应。以明确的任务范围形成可移交的模型规格。"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "3D Bioprinting of Neurovascular Tissue Modeling with Collagen-Based Low-Viscosity Composites.",
+        "year": "2023",
+        "url": "https://doi.org/10.1002/adhm.202300004",
+        "kind": "paper",
+        "source": "10.1002/adhm.202300004"
+      },
+      {
+        "id": "R02",
+        "title": "3D bioprinting of high-performance hydrogel with in-situ birth of stem cell spheroids.",
+        "year": "2024",
+        "url": "https://doi.org/10.1016/j.bioactmat.2024.09.033",
+        "kind": "paper",
+        "source": "10.1016/j.bioactmat.2024.09.033"
+      },
+      {
+        "id": "R03",
+        "title": "Generation of Self-Organizing Macrovascular Constructs by Bioprinting Human iPSC-Derived Mesodermal Progenitor Cells.",
+        "year": "2026",
+        "url": "https://doi.org/10.1002/advs.76018",
+        "kind": "paper",
+        "source": "10.1002/advs.76018"
+      },
+      {
+        "id": "R04",
+        "title": "Effect of 3D-printed co-culture design of mesenchymal stem cells and human umbilical vein endothelial cells on tubular formation.",
+        "year": "2026",
+        "url": "https://doi.org/10.1038/s41598-026-55959-y",
+        "kind": "paper",
+        "source": "10.1038/s41598-026-55959-y"
+      },
+      {
+        "id": "R05",
+        "title": "3D Bioprinting of Model Tissues That Mimic the Tumor Microenvironment.",
+        "year": "2021",
+        "url": "https://doi.org/10.3390/mi12050535",
+        "kind": "paper",
+        "source": "10.3390/mi12050535"
+      },
+      {
+        "id": "R06",
+        "title": "3D Bioprinting Mesenchymal Stem Cell-Derived Neural Tissues Using a Fibrin-Based Bioink.",
+        "year": "2021",
+        "url": "https://doi.org/10.3390/biom11081250",
+        "kind": "paper",
+        "source": "10.3390/biom11081250"
+      },
+      {
+        "id": "R07",
+        "title": "Dual-network hydrogel as well as preparation method and application thereof",
+        "year": "2022",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN113956506A",
+        "kind": "patent",
+        "source": "CN113956506A"
+      },
+      {
+        "id": "R10",
+        "title": "Printing method and equipment for microenvironment containing organoids based on 3D printing",
+        "year": "2025",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120056443A",
+        "kind": "patent",
+        "source": "CN120056443A"
+      },
+      {
+        "id": "R12",
+        "year": "2023",
+        "title": "Aspect Biosystems and Novo Nordisk enter partnership to develop bioprinted tissue therapeutics",
+        "url": "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=166089",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R13",
+        "year": "",
+        "title": "LUMEN X Gen 3",
+        "url": "https://www.cellink.com/bioprinting/lumen-x/",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R4102",
+        "title": "Three-dimensional bioprinting of thick vascularized tissues",
+        "year": "2016",
+        "source": "PNAS",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26951646/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4104",
+        "title": "3D printed in vitro tumor tissue model of colorectal cancer",
+        "year": "2020",
+        "source": "Theranostics",
+        "url": "https://www.thno.org/v10p12127.htm",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4106",
+        "title": "A User-Centric 3D-Printed Modular Peristaltic Pump for Microfluidic Perfusion Applications",
+        "year": "2023",
+        "source": "Micromachines",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10222968/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4107",
+        "title": "Evaluation of sterilizable 3D-printed cell culture platforms using multiple FDM materials and their effects on cell behavior",
+        "year": "2026",
+        "source": "Applied Microbiology and Biotechnology",
+        "url": "https://link.springer.com/article/10.1007/s00253-026-13849-3",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4110",
+        "title": "Prellis Biologics Enters Multi-Target Drug Discovery & Development Collaboration with Lilly to Advance Human Antibody Therapeutics",
+        "year": "2025",
+        "source": "Prellis Biologics",
+        "url": "https://www.prnewswire.com/news-releases/prellis-biologics-enters-multi-target-drug-discovery--development-collaboration-with-lilly-to-advance-human-antibody-therapeutics-302562425.html",
+        "kind": "企业公告"
+      }
+    ]
+  },
+  "en": {
+    "id": "H35",
+    "p": "P7",
+    "title": "Bioprinted cellular and tissue constructs and in vitro models",
+    "subtitle": "From cell placement during fabrication to tissue function and comparable applications",
+    "thesis": "Bioprinting arranges cells and materials at the outset, while structures and functions that develop during culture require independent measurement. Predictive models require tissue function, controls and reproducibility across batches.",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway",
+      "summary": "Confirm cell survival, then follow the branches of self-organization and measurable environments. Converge on the experimental task and feed abnormal readouts into spatial arrangement and cell composition.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2021",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R06"
+          ],
+          "title": "Establish a time-resolved viability baseline",
+          "question": "How many cells retain potential after printing?",
+          "evidence": "In the fibrin-based neural-like tissue study, day-12 viability was 93.5 ± 0.7% in the experimental arm and 53.4 ± 1.6% in the control."
+        },
+        {
+          "id": "N2",
+          "time": "2023",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R01"
+          ],
+          "title": "Organize cells at a coaxial interface",
+          "question": "Can the model reproduce function across two regions?",
+          "evidence": "A collagen-based study formed a hollow coaxial neurovascular model and observed tight junction proteins, selective permeability and contacts across layers."
+        },
+        {
+          "id": "N3",
+          "time": "2024/2025",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R02"
+          ],
+          "title": "Track post-print self-assembly",
+          "question": "How strongly does initial placement constrain the final tissue?",
+          "evidence": "A DLP bioprinting study observed stem cell spheroids forming in situ in hydrogel constructs."
+        },
+        {
+          "id": "N4",
+          "time": "2026",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R03",
+            "R04"
+          ],
+          "title": "Distinguish tubular morphology and function",
+          "question": "How does cellular organization affect tubular structures?",
+          "evidence": "Self-organization studies using iPSC-derived progenitors and co-cultures of mesenchymal and endothelial cells examined vascular-like structures."
+        },
+        {
+          "id": "N5",
+          "time": "2021",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R05"
+          ],
+          "title": "Link tissue complexity to the assay",
+          "question": "What does a complex model add to a simpler control?",
+          "evidence": "Model tissues were bioprinted to represent features of an in vitro tumor microenvironment."
+        },
+        {
+          "id": "N6",
+          "time": "2023–2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R10",
+            "R12",
+            "R13"
+          ],
+          "title": "Develop assay platforms and tissue therapies on separate tracks",
+          "question": "What distinguishes applications built on research platforms?",
+          "evidence": "CELLINK presents optical fabrication equipment. Aspect Biosystems and Novo Nordisk announced a tissue therapeutics collaboration. An organoid patent illustrates a separate in vitro microenvironment route."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Build tissue interfaces"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Enable in situ organization"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Test interface function"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Test structure formation"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Define tissue endpoints"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Define assay applicability"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Revise compartments and cell choice from failure conditions"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "From viable cells to functional models",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Geometry, viability, tissue-specific markers and stable function form successive evidence. A neurovascular model requires geometry and junction markers alongside permeability. Self-assembly studies track positions of new structures relative to the design over time. [R01] [R02] [R03] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathway and evidence by stage",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Establish a time-resolved viability baseline"
+          },
+          {
+            "type": "p",
+            "text": "In the fibrin-based neural-like tissue study, day-12 viability was 93.5 ± 0.7% in the experimental arm and 53.4 ± 1.6% in the control. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Viability establishes a baseline for functional tests. Report cell number, spatial distribution and functional readouts separately so more surviving cells are not mistaken for changed function per cell."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Organize cells at a coaxial interface"
+          },
+          {
+            "type": "p",
+            "text": "A collagen-based study formed a hollow coaxial neurovascular model and observed tight junction proteins, selective permeability and contacts across layers. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Morphology and permeability are distinct evidence. The latter needs transport controls suited to the model. Match boundary geometry, interface markers and readout location."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Track post-print self-assembly"
+          },
+          {
+            "type": "p",
+            "text": "A DLP bioprinting study observed stem cell spheroids forming in situ in hydrogel constructs. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Acceptance should include spheroid localization, size variation and surrounding continuity, registered to initial geometry."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Distinguish tubular morphology and function"
+          },
+          {
+            "type": "p",
+            "text": "Self-organization studies using iPSC-derived progenitors and co-cultures of mesenchymal and endothelial cells examined vascular-like structures. [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Tubule length, branches and connectivity differ from effective perfusion or barrier function. Choose endpoints for the model task and distinguish them in replicate experiments."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Link tissue complexity to the assay"
+          },
+          {
+            "type": "p",
+            "text": "Model tissues were bioprinted to represent features of an in vitro tumor microenvironment. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Remove the candidate component in a matched control and check whether it explains functional or response differences. Vary cell identity, three-dimensional layout and culture independently."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Develop assay platforms and tissue therapies on separate tracks"
+          },
+          {
+            "type": "p",
+            "text": "CELLINK presents optical fabrication equipment. Aspect Biosystems and Novo Nordisk announced a tissue therapeutics collaboration. An organoid patent illustrates a separate in vitro microenvironment route. [R10] [R12] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Platform acceptance emphasizes geometric and assay reproducibility across labs. Tissue therapeutics require independent verification of tissue function and conditions of use."
+          },
+          {
+            "type": "h3",
+            "text": "Related experimental comparisons"
+          },
+          {
+            "type": "h3",
+            "text": "Sustained transport within thick tissues"
+          },
+          {
+            "type": "p",
+            "text": "Tissue thickening alters the transport conditions of nutrients, oxygen, and metabolites. A 2016 study of vascularized thick tissue used multiple printing materials to arrange cells and perfusable channels, forming three-dimensional tissue structures that could sustain culture. [R4102] A key advancement was incorporating internal channels as part of the tissue design, enabling transport pathways to be constructed along with the tissue geometry."
+          },
+          {
+            "type": "p",
+            "text": "This research thus progresses from assessing the viability of individual cells to determining whether different spatial locations experience a consistent or predetermined environment. Cells near and far from channels may receive different supplies; channel connectivity also affects exposure distribution. Therefore, spatial readouts are needed in addition to overall activity metrics to identify whether desired gradients form within the model or undesirable regional differences emerge."
+          },
+          {
+            "type": "p",
+            "text": "From a mechanistic perspective, perfusion channels simultaneously serve as both transport and signaling boundaries. Altering the perfusion not only alters nutrition but also the fluid environment in which cells come into contact. Subsequent experiments can maintain the tissue structure while altering the flow, or maintain the overall flow rate while changing the channel layout. This two-way control truly connects the manufacturing structure with biological function and provides a foundation for the dynamic culture of N6."
+          },
+          {
+            "type": "p",
+            "text": "To assess the effects of perfusion, both overall culture performance and differences between near and far channel regions can be observed simultaneously. If the overall performance improves while the central region still deviates, it indicates that the average index has overlooked spatial issues; if all regions change together, it may be necessary to examine the global culture input. Interpreting results based on location allows the value of vascularized structures to be examined layer by layer, rather than simply describing them based on morphological similarity."
+          },
+          {
+            "type": "h3",
+            "text": "Tissue composition and drug response"
+          },
+          {
+            "type": "p",
+            "text": "Multicellular models turn the tissue environment into a research variable. A 2020 in vitro colorectal-cancer model used printed scaffolds and multiple cell types to organize a three-dimensional tumor environment, then examined biological behavior and drug responses. This extended the question from culture space to cell composition and cell–cell interactions.[R4104]"
+          },
+          {
+            "type": "p",
+            "text": "This shift makes comparative design particularly important. Different factors are incorporated into two-dimensional culture, single-cell-type three-dimensional models, and multicellular three-dimensional models; the rate of drug entry into the model, cell proliferation status, and matrix distribution also affect readouts. Setting up controls layer by layer can help determine whether observed changes are related to spatial structure, cell composition, or the exposure process, rather than attributing all differences to \"three dimensions.\""
+          },
+          {
+            "type": "p",
+            "text": "The next step in the research is to map the functional results to the manufacturing inputs. How scaffold geometry, seeding distribution, and culture time collectively determine the response needs to be observed across multiple batches. For companies, these relationships determine whether the model can become a product with stable performance. For academia, they help identify reproducible mechanistic effects and separate flow, materials, and cellular composition into independently testable research questions."
+          },
+          {
+            "type": "p",
+            "text": "Tissue composition studies can employ an add-on strategy: first, fix the scaffold and main cells, then add helper cells or matrix components, comparing which readouts are altered by the new component. Different factors may also interact, therefore, it is necessary to maintain a combined control. The depth gained in this way comes from interpreting the relationships between components and can provide a basis for companies to select stable and necessary model configurations."
+          },
+          {
+            "type": "h3",
+            "text": "Perfusion as an experimental variable"
+          },
+          {
+            "type": "p",
+            "text": "Dynamic culture incorporates time into model design. The 2023 programmable peristaltic pump research provides a printable mechanical structure and flow control interface, offering an adjustable platform for chip perfusion. [R4106] For tissue models, external drives organize continuous supply, flow variations, and experimental schedules as repeatable inputs."
+          },
+          {
+            "type": "p",
+            "text": "This study can compare static culture with dynamic perfusion, and can also change the flow timing under the same total exchange volume. The two answer different questions: the former focuses on whether the environment is flowing, while the latter focuses on whether cells are sensitive to dynamic patterns. Synchronizing drive recording with spatial imaging can further explain at what flow stage changes occur in a particular region."
+          },
+          {
+            "type": "p",
+            "text": "The dynamic model also needs to distinguish between setpoints and actual exposure. Local conditions may change as fluid passes through pipes, devices, and tissues. Therefore, building a reliable model requires simultaneously incorporating control inputs, fluid states, and biological responses. This closed-loop approach helps identify which complex structures provide benefits in actual operation and feeds the results back to the channel layout of N2 and the tissue design of N4."
+          },
+          {
+            "type": "p",
+            "text": "The value of dynamic conditions can be demonstrated through phase and duration. Under the same average flow rate, different time programs may correspond to different cell experiences; experiments should preserve the actual control history and correlate it with the sampling time. The resulting time series can show whether the response is rapid, cumulative, or restorative, providing more specific information for selecting subsequent functional endpoints."
+          },
+          {
+            "type": "h3",
+            "text": "Sterilization and reuse affect culture"
+          },
+          {
+            "type": "p",
+            "text": "The material state of the culture platform changes during use. A 2026 FDM platform study compared the sterilization adaptation and cell behavior of various polymers, indicating that PHA and its mixtures were better suited for the studied high-temperature sterilization tasks, and observed the material's performance during culture. This extends the model evaluation from initial use to post-treatment and reuse states. [R4107]"
+          },
+          {
+            "type": "p",
+            "text": "In research design, sterilization, cleaning, and reuse can be viewed as a continuous material history. The same design, after different treatments, may exhibit changes in size, surface, and transparency, thus affecting cell adhesion or measurement. Documenting the treatment history along with the results helps explain why a batch deviates from its intended path and helps determine which components are suitable for reuse and which are better suited for replacement."
+          },
+          {
+            "type": "p",
+            "text": "This node connects manufacturing quality with biological reproducibility. When companies provide materials and devices, users need to know the matching processing methods and applicable tasks; academic research can build this knowledge through specific cells, specific readouts, and multiple processing comparisons. The final technology package should include structural documents, processing logs, and functional checks, not just printing parameters."
+          },
+          {
+            "type": "p",
+            "text": "Reuse studies should also focus on the sequence of failures: whether size changes first, optical properties decline first, or cellular state deviates first. Simultaneous recording of physical inspections and biological readouts can determine which indicator is more suitable for routine early warning. For equipment manufacturers, this helps in formulating maintenance recommendations; for model developers, it reduces the confounding effect of processing history on biological conclusions."
+          },
+          {
+            "type": "h3",
+            "text": "From models to discovery workflows"
+          },
+          {
+            "type": "p",
+            "text": "The value of the model becomes concrete when specific R&D tasks are defined. Prellis announced a multi-target drug discovery collaboration with Lilly in 2025, using its lymph node organoids and related platforms to support human antibody discovery. Corporate activities demonstrate an extension from building tissue-like structures to providing R&D capabilities. [R4110]"
+          },
+          {
+            "type": "p",
+            "text": "For this type of application, the focus of evaluating the model is whether it can generate candidate results usable in the next stage. Model structure, cell interactions, and data analysis all serve the discovery process, and the deliverables shift from devices to experimental outputs. From this, we can infer the variables that need to be controlled: how the input cells are organized, whether comparable responses can be obtained from different batches, and how candidate results are validated in subsequent stages."
+          },
+          {
+            "type": "p",
+            "text": "This industry-wide approach provides more specific goals for academic research. Researchers can design experiments around the question of \"which model features influence candidate findings,\" comparing tissue structure and function item by item. Enterprises can then provide feedback on batch-to-batch differences exposed during long-term operation to model developers. Both organize the discovery process through task outputs and reproducibility. If the model further undertakes non-clinical safety evaluations in drug development, it enters the validation problem discussed in N9."
+          },
+          {
+            "type": "p",
+            "text": "The models used in R&D services also need a clear distinction between the exploratory and stable operation phases. The exploratory phase allows for rapid changes to structure and cell configurations, while the stable phase requires maintaining consistent input to compare candidate results. Organizing these two approaches separately helps maintain the pace of innovation, accumulate comparable project data, and ensure that both parties share a common understanding of the deliverables."
+          }
+        ]
+      },
+      {
+        "title": "Commercial platforms and uses",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Equipment supports material and geometry options for experiments, while the collaboration concerns tissue therapeutic development. For in vitro research compare specimen consistency, imaging and readout practicality. For therapeutic work document target tissue, function and stage. [R12] [R13]"
+          }
+        ]
+      },
+      {
+        "title": "Two layers of patent evidence",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The CN113956506A dual-network hydrogel addresses materials. CN120056443A discloses a printing method and equipment for a microenvironment containing organoids. Compare materials for fabrication, hydrated properties and compatibility, and test whether model architecture changes measured function. [R07] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "Comparisons for multi-site reproducibility",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Start with matched material and structure controls and report negative and positive responses, batch effects and within-assay distributions. Present functional results globally and regionally to detect dominance by boundaries or viability differences. [R01] [R04] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Priorities for 2027–2029",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Watch retention of function across lots, links from optical or perfusion quality to endpoints, and replication of known responses with shared controls. Define transferable model specifications around a clear task."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "3D Bioprinting of Neurovascular Tissue Modeling with Collagen-Based Low-Viscosity Composites.",
+        "year": "2023",
+        "url": "https://doi.org/10.1002/adhm.202300004",
+        "kind": "paper",
+        "source": "10.1002/adhm.202300004"
+      },
+      {
+        "id": "R02",
+        "title": "3D bioprinting of high-performance hydrogel with in-situ birth of stem cell spheroids.",
+        "year": "2024",
+        "url": "https://doi.org/10.1016/j.bioactmat.2024.09.033",
+        "kind": "paper",
+        "source": "10.1016/j.bioactmat.2024.09.033"
+      },
+      {
+        "id": "R03",
+        "title": "Generation of Self-Organizing Macrovascular Constructs by Bioprinting Human iPSC-Derived Mesodermal Progenitor Cells.",
+        "year": "2026",
+        "url": "https://doi.org/10.1002/advs.76018",
+        "kind": "paper",
+        "source": "10.1002/advs.76018"
+      },
+      {
+        "id": "R04",
+        "title": "Effect of 3D-printed co-culture design of mesenchymal stem cells and human umbilical vein endothelial cells on tubular formation.",
+        "year": "2026",
+        "url": "https://doi.org/10.1038/s41598-026-55959-y",
+        "kind": "paper",
+        "source": "10.1038/s41598-026-55959-y"
+      },
+      {
+        "id": "R05",
+        "title": "3D Bioprinting of Model Tissues That Mimic the Tumor Microenvironment.",
+        "year": "2021",
+        "url": "https://doi.org/10.3390/mi12050535",
+        "kind": "paper",
+        "source": "10.3390/mi12050535"
+      },
+      {
+        "id": "R06",
+        "title": "3D Bioprinting Mesenchymal Stem Cell-Derived Neural Tissues Using a Fibrin-Based Bioink.",
+        "year": "2021",
+        "url": "https://doi.org/10.3390/biom11081250",
+        "kind": "paper",
+        "source": "10.3390/biom11081250"
+      },
+      {
+        "id": "R07",
+        "title": "Dual-network hydrogel as well as preparation method and application thereof",
+        "year": "2022",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN113956506A",
+        "kind": "patent",
+        "source": "CN113956506A"
+      },
+      {
+        "id": "R10",
+        "title": "Printing method and equipment for microenvironment containing organoids based on 3D printing",
+        "year": "2025",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120056443A",
+        "kind": "patent",
+        "source": "CN120056443A"
+      },
+      {
+        "id": "R12",
+        "year": "2023",
+        "title": "Aspect Biosystems and Novo Nordisk enter partnership to develop bioprinted tissue therapeutics",
+        "url": "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=166089",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R13",
+        "year": "",
+        "title": "LUMEN X Gen 3",
+        "url": "https://www.cellink.com/bioprinting/lumen-x/",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R4102",
+        "title": "Three-dimensional bioprinting of thick vascularized tissues",
+        "year": "2016",
+        "source": "PNAS",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26951646/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4104",
+        "title": "3D printed in vitro tumor tissue model of colorectal cancer",
+        "year": "2020",
+        "source": "Theranostics",
+        "url": "https://www.thno.org/v10p12127.htm",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4106",
+        "title": "A User-Centric 3D-Printed Modular Peristaltic Pump for Microfluidic Perfusion Applications",
+        "year": "2023",
+        "source": "Micromachines",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10222968/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4107",
+        "title": "Evaluation of sterilizable 3D-printed cell culture platforms using multiple FDM materials and their effects on cell behavior",
+        "year": "2026",
+        "source": "Applied Microbiology and Biotechnology",
+        "url": "https://link.springer.com/article/10.1007/s00253-026-13849-3",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4110",
+        "title": "Prellis Biologics Enters Multi-Target Drug Discovery & Development Collaboration with Lilly to Advance Human Antibody Therapeutics",
+        "year": "2025",
+        "source": "Prellis Biologics",
+        "url": "https://www.prnewswire.com/news-releases/prellis-biologics-enters-multi-target-drug-discovery--development-collaboration-with-lilly-to-advance-human-antibody-therapeutics-302562425.html",
+        "kind": "企业公告"
+      }
+    ]
+  },
+  "de": {
+    "id": "H35",
+    "p": "P7",
+    "title": "Biogedruckte Zell- und Gewebekonstrukte und In-vitro-Modelle",
+    "subtitle": "Von der Zellplatzierung zur Gewebefunktion und vergleichbaren Anwendung",
+    "thesis": "Bioprinting ordnet Zellen und Materialien zu Beginn. Strukturen und Funktionen, die während der Kultur entstehen, sind separat zu messen. Prädiktive Modelle erfordern Gewebefunktion, Kontrollen und Chargenreproduzierbarkeit.",
+    "questions": [],
+    "graph": {
+      "title": "Forschungspfad",
+      "summary": "Zunächst Zellüberleben prüfen, dann Selbstorganisation und messbare Umgebung getrennt verfolgen. Die Versuchsaufgabe führt beide Pfade zusammen. Auffällige Messwerte fließen in Raumaufteilung und Zellzusammensetzung zurück.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2021",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R06"
+          ],
+          "title": "Zeitaufgelöste Vitalitätsreferenz herstellen",
+          "question": "Wie viele Zellen behalten nach dem Druck ihr funktionelles Potenzial?",
+          "evidence": "In der Studie zu nervengewebeähnlichen Konstrukten auf Fibrinbasis lag die Vitalität an Tag 12 bei 93,5 ± 0,7 % in der Versuchsgruppe und 53,4 ± 1,6 % in der Kontrolle."
+        },
+        {
+          "id": "N2",
+          "time": "2023",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R01"
+          ],
+          "title": "Zellen an koaxialer Grenzfläche anordnen",
+          "question": "Kann das Modell Funktionen zwischen zwei Regionen abbilden?",
+          "evidence": "Eine kollagenbasierte Studie erzeugte ein hohles koaxiales neurovaskuläres Modell und beobachtete Tight-Junction-Proteine, selektive Permeabilität und schichtübergreifende Kontakte."
+        },
+        {
+          "id": "N3",
+          "time": "2024/2025",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R02"
+          ],
+          "title": "Selbstorganisation nach dem Druck verfolgen",
+          "question": "Wie stark begrenzt die Anfangsplatzierung das fertige Gewebe?",
+          "evidence": "Eine DLP-Bioprinting-Studie beobachtete in Hydrogelkonstrukten in situ entstehende Stammzellsphäroide."
+        },
+        {
+          "id": "N4",
+          "time": "2026",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R03",
+            "R04"
+          ],
+          "title": "Röhrenform und Funktion trennen",
+          "question": "Wie beeinflusst Zellanordnung tubuläre Strukturen?",
+          "evidence": "Selbstorganisationsstudien mit iPSC-abgeleiteten Vorläufern und Kokulturen mesenchymaler und endothelialer Zellen untersuchten gefäßähnliche Strukturen."
+        },
+        {
+          "id": "N5",
+          "time": "2021",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R05"
+          ],
+          "title": "Gewebekomplexität mit Versuchsaufgabe verbinden",
+          "question": "Was ergänzt ein komplexes Modell gegenüber einer einfachen Kontrolle?",
+          "evidence": "Modellgewebe wurden biogedruckt, um Merkmale einer Tumormikroumgebung in vitro abzubilden."
+        },
+        {
+          "id": "N6",
+          "time": "2023–2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R10",
+            "R12",
+            "R13"
+          ],
+          "title": "Assayplattformen und Gewebetherapien getrennt entwickeln",
+          "question": "Was unterscheidet Anwendungen aus Forschungsplattformen?",
+          "evidence": "CELLINK präsentiert optische Fertigungstechnik. Aspect Biosystems und Novo Nordisk kündigten die gemeinsame Entwicklung von Gewebetherapeutika an. Eine Organoid-Anmeldung zeigt einen eigenen In-vitro-Mikroumgebungspfad."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Gewebegrenzflächen aufbauen"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "In-situ-Organisation ermöglichen"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Grenzflächenfunktion prüfen"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Strukturbildung prüfen"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Gewebeendpunkte definieren"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Eignung für Versuche definieren"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Kompartimente und Zellwahl anhand von Fehlerbedingungen anpassen"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Von vitalen Zellen zu funktionellen Modellen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Geometrie, Vitalität, gewebespezifische Marker und stabile Funktion bilden aufeinanderfolgende Evidenz. Neurovaskuläre Modelle brauchen Geometrie und Verbindungsmarker neben Permeabilität. Selbstorganisation wird räumlich zur Konstruktion im Zeitverlauf erfasst. [R01] [R02] [R03] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungspfad und Evidenz je Station",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Zeitaufgelöste Vitalitätsreferenz herstellen"
+          },
+          {
+            "type": "p",
+            "text": "In der Studie zu nervengewebeähnlichen Konstrukten auf Fibrinbasis lag die Vitalität an Tag 12 bei 93,5 ± 0,7 % in der Versuchsgruppe und 53,4 ± 1,6 % in der Kontrolle. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Vitalität dient als Basis für Funktionsprüfungen. Zellzahl, räumliche Verteilung und Funktion separat berichten, damit mehr überlebende Zellen nicht als Funktionsänderung pro Zelle erscheinen."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Zellen an koaxialer Grenzfläche anordnen"
+          },
+          {
+            "type": "p",
+            "text": "Eine kollagenbasierte Studie erzeugte ein hohles koaxiales neurovaskuläres Modell und beobachtete Tight-Junction-Proteine, selektive Permeabilität und schichtübergreifende Kontakte. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Morphologie und Permeabilität sind getrennte Evidenz. Letztere braucht modellgerechte Transportkontrollen. Grenzgeometrie, Marker und Messort aufeinander beziehen."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Selbstorganisation nach dem Druck verfolgen"
+          },
+          {
+            "type": "p",
+            "text": "Eine DLP-Bioprinting-Studie beobachtete in Hydrogelkonstrukten in situ entstehende Stammzellsphäroide. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Abnahme sollte Lage, Größenstreuung und Gewebekontinuität der Sphäroide erfassen und zur Ausgangsgeometrie registrieren."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Röhrenform und Funktion trennen"
+          },
+          {
+            "type": "p",
+            "text": "Selbstorganisationsstudien mit iPSC-abgeleiteten Vorläufern und Kokulturen mesenchymaler und endothelialer Zellen untersuchten gefäßähnliche Strukturen. [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Röhrenlänge, Verzweigung und Vernetzung unterscheiden sich von wirksamer Perfusion oder Barriere. Endpunkte aufgabenbezogen wählen und in Wiederholungsversuchen trennen."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Gewebekomplexität mit Versuchsaufgabe verbinden"
+          },
+          {
+            "type": "p",
+            "text": "Modellgewebe wurden biogedruckt, um Merkmale einer Tumormikroumgebung in vitro abzubilden. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Die fragliche Komponente in einer angeglichenen Kontrolle weglassen und prüfen, ob sie Funktions- oder Reaktionsunterschiede erklärt. Zellart, räumliche Anordnung und Kulturführung unabhängig variieren."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Assayplattformen und Gewebetherapien getrennt entwickeln"
+          },
+          {
+            "type": "p",
+            "text": "CELLINK präsentiert optische Fertigungstechnik. Aspect Biosystems und Novo Nordisk kündigten die gemeinsame Entwicklung von Gewebetherapeutika an. Eine Organoid-Anmeldung zeigt einen eigenen In-vitro-Mikroumgebungspfad. [R10] [R12] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Plattformabnahme betont laborübergreifende Geometrie und Versuchsreproduzierbarkeit. Gewebetherapeutika brauchen eigenständige Prüfung von Gewebefunktion und Anwendungsbedingungen."
+          },
+          {
+            "type": "h3",
+            "text": "Ergänzende Versuchsvergleiche"
+          },
+          {
+            "type": "h3",
+            "text": "Dicke Gewebe kontinuierlich versorgen"
+          },
+          {
+            "type": "p",
+            "text": "Die Verdickung von Gewebe verändert die Transportbedingungen für Nährstoffe, Sauerstoff und Stoffwechselprodukte. Eine Studie aus dem Jahr 2016 untersuchte vaskularisiertes, dickes Gewebe mithilfe verschiedener gedruckter Materialien, um Zellen und perfundierbare Kanäle räumlich anzuordnen und so dreidimensionale Gewebestrukturen zu formen, die eine Zellkultur ermöglichten. [R4102] Ein wichtiger Fortschritt bestand in der Integration interner Kanäle in das Gewebedesign, wodurch Transportwege parallel zur Gewebegeometrie konstruiert werden konnten."
+          },
+          {
+            "type": "p",
+            "text": "Diese Forschung geht somit von der Beurteilung der Lebensfähigkeit einzelner Zellen zur Bestimmung über, ob unterschiedliche räumliche Bereiche ein einheitliches oder vorbestimmtes Umfeld aufweisen. Zellen in der Nähe und in größerer Entfernung von Kanälen können unterschiedlich versorgt werden; auch die Kanalverbindungen beeinflussen die Expositionsverteilung. Daher sind neben allgemeinen Aktivitätsmetriken räumliche Messwerte erforderlich, um festzustellen, ob sich im Modell die gewünschten Gradienten ausbilden oder unerwünschte regionale Unterschiede auftreten."
+          },
+          {
+            "type": "p",
+            "text": "Aus mechanistischer Sicht dienen Perfusionskanäle gleichzeitig als Transport- und Signalgrenzen. Eine Veränderung der Perfusion beeinflusst nicht nur die Nährstoffversorgung, sondern auch die Flüssigkeitsumgebung, in der die Zellen in Kontakt treten. In nachfolgenden Experimenten kann die Gewebestruktur erhalten bleiben, während der Fluss verändert wird, oder die Gesamtflussrate beibehalten werden, während die Kanalanordnung verändert wird. Diese bidirektionale Steuerung verbindet die Produktionsstruktur mit der biologischen Funktion und bildet die Grundlage für die dynamische Kultivierung von N6."
+          },
+          {
+            "type": "p",
+            "text": "Um die Auswirkungen der Perfusion zu beurteilen, können sowohl die Gesamtleistung der Kultur als auch Unterschiede zwischen nahen und fernen Kanalregionen gleichzeitig beobachtet werden. Verbessert sich die Gesamtleistung, während die zentrale Region weiterhin abweicht, deutet dies darauf hin, dass der Durchschnittsindex räumliche Aspekte nicht berücksichtigt hat. Verändern sich hingegen alle Regionen gleichzeitig, ist es möglicherweise notwendig, den gesamten Kulturinput zu untersuchen. Die Interpretation der Ergebnisse anhand des Standorts ermöglicht es, den Wert vaskularisierter Strukturen Schicht für Schicht zu untersuchen, anstatt sie lediglich anhand morphologischer Ähnlichkeit zu beschreiben."
+          },
+          {
+            "type": "h3",
+            "text": "Gewebezusammensetzung und Wirkstoffreaktion"
+          },
+          {
+            "type": "p",
+            "text": "Multizelluläre Modelle machen die Gewebeumgebung selbst zur Forschungsvariable. Ein In-vitro-Modell des kolorektalen Karzinoms von 2020 ordnete mit gedruckten Gerüsten und mehreren Zelltypen eine dreidimensionale Tumorumgebung an und untersuchte biologisches Verhalten und Arzneimittelreaktionen. Damit erweiterte sich die Fragestellung vom Kulturraum auf Zellzusammensetzung und Zellinteraktionen.[R4104]"
+          },
+          {
+            "type": "p",
+            "text": "Diese Entwicklung macht vergleichende Studiendesigns besonders wichtig. Unterschiedliche Faktoren spielen in zweidimensionalen Kulturen, dreidimensionalen Modellen mit einem Zelltyp und dreidimensionalen Mehrzellmodellen eine Rolle; die Geschwindigkeit des Wirkstoffeintritts in das Modell, der Zellproliferationsstatus und die Matrixverteilung beeinflussen die Ergebnisse. Die schrittweise Einrichtung von Kontrollen kann helfen festzustellen, ob beobachtete Veränderungen mit der räumlichen Struktur, der Zellzusammensetzung oder dem Expositionsprozess zusammenhängen, anstatt alle Unterschiede auf „drei Dimensionen“ zurückzuführen."
+          },
+          {
+            "type": "p",
+            "text": "Der nächste Schritt im Forschungsprojekt besteht darin, die funktionalen Ergebnisse den Produktionsparametern zuzuordnen. Es muss untersucht werden, wie Gerüstgeometrie, Zellverteilung und Kultivierungszeit gemeinsam die Reaktion beeinflussen. Für Unternehmen entscheiden diese Zusammenhänge darüber, ob das Modell zu einem Produkt mit stabiler Leistung weiterentwickelt werden kann. Für die Wissenschaft helfen sie, reproduzierbare Wirkungsmechanismen zu identifizieren und Strömung, Materialien und Zellzusammensetzung in unabhängig voneinander überprüfbare Forschungsfragen zu unterteilen."
+          },
+          {
+            "type": "p",
+            "text": "Studien zur Gewebezusammensetzung können eine Additionsstrategie anwenden: Zunächst werden Gerüst und Hauptzelltyp konstant gehalten, anschließend werden Helferzellen oder Matrixkomponenten hinzugefügt und verglichen, welche Messwerte durch die neue Komponente verändert werden. Da verschiedene Faktoren interagieren können, ist eine kombinierte Kontrolle erforderlich. Die so gewonnenen Erkenntnisse beruhen auf der Interpretation der Wechselwirkungen zwischen den Komponenten und können Unternehmen als Grundlage für die Auswahl stabiler und notwendiger Modellkonfigurationen dienen."
+          },
+          {
+            "type": "h3",
+            "text": "Perfusion als experimentelle Variable"
+          },
+          {
+            "type": "p",
+            "text": "Die dynamische Zellkultur integriert die Zeit in das Modelldesign. Die programmierbare Peristaltikpumpe aus dem Jahr 2023 bietet eine druckbare mechanische Struktur und eine Durchflusssteuerungsschnittstelle und damit eine anpassbare Plattform für die Chipperfusion. [R4106] Für Gewebemodelle organisieren externe Antriebe die kontinuierliche Versorgung, Durchflussvariationen und experimentelle Abläufe als wiederholbare Eingangsgrößen."
+          },
+          {
+            "type": "p",
+            "text": "Auf dieser Grundlage lassen sich statische Kultur und dynamische Perfusion vergleichen oder bei gleichem Gesamtaustauschvolumen unterschiedliche zeitliche Flussmuster prüfen. Die erste Frage betrifft das Vorliegen einer Strömung, die zweite die Empfindlichkeit der Zellen gegenüber dynamischen Mustern. Synchronisierte Antriebsprotokolle und räumliche Bildgebung zeigen, in welcher Strömungsphase Veränderungen einer Region entstehen."
+          },
+          {
+            "type": "p",
+            "text": "Das dynamische Modell muss zudem zwischen Sollwerten und tatsächlicher Exposition unterscheiden. Lokale Bedingungen können sich ändern, wenn Flüssigkeit durch Rohre, Geräte und Gewebe strömt. Daher erfordert der Aufbau eines zuverlässigen Modells die gleichzeitige Berücksichtigung von Steuereingaben, Flüssigkeitszuständen und biologischen Reaktionen. Dieser geschlossene Regelkreis hilft dabei, diejenigen komplexen Strukturen zu identifizieren, die im realen Betrieb Vorteile bieten, und liefert die Ergebnisse für die Kanalanordnung von N2 und das Gewebedesign von N4 zurück."
+          },
+          {
+            "type": "p",
+            "text": "Der Wert dynamischer Bedingungen lässt sich anhand von Phase und Dauer veranschaulichen. Bei gleicher mittlerer Durchflussrate können unterschiedliche Zeitprogramme unterschiedlichen Zellreaktionen entsprechen; Experimente sollten daher den tatsächlichen Kontrollverlauf erfassen und mit der Abtastzeit korrelieren. Die resultierenden Zeitreihen zeigen, ob die Reaktion schnell, kumulativ oder regenerativer Natur ist und liefern somit spezifischere Informationen für die Auswahl nachfolgender funktioneller Endpunkte."
+          },
+          {
+            "type": "h3",
+            "text": "Einfluss von Sterilisation und Wiederverwendung auf die Kultur"
+          },
+          {
+            "type": "p",
+            "text": "Der Materialzustand der Kulturplattform verändert sich während der Nutzung. Eine FDM-Plattformstudie aus dem Jahr 2026 verglich die Sterilisationsanpassung und das Zellverhalten verschiedener Polymere. Dabei zeigte sich, dass PHA und seine Mischungen für die untersuchten Hochtemperatur-Sterilisationsaufgaben besser geeignet waren. Zudem wurde das Materialverhalten während der Kultivierung beobachtet. [R4107] Dies erweitert die Modellevaluierung von der Erstverwendung auf den Zustand nach der Behandlung und die Wiederverwendung."
+          },
+          {
+            "type": "p",
+            "text": "Im Forschungsdesign lassen sich Sterilisation, Reinigung und Wiederverwendung als kontinuierliche Materialhistorie betrachten. Dasselbe Design kann nach verschiedenen Behandlungen Veränderungen in Größe, Oberfläche und Transparenz aufweisen und dadurch die Zelladhäsion oder Messungen beeinflussen. Die Dokumentation der Behandlungshistorie zusammen mit den Ergebnissen hilft zu verstehen, warum eine Charge vom geplanten Verlauf abweicht, und zu bestimmen, welche Komponenten wiederverwendbar und welche besser ersetzt werden sollten."
+          },
+          {
+            "type": "p",
+            "text": "Dieser Knotenpunkt verbindet Fertigungsqualität mit biologischer Reproduzierbarkeit. Wenn Unternehmen Materialien und Geräte bereitstellen, müssen Anwender die passenden Verarbeitungsmethoden und Anwendungsbereiche kennen. Die akademische Forschung kann dieses Wissen durch spezifische Zellen, spezifische Messwerte und vergleichende Analysen verschiedener Verarbeitungsprozesse aufbauen. Das finale Technologiepaket sollte neben Druckparametern auch Strukturdokumente, Verarbeitungsprotokolle und Funktionsprüfungen umfassen."
+          },
+          {
+            "type": "p",
+            "text": "Wiederverwendungsstudien sollten sich auch auf die Abfolge von Ausfällen konzentrieren: ob sich zuerst die Größe ändert, die optischen Eigenschaften zuerst nachlassen oder der Zellzustand zuerst abweicht. Die gleichzeitige Erfassung physikalischer Inspektionen und biologischer Messwerte kann bestimmen, welcher Indikator sich besser für die routinemäßige Frühwarnung eignet. Für Gerätehersteller hilft dies bei der Formulierung von Wartungsempfehlungen; für Modellentwickler reduziert es den verfälschenden Einfluss der Verarbeitungshistorie auf biologische Schlussfolgerungen."
+          },
+          {
+            "type": "h3",
+            "text": "Gewebemodelle in die Wirkstoffentwicklung überführen"
+          },
+          {
+            "type": "p",
+            "text": "Der Wert des Modells wird konkret, sobald spezifische F&E-Aufgaben definiert sind. Prellis kündigte 2025 eine Kooperation mit Lilly zur Wirkstoffforschung mit mehreren Zielstrukturen an. Dabei sollen die Lymphknoten-Organoide und verwandte Plattformen von Prellis die Entwicklung humaner Antikörper unterstützen. [R4110] Die Unternehmensaktivitäten zeigen eine Erweiterung des Tätigkeitsfelds von der Herstellung gewebeähnlicher Strukturen hin zur Bereitstellung von F&E-Kapazitäten."
+          },
+          {
+            "type": "p",
+            "text": "Bei dieser Art von Anwendung liegt der Fokus der Modellbewertung darauf, ob das Modell Kandidatenergebnisse generieren kann, die im nächsten Schritt verwendbar sind. Modellstruktur, Zellinteraktionen und Datenanalyse dienen dem Entdeckungsprozess, und die Ergebnisse verlagern sich von Geräten hin zu experimentellen Daten. Daraus lassen sich die zu kontrollierenden Variablen ableiten: die Organisation der Eingangszellen, die Möglichkeit vergleichbarer Reaktionen aus verschiedenen Chargen und die Validierung der Kandidatenergebnisse in nachfolgenden Schritten."
+          },
+          {
+            "type": "p",
+            "text": "Dieser branchenweite Ansatz ermöglicht spezifischere Ziele für die akademische Forschung. Forschende können Experimente zur Frage „Welche Modellmerkmale beeinflussen die Ergebnisse?“ konzipieren und dabei Gewebestruktur und Funktion Punkt für Punkt vergleichen. Unternehmen können den Modellentwicklern anschließend Rückmeldung zu Chargenunterschieden geben, die im Langzeitbetrieb auftreten. Beide Ansätze strukturieren den Entdeckungsprozess anhand von Aufgabenergebnissen und Reproduzierbarkeit. Führt das Modell darüber hinaus präklinische Sicherheitsbewertungen in der Arzneimittelentwicklung durch, unterliegt es dem in N9 beschriebenen Validierungsproblem."
+          },
+          {
+            "type": "p",
+            "text": "Die in F&E-Dienstleistungen verwendeten Modelle erfordern ebenfalls eine klare Unterscheidung zwischen der explorativen und der stabilen Betriebsphase. Die explorative Phase ermöglicht schnelle Änderungen an Struktur und Zellkonfigurationen, während die stabile Phase die Aufrechterhaltung konsistenter Eingangsdaten erfordert, um mögliche Ergebnisse vergleichen zu können. Die separate Organisation dieser beiden Ansätze trägt dazu bei, das Innovationstempo aufrechtzuerhalten, vergleichbare Projektdaten zu sammeln und sicherzustellen, dass beide Parteien ein gemeinsames Verständnis der zu erbringenden Leistungen haben."
+          }
+        ]
+      },
+      {
+        "title": "Kommerzielle Plattformen und Nutzung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Geräte unterstützen Material- und Geometriewahl im Versuch. Die Kooperation betrifft Entwicklung von Gewebetherapeutika. In vitro zählen Probenkonsistenz, Bildgebung und Auslesung, therapeutisch Zielgewebe, Funktion und Entwicklungsstufe. [R12] [R13]"
+          }
+        ]
+      },
+      {
+        "title": "Zwei Ebenen der Patentevidenz",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN113956506A adressiert mit einem Doppelnetzwerkhydrogel das Material. CN120056443A offenbart Druckmethode und Gerät für eine organoidhaltige Mikroumgebung. Material nach Formgebung, Nasszustand und Verträglichkeit vergleichen, Modellarchitektur anhand messbarer Funktion prüfen. [R07] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "Vergleiche für standortübergreifende Reproduzierbarkeit",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Mit Kontrollen gleicher Struktur und gleichen Materials beginnen. Negative und positive Antworten, Chargeneffekte und Versuchsverteilungen berichten. Funktionswerte global und regional zeigen, um Einflüsse von Grenzen oder Vitalitätsunterschieden zu erkennen. [R01] [R04] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Schwerpunkte 2027–2029",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Funktionserhalt über Chargen, Beziehungen optischer oder perfusionsbezogener Qualität zu Endpunkten und Reproduktion bekannter Antworten mit gemeinsamen Kontrollen verfolgen. Übertragbare Spezifikationen an einer klaren Aufgabe ausrichten."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "3D Bioprinting of Neurovascular Tissue Modeling with Collagen-Based Low-Viscosity Composites.",
+        "year": "2023",
+        "url": "https://doi.org/10.1002/adhm.202300004",
+        "kind": "paper",
+        "source": "10.1002/adhm.202300004"
+      },
+      {
+        "id": "R02",
+        "title": "3D bioprinting of high-performance hydrogel with in-situ birth of stem cell spheroids.",
+        "year": "2024",
+        "url": "https://doi.org/10.1016/j.bioactmat.2024.09.033",
+        "kind": "paper",
+        "source": "10.1016/j.bioactmat.2024.09.033"
+      },
+      {
+        "id": "R03",
+        "title": "Generation of Self-Organizing Macrovascular Constructs by Bioprinting Human iPSC-Derived Mesodermal Progenitor Cells.",
+        "year": "2026",
+        "url": "https://doi.org/10.1002/advs.76018",
+        "kind": "paper",
+        "source": "10.1002/advs.76018"
+      },
+      {
+        "id": "R04",
+        "title": "Effect of 3D-printed co-culture design of mesenchymal stem cells and human umbilical vein endothelial cells on tubular formation.",
+        "year": "2026",
+        "url": "https://doi.org/10.1038/s41598-026-55959-y",
+        "kind": "paper",
+        "source": "10.1038/s41598-026-55959-y"
+      },
+      {
+        "id": "R05",
+        "title": "3D Bioprinting of Model Tissues That Mimic the Tumor Microenvironment.",
+        "year": "2021",
+        "url": "https://doi.org/10.3390/mi12050535",
+        "kind": "paper",
+        "source": "10.3390/mi12050535"
+      },
+      {
+        "id": "R06",
+        "title": "3D Bioprinting Mesenchymal Stem Cell-Derived Neural Tissues Using a Fibrin-Based Bioink.",
+        "year": "2021",
+        "url": "https://doi.org/10.3390/biom11081250",
+        "kind": "paper",
+        "source": "10.3390/biom11081250"
+      },
+      {
+        "id": "R07",
+        "title": "Dual-network hydrogel as well as preparation method and application thereof",
+        "year": "2022",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN113956506A",
+        "kind": "patent",
+        "source": "CN113956506A"
+      },
+      {
+        "id": "R10",
+        "title": "Printing method and equipment for microenvironment containing organoids based on 3D printing",
+        "year": "2025",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120056443A",
+        "kind": "patent",
+        "source": "CN120056443A"
+      },
+      {
+        "id": "R12",
+        "year": "2023",
+        "title": "Aspect Biosystems and Novo Nordisk enter partnership to develop bioprinted tissue therapeutics",
+        "url": "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=166089",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R13",
+        "year": "",
+        "title": "LUMEN X Gen 3",
+        "url": "https://www.cellink.com/bioprinting/lumen-x/",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R4102",
+        "title": "Three-dimensional bioprinting of thick vascularized tissues",
+        "year": "2016",
+        "source": "PNAS",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26951646/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4104",
+        "title": "3D printed in vitro tumor tissue model of colorectal cancer",
+        "year": "2020",
+        "source": "Theranostics",
+        "url": "https://www.thno.org/v10p12127.htm",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4106",
+        "title": "A User-Centric 3D-Printed Modular Peristaltic Pump for Microfluidic Perfusion Applications",
+        "year": "2023",
+        "source": "Micromachines",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10222968/",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4107",
+        "title": "Evaluation of sterilizable 3D-printed cell culture platforms using multiple FDM materials and their effects on cell behavior",
+        "year": "2026",
+        "source": "Applied Microbiology and Biotechnology",
+        "url": "https://link.springer.com/article/10.1007/s00253-026-13849-3",
+        "kind": "原始研究"
+      },
+      {
+        "id": "R4110",
+        "title": "Prellis Biologics Enters Multi-Target Drug Discovery & Development Collaboration with Lilly to Advance Human Antibody Therapeutics",
+        "year": "2025",
+        "source": "Prellis Biologics",
+        "url": "https://www.prnewswire.com/news-releases/prellis-biologics-enters-multi-target-drug-discovery--development-collaboration-with-lilly-to-advance-human-antibody-therapeutics-302562425.html",
+        "kind": "企业公告"
+      }
+    ]
+  }
+}

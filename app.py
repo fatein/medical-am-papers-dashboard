@@ -9,7 +9,7 @@ from dashboard.views import overview,trends,explorer,updates,header
 from dashboard.filter_state import sync_year_range
 from dashboard.enterprise_data import load_enterprises,load_enterprise_events,load_enterprise_observations,filter_enterprises
 from dashboard.enterprise_views import enterprise_overview,enterprise_timeline,enterprise_explorer
-from dashboard.cross_data import load_cross_analysis
+from dashboard.cross_data import load_cross_analysis, load_questions_for_navigation
 from dashboard.cross_views import cross_analysis_page
 from dashboard.report_data import load_question_reports
 from dashboard.report_navigation import resolve_report_id, clear_report_route
@@ -159,7 +159,7 @@ with st.sidebar:
     elif page=='专利检索':
         patent_source, filtered_patents = patent_filters(ROOT)
     elif page=='学术与企业联系':
-        st.caption('本页可按 P 层、研究方向和研究问题逐级查看。')
+        st.caption('可按 P 层筛选 H01–H36 研究方向，再查看方向报告与研究问题。')
     elif page=='反馈汇总':
         st.caption('按反馈类型查看分类建议与报告评估。')
     else:
@@ -201,7 +201,7 @@ elif page=='反馈汇总':
     feedback_summary(ROOT,public_mode=PUBLIC_MODE)
 elif page=='学术与企业联系':
     try:
-        cross_data=load_cross_analysis(ROOT)
+        cross_data=load_questions_for_navigation(load_cross_analysis(ROOT),ROOT)
         reports=load_question_reports(ROOT)['reports']
         if direction_report_id is not None:
             direction_report_page(ROOT,str(direction_report_id),public_mode=PUBLIC_MODE)

@@ -1,0 +1,1070 @@
+{
+  "zh": {
+    "id": "H33",
+    "p": "P6",
+    "title": "个体化放疗施源、定位与剂量补偿器具",
+    "subtitle": "把患者几何、治疗计划与到位实测放到同一链条",
+    "thesis": "个体化器具把图像上的轮廓转化为治疗条件。施源模板需要控制轨迹，定位约束需要重复患者姿势，剂量补偿材料需要复现接触和剂量作用。",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络图",
+      "summary": "从施源和外照射两路展开，分别识别轨迹、姿势和接触误差，再把到位检查与剂量验证反馈给设计和计划。",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2023",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R03"
+          ],
+          "title": "确定施源或补偿任务",
+          "question": "几何要改变的是通道还是表面覆盖？",
+          "evidence": "非中心复发宫颈癌的非共面模板研究把施源轨迹与剂量及安全性对应。"
+        },
+        {
+          "id": "N2",
+          "time": "2024",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R02"
+          ],
+          "title": "将模板置入临床工作流",
+          "question": "技术读数如何联系实际治疗过程？",
+          "evidence": "宫颈癌近距离放疗的 3D 打印研究评价手术定位与临床应用结果。"
+        },
+        {
+          "id": "N3",
+          "time": "2025",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R05"
+          ],
+          "title": "把定位误差放到重复分次中",
+          "question": "首日合适能否转化为每次重复？",
+          "evidence": "鼻咽癌研究分析 3D 打印个体化定位固定。"
+        },
+        {
+          "id": "N4",
+          "time": "2025",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R01"
+          ],
+          "title": "测量剂量覆盖与身体接触",
+          "question": "定制补偿物能改变哪项剂量指标？",
+          "evidence": "乳腺切除术后 35 人队列的中位随访为 16 个月。配对计划比较中，含打印 bolus 的计划适形性和均匀性更高，两项 P < 0.001。"
+        },
+        {
+          "id": "N5",
+          "time": "2026",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R04",
+            "R06"
+          ],
+          "title": "连接验证病例和临床随访",
+          "question": "不同证据层各能回答什么？",
+          "evidence": "头颈部补偿器的概念验证报告初步剂量，宫颈癌回顾性研究比较模板与徒手的长期预后。"
+        },
+        {
+          "id": "N6",
+          "time": "2022–2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R07",
+            "R08",
+            "R10"
+          ],
+          "title": "在生产交付中保留复核点",
+          "question": "源图像、制造和治疗端怎样交接？",
+          "evidence": "Adaptiiv FDA 资料连接计划系统、bolus 或近距离放疗软件与打印附件，TrueFit 资料明确患者图像输入。机构生产研究另提供多年度质控实践。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "设计施源轨迹"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "确定外照射摆位"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "链接临床比较"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "kind": "advance",
+          "label": "把接触变成剂量输入"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "建立成品放行"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "建立核对节点"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "把分次误差反馈给计划和设计"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "器具作用的三个可测环节",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "施源、定位、剂量改变分别对应通道坐标、重复摆位和成品密度与接触。图纸尺寸一致后仍需在代表性条件下核对器具实际如何工作。[R01] [R03] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 确定施源或补偿任务"
+          },
+          {
+            "type": "p",
+            "text": "非中心复发宫颈癌的非共面模板研究把施源轨迹与剂量及安全性对应。 [R03]"
+          },
+          {
+            "type": "p",
+            "text": "轨迹对照应保留实际插入与计划之间的偏差，再按靶区附近器官的相对位置分层。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 将模板置入临床工作流"
+          },
+          {
+            "type": "p",
+            "text": "宫颈癌近距离放疗的 3D 打印研究评价手术定位与临床应用结果。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "应分别记录入路、术中调整、剂量覆盖与并发症。将工作流程改善和随访结局各自保留。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 把定位误差放到重复分次中"
+          },
+          {
+            "type": "p",
+            "text": "鼻咽癌研究分析 3D 打印个体化定位固定。 [R05]"
+          },
+          {
+            "type": "p",
+            "text": "按方向报告平移和旋转误差及随分次的变化。体形变化导致的间隙，应与初次设计偏差分别标注。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 测量剂量覆盖与身体接触"
+          },
+          {
+            "type": "p",
+            "text": "乳腺切除术后 35 人队列的中位随访为 16 个月。配对计划比较中，含打印 bolus 的计划适形性和均匀性更高，两项 P < 0.001。 [R01]"
+          },
+          {
+            "type": "p",
+            "text": "剂量比较是患者内计划对照，随访反应来自实际接受混合计划的人群。按试验设计分别解释两条证据。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 连接验证病例和临床随访"
+          },
+          {
+            "type": "p",
+            "text": "头颈部补偿器的概念验证报告初步剂量，宫颈癌回顾性研究比较模板与徒手的长期预后。 [R04] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "个案量测用于定位误差及适配，回顾性比较应核查起始病例差异、并用剂量和流程解释因果链。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 在生产交付中保留复核点"
+          },
+          {
+            "type": "p",
+            "text": "Adaptiiv FDA 资料连接计划系统、bolus 或近距离放疗软件与打印附件，TrueFit 资料明确患者图像输入。机构生产研究另提供多年度质控实践。 [R07] [R08] [R10]"
+          },
+          {
+            "type": "p",
+            "text": "每次交付核对图像版本、计划对应、密度、尺寸和到位条件。出现间隙或姿势变化时追溯是材料、制造、患者变化还是实际摆位引起。"
+          }
+        ]
+      },
+      {
+        "title": "计划、临床接触与批量制造的三种证据",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "乳腺切除术后研究纳入 35 位使用打印 bolus 的患者，中位随访 16 个月。研究用两个 CT 数据集建立有无 bolus 的配对计划，并保持靶区及计划方法一致。以接近 1 的适形指数衡量处方剂量与靶区的重合，以接近 0 的均匀性指数衡量靶内剂量差异，两个量表分别说明不同的计划改进。观察队列的皮肤反应来自实际治疗记录，需和患者内计划对照分开陈列。 [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Peter MacCallum Cancer Centre 在 2018 年 11 月至 2023 年 2 月记录 2,089 件个体化 bolus，典型周转约 3 天。研究中 93.6% 的成品面向光子治疗。所用 Spidermaker PLA 的 CT 数报告为 80 ± 8 HU。机构初期逐件 CT 核验，随后引入定期及重大工艺变动后的标准楔块测试，电子束用成品另行核验。产量、密度稳定性与任务级质控分别回答流程能否交付、材料能否复现及成品能否符合具体用途。 [R10]"
+          },
+          {
+            "type": "p",
+            "text": "制造质控还需识别两种气隙：打印内部的空隙改变等效密度，器具与皮肤之间的间隙改变接触几何。记录哪类缺陷发生、出现在成品哪个区段，并把检查结果回接到切片、打印、摆位或治疗计划。对近距离放疗模板，核验对象换成实际通道与计划的关系和靶区覆盖。采用统一的版本记录，同时给每种器具保留其专属验收指标。 [R03] [R07] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "企业产品和机构产线",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "K213438 包含软件与患者匹配附件。TrueFit 继续把治疗计划系统图像用于成品设计。院内和服务商交付可对照重做率、响应时间与最终质检，而临床终点需保持统一。[R07] [R08] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "专利与剂量验证",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "US20220409928A1 描述利用患者表面数据设计打印 bolus，并披露可预留容纳剂量计的腔。设计收益分别体现为复杂轮廓接触与测量几何可复现性，需对应各自测试。[R09] [R01]"
+          }
+        ]
+      },
+      {
+        "title": "从计划差异到可追踪误差",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "每种器具各设打印前数字对照、打印后质量测量和使用时核查。计划剂量和实测相异时，对实际销售或临床交付的器具分别定位材料、摆位和装配误差。[R04] [R07] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "2027–2029 年的观察重点",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "更有价值的进展包括各中心采用共同的成品验收指标、同一患者多分次到位记录，以及随访中调整或重做对治疗流程的影响可直接复核。"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "The dosimetric value and safety evaluation of 3D printed bolus in adjuvant intensity-modulated radiotherapy after radical mastectomy for breast cancer: a prospective cohort study.",
+        "year": "2025",
+        "url": "https://doi.org/10.1186/s13014-025-02659-y",
+        "kind": "paper",
+        "source": "10.1186/s13014-025-02659-y"
+      },
+      {
+        "id": "R02",
+        "title": "3D-printed brachytherapy in patients with cervical cancer: improving efficacy and safety outcomes.",
+        "year": "2024",
+        "url": "https://doi.org/10.1186/s13014-024-02536-0",
+        "kind": "paper",
+        "source": "10.1186/s13014-024-02536-0"
+      },
+      {
+        "id": "R03",
+        "title": "Dosimetric parameters and safety analysis of 3D-printing non-coplanar template-assisted interstitial brachytherapy for non-centrally recurrent cervical cancer.",
+        "year": "2023",
+        "url": "https://doi.org/10.3389/fonc.2023.1174470",
+        "kind": "paper",
+        "source": "10.3389/fonc.2023.1174470"
+      },
+      {
+        "id": "R04",
+        "title": "Development and Preliminary Dosimetric Evaluation of a 3D-Printed Custom Tissue Compensator for Head and Neck Cancer Radiotherapy: A Proof-of-Concept Case Series.",
+        "year": "2026",
+        "url": "https://doi.org/10.1177/15330338261478186",
+        "kind": "paper",
+        "source": "10.1177/15330338261478186"
+      },
+      {
+        "id": "R05",
+        "title": "Analysis of the application of 3D-printed personalized positioning fixation in nasopharyngeal carcinoma radiotherapy.",
+        "year": "2025",
+        "url": "https://doi.org/10.1002/acm2.70337",
+        "kind": "paper",
+        "source": "10.1002/acm2.70337"
+      },
+      {
+        "id": "R06",
+        "title": "Comparison of long-term prognoses between 3D-printed template-guided and conventional freehand interstitial brachytherapy for locally advanced cervical cancer: a single-center retrospective study.",
+        "year": "2026",
+        "url": "https://doi.org/10.3389/fonc.2026.1766456",
+        "kind": "paper",
+        "source": "10.3389/fonc.2026.1766456"
+      },
+      {
+        "id": "R07",
+        "year": "2022",
+        "title": "FDA 510(k) K213438 — 3D Bolus Software Application, 3D Brachy Software Application, Patient-Matched 3D Printed Radiation Therapy Accessory",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf21/K213438.pdf",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R08",
+        "year": "2026",
+        "title": "FDA 510(k) K260308 — TrueFit Bolus",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf26/K260308.pdf",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R09",
+        "year": "2022",
+        "title": "System and method for manufacturing bolus for radiotherapy using a three-dimensional printer",
+        "url": "https://patents.google.com/patent/US20220409928A1/en",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R10",
+        "year": "2024",
+        "title": "Additive manufacturing of patient specific bolus for radiotherapy: large scale production and quality assurance",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11166743/",
+        "source": "",
+        "kind": "reference"
+      }
+    ]
+  },
+  "en": {
+    "id": "H33",
+    "p": "P6",
+    "title": "Patient-specific radiotherapy applicators, positioning and dose compensation devices",
+    "subtitle": "Link patient anatomy, planning and in-position measurements",
+    "thesis": "Patient-specific devices translate image geometry into treatment conditions. Applicator templates constrain trajectories, positioning devices reproduce posture, and dose compensators reproduce contact and dose effects.",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway",
+      "summary": "Brachytherapy and external-beam routes identify trajectory, positioning and contact errors, then feed in-position checks and dose verification back to design and planning.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2023",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R03"
+          ],
+          "title": "Define catheter guidance or compensation",
+          "question": "Does geometry change the trajectory or surface coverage?",
+          "evidence": "Noncoplanar template research in noncentral recurrent cervical cancer related trajectories to dosimetry and safety."
+        },
+        {
+          "id": "N2",
+          "time": "2024",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R02"
+          ],
+          "title": "Move the template into clinical workflow",
+          "question": "How do device measurements connect to treatment?",
+          "evidence": "A clinical study evaluated 3D printing in cervical cancer brachytherapy."
+        },
+        {
+          "id": "N3",
+          "time": "2025",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R05"
+          ],
+          "title": "Measure positioning across fractions",
+          "question": "Does a good first-day fit reproduce across fractions?",
+          "evidence": "A nasopharyngeal cancer study evaluated personalized printed immobilization."
+        },
+        {
+          "id": "N4",
+          "time": "2025",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R01"
+          ],
+          "title": "Measure dose coverage and body contact",
+          "question": "Which dose endpoint changes with custom bolus?",
+          "evidence": "A 35-patient postmastectomy cohort had a median follow-up of 16 months. Paired plan comparisons showed improved conformity and homogeneity with printed bolus, both P < 0.001."
+        },
+        {
+          "id": "N5",
+          "time": "2026",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R04",
+            "R06"
+          ],
+          "title": "Connect validation cases and follow-up",
+          "question": "What can each evidence layer answer?",
+          "evidence": "A head-and-neck compensator proof-of-concept reports preliminary dose findings. A cervical cancer retrospective study compares longer-term outcomes for template and freehand cases."
+        },
+        {
+          "id": "N6",
+          "time": "2022–2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R07",
+            "R08",
+            "R10"
+          ],
+          "title": "Retain verification at device delivery",
+          "question": "How do imaging, manufacture and treatment teams hand over the device?",
+          "evidence": "Adaptiiv's FDA records connect planning, bolus or brachytherapy software and printed accessories. TrueFit documents patient imaging as input. A centre study provides multi-year production QA experience."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Plan applicator trajectories"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Define external-beam setup"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Link clinical comparison"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Translate contact into dose input"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Define device release"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Define checks"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Feed fraction-level errors back to plan and design"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Three measurable device functions",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Applicator guidance, positioning and dose modification respectively correspond to channel coordinates, setup repeatability and device density and contact. Once dimensional fidelity is established, verify function under representative conditions. [R01] [R03] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathway and evidence by stage",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Define catheter guidance or compensation"
+          },
+          {
+            "type": "p",
+            "text": "Noncoplanar template research in noncentral recurrent cervical cancer related trajectories to dosimetry and safety. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Compare inserted and planned trajectories and stratify by the position of adjacent organs relative to the target."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Move the template into clinical workflow"
+          },
+          {
+            "type": "p",
+            "text": "A clinical study evaluated 3D printing in cervical cancer brachytherapy. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Record approaches, intraoperative adjustments, dose coverage and complications separately. Preserve both workflow and follow-up outcomes."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Measure positioning across fractions"
+          },
+          {
+            "type": "p",
+            "text": "A nasopharyngeal cancer study evaluated personalized printed immobilization. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Report directional translation, rotation and change across fractions. Distinguish gaps due to changing anatomy from initial design deviations."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Measure dose coverage and body contact"
+          },
+          {
+            "type": "p",
+            "text": "A 35-patient postmastectomy cohort had a median follow-up of 16 months. Paired plan comparisons showed improved conformity and homogeneity with printed bolus, both P < 0.001. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Dosimetry came from within-patient planning comparisons, and follow-up came from the mixed-plan cohort. Interpret each according to its design."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Connect validation cases and follow-up"
+          },
+          {
+            "type": "p",
+            "text": "A head-and-neck compensator proof-of-concept reports preliminary dose findings. A cervical cancer retrospective study compares longer-term outcomes for template and freehand cases. [R04] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Case measurements localize errors and fit. Retrospective comparisons should check baseline differences and use dosimetry and workflow to interpret the pathway."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Retain verification at device delivery"
+          },
+          {
+            "type": "p",
+            "text": "Adaptiiv's FDA records connect planning, bolus or brachytherapy software and printed accessories. TrueFit documents patient imaging as input. A centre study provides multi-year production QA experience. [R07] [R08] [R10]"
+          },
+          {
+            "type": "p",
+            "text": "Verify image version, plan match, density, dimensions and placement at release. Trace gaps or posture changes to material, manufacture, anatomy or positioning."
+          }
+        ]
+      },
+      {
+        "title": "Treatment plans, patient contact and production at scale",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The post-mastectomy bolus study included 35 patients and reported a median follow-up of 16 months. It built paired plans with and without bolus from two CT data sets, keeping the target and planning method the same. A conformity index closer to 1 indicates closer overlap between the prescription dose and target. A homogeneity index closer to 0 indicates less variation within the target. The observed skin reactions came from actual treatment and belong alongside the paired plan comparison as a separate outcome. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Peter MacCallum Cancer Centre recorded 2,089 patient-specific boluses between November 2018 and February 2023, with turnaround of about 3 days. Photon treatments accounted for 93.6% of the boluses. The study reported a CT number of 80 ± 8 HU for its Spidermaker PLA. Early production used CT checks of each piece. The centre later added standard wedge tests on a schedule and after major process changes, with separate checks for electron boluses. Output, density consistency and product-specific QA describe delivery capacity, material reproducibility and performance for the planned use. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "Production checks address two kinds of air gap. A void inside the print changes equivalent density, while a gap between accessory and skin alters the contact geometry. Record the type and location of a defect and trace it to slicing, printing, positioning or planning. For brachytherapy templates, the corresponding checks are the relationship between actual and planned channels and target coverage. A shared version record can retain distinct acceptance measures for each accessory. [R03] [R07] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "Commercial products and institutional production",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "K213438 covers software and patient-matched accessories. TrueFit continues to use planning-system imaging to design the device. Compare in-house and service delivery using remake rate, turnaround and final checks with common clinical endpoints. [R07] [R08] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "Patents and dose verification",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "US20220409928A1 discloses patient-surface inputs for printed bolus design and cavities that can accommodate dosimeters. Test conformity on complex contours and reproducible measurement geometry separately. [R09] [R01]"
+          }
+        ]
+      },
+      {
+        "title": "Trace errors behind planning differences",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Establish separate digital pre-print comparisons, post-print quality measurements and in-use checks. When calculated and measured dose differ, locate material, positioning or assembly errors on the delivered device. [R04] [R07] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "Priorities for 2027–2029",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Informative progress includes shared device acceptance metrics across centres, longitudinal in-position records across patient fractions and measurable effects of adjustment or remakes on treatment workflow."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "The dosimetric value and safety evaluation of 3D printed bolus in adjuvant intensity-modulated radiotherapy after radical mastectomy for breast cancer: a prospective cohort study.",
+        "year": "2025",
+        "url": "https://doi.org/10.1186/s13014-025-02659-y",
+        "kind": "paper",
+        "source": "10.1186/s13014-025-02659-y"
+      },
+      {
+        "id": "R02",
+        "title": "3D-printed brachytherapy in patients with cervical cancer: improving efficacy and safety outcomes.",
+        "year": "2024",
+        "url": "https://doi.org/10.1186/s13014-024-02536-0",
+        "kind": "paper",
+        "source": "10.1186/s13014-024-02536-0"
+      },
+      {
+        "id": "R03",
+        "title": "Dosimetric parameters and safety analysis of 3D-printing non-coplanar template-assisted interstitial brachytherapy for non-centrally recurrent cervical cancer.",
+        "year": "2023",
+        "url": "https://doi.org/10.3389/fonc.2023.1174470",
+        "kind": "paper",
+        "source": "10.3389/fonc.2023.1174470"
+      },
+      {
+        "id": "R04",
+        "title": "Development and Preliminary Dosimetric Evaluation of a 3D-Printed Custom Tissue Compensator for Head and Neck Cancer Radiotherapy: A Proof-of-Concept Case Series.",
+        "year": "2026",
+        "url": "https://doi.org/10.1177/15330338261478186",
+        "kind": "paper",
+        "source": "10.1177/15330338261478186"
+      },
+      {
+        "id": "R05",
+        "title": "Analysis of the application of 3D-printed personalized positioning fixation in nasopharyngeal carcinoma radiotherapy.",
+        "year": "2025",
+        "url": "https://doi.org/10.1002/acm2.70337",
+        "kind": "paper",
+        "source": "10.1002/acm2.70337"
+      },
+      {
+        "id": "R06",
+        "title": "Comparison of long-term prognoses between 3D-printed template-guided and conventional freehand interstitial brachytherapy for locally advanced cervical cancer: a single-center retrospective study.",
+        "year": "2026",
+        "url": "https://doi.org/10.3389/fonc.2026.1766456",
+        "kind": "paper",
+        "source": "10.3389/fonc.2026.1766456"
+      },
+      {
+        "id": "R07",
+        "year": "2022",
+        "title": "FDA 510(k) K213438 — 3D Bolus Software Application, 3D Brachy Software Application, Patient-Matched 3D Printed Radiation Therapy Accessory",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf21/K213438.pdf",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R08",
+        "year": "2026",
+        "title": "FDA 510(k) K260308 — TrueFit Bolus",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf26/K260308.pdf",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R09",
+        "year": "2022",
+        "title": "System and method for manufacturing bolus for radiotherapy using a three-dimensional printer",
+        "url": "https://patents.google.com/patent/US20220409928A1/en",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R10",
+        "year": "2024",
+        "title": "Additive manufacturing of patient specific bolus for radiotherapy: large scale production and quality assurance",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11166743/",
+        "source": "",
+        "kind": "reference"
+      }
+    ]
+  },
+  "de": {
+    "id": "H33",
+    "p": "P6",
+    "title": "Patientenspezifische Strahlentherapie-Applikatoren, Lagerungs- und Dosiskompensationshilfen",
+    "subtitle": "Patientengeometrie, Planung und Messung in Position verbinden",
+    "thesis": "Patientenspezifische Hilfen übersetzen Bildgeometrie in Behandlungsbedingungen. Applikatorschablonen führen Bahnen, Lagerungshilfen reproduzieren die Position, und Dosiskompensatoren bilden Kontakt und Dosiswirkung ab.",
+    "questions": [],
+    "graph": {
+      "title": "Forschungspfad",
+      "summary": "Brachytherapie und externe Bestrahlung erfassen Bahn-, Lagerungs- und Kontaktfehler. Lage- und Dosisprüfung fließen in Konstruktion und Planung zurück.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2023",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R03"
+          ],
+          "title": "Katheterführung oder Kompensation definieren",
+          "question": "Ändert die Geometrie den Pfad oder die Oberflächenabdeckung?",
+          "evidence": "Nichtkoplanare Schablonen bei nicht zentral rezidivierendem Zervixkarzinom wurden hinsichtlich Bahnen, Dosimetrie und Sicherheit untersucht."
+        },
+        {
+          "id": "N2",
+          "time": "2024",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R02"
+          ],
+          "title": "Schablone in den klinischen Ablauf integrieren",
+          "question": "Wie sind Gerätemessungen mit der Behandlung verknüpft?",
+          "evidence": "Eine klinische Studie bewertete 3D-Druck bei der Brachytherapie des Zervixkarzinoms."
+        },
+        {
+          "id": "N3",
+          "time": "2025",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R05"
+          ],
+          "title": "Lagerung über Fraktionen messen",
+          "question": "Ist die gute Passung am ersten Tag reproduzierbar?",
+          "evidence": "Eine Studie beim Nasopharynxkarzinom untersuchte personalisierte gedruckte Immobilisation."
+        },
+        {
+          "id": "N4",
+          "time": "2025",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R01"
+          ],
+          "title": "Dosisabdeckung und Körperkontakt messen",
+          "question": "Welcher Dosisendpunkt ändert sich mit individuellem Bolus?",
+          "evidence": "Bei 35 Personen nach Mastektomie betrug die mediane Nachbeobachtung 16 Monate. Gepaarte Planvergleiche zeigten mit Druckbolus bessere Konformität und Homogenität, beide P < 0,001."
+        },
+        {
+          "id": "N5",
+          "time": "2026",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R04",
+            "R06"
+          ],
+          "title": "Validierungsfälle und Nachbeobachtung verbinden",
+          "question": "Was beantwortet jede Evidenzstufe?",
+          "evidence": "Ein Machbarkeitsnachweis zum Kopf-Hals-Kompensator berichtet vorläufige Dosisbefunde. Eine retrospektive Zervixkarzinomstudie vergleicht Langzeitverläufe mit Schablone und freihändigem Vorgehen."
+        },
+        {
+          "id": "N6",
+          "time": "2022–2026",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R07",
+            "R08",
+            "R10"
+          ],
+          "title": "Prüfpunkte bei der Bereitstellung erhalten",
+          "question": "Wie übergeben Bildgebung, Fertigung und Behandlung das Bauteil?",
+          "evidence": "Adaptiiv-FDA-Dokumente verbinden Planung, Bolus- bzw. Brachytherapiesoftware und Druckzubehör. TrueFit dokumentiert Patientendaten als Eingabe. Eine Zentrumsstudie ergänzt mehrjährige Fertigungs-QS."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Applikatorbahnen planen"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Lagerung für externe Bestrahlung definieren"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Klinischen Vergleich anbinden"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Kontakt als Dosiseingabe erfassen"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Bauteilfreigabe festlegen"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Prüfpunkte festlegen"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Fraktionsfehler an Planung und Design zurückführen"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Drei messbare Gerätefunktionen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Applikatorführung, Lagerung und Dosisänderung entsprechen Kanal-Koordinaten, Reproduzierbarkeit der Position sowie Dichte und Kontakt. Nach Maßprüfung folgt die Funktionsprüfung unter repräsentativen Bedingungen. [R01] [R03] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungspfad und Evidenz je Station",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Katheterführung oder Kompensation definieren"
+          },
+          {
+            "type": "p",
+            "text": "Nichtkoplanare Schablonen bei nicht zentral rezidivierendem Zervixkarzinom wurden hinsichtlich Bahnen, Dosimetrie und Sicherheit untersucht. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Eingebrachte und geplante Bahnen vergleichen und nach Lage benachbarter Organe relativ zum Ziel stratifizieren."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Schablone in den klinischen Ablauf integrieren"
+          },
+          {
+            "type": "p",
+            "text": "Eine klinische Studie bewertete 3D-Druck bei der Brachytherapie des Zervixkarzinoms. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Zugang, intraoperative Anpassung, Dosisabdeckung und Komplikationen getrennt erfassen. Ablauf- und Verlaufsergebnisse einzeln erhalten."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Lagerung über Fraktionen messen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie beim Nasopharynxkarzinom untersuchte personalisierte gedruckte Immobilisation. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Richtungsbezogene Translation, Rotation und Verlauf je Fraktion ausweisen. Anatomiebedingte Spalte von anfänglichen Designabweichungen trennen."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Dosisabdeckung und Körperkontakt messen"
+          },
+          {
+            "type": "p",
+            "text": "Bei 35 Personen nach Mastektomie betrug die mediane Nachbeobachtung 16 Monate. Gepaarte Planvergleiche zeigten mit Druckbolus bessere Konformität und Homogenität, beide P < 0,001. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Dosimetrie stammt aus Planvergleichen innerhalb derselben Person, Verlaufsdaten aus der Kohorte mit gemischten Plänen. Beide gemäß Studiendesign auswerten."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Validierungsfälle und Nachbeobachtung verbinden"
+          },
+          {
+            "type": "p",
+            "text": "Ein Machbarkeitsnachweis zum Kopf-Hals-Kompensator berichtet vorläufige Dosisbefunde. Eine retrospektive Zervixkarzinomstudie vergleicht Langzeitverläufe mit Schablone und freihändigem Vorgehen. [R04] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Fallmessungen lokalisieren Fehler und Passung. Retrospektive Vergleiche prüfen Ausgangsunterschiede und nutzen Dosimetrie sowie Ablauf zur Interpretation des Pfads."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Prüfpunkte bei der Bereitstellung erhalten"
+          },
+          {
+            "type": "p",
+            "text": "Adaptiiv-FDA-Dokumente verbinden Planung, Bolus- bzw. Brachytherapiesoftware und Druckzubehör. TrueFit dokumentiert Patientendaten als Eingabe. Eine Zentrumsstudie ergänzt mehrjährige Fertigungs-QS. [R07] [R08] [R10]"
+          },
+          {
+            "type": "p",
+            "text": "Bei Freigabe Bildversion, Planbezug, Dichte, Maße und Position prüfen. Spalte und Lageänderungen auf Material, Fertigung, Anatomie oder Lagerung zurückführen."
+          }
+        ]
+      },
+      {
+        "title": "Dosisplanung, Patientenkontakt und Serienfertigung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Die Studie nach Mastektomie schloss 35 Personen ein und berichtete eine mediane Nachbeobachtung von 16 Monaten. Aus zwei CT-Datensätzen wurden gepaarte Pläne mit und ohne Bolus erstellt, bei identischem Zielvolumen und gleicher Planungsmethode. Ein Konformitätsindex nahe 1 steht für eine stärkere Überlappung der Verschreibungsdosis mit dem Zielvolumen. Ein Homogenitätsindex nahe 0 steht für eine gleichmäßigere Zieldosis. Die beobachteten Hautreaktionen stammen aus der tatsächlichen Behandlung und werden als eigener Endpunkt neben dem Planvergleich erfasst. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Das Peter MacCallum Cancer Centre erfasste zwischen November 2018 und Februar 2023 insgesamt 2.089 patientenspezifische Bolusauflagen bei rund 3 Tagen Durchlaufzeit. 93,6 % der Auflagen waren für Photonenbehandlungen vorgesehen. Die Studie berichtet für Spidermaker PLA eine CT-Zahl von 80 ± 8 HU. Anfangs wurde jedes Stück per CT geprüft. Später kamen standardisierte Prüfkeile für regelmäßige Kontrollen und wesentliche Prozessänderungen sowie gesonderte Prüfungen für Elektronenbolus hinzu. Stückzahl, Dichtekonstanz und gerätespezifische Qualitätssicherung beschreiben Kapazität, Materialreproduzierbarkeit und Eignung für die geplante Anwendung. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "Die Fertigungsprüfung unterscheidet zwei Arten von Luftspalten. Ein Hohlraum im Druck verändert die äquivalente Dichte. Ein Spalt zwischen Auflage und Haut verändert die Kontaktgeometrie. Ort und Art werden dokumentiert und dem Slicing, der Fertigung, der Lagerung am Patienten oder der Planung zugeordnet. Bei Brachytherapieschablonen werden tatsächliche und geplante Kanäle sowie die Abdeckung des Zielvolumens verglichen. Eine gemeinsame Versionsdokumentation kann die gerätespezifischen Abnahmekriterien bewahren. [R03] [R07] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "Kommerzielle Produkte und Fertigung im Zentrum",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "K213438 umfasst Software und patientenspezifisches Zubehör. TrueFit nutzt weiterhin Bilder aus der Planung für das Bauteildesign. Interne und externe Bereitstellung nach Neuanfertigung, Lieferzeit und Endprüfung bei gemeinsamen klinischen Endpunkten vergleichen. [R07] [R08] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "Patente und Dosisprüfung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "US20220409928A1 offenbart Patientenkonturen für den Bolusentwurf und Aussparungen für Dosimeter. Kontakt an komplexen Konturen und reproduzierbare Messgeometrie getrennt prüfen. [R09] [R01]"
+          }
+        ]
+      },
+      {
+        "title": "Fehler hinter Planunterschieden nachvollziehen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Digitale Vorabvergleiche, Qualitätsmessung nach Druck und Prüfung im Einsatz trennen. Bei Abweichung zwischen Soll- und Messdosis Material-, Lagerungs- oder Montagefehler am bereitgestellten Gerät lokalisieren. [R04] [R07] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "Schwerpunkte 2027–2029",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Aussagekräftig sind gemeinsame Abnahmekriterien über Zentren, Lageprotokolle über mehrere Fraktionen und messbare Auswirkungen von Anpassung oder Neuanfertigung auf den Ablauf."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "The dosimetric value and safety evaluation of 3D printed bolus in adjuvant intensity-modulated radiotherapy after radical mastectomy for breast cancer: a prospective cohort study.",
+        "year": "2025",
+        "url": "https://doi.org/10.1186/s13014-025-02659-y",
+        "kind": "paper",
+        "source": "10.1186/s13014-025-02659-y"
+      },
+      {
+        "id": "R02",
+        "title": "3D-printed brachytherapy in patients with cervical cancer: improving efficacy and safety outcomes.",
+        "year": "2024",
+        "url": "https://doi.org/10.1186/s13014-024-02536-0",
+        "kind": "paper",
+        "source": "10.1186/s13014-024-02536-0"
+      },
+      {
+        "id": "R03",
+        "title": "Dosimetric parameters and safety analysis of 3D-printing non-coplanar template-assisted interstitial brachytherapy for non-centrally recurrent cervical cancer.",
+        "year": "2023",
+        "url": "https://doi.org/10.3389/fonc.2023.1174470",
+        "kind": "paper",
+        "source": "10.3389/fonc.2023.1174470"
+      },
+      {
+        "id": "R04",
+        "title": "Development and Preliminary Dosimetric Evaluation of a 3D-Printed Custom Tissue Compensator for Head and Neck Cancer Radiotherapy: A Proof-of-Concept Case Series.",
+        "year": "2026",
+        "url": "https://doi.org/10.1177/15330338261478186",
+        "kind": "paper",
+        "source": "10.1177/15330338261478186"
+      },
+      {
+        "id": "R05",
+        "title": "Analysis of the application of 3D-printed personalized positioning fixation in nasopharyngeal carcinoma radiotherapy.",
+        "year": "2025",
+        "url": "https://doi.org/10.1002/acm2.70337",
+        "kind": "paper",
+        "source": "10.1002/acm2.70337"
+      },
+      {
+        "id": "R06",
+        "title": "Comparison of long-term prognoses between 3D-printed template-guided and conventional freehand interstitial brachytherapy for locally advanced cervical cancer: a single-center retrospective study.",
+        "year": "2026",
+        "url": "https://doi.org/10.3389/fonc.2026.1766456",
+        "kind": "paper",
+        "source": "10.3389/fonc.2026.1766456"
+      },
+      {
+        "id": "R07",
+        "year": "2022",
+        "title": "FDA 510(k) K213438 — 3D Bolus Software Application, 3D Brachy Software Application, Patient-Matched 3D Printed Radiation Therapy Accessory",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf21/K213438.pdf",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R08",
+        "year": "2026",
+        "title": "FDA 510(k) K260308 — TrueFit Bolus",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf26/K260308.pdf",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R09",
+        "year": "2022",
+        "title": "System and method for manufacturing bolus for radiotherapy using a three-dimensional printer",
+        "url": "https://patents.google.com/patent/US20220409928A1/en",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R10",
+        "year": "2024",
+        "title": "Additive manufacturing of patient specific bolus for radiotherapy: large scale production and quality assurance",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11166743/",
+        "source": "",
+        "kind": "reference"
+      }
+    ]
+  }
+}

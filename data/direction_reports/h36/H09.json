@@ -1,0 +1,1247 @@
+{
+  "zh": {
+    "id": "H09",
+    "p": "P6",
+    "title": "心血管与腹部脏器术前规划模型",
+    "subtitle": "把结构可视化推进到策略改变与器械预演",
+    "thesis": "高价值的术前模型针对一个可记录的决策。刚性模型显示空间关系，软模型与动态模型分别用于操作预演和器械相互作用。评估从表示误差延伸到实际改变了什么。",
+    "questions": [],
+    "graph": {
+      "title": "从影像到规划决定、软组织预演和动态台架",
+      "summary": "选定病例问题后匹配静态、软组织或动态模型。计划变更与实际执行反馈下一批病例选择和制作要求。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2017",
+          "refs": [
+            "R01",
+            "R02"
+          ],
+          "title": "保留与手术相关的细小结构",
+          "question": "哪一处结构决定手术选择？",
+          "evidence": "记录原始影像、分割对象及打印壁的关系。相近的总体尺寸可能掩盖血管分支或薄隔有无被保留。"
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2017",
+          "refs": [
+            "R02"
+          ],
+          "title": "先心病先记录改变了哪个决定",
+          "question": "模型是否改变了手术计划？",
+          "evidence": "10 个中心的 40 例先心病例中，模型使 19 例手术决策改变。作者另外报告 320 项血管直径测量，用于评价模型与影像的一致性。"
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2023–2026",
+          "refs": [
+            "R04",
+            "R05"
+          ],
+          "title": "用软材料模拟肝脏操作",
+          "question": "材料需要再现哪种实际操作？",
+          "evidence": "肝胆胰规划需要显示病灶与血管关系；软肝模型还可以用于操作训练。几何、局部硬度和手术器具的相互作用应分别评估。"
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2026",
+          "refs": [
+            "R06"
+          ],
+          "title": "静态定位扩展到动态主动脉台架",
+          "question": "流动条件下器械表现怎样变化？",
+          "evidence": "静态模型审核预期分支与开窗位置，动态模型进一步考察血流条件下器械展开及形态变化。"
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 1,
+          "time": "2022–2026",
+          "refs": [
+            "R03",
+            "R06",
+            "R08"
+          ],
+          "title": "按临床问题比较屏幕、实体和预演",
+          "question": "是否需要实体，还是用数字方案即可？",
+          "evidence": "同一病例的 CAD、VR 和实体可承担不同任务。只有在实体接触或器械使用决定选择时，材料响应才应纳入验收。"
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2026–2029",
+          "refs": [
+            "R02",
+            "R05",
+            "R07"
+          ],
+          "title": "把实际执行接回计划",
+          "question": "改变后的方案是否实际执行？",
+          "evidence": "对照原计划、看模型后计划和术中完成方案。记录有无返回原方案，并在病例预算内统计全流程时间。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "渲染复杂心脏关系"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "为软组织操作赋材"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "用动态边界验证器械"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "检查实体是否改变策略"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "检查手感承载哪项任务"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "对照计划与展开"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "识别实际执行"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "关键遗漏反馈分割"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究对象与评价边界",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "本方向涵盖为心血管或腹部脏器手术、介入预先处理病例信息的实体模型。模型设计应从问题启动，例如能否同时看清两条吻合通路，或是需要练习在多个病灶与血管之间保留哪个切面。 [R02] [R04] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与研究解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "保留与手术相关的细小结构"
+          },
+          {
+            "type": "p",
+            "text": "记录原始影像、分割对象及打印壁的关系。相近的总体尺寸可能掩盖血管分支或薄隔有无被保留。 [R01] [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "先心病先记录改变了哪个决定"
+          },
+          {
+            "type": "p",
+            "text": "10 个中心的 40 例先心病例中，模型使 19 例手术决策改变。作者另外报告 320 项血管直径测量，用于评价模型与影像的一致性。 [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "用软材料模拟肝脏操作"
+          },
+          {
+            "type": "p",
+            "text": "肝胆胰规划需要显示病灶与血管关系；软肝模型还可以用于操作训练。几何、局部硬度和手术器具的相互作用应分别评估。 [R04] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "静态定位扩展到动态主动脉台架"
+          },
+          {
+            "type": "p",
+            "text": "静态模型审核预期分支与开窗位置，动态模型进一步考察血流条件下器械展开及形态变化。 [R06]"
+          },
+          {
+            "type": "h3",
+            "text": "按临床问题比较屏幕、实体和预演"
+          },
+          {
+            "type": "p",
+            "text": "同一病例的 CAD、VR 和实体可承担不同任务。只有在实体接触或器械使用决定选择时，材料响应才应纳入验收。 [R03] [R06] [R08]"
+          },
+          {
+            "type": "h3",
+            "text": "把实际执行接回计划"
+          },
+          {
+            "type": "p",
+            "text": "对照原计划、看模型后计划和术中完成方案。记录有无返回原方案，并在病例预算内统计全流程时间。 [R02] [R05] [R07]"
+          },
+          {
+            "type": "p",
+            "text": "在先心病研究中，模型取得与影像尺寸接近和改变团队预案两个结果。二者的区别在于一个是几何准确度，一个是决策。后续比较可按预先指定的器械或术式选择记录变化，再用实际执行核对，避免将主观理解程度与实际改变混合。 [R02] [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "影像到实体的误差链"
+          },
+          {
+            "type": "p",
+            "text": "Bücking等2017年以肋骨、肝和肺模型实施影像分割、网格修整及FDM打印流程，并用数字与实体尺寸比较评价结果。不同组织采用不同分割方式，说明解剖模型质量首先取决于影像与对象的匹配。[R01]"
+          },
+          {
+            "type": "p",
+            "text": "选择多种器官实例的意义在于揭示同一个流程中的不同困难。高对比骨边界与软组织边界的可见性不同，孔洞修补和平滑也可能改变狭窄、分叉或病变轮廓。最终实体尺寸接近数字网格，只能说明打印传递较好，不能证明网格本身已准确表达影像。误差应沿转换链定位，否则制造精度的提高可能掩盖更早的分割偏差。"
+          },
+          {
+            "type": "h3",
+            "text": "先心病多中心决策"
+          },
+          {
+            "type": "p",
+            "text": "Valverde等2017年在10个中心纳入40例复杂先心病，以常规影像决策、查看实体模型后的决策及术中发现进行比较；19例手术决策发生改变。该设计同时评价模型尺寸和决策影响，避免仅以满意度说明临床用途。[R02]"
+          },
+          {
+            "type": "p",
+            "text": "病例内前后比较的优势是每个复杂解剖都作为自身参照，能够直接记录新增空间信息引发的方案变化。不过查看模型通常发生在更晚阶段，团队也获得了额外思考时间，所以变化不能全部解释为触觉或实体媒介的独有作用。最有信息量的记录是改变了哪一解剖判断、该判断为何不能从原有视图充分获得，以及术中是否支持这一改变。"
+          },
+          {
+            "type": "h3",
+            "text": "多形式临床建模服务"
+          },
+          {
+            "type": "p",
+            "text": "Ghosh等2022年报告2018—2020年儿科心脏中心的112个建模案例，其中96个服务于临床规划。团队联合打印模型、平面屏幕、虚拟现实和数字修复设计，展示了跨学科服务的实际组织方式。[R03]"
+          },
+          {
+            "type": "p",
+            "text": "这里的方法学进展是把模型从单例技术展示放入持续服务。不同显示形式共享分割结果，使问题可以先在数字环境中修改，再决定是否制造实体。需要区分服务利用、病例难度与效果：高复杂度病例更可能被转入建模，因而直接比较使用者与未使用者的手术结果会混入选择差异。记录申请理由和决定节点比单纯累计使用次数更有解释力。"
+          },
+          {
+            "type": "h3",
+            "text": "肝胆胰复杂病例成本"
+          },
+          {
+            "type": "p",
+            "text": "2026年肝胆胰研究在三例复杂病例中分析影像衍生打印模型的解剖表现、临床使用与资源成本，并结合系统综述。原始试点部分把患者选择与制作负担放在同一框架中考察。[R05]"
+          },
+          {
+            "type": "p",
+            "text": "这类病例的核心信息通常是肿瘤、血管与剩余器官之间的关系，模型需要表达相对位置而非每个组织的全部外观。选择病例试点适合识别制作流程中的实际瓶颈，也适合发现外科团队究竟使用哪些信息。若透明外壳造成遮挡或颜色区分失效，即使尺寸准确也会降低任务完成度，因此表达设计应作为独立的质量维度。"
+          },
+          {
+            "type": "h3",
+            "text": "静态与动态主动脉"
+          },
+          {
+            "type": "p",
+            "text": "2026年复杂主动脉研究纳入46例回顾性比较，结合刚性解剖模型和连接搏动流系统的顺应性模型。动态模型提供器械通过与展开信息；辅助规划组手术时间及造影剂用量较少，一年结局未见同样差异。[R06]"
+          },
+          {
+            "type": "p",
+            "text": "动态模型的价值不来自多一个部件，而来自能回答静态形状无法回答的接触问题。材料顺应性、管壁厚度和边界固定方式都会影响器械路径，流动外观逼真也不保证力学响应正确。因此动态模拟应先验证与任务有关的变形和阻力，再解释预演中发现的困难；否则模型可能把制造材料特性误当成患者风险。"
+          }
+        ]
+      },
+      {
+        "title": "企业技术与服务路线",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Axial3D 平台和卓越中心将云端病例分割连接到实体交付。Lazarus 3D Pre-Sure 将材料可操作性作为专门服务，按病例影像生成预演模型。前者的关键交付是复核过的几何数据，后者还要检验组织或器械接触是否适合任务。 [R07] [R08] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Axial3D当前AXCEL平台将影像获取、自动分割、器械相关标志点、测量、规划及外科医生确认组织为可配置工作流。官方页面强调云端部署和面向不同器械产品组合的集成。[R07]"
+          },
+          {
+            "type": "p",
+            "text": "这一产品形态将交付对象从单个模型扩展到可供后续应用的结构化三维数据。对于医院和器械企业，关键变化是能够复用同一病例信息，并在流程中保存确认节点。平台竞争因此涉及任务适配、异常病例处理和版本管理。若自动分割减少了常规病例的操作时间，节约的专业人员时间可以转用于难病例审阅；评价应同时记录自动化覆盖和人工修订负担。"
+          },
+          {
+            "type": "p",
+            "text": "Lazarus 3D的Pre-Sure则按患者CT或MRI制作软组织预演模型，官方产品页列出切割、缝合和夹持等操作用途，并提供影像上传、数字解剖审阅和实体交付流程。[R08]"
+          },
+          {
+            "type": "p",
+            "text": "该路线把产品价值集中到“可在患者几何上预演”。与静态展示相比，材料响应和关键部位的可操作性需要成为设计输入；与通用训练器相比，每个病例的几何与交付时限更重要。两条产业路线可以在数据接口处衔接：前者提供经过确认的结构，后者将特定结构转成可操作材料，而学术研究负责解释这种转换为哪个决定增加了有效信息。"
+          }
+        ]
+      },
+      {
+        "title": "专利设计与制造接口",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN108969096A 将肾血管和集合系统同步表示，CN219143632U 面向经皮肾脏操作模拟。CN111263693A 则将解剖模型与硅胶制造关联。可分别审查关键结构的保留、通路的可到达性和操作材料的一致性。 [R09] [R10] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "学术与产业的结合点",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "医院和制造服务可以共享病例申请说明、分割标注、验收部位与最终使用版本。对单纯空间沟通，可以试用屏幕方案作为基线。只有需要接触和器械验证的病例进入软材料或流动台架，便能更清楚地比较额外成本和用途。 [R03] [R06] [R07] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "未来演进与验证指标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "今后三年可按器官与使用目的比较在病例窗口内交付的比例、被改变的决策及与术中实际吻合率。软模型可另报试切与缝合反馈，动态模型可报告流动条件和器械适配重复性。 [R02] [R04] [R05] [R06]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "From medical imaging data to 3D printed anatomical models",
+        "url": "https://doi.org/10.1371/journal.pone.0178540",
+        "year": "2017",
+        "source": "PLOS ONE",
+        "id": "R01"
+      },
+      {
+        "title": "Three-dimensional printed models for surgical planning of complex congenital heart defects: an international multicentre study",
+        "url": "https://doi.org/10.1093/ejcts/ezx208",
+        "year": "2017",
+        "source": "European Journal of Cardio-Thoracic Surgery",
+        "id": "R02"
+      },
+      {
+        "title": "Clinical 3D modeling to guide pediatric cardiothoracic surgery and intervention using 3D printed anatomic models, computer aided design and virtual reality",
+        "url": "https://doi.org/10.1186/s41205-022-00137-9",
+        "year": "2022",
+        "source": "3D Printing in Medicine",
+        "id": "R03"
+      },
+      {
+        "title": "Patient-Specific 3D Printed Soft Models for Liver Surgical Planning and Hands-On Training",
+        "url": "https://doi.org/10.3390/gels9040339",
+        "year": "2023",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Imaging-based 3D‐printed anatomical models for preoperative planning in hepatopancreatobiliary surgery: a single-center pilot study, cost analysis, and systematic review",
+        "url": "https://doi.org/10.1007/s11547-026-02210-3",
+        "year": "2026",
+        "source": "La radiologia medica",
+        "id": "R05"
+      },
+      {
+        "title": "Patient-specific static and dynamic 3D-printed models for planning endovascular repair of complex aortic disease with physician-modified stent grafts",
+        "url": "https://doi.org/10.1186/s42155-026-00755-y",
+        "year": "2026",
+        "source": "CVIR Endovascular",
+        "id": "R06"
+      },
+      {
+        "title": "Axial3D platform",
+        "url": "https://axial3d.com/our-platform/",
+        "year": "2026（访问）",
+        "source": "Axial3D",
+        "id": "R07"
+      },
+      {
+        "title": "Pre-Sure pre-operative surgical rehearsal models",
+        "url": "https://www.lazarus3d.com/pre-sure",
+        "year": "2026（访问）",
+        "source": "Lazarus 3D",
+        "id": "R08"
+      },
+      {
+        "title": "Multipurpose 3D printing percutaneous kidney simulation operation model",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN219143632U",
+        "year": "2023",
+        "source": "Espacenet",
+        "id": "R09"
+      },
+      {
+        "title": "Three-dimensional printing method based on synchronous development of renal vessels and renal collecting system",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN108969096A",
+        "year": "2018",
+        "source": "Espacenet",
+        "id": "R10"
+      },
+      {
+        "title": "Anatomical silicone models and additive manufacturing thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN111263693A",
+        "year": "2020",
+        "source": "Espacenet",
+        "id": "R11"
+      },
+      {
+        "title": "Patient-specific multi-material bionic tumor organ model and preparation method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120840084A",
+        "year": "2025",
+        "source": "Espacenet",
+        "id": "R12"
+      },
+      {
+        "title": "Axial3D opens a new Medical 3D Printing Centre of Excellence",
+        "url": "https://axial3d.com/axial3d-opens-a-new-medical-3d-printing-centre-of-excellence/",
+        "year": "2023",
+        "source": "Axial3D",
+        "id": "R13"
+      }
+    ]
+  },
+  "en": {
+    "id": "H09",
+    "p": "P6",
+    "title": "Preoperative planning models for cardiovascular and abdominal organs",
+    "subtitle": "From anatomical visualization to decision changes and device rehearsal",
+    "thesis": "A useful planning model targets a documented decision. Rigid models show spatial relationships, while soft and dynamic models enable procedural rehearsal and device interaction. Evaluation follows both representation error and the decisions that changed.",
+    "questions": [],
+    "graph": {
+      "title": "From medical imaging to planning decisions, soft rehearsal and dynamic testing",
+      "summary": "A static, soft or dynamic model is selected for the case question. Changes in decisions and their execution inform future case selection and fabrication requirements.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2017",
+          "refs": [
+            "R01",
+            "R02"
+          ],
+          "title": "Preserve structures relevant to surgery",
+          "question": "Which structure determines the procedural choice?",
+          "evidence": "Record imaging, segmented structures and the printed wall. Similar overall dimensions may conceal whether small branches or septa were preserved."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2017",
+          "refs": [
+            "R02"
+          ],
+          "title": "Identify the decision changed in congenital heart disease",
+          "question": "Did the model change a surgical decision?",
+          "evidence": "In 40 congenital-heart cases from 10 centers, models changed decisions in 19. The authors separately reported 320 vessel-diameter measurements to assess agreement with imaging."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2023–2026",
+          "refs": [
+            "R04",
+            "R05"
+          ],
+          "title": "Use soft material for liver rehearsal",
+          "question": "Which physical task must the material support?",
+          "evidence": "Hepatopancreatobiliary planning needs lesion-to-vessel relationships. Soft liver models also support hands-on training. Assess geometry, local stiffness and tool interaction separately."
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2026",
+          "refs": [
+            "R06"
+          ],
+          "title": "Extend static planning to dynamic aortic tests",
+          "question": "How does the device behave under flow?",
+          "evidence": "Static models assess anticipated branch and fenestration positions. Dynamic models can add device deployment and shape change under flow."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 1,
+          "time": "2022–2026",
+          "refs": [
+            "R03",
+            "R06",
+            "R08"
+          ],
+          "title": "Compare screen, physical model and rehearsal by task",
+          "question": "Does the task require a physical representation?",
+          "evidence": "CAD, VR and physical models can serve different tasks in a single case. Material response belongs in acceptance criteria when touch or tool interaction determines the choice."
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2026–2029",
+          "refs": [
+            "R02",
+            "R05",
+            "R07"
+          ],
+          "title": "Connect actual execution to the plan",
+          "question": "Was the changed plan implemented?",
+          "evidence": "Compare the original plan, the model-informed plan and what was done. Record reversions to the original plan and total workflow time within the case budget."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Represent cardiac relationships"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Choose materials for tissue handling"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Test devices under dynamic conditions"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Check decision change"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Identify which task requires haptics"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Check planning against deployment"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Identify actual execution"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Feed omissions back into segmentation"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Research scope and outcomes",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "This direction covers physical models used to prepare cardiovascular and abdominal cases for surgery or intervention. Start design with a question, such as whether two anastomotic options can be compared or which plane should be rehearsed near lesions and vessels. [R02] [R04] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathways and evidence",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Preserve structures relevant to surgery"
+          },
+          {
+            "type": "p",
+            "text": "Record imaging, segmented structures and the printed wall. Similar overall dimensions may conceal whether small branches or septa were preserved. [R01] [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "Identify the decision changed in congenital heart disease"
+          },
+          {
+            "type": "p",
+            "text": "In 40 congenital-heart cases from 10 centers, models changed decisions in 19. The authors separately reported 320 vessel-diameter measurements to assess agreement with imaging. [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "Use soft material for liver rehearsal"
+          },
+          {
+            "type": "p",
+            "text": "Hepatopancreatobiliary planning needs lesion-to-vessel relationships. Soft liver models also support hands-on training. Assess geometry, local stiffness and tool interaction separately. [R04] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "Extend static planning to dynamic aortic tests"
+          },
+          {
+            "type": "p",
+            "text": "Static models assess anticipated branch and fenestration positions. Dynamic models can add device deployment and shape change under flow. [R06]"
+          },
+          {
+            "type": "h3",
+            "text": "Compare screen, physical model and rehearsal by task"
+          },
+          {
+            "type": "p",
+            "text": "CAD, VR and physical models can serve different tasks in a single case. Material response belongs in acceptance criteria when touch or tool interaction determines the choice. [R03] [R06] [R08]"
+          },
+          {
+            "type": "h3",
+            "text": "Connect actual execution to the plan"
+          },
+          {
+            "type": "p",
+            "text": "Compare the original plan, the model-informed plan and what was done. Record reversions to the original plan and total workflow time within the case budget. [R02] [R05] [R07]"
+          },
+          {
+            "type": "p",
+            "text": "The congenital-heart study assessed both dimensional agreement and changes to team plans. One is geometric accuracy, the other a decision. Further comparisons can capture prespecified choices of device or approach and verify actual execution rather than pool perceived understanding and realized changes. [R02] [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "The image-to-object error chain"
+          },
+          {
+            "type": "p",
+            "text": "Bücking et al. (2017) implemented image segmentation, mesh trimming, and FDM printing processes using rib, liver, and lung models, and evaluated the results by comparing digital and physical dimensions. The use of different segmentation methods for different tissues indicates that the quality of the anatomical model primarily depends on the matching of the image to the object. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "The significance of selecting multiple organ examples lies in revealing the different difficulties within the same process. The visibility of high-contrast bone boundaries differs from that of soft tissue boundaries; hole repair and smoothing can also alter the contours of narrowing, bifurcation, or lesions. A final solid size approaching the digital mesh only indicates good print transfer, not that the mesh itself accurately represents the image. Errors should be located along the transformation chain; otherwise, improved manufacturing precision may mask earlier segmentation deviations."
+          },
+          {
+            "type": "h3",
+            "text": "Multicenter decisions in congenital heart disease"
+          },
+          {
+            "type": "p",
+            "text": "In 2017, Valverde and colleagues studied 40 complex congenital-heart-disease cases across 10 centers, comparing decisions based on routine imaging, decisions after viewing a physical model and intraoperative findings. Surgical decisions changed in 19 cases. The design assessed both model dimensions and decision impact, rather than relying solely on satisfaction to establish clinical utility. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Within-case before-and-after comparison uses each complex anatomy as its own reference and directly records plan changes after additional spatial information. Model review also occurs later and gives the team more time to think, so changes cannot all be attributed specifically to touch or the physical medium. The most informative records identify which anatomical judgment changed, why existing views were insufficient and whether operative findings supported the revision."
+          },
+          {
+            "type": "h3",
+            "text": "Multiformat clinical modeling services"
+          },
+          {
+            "type": "p",
+            "text": "Ghosh et al. reported in 2022 112 modeling cases from a pediatric cardiology center between 2018 and 2020, 96 of which served clinical planning. The team combined printed models, flat screens, virtual reality, and digital restoration design to demonstrate a practical way of organizing interdisciplinary services. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "The methodological advancement here is moving the model from a single-instance technical demonstration to a continuous service. Different display formats share segmentation results, allowing problems to be modified in a digital environment before deciding whether to create an entity. It's necessary to differentiate between service utilization, case difficulty, and outcome: highly complex cases are more likely to be transferred to modeling, thus directly comparing surgical outcomes between users and non-users can introduce choice differences. Recording the reasons for application and decision points is more interpretive than simply accumulating usage counts."
+          },
+          {
+            "type": "h3",
+            "text": "Costs in complex hepatobiliary and pancreatic cases"
+          },
+          {
+            "type": "p",
+            "text": "The 2026 Hepatobiliary and Pancreatic Study analyzed the anatomical features, clinical use, and resource costs of image-derived printed models in three complex cases, combined with a systematic review. The original pilot section examined patient selection and production burden within the same framework. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "In these cases, the key information is often the spatial relationship among tumor, vessels and the organ to be preserved, rather than the complete appearance of every tissue. Case pilots reveal fabrication bottlenecks and the information surgeons actually use. A transparent shell that obstructs the view or ineffective color coding can hinder the task despite accurate dimensions; visual presentation therefore deserves its own quality assessment."
+          },
+          {
+            "type": "h3",
+            "text": "Static and dynamic aortic models"
+          },
+          {
+            "type": "p",
+            "text": "The 2026 Complex Aorta Study included a retrospective comparison of 46 cases, combining rigid anatomical models and compliance models of the connecting pulsatile flow system. Dynamic models provided information on instrument passage and deployment; the assisted planning group had shorter operation times and less contrast agent usage, with no similar differences observed in one-year outcomes. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "The value of a dynamic model lies not in adding another component, but in its ability to answer contact questions that static models cannot. Material compliance, wall thickness, and boundary fixation all affect device path, and realistic flow appearance does not guarantee accurate mechanical response. Therefore, dynamic simulations should first verify task-related deformations and drag before interpreting difficulties discovered during pre-simulation; otherwise, the model may misinterpret manufacturing material properties as patient risks."
+          }
+        ]
+      },
+      {
+        "title": "Industry technologies and services",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Axial3D's platform and center connect cloud segmentation to physical model delivery. Lazarus 3D Pre-Sure offers manipulation as a dedicated service using patient imaging. One delivers reviewed geometry, while the other also depends on representative tissue or device interaction. [R07] [R08] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Axial3D’s current AXCEL platform combines image acquisition, automated segmentation, device-related landmarks, measurement, planning and surgeon confirmation in a configurable workflow. Its official page emphasizes cloud deployment and integration across different device portfolios. [R07]"
+          },
+          {
+            "type": "p",
+            "text": "The product form expands the deliverables from a single model to structured 3D data available for subsequent applications. For hospitals and medical device companies, the key change is the ability to reuse the same case information and save confirmation points within the workflow. Platform competition therefore involves task adaptation, handling of unusual cases, and version management. If automated segmentation reduces processing time for routine cases, the saved professional time can be redirected to reviewing difficult cases; evaluation should simultaneously document automated coverage and the burden of manual revisions."
+          },
+          {
+            "type": "p",
+            "text": "Lazarus 3D’s Pre-Sure produces patient-specific soft-tissue rehearsal models from CT or MRI. Its official product page describes cutting, suturing and clamping applications, together with image upload, digital-anatomy review and physical-model delivery. [R08]"
+          },
+          {
+            "type": "p",
+            "text": "This route concentrates value on rehearsal using patient-specific geometry. Material response and manipulable critical regions become design inputs, while case geometry and delivery deadlines distinguish it from a generic trainer. The two industry routes can meet at their data interface: one supplies confirmed anatomical structures, the other converts selected structures into manipulable materials. Academic research then explains which decisions gain useful information from that conversion."
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and production interfaces",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN108969096A brings renal vessels and the collecting system into the same representation. CN219143632U addresses a percutaneous renal simulator. CN111263693A links silicone manufacturing to anatomical models. The mechanisms prompt different checks: retained structures, access feasibility and consistency of handling materials. [R09] [R10] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Research and industry connections",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Clinics and service providers can share case purpose, segmentation labels, acceptance landmarks and the final version used. A screen model can be the baseline for spatial communication. Sending cases with contact or device-validation needs to soft models or flow rigs clarifies added value and cost. [R03] [R06] [R07] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "Outlook and measures of progress",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Over the next three years, studies can compare on-time delivery, changed decisions and agreement with actual surgery by organ and purpose. Soft models can report cutting and suturing feedback. Dynamic models can report flow conditions and repeatability of device fit. [R02] [R04] [R05] [R06]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "From medical imaging data to 3D printed anatomical models",
+        "url": "https://doi.org/10.1371/journal.pone.0178540",
+        "year": "2017",
+        "source": "PLOS ONE",
+        "id": "R01"
+      },
+      {
+        "title": "Three-dimensional printed models for surgical planning of complex congenital heart defects: an international multicentre study",
+        "url": "https://doi.org/10.1093/ejcts/ezx208",
+        "year": "2017",
+        "source": "European Journal of Cardio-Thoracic Surgery",
+        "id": "R02"
+      },
+      {
+        "title": "Clinical 3D modeling to guide pediatric cardiothoracic surgery and intervention using 3D printed anatomic models, computer aided design and virtual reality",
+        "url": "https://doi.org/10.1186/s41205-022-00137-9",
+        "year": "2022",
+        "source": "3D Printing in Medicine",
+        "id": "R03"
+      },
+      {
+        "title": "Patient-Specific 3D Printed Soft Models for Liver Surgical Planning and Hands-On Training",
+        "url": "https://doi.org/10.3390/gels9040339",
+        "year": "2023",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Imaging-based 3D‐printed anatomical models for preoperative planning in hepatopancreatobiliary surgery: a single-center pilot study, cost analysis, and systematic review",
+        "url": "https://doi.org/10.1007/s11547-026-02210-3",
+        "year": "2026",
+        "source": "La radiologia medica",
+        "id": "R05"
+      },
+      {
+        "title": "Patient-specific static and dynamic 3D-printed models for planning endovascular repair of complex aortic disease with physician-modified stent grafts",
+        "url": "https://doi.org/10.1186/s42155-026-00755-y",
+        "year": "2026",
+        "source": "CVIR Endovascular",
+        "id": "R06"
+      },
+      {
+        "title": "Axial3D platform",
+        "url": "https://axial3d.com/our-platform/",
+        "year": "2026（访问）",
+        "source": "Axial3D",
+        "id": "R07"
+      },
+      {
+        "title": "Pre-Sure pre-operative surgical rehearsal models",
+        "url": "https://www.lazarus3d.com/pre-sure",
+        "year": "2026（访问）",
+        "source": "Lazarus 3D",
+        "id": "R08"
+      },
+      {
+        "title": "Multipurpose 3D printing percutaneous kidney simulation operation model",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN219143632U",
+        "year": "2023",
+        "source": "Espacenet",
+        "id": "R09"
+      },
+      {
+        "title": "Three-dimensional printing method based on synchronous development of renal vessels and renal collecting system",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN108969096A",
+        "year": "2018",
+        "source": "Espacenet",
+        "id": "R10"
+      },
+      {
+        "title": "Anatomical silicone models and additive manufacturing thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN111263693A",
+        "year": "2020",
+        "source": "Espacenet",
+        "id": "R11"
+      },
+      {
+        "title": "Patient-specific multi-material bionic tumor organ model and preparation method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120840084A",
+        "year": "2025",
+        "source": "Espacenet",
+        "id": "R12"
+      },
+      {
+        "title": "Axial3D opens a new Medical 3D Printing Centre of Excellence",
+        "url": "https://axial3d.com/axial3d-opens-a-new-medical-3d-printing-centre-of-excellence/",
+        "year": "2023",
+        "source": "Axial3D",
+        "id": "R13"
+      }
+    ]
+  },
+  "de": {
+    "id": "H09",
+    "p": "P6",
+    "title": "Präoperative Planungsmodelle für Herz, Gefäße und Bauchorgane",
+    "subtitle": "Von der anatomischen Darstellung zu Entscheidungsänderungen und Instrumentenerprobung",
+    "thesis": "Ein nützliches Planungsmodell adressiert eine dokumentierte Entscheidung. Starre Modelle zeigen räumliche Beziehungen. Weiche und dynamische Modelle ermöglichen Eingriffsprobe und Geräteinteraktion. Die Bewertung erfasst Darstellungsfehler und tatsächlich geänderte Entscheidungen.",
+    "questions": [],
+    "graph": {
+      "title": "Von der Bildgebung über Planungsentscheidungen zu Weichteilprobe und dynamischem Prüfstand",
+      "summary": "Je nach Fallfrage wird ein statisches, weiches oder dynamisches Modell gewählt. Entscheidungsänderung und Umsetzung fließen in Fallauswahl und Fertigungsanforderungen zurück.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2017",
+          "refs": [
+            "R01",
+            "R02"
+          ],
+          "title": "Eingriffsrelevante Feinstrukturen erhalten",
+          "question": "Welche Struktur bestimmt das Vorgehen?",
+          "evidence": "Bilddaten, segmentierte Strukturen und gedruckte Wand werden verknüpft. Ähnliche Gesamtmaße können Unterschiede bei kleinen Ästen oder Septen verdecken."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2017",
+          "refs": [
+            "R02"
+          ],
+          "title": "Geänderte Entscheidung bei angeborenem Herzfehler erfassen",
+          "question": "Änderte das Modell eine Operationsentscheidung?",
+          "evidence": "Bei 40 Fällen mit angeborenen Herzfehlern aus zehn Zentren änderte das Modell in 19 Fällen die Entscheidung. Die Autoren erfassten separat 320 Gefäßdurchmesser zum Abgleich mit der Bildgebung."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 1,
+          "time": "2023–2026",
+          "refs": [
+            "R04",
+            "R05"
+          ],
+          "title": "Lebermanipulation mit weichem Material erproben",
+          "question": "Welche Manipulation muss das Material ermöglichen?",
+          "evidence": "Die hepatopankreatobiliäre Planung benötigt Lagebeziehungen zwischen Läsion und Gefäßen. Weiche Lebermodelle unterstützen praktische Übungen. Geometrie, lokale Steifigkeit und Instrumenteninteraktion werden getrennt bewertet."
+        },
+        {
+          "id": "N4",
+          "stage": 1,
+          "lane": 2,
+          "time": "2026",
+          "refs": [
+            "R06"
+          ],
+          "title": "Statische Planung zum dynamischen Aortenprüfstand erweitern",
+          "question": "Wie verhält sich das Gerät unter Strömung?",
+          "evidence": "Statische Modelle prüfen erwartete Abzweige und Fenestrationspositionen. Dynamische Modelle ergänzen Entfaltung und Formänderung des Implantats unter Strömung."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 1,
+          "time": "2022–2026",
+          "refs": [
+            "R03",
+            "R06",
+            "R08"
+          ],
+          "title": "Bildschirm, Modell und Probe nach klinischer Aufgabe vergleichen",
+          "question": "Erfordert die Aufgabe ein physisches Modell?",
+          "evidence": "CAD, VR und physisches Modell können im selben Fall unterschiedliche Aufgaben erfüllen. Die Materialreaktion gehört zur Abnahme, wenn Berührung oder Instrumenteneinsatz die Wahl bestimmen."
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2026–2029",
+          "refs": [
+            "R02",
+            "R05",
+            "R07"
+          ],
+          "title": "Tatsächliche Umsetzung mit dem Plan verbinden",
+          "question": "Wurde der geänderte Plan umgesetzt?",
+          "evidence": "Ursprungsplan, modellgestützter Plan und Umsetzung werden verglichen. Rückkehr zum Ursprungsplan und Gesamtaufwand im Fallbudget werden erfasst."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Herzbeziehungen darstellen"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Material für Gewebemanipulation wählen"
+        },
+        {
+          "from": "N1",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Gerät unter dynamischen Bedingungen prüfen"
+        },
+        {
+          "from": "N2",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Entscheidungsänderung prüfen"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Aufgabe mit Haptik identifizieren"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Plan und Entfaltung abgleichen"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Umsetzung erfassen"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Fehlende Strukturen in Segmentierung nachführen"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Forschungsgegenstand und Endpunkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Die Richtung umfasst physische Modelle zur Vorbereitung kardiovaskulärer und abdominaler Operationen oder Interventionen. Der Entwurf beginnt mit einer Frage, etwa dem Vergleich zweier Anastomosenwege oder einer Schnittebene zwischen Läsionen und Gefäßen. [R02] [R04] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Evidenz",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Eingriffsrelevante Feinstrukturen erhalten"
+          },
+          {
+            "type": "p",
+            "text": "Bilddaten, segmentierte Strukturen und gedruckte Wand werden verknüpft. Ähnliche Gesamtmaße können Unterschiede bei kleinen Ästen oder Septen verdecken. [R01] [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "Geänderte Entscheidung bei angeborenem Herzfehler erfassen"
+          },
+          {
+            "type": "p",
+            "text": "Bei 40 Fällen mit angeborenen Herzfehlern aus zehn Zentren änderte das Modell in 19 Fällen die Entscheidung. Die Autoren erfassten separat 320 Gefäßdurchmesser zum Abgleich mit der Bildgebung. [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "Lebermanipulation mit weichem Material erproben"
+          },
+          {
+            "type": "p",
+            "text": "Die hepatopankreatobiliäre Planung benötigt Lagebeziehungen zwischen Läsion und Gefäßen. Weiche Lebermodelle unterstützen praktische Übungen. Geometrie, lokale Steifigkeit und Instrumenteninteraktion werden getrennt bewertet. [R04] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "Statische Planung zum dynamischen Aortenprüfstand erweitern"
+          },
+          {
+            "type": "p",
+            "text": "Statische Modelle prüfen erwartete Abzweige und Fenestrationspositionen. Dynamische Modelle ergänzen Entfaltung und Formänderung des Implantats unter Strömung. [R06]"
+          },
+          {
+            "type": "h3",
+            "text": "Bildschirm, Modell und Probe nach klinischer Aufgabe vergleichen"
+          },
+          {
+            "type": "p",
+            "text": "CAD, VR und physisches Modell können im selben Fall unterschiedliche Aufgaben erfüllen. Die Materialreaktion gehört zur Abnahme, wenn Berührung oder Instrumenteneinsatz die Wahl bestimmen. [R03] [R06] [R08]"
+          },
+          {
+            "type": "h3",
+            "text": "Tatsächliche Umsetzung mit dem Plan verbinden"
+          },
+          {
+            "type": "p",
+            "text": "Ursprungsplan, modellgestützter Plan und Umsetzung werden verglichen. Rückkehr zum Ursprungsplan und Gesamtaufwand im Fallbudget werden erfasst. [R02] [R05] [R07]"
+          },
+          {
+            "type": "p",
+            "text": "Bei angeborenen Herzfehlern wurden Maßübereinstimmung und Änderungen der Teamentscheidung getrennt bewertet. Das eine erfasst Geometrie, das andere die Entscheidung. Weitere Vergleiche können vorab festgelegte Instrumenten- oder Verfahrensoptionen dokumentieren und die Umsetzung prüfen. [R02] [R03]"
+          },
+          {
+            "type": "h3",
+            "text": "Fehlerkette von der Bildgebung zum physischen Modell"
+          },
+          {
+            "type": "p",
+            "text": "Bücking et al. (2017) implementierten Bildsegmentierungs-, Netzbeschneidungs- und FDM-Druckverfahren anhand von Rippen-, Leber- und Lungenmodellen und evaluierten die Ergebnisse durch Vergleich digitaler und physischer Abmessungen. Die Verwendung unterschiedlicher Segmentierungsmethoden für verschiedene Gewebearten zeigt, dass die Qualität des anatomischen Modells primär von der Übereinstimmung des Bildes mit dem Objekt abhängt. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Die Auswahl mehrerer Organbeispiele ist deshalb so wichtig, weil sie die unterschiedlichen Schwierigkeiten innerhalb desselben Prozesses aufzeigt. Die Sichtbarkeit kontrastreicher Knochengrenzen unterscheidet sich von der von Weichteilgrenzen; auch die Reparatur und Glättung von Löchern kann die Konturen von Verengungen, Gabelungen oder Läsionen verändern. Eine endgültige, dem digitalen Netz annähernde Größe des Objekts deutet lediglich auf eine gute Druckübertragung hin, nicht aber darauf, dass das Netz selbst das Bild akkurat wiedergibt. Fehler sollten entlang der Transformationskette lokalisiert werden; andernfalls kann eine verbesserte Fertigungsgenauigkeit frühere Segmentierungsabweichungen verdecken."
+          },
+          {
+            "type": "h3",
+            "text": "Multizentrische Entscheidungen bei angeborenen Herzfehlern"
+          },
+          {
+            "type": "p",
+            "text": "Valverde et al. untersuchten 2017 an 10 Zentren 40 Fälle komplexer angeborener Herzfehler. Sie verglichen Entscheidungen auf Basis konventioneller Bildgebung mit Entscheidungen nach Betrachtung physischer Modelle und mit intraoperativen Befunden; in 19 Fällen änderte sich die Operationsentscheidung. Das Design bewertete Modellabmessungen und Entscheidungseinfluss gleichzeitig und begründete klinischen Nutzen damit über die Zufriedenheit hinaus.[R02]"
+          },
+          {
+            "type": "p",
+            "text": "Beim Vorher-Nachher-Vergleich innerhalb desselben Falls dient die jeweilige komplexe Anatomie als eigene Referenz. Planänderungen nach zusätzlichen räumlichen Informationen lassen sich direkt erfassen. Da die Modellbetrachtung später erfolgt und zusätzliche Bedenkzeit bietet, sind Änderungen nicht ausschließlich auf Berührung oder das physische Medium zurückzuführen. Besonders informativ ist, welche anatomische Beurteilung sich änderte, warum die bisherigen Ansichten nicht ausreichten und ob intraoperative Befunde die Änderung stützten."
+          },
+          {
+            "type": "h3",
+            "text": "Klinischer Modellierungsdienst in mehreren Formaten"
+          },
+          {
+            "type": "p",
+            "text": "Ghosh et al. berichteten 2022 über 112 Modellierungsfälle aus einem pädiatrischen Kardiologiezentrum zwischen 2018 und 2020, von denen 96 der klinischen Planung dienten. Das Team kombinierte gedruckte Modelle, Flachbildschirme, virtuelle Realität und digitales Restaurierungsdesign, um eine praktische Methode zur Organisation interdisziplinärer Dienste aufzuzeigen. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Der methodische Fortschritt besteht im Übergang von einer einzelnen technischen Demonstration zu einem dauerhaften Dienst. Mehrere Darstellungsformen nutzen dieselbe Segmentierung; Pläne lassen sich zunächst digital ändern, bevor über ein physisches Modell entschieden wird. Nutzung, Fallschwere und Ergebnis müssen getrennt werden: Besonders komplexe Fälle werden eher modelliert, sodass direkte Ergebnisvergleiche mit nicht modellierten Fällen durch Auswahlunterschiede verzerrt sein können. Anforderungsgründe und Entscheidungspunkte sind aussagekräftiger als reine Nutzungszahlen."
+          },
+          {
+            "type": "h3",
+            "text": "Kosten komplexer hepatobiliärer und pankreatischer Fälle"
+          },
+          {
+            "type": "p",
+            "text": "Die Studie 2026 zu Leber-, Gallenwegs- und Pankreaserkrankungen analysierte die anatomischen Merkmale, den klinischen Nutzen und die Ressourcenkosten von bildbasierten gedruckten Modellen in drei komplexen Fällen, kombiniert mit einer systematischen Übersichtsarbeit. Der ursprüngliche Pilotabschnitt untersuchte die Patientenauswahl und den Produktionsaufwand im selben Rahmen. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Entscheidend sind hier meist die räumlichen Beziehungen zwischen Tumor, Gefäßen und zu erhaltendem Organ, nicht die vollständige äußere Darstellung aller Gewebe. Pilotfälle zeigen Fertigungsengpässe und welche Informationen das chirurgische Team tatsächlich nutzt. Eine störende transparente Hülle oder unklare Farbcodierung kann die Aufgabe trotz genauer Abmessungen erschweren. Die Gestaltung der Darstellung ist daher eine eigene Qualitätsdimension."
+          },
+          {
+            "type": "h3",
+            "text": "Statische und dynamische Aortenmodelle"
+          },
+          {
+            "type": "p",
+            "text": "Eine retrospektive Vergleichsstudie zu komplexen Aortenfällen von 2026 umfasste 46 Fälle und verband starre Anatomiemodelle mit nachgiebigen Modellen an einem pulsierenden Strömungssystem. Dynamische Modelle lieferten Informationen zur Instrumentenpassage und Entfaltung. In der modellgestützten Planungsgruppe waren Operationszeit und Kontrastmittelmenge geringer; bei den Einjahresergebnissen zeigte sich kein vergleichbarer Unterschied. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Der Wert eines dynamischen Modells liegt nicht in der Hinzufügung einer weiteren Komponente, sondern in seiner Fähigkeit, Kontaktfragen zu beantworten, die statische Modelle nicht beantworten können. Materialnachgiebigkeit, Wandstärke und Randfixierung beeinflussen die Bewegung des Bauteils, und eine realistische Strömungsdarstellung garantiert keine präzise mechanische Reaktion. Daher sollten dynamische Simulationen zunächst aufgabenbezogene Verformungen und den Widerstand überprüfen, bevor Schwierigkeiten interpretiert werden, die während der Vorsimulation festgestellt wurden; andernfalls kann das Modell Fertigungsmaterialeigenschaften fälschlicherweise als Patientenrisiken interpretieren."
+          }
+        ]
+      },
+      {
+        "title": "Technologien und Angebote der Unternehmen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Axial3Ds Plattform und Zentrum verbinden Cloud-Segmentierung mit physischer Modelllieferung. Lazarus 3D Pre-Sure bietet anhand von Fallbildgebung Modelle für die Eingriffsprobe. Bei einem Angebot steht geprüfte Geometrie im Vordergrund, beim anderen zusätzlich geeigneter Gewebe- und Instrumentenkontakt. [R07] [R08] [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Die aktuelle AXCEL-Plattform von Axial3D verbindet Bilderfassung, automatische Segmentierung, gerätebezogene Orientierungspunkte, Messung, Planung und chirurgische Bestätigung in einem konfigurierbaren Ablauf. Die offizielle Seite betont Cloud-Bereitstellung und Integration für unterschiedliche Medizinprodukte-Portfolios. [R07]"
+          },
+          {
+            "type": "p",
+            "text": "Das Produktkonzept erweitert die Leistung vom Einzelmodell zu strukturierten 3D-Daten für weitere Anwendungen. Krankenhäuser und Medizinproduktehersteller können Fallinformationen wiederverwenden und Bestätigungsschritte dokumentieren. Entscheidend sind Aufgabenpassung, Bearbeitung atypischer Fälle und Versionsverwaltung. Verkürzt automatische Segmentierung die Routinebearbeitung, kann Fachpersonal mehr Zeit für schwierige Fälle aufwenden. Automatisierungsabdeckung und manuelle Korrekturen sollten gemeinsam erfasst werden."
+          },
+          {
+            "type": "p",
+            "text": "Lazarus 3D fertigt mit Pre-Sure patientenspezifische Weichteilmodelle für Operationsproben aus CT- oder MRT-Daten. Die offizielle Produktseite nennt Schneiden, Nähen und Klemmen sowie Bild-Upload, Prüfung der digitalen Anatomie und Lieferung des physischen Modells. [R08]"
+          },
+          {
+            "type": "p",
+            "text": "Diese Route konzentriert den Nutzen auf das Proben am patientenspezifischen Modell. Materialverhalten und Bearbeitbarkeit wichtiger Regionen werden zu Designvorgaben; gegenüber allgemeinen Trainern sind individuelle Geometrie und rechtzeitige Lieferung besonders wichtig. An der Datenschnittstelle können zwei Routen zusammenkommen: Eine liefert bestätigte Strukturen, die andere setzt ausgewählte Strukturen in bearbeitbare Materialien um. Forschung erklärt, welche Entscheidung durch diese Umsetzung zusätzliche Informationen erhält."
+          }
+        ]
+      },
+      {
+        "title": "Patentansätze und Fertigungsschnittstellen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN108969096A stellt Nierengefäße und Sammelsystem gemeinsam dar. CN219143632U betrifft einen Simulator für perkutane Niereneingriffe. CN111263693A verbindet anatomische Modelle mit Silikonfertigung. Daraus folgen getrennte Prüfungen der Strukturerhaltung, Zugänglichkeit und Materialkonstanz bei der Handhabung. [R09] [R10] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Verbindungen von Forschung und Industrie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Klinik und Dienstleister können Fallzweck, Segmentierungsmarkierungen, Abnahmepunkte und eingesetzte Version teilen. Ein Bildschirmmodell eignet sich als Basis für räumliche Kommunikation. Nur Fälle mit Kontakt- oder Geräteprüfung benötigen weiche Modelle oder Strömungsprüfstände, wodurch Zusatznutzen und Kosten vergleichbar werden. [R03] [R06] [R07] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick und Kriterien für Fortschritt",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "In den kommenden drei Jahren lassen sich termingerechte Lieferung, geänderte Entscheidungen und Übereinstimmung mit der Operation nach Organ und Zweck vergleichen. Weiche Modelle können Schnitt- und Nahtfeedback erfassen. Dynamische Modelle berichten Strömungsbedingungen und Wiederholbarkeit der Gerätepassung. [R02] [R04] [R05] [R06]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "From medical imaging data to 3D printed anatomical models",
+        "url": "https://doi.org/10.1371/journal.pone.0178540",
+        "year": "2017",
+        "source": "PLOS ONE",
+        "id": "R01"
+      },
+      {
+        "title": "Three-dimensional printed models for surgical planning of complex congenital heart defects: an international multicentre study",
+        "url": "https://doi.org/10.1093/ejcts/ezx208",
+        "year": "2017",
+        "source": "European Journal of Cardio-Thoracic Surgery",
+        "id": "R02"
+      },
+      {
+        "title": "Clinical 3D modeling to guide pediatric cardiothoracic surgery and intervention using 3D printed anatomic models, computer aided design and virtual reality",
+        "url": "https://doi.org/10.1186/s41205-022-00137-9",
+        "year": "2022",
+        "source": "3D Printing in Medicine",
+        "id": "R03"
+      },
+      {
+        "title": "Patient-Specific 3D Printed Soft Models for Liver Surgical Planning and Hands-On Training",
+        "url": "https://doi.org/10.3390/gels9040339",
+        "year": "2023",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Imaging-based 3D‐printed anatomical models for preoperative planning in hepatopancreatobiliary surgery: a single-center pilot study, cost analysis, and systematic review",
+        "url": "https://doi.org/10.1007/s11547-026-02210-3",
+        "year": "2026",
+        "source": "La radiologia medica",
+        "id": "R05"
+      },
+      {
+        "title": "Patient-specific static and dynamic 3D-printed models for planning endovascular repair of complex aortic disease with physician-modified stent grafts",
+        "url": "https://doi.org/10.1186/s42155-026-00755-y",
+        "year": "2026",
+        "source": "CVIR Endovascular",
+        "id": "R06"
+      },
+      {
+        "title": "Axial3D platform",
+        "url": "https://axial3d.com/our-platform/",
+        "year": "2026（访问）",
+        "source": "Axial3D",
+        "id": "R07"
+      },
+      {
+        "title": "Pre-Sure pre-operative surgical rehearsal models",
+        "url": "https://www.lazarus3d.com/pre-sure",
+        "year": "2026（访问）",
+        "source": "Lazarus 3D",
+        "id": "R08"
+      },
+      {
+        "title": "Multipurpose 3D printing percutaneous kidney simulation operation model",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN219143632U",
+        "year": "2023",
+        "source": "Espacenet",
+        "id": "R09"
+      },
+      {
+        "title": "Three-dimensional printing method based on synchronous development of renal vessels and renal collecting system",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN108969096A",
+        "year": "2018",
+        "source": "Espacenet",
+        "id": "R10"
+      },
+      {
+        "title": "Anatomical silicone models and additive manufacturing thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN111263693A",
+        "year": "2020",
+        "source": "Espacenet",
+        "id": "R11"
+      },
+      {
+        "title": "Patient-specific multi-material bionic tumor organ model and preparation method thereof",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120840084A",
+        "year": "2025",
+        "source": "Espacenet",
+        "id": "R12"
+      },
+      {
+        "title": "Axial3D opens a new Medical 3D Printing Centre of Excellence",
+        "url": "https://axial3d.com/axial3d-opens-a-new-medical-3d-printing-centre-of-excellence/",
+        "year": "2023",
+        "source": "Axial3D",
+        "id": "R13"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1265 @@
+{
+  "zh": {
+    "id": "H31",
+    "p": "P2",
+    "title": "直接打印正畸矫治器",
+    "subtitle": "从实测厚度、后固化到湿态矫治力",
+    "thesis": "直接打印让矫治器的局部厚度进入可设计范围。实际力矩还取决于接触、聚合状态和湿态老化。应把研究结论约束到特定牙移动、成品材料和经过验证的打印流程。",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络图",
+      "summary": "厚度与固化分支在湿态力学处汇合，再用整套牙模测试力及力矩。制造端将材料、设备和临床计划连到相同质控记录。",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2026",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R01"
+          ],
+          "title": "把厚度作为实际测量量",
+          "question": "同名义厚度的器件会产生相同力吗？",
+          "evidence": "体外研究比较打印和热成形矫治器的厚度依赖生物力学表现。"
+        },
+        {
+          "id": "N2",
+          "time": "2024",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R05"
+          ],
+          "title": "固化过程影响材料状态",
+          "question": "温度和气氛能否改变力学？",
+          "evidence": "热处理、氮气环境及后固化研究把打印后的转化过程作为实验变量。"
+        },
+        {
+          "id": "N3",
+          "time": "2025",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R06"
+          ],
+          "title": "比较具体扩弓载荷",
+          "question": "扩弓相同位移下如何比较两条路线？",
+          "evidence": "体外扩弓力研究直接比较热成形和打印矫治器。"
+        },
+        {
+          "id": "N4",
+          "time": "2025/2026",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R02"
+          ],
+          "title": "湿态老化改变材料排序",
+          "question": "干试样能代表口内机械状态吗？",
+          "evidence": "三种打印树脂与 PET-G 对照在 37 °C 水中存放 14 天前后比较。打印组的抗变形能力下降，各材料压痕蠕变和磨耗不同。"
+        },
+        {
+          "id": "N5",
+          "time": "2025–2026",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R03",
+            "R04"
+          ],
+          "title": "用牙模连接力与移动",
+          "question": "材料差异怎样影响单牙力矩与邻牙反作用？",
+          "evidence": "电动牙模与患者特异性体外拥挤模型分别提供整件和具体解剖的评价。"
+        },
+        {
+          "id": "N6",
+          "time": "2024–2025",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R11",
+            "R12"
+          ],
+          "title": "验证整套制造系统",
+          "question": "怎样把数字计划连到成品批次？",
+          "evidence": "DigiLine K233935 对指定甲基丙烯酸酯光固化树脂的直接打印序列矫治器作实质等同性决定。LuxCreo 另推出 4D Bright™ Aligner。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "表征材料固化"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "界定移动载荷"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "加入湿态使用条件"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "加入牙列反作用"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "形成材料验收条件"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "确认阶段成品"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "按试戴和实测力改厚度分布"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "从单材料到整件生物力学",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "热成形围绕片材延展和模型配合，直接打印可以局部加厚及改变边缘。两条路线只有在牙列、计划位移、成品厚度和加载湿度明确时才容易比较。先测贴合，再测规定方向的力和力矩，最后追踪佩戴期内变化。[R01] [R02] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 把厚度作为实际测量量"
+          },
+          {
+            "type": "p",
+            "text": "体外研究比较打印和热成形矫治器的厚度依赖生物力学表现。 [R01]"
+          },
+          {
+            "type": "p",
+            "text": "微调厚度时要同时记录冠部、邻接面与边缘的厚度和间隙。热成形的拉伸减薄与直接打印的局部过固化需用同一成品测量标准描述。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 固化过程影响材料状态"
+          },
+          {
+            "type": "p",
+            "text": "热处理、氮气环境及后固化研究把打印后的转化过程作为实验变量。 [R05]"
+          },
+          {
+            "type": "p",
+            "text": "将成形方向与后处理分别对照，测量变形与表面/本体性能。若成品几何变了，材料试条的增益还需在矫治器上复核。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 比较具体扩弓载荷"
+          },
+          {
+            "type": "p",
+            "text": "体外扩弓力研究直接比较热成形和打印矫治器。 [R06]"
+          },
+          {
+            "type": "p",
+            "text": "初始力、力衰减和接触分布分别描述起始驱动、持续作用与局部负荷。按位移方向报告，便于与后续牙模实验衔接。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 湿态老化改变材料排序"
+          },
+          {
+            "type": "p",
+            "text": "三种打印树脂与 PET-G 对照在 37 °C 水中存放 14 天前后比较。打印组的抗变形能力下降，各材料压痕蠕变和磨耗不同。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "其中 Dental LT Clear V2 的材料磨耗体积为 0.72 ± 0.21 mm³，PET-G 对照为 1.12 ± 0.37 mm³。单个耐磨结果与湿态柔化应并列解读。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 用牙模连接力与移动"
+          },
+          {
+            "type": "p",
+            "text": "电动牙模与患者特异性体外拥挤模型分别提供整件和具体解剖的评价。 [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "同时测目标牙和平衡支撑牙的载荷，并用受力点位置区分倾斜与整体移动。可将改动回推到特定壳壁和边缘。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 验证整套制造系统"
+          },
+          {
+            "type": "p",
+            "text": "DigiLine K233935 对指定甲基丙烯酸酯光固化树脂的直接打印序列矫治器作实质等同性决定。LuxCreo 另推出 4D Bright™ Aligner。 [R11] [R12]"
+          },
+          {
+            "type": "p",
+            "text": "定位误差需要同时追踪治疗阶段、树脂版本、清理和后固化。色泽变化与力学表现属于不同验收属性。"
+          }
+        ]
+      },
+      {
+        "title": "从机械对照到真实牙移动",
+        "blocks": [
+          {
+            "type": "table",
+            "headers": [
+              "证据场景",
+              "对照与定量观察",
+              "适用条件"
+            ],
+            "rows": [
+              [
+                "牙模型效应 [R01]",
+                "36 套牙模，两条路线、0.76 和 1.00 mm。近中倾斜最高 92.67%，转矩最高 71.67%。",
+                "在给定牙模与热激活条件下比较达成/计划角度。"
+              ],
+              [
+                "扩弓载荷 [R06]",
+                "八小时平均值，热成形 0.2/0.4 mm 组约 0.2/0.7 N，TC-85 DAC 两组接近 0 N。",
+                "一套混合牙列几何和特定实验流程。"
+              ],
+              [
+                "转矩与温度 [R14]",
+                "DCA 转矩表达由 25 °C 的 62% 到 37 °C 的 47%，无增强嵴 Zendura Flex 约 38–39%。",
+                "同一上颌模型，材料与增强嵴组合各自限定。"
+              ],
+              [
+                "连续治疗病例 [R13]",
+                "34 人直接打印、40 人热成形。转矩 60%/66%，倾斜 52%/61%，旋转 58%/69%，差异均未达显著。",
+                "回顾性临床结果，伴有阶段调整并包含不同树脂。"
+              ]
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "为何厚度改善与扩弓低力可以同时成立"
+          },
+          {
+            "type": "p",
+            "text": "牙模对照将路线、厚度和移动类型交叉，结果表明较厚组在这些设定下的角度达成率更高，制程差异随部位和任务变化。扩弓实验则在固定牙模上测长时受力，观察的是横向加载而非旋转或转矩的角度。原文图 2 展示热成形与 TC-85 DAC 的力随时间曲线，近零的打印组力值应反馈给横向支撑几何、零件对称性和后处理尺寸测量。两项结果分别回答角度达成和静态几何条件下的力，适合互补而无需强行统一排名。[R01] [R06]"
+          },
+          {
+            "type": "h3",
+            "text": "温度、湿态和局部增强共同设定边界"
+          },
+          {
+            "type": "p",
+            "text": "2026 年增强嵴研究用同一上颌模型考察有无增强嵴的热成形器具和两种带增强嵴的直接打印材料。温度变化对 DCA 的转矩表达有显著影响，TA-28 与热成形路线的结果不同。读取表 2 时应同时看量值、温度和结构组合。水存放研究又表明 14 天后材料挠曲性质变化，因此验证可以顺序加入 37 °C 湿态、重复佩戴和取下条件，并按局部位移回到成品厚度或黏弹性。[R02] [R14]"
+          },
+          {
+            "type": "h3",
+            "text": "真实病例资料补充了什么"
+          },
+          {
+            "type": "p",
+            "text": "74 人队列测量 1,018 颗牙，采用同一操作人员在诊所内完成计划与制作。打印和热成形差异未达显著，适用对象按旋转、间隙或拥挤程度以及非拔牙病例等条件纳入。表格中的总体指标应与具体牙位、附件、树脂和修正阶段并看。病例证据解决持续治疗中的可行性问题，机械实验仍可解释某个阶段或某类移动为什么偏离计划。[R13] [R14]"
+          },
+          {
+            "type": "h3",
+            "text": "工艺资格与适用场景的验证顺序"
+          },
+          {
+            "type": "p",
+            "text": "企业资料可确定已经审查的材料与工作流，研究对照可进一步检验哪种成品参数适合哪类牙移动。建议依次确认湿态材料机械数据、不同牙区的贴合、特定牙移动的力–力矩，以及临床阶段是否反复需要重新扫描或补充矫治。把厂家元件和医生设计变量分别列明，后处理或设备变化才可在各个终点复核。[R05] [R11] [R13] [R14]"
+          }
+        ]
+      },
+      {
+        "title": "企业产品与监管",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "FDA 摘要说明 DigiLine 由口扫和临床审批计划进入分阶段打印，Tera Harz Clear 与 LuxCreo Clear Aligner 出现在对比资料中。4D Bright™ 则在相同类别中扩展了色泽方案。企业证据把系统定义落到具体材料、成品与适用人群上。[R11] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "专利与参数验证",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "US20250318907A1 聚焦透明矫治器的制造过程，WO2023080641A1 聚焦患者特异透明器具。可通过相同设计文件比较工艺导致的差异，再通过相同工艺比较局部厚度与边缘改动，保留失败附件、变形和透明度记录。[R07] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "走向真实矫治过程",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "把实验分成材料试条、标准牙模、患者几何和按阶段随访四类。各阶段分别用模量与磨耗、力力矩、接触与边缘，以及计划与实际移动验证；后一步的偏差反馈到可能发生问题的阶段。[R02] [R03] [R04] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "2027–2029 年的证据优先序",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "关注不同批次的局部厚度与成品力谱一致性、湿态老化后仍满足要求的时间，以及治疗中重新扫描和补充矫治发生的位置。对可检验的特定牙移动建立临床配对数据，比单一材料强度更能支持生产决策。"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Thickness-dependent biomechanical accuracy of additively manufactured and thermoformed orthodontic aligners: an in vitro comparative study.",
+        "year": "2026",
+        "url": "https://doi.org/10.1186/s12903-026-08758-w",
+        "kind": "paper",
+        "source": "10.1186/s12903-026-08758-w"
+      },
+      {
+        "id": "R02",
+        "title": "Influence of Water Storage on the Mechanical Properties of 3D-Printed Aligners: An In Vitro Study.",
+        "year": "2025",
+        "url": "https://doi.org/10.3390/bioengineering13010021",
+        "kind": "paper",
+        "source": "10.3390/bioengineering13010021"
+      },
+      {
+        "id": "R03",
+        "title": "Preclinical evaluation of 3D-Printed orthodontic aligners using an electro-typodont model.",
+        "year": "2025",
+        "url": "https://doi.org/10.3389/fbioe.2025.1650447",
+        "kind": "paper",
+        "source": "10.3389/fbioe.2025.1650447"
+      },
+      {
+        "id": "R04",
+        "title": "In Vitro Mechanical Study of Three-Dimensional Printed Invisible Dental Aligners for Crowded Dentition Problems: A Patient-Specific Study.",
+        "year": "2026",
+        "url": "https://doi.org/10.3390/biomimetics11020108",
+        "kind": "paper",
+        "source": "10.3390/biomimetics11020108"
+      },
+      {
+        "id": "R05",
+        "title": "Effect of heat treatment and nitrogen atmosphere during post-curing on mechanical properties of 3D-printed orthodontic aligners.",
+        "year": "2024",
+        "url": "https://doi.org/10.1093/ejo/cjad074",
+        "kind": "paper",
+        "source": "10.1093/ejo/cjad074"
+      },
+      {
+        "id": "R06",
+        "title": "A Comparison Between the Expansion Force Exerted by Thermo-Printed Aligners and 3D Printed Aligners: An In Vitro Study.",
+        "year": "2025",
+        "url": "https://doi.org/10.3390/bioengineering12090912",
+        "kind": "paper",
+        "source": "10.3390/bioengineering12090912"
+      },
+      {
+        "id": "R07",
+        "title": "PROCESSES FOR MAKING CLEAR DENTAL ALIGNERS AND CLEAR DENTAL ALIGNERS PRODUCED BY THE PROCESSES",
+        "year": "2025",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS20250318907A1",
+        "kind": "patent",
+        "source": "US20250318907A1"
+      },
+      {
+        "id": "R10",
+        "title": "PATIENT-SPECIFIC TRANSPARENT ORTHODONTIC APPLIANCE",
+        "year": "2023",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DWO2023080641A1",
+        "kind": "patent",
+        "source": "WO2023080641A1"
+      },
+      {
+        "id": "R11",
+        "title": "FDA 510(k) K233935 — DigiLine Direct Print Aligner System",
+        "year": "2024",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K233935.pdf",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R12",
+        "title": "LuxCreo launches 4D Bright™ Aligner",
+        "year": "2025",
+        "url": "https://luxcreo.com/press-releases/4d-bright-aligner/",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R13",
+        "title": "Accuracy comparison of orthodontic movements obtained with 3D printed and thermoformed aligners: a retrospective cohort study",
+        "year": "2025",
+        "url": "https://link.springer.com/article/10.1186/s40510-025-00587-x",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R14",
+        "title": "Torque expression in directly printed and thermoformed clear aligners: a controlled in vitro biomechanical comparison of power ridge effects",
+        "year": "2026",
+        "url": "https://link.springer.com/article/10.1186/s40510-026-00647-w",
+        "source": "",
+        "kind": "reference"
+      }
+    ]
+  },
+  "en": {
+    "id": "H31",
+    "p": "P2",
+    "title": "Directly printed orthodontic aligners",
+    "subtitle": "From measured thickness and post-curing to force in wet conditions",
+    "thesis": "Direct printing makes local wall thickness a design variable. Actual moments also depend on fit, polymerization and wet aging. Interpret findings for a specified movement, material and verified print workflow.",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway",
+      "summary": "Thickness and curing branches converge at wet mechanics, followed by forces and moments on a full dental model. Manufacturing ties materials, equipment and treatment plans to one quality record.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2026",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R01"
+          ],
+          "title": "Measure actual thickness",
+          "question": "Do equal nominal thicknesses produce equal force?",
+          "evidence": "An in vitro study compared thickness-dependent biomechanics in printed and thermoformed aligners."
+        },
+        {
+          "id": "N2",
+          "time": "2024",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R05"
+          ],
+          "title": "Curing determines the material state",
+          "question": "Do temperature and atmosphere alter mechanics?",
+          "evidence": "A study of heat treatment and nitrogen during post-curing used post-print conversion as an experimental variable."
+        },
+        {
+          "id": "N3",
+          "time": "2025",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R06"
+          ],
+          "title": "Compare expansion forces for a defined movement",
+          "question": "How do routes compare at the same expansion displacement?",
+          "evidence": "An in vitro expansion study directly compared thermoformed and printed appliances."
+        },
+        {
+          "id": "N4",
+          "time": "2025/2026",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R02"
+          ],
+          "title": "Wet aging changes material rankings",
+          "question": "Do dry specimens represent intraoral mechanics?",
+          "evidence": "Three printed resins and PET-G were tested before and after 14 days in water at 37 °C. Printed specimens lost resistance, with material-dependent indentation creep and wear."
+        },
+        {
+          "id": "N5",
+          "time": "2025–2026",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R03",
+            "R04"
+          ],
+          "title": "Link loading and movement using dental models",
+          "question": "How do materials affect the moment on one tooth and reactions at neighbours?",
+          "evidence": "An electro-typodont and a patient-specific in vitro crowding model enable appliance-scale and anatomy-specific evaluation."
+        },
+        {
+          "id": "N6",
+          "time": "2024–2025",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R11",
+            "R12"
+          ],
+          "title": "Verify the complete manufacturing system",
+          "question": "How can a digital plan be linked to the device lot?",
+          "evidence": "K233935 documents substantial equivalence for DigiLine's direct-printed sequential system using a specified photocurable methacrylate resin. LuxCreo separately launched the 4D Bright™ Aligner."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Characterize material curing"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Define movement loading"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Add wet conditions"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Include dental arch reactions"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Set material acceptance criteria"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Verify per-stage devices"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Change thickness from fit and force"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "From material to appliance biomechanics",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Thermoforming depends on sheet stretch and die fit. Direct printing allows local thickening and edge edits. Comparison requires specified arches, planned displacement, finished thickness and hydration. Measure fit, forces and moments in defined directions, then changes over the wear interval. [R01] [R02] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathway and evidence by stage",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Measure actual thickness"
+          },
+          {
+            "type": "p",
+            "text": "An in vitro study compared thickness-dependent biomechanics in printed and thermoformed aligners. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "When changing thickness, record thickness and gaps at crowns, proximal surfaces and edges. Describe thinning during thermoforming and local overcure during printing using common as-built measures."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Curing determines the material state"
+          },
+          {
+            "type": "p",
+            "text": "A study of heat treatment and nitrogen during post-curing used post-print conversion as an experimental variable. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Control build orientation and finishing separately, measuring distortion and surface and bulk behaviour. If geometry changes, verify coupon gains on the aligner."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Compare expansion forces for a defined movement"
+          },
+          {
+            "type": "p",
+            "text": "An in vitro expansion study directly compared thermoformed and printed appliances. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Initial force, decay and contact distribution represent drive, persistence and local load. Reporting the displacement direction supports comparison to typodont tests."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Wet aging changes material rankings"
+          },
+          {
+            "type": "p",
+            "text": "Three printed resins and PET-G were tested before and after 14 days in water at 37 °C. Printed specimens lost resistance, with material-dependent indentation creep and wear. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Dental LT Clear V2 lost 0.72 ± 0.21 mm³ by abrasion versus 1.12 ± 0.37 mm³ for PET-G. Consider the abrasion result alongside wet softening."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Link loading and movement using dental models"
+          },
+          {
+            "type": "p",
+            "text": "An electro-typodont and a patient-specific in vitro crowding model enable appliance-scale and anatomy-specific evaluation. [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Measure target and anchorage loads and use the point of application to distinguish tipping from translation. Feed discrepancies back to the relevant wall and margin."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Verify the complete manufacturing system"
+          },
+          {
+            "type": "p",
+            "text": "K233935 documents substantial equivalence for DigiLine's direct-printed sequential system using a specified photocurable methacrylate resin. LuxCreo separately launched the 4D Bright™ Aligner. [R11] [R12]"
+          },
+          {
+            "type": "p",
+            "text": "Trace fit errors to treatment stage, resin version, cleaning and post-curing. Shade and mechanical performance are distinct release attributes."
+          }
+        ]
+      },
+      {
+        "title": "From mechanical comparisons to observed tooth movement",
+        "blocks": [
+          {
+            "type": "table",
+            "headers": [
+              "Evidence setting",
+              "Comparison and quantitative outcome",
+              "Conditions of interpretation"
+            ],
+            "rows": [
+              [
+                "Typodont movement [R01]",
+                "Thirty-six typodonts, two routes and 0.76 and 1.00 mm. Mesial tipping reached 92.67% and torque up to 71.67%.",
+                "Achieved-to-planned angles under specified typodont and thermal conditions."
+              ],
+              [
+                "Expansion loading [R06]",
+                "Over eight hours, thermoformed 0.2/0.4 mm groups averaged about 0.2/0.7 N, while both TC-85 DAC groups were near zero.",
+                "A single mixed-dentition geometry and defined bench procedure."
+              ],
+              [
+                "Torque and temperature [R14]",
+                "DCA torque expression was 62% at 25 °C and 47% at 37 °C. Zendura Flex without ridges was around 38–39%.",
+                "Standard maxillary model with specific material and ridge combinations."
+              ],
+              [
+                "Consecutive clinical cases [R13]",
+                "Thirty-four direct-print and forty thermoformed cases. Torque 60%/66%, tipping 52%/61%, rotation 58%/69%. Differences did not reach statistical significance.",
+                "Retrospective clinical outcomes with refinements and multiple resins."
+              ]
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Why thickness-related gains and low expansion force can coexist"
+          },
+          {
+            "type": "p",
+            "text": "The typodont experiment crossed process, thickness and movement. Thicker groups achieved greater angular accuracy under those conditions, with process differences varying by location and movement. The expansion study recorded transverse load on a fixed model over time, a different task from rotations and torque. Figure 2 shows load–time curves for thermoformed and TC-85 DAC samples. Near-zero printed loads point to questions about transverse support, symmetry and as-finished geometry. The two experiments complement one another without requiring one process ranking. [R01] [R06]"
+          },
+          {
+            "type": "h3",
+            "text": "Temperature, moisture and local reinforcement set the boundaries"
+          },
+          {
+            "type": "p",
+            "text": "The 2026 power-ridge study used one maxillary model with thermoformed devices with and without ridges and two printed materials with ridges. Temperature significantly affected DCA torque expression, and TA-28 and thermoformed routes returned different outcomes. Read Table 2 with material, temperature and design together. The water-storage study adds changes in flexural behavior after 14 days. Verification can progressively include wet conditions at 37 °C and repeated insertion and removal, tracing changes to thickness and viscoelasticity. [R02] [R14]"
+          },
+          {
+            "type": "h3",
+            "text": "What clinical records add"
+          },
+          {
+            "type": "p",
+            "text": "The cohort measured 1,018 teeth among 74 patients with in-office planning and production by one operator. Differences did not reach significance. Eligibility constrained rotation, spacing or crowding and excluded extraction treatment. Interpret overall outcomes alongside tooth site, attachments, resin and refinement. Clinical data address treatment delivery over time, while mechanical studies can explain deviations at particular stages or movements. [R13] [R14]"
+          },
+          {
+            "type": "h3",
+            "text": "Sequence for process qualification and use-case validation"
+          },
+          {
+            "type": "p",
+            "text": "Product records establish the reviewed material and workflow. Experimental comparisons test which finished-device properties suit a movement. Sequence wet material tests, regional fit, movement-specific force–moment readouts and clinical rescanning or refinement. Identify supplier-specific components and clinician design variables separately so curing and equipment changes can be checked against each endpoint. [R05] [R11] [R13] [R14]"
+          }
+        ]
+      },
+      {
+        "title": "Products and regulation",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The FDA summary describes DigiLine's workflow from scan and clinical plan approval to staged printing, with Tera Harz Clear and LuxCreo Clear Aligner cited as comparison devices. 4D Bright™ extends shade options in the same product class. Product evidence ties the system to defined materials, appliances and intended populations. [R11] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Patents and parameter verification",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "US20250318907A1 focuses on manufacturing clear aligners, and WO2023080641A1 on a patient-specific transparent appliance. Compare processes under one design file, then thickness and edge changes under one process. Record attachment failures, deformation and clarity. [R07] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "Toward actual orthodontic treatment",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Distinguish coupons, standard typodonts, patient geometry and longitudinal treatment stages. Validate each with modulus and wear, force and moment, contact and margins, and planned versus achieved motion. Attribute deviations to the stage where they can arise. [R02] [R03] [R04] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Evidence priorities for 2027–2029",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Track consistent local thickness and load profiles across lots, time in wet aging before a specification is missed, and which treatment stages need rescanning or refinements. Matched clinical data for defined movements inform production decisions better than material strength alone."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Thickness-dependent biomechanical accuracy of additively manufactured and thermoformed orthodontic aligners: an in vitro comparative study.",
+        "year": "2026",
+        "url": "https://doi.org/10.1186/s12903-026-08758-w",
+        "kind": "paper",
+        "source": "10.1186/s12903-026-08758-w"
+      },
+      {
+        "id": "R02",
+        "title": "Influence of Water Storage on the Mechanical Properties of 3D-Printed Aligners: An In Vitro Study.",
+        "year": "2025",
+        "url": "https://doi.org/10.3390/bioengineering13010021",
+        "kind": "paper",
+        "source": "10.3390/bioengineering13010021"
+      },
+      {
+        "id": "R03",
+        "title": "Preclinical evaluation of 3D-Printed orthodontic aligners using an electro-typodont model.",
+        "year": "2025",
+        "url": "https://doi.org/10.3389/fbioe.2025.1650447",
+        "kind": "paper",
+        "source": "10.3389/fbioe.2025.1650447"
+      },
+      {
+        "id": "R04",
+        "title": "In Vitro Mechanical Study of Three-Dimensional Printed Invisible Dental Aligners for Crowded Dentition Problems: A Patient-Specific Study.",
+        "year": "2026",
+        "url": "https://doi.org/10.3390/biomimetics11020108",
+        "kind": "paper",
+        "source": "10.3390/biomimetics11020108"
+      },
+      {
+        "id": "R05",
+        "title": "Effect of heat treatment and nitrogen atmosphere during post-curing on mechanical properties of 3D-printed orthodontic aligners.",
+        "year": "2024",
+        "url": "https://doi.org/10.1093/ejo/cjad074",
+        "kind": "paper",
+        "source": "10.1093/ejo/cjad074"
+      },
+      {
+        "id": "R06",
+        "title": "A Comparison Between the Expansion Force Exerted by Thermo-Printed Aligners and 3D Printed Aligners: An In Vitro Study.",
+        "year": "2025",
+        "url": "https://doi.org/10.3390/bioengineering12090912",
+        "kind": "paper",
+        "source": "10.3390/bioengineering12090912"
+      },
+      {
+        "id": "R07",
+        "title": "PROCESSES FOR MAKING CLEAR DENTAL ALIGNERS AND CLEAR DENTAL ALIGNERS PRODUCED BY THE PROCESSES",
+        "year": "2025",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS20250318907A1",
+        "kind": "patent",
+        "source": "US20250318907A1"
+      },
+      {
+        "id": "R10",
+        "title": "PATIENT-SPECIFIC TRANSPARENT ORTHODONTIC APPLIANCE",
+        "year": "2023",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DWO2023080641A1",
+        "kind": "patent",
+        "source": "WO2023080641A1"
+      },
+      {
+        "id": "R11",
+        "title": "FDA 510(k) K233935 — DigiLine Direct Print Aligner System",
+        "year": "2024",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K233935.pdf",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R12",
+        "title": "LuxCreo launches 4D Bright™ Aligner",
+        "year": "2025",
+        "url": "https://luxcreo.com/press-releases/4d-bright-aligner/",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R13",
+        "title": "Accuracy comparison of orthodontic movements obtained with 3D printed and thermoformed aligners: a retrospective cohort study",
+        "year": "2025",
+        "url": "https://link.springer.com/article/10.1186/s40510-025-00587-x",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R14",
+        "title": "Torque expression in directly printed and thermoformed clear aligners: a controlled in vitro biomechanical comparison of power ridge effects",
+        "year": "2026",
+        "url": "https://link.springer.com/article/10.1186/s40510-026-00647-w",
+        "source": "",
+        "kind": "reference"
+      }
+    ]
+  },
+  "de": {
+    "id": "H31",
+    "p": "P2",
+    "title": "Direkt gedruckte kieferorthopädische Aligner",
+    "subtitle": "Von gemessener Dicke und Nachhärtung zur Kraft im feuchten Zustand",
+    "thesis": "Direktdruck macht die lokale Wanddicke zur Entwurfsvariable. Reale Momente hängen zudem von Passung, Polymerisation und Nassalterung ab. Befunde gelten für definierte Zahnbewegungen, Materialien und geprüfte Druckabläufe.",
+    "questions": [],
+    "graph": {
+      "title": "Forschungspfad",
+      "summary": "Dicken- und Härtungspfade treffen bei der Nassmechanik zusammen. Kräfte und Momente werden am vollständigen Zahnmodell geprüft. Die Fertigung verbindet Material, Gerät und Behandlungsplan im Qualitätsdatensatz.",
+      "nodes": [
+        {
+          "id": "N1",
+          "time": "2026",
+          "stage": 0,
+          "lane": 1,
+          "refs": [
+            "R01"
+          ],
+          "title": "Tatsächliche Dicke messen",
+          "question": "Erzeugen gleiche Nenndicken gleiche Kräfte?",
+          "evidence": "Eine In-vitro-Studie verglich dickenabhängige Biomechanik gedruckter und tiefgezogener Aligner."
+        },
+        {
+          "id": "N2",
+          "time": "2024",
+          "stage": 1,
+          "lane": 0,
+          "refs": [
+            "R05"
+          ],
+          "title": "Härtung bestimmt den Materialzustand",
+          "question": "Verändern Temperatur und Atmosphäre die Mechanik?",
+          "evidence": "Eine Studie zu Wärmebehandlung und Stickstoffatmosphäre machte die Nachhärtung zur Versuchsvariable."
+        },
+        {
+          "id": "N3",
+          "time": "2025",
+          "stage": 1,
+          "lane": 2,
+          "refs": [
+            "R06"
+          ],
+          "title": "Expansionskräfte bei definierter Bewegung vergleichen",
+          "question": "Wie unterscheiden sich die Wege bei gleichem Expansionsweg?",
+          "evidence": "Eine In-vitro-Expansionsstudie verglich tiefgezogene und gedruckte Apparaturen direkt."
+        },
+        {
+          "id": "N4",
+          "time": "2025/2026",
+          "stage": 2,
+          "lane": 0,
+          "refs": [
+            "R02"
+          ],
+          "title": "Nassalterung verändert die Materialrangfolge",
+          "question": "Bilden trockene Prüfkörper die orale Mechanik ab?",
+          "evidence": "Drei Druckharze und PET-G wurden vor und nach 14 Tagen Wasserlagerung bei 37 °C geprüft. Druckproben verloren Widerstand. Eindringkriechen und Verschleiß waren materialabhängig."
+        },
+        {
+          "id": "N5",
+          "time": "2025–2026",
+          "stage": 2,
+          "lane": 2,
+          "refs": [
+            "R03",
+            "R04"
+          ],
+          "title": "Last und Bewegung am Zahnmodell verbinden",
+          "question": "Wie wirken Materialien auf Einzelzahnmoment und Reaktion der Nachbarzähne?",
+          "evidence": "Ein Elektrotypodont und ein patientenspezifisches Engstandsmodell erlauben Bauteil- und anatomiespezifische Bewertung."
+        },
+        {
+          "id": "N6",
+          "time": "2024–2025",
+          "stage": 3,
+          "lane": 1,
+          "refs": [
+            "R11",
+            "R12"
+          ],
+          "title": "Gesamtes Fertigungssystem prüfen",
+          "question": "Wie wird der digitale Plan der Produktcharge zugeordnet?",
+          "evidence": "K233935 dokumentiert die wesentliche Gleichwertigkeit des direkt gedruckten sequenziellen DigiLine-Systems mit bestimmtem lichthärtendem Methacrylatharz. LuxCreo führte daneben den 4D Bright™ Aligner ein."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "branch",
+          "label": "Materialhärtung charakterisieren"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "branch",
+          "label": "Bewegungslast definieren"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Feuchte Bedingungen ergänzen"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Reaktionen des Zahnbogens einbeziehen"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Materialfreigabe festlegen"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Stufenspezifische Aligner prüfen"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Dickenverteilung aus Passung und Kraft ändern"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Vom Material zur Biomechanik der Apparatur",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Tiefziehen hängt von Folienstreckung und Modellpassung ab. Direktdruck erlaubt lokale Verdickung und Randänderungen. Der Vergleich braucht definierte Zahnbögen, Sollbewegung, Enddicke und Feuchte. Zuerst Passung, dann Kräfte und Momente in definierten Richtungen und schließlich Änderungen über die Tragedauer messen. [R01] [R02] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungspfad und Evidenz je Station",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Tatsächliche Dicke messen"
+          },
+          {
+            "type": "p",
+            "text": "Eine In-vitro-Studie verglich dickenabhängige Biomechanik gedruckter und tiefgezogener Aligner. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Bei Dickenänderung Dicke und Spalte an Kronen, Approximalflächen und Rändern erfassen. Ausdünnung beim Tiefziehen und lokale Überhärtung beim Druck anhand gemeinsamer Ist-Messgrößen beschreiben."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Härtung bestimmt den Materialzustand"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie zu Wärmebehandlung und Stickstoffatmosphäre machte die Nachhärtung zur Versuchsvariable. [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Baurichtung und Nachbehandlung getrennt kontrollieren und Verzug sowie Oberflächen- und Volumeneigenschaften messen. Bei Geometrieänderung Verbesserungen vom Prüfkörper am Aligner verifizieren."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Expansionskräfte bei definierter Bewegung vergleichen"
+          },
+          {
+            "type": "p",
+            "text": "Eine In-vitro-Expansionsstudie verglich tiefgezogene und gedruckte Apparaturen direkt. [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Anfangskraft, Abfall und Kontaktverteilung beschreiben Antrieb, Dauer und lokale Last. Die Bewegungsrichtung erleichtert Vergleiche mit Typodontversuchen."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Nassalterung verändert die Materialrangfolge"
+          },
+          {
+            "type": "p",
+            "text": "Drei Druckharze und PET-G wurden vor und nach 14 Tagen Wasserlagerung bei 37 °C geprüft. Druckproben verloren Widerstand. Eindringkriechen und Verschleiß waren materialabhängig. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Der Abrieb betrug bei Dental LT Clear V2 0,72 ± 0,21 mm³ und bei PET-G 1,12 ± 0,37 mm³. Abrieb und Erweichung unter Wasser gemeinsam beurteilen."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Last und Bewegung am Zahnmodell verbinden"
+          },
+          {
+            "type": "p",
+            "text": "Ein Elektrotypodont und ein patientenspezifisches Engstandsmodell erlauben Bauteil- und anatomiespezifische Bewertung. [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Lasten an Ziel- und Verankerungszähnen messen und anhand des Kraftangriffspunkts Kippung und Translation unterscheiden. Abweichungen in Wand- und Randdesign zurückführen."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Gesamtes Fertigungssystem prüfen"
+          },
+          {
+            "type": "p",
+            "text": "K233935 dokumentiert die wesentliche Gleichwertigkeit des direkt gedruckten sequenziellen DigiLine-Systems mit bestimmtem lichthärtendem Methacrylatharz. LuxCreo führte daneben den 4D Bright™ Aligner ein. [R11] [R12]"
+          },
+          {
+            "type": "p",
+            "text": "Passfehler zu Behandlungsstufe, Harzversion, Reinigung und Nachhärtung zurückverfolgen. Farbe und Mechanik sind eigene Freigabemerkmale."
+          }
+        ]
+      },
+      {
+        "title": "Vom mechanischen Vergleich zur beobachteten Zahnbewegung",
+        "blocks": [
+          {
+            "type": "table",
+            "headers": [
+              "Evidenzsituation",
+              "Vergleich und quantitativer Befund",
+              "Bedingungen der Einordnung"
+            ],
+            "rows": [
+              [
+                "Typodontbewegung [R01]",
+                "36 Typodonten, zwei Verfahren und 0,76 bzw. 1,00 mm. Mesiales Kippen erreichte 92,67 %, Torque bis 71,67 %.",
+                "Ist-/Sollwinkel unter definierten Typodont- und Wärmebedingungen."
+              ],
+              [
+                "Expansionsbelastung [R06]",
+                "Über acht Stunden lagen die Tiefziehgruppen 0,2/0,4 mm bei rund 0,2/0,7 N, beide TC-85-DAC-Gruppen nahe null.",
+                "Eine Wechselgebissgeometrie und definierter Prüfablauf."
+              ],
+              [
+                "Torque und Temperatur [R14]",
+                "DCA erreichte 62 % Torque bei 25 °C und 47 % bei 37 °C. Zendura Flex ohne Power Ridge lag bei rund 38–39 %.",
+                "Standardoberkiefer mit definierten Material- und Ridge-Kombinationen."
+              ],
+              [
+                "Aufeinanderfolgende klinische Fälle [R13]",
+                "34 Direktdruck- und 40 Tiefziehfälle. Torque 60 %/66 %, Kippung 52 %/61 %, Rotation 58 %/69 %. Unterschiede waren statistisch nicht signifikant.",
+                "Retrospektive Verläufe mit Nachkorrekturen und mehreren Harzen."
+              ]
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Warum Dickenwirkung und geringe Expansionskraft zusammen auftreten können"
+          },
+          {
+            "type": "p",
+            "text": "Der Typodontversuch kreuzte Verfahren, Dicke und Bewegung. Dickere Gruppen erreichten unter diesen Bedingungen höhere Winkeltreue, während Verfahrensunterschiede je Ort und Aufgabe variierten. Der Expansionsversuch maß zeitlich transversale Last am fixierten Modell. Abbildung 2 zeigt Kraft-Zeit-Kurven für Tiefziehproben und TC-85 DAC. Druckkräfte nahe null lenken die Prüfung auf Querstützung, Symmetrie und Endgeometrie. Beide Versuche ergänzen sich mit unterschiedlichen Endpunkten. [R01] [R06]"
+          },
+          {
+            "type": "h3",
+            "text": "Temperatur, Feuchte und lokale Verstärkung setzen Grenzen"
+          },
+          {
+            "type": "p",
+            "text": "Die Power-Ridge-Studie von 2026 nutzte ein Oberkiefermodell mit Tiefziehschienen mit und ohne Ridge und zwei gedruckten Materialien mit Ridge. Temperatur beeinflusste die Torque-Expression von DCA signifikant. TA-28 und Tiefziehverfahren zeigten andere Ergebnisse. Tabelle 2 zusammen mit Material, Temperatur und Ausführung lesen. Die Wasserlagerungsstudie ergänzt Biegeänderungen nach 14 Tagen. Die Prüfung kann Feuchte bei 37 °C und wiederholtes Ein- und Ausgliedern ergänzen und Änderungen auf Dicke und Viskoelastizität beziehen. [R02] [R14]"
+          },
+          {
+            "type": "h3",
+            "text": "Was klinische Daten ergänzen"
+          },
+          {
+            "type": "p",
+            "text": "Die Kohorte maß 1.018 Zähne bei 74 Personen mit Planung und Fertigung in einer Praxis durch denselben Behandler. Unterschiede waren nicht signifikant. Auswahlkriterien begrenzten Rotation, Lücken oder Engstand und schlossen Extraktionsbehandlungen aus. Gesamtwerte gemeinsam mit Zahnposition, Attachments, Harz und Nachkorrektur auswerten. Klinische Daten betreffen die Behandlung im Verlauf, mechanische Studien erklären mögliche Abweichungen einzelner Stufen oder Bewegungen. [R13] [R14]"
+          },
+          {
+            "type": "h3",
+            "text": "Reihenfolge für Prozessqualifikation und Anwendungsvalidierung"
+          },
+          {
+            "type": "p",
+            "text": "Produktunterlagen definieren das geprüfte Material und den Ablauf. Versuchsvergleiche prüfen passende Bauteilmerkmale pro Bewegung. Nassmechanik, regionale Passung, bewegungsspezifische Kraft und Moment sowie klinische Neuscans und Nachkorrekturen nacheinander bewerten. Lieferantenkomponenten und klinische Designvariablen getrennt führen, damit Härtungs- und Geräteänderungen je Endpunkt überprüfbar sind. [R05] [R11] [R13] [R14]"
+          }
+        ]
+      },
+      {
+        "title": "Produkte und Regulierung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Die FDA-Zusammenfassung beschreibt DigiLine vom Scan und der klinischen Planfreigabe zum stufenweisen Druck und nennt Tera Harz Clear und LuxCreo Clear Aligner als Vergleichsprodukte. 4D Bright™ erweitert die Farboptionen in derselben Geräteklasse. Die Produktdaten ordnen System, Materialien, Apparaturen und Zielpopulationen zu. [R11] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Patente und Parameterprüfung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "US20250318907A1 fokussiert Fertigung transparenter Aligner, WO2023080641A1 patientenspezifische transparente Apparaturen. Verfahren anhand einer Entwurfsdatei und danach Dicken- und Randänderungen bei gleichem Verfahren vergleichen. Attachment-Versagen, Verformung und Transparenz erfassen. [R07] [R10]"
+          }
+        ]
+      },
+      {
+        "title": "Zur realen kieferorthopädischen Behandlung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Probekörper, Standardtypodont, Patientengeometrie und Behandlungsverlauf trennen. Je Stufe Modul und Abrieb, Kraft und Moment, Kontakt und Rand sowie Soll- und Ist-Bewegung prüfen. Abweichungen dem möglichen Entstehungsschritt zuordnen. [R02] [R03] [R04] [R05]"
+          }
+        ]
+      },
+      {
+        "title": "Evidenzprioritäten 2027–2029",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Lokale Dicken- und Kraftprofile über Chargen, Spezifikationserhalt bei Nassalterung sowie Behandlungsstufen mit neuen Scans oder Nachkorrekturen verfolgen. Gepaarte klinische Daten zu definierten Bewegungen helfen Fertigungsentscheidungen über reine Festigkeitswerte hinaus."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "R01",
+        "title": "Thickness-dependent biomechanical accuracy of additively manufactured and thermoformed orthodontic aligners: an in vitro comparative study.",
+        "year": "2026",
+        "url": "https://doi.org/10.1186/s12903-026-08758-w",
+        "kind": "paper",
+        "source": "10.1186/s12903-026-08758-w"
+      },
+      {
+        "id": "R02",
+        "title": "Influence of Water Storage on the Mechanical Properties of 3D-Printed Aligners: An In Vitro Study.",
+        "year": "2025",
+        "url": "https://doi.org/10.3390/bioengineering13010021",
+        "kind": "paper",
+        "source": "10.3390/bioengineering13010021"
+      },
+      {
+        "id": "R03",
+        "title": "Preclinical evaluation of 3D-Printed orthodontic aligners using an electro-typodont model.",
+        "year": "2025",
+        "url": "https://doi.org/10.3389/fbioe.2025.1650447",
+        "kind": "paper",
+        "source": "10.3389/fbioe.2025.1650447"
+      },
+      {
+        "id": "R04",
+        "title": "In Vitro Mechanical Study of Three-Dimensional Printed Invisible Dental Aligners for Crowded Dentition Problems: A Patient-Specific Study.",
+        "year": "2026",
+        "url": "https://doi.org/10.3390/biomimetics11020108",
+        "kind": "paper",
+        "source": "10.3390/biomimetics11020108"
+      },
+      {
+        "id": "R05",
+        "title": "Effect of heat treatment and nitrogen atmosphere during post-curing on mechanical properties of 3D-printed orthodontic aligners.",
+        "year": "2024",
+        "url": "https://doi.org/10.1093/ejo/cjad074",
+        "kind": "paper",
+        "source": "10.1093/ejo/cjad074"
+      },
+      {
+        "id": "R06",
+        "title": "A Comparison Between the Expansion Force Exerted by Thermo-Printed Aligners and 3D Printed Aligners: An In Vitro Study.",
+        "year": "2025",
+        "url": "https://doi.org/10.3390/bioengineering12090912",
+        "kind": "paper",
+        "source": "10.3390/bioengineering12090912"
+      },
+      {
+        "id": "R07",
+        "title": "PROCESSES FOR MAKING CLEAR DENTAL ALIGNERS AND CLEAR DENTAL ALIGNERS PRODUCED BY THE PROCESSES",
+        "year": "2025",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS20250318907A1",
+        "kind": "patent",
+        "source": "US20250318907A1"
+      },
+      {
+        "id": "R10",
+        "title": "PATIENT-SPECIFIC TRANSPARENT ORTHODONTIC APPLIANCE",
+        "year": "2023",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DWO2023080641A1",
+        "kind": "patent",
+        "source": "WO2023080641A1"
+      },
+      {
+        "id": "R11",
+        "title": "FDA 510(k) K233935 — DigiLine Direct Print Aligner System",
+        "year": "2024",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K233935.pdf",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R12",
+        "title": "LuxCreo launches 4D Bright™ Aligner",
+        "year": "2025",
+        "url": "https://luxcreo.com/press-releases/4d-bright-aligner/",
+        "kind": "dated_company_event",
+        "source": ""
+      },
+      {
+        "id": "R13",
+        "title": "Accuracy comparison of orthodontic movements obtained with 3D printed and thermoformed aligners: a retrospective cohort study",
+        "year": "2025",
+        "url": "https://link.springer.com/article/10.1186/s40510-025-00587-x",
+        "source": "",
+        "kind": "reference"
+      },
+      {
+        "id": "R14",
+        "title": "Torque expression in directly printed and thermoformed clear aligners: a controlled in vitro biomechanical comparison of power ridge effects",
+        "year": "2026",
+        "url": "https://link.springer.com/article/10.1186/s40510-026-00647-w",
+        "source": "",
+        "kind": "reference"
+      }
+    ]
+  }
+}

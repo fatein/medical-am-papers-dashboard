@@ -1,0 +1,1307 @@
+{
+  "zh": {
+    "id": "H15",
+    "p": "P2",
+    "title": "牙科树脂的生物相容性与微生物附着",
+    "subtitle": "区分浸出物、接触反应与表面附着",
+    "thesis": "牙科树脂的细胞相容性取决于最终材料状态与接触方式，微生物附着则受表面形态、化学性质及使用条件共同影响。评价应串联制造、表面处理与维护。 [R01] [R02] [R03]",
+    "questions": [],
+    "graph": {
+      "title": "研究脉络 · 牙科树脂的生物相容性与微生物附着",
+      "summary": "从同一成品分别引出组织反应与表面附着，再观察清洁、磨损和储存是否改变两路结果。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2026",
+          "question": "以实际交付的状态为参照。",
+          "title": "确定材料最终状态",
+          "evidence": "临时固定修复体体外试验比较增材与减材树脂的初始细胞毒性，起点既有树脂配方差异也有加工差异。清洗介质、后固化、抛光以及测量经过的时间应连同材料代码记录。",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2024",
+          "question": "同一产品的两个接触模型是否一致？",
+          "title": "直接接触与浸出物",
+          "evidence": "口内器械研究比较 Dental LT Clear、热成形材料和热固化材料，在人牙龈成纤维细胞上分别做直接接触与浸出液评价。代谢活力与细胞膜损伤应结合阅读。",
+          "refs": [
+            "R02"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2023–2026",
+          "question": "将初始附着和成熟膜量分开比较。",
+          "title": "表面与附着",
+          "evidence": "比较不同制造路线的基托树脂时，体外研究中打印组同时表现出更粗糙表面和较高附着。几何与化学贡献可通过同一材料的抛光对照及匹配粗糙度的异材对照分别辨析。",
+          "refs": [
+            "R03",
+            "R04"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2024",
+          "question": "匹配实际器械的表面与维护状态。",
+          "title": "清洁和消毒",
+          "evidence": "口内材料的研究同时观察了化学与 UVC 消毒后的细胞反应。加工和维护可能改变表面状态，比较时可并列测量细胞反应、残余物与粗糙度，并保留未处理样。",
+          "refs": [
+            "R02"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2023",
+          "question": "把材料差异转为可辨认的表面条件。",
+          "title": "观察材料相互作用",
+          "evidence": "不同义齿基托树脂的附着与表面结果适合按配方、加工和表面条件分组。若结果在不同材料排序发生反转，可对照润湿性、表面形貌和老化条件定位共同变量。",
+          "refs": [
+            "R04",
+            "R05"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2024–2026",
+          "question": "将佩戴后反馈用于修订抛光和检查窗口。",
+          "title": "用随访反馈前端验证",
+          "evidence": "后续器械观察可按接触部位和佩戴期限记录表面损伤、清洁难度及黏膜表现，将事件与制程记录关联回去。体外比较可据此选择相关的最终材料状态。",
+          "refs": [
+            "R01",
+            "R02"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "直接接触与浸出物",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "表面与附着",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "清洁和消毒",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "清洁和消毒",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "观察材料相互作用",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "用随访反馈前端验证",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "用佩戴观察修订材料处理",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究范围与目标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "打印后树脂经过清洗和固化，内部转化与外表面均会变化。面向口内器械的研究可将组织接触、液相浸出与微生物界面分别量测，然后放回临床接触面积、时间以及维护任务中解释。"
+          }
+        ]
+      },
+      {
+        "title": "学术研究脉络与逐节点解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · 确定材料最终状态"
+          },
+          {
+            "type": "p",
+            "text": "临时固定修复体体外试验比较增材与减材树脂的初始细胞毒性，起点既有树脂配方差异也有加工差异。清洗介质、后固化、抛光以及测量经过的时间应连同材料代码记录。 [R01]"
+          },
+          {
+            "type": "p",
+            "text": "以实际交付的状态为参照。"
+          },
+          {
+            "type": "p",
+            "text": "2022年研究将LCD和DLP打印与空气、氮气闪光固化组合，测试硬咬合板材料的弯曲、硬度、韧性、转化率及吸水溶出。固化气氛和打印方式影响多个终点，而韧性等指标并未呈同样变化。[R09]"
+          },
+          {
+            "type": "p",
+            "text": "气氛试验把表面反应条件引入材料评价。它有助于检验表面聚合状态是否与整体力学一致，但硬度和弯曲结果的共同变化仍需要直接化学或显微证据解释。若某处理只改善表面而未改变裂纹扩展，可能提示不同性能由不同结构尺度控制。将断口、表面层和内部网络分别测量，可以让这种差异成为下一步可验证假说。"
+          },
+          {
+            "type": "p",
+            "text": "2025年研究使用两台打印机制作三单位桥，比较乙醇、异丙醇及其与超声结合等五种清洗策略。几何库配准分析显示，设备差异与角度、距离等评价方式共同影响观察到的变形响应。[R10]"
+          },
+          {
+            "type": "p",
+            "text": "三单位结构比简单试片更容易显示局部位移和跨距变化。固定一端后比较另一端的位置，可以揭示整体最佳拟合可能分摊掉的角度偏移。清洗的研究任务也因此包含两项：移除未反应残余，以及在处理过程中保持设计形状。溶剂、超声和干燥之间可能存在交互，适合在受控组合中测量，而不是将清洗时间作为唯一解释。"
+          },
+          {
+            "type": "h3",
+            "text": "N2 · 直接接触与浸出物"
+          },
+          {
+            "type": "p",
+            "text": "口内器械研究比较 Dental LT Clear、热成形材料和热固化材料，在人牙龈成纤维细胞上分别做直接接触与浸出液评价。代谢活力与细胞膜损伤应结合阅读。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "同一产品的两个接触模型是否一致？"
+          },
+          {
+            "type": "p",
+            "text": "2025年研究将同一固定修复树脂在两台DLP打印机与两种固化设备间交叉组合，测量尺寸、破坏强度及FTIR转化率。不同组合表现不同，后固化设备对多个结果的影响较突出。[R11]"
+          },
+          {
+            "type": "p",
+            "text": "交叉设计能够将打印阶段和追加聚合阶段分别作为因素。转化率与强度一起观察，可以检验材料反应是否与承载变化一致；尺寸变化又提醒研究保留几何约束。解释时应注意不同设备同时改变光谱、能量分布及温度，因此设备名称只是组合的标识。若希望提炼普遍机制，需要进一步测量和控制这些实际物理量。"
+          },
+          {
+            "type": "p",
+            "text": "2025年研究用180件传统及四种打印基托材料试样，比较机械抛光和VITA AKZENT LC釉层，再施加5000次咖啡热循环。釉层对强度、硬度、粗糙度及颜色的影响随材料而异，未形成所有指标同步改善。[R12]"
+          },
+          {
+            "type": "p",
+            "text": "该结果把表面完成从外观步骤推进到材料系统的一部分。涂层可能改变粗糙度、保护外层或引入新的界面，而不同基体的润湿与结合状态影响其作用。要解释某种组合为何改善硬度却没有改善颜色，可结合表面形貌、涂层厚度及老化后的界面完整性。单一终点的提高不能代替对其他功能的观察，因而多终点设计在这里具有直接意义。"
+          },
+          {
+            "type": "p",
+            "text": "2017 年研究比较 Clear 与 Dental SG 树脂在不同处理阶段对细胞的影响。打印与后固化降低了对细胞活性的影响，说明最终成品状态比原料名称更能代表实际接触材料。[R13]"
+          },
+          {
+            "type": "p",
+            "text": "材料的接触性质在打印和后固化过程中逐步形成。对未固化原料、初打印件与最终制品得到的细胞结果，分别回答不同阶段的问题。研究将这些阶段区分开，有助于解释为何同一商品名称不能替代明确的清洗与固化条件，也不能代表所有几何部位具有相同处理程度。"
+          },
+          {
+            "type": "h3",
+            "text": "N3 · 表面与附着"
+          },
+          {
+            "type": "p",
+            "text": "比较不同制造路线的基托树脂时，体外研究中打印组同时表现出更粗糙表面和较高附着。几何与化学贡献可通过同一材料的抛光对照及匹配粗糙度的异材对照分别辨析。 [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "将初始附着和成熟膜量分开比较。"
+          },
+          {
+            "type": "h3",
+            "text": "N4 · 清洁和消毒"
+          },
+          {
+            "type": "p",
+            "text": "口内材料的研究同时观察了化学与 UVC 消毒后的细胞反应。加工和维护可能改变表面状态，比较时可并列测量细胞反应、残余物与粗糙度，并保留未处理样。 [R02]"
+          },
+          {
+            "type": "p",
+            "text": "匹配实际器械的表面与维护状态。"
+          },
+          {
+            "type": "h3",
+            "text": "N5 · 观察材料相互作用"
+          },
+          {
+            "type": "p",
+            "text": "不同义齿基托树脂的附着与表面结果适合按配方、加工和表面条件分组。若结果在不同材料排序发生反转，可对照润湿性、表面形貌和老化条件定位共同变量。 [R04] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "把材料差异转为可辨认的表面条件。"
+          },
+          {
+            "type": "p",
+            "text": "2025年72件试样研究比较热固化与打印基托聚合物，测量热循环后的强度、硬度与颜色。所测打印材料的弯曲、拉伸及硬度受到老化影响，提示初始性能与环境后表现需要分别评价。[R14]"
+          },
+          {
+            "type": "p",
+            "text": "多项力学同时观察能够区分表面软化与整体承载变化。拉伸和弯曲对缺陷位置及应力状态的敏感性不同，硬度又主要描述局部表层，因此指标不一致可以帮助定位变化发生的尺度。进一步结合吸水、溶出和化学表征，可检验塑化、残余反应或界面变化等候选机制，而不必将所有性能下降归入同一种解释。"
+          },
+          {
+            "type": "p",
+            "text": "2026年研究将四种咬合板材料置于60摄氏度人工唾液中，按24、48、72小时分时评价。不同材料的硬度、模量、强度和破坏应变呈不同变化；研究将该条件定义为比较水热敏感性的加速模型。[R15]"
+          },
+          {
+            "type": "p",
+            "text": "固定介质和温度有助于识别相对响应，连续时间点则显示变化是快速发生后趋稳，还是持续推进。不同力学终点可呈不同时间轨迹，说明需要关注结构变形与失效两个层面。机制检验可以加入吸水质量、溶出分析、热分析和断口观察，确定响应是否与网络或表面改变一致。单凭强度曲线只能提出这些机制之间的候选关系。"
+          },
+          {
+            "type": "h3",
+            "text": "N6 · 用随访反馈前端验证"
+          },
+          {
+            "type": "p",
+            "text": "后续器械观察可按接触部位和佩戴期限记录表面损伤、清洁难度及黏膜表现，将事件与制程记录关联回去。体外比较可据此选择相关的最终材料状态。 [R01] [R02]"
+          },
+          {
+            "type": "p",
+            "text": "将佩戴后反馈用于修订抛光和检查窗口。"
+          }
+        ]
+      },
+      {
+        "title": "研究之间如何比较",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "细胞材料试验和表面附着试验可以共用制造批次，比较同一批次的不同测量终点。不同材料需要先核对抛光、固化、储存和暴露方式，再看附着排序。"
+          }
+        ]
+      },
+      {
+        "title": "企业路线与公开产品",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Formlabs 的 Dental LT Clear 产品资料按口内器械标注建议工艺。将生物相容性结果关联到材料版本、打印机和最终处理，才能在相近流程间审查替代。 [R08]"
+          }
+        ]
+      },
+      {
+        "title": "专利机制与转化验证",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN111631833A面向多涂层牙体，CN119157759A面向功能化牙科打印树脂。若作用区域来自涂层，应同时检查涂层含量变化、磨损后表面和细胞反应，若功能来自材料主体，则需检查其老化后是否持续。 [R06] [R07]"
+          }
+        ]
+      },
+      {
+        "title": "后续研究与应用走向",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "研究优先序是同配方分离后处理差异、同表面状态比较材料差异、再观察实际使用中的变化。报表可记录粗糙度和润湿性、细胞端点、使用中表面磨损与维护频次。 [R02] [R03] [R04]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Initial Cytotoxicity of Additively and Subtractively Manufactured Resin‐Based Materials for Interim Fixed Dental Prostheses: An In Vitro Study",
+        "url": "https://doi.org/10.1002/cre2.70413",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R01"
+      },
+      {
+        "title": "Biocompatibility of 3D-printed vs. thermoformed and heat-cured intraoral appliances.",
+        "url": "https://doi.org/10.3389/fbioe.2024.1453888",
+        "year": "2024",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R02"
+      },
+      {
+        "title": "Surface Properties of Dental Materials Influence the In Vitro Multi-Species Biofilm Formation.",
+        "url": "https://doi.org/10.3390/polym18020288",
+        "year": "2026",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R03"
+      },
+      {
+        "title": "Influence of Fabrication Technique on Adhesion and Biofilm Formation of Candida albicans to Conventional, Milled, and 3D-Printed Denture Base Resin Materials: A Comparative In Vitro Study.",
+        "url": "https://doi.org/10.3390/polym15081836",
+        "year": "2023",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R04"
+      },
+      {
+        "title": "Evaluation of Colonization by Candida albicans and Biofilm Formation on 3D-Printed Denture Base Resins.",
+        "url": "https://doi.org/10.3390/ma18215018",
+        "year": "",
+        "kind": "论文",
+        "source": "论文",
+        "id": "R05"
+      },
+      {
+        "title": "Manufacturing method of 3D printed multi-coating antibacterial tooth",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN111631833A",
+        "year": "2020",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R06"
+      },
+      {
+        "title": "3D printing dental resin with long-acting antibacterial property and drug resistance and preparation method of 3D printing dental resin",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119157759A",
+        "year": "2024",
+        "kind": "专利公开",
+        "source": "专利公开",
+        "id": "R07"
+      },
+      {
+        "title": "Dental LT Clear Resin (V2)",
+        "url": "https://dental.formlabs.com/products/dental-lt-clear-v2-resin/",
+        "year": "",
+        "kind": "企业公告",
+        "source": "企业公告",
+        "id": "R08"
+      },
+      {
+        "title": "Effect of Nitrogen Gas Post-Curing and Printer Type on the Mechanical Properties of 3D-Printed Hard Occlusal Splint Material",
+        "year": "2022",
+        "source": "Polymers",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9571503/",
+        "kind": "原始研究",
+        "id": "R09"
+      },
+      {
+        "title": "Deformation analysis of 3D-printed three-unit fixed partial dentures according to various cleaning strategies after DLP 3D printing: a geometric library matching approach",
+        "year": "2025",
+        "source": "Journal of Advanced Prosthodontics",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11886403/",
+        "kind": "原始研究",
+        "id": "R10"
+      },
+      {
+        "title": "Effects of 3D-printers and manufacturer-specified post-curing units on the dimensional accuracy, compressive strength, and degree of conversion of resin for fixed dental prostheses",
+        "year": "2025",
+        "source": "Journal of Dental Sciences",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12254842/",
+        "kind": "原始研究",
+        "id": "R11"
+      },
+      {
+        "title": "Evaluation of mechanical properties and color stability of 3D-printed denture base materials following two surface treatments",
+        "year": "2025",
+        "source": "BMC Oral Health",
+        "url": "https://link.springer.com/article/10.1186/s12903-025-06056-5",
+        "kind": "原始研究",
+        "id": "R12"
+      },
+      {
+        "id": "R13",
+        "title": "Evaluation of Resins for Stereolithographic 3D-Printed Surgical Guides: The Response of L929 Cells and Human Gingival Fibroblasts",
+        "year": "2017",
+        "source": "BioMed Research International",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29201905/"
+      },
+      {
+        "title": "An In-Vitro Evaluation of Strength, Hardness, and Color Stability of Heat-Polymerized and 3D-Printed Denture Base Polymers After Aging",
+        "year": "2025",
+        "source": "Polymers",
+        "url": "https://www.mdpi.com/2073-4360/17/3/288",
+        "kind": "原始研究",
+        "id": "R14"
+      },
+      {
+        "title": "Mechanical Properties of Dental Occlusal Splint Materials After Accelerated Aging in Artificial Saliva: An In Vitro Study",
+        "year": "2026",
+        "source": "Dentistry Journal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13511532/",
+        "kind": "原始研究",
+        "id": "R15"
+      }
+    ]
+  },
+  "en": {
+    "id": "H15",
+    "p": "P2",
+    "title": "Biocompatibility and microbial adhesion of dental resins",
+    "subtitle": "Separating leachables, contact responses and surface adhesion",
+    "thesis": "Cytocompatibility depends on the finished resin and the type of contact. Microbial adhesion depends jointly on surface morphology, chemistry and conditions of use. Evaluation should connect manufacture, finishing and maintenance. [R01] [R02] [R03]",
+    "questions": [],
+    "graph": {
+      "title": "Research pathway · Biocompatibility and microbial adhesion of dental resins",
+      "summary": "Branch from the finished part to tissue response and surface adhesion, then test how cleaning, wear and storage affect both.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2026",
+          "question": "Use the state in which the device is delivered.",
+          "title": "Define the final material state",
+          "evidence": "An in vitro study compared initial cytotoxicity in additively and subtractively manufactured interim restorations. Formulations and processing both differed. Washing, post-curing, polishing and time to measurement should accompany the material ID.",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2024",
+          "question": "Do both exposure models give a consistent result for one product?",
+          "title": "Direct contact and leachables",
+          "evidence": "A comparison of Dental LT Clear, thermoformed and heat-cured materials assessed human gingival fibroblasts by direct contact and extract testing. Metabolic activity and membrane damage provide complementary endpoints.",
+          "refs": [
+            "R02"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2023–2026",
+          "question": "Assess initial adhesion and mature biofilm separately.",
+          "title": "Surface and adhesion",
+          "evidence": "In one comparison of denture-base routes, the printed group combined greater roughness with higher adhesion. Within-material polishing and cross-material comparisons at matched roughness can help distinguish geometry from chemistry.",
+          "refs": [
+            "R03",
+            "R04"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2024",
+          "question": "Match the assessment to the device’s finished and maintained surface.",
+          "title": "Cleaning and disinfection",
+          "evidence": "The intraoral-material study included cell-response comparisons after chemical and UVC disinfection. Maintenance can alter the surface. An untreated group provides a baseline for pairing cell response, residuals and roughness.",
+          "refs": [
+            "R02"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2023",
+          "question": "Trace material differences to measurable surface conditions.",
+          "title": "Compare material interactions",
+          "evidence": "Group denture-base adhesion and surface results by formulation, processing and finish. If the ranking changes between studies, compare wettability, topography and ageing conditions to identify the variables that changed.",
+          "refs": [
+            "R04",
+            "R05"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2024–2026",
+          "question": "Use wear observations to refine polishing and inspection.",
+          "title": "Feedback from follow-up",
+          "evidence": "Follow-up can record surface damage, cleaning difficulty and mucosal findings by contact site and wear duration, then link findings to fabrication records. Bench tests can target the finished material states most relevant to these observations.",
+          "refs": [
+            "R01",
+            "R02"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Direct contact and leachables",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Surface and adhesion",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Cleaning and disinfection",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Cleaning and disinfection",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Compare material interactions",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Feedback from follow-up",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Refine processing from wear observations",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Scope and objectives",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Washing and curing change both resin conversion and the finished surface. Studies can separate tissue contact, leachables and microbial interactions, then interpret them in light of oral contact area, duration and maintenance."
+          }
+        ]
+      },
+      {
+        "title": "Academic pathway and interpretation",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Define the final material state"
+          },
+          {
+            "type": "p",
+            "text": "An in vitro study compared initial cytotoxicity in additively and subtractively manufactured interim restorations. Formulations and processing both differed. Washing, post-curing, polishing and time to measurement should accompany the material ID. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Use the state in which the device is delivered."
+          },
+          {
+            "type": "p",
+            "text": "A 2022 study combined LCD and DLP printing with flash post-curing in air or nitrogen, assessing flexural properties, hardness, fracture toughness, degree of conversion, water sorption and solubility in hard occlusal-splint materials. Curing atmosphere and printing method affected several endpoints, but toughness and other measures did not all change in the same way. [R09]"
+          },
+          {
+            "type": "p",
+            "text": "The atmosphere test introduces surface reaction conditions into material evaluation. It helps verify whether the surface polymerization state is consistent with the overall mechanics, but the combined changes in hardness and bending results still require direct chemical or microscopic evidence for explanation. If a treatment only improves the surface without altering crack propagation, it may suggest that different properties are controlled by different structural scales. Measuring the fracture surface, surface layer, and internal network separately allows this difference to become a verifiable hypothesis for further investigation."
+          },
+          {
+            "type": "p",
+            "text": "The 2025 study used two printers to fabricate a three-unit bridge and compared five cleaning strategies, including ethanol, isopropanol, and a combination of these with ultrasound. Geometric library registration analysis showed that equipment differences, along with evaluation methods such as angle and distance, collectively influenced the observed deformation response. [R10]"
+          },
+          {
+            "type": "p",
+            "text": "The three-unit structure is more effective than simple specimens in revealing local displacement and span variations. By fixing one end and comparing the position of the other, the angular shift that might be amortized by the overall best fit can be revealed. Therefore, the cleaning task thus includes two aspects: removing unreacted residues and maintaining the designed shape during processing. Interactions may exist between solvent, sonication, and drying, making it suitable for measurement in controlled combinations, rather than relying solely on cleaning time as the sole explanation."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Direct contact and leachables"
+          },
+          {
+            "type": "p",
+            "text": "A comparison of Dental LT Clear, thermoformed and heat-cured materials assessed human gingival fibroblasts by direct contact and extract testing. Metabolic activity and membrane damage provide complementary endpoints. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Do both exposure models give a consistent result for one product?"
+          },
+          {
+            "type": "p",
+            "text": "A 2025 study crossed two DLP printers and two curing devices using the same fixed-restoration resin, measuring dimensions, fracture strength and degree of conversion by FTIR. Performance differed among combinations, with particularly notable effects of the post-curing device on several outcomes. [R11]"
+          },
+          {
+            "type": "p",
+            "text": "The cross-design allows for the separate consideration of the printing and additional polymerization stages. Observing degree of conversion and strength together can verify whether the material response is consistent with changes in load; dimensional changes also remind researchers to retain geometric constraints. It should be noted that different devices simultaneously alter the spectrum, energy distribution, and temperature; therefore, device names are merely identifiers of the combination. Further measurement and control of these actual physical quantities are needed to extract a general mechanism."
+          },
+          {
+            "type": "p",
+            "text": "A 2025 study used 180 specimens of conventional and four printed denture-base materials to compare mechanical polishing with VITA AKZENT LC glazing, followed by 5,000 thermocycles in coffee. Effects on strength, hardness, roughness and colour depended on the material; the glaze did not improve all outcomes together. [R12]"
+          },
+          {
+            "type": "p",
+            "text": "This result elevates surface finishing from a mere aesthetic step to an integral part of the material system. Coatings can alter roughness, protect the outer layer, or introduce new interfaces, and their effects are influenced by the wetting and bonding states of different substrates. To explain why a certain combination improves hardness without improving color, one can consider surface morphology, coating thickness, and interfacial integrity after aging. Improvements at a single endpoint cannot replace observations of other functions; therefore, multi-endpoint design is directly relevant here."
+          },
+          {
+            "type": "p",
+            "text": "A 2017 study compared the effects of Clear and Dental SG resins on cells at different processing stages. Printing and post-curing reduced the impact on cell viability, indicating that the final product state is a better representation of the actual contact material than the raw material name. [R13]"
+          },
+          {
+            "type": "p",
+            "text": "The contact properties of material are gradually formed during printing and post-curing. The study addresses questions at different stages by examining the cellular results obtained from uncured raw materials, initial prints, and final products. Distinguishing these stages helps explain why the same product name cannot substitute for specific cleaning and curing conditions, nor does it represent the same level of treatment for all geometries."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Surface and adhesion"
+          },
+          {
+            "type": "p",
+            "text": "In one comparison of denture-base routes, the printed group combined greater roughness with higher adhesion. Within-material polishing and cross-material comparisons at matched roughness can help distinguish geometry from chemistry. [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Assess initial adhesion and mature biofilm separately."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Cleaning and disinfection"
+          },
+          {
+            "type": "p",
+            "text": "The intraoral-material study included cell-response comparisons after chemical and UVC disinfection. Maintenance can alter the surface. An untreated group provides a baseline for pairing cell response, residuals and roughness. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Match the assessment to the device’s finished and maintained surface."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Compare material interactions"
+          },
+          {
+            "type": "p",
+            "text": "Group denture-base adhesion and surface results by formulation, processing and finish. If the ranking changes between studies, compare wettability, topography and ageing conditions to identify the variables that changed. [R04] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Trace material differences to measurable surface conditions."
+          },
+          {
+            "type": "p",
+            "text": "A 2025 study of 72 specimens compared heat-cured and printed denture-base polymers, measuring strength, hardness and colour after thermocycling. Flexural strength, tensile strength and hardness of the tested printed materials were affected by ageing, highlighting the need to assess initial properties and retention after environmental exposure separately. [R14]"
+          },
+          {
+            "type": "p",
+            "text": "Simultaneous observation of multiple mechanical parameters can distinguish between surface softening and changes in overall load-bearing capacity. Tensile and bending parameters differ in their sensitivity to defect location and stress state, and hardness primarily describes the local surface layer; therefore, inconsistencies in these parameters can help pinpoint the scale of change. Further integration with water absorption, dissolution, and chemical characterization can examine candidate mechanisms such as plasticization, residual reactions, or interfacial changes, rather than attributing all performance degradation to a single explanation."
+          },
+          {
+            "type": "p",
+            "text": "A 2026 study placed four types of occlusal splint materials in artificial saliva at 60 degrees Celsius and evaluated them at 24, 48, and 72 hours. The hardness, modulus, strength, and failure strain of the different materials showed varying changes; this condition was defined as an accelerated model for comparing hydrothermal sensitivity. [R15]"
+          },
+          {
+            "type": "p",
+            "text": "Using a fixed medium and temperature helps identify the relative response, while continuous time points show whether the change occurs rapidly and then stabilizes, or continues to progress. Different mechanical endpoints can show different time trajectories, indicating the need to focus on both structural deformation and failure. Mechanism verification can incorporate water absorption mass, dissolution analysis, thermal analysis, and fracture surface observation to determine whether the response is consistent with network or surface changes. Strength curves alone can only suggest candidate relationships between these mechanisms."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Feedback from follow-up"
+          },
+          {
+            "type": "p",
+            "text": "Follow-up can record surface damage, cleaning difficulty and mucosal findings by contact site and wear duration, then link findings to fabrication records. Bench tests can target the finished material states most relevant to these observations. [R01] [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Use wear observations to refine polishing and inspection."
+          }
+        ]
+      },
+      {
+        "title": "Comparing the evidence",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Cell-response and surface-adhesion tests can share manufacturing batches and compare endpoints within the same batch. Check polishing, cure, storage and exposure before comparing material rankings."
+          }
+        ]
+      },
+      {
+        "title": "Industry approaches and documented products",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Formlabs documents a recommended workflow for Dental LT Clear intraoral devices. Linking biological results to resin revision, printer and final processing allows a change between workflows to be evaluated. [R08]"
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and translational testing",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN111631833A concerns a multilayer coating and CN119157759A a functional dental printing resin. Where a coating supplies the functional surface, examine changes in the coating, wear and cell response. Where the bulk material supplies the function, assess its persistence after ageing. [R06] [R07]"
+          }
+        ]
+      },
+      {
+        "title": "Research and adoption outlook",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Prioritize comparisons of post-processing within one formulation, then materials under matched finish, followed by changes during use. Record roughness and wettability, cell endpoints, surface wear and maintenance frequency. [R02] [R03] [R04]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Initial Cytotoxicity of Additively and Subtractively Manufactured Resin‐Based Materials for Interim Fixed Dental Prostheses: An In Vitro Study",
+        "url": "https://doi.org/10.1002/cre2.70413",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R01"
+      },
+      {
+        "title": "Biocompatibility of 3D-printed vs. thermoformed and heat-cured intraoral appliances.",
+        "url": "https://doi.org/10.3389/fbioe.2024.1453888",
+        "year": "2024",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R02"
+      },
+      {
+        "title": "Surface Properties of Dental Materials Influence the In Vitro Multi-Species Biofilm Formation.",
+        "url": "https://doi.org/10.3390/polym18020288",
+        "year": "2026",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R03"
+      },
+      {
+        "title": "Influence of Fabrication Technique on Adhesion and Biofilm Formation of Candida albicans to Conventional, Milled, and 3D-Printed Denture Base Resin Materials: A Comparative In Vitro Study.",
+        "url": "https://doi.org/10.3390/polym15081836",
+        "year": "2023",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R04"
+      },
+      {
+        "title": "Evaluation of Colonization by Candida albicans and Biofilm Formation on 3D-Printed Denture Base Resins.",
+        "url": "https://doi.org/10.3390/ma18215018",
+        "year": "",
+        "kind": "Research paper",
+        "source": "Research paper",
+        "id": "R05"
+      },
+      {
+        "title": "Manufacturing method of 3D printed multi-coating antibacterial tooth",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN111631833A",
+        "year": "2020",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R06"
+      },
+      {
+        "title": "3D printing dental resin with long-acting antibacterial property and drug resistance and preparation method of 3D printing dental resin",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119157759A",
+        "year": "2024",
+        "kind": "Patent publication",
+        "source": "Patent publication",
+        "id": "R07"
+      },
+      {
+        "title": "Dental LT Clear Resin (V2)",
+        "url": "https://dental.formlabs.com/products/dental-lt-clear-v2-resin/",
+        "year": "",
+        "kind": "Company announcement",
+        "source": "Company announcement",
+        "id": "R08"
+      },
+      {
+        "title": "Effect of Nitrogen Gas Post-Curing and Printer Type on the Mechanical Properties of 3D-Printed Hard Occlusal Splint Material",
+        "year": "2022",
+        "source": "Polymers",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9571503/",
+        "kind": "原始研究",
+        "id": "R09"
+      },
+      {
+        "title": "Deformation analysis of 3D-printed three-unit fixed partial dentures according to various cleaning strategies after DLP 3D printing: a geometric library matching approach",
+        "year": "2025",
+        "source": "Journal of Advanced Prosthodontics",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11886403/",
+        "kind": "原始研究",
+        "id": "R10"
+      },
+      {
+        "title": "Effects of 3D-printers and manufacturer-specified post-curing units on the dimensional accuracy, compressive strength, and degree of conversion of resin for fixed dental prostheses",
+        "year": "2025",
+        "source": "Journal of Dental Sciences",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12254842/",
+        "kind": "原始研究",
+        "id": "R11"
+      },
+      {
+        "title": "Evaluation of mechanical properties and color stability of 3D-printed denture base materials following two surface treatments",
+        "year": "2025",
+        "source": "BMC Oral Health",
+        "url": "https://link.springer.com/article/10.1186/s12903-025-06056-5",
+        "kind": "原始研究",
+        "id": "R12"
+      },
+      {
+        "id": "R13",
+        "title": "Evaluation of Resins for Stereolithographic 3D-Printed Surgical Guides: The Response of L929 Cells and Human Gingival Fibroblasts",
+        "year": "2017",
+        "source": "BioMed Research International",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29201905/"
+      },
+      {
+        "title": "An In-Vitro Evaluation of Strength, Hardness, and Color Stability of Heat-Polymerized and 3D-Printed Denture Base Polymers After Aging",
+        "year": "2025",
+        "source": "Polymers",
+        "url": "https://www.mdpi.com/2073-4360/17/3/288",
+        "kind": "原始研究",
+        "id": "R14"
+      },
+      {
+        "title": "Mechanical Properties of Dental Occlusal Splint Materials After Accelerated Aging in Artificial Saliva: An In Vitro Study",
+        "year": "2026",
+        "source": "Dentistry Journal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13511532/",
+        "kind": "原始研究",
+        "id": "R15"
+      }
+    ]
+  },
+  "de": {
+    "id": "H15",
+    "p": "P2",
+    "title": "Biokompatibilität und mikrobielle Anhaftung dentaler Harze",
+    "subtitle": "Freisetzbare Stoffe, Kontaktreaktion und Anhaftung getrennt bewerten",
+    "thesis": "Zytokompatibilität hängt vom Endzustand des Harzes und der Kontaktart ab. Oberflächenmorphologie, Chemie und Nutzung beeinflussen die mikrobielle Anhaftung gemeinsam. Fertigung, Oberflächenbehandlung und Pflege sind zusammen zu prüfen. [R01] [R02] [R03]",
+    "questions": [],
+    "graph": {
+      "title": "Forschungsverlauf · Biokompatibilität und mikrobielle Anhaftung dentaler Harze",
+      "summary": "Vom Endprodukt führen getrennte Pfade zu Gewebereaktion und Anhaftung. Reinigung, Verschleiß und Lagerung können beide Befunde verändern.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2026",
+          "question": "Den Auslieferungszustand als Referenz verwenden.",
+          "title": "Materialzustand festlegen",
+          "evidence": "Eine In-vitro-Studie verglich die anfängliche Zytotoxizität additiv und subtraktiv gefertigter Provisorien. Rezepturen und Verarbeitung unterschieden sich. Reinigung, Nachhärtung, Politur und Zeit bis zur Messung gehören daher zur Materialkennzeichnung.",
+          "refs": [
+            "R01"
+          ]
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2024",
+          "question": "Stimmen die Befunde beider Kontaktmodelle beim selben Produkt überein?",
+          "title": "Direktkontakt und freisetzbare Stoffe",
+          "evidence": "Dental LT Clear, tiefgezogene und heißpolymerisierte Materialien wurden mit humanen Gingivafibroblasten im Direktkontakt und anhand von Eluaten verglichen. Stoffwechselaktivität und Membranschädigung ergänzen sich als Endpunkte.",
+          "refs": [
+            "R02"
+          ]
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2023–2026",
+          "question": "Frühe Anhaftung und ausgebildeten Biofilm getrennt bewerten.",
+          "title": "Oberfläche und Anhaftung",
+          "evidence": "In einem Vergleich von Prothesenbasen zeigte die Druckgruppe zugleich höhere Rauheit und stärkere Anhaftung. Politurvergleiche am selben Material und Materialvergleiche bei gleicher Rauheit helfen, geometrische und chemische Beiträge zu trennen.",
+          "refs": [
+            "R03",
+            "R04"
+          ]
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 1,
+          "time": "2024",
+          "question": "Oberfläche und Pflegezustand des tatsächlichen Produkts berücksichtigen.",
+          "title": "Reinigung und Desinfektion",
+          "evidence": "Die Untersuchung intraoraler Materialien verglich Zellreaktionen auch nach chemischer und UVC-Desinfektion. Pflege kann die Oberfläche verändern. Eine unbehandelte Gruppe dient als Referenz für Zellreaktion, Rückstände und Rauheit.",
+          "refs": [
+            "R02"
+          ]
+        },
+        {
+          "id": "N5",
+          "stage": 3,
+          "lane": 1,
+          "time": "2023",
+          "question": "Werkstoffunterschiede messbaren Oberflächenbedingungen zuordnen.",
+          "title": "Materialabhängige Wechselwirkungen vergleichen",
+          "evidence": "Anhaftungs- und Oberflächenbefunde zu Prothesenbasen sollten nach Rezeptur, Verarbeitung und Finish gruppiert werden. Wechselt die Rangfolge, helfen Benetzbarkeit, Topografie und Alterungsbedingungen bei der Einordnung.",
+          "refs": [
+            "R04",
+            "R05"
+          ]
+        },
+        {
+          "id": "N6",
+          "stage": 4,
+          "lane": 1,
+          "time": "2024–2026",
+          "question": "Gebrauchsbefunde für Politur und Prüfzeitpunkte nutzen.",
+          "title": "Nachbeobachtung als Rückmeldung",
+          "evidence": "In der Nachbeobachtung lassen sich Oberflächenschäden, Reinigungsaufwand und Schleimhautbefunde nach Kontaktstelle und Tragedauer erfassen und mit Fertigungsdaten verbinden. Laborprüfungen können gezielt die entsprechenden Werkstoffzustände abbilden.",
+          "refs": [
+            "R01",
+            "R02"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "label": "Direktkontakt und freisetzbare Stoffe",
+          "kind": "forward"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "label": "Oberfläche und Anhaftung",
+          "kind": "forward"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "label": "Reinigung und Desinfektion",
+          "kind": "forward"
+        },
+        {
+          "from": "N3",
+          "to": "N4",
+          "label": "Reinigung und Desinfektion",
+          "kind": "forward"
+        },
+        {
+          "from": "N4",
+          "to": "N5",
+          "label": "Materialabhängige Wechselwirkungen vergleichen",
+          "kind": "forward"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "label": "Nachbeobachtung als Rückmeldung",
+          "kind": "forward"
+        },
+        {
+          "from": "N6",
+          "to": "N2",
+          "label": "Aufbereitung anhand von Gebrauchsbefunden anpassen",
+          "kind": "feedback"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Untersuchungsrahmen und Ziele",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Reinigung und Härtung verändern Harzumsatz und Oberfläche. Gewebekontakt, freisetzbare Stoffe und mikrobielle Wechselwirkungen lassen sich getrennt prüfen und nach Kontaktfläche, Kontaktdauer und Pflegeaufgabe einordnen."
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Einordnung der Einzelschritte",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "N1 · Materialzustand festlegen"
+          },
+          {
+            "type": "p",
+            "text": "Eine In-vitro-Studie verglich die anfängliche Zytotoxizität additiv und subtraktiv gefertigter Provisorien. Rezepturen und Verarbeitung unterschieden sich. Reinigung, Nachhärtung, Politur und Zeit bis zur Messung gehören daher zur Materialkennzeichnung. [R01]"
+          },
+          {
+            "type": "p",
+            "text": "Den Auslieferungszustand als Referenz verwenden."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2022 kombinierte LCD- und DLP-Druck mit Blitzlichthärtung an Luft oder unter Stickstoff. An starren Aufbissschienenmaterialien wurden Biegeverhalten, Härte, Zähigkeit, Konversionsgrad, Wasseraufnahme und Löslichkeit geprüft. Atmosphäre und Druckverfahren beeinflussten mehrere Endpunkte; Zähigkeit und weitere Maße änderten sich nicht im selben Muster.[R09]"
+          },
+          {
+            "type": "p",
+            "text": "Der Atmosphärentest berücksichtigt Oberflächenreaktionsbedingungen bei der Materialbewertung. Er hilft zu überprüfen, ob der Polymerisationszustand der Oberfläche mit den mechanischen Eigenschaften übereinstimmt. Die kombinierten Änderungen der Härte und der Biegeergebnisse erfordern jedoch weiterhin direkte chemische oder mikroskopische Nachweise zur Erklärung. Verbessert eine Behandlung lediglich die Oberfläche, ohne die Rissausbreitung zu beeinflussen, deutet dies möglicherweise darauf hin, dass unterschiedliche Eigenschaften von verschiedenen Strukturebenen bestimmt werden. Die separate Messung der Bruchfläche, der Oberflächenschicht und des inneren Netzwerks ermöglicht es, diesen Unterschied als überprüfbare Hypothese für weitere Untersuchungen zu etablieren."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2025 fertigte dreigliedrige Brücken auf zwei Druckern und verglich fünf Reinigungsstrategien mit Ethanol, Isopropanol und Kombinationen mit Ultraschall. Die Registrierung an einer Geometriebibliothek zeigte, dass Gerät und Bewertungsmaß, etwa Winkel oder Abstand, das erfasste Verformungsverhalten gemeinsam beeinflussten.[R10]"
+          },
+          {
+            "type": "p",
+            "text": "Die dreiteilige Struktur ist effektiver als einfache Proben, um lokale Verschiebungen und Spannweitenabweichungen aufzudecken. Durch Fixierung eines Endes und Vergleich der Position des anderen lässt sich die Winkelverschiebung ermitteln, die durch die optimale Gesamtpassung möglicherweise kompensiert wird. Die Reinigung umfasst daher zwei Aspekte: die Entfernung nicht umgesetzter Rückstände und die Erhaltung der gewünschten Form während der Verarbeitung. Wechselwirkungen zwischen Lösungsmittel, Ultraschall und Trocknung sind möglich, weshalb Messungen in kontrollierten Kombinationen sinnvoll sind, anstatt sich allein auf die Reinigungszeit als Erklärung zu verlassen."
+          },
+          {
+            "type": "h3",
+            "text": "N2 · Direktkontakt und freisetzbare Stoffe"
+          },
+          {
+            "type": "p",
+            "text": "Dental LT Clear, tiefgezogene und heißpolymerisierte Materialien wurden mit humanen Gingivafibroblasten im Direktkontakt und anhand von Eluaten verglichen. Stoffwechselaktivität und Membranschädigung ergänzen sich als Endpunkte. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Stimmen die Befunde beider Kontaktmodelle beim selben Produkt überein?"
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2025 kombinierte dasselbe Harz für festsitzende Restaurationen mit zwei DLP-Druckern und zwei Aushärtungsgeräten. Gemessen wurden Abmessungen, Bruchfestigkeit und FTIR-Konversionsgrad. Die Kombinationen unterschieden sich; das Nachhärtungsgerät beeinflusste mehrere Ergebnisse besonders deutlich.[R11]"
+          },
+          {
+            "type": "p",
+            "text": "Das Kreuzdesign ermöglicht die separate Betrachtung des Druckprozesses und zusätzlicher Polymerisationsstufen. Die gleichzeitige Beobachtung von Umwandlungsrate und Festigkeit kann überprüfen, ob das Materialverhalten mit Laständerungen übereinstimmt; Dimensionsänderungen erinnern die Forschenden zudem daran, geometrische Randbedingungen einzuhalten. Es ist zu beachten, dass verschiedene Geräte gleichzeitig Spektrum, Energieverteilung und Temperatur verändern; daher dienen Gerätebezeichnungen lediglich der Identifizierung der jeweiligen Kombination. Weitere Messungen und Kontrollen dieser physikalischen Größen sind erforderlich, um einen allgemeinen Mechanismus zu ermitteln."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2025 verglich an 180 Proben aus konventionellem und vier gedruckten Prothesenbasismaterialien mechanisches Polieren mit VITA-AKZENT-LC-Glasur, gefolgt von 5000 Temperaturzyklen in Kaffee. Die Wirkung auf Festigkeit, Härte, Rauheit und Farbe war materialabhängig; eine gleichzeitige Verbesserung aller Maße trat nicht auf.[R12]"
+          },
+          {
+            "type": "p",
+            "text": "Dieses Ergebnis hebt die Oberflächenveredelung von einem rein ästhetischen Schritt zu einem integralen Bestandteil des Materialsystems. Beschichtungen können die Rauheit verändern, die äußere Schicht schützen oder neue Grenzflächen schaffen. Ihre Wirkung wird durch den Benetzungs- und Bindungszustand verschiedener Substrate beeinflusst. Um zu erklären, warum eine bestimmte Kombination die Härte verbessert, ohne die Farbe zu beeinflussen, können Oberflächenmorphologie, Beschichtungsdicke und Grenzflächenintegrität nach der Alterung betrachtet werden. Verbesserungen an einem einzelnen Endpunkt können die Beobachtung anderer Funktionen nicht ersetzen; daher ist ein Design mit mehreren Endpunkten hier von direkter Relevanz."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie aus dem Jahr 2017 verglich die Auswirkungen von Clear- und Dental-SG-Harzen auf Zellen in verschiedenen Verarbeitungsstadien. Drucken und Nachhärten reduzierten die Auswirkungen auf die Zellviabilität, was darauf hindeutet, dass der Zustand des Endprodukts die Eigenschaften des tatsächlichen Kontaktmaterials besser widerspiegelt als die Bezeichnung des Rohmaterials. [R13]"
+          },
+          {
+            "type": "p",
+            "text": "Die Kontakteigenschaften des Materials entwickeln sich schrittweise während des Druckvorgangs und der anschließenden Aushärtung. Die Studie untersucht Fragestellungen in verschiedenen Phasen, indem sie zelluläre Ergebnisse nach Kontakt mit ungehärtetem Rohmaterial, frisch gedruckten Teilen und Endprodukten vergleicht. Die Unterscheidung dieser Phasen trägt dazu bei, zu erklären, warum derselbe Produktname weder spezifische Reinigungs- und Aushärtungsbedingungen ersetzen kann noch für alle Geometrien die gleiche Behandlungsstufe repräsentiert."
+          },
+          {
+            "type": "h3",
+            "text": "N3 · Oberfläche und Anhaftung"
+          },
+          {
+            "type": "p",
+            "text": "In einem Vergleich von Prothesenbasen zeigte die Druckgruppe zugleich höhere Rauheit und stärkere Anhaftung. Politurvergleiche am selben Material und Materialvergleiche bei gleicher Rauheit helfen, geometrische und chemische Beiträge zu trennen. [R03] [R04]"
+          },
+          {
+            "type": "p",
+            "text": "Frühe Anhaftung und ausgebildeten Biofilm getrennt bewerten."
+          },
+          {
+            "type": "h3",
+            "text": "N4 · Reinigung und Desinfektion"
+          },
+          {
+            "type": "p",
+            "text": "Die Untersuchung intraoraler Materialien verglich Zellreaktionen auch nach chemischer und UVC-Desinfektion. Pflege kann die Oberfläche verändern. Eine unbehandelte Gruppe dient als Referenz für Zellreaktion, Rückstände und Rauheit. [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Oberfläche und Pflegezustand des tatsächlichen Produkts berücksichtigen."
+          },
+          {
+            "type": "h3",
+            "text": "N5 · Materialabhängige Wechselwirkungen vergleichen"
+          },
+          {
+            "type": "p",
+            "text": "Anhaftungs- und Oberflächenbefunde zu Prothesenbasen sollten nach Rezeptur, Verarbeitung und Finish gruppiert werden. Wechselt die Rangfolge, helfen Benetzbarkeit, Topografie und Alterungsbedingungen bei der Einordnung. [R04] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Werkstoffunterschiede messbaren Oberflächenbedingungen zuordnen."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie von 2025 verglich an 72 Proben heißpolymerisierte und gedruckte Prothesenbasispolymere nach Thermozyklierung hinsichtlich Festigkeit, Härte und Farbe. Biege-, Zug- und Härteeigenschaften der geprüften Druckmaterialien wurden von Alterung beeinflusst. Anfangseigenschaften und Verhalten nach Umweltexposition müssen getrennt bewertet werden.[R14]"
+          },
+          {
+            "type": "p",
+            "text": "Die gleichzeitige Beobachtung mehrerer mechanischer Parameter ermöglicht die Unterscheidung zwischen Oberflächenerweichung und Veränderungen der Gesamttragfähigkeit. Zug- und Biegeparameter unterscheiden sich in ihrer Empfindlichkeit gegenüber Defektort und Spannungszustand, während die Härte primär die lokale Oberflächenschicht beschreibt. Daher können Inkonsistenzen dieser Parameter helfen, das Ausmaß der Veränderung zu bestimmen. Die weitere Integration von Wasseraufnahme, Auflösung und chemischer Charakterisierung ermöglicht die Untersuchung möglicher Mechanismen wie Plastifizierung, Restreaktionen oder Grenzflächenveränderungen, anstatt die gesamte Leistungsverschlechterung auf eine einzige Erklärung zurückzuführen."
+          },
+          {
+            "type": "p",
+            "text": "Eine Studie aus dem Jahr 2026 untersuchte vier verschiedene Aufbissschienenmaterialien in künstlichem Speichel bei 60 °C und bewertete sie nach 24, 48 und 72 Stunden. Härte, Elastizitätsmodul, Festigkeit und Bruchdehnung der verschiedenen Materialien zeigten unterschiedliche Veränderungen; dieser Zustand wurde als beschleunigtes Modell zum Vergleich der hydrothermalen Empfindlichkeit definiert. [R15]"
+          },
+          {
+            "type": "p",
+            "text": "Die Verwendung eines festgelegten Mediums und einer festgelegten Temperatur hilft, die relative Reaktion zu bestimmen, während kontinuierliche Messpunkte zeigen, ob die Veränderung rasch erfolgt und sich dann stabilisiert oder weiter fortschreitet. Unterschiedliche mechanische Endpunkte können unterschiedliche Zeitverläufe aufweisen, was darauf hindeutet, dass sowohl die strukturelle Verformung als auch das Versagen berücksichtigt werden müssen. Die Mechanismusverifizierung kann die Wasseraufnahmemasse, Auflösungsanalysen, thermische Analysen und die Untersuchung der Bruchfläche einbeziehen, um festzustellen, ob die Reaktion mit Netzwerk- oder Oberflächenveränderungen übereinstimmt. Festigkeitskurven allein können lediglich mögliche Zusammenhänge zwischen diesen Mechanismen aufzeigen."
+          },
+          {
+            "type": "h3",
+            "text": "N6 · Nachbeobachtung als Rückmeldung"
+          },
+          {
+            "type": "p",
+            "text": "In der Nachbeobachtung lassen sich Oberflächenschäden, Reinigungsaufwand und Schleimhautbefunde nach Kontaktstelle und Tragedauer erfassen und mit Fertigungsdaten verbinden. Laborprüfungen können gezielt die entsprechenden Werkstoffzustände abbilden. [R01] [R02]"
+          },
+          {
+            "type": "p",
+            "text": "Gebrauchsbefunde für Politur und Prüfzeitpunkte nutzen."
+          }
+        ]
+      },
+      {
+        "title": "Vergleich der Befunde",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Zellreaktions- und Anhaftungsprüfungen können aus denselben Fertigungschargen stammen. Politur, Härtung, Lagerung und Exposition sind vor dem Vergleich von Materialrangfolgen abzugleichen."
+          }
+        ]
+      },
+      {
+        "title": "Industrielle Ansätze und dokumentierte Produkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Formlabs dokumentiert einen Workflow für intraorale Dental-LT-Clear-Produkte. Biologische Befunde müssen Harzversion, Drucker und Endaufbereitung zugeordnet sein, damit ein Prozesswechsel beurteilt werden kann. [R08]"
+          }
+        ]
+      },
+      {
+        "title": "Patentmechanismen und Prüfung für den Einsatz",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN111631833A betrifft eine mehrlagige Beschichtung, CN119157759A ein funktionalisiertes dentales Druckharz. Bei Beschichtungen sind Änderungen der Schicht, Abrieb und Zellreaktion gemeinsam zu prüfen. Liegt die Funktion im Volumenmaterial, steht ihr Erhalt nach Alterung im Fokus. [R06] [R07]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick auf Forschung und Anwendung",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Vorrang haben Vergleiche der Nachbearbeitung bei gleicher Rezeptur, danach verschiedener Werkstoffe bei gleichem Finish und schließlich der Veränderungen im Gebrauch. Rauheit, Benetzbarkeit, Zellendpunkte, Verschleiß und Pflegehäufigkeit sind gemeinsam zu dokumentieren. [R02] [R03] [R04]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Initial Cytotoxicity of Additively and Subtractively Manufactured Resin‐Based Materials for Interim Fixed Dental Prostheses: An In Vitro Study",
+        "url": "https://doi.org/10.1002/cre2.70413",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R01"
+      },
+      {
+        "title": "Biocompatibility of 3D-printed vs. thermoformed and heat-cured intraoral appliances.",
+        "url": "https://doi.org/10.3389/fbioe.2024.1453888",
+        "year": "2024",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R02"
+      },
+      {
+        "title": "Surface Properties of Dental Materials Influence the In Vitro Multi-Species Biofilm Formation.",
+        "url": "https://doi.org/10.3390/polym18020288",
+        "year": "2026",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R03"
+      },
+      {
+        "title": "Influence of Fabrication Technique on Adhesion and Biofilm Formation of Candida albicans to Conventional, Milled, and 3D-Printed Denture Base Resin Materials: A Comparative In Vitro Study.",
+        "url": "https://doi.org/10.3390/polym15081836",
+        "year": "2023",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R04"
+      },
+      {
+        "title": "Evaluation of Colonization by Candida albicans and Biofilm Formation on 3D-Printed Denture Base Resins.",
+        "url": "https://doi.org/10.3390/ma18215018",
+        "year": "",
+        "kind": "Forschungsartikel",
+        "source": "Forschungsartikel",
+        "id": "R05"
+      },
+      {
+        "title": "Manufacturing method of 3D printed multi-coating antibacterial tooth",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN111631833A",
+        "year": "2020",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R06"
+      },
+      {
+        "title": "3D printing dental resin with long-acting antibacterial property and drug resistance and preparation method of 3D printing dental resin",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN119157759A",
+        "year": "2024",
+        "kind": "Patentveröffentlichung",
+        "source": "Patentveröffentlichung",
+        "id": "R07"
+      },
+      {
+        "title": "Dental LT Clear Resin (V2)",
+        "url": "https://dental.formlabs.com/products/dental-lt-clear-v2-resin/",
+        "year": "",
+        "kind": "Unternehmensmitteilung",
+        "source": "Unternehmensmitteilung",
+        "id": "R08"
+      },
+      {
+        "title": "Effect of Nitrogen Gas Post-Curing and Printer Type on the Mechanical Properties of 3D-Printed Hard Occlusal Splint Material",
+        "year": "2022",
+        "source": "Polymers",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9571503/",
+        "kind": "原始研究",
+        "id": "R09"
+      },
+      {
+        "title": "Deformation analysis of 3D-printed three-unit fixed partial dentures according to various cleaning strategies after DLP 3D printing: a geometric library matching approach",
+        "year": "2025",
+        "source": "Journal of Advanced Prosthodontics",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11886403/",
+        "kind": "原始研究",
+        "id": "R10"
+      },
+      {
+        "title": "Effects of 3D-printers and manufacturer-specified post-curing units on the dimensional accuracy, compressive strength, and degree of conversion of resin for fixed dental prostheses",
+        "year": "2025",
+        "source": "Journal of Dental Sciences",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12254842/",
+        "kind": "原始研究",
+        "id": "R11"
+      },
+      {
+        "title": "Evaluation of mechanical properties and color stability of 3D-printed denture base materials following two surface treatments",
+        "year": "2025",
+        "source": "BMC Oral Health",
+        "url": "https://link.springer.com/article/10.1186/s12903-025-06056-5",
+        "kind": "原始研究",
+        "id": "R12"
+      },
+      {
+        "id": "R13",
+        "title": "Evaluation of Resins for Stereolithographic 3D-Printed Surgical Guides: The Response of L929 Cells and Human Gingival Fibroblasts",
+        "year": "2017",
+        "source": "BioMed Research International",
+        "kind": "原始研究",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29201905/"
+      },
+      {
+        "title": "An In-Vitro Evaluation of Strength, Hardness, and Color Stability of Heat-Polymerized and 3D-Printed Denture Base Polymers After Aging",
+        "year": "2025",
+        "source": "Polymers",
+        "url": "https://www.mdpi.com/2073-4360/17/3/288",
+        "kind": "原始研究",
+        "id": "R14"
+      },
+      {
+        "title": "Mechanical Properties of Dental Occlusal Splint Materials After Accelerated Aging in Artificial Saliva: An In Vitro Study",
+        "year": "2026",
+        "source": "Dentistry Journal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13511532/",
+        "kind": "原始研究",
+        "id": "R15"
+      }
+    ]
+  }
+}

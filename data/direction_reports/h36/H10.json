@@ -1,0 +1,1031 @@
+{
+  "zh": {
+    "id": "H10",
+    "p": "P6",
+    "title": "牙科教学与操作训练模型",
+    "subtitle": "从相同教具走向可复评分的缺损、触感和操作任务",
+    "thesis": "牙科实训模型的价值是把相同难度的病例给多名学员，再以可复测的预备量和操作结果形成反馈。材料拟真度取决于训练步骤，视觉逼真和钻削手感需要独立测试。",
+    "questions": [],
+    "graph": {
+      "title": "病例设计、材料拟真与数字评分",
+      "summary": "典型缺损与内部解剖分别进入牙体预备和根管通路训练，最后用实际切除和专家评分回校难度。",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2025",
+          "refs": [
+            "R01",
+            "R02"
+          ],
+          "title": "把训练目标写进病例",
+          "question": "课程要训练诊断、操作还是决策？",
+          "evidence": "完整病例从诊断、治疗规划延伸至操作；缺损导向设计为每位学员提供有相近任务难度的牙体。"
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2025–2026",
+          "refs": [
+            "R02",
+            "R04",
+            "R05"
+          ],
+          "title": "拟合硬组织与龋坏的分层",
+          "question": "硬组织和缺损应有何种差别？",
+          "evidence": "分区模型在同一牙体同时表现外形和局部硬度变化。材料对照侧重钻削手感、表面边缘和可见内层。"
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2025",
+          "refs": [
+            "R06"
+          ],
+          "title": "用内部目标提供过程反馈",
+          "question": "能否分别调节可见性与难度？",
+          "evidence": "钙化训练套件对正常与难处理的内部目标进行分级，透明件提供可视化练习，测量关注实质去除。"
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 0,
+          "time": "2025",
+          "refs": [
+            "R02"
+          ],
+          "title": "桥基牙预备进入课程对照",
+          "question": "可比较的预备体验来自哪些指标？",
+          "evidence": "116 名四年级学生对三轮课的打印牙和传统仿真牙进行评价。预备触感比较 p = 0.906，去龋真实感平均评分为 30.58 ± 24.74。"
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 2,
+          "time": "2023–2025",
+          "refs": [
+            "R03",
+            "R06",
+            "R09"
+          ],
+          "title": "扫描对照实际切除",
+          "question": "扫描如何显示多切和少切？",
+          "evidence": "术前后数字表面对齐可提供自评。钙化牙先导研究的学员组平均损失从 71.4 mm³ 到 54.68 mm³，提示同类任务可跟踪结构保护。"
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025–2026",
+          "refs": [
+            "R01",
+            "R06",
+            "R09"
+          ],
+          "title": "把操作偏差反馈为难度等级",
+          "question": "在未见过的病例上能否保持技能？",
+          "evidence": "用同一病例版次评估定位、剩余牙体、误入区域和耗时，按任务与经验分层。"
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "外部缺损进入分层牙"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "内部结构进入通路训练"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "验证实际预备手感"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "将目标接到切除量"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "把使用反馈还给课程"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "用测量区分难度"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "重编缺损和课程序列"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "研究对象与评价边界",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "牙科训练模型覆盖外形理解、分步操作和失败反馈。与加工实验中的测试试样相比，教学件需要安排难度阶梯和判定标准。设计时可分离对形态记忆、钻削控制和完整治疗计划的训练。 [R01] [R03] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "学术脉络与研究解读",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "把训练目标写进病例"
+          },
+          {
+            "type": "p",
+            "text": "完整病例从诊断、治疗规划延伸至操作；缺损导向设计为每位学员提供有相近任务难度的牙体。 [R01] [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "拟合硬组织与龋坏的分层"
+          },
+          {
+            "type": "p",
+            "text": "分区模型在同一牙体同时表现外形和局部硬度变化。材料对照侧重钻削手感、表面边缘和可见内层。 [R02] [R04] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "用内部目标提供过程反馈"
+          },
+          {
+            "type": "p",
+            "text": "钙化训练套件对正常与难处理的内部目标进行分级，透明件提供可视化练习，测量关注实质去除。 [R06]"
+          },
+          {
+            "type": "h3",
+            "text": "桥基牙预备进入课程对照"
+          },
+          {
+            "type": "p",
+            "text": "116 名四年级学生对三轮课的打印牙和传统仿真牙进行评价。预备触感比较 p = 0.906，去龋真实感平均评分为 30.58 ± 24.74。 [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "扫描对照实际切除"
+          },
+          {
+            "type": "p",
+            "text": "术前后数字表面对齐可提供自评。钙化牙先导研究的学员组平均损失从 71.4 mm³ 到 54.68 mm³，提示同类任务可跟踪结构保护。 [R03] [R06] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "把操作偏差反馈为难度等级"
+          },
+          {
+            "type": "p",
+            "text": "用同一病例版次评估定位、剩余牙体、误入区域和耗时，按任务与经验分层。 [R01] [R06] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "桥基牙研究中的学习过程和成功是学员评价，三轮课程还调整了任务内容。它可以定位何种练习适合打印牙，却不能独立分出材料和课程变化。钙化训练的术前后体积则提供量化端点，可以与触感调查并行。 [R02] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "扫描评分可将材料损失、边界超出和定位问题客观化，前提是参照曲面与实际预备的配准一致。虚拟训练和实体牙若要比较迁移，应在两组使用相同的新病例检验，并留出延迟复测评估保持。 [R03] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Parma 学生自评研究中，73% 认为扫描评分较放大目视更有用，57% 报告更理解了错误；同时反馈打印材料偏软。扫描的强项是反馈定位与错误分布，材料的强项是感受切削阻力，两者针对不同学习环节。可把目视评分和扫描评分同时盲评，再与一套预先标注的过切与欠切区域对照。 [R03]"
+          },
+          {
+            "type": "p",
+            "text": "在可视化钙化病例训练中，透明 PolyJet 牙加有色髓腔，适合观察通路形成。检验独立操作能力时可另用不透明同难度牙体。透明训练、实体复测和临床迁移在不同阶段，目标分别为理解、执行和保持。 [R06]"
+          }
+        ]
+      },
+      {
+        "title": "企业技术与服务路线",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "DELendo 的 TrueTooth 将打印牙复制件和课程交付结合，TrueJaw 将单牙操作扩展到颌部情境。Nissin SIMODONT 属于力反馈虚拟练习，可作为同一技能的屏幕训练对照。两条路径可共用病例任务和评分规则。 [R10] [R11] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "专利设计与制造接口",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN219435437U 针对显微根尖外科训练工具，CN120089054A 提出上颌窦骨增量训练模型及方法。两者的模块将训练目标固定到特定几何和操作空间，适合检验训练耗材更换后任务难度是否一致。 [R07] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "学术与产业的结合点",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "材料厂商可用标准试样描述硬度，但教学端需要实际操作的反馈。按表层、深层和边缘分别报告钻削表现，随后用操作偏差解释学生评分，能够把材料改进真正连到课程结果。 [R02] [R04] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "若要将某一印刷材料纳入教学采购，可对同一缺损设计生产多批样品，标注分层一致性、固定座兼容性、色彩、工具磨耗和合格率。采购比较的单位应是一次包含耗材、评分和重练机会的完整练习。 [R02] [R04] [R10] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "未来演进与验证指标",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "下一步可把难度分级、机构评分和跨批一致性装入同一套课程验证。优先观察新病例迁移、延迟保持、可比任务时间和每次合格训练成本。 [R01] [R02] [R06] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Evaluation of a 3D-Printed Model as Complete Case Scenario in Undergraduate Dental Education-Diagnosis, Treatment Planning and Clinical Practice.",
+        "url": "https://doi.org/10.1111/eje.13100",
+        "year": "2025",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "3D printed teeth for bridge preparation training: development and assessment in dental education.",
+        "url": "https://doi.org/10.1186/s12909-025-07849-6",
+        "year": "2025",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "A Novel Self-Assessment Method for Training Access Cavity on 3D Printed Endodontic Models.",
+        "url": "https://doi.org/10.3390/dj11060152",
+        "year": "2023",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "A Reproducible Digital Workflow for Patient-Specific 3D-Printed Teeth with Anatomically Stratified Enamel and Multi-Material Caries for Preclinical Operative Dentistry.",
+        "url": "https://doi.org/10.3390/jfb17080355",
+        "year": "2026",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Assessment of Different Technologies in the Fabrication of 3D Printed Tooth Models for Dental Education.",
+        "url": "https://doi.org/10.1111/eje.70105",
+        "year": "2026",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "Effectiveness of a 3D Printed Training Kit for the Preparation of Access Cavities in Calcified Teeth: A Pilot Study.",
+        "url": "https://doi.org/10.14744/eej.2024.42275",
+        "year": "2025",
+        "source": "",
+        "id": "R06"
+      },
+      {
+        "title": "Microscopic apical surgery female die for skill training based on 3D printing",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN219435437U",
+        "year": "2023",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "3D printing teaching model and method for maxillary sinus bone increment surgery training",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120089054A",
+        "year": "2025",
+        "source": "Espacenet",
+        "id": "R08"
+      },
+      {
+        "title": "Effect of 3D printed teeth and virtual simulation system on the pre-clinical access cavity preparation training of senior dental undergraduates",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11344365/",
+        "year": "2024",
+        "source": "BMC Medical Education",
+        "id": "R09"
+      },
+      {
+        "title": "Hands-On Courses",
+        "url": "https://delendo.com/hands-on-courses",
+        "year": "2026",
+        "source": "DELendo",
+        "id": "R10"
+      },
+      {
+        "title": "TrueTooth™ & TrueJaw™",
+        "url": "https://planbdental.com/wp-content/uploads/2023/07/PlanB-Catalogue-Final-6-29-23.pdf",
+        "year": "2023",
+        "source": "PlanB Dental",
+        "id": "R11"
+      },
+      {
+        "title": "SIMODONT®",
+        "url": "https://www.nissin-dental.net/products/simodont/",
+        "year": "2026",
+        "source": "Nissin Dental Products",
+        "id": "R12"
+      }
+    ]
+  },
+  "en": {
+    "id": "H10",
+    "p": "P6",
+    "title": "Dental education and procedural training models",
+    "subtitle": "From replicated teaching aids to assessable defects, haptics and procedures",
+    "thesis": "Dental training models let multiple learners practice a case of the same difficulty and receive feedback from repeatable measurements. Material fidelity depends on the task. Visual realism and cutting feel require separate testing.",
+    "questions": [],
+    "graph": {
+      "title": "Case design, material fidelity and digital assessment",
+      "summary": "Controlled defects and internal anatomy support restorative preparation and endodontic access practice. Removed volume and expert ratings then refine difficulty.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2025",
+          "refs": [
+            "R01",
+            "R02"
+          ],
+          "title": "Encode teaching goals in the case",
+          "question": "Is the target diagnosis, technique or decision-making?",
+          "evidence": "Complete cases span diagnosis, treatment planning and practice. Defect-oriented designs give learners comparable tasks."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2025–2026",
+          "refs": [
+            "R02",
+            "R04",
+            "R05"
+          ],
+          "title": "Represent layers of hard tissue and caries",
+          "question": "How should hard tissue and defects differ?",
+          "evidence": "Layered models combine tooth shape and local hardness. Material comparisons focus on cutting feel, margin appearance and visible internal layers."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2025",
+          "refs": [
+            "R06"
+          ],
+          "title": "Use internal targets to provide feedback",
+          "question": "Can visibility and difficulty be adjusted separately?",
+          "evidence": "A calcified-tooth kit grades internal difficulty. Transparent pieces aid visualization, and measurement focuses on tissue removal."
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 0,
+          "time": "2025",
+          "refs": [
+            "R02"
+          ],
+          "title": "Compare bridge preparation in teaching",
+          "question": "Which outcomes compare preparation experience?",
+          "evidence": "A total of 116 fourth-year students rated printed teeth and conventional typodont teeth over three courses. Preparation feel had p = 0.906, and mean caries-removal realism was 30.58 ± 24.74."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 2,
+          "time": "2023–2025",
+          "refs": [
+            "R03",
+            "R06",
+            "R09"
+          ],
+          "title": "Compare actual removal using scans",
+          "question": "How do scans show over- and underpreparation?",
+          "evidence": "Alignment of before and after scans supports self-assessment. In a pilot on calcified teeth, mean substance loss among students changed from 71.4 to 54.68 mm³, illustrating a measure of structural preservation in comparable tasks."
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025–2026",
+          "refs": [
+            "R01",
+            "R06",
+            "R09"
+          ],
+          "title": "Feed performance errors into difficulty grading",
+          "question": "Does skill persist on an unfamiliar case?",
+          "evidence": "Use the same case revision to assess localization, remaining tooth structure, unintended removal and time. Stratify by task and experience."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Encode defects in layers"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Encode internal anatomy for access"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Test preparation feel"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Connect target to removal"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Course feedback refines cases"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Use measurements to grade difficulty"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Revise defects and task order"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Research scope and outcomes",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Dental training models cover anatomy, procedural practice and feedback on mistakes. Educational objects need difficulty levels and criteria for assessment. Shape recognition, cutting control and whole treatment planning can be assigned to different exercises. [R01] [R03] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Research pathways and evidence",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Encode teaching goals in the case"
+          },
+          {
+            "type": "p",
+            "text": "Complete cases span diagnosis, treatment planning and practice. Defect-oriented designs give learners comparable tasks. [R01] [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "Represent layers of hard tissue and caries"
+          },
+          {
+            "type": "p",
+            "text": "Layered models combine tooth shape and local hardness. Material comparisons focus on cutting feel, margin appearance and visible internal layers. [R02] [R04] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "Use internal targets to provide feedback"
+          },
+          {
+            "type": "p",
+            "text": "A calcified-tooth kit grades internal difficulty. Transparent pieces aid visualization, and measurement focuses on tissue removal. [R06]"
+          },
+          {
+            "type": "h3",
+            "text": "Compare bridge preparation in teaching"
+          },
+          {
+            "type": "p",
+            "text": "A total of 116 fourth-year students rated printed teeth and conventional typodont teeth over three courses. Preparation feel had p = 0.906, and mean caries-removal realism was 30.58 ± 24.74. [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "Compare actual removal using scans"
+          },
+          {
+            "type": "p",
+            "text": "Alignment of before and after scans supports self-assessment. In a pilot on calcified teeth, mean substance loss among students changed from 71.4 to 54.68 mm³, illustrating a measure of structural preservation in comparable tasks. [R03] [R06] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "Feed performance errors into difficulty grading"
+          },
+          {
+            "type": "p",
+            "text": "Use the same case revision to assess localization, remaining tooth structure, unintended removal and time. Stratify by task and experience. [R01] [R06] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "The bridge study measured perceived learning and perceived success, while exercises changed across the three courses. It identifies exercises suitable for printed teeth but cannot isolate material from course changes. Before-and-after volume in the calcification study provides an objective endpoint alongside haptic ratings. [R02] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Scan-based scoring makes loss, encroachment and localization measurable if registration is consistent. Skill transfer from virtual and physical practice can be compared using a common unfamiliar case, with delayed reassessment for retention. [R03] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "In Parma, 73% found scan assessment more useful than visual inspection under magnification and 57% reported better understanding of errors. They also found the printed material too soft. Scanning is useful for locating error, while material provides resistance during cutting. Score visual and scan views independently against annotated regions of excessive and insufficient removal. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "The calcification kit included transparent PolyJet teeth with colored pulps to make the access pathway visible. Assessing independent performance can use opaque teeth of matched difficulty. Visualization, physical reassessment and clinical transfer address understanding, execution and retention at separate stages. [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Industry technologies and services",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "DELendo TrueTooth pairs printed tooth replicas with a course. TrueJaw expands isolated work to a jaw context. Nissin SIMODONT supplies a haptic virtual route that can act as a comparator for the same skill. Both can use matched cases and scoring criteria. [R10] [R11] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Patent mechanisms and production interfaces",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN219435437U addresses an aid for training microsurgical apical procedures, and CN120089054A describes a maxillary sinus augmentation trainer and method. Both locate a learning task in a defined geometry and working space, making repeatability after consumable replacement a meaningful test. [R07] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "Research and industry connections",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Material suppliers can report coupon hardness. Educators need task-level feedback. Reporting cutting by surface, depth and margin and using preparation errors to interpret student ratings connects material development to instructional outcomes. [R02] [R04] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "For teaching procurement, print several lots of the same defect case and record layer consistency, holder compatibility, color, instrument wear and acceptance rate. Compare the complete exercise, including consumables, assessment and repeat practice. [R02] [R04] [R10] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Outlook and measures of progress",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Next, combine graded difficulty, instructor scoring and lot consistency in validation of the same curriculum. Prioritize transfer to a new case, delayed retention, matched task time and cost per accepted exercise. [R01] [R02] [R06] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Evaluation of a 3D-Printed Model as Complete Case Scenario in Undergraduate Dental Education-Diagnosis, Treatment Planning and Clinical Practice.",
+        "url": "https://doi.org/10.1111/eje.13100",
+        "year": "2025",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "3D printed teeth for bridge preparation training: development and assessment in dental education.",
+        "url": "https://doi.org/10.1186/s12909-025-07849-6",
+        "year": "2025",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "A Novel Self-Assessment Method for Training Access Cavity on 3D Printed Endodontic Models.",
+        "url": "https://doi.org/10.3390/dj11060152",
+        "year": "2023",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "A Reproducible Digital Workflow for Patient-Specific 3D-Printed Teeth with Anatomically Stratified Enamel and Multi-Material Caries for Preclinical Operative Dentistry.",
+        "url": "https://doi.org/10.3390/jfb17080355",
+        "year": "2026",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Assessment of Different Technologies in the Fabrication of 3D Printed Tooth Models for Dental Education.",
+        "url": "https://doi.org/10.1111/eje.70105",
+        "year": "2026",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "Effectiveness of a 3D Printed Training Kit for the Preparation of Access Cavities in Calcified Teeth: A Pilot Study.",
+        "url": "https://doi.org/10.14744/eej.2024.42275",
+        "year": "2025",
+        "source": "",
+        "id": "R06"
+      },
+      {
+        "title": "Microscopic apical surgery female die for skill training based on 3D printing",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN219435437U",
+        "year": "2023",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "3D printing teaching model and method for maxillary sinus bone increment surgery training",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120089054A",
+        "year": "2025",
+        "source": "Espacenet",
+        "id": "R08"
+      },
+      {
+        "title": "Effect of 3D printed teeth and virtual simulation system on the pre-clinical access cavity preparation training of senior dental undergraduates",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11344365/",
+        "year": "2024",
+        "source": "BMC Medical Education",
+        "id": "R09"
+      },
+      {
+        "title": "Hands-On Courses",
+        "url": "https://delendo.com/hands-on-courses",
+        "year": "2026",
+        "source": "DELendo",
+        "id": "R10"
+      },
+      {
+        "title": "TrueTooth™ & TrueJaw™",
+        "url": "https://planbdental.com/wp-content/uploads/2023/07/PlanB-Catalogue-Final-6-29-23.pdf",
+        "year": "2023",
+        "source": "PlanB Dental",
+        "id": "R11"
+      },
+      {
+        "title": "SIMODONT®",
+        "url": "https://www.nissin-dental.net/products/simodont/",
+        "year": "2026",
+        "source": "Nissin Dental Products",
+        "id": "R12"
+      }
+    ]
+  },
+  "de": {
+    "id": "H10",
+    "p": "P6",
+    "title": "Modelle für zahnmedizinische Lehre und praktisches Training",
+    "subtitle": "Von reproduzierbaren Lehrmitteln zu bewertbaren Defekten, Haptik und Eingriffen",
+    "thesis": "Zahnmedizinische Trainingsmodelle geben Lernenden Fälle desselben Schwierigkeitsgrads und messbares Feedback. Die Materialtreue hängt von der Übung ab. Visueller Eindruck und Bearbeitungsgefühl werden getrennt geprüft.",
+    "questions": [],
+    "graph": {
+      "title": "Fallgestaltung, Materialtreue und digitale Bewertung",
+      "summary": "Definierte Defekte und innere Anatomie dienen der restaurativen Präparation und der Zugangskavität. Abgetragenes Volumen und Fachbewertung justieren anschließend die Schwierigkeit.",
+      "nodes": [
+        {
+          "id": "N1",
+          "stage": 0,
+          "lane": 1,
+          "time": "2025",
+          "refs": [
+            "R01",
+            "R02"
+          ],
+          "title": "Lernziele in den Fall übertragen",
+          "question": "Geht es um Diagnose, Technik oder Entscheidung?",
+          "evidence": "Vollständige Fälle reichen von Diagnose und Planung bis zur Übung. Defektorientierte Modelle geben Lernenden vergleichbare Aufgaben."
+        },
+        {
+          "id": "N2",
+          "stage": 1,
+          "lane": 0,
+          "time": "2025–2026",
+          "refs": [
+            "R02",
+            "R04",
+            "R05"
+          ],
+          "title": "Hartgewebe und Karies schichtweise abbilden",
+          "question": "Wie sollen sich Hartgewebe und Defekt unterscheiden?",
+          "evidence": "Schichtmodelle verbinden Zahnform und örtliche Härte. Materialvergleiche prüfen Bearbeitungsgefühl, Randbild und sichtbare Innenstrukturen."
+        },
+        {
+          "id": "N3",
+          "stage": 1,
+          "lane": 2,
+          "time": "2025",
+          "refs": [
+            "R06"
+          ],
+          "title": "Interne Zielflächen als Feedback nutzen",
+          "question": "Lassen sich Sichtbarkeit und Schwierigkeit getrennt einstellen?",
+          "evidence": "Ein Trainingsset für kalzifizierte Zähne stuft die Schwierigkeit ein. Transparente Teile erleichtern die Sicht. Gemessen wird der Substanzabtrag."
+        },
+        {
+          "id": "N4",
+          "stage": 2,
+          "lane": 0,
+          "time": "2025",
+          "refs": [
+            "R02"
+          ],
+          "title": "Brückenpräparation im Kurs vergleichen",
+          "question": "Welche Größen vergleichen das Präparationserlebnis?",
+          "evidence": "116 Studierende im vierten Jahr bewerteten gedruckte und konventionelle Typodont-Zähne in drei Kursen. Für das Präparationsgefühl ergab sich p = 0,906. Die mittlere Bewertung der Realitätstreue bei Kariesentfernung lag bei 30,58 ± 24,74."
+        },
+        {
+          "id": "N5",
+          "stage": 2,
+          "lane": 2,
+          "time": "2023–2025",
+          "refs": [
+            "R03",
+            "R06",
+            "R09"
+          ],
+          "title": "Tatsächlichen Abtrag mit Scans vergleichen",
+          "question": "Wie zeigen Scans zu starken und zu geringen Abtrag?",
+          "evidence": "Überlagerte Scans vor und nach der Bearbeitung unterstützen die Selbsteinschätzung. In der Pilotstudie mit kalzifizierten Zähnen änderte sich der mittlere Substanzverlust der Studierenden von 71,4 auf 54,68 mm³. Damit lässt sich Strukturerhalt bei vergleichbaren Aufgaben erfassen."
+        },
+        {
+          "id": "N6",
+          "stage": 3,
+          "lane": 1,
+          "time": "2025–2026",
+          "refs": [
+            "R01",
+            "R06",
+            "R09"
+          ],
+          "title": "Bearbeitungsfehler in Schwierigkeitsstufen zurückführen",
+          "question": "Bleibt die Fertigkeit bei einem unbekannten Fall erhalten?",
+          "evidence": "Anhand desselben Fallstands werden Lokalisation, verbleibende Zahnsubstanz, unbeabsichtigter Abtrag und Zeit bewertet, gegliedert nach Aufgabe und Erfahrung."
+        }
+      ],
+      "edges": [
+        {
+          "from": "N1",
+          "to": "N2",
+          "kind": "advance",
+          "label": "Defekte schichtweise abbilden"
+        },
+        {
+          "from": "N1",
+          "to": "N3",
+          "kind": "advance",
+          "label": "Innere Anatomie für Zugang abbilden"
+        },
+        {
+          "from": "N2",
+          "to": "N4",
+          "kind": "advance",
+          "label": "Präparationsgefühl prüfen"
+        },
+        {
+          "from": "N3",
+          "to": "N5",
+          "kind": "advance",
+          "label": "Ziel mit Abtrag verknüpfen"
+        },
+        {
+          "from": "N4",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Kursfeedback verbessert Fälle"
+        },
+        {
+          "from": "N5",
+          "to": "N6",
+          "kind": "advance",
+          "label": "Messungen stufen Schwierigkeit ein"
+        },
+        {
+          "from": "N6",
+          "to": "N1",
+          "kind": "feedback",
+          "label": "Defekte und Übungsreihenfolge anpassen"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Forschungsgegenstand und Endpunkte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Dentale Trainingsmodelle vermitteln Anatomie, Handlungsschritte und Fehlerfeedback. Lehrmittel benötigen abgestufte Schwierigkeit und Beurteilungskriterien. Formerkennung, Instrumentenführung und Behandlungsplanung lassen sich getrennten Übungen zuordnen. [R01] [R03] [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Forschungsverlauf und Evidenz",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Lernziele in den Fall übertragen"
+          },
+          {
+            "type": "p",
+            "text": "Vollständige Fälle reichen von Diagnose und Planung bis zur Übung. Defektorientierte Modelle geben Lernenden vergleichbare Aufgaben. [R01] [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "Hartgewebe und Karies schichtweise abbilden"
+          },
+          {
+            "type": "p",
+            "text": "Schichtmodelle verbinden Zahnform und örtliche Härte. Materialvergleiche prüfen Bearbeitungsgefühl, Randbild und sichtbare Innenstrukturen. [R02] [R04] [R05]"
+          },
+          {
+            "type": "h3",
+            "text": "Interne Zielflächen als Feedback nutzen"
+          },
+          {
+            "type": "p",
+            "text": "Ein Trainingsset für kalzifizierte Zähne stuft die Schwierigkeit ein. Transparente Teile erleichtern die Sicht. Gemessen wird der Substanzabtrag. [R06]"
+          },
+          {
+            "type": "h3",
+            "text": "Brückenpräparation im Kurs vergleichen"
+          },
+          {
+            "type": "p",
+            "text": "116 Studierende im vierten Jahr bewerteten gedruckte und konventionelle Typodont-Zähne in drei Kursen. Für das Präparationsgefühl ergab sich p = 0,906. Die mittlere Bewertung der Realitätstreue bei Kariesentfernung lag bei 30,58 ± 24,74. [R02]"
+          },
+          {
+            "type": "h3",
+            "text": "Tatsächlichen Abtrag mit Scans vergleichen"
+          },
+          {
+            "type": "p",
+            "text": "Überlagerte Scans vor und nach der Bearbeitung unterstützen die Selbsteinschätzung. In der Pilotstudie mit kalzifizierten Zähnen änderte sich der mittlere Substanzverlust der Studierenden von 71,4 auf 54,68 mm³. Damit lässt sich Strukturerhalt bei vergleichbaren Aufgaben erfassen. [R03] [R06] [R09]"
+          },
+          {
+            "type": "h3",
+            "text": "Bearbeitungsfehler in Schwierigkeitsstufen zurückführen"
+          },
+          {
+            "type": "p",
+            "text": "Anhand desselben Fallstands werden Lokalisation, verbleibende Zahnsubstanz, unbeabsichtigter Abtrag und Zeit bewertet, gegliedert nach Aufgabe und Erfahrung. [R01] [R06] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "Die Brückenstudie erfasste wahrgenommenes Lernen und Erfolg. Die Aufgaben änderten sich über drei Kurse. Sie zeigt geeignete Übungen für Druckzähne. Materialeffekt und Kursänderung bleiben gekoppelt. Das Vorher-Nachher-Volumen bei Kalzifikation ergänzt haptische Einschätzungen um einen quantitativen Endpunkt. [R02] [R06]"
+          },
+          {
+            "type": "p",
+            "text": "Scanbasierte Bewertung misst Substanzverlust, Grenzüberschreitung und Lokalisation bei konsistenter Registrierung. Der Fertigkeitstransfer aus virtueller und physischer Übung lässt sich an einem gemeinsamen unbekannten Fall und späterem Wiederholungstest vergleichen. [R03] [R09]"
+          },
+          {
+            "type": "p",
+            "text": "In Parma hielten 73 % die Scanbewertung für hilfreicher als eine vergrößerte Sichtprüfung. 57 % berichteten besseres Verständnis der Fehler. Gleichzeitig wurde das Material als zu weich empfunden. Der Scan lokalisiert Abweichungen. Das Material vermittelt Bearbeitungswiderstand. Sicht- und Scanbewertung lassen sich unabhängig mit markierten Zonen zu starken und zu geringen Abtrags vergleichen. [R03]"
+          },
+          {
+            "type": "p",
+            "text": "Das Kalzifikationsset enthielt transparente PolyJet-Zähne mit farbiger Pulpa, sodass der Zugang sichtbar wurde. Selbstständige Leistung lässt sich an opaken Zähnen gleicher Schwierigkeit prüfen. Visualisierung, physische Wiederholungsprüfung und klinischer Transfer erfassen Verstehen, Ausführung und Fertigkeitserhalt in getrennten Phasen. [R06]"
+          }
+        ]
+      },
+      {
+        "title": "Technologien und Angebote der Unternehmen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "DELendo TrueTooth verbindet gedruckte Zahnrepliken mit Kursen. TrueJaw erweitert die Einzelzahnübung um den Kieferkontext. Nissin SIMODONT bietet eine virtuelle Alternative mit Kraftfeedback. Beide Wege können dieselben Fälle und Bewertungsregeln nutzen. [R10] [R11] [R12]"
+          }
+        ]
+      },
+      {
+        "title": "Patentansätze und Fertigungsschnittstellen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CN219435437U betrifft eine Trainingshilfe für mikrochirurgische Wurzelspitzenverfahren, CN120089054A ein Modell für die Kieferhöhlenaugmentation. Beide koppeln eine Lernaufgabe an Geometrie und Arbeitsraum. Damit wird der Schwierigkeitsvergleich nach Austausch von Verbrauchsteilen wichtig. [R07] [R08]"
+          }
+        ]
+      },
+      {
+        "title": "Verbindungen von Forschung und Industrie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Materialanbieter können Härte an Prüfkörpern angeben. Lehrende benötigen Rückmeldung aus der Aufgabe. Bearbeitung von Oberfläche, Tiefe und Rand sowie Fehlerdaten verbinden Materialentwicklung mit Lernergebnissen. [R02] [R04] [R05]"
+          },
+          {
+            "type": "p",
+            "text": "Für die Beschaffung lassen sich mehrere Chargen desselben Defektfalls herstellen und Schichtkonstanz, Halterpassung, Farbe, Instrumentenverschleiß und Abnahmequote erfassen. Verglichen wird die vollständige Übung mit Verbrauchsmaterial, Bewertung und Wiederholung. [R02] [R04] [R10] [R11]"
+          }
+        ]
+      },
+      {
+        "title": "Ausblick und Kriterien für Fortschritt",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Künftig lassen sich Schwierigkeitsstufen, Ausbilderbewertung und Chargenkonstanz im selben Curriculum prüfen. Prioritäten sind Transfer auf neue Fälle, Fertigkeitserhalt, vergleichbare Bearbeitungszeit und Kosten je akzeptierter Übung. [R01] [R02] [R06] [R09]"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Evaluation of a 3D-Printed Model as Complete Case Scenario in Undergraduate Dental Education-Diagnosis, Treatment Planning and Clinical Practice.",
+        "url": "https://doi.org/10.1111/eje.13100",
+        "year": "2025",
+        "source": "",
+        "id": "R01"
+      },
+      {
+        "title": "3D printed teeth for bridge preparation training: development and assessment in dental education.",
+        "url": "https://doi.org/10.1186/s12909-025-07849-6",
+        "year": "2025",
+        "source": "",
+        "id": "R02"
+      },
+      {
+        "title": "A Novel Self-Assessment Method for Training Access Cavity on 3D Printed Endodontic Models.",
+        "url": "https://doi.org/10.3390/dj11060152",
+        "year": "2023",
+        "source": "",
+        "id": "R03"
+      },
+      {
+        "title": "A Reproducible Digital Workflow for Patient-Specific 3D-Printed Teeth with Anatomically Stratified Enamel and Multi-Material Caries for Preclinical Operative Dentistry.",
+        "url": "https://doi.org/10.3390/jfb17080355",
+        "year": "2026",
+        "source": "",
+        "id": "R04"
+      },
+      {
+        "title": "Assessment of Different Technologies in the Fabrication of 3D Printed Tooth Models for Dental Education.",
+        "url": "https://doi.org/10.1111/eje.70105",
+        "year": "2026",
+        "source": "",
+        "id": "R05"
+      },
+      {
+        "title": "Effectiveness of a 3D Printed Training Kit for the Preparation of Access Cavities in Calcified Teeth: A Pilot Study.",
+        "url": "https://doi.org/10.14744/eej.2024.42275",
+        "year": "2025",
+        "source": "",
+        "id": "R06"
+      },
+      {
+        "title": "Microscopic apical surgery female die for skill training based on 3D printing",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN219435437U",
+        "year": "2023",
+        "source": "Espacenet",
+        "id": "R07"
+      },
+      {
+        "title": "3D printing teaching model and method for maxillary sinus bone increment surgery training",
+        "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DCN120089054A",
+        "year": "2025",
+        "source": "Espacenet",
+        "id": "R08"
+      },
+      {
+        "title": "Effect of 3D printed teeth and virtual simulation system on the pre-clinical access cavity preparation training of senior dental undergraduates",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11344365/",
+        "year": "2024",
+        "source": "BMC Medical Education",
+        "id": "R09"
+      },
+      {
+        "title": "Hands-On Courses",
+        "url": "https://delendo.com/hands-on-courses",
+        "year": "2026",
+        "source": "DELendo",
+        "id": "R10"
+      },
+      {
+        "title": "TrueTooth™ & TrueJaw™",
+        "url": "https://planbdental.com/wp-content/uploads/2023/07/PlanB-Catalogue-Final-6-29-23.pdf",
+        "year": "2023",
+        "source": "PlanB Dental",
+        "id": "R11"
+      },
+      {
+        "title": "SIMODONT®",
+        "url": "https://www.nissin-dental.net/products/simodont/",
+        "year": "2026",
+        "source": "Nissin Dental Products",
+        "id": "R12"
+      }
+    ]
+  }
+}
