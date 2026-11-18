@@ -1,0 +1,179 @@
+{
+  "schema_version": 2,
+  "question_id": "P7-128",
+  "p": "P7",
+  "version": 2,
+  "updated_at": "2026-11-19",
+  "evidence_cutoff": "2026-11-19",
+  "related_paper_ids": [],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Comparative Micro-CT Analysis of Minimally Invasive Endodontic Systems Using 3D-Printed Replicas and Natural Teeth",
+      "publisher": "Materials",
+      "year": 2024,
+      "url": "https://www.mdpi.com/1996-1944/17/21/5279#table_body_display_materials-17-05279-t002",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Shaping Performance of XP4 versus ProTaper Next in C-Shaped Canals: A Micro-CT Study of 3D-Printed Mandibular Second Molar Replicas",
+      "publisher": "Clinical and Experimental Dental Research",
+      "year": 2026,
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/cre2.70434",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "A critical evaluation of the material properties and clinical suitability of in-house printed and commercial tooth replicas for endodontic training",
+      "publisher": "International Endodontic Journal",
+      "year": 2020,
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/iej.13361",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Fig. 2",
+      "image_url": "https://mdpi-res.com/materials/materials-17-05279/article_deploy/html/images/materials-17-05279-g002-550.jpg",
+      "source_url": "https://www.mdpi.com/1996-1944/17/21/5279#fig_body_display_materials-17-05279-f002",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "打印牙齿复制模型怎样验证其根管预备结果与天然牙的可比性？",
+      "direction": "根管器械评价用打印牙齿复制模型",
+      "sections": [
+        {
+          "id": "geometry",
+          "title": "先核对复制的根管形状和关键薄壁",
+          "markdown": "C 形下颌第二磨牙研究分别复制连续型峡部和不连续型根管原型，每种 16 件。微 CT 配准后，两组根管空间的 Dice 重叠系数分别为 0.917 和 0.878，有符号平均距离为 −0.061 和 −0.018 mm，95% Hausdorff 距离为 0.129 和 0.221 mm。均值为负提示总体向内偏移，离群端的表面距离与平均偏差可以给出不同排序。两种原型的薄壁区均位于根沟底部，提供另一个局部验证位置。\n\nDice 是整个管腔重叠的比例，容易受体积较大的区域主导。峡部、分支交会和根尖狭窄区可能只占少量体积。研究同时报告有符号距离与 HD95，能够区分系统性收窄与局部较大误差。论文所给复制体内标准差 0.031 和 0.073 mm 指网格顶点距离在单件复制牙内的变化。若要证明批间重复性，需要另报告按自然原型分层的复件之间变异。 [原文表 1 与补充图 S1–S3](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "paired_race",
+          "title": "同一器械对天然牙与复制牙的配对证据",
+          "markdown": "Ramírez-Muñoz 等从 11 颗下颌第一磨牙取得 22 条中度弯曲且小于 20° 的 Vertucci IV 型近中根管。以 Race-Evo 同一体系验证天然牙与树脂复制牙。表 2 对全长 10 mm 与根尖 4 mm 分别计量。\n\n| Race-Evo 对照 | 天然牙 | 打印复制牙 |\n|---|---:|---:|\n| 全长未预备面积（均值） | 26.1% | 31.5% |\n| 根尖未预备面积（均值） | 24.3% | 32.5% |\n| 根尖体积增加（均值） | 43.8% | 22.3% |\n| 根尖体积增加（中位数） | 25.6% | 13.5% |\n\n未预备面积未检出显著差异，根尖体积增加百分比则有显著差异。原文摘要称复制牙的根尖体积增加略大，方向与表 2 的 Race-Evo 两列相反。这里保留表格的组别顺序，解释也限定在该配对比较。\n\n全长初始与最终体积在论文中未检出组间差异。根尖结果的分母需要同时看表 2 的基线。天然牙与复制牙根尖的平均初始体积分别为 2.3 和 3.5 mm³。该基线差有可能影响相对增量的比较，但仅凭汇总表无法量化这一影响。计算复制误差与预备量的联系时，需要同一管腔的基线、术后体积和区域偏差。 [原文表 2 与图 2](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "device_comparison",
+          "title": "六种器械的复制模型比较回答什么？",
+          "markdown": "同一论文在复制牙上对比六种系统。Blueshaper Pro + AS 的全长体积平均增加 43.4%，Race-Evo 复制牙为 23.4%，Trunatomy + AS 为 17.1%。原文报告 Blueshaper Pro 体系在该终点的增加比例最高且具有统计差异。全长未预备面积则在六个复制牙组间没有显著差异。天然牙列只为 Race-Evo 提供对照，所以跨材料保持相同器械排序仍是独立研究问题。原文图 2 中天然牙与复制牙的 Race-Evo 对照应看 C、D 两个面板，其余面板显示其他复制牙实验组的代表性形态。\n\n全长未预备面积的组均值从 28.1% 到 32.1%，与体积百分比的组间排序不同。窄段的局部扩大和较广管壁的浅层接触会产生不同的体积与覆盖组合。图 2 提供代表性图像供检查形态，比较大小与离散性应回到表 2。 [原文表 2 的复制牙组与图 2](ref:R01)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "materials",
+          "title": "牙本质与树脂的切削环境",
+          "markdown": "材料对照研究使用仪器压痕和射线不透性评价打印树脂、商品复制牙和天然牙本质。天然牙本质的硬度最高，V-Print ee 的射线不透性接近牙本质，硬度仍低于牙本质。材料硬度、压痕模量与成像对比度影响的环节不同。若目标是评价器械负荷、断裂或触觉，验证需要覆盖对应的力学终点。即使相同根管的几何重叠度较高，材料切削行为仍须独立验证。\n\n影像灰度差异也关系到分割的边界。同一台微 CT 可以为两种材料采用不同采集条件以获取足够对比度。有效比较仍需检查同一解剖边界能否稳定定位，例如对根尖与峡部做重复分割并报告观测者偏差。该判断与用切削后的长度、面积或体积评价器械效应是两个层级。 [原文材料试验与硬度比较](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "traceability",
+          "title": "如何评价复制误差是否掩盖器械组差异？",
+          "markdown": "验证可按天然牙原型分层，在每个原型内重复打印并随机分配器械，记录术前配准重复性、区域有符号偏差和根尖最窄处的局部误差。测试后按同一分段报告未预备面积、体积增量和最小剩余壁厚。体积百分比的分母来自预备前管腔，复制偏移较大的根尖应同时给出绝对增量。需要声明可接受差值时，应让界值对应器械研究要区分的最小差异，并纳入分割和配准误差。\n\n器械对照可优先报告同一原型内两体系之差，再估计这些差在天然牙与复制牙之间相差多少。多个原型能提供足够的解剖变异来检验该差值是否随曲度或管径变化。几何一致性、材料匹配和器械排序一致性各自需要直接观测，才能确定模型适用于哪一种试验。 [分段配对比较](ref:R01) · [复制前后根管配准](ref:R02)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Ramírez-Muñoz 等（2024），原文图 2。术前和术后根管微 CT 重建。",
+          "interpretation": "A、B 分别显示天然牙和打印复制牙的术前通道。对照材料应比较相同 Race-Evo 体系的 C（复制牙）和 D（天然牙）。其余术后面板代表复制牙上的其他器械组。颜色标识样本或器械组，图中空间差异可用于核对形态，组间量值需读原文表 2。"
+        }
+      }
+    },
+    "en": {
+      "title": "How can printed tooth replicas be validated against natural teeth for root canal preparation outcomes?",
+      "direction": "Printed tooth replicas for endodontic instrument evaluation",
+      "sections": [
+        {
+          "id": "geometry",
+          "title": "Validating replicated canal geometry and thin walls",
+          "markdown": "A C-shaped mandibular second molar study replicated a continuous isthmus and a discontinuous prototype, 16 times each. After micro-CT registration, canal Dice coefficients were 0.917 and 0.878, mean signed distances −0.061 and −0.018 mm and 95% Hausdorff distances 0.129 and 0.221 mm. Negative means indicate inward bias. Tail distances can rank prototypes differently from the mean. The thinnest walls lay at the radicular groove base in both prototypes, offering another location for local validation.\n\nDice measures overall lumen overlap and can be dominated by larger regions. Isthmuses, junctions and the narrow apical segment may contribute little volume. Signed distance and HD95 distinguish systematic narrowing from larger local deviations. The reported within-replica standard deviations of 0.031 and 0.073 mm describe variation of mesh-vertex distances inside each replica. Establishing between-batch repeatability calls for between-replica variation within natural prototypes. [Original Table 1 and supplementary Figs. S1–S3](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "paired_race",
+          "title": "Paired natural–replica evidence with the same system",
+          "markdown": "Ramírez-Muñoz and colleagues selected 22 moderately curved mesial canals below 20° with Vertucci IV anatomy from 11 mandibular first molars. Race-Evo provided the like-for-like comparison of natural teeth and resin replicas. Table 2 measured the full 10 mm and apical 4 mm separately.\n\n| Race-Evo comparison | Natural teeth | Printed replicas |\n|---|---:|---:|\n| Untouched area, full length (mean) | 26.1% | 31.5% |\n| Untouched area, apical (mean) | 24.3% | 32.5% |\n| Apical volume increase (mean) | 43.8% | 22.3% |\n| Apical volume increase (median) | 25.6% | 13.5% |\n\nThe untouched-area differences were not statistically significant, whereas relative apical volume increase differed significantly. The abstract describes a slightly larger apical volume increase in the replicas, opposite to the two Race-Evo columns of Table 2. The values here follow the table and apply to that paired comparison.\n\nThe paper detected no between-group difference in initial and final volumes along the full length. The apical percentage also depends on the baseline in Table 2. Mean initial apical volumes were 2.3 and 3.5 mm³ for natural teeth and replicas. This difference could affect relative changes, but the aggregate table cannot quantify that effect. Relating replication error to shaping requires paired baseline, postoperative volume and regional deviation for each lumen. [Original Table 2 and Fig. 2](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "device_comparison",
+          "title": "What does the six-system replica comparison establish?",
+          "markdown": "The same paper compared six systems in replicas. Mean full-length volume increase was 43.4% for Blueshaper Pro + AS, 23.4% for Race-Evo and 17.1% for Trunatomy + AS. The paper reports a significantly higher percentage increase for the Blueshaper Pro system on that endpoint. Full-length untouched area showed no significant difference among the six replica groups. The natural-tooth column covers Race-Evo, leaving preservation of instrument rankings across materials as a separate question. In original Fig. 2, panels C and D show the Race-Evo comparison. Other postoperative panels represent the other replica groups.\n\nMean untouched fractions across the full length ranged from 28.1% to 32.1%, with a different ordering from relative volume gain. Local enlargement of a narrow segment and shallow contact with broad walls can yield different volume–coverage combinations. Figure 2 shows representative morphologies, while Table 2 quantifies group differences and dispersion. [Replica groups in original Table 2 and Fig. 2](ref:R01)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "materials",
+          "title": "Cutting environments in dentine and resin",
+          "markdown": "A material comparison used instrumented indentation and radiopacity testing for printed resins, commercial replicas and human dentine. Human dentine was hardest. V-Print ee had comparable radiopacity but lower hardness. Hardness, indentation modulus and image contrast govern different parts of the experiment. Studies of instrument loading, fracture or tactile response require validation at the corresponding mechanical endpoint. High canal overlap still leaves cutting behavior to be validated separately.\n\nImage contrast also affects the segmentation boundary. A micro-CT scanner may use different acquisition settings for the two materials to achieve sufficient contrast. Comparability still requires checking stable localization of corresponding anatomy, for example via repeat segmentation and observer error at the apex and isthmus. This is distinct from estimating instrument effects on post-preparation length, area or volume. [Original materials tests and hardness comparison](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "traceability",
+          "title": "How can replication error be checked against between-system differences?",
+          "markdown": "A validation design can stratify by natural-tooth prototype, print replicates within each prototype and randomly assign instruments. It can record preoperative registration repeatability, regional signed deviation and local error at the narrowest apical site. Postoperative untouched area, absolute volume gain and minimum remaining wall thickness can use the same regions. Relative volume gain uses the initial lumen as its denominator, so apical regions with appreciable replication bias should also report absolute changes. Agreement limits can be prespecified relative to the smallest instrument effect of interest, allowing for segmentation and registration error.\n\nAn instrument comparison can first estimate a within-prototype contrast and then estimate how much that contrast differs between natural teeth and replicas. Multiple prototypes provide anatomical variation to test whether the contrast depends on curvature or lumen diameter. Geometric agreement, material matching and agreement of instrument rankings each require their own observations to identify what the model can test. [Paired regional comparison](ref:R01) · [Canal registration for prototype and replica](ref:R02)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Ramírez-Muñoz et al. (2024), original Fig. 2. Pre- and post-instrumentation micro-CT reconstructions.",
+          "interpretation": "Panels A and B show pre-instrumentation canals in a natural tooth and printed replica. Compare C (replica) and D (natural tooth) to hold the Race-Evo system fixed. The remaining postoperative panels represent other systems tested on replicas. Colors identify specimens or groups. The images show morphology, while original Table 2 quantifies group outcomes."
+        }
+      }
+    },
+    "de": {
+      "title": "Wie lässt sich die Vergleichbarkeit der Wurzelkanalpräparation in gedruckten Zahnrepliken und natürlichen Zähnen prüfen?",
+      "direction": "Gedruckte Zahnrepliken zur Prüfung endodontischer Instrumente",
+      "sections": [
+        {
+          "id": "geometry",
+          "title": "Reproduzierte Kanalgeometrie und dünne Wände prüfen",
+          "markdown": "Eine Studie an C-förmigen Unterkiefer-Zweitmolaren reproduzierte eine kontinuierliche Isthmusform und eine diskontinuierliche Form je 16-mal. Nach Mikro-CT-Registrierung lagen die Dice-Koeffizienten bei 0,917 und 0,878, die mittleren vorzeichenbehafteten Abstände bei −0,061 und −0,018 mm und die 95%-Hausdorff-Distanzen bei 0,129 und 0,221 mm. Negative Mittelwerte weisen auf eine Abweichung nach innen hin. Große lokale Abstände können die Prototypen anders ordnen. Die dünnsten Wände lagen bei beiden Formen am Grund der Wurzelfurche und bieten einen weiteren Ort zur lokalen Validierung.\n\nDice misst die Überlappung des gesamten Lumens und kann von großen Bereichen dominiert werden. Isthmen, Verzweigungen und das enge apikale Segment tragen unter Umständen wenig Volumen bei. Vorzeichenbehaftete Distanz und HD95 trennen systematische Verengung von größeren lokalen Fehlern. Die Intra-Replika-Standardabweichungen von 0,031 und 0,073 mm beschreiben die Streuung von Netzpunktabständen innerhalb einer Replik. Für Chargenwiederholbarkeit ist die Streuung zwischen Repliken desselben natürlichen Prototyps zu erfassen. [Originaltabelle 1 und Zusatzabb. S1–S3](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "paired_race",
+          "title": "Gepaarte Evidenz an natürlichen Zähnen und Repliken mit demselben System",
+          "markdown": "Ramírez-Muñoz und Kollegen wählten aus 11 unteren ersten Molaren 22 mesiale Kanäle mit Vertucci-IV-Anatomie und mäßiger Krümmung unter 20° aus. Race-Evo diente dem direkten Vergleich natürlicher Zähne und Harzrepliken. Tabelle 2 wertet die gesamte Länge von 10 mm und die apikalen 4 mm getrennt aus.\n\n| Race-Evo-Vergleich | Natürliche Zähne | Gedruckte Repliken |\n|---|---:|---:|\n| Unbearbeitete Fläche, Gesamtlänge (Mittelwert) | 26,1% | 31,5% |\n| Unbearbeitete Fläche, apikal (Mittelwert) | 24,3% | 32,5% |\n| Apikale Volumenzunahme (Mittelwert) | 43,8% | 22,3% |\n| Apikale Volumenzunahme (Median) | 25,6% | 13,5% |\n\nDie Unterschiede der unbearbeiteten Fläche waren statistisch nicht signifikant, die relative apikale Volumenzunahme unterschied sich signifikant. Das Abstract beschreibt eine etwas größere apikale Zunahme in den Repliken, entgegen den beiden Race-Evo-Spalten in Tabelle 2. Die hier genannten Werte folgen der Tabelle und gelten für diesen gepaarten Vergleich.\n\nFür Anfangs- und Endvolumen über die Gesamtlänge fand die Arbeit keine Gruppenunterschiede. Der apikale Prozentwert hängt vom Ausgangswert in Tabelle 2 ab. Die mittleren apikalen Ausgangsvolumina lagen bei 2,3 und 3,5 mm³ für natürliche Zähne und Repliken. Das kann relative Änderungen beeinflussen, lässt sich aber aus der Aggregattabelle nicht quantifizieren. Für den Bezug von Replikationsfehler und Präparation sind Ausgangsvolumen, Endvolumen und Regionalabweichung je Kanal nötig. [Originaltabelle 2 und Abb. 2](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "device_comparison",
+          "title": "Was zeigt der Vergleich von sechs Systemen in Repliken?",
+          "markdown": "Dieselbe Arbeit verglich sechs Systeme in Repliken. Die mittlere Volumenzunahme über die Gesamtlänge betrug 43,4% für Blueshaper Pro + AS, 23,4% für Race-Evo und 17,1% für Trunatomy + AS. Für Blueshaper Pro wurde bei diesem Endpunkt ein signifikant höherer prozentualer Anstieg berichtet. Die unbearbeitete Fläche über die gesamte Länge unterschied sich zwischen den sechs Replikagruppen statistisch nicht signifikant. Die natürliche Vergleichsgruppe deckt Race-Evo ab. Der Erhalt einer Instrumentenrangfolge über Materialien hinweg bleibt eine eigene Frage. In Originalabb. 2 zeigen die Teilbilder C und D den Race-Evo-Vergleich. Die übrigen Nachherbilder stehen für weitere Replikagruppen.\n\nDie mittleren unbearbeiteten Anteile über die Gesamtlänge reichten von 28,1% bis 32,1% und hatten eine andere Rangfolge als der relative Volumenzuwachs. Lokale Erweiterung eines engen Abschnitts und geringer Abtrag an ausgedehnten Wänden können verschiedene Volumen-Flächen-Kombinationen ergeben. Abbildung 2 zeigt repräsentative Formen, Tabelle 2 quantifiziert Gruppenunterschiede und Streuung. [Replikagruppen in Originaltabelle 2 und Abb. 2](ref:R01)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "materials",
+          "title": "Bearbeitungsumgebung in Dentin und Harz",
+          "markdown": "Ein Materialvergleich prüfte Druckharze, kommerzielle Repliken und menschliches Dentin mittels instrumentierter Eindringprüfung und Röntgenopazität. Dentin war am härtesten. V-Print ee erreichte eine vergleichbare Röntgenopazität, war aber weicher. Härte, Eindringmodul und Bildkontrast betreffen unterschiedliche Versuchsschritte. Studien zu Instrumentenbelastung, Bruch oder Haptik benötigen passende mechanische Validierungsgrößen. Selbst eine gute Kanalüberlappung lässt das Abtragsverhalten gesondert prüfen.\n\nAuch der Bildkontrast beeinflusst die Segmentierungsgrenze. Ein Mikro-CT kann für ausreichenden Kontrast bei den beiden Materialien unterschiedliche Aufnahmebedingungen einsetzen. Vergleichbarkeit erfordert weiterhin die stabile Lokalisierung entsprechender Anatomie, etwa mit Wiederholungssegmentierungen und Beobachterfehlern an Apex und Isthmus. Dies ist eine andere Ebene als die Schätzung von Instrumenteneffekten auf Länge, Fläche oder Volumen nach der Präparation. [Originale Materialprüfungen und Härtevergleich](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "traceability",
+          "title": "Wie lässt sich der Replikationsfehler gegenüber Instrumentenunterschieden prüfen?",
+          "markdown": "Ein Validierungsdesign kann nach natürlichem Zahnprototyp schichten, je Prototyp mehrfach drucken und Instrumente zufällig zuweisen. Vor der Präparation lassen sich Registrierungswiederholbarkeit, vorzeichenbehaftete Regionalabweichung und lokaler Fehler an der engsten apikalen Stelle erfassen. Nach der Präparation können unbearbeitete Fläche, absoluter Volumenzuwachs und minimale Restwandstärke in denselben Regionen angegeben werden. Der relative Volumenzuwachs bezieht sich auf das anfängliche Kanallumen. Apikale Bereiche mit erkennbarer Replikationsabweichung sollten deshalb auch absolute Änderungen ausweisen. Vereinbarungsgrenzen können vorab anhand des kleinsten relevanten Instrumenteneffekts und der Segmentierungs- und Registrierungsfehler festgelegt werden.\n\nEin Instrumentenvergleich kann zunächst den Kontrast innerhalb eines Prototyps schätzen und danach prüfen, wie stark sich dieser zwischen natürlichen Zähnen und Repliken unterscheidet. Mehrere Prototypen liefern anatomische Variation für die Prüfung von Krümmung oder Kanaldurchmesser. Geometrische Übereinstimmung, Materialähnlichkeit und Übereinstimmung der Instrumentenrangfolge erfordern jeweils eigene Beobachtungen, um den Einsatzbereich des Modells zu bestimmen. [Gepaarter regionaler Vergleich](ref:R01) · [Kanalregistrierung von Prototyp und Replik](ref:R02)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Ramírez-Muñoz et al. (2024), Originalabb. 2. Mikro-CT-Rekonstruktionen vor und nach der Präparation.",
+          "interpretation": "A und B zeigen Kanäle vor der Präparation im natürlichen Zahn und in der gedruckten Replik. C (Replik) und D (natürlicher Zahn) vergleichen dasselbe Race-Evo-System. Die übrigen Nachherbilder zeigen weitere in Repliken geprüfte Systeme. Die Farben kennzeichnen Proben oder Gruppen. Die Bilder zeigen die Form, Originaltabelle 2 quantifiziert Gruppenergebnisse."
+        }
+      }
+    }
+  }
+}

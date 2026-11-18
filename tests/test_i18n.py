@@ -260,7 +260,7 @@ def test_timeline_company_selector_refreshes_after_language_change(code):
 @pytest.mark.parametrize('page,keys',[
     ('反馈汇总',['feedback_status']),
     ('研究结构与趋势',['dimension','relation']),
-    ('学术与企业联系',['cross_p','cross_direction','cross_question']),
+    ('学术与企业联系',['cross_direction','cross_question']),
 ])
 def test_translated_selectors_get_fresh_frontend_instances(page,keys):
     app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60)

@@ -1,0 +1,159 @@
+{
+  "schema_version": 2,
+  "question_id": "P2-124",
+  "p": "P2",
+  "version": 2,
+  "updated_at": "2026-11-19",
+  "evidence_cutoff": "2026-11-19",
+  "related_paper_ids": [
+    "doc_6446285a4665c6fb25cc"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Accuracy of complete-arch dental impressions: A new method of measuring trueness and precision",
+      "publisher": "The Journal of Prosthetic Dentistry",
+      "year": 2013,
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0022391313600281",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Trueness of full-arch dental models obtained by digital and conventional impression techniques: an in vivo study",
+      "publisher": "Scientific Reports",
+      "year": 2022,
+      "url": "https://www.nature.com/articles/s41598-022-26983-5#Tab1",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Accuracy of 3D-Scanned Full-Arch Dentition Versus 3D-Printed Models Generated Using Various 3D Printers Based on Linear Measurements",
+      "publisher": "Cureus",
+      "year": 2026,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13570050/",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Comparative Evaluation of Dimensional and Occlusal Accuracy of Non-Working Antagonist Casts: A Study on Different Impression Materials and 3D Printing",
+      "publisher": "Medical Science Monitor",
+      "year": 2023,
+      "url": "https://medscimonit.com/abstract/full/idArt/941654/s/A",
+      "kind": "paper"
+    }
+  ],
+  "figures": [],
+  "locales": {
+    "zh": {
+      "title": "牙科工作模型的偏差如何分解为印模采集与打印误差？",
+      "direction": "牙科工作模型与印模精度",
+      "sections": [
+        {
+          "id": "references",
+          "title": "分段误差需要各自的参考",
+          "markdown": "用高精度参考数字化结果评价口内扫描，可以估计采集偏差。用打印件复扫结果对比用于打印的网格，测得的是制造与复扫合成偏差。Ender 与 Mehl 的实验室参考扫描在全弓上的正确度为 5.3 ± 1.1 μm，精密度为 1.6 ± 0.6 μm，说明参考测量本身可通过重复试验估计。\n\n原文的工件是带牙钢制参考模型。传统印模经 IV 型石膏灌注并复扫，数字印模由口内扫描仪采集钢模型，甲乙两路都与同一数字参考配准。\n\n| 原文体外比较／μm | 传统印模与石膏 | 数字印模 |\n|---|---:|---:|\n| 正确度偏差 | 20.4 ± 2.2 | 58.6 ± 15.8 |\n| 重复间精密度偏差 | 12.5 ± 2.5 | 32.4 ± 9.6 |\n\n该结果衡量当时设备与指定石膏工艺。直接用精密度推断与实际牙弓的偏差会漏掉系统偏移，因为重复采集可以反复产生同向的偏差。 [参考扫描仪正确度与精密度](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "arch",
+          "title": "全弓印模的前后段差异",
+          "markdown": "一项 31 人的上颌体内研究对比两种口扫仪和两种传统印模材料。Omnicam 与 Trios 3 的后段偏差均高于前段。前后段从完整牙弓数据裁切，因而这些值描述全弓采集中的区域分布。该设计以扫描石膏模型作为研究参照，解释时需计入参考来源。\n\n该研究在完整牙弓上检出聚醚印模与硅橡胶印模，以及与两种口内扫描仪之间的差异。硅橡胶印模与两种口扫的平均距离总体接近。前后段的分析补充了全弓均值，尤其是临床上同一弓的后部偏差是否更大。它与钢模研究的基准和被比较材料均不同，不能据两篇的组均值直接推出设备差异。 [原文表 1 与图 3–4](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "linear",
+          "title": "线性尺寸保留与网格正确度",
+          "markdown": "四种打印机与树脂组合的下颌牙弓研究比较了口扫文件和打印模型的牙冠近远中宽度、尖牙间宽度与磨牙间宽度，所测变量的组间检验均为 p > 0.8。这里的基线是输入口扫数据。结论适用于所测距离，局部表面、邻接区和咬合关系需要各自指标。\n\n同一批 30 位受试者的下颌口扫为各打印组合提供来源。平均牙宽的组间比较会纳入患者之间的自然形态差异。同一牙弓内成对测量打印值减入口扫值，更贴近复制误差的问题。短距离可保留而跨弓位移发生变形，因此牙冠宽度和跨弓距离宜按各自方向报告。 [原文表 1 的尺寸比较](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "occlusion",
+          "title": "对颌模型还需对照咬合基准",
+          "markdown": "对颌模型实验将三种印模制得的模型和打印模型放到同一主模型条件下，测量前部垂直、后部垂直和前后向距离，并在 3 颗牙评估咬合。延迟灌注型藻酸盐和藻酸盐替代材料获得较高的咬合准确性。解释这种比较时，应明确上下颌的对合方式和咬合评价位置。\n\n原文的咬合评价位置为牙位 13、17、27，前部和后部垂直距离在延迟灌注型藻酸盐或替代材料与打印组之间呈显著差异。主模型安装在咬合架上，属于体外复现同一病例关系的设计。重复取得口内上下颌关系会引入另一个独立的采集变异来源。 [原文距离与咬合结果](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "paired_metrics",
+          "title": "如何将采集、制造和咬合读数放在同一设计中？",
+          "markdown": "可从同一牙弓独立参照出发，重复采集口扫网格，并从每份网格重复制作实体。各阶段共用预先定义的标志点与区域，分别报告有方向的弓宽和弓长差值、局部绝对偏差与重复测量离散程度。对颌研究再保留独立的咬合记录与接触判据。这样可以识别某一阶段贡献的偏差及其方向。\n\n若需要估计整条流程的偏差，应将最终打印复扫直接与原始独立参照比较，并沿同一坐标系查看各阶段误差的方向。例如采集使后段内收，而打印阶段在同一区域外扩，最终绝对距离可能减少。各段 RMS 对误差取平方，无法通过相加得到流程输出。对同一位置保留有符号偏差，才可检验误差同向累积还是相互抵消。\n\n传统流程可增加印模直接数字化与石膏复扫这一对观测，比较印模变形和灌注后模型的变化。数字流程可将未经编辑的口扫网格与用于打印的网格分别保存，避免将裁剪和补面并入打印误差。最终按标志点、区域面和咬合记录三个层级报告，各层级对应不同参照和用途。 [采集参考](ref:R01) · [打印相对输入的尺寸对照](ref:R03) · [咬合对照](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "en": {
+      "title": "How can dental working-cast deviations be separated into impression capture and printing errors?",
+      "direction": "Accuracy of dental working casts and impressions",
+      "sections": [
+        {
+          "id": "references",
+          "title": "Stage-specific errors require stage-specific references",
+          "markdown": "Comparison with a high-accuracy reference digitization estimates capture error in the intraoral scan. Comparing a rescan of the printed part with its input mesh captures combined fabrication and rescanning deviations. The full-arch laboratory reference scanner of Ender and Mehl gave trueness of 5.3 ± 1.1 μm and precision of 1.6 ± 0.6 μm, illustrating how the reference measurements themselves can be characterized by repeated tests.\n\nThe original object was a dentate steel model. Conventional impressions were poured in type IV stone and rescanned. Digital impressions were acquired from the steel model with the intraoral scanner, and both routes were registered to the same digital reference.\n\n| Original in vitro comparison, μm | Conventional impression and stone | Digital impression |\n|---|---:|---:|\n| Trueness deviation | 20.4 ± 2.2 | 58.6 ± 15.8 |\n| Between-repeat precision deviation | 12.5 ± 2.5 | 32.4 ± 9.6 |\n\nThe values apply to the equipment and stone workflow studied at the time. Precision alone misses systematic displacement because repeated acquisitions can produce the same directional error. [Reference scanner trueness and precision](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "arch",
+          "title": "Anterior and posterior errors in full-arch impressions",
+          "markdown": "An in vivo study of 31 upper arches compared two intraoral scanners and two conventional impression materials. Posterior deviations were greater than anterior deviations for both Omnicam and Trios 3. Segments were cropped from the complete arches, so these values describe the regional distribution of error within a full-arch acquisition. Scanned stone casts supplied the study reference and matter when interpreting the comparison.\n\nThe full-arch analysis found differences between the polyether workflow and silicone, and between polyether and both intraoral scanners. Mean distances were broadly similar for silicone and the two scanners. Anterior–posterior analysis adds whether deviations increase at the back of the same arch. The reference and material comparators differ from the steel model study, so group means across the papers cannot isolate a device effect. [Original Table 1 and Figs. 3–4](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "linear",
+          "title": "Preservation of linear dimensions and mesh trueness",
+          "markdown": "A mandibular study of four printer–resin combinations compared scan files and printed casts using mesiodistal crown widths, intercanine width and intermolar width. All group tests for the measured variables gave p > 0.8. The baseline was the input intraoral scan. The finding applies to those distances. Local surfaces, contacts between teeth and occlusal relationships require their own metrics.\n\nThe mandibular scans of the same 30 participants supplied the input across printing workflows. Comparisons of group-average tooth widths include natural morphological variation between patients. Paired within-arch differences between print and scan are closer to the replication error of interest. Short distances can be preserved despite cross-arch displacement, so crown widths and cross-arch spans should retain their respective directions. [Original linear comparisons in Table 1](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "occlusion",
+          "title": "Antagonist casts require an occlusal reference",
+          "markdown": "An antagonist-cast experiment evaluated casts made from three impression materials and a printed cast against the same master-model setup. It measured anterior vertical, posterior vertical and anteroposterior distances and assessed occlusion at 3 teeth. Extended-pour alginate and an alginate alternative gave higher occlusal accuracy. Articulation and the assessed contact sites define the scope of this comparison.\n\nThe original occlusal sites were teeth 13, 17 and 27. Anterior and posterior vertical distances differed significantly when comparing extended-pour alginate or its alternative with the printed group. The master models were mounted on an articulator to reproduce one case relationship in vitro. Repeated intraoral interarch records introduce a separate source of acquisition variation. [Original distance and occlusion results](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "paired_metrics",
+          "title": "How can one design separate acquisition, fabrication and occlusal readings?",
+          "markdown": "A paired design can start with an independent arch reference, repeat intraoral acquisitions and fabricate replicate casts from each mesh. Prespecified landmarks and regions can be shared across stages, reporting signed arch widths and lengths, absolute local deviations and repeat-measure spread separately. Antagonist studies can then retain an independent interarch record and contact criteria. This identifies where deviations arise and in which direction.\n\nEstimating end-to-end error calls for comparing the final print rescan directly with the independent original reference, while checking directions in a common coordinate system. A capture step can narrow the posterior span and printing can widen the same region, reducing the final absolute error. Stage RMS values square the errors and cannot be added to obtain pipeline error. Signed deviations at the same locations reveal accumulation or cancellation.\n\nThe conventional workflow can add direct impression digitization and a pour rescan to compare impression distortion with changes after casting. For the digital workflow, retaining both the untouched scan mesh and printable mesh keeps trimming and hole filling separate from print error. Reporting landmarks, surface regions and occlusal records separately preserves their references and intended uses. [Acquisition reference](ref:R01) · [Print-to-input dimension comparison](ref:R03) · [Occlusal comparison](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "de": {
+      "title": "Wie lassen sich Abweichungen dentaler Arbeitsmodelle in Erfassungs- und Druckfehler aufteilen?",
+      "direction": "Genauigkeit dentaler Arbeitsmodelle und Abformungen",
+      "sections": [
+        {
+          "id": "references",
+          "title": "Fehler einzelner Schritte brauchen eigene Referenzen",
+          "markdown": "Ein Vergleich mit einer hochgenauen Referenzdigitalisierung schätzt den Erfassungsfehler des Intraoralscans. Ein Vergleich des erneut gescannten Druckteils mit seinem Eingabenetz erfasst Fertigungs- und Nachscanabweichungen gemeinsam. Der Laborreferenzscanner von Ender und Mehl ergab am Vollbogen eine Richtigkeit von 5,3 ± 1,1 μm und eine Präzision von 1,6 ± 0,6 μm. So lässt sich auch die Referenzmessung durch Wiederholungen charakterisieren.\n\nDas Ausgangsobjekt war ein bezahntes Stahlmodell. Konventionelle Abformungen wurden mit Typ-IV-Gips ausgegossen und erneut gescannt. Digitale Abformungen erfassten das Stahlmodell direkt mit dem Intraoralscanner. Beide Wege wurden an derselben digitalen Referenz ausgerichtet.\n\n| Originaler In-vitro-Vergleich, μm | Konventionelle Abformung und Gips | Digitale Abformung |\n|---|---:|---:|\n| Richtigkeitsabweichung | 20,4 ± 2,2 | 58,6 ± 15,8 |\n| Präzisionsabweichung zwischen Wiederholungen | 12,5 ± 2,5 | 32,4 ± 9,6 |\n\nDie Werte gelten für die damaligen Geräte und den untersuchten Gipsablauf. Präzision allein erfasst keinen systematischen Versatz, da Wiederholungsmessungen denselben Richtungsfehler erzeugen können. [Richtigkeit und Präzision des Referenzscanners](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "arch",
+          "title": "Anteriore und posteriore Fehler bei Vollbogenabformungen",
+          "markdown": "Eine In-vivo-Studie an 31 Oberkiefern verglich zwei Intraoralscanner und zwei konventionelle Abformmaterialien. Bei Omnicam und Trios 3 waren die Abweichungen posterior größer als anterior. Die Segmente wurden aus den Vollbögen ausgeschnitten und beschreiben daher die regionale Fehlerverteilung bei Vollbogenerfassung. Gescanntes Gipsmodellmaterial diente als Referenz, deren Herkunft für die Interpretation relevant ist.\n\nIm Vollbogenvergleich unterschied sich der Polyetherablauf von Silikon und von beiden Intraoralscannern. Die mittleren Abstände waren bei Silikon und den beiden Scannern insgesamt ähnlich. Die Segmentanalyse zeigt zusätzlich, ob Abweichungen im hinteren Teil desselben Bogens zunehmen. Referenz und Vergleichsmaterialien unterscheiden sich von der Stahlmodellstudie. Ein Geräteffekt lässt sich aus den Mittelwerten beider Arbeiten nicht isolieren. [Originaltabelle 1 und Abb. 3–4](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "linear",
+          "title": "Erhalt linearer Abmessungen und Netzrichtigkeit",
+          "markdown": "Eine Unterkieferstudie mit vier Drucker-Harz-Kombinationen verglich Scandateien und Druckmodelle anhand mesiodistaler Kronenbreiten sowie interkaniner und intermolarer Breiten. Alle Gruppentests für diese Größen ergaben p > 0,8. Als Bezugsgröße diente der eingehende Intraoralscan. Die Aussage gilt für die gemessenen Strecken. Lokale Flächen, Approximalkontakte und Okklusionsbeziehungen benötigen eigene Messgrößen.\n\nDie Unterkieferscans derselben 30 Teilnehmenden dienten allen Druckabläufen als Ausgangsdaten. Gruppenmittelwerte der Zahnbreiten enthalten die natürliche Formstreuung zwischen Personen. Gepaarte Differenzen von Druck und Scan am selben Bogen entsprechen eher dem gesuchten Replikationsfehler. Kurze Strecken können trotz bogenspannender Verschiebung erhalten bleiben. Kronenbreiten und Querstrecken sollten daher mit ihrer jeweiligen Richtung ausgewiesen werden. [Lineare Vergleiche in Originaltabelle 1](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "occlusion",
+          "title": "Gegenkiefermodelle benötigen eine Okklusionsreferenz",
+          "markdown": "Ein Experiment mit Gegenkiefermodellen prüfte Modelle aus drei Abformmaterialien und ein gedrucktes Modell in derselben Referenzanordnung. Gemessen wurden anteriore und posteriore Vertikalabstände sowie ein anteroposteriorer Abstand. Die Okklusion wurde an 3 Zähnen bewertet. Alginat mit verlängerter Ausgießzeit und ein Alginatersatz erzielten höhere Okklusionsgenauigkeit. Artikulation und untersuchte Kontaktstellen bestimmen den Geltungsbereich.\n\nOriginale Okklusionsmessstellen waren die Zähne 13, 17 und 27. Anteriore und posteriore Vertikalabstände unterschieden sich zwischen Alginat mit verlängerter Ausgießzeit oder Alginatersatz und der Druckgruppe signifikant. Die Referenzmodelle waren im Artikulator montiert und reproduzierten eine Fallbeziehung in vitro. Wiederholte intraorale Kieferrelationsmessungen erfassen eine weitere Quelle der Erfassungsstreuung. [Originalergebnisse zu Abständen und Okklusion](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "paired_metrics",
+          "title": "Wie lassen sich Erfassung, Fertigung und Okklusion im selben Design trennen?",
+          "markdown": "Ein gepaartes Design kann von einer unabhängigen Bogenreferenz ausgehen, Intraoralscans wiederholen und aus jedem Netz mehrere Modelle herstellen. Vorab definierte Referenzpunkte und Regionen bleiben über die Stufen gleich. Vorzeichenbehaftete Abweichungen der Bogenbreite und -länge, absolute lokale Abweichungen und Wiederholstreuung werden getrennt angegeben. Untersuchungen des Gegenkiefers können zusätzlich eine unabhängige Bissregistrierung und Kontaktkriterien behalten. So lassen sich Ursprung und Richtung von Abweichungen zuordnen.\n\nFür den Gesamtfehler wird der finale Nachscan des Drucks direkt gegen die unabhängige Ausgangsreferenz geprüft. Die Richtungen der Einzelschritte werden in einem gemeinsamen Koordinatensystem erfasst. Verengt die Erfassung den posterioren Bogen und weitet der Druck dieselbe Region, kann der absolute Endfehler abnehmen. Die RMS-Werte der Schritte quadrieren Abweichungen und lassen sich nicht zum Gesamtfehler addieren. Vorzeichenbehaftete Werte am selben Ort zeigen Anhäufung oder Ausgleich.\n\nIm konventionellen Ablauf können direkte Abformdigitalisierung und Gipsscan Abformverformung und Änderungen nach dem Ausgießen vergleichen. Im digitalen Ablauf trennen unbearbeitetes Scannetz und druckfertiges Netz Beschnitt und Lochfüllung vom Druckfehler. Separate Angaben zu Messpunkten, Flächenregionen und Bissregistrierung bewahren Referenzen und Einsatzzwecke. [Erfassungsreferenz](ref:R01) · [Maßvergleich zwischen Druck und Eingangsdaten](ref:R03) · [Okklusionsvergleich](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    }
+  }
+}

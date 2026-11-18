@@ -1,0 +1,186 @@
+{
+  "schema_version": 2,
+  "question_id": "P4-120",
+  "p": "P4",
+  "version": 2,
+  "updated_at": "2026-11-19",
+  "evidence_cutoff": "2026-11-19",
+  "related_paper_ids": [
+    "doc_7d794af50b649faa2370",
+    "KB20267FDD1D1B54BF"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Effect of 3D printed replicas on the duration of third molar autotransplantation surgery: A controlled clinical trial",
+      "publisher": "Dental Traumatology",
+      "year": 2024,
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/edt.12905",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Clinical Efficacy of CBCT and 3D-Printed Replicas in Molar Autotransplantation: A Controlled Clinical Trial",
+      "publisher": "Dental Traumatology",
+      "year": 2025,
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/edt.13012",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Fully guided system for position-predictable autotransplantation of teeth: A randomized clinical trial",
+      "publisher": "International Endodontic Journal",
+      "year": 2025,
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/iej.14193",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Template-Guided Autogenous Tooth Transplantation Using a CAD/CAM Dental Replica in a Complex Anatomical Scenario: A Case Report",
+      "publisher": "Dentistry Journal",
+      "year": 2025,
+      "url": "https://www.mdpi.com/2304-6767/13/7/281",
+      "kind": "paper"
+    },
+    {
+      "id": "R05",
+      "title": "Application of computer-aided design combined with 3-dimensional-printed guide in tooth autotransplantation: a case report",
+      "publisher": "BMC Oral Health",
+      "year": 2026,
+      "url": "https://link.springer.com/article/10.1186/s12903-025-07459-0",
+      "kind": "paper"
+    }
+  ],
+  "figures": [],
+  "locales": {
+    "zh": {
+      "title": "供牙复制件与定位导板分别怎样影响受区适配、离体时间和移植位置？",
+      "direction": "牙移植及牙髓外科个体化辅助器具",
+      "sections": [
+        {
+          "id": "socket",
+          "title": "复制件和导板约束的是不同几何量",
+          "markdown": "供牙复制件用于拔牙前核对受区牙槽窝的容纳形状。全导向系统加上制备、就位及固定模板，分别转移窝位、牙轴及最终固定位置。复杂牙位病例说明可完成试配，但评价时还应分别记录复制件试配和真实供牙重复插入。 [复杂牙位复制件病例](ref:R04) · [全导向构件图 3](ref:R03)\n\n牙槽窝容纳范围、移植后咬合关系和供牙牙周膜保护是三个目标。松配可能减少强行就位，但改变了固定和牙周间隙；紧配时需区分总体尺寸与根尖或根分叉的局部冲突。试配时可把无法就位、就位后轴线偏移与受区局部修整分别登记。全导向图 3 中不同器具的位置约束应按功能识读。 [制备、就位与固定图 3](ref:R03) · [复制件试配与受区](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "time",
+          "title": "总手术时间与供牙离体时间",
+          "markdown": "非随机对照研究中，复制件组与常规组供牙离体平均用时为 52.7 和 67.7 s。原文调整后分析支持总手术时间缩短，离体时间差仍有不确定性。读表 2 时应分别看秒与分钟两列，以及各自的区间，避免把术前后流程的总用时优势换算成离体优势。 [用时比较与表 2](ref:R01)\n\n同一研究团队的随访报告给出总手术时间中位数 45 对 60 min、离体时间中位数 35 对 55 s。与前篇所列均值及调整模型并读时，先核对纳入对象和统计量。应给每个病例标注脱离原牙槽窝、首次进入受区、最终就位三个时间点，真实供牙重新取出时才能重算累计离体时间。 [总手术与离体时间分布](ref:R02) · [围手术期计时研究](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "position",
+          "title": "全导向相对单独复制件能改善多少位置偏差？",
+          "markdown": "30 颗移植牙的随机研究以仅使用复制件为对照。图 5 中，全导向与复制件组的中心偏差分别为 0.79 和 1.79 mm，长轴偏角为 3.87° 和 12.98°。再看冠部与根部地标及点的分布。研究未观察到备窝时间和重复就位次数的显著差异，位置改善和用时改善应分别估计。 [位置、角度和备窝时间图 5](ref:R03)\n\n图 4 先配准术前和术后的颌骨模型，把计划和实际移植牙放在同一坐标，再比较中心、冠尖和根尖。图 5 中根部索引点距离组均值为全导向 1.37 mm、复制件 3.60 mm，说明仅看中心距离会遗漏根端偏移。牙轴旋转也可能保留冠部接触但改变根周余量，需联合读三个方向而非以咬合代替影像。 [配准图 4 与根部偏差图 5](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "healing",
+          "title": "牙周愈合要在何时、使用哪些指标验证？",
+          "markdown": "另一份非随机对照报告对 24 例复制件和 22 例常规组进行随访，两组移植牙在 1 年时均保留。调整后，组别与松动、探诊出血及牙周袋的关联未达显著。阅读时应分开追踪牙在口内存留、牙周愈合和影像根吸收，并记录供牙根发育阶段。 [随访与调整后牙周结果](ref:R02)\n\n全导向研究平均随访 1 年，26 颗牙接受到诊检查，4 颗只进行电话随访。临床检查可提供牙周探诊和咬合数据，电话可以报告存留或症状。读成功率时应核对研究的成功定义和每项可检查的分母；与另一研究的牙齿存留比例对照时再统一随访窗口。 [到诊随访与成功口径](ref:R03) · [牙周指标分项](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "followup",
+          "title": "受区、根成熟和牙髓处理如何进入分析？",
+          "markdown": "复杂病例中，年轻患者的供牙尚未完成根发育，随访为 12 个月。另一跨上下颌病例接受了后续根管治疗并随访 3 年。比较队列需分别记录受区是新鲜拔牙窝还是重建窝位、供牙发育阶段及牙髓治疗时点，再分析定位与远期生物学结局。 [未成熟供牙病例](ref:R04) · [跨颌受区与 3 年随访](ref:R05)\n\n根未发育完成的受试者可分层看根伸长与根尖闭合，成熟供牙则应注明随访中何时进行牙髓治疗以及是否存在根尖异常。两份病例报告的随访长度不同，应在共同时间点看临床咬合和影像而非横向比较单个最后一次复诊结果。 [未成熟牙随访](ref:R04) · [根管治疗与长期随访](ref:R05)",
+          "figure_ids": []
+        },
+        {
+          "id": "design",
+          "title": "哪些组别能区分复制件与导板的贡献？",
+          "markdown": "研究分组可区分常规无复制件、复制件、复制件加全导向。第一对比估计预先试配的增量，第二对比估计器具转移计划位姿的增量。主要终点可先定累计离体时间和根尖位置偏差，再跟踪早期就位、复诊咬合、牙周指标及移植牙存留。若一名患者有多颗移植牙，统计模型应保留患者内相关性。 [复制件与常规对照](ref:R01) · [全导向与仅复制件随机比较](ref:R03)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "en": {
+      "title": "How do donor replicas and positioning guides affect socket fit, extra-alveolar time and transplant position?",
+      "direction": "Patient-specific aids for tooth transplantation and endodontic surgery",
+      "sections": [
+        {
+          "id": "socket",
+          "title": "Replicas and guides constrain different geometry",
+          "markdown": "A donor replica lets the team check socket fit before extraction. The fully guided system adds preparation, positioning and fixation templates to transfer socket location, tooth axis and final fixation pose. The complex case illustrates the fit check. Record trial seating of the replica separately from reinsertion of the actual donor tooth. [Replica in a complex case](ref:R04) · [Fully guided components, Fig. 3](ref:R03)\n\nSocket clearance, occlusion and donor periodontal-ligament preservation are distinct objectives. A loose fit may reduce forced seating but changes fixation and periodontal space. With a tight fit, distinguish overall size from a focal conflict near the apex or furcation. Record failure to seat, axis deviation and additional socket adjustment separately. Figure 3 depicts each guide by function. [Preparation, positioning and fixation, Fig. 3](ref:R03) · [Replica fit and recipient site](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "time",
+          "title": "Total operative time and time out of the socket",
+          "markdown": "In the non-randomized comparison, mean donor extraoral time was 52.7 versus 67.7 s with a replica versus control. The adjusted analysis supports shorter total surgery, while the extraoral difference remained uncertain. Read the seconds and minutes columns and their intervals separately in Table 2. [Time comparison and Table 2](ref:R01)\n\nThe same team's follow-up paper reported median operative times of 45 versus 60 min and median extra-alveolar times of 35 versus 55 s. Check samples and statistics before comparing these with the earlier means and adjusted models. Mark donor exit, first entry and definitive seating in each case so total time out of a socket can include later removal. [Total and extra-alveolar time distributions](ref:R02) · [Operative timing study](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "position",
+          "title": "How much did full guidance improve position over a replica alone?",
+          "markdown": "The randomized trial of 30 transplants used replica-only controls. In Fig. 5, full guidance versus replica alone yielded centre deviations of 0.79 and 1.79 mm and long-axis deviations of 3.87° and 12.98°. Also inspect the crown and root landmarks and distributions. Socket preparation time and repeated seating attempts showed no significant differences. [Position, angle and socket time, Fig. 5](ref:R03)\n\nFigure 4 registers the pre- and postoperative jaw models before comparing planned and achieved centres, cusps and apices. In Fig. 5, root landmark deviations averaged 1.37 mm with full guidance versus 3.60 mm with replicas, showing what the centre-point distance can miss. Rotation may preserve crown contact while changing root clearance, so three-dimensional geometry and occlusion both matter. [Registration, Fig. 4, and root deviation, Fig. 5](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "healing",
+          "title": "When and how should periodontal healing be assessed?",
+          "markdown": "A non-randomized follow-up report compared 24 replica and 22 control cases. Both groups retained all transplants at 1 year. After adjustment, group did not significantly predict mobility, bleeding on probing or pocket depth. Track tooth retention, periodontal healing and radiographic resorption separately and record root development stage. [Follow-up and adjusted periodontal outcomes](ref:R02)\n\nThe fully guided trial followed cases for a mean of 1 year. It examined 26 transplants in person and 4 by phone only. Clinical care can record probing and occlusion, while phone follow-up can capture retention or symptoms. To read success rates, verify the success definition and available denominators, and harmonize visits before comparing with the other study's retention percentage. [In-person follow-up and success definition](ref:R03) · [Periodontal outcome components](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "followup",
+          "title": "How should recipient site, root maturity and endodontic care enter the analysis?",
+          "markdown": "In the complex young-patient case, the donor root had not completed development and follow-up lasted 12 months. A cross-arch case received later root canal treatment and was followed for 3 years. A cohort comparison should record fresh extraction versus reconstructed sockets, donor root stage and timing of endodontic care before relating placement to biological outcomes. [Immature donor case](ref:R04) · [Cross-arch recipient and 3-year follow-up](ref:R05)\n\nFor immature donors stratify root elongation and apical closure. For mature donors record the timing of endodontic care and apical findings. The case reports have different follow-up lengths. Compare function and imaging at shared time points rather than only the last visit in each case. [Immature-tooth follow-up](ref:R04) · [Endodontic treatment and long follow-up](ref:R05)",
+          "figure_ids": []
+        },
+        {
+          "id": "design",
+          "title": "Which groups isolate replica and guide effects?",
+          "markdown": "Separate conventional surgery, replica alone and replica plus full guidance. The first contrast estimates advance fit checking. The second estimates the added positional transfer by guides. Prespecify cumulative extra-alveolar time and apex deviation, then assess early seating, follow-up occlusion, periodontal outcomes and retention. Account for within-patient correlation if multiple teeth are transplanted. [Replica versus conventional surgery](ref:R01) · [Randomized full guidance versus replica alone](ref:R03)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "de": {
+      "title": "Wie beeinflussen Spenderzahnreplikate und Positionierungsschablonen Alveolenpassung, extraalveoläre Zeit und Transplantatlage?",
+      "direction": "Patientenspezifische Hilfsmittel für Zahntransplantation und endodontische Chirurgie",
+      "sections": [
+        {
+          "id": "socket",
+          "title": "Replikate und Schablonen führen unterschiedliche Geometriemaße",
+          "markdown": "Ein Spenderzahnreplikat ermöglicht die Passprobe in der Alveole vor der Extraktion. Das vollgeführte System ergänzt Präparations-, Positionierungs- und Fixierschablonen und überträgt Alveolenlage, Zahnachse und Fixierposition. Der komplexe Fall zeigt die Passprobe. Probesitze des Replikats getrennt vom Wiedereinsetzen des Spenderzahns erfassen. [Replikat bei komplexem Fall](ref:R04) · [Vollführung, Abb. 3](ref:R03)\n\nAlveolenfreiraum, Okklusion und Erhalt des Desmodonts sind unterschiedliche Ziele. Ein lockerer Sitz kann erzwungenes Einsetzen vermindern, verändert aber Fixierung und Parodontalspalt. Bei engem Sitz Gesamtgröße von lokalem Konflikt am Apex oder an der Furkation unterscheiden. Fehlenden Sitz, Achsversatz und zusätzliche Alveolenanpassung getrennt erfassen. Abb. 3 zeigt die Schablonen nach Funktion. [Präparation, Positionierung und Fixierung, Abb. 3](ref:R03) · [Passprobe und Empfängerstelle](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "time",
+          "title": "Gesamtoperationszeit und extraalveoläre Zeit",
+          "markdown": "Im nicht randomisierten Vergleich betrug die mittlere extraorale Zeit mit Replikat 52,7 s und in der Kontrollgruppe 67,7 s. Die adjustierte Analyse stützt eine kürzere Gesamtoperation, während der Unterschied der extraoralen Zeit unsicher blieb. Die Sekunden- und Minutenspalten in Tabelle 2 mit ihren Intervallen getrennt lesen. [Zeitvergleich und Tabelle 2](ref:R01)\n\nDer Nachbeobachtungsbericht derselben Gruppe gab mediane Operationszeiten von 45 gegenüber 60 min und extraalveoläre Zeiten von 35 gegenüber 55 s an. Vor dem Abgleich mit früheren Mittelwerten und adjustierten Modellen Stichprobe und Kennzahl prüfen. Entnahme, erstes Einsetzen und endgültigen Sitz markieren, damit erneute Entnahmen in die kumulierte extraalveoläre Zeit eingehen. [Verteilungen der Gesamt- und extraalveolären Zeit](ref:R02) · [Studie zur Operationszeit](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "position",
+          "title": "Wie stark verbesserte die Vollführung die Lage gegenüber dem Replikat allein?",
+          "markdown": "Die randomisierte Studie mit 30 Transplantaten verwendete eine Kontrollgruppe mit Replikat allein. In Abb. 5 betrug die Zentrumsabweichung 0,79 gegenüber 1,79 mm und die Längsachsenabweichung 3,87° gegenüber 12,98°. Kronen- und Wurzellandmarken sowie Verteilungen ergänzen die Auswertung. Die Unterschiede bei Präparationszeit und wiederholten Einsetzversuchen waren nicht signifikant. [Lage, Winkel und Präparationszeit, Abb. 5](ref:R03)\n\nAbb. 4 registriert prä- und postoperative Kiefermodelle vor dem Vergleich geplanter und erreichter Zentren, Höcker und Apizes. In Abb. 5 betrug die Wurzellandmarkenabweichung im Mittel 1,37 mm bei Vollführung und 3,60 mm bei Replikat allein. Der Zentrumsabstand kann daher Wurzelversatz übersehen. Rotation kann Kronenkontakt erhalten und den Wurzelabstand ändern, weshalb Geometrie und Okklusion gemeinsam zu lesen sind. [Registrierung, Abb. 4, und Wurzelabweichung, Abb. 5](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "healing",
+          "title": "Wann und womit lässt sich die parodontale Heilung prüfen?",
+          "markdown": "Die nicht randomisierte Nachbeobachtung verglich 24 Fälle mit Replikat und 22 Kontrollfälle. Nach 1 Jahr waren alle Transplantate erhalten. Nach Adjustierung war die Gruppe kein signifikanter Prädiktor für Lockerung, Sondierungsblutung oder Taschentiefe. Zahnerhalt, parodontale Heilung und radiologische Resorption getrennt erfassen und das Stadium der Wurzelentwicklung dokumentieren. [Nachbeobachtung und adjustierte parodontale Ergebnisse](ref:R02)\n\nDie Vollführungsstudie beobachtete im Mittel 1 Jahr nach. 26 Transplantate wurden vor Ort untersucht, 4 nur telefonisch. Sondierung und Okklusion sind in der Untersuchung erfassbar, Zahnerhalt oder Symptome auch telefonisch. Für Erfolgsraten die Definition und verfügbaren Nenner prüfen, für den Vergleich mit Zahnerhaltsraten das Zeitfenster angleichen. [Klinische Nachkontrolle und Erfolgsdefinition](ref:R03) · [Einzelne parodontale Endpunkte](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "followup",
+          "title": "Wie gehen Empfängerstelle, Wurzelreife und endodontische Versorgung in die Analyse ein?",
+          "markdown": "Im komplexen Fall eines jungen Patienten war die Wurzelentwicklung nicht abgeschlossen. Die Nachbeobachtung betrug 12 Monate. Ein Fall mit Wechsel zwischen Kiefern erhielt später eine Wurzelkanalbehandlung und wurde 3 Jahre nachbeobachtet. Bei Kohortenvergleichen frische Extraktionsalveole oder rekonstruierte Alveole, Wurzelstadium und Zeitpunkt der endodontischen Behandlung erfassen, bevor die Lage mit biologischen Endpunkten verknüpft wird. [Fall mit unreifem Spenderzahn](ref:R04) · [Empfängerstelle im anderen Kiefer und 3-Jahres-Verlauf](ref:R05)\n\nBei unreifen Spenderzähnen Wurzellängenentwicklung und apikalen Schluss getrennt erfassen. Bei reifen Spenderzähnen Zeitpunkt der endodontischen Behandlung und apikale Befunde dokumentieren. Die Kasuistiken haben verschiedene Nachbeobachtungszeiten. Funktion und Bildbefund daher an gemeinsamen Zeitpunkten vergleichen. [Nachbeobachtung des unreifen Zahns](ref:R04) · [Wurzelkanalbehandlung und Langzeitverlauf](ref:R05)",
+          "figure_ids": []
+        },
+        {
+          "id": "design",
+          "title": "Welche Gruppen trennen den Effekt von Replikat und Schablone?",
+          "markdown": "Konventionelle Operation, Replikat allein und Replikat plus Vollführung getrennt vergleichen. Der erste Vergleich schätzt die vorbereitende Passprobe, der zweite die zusätzliche Lageübertragung. Kumulierte extraalveoläre Zeit und Apexabweichung vorab festlegen, danach Sitz, Okklusion, Parodontalbefunde und Zahnerhalt verfolgen. Mehrere Transplantate derselben Person statistisch gemeinsam berücksichtigen. [Replikat gegenüber konventioneller Operation](ref:R01) · [Randomisierte Vollführung gegenüber Replikat allein](ref:R03)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "schema_version": 2,
+  "question_id": "P6-118",
+  "p": "P6",
+  "version": 2,
+  "updated_at": "2026-11-19",
+  "evidence_cutoff": "2026-11-19",
+  "related_paper_ids": [],
+  "references": [
+    {
+      "id": "R01",
+      "title": "A Reproducible Digital Workflow for Patient-Specific 3D-Printed Teeth with Anatomically Stratified Enamel and Multi-Material Caries for Preclinical Operative Dentistry",
+      "publisher": "Journal of Functional Biomaterials",
+      "year": 2026,
+      "url": "https://www.mdpi.com/2079-4983/17/8/355",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Assessment of Different Technologies in the Fabrication of 3D Printed Tooth Models for Dental Education",
+      "publisher": "European Journal of Dental Education",
+      "year": 2026,
+      "url": "https://doi.org/10.1111/eje.70105",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "A Novel Self-Assessment Method for Training Access Cavity on 3D Printed Endodontic Models",
+      "publisher": "Dentistry Journal",
+      "year": 2023,
+      "url": "https://www.mdpi.com/2304-6767/11/6/152#fig_body_display_dentistry-11-00152-f004",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "3D printed teeth for bridge preparation training: development and assessment in dental education",
+      "publisher": "BMC Medical Education",
+      "year": 2025,
+      "url": "https://link.springer.com/article/10.1186/s12909-025-07849-6/figures/4",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R03",
+      "original_label": "Fig. 4",
+      "image_url": "https://mdpi-res.com/dentistry/dentistry-11-00152/article_deploy/html/images/dentistry-11-00152-g004-550.jpg",
+      "source_url": "https://www.mdpi.com/2304-6767/11/6/152#fig_body_display_dentistry-11-00152-f004",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "如何分开验证牙科训练模型的解剖、切削手感和测量质量？",
+      "direction": "牙科教学与操作训练模型",
+      "sections": [
+        {
+          "id": "anatomy",
+          "title": "外形相似和内部组织边界",
+          "markdown": "分层模型以患者影像设计牙釉质、牙本质和龋损，切面观察显示了组织分区。原文用定性切面核对内部结构，未给出设计与成品的空间偏差。测量时可按釉牙本质界、病损边缘和髓室分别计算厚度或表面偏差，避免由可见外冠推断内部结构。 [分层和截面结果](ref:R01)\n\n分层厚度随位置变化时，平均厚度会掩盖裂沟、邻面和牙颈区各自的薄层。可在原始影像、分割后的设计和打印切面上选同一标志面，逐区报告层厚差和龋损边缘漏检比例。有关分层模型的研究明确把形态匹配作为定性观察，读切面时颜色只标记材料区域，无法直接读取局部力学梯度。 [釉质分层与几何验证范围](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "cutting",
+          "title": "切削触感能否由不同打印路线单独验证？",
+          "markdown": "比较研究用同一上颌第一磨牙外形制造五种实验模型，由 12 名学生和 6 名牙医评价简单咬合面洞形制备。共同牙形减少了解剖差异；打印路线同时带来材料差异。问卷评价可与恒定载荷下材料去除率和钻切力曲线配对，并检查穿过分层边界时是否产生可感知变化。 [五种成形路线的比较](ref:R02) · [分层组织模型](ref:R01)\n\nBereza 等原文图 5 把不同材料开洞后的表面放在一起。材料挤出组可见片状碎屑，烧结组的受试者报告材料黏附钻针。比较时要记录边缘可见度、碎屑和刀具黏附等失真，因为切削阻力提高和操作触感更接近天然组织是两件不同的事。若各组仅一种材料，结果适用于该组合。 [制备后表面图 5](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "perception",
+          "title": "视觉、触觉和教学用途各自怎么读？",
+          "markdown": "分层模型的 50 名学生评估中，教学用途平均为 4.32 ± 0.65（满分 5），视觉真实感高于触觉真实感。硬度是触觉的主要局限。问卷可回答学习者能否辨认操作对象及反馈，机械测试则用同一钻针和负载条件比较制备过程。 [学生评分与材料讨论](ref:R01)\n\n同一模型的评价可按任务步骤记录。定位龋损时用边缘识别率，切入时记录进入材料的负载峰值，接近髓室时记录突破的力变化和是否发生误穿。把这些与外形、触感评分配对，可以检验高视觉评分主要来自颜色分层，还是确实与操作者更准确地定位危险边界有关。 [分层构造和评分维度](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "scanning",
+          "title": "扫描叠合怎样定位学生的制备误差？",
+          "markdown": "开髓自评研究扫描学生制备牙并与教师参考制备叠合。根据正文问卷结果，14/19 人认为扫描比直接观察更有用，15/19 人认为扫描有助于理解开髓错误。用于定量时，可只在未制备外表面配准，分别测过切和欠切体积，再记录被深部遮挡而无法扫描的区域。 [叠合方法与问卷结果](ref:R03)\n\n原文磨牙和切牙各有 44 个开髓样本。与教师参照的 RMS 分别为 0.269 ± 0.05 和 0.279 ± 0.07 mm。两组均值接近时，仍可能出现误差位置不同，例如髓室顶残留或洞壁沟槽。数值由多个来自同一学生的制备贡献，若比较教师反馈的效果，需按学生聚类并给出几何指标与评分条目的一致性。 [距离结果和图 4](ref:R03)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "task",
+          "title": "固定桥预备的任务难度如何影响手感评分？",
+          "markdown": "固定桥课程共有 116 名四年级学生。按原文图 4 分班看，首班包含去龋、核部重建、预备和临时修复，后续班级逐步删减项目。读各班触感评分时同时对照任务，才能区分材料体验与操作负担。物理参数比较可固定同一预备量及病例情境。 [图 4 与课程差异](ref:R04)\n\n原文图 4 中打印牙触感平均评分由首班 42.48 升至末班 58.15（p = 0.008）。常规模型的学习过程评分也在末班较高，支持同时检查班级和任务的贡献。若将困难程度固定且随机分配模型，可进一步研究触感评分是否与支台牙轴壁过切、就位道偏差及边缘不连续同时变化。 [分班箱线图与配对比较](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "repeatability",
+          "title": "打印、扫描和评价者误差怎样分别估计？",
+          "markdown": "训练技术与评估工具应在不同重复层级核查。成形重复性比较同一设计的不同件；扫描重复性比较同一件的两次采集；评价者一致性比较同一扫描的重复读数。若模型用于检验分层切削，再设逐层负载数据并记录材料界面。把三类重复误差按来源保存，才能判断学生之间的分数差是否超过测量噪声。 [分层评价设计](ref:R01) · [数字制备评价](ref:R03)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Meglioli 等（2023），原文图 4。制备牙的扫描和网格可视化。",
+          "interpretation": "A 展示制备后牙的数字采集，B 展示 MeshLab 里的表面网格。可对照开口在拍摄与网格里的位置。图示为采集和观察工具，误差大小和方向还需由与参考制备的配准及距离分析给出。"
+        }
+      }
+    },
+    "en": {
+      "title": "How can anatomical fidelity, cutting feel and measurement quality be validated in dental training models?",
+      "direction": "Dental education and procedural training models",
+      "sections": [
+        {
+          "id": "anatomy",
+          "title": "External likeness and internal tissue boundaries",
+          "markdown": "The stratified model uses patient imaging to represent enamel, dentine and caries. Sections illustrate the tissue partitions, with qualitative inspection of internal geometry. Measure thickness or surface deviation separately at the dentinoenamel junction, lesion boundary and pulp chamber to test their fidelity independently of the outer crown. [Stratification and section results](ref:R01)\n\nA mean thickness can mask thin enamel at fissures, proximal surfaces and cervical regions. Use matched landmarks on source images, segmented design and printed sections to report regional thickness error and missed lesion boundaries. In the stratified-model study, anatomy was assessed qualitatively. Section colours label assigned material regions, with local mechanical gradients requiring separate measurements. [Enamel stratification and geometry checks](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "cutting",
+          "title": "Can different printing routes be compared for cutting feel?",
+          "markdown": "The comparative study made five experimental models from the same maxillary first-molar shape, rated by 12 students and 6 dentists after a simple occlusal preparation. Matching tooth shape limits anatomical variation, while printing route and material vary together. Pair ratings with removal rates and cutting-force profiles at a fixed load and examine the transition between printed layers. [Comparison of five printing routes](ref:R02) · [Stratified tissue model](ref:R01)\n\nBereza et al., Fig. 5, places prepared surfaces from different groups side by side. The filament extrusion group produced flakes; for sintered teeth, users reported bur adhesion. Document margin visibility, debris and bur adhesion separately. Higher cutting resistance may arise for reasons unrelated to resemblance to natural tissue. Each tested process–material pair defines the scope of comparison. [Post-preparation surfaces, Fig. 5](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "perception",
+          "title": "How should visual realism, tactile realism and utility be read?",
+          "markdown": "Among 50 students evaluating the stratified model, perceived teaching utility averaged 4.32 ± 0.65 on a 5-point scale, and visual realism scored above tactile realism. Perceived hardness was a main limitation. Questionnaires assess whether landmarks and feedback are apparent to learners. Mechanical tests can hold bur and loading conditions constant. [Student ratings and material discussion](ref:R01)\n\nUse task stages to evaluate the same model. Score boundary recognition when locating caries, peak entry force when cutting, and force change and perforation at chamber entry. Pair these with visual and tactile ratings to test whether high visual scores reflect colour contrast or improved location of a critical boundary. [Material layers and rating domains](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "scanning",
+          "title": "How can scan overlays locate preparation errors?",
+          "markdown": "The access-cavity study scanned student preparations and overlaid an instructor's reference. In the main-text questionnaire results, 14/19 respondents found scanning more useful than direct inspection and 15/19 found it helpful for understanding access errors. For quantitative scoring, align on unprepared surfaces, report over- and underpreparation volumes, and mark deep areas that the scan could not capture. [Overlay method and questionnaire](ref:R03)\n\nThe paper analysed 44 preparations each for molars and incisors. RMS relative to the instructor reference was 0.269 ± 0.05 and 0.279 ± 0.07 mm, respectively. Similar means can hide distinct error locations such as remaining chamber roof or wall gouges. Preparations are clustered within students. Report agreement between spatial measures and specific rubric items when evaluating feedback. [Distance results and Fig. 4](ref:R03)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "task",
+          "title": "How did task complexity affect ratings for bridge preparation?",
+          "markdown": "The bridge project enrolled 116 fourth-year students. The first course covered caries excavation, core build-up, preparation and provisionals, and later courses removed stages. Read cohort-specific tactile ratings in Fig. 4 alongside each cohort's tasks. A material comparison can hold the preparation target and case scenario fixed. [Fig. 4 and course differences](ref:R04)\n\nPrinted-tooth tactile ratings rose from 42.48 in the first cohort to 58.15 in the last (p = 0.008), as shown in Fig. 4. The conventional model's learning-process rating was also higher in the last cohort. This motivates checking cohort and task effects. Holding difficulty constant and randomizing model type could test whether haptic ratings track axial-wall overcut, path-of-insertion error and margin discontinuity. [Cohort box plots and pairwise tests](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "repeatability",
+          "title": "How should print, scan and reader error be estimated separately?",
+          "markdown": "Verify fabrication and scoring at different repeat levels. Print repeatability uses separate copies of one design. Scan repeatability uses repeated acquisition of one copy. Reader agreement uses multiple readings of one scan. For layers, retain cutting-load data through the interface. Separating these variance sources helps determine whether score differences exceed measurement noise. [Layered-model assessment](ref:R01) · [Digital preparation assessment](ref:R03)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Meglioli et al. (2023), Fig. 4. Scanning and mesh visualisation of a preparation.",
+          "interpretation": "Panel A shows digital acquisition of the prepared tooth and B its mesh in MeshLab. Locate the opening in both views. Deviation magnitude and direction require registration and distance analysis against the reference preparation."
+        }
+      }
+    },
+    "de": {
+      "title": "Wie lassen sich Anatomietreue, Schneidgefühl und Messqualität dentaler Trainingsmodelle getrennt validieren?",
+      "direction": "Modelle für zahnmedizinische Lehre und praktisches Training",
+      "sections": [
+        {
+          "id": "anatomy",
+          "title": "Äußere Ähnlichkeit und innere Gewebegrenzen",
+          "markdown": "Das geschichtete Modell bildet Schmelz, Dentin und Karies anhand von Patientendaten ab. Schnittbilder zeigen die Gewebegrenzen qualitativ. Schichtdicke und Oberflächenabweichung an Schmelz-Dentin-Grenze, Läsionsrand und Pulpakammer getrennt messen, um ihre Treue unabhängig von der äußeren Krone zu bestimmen. [Schichtung und Schnittbilder](ref:R01)\n\nEin Mittelwert kann dünnen Schmelz in Fissuren, an Approximalflächen und am Zahnhals verdecken. Gleiche Landmarken in Quellbild, Segmentierung und Druckschnitt ermöglichen regionale Dicken- und Läsionsrandmessungen. Die Schichtstudie bewertete die Anatomie qualitativ. Farben markieren Materialzonen, lokale mechanische Gradienten sind gesondert zu messen. [Schmelzschichtung und Geometrieprüfung](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "cutting",
+          "title": "Wie lässt sich das Schneidgefühl verschiedener Druckverfahren vergleichen?",
+          "markdown": "Die Vergleichsstudie fertigte fünf Varianten mit derselben Form eines oberen ersten Molaren. 12 Studierende und 6 Zahnärztinnen und Zahnärzte bewerteten eine einfache okklusale Präparation. Die gemeinsame Zahnform begrenzt anatomische Unterschiede, während Verfahren und Material gemeinsam variieren. Bewertungen lassen sich mit Abtragsrate und Kraftprofil bei konstanter Last verknüpfen, einschließlich des Übergangs zwischen Schichten. [Vergleich der fünf Druckverfahren](ref:R02) · [Geschichtetes Gewebemodell](ref:R01)\n\nAbb. 5 bei Bereza et al. zeigt präparierte Oberflächen nebeneinander. Beim Filamentdruck entstanden schuppige Späne, bei gesinterten Modellen wurde Anhaften am Bohrer berichtet. Randübersicht, Späne und Anhaften getrennt dokumentieren. Höherer Schneidwiderstand kann unabhängig von der Naturnähe entstehen. Der Befund gilt für die geprüften Verfahrens-Material-Paare. [Oberflächen nach Präparation, Abb. 5](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "perception",
+          "title": "Wie sind visueller Realismus, Haptik und Nutzen zu lesen?",
+          "markdown": "Bei 50 Studierenden lag der wahrgenommene Lehrnutzen des Schichtmodells bei 4,32 ± 0,65 auf einer 5-Punkte-Skala. Der visuelle Realismus wurde höher bewertet als der haptische. Die wahrgenommene Härte blieb eine wesentliche Einschränkung. Fragebögen erfassen erkennbare Merkmale und Rückmeldungen, mechanische Tests halten Instrument und Last konstant. [Bewertungen und Materialdiskussion](ref:R01)\n\nDasselbe Modell nach Arbeitsschritt bewerten. Beim Auffinden der Karies Randidentifikation, beim Anschneiden Kraftspitze und am Eintritt in die Pulpa Kraftänderung und Perforation erfassen. Mit visueller und haptischer Bewertung verknüpfen, um den Einfluss von Farbkontrast und präziserer Grenzerkennung zu prüfen. [Materialschichten und Bewertungsdimensionen](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "scanning",
+          "title": "Wie macht eine Scanüberlagerung Präparationsfehler sichtbar?",
+          "markdown": "In der Studie zur Zugangskavität wurden studentische Präparationen gescannt und mit einer Lehrpräparation überlagert. Im Haupttext gaben 14/19 Befragte dem Scan gegenüber direkter Betrachtung den Vorzug, und 15/19 fanden ihn zum Verständnis von Zugangsfehlern hilfreich. Für quantitative Messungen an unpräparierten Flächen registrieren, Mehr- und Minderabtrag erfassen und abgeschattete Bereiche kennzeichnen. [Überlagerung und Fragebogen](ref:R03)\n\nDie Arbeit analysierte je 44 Molaren- und Schneidezahnpräparationen. Das RMS gegenüber der Lehrreferenz betrug 0,269 ± 0,05 bzw. 0,279 ± 0,07 mm. Ähnliche Mittelwerte können unterschiedliche Fehlerorte verdecken, etwa verbliebenes Pulpadach oder Wandrillen. Mehrere Präparationen stammen von derselben Person. Für die Feedbackbewertung sind räumliche Maße und einzelne Rubrikkriterien abzugleichen. [Abstandsergebnisse und Abb. 4](ref:R03)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "task",
+          "title": "Wie beeinflusste die Aufgabenkomplexität die Bewertung der Brückenpräparation?",
+          "markdown": "Am Brückenkurs nahmen 116 Studierende im vierten Jahr teil. Der erste Kurs umfasste Kariesentfernung, Stumpfaufbau, Präparation und Provisorium. Spätere Kurse strichen einzelne Schritte. Die Haptikbewertungen in Abb. 4 sind zusammen mit den jeweiligen Aufgaben zu lesen. Ein Materialvergleich kann Präparationsziel und Fallvorgabe konstant halten. [Abb. 4 und Kursunterschiede](ref:R04)\n\nDie Haptikbewertung der Druckzähne stieg laut Abb. 4 vom ersten zum letzten Kurs von 42,48 auf 58,15 (p = 0,008). Auch der Lernprozess mit dem konventionellen Modell wurde im letzten Kurs höher bewertet. Kohorten- und Aufgabeneffekte sollten gemeinsam geprüft werden. Bei gleicher Schwierigkeit und zufällig zugeteiltem Modell lässt sich untersuchen, ob Haptik mit axialem Überabtrag, Einschubrichtung und Randunterbrechung zusammenhängt. [Kohorten-Boxplots und Paarvergleiche](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "repeatability",
+          "title": "Wie lassen sich Druck-, Scan- und Beurteilungsfehler separat bestimmen?",
+          "markdown": "Fertigung und Bewertung auf unterschiedlichen Wiederholungsebenen prüfen. Druckwiederholbarkeit nutzt mehrere Kopien desselben Entwurfs. Scanwiederholbarkeit nutzt erneute Aufnahmen derselben Kopie. Beurteilungsübereinstimmung nutzt wiederholte Befundung desselben Scans. Bei Schichten den Kraftverlauf am Übergang festhalten. Getrennte Fehlerquellen zeigen, ob Bewertungsunterschiede das Messrauschen übersteigen. [Bewertung des Schichtmodells](ref:R01) · [Digitale Präparationsbewertung](ref:R03)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Meglioli et al. (2023), Abb. 4. Scan und Netzvisualisierung einer Präparation.",
+          "interpretation": "A zeigt die digitale Erfassung des präparierten Zahns und B das Netz in MeshLab. Die Öffnung ist in beiden Ansichten zu lokalisieren. Betrag und Richtung einer Abweichung ergeben sich aus Registrierung und Abstandsvergleich mit der Referenzpräparation."
+        }
+      }
+    }
+  }
+}

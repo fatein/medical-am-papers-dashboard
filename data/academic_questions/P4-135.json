@@ -1,0 +1,233 @@
+{
+  "schema_version": 2,
+  "question_id": "P4-135",
+  "p": "P4",
+  "version": 2,
+  "updated_at": "2026-11-19",
+  "evidence_cutoff": "2026-11-19",
+  "related_paper_ids": [],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Dosimetric parameters and safety analysis of 3D-printing non-coplanar template-assisted interstitial brachytherapy for non-centrally recurrent cervical cancer",
+      "publisher": "Frontiers in Oncology",
+      "year": 2023,
+      "url": "https://doi.org/10.3389/fonc.2023.1174470",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "3D-printed brachytherapy in patients with cervical cancer: improving efficacy and safety outcomes",
+      "publisher": "Radiation Oncology",
+      "year": 2024,
+      "url": "https://doi.org/10.1186/s13014-024-02536-0",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Comparison of long-term prognoses between 3D-printed template-guided and conventional freehand interstitial brachytherapy for locally advanced cervical cancer: a single-center retrospective study",
+      "publisher": "Frontiers in Oncology",
+      "year": 2026,
+      "url": "https://doi.org/10.3389/fonc.2026.1766456",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R01",
+      "original_label": "Figure 1",
+      "license": "CC BY 4.0",
+      "image_url": "https://www.frontiersin.org/files/Articles/1174470/fonc-13-1174470-HTML/image_m/fonc-13-1174470-g001.jpg",
+      "source_url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2023.1174470/full#F1"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "打印近距离放疗模板的针道几何如何影响靶区和危及器官剂量？",
+      "direction": "个体化放疗施源、定位与剂量补偿器具",
+      "sections": [
+        {
+          "id": "geometry-transfer",
+          "title": "模板如何把设计针道转成实际轨迹",
+          "markdown": "非中心复发宫颈癌研究纳入 36 人，使用 CT 规划入口、角度和深度，并以选择性激光烧结制作 PA12 非共面模板。论文报告打印精度 ±0.1 mm。定位时，模板贴合、软组织变形和实际进针深度仍会改变针尖及驻留位置。打印精度描述器具成形，实际针道精度对应成像重建后的坐标差。 [原文图 1 和针道设计](ref:R01)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "paired-dvh",
+          "title": "针道落地后，同一靶区的哪些剂量量值变化",
+          "markdown": "同一研究平均用针 9.64 ± 2.69 根。表 2 的术前与术后计划中，高危临床靶体积 D90 为 616.97 ± 8.76 与 616.13 ± 8.84 cGy（P = 0.568），而 V150 从 59.42 ± 4.66% 升至 61.34 ± 3.67%（P = 0.002）。D90 在此样本中变化不明显，较高剂量覆盖体积却增加。图 2 的不同等剂量线说明为什么一个覆盖值无法描述整个高剂量区。 [原文图 2 与表 2](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "freehand-comparison",
+          "title": "模板与徒手的读数如何比较",
+          "markdown": "另一宫颈癌研究分析 49 人，比较打印引导和徒手置针结合 IMRT。打印方案根据 CT 预设入口、方向、深度与 0.5–2 cm 的针间距。表 2 报告打印组膀胱和直肠高剂量体积的剂量较低。图 1 的孔道布局体现了预设几何，但该比较同时包括施源器、选针和计划流程等变化，因此难以从组间剂量差估算单独的孔角效应。 [原文图 1 与表 2](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "followup-evidence",
+          "title": "剂量关联与长期随访的证据边界",
+          "markdown": "单中心回顾性研究对局部晚期宫颈癌的模板组和徒手组进行倾向评分匹配，得到 240 人。分别报告 3 年局部控制率 90.0% 和 78.3%，并在讨论中列出高危靶区平均 D90 的 EQD2 为 87.5 和 82.1 Gy。匹配平衡了纳入模型的基线特征。肿瘤几何、操作者与其他残余差异仍可能影响剂量和结局的关联，因而这些数据不能确定针道几何介导了多少局部控制差异。 [匹配队列与随访结果](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "oar-pair",
+          "title": "器官小体积剂量如何与靶区高剂量区并读",
+          "markdown": "非中心复发研究原文表 2 中，术前、术后膀胱 D2cm³ 中位数为 110.08 和 113.87 cGy，直肠为 276.51 和 266.91 cGy，比较的 P 值分别为 0.520 和 0.888。这些是单次计划的器官高剂量小体积读数。靶区 V150 仍可变化，因为靠近某一针道的剂量增量可能位于靶内。若要辨识局部剂量变化，需要保留器官热点在三维图像中的位置，以及其与相邻针道和源驻留位置的关系。 [原文表 2 的器官读数](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "fraction-alignment",
+          "title": "同一模板复用时，为什么要核对当次解剖",
+          "markdown": "复发队列用 0.625 mm 层厚 CT 进行术前定位。同一受试者多次采用相同模板，但每次按新的预计划实施。研究指出膀胱、直肠充盈能够移动靶区，针体在组织中也可能偏折。模板制造公差、配准变换误差和针体曲线分别出现在不同步骤。记录各分次的计划与实际轨迹，才能定位针尖偏差的来源和重新优化后的剩余差异。 [成像与分次重新预计划](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "dose-unit",
+          "title": "单次剂量和累计 EQD2 怎样区分",
+          "markdown": "复发队列的术前后表格使用 cGy，研究方案的近距离部分为 30–36 Gy、5–6 次。局部晚期队列报告的高危靶 D90 使用累计 EQD2，将既有不同分次的疗程按生物学模型换算。比较几何效应时，先用相同剂量阶段和定义比较前后，再保留累计量用于分析长期关联。以数值接近为依据直接合并单次和累计读数，会忽略照射次数、分次剂量以及患者是否接受过放疗。 [复发研究的剂量单位](ref:R01) · [局部晚期队列的累计剂量](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "measurement",
+          "title": "几何偏差如何与剂量变化建立对应",
+          "markdown": "可在同一次放置的配对图像上记录入口、针尖和针道方向偏差，并分别重算固定驻留时间与重新优化后的剂量。两套计算可区分几何变化和优化补偿的作用。按针道距靶边界及膀胱、直肠的距离，检查 D90、V150 和器官 D2cm³ 的变化。重复分次还需记录充盈状态与模板到位，避免把解剖改变归入打印误差。 [术前与术后重建](ref:R01) · [针道布局与器官剂量](ref:R02)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "非共面针道的规划和模板几何 (Wang et al., 2023)",
+          "interpretation": "这组图把影像内的针道规划与实体模板联系起来。可见的孔道排列体现设计，术后针体轨迹精度仍需重建检验。 [原文图 1](ref:R01)"
+        }
+      }
+    },
+    "en": {
+      "title": "How does needle-channel geometry in printed brachytherapy templates affect target and organ-at-risk dose?",
+      "direction": "Patient-specific radiotherapy applicators, positioning and dose compensation devices",
+      "sections": [
+        {
+          "id": "geometry-transfer",
+          "title": "Transferring channel geometry into actual needle paths",
+          "markdown": "A study of 36 patients with non-centrally recurrent cervical cancer planned entry points, angles and depths from CT, then fabricated non-coplanar PA12 templates by selective laser sintering. The paper reports print accuracy of ±0.1 mm. Template fit, soft-tissue deformation and actual insertion depth can still shift needle tips and dwell positions. Print accuracy characterizes device fabrication, whereas trajectory accuracy concerns coordinates reconstructed on imaging. [Original Figure 1 and channel design](ref:R01)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "paired-dvh",
+          "title": "Which dose measures change after needle placement",
+          "markdown": "The same study used 9.64 ± 2.69 needles on average. In Table 2, pre- and post-insertion plans had high-risk clinical target volume D90 of 616.97 ± 8.76 and 616.13 ± 8.84 cGy (P = 0.568), while V150 rose from 59.42 ± 4.66% to 61.34 ± 3.67% (P = 0.002). D90 changed little in this sample, while the higher-dose volume increased. The different isodose lines in Figure 2 show why one coverage value cannot describe the entire high-dose region. [Original Figure 2 and Table 2](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "freehand-comparison",
+          "title": "Comparing template-guided and freehand readouts",
+          "markdown": "A separate cervical cancer study analyzed 49 patients receiving IMRT with template-guided or freehand brachytherapy. The printed approach used CT to plan entry, direction, depth and 0.5–2 cm needle spacing. Table 2 reports lower doses to high-dose bladder and rectal volumes in the printed group. Figure 1 illustrates the predefined geometry, while the group comparison also includes differences in applicator, needle selection and planning workflow. It cannot isolate the effect of channel angle. [Original Figure 1 and Table 2](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "followup-evidence",
+          "title": "Dose associations and the limits of follow-up evidence",
+          "markdown": "A retrospective single-center study propensity-matched 240 patients with locally advanced cervical cancer treated with guided or freehand placement. Local control at 3 years was 90.0% versus 78.3%, and the discussion gives mean high-risk target D90 in EQD2 as 87.5 versus 82.1 Gy. Matching balanced the modeled baseline characteristics. Tumor geometry, operator and residual differences may still affect the relation between dose and outcome, so the share of the local-control difference mediated by channel geometry remains uncertain. [Matched cohort and follow-up outcomes](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "oar-pair",
+          "title": "Reading small-volume organ dose with target hot regions",
+          "markdown": "In Original Table 2 for non-central recurrence, the median pre/post D2cm³ was 110.08 and 113.87 cGy for bladder and 276.51 and 266.91 cGy for rectum (P = 0.520 and 0.888, respectively). These values describe small high-dose organ volumes in the compared plans. Target V150 can still change if a dose increment near a needle lies inside the target. Local changes are better understood when the organ hotspots and their relation to nearby needle paths and dwell positions are retained in three dimensions. [Organ readouts in Original Table 2](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "fraction-alignment",
+          "title": "Why check anatomy when reusing a template",
+          "markdown": "The recurrent cohort used 0.625 mm CT slices for pre-insertion localization. Each participant used the same template across sessions, with a new preplan for each. The study notes that bladder and rectal filling can move the target and that needles may deflect in tissue. Manufacturing tolerance, registration error and needle curvature arise at different steps. Preserving planned and actual trajectories by fraction can locate the source of tip deviations and any discrepancy that remains after reoptimization. [Imaging and fraction-specific replanning](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "dose-unit",
+          "title": "Distinguishing per-plan dose from cumulative EQD2",
+          "markdown": "The recurrent cohort reports pre/post values in cGy, and its brachytherapy component totaled 30–36 Gy over 5–6 sessions. The locally advanced cohort reports high-risk target D90 as cumulative EQD2, which converts different fractionation schedules with a radiobiological model. Geometry effects can first be compared at the same dose stage and definition, while cumulative values support long-term associations. Pooling single-plan and cumulative values on numerical appearance would overlook fraction count, dose per fraction and prior irradiation. [Dose units in the recurrence study](ref:R01) · [Cumulative dose in the locally advanced cohort](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "measurement",
+          "title": "Linking geometric deviations to dose changes",
+          "markdown": "Paired images from the same placement can record entry-point, tip and trajectory deviations. Dose can be recalculated with fixed dwell times and after reoptimization. The two calculations distinguish the geometric change from planning compensation. Relate changes in D90, V150 and organ D2cm³ to the channel's distance from target boundaries, bladder and rectum. Across fractions, organ filling and template seating also need tracking so that anatomical changes are assigned to their source. [Pre- and post-insertion reconstruction](ref:R01) · [Channel layout and organ dose](ref:R02)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Planning and template geometry for non-coplanar needles (Wang et al., 2023)",
+          "interpretation": "The panels connect image-based trajectory planning with the physical template. The visible channel layout shows the design, while post-insertion trajectory accuracy still requires reconstruction. [Original Figure 1](ref:R01)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie beeinflusst die Nadelkanalgeometrie gedruckter Brachytherapieschablonen die Dosis für Zielvolumen und Risikoorgane?",
+      "direction": "Patientenspezifische Strahlentherapie-Applikatoren, Lagerungs- und Dosiskompensationshilfen",
+      "sections": [
+        {
+          "id": "geometry-transfer",
+          "title": "Von der Kanalplanung zum tatsächlichen Nadelverlauf",
+          "markdown": "Eine Studie mit 36 Personen mit nicht zentral rezidiviertem Zervixkarzinom plante Eintrittspunkte, Winkel und Tiefen mittels CT. Nicht koplanare PA12-Schablonen wurden selektiv lasergesintert. Die Studie nennt eine Druckgenauigkeit von ±0,1 mm. Passform, Weichteilverformung und tatsächliche Einstichtiefe können Nadelspitzen und Verweilpositionen weiterhin verschieben. Die Druckgenauigkeit beschreibt die Fertigung, die Trajektoriengenauigkeit die in Bildern rekonstruierten Koordinaten. [Originalabbildung 1 und Kanalplanung](ref:R01)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "paired-dvh",
+          "title": "Welche Dosismaße ändern sich nach der Nadelplatzierung?",
+          "markdown": "In derselben Studie kamen im Mittel 9,64 ± 2,69 Nadeln zum Einsatz. Tabelle 2 zeigt für das klinische Hochrisiko-Zielvolumen vor und nach der Platzierung einen D90 von 616,97 ± 8,76 bzw. 616,13 ± 8,84 cGy (P = 0,568). V150 stieg von 59,42 ± 4,66% auf 61,34 ± 3,67% (P = 0,002). D90 änderte sich in dieser Stichprobe wenig, das höher dosierte Volumen nahm zu. Die unterschiedlichen Isodosen in Abbildung 2 zeigen, warum ein Abdeckungswert das gesamte Hochdosisgebiet nur teilweise beschreibt. [Originalabbildung 2 und Tabelle 2](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "freehand-comparison",
+          "title": "Messwerte bei Schablonenführung und Freihandtechnik vergleichen",
+          "markdown": "Eine weitere Zervixkarzinomstudie analysierte 49 Personen mit IMRT und schablonengeführter oder freihändiger Brachytherapie. Für die gedruckte Variante wurden Eintritt, Richtung, Tiefe und Nadelabstände von 0,5–2 cm anhand von CT geplant. Tabelle 2 zeigt in der Druckgruppe geringere Dosen in hoch belasteten Blasen- und Rektumvolumina. Abbildung 1 veranschaulicht die vorgegebene Geometrie. Applikator, Nadelauswahl und Planungsablauf unterschieden sich ebenfalls, sodass der Effekt des Kanalwinkels offenbleibt. [Originalabbildung 1 und Tabelle 2](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "followup-evidence",
+          "title": "Dosisassoziationen und Grenzen der Nachbeobachtung",
+          "markdown": "Eine retrospektive Einzelzentrumsstudie verglich nach Propensity-Score-Matching 240 Personen mit lokal fortgeschrittenem Zervixkarzinom und schablonengeführter oder freihändiger Technik. Die lokale Kontrolle nach 3 Jahren betrug 90,0% bzw. 78,3%. Die Diskussion nennt für den mittleren D90 des Hochrisiko-Zielvolumens EQD2-Werte von 87,5 bzw. 82,1 Gy. Das Matching glich die modellierten Ausgangsmerkmale an. Tumorgeometrie, Behandelnde und verbleibende Unterschiede können die Dosis-Ergebnis-Beziehung beeinflussen. Der durch die Kanalgeometrie vermittelte Anteil bleibt offen. [Gematchte Kohorte und Nachbeobachtung](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "oar-pair",
+          "title": "Kleinvolumige Organdosis gemeinsam mit Ziel-Hochdosisbereichen lesen",
+          "markdown": "In Originaltabelle 2 zum nicht zentralen Rezidiv betrug der mediane D2cm³ vor und nach Platzierung 110,08 bzw. 113,87 cGy für die Blase und 276,51 bzw. 266,91 cGy für das Rektum (P = 0,520 bzw. 0,888). Die Werte beschreiben kleine Organteilvolumina mit hoher Dosis in den verglichenen Plänen. V150 im Zielvolumen kann sich dennoch ändern, wenn die Dosiserhöhung nahe einer Nadel innerhalb des Ziels liegt. Zur räumlichen Einordnung sollten Organ-Hotspots mit benachbarten Nadelwegen und Verweilpositionen dargestellt werden. [Organmesswerte in Originaltabelle 2](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "fraction-alignment",
+          "title": "Warum die Anatomie bei Wiederverwendung geprüft wird",
+          "markdown": "Die Rezidivkohorte nutzte zur Lokalisierung vor der Platzierung CT-Schichten von 0,625 mm. Pro Person blieb die Schablone gleich, für jede Sitzung wurde neu vorgeplant. Die Studie nennt Zielverschiebungen durch Blasen- und Rektumfüllung und mögliche Nadelablenkung im Gewebe. Fertigungstoleranz, Registrierungsfehler und Nadelkrümmung entstehen in verschiedenen Schritten. Geplante und tatsächliche Verläufe je Fraktion helfen, die Herkunft von Spitzenabweichungen und nach Neuoptimierung verbleibende Differenzen zu bestimmen. [Bildgebung und neue Vorplanung je Fraktion](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "dose-unit",
+          "title": "Einzelplandosis und kumulative EQD2 unterscheiden",
+          "markdown": "Die Rezidivkohorte berichtet Vorher-Nachher-Werte in cGy. Ihre Brachytherapie umfasste 30–36 Gy auf 5–6 Sitzungen. Die Kohorte mit lokal fortgeschrittenem Karzinom nennt D90 des Hochrisiko-Zielvolumens als kumulative EQD2, die unterschiedliche Fraktionierung mittels eines strahlenbiologischen Modells umrechnet. Geometrieeffekte lassen sich zunächst innerhalb derselben Dosisstufe und Definition vergleichen. Kumulative Werte dienen langfristigen Assoziationen. Ein Zusammenfassen nach Zahlenähnlichkeit würde Fraktionszahl, Einzeldosis und Vorbestrahlung übergehen. [Dosiseinheiten der Rezidivstudie](ref:R01) · [Kumulative Dosis der lokal fortgeschrittenen Kohorte](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "measurement",
+          "title": "Geometrische Abweichungen mit Dosisänderungen verknüpfen",
+          "markdown": "Gepaarte Bilder derselben Platzierung können Abweichungen von Eintritt, Spitze und Nadelrichtung erfassen. Die Dosis lässt sich mit festen Verweilzeiten und nach erneuter Optimierung berechnen. Beide Rechnungen trennen Geometrieänderung und Planungskompensation. Änderungen von D90, V150 und Organ-D2cm³ lassen sich dem Abstand zu Zielvolumengrenzen, Blase und Rektum zuordnen. Über mehrere Fraktionen sind außerdem Organfüllung und Schablonensitz zu erfassen, um anatomische Änderungen richtig zuzuordnen. [Rekonstruktion vor und nach der Platzierung](ref:R01) · [Kanalanordnung und Organdosis](ref:R02)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Planung und Schablonengeometrie für nicht koplanare Nadeln (Wang et al., 2023)",
+          "interpretation": "Die Teilbilder verbinden bildbasierte Trajektorienplanung und reale Schablone. Die sichtbare Kanalanordnung zeigt die Konstruktion. Die Genauigkeit nach Platzierung erfordert eine Rekonstruktion. [Originalabbildung 1](ref:R01)"
+        }
+      }
+    }
+  }
+}

@@ -158,11 +158,9 @@ with st.sidebar:
                                                query=enterprise_query,statuses=chosen_statuses)
     elif page=='专利检索':
         patent_source, filtered_patents = patent_filters(ROOT)
-    elif page=='学术与企业联系':
-        st.caption('可按 P 层筛选 H01–H36 研究方向，再查看方向报告与研究问题。')
     elif page=='反馈汇总':
         st.caption('按反馈类型查看分类建议与报告评估。')
-    else:
+    elif page!='学术与企业联系':
         future=st.checkbox('包含后续补充数据（2026+）',key='include_future',
                            value=(ROOT/'data/additions.jsonl').exists())
         try:

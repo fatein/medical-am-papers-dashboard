@@ -1,0 +1,185 @@
+{
+  "schema_version": 2,
+  "question_id": "P1-117",
+  "p": "P1",
+  "version": 2,
+  "updated_at": "2026-11-19",
+  "evidence_cutoff": "2026-11-19",
+  "related_paper_ids": [
+    "doc_02916c09bcc43c0b424a"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "What is the Accuracy of PEEK Implants for Cranioplasty in Comparison to Their Patient Specific Surgical Plan?",
+      "publisher": "Journal of Oral and Maxillofacial Surgery",
+      "year": 2023,
+      "url": "https://doi.org/10.1016/j.joms.2022.09.004",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Early experience with patient-specific low-cost 3D-printed polymethylmethacrylate cranioplasty implants in a lower-middle-income-country: Technical note and economic analysis",
+      "publisher": "Surgical Neurology International",
+      "year": 2022,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9282781/",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Risk factors for periosteal fluid collection and surgical site infection based on cranioplasty material: Analysis of 434 cases",
+      "publisher": "Clinical Neurology and Neurosurgery",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/j.clineuro.2025.109308",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Outcome and risk factors of complications after cranioplasty with polyetheretherketone and titanium mesh: A single-center retrospective study",
+      "publisher": "Frontiers in Neurology",
+      "year": 2022,
+      "url": "https://www.frontiersin.org/articles/10.3389/fneur.2022.926436/full",
+      "kind": "paper"
+    },
+    {
+      "id": "R05",
+      "title": "Impact of PEEK implant surface design on postoperative complications in cranioplasty: a retrospective review",
+      "publisher": "Chinese Neurosurgical Journal",
+      "year": 2025,
+      "url": "https://doi.org/10.1186/s41016-025-00417-3",
+      "kind": "paper"
+    }
+  ],
+  "figures": [],
+  "locales": {
+    "zh": {
+      "title": "颅骨植入物的贴合精度能解释感染、积液或再手术吗？",
+      "direction": "颅骨个体化修复植入物",
+      "sections": [
+        {
+          "id": "linkage",
+          "title": "几何指标和临床终点如何配对？",
+          "markdown": "12 例 PEEK 定位研究以术后 CT 和设计的顶点 RMSE 为主要结果。PMMA 病例系列另报告外观满意度、影像结果及修订。要检验几何与事件的关系，两个维度须来自同一患者，分别保留局部边缘误差、术后时间和事件原因。单独报告两类结果只能提供不同维度的证据。 [术后几何评价](ref:R01) · [PMMA 临床病例系列](ref:R02)\n\n几何匹配可进一步拆为边缘错台、硬膜侧剩余空间以及固定松动。早期 CT 的局部偏差与中期变化应使用同一颅骨基准。外观评价可独立分级，并在相同时间点记录患者报告和观察者评定。PMMA 的眶缘修订提示，即使其他区域满意，局部轮廓偏差也可能决定外观终点。 [顶点位置方法](ref:R01) · [外观和修订](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "fluid",
+          "title": "骨膜周围积液和切口感染的分母",
+          "markdown": "434 例回顾性队列中，PEEK 39 例、PMMA 31 例、钛 25 例和自体骨 339 例。各组骨膜周围积液比例分别为 56.4%、51.6%、4.0% 和 16.8%。多变量模型中，材料与手术部位感染的差异未达显著（p = 0.915），积液与感染相关（比值比 10.93）。该队列按材料分组，积液不能直接归因于贴合偏差。 [434 例多变量分析](ref:R03)\n\n原文中以自体骨为参照，PEEK 和 PMMA 的积液调整后比值比分别为 6.47 和 3.78。两项估计共用自体骨参照组，不能将两数相除视为已检验的 PEEK 对 PMMA 结果。分流和脑外伤也独立关联积液。若要评价两种材料本身，需报告直接对比的区间，并记录植入设计、缺损范围及病因在两组是否可比。 [材料比较的参照和调整变量](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "location",
+          "title": "积液位置和观察窗口改变结果含义",
+          "markdown": "另一单中心队列纳入 211 人。表 3 中住院期硬膜外积液为钛网组 18.0%、PEEK 组 6.6%，皮下积液为 28.6% 和 19.8%。比较这张表与出院后结果，应先核对积液分区、扫描时点以及随访分母；同一病例可能同时有多个表现。 [并发症表 3 与出院后结果](ref:R04)\n\nYao 等表 3 的任一住院并发症比例为钛网 51.4% 和 PEEK 38.7%（p = 0.063），而颅内积气为 33.3% 和 6.6%。复合终点把积气、积液和感染等严重度与处理方式不同的事件放在一起。研究间复合终点差异可以来自扫描频率、症状阈值或构成比例，故比较时应同时查看事件分项。 [复合并发症与分项表 3](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "design",
+          "title": "相同 PEEK 材料内仍有设计差异",
+          "markdown": "同为 PEEK 的回顾性研究比较 45 件光滑和 49 件带孔植入物。伤口并发症比例为 17.8% 和 8.2%（p = 0.11）。图 1 展示的是表面设计分组，不能从分组推知边缘间隙。若将穿孔、固定方式及缺损位置放在同一模型中，就能分别估计它们与术后事件的关联。 [PEEK 表面设计图 1](ref:R05)\n\n同一 PEEK 队列中，伤口并发症和感染的未经调整比例恰好相同，但原文分别给出 p = 0.11 与 p = 0.22。两个检验对应不同终点，不能由表面相同百分比认定病例完全重合。创伤亚组的积液关联宜原样标注为交互结果，并以完整模型估计及各亚组事件数来判断精度。 [伤口结局与交互分析](ref:R05)",
+          "figure_ids": []
+        },
+        {
+          "id": "revision",
+          "title": "再手术为何应按原因分析？",
+          "markdown": "PMMA 系列中的眶缘修订针对外形，钛网与 PEEK 队列则显示感染与植入物失败相关。前瞻性记录可把外形修订、感染清创、取出或更换按原因编码。评估贴合和并发症关联时，记录缺损范围、既往分流和外伤，使用时间至事件的评估并单列失访。 [PMMA 眶缘修订病例](ref:R02) · [感染与失败分析](ref:R04) · [积液与分流因素](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "covariates",
+          "title": "怎样建立同一队列的几何与临床记录？",
+          "markdown": "可在病例表中预先指定因果时间顺序。术前栏包括缺损范围、病因、既往感染、头皮和分流状态。术中栏包括材料、表面设计、固定点、硬膜处理及回填。早期影像栏填缺损边缘间隙、局部错台和各分区积液。后期栏记感染、外观修订、取出时间及随访遗漏。分析材料对感染的总体关联与调整早期积液后的关联时，需注明两者所估计的路径不同。 [积液与感染的回归](ref:R03) · [并发症时间窗](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "en": {
+      "title": "Can cranial implant fit explain infection, fluid collections or reoperation?",
+      "direction": "Patient-specific cranial repair implants",
+      "sections": [
+        {
+          "id": "linkage",
+          "title": "How should geometric and clinical outcomes be linked?",
+          "markdown": "The 12-case PEEK placement study used vertex RMSE between postoperative CT and the plan. A PMMA case series separately reported cosmetic satisfaction, imaging and revision. Testing whether geometry predicts events requires both outcomes in the same individuals, with local rim deviation, time since surgery and cause of each event retained. [Postoperative geometry](ref:R01) · [Clinical PMMA series](ref:R02)\n\nSplit fit into rim step, residual space on the dural side and displacement at fixation. Use the same skull reference for early CT and intermediate changes. Collect patient and observer cosmetic scores at the same visits. The PMMA orbital-rim revision shows why local contour may determine appearance even when other regions appear satisfactory. [Vertex-position method](ref:R01) · [Appearance and revision](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "fluid",
+          "title": "Denominators for periosteal fluid and infection",
+          "markdown": "The 434-case retrospective cohort comprised 39 PEEK, 31 PMMA, 25 titanium and 339 autologous bone cases. Periosteal fluid collection occurred in 56.4%, 51.6%, 4.0% and 16.8%, respectively. The adjusted model found no significant difference in surgical site infection by material (p = 0.915), while fluid collection was associated with infection (odds ratio 10.93). Cohort groups were defined by material, leaving geometric causes of fluid collection unresolved. [Multivariable analysis of 434 cases](ref:R03)\n\nWith autologous bone as reference, adjusted odds ratios for fluid collection were 6.47 for PEEK and 3.78 for PMMA. These estimates share a reference. Their ratio does not provide a tested direct comparison. Shunting and brain trauma were also associated with fluid. A direct comparison requires its own interval and comparable implant design, defect extent and indication. [Reference and adjustment variables](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "location",
+          "title": "Fluid compartment and timing change the interpretation",
+          "markdown": "Another single-centre cohort included 211 patients. In Table 3, inpatient epidural fluid occurred in 18.0% of titanium-mesh and 6.6% of PEEK cases, while subcutaneous fluid occurred in 28.6% and 19.8%. Compare compartments, scan timing and follow-up denominators before comparing the inpatient table with post-discharge outcomes. One patient may contribute several findings. [Complications, Table 3 and post-discharge outcomes](ref:R04)\n\nIn Yao et al., Table 3 reports any inpatient complication in 51.4% of titanium-mesh and 38.7% of PEEK cases (p = 0.063), with pneumocephalus in 33.3% and 6.6%. The composite combines findings with different severity and management. Differences between studies can arise from scan frequency, symptom thresholds and the mix of components. Examine the individual events. [Composite and component outcomes, Table 3](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "design",
+          "title": "Implant design varies within PEEK",
+          "markdown": "Within PEEK, a retrospective study compared 45 smooth and 49 perforated implants. Wound complications occurred in 17.8% and 8.2% (p = 0.11). Figure 1 illustrates the surface groups. Rim clearance would require its own measurement. Model perforation, fixation and defect location as separate variables to estimate their individual associations. [PEEK surface designs, Fig. 1](ref:R05)\n\nThe unadjusted percentages for wound complications and infection coincided, while the paper reports p = 0.11 and p = 0.22 for the separate outcomes. Identical percentages do not establish that the same patients had each event. Report the trauma subgroup fluid finding as an interaction and inspect the full estimate and subgroup event counts for precision. [Wound outcomes and interaction analysis](ref:R05)",
+          "figure_ids": []
+        },
+        {
+          "id": "revision",
+          "title": "Why should reoperations be analysed by indication?",
+          "markdown": "The orbital-rim revision in the PMMA series addressed appearance, while the titanium-mesh and PEEK cohort linked infection with implant failure. Code contour revision, infection debridement, removal and replacement by indication. When testing the relation between fit and complications, record defect extent, prior shunting and trauma, analyse time to event, and account for incomplete follow-up. [PMMA orbital-rim revision](ref:R02) · [Infection and implant failure](ref:R04) · [Fluid collection and shunting](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "covariates",
+          "title": "How can one cohort link geometry with clinical events?",
+          "markdown": "Prespecify temporal ordering in the case record. Baseline fields include defect extent, indication, prior infection, scalp status and shunting. Intraoperative fields include material, surface design, fixation, dural handling and fill. Early CT records rim gap, local step and fluid by compartment. Follow-up records infection, cosmetic revision, removal and missing visits. State the distinct pathways estimated before and after adding early fluid to the model. [Regression of fluid and infection](ref:R03) · [Complication windows](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "de": {
+      "title": "Kann die Passung eines Schädelimplantats Infektion, Flüssigkeitsansammlung oder Reoperation erklären?",
+      "direction": "Patientenspezifische Implantate für die Schädelrekonstruktion",
+      "sections": [
+        {
+          "id": "linkage",
+          "title": "Wie sind Geometriemaße und klinische Endpunkte zu verknüpfen?",
+          "markdown": "In der PEEK-Positionsstudie mit 12 Fällen war der RMSE der Netzpunkte zwischen postoperativem CT und Planung der Hauptendpunkt. Die PMMA-Serie berichtete Aussehen, Bildgebung und Revisionen. Für einen Zusammenhang müssen Randabweichung, Zeit seit Operation und Ereignisursache pro Person gemeinsam vorliegen. [Postoperative Geometrie](ref:R01) · [Klinische PMMA-Serie](ref:R02)\n\nPassung kann als Randstufe, verbleibender Raum auf Duraseite und Verschiebung an der Fixation erfasst werden. Frühes CT und spätere Veränderung verwenden dieselbe Schädelreferenz. Kosmetische Einschätzungen von Betroffenen und Beobachtenden zu gleichen Zeitpunkten einholen. Die PMMA-Revision am Orbitarand zeigt, dass eine lokale Kontur für das Aussehen entscheidend sein kann. [Methode der Netzpunkte](ref:R01) · [Aussehen und Revision](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "fluid",
+          "title": "Nenner für periostale Flüssigkeit und Infektionen",
+          "markdown": "Die retrospektive Kohorte mit 434 Fällen umfasste 39 PEEK-, 31 PMMA-, 25 Titan- und 339 Eigenknochenfälle. Periostale Flüssigkeitsansammlungen traten bei 56,4 %, 51,6 %, 4,0 % bzw. 16,8 % auf. Nach Adjustierung zeigte sich kein signifikanter Materialunterschied bei Wundinfektionen (p = 0,915), während Flüssigkeit mit Infektion assoziiert war (Odds Ratio 10,93). Die Materialgruppen geben keinen Aufschluss über geometrische Ursachen der Flüssigkeitsansammlung. [Multivariable Analyse von 434 Fällen](ref:R03)\n\nMit Eigenknochen als Referenz lagen die adjustierten Odds Ratios für Flüssigkeit bei 6,47 für PEEK und 3,78 für PMMA. Beide Werte nutzen dieselbe Referenz. Ihr Quotient ersetzt keinen getesteten Direktvergleich. Auch Shunt und Hirntrauma waren assoziiert. Für den Direktvergleich braucht es ein eigenes Intervall sowie Angaben zur Vergleichbarkeit von Design, Defektausmaß und Indikation. [Referenz- und Adjustierungsvariablen](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "location",
+          "title": "Flüssigkeitskompartiment und Beobachtungsfenster beeinflussen die Interpretation",
+          "markdown": "Eine weitere monozentrische Kohorte umfasste 211 Personen. In Tabelle 3 hatten stationär 18,0 % der Titan- und 6,6 % der PEEK-Gruppe einen epiduralen Erguss. Subkutane Ergüsse lagen bei 28,6 % bzw. 19,8 %. Vor dem Vergleich mit der Zeit nach Entlassung sind Kompartiment, CT-Zeitpunkt und Nenner zu prüfen. Eine Person kann mehrere Befunde beitragen. [Komplikationen, Tabelle 3 und Befunde nach Entlassung](ref:R04)\n\nBei Yao et al. meldet Tabelle 3 irgendeine stationäre Komplikation bei 51,4 % mit Titannetz und 38,7 % mit PEEK (p = 0,063). Für Pneumozephalus sind es 33,3 % und 6,6 %. Der Sammelendpunkt umfasst Ereignisse mit unterschiedlichem Schweregrad und Behandlungsbedarf. CT-Häufigkeit, Symptomschwellen und Zusammensetzung können Studienunterschiede erklären. Einzelereignisse getrennt prüfen. [Sammelendpunkt und Einzelereignisse, Tabelle 3](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "design",
+          "title": "Auch PEEK-Implantate unterscheiden sich im Design",
+          "markdown": "Eine retrospektive PEEK-Studie verglich 45 glatte und 49 perforierte Implantate. Wundkomplikationen traten bei 17,8 % bzw. 8,2 % auf (p = 0,11). Abb. 1 zeigt die Oberflächengruppen. Der Randabstand benötigt eine eigene Messung. Perforation, Fixierung und Defektlage lassen sich als getrennte Variablen modellieren. [PEEK-Oberflächen, Abb. 1](ref:R05)\n\nDie unadjustierten Prozentsätze für Wundkomplikationen und Infektion waren gleich, doch der Artikel berichtet p = 0,11 bzw. p = 0,22 für die getrennten Endpunkte. Gleiche Prozentsätze belegen keine identischen Fälle. Den Flüssigkeitsbefund der Traumagruppe als Interaktion kennzeichnen und Präzision anhand des vollständigen Modells und der Ereigniszahlen prüfen. [Wundendpunkte und Interaktionsanalyse](ref:R05)",
+          "figure_ids": []
+        },
+        {
+          "id": "revision",
+          "title": "Warum sollten Reoperationen nach Indikation ausgewertet werden?",
+          "markdown": "Die Revision am Orbitarand in der PMMA-Serie betraf die Kontur, während die Kohorte mit Titannetz und PEEK Infektionen mit Implantatversagen verknüpfte. Konturrevision, Infektionsdébridement, Entfernung und Ersatz nach Indikation kodieren. Für die Analyse von Passung und Komplikationen Defektgröße, vorausgegangene Shunt-Anlage und Trauma erfassen, die Zeit bis zum Ereignis analysieren und fehlende Nachbeobachtungen ausweisen. [Orbitarandrevision bei PMMA](ref:R02) · [Infektion und Implantatversagen](ref:R04) · [Flüssigkeitsansammlung und Shunt](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "covariates",
+          "title": "Wie lassen sich Geometrie und Ereignisse in einer Kohorte verknüpfen?",
+          "markdown": "Die zeitliche Reihenfolge vorab im Datensatz festlegen. Ausgangsbefunde umfassen Defektausmaß, Ursache, frühere Infektion, Kopfhaut und Shunt. Intraoperativ Material, Oberfläche, Fixierung, Durabehandlung und Auffüllung erfassen. Frühes CT dokumentiert Randspalt, lokale Stufe und Flüssigkeit nach Kompartiment. Nachbeobachtung erfasst Infektion, Konturrevision, Entfernung und fehlende Termine. Modelle vor und nach Aufnahme früher Flüssigkeit beschreiben unterschiedliche Pfade. [Regression zu Flüssigkeit und Infektion](ref:R03) · [Zeitfenster der Komplikationen](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    }
+  }
+}

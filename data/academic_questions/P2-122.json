@@ -1,0 +1,159 @@
+{
+  "schema_version": 2,
+  "question_id": "P2-122",
+  "p": "P2",
+  "version": 2,
+  "updated_at": "2026-11-19",
+  "evidence_cutoff": "2026-11-19",
+  "related_paper_ids": [
+    "KB2026B52639121A73"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Initial Cytotoxicity of Additively and Subtractively Manufactured Resin-Based Materials for Interim Fixed Dental Prostheses: An In Vitro Study",
+      "publisher": "Clinical and Experimental Dental Research",
+      "year": 2026,
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/cre2.70413",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Biocompatibility of 3D-printed vs. thermoformed and heat-cured intraoral appliances",
+      "publisher": "Frontiers in Bioengineering and Biotechnology",
+      "year": 2024,
+      "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1453888/full",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Leaching from a 3D-printed aligner resin",
+      "publisher": "European Journal of Orthodontics",
+      "year": 2023,
+      "url": "https://academic.oup.com/ejo/article/45/3/244/6706916",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Assessment of urethane dimethacrylate salivary leachates in patients (aged 18- 30 years) wearing Graphy™ Tera Harz TC-85 direct 3D-printed aligners at different intraoral time intervals: A prospective study",
+      "publisher": "International Orthodontics",
+      "year": 2026,
+      "url": "https://www.sciencedirect.com/science/article/pii/S1761722726000343",
+      "kind": "paper"
+    }
+  ],
+  "figures": [],
+  "locales": {
+    "zh": {
+      "title": "浸出液与直接接触试验如何评价打印牙科树脂的细胞相容性？",
+      "direction": "牙科树脂的生物相容性与微生物附着",
+      "sections": [
+        {
+          "id": "exposure",
+          "title": "浸出液与直接接触的剂量含义",
+          "markdown": "浸出试验将固体释放到介质中的成分与细胞接触。直接接触试验还纳入固体表面邻近区域的暴露，以及细胞黏附、脱落和局部生长差异。Alegre 等对临时固定修复树脂设置了这两种模型，使用同一 L929 细胞系和 72 h 暴露时长。结晶紫信号反映试验结束时保留的贴壁细胞生物量，因此直接接触下信号降低可由多种过程叠加。\n\n把两种试验并用时，需要分别指定制品状态与生物测量。试片表面积与浸出液体积共同决定同一释放量产生的浓度，介质与浸出时长影响哪些成分进入液相。直接接触下，固体尺寸与放置位置会决定受接触影响的细胞比例。若两个试验都使用结晶紫读数，可把两者视为相同检测终点下的不同暴露模型。若一项试验用细胞染色，另一项用代谢探针，暴露模型与检测机制也同时改变。 [原文图 3 与测量原理](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "route",
+          "title": "临时修复材料的两种读数",
+          "markdown": "三种打印树脂在浸出与直接接触试验中的平均相对细胞生存率分别为 65% 和 48%，三种切削 PMMA 基材料为 87% 和 89%。比较所检验的是特定配方与制造方式的组合，两个因素在组间同时变化。作者还报告两种试验均没有加入阳性参比材料，这限制了试验灵敏度的验证。\n\n原文表 2 按每种材料 18 个独立试片计算描述统计。浸出试验中，对照、切削组和打印组的汇总平均计数分别为 1.345、1.171 和 0.879 × 10⁴ 个细胞。试片的技术读数先平均，统计单位为试片。这种设计给出配方组之间的初始响应差异。跨批次比较还需区分同批复测与独立制造的试片，并保留相对对照的百分比和原始信号或折算计数。 [原文图 5 与分组结果](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "readout",
+          "title": "人牙龈成纤维细胞的代谢与细胞死亡",
+          "markdown": "口内器械材料比较使用人牙龈成纤维细胞。24 h 浸出液暴露后，所有测试组的代谢信号均高于未处理对照的 80%。流式细胞术则在两种经紫外处理的材料浸出物组报告活细胞比例 52%（热固化 Villacryl）和 64%（打印 Dental LT Clear）。前者按对照标准化代谢读数，后者统计检测到的细胞状态。两者的量纲和分母均不同。\n\n直接接触的结果还显示这种终点差异。在 72 h，化学消毒后的 Villacryl 组 MTT 代谢读数为对照的 76%，紫外处理 Dental LT Clear 组为 91%。若改看近试片处的细胞迁移，72 h 空隙闭合度在 Villacryl 或 Duran+Durasplint 组约为 80–90%，而紫外处理 Dental LT Clear 组约为 27%。同一材料对不同测量的表现需要逐项对应到表面处理条件，尤其是分别标明相对对照的代谢活力、以阳性对照为分母的 LDH 和细胞层空隙闭合百分比。 [原文图 3、图 4 与图 7](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "chemistry",
+          "title": "化学定量与转化程度",
+          "markdown": "Willi 等对打印矫治器的 TC85A 树脂做红外光谱分析，并以液相色谱串联质谱定量水浸出物。一周后水中测得的 UDMA 浓度为 29–96 μg/L，检测对象中的 BPA 未检出。光谱测量的是聚合相关双键转化，液相分析测量指定化合物进入介质的浓度，两个终点可用于判断同一材料不同批次或试样的化学表现。\n\n较高的整体转化率可以与可定量的单体释放并存。光谱对样品所测区域的双键给出平均变化，色谱则将分析限定到设定的目标物，因此两类结果适合与同批制品的独立浸出读数配对。假如研究比较的是打印后处理，应将含同一配方的对照与不同配方的横向比较分开，并在记录中对应固化、表面精整和测量时点。 [原文化学分析与浓度表](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "saliva",
+          "title": "水浸出量与唾液中可测暴露",
+          "markdown": "使用 TC-85 的单组前瞻性研究报告了唾液 UDMA 平均浓度，佩戴后 24 h、7 d 和 14 d 分别为 4.04、5.49 和 7.27 μg/L。唾液读数受口内流动和取样时点影响，水浸液读数描述特定浸泡条件下的累积浓度。若用两类数据解释细胞终点，应明确试样与材料状态、检出限、浓度时间序列，以及生物测定对应的暴露时间。\n\n要检验释放物是否解释某个细胞效应，可以对同一批试片同时测定浸出液定量谱和细胞反应，并区分单体浓度与混合物响应。将暴露按相同试样面积与时间归一化有助于比较不同厚度试样。唾液中的测值描述取样时的口内浓度，组织表面接触浓度与随时间累积的摄入量还需要各自的测量框架。 [水浸出试验](ref:R03) · [唾液前瞻性研究](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "en": {
+      "title": "How do extract and direct-contact tests assess the cytocompatibility of printed dental resins?",
+      "direction": "Biocompatibility and microbial adhesion of dental resins",
+      "sections": [
+        {
+          "id": "exposure",
+          "title": "Exposure in extract and direct-contact assays",
+          "markdown": "The extract assay exposes cells to compounds released into a medium. Direct contact also captures exposure near the solid surface and differences in cell attachment, detachment, and local growth. Alegre and colleagues used both models for interim fixed prosthesis resins, with the same L929 cell line and 72 h exposure. The crystal violet signal represents adherent cell biomass remaining at the end of the assay, so several processes can contribute to a decreased signal in direct contact.\n\nA joint comparison should specify the finished material state and biological readout separately. Specimen area and extract volume determine the concentration associated with a given released mass, while medium and extraction time affect which compounds enter solution. With direct contact, the size and position of the solid determine what fraction of the monolayer encounters its immediate surroundings. Using crystal violet in both arms holds the endpoint fixed. Using adherent-cell staining in one arm and a metabolic probe in the other changes both exposure and assay mechanism. [Original Fig. 3 and assay principle](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "route",
+          "title": "Paired readouts for interim restoration materials",
+          "markdown": "The three printed resins showed mean relative cell survival of 65% with extracts and 48% in direct contact. The three milled PMMA-based materials yielded 87% and 89%, respectively. Formulation and manufacturing route changed together across groups, so the comparison applies to the tested combinations. The authors also report that neither assay included a positive reference material, which limits verification of assay sensitivity.\n\nOriginal Table 2 presents descriptive statistics for 18 independent specimens per material. Mean counts pooled by control, milled and printed groups were 1.345, 1.171 and 0.879 × 10⁴ cells in the extract assay. Technical readings were averaged within specimens before analysis. The design estimates initial response differences among formulations. Comparisons across batches can distinguish repeated measurements within a batch from independently manufactured specimens and report control-relative percentages alongside the original signal or converted counts. [Original Fig. 5 and group results](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "readout",
+          "title": "Metabolism and death in human gingival fibroblasts",
+          "markdown": "A study of intraoral appliance materials used human gingival fibroblasts. After 24 h of extract exposure, metabolic signals remained above 80% of the untreated control in all groups. In flow cytometry, two extracts from UV-treated materials gave live-cell fractions of 52% for heat-cured Villacryl and 64% for printed Dental LT Clear. One measurement normalizes metabolic activity to a control. The other counts cells by state, with a different denominator and scale.\n\nDirect-contact results also illustrate endpoint dependence. At 72 h, MTT metabolism was 76% of control for chemically disinfected Villacryl and 91% for UV-treated Dental LT Clear. In a nearby-cell migration assay, 72 h gap closure was roughly 80–90% for Villacryl or Duran+Durasplint and about 27% for UV-treated Dental LT Clear. Each endpoint should be paired with its surface treatment and denominator: control-relative metabolism, LDH relative to a positive control, or percentage closure of the cell-layer gap. [Original Figs. 3, 4 and 7](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "chemistry",
+          "title": "Chemical quantification and degree of conversion",
+          "markdown": "Willi and colleagues used infrared spectroscopy on TC85A aligner resin and liquid chromatography–tandem mass spectrometry on water extracts. Measured UDMA concentrations after one week were 29–96 μg/L. BPA was among the target compounds and was undetected. Spectroscopy measures polymerization-related double-bond conversion, while liquid-phase analysis quantifies selected compounds in the medium. The two endpoints describe complementary properties across specimens or batches.\n\nHigh overall conversion can coexist with quantifiable monomer release. Spectroscopy averages the double-bond changes in the sampled material region, while chromatography quantifies the specified analytes. These are complementary paired measurements for a batch of finished appliances. A post-processing study can compare specimens from the same formulation independently from cross-formulation comparisons and link each result to curing, surface finishing and measurement time. [Original chemical analysis and concentration table](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "saliva",
+          "title": "Water extraction and measurable salivary exposure",
+          "markdown": "A single-arm prospective study using TC-85 reported mean salivary UDMA concentrations of 4.04, 5.49 and 7.27 μg/L after 24 h, 7 d and 14 d of aligner wear, respectively. Salivary measurements reflect oral fluid turnover and sampling time. The water extract measures accumulated concentration under specified immersion conditions. Relating either measurement to a cellular endpoint requires the specimen and material state, detection limit, concentration–time profile, and matching biological exposure duration.\n\nTo test whether leachates account for a cellular effect, the same specimen batch can support quantitative extract profiles and cell-response measurements, separating an individual monomer concentration from a mixture-level response. Consistent normalization by specimen area and time aids comparison across thicknesses. Salivary values describe concentrations at sampling. Tissue-surface concentrations and cumulative intake require their own measurement frameworks. [Water extraction study](ref:R03) · [Prospective salivary study](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "de": {
+      "title": "Wie erfassen Extrakt- und Direktkontaktversuche die Zytokompatibilität gedruckter Dentalharze?",
+      "direction": "Biokompatibilität und mikrobielle Anhaftung dentaler Harze",
+      "sections": [
+        {
+          "id": "exposure",
+          "title": "Exposition im Extrakt- und Direktkontaktversuch",
+          "markdown": "Im Extraktversuch werden Zellen den in das Medium freigesetzten Stoffen ausgesetzt. Der Direktkontakt erfasst zudem die Exposition an der Festkörperoberfläche sowie Unterschiede in Zelladhäsion, Ablösung und lokalem Wachstum. Alegre und Kollegen verwendeten beide Modelle für provisorische festsitzende Restaurationen mit derselben L929-Zelllinie und einer Expositionsdauer von 72 h. Das Kristallviolettsignal erfasst die am Versuchsende verbliebene adhärente Zellbiomasse und kann bei Direktkontakt aus mehreren Gründen sinken.\n\nBei einem gemeinsamen Vergleich sind Fertigzustand und biologisches Messsignal getrennt anzugeben. Probenfläche und Extraktvolumen bestimmen die Konzentration bei gleicher freigesetzter Masse. Medium und Extraktionsdauer beeinflussen, welche Stoffe in Lösung gehen. Beim Direktkontakt bestimmen Größe und Position des Festkörpers den betroffenen Anteil der Zellschicht. Kristallviolett in beiden Armen hält den Endpunkt konstant. Adhäsionsfärbung und Stoffwechselprobe in unterschiedlichen Armen ändern sowohl Exposition als auch Messmechanismus. [Originalabb. 3 und Messprinzip](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "route",
+          "title": "Zwei Messgrößen bei provisorischen Restaurationsmaterialien",
+          "markdown": "Bei den drei gedruckten Harzen lag das mittlere relative Zellüberleben bei 65% im Extraktversuch und bei 48% im Direktkontakt. Die drei gefrästen PMMA-basierten Materialien erreichten 87% beziehungsweise 89%. Rezeptur und Fertigungsweg änderten sich gemeinsam, sodass der Vergleich für die geprüften Kombinationen gilt. Laut den Autoren enthielt keiner der beiden Tests ein positives Referenzmaterial. Damit bleibt die Empfindlichkeit der Tests eingeschränkt überprüfbar.\n\nOriginaltabelle 2 enthält die Deskription für 18 unabhängige Proben je Material. Die gepoolten Mittelwerte für Kontrolle, Fräs- und Druckgruppe betrugen im Extraktversuch 1,345, 1,171 und 0,879 × 10⁴ Zellen. Technische Wiederholungen wurden vor der Analyse pro Probe gemittelt. Der Aufbau schätzt anfängliche Reaktionsunterschiede zwischen Rezepturen. Chargenvergleiche können Wiederholungsmessungen derselben Charge von unabhängig gefertigten Proben trennen und kontrollbezogene Prozente neben Rohsignal oder umgerechneten Zellzahlen angeben. [Originalabb. 5 und Gruppenergebnisse](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "readout",
+          "title": "Stoffwechsel und Zelltod bei humanen Gingivafibroblasten",
+          "markdown": "In einer Studie zu intraoralen Apparaturen wurden humane Gingivafibroblasten untersucht. Nach 24 h Extraktexposition lagen die Stoffwechselsignale aller Gruppen über 80% der unbehandelten Kontrolle. Die Durchflusszytometrie ergab für zwei Extrakte UV-behandelter Materialien Lebendzellanteile von 52% bei heißpolymerisiertem Villacryl und 64% bei gedrucktem Dental LT Clear. Ein Test normiert den Stoffwechsel auf die Kontrolle. Der andere erfasst Zellen nach ihrem Zustand und verwendet eine andere Bezugsgröße und Skala.\n\nAuch die Direktkontaktbefunde zeigen die Endpunktabhängigkeit. Nach 72 h lag der MTT-Stoffwechsel bei chemisch desinfiziertem Villacryl bei 76% und bei UV-behandeltem Dental LT Clear bei 91% der Kontrolle. Im Migrationstest nahe der Probe betrug der Spaltschluss nach 72 h für Villacryl oder Duran+Durasplint etwa 80–90% und für UV-behandeltes Dental LT Clear rund 27%. Jeder Endpunkt braucht die Zuordnung zu Oberflächenbehandlung und Bezugsgröße, etwa Stoffwechsel relativ zur Kontrolle, LDH relativ zur Positivkontrolle oder prozentualer Spaltschluss der Zellschicht. [Originalabb. 3, 4 und 7](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "chemistry",
+          "title": "Chemische Quantifizierung und Konversionsgrad",
+          "markdown": "Willi und Kollegen untersuchten das Alignerharz TC85A mittels Infrarotspektroskopie und Wasserextrakte mittels Flüssigchromatographie mit Tandem-Massenspektrometrie. Nach einer Woche lagen die gemessenen UDMA-Konzentrationen bei 29–96 μg/L. BPA gehörte zu den Zielsubstanzen und blieb unter der Nachweisgrenze. Die Spektroskopie erfasst den polymerisationsbedingten Umsatz von Doppelbindungen, während die Flüssiganalytik ausgewählte Verbindungen im Medium quantifiziert. Die Messgrößen beschreiben sich ergänzende Eigenschaften von Proben oder Chargen.\n\nEin hoher Gesamtkonversionsgrad kann mit quantifizierbarer Monomerfreisetzung einhergehen. Die Spektroskopie mittelt Doppelbindungsänderungen im erfassten Materialbereich, die Chromatographie quantifiziert die festgelegten Zielsubstanzen. Beide Messungen ergänzen einander bei derselben Charge fertiger Apparaturen. Bei einer Nachbearbeitungsstudie lassen sich Vergleiche innerhalb einer Rezeptur von solchen zwischen Rezepturen trennen und eindeutig Aushärtung, Oberflächenfinish und Messzeit zuordnen. [Originalarbeit mit chemischer Analytik und Konzentrationstabelle](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "saliva",
+          "title": "Wasserextraktion und messbare Exposition im Speichel",
+          "markdown": "Eine einarmige prospektive Studie zu TC-85 berichtete mittlere UDMA-Konzentrationen im Speichel von 4,04, 5,49 und 7,27 μg/L nach 24 h, 7 d und 14 d Tragezeit. Speichelwerte hängen vom Flüssigkeitsaustausch im Mund und vom Probenzeitpunkt ab. Der Wasserextrakt erfasst die unter definierten Lagerungsbedingungen angesammelte Konzentration. Für die Verknüpfung mit einem zellulären Endpunkt sind Proben- und Materialzustand, Nachweisgrenze, Konzentrationsverlauf und biologische Expositionsdauer erforderlich.\n\nUm die Erklärung eines Zelleffekts durch Freisetzung zu prüfen, lassen sich quantitative Extraktprofile und Zellreaktionen an derselben Probencharge erfassen. Einzelmonomerkonzentrationen und die Reaktion auf das Gemisch sind dabei unterschiedliche Größen. Einheitliche Normierung auf Probenfläche und Zeit unterstützt Dickenvergleiche. Speichelwerte beschreiben die Konzentration bei Probenahme. Exposition an der Gewebeoberfläche und kumulative Aufnahme benötigen eigene Messansätze. [Wasserextraktionsstudie](ref:R03) · [Prospektive Speichelstudie](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    }
+  }
+}

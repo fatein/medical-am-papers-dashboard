@@ -178,10 +178,12 @@ def public_package_files(root: Path) -> frozenset[str]:
     """Allow only validated released reports and the assets they actually reference."""
     from dashboard.academic_questions import load_released_reports
     files = set(PUBLIC_PACKAGE_FILES)
-    from dashboard.cross_data import H36_IDS, load_direction_classification
+    from dashboard.cross_data import ACADEMIC_ADDITIONS_PATH, H36_IDS, load_direction_classification
     if load_direction_classification(Path(root)):
         files.add('data/direction_reports/classification.json')
         files.update(f'data/direction_reports/h36/{rid}.json' for rid in H36_IDS)
+    if (Path(root)/ACADEMIC_ADDITIONS_PATH).is_file():
+        files.add(ACADEMIC_ADDITIONS_PATH)
     library = load_released_reports(Path(root))
     if library is not None:
         files.add('data/academic_questions/release.json')
@@ -286,6 +288,16 @@ def validate_public_package(root: Path) -> dict:
                     for e in cross['enterprise_evidence']) or
             not all(normalize_public_url(c['url']) for c in cross['contexts'])):
         raise ValueError('交叉分析关联或来源无效。')
+    from dashboard.cross_data import load_academic_additions, load_cross_analysis
+    supplement = load_academic_additions(root)
+    new_ids = {q['question_id'] for q in supplement['questions']}
+    public_ids = set(combined.document_id)
+    if (len(new_ids) != len(supplement['questions']) or new_ids & ids or
+            not all(p['question_id'] in new_ids and p['id'] in public_ids
+                    for p in supplement['papers']) or _contains_private_path(supplement)):
+        raise ValueError('Invalid supplementary research questions or paper links.')
+    cross = load_cross_analysis(root)
+    ids |= new_ids
     from dashboard.report_data import load_question_reports, validate_question_reports
     reports = load_question_reports(root)
     if reports.get('schema_version') == 2:

@@ -1,10 +1,11 @@
 import re
+from collections import Counter
 from pathlib import Path
 
 from streamlit.testing.v1 import AppTest
 
 from dashboard.cross_data import (
-    CROSS_CUTTING, H36_IDS, load_cross_analysis, load_direction_classification,
+    CROSS_CUTTING, H36_IDS, load_academic_additions, load_cross_analysis, load_direction_classification,
     load_questions_for_navigation, question_direction_map,
 )
 from dashboard.direction_reports import (
@@ -46,13 +47,26 @@ def test_every_previous_question_retains_one_destination():
     data = load_questions_for_navigation(original, ROOT)
     classification = load_direction_classification(ROOT)
     parents = question_direction_map(classification)
-    assert len(parents) == len(data['questions']) == 113
-    assert sum(v != CROSS_CUTTING for v in parents.values()) == 108
+    assert len(parents) == len(data['questions']) == 135
+    assert sum(v != CROSS_CUTTING for v in parents.values()) == 130
     assert data['papers'] == original['papers']
+    assert all(group['questions'] for group in classification['directions'])
     assert data['enterprise_evidence'] == original['enterprise_evidence']
     for rid in H36_IDS:
         group = next(d for d in classification['directions'] if d['id'] == rid)
         assert {q['id'] for q in themed_questions(ROOT, rid, 'de')} == set(group['questions'] + group['related'])
+
+
+def test_new_questions_cover_each_previously_empty_direction():
+    classification = load_direction_classification(ROOT)
+    destinations = question_direction_map(classification)
+    additions = load_academic_additions(ROOT)
+    covered = Counter(destinations[q['question_id']] for q in additions['questions'])
+    assert len(covered) == 11
+    assert set(covered.values()) == {2}
+    for group in classification['directions']:
+        if group['id'] in covered:
+            assert len(group['questions']) == covered[group['id']]
 
 
 def test_h36_public_question_and_direction_round_trip():
@@ -61,6 +75,8 @@ def test_h36_public_question_and_direction_round_trip():
     app.session_state['page'] = '学术与企业联系'
     app.run()
     assert not app.exception and not app.error
+    assert not app.metric and not app.dataframe and not app.get('plotly_chart')
+    assert not any('cross_p__' in (widget.key or '') for widget in app.selectbox)
     app.selectbox(key='cross_direction__en').set_value('H01').run()
     assert not app.exception and not app.error
     question = app.selectbox(key='cross_question__en').value
@@ -84,8 +100,16 @@ def test_h36_public_question_and_direction_round_trip():
     app.selectbox(key='cross_direction__de').set_value('H31').run()
     assert not app.exception and not app.error
     assert app.button(key='open_direction_report')
-    assert len([w for w in app.selectbox if (w.key or '').startswith('cross_question__')]) == 0
-    app.button(key='open_cross_cutting').click().run()
+    new_question = app.selectbox(key='cross_question__de').value
+    assert new_question in {'P2-126', 'P2-127'}
+    app.button(key=f'open_question_report_{new_question}').click().run()
+    assert not app.exception and not app.error
+    assert app.query_params['question'] == [new_question]
+    assert app.get('html') and not any('href="#patent-evidence"' in item.value for item in app.get('html'))
+    app.button(key='report_back').click().run()
+    assert app.selectbox(key='cross_direction__de').value == 'H31'
+    assert app.selectbox(key='cross_question__de').value == new_question
+    app.selectbox(key='cross_direction__de').set_value(CROSS_CUTTING).run()
     assert not app.exception and not app.error
     assert app.selectbox(key='cross_direction__de').value == CROSS_CUTTING
     assert app.selectbox(key='cross_question__de').value in {

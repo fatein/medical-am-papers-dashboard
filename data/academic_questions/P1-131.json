@@ -1,0 +1,259 @@
+{
+  "schema_version": 2,
+  "question_id": "P1-131",
+  "p": "P1",
+  "version": 2,
+  "updated_at": "2026-11-19",
+  "evidence_cutoff": "2026-11-19",
+  "related_paper_ids": [],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Treatment of complex airway stenoses using patient-specific 3D-engineered stents: a proof-of-concept study",
+      "publisher": "Thorax",
+      "year": 2019,
+      "url": "https://doi.org/10.1136/thoraxjnl-2018-212732",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Influence of Material Selection on the Mechanical Properties of 3D-Printed Tracheal Stents for Surgical Applications",
+      "publisher": "Polymers",
+      "year": 2025,
+      "url": "https://doi.org/10.3390/polym17162223",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Towards a Customizable, SLA 3D-Printed Biliary Stent: Optimizing a Commercially Available Resin and Predicting Stent Behavior with Accurate In Silico Testing",
+      "publisher": "Polymers",
+      "year": 2024,
+      "url": "https://doi.org/10.3390/polym16141978",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Innovative Design of a 3D Printed Esophageal Stent Inspired by Nature: Mitigating Migration Challenges in Palliative Esophageal Cancer Therapy",
+      "publisher": "Biomimetics",
+      "year": 2024,
+      "url": "https://doi.org/10.3390/biomimetics9060359",
+      "kind": "paper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "reference_id": "R04",
+      "original_label": "Figure 10",
+      "license": "CC BY 4.0",
+      "image_url": "https://pub.mdpi-res.com/biomimetics/biomimetics-09-00359/article_deploy/html/images/biomimetics-09-00359-g010.png",
+      "source_url": "https://www.mdpi.com/2313-7673/9/6/359#fig_body_display_biomimetics-09-00359-f010"
+    }
+  ],
+  "locales": {
+    "zh": {
+      "title": "气道、胆道和食管的定制支架如何分别验证适配、部署与持位？",
+      "direction": "血管与腔道打印支架",
+      "sections": [
+        {
+          "id": "airway-fit",
+          "title": "气道适配与随访迁移",
+          "markdown": "Guibert 等从 CT 设计支架，采用数控加工模具成形医用硅胶。10 例复杂气道狭窄均完成放置，9 例支架得到良好的几何适配。3 个月内记录到 2 例迁移。成品贴合与后续持位由不同观测确定，无平行对照的病例系列只能给出这批器具的事件记录。 [气道概念验证](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "airway-compression",
+          "title": "气管原型压缩曲线代表什么",
+          "markdown": "另一项研究直接打印 PCL、PDO 和 PLA/PCL（50∶50）气管原型。结果段按外径从 7 mm 压至 3 mm 报告径向力，三件 PDO 读数为 744.85–773.18 N，三件 PCL 为 377.26–404.97 N。图 11 给出力随直径变化的曲线，适合比较此装夹条件下的抗压反应。分叉贴合、卸载后的剩余变形和实际迁移需要额外测量。 [原文表 7 和图 11](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "biliary-deployment",
+          "title": "胆道导入弯曲与支路流动",
+          "markdown": "胆道 SLA 实验以 60 mm 的 Weave 样件模拟导入，约 30° 弯曲对应 7.74 mm 位移。7–8 mm 区间的预测位移与三点弯曲实测相差不足 10%，但 5–6 N 下中心峰值应力预测超过处理后树脂的屈服强度 5 MPa 以上。研究另用 4 和 3.4 mm 的通路模拟 30° 胆管分叉。支路通流的 CFD 结果与导入弯曲的应力结果对应两个任务。 [原文图 5、图 7 与补充表 S2–S3](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "esophageal-retention",
+          "title": "食管仿生构型的防滑力",
+          "markdown": "原文图 10 的防滑试验中，简单、FCC、SC 和仿生结构的力分别约为 0.50、0.88、0.87 和 1.32 N。仿生几何在同一试验中提高了起滑阻力。模型用猪食管拉伸数据表征黏膜–黏膜下层与肌层，再用实验力曲线校准。该力值的可比范围由接触模型、样件外形和滑动条件共同限定。 [原文图 10–11](ref:R04)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "orientation",
+          "title": "成形方向如何改变胆道原型的有效开口",
+          "markdown": "胆道原型的打印平台角在 0°、30°、45°、60° 之间比较，层高固定为 100 μm，每角度至少 3 件。45° 和 60° 的成品与 CAD 尺寸偏差较小。0° 样件偏长，管腔有残留树脂需冲洗。0° 和 30° 两组常见端部变形。平台角控制的是成形，导管弯曲角控制的是部署。补充图 S4–S6 的端视图能检验截面是否变形；与 CAD 长度核对无法发现全部端部问题。 [补充图 S4–S6](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "expansion-retention",
+          "title": "中段扩张与端部持位怎样同时观察",
+          "markdown": "食管论文图 8 记录受压及恢复尺寸，图 9 记录自扩张时的中段与端部。简单构型自扩张后的中段和两端读数分别为 14.46 与 17.59 mm。束缚释放后的端部外展可能增加锚定，同时改变壁面压强。只读图 10 的最大摩擦力无法定位接触侧和局部压强。可以将中段、两端的直径和接触压力分别作图，再与轴向滑动时的峰值和滑动距离配对。 [原文图 8–10](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "retention-followup",
+          "title": "适配后的事件为什么要保留时间和类型",
+          "markdown": "气道病例系列在 3 个月记录的事件包括 2 例迁移、1 例黏液堵塞以及 1 例因剧烈咳嗽移除。几何匹配只覆盖位置与外形，气道阻塞与移除还涉及分泌物和耐受。若将各类事件只合并为单一并发症率，就无法评估某种防滑构型对应哪条失效路径。与食管台架相比，气道随访还能观察事件发生时间，但病例数和观察窗口限制了罕见事件的估计。 [三个月事件](ref:R01) · [防滑台架](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "wall-load",
+          "title": "三个台架指标的单位及读数窗口",
+          "markdown": "气管径向试验的 N 值来自直径变化下的夹具受力，食管防滑试验的 N 值来自轴向滑移，胆道有限元的 MPa 是材料内部峰值应力。即使两项都用 N，夹持、方向和位移也不同。将读数与对应的失效位置并列，如气管截面局部塌陷、胆道中区屈服风险、食管接触面起滑，可避免只凭峰值给部位间排序。 [径向夹具](ref:R02) · [峰值应力](ref:R03) · [轴向防滑](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "site-matrix",
+          "title": "部位间可以共享的几何测量",
+          "markdown": "三个部位均可在自由状态与模拟部署后配对测量外形和接触位置，并记录变形是可逆还是残留。部位相关证据随后分开解读：气道系列记录影像或内镜适配及迁移，胆道原型关注支路开口和导入应力，食管原型以轴向起滑力刻画持位。保留壁面条件和加载方式，才能判断一个台架读数适用在哪个解剖场景。 [临床适配记录](ref:R01) · [部署与流路](ref:R03) · [滑移对照](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "防滑力曲线和食管接触模型 (Profitiliotis et al., 2024)",
+          "interpretation": "图 a 的实验曲线可比较构型在这一装置中的相对起滑阻力。图 b–g 给出仿生结构及仿真网格和边界条件，说明比较依赖设定的接触状态。 [原文图 10](ref:R04)"
+        }
+      }
+    },
+    "en": {
+      "title": "How can fit, deployment and retention be verified for custom airway, biliary and esophageal stents?",
+      "direction": "3D-printed vascular and luminal stents",
+      "sections": [
+        {
+          "id": "airway-fit",
+          "title": "Airway fit and migration at follow-up",
+          "markdown": "Guibert and colleagues designed stents from CT and used CNC-machined molds to form medical-grade silicone. All 10 devices were placed in patients with complex airway stenosis and 9 showed good geometric fit. 2 migrations were recorded within 3 months. Initial apposition and sustained retention are separate observations. The single-arm series describes the events in these devices. [Airway proof-of-concept study](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "airway-compression",
+          "title": "What tracheal prototype compression curves capture",
+          "markdown": "A separate study directly printed tracheal prototypes in PCL, PDO and a 50:50 PLA/PCL blend. The results report radial force for compression from 7 mm to 3 mm outer diameter. The 3 PDO readings ranged from 744.85 to 773.18 N, and 3 PCL readings from 377.26 to 404.97 N. Figure 11 plots force against diameter and supports comparison within that fixture. Branch fit, residual deformation after unloading and migration require additional measurements. [Original Table 7 and Figure 11](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "biliary-deployment",
+          "title": "Biliary delivery bending and branch flow",
+          "markdown": "The biliary SLA study modeled delivery bending of a 60 mm Weave specimen, with about 30° corresponding to 7.74 mm displacement. Predicted displacement at 7–8 mm was within 10% of the three-point bend result, while the central peak stress at 5–6 N was predicted to exceed the treated resin's yield strength by more than 5 MPa. A separate flow model used 4 and 3.4 mm paths at a 30° biliary junction. Branch-flow CFD and deployment stress address two different tasks. [Original Figures 5 and 7 and Supplementary Tables S2–S3](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "esophageal-retention",
+          "title": "Slip resistance of the biomimetic esophageal design",
+          "markdown": "In the slip test in Figure 10, the forces for the simple, FCC, SC and biomimetic structures were approximately 0.50, 0.88, 0.87 and 1.32 N. The biomimetic geometry increased the observed resistance to slip in that setup. The model used porcine esophageal tensile data for the mucosa–submucosa and muscle layers, then calibrated against the experimental force curve. Contact conditions, specimen shape and the sliding protocol define the scope of the comparison. [Original Figures 10–11](ref:R04)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "orientation",
+          "title": "How build orientation changes biliary openings",
+          "markdown": "The biliary prototype compared build angles of 0°, 30°, 45° and 60° at a fixed 100 μm layer height, with at least 3 specimens per angle. Parts at 45° and 60° showed smaller deviations from CAD. The 0° parts were longer and retained resin requiring flushing. End distortion occurred frequently at 0° and 30°. Build angle controls fabrication and catheter bend controls delivery. Supplementary end views S4–S6 reveal cross-sectional distortion that CAD-length comparisons alone can miss. [Supplementary Figures S4–S6](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "expansion-retention",
+          "title": "Observing midsection expansion and end retention together",
+          "markdown": "Esophageal Figure 8 reports compressed and recovered dimensions, while Figure 9 records middle and end diameters after self-expansion. The simple structure expanded to 14.46 mm at the middle and 17.59 mm at the ends. End flare after release may increase anchoring while shifting wall pressure. The maximum friction force in Figure 10 does not locate the contact or local pressure. Middle and end diameters and contact pressure can be plotted separately and paired with peak force and displacement during sliding. [Original Figures 8–10](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "retention-followup",
+          "title": "Why follow-up events need timing and type",
+          "markdown": "At 3 months, the airway series recorded 2 migrations, 1 mucus plug and 1 removal for severe cough. Geometric congruence covers position and shape, while obstruction and removal also involve secretion clearance and tolerance. Pooling them in one complication rate obscures which failure a retention feature might address. Unlike an esophageal slip fixture, follow-up can record event timing, though the sample and observation window limit estimates of uncommon events. [Three-month events](ref:R01) · [Slip-resistance fixture](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "wall-load",
+          "title": "Units and observation windows of three bench measures",
+          "markdown": "Tracheal newtons describe fixture force during diameter change, esophageal newtons axial slip, and biliary megapascals the peak internal material stress predicted by finite elements. The two force values use the same unit under different loading, directions and displacements. Pairing each measurement with its failure site, such as cross-sectional collapse, central biliary yield risk or sliding at esophageal contact, prevents ranking sites by peaks alone. [Radial fixture](ref:R02) · [Peak stress](ref:R03) · [Axial slip resistance](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "site-matrix",
+          "title": "Geometry measurements that transfer across sites",
+          "markdown": "Across sites, paired measurements can locate the outer contour and contact zones in the free state and after simulated deployment, and distinguish reversible deformation from residual deformation. Site-specific evidence then addresses different outcomes. The airway series records fit and migration, the biliary prototype focuses on branch openings and delivery stress, and the esophageal prototype quantifies the force initiating axial slip. Wall conditions and loading determine where a bench result applies. [Clinical fit observations](ref:R01) · [Deployment and flow paths](ref:R03) · [Slip comparison](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Slip-force curves and esophageal contact model (Profitiliotis et al., 2024)",
+          "interpretation": "Panel a compares slip resistance among configurations on this fixture. Panels b–g show the biomimetic geometry, mesh and boundary conditions, which identify the contact setup behind the comparison. [Original Figure 10](ref:R04)"
+        }
+      }
+    },
+    "de": {
+      "title": "Wie lassen sich Passform, Einbringung und Halt individueller Atemwegs-, Gallenwegs- und Ösophagusstents prüfen?",
+      "direction": "3D-gedruckte Stents für Gefäße und andere Körperlumina",
+      "sections": [
+        {
+          "id": "airway-fit",
+          "title": "Passform und Migration in den Atemwegen",
+          "markdown": "Guibert und Kollegen konstruierten die Stents aus CT-Daten und formten medizinisches Silikon in CNC-gefertigten Formen. Alle 10 Stents konnten bei komplexen Atemwegsstenosen eingesetzt werden, 9 passten geometrisch gut. Innerhalb von 3 Monaten traten 2 Migrationen auf. Anfängliche Passform und dauerhafter Halt wurden separat beobachtet. Die einarmige Serie dokumentiert die Ereignisse dieser Gruppe. [Machbarkeitsstudie zu Atemwegsstents](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "airway-compression",
+          "title": "Was die Kompressionskurven der Trachealprototypen erfassen",
+          "markdown": "Eine weitere Studie druckte Trachealprototypen direkt aus PCL, PDO und einer PLA/PCL-Mischung (50:50). Im Ergebnisteil wird die Radialkraft bei Kompression von 7 auf 3 mm Außendurchmesser angegeben. Die 3 PDO-Werte lagen bei 744,85–773,18 N, die 3 PCL-Werte bei 377,26–404,97 N. Abbildung 11 trägt die Kraft gegen den Durchmesser auf und erlaubt Vergleiche unter dieser Einspannung. Passform an Verzweigungen, Restverformung nach Entlastung und Migration erfordern eigene Messungen. [Originaltabelle 7 und Abbildung 11](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "biliary-deployment",
+          "title": "Biegung bei der Gallenwegseinbringung und Strömung im Seitenast",
+          "markdown": "Die SLA-Studie zu Gallenwegsstents modellierte die Einbringung einer 60 mm langen Weave-Probe. Eine Biegung um etwa 30° entsprach 7,74 mm Verschiebung. Bei 7–8 mm wich die simulierte Verschiebung um weniger als 10% vom Dreipunktbiegeversuch ab, bei 5–6 N lag die berechnete zentrale Spitzenspannung jedoch mehr als 5 MPa über der Streckgrenze des nachbehandelten Harzes. Ein eigenes Strömungsmodell verwendete 4 und 3,4 mm weite Wege mit einem Abzweig von 30°. Strömung im Seitenast und Einbringungsspannung betreffen zwei verschiedene Aufgaben. [Originalabbildungen 5 und 7 und Ergänzungstabellen S2–S3](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "esophageal-retention",
+          "title": "Rutschwiderstand der biomimetischen Ösophagusgeometrie",
+          "markdown": "Im Rutschversuch aus Abbildung 10 lagen die Kräfte für die einfache, FCC-, SC- und biomimetische Geometrie bei etwa 0,50, 0,88, 0,87 und 1,32 N. Die biomimetische Geometrie erhöhte unter diesen Bedingungen den beobachteten Rutschwiderstand. Das Modell nutzte Zugdaten aus dem Schweineösophagus für Mukosa–Submukosa und Muskelschicht und wurde anhand der gemessenen Kraftkurve kalibriert. Kontaktbedingungen, Probenform und Gleitprotokoll bestimmen den Vergleichsrahmen. [Originalabbildungen 10–11](ref:R04)",
+          "figure_ids": [
+            "F01"
+          ]
+        },
+        {
+          "id": "orientation",
+          "title": "Wie die Bauorientierung wirksame Gallenwegsöffnungen verändert",
+          "markdown": "Beim Gallenwegsprototyp wurden 0°, 30°, 45° und 60° zur Bauplattform bei 100 μm Schichthöhe verglichen, mit mindestens 3 Proben je Winkel. Bei 45° und 60° wichen die Teile weniger vom CAD ab. Die 0°-Proben waren länger und enthielten auszuspülendes Restharz. Bei 0° und 30° traten häufig Endverzüge auf. Der Bauwinkel betrifft die Fertigung, die Katheterbiegung die Einbringung. Stirnansichten S4–S6 zeigen Querschnittsverzug, der im reinen Längenvergleich verborgen bleiben kann. [Ergänzungsabbildungen S4–S6](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "expansion-retention",
+          "title": "Expansion in der Mitte und Halt an den Enden gemeinsam beobachten",
+          "markdown": "Abbildung 8 zeigt komprimierte und rückgestellte Geometrien, Abbildung 9 die Durchmesser in Mitte und Enden nach Selbstexpansion. Die einfache Geometrie erreichte 14,46 mm in der Mitte und 17,59 mm an den Enden. Die Aufweitung der Enden kann die Verankerung verbessern und zugleich den Wanddruck verändern. Die maximale Reibkraft in Abbildung 10 zeigt weder Kontaktstellen noch örtlichen Druck. Durchmesser und Druck für Mitte und Enden lassen sich separat erfassen und mit Spitzenkraft und Gleitweg verbinden. [Originalabbildungen 8–10](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "retention-followup",
+          "title": "Warum Ereignisse nach der Anpassung Zeit und Typ benötigen",
+          "markdown": "Nach 3 Monaten dokumentierte die Atemwegsserie 2 Migrationen, 1 Schleimpfropf und 1 Entfernung wegen starken Hustens. Geometrische Passform betrifft Lage und Form, während Sekretabtransport und Verträglichkeit zu Verlegung und Entfernung beitragen. Eine zusammengefasste Komplikationsrate verdeckt die Versagensart, auf die eine Haltestruktur wirken könnte. Die Nachbeobachtung kann im Vergleich zum Gleitprüfstand Ereigniszeiten erfassen, wobei Stichprobe und Beobachtungsdauer Schätzungen seltener Ereignisse begrenzen. [Ereignisse nach drei Monaten](ref:R01) · [Prüfstand zum Rutschwiderstand](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "wall-load",
+          "title": "Einheiten und Beobachtungsfenster dreier Prüfgrößen",
+          "markdown": "Bei der Trachealprüfung bezeichnen Newton die Aufnahmekraft bei Durchmesseränderung, im Ösophagusversuch die Kraft beim axialen Gleiten. Die Megapascal der Gallenwegsanalyse sind berechnete interne Spitzenspannungen. Die Kraftwerte haben dieselbe Einheit, unterscheiden sich aber in Last, Richtung und Verschiebung. Die Zuordnung zu Querschnittskollaps, Fließrisiko im zentralen Gallenwegsabschnitt oder Gleiten am Ösophaguskontakt verhindert eine Rangfolge allein nach Spitzenwerten. [Radiale Prüfaufnahme](ref:R02) · [Spitzenspannung](ref:R03) · [Axialer Rutschwiderstand](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "site-matrix",
+          "title": "Übertragbare Geometriemessungen zwischen Körperregionen",
+          "markdown": "Über die Körperregionen hinweg lassen sich Außenkontur und Kontaktzonen frei und nach simulierter Einbringung paarweise messen sowie reversible und bleibende Verformung erfassen. Die regionenspezifischen Befunde betreffen unterschiedliche Endpunkte. Die Atemwegsserie erfasst Passform und Migration, der Gallenwegsprototyp Seitenöffnungen und Einbringungsspannung und der Ösophagusprototyp die Kraft zu Beginn des axialen Gleitens. Wandbedingungen und Belastung bestimmen die Übertragbarkeit eines Prüfstandswerts. [Klinische Passformbefunde](ref:R01) · [Einbringung und Strömungswege](ref:R03) · [Vergleich des Gleitens](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {
+        "F01": {
+          "caption": "Rutschkraftkurven und Ösophagus-Kontaktmodell (Profitiliotis et al., 2024)",
+          "interpretation": "Teilbild a vergleicht den Rutschwiderstand der Geometrien auf dem Prüfstand. Teilbilder b–g zeigen biomimetische Form, Netz und Randbedingungen und machen damit die Kontaktannahmen nachvollziehbar. [Originalabbildung 10](ref:R04)"
+        }
+      }
+    }
+  }
+}

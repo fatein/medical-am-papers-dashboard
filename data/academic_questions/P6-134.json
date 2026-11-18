@@ -1,0 +1,221 @@
+{
+  "schema_version": 2,
+  "question_id": "P6-134",
+  "p": "P6",
+  "version": 2,
+  "updated_at": "2026-11-19",
+  "evidence_cutoff": "2026-11-19",
+  "related_paper_ids": [],
+  "references": [
+    {
+      "id": "R01",
+      "title": "3D-printed boluses for radiotherapy: influence of geometrical and printing parameters on dosimetric characterization and air gap evaluation",
+      "publisher": "Radiological Physics and Technology",
+      "year": 2024,
+      "url": "https://doi.org/10.1007/s12194-024-00782-1",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "A clinical trial to compare a 3D-printed bolus with a conventional bolus with the aim of reducing cardiopulmonary exposure in postmastectomy patients with volumetric modulated arc therapy",
+      "publisher": "Cancer Medicine",
+      "year": 2022,
+      "url": "https://doi.org/10.1002/cam4.4496",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "The dosimetric value and safety evaluation of 3D printed bolus in adjuvant intensity-modulated radiotherapy after radical mastectomy for breast cancer: a prospective cohort study",
+      "publisher": "Radiation Oncology",
+      "year": 2025,
+      "url": "https://doi.org/10.1186/s13014-025-02659-y",
+      "kind": "paper"
+    }
+  ],
+  "figures": [],
+  "locales": {
+    "zh": {
+      "title": "个体化打印放疗补偿膜的贴合如何影响表面及靶区剂量？",
+      "direction": "个体化放疗施源、定位与剂量补偿器具",
+      "sections": [
+        {
+          "id": "internal-fill",
+          "title": "内部填充怎样改变深度剂量",
+          "markdown": "平板模体的 6 MV 光子实验比较无补偿膜、传统补偿膜与 8 种打印条件，测量深度剂量曲线。该研究所测条件中，采用较高 60% 填充率的 Gyroid 构型与传统补偿膜表现相近。曲线记录的是整个束路中材料与空气的分布所形成的剂量结果。即使外形相同，内部孔隙和打印方向也可能改变束路。 [平板模体深度剂量试验](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "surface-gap",
+          "title": "外部气隙的位置与体积",
+          "markdown": "鼻部模体实验中，竖直打印 TPU 补偿膜的总气隙体积为 1.05 cm³，最大间隔为 1.2 mm。乳腺切除术后 VMAT 研究图 2–3 另比较真实患者的胸壁贴合，传统与打印补偿膜的最大气隙均值分别为 3.9 ± 1.4 和 1.9 ± 0.9 mm，气隙总体积均值为 14.1 ± 8.8 和 6.5 ± 5.1 mL。最大间距反映局部脱空，体积反映整体脱空量。两者都需与凸凹位置对应。 [鼻部模体贴合](ref:R01) · [原文图 2–3](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "planning-comparison",
+          "title": "实体补偿膜比较中的靶区和器官剂量",
+          "markdown": "在 6 MV、50 Gy/25 分次的 VMAT 研究中，打印补偿膜组 PTV1 处方剂量覆盖为 95.4 ± 0.6%，传统组为 94.8 ± 0.8%，PTV2 未见明确组间差异。表 3 的同侧肺平均剂量分别为 11.6 ± 0.8 和 12.4 ± 1.0 Gy。影像气隙和计划剂量同时变化，但这些组间比较还包括厚度和优化等影响，无法单独估算每毫米间隙的剂量效应。 [原文靶区结果与表 3](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "paired-plans",
+          "title": "有无补偿膜的计划对照回答另一问题",
+          "markdown": "35 人术后队列用两次 CT 做有、无打印补偿膜的患者内计划对照，靶区与计划方法一致。表 5 显示均匀性指数从无补偿膜的 0.0822 到有补偿膜的 0.0501（P < 0.001），在此公式中越接近 0 越均匀。参与者均接受含打印补偿膜的治疗流程，16 个月中位随访的皮肤反应属于单队列观察，无法充当有无补偿膜的安全性比较。 [原文表 5 与随访设计](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "target-depth",
+          "title": "为什么胸壁和锁骨上区给出不同结果",
+          "markdown": "VMAT 试验按治疗左右侧分层随机，实际分析传统组 40 人、打印组 35 人。PTV1 包含同侧胸壁和内乳淋巴区，限制至皮下 0 mm，PTV2 是锁骨上淋巴区，限制至皮下 4 mm。两个靶区取样深度及解剖形态不同，因此相同补偿膜可以改变 PTV1 与 PTV2 的剂量直方图程度。比较计划时应保留这些靶区定义，因为浅层轮廓是否纳入直接影响覆盖率的分母。 [随机分组与靶区定义](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "organ-dose",
+          "title": "心肺剂量变化有侧别和器官依赖性",
+          "markdown": "VMAT 原文表 3 中，传统与打印补偿膜组的左侧病例平均心脏剂量为 5.5 ± 1.3 和 4.7 ± 0.8 Gy，右侧病例两组均约 2.0 Gy。表中同侧肺 V20 分别为 22.5 ± 2.3% 和 20.8 ± 1.8%。这些读数对应采用该机构优化流程的计划。把不同侧别和器官合并会混淆靶区相对于射束、心脏和肺的位置关系。 [原文表 3 的器官剂量](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "fit-separation",
+          "title": "把贴合误差同材料误差分开",
+          "markdown": "一个表面连续的补偿膜也可能因填充形成内部空气，贴合良好的器具仍可有错误的水等效厚度。反之，平板深度剂量验证通过后，鼻部原型仍有局部脱空。可用平板测定同等物理厚度下的剂量曲线，再用曲面模体 CT 测成品内外的空气分布，分别检验实际介质与实际贴合。在有无补偿膜的患者内分析中，均匀性变好与某个表面测量点的剂量变化还属于不同指标。 [平板与曲面模体实验](ref:R01) · [患者内剂量比较](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "calibration",
+          "title": "计划系统的密度输入如何核实",
+          "markdown": "VMAT 研究在计划中采用相对水电子密度 1.11 ± 0.01，范围 1.07–1.13。这个输入需要和对应打印批次、厚度及束路的实物匹配。若几何改良的同时换用更软材料或不同填充，气隙差和材料厚度差会一起反映在剂量曲线上。将 CT 密度、深度剂量对照和皮肤侧气隙各自记录，能够定位某一表面剂量偏差发生在哪个环节。 [材料与束路实验](ref:R01) · [相对电子密度设置](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "measurement-chain",
+          "title": "如何把贴合与表面剂量配对",
+          "markdown": "可在固定束流、入射角及补偿膜厚度的模体中加入已知气隙，配对记录贴合形态、表面实测剂量与深度剂量。临床计划再以独立指标记录表浅靶区覆盖和器官剂量，并用到位影像定位重复出现的间隙。模体实验分辨几何效应，剂量体积直方图汇总计算结果，各自提供独立验证。 [模体测量](ref:R01) · [到位影像与剂量直方图](ref:R02)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "en": {
+      "title": "How does the fit of a custom printed radiotherapy bolus affect surface and target dose?",
+      "direction": "Patient-specific radiotherapy applicators, positioning and dose compensation devices",
+      "sections": [
+        {
+          "id": "internal-fill",
+          "title": "How internal infill changes the depth-dose profile",
+          "markdown": "A 6 MV photon experiment on a slab phantom compared no bolus, a conventional bolus and 8 print configurations using depth-dose curves. Among the tested settings, gyroid infill at the higher 60% infill fraction gave results comparable to the conventional bolus. The curve reflects the distribution of material and air along the beam path. Internal voids and print orientation can therefore change that path even when the outer contour is held fixed. [Slab-phantom depth-dose measurements](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "surface-gap",
+          "title": "Location and volume of external air gaps",
+          "markdown": "In the nose phantom, the vertically printed TPU bolus showed 1.05 cm³ of total air gap and a maximum separation of 1.2 mm. Figures 2–3 of the postmastectomy VMAT study show a separate chest-wall fit comparison in patients. Mean maximum gaps were 3.9 ± 1.4 and 1.9 ± 0.9 mm for conventional and printed boluses, respectively, and mean total volumes were 14.1 ± 8.8 and 6.5 ± 5.1 mL. Maximum separation measures a local gap and volume measures the overall gap burden. Both need to be located relative to convexities and concavities. [Fit on a nose phantom](ref:R01) · [Original Figures 2–3](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "planning-comparison",
+          "title": "Target and organ doses when comparing physical boluses",
+          "markdown": "In the VMAT study using 6 MV and 50 Gy in 25 fractions, PTV1 prescription-dose coverage was 95.4 ± 0.6% with printed bolus and 94.8 ± 0.8% with conventional bolus. No clear group difference was seen for PTV2. Mean ipsilateral lung dose in Table 3 was 11.6 ± 0.8 versus 12.4 ± 1.0 Gy. Imaging gaps and planned dose differed together. Thickness and optimization also contribute to these group comparisons, which cannot isolate a per-millimetre gap effect. [Original target results and Table 3](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "paired-plans",
+          "title": "Paired plans with and without bolus answer a different question",
+          "markdown": "A postoperative cohort of 35 used two CT scans for paired plans with and without printed bolus, with the same targets and planning methods. Table 5 shows the homogeneity index falling from 0.0822 without bolus to 0.0501 with bolus (P < 0.001), where values nearer 0 indicate greater uniformity. All participants received treatment including the printed bolus. Skin reactions at the median 16-month follow-up describe one cohort and provide no comparative safety estimate. [Original Table 5 and follow-up design](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "target-depth",
+          "title": "Why chest-wall and supraclavicular targets differ",
+          "markdown": "The VMAT trial randomized by treatment side and analyzed 40 participants with conventional bolus and 35 with printed bolus. PTV1 included ipsilateral chest wall and internal mammary nodes and extended to 0 mm beneath the skin. PTV2 comprised supraclavicular nodes and stopped 4 mm below the skin. The targets sample different depths and anatomy, so one bolus can affect their dose–volume histograms differently. Keeping these target definitions shows how including the superficial contour changes the coverage denominator. [Randomization and target definitions](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "organ-dose",
+          "title": "Cardiopulmonary dose changes depend on side and organ",
+          "markdown": "In Original Table 3 of the VMAT trial, mean heart dose in left-sided cases was 5.5 ± 1.3 Gy with conventional bolus and 4.7 ± 0.8 Gy with printed bolus. Right-sided cases were about 2.0 Gy in both groups. Ipsilateral lung V20 was 22.5 ± 2.3% and 20.8 ± 1.8%, respectively. These are planned readouts from the study's optimization workflow. Pooling sides or organs would obscure the geometry of target, beam, heart and lung. [Organ doses in Original Table 3](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "fit-separation",
+          "title": "Separating fit errors from material errors",
+          "markdown": "A continuous outer surface can enclose internal air from the infill, and a well-fitting device can still have the wrong water-equivalent thickness. Conversely, a print that passes slab depth-dose verification can leave local gaps on a nose phantom. Slab curves at matched physical thickness and CT of internal and external air on a curved phantom test the material and fit separately. In paired patient plans, a gain in homogeneity and a change at one measured surface point are still different endpoints. [Slab and curved-phantom studies](ref:R01) · [Within-patient dose comparison](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "calibration",
+          "title": "Checking the density used in planning",
+          "markdown": "The VMAT study used a relative electron density of 1.11 ± 0.01 (range 1.07–1.13) in its plans. This input needs to match the physical print batch, thickness and beam path. If improved fit comes with softer material or a different infill, the dose curve includes the combined changes in gap and material path length. Retaining CT density, depth-dose calibration and the skin-side gap separately helps locate the source of a surface-dose discrepancy. [Material and beam-path tests](ref:R01) · [Relative electron density setting](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "measurement-chain",
+          "title": "Pairing surface fit with surface dose",
+          "markdown": "A phantom comparison can introduce known gaps while holding beam, incidence angle and bolus thickness fixed, then pair the contact geometry with measured surface and depth dose. Clinical planning can track superficial target coverage and organ dose separately and use setup imaging to locate recurrent gaps. Phantom measurements characterize the geometry effect, while dose–volume histograms summarize the computed distributions. [Phantom measurements](ref:R01) · [Setup imaging and dose–volume histograms](ref:R02)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "de": {
+      "title": "Wie beeinflusst die Passform eines individuell gedruckten Bestrahlungsbolus die Oberflächen- und Zielvolumendosis?",
+      "direction": "Patientenspezifische Strahlentherapie-Applikatoren, Lagerungs- und Dosiskompensationshilfen",
+      "sections": [
+        {
+          "id": "internal-fill",
+          "title": "Wie die innere Füllung das Tiefendosisprofil verändert",
+          "markdown": "Ein Versuch mit 6-MV-Photonen am Plattenphantom verglich Tiefendosiskurven ohne Bolus, mit konventionellem Bolus und mit 8 Druckvarianten. Unter den geprüften Einstellungen erzielte die Gyroidfüllung mit dem höheren Füllgrad von 60% ähnliche Ergebnisse wie der konventionelle Bolus. Die Kurve bildet die Wirkung von Material und Luft entlang des Strahlwegs ab. Interne Hohlräume und Druckorientierung können diesen Weg bei gleicher Außenkontur verändern. [Tiefendosismessung am Plattenphantom](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "surface-gap",
+          "title": "Lage und Volumen äußerer Luftspalte",
+          "markdown": "Am Nasenphantom hatte der vertikal gedruckte TPU-Bolus ein Luftspaltvolumen von 1,05 cm³ und einen maximalen Abstand von 1,2 mm. Abbildungen 2–3 der VMAT-Studie nach Mastektomie zeigen einen separaten Vergleich an der Brustwand. Die mittleren Maximalspalte betrugen beim konventionellen und gedruckten Bolus 3,9 ± 1,4 bzw. 1,9 ± 0,9 mm, die mittleren Gesamtvolumina 14,1 ± 8,8 bzw. 6,5 ± 5,1 mL. Der Maximalabstand beschreibt eine lokale Ablösung, das Volumen deren Gesamtausmaß. Beide sind Wölbungen und Vertiefungen zuzuordnen. [Passform am Nasenphantom](ref:R01) · [Originalabbildungen 2–3](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "planning-comparison",
+          "title": "Zielvolumen- und Organdosen beim Vergleich realer Bolusvarianten",
+          "markdown": "In der VMAT-Studie mit 6 MV und 50 Gy in 25 Fraktionen lag die Verschreibungsdosisabdeckung von PTV1 beim gedruckten Bolus bei 95,4 ± 0,6% und beim konventionellen bei 94,8 ± 0,8%. Für PTV2 zeigte sich kein klarer Gruppenunterschied. Die mittlere ipsilaterale Lungendosis in Tabelle 3 betrug 11,6 ± 0,8 gegenüber 12,4 ± 1,0 Gy. Bildbasierte Luftspalte und Plandosis unterschieden sich gemeinsam. Dicke und Optimierung gehen ebenfalls in den Gruppenvergleich ein, sodass sich kein isolierter Effekt pro Millimeter bestimmen lässt. [Originalbefunde zum Zielvolumen und Tabelle 3](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "paired-plans",
+          "title": "Gepaarte Pläne mit und ohne Bolus beantworten eine andere Frage",
+          "markdown": "In einer postoperativen Kohorte mit 35 Personen wurden anhand zweier CT-Aufnahmen gepaarte Pläne mit und ohne gedruckten Bolus bei gleichen Zielvolumina und Planungsmethoden erstellt. Der Homogenitätsindex in Tabelle 5 fiel von 0,0822 auf 0,0501 (P < 0,001), wobei Werte näher an 0 gleichmäßiger sind. Alle Personen erhielten eine Behandlung unter Einsatz des gedruckten Bolus. Hautreaktionen nach einer medianen Nachbeobachtung von 16 Monaten beschreiben ein Kollektiv und liefern keinen Sicherheitsvergleich. [Originaltabelle 5 und Nachbeobachtungsdesign](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "target-depth",
+          "title": "Warum Brustwand- und supraklavikuläre Zielvolumina unterschiedlich reagieren",
+          "markdown": "Die VMAT-Studie randomisierte nach Behandlungsseite und analysierte 40 Personen mit konventionellem und 35 mit gedrucktem Bolus. PTV1 umfasste ipsilaterale Brustwand und Mammaria-interna-Lymphknoten und reichte bis 0 mm unter die Haut. PTV2 umfasste supraklavikuläre Lymphknoten und endete 4 mm unter der Haut. Die Zielvolumina unterscheiden sich in Tiefe und Anatomie. Ein Bolus kann ihre Dosis-Volumen-Histogramme deshalb verschieden beeinflussen. Die Definitionen verdeutlichen, wie die oberflächennahe Kontur den Nenner der Abdeckung verändert. [Randomisierung und Zielvolumendefinitionen](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "organ-dose",
+          "title": "Herz- und Lungendosis hängen von Seite und Organ ab",
+          "markdown": "In Originaltabelle 3 des VMAT-Versuchs betrug die mittlere Herzdosis links 5,5 ± 1,3 Gy mit konventionellem und 4,7 ± 0,8 Gy mit gedrucktem Bolus. Rechts lagen beide Gruppen bei etwa 2,0 Gy. V20 der ipsilateralen Lunge betrug 22,5 ± 2,3% bzw. 20,8 ± 1,8%. Es sind Planwerte aus dem Optimierungsablauf der Studie. Eine Zusammenfassung über Seiten oder Organe würde die Lagebeziehungen von Zielvolumen, Strahl, Herz und Lunge verdecken. [Organdosen in Originaltabelle 3](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "fit-separation",
+          "title": "Passform- und Materialfehler trennen",
+          "markdown": "Eine geschlossene Außenfläche kann durch die Füllung innere Luft einschließen. Auch bei guter Passform kann die wasseräquivalente Dicke abweichen. Umgekehrt kann ein Bolus mit passender Plattenphantom-Tiefendosis am Nasenphantom lokal abstehen. Tiefendosiskurven bei gleicher physischer Dicke und CT-Aufnahmen der inneren und äußeren Luft am gekrümmten Phantom prüfen Material und Passform getrennt. In gepaarten Patientenplänen sind bessere Homogenität und eine Änderung an einem Oberflächenmesspunkt weiterhin verschiedene Endpunkte. [Platten- und gekrümmtes Phantom](ref:R01) · [Dosisvergleich innerhalb derselben Person](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "calibration",
+          "title": "Die in der Planung verwendete Dichte prüfen",
+          "markdown": "Die VMAT-Studie verwendete in der Planung eine relative Elektronendichte von 1,11 ± 0,01 (Bereich 1,07–1,13). Der Wert muss zur konkreten Druckcharge, Dicke und zum Strahlweg passen. Wenn bessere Passform mit weicherem Material oder anderer Füllung einhergeht, enthält die Dosiskurve Änderung von Spalt und Materialweg zusammen. Getrennte Angaben zu CT-Dichte, Tiefendosiskalibrierung und hautseitigem Spalt grenzen die Ursache einer Oberflächendosisabweichung ein. [Material- und Strahlwegprüfung](ref:R01) · [Eingabewert der relativen Elektronendichte](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "measurement-chain",
+          "title": "Passform und Oberflächendosis gemeinsam messen",
+          "markdown": "Ein Phantomvergleich kann bei konstantem Strahl, Einfallswinkel und gleicher Bolusdicke definierte Luftspalte erzeugen. Kontaktgeometrie, gemessene Oberflächen- und Tiefendosis werden dann gemeinsam erfasst. In der Planung können oberflächennahe Zielvolumenabdeckung und Organdosis separat verfolgt und wiederkehrende Spalte durch Lagerungsbilder erkannt werden. Phantomdaten charakterisieren den Geometrieeffekt, Dosis-Volumen-Histogramme fassen die berechneten Verteilungen zusammen. [Phantommessungen](ref:R01) · [Lagerungsbilder und Dosis-Volumen-Histogramme](ref:R02)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    }
+  }
+}

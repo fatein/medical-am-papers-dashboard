@@ -9,6 +9,7 @@ import json
 from pathlib import Path
 import re
 
+from dashboard.cross_data import load_academic_additions, load_cross_analysis
 from dashboard.report_data import REF_PATTERN, RAW_HTML, PRIVATE_PATH, safe_source_url
 
 LANGUAGES = ('zh', 'en', 'de')
@@ -227,7 +228,7 @@ def load_released_reports(root: Path) -> dict | None:
         reports[qid] = report
     library = {'schema_version': 2, 'reports': reports}
     try:
-        corpus = json.loads((Path(root)/'data/cross_analysis.json').read_text(encoding='utf8'))
+        corpus = load_cross_analysis(root)
         errors = validate_library(library, corpus['questions'], corpus['papers'], root)
     except (OSError, json.JSONDecodeError, KeyError) as exc:
         raise ValueError('Missing or invalid academic release corpus') from exc
@@ -285,12 +286,13 @@ def figure_html(figure: dict, text: dict, reference: dict, root: Path | None = N
             f'{esc(figure["original_label"])} · {license_text}</figcaption></figure>')
 
 
-def header_html(report: dict, code: str) -> str:
+def header_html(report: dict, code: str, *, include_patents: bool = True) -> str:
     from dashboard.patent_report_views import patent_section_title
     ui = UI[code]
     esc = html.escape
     toc = ''.join(f'<a href="#aq-{s["id"]}" target="_self">{esc(s["title"])}</a>' for s in report['sections'])
-    toc += f'<a href="#patent-evidence" target="_self">{esc(patent_section_title(code))}</a>'
+    if include_patents:
+        toc += f'<a href="#patent-evidence" target="_self">{esc(patent_section_title(code))}</a>'
     return (f'<div class="aq-hero"><div class="aq-kicker">{esc(report["p"])} / '
             f'{esc(report["direction"])} / {esc(report["question_id"])}</div>'
             f'<h1>{esc(report["title"])}</h1><div class="aq-date">'
@@ -330,6 +332,8 @@ def academic_question_page(report: dict, question: dict | None, root: Path, publ
     if question and question.get('direction_id'):
         from dashboard.direction_reports import localized_direction_title
         r = {**r, 'direction': localized_direction_title(root, question['direction_id'], code)}
+    include_patents = not any(q['question_id'] == r['question_id']
+                              for q in load_academic_additions(root)['questions'])
     refs = {ref['id']: ref for ref in r['references']}
     figures = {f['id']: f for f in r['figures']}
     from dashboard.feedback_views import report_feedback
@@ -339,7 +343,7 @@ def academic_question_page(report: dict, question: dict | None, root: Path, publ
         st.button(ui['back'], key='report_back', on_click=restore_question_context, args=(question,))
         st.html(CSS)
         with st.container(key='academic_reader'):
-            st.html(header_html(r, code))
+            st.html(header_html(r, code, include_patents=include_patents))
             for section in r['sections']:
                 st.html(f'<div class="aq-section" id="aq-{section["id"]}"><h2>{html.escape(section["title"])}</h2></div>')
                 st.markdown(cited_markdown(section['markdown'], r['references']))
@@ -351,14 +355,15 @@ def academic_question_page(report: dict, question: dict | None, root: Path, publ
                     c1, c2 = st.columns(2)
                     c1.link_button(ui['figure']+' ↗', fig['source_url'])
                     c2.link_button(ui['source']+' ↗', refs[fig['reference_id']]['url'])
-            from dashboard.patent_report_views import patent_report_section
-            patent_report_section(root,report['question_id'],code=code)
+            if include_patents:
+                from dashboard.patent_report_views import patent_report_section
+                patent_report_section(root, report['question_id'], code=code)
             st.html(f'<div class="aq-section" id="aq-sources"><h2>{ui["sources"]}</h2></div>')
             for ref in r['references']:
                 st.markdown(f'**{ref["id"]} · {ref["publisher"]} · {ref["year"]}**')
                 st.link_button(ref['title']+' ↗', ref['url'], width='stretch')
             if r['related_paper_ids']:
-                data = json.loads((Path(root)/'data/cross_analysis.json').read_text(encoding='utf8'))
+                data = load_cross_analysis(root)
                 papers = {p['id']: p for p in data['papers']}
                 with st.expander(ui['papers']):
                     for pid in dict.fromkeys(r['related_paper_ids']):

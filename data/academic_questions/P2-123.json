@@ -1,0 +1,160 @@
+{
+  "schema_version": 2,
+  "question_id": "P2-123",
+  "p": "P2",
+  "version": 2,
+  "updated_at": "2026-11-19",
+  "evidence_cutoff": "2026-11-19",
+  "related_paper_ids": [
+    "doc_c3810cb55e35e1ef9b02",
+    "doc_db5da5cf9f939dc3aa33"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Influence of Fabrication Technique on Adhesion and Biofilm Formation of Candida albicans to Conventional, Milled, and 3D-Printed Denture Base Resin Materials: A Comparative In Vitro Study",
+      "publisher": "Polymers",
+      "year": 2023,
+      "url": "https://www.mdpi.com/2073-4360/15/8/1836#sec3-polymers-15-01836",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Microbial adhesion and biofilm formation by Candida albicans on 3D-printed denture base resins",
+      "publisher": "PLOS ONE",
+      "year": 2023,
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0292430#sec003",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "In Vitro Evaluation of Candida albicans Adhesion and Related Surface Properties of CAD/CAM Denture Base Resins",
+      "publisher": "European Journal of Dentistry",
+      "year": 2024,
+      "url": "https://www.thieme-connect.com/products/ejournals/pdf/10.1055/s-0043-1774319.pdf",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Effect of surface polishing on roughness, biofilm formation, and biocompatibility of LCD-printed denture base polymer",
+      "publisher": "Scientific Reports",
+      "year": 2026,
+      "url": "https://www.nature.com/articles/s41598-026-45942-y#Sec2",
+      "kind": "paper"
+    }
+  ],
+  "figures": [],
+  "locales": {
+    "zh": {
+      "title": "打印义齿基托的表面粗糙度能解释微生物附着差异吗？",
+      "direction": "牙科树脂的生物相容性与微生物附着",
+      "sections": [
+        {
+          "id": "texture",
+          "title": "制造路线与表面形貌同时变化",
+          "markdown": "义齿基托的成形面可保留打印台阶、切削纹和成形纹。将传统模压、切削和打印基托材料作组间比较时，表面纹理与配方同步变化。对照研究中，打印组表面粗糙度和附着相关读数较高。该组间结果可定位相应成品的表面表现，粗糙度的独立贡献需要同材或粗糙度匹配比较。\n\n粗糙度 Ra 汇总采样线上的高度起伏，方向性台阶和散在凹坑可产生相近的平均值。打印各层条纹的位置、走向与采样线关系，会影响材料间比较。这个实验对照的是完整的成形过程。若把粗糙度用于解释局部附着，还应说明测试面是模型的组织贴合侧还是外表面，以及轮廓测量所覆盖的区域和方向。 [原文结果与表面形貌](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "energy",
+          "title": "粗糙度与表面自由能的排序可交叉",
+          "markdown": "Silva 等比较两种打印基托与热聚合对照。NextDent 的 Ra 为 0.295 μm，热聚合对照为 0.329 μm，打印材料的表面自由能反而更高。两种打印材料的生物膜代谢读数均高于对照，但菌落计数的显著差异出现在 Cosmos 与对照之间。表面自由能为解释该组结果提供候选变量，配方与表面状态仍保留在同一比较中。\n\n| 原文均值 | Lucitone 对照 | NextDent | Cosmos |\n|---|---:|---:|---:|\n| Ra／μm | 0.329 | 0.295 | 0.315 |\n| 表面自由能／erg cm⁻² | 47.47 | 49.23 | 49.61 |\n| 附着相关计数／log₁₀ CFU/mL | 6.5 | 6.8 | 6.9 |\n\n计数是论文按材料汇总的测量。Cosmos 与对照的计数差为约 0.4 log₁₀ 单位，该差值与表面能排序一致。三种材料的化学成分、表面自由能及粗糙度均有差异，所以该结果支持进一步区分变量贡献的比较设计。 [原文图 2–4 与图 6](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "matched_family",
+          "title": "高粗糙度不等于组间附着差异已确定",
+          "markdown": "Fouda 等的六组材料中，打印 ASIGA 与打印 NextDent 的平均 Ra 分别为 0.92 μm 和 1.68 μm。NextDent 的接触角也最高，均值为 89.91°。材料间附着菌落计数的总体比较为 p = 0.074。组间粗糙度跨度可与有限的菌落计数分离度并存，材料差异的大小与不确定性应结合表中各组的离散程度判断。\n\n计数均值最高和最低分别为 NextDent 的 4.27 和 IvoCad 的 4.11 log₁₀ CFU/mL。这两个材料的均值差约 0.16 log₁₀ 单位。排序描述样本的观察结果，检验描述组间统计分离度。若希望判断不同材料在某个范围内表现相近，应预先按终点定义可接受差值并报告置信区间。适用的差值也取决于测量是早期附着，还是成膜后累积的生物量。 [原文表 2 与图 2](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "polishing",
+          "title": "同一打印聚合物的抛光对照",
+          "markdown": "Ferro 等在同一种 LCD 打印基托聚合物上比较抛光与保留粗糙纹理的表面。接触轮廓仪测得平均 Ra 为 0.28 μm 和 5.81 μm，非接触测量为 0.86 μm 和 5.25 μm。抛光组生物膜覆盖与代谢读数较低，菌落计数差异未达显著。抛光也改变了水接触角，因此该研究分离了配方因素，仍将多种表面属性一起改变。\n\n同一材料在抛光后可由接触和非接触轮廓得到不同的 Ra 数值，测量范围和方法属于比较条件。该实验使用平片和单一聚合物，且粗糙对照保留了模拟打印纹理的表面。将平片结果应用到完整基托时，组织侧的凹入区域、边缘过渡区与抛光外侧可以各自给出区域测量。 [原文图 1 和生物膜结果](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "endpoints",
+          "title": "附着数量、膜覆盖和代谢对应不同终点",
+          "markdown": "菌落计数描述给定测试条件下的可形成菌落单位。显微图像描述表面覆盖和厚度，代谢读数描述整体活性信号。在打印基托对照中，计数与代谢的组间比较结果不同，在同材抛光对照中，覆盖和代谢改变也可与相近计数共存。报告义齿基托结果时，可将组织接触面与抛光外表面分别标明，并注明测量属于初始附着还是后续生物膜。\n\n比较结果还需要保留材料与测量单位的配对。同批材料上的表面形貌、接触角与生物读数可建立材料状态与响应之间的关联。若测试同一片材料上的多个视野，多个图像用于描述该试片内部差异，独立样本数仍以试片和独立制造批次为基础。临床义齿性口炎涉及宿主、义齿贴合和使用条件，研究中的表面读数只覆盖接触界面的一个环节。 [原文图 4–7](ref:R02) · [同材抛光后的多终点比较](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "en": {
+      "title": "Can surface roughness explain differences in microbial attachment to printed denture bases?",
+      "direction": "Biocompatibility and microbial adhesion of dental resins",
+      "sections": [
+        {
+          "id": "texture",
+          "title": "Fabrication route and surface texture change together",
+          "markdown": "Denture-base fitting surfaces can retain layer steps, milling marks, or molding texture. Comparisons of compression-molded, milled, and printed resins change formulation alongside texture. One controlled comparison found higher roughness and adhesion-related readouts in its printed group. This establishes the behavior of those finished specimens. Isolating the contribution of roughness requires comparisons within the same material or across materials matched for roughness.\n\nRa summarizes height variation along a sampling trace, and directional steps or scattered pits can produce similar averages. Layer-line position and direction relative to the trace affect between-material comparisons. This experiment compares complete fabrication workflows. Relating roughness to local attachment also requires the tested surface to be identified as tissue-facing or external, with the profilometry region and direction specified. [Original results and surface morphology](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "energy",
+          "title": "Roughness and surface free energy can rank materials differently",
+          "markdown": "Silva and colleagues compared two printed bases with a heat-polymerized control. Ra was 0.295 μm for NextDent and 0.329 μm for the control, while both printed materials had higher surface free energy. Both printed materials gave higher biofilm metabolic signals, whereas the significant colony-count difference was between Cosmos and the control. Surface free energy is a candidate explanatory variable, with formulation and surface state still coupled in the comparison.\n\n| Original means | Lucitone control | NextDent | Cosmos |\n|---|---:|---:|---:|\n| Ra, μm | 0.329 | 0.295 | 0.315 |\n| Surface free energy, erg cm⁻² | 47.47 | 49.23 | 49.61 |\n| Attachment-related count, log₁₀ CFU/mL | 6.5 | 6.8 | 6.9 |\n\nThe paper pools counts by material. The Cosmos–control difference was about 0.4 log₁₀ units and followed the direction of the surface-energy contrast. Chemistry, surface free energy and roughness differ among the materials, motivating a design that can isolate their contributions. [Original Figs. 2–4 and 6](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "matched_family",
+          "title": "Greater roughness can coexist with uncertain adhesion differences",
+          "markdown": "Across Fouda and colleagues’ six material groups, the printed ASIGA and NextDent materials had mean Ra values of 0.92 μm and 1.68 μm. NextDent also had the highest mean contact angle, 89.91°. The overall comparison of adherent colony counts gave p = 0.074. A broad roughness range can coexist with limited separation in count data. The magnitude and uncertainty of material differences depend on the group-level spread tabulated in the paper.\n\nThe highest and lowest mean counts were 4.27 log₁₀ CFU/mL for NextDent and 4.11 for IvoCad, a difference of about 0.16 log₁₀ units. Rankings describe observed samples, while the test measures statistical separation. Testing whether two materials agree within bounds requires a prespecified endpoint-specific margin and confidence intervals. An appropriate bound depends on whether the comparison measures initial attachment or accumulated biofilm. [Original Table 2 and Fig. 2](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "polishing",
+          "title": "Polishing within one printed polymer",
+          "markdown": "Ferro and colleagues compared polished and rough-textured surfaces of one LCD-printed denture-base polymer. Contact profilometry gave mean Ra values of 0.28 and 5.81 μm, while non-contact measurements gave 0.86 and 5.25 μm. The polished specimens had lower biofilm coverage and metabolic signals, with no significant difference in colony counts. Polishing also changed the water contact angle, so holding formulation constant still left several surface properties changing together.\n\nContact and non-contact profilometers can yield different Ra values on the same polished material. Measurement scale and method are part of the comparison. This experiment used flat specimens, one polymer and a rough comparator designed to represent printing texture. On full bases, recessed tissue-facing regions, border transitions and polished external surfaces can be measured as separate regions. [Original Fig. 1 and biofilm results](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "endpoints",
+          "title": "Counts, coverage and metabolism represent different endpoints",
+          "markdown": "Colony counts estimate colony-forming units under the assay conditions. Microscopy describes surface coverage and thickness, and metabolic assays capture aggregate activity. Counts and metabolism distinguished different groups in the printed-base comparison. The within-polymer polishing comparison also found differences in coverage and metabolism alongside similar colony counts. Denture-base reports can identify the tissue-facing and polished external surfaces separately and specify whether a measurement represents initial attachment or subsequent biofilm.\n\nA comparison should preserve the link between material and measurement unit. Topography, contact angle and biological outcomes from the same batch connect surface state to response. Multiple images of one specimen characterize within-specimen variation, while the independent sample count is based on specimens and independent manufacturing batches. Clinical denture stomatitis also involves the host, denture fit and use conditions. The surface assay captures one part of that interface. [Original Figs. 4–7](ref:R02) · [Multiple endpoints after polishing one material](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "de": {
+      "title": "Kann die Oberflächenrauheit Unterschiede in der mikrobiellen Anhaftung an gedruckten Prothesenbasen erklären?",
+      "direction": "Biokompatibilität und mikrobielle Anhaftung dentaler Harze",
+      "sections": [
+        {
+          "id": "texture",
+          "title": "Fertigungsweg und Oberflächentopografie ändern sich gemeinsam",
+          "markdown": "Basale Prothesenflächen können Schichtstufen, Frässpuren oder Abformtexturen aufweisen. Beim Vergleich gepresster, gefräster und gedruckter Kunststoffe ändern sich Rezeptur und Textur gemeinsam. In einer kontrollierten Studie wies die gedruckte Gruppe höhere Rauheits- und Anhaftungswerte auf. Das beschreibt die geprüften Fertigoberflächen. Der eigenständige Beitrag der Rauheit erfordert einen Vergleich im selben Material oder zwischen Materialien mit vergleichbarer Rauheit.\n\nRa fasst Höhenabweichungen entlang einer Messspur zusammen. Gerichtete Stufen und verstreute Vertiefungen können ähnliche Mittelwerte liefern. Lage und Richtung der Schichtlinien relativ zur Spur beeinflussen den Materialvergleich. Das Experiment vergleicht vollständige Fertigungsabläufe. Für den Bezug zur lokalen Anhaftung ist anzugeben, ob die Probe gewebeseitig oder außen gemessen wurde und welchen Bereich und welche Richtung die Profilometrie erfasste. [Originalergebnisse und Oberflächenmorphologie](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "energy",
+          "title": "Rauheit und freie Oberflächenenergie können Materialien unterschiedlich ordnen",
+          "markdown": "Silva und Kollegen verglichen zwei gedruckte Basiskunststoffe mit einer heißpolymerisierten Kontrolle. Der Ra-Wert lag bei 0,295 μm für NextDent und bei 0,329 μm für die Kontrolle. Beide gedruckten Materialien hatten eine höhere freie Oberflächenenergie und höhere Stoffwechselsignale des Biofilms. Die Koloniezahl unterschied sich signifikant zwischen Cosmos und der Kontrolle. Die freie Oberflächenenergie kommt als erklärende Größe infrage, wobei Rezeptur und Oberflächenzustand gemeinsam variierten.\n\n| Originalmittelwerte | Lucitone-Kontrolle | NextDent | Cosmos |\n|---|---:|---:|---:|\n| Ra, μm | 0,329 | 0,295 | 0,315 |\n| Freie Oberflächenenergie, erg cm⁻² | 47,47 | 49,23 | 49,61 |\n| Anhaftungsbezogene Koloniezahl, log₁₀ KBE/ml | 6,5 | 6,8 | 6,9 |\n\nDie Arbeit fasst die Zählwerte je Material zusammen. Cosmos und Kontrolle unterschieden sich um etwa 0,4 log₁₀-Einheiten, entsprechend der Richtung des Oberflächenenergiekontrasts. Chemie, freie Oberflächenenergie und Rauheit unterschieden sich zwischen den Materialien. Ihr jeweiliger Beitrag erfordert einen Vergleich mit gezielt variierten Faktoren. [Originalabb. 2–4 und 6](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "matched_family",
+          "title": "Höhere Rauheit kann mit unsicheren Unterschieden in der Anhaftung einhergehen",
+          "markdown": "Unter den sechs Materialgruppen von Fouda und Kollegen lagen die mittleren Ra-Werte der gedruckten Materialien ASIGA und NextDent bei 0,92 μm beziehungsweise 1,68 μm. NextDent wies mit 89,91° auch den größten mittleren Kontaktwinkel auf. Der Gesamtvergleich der Koloniezahlen anhaftender Zellen ergab p = 0,074. Eine breite Rauheitsspanne kann mit geringer Trennung der Koloniezahlen einhergehen. Für Größenordnung und Unsicherheit der Unterschiede sind die Streuungen der einzelnen Gruppen relevant.\n\nDie höchsten und niedrigsten mittleren Koloniezahlen betrugen 4,27 log₁₀ KBE/ml für NextDent und 4,11 für IvoCad, ein Abstand von rund 0,16 log₁₀-Einheiten. Die Rangfolge beschreibt die Stichprobe, der Test die statistische Trennung. Die Prüfung der Übereinstimmung innerhalb eines Bereichs erfordert eine vorab definierte endpunktspezifische Grenze und Konfidenzintervalle. Die passende Grenze hängt davon ab, ob frühe Anhaftung oder angesammelter Biofilm untersucht wird. [Originaltabelle 2 und Abb. 2](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "polishing",
+          "title": "Poliervergleich am selben gedruckten Polymer",
+          "markdown": "Ferro und Kollegen verglichen polierte und rau texturierte Oberflächen desselben LCD-gedruckten Prothesenbasispolymers. Die mittleren Ra-Werte betrugen mit Kontaktprofilometrie 0,28 und 5,81 μm und bei berührungsloser Messung 0,86 und 5,25 μm. Die polierten Proben zeigten geringere Biofilmbedeckung und geringere Stoffwechselsignale. Die Koloniezahlen unterschieden sich statistisch nicht signifikant. Das Polieren veränderte auch den Wasserkontaktwinkel, sodass bei gleicher Rezeptur mehrere Oberflächeneigenschaften gemeinsam variierten.\n\nKontakt- und berührungslose Profilometer können am selben polierten Werkstoff unterschiedliche Ra-Werte liefern. Messskala und Methode sind Teil des Vergleichs. Der Versuch nutzte flache Proben, ein Polymer und eine raue Vergleichsfläche zur Darstellung der Drucktextur. An vollständigen Basen lassen sich konkave gewebeseitige Bereiche, Randübergänge und polierte Außenflächen getrennt auswerten. [Originalabb. 1 und Biofilmergebnisse](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "endpoints",
+          "title": "Koloniezahl, Bedeckung und Stoffwechsel sind unterschiedliche Endpunkte",
+          "markdown": "Die Koloniezahl beschreibt die unter den Testbedingungen koloniebildenden Einheiten. Mikroskopie beschreibt Bedeckung und Dicke, Stoffwechseltests die Gesamtaktivität. Beim Vergleich gedruckter Basiskunststoffe unterschieden die Koloniezahl und der Stoffwechsel unterschiedliche Gruppen. Auch im Poliervergleich desselben Polymers gingen Unterschiede in der Bedeckung und Stoffwechselaktivität mit ähnlichen Koloniezahlen einher. Studien können die gewebeseitige und die polierte Außenfläche getrennt bezeichnen und Messungen der anfänglichen Anhaftung oder der späteren Biofilmbildung zuordnen.\n\nIm Vergleich sollte die Zuordnung von Material und Messeinheit erhalten bleiben. Topografie, Kontaktwinkel und biologische Ergebnisse derselben Charge verbinden Oberflächenzustand und Reaktion. Mehrere Aufnahmen einer Probe beschreiben die Streuung innerhalb der Probe. Die unabhängige Stichprobengröße richtet sich nach Proben und Fertigungschargen. Klinische Prothesenstomatitis betrifft auch Wirt, Prothesensitz und Nutzung. Der Oberflächentest erfasst einen Teil dieser Grenzfläche. [Originalabb. 4–7](ref:R02) · [Mehrere Endpunkte nach dem Polieren desselben Materials](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    }
+  }
+}

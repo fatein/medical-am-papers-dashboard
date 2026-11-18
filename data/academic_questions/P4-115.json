@@ -1,0 +1,169 @@
+{
+  "schema_version": 2,
+  "question_id": "P4-115",
+  "p": "P4",
+  "version": 2,
+  "updated_at": "2026-11-19",
+  "evidence_cutoff": "2026-11-19",
+  "related_paper_ids": [
+    "doc_afc22ac4765e989d7516"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "3D surgical planning including patient-specific drilling guides for tibial plateau fractures",
+      "publisher": "Bone & Joint Open",
+      "year": 2024,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10797644/#f4",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Feasibility of Imaging-Based 3-Dimensional Models to Design Patient-Specific Osteosynthesis Plates and Drilling Guides",
+      "publisher": "JAMA Network Open",
+      "year": 2021,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7893502/",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Study on the efficacy of 3D printing technology combined with customized plates for the treatment of complex tibial plateau fractures",
+      "publisher": "Journal of Orthopaedic Surgery and Research",
+      "year": 2024,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11391824/",
+      "kind": "paper"
+    }
+  ],
+  "figures": [],
+  "locales": {
+    "zh": {
+      "title": "骨折钻孔导板能把哪些数字规划参数转移到术中，如何用 CT 验证？",
+      "direction": "骨折手术规划与个体化固定",
+      "sections": [
+        {
+          "id": "registration",
+          "title": "导板、固定板和骨段分别提供什么定位约束？",
+          "markdown": "胫骨平台研究保留标准可变角锁定板。导板包覆板体，骨面支撑翼提供位置约束，导向套管约束钻孔轴线。髋臼研究把患者特异性板与导板组合，并使用骨面延长部目视核对贴合。术后若同一板上的螺钉入口共同偏移，应检查整板姿态和骨段复位。 [胫骨导板图 1](ref:R01) · [髋臼导板图 2](ref:R02)\n\n术前 CT 层厚低于 1 mm 是胫骨可行性研究的入选条件；开放骨折和非手术病例排除。根据图 2，预报板位、进钉方向、所选螺钉长度三个字段；核查时须区分导板是否完全就座、是否仍沿计划孔位、是否在术中根据骨面接触改用其他规格。研究的适用病例首先受影像质量和暴露后骨面条件限制。 [研究对象与规划图 2](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "angle_entry",
+          "title": "入口偏移与轴线偏角如何同时读？",
+          "markdown": "胫骨平台研究的术后 CT 显示，螺钉方向偏差中位数为 3.4°（四分位范围 2.5–5.4°），入口偏移为 3.0 mm（2.0–5.5 mm）。前者描述方向，后者含板位影响。靠近关节面的螺钉还要比较尖端与关节面的最小间距，保留近关节区域的病例级结果。 [术后螺钉轨迹比较](ref:R01)\n\n图 4A 用两条轨迹的夹角，图 4B 用入口点之间的欧氏距离，指标的单位不同。15 例共有 83 枚导向螺钉，其中 72 枚（86.7%）的长度符合计划。若螺钉轴线偏转，同一角度在较长螺钉处会导致更大的尖端侧移，因此可按长度及目标骨窗宽度分层，检查计划误差在尾部是否仍位于骨内安全区。 [术后 CT 评价图 4](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "gap_step",
+          "title": "髋臼病例系列的骨折间隙和台阶",
+          "markdown": "10 例髋臼骨折的术后 CT 显示，间隙中位数由 20 降至 3 mm，关节面台阶由 5 降至 0 mm。另有 95 枚导向螺钉，长度差和方向差中位数分别为 1.7 mm 和 7.1°。补充图的轴位 CT 支持复位判读，导向误差需要按病例看分布。术前至术后的复位改善涵盖整套手术。 [术后 CT 与补充图](ref:R02)\n\n胫骨研究使用历史匹配病例作为复位对照。导向组与对照组的残余台阶中位数为 2.9 和 4.0 mm（p = 0.026），残余间隙为 3.1 和 4.7 mm（p = 0.126）。间隙测沿关节面的分离，台阶测相邻骨面高差。髋臼研究使用同一病例术前与术后的对照，不能与胫骨使用的组间差值合并。 [匹配历史对照的复位值](ref:R01) · [髋臼复位的病例内比较](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "imaging",
+          "title": "复位和器械偏差要用哪套坐标？",
+          "markdown": "先以未移动的骨面作术前、术后配准基准，比较整体骨块与板的位置。以对应板孔或板体作局部基准，可另查螺钉相对板的轴线偏差。板孔偏移、骨块配准误差和金属伪影都应记录。髋臼镜像可校核虚拟复位；胫骨标准板研究提供独立的板位和轴线指标。 [镜像和虚拟复位](ref:R02) · [标准板病例测量](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "comparison",
+          "title": "怎样判断验证的是设计、执行还是长期固定？",
+          "markdown": "定制板研究图 3 检查计划中螺钉是否偏向关节，图 6 用连续 X 线呈现病例随访。跨研究比较可分别登记计划允许的安全余量、术后 CT 中实际最小余量、脱离导向方案的螺钉以及随访时的复位维持。按患者汇总并保留每枚螺钉的数据，才能看清多枚螺钉是否共享同一个板位误差。 [规划图与随访图](ref:R03) · [术后螺钉长度与角度](ref:R02)\n\n更接近术前计划的螺钉位置与较好的长程活动能力也应分开验证。髋臼研究在术后 3 个月和 1 年报告短版肌肉骨骼功能问卷，1 年分数与术后间隙、台阶无显著相关。原文补充表将影像复位对应到患者功能，适合检查高龄、合并症和既往活动受限是否解释个别影像良好但功能恢复有限的病例。 [随访补充表](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "verification",
+          "title": "逐病例如何记录导向未按规划实施的情况？",
+          "markdown": "一份可复核的记录可逐例保留三个坐标层级。**骨**记录主骨段及关节碎片的配准和残余台阶。**板**记录入口点位移向量及板平移、旋转。**螺钉**记录孔编号、计划与实际长度、方向、尖端余量和更改原因。术前至术后发生的全板误差在第一、第二层可见，偏离某个孔道的误差则集中在第三层。研究报告最好给出每例轨迹数、无法分割的数量和理由。 [螺钉与板位的测量定义](ref:R01) · [髋臼研究 CT 方法](ref:R02)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "en": {
+      "title": "Which fracture-planning parameters do drilling guides transfer, and how can CT verify them?",
+      "direction": "Fracture surgery planning and patient-specific fixation",
+      "sections": [
+        {
+          "id": "registration",
+          "title": "What locates the guide, plate and bone fragments?",
+          "markdown": "The tibial study retained a standard variable-angle locking plate. A guide enveloped the plate, bone-contact extensions constrained its position and sleeves constrained the drilling axis. The acetabular series combined a patient-specific plate with a guide and used bone-contact extensions for visual fit checks. A shared displacement of screw entry points on one plate calls for review of plate pose and fragment reduction. [Tibial guide, Fig. 1](ref:R01) · [Acetabular guide, Fig. 2](ref:R02)\n\nThe tibial study required CT slices thinner than 1 mm and excluded open fractures and nonoperative cases. Figure 2 shows planned plate position, screw direction and selected length. Record whether the guide fully seated, the planned hole was used and screw size changed after assessment of bone contact. Imaging quality and available bone surfaces delimit applicability. [Eligibility and planning Fig. 2](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "angle_entry",
+          "title": "How should entry-point and axis errors be read together?",
+          "markdown": "On postoperative CT in the tibial study, median screw-axis deviation was 3.4° (IQR 2.5–5.4°) and entry-point deviation was 3.0 mm (2.0–5.5 mm). The former describes orientation, and the latter captures part of the plate-position error. For periarticular screws, a separate case-level measure is the minimum tip-to-joint distance. [Postoperative trajectory comparison](ref:R01)\n\nFigure 4A measures the angle between trajectories, and Fig. 4B uses the Euclidean distance between entry points. Across 15 cases, 72 of 83 guided screws (86.7%) matched the planned length. The same angular error produces a larger lateral shift at the tip of a longer screw. Stratify by screw length and corridor width to inspect margin in the tail of the error distribution. [Postoperative CT assessment, Fig. 4](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "gap_step",
+          "title": "Acetabular gap and step-off in the case series",
+          "markdown": "In 10 acetabular cases, postoperative CT showed a reduction in median fracture gap from 20 to 3 mm and step-off from 5 to 0 mm. Among 95 guided screws, median length and direction differences were 1.7 mm and 7.1°. The axial CT images in the supplement document the reduction. Trajectory deviations should be inspected by case. The preoperative–postoperative change captures the entire operation. [Postoperative CT and supplement](ref:R02)\n\nThe tibial study used historical matched controls for reduction. Residual step-off medians were 2.9 and 4.0 mm (p = 0.026), and residual gaps were 3.1 and 4.7 mm (p = 0.126). A gap measures separation along the joint surface, while step-off measures adjacent surface height difference. The acetabular study compared each patient before and after surgery, a different estimand from the tibial group comparison. [Reduction versus matched historical controls](ref:R01) · [Within-case acetabular reduction](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "imaging",
+          "title": "Which coordinate frames address reduction and hardware error?",
+          "markdown": "Register pre- and postoperative scans on stable bone to locate fragments and the plate in a common frame. A separate plate-based registration can check screw axes relative to the plate. Record hole displacement, fragment registration error and metal artefact. The acetabular study used contralateral mirroring to check virtual reduction, while the tibial study measured entry and axis deviations separately. [Mirroring and virtual reduction](ref:R02) · [Standard-plate measurements](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "comparison",
+          "title": "Which outcomes distinguish design, execution and maintained fixation?",
+          "markdown": "Figure 3 in the custom-plate study depicts the planned screw-to-joint relationship. Figure 6 documents serial radiographs in one case. Across studies, record the planned safety margin, minimal achieved clearance on CT, screws that deviated from the guiding plan, and maintenance of reduction at follow-up. Retain individual screw data within each patient to detect common plate-position errors. [Planning and follow-up figures](ref:R03) · [Postoperative screw length and angle](ref:R02)\n\nVerify closeness to planned screw position separately from long-term function. The acetabular series measured the Short Musculoskeletal Function Assessment at 3 months and 1 year, with no significant correlation between the 1-year scores and postoperative gap or step-off. The supplement links imaging and function. Age, comorbidity and pre-injury limitation can be checked in cases with good reduction but less functional recovery. [Follow-up supplement](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "verification",
+          "title": "How can deviations from the guide plan be recorded by case?",
+          "markdown": "A verifiable case record can retain three coordinate levels. **Bone** records principal segment and articular-fragment registration with residual step-off. **Plate** records entry-point displacement and plate translation and rotation. **Screw** records hole identity, planned and achieved lengths, trajectory, tip clearance and reasons for changes. Whole-plate error appears in the first two levels; a local trajectory deviation appears in the third. Report trajectory count and reasons any screws could not be segmented. [Screw and plate measurement definitions](ref:R01) · [Acetabular CT methods](ref:R02)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "de": {
+      "title": "Welche Planungsparameter übertragen Bohrschablonen bei Frakturen, und wie lassen sie sich im CT prüfen?",
+      "direction": "Frakturoperationsplanung und patientenspezifische Fixation",
+      "sections": [
+        {
+          "id": "registration",
+          "title": "Wodurch werden Schablone, Platte und Knochenfragmente positioniert?",
+          "markdown": "Die Tibiastudie behielt eine winkelvariable Standard-Verriegelungsplatte bei. Die Bohrschablone umfasste die Platte, knöcherne Auflagen führten ihre Position und Hülsen begrenzten die Bohrachse. In der Azetabulumserie erleichterten knöcherne Auflagen die Sichtkontrolle beim Einsatz einer patientenspezifischen Platte. Verschieben sich die Eintrittspunkte mehrerer Schrauben gemeinsam, sind Plattenlage und Fragmentreposition zu prüfen. [Tibiaschablone, Abb. 1](ref:R01) · [Azetabulumschablone, Abb. 2](ref:R02)\n\nDie Tibiastudie verlangte eine CT-Schichtdicke unter 1 mm und schloss offene Frakturen und nicht operierte Fälle aus. Abb. 2 zeigt Plattenlage, Schraubenrichtung und gewählte Länge. Bei der Prüfung sind Schablonensitz, genutztes Loch und Änderungen der Schraubengröße zu erfassen. Bildqualität und freiliegende Knochenflächen begrenzen die Übertragbarkeit. [Einschluss und Planungsabbildung 2](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "angle_entry",
+          "title": "Wie sind Eintrittspunkt- und Achsfehler gemeinsam zu lesen?",
+          "markdown": "Im postoperativen CT der Tibiastudie betrug die mediane Schraubenachsabweichung 3,4° (Quartilsabstand 2,5–5,4°) und die Abweichung des Eintrittspunkts 3,0 mm (2,0–5,5 mm). Erstere beschreibt die Richtung, letztere erfasst einen Anteil des Plattenlagefehlers. Für gelenknahe Schrauben gehört der geringste Abstand zwischen Spitze und Gelenkfläche als eigener fallbezogener Messwert dazu. [Postoperativer Trajektorienvergleich](ref:R01)\n\nAbb. 4A misst den Winkel zwischen Trajektorien, Abb. 4B den euklidischen Abstand zwischen Eintrittspunkten. Bei 15 Fällen entsprachen 72 von 83 geführten Schrauben (86,7 %) der geplanten Länge. Derselbe Winkelfehler erzeugt bei einer längeren Schraube mehr seitliche Abweichung an der Spitze. Nach Länge und Breite des Knochenkorridors stratifizieren und Sicherheitsabstände bei größeren Abweichungen prüfen. [Postoperative CT-Prüfung, Abb. 4](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "gap_step",
+          "title": "Frakturspalt und Gelenkstufe in der Azetabulumserie",
+          "markdown": "In 10 Azetabulumfällen sank der mediane Frakturspalt im CT von 20 auf 3 mm und die Gelenkstufe von 5 auf 0 mm. Bei 95 geführten Schrauben betrugen die medianen Abweichungen der Länge und Richtung 1,7 mm und 7,1°. Axiale CT-Aufnahmen im Supplement dokumentieren die Reposition. Trajektorienabweichungen sind fallbezogen auszuwerten. Die Veränderung vor und nach der Operation umfasst den gesamten Eingriff. [Postoperatives CT und Supplement](ref:R02)\n\nDie Tibiastudie verwendete historische gematchte Kontrollen. Die mediane Reststufe betrug 2,9 gegenüber 4,0 mm (p = 0,026), der mediane Restspalt 3,1 gegenüber 4,7 mm (p = 0,126). Der Spalt beschreibt die Trennung entlang, die Stufe den Höhenversatz an der Gelenkfläche. Die Azetabulumstudie verglich dieselben Personen vor und nach der Operation und prüfte damit eine andere Größe. [Reposition gegenüber historischen Kontrollen](ref:R01) · [Azetabulumreposition im Fallvergleich](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "imaging",
+          "title": "Welche Bezugssysteme erfassen Reposition und Implantatabweichung?",
+          "markdown": "Prä- und postoperative Aufnahmen an stabilem Knochen registrieren, um Fragmente und Platte gemeinsam zu lokalisieren. Eine weitere Registrierung an der Platte erfasst Schraubenachsen relativ zur Platte. Abweichungen der Plattenlöcher, Registrierungsfehler und Metallartefakte sind mitzuerfassen. Die Azetabulumstudie prüfte die virtuelle Reposition anhand der gespiegelten Gegenseite, die Tibiastudie erfasste Eintrittspunkt und Achse getrennt. [Spiegelung und virtuelle Reposition](ref:R02) · [Messungen an der Standardplatte](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "comparison",
+          "title": "Welche Endpunkte trennen Entwurf, Umsetzung und Erhalt der Fixation?",
+          "markdown": "Abb. 3 der Studie zu angepassten Platten zeigt die geplante Schraubenlage zur Gelenkfläche. Abb. 6 zeigt den Röntgenverlauf eines Falls. Für Vergleiche lassen sich geplanter Sicherheitsabstand, kleinster erreichter CT-Abstand, Abweichungen vom Führungsplan und Erhalt der Reposition getrennt erfassen. Schraubendaten bleiben den jeweiligen Personen zugeordnet, damit gemeinsame Plattenlagefehler erkennbar werden. [Planungs- und Verlaufsabbildungen](ref:R03) · [Postoperative Schraubenlänge und -winkel](ref:R02)\n\nPlanungsnähe der Schrauben und längerfristige Funktion getrennt prüfen. Die Azetabulumserie erhob das Short Musculoskeletal Function Assessment nach 3 Monaten und 1 Jahr. Die Werte nach 1 Jahr korrelierten nicht signifikant mit postoperativem Spalt oder Stufe. Das Supplement verknüpft Bildgebung und Funktion. Alter, Begleiterkrankungen und vorbestehende Einschränkungen können Fälle mit guter Reposition und geringer Erholung einordnen. [Supplement zur Nachbeobachtung](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "verification",
+          "title": "Wie lassen sich Abweichungen vom Schablonenplan fallbezogen erfassen?",
+          "markdown": "Ein prüfbarer Datensatz hält drei Bezugsebenen fest. **Knochen** erfasst Registrierung von Hauptsegment und Gelenkfragmenten sowie Reststufe. **Platte** erfasst Eintrittspunktvektoren, Translation und Rotation. **Schraube** erfasst Loch, geplante und erreichte Länge, Achse, Spitzenabstand und Änderungsgrund. Plattenweite Fehler zeigen sich auf den ersten beiden Ebenen, einzelne Trajektorienabweichungen auf der dritten. Anzahl und Gründe nicht segmentierbarer Schrauben angeben. [Messdefinitionen für Schraube und Platte](ref:R01) · [CT-Methoden der Azetabulumstudie](ref:R02)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    }
+  }
+}

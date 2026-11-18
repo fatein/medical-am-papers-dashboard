@@ -1,0 +1,215 @@
+{
+  "schema_version": 2,
+  "question_id": "P1-130",
+  "p": "P1",
+  "version": 2,
+  "updated_at": "2026-11-19",
+  "evidence_cutoff": "2026-11-19",
+  "related_paper_ids": [
+    "doc_ba5c73a3de1fa61167d8"
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "title": "3D printing of stents via two-photon polymerization",
+      "publisher": "Scientific Reports",
+      "year": 2025,
+      "url": "https://doi.org/10.1038/s41598-025-07190-4",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "A novel paclitaxel eluting bioresorbable vascular stent with a super flexible stent structure and round cross section struts fabricated using 3D printing technology with a rotating platform",
+      "publisher": "Regenerative Biomaterials",
+      "year": 2025,
+      "url": "https://doi.org/10.1093/rb/rbaf073",
+      "kind": "paper"
+    }
+  ],
+  "figures": [],
+  "locales": {
+    "zh": {
+      "title": "打印血管支架的支柱几何、回缩与径向支撑如何关联？",
+      "direction": "血管与腔道打印支架",
+      "sections": [
+        {
+          "id": "geometry",
+          "title": "亚毫米成品的尺度",
+          "markdown": "Grigorianaitė 等用双光子聚合制成长度 5 mm、直径 0.7 或 0.9 mm 的小血管原型，支柱薄至 50 μm。这组数据界定可实现的尺度。解读机械性能时，需把成品的支柱截面、连接处和单元形状与设计模型对应。相同的名义支柱宽度也可以对应不同的截面面积和局部刚度。 [微型成品与表征](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "loading",
+          "title": "载荷方向决定观察到的变形",
+          "markdown": "亚毫米原型论文图 6 把轴向压缩、拉伸、侧向弯曲与镊子式局部压缩分别模拟。侧向弯曲和局部压缩给出较大的反力，但加载面积和位移定义随试验改变。图 6 的流体计算使用另一组边界条件。其速度场描述模型内的流动，不能由单个局部反力读数推导。 [原文图 6](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "recoil",
+          "title": "回缩、轴向缩短与弯曲各测什么",
+          "markdown": "Liu 等制造直径约 3 mm、支柱约 140 μm 的圆截面 PLCL 支架。表 4 的轴向缩短为 3.57 ± 0.72%（n = 10），测量压握状态与球囊扩张到名义直径时的长度差。评价径向回缩则需要在相同截面比较卸载前后的直径，并说明取值时刻。图 1 的 180° 弯曲无折曲示范又使用了不同的载荷状态。 [原文图 1 与表 4](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "time",
+          "title": "降解时支撑与质量为何不同步",
+          "markdown": "PLCL 原文图 5 的体外径向强度从 652 mmHg 升至约 1 个月的 1,182 ± 141 mmHg，至 6 个月降为 169 mmHg。同期重均分子量留存约 28%，表 5 的总质量约留存 96.44%。径向读数先升后降，分子量更早下降，而总质量变化很小。用重量法单独描述降解，会遗漏可直接改变支撑的变化。 [原文图 5 与表 5](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "material-control",
+          "title": "纤维试验如何把材料效应与构型效应分开",
+          "markdown": "原文表 3 对照了直径均约 0.230 mm 的挤出纤维，每种材料 10 件。PLCL 与 PLLA 的杨氏模量分别为 1,943 ± 135 和 2,017 ± 176 MPa，断裂伸长率分别为 289 ± 141% 与 8 ± 2%。小应变斜率近似，但断裂变形相差较大。纤维结果支持把材料延展性列为独立因素。器件的局部峰值应变还受到支柱弯曲半径、连接位置及通道约束影响。对成品进行压握—扩张并定位最先出现的裂纹，可以把纤维断裂数据关联到具体构件。 [原文图 2 与表 3](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "model-boundary",
+          "title": "圆柱材料拟合为什么要与晶格仿真分开",
+          "markdown": "双光子聚合研究图 5 先用五次圆柱试验所得压缩响应拟合超弹性模型，随后用这个模型模拟图 6 中的晶格变形。材料标定使用圆柱形试件，整支架的预测又增加了单元、连接和接触条件。若打印支柱存在径向截面差或连接点固化梯度，使用整体圆柱材料参数会把误差传递至局部应力。对比同批材料试件与同批真实支架，可以定位材料拟合和成品几何各自的误差来源。 [原文图 5–6](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "lumen-endpoints",
+          "title": "通流与支撑读数怎样互补",
+          "markdown": "亚毫米计算的速度场与结构仿真分开求解。PLCL 研究把体外径向强度、显微形态和动物血管腔观察并列。前者适于研究设计如何改变局部流动，后者可区分成品变形与组织占据。比如 PLCL 浸泡样件的支柱在 180 天观察期未见明显断裂，对应时间的径向强度却低于初值。样件外形完整和通流安全之间，还隔着实际管腔尺寸、壁面接触和组织反应等变量。 [流体仿真](ref:R01) · [原文图 4–5 与动物观察](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "radial-protocol",
+          "title": "径向支撑读数如何随协议变化",
+          "markdown": "PLCL 论文的径向强度以 mmHg 报告，亚毫米仿真在局部压缩和弯曲中报告反力。将外径设定、加载头接触宽度和变形终点一起记录，才能判断两种方法中的载荷是否有可重复的对应关系。对于同一器件，还可分别报告在给定压缩比例下的径向力，以及解除该压缩后恢复的直径。测定支撑与恢复各自的曲线，可以识别抗压大而卸载后残留变形也大的构型。 [局部反力](ref:R01) · [径向强度实验](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "comparability",
+          "title": "跨尺度比较应配对哪些数据",
+          "markdown": "两个研究中，尺寸、聚合物、单元和加载工装都不同。要识别支柱几何的贡献，可在一致材料与外径下改变截面或连接布局，同时测量卸载后直径、扩张后长度与径向力–直径曲线，并按老化时间分层。亚毫米论文的 7 天大鼠观察提供短期组织记录，PLCL 的体外降解曲线提供时间依赖力学读数，两类终点需要各自验证。 [短期动物观察](ref:R01) · [PLCL 降解台架数据](ref:R02)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "en": {
+      "title": "How do strut geometry, recoil and radial support relate in printed vascular stents?",
+      "direction": "3D-printed vascular and luminal stents",
+      "sections": [
+        {
+          "id": "geometry",
+          "title": "Geometry at submillimetre scale",
+          "markdown": "Grigorianaitė and colleagues used two-photon polymerization to make 5 mm long prototypes for small vessels, with diameters of 0.7 or 0.9 mm and struts as thin as 50 μm. These dimensions show the scale achieved. Mechanical interpretation requires mapping the as-built strut cross-sections, junctions and cell shapes onto the design model. The same nominal strut width can describe different cross-sectional areas and local stiffnesses. [Microscale fabrication and characterization](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "loading",
+          "title": "Loading direction changes the deformation",
+          "markdown": "Figure 6 of the microscale study models axial compression, tension, lateral bending and tweezer-like local compression separately. Lateral bending and local compression produced larger reaction forces under their respective loading areas and displacement definitions. The flow model in the same figure uses a separate set of boundary conditions. Its velocity field describes flow within the model and cannot be inferred from one local reaction-force measurement. [Original Figure 6](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "recoil",
+          "title": "Recoil, foreshortening and bending measure different responses",
+          "markdown": "Liu and colleagues made a roughly 3 mm PLCL stent with circular struts around 140 μm thick. Table 4 gives foreshortening of 3.57 ± 0.72% (n = 10), measured between the crimped length and the length at nominal balloon expansion. Radial recoil calls for paired diameter measurements at the same cross-section before and after unloading, with a specified measurement time. The 180° kink-free bending demonstration in Figure 1 uses another loading condition. [Original Figure 1 and Table 4](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "time",
+          "title": "Why support and mass follow different time courses",
+          "markdown": "In Figure 5, in vitro radial strength of PLCL rose from 652 mmHg to 1,182 ± 141 mmHg at about 1 month and fell to 169 mmHg by 6 months. About 28% of the initial weight-average molecular weight remained, alongside about 96.44% of total mass in Table 5. Strength rose and then declined, molecular weight fell earlier, and total mass changed little. Mass loss alone misses changes that directly affect support. [Original Figure 5 and Table 5](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "material-control",
+          "title": "What fiber tests reveal about material and architecture",
+          "markdown": "Original Table 3 compares 10 extruded fibers per material, both around 0.230 mm in diameter. Young's moduli were 1,943 ± 135 MPa for PLCL and 2,017 ± 176 MPa for PLLA. Elongation at break was 289 ± 141% and 8 ± 2%, respectively. Small-strain slopes were similar, but deformation at failure differed substantially. The fiber data separate material ductility as a factor. Local device strain also depends on strut curvature, junction position and constraints. Locating the first cracks after crimping and expansion would link fiber failure to specific structural features. [Original Figure 2 and Table 3](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "model-boundary",
+          "title": "Why separate cylinder calibration from lattice simulations",
+          "markdown": "Figure 5 of the two-photon study fits a hyperelastic model to compression data from 5 cylinder measurements. Figure 6 then uses the model to simulate lattice deformation. Material calibration uses cylinders. Whole-stent predictions also depend on cells, junctions and contact. If printed struts vary in cross-section or have gradients in cure at junctions, applying bulk cylinder parameters can shift the predicted local stress. Pairing material coupons and stents from the same print batch can help locate errors in both material fitting and as-built geometry. [Original Figures 5–6](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "lumen-endpoints",
+          "title": "How flow and support readouts complement each other",
+          "markdown": "The microscale work calculates its velocity field separately from structural simulations. The PLCL work reports in vitro radial strength, microscopic appearance and animal lumen observations alongside each other. The first supports design-related flow analysis. The second can distinguish device deformation from tissue occupation. For instance, the immersed PLCL specimens showed no obvious strut breakage over 180 days, yet radial strength at that stage was below its starting value. Lumen size, wall contact and tissue response intervene between intact appearance and flow safety. [Flow simulation](ref:R01) · [Original Figures 4–5 and animal observations](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "radial-protocol",
+          "title": "How radial support depends on the test protocol",
+          "markdown": "The PLCL paper reports radial strength in mmHg, while the microscale simulations report reaction forces for local compression and bending. Outer diameter, contact-head width and deformation endpoint are needed to determine whether these loads can be related reproducibly. The same device can be characterized by radial force at a fixed compression fraction and diameter recovered after release. The paired responses identify designs with both high compression resistance and substantial permanent deformation. [Local reaction forces](ref:R01) · [Radial-strength test](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "comparability",
+          "title": "What to pair in a cross-scale comparison",
+          "markdown": "The studies differ in dimensions, polymers, cell patterns and loading fixtures. To isolate strut geometry, a comparison could vary cross-section or junction layout at fixed material and outer diameter, then pair post-unloading diameter, expanded length and radial force–diameter curves by ageing time. The microscale paper's seven-day rat observations describe short-term tissue findings. The PLCL degradation curve describes time-dependent mechanics in vitro. Each endpoint needs its own validation. [Short-term animal observations](ref:R01) · [PLCL degradation bench data](ref:R02)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "de": {
+      "title": "Wie hängen Steggeometrie, Rückfederung und radiale Stützwirkung bei gedruckten Gefäßstents zusammen?",
+      "direction": "3D-gedruckte Stents für Gefäße und andere Körperlumina",
+      "sections": [
+        {
+          "id": "geometry",
+          "title": "Geometrie im Submillimetermaßstab",
+          "markdown": "Grigorianaitė und Kollegen fertigten mittels Zweiphotonenpolymerisation 5 mm lange Prototypen für kleine Gefäße mit Durchmessern von 0,7 oder 0,9 mm und Stegen bis hinunter zu 50 μm. Diese Maße belegen den erreichten Fertigungsmaßstab. Für die mechanische Auswertung sind reale Stegquerschnitte, Knoten und Zellformen der Konstruktionsgeometrie zuzuordnen. Dieselbe nominelle Stegbreite kann mit unterschiedlichen Querschnittsflächen und lokalen Steifigkeiten einhergehen. [Mikrofertigung und Charakterisierung](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "loading",
+          "title": "Die Lastrichtung bestimmt die Verformung",
+          "markdown": "Abbildung 6 der Mikrostudie modelliert axiale Kompression, Zug, seitliche Biegung und punktuelle Kompression durch eine Pinzette getrennt. Seitliche Biegung und lokale Kompression erzeugten bei den jeweiligen Lastflächen und Verschiebungsdefinitionen höhere Reaktionskräfte. Das Strömungsmodell derselben Abbildung hat eigene Randbedingungen. Sein Geschwindigkeitsfeld beschreibt die modellierte Strömung und lässt sich aus einer einzelnen lokalen Kraftmessung nicht ableiten. [Originalabbildung 6](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "recoil",
+          "title": "Rückfederung, Längsverkürzung und Biegung erfassen verschiedene Reaktionen",
+          "markdown": "Liu und Kollegen fertigten einen etwa 3 mm großen PLCL-Stent mit runden Stegen von etwa 140 μm Stärke. Tabelle 4 nennt eine Längsverkürzung von 3,57 ± 0,72% (n = 10), gemessen zwischen dem komprimierten Zustand und der Ballonexpansion auf Nenndurchmesser. Für die radiale Rückfederung werden am selben Querschnitt Durchmesser vor und nach Entlastung zu einem festgelegten Zeitpunkt verglichen. Die knickfreie Biegung um 180° in Abbildung 1 stellt einen weiteren Lastfall dar. [Originalabbildung 1 und Tabelle 4](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "time",
+          "title": "Warum Stützwirkung und Masse zeitlich auseinanderlaufen",
+          "markdown": "Abbildung 5 zeigt in vitro zunächst einen Anstieg der radialen Festigkeit von 652 mmHg auf 1182 ± 141 mmHg nach etwa 1 Monat und danach einen Abfall auf 169 mmHg nach 6 Monaten. Vom Gewichtsmittel der Molmasse blieben etwa 28%, von der Gesamtmasse laut Tabelle 5 rund 96,44%. Die Festigkeit stieg zuerst, die Molmasse nahm früh ab, und die Gesamtmasse änderte sich wenig. Eine reine Massenmessung erfasst mechanisch relevante Veränderungen daher nur teilweise. [Originalabbildung 5 und Tabelle 5](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "material-control",
+          "title": "Was Faserprüfungen über Material und Struktur zeigen",
+          "markdown": "Originaltabelle 3 vergleicht je 10 extrudierte Fasern mit etwa 0,230 mm Durchmesser. Die Elastizitätsmoduln betrugen 1943 ± 135 MPa für PLCL und 2017 ± 176 MPa für PLLA, die Bruchdehnungen 289 ± 141% bzw. 8 ± 2%. Die Anfangssteigungen waren ähnlich, die Verformungen beim Bruch unterschieden sich deutlich. Die Faserdaten weisen die Materialduktilität als eigenen Faktor aus. Die lokale Dehnung im Bauteil hängt auch von Stegkrümmung, Knotenlage und Einspannung ab. Der Ort erster Risse nach Crimpen und Expansion könnte den Faserbruch mit bestimmten Konstruktionsmerkmalen verbinden. [Originalabbildung 2 und Tabelle 3](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "model-boundary",
+          "title": "Warum Zylinderkalibrierung und Gittersimulation getrennt zu lesen sind",
+          "markdown": "Abbildung 5 der Zweiphotonenstudie passt ein hyperelastisches Modell an 5 Kompressionsmessungen an Zylindern an. In Abbildung 6 wird damit die Gitterverformung simuliert. Die Materialkalibrierung beruht auf Zylindern. Die Vorhersage für den ganzen Stent hängt zusätzlich von Zellen, Knoten und Kontakt ab. Variierende Stegquerschnitte oder Aushärtungsgradienten an Knoten können die lokale Spannungsvorhersage bei Verwendung von Zylinderparametern verschieben. Materialproben und Stents aus derselben Druckcharge helfen, Abweichungen in Kalibrierung und realer Geometrie einzugrenzen. [Originalabbildungen 5–6](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "lumen-endpoints",
+          "title": "Wie Strömungs- und Stützmaße sich ergänzen",
+          "markdown": "Die Mikrostudie berechnet das Geschwindigkeitsfeld getrennt von der Struktursimulation. Die PLCL-Studie stellt radiale Festigkeit in vitro, mikroskopisches Aussehen und Gefäßlumenbefunde im Tiermodell nebeneinander. Erstere erlaubt strömungsbezogene Designanalysen, letztere kann Bauteilverformung von Gewebeeinwuchs unterscheiden. Bei den eingelegten PLCL-Proben war über 180 Tage kein offensichtlicher Stegbruch sichtbar, obwohl die radiale Festigkeit dann unter dem Ausgangswert lag. Zwischen intakter Form und sicherer Strömung liegen tatsächliche Lumenweite, Wandkontakt und Gewebereaktion. [Strömungssimulation](ref:R01) · [Originalabbildungen 4–5 und Tierbeobachtungen](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "radial-protocol",
+          "title": "Wie der Versuchsablauf den radialen Stützwert beeinflusst",
+          "markdown": "Die PLCL-Studie gibt radiale Festigkeit in mmHg an, die Mikrosimulationen Reaktionskräfte bei lokaler Kompression und Biegung. Außendurchmesser, Lastflächenbreite und Verformungsendpunkt sind nötig, um die Lastfälle reproduzierbar zueinander in Bezug zu setzen. Für denselben Stent lassen sich Radialkraft bei festem Kompressionsanteil und Rückstelldurchmesser nach Entlastung erfassen. Beide Antworten machen Strukturen mit hohem Druckwiderstand und ausgeprägter Restverformung sichtbar. [Lokale Reaktionskräfte](ref:R01) · [Radialfestigkeitsprüfung](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "comparability",
+          "title": "Welche Daten für den Maßstabsvergleich zusammengehören",
+          "markdown": "Die Studien unterscheiden sich in Abmessungen, Polymeren, Zellmustern und Prüfaufnahmen. Der Beitrag der Steggeometrie ließe sich bei konstantem Material und Außendurchmesser durch Variation von Querschnitt oder Knotenanordnung prüfen. Je Alterungszeitpunkt wären Durchmesser nach Entlastung, expandierte Länge und radiale Kraft-Durchmesser-Kurve gemeinsam zu erfassen. Die siebentägige Rattenbeobachtung liefert kurzfristige Gewebebefunde, die PLCL-Abbaukurve dagegen zeitabhängige In-vitro-Mechanik. Beide Endpunkte erfordern eine eigene Validierung. [Kurzzeitbeobachtung im Tiermodell](ref:R01) · [PLCL-Abbau auf dem Prüfstand](ref:R02)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    }
+  }
+}

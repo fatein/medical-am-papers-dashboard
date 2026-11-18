@@ -1,0 +1,157 @@
+{
+  "schema_version": 2,
+  "question_id": "P2-126",
+  "p": "P2",
+  "version": 2,
+  "updated_at": "2026-11-19",
+  "evidence_cutoff": "2026-11-19",
+  "related_paper_ids": [],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Comparison of dimensional accuracy between direct-printed and thermoformed aligners",
+      "publisher": "Korean Journal of Orthodontics",
+      "year": 2022,
+      "url": "https://synapse.koreamed.org/upload/synapsexml/1123kjod/pdf/kjod-52-4-249.pdf",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Embrasure aligner fit and thickness in 3D-printed and thermoformed aligners: a microcomputed tomography study",
+      "publisher": "Progress in Orthodontics",
+      "year": 2025,
+      "url": "https://link.springer.com/article/10.1186/s40510-025-00602-1#Tab1",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Effects of Printing Layer Thickness and Thermocycling on the Mechanical, Morphological, Optical, and Dimensional Properties of Directly Printed Clear Aligners",
+      "publisher": "Polymers",
+      "year": 2026,
+      "url": "https://www.mdpi.com/2073-4360/18/18/2281",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Effect of print orientation on the dimensional accuracy of orthodontic aligners printed 3-dimensionally",
+      "publisher": "American Journal of Orthodontics and Dentofacial Orthopedics",
+      "year": 2021,
+      "url": "https://www.sciencedirect.com/science/article/pii/S088954062100411X",
+      "kind": "paper"
+    }
+  ],
+  "figures": [],
+  "locales": {
+    "zh": {
+      "title": "打印方向、层厚与内表面设计如何改变直接打印矫治器的贴合？",
+      "direction": "直接打印正畸矫治器",
+      "sections": [
+        {
+          "id": "global",
+          "title": "全弓网格偏差衡量数字形状再现",
+          "markdown": "Koenig 与 Choi 等从同一参考 STL 制作三种未设置牙移动的矫治器。内表面通过光学扫描获取，以最佳拟合配准，整体 RMS 为直接打印 0.140 mm、两种热成形片材 0.188 和 0.209 mm。这一比较衡量自由状态内表面对参考形状的复现。试样喷粉、配准区域和数字参照均属于该测量定义。\n\n原文每组 12 件，在 9 个解剖标志点上比较距离。直接打印组的点位平均绝对差从 0.079 到 0.224 mm，而其全弓 RMS 为 0.140 mm。局部范围与全弓分数因此应并列。对于设计上带有主动位移的矫治器，可分别与目标数字牙弓和实际起始牙列比较，目标面的制造误差与起始状态下因激活而出现的间隙对应不同问题。 [原文比较表与配准方法](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "orientation",
+          "title": "成形方向影响偏差分布",
+          "markdown": "SLA 台架研究用名义厚度 500 μm 的矫治器形状比较了 8 个打印角度。角度影响了正负偏差、标准差和落在 ±250 μm 范围外的网格点比例。该研究使用灰色模型树脂，结果可用于理解该几何与打印条件下的偏差分布。临床矫治树脂还需要在相同计量框架下单独测量。\n\n方向性偏差可按唇舌侧、后牙咬合面和颈缘分别记录，以便辨别偏差在全弓中分布的位置。报告打印角度时，还需要给出牙弓在平台上的前后方向，因为相同倾角可以使前牙或后牙更靠近平台。将多个角度组归入同一倾角可能掩盖前后方向差异。\n\n原文偏差图中，0° 与 90° 组前段偏差较小。该读数受整套光学扫描与最佳拟合策略影响。对于成品对比，支撑去除痕所在侧、修边线和扫描时的自由状态宜记录在偏差图旁，才能判断局部异常对应何种工艺状态。 [原文方向试验](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "seating",
+          "title": "就位后的邻间隙从何处开始测量？",
+          "markdown": "微 CT 研究在相同模型上测量就位后的邻间隙。唇侧中切牙与侧切牙之间，0.05 mm 内表面偏置打印组到牙接触点的间隙为 0.32 mm，无偏置打印和热成形为 0.50 和 0.53 mm。该组间差异在腭侧未检出。截面需对应牙位、唇腭侧与冠颈高度，且到牙接触点的间隙和到邻面的距离是不同测量。\n\n同一原文在第二前磨牙与第一磨牙邻间区测得，到接触点的距离为偏置打印 0.40–0.74 mm、无偏置打印 0.86–1.66 mm、热成形 0.85–2.25 mm。该区到邻面距离则仅为打印组 0.03–0.09 mm、热成形组 0.09–0.11 mm。两个测量使用不同几何参照，解释图表时应保留相应定义，避免把范围当成相同间隙的复测。 [原文表 1–2 与截面定义](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "thickness",
+          "title": "局部成品厚度与设计厚度",
+          "markdown": "同一研究的邻间区实测厚度在打印组为 1.13–2.43 mm，热成形组为 0.32–0.66 mm。两工艺的厚度基准分别为数字设计和原始片材，厚度比应结合各自分母和测量位置解读。邻间局部厚度与就位间隙一起描述接触几何，全弓平均厚度会淡化差异位置。\n\n研究中，打印组设计厚度为 0.5 mm，热成形片材初始厚度为 0.75 mm。邻间区厚度受到内外表面形状和局部截面选择共同影响。这些局部截面适合分析邻接位置的几何差异。确认厚度是否改变接触刚度还需匹配材料模量、局部曲率和就位状态。 [原文表 3 的邻间厚度](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "aging",
+          "title": "热循环条件可能改变层厚比较",
+          "markdown": "一项体外研究将成品设计厚度固定为 0.50 mm，比较 50、100、150 μm 三种打印层厚。150 μm 组内表面 RMS 均值在未热循环和热循环条件下分别为 0.40 和 0.81 mm。打印层厚与矫治器的成品壁厚分属工艺和结构变量。配合自由状态偏差与就位间隙时，还应明确两类试样是否经过相同的老化条件。\n\n原文还区分正确度与精密度。前者以参考网格为基准，后者以同组独立成品之间的两两比较为基准。热循环前后的组均值和离散度应一起读取，评估同一工作流是否既保持目标形状，也能稳定复制。若同一成品经过重复测量，保留个体变化量可识别少数局部翘曲是否主导了平均变化。 [原文表 9–10](ref:R03)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "en": {
+      "title": "How do build orientation, layer thickness and intaglio design affect the fit of directly printed aligners?",
+      "direction": "Directly printed orthodontic aligners",
+      "sections": [
+        {
+          "id": "global",
+          "title": "Whole-arch mesh error measures digital shape reproduction",
+          "markdown": "Koenig, Choi and colleagues fabricated three passive aligner groups from the same reference STL. Optical scans of the inner surfaces were best-fit registered. Overall RMS was 0.140 mm for direct prints and 0.188 and 0.209 mm for the thermoformed sheets. This assesses reproduction of the reference shape by the unseated inner surface. Scan spray, registration region and digital reference are part of the measurement definition.\n\nThe study used 12 appliances per group and distances at 9 anatomical landmarks. Mean absolute deviations across landmarks in direct prints ranged from 0.079 to 0.224 mm, with a whole-arch RMS of 0.140 mm. The location-specific range complements the global score. For an active aligner, comparison against the target arch measures fabrication error, while comparison with the starting arch also incorporates mismatch intentionally introduced for activation. [Original comparison table and registration](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "orientation",
+          "title": "Build orientation affects the deviation distribution",
+          "markdown": "An SLA bench study printed a nominal 500 μm aligner geometry at 8 angles. Angle affected positive and negative deviations, standard deviation and the proportion of mesh points outside ±250 μm. The study used a gray model resin, so the results characterize the tested geometry and build conditions. Clinical aligner resins require their own measurements under the same metrology framework.\n\nDirectional errors can be reported by facial or lingual side, posterior occlusal surface and cervical margin to locate deviations within the arch. A print angle also needs the anterior–posterior direction of the arch on the platform. Either the anterior or posterior teeth can be nearer the platform at the same tilt. Pooling these orientations by tilt can obscure directional differences.\n\nThe original deviation maps show smaller anterior deviations for 0° and 90°. These readings depend on the optical scan and best-fit workflow. Recording support-mark location, trim line and the unseated state next to a deviation map helps associate localized defects with the corresponding process state. [Original orientation experiment](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "seating",
+          "title": "Where is the seated embrasure gap measured from?",
+          "markdown": "A micro-CT study measured seated embrasure gaps on the same model geometry. Labially between the central and lateral incisors, the distance to the tooth contact point was 0.32 mm with a 0.05 mm intaglio offset, 0.50 mm without offset and 0.53 mm after thermoforming. The study detected no corresponding palatal difference. Sections should identify tooth site, labial or palatal side and coronal or cervical level. Distance to a contact point and distance to a proximal surface are distinct measurements.\n\nAt the second-premolar–first-molar embrasure, the same paper recorded contact-point distances of 0.40–0.74 mm for offset prints, 0.86–1.66 mm for non-offset prints and 0.85–2.25 mm after thermoforming. Distances to the proximal surface at that site were 0.03–0.09 mm for printed groups and 0.09–0.11 mm for thermoforming. These measurements use different geometric references and should retain their definitions when reading the table. [Original Tables 1–2 and section definitions](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "thickness",
+          "title": "Local finished thickness and design thickness",
+          "markdown": "In the same study, measured embrasure thickness was 1.13–2.43 mm in the printed groups and 0.32–0.66 mm in the thermoformed group. Thickness ratios use the digital design and starting sheet as different denominators and depend on measurement site. Local thickness and seated gap jointly describe contact geometry. A whole-arch thickness average obscures where differences occur.\n\nThe printed groups used a 0.5 mm digital design thickness, while the thermoforming sheet started at 0.75 mm. Embrasure thickness depends on both surface shapes and the local section. These sections characterize interproximal geometry. Evaluating how thickness changes contact stiffness requires matching material modulus, local curvature and seating. [Embrasure thickness in original Table 3](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "aging",
+          "title": "Thermocycling can change the layer-thickness comparison",
+          "markdown": "An in vitro experiment held nominal appliance thickness at 0.50 mm and compared printing layers of 50, 100 and 150 μm. For the 150 μm workflow, the mean intaglio RMS was 0.40 mm without thermocycling and 0.81 mm with it. Print layer height is a process variable, while appliance wall thickness is a structural variable. Comparisons of unseated deviation and seated gap should also match aging conditions.\n\nThe paper also distinguishes trueness against the reference mesh from precision estimated by pairwise comparison of independently manufactured appliances. Group averages and spread before and after thermocycling indicate whether a workflow both preserves target shape and reproduces it consistently. If individual appliances are remeasured, specimen-level changes show whether a few local distortions account for the mean change. [Original Tables 9–10](ref:R03)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "de": {
+      "title": "Wie verändern Bauausrichtung, Schichtdicke und Innenflächendesign die Passung direkt gedruckter Aligner?",
+      "direction": "Direkt gedruckte kieferorthopädische Aligner",
+      "sections": [
+        {
+          "id": "global",
+          "title": "Vollbogen-Netzabweichungen erfassen die digitale Formwiedergabe",
+          "markdown": "Koenig, Choi und Kollegen fertigten aus derselben Referenz-STL drei Gruppen passiver Aligner. Die optisch erfassten Innenflächen wurden per Best Fit ausgerichtet. Der Gesamt-RMS betrug 0,140 mm beim Direktdruck und 0,188 sowie 0,209 mm bei den thermoformierten Folien. Damit wird die Wiedergabe der Referenzform durch die noch nicht aufgesetzte Innenfläche erfasst. Scanspray, Registrierungsregion und digitale Referenz gehören zur Messdefinition.\n\nDie Studie verwendete 12 Apparaturen je Gruppe und bestimmte Abstände an 9 anatomischen Messpunkten. Die mittleren absoluten Abweichungen des Direktdrucks reichten je Messpunkt von 0,079 bis 0,224 mm, bei einem Gesamt-RMS von 0,140 mm. Die lokale Spanne ergänzt den Gesamtwert. Bei aktiven Alignern erfasst der Vergleich mit dem Zielbogen den Fertigungsfehler. Der Vergleich mit dem Ausgangsbogen umfasst zusätzlich die für die Aktivierung eingebrachte Abweichung. [Originalvergleichstabelle und Registrierung](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "orientation",
+          "title": "Die Bauausrichtung beeinflusst die Verteilung der Abweichungen",
+          "markdown": "Eine SLA-Laborstudie druckte eine Alignerform mit 500 μm Nenndicke in 8 Winkeln. Der Winkel beeinflusste positive und negative Abweichungen, die Standardabweichung und den Anteil der Netzpunkte außerhalb von ±250 μm. Das geprüfte graue Modellharz beschreibt zusammen mit Geometrie und Bauparametern den Geltungsbereich. Für klinische Alignerharze sind eigene Messungen mit demselben metrologischen Ansatz erforderlich.\n\nRichtungsabhängige Fehler können nach vestibulärer oder lingualer Seite, posteriorer Okklusalfläche und zervikalem Rand angegeben werden. Zum Druckwinkel gehört die anterior-posteriore Lage des Bogens auf der Plattform. Bei derselben Neigung können die vorderen oder hinteren Zähne näher an der Plattform liegen. Eine Zusammenfassung allein nach Winkel kann Richtungsunterschiede verdecken.\n\nIn den Originalabweichungskarten zeigten 0° und 90° kleinere anteriore Abweichungen. Die Messwerte hängen von optischem Scan und Best-Fit-Ablauf ab. Die gemeinsame Angabe von Stützspur, Randlinie und nicht aufgesetztem Zustand hilft, lokale Auffälligkeiten dem Fertigungszustand zuzuordnen. [Originalversuch zur Bauausrichtung](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "seating",
+          "title": "Wo beginnt die Messung des Interdentalspalts am aufgesetzten Aligner?",
+          "markdown": "Eine Mikro-CT-Studie maß Interdentalspalten auf derselben Modellgeometrie nach dem Aufsetzen. Labial zwischen mittlerem und seitlichem Schneidezahn betrug der Abstand zum Zahnkontaktpunkt mit 0,05 mm Innenflächenversatz 0,32 mm, ohne Versatz 0,50 mm und nach Thermoformen 0,53 mm. Palatinal wurde kein entsprechender Unterschied festgestellt. Schnittlage, labiale oder palatinale Seite sowie koronale oder zervikale Höhe definieren die Messung. Abstand zum Kontaktpunkt und zur Approximalfläche sind unterschiedliche Messgrößen.\n\nIm Interdentalraum zwischen zweitem Prämolaren und erstem Molaren betrugen die Abstände zum Kontaktpunkt laut derselben Arbeit 0,40–0,74 mm beim Druck mit Versatz, 0,86–1,66 mm ohne Versatz und 0,85–2,25 mm nach Thermoformen. Zur Approximalfläche lagen die Abstände dort bei 0,03–0,09 mm in den Druckgruppen und 0,09–0,11 mm in der Thermoformgruppe. Beide Messungen haben unterschiedliche geometrische Referenzen, die bei der Tabellenauswertung beibehalten werden sollten. [Originaltabellen 1–2 und Schnittdefinitionen](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "thickness",
+          "title": "Lokale Fertigdicke und Konstruktionsdicke",
+          "markdown": "In derselben Studie betrug die gemessene Dicke im Interdentalbereich 1,13–2,43 mm in den Druckgruppen und 0,32–0,66 mm in der Thermoformgruppe. Dickenverhältnisse beziehen sich auf den digitalen Entwurf beziehungsweise die Ausgangsfolie und hängen vom Messort ab. Lokale Dicke und Spalt nach dem Aufsetzen beschreiben gemeinsam die Kontaktgeometrie. Ein Vollbogenmittelwert verwischt die räumliche Verteilung.\n\nDie Druckgruppen verwendeten eine digitale Solldicke von 0,5 mm, die Thermoformfolie eine Ausgangsdicke von 0,75 mm. Die interdentale Dicke hängt von Innen- und Außenform sowie der gewählten Schnittebene ab. Die Schnitte beschreiben die Approximalgeometrie. Zur Prüfung des Dickeneffekts auf die Kontaktsteifigkeit müssen Modul, lokale Krümmung und Aufsetzzustand berücksichtigt werden. [Interdentale Dicke in Originaltabelle 3](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "aging",
+          "title": "Thermozyklierung kann den Schichtdickenvergleich verändern",
+          "markdown": "Ein In-vitro-Versuch hielt die Nenndicke des Aligners bei 0,50 mm und verglich Druckschichten von 50, 100 und 150 μm. Bei 150 μm Schichtdicke lag der mittlere Innenflächen-RMS ohne Thermozyklierung bei 0,40 mm und damit bei 0,81 mm nach Thermozyklierung. Druckschichthöhe ist eine Prozessgröße, die Wanddicke des Aligners eine Strukturgröße. Beim Vergleich der freien Innenfläche mit dem Spalt nach dem Aufsetzen sind die Alterungsbedingungen anzugeben.\n\nDie Arbeit unterscheidet Richtigkeit gegenüber dem Referenznetz von Präzision im Paarvergleich unabhängig gefertigter Aligner. Gruppenmittelwerte und Streuung vor und nach Thermozyklierung zeigen, ob ein Ablauf die Zielform erhält und sie reproduzierbar fertigt. Bei Wiederholungsmessung desselben Aligners zeigen individuelle Änderungen, ob wenige lokale Verformungen die mittlere Änderung bestimmen. [Originaltabellen 9–10](ref:R03)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    }
+  }
+}

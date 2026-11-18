@@ -1,0 +1,157 @@
+{
+  "schema_version": 2,
+  "question_id": "P7-129",
+  "p": "P7",
+  "version": 2,
+  "updated_at": "2026-11-19",
+  "evidence_cutoff": "2026-11-19",
+  "related_paper_ids": [],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Shaping Performance of XP4 versus ProTaper Next in C-Shaped Canals: A Micro-CT Study of 3D-Printed Mandibular Second Molar Replicas",
+      "publisher": "Clinical and Experimental Dental Research",
+      "year": 2026,
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/cre2.70434",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Comparative evaluation of the shaping performance of three NiTi rotary systems in distolingual canals of 3D-printed three-rooted mandibular first molars",
+      "publisher": "Frontiers in Dental Medicine",
+      "year": 2026,
+      "url": "https://www.frontiersin.org/journals/dental-medicine/articles/10.3389/fdmed.2026.1742809/full",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Micro-computed tomographic evaluation of the shaping ability of three nickel-titanium rotary systems in the middle mesial canal of mandibular first molars: an ex vivo study based on 3D printed tooth replicas",
+      "publisher": "BMC Oral Health",
+      "year": 2024,
+      "url": "https://link.springer.com/article/10.1186/s12903-024-04024-z#Tab2",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Influence of access cavity design on instrumentation efficiency in 3D-printed replicas of mandibular incisors with Vertucci Type III canals",
+      "publisher": "BMC Oral Health",
+      "year": 2026,
+      "url": "https://link.springer.com/article/10.1186/s12903-026-07991-7#Tab1",
+      "kind": "paper"
+    }
+  ],
+  "figures": [],
+  "locales": {
+    "zh": {
+      "title": "根管几何与开髓通路何时改变器械预备效果的排序？",
+      "direction": "根管器械评价用打印牙齿复制模型",
+      "sections": [
+        {
+          "id": "rank_reversal",
+          "title": "C 形根管中体积增量的排序反转",
+          "markdown": "同一研究用 ProTaper Next（PTN）与 XP4 比较两种下颌第二磨牙原型，每种原型每个器械组 8 件复制牙，微 CT 前后配准比较管腔体积与未预备比例。\n\n| 原型与终点 | PTN | XP4 |\n|---|---:|---:|\n| 连续 C 形，体积增量 | 7.4% | 11.6% |\n| 不连续型，体积增量 | 23.1% | 15.8% |\n| 连续 C 形，未预备面积 | 42.0% | 25.5% |\n| 不连续型，未预备面积 | 32.0% | 31.6% |\n\n原文表 2 中两个原型的体积比较 p 分别为 0.001 和 0.041。第二原型的未预备面积比较 p = 0.931。体积反转描述按两种被复制几何分组的结果，面积终点则表现为差距缩小。\n\n两个原型的术前均值也不同。连续型的 PTN 与 XP4 两组约为 37.1 和 36.6 mm³，不连续型为 56.2 和 56.8 mm³。按绝对去除体积，连续型为 2.7 对 4.3 mm³，不连续型为 13.0 对 8.9 mm³，方向与相对增量一致。不连续型还出现两件 PTN 相关的临界壁变薄和两件 XP4 相关的器械分离。由于每个几何只有一颗原型，这些事件对应所测原型和操作条件。 [原文表 2 与图 4](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "curvature",
+          "title": "远舌根曲度改变效应幅度",
+          "markdown": "三根下颌第一磨牙远舌根研究采用 21.9° 和 37.5° 两种曲度原型。PTU 在两原型中的平均变直分别为 5.4° 和 11.0°，WOG 为 2.5° 和 4.8°，OS 介于两者。PTU 的最大切削厚度均值从 0.28 增至 0.39 mm，最大切削位置集中在分叉下 2–3 mm。与 C 形试验不同，这里两种曲度中的相对次序一致，较大的曲度伴随更大的绝对变直。两颗原型的尺寸和形态同时变化，因此曲度的独立贡献需要多原型设计。\n\n该研究中 PTU 的体积增加均值为 106.9% 和 174.6%，WOG 为 30.8% 和 78.6%。这些相对量受初始空间影响，比较余壁风险时还需看各分段的剩余厚度。将较大的管腔增量、较强的变直和薄壁区的材料去除放到一起，才能判断观察到的是整体扩大还是特定侧壁的切削集中。 [原文曲度分层、变直与剩余壁厚](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "middle_mesial",
+          "title": "近中中央根管的薄壁风险",
+          "markdown": "下颌第一磨牙近中中央根管的比较每组 6 件。PTG 的管腔变直及体积和面积百分比增加高于 OS 与 TF。研究又在分叉下 1、2、3 mm 测量近中及远中剩余壁厚，发现部分比较中 PTG 组厚度更低。整体体积增量能反映新增空间，危险区剩余壁厚需要在明确截面上单独追踪。远舌根研究使用 PTU，近中中央根管研究使用 PTG，二者应保持器械身份区分。\n\n原文对根管变直的总体比较报告 p = 0.002。变直以预备前后角度计算，主弯曲的角度可以改变而局部位移集中在另一高度。将角度变化与根管中心线偏移、多个横断面的厚度并列，可以区分器械沿原曲线扩大与切削偏向局部一侧。 [原文表 1–3 的壁厚和形态](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "access",
+          "title": "开髓通路与器械可达性",
+          "markdown": "Vertucci III 型下颌切牙研究交叉比较 2 种根管原型、3 种开髓设计与 2 种器械。较宽原型的唇侧入路用 PTN 能预备所有舌侧管但无法预备颊侧管，换用 WOG 后两管均完成的数量为 8/8，同时出现 7/8 的根管变直。预备成功率与形态保持可以分离。若有管腔不可达，应记录其发生频数，并明确形态统计是否只使用已成功预备的根管。\n\n该文还报告较窄原型中，传统舌侧入路与 PTN 组合可预备 8/8 的颊侧管，舌侧管为 0/8，并出现 6/8 的根尖穿孔。事件与器械组合需按原型和入路分别呈现，尤其是在器械断裂后的试样有替补时。该组观察估计指定复制模型内的限制，向不同自然牙外推还需要更多独立原型。 [原文图 3 与表 1 的通路和事件](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "interaction",
+          "title": "用多个独立原型估计器械与几何的交互",
+          "markdown": "同一原型复制件为器械提供相同起点。要估计全类根管中的几何效应，可按峡部连续性、最小管径、曲度和薄壁位置选多个独立牙源原型，再在原型内平衡器械与开髓方式。可分终点报告器械差和器械 × 几何的交互，并区分复制件重复、同牙多根管与独立牙源。配合绝对切削量、相对体积变化和不可达或断裂事件，能判断排序是随几何改变，还是随评价终点改变。\n\n当同一比较中体积增量、未预备比例和最薄壁厚各自给出不同排序，研究可报告每种几何中所有预定终点的效应及区间。扩大率所用的初始管腔体积、壁面积分母与分割阈值需一致定义。无法预备的根管可以保留在可达性分析中，使建模结果对应全部尝试。 [同器械跨两种形态的比较](ref:R01) · [开髓与器械的交叉比较](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "en": {
+      "title": "When do canal geometry and access change the ranking of instrument shaping outcomes?",
+      "direction": "Printed tooth replicas for endodontic instrument evaluation",
+      "sections": [
+        {
+          "id": "rank_reversal",
+          "title": "Reversal in volume gain across C-shaped canals",
+          "markdown": "The study compared ProTaper Next (PTN) and XP4 in two mandibular second molar prototypes, with 8 replicas per instrument group and prototype. Registered micro-CT scans before and after instrumentation quantified volume change and untouched area.\n\n| Prototype and endpoint | PTN | XP4 |\n|---|---:|---:|\n| Continuous C shape, volume gain | 7.4% | 11.6% |\n| Discontinuous shape, volume gain | 23.1% | 15.8% |\n| Continuous C shape, untouched area | 42.0% | 25.5% |\n| Discontinuous shape, untouched area | 32.0% | 31.6% |\n\nOriginal Table 2 gives p = 0.001 and 0.041 for the volume comparisons. The untouched-area comparison in the second prototype gave p = 0.931. Volume rankings reversed across the two geometries, while the difference in untouched area diminished.\n\nMean baseline volumes also differed between prototypes. PTN and XP4 groups started at roughly 37.1 and 36.6 mm³ in the continuous prototype and 56.2 and 56.8 mm³ in the discontinuous prototype. Absolute removal was 2.7 versus 4.3 mm³ and 13.0 versus 8.9 mm³, respectively, retaining the direction of the relative contrast. The discontinuous prototype also had two PTN-associated critical wall-thinning events and two XP4 instrument separations. With one source tooth per geometry, these event counts apply to the prototypes and bench conditions tested. [Original Table 2 and Fig. 4](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "curvature",
+          "title": "Distolingual root curvature changes the magnitude of effects",
+          "markdown": "A study of the distolingual root in three-rooted mandibular first molars used prototypes with curvatures of 21.9° and 37.5°. Mean straightening was 5.4° and 11.0° for PTU, and 2.5° and 4.8° for WOG. OS was intermediate. Mean maximum cutting thickness for PTU increased from 0.28 to 0.39 mm, with maximum cutting concentrated 2–3 mm below the furcation. The ordering held across the two curvatures, while absolute straightening increased. Independently isolating curvature requires multiple prototypes because size and shape can also differ.\n\nMean volume gains were 106.9% and 174.6% for PTU and 30.8% and 78.6% for WOG. These percentages depend on starting space, so thin-wall risk also requires regional residual thickness. Reading enlargement, straightening and local material removal together helps distinguish an overall volume effect from concentrated cutting of a particular wall. [Original curvature strata, straightening and residual wall thickness](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "middle_mesial",
+          "title": "Thin walls in middle mesial canals",
+          "markdown": "A middle mesial canal comparison in mandibular first molars used 6 specimens per group. PTG produced greater straightening and percentage volume and area gains than OS and TF. Mesial and distal residual walls were measured 1, 2 and 3 mm below the furcation, with thinner PTG walls in some contrasts. Volume gain captures added space, while the danger-zone wall requires a defined cross-section. PTU in the distolingual study and PTG in this study are distinct instrument systems.\n\nThe overall test for canal straightening gave p = 0.002. Straightening compares angles before and after preparation, while displacement can be concentrated at a different depth. Side-by-side measures of angle change, centerline displacement and wall thickness at multiple sections can distinguish enlargement along the original curve from locally biased cutting. [Original Tables 1–3 on wall thickness and shape](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "access",
+          "title": "Access path and instrument reach",
+          "markdown": "A Vertucci III mandibular incisor study crossed 2 canal prototypes, 3 access designs and 2 instruments. In the wider prototype with labial access, PTN prepared all lingual canals and reached none of the buccal canals. WOG reached and prepared both canals in 8/8, accompanied by straightening in 7/8. Successful preparation and shape preservation can diverge. Inaccessible canals warrant a count and a clear statement of whether shape statistics include only successfully prepared canals.\n\nIn the narrower prototype, traditional lingual access with PTN prepared 8/8 buccal canals and 0/8 lingual canals, and there were 6/8 apical perforations. Events should be shown by prototype and access combination, especially when specimens were replaced after instrument separation. These counts characterize limitations in the specified replicas. Extending them to natural teeth with varied anatomy requires more independent prototypes. [Access and events in original Fig. 3 and Table 1](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "interaction",
+          "title": "Estimating instrument–geometry interactions across independent prototypes",
+          "markdown": "Replicas give instruments a common starting shape within a prototype. To estimate geometry effects across a canal class, independent teeth can supply multiple prototypes stratified by isthmus continuity, minimum lumen, curvature and thin-wall location. Instruments and access designs can then be balanced within each prototype. Endpoint-specific treatment contrasts and instrument × geometry interactions should distinguish replicated casts, multiple canals within teeth and independent source teeth. Reporting absolute removal, relative volume change and events such as inaccessibility or fracture helps distinguish ranking changes by anatomy from ranking changes by endpoint.\n\nWhere volume gain, untouched fraction and minimum wall thickness yield different rankings, studies can report effects and intervals for all prespecified endpoints within each geometry. Baseline volume, the wall-area denominator and segmentation thresholds need consistent definitions. Canals that proved inaccessible can remain in the analysis of access success so its estimate covers all attempts. [Same systems across two canal shapes](ref:R01) · [Crossed access and instrument comparison](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "de": {
+      "title": "Wann verändern Kanalgeometrie und Zugang die Rangfolge der Präparationsergebnisse von Instrumenten?",
+      "direction": "Gedruckte Zahnrepliken zur Prüfung endodontischer Instrumente",
+      "sections": [
+        {
+          "id": "rank_reversal",
+          "title": "Umgekehrte Rangfolge des Volumenzuwachses in C-förmigen Kanälen",
+          "markdown": "Die Studie verglich ProTaper Next (PTN) und XP4 in zwei Prototypen unterer zweiter Molaren mit je 8 Repliken pro Instrumentengruppe und Prototyp. Registrierte Mikro-CT-Aufnahmen vor und nach der Präparation quantifizierten Volumenzuwachs und unbearbeitete Fläche.\n\n| Prototyp und Endpunkt | PTN | XP4 |\n|---|---:|---:|\n| Kontinuierliche C-Form, Volumenzuwachs | 7,4% | 11,6% |\n| Diskontinuierliche Form, Volumenzuwachs | 23,1% | 15,8% |\n| Kontinuierliche C-Form, unbearbeitete Fläche | 42,0% | 25,5% |\n| Diskontinuierliche Form, unbearbeitete Fläche | 32,0% | 31,6% |\n\nOriginaltabelle 2 nennt p = 0,001 und 0,041 für die Volumenvergleiche. Bei der unbearbeiteten Fläche des zweiten Prototyps lag p bei 0,931. Die Volumenrangfolge kehrte sich zwischen den beiden Geometrien um, während sich der Unterschied bei der unbearbeiteten Fläche verkleinerte.\n\nAuch die mittleren Ausgangsvolumina unterschieden sich zwischen den Prototypen. PTN und XP4 starteten bei der kontinuierlichen Form mit etwa 37,1 und 36,6 mm³, bei der diskontinuierlichen Form mit 56,2 und 56,8 mm³. Der absolute Abtrag lag bei 2,7 gegenüber 4,3 mm³ und bei 13,0 gegenüber 8,9 mm³. Die Richtung des relativen Kontrasts blieb erhalten. Beim diskontinuierlichen Prototyp wurden zudem zwei kritische Wandverdünnungen unter PTN und zwei Instrumentenseparationen unter XP4 beobachtet. Bei einem Ursprungszahn pro Geometrie gelten diese Ereigniszahlen für die geprüften Prototypen und Laborbedingungen. [Originaltabelle 2 und Abb. 4](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "curvature",
+          "title": "Distolinguale Wurzelkrümmung verändert die Effektgröße",
+          "markdown": "Eine Studie der distolingualen Wurzel dreiwurzeliger unterer erster Molaren verwendete Prototypen mit Krümmungen von 21,9° und 37,5°. Die mittlere Begradigung betrug für PTU 5,4° und 11,0° sowie für WOG 2,5° und 4,8°. OS lag dazwischen. Die mittlere maximale Abtragsdicke für PTU stieg von 0,28 auf 0,39 mm. Der stärkste Abtrag lag 2–3 mm unterhalb der Furkation. Die Rangfolge blieb erhalten, die absolute Begradigung nahm zu. Für einen unabhängigen Krümmungseffekt sind mehrere Prototypen nötig, da Größe und Form ebenfalls variieren können.\n\nDie mittleren Volumenzunahmen betrugen 106,9% und 174,6% für PTU sowie 30,8% und 78,6% für WOG. Die Prozente hängen vom Ausgangslumen ab. Für das Dünnwandrisiko zählt daher auch die regionale Restwandstärke. Erweiterung, Begradigung und lokaler Abtrag zusammen unterscheiden einen Gesamteffekt von konzentriertem Abtrag an einer bestimmten Wand. [Originalbefunde zu Krümmung, Begradigung und Restwandstärke](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "middle_mesial",
+          "title": "Dünne Wände in mittleren mesialen Kanälen",
+          "markdown": "Ein Vergleich mittlerer mesialer Kanäle unterer erster Molaren verwendete 6 Proben pro Gruppe. PTG führte zu stärkerer Begradigung sowie höheren relativen Volumen- und Flächenzunahmen als OS und TF. Die mesiale und distale Restwand wurde 1, 2 und 3 mm unterhalb der Furkation gemessen und war bei PTG in einigen Vergleichen dünner. Volumenzuwachs erfasst zusätzlichen Raum, die Wand der Gefahrenzone erfordert definierte Schnitte. PTU in der distolingualen Studie und PTG in dieser Studie sind unterschiedliche Instrumentensysteme.\n\nDer Gesamttest für die Kanalbegradigung ergab p = 0,002. Begradigung vergleicht Winkel vor und nach Präparation, während Verschiebung in anderer Tiefe konzentriert sein kann. Winkeländerung, Mittellinienversatz und Wandstärke in mehreren Schnitten helfen, Erweiterung entlang der Ausgangskrümmung von lokal einseitigem Abtrag zu unterscheiden. [Originaltabellen 1–3 zu Wandstärke und Form](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "access",
+          "title": "Zugangspfad und Erreichbarkeit durch Instrumente",
+          "markdown": "Eine Studie an Unterkieferschneidezähnen mit Vertucci III kombinierte 2 Kanalprototypen, 3 Zugangsformen und 2 Instrumente. Beim weiteren Prototyp mit labialem Zugang präparierte PTN alle lingualen Kanäle und erreichte keinen bukkalen Kanal. Mit WOG wurden in 8/8 beide Kanäle präpariert, bei 7/8 trat eine Begradigung auf. Präparationserfolg und Formerhalt können auseinanderfallen. Nicht erreichbare Kanäle sollten gezählt werden. Für Formstatistiken ist anzugeben, ob nur erfolgreich präparierte Kanäle eingingen.\n\nBeim engeren Prototyp präparierte der traditionelle linguale Zugang mit PTN 8/8 bukkale und 0/8 linguale Kanäle. Es traten 6/8 apikale Perforationen auf. Ereignisse sind nach Prototyp und Zugangskombination auszuweisen, insbesondere wenn Proben nach Instrumentenseparation ersetzt wurden. Die Zahlen beschreiben die Grenzen der geprüften Repliken. Für natürlich variierende Anatomie sind mehr unabhängige Prototypen nötig. [Zugang und Ereignisse in Originalabb. 3 und Tabelle 1](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "interaction",
+          "title": "Instrument-Geometrie-Interaktionen über unabhängige Prototypen schätzen",
+          "markdown": "Repliken schaffen dieselbe Ausgangsform je Prototyp. Für Geometrieeffekte in einer Kanalklasse können unabhängige Zähne mehrere Prototypen nach Isthmuskontinuität, minimalem Lumen, Krümmung und Dünnwandlage liefern. Instrumente und Zugangsformen lassen sich innerhalb jedes Prototyps ausbalancieren. Endpunktspezifische Kontraste und Instrument×Geometrie-Interaktionen sollten Repliken, mehrere Kanäle eines Zahns und unabhängige Ursprungszähne unterscheiden. Absoluter Abtrag, relative Volumenänderung und Ereignisse wie fehlende Erreichbarkeit oder Instrumentenbruch helfen, anatomie- und endpunktabhängige Rangwechsel zu unterscheiden.\n\nWenn Volumenzuwachs, unbearbeiteter Anteil und minimale Restwandstärke unterschiedliche Rangfolgen ergeben, können Effekte und Intervalle für alle vorab definierten Endpunkte je Geometrie angegeben werden. Ausgangsvolumen, Bezugsfläche und Segmentierungsschwellen brauchen einheitliche Definitionen. Nicht erreichbare Kanäle können in der Erreichbarkeitsanalyse bleiben, damit die Schätzung alle Versuche erfasst. [Gleiche Systeme über zwei Kanalformen](ref:R01) · [Gekreuzter Zugangs- und Instrumentenvergleich](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    }
+  }
+}

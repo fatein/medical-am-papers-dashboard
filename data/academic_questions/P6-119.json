@@ -1,0 +1,175 @@
+{
+  "schema_version": 2,
+  "question_id": "P6-119",
+  "p": "P6",
+  "version": 2,
+  "updated_at": "2026-11-19",
+  "evidence_cutoff": "2026-11-19",
+  "related_paper_ids": [],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Effectiveness of a 3D Printed Training Kit for the Preparation of Access Cavities in Calcified Teeth: A Pilot Study",
+      "publisher": "European Endodontic Journal",
+      "year": 2025,
+      "url": "https://doi.org/10.14744/eej.2024.42275",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Effect of 3D printed teeth and virtual simulation system on the pre-clinical access cavity preparation training of senior dental undergraduates",
+      "publisher": "BMC Medical Education",
+      "year": 2024,
+      "url": "https://link.springer.com/article/10.1186/s12909-024-05869-2",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Impact of Haptic Simulators and 3D-Printed Teeth on Dental Students' Self-Assessment of Endodontic Access Cavities: A Comparative Pilot Study",
+      "publisher": "International Endodontic Journal",
+      "year": 2026,
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/iej.70021",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Evaluation of Dental Students' Skills Acquisition in Endodontics Using a 3D Printed Tooth Model",
+      "publisher": "European Endodontic Journal",
+      "year": 2021,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8842427/#t2",
+      "kind": "paper"
+    }
+  ],
+  "figures": [],
+  "locales": {
+    "zh": {
+      "title": "打印牙训练中的开髓和根管充填技能能迁移到新任务吗？",
+      "direction": "牙科教学与操作训练模型",
+      "sections": [
+        {
+          "id": "prepost",
+          "title": "在同系列打印牙上进步属于何种证据？",
+          "markdown": "钙化牙训练的先导研究按髓腔钙化分级提供模型。27 名学生制备的平均组织去除体积由 71.4 降至 54.68 mm³（p = 0.069），穿孔例数由 6 降至 4。应把前后变化读作同类任务表现，并同时观察成功找管和穿孔指标，免得把保守但未完成的开髓算作进步。 [钙化牙前后测比较](ref:R01)\n\n原文表 1 将前测、训练后即刻和两周后分列：学生三次均值分别为 71.4、67.41 和 54.68 mm³。图表还应与操作用时及穿孔分项并读。由于三个测验均来自同系列、预设中等钙化难度的复制件，两周后变化首先是保留表现。换牙型、钙化位置或材料的考核才会引入不同程度的迁移要求。 [体积表 1 和延时测验](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "platform",
+          "title": "同一次课程内的跨平台成绩如何解读？",
+          "markdown": "98 名高年级学生以随机顺序在常规塑料牙、打印牙及虚拟平台完成下颌第一磨牙开髓，每项限时 20 min。专家评分未发现两类实体牙之间的显著差异。虚拟系统输出有效与无效区的切除比例。若要推断迁移，应在所有组统一使用同一终测牙和量表，并处理任务顺序效应。 [随机顺序的三平台训练](ref:R02)\n\n各平台的得分应按分母和评分者区分。对实体牙，专家评分可以把开口位置与去除量放在同一量表；对虚拟平台，有效区和无效区切除比来自软件预设的目标区域。若一个学生在虚拟平台练习后再做实体牙，顺序可能影响下一次操作。可比较每种顺序中的首次成绩及配对分数，而不是把平台输出放到同一百分比分母。 [实体专家评分与虚拟平台指标](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "calibration",
+          "title": "会自评和会操作如何区分？",
+          "markdown": "触觉模拟器与打印牙先导研究用统一的评估表比较学生和专家判断。表 5 中打印牙训练组终测总体 Cohen κ 为 0.33，但各题差异明显。图 5 进一步区分高估和低估。实操评分与自评一致性应各自报告，重点看根管口辨认等关键条目。 [一致性表 5 与图 5](ref:R03)\n\n组别层面的打印组 Cohen κ 从前测 0.30 到终测 0.33。同一打印训练组里，印刷模型终测的 κ 为 0.24，虚拟模型终测为 0.35。图 5 显示分歧可以来自高估或低估，部分条目还因为阳性或阴性分布偏斜而影响 κ。复核时宜看混淆表原始分子、分母及项别区间。 [测验平台分层的 κ 和图 5](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "natural",
+          "title": "根管充填在离体牙终测上表现如何？",
+          "markdown": "充填研究为部分学生增加在预成形打印磨牙上的练习，再让全部学生用离体磨牙完成共同终测。两位盲法评价者用影像判读充填长度和致密度，组间未见显著差异。该设计具体检验额外打印训练对另一基材充填表现的影响，同时应区分课时增量与模型材质效应。 [离体牙终测和盲法评分](ref:R04)\n\nPeters 等报告 145 名受邀学生中有 141 个有效数据，打印训练组总分为 14.11 ± 2.05，常规组为 13.81 ± 2.14。绝对一致性 ICC 为 0.847，表明评分者一致性较高；这与是否能识别小的组间学习差异是两个问题。表 2 的长度和致密度各自均无显著差，应保留两项结果以区分欠填与空隙。 [充填结果表 2 和评分者一致性](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "retention",
+          "title": "怎样设计保留与临床迁移测验？",
+          "markdown": "可设同课时的打印牙与常规模型组，训练后用陌生形态的共同任务，再加延时复测。开髓以找到全部根管口、误穿及过切体积计分；充填用位置和致密度。临床迁移另在监督下按病例复杂度记录首次患者操作。形成性自评使用与专家不同的数据列。 [开髓体积和穿孔指标](ref:R01) · [充填终测](ref:R04) · [学习者与专家评分](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "transfer_matrix",
+          "title": "什么对照能区分保留、近迁移和跨基材迁移？",
+          "markdown": "可以用同一任务指标搭建比较矩阵。**近迁移**用同一基材、改变根管口位置或牙型。**跨基材迁移**让所有学生接触从未见过的离体磨牙。**保留**在延时后重复等难度任务。每项分别报告用时、合格比例、评分者一致性和失访；开髓额外报告未找到目标根管口的分母。这样即使训练当日评分有提高，也能识别提高集中在哪一层。 [同系列训练和保留测验](ref:R01) · [陌生牙充填评价](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "en": {
+      "title": "Do access and obturation skills learned on printed teeth transfer to new tasks?",
+      "direction": "Dental education and procedural training models",
+      "sections": [
+        {
+          "id": "prepost",
+          "title": "What does improvement on the same printed series establish?",
+          "markdown": "The calcification pilot used printed models graded by pulp-canal calcification. Among 27 students, mean removed volume fell from 71.4 to 54.68 mm³ (p = 0.069), and the number with perforations fell from 6 to 4. Treat these as changes on a related task. Read canal location and perforation alongside tissue removal so incomplete access is distinguishable from conservative preparation. [Calcified-tooth pre/post comparison](ref:R01)\n\nTable 1 separates baseline, immediate post-training and two weeks later. Student means were 71.4, 67.41 and 54.68 mm³. Read these alongside time and perforations. As all three test pieces were from the same series at the preset medium calcification level, the two-week change primarily measures retention. A new tooth type, calcification site or material increases the transfer demand. [Volume Table 1 and delayed test](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "platform",
+          "title": "How should scores across platforms in one course be interpreted?",
+          "markdown": "A total of 98 senior students performed mandibular first-molar access in random order on standard plastic teeth, printed teeth and a virtual simulator, with 20 min per task. Expert scores showed no significant difference between the physical teeth. The simulator returned fractions removed in designated valid and invalid regions. A transfer comparison requires a shared test tooth and scale, with task-order effects accounted for. [Three platforms in randomized order](ref:R02)\n\nSeparate platform scores by denominator and rater. Expert assessment can combine opening location and removal for a physical tooth. The simulator reports material removal in regions defined by the software. Practice on the simulator can affect the next physical task. Compare first-attempt scores by sequence and paired scores without treating unlike percentages as a common denominator. [Expert and simulator measures](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "calibration",
+          "title": "How can self-assessment be separated from performance?",
+          "markdown": "The simulator-versus-printed pilot used a common rubric for student and expert judgements. The printed-training group's overall post-test Cohen's κ was 0.33 in Table 5, with strong item variation. Figure 5 distinguishes overestimation from underestimation. Report performance and calibration separately, especially for critical items such as locating canal orifices. [Agreement in Table 5 and Fig. 5](ref:R03)\n\nOverall κ in the print-training group was 0.30 at pretest and 0.33 at post-test. Within that training group, post-test κ was 0.24 for printed and 0.35 for virtual test cavities. Figure 5 distinguishes overestimation and underestimation. Skewed positive and negative categories can affect κ. Review item-level intervals and the original contingency counts. [Kappa by test platform and Fig. 5](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "natural",
+          "title": "How did obturation transfer to the extracted-tooth test?",
+          "markdown": "The obturation study added practice on a printed molar with prepared canals for one group, then assessed everyone on an extracted molar. Two blinded examiners scored radiographic length and density. The groups did not differ significantly. The design tests extra printed practice on another substrate, with training time and print material remaining separate factors for a future matched comparison. [Extracted-tooth test and blinded ratings](ref:R04)\n\nPeters et al. reported 141 valid records among 145 students. Total scores were 14.11 ± 2.05 with printed practice and 13.81 ± 2.14 in controls. Absolute-agreement ICC was 0.847, addressing rater agreement separately from detection of small learning differences. Neither length nor density differed significantly in Table 2. Retaining both measures distinguishes underfill from voids. [Obturation Table 2 and rater agreement](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "retention",
+          "title": "How could retention and clinical transfer be tested?",
+          "markdown": "Match time on task between printed and standard models, then test on unfamiliar anatomy and repeat after a delay. For access, score complete canal location, perforation and excess removal. For obturation, use position and density. A supervised first-patient assessment stratified by case difficulty is a separate clinical endpoint. Keep formative self-ratings distinct from expert performance ratings. [Access volume and perforation metrics](ref:R01) · [Obturation test](ref:R04) · [Student and expert ratings](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "transfer_matrix",
+          "title": "Which assessments separate retention, near transfer and cross-substrate transfer?",
+          "markdown": "Use a shared outcome rubric across conditions. **Near transfer** varies tooth type or canal location within the same substrate. **Cross-substrate transfer** tests all students on an unfamiliar extracted molar. **Retention** repeats an equivalent task after a delay. Report time, pass rates, inter-rater agreement and attrition for each, plus the denominator for missed canals. This locates where any immediate improvement persists. [Within-series training and retention](ref:R01) · [Obturation on a different tooth](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "de": {
+      "title": "Übertragen sich an gedruckten Zähnen geübte Zugangs- und Wurzelfüllfertigkeiten auf neue Aufgaben?",
+      "direction": "Modelle für zahnmedizinische Lehre und praktisches Training",
+      "sections": [
+        {
+          "id": "prepost",
+          "title": "Was zeigt eine Verbesserung an derselben gedruckten Modellserie?",
+          "markdown": "In der Pilotstudie gab es Modelle mit abgestufter Pulpakanalkalzifikation. Bei 27 Studierenden sank das mittlere Abtragsvolumen von 71,4 auf 54,68 mm³ (p = 0,069), die Zahl der Perforationen von 6 auf 4. Das zeigt Veränderungen bei verwandten Aufgaben. Kanalauffindung und Perforation sind gemeinsam mit dem Abtrag auszuwerten, um unvollständige Zugänge von substanzschonender Präparation zu unterscheiden. [Vorher-Nachher-Vergleich bei kalzifizierten Zähnen](ref:R01)\n\nTabelle 1 trennt Ausgangstest, unmittelbaren Nachtest und Nachtest nach zwei Wochen. Die Mittelwerte der Studierenden betrugen 71,4, 67,41 und 54,68 mm³. Dazu Zeit und Perforationen lesen. Da alle drei Prüfstücke derselben Serie mit vorgegebenem mittlerem Kalzifikationsgrad entstammten, erfasst der spätere Test vor allem Behalten. Neuer Zahntyp, andere Verkalkungslage oder anderes Material erhöhen die Transferanforderung. [Volumentabelle 1 und verzögerter Test](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "platform",
+          "title": "Wie sind plattformübergreifende Ergebnisse eines Kurses zu lesen?",
+          "markdown": "98 fortgeschrittene Studierende präparierten den Zugang am unteren ersten Molaren in zufälliger Reihenfolge an Kunststoffzahn, Druckzahn und Simulator, mit 20 min pro Aufgabe. Expertenbewertungen zeigten keinen signifikanten Unterschied zwischen den physischen Modellen. Der Simulator erfasste Abtragsanteile in vorgegebenen Ziel- und Nichtzielregionen. Eine Transferprüfung benötigt denselben Prüfzahn und dieselbe Skala sowie Kontrolle der Aufgabenreihenfolge. [Drei Plattformen in zufälliger Reihenfolge](ref:R02)\n\nBewertungen nach Nenner und Bewertungsinstanz trennen. Am physischen Zahn können Fachleute Öffnungslage und Abtrag gemeinsam bewerten. Der Simulator meldet Abtrag in softwaredefinierten Bereichen. Die Simulatorübung kann die nächste physische Aufgabe beeinflussen. Erstversuche nach Reihenfolge sowie gepaarte Werte vergleichen, ohne unterschiedliche Prozentsätze zusammenzufassen. [Experten- und Simulatormessungen](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "calibration",
+          "title": "Wie lassen sich Selbstbeurteilung und praktische Leistung trennen?",
+          "markdown": "Die Pilotstudie zu Simulator und Druckzahn nutzte dasselbe Raster für studentische und fachliche Urteile. In Tabelle 5 betrug Cohens κ der Druckgruppe im Nachtest insgesamt 0,33, bei deutlichen Unterschieden zwischen den Kriterien. Abb. 5 unterscheidet Über- und Unterschätzung. Praktische Leistung und Kalibrierung getrennt berichten, besonders für Kriterien wie das Auffinden der Kanaleingänge. [Übereinstimmung in Tabelle 5 und Abb. 5](ref:R03)\n\nIn der Drucktrainingsgruppe lag das gesamte κ im Vortest bei 0,30 und im Nachtest bei 0,33. Innerhalb dieser Gruppe betrug das Nachtest-κ an gedruckten Kavitäten 0,24 und an virtuellen Kavitäten 0,35. Abb. 5 zeigt Über- und Unterschätzung. Ungleich verteilte Antwortkategorien können κ beeinflussen. Kriterienbezogene Intervalle und Kontingenzhäufigkeiten gemeinsam prüfen. [Kappa nach Prüfplattform und Abb. 5](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "natural",
+          "title": "Wie zeigte sich der Transfer der Wurzelfüllung am extrahierten Prüfzahn?",
+          "markdown": "In der Wurzelfüllstudie übte eine Gruppe zusätzlich an einem gedruckten Molaren mit aufbereiteten Kanälen. Alle absolvierten denselben Test an einem extrahierten Molaren. Zwei verblindete Prüfende bewerteten Länge und Dichte radiologisch. Der Gruppenunterschied war nicht signifikant. Der Versuch prüft zusätzlichen Druckzahnunterricht auf einem anderen Substrat, wobei Übungsdauer und Material getrennte Faktoren bleiben. [Test am extrahierten Zahn und verblindete Bewertung](ref:R04)\n\nPeters et al. berichteten 141 auswertbare Datensätze bei 145 Studierenden. Die Gesamtnoten betrugen 14,11 ± 2,05 mit Druckübung und 13,81 ± 2,14 in der Kontrolle. Die absolute Übereinstimmung lag bei ICC 0,847, unabhängig von der Erkennung kleiner Lerneffekte. In Tabelle 2 unterschieden sich Länge und Dichte jeweils nicht signifikant. Beide Maße trennen Unterfüllung von Hohlräumen. [Füllungsergebnisse Tabelle 2 und Prüferübereinstimmung](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "retention",
+          "title": "Wie lassen sich Behalten und klinischer Transfer prüfen?",
+          "markdown": "Die Übungszeit an Druck- und Standardmodellen angleichen, dann an unbekannter Anatomie prüfen und verzögert erneut testen. Beim Zugang vollständiges Auffinden der Kanäle, Perforation und Mehrabtrag erfassen. Bei der Wurzelfüllung Lage und Dichte werten. Die erste betreute Patientenbehandlung nach Fallschwierigkeit stratifizieren. Formative Selbsteinschätzung und Expertenleistung getrennt dokumentieren. [Abtragsvolumen und Perforation](ref:R01) · [Wurzelfülltest](ref:R04) · [Selbst- und Expertenurteile](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "transfer_matrix",
+          "title": "Welche Tests trennen Behalten, Nahtransfer und Substrattransfer?",
+          "markdown": "Ein gemeinsames Raster über mehrere Bedingungen verwenden. **Nahtransfer** variiert Zahntyp oder Kanallage im gleichen Substrat. **Substrattransfer** prüft alle an einem unbekannten extrahierten Molaren. **Behalten** wiederholt eine gleich schwere Aufgabe zeitversetzt. Jeweils Zeit, Bestehensquote, Bewertungsübereinstimmung und Ausfälle berichten, beim Zugang zudem den Nenner verfehlter Kanäle. So lässt sich ein unmittelbarer Lernzuwachs zuordnen. [Training und Behalten in derselben Modellserie](ref:R01) · [Wurzelfüllbewertung an anderem Zahn](ref:R04)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    }
+  }
+}

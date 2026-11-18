@@ -1,0 +1,165 @@
+{
+  "schema_version": 2,
+  "question_id": "P2-127",
+  "p": "P2",
+  "version": 2,
+  "updated_at": "2026-11-19",
+  "evidence_cutoff": "2026-11-19",
+  "related_paper_ids": [],
+  "references": [
+    {
+      "id": "R01",
+      "title": "Torque expression in directly printed and thermoformed clear aligners: a controlled in vitro biomechanical comparison of power ridge effects",
+      "publisher": "Progress in Orthodontics",
+      "year": 2026,
+      "url": "https://link.springer.com/article/10.1186/s40510-026-00647-w#Sec15",
+      "kind": "paper"
+    },
+    {
+      "id": "R02",
+      "title": "Influence of Water Storage on the Mechanical Properties of 3D-Printed Aligners: An In Vitro Study",
+      "publisher": "Bioengineering",
+      "year": 2026,
+      "url": "https://www.mdpi.com/2306-5354/13/1/21#fig_body_display_bioengineering-13-00021-f006",
+      "kind": "paper"
+    },
+    {
+      "id": "R03",
+      "title": "Thickness-dependent biomechanical accuracy of additively manufactured and thermoformed orthodontic aligners: an in vitro comparative study",
+      "publisher": "BMC Oral Health",
+      "year": 2026,
+      "url": "https://link.springer.com/article/10.1186/s12903-026-08758-w#Tab2",
+      "kind": "paper"
+    },
+    {
+      "id": "R04",
+      "title": "Preclinical evaluation of 3D-Printed orthodontic aligners using an electro-typodont model",
+      "publisher": "Frontiers in Bioengineering and Biotechnology",
+      "year": 2025,
+      "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2025.1650447/full#T1",
+      "kind": "paper"
+    },
+    {
+      "id": "R05",
+      "title": "Accuracy comparison of orthodontic movements obtained with 3D printed and thermoformed aligners: a retrospective cohort study",
+      "publisher": "Progress in Orthodontics",
+      "year": 2025,
+      "url": "https://link.springer.com/article/10.1186/s40510-025-00587-x",
+      "kind": "paper"
+    }
+  ],
+  "figures": [],
+  "locales": {
+    "zh": {
+      "title": "直接打印矫治器的力与力矩如何对应实际牙移动？",
+      "direction": "直接打印正畸矫治器",
+      "sections": [
+        {
+          "id": "moments",
+          "title": "测得的力与切牙转矩表达",
+          "markdown": "同一上颌切牙转矩模型中，带加力脊的两种打印材料给出不同转矩表达。在 25 和 37 °C 下，DCA 的表达为 62% 和 47%，TA-28 在两温度下为 10–17%。无加力脊热成形对照为 38–39%。台架中力矩及牙根位移与转矩表达的关系更密切，单个力的幅值给出的解释有限。两种打印材料均带加力脊，脊在每种材料内的独立效应仍待比较。\n\n实验共设四组，包括同一热成形材料有脊与无脊的对照。两个打印材料之间的对照反映在同类脊设计下更换材料的影响。要判断改善转矩的是形状、材料，还是两者组合，可以同时报告按牙体坐标分解的力矩、颊舌力与基准坐标中根尖位移，并在每种材料中设置有脊和无脊条件。 [受控台架的力与力矩结果](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "wet",
+          "title": "湿态材料性能与施力时间",
+          "markdown": "三点弯曲试验中，TC-85 DAC 经 37 °C 水中存放 14 d 后，平均弯曲模量从 967 MPa 降至 320 MPa。同一测量中的 PET-G 对照从 1429 MPa 升至 1543 MPa。试片模量为解释材料变化提供依据。对于就位的完整矫治器，力或力矩保持应随时间测量，并注明温度、含水状态与激活位移。\n\n材料弯曲模量来自规定截面的试片。完整矫治器的壳厚沿牙弓变化，且多牙同时参与接触，试片排序只能提供解释候选。若要关联临床阶段内的施力变化，可在固定激活量下比较完整矫治器初始加载和随时间保持值，并将加载循环之间的恢复与加载时的松弛分别量化。 [原文图 6 的干湿对照](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "thickness",
+          "title": "厚度和移动模式的交互表现",
+          "markdown": "一项 36 个模型的标准化体外比较测试 0.76 和 1.0 mm 名义厚度。加厚组在所测旋转、近中倾斜与转矩中实现比例更高，近中倾斜最高值达 92.67%，转矩最高值为 71.67%。运动由热激活的模型模拟。材料、成品厚度和台架位移的关系需在具体移动类型内解读。\n\n这个模型预设三类旋转或倾斜幅度，旋转为 30°，近中倾斜为 10°，正转矩为 10°。以百分比比较不同移动时，需同时保留各自分母和角度。厚度组报告的结果还依赖使用的打印树脂、热成形片材和热激活条件。跨研究同称为转矩准确度的数值需核查是根部位移、冠根角度变化还是编程角的实现比例。 [原文厚度分层与移动比较](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "staging",
+          "title": "分步模型中的残余旋转",
+          "markdown": "电加热牙列模型以四步矫治器评价上颌中切牙旋转，比较 0.50、0.75 和 1.00 mm。到最后一步，三种厚度的残余旋转均集中在约 4–5°。以实现比例表达时，较大的起始旋转可能因分母大而得到更高矫治率。评价分步移动可同时保留实际角度、绝对残余角和完成比例。\n\n原文 22° 起始组完成约 80.00–80.91%，52° 起始组为 91.92–93.08%。由最终残角很接近可知，完成比例的差异部分来自起始分母。若研究比较多阶段追踪，应在每阶段测量的位置显示旋转实现量，保留上一阶段留给下一阶段的累积误差。 [原文图 6 与表 1](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "clinical",
+          "title": "临床计划与实际移动的配对",
+          "markdown": "回顾性队列比较 34 例直接打印患者和 40 例热成形患者，共测 1018 颗牙。按直接打印、热成形顺序，转矩准确度为 60% 和 66%，倾斜为 52% 和 61%，旋转为 58% 和 69%，文中未检出显著组间差异。病例选择、真实佩戴、附件、阶段调整以及同一患者多颗牙的相关性，均影响力学试验与患者层面估计的对应。\n\n临床比较可以根据预定的移动类型、目标幅度和牙位报告变化，用患者作为聚类单位分析同人多颗牙，并分别记录首次序列和调整后的实现量。临床终点更适合检验整体方案在患者中的效果。体外力和力矩结果可以用来解释某类移动的偏差，但需要模型条件、移动阶段和测量定义与临床问题对应。\n\n这批对象按连续治疗病例纳入，研究为回顾性设计。检验没有达到统计学显著的组间差异。若研究问题是两种工艺能否达到预先规定的相近效果，需定义可接受的角度误差或完成率差值，再按这一界值估计置信区间。 [临床队列与按移动类型统计](ref:R05)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "en": {
+      "title": "How do the forces and moments of directly printed aligners relate to achieved tooth movement?",
+      "direction": "Directly printed orthodontic aligners",
+      "sections": [
+        {
+          "id": "moments",
+          "title": "Measured force and incisor torque expression",
+          "markdown": "In one maxillary incisor torque model, two printed materials with power ridges gave different torque expression. DCA registered 62% at 25 °C and 47% at 37 °C, while TA-28 gave 10–17% across the two temperatures. The thermoformed control without a ridge gave 38–39%. Moments and root displacement related more closely to torque expression than force magnitude in the setup. Both printed materials had ridges, leaving the within-material effect of adding a ridge unresolved.\n\nThere were four groups, including the same thermoformed material with and without a power ridge. Comparing the printed materials shows the effect of changing resin under a shared ridge design. A design crossing ridge presence with each material can evaluate shape and material contributions while reporting moments in a tooth-based coordinate system, buccolingual forces and root-apex displacement. [Controlled force and moment results](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "wet",
+          "title": "Wet material properties and loading time",
+          "markdown": "In three-point bending, mean flexural modulus of TC-85 DAC fell from 967 to 320 MPa after 14 d in water at 37 °C. The PET-G reference rose from 1429 to 1543 MPa in the same comparison. Coupon modulus characterizes material change. Retained force and moment of a seated aligner require time-resolved measurements with temperature, hydration and activation displacement specified.\n\nFlexural modulus is measured on a specimen of defined cross-section. A complete aligner varies in thickness across the arch and may contact several teeth at once, so the coupon ranking provides a candidate explanation. To relate loading to a clinical stage, one can compare initial delivery and retention over time at fixed activation, distinguishing recovery between loading cycles from relaxation under load. [Wet–dry comparison in original Fig. 6](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "thickness",
+          "title": "Thickness and movement-specific performance",
+          "markdown": "A standardized in vitro comparison across 36 typodonts tested nominal thicknesses of 0.76 and 1.0 mm. The thicker groups achieved larger fractions of programmed rotation, mesial tipping and torque. The maximum was 92.67% for mesial tipping and 71.67% for torque. A thermally activated typodont simulated movement. Material, finished thickness and bench displacement should be interpreted within each movement type.\n\nThe model programmed rotation of 30°, mesial tipping of 10° and positive torque of 10°. Comparisons across movement percentages should retain the corresponding angle and denominator. Thickness outcomes apply to the printed resin, thermoformed sheet and thermal activation used. Across studies, torque accuracy may refer to root displacement, an angular crown–root change or a fraction of the planned angle. [Original thickness strata and movement comparisons](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "staging",
+          "title": "Residual rotation in a staged model",
+          "markdown": "An electro-typodont assessed maxillary central incisor rotation over four aligner stages with thicknesses of 0.50, 0.75 and 1.00 mm. Residual rotation converged to about 4–5° for all three thicknesses by the final stage. A larger initial rotation can produce a higher percentage correction because it supplies a larger denominator. Stage-wise measurements can retain the achieved angle, absolute residual angle and percentage correction.\n\nThe original 22° starting group achieved approximately 80.00–80.91%, and the 52° group 91.92–93.08%. The similar final residual angle indicates that some percentage differences come from the denominator. Multi-stage tracking can show the achieved rotation at each measurement stage and retain the cumulative error passed to the next aligner. [Original Fig. 6 and Table 1](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "clinical",
+          "title": "Pairing clinical plans with achieved movement",
+          "markdown": "A retrospective cohort compared 34 patients treated with directly printed aligners and 40 with thermoformed aligners, measuring 1018 teeth. Direct-print and thermoformed accuracies were 60% and 66% for torque, 52% and 61% for tipping, and 58% and 69% for rotation. The study found no significant group differences. Case selection, actual wear, attachments, refinements and correlation among teeth from the same patient affect how bench results translate to patient-level estimates.\n\nClinical comparisons can report changes by prespecified movement type, target magnitude and tooth site, with the patient as a cluster for repeated teeth. The first series and achieved movement after refinement can be recorded separately. A clinical endpoint estimates the performance of the full treatment in patients. Bench force and moment measurements can help explain movement-specific discrepancies when the model, treatment stage and endpoint definitions correspond.\n\nConsecutive treatments supplied the retrospective cohort. The group contrasts did not reach statistical significance. A study of whether the workflows perform within an acceptable difference would specify a margin in angular error or achieved percentage and estimate the corresponding confidence interval. [Clinical cohort and results by movement](ref:R05)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    },
+    "de": {
+      "title": "Wie hängen Kräfte und Momente direkt gedruckter Aligner mit der erzielten Zahnbewegung zusammen?",
+      "direction": "Direkt gedruckte kieferorthopädische Aligner",
+      "sections": [
+        {
+          "id": "moments",
+          "title": "Gemessene Kraft und Torque-Expression am Schneidezahn",
+          "markdown": "Im selben Torque-Modell für obere Schneidezähne erreichten zwei gedruckte Materialien mit Power Ridges unterschiedliche Torque-Expressionen. DCA erreichte 62% bei 25 °C und 47% bei 37 °C, TA-28 über beide Temperaturen 10–17%. Die thermoformierte Kontrolle ohne Ridge lag bei 38–39%. Drehmomente und Wurzelverschiebung standen in einem engeren Zusammenhang mit der Torque-Expression als der Kraftbetrag. Beide Druckmaterialien hatten Ridges. Deren Effekt innerhalb des jeweiligen Materials bleibt offen.\n\nEs gab vier Gruppen, darunter dasselbe thermogeformte Material mit und ohne Power Ridge. Der Vergleich der Druckmaterialien erfasst den Harzwechsel bei gemeinsamem Ridge-Design. Ein Design mit und ohne Ridge je Material kann die Beiträge von Geometrie und Material untersuchen. Dazu lassen sich Momente im Zahnkoordinatensystem, bukkolinguale Kräfte und apikale Wurzelverschiebung angeben. [Kontrollierte Kraft- und Momentmessungen](ref:R01)",
+          "figure_ids": []
+        },
+        {
+          "id": "wet",
+          "title": "Materialeigenschaften im feuchten Zustand und Belastungszeit",
+          "markdown": "Im Dreipunkt-Biegeversuch sank der mittlere Biegemodul von TC-85 DAC nach 14 d Wasserlagerung bei 37 °C von 967 auf 320 MPa. Die PET-G-Referenz stieg im gleichen Vergleich von 1429 auf 1543 MPa. Der Prüfkörpermodul charakterisiert Materialänderungen. Der Kraft- und Momenterhalt eines aufgesetzten Aligners erfordert zeitaufgelöste Messungen mit Angaben zu Temperatur, Feuchtezustand und Aktivierungsweg.\n\nDer Biegemodul wird an einem Prüfkörper mit festgelegtem Querschnitt bestimmt. Ein vollständiger Aligner variiert entlang des Bogens in der Dicke und kann mehrere Zähne gleichzeitig berühren. Die Prüfkörperrangfolge liefert eine mögliche Erklärung. Zur Verknüpfung mit einer klinischen Stufe lassen sich Anfangsbelastung und zeitlicher Erhalt bei fester Aktivierung bestimmen. Erholung zwischen Belastungszyklen und Relaxation unter Last sollten getrennt erfasst werden. [Trocken-Feucht-Vergleich in Originalabb. 6](ref:R02)",
+          "figure_ids": []
+        },
+        {
+          "id": "thickness",
+          "title": "Dicke und bewegungsspezifische Ergebnisse",
+          "markdown": "Ein standardisierter In-vitro-Vergleich mit 36 Typodonten untersuchte Nenndicken von 0,76 und 1,0 mm. Die dickeren Gruppen erzielten höhere Anteile der programmierten Rotation, Mesialkippung und des Torques. Das Maximum lag bei 92,67% für Mesialkippung und 71,67% für Torque. Die Bewegung wurde am thermisch aktivierten Typodonten simuliert. Material, Fertigdicke und Prüfstandsverschiebung sind für jede Bewegungsart gesondert einzuordnen.\n\nDas Modell programmierte 30° Rotation, 10° Mesialkippung und 10° positiven Torque. Bei Prozentvergleichen verschiedener Bewegungen sind Winkel und Nenner beizubehalten. Die Dickenbefunde hängen von Druckharz, Thermoformfolie und thermischer Aktivierung ab. Je nach Studie kann Torque-Genauigkeit Wurzelverschiebung, eine Winkeländerung zwischen Krone und Wurzel oder den Anteil am programmierten Winkel bezeichnen. [Originalvergleich nach Dicke und Bewegung](ref:R03)",
+          "figure_ids": []
+        },
+        {
+          "id": "staging",
+          "title": "Restrotation im stufenweisen Modell",
+          "markdown": "Ein Elektrotypodont erfasste die Rotation des oberen mittleren Schneidezahns über vier Alignerschritte mit 0,50, 0,75 und 1,00 mm Dicke. In der letzten Stufe lag die Restrotation bei allen drei Dicken bei etwa 4–5°. Eine größere Ausgangsrotation kann wegen des größeren Nenners einen höheren Korrekturprozentsatz ergeben. Die Auswertung pro Stufe kann erreichten Winkel, absoluten Restwinkel und Korrekturprozentsatz gemeinsam angeben.\n\nDie Ausgangsgruppe mit 22° erreichte etwa 80,00–80,91%, die Gruppe mit 52° 91,92–93,08%. Die ähnlichen Restwinkel zeigen, dass ein Teil der Prozentdifferenz aus dem Nenner entsteht. Eine mehrstufige Nachverfolgung kann die erreichte Rotation je Messzeitpunkt und den an den nächsten Aligner weitergegebenen kumulierten Fehler ausweisen. [Originalabb. 6 und Tabelle 1](ref:R04)",
+          "figure_ids": []
+        },
+        {
+          "id": "clinical",
+          "title": "Vergleich geplanter und erzielter klinischer Bewegungen",
+          "markdown": "Eine retrospektive Kohorte verglich 34 mit direkt gedruckten und 40 mit thermoformierten Alignern behandelte Patienten. Insgesamt wurden 1018 Zähne vermessen. Die Genauigkeit lag bei Direktdruck und Thermoformen bei 60% und 66% für Torque, 52% und 61% für Kippung sowie 58% und 69% für Rotation. Die Studie fand keine signifikanten Gruppenunterschiede. Fallauswahl, tatsächliche Tragezeit, Attachments, Nachkorrekturen und Abhängigkeiten zwischen Zähnen eines Patienten beeinflussen die Übertragbarkeit von Prüfstandswerten auf patientenbezogene Schätzungen.\n\nKlinische Vergleiche können Änderungen nach vorab definiertem Bewegungstyp, Zielausmaß und Zahnposition angeben. Mehrere Zähne einer Person werden dabei als Cluster berücksichtigt. Erste Serie und Bewegung nach Nachkorrektur lassen sich getrennt dokumentieren. Der klinische Endpunkt erfasst die Wirkung der gesamten Behandlung. Prüfstandswerte zu Kraft und Moment können bewegungsspezifische Abweichungen erklären, wenn Modell, Behandlungsstufe und Messdefinition zusammenpassen.\n\nFortlaufend behandelte Fälle bildeten die retrospektive Kohorte. Die Gruppenunterschiede waren statistisch nicht signifikant. Eine Prüfung auf hinreichend ähnliche Ergebnisse würde eine Grenze für Winkelfehler oder erzielten Anteil definieren und das entsprechende Konfidenzintervall schätzen. [Klinische Kohorte und Ergebnisse nach Bewegungsart](ref:R05)",
+          "figure_ids": []
+        }
+      ],
+      "figure_texts": {}
+    }
+  }
+}

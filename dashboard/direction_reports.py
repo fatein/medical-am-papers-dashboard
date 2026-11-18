@@ -7,7 +7,7 @@ from functools import lru_cache
 from urllib.parse import urlencode,urlparse
 import streamlit as st
 import streamlit.components.v1 as components
-from dashboard.cross_data import CROSS_CUTTING, H36_IDS, load_direction_classification, question_direction_map
+from dashboard.cross_data import CROSS_CUTTING, H36_IDS, load_academic_additions, load_direction_classification, question_direction_map
 from dashboard.i18n import language,preserve_original_text,tr
 
 UI={
@@ -44,6 +44,10 @@ def themed_questions(root: Path, rid: str, code: str) -> list[dict]:
  classification = load_direction_classification(root)
  group = next(d for d in classification['directions'] if d['id'] == rid)
  questions = {q['id']: q for r in load_reports(str(root), code).values() for q in r['questions']}
+ questions.update({
+  q['question_id']: {'id': q['question_id'], 'question': tr(q['question'], code=code, root=root), 'focus': ''}
+  for q in load_academic_additions(root)['questions']
+ })
  return [{**questions[qid], 'related': qid in group['related']}
          for qid in [*group['questions'], *group['related']]]
 
@@ -242,7 +246,8 @@ def direction_report_page(root:Path,rid:str,public_mode=False)->None:
     else:
      heading=html.escape(title)
     note=tr('相关研究问题',code=code,root=root)+' · ' if q.get('related') else ''
-    cards.append(f'<div class="dr-question"><strong>{heading}</strong><p>{html.escape(note+q["focus"])}</p></div>')
+    focus=f'<p>{html.escape(note+q["focus"])}</p>' if note or q['focus'] else ''
+    cards.append(f'<div class="dr-question"><strong>{heading}</strong>{focus}</div>')
    hero+=f'<section id="dr-questions"><h2>{ui["questions"]}</h2>'+''.join(cards)+'</section>'
   hero+='</div>'
   st.html(CSS+hero)

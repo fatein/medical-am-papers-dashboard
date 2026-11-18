@@ -3,20 +3,32 @@ from __future__ import annotations
 
 import json
 from collections import defaultdict
-from functools import lru_cache
 from pathlib import Path
 from statistics import median
 
 
+ACADEMIC_ADDITIONS_PATH = 'data/direction_reports/academic_additions.json'
+
+
+def load_academic_additions(root: Path) -> dict:
+    path = Path(root) / ACADEMIC_ADDITIONS_PATH
+    if not path.is_file():
+        return {'questions': [], 'papers': []}
+    return json.loads(path.read_text(encoding='utf-8'))
+
+
 def load_cross_analysis(root: Path) -> dict:
-    return json.loads((Path(root) / 'data/cross_analysis.json').read_text(encoding='utf-8'))
+    data = json.loads((Path(root) / 'data/cross_analysis.json').read_text(encoding='utf-8'))
+    additions = load_academic_additions(root)
+    for key in ('questions', 'papers'):
+        data[key].extend(additions[key])
+    return data
 
 
 CROSS_CUTTING = 'cross-cutting'
 H36_IDS = tuple(f'H{i:02d}' for i in range(1, 37))
 
 
-@lru_cache(maxsize=4)
 def load_direction_classification(root: Path) -> dict | None:
     path = Path(root) / 'data/direction_reports/classification.json'
     if not path.is_file():
@@ -45,25 +57,6 @@ def load_questions_for_navigation(data: dict, root: Path) -> dict:
             for q in data['questions']
         ],
     }
-
-
-def themed_direction_summary(data: dict, classification: dict) -> list[dict]:
-    companies = defaultdict(set)
-    for evidence in data['enterprise_evidence']:
-        if evidence['source_kind'] != '非企业开源项目':
-            companies[evidence['question_id']].add(evidence['company'])
-    groups = [*classification['directions'], {
-        'id': CROSS_CUTTING,
-        'title': '跨方向研究问题',
-        'questions': classification['cross_cutting'],
-        'related': [],
-        'p_layers': sorted({q['p'] for q in data['questions']
-                            if q['question_id'] in classification['cross_cutting']}),
-    }]
-    return [
-        {**row, 'companies': len(set().union(*(companies[q] for q in row['questions'])))}
-        for row in groups
-    ]
 
 
 def direction_summary(data: dict) -> list[dict]:
