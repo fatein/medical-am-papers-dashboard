@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P2-133",
   "p": "P2",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-19",
   "evidence_cutoff": "2026-11-19",
   "related_paper_ids": [],
@@ -50,19 +50,19 @@
         {
           "id": "regional-pressure",
           "title": "跟部减压时负荷向哪里转移",
-          "markdown": "足底筋膜炎随机研究纳入 60 人，比较鞋内定制打印与预制支撑。论文称器具为 AFO，足底比较实际针对鞋内接触。第 0 周，定制组内侧跟区和外侧跟区峰压较低，拇趾和第一跖骨区峰压较高。该分布支持局部重新分配。表 2 同时列峰压、峰力与接触面积，各列回答接触中不同的问题。 [原文表 2](ref:R01)",
+          "markdown": "这项随机试验纳入 60 名双侧足底筋膜炎患者，比较定制打印鞋垫和预制鞋垫。论文称这些器械为踝足矫形器（AFO），测试时将鞋垫放在鞋内，用 Footscan 步道压力板记录受力。第 0 周，定制组在足跟内、外侧的峰值压力较低，在拇趾和第一跖骨区的峰值压力较高。表 2 分别列出峰值压力、峰值力和接触面积。 [原文表 2 与测试方法](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "timepoints",
           "title": "初戴与第 8 周比较的含义",
-          "markdown": "该试验在第 0 和第 8 周进行测量。初戴分区峰压差异到第 8 周未显示类似组间显著差异，而定制组拇趾峰压在自身两个时点间有变化（P = 0.02）。表 3 的组间比较与表 5 的组内比较需要分别判断。若要比较两种鞋垫随时间的效果，可直接检验两组从第 0 周到第 8 周的变化量之差。 [原文表 3 和表 5](ref:R01)",
+          "markdown": "试验在第 0 和第 8 周测量。表 3 中，第 8 周所有足底分区的组间峰值压力差异均未达统计显著。按表 5，定制组拇趾区的峰值压力在第 8 周高于第 0 周（P = 0.02）。若要判断两种鞋垫随时间的作用是否不同，需直接比较两组从第 0 至第 8 周的变化量。 [原文表 3 和 5](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "comfort-scale",
           "title": "舒适度先统一量表方向",
-          "markdown": "随机试验结果段将 0 定义为最舒适，并报告第 8 周定制组 3.12 ± 0.51、预制组 5.25 ± 1.22。方法段对端点的文字方向与结果段相反，因此应保留原文内部歧义。另一项平地步行研究的图 10 把全接触鞋垫 8.45 ± 1.01 与仅穿鞋 5.00 ± 0.81 比较，报告高分对应较舒适。跨研究不宜直接合并原始分数。 [结果与方法中的量表](ref:R01) · [原文图 10](ref:R02)",
+          "markdown": "足底筋膜炎随机试验采用 10 cm 视觉模拟量表，0 表示无不适，10 表示最不舒适。第 8 周，定制组为 3.12 ± 0.51，预制组为 5.25 ± 1.22（P < 0.05）。原文另有一段鞋垫试穿说明使用相反的标记，第 0 和第 8 周的量表专节与结果均按低分代表更舒适解读。另一项平地步行研究对舒适度评分，0 表示最不舒适，10 表示最舒适。该研究图 10 的全接触鞋垫和仅穿鞋条件分别为 8.45 ± 1.01 和 5.00 ± 0.81。两篇论文的原始分值需按各自量表方向解释。 [量表方法与第 8 周结果](ref:R01) · [原文图 10](ref:R02)",
           "figure_ids": [
             "F01"
           ]
@@ -70,7 +70,7 @@
         {
           "id": "task-dependence",
           "title": "坡道改变了足底受力的读取方式",
-          "markdown": "坡道实验在 10% 跑步机坡度下比较功能性扁平足与正常足形各 10 人。加足弓支撑后，扁平足组蹬离期的压力合力中心向外侧移动。合力中心位置描述整体作用点。某一跖骨区的峰压或足跟载荷持续时间还需按区域和步态相位单独测量。 [坡道步态与合力中心](ref:R03)",
+          "markdown": "坡度实验纳入 10 名功能性扁平足参与者和 10 名正常足对照，使用坡度为 10% 的跑步机。在扁平足组内，加足弓支撑鞋垫后，推进期的足底合力作用点有向外侧移动的趋势（P = 0.16）。合力作用点描述总体位置。跖骨区峰值压力与足跟负荷持续时间仍需按区域和步态阶段测量。 [原文图 2](ref:R03)",
           "figure_ids": []
         },
         {
@@ -82,7 +82,7 @@
         {
           "id": "geometry-tradeoffs",
           "title": "全接触和楔形支撑的指标排序",
-          "markdown": "平地实验让 10 名功能性扁平足受试者比较单穿鞋、扫描鞋垫、全接触鞋垫，以及在全接触设计上加 5 mm 楔垫。原文表 1 的踝背屈峰角分别为 9.6°、11.6°、11.0°、12.5°。扫描与楔垫条件对比单穿鞋达到显著差异，但图 10 的舒适度均值最高的是全接触条件。不同目标的排序可以不一致。其运动学来自摄像和测力台，仍需要鞋内压力图来归因接触区域。 [原文表 1 和图 10](ref:R02)",
+          "markdown": "平地步行研究对 10 名功能性扁平足参与者随机安排四种条件，分别为仅穿鞋、自动扫描定制鞋垫、全接触鞋垫和加 5 mm 内侧楔垫的鞋垫。表 1 的踝背屈峰值角依次为 9.6°、11.6°、11.0° 和 12.5°。自动扫描和内侧楔垫条件与仅穿鞋相比差异显著。图 10 中，全接触条件的平均舒适度评分最高。该研究以动作捕捉与测力台分析步态，若要将变化定位到具体足底接触区，需配对鞋内压力图。 [原文表 1 和图 10](ref:R02)",
           "figure_ids": []
         },
         {
@@ -100,8 +100,8 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "平地步行的四种舒适度读数 (Hsu et al., 2022)",
-          "interpretation": "图中全接触和加楔条件均高于单穿鞋，全接触也高于扫描条件。组内构型比较使用了统一量表，可直接比较即时体验。 [原文图 10](ref:R02)"
+          "caption": "平地步行四种条件下的舒适度评分（Hsu 等，2022）",
+          "interpretation": "三角形标示全接触鞋垫和内侧楔垫分别与仅穿鞋相比的显著差异，星号标示全接触鞋垫与自动扫描鞋垫相比的显著差异（P < 0.05）。 [原文图 10](ref:R02)"
         }
       }
     },
@@ -112,19 +112,19 @@
         {
           "id": "regional-pressure",
           "title": "Where load goes when heel pressure falls",
-          "markdown": "The randomized plantar fasciitis study enrolled 60 participants and compared custom printed and prefabricated in-shoe supports. The paper calls the devices AFOs and measures in-shoe plantar contact. At week 0, the custom group had lower peak pressure in the medial heel and lateral heel and higher peak pressure at the hallux and first metatarsal. This pattern indicates local redistribution. Table 2 presents peak pressure, peak force and contact area as separate readouts. [Original Table 2](ref:R01)",
+          "markdown": "The randomized trial enrolled 60 participants with bilateral plantar fasciitis and compared custom printed and prefabricated insoles. The article calls the devices ankle-foot orthoses (AFOs). Participants wore them inside their shoes while walking across a Footscan pressure plate. At week 0, the custom group had lower peak pressure at the medial and lateral heel and higher peak pressure at the hallux and first metatarsal. Table 2 lists peak pressure, peak force and contact area separately. [Original Table 2 and testing methods](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "timepoints",
           "title": "Interpreting initial wear and week 8",
-          "markdown": "The study measured at weeks 0 and 8. The initial regional peak-pressure differences did not show similar statistical separation at week 8, while hallux peak pressure changed within the custom group (P = 0.02). Table 3 compares between groups and Table 5 compares within a group. A direct test of the difference in change from week 0 to week 8 would assess how the effect of the two insoles varies over time. [Original Tables 3 and 5](ref:R01)",
+          "markdown": "The trial measured at weeks 0 and 8. At week 8, Table 3 shows no statistically significant between-group differences in regional peak pressure. In the custom group, peak pressure at the hallux was higher at week 8 than at week 0 (Table 5, P = 0.02). A direct comparison of changes from week 0 to week 8 would test whether the time course differed between the groups. [Original Tables 3 and 5](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "comfort-scale",
           "title": "Comfort comparisons require the scale direction",
-          "markdown": "The randomized trial's results define 0 as most comfortable and give week-8 scores of 3.12 ± 0.51 for custom and 5.25 ± 1.22 for prefabricated support. The methods describe the endpoints in the opposite direction, leaving an internal ambiguity. In a separate level-walking study, Figure 10 compares total-contact insoles at 8.45 ± 1.01 with shoes alone at 5.00 ± 0.81, with higher scores indicating greater comfort. Raw scores should be kept separate across these studies. [Scale in Results and Methods](ref:R01) · [Original Figure 10](ref:R02)",
+          "markdown": "The randomized plantar fasciitis trial used a 10 cm visual analogue scale from 0 (no discomfort) to 10 (greatest discomfort). At week 8, scores were 3.12 ± 0.51 for custom and 5.25 ± 1.22 for prefabricated support (P < 0.05). An earlier shoe-insert passage in the paper gives reversed anchors. The dedicated week-0 and week-8 scale description and reported results both interpret lower scores as greater comfort. The separate level-walking study scored comfort from 0 (least comfortable) to 10 (most comfortable). Figure 10 reports 8.45 ± 1.01 with total-contact insoles and 5.00 ± 0.81 with shoes alone. Interpret each study's scores using its own scale anchors. [Scale methods and week-8 results](ref:R01) · [Original Figure 10](ref:R02)",
           "figure_ids": [
             "F01"
           ]
@@ -132,7 +132,7 @@
         {
           "id": "task-dependence",
           "title": "Incline changes how plantar load is read",
-          "markdown": "The uphill experiment compared 10 participants with functional flat feet and 10 controls on a treadmill at 10% incline. With arch support, the flat-foot group's center of force shifted laterally during propulsion. Center-of-force position describes the resultant point of application. Metatarsal peak pressure and heel-loading duration still require region- and phase-specific measurements. [Incline gait and center of force](ref:R03)",
+          "markdown": "The incline experiment tested ten participants with functional flat feet and ten controls on a treadmill at a 10% incline. Within the flat-foot group, arch support produced a trend toward a more lateral center of force during propulsion (P = 0.16). The center of force locates the resultant load. Metatarsal peak pressure and heel-loading duration require region- and phase-specific measures. [Original Figure 2](ref:R03)",
           "figure_ids": []
         },
         {
@@ -144,7 +144,7 @@
         {
           "id": "geometry-tradeoffs",
           "title": "How total-contact and wedged support rank by endpoint",
-          "markdown": "The level-walking experiment compared shoes alone, scan insoles, total-contact insoles and total-contact insoles with a 5 mm wedge in 10 participants with functional flat feet. Original Table 1 gives peak ankle dorsiflexion angles of 9.6°, 11.6°, 11.0° and 12.5°. Scan and wedge conditions differed significantly from shoes, while total contact had the highest mean comfort in Figure 10. Endpoint rankings can diverge. The camera and force-plate kinematics would need pairing with in-shoe pressure maps to attribute effects to a contact region. [Original Table 1 and Figure 10](ref:R02)",
+          "markdown": "The level-walking study tested four conditions in randomized order in ten participants with functional flat feet. The conditions were shoes alone, auto-scan insoles, total-contact insoles and insoles with a 5 mm medial wedge. Table 1 gives peak ankle dorsiflexion angles of 9.6°, 11.6°, 11.0° and 12.5°, respectively. The auto-scan and medial wedge conditions differed significantly from shoes alone. Total contact had the highest mean comfort rating in Figure 10. The study combined motion capture with force plates. Linking these gait results to specific plantar contact regions would require in-shoe pressure maps. [Original Table 1 and Figure 10](ref:R02)",
           "figure_ids": []
         },
         {
@@ -163,7 +163,7 @@
       "figure_texts": {
         "F01": {
           "caption": "Comfort ratings in four level-walking conditions (Hsu et al., 2022)",
-          "interpretation": "Total contact and wedge both rated higher than shoes, and total contact also rated higher than the scan condition. The same scale across configurations supports comparison of immediate comfort. [Original Figure 10](ref:R02)"
+          "interpretation": "The triangles mark significant differences for total contact and the medial wedge compared with shoes alone. The asterisk marks the total-contact versus auto-scan comparison (P < 0.05). [Original Figure 10](ref:R02)"
         }
       }
     },
@@ -174,19 +174,19 @@
         {
           "id": "regional-pressure",
           "title": "Wohin sich die Last bei geringerem Fersendruck verlagert",
-          "markdown": "Die randomisierte Studie zur Plantarfasziitis verglich bei 60 Personen individuell gedruckte und vorgefertigte Einlagen im Schuh. Der Artikel nennt die Hilfsmittel AFOs und erfasst den plantaren Schuhkontakt. In Woche 0 hatte die individuelle Gruppe niedrigere Spitzendrücke an der medialen und lateralen Ferse sowie höhere unter Großzehe und erstem Mittelfußknochen. Das Muster zeigt eine lokale Lastverlagerung. Tabelle 2 führt Spitzendruck, Spitzenkraft und Kontaktfläche getrennt auf. [Originaltabelle 2](ref:R01)",
+          "markdown": "Die randomisierte Studie verglich bei 60 Personen mit beidseitiger Plantarfasziitis individuell gedruckte und vorgefertigte Einlagen. Die Publikation nennt die Hilfsmittel AFOs. Die Teilnehmenden trugen die Einlagen in den Schuhen und gingen über eine Footscan-Druckmessplatte. In Woche 0 waren die Spitzendrücke in der Gruppe mit individuellen Einlagen an der medialen und lateralen Ferse niedriger und unter der Großzehe und dem ersten Mittelfußknochen höher. Tabelle 2 führt Spitzendruck, Spitzenkraft und Kontaktfläche getrennt auf. [Originaltabelle 2 und Prüfmethode](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "timepoints",
           "title": "Erstes Tragen und Woche 8 einordnen",
-          "markdown": "Die Messungen fanden in Woche 0 und 8 statt. Die anfänglichen regionalen Unterschiede im Spitzendruck zeigten sich in Woche 8 nicht in gleicher statistischer Deutlichkeit. In der individuellen Gruppe änderte sich der Großzehen-Spitzendruck zwischen den Zeitpunkten (P = 0,02). Tabelle 3 vergleicht die Gruppen, Tabelle 5 die Zeitpunkte innerhalb einer Gruppe. Ein direkter Vergleich der Veränderungen zwischen Woche 0 und Woche 8 würde zeigen, wie sich die Wirkung beider Einlagentypen über die Zeit unterscheidet. [Originaltabellen 3 und 5](ref:R01)",
+          "markdown": "Die Studie maß in Woche 0 und 8. In Woche 8 erreichte laut Tabelle 3 kein Gruppenunterschied beim regionalen Spitzendruck statistische Signifikanz. In der Gruppe mit individuellen Einlagen lag der Spitzendruck unter der Großzehe in Woche 8 höher als in Woche 0 (Tabelle 5, P = 0,02). Ein direkter Vergleich der Veränderungen von Woche 0 bis Woche 8 würde prüfen, ob sich der zeitliche Verlauf zwischen den Gruppen unterschied. [Originaltabellen 3 und 5](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "comfort-scale",
           "title": "Komfortvergleiche erfordern die Skalenrichtung",
-          "markdown": "Im Ergebnisteil der randomisierten Studie steht 0 für höchsten Komfort. In Woche 8 lagen die Werte bei 3,12 ± 0,51 für die individuellen und 5,25 ± 1,22 für die vorgefertigten Einlagen. Der Methodenteil beschreibt die Endpunkte umgekehrt. In einer separaten Studie zum Gehen auf ebener Fläche vergleicht Abbildung 10 Vollkontakteinlagen mit 8,45 ± 1,01 mit Schuhen allein bei 5,00 ± 0,81, wobei höhere Werte mehr Komfort bedeuten. Die Rohwerte bleiben daher studienspezifisch. [Skala in Ergebnissen und Methoden](ref:R01) · [Originalabbildung 10](ref:R02)",
+          "markdown": "Die randomisierte Studie zur Plantarfasziitis verwendete eine 10 cm lange visuelle Analogskala von 0 (keine Beschwerden) bis 10 (stärkste Beschwerden). In Woche 8 lagen die Werte bei 3,12 ± 0,51 für individuelle und 5,25 ± 1,22 für vorgefertigte Einlagen (P < 0,05). Ein früherer Abschnitt zum Anprobieren der Einlagen nennt umgekehrte Skalenendpunkte. Die Beschreibung der Skala für Woche 0 und 8 und die Ergebnisse deuten niedrigere Werte übereinstimmend als höheren Komfort. Die separate Studie zum Gehen auf ebener Strecke bewertete den Komfort von 0 (am unbequemsten) bis 10 (am bequemsten). Abbildung 10 nennt 8,45 ± 1,01 für Vollkontakteinlagen und 5,00 ± 0,81 für Schuhe allein. Für die Interpretation gelten die jeweiligen Skalenendpunkte. [Skalenmethode und Ergebnisse nach acht Wochen](ref:R01) · [Originalabbildung 10](ref:R02)",
           "figure_ids": [
             "F01"
           ]
@@ -194,7 +194,7 @@
         {
           "id": "task-dependence",
           "title": "Steigung verändert die Auswertung der Plantarlast",
-          "markdown": "Die Steigungsstudie verglich je 10 Personen mit funktionellem Plattfuß und normaler Fußform auf dem Laufband bei 10% Steigung. Mit Gewölbeeinlage verlagerte sich in der Plattfußgruppe das Kraftzentrum in der Abstoßphase nach lateral. Das Kraftzentrum beschreibt den Angriffspunkt der Resultierenden. Mittelfuß-Spitzendruck und Dauer der Fersenbelastung erfordern weiterhin regional und phasenspezifisch aufgelöste Messungen. [Steigungsgang und Kraftzentrum](ref:R03)",
+          "markdown": "Die Steigungsstudie untersuchte je zehn Personen mit und ohne funktionellen Plattfuß auf dem Laufband bei 10% Steigung. Mit Gewölbeeinlage verlagerte sich der Angriffspunkt der plantaren resultierenden Kraft in der Plattfußgruppe während der Abstoßphase tendenziell nach lateral (P = 0,16). Dieser Wert beschreibt die Lage der resultierenden Kraft. Spitzendruck im Mittelfußknochenbereich und Dauer der Fersenbelastung erfordern regional und nach Gangphase aufgelöste Messungen. [Originalabbildung 2](ref:R03)",
           "figure_ids": []
         },
         {
@@ -206,7 +206,7 @@
         {
           "id": "geometry-tradeoffs",
           "title": "Wie Vollkontakt- und Keileinlagen nach Endpunkt abschneiden",
-          "markdown": "Die Studie auf ebener Fläche verglich bei 10 Personen mit funktionellem Plattfuß Schuhe allein, Scan-Einlagen, Vollkontakteinlagen und Vollkontakteinlagen mit einem 5-mm-Keil. Originaltabelle 1 nennt maximale Dorsalflexionswinkel von 9,6°, 11,6°, 11,0° und 12,5°. Scan- und Keilbedingung unterschieden sich signifikant vom Schuh allein, während der mittlere Komfort in Abbildung 10 beim Vollkontakt am höchsten war. Die Rangfolge hängt vom Endpunkt ab. Die Kinematik aus Kamera und Kraftmessplatten müsste zur regionalen Zuordnung mit Druckkarten im Schuh verbunden werden. [Originaltabelle 1 und Abbildung 10](ref:R02)",
+          "markdown": "Die Studie zum Gehen auf ebener Strecke prüfte bei zehn Personen mit funktionellem Plattfuß vier Bedingungen in randomisierter Reihenfolge. Verglichen wurden Schuhe allein, Einlagen nach automatischem Scan, Vollkontakteinlagen und Einlagen mit einem 5 mm hohen medialen Keil. Tabelle 1 nennt maximale Dorsalflexionswinkel von 9,6°, 11,6°, 11,0° und 12,5°. Die Einlagen nach automatischem Scan und die Einlagen mit medialem Keil unterschieden sich signifikant von Schuhen allein. Die Vollkontakteinlage hatte in Abbildung 10 den höchsten mittleren Komfortwert. Die Studie kombinierte Bewegungsanalyse mit Kraftmessplatten. Für die Zuordnung der Gangbefunde zu einzelnen plantaren Kontaktbereichen wären Druckkarten im Schuh erforderlich. [Originaltabelle 1 und Abbildung 10](ref:R02)",
           "figure_ids": []
         },
         {
@@ -224,8 +224,8 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Komfortwerte aus vier Bedingungen beim Gehen auf ebener Fläche (Hsu et al., 2022)",
-          "interpretation": "Vollkontakt und Keil schnitten besser ab als Schuhe allein. Vollkontakt lag auch über der Scan-Bedingung. Die gemeinsame Skala erlaubt einen Vergleich des unmittelbaren Tragekomforts. [Originalabbildung 10](ref:R02)"
+          "caption": "Komfortwerte unter vier Bedingungen beim Gehen auf ebener Strecke (Hsu et al., 2022)",
+          "interpretation": "Die Dreiecke markieren signifikante Unterschiede zwischen Vollkontakteinlage bzw. medialem Keil und Schuhen allein. Der Stern markiert den Vergleich zwischen Vollkontakteinlage und Einlage nach automatischem Scan (P < 0,05). [Originalabbildung 10](ref:R02)"
         }
       }
     }

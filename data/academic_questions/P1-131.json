@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P1-131",
   "p": "P1",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-19",
   "evidence_cutoff": "2026-11-19",
   "related_paper_ids": [],
@@ -58,25 +58,25 @@
         {
           "id": "airway-fit",
           "title": "气道适配与随访迁移",
-          "markdown": "Guibert 等从 CT 设计支架，采用数控加工模具成形医用硅胶。10 例复杂气道狭窄均完成放置，9 例支架得到良好的几何适配。3 个月内记录到 2 例迁移。成品贴合与后续持位由不同观测确定，无平行对照的病例系列只能给出这批器具的事件记录。 [气道概念验证](ref:R01)",
+          "markdown": "Guibert 等根据 CT 重建气道并设计个体化支架，再用数控机床制造模具并成型医用级硅胶支架。10 枚支架均成功置入，9 枚与气道形状吻合良好。3 个月内记录到 2 例移位。这项单臂可行性研究分别记录了初始贴合与随访事件。 [气道支架概念验证研究](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "airway-compression",
           "title": "气管原型压缩曲线代表什么",
-          "markdown": "另一项研究直接打印 PCL、PDO 和 PLA/PCL（50∶50）气管原型。结果段按外径从 7 mm 压至 3 mm 报告径向力，三件 PDO 读数为 744.85–773.18 N，三件 PCL 为 377.26–404.97 N。图 11 给出力随直径变化的曲线，适合比较此装夹条件下的抗压反应。分叉贴合、卸载后的剩余变形和实际迁移需要额外测量。 [原文表 7 和图 11](ref:R02)",
+          "markdown": "另一项研究以聚己内酯（PCL）、聚对二氧环己酮（PDO）及 50:50 的聚乳酸（PLA）/PCL 共混物直接打印气管支架。试验将外径从 7 mm 压至 3 mm。表 7 每种材料报告 3 个读数，PDO 为 744.85–773.18 N，PLA/PCL 为 441.85–531.10 N，PCL 为 377.26–404.97 N。图 11a–c 分别给出 PCL、PDO 和 PLA/PCL 的力–直径曲线。 [原文表 7 和图 11](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "biliary-deployment",
           "title": "胆道导入弯曲与支路流动",
-          "markdown": "胆道 SLA 实验以 60 mm 的 Weave 样件模拟导入，约 30° 弯曲对应 7.74 mm 位移。7–8 mm 区间的预测位移与三点弯曲实测相差不足 10%，但 5–6 N 下中心峰值应力预测超过处理后树脂的屈服强度 5 MPa 以上。研究另用 4 和 3.4 mm 的通路模拟 30° 胆管分叉。支路通流的 CFD 结果与导入弯曲的应力结果对应两个任务。 [原文图 5、图 7 与补充表 S2–S3](ref:R03)",
+          "markdown": "胆道 SLA 研究把 60 mm 支架弯曲 30° 换算为 7.74 mm 位移（补充图 S7）。在 5 和 6 N 时，Weave 型的模拟位移相对误差分别为 11.2% 和 12.3%（补充表 S2），超过正文所称的 10%。补充表 S3 对应的中央峰值应力分别为 18.60 和 20.95 MPa，均超过后处理树脂屈服强度 5 MPa 以上。图 5 另行模拟支架跨越由 4 和 3.4 mm 流道形成的 30° 胆道交汇处时的压力和流线。 [原文图 5–6、补充图 S7 与补充表 S2–S3](ref:R03)",
           "figure_ids": []
         },
         {
           "id": "esophageal-retention",
           "title": "食管仿生构型的防滑力",
-          "markdown": "原文图 10 的防滑试验中，简单、FCC、SC 和仿生结构的力分别约为 0.50、0.88、0.87 和 1.32 N。仿生几何在同一试验中提高了起滑阻力。模型用猪食管拉伸数据表征黏膜–黏膜下层与肌层，再用实验力曲线校准。该力值的可比范围由接触模型、样件外形和滑动条件共同限定。 [原文图 10–11](ref:R04)",
+          "markdown": "研究人员将支架置入离体猪食管组织，在 5 mm/min 的拉伸试验中测量轴向拉脱力，每种结构测试 5 件。图 10a 中简易型、面心立方（FCC）晶格型、简单立方（SC）晶格型和仿生型分别约为 0.50、0.88、0.87 和 1.32 N。有限元模型采用黏膜–黏膜下层和肌层的拉伸数据，支架材料模型参数也根据试验数据调整。拉脱力反映该试验条件下的固定能力。 [原文图 6、10–11](ref:R04)",
           "figure_ids": [
             "F01"
           ]
@@ -114,8 +114,8 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "防滑力曲线和食管接触模型 (Profitiliotis et al., 2024)",
-          "interpretation": "图 a 的实验曲线可比较构型在这一装置中的相对起滑阻力。图 b–g 给出仿生结构及仿真网格和边界条件，说明比较依赖设定的接触状态。 [原文图 10](ref:R04)"
+          "caption": "轴向拉脱力曲线和食管接触有限元模型（Profitiliotis 等，2024）",
+          "interpretation": "图 a 比较四种支架的力–时间曲线。图 b–d 展示支架与食管壁的接触几何，图 e–f 展示有限元网格，图 g 展示代表性边界条件。 [原文图 10](ref:R04)"
         }
       }
     },
@@ -126,25 +126,25 @@
         {
           "id": "airway-fit",
           "title": "Airway fit and migration at follow-up",
-          "markdown": "Guibert and colleagues designed stents from CT and used CNC-machined molds to form medical-grade silicone. All 10 devices were placed in patients with complex airway stenosis and 9 showed good geometric fit. 2 migrations were recorded within 3 months. Initial apposition and sustained retention are separate observations. The single-arm series describes the events in these devices. [Airway proof-of-concept study](ref:R01)",
+          "markdown": "Guibert and colleagues reconstructed the airways from CT and designed patient-specific stents, which were formed in CNC-machined molds from medical-grade silicone. All 10 stents were placed successfully and 9 showed good geometric fit. Two migrations were recorded within 3 months. The single-arm feasibility study recorded initial fit and follow-up events separately. [Airway proof-of-concept study](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "airway-compression",
           "title": "What tracheal prototype compression curves capture",
-          "markdown": "A separate study directly printed tracheal prototypes in PCL, PDO and a 50:50 PLA/PCL blend. The results report radial force for compression from 7 mm to 3 mm outer diameter. The 3 PDO readings ranged from 744.85 to 773.18 N, and 3 PCL readings from 377.26 to 404.97 N. Figure 11 plots force against diameter and supports comparison within that fixture. Branch fit, residual deformation after unloading and migration require additional measurements. [Original Table 7 and Figure 11](ref:R02)",
+          "markdown": "A separate study directly printed tracheal stents in polycaprolactone (PCL), polydioxanone (PDO) and a 50:50 polylactic acid (PLA)/PCL blend. The fixture compressed them from 7 to 3 mm outer diameter. Table 7 reports three readings per material, with ranges of 744.85–773.18 N for PDO, 441.85–531.10 N for PLA/PCL and 377.26–404.97 N for PCL. Figure 11a–c gives force–diameter curves for PCL, PDO and PLA/PCL, respectively. [Original Table 7 and Figure 11](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "biliary-deployment",
           "title": "Biliary delivery bending and branch flow",
-          "markdown": "The biliary SLA study modeled delivery bending of a 60 mm Weave specimen, with about 30° corresponding to 7.74 mm displacement. Predicted displacement at 7–8 mm was within 10% of the three-point bend result, while the central peak stress at 5–6 N was predicted to exceed the treated resin's yield strength by more than 5 MPa. A separate flow model used 4 and 3.4 mm paths at a 30° biliary junction. Branch-flow CFD and deployment stress address two different tasks. [Original Figures 5 and 7 and Supplementary Tables S2–S3](ref:R03)",
+          "markdown": "The biliary SLA study equated a 30° bend of a 60 mm stent to a displacement of 7.74 mm (Supplementary Figure S7). At 5 and 6 N, the Weave model's relative displacement errors were 11.2% and 12.3%, respectively (Supplementary Table S2), above the 10% stated in the main text. The corresponding predicted central peak stresses were 18.60 and 20.95 MPa, both more than 5 MPa above the treated resin's yield strength (Supplementary Table S3). Figure 5 separately models pressure and streamlines at a 30° junction between 4 and 3.4 mm bile-duct paths. [Original Figures 5–6, Supplementary Figure S7 and Tables S2–S3](ref:R03)",
           "figure_ids": []
         },
         {
           "id": "esophageal-retention",
           "title": "Slip resistance of the biomimetic esophageal design",
-          "markdown": "In the slip test in Figure 10, the forces for the simple, FCC, SC and biomimetic structures were approximately 0.50, 0.88, 0.87 and 1.32 N. The biomimetic geometry increased the observed resistance to slip in that setup. The model used porcine esophageal tensile data for the mucosa–submucosa and muscle layers, then calibrated against the experimental force curve. Contact conditions, specimen shape and the sliding protocol define the scope of the comparison. [Original Figures 10–11](ref:R04)",
+          "markdown": "The authors placed stents in ex vivo porcine esophageal tissue and measured axial pull-out force at 5 mm/min, testing five samples per design. Figure 10a gives approximately 0.50, 0.88, 0.87 and 1.32 N for the simple, face-centered cubic (FCC), simple cubic (SC) and bioinspired designs, respectively. The finite-element model used tensile data from the mucosa–submucosa and muscle layers, with stent material parameters adjusted to the experimental data. Pull-out force measures anchoring under these test conditions. [Original Figures 6 and 10–11](ref:R04)",
           "figure_ids": [
             "F01"
           ]
@@ -182,8 +182,8 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Slip-force curves and esophageal contact model (Profitiliotis et al., 2024)",
-          "interpretation": "Panel a compares slip resistance among configurations on this fixture. Panels b–g show the biomimetic geometry, mesh and boundary conditions, which identify the contact setup behind the comparison. [Original Figure 10](ref:R04)"
+          "caption": "Axial pull-out force curves and esophageal contact model (Profitiliotis et al., 2024)",
+          "interpretation": "Panel a compares force–time curves for four stent designs. Panels b–d show the contact geometry of the stent and esophageal wall, e–f the finite-element meshes and g the representative boundary conditions. [Original Figure 10](ref:R04)"
         }
       }
     },
@@ -194,25 +194,25 @@
         {
           "id": "airway-fit",
           "title": "Passform und Migration in den Atemwegen",
-          "markdown": "Guibert und Kollegen konstruierten die Stents aus CT-Daten und formten medizinisches Silikon in CNC-gefertigten Formen. Alle 10 Stents konnten bei komplexen Atemwegsstenosen eingesetzt werden, 9 passten geometrisch gut. Innerhalb von 3 Monaten traten 2 Migrationen auf. Anfängliche Passform und dauerhafter Halt wurden separat beobachtet. Die einarmige Serie dokumentiert die Ereignisse dieser Gruppe. [Machbarkeitsstudie zu Atemwegsstents](ref:R01)",
+          "markdown": "Guibert und Kollegen rekonstruierten die Atemwege aus CT-Daten und entwarfen patientenspezifische Stents. Die Stents aus medizinischem Silikon wurden in CNC-gefertigten Formen hergestellt. Alle 10 Stents konnten eingesetzt werden, 9 passten geometrisch gut. Innerhalb von 3 Monaten traten 2 Migrationen auf. Die einarmige Machbarkeitsstudie erfasste die anfängliche Passform und Ereignisse im Verlauf getrennt. [Machbarkeitsstudie zu Atemwegsstents](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "airway-compression",
           "title": "Was die Kompressionskurven der Trachealprototypen erfassen",
-          "markdown": "Eine weitere Studie druckte Trachealprototypen direkt aus PCL, PDO und einer PLA/PCL-Mischung (50:50). Im Ergebnisteil wird die Radialkraft bei Kompression von 7 auf 3 mm Außendurchmesser angegeben. Die 3 PDO-Werte lagen bei 744,85–773,18 N, die 3 PCL-Werte bei 377,26–404,97 N. Abbildung 11 trägt die Kraft gegen den Durchmesser auf und erlaubt Vergleiche unter dieser Einspannung. Passform an Verzweigungen, Restverformung nach Entlastung und Migration erfordern eigene Messungen. [Originaltabelle 7 und Abbildung 11](ref:R02)",
+          "markdown": "Eine weitere Studie druckte Trachealstents direkt aus Polycaprolacton (PCL), Polydioxanon (PDO) und einer Mischung aus Polymilchsäure (PLA) und PCL im Verhältnis 50:50. Die Prüfvorrichtung komprimierte die Stents von 7 auf 3 mm Außendurchmesser. Tabelle 7 nennt je drei Werte zwischen 744,85 und 773,18 N für PDO, zwischen 441,85 und 531,10 N für PLA/PCL sowie zwischen 377,26 und 404,97 N für PCL. Abbildung 11a–c zeigt die Kraft-Durchmesser-Kurven in der Reihenfolge PCL, PDO und PLA/PCL. [Originaltabelle 7 und Abbildung 11](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "biliary-deployment",
           "title": "Biegung bei der Gallenwegseinbringung und Strömung im Seitenast",
-          "markdown": "Die SLA-Studie zu Gallenwegsstents modellierte die Einbringung einer 60 mm langen Weave-Probe. Eine Biegung um etwa 30° entsprach 7,74 mm Verschiebung. Bei 7–8 mm wich die simulierte Verschiebung um weniger als 10% vom Dreipunktbiegeversuch ab, bei 5–6 N lag die berechnete zentrale Spitzenspannung jedoch mehr als 5 MPa über der Streckgrenze des nachbehandelten Harzes. Ein eigenes Strömungsmodell verwendete 4 und 3,4 mm weite Wege mit einem Abzweig von 30°. Strömung im Seitenast und Einbringungsspannung betreffen zwei verschiedene Aufgaben. [Originalabbildungen 5 und 7 und Ergänzungstabellen S2–S3](ref:R03)",
+          "markdown": "Die SLA-Studie zu Gallenwegsstents setzte eine Biegung um 30° bei einem 60 mm langen Stent mit 7,74 mm Verschiebung gleich (Ergänzungsabbildung S7). Bei 5 und 6 N betrugen die relativen Verschiebungsfehler für den Weave-Stent 11,2% bzw. 12,3% (Ergänzungstabelle S2) und lagen damit über den im Haupttext genannten 10%. Die berechneten zentralen Spitzenspannungen von 18,60 und 20,95 MPa überschritten die Streckgrenze des nachbehandelten Harzes jeweils um mehr als 5 MPa (Ergänzungstabelle S3). Abbildung 5 modelliert separat Druck und Stromlinien an einer 30°-Verzweigung zwischen Gallengängen von 4 und 3,4 mm Durchmesser. [Originalabbildungen 5–6, Ergänzungsabbildung S7 und Tabellen S2–S3](ref:R03)",
           "figure_ids": []
         },
         {
           "id": "esophageal-retention",
           "title": "Rutschwiderstand der biomimetischen Ösophagusgeometrie",
-          "markdown": "Im Rutschversuch aus Abbildung 10 lagen die Kräfte für die einfache, FCC-, SC- und biomimetische Geometrie bei etwa 0,50, 0,88, 0,87 und 1,32 N. Die biomimetische Geometrie erhöhte unter diesen Bedingungen den beobachteten Rutschwiderstand. Das Modell nutzte Zugdaten aus dem Schweineösophagus für Mukosa–Submukosa und Muskelschicht und wurde anhand der gemessenen Kraftkurve kalibriert. Kontaktbedingungen, Probenform und Gleitprotokoll bestimmen den Vergleichsrahmen. [Originalabbildungen 10–11](ref:R04)",
+          "markdown": "Die Stents wurden in explantiertes Schweineösophagusgewebe eingesetzt. Die axiale Auszugskraft wurde bei 5 mm/min an fünf Proben je Bauform gemessen. Abbildung 10a zeigt etwa 0,50, 0,88, 0,87 und 1,32 N für die einfache, die kubisch-flächenzentrierte (FCC), die einfach-kubische (SC) und die bioinspirierte Geometrie. Das Finite-Elemente-Modell nutzte Zugdaten von Mukosa–Submukosa und Muskelschicht. Die Parameter des Stentmaterials wurden an die Versuchsdaten angepasst. Die Auszugskraft beschreibt den Halt unter diesen Prüfbedingungen. [Originalabbildungen 6 und 10–11](ref:R04)",
           "figure_ids": [
             "F01"
           ]
@@ -250,8 +250,8 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Rutschkraftkurven und Ösophagus-Kontaktmodell (Profitiliotis et al., 2024)",
-          "interpretation": "Teilbild a vergleicht den Rutschwiderstand der Geometrien auf dem Prüfstand. Teilbilder b–g zeigen biomimetische Form, Netz und Randbedingungen und machen damit die Kontaktannahmen nachvollziehbar. [Originalabbildung 10](ref:R04)"
+          "caption": "Axiale Auszugskraftkurven und Kontaktmodell des Ösophagus (Profitiliotis et al., 2024)",
+          "interpretation": "Teilbild a vergleicht Kraft-Zeit-Kurven für vier Bauformen. Teilbilder b–d zeigen die Kontaktgeometrie zwischen Stent und Ösophaguswand, e–f die Finite-Elemente-Netze und g die exemplarischen Randbedingungen. [Originalabbildung 10](ref:R04)"
         }
       }
     }

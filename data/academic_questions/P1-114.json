@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P1-114",
   "p": "P1",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-19",
   "evidence_cutoff": "2026-11-19",
   "related_paper_ids": [
@@ -22,7 +22,7 @@
       "title": "Study on the efficacy of 3D printing technology combined with customized plates for the treatment of complex tibial plateau fractures",
       "publisher": "Journal of Orthopaedic Surgery and Research",
       "year": 2024,
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11391824/",
+      "url": "https://link.springer.com/article/10.1186/s13018-024-05051-w",
       "kind": "paper"
     },
     {
@@ -30,7 +30,7 @@
       "title": "3D surgical planning including patient-specific drilling guides for tibial plateau fractures",
       "publisher": "Bone & Joint Open",
       "year": 2024,
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10797644/",
+      "url": "https://doi.org/10.1302/2633-1462.51.BJO-2023-0130.R1",
       "kind": "paper"
     },
     {
@@ -38,7 +38,7 @@
       "title": "3D printing improves preoperative decision making for patient positioning and surgical approach selection for tibial plateau fractures",
       "publisher": "Scientific Reports",
       "year": 2025,
-      "url": "https://doi.org/10.1038/s41598-025-11995-8",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12280030/",
       "kind": "paper"
     }
   ],
@@ -48,7 +48,7 @@
       "reference_id": "R01",
       "original_label": "Fig. 3",
       "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2Fs13018-026-06950-w/MediaObjects/13018_2026_6950_Fig3_HTML.png",
-      "source_url": "https://link.springer.com/article/10.1186/s13018-026-06950-w#Fig3",
+      "source_url": "https://link.springer.com/article/10.1186/s13018-026-06950-w/figures/3",
       "license": "CC BY-NC-ND 4.0"
     }
   ],
@@ -60,19 +60,19 @@
         {
           "id": "randomized",
           "title": "模型单独加入时比较了什么？",
-          "markdown": "胫骨平台骨折先导随机试验在常规 X 线和 CT 规划上加入实体模型。35 人随机分组，模型组 2 人最终未手术，手术结局分析纳入 33 人。这个比较衡量术前查看模型对已手术病例的影响。读流程图时应核对每组入组、手术和进入分析的分母。 [先导试验图 3](ref:R01)",
+          "markdown": "胫骨平台骨折先导随机试验比较两种术前规划。对照组使用 X 线片和 CT，模型组在此基础上增加患者特异性打印模型。模型使用聚乳酸（PLA）熔融沉积成形，层厚为 0.1–0.2 mm。35 人随机分组，模型组 2 人最终未接受手术。结局分析纳入模型组 18 人、对照组 15 人，共 33 人。原文图 2 显示分组和纳入分析的人数。 [分组流程和结果](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "decision_agreement",
           "title": "模型改变决策的频率与决策一致性",
-          "markdown": "Dust 等让 22 名不同资历的参与者评估 22 例胫骨平台骨折，病例中 AO B 型和 C 型各 11 例。提供实体模型后，入路选择变化占 31%，体位选择占 21%，总体治疗方案仅 5%。同一分层内，选择改变和评审一致性是两项不同结果。表 1 中治疗方案的总体 κ 从 CT 的 0.23 到打印模型的 0.17，原始一致比例从 83% 到 82%；表 2 的体位选择有描述性改善，置信区间重叠。训练资历和骨折类型应与结果一起记录。[原研究及表 1–5](ref:R04)\n\n实体模型更容易提供骨块遮挡与可达性的线索。即使最上层治疗方案不变，术者仍可能换一个体位或观察面来完成同一个方案。因此可让评审者在看模型前后独立提交方案，并按固定类别保存变化方向和理由。另由术中记录核对皮肤切口、计划未见的骨块和最终固定方案。这样能观察具体哪项调整进入了手术，而非仅统计“有没有帮助”。",
+          "markdown": "Dust 等让 22 名不同资历的参与者评估 22 例胫骨平台骨折，病例中 AO B 型 11 例、C 型 11 例。所有评审依次查看 CT、三维重建和打印模型。查看打印模型后，入路选择变化占 31%，体位选择占 21%，总体治疗方案仅 5%。同一分层内，选择改变和评审一致性是两项不同结果。表 1 中治疗方案的总体 κ 从 CT 的 0.23 到打印模型的 0.17，原始一致比例从 83% 到 82%；表 2 的体位选择一致比例由 46% 升至 53%，两者的 95% 置信区间重叠。训练资历和骨折类型应与结果一起记录。[原研究及表 1–5](ref:R04)\n\n实体模型更容易提供骨块遮挡与可达性的线索。即使最上层治疗方案不变，术者仍可能换一个体位或观察面来完成同一个方案。因此可让评审者在看模型前后独立提交方案，并按固定类别保存变化方向和理由。另由术中记录核对皮肤切口、计划未见的骨块和最终固定方案。这样能观察具体哪项调整进入了手术，而非仅统计“有没有帮助”。",
           "figure_ids": []
         },
         {
           "id": "operative_time",
           "title": "术中用时和透视用时的散点分布",
-          "markdown": "图 3 中每点对应一名患者。模型组与对照组手术时间中位数分别为 100 和 119 min（p = 0.10），透视时间为 98 和 100 s（p = 0.23）。两个时间量的组间重叠与对照组较长的尾部均值得看。透视秒数与另一研究报告的透视次数是不同指标。 [用时散点图](ref:R01) · [定制板对照研究](ref:R02)",
+          "markdown": "模型组与对照组的手术时间中位数分别为 100 min（四分位距 90–120 min）和 119 min（100–130 min），p = 0.10。透视时间中位数分别为 98 s（78–101 s）和 100 s（85–145 s），p = 0.23。两项比较均未达统计显著。透视时长和定制板队列记录的透视次数是两项独立指标。 [原文图 3 与主要结局](ref:R01) · [定制板队列](ref:R02)",
           "figure_ids": [
             "F01"
           ]
@@ -80,25 +80,25 @@
         {
           "id": "plate_bundle",
           "title": "定制板队列的对照同时改变哪些环节？",
-          "markdown": "定制板研究回顾性匹配 22 对病例。干预含实体模型、虚拟复位及个体化板，常规组采用传统钢板。图 3 用半透明骨模型展示拟定板位、螺钉长度及螺钉与关节面关系。术中时间缩短与准备时间延长并存，两个时间窗均需报告。 [定制板设计与临床比较](ref:R02)",
+          "markdown": "回顾性配对队列每组 22 人。定制板组同时采用虚拟复位、实体模型和个体化接骨板，对照组使用常规接骨板。原文图 3 用透明化的虚拟骨折模型展示拟定的板位、螺钉长度及螺钉与关节面的关系。表 2 以均值 ± 标准差报告，定制板组和常规组的平均手术时间分别为 75.27 ± 15.98 和 102.82 ± 21.11 min（p < 0.05），平均透视次数为 6.50 ± 2.09 和 11.32 ± 3.50（p < 0.001）。定制板组的术前准备时间更长。这些结果对应整套联合流程。 [定制板研究图 3 与表 2](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "compare_designs",
           "title": "三种结果读数对应三个研究环节",
-          "markdown": "| 研究设计 | 测量对象 | 结果的可比范围 |\n|---|---|---|\n| 同病例比较 CT、三维重建与打印模型 | 同一骨折的判读与决策 | 适合比较视图如何改变术前选择，需区分评估顺序和阅片经验 |\n| 在相同常规固定策略下随机增加模型 | 手术分钟、透视秒数和患者随访 | 估计提供实体模型的增量，记录其交付时刻及实际使用 |\n| 回顾性匹配比较模型加定制接骨板与传统固定 | 整条路径的准备、术中操作及恢复 | 解释捆绑方案的整体表现，保留病例选择及制作环节的差异 |\n\n把 CT 判读意见、手术工时和患者功能连成顺序。先比较是否改变预案，再比较预案是否按计划完成，最后将复位、并发症与患者结局配对记录。研究将透视读数分别作为使用秒数和曝光次数，比较时保留原单位，避免以相同标签合并。定制器械若缩短术中操作，仍需把时间轴向前延伸到模型制作、方案审批和成品交付，才能在同一时间起点比较准备负担。[术前判读](ref:R04) · [随机试验](ref:R01) · [定制接骨板研究](ref:R02)",
+          "markdown": "| 研究设计 | 测量对象 | 结果的可比范围 |\n|---|---|---|\n| 同病例比较 CT、三维重建与打印模型 | 同一骨折的判读与决策 | 适合比较视图如何改变术前选择，需区分评估顺序和阅片经验 |\n| 在采用常规固定器械的条件下随机增加模型 | 手术分钟、透视秒数和患者随访 | 估计提供实体模型的增量，记录其交付时刻及实际使用 |\n| 回顾性匹配比较模型加定制接骨板与传统固定 | 整条路径的准备、术中操作及恢复 | 解释捆绑方案的整体表现，保留病例选择及制作环节的差异 |\n\n把 CT 判读意见、手术工时和患者功能连成顺序。先比较是否改变预案，再比较预案是否按计划完成，最后将复位、并发症与患者结局配对记录。研究将透视读数分别作为使用秒数和曝光次数，比较时保留原单位，避免以相同标签合并。定制器械若缩短术中操作，仍需把时间轴向前延伸到模型制作、方案审批和成品交付，才能在同一时间起点比较准备负担。[术前判读](ref:R04) · [随机试验](ref:R01) · [定制接骨板研究](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "clinical_endpoints",
           "title": "膝关节功能与影像复位应该怎样对应？",
-          "markdown": "定制板队列在术后 6 和 12 个月的 HSS 评分较高，Rasmussen 评分未见显著组间差异。模型先导试验的放射学 Rasmussen 评分在 6 个月和 12 个月同样未观察到显著差异。对照阅读时应分别列出量表维度、评估时间和评分分布，检验较好的屈曲是否伴随更小的关节面台阶。 [膝关节结局](ref:R02) · [模型组的影像结果](ref:R01)",
+          "markdown": "定制板队列在术后 6 和 12 个月的特种外科医院膝关节评分（HSS 评分）较高。两组 Rasmussen 解剖和功能评级的差异均未达统计显著。模型先导试验在 6 和 12 个月的 X 线 Rasmussen 评分也未见显著组间差异（p 分别为 0.32 和 0.76）。如需检验屈曲改善是否伴随关节面台阶减小，应在同一访视中对照膝关节功能和影像测量。 [定制板队列的表 3–4](ref:R02) · [先导试验的影像结果](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "endpoint_timing",
           "title": "怎样按病例条件解释术中差异",
-          "markdown": "先导随机试验把膝关节功能和自报结果放在月随访，用术后影像评估关节面对位。匹配研究在不同时点收集 HSS 评分并测量屈曲角。短期功能受肿胀、疼痛和康复阶段影响，长期可再按复位状态、既往损伤和是否再手术分层。设计下一比较时，先指定同一术后时点和同一量表，记录术前同侧或健侧功能，并在失访时报告可分析例数。[随机试验随访](ref:R01) · [配对队列随访](ref:R02)\n\n对照病例选取同样的关节内骨折分型和严重程度。分别在打印前、模型审核后和置入器械后记录时间戳，还可标注由谁审批和是否需要重做。术中记录计划偏移是否由入路可达性、骨块实际位置或接骨板就位引起，术后用相同取向的影像测量骨折间隙和关节面台阶。并列呈现冻结方案和实际方案，才能比较模型、导板和固定板在哪一步改变了过程。",
+          "markdown": "先导随机试验把膝关节功能和自报结果放在月随访，依据术后 X 线片评估关节面对位。匹配研究在不同时点收集 HSS 评分并测量屈曲角。短期功能受肿胀、疼痛和康复阶段影响，长期可再按复位状态、既往损伤和是否再手术分层。设计下一比较时，先指定同一术后时点和同一量表，记录术前同侧或健侧功能，并在失访时报告可分析例数。[随机试验随访](ref:R01) · [配对队列随访](ref:R02)\n\n对照病例选取同样的关节内骨折分型和严重程度。分别在打印前、模型审核后和置入器械后记录时间戳，还可标注由谁审批和是否需要重做。术中记录计划偏移是否由入路可达性、骨块实际位置或接骨板就位引起，术后用相同取向的影像测量骨折间隙和关节面台阶。并列呈现冻结方案和实际方案，才能比较模型、导板和固定板在哪一步改变了过程。",
           "figure_ids": []
         },
         {
@@ -111,7 +111,7 @@
       "figure_texts": {
         "F01": {
           "caption": "García Cantarero 等，2026。两组手术和透视用时的分布。",
-          "interpretation": "以同一时间轴比较两组散点，模型组的手术用时多落在较低区间，对照组在长用时端更分散。查看原图时，手术分钟与透视秒数应分别读数。中位数描述典型病例，散点的重叠和分散程度则提供了估计效应区间和后续样本量所需的信息。"
+          "interpretation": "横轴是手术时间（min），纵轴是透视时间（s）。圆点为打印模型组，叉号为对照组。两组散点重叠。对照组有个别点位于较长手术时间或较长透视时间的一端。中位数、四分位距和 p 值见原文主要结局。"
         }
       }
     },
@@ -122,19 +122,19 @@
         {
           "id": "randomized",
           "title": "What did the trial isolate by adding a model?",
-          "markdown": "The tibial plateau pilot trial added a physical model to planning based on radiographs and CT. Of 35 randomized patients, 2 assigned to the model did not undergo surgery, leaving 33 for surgical outcome analysis. The comparison estimates the effect of model-assisted planning among operated cases. Check the flow diagram for the denominators at allocation, surgery and analysis. [Pilot trial, Fig. 3](ref:R01)",
+          "markdown": "The randomized tibial plateau fracture pilot compared two planning strategies. The control group used radiographs and CT, and the model group added a patient-specific printed model. The models were printed from polylactic acid (PLA) by fused deposition modeling at a layer thickness of 0.1–0.2 mm. Of 35 randomized patients, 2 assigned to the model group did not undergo surgery. The outcome analysis included 18 patients in the model group and 15 controls, for a total of 33. Figure 2 shows allocation and the numbers analyzed. [Allocation and outcomes](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "decision_agreement",
           "title": "How often did the model change decisions, and did raters agree?",
-          "markdown": "Dust and colleagues had 22 raters with different levels of experience assess 22 tibial plateau fractures, with 11 AO type B and 11 type C cases. Access to the physical model changed the chosen approach in 31% of assessments, patient position in 21%, and overall treatment concept in 5%. A changed decision and better agreement are distinct outcomes. In Table 1, overall κ for treatment concept moved from 0.23 on CT to 0.17 with the model, and raw agreement from 83% to 82%. Table 2 shows descriptive improvements in positioning agreement with overlapping confidence intervals. Record experience and fracture type alongside these outcomes. [Original study and Tables 1–5](ref:R04)\n\nA tangible model can help a rater inspect obscured fragments and assess access. The operative strategy can remain fixed while the surgeon changes position or viewpoint. Have raters submit plans before and after reviewing the model and record the direction and reason for each change. Then check the operative record for the chosen incision, previously obscured fragments and the final fixation plan to identify which planning changes carried through to surgery.",
+          "markdown": "Dust and colleagues had 22 raters with different levels of experience assess 22 tibial plateau fractures, with 11 AO type B and 11 type C cases. Raters reviewed CT, 3D reconstructions and then the printed models in that order. After viewing the physical model, they changed the chosen approach in 31% of assessments, patient position in 21%, and overall treatment concept in 5%. A changed decision and better agreement are distinct outcomes. In Table 1, overall κ for treatment concept moved from 0.23 on CT to 0.17 with the model, and raw agreement from 83% to 82%. In Table 2, observed agreement on positioning increased from 46% to 53%, with overlapping 95% confidence intervals. Record experience and fracture type alongside these outcomes. [Original study and Tables 1–5](ref:R04)\n\nA tangible model can help a rater inspect obscured fragments and assess access. The operative strategy can remain fixed while the surgeon changes position or viewpoint. Have raters submit plans before and after reviewing the model and record the direction and reason for each change. Then check the operative record for the chosen incision, previously obscured fragments and the final fixation plan to identify which planning changes carried through to surgery.",
           "figure_ids": []
         },
         {
           "id": "operative_time",
           "title": "The distributions of operative and fluoroscopy time",
-          "markdown": "Each point in Fig. 3 represents a patient. Median operative times were 100 and 119 min for the model and control groups (p = 0.10), and fluoroscopy times were 98 and 100 s (p = 0.23). Read both the overlap and the longer tail of the control distribution. Fluoroscopy duration and the number of acquisitions reported in the other study measure different aspects of imaging. [Time scatter plot](ref:R01) · [Customized-plate comparison](ref:R02)",
+          "markdown": "Median operative time was 100 min (interquartile range 90–120 min) with the model and 119 min (100–130 min) with standard planning (p = 0.10). Median fluoroscopy time was 98 s (78–101 s) and 100 s (85–145 s), respectively (p = 0.23). Neither comparison reached statistical significance. The plate cohort recorded the number of fluoroscopy acquisitions, a separate outcome. [Original Fig. 3 and primary outcomes](ref:R01) · [Plate cohort](ref:R02)",
           "figure_ids": [
             "F01"
           ]
@@ -142,7 +142,7 @@
         {
           "id": "plate_bundle",
           "title": "Which components changed together in the plate cohort?",
-          "markdown": "The customized-plate study retrospectively matched 22 pairs. Its intervention combined a physical model, virtual reduction and a customized plate. Controls received traditional plates. Figure 3 shows planned plate position, screw length and the relationship to the joint surface on a transparent bone model. Shorter operating time accompanied longer preparation time, making both time windows relevant. [Plate design and clinical comparison](ref:R02)",
+          "markdown": "The retrospective matched cohort included 22 patients per group. The customized-plate group combined virtual reduction, physical models and patient-specific fixation plates. Controls received conventional plates. In Fig. 3, a transparent virtual fracture model shows the planned plate position, screw lengths and screw trajectories relative to the articular surface. Table 2 reports mean ± standard deviation. Operative times were 75.27 ± 15.98 and 102.82 ± 21.11 min (p < 0.05) and mean fluoroscopy counts of 6.50 ± 2.09 and 11.32 ± 3.50 (p < 0.001) for the customized and conventional groups, respectively. Preoperative preparation took longer in the customized group. These outcomes describe the combined workflow. [Original Fig. 3 and Table 2](ref:R02)",
           "figure_ids": []
         },
         {
@@ -154,13 +154,13 @@
         {
           "id": "clinical_endpoints",
           "title": "How should knee function be read alongside reduction?",
-          "markdown": "The customized-plate cohort had higher HSS scores at 6 and 12 months, with no significant difference in Rasmussen scores. The model pilot also found no significant group difference in radiographic Rasmussen scores at 6 and 12 months. Align scale domains, visit timing and score distributions before testing whether better flexion tracks smaller articular step-off. [Knee outcomes](ref:R02) · [Radiographic model comparison](ref:R01)",
+          "markdown": "The customized-plate cohort had higher Hospital for Special Surgery knee scores (HSS scores) at 6 and 12 months. Rasmussen anatomical and functional assessments showed no statistically significant group differences. In the pilot model trial, radiographic Rasmussen scores also showed no significant difference at 6 and 12 months (p = 0.32 and 0.76, respectively). To test whether better flexion accompanies a smaller articular step-off, assess knee function and imaging at the same visit. [Plate cohort Tables 3–4](ref:R02) · [Pilot trial radiographic outcomes](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "endpoint_timing",
           "title": "Interpret intraoperative effects in the context of the case",
-          "markdown": "The pilot trial recorded function and patient-reported outcomes at follow-up and assessed alignment on postoperative imaging. The matched study collected HSS scores at several points and measured flexion. Swelling, pain and the rehabilitation phase can affect early function. Later assessments can be stratified by reduction, previous injury and reoperation. For a new comparison, specify the same follow-up time and scale, record baseline or contralateral function and report the number analysed where follow-up is incomplete. [Trial follow-up](ref:R01) · [Matched cohort follow-up](ref:R02)\n\nCompare fractures of similar intra-articular pattern and severity. Timestamp imaging, model review and device placement. Record approval responsibility and rework. In theatre, note whether any plan deviation arose from access, the actual fragment position or seating of the plate. Measure postoperative gap and step-off on images in the same orientation. Pair the locked plan with what happened in surgery to distinguish the role of the model, guide and plate.",
+          "markdown": "The pilot trial recorded function and patient-reported outcomes at follow-up and assessed reduction on postoperative radiographs. The matched study collected HSS scores at several points and measured flexion. Swelling, pain and the rehabilitation phase can affect early function. Later assessments can be stratified by reduction, previous injury and reoperation. For a new comparison, specify the same follow-up time and scale, record baseline or contralateral function and report the number analysed where follow-up is incomplete. [Trial follow-up](ref:R01) · [Matched cohort follow-up](ref:R02)\n\nCompare fractures of similar intra-articular pattern and severity. Timestamp imaging, model review and device placement. Record approval responsibility and rework. In theatre, note whether any plan deviation arose from access, the actual fragment position or seating of the plate. Measure postoperative gap and step-off on images in the same orientation. Pair the locked plan with what happened in surgery to distinguish the role of the model, guide and plate.",
           "figure_ids": []
         },
         {
@@ -173,7 +173,7 @@
       "figure_texts": {
         "F01": {
           "caption": "García Cantarero et al., 2026. Distribution of operative and fluoroscopy times by group.",
-          "interpretation": "Read the two groups on the same scale. Operative times in the model group cluster toward the lower end, while control times are more scattered toward the upper end. Read operative minutes and fluoroscopy seconds on their own scales. Medians describe typical cases, while overlap and spread help inform an effect interval and the sample size of a subsequent study."
+          "interpretation": "The horizontal axis gives operative time in minutes and the vertical axis gives fluoroscopy time in seconds. Circles represent the printed-model group and crosses the controls. The distributions overlap. Some control observations extend toward longer operative or fluoroscopy times. Medians, interquartile ranges and p values are given with the primary outcomes."
         }
       }
     },
@@ -184,19 +184,19 @@
         {
           "id": "randomized",
           "title": "Welchen Effekt konnte die Studie durch Hinzufügen eines Modells erfassen?",
-          "markdown": "In der randomisierten Pilotstudie zu Tibiaplateaufrakturen wurde die Planung anhand von Röntgen und CT durch ein physisches Modell ergänzt. Von 35 randomisierten Personen wurden 2 aus der Modellgruppe nicht operiert. Die Analyse der Operationsergebnisse umfasste 33 Personen. Das Flussdiagramm zeigt die jeweiligen Nenner bei Zuteilung, Operation und Auswertung. [Pilotstudie, Abb. 3](ref:R01)",
+          "markdown": "Die randomisierte Pilotstudie zu Tibiaplateaufrakturen verglich zwei Planungsstrategien. Die Kontrollgruppe nutzte Röntgenaufnahmen und CT. In der Modellgruppe kam ein patientenspezifisches Druckmodell hinzu. Die Modelle wurden aus Polylactid (PLA) im Schmelzschichtverfahren mit einer Schichtdicke von 0,1–0,2 mm gedruckt. Von 35 randomisierten Personen wurden 2 aus der Modellgruppe nicht operiert. In die Auswertung gingen 18 Personen aus der Modellgruppe und 15 aus der Kontrollgruppe ein, insgesamt 33. Abbildung 2 zeigt die Zuteilung und die ausgewerteten Fallzahlen. [Zuteilung und Ergebnisse](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "decision_agreement",
           "title": "Wie oft änderte das Modell die Entscheidung, und wie gut stimmten die Beurteilenden überein?",
-          "markdown": "Dust und Kollegen ließen 22 Personen unterschiedlicher Erfahrung 22 Tibiaplateaufrakturen bewerten, je 11 vom AO-Typ B und C. Mit dem physischen Modell änderte sich die Zugangswahl in 31 %, die Lagerung in 21 % und das Behandlungskonzept in 5 % der Bewertungen. Eine geänderte Entscheidung und eine höhere Übereinstimmung sind getrennte Endpunkte. In Tabelle 1 sank das Gesamt-κ für das Behandlungskonzept von 0,23 beim CT auf 0,17 beim Druckmodell. Die direkte Übereinstimmung sank von 83 % auf 82 %. Tabelle 2 zeigt für die Lagerung deskriptive Verbesserungen bei überlappenden Konfidenzintervallen. Erfahrung und Frakturtyp sind gemeinsam mit den Ergebnissen zu erfassen. [Originalstudie und Tabellen 1–5](ref:R04)\n\nEin physisches Modell kann verdeckte Fragmente und mögliche Zugangsrichtungen besser erkennbar machen. Das Behandlungskonzept kann gleich bleiben, während sich Lagerung oder Blickrichtung ändern. Die Bewertenden geben ihren Plan jeweils vor und nach der Modellansicht ab und dokumentieren Richtung und Grund jeder Änderung. Der OP-Bericht hält Zugang, verdeckte Fragmente und die endgültige Fixation fest. So lässt sich der Weg von der Planänderung bis zur Umsetzung verfolgen.",
+          "markdown": "Dust und Kollegen ließen 22 Personen unterschiedlicher Erfahrung 22 Tibiaplateaufrakturen bewerten, darunter 11 vom AO-Typ B und 11 vom AO-Typ C. Die Bewertenden prüften nacheinander CT, 3D-Rekonstruktion und Druckmodell. Nach der Betrachtung des Druckmodells änderte sich die Zugangswahl in 31 %, die Lagerung in 21 % und das Behandlungskonzept in 5 % der Bewertungen. Eine geänderte Entscheidung und eine höhere Übereinstimmung sind getrennte Endpunkte. In Tabelle 1 sank das Gesamt-κ für das Behandlungskonzept von 0,23 beim CT auf 0,17 beim Druckmodell. Die direkte Übereinstimmung sank von 83 % auf 82 %. In Tabelle 2 stieg der beobachtete Übereinstimmungsanteil für die Lagerung von 46 % auf 53 %, bei überlappenden 95-%-Konfidenzintervallen. Erfahrung und Frakturtyp sind gemeinsam mit den Ergebnissen zu erfassen. [Originalstudie und Tabellen 1–5](ref:R04)\n\nEin physisches Modell kann verdeckte Fragmente und mögliche Zugangsrichtungen besser erkennbar machen. Das Behandlungskonzept kann gleich bleiben, während sich Lagerung oder Blickrichtung ändern. Die Bewertenden geben ihren Plan jeweils vor und nach der Modellansicht ab und dokumentieren Richtung und Grund jeder Änderung. Der OP-Bericht hält Zugang, verdeckte Fragmente und die endgültige Fixation fest. So lässt sich der Weg von der Planänderung bis zur Umsetzung verfolgen.",
           "figure_ids": []
         },
         {
           "id": "operative_time",
           "title": "Verteilungen von Operations- und Durchleuchtungszeit",
-          "markdown": "Jeder Punkt in Abb. 3 steht für eine operierte Person. Die mediane Operationsdauer betrug in Modell- und Kontrollgruppe 100 und 119 min (p = 0,10), die Durchleuchtungszeit 98 und 100 s (p = 0,23). Die Überlappung und der längere rechte Rand der Kontrollgruppe gehören zur Interpretation. Durchleuchtungsdauer und die in der anderen Studie erfasste Anzahl der Aufnahmen sind verschiedene Messgrößen. [Streudiagramm der Zeiten](ref:R01) · [Vergleich mit angepasster Platte](ref:R02)",
+          "markdown": "Die mediane Operationsdauer lag in der Modellgruppe bei 100 min (Interquartilsabstand 90–120 min) und in der Kontrollgruppe bei 119 min (100–130 min), p = 0,10. Die mediane Durchleuchtungsdauer lag bei 98 s (78–101 s) beziehungsweise 100 s (85–145 s), p = 0,23. Beide Vergleiche waren statistisch nicht signifikant. Die Plattenkohorte erfasste die Anzahl der Durchleuchtungsaufnahmen als eigenen Endpunkt. [Originalabbildung 3 und primäre Endpunkte](ref:R01) · [Plattenkohorte](ref:R02)",
           "figure_ids": [
             "F01"
           ]
@@ -204,7 +204,7 @@
         {
           "id": "plate_bundle",
           "title": "Welche Komponenten änderten sich gemeinsam in der Plattenkohorte?",
-          "markdown": "In der Studie zu angepassten Platten wurden rückblickend 22 Paare gebildet. Die Intervention kombinierte ein physisches Modell, virtuelle Reposition und eine individuelle Platte. Die Kontrollgruppe erhielt herkömmliche Platten. Abb. 3 zeigt am transparenten Knochenmodell Plattenlage, Schraubenlänge und die Beziehung zur Gelenkfläche. Die kürzere Operationsdauer ging mit längerer Vorbereitung einher. [Plattenentwurf und klinischer Vergleich](ref:R02)",
+          "markdown": "Die retrospektiv gematchte Kohorte umfasste 22 Personen je Gruppe. Die Gruppe mit patientenspezifischen Osteosyntheseplatten kombinierte virtuelle Reposition, physische Modelle und individuelle Platten. Die Kontrollgruppe erhielt Standardplatten. Das transparent dargestellte virtuelle Frakturmodell in Abbildung 3 zeigt die geplante Plattenlage, die Schraubenlängen und die Schraubenverläufe zur Gelenkfläche. Tabelle 2 gibt Mittelwerte ± Standardabweichung an. Berichtet wurden für die individuelle und die konventionelle Gruppe mittlere Operationszeiten von 75,27 ± 15,98 und 102,82 ± 21,11 min (p < 0,05) sowie 6,50 ± 2,09 und 11,32 ± 3,50 Durchleuchtungsaufnahmen (p < 0,001). Die präoperative Vorbereitung dauerte in der individuellen Gruppe länger. Diese Ergebnisse beziehen sich auf den kombinierten Arbeitsablauf. [Originalabbildung 3 und Tabelle 2](ref:R02)",
           "figure_ids": []
         },
         {
@@ -216,13 +216,13 @@
         {
           "id": "clinical_endpoints",
           "title": "Wie lassen sich Kniefunktion und Reposition zusammen lesen?",
-          "markdown": "In der Kohorte mit angepasster Platte waren die HSS-Werte nach 6 und 12 Monaten höher. Die Rasmussen-Werte unterschieden sich statistisch nicht signifikant. Auch die Modell-Pilotstudie fand nach 6 und 12 Monaten keinen signifikanten Unterschied im radiologischen Rasmussen-Score. Skalenbereiche, Zeitpunkte und Verteilungen getrennt erfassen, um zu prüfen, ob eine bessere Beugung mit kleineren Gelenkstufen einhergeht. [Knieergebnisse](ref:R02) · [Radiologischer Modellvergleich](ref:R01)",
+          "markdown": "Die Kohorte mit patientenspezifischen Platten erzielte nach 6 und 12 Monaten höhere Werte im Knie-Score des Hospital for Special Surgery (HSS-Score). Die anatomischen und funktionellen Rasmussen-Bewertungen unterschieden sich nicht signifikant zwischen den Gruppen. Auch in der Pilotstudie mit Druckmodellen waren die Unterschiede im radiologischen Rasmussen-Score nach 6 und 12 Monaten nicht signifikant (p = 0,32 beziehungsweise 0,76). Ob eine bessere Beugung mit einer kleineren Gelenkflächenstufe einhergeht, lässt sich durch Funktionsprüfung und Bildgebung beim selben Kontrolltermin untersuchen. [Tabellen 3–4 der Plattenkohorte](ref:R02) · [Radiologische Ergebnisse der Pilotstudie](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "endpoint_timing",
           "title": "Intraoperative Effekte nach Fall und Messzeitpunkt einordnen",
-          "markdown": "Die randomisierte Pilotstudie erfasste Funktion und Patientenangaben in der Verlaufskontrolle und bewertete die Stellung in postoperativen Aufnahmen. Die gematchte Studie erhob den HSS-Score zu mehreren Zeitpunkten und maß die Beugung. Schwellung, Schmerzen und Rehabilitation können die frühe Funktion beeinflussen. Später lässt sich nach Reposition, Vorschädigung und erneuter Operation stratifizieren. Bei einem neuen Vergleich denselben Zeitpunkt und dieselbe Skala festlegen, Ausgangs- oder Gegenseitenfunktion erfassen und bei fehlender Nachbeobachtung die auswertbare Fallzahl angeben. [Verlauf in der randomisierten Studie](ref:R01) · [Verlauf der gematchten Kohorten](ref:R02)\n\nVergleichsfälle nach ähnlichem intraartikulärem Frakturmuster und Schweregrad wählen. Zeitpunkte für Bildgebung, Modellprüfung und Implantation sowie Zuständigkeit und Nacharbeit erfassen. Im OP wird festgehalten, ob eine Abweichung auf Zugang, tatsächliche Fragmentlage oder Plattensitz zurückgeht. Frakturspalt und Gelenkflächenstufe werden postoperativ in gleicher Bildorientierung gemessen. Der freigegebene Plan und seine Umsetzung zeigen, an welcher Stelle Modell, Schablone und Platte den Ablauf beeinflussten.",
+          "markdown": "Die randomisierte Pilotstudie erfasste Funktion und Patientenangaben in der Verlaufskontrolle und bewertete die Reposition auf postoperativen Röntgenaufnahmen. Die gematchte Studie erhob den HSS-Score zu mehreren Zeitpunkten und maß die Beugung. Schwellung, Schmerzen und Rehabilitation können die frühe Funktion beeinflussen. Später lässt sich nach Reposition, Vorschädigung und erneuter Operation stratifizieren. Bei einem neuen Vergleich denselben Zeitpunkt und dieselbe Skala festlegen, Ausgangs- oder Gegenseitenfunktion erfassen und bei fehlender Nachbeobachtung die auswertbare Fallzahl angeben. [Verlauf in der randomisierten Studie](ref:R01) · [Verlauf der gematchten Kohorten](ref:R02)\n\nVergleichsfälle nach ähnlichem intraartikulärem Frakturmuster und Schweregrad wählen. Zeitpunkte für Bildgebung, Modellprüfung und Implantation sowie Zuständigkeit und Nacharbeit erfassen. Im OP wird festgehalten, ob eine Abweichung auf Zugang, tatsächliche Fragmentlage oder Plattensitz zurückgeht. Frakturspalt und Gelenkflächenstufe werden postoperativ in gleicher Bildorientierung gemessen. Der freigegebene Plan und seine Umsetzung zeigen, an welcher Stelle Modell, Schablone und Platte den Ablauf beeinflussten.",
           "figure_ids": []
         },
         {
@@ -235,7 +235,7 @@
       "figure_texts": {
         "F01": {
           "caption": "García Cantarero et al., 2026. Verteilung der Operations- und Durchleuchtungszeiten nach Gruppe.",
-          "interpretation": "Die Gruppen werden jeweils auf derselben Skala verglichen. Die Operationszeiten der Modellgruppe häufen sich im unteren Bereich. In der Kontrollgruppe streuen längere Eingriffe stärker. Operationsminuten und Durchleuchtungssekunden sind getrennt abzulesen. Der Median beschreibt typische Fälle. Überlappung und Streuung helfen, das Effektintervall und die Stichprobengröße einer Folgestudie abzuschätzen."
+          "interpretation": "Die horizontale Achse zeigt die Operationsdauer in Minuten, die vertikale Achse die Durchleuchtungsdauer in Sekunden. Kreise stehen für die Modellgruppe, Kreuze für die Kontrollen. Die Punktwolken überlappen sich. Einzelne Kontrollen weisen längere Operations- oder Durchleuchtungszeiten auf. Die primären Endpunkte sind mit Medianen, Interquartilsabständen und p-Werten angegeben."
         }
       }
     }

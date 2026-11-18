@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P4-135",
   "p": "P4",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-19",
   "evidence_cutoff": "2026-11-19",
   "related_paper_ids": [],
@@ -50,7 +50,7 @@
         {
           "id": "geometry-transfer",
           "title": "模板如何把设计针道转成实际轨迹",
-          "markdown": "非中心复发宫颈癌研究纳入 36 人，使用 CT 规划入口、角度和深度，并以选择性激光烧结制作 PA12 非共面模板。论文报告打印精度 ±0.1 mm。定位时，模板贴合、软组织变形和实际进针深度仍会改变针尖及驻留位置。打印精度描述器具成形，实际针道精度对应成像重建后的坐标差。 [原文图 1 和针道设计](ref:R01)",
+          "markdown": "非中心性复发宫颈癌研究纳入 36 人，使用 CT 规划入口、角度和深度，并以选择性激光烧结制作 PA12 非共面模板。论文报告打印精度 ±0.1 mm。定位时，模板贴合、软组织变形和实际进针深度仍会改变针尖及驻留位置。打印精度描述器具成形，实际针道精度对应成像重建后的坐标差。 [原文图 1 和针道设计](ref:R01)",
           "figure_ids": [
             "F01"
           ]
@@ -58,25 +58,25 @@
         {
           "id": "paired-dvh",
           "title": "针道落地后，同一靶区的哪些剂量量值变化",
-          "markdown": "同一研究平均用针 9.64 ± 2.69 根。表 2 的术前与术后计划中，高危临床靶体积 D90 为 616.97 ± 8.76 与 616.13 ± 8.84 cGy（P = 0.568），而 V150 从 59.42 ± 4.66% 升至 61.34 ± 3.67%（P = 0.002）。D90 在此样本中变化不明显，较高剂量覆盖体积却增加。图 2 的不同等剂量线说明为什么一个覆盖值无法描述整个高剂量区。 [原文图 2 与表 2](ref:R01)",
+          "markdown": "非中心性复发研究中，每名患者平均使用 9.64 ± 2.69 根针。表 2 的置针前、后计划中，高危临床靶体积（HR-CTV）的 D90 分别为 616.97 ± 8.76 和 616.13 ± 8.84 cGy（P = 0.568），接受至少 150% 处方剂量的靶体积比例 V150 从 59.42 ± 4.66% 升至 61.34 ± 3.67%（P = 0.002）。图 2 展示模板固定和实际置针，图 3 用等剂量线对照置针前后的计划。 [原文图 2–3 与表 2](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "freehand-comparison",
           "title": "模板与徒手的读数如何比较",
-          "markdown": "另一宫颈癌研究分析 49 人，比较打印引导和徒手置针结合 IMRT。打印方案根据 CT 预设入口、方向、深度与 0.5–2 cm 的针间距。表 2 报告打印组膀胱和直肠高剂量体积的剂量较低。图 1 的孔道布局体现了预设几何，但该比较同时包括施源器、选针和计划流程等变化，因此难以从组间剂量差估算单独的孔角效应。 [原文图 1 与表 2](ref:R02)",
+          "markdown": "另一项宫颈癌研究分析了 24 名接受 IMRT 联合打印模板引导后装治疗的患者和 25 名接受 IMRT 联合徒手置针后装治疗的患者。图 2 展示打印的阴道施源器及 CT 预先规划的针位、方向、深度和针间距（0.5–2 cm）。在直径 ≥ 30 mm 的肿瘤亚组中，表 4 的打印组膀胱 D1cm³、D2cm³ 与直肠 D2cm³ 较低（均 P < 0.001），直肠 D1cm³ 未见明确差异（P = 0.481）。施源器、用针数量和规划流程同时变化，研究无法分离针道角度的效应。 [原文图 2、表 2 和 4](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "followup-evidence",
           "title": "剂量关联与长期随访的证据边界",
-          "markdown": "单中心回顾性研究对局部晚期宫颈癌的模板组和徒手组进行倾向评分匹配，得到 240 人。分别报告 3 年局部控制率 90.0% 和 78.3%，并在讨论中列出高危靶区平均 D90 的 EQD2 为 87.5 和 82.1 Gy。匹配平衡了纳入模型的基线特征。肿瘤几何、操作者与其他残余差异仍可能影响剂量和结局的关联，因而这些数据不能确定针道几何介导了多少局部控制差异。 [匹配队列与随访结果](ref:R03)",
+          "markdown": "单中心回顾性研究对局部晚期宫颈癌患者进行倾向评分匹配，比较打印模板引导组和徒手置针组，各 120 人。表 4 中，3 年局部控制率分别为 90.0% 和 78.3%。表 2 中，HR-CTV 的平均 D90 分别为 87.5 ± 3.2 和 82.1 ± 4.8 Gy（EQD2）。这些关联来自匹配队列，针道几何对局部控制率差异的独立贡献仍不确定。 [原文表 1–2 和表 4](ref:R03)",
           "figure_ids": []
         },
         {
           "id": "oar-pair",
           "title": "器官小体积剂量如何与靶区高剂量区并读",
-          "markdown": "非中心复发研究原文表 2 中，术前、术后膀胱 D2cm³ 中位数为 110.08 和 113.87 cGy，直肠为 276.51 和 266.91 cGy，比较的 P 值分别为 0.520 和 0.888。这些是单次计划的器官高剂量小体积读数。靶区 V150 仍可变化，因为靠近某一针道的剂量增量可能位于靶内。若要辨识局部剂量变化，需要保留器官热点在三维图像中的位置，以及其与相邻针道和源驻留位置的关系。 [原文表 2 的器官读数](ref:R01)",
+          "markdown": "非中心性复发研究原文表 2 中，术前、术后膀胱 D2cm³ 中位数为 110.08 和 113.87 cGy，直肠为 276.51 和 266.91 cGy，比较的 P 值分别为 0.520 和 0.888。这些是单次计划的器官高剂量小体积读数。靶区 V150 仍可变化，因为靠近某一针道的剂量增量可能位于靶内。若要辨识局部剂量变化，需要保留器官热点在三维图像中的位置，以及其与相邻针道和源驻留位置的关系。 [原文表 2 的器官读数](ref:R01)",
           "figure_ids": []
         },
         {
@@ -100,8 +100,8 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "非共面针道的规划和模板几何 (Wang et al., 2023)",
-          "interpretation": "这组图把影像内的针道规划与实体模板联系起来。可见的孔道排列体现设计，术后针体轨迹精度仍需重建检验。 [原文图 1](ref:R01)"
+          "caption": "非共面近距离放疗模板的计划与打印（Wang 等，2023）",
+          "interpretation": "图 A 展示非中心性复发病灶的代表性 MRI，图 B 和 D 定位或放大病灶，图 C 展示软件中的模板设计，图 E 展示打印成品。评估置针后轨迹仍需重建实际针位。 [原文图 1](ref:R01)"
         }
       }
     },
@@ -120,19 +120,19 @@
         {
           "id": "paired-dvh",
           "title": "Which dose measures change after needle placement",
-          "markdown": "The same study used 9.64 ± 2.69 needles on average. In Table 2, pre- and post-insertion plans had high-risk clinical target volume D90 of 616.97 ± 8.76 and 616.13 ± 8.84 cGy (P = 0.568), while V150 rose from 59.42 ± 4.66% to 61.34 ± 3.67% (P = 0.002). D90 changed little in this sample, while the higher-dose volume increased. The different isodose lines in Figure 2 show why one coverage value cannot describe the entire high-dose region. [Original Figure 2 and Table 2](ref:R01)",
+          "markdown": "In the non-central recurrence study, the mean needle count was 9.64 ± 2.69 per patient. Table 2 gives pre- and post-insertion D90 for the high-risk clinical target volume (HR-CTV) of 616.97 ± 8.76 and 616.13 ± 8.84 cGy (P = 0.568). The target fraction receiving at least 150% of the prescription dose (V150) rose from 59.42 ± 4.66% to 61.34 ± 3.67% (P = 0.002). Figure 2 shows template fixation and needle placement. Figure 3 compares planned isodose lines before and after insertion. [Original Figures 2–3 and Table 2](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "freehand-comparison",
           "title": "Comparing template-guided and freehand readouts",
-          "markdown": "A separate cervical cancer study analyzed 49 patients receiving IMRT with template-guided or freehand brachytherapy. The printed approach used CT to plan entry, direction, depth and 0.5–2 cm needle spacing. Table 2 reports lower doses to high-dose bladder and rectal volumes in the printed group. Figure 1 illustrates the predefined geometry, while the group comparison also includes differences in applicator, needle selection and planning workflow. It cannot isolate the effect of channel angle. [Original Figure 1 and Table 2](ref:R02)",
+          "markdown": "A separate cervical cancer study analyzed 24 patients receiving IMRT with template-guided brachytherapy and 25 receiving IMRT with freehand brachytherapy. Figure 2 shows the printed vaginal applicator and the CT-planned needle positions, directions, depths and spacing (0.5–2 cm). For tumors at least 30 mm in diameter, Table 4 gives lower bladder D1cm³ and D2cm³ and lower rectal D2cm³ in the printed group (all P < 0.001). The rectal D1cm³ difference was inconclusive (P = 0.481). Applicators, needle counts and planning workflows differed together, preventing isolation of the channel-angle effect. [Original Figure 2 and Tables 2 and 4](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "followup-evidence",
           "title": "Dose associations and the limits of follow-up evidence",
-          "markdown": "A retrospective single-center study propensity-matched 240 patients with locally advanced cervical cancer treated with guided or freehand placement. Local control at 3 years was 90.0% versus 78.3%, and the discussion gives mean high-risk target D90 in EQD2 as 87.5 versus 82.1 Gy. Matching balanced the modeled baseline characteristics. Tumor geometry, operator and residual differences may still affect the relation between dose and outcome, so the share of the local-control difference mediated by channel geometry remains uncertain. [Matched cohort and follow-up outcomes](ref:R03)",
+          "markdown": "A single-center retrospective study propensity-matched patients with locally advanced cervical cancer treated with printed-template guidance or freehand placement, with 120 per group. In Table 4, three-year local control was 90.0% versus 78.3%. In Table 2, mean HR-CTV D90 was 87.5 ± 3.2 versus 82.1 ± 4.8 Gy (EQD2). These associations come from the matched cohort. The contribution of channel geometry to the difference in local control remains uncertain. [Original Tables 1–2 and Table 4](ref:R03)",
           "figure_ids": []
         },
         {
@@ -162,8 +162,8 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Planning and template geometry for non-coplanar needles (Wang et al., 2023)",
-          "interpretation": "The panels connect image-based trajectory planning with the physical template. The visible channel layout shows the design, while post-insertion trajectory accuracy still requires reconstruction. [Original Figure 1](ref:R01)"
+          "caption": "Planning and printing the non-coplanar brachytherapy template (Wang et al., 2023)",
+          "interpretation": "Panel A shows a representative MRI of non-central recurrence. Panels B and D identify and enlarge the lesion, C shows the software design and E shows the printed template. Evaluating the trajectory after placement requires reconstruction of the actual needle positions. [Original Figure 1](ref:R01)"
         }
       }
     },
@@ -182,19 +182,19 @@
         {
           "id": "paired-dvh",
           "title": "Welche Dosismaße ändern sich nach der Nadelplatzierung?",
-          "markdown": "In derselben Studie kamen im Mittel 9,64 ± 2,69 Nadeln zum Einsatz. Tabelle 2 zeigt für das klinische Hochrisiko-Zielvolumen vor und nach der Platzierung einen D90 von 616,97 ± 8,76 bzw. 616,13 ± 8,84 cGy (P = 0,568). V150 stieg von 59,42 ± 4,66% auf 61,34 ± 3,67% (P = 0,002). D90 änderte sich in dieser Stichprobe wenig, das höher dosierte Volumen nahm zu. Die unterschiedlichen Isodosen in Abbildung 2 zeigen, warum ein Abdeckungswert das gesamte Hochdosisgebiet nur teilweise beschreibt. [Originalabbildung 2 und Tabelle 2](ref:R01)",
+          "markdown": "In der Studie zum nicht zentralen Rezidiv kamen im Mittel 9,64 ± 2,69 Nadeln pro Person zum Einsatz. Für das klinische Hochrisiko-Zielvolumen (HR-CTV) gibt Tabelle 2 vor und nach der Platzierung einen D90 von 616,97 ± 8,76 bzw. 616,13 ± 8,84 cGy an (P = 0,568). Der Anteil des Zielvolumens, der mindestens 150% der verschriebenen Dosis erhielt (V150), stieg von 59,42 ± 4,66% auf 61,34 ± 3,67% (P = 0,002). Abbildung 2 zeigt die fixierte Schablone und die eingesetzten Nadeln. Abbildung 3 vergleicht die Isodosen der Pläne vor und nach der Platzierung. [Originalabbildungen 2–3 und Tabelle 2](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "freehand-comparison",
           "title": "Messwerte bei Schablonenführung und Freihandtechnik vergleichen",
-          "markdown": "Eine weitere Zervixkarzinomstudie analysierte 49 Personen mit IMRT und schablonengeführter oder freihändiger Brachytherapie. Für die gedruckte Variante wurden Eintritt, Richtung, Tiefe und Nadelabstände von 0,5–2 cm anhand von CT geplant. Tabelle 2 zeigt in der Druckgruppe geringere Dosen in hoch belasteten Blasen- und Rektumvolumina. Abbildung 1 veranschaulicht die vorgegebene Geometrie. Applikator, Nadelauswahl und Planungsablauf unterschieden sich ebenfalls, sodass der Effekt des Kanalwinkels offenbleibt. [Originalabbildung 1 und Tabelle 2](ref:R02)",
+          "markdown": "Eine weitere Zervixkarzinomstudie analysierte 24 Personen mit IMRT und schablonengeführter Brachytherapie sowie 25 Personen mit IMRT und freihändiger Brachytherapie. Abbildung 2 zeigt den gedruckten Vaginalapplikator und die anhand von CT geplanten Nadelpositionen, Richtungen, Tiefen und Abstände (0,5–2 cm). Für Tumoren ab 30 mm Durchmesser nennt Tabelle 4 niedrigere D1cm³- und D2cm³-Werte für die Blase und einen niedrigeren D2cm³-Wert für das Rektum in der Gruppe mit gedrucktem Applikator (alle P < 0,001). Der Unterschied im D1cm³-Wert des Rektums war statistisch nicht eindeutig (P = 0,481). Applikator, Nadelzahl und Planung unterschieden sich gemeinsam. Der Effekt des Kanalwinkels lässt sich daher nicht isolieren. [Originalabbildung 2 und Tabellen 2 und 4](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "followup-evidence",
           "title": "Dosisassoziationen und Grenzen der Nachbeobachtung",
-          "markdown": "Eine retrospektive Einzelzentrumsstudie verglich nach Propensity-Score-Matching 240 Personen mit lokal fortgeschrittenem Zervixkarzinom und schablonengeführter oder freihändiger Technik. Die lokale Kontrolle nach 3 Jahren betrug 90,0% bzw. 78,3%. Die Diskussion nennt für den mittleren D90 des Hochrisiko-Zielvolumens EQD2-Werte von 87,5 bzw. 82,1 Gy. Das Matching glich die modellierten Ausgangsmerkmale an. Tumorgeometrie, Behandelnde und verbleibende Unterschiede können die Dosis-Ergebnis-Beziehung beeinflussen. Der durch die Kanalgeometrie vermittelte Anteil bleibt offen. [Gematchte Kohorte und Nachbeobachtung](ref:R03)",
+          "markdown": "Eine retrospektive Einzelzentrumsstudie verglich Personen mit lokal fortgeschrittenem Zervixkarzinom nach Propensity-Score-Matching. Je 120 Personen erhielten eine Brachytherapie mit gedruckter Schablone oder freihändiger Nadelplatzierung. In Tabelle 4 betrug die lokale Kontrollrate nach drei Jahren 90,0% gegenüber 78,3%. Tabelle 2 nennt mittlere D90-Werte im HR-CTV von 87,5 ± 3,2 bzw. 82,1 ± 4,8 Gy (EQD2). Diese Zusammenhänge beruhen auf der gematchten Kohorte. Der Beitrag der Kanalgeometrie zum Unterschied in der lokalen Kontrolle bleibt unklar. [Originaltabellen 1–2 und 4](ref:R03)",
           "figure_ids": []
         },
         {
@@ -224,8 +224,8 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "Planung und Schablonengeometrie für nicht koplanare Nadeln (Wang et al., 2023)",
-          "interpretation": "Die Teilbilder verbinden bildbasierte Trajektorienplanung und reale Schablone. Die sichtbare Kanalanordnung zeigt die Konstruktion. Die Genauigkeit nach Platzierung erfordert eine Rekonstruktion. [Originalabbildung 1](ref:R01)"
+          "caption": "Planung und Druck der nicht koplanaren Brachytherapieschablone (Wang et al., 2023)",
+          "interpretation": "Teilbild A zeigt eine repräsentative MRT-Aufnahme des nicht zentralen Rezidivs. Teilbilder B und D markieren bzw. vergrößern die Läsion. C zeigt den digitalen Entwurf und E die gedruckte Schablone. Zur Bewertung der Nadelverläufe nach der Platzierung müssen die tatsächlichen Positionen rekonstruiert werden. [Originalabbildung 1](ref:R01)"
         }
       }
     }

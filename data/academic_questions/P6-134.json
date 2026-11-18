@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P6-134",
   "p": "P6",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-19",
   "evidence_cutoff": "2026-11-19",
   "related_paper_ids": [],
@@ -41,7 +41,7 @@
         {
           "id": "internal-fill",
           "title": "内部填充怎样改变深度剂量",
-          "markdown": "平板模体的 6 MV 光子实验比较无补偿膜、传统补偿膜与 8 种打印条件，测量深度剂量曲线。该研究所测条件中，采用较高 60% 填充率的 Gyroid 构型与传统补偿膜表现相近。曲线记录的是整个束路中材料与空气的分布所形成的剂量结果。即使外形相同，内部孔隙和打印方向也可能改变束路。 [平板模体深度剂量试验](ref:R01)",
+          "markdown": "研究用 6 MV 光子束照射水等效 RW3 板层体模，以放射变色胶片比较无补偿膜、商用补偿膜和 8 件打印补偿膜的深度剂量曲线。作者根据剂量峰值深度选出 60% 填充率的陀螺曲面（gyroid）结构。该研究的面颊补偿膜试验也显示这一填充设定的剂量峰值深度位移接近商用补偿膜。填充结构改变射线路径上的材料与空气分布。 [原文图 3、6、9 和表 3](ref:R01)",
           "figure_ids": []
         },
         {
@@ -53,19 +53,19 @@
         {
           "id": "planning-comparison",
           "title": "实体补偿膜比较中的靶区和器官剂量",
-          "markdown": "在 6 MV、50 Gy/25 分次的 VMAT 研究中，打印补偿膜组 PTV1 处方剂量覆盖为 95.4 ± 0.6%，传统组为 94.8 ± 0.8%，PTV2 未见明确组间差异。表 3 的同侧肺平均剂量分别为 11.6 ± 0.8 和 12.4 ± 1.0 Gy。影像气隙和计划剂量同时变化，但这些组间比较还包括厚度和优化等影响，无法单独估算每毫米间隙的剂量效应。 [原文靶区结果与表 3](ref:R02)",
+          "markdown": "在 6 MV、50 Gy 分 25 次照射的 VMAT 研究中，PTV1 接受至少 50 Gy 的体积比例在打印补偿膜组为 95.4 ± 0.6%，常规补偿膜组为 94.8 ± 0.8%。PTV2 未见明确组间差异。表 3 中同侧肺平均剂量分别为 11.6 ± 0.8 和 12.4 ± 1.0 Gy。两组所用补偿膜的贴合度和厚度设置均有差异，无法从该比较估计每毫米气隙的剂量影响。 [原文图 5 和表 3](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "paired-plans",
           "title": "有无补偿膜的计划对照回答另一问题",
-          "markdown": "35 人术后队列用两次 CT 做有、无打印补偿膜的患者内计划对照，靶区与计划方法一致。表 5 显示均匀性指数从无补偿膜的 0.0822 到有补偿膜的 0.0501（P < 0.001），在此公式中越接近 0 越均匀。参与者均接受含打印补偿膜的治疗流程，16 个月中位随访的皮肤反应属于单队列观察，无法充当有无补偿膜的安全性比较。 [原文表 5 与随访设计](ref:R03)",
+          "markdown": "术后队列的 35 名患者各自接受有、无定制 3D 打印补偿膜的 CT 扫描和配对 IMRT 计划。比较时使用同一处方并尽量保持靶区勾画一致。表 5 中，均匀性指数从未使用补偿膜时的 0.0822 降至使用时的 0.0501（P < 0.001），值越接近 0 表示越均匀。实际治疗中，每人接受 12 次有补偿膜、13 次无补偿膜的照射。中位 16 个月随访的毒性结果对应这一混合疗程。 [原文表 5 与治疗计划](ref:R03)",
           "figure_ids": []
         },
         {
           "id": "target-depth",
           "title": "为什么胸壁和锁骨上区给出不同结果",
-          "markdown": "VMAT 试验按治疗左右侧分层随机，实际分析传统组 40 人、打印组 35 人。PTV1 包含同侧胸壁和内乳淋巴区，限制至皮下 0 mm，PTV2 是锁骨上淋巴区，限制至皮下 4 mm。两个靶区取样深度及解剖形态不同，因此相同补偿膜可以改变 PTV1 与 PTV2 的剂量直方图程度。比较计划时应保留这些靶区定义，因为浅层轮廓是否纳入直接影响覆盖率的分母。 [随机分组与靶区定义](ref:R02)",
+          "markdown": "这项开放标签 VMAT 试验按治疗侧分层随机分配。部分被分到打印补偿膜组的患者选择了常规补偿膜，实际比较为常规组 40 人、打印组 35 人。PTV1 包括同侧胸壁和内乳淋巴结区，其浅缘在皮肤表面。PTV2 包括锁骨上淋巴结区，其浅缘在皮下 4 mm。两种勾画方式纳入的浅表组织体积不同。 [原文随机分组、表 1 和靶区定义](ref:R02)",
           "figure_ids": []
         },
         {
@@ -102,7 +102,7 @@
         {
           "id": "internal-fill",
           "title": "How internal infill changes the depth-dose profile",
-          "markdown": "A 6 MV photon experiment on a slab phantom compared no bolus, a conventional bolus and 8 print configurations using depth-dose curves. Among the tested settings, gyroid infill at the higher 60% infill fraction gave results comparable to the conventional bolus. The curve reflects the distribution of material and air along the beam path. Internal voids and print orientation can therefore change that path even when the outer contour is held fixed. [Slab-phantom depth-dose measurements](ref:R01)",
+          "markdown": "The study used 6 MV photons and radiochromic film in a water-equivalent RW3 slab phantom to compare depth-dose profiles without a bolus, with a commercial bolus and with eight printed boluses. The authors selected a 60% gyroid infill based on the depth of peak dose. In the separate cheek-bolus tests, that setting also gave a peak-depth shift similar to the commercial bolus. Infill changes how material and air are distributed along the beam path. [Original Figures 3, 6 and 9 and Table 3](ref:R01)",
           "figure_ids": []
         },
         {
@@ -114,19 +114,19 @@
         {
           "id": "planning-comparison",
           "title": "Target and organ doses when comparing physical boluses",
-          "markdown": "In the VMAT study using 6 MV and 50 Gy in 25 fractions, PTV1 prescription-dose coverage was 95.4 ± 0.6% with printed bolus and 94.8 ± 0.8% with conventional bolus. No clear group difference was seen for PTV2. Mean ipsilateral lung dose in Table 3 was 11.6 ± 0.8 versus 12.4 ± 1.0 Gy. Imaging gaps and planned dose differed together. Thickness and optimization also contribute to these group comparisons, which cannot isolate a per-millimetre gap effect. [Original target results and Table 3](ref:R02)",
+          "markdown": "In the 6 MV VMAT study prescribing 50 Gy in 25 fractions, the percentage of PTV1 receiving at least 50 Gy was 95.4 ± 0.6% with the printed bolus and 94.8 ± 0.8% with the conventional bolus. The study found no clear difference for PTV2. Table 3 gives mean ipsilateral lung doses of 11.6 ± 0.8 and 12.4 ± 1.0 Gy, respectively. The devices differed in fit and how their thickness was set, so the comparison cannot isolate a dose effect per millimetre of air gap. [Original Figure 5 and Table 3](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "paired-plans",
           "title": "Paired plans with and without bolus answer a different question",
-          "markdown": "A postoperative cohort of 35 used two CT scans for paired plans with and without printed bolus, with the same targets and planning methods. Table 5 shows the homogeneity index falling from 0.0822 without bolus to 0.0501 with bolus (P < 0.001), where values nearer 0 indicate greater uniformity. All participants received treatment including the printed bolus. Skin reactions at the median 16-month follow-up describe one cohort and provide no comparative safety estimate. [Original Table 5 and follow-up design](ref:R03)",
+          "markdown": "The postoperative cohort used CT scans and paired IMRT plans with and without a custom 3D-printed bolus for each of 35 patients. The plan comparison used the same prescription and sought to keep target contours consistent. In Table 5, the homogeneity index decreased from 0.0822 without the bolus to 0.0501 with it (P < 0.001), with values nearer zero indicating greater homogeneity. Each patient received 12 fractions with the bolus and 13 without it. Toxicity at a median follow-up of 16 months reflects that mixed course. [Original Table 5 and treatment plans](ref:R03)",
           "figure_ids": []
         },
         {
           "id": "target-depth",
           "title": "Why chest-wall and supraclavicular targets differ",
-          "markdown": "The VMAT trial randomized by treatment side and analyzed 40 participants with conventional bolus and 35 with printed bolus. PTV1 included ipsilateral chest wall and internal mammary nodes and extended to 0 mm beneath the skin. PTV2 comprised supraclavicular nodes and stopped 4 mm below the skin. The targets sample different depths and anatomy, so one bolus can affect their dose–volume histograms differently. Keeping these target definitions shows how including the superficial contour changes the coverage denominator. [Randomization and target definitions](ref:R02)",
+          "markdown": "The open-label VMAT trial randomized within strata defined by treatment side. Some patients allocated to the printed bolus opted for the conventional one. The reported comparison comprised 40 conventional-bolus and 35 printed-bolus patients. PTV1 included the ipsilateral chest wall and internal mammary nodes, with a superficial limit at the skin surface. PTV2 covered the supraclavicular nodes with a superficial limit 4 mm below the skin. The contours therefore include different amounts of superficial tissue. [Randomization, Table 1 and target definitions](ref:R02)",
           "figure_ids": []
         },
         {
@@ -163,7 +163,7 @@
         {
           "id": "internal-fill",
           "title": "Wie die innere Füllung das Tiefendosisprofil verändert",
-          "markdown": "Ein Versuch mit 6-MV-Photonen am Plattenphantom verglich Tiefendosiskurven ohne Bolus, mit konventionellem Bolus und mit 8 Druckvarianten. Unter den geprüften Einstellungen erzielte die Gyroidfüllung mit dem höheren Füllgrad von 60% ähnliche Ergebnisse wie der konventionelle Bolus. Die Kurve bildet die Wirkung von Material und Luft entlang des Strahlwegs ab. Interne Hohlräume und Druckorientierung können diesen Weg bei gleicher Außenkontur verändern. [Tiefendosismessung am Plattenphantom](ref:R01)",
+          "markdown": "Die Studie verglich Tiefendosisprofile am wasseräquivalenten RW3-Plattenphantom mit 6-MV-Photonen und radiochromem Film. Gemessen wurde ohne Bolus, mit einem kommerziellen Bolus und mit acht gedruckten Bolusproben. Anhand der Tiefe des Dosismaximums wählten die Autoren eine Gyroidfüllung mit 60% Füllgrad. Auch beim separaten Versuch mit dem Wangenbolus lag die Verschiebung des Dosismaximums mit dieser Einstellung nahe am kommerziellen Vergleichsbolus. Die Füllstruktur verändert die Verteilung von Material und Luft entlang des Strahlwegs. [Originalabbildungen 3, 6 und 9 und Tabelle 3](ref:R01)",
           "figure_ids": []
         },
         {
@@ -175,19 +175,19 @@
         {
           "id": "planning-comparison",
           "title": "Zielvolumen- und Organdosen beim Vergleich realer Bolusvarianten",
-          "markdown": "In der VMAT-Studie mit 6 MV und 50 Gy in 25 Fraktionen lag die Verschreibungsdosisabdeckung von PTV1 beim gedruckten Bolus bei 95,4 ± 0,6% und beim konventionellen bei 94,8 ± 0,8%. Für PTV2 zeigte sich kein klarer Gruppenunterschied. Die mittlere ipsilaterale Lungendosis in Tabelle 3 betrug 11,6 ± 0,8 gegenüber 12,4 ± 1,0 Gy. Bildbasierte Luftspalte und Plandosis unterschieden sich gemeinsam. Dicke und Optimierung gehen ebenfalls in den Gruppenvergleich ein, sodass sich kein isolierter Effekt pro Millimeter bestimmen lässt. [Originalbefunde zum Zielvolumen und Tabelle 3](ref:R02)",
+          "markdown": "In der 6-MV-VMAT-Studie mit 50 Gy in 25 Fraktionen erhielten 95,4 ± 0,6% von PTV1 mit dem gedruckten Bolus mindestens 50 Gy, gegenüber 94,8 ± 0,8% mit dem konventionellen Bolus. Für PTV2 zeigte sich kein klarer Gruppenunterschied. Tabelle 3 nennt mittlere ipsilaterale Lungendosen von 11,6 ± 0,8 bzw. 12,4 ± 1,0 Gy. Die Bolusarten unterschieden sich in der Passform und in der Wahl der Dicke. Der Dosiseffekt je Millimeter Luftspalt lässt sich daraus nicht isolieren. [Originalabbildung 5 und Tabelle 3](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "paired-plans",
           "title": "Gepaarte Pläne mit und ohne Bolus beantworten eine andere Frage",
-          "markdown": "In einer postoperativen Kohorte mit 35 Personen wurden anhand zweier CT-Aufnahmen gepaarte Pläne mit und ohne gedruckten Bolus bei gleichen Zielvolumina und Planungsmethoden erstellt. Der Homogenitätsindex in Tabelle 5 fiel von 0,0822 auf 0,0501 (P < 0,001), wobei Werte näher an 0 gleichmäßiger sind. Alle Personen erhielten eine Behandlung unter Einsatz des gedruckten Bolus. Hautreaktionen nach einer medianen Nachbeobachtung von 16 Monaten beschreiben ein Kollektiv und liefern keinen Sicherheitsvergleich. [Originaltabelle 5 und Nachbeobachtungsdesign](ref:R03)",
+          "markdown": "Für alle 35 Personen der postoperativen Kohorte wurden CT-Aufnahmen und gepaarte IMRT-Pläne mit und ohne individuell gedruckten Bolus erstellt. Für den Planvergleich galt dieselbe Verschreibung. Die Zielkonturen wurden möglichst einheitlich gehalten. Der Homogenitätsindex in Tabelle 5 sank von 0,0822 ohne Bolus auf 0,0501 mit Bolus (P < 0,001). Werte näher an null bedeuten eine gleichmäßigere Dosisverteilung. Jede Person erhielt 12 Fraktionen mit und 13 ohne Bolus. Die Toxizitätsbefunde bei median 16 Monaten Nachbeobachtung beziehen sich auf diese kombinierte Behandlung. [Originaltabelle 5 und Behandlungspläne](ref:R03)",
           "figure_ids": []
         },
         {
           "id": "target-depth",
           "title": "Warum Brustwand- und supraklavikuläre Zielvolumina unterschiedlich reagieren",
-          "markdown": "Die VMAT-Studie randomisierte nach Behandlungsseite und analysierte 40 Personen mit konventionellem und 35 mit gedrucktem Bolus. PTV1 umfasste ipsilaterale Brustwand und Mammaria-interna-Lymphknoten und reichte bis 0 mm unter die Haut. PTV2 umfasste supraklavikuläre Lymphknoten und endete 4 mm unter der Haut. Die Zielvolumina unterscheiden sich in Tiefe und Anatomie. Ein Bolus kann ihre Dosis-Volumen-Histogramme deshalb verschieden beeinflussen. Die Definitionen verdeutlichen, wie die oberflächennahe Kontur den Nenner der Abdeckung verändert. [Randomisierung und Zielvolumendefinitionen](ref:R02)",
+          "markdown": "Die offene VMAT-Studie stratifizierte die Randomisierung nach Behandlungsseite. Einige Personen, denen der gedruckte Bolus zugeteilt worden war, wählten den konventionellen. Der berichtete Vergleich umfasste 40 Personen mit konventionellem und 35 mit gedrucktem Bolus. PTV1 enthielt die ipsilaterale Brustwand und die Mammaria-interna-Lymphknoten und reichte bis an die Hautoberfläche. PTV2 umfasste die supraklavikulären Lymphknoten und begann oberflächlich 4 mm unter der Haut. Die Konturen schließen damit unterschiedliche Anteile oberflächennahen Gewebes ein. [Randomisierung, Tabelle 1 und Zielvolumendefinitionen](ref:R02)",
           "figure_ids": []
         },
         {

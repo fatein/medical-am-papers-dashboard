@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P1-116",
   "p": "P1",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-19",
   "evidence_cutoff": "2026-11-19",
   "related_paper_ids": [
@@ -76,7 +76,7 @@
         {
           "id": "repeatability",
           "title": "PEEK 试件的准确度和重复性",
-          "markdown": "Sharma 等图 1 的 A、B 比较成品与规划，同一原型的平均均方根误差（RMSE）为 0.731 ± 0.013 mm；C、D 比较不同打印件，平均 RMSE 为 0.155 ± 0.081 mm。表 1 再按试件分列重复性。打印件之间相近时，仍可能共享相对于设计的系统偏差。 [原文图 1 及表 1](ref:R01)\n\n原文的 10 次设计对打印比较与 90 次打印件配对比较具有不同观察单位。同一个打印件会出现在多个配对中，因此配对结果不代表独立成品。表 1 中第 7 件的重复性 RMSE 中位数为 0.270 mm，而第 10 件为 0.098 mm。比较总体中位数外，也可检查重复配对中是否由少数件承担较大偏差。 [重复性表 1](ref:R01)",
+          "markdown": "Sharma 等图 1 的 A、B 比较成品与规划，同一原型的平均均方根误差（RMSE）为 0.731 ± 0.013 mm；C、D 比较不同打印件，平均 RMSE 为 0.155 ± 0.081 mm。表 1 再按试件分列重复性。打印件之间相近时，仍可能共享相对于设计的系统偏差。 [原文图 1 及表 1](ref:R01)\n\n原文以同一数字设计为基准比较 10 个打印件，并报告 90 次打印件之间的比较。同一打印件参与多次比较，10 件制品是制造重复的样本数。表 1 中第 7 和第 10 件的重复性 RMSE 中位数分别为 0.270 和 0.098 mm。研究以结构光扫描获取网格，经点配准和迭代最近点算法精配准后计算表面偏差。[几何测量方法与表 1](ref:R01)",
           "figure_ids": [
             "F01"
           ]
@@ -84,13 +84,13 @@
         {
           "id": "mold",
           "title": "PMMA 的母模、模具与植入件",
-          "markdown": "PMMA 研究用卡尺和表面粗糙度仪核查打印母模，再以缺损颅骨模型试装，之后由硅胶型腔铸造 PMMA。图 2 的铸造环节正是误差可以新增的位置。若要与 PEEK 的扫描 RMSE 对照，应另对最终 PMMA 成品进行同样的表面扫描和配准，分开报告外表面、内表面和边缘误差。 [PMMA 铸造图 2](ref:R02) · [PEEK 扫描方案](ref:R01)\n\n进一步区分源影像和成形路线。PMMA 三病例的术前 CT 层厚范围为 0.625–1.25 mm，原文术后图 7 的病例 1 为 MRI，另两例为 CT 骨掩膜。三病例没有采用同一图像与同一自动边界测量流程。重新比较时先用相同各向同性成像和独立重复分割核对缺损边缘差异，再报告铸件相对母模的偏差。 [术前影像参数与术后图 7](ref:R02)",
+          "markdown": "Ulmeanu 等用 Mitutoyo IP76 卡尺测量 3 个打印母模的外形尺寸，用 Insize C002 粗糙度仪在每件的内、外表面各测 4 点，并在颅骨模型上试装。图 5 展示试装与硅胶模具，图 2 展示 PMMA 成形与脱模。与 PEEK 表面 RMSE 作比较，需要在相同计量条件下扫描最终 PMMA 件，再按外表面、内表面与边缘报告偏差。[PMMA 母模与制件，图 2、图 5](ref:R02) · [PEEK 扫描方法](ref:R01)\n\n进一步区分源影像和成形路线。PMMA 三病例的术前 CT 层厚范围为 0.625–1.25 mm，原文术后图 7 的病例 1 为 MRI，另两例为 CT 骨掩膜。三病例没有采用同一图像与同一自动边界测量流程。重新比较时先用相同各向同性成像和独立重复分割核对缺损边缘差异，再报告铸件相对母模的偏差。 [术前影像参数与术后图 7](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "position",
           "title": "植入后偏差包含固定和定位",
-          "markdown": "Wandell 等用 12 例术后 CT 比较 PEEK 实际位置与手术规划，顶点 RMSE 为 0.66–3.1 mm，11 例低于 2 mm。这一估计涵盖手术定位。对缺损边缘的局部比较，应在稳定颅骨坐标中同时显示间隙、重叠与表面高差，避免独立重配准植入件时抹去整块移位。 [PEEK 术后 CT 研究](ref:R03)\n\nWandell 等另发现平均误差与植入长度的秩相关为 0.59（p = 0.04），与面积为 0.42（p = 0.17）。这一排序差异提示应记录缺损的长轴及固定点分布。按区域画出有符号距离后，可区分一端向外、另一端向内的整体旋转，与单一边缘的翘曲。样本量为 12，相关性估计的稳定性须结合病例分布判断。 [误差与植入物尺寸](ref:R03)",
+          "markdown": "Wandell 等用 12 例术后 CT 比较 PEEK 实际位置与手术规划，顶点 RMSE 为 0.66–3.1 mm，11 例低于 2 mm。这一估计涵盖手术定位。对缺损边缘的局部比较，应在稳定颅骨坐标中同时显示间隙、重叠与表面高差，避免独立重配准植入件时抹去整块移位。 [PEEK 术后 CT 研究](ref:R03)\n\nWandell 等报告平均误差与植入物长度的 Spearman 秩相关为 0.59（p = 0.04），与面积的秩相关为 0.42（p = 0.17）。分析基于 12 例。后续几何核查可记录植入物长轴及固定点分布，并查看相对两侧边缘的有符号距离，以定位整体旋转或局部翘曲。[误差与植入物尺寸](ref:R03)",
           "figure_ids": []
         },
         {
@@ -132,7 +132,7 @@
         {
           "id": "repeatability",
           "title": "Accuracy and repeatability of PEEK specimens",
-          "markdown": "In Sharma et al., Fig. 1A–B compares printed parts with the planned design, with mean RMSE 0.731 ± 0.013 mm. Panels C–D compare printed parts with one another, with mean RMSE 0.155 ± 0.081 mm. Table 1 breaks down repeatability by specimen. Parts that closely agree with each other can share a systematic offset from the design. [Original Fig. 1 and Table 1](ref:R01)\n\nThe 10 design-to-print comparisons and 90 reported print-to-print comparisons have distinct units. A print appears in more than one pair, so the pairwise results do not represent independent implants. In Table 1, specimens 7 and 10 have median repeatability RMSEs of 0.270 and 0.098 mm. Examine whether comparatively few specimens account for a disproportionate share of pairwise deviation. [Repeatability, Table 1](ref:R01)",
+          "markdown": "In Sharma et al., Fig. 1A–B compares printed parts with the planned design, with mean RMSE 0.731 ± 0.013 mm. Panels C–D compare printed parts with one another, with mean RMSE 0.155 ± 0.081 mm. Table 1 breaks down repeatability by specimen. Parts that closely agree with each other can share a systematic offset from the design. [Original Fig. 1 and Table 1](ref:R01)\n\nThe study compared 10 prints with a single digital design and reported 90 print-to-print comparisons. Prints recur in those comparisons, so the manufacturing replicate count is 10. The median repeatability RMSEs for specimens 7 and 10 were 0.270 and 0.098 mm in Table 1. The authors used structured-light scans, point-based alignment and iterative closest point refinement before calculating mesh deviations. [Geometric methods and Table 1](ref:R01)",
           "figure_ids": [
             "F01"
           ]
@@ -140,13 +140,13 @@
         {
           "id": "mold",
           "title": "The master, mold and final PMMA implant",
-          "markdown": "The PMMA study checked its printed masters with calipers and a roughness tester, test fitted them on defect models, and cast PMMA using the silicone cavity. The casting step in Fig. 2 introduces another possible source of deviation. Comparing the result with PEEK scan RMSE requires scanning and registering the final PMMA implant under the same conditions, with separate errors for the outer surface, inner surface and rim. [PMMA casting, Fig. 2](ref:R02) · [PEEK scanning method](ref:R01)\n\nSeparate source-image uncertainty from fabrication. The three PMMA cases had preoperative CT slice thicknesses of 0.625–1.25 mm. Postoperative Fig. 7 shows MRI for case 1 and CT bone masks for the other two. The series therefore lacks common image acquisition and boundary measurement across cases. A direct comparison would use a common isotropic acquisition and repeated segmentation before assessing the cast against its master. [Imaging parameters and postoperative Fig. 7](ref:R02)",
+          "markdown": "Ulmeanu et al. measured the dimensions of three printed masters with a Mitutoyo IP76 caliper and measured roughness on four inner and four outer points per master with an Insize C002 tester. Figure 5 shows the trial assembly and silicone mold. Figure 2 shows PMMA molding and the demolded implant. Comparing PMMA with the PEEK surface RMSE requires scanning the final PMMA implant under common measurement conditions and reporting inner, outer and rim deviations. [PMMA master and final implant, Figs. 2 and 5](ref:R02) · [PEEK scanning method](ref:R01)\n\nSeparate source-image uncertainty from fabrication. The three PMMA cases had preoperative CT slice thicknesses of 0.625–1.25 mm. Postoperative Fig. 7 shows MRI for case 1 and CT bone masks for the other two. The series therefore lacks common image acquisition and boundary measurement across cases. A direct comparison would use a common isotropic acquisition and repeated segmentation before assessing the cast against its master. [Imaging parameters and postoperative Fig. 7](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "position",
           "title": "Postoperative error includes positioning and fixation",
-          "markdown": "Wandell et al. compared actual PEEK placement with planning on postoperative CT in 12 cases. Vertex RMSE ranged from 0.66 to 3.1 mm and was below 2 mm in 11 cases. This estimate includes surgical positioning. Evaluate local gaps, overlap and contour steps in a stable skull coordinate frame so a separate alignment of the implant does not absorb displacement. [Postoperative PEEK CT study](ref:R03)\n\nWandell et al. reported a rank correlation of 0.59 (p = 0.04) between average error and implant length and 0.42 (p = 0.17) for area. This supports recording the long dimension and distribution of fixation points. Regional signed distances can distinguish whole-implant rotation, with opposite signs at opposite rims, from local warping. Read those correlations in the context of the 12 cases. [Error and implant dimensions](ref:R03)",
+          "markdown": "Wandell et al. compared actual PEEK placement with planning on postoperative CT in 12 cases. Vertex RMSE ranged from 0.66 to 3.1 mm and was below 2 mm in 11 cases. This estimate includes surgical positioning. Evaluate local gaps, overlap and contour steps in a stable skull coordinate frame so a separate alignment of the implant does not absorb displacement. [Postoperative PEEK CT study](ref:R03)\n\nWandell et al. reported Spearman correlations between average error and implant length of 0.59 (p = 0.04) and between average error and area of 0.42 (p = 0.17) in 12 cases. A subsequent assessment can record implant length and fixation-point distribution. Signed distances at opposite rims help identify whole-implant rotation and local warping. [Error and implant dimensions](ref:R03)",
           "figure_ids": []
         },
         {
@@ -188,7 +188,7 @@
         {
           "id": "repeatability",
           "title": "Genauigkeit und Wiederholbarkeit der PEEK-Prüfkörper",
-          "markdown": "Bei Sharma et al. vergleichen Abb. 1A–B gefertigte Implantate mit dem Entwurf. Der mittlere RMSE beträgt 0,731 ± 0,013 mm. Die Teilbilder C–D vergleichen Druckteile untereinander, mit einem mittleren RMSE von 0,155 ± 0,081 mm. Tabelle 1 schlüsselt die Wiederholbarkeit nach Prüfkörper auf. Ähnliche Druckteile können eine gemeinsame systematische Abweichung vom Entwurf aufweisen. [Originalabbildung 1 und Tabelle 1](ref:R01)\n\nDie 10 Vergleiche zwischen Entwurf und Druck sowie die 90 berichteten Vergleiche zwischen Drucken haben unterschiedliche Einheiten. Ein Druck kann in mehreren Paaren vorkommen. In Tabelle 1 betragen die medianen Wiederholungs-RMSE für Prüfkörper 7 und 10 0,270 bzw. 0,098 mm. So lässt sich prüfen, ob wenige Prüfkörper einen großen Teil der Paarabweichung tragen. [Wiederholbarkeit, Tabelle 1](ref:R01)",
+          "markdown": "Bei Sharma et al. vergleichen Abb. 1A–B gefertigte Implantate mit dem Entwurf. Der mittlere RMSE beträgt 0,731 ± 0,013 mm. Die Teilbilder C–D vergleichen Druckteile untereinander, mit einem mittleren RMSE von 0,155 ± 0,081 mm. Tabelle 1 schlüsselt die Wiederholbarkeit nach Prüfkörper auf. Ähnliche Druckteile können eine gemeinsame systematische Abweichung vom Entwurf aufweisen. [Originalabbildung 1 und Tabelle 1](ref:R01)\n\nDie Studie verglich 10 Druckteile mit einem digitalen Entwurf und berichtete 90 Druckteilvergleiche. Jedes Teil floss mehrfach in die Vergleiche ein. Die Fertigungsstichprobe umfasste 10 Teile. In Tabelle 1 betrugen die medianen RMSE-Werte der Wiederholbarkeit für die Teile 7 und 10 jeweils 0,270 und 0,098 mm. Die Autoren erfassten die Oberflächen per Streifenlichtscan und registrierten die Netze zunächst punktbasiert und anschließend mit dem Iterative-Closest-Point-Verfahren. [Geometrische Messung und Tabelle 1](ref:R01)",
           "figure_ids": [
             "F01"
           ]
@@ -196,13 +196,13 @@
         {
           "id": "mold",
           "title": "Urmodell, Form und fertiges PMMA-Implantat",
-          "markdown": "In der PMMA-Studie wurden gedruckte Urmodelle mit Messschieber und Rauheitsmessgerät geprüft, im Defektmodell eingesetzt und anschließend in Silikon abgeformt, um PMMA zu gießen. Der Guss in Abb. 2 ist eine zusätzliche Fehlerquelle. Für einen Vergleich mit dem PEEK-RMSE ist das fertige PMMA-Teil unter denselben Bedingungen zu scannen und zu registrieren. Außenfläche, Innenfläche und Rand werden getrennt ausgewertet. [PMMA-Guss, Abb. 2](ref:R02) · [PEEK-Scanverfahren](ref:R01)\n\nQuellbild und Fertigung getrennt betrachten. In den drei PMMA-Fällen lag die präoperative CT-Schichtdicke bei 0,625–1,25 mm. Abb. 7 zeigt postoperativ im Fall 1 MRT und in den beiden anderen CT-Knochenmasken. Damit wechseln Bildgebung und Voraussetzungen für die Grenzmessung. Ein direkter Vergleich würde eine gemeinsame isotrope Bildgebung und wiederholte Segmentierung vor dem Vergleich von Guss und Urmodell verwenden. [Bildparameter und postoperative Abb. 7](ref:R02)",
+          "markdown": "Ulmeanu et al. prüften die Maße der drei gedruckten Urmodelle mit einem Mitutoyo IP76 und maßen mit einem Insize C002 die Rauheit an je vier Punkten innen und außen. Abb. 5 zeigt die Passprobe und die Silikonform. Abb. 2 zeigt die PMMA-Formgebung und das entformte Implantat. Für einen Vergleich mit dem PEEK-Oberflächen-RMSE müsste das fertige PMMA-Implantat unter gleichen Messbedingungen gescannt und die Abweichung an Innenfläche, Außenfläche und Rand bestimmt werden. [PMMA-Urmodell und fertiges Implantat, Abb. 2 und 5](ref:R02) · [PEEK-Scanverfahren](ref:R01)\n\nQuellbild und Fertigung getrennt betrachten. In den drei PMMA-Fällen lag die präoperative CT-Schichtdicke bei 0,625–1,25 mm. Abb. 7 zeigt postoperativ im Fall 1 MRT und in den beiden anderen CT-Knochenmasken. Damit wechseln Bildgebung und Voraussetzungen für die Grenzmessung. Ein direkter Vergleich würde eine gemeinsame isotrope Bildgebung und wiederholte Segmentierung vor dem Vergleich von Guss und Urmodell verwenden. [Bildparameter und postoperative Abb. 7](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "position",
           "title": "Die postoperative Abweichung umfasst Positionierung und Fixierung",
-          "markdown": "Wandell et al. verglichen bei 12 Personen die tatsächliche PEEK-Position im postoperativen CT mit der Planung. Der RMSE der Netzpunkte lag zwischen 0,66 und 3,1 mm, bei 11 Personen unter 2 mm. Darin steckt auch die operative Positionierung. Lokale Spalten, Überlappungen und Konturstufen im Bezugssystem des stabilen Schädels auswerten, damit eine separate Implantatregistrierung keine Verschiebung verdeckt. [Postoperative PEEK-CT-Studie](ref:R03)\n\nWandell et al. berichteten für den mittleren Fehler eine Rangkorrelation von 0,59 (p = 0,04) mit der Implantatlänge und 0,42 (p = 0,17) mit der Fläche. Längsausdehnung und Verteilung der Fixationspunkte sind damit sinnvolle Angaben. Vorzeichenbehaftete Regionalabstände unterscheiden gegensinnige Randabweichungen bei Rotation von lokaler Verformung. Die Korrelationen sind im Kontext der 12 Fälle zu lesen. [Fehler und Implantatgröße](ref:R03)",
+          "markdown": "Wandell et al. verglichen bei 12 Personen die tatsächliche PEEK-Position im postoperativen CT mit der Planung. Der RMSE der Netzpunkte lag zwischen 0,66 und 3,1 mm, bei 11 Personen unter 2 mm. Darin steckt auch die operative Positionierung. Lokale Spalten, Überlappungen und Konturstufen im Bezugssystem des stabilen Schädels auswerten, damit eine separate Implantatregistrierung keine Verschiebung verdeckt. [Postoperative PEEK-CT-Studie](ref:R03)\n\nWandell et al. berichteten bei 12 Fällen eine Spearman-Rangkorrelation des mittleren Fehlers mit der Implantatlänge von 0,59 (p = 0,04) und mit der Fläche von 0,42 (p = 0,17). Eine weitere geometrische Prüfung kann Implantatlänge und Verteilung der Fixationspunkte erfassen. Vorzeichenbehaftete Abstände an gegenüberliegenden Rändern helfen, eine Drehung des gesamten Implantats oder eine lokale Verformung zu erkennen. [Fehler und Implantatabmessungen](ref:R03)",
           "figure_ids": []
         },
         {

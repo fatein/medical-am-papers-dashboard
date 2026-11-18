@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P7-128",
   "p": "P7",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-19",
   "evidence_cutoff": "2026-11-19",
   "related_paper_ids": [],
@@ -50,7 +50,7 @@
         {
           "id": "geometry",
           "title": "先核对复制的根管形状和关键薄壁",
-          "markdown": "C 形下颌第二磨牙研究分别复制连续型峡部和不连续型根管原型，每种 16 件。微 CT 配准后，两组根管空间的 Dice 重叠系数分别为 0.917 和 0.878，有符号平均距离为 −0.061 和 −0.018 mm，95% Hausdorff 距离为 0.129 和 0.221 mm。均值为负提示总体向内偏移，离群端的表面距离与平均偏差可以给出不同排序。两种原型的薄壁区均位于根沟底部，提供另一个局部验证位置。\n\nDice 是整个管腔重叠的比例，容易受体积较大的区域主导。峡部、分支交会和根尖狭窄区可能只占少量体积。研究同时报告有符号距离与 HD95，能够区分系统性收窄与局部较大误差。论文所给复制体内标准差 0.031 和 0.073 mm 指网格顶点距离在单件复制牙内的变化。若要证明批间重复性，需要另报告按自然原型分层的复件之间变异。 [原文表 1 与补充图 S1–S3](ref:R02)",
+          "markdown": "一项下颌第二磨牙研究比较连续 C 形和不连续 C 形根管原型，每种原型制作 16 件复制牙。微 CT 配准后，两组根管空间的 Dice 重叠系数分别为 0.917 和 0.878，有符号平均距离为 −0.061 和 −0.018 mm，95% Hausdorff 距离为 0.129 和 0.221 mm。均值为负提示总体向内偏移，离群端的表面距离与平均偏差可以给出不同排序。两种原型的薄壁区均位于根沟底部，提供另一个局部验证位置。\n\nDice 是整个管腔重叠的比例，容易受体积较大的区域主导。峡部、分支交会和根尖狭窄区可能只占少量体积。研究同时报告有符号距离与 HD95，能够区分系统性收窄与局部较大误差。论文所给复制体内标准差 0.031 和 0.073 mm 指网格顶点距离在单件复制牙内的变化。若要证明批间重复性，需要另报告按自然原型分层的复件之间变异。 [原文表 1 与补充图 S1–S3](ref:R02)",
           "figure_ids": []
         },
         {
@@ -62,7 +62,7 @@
         {
           "id": "device_comparison",
           "title": "六种器械的复制模型比较回答什么？",
-          "markdown": "同一论文在复制牙上对比六种系统。Blueshaper Pro + AS 的全长体积平均增加 43.4%，Race-Evo 复制牙为 23.4%，Trunatomy + AS 为 17.1%。原文报告 Blueshaper Pro 体系在该终点的增加比例最高且具有统计差异。全长未预备面积则在六个复制牙组间没有显著差异。天然牙列只为 Race-Evo 提供对照，所以跨材料保持相同器械排序仍是独立研究问题。原文图 2 中天然牙与复制牙的 Race-Evo 对照应看 C、D 两个面板，其余面板显示其他复制牙实验组的代表性形态。\n\n全长未预备面积的组均值从 28.1% 到 32.1%，与体积百分比的组间排序不同。窄段的局部扩大和较广管壁的浅层接触会产生不同的体积与覆盖组合。图 2 提供代表性图像供检查形态，比较大小与离散性应回到表 2。 [原文表 2 的复制牙组与图 2](ref:R01)",
+          "markdown": "同一论文在复制牙上对比六种系统。Blueshaper Pro + AS 的全长体积平均增加 43.4%，Race-Evo 复制牙为 23.4%，Trunatomy + AS 为 17.1%。原文报告 Blueshaper Pro 体系在该终点的增加比例最高且具有统计差异。全长未预备面积则在六个复制牙组间没有显著差异。天然牙列只为 Race-Evo 提供对照，所以跨材料保持相同器械排序仍是独立研究问题。原文图 2 中同一 Race-Evo 体系的对照见 D（黄色，天然牙）与 G（紫色，复制牙）。其余术后面板显示其他复制牙组。\n\n全长未预备面积的组均值从 28.1% 到 32.1%，与体积百分比的组间排序不同。窄段的局部扩大和较广管壁的浅层接触会产生不同的体积与覆盖组合。图 2 提供代表性图像供检查形态，比较大小与离散性应回到表 2。 [原文表 2 的复制牙组与图 2](ref:R01)",
           "figure_ids": [
             "F01"
           ]
@@ -83,7 +83,7 @@
       "figure_texts": {
         "F01": {
           "caption": "Ramírez-Muñoz 等（2024），原文图 2。术前和术后根管微 CT 重建。",
-          "interpretation": "A、B 分别显示天然牙和打印复制牙的术前通道。对照材料应比较相同 Race-Evo 体系的 C（复制牙）和 D（天然牙）。其余术后面板代表复制牙上的其他器械组。颜色标识样本或器械组，图中空间差异可用于核对形态，组间量值需读原文表 2。"
+          "interpretation": "A 和 B 分别显示天然牙和打印复制牙的预备前根管。Race-Evo 的天然牙与复制牙对照分别见 D（黄色）与 G（紫色）。C 为浅蓝色 TruNatomy 复制牙。图 2 展示代表性形态，组间量值和离散程度见原文表 2。"
         }
       }
     },
@@ -94,7 +94,7 @@
         {
           "id": "geometry",
           "title": "Validating replicated canal geometry and thin walls",
-          "markdown": "A C-shaped mandibular second molar study replicated a continuous isthmus and a discontinuous prototype, 16 times each. After micro-CT registration, canal Dice coefficients were 0.917 and 0.878, mean signed distances −0.061 and −0.018 mm and 95% Hausdorff distances 0.129 and 0.221 mm. Negative means indicate inward bias. Tail distances can rank prototypes differently from the mean. The thinnest walls lay at the radicular groove base in both prototypes, offering another location for local validation.\n\nDice measures overall lumen overlap and can be dominated by larger regions. Isthmuses, junctions and the narrow apical segment may contribute little volume. Signed distance and HD95 distinguish systematic narrowing from larger local deviations. The reported within-replica standard deviations of 0.031 and 0.073 mm describe variation of mesh-vertex distances inside each replica. Establishing between-batch repeatability calls for between-replica variation within natural prototypes. [Original Table 1 and supplementary Figs. S1–S3](ref:R02)",
+          "markdown": "A mandibular second molar study made 16 replicas each of a continuous C-shaped canal prototype and a discontinuous C-shaped canal prototype. After micro-CT registration, canal Dice coefficients were 0.917 and 0.878, mean signed distances −0.061 and −0.018 mm and 95% Hausdorff distances 0.129 and 0.221 mm. Negative means indicate inward bias. Tail distances can rank prototypes differently from the mean. The thinnest walls lay at the radicular groove base in both prototypes, offering another location for local validation.\n\nDice measures overall lumen overlap and can be dominated by larger regions. Isthmuses, junctions and the narrow apical segment may contribute little volume. Signed distance and HD95 distinguish systematic narrowing from larger local deviations. The reported within-replica standard deviations of 0.031 and 0.073 mm describe variation of mesh-vertex distances inside each replica. Establishing between-batch repeatability calls for between-replica variation within natural prototypes. [Original Table 1 and supplementary Figs. S1–S3](ref:R02)",
           "figure_ids": []
         },
         {
@@ -106,7 +106,7 @@
         {
           "id": "device_comparison",
           "title": "What does the six-system replica comparison establish?",
-          "markdown": "The same paper compared six systems in replicas. Mean full-length volume increase was 43.4% for Blueshaper Pro + AS, 23.4% for Race-Evo and 17.1% for Trunatomy + AS. The paper reports a significantly higher percentage increase for the Blueshaper Pro system on that endpoint. Full-length untouched area showed no significant difference among the six replica groups. The natural-tooth column covers Race-Evo, leaving preservation of instrument rankings across materials as a separate question. In original Fig. 2, panels C and D show the Race-Evo comparison. Other postoperative panels represent the other replica groups.\n\nMean untouched fractions across the full length ranged from 28.1% to 32.1%, with a different ordering from relative volume gain. Local enlargement of a narrow segment and shallow contact with broad walls can yield different volume–coverage combinations. Figure 2 shows representative morphologies, while Table 2 quantifies group differences and dispersion. [Replica groups in original Table 2 and Fig. 2](ref:R01)",
+          "markdown": "The same paper compared six systems in replicas. Mean full-length volume increase was 43.4% for Blueshaper Pro + AS, 23.4% for Race-Evo and 17.1% for Trunatomy + AS. The paper reports a significantly higher percentage increase for the Blueshaper Pro system on that endpoint. Full-length untouched area showed no significant difference among the six replica groups. The natural-tooth column covers Race-Evo, leaving preservation of instrument rankings across materials as a separate question. In original Fig. 2, panel D (yellow, natural tooth) and panel G (purple, replica) show the Race-Evo comparison. The other postoperative panels show other replica groups.\n\nMean untouched fractions across the full length ranged from 28.1% to 32.1%, with a different ordering from relative volume gain. Local enlargement of a narrow segment and shallow contact with broad walls can yield different volume–coverage combinations. Figure 2 shows representative morphologies, while Table 2 quantifies group differences and dispersion. [Replica groups in original Table 2 and Fig. 2](ref:R01)",
           "figure_ids": [
             "F01"
           ]
@@ -127,7 +127,7 @@
       "figure_texts": {
         "F01": {
           "caption": "Ramírez-Muñoz et al. (2024), original Fig. 2. Pre- and post-instrumentation micro-CT reconstructions.",
-          "interpretation": "Panels A and B show pre-instrumentation canals in a natural tooth and printed replica. Compare C (replica) and D (natural tooth) to hold the Race-Evo system fixed. The remaining postoperative panels represent other systems tested on replicas. Colors identify specimens or groups. The images show morphology, while original Table 2 quantifies group outcomes."
+          "interpretation": "Panels A and B show the natural and printed replica canals before preparation, respectively. The Race-Evo comparison is between D (yellow, natural tooth) and G (purple, printed replica). Panel C is a light-blue TruNatomy replica. Fig. 2 shows representative morphology. Original Table 2 reports group outcomes and dispersion."
         }
       }
     },
@@ -138,7 +138,7 @@
         {
           "id": "geometry",
           "title": "Reproduzierte Kanalgeometrie und dünne Wände prüfen",
-          "markdown": "Eine Studie an C-förmigen Unterkiefer-Zweitmolaren reproduzierte eine kontinuierliche Isthmusform und eine diskontinuierliche Form je 16-mal. Nach Mikro-CT-Registrierung lagen die Dice-Koeffizienten bei 0,917 und 0,878, die mittleren vorzeichenbehafteten Abstände bei −0,061 und −0,018 mm und die 95%-Hausdorff-Distanzen bei 0,129 und 0,221 mm. Negative Mittelwerte weisen auf eine Abweichung nach innen hin. Große lokale Abstände können die Prototypen anders ordnen. Die dünnsten Wände lagen bei beiden Formen am Grund der Wurzelfurche und bieten einen weiteren Ort zur lokalen Validierung.\n\nDice misst die Überlappung des gesamten Lumens und kann von großen Bereichen dominiert werden. Isthmen, Verzweigungen und das enge apikale Segment tragen unter Umständen wenig Volumen bei. Vorzeichenbehaftete Distanz und HD95 trennen systematische Verengung von größeren lokalen Fehlern. Die Intra-Replika-Standardabweichungen von 0,031 und 0,073 mm beschreiben die Streuung von Netzpunktabständen innerhalb einer Replik. Für Chargenwiederholbarkeit ist die Streuung zwischen Repliken desselben natürlichen Prototyps zu erfassen. [Originaltabelle 1 und Zusatzabb. S1–S3](ref:R02)",
+          "markdown": "Eine Studie an zweiten Unterkiefermolaren stellte je 16 Repliken eines durchgehend C-förmigen und eines unterbrochen C-förmigen Kanalprototyps her. Nach Mikro-CT-Registrierung lagen die Dice-Koeffizienten bei 0,917 und 0,878, die mittleren vorzeichenbehafteten Abstände bei −0,061 und −0,018 mm und die 95%-Hausdorff-Distanzen bei 0,129 und 0,221 mm. Negative Mittelwerte weisen auf eine Abweichung nach innen hin. Große lokale Abstände können die Prototypen anders ordnen. Die dünnsten Wände lagen bei beiden Formen am Grund der Wurzelfurche und bieten einen weiteren Ort zur lokalen Validierung.\n\nDice misst die Überlappung des gesamten Lumens und kann von großen Bereichen dominiert werden. Isthmen, Verzweigungen und das enge apikale Segment tragen unter Umständen wenig Volumen bei. Vorzeichenbehaftete Distanz und HD95 trennen systematische Verengung von größeren lokalen Fehlern. Die Intra-Replika-Standardabweichungen von 0,031 und 0,073 mm beschreiben die Streuung von Netzpunktabständen innerhalb einer Replik. Für Chargenwiederholbarkeit ist die Streuung zwischen Repliken desselben natürlichen Prototyps zu erfassen. [Originaltabelle 1 und Zusatzabb. S1–S3](ref:R02)",
           "figure_ids": []
         },
         {
@@ -150,7 +150,7 @@
         {
           "id": "device_comparison",
           "title": "Was zeigt der Vergleich von sechs Systemen in Repliken?",
-          "markdown": "Dieselbe Arbeit verglich sechs Systeme in Repliken. Die mittlere Volumenzunahme über die Gesamtlänge betrug 43,4% für Blueshaper Pro + AS, 23,4% für Race-Evo und 17,1% für Trunatomy + AS. Für Blueshaper Pro wurde bei diesem Endpunkt ein signifikant höherer prozentualer Anstieg berichtet. Die unbearbeitete Fläche über die gesamte Länge unterschied sich zwischen den sechs Replikagruppen statistisch nicht signifikant. Die natürliche Vergleichsgruppe deckt Race-Evo ab. Der Erhalt einer Instrumentenrangfolge über Materialien hinweg bleibt eine eigene Frage. In Originalabb. 2 zeigen die Teilbilder C und D den Race-Evo-Vergleich. Die übrigen Nachherbilder stehen für weitere Replikagruppen.\n\nDie mittleren unbearbeiteten Anteile über die Gesamtlänge reichten von 28,1% bis 32,1% und hatten eine andere Rangfolge als der relative Volumenzuwachs. Lokale Erweiterung eines engen Abschnitts und geringer Abtrag an ausgedehnten Wänden können verschiedene Volumen-Flächen-Kombinationen ergeben. Abbildung 2 zeigt repräsentative Formen, Tabelle 2 quantifiziert Gruppenunterschiede und Streuung. [Replikagruppen in Originaltabelle 2 und Abb. 2](ref:R01)",
+          "markdown": "Dieselbe Arbeit verglich sechs Systeme in Repliken. Die mittlere Volumenzunahme über die Gesamtlänge betrug 43,4% für Blueshaper Pro + AS, 23,4% für Race-Evo und 17,1% für Trunatomy + AS. Für Blueshaper Pro wurde bei diesem Endpunkt ein signifikant höherer prozentualer Anstieg berichtet. Die unbearbeitete Fläche über die gesamte Länge unterschied sich zwischen den sechs Replikagruppen statistisch nicht signifikant. Die natürliche Vergleichsgruppe deckt Race-Evo ab. Der Erhalt einer Instrumentenrangfolge über Materialien hinweg bleibt eine eigene Frage. In Originalabb. 2 zeigen Teilbild D (gelb, natürlicher Zahn) und G (violett, Replik) den Race-Evo-Vergleich. Die übrigen Aufnahmen nach der Aufbereitung zeigen andere Replikagruppen.\n\nDie mittleren unbearbeiteten Anteile über die Gesamtlänge reichten von 28,1% bis 32,1% und hatten eine andere Rangfolge als der relative Volumenzuwachs. Lokale Erweiterung eines engen Abschnitts und geringer Abtrag an ausgedehnten Wänden können verschiedene Volumen-Flächen-Kombinationen ergeben. Abbildung 2 zeigt repräsentative Formen, Tabelle 2 quantifiziert Gruppenunterschiede und Streuung. [Replikagruppen in Originaltabelle 2 und Abb. 2](ref:R01)",
           "figure_ids": [
             "F01"
           ]
@@ -171,7 +171,7 @@
       "figure_texts": {
         "F01": {
           "caption": "Ramírez-Muñoz et al. (2024), Originalabb. 2. Mikro-CT-Rekonstruktionen vor und nach der Präparation.",
-          "interpretation": "A und B zeigen Kanäle vor der Präparation im natürlichen Zahn und in der gedruckten Replik. C (Replik) und D (natürlicher Zahn) vergleichen dasselbe Race-Evo-System. Die übrigen Nachherbilder zeigen weitere in Repliken geprüfte Systeme. Die Farben kennzeichnen Proben oder Gruppen. Die Bilder zeigen die Form, Originaltabelle 2 quantifiziert Gruppenergebnisse."
+          "interpretation": "A und B zeigen die Kanäle des natürlichen Zahns und der gedruckten Replik vor der Aufbereitung. Der Race-Evo-Vergleich erfolgt zwischen D (gelb, natürlicher Zahn) und G (violett, gedruckte Replik). C zeigt eine hellblaue TruNatomy-Replik. Abb. 2 zeigt repräsentative Formen. Gruppenwerte und Streuung stehen in Originaltab. 2."
         }
       }
     }

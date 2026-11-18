@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P2-126",
   "p": "P2",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-19",
   "evidence_cutoff": "2026-11-19",
   "related_paper_ids": [],
@@ -49,7 +49,7 @@
         {
           "id": "global",
           "title": "全弓网格偏差衡量数字形状再现",
-          "markdown": "Koenig 与 Choi 等从同一参考 STL 制作三种未设置牙移动的矫治器。内表面通过光学扫描获取，以最佳拟合配准，整体 RMS 为直接打印 0.140 mm、两种热成形片材 0.188 和 0.209 mm。这一比较衡量自由状态内表面对参考形状的复现。试样喷粉、配准区域和数字参照均属于该测量定义。\n\n原文每组 12 件，在 9 个解剖标志点上比较距离。直接打印组的点位平均绝对差从 0.079 到 0.224 mm，而其全弓 RMS 为 0.140 mm。局部范围与全弓分数因此应并列。对于设计上带有主动位移的矫治器，可分别与目标数字牙弓和实际起始牙列比较，目标面的制造误差与起始状态下因激活而出现的间隙对应不同问题。 [原文比较表与配准方法](ref:R01)",
+          "markdown": "Koenig 与 Choi 等从同一参考 STL 制作三种未设置牙移动的矫治器。内表面通过光学扫描获取，以最佳拟合配准，整体 RMS（均值 ± 标准差）为直接打印 0.140 ± 0.020 mm、Zendura FLX™ 热成形 0.188 ± 0.074 mm、Essix ACE™ 热成形 0.209 ± 0.094 mm。这一比较衡量自由状态内表面对参考形状的复现。试样喷粉、配准区域和数字参照均属于该测量定义。\n\n原文每组 12 件，在 9 个解剖标志点上比较距离。直接打印组的点位平均绝对差从 0.079 到 0.224 mm，而其全弓 RMS 为 0.140 mm。局部范围与全弓分数因此应并列。对于设计上带有主动位移的矫治器，可分别与目标数字牙弓和实际起始牙列比较，目标面的制造误差与起始状态下因激活而出现的间隙对应不同问题。 [原文比较表与配准方法](ref:R01)",
           "figure_ids": []
         },
         {
@@ -73,7 +73,7 @@
         {
           "id": "aging",
           "title": "热循环条件可能改变层厚比较",
-          "markdown": "一项体外研究将成品设计厚度固定为 0.50 mm，比较 50、100、150 μm 三种打印层厚。150 μm 组内表面 RMS 均值在未热循环和热循环条件下分别为 0.40 和 0.81 mm。打印层厚与矫治器的成品壁厚分属工艺和结构变量。配合自由状态偏差与就位间隙时，还应明确两类试样是否经过相同的老化条件。\n\n原文还区分正确度与精密度。前者以参考网格为基准，后者以同组独立成品之间的两两比较为基准。热循环前后的组均值和离散度应一起读取，评估同一工作流是否既保持目标形状，也能稳定复制。若同一成品经过重复测量，保留个体变化量可识别少数局部翘曲是否主导了平均变化。 [原文表 9–10](ref:R03)",
+          "markdown": "一项体外研究使用 Graphy Tera Harz TA-28，固定矫治器设计厚度为 0.50 mm，比较 50、100、150 μm 三种打印层厚。150 μm 组内表面 RMS（均值 ± 标准差）在未热循环和热循环条件下分别为 0.40 ± 0.10 和 0.81 ± 0.34 mm。打印层厚与矫治器的成品壁厚分属工艺和结构变量。配合自由状态偏差与就位间隙时，还应明确两类试样是否经过相同的老化条件。\n\n原文还区分正确度与精密度。前者以参考网格为基准，后者以同组独立成品之间的两两比较为基准。热循环前后的组均值和离散度应一起读取，评估同一工作流是否既保持目标形状，也能稳定复制。若同一成品经过重复测量，保留个体变化量可识别少数局部翘曲是否主导了平均变化。 [原文表 9–10](ref:R03)",
           "figure_ids": []
         }
       ],
@@ -86,7 +86,7 @@
         {
           "id": "global",
           "title": "Whole-arch mesh error measures digital shape reproduction",
-          "markdown": "Koenig, Choi and colleagues fabricated three passive aligner groups from the same reference STL. Optical scans of the inner surfaces were best-fit registered. Overall RMS was 0.140 mm for direct prints and 0.188 and 0.209 mm for the thermoformed sheets. This assesses reproduction of the reference shape by the unseated inner surface. Scan spray, registration region and digital reference are part of the measurement definition.\n\nThe study used 12 appliances per group and distances at 9 anatomical landmarks. Mean absolute deviations across landmarks in direct prints ranged from 0.079 to 0.224 mm, with a whole-arch RMS of 0.140 mm. The location-specific range complements the global score. For an active aligner, comparison against the target arch measures fabrication error, while comparison with the starting arch also incorporates mismatch intentionally introduced for activation. [Original comparison table and registration](ref:R01)",
+          "markdown": "Koenig, Choi and colleagues fabricated three passive aligner groups from the same reference STL. Optical scans of the inner surfaces were best-fit registered. Mean overall RMS (± SD) was 0.140 ± 0.020 mm for direct printing, 0.188 ± 0.074 mm for thermoformed Zendura FLX™ and 0.209 ± 0.094 mm for thermoformed Essix ACE™. This assesses reproduction of the reference shape by the unseated inner surface. Scan spray, registration region and digital reference are part of the measurement definition.\n\nThe study used 12 appliances per group and distances at 9 anatomical landmarks. Mean absolute deviations across landmarks in direct prints ranged from 0.079 to 0.224 mm, with a whole-arch RMS of 0.140 mm. The location-specific range complements the global score. For an active aligner, comparison against the target arch measures fabrication error, while comparison with the starting arch also incorporates mismatch intentionally introduced for activation. [Original comparison table and registration](ref:R01)",
           "figure_ids": []
         },
         {
@@ -110,20 +110,20 @@
         {
           "id": "aging",
           "title": "Thermocycling can change the layer-thickness comparison",
-          "markdown": "An in vitro experiment held nominal appliance thickness at 0.50 mm and compared printing layers of 50, 100 and 150 μm. For the 150 μm workflow, the mean intaglio RMS was 0.40 mm without thermocycling and 0.81 mm with it. Print layer height is a process variable, while appliance wall thickness is a structural variable. Comparisons of unseated deviation and seated gap should also match aging conditions.\n\nThe paper also distinguishes trueness against the reference mesh from precision estimated by pairwise comparison of independently manufactured appliances. Group averages and spread before and after thermocycling indicate whether a workflow both preserves target shape and reproduces it consistently. If individual appliances are remeasured, specimen-level changes show whether a few local distortions account for the mean change. [Original Tables 9–10](ref:R03)",
+          "markdown": "An in vitro experiment using Graphy Tera Harz TA-28 held nominal appliance thickness at 0.50 mm and compared printing layers of 50, 100 and 150 μm. At 150 μm, the mean intaglio RMS (± SD) was 0.40 ± 0.10 mm without thermocycling and 0.81 ± 0.34 mm after thermocycling. Print layer height is a process variable, while appliance wall thickness is a structural variable. Comparisons of unseated deviation and seated gap should also match aging conditions.\n\nThe paper also distinguishes trueness against the reference mesh from precision estimated by pairwise comparison of independently manufactured appliances. Group averages and spread before and after thermocycling indicate whether a workflow both preserves target shape and reproduces it consistently. If individual appliances are remeasured, specimen-level changes show whether a few local distortions account for the mean change. [Original Tables 9–10](ref:R03)",
           "figure_ids": []
         }
       ],
       "figure_texts": {}
     },
     "de": {
-      "title": "Wie verändern Bauausrichtung, Schichtdicke und Innenflächendesign die Passung direkt gedruckter Aligner?",
+      "title": "Wie beeinflussen Bauausrichtung, Schichtdicke und die Gestaltung der Innenfläche die Passung direkt gedruckter Aligner?",
       "direction": "Direkt gedruckte kieferorthopädische Aligner",
       "sections": [
         {
           "id": "global",
           "title": "Vollbogen-Netzabweichungen erfassen die digitale Formwiedergabe",
-          "markdown": "Koenig, Choi und Kollegen fertigten aus derselben Referenz-STL drei Gruppen passiver Aligner. Die optisch erfassten Innenflächen wurden per Best Fit ausgerichtet. Der Gesamt-RMS betrug 0,140 mm beim Direktdruck und 0,188 sowie 0,209 mm bei den thermoformierten Folien. Damit wird die Wiedergabe der Referenzform durch die noch nicht aufgesetzte Innenfläche erfasst. Scanspray, Registrierungsregion und digitale Referenz gehören zur Messdefinition.\n\nDie Studie verwendete 12 Apparaturen je Gruppe und bestimmte Abstände an 9 anatomischen Messpunkten. Die mittleren absoluten Abweichungen des Direktdrucks reichten je Messpunkt von 0,079 bis 0,224 mm, bei einem Gesamt-RMS von 0,140 mm. Die lokale Spanne ergänzt den Gesamtwert. Bei aktiven Alignern erfasst der Vergleich mit dem Zielbogen den Fertigungsfehler. Der Vergleich mit dem Ausgangsbogen umfasst zusätzlich die für die Aktivierung eingebrachte Abweichung. [Originalvergleichstabelle und Registrierung](ref:R01)",
+          "markdown": "Koenig, Choi und Kollegen fertigten aus derselben Referenz-STL drei Gruppen passiver Aligner. Die optisch erfassten Innenflächen wurden per Best Fit ausgerichtet. Der mittlere Gesamt-RMS (± SD) betrug 0,140 ± 0,020 mm beim Direktdruck, 0,188 ± 0,074 mm bei tiefgezogenem Zendura FLX™ und 0,209 ± 0,094 mm bei tiefgezogenem Essix ACE™. Damit wird die Wiedergabe der Referenzform durch die noch nicht aufgesetzte Innenfläche erfasst. Scanspray, Registrierungsregion und digitale Referenz gehören zur Messdefinition.\n\nDie Studie verwendete 12 Apparaturen je Gruppe und bestimmte Abstände an 9 anatomischen Messpunkten. Die mittleren absoluten Abweichungen des Direktdrucks reichten je Messpunkt von 0,079 bis 0,224 mm, bei einem Gesamt-RMS von 0,140 mm. Die lokale Spanne ergänzt den Gesamtwert. Bei aktiven Alignern erfasst der Vergleich mit dem Zielbogen den Fertigungsfehler. Der Vergleich mit dem Ausgangsbogen umfasst zusätzlich die für die Aktivierung eingebrachte Abweichung. [Originalvergleichstabelle und Registrierung](ref:R01)",
           "figure_ids": []
         },
         {
@@ -147,7 +147,7 @@
         {
           "id": "aging",
           "title": "Thermozyklierung kann den Schichtdickenvergleich verändern",
-          "markdown": "Ein In-vitro-Versuch hielt die Nenndicke des Aligners bei 0,50 mm und verglich Druckschichten von 50, 100 und 150 μm. Bei 150 μm Schichtdicke lag der mittlere Innenflächen-RMS ohne Thermozyklierung bei 0,40 mm und damit bei 0,81 mm nach Thermozyklierung. Druckschichthöhe ist eine Prozessgröße, die Wanddicke des Aligners eine Strukturgröße. Beim Vergleich der freien Innenfläche mit dem Spalt nach dem Aufsetzen sind die Alterungsbedingungen anzugeben.\n\nDie Arbeit unterscheidet Richtigkeit gegenüber dem Referenznetz von Präzision im Paarvergleich unabhängig gefertigter Aligner. Gruppenmittelwerte und Streuung vor und nach Thermozyklierung zeigen, ob ein Ablauf die Zielform erhält und sie reproduzierbar fertigt. Bei Wiederholungsmessung desselben Aligners zeigen individuelle Änderungen, ob wenige lokale Verformungen die mittlere Änderung bestimmen. [Originaltabellen 9–10](ref:R03)",
+          "markdown": "Ein In-vitro-Versuch mit Graphy Tera Harz TA-28 hielt die Nenndicke des Aligners bei 0,50 mm und verglich Druckschichten von 50, 100 und 150 μm. Bei 150 μm Schichtdicke betrug der mittlere Innenflächen-RMS (± SD) 0,40 ± 0,10 mm ohne Thermozyklierung und 0,81 ± 0,34 mm nach Thermozyklierung. Druckschichthöhe ist eine Prozessgröße, die Wanddicke des Aligners eine Strukturgröße. Beim Vergleich der freien Innenfläche mit dem Spalt nach dem Aufsetzen sind die Alterungsbedingungen anzugeben.\n\nDie Arbeit unterscheidet Richtigkeit gegenüber dem Referenznetz von Präzision im Paarvergleich unabhängig gefertigter Aligner. Gruppenmittelwerte und Streuung vor und nach Thermozyklierung zeigen, ob ein Ablauf die Zielform erhält und sie reproduzierbar fertigt. Bei Wiederholungsmessung desselben Aligners zeigen individuelle Änderungen, ob wenige lokale Verformungen die mittlere Änderung bestimmen. [Originaltabellen 9–10](ref:R03)",
           "figure_ids": []
         }
       ],

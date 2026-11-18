@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P2-124",
   "p": "P2",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-19",
   "evidence_cutoff": "2026-11-19",
   "related_paper_ids": [
@@ -57,19 +57,19 @@
         {
           "id": "arch",
           "title": "全弓印模的前后段差异",
-          "markdown": "一项 31 人的上颌体内研究对比两种口扫仪和两种传统印模材料。Omnicam 与 Trios 3 的后段偏差均高于前段。前后段从完整牙弓数据裁切，因而这些值描述全弓采集中的区域分布。该设计以扫描石膏模型作为研究参照，解释时需计入参考来源。\n\n该研究在完整牙弓上检出聚醚印模与硅橡胶印模，以及与两种口内扫描仪之间的差异。硅橡胶印模与两种口扫的平均距离总体接近。前后段的分析补充了全弓均值，尤其是临床上同一弓的后部偏差是否更大。它与钢模研究的基准和被比较材料均不同，不能据两篇的组均值直接推出设备差异。 [原文表 1 与图 3–4](ref:R02)",
+          "markdown": "一项 31 人的上颌体内研究对比两种口扫仪和两种传统印模材料。Omnicam 与 Trios 3 的后段偏差均高于前段。前后段从完整牙弓数据裁切，因而这些值描述全弓采集中的区域分布。参考网格来自聚醚印模灌注的石膏模型，由独立的工业蓝光扫描仪采集，因此比较以这条实体成形路线生成的几何为基准。\n\n该研究在完整牙弓上检出聚醚印模与硅橡胶印模，以及与两种口内扫描仪之间的差异。硅橡胶印模与两种口扫的平均距离总体接近。前后段的分析补充了全弓均值，尤其是临床上同一弓的后部偏差是否更大。它与钢模研究的基准和被比较材料均不同，不能据两篇的组均值直接推出设备差异。 [原文表 1 与图 3–4](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "linear",
           "title": "线性尺寸保留与网格正确度",
-          "markdown": "四种打印机与树脂组合的下颌牙弓研究比较了口扫文件和打印模型的牙冠近远中宽度、尖牙间宽度与磨牙间宽度，所测变量的组间检验均为 p > 0.8。这里的基线是输入口扫数据。结论适用于所测距离，局部表面、邻接区和咬合关系需要各自指标。\n\n同一批 30 位受试者的下颌口扫为各打印组合提供来源。平均牙宽的组间比较会纳入患者之间的自然形态差异。同一牙弓内成对测量打印值减入口扫值，更贴近复制误差的问题。短距离可保留而跨弓位移发生变形，因此牙冠宽度和跨弓距离宜按各自方向报告。 [原文表 1 的尺寸比较](ref:R03)",
+          "markdown": "四种打印机与树脂组合的下颌牙弓研究比较了口扫文件和打印模型的牙冠近远中宽度、尖牙间宽度与磨牙间宽度，所测线性距离的组间比较均未达统计显著。这里的基线是输入口扫数据。结论适用于所测距离，局部表面、邻接区和咬合关系需要各自指标。\n\n同一批 30 位受试者的下颌口扫为各打印组合提供来源。平均牙宽的组间比较会纳入患者之间的自然形态差异。同一牙弓内成对测量打印值减入口扫值，更贴近复制误差的问题。短距离可保留而跨弓位移发生变形，因此牙冠宽度和跨弓距离宜按各自方向报告。 [原文表 1 的尺寸比较](ref:R03)",
           "figure_ids": []
         },
         {
           "id": "occlusion",
           "title": "对颌模型还需对照咬合基准",
-          "markdown": "对颌模型实验将三种印模制得的模型和打印模型放到同一主模型条件下，测量前部垂直、后部垂直和前后向距离，并在 3 颗牙评估咬合。延迟灌注型藻酸盐和藻酸盐替代材料获得较高的咬合准确性。解释这种比较时，应明确上下颌的对合方式和咬合评价位置。\n\n原文的咬合评价位置为牙位 13、17、27，前部和后部垂直距离在延迟灌注型藻酸盐或替代材料与打印组之间呈显著差异。主模型安装在咬合架上，属于体外复现同一病例关系的设计。重复取得口内上下颌关系会引入另一个独立的采集变异来源。 [原文距离与咬合结果](ref:R04)",
+          "markdown": "对颌模型实验将三种印模制得的下颌石膏模型和打印模型分别与同一上颌主模型对合。测量包括前部垂直、后部垂直和前后向距离，以及 13、17、27 三个牙位的接触区。详细结果按落入设定理想接触区的情况，将普通藻酸盐排在首位，其后为延迟灌注型藻酸盐、藻酸盐替代材料和打印组。原文摘要另将延迟灌注型与替代材料列为咬合准确性较高的两组。\n\n原文的咬合评价位置为牙位 13、17、27，前部和后部垂直距离在延迟灌注型藻酸盐或替代材料与打印组之间呈显著差异。主模型安装在咬合架上，属于体外复现同一病例关系的设计。重复取得口内上下颌关系会引入另一个独立的采集变异来源。 [原文距离与咬合结果](ref:R04)",
           "figure_ids": []
         },
         {
@@ -94,19 +94,19 @@
         {
           "id": "arch",
           "title": "Anterior and posterior errors in full-arch impressions",
-          "markdown": "An in vivo study of 31 upper arches compared two intraoral scanners and two conventional impression materials. Posterior deviations were greater than anterior deviations for both Omnicam and Trios 3. Segments were cropped from the complete arches, so these values describe the regional distribution of error within a full-arch acquisition. Scanned stone casts supplied the study reference and matter when interpreting the comparison.\n\nThe full-arch analysis found differences between the polyether workflow and silicone, and between polyether and both intraoral scanners. Mean distances were broadly similar for silicone and the two scanners. Anterior–posterior analysis adds whether deviations increase at the back of the same arch. The reference and material comparators differ from the steel model study, so group means across the papers cannot isolate a device effect. [Original Table 1 and Figs. 3–4](ref:R02)",
+          "markdown": "An in vivo study of 31 upper arches compared two intraoral scanners and two conventional impression materials. Posterior deviations were greater than anterior deviations for both Omnicam and Trios 3. Segments were cropped from the complete arches, so these values describe the regional distribution of error within a full-arch acquisition. The reference meshes came from an independent industrial blue-light scan of the stone casts poured from polyether impressions. The comparisons therefore use the geometry produced by that physical workflow as their baseline.\n\nThe full-arch analysis found differences between the polyether workflow and silicone, and between polyether and both intraoral scanners. Mean distances were broadly similar for silicone and the two scanners. Anterior–posterior analysis adds whether deviations increase at the back of the same arch. The reference and material comparators differ from the steel model study, so group means across the papers cannot isolate a device effect. [Original Table 1 and Figs. 3–4](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "linear",
           "title": "Preservation of linear dimensions and mesh trueness",
-          "markdown": "A mandibular study of four printer–resin combinations compared scan files and printed casts using mesiodistal crown widths, intercanine width and intermolar width. All group tests for the measured variables gave p > 0.8. The baseline was the input intraoral scan. The finding applies to those distances. Local surfaces, contacts between teeth and occlusal relationships require their own metrics.\n\nThe mandibular scans of the same 30 participants supplied the input across printing workflows. Comparisons of group-average tooth widths include natural morphological variation between patients. Paired within-arch differences between print and scan are closer to the replication error of interest. Short distances can be preserved despite cross-arch displacement, so crown widths and cross-arch spans should retain their respective directions. [Original linear comparisons in Table 1](ref:R03)",
+          "markdown": "A mandibular study of four printer–resin combinations compared scan files and printed casts using mesiodistal crown widths, intercanine width and intermolar width. The study detected no significant group difference for any measured linear distance. The baseline was the input intraoral scan. The finding applies to those distances. Local surfaces, contacts between teeth and occlusal relationships require their own metrics.\n\nThe mandibular scans of the same 30 participants supplied the input across printing workflows. Comparisons of group-average tooth widths include natural morphological variation between patients. Paired within-arch differences between print and scan are closer to the replication error of interest. Short distances can be preserved despite cross-arch displacement, so crown widths and cross-arch spans should retain their respective directions. [Original linear comparisons in Table 1](ref:R03)",
           "figure_ids": []
         },
         {
           "id": "occlusion",
           "title": "Antagonist casts require an occlusal reference",
-          "markdown": "An antagonist-cast experiment evaluated casts made from three impression materials and a printed cast against the same master-model setup. It measured anterior vertical, posterior vertical and anteroposterior distances and assessed occlusion at 3 teeth. Extended-pour alginate and an alginate alternative gave higher occlusal accuracy. Articulation and the assessed contact sites define the scope of this comparison.\n\nThe original occlusal sites were teeth 13, 17 and 27. Anterior and posterior vertical distances differed significantly when comparing extended-pour alginate or its alternative with the printed group. The master models were mounted on an articulator to reproduce one case relationship in vitro. Repeated intraoral interarch records introduce a separate source of acquisition variation. [Original distance and occlusion results](ref:R04)",
+          "markdown": "The study articulated mandibular casts from three impression materials and a printed group against the same maxillary master cast. It measured anterior vertical, posterior vertical and anteroposterior distances and assessed contact zones at teeth 13, 17 and 27. For contacts within the study’s ideal zone, the detailed results ranked conventional alginate first, followed by extended-pour alginate, the alginate alternative and printing. The abstract instead identifies extended-pour alginate and the alginate alternative as having higher occlusal accuracy.\n\nThe original occlusal sites were teeth 13, 17 and 27. Anterior and posterior vertical distances differed significantly when comparing extended-pour alginate or its alternative with the printed group. The master models were mounted on an articulator to reproduce one case relationship in vitro. Repeated intraoral interarch records introduce a separate source of acquisition variation. [Original distance and occlusion results](ref:R04)",
           "figure_ids": []
         },
         {
@@ -131,19 +131,19 @@
         {
           "id": "arch",
           "title": "Anteriore und posteriore Fehler bei Vollbogenabformungen",
-          "markdown": "Eine In-vivo-Studie an 31 Oberkiefern verglich zwei Intraoralscanner und zwei konventionelle Abformmaterialien. Bei Omnicam und Trios 3 waren die Abweichungen posterior größer als anterior. Die Segmente wurden aus den Vollbögen ausgeschnitten und beschreiben daher die regionale Fehlerverteilung bei Vollbogenerfassung. Gescanntes Gipsmodellmaterial diente als Referenz, deren Herkunft für die Interpretation relevant ist.\n\nIm Vollbogenvergleich unterschied sich der Polyetherablauf von Silikon und von beiden Intraoralscannern. Die mittleren Abstände waren bei Silikon und den beiden Scannern insgesamt ähnlich. Die Segmentanalyse zeigt zusätzlich, ob Abweichungen im hinteren Teil desselben Bogens zunehmen. Referenz und Vergleichsmaterialien unterscheiden sich von der Stahlmodellstudie. Ein Geräteffekt lässt sich aus den Mittelwerten beider Arbeiten nicht isolieren. [Originaltabelle 1 und Abb. 3–4](ref:R02)",
+          "markdown": "Eine In-vivo-Studie an 31 Oberkiefern verglich zwei Intraoralscanner und zwei konventionelle Abformmaterialien. Bei Omnicam und Trios 3 waren die Abweichungen posterior größer als anterior. Die Segmente wurden aus den Vollbögen ausgeschnitten und beschreiben daher die regionale Fehlerverteilung bei Vollbogenerfassung. Als Referenz dienten die mit einem separaten industriellen Blaulichtscanner erfassten Gipsmodelle aus Polyetherabformungen. Die Vergleiche beziehen sich folglich auf die Geometrie aus diesem konventionellen Arbeitsablauf.\n\nIm Vollbogenvergleich unterschied sich der Polyetherablauf von Silikon und von beiden Intraoralscannern. Die mittleren Abstände waren bei Silikon und den beiden Scannern insgesamt ähnlich. Die Segmentanalyse zeigt zusätzlich, ob Abweichungen im hinteren Teil desselben Bogens zunehmen. Referenz und Vergleichsmaterialien unterscheiden sich von der Stahlmodellstudie. Ein Geräteffekt lässt sich aus den Mittelwerten beider Arbeiten nicht isolieren. [Originaltabelle 1 und Abb. 3–4](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "linear",
           "title": "Erhalt linearer Abmessungen und Netzrichtigkeit",
-          "markdown": "Eine Unterkieferstudie mit vier Drucker-Harz-Kombinationen verglich Scandateien und Druckmodelle anhand mesiodistaler Kronenbreiten sowie interkaniner und intermolarer Breiten. Alle Gruppentests für diese Größen ergaben p > 0,8. Als Bezugsgröße diente der eingehende Intraoralscan. Die Aussage gilt für die gemessenen Strecken. Lokale Flächen, Approximalkontakte und Okklusionsbeziehungen benötigen eigene Messgrößen.\n\nDie Unterkieferscans derselben 30 Teilnehmenden dienten allen Druckabläufen als Ausgangsdaten. Gruppenmittelwerte der Zahnbreiten enthalten die natürliche Formstreuung zwischen Personen. Gepaarte Differenzen von Druck und Scan am selben Bogen entsprechen eher dem gesuchten Replikationsfehler. Kurze Strecken können trotz bogenspannender Verschiebung erhalten bleiben. Kronenbreiten und Querstrecken sollten daher mit ihrer jeweiligen Richtung ausgewiesen werden. [Lineare Vergleiche in Originaltabelle 1](ref:R03)",
+          "markdown": "Eine Unterkieferstudie mit vier Drucker-Harz-Kombinationen verglich Scandateien und Druckmodelle anhand mesiodistaler Kronenbreiten sowie interkaniner und intermolarer Breiten. Für keine der gemessenen linearen Strecken wurde ein signifikanter Gruppenunterschied festgestellt. Als Bezugsgröße diente der eingehende Intraoralscan. Die Aussage gilt für die gemessenen Strecken. Lokale Flächen, Approximalkontakte und Okklusionsbeziehungen benötigen eigene Messgrößen.\n\nDie Unterkieferscans derselben 30 Teilnehmenden dienten allen Druckabläufen als Ausgangsdaten. Gruppenmittelwerte der Zahnbreiten enthalten die natürliche Formstreuung zwischen Personen. Gepaarte Differenzen von Druck und Scan am selben Bogen entsprechen eher dem gesuchten Replikationsfehler. Kurze Strecken können trotz bogenspannender Verschiebung erhalten bleiben. Kronenbreiten und Querstrecken sollten daher mit ihrer jeweiligen Richtung ausgewiesen werden. [Lineare Vergleiche in Originaltabelle 1](ref:R03)",
           "figure_ids": []
         },
         {
           "id": "occlusion",
           "title": "Gegenkiefermodelle benötigen eine Okklusionsreferenz",
-          "markdown": "Ein Experiment mit Gegenkiefermodellen prüfte Modelle aus drei Abformmaterialien und ein gedrucktes Modell in derselben Referenzanordnung. Gemessen wurden anteriore und posteriore Vertikalabstände sowie ein anteroposteriorer Abstand. Die Okklusion wurde an 3 Zähnen bewertet. Alginat mit verlängerter Ausgießzeit und ein Alginatersatz erzielten höhere Okklusionsgenauigkeit. Artikulation und untersuchte Kontaktstellen bestimmen den Geltungsbereich.\n\nOriginale Okklusionsmessstellen waren die Zähne 13, 17 und 27. Anteriore und posteriore Vertikalabstände unterschieden sich zwischen Alginat mit verlängerter Ausgießzeit oder Alginatersatz und der Druckgruppe signifikant. Die Referenzmodelle waren im Artikulator montiert und reproduzierten eine Fallbeziehung in vitro. Wiederholte intraorale Kieferrelationsmessungen erfassen eine weitere Quelle der Erfassungsstreuung. [Originalergebnisse zu Abständen und Okklusion](ref:R04)",
+          "markdown": "Die Studie artikulierte Unterkiefermodelle aus drei Abformmaterialien und einer Druckgruppe jeweils gegen dasselbe Oberkieferreferenzmodell. Sie erfasste anteriore und posteriore Vertikalabstände, den anteroposterioren Abstand und die Kontaktzonen an den Zähnen 13, 17 und 27. Für Kontakte im festgelegten Idealbereich nannten die Detailergebnisse zuerst konventionelles Alginat, gefolgt von Alginat mit verlängerter Ausgießfrist, Alginatersatz und Druck. Die Zusammenfassung weist dagegen Alginat mit verlängerter Ausgießfrist und dem Alginatersatz eine höhere Okklusionsgenauigkeit zu.\n\nOriginale Okklusionsmessstellen waren die Zähne 13, 17 und 27. Anteriore und posteriore Vertikalabstände unterschieden sich zwischen Alginat mit verlängerter Ausgießzeit oder Alginatersatz und der Druckgruppe signifikant. Die Referenzmodelle waren im Artikulator montiert und reproduzierten eine Fallbeziehung in vitro. Wiederholte intraorale Kieferrelationsmessungen erfassen eine weitere Quelle der Erfassungsstreuung. [Originalergebnisse zu Abständen und Okklusion](ref:R04)",
           "figure_ids": []
         },
         {

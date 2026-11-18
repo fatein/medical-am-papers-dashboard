@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P2-132",
   "p": "P2",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-19",
   "evidence_cutoff": "2026-11-19",
   "related_paper_ids": [],
@@ -58,19 +58,19 @@
         {
           "id": "bench-stiffness",
           "title": "用力矩–角度关系描述器具刚度",
-          "markdown": "Ielapi 等为两种打印足踝矫形器设计建立 4 个有限元模型，载荷范围参考步态的第二滚动阶段。相对于专用台架，模型的最大相对误差在跖屈为 10.38%，背屈为 10.66%。两方向的误差应分别保留，才能知道拟合覆盖了哪些关节运动。该验证对应成品受力和变形。 [刚度模型与台架对照](ref:R01)",
+          "markdown": "Ielapi 等用 4 个有限元模型评估两种 3D 打印踝足矫形器（AFO）的患者特异性刚度。加载范围模拟步态第二滚动阶段。与专用台架的测量值相比，跖屈刚度的最大相对误差为 10.38%，背屈刚度为 10.66%。这一验证针对矫形器的力学响应。 [刚度模型与台架对照](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "stance-phases",
           "title": "穿戴时为何按支撑期分段",
-          "markdown": "另一项实验给 9 名无步态障碍的受试者单侧配置个体化打印 AFO，对照穿戴与不穿戴。在控制性跖屈、控制性背屈和动力性跖屈阶段分别分析变形。研究定义的准刚度来自踝和器具的合成力矩–角度关系。它包含步态阶段和受试者参与，因此与台架上单独器具的刚度对应不同的量。 [行走中的刚度与挠度](ref:R02)",
+          "markdown": "另一项研究让 9 名无步态障碍的参与者单侧佩戴定制打印踝足矫形器，比较穿戴与未穿戴时的步行。研究按受控跖屈、受控背屈和主动发力跖屈划分支撑期。穿戴时，准刚度来自踝关节与矫形器组合的力矩–角度关系。该指标随步态阶段和参与者变化。 [步行中的刚度与挠曲](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "pediatric-function",
           "title": "儿童队列中的被动踝角与步态",
-          "markdown": "痉挛型脑瘫回顾性队列比较 62 人使用铝合金上部加 TPU 足底的打印组合，以及 62 人使用聚乙烯器具，两组均接受康复。3 个月时，作者报告的被动踝背屈角为 88.07 ± 3.18° 对 90.08 ± 2.65°，GMFM 为 74.98 ± 3.42 对 69.08 ± 2.95。表 2–3 的被动角与量表测量不同功能，按论文角度定义解读。由于材料、结构和组别选择共同变化，这些数据无法估算单独提高刚度的效应。 [原文表 2–3](ref:R03)",
+          "markdown": "这项痉挛型脑瘫患儿回顾性队列研究按所用矫形器分组。62 名患儿使用带铝合金小腿部件和热塑性聚氨酯（TPU）鞋垫的 3D 打印组合式矫形器，62 名使用聚乙烯矫形器。两组均接受康复训练。3 个月评估时，两组被动踝背屈角分别为 88.07 ± 3.18° 和 90.08 ± 2.65°（P = 0.027），粗大运动功能评估（GMFM）得分分别为 74.98 ± 3.42 和 69.08 ± 2.95（P = 0.001）。组间比较反映整套矫形器方案，研究未独立测量矫形器刚度。 [原文表 2–3、图 5–6](ref:R03)",
           "figure_ids": [
             "F01"
           ]
@@ -78,12 +78,12 @@
         {
           "id": "insole-comparator",
           "title": "坡道鞋垫结果可解释哪部分踝运动",
-          "markdown": "功能性扁平足组和正常足形组各 10 人，在跑步机 10% 坡度下对照单穿鞋和打印足弓鞋垫。扁平足组的蹬离期压力合力中心在加鞋垫后向外侧移动，踝旋前减小。鞋垫从足底接触改变负荷路径，该试验测量的是特定坡度下的即时反应。把鞋内支撑和跨踝限位放在共同步态任务中，可以检验两者对运动的不同影响。 [坡道任务与关节角度](ref:R04)",
+          "markdown": "10 名功能性扁平足参与者和 10 名正常足对照在坡度为 10% 的跑步机上分别穿鞋步行及加用 3D 打印足弓支撑鞋垫步行。在扁平足组内，加鞋垫后推进期的足底合力作用点有向外侧移动的趋势（P = 0.16），全足接触期的踝关节旋前角有减小的趋势（P = 0.19）。两项组内差异均未达统计显著。结果限于该坡度下的即时反应。 [原文图 2–3](ref:R04)",
           "figure_ids": []
         },
         {
           "id": "walking-table",
-          "title": "步幅、步宽和速度携带不同信息",
+          "title": "步长、步宽和速度反映不同的步态特征",
           "markdown": "儿童回顾性研究在平地 10 m 步道采集足印。原文表 4 报告打印组合组步长从 24.30 ± 4.88 cm 到 31.15 ± 4.18 cm，传统组从 25.08 ± 5.02 cm 到 28.68 ± 4.32 cm。对应步速由 0.43 ± 0.06 到 0.56 ± 0.10 m/s，以及由 0.45 ± 0.08 到 0.52 ± 0.12 m/s。步宽也随两组训练降低。这些步态空间时间参数可以与被动角和功能量表并列。因速度会改变步长及支撑期，分析关节角度时需要保留自然步速结果，并另作速度匹配。 [原文表 4 与平地步道](ref:R03)",
           "figure_ids": []
         },
@@ -108,8 +108,8 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "两组治疗前后的 GMFM 评分 (Qin et al., 2025)",
-          "interpretation": "两组基线柱接近，3 个月后均升高，打印组合组的终点柱更高。图中组差对应综合干预，需结合康复、结构与选组解释。 [原文图 6](ref:R03)"
+          "caption": "两组患儿治疗前后的粗大运动功能评估（GMFM）得分（Qin 等，2025）",
+          "interpretation": "图 6 将基线组间比较标为不显著，并在治疗后组间比较标出星号。部分柱高与表 3 的均值不完全一致，精确数值及组内前后变化以表 3 为准。 [原文图 6 与表 3](ref:R03)"
         }
       }
     },
@@ -120,19 +120,19 @@
         {
           "id": "bench-stiffness",
           "title": "Describing device stiffness with torque–angle curves",
-          "markdown": "Ielapi and colleagues built 4 finite-element models spanning two printed ankle-foot orthosis (AFO) designs. The range of loading represented the second rocker of gait. Against a dedicated fixture, the maximum relative errors were 10.38% in plantarflexion and 10.66% in dorsiflexion. Keeping the two errors separate shows which ankle motions the model covers. The validation addresses device loading and deformation. [Stiffness model and bench comparison](ref:R01)",
+          "markdown": "Ielapi and colleagues built four finite-element models to estimate patient-specific stiffness for two printed ankle-foot orthosis (AFO) designs. The loading range represented the second rocker of gait. The maximum relative errors against a dedicated fixture were 10.38% for plantarflexion stiffness and 10.66% for dorsiflexion stiffness. The validation concerns the mechanical response of the device. [Stiffness model and bench comparison](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "stance-phases",
           "title": "Why evaluate the device by stance subphase",
-          "markdown": "A separate experiment fitted 9 unimpaired participants with a unilateral custom printed AFO and compared walking with and without it. Deflection was analyzed in controlled plantarflexion, controlled dorsiflexion and powered plantarflexion. The study's quasi-stiffness comes from the combined ankle–AFO torque–angle relationship. Gait phase and participant contributions enter that quantity, so it differs from device stiffness measured on a fixture. [Stiffness and deflection during walking](ref:R02)",
+          "markdown": "A separate study fitted nine unimpaired participants unilaterally with a custom printed AFO and compared walking with and without the device. It examined controlled plantarflexion, controlled dorsiflexion and powered plantarflexion separately. In the braced condition, quasi-stiffness came from the moment–angle relationship of the combined ankle–AFO system. This estimate varies by gait phase and participant. [Stiffness and deflection during walking](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "pediatric-function",
           "title": "Passive ankle angle and gait in the pediatric cohort",
-          "markdown": "A retrospective cohort of children with spastic cerebral palsy compared 62 users of a printed assembly with aluminum-alloy uppers and TPU soles with 62 users of polyethylene orthoses. Both groups received rehabilitation. At three months, the reported passive dorsiflexion angle was 88.07 ± 3.18° versus 90.08 ± 2.65°, and GMFM was 74.98 ± 3.42 versus 69.08 ± 2.95. Tables 2–3 measure different aspects of function and the passive angle follows the paper's convention. Material, structure and group assignment varied together, precluding an isolated stiffness effect estimate. [Original Tables 2–3](ref:R03)",
+          "markdown": "The retrospective cohort assigned children with spastic cerebral palsy to groups based on the orthosis they used. Sixty-two used a 3D-printed assembly with an aluminum-alloy leg component and thermoplastic polyurethane (TPU) insole, and 62 used a polyethylene orthosis. Both groups received rehabilitation. At the reported three-month assessment, passive ankle dorsiflexion was 88.07 ± 3.18° versus 90.08 ± 2.65° (P = 0.027), and Gross Motor Function Measure (GMFM) scores were 74.98 ± 3.42 versus 69.08 ± 2.95 (P = 0.001). The comparisons concern the complete orthosis interventions. The study did not independently measure device stiffness. [Original Tables 2–3 and Figures 5–6](ref:R03)",
           "figure_ids": [
             "F01"
           ]
@@ -140,7 +140,7 @@
         {
           "id": "insole-comparator",
           "title": "What uphill insole data say about ankle motion",
-          "markdown": "10 participants with functional flat feet and 10 controls walked at a 10% treadmill incline in shoes alone and with printed arch-support insoles. In the flat-foot group, the center of force moved laterally during propulsion with the insole and ankle pronation decreased. Plantar contact changes the load path, and this experiment measured the immediate response on that incline. A common gait task could compare the effects of in-shoe support and a joint-spanning constraint. [Incline task and joint angles](ref:R04)",
+          "markdown": "Ten participants with functional flat feet and ten controls walked on a treadmill at a 10% incline in shoes alone and with printed arch-support insoles. Within the flat-foot group, the center of force tended to shift laterally during propulsion (P = 0.16) and the pronation angle tended to decrease during foot-flat (P = 0.19). Neither within-group comparison reached statistical significance. The study measured immediate responses on that incline. [Original Figures 2–3](ref:R04)",
           "figure_ids": []
         },
         {
@@ -170,31 +170,31 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "GMFM scores before and after treatment in both groups (Qin et al., 2025)",
-          "interpretation": "Both baseline bars were close and both rose after three months, with a higher final bar in the printed-assembly group. The between-group difference reflects the full intervention, including rehabilitation, structure and group assignment. [Original Figure 6](ref:R03)"
+          "caption": "Gross Motor Function Measure (GMFM) scores before and after treatment in both groups (Qin et al., 2025)",
+          "interpretation": "Figure 6 marks the baseline comparison as nonsignificant and the post-treatment comparison with an asterisk. Some bar heights differ from the means in Table 3. The table gives the exact values and the within-group changes. [Original Figure 6 and Table 3](ref:R03)"
         }
       }
     },
     "de": {
-      "title": "Wie beeinflusst die Steifigkeit gedruckter Sprunggelenk-Fuß-Orthesen die Sprunggelenkfunktion und den Gang?",
+      "title": "Wie beeinflusst die Steifigkeit gedruckter Unterschenkel-Fuß-Orthesen die Sprunggelenkfunktion und den Gang?",
       "direction": "Sprunggelenk-Fuß-Orthesen und individuelle Einlagen",
       "sections": [
         {
           "id": "bench-stiffness",
           "title": "Orthesensteifigkeit anhand von Drehmoment-Winkel-Kurven",
-          "markdown": "Ielapi und Kollegen erstellten 4 Finite-Elemente-Modelle für zwei gedruckte Sprunggelenk-Fuß-Orthesendesigns. Der Lastbereich orientierte sich am zweiten Abrollmechanismus des Gangs. Gegenüber dem Prüfstand betrug der maximale relative Fehler 10,38% bei Plantarflexion und 10,66% bei Dorsalflexion. Die getrennte Angabe zeigt, für welche Gelenkbewegungen das Modell geprüft wurde. Die Validierung betrifft Belastung und Verformung der Orthese. [Steifigkeitsmodell und Prüfstandvergleich](ref:R01)",
+          "markdown": "Ielapi und Kollegen erstellten vier Finite-Elemente-Modelle, um die patientenspezifische Steifigkeit zweier gedruckter Unterschenkel-Fuß-Orthesen (AFO) zu bestimmen. Der Belastungsbereich entsprach dem zweiten Abrollmechanismus des Gangs. Im Vergleich zum Prüfstand betrug der maximale relative Fehler 10,38% für die Steifigkeit bei Plantarflexion und 10,66% bei Dorsalflexion. Die Validierung betrifft das mechanische Verhalten der Orthese. [Steifigkeitsmodell und Prüfstandsvergleich](ref:R01)",
           "figure_ids": []
         },
         {
           "id": "stance-phases",
           "title": "Warum die Orthese nach Standphasen beurteilt wird",
-          "markdown": "In einem weiteren Versuch erhielten 9 Personen ohne Gangbeeinträchtigung einseitig eine individuell gedruckte Orthese und gingen mit sowie ohne Orthese. Die Auslenkung wurde in kontrollierter Plantarflexion, kontrollierter Dorsalflexion und angetriebener Plantarflexion untersucht. Die Quasisteifigkeit ergab sich aus der gemeinsamen Drehmoment-Winkel-Beziehung von Orthese und Sprunggelenk. Gangphase und Beiträge der Versuchsperson gehen in diese Größe ein und unterscheiden sie vom reinen Prüfstandswert. [Steifigkeit und Auslenkung beim Gehen](ref:R02)",
+          "markdown": "In einer weiteren Studie wurden neun Personen ohne Gangbeeinträchtigung einseitig mit einer individuell gedruckten AFO versorgt. Die Studie verglich das Gehen mit und ohne Orthese und wertete kontrollierte Plantarflexion, kontrollierte Dorsalflexion und aktive Plantarflexion beim Abstoß getrennt aus. Beim Gehen mit Orthese ergab sich die Quasisteifigkeit aus der Moment-Winkel-Beziehung des Systems aus Sprunggelenk und Orthese. Der Wert hängt von Gangphase und Versuchsperson ab. [Steifigkeit und Auslenkung beim Gehen](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "pediatric-function",
           "title": "Passiver Sprunggelenkwinkel und Gang im Kinderkollektiv",
-          "markdown": "Eine retrospektive Kohorte von Kindern mit spastischer Zerebralparese verglich 62 Kinder mit gedruckter Baugruppe aus Aluminiumoberteil und TPU-Sohle mit 62 Kindern mit Polyethylenorthese. Beide Gruppen erhielten Rehabilitation. Nach drei Monaten betrug der berichtete passive Dorsalflexionswinkel 88,07 ± 3,18° gegenüber 90,08 ± 2,65°, der GMFM-Wert 74,98 ± 3,42 gegenüber 69,08 ± 2,95. Tabellen 2–3 erfassen unterschiedliche Funktionsaspekte. Für den passiven Winkel gilt die Definition der Studie. Material, Konstruktion und Gruppenzuordnung variierten gemeinsam, sodass der isolierte Steifigkeitseffekt offenbleibt. [Originaltabellen 2–3](ref:R03)",
+          "markdown": "Die retrospektive Kohortenstudie teilte Kinder mit spastischer Zerebralparese nach der verwendeten Orthese ein. Je 62 Kinder trugen entweder eine 3D-gedruckte Kombinationsorthese mit einem Unterschenkelteil aus Aluminiumlegierung und einer Einlage aus thermoplastischem Polyurethan (TPU) oder eine Polyethylenorthese. Beide Gruppen erhielten Rehabilitation. Bei der Drei-Monats-Erhebung betrug der passive Dorsalflexionswinkel 88,07 ± 3,18° gegenüber 90,08 ± 2,65° (P = 0,027). Die Werte im Gross Motor Function Measure (GMFM) lagen bei 74,98 ± 3,42 gegenüber 69,08 ± 2,95 (P = 0,001). Der Vergleich betrifft die gesamte orthopädietechnische Versorgung. Die Steifigkeit der Orthesen wurde nicht separat gemessen. [Originaltabellen 2–3 und Abbildungen 5–6](ref:R03)",
           "figure_ids": [
             "F01"
           ]
@@ -202,7 +202,7 @@
         {
           "id": "insole-comparator",
           "title": "Was Einlagendaten bergauf über die Sprunggelenkbewegung aussagen",
-          "markdown": "Je 10 Teilnehmende mit funktionellem Plattfuß und normaler Fußform gingen bei 10% Laufbandsteigung mit Schuh allein und mit gedruckter Gewölbeeinlage. In der Plattfußgruppe verlagerte sich das Kraftzentrum in der Abstoßphase mit Einlage nach lateral, und die Pronation nahm ab. Der plantare Kontakt verändert den Lastpfad. Die Studie erfasste die unmittelbare Reaktion bei dieser Steigung. Dieselbe Gangaufgabe könnte Einlagen und gelenkübergreifende Führung vergleichbar machen. [Steigungsaufgabe und Gelenkwinkel](ref:R04)",
+          "markdown": "Je zehn Teilnehmende mit und ohne funktionellen Plattfuß gingen bei 10% Laufbandsteigung in Schuhen mit und ohne gedruckte Einlage zur Unterstützung des Fußgewölbes. In der Plattfußgruppe tendierte der Angriffspunkt der plantaren resultierenden Kraft in der Abstoßphase nach lateral (P = 0,16), während der Pronationswinkel bei vollständigem Fußkontakt tendenziell abnahm (P = 0,19). Beide Vergleiche innerhalb der Gruppe blieben statistisch unauffällig. Erfasst wurde die unmittelbare Reaktion bei dieser Steigung. [Originalabbildungen 2–3](ref:R04)",
           "figure_ids": []
         },
         {
@@ -232,8 +232,8 @@
       ],
       "figure_texts": {
         "F01": {
-          "caption": "GMFM-Werte beider Gruppen vor und nach Behandlung (Qin et al., 2025)",
-          "interpretation": "Die Ausgangsbalken lagen nahe beieinander und stiegen in beiden Gruppen nach drei Monaten. Der Endwert der Druckgruppe lag höher. Der Gruppenunterschied betrifft die gesamte Intervention einschließlich Rehabilitation, Konstruktion und Zuteilung. [Originalabbildung 6](ref:R03)"
+          "caption": "Werte im Gross Motor Function Measure (GMFM) vor und nach der Behandlung in beiden Gruppen (Qin et al., 2025)",
+          "interpretation": "Abbildung 6 kennzeichnet den Gruppenvergleich zu Beginn als nicht signifikant und den Vergleich nach der Behandlung mit einem Stern. Einige Balkenhöhen weichen von den Mittelwerten in Tabelle 3 ab. Die exakten Werte und Veränderungen innerhalb der Gruppen stehen in der Tabelle. [Originalabbildung 6 und Tabelle 3](ref:R03)"
         }
       }
     }

@@ -2,7 +2,7 @@
   "schema_version": 2,
   "question_id": "P4-121",
   "p": "P4",
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-11-19",
   "evidence_cutoff": "2026-11-19",
   "related_paper_ids": [
@@ -53,13 +53,13 @@
         {
           "id": "workflow",
           "title": "术前规划和术中贴合的核查点",
-          "markdown": "临床可行性研究将 CBCT 骨与根尖影像和口内扫描牙面结合，规划骨窗口位置、入射角和截除深度。图 1 为计划，图 2 展示导板就座与器械进入。比较研究应把影像配准、观察窗看到的就座、导向与实际切线分别登记，让异常偏差能定位到对应环节。 [临床流程图 1、2](ref:R02)\n\n术前计划目标为截除 3 mm、倒角 0°。导板试戴只验证支撑牙处的就座，尚需检查器械与套管、实际根长轴和邻近结构之间的关系。图 1 的影像配准与导管定位处于不同环节。若复现结果，可记录套管轴线相对于根长轴的角度，并报告因为开口受限而未能完整转移规划的原始病例数。 [双影像配准与规划目标](ref:R02)",
+          "markdown": "临床可行性研究将 CBCT 骨与根尖影像和口内扫描牙面结合，规划骨窗口位置、入射角和截除深度。图 1 为计划，图 2 展示导板就座与器械进入。比较研究应把影像配准、观察窗看到的就座、导向与实际切线分别登记，让异常偏差能定位到对应环节。 [临床流程图 1、2](ref:R02)\n\n术前目标为截除根尖 3 mm、斜面角 0°。图 1 为数字规划流程图，图 2A 展示导板试戴，图 2C 展示环钻导向。六次手术均同期完成骨切开和根尖截除。该系列未量化实际入口、角度或深度对计划的偏差。[规划、术中图像与研究局限](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "resection",
           "title": "相同环钻条件下，导板对截除量的影响",
-          "markdown": "尸体研究对下颌牙根比较同一环钻有无根尖切除导板，目标截除量 3 mm。导板组 32 根，平均截除 3.18 ± 0.24 mm；无导板组 18 根，平均 4.00 ± 0.53 mm。按原文 2.5–3.5 mm 范围，表 3 分别有 30/32 和 3/18 根达标。读图 4 时既看均值接近目标，也看过切分布。 [尸体比较图 4 与表 3](ref:R01)\n\n原文对上颌和下颌共有 41 根采用导板，并仅在下颌设无导板对照；比较两组时应使用下颌 32 根，而不能用全部导板根混合。导板稳定性另由 15 件根尖导板中 14 件稳定就座来衡量。稳定与达标的分母分别为导板和牙根，汇总前应确认同一导板覆盖多少个根尖。 [上下颌分层与稳定性](ref:R01)",
+          "markdown": "Ha 等尸体研究的两组均用骨切开导板制备皮质骨入口，再以直径 4 mm 的环钻完成目标 3 mm 的根尖截除。对照组仅在截除阶段不使用导板。下颌组间比较（图 4D）报告，32 根使用截除导板和 18 根不使用截除导板的平均截除长度分别为 3.18 ± 0.24 mm 和 4.00 ± 0.53 mm（p < 0.0001）。按 >2.5 且 <3.5 mm 的判据，表 3 分别有 30/32 和 3/18 达标。[图 3、图 4D 和表 3](ref:R01)\n\n截除导板组共有 41 根上、下颌牙根，表 2 中 38 根（92.7%）达标。对照仅来自下颌，因此组间比较限于下颌。表 1 的稳定性以导板为单位，15 件中 14 件稳定。在任一受力点施加 20 N 测试时，位移达到 0.5 mm 即判失稳。[稳定性表 1、总体准确性表 2 和下颌比较表 3](ref:R01)",
           "figure_ids": []
         },
         {
@@ -77,13 +77,13 @@
         {
           "id": "healing",
           "title": "导向精度和愈合如何放进同一比较？",
-          "markdown": "概念验证研究中 4 人在 6 个月达到完整愈合，另 2 人到 12 个月达到。两例骨窗研究的随访分别为 18 和 12 个月。进一步比较可按牙位、皮质厚度和病灶尺寸分层，由盲法评价者分别读即刻几何偏差、随访根尖透射区和临床症状。把多根和不同复诊窗口明确标在结果中。 [临床与影像愈合](ref:R02) · [两颗磨牙的随访影像](ref:R03)\n\n手术后的影像给出截除面和骨窗，复诊影像给出透射区缩小及骨皮质连续性，二者应使用同一根编号。压电骨窗病例同时使用骨片复位及辅助措施，因此随访不能把愈合量分解给导板。采用一致的随访影像方法和根尖愈合判级，可减少因二维根尖片与 CBCT 的观察维度不同带来的分类差。 [皮质片复位和影像随访](ref:R03) · [影像判级与随访时间](ref:R02)",
+          "markdown": "概念验证研究中 4 人在 6 个月达到完整愈合，另 2 人到 12 个月达到。两例骨窗研究的随访分别为 18 和 12 个月。进一步比较可按牙位、皮质厚度和病灶尺寸分层，由盲法评价者分别读即刻几何偏差、随访根尖透射区和临床症状。把多根和不同复诊窗口明确标在结果中。 [临床与影像愈合](ref:R02) · [两颗磨牙的随访影像](ref:R03)\n\nPranno 等用即刻及术后 6、12 个月的根尖片评价透射区变化，并结合临床检查判断愈合。截除面或皮质骨连续性的定量测量需要另设标准化三维评价。压电骨窗两例均使用皮质骨片复位和富血小板纤维蛋白，随访反映整个治疗流程的结果。[愈合判据](ref:R02) · [骨片复位及随访图 3–5](ref:R03)",
           "figure_ids": []
         },
         {
           "id": "timing",
           "title": "导向涉及的阶段与总手术时间如何对照？",
-          "markdown": "概念验证的图 3 按阶段给出均值，导向去骨与同期根尖截除平均 8.17 min，病灶去除 17.83 min，整个操作为 73.67 min。图中不同阶段占比相异。导板直接作用于去骨与截除，病灶清除和根端处理另受病灶尺寸、双根或多根解剖以及可视性影响。需要对照各阶段后才能估计导向是否节缩用时。 [各阶段手术用时图 3](ref:R02)",
+          "markdown": "Pranno 等图 3 展示六次手术的分阶段平均用时。同期导向骨切开与根尖截除为 8.17 min，病灶去除为 17.83 min。正文另报告平均总手术时间为 73.67 min（范围 40–102 min）。要估计导板节省的用时，需要在可比病例中按相同阶段定义设置对照。[分阶段用时图 3 与正文](ref:R02)",
           "figure_ids": [
             "F01"
           ]
@@ -92,7 +92,7 @@
       "figure_texts": {
         "F01": {
           "caption": "Pranno 等（2025），原文图 3。手术各阶段平均用时。",
-          "interpretation": "先定位合并计时的导向去骨和截除阶段，再对照病灶去除、倒预备、倒充填和缝合。图中各条形代表相应阶段的平均分钟数。多根牙按阶段整体计时，不能把条形长度读成单根用时。"
+          "interpretation": "每根柱表示六次手术中某一阶段的平均用时（min）。可比较同期导向骨切开与根尖截除、病灶去除、根端倒预备、倒充填和缝合的平均用时。"
         }
       }
     },
@@ -103,13 +103,13 @@
         {
           "id": "workflow",
           "title": "Checks for planning and intraoperative seating",
-          "markdown": "The clinical feasibility study combined CBCT of bone and the apex with an intraoral surface scan, planning osteotomy location, approach angle and resection depth. Figure 1 shows planning and Fig. 2 shows seating and instrument access. Record image registration, seating at the inspection windows, guidance and the achieved cut separately to localize deviations. [Clinical workflow, Figs. 1 and 2](ref:R02)\n\nThe planned resection was 3 mm with a 0° bevel. Test seating verifies contact at support teeth, while instrument-to-sleeve and axis-to-anatomy relations require separate checks. Figure 1 documents registration and sleeve planning as separate stages. Record sleeve angle to the long root axis and the original count of cases in which restricted access prevented full transfer. [Dual-image registration and target](ref:R02)",
+          "markdown": "The clinical feasibility study combined CBCT of bone and the apex with an intraoral surface scan, planning osteotomy location, approach angle and resection depth. Figure 1 shows planning and Fig. 2 shows seating and instrument access. Record image registration, seating at the inspection windows, guidance and the achieved cut separately to localize deviations. [Clinical workflow, Figs. 1 and 2](ref:R02)\n\nThe plan targeted a 3 mm root-end resection at a 0° bevel. Figure 1 is the digital planning flowchart. Figure 2A shows trial seating and 2C shows trephine guidance. All six procedures combined osteotomy and root-end resection in one step. The series did not quantify deviations from plan in entry point, angle or depth. [Planning, operative images and study limitations](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "resection",
           "title": "What changed with guidance using the same trephine?",
-          "markdown": "The cadaver study compared mandibular roots with and without a root-resection guide using the same trephine and a 3 mm target. The guided group included 32 roots, with mean resection 3.18 ± 0.24 mm. The 18 unguided roots averaged 4.00 ± 0.53 mm. At the study's 2.5–3.5 mm tolerance, Table 3 shows 30/32 and 3/18 in range. Inspect overshoot as well as the mean in Fig. 4. [Cadaver comparison, Fig. 4 and Table 3](ref:R01)\n\nThe paper tested 41 guided roots across both jaws and placed all unguided controls in the mandible. The comparison therefore uses the 32 guided mandibular roots. Seating was stable for 14 of 15 resection guides. Stability is counted by guide and tolerance attainment by root. Check how many apices share one guide before combining observations. [Analysis by jaw and stability](ref:R01)",
+          "markdown": "In Ha et al.'s cadaver study, both groups used an osteotomy guide to create the cortical entry window and a 4 mm trephine for the 3 mm root-end resection target. Controls underwent the resection step without a resection guide. The mandibular comparison (Fig. 4D) reports 3.18 ± 0.24 mm with the resection guide (32 roots) and 4.00 ± 0.53 mm without it (18 roots, p < 0.0001). Table 3 shows that 30/32 and 3/18 met the criterion of >2.5 and <3.5 mm. [Figs. 3 and 4D and Table 3](ref:R01)\n\nThe guided analysis across both jaws included 41 roots. In Table 2, 38 (92.7%) met the resection criterion. The between-group comparison is limited to mandibular roots because all controls came from the mandible. In Table 1, 14 of 15 guides were stable. Movement of at least 0.5 mm under 20 N at any test site counted as failure. [Stability Table 1, overall accuracy Table 2 and mandibular comparison Table 3](ref:R01)",
           "figure_ids": []
         },
         {
@@ -127,13 +127,13 @@
         {
           "id": "healing",
           "title": "How can targeting and healing be studied in the same comparison?",
-          "markdown": "In the proof-of-concept series, 4 patients showed complete healing at 6 months and 2 by 12 months. The two bone-window cases had 18- and 12-month follow-up. A comparison can stratify on tooth site, cortical thickness and lesion size, then use blinded readers for immediate geometric deviation, follow-up radiolucency and clinical symptoms. Mark multirooted teeth and distinct follow-up times in the results. [Clinical and radiographic healing](ref:R02) · [Molar follow-up imaging](ref:R03)\n\nPostoperative imaging shows the cut and window. Follow-up shows radiolucency change and cortical continuity. Link those measurements by root identity. The piezo cases used cortical replacement and adjuncts, so healing cannot be apportioned to guidance. Consistent follow-up imaging and healing criteria reduce classification differences caused by the differing dimensions of radiography and CBCT. [Cortical plate replacement and imaging follow-up](ref:R03) · [Imaging criteria and follow-up](ref:R02)",
+          "markdown": "In the proof-of-concept series, 4 patients showed complete healing at 6 months and 2 by 12 months. The two bone-window cases had 18- and 12-month follow-up. A comparison can stratify on tooth site, cortical thickness and lesion size, then use blinded readers for immediate geometric deviation, follow-up radiolucency and clinical symptoms. Mark multirooted teeth and distinct follow-up times in the results. [Clinical and radiographic healing](ref:R02) · [Molar follow-up imaging](ref:R03)\n\nPranno et al. used immediate, 6-month and 12-month periapical radiographs to assess changes in radiolucency, alongside clinical examination. Quantifying the resection plane or cortical continuity would require standardised three-dimensional measurements. Both piezoelectric cases combined cortical plate replacement with platelet-rich fibrin, so follow-up reflects the complete treatment protocol. [Healing criteria](ref:R02) · [Cortical plate replacement and follow-up, Figs. 3–5](ref:R03)",
           "figure_ids": []
         },
         {
           "id": "timing",
           "title": "How do guided stages relate to total operative time?",
-          "markdown": "In Fig. 3 of the proof-of-concept study, guided osteotomy with resection averaged 8.17 min, lesion removal 17.83 min and the whole procedure 73.67 min. Phases contribute differently. Guidance directly affects osteotomy and resection. Lesion removal and root-end treatment also depend on lesion size, root anatomy and visibility. A phase-matched control is needed to estimate time savings. [Operative time by phase, Fig. 3](ref:R02)",
+          "markdown": "Figure 3 in Pranno et al. shows mean times by phase across six procedures. Guided osteotomy with simultaneous root-end resection averaged 8.17 min, and lesion removal averaged 17.83 min. The text separately reports a mean total time of 73.67 min (range 40–102 min). Estimating time savings requires a comparison in similar cases using the same phase definitions. [Operative times by phase, Fig. 3 and Results](ref:R02)",
           "figure_ids": [
             "F01"
           ]
@@ -142,24 +142,24 @@
       "figure_texts": {
         "F01": {
           "caption": "Pranno et al. (2025), Fig. 3. Mean duration by operative phase.",
-          "interpretation": "Locate the combined guided osteotomy and resection phase, then compare lesion removal, retropreparation, retrofilling and suturing. The bars show means by stage rather than per-root rates."
+          "interpretation": "The bars show each phase's mean duration in minutes across six procedures. Compare the combined guided osteotomy and root-end resection bar with lesion removal, retropreparation, root-end filling and suturing."
         }
       }
     },
     "de": {
-      "title": "Wie lassen sich Zielgenauigkeit, Resektionstiefe und Knochenerhalt bei endodontischen Schablonen prüfen?",
+      "title": "Wie lassen sich bei endodontischen Schablonen die Lokalisation der Wurzelspitze, die Resektionstiefe und der Knochenerhalt überprüfen?",
       "direction": "Patientenspezifische Hilfsmittel für Zahntransplantation und endodontische Chirurgie",
       "sections": [
         {
           "id": "workflow",
           "title": "Prüfpunkte bei Planung und intraoperativem Sitz",
-          "markdown": "Die Machbarkeitsstudie kombinierte DVT-Daten zu Knochen und Apex mit einem intraoralen Scan. Geplant wurden Osteotomielage, Zugangswinkel und Resektionstiefe. Abb. 1 zeigt die Planung und Abb. 2 den Sitz der Schablone sowie den Instrumentenzugang. Bildregistrierung, Sitz in den Kontrollfenstern, Führung und Schnitt getrennt dokumentieren. [Klinischer Ablauf, Abb. 1 und 2](ref:R02)\n\nGeplant waren 3 mm Resektion bei 0° Abschrägung. Die Passprobe prüft den Sitz an den Stützzähnen. Instrument, Hülse, Wurzellängsachse und Nachbarstrukturen erfordern eigene Kontrollen. Abb. 1 zeigt Registrierung und Hülsenplanung als getrennte Schritte. Hülsenwinkel zur Wurzelachse und Fälle mit unvollständiger Übertragung wegen eingeschränkten Zugangs dokumentieren. [Registrierung beider Bildquellen und Planungsziel](ref:R02)",
+          "markdown": "Die Machbarkeitsstudie kombinierte DVT-Daten zu Knochen und Apex mit einem intraoralen Scan. Geplant wurden Osteotomielage, Zugangswinkel und Resektionstiefe. Abb. 1 zeigt die Planung und Abb. 2 den Sitz der Schablone sowie den Instrumentenzugang. Bildregistrierung, Sitz in den Kontrollfenstern, Führung und Schnitt getrennt dokumentieren. [Klinischer Ablauf, Abb. 1 und 2](ref:R02)\n\nGeplant waren eine Wurzelspitzenresektion von 3 mm und ein Resektionswinkel von 0°. Abb. 1 zeigt den digitalen Planungsablauf. Abb. 2A und 2C zeigen die Passprobe und die Führung des Trepanbohrers. In allen sechs Eingriffen erfolgten Osteotomie und Wurzelspitzenresektion in einem Schritt. Abweichungen von Eintrittspunkt, Winkel und Tiefe gegenüber der Planung wurden nicht quantifiziert. [Planung, Operationsbilder und Studiengrenzen](ref:R02)",
           "figure_ids": []
         },
         {
           "id": "resection",
           "title": "Was änderte die Schablone bei gleicher Trepanfräse?",
-          "markdown": "Die Kadaverstudie verglich Unterkieferwurzeln mit und ohne Resektionsschablone bei gleicher Trepanfräse und einem Ziel von 3 mm. Mit Schablone betrug die Resektion an 32 Wurzeln 3,18 ± 0,24 mm, ohne Schablone an 18 Wurzeln 4,00 ± 0,53 mm. Im Bereich von 2,5–3,5 mm lagen laut Tabelle 3 30/32 bzw. 3/18 Wurzeln. Abb. 4 zeigt neben dem Mittelwert auch die Streuung über das Ziel hinaus. [Kadaververgleich, Abb. 4 und Tabelle 3](ref:R01)\n\nDie Studie prüfte 41 geführte Wurzeln in beiden Kiefern, während alle ungeführten Kontrollen im Unterkiefer lagen. Der direkte Vergleich nutzt daher die 32 geführten Unterkieferwurzeln. 14 von 15 Resektionsschablonen saßen stabil. Die Stabilität wird je Schablone, die Zielerreichung je Wurzel gezählt. Vor der Zusammenfassung prüfen, wie viele Apizes eine Schablone abdeckt. [Auswertung nach Kiefer und Stabilität](ref:R01)",
+          "markdown": "In der Kadaverstudie von Ha et al. verwendeten beide Gruppen eine Osteotomieschablone für den kortikalen Zugang und einen 4-mm-Trepanbohrer für die angestrebte Resektion von 3 mm. In der Kontrollgruppe erfolgte die Resektion ohne Resektionsschablone. Der Unterkiefervergleich in Abb. 4D berichtet 3,18 ± 0,24 mm mit Resektionsschablone (32 Wurzeln) und 4,00 ± 0,53 mm ohne Resektionsschablone (18 Wurzeln, p < 0,0001). Das Studienkriterium von >2,5 und <3,5 mm erreichten laut Tabelle 3 insgesamt 30/32 bzw. 3/18 Wurzeln. [Abb. 3 und 4D und Tabelle 3](ref:R01)\n\nDie Auswertung mit Resektionsschablone umfasste 41 Wurzeln aus beiden Kiefern. Laut Tabelle 2 erfüllten 38 (92,7 %) das Resektionskriterium. Der Gruppenvergleich ist auf den Unterkiefer begrenzt, da alle Kontrollwurzeln von dort stammten. Laut Tabelle 1 waren 14 von 15 Schablonen stabil. Eine Bewegung ab 0,5 mm unter 20 N an einer Prüfstelle galt als Versagen. [Stabilität in Tabelle 1, Gesamtgenauigkeit in Tabelle 2 und Unterkiefervergleich in Tabelle 3](ref:R01)",
           "figure_ids": []
         },
         {
@@ -177,13 +177,13 @@
         {
           "id": "healing",
           "title": "Wie lassen sich Zielgenauigkeit und Heilung gemeinsam vergleichen?",
-          "markdown": "In der Machbarkeitsserie zeigten 4 Personen nach 6 Monaten und weitere 2 nach 12 Monaten eine vollständige Heilung. Die Knochenfensterfälle wurden 18 bzw. 12 Monate nachbeobachtet. Ein Vergleich kann nach Zahnposition, Kortikalisdicke und Läsionsgröße stratifizieren und unmittelbare Geometrieabweichung, spätere Aufhellung und klinische Symptome verblindet bewerten. Mehrwurzelige Zähne und unterschiedliche Nachsorgezeitpunkte ausweisen. [Klinische und radiologische Heilung](ref:R02) · [Bildgebung im Verlauf der beiden Molaren](ref:R03)\n\nPostoperative Bilder zeigen Schnitt und Fenster. Nachkontrollen zeigen Aufhellung und Kontinuität der Kortikalis. Beide Befunde derselben Wurzel zuordnen. Bei den Piezofällen kamen Kortikalisreposition und weitere Maßnahmen hinzu, sodass sich Heilung nicht der Führung zuordnen lässt. Einheitliche Bildgebung und Kriterien reduzieren Klassifikationsunterschiede zwischen Röntgen und DVT. [Kortikalisreposition und Bildgebung im Verlauf](ref:R03) · [Bildkriterien und Nachbeobachtung](ref:R02)",
+          "markdown": "In der Machbarkeitsserie zeigten 4 Personen nach 6 Monaten und weitere 2 nach 12 Monaten eine vollständige Heilung. Die Knochenfensterfälle wurden 18 bzw. 12 Monate nachbeobachtet. Ein Vergleich kann nach Zahnposition, Kortikalisdicke und Läsionsgröße stratifizieren und unmittelbare Geometrieabweichung, spätere Aufhellung und klinische Symptome verblindet bewerten. Mehrwurzelige Zähne und unterschiedliche Nachsorgezeitpunkte ausweisen. [Klinische und radiologische Heilung](ref:R02) · [Bildgebung im Verlauf der beiden Molaren](ref:R03)\n\nPranno et al. beurteilten die Veränderung der Aufhellung auf periapikalen Röntgenaufnahmen unmittelbar nach dem Eingriff sowie nach 6 und 12 Monaten und berücksichtigten den klinischen Befund. Für die quantitative Beurteilung der Resektionsebene oder Kortikaliskontinuität wären standardisierte dreidimensionale Messungen erforderlich. In beiden piezochirurgischen Fällen wurden die Kortikalisplatte reponiert und plättchenreiches Fibrin eingesetzt. Die Nachbeobachtung erfasst das Ergebnis des gesamten Vorgehens. [Heilungskriterien](ref:R02) · [Reposition und Nachbeobachtung in Abb. 3–5](ref:R03)",
           "figure_ids": []
         },
         {
           "id": "timing",
           "title": "Wie verhalten sich geführte Phasen zur Gesamtoperationszeit?",
-          "markdown": "In Abb. 3 des Machbarkeitsnachweises dauerten geführte Osteotomie mit Resektion im Mittel 8,17 min, Läsionsentfernung 17,83 min und der Gesamteingriff 73,67 min. Die Phasen tragen unterschiedlich bei. Die Schablone wirkt unmittelbar auf Osteotomie und Resektion. Läsionsentfernung und Wurzelendbehandlung hängen auch von Läsionsgröße, Wurzelanatomie und Sicht ab. Zeitgewinne erfordern einen phasengleichen Vergleich. [Operationszeiten nach Phase, Abb. 3](ref:R02)",
+          "markdown": "Abb. 3 bei Pranno et al. zeigt die mittlere Dauer je Phase für sechs Eingriffe. Die geführte Osteotomie mit gleichzeitiger Wurzelspitzenresektion dauerte im Mittel 8,17 min, die Läsionsentfernung 17,83 min. Der Text nennt separat die mittlere Gesamtdauer von 73,67 min (Spanne 40–102 min). Eine mögliche Zeitersparnis lässt sich anhand vergleichbarer Fälle und gleich definierter Phasen untersuchen. [Operationszeiten in Abb. 3 und im Ergebnisteil](ref:R02)",
           "figure_ids": [
             "F01"
           ]
@@ -192,7 +192,7 @@
       "figure_texts": {
         "F01": {
           "caption": "Pranno et al. (2025), Abb. 3. Mittlere Dauer nach Operationsphase.",
-          "interpretation": "Zuerst die gemeinsame Phase für geführte Osteotomie und Resektion lokalisieren. Dann Läsionsentfernung, retrograde Präparation und Füllung sowie Naht vergleichen. Die Balken geben Mittelwerte je Phase an."
+          "interpretation": "Die Balken zeigen die mittlere Dauer jeder Phase in Minuten für sechs Eingriffe. Der Balken für geführte Osteotomie und gleichzeitige Wurzelspitzenresektion lässt sich mit Läsionsentfernung, retrograder Präparation, Wurzelendfüllung und Naht vergleichen."
         }
       }
     }
